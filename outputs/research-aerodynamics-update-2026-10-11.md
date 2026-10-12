@@ -1,0 +1,9 @@
+# Physical-reference update — 11 October 2026
+
+The [RSS 2025 paper](https://www.roboticsproceedings.org/rss21/p102.html) remains a relevant independent source because it measures forces, moments and wake velocities in quadrotor interaction experiments. The Brown dataset landing page was tried again through the in-app browser (timeout) and web reader (inaccessible). Raw files, schema and dataset reuse terms were still not retrieved. This does not establish that the dataset is unavailable to everyone.
+
+A newly located [August 2026 preprint](https://arxiv.org/html/2608.30900v1), *The Structure of Merging Turbulent Jets Beneath a Small Quadrotor*, reports measurements for a 32 g Crazyflie 2.1 with a 46 mm center-to-motor arm and 45 mm rotor diameter. Its two measurement cuts distinguish mean flow from turbulent fluctuations. Reported far-wake mean-profile collapse occurs around 13 arm lengths; the turbulent stresses retain signatures of the rotor arrangement. This is a useful candidate for testing a mean-wake approximation, but it supplies neither validation of our receiver-force conversion nor a multi-drone superposition law. The preprint contains cut-dependent geometric descriptions that should be reconciled with figures and raw data before fitting a model.
+
+Our present source places motors at(±28,±28)mm, a 39.6 mm radial arm, and uses 27 g mass. Do not silently substitute the preprint's dimensions or normalize both using an unspecified “arm length.” Existing source equations and completed trials are unchanged.
+
+Next physical-data gate: obtain versioned observations and conditions, reconcile geometry and normalization, withhold complete configurations before fitting, then quantify prediction error in dimensional units. Published coefficients reproduced in code are software verification, not independent validation. A mean wake alone should not be called simulated turbulence.

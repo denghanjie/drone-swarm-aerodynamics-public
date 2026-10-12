@@ -1,0 +1,147 @@
+{
+  "created": "2026-10-11T14:23:16.370Z",
+  "jobs": [
+    {
+      "seed": 905,
+      "mode": "interior",
+      "dt": 0.005,
+      "scenario": "tight",
+      "record": true
+    },
+    {
+      "seed": 905,
+      "mode": "interior",
+      "dt": 0.0025,
+      "scenario": "tight",
+      "record": false
+    },
+    {
+      "seed": 905,
+      "mode": "interior",
+      "dt": 0.00125,
+      "scenario": "tight",
+      "record": false
+    },
+    {
+      "seed": 905,
+      "mode": "soft",
+      "dt": 0.005,
+      "scenario": "tight",
+      "record": true
+    },
+    {
+      "seed": 905,
+      "mode": "soft",
+      "dt": 0.0025,
+      "scenario": "tight",
+      "record": false
+    },
+    {
+      "seed": 905,
+      "mode": "soft",
+      "dt": 0.00125,
+      "scenario": "tight",
+      "record": false
+    },
+    {
+      "seed": 1002,
+      "mode": "interior",
+      "dt": 0.005,
+      "scenario": "tight",
+      "record": true
+    },
+    {
+      "seed": 1002,
+      "mode": "interior",
+      "dt": 0.0025,
+      "scenario": "tight",
+      "record": false
+    },
+    {
+      "seed": 1002,
+      "mode": "interior",
+      "dt": 0.00125,
+      "scenario": "tight",
+      "record": false
+    },
+    {
+      "seed": 1002,
+      "mode": "soft",
+      "dt": 0.005,
+      "scenario": "tight",
+      "record": true
+    },
+    {
+      "seed": 1002,
+      "mode": "soft",
+      "dt": 0.0025,
+      "scenario": "tight",
+      "record": false
+    },
+    {
+      "seed": 1002,
+      "mode": "soft",
+      "dt": 0.00125,
+      "scenario": "tight",
+      "record": false
+    },
+    {
+      "seed": 1004,
+      "mode": "interior",
+      "dt": 0.005,
+      "scenario": "tight",
+      "record": true
+    },
+    {
+      "seed": 1004,
+      "mode": "interior",
+      "dt": 0.0025,
+      "scenario": "tight",
+      "record": false
+    },
+    {
+      "seed": 1004,
+      "mode": "interior",
+      "dt": 0.00125,
+      "scenario": "tight",
+      "record": false
+    },
+    {
+      "seed": 1004,
+      "mode": "soft",
+      "dt": 0.005,
+      "scenario": "tight",
+      "record": true
+    },
+    {
+      "seed": 1004,
+      "mode": "soft",
+      "dt": 0.0025,
+      "scenario": "tight",
+      "record": false
+    },
+    {
+      "seed": 1004,
+      "mode": "soft",
+      "dt": 0.00125,
+      "scenario": "tight",
+      "record": false
+    }
+  ],
+  "purpose": "Development diagnosis on previously troublesome seeds. Same inward nominal guidance for both filters. No claim of independent validation.",
+  "acceptance": {
+    "numerics": "Each adjacent dt pair: same stop/count; max final position difference <0.01m; end time difference <0.01s.",
+    "solver": "Maximum unconstrained objective gradient norm <1e-6; report violations after speed cap separately.",
+    "science": "Report completion, contacts, sampled connectivity and both clearances independently; do not combine into a safety claim."
+  },
+  "unchanged": "50 drones,60s,10ms controller,airflow off,ideal observation,local1.8m Boids,known course. No retention. Soft velocity constraints can be violated; post-solve speed cap is not constrained optimization.",
+  "hashes": {
+    "sim.cjs": "671d17e28f20bf973b1389705f9cd0b095c7572344055eb88157f5a7e4bbb144",
+    "continuous.cjs": "24abcd64ced6abeaa8f862d8200aaaee7b7c5b9d65be55d10a7ecbbfaeb3c922",
+    "soft-filter.cjs": "94de3be41161aafb070826e78a7e11f2dc553a77b8463a6796b324da8bdcbaa1",
+    "study.cjs": "8236228071add3fdbfe7ca3ec6399057d088fe3ed088bff1801b80fff751ae37",
+    "check-solver.cjs": "e93e56f56647230beba44dc1c32d704aef238aafebb60fcbb89e16c9f1d80676",
+    "../step02c-source/physics.cjs": "0c46c9beb4e831c621658f6600c074f97c95966de07f5000eb64aa476a443fa1",
+    "../milestone-10-source/sim.cjs": "778e87b33a111bbef1c1eecaea806521b37985adb22a7a523001fc79a2351fad"
+  }
+}

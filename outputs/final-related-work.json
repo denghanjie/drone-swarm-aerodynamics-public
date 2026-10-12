@@ -1,0 +1,51 @@
+{
+  "reviewDate": "2026-10-11",
+  "scope": "Focused primary-source review, not exhaustive proof of novelty or absence",
+  "sources": [
+    {
+      "title": "DroneMD",
+      "url": "https://github.com/atvm/droneMD",
+      "finding": "Repository describes GPU JAX/MuJoCo drone physics, Boids motion and Three.js visualization. Readme claims are not independently reproduced; this is prior overlap, not a benchmark comparison."
+    },
+    {
+      "title": "Crazyflow",
+      "url": "https://arxiv.org/abs/2606.01478v2",
+      "finding": "2026 primary paper reports GPU-accelerated drone simulation and physical experiments. Counts of many independent worlds cannot be equated to one interacting swarm."
+    },
+    {
+      "title": "DOP SIM",
+      "url": "https://github.com/Li-Jinjie/dop_sim",
+      "finding": "Existing data-oriented quadrotor simulator with downwash support; needs model-specific accuracy comparison."
+    },
+    {
+      "title": "Neural-Swarm2",
+      "url": "https://arxiv.org/abs/2012.05457",
+      "finding": "Learned multirotor interactions and planning/control already studied; a new model needs held-out evidence."
+    },
+    {
+      "title": "Influence of Static and Dynamic Downwash Interactions on Multi-Quadrotor Systems",
+      "url": "https://arxiv.org/html/2507.09463v1",
+      "finding": "Measured force/moment and flow under fixed experimental motor conditions. Matching raw-data validation was not completed."
+    },
+    {
+      "title": "Brown dataset DOI",
+      "url": "https://doi.org/10.26300/64d4-wa17",
+      "finding": "Retrieval tool returned inaccessible on 2026-10-11. This is a tool/access limitation, not evidence of nonexistence."
+    },
+    {
+      "title": "Modeling Aggregate Downwash Forces for Dense Multirotor Flight",
+      "url": "https://arxiv.org/html/2312.03488v1",
+      "finding": "Aggregate effects require validation; no direct multi-source validation oracle established in this project."
+    },
+    {
+      "title": "Robotics meets Fluid Dynamics",
+      "url": "https://arxiv.org/html/2403.13321v3",
+      "finding": "Mean jet airflow model does not itself establish rotor force response or turbulent forcing for this vehicle."
+    },
+    {
+      "title": "Resolved Brown repository landing page",
+      "url": "https://repository.library.brown.edu/studio/item/bdr:rnnfmt6u/",
+      "finding": "Resolved through public DataCite DOI metadata; ordinary repository GET returned HTTP 403. No raw dataset validation performed."
+    }
+  ]
+}

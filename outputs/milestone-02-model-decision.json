@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "milestone": "Evidence screening and navigation-baseline selection",
+  "originalPlanSteps": [
+    3,
+    4,
+    5
+  ],
+  "navigationBaseline": {
+    "vehicleMechanics": "step02c-source/physics.cjs",
+    "interactionModel": "none",
+    "rationale": "Isolate navigation, controller feasibility and numerical implementation before interpreting uncertain aerodynamic effects.",
+    "physicalValidationPassed": false,
+    "allowsRealFlightSafetyClaims": false
+  },
+  "interactionCandidates": [
+    {
+      "id": "existing-ideal-power",
+      "status": "sensitivity-only",
+      "fitToIndependentForceMeasurements": false,
+      "source": "step03e-source/pair.cjs"
+    },
+    {
+      "id": "gym-pybullet-pinned-scalar-downwash",
+      "status": "quarantined-from-flight",
+      "reason": "Force calibration transfer unverified; width vanishes at 0.6875 m with pinned coefficients",
+      "sourceCommit": "7ebad1ecabd28a7000add2d05f888aa2e837c2cc"
+    },
+    {
+      "id": "learned-aggregate",
+      "status": "not-available-in-this-project",
+      "reason": "No complete matched measurement/model package and reuse terms established in this audit"
+    }
+  ],
+  "nextExperiment": {
+    "purpose": "Step 5 engineering pilot: 50-drone navigation through a virtual gate, without aerodynamic interaction",
+    "count": 50,
+    "horizonSeconds": 60,
+    "gateWidthsM": [
+      0.6,
+      1.2,
+      2.4
+    ],
+    "gateHeightM": 1.2,
+    "initialSpacingM": [
+      0.3,
+      0.6
+    ],
+    "requestedSpeedMS": [
+      0.25,
+      0.5
+    ],
+    "seedsPerCondition": 10,
+    "metrics": [
+      "unique valid crossings",
+      "completion fraction",
+      "throughput over full horizon",
+      "swept separation/contact events",
+      "invalid gate crossings",
+      "tracking error",
+      "motor saturation",
+      "model-limit stops"
+    ],
+    "qualifier": "This is a planned pilot, not a completed experiment. Numerical convergence and failure accounting are required before interpreting results. It does not complete the physical-validation gates in Steps 3\u20134."
+  },
+  "evidenceRequiredForPhysicalClaims": [
+    "Matched vehicle geometry and rotor/motor operating condition",
+    "Independent force and moment measurements across separation, with units and uncertainty",
+    "Run/configuration-level held-out validation and declared application tolerance",
+    "Independent multi-neighbor evidence before claiming validated aggregation"
+  ],
+  "implementationFollowUp": {
+    "status": "first pilot completed",
+    "report": "milestone-03-report.md",
+    "simulation": "milestone-03-passage.html",
+    "runs": 120,
+    "physicalValidationPassed": false
+  }
+}

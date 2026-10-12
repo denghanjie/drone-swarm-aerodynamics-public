@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-11",
+  "milestone": 13,
+  "url": "http://127.0.0.1:8875/outputs/research-results.html",
+  "browser": "Codex in-app via cua_repl",
+  "viewports": [
+    "1440x1000",
+    "390x844"
+  ],
+  "checks": [
+    "Correct page identity; nonblank paired Three.js scenes",
+    "Three-obstacle and staggered-wall previews visually inspected",
+    "Tight seed601 outcome: Boids7/50 wall stop24.40s; comparison44/50 at60s",
+    "Scenario switches, timeline jumps, playback and neighbor checkbox verified",
+    "Mobile390px has no horizontal overflow; canvases356x350",
+    "No browser console errors or warnings"
+  ],
+  "numericalChecks": [
+    {
+      "name": "Matched full initial states across controller pairs",
+      "passed": true
+    },
+    {
+      "name": "Second wall blocks a straight unaligned crossing",
+      "passed": true
+    },
+    {
+      "name": "Second aperture permits aligned crossing",
+      "passed": true
+    },
+    {
+      "name": "Middle sphere segment intersection detected",
+      "passed": true
+    },
+    {
+      "name": "Refinement: same stop reason and passage count, final positions within1cm",
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "No physical validation or airflow",
+    "Only displayed seed601 Boids runs refined",
+    "Earlier milestone12 narrow sensitivity remains unresolved",
+    "Whole-course successes do not establish autonomous route planning or robust clearance"
+  ]
+}

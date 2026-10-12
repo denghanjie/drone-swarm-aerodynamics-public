@@ -1,0 +1,818 @@
+[
+  {
+    "config": {
+      "seed": 1301,
+      "count": 50,
+      "mode": "boids",
+      "dt": 0.005,
+      "duration": 120,
+      "search": "grid",
+      "course": "factory-v1",
+      "airflow": "off",
+      "observation": "ideal"
+    },
+    "metrics": {
+      "passed": 50,
+      "end": 120,
+      "stopReason": null,
+      "failure": null,
+      "minimumSampledSeparation": 0.576594201602524,
+      "minimumSampledObstacleClearance": 0.8999236440127041,
+      "minimumConnectedFraction": 1,
+      "final": {
+        "t": 120,
+        "passed": 50,
+        "center": [
+          61.11260451128402,
+          0.008871944966894262,
+          3.9961631174829852
+        ],
+        "order": 0.9999952903937552,
+        "largestFraction": 1,
+        "components": 1,
+        "heightSpan": 1.4722785126998463,
+        "rmsRadius": 1.722439041575878,
+        "minimumSeparationCappedAtRadius": 0.7169244215231388,
+        "minimumObstacleClearance": 16.664638768861206,
+        "meanNeighborCount": 21.76
+      },
+      "maxTiltDegrees": 9.305443627493961,
+      "saturationFraction": 0
+    },
+    "timing": {
+      "steering": 15544.063544999997,
+      "physics": 4820.365729000156,
+      "safety": 1378.5510740001116,
+      "measurement": 1150.114887999984,
+      "total": 22905.345084,
+      "unit": "ms",
+      "scope": "Node wall time, includes sampling/recording and initialization; excludes external JSON serialization and rendering; no deliberate UI yields."
+    },
+    "neighborVisits": 14099424
+  },
+  {
+    "config": {
+      "seed": 1301,
+      "count": 50,
+      "mode": "boids",
+      "dt": 0.0025,
+      "duration": 120,
+      "search": "grid",
+      "course": "factory-v1",
+      "airflow": "off",
+      "observation": "ideal"
+    },
+    "metrics": {
+      "passed": 50,
+      "end": 120,
+      "stopReason": null,
+      "failure": null,
+      "minimumSampledSeparation": 0.5765941787807193,
+      "minimumSampledObstacleClearance": 0.8999236423901975,
+      "minimumConnectedFraction": 1,
+      "final": {
+        "t": 120,
+        "passed": 50,
+        "center": [
+          61.112604280192365,
+          0.008871411137574794,
+          3.996163704239815
+        ],
+        "order": 0.9999952906643482,
+        "largestFraction": 1,
+        "components": 1,
+        "heightSpan": 1.472279894137099,
+        "rmsRadius": 1.7224418405952613,
+        "minimumSeparationCappedAtRadius": 0.716925937132503,
+        "minimumObstacleClearance": 16.664625048335015,
+        "meanNeighborCount": 21.76
+      },
+      "maxTiltDegrees": 9.30547579038076,
+      "saturationFraction": 0
+    },
+    "timing": {
+      "steering": 17249.439339999735,
+      "physics": 10871.7623149992,
+      "safety": 2991.02817999895,
+      "measurement": 1261.4612130000387,
+      "total": 32392.877583,
+      "unit": "ms",
+      "scope": "Node wall time, includes sampling/recording and initialization; excludes external JSON serialization and rendering; no deliberate UI yields."
+    },
+    "neighborVisits": 14099424
+  },
+  {
+    "config": {
+      "seed": 1301,
+      "count": 50,
+      "mode": "goal-only",
+      "dt": 0.005,
+      "duration": 120,
+      "search": "grid",
+      "course": "factory-v1",
+      "airflow": "off",
+      "observation": "ideal"
+    },
+    "metrics": {
+      "passed": 50,
+      "end": 120,
+      "stopReason": null,
+      "failure": null,
+      "minimumSampledSeparation": 0.3706915006170858,
+      "minimumSampledObstacleClearance": 1.2323212252757036,
+      "minimumConnectedFraction": 1,
+      "final": {
+        "t": 120,
+        "passed": 50,
+        "center": [
+          61.34598644687305,
+          -0.37512263410376595,
+          3.747421224101476
+        ],
+        "order": 0.9999999549572244,
+        "largestFraction": 1,
+        "components": 1,
+        "heightSpan": 1.1040854112478327,
+        "rmsRadius": 1.3008241285587883,
+        "minimumSeparationCappedAtRadius": 0.3799672102576092,
+        "minimumObstacleClearance": 17.44375173165256,
+        "meanNeighborCount": 31.84
+      },
+      "maxTiltDegrees": 5.8772909063143315,
+      "saturationFraction": 0
+    },
+    "timing": {
+      "steering": 17602.908485999975,
+      "physics": 4860.422264999962,
+      "safety": 1736.2053939998882,
+      "measurement": 1189.921419999977,
+      "total": 25402.111792,
+      "unit": "ms",
+      "scope": "Node wall time, includes sampling/recording and initialization; excludes external JSON serialization and rendering; no deliberate UI yields."
+    },
+    "neighborVisits": 19299022
+  },
+  {
+    "config": {
+      "seed": 1301,
+      "count": 50,
+      "mode": "separation-only",
+      "dt": 0.005,
+      "duration": 120,
+      "search": "grid",
+      "course": "factory-v1",
+      "airflow": "off",
+      "observation": "ideal"
+    },
+    "metrics": {
+      "passed": 50,
+      "end": 120,
+      "stopReason": null,
+      "failure": null,
+      "minimumSampledSeparation": 0.5465692584439533,
+      "minimumSampledObstacleClearance": 0.9110400374030051,
+      "minimumConnectedFraction": 1,
+      "final": {
+        "t": 120,
+        "passed": 50,
+        "center": [
+          60.91200514070046,
+          -0.08340491366126011,
+          3.961269696824467
+        ],
+        "order": 0.9990644442527623,
+        "largestFraction": 1,
+        "components": 1,
+        "heightSpan": 1.3081182577233017,
+        "rmsRadius": 2.4629854489779865,
+        "minimumSeparationCappedAtRadius": 0.7724657123350023,
+        "minimumObstacleClearance": 15.093745252652909,
+        "meanNeighborCount": 15.56
+      },
+      "maxTiltDegrees": 7.9062006315522275,
+      "saturationFraction": 0
+    },
+    "timing": {
+      "steering": 13889.50513500003,
+      "physics": 4853.81117899984,
+      "safety": 1353.2033370000445,
+      "measurement": 1060.9049889999928,
+      "total": 21168.970333,
+      "unit": "ms",
+      "scope": "Node wall time, includes sampling/recording and initialization; excludes external JSON serialization and rendering; no deliberate UI yields."
+    },
+    "neighborVisits": 10914020
+  },
+  {
+    "config": {
+      "seed": 1302,
+      "count": 50,
+      "mode": "boids",
+      "dt": 0.005,
+      "duration": 120,
+      "search": "grid",
+      "course": "factory-v1",
+      "airflow": "off",
+      "observation": "ideal"
+    },
+    "metrics": {
+      "passed": 50,
+      "end": 120,
+      "stopReason": null,
+      "failure": null,
+      "minimumSampledSeparation": 0.5788626833006741,
+      "minimumSampledObstacleClearance": 0.8959264958286974,
+      "minimumConnectedFraction": 1,
+      "final": {
+        "t": 120,
+        "passed": 50,
+        "center": [
+          61.212453454304104,
+          -0.006461308402388848,
+          3.989023577325357
+        ],
+        "order": 0.9999978612714274,
+        "largestFraction": 1,
+        "components": 1,
+        "heightSpan": 1.5016763941876126,
+        "rmsRadius": 1.7098065483053626,
+        "minimumSeparationCappedAtRadius": 0.7332494592767946,
+        "minimumObstacleClearance": 16.82735974264967,
+        "meanNeighborCount": 22.2
+      },
+      "maxTiltDegrees": 8.285069574875438,
+      "saturationFraction": 0
+    },
+    "timing": {
+      "steering": 17161.67591599985,
+      "physics": 5485.589235999749,
+      "safety": 1562.3564699998278,
+      "measurement": 1276.5489149999994,
+      "total": 25499.30225,
+      "unit": "ms",
+      "scope": "Node wall time, includes sampling/recording and initialization; excludes external JSON serialization and rendering; no deliberate UI yields."
+    },
+    "neighborVisits": 14051058
+  },
+  {
+    "config": {
+      "seed": 1302,
+      "count": 50,
+      "mode": "boids",
+      "dt": 0.0025,
+      "duration": 120,
+      "search": "grid",
+      "course": "factory-v1",
+      "airflow": "off",
+      "observation": "ideal"
+    },
+    "metrics": {
+      "passed": 50,
+      "end": 120,
+      "stopReason": null,
+      "failure": null,
+      "minimumSampledSeparation": 0.5788626584641955,
+      "minimumSampledObstacleClearance": 0.8959264938272467,
+      "minimumConnectedFraction": 1,
+      "final": {
+        "t": 120,
+        "passed": 50,
+        "center": [
+          61.21245349553113,
+          -0.0064612650319758914,
+          3.9890235625613757
+        ],
+        "order": 0.9999978612999418,
+        "largestFraction": 1,
+        "components": 1,
+        "heightSpan": 1.5016760868044274,
+        "rmsRadius": 1.709806461000068,
+        "minimumSeparationCappedAtRadius": 0.7332495143220702,
+        "minimumObstacleClearance": 16.827359740710005,
+        "meanNeighborCount": 22.2
+      },
+      "maxTiltDegrees": 8.285069028074396,
+      "saturationFraction": 0
+    },
+    "timing": {
+      "steering": 17683.21446599943,
+      "physics": 11150.166565000014,
+      "safety": 3106.0555860005843,
+      "measurement": 1293.3906350002217,
+      "total": 33248.14025,
+      "unit": "ms",
+      "scope": "Node wall time, includes sampling/recording and initialization; excludes external JSON serialization and rendering; no deliberate UI yields."
+    },
+    "neighborVisits": 14051056
+  },
+  {
+    "config": {
+      "seed": 1302,
+      "count": 50,
+      "mode": "goal-only",
+      "dt": 0.005,
+      "duration": 120,
+      "search": "grid",
+      "course": "factory-v1",
+      "airflow": "off",
+      "observation": "ideal"
+    },
+    "metrics": {
+      "passed": 50,
+      "end": 120,
+      "stopReason": null,
+      "failure": null,
+      "minimumSampledSeparation": 0.370209410402476,
+      "minimumSampledObstacleClearance": 1.1782788600414038,
+      "minimumConnectedFraction": 1,
+      "final": {
+        "t": 120,
+        "passed": 50,
+        "center": [
+          61.51047353823663,
+          -0.38052766257903015,
+          3.773215267089019
+        ],
+        "order": 0.9999923714895139,
+        "largestFraction": 1,
+        "components": 1,
+        "heightSpan": 1.1457419005884892,
+        "rmsRadius": 1.3026179197657732,
+        "minimumSeparationCappedAtRadius": 0.37996345521418146,
+        "minimumObstacleClearance": 17.561607435753384,
+        "meanNeighborCount": 31.36
+      },
+      "maxTiltDegrees": 5.936301027430428,
+      "saturationFraction": 0
+    },
+    "timing": {
+      "steering": 37928.14689600101,
+      "physics": 10925.4595859994,
+      "safety": 3977.67669100099,
+      "measurement": 2526.454384000186,
+      "total": 55395.372250000015,
+      "unit": "ms",
+      "scope": "Node wall time, includes sampling/recording and initialization; excludes external JSON serialization and rendering; no deliberate UI yields."
+    },
+    "neighborVisits": 19145770
+  },
+  {
+    "config": {
+      "seed": 1302,
+      "count": 50,
+      "mode": "separation-only",
+      "dt": 0.005,
+      "duration": 120,
+      "search": "grid",
+      "course": "factory-v1",
+      "airflow": "off",
+      "observation": "ideal"
+    },
+    "metrics": {
+      "passed": 50,
+      "end": 120,
+      "stopReason": null,
+      "failure": null,
+      "minimumSampledSeparation": 0.5617227691121145,
+      "minimumSampledObstacleClearance": 0.971221399120181,
+      "minimumConnectedFraction": 1,
+      "final": {
+        "t": 120,
+        "passed": 50,
+        "center": [
+          61.04862780542374,
+          -0.07253649895769805,
+          3.9351039561868295
+        ],
+        "order": 0.999733455602616,
+        "largestFraction": 1,
+        "components": 1,
+        "heightSpan": 1.3005443120730384,
+        "rmsRadius": 2.4517190627865832,
+        "minimumSeparationCappedAtRadius": 0.7948333461302641,
+        "minimumObstacleClearance": 15.200419716728405,
+        "meanNeighborCount": 15.64
+      },
+      "maxTiltDegrees": 7.752041688390599,
+      "saturationFraction": 0
+    },
+    "timing": {
+      "steering": 15793.397910000276,
+      "physics": 5591.882274999327,
+      "safety": 1551.2918370002299,
+      "measurement": 1214.0363819999548,
+      "total": 24163.021709000008,
+      "unit": "ms",
+      "scope": "Node wall time, includes sampling/recording and initialization; excludes external JSON serialization and rendering; no deliberate UI yields."
+    },
+    "neighborVisits": 10944016
+  },
+  {
+    "config": {
+      "seed": 1303,
+      "count": 50,
+      "mode": "boids",
+      "dt": 0.005,
+      "duration": 120,
+      "search": "grid",
+      "course": "factory-v1",
+      "airflow": "off",
+      "observation": "ideal"
+    },
+    "metrics": {
+      "passed": 50,
+      "end": 120,
+      "stopReason": null,
+      "failure": null,
+      "minimumSampledSeparation": 0.570797075607513,
+      "minimumSampledObstacleClearance": 0.9551200694911668,
+      "minimumConnectedFraction": 1,
+      "final": {
+        "t": 120,
+        "passed": 50,
+        "center": [
+          61.180676474170056,
+          -0.029231960280802688,
+          3.985714761652429
+        ],
+        "order": 0.9999788954718245,
+        "largestFraction": 1,
+        "components": 1,
+        "heightSpan": 1.4910795587180856,
+        "rmsRadius": 1.6987588607457578,
+        "minimumSeparationCappedAtRadius": 0.7378506560528646,
+        "minimumObstacleClearance": 16.672539356333676,
+        "meanNeighborCount": 22.16
+      },
+      "maxTiltDegrees": 7.903859794847508,
+      "saturationFraction": 0
+    },
+    "timing": {
+      "steering": 32237.526369998785,
+      "physics": 10281.771851001336,
+      "safety": 2995.398177002149,
+      "measurement": 2375.1008529998653,
+      "total": 47922.75987500002,
+      "unit": "ms",
+      "scope": "Node wall time, includes sampling/recording and initialization; excludes external JSON serialization and rendering; no deliberate UI yields."
+    },
+    "neighborVisits": 14441542
+  },
+  {
+    "config": {
+      "seed": 1303,
+      "count": 50,
+      "mode": "boids",
+      "dt": 0.0025,
+      "duration": 120,
+      "search": "grid",
+      "course": "factory-v1",
+      "airflow": "off",
+      "observation": "ideal"
+    },
+    "metrics": {
+      "passed": 50,
+      "end": 120,
+      "stopReason": null,
+      "failure": null,
+      "minimumSampledSeparation": 0.5707970707140301,
+      "minimumSampledObstacleClearance": 0.9551200011312819,
+      "minimumConnectedFraction": 1,
+      "final": {
+        "t": 120,
+        "passed": 50,
+        "center": [
+          61.18067651927592,
+          -0.029231906675133403,
+          3.9857147859805444
+        ],
+        "order": 0.9999788952688257,
+        "largestFraction": 1,
+        "components": 1,
+        "heightSpan": 1.4910801762911876,
+        "rmsRadius": 1.6987590965740778,
+        "minimumSeparationCappedAtRadius": 0.7378505002166346,
+        "minimumObstacleClearance": 16.672538220952514,
+        "meanNeighborCount": 22.16
+      },
+      "maxTiltDegrees": 7.903879569274361,
+      "saturationFraction": 0
+    },
+    "timing": {
+      "steering": 35711.79618099774,
+      "physics": 22477.809951997187,
+      "safety": 6391.533493996132,
+      "measurement": 2577.412349000864,
+      "total": 67208.46029100002,
+      "unit": "ms",
+      "scope": "Node wall time, includes sampling/recording and initialization; excludes external JSON serialization and rendering; no deliberate UI yields."
+    },
+    "neighborVisits": 14441542
+  },
+  {
+    "config": {
+      "seed": 1303,
+      "count": 50,
+      "mode": "goal-only",
+      "dt": 0.005,
+      "duration": 120,
+      "search": "grid",
+      "course": "factory-v1",
+      "airflow": "off",
+      "observation": "ideal"
+    },
+    "metrics": {
+      "passed": 50,
+      "end": 120,
+      "stopReason": null,
+      "failure": null,
+      "minimumSampledSeparation": 0.3762498625955319,
+      "minimumSampledObstacleClearance": 1.1743922349581912,
+      "minimumConnectedFraction": 1,
+      "final": {
+        "t": 120,
+        "passed": 50,
+        "center": [
+          61.38915227354931,
+          -0.3384186732498188,
+          3.692669400221503
+        ],
+        "order": 0.9999907525057024,
+        "largestFraction": 1,
+        "components": 1,
+        "heightSpan": 1.0730454097525541,
+        "rmsRadius": 1.2392252497996017,
+        "minimumSeparationCappedAtRadius": 0.37999839449838335,
+        "minimumObstacleClearance": 17.678120672304466,
+        "meanNeighborCount": 32.68
+      },
+      "maxTiltDegrees": 5.451993835912198,
+      "saturationFraction": 0
+    },
+    "timing": {
+      "steering": 40595.98194000003,
+      "physics": 11429.230876001122,
+      "safety": 4255.426740999683,
+      "measurement": 2655.5737449994776,
+      "total": 58974.37179199996,
+      "unit": "ms",
+      "scope": "Node wall time, includes sampling/recording and initialization; excludes external JSON serialization and rendering; no deliberate UI yields."
+    },
+    "neighborVisits": 20287772
+  },
+  {
+    "config": {
+      "seed": 1303,
+      "count": 50,
+      "mode": "separation-only",
+      "dt": 0.005,
+      "duration": 120,
+      "search": "grid",
+      "course": "factory-v1",
+      "airflow": "off",
+      "observation": "ideal"
+    },
+    "metrics": {
+      "passed": 50,
+      "end": 120,
+      "stopReason": null,
+      "failure": null,
+      "minimumSampledSeparation": 0.5605449978617327,
+      "minimumSampledObstacleClearance": 0.9963024891930614,
+      "minimumConnectedFraction": 1,
+      "final": {
+        "t": 120,
+        "passed": 50,
+        "center": [
+          60.99930695011511,
+          -0.06287708483441755,
+          3.9324069306152665
+        ],
+        "order": 0.9993313342794126,
+        "largestFraction": 1,
+        "components": 1,
+        "heightSpan": 1.284417580280126,
+        "rmsRadius": 2.406290456615398,
+        "minimumSeparationCappedAtRadius": 0.7756317527559988,
+        "minimumObstacleClearance": 15.306956755070058,
+        "meanNeighborCount": 16.32
+      },
+      "maxTiltDegrees": 7.432702932741018,
+      "saturationFraction": 0
+    },
+    "timing": {
+      "steering": 18061.95764600055,
+      "physics": 6366.403466999662,
+      "safety": 1762.0182789998944,
+      "measurement": 1394.749340000184,
+      "total": 27600.573040999996,
+      "unit": "ms",
+      "scope": "Node wall time, includes sampling/recording and initialization; excludes external JSON serialization and rendering; no deliberate UI yields."
+    },
+    "neighborVisits": 11146190
+  },
+  {
+    "config": {
+      "seed": 1301,
+      "count": 200,
+      "mode": "boids",
+      "dt": 0.005,
+      "duration": 120,
+      "search": "grid",
+      "course": "factory-v1",
+      "airflow": "off",
+      "observation": "ideal"
+    },
+    "metrics": {
+      "passed": 200,
+      "end": 120,
+      "stopReason": null,
+      "failure": null,
+      "minimumSampledSeparation": 0.47474533330133917,
+      "minimumSampledObstacleClearance": 0.5245602430317262,
+      "minimumConnectedFraction": 1,
+      "final": {
+        "t": 120,
+        "passed": 200,
+        "center": [
+          59.677371273810586,
+          0.006090074567906575,
+          3.9980559072580353
+        ],
+        "order": 0.9998459108769642,
+        "largestFraction": 1,
+        "components": 1,
+        "heightSpan": 2.2113874426092694,
+        "rmsRadius": 3.6566062842153824,
+        "minimumSeparationCappedAtRadius": 0.6616629777549976,
+        "minimumObstacleClearance": 11.477680850171986,
+        "meanNeighborCount": 33.24
+      },
+      "maxTiltDegrees": 8.415052245650086,
+      "saturationFraction": 0
+    },
+    "timing": {
+      "steering": 123375.24669099874,
+      "physics": 27049.405377999137,
+      "safety": 8551.615038999658,
+      "measurement": 8752.697660000202,
+      "total": 167760.334125,
+      "unit": "ms",
+      "scope": "Node wall time, includes sampling/recording and initialization; excludes external JSON serialization and rendering; no deliberate UI yields."
+    },
+    "neighborVisits": 94501172
+  },
+  {
+    "config": {
+      "seed": 1302,
+      "count": 200,
+      "mode": "boids",
+      "dt": 0.005,
+      "duration": 120,
+      "search": "grid",
+      "course": "factory-v1",
+      "airflow": "off",
+      "observation": "ideal"
+    },
+    "metrics": {
+      "passed": 200,
+      "end": 120,
+      "stopReason": null,
+      "failure": null,
+      "minimumSampledSeparation": 0.48154868953346125,
+      "minimumSampledObstacleClearance": 0.47750113536060274,
+      "minimumConnectedFraction": 1,
+      "final": {
+        "t": 120,
+        "passed": 200,
+        "center": [
+          59.67955389296501,
+          -0.0034819601493862196,
+          3.995251123126268
+        ],
+        "order": 0.999559569722791,
+        "largestFraction": 1,
+        "components": 1,
+        "heightSpan": 2.2312581003750673,
+        "rmsRadius": 3.6380691830798986,
+        "minimumSeparationCappedAtRadius": 0.6194177644131938,
+        "minimumObstacleClearance": 11.585162697146052,
+        "meanNeighborCount": 33.66
+      },
+      "maxTiltDegrees": 8.800736871437056,
+      "saturationFraction": 0
+    },
+    "timing": {
+      "steering": 163160.6604199991,
+      "physics": 35804.288762000026,
+      "safety": 11326.215931000843,
+      "measurement": 11549.131512999724,
+      "total": 221885.98249999998,
+      "unit": "ms",
+      "scope": "Node wall time, includes sampling/recording and initialization; excludes external JSON serialization and rendering; no deliberate UI yields."
+    },
+    "neighborVisits": 94483694
+  },
+  {
+    "config": {
+      "seed": 1302,
+      "count": 200,
+      "mode": "boids",
+      "dt": 0.0025,
+      "duration": 120,
+      "search": "grid",
+      "course": "factory-v1",
+      "airflow": "off",
+      "observation": "ideal"
+    },
+    "metrics": {
+      "passed": 200,
+      "end": 120,
+      "stopReason": null,
+      "failure": null,
+      "minimumSampledSeparation": 0.48154867685915803,
+      "minimumSampledObstacleClearance": 0.4775011483530263,
+      "minimumConnectedFraction": 1,
+      "final": {
+        "t": 120,
+        "passed": 200,
+        "center": [
+          59.67951671638083,
+          -0.0035481883281886077,
+          3.995258776390041
+        ],
+        "order": 0.9995656596870758,
+        "largestFraction": 1,
+        "components": 1,
+        "heightSpan": 2.230410860647055,
+        "rmsRadius": 3.637962757743012,
+        "minimumSeparationCappedAtRadius": 0.6216055337369951,
+        "minimumObstacleClearance": 11.585198473447361,
+        "meanNeighborCount": 33.65
+      },
+      "maxTiltDegrees": 8.800735809542367,
+      "saturationFraction": 0
+    },
+    "timing": {
+      "steering": 125527.86775999959,
+      "physics": 53460.096517996746,
+      "safety": 16558.400358986924,
+      "measurement": 8759.572655997938,
+      "total": 204360.149583,
+      "unit": "ms",
+      "scope": "Node wall time, includes sampling/recording and initialization; excludes external JSON serialization and rendering; no deliberate UI yields."
+    },
+    "neighborVisits": 94484866
+  },
+  {
+    "config": {
+      "seed": 1303,
+      "count": 200,
+      "mode": "boids",
+      "dt": 0.005,
+      "duration": 120,
+      "search": "grid",
+      "course": "factory-v1",
+      "airflow": "off",
+      "observation": "ideal"
+    },
+    "metrics": {
+      "passed": 200,
+      "end": 120,
+      "stopReason": null,
+      "failure": null,
+      "minimumSampledSeparation": 0.4674420791683932,
+      "minimumSampledObstacleClearance": 0.4896369018724825,
+      "minimumConnectedFraction": 1,
+      "final": {
+        "t": 120,
+        "passed": 200,
+        "center": [
+          59.68700094841679,
+          -0.004995854457507568,
+          3.9873202135171706
+        ],
+        "order": 0.9999108099042151,
+        "largestFraction": 1,
+        "components": 1,
+        "heightSpan": 2.233652679644485,
+        "rmsRadius": 3.6180281567021177,
+        "minimumSeparationCappedAtRadius": 0.6628787106465107,
+        "minimumObstacleClearance": 11.625938754891022,
+        "meanNeighborCount": 33.65
+      },
+      "maxTiltDegrees": 8.825873733647272,
+      "saturationFraction": 0
+    },
+    "timing": {
+      "steering": 183460.16141400335,
+      "physics": 39498.24148599677,
+      "safety": 12497.77679900141,
+      "measurement": 12934.817335000014,
+      "total": 248441.75925,
+      "unit": "ms",
+      "scope": "Node wall time, includes sampling/recording and initialization; excludes external JSON serialization and rendering; no deliberate UI yields."
+    },
+    "neighborVisits": 94713942
+  }
+]

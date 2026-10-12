@@ -1,0 +1,567 @@
+{
+  "date": "2026-10-11",
+  "scopeCorrection": "Previous studies tested centralized scheduling, not Boids. Original overall goal remains incomplete.",
+  "design": "Parameters inspected in three seed-1 pilots, no subsequent changes; holdout seeds 201–205. Keep all failures.",
+  "controllers": {
+    "flow": "Preserved milestone-7 clearance scheduler",
+    "boids": "Local separation + alignment + cohesion, shared goal and map-based obstacle lookahead",
+    "goal-only": "Same goal/map steering with all three social terms removed"
+  },
+  "parameters": {
+    "neighborRadius": 1.25,
+    "separationRadius": 0.65,
+    "separationWeight": 0.75,
+    "alignmentWeight": 0.55,
+    "cohesionWeight": 0.16,
+    "goalWeight": 0.42,
+    "edgeMargin": 0.13
+  },
+  "neighborSemantics": "Isotropic radius 1.25 m, no neighbor cap, self excluded; mathematical rule uses only local neighbors although CPU candidate scan is all-pairs.",
+  "dimensions": "Horizontal flocking at near-fixed altitude, full rigid-body dynamics; not volumetric flocking.",
+  "jobs": [
+    {
+      "i": 0,
+      "config": {
+        "width": 0.6,
+        "seed": 201,
+        "controller": "flow",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": true
+      }
+    },
+    {
+      "i": 1,
+      "config": {
+        "width": 0.6,
+        "seed": 201,
+        "controller": "boids",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": true
+      }
+    },
+    {
+      "i": 2,
+      "config": {
+        "width": 0.6,
+        "seed": 201,
+        "controller": "goal-only",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": true
+      }
+    },
+    {
+      "i": 3,
+      "config": {
+        "width": 0.6,
+        "seed": 202,
+        "controller": "flow",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": false
+      }
+    },
+    {
+      "i": 4,
+      "config": {
+        "width": 0.6,
+        "seed": 202,
+        "controller": "boids",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": false
+      }
+    },
+    {
+      "i": 5,
+      "config": {
+        "width": 0.6,
+        "seed": 202,
+        "controller": "goal-only",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": false
+      }
+    },
+    {
+      "i": 6,
+      "config": {
+        "width": 0.6,
+        "seed": 203,
+        "controller": "flow",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": false
+      }
+    },
+    {
+      "i": 7,
+      "config": {
+        "width": 0.6,
+        "seed": 203,
+        "controller": "boids",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": false
+      }
+    },
+    {
+      "i": 8,
+      "config": {
+        "width": 0.6,
+        "seed": 203,
+        "controller": "goal-only",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": false
+      }
+    },
+    {
+      "i": 9,
+      "config": {
+        "width": 0.6,
+        "seed": 204,
+        "controller": "flow",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": false
+      }
+    },
+    {
+      "i": 10,
+      "config": {
+        "width": 0.6,
+        "seed": 204,
+        "controller": "boids",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": false
+      }
+    },
+    {
+      "i": 11,
+      "config": {
+        "width": 0.6,
+        "seed": 204,
+        "controller": "goal-only",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": false
+      }
+    },
+    {
+      "i": 12,
+      "config": {
+        "width": 0.6,
+        "seed": 205,
+        "controller": "flow",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": false
+      }
+    },
+    {
+      "i": 13,
+      "config": {
+        "width": 0.6,
+        "seed": 205,
+        "controller": "boids",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": false
+      }
+    },
+    {
+      "i": 14,
+      "config": {
+        "width": 0.6,
+        "seed": 205,
+        "controller": "goal-only",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": false
+      }
+    },
+    {
+      "i": 15,
+      "config": {
+        "width": 1.2,
+        "seed": 201,
+        "controller": "flow",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": true
+      }
+    },
+    {
+      "i": 16,
+      "config": {
+        "width": 1.2,
+        "seed": 201,
+        "controller": "boids",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": true
+      }
+    },
+    {
+      "i": 17,
+      "config": {
+        "width": 1.2,
+        "seed": 201,
+        "controller": "goal-only",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": true
+      }
+    },
+    {
+      "i": 18,
+      "config": {
+        "width": 1.2,
+        "seed": 202,
+        "controller": "flow",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": false
+      }
+    },
+    {
+      "i": 19,
+      "config": {
+        "width": 1.2,
+        "seed": 202,
+        "controller": "boids",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": false
+      }
+    },
+    {
+      "i": 20,
+      "config": {
+        "width": 1.2,
+        "seed": 202,
+        "controller": "goal-only",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": false
+      }
+    },
+    {
+      "i": 21,
+      "config": {
+        "width": 1.2,
+        "seed": 203,
+        "controller": "flow",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": false
+      }
+    },
+    {
+      "i": 22,
+      "config": {
+        "width": 1.2,
+        "seed": 203,
+        "controller": "boids",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": false
+      }
+    },
+    {
+      "i": 23,
+      "config": {
+        "width": 1.2,
+        "seed": 203,
+        "controller": "goal-only",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": false
+      }
+    },
+    {
+      "i": 24,
+      "config": {
+        "width": 1.2,
+        "seed": 204,
+        "controller": "flow",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": false
+      }
+    },
+    {
+      "i": 25,
+      "config": {
+        "width": 1.2,
+        "seed": 204,
+        "controller": "boids",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": false
+      }
+    },
+    {
+      "i": 26,
+      "config": {
+        "width": 1.2,
+        "seed": 204,
+        "controller": "goal-only",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": false
+      }
+    },
+    {
+      "i": 27,
+      "config": {
+        "width": 1.2,
+        "seed": 205,
+        "controller": "flow",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": false
+      }
+    },
+    {
+      "i": 28,
+      "config": {
+        "width": 1.2,
+        "seed": 205,
+        "controller": "boids",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": false
+      }
+    },
+    {
+      "i": 29,
+      "config": {
+        "width": 1.2,
+        "seed": 205,
+        "controller": "goal-only",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": false
+      }
+    },
+    {
+      "i": 30,
+      "config": {
+        "width": 2.4,
+        "seed": 201,
+        "controller": "flow",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": true
+      }
+    },
+    {
+      "i": 31,
+      "config": {
+        "width": 2.4,
+        "seed": 201,
+        "controller": "boids",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": true
+      }
+    },
+    {
+      "i": 32,
+      "config": {
+        "width": 2.4,
+        "seed": 201,
+        "controller": "goal-only",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": true
+      }
+    },
+    {
+      "i": 33,
+      "config": {
+        "width": 2.4,
+        "seed": 202,
+        "controller": "flow",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": false
+      }
+    },
+    {
+      "i": 34,
+      "config": {
+        "width": 2.4,
+        "seed": 202,
+        "controller": "boids",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": false
+      }
+    },
+    {
+      "i": 35,
+      "config": {
+        "width": 2.4,
+        "seed": 202,
+        "controller": "goal-only",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": false
+      }
+    },
+    {
+      "i": 36,
+      "config": {
+        "width": 2.4,
+        "seed": 203,
+        "controller": "flow",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": false
+      }
+    },
+    {
+      "i": 37,
+      "config": {
+        "width": 2.4,
+        "seed": 203,
+        "controller": "boids",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": false
+      }
+    },
+    {
+      "i": 38,
+      "config": {
+        "width": 2.4,
+        "seed": 203,
+        "controller": "goal-only",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": false
+      }
+    },
+    {
+      "i": 39,
+      "config": {
+        "width": 2.4,
+        "seed": 204,
+        "controller": "flow",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": false
+      }
+    },
+    {
+      "i": 40,
+      "config": {
+        "width": 2.4,
+        "seed": 204,
+        "controller": "boids",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": false
+      }
+    },
+    {
+      "i": 41,
+      "config": {
+        "width": 2.4,
+        "seed": 204,
+        "controller": "goal-only",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": false
+      }
+    },
+    {
+      "i": 42,
+      "config": {
+        "width": 2.4,
+        "seed": 205,
+        "controller": "flow",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": false
+      }
+    },
+    {
+      "i": 43,
+      "config": {
+        "width": 2.4,
+        "seed": 205,
+        "controller": "boids",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": false
+      }
+    },
+    {
+      "i": 44,
+      "config": {
+        "width": 2.4,
+        "seed": 205,
+        "controller": "goal-only",
+        "spacing": 0.6,
+        "speed": 0.5,
+        "profile": "ideal",
+        "record": false
+      }
+    }
+  ],
+  "sourceSHA256": {
+    "boids.cjs": "f201b614d53854314348f413e7e4fb197ee85a9f2cdf2983a870bfe768f48688",
+    "sim.cjs": "778e87b33a111bbef1c1eecaea806521b37985adb22a7a523001fc79a2351fad"
+  }
+}

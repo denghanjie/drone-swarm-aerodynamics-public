@@ -1,0 +1,70 @@
+{
+  "passed": 7,
+  "checks": [
+    {
+      "name": "Original gains exactly reproduce Step 3D, both aerodynamic models",
+      "passed": true,
+      "detail": "Exact final-state equality"
+    },
+    {
+      "name": "Selected trajectory converges with a halved RK4 step",
+      "passed": true,
+      "detail": {
+        "maxPositionDifferenceM": 1.054824209830059e-06
+      }
+    },
+    {
+      "name": "All six equilibria balance dynamics and avoid motor saturation",
+      "passed": true,
+      "detail": {
+        "maxDerivativeResidual": 2.5381322747586927e-11
+      }
+    },
+    {
+      "name": "Linearized sampled map predicts independent tiny perturbations",
+      "passed": true,
+      "detail": {
+        "maxAbsolutePredictionError": 5.870001433191432e-13
+      }
+    },
+    {
+      "name": "Stability classifications survive halved finite differences and integration step",
+      "passed": true,
+      "detail": {
+        "maxRadiusChange": 3.0157136787778427e-09
+      }
+    },
+    {
+      "name": "Selection uses training score alone and all 27 candidates are retained",
+      "passed": true
+    },
+    {
+      "name": "All comparison horizons use earliest stop across four alternatives",
+      "passed": true
+    }
+  ],
+  "browserQA": {
+    "environment": "Codex in-app browser via cua_repl Playwright; standalone Browser plugin absent",
+    "url": "http://127.0.0.1:8874/outputs/step-03e-stability-lab.html",
+    "viewports": [
+      "1440x1000",
+      "390x844"
+    ],
+    "checks": {
+      "pageIdentity": "pass",
+      "meaningfulContent": "pass",
+      "noErrorOverlay": "pass",
+      "consoleErrorsAndWarnings": "none observed",
+      "screenshots": "desktop and mobile inspected",
+      "gainSwitch": "original at t=8 gives x=0.185m, pitch=-16.8deg; chosen x=-0.154m, pitch=2.4deg",
+      "lowThrust": "common horizon updates to 0.250s",
+      "playback": "time advances from 8.00 to 8.20s",
+      "plotAndSeek": "pass"
+    },
+    "untested": [
+      "CSV browser download delivery",
+      "other browser engines"
+    ],
+    "viewportOverrideReset": true
+  }
+}

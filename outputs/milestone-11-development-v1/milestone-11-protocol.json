@@ -1,0 +1,94 @@
+{
+  "parameters": {
+    "radius": 1.8,
+    "separationRadius": 0.85,
+    "separation": 1.5,
+    "alignment": 2,
+    "cohesion": 0.22,
+    "cruise": 0.65,
+    "maxSpeed": 0.9,
+    "steeringHorizon": 0.4
+  },
+  "jobs": [
+    {
+      "seed": 301,
+      "mode": "boids",
+      "record": true
+    },
+    {
+      "seed": 301,
+      "mode": "separation-only",
+      "record": true
+    },
+    {
+      "seed": 301,
+      "mode": "off",
+      "record": true
+    },
+    {
+      "seed": 302,
+      "mode": "boids",
+      "record": false
+    },
+    {
+      "seed": 302,
+      "mode": "separation-only",
+      "record": false
+    },
+    {
+      "seed": 302,
+      "mode": "off",
+      "record": false
+    },
+    {
+      "seed": 303,
+      "mode": "boids",
+      "record": false
+    },
+    {
+      "seed": 303,
+      "mode": "separation-only",
+      "record": false
+    },
+    {
+      "seed": 303,
+      "mode": "off",
+      "record": false
+    },
+    {
+      "seed": 304,
+      "mode": "boids",
+      "record": false
+    },
+    {
+      "seed": 304,
+      "mode": "separation-only",
+      "record": false
+    },
+    {
+      "seed": 304,
+      "mode": "off",
+      "record": false
+    },
+    {
+      "seed": 305,
+      "mode": "boids",
+      "record": false
+    },
+    {
+      "seed": 305,
+      "mode": "separation-only",
+      "record": false
+    },
+    {
+      "seed": 305,
+      "mode": "off",
+      "record": false
+    }
+  ],
+  "pilot": "Seed 1, retained separately. Parameters frozen before seeds301–305.",
+  "physics": "Existing 6DOF RK4, dt .005, control .01; vertical velocity command converted algebraically into existing altitude controller setpoint.",
+  "environment": "Soft bounds x/y ±8m, z1–7m; no assigned positions or global centroid steering. Local cue x>0, t15–18s adds steering acceleration y.3/z.2. Same environment in every mode.",
+  "scope": "CPU model only; airflow off; not physical validation.",
+  "sha256": "9e3c1ea7743a0d0d9d58df0fd9b5dd3df5b3241d5faf2fee9254b35b6ec65faa"
+}

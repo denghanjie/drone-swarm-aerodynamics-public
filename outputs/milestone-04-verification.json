@@ -1,0 +1,233 @@
+{
+  "checks": [
+    {
+      "name": "All 120 paired initial conditions exactly identical",
+      "passed": true
+    },
+    {
+      "name": "All output numeric metrics finite",
+      "passed": true
+    },
+    {
+      "name": "Displayed replay frames contain all 50 drones and reach reported end",
+      "passed": true
+    },
+    {
+      "name": "Reactive implementation reproduces saved width 0.6 exemplar",
+      "passed": true
+    },
+    {
+      "name": "Reactive implementation reproduces saved width 1.2 exemplar",
+      "passed": true
+    },
+    {
+      "name": "Reactive implementation reproduces saved width 2.4 exemplar",
+      "passed": true
+    },
+    {
+      "name": "Three scheduled exemplar refinements preserve counts and stops, with final positions within 1 cm",
+      "passed": true
+    },
+    {
+      "name": "Narrow initial reservation holds the batch and leaves other drones waiting",
+      "passed": true
+    },
+    {
+      "name": "Batch capacity reflects gate clearance and is capped at five",
+      "passed": true
+    },
+    {
+      "name": "Reservation event traces obey phase order and never exceed capacity",
+      "passed": true
+    },
+    {
+      "name": "Paired differences and fixed 60-second throughput are consistent",
+      "passed": true
+    }
+  ],
+  "refinement": [
+    {
+      "width": 0.6,
+      "coarse": {
+        "validCrossings": 14,
+        "completionFraction": 0.28,
+        "fullHorizonThroughput": 0.23333333333333334,
+        "minSeparation": 0.3583277308244406,
+        "closePairs": 0,
+        "contactPairs": 0,
+        "invalidCrossingDrones": 0,
+        "motorSaturationFraction": 0,
+        "lateralAltitudeTrackingRMS": 0.05964731815763969,
+        "maxTiltDeg": 6.162562673787939,
+        "stopReason": null,
+        "simulatedSeconds": 60,
+        "fullHorizonCompleted": true
+      },
+      "half": {
+        "validCrossings": 14,
+        "completionFraction": 0.28,
+        "fullHorizonThroughput": 0.23333333333333334,
+        "minSeparation": 0.35832771722520035,
+        "closePairs": 0,
+        "contactPairs": 0,
+        "invalidCrossingDrones": 0,
+        "motorSaturationFraction": 0,
+        "lateralAltitudeTrackingRMS": 0.05964731830777378,
+        "maxTiltDeg": 6.16254540190821,
+        "stopReason": null,
+        "simulatedSeconds": 60,
+        "fullHorizonCompleted": true
+      },
+      "quarter": {
+        "validCrossings": 14,
+        "completionFraction": 0.28,
+        "fullHorizonThroughput": 0.23333333333333334,
+        "minSeparation": 0.358327426230297,
+        "closePairs": 0,
+        "contactPairs": 0,
+        "invalidCrossingDrones": 0,
+        "motorSaturationFraction": 0,
+        "lateralAltitudeTrackingRMS": 0.059647318316259294,
+        "maxTiltDeg": 6.162544432820367,
+        "stopReason": null,
+        "simulatedSeconds": 60,
+        "fullHorizonCompleted": true
+      },
+      "coarseHalfPositionMax": 8.797286394187337e-09,
+      "halfQuarterPositionMax": 4.935731209343393e-10,
+      "crossingTimeDifferenceMax": 1.3463645753830633e-07
+    },
+    {
+      "width": 1.2,
+      "coarse": {
+        "validCrossings": 20,
+        "completionFraction": 0.4,
+        "fullHorizonThroughput": 0.3333333333333333,
+        "minSeparation": 0.31014392785539013,
+        "closePairs": 0,
+        "contactPairs": 0,
+        "invalidCrossingDrones": 0,
+        "motorSaturationFraction": 0,
+        "lateralAltitudeTrackingRMS": 0.05589598010675616,
+        "maxTiltDeg": 6.191191807018669,
+        "stopReason": null,
+        "simulatedSeconds": 60,
+        "fullHorizonCompleted": true
+      },
+      "half": {
+        "validCrossings": 20,
+        "completionFraction": 0.4,
+        "fullHorizonThroughput": 0.3333333333333333,
+        "minSeparation": 0.31014391219155724,
+        "closePairs": 0,
+        "contactPairs": 0,
+        "invalidCrossingDrones": 0,
+        "motorSaturationFraction": 0,
+        "lateralAltitudeTrackingRMS": 0.05589598024333813,
+        "maxTiltDeg": 6.191174452395041,
+        "stopReason": null,
+        "simulatedSeconds": 60,
+        "fullHorizonCompleted": true
+      },
+      "quarter": {
+        "validCrossings": 20,
+        "completionFraction": 0.4,
+        "fullHorizonThroughput": 0.3333333333333333,
+        "minSeparation": 0.31014390980843615,
+        "closePairs": 0,
+        "contactPairs": 0,
+        "invalidCrossingDrones": 0,
+        "motorSaturationFraction": 0,
+        "lateralAltitudeTrackingRMS": 0.05589598025105933,
+        "maxTiltDeg": 6.191717925449044,
+        "stopReason": null,
+        "simulatedSeconds": 60,
+        "fullHorizonCompleted": true
+      },
+      "coarseHalfPositionMax": 6.785372264062131e-09,
+      "halfQuarterPositionMax": 3.8225511645129737e-10,
+      "crossingTimeDifferenceMax": 1.6157235904756817e-07
+    },
+    {
+      "width": 2.4,
+      "coarse": {
+        "validCrossings": 40,
+        "completionFraction": 0.8,
+        "fullHorizonThroughput": 0.6666666666666666,
+        "minSeparation": 0.545900202397595,
+        "closePairs": 0,
+        "contactPairs": 0,
+        "invalidCrossingDrones": 0,
+        "motorSaturationFraction": 0,
+        "lateralAltitudeTrackingRMS": 0.008177996979249667,
+        "maxTiltDeg": 6.191212993913517,
+        "stopReason": null,
+        "simulatedSeconds": 60,
+        "fullHorizonCompleted": true
+      },
+      "half": {
+        "validCrossings": 40,
+        "completionFraction": 0.8,
+        "fullHorizonThroughput": 0.6666666666666666,
+        "minSeparation": 0.5459002014791299,
+        "closePairs": 0,
+        "contactPairs": 0,
+        "invalidCrossingDrones": 0,
+        "motorSaturationFraction": 0,
+        "lateralAltitudeTrackingRMS": 0.008177997023401279,
+        "maxTiltDeg": 6.191195639137427,
+        "stopReason": null,
+        "simulatedSeconds": 60,
+        "fullHorizonCompleted": true
+      },
+      "quarter": {
+        "validCrossings": 40,
+        "completionFraction": 0.8,
+        "fullHorizonThroughput": 0.6666666666666666,
+        "minSeparation": 0.5459001321498554,
+        "closePairs": 0,
+        "contactPairs": 0,
+        "invalidCrossingDrones": 0,
+        "motorSaturationFraction": 0,
+        "lateralAltitudeTrackingRMS": 0.008177997025875228,
+        "maxTiltDeg": 6.191738764588176,
+        "stopReason": null,
+        "simulatedSeconds": 60,
+        "fullHorizonCompleted": true
+      },
+      "coarseHalfPositionMax": 1.2620543648225529e-08,
+      "halfQuarterPositionMax": 7.080696092525651e-10,
+      "crossingTimeDifferenceMax": 1.858595624071313e-07
+    }
+  ],
+  "scope": "Numerical verification, not physical validation. Step-size refinement of displayed seed-1 spacing-0.6 speed-0.5 exemplars only.",
+  "sourceSHA256": {
+    "milestone-04-source/sim.cjs": "fa935f2b593d2604f3108550683724ba441eaf730f293d6526e246d7b2a5d8e6",
+    "milestone-04-source/scheduler.cjs": "6952a050365dd935d7a8be7c9052b7528df3c5d7831c5f263f3fde4d7ce73e43",
+    "milestone-04-source/study.cjs": "2d9030f6bfe85f6a395d5b0fa7cd199d117577a0758eae18185669d7b4b1e771",
+    "milestone-03-source/sim.cjs": "477e5c349ab4dde26b718a8961ea84a60e747789fdb242fb29c128ceccfccb33",
+    "step02c-source/physics.cjs": "0c46c9beb4e831c621658f6600c074f97c95966de07f5000eb64aa476a443fa1"
+  },
+  "browserQA": {
+    "browser": "Codex in-app browser",
+    "viewports": [
+      "1440x1000",
+      "390x844",
+      "default panel"
+    ],
+    "checks": {
+      "pageIdentityAndBoth3DCanvases": true,
+      "sharedClockAdvances": true,
+      "playPauseAndRestart": true,
+      "allThreePairedEndCountsMatchRecords": true,
+      "stoppedRecordRemainsFrozen": true,
+      "overviewCloseUpTopAndEncounterCameras": true,
+      "encounterDisabledForUnstoppedWideCase": true,
+      "mobileStackedCanvasesAndNoHorizontalOverflow": true,
+      "noConsoleWarningsOrErrors": true,
+      "allLocalDeliverableLinksExist": true
+    },
+    "screenshot": "milestone-04-preview.png",
+    "limitations": "Only in-app browser tested. Performance and physical validity not established."
+  }
+}

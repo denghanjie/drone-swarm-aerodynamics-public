@@ -1,0 +1,123 @@
+{
+  "status": "development only; seed1401 is not eligible as held-out evidence",
+  "checks": [
+    {
+      "name": "Airflow-off exact dynamics/metrics regression",
+      "passed": true
+    },
+    {
+      "name": "sum-force two-second development smoke test",
+      "passed": true,
+      "outcome": {
+        "passed": 0,
+        "end": 2,
+        "stopReason": null,
+        "failure": null,
+        "minimumSampledSeparation": 0.5502874816470453,
+        "minimumSampledObstacleClearance": 2.034127410787636,
+        "minimumConnectedFraction": 1,
+        "final": {
+          "t": 2,
+          "passed": 0,
+          "center": [
+            -6.7971119747798,
+            -0.558933559739765,
+            3.810966962174876
+          ],
+          "order": 0.9825212321469096,
+          "largestFraction": 1,
+          "components": 1,
+          "heightSpan": 2.9367554368735873,
+          "rmsRadius": 1.433499051404288,
+          "minimumSeparationCappedAtRadius": 0.6071402185281316,
+          "minimumObstacleClearance": 2.034127410787636,
+          "meanNeighborCount": 22.04
+        },
+        "maxTiltDegrees": 9.599215089654923,
+        "saturationFraction": 0
+      },
+      "aeroStats": {
+        "maximumInflow": 3.4926870997386965,
+        "contributions": 49271,
+        "candidates": 459364,
+        "nominalIdealEnergyJ": 111.60167469033702
+      }
+    },
+    {
+      "name": "sum-rotor two-second development smoke test",
+      "passed": true,
+      "outcome": {
+        "passed": 0,
+        "end": 2,
+        "stopReason": null,
+        "failure": null,
+        "minimumSampledSeparation": 0.4306005792325169,
+        "minimumSampledObstacleClearance": 2.338928298843464,
+        "minimumConnectedFraction": 1,
+        "final": {
+          "t": 2,
+          "passed": 0,
+          "center": [
+            -6.828271206883318,
+            -0.5200173506521597,
+            3.8055989890161057
+          ],
+          "order": 0.9379568798985556,
+          "largestFraction": 1,
+          "components": 1,
+          "heightSpan": 2.634887451739022,
+          "rmsRadius": 1.4466120631879025,
+          "minimumSeparationCappedAtRadius": 0.49644929273030086,
+          "minimumObstacleClearance": 2.338928298843464,
+          "meanNeighborCount": 21.52
+        },
+        "maxTiltDegrees": 15.738042782979734,
+        "saturationFraction": 0
+      },
+      "aeroStats": {
+        "maximumInflow": 3.4926870997386965,
+        "contributions": 48095,
+        "candidates": 457554,
+        "nominalIdealEnergyJ": 112.08103031402099
+      }
+    },
+    {
+      "name": "rss-rotor two-second development smoke test",
+      "passed": true,
+      "outcome": {
+        "passed": 0,
+        "end": 2,
+        "stopReason": null,
+        "failure": null,
+        "minimumSampledSeparation": 0.4355534221023045,
+        "minimumSampledObstacleClearance": 2.454577460052713,
+        "minimumConnectedFraction": 1,
+        "final": {
+          "t": 2,
+          "passed": 0,
+          "center": [
+            -6.815847322770452,
+            -0.5345498492220024,
+            3.8655335231319943
+          ],
+          "order": 0.9484418992967353,
+          "largestFraction": 1,
+          "components": 1,
+          "heightSpan": 2.5386580125749196,
+          "rmsRadius": 1.419672997675624,
+          "minimumSeparationCappedAtRadius": 0.5110507409382354,
+          "minimumObstacleClearance": 2.454577460052713,
+          "meanNeighborCount": 22.12
+        },
+        "maxTiltDegrees": 15.979831636848317,
+        "saturationFraction": 0
+      },
+      "aeroStats": {
+        "maximumInflow": 2.503962558170535,
+        "contributions": 46805,
+        "candidates": 460334,
+        "nominalIdealEnergyJ": 111.18384686306628
+      }
+    }
+  ]
+}

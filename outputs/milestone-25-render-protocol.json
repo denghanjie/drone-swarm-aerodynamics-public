@@ -1,0 +1,22 @@
+{
+  "created": "2026-10-12T00:08:07.767538+00:00",
+  "counts": [
+    50,
+    200,
+    1000,
+    5000
+  ],
+  "repeats": 1,
+  "warmupFrames": 30,
+  "measuredFrames": 240,
+  "viewport": [
+    1280,
+    800
+  ],
+  "trails": false,
+  "camera": "fixed overview",
+  "sourceHash": "99624e0857303aa0c6182930909354b846a237f734f0c3de49c6d86b9c1a0476",
+  "motion": "first timing replay per count, wraps every2 simulated seconds, advances1/60s per drawn frame",
+  "measurements": "requestAnimationFrame interval, CPU scene update duration, CPU renderer.render call duration; median/mean/p95",
+  "limits": "Not GPU execution time, physics time or hardware-independent FPS. One browser sample per count; uncontrolled OS load. Sequential after numerical study ends."
+}

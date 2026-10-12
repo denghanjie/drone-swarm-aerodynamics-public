@@ -1,0 +1,163 @@
+{
+  "created": "2026-10-11T23:25:05.813Z",
+  "jobs": [
+    {
+      "seed": 1103,
+      "scenario": "tight",
+      "mode": "interior",
+      "observationDelay": 0.1,
+      "estimator": "raw",
+      "dt": 0.0025,
+      "record": true
+    },
+    {
+      "seed": 1103,
+      "scenario": "tight",
+      "mode": "interior",
+      "observationDelay": 0.1,
+      "estimator": "raw",
+      "dt": 0.00125,
+      "record": false
+    },
+    {
+      "seed": 1103,
+      "scenario": "tight",
+      "mode": "interior",
+      "observationDelay": 0.1,
+      "estimator": "predict",
+      "dt": 0.0025,
+      "record": true
+    },
+    {
+      "seed": 1103,
+      "scenario": "tight",
+      "mode": "interior",
+      "observationDelay": 0.1,
+      "estimator": "predict",
+      "dt": 0.00125,
+      "record": false
+    },
+    {
+      "seed": 1103,
+      "scenario": "tight",
+      "mode": "interior",
+      "observationDelay": 0.2,
+      "estimator": "raw",
+      "dt": 0.0025,
+      "record": true
+    },
+    {
+      "seed": 1103,
+      "scenario": "tight",
+      "mode": "interior",
+      "observationDelay": 0.2,
+      "estimator": "raw",
+      "dt": 0.00125,
+      "record": false
+    },
+    {
+      "seed": 1103,
+      "scenario": "tight",
+      "mode": "interior",
+      "observationDelay": 0.2,
+      "estimator": "predict",
+      "dt": 0.0025,
+      "record": true
+    },
+    {
+      "seed": 1103,
+      "scenario": "tight",
+      "mode": "interior",
+      "observationDelay": 0.2,
+      "estimator": "predict",
+      "dt": 0.00125,
+      "record": false
+    },
+    {
+      "seed": 1101,
+      "scenario": "tight",
+      "mode": "interior",
+      "observationDelay": 0.1,
+      "estimator": "raw",
+      "dt": 0.0025,
+      "record": true
+    },
+    {
+      "seed": 1101,
+      "scenario": "tight",
+      "mode": "interior",
+      "observationDelay": 0.1,
+      "estimator": "raw",
+      "dt": 0.00125,
+      "record": false
+    },
+    {
+      "seed": 1101,
+      "scenario": "tight",
+      "mode": "interior",
+      "observationDelay": 0.1,
+      "estimator": "predict",
+      "dt": 0.0025,
+      "record": true
+    },
+    {
+      "seed": 1101,
+      "scenario": "tight",
+      "mode": "interior",
+      "observationDelay": 0.1,
+      "estimator": "predict",
+      "dt": 0.00125,
+      "record": false
+    },
+    {
+      "seed": 1104,
+      "scenario": "tight",
+      "mode": "interior",
+      "observationDelay": 0.1,
+      "estimator": "raw",
+      "dt": 0.0025,
+      "record": true
+    },
+    {
+      "seed": 1104,
+      "scenario": "tight",
+      "mode": "interior",
+      "observationDelay": 0.1,
+      "estimator": "raw",
+      "dt": 0.00125,
+      "record": false
+    },
+    {
+      "seed": 1104,
+      "scenario": "tight",
+      "mode": "interior",
+      "observationDelay": 0.1,
+      "estimator": "predict",
+      "dt": 0.0025,
+      "record": true
+    },
+    {
+      "seed": 1104,
+      "scenario": "tight",
+      "mode": "interior",
+      "observationDelay": 0.1,
+      "estimator": "predict",
+      "dt": 0.00125,
+      "record": false
+    }
+  ],
+  "purpose": "Development: can constant-velocity extrapolation address the saved100ms contact failure? Include200ms stress without retuning.",
+  "method": "Estimate each measured position as p+v*age. Velocity unchanged. Both self and neighbors estimated from delayed data, with no current true state supplied to high-level steering. During startup use actual age=min(t,delay). Visibility uses1.8m radius at measurement time BEFORE prediction. Existing Boids/filter then use estimated positions. Low-level stabilization still sees current own state, as in21.",
+  "unchanged": "50 bodies,60s,100Hz control,known map,airflow off,noise off,old inward controller and contact envelopes unchanged. No central assignments.",
+  "acceptance": "Each2.5→1.25ms pair must have same finish count and stop reason, end-time difference<0.01s, maximum final position difference<0.01m. Report contacts, completion, fixed1.8m connectivity and clearance separately. Development recovery is not general safety.",
+  "hashes": {
+    "sim.cjs": "878d4d2e058cdde3849b355d305d7d6639f5abc299f95358bea081b79195b8b2",
+    "continuous.cjs": "24abcd64ced6abeaa8f862d8200aaaee7b7c5b9d65be55d10a7ecbbfaeb3c922",
+    "soft-filter.cjs": "94de3be41161aafb070826e78a7e11f2dc553a77b8463a6796b324da8bdcbaa1",
+    "observer.cjs": "83a243f8d96179b667169ca3ef571f06fae3b61fa7346f94716abeba4179a2ff",
+    "check-observer.cjs": "c843ed48491105d6ca96f1d36a46f50646863eee00269dfa57bb726c85ac42be",
+    "study.cjs": "47f39e3875f21044d4a952413bf2260eea48a029a08be316cc57fd1d7440cf45",
+    "../step02c-source/physics.cjs": "0c46c9beb4e831c621658f6600c074f97c95966de07f5000eb64aa476a443fa1",
+    "../milestone-10-source/sim.cjs": "778e87b33a111bbef1c1eecaea806521b37985adb22a7a523001fc79a2351fad"
+  }
+}

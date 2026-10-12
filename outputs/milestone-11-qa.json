@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-11",
+  "milestone": 11,
+  "status": "Delivered exploratory volumetric flocking; overall research ongoing",
+  "environment": {
+    "url": "http://127.0.0.1:8875/outputs/research-results.html",
+    "browser": "Codex in-app browser through cua_repl",
+    "viewports": [
+      "1440x1000",
+      "390x844"
+    ]
+  },
+  "checks": {
+    "pageIdentity": "pass",
+    "nonblank": "pass",
+    "frameworkErrorOverlay": "none",
+    "consoleWarningsErrors": [],
+    "visualScreenshot": "milestone-11-preview.png",
+    "interactions": [
+      "10s organization jump: Boids99%,50/50,2.8m height; separation15%,7/50,5.2m",
+      "17s cue jump and neighbor checkbox",
+      "all-off selector and25s jump: replay correctly frozen at1.705s contact stop",
+      "play/restart exercised",
+      "mobile canvas356x350, page width390, no horizontal overflow"
+    ],
+    "numerical": [
+      {
+        "name": "Locality: remote drone does not alter steering",
+        "passed": true
+      },
+      {
+        "name": "Drone ordering leaves steering unchanged",
+        "passed": true
+      },
+      {
+        "name": "Matched full initial states for all modes",
+        "passed": true
+      },
+      {
+        "name": "Boids seed401 dt refinement: no stop and final positions within1cm",
+        "passed": true
+      }
+    ]
+  },
+  "limitations": [
+    "Single browser tested",
+    "Refinement only for displayed Boids seed401",
+    "No physical validation, airflow or obstacle passage",
+    "Development ground-limit failures preserved under milestone-11-development-v1"
+  ]
+}

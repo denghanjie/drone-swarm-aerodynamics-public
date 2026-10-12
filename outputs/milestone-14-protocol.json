@@ -1,0 +1,149 @@
+{
+  "jobs": [
+    {
+      "seed": 701,
+      "scenario": "slalom",
+      "mode": "boids",
+      "record": true
+    },
+    {
+      "seed": 701,
+      "scenario": "slalom",
+      "mode": "priority",
+      "record": true
+    },
+    {
+      "seed": 701,
+      "scenario": "staggered",
+      "mode": "boids",
+      "record": true
+    },
+    {
+      "seed": 701,
+      "scenario": "staggered",
+      "mode": "priority",
+      "record": true
+    },
+    {
+      "seed": 701,
+      "scenario": "tight",
+      "mode": "boids",
+      "record": true
+    },
+    {
+      "seed": 701,
+      "scenario": "tight",
+      "mode": "priority",
+      "record": true
+    },
+    {
+      "seed": 702,
+      "scenario": "slalom",
+      "mode": "boids",
+      "record": false
+    },
+    {
+      "seed": 702,
+      "scenario": "slalom",
+      "mode": "priority",
+      "record": false
+    },
+    {
+      "seed": 702,
+      "scenario": "staggered",
+      "mode": "boids",
+      "record": false
+    },
+    {
+      "seed": 702,
+      "scenario": "staggered",
+      "mode": "priority",
+      "record": false
+    },
+    {
+      "seed": 702,
+      "scenario": "tight",
+      "mode": "boids",
+      "record": false
+    },
+    {
+      "seed": 702,
+      "scenario": "tight",
+      "mode": "priority",
+      "record": false
+    },
+    {
+      "seed": 703,
+      "scenario": "slalom",
+      "mode": "boids",
+      "record": false
+    },
+    {
+      "seed": 703,
+      "scenario": "slalom",
+      "mode": "priority",
+      "record": false
+    },
+    {
+      "seed": 703,
+      "scenario": "staggered",
+      "mode": "boids",
+      "record": false
+    },
+    {
+      "seed": 703,
+      "scenario": "staggered",
+      "mode": "priority",
+      "record": false
+    },
+    {
+      "seed": 703,
+      "scenario": "tight",
+      "mode": "boids",
+      "record": false
+    },
+    {
+      "seed": 703,
+      "scenario": "tight",
+      "mode": "priority",
+      "record": false
+    },
+    {
+      "seed": 601,
+      "scenario": "tight",
+      "mode": "priority",
+      "record": false
+    },
+    {
+      "seed": 602,
+      "scenario": "tight",
+      "mode": "priority",
+      "record": false
+    },
+    {
+      "seed": 603,
+      "scenario": "tight",
+      "mode": "priority",
+      "record": false
+    }
+  ],
+  "parameters": {
+    "radius": 1.8,
+    "separationRadius": 0.85,
+    "separation": 1.5,
+    "alignment": 2,
+    "cohesion": 0.22,
+    "cruise": 0.65,
+    "maxSpeed": 0.9,
+    "steeringHorizon": 0.4
+  },
+  "filter": {
+    "margin": 0.25,
+    "lookahead": 1.2,
+    "approach": 1.8,
+    "exit": 0.5
+  },
+  "sourceSHA256": "c7f4d77b511d1958009c1fa95902ef2f44e813a8c216196746139544c57daa4a",
+  "design": "Three old tight-course regression seeds;18 matched fresh cases701–703. Candidate fixed before fresh evaluation;601 also used as retained pilot, no parameter changes.",
+  "scope": "Velocity-command clearance filter after unchanged Boids steering; own state and static map only. Rigid-body plant unchanged. Not a formal safety guarantee; airflow off, ideal observations."
+}

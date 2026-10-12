@@ -1,0 +1,133 @@
+{
+  "checks": [
+    {
+      "name": "Zero inflow preserves thrust 0",
+      "passed": true
+    },
+    {
+      "name": "Zero inflow preserves thrust 0.01",
+      "passed": true
+    },
+    {
+      "name": "Zero inflow preserves thrust 0.066",
+      "passed": true
+    },
+    {
+      "name": "Zero inflow preserves thrust 0.15",
+      "passed": true
+    },
+    {
+      "name": "Preserves assumed induced power across 9 operating points",
+      "passed": true,
+      "evidence": 1.0342837697407958e-12
+    },
+    {
+      "name": "Increasing inflow reduces thrust",
+      "passed": true
+    },
+    {
+      "name": "Increasing motor state increases thrust",
+      "passed": true
+    },
+    {
+      "name": "No-interaction full state regression",
+      "passed": true
+    },
+    {
+      "name": "Aligned initial rotor loads equal",
+      "passed": true
+    },
+    {
+      "name": "Aligned receiver stays level and centered",
+      "passed": true
+    },
+    {
+      "name": "Wake reduces initial thrust",
+      "passed": true
+    },
+    {
+      "name": "Offset creates initial pitch moment",
+      "passed": true
+    },
+    {
+      "name": "Mirrored offsets produce mirrored motion",
+      "passed": true
+    },
+    {
+      "name": "Timestep convergence {\"gap\":0.45,\"offset\":0}",
+      "passed": true,
+      "evidence": 4.062679859195839e-9
+    },
+    {
+      "name": "Finite bounded rotor forces {\"gap\":0.45,\"offset\":0}",
+      "passed": true
+    },
+    {
+      "name": "Timestep convergence {\"gap\":0.45,\"offset\":0.06}",
+      "passed": true,
+      "evidence": 0.00000139561017048484
+    },
+    {
+      "name": "Finite bounded rotor forces {\"gap\":0.45,\"offset\":0.06}",
+      "passed": true
+    },
+    {
+      "name": "Timestep convergence {\"gap\":0.8,\"offset\":0.2}",
+      "passed": true,
+      "evidence": 0.0000011811942089989813
+    },
+    {
+      "name": "Finite bounded rotor forces {\"gap\":0.8,\"offset\":0.2}",
+      "passed": true
+    },
+    {
+      "name": "Timestep convergence {\"gap\":0.25,\"offset\":0,\"ratio\":1.1}",
+      "passed": true,
+      "evidence": 9.491230412717044e-9
+    },
+    {
+      "name": "Finite bounded rotor forces {\"gap\":0.25,\"offset\":0,\"ratio\":1.1}",
+      "passed": true
+    },
+    {
+      "name": "Rejects near-field receiver state",
+      "passed": true
+    },
+    {
+      "name": "Extreme setting stops instead of exceeding tilt limit",
+      "passed": true,
+      "evidence": {
+        "offset": 0.04,
+        "stop": "Tilt exceeded the 20° exploratory limit",
+        "t": 0.165
+      }
+    }
+  ],
+  "summary": {
+    "passed": 23,
+    "aligned": {
+      "maxAltitudeLoss": 0.26987944470790415,
+      "finalAltitude": 0.7384309879751451,
+      "maxPitchDeg": 0,
+      "finalX": 0,
+      "saturationFraction": 0,
+      "stopped": null
+    },
+    "offset": {
+      "maxAltitudeLoss": 0.14526683179511857,
+      "finalAltitude": 0.8768990195831996,
+      "maxPitchDeg": 15.346954882391966,
+      "finalX": 0.08945017986052209,
+      "saturationFraction": 0,
+      "stopped": null
+    },
+    "maxPositionConvergenceError": 0.00000139561017048484,
+    "powerRelativeResidual": 1.0342837697407958e-12,
+    "halted": {
+      "offset": 0.04,
+      "stop": "Tilt exceeded the 20° exploratory limit",
+      "t": 0.165
+    }
+  },
+  "scope": "Numerical tests of a hypothetical constant ideal induced-power coupling; not experimental validation"
+}

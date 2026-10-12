@@ -1,0 +1,322 @@
+{
+  "purpose": "Compatibility screening, not physical validation",
+  "sourceCommit": "7ebad1ecabd28a7000add2d05f888aa2e837c2cc",
+  "referenceSource": "https://github.com/learnsyslab/gym-pybullet-drones/blob/7ebad1ecabd28a7000add2d05f888aa2e837c2cc/gym_pybullet_drones/envs/BaseAviary.py#L743",
+  "parameters": {
+    "c1": 2267.18,
+    "c2": 0.16,
+    "c3": -0.11,
+    "propRadius": 0.0231348,
+    "mass": 0.027,
+    "g": 9.81
+  },
+  "publishedSummary": {
+    "source": "https://arxiv.org/html/2507.09463v1#S3.SS1",
+    "location": "Section III-A and Figure 6a discussion",
+    "reportedArmScaleM": 0.0325,
+    "normalizedVerticalCondition": "greater than 19",
+    "derivedGapThresholdM": 0.6175,
+    "remainingLiftFractionRange": [
+      0.95,
+      0.98
+    ],
+    "interpretation": "Textual range for the paper experiment, not individual measurements or error bars; closest-separation wording is inconsistent and excluded"
+  },
+  "rows": [
+    {
+      "gap": 0.25,
+      "offset": 0,
+      "existingHypothesis": {
+        "remainingLiftFraction": 0.8180478322578892,
+        "lossN": 0.04819367066985286
+      },
+      "referenceEquation": {
+        "lossN": 1.213437746762467,
+        "betaM": -0.07,
+        "status": "negative width parameter; physical interpretation unresolved",
+        "remainingSupportFraction": -3.5812577746157253
+      }
+    },
+    {
+      "gap": 0.25,
+      "offset": 0.06,
+      "existingHypothesis": {
+        "remainingLiftFraction": 0.8947274185961759,
+        "lossN": 0.027883548636430888
+      },
+      "referenceEquation": {
+        "lossN": 0.8403897602403597,
+        "betaM": -0.07,
+        "status": "negative width parameter; physical interpretation unresolved",
+        "remainingSupportFraction": -2.172838600975421
+      }
+    },
+    {
+      "gap": 0.25,
+      "offset": 0.12,
+      "existingHypothesis": {
+        "remainingLiftFraction": 0.9765349884751234,
+        "lossN": 0.006215177602594046
+      },
+      "referenceEquation": {
+        "lossN": 0.2791711314570279,
+        "betaM": -0.07,
+        "status": "negative width parameter; physical interpretation unresolved",
+        "remainingSupportFraction": -0.053993020942454395
+      }
+    },
+    {
+      "gap": 0.45,
+      "offset": 0,
+      "existingHypothesis": {
+        "remainingLiftFraction": 0.8283664632449476,
+        "lossN": 0.045460574880310745
+      },
+      "referenceEquation": {
+        "lossN": 0.37451782307483555,
+        "betaM": -0.03799999999999999,
+        "status": "negative width parameter; physical interpretation unresolved",
+        "remainingSupportFraction": -0.4139684489554709
+      }
+    },
+    {
+      "gap": 0.45,
+      "offset": 0.06,
+      "existingHypothesis": {
+        "remainingLiftFraction": 0.8876037311088113,
+        "lossN": 0.029770399741209153
+      },
+      "referenceEquation": {
+        "lossN": 0.10767333820186802,
+        "betaM": -0.03799999999999999,
+        "status": "negative width parameter; physical interpretation unresolved",
+        "remainingSupportFraction": 0.5934860943033639
+      }
+    },
+    {
+      "gap": 0.45,
+      "offset": 0.12,
+      "existingHypothesis": {
+        "remainingLiftFraction": 0.9628860486536722,
+        "lossN": 0.009830372293101852
+      },
+      "referenceEquation": {
+        "lossN": 0.002558675671948353,
+        "betaM": -0.03799999999999999,
+        "status": "negative width parameter; physical interpretation unresolved",
+        "remainingSupportFraction": 0.9903398811796416
+      }
+    },
+    {
+      "gap": 0.65,
+      "offset": 0,
+      "existingHypothesis": {
+        "remainingLiftFraction": 0.8461474432756406,
+        "lossN": 0.04075092669958108
+      },
+      "referenceEquation": {
+        "lossN": 0.17950262526071997,
+        "betaM": -0.0059999999999999915,
+        "status": "negative width parameter; physical interpretation unresolved",
+        "remainingSupportFraction": 0.32229914576690466
+      }
+    },
+    {
+      "gap": 0.65,
+      "offset": 0.06,
+      "existingHypothesis": {
+        "remainingLiftFraction": 0.8891352229275071,
+        "lossN": 0.029364753503191177
+      },
+      "referenceEquation": {
+        "lossN": 3.462156611806886e-23,
+        "betaM": -0.0059999999999999915,
+        "status": "negative width parameter; physical interpretation unresolved",
+        "remainingSupportFraction": 1
+      }
+    },
+    {
+      "gap": 0.65,
+      "offset": 0.12,
+      "existingHypothesis": {
+        "remainingLiftFraction": 0.9524929484555285,
+        "lossN": 0.012583192742584182
+      },
+      "referenceEquation": {
+        "lossN": 2.4841305963829532e-88,
+        "betaM": -0.0059999999999999915,
+        "status": "negative width parameter; physical interpretation unresolved",
+        "remainingSupportFraction": 1
+      }
+    },
+    {
+      "gap": 0.6875,
+      "offset": 0,
+      "existingHypothesis": {
+        "remainingLiftFraction": 0.8495125051708785,
+        "lossN": 0.0398596227553894
+      },
+      "referenceEquation": {
+        "lossN": null,
+        "betaM": 0,
+        "status": "zero width: singular at centerline; not evaluated",
+        "remainingSupportFraction": null
+      }
+    },
+    {
+      "gap": 0.6875,
+      "offset": 0.06,
+      "existingHypothesis": {
+        "remainingLiftFraction": 0.8899166006399354,
+        "lossN": 0.029157789988500327
+      },
+      "referenceEquation": {
+        "lossN": null,
+        "betaM": 0,
+        "status": "zero width: singular at centerline; not evaluated",
+        "remainingSupportFraction": null
+      }
+    },
+    {
+      "gap": 0.6875,
+      "offset": 0.12,
+      "existingHypothesis": {
+        "remainingLiftFraction": 0.9509631268829254,
+        "lossN": 0.012988396582519546
+      },
+      "referenceEquation": {
+        "lossN": null,
+        "betaM": 0,
+        "status": "zero width: singular at centerline; not evaluated",
+        "remainingSupportFraction": null
+      }
+    },
+    {
+      "gap": 0.8,
+      "offset": 0,
+      "existingHypothesis": {
+        "remainingLiftFraction": 0.8592454019994876,
+        "lossN": 0.037281670372395714
+      },
+      "referenceEquation": {
+        "lossN": 0.11849977995727218,
+        "betaM": 0.018000000000000002,
+        "status": "finite equation value; validity unestablished",
+        "remainingSupportFraction": 0.5526115454476831
+      }
+    },
+    {
+      "gap": 0.8,
+      "offset": 0.06,
+      "existingHypothesis": {
+        "remainingLiftFraction": 0.8927981143210673,
+        "lossN": 0.02839456345977892
+      },
+      "referenceEquation": {
+        "lossN": 0.00045811068585991505,
+        "betaM": 0.018000000000000002,
+        "status": "finite equation value; validity unestablished",
+        "remainingSupportFraction": 0.9982704319633786
+      }
+    },
+    {
+      "gap": 0.8,
+      "offset": 0.12,
+      "existingHypothesis": {
+        "remainingLiftFraction": 0.9471181358849209,
+        "lossN": 0.014006819348161004
+      },
+      "referenceEquation": {
+        "lossN": 2.6468483369572194e-11,
+        "betaM": 0.018000000000000002,
+        "status": "finite equation value; validity unestablished",
+        "remainingSupportFraction": 0.9999999999000699
+      }
+    },
+    {
+      "gap": 1,
+      "offset": 0,
+      "existingHypothesis": {
+        "remainingLiftFraction": 0.87473624425229,
+        "lossN": 0.03317861098489594
+      },
+      "referenceEquation": {
+        "lossN": 0.07583985917265419,
+        "betaM": 0.05,
+        "status": "finite equation value; validity unestablished",
+        "remainingSupportFraction": 0.7136713890865172
+      }
+    },
+    {
+      "gap": 1,
+      "offset": 0.06,
+      "existingHypothesis": {
+        "remainingLiftFraction": 0.899030147679241,
+        "lossN": 0.026743884784199423
+      },
+      "referenceEquation": {
+        "lossN": 0.03691522254397598,
+        "betaM": 0.05,
+        "status": "finite equation value; validity unestablished",
+        "remainingSupportFraction": 0.8606289026919773
+      }
+    },
+    {
+      "gap": 1,
+      "offset": 0.12,
+      "existingHypothesis": {
+        "remainingLiftFraction": 0.9426803807555186,
+        "lossN": 0.015182247549285766
+      },
+      "referenceEquation": {
+        "lossN": 0.004257252508031044,
+        "betaM": 0.05,
+        "status": "finite equation value; validity unestablished",
+        "remainingSupportFraction": 0.9839270113337447
+      }
+    },
+    {
+      "gap": 1.1,
+      "offset": 0,
+      "existingHypothesis": {
+        "remainingLiftFraction": 0.8815554677771615,
+        "lossN": 0.031372403249863234
+      },
+      "referenceEquation": {
+        "lossN": 0.06267756956417703,
+        "betaM": 0.06600000000000002,
+        "status": "finite equation value; validity unestablished",
+        "remainingSupportFraction": 0.7633647843690224
+      }
+    },
+    {
+      "gap": 1.1,
+      "offset": 0.06,
+      "existingHypothesis": {
+        "remainingLiftFraction": 0.902347976911642,
+        "lossN": 0.025865091355413372
+      },
+      "referenceEquation": {
+        "lossN": 0.04146213084718629,
+        "betaM": 0.06600000000000002,
+        "status": "finite equation value; validity unestablished",
+        "remainingSupportFraction": 0.8434623368173584
+      }
+    },
+    {
+      "gap": 1.1,
+      "offset": 0.12,
+      "existingHypothesis": {
+        "remainingLiftFraction": 0.9413935040206521,
+        "lossN": 0.015523102590049853
+      },
+      "referenceEquation": {
+        "lossN": 0.0120024534067372,
+        "betaM": 0.06600000000000002,
+        "status": "finite equation value; validity unestablished",
+        "remainingSupportFraction": 0.9546854932354091
+      }
+    }
+  ],
+  "decision": "Neither candidate has earned a physical-validation claim; use no-interaction mechanics for the navigation baseline and keep interaction candidates in explicit sensitivity experiments."
+}

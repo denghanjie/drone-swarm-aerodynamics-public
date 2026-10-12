@@ -1,0 +1,61 @@
+{
+  "milestone": 32,
+  "frozenAt": "2026-10-12T11:39:36.132499+00:00",
+  "purpose": "Visible modeled mutual airflow and a bounded post-hoc numerical diagnosis; no fresh mission success claim",
+  "diagnostic": {
+    "checkpoint": "milestone-31-source/checkpoint-heldout-2002-1000-narrow-wall-priority-0.0025-20.json",
+    "window": [
+      20,
+      30
+    ],
+    "reason": "Narrow-case historical trajectory difference first exceeds 1 cm at 30 s. Restart both step sizes from identical full state at 20 s to separate local error growth from inherited differences. This is post-hoc development evidence.",
+    "jobs": [
+      {
+        "id": "closed-0.0025",
+        "feedback": "closed",
+        "dt": 0.0025
+      },
+      {
+        "id": "closed-0.00125",
+        "feedback": "closed",
+        "dt": 0.00125
+      },
+      {
+        "id": "closed-0.000625",
+        "feedback": "closed",
+        "dt": 0.000625
+      },
+      {
+        "id": "replayed-0.00125",
+        "feedback": "replayed",
+        "dt": 0.00125
+      },
+      {
+        "id": "replayed-0.000625",
+        "feedback": "replayed",
+        "dt": 0.000625
+      }
+    ],
+    "motorReplay": "Fine replay runs use precisely the coarse closed-loop four motor targets per drone, held every 10 ms; no new feedback decisions. Not a feasible autonomous policy or safety evaluation.",
+    "comparison": "Same-ID Euclidean position errors every 0.1 s; all outcomes retained; original milestone31 1cm failures stay failed. No new acceptance threshold or statistical generalization.",
+    "safety": "Same swept contacts and vehicle floor checks; stop on contact; compare common time interval only."
+  },
+  "visualization": {
+    "historicalTrials": "milestone28 seed1601 count50 wide: off, sum-force, sum-rotor, rss-rotor",
+    "field": "Recompute corrected milestone28 field only at exact saved poses; snapshot reconstruction, NOT actual historical sample-and-held loads. Never reconstruct from interpolated poses and call it measured.",
+    "plumes": "Far-wake half-width contour, world metres. Source axis and shape from same normalized kernel; arrows/particles decorative direction cues, not fluid trajectories; no resolved wall interaction.",
+    "twoDrone": "Static hover poses; four-rotor mean axial inflow; constant ideal induced-power thrust-loss hypothesis; unsupported geometry shown as outside domain."
+  },
+  "sourceHashes": {
+    "diagnostic.cjs": "fcf80a1fcb22d3efe54c5b363b261978167323e928fb847f98e8424101927615"
+  },
+  "inputHashes": {
+    "milestone-31-source/checkpoint-heldout-2002-1000-narrow-wall-priority-0.0025-20.json": "43c3d24444aa5c59bd9227ddc8dd756651eb5ecfb8a25b48f5929ce298eff090",
+    "milestone-31-source/sim.cjs": "2b6fbc51334fd0669b23eb7173c6af83e62414a725b032796df5cb38ac7f1c9e",
+    "milestone-31-source/grid.cjs": "f06010781770b64432935e5d825bcd1405b154b735ac4d0d654f145600cea302",
+    "milestone-31-source/wall-filter.cjs": "8273cc40a9530748fe43e9ef0a4d9a995ee152f9968ce2368e61e2f205502512",
+    "step02c-source/physics.cjs": "0c46c9beb4e831c621658f6600c074f97c95966de07f5000eb64aa476a443fa1",
+    "milestone-28-source/aero.cjs": "710b0a8f0df62208e3385ac9b8288240b379fe9248a1a645251a77c533f24a62",
+    "step03a-source/wake.cjs": "fb6d5a1d632a0023818041ef6bc39316ff8ed950f318da1a6649e2515b9fd8bc"
+  }
+}

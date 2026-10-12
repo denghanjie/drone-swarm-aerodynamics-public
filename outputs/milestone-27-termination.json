@@ -1,0 +1,70 @@
+{
+  "ended": "2026-10-12T01:00:07.712514+00:00",
+  "reason": "Verified adjacent-versus-opposite motor-distance mapping error. Remaining erroneous-model runs terminated to prioritize the full corrected25-case study. Completed and partial files preserved; no outcome-based controller tuning.",
+  "planned": 25,
+  "completed": 20,
+  "uncompletedJobs": [
+    {
+      "id": "refinement-1601-50-wide-off-0.00125-0.01",
+      "count": 50,
+      "seed": 1601,
+      "course": "wide",
+      "aeroMode": "off",
+      "dt": 0.00125,
+      "flowDt": 0.01,
+      "duration": 180,
+      "kind": "refinement"
+    },
+    {
+      "id": "refinement-1601-50-wide-sum-force-0.00125-0.01",
+      "count": 50,
+      "seed": 1601,
+      "course": "wide",
+      "aeroMode": "sum-force",
+      "dt": 0.00125,
+      "flowDt": 0.01,
+      "duration": 180,
+      "kind": "refinement"
+    },
+    {
+      "id": "refinement-1601-50-wide-sum-rotor-0.00125-0.01",
+      "count": 50,
+      "seed": 1601,
+      "course": "wide",
+      "aeroMode": "sum-rotor",
+      "dt": 0.00125,
+      "flowDt": 0.01,
+      "duration": 180,
+      "kind": "refinement"
+    },
+    {
+      "id": "refinement-1601-50-wide-rss-rotor-0.00125-0.01",
+      "count": 50,
+      "seed": 1601,
+      "course": "wide",
+      "aeroMode": "rss-rotor",
+      "dt": 0.00125,
+      "flowDt": 0.01,
+      "duration": 180,
+      "kind": "refinement"
+    },
+    {
+      "id": "cadence-1601-50-wide-sum-rotor-0.00125-0.005",
+      "count": 50,
+      "seed": 1601,
+      "course": "wide",
+      "aeroMode": "sum-rotor",
+      "dt": 0.00125,
+      "flowDt": 0.005,
+      "duration": 180,
+      "kind": "cadence"
+    }
+  ],
+  "partialArtifacts": [
+    {
+      "path": "milestone-27-source/refinement-1601-50-wide-off-0.00125-0.01.f64",
+      "bytes": 19656,
+      "notCompletedEvidence": true
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "jobs": [
+    {
+      "seed": 501,
+      "scenario": "sphere",
+      "mode": "boids",
+      "record": true
+    },
+    {
+      "seed": 501,
+      "scenario": "sphere",
+      "mode": "separation-only",
+      "record": true
+    },
+    {
+      "seed": 501,
+      "scenario": "wide",
+      "mode": "boids",
+      "record": true
+    },
+    {
+      "seed": 501,
+      "scenario": "wide",
+      "mode": "separation-only",
+      "record": true
+    },
+    {
+      "seed": 501,
+      "scenario": "narrow",
+      "mode": "boids",
+      "record": true
+    },
+    {
+      "seed": 501,
+      "scenario": "narrow",
+      "mode": "separation-only",
+      "record": true
+    },
+    {
+      "seed": 502,
+      "scenario": "sphere",
+      "mode": "boids",
+      "record": false
+    },
+    {
+      "seed": 502,
+      "scenario": "sphere",
+      "mode": "separation-only",
+      "record": false
+    },
+    {
+      "seed": 502,
+      "scenario": "wide",
+      "mode": "boids",
+      "record": false
+    },
+    {
+      "seed": 502,
+      "scenario": "wide",
+      "mode": "separation-only",
+      "record": false
+    },
+    {
+      "seed": 502,
+      "scenario": "narrow",
+      "mode": "boids",
+      "record": false
+    },
+    {
+      "seed": 502,
+      "scenario": "narrow",
+      "mode": "separation-only",
+      "record": false
+    },
+    {
+      "seed": 503,
+      "scenario": "sphere",
+      "mode": "boids",
+      "record": false
+    },
+    {
+      "seed": 503,
+      "scenario": "sphere",
+      "mode": "separation-only",
+      "record": false
+    },
+    {
+      "seed": 503,
+      "scenario": "wide",
+      "mode": "boids",
+      "record": false
+    },
+    {
+      "seed": 503,
+      "scenario": "wide",
+      "mode": "separation-only",
+      "record": false
+    },
+    {
+      "seed": 503,
+      "scenario": "narrow",
+      "mode": "boids",
+      "record": false
+    },
+    {
+      "seed": 503,
+      "scenario": "narrow",
+      "mode": "separation-only",
+      "record": false
+    }
+  ],
+  "parameters": {
+    "radius": 1.8,
+    "separationRadius": 0.85,
+    "separation": 1.5,
+    "alignment": 2,
+    "cohesion": 0.22,
+    "cruise": 0.65,
+    "maxSpeed": 0.9,
+    "steeringHorizon": 0.4
+  },
+  "sourceSHA256": "44f7dd880046d946e68045b29da648baeae07b9da89cb97a50d58a91d245a1ff",
+  "scope": "3D local Boids plus shared known-map guidance. Sphere uses an explicit overflight preference, not learned/emergent route planning. Apertures3x3m and1.2x1.2m; infinite zero-thickness wall. Stop at sphere/wall/drone envelope contact; no impact response. CPU, airflow off.",
+  "development": "Seed1 sphere pilot retained; no social parameter tuning. 18 fresh cases501–503."
+}

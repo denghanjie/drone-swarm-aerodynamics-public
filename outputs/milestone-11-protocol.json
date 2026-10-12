@@ -1,0 +1,94 @@
+{
+  "parameters": {
+    "radius": 1.8,
+    "separationRadius": 0.85,
+    "separation": 1.5,
+    "alignment": 2,
+    "cohesion": 0.22,
+    "cruise": 0.65,
+    "maxSpeed": 0.9,
+    "steeringHorizon": 0.4
+  },
+  "jobs": [
+    {
+      "seed": 401,
+      "mode": "boids",
+      "record": true
+    },
+    {
+      "seed": 401,
+      "mode": "separation-only",
+      "record": true
+    },
+    {
+      "seed": 401,
+      "mode": "off",
+      "record": true
+    },
+    {
+      "seed": 402,
+      "mode": "boids",
+      "record": false
+    },
+    {
+      "seed": 402,
+      "mode": "separation-only",
+      "record": false
+    },
+    {
+      "seed": 402,
+      "mode": "off",
+      "record": false
+    },
+    {
+      "seed": 403,
+      "mode": "boids",
+      "record": false
+    },
+    {
+      "seed": 403,
+      "mode": "separation-only",
+      "record": false
+    },
+    {
+      "seed": 403,
+      "mode": "off",
+      "record": false
+    },
+    {
+      "seed": 404,
+      "mode": "boids",
+      "record": false
+    },
+    {
+      "seed": 404,
+      "mode": "separation-only",
+      "record": false
+    },
+    {
+      "seed": 404,
+      "mode": "off",
+      "record": false
+    },
+    {
+      "seed": 405,
+      "mode": "boids",
+      "record": false
+    },
+    {
+      "seed": 405,
+      "mode": "separation-only",
+      "record": false
+    },
+    {
+      "seed": 405,
+      "mode": "off",
+      "record": false
+    }
+  ],
+  "pilot": "Seed1 pilot and development seeds301–305 retained. Late ground braking caused failures; environmental braking revised, then frozen before fresh seeds401–405.",
+  "physics": "Existing 6DOF RK4, dt .005, control .01; vertical velocity command converted algebraically into existing altitude controller setpoint.",
+  "environment": "Soft bounds x/y ±8m, z2–7m; no assigned positions or global centroid steering. Local cue x>0, t15–18s adds steering acceleration y.3/z.2. Same environment in every mode.",
+  "scope": "CPU model only; airflow off; not physical validation.",
+  "sha256": "d801238cdd3b8ce083fe507299765e5f631cfa00a706a887261b9a9c4f93bc05"
+}

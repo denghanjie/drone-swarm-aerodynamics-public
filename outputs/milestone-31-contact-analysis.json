@@ -1,0 +1,95 @@
+{
+  "completedJobs": 10,
+  "plannedJobs": 10,
+  "scope": "Post-hoc descriptions of the actual preceding control update. Positive outward velocity means moving away from the wall. Snapshot tracking differences are not uniform bounds or causal interventions.",
+  "contacts": [
+    {
+      "trial": "heldout-2001-1000-wide-baseline-0.0025",
+      "event": {
+        "drone": 521,
+        "hits": [
+          {
+            "id": "partition-0-above",
+            "clearance": -0.00011831524911928848
+          }
+        ]
+      },
+      "eventTime": 16.775,
+      "precedingControlTime": 16.77,
+      "walls": [
+        {
+          "drone": 521,
+          "obstacle": "partition-0-above",
+          "clearanceAtControl_m": 0.0002132496032388187,
+          "requiredOutwardVelocity_mps": 0.249822291997301,
+          "requestedOutwardVelocity_mps": 0.03194916861562774,
+          "actualOutwardVelocity_mps": -0.06722564754394467,
+          "commandDeficit_mps": 0.21787312338167325,
+          "adverseTrackingDifference_mps": 0.09917481615957241
+        }
+      ]
+    },
+    {
+      "trial": "heldout-2002-1000-narrow-baseline-0.0025",
+      "event": {
+        "drone": 196,
+        "hits": [
+          {
+            "id": "partition-0-left",
+            "clearance": -0.0003133980540115794
+          }
+        ]
+      },
+      "eventTime": 9.995000000000001,
+      "precedingControlTime": 9.99,
+      "walls": [
+        {
+          "drone": 196,
+          "obstacle": "partition-0-left",
+          "clearanceAtControl_m": 0.000828288008463296,
+          "requiredOutwardVelocity_mps": 0.24930975999294724,
+          "requestedOutwardVelocity_mps": -0.15660727945581343,
+          "actualOutwardVelocity_mps": -0.22879904074630317,
+          "commandDeficit_mps": 0.4059170394487607,
+          "adverseTrackingDifference_mps": 0.07219176129048974
+        },
+        {
+          "drone": 196,
+          "obstacle": "partition-0-below",
+          "clearanceAtControl_m": 0.5794132158739357,
+          "requiredOutwardVelocity_mps": -0.2328443465616131,
+          "requestedOutwardVelocity_mps": 0.06869771310945759,
+          "actualOutwardVelocity_mps": -0.02176919739082889,
+          "commandDeficit_mps": 0,
+          "adverseTrackingDifference_mps": 0.09046691050028648
+        }
+      ]
+    },
+    {
+      "trial": "heldout-2001-5000-wide-baseline-0.0025",
+      "event": {
+        "drone": 1855,
+        "hits": [
+          {
+            "id": "partition-0-below",
+            "clearance": -0.00010904313072045146
+          }
+        ]
+      },
+      "eventTime": 11.665000000000001,
+      "precedingControlTime": 11.66,
+      "walls": [
+        {
+          "drone": 1855,
+          "obstacle": "partition-0-below",
+          "clearanceAtControl_m": 0.001065681448724931,
+          "requiredOutwardVelocity_mps": 0.24911193212606256,
+          "requestedOutwardVelocity_mps": -0.10503712175851726,
+          "actualOutwardVelocity_mps": -0.23554060021495976,
+          "commandDeficit_mps": 0.35414905388457985,
+          "adverseTrackingDifference_mps": 0.1305034784564425
+        }
+      ]
+    }
+  ]
+}

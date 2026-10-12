@@ -1,0 +1,217 @@
+{
+  "checks": [
+    {
+      "name": "Swept separation detects between-frame head-on contact",
+      "passed": true
+    },
+    {
+      "name": "Swept separation detects parallel separated motion",
+      "passed": true
+    },
+    {
+      "name": "Every planned configuration and seed retained, including failures",
+      "passed": true
+    },
+    {
+      "name": "All output metrics finite or explicitly null",
+      "passed": true
+    },
+    {
+      "name": "Replay frames include all 50 vehicles and end at reported stop",
+      "passed": true
+    },
+    {
+      "name": "Unique valid crossings agree with per-drone event record",
+      "passed": true
+    },
+    {
+      "name": "Halving step size twice preserves exemplar outcome, stop time within 0.05 s, and positions within 1 cm",
+      "passed": true
+    }
+  ],
+  "refinements": [
+    {
+      "width": 0.6,
+      "coarse": {
+        "validCrossings": 1,
+        "completionFraction": 0.02,
+        "fullHorizonThroughput": 0.016666666666666666,
+        "minSeparation": 0.14850301248092299,
+        "closePairs": 6,
+        "contactPairs": 1,
+        "invalidCrossingDrones": 0,
+        "motorSaturationFraction": 0,
+        "lateralAltitudeTrackingRMS": 0.44854829489559683,
+        "maxTiltDeg": 7.78150064033374,
+        "stopReason": "contact envelope reached",
+        "simulatedSeconds": 3.2600000000000002,
+        "fullHorizonCompleted": false
+      },
+      "half": {
+        "validCrossings": 1,
+        "completionFraction": 0.02,
+        "fullHorizonThroughput": 0.016666666666666666,
+        "minSeparation": 0.1497383192911301,
+        "closePairs": 6,
+        "contactPairs": 1,
+        "invalidCrossingDrones": 0,
+        "motorSaturationFraction": 0,
+        "lateralAltitudeTrackingRMS": 0.4485482946007744,
+        "maxTiltDeg": 7.78149065362,
+        "stopReason": "contact envelope reached",
+        "simulatedSeconds": 3.255,
+        "fullHorizonCompleted": false
+      },
+      "quarter": {
+        "validCrossings": 1,
+        "completionFraction": 0.02,
+        "fullHorizonThroughput": 0.016666666666666666,
+        "minSeparation": 0.14973832762579187,
+        "closePairs": 6,
+        "contactPairs": 1,
+        "invalidCrossingDrones": 0,
+        "motorSaturationFraction": 0,
+        "lateralAltitudeTrackingRMS": 0.4485482945842812,
+        "maxTiltDeg": 7.781614371609221,
+        "stopReason": "contact envelope reached",
+        "simulatedSeconds": 3.255,
+        "fullHorizonCompleted": false
+      },
+      "halfVsQuarterFinalPositionMax": 5.698956451532772e-09,
+      "coarseVsHalfFinalPositionMax": 0.002500154781682955
+    },
+    {
+      "width": 1.2,
+      "coarse": {
+        "validCrossings": 5,
+        "completionFraction": 0.1,
+        "fullHorizonThroughput": 0.08333333333333333,
+        "minSeparation": 0.14919152745367711,
+        "closePairs": 5,
+        "contactPairs": 1,
+        "invalidCrossingDrones": 1,
+        "motorSaturationFraction": 0,
+        "lateralAltitudeTrackingRMS": 0.21677878402013032,
+        "maxTiltDeg": 9.198390693154943,
+        "stopReason": "contact envelope reached",
+        "simulatedSeconds": 5.75,
+        "fullHorizonCompleted": false
+      },
+      "half": {
+        "validCrossings": 5,
+        "completionFraction": 0.1,
+        "fullHorizonThroughput": 0.08333333333333333,
+        "minSeparation": 0.14956484235143666,
+        "closePairs": 5,
+        "contactPairs": 1,
+        "invalidCrossingDrones": 1,
+        "motorSaturationFraction": 0,
+        "lateralAltitudeTrackingRMS": 0.21677878534231507,
+        "maxTiltDeg": 9.199520214869244,
+        "stopReason": "contact envelope reached",
+        "simulatedSeconds": 5.745,
+        "fullHorizonCompleted": false
+      },
+      "quarter": {
+        "validCrossings": 5,
+        "completionFraction": 0.1,
+        "fullHorizonThroughput": 0.08333333333333333,
+        "minSeparation": 0.14977582622256264,
+        "closePairs": 5,
+        "contactPairs": 1,
+        "invalidCrossingDrones": 1,
+        "motorSaturationFraction": 0,
+        "lateralAltitudeTrackingRMS": 0.21677878541654588,
+        "maxTiltDeg": 9.199519098988574,
+        "stopReason": "contact envelope reached",
+        "simulatedSeconds": 5.7425,
+        "fullHorizonCompleted": false
+      },
+      "halfVsQuarterFinalPositionMax": 0.0012640258060857312,
+      "coarseVsHalfFinalPositionMax": 0.002526968052459152
+    },
+    {
+      "width": 2.4,
+      "coarse": {
+        "validCrossings": 50,
+        "completionFraction": 1,
+        "fullHorizonThroughput": 0.8333333333333334,
+        "minSeparation": 0.5390109369136126,
+        "closePairs": 0,
+        "contactPairs": 0,
+        "invalidCrossingDrones": 0,
+        "motorSaturationFraction": 0,
+        "lateralAltitudeTrackingRMS": 0.008767612357026723,
+        "maxTiltDeg": 5.870947790729741,
+        "stopReason": null,
+        "simulatedSeconds": 60,
+        "fullHorizonCompleted": true
+      },
+      "half": {
+        "validCrossings": 50,
+        "completionFraction": 1,
+        "fullHorizonThroughput": 0.8333333333333334,
+        "minSeparation": 0.5390109349477891,
+        "closePairs": 0,
+        "contactPairs": 0,
+        "invalidCrossingDrones": 0,
+        "motorSaturationFraction": 0,
+        "lateralAltitudeTrackingRMS": 0.008767612419058097,
+        "maxTiltDeg": 5.870930694600187,
+        "stopReason": null,
+        "simulatedSeconds": 60,
+        "fullHorizonCompleted": true
+      },
+      "quarter": {
+        "validCrossings": 50,
+        "completionFraction": 1,
+        "fullHorizonThroughput": 0.8333333333333334,
+        "minSeparation": 0.5390108824278218,
+        "closePairs": 0,
+        "contactPairs": 0,
+        "invalidCrossingDrones": 0,
+        "motorSaturationFraction": 0,
+        "lateralAltitudeTrackingRMS": 0.008767612422528912,
+        "maxTiltDeg": 5.871329757697838,
+        "stopReason": null,
+        "simulatedSeconds": 60,
+        "fullHorizonCompleted": true
+      },
+      "halfVsQuarterFinalPositionMax": 1.1557333020909453e-10,
+      "coarseVsHalfFinalPositionMax": 1.8431478565877674e-09
+    }
+  ],
+  "scope": "Numerical checks of engineering pilot, not physical validation. Refinement covers three displayed exemplars only.",
+  "browserQA": {
+    "browser": "Codex in-app browser (Three.js WebGL)",
+    "viewports": [
+      "1440x1000",
+      "390x844",
+      "615x977 default panel"
+    ],
+    "checks": {
+      "pageIdentity": true,
+      "meaningfulContentAndCanvas": true,
+      "noErrorOverlay": true,
+      "noConsoleWarningsOrErrors": true,
+      "playAndPauseAdvanceTime": true,
+      "threePresetOutcomesMatchRecordedResults": true,
+      "timelineCanReachExactStop": true,
+      "restartResetsTime": true,
+      "topAndCloseUpAndResetCamera": true,
+      "mobileNoHorizontalOverflow": true
+    },
+    "fixes": [
+      "Constrained high-DPI canvas CSS dimensions to its container",
+      "Allowed exact final time on timeline instead of rounding to 0.1-second steps",
+      "Adjusted overview camera distance to fit narrow screens"
+    ],
+    "limitations": "Only Codex in-app browser tested; no physical validation or browser performance benchmark."
+  },
+  "sourceSHA256": {
+    "milestone-03-source/sim.cjs": "477e5c349ab4dde26b718a8961ea84a60e747789fdb242fb29c128ceccfccb33",
+    "milestone-03-source/study.cjs": "a9425cb27686dd2d45c7b9e934d28b8a506a72d5974c8cf1611da58789706572",
+    "step02c-source/physics.cjs": "0c46c9beb4e831c621658f6600c074f97c95966de07f5000eb64aa476a443fa1"
+  },
+  "deliverableLocalLinksExist": true
+}

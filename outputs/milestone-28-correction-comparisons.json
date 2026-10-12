@@ -1,0 +1,781 @@
+{
+  "status": "paired correction evidence, not physical validation",
+  "sourceIsolationVerified": true,
+  "changedParameter": "motorDistance: adjacent0.056m to opposite0.07919595949289333m",
+  "completedPairs": 20,
+  "originalProtocolCases": 25,
+  "correctedCasesWithoutCompletedOriginal": [
+    {
+      "job": "refinement-1601-50-wide-off-0.00125-0.01",
+      "reason": "Original erroneous-model study terminated before a completed matching run; corrected run still evaluated against its own protocol."
+    },
+    {
+      "job": "refinement-1601-50-wide-sum-force-0.00125-0.01",
+      "reason": "Original erroneous-model study terminated before a completed matching run; corrected run still evaluated against its own protocol."
+    },
+    {
+      "job": "refinement-1601-50-wide-sum-rotor-0.00125-0.01",
+      "reason": "Original erroneous-model study terminated before a completed matching run; corrected run still evaluated against its own protocol."
+    },
+    {
+      "job": "refinement-1601-50-wide-rss-rotor-0.00125-0.01",
+      "reason": "Original erroneous-model study terminated before a completed matching run; corrected run still evaluated against its own protocol."
+    },
+    {
+      "job": "cadence-1601-50-wide-sum-rotor-0.00125-0.005",
+      "reason": "Original erroneous-model study terminated before a completed matching run; corrected run still evaluated against its own protocol."
+    }
+  ],
+  "comparisons": [
+    {
+      "job": {
+        "id": "primary-1601-50-wide-off-0.0025-0.01",
+        "count": 50,
+        "seed": 1601,
+        "course": "wide",
+        "aeroMode": "off",
+        "dt": 0.0025,
+        "flowDt": 0.01,
+        "duration": 180,
+        "kind": "primary"
+      },
+      "wrongScale": {
+        "end": 180,
+        "completed": 50,
+        "stop": null,
+        "failure": null,
+        "maximumInflow": 0
+      },
+      "correctedScale": {
+        "end": 180,
+        "completed": 50,
+        "stop": null,
+        "failure": null,
+        "maximumInflow": 0
+      },
+      "sameInitialStates": true,
+      "endpointDifferenceM": 0.0,
+      "sameEndTime": true,
+      "caution": "When terminal times differ, endpoint differences include unequal flight duration; this is not a synchronized trajectory error or error against reality."
+    },
+    {
+      "job": {
+        "id": "primary-1601-50-wide-sum-force-0.0025-0.01",
+        "count": 50,
+        "seed": 1601,
+        "course": "wide",
+        "aeroMode": "sum-force",
+        "dt": 0.0025,
+        "flowDt": 0.01,
+        "duration": 180,
+        "kind": "primary"
+      },
+      "wrongScale": {
+        "end": 180,
+        "completed": 50,
+        "stop": null,
+        "failure": null,
+        "maximumInflow": 3.317777075835301
+      },
+      "correctedScale": {
+        "end": 13.2375,
+        "completed": 0,
+        "stop": "obstacle contact envelope",
+        "failure": {
+          "drone": 5,
+          "hits": [
+            {
+              "id": "partition-0-below",
+              "clearance": -0.00047849472991978725
+            }
+          ]
+        },
+        "maximumInflow": 4.326849542254432
+      },
+      "sameInitialStates": true,
+      "endpointDifferenceM": 97.86425481882821,
+      "sameEndTime": false,
+      "caution": "When terminal times differ, endpoint differences include unequal flight duration; this is not a synchronized trajectory error or error against reality."
+    },
+    {
+      "job": {
+        "id": "primary-1601-50-wide-sum-rotor-0.0025-0.01",
+        "count": 50,
+        "seed": 1601,
+        "course": "wide",
+        "aeroMode": "sum-rotor",
+        "dt": 0.0025,
+        "flowDt": 0.01,
+        "duration": 180,
+        "kind": "primary"
+      },
+      "wrongScale": {
+        "end": 11.9275,
+        "completed": 0,
+        "stop": "obstacle contact envelope",
+        "failure": {
+          "drone": 29,
+          "hits": [
+            {
+              "id": "partition-0-below",
+              "clearance": -0.000891388594508033
+            }
+          ]
+        },
+        "maximumInflow": 3.4155740922983533
+      },
+      "correctedScale": {
+        "end": 7.7700000000000005,
+        "completed": 0,
+        "stop": "vehicle model limit",
+        "failure": {
+          "drone": 4
+        },
+        "maximumInflow": 4.193917885484581
+      },
+      "sameInitialStates": true,
+      "endpointDifferenceM": 2.9066893989117637,
+      "sameEndTime": false,
+      "caution": "When terminal times differ, endpoint differences include unequal flight duration; this is not a synchronized trajectory error or error against reality."
+    },
+    {
+      "job": {
+        "id": "primary-1601-50-wide-rss-rotor-0.0025-0.01",
+        "count": 50,
+        "seed": 1601,
+        "course": "wide",
+        "aeroMode": "rss-rotor",
+        "dt": 0.0025,
+        "flowDt": 0.01,
+        "duration": 180,
+        "kind": "primary"
+      },
+      "wrongScale": {
+        "end": 11.18,
+        "completed": 0,
+        "stop": "obstacle contact envelope",
+        "failure": {
+          "drone": 13,
+          "hits": [
+            {
+              "id": "partition-0-below",
+              "clearance": -0.0007547230577956004
+            }
+          ]
+        },
+        "maximumInflow": 2.4437289891340397
+      },
+      "correctedScale": {
+        "end": 8.915000000000001,
+        "completed": 0,
+        "stop": "vehicle model limit",
+        "failure": {
+          "drone": 4
+        },
+        "maximumInflow": 3.0079867522712336
+      },
+      "sameInitialStates": true,
+      "endpointDifferenceM": 2.3208881984775602,
+      "sameEndTime": false,
+      "caution": "When terminal times differ, endpoint differences include unequal flight duration; this is not a synchronized trajectory error or error against reality."
+    },
+    {
+      "job": {
+        "id": "primary-1601-50-narrow-off-0.0025-0.01",
+        "count": 50,
+        "seed": 1601,
+        "course": "narrow",
+        "aeroMode": "off",
+        "dt": 0.0025,
+        "flowDt": 0.01,
+        "duration": 180,
+        "kind": "primary"
+      },
+      "wrongScale": {
+        "end": 180,
+        "completed": 50,
+        "stop": null,
+        "failure": null,
+        "maximumInflow": 0
+      },
+      "correctedScale": {
+        "end": 180,
+        "completed": 50,
+        "stop": null,
+        "failure": null,
+        "maximumInflow": 0
+      },
+      "sameInitialStates": true,
+      "endpointDifferenceM": 0.0,
+      "sameEndTime": true,
+      "caution": "When terminal times differ, endpoint differences include unequal flight duration; this is not a synchronized trajectory error or error against reality."
+    },
+    {
+      "job": {
+        "id": "primary-1601-50-narrow-sum-force-0.0025-0.01",
+        "count": 50,
+        "seed": 1601,
+        "course": "narrow",
+        "aeroMode": "sum-force",
+        "dt": 0.0025,
+        "flowDt": 0.01,
+        "duration": 180,
+        "kind": "primary"
+      },
+      "wrongScale": {
+        "end": 180,
+        "completed": 50,
+        "stop": null,
+        "failure": null,
+        "maximumInflow": 3.317777075835301
+      },
+      "correctedScale": {
+        "end": 13.93,
+        "completed": 0,
+        "stop": "vehicle model limit",
+        "failure": {
+          "drone": 32
+        },
+        "maximumInflow": 4.326849542254432
+      },
+      "sameInitialStates": true,
+      "endpointDifferenceM": 98.00330784454512,
+      "sameEndTime": false,
+      "caution": "When terminal times differ, endpoint differences include unequal flight duration; this is not a synchronized trajectory error or error against reality."
+    },
+    {
+      "job": {
+        "id": "primary-1601-50-narrow-sum-rotor-0.0025-0.01",
+        "count": 50,
+        "seed": 1601,
+        "course": "narrow",
+        "aeroMode": "sum-rotor",
+        "dt": 0.0025,
+        "flowDt": 0.01,
+        "duration": 180,
+        "kind": "primary"
+      },
+      "wrongScale": {
+        "end": 11.2825,
+        "completed": 0,
+        "stop": "obstacle contact envelope",
+        "failure": {
+          "drone": 35,
+          "hits": [
+            {
+              "id": "partition-0-below",
+              "clearance": -0.00035873653020172813
+            }
+          ]
+        },
+        "maximumInflow": 3.4155740922983533
+      },
+      "correctedScale": {
+        "end": 7.7700000000000005,
+        "completed": 0,
+        "stop": "vehicle model limit",
+        "failure": {
+          "drone": 4
+        },
+        "maximumInflow": 4.193917885484581
+      },
+      "sameInitialStates": true,
+      "endpointDifferenceM": 2.5885289969535696,
+      "sameEndTime": false,
+      "caution": "When terminal times differ, endpoint differences include unequal flight duration; this is not a synchronized trajectory error or error against reality."
+    },
+    {
+      "job": {
+        "id": "primary-1601-50-narrow-rss-rotor-0.0025-0.01",
+        "count": 50,
+        "seed": 1601,
+        "course": "narrow",
+        "aeroMode": "rss-rotor",
+        "dt": 0.0025,
+        "flowDt": 0.01,
+        "duration": 180,
+        "kind": "primary"
+      },
+      "wrongScale": {
+        "end": 11.9525,
+        "completed": 0,
+        "stop": "obstacle contact envelope",
+        "failure": {
+          "drone": 12,
+          "hits": [
+            {
+              "id": "partition-0-below",
+              "clearance": -0.0003494991496914984
+            }
+          ]
+        },
+        "maximumInflow": 2.443723843114136
+      },
+      "correctedScale": {
+        "end": 8.915000000000001,
+        "completed": 0,
+        "stop": "vehicle model limit",
+        "failure": {
+          "drone": 4
+        },
+        "maximumInflow": 3.0079867522712336
+      },
+      "sameInitialStates": true,
+      "endpointDifferenceM": 2.2663100846648048,
+      "sameEndTime": false,
+      "caution": "When terminal times differ, endpoint differences include unequal flight duration; this is not a synchronized trajectory error or error against reality."
+    },
+    {
+      "job": {
+        "id": "primary-1602-50-wide-off-0.0025-0.01",
+        "count": 50,
+        "seed": 1602,
+        "course": "wide",
+        "aeroMode": "off",
+        "dt": 0.0025,
+        "flowDt": 0.01,
+        "duration": 180,
+        "kind": "primary"
+      },
+      "wrongScale": {
+        "end": 180,
+        "completed": 50,
+        "stop": null,
+        "failure": null,
+        "maximumInflow": 0
+      },
+      "correctedScale": {
+        "end": 180,
+        "completed": 50,
+        "stop": null,
+        "failure": null,
+        "maximumInflow": 0
+      },
+      "sameInitialStates": true,
+      "endpointDifferenceM": 0.0,
+      "sameEndTime": true,
+      "caution": "When terminal times differ, endpoint differences include unequal flight duration; this is not a synchronized trajectory error or error against reality."
+    },
+    {
+      "job": {
+        "id": "primary-1602-50-wide-sum-force-0.0025-0.01",
+        "count": 50,
+        "seed": 1602,
+        "course": "wide",
+        "aeroMode": "sum-force",
+        "dt": 0.0025,
+        "flowDt": 0.01,
+        "duration": 180,
+        "kind": "primary"
+      },
+      "wrongScale": {
+        "end": 180,
+        "completed": 50,
+        "stop": null,
+        "failure": null,
+        "maximumInflow": 3.538658577669172
+      },
+      "correctedScale": {
+        "end": 62.0375,
+        "completed": 0,
+        "stop": "obstacle contact envelope",
+        "failure": {
+          "drone": 37,
+          "hits": [
+            {
+              "id": "partition-2-below",
+              "clearance": -0.0004192381040544618
+            }
+          ]
+        },
+        "maximumInflow": 4.620364878193878
+      },
+      "sameInitialStates": true,
+      "endpointDifferenceM": 75.56376136526603,
+      "sameEndTime": false,
+      "caution": "When terminal times differ, endpoint differences include unequal flight duration; this is not a synchronized trajectory error or error against reality."
+    },
+    {
+      "job": {
+        "id": "primary-1602-50-wide-sum-rotor-0.0025-0.01",
+        "count": 50,
+        "seed": 1602,
+        "course": "wide",
+        "aeroMode": "sum-rotor",
+        "dt": 0.0025,
+        "flowDt": 0.01,
+        "duration": 180,
+        "kind": "primary"
+      },
+      "wrongScale": {
+        "end": 11.3625,
+        "completed": 0,
+        "stop": "vehicle model limit",
+        "failure": {
+          "drone": 41
+        },
+        "maximumInflow": 3.538658577669172
+      },
+      "correctedScale": {
+        "end": 6.7375,
+        "completed": 0,
+        "stop": "vehicle model limit",
+        "failure": {
+          "drone": 15
+        },
+        "maximumInflow": 4.643762384402
+      },
+      "sameInitialStates": true,
+      "endpointDifferenceM": 3.2171101225495597,
+      "sameEndTime": false,
+      "caution": "When terminal times differ, endpoint differences include unequal flight duration; this is not a synchronized trajectory error or error against reality."
+    },
+    {
+      "job": {
+        "id": "primary-1602-50-wide-rss-rotor-0.0025-0.01",
+        "count": 50,
+        "seed": 1602,
+        "course": "wide",
+        "aeroMode": "rss-rotor",
+        "dt": 0.0025,
+        "flowDt": 0.01,
+        "duration": 180,
+        "kind": "primary"
+      },
+      "wrongScale": {
+        "end": 11.39,
+        "completed": 0,
+        "stop": "aerodynamic model domain",
+        "failure": {
+          "message": "Source/receiver tilt exceeds exploratory20-degree limit",
+          "drone": 4,
+          "axis": [
+            -0.32607315803321735,
+            -0.1112180125999196,
+            0.9387794465600365
+          ]
+        },
+        "maximumInflow": 2.5117211110460578
+      },
+      "correctedScale": {
+        "end": 3.5100000000000002,
+        "completed": 0,
+        "stop": "aerodynamic model domain",
+        "failure": {
+          "message": "Source/receiver tilt exceeds exploratory20-degree limit",
+          "drone": 42,
+          "axis": [
+            -0.07366898787750593,
+            0.33724557532760946,
+            0.9385298621498698
+          ]
+        },
+        "maximumInflow": 3.1362672975361416
+      },
+      "sameInitialStates": true,
+      "endpointDifferenceM": 4.924365347891314,
+      "sameEndTime": false,
+      "caution": "When terminal times differ, endpoint differences include unequal flight duration; this is not a synchronized trajectory error or error against reality."
+    },
+    {
+      "job": {
+        "id": "primary-1602-50-narrow-off-0.0025-0.01",
+        "count": 50,
+        "seed": 1602,
+        "course": "narrow",
+        "aeroMode": "off",
+        "dt": 0.0025,
+        "flowDt": 0.01,
+        "duration": 180,
+        "kind": "primary"
+      },
+      "wrongScale": {
+        "end": 180,
+        "completed": 50,
+        "stop": null,
+        "failure": null,
+        "maximumInflow": 0
+      },
+      "correctedScale": {
+        "end": 180,
+        "completed": 50,
+        "stop": null,
+        "failure": null,
+        "maximumInflow": 0
+      },
+      "sameInitialStates": true,
+      "endpointDifferenceM": 0.0,
+      "sameEndTime": true,
+      "caution": "When terminal times differ, endpoint differences include unequal flight duration; this is not a synchronized trajectory error or error against reality."
+    },
+    {
+      "job": {
+        "id": "primary-1602-50-narrow-sum-force-0.0025-0.01",
+        "count": 50,
+        "seed": 1602,
+        "course": "narrow",
+        "aeroMode": "sum-force",
+        "dt": 0.0025,
+        "flowDt": 0.01,
+        "duration": 180,
+        "kind": "primary"
+      },
+      "wrongScale": {
+        "end": 180,
+        "completed": 50,
+        "stop": null,
+        "failure": null,
+        "maximumInflow": 3.538658577669172
+      },
+      "correctedScale": {
+        "end": 14.932500000000001,
+        "completed": 0,
+        "stop": "vehicle model limit",
+        "failure": {
+          "drone": 26
+        },
+        "maximumInflow": 4.620364878193878
+      },
+      "sameInitialStates": true,
+      "endpointDifferenceM": 97.90449197840267,
+      "sameEndTime": false,
+      "caution": "When terminal times differ, endpoint differences include unequal flight duration; this is not a synchronized trajectory error or error against reality."
+    },
+    {
+      "job": {
+        "id": "primary-1602-50-narrow-sum-rotor-0.0025-0.01",
+        "count": 50,
+        "seed": 1602,
+        "course": "narrow",
+        "aeroMode": "sum-rotor",
+        "dt": 0.0025,
+        "flowDt": 0.01,
+        "duration": 180,
+        "kind": "primary"
+      },
+      "wrongScale": {
+        "end": 11.0225,
+        "completed": 0,
+        "stop": "obstacle contact envelope",
+        "failure": {
+          "drone": 22,
+          "hits": [
+            {
+              "id": "partition-0-below",
+              "clearance": -0.0002502947462384858
+            }
+          ]
+        },
+        "maximumInflow": 3.538658577669172
+      },
+      "correctedScale": {
+        "end": 6.7375,
+        "completed": 0,
+        "stop": "vehicle model limit",
+        "failure": {
+          "drone": 15
+        },
+        "maximumInflow": 4.643762384402
+      },
+      "sameInitialStates": true,
+      "endpointDifferenceM": 3.150329936785495,
+      "sameEndTime": false,
+      "caution": "When terminal times differ, endpoint differences include unequal flight duration; this is not a synchronized trajectory error or error against reality."
+    },
+    {
+      "job": {
+        "id": "primary-1602-50-narrow-rss-rotor-0.0025-0.01",
+        "count": 50,
+        "seed": 1602,
+        "course": "narrow",
+        "aeroMode": "rss-rotor",
+        "dt": 0.0025,
+        "flowDt": 0.01,
+        "duration": 180,
+        "kind": "primary"
+      },
+      "wrongScale": {
+        "end": 11.0325,
+        "completed": 0,
+        "stop": "obstacle contact envelope",
+        "failure": {
+          "drone": 22,
+          "hits": [
+            {
+              "id": "partition-0-below",
+              "clearance": -0.00030891945061238546
+            }
+          ]
+        },
+        "maximumInflow": 2.5287183085339637
+      },
+      "correctedScale": {
+        "end": 3.5100000000000002,
+        "completed": 0,
+        "stop": "aerodynamic model domain",
+        "failure": {
+          "message": "Source/receiver tilt exceeds exploratory20-degree limit",
+          "drone": 42,
+          "axis": [
+            -0.07366898787750593,
+            0.33724557532760946,
+            0.9385298621498698
+          ]
+        },
+        "maximumInflow": 3.1362672975361416
+      },
+      "sameInitialStates": true,
+      "endpointDifferenceM": 4.71307403619091,
+      "sameEndTime": false,
+      "caution": "When terminal times differ, endpoint differences include unequal flight duration; this is not a synchronized trajectory error or error against reality."
+    },
+    {
+      "job": {
+        "id": "primary-1601-200-wide-off-0.0025-0.01",
+        "count": 200,
+        "seed": 1601,
+        "course": "wide",
+        "aeroMode": "off",
+        "dt": 0.0025,
+        "flowDt": 0.01,
+        "duration": 180,
+        "kind": "primary"
+      },
+      "wrongScale": {
+        "end": 180,
+        "completed": 200,
+        "stop": null,
+        "failure": null,
+        "maximumInflow": 0
+      },
+      "correctedScale": {
+        "end": 180,
+        "completed": 200,
+        "stop": null,
+        "failure": null,
+        "maximumInflow": 0
+      },
+      "sameInitialStates": true,
+      "endpointDifferenceM": 0.0,
+      "sameEndTime": true,
+      "caution": "When terminal times differ, endpoint differences include unequal flight duration; this is not a synchronized trajectory error or error against reality."
+    },
+    {
+      "job": {
+        "id": "primary-1601-200-wide-sum-force-0.0025-0.01",
+        "count": 200,
+        "seed": 1601,
+        "course": "wide",
+        "aeroMode": "sum-force",
+        "dt": 0.0025,
+        "flowDt": 0.01,
+        "duration": 180,
+        "kind": "primary"
+      },
+      "wrongScale": {
+        "end": 2.93,
+        "completed": 0,
+        "stop": "vehicle model limit",
+        "failure": {
+          "drone": 188
+        },
+        "maximumInflow": 4.021974803379388
+      },
+      "correctedScale": {
+        "end": 2.0425,
+        "completed": 0,
+        "stop": "vehicle model limit",
+        "failure": {
+          "drone": 70
+        },
+        "maximumInflow": 5.184977900671256
+      },
+      "sameInitialStates": true,
+      "endpointDifferenceM": 0.8597076278035197,
+      "sameEndTime": false,
+      "caution": "When terminal times differ, endpoint differences include unequal flight duration; this is not a synchronized trajectory error or error against reality."
+    },
+    {
+      "job": {
+        "id": "primary-1601-200-wide-sum-rotor-0.0025-0.01",
+        "count": 200,
+        "seed": 1601,
+        "course": "wide",
+        "aeroMode": "sum-rotor",
+        "dt": 0.0025,
+        "flowDt": 0.01,
+        "duration": 180,
+        "kind": "primary"
+      },
+      "wrongScale": {
+        "end": 4.0200000000000005,
+        "completed": 0,
+        "stop": "vehicle model limit",
+        "failure": {
+          "drone": 175
+        },
+        "maximumInflow": 3.9859124086993405
+      },
+      "correctedScale": {
+        "end": 1.16,
+        "completed": 0,
+        "stop": "aerodynamic model domain",
+        "failure": {
+          "message": "Source/receiver tilt exceeds exploratory20-degree limit",
+          "drone": 186,
+          "axis": [
+            0.0758836320329454,
+            -0.3450491074120847,
+            0.935512045814276
+          ]
+        },
+        "maximumInflow": 5.151347186357937
+      },
+      "sameInitialStates": true,
+      "endpointDifferenceM": 2.8545606425479724,
+      "sameEndTime": false,
+      "caution": "When terminal times differ, endpoint differences include unequal flight duration; this is not a synchronized trajectory error or error against reality."
+    },
+    {
+      "job": {
+        "id": "primary-1601-200-wide-rss-rotor-0.0025-0.01",
+        "count": 200,
+        "seed": 1601,
+        "course": "wide",
+        "aeroMode": "rss-rotor",
+        "dt": 0.0025,
+        "flowDt": 0.01,
+        "duration": 180,
+        "kind": "primary"
+      },
+      "wrongScale": {
+        "end": 3.11,
+        "completed": 0,
+        "stop": "aerodynamic model domain",
+        "failure": {
+          "message": "Source/receiver tilt exceeds exploratory20-degree limit",
+          "drone": 81,
+          "axis": [
+            -0.21649132304591168,
+            0.26533652045422923,
+            0.9395360759220868
+          ]
+        },
+        "maximumInflow": 2.8190455204462186
+      },
+      "correctedScale": {
+        "end": 3.215,
+        "completed": 0,
+        "stop": "vehicle model limit",
+        "failure": {
+          "drone": 175
+        },
+        "maximumInflow": 3.459137400093127
+      },
+      "sameInitialStates": true,
+      "endpointDifferenceM": 1.2565135783158323,
+      "sameEndTime": false,
+      "caution": "When terminal times differ, endpoint differences include unequal flight duration; this is not a synchronized trajectory error or error against reality."
+    }
+  ]
+}

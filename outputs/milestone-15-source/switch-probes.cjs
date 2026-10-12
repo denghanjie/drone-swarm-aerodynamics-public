@@ -1,0 +1,5 @@
+const fs=require('fs'),S=require('./sim.cjs');
+const st=(x,y,z,vx=.5,vy=.2,vz=0)=>[x,y,z,vx,vy,vz,0,0,0,1,0,0,0,.066,.066,.066,.066];const probes=[];
+for(const x of [-2.6,-2,-1.8,-1.2,-.1,0,.15,.4,.5,1,1.1])for(const mode of ['joint','continuous','retention']){const a=st(x-1e-7,-.2,3.5),b=st(x+1e-7,-.2,3.5),va=S.steer(0,[a],0,mode,'tight').velocity,vb=S.steer(0,[b],0,mode,'tight').velocity;probes.push({kind:'gate-x',x,mode,commandJump:Math.hypot(...va.map((v,k)=>v-vb[k]))});}
+for(const radius of [1.5,1.8])for(const mode of ['joint','continuous','retention']){const s=st(-5,0,4),q=st(-5-radius+1e-7,0,4,-.4,0,0),q2=st(-5-radius-1e-7,0,4,-.4,0,0),a=S.steer(0,[s,q],0,mode,'tight').velocity,b=S.steer(0,[s,q2],0,mode,'tight').velocity;probes.push({kind:'neighbor-radius',radius,mode,commandJump:Math.hypot(...a.map((v,k)=>v-b[k]))});}
+fs.writeFileSync(require('path').resolve(__dirname,'../milestone-15-switch-probes.json'),JSON.stringify(probes,null,2));console.log(probes.filter(r=>r.commandJump>.001));

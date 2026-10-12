@@ -1,0 +1,207 @@
+{
+  "scope": "supplement to frozen criteria; unequal-time endpoints are not synchronized paths",
+  "comparisons": [
+    {
+      "coarse": "primary-1601-50-wide-off-0.0025-0.01",
+      "fine": "refinement-1601-50-wide-off-0.00125-0.01",
+      "events": [
+        {
+          "reason": null,
+          "drone": null,
+          "pair": null,
+          "obstacles": [],
+          "source": null,
+          "receiver": null,
+          "domainMessage": null
+        },
+        {
+          "reason": null,
+          "drone": null,
+          "pair": null,
+          "obstacles": [],
+          "source": null,
+          "receiver": null,
+          "domainMessage": null
+        }
+      ],
+      "rawFailures": [
+        null,
+        null
+      ],
+      "sameEventIdentity": true,
+      "endTimes": [
+        180,
+        180
+      ],
+      "maximumEndpointDifferenceM": 1.070987846859517e-06
+    },
+    {
+      "coarse": "primary-1601-50-wide-sum-force-0.0025-0.01",
+      "fine": "refinement-1601-50-wide-sum-force-0.00125-0.01",
+      "events": [
+        {
+          "reason": "obstacle contact envelope",
+          "drone": 5,
+          "pair": null,
+          "obstacles": [
+            "partition-0-below"
+          ],
+          "source": null,
+          "receiver": null,
+          "domainMessage": null
+        },
+        {
+          "reason": "obstacle contact envelope",
+          "drone": 5,
+          "pair": null,
+          "obstacles": [
+            "partition-0-below"
+          ],
+          "source": null,
+          "receiver": null,
+          "domainMessage": null
+        }
+      ],
+      "rawFailures": [
+        {
+          "drone": 5,
+          "hits": [
+            {
+              "id": "partition-0-below",
+              "clearance": -0.00047849472991978725
+            }
+          ]
+        },
+        {
+          "drone": 5,
+          "hits": [
+            {
+              "id": "partition-0-below",
+              "clearance": -0.00011070822783383616
+            }
+          ]
+        }
+      ],
+      "sameEventIdentity": true,
+      "endTimes": [
+        13.2375,
+        13.23625
+      ],
+      "maximumEndpointDifferenceM": 0.0007983342639938074
+    },
+    {
+      "coarse": "primary-1601-50-wide-sum-rotor-0.0025-0.01",
+      "fine": "refinement-1601-50-wide-sum-rotor-0.00125-0.01",
+      "events": [
+        {
+          "reason": "vehicle model limit",
+          "drone": 4,
+          "pair": null,
+          "obstacles": [],
+          "source": null,
+          "receiver": null,
+          "domainMessage": null
+        },
+        {
+          "reason": "vehicle model limit",
+          "drone": 4,
+          "pair": null,
+          "obstacles": [],
+          "source": null,
+          "receiver": null,
+          "domainMessage": null
+        }
+      ],
+      "rawFailures": [
+        {
+          "drone": 4
+        },
+        {
+          "drone": 4
+        }
+      ],
+      "sameEventIdentity": true,
+      "endTimes": [
+        7.7700000000000005,
+        7.76875
+      ],
+      "maximumEndpointDifferenceM": 0.0011525974839825212
+    },
+    {
+      "coarse": "primary-1601-50-wide-rss-rotor-0.0025-0.01",
+      "fine": "refinement-1601-50-wide-rss-rotor-0.00125-0.01",
+      "events": [
+        {
+          "reason": "vehicle model limit",
+          "drone": 4,
+          "pair": null,
+          "obstacles": [],
+          "source": null,
+          "receiver": null,
+          "domainMessage": null
+        },
+        {
+          "reason": "vehicle model limit",
+          "drone": 4,
+          "pair": null,
+          "obstacles": [],
+          "source": null,
+          "receiver": null,
+          "domainMessage": null
+        }
+      ],
+      "rawFailures": [
+        {
+          "drone": 4
+        },
+        {
+          "drone": 4
+        }
+      ],
+      "sameEventIdentity": true,
+      "endTimes": [
+        8.915000000000001,
+        8.91375
+      ],
+      "maximumEndpointDifferenceM": 0.0012607234431864381
+    },
+    {
+      "coarse": "refinement-1601-50-wide-sum-rotor-0.00125-0.01",
+      "fine": "cadence-1601-50-wide-sum-rotor-0.00125-0.005",
+      "events": [
+        {
+          "reason": "vehicle model limit",
+          "drone": 4,
+          "pair": null,
+          "obstacles": [],
+          "source": null,
+          "receiver": null,
+          "domainMessage": null
+        },
+        {
+          "reason": "vehicle model limit",
+          "drone": 4,
+          "pair": null,
+          "obstacles": [],
+          "source": null,
+          "receiver": null,
+          "domainMessage": null
+        }
+      ],
+      "rawFailures": [
+        {
+          "drone": 4
+        },
+        {
+          "drone": 4
+        }
+      ],
+      "sameEventIdentity": true,
+      "endTimes": [
+        7.76875,
+        8.99375
+      ],
+      "maximumEndpointDifferenceM": 0.9203475077125659
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "created": "2026-10-11T23:51:15.782Z",
+  "goal": "First complex factory benchmark: genuine local flock,50/200 bodies and social-rule ablations. Not5,000-drone mission evidence.",
+  "jobs": [
+    {
+      "seed": 1301,
+      "count": 50,
+      "mode": "boids",
+      "dt": 0.005,
+      "duration": 120,
+      "record": true
+    },
+    {
+      "seed": 1301,
+      "count": 50,
+      "mode": "separation-only",
+      "dt": 0.005,
+      "duration": 120,
+      "record": true
+    },
+    {
+      "seed": 1301,
+      "count": 50,
+      "mode": "goal-only",
+      "dt": 0.005,
+      "duration": 120,
+      "record": true
+    },
+    {
+      "seed": 1301,
+      "count": 50,
+      "mode": "boids",
+      "dt": 0.0025,
+      "duration": 120,
+      "record": false
+    },
+    {
+      "seed": 1301,
+      "count": 200,
+      "mode": "boids",
+      "dt": 0.005,
+      "duration": 120,
+      "record": true
+    },
+    {
+      "seed": 1302,
+      "count": 50,
+      "mode": "boids",
+      "dt": 0.005,
+      "duration": 120,
+      "record": true
+    },
+    {
+      "seed": 1302,
+      "count": 50,
+      "mode": "separation-only",
+      "dt": 0.005,
+      "duration": 120,
+      "record": true
+    },
+    {
+      "seed": 1302,
+      "count": 50,
+      "mode": "goal-only",
+      "dt": 0.005,
+      "duration": 120,
+      "record": true
+    },
+    {
+      "seed": 1302,
+      "count": 50,
+      "mode": "boids",
+      "dt": 0.0025,
+      "duration": 120,
+      "record": false
+    },
+    {
+      "seed": 1302,
+      "count": 200,
+      "mode": "boids",
+      "dt": 0.005,
+      "duration": 120,
+      "record": true
+    },
+    {
+      "seed": 1303,
+      "count": 50,
+      "mode": "boids",
+      "dt": 0.005,
+      "duration": 120,
+      "record": true
+    },
+    {
+      "seed": 1303,
+      "count": 50,
+      "mode": "separation-only",
+      "dt": 0.005,
+      "duration": 120,
+      "record": true
+    },
+    {
+      "seed": 1303,
+      "count": 50,
+      "mode": "goal-only",
+      "dt": 0.005,
+      "duration": 120,
+      "record": true
+    },
+    {
+      "seed": 1303,
+      "count": 50,
+      "mode": "boids",
+      "dt": 0.0025,
+      "duration": 120,
+      "record": false
+    },
+    {
+      "seed": 1303,
+      "count": 200,
+      "mode": "boids",
+      "dt": 0.005,
+      "duration": 120,
+      "record": true
+    },
+    {
+      "seed": 1302,
+      "count": 200,
+      "mode": "boids",
+      "dt": 0.0025,
+      "duration": 120,
+      "record": false
+    }
+  ],
+  "sourceHashes": {
+    "sim.cjs": "87a3bdcc6e0b036049745e9d2d9becc680f72047b737712e5871736fda004a58",
+    "grid.cjs": "86ba87da726998d81a562b6f52dc3fa5742ee51aa0f659bc6ad389ddfac89efe",
+    "geometry.cjs": "e209e492fc523ab3c0c7df62745fb0d3dd7204f35e53309938a19d7895ed3d4f",
+    "factory.cjs": "8ea0d8784accfc039fee9ca2a2c0a86dc8e502b6d1003e4de54a8df8a999cc22",
+    "check.cjs": "7aecc71966d64fe50316949dd9b5c6e008539d236f64d73671b5f72b615f2e4d",
+    "study.cjs": "2f9265445b861bd36fbec641b06fb0489db35f3e40149d019386366f4a383524",
+    "../step02c-source/physics.cjs": "0c46c9beb4e831c621658f6600c074f97c95966de07f5000eb64aa476a443fa1"
+  },
+  "fixed": "All16 runs declared before inspecting mission outcomes.120s horizon; ideal observations; airflow off;100Hz control; same shared broad route and local safety filter for all social ablations. No scheduler or per-drone trajectories.",
+  "initialization": "Jittered3D lattice with random initial velocities, shuffled IDs and no lane assignments.0.75m spacing,±0.08m jitter. Cross-section grows to16×9 lattice sites; additional count extends the initial cloud longitudinally. This changes initial volume, not fixed-volume density.",
+  "geometry": "All34 solid boxes are checked including side walls/ceiling even when hidden in the viewer. Sphere body envelope radius0.075m. Exact straight-segment/box distance and conservative swept-pair candidate search; actual rigid-body paths between steps are approximated by segments.",
+  "acceptance": "Report every completion/contact/connectivity outcome. Four planned5→2.5ms comparisons: same count/stop, end difference<0.01s and maximum final position difference<0.01m. No source tuning after protocol. A failed comparison is retained.",
+  "timing": "Three concurrent numerical workers; descriptive Node wall times only. Not isolated scaling performance or live browser physics."
+}

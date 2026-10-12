@@ -1,0 +1,266 @@
+{
+  "checks": [
+    {
+      "name": "Baseline trajectory exactly reproduces milestone13 implementation",
+      "passed": true
+    },
+    {
+      "name": "Fresh matched initial states",
+      "passed": true
+    },
+    {
+      "name": "Far-from-obstacle filter is identity",
+      "passed": true
+    },
+    {
+      "name": "Obstacle projection reduces forward and outward command",
+      "passed": true
+    },
+    {
+      "name": "Refinement: same stop/count and final positions within1cm",
+      "passed": false
+    }
+  ],
+  "refinements": [
+    {
+      "scenario": "slalom",
+      "coarse": {
+        "filterActiveFraction": 0.014366666666666666,
+        "obstacleMinimum": 0.69566715194429,
+        "passed": 50,
+        "minimum": 0.5050789670550514,
+        "stopReason": null,
+        "end": 60,
+        "maxTiltDegrees": 8.894157030446348,
+        "saturationFraction": 0,
+        "initial": {
+          "t": 0,
+          "passed": 0,
+          "order": 0.19172604252806974,
+          "largestFraction": 1,
+          "meanSpeed": 0.3499999999999999,
+          "radius": 1.834634395965133,
+          "heightSpan": 3.829812075244263,
+          "center": [
+            -5.947184292952528,
+            0.14668586494307967,
+            3.7912570547396314
+          ]
+        },
+        "final": {
+          "t": 60,
+          "passed": 50,
+          "order": 0.9999243479299447,
+          "largestFraction": 1,
+          "meanSpeed": 0.5980288992789845,
+          "radius": 1.8044992667055906,
+          "heightSpan": 1.3578154098094086,
+          "center": [
+            28.420657832184297,
+            0.0004092395704089294,
+            4.500101523126406
+          ]
+        }
+      },
+      "fine": {
+        "filterActiveFraction": 0.014366666666666666,
+        "obstacleMinimum": 0.6956639949906979,
+        "passed": 50,
+        "minimum": 0.5050789701040401,
+        "stopReason": null,
+        "end": 60,
+        "maxTiltDegrees": 8.894485388210645,
+        "saturationFraction": 0,
+        "initial": {
+          "t": 0,
+          "passed": 0,
+          "order": 0.19172604252806974,
+          "largestFraction": 1,
+          "meanSpeed": 0.3499999999999999,
+          "radius": 1.834634395965133,
+          "heightSpan": 3.829812075244263,
+          "center": [
+            -5.947184292952528,
+            0.14668586494307967,
+            3.7912570547396314
+          ]
+        },
+        "final": {
+          "t": 60,
+          "passed": 50,
+          "order": 0.9999236722569498,
+          "largestFraction": 1,
+          "meanSpeed": 0.5980305417000542,
+          "radius": 1.8044866713738532,
+          "heightSpan": 1.3578546749346603,
+          "center": [
+            28.42065888297587,
+            0.000406710146065499,
+            4.500099412995349
+          ]
+        }
+      },
+      "positionDifference": 0.00046493980696321846
+    },
+    {
+      "scenario": "staggered",
+      "coarse": {
+        "filterActiveFraction": 0.06326,
+        "obstacleMinimum": 0.17711223789415048,
+        "passed": 50,
+        "minimum": 0.4741405637350512,
+        "stopReason": null,
+        "end": 60,
+        "maxTiltDegrees": 10.294241516670983,
+        "saturationFraction": 0,
+        "initial": {
+          "t": 0,
+          "passed": 0,
+          "order": 0.19172604252806974,
+          "largestFraction": 1,
+          "meanSpeed": 0.3499999999999999,
+          "radius": 1.834634395965133,
+          "heightSpan": 3.829812075244263,
+          "center": [
+            -5.947184292952528,
+            0.14668586494307967,
+            3.7912570547396314
+          ]
+        },
+        "final": {
+          "t": 60,
+          "passed": 50,
+          "order": 0.9999114459546273,
+          "largestFraction": 0.9,
+          "meanSpeed": 0.5991624428353919,
+          "radius": 3.1011124761784368,
+          "heightSpan": 2.058065083991648,
+          "center": [
+            26.232278759268205,
+            0.7066451547577782,
+            4.763300100988423
+          ]
+        }
+      },
+      "fine": {
+        "filterActiveFraction": 0.06326,
+        "obstacleMinimum": 0.17711216448703798,
+        "passed": 50,
+        "minimum": 0.4741391190385912,
+        "stopReason": null,
+        "end": 60,
+        "maxTiltDegrees": 10.294240763006409,
+        "saturationFraction": 0,
+        "initial": {
+          "t": 0,
+          "passed": 0,
+          "order": 0.19172604252806974,
+          "largestFraction": 1,
+          "meanSpeed": 0.3499999999999999,
+          "radius": 1.834634395965133,
+          "heightSpan": 3.829812075244263,
+          "center": [
+            -5.947184292952528,
+            0.14668586494307967,
+            3.7912570547396314
+          ]
+        },
+        "final": {
+          "t": 60,
+          "passed": 50,
+          "order": 0.9999114458943535,
+          "largestFraction": 0.9,
+          "meanSpeed": 0.5991624431843645,
+          "radius": 3.1011124514057196,
+          "heightSpan": 2.058065182509079,
+          "center": [
+            26.23227877599031,
+            0.7066451578164974,
+            4.763300101975076
+          ]
+        }
+      },
+      "positionDifference": 6.105704222243018e-7
+    },
+    {
+      "scenario": "tight",
+      "coarse": {
+        "filterActiveFraction": 0.35867666666666664,
+        "obstacleMinimum": 0.15686925343249342,
+        "passed": 31,
+        "minimum": 0.37715603661115005,
+        "stopReason": null,
+        "end": 60,
+        "maxTiltDegrees": 13.234379929818033,
+        "saturationFraction": 0.00009333333333333338,
+        "initial": {
+          "t": 0,
+          "passed": 0,
+          "order": 0.19172604252806974,
+          "largestFraction": 1,
+          "meanSpeed": 0.3499999999999999,
+          "radius": 1.834634395965133,
+          "heightSpan": 3.829812075244263,
+          "center": [
+            -5.947184292952528,
+            0.14668586494307967,
+            3.7912570547396314
+          ]
+        },
+        "final": {
+          "t": 60,
+          "passed": 31,
+          "order": 0.7152840062283342,
+          "largestFraction": 0.42,
+          "meanSpeed": 0.47024889536766723,
+          "radius": 10.932847554686374,
+          "heightSpan": 2.7647866394666574,
+          "center": [
+            13.612059741627197,
+            0.6391263113386836,
+            4.749902652207951
+          ]
+        }
+      },
+      "fine": {
+        "filterActiveFraction": 0.35762333333333335,
+        "obstacleMinimum": 0.17510008052638365,
+        "passed": 31,
+        "minimum": 0.3771560446258433,
+        "stopReason": null,
+        "end": 60,
+        "maxTiltDegrees": 13.041382549768354,
+        "saturationFraction": 0.00011666666666666675,
+        "initial": {
+          "t": 0,
+          "passed": 0,
+          "order": 0.19172604252806974,
+          "largestFraction": 1,
+          "meanSpeed": 0.3499999999999999,
+          "radius": 1.834634395965133,
+          "heightSpan": 3.829812075244263,
+          "center": [
+            -5.947184292952528,
+            0.14668586494307967,
+            3.7912570547396314
+          ]
+        },
+        "final": {
+          "t": 60,
+          "passed": 31,
+          "order": 0.8435533099865115,
+          "largestFraction": 0.62,
+          "meanSpeed": 0.49536314652872876,
+          "radius": 10.807997922568827,
+          "heightSpan": 2.668530809586757,
+          "center": [
+            13.70021996121762,
+            0.6182066935764143,
+            4.783631460872029
+          ]
+        }
+      },
+      "positionDifference": 2.489260573100523
+    }
+  ]
+}

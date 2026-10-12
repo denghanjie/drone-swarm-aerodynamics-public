@@ -1,0 +1,24 @@
+'use strict';
+const fs=require('fs'),path=require('path'),crypto=require('crypto'),assert=require('assert/strict'),{spawnSync}=require('child_process');
+const dir=__dirname,root=path.resolve(dir,'..'),save=(n,x)=>fs.writeFileSync(path.join(root,n),JSON.stringify(x,null,2));
+if(process.argv[2]==='job'){
+ const job=JSON.parse(process.argv[3]);process.env.FLOCK_FACTORY_VARIANT='wide';const S=require('../milestone-28-source/sim.cjs');
+ // Identical per-process warmup is excluded from the measurement and never saved as evidence.
+ S.run({seed:1401,count:50,duration:.1,dt:.0025,aeroMode:job.aeroMode,record:false});
+ const r=S.run({seed:1701,count:job.count,duration:1,dt:.0025,aeroMode:job.aeroMode,flowDt:.01,record:true,frameEvery:.1});
+ r.job=job;const file=job.id+'.f64',frames=r.frames;const b=Buffer.alloc(frames.length*(1+7*job.count)*8);let k=0;for(const frame of frames)for(const v of frame){b.writeDoubleLE(v,k);k+=8;}fs.writeFileSync(path.join(dir,file),b);delete r.frames;
+ r.replay={file,frames:frames.length,valuesPerFrame:1+7*job.count,dtype:'Float64LE',cadence:.1};fs.writeFileSync(path.join(dir,job.id+'.json'),JSON.stringify(r));console.log('DONE',job.id,r.metrics.end,r.metrics.stopReason,r.timing.total);process.exit(0);
+}
+const modes=['off','sum-force','sum-rotor','rss-rotor'],jobs=[];
+for(const count of [50,200,1000,5000])for(let repeat=0;repeat<3;repeat++)for(let j=0;j<4;j++){const aeroMode=modes[(j+repeat)%4];jobs.push({id:`cost-${count}-${aeroMode}-${repeat+1}`,count,aeroMode,repeat:repeat+1,seed:1701,course:'wide',kind:'timing-window',duration:1,dt:.0025,flowDt:.01});}
+const sourceFiles=['study.cjs','../milestone-28-source/sim.cjs','../milestone-28-source/aero.cjs','../milestone-28-source/factory.cjs','../milestone-28-source/factory-wide.cjs','../milestone-28-source/grid.cjs','../milestone-28-source/geometry.cjs','../milestone-26-source/grid.cjs','../step02c-source/physics.cjs','../step03a-source/wake.cjs'];
+const sourceHashes=Object.fromEntries(sourceFiles.map(f=>[f,crypto.createHash('sha256').update(fs.readFileSync(path.join(dir,f))).digest('hex')]));
+const protocolFile=path.join(root,'milestone-29-protocol.json');
+if(process.argv[2]==='plan'){
+ assert(!fs.existsSync(protocolFile),'Preserve existing frozen protocol');
+ save('milestone-29-protocol.json',{created:new Date().toISOString(),jobs,sourceHashes,purpose:'Isolated short-window cost of corrected aerodynamic coupling in actual local Boids/rigid-body/contact pipeline. Not full missions or physical validation.',execution:'48 serial fresh child processes, only after milestone26/27/28 numerical jobs have terminated. Three repeats with rotating model order per count. Identical per-process50-drone0.1s warmup (development seed1401), excluded. Model-specific warmup; fresh processes include only partially warmed JIT. System background load remains uncontrolled.',measurement:'One simulated second from the same seed1701 initial cloud per count/model;2.5ms physics,10ms control and airflow. Exact in-memory frames every0.1s. Timing.total includes initialization, simulation, sampling and in-memory recording; excludes warmup, process/module startup and serialization. All stages separately retained. Different timing/recording from milestone25: no direct optimization-speedup claim.',metrics:'Median and all repeat times by count/model; comparisons require each paired case reaches the full1s horizon with no stop. Early domain exits are labeled and their short time cannot be called faster. Report max inflow and full outcomes. Three runtime repeats of one scene are not independent mission reliability trials.',rendering:'Three.js replays depict measured1s windows; milestone25 supplies separately measured replay rendering. Offline trajectories do not prove online real time.',limits:'Original adjacent-motor mapping is excluded. Corrected mean-wake and receiver-response assumptions remain unvalidated; sum/RSS are different approximations, not turbulence.'});console.log('Frozen48-job timing protocol');process.exit(0);
+}
+const protocol=JSON.parse(fs.readFileSync(protocolFile));assert.deepEqual(protocol.jobs,jobs);assert.deepEqual(protocol.sourceHashes,sourceHashes);
+process.env.FLOCK_FACTORY_VARIANT='wide';fs.writeFileSync(path.join(dir,'factory-wide.json'),JSON.stringify(require('../milestone-28-source/factory.cjs')));
+const results=[];for(const job of jobs){const out=spawnSync(process.execPath,[__filename,'job',JSON.stringify(job)],{stdio:'inherit'});assert.equal(out.status,0,job.id);const r=JSON.parse(fs.readFileSync(path.join(dir,job.id+'.json')));const {initial,final,samples,...compact}=r;results.push(compact);save('milestone-29-progress.json',results);fs.writeFileSync(path.join(dir,'index.json'),JSON.stringify(results.filter(r=>r.job.repeat===1).map(r=>({config:r.config,metrics:r.metrics,job:r.job,file:r.job.id+'.json',geometry:'factory-wide.json'}))));}
+save('milestone-29-summary.json',results);

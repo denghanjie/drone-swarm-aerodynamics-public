@@ -1,0 +1,21 @@
+{
+  "created": "2026-10-11T23:27:42.057Z",
+  "reason": "Post-hoc audit of failed2.5→1.25ms trajectory agreement, discovered after16 development runs. Completion agrees but maximum final position discrepancy is0.548546m. No controller changes.",
+  "config": {
+    "seed": 1103,
+    "scenario": "tight",
+    "mode": "interior",
+    "observationDelay": 0.1,
+    "estimator": "predict",
+    "dt": 0.000625,
+    "record": true
+  },
+  "acceptance": "Same1cm final-position,0.01s end-time, identical count/stop criteria. Retain the original failed comparison even if finer steps agree.",
+  "hashes": {
+    "sim.cjs": "878d4d2e058cdde3849b355d305d7d6639f5abc299f95358bea081b79195b8b2",
+    "observer.cjs": "83a243f8d96179b667169ca3ef571f06fae3b61fa7346f94716abeba4179a2ff",
+    "continuous.cjs": "24abcd64ced6abeaa8f862d8200aaaee7b7c5b9d65be55d10a7ecbbfaeb3c922",
+    "soft-filter.cjs": "94de3be41161aafb070826e78a7e11f2dc553a77b8463a6796b324da8bdcbaa1",
+    "audit-refinement.cjs": "b6be581fa58810197d9f5f2884281ce45071defc9832813a092417069f24c81f"
+  }
+}

@@ -1,0 +1,361 @@
+{
+  "scope": "6-DOF numerical verification, physical validation pending",
+  "parameters": {
+    "m": 0.027,
+    "g": 9.81,
+    "I": [
+      0.000014,
+      0.000014,
+      0.0000217
+    ],
+    "a": 0.028,
+    "kf": 3.16e-10,
+    "km": 7.94e-12,
+    "motorTau": 0.04,
+    "controlDt": 0.01,
+    "tiltMax": 0.2617993877991494,
+    "duration": 16
+  },
+  "checks": [
+    {
+      "name": "Hover equilibrium",
+      "pass": true
+    },
+    {
+      "name": "Ballistic free fall",
+      "pass": true
+    },
+    {
+      "name": "Constant pitch thrust gives g tan(theta) X acceleration",
+      "pass": true
+    },
+    {
+      "name": "Constant roll thrust gives negative Y acceleration",
+      "pass": true
+    },
+    {
+      "name": "Mixer reconstructs total force and three torques",
+      "pass": true
+    },
+    {
+      "name": "Each rotor moment follows cross product and spin direction",
+      "pass": true
+    },
+    {
+      "name": "Motor exponential response",
+      "pass": true
+    },
+    {
+      "name": "Torque-free asymmetric rotation conserves energy and world angular momentum",
+      "pass": true
+    },
+    {
+      "name": "hover 2.25: finite normalized bounded states",
+      "pass": true
+    },
+    {
+      "name": "hover 1.1: finite normalized bounded states",
+      "pass": true
+    },
+    {
+      "name": "move 2.25: finite normalized bounded states",
+      "pass": true
+    },
+    {
+      "name": "move 1.1: finite normalized bounded states",
+      "pass": true
+    },
+    {
+      "name": "flight 2.25: finite normalized bounded states",
+      "pass": true
+    },
+    {
+      "name": "flight 1.1: finite normalized bounded states",
+      "pass": true
+    },
+    {
+      "name": "yaw 2.25: finite normalized bounded states",
+      "pass": true
+    },
+    {
+      "name": "yaw 1.1: finite normalized bounded states",
+      "pass": true
+    },
+    {
+      "name": "climb 2.25: finite normalized bounded states",
+      "pass": true
+    },
+    {
+      "name": "climb 1.1: finite normalized bounded states",
+      "pass": true
+    },
+    {
+      "name": "Yaw reaches 90 degrees without translation",
+      "pass": true
+    },
+    {
+      "name": "3D flight travels along X and Y, climbs and turns",
+      "pass": true
+    },
+    {
+      "name": "Braking pitch reverses while moving forward",
+      "pass": true
+    },
+    {
+      "name": "Limited climb saturates and initially climbs slower",
+      "pass": true
+    },
+    {
+      "name": "Convergence move 2.25",
+      "pass": true
+    },
+    {
+      "name": "Convergence move 1.1",
+      "pass": true
+    },
+    {
+      "name": "Convergence flight 2.25",
+      "pass": true
+    },
+    {
+      "name": "Convergence flight 1.1",
+      "pass": true
+    },
+    {
+      "name": "Convergence yaw 2.25",
+      "pass": true
+    },
+    {
+      "name": "Convergence yaw 1.1",
+      "pass": true
+    },
+    {
+      "name": "Convergence climb 2.25",
+      "pass": true
+    },
+    {
+      "name": "Convergence climb 1.1",
+      "pass": true
+    }
+  ],
+  "runs": {
+    "hover-2.25": {
+      "finalPosition": [
+        0,
+        0,
+        1
+      ],
+      "finalSpeed": 0,
+      "finalEulerDeg": [
+        0,
+        0,
+        0
+      ],
+      "maxThrustWeight": 1,
+      "saturationFraction": 0,
+      "maxQuaternionNormError": 0
+    },
+    "hover-1.1": {
+      "finalPosition": [
+        0,
+        0,
+        1
+      ],
+      "finalSpeed": 0,
+      "finalEulerDeg": [
+        0,
+        0,
+        0
+      ],
+      "maxThrustWeight": 1,
+      "saturationFraction": 0,
+      "maxQuaternionNormError": 0
+    },
+    "move-2.25": {
+      "finalPosition": [
+        1.9999999923919025,
+        -3.7834435299054305e-15,
+        1.0000000000004599
+      ],
+      "finalSpeed": 6.320943994491403e-13,
+      "finalEulerDeg": [
+        6.131999920154656e-15,
+        5.064949797831737e-13,
+        -5.654009754151746e-15
+      ],
+      "maxThrustWeight": 1.005713549190867,
+      "saturationFraction": 0,
+      "maxQuaternionNormError": 2.220446049250313e-16
+    },
+    "move-1.1": {
+      "finalPosition": [
+        1.9999999923919025,
+        -3.7834435299054305e-15,
+        1.0000000000004599
+      ],
+      "finalSpeed": 6.320943994491403e-13,
+      "finalEulerDeg": [
+        6.131999920154656e-15,
+        5.064949797831737e-13,
+        -5.654009754151746e-15
+      ],
+      "maxThrustWeight": 1.005713549190867,
+      "saturationFraction": 0,
+      "maxQuaternionNormError": 2.220446049250313e-16
+    },
+    "flight-2.25": {
+      "finalPosition": [
+        1.500487801601897,
+        1.521809931991554,
+        1.800000002179949
+      ],
+      "finalSpeed": 2.898377201670342e-8,
+      "finalEulerDeg": [
+        -3.23474760635129e-10,
+        5.500768301053565e-10,
+        89.99999999999919
+      ],
+      "maxThrustWeight": 1.389226453007109,
+      "saturationFraction": 0,
+      "maxQuaternionNormError": 2.220446049250313e-16
+    },
+    "flight-1.1": {
+      "finalPosition": [
+        1.5005931020395882,
+        1.854768134248004,
+        1.7999978323959576
+      ],
+      "finalSpeed": 0.000002029572914929793,
+      "finalEulerDeg": [
+        1.0826049454964612e-9,
+        -1.0623018026651123e-8,
+        89.9999999999995
+      ],
+      "maxThrustWeight": 1.0999999946844339,
+      "saturationFraction": 0.06812499999999992,
+      "maxQuaternionNormError": 2.220446049250313e-16
+    },
+    "yaw-2.25": {
+      "finalPosition": [
+        -2.184582267867485e-16,
+        -7.767042348443329e-15,
+        1
+      ],
+      "finalSpeed": 7.623947534213626e-15,
+      "finalEulerDeg": [
+        -2.2685046088689024e-13,
+        -7.25698912859243e-16,
+        89.99999999999977
+      ],
+      "maxThrustWeight": 1.0000000000000002,
+      "saturationFraction": 0,
+      "maxQuaternionNormError": 3.3306690738754696e-16
+    },
+    "yaw-1.1": {
+      "finalPosition": [
+        5.897033087121836e-16,
+        4.740243044258819e-16,
+        0.9999999999999962
+      ],
+      "finalSpeed": 8.448710536509305e-15,
+      "finalEulerDeg": [
+        1.5317513171023767e-14,
+        -1.8272962418243842e-14,
+        89.99999999999977
+      ],
+      "maxThrustWeight": 1.0456662491803281,
+      "saturationFraction": 0.023125000000000014,
+      "maxQuaternionNormError": 2.220446049250313e-16
+    },
+    "climb-2.25": {
+      "finalPosition": [
+        0,
+        0,
+        2.9999999999999605
+      ],
+      "finalSpeed": 1.468247247026731e-13,
+      "finalEulerDeg": [
+        0,
+        0,
+        0
+      ],
+      "maxThrustWeight": 1.50955083413626,
+      "saturationFraction": 0,
+      "maxQuaternionNormError": 0
+    },
+    "climb-1.1": {
+      "finalPosition": [
+        0,
+        0,
+        2.9999999999997478
+      ],
+      "finalSpeed": 2.641949271330902e-13,
+      "finalEulerDeg": [
+        0,
+        0,
+        0
+      ],
+      "maxThrustWeight": 1.0999999999999992,
+      "saturationFraction": 0.08874999999999948,
+      "maxQuaternionNormError": 0
+    }
+  },
+  "convergence": [
+    {
+      "scenario": "move",
+      "ratio": 2.25,
+      "maxPositionDeltaM": 2.2139365158730273e-9,
+      "maxVelocityDeltaMps": 1.829739844631985e-8,
+      "maxAttitudeDeltaRad": 6.664001874625056e-8
+    },
+    {
+      "scenario": "move",
+      "ratio": 1.1,
+      "maxPositionDeltaM": 2.2139365158730273e-9,
+      "maxVelocityDeltaMps": 1.829739844631985e-8,
+      "maxAttitudeDeltaRad": 6.664001874625056e-8
+    },
+    {
+      "scenario": "flight",
+      "ratio": 2.25,
+      "maxPositionDeltaM": 6.244400589239138e-9,
+      "maxVelocityDeltaMps": 1.5221812467077804e-7,
+      "maxAttitudeDeltaRad": 1.6858739404357617e-7
+    },
+    {
+      "scenario": "flight",
+      "ratio": 1.1,
+      "maxPositionDeltaM": 1.2457355075715158e-8,
+      "maxVelocityDeltaMps": 7.072640580185813e-8,
+      "maxAttitudeDeltaRad": 1.0745380149674385e-7
+    },
+    {
+      "scenario": "yaw",
+      "ratio": 2.25,
+      "maxPositionDeltaM": 1.6501263497017682e-14,
+      "maxVelocityDeltaMps": 3.7189076391759186e-14,
+      "maxAttitudeDeltaRad": 1.7377590819732256e-7
+    },
+    {
+      "scenario": "yaw",
+      "ratio": 1.1,
+      "maxPositionDeltaM": 1.2895708945137585e-8,
+      "maxVelocityDeltaMps": 6.96729907656568e-8,
+      "maxAttitudeDeltaRad": 1.1151007970493858e-7
+    },
+    {
+      "scenario": "climb",
+      "ratio": 2.25,
+      "maxPositionDeltaM": 1.7015134634590368e-8,
+      "maxVelocityDeltaMps": 1.6554994015927083e-7,
+      "maxAttitudeDeltaRad": 0
+    },
+    {
+      "scenario": "climb",
+      "ratio": 1.1,
+      "maxPositionDeltaM": 5.985611561953874e-9,
+      "maxVelocityDeltaMps": 3.248089830779066e-8,
+      "maxAttitudeDeltaRad": 0
+    }
+  ]
+}

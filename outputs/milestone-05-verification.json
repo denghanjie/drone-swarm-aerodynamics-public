@@ -1,0 +1,309 @@
+{
+  "checks": [
+    {
+      "name": "All 180 pairs use exactly identical initial positions",
+      "passed": true
+    },
+    {
+      "name": "Every planned condition, controller and seed is present",
+      "passed": true
+    },
+    {
+      "name": "All numerical metrics finite and count differences consistent",
+      "passed": true
+    },
+    {
+      "name": "Replay endpoints and all 50 vehicle states retained",
+      "passed": true
+    },
+    {
+      "name": "Four refined cases preserve counts and stops, with positions within 1 cm and crossing times within 0.05 s",
+      "passed": true
+    },
+    {
+      "name": "Preserved cautious exemplar reproduced at width 0.6",
+      "passed": true
+    },
+    {
+      "name": "Preserved cautious exemplar reproduced at width 1.2",
+      "passed": true
+    },
+    {
+      "name": "Preserved cautious exemplar reproduced at width 2.4",
+      "passed": true
+    },
+    {
+      "name": "Reservation event traces follow ordered phases and batch capacity",
+      "passed": true
+    }
+  ],
+  "refinements": [
+    {
+      "config": {
+        "width": 0.6,
+        "spacing": 0.6,
+        "speed": 0.5,
+        "seed": 1,
+        "dt": 0.01,
+        "count": 50,
+        "duration": 60,
+        "controller": "flow"
+      },
+      "coarse": {
+        "validCrossings": 19,
+        "completionFraction": 0.38,
+        "fullHorizonThroughput": 0.31666666666666665,
+        "minSeparation": 0.3766800995942709,
+        "closePairs": 0,
+        "contactPairs": 0,
+        "invalidCrossingDrones": 0,
+        "motorSaturationFraction": 0,
+        "lateralAltitudeTrackingRMS": 0.0701476588698228,
+        "maxTiltDeg": 5.8649784398688105,
+        "stopReason": null,
+        "simulatedSeconds": 60,
+        "fullHorizonCompleted": true
+      },
+      "half": {
+        "validCrossings": 19,
+        "completionFraction": 0.38,
+        "fullHorizonThroughput": 0.31666666666666665,
+        "minSeparation": 0.3766762563357234,
+        "closePairs": 0,
+        "contactPairs": 0,
+        "invalidCrossingDrones": 0,
+        "motorSaturationFraction": 0,
+        "lateralAltitudeTrackingRMS": 0.07014765897155899,
+        "maxTiltDeg": 5.864961369942325,
+        "stopReason": null,
+        "simulatedSeconds": 60,
+        "fullHorizonCompleted": true
+      },
+      "quarter": {
+        "validCrossings": 19,
+        "completionFraction": 0.38,
+        "fullHorizonThroughput": 0.31666666666666665,
+        "minSeparation": 0.37667625581611003,
+        "closePairs": 0,
+        "contactPairs": 0,
+        "invalidCrossingDrones": 0,
+        "motorSaturationFraction": 0,
+        "lateralAltitudeTrackingRMS": 0.07014765897731486,
+        "maxTiltDeg": 5.865428975229059,
+        "stopReason": null,
+        "simulatedSeconds": 60,
+        "fullHorizonCompleted": true
+      },
+      "coarseHalfPositionMax": 9.801735024578455e-09,
+      "halfQuarterPositionMax": 5.490750576482362e-10,
+      "halfQuarterCrossingTimeMax": 8.812140031011495e-07
+    },
+    {
+      "config": {
+        "width": 1.2,
+        "spacing": 0.6,
+        "speed": 0.5,
+        "seed": 1,
+        "dt": 0.01,
+        "count": 50,
+        "duration": 60,
+        "controller": "flow"
+      },
+      "coarse": {
+        "validCrossings": 25,
+        "completionFraction": 0.5,
+        "fullHorizonThroughput": 0.4166666666666667,
+        "minSeparation": 0.3101762950528802,
+        "closePairs": 0,
+        "contactPairs": 0,
+        "invalidCrossingDrones": 0,
+        "motorSaturationFraction": 0,
+        "lateralAltitudeTrackingRMS": 0.06569367086054978,
+        "maxTiltDeg": 5.8649784398688105,
+        "stopReason": null,
+        "simulatedSeconds": 60,
+        "fullHorizonCompleted": true
+      },
+      "half": {
+        "validCrossings": 25,
+        "completionFraction": 0.5,
+        "fullHorizonThroughput": 0.4166666666666667,
+        "minSeparation": 0.3101753476955632,
+        "closePairs": 0,
+        "contactPairs": 0,
+        "invalidCrossingDrones": 0,
+        "motorSaturationFraction": 0,
+        "lateralAltitudeTrackingRMS": 0.06569367096373911,
+        "maxTiltDeg": 5.864961369942325,
+        "stopReason": null,
+        "simulatedSeconds": 60,
+        "fullHorizonCompleted": true
+      },
+      "quarter": {
+        "validCrossings": 25,
+        "completionFraction": 0.5,
+        "fullHorizonThroughput": 0.4166666666666667,
+        "minSeparation": 0.31017534715510137,
+        "closePairs": 0,
+        "contactPairs": 0,
+        "invalidCrossingDrones": 0,
+        "motorSaturationFraction": 0,
+        "lateralAltitudeTrackingRMS": 0.06569367096957342,
+        "maxTiltDeg": 5.865428975229059,
+        "stopReason": null,
+        "simulatedSeconds": 60,
+        "fullHorizonCompleted": true
+      },
+      "coarseHalfPositionMax": 1.8492765756864738e-08,
+      "halfQuarterPositionMax": 1.0376285459839306e-09,
+      "halfQuarterCrossingTimeMax": 6.99398359671477e-07
+    },
+    {
+      "config": {
+        "width": 2.4,
+        "spacing": 0.6,
+        "speed": 0.5,
+        "seed": 1,
+        "dt": 0.01,
+        "count": 50,
+        "duration": 60,
+        "controller": "flow"
+      },
+      "coarse": {
+        "validCrossings": 50,
+        "completionFraction": 1,
+        "fullHorizonThroughput": 0.8333333333333334,
+        "minSeparation": 0.544565999074073,
+        "closePairs": 0,
+        "contactPairs": 0,
+        "invalidCrossingDrones": 0,
+        "motorSaturationFraction": 0,
+        "lateralAltitudeTrackingRMS": 0.00892665711985406,
+        "maxTiltDeg": 5.8649784398688105,
+        "stopReason": null,
+        "simulatedSeconds": 60,
+        "fullHorizonCompleted": true
+      },
+      "half": {
+        "validCrossings": 50,
+        "completionFraction": 1,
+        "fullHorizonThroughput": 0.8333333333333334,
+        "minSeparation": 0.5445659080619877,
+        "closePairs": 0,
+        "contactPairs": 0,
+        "invalidCrossingDrones": 0,
+        "motorSaturationFraction": 0,
+        "lateralAltitudeTrackingRMS": 0.008926657168479301,
+        "maxTiltDeg": 5.864961369942325,
+        "stopReason": null,
+        "simulatedSeconds": 60,
+        "fullHorizonCompleted": true
+      },
+      "quarter": {
+        "validCrossings": 50,
+        "completionFraction": 1,
+        "fullHorizonThroughput": 0.8333333333333334,
+        "minSeparation": 0.5445658438359483,
+        "closePairs": 0,
+        "contactPairs": 0,
+        "invalidCrossingDrones": 0,
+        "motorSaturationFraction": 0,
+        "lateralAltitudeTrackingRMS": 0.008926657171205851,
+        "maxTiltDeg": 5.865428975229059,
+        "stopReason": null,
+        "simulatedSeconds": 60,
+        "fullHorizonCompleted": true
+      },
+      "coarseHalfPositionMax": 7.639076926580893e-09,
+      "halfQuarterPositionMax": 4.320241942251316e-10,
+      "halfQuarterCrossingTimeMax": 8.251285512628215e-07
+    },
+    {
+      "config": {
+        "width": 0.6,
+        "spacing": 0.3,
+        "speed": 0.5,
+        "seed": 11,
+        "dt": 0.01,
+        "count": 50,
+        "duration": 60,
+        "controller": "flow"
+      },
+      "coarse": {
+        "validCrossings": 24,
+        "completionFraction": 0.48,
+        "fullHorizonThroughput": 0.4,
+        "minSeparation": 0.2927661498310033,
+        "closePairs": 0,
+        "contactPairs": 0,
+        "invalidCrossingDrones": 0,
+        "motorSaturationFraction": 0,
+        "lateralAltitudeTrackingRMS": 0.032019596902395704,
+        "maxTiltDeg": 5.863642938011619,
+        "stopReason": null,
+        "simulatedSeconds": 60,
+        "fullHorizonCompleted": true
+      },
+      "half": {
+        "validCrossings": 24,
+        "completionFraction": 0.48,
+        "fullHorizonThroughput": 0.4,
+        "minSeparation": 0.2927661498310029,
+        "closePairs": 0,
+        "contactPairs": 0,
+        "invalidCrossingDrones": 0,
+        "motorSaturationFraction": 0,
+        "lateralAltitudeTrackingRMS": 0.0320195970077975,
+        "maxTiltDeg": 5.863625894139913,
+        "stopReason": null,
+        "simulatedSeconds": 60,
+        "fullHorizonCompleted": true
+      },
+      "quarter": {
+        "validCrossings": 24,
+        "completionFraction": 0.48,
+        "fullHorizonThroughput": 0.4,
+        "minSeparation": 0.29276614983100324,
+        "closePairs": 0,
+        "contactPairs": 0,
+        "invalidCrossingDrones": 0,
+        "motorSaturationFraction": 0,
+        "lateralAltitudeTrackingRMS": 0.03201959701373561,
+        "maxTiltDeg": 5.864158615784175,
+        "stopReason": null,
+        "simulatedSeconds": 60,
+        "fullHorizonCompleted": true
+      },
+      "coarseHalfPositionMax": 2.5977439282535128e-08,
+      "halfQuarterPositionMax": 1.4589490527134571e-09,
+      "halfQuarterCrossingTimeMax": 7.985706771407308e-07
+    }
+  ],
+  "sourceSHA256": {
+    "milestone-05-source/sim.cjs": "d3b074c4039cebef3947420996c15dbc7f51a26a1bf33a8bd82309de8529fa57",
+    "milestone-05-source/scheduler.cjs": "d8b869e1fe19348a004b419d772a5256b363c6c768a34bcbf6768aa9838b4ff0",
+    "milestone-04-source/scheduler.cjs": "6952a050365dd935d7a8be7c9052b7528df3c5d7831c5f263f3fde4d7ce73e43",
+    "step02c-source/physics.cjs": "0c46c9beb4e831c621658f6600c074f97c95966de07f5000eb64aa476a443fa1"
+  },
+  "scope": "Numerical verification; three displayed examples plus one additional-seed dense narrow case refined. No physical validation.",
+  "browserQA": {
+    "browser": "Codex in-app browser",
+    "viewports": [
+      "1440x1000",
+      "390x844",
+      "default panel"
+    ],
+    "checks": {
+      "pageIdentityAndTwoThreeJSCanvases": true,
+      "sharedPlaybackAdvancesAndPauses": true,
+      "restartReturnsToZero": true,
+      "threePresetEndCountsMatchRecords": true,
+      "compareAt30SecondsAndCloseUpCamera": true,
+      "mobileStackedScenesWithoutOverflow": true,
+      "noConsoleErrorsOrWarnings": true,
+      "localLinksExist": true
+    },
+    "screenshot": "milestone-05-preview.png",
+    "limitations": "Only in-app browser tested. No sustained performance benchmark or physical validation."
+  }
+}

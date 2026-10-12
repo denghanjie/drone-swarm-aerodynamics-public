@@ -1,0 +1,126 @@
+{
+  "created": "2026-10-12T02:09:30.059721+00:00",
+  "jobs": [
+    {
+      "id": "development-1501-1000-wall-priority-0.0025",
+      "count": 1000,
+      "seed": 1501,
+      "filter": "wall-priority",
+      "kind": "development",
+      "duration": 20,
+      "dt": 0.0025,
+      "course": "wide"
+    },
+    {
+      "id": "development-1501-5000-wall-priority-0.0025",
+      "count": 5000,
+      "seed": 1501,
+      "filter": "wall-priority",
+      "kind": "development",
+      "duration": 20,
+      "dt": 0.0025,
+      "course": "wide"
+    },
+    {
+      "id": "heldout-1901-1000-baseline-0.0025",
+      "count": 1000,
+      "seed": 1901,
+      "filter": "baseline",
+      "kind": "heldout",
+      "duration": 20,
+      "dt": 0.0025,
+      "course": "wide"
+    },
+    {
+      "id": "heldout-1901-1000-wall-priority-0.0025",
+      "count": 1000,
+      "seed": 1901,
+      "filter": "wall-priority",
+      "kind": "heldout",
+      "duration": 20,
+      "dt": 0.0025,
+      "course": "wide"
+    },
+    {
+      "id": "heldout-1902-1000-baseline-0.0025",
+      "count": 1000,
+      "seed": 1902,
+      "filter": "baseline",
+      "kind": "heldout",
+      "duration": 20,
+      "dt": 0.0025,
+      "course": "wide"
+    },
+    {
+      "id": "heldout-1902-1000-wall-priority-0.0025",
+      "count": 1000,
+      "seed": 1902,
+      "filter": "wall-priority",
+      "kind": "heldout",
+      "duration": 20,
+      "dt": 0.0025,
+      "course": "wide"
+    },
+    {
+      "id": "heldout-1901-50-baseline-0.0025",
+      "count": 50,
+      "seed": 1901,
+      "filter": "baseline",
+      "kind": "heldout",
+      "duration": 180,
+      "dt": 0.0025,
+      "course": "wide"
+    },
+    {
+      "id": "heldout-1901-50-wall-priority-0.0025",
+      "count": 50,
+      "seed": 1901,
+      "filter": "wall-priority",
+      "kind": "heldout",
+      "duration": 180,
+      "dt": 0.0025,
+      "course": "wide"
+    },
+    {
+      "id": "refinement-1901-1000-wall-priority-0.00125",
+      "count": 1000,
+      "seed": 1901,
+      "filter": "wall-priority",
+      "kind": "refinement",
+      "duration": 20,
+      "dt": 0.00125,
+      "course": "wide"
+    },
+    {
+      "id": "refinement-1901-50-wall-priority-0.00125",
+      "count": 50,
+      "seed": 1901,
+      "filter": "wall-priority",
+      "kind": "refinement",
+      "duration": 180,
+      "dt": 0.00125,
+      "course": "wide"
+    }
+  ],
+  "sourceHashes": {
+    "sim.cjs": "d795530fb51f8f09281e70af6f9c6f075b626719926b0f02896e8ed0b5c9ac2d",
+    "wall-filter.cjs": "8273cc40a9530748fe43e9ef0a4d9a995ee152f9968ce2368e61e2f205502512",
+    "grid.cjs": "f06010781770b64432935e5d825bcd1405b154b735ac4d0d654f145600cea302",
+    "geometry.cjs": "e209e492fc523ab3c0c7df62745fb0d3dd7204f35e53309938a19d7895ed3d4f",
+    "factory.cjs": "fe46384aac6150c45a2ba38e4494da16969aeab4a8875a8596f6ad8e53bb2c40",
+    "factory-wide.cjs": "8ea0d8784accfc039fee9ca2a2c0a86dc8e502b6d1003e4de54a8df8a999cc22",
+    "study.cjs": "021220c964308c401fd2fee61f5441a2684778e2cbb2369204c713547882c078",
+    "check.cjs": "6c881d132b1fbd9df8c0b910d6d18582f6f2404acf6a3543bf021bdcb983ddc2",
+    "method.md": "ad5a77f98672b71a86eecb3399ba75a107b4e09a9346e5a43d1cba8e53510f70",
+    "../step02c-source/physics.cjs": "0c46c9beb4e831c621658f6600c074f97c95966de07f5000eb64aa476a443fa1"
+  },
+  "purpose": "Frozen wall-priority avoidance experiment; see method.md for rules and limitations.",
+  "primaryOutcome": "contact identity/time, passage count and horizon. Report all trials. Large cases cover only 20 seconds.",
+  "numerics": "Compare exact poses at common saved integer times through floor(min(end)). Report maximum synchronized position difference and 1 cm threshold separately from terminal event time/identity/count. Do not compare unequal-time terminal positions as synchronized error.",
+  "historicalBaseline": [
+    "../milestone-26-source/primary-1501-1000-wide-0.0025.json",
+    "../milestone-26-source/primary-1501-5000-wide-0.0025.json"
+  ],
+  "revision": 2,
+  "errorRecord": "milestone-30-error-record/README.md"
+}

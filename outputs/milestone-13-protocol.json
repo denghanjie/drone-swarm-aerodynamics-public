@@ -1,0 +1,223 @@
+{
+  "jobs": [
+    {
+      "seed": 601,
+      "scenario": "slalom",
+      "mode": "boids",
+      "record": true
+    },
+    {
+      "seed": 601,
+      "scenario": "slalom",
+      "mode": "separation-only",
+      "record": true
+    },
+    {
+      "seed": 601,
+      "scenario": "staggered",
+      "mode": "boids",
+      "record": true
+    },
+    {
+      "seed": 601,
+      "scenario": "staggered",
+      "mode": "separation-only",
+      "record": true
+    },
+    {
+      "seed": 601,
+      "scenario": "tight",
+      "mode": "boids",
+      "record": true
+    },
+    {
+      "seed": 601,
+      "scenario": "tight",
+      "mode": "separation-only",
+      "record": true
+    },
+    {
+      "seed": 602,
+      "scenario": "slalom",
+      "mode": "boids",
+      "record": false
+    },
+    {
+      "seed": 602,
+      "scenario": "slalom",
+      "mode": "separation-only",
+      "record": false
+    },
+    {
+      "seed": 602,
+      "scenario": "staggered",
+      "mode": "boids",
+      "record": false
+    },
+    {
+      "seed": 602,
+      "scenario": "staggered",
+      "mode": "separation-only",
+      "record": false
+    },
+    {
+      "seed": 602,
+      "scenario": "tight",
+      "mode": "boids",
+      "record": false
+    },
+    {
+      "seed": 602,
+      "scenario": "tight",
+      "mode": "separation-only",
+      "record": false
+    },
+    {
+      "seed": 603,
+      "scenario": "slalom",
+      "mode": "boids",
+      "record": false
+    },
+    {
+      "seed": 603,
+      "scenario": "slalom",
+      "mode": "separation-only",
+      "record": false
+    },
+    {
+      "seed": 603,
+      "scenario": "staggered",
+      "mode": "boids",
+      "record": false
+    },
+    {
+      "seed": 603,
+      "scenario": "staggered",
+      "mode": "separation-only",
+      "record": false
+    },
+    {
+      "seed": 603,
+      "scenario": "tight",
+      "mode": "boids",
+      "record": false
+    },
+    {
+      "seed": 603,
+      "scenario": "tight",
+      "mode": "separation-only",
+      "record": false
+    }
+  ],
+  "courses": {
+    "slalom": {
+      "name": "Three obstacles, changing height",
+      "finish": 10,
+      "spheres": [
+        {
+          "center": [
+            -1,
+            -0.5,
+            3.8
+          ],
+          "radius": 1
+        },
+        {
+          "center": [
+            3,
+            0.7,
+            4.8
+          ],
+          "radius": 1.1
+        },
+        {
+          "center": [
+            7,
+            -0.6,
+            3.5
+          ],
+          "radius": 0.9
+        }
+      ],
+      "route": [
+        [
+          -1,
+          -1.5,
+          5.8
+        ],
+        [
+          3,
+          -1.5,
+          6.5
+        ],
+        [
+          7,
+          1.7,
+          5.3
+        ],
+        [
+          11,
+          0,
+          4.5
+        ]
+      ]
+    },
+    "staggered": {
+      "name": "Two staggered 3 m openings",
+      "finish": 6.2,
+      "gates": [
+        {
+          "center": [
+            0,
+            -1,
+            3.5
+          ],
+          "width": 3
+        },
+        {
+          "center": [
+            5,
+            1,
+            5
+          ],
+          "width": 3
+        }
+      ]
+    },
+    "tight": {
+      "name": "Two staggered 1.8 m openings",
+      "finish": 6.2,
+      "gates": [
+        {
+          "center": [
+            0,
+            -1,
+            3.5
+          ],
+          "width": 1.8
+        },
+        {
+          "center": [
+            5,
+            1,
+            5
+          ],
+          "width": 1.8
+        }
+      ]
+    }
+  },
+  "parameters": {
+    "radius": 1.8,
+    "separationRadius": 0.85,
+    "separation": 1.5,
+    "alignment": 2,
+    "cohesion": 0.22,
+    "cruise": 0.65,
+    "maxSpeed": 0.9,
+    "steeringHorizon": 0.4
+  },
+  "sourceSHA256": "19ca23d3f0c329aa97e16220a39c5623c155738655861edea1b10c296eef0455",
+  "design": "18 fixed cases; seeds601–603 not inspected before freezing. No retuning within this evaluation. Local xyz social rules, common known-map guidance, no assigned lanes. All stops retained.",
+  "limitations": "No airflow, sensor errors or physical validation. Prescribed route for sphere course; infinite zero-thickness aperture planes. This adds geometry but does not resolve previous narrow-gate convergence issues."
+}

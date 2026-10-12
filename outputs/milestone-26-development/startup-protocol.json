@@ -1,0 +1,124 @@
+{
+  "created": "2026-10-12T00:18:42.020Z",
+  "jobs": [
+    {
+      "id": "primary-1501-50-wide-0.0025",
+      "count": 50,
+      "seed": 1501,
+      "course": "wide",
+      "dt": 0.0025,
+      "duration": 180,
+      "kind": "primary"
+    },
+    {
+      "id": "primary-1501-50-narrow-0.0025",
+      "count": 50,
+      "seed": 1501,
+      "course": "narrow",
+      "dt": 0.0025,
+      "duration": 180,
+      "kind": "primary"
+    },
+    {
+      "id": "primary-1502-50-wide-0.0025",
+      "count": 50,
+      "seed": 1502,
+      "course": "wide",
+      "dt": 0.0025,
+      "duration": 180,
+      "kind": "primary"
+    },
+    {
+      "id": "primary-1502-50-narrow-0.0025",
+      "count": 50,
+      "seed": 1502,
+      "course": "narrow",
+      "dt": 0.0025,
+      "duration": 180,
+      "kind": "primary"
+    },
+    {
+      "id": "primary-1501-200-wide-0.0025",
+      "count": 200,
+      "seed": 1501,
+      "course": "wide",
+      "dt": 0.0025,
+      "duration": 180,
+      "kind": "primary"
+    },
+    {
+      "id": "primary-1501-200-narrow-0.0025",
+      "count": 200,
+      "seed": 1501,
+      "course": "narrow",
+      "dt": 0.0025,
+      "duration": 180,
+      "kind": "primary"
+    },
+    {
+      "id": "primary-1501-1000-wide-0.0025",
+      "count": 1000,
+      "seed": 1501,
+      "course": "wide",
+      "dt": 0.0025,
+      "duration": 180,
+      "kind": "primary"
+    },
+    {
+      "id": "primary-1501-5000-wide-0.0025",
+      "count": 5000,
+      "seed": 1501,
+      "course": "wide",
+      "dt": 0.0025,
+      "duration": 180,
+      "kind": "primary"
+    },
+    {
+      "id": "refinement-1501-200-narrow-0.00125",
+      "count": 200,
+      "seed": 1501,
+      "course": "narrow",
+      "dt": 0.00125,
+      "duration": 180,
+      "kind": "refinement"
+    },
+    {
+      "id": "refinement-1501-1000-wide-0.00125",
+      "count": 1000,
+      "seed": 1501,
+      "course": "wide",
+      "dt": 0.00125,
+      "duration": 180,
+      "kind": "refinement"
+    },
+    {
+      "id": "window-refinement-1501-5000-wide-0.00125",
+      "count": 5000,
+      "seed": 1501,
+      "course": "wide",
+      "dt": 0.00125,
+      "duration": 20,
+      "kind": "window-refinement"
+    }
+  ],
+  "sourceHashes": {
+    "study.cjs": "bb116ee1ecdfd8a0ae143880651ef308697ba248607ba3a8d30381df0e650308",
+    "sim.cjs": "e14f2a6634539956b2a72cde8e2ed7855537021e7be2ad497910c9bfa93014a1",
+    "grid.cjs": "f06010781770b64432935e5d825bcd1405b154b735ac4d0d654f145600cea302",
+    "geometry.cjs": "e209e492fc523ab3c0c7df62745fb0d3dd7204f35e53309938a19d7895ed3d4f",
+    "factory.cjs": "d4775ecdb205aede5df02db43b8f4fdc7676cc41b636ac0627433ea20294b7ef",
+    "factory-wide.cjs": "8ea0d8784accfc039fee9ca2a2c0a86dc8e502b6d1003e4de54a8df8a999cc22",
+    "check.cjs": "d841442107bfd711afcc74bc0aee74e8afbf5b9f452d668d0dbfdd7024bc4713",
+    "check-course.cjs": "3876bfe04488bafe65cb44f453641f4bcd732919e1fc895b0789a933b34aac02",
+    "../step02c-source/physics.cjs": "0c46c9beb4e831c621658f6600c074f97c95966de07f5000eb64aa476a443fa1"
+  },
+  "purpose": "Full factory missions at50/200/1000/5000, paired narrower openings, and declared numerical refinements. Preserve incomplete/contact outcomes.",
+  "method": "Genuine local Boids, common broad route guidance, same local avoidance heuristic, no individual trajectories or scheduling. Airflow off; ideal observations. Primary step2.5ms,100Hz control.180s fixed horizon. No gain tuning after outcomes.",
+  "geometry": "Original5×4m doorways versus3×2.5m doorways; same door centers, route and other solids. Geometry narrowing tested at50/200, not extrapolated to5000.",
+  "initialization": "Same jittered3D lattice at0.75m spacing, cross-section caps16×9, larger count grows initial volume. Fresh seeds1501/1502. Large counts have one primary seed, not statistical safety assurance.",
+  "numerics": "Full2.5→1.25ms comparisons at200/narrow and1000/wide: same count/stop, end difference<.01s and max final position difference<.01m.5000 comparison covers only first20s, matched against the coarse mission checkpoint; it cannot validate later full-mission dynamics. Missing checkpoint due earlier stop is reported, never treated as a pass.",
+  "recording": "Float64LE exact positions/quaternions every1s and at terminal contact. Scientific samples every0.1s; swept contact checks every physics step. Streamed binary avoids large in-memory replay arrays. Full17-state endpoints and20/60/120/180s checkpoints retained. Visual interpolation is not a collision detector.",
+  "changes": "Conservative obstacle broadphase excludes only boxes farther than the original1.6m clearance activation along at least one axis, with1e-10 guard. Neighbor distance removes temporary arrays but keeps arithmetic. Equivalence checks compare exact old final states and metrics through5000 bodies.",
+  "timing": "Three concurrent numerical child processes. Mission wall times include recording and are descriptive, not an isolated scaling benchmark. Milestone25 provides the separately measured baseline. No paid compute.",
+  "limits": "180s simulation horizon only; no success forced by resetting, teleporting or deleting drones. Completed drones keep flying. One contact stops entire run; other unfinished drones are not independent collisions."
+}

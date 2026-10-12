@@ -1,0 +1,89 @@
+{
+  "checks": [
+    {
+      "name": "Locality: remote drone does not alter steering",
+      "passed": true
+    },
+    {
+      "name": "Drone ordering leaves steering unchanged",
+      "passed": true
+    },
+    {
+      "name": "Matched full initial states for all modes",
+      "passed": true
+    },
+    {
+      "name": "Boids seed301 dt refinement: no stop and final positions within1cm",
+      "passed": false
+    }
+  ],
+  "refinement": {
+    "difference": 0.0017029626595665194,
+    "coarse": {
+      "minimum": 0.529626579452736,
+      "stopReason": "vehicle model limit",
+      "end": 22.535,
+      "maxTiltDegrees": 6.082980376767855,
+      "saturationFraction": 0,
+      "initial": {
+        "t": 0,
+        "order": 0.18838958442141787,
+        "largestFraction": 1,
+        "meanSpeed": 0.3499999999999999,
+        "radius": 1.7971594063477019,
+        "heightSpan": 3.922009571595118,
+        "center": [
+          0.005208091561682545,
+          0.09651938468497245,
+          3.954705428876915
+        ]
+      },
+      "final": {
+        "t": 22.535,
+        "order": 0.994084519022089,
+        "largestFraction": 1,
+        "meanSpeed": 0.5964779178304759,
+        "radius": 1.3546150289165855,
+        "heightSpan": 1.8512752776844408,
+        "center": [
+          -5.469979574360288,
+          5.527396859085762,
+          0.9883412656078202
+        ]
+      }
+    },
+    "fine": {
+      "minimum": 0.5296265785881651,
+      "stopReason": "vehicle model limit",
+      "end": 22.5325,
+      "maxTiltDegrees": 6.082980547492395,
+      "saturationFraction": 0,
+      "initial": {
+        "t": 0,
+        "order": 0.18838958442141787,
+        "largestFraction": 1,
+        "meanSpeed": 0.3499999999999999,
+        "radius": 1.7971594063477019,
+        "heightSpan": 3.922009571595118,
+        "center": [
+          0.005208091561682545,
+          0.09651938468497245,
+          3.954705428876915
+        ]
+      },
+      "final": {
+        "t": 22.5325,
+        "order": 0.9940567373944643,
+        "largestFraction": 1,
+        "meanSpeed": 0.5966228517844596,
+        "radius": 1.35464438732934,
+        "heightSpan": 1.8516517281067078,
+        "center": [
+          -5.469181667232747,
+          5.526595803858356,
+          0.9893004851383735
+        ]
+      }
+    }
+  }
+}

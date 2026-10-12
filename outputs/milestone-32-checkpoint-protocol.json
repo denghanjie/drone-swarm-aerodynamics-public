@@ -1,0 +1,27 @@
+{
+  "milestone": 32,
+  "frozenAt": "2026-10-12T11:45:25.885869+00:00",
+  "postHocFollowup": true,
+  "reason": "Identical-coarse-state restart has submicrometre endpoint differences through30s. Close the initial-state vs step-size comparison by integrating the historical fine checkpoint at the coarse step. Preserve initial experiment unchanged.",
+  "diagnostic": {
+    "jobs": [
+      {
+        "id": "fine-start-0.0025",
+        "feedback": "closed",
+        "dt": 0.0025
+      }
+    ]
+  },
+  "window": [
+    20,
+    30
+  ],
+  "sourceHashes": {
+    "checkpoint-probe.cjs": "1ca2e0404252d4bc3994a60a795ded495c27e0999235ff9c6b80304563375cc9"
+  },
+  "inputHashes": {
+    "milestone-31-source/checkpoint-refinement-2002-1000-narrow-wall-priority-0.00125-20.json": "aa261154db61b121373395e187b600215b957955453baa3c9c2890b3f1aa6f51"
+  },
+  "comparison": "Compare new coarse-step fine-state continuation to existing coarse-state/coarse-step and historical fine-state/fine-step poses on common integer seconds. No acceptance threshold. Historical fine run is reused, not a fresh test.",
+  "sourceDirectory": "milestone-32-source"
+}

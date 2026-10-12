@@ -1,0 +1,36 @@
+{
+  "checks": [
+    {
+      "name": "Analytic single half-space solution, including inactive case",
+      "passed": true,
+      "evidence": {
+        "worst": 4.517939344722733e-15
+      }
+    },
+    {
+      "name": "Gradient finite difference away from hinge boundaries",
+      "passed": true,
+      "evidence": {
+        "worst": 5.5352131766994717e-8
+      }
+    },
+    {
+      "name": "Random conflicting constraints: residual, order invariance and objective decrease",
+      "passed": true,
+      "evidence": {
+        "residual": 5.4718566919888813e-14,
+        "permutation": 8.239620237340028e-15,
+        "linear": 1.1718571004216928e-13,
+        "maxIterations": 7
+      }
+    },
+    {
+      "name": "Old interior commands remain identical to checkpoint18",
+      "passed": true,
+      "evidence": {
+        "commands": 450,
+        "worst": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,1178 @@
+{
+  "design": {
+    "training": {
+      "gap": 0.45,
+      "offset": 0.06,
+      "ratio": 2.25
+    },
+    "grid": [
+      {
+        "kp": 0.5,
+        "kv": 1,
+        "ka": 100,
+        "kw": 20
+      },
+      {
+        "kp": 0.5,
+        "kv": 1,
+        "ka": 100,
+        "kw": 30
+      },
+      {
+        "kp": 0.5,
+        "kv": 1,
+        "ka": 100,
+        "kw": 40
+      },
+      {
+        "kp": 0.5,
+        "kv": 2.5,
+        "ka": 100,
+        "kw": 20
+      },
+      {
+        "kp": 0.5,
+        "kv": 2.5,
+        "ka": 100,
+        "kw": 30
+      },
+      {
+        "kp": 0.5,
+        "kv": 2.5,
+        "ka": 100,
+        "kw": 40
+      },
+      {
+        "kp": 0.5,
+        "kv": 4,
+        "ka": 100,
+        "kw": 20
+      },
+      {
+        "kp": 0.5,
+        "kv": 4,
+        "ka": 100,
+        "kw": 30
+      },
+      {
+        "kp": 0.5,
+        "kv": 4,
+        "ka": 100,
+        "kw": 40
+      },
+      {
+        "kp": 1,
+        "kv": 1,
+        "ka": 100,
+        "kw": 20
+      },
+      {
+        "kp": 1,
+        "kv": 1,
+        "ka": 100,
+        "kw": 30
+      },
+      {
+        "kp": 1,
+        "kv": 1,
+        "ka": 100,
+        "kw": 40
+      },
+      {
+        "kp": 1,
+        "kv": 2.5,
+        "ka": 100,
+        "kw": 20
+      },
+      {
+        "kp": 1,
+        "kv": 2.5,
+        "ka": 100,
+        "kw": 30
+      },
+      {
+        "kp": 1,
+        "kv": 2.5,
+        "ka": 100,
+        "kw": 40
+      },
+      {
+        "kp": 1,
+        "kv": 4,
+        "ka": 100,
+        "kw": 20
+      },
+      {
+        "kp": 1,
+        "kv": 4,
+        "ka": 100,
+        "kw": 30
+      },
+      {
+        "kp": 1,
+        "kv": 4,
+        "ka": 100,
+        "kw": 40
+      },
+      {
+        "kp": 2,
+        "kv": 1,
+        "ka": 100,
+        "kw": 20
+      },
+      {
+        "kp": 2,
+        "kv": 1,
+        "ka": 100,
+        "kw": 30
+      },
+      {
+        "kp": 2,
+        "kv": 1,
+        "ka": 100,
+        "kw": 40
+      },
+      {
+        "kp": 2,
+        "kv": 2.5,
+        "ka": 100,
+        "kw": 20
+      },
+      {
+        "kp": 2,
+        "kv": 2.5,
+        "ka": 100,
+        "kw": 30
+      },
+      {
+        "kp": 2,
+        "kv": 2.5,
+        "ka": 100,
+        "kw": 40
+      },
+      {
+        "kp": 2,
+        "kv": 4,
+        "ka": 100,
+        "kw": 20
+      },
+      {
+        "kp": 2,
+        "kv": 4,
+        "ka": 100,
+        "kw": 30
+      },
+      {
+        "kp": 2,
+        "kv": 4,
+        "ka": 100,
+        "kw": 40
+      }
+    ],
+    "heldout": [
+      {
+        "gap": 0.25,
+        "offset": 0.04,
+        "ratio": 2.25
+      },
+      {
+        "gap": 0.45,
+        "offset": 0.12,
+        "ratio": 2.25
+      },
+      {
+        "gap": 0.8,
+        "offset": 0.06,
+        "ratio": 2.25
+      },
+      {
+        "gap": 0.8,
+        "offset": 0.2,
+        "ratio": 2.25
+      },
+      {
+        "gap": 0.45,
+        "offset": 0,
+        "ratio": 2.25
+      },
+      {
+        "gap": 0.45,
+        "offset": 0.06,
+        "ratio": 1.1
+      }
+    ],
+    "score": "horizontalRMS/0.1 + altitudeRMS/0.2 + speedRMS/0.5 + tiltRMS/10deg; only complete 16s candidates eligible",
+    "selection": "lowest training score; held-out cases never used for selection"
+  },
+  "original": {
+    "kp": 1,
+    "kv": 2.5,
+    "ka": 100,
+    "kw": 20
+  },
+  "chosen": {
+    "kp": 0.5,
+    "kv": 2.5,
+    "ka": 100,
+    "kw": 40
+  },
+  "trials": [
+    {
+      "gains": {
+        "kp": 0.5,
+        "kv": 1,
+        "ka": 100,
+        "kw": 20
+      },
+      "end": 16,
+      "ownEnd": 16,
+      "stopped": null,
+      "horizontalRMS": 0.2009790150695277,
+      "altitudeRMS": 0.06139403711001889,
+      "speedRMS": 0.30705588816611623,
+      "tiltRMS": 4.884549881947244,
+      "peakHorizontal": 0.31822965496576494,
+      "peakPitch": 14.594872414541674,
+      "score": 3.4193271007723283
+    },
+    {
+      "gains": {
+        "kp": 0.5,
+        "kv": 1,
+        "ka": 100,
+        "kw": 30
+      },
+      "end": 16,
+      "ownEnd": 16,
+      "stopped": null,
+      "horizontalRMS": 0.23379950293684484,
+      "altitudeRMS": 0.060458031927197814,
+      "speedRMS": 0.2969268854116132,
+      "tiltRMS": 3.618518138048629,
+      "peakHorizontal": 0.36614462521311747,
+      "peakPitch": 11.016083886507921,
+      "score": 3.5959907736325265
+    },
+    {
+      "gains": {
+        "kp": 0.5,
+        "kv": 1,
+        "ka": 100,
+        "kw": 40
+      },
+      "end": 16,
+      "ownEnd": 16,
+      "stopped": null,
+      "horizontalRMS": 0.25496417216389494,
+      "altitudeRMS": 0.06064308698700682,
+      "speedRMS": 0.30382319683461645,
+      "tiltRMS": 3.0582733697621016,
+      "peakHorizontal": 0.4008877951689012,
+      "peakPitch": 9.685684147910054,
+      "score": 3.7663308872194268
+    },
+    {
+      "gains": {
+        "kp": 0.5,
+        "kv": 2.5,
+        "ka": 100,
+        "kw": 20
+      },
+      "end": 16,
+      "ownEnd": 16,
+      "stopped": null,
+      "horizontalRMS": 0.11378028171936592,
+      "altitudeRMS": 0.12168889296374752,
+      "speedRMS": 0.39368728727364616,
+      "tiltRMS": 8.875905384866542,
+      "peakHorizontal": 0.2036781530967664,
+      "peakPitch": 16.105913847276536,
+      "score": 3.4212123950463433
+    },
+    {
+      "gains": {
+        "kp": 0.5,
+        "kv": 2.5,
+        "ka": 100,
+        "kw": 30
+      },
+      "end": 16,
+      "ownEnd": 16,
+      "stopped": null,
+      "horizontalRMS": 0.129596428253715,
+      "altitudeRMS": 0.10383410578759031,
+      "speedRMS": 0.36902346850237155,
+      "tiltRMS": 6.4433788343397875,
+      "peakHorizontal": 0.21992503772605726,
+      "peakPitch": 10.439673348877012,
+      "score": 3.1975196319138233
+    },
+    {
+      "gains": {
+        "kp": 0.5,
+        "kv": 2.5,
+        "ka": 100,
+        "kw": 40
+      },
+      "end": 16,
+      "ownEnd": 16,
+      "stopped": null,
+      "horizontalRMS": 0.1450684302011761,
+      "altitudeRMS": 0.09530407913704722,
+      "speedRMS": 0.3581241964318948,
+      "tiltRMS": 5.249676654976559,
+      "peakHorizontal": 0.24011429672871593,
+      "peakPitch": 9.162740788908161,
+      "score": 3.1684207560584428
+    },
+    {
+      "gains": {
+        "kp": 0.5,
+        "kv": 4,
+        "ka": 100,
+        "kw": 20
+      },
+      "end": 16,
+      "ownEnd": 16,
+      "stopped": null,
+      "horizontalRMS": 0.09428161475094028,
+      "altitudeRMS": 0.14617437936674718,
+      "speedRMS": 0.42183989029452545,
+      "tiltRMS": 11.488090325739185,
+      "peakHorizontal": 0.17703073601092795,
+      "peakPitch": 19.456151721736685,
+      "score": 3.666176857506108
+    },
+    {
+      "gains": {
+        "kp": 0.5,
+        "kv": 4,
+        "ka": 100,
+        "kw": 30
+      },
+      "end": 16,
+      "ownEnd": 16,
+      "stopped": null,
+      "horizontalRMS": 0.10614312232144392,
+      "altitudeRMS": 0.12639094378388488,
+      "speedRMS": 0.39339825251533134,
+      "tiltRMS": 8.33737597987203,
+      "peakHorizontal": 0.18393276120815494,
+      "peakPitch": 13.175600652151696,
+      "score": 3.313920045151729
+    },
+    {
+      "gains": {
+        "kp": 0.5,
+        "kv": 4,
+        "ka": 100,
+        "kw": 40
+      },
+      "end": 16,
+      "ownEnd": 16,
+      "stopped": null,
+      "horizontalRMS": 0.12195851111629664,
+      "altitudeRMS": 0.11495143714198068,
+      "speedRMS": 0.38101735133837755,
+      "tiltRMS": 6.820938856762016,
+      "peakHorizontal": 0.19631973309089595,
+      "peakPitch": 10.778668624224059,
+      "score": 3.2384708852258264
+    },
+    {
+      "gains": {
+        "kp": 1,
+        "kv": 1,
+        "ka": 100,
+        "kw": 20
+      },
+      "end": 16,
+      "ownEnd": 16,
+      "stopped": null,
+      "horizontalRMS": 0.19659267127000696,
+      "altitudeRMS": 0.06418186924485804,
+      "speedRMS": 0.33689767209696675,
+      "tiltRMS": 5.2780930571470055,
+      "peakHorizontal": 0.3050813355485334,
+      "peakPitch": 14.587398964802432,
+      "score": 3.488440708832994
+    },
+    {
+      "gains": {
+        "kp": 1,
+        "kv": 1,
+        "ka": 100,
+        "kw": 30
+      },
+      "end": 16,
+      "ownEnd": 16,
+      "stopped": null,
+      "horizontalRMS": 0.22499612936820634,
+      "altitudeRMS": 0.06223056949456667,
+      "speedRMS": 0.3357490672841591,
+      "tiltRMS": 4.053873268785375,
+      "peakHorizontal": 0.3401852939250365,
+      "peakPitch": 11.002553709686111,
+      "score": 3.637999602601752
+    },
+    {
+      "gains": {
+        "kp": 1,
+        "kv": 1,
+        "ka": 100,
+        "kw": 40
+      },
+      "end": 16,
+      "ownEnd": 16,
+      "stopped": null,
+      "horizontalRMS": 0.24584373693458153,
+      "altitudeRMS": 0.06275296420019492,
+      "speedRMS": 0.3449696048458032,
+      "tiltRMS": 3.4767800394164197,
+      "peakHorizontal": 0.3630892361118183,
+      "peakPitch": 9.672304702898712,
+      "score": 3.809819403980038
+    },
+    {
+      "gains": {
+        "kp": 1,
+        "kv": 2.5,
+        "ka": 100,
+        "kw": 20
+      },
+      "end": 16,
+      "ownEnd": 16,
+      "stopped": null,
+      "horizontalRMS": 0.11568567386284667,
+      "altitudeRMS": 0.11370052853260261,
+      "speedRMS": 0.4113883709009937,
+      "tiltRMS": 9.037526807853189,
+      "peakHorizontal": 0.20026617528144586,
+      "peakPitch": 16.850185423566924,
+      "score": 3.451888803878786
+    },
+    {
+      "gains": {
+        "kp": 1,
+        "kv": 2.5,
+        "ka": 100,
+        "kw": 30
+      },
+      "end": 16,
+      "ownEnd": 16,
+      "stopped": null,
+      "horizontalRMS": 0.13802668996538517,
+      "altitudeRMS": 0.09855622957428731,
+      "speedRMS": 0.3968504448265975,
+      "tiltRMS": 6.844518443725877,
+      "peakHorizontal": 0.21375113061595732,
+      "peakPitch": 10.682391576441463,
+      "score": 3.3512007815510714
+    },
+    {
+      "gains": {
+        "kp": 1,
+        "kv": 2.5,
+        "ka": 100,
+        "kw": 40
+      },
+      "end": 16,
+      "ownEnd": 16,
+      "stopped": null,
+      "horizontalRMS": 0.16149899251920302,
+      "altitudeRMS": 0.08939307540482583,
+      "speedRMS": 0.3959527762693561,
+      "tiltRMS": 5.80423168794244,
+      "peakHorizontal": 0.237615722102304,
+      "peakPitch": 9.13162560642485,
+      "score": 3.4342840235491154
+    },
+    {
+      "gains": {
+        "kp": 1,
+        "kv": 4,
+        "ka": 100,
+        "kw": 20
+      },
+      "end": 0.56,
+      "ownEnd": 0.56,
+      "stopped": "Tilt exceeded the 20° exploratory limit",
+      "horizontalRMS": 0.07926894458215507,
+      "altitudeRMS": 0.05547958988618689,
+      "speedRMS": 0.4156462357585788,
+      "tiltRMS": 10.729581933722415,
+      "peakHorizontal": 0.16662431557976043,
+      "peakPitch": 19.867587297845155,
+      "score": 2.974338060141884
+    },
+    {
+      "gains": {
+        "kp": 1,
+        "kv": 4,
+        "ka": 100,
+        "kw": 30
+      },
+      "end": 16,
+      "ownEnd": 16,
+      "stopped": null,
+      "horizontalRMS": 0.11582839863679267,
+      "altitudeRMS": 0.11856744845530834,
+      "speedRMS": 0.4276097641186689,
+      "tiltRMS": 8.961702512031131,
+      "peakHorizontal": 0.17939941495750863,
+      "peakPitch": 14.23905940707116,
+      "score": 3.502511008084919
+    },
+    {
+      "gains": {
+        "kp": 1,
+        "kv": 4,
+        "ka": 100,
+        "kw": 40
+      },
+      "end": 16,
+      "ownEnd": 16,
+      "stopped": null,
+      "horizontalRMS": 0.13692337420336595,
+      "altitudeRMS": 0.10670064142886652,
+      "speedRMS": 0.43874892628643947,
+      "tiltRMS": 7.766524694685667,
+      "peakHorizontal": 0.217281922692857,
+      "peakPitch": 11.91010250406666,
+      "score": 3.5568872712194377
+    },
+    {
+      "gains": {
+        "kp": 2,
+        "kv": 1,
+        "ka": 100,
+        "kw": 20
+      },
+      "end": 16,
+      "ownEnd": 16,
+      "stopped": null,
+      "horizontalRMS": 0.19674736922416866,
+      "altitudeRMS": 0.06651176757382245,
+      "speedRMS": 0.39756477905678134,
+      "tiltRMS": 6.062019259058688,
+      "peakHorizontal": 0.2954714327877377,
+      "peakPitch": 14.57245341669889,
+      "score": 3.70136401413023
+    },
+    {
+      "gains": {
+        "kp": 2,
+        "kv": 1,
+        "ka": 100,
+        "kw": 30
+      },
+      "end": 16,
+      "ownEnd": 16,
+      "stopped": null,
+      "horizontalRMS": 0.23205209311493907,
+      "altitudeRMS": 0.06039598232047635,
+      "speedRMS": 0.39556552279026513,
+      "tiltRMS": 4.639593994086231,
+      "peakHorizontal": 0.33741969191266497,
+      "peakPitch": 10.977115001303327,
+      "score": 3.8775912877409255
+    },
+    {
+      "gains": {
+        "kp": 2,
+        "kv": 1,
+        "ka": 100,
+        "kw": 40
+      },
+      "end": 16,
+      "ownEnd": 16,
+      "stopped": null,
+      "horizontalRMS": 0.2653046521813778,
+      "altitudeRMS": 0.058987672897282045,
+      "speedRMS": 0.4110022836093462,
+      "tiltRMS": 4.031864279320729,
+      "peakHorizontal": 0.3940817876274798,
+      "peakPitch": 9.64555154984311,
+      "score": 4.173175881450953
+    },
+    {
+      "gains": {
+        "kp": 2,
+        "kv": 2.5,
+        "ka": 100,
+        "kw": 20
+      },
+      "end": 16,
+      "ownEnd": 16,
+      "stopped": null,
+      "horizontalRMS": 0.12744771309774142,
+      "altitudeRMS": 0.10256298287445766,
+      "speedRMS": 0.4627267318058559,
+      "tiltRMS": 9.89137524766097,
+      "peakHorizontal": 0.1968091096762415,
+      "peakPitch": 18.377476542095565,
+      "score": 3.7018830337275115
+    },
+    {
+      "gains": {
+        "kp": 2,
+        "kv": 2.5,
+        "ka": 100,
+        "kw": 30
+      },
+      "end": 16,
+      "ownEnd": 16,
+      "stopped": null,
+      "horizontalRMS": 0.1650201470827712,
+      "altitudeRMS": 0.08341939860685481,
+      "speedRMS": 0.48737035753860164,
+      "tiltRMS": 8.158808499951784,
+      "peakHorizontal": 0.2423462160602137,
+      "peakPitch": 12.326338133473488,
+      "score": 3.857920028934368
+    },
+    {
+      "gains": {
+        "kp": 2,
+        "kv": 2.5,
+        "ka": 100,
+        "kw": 40
+      },
+      "end": 16,
+      "ownEnd": 16,
+      "stopped": null,
+      "horizontalRMS": 0.20403666291398306,
+      "altitudeRMS": 0.07048825598160981,
+      "speedRMS": 0.517709584768495,
+      "tiltRMS": 7.45599142958609,
+      "peakHorizontal": 0.30287610160075995,
+      "peakPitch": 10.547481016325131,
+      "score": 4.173826221543479
+    },
+    {
+      "gains": {
+        "kp": 2,
+        "kv": 4,
+        "ka": 100,
+        "kw": 20
+      },
+      "end": 0.535,
+      "ownEnd": 0.535,
+      "stopped": "Tilt exceeded the 20° exploratory limit",
+      "horizontalRMS": 0.07251827566906542,
+      "altitudeRMS": 0.05191712938937345,
+      "speedRMS": 0.41411381812743925,
+      "tiltRMS": 10.332070455645153,
+      "peakHorizontal": 0.15734475622165706,
+      "peakPitch": 19.791890435030925,
+      "score": 2.8462030854569154
+    },
+    {
+      "gains": {
+        "kp": 2,
+        "kv": 4,
+        "ka": 100,
+        "kw": 30
+      },
+      "end": 16,
+      "ownEnd": 16,
+      "stopped": null,
+      "horizontalRMS": 0.15188415966075325,
+      "altitudeRMS": 0.09349247126741206,
+      "speedRMS": 0.5366931719911073,
+      "tiltRMS": 10.53792482908314,
+      "peakHorizontal": 0.23451218711525085,
+      "peakPitch": 15.791464339820637,
+      "score": 4.113482779835121
+    },
+    {
+      "gains": {
+        "kp": 2,
+        "kv": 4,
+        "ka": 100,
+        "kw": 40
+      },
+      "end": 16,
+      "ownEnd": 16,
+      "stopped": null,
+      "horizontalRMS": 0.19630910932295254,
+      "altitudeRMS": 0.07459809106053701,
+      "speedRMS": 0.5694957268210445,
+      "tiltRMS": 9.19540092604382,
+      "peakHorizontal": 0.302887037519546,
+      "peakPitch": 13.201462271955462,
+      "score": 4.3946130947786815
+    }
+  ],
+  "tests": [
+    {
+      "split": "training",
+      "config": {
+        "gap": 0.45,
+        "offset": 0.06,
+        "ratio": 2.25
+      },
+      "end": 16,
+      "runs": [
+        {
+          "name": "original",
+          "model": "rotor",
+          "end": 16,
+          "ownEnd": 16,
+          "stopped": null,
+          "horizontalRMS": 0.11568567386284667,
+          "altitudeRMS": 0.11370052853260261,
+          "speedRMS": 0.4113883709009937,
+          "tiltRMS": 9.037526807853189,
+          "peakHorizontal": 0.20026617528144586,
+          "peakPitch": 16.850185423566924,
+          "score": 3.451888803878786
+        },
+        {
+          "name": "original",
+          "model": "force-only",
+          "end": 16,
+          "ownEnd": 16,
+          "stopped": null,
+          "horizontalRMS": 0,
+          "altitudeRMS": 0.18718215219180118,
+          "speedRMS": 0.04372618722641872,
+          "tiltRMS": 0,
+          "peakHorizontal": 0,
+          "peakPitch": 0,
+          "score": 1.0233631354118433
+        },
+        {
+          "name": "chosen",
+          "model": "rotor",
+          "end": 16,
+          "ownEnd": 16,
+          "stopped": null,
+          "horizontalRMS": 0.1450684302011761,
+          "altitudeRMS": 0.09530407913704722,
+          "speedRMS": 0.3581241964318948,
+          "tiltRMS": 5.249676654976559,
+          "peakHorizontal": 0.24011429672871593,
+          "peakPitch": 9.162740788908161,
+          "score": 3.1684207560584428
+        },
+        {
+          "name": "chosen",
+          "model": "force-only",
+          "end": 16,
+          "ownEnd": 16,
+          "stopped": null,
+          "horizontalRMS": 0,
+          "altitudeRMS": 0.18718215219180118,
+          "speedRMS": 0.04372618722641872,
+          "tiltRMS": 0,
+          "peakHorizontal": 0,
+          "peakPitch": 0,
+          "score": 1.0233631354118433
+        }
+      ]
+    },
+    {
+      "split": "held-out",
+      "config": {
+        "gap": 0.25,
+        "offset": 0.04,
+        "ratio": 2.25
+      },
+      "end": 16,
+      "runs": [
+        {
+          "name": "original",
+          "model": "rotor",
+          "end": 16,
+          "ownEnd": 16,
+          "stopped": null,
+          "horizontalRMS": 0.12103906175566517,
+          "altitudeRMS": 0.09835940071741096,
+          "speedRMS": 0.4071250539170265,
+          "tiltRMS": 9.313014040887797,
+          "peakHorizontal": 0.19601630194755196,
+          "peakPitch": 19.84719811878774,
+          "score": 3.4477391330665395
+        },
+        {
+          "name": "original",
+          "model": "force-only",
+          "end": 16,
+          "ownEnd": 16,
+          "stopped": null,
+          "horizontalRMS": 0,
+          "altitudeRMS": 0.24147653236010486,
+          "speedRMS": 0.057572235742315105,
+          "tiltRMS": 0,
+          "peakHorizontal": 0,
+          "peakPitch": 0,
+          "score": 1.3225271332851543
+        },
+        {
+          "name": "chosen",
+          "model": "rotor",
+          "end": 16,
+          "ownEnd": 16,
+          "stopped": null,
+          "horizontalRMS": 0.1456925897720175,
+          "altitudeRMS": 0.08442783530078207,
+          "speedRMS": 0.34942218341163983,
+          "tiltRMS": 5.258555361166906,
+          "peakHorizontal": 0.22435006295887,
+          "peakPitch": 11.219651353066052,
+          "score": 3.1037649771640554
+        },
+        {
+          "name": "chosen",
+          "model": "force-only",
+          "end": 16,
+          "ownEnd": 16,
+          "stopped": null,
+          "horizontalRMS": 0,
+          "altitudeRMS": 0.24147653236010486,
+          "speedRMS": 0.057572235742315105,
+          "tiltRMS": 0,
+          "peakHorizontal": 0,
+          "peakPitch": 0,
+          "score": 1.3225271332851543
+        }
+      ]
+    },
+    {
+      "split": "held-out",
+      "config": {
+        "gap": 0.45,
+        "offset": 0.12,
+        "ratio": 2.25
+      },
+      "end": 16,
+      "runs": [
+        {
+          "name": "original",
+          "model": "rotor",
+          "end": 16,
+          "ownEnd": 16,
+          "stopped": null,
+          "horizontalRMS": 0.12756664630103856,
+          "altitudeRMS": 0.10429048930368622,
+          "speedRMS": 0.3914558104298603,
+          "tiltRMS": 8.483743869351562,
+          "peakHorizontal": 0.25662664898070287,
+          "peakPitch": 17.51755048660149,
+          "score": 3.428404917323693
+        },
+        {
+          "name": "original",
+          "model": "force-only",
+          "end": 16,
+          "ownEnd": 16,
+          "stopped": null,
+          "horizontalRMS": 0,
+          "altitudeRMS": 0.06660262617989074,
+          "speedRMS": 0.014686310734385047,
+          "tiltRMS": 0,
+          "peakHorizontal": 0,
+          "peakPitch": 0,
+          "score": 0.3623857523682238
+        },
+        {
+          "name": "chosen",
+          "model": "rotor",
+          "end": 16,
+          "ownEnd": 16,
+          "stopped": null,
+          "horizontalRMS": 0.15407133425038502,
+          "altitudeRMS": 0.08953318355947922,
+          "speedRMS": 0.3442113562931599,
+          "tiltRMS": 4.924447587438938,
+          "peakHorizontal": 0.31542887424597965,
+          "peakPitch": 8.037910899922064,
+          "score": 3.16924673163146
+        },
+        {
+          "name": "chosen",
+          "model": "force-only",
+          "end": 16,
+          "ownEnd": 16,
+          "stopped": null,
+          "horizontalRMS": 0,
+          "altitudeRMS": 0.06660262617989074,
+          "speedRMS": 0.014686310734385047,
+          "tiltRMS": 0,
+          "peakHorizontal": 0,
+          "peakPitch": 0,
+          "score": 0.3623857523682238
+        }
+      ]
+    },
+    {
+      "split": "held-out",
+      "config": {
+        "gap": 0.8,
+        "offset": 0.06,
+        "ratio": 2.25
+      },
+      "end": 16,
+      "runs": [
+        {
+          "name": "original",
+          "model": "rotor",
+          "end": 16,
+          "ownEnd": 16,
+          "stopped": null,
+          "horizontalRMS": 0.10122275290308044,
+          "altitudeRMS": 0.13309901585991146,
+          "speedRMS": 0.36533150235544215,
+          "tiltRMS": 7.971833556446389,
+          "peakHorizontal": 0.17547866706351806,
+          "peakPitch": 12.896543982917112,
+          "score": 3.205568968685885
+        },
+        {
+          "name": "original",
+          "model": "force-only",
+          "end": 16,
+          "ownEnd": 16,
+          "stopped": null,
+          "horizontalRMS": 0,
+          "altitudeRMS": 0.17094491137713283,
+          "speedRMS": 0.04059763561091218,
+          "tiltRMS": 0,
+          "peakHorizontal": 0,
+          "peakPitch": 0,
+          "score": 0.9359198281074884
+        },
+        {
+          "name": "chosen",
+          "model": "rotor",
+          "end": 16,
+          "ownEnd": 16,
+          "stopped": null,
+          "horizontalRMS": 0.13229592373051888,
+          "altitudeRMS": 0.10589813327003178,
+          "speedRMS": 0.3418274428156809,
+          "tiltRMS": 4.900911129181688,
+          "peakHorizontal": 0.2082701269250869,
+          "peakPitch": 7.518801983658022,
+          "score": 3.026195902204878
+        },
+        {
+          "name": "chosen",
+          "model": "force-only",
+          "end": 16,
+          "ownEnd": 16,
+          "stopped": null,
+          "horizontalRMS": 0,
+          "altitudeRMS": 0.17094491137713283,
+          "speedRMS": 0.04059763561091218,
+          "tiltRMS": 0,
+          "peakHorizontal": 0,
+          "peakPitch": 0,
+          "score": 0.9359198281074884
+        }
+      ]
+    },
+    {
+      "split": "held-out",
+      "config": {
+        "gap": 0.8,
+        "offset": 0.2,
+        "ratio": 2.25
+      },
+      "end": 16,
+      "runs": [
+        {
+          "name": "original",
+          "model": "rotor",
+          "end": 16,
+          "ownEnd": 16,
+          "stopped": null,
+          "horizontalRMS": 0.15340951744062306,
+          "altitudeRMS": 0.12355563428323132,
+          "speedRMS": 0.31501323936027503,
+          "tiltRMS": 6.5418408809938375,
+          "peakHorizontal": 0.2801078900146664,
+          "peakPitch": 13.318931984486856,
+          "score": 3.436083912642321
+        },
+        {
+          "name": "original",
+          "model": "force-only",
+          "end": 16,
+          "ownEnd": 16,
+          "stopped": null,
+          "horizontalRMS": 0,
+          "altitudeRMS": 0.028477076441885536,
+          "speedRMS": 0.006459477777266371,
+          "tiltRMS": 0,
+          "peakHorizontal": 0,
+          "peakPitch": 0,
+          "score": 0.1553043377639604
+        },
+        {
+          "name": "chosen",
+          "model": "rotor",
+          "end": 16,
+          "ownEnd": 16,
+          "stopped": null,
+          "horizontalRMS": 0.16138783830662534,
+          "altitudeRMS": 0.10341628906979018,
+          "speedRMS": 0.31086777383632624,
+          "tiltRMS": 4.348300001845969,
+          "peakHorizontal": 0.32282002759365286,
+          "peakPitch": 8.086214553449539,
+          "score": 3.187525376272454
+        },
+        {
+          "name": "chosen",
+          "model": "force-only",
+          "end": 16,
+          "ownEnd": 16,
+          "stopped": null,
+          "horizontalRMS": 0,
+          "altitudeRMS": 0.028477076441885536,
+          "speedRMS": 0.006459477777266371,
+          "tiltRMS": 0,
+          "peakHorizontal": 0,
+          "peakPitch": 0,
+          "score": 0.1553043377639604
+        }
+      ]
+    },
+    {
+      "split": "held-out",
+      "config": {
+        "gap": 0.45,
+        "offset": 0,
+        "ratio": 2.25
+      },
+      "end": 16,
+      "runs": [
+        {
+          "name": "original",
+          "model": "rotor",
+          "end": 16,
+          "ownEnd": 16,
+          "stopped": null,
+          "horizontalRMS": 0,
+          "altitudeRMS": 0.25597397287669654,
+          "speedRMS": 0.06379030846747785,
+          "tiltRMS": 0,
+          "peakHorizontal": 0,
+          "peakPitch": 0,
+          "score": 1.4074504813184383
+        },
+        {
+          "name": "original",
+          "model": "force-only",
+          "end": 16,
+          "ownEnd": 16,
+          "stopped": null,
+          "horizontalRMS": 0,
+          "altitudeRMS": 0.25597397287669654,
+          "speedRMS": 0.06379030846747785,
+          "tiltRMS": 0,
+          "peakHorizontal": 0,
+          "peakPitch": 0,
+          "score": 1.4074504813184383
+        },
+        {
+          "name": "chosen",
+          "model": "rotor",
+          "end": 16,
+          "ownEnd": 16,
+          "stopped": null,
+          "horizontalRMS": 0,
+          "altitudeRMS": 0.25597397287669654,
+          "speedRMS": 0.06379030846747785,
+          "tiltRMS": 0,
+          "peakHorizontal": 0,
+          "peakPitch": 0,
+          "score": 1.4074504813184383
+        },
+        {
+          "name": "chosen",
+          "model": "force-only",
+          "end": 16,
+          "ownEnd": 16,
+          "stopped": null,
+          "horizontalRMS": 0,
+          "altitudeRMS": 0.25597397287669654,
+          "speedRMS": 0.06379030846747785,
+          "tiltRMS": 0,
+          "peakHorizontal": 0,
+          "peakPitch": 0,
+          "score": 1.4074504813184383
+        }
+      ]
+    },
+    {
+      "split": "held-out",
+      "config": {
+        "gap": 0.45,
+        "offset": 0.06,
+        "ratio": 1.1
+      },
+      "end": 0.25,
+      "runs": [
+        {
+          "name": "original",
+          "model": "rotor",
+          "end": 0.25,
+          "ownEnd": 0.25,
+          "stopped": "Tilt exceeded the 20° exploratory limit",
+          "horizontalRMS": 0.009184753276600096,
+          "altitudeRMS": 0.014612882411596388,
+          "speedRMS": 0.20850526751221818,
+          "tiltRMS": 10.801351779451199,
+          "peakHorizontal": 0.025054111147413172,
+          "peakPitch": 19.846235180197233,
+          "score": 1.662057657793539
+        },
+        {
+          "name": "original",
+          "model": "force-only",
+          "end": 0.25,
+          "ownEnd": 16,
+          "stopped": null,
+          "horizontalRMS": 0,
+          "altitudeRMS": 0.013369098640473967,
+          "speedRMS": 0.12556123323054735,
+          "tiltRMS": 0,
+          "peakHorizontal": 0,
+          "peakPitch": 0,
+          "score": 0.31796795966346453
+        },
+        {
+          "name": "chosen",
+          "model": "rotor",
+          "end": 0.25,
+          "ownEnd": 0.39,
+          "stopped": "Tilt exceeded the 20° exploratory limit",
+          "horizontalRMS": 0.00700146985436243,
+          "altitudeRMS": 0.014667615490810238,
+          "speedRMS": 0.17957401077284713,
+          "tiltRMS": 6.961424162363772,
+          "peakHorizontal": 0.01848374461764808,
+          "peakPitch": 11.745965640420598,
+          "score": 1.198643213779747
+        },
+        {
+          "name": "chosen",
+          "model": "force-only",
+          "end": 0.25,
+          "ownEnd": 16,
+          "stopped": null,
+          "horizontalRMS": 0,
+          "altitudeRMS": 0.013369098640473967,
+          "speedRMS": 0.12556123323054735,
+          "tiltRMS": 0,
+          "peakHorizontal": 0,
+          "peakPitch": 0,
+          "score": 0.31796795966346453
+        }
+      ]
+    }
+  ]
+}

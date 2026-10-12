@@ -1,0 +1,101 @@
+{
+  "generated": "2026-10-12T01:10:04.752028+00:00",
+  "studyComplete": true,
+  "comparisons": [
+    {
+      "coarse": "primary-1501-200-narrow-0.0025",
+      "fine": "refinement-1501-200-narrow-0.00125",
+      "scope": "available prescribed full-mission comparison",
+      "maximumEndpointDifferenceM": 0.05445419354371263,
+      "endTimes": [
+        180,
+        180
+      ],
+      "stopReasons": [
+        null,
+        null
+      ],
+      "eventIdentities": [
+        {
+          "drone": null,
+          "pair": null,
+          "obstacles": []
+        },
+        {
+          "drone": null,
+          "pair": null,
+          "obstacles": []
+        }
+      ],
+      "eventIdentityAgreement": true,
+      "jointThresholdsMet": false,
+      "note": "Endpoints at different stop times are not time-synchronized paths. No claim about later motion or physical accuracy."
+    },
+    {
+      "coarse": "primary-1501-1000-wide-0.0025",
+      "fine": "refinement-1501-1000-wide-0.00125",
+      "scope": "available prescribed full-mission comparison",
+      "maximumEndpointDifferenceM": 0.0010669079015199153,
+      "endTimes": [
+        16.02,
+        16.01875
+      ],
+      "stopReasons": [
+        "obstacle contact envelope",
+        "obstacle contact envelope"
+      ],
+      "eventIdentities": [
+        {
+          "drone": 296,
+          "pair": null,
+          "obstacles": [
+            "partition-0-above"
+          ]
+        },
+        {
+          "drone": 296,
+          "pair": null,
+          "obstacles": [
+            "partition-0-above"
+          ]
+        }
+      ],
+      "eventIdentityAgreement": true,
+      "jointThresholdsMet": true,
+      "note": "Endpoints at different stop times are not time-synchronized paths. No claim about later motion or physical accuracy."
+    },
+    {
+      "coarse": "primary-1501-5000-wide-0.0025",
+      "fine": "window-refinement-1501-5000-wide-0.00125",
+      "scope": "supplemental early-stop description; original missing20s checkpoint result retained",
+      "maximumEndpointDifferenceM": 0.0010841997154615256,
+      "endTimes": [
+        11.9525,
+        11.95125
+      ],
+      "stopReasons": [
+        "obstacle contact envelope",
+        "obstacle contact envelope"
+      ],
+      "eventIdentities": [
+        {
+          "drone": 4215,
+          "pair": null,
+          "obstacles": [
+            "partition-0-above"
+          ]
+        },
+        {
+          "drone": 4215,
+          "pair": null,
+          "obstacles": [
+            "partition-0-above"
+          ]
+        }
+      ],
+      "eventIdentityAgreement": true,
+      "jointThresholdsMet": true,
+      "note": "Endpoints at different stop times are not time-synchronized paths. No claim about later motion or physical accuracy."
+    }
+  ]
+}

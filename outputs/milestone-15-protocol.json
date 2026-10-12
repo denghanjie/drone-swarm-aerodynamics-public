@@ -1,0 +1,79 @@
+{
+  "jobs": [
+    {
+      "seed": 801,
+      "scenario": "tight",
+      "mode": "joint",
+      "dt": 0.005,
+      "record": true
+    },
+    {
+      "seed": 801,
+      "scenario": "tight",
+      "mode": "joint",
+      "dt": 0.0025,
+      "record": true
+    },
+    {
+      "seed": 801,
+      "scenario": "tight",
+      "mode": "filter-only",
+      "dt": 0.005,
+      "record": true
+    },
+    {
+      "seed": 801,
+      "scenario": "tight",
+      "mode": "filter-only",
+      "dt": 0.0025,
+      "record": true
+    },
+    {
+      "seed": 801,
+      "scenario": "tight",
+      "mode": "steering-only",
+      "dt": 0.005,
+      "record": true
+    },
+    {
+      "seed": 801,
+      "scenario": "tight",
+      "mode": "steering-only",
+      "dt": 0.0025,
+      "record": true
+    },
+    {
+      "seed": 801,
+      "scenario": "tight",
+      "mode": "continuous",
+      "dt": 0.005,
+      "record": true
+    },
+    {
+      "seed": 801,
+      "scenario": "tight",
+      "mode": "continuous",
+      "dt": 0.0025,
+      "record": true
+    },
+    {
+      "seed": 801,
+      "scenario": "tight",
+      "mode": "retention",
+      "dt": 0.005,
+      "record": true
+    },
+    {
+      "seed": 801,
+      "scenario": "tight",
+      "mode": "retention",
+      "dt": 0.0025,
+      "record": true
+    }
+  ],
+  "purpose": "Component ablation of hard-switch sensitivity on development seed801. Development, not held-out validation.",
+  "sourceHashes": {
+    "sim.cjs": "ff2fee45976dcaccc6c5e92178d57bddde5360b61f1a79e99fc7b55ad191b54c",
+    "continuous.cjs": "ce5be1df8e1144269baabb3e59a914743f85e6c78505e203f2ab78985364f022"
+  }
+}

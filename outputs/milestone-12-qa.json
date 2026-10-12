@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-11",
+  "milestone": 12,
+  "url": "http://127.0.0.1:8875/outputs/research-results.html",
+  "browser": "Codex in-app via cua_repl",
+  "viewports": [
+    "1440x1000",
+    "390x844"
+  ],
+  "passed": [
+    "Page identity and two nonblank3D canvases",
+    "No error overlay or console warnings/errors",
+    "Narrow replay5/50 stopped vs15/50 ongoing with numerical warning",
+    "Wide endpoint50/50 for both",
+    "Sphere10s preview visually inspected",
+    "Playback advances; scenario selector and neighbor toggle work",
+    "Mobile width390, no overflow; canvases356x350"
+  ],
+  "numericalChecks": [
+    {
+      "name": "All matched controller pairs share full initial states",
+      "passed": true
+    },
+    {
+      "name": "Swept wall rejects crossing outside hole",
+      "passed": true
+    },
+    {
+      "name": "Swept wall permits centered crossing",
+      "passed": true
+    },
+    {
+      "name": "Sphere intersection detected between endpoints",
+      "passed": true
+    },
+    {
+      "name": "Refinement retains stop reason and passage count; positions within1cm",
+      "passed": false
+    }
+  ],
+  "limitations": [
+    "Narrow refinement fails1cm criterion:0.422m",
+    "Only seed501 Boids trajectories refined",
+    "CPU only; airflow off; no physical validation"
+  ],
+  "server": "Loopback8875 static server restarted after old server had ended"
+}

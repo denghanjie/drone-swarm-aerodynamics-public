@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-11",
+  "milestone": 14,
+  "url": "http://127.0.0.1:8875/outputs/research-results.html",
+  "browser": "Codex in-app via cua_repl",
+  "viewports": [
+    "1440x1100",
+    "390x844"
+  ],
+  "uiChecks": [
+    "Correct title and nonblank paired3D rendering",
+    "No console errors/warnings",
+    "Tight601 comparison replaced with fresh801: baseline50 vs candidate31 end counts verified",
+    "Wide801: baseline33 and wall stop, candidate50 and no stop verified",
+    "Scenario selector, time jumps, neighbor checkbox and playback verified",
+    "Mobile390px, no overflow, canvases356x350",
+    "Visible provisional warning and screenshot inspected"
+  ],
+  "candidateVerification": [
+    {
+      "name": "Baseline trajectory exactly reproduces milestone13 implementation",
+      "passed": true
+    },
+    {
+      "name": "Fresh matched initial states",
+      "passed": true
+    },
+    {
+      "name": "Far-from-obstacle filter is identity",
+      "passed": true
+    },
+    {
+      "name": "Obstacle projection reduces forward and outward command",
+      "passed": true
+    },
+    {
+      "name": "Refinement: same stop/count and final positions within1cm",
+      "passed": false
+    }
+  ],
+  "decision": "Reject obstacle-only candidate. Joint candidate provisional: no observed contact in12 trials, but slower tight passage, fragmentation and failed tight trajectory refinement.",
+  "evidence": [
+    "milestone-14-preview.png",
+    "milestone-14-report.md",
+    "milestone-14-failure-analysis.json"
+  ]
+}

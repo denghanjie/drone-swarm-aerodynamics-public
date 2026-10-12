@@ -1,0 +1,188 @@
+{
+  "checks": [
+    {
+      "name": "Known force produces F/m acceleration",
+      "passed": true,
+      "evidence": -1.962
+    },
+    {
+      "name": "World force x/y axes",
+      "passed": true,
+      "evidence": [
+        0.3703703703703704,
+        -0.7407407407407408,
+        0
+      ]
+    },
+    {
+      "name": "Constant force trajectory matches analytic 1 s solution",
+      "passed": true,
+      "evidence": {
+        "z": 0.01899999999999811,
+        "vz": -1.9620000000000086
+      }
+    },
+    {
+      "name": "Zero load regression: hover",
+      "passed": true,
+      "evidence": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "Zero load regression: flight",
+      "passed": true,
+      "evidence": [
+        1.500487801601897,
+        1.521809931991554,
+        1.800000002179949
+      ]
+    },
+    {
+      "name": "Zero load regression: move",
+      "passed": true,
+      "evidence": [
+        1.9999999923919025,
+        -3.7834435299054305e-15,
+        1.0000000000004599
+      ]
+    },
+    {
+      "name": "Zero load regression: climb",
+      "passed": true,
+      "evidence": [
+        0,
+        0,
+        2.9999999999999605
+      ]
+    },
+    {
+      "name": "Zero load regression: yaw",
+      "passed": true,
+      "evidence": [
+        -2.184582267867485e-16,
+        -7.767042348443329e-15,
+        1
+      ]
+    },
+    {
+      "name": "Pulse boundaries and exact duration",
+      "passed": true
+    },
+    {
+      "name": "No motion before force begins",
+      "passed": true,
+      "evidence": 1
+    },
+    {
+      "name": "Four second pulse approaches PD equilibrium within 2 mm",
+      "passed": true,
+      "evidence": {
+        "actual": 0.6730145919046331,
+        "prediction": 0.673
+      }
+    },
+    {
+      "name": "Returns within 1 mm after removal",
+      "passed": true,
+      "evidence": 1.0000000004301308
+    },
+    {
+      "name": "Symmetric load causes no rotation or sideways motion",
+      "passed": true
+    },
+    {
+      "name": "Analytic loaded equilibrium has zero derivatives",
+      "passed": true
+    },
+    {
+      "name": "Convergence, load 0, thrust 1.1",
+      "passed": true,
+      "evidence": 0
+    },
+    {
+      "name": "Finite states and motor bounds, load 0, thrust 1.1",
+      "passed": true
+    },
+    {
+      "name": "Convergence, load 0.1, thrust 1.1",
+      "passed": true,
+      "evidence": 3.008860643971545e-8
+    },
+    {
+      "name": "Finite states and motor bounds, load 0.1, thrust 1.1",
+      "passed": true
+    },
+    {
+      "name": "Convergence, load 0.2, thrust 1.1",
+      "passed": true,
+      "evidence": 6.693605136831593e-8
+    },
+    {
+      "name": "Finite states and motor bounds, load 0.2, thrust 1.1",
+      "passed": true
+    },
+    {
+      "name": "Convergence, load 0.3, thrust 1.1",
+      "passed": true,
+      "evidence": 3.967083017641926e-8
+    },
+    {
+      "name": "Finite states and motor bounds, load 0.3, thrust 1.1",
+      "passed": true
+    },
+    {
+      "name": "Convergence, load 0, thrust 2.25",
+      "passed": true,
+      "evidence": 0
+    },
+    {
+      "name": "Finite states and motor bounds, load 0, thrust 2.25",
+      "passed": true
+    },
+    {
+      "name": "Convergence, load 0.1, thrust 2.25",
+      "passed": true,
+      "evidence": 2.68441069373182e-9
+    },
+    {
+      "name": "Finite states and motor bounds, load 0.1, thrust 2.25",
+      "passed": true
+    },
+    {
+      "name": "Convergence, load 0.2, thrust 2.25",
+      "passed": true,
+      "evidence": 5.36882227564206e-9
+    },
+    {
+      "name": "Finite states and motor bounds, load 0.2, thrust 2.25",
+      "passed": true
+    },
+    {
+      "name": "Convergence, load 0.3, thrust 2.25",
+      "passed": true,
+      "evidence": 8.05323119301704e-9
+    },
+    {
+      "name": "Finite states and motor bounds, load 0.3, thrust 2.25",
+      "passed": true
+    },
+    {
+      "name": "Insufficient thrust gives predicted downward acceleration once saturated",
+      "passed": true
+    }
+  ],
+  "summary": {
+    "passed": 31,
+    "forceN": 0.052974,
+    "predictedSteadyLoss": 0.32699999999999996,
+    "lossAt8": 0.3269854080953669,
+    "maxLoss": 0.32953913332047224,
+    "finalAltitude": 1.0000000004301308,
+    "maxConvergenceErrorM": 6.693605136831593e-8,
+    "limitedMinAltitude": -15.543069427702983,
+    "limitedSaturationFraction": 0.7412500000000284
+  }
+}

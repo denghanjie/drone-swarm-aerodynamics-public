@@ -1,0 +1,108 @@
+{
+  "jobs": [
+    {
+      "seed": 1001,
+      "scenario": "tight",
+      "mode": "steering-only",
+      "record": true
+    },
+    {
+      "seed": 1001,
+      "scenario": "tight",
+      "mode": "interior",
+      "record": true
+    },
+    {
+      "seed": 1001,
+      "scenario": "staggered",
+      "mode": "steering-only",
+      "record": true
+    },
+    {
+      "seed": 1001,
+      "scenario": "staggered",
+      "mode": "interior",
+      "record": true
+    },
+    {
+      "seed": 1002,
+      "scenario": "tight",
+      "mode": "steering-only",
+      "record": false
+    },
+    {
+      "seed": 1002,
+      "scenario": "tight",
+      "mode": "interior",
+      "record": false
+    },
+    {
+      "seed": 1002,
+      "scenario": "staggered",
+      "mode": "steering-only",
+      "record": false
+    },
+    {
+      "seed": 1002,
+      "scenario": "staggered",
+      "mode": "interior",
+      "record": false
+    },
+    {
+      "seed": 1003,
+      "scenario": "tight",
+      "mode": "steering-only",
+      "record": false
+    },
+    {
+      "seed": 1003,
+      "scenario": "tight",
+      "mode": "interior",
+      "record": false
+    },
+    {
+      "seed": 1003,
+      "scenario": "staggered",
+      "mode": "steering-only",
+      "record": false
+    },
+    {
+      "seed": 1003,
+      "scenario": "staggered",
+      "mode": "interior",
+      "record": false
+    },
+    {
+      "seed": 1004,
+      "scenario": "tight",
+      "mode": "steering-only",
+      "record": false
+    },
+    {
+      "seed": 1004,
+      "scenario": "tight",
+      "mode": "interior",
+      "record": false
+    },
+    {
+      "seed": 1005,
+      "scenario": "tight",
+      "mode": "steering-only",
+      "record": false
+    },
+    {
+      "seed": 1005,
+      "scenario": "tight",
+      "mode": "interior",
+      "record": false
+    }
+  ],
+  "purpose": "Independent holdout for10cm interior steering offset. Five tight seeds and three wide seeds, after development on801–802. No retuning on holdout.",
+  "unchanged": "50 drones,60s, ideal observations, airflow off,10ms control period, same Boids parameters and clearance filter. Only aperture map-guidance inset changed from0.25m to0.35m.",
+  "acceptance": "Report contact stops, completion and minimum sampled largest component separately. Refinement: same stop/count, terminal position discrepancy<1cm, end-time difference<0.01s.",
+  "refinementPlan": "All five interior tight cases and seed1001 wide:6 finer-step runs.",
+  "hashes": {
+    "sim.cjs": "2f2c62060f78f26f5bb35813adb9dc0acfb543e42c30137fcb0ca592e676b73b",
+    "continuous.cjs": "24abcd64ced6abeaa8f862d8200aaaee7b7c5b9d65be55d10a7ecbbfaeb3c922"
+  }
+}

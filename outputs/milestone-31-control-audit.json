@@ -1,0 +1,28 @@
+{
+  "geometryVariantsChecked": 2,
+  "checkedAffectedDrones": 3,
+  "completedJobs": 10,
+  "plannedJobs": 10,
+  "passed": true,
+  "scope": "Saved pre-contact state and requested velocity exactly reproduce flight-controller motor targets and desired attitude; not measured motor thrust or a replay of the whole trajectory.",
+  "checks": [
+    {
+      "trial": "heldout-2001-1000-wide-baseline-0.0025",
+      "drone": 521,
+      "actuatorExactlyReproduced": true,
+      "wallResidualExactlyRecomputed": true
+    },
+    {
+      "trial": "heldout-2002-1000-narrow-baseline-0.0025",
+      "drone": 196,
+      "actuatorExactlyReproduced": true,
+      "wallResidualExactlyRecomputed": true
+    },
+    {
+      "trial": "heldout-2001-5000-wide-baseline-0.0025",
+      "drone": 1855,
+      "actuatorExactlyReproduced": true,
+      "wallResidualExactlyRecomputed": true
+    }
+  ]
+}

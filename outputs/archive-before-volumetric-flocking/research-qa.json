@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-11",
+  "scope": "Milestone 10 Boids correction",
+  "numericalChecks": [
+    {
+      "name": "Changing a drone outside the neighborhood leaves steering unchanged",
+      "passed": true
+    },
+    {
+      "name": "Reordering drone IDs leaves physical steering unchanged",
+      "passed": true
+    },
+    {
+      "name": "Separation pushes away from a nearby drone",
+      "passed": true
+    },
+    {
+      "name": "Alignment follows local neighbor velocity",
+      "passed": true
+    },
+    {
+      "name": "Cohesion points toward local centroid",
+      "passed": true
+    },
+    {
+      "name": "Goal-only removes all social terms",
+      "passed": true
+    },
+    {
+      "name": "45 unique cases; all three controllers share initial states",
+      "passed": true
+    },
+    {
+      "name": "Boids and goal-only have no reservation schedule or capacity",
+      "passed": true
+    },
+    {
+      "name": "Displayed Boids runs retain passage/stop counts under integration refinement, final differences under 1 cm",
+      "passed": false
+    },
+    {
+      "name": "Preserved scheduler reproduces prior implementation exactly",
+      "passed": true
+    },
+    {
+      "name": "Replays retain exact stop/end time and all 50 states",
+      "passed": true
+    }
+  ],
+  "browser": {
+    "url": "http://127.0.0.1:8875/outputs/research-results.html",
+    "verified": [
+      "Two Three.js canvases render actual drone records",
+      "Wide seed201 endpoint scheduler35/50, Boids50/50",
+      "Wide social-rules-off endpoint50/50",
+      "Narrow seed201 endpoint goal-only6/50 contact stop, Boids21/50 with refinement warning",
+      "Playback advances shared time",
+      "Neighbor checkbox and comparison selectors operate",
+      "Mobile390px: no horizontal overflow, canvases318x320",
+      "Desktop preview visually inspected"
+    ],
+    "consoleErrorsOrWarnings": []
+  },
+  "status": "Correction delivered; research ongoing. Narrow numerical convergence criterion failed."
+}

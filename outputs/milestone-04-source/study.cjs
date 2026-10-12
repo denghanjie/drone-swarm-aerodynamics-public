@@ -1,0 +1,21 @@
+'use strict';
+const fs=require('fs'),path=require('path');const {Worker,isMainThread,parentPort,workerData}=require('worker_threads');const {run}=require('./sim.cjs');
+if(!isMainThread){for(const {index,config} of workerData)parentPort.postMessage({index,result:run(config)});}
+else{(async()=>{
+ const out=path.resolve(__dirname,'..'),baseline=JSON.parse(fs.readFileSync(path.join(out,'milestone-03-study.json'))).results;
+ const results=Array(baseline.length),tasks=baseline.map((r,index)=>({index,config:{...r.config,controller:'scheduled'}}));let done=0;
+ await Promise.all(Array.from({length:4},(_,k)=>new Promise((resolve,reject)=>{const w=new Worker(__filename,{workerData:tasks.filter((_,i)=>i%4===k)});w.on('message',({index,result})=>{results[index]=result;if(++done%10===0)console.log('Completed scheduled runs',done);});w.on('error',reject);w.on('exit',code=>code?reject(Error('Worker failed '+code)):resolve());})));
+ const paired=results.map((r,i)=>({config:r.config,reactive:baseline[i].metrics,scheduled:r.metrics,validCrossingDifference:r.metrics.validCrossings-baseline[i].metrics.validCrossings}));
+ fs.writeFileSync(path.join(out,'milestone-04-study.json'),JSON.stringify({description:'Paired reactive and centrally scheduled passage, same 120 starting conditions; no aerodynamic interactions',results,paired},null,2));
+ const oldDemos=JSON.parse(fs.readFileSync(path.join(out,'milestone-03-source/demo.json')));
+ const demo=oldDemos.map(r=>({width:r.config.width,reactive:r,scheduled:run({...r.config,record:true,controller:'scheduled'})}));
+ fs.writeFileSync(path.join(__dirname,'demo.json'),JSON.stringify(demo));
+ const checks=[];checks.push({name:'All 120 paired initial conditions exactly identical',passed:results.every((r,i)=>JSON.stringify(r.initial)===JSON.stringify(baseline[i].initial))});
+ checks.push({name:'All output numeric metrics finite',passed:results.every(r=>Object.values(r.metrics).every(v=>typeof v!=='number'||Number.isFinite(v)))});
+ checks.push({name:'Displayed replay frames contain all 50 drones and reach reported end',passed:demo.every(p=>[p.reactive,p.scheduled].every(r=>r.frames.every(f=>f.length===351)&&Math.abs(r.frames.at(-1)[0]-r.metrics.simulatedSeconds)<1e-6))});
+ const refinement=[];
+ for(const pair of demo){const a=pair.scheduled,b=run({...a.config,dt:.005}),c=run({...a.config,dt:.0025});const delta=(x,y)=>Math.max(...x.final.map((p,i)=>Math.hypot(...p.map((v,k)=>v-y.final[i][k]))));refinement.push({width:pair.width,coarse:a.metrics,half:b.metrics,quarter:c.metrics,coarseHalfPositionMax:delta(a,b),halfQuarterPositionMax:delta(b,c),crossingTimeDifferenceMax:Math.max(...b.crossings.map((v,i)=>v!==null&&c.crossings[i]!==null?Math.abs(v-c.crossings[i]):0))});const ref=run({...pair.reactive.config,controller:'reactive'});checks.push({name:'Reactive implementation reproduces saved width '+pair.width+' exemplar',passed:JSON.stringify(ref.metrics)===JSON.stringify(pair.reactive.metrics)&&JSON.stringify(ref.crossings)===JSON.stringify(pair.reactive.crossings)});}
+ checks.push({name:'Three scheduled exemplar refinements preserve counts and stops, with final positions within 1 cm',passed:refinement.every(r=>r.coarse.validCrossings===r.half.validCrossings&&r.half.validCrossings===r.quarter.validCrossings&&r.coarse.stopReason===r.quarter.stopReason&&r.coarseHalfPositionMax<.01&&r.halfQuarterPositionMax<.01)});
+ fs.writeFileSync(path.join(out,'milestone-04-verification.json'),JSON.stringify({checks,refinement,scope:'Numerical verification, not physical validation. Step-size refinement of displayed seed-1 spacing-0.6 speed-0.5 exemplars only.'},null,2));
+ const columns=['width','spacing','speed','seed','reactivePassed','scheduledPassed','reactiveMinSep','scheduledMinSep','reactiveStop','scheduledStop','scheduledInvalid','scheduledClosePairs'];const rows=paired.map(p=>[p.config.width,p.config.spacing,p.config.speed,p.config.seed,p.reactive.validCrossings,p.scheduled.validCrossings,p.reactive.minSeparation,p.scheduled.minSeparation,p.reactive.stopReason??'',p.scheduled.stopReason??'',p.scheduled.invalidCrossingDrones,p.scheduled.closePairs]);fs.writeFileSync(path.join(out,'milestone-04-study.csv'),[columns,...rows].map(r=>r.join(',')).join('\n')+'\n');console.log(JSON.stringify({checks,refinement},null,2));
+})().catch(e=>{console.error(e);process.exitCode=1;});}

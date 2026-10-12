@@ -1,0 +1,41 @@
+{
+  "purpose": "Post-hoc diagnostic of the3 failed primary-candidate integration-step checks. Original1cm failures remain failures. Not a fresh holdout or a changed acceptance threshold.",
+  "cases": [
+    {
+      "stage": 17,
+      "config": {
+        "seed": 904,
+        "scenario": "tight",
+        "mode": "steering-only"
+      }
+    },
+    {
+      "stage": 17,
+      "config": {
+        "seed": 905,
+        "scenario": "tight",
+        "mode": "steering-only"
+      }
+    },
+    {
+      "stage": 18,
+      "config": {
+        "seed": 1002,
+        "scenario": "tight",
+        "mode": "interior"
+      }
+    }
+  ],
+  "steps": [
+    0.005,
+    0.0025,
+    0.00125
+  ],
+  "method": "Rerun2.5ms to preserve full states and verify exact reproducibility of saved fine metrics. Then integrate1.25ms with the same10ms controller. Compare maximum per-drone terminal Euclidean position difference. No parameter changes.",
+  "hashes": {
+    "milestone-17-source/sim.cjs": "496da95a518b6bc4b9d5b76dbdcf507c1f9ed6a81e823705f35ebd6644216c15",
+    "milestone-17-source/continuous.cjs": "22aa93e61b6b8c3d8782f3131e3927e89050a24332bc1806b9379c0414b608cd",
+    "milestone-18-source/sim.cjs": "2f2c62060f78f26f5bb35813adb9dc0acfb543e42c30137fcb0ca592e676b73b",
+    "milestone-18-source/continuous.cjs": "24abcd64ced6abeaa8f862d8200aaaee7b7c5b9d65be55d10a7ecbbfaeb3c922"
+  }
+}

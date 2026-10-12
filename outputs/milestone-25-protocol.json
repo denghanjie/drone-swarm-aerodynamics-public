@@ -1,0 +1,136 @@
+{
+  "created": "2026-10-12T00:02:18.700Z",
+  "jobs": [
+    {
+      "id": "audit-1302-200-0.00125",
+      "kind": "post-hoc refinement",
+      "seed": 1302,
+      "count": 200,
+      "duration": 120,
+      "dt": 0.00125
+    },
+    {
+      "id": "timing-1-50",
+      "kind": "timing",
+      "rep": 1,
+      "seed": 1401,
+      "count": 50,
+      "duration": 2,
+      "dt": 0.005
+    },
+    {
+      "id": "timing-1-200",
+      "kind": "timing",
+      "rep": 1,
+      "seed": 1401,
+      "count": 200,
+      "duration": 2,
+      "dt": 0.005
+    },
+    {
+      "id": "timing-1-1000",
+      "kind": "timing",
+      "rep": 1,
+      "seed": 1401,
+      "count": 1000,
+      "duration": 2,
+      "dt": 0.005
+    },
+    {
+      "id": "timing-1-5000",
+      "kind": "timing",
+      "rep": 1,
+      "seed": 1401,
+      "count": 5000,
+      "duration": 2,
+      "dt": 0.005
+    },
+    {
+      "id": "timing-2-5000",
+      "kind": "timing",
+      "rep": 2,
+      "seed": 1401,
+      "count": 5000,
+      "duration": 2,
+      "dt": 0.005
+    },
+    {
+      "id": "timing-2-1000",
+      "kind": "timing",
+      "rep": 2,
+      "seed": 1401,
+      "count": 1000,
+      "duration": 2,
+      "dt": 0.005
+    },
+    {
+      "id": "timing-2-200",
+      "kind": "timing",
+      "rep": 2,
+      "seed": 1401,
+      "count": 200,
+      "duration": 2,
+      "dt": 0.005
+    },
+    {
+      "id": "timing-2-50",
+      "kind": "timing",
+      "rep": 2,
+      "seed": 1401,
+      "count": 50,
+      "duration": 2,
+      "dt": 0.005
+    },
+    {
+      "id": "timing-3-200",
+      "kind": "timing",
+      "rep": 3,
+      "seed": 1401,
+      "count": 200,
+      "duration": 2,
+      "dt": 0.005
+    },
+    {
+      "id": "timing-3-5000",
+      "kind": "timing",
+      "rep": 3,
+      "seed": 1401,
+      "count": 5000,
+      "duration": 2,
+      "dt": 0.005
+    },
+    {
+      "id": "timing-3-50",
+      "kind": "timing",
+      "rep": 3,
+      "seed": 1401,
+      "count": 50,
+      "duration": 2,
+      "dt": 0.005
+    },
+    {
+      "id": "timing-3-1000",
+      "kind": "timing",
+      "rep": 3,
+      "seed": 1401,
+      "count": 1000,
+      "duration": 2,
+      "dt": 0.005
+    }
+  ],
+  "sourceHashes": {
+    "study.cjs": "a1185bff9118922979511c5ad6a6290ed607ceebf3e9b600f2a4c099a7ca05f2",
+    "sim.cjs": "f6f6e8df0384dc69ac3bd2f83893601cffbd6415c0742e8fd135aa2e94806e55",
+    "grid.cjs": "86ba87da726998d81a562b6f52dc3fa5742ee51aa0f659bc6ad389ddfac89efe",
+    "geometry.cjs": "e209e492fc523ab3c0c7df62745fb0d3dd7204f35e53309938a19d7895ed3d4f",
+    "factory.cjs": "8ea0d8784accfc039fee9ca2a2c0a86dc8e502b6d1003e4de54a8df8a999cc22",
+    "../step02c-source/physics.cjs": "0c46c9beb4e831c621658f6600c074f97c95966de07f5000eb64aa476a443fa1"
+  },
+  "purpose": "Post-hoc numerical audit and serial short-window performance of genuine local Boids at50/200/1000/5000. Not completed large-flock factory missions.",
+  "audit": "Compare200-drone seed1302 at2.5ms versus1.25ms: identical finish count/stop, end difference<.01s and max endpoint difference<.01m. Previous5→2.5ms failure remains in record. No parameter tuning.",
+  "timing": "Three2s repeats per count, each fresh Node process with0.1s same-count warmup. Fixed seed1401 and physics5ms. No concurrent numerical jobs. Wall time includes initialization, steering, RK4, safety and measurements/recording; excludes JSON serialization and browser rendering. OS/background work may affect timing. Identical repeats measure timing variation, not independent navigation replicates.",
+  "initialization": "Same0.75m-spaced jittered3D lattice as milestone24; initial volume grows with count, cross-section capped16×9. Not fixed-volume density scaling.",
+  "sourceChange": "Only adds timing.initialization after initial states/clones are created. Numerical instructions and sampling unchanged.",
+  "airflow": "off",
+  "observation": "ideal"
+}

@@ -1,0 +1,189 @@
+{
+  "scope": "Planar numerical verification; no physical validation",
+  "parameters": {
+    "m": 0.027,
+    "g": 9.81,
+    "I": 0.000014,
+    "lever": 0.028,
+    "motorTau": 0.04,
+    "tiltMax": 0.2617993877991494,
+    "controlDt": 0.01,
+    "duration": 12
+  },
+  "checks": [
+    {
+      "name": "Hover equilibrium for 12 seconds",
+      "pass": true
+    },
+    {
+      "name": "Free fall agrees with z=z0-gt²/2",
+      "pass": true
+    },
+    {
+      "name": "Fixed tilt gives expected horizontal and vertical acceleration",
+      "pass": true
+    },
+    {
+      "name": "Motor step agrees with first-order exponential response",
+      "pass": true
+    },
+    {
+      "name": "Differential thrust has expected angular acceleration",
+      "pass": true
+    },
+    {
+      "name": "hover, ratio 2.25: finite states and thrust bounds",
+      "pass": true
+    },
+    {
+      "name": "hover, ratio 1.1: finite states and thrust bounds",
+      "pass": true
+    },
+    {
+      "name": "move, ratio 2.25: finite states and thrust bounds",
+      "pass": true
+    },
+    {
+      "name": "move, ratio 1.1: finite states and thrust bounds",
+      "pass": true
+    },
+    {
+      "name": "climb, ratio 2.25: finite states and thrust bounds",
+      "pass": true
+    },
+    {
+      "name": "climb, ratio 1.1: finite states and thrust bounds",
+      "pass": true
+    },
+    {
+      "name": "Move accelerates and then brakes",
+      "pass": true
+    },
+    {
+      "name": "Reduced thrust causes saturation in climb",
+      "pass": true
+    },
+    {
+      "name": "Timestep convergence move 2.25",
+      "pass": true
+    },
+    {
+      "name": "Timestep convergence move 1.1",
+      "pass": true
+    },
+    {
+      "name": "Timestep convergence climb 2.25",
+      "pass": true
+    },
+    {
+      "name": "Timestep convergence climb 1.1",
+      "pass": true
+    }
+  ],
+  "runs": {
+    "hover-2.25": {
+      "finalX": 0,
+      "finalZ": 1,
+      "finalVx": 0,
+      "maxAltitudeError": 0,
+      "maxTiltDeg": 0,
+      "maxThrustWeight": 1,
+      "saturationFraction": 0
+    },
+    "hover-1.1": {
+      "finalX": 0,
+      "finalZ": 1,
+      "finalVx": 0,
+      "maxAltitudeError": 0,
+      "maxTiltDeg": 0,
+      "maxThrustWeight": 1,
+      "saturationFraction": 0
+    },
+    "move-2.25": {
+      "finalX": 1.9999999952151728,
+      "finalZ": 1.000000005348262,
+      "finalVx": -1.610813884960719e-8,
+      "maxAltitudeError": 0.0003427845006712671,
+      "maxTiltDeg": 5.8615608952157086,
+      "maxThrustWeight": 1.0057154947161024,
+      "saturationFraction": 0
+    },
+    "move-1.1": {
+      "finalX": 1.9999999952151728,
+      "finalZ": 1.000000005348262,
+      "finalVx": -1.610813884960719e-8,
+      "maxAltitudeError": 0.0003427845006712671,
+      "maxTiltDeg": 5.8615608952157086,
+      "maxThrustWeight": 1.0057154947161024,
+      "saturationFraction": 0
+    },
+    "climb-2.25": {
+      "finalX": 0,
+      "finalZ": 2.9999999997391793,
+      "finalVx": 0,
+      "maxAltitudeError": 2,
+      "maxTiltDeg": 0,
+      "maxThrustWeight": 1.50955083413626,
+      "saturationFraction": 0
+    },
+    "climb-1.1": {
+      "finalX": 0,
+      "finalZ": 2.9999999968930404,
+      "finalVx": 0,
+      "maxAltitudeError": 2,
+      "maxTiltDeg": 0,
+      "maxThrustWeight": 1.0999999999999992,
+      "saturationFraction": 0.11833333333333264
+    }
+  },
+  "convergence": [
+    {
+      "scenario": "move",
+      "ratio": 2.25,
+      "maxPositionDelta": 2.2224838917872516e-9,
+      "maxSpeedDelta": 1.832697152717003e-8,
+      "maxAngleDelta": 1.952081112033266e-8,
+      "finalX": [
+        1.9999999952151728,
+        1.9999999952151686,
+        1.9999999952151533
+      ]
+    },
+    {
+      "scenario": "move",
+      "ratio": 1.1,
+      "maxPositionDelta": 2.2224838917872516e-9,
+      "maxSpeedDelta": 1.832697152717003e-8,
+      "maxAngleDelta": 1.952081112033266e-8,
+      "finalX": [
+        1.9999999952151728,
+        1.9999999952151686,
+        1.9999999952151533
+      ]
+    },
+    {
+      "scenario": "climb",
+      "ratio": 2.25,
+      "maxPositionDelta": 1.7015134634590368e-8,
+      "maxSpeedDelta": 1.6554994015927083e-7,
+      "maxAngleDelta": 0,
+      "finalX": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "scenario": "climb",
+      "ratio": 1.1,
+      "maxPositionDelta": 5.985611561953874e-9,
+      "maxSpeedDelta": 3.248089830779066e-8,
+      "maxAngleDelta": 0,
+      "finalX": [
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

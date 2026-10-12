@@ -1,0 +1,6 @@
+'use strict';
+const fs=require('fs'),path=require('path');const root=path.resolve(__dirname,'..');
+const coarse=JSON.parse(fs.readFileSync(path.join(__dirname,'run-1103-tight-0.1-predict-0.0025.json'))),fine=JSON.parse(fs.readFileSync(path.join(__dirname,'audit-run-1103-tight-0.1-predict-0.000625.json')));
+const samples=coarse.frames.map((f,i)=>{const g=fine.frames[i];if(Math.abs(f[0]-g[0])>1e-9)throw Error('Frame time mismatch');const d=Array.from({length:50},(_,j)=>Math.hypot(...[0,1,2].map(k=>f[1+7*j+k]-g[1+7*j+k])));return {t:f[0],maxPositionDifference:Math.max(...d),drone:d.indexOf(Math.max(...d)),rmsPositionDifference:Math.sqrt(d.reduce((s,v)=>s+v*v,0)/50)};});
+const out={description:'Post-hoc trajectory comparison using exact saved0.1s frames.2.5ms versus0.625ms. This locates observable divergence, not its causal controller branch.',firstAbove:Object.fromEntries([1e-6,1e-4,.001,.01,.1].map(x=>[x,samples.find(s=>s.maxPositionDifference>x)||null])),maximum:samples.reduce((a,b)=>a.maxPositionDifference>b.maxPositionDifference?a:b),samples};
+fs.writeFileSync(path.join(root,'milestone-22-refinement-trace.json'),JSON.stringify(out,null,2));console.log(JSON.stringify({firstAbove:out.firstAbove,maximum:out.maximum}));

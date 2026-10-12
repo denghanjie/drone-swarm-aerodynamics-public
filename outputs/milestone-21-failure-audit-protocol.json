@@ -1,0 +1,44 @@
+{
+  "created": "2026-10-11T14:33:24.235Z",
+  "purpose": "Post-hoc follow-up to first contact stop in fresh1103 tight100ms. Regenerate exact baseline/contact replays and refine both cases. No parameter changes. These4 runs are additional, not part of the preregistered8 refinements.",
+  "jobs": [
+    {
+      "seed": 1103,
+      "scenario": "tight",
+      "mode": "interior",
+      "observationDelay": 0,
+      "dt": 0.0025,
+      "record": true
+    },
+    {
+      "seed": 1103,
+      "scenario": "tight",
+      "mode": "interior",
+      "observationDelay": 0,
+      "dt": 0.00125,
+      "record": false
+    },
+    {
+      "seed": 1103,
+      "scenario": "tight",
+      "mode": "interior",
+      "observationDelay": 0.1,
+      "dt": 0.0025,
+      "record": true
+    },
+    {
+      "seed": 1103,
+      "scenario": "tight",
+      "mode": "interior",
+      "observationDelay": 0.1,
+      "dt": 0.00125,
+      "record": false
+    }
+  ],
+  "hashes": {
+    "sim.cjs": "85b05caf405e8cbf4665845231aac2d2c61977bf73122161b5936090a7c534ca",
+    "continuous.cjs": "24abcd64ced6abeaa8f862d8200aaaee7b7c5b9d65be55d10a7ecbbfaeb3c922",
+    "soft-filter.cjs": "94de3be41161aafb070826e78a7e11f2dc553a77b8463a6796b324da8bdcbaa1",
+    "audit-failure.cjs": "7e96155e5fd893590dad76bbff99638876ebf788db74c79dd0a3fb26d5aaff04"
+  }
+}

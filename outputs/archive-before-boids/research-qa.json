@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-11",
+  "scope": "Numerical and browser verification of milestones 7\u20139 and final dashboard; not physical validation. Prior stages remain preserved, not all rerun today.",
+  "numerical": {
+    "milestone7": [
+      {
+        "name": "120 complete unique cases, finite metrics",
+        "passed": true
+      },
+      {
+        "name": "Both controllers use identical initial positions and errors",
+        "passed": true
+      },
+      {
+        "name": "Closest candidate run at each width refined: unchanged passage/invalid/stop, final positions within 1 cm",
+        "passed": true
+      }
+    ],
+    "milestone8": [
+      {
+        "name": "Four CPU/WGSL size comparisons satisfy frozen tolerances",
+        "passed": true
+      }
+    ],
+    "milestone9": [
+      {
+        "name": "Browser CPU 50-drone endpoint agrees with prior Node reference within 10 micrometers (Float32 input and rounded replay)",
+        "passed": true,
+        "value": 6.351975516917543e-07
+      },
+      {
+        "name": "All 24 timed loop runs finish the full horizon with finite timings",
+        "passed": true
+      },
+      {
+        "name": "All four CPU/GPU agreement checks pass",
+        "passed": true
+      },
+      {
+        "name": "All recorded frames have every vehicle and endpoints 0 and 1 second",
+        "passed": true
+      }
+    ],
+    "spatialGrid": {
+      "randomAndSweptChecks": 101,
+      "passed": true
+    }
+  },
+  "browser": {
+    "engine": "Browser and GPU identity withheld in public export",
+    "flows": [
+      "Milestone 7 profile/width selectors, timeline endpoints and 30 s comparison",
+      "Milestone 8 real WebGPU execution, saved result reload, count/backend/end-time selection",
+      "Milestone 9 full study, rendering study, 5000 count/backend/end-time and camera controls",
+      "Final directly mounted Three.js dashboard: width/profile/30 s comparison"
+    ],
+    "responsive": "Final dashboard checked at 1440x1000 and 390x844; two mobile canvases 318x320; document width 390 with no horizontal overflow. Milestone 9 table uses local horizontal scroll. Milestones 7 and 8 also inspected at narrower desktop panel width.",
+    "finalConsoleErrors": 0,
+    "historicalIssue": "Initial iframe dashboard produced two MutationObserver console errors during frame navigation/reload. Its source contained no MutationObserver; origin not established. Replaced with direct mounting; fresh final tab had no console errors. Initial HTML preserved.",
+    "artifacts": [
+      "milestone-07-preview.png",
+      "milestone-08-preview.png",
+      "milestone-09-preview.png",
+      "research-final-preview.png"
+    ]
+  },
+  "limitations": [
+    "One browser/device, short compute horizon, only selected replays inspected",
+    "No independent measured aerodynamic validation",
+    "No long-duration 5000-drone obstacle passage",
+    "Rendering and compute measured separately; no total interactive FPS claim"
+  ],
+  "localLinks": {
+    "checked": 36,
+    "missing": []
+  }
+}

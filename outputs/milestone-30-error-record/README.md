@@ -1,0 +1,5 @@
+# Aborted implementation-error attempt
+
+The wall normals supplied by geometry can have 17 elements (the non-spatial entries are zero). The first repair solver reduced all entries against a three-element vector, producing NaN. Candidate runs stopped as vehicle model limits immediately. Diagnostics also contained NaN serialized as null, including for baseline trials. This batch was interrupted and is not evidence about controller effectiveness. Source and attempted outputs are preserved. Revision 2 limits dot products to spatial components, adds full-interface checks, and uses fresh evaluation seeds 1901/1902. No old frozen numerical source was modified.
+
+[Trial accounting](trial-accounting.json) lists all ten originally planned cases: three completed but invalid executions, two interrupted partial executions and five not started. None contributes to the corrected controller comparison. The first test suite checked the solver in isolation and the unchanged baseline; it lacked a candidate integration test through the actual geometry interface. The corrected suite adds those tests at50/1,000/5,000drones and a17-component-normal regression.

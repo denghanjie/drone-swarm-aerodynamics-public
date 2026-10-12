@@ -1,0 +1,83 @@
+{
+  "checks": [
+    {
+      "name": "No self inflow",
+      "pass": true
+    },
+    {
+      "name": "Receiver above source has no downward-wake inflow",
+      "pass": true
+    },
+    {
+      "name": "Zero inflow leaves thrust unchanged",
+      "pass": true
+    },
+    {
+      "name": "Beyond cutoff yields zero",
+      "pass": true
+    },
+    {
+      "name": "Centered receiver has more inflow than offset receiver",
+      "pass": true
+    },
+    {
+      "name": "Near wake is explicitly unsupported",
+      "pass": true
+    },
+    {
+      "name": "Receiver power identity residual below 1e-12 W",
+      "pass": true
+    },
+    {
+      "name": "Half-width contour gives half centerline speed",
+      "pass": true
+    },
+    {
+      "name": "off binary frame length",
+      "pass": true
+    },
+    {
+      "name": "sum-force binary frame length",
+      "pass": true
+    },
+    {
+      "name": "sum-rotor binary frame length",
+      "pass": true
+    },
+    {
+      "name": "rss-rotor binary frame length",
+      "pass": true
+    },
+    {
+      "name": "Pair decomposition matches all valid reconstructed field frames",
+      "pass": true
+    }
+  ],
+  "powerResidualW": 1.1102230246251565e-16,
+  "counts": {
+    "demo": 1708,
+    "cases": 4,
+    "frames": [
+      {
+        "mode": "off",
+        "total": 181,
+        "domainFailures": 0
+      },
+      {
+        "mode": "sum-force",
+        "total": 15,
+        "domainFailures": 0
+      },
+      {
+        "mode": "sum-rotor",
+        "total": 9,
+        "domainFailures": 0
+      },
+      {
+        "mode": "rss-rotor",
+        "total": 10,
+        "domainFailures": 0
+      }
+    ]
+  }
+}

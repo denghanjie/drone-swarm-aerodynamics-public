@@ -1,0 +1,6 @@
+const fs=require('fs'),assert=require('assert/strict'),S=require('./sim.cjs'),R=require('../milestone-19-source/sim.cjs');
+const config={seed:19020,count:6,duration:2,mode:'soft',scenario:'tight',record:false},a=S.run(config),b=R.run(config);assert.deepEqual(a.final,b.final);assert.deepEqual(a.metrics,b.metrics);
+const v=S.initial(19020,20).map(s=>{s[0]-=2;return s;});let permutation=0,remote=0;
+for(let i=0;i<20;i++){const a=S.steer(i,v,0,'soft','tight').velocity,b=S.steer(19-i,v.slice().reverse(),0,'soft','tight').velocity;permutation=Math.max(permutation,Math.hypot(...a.map((x,k)=>x-b[k])));const far=v.map(s=>s.slice());far.push([...v[0]]);far[20][0]+=100;const c=S.steer(i,far,0,'soft','tight').velocity;remote=Math.max(remote,Math.hypot(...a.map((x,k)=>x-c[k])));}
+assert(permutation<1e-7);assert.equal(remote,0);
+const checks=[{name:'Unmodified soft baseline remains exactly equal to19 over6-body2s run',passed:true},{name:'Permutation of agents gives equivalent soft commands',passed:true,error:permutation},{name:'Adding unseen distant drone leaves commands unchanged',passed:true,error:remote}];fs.writeFileSync(require('path').join(__dirname,'../milestone-20-control-checks.json'),JSON.stringify({checks},null,2));console.log(checks);

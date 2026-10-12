@@ -1,0 +1,155 @@
+{
+  "jobs": [
+    {
+      "seed": 801,
+      "scenario": "slalom",
+      "mode": "boids",
+      "record": true
+    },
+    {
+      "seed": 801,
+      "scenario": "slalom",
+      "mode": "joint",
+      "record": true
+    },
+    {
+      "seed": 801,
+      "scenario": "staggered",
+      "mode": "boids",
+      "record": true
+    },
+    {
+      "seed": 801,
+      "scenario": "staggered",
+      "mode": "joint",
+      "record": true
+    },
+    {
+      "seed": 801,
+      "scenario": "tight",
+      "mode": "boids",
+      "record": true
+    },
+    {
+      "seed": 801,
+      "scenario": "tight",
+      "mode": "joint",
+      "record": true
+    },
+    {
+      "seed": 802,
+      "scenario": "slalom",
+      "mode": "boids",
+      "record": false
+    },
+    {
+      "seed": 802,
+      "scenario": "slalom",
+      "mode": "joint",
+      "record": false
+    },
+    {
+      "seed": 802,
+      "scenario": "staggered",
+      "mode": "boids",
+      "record": false
+    },
+    {
+      "seed": 802,
+      "scenario": "staggered",
+      "mode": "joint",
+      "record": false
+    },
+    {
+      "seed": 802,
+      "scenario": "tight",
+      "mode": "boids",
+      "record": false
+    },
+    {
+      "seed": 802,
+      "scenario": "tight",
+      "mode": "joint",
+      "record": false
+    },
+    {
+      "seed": 803,
+      "scenario": "slalom",
+      "mode": "boids",
+      "record": false
+    },
+    {
+      "seed": 803,
+      "scenario": "slalom",
+      "mode": "joint",
+      "record": false
+    },
+    {
+      "seed": 803,
+      "scenario": "staggered",
+      "mode": "boids",
+      "record": false
+    },
+    {
+      "seed": 803,
+      "scenario": "staggered",
+      "mode": "joint",
+      "record": false
+    },
+    {
+      "seed": 803,
+      "scenario": "tight",
+      "mode": "boids",
+      "record": false
+    },
+    {
+      "seed": 803,
+      "scenario": "tight",
+      "mode": "joint",
+      "record": false
+    },
+    {
+      "seed": 601,
+      "scenario": "tight",
+      "mode": "joint",
+      "record": false
+    },
+    {
+      "seed": 602,
+      "scenario": "tight",
+      "mode": "joint",
+      "record": false
+    },
+    {
+      "seed": 603,
+      "scenario": "tight",
+      "mode": "joint",
+      "record": false
+    }
+  ],
+  "parameters": {
+    "radius": 1.8,
+    "separationRadius": 0.85,
+    "separation": 1.5,
+    "alignment": 2,
+    "cohesion": 0.22,
+    "cruise": 0.65,
+    "maxSpeed": 0.9,
+    "steeringHorizon": 0.4
+  },
+  "filter": {
+    "margin": 0.25,
+    "lookahead": 1.2,
+    "approach": 1.8,
+    "exit": 0.5
+  },
+  "joint": {
+    "neighborMargin": 0.38,
+    "neighborHorizon": 1.2,
+    "iterations": 6,
+    "range": 1.5
+  },
+  "sourceSHA256": "d44f9f038b284dcfd4e8f7a3f1521d653597e8c830fb55fa6ab7c98e51d4fcb5",
+  "design": "Three old tight-course regression seeds;18 matched fresh cases801–803. Obstacle-only candidate failed; joint candidate designed from those results, then frozen before fresh seeds801–803.",
+  "scope": "Velocity-command clearance filter after unchanged Boids steering; own state, static map and local neighbor states. Rigid-body plant unchanged. Not a formal safety guarantee; airflow off, ideal observations."
+}

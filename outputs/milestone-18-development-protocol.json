@@ -1,0 +1,39 @@
+{
+  "hypothesis": "Residual isolated drones settle at the same lateral boundary used by the clearance filter. Steering10cm inside that boundary may avoid the stall without changing filtering, physical envelope or assigning slots.",
+  "jobs": [
+    {
+      "seed": 801,
+      "dt": 0.005,
+      "scenario": "tight",
+      "mode": "interior",
+      "record": true
+    },
+    {
+      "seed": 801,
+      "dt": 0.0025,
+      "scenario": "tight",
+      "mode": "interior",
+      "record": false
+    },
+    {
+      "seed": 802,
+      "dt": 0.005,
+      "scenario": "tight",
+      "mode": "interior",
+      "record": true
+    },
+    {
+      "seed": 802,
+      "dt": 0.0025,
+      "scenario": "tight",
+      "mode": "interior",
+      "record": false
+    }
+  ],
+  "change": "Only map steering edge: aperture half-width minus0.35m instead of0.25m. Original filter margin remains0.25m. No retention added.",
+  "acceptance": "Both development seeds:50 completions, no stop, matching counts/stop and maximum endpoint discrepancy<1cm. If it fails, preserve failure; do not silently tune.",
+  "hashes": {
+    "sim.cjs": "2f2c62060f78f26f5bb35813adb9dc0acfb543e42c30137fcb0ca592e676b73b",
+    "continuous.cjs": "24abcd64ced6abeaa8f862d8200aaaee7b7c5b9d65be55d10a7ecbbfaeb3c922"
+  }
+}

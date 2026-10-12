@@ -1,0 +1,89 @@
+# Drone Swarm Aerodynamics — Public Research Snapshot
+
+Research into **which approximations of mutual aerodynamic interaction preserve useful physical predictions while enabling locally controlled 3D drone flocks within browser compute budgets**, scaling toward 5,000 drones using WebGPU.
+
+This is an ongoing research record, including unsuccessful experiments. The current numerical pipeline runs offline on CPU; Three.js displays recorded trajectories and reconstructed airflow. A validated 5,000-drone, airflow-coupled WebGPU simulation has **not** been demonstrated.
+
+![Visible airflow in the milestone 32 lab](outputs/milestone-32-flock.png)
+
+## Start here
+
+- [Research direction and assessment of proposed trade-offs](outputs/research-tradeoff-assessment.md)
+- [Original eight-step roadmap](outputs/research-roadmap.md)
+- [Current research status](outputs/research-final-report.md)
+- [Latest milestone: visible airflow and numerical diagnosis](outputs/milestone-32-summary.md)
+- [Stage history, including failures](outputs/research-stage-log.md)
+- [Physical-validation requirements](outputs/research-physical-validation-gate-2026-10-12.md)
+
+## View the 3D lab
+
+Clone this repository, then run from its root:
+
+```sh
+python3 -m http.server 8875 --bind 127.0.0.1
+```
+
+Open <http://127.0.0.1:8875/outputs/research-results.html>. The latest airflow lab and its small demonstration dataset are included in Git. Earlier large-flock replays require the evidence bundle below. The static server binds only to this computer. GitHub does not execute these HTML simulations in its file viewer.
+
+The latest lab shows historical 50-drone coupled recordings and a two-drone explanation. Plumes represent the modeled mean wake; moving dots indicate direction, not resolved fluid trajectories. Numeric fields are reconstructed at exact saved poses, not measured or historically held loads.
+
+## Restore the complete research evidence
+
+Requirements: Python **3.9+** and GitHub CLI (`gh`) for automatic downloads. You can also download the public release asset manually without GitHub CLI. Node.js is needed only to rerun numerical experiments. Some older plotting stages also require Matplotlib; see their saved requirements.
+
+```sh
+gh auth login
+python3 scripts/fetch-research-data.py
+python3 outputs/research-reproduce.py
+```
+
+Large JSON records and binary trajectories are stored in the versioned `v0.1.0-public` release, not Git history. The [bundle inventory](data/research-data-manifest.json) pins each file and the compressed archive with SHA-256. The restore helper preserves differing local files rather than overwriting them. Allow approximately 2 GB for the restored evidence, plus download/extraction space.
+
+For a manually downloaded [release asset](https://github.com/denghanjie/drone-swarm-aerodynamics-public/releases/tag/v0.1.0-public):
+
+```sh
+python3 scripts/fetch-research-data.py --archive /path/to/research-data-v0.1.0-public.tar.gz
+```
+
+The public `outputs/research-manifest.json` was regenerated after documented metadata sanitization: verify it after restoring the bundle. Running its verifier on a source-only clone will correctly report missing large files.
+
+## Reproduce the latest experiments
+
+After restoring all evidence:
+
+```sh
+python3 outputs/research-reproduce.py --stage 32 --node node
+```
+
+This first verifies the saved snapshot, copies it into a new `work/reproduction-*` directory, and reruns the six bounded numerical continuations, airflow-data generation and reporting. It does not overwrite the original experiment files. The copied tree requires additional disk space. Full earlier stages can take hours; select them explicitly using `--help`.
+
+Quick evidence verification without running experiments:
+
+```sh
+python3 scripts/fetch-research-data.py --verify-only
+python3 outputs/research-reproduce.py
+```
+
+## Current findings and limits
+
+- Local 3D Boids plus shared route guidance and the wall-priority controller completed the prescribed missions with up to 5,000 drones **with airflow off**.
+- All three milestone 31 trajectory-refinement checks failed the frozen 1 cm criterion. Passage success does not establish accurate trajectories or general safety.
+- Milestone 32 isolated sensitivity to inherited state differences in one selected interval. It is a diagnosis, not a controller fix or proof of chaos.
+- Corrected exploratory wake coupling exists. Receiver response, overlapping wakes and real-flight accuracy still need independent validation. Historical coupled failures remain recorded.
+- The intended contribution is a measured accuracy–computation trade-off. Novelty, physical validity, low-end hardware feasibility and real-time WebGPU performance remain unestablished.
+
+## Repository structure
+
+|Path|Contents|
+|---|---|
+|`outputs/`|Reports, protocols, numerical source snapshots, Three.js labs and retained results|
+|`outputs/milestone-*-source/`|Versioned experiment implementations and per-run records|
+|`outputs/archive-before-*/`|Historical delivery snapshots; standalone live labs are at `outputs/milestone-*-lab.html`|
+|`data/research-data-manifest.json`|Inventory and checksums of release-bundled evidence|
+|`scripts/`|Evidence packaging and verified restoration|
+|`docs/`|Repository packaging/provenance notes|
+|`work/`|Ignored local scratch files, installed plotting dependencies and reproductions|
+
+This is a sanitized export with fresh Git history. Local machine paths, saved browser/GPU/CPU/OS/runtime identity and host-memory/load metadata were removed or replaced. Scientific trajectories and model parameters are preserved. See the [privacy audit](docs/public-release-audit.md) and [change inventory](docs/public-export-changes.json). Older embedded manifests describe the original private records; their hashes may differ for listed sanitized files. The top-level output manifest verifies this public snapshot. Hardware-specific performance comparisons are limited because host specifications are withheld. User chats, authentication files, original private Git history and local environments are excluded.
+
+No open-source license has been selected for original project material. Third-party files retain their existing notices; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

@@ -1,0 +1,65 @@
+{
+  "jobs": [
+    {
+      "seed": 801,
+      "scenario": "tight",
+      "mode": "steering-only",
+      "dt": 0.005,
+      "record": true
+    },
+    {
+      "seed": 801,
+      "scenario": "tight",
+      "mode": "steering-only",
+      "dt": 0.0025,
+      "record": false
+    },
+    {
+      "seed": 801,
+      "scenario": "tight",
+      "mode": "retention-fixed",
+      "dt": 0.005,
+      "record": true
+    },
+    {
+      "seed": 801,
+      "scenario": "tight",
+      "mode": "retention-fixed",
+      "dt": 0.0025,
+      "record": false
+    },
+    {
+      "seed": 802,
+      "scenario": "tight",
+      "mode": "steering-only",
+      "dt": 0.005,
+      "record": true
+    },
+    {
+      "seed": 802,
+      "scenario": "tight",
+      "mode": "steering-only",
+      "dt": 0.0025,
+      "record": false
+    },
+    {
+      "seed": 802,
+      "scenario": "tight",
+      "mode": "retention-fixed",
+      "dt": 0.005,
+      "record": true
+    },
+    {
+      "seed": 802,
+      "scenario": "tight",
+      "mode": "retention-fixed",
+      "dt": 0.0025,
+      "record": false
+    }
+  ],
+  "purpose": "Development comparison of continuous social/map steering with original joint filter, versus additional local retention. Retention zero-neighbor discontinuity corrected. No fresh validation claim.",
+  "hashes": {
+    "sim.cjs": "496da95a518b6bc4b9d5b76dbdcf507c1f9ed6a81e823705f35ebd6644216c15",
+    "continuous.cjs": "22aa93e61b6b8c3d8782f3131e3927e89050a24332bc1806b9379c0414b608cd"
+  }
+}

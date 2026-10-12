@@ -1,0 +1,89 @@
+{
+  "checks": [
+    {
+      "name": "Locality: remote drone does not alter steering",
+      "passed": true
+    },
+    {
+      "name": "Drone ordering leaves steering unchanged",
+      "passed": true
+    },
+    {
+      "name": "Matched full initial states for all modes",
+      "passed": true
+    },
+    {
+      "name": "Boids seed401 dt refinement: no stop and final positions within1cm",
+      "passed": true
+    }
+  ],
+  "refinement": {
+    "difference": 2.09637265320075e-7,
+    "coarse": {
+      "minimum": 0.4979953703603039,
+      "stopReason": null,
+      "end": 30,
+      "maxTiltDegrees": 6.931776872627502,
+      "saturationFraction": 0,
+      "initial": {
+        "t": 0,
+        "order": 0.18032442916090483,
+        "largestFraction": 1,
+        "meanSpeed": 0.3499999999999999,
+        "radius": 1.7646550869076,
+        "heightSpan": 3.8806161708664146,
+        "center": [
+          0.04358797637838869,
+          0.034293912540189916,
+          3.908683634714225
+        ]
+      },
+      "final": {
+        "t": 30,
+        "order": 0.9987174480336887,
+        "largestFraction": 1,
+        "meanSpeed": 0.64789872594949,
+        "radius": 1.4736722412053038,
+        "heightSpan": 2.2432616208371954,
+        "center": [
+          2.71085844589671,
+          1.5671534218556522,
+          5.14740545027437
+        ]
+      }
+    },
+    "fine": {
+      "minimum": 0.4979953670762236,
+      "stopReason": null,
+      "end": 30,
+      "maxTiltDegrees": 6.932021193499884,
+      "saturationFraction": 0,
+      "initial": {
+        "t": 0,
+        "order": 0.18032442916090483,
+        "largestFraction": 1,
+        "meanSpeed": 0.3499999999999999,
+        "radius": 1.7646550869076,
+        "heightSpan": 3.8806161708664146,
+        "center": [
+          0.04358797637838869,
+          0.034293912540189916,
+          3.908683634714225
+        ]
+      },
+      "final": {
+        "t": 30,
+        "order": 0.9987174479688881,
+        "largestFraction": 1,
+        "meanSpeed": 0.6478987262587351,
+        "radius": 1.473672232624033,
+        "heightSpan": 2.243261596557336,
+        "center": [
+          2.7108583552443237,
+          1.5671534217456646,
+          5.147405452930835
+        ]
+      }
+    }
+  }
+}

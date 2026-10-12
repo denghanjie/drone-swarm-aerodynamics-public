@@ -1,0 +1,9 @@
+Draft aerodynamic source only; not yet promoted, tested or used in missions. Uses a prescribed quasi-steady source field normalized to isolated hover weight, rotated with the source attitude. Each receiver's current nominal thrust corresponds to an assumed ideal induced power; inflow reduces effective thrust by the positive root of x^3 + alpha*x - 1 = 0. This is not a calibrated PWM/RPM response. Source fields do not update with effective source thrust, so the model is not a self-consistent momentum/energy solution for the whole flock.
+
+Candidate variants: airflow-off, linear-summed rotor inflow with force only, linear sum with rotor-resolved moments, and a root-sum-square inflow heuristic with moments. Root-sum-square does not simulate turbulent fluctuations. Geometry is the current illustrative 27g vehicle, not a silently matched published experiment.
+
+Wake cutoff/tapers and near-field/tilt exits are explicit in source. The grid radius must be proved to cover all rotated rotor contributions inside the support. Current bounds: downstream <=2.5m, radial <=3*halfWidth(2.5m), receiver rotor offset sqrt(2)*0.028m; their combined norm must be <3m. Unit tests must verify this, zero-flow regression, power identity, pair symmetry, rotor moments and monotonicity before any frozen mission protocol.
+
+Free-air hover extrapolation to moving flocks inside a factory omits wall effects, wake transport and fluctuations. Use only as labeled exploratory sensitivity, not physical validation. See the aerodynamic comparison contract in outputs.
+
+Rotor-resolved coupling includes lift-induced roll and pitch moments. Nominal actuator yaw torque is retained; no inflow-induced yaw-torque response is modeled. This avoids silently applying the isolated km/kf ratio to the aerodynamic lift correction.

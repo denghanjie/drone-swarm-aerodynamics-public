@@ -1,0 +1,18 @@
+{
+  "scope": "Frozen controller algebra at level attitude and zero actual velocity. No flight simulation, physical validation or constant-retention assumption imposed on mission data.",
+  "rows": [
+    {
+      "vzCommand": 0,
+      "nominalVerticalThrustWeight": 1,
+      "saturated": false
+    },
+    {
+      "vzCommand": 0.9,
+      "nominalVerticalThrustWeight": 1.2293577981651378,
+      "saturated": false
+    }
+  ],
+  "maximumCommandedSpeed": 0.9,
+  "minimumConstantLiftRetentionForSteadyLevelHoverUnderThisInterface": 0.8134328358208954,
+  "interpretation": "For hypothetical constant fractional effective-lift retention eta below this threshold, no bounded desired vertical velocity can command enough nominal thrust for steady level hover at zero actual velocity. Transients and the full variable inflow dynamics are different. The wider route feedback can change desired velocity but remains subject to this bound. Nominal modeled motor authority is a separate constraint."
+}

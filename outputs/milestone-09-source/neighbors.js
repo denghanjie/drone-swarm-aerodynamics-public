@@ -1,0 +1,6 @@
+export function swept(a,b,c,d){const r=a.map((v,k)=>v-c[k]),v=b.map((x,k)=>x-a[k]-d[k]+c[k]),vv=v.reduce((s,x)=>s+x*x,0),f=vv?Math.max(0,Math.min(1,-r.reduce((s,x,k)=>s+x*v[k],0)/vv)):0;return Math.hypot(...r.map((x,k)=>x+f*v[k]));}
+// Insert each swept segment's expanded bounding box into all touched cells.
+// Every pair closer than threshold has overlapping expanded boxes and shares a cell.
+export function nearPairs(old,next,threshold=.2){const cell=.4,pad=threshold/2,grid=new Map(),pairs=new Set(),close=[],contacts=[];let tests=0;
+for(let i=0;i<old.length;i++){const a=old[i],b=next[i],lo=a.map((v,k)=>Math.floor((Math.min(v,b[k])-pad)/cell)),hi=a.map((v,k)=>Math.floor((Math.max(v,b[k])+pad)/cell));for(let x=lo[0];x<=hi[0];x++)for(let y=lo[1];y<=hi[1];y++)for(let z=lo[2];z<=hi[2];z++){const key=x+','+y+','+z;let bucket=grid.get(key);if(!bucket){bucket=[];grid.set(key,bucket);}bucket.push(i);}}
+for(const bucket of grid.values())for(let a=0;a<bucket.length;a++)for(let b=a+1;b<bucket.length;b++){const i=bucket[a],j=bucket[b],key=i+','+j;if(pairs.has(key))continue;pairs.add(key);tests++;const d=swept(old[i],next[i],old[j],next[j]);if(d<threshold)close.push(key);if(d<.15)contacts.push(key);}return {close,contacts,tests,cells:grid.size};}
