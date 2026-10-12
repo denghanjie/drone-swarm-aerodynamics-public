@@ -1,0 +1,88 @@
+{
+  "scope": "tiny deterministic correctness checks; no timing claims",
+  "checks": [
+    {
+      "name": "centered",
+      "maxLegacy": 0,
+      "maxInflow": 0,
+      "maxForce": 0,
+      "maxMoment": 0,
+      "omittedPairs": 0,
+      "exactZeroPairs": 1,
+      "pass": true
+    },
+    {
+      "name": "offset",
+      "maxLegacy": 0,
+      "maxInflow": 0,
+      "maxForce": 0,
+      "maxMoment": 0,
+      "omittedPairs": 0,
+      "exactZeroPairs": 1,
+      "pass": true
+    },
+    {
+      "name": "weak-tail",
+      "maxLegacy": 0,
+      "maxInflow": 0.0002832580129052718,
+      "maxForce": 0.000004106272919746079,
+      "maxMoment": 5.866491781464714e-8,
+      "omittedPairs": 1,
+      "exactZeroPairs": 1,
+      "pass": true
+    },
+    {
+      "name": "outside-support",
+      "maxLegacy": 0,
+      "maxInflow": 0,
+      "maxForce": 0,
+      "maxMoment": 0,
+      "omittedPairs": 1,
+      "exactZeroPairs": 1,
+      "pass": true
+    },
+    {
+      "name": "sparse-16",
+      "maxLegacy": 0,
+      "maxInflow": 0,
+      "maxForce": 0,
+      "maxMoment": 0,
+      "omittedPairs": 0,
+      "exactZeroPairs": 233,
+      "pass": true
+    },
+    {
+      "name": "dense-16",
+      "maxLegacy": 0,
+      "maxInflow": 0,
+      "maxForce": 0,
+      "maxMoment": 0,
+      "omittedPairs": 0,
+      "exactZeroPairs": 233,
+      "pass": true
+    },
+    {
+      "name": "tilted-16",
+      "maxLegacy": 0,
+      "maxInflow": 0,
+      "maxForce": 0,
+      "maxMoment": 0,
+      "omittedPairs": 0,
+      "exactZeroPairs": 233,
+      "pass": true
+    },
+    {
+      "name": "near-domain",
+      "pass": true
+    },
+    {
+      "name": "tilt-domain",
+      "pass": true
+    },
+    {
+      "name": "nonfinite-hardened-input",
+      "pass": true,
+      "legacyEquivalenceClaim": false
+    }
+  ]
+}

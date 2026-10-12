@@ -1,0 +1,19 @@
+{
+  "snapshot": "c591ce2b195fa01b895d4ba881a44a4b92fdd703",
+  "hypothesis": "Conservative accumulated weak-wake omission reduces matched field evaluation cost within numerical model-relative force and moment budgets",
+  "developmentSeeds": [3301, 3302],
+  "heldoutSeeds": [3391, 3392],
+  "families": ["sparse", "dense", "tilted"],
+  "counts": [16, 50, 100, 200],
+  "epsilonsMS": [0.002, 0.01, 0.04],
+  "prescribedWindowSeconds": 1,
+  "fieldCadenceSeconds": 0.01,
+  "forceToleranceWeightFraction": 0.005,
+  "momentToleranceWeightArmFraction": 0.0075,
+  "physicalAccuracyClaim": false,
+  "maximumBenchmarkWallMinutes": 30,
+  "maximumArtifactBytes": 2147483648,
+  "timingRepetitions": 7,
+  "timingMinimumBatchMS": 50,
+  "closedLoop": {"count":16,"duration":1,"seeds":[3391,3392],"dt":0.0025,"controlDt":0.01,"aeroDt":0.01,"mode":"boids","filter":"wall-priority","epsilon":0.04}
+}
