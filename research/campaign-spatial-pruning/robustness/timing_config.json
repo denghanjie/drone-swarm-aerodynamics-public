@@ -1,0 +1,22 @@
+{
+  "frozen_before_timing": true,
+  "created_utc": "2026-10-12T14:17:00Z",
+  "seed": 7351,
+  "order_seed": 7352,
+  "scope": "Node CPU field evaluation including preparation, index, validation, guards, candidate selection, and four receiver-rotor queries. Excludes fixture generation, output serialization, receiver load conversion, rendering, and dynamic evolution.",
+  "repetitions": 9,
+  "warmup_evaluations_per_method": 8,
+  "methods": ["legacy", "exact", "epsilon_0.01", "epsilon_0.04"],
+  "scenarios": [
+    {"id":"N8_dense", "n":8, "spacing":0.4, "evaluations_per_repetition":100},
+    {"id":"N8_sparse", "n":8, "spacing":4.0, "evaluations_per_repetition":100},
+    {"id":"N100_dense", "n":100, "spacing":0.4, "evaluations_per_repetition":30},
+    {"id":"N100_sparse", "n":100, "spacing":4.0, "evaluations_per_repetition":30},
+    {"id":"N200_dense", "n":200, "spacing":0.4, "evaluations_per_repetition":20},
+    {"id":"N200_mid", "n":200, "spacing":0.75, "evaluations_per_repetition":20},
+    {"id":"N200_sparse", "n":200, "spacing":4.0, "evaluations_per_repetition":20}
+  ],
+  "statistics": "Median, p25, p75, min/max of per-field ms; paired candidate/exact ratios by repetition and deterministic paired bootstrap median-ratio interval. At least 10% median saving plus upper 95% interval below 1 is required for a provisional useful win; small or unstable differences are inconclusive.",
+  "memory_policy": "No forced GC during field timing. Record heap and RSS before/after each repetition outside measured core, plus process resource usage. Values are process-level diagnostics, not precise per-method allocation cost.",
+  "stop_conditions": "Exclusive serial execution required; source hash change invalidates run; nonfinite/checksum nondeterminism/domain failure stops case; 120 second hard process timeout; no escalation of workload after a failed speed/error gate."
+}

@@ -1,0 +1,3704 @@
+{
+  "utc": "2026-10-12T14:22:54.785Z",
+  "config": {
+    "frozen_before_timing": true,
+    "created_utc": "2026-10-12T14:17:00Z",
+    "seed": 7351,
+    "order_seed": 7352,
+    "scope": "Node CPU field evaluation including preparation, index, validation, guards, candidate selection, and four receiver-rotor queries. Excludes fixture generation, output serialization, receiver load conversion, rendering, and dynamic evolution.",
+    "repetitions": 9,
+    "warmup_evaluations_per_method": 8,
+    "methods": [
+      "legacy",
+      "exact",
+      "epsilon_0.01",
+      "epsilon_0.04"
+    ],
+    "scenarios": [
+      {
+        "id": "N8_dense",
+        "n": 8,
+        "spacing": 0.4,
+        "evaluations_per_repetition": 100
+      },
+      {
+        "id": "N8_sparse",
+        "n": 8,
+        "spacing": 4,
+        "evaluations_per_repetition": 100
+      },
+      {
+        "id": "N100_dense",
+        "n": 100,
+        "spacing": 0.4,
+        "evaluations_per_repetition": 30
+      },
+      {
+        "id": "N100_sparse",
+        "n": 100,
+        "spacing": 4,
+        "evaluations_per_repetition": 30
+      },
+      {
+        "id": "N200_dense",
+        "n": 200,
+        "spacing": 0.4,
+        "evaluations_per_repetition": 20
+      },
+      {
+        "id": "N200_mid",
+        "n": 200,
+        "spacing": 0.75,
+        "evaluations_per_repetition": 20
+      },
+      {
+        "id": "N200_sparse",
+        "n": 200,
+        "spacing": 4,
+        "evaluations_per_repetition": 20
+      }
+    ],
+    "statistics": "Median, p25, p75, min/max of per-field ms; paired candidate/exact ratios by repetition and deterministic paired bootstrap median-ratio interval. At least 10% median saving plus upper 95% interval below 1 is required for a provisional useful win; small or unstable differences are inconclusive.",
+    "memory_policy": "No forced GC during field timing. Record heap and RSS before/after each repetition outside measured core, plus process resource usage. Values are process-level diagnostics, not precise per-method allocation cost.",
+    "stop_conditions": "Exclusive serial execution required; source hash change invalidates run; nonfinite/checksum nondeterminism/domain failure stops case; 120 second hard process timeout; no escalation of workload after a failed speed/error gate."
+  },
+  "sourceHashStart": "1d9e1afcf9983b900034b7b586c4ffd02ec4b3242c467f8e684fbdda1850d562",
+  "sourceHashEnd": "1d9e1afcf9983b900034b7b586c4ffd02ec4b3242c467f8e684fbdda1850d562",
+  "sourceStable": true,
+  "node": "v24.19.0",
+  "platform": "linux",
+  "arch": "x64",
+  "totalElapsedMs": 24002,
+  "checks": [
+    {
+      "scenario": "N8_dense",
+      "method": "legacy",
+      "comparison": {
+        "finiteAndShape": true,
+        "inflowMaxAbs": 0,
+        "inflowRMS": 0,
+        "forceMaxAbs": 0,
+        "momentXYMaxAbs": 0,
+        "forceMaxWeightFraction": 0,
+        "momentMaxWeightArmFraction": 0,
+        "exactPass": true,
+        "approximationTolerancePass": true
+      },
+      "candidates": 56,
+      "counters": null,
+      "checksum": 284.06108616103046
+    },
+    {
+      "scenario": "N8_dense",
+      "method": "exact",
+      "comparison": {
+        "finiteAndShape": true,
+        "inflowMaxAbs": 0,
+        "inflowRMS": 0,
+        "forceMaxAbs": 0,
+        "momentXYMaxAbs": 0,
+        "forceMaxWeightFraction": 0,
+        "momentMaxWeightArmFraction": 0,
+        "exactPass": true,
+        "approximationTolerancePass": true
+      },
+      "candidates": 56,
+      "counters": {
+        "candidates": 56,
+        "guardRotorChecks": 0,
+        "boundEvaluations": 56,
+        "exactZeroPairs": 52,
+        "omittedPairs": 0,
+        "retainedPairs": 4,
+        "evaluatedRotorKernels": 16,
+        "contributions": 16
+      },
+      "checksum": 284.06108616103046
+    },
+    {
+      "scenario": "N8_dense",
+      "method": "epsilon_0.01",
+      "comparison": {
+        "finiteAndShape": true,
+        "inflowMaxAbs": 0,
+        "inflowRMS": 0,
+        "forceMaxAbs": 0,
+        "momentXYMaxAbs": 0,
+        "forceMaxWeightFraction": 0,
+        "momentMaxWeightArmFraction": 0,
+        "exactPass": true,
+        "approximationTolerancePass": true
+      },
+      "candidates": 56,
+      "counters": {
+        "candidates": 56,
+        "guardRotorChecks": 0,
+        "boundEvaluations": 56,
+        "exactZeroPairs": 52,
+        "omittedPairs": 0,
+        "retainedPairs": 4,
+        "evaluatedRotorKernels": 16,
+        "contributions": 16
+      },
+      "checksum": 284.06108616103046
+    },
+    {
+      "scenario": "N8_dense",
+      "method": "epsilon_0.04",
+      "comparison": {
+        "finiteAndShape": true,
+        "inflowMaxAbs": 0,
+        "inflowRMS": 0,
+        "forceMaxAbs": 0,
+        "momentXYMaxAbs": 0,
+        "forceMaxWeightFraction": 0,
+        "momentMaxWeightArmFraction": 0,
+        "exactPass": true,
+        "approximationTolerancePass": true
+      },
+      "candidates": 56,
+      "counters": {
+        "candidates": 56,
+        "guardRotorChecks": 0,
+        "boundEvaluations": 56,
+        "exactZeroPairs": 52,
+        "omittedPairs": 0,
+        "retainedPairs": 4,
+        "evaluatedRotorKernels": 16,
+        "contributions": 16
+      },
+      "checksum": 284.06108616103046
+    },
+    {
+      "scenario": "N8_sparse",
+      "method": "legacy",
+      "comparison": {
+        "finiteAndShape": true,
+        "inflowMaxAbs": 0,
+        "inflowRMS": 0,
+        "forceMaxAbs": 0,
+        "momentXYMaxAbs": 0,
+        "forceMaxWeightFraction": 0,
+        "momentMaxWeightArmFraction": 0,
+        "exactPass": true,
+        "approximationTolerancePass": true
+      },
+      "candidates": 0,
+      "counters": null,
+      "checksum": 0
+    },
+    {
+      "scenario": "N8_sparse",
+      "method": "exact",
+      "comparison": {
+        "finiteAndShape": true,
+        "inflowMaxAbs": 0,
+        "inflowRMS": 0,
+        "forceMaxAbs": 0,
+        "momentXYMaxAbs": 0,
+        "forceMaxWeightFraction": 0,
+        "momentMaxWeightArmFraction": 0,
+        "exactPass": true,
+        "approximationTolerancePass": true
+      },
+      "candidates": 0,
+      "counters": {
+        "candidates": 0,
+        "guardRotorChecks": 0,
+        "boundEvaluations": 0,
+        "exactZeroPairs": 0,
+        "omittedPairs": 0,
+        "retainedPairs": 0,
+        "evaluatedRotorKernels": 0,
+        "contributions": 0
+      },
+      "checksum": 0
+    },
+    {
+      "scenario": "N8_sparse",
+      "method": "epsilon_0.01",
+      "comparison": {
+        "finiteAndShape": true,
+        "inflowMaxAbs": 0,
+        "inflowRMS": 0,
+        "forceMaxAbs": 0,
+        "momentXYMaxAbs": 0,
+        "forceMaxWeightFraction": 0,
+        "momentMaxWeightArmFraction": 0,
+        "exactPass": true,
+        "approximationTolerancePass": true
+      },
+      "candidates": 0,
+      "counters": {
+        "candidates": 0,
+        "guardRotorChecks": 0,
+        "boundEvaluations": 0,
+        "exactZeroPairs": 0,
+        "omittedPairs": 0,
+        "retainedPairs": 0,
+        "evaluatedRotorKernels": 0,
+        "contributions": 0
+      },
+      "checksum": 0
+    },
+    {
+      "scenario": "N8_sparse",
+      "method": "epsilon_0.04",
+      "comparison": {
+        "finiteAndShape": true,
+        "inflowMaxAbs": 0,
+        "inflowRMS": 0,
+        "forceMaxAbs": 0,
+        "momentXYMaxAbs": 0,
+        "forceMaxWeightFraction": 0,
+        "momentMaxWeightArmFraction": 0,
+        "exactPass": true,
+        "approximationTolerancePass": true
+      },
+      "candidates": 0,
+      "counters": {
+        "candidates": 0,
+        "guardRotorChecks": 0,
+        "boundEvaluations": 0,
+        "exactZeroPairs": 0,
+        "omittedPairs": 0,
+        "retainedPairs": 0,
+        "evaluatedRotorKernels": 0,
+        "contributions": 0
+      },
+      "checksum": 0
+    },
+    {
+      "scenario": "N100_dense",
+      "method": "legacy",
+      "comparison": {
+        "finiteAndShape": true,
+        "inflowMaxAbs": 0,
+        "inflowRMS": 0,
+        "forceMaxAbs": 0,
+        "momentXYMaxAbs": 0,
+        "forceMaxWeightFraction": 0,
+        "momentMaxWeightArmFraction": 0,
+        "exactPass": true,
+        "approximationTolerancePass": true
+      },
+      "candidates": 9900,
+      "counters": null,
+      "checksum": 114974.94059383906
+    },
+    {
+      "scenario": "N100_dense",
+      "method": "exact",
+      "comparison": {
+        "finiteAndShape": true,
+        "inflowMaxAbs": 0,
+        "inflowRMS": 0,
+        "forceMaxAbs": 0,
+        "momentXYMaxAbs": 0,
+        "forceMaxWeightFraction": 0,
+        "momentMaxWeightArmFraction": 0,
+        "exactPass": true,
+        "approximationTolerancePass": true
+      },
+      "candidates": 9900,
+      "counters": {
+        "candidates": 9900,
+        "guardRotorChecks": 0,
+        "boundEvaluations": 9900,
+        "exactZeroPairs": 9670,
+        "omittedPairs": 0,
+        "retainedPairs": 230,
+        "evaluatedRotorKernels": 708,
+        "contributions": 708
+      },
+      "checksum": 114974.94059383906
+    },
+    {
+      "scenario": "N100_dense",
+      "method": "epsilon_0.01",
+      "comparison": {
+        "finiteAndShape": true,
+        "inflowMaxAbs": 0.0029124701752056836,
+        "inflowRMS": 0.00021385700935936864,
+        "forceMaxAbs": 9.433189877811055e-06,
+        "momentXYMaxAbs": 3.7353526172554424e-07,
+        "forceMaxWeightFraction": 3.561441415717543e-05,
+        "momentMaxWeightArmFraction": 5.036638751699543e-05,
+        "exactPass": false,
+        "approximationTolerancePass": true
+      },
+      "candidates": 9900,
+      "counters": {
+        "candidates": 9900,
+        "guardRotorChecks": 0,
+        "boundEvaluations": 9900,
+        "exactZeroPairs": 9670,
+        "omittedPairs": 4,
+        "retainedPairs": 226,
+        "evaluatedRotorKernels": 704,
+        "contributions": 704
+      },
+      "checksum": 114974.63441717038
+    },
+    {
+      "scenario": "N100_dense",
+      "method": "epsilon_0.04",
+      "comparison": {
+        "finiteAndShape": true,
+        "inflowMaxAbs": 0.013399102802142515,
+        "inflowRMS": 0.0024855994153631894,
+        "forceMaxAbs": 6.786369567571282e-05,
+        "momentXYMaxAbs": 1.9629607930968612e-06,
+        "forceMaxWeightFraction": 0.00025621510807457556,
+        "momentMaxWeightArmFraction": 0.00026467981504361455,
+        "exactPass": false,
+        "approximationTolerancePass": true
+      },
+      "candidates": 9900,
+      "counters": {
+        "candidates": 9900,
+        "guardRotorChecks": 0,
+        "boundEvaluations": 9900,
+        "exactZeroPairs": 9670,
+        "omittedPairs": 49,
+        "retainedPairs": 181,
+        "evaluatedRotorKernels": 641,
+        "contributions": 641
+      },
+      "checksum": 114965.17739313755
+    },
+    {
+      "scenario": "N100_sparse",
+      "method": "legacy",
+      "comparison": {
+        "finiteAndShape": true,
+        "inflowMaxAbs": 0,
+        "inflowRMS": 0,
+        "forceMaxAbs": 0,
+        "momentXYMaxAbs": 0,
+        "forceMaxWeightFraction": 0,
+        "momentMaxWeightArmFraction": 0,
+        "exactPass": true,
+        "approximationTolerancePass": true
+      },
+      "candidates": 0,
+      "counters": null,
+      "checksum": 0
+    },
+    {
+      "scenario": "N100_sparse",
+      "method": "exact",
+      "comparison": {
+        "finiteAndShape": true,
+        "inflowMaxAbs": 0,
+        "inflowRMS": 0,
+        "forceMaxAbs": 0,
+        "momentXYMaxAbs": 0,
+        "forceMaxWeightFraction": 0,
+        "momentMaxWeightArmFraction": 0,
+        "exactPass": true,
+        "approximationTolerancePass": true
+      },
+      "candidates": 0,
+      "counters": {
+        "candidates": 0,
+        "guardRotorChecks": 0,
+        "boundEvaluations": 0,
+        "exactZeroPairs": 0,
+        "omittedPairs": 0,
+        "retainedPairs": 0,
+        "evaluatedRotorKernels": 0,
+        "contributions": 0
+      },
+      "checksum": 0
+    },
+    {
+      "scenario": "N100_sparse",
+      "method": "epsilon_0.01",
+      "comparison": {
+        "finiteAndShape": true,
+        "inflowMaxAbs": 0,
+        "inflowRMS": 0,
+        "forceMaxAbs": 0,
+        "momentXYMaxAbs": 0,
+        "forceMaxWeightFraction": 0,
+        "momentMaxWeightArmFraction": 0,
+        "exactPass": true,
+        "approximationTolerancePass": true
+      },
+      "candidates": 0,
+      "counters": {
+        "candidates": 0,
+        "guardRotorChecks": 0,
+        "boundEvaluations": 0,
+        "exactZeroPairs": 0,
+        "omittedPairs": 0,
+        "retainedPairs": 0,
+        "evaluatedRotorKernels": 0,
+        "contributions": 0
+      },
+      "checksum": 0
+    },
+    {
+      "scenario": "N100_sparse",
+      "method": "epsilon_0.04",
+      "comparison": {
+        "finiteAndShape": true,
+        "inflowMaxAbs": 0,
+        "inflowRMS": 0,
+        "forceMaxAbs": 0,
+        "momentXYMaxAbs": 0,
+        "forceMaxWeightFraction": 0,
+        "momentMaxWeightArmFraction": 0,
+        "exactPass": true,
+        "approximationTolerancePass": true
+      },
+      "candidates": 0,
+      "counters": {
+        "candidates": 0,
+        "guardRotorChecks": 0,
+        "boundEvaluations": 0,
+        "exactZeroPairs": 0,
+        "omittedPairs": 0,
+        "retainedPairs": 0,
+        "evaluatedRotorKernels": 0,
+        "contributions": 0
+      },
+      "checksum": 0
+    },
+    {
+      "scenario": "N200_dense",
+      "method": "legacy",
+      "comparison": {
+        "finiteAndShape": true,
+        "inflowMaxAbs": 0,
+        "inflowRMS": 0,
+        "forceMaxAbs": 0,
+        "momentXYMaxAbs": 0,
+        "forceMaxWeightFraction": 0,
+        "momentMaxWeightArmFraction": 0,
+        "exactPass": true,
+        "approximationTolerancePass": true
+      },
+      "candidates": 39658,
+      "counters": null,
+      "checksum": 675323.5347047637
+    },
+    {
+      "scenario": "N200_dense",
+      "method": "exact",
+      "comparison": {
+        "finiteAndShape": true,
+        "inflowMaxAbs": 0,
+        "inflowRMS": 0,
+        "forceMaxAbs": 0,
+        "momentXYMaxAbs": 0,
+        "forceMaxWeightFraction": 0,
+        "momentMaxWeightArmFraction": 0,
+        "exactPass": true,
+        "approximationTolerancePass": true
+      },
+      "candidates": 39658,
+      "counters": {
+        "candidates": 39658,
+        "guardRotorChecks": 0,
+        "boundEvaluations": 39658,
+        "exactZeroPairs": 38581,
+        "omittedPairs": 0,
+        "retainedPairs": 1077,
+        "evaluatedRotorKernels": 3388,
+        "contributions": 3388
+      },
+      "checksum": 675323.5347047637
+    },
+    {
+      "scenario": "N200_dense",
+      "method": "epsilon_0.01",
+      "comparison": {
+        "finiteAndShape": true,
+        "inflowMaxAbs": 0.005057152793069619,
+        "inflowRMS": 0.0004220177797968818,
+        "forceMaxAbs": 1.2247671921483683e-05,
+        "momentXYMaxAbs": 4.849830646880111e-07,
+        "forceMaxWeightFraction": 4.624031381992556e-05,
+        "momentMaxWeightArmFraction": 6.539367893252365e-05,
+        "exactPass": false,
+        "approximationTolerancePass": true
+      },
+      "candidates": 39658,
+      "counters": {
+        "candidates": 39658,
+        "guardRotorChecks": 0,
+        "boundEvaluations": 39658,
+        "exactZeroPairs": 38581,
+        "omittedPairs": 27,
+        "retainedPairs": 1050,
+        "evaluatedRotorKernels": 3359,
+        "contributions": 3359
+      },
+      "checksum": 675317.264582002
+    },
+    {
+      "scenario": "N200_dense",
+      "method": "epsilon_0.04",
+      "comparison": {
+        "finiteAndShape": true,
+        "inflowMaxAbs": 0.015337378438276872,
+        "inflowRMS": 0.0031468767748574194,
+        "forceMaxAbs": 7.108906444647234e-05,
+        "momentXYMaxAbs": 2.1791666410573914e-06,
+        "forceMaxWeightFraction": 0.0002683922846923862,
+        "momentMaxWeightArmFraction": 0.0002938323707394721,
+        "exactPass": false,
+        "approximationTolerancePass": true
+      },
+      "candidates": 39658,
+      "counters": {
+        "candidates": 39658,
+        "guardRotorChecks": 0,
+        "boundEvaluations": 39658,
+        "exactZeroPairs": 38581,
+        "omittedPairs": 204,
+        "retainedPairs": 873,
+        "evaluatedRotorKernels": 3111,
+        "contributions": 3111
+      },
+      "checksum": 675192.8532728559
+    },
+    {
+      "scenario": "N200_mid",
+      "method": "legacy",
+      "comparison": {
+        "finiteAndShape": true,
+        "inflowMaxAbs": 0,
+        "inflowRMS": 0,
+        "forceMaxAbs": 0,
+        "momentXYMaxAbs": 0,
+        "forceMaxWeightFraction": 0,
+        "momentMaxWeightArmFraction": 0,
+        "exactPass": true,
+        "approximationTolerancePass": true
+      },
+      "candidates": 20612,
+      "counters": null,
+      "checksum": 461993.1409996164
+    },
+    {
+      "scenario": "N200_mid",
+      "method": "exact",
+      "comparison": {
+        "finiteAndShape": true,
+        "inflowMaxAbs": 0,
+        "inflowRMS": 0,
+        "forceMaxAbs": 0,
+        "momentXYMaxAbs": 0,
+        "forceMaxWeightFraction": 0,
+        "momentMaxWeightArmFraction": 0,
+        "exactPass": true,
+        "approximationTolerancePass": true
+      },
+      "candidates": 20612,
+      "counters": {
+        "candidates": 20612,
+        "guardRotorChecks": 0,
+        "boundEvaluations": 20612,
+        "exactZeroPairs": 20228,
+        "omittedPairs": 0,
+        "retainedPairs": 384,
+        "evaluatedRotorKernels": 1536,
+        "contributions": 1536
+      },
+      "checksum": 461993.1409996164
+    },
+    {
+      "scenario": "N200_mid",
+      "method": "epsilon_0.01",
+      "comparison": {
+        "finiteAndShape": true,
+        "inflowMaxAbs": 0,
+        "inflowRMS": 0,
+        "forceMaxAbs": 0,
+        "momentXYMaxAbs": 0,
+        "forceMaxWeightFraction": 0,
+        "momentMaxWeightArmFraction": 0,
+        "exactPass": true,
+        "approximationTolerancePass": true
+      },
+      "candidates": 20612,
+      "counters": {
+        "candidates": 20612,
+        "guardRotorChecks": 0,
+        "boundEvaluations": 20612,
+        "exactZeroPairs": 20228,
+        "omittedPairs": 0,
+        "retainedPairs": 384,
+        "evaluatedRotorKernels": 1536,
+        "contributions": 1536
+      },
+      "checksum": 461993.1409996164
+    },
+    {
+      "scenario": "N200_mid",
+      "method": "epsilon_0.04",
+      "comparison": {
+        "finiteAndShape": true,
+        "inflowMaxAbs": 0,
+        "inflowRMS": 0,
+        "forceMaxAbs": 0,
+        "momentXYMaxAbs": 0,
+        "forceMaxWeightFraction": 0,
+        "momentMaxWeightArmFraction": 0,
+        "exactPass": true,
+        "approximationTolerancePass": true
+      },
+      "candidates": 20612,
+      "counters": {
+        "candidates": 20612,
+        "guardRotorChecks": 0,
+        "boundEvaluations": 20612,
+        "exactZeroPairs": 20228,
+        "omittedPairs": 0,
+        "retainedPairs": 384,
+        "evaluatedRotorKernels": 1536,
+        "contributions": 1536
+      },
+      "checksum": 461993.1409996164
+    },
+    {
+      "scenario": "N200_sparse",
+      "method": "legacy",
+      "comparison": {
+        "finiteAndShape": true,
+        "inflowMaxAbs": 0,
+        "inflowRMS": 0,
+        "forceMaxAbs": 0,
+        "momentXYMaxAbs": 0,
+        "forceMaxWeightFraction": 0,
+        "momentMaxWeightArmFraction": 0,
+        "exactPass": true,
+        "approximationTolerancePass": true
+      },
+      "candidates": 0,
+      "counters": null,
+      "checksum": 0
+    },
+    {
+      "scenario": "N200_sparse",
+      "method": "exact",
+      "comparison": {
+        "finiteAndShape": true,
+        "inflowMaxAbs": 0,
+        "inflowRMS": 0,
+        "forceMaxAbs": 0,
+        "momentXYMaxAbs": 0,
+        "forceMaxWeightFraction": 0,
+        "momentMaxWeightArmFraction": 0,
+        "exactPass": true,
+        "approximationTolerancePass": true
+      },
+      "candidates": 0,
+      "counters": {
+        "candidates": 0,
+        "guardRotorChecks": 0,
+        "boundEvaluations": 0,
+        "exactZeroPairs": 0,
+        "omittedPairs": 0,
+        "retainedPairs": 0,
+        "evaluatedRotorKernels": 0,
+        "contributions": 0
+      },
+      "checksum": 0
+    },
+    {
+      "scenario": "N200_sparse",
+      "method": "epsilon_0.01",
+      "comparison": {
+        "finiteAndShape": true,
+        "inflowMaxAbs": 0,
+        "inflowRMS": 0,
+        "forceMaxAbs": 0,
+        "momentXYMaxAbs": 0,
+        "forceMaxWeightFraction": 0,
+        "momentMaxWeightArmFraction": 0,
+        "exactPass": true,
+        "approximationTolerancePass": true
+      },
+      "candidates": 0,
+      "counters": {
+        "candidates": 0,
+        "guardRotorChecks": 0,
+        "boundEvaluations": 0,
+        "exactZeroPairs": 0,
+        "omittedPairs": 0,
+        "retainedPairs": 0,
+        "evaluatedRotorKernels": 0,
+        "contributions": 0
+      },
+      "checksum": 0
+    },
+    {
+      "scenario": "N200_sparse",
+      "method": "epsilon_0.04",
+      "comparison": {
+        "finiteAndShape": true,
+        "inflowMaxAbs": 0,
+        "inflowRMS": 0,
+        "forceMaxAbs": 0,
+        "momentXYMaxAbs": 0,
+        "forceMaxWeightFraction": 0,
+        "momentMaxWeightArmFraction": 0,
+        "exactPass": true,
+        "approximationTolerancePass": true
+      },
+      "candidates": 0,
+      "counters": {
+        "candidates": 0,
+        "guardRotorChecks": 0,
+        "boundEvaluations": 0,
+        "exactZeroPairs": 0,
+        "omittedPairs": 0,
+        "retainedPairs": 0,
+        "evaluatedRotorKernels": 0,
+        "contributions": 0
+      },
+      "checksum": 0
+    }
+  ],
+  "rows": [
+    {
+      "serial": 0,
+      "scenario": "N8_dense",
+      "repetition": 0,
+      "method": "epsilon_0.01",
+      "evaluations": 100,
+      "elapsedMs": 12.835221000000004,
+      "perFieldMs": 0.12835221000000005,
+      "checksum": 28406.108616103018
+    },
+    {
+      "serial": 1,
+      "scenario": "N8_dense",
+      "repetition": 0,
+      "method": "exact",
+      "evaluations": 100,
+      "elapsedMs": 11.851484999999997,
+      "perFieldMs": 0.11851484999999996,
+      "checksum": 28406.108616103018
+    },
+    {
+      "serial": 2,
+      "scenario": "N8_dense",
+      "repetition": 0,
+      "method": "legacy",
+      "evaluations": 100,
+      "elapsedMs": 14.737526000000003,
+      "perFieldMs": 0.14737526000000004,
+      "checksum": 28406.108616103018
+    },
+    {
+      "serial": 3,
+      "scenario": "N8_dense",
+      "repetition": 0,
+      "method": "epsilon_0.04",
+      "evaluations": 100,
+      "elapsedMs": 11.677526999999998,
+      "perFieldMs": 0.11677526999999997,
+      "checksum": 28406.108616103018
+    },
+    {
+      "serial": 4,
+      "scenario": "N8_dense",
+      "repetition": 1,
+      "method": "epsilon_0.01",
+      "evaluations": 100,
+      "elapsedMs": 17.130370999999997,
+      "perFieldMs": 0.17130370999999997,
+      "checksum": 28406.108616103018
+    },
+    {
+      "serial": 5,
+      "scenario": "N8_dense",
+      "repetition": 1,
+      "method": "epsilon_0.04",
+      "evaluations": 100,
+      "elapsedMs": 10.10178399999998,
+      "perFieldMs": 0.1010178399999998,
+      "checksum": 28406.108616103018
+    },
+    {
+      "serial": 6,
+      "scenario": "N8_dense",
+      "repetition": 1,
+      "method": "legacy",
+      "evaluations": 100,
+      "elapsedMs": 14.39736400000001,
+      "perFieldMs": 0.1439736400000001,
+      "checksum": 28406.108616103018
+    },
+    {
+      "serial": 7,
+      "scenario": "N8_dense",
+      "repetition": 1,
+      "method": "exact",
+      "evaluations": 100,
+      "elapsedMs": 10.234034000000008,
+      "perFieldMs": 0.10234034000000009,
+      "checksum": 28406.108616103018
+    },
+    {
+      "serial": 8,
+      "scenario": "N8_dense",
+      "repetition": 2,
+      "method": "epsilon_0.01",
+      "evaluations": 100,
+      "elapsedMs": 10.433662999999996,
+      "perFieldMs": 0.10433662999999996,
+      "checksum": 28406.108616103018
+    },
+    {
+      "serial": 9,
+      "scenario": "N8_dense",
+      "repetition": 2,
+      "method": "legacy",
+      "evaluations": 100,
+      "elapsedMs": 10.450700000000012,
+      "perFieldMs": 0.10450700000000011,
+      "checksum": 28406.108616103018
+    },
+    {
+      "serial": 10,
+      "scenario": "N8_dense",
+      "repetition": 2,
+      "method": "exact",
+      "evaluations": 100,
+      "elapsedMs": 8.848766999999981,
+      "perFieldMs": 0.08848766999999981,
+      "checksum": 28406.108616103018
+    },
+    {
+      "serial": 11,
+      "scenario": "N8_dense",
+      "repetition": 2,
+      "method": "epsilon_0.04",
+      "evaluations": 100,
+      "elapsedMs": 9.758767000000006,
+      "perFieldMs": 0.09758767000000006,
+      "checksum": 28406.108616103018
+    },
+    {
+      "serial": 12,
+      "scenario": "N8_dense",
+      "repetition": 3,
+      "method": "legacy",
+      "evaluations": 100,
+      "elapsedMs": 10.142235,
+      "perFieldMs": 0.10142235,
+      "checksum": 28406.108616103018
+    },
+    {
+      "serial": 13,
+      "scenario": "N8_dense",
+      "repetition": 3,
+      "method": "epsilon_0.01",
+      "evaluations": 100,
+      "elapsedMs": 8.768957,
+      "perFieldMs": 0.08768957000000001,
+      "checksum": 28406.108616103018
+    },
+    {
+      "serial": 14,
+      "scenario": "N8_dense",
+      "repetition": 3,
+      "method": "epsilon_0.04",
+      "evaluations": 100,
+      "elapsedMs": 9.211373000000009,
+      "perFieldMs": 0.09211373000000009,
+      "checksum": 28406.108616103018
+    },
+    {
+      "serial": 15,
+      "scenario": "N8_dense",
+      "repetition": 3,
+      "method": "exact",
+      "evaluations": 100,
+      "elapsedMs": 19.735213000000016,
+      "perFieldMs": 0.19735213000000015,
+      "checksum": 28406.108616103018
+    },
+    {
+      "serial": 16,
+      "scenario": "N8_dense",
+      "repetition": 4,
+      "method": "exact",
+      "evaluations": 100,
+      "elapsedMs": 8.314202000000023,
+      "perFieldMs": 0.08314202000000023,
+      "checksum": 28406.108616103018
+    },
+    {
+      "serial": 17,
+      "scenario": "N8_dense",
+      "repetition": 4,
+      "method": "epsilon_0.04",
+      "evaluations": 100,
+      "elapsedMs": 9.161727999999982,
+      "perFieldMs": 0.09161727999999983,
+      "checksum": 28406.108616103018
+    },
+    {
+      "serial": 18,
+      "scenario": "N8_dense",
+      "repetition": 4,
+      "method": "epsilon_0.01",
+      "evaluations": 100,
+      "elapsedMs": 9.102840000000015,
+      "perFieldMs": 0.09102840000000015,
+      "checksum": 28406.108616103018
+    },
+    {
+      "serial": 19,
+      "scenario": "N8_dense",
+      "repetition": 4,
+      "method": "legacy",
+      "evaluations": 100,
+      "elapsedMs": 10.377199000000019,
+      "perFieldMs": 0.10377199000000019,
+      "checksum": 28406.108616103018
+    },
+    {
+      "serial": 20,
+      "scenario": "N8_dense",
+      "repetition": 5,
+      "method": "exact",
+      "evaluations": 100,
+      "elapsedMs": 8.81701899999996,
+      "perFieldMs": 0.08817018999999959,
+      "checksum": 28406.108616103018
+    },
+    {
+      "serial": 21,
+      "scenario": "N8_dense",
+      "repetition": 5,
+      "method": "epsilon_0.04",
+      "evaluations": 100,
+      "elapsedMs": 9.575551000000019,
+      "perFieldMs": 0.09575551000000018,
+      "checksum": 28406.108616103018
+    },
+    {
+      "serial": 22,
+      "scenario": "N8_dense",
+      "repetition": 5,
+      "method": "legacy",
+      "evaluations": 100,
+      "elapsedMs": 10.463798999999995,
+      "perFieldMs": 0.10463798999999994,
+      "checksum": 28406.108616103018
+    },
+    {
+      "serial": 23,
+      "scenario": "N8_dense",
+      "repetition": 5,
+      "method": "epsilon_0.01",
+      "evaluations": 100,
+      "elapsedMs": 9.515780999999947,
+      "perFieldMs": 0.09515780999999947,
+      "checksum": 28406.108616103018
+    },
+    {
+      "serial": 24,
+      "scenario": "N8_dense",
+      "repetition": 6,
+      "method": "epsilon_0.04",
+      "evaluations": 100,
+      "elapsedMs": 8.629436999999996,
+      "perFieldMs": 0.08629436999999995,
+      "checksum": 28406.108616103018
+    },
+    {
+      "serial": 25,
+      "scenario": "N8_dense",
+      "repetition": 6,
+      "method": "legacy",
+      "evaluations": 100,
+      "elapsedMs": 10.272892000000013,
+      "perFieldMs": 0.10272892000000013,
+      "checksum": 28406.108616103018
+    },
+    {
+      "serial": 26,
+      "scenario": "N8_dense",
+      "repetition": 6,
+      "method": "epsilon_0.01",
+      "evaluations": 100,
+      "elapsedMs": 9.062379000000021,
+      "perFieldMs": 0.09062379000000022,
+      "checksum": 28406.108616103018
+    },
+    {
+      "serial": 27,
+      "scenario": "N8_dense",
+      "repetition": 6,
+      "method": "exact",
+      "evaluations": 100,
+      "elapsedMs": 8.40830299999999,
+      "perFieldMs": 0.08408302999999989,
+      "checksum": 28406.108616103018
+    },
+    {
+      "serial": 28,
+      "scenario": "N8_dense",
+      "repetition": 7,
+      "method": "epsilon_0.01",
+      "evaluations": 100,
+      "elapsedMs": 9.067677000000003,
+      "perFieldMs": 0.09067677000000003,
+      "checksum": 28406.108616103018
+    },
+    {
+      "serial": 29,
+      "scenario": "N8_dense",
+      "repetition": 7,
+      "method": "epsilon_0.04",
+      "evaluations": 100,
+      "elapsedMs": 8.69343299999997,
+      "perFieldMs": 0.0869343299999997,
+      "checksum": 28406.108616103018
+    },
+    {
+      "serial": 30,
+      "scenario": "N8_dense",
+      "repetition": 7,
+      "method": "exact",
+      "evaluations": 100,
+      "elapsedMs": 8.996789999999976,
+      "perFieldMs": 0.08996789999999975,
+      "checksum": 28406.108616103018
+    },
+    {
+      "serial": 31,
+      "scenario": "N8_dense",
+      "repetition": 7,
+      "method": "legacy",
+      "evaluations": 100,
+      "elapsedMs": 9.840862000000016,
+      "perFieldMs": 0.09840862000000015,
+      "checksum": 28406.108616103018
+    },
+    {
+      "serial": 32,
+      "scenario": "N8_dense",
+      "repetition": 8,
+      "method": "epsilon_0.04",
+      "evaluations": 100,
+      "elapsedMs": 9.20018600000003,
+      "perFieldMs": 0.09200186000000031,
+      "checksum": 28406.108616103018
+    },
+    {
+      "serial": 33,
+      "scenario": "N8_dense",
+      "repetition": 8,
+      "method": "epsilon_0.01",
+      "evaluations": 100,
+      "elapsedMs": 8.247100999999986,
+      "perFieldMs": 0.08247100999999986,
+      "checksum": 28406.108616103018
+    },
+    {
+      "serial": 34,
+      "scenario": "N8_dense",
+      "repetition": 8,
+      "method": "exact",
+      "evaluations": 100,
+      "elapsedMs": 8.31491299999999,
+      "perFieldMs": 0.0831491299999999,
+      "checksum": 28406.108616103018
+    },
+    {
+      "serial": 35,
+      "scenario": "N8_dense",
+      "repetition": 8,
+      "method": "legacy",
+      "evaluations": 100,
+      "elapsedMs": 10.416267999999945,
+      "perFieldMs": 0.10416267999999945,
+      "checksum": 28406.108616103018
+    },
+    {
+      "serial": 36,
+      "scenario": "N8_sparse",
+      "repetition": 0,
+      "method": "legacy",
+      "evaluations": 100,
+      "elapsedMs": 7.410600999999986,
+      "perFieldMs": 0.07410600999999986,
+      "checksum": 0
+    },
+    {
+      "serial": 37,
+      "scenario": "N8_sparse",
+      "repetition": 0,
+      "method": "epsilon_0.04",
+      "evaluations": 100,
+      "elapsedMs": 7.516419999999982,
+      "perFieldMs": 0.07516419999999982,
+      "checksum": 0
+    },
+    {
+      "serial": 38,
+      "scenario": "N8_sparse",
+      "repetition": 0,
+      "method": "exact",
+      "evaluations": 100,
+      "elapsedMs": 6.836436999999989,
+      "perFieldMs": 0.0683643699999999,
+      "checksum": 0
+    },
+    {
+      "serial": 39,
+      "scenario": "N8_sparse",
+      "repetition": 0,
+      "method": "epsilon_0.01",
+      "evaluations": 100,
+      "elapsedMs": 7.582510000000013,
+      "perFieldMs": 0.07582510000000013,
+      "checksum": 0
+    },
+    {
+      "serial": 40,
+      "scenario": "N8_sparse",
+      "repetition": 1,
+      "method": "epsilon_0.01",
+      "evaluations": 100,
+      "elapsedMs": 6.768914999999993,
+      "perFieldMs": 0.06768914999999992,
+      "checksum": 0
+    },
+    {
+      "serial": 41,
+      "scenario": "N8_sparse",
+      "repetition": 1,
+      "method": "epsilon_0.04",
+      "evaluations": 100,
+      "elapsedMs": 6.7929509999999595,
+      "perFieldMs": 0.0679295099999996,
+      "checksum": 0
+    },
+    {
+      "serial": 42,
+      "scenario": "N8_sparse",
+      "repetition": 1,
+      "method": "exact",
+      "evaluations": 100,
+      "elapsedMs": 6.933281999999963,
+      "perFieldMs": 0.06933281999999963,
+      "checksum": 0
+    },
+    {
+      "serial": 43,
+      "scenario": "N8_sparse",
+      "repetition": 1,
+      "method": "legacy",
+      "evaluations": 100,
+      "elapsedMs": 7.739135999999974,
+      "perFieldMs": 0.07739135999999974,
+      "checksum": 0
+    },
+    {
+      "serial": 44,
+      "scenario": "N8_sparse",
+      "repetition": 2,
+      "method": "legacy",
+      "evaluations": 100,
+      "elapsedMs": 7.64353200000005,
+      "perFieldMs": 0.0764353200000005,
+      "checksum": 0
+    },
+    {
+      "serial": 45,
+      "scenario": "N8_sparse",
+      "repetition": 2,
+      "method": "epsilon_0.01",
+      "evaluations": 100,
+      "elapsedMs": 7.752146000000039,
+      "perFieldMs": 0.07752146000000039,
+      "checksum": 0
+    },
+    {
+      "serial": 46,
+      "scenario": "N8_sparse",
+      "repetition": 2,
+      "method": "exact",
+      "evaluations": 100,
+      "elapsedMs": 7.419845000000009,
+      "perFieldMs": 0.0741984500000001,
+      "checksum": 0
+    },
+    {
+      "serial": 47,
+      "scenario": "N8_sparse",
+      "repetition": 2,
+      "method": "epsilon_0.04",
+      "evaluations": 100,
+      "elapsedMs": 6.998991000000046,
+      "perFieldMs": 0.06998991000000046,
+      "checksum": 0
+    },
+    {
+      "serial": 48,
+      "scenario": "N8_sparse",
+      "repetition": 3,
+      "method": "exact",
+      "evaluations": 100,
+      "elapsedMs": 7.060983999999962,
+      "perFieldMs": 0.07060983999999962,
+      "checksum": 0
+    },
+    {
+      "serial": 49,
+      "scenario": "N8_sparse",
+      "repetition": 3,
+      "method": "legacy",
+      "evaluations": 100,
+      "elapsedMs": 7.2217059999999265,
+      "perFieldMs": 0.07221705999999926,
+      "checksum": 0
+    },
+    {
+      "serial": 50,
+      "scenario": "N8_sparse",
+      "repetition": 3,
+      "method": "epsilon_0.04",
+      "evaluations": 100,
+      "elapsedMs": 6.9940540000000055,
+      "perFieldMs": 0.06994054000000005,
+      "checksum": 0
+    },
+    {
+      "serial": 51,
+      "scenario": "N8_sparse",
+      "repetition": 3,
+      "method": "epsilon_0.01",
+      "evaluations": 100,
+      "elapsedMs": 6.938089999999988,
+      "perFieldMs": 0.06938089999999988,
+      "checksum": 0
+    },
+    {
+      "serial": 52,
+      "scenario": "N8_sparse",
+      "repetition": 4,
+      "method": "exact",
+      "evaluations": 100,
+      "elapsedMs": 6.831399000000033,
+      "perFieldMs": 0.06831399000000032,
+      "checksum": 0
+    },
+    {
+      "serial": 53,
+      "scenario": "N8_sparse",
+      "repetition": 4,
+      "method": "legacy",
+      "evaluations": 100,
+      "elapsedMs": 9.515140999999971,
+      "perFieldMs": 0.09515140999999971,
+      "checksum": 0
+    },
+    {
+      "serial": 54,
+      "scenario": "N8_sparse",
+      "repetition": 4,
+      "method": "epsilon_0.04",
+      "evaluations": 100,
+      "elapsedMs": 7.262477999999987,
+      "perFieldMs": 0.07262477999999987,
+      "checksum": 0
+    },
+    {
+      "serial": 55,
+      "scenario": "N8_sparse",
+      "repetition": 4,
+      "method": "epsilon_0.01",
+      "evaluations": 100,
+      "elapsedMs": 7.656602000000021,
+      "perFieldMs": 0.0765660200000002,
+      "checksum": 0
+    },
+    {
+      "serial": 56,
+      "scenario": "N8_sparse",
+      "repetition": 5,
+      "method": "exact",
+      "evaluations": 100,
+      "elapsedMs": 7.770103000000063,
+      "perFieldMs": 0.07770103000000063,
+      "checksum": 0
+    },
+    {
+      "serial": 57,
+      "scenario": "N8_sparse",
+      "repetition": 5,
+      "method": "epsilon_0.04",
+      "evaluations": 100,
+      "elapsedMs": 6.849826000000007,
+      "perFieldMs": 0.06849826000000007,
+      "checksum": 0
+    },
+    {
+      "serial": 58,
+      "scenario": "N8_sparse",
+      "repetition": 5,
+      "method": "epsilon_0.01",
+      "evaluations": 100,
+      "elapsedMs": 6.922014999999988,
+      "perFieldMs": 0.06922014999999987,
+      "checksum": 0
+    },
+    {
+      "serial": 59,
+      "scenario": "N8_sparse",
+      "repetition": 5,
+      "method": "legacy",
+      "evaluations": 100,
+      "elapsedMs": 7.5518939999999475,
+      "perFieldMs": 0.07551893999999948,
+      "checksum": 0
+    },
+    {
+      "serial": 60,
+      "scenario": "N8_sparse",
+      "repetition": 6,
+      "method": "exact",
+      "evaluations": 100,
+      "elapsedMs": 7.3339050000000725,
+      "perFieldMs": 0.07333905000000072,
+      "checksum": 0
+    },
+    {
+      "serial": 61,
+      "scenario": "N8_sparse",
+      "repetition": 6,
+      "method": "legacy",
+      "evaluations": 100,
+      "elapsedMs": 7.295427000000018,
+      "perFieldMs": 0.07295427000000018,
+      "checksum": 0
+    },
+    {
+      "serial": 62,
+      "scenario": "N8_sparse",
+      "repetition": 6,
+      "method": "epsilon_0.04",
+      "evaluations": 100,
+      "elapsedMs": 7.560075999999981,
+      "perFieldMs": 0.07560075999999981,
+      "checksum": 0
+    },
+    {
+      "serial": 63,
+      "scenario": "N8_sparse",
+      "repetition": 6,
+      "method": "epsilon_0.01",
+      "evaluations": 100,
+      "elapsedMs": 7.6832019999999375,
+      "perFieldMs": 0.07683201999999938,
+      "checksum": 0
+    },
+    {
+      "serial": 64,
+      "scenario": "N8_sparse",
+      "repetition": 7,
+      "method": "epsilon_0.01",
+      "evaluations": 100,
+      "elapsedMs": 7.156728000000044,
+      "perFieldMs": 0.07156728000000044,
+      "checksum": 0
+    },
+    {
+      "serial": 65,
+      "scenario": "N8_sparse",
+      "repetition": 7,
+      "method": "legacy",
+      "evaluations": 100,
+      "elapsedMs": 7.030709000000002,
+      "perFieldMs": 0.07030709000000002,
+      "checksum": 0
+    },
+    {
+      "serial": 66,
+      "scenario": "N8_sparse",
+      "repetition": 7,
+      "method": "epsilon_0.04",
+      "evaluations": 100,
+      "elapsedMs": 6.800301999999988,
+      "perFieldMs": 0.06800301999999987,
+      "checksum": 0
+    },
+    {
+      "serial": 67,
+      "scenario": "N8_sparse",
+      "repetition": 7,
+      "method": "exact",
+      "evaluations": 100,
+      "elapsedMs": 6.999652999999967,
+      "perFieldMs": 0.06999652999999967,
+      "checksum": 0
+    },
+    {
+      "serial": 68,
+      "scenario": "N8_sparse",
+      "repetition": 8,
+      "method": "epsilon_0.01",
+      "evaluations": 100,
+      "elapsedMs": 7.242267999999967,
+      "perFieldMs": 0.07242267999999967,
+      "checksum": 0
+    },
+    {
+      "serial": 69,
+      "scenario": "N8_sparse",
+      "repetition": 8,
+      "method": "exact",
+      "evaluations": 100,
+      "elapsedMs": 7.084790999999996,
+      "perFieldMs": 0.07084790999999996,
+      "checksum": 0
+    },
+    {
+      "serial": 70,
+      "scenario": "N8_sparse",
+      "repetition": 8,
+      "method": "legacy",
+      "evaluations": 100,
+      "elapsedMs": 7.838604999999916,
+      "perFieldMs": 0.07838604999999915,
+      "checksum": 0
+    },
+    {
+      "serial": 71,
+      "scenario": "N8_sparse",
+      "repetition": 8,
+      "method": "epsilon_0.04",
+      "evaluations": 100,
+      "elapsedMs": 7.598553999999922,
+      "perFieldMs": 0.07598553999999921,
+      "checksum": 0
+    },
+    {
+      "serial": 72,
+      "scenario": "N100_dense",
+      "repetition": 0,
+      "method": "legacy",
+      "evaluations": 30,
+      "elapsedMs": 147.20526900000004,
+      "perFieldMs": 4.906842300000002,
+      "checksum": 3449248.217815174
+    },
+    {
+      "serial": 73,
+      "scenario": "N100_dense",
+      "repetition": 0,
+      "method": "exact",
+      "evaluations": 30,
+      "elapsedMs": 99.49913400000003,
+      "perFieldMs": 3.316637800000001,
+      "checksum": 3449248.217815174
+    },
+    {
+      "serial": 74,
+      "scenario": "N100_dense",
+      "repetition": 0,
+      "method": "epsilon_0.04",
+      "evaluations": 30,
+      "elapsedMs": 94.05329299999994,
+      "perFieldMs": 3.1351097666666647,
+      "checksum": 3448955.3217941253
+    },
+    {
+      "serial": 75,
+      "scenario": "N100_dense",
+      "repetition": 0,
+      "method": "epsilon_0.01",
+      "evaluations": 30,
+      "elapsedMs": 90.11463499999991,
+      "perFieldMs": 3.0038211666666634,
+      "checksum": 3449239.03251511
+    },
+    {
+      "serial": 76,
+      "scenario": "N100_dense",
+      "repetition": 1,
+      "method": "legacy",
+      "evaluations": 30,
+      "elapsedMs": 184.915209,
+      "perFieldMs": 6.1638403,
+      "checksum": 3449248.217815174
+    },
+    {
+      "serial": 77,
+      "scenario": "N100_dense",
+      "repetition": 1,
+      "method": "exact",
+      "evaluations": 30,
+      "elapsedMs": 90.94860700000004,
+      "perFieldMs": 3.0316202333333346,
+      "checksum": 3449248.217815174
+    },
+    {
+      "serial": 78,
+      "scenario": "N100_dense",
+      "repetition": 1,
+      "method": "epsilon_0.01",
+      "evaluations": 30,
+      "elapsedMs": 98.21620199999984,
+      "perFieldMs": 3.2738733999999945,
+      "checksum": 3449239.03251511
+    },
+    {
+      "serial": 79,
+      "scenario": "N100_dense",
+      "repetition": 1,
+      "method": "epsilon_0.04",
+      "evaluations": 30,
+      "elapsedMs": 91.12902899999995,
+      "perFieldMs": 3.0376342999999983,
+      "checksum": 3448955.3217941253
+    },
+    {
+      "serial": 80,
+      "scenario": "N100_dense",
+      "repetition": 2,
+      "method": "epsilon_0.01",
+      "evaluations": 30,
+      "elapsedMs": 97.42769500000009,
+      "perFieldMs": 3.247589833333336,
+      "checksum": 3449239.03251511
+    },
+    {
+      "serial": 81,
+      "scenario": "N100_dense",
+      "repetition": 2,
+      "method": "exact",
+      "evaluations": 30,
+      "elapsedMs": 89.72463300000004,
+      "perFieldMs": 2.990821100000001,
+      "checksum": 3449248.217815174
+    },
+    {
+      "serial": 82,
+      "scenario": "N100_dense",
+      "repetition": 2,
+      "method": "legacy",
+      "evaluations": 30,
+      "elapsedMs": 155.13527699999986,
+      "perFieldMs": 5.171175899999995,
+      "checksum": 3449248.217815174
+    },
+    {
+      "serial": 83,
+      "scenario": "N100_dense",
+      "repetition": 2,
+      "method": "epsilon_0.04",
+      "evaluations": 30,
+      "elapsedMs": 91.22182299999986,
+      "perFieldMs": 3.0407274333333287,
+      "checksum": 3448955.3217941253
+    },
+    {
+      "serial": 84,
+      "scenario": "N100_dense",
+      "repetition": 3,
+      "method": "legacy",
+      "evaluations": 30,
+      "elapsedMs": 153.84067200000027,
+      "perFieldMs": 5.128022400000009,
+      "checksum": 3449248.217815174
+    },
+    {
+      "serial": 85,
+      "scenario": "N100_dense",
+      "repetition": 3,
+      "method": "exact",
+      "evaluations": 30,
+      "elapsedMs": 88.24329200000011,
+      "perFieldMs": 2.9414430666666704,
+      "checksum": 3449248.217815174
+    },
+    {
+      "serial": 86,
+      "scenario": "N100_dense",
+      "repetition": 3,
+      "method": "epsilon_0.04",
+      "evaluations": 30,
+      "elapsedMs": 82.1567799999998,
+      "perFieldMs": 2.7385593333333267,
+      "checksum": 3448955.3217941253
+    },
+    {
+      "serial": 87,
+      "scenario": "N100_dense",
+      "repetition": 3,
+      "method": "epsilon_0.01",
+      "evaluations": 30,
+      "elapsedMs": 85.23143600000003,
+      "perFieldMs": 2.841047866666668,
+      "checksum": 3449239.03251511
+    },
+    {
+      "serial": 88,
+      "scenario": "N100_dense",
+      "repetition": 4,
+      "method": "legacy",
+      "evaluations": 30,
+      "elapsedMs": 158.85438900000008,
+      "perFieldMs": 5.2951463000000025,
+      "checksum": 3449248.217815174
+    },
+    {
+      "serial": 89,
+      "scenario": "N100_dense",
+      "repetition": 4,
+      "method": "epsilon_0.01",
+      "evaluations": 30,
+      "elapsedMs": 96.11891400000013,
+      "perFieldMs": 3.2039638000000044,
+      "checksum": 3449239.03251511
+    },
+    {
+      "serial": 90,
+      "scenario": "N100_dense",
+      "repetition": 4,
+      "method": "exact",
+      "evaluations": 30,
+      "elapsedMs": 89.57733099999996,
+      "perFieldMs": 2.985911033333332,
+      "checksum": 3449248.217815174
+    },
+    {
+      "serial": 91,
+      "scenario": "N100_dense",
+      "repetition": 4,
+      "method": "epsilon_0.04",
+      "evaluations": 30,
+      "elapsedMs": 89.39210300000013,
+      "perFieldMs": 2.979736766666671,
+      "checksum": 3448955.3217941253
+    },
+    {
+      "serial": 92,
+      "scenario": "N100_dense",
+      "repetition": 5,
+      "method": "epsilon_0.01",
+      "evaluations": 30,
+      "elapsedMs": 87.65241000000015,
+      "perFieldMs": 2.9217470000000048,
+      "checksum": 3449239.03251511
+    },
+    {
+      "serial": 93,
+      "scenario": "N100_dense",
+      "repetition": 5,
+      "method": "exact",
+      "evaluations": 30,
+      "elapsedMs": 87.63459699999976,
+      "perFieldMs": 2.9211532333333254,
+      "checksum": 3449248.217815174
+    },
+    {
+      "serial": 94,
+      "scenario": "N100_dense",
+      "repetition": 5,
+      "method": "epsilon_0.04",
+      "evaluations": 30,
+      "elapsedMs": 87.1039679999999,
+      "perFieldMs": 2.9034655999999965,
+      "checksum": 3448955.3217941253
+    },
+    {
+      "serial": 95,
+      "scenario": "N100_dense",
+      "repetition": 5,
+      "method": "legacy",
+      "evaluations": 30,
+      "elapsedMs": 156.0006370000001,
+      "perFieldMs": 5.200021233333336,
+      "checksum": 3449248.217815174
+    },
+    {
+      "serial": 96,
+      "scenario": "N100_dense",
+      "repetition": 6,
+      "method": "legacy",
+      "evaluations": 30,
+      "elapsedMs": 155.66116199999988,
+      "perFieldMs": 5.1887053999999955,
+      "checksum": 3449248.217815174
+    },
+    {
+      "serial": 97,
+      "scenario": "N100_dense",
+      "repetition": 6,
+      "method": "epsilon_0.01",
+      "evaluations": 30,
+      "elapsedMs": 88.37014299999964,
+      "perFieldMs": 2.9456714333333216,
+      "checksum": 3449239.03251511
+    },
+    {
+      "serial": 98,
+      "scenario": "N100_dense",
+      "repetition": 6,
+      "method": "epsilon_0.04",
+      "evaluations": 30,
+      "elapsedMs": 85.18658499999992,
+      "perFieldMs": 2.8395528333333306,
+      "checksum": 3448955.3217941253
+    },
+    {
+      "serial": 99,
+      "scenario": "N100_dense",
+      "repetition": 6,
+      "method": "exact",
+      "evaluations": 30,
+      "elapsedMs": 81.49354999999969,
+      "perFieldMs": 2.7164516666666563,
+      "checksum": 3449248.217815174
+    },
+    {
+      "serial": 100,
+      "scenario": "N100_dense",
+      "repetition": 7,
+      "method": "epsilon_0.04",
+      "evaluations": 30,
+      "elapsedMs": 82.37197100000003,
+      "perFieldMs": 2.7457323666666675,
+      "checksum": 3448955.3217941253
+    },
+    {
+      "serial": 101,
+      "scenario": "N100_dense",
+      "repetition": 7,
+      "method": "legacy",
+      "evaluations": 30,
+      "elapsedMs": 154.71525900000051,
+      "perFieldMs": 5.157175300000017,
+      "checksum": 3449248.217815174
+    },
+    {
+      "serial": 102,
+      "scenario": "N100_dense",
+      "repetition": 7,
+      "method": "exact",
+      "evaluations": 30,
+      "elapsedMs": 95.23431299999993,
+      "perFieldMs": 3.1744770999999976,
+      "checksum": 3449248.217815174
+    },
+    {
+      "serial": 103,
+      "scenario": "N100_dense",
+      "repetition": 7,
+      "method": "epsilon_0.01",
+      "evaluations": 30,
+      "elapsedMs": 100.89823500000057,
+      "perFieldMs": 3.363274500000019,
+      "checksum": 3449239.03251511
+    },
+    {
+      "serial": 104,
+      "scenario": "N100_dense",
+      "repetition": 8,
+      "method": "epsilon_0.04",
+      "evaluations": 30,
+      "elapsedMs": 82.63878300000033,
+      "perFieldMs": 2.754626100000011,
+      "checksum": 3448955.3217941253
+    },
+    {
+      "serial": 105,
+      "scenario": "N100_dense",
+      "repetition": 8,
+      "method": "legacy",
+      "evaluations": 30,
+      "elapsedMs": 146.4690469999996,
+      "perFieldMs": 4.882301566666653,
+      "checksum": 3449248.217815174
+    },
+    {
+      "serial": 106,
+      "scenario": "N100_dense",
+      "repetition": 8,
+      "method": "exact",
+      "evaluations": 30,
+      "elapsedMs": 83.51620300000013,
+      "perFieldMs": 2.783873433333338,
+      "checksum": 3449248.217815174
+    },
+    {
+      "serial": 107,
+      "scenario": "N100_dense",
+      "repetition": 8,
+      "method": "epsilon_0.01",
+      "evaluations": 30,
+      "elapsedMs": 82.24938700000075,
+      "perFieldMs": 2.741646233333358,
+      "checksum": 3449239.03251511
+    },
+    {
+      "serial": 108,
+      "scenario": "N100_sparse",
+      "repetition": 0,
+      "method": "epsilon_0.01",
+      "evaluations": 30,
+      "elapsedMs": 34.609253999999964,
+      "perFieldMs": 1.1536417999999988,
+      "checksum": 0
+    },
+    {
+      "serial": 109,
+      "scenario": "N100_sparse",
+      "repetition": 0,
+      "method": "legacy",
+      "evaluations": 30,
+      "elapsedMs": 35.25354400000015,
+      "perFieldMs": 1.1751181333333383,
+      "checksum": 0
+    },
+    {
+      "serial": 110,
+      "scenario": "N100_sparse",
+      "repetition": 0,
+      "method": "exact",
+      "evaluations": 30,
+      "elapsedMs": 34.23575199999959,
+      "perFieldMs": 1.1411917333333197,
+      "checksum": 0
+    },
+    {
+      "serial": 111,
+      "scenario": "N100_sparse",
+      "repetition": 0,
+      "method": "epsilon_0.04",
+      "evaluations": 30,
+      "elapsedMs": 34.65058599999975,
+      "perFieldMs": 1.1550195333333249,
+      "checksum": 0
+    },
+    {
+      "serial": 112,
+      "scenario": "N100_sparse",
+      "repetition": 1,
+      "method": "legacy",
+      "evaluations": 30,
+      "elapsedMs": 33.923923000000286,
+      "perFieldMs": 1.1307974333333428,
+      "checksum": 0
+    },
+    {
+      "serial": 113,
+      "scenario": "N100_sparse",
+      "repetition": 1,
+      "method": "exact",
+      "evaluations": 30,
+      "elapsedMs": 33.84221999999954,
+      "perFieldMs": 1.1280739999999847,
+      "checksum": 0
+    },
+    {
+      "serial": 114,
+      "scenario": "N100_sparse",
+      "repetition": 1,
+      "method": "epsilon_0.01",
+      "evaluations": 30,
+      "elapsedMs": 33.463549999999486,
+      "perFieldMs": 1.1154516666666496,
+      "checksum": 0
+    },
+    {
+      "serial": 115,
+      "scenario": "N100_sparse",
+      "repetition": 1,
+      "method": "epsilon_0.04",
+      "evaluations": 30,
+      "elapsedMs": 33.98441399999956,
+      "perFieldMs": 1.1328137999999854,
+      "checksum": 0
+    },
+    {
+      "serial": 116,
+      "scenario": "N100_sparse",
+      "repetition": 2,
+      "method": "legacy",
+      "evaluations": 30,
+      "elapsedMs": 40.43271300000015,
+      "perFieldMs": 1.347757100000005,
+      "checksum": 0
+    },
+    {
+      "serial": 117,
+      "scenario": "N100_sparse",
+      "repetition": 2,
+      "method": "epsilon_0.01",
+      "evaluations": 30,
+      "elapsedMs": 33.28818700000011,
+      "perFieldMs": 1.109606233333337,
+      "checksum": 0
+    },
+    {
+      "serial": 118,
+      "scenario": "N100_sparse",
+      "repetition": 2,
+      "method": "exact",
+      "evaluations": 30,
+      "elapsedMs": 33.802161000000524,
+      "perFieldMs": 1.1267387000000175,
+      "checksum": 0
+    },
+    {
+      "serial": 119,
+      "scenario": "N100_sparse",
+      "repetition": 2,
+      "method": "epsilon_0.04",
+      "evaluations": 30,
+      "elapsedMs": 34.16424400000051,
+      "perFieldMs": 1.1388081333333502,
+      "checksum": 0
+    },
+    {
+      "serial": 120,
+      "scenario": "N100_sparse",
+      "repetition": 3,
+      "method": "exact",
+      "evaluations": 30,
+      "elapsedMs": 33.14727500000026,
+      "perFieldMs": 1.1049091666666755,
+      "checksum": 0
+    },
+    {
+      "serial": 121,
+      "scenario": "N100_sparse",
+      "repetition": 3,
+      "method": "epsilon_0.04",
+      "evaluations": 30,
+      "elapsedMs": 34.87567399999989,
+      "perFieldMs": 1.162522466666663,
+      "checksum": 0
+    },
+    {
+      "serial": 122,
+      "scenario": "N100_sparse",
+      "repetition": 3,
+      "method": "epsilon_0.01",
+      "evaluations": 30,
+      "elapsedMs": 33.992897000000085,
+      "perFieldMs": 1.1330965666666695,
+      "checksum": 0
+    },
+    {
+      "serial": 123,
+      "scenario": "N100_sparse",
+      "repetition": 3,
+      "method": "legacy",
+      "evaluations": 30,
+      "elapsedMs": 34.55643400000008,
+      "perFieldMs": 1.151881133333336,
+      "checksum": 0
+    },
+    {
+      "serial": 124,
+      "scenario": "N100_sparse",
+      "repetition": 4,
+      "method": "epsilon_0.04",
+      "evaluations": 30,
+      "elapsedMs": 34.564877000000706,
+      "perFieldMs": 1.1521625666666901,
+      "checksum": 0
+    },
+    {
+      "serial": 125,
+      "scenario": "N100_sparse",
+      "repetition": 4,
+      "method": "exact",
+      "evaluations": 30,
+      "elapsedMs": 36.114558000000216,
+      "perFieldMs": 1.2038186000000073,
+      "checksum": 0
+    },
+    {
+      "serial": 126,
+      "scenario": "N100_sparse",
+      "repetition": 4,
+      "method": "legacy",
+      "evaluations": 30,
+      "elapsedMs": 35.63899299999957,
+      "perFieldMs": 1.187966433333319,
+      "checksum": 0
+    },
+    {
+      "serial": 127,
+      "scenario": "N100_sparse",
+      "repetition": 4,
+      "method": "epsilon_0.01",
+      "evaluations": 30,
+      "elapsedMs": 35.13266199999998,
+      "perFieldMs": 1.1710887333333326,
+      "checksum": 0
+    },
+    {
+      "serial": 128,
+      "scenario": "N100_sparse",
+      "repetition": 5,
+      "method": "epsilon_0.04",
+      "evaluations": 30,
+      "elapsedMs": 34.38460600000053,
+      "perFieldMs": 1.146153533333351,
+      "checksum": 0
+    },
+    {
+      "serial": 129,
+      "scenario": "N100_sparse",
+      "repetition": 5,
+      "method": "epsilon_0.01",
+      "evaluations": 30,
+      "elapsedMs": 34.82217000000037,
+      "perFieldMs": 1.1607390000000124,
+      "checksum": 0
+    },
+    {
+      "serial": 130,
+      "scenario": "N100_sparse",
+      "repetition": 5,
+      "method": "legacy",
+      "evaluations": 30,
+      "elapsedMs": 34.21933799999988,
+      "perFieldMs": 1.140644599999996,
+      "checksum": 0
+    },
+    {
+      "serial": 131,
+      "scenario": "N100_sparse",
+      "repetition": 5,
+      "method": "exact",
+      "evaluations": 30,
+      "elapsedMs": 33.24275899999975,
+      "perFieldMs": 1.1080919666666584,
+      "checksum": 0
+    },
+    {
+      "serial": 132,
+      "scenario": "N100_sparse",
+      "repetition": 6,
+      "method": "exact",
+      "evaluations": 30,
+      "elapsedMs": 35.668196999999964,
+      "perFieldMs": 1.1889398999999987,
+      "checksum": 0
+    },
+    {
+      "serial": 133,
+      "scenario": "N100_sparse",
+      "repetition": 6,
+      "method": "epsilon_0.04",
+      "evaluations": 30,
+      "elapsedMs": 34.17859099999987,
+      "perFieldMs": 1.1392863666666624,
+      "checksum": 0
+    },
+    {
+      "serial": 134,
+      "scenario": "N100_sparse",
+      "repetition": 6,
+      "method": "legacy",
+      "evaluations": 30,
+      "elapsedMs": 34.1114149999994,
+      "perFieldMs": 1.1370471666666466,
+      "checksum": 0
+    },
+    {
+      "serial": 135,
+      "scenario": "N100_sparse",
+      "repetition": 6,
+      "method": "epsilon_0.01",
+      "evaluations": 30,
+      "elapsedMs": 33.29412599999978,
+      "perFieldMs": 1.1098041999999926,
+      "checksum": 0
+    },
+    {
+      "serial": 136,
+      "scenario": "N100_sparse",
+      "repetition": 7,
+      "method": "exact",
+      "evaluations": 30,
+      "elapsedMs": 34.14859199999955,
+      "perFieldMs": 1.138286399999985,
+      "checksum": 0
+    },
+    {
+      "serial": 137,
+      "scenario": "N100_sparse",
+      "repetition": 7,
+      "method": "epsilon_0.01",
+      "evaluations": 30,
+      "elapsedMs": 33.97595099999944,
+      "perFieldMs": 1.1325316999999813,
+      "checksum": 0
+    },
+    {
+      "serial": 138,
+      "scenario": "N100_sparse",
+      "repetition": 7,
+      "method": "epsilon_0.04",
+      "evaluations": 30,
+      "elapsedMs": 33.20007500000065,
+      "perFieldMs": 1.1066691666666884,
+      "checksum": 0
+    },
+    {
+      "serial": 139,
+      "scenario": "N100_sparse",
+      "repetition": 7,
+      "method": "legacy",
+      "evaluations": 30,
+      "elapsedMs": 35.29058900000018,
+      "perFieldMs": 1.1763529666666728,
+      "checksum": 0
+    },
+    {
+      "serial": 140,
+      "scenario": "N100_sparse",
+      "repetition": 8,
+      "method": "epsilon_0.04",
+      "evaluations": 30,
+      "elapsedMs": 32.66639200000009,
+      "perFieldMs": 1.0888797333333362,
+      "checksum": 0
+    },
+    {
+      "serial": 141,
+      "scenario": "N100_sparse",
+      "repetition": 8,
+      "method": "legacy",
+      "evaluations": 30,
+      "elapsedMs": 34.89467400000012,
+      "perFieldMs": 1.1631558000000042,
+      "checksum": 0
+    },
+    {
+      "serial": 142,
+      "scenario": "N100_sparse",
+      "repetition": 8,
+      "method": "exact",
+      "evaluations": 30,
+      "elapsedMs": 33.598283000000265,
+      "perFieldMs": 1.1199427666666755,
+      "checksum": 0
+    },
+    {
+      "serial": 143,
+      "scenario": "N100_sparse",
+      "repetition": 8,
+      "method": "epsilon_0.01",
+      "evaluations": 30,
+      "elapsedMs": 34.53161699999964,
+      "perFieldMs": 1.151053899999988,
+      "checksum": 0
+    },
+    {
+      "serial": 144,
+      "scenario": "N200_dense",
+      "repetition": 0,
+      "method": "epsilon_0.04",
+      "evaluations": 20,
+      "elapsedMs": 181.44851800000015,
+      "perFieldMs": 9.072425900000008,
+      "checksum": 13503857.065457115
+    },
+    {
+      "serial": 145,
+      "scenario": "N200_dense",
+      "repetition": 0,
+      "method": "epsilon_0.01",
+      "evaluations": 20,
+      "elapsedMs": 204.63876100000016,
+      "perFieldMs": 10.231938050000007,
+      "checksum": 13506345.291640041
+    },
+    {
+      "serial": 146,
+      "scenario": "N200_dense",
+      "repetition": 0,
+      "method": "legacy",
+      "evaluations": 20,
+      "elapsedMs": 360.8898680000002,
+      "perFieldMs": 18.04449340000001,
+      "checksum": 13506470.69409527
+    },
+    {
+      "serial": 147,
+      "scenario": "N200_dense",
+      "repetition": 0,
+      "method": "exact",
+      "evaluations": 20,
+      "elapsedMs": 214.72654799999964,
+      "perFieldMs": 10.736327399999983,
+      "checksum": 13506470.69409527
+    },
+    {
+      "serial": 148,
+      "scenario": "N200_dense",
+      "repetition": 1,
+      "method": "exact",
+      "evaluations": 20,
+      "elapsedMs": 219.54655100000036,
+      "perFieldMs": 10.977327550000018,
+      "checksum": 13506470.69409527
+    },
+    {
+      "serial": 149,
+      "scenario": "N200_dense",
+      "repetition": 1,
+      "method": "epsilon_0.04",
+      "evaluations": 20,
+      "elapsedMs": 210.08083200000056,
+      "perFieldMs": 10.504041600000027,
+      "checksum": 13503857.065457115
+    },
+    {
+      "serial": 150,
+      "scenario": "N200_dense",
+      "repetition": 1,
+      "method": "epsilon_0.01",
+      "evaluations": 20,
+      "elapsedMs": 185.63817899999958,
+      "perFieldMs": 9.281908949999979,
+      "checksum": 13506345.291640041
+    },
+    {
+      "serial": 151,
+      "scenario": "N200_dense",
+      "repetition": 1,
+      "method": "legacy",
+      "evaluations": 20,
+      "elapsedMs": 339.87819200000104,
+      "perFieldMs": 16.993909600000052,
+      "checksum": 13506470.69409527
+    },
+    {
+      "serial": 152,
+      "scenario": "N200_dense",
+      "repetition": 2,
+      "method": "exact",
+      "evaluations": 20,
+      "elapsedMs": 186.19290399999954,
+      "perFieldMs": 9.309645199999977,
+      "checksum": 13506470.69409527
+    },
+    {
+      "serial": 153,
+      "scenario": "N200_dense",
+      "repetition": 2,
+      "method": "epsilon_0.01",
+      "evaluations": 20,
+      "elapsedMs": 181.02950899999996,
+      "perFieldMs": 9.051475449999998,
+      "checksum": 13506345.291640041
+    },
+    {
+      "serial": 154,
+      "scenario": "N200_dense",
+      "repetition": 2,
+      "method": "legacy",
+      "evaluations": 20,
+      "elapsedMs": 342.266642999999,
+      "perFieldMs": 17.113332149999952,
+      "checksum": 13506470.69409527
+    },
+    {
+      "serial": 155,
+      "scenario": "N200_dense",
+      "repetition": 2,
+      "method": "epsilon_0.04",
+      "evaluations": 20,
+      "elapsedMs": 181.83688500000062,
+      "perFieldMs": 9.091844250000031,
+      "checksum": 13503857.065457115
+    },
+    {
+      "serial": 156,
+      "scenario": "N200_dense",
+      "repetition": 3,
+      "method": "epsilon_0.01",
+      "evaluations": 20,
+      "elapsedMs": 208.67142000000058,
+      "perFieldMs": 10.433571000000029,
+      "checksum": 13506345.291640041
+    },
+    {
+      "serial": 157,
+      "scenario": "N200_dense",
+      "repetition": 3,
+      "method": "epsilon_0.04",
+      "evaluations": 20,
+      "elapsedMs": 203.23907300000064,
+      "perFieldMs": 10.161953650000033,
+      "checksum": 13503857.065457115
+    },
+    {
+      "serial": 158,
+      "scenario": "N200_dense",
+      "repetition": 3,
+      "method": "exact",
+      "evaluations": 20,
+      "elapsedMs": 190.01340700000037,
+      "perFieldMs": 9.500670350000018,
+      "checksum": 13506470.69409527
+    },
+    {
+      "serial": 159,
+      "scenario": "N200_dense",
+      "repetition": 3,
+      "method": "legacy",
+      "evaluations": 20,
+      "elapsedMs": 354.06881599999906,
+      "perFieldMs": 17.703440799999953,
+      "checksum": 13506470.69409527
+    },
+    {
+      "serial": 160,
+      "scenario": "N200_dense",
+      "repetition": 4,
+      "method": "exact",
+      "evaluations": 20,
+      "elapsedMs": 200.308226000001,
+      "perFieldMs": 10.01541130000005,
+      "checksum": 13506470.69409527
+    },
+    {
+      "serial": 161,
+      "scenario": "N200_dense",
+      "repetition": 4,
+      "method": "epsilon_0.04",
+      "evaluations": 20,
+      "elapsedMs": 214.67175900000075,
+      "perFieldMs": 10.733587950000038,
+      "checksum": 13503857.065457115
+    },
+    {
+      "serial": 162,
+      "scenario": "N200_dense",
+      "repetition": 4,
+      "method": "epsilon_0.01",
+      "evaluations": 20,
+      "elapsedMs": 214.94237299999986,
+      "perFieldMs": 10.747118649999994,
+      "checksum": 13506345.291640041
+    },
+    {
+      "serial": 163,
+      "scenario": "N200_dense",
+      "repetition": 4,
+      "method": "legacy",
+      "evaluations": 20,
+      "elapsedMs": 395.53986500000065,
+      "perFieldMs": 19.776993250000032,
+      "checksum": 13506470.69409527
+    },
+    {
+      "serial": 164,
+      "scenario": "N200_dense",
+      "repetition": 5,
+      "method": "epsilon_0.01",
+      "evaluations": 20,
+      "elapsedMs": 196.94794600000023,
+      "perFieldMs": 9.847397300000011,
+      "checksum": 13506345.291640041
+    },
+    {
+      "serial": 165,
+      "scenario": "N200_dense",
+      "repetition": 5,
+      "method": "epsilon_0.04",
+      "evaluations": 20,
+      "elapsedMs": 215.37844799999948,
+      "perFieldMs": 10.768922399999974,
+      "checksum": 13503857.065457115
+    },
+    {
+      "serial": 166,
+      "scenario": "N200_dense",
+      "repetition": 5,
+      "method": "exact",
+      "evaluations": 20,
+      "elapsedMs": 203.3787599999996,
+      "perFieldMs": 10.16893799999998,
+      "checksum": 13506470.69409527
+    },
+    {
+      "serial": 167,
+      "scenario": "N200_dense",
+      "repetition": 5,
+      "method": "legacy",
+      "evaluations": 20,
+      "elapsedMs": 358.94001899999967,
+      "perFieldMs": 17.947000949999982,
+      "checksum": 13506470.69409527
+    },
+    {
+      "serial": 168,
+      "scenario": "N200_dense",
+      "repetition": 6,
+      "method": "legacy",
+      "evaluations": 20,
+      "elapsedMs": 345.6238379999995,
+      "perFieldMs": 17.281191899999975,
+      "checksum": 13506470.69409527
+    },
+    {
+      "serial": 169,
+      "scenario": "N200_dense",
+      "repetition": 6,
+      "method": "epsilon_0.01",
+      "evaluations": 20,
+      "elapsedMs": 200.40599199999997,
+      "perFieldMs": 10.020299599999998,
+      "checksum": 13506345.291640041
+    },
+    {
+      "serial": 170,
+      "scenario": "N200_dense",
+      "repetition": 6,
+      "method": "epsilon_0.04",
+      "evaluations": 20,
+      "elapsedMs": 200.50259299999925,
+      "perFieldMs": 10.025129649999963,
+      "checksum": 13503857.065457115
+    },
+    {
+      "serial": 171,
+      "scenario": "N200_dense",
+      "repetition": 6,
+      "method": "exact",
+      "evaluations": 20,
+      "elapsedMs": 211.0474549999999,
+      "perFieldMs": 10.552372749999995,
+      "checksum": 13506470.69409527
+    },
+    {
+      "serial": 172,
+      "scenario": "N200_dense",
+      "repetition": 7,
+      "method": "epsilon_0.01",
+      "evaluations": 20,
+      "elapsedMs": 229.28010600000016,
+      "perFieldMs": 11.464005300000007,
+      "checksum": 13506345.291640041
+    },
+    {
+      "serial": 173,
+      "scenario": "N200_dense",
+      "repetition": 7,
+      "method": "exact",
+      "evaluations": 20,
+      "elapsedMs": 222.96268599999894,
+      "perFieldMs": 11.148134299999947,
+      "checksum": 13506470.69409527
+    },
+    {
+      "serial": 174,
+      "scenario": "N200_dense",
+      "repetition": 7,
+      "method": "epsilon_0.04",
+      "evaluations": 20,
+      "elapsedMs": 202.67159700000047,
+      "perFieldMs": 10.133579850000023,
+      "checksum": 13503857.065457115
+    },
+    {
+      "serial": 175,
+      "scenario": "N200_dense",
+      "repetition": 7,
+      "method": "legacy",
+      "evaluations": 20,
+      "elapsedMs": 386.90432900000087,
+      "perFieldMs": 19.345216450000045,
+      "checksum": 13506470.69409527
+    },
+    {
+      "serial": 176,
+      "scenario": "N200_dense",
+      "repetition": 8,
+      "method": "exact",
+      "evaluations": 20,
+      "elapsedMs": 189.72199399999954,
+      "perFieldMs": 9.486099699999977,
+      "checksum": 13506470.69409527
+    },
+    {
+      "serial": 177,
+      "scenario": "N200_dense",
+      "repetition": 8,
+      "method": "epsilon_0.01",
+      "evaluations": 20,
+      "elapsedMs": 183.8897080000006,
+      "perFieldMs": 9.19448540000003,
+      "checksum": 13506345.291640041
+    },
+    {
+      "serial": 178,
+      "scenario": "N200_dense",
+      "repetition": 8,
+      "method": "legacy",
+      "evaluations": 20,
+      "elapsedMs": 355.6725180000012,
+      "perFieldMs": 17.78362590000006,
+      "checksum": 13506470.69409527
+    },
+    {
+      "serial": 179,
+      "scenario": "N200_dense",
+      "repetition": 8,
+      "method": "epsilon_0.04",
+      "evaluations": 20,
+      "elapsedMs": 187.15845900000022,
+      "perFieldMs": 9.357922950000011,
+      "checksum": 13503857.065457115
+    },
+    {
+      "serial": 180,
+      "scenario": "N200_mid",
+      "repetition": 0,
+      "method": "legacy",
+      "evaluations": 20,
+      "elapsedMs": 255.64049299999897,
+      "perFieldMs": 12.782024649999949,
+      "checksum": 9239862.819992328
+    },
+    {
+      "serial": 181,
+      "scenario": "N200_mid",
+      "repetition": 0,
+      "method": "epsilon_0.01",
+      "evaluations": 20,
+      "elapsedMs": 174.83628800000042,
+      "perFieldMs": 8.74181440000002,
+      "checksum": 9239862.819992328
+    },
+    {
+      "serial": 182,
+      "scenario": "N200_mid",
+      "repetition": 0,
+      "method": "epsilon_0.04",
+      "evaluations": 20,
+      "elapsedMs": 183.93621200000052,
+      "perFieldMs": 9.196810600000026,
+      "checksum": 9239862.819992328
+    },
+    {
+      "serial": 183,
+      "scenario": "N200_mid",
+      "repetition": 0,
+      "method": "exact",
+      "evaluations": 20,
+      "elapsedMs": 152.62181200000123,
+      "perFieldMs": 7.631090600000062,
+      "checksum": 9239862.819992328
+    },
+    {
+      "serial": 184,
+      "scenario": "N200_mid",
+      "repetition": 1,
+      "method": "epsilon_0.04",
+      "evaluations": 20,
+      "elapsedMs": 161.18707800000084,
+      "perFieldMs": 8.059353900000042,
+      "checksum": 9239862.819992328
+    },
+    {
+      "serial": 185,
+      "scenario": "N200_mid",
+      "repetition": 1,
+      "method": "exact",
+      "evaluations": 20,
+      "elapsedMs": 157.6145889999989,
+      "perFieldMs": 7.8807294499999445,
+      "checksum": 9239862.819992328
+    },
+    {
+      "serial": 186,
+      "scenario": "N200_mid",
+      "repetition": 1,
+      "method": "epsilon_0.01",
+      "evaluations": 20,
+      "elapsedMs": 162.66267900000094,
+      "perFieldMs": 8.133133950000047,
+      "checksum": 9239862.819992328
+    },
+    {
+      "serial": 187,
+      "scenario": "N200_mid",
+      "repetition": 1,
+      "method": "legacy",
+      "evaluations": 20,
+      "elapsedMs": 252.77875499999936,
+      "perFieldMs": 12.638937749999968,
+      "checksum": 9239862.819992328
+    },
+    {
+      "serial": 188,
+      "scenario": "N200_mid",
+      "repetition": 2,
+      "method": "epsilon_0.04",
+      "evaluations": 20,
+      "elapsedMs": 165.80074299999978,
+      "perFieldMs": 8.29003714999999,
+      "checksum": 9239862.819992328
+    },
+    {
+      "serial": 189,
+      "scenario": "N200_mid",
+      "repetition": 2,
+      "method": "exact",
+      "evaluations": 20,
+      "elapsedMs": 162.02023200000258,
+      "perFieldMs": 8.10101160000013,
+      "checksum": 9239862.819992328
+    },
+    {
+      "serial": 190,
+      "scenario": "N200_mid",
+      "repetition": 2,
+      "method": "legacy",
+      "evaluations": 20,
+      "elapsedMs": 254.4089189999977,
+      "perFieldMs": 12.720445949999885,
+      "checksum": 9239862.819992328
+    },
+    {
+      "serial": 191,
+      "scenario": "N200_mid",
+      "repetition": 2,
+      "method": "epsilon_0.01",
+      "evaluations": 20,
+      "elapsedMs": 165.83958200000052,
+      "perFieldMs": 8.291979100000026,
+      "checksum": 9239862.819992328
+    },
+    {
+      "serial": 192,
+      "scenario": "N200_mid",
+      "repetition": 3,
+      "method": "legacy",
+      "evaluations": 20,
+      "elapsedMs": 292.0944469999995,
+      "perFieldMs": 14.604722349999975,
+      "checksum": 9239862.819992328
+    },
+    {
+      "serial": 193,
+      "scenario": "N200_mid",
+      "repetition": 3,
+      "method": "epsilon_0.01",
+      "evaluations": 20,
+      "elapsedMs": 148.96575699999812,
+      "perFieldMs": 7.448287849999906,
+      "checksum": 9239862.819992328
+    },
+    {
+      "serial": 194,
+      "scenario": "N200_mid",
+      "repetition": 3,
+      "method": "epsilon_0.04",
+      "evaluations": 20,
+      "elapsedMs": 148.26079599999866,
+      "perFieldMs": 7.413039799999933,
+      "checksum": 9239862.819992328
+    },
+    {
+      "serial": 195,
+      "scenario": "N200_mid",
+      "repetition": 3,
+      "method": "exact",
+      "evaluations": 20,
+      "elapsedMs": 149.1236949999984,
+      "perFieldMs": 7.45618474999992,
+      "checksum": 9239862.819992328
+    },
+    {
+      "serial": 196,
+      "scenario": "N200_mid",
+      "repetition": 4,
+      "method": "exact",
+      "evaluations": 20,
+      "elapsedMs": 150.1336459999984,
+      "perFieldMs": 7.5066822999999205,
+      "checksum": 9239862.819992328
+    },
+    {
+      "serial": 197,
+      "scenario": "N200_mid",
+      "repetition": 4,
+      "method": "epsilon_0.01",
+      "evaluations": 20,
+      "elapsedMs": 150.57258699999875,
+      "perFieldMs": 7.528629349999937,
+      "checksum": 9239862.819992328
+    },
+    {
+      "serial": 198,
+      "scenario": "N200_mid",
+      "repetition": 4,
+      "method": "epsilon_0.04",
+      "evaluations": 20,
+      "elapsedMs": 151.0512869999984,
+      "perFieldMs": 7.552564349999921,
+      "checksum": 9239862.819992328
+    },
+    {
+      "serial": 199,
+      "scenario": "N200_mid",
+      "repetition": 4,
+      "method": "legacy",
+      "evaluations": 20,
+      "elapsedMs": 232.37176700000055,
+      "perFieldMs": 11.618588350000028,
+      "checksum": 9239862.819992328
+    },
+    {
+      "serial": 200,
+      "scenario": "N200_mid",
+      "repetition": 5,
+      "method": "legacy",
+      "evaluations": 20,
+      "elapsedMs": 233.45288900000014,
+      "perFieldMs": 11.672644450000007,
+      "checksum": 9239862.819992328
+    },
+    {
+      "serial": 201,
+      "scenario": "N200_mid",
+      "repetition": 5,
+      "method": "exact",
+      "evaluations": 20,
+      "elapsedMs": 151.27490000000034,
+      "perFieldMs": 7.563745000000017,
+      "checksum": 9239862.819992328
+    },
+    {
+      "serial": 202,
+      "scenario": "N200_mid",
+      "repetition": 5,
+      "method": "epsilon_0.01",
+      "evaluations": 20,
+      "elapsedMs": 152.16607899999872,
+      "perFieldMs": 7.608303949999936,
+      "checksum": 9239862.819992328
+    },
+    {
+      "serial": 203,
+      "scenario": "N200_mid",
+      "repetition": 5,
+      "method": "epsilon_0.04",
+      "evaluations": 20,
+      "elapsedMs": 148.58797200000117,
+      "perFieldMs": 7.4293986000000585,
+      "checksum": 9239862.819992328
+    },
+    {
+      "serial": 204,
+      "scenario": "N200_mid",
+      "repetition": 6,
+      "method": "exact",
+      "evaluations": 20,
+      "elapsedMs": 150.07039900000018,
+      "perFieldMs": 7.503519950000009,
+      "checksum": 9239862.819992328
+    },
+    {
+      "serial": 205,
+      "scenario": "N200_mid",
+      "repetition": 6,
+      "method": "legacy",
+      "evaluations": 20,
+      "elapsedMs": 236.37774600000193,
+      "perFieldMs": 11.818887300000096,
+      "checksum": 9239862.819992328
+    },
+    {
+      "serial": 206,
+      "scenario": "N200_mid",
+      "repetition": 6,
+      "method": "epsilon_0.01",
+      "evaluations": 20,
+      "elapsedMs": 172.85867000000144,
+      "perFieldMs": 8.642933500000073,
+      "checksum": 9239862.819992328
+    },
+    {
+      "serial": 207,
+      "scenario": "N200_mid",
+      "repetition": 6,
+      "method": "epsilon_0.04",
+      "evaluations": 20,
+      "elapsedMs": 175.02118900000278,
+      "perFieldMs": 8.751059450000138,
+      "checksum": 9239862.819992328
+    },
+    {
+      "serial": 208,
+      "scenario": "N200_mid",
+      "repetition": 7,
+      "method": "epsilon_0.01",
+      "evaluations": 20,
+      "elapsedMs": 149.00460800000292,
+      "perFieldMs": 7.450230400000146,
+      "checksum": 9239862.819992328
+    },
+    {
+      "serial": 209,
+      "scenario": "N200_mid",
+      "repetition": 7,
+      "method": "legacy",
+      "evaluations": 20,
+      "elapsedMs": 255.7502769999992,
+      "perFieldMs": 12.787513849999959,
+      "checksum": 9239862.819992328
+    },
+    {
+      "serial": 210,
+      "scenario": "N200_mid",
+      "repetition": 7,
+      "method": "exact",
+      "evaluations": 20,
+      "elapsedMs": 184.19187199999942,
+      "perFieldMs": 9.209593599999971,
+      "checksum": 9239862.819992328
+    },
+    {
+      "serial": 211,
+      "scenario": "N200_mid",
+      "repetition": 7,
+      "method": "epsilon_0.04",
+      "evaluations": 20,
+      "elapsedMs": 175.16402400000152,
+      "perFieldMs": 8.758201200000077,
+      "checksum": 9239862.819992328
+    },
+    {
+      "serial": 212,
+      "scenario": "N200_mid",
+      "repetition": 8,
+      "method": "epsilon_0.04",
+      "evaluations": 20,
+      "elapsedMs": 170.62503300000026,
+      "perFieldMs": 8.531251650000012,
+      "checksum": 9239862.819992328
+    },
+    {
+      "serial": 213,
+      "scenario": "N200_mid",
+      "repetition": 8,
+      "method": "exact",
+      "evaluations": 20,
+      "elapsedMs": 170.0939389999985,
+      "perFieldMs": 8.504696949999925,
+      "checksum": 9239862.819992328
+    },
+    {
+      "serial": 214,
+      "scenario": "N200_mid",
+      "repetition": 8,
+      "method": "legacy",
+      "evaluations": 20,
+      "elapsedMs": 267.583327999997,
+      "perFieldMs": 13.37916639999985,
+      "checksum": 9239862.819992328
+    },
+    {
+      "serial": 215,
+      "scenario": "N200_mid",
+      "repetition": 8,
+      "method": "epsilon_0.01",
+      "evaluations": 20,
+      "elapsedMs": 169.95821100000103,
+      "perFieldMs": 8.497910550000052,
+      "checksum": 9239862.819992328
+    },
+    {
+      "serial": 216,
+      "scenario": "N200_sparse",
+      "repetition": 0,
+      "method": "exact",
+      "evaluations": 20,
+      "elapsedMs": 50.124753000000055,
+      "perFieldMs": 2.5062376500000028,
+      "checksum": 0
+    },
+    {
+      "serial": 217,
+      "scenario": "N200_sparse",
+      "repetition": 0,
+      "method": "legacy",
+      "evaluations": 20,
+      "elapsedMs": 55.188937000002625,
+      "perFieldMs": 2.7594468500001312,
+      "checksum": 0
+    },
+    {
+      "serial": 218,
+      "scenario": "N200_sparse",
+      "repetition": 0,
+      "method": "epsilon_0.04",
+      "evaluations": 20,
+      "elapsedMs": 49.0605719999985,
+      "perFieldMs": 2.453028599999925,
+      "checksum": 0
+    },
+    {
+      "serial": 219,
+      "scenario": "N200_sparse",
+      "repetition": 0,
+      "method": "epsilon_0.01",
+      "evaluations": 20,
+      "elapsedMs": 52.00205900000219,
+      "perFieldMs": 2.6001029500001094,
+      "checksum": 0
+    },
+    {
+      "serial": 220,
+      "scenario": "N200_sparse",
+      "repetition": 1,
+      "method": "epsilon_0.04",
+      "evaluations": 20,
+      "elapsedMs": 53.95683199999985,
+      "perFieldMs": 2.6978415999999923,
+      "checksum": 0
+    },
+    {
+      "serial": 221,
+      "scenario": "N200_sparse",
+      "repetition": 1,
+      "method": "exact",
+      "evaluations": 20,
+      "elapsedMs": 54.59511399999974,
+      "perFieldMs": 2.729755699999987,
+      "checksum": 0
+    },
+    {
+      "serial": 222,
+      "scenario": "N200_sparse",
+      "repetition": 1,
+      "method": "legacy",
+      "evaluations": 20,
+      "elapsedMs": 53.21208100000149,
+      "perFieldMs": 2.6606040500000745,
+      "checksum": 0
+    },
+    {
+      "serial": 223,
+      "scenario": "N200_sparse",
+      "repetition": 1,
+      "method": "epsilon_0.01",
+      "evaluations": 20,
+      "elapsedMs": 49.84051499999987,
+      "perFieldMs": 2.4920257499999936,
+      "checksum": 0
+    },
+    {
+      "serial": 224,
+      "scenario": "N200_sparse",
+      "repetition": 2,
+      "method": "exact",
+      "evaluations": 20,
+      "elapsedMs": 54.913001999997505,
+      "perFieldMs": 2.7456500999998754,
+      "checksum": 0
+    },
+    {
+      "serial": 225,
+      "scenario": "N200_sparse",
+      "repetition": 2,
+      "method": "epsilon_0.01",
+      "evaluations": 20,
+      "elapsedMs": 48.93996999999945,
+      "perFieldMs": 2.4469984999999723,
+      "checksum": 0
+    },
+    {
+      "serial": 226,
+      "scenario": "N200_sparse",
+      "repetition": 2,
+      "method": "legacy",
+      "evaluations": 20,
+      "elapsedMs": 52.87052700000277,
+      "perFieldMs": 2.6435263500001382,
+      "checksum": 0
+    },
+    {
+      "serial": 227,
+      "scenario": "N200_sparse",
+      "repetition": 2,
+      "method": "epsilon_0.04",
+      "evaluations": 20,
+      "elapsedMs": 49.291488999999274,
+      "perFieldMs": 2.464574449999964,
+      "checksum": 0
+    },
+    {
+      "serial": 228,
+      "scenario": "N200_sparse",
+      "repetition": 3,
+      "method": "exact",
+      "evaluations": 20,
+      "elapsedMs": 49.60979800000132,
+      "perFieldMs": 2.480489900000066,
+      "checksum": 0
+    },
+    {
+      "serial": 229,
+      "scenario": "N200_sparse",
+      "repetition": 3,
+      "method": "epsilon_0.04",
+      "evaluations": 20,
+      "elapsedMs": 49.4595819999995,
+      "perFieldMs": 2.472979099999975,
+      "checksum": 0
+    },
+    {
+      "serial": 230,
+      "scenario": "N200_sparse",
+      "repetition": 3,
+      "method": "legacy",
+      "evaluations": 20,
+      "elapsedMs": 50.470964999996795,
+      "perFieldMs": 2.52354824999984,
+      "checksum": 0
+    },
+    {
+      "serial": 231,
+      "scenario": "N200_sparse",
+      "repetition": 3,
+      "method": "epsilon_0.01",
+      "evaluations": 20,
+      "elapsedMs": 48.95109700000103,
+      "perFieldMs": 2.4475548500000515,
+      "checksum": 0
+    },
+    {
+      "serial": 232,
+      "scenario": "N200_sparse",
+      "repetition": 4,
+      "method": "exact",
+      "evaluations": 20,
+      "elapsedMs": 48.59591200000068,
+      "perFieldMs": 2.429795600000034,
+      "checksum": 0
+    },
+    {
+      "serial": 233,
+      "scenario": "N200_sparse",
+      "repetition": 4,
+      "method": "epsilon_0.04",
+      "evaluations": 20,
+      "elapsedMs": 50.122670999997354,
+      "perFieldMs": 2.5061335499998676,
+      "checksum": 0
+    },
+    {
+      "serial": 234,
+      "scenario": "N200_sparse",
+      "repetition": 4,
+      "method": "epsilon_0.01",
+      "evaluations": 20,
+      "elapsedMs": 49.16537999999855,
+      "perFieldMs": 2.4582689999999277,
+      "checksum": 0
+    },
+    {
+      "serial": 235,
+      "scenario": "N200_sparse",
+      "repetition": 4,
+      "method": "legacy",
+      "evaluations": 20,
+      "elapsedMs": 50.608351000002585,
+      "perFieldMs": 2.5304175500001294,
+      "checksum": 0
+    },
+    {
+      "serial": 236,
+      "scenario": "N200_sparse",
+      "repetition": 5,
+      "method": "exact",
+      "evaluations": 20,
+      "elapsedMs": 49.107711999997264,
+      "perFieldMs": 2.4553855999998633,
+      "checksum": 0
+    },
+    {
+      "serial": 237,
+      "scenario": "N200_sparse",
+      "repetition": 5,
+      "method": "epsilon_0.01",
+      "evaluations": 20,
+      "elapsedMs": 50.412286999999196,
+      "perFieldMs": 2.52061434999996,
+      "checksum": 0
+    },
+    {
+      "serial": 238,
+      "scenario": "N200_sparse",
+      "repetition": 5,
+      "method": "legacy",
+      "evaluations": 20,
+      "elapsedMs": 50.172685999998066,
+      "perFieldMs": 2.5086342999999034,
+      "checksum": 0
+    },
+    {
+      "serial": 239,
+      "scenario": "N200_sparse",
+      "repetition": 5,
+      "method": "epsilon_0.04",
+      "evaluations": 20,
+      "elapsedMs": 50.449172000000544,
+      "perFieldMs": 2.5224586000000273,
+      "checksum": 0
+    },
+    {
+      "serial": 240,
+      "scenario": "N200_sparse",
+      "repetition": 6,
+      "method": "legacy",
+      "evaluations": 20,
+      "elapsedMs": 50.52859100000205,
+      "perFieldMs": 2.5264295500001026,
+      "checksum": 0
+    },
+    {
+      "serial": 241,
+      "scenario": "N200_sparse",
+      "repetition": 6,
+      "method": "exact",
+      "evaluations": 20,
+      "elapsedMs": 49.94845300000088,
+      "perFieldMs": 2.4974226500000443,
+      "checksum": 0
+    },
+    {
+      "serial": 242,
+      "scenario": "N200_sparse",
+      "repetition": 6,
+      "method": "epsilon_0.04",
+      "evaluations": 20,
+      "elapsedMs": 50.707249999999476,
+      "perFieldMs": 2.535362499999974,
+      "checksum": 0
+    },
+    {
+      "serial": 243,
+      "scenario": "N200_sparse",
+      "repetition": 6,
+      "method": "epsilon_0.01",
+      "evaluations": 20,
+      "elapsedMs": 48.1334960000022,
+      "perFieldMs": 2.40667480000011,
+      "checksum": 0
+    },
+    {
+      "serial": 244,
+      "scenario": "N200_sparse",
+      "repetition": 7,
+      "method": "epsilon_0.04",
+      "evaluations": 20,
+      "elapsedMs": 48.53303700000106,
+      "perFieldMs": 2.426651850000053,
+      "checksum": 0
+    },
+    {
+      "serial": 245,
+      "scenario": "N200_sparse",
+      "repetition": 7,
+      "method": "epsilon_0.01",
+      "evaluations": 20,
+      "elapsedMs": 47.527743999999075,
+      "perFieldMs": 2.3763871999999537,
+      "checksum": 0
+    },
+    {
+      "serial": 246,
+      "scenario": "N200_sparse",
+      "repetition": 7,
+      "method": "legacy",
+      "evaluations": 20,
+      "elapsedMs": 50.36913199999981,
+      "perFieldMs": 2.5184565999999906,
+      "checksum": 0
+    },
+    {
+      "serial": 247,
+      "scenario": "N200_sparse",
+      "repetition": 7,
+      "method": "exact",
+      "evaluations": 20,
+      "elapsedMs": 47.05719599999793,
+      "perFieldMs": 2.3528597999998966,
+      "checksum": 0
+    },
+    {
+      "serial": 248,
+      "scenario": "N200_sparse",
+      "repetition": 8,
+      "method": "epsilon_0.04",
+      "evaluations": 20,
+      "elapsedMs": 47.28317600000082,
+      "perFieldMs": 2.364158800000041,
+      "checksum": 0
+    },
+    {
+      "serial": 249,
+      "scenario": "N200_sparse",
+      "repetition": 8,
+      "method": "exact",
+      "evaluations": 20,
+      "elapsedMs": 47.66964799999914,
+      "perFieldMs": 2.383482399999957,
+      "checksum": 0
+    },
+    {
+      "serial": 250,
+      "scenario": "N200_sparse",
+      "repetition": 8,
+      "method": "epsilon_0.01",
+      "evaluations": 20,
+      "elapsedMs": 47.630779999999504,
+      "perFieldMs": 2.381538999999975,
+      "checksum": 0
+    },
+    {
+      "serial": 251,
+      "scenario": "N200_sparse",
+      "repetition": 8,
+      "method": "legacy",
+      "evaluations": 20,
+      "elapsedMs": 50.33349799999996,
+      "perFieldMs": 2.516674899999998,
+      "checksum": 0
+    }
+  ],
+  "summaries": [
+    {
+      "scenario": "N8_dense",
+      "n": 8,
+      "spacing": 0.4,
+      "methods": {
+        "legacy": {
+          "median": 0.10416267999999945,
+          "q25": 0.10272892000000013,
+          "q75": 0.10463798999999994,
+          "min": 0.09840862000000015,
+          "max": 0.14737526000000004,
+          "pairedRatioMedian": 1.2217556860165513,
+          "pairedRatio95Bootstrap": [
+            1.1810346006398444,
+            1.2527212251048156
+          ],
+          "provisionalSpeedGate": false
+        },
+        "exact": {
+          "median": 0.08848766999999981,
+          "q25": 0.08408302999999989,
+          "q75": 0.10234034000000009,
+          "min": 0.08314202000000023,
+          "max": 0.19735213000000015,
+          "pairedRatioMedian": 1,
+          "pairedRatio95Bootstrap": [
+            1,
+            1
+          ],
+          "provisionalSpeedGate": false
+        },
+        "epsilon_0.01": {
+          "median": 0.09102840000000015,
+          "q25": 0.09062379000000022,
+          "q75": 0.10433662999999996,
+          "min": 0.08247100999999986,
+          "max": 0.17130370999999997,
+          "pairedRatioMedian": 1.0792515021233355,
+          "pairedRatio95Bootstrap": [
+            0.9918445328291463,
+            1.1791092476499854
+          ],
+          "provisionalSpeedGate": false
+        },
+        "epsilon_0.04": {
+          "median": 0.09211373000000009,
+          "q25": 0.09161727999999983,
+          "q75": 0.09758767000000006,
+          "min": 0.08629436999999995,
+          "max": 0.11677526999999997,
+          "pairedRatioMedian": 1.0262994804064514,
+          "pairedRatio95Bootstrap": [
+            0.9853218394150607,
+            1.1028391865216958
+          ],
+          "provisionalSpeedGate": false
+        }
+      }
+    },
+    {
+      "scenario": "N8_sparse",
+      "n": 8,
+      "spacing": 4,
+      "methods": {
+        "legacy": {
+          "median": 0.07551893999999948,
+          "q25": 0.07295427000000018,
+          "q75": 0.07739135999999974,
+          "min": 0.07030709000000002,
+          "max": 0.09515140999999971,
+          "pairedRatioMedian": 1.0301471257148958,
+          "pairedRatio95Bootstrap": [
+            0.9947534089956096,
+            1.1162298028552735
+          ],
+          "provisionalSpeedGate": false
+        },
+        "exact": {
+          "median": 0.07060983999999962,
+          "q25": 0.06933281999999963,
+          "q75": 0.07333905000000072,
+          "min": 0.06831399000000032,
+          "max": 0.07770103000000063,
+          "pairedRatioMedian": 1,
+          "pairedRatio95Bootstrap": [
+            1,
+            1
+          ],
+          "provisionalSpeedGate": false
+        },
+        "epsilon_0.01": {
+          "median": 0.07242267999999967,
+          "q25": 0.06938089999999988,
+          "q75": 0.0765660200000002,
+          "min": 0.06768914999999992,
+          "max": 0.07752146000000039,
+          "pairedRatioMedian": 1.0224403981168892,
+          "pairedRatio95Bootstrap": [
+            0.9762930456312073,
+            1.1091318474813743
+          ],
+          "provisionalSpeedGate": false
+        },
+        "epsilon_0.04": {
+          "median": 0.06998991000000046,
+          "q25": 0.06849826000000007,
+          "q75": 0.07516419999999982,
+          "min": 0.0679295099999996,
+          "max": 0.07598553999999921,
+          "pairedRatioMedian": 0.9905211511596744,
+          "pairedRatio95Bootstrap": [
+            0.9432799472226222,
+            1.0725163240524562
+          ],
+          "provisionalSpeedGate": false
+        }
+      }
+    },
+    {
+      "scenario": "N100_dense",
+      "n": 100,
+      "spacing": 0.4,
+      "methods": {
+        "legacy": {
+          "median": 5.171175899999995,
+          "q25": 5.128022400000009,
+          "q75": 5.200021233333336,
+          "min": 4.882301566666653,
+          "max": 6.1638403,
+          "pairedRatioMedian": 1.7537800060187045,
+          "pairedRatio95Bootstrap": [
+            1.6245747370488264,
+            1.9101040757213357
+          ],
+          "provisionalSpeedGate": false
+        },
+        "exact": {
+          "median": 2.985911033333332,
+          "q25": 2.9211532333333254,
+          "q75": 3.0316202333333346,
+          "min": 2.7164516666666563,
+          "max": 3.316637800000001,
+          "pairedRatioMedian": 1,
+          "pairedRatio95Bootstrap": [
+            1,
+            1
+          ],
+          "provisionalSpeedGate": false
+        },
+        "epsilon_0.01": {
+          "median": 3.0038211666666634,
+          "q25": 2.9217470000000048,
+          "q75": 3.247589833333336,
+          "min": 2.741646233333358,
+          "max": 3.363274500000019,
+          "pairedRatioMedian": 1.0594735429025528,
+          "pairedRatio95Bootstrap": [
+            0.9658687257497139,
+            1.0799088104779855
+          ],
+          "provisionalSpeedGate": false
+        },
+        "epsilon_0.04": {
+          "median": 2.9034655999999965,
+          "q25": 2.754626100000011,
+          "q75": 3.0376342999999983,
+          "min": 2.7385593333333267,
+          "max": 3.1351097666666647,
+          "pairedRatioMedian": 0.9939449827104258,
+          "pairedRatio95Bootstrap": [
+            0.9452674532825573,
+            1.0019837796965918
+          ],
+          "provisionalSpeedGate": false
+        }
+      }
+    },
+    {
+      "scenario": "N100_sparse",
+      "n": 100,
+      "spacing": 4,
+      "methods": {
+        "legacy": {
+          "median": 1.1631558000000042,
+          "q25": 1.140644599999996,
+          "q75": 1.1763529666666728,
+          "min": 1.1307974333333428,
+          "max": 1.347757100000005,
+          "pairedRatioMedian": 1.0297289219760841,
+          "pairedRatio95Bootstrap": [
+            0.9868317646307441,
+            1.0425120617003905
+          ],
+          "provisionalSpeedGate": false
+        },
+        "exact": {
+          "median": 1.1280739999999847,
+          "q25": 1.1199427666666755,
+          "q75": 1.1411917333333197,
+          "min": 1.1049091666666755,
+          "max": 1.2038186000000073,
+          "pairedRatioMedian": 1,
+          "pairedRatio95Bootstrap": [
+            1,
+            1
+          ],
+          "provisionalSpeedGate": false
+        },
+        "epsilon_0.01": {
+          "median": 1.1330965666666695,
+          "q25": 1.1154516666666496,
+          "q75": 1.1536417999999988,
+          "min": 1.109606233333337,
+          "max": 1.1710887333333326,
+          "pairedRatioMedian": 0.9949444182061704,
+          "pairedRatio95Bootstrap": [
+            0.972811629038898,
+            1.0277792171700968
+          ],
+          "provisionalSpeedGate": false
+        },
+        "epsilon_0.04": {
+          "median": 1.1392863666666624,
+          "q25": 1.1328137999999854,
+          "q75": 1.1521625666666901,
+          "min": 1.0888797333333362,
+          "max": 1.162522466666663,
+          "pairedRatioMedian": 1.0042016747128297,
+          "pairedRatio95Bootstrap": [
+            0.9582371376943979,
+            1.0343487434361507
+          ],
+          "provisionalSpeedGate": false
+        }
+      }
+    },
+    {
+      "scenario": "N200_dense",
+      "n": 200,
+      "spacing": 0.4,
+      "methods": {
+        "legacy": {
+          "median": 17.78362590000006,
+          "q25": 17.281191899999975,
+          "q75": 18.04449340000001,
+          "min": 16.993909600000052,
+          "max": 19.776993250000032,
+          "pairedRatioMedian": 1.7648844894127604,
+          "pairedRatio95Bootstrap": [
+            1.637659350121041,
+            1.8747036677255355
+          ],
+          "provisionalSpeedGate": false
+        },
+        "exact": {
+          "median": 10.16893799999998,
+          "q25": 9.500670350000018,
+          "q75": 10.736327399999983,
+          "min": 9.309645199999977,
+          "max": 11.148134299999947,
+          "pairedRatioMedian": 1,
+          "pairedRatio95Bootstrap": [
+            1,
+            1
+          ],
+          "provisionalSpeedGate": false
+        },
+        "epsilon_0.01": {
+          "median": 10.020299599999998,
+          "q25": 9.281908949999979,
+          "q75": 10.433571000000029,
+          "min": 9.051475449999998,
+          "max": 11.464005300000007,
+          "pairedRatioMedian": 0.9692587776618089,
+          "pairedRatio95Bootstrap": [
+            0.9495778662670917,
+            1.07305814290422
+          ],
+          "provisionalSpeedGate": false
+        },
+        "epsilon_0.04": {
+          "median": 10.133579850000023,
+          "q25": 9.357922950000011,
+          "q75": 10.504041600000027,
+          "min": 9.072425900000008,
+          "max": 10.768922399999974,
+          "pairedRatioMedian": 0.9766048065934945,
+          "pairedRatio95Bootstrap": [
+            0.9089933416033633,
+            1.069603856953106
+          ],
+          "provisionalSpeedGate": false
+        }
+      }
+    },
+    {
+      "scenario": "N200_mid",
+      "n": 200,
+      "spacing": 0.75,
+      "methods": {
+        "legacy": {
+          "median": 12.720445949999885,
+          "q25": 11.818887300000096,
+          "q75": 12.787513849999959,
+          "min": 11.618588350000028,
+          "max": 14.604722349999975,
+          "pairedRatioMedian": 1.5731502813865659,
+          "pairedRatio95Bootstrap": [
+            1.5432361151783913,
+            1.6749931720113302
+          ],
+          "provisionalSpeedGate": false
+        },
+        "exact": {
+          "median": 7.631090600000062,
+          "q25": 7.5066822999999205,
+          "q75": 8.10101160000013,
+          "min": 7.45618474999992,
+          "max": 9.209593599999971,
+          "pairedRatioMedian": 1,
+          "pairedRatio95Bootstrap": [
+            1,
+            1
+          ],
+          "provisionalSpeedGate": false
+        },
+        "epsilon_0.01": {
+          "median": 8.133133950000047,
+          "q25": 7.528629349999937,
+          "q75": 8.497910550000052,
+          "min": 7.448287849999906,
+          "max": 8.74181440000002,
+          "pairedRatioMedian": 1.0058911227176377,
+          "pairedRatio95Bootstrap": [
+            0.9992020409381109,
+            1.1455524325710338
+          ],
+          "provisionalSpeedGate": false
+        },
+        "epsilon_0.04": {
+          "median": 8.29003714999999,
+          "q25": 7.552564349999921,
+          "q75": 8.751059450000138,
+          "min": 7.413039799999933,
+          "max": 9.196810600000026,
+          "pairedRatioMedian": 1.0061121608943009,
+          "pairedRatio95Bootstrap": [
+            0.9822381108829081,
+            1.1662605694811443
+          ],
+          "provisionalSpeedGate": false
+        }
+      }
+    },
+    {
+      "scenario": "N200_sparse",
+      "n": 200,
+      "spacing": 4,
+      "methods": {
+        "legacy": {
+          "median": 2.5264295500001026,
+          "q25": 2.5184565999999906,
+          "q75": 2.6435263500001382,
+          "min": 2.5086342999999034,
+          "max": 2.7594468500001312,
+          "pairedRatioMedian": 1.0216864919302464,
+          "pairedRatio95Bootstrap": [
+            0.9746674583370546,
+            1.070381074129492
+          ],
+          "provisionalSpeedGate": false
+        },
+        "exact": {
+          "median": 2.480489900000066,
+          "q25": 2.429795600000034,
+          "q75": 2.5062376500000028,
+          "min": 2.3528597999998966,
+          "max": 2.7456500999998754,
+          "pairedRatioMedian": 1,
+          "pairedRatio95Bootstrap": [
+            1,
+            1
+          ],
+          "provisionalSpeedGate": false
+        },
+        "epsilon_0.01": {
+          "median": 2.4475548500000515,
+          "q25": 2.40667480000011,
+          "q75": 2.4920257499999936,
+          "min": 2.3763871999999537,
+          "max": 2.6001029500001094,
+          "pairedRatioMedian": 0.9991846384097564,
+          "pairedRatio95Bootstrap": [
+            0.9129116389426372,
+            1.0265655830188547
+          ],
+          "provisionalSpeedGate": false
+        },
+        "epsilon_0.04": {
+          "median": 2.472979099999975,
+          "q25": 2.453028599999925,
+          "q75": 2.5224586000000273,
+          "min": 2.364158800000041,
+          "max": 2.6978415999999923,
+          "pairedRatioMedian": 0.9969720497551348,
+          "pairedRatio95Bootstrap": [
+            0.9787693517412135,
+            1.0274178375132017
+          ],
+          "provisionalSpeedGate": false
+        }
+      }
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 This local research campaign tests controlled omission of geometrically weak wake interactions against a pinned, finite-support, unvalidated mean-field model. It preserves four receiver rotors and force/moment response. Passing tests establishes software/model-relative bounds, not aerodynamic validity, flight safety or real-time performance.
 
-Status at this checkpoint: preregistered plan, v0 negative result, v1 candidate and ten tiny correctness checks. Broader tests, timing and actual Boids replay are pending. This is a pre-run checkpoint, not a completed scientific milestone.
+Status: the bounded campaign is complete. Numerical error bounds passed, but the weak-wake pruning speed-benefit gate failed. The failed v0 development candidate, all timings, compact accuracy cases and eight one-second genuine local Boids records are retained. Read REPORT.md for the result and limitations.
 
 ## Layout and reproduction
 
@@ -13,9 +13,17 @@ From this directory, run:
 ```
 node src/verify-source.cjs
 node src/checks.cjs
+timeout 180s node src/experiment.cjs accuracy
+python src/summarize-accuracy.py
+timeout 285s node src/experiment.cjs timing
+timeout 90s node src/boids-diagnostic.cjs
 ```
 
-The verification command checks SHA-256 of the imported historical source files. The tiny check command regenerates `results/tiny-checks.json`. Read `PLAN.md` and `AMENDMENTS.md` before running additional experiments. All measured work is bounded and serial. No large evidence archive is needed.
+The verification command checks SHA-256 of the imported historical source files. The tiny check command regenerates `results/tiny-checks.json`. Read `PLAN.md` and `AMENDMENTS.md` before running additional experiments. All measured work is bounded and serial. No large historical evidence archive is needed. Full new per-rotor accuracy evidence is about 194 MiB compressed and retained separately, with its exact hash/bytes in results/accuracy-cases.json.
+
+Open wake-pruning-evidence.html directly in a browser for the self-contained offline Three.js replay. Alternatively run `python3 -m http.server 8876 --bind 127.0.0.1` here and open `http://127.0.0.1:8876/demo/index.html`. The viewer displays actual saved states and held fields; it performs no physics simulation. The source-based build requires esbuild only if regenerating the standalone HTML; all numerical scripts need only Node's built-in modules.
+
+Viewer verification is limited to source/data identity and syntax checks. Browser launch was blocked by a socket permission restriction, so rendered appearance, interactions and mobile layout remain unverified.
 
 ## Records and limitations
 
