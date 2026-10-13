@@ -1,0 +1,104 @@
+{
+  "schema": "independent-static-retention-forecast/v1",
+  "status": "prospective conservative allocation, no numerical execution",
+  "amendedPlanSha256": "b68a2a93b29e85b3784d874010c767ee7ba3eacfdcc71d4bb6b91d31606d4bba",
+  "hardCapBytes": 200000000,
+  "failureReserveBytes": 2000000,
+  "components": [
+    {
+      "name": "original dense input arrays",
+      "bytes": 27857152,
+      "basis": "2 x 6401 x 16 x 17 x 8"
+    },
+    {
+      "name": "original retained gzip transport fragments",
+      "bytes": 26736688,
+      "basis": "Verified input materialization; all four fragments remain"
+    },
+    {
+      "name": "sixteen prescribed new raw-state outputs",
+      "bytes": 76630016,
+      "basis": "2 dense J3 plus14 common arrays; no duplicate J3 common file"
+    },
+    {
+      "name": "compatibility retained states allowance",
+      "bytes": 872576,
+      "basis": "401 x16x17x8; allows every compatibility endpoint"
+    },
+    {
+      "name": "all branch-signature streams",
+      "bytes": 8922208,
+      "basis": "278819 records x32; J112006 + H/P153610 + preflight12802 + compatibility401; exact same-state refreshes alias accepted sample"
+    },
+    {
+      "name": "all controller binary rows",
+      "bytes": 4377600,
+      "basis": "19 windows x100 events x16 drones x18 Float64"
+    },
+    {
+      "name": "held-field hash streams",
+      "bytes": 2358400,
+      "basis": "73700 actual production refreshes x32; includes100 compatibility"
+    },
+    {
+      "name": "raw first/worst bracket payload maximum",
+      "bytes": 1958400,
+      "basis": "19 windows x9 categories x2 brackets x2 sides x2176B; plus6 J windows x9x2x2x2176 raw off-manifold copies"
+    },
+    {
+      "name": "all source, copied historical runs, input metadata, reviews and freeze identities",
+      "bytes": 4000000,
+      "basis": "Explicit prospective source/static-data allocation envelope, including vendored viewer source and all current nonarray inputs/documents; must be rechecked immediately before freeze"
+    },
+    {
+      "name": "selected first/worst stage evidence beyond brackets",
+      "bytes": 1000000,
+      "basis": "Prospective allowance for raw geometry/commands/fields/derivatives; complete schema must fit before freeze"
+    },
+    {
+      "name": "all result metadata, controller metadata, comparisons, manifests and checkpoints",
+      "bytes": 20000000,
+      "basis": "Conservative prospective serialization envelope including display records, not a measured final size; compact field events mandatory"
+    },
+    {
+      "name": "one maximal atomic-write transient or retained partial",
+      "bytes": 14000000,
+      "basis": "Largest prescribed new raw file13928576B; serial writers, stop immediately after one write failure; no retry discards partial"
+    },
+    {
+      "name": "fixtures and ancillary stdout/stderr retention",
+      "bytes": 1000000,
+      "basis": "Explicit prospective bounded fixture/log envelope"
+    },
+    {
+      "name": "failure reserve inside hard cap",
+      "bytes": 2000000,
+      "basis": "Only failure evidence and final failure inventory may consume reserve"
+    }
+  ],
+  "fixedOrCountBoundedSubtotalBytes": 149713040,
+  "conservativeAllocatedTotalBytes": 191713040,
+  "unallocatedHeadroomBytes": 8286960,
+  "currentResearchNextFileSizeSumBytes": 55997248,
+  "currentNonarrayBytes": 1403408,
+  "arithmeticOnly": true,
+  "conditions": [
+    "Do not write verbose per-refresh JSON in addition to compact hash stream.",
+    "Preserve every input transport fragment and raw state array; both forms charged.",
+    "Audit refresh-role alias is valid only for exact same-state endpoint sample, with explicit reference and role counts.",
+    "Common J3 is a view, not duplicate raw serialization.",
+    "Source/metadata/log allocations are prospective upper envelopes. Freeze must check their serialization contracts and reject projected overrun; do not silently omit evidence.",
+    "Only serial output writes and one interrupted partial artifact are permitted; retain partial and stop, no automatic retry creates unbounded duplicates.",
+    "Failure reserve is part of200MB, not additional space.",
+    "All files anywhere under research-next, including review and coordination outputs, count.",
+    "150MB cannot conservatively retain all evidence: fixed/count-bounded149713040 plus2MB reserve already exceeds it before source or metadata."
+  ],
+  "notMeasuredPerformance": true,
+  "correction": "Independent physics reviewer identified four additional initial J observations, one initial per six J runs. Added128B before any numerical execution.",
+  "reconciliation": {
+    "implementationForecastBytes": 166724482,
+    "implementationForecastPath": "../implementation/STORAGE-FORECAST.json",
+    "agreement": "Exact mandatory binary counts and 200MB cap agree.",
+    "difference": "This independent envelope uses20MB metadata versus8MB plus1.5MB viewer,14MB atomic/partial allowance versus1MB, separate1MB selected-stage and1MB fixture allowances, and4MB static-data/source allowance. The larger number is the prefreeze conservative bound; neither is a measured performance result."
+  }
+}

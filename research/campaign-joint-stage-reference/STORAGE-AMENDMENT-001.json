@@ -9,10 +9,10 @@
   "newRetainedLogicalBytes": 200000000,
   "failureReserveBytes": 2000000,
   "workspaceAvailableBytesObserved": 31509659648,
-  "reason": "Independent static full-completion forecast leaves only1518064bytes for all source/metadata/checkpoints/fixtures after required states, signatures, controllers, selected brackets and reserve; already present nonarray files approximately1.25MB. Retain evidence with a prospectively bounded margin instead of silently dropping diagnostics.",
+  "reason": "Independent static full-completion forecast leaves only1517936bytes for all source/metadata/checkpoints/fixtures after required states, signatures, controllers, selected brackets and reserve; already present nonarray files approximately1.25MB. Retain evidence with a prospectively bounded margin instead of silently dropping diagnostics.",
   "forecastComponentsBytes": {
     "inputsAndNewRawStates": 131223856,
-    "roleReusedSignatureStreamsIncludingCompatibility": 8922080,
+    "roleReusedSignatureStreamsIncludingCompatibility": 8922208,
     "controllerBinary": 4377600,
     "selectedFirstWorstBracketsIncludingJointRawStages": 1958400,
     "failureReserve": 2000000
@@ -26,5 +26,6 @@
     "stop on exhausted adopted cap",
     "no paid compute"
   ],
-  "executionStatus": "No numerical tests, preflight, compatibility or new simulations executed; implementation/source freeze still pending."
+  "executionStatus": "No numerical tests, preflight, compatibility or new simulations executed; implementation/source freeze still pending.",
+  "preExecutionArithmeticCorrection": "Independent review added four initial J signature records (128 bytes) omitted from the provisional count; no numerical execution or acceptance change."
 }

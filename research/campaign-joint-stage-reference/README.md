@@ -1,9 +1,13 @@
 # Joint-stage airflow reference: prospective study
 
-Status: protocol adopted; implementation review and source freeze pending. No numerical experiment has started.
+Status: independent static reviews passed and numerical source is hash-frozen. No numerical experiment has started. The coordinator will verify the source checkpoint before one supervised window.
 
 The prior temporal campaign failed both airflow-reference screens. This study asks whether simultaneously recalculating the whole-swarm airflow at each Runge–Kutta stage provides a cross-checked numerical reference for the same frozen physical model. It does not validate that model against real drones.
 
+- [Frozen source and input identities](implementation/FREEZE.json)
+- [Static physics review](physics-review/STATIC-PHYSICS-REVIEW.md)
+- [Static robustness review](robustness-review/STATIC-ROBUSTNESS-REVIEW.md)
+- [Held-integrator failure evidence clarification](RETENTION-CLARIFICATION-002.json)
 - [Bounded prospective plan](PLAN.md)
 - [Pre-run storage-only amendment](STORAGE-AMENDMENT-001.json)
 - [Original published plan](PLAN-INITIAL.md)

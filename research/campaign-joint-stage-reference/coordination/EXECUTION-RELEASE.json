@@ -1,0 +1,20 @@
+{
+  "status": "reviewed_ready_for_hash_freeze_and_prospective_publication",
+  "createdAt": "2026-10-13T23:54:04.684541+00:00",
+  "sourceIdentityChecks": 43,
+  "mismatches": [],
+  "planSha256": "b68a2a93b29e85b3784d874010c767ee7ba3eacfdcc71d4bb6b91d31606d4bba",
+  "physicsReviewSha256": "1d30b7f2e56b17d3f2c96cfc020c0bb8f9308cbaf7d849f2054acce3a0e539a8",
+  "robustnessReviewSha256": "661572dd29935cc48e261f170bc4ccf72941e7a73eeadc86aa125bee69fc4004",
+  "conservativeRetentionForecastBytes": 191713040,
+  "numericalExecutionStarted": false,
+  "permission": "Coordinator may run exactly one frozen supervised numerical window only after remote source checkpoint verification.",
+  "chronology": "ADOPTION.json is an immutable earlier adoption record; this release records that its independent-review prerequisite is now met. Source freeze and publication remain the next prerequisites.",
+  "displayPreparation": {
+    "separatelyTimed": true,
+    "allowed": "Verify recorded file identities, select existing poses for display, copy retained gates/status, serialize viewer. No new integration, field/controller evaluation, scientific metric or qualification change.",
+    "scientificAnalysisRemainsInsideSupervisedWindow": true,
+    "retentionCapStillApplies": true
+  },
+  "postFreezePolicy": "Do not edit frozen source or any files in inputs or robustness-review. Post-run reviews go in a separate directory."
+}

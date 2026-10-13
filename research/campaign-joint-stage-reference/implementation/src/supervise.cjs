@@ -1,0 +1,36 @@
+'use strict';
+const start=process.hrtime.bigint();
+// Single numerical window; serial worker, external monotonic/CPU watchdog.
+const fs=require('fs'),path=require('path'),{fork,execFileSync}=require('child_process');
+const {ROOT,load,save,retainedBytes}=require('./io.cjs');
+if(process.argv.length>2)throw Error('No alternative window or budget reset');
+if(fs.existsSync(path.join(ROOT,'results/supervisor.json')))throw Error('Execution attempt already exists; budget restart forbidden');
+if(process.env.FLOCK_FACTORY_VARIANT&&process.env.FLOCK_FACTORY_VARIANT!=='wide')throw Error('Unfrozen factory variant');
+const deadline=start+300000000000n,startedAt=new Date().toISOString();
+function rawCpuTicks(pid){const text=fs.readFileSync(`/proc/${pid}/stat`,'utf8'),parts=text.slice(text.lastIndexOf(')')+2).split(' ');return [11,12,13,14].reduce((n,i)=>n+Number(parts[i]),0);}
+const cpuBaseTicks=0; // Fresh supervisor process: charge its entire startup CPU too.
+const ticks=Number(execFileSync('getconf',['CLK_TCK'],{encoding:'utf8'}).trim());if(!(ticks>0))throw Error('Cannot establish CPU clock tick');
+function processCpu(pid){const text=fs.readFileSync(`/proc/${pid}/stat`,'utf8'),parts=text.slice(text.lastIndexOf(')')+2).split(' ');return [11,12,13,14].reduce((n,i)=>n+Number(parts[i]),0)/ticks;}
+const cpuBase=cpuBaseTicks/ticks;
+function treeCpu(pid){let sum=processCpu(pid),children=[];try{children=fs.readFileSync(`/proc/${pid}/task/${pid}/children`,'utf8').trim().split(/\s+/).filter(Boolean);}catch(e){if(!['ENOENT','ESRCH'].includes(e.code)&&e.message!=='ENOENT')throw e;}for(const p of children)try{sum+=treeCpu(Number(p));}catch(e){if(!['ENOENT','ESRCH'].includes(e.code)&&e.message!=='ENOENT')throw e;}return sum;}
+function inventory(){const rows=[];function walk(p){if(!fs.existsSync(p))return;for(const e of fs.readdirSync(p,{withFileTypes:true})){const f=path.join(p,e.name);if(e.isDirectory())walk(f);else {const bytes=fs.statSync(f).size,relative=path.relative(ROOT,f);rows.push({path:relative,bytes,...(f.endsWith('.signatures.bin')||relative.startsWith('results/fields/')&&f.endsWith('.bin')?{completeSignatureRecords:Math.floor(bytes/32),trailingBytes:bytes%32}:{}),partial:f.endsWith('.partial')});}}}walk(path.join(ROOT,'results'));return rows;}
+let child=null,job=null,killed=null,stdout='',stderr='',peakCpu=0,jobTimer=null,finished=false;
+function kill(reason){if(killed||finished)return;killed={reason,job,at:new Date().toISOString(),elapsedWallMs:Number(process.hrtime.bigint()-start)/1e6};if(child)try{process.kill(-child.pid,'SIGKILL');}catch{} }
+function cpuUsed(){const used=treeCpu(process.pid)-cpuBase;peakCpu=Math.max(peakCpu,used);return peakCpu;}
+function checks(){if(process.hrtime.bigint()>deadline-1500000000n)kill('Total wall-time shutdown reserve');try{if(cpuUsed()>298.5)kill('Total CPU shutdown reserve across supervisor and descendants');}catch(e){kill('CPU census unavailable: '+e.message);}}
+save('results/supervisor.json',{status:'starting',startedAt,startMonotonicNs:String(start),deadlineMonotonicNs:String(deadline),totalWallSeconds:300,totalCpuSeconds:300,jobSeconds:45,shutdownReserveSeconds:1.5,cpuAccounting:'Linux /proc process tree own plus reaped-child CPU; CLK_TCK measured; includes supervisor, worker and fixture subprocesses',cpuClockTicks:ticks,restartsPermitted:false});
+try{require('./freeze.cjs').validateFreeze();}catch(e){save('results/failures/freeze.json',{message:e.message,numericalJobsStarted:false});save('results/supervisor.json',{status:'freeze-validation-failed',message:e.message,startedAt,elapsedWallMs:Number(process.hrtime.bigint()-start)/1e6,totalCpuSeconds:cpuUsed()},{emergency:true});process.exitCode=1;return;}
+child=fork(path.join(__dirname,'campaign.cjs'),[],{cwd:ROOT,env:{...process.env,JOINT_SUPERVISED:'1',JOINT_TOTAL_DEADLINE_NS:String(deadline),FLOCK_FACTORY_VARIANT:'wide'},detached:true,stdio:['ignore','pipe','pipe','ipc']});
+function log(which,x){const value=x.toString();if(Buffer.byteLength(stdout)+Buffer.byteLength(stderr)+Buffer.byteLength(value)>256000){kill('Combined stdout/stderr log cap');return;}if(which==='stdout')stdout+=value;else stderr+=value;}child.stdout.on('data',x=>log('stdout',x));child.stderr.on('data',x=>log('stderr',x));
+const timer=setInterval(checks,25);
+child.on('message',m=>{if(m.type==='job-start'){if(job)return kill('Overlapping jobs');job={id:m.id,startMonotonicNs:m.startMonotonicNs,deadlineMonotonicNs:m.deadlineMonotonicNs};const end=BigInt(m.deadlineMonotonicNs);if(end-BigInt(m.startMonotonicNs)>45000000000n)return kill('Oversized job deadline');jobTimer=setTimeout(()=>kill('45-second per-job watchdog'),Math.max(0,Number(end-process.hrtime.bigint())/1e6));}else if(m.type==='job-end'){if(job?.id!==m.id)return kill('Mismatched job lifecycle');if(process.hrtime.bigint()>BigInt(job.deadlineMonotonicNs))return kill('Job completed after hard deadline');clearTimeout(jobTimer);job=null;}});
+child.on('error',e=>{stderr+=String(e);kill('Worker launch/transport failure');});
+child.on('close',(code,signal)=>{
+ clearInterval(timer);clearTimeout(jobTimer);checks();let checkpoint=null;try{checkpoint=load('results/last-checkpoint.json');}catch{}
+ let accounting=cpuUsed();const result={status:killed?'watchdog-stopped':code===0?'finished':'worker-stopped',startedAt,code,signal,killed,elapsedWallMs:Number(process.hrtime.bigint()-start)/1e6,totalCpuSeconds:accounting,retainedBytes:retainedBytes(),stdout,stderr,artifactInventory:inventory(),lastDurableCheckpoint:checkpoint,exactStoppedState:false,meaning:'Supervisor checkpoint is never an exact interruption state; per-job failure files may separately retain an exact stage.',postInterruptionLoggingIsCleanup:!!killed};
+ if(killed)save('results/failures/watchdog.json',result,{emergency:true});save('results/supervisor.json',result,{emergency:true});
+ const cfg=load('configs/campaign.json');const matrix=(cfg.seeds||[]).flatMap(seed=>(cfg.rows||[]).map(row=>{const id=`s${seed}-${row.arm}`;let r=null;try{r=load(`results/runs/${id}.json`);}catch{}return {runId:id,status:r?(r.complete?'complete':'failed'):(job?.id===id?'interrupted':'skipped'),reason:r?.stop?.message||killed?.reason||(code===0?null:'Earlier fixture, preflight or gate stopped cycle')};}));save('results/matrix-status.json',{rows:matrix,executionQualified:!killed&&code===0},{emergency:true});
+ accounting=cpuUsed();const over=process.hrtime.bigint()>deadline||accounting>300,valid=!killed&&code===0&&!over;
+ save('results/execution-validity.json',{uninterruptedSuccessfulExecution:valid,qualifiedResultsMayBeConsidered:valid,reason:killed?.reason||(over?'Final serialization exceeded global budget':code===0?'All scheduled jobs and gates completed':'Worker stopped; inspect retained failures'),wallMsBeforeValidityWrite:Number(process.hrtime.bigint()-start)/1e6,cpuSecondsBeforeValidityWrite:accounting,referenceStillRequiresEveryGate:true},{emergency:true});
+ if(process.hrtime.bigint()>deadline||cpuUsed()>300)save('results/execution-validity.json',{uninterruptedSuccessfulExecution:false,qualifiedResultsMayBeConsidered:false,reason:'Final validity write exceeded hard cap; cleanup only'},{emergency:true});finished=true;if(!valid)process.exitCode=1;
+});

@@ -1,0 +1,29 @@
+{
+  "status": "prospective expected allocation; no numerical data generated",
+  "components": {
+    "existing_bytes_at_forecast": 58105282,
+    "new_matrix_full17_raw_bytes": 76630016,
+    "compatibility_endpoint_raw_bytes": 872576,
+    "all_signature_streams_bytes": 8922208,
+    "production_field_hash_streams_bytes": 2358400,
+    "controller_binary_bytes": 4377600,
+    "first_worst_selected_bracket_raw_upper_bound_bytes": 1958400,
+    "json_metadata_run_records_checkpoint_allowance_bytes": 8000000,
+    "viewer_display_records_allowance_bytes": 1500000,
+    "log_ceiling_bytes": 1000000,
+    "atomic_write_temporary_overlap_allowance_bytes": 1000000,
+    "failure_reserve_bytes": 2000000
+  },
+  "hard_cap_bytes": 200000000,
+  "failure_reserve_in_cap": true,
+  "notes": [
+    "All retained transport parts and materialized arrays included in existing bytes.",
+    "Six J rows have112006 observations; five H/P rows per seed153610; old preflight12802; compatibility401. H/P refreshes alias endpoint signatures.",
+    "JSON and display allocations are prospective allowances, not permission to truncate records. Runtime reserve checks stop if exceeded.",
+    "No model was evaluated to compute this integer byte forecast.",
+    "The larger191,713,040-byte conservative reviewer envelope governs freeze. Neither allowance authorizes dropping records or resetting a cap."
+  ],
+  "expected_allocation_bytes": 166724482,
+  "conservative_freeze_envelope_bytes": 191713040,
+  "freeze_envelope_source": "Independent robustness reviewer, coordinator adoption"
+}
