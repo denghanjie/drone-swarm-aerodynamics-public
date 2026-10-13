@@ -1,6 +1,6 @@
 'use strict';
 const fs=require('fs'),crypto=require('crypto');
-const {M,config,evaluator,sourceHash,save,median,bootstrap}=require('./common.cjs');
+const {M,config,evaluator,sourceHash,save,median,bootstrap,sha}=require('./common.cjs');
 const {source}=require('./source.cjs');
 const B=source('outputs/milestone-31-source/sim.cjs'),{Grid}=source('outputs/milestone-31-source/grid.cjs'),G=source('outputs/milestone-31-source/geometry.cjs');
 function run({seed=4391,count=16,duration=1,dt=.0025,aeroDt=.01,variant='lean',record=true}={}){
@@ -30,19 +30,19 @@ function run({seed=4391,count=16,duration=1,dt=.0025,aeroDt=.01,variant='lean',r
  if(record)hash.update(JSON.stringify([end,states,winds]));
  timing.total=performance.now()-started;
  const complete=!stop&&Math.abs(end-duration)<1e-12;
- return {config:{seed,count,duration,dt,aeroDt,controlDt:B.P.controlDt,frameDt:config.closedLoop.frameDt,variant,record,controller:'unchanged milestone31 local 3D Boids and wall-priority, shared broad route'},sourceHash:sourceHash(),initial,final:states,frames,stateStreamHash:record?hash.digest('hex'):null,metrics:{end,stop,complete,updates,maxInflow,...(record?B.measure(states):{})},timing,claim:'Short genuine Boids numerical replay; no physical validation, full-mission, convergence, GPU or safe-flight claim'};
+ return {config:{seed,count,duration,dt,aeroDt,controlDt:B.P.controlDt,frameDt:config.closedLoop.frameDt,variant,record,controller:'unchanged milestone31 local 3D Boids and wall-priority, shared broad route'},sourceHash:sourceHash(),initial,final:states,finalWinds:winds.map(w=>w.slice()),stepsCompleted:Math.round(end/dt),frames,stateStreamHash:record?hash.digest('hex'):null,metrics:{end,stop,complete,updates,maxInflow,...(record?B.measure(states):{})},timing,claim:'Short genuine Boids numerical replay; no physical validation, full-mission, convergence, GPU or safe-flight claim'};
 }
 function compare(a,b){let maxPositionM=0,maxPose=0,common=0;const map=new Map(a.frames.map(f=>[f.t.toFixed(6),f]));for(const f of b.frames){const g=map.get(f.t.toFixed(6));if(!g)continue;common++;for(let i=0;i<f.pose.length;i++){maxPositionM=Math.max(maxPositionM,Math.hypot(...[0,1,2].map(k=>f.pose[i][k]-g.pose[i][k])));maxPose=Math.max(maxPose,...f.pose[i].map((x,k)=>Math.abs(x-g.pose[i][k])));}}const complete=a.metrics.complete&&b.metrics.complete;return {common,maxPositionM,maxPose,complete,stateStreamIdentical:a.stateStreamHash===b.stateStreamHash,passed:complete&&common>0&&maxPositionM<=config.closedLoop.equivalencePositionTolerance};}
 function pipeline({selected='lean'}={}){
- const variants=['legacy','previous-zero',selected],rows=[];
- for(const v of variants){const r=run({seed:4301,variant:v,record:false});if(!r.metrics.complete)throw Error('Warmup incomplete; cannot compare wall time');}
+ const variants=['legacy','previous-zero',selected],rows=[];let referenceFinalHash=null;
+ for(const v of variants){const r=run({seed:4301,variant:v,record:false});if(!r.metrics.complete)throw Error('Warmup incomplete; cannot compare wall time');const h=sha(JSON.stringify([r.final,r.finalWinds]));if(referenceFinalHash===null)referenceFinalHash=h;if(h!==referenceFinalHash)throw Error('Warmup final state/wind checksum mismatch');}
  for(let rep=0;rep<7;rep++){
   let order=variants.map((_,i)=>variants[(i+rep)%variants.length]);if(rep%2)order.reverse();const results={};
-  for(const v of order){const r=run({seed:4301,variant:v,record:false});results[v]={metrics:r.metrics,timing:r.timing};save('results/pipeline-partial.json',{selected,rows,current:{rep,order,results}});if(!r.metrics.complete)throw Error('Fixed-work member incomplete; no speed comparison');}
+  for(const v of order){const r=run({seed:4301,variant:v,record:false});const finalStateWindHash=sha(JSON.stringify([r.final,r.finalWinds]));results[v]={config:r.config,stepsCompleted:r.stepsCompleted,metrics:r.metrics,timing:r.timing,finalStateWindHash,checksumPassed:finalStateWindHash===referenceFinalHash};save('results/pipeline-partial.json',{selected,rows,current:{rep,order,results}});if(!r.metrics.complete)throw Error('Fixed-work member incomplete; no speed comparison');if(finalStateWindHash!==referenceFinalHash)throw Error('Timed final state/wind checksum mismatch');}
   rows.push({rep,order,results});
  }
  const summaries=['legacy','previous-zero'].map(reference=>{const ratios=rows.map(r=>r.results[selected].timing.total/r.results[reference].timing.total);return {reference,selected,medianRatio:median(ratios),bootstrap95:bootstrap(ratios),scope:'Total fixed-work 400-step N16 Boids CPU time, recording disabled, all members complete'};});
- const result={selected,sourceHash:sourceHash(),seed:4301,count:16,duration:1,warmupsPerVariant:1,repetitions:7,rows,summaries};save('results/pipeline.json',result);return result;
+ const result={selected,referenceFinalHash,checksumScope:'Full final17-entry states and last held four-rotor winds, hashed after timing.total; rolling record hash intentionally disabled.',sourceHash:sourceHash(),seed:4301,count:16,duration:1,warmupsPerVariant:1,repetitions:7,rows,summaries};save('results/pipeline.json',result);return result;
 }
 if(require.main===module){if(process.argv[2]==='pipeline'){const r=pipeline(JSON.parse(process.argv[3]||'{}'));console.log(JSON.stringify(r.summaries));}else{const cfg=JSON.parse(process.argv[2]||'{}'),r=run(cfg),id=`${r.config.seed}-${r.config.count}-${r.config.variant}-${r.config.dt}-${r.config.aeroDt}`;save(`results/boids/${id}.json`,r);console.log(JSON.stringify({id,metrics:r.metrics,timing:r.timing}));}}
 module.exports={run,compare,pipeline};

@@ -1,0 +1,90 @@
+{
+  "repository": "https://github.com/denghanjie/drone-swarm-aerodynamics-public",
+  "checkpoint": "c024dfc27b9e6b7cd5b39132164d1339cb95b12f",
+  "physicsBaseline": "c591ce2b195fa01b895d4ba881a44a4b92fdd703",
+  "existingSourceUnchanged": true,
+  "sources": [
+    {
+      "path": "outputs/step02c-source/physics.cjs",
+      "sha256": "0c46c9beb4e831c621658f6600c074f97c95966de07f5000eb64aa476a443fa1",
+      "gitBlob": "40c3ee2b59ae882c34c81bb589b6c65f9b519346"
+    },
+    {
+      "path": "outputs/step03a-source/wake.cjs",
+      "sha256": "fb6d5a1d632a0023818041ef6bc39316ff8ed950f318da1a6649e2515b9fd8bc",
+      "gitBlob": "055ee37053f42cad1471455491f03fdf438b2cdb"
+    },
+    {
+      "path": "outputs/milestone-28-source/aero.cjs",
+      "sha256": "710b0a8f0df62208e3385ac9b8288240b379fe9248a1a645251a77c533f24a62",
+      "gitBlob": "61ca85bc698b115f8c9597929b3bdbf46e10b4ff"
+    },
+    {
+      "path": "outputs/milestone-26-source/grid.cjs",
+      "sha256": "f06010781770b64432935e5d825bcd1405b154b735ac4d0d654f145600cea302",
+      "gitBlob": "da6950ce6de759095f5283122f3ac638ad41b9a4"
+    },
+    {
+      "path": "outputs/milestone-31-source/sim.cjs",
+      "sha256": "2b6fbc51334fd0669b23eb7173c6af83e62414a725b032796df5cb38ac7f1c9e",
+      "gitBlob": "f281c14ddb56f27636052842ce61db941d7ab1bc"
+    },
+    {
+      "path": "outputs/milestone-31-source/grid.cjs",
+      "sha256": "f06010781770b64432935e5d825bcd1405b154b735ac4d0d654f145600cea302",
+      "gitBlob": "da6950ce6de759095f5283122f3ac638ad41b9a4"
+    },
+    {
+      "path": "outputs/milestone-31-source/geometry.cjs",
+      "sha256": "e209e492fc523ab3c0c7df62745fb0d3dd7204f35e53309938a19d7895ed3d4f",
+      "gitBlob": "d97eda03a887b232fae457047821efd8a1cff491"
+    },
+    {
+      "path": "outputs/milestone-31-source/wall-filter.cjs",
+      "sha256": "8273cc40a9530748fe43e9ef0a4d9a995ee152f9968ce2368e61e2f205502512",
+      "gitBlob": "45b63969e5d59c6812f35ed6e94b1c4a405a86c2"
+    },
+    {
+      "path": "outputs/milestone-31-source/factory.cjs",
+      "sha256": "fe46384aac6150c45a2ba38e4494da16969aeab4a8875a8596f6ad8e53bb2c40",
+      "gitBlob": "68a2d8645d57d6322ebfde602236f3216685e657"
+    },
+    {
+      "path": "outputs/milestone-31-source/factory-wide.cjs",
+      "sha256": "8ea0d8784accfc039fee9ca2a2c0a86dc8e502b6d1003e4de54a8df8a999cc22",
+      "gitBlob": "cbf594821c03220c462a97c56b56ec6172a3fead"
+    },
+    {
+      "path": "research/campaign-spatial-pruning/src/pruned-aero.cjs",
+      "sha256": "1d9e1afcf9983b900034b7b586c4ffd02ec4b3242c467f8e684fbdda1850d562",
+      "gitBlob": "18229737a1f48acd0e8ef48a21ce13bcf67c73a9"
+    }
+  ],
+  "candidate": {
+    "path": "src/exact-aero.cjs",
+    "sha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189"
+  },
+  "publicResultsExclude": "Machine/process identifying diagnostics are retained privately; published timings preserve measured wall times and all experimental labels.",
+  "physicalValidation": false,
+  "rendering": "Three.js replay only; simulation executed offline in Node CPU.",
+  "resultRunnerChronology": [
+    {
+      "resultGroup": "Primary development/held-out field+receiver timing30completed files",
+      "runner": "src/benchmark.cjs",
+      "sha256": "e71f8b6c56ae775a5ae80100f845b6f72d377bf9e74abe0b77aab18270aebce0"
+    },
+    {
+      "resultGroup": "14saved Boids replay records and refinements",
+      "runner": "source-versions/boids-pre-A5.cjs.txt",
+      "sha256": "35414ee3cd371390db98af316da6a4369b95f70a883f4d4cd0f1603f62e2be6c",
+      "note": "Preserved historical runner; A5 terminal hash fields were not present during these recorded runs. Every-step recording hashes were already present."
+    },
+    {
+      "resultGroup": "Primary7paired fixed-work whole-pipeline timing",
+      "runner": "src/boids.cjs",
+      "sha256": "6fe5fd0f491a9163a9d454fe531231c99c95ea03d412c76e4b835fc3b3ed2d63",
+      "note": "A5 runner adds post-timer terminal full-state/wind checksums; airflow method unchanged."
+    }
+  ],
+  "preEvaluationManifestNote": "pre-evaluation.sha256 is retained as a historical pre-run manifest and intentionally names the pre-A5 Boids runner. Final inventory records later harness/docs/demo versions separately."
+}

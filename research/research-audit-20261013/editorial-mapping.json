@@ -1,0 +1,326 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-13",
+  "repository_directory": "research/research-audit-20261013",
+  "scope": "Publication-only editorial portability and provenance mapping. Original research packages are unchanged; no scientific hypothesis, result, measurement, threshold or attribution classification was rewritten.",
+  "changes": [
+    {
+      "path": "methods/literature-experiment-ledger.json",
+      "original_sha256": "3aa53aecdf7c3c10ebe67f2f3742c798365d055c5e29713682165d4df0434687",
+      "publication_sha256": "74432f7d1d5a27ed63393dce92d99ff3c0c27eefdbed124df347630567f7cd69",
+      "editorial_change": "Replace staging-layout path fields with repository-root repository_path; preserve source/record hashes, statistics and scientific interpretation."
+    },
+    {
+      "path": "methods/saved-pipeline-attribution.json",
+      "original_sha256": "ad7c3f68a5a522a16d6e7fed76c239f69221962dfa886e5f9574823a9397bd38",
+      "publication_sha256": "351285ff6e114e424dfa2e06cdaefcaa2e038a4d250f7772ce120bcbc542e270",
+      "editorial_change": "Replace staging-layout path fields with repository-root repository_path; preserve source/record hashes, statistics and scientific interpretation."
+    },
+    {
+      "path": "methods/README.md",
+      "original_sha256": "112bdb7e00c66a5c15af38e02c35527b4dde29ca884c8f85703b06826d83be9e",
+      "publication_sha256": "03e178a47ff05ed3f84310dff7b4d8a853ec80da9a124ad15d537d360b602f61",
+      "editorial_change": "Use portable relative link and remove references promising an excluded cache-dependent builder or reading files."
+    },
+    {
+      "path": "physics/README.md",
+      "original_sha256": "26721ab2f9a16e4f629c67017bc3c5a35178e2dca1676696a2386225d72ad4a6",
+      "publication_sha256": "7d162f82773048b110a5cafa83ed8cd7d9120952ca2cfb275021f3d67eda5dd5",
+      "editorial_change": "Replace missing source-package inventory link with the publication editorial map; clarify excluded third-party reading copies."
+    },
+    {
+      "path": "physics/verification-and-access.json",
+      "original_sha256": "4a02f66dfeb78dc6c7496bbb32d8ae27922675bd7a38287ce79c8eae316ca520",
+      "publication_sha256": "1e88a0f17842dbde3963e6672dca7f91188de78add2966db3d65de543bc76e4f",
+      "editorial_change": "Align the public allowlist with the nine staged files and replace private cache location with a distribution note."
+    },
+    {
+      "path": "methods/bibliography.json",
+      "original_sha256": "096fda6a7a7dda9fd52ce5ed64479426ff474ba641ac04b6a8106ede0d8f0fbe",
+      "publication_sha256": "c53f277bf5ccf6c3368956335f85fd578e701704d4c37fa98496968c3044ea1d",
+      "editorial_change": "Retain consulted-document hashes, bytes and redistribution restrictions; omit unavailable cache-local paths."
+    },
+    {
+      "path": "physics/literature-experiment-ledger.json",
+      "original_sha256": "cf6a9647235ee899b415170202c66045235fb36718ab34da7573458f72f6e890",
+      "publication_sha256": "60bba8142d260ddb282ebfd86c1ce566dd72c0322493ba222c624e9b9e4aea75",
+      "editorial_change": "Add independently hash-matched published-source checkpoint; preserve audit-time candidate_commit, input commits and actual run hashes."
+    },
+    {
+      "path": "physics/audit-integrity.json",
+      "original_sha256": "ce3780e7f0d4388f347856cabfd70ccb672905dcd2fb0a9572a6270fcea06377",
+      "publication_sha256": "8411a3df405339201bade108f0a472d2dc5a426036a1ce2730a625cb2ea768d1",
+      "editorial_change": "Append later matching-source publication evidence without rewriting historical run/audit provenance."
+    },
+    {
+      "path": "claims/AUDIT.md",
+      "original_sha256": "3ae98818366727f94ee874ec11cd3becc8c9fe3ccda8de0b6906e547dd1e7137",
+      "publication_sha256": "0da3a50d8b04622a089c1d90e8d4ac1269f47bc296ee554c6e7df855799ad979",
+      "editorial_change": "Clarify that the original-version counting error now has an explicit campaign correction; no claim or calculation changed."
+    },
+    {
+      "path": "claims/claims.json",
+      "original_sha256": "44068ee076b2d64c7dd1ef183623536a90c40c413cd1231daf8e7a8c16a30f16",
+      "publication_sha256": "c23c8ac100d9adbb39b238194db9ffdd8bdc607cecca55f97814249f32b34a7c",
+      "editorial_change": "Add explicit original-versus-corrected publication scope; preserve all claim statuses and evidence."
+    },
+    {
+      "path": "RESEARCH-CHARTER.md",
+      "original_sha256": "8cc672b8448133338113e07e4530f64c72cbe20be48f83fb3d2ef385af7bf85e",
+      "publication_sha256": "11ffcd99cdbb5590e7d9afaad22cb96184e973d1d30da26be7a6ea365ccb42e2",
+      "editorial_change": "Replace repository-path prose with a portable relative roadmap link."
+    }
+  ],
+  "path_mappings": [
+    {
+      "file": "methods/literature-experiment-ledger.json",
+      "original_reference": "implementation/repo/outputs/milestone-31-source/sim.cjs",
+      "repository_path": "outputs/milestone-31-source/sim.cjs"
+    },
+    {
+      "file": "methods/literature-experiment-ledger.json",
+      "original_reference": "implementation/repo/outputs/milestone-31-source/grid.cjs",
+      "repository_path": "outputs/milestone-31-source/grid.cjs"
+    },
+    {
+      "file": "methods/literature-experiment-ledger.json",
+      "original_reference": "integration/publication/src/boids.cjs",
+      "repository_path": "research/campaign-exact-efficiency/src/boids.cjs"
+    },
+    {
+      "file": "methods/literature-experiment-ledger.json",
+      "original_reference": "integration/publication/results/boids/index.json",
+      "repository_path": "research/campaign-exact-efficiency/results/boids/index.json"
+    },
+    {
+      "file": "methods/literature-experiment-ledger.json",
+      "original_reference": "integration/publication/robustness/raw/replay-audit.json",
+      "repository_path": "research/campaign-exact-efficiency/robustness/raw/replay-audit.json"
+    },
+    {
+      "file": "methods/literature-experiment-ledger.json",
+      "original_reference": "implementation/repo/outputs/milestone-26-source/grid.cjs",
+      "repository_path": "outputs/milestone-26-source/grid.cjs"
+    },
+    {
+      "file": "methods/literature-experiment-ledger.json",
+      "original_reference": "integration/publication/src/exact-aero.cjs",
+      "repository_path": "research/campaign-exact-efficiency/src/exact-aero.cjs"
+    },
+    {
+      "file": "methods/literature-experiment-ledger.json",
+      "original_reference": "integration/publication/results/selection.json",
+      "repository_path": "research/campaign-exact-efficiency/results/selection.json"
+    },
+    {
+      "file": "methods/literature-experiment-ledger.json",
+      "original_reference": "integration/publication/results/timing-summary.json",
+      "repository_path": "research/campaign-exact-efficiency/results/timing-summary.json"
+    },
+    {
+      "file": "methods/literature-experiment-ledger.json",
+      "original_reference": "integration/publication/robustness/raw/independent-checks.json",
+      "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-checks.json"
+    },
+    {
+      "file": "methods/literature-experiment-ledger.json",
+      "original_reference": "integration/publication/src/benchmark.cjs",
+      "repository_path": "research/campaign-exact-efficiency/src/benchmark.cjs"
+    },
+    {
+      "file": "methods/literature-experiment-ledger.json",
+      "original_reference": "integration/publication/src/common.cjs",
+      "repository_path": "research/campaign-exact-efficiency/src/common.cjs"
+    },
+    {
+      "file": "methods/literature-experiment-ledger.json",
+      "original_reference": "integration/publication/src/boids.cjs",
+      "repository_path": "research/campaign-exact-efficiency/src/boids.cjs"
+    },
+    {
+      "file": "methods/literature-experiment-ledger.json",
+      "original_reference": "integration/publication/results/pipeline.json",
+      "repository_path": "research/campaign-exact-efficiency/results/pipeline.json"
+    },
+    {
+      "file": "methods/literature-experiment-ledger.json",
+      "original_reference": "integration/publication/robustness/raw/independent-pipeline-628791-16-boids-lean.json",
+      "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-pipeline-628791-16-boids-lean.json"
+    },
+    {
+      "file": "methods/literature-experiment-ledger.json",
+      "original_reference": "integration/publication/robustness/raw/primary-timing-audit.json",
+      "repository_path": "research/campaign-exact-efficiency/robustness/raw/primary-timing-audit.json"
+    },
+    {
+      "file": "methods/literature-experiment-ledger.json",
+      "original_reference": "integration/publication/results/timing-summary.json",
+      "repository_path": "research/campaign-exact-efficiency/results/timing-summary.json"
+    },
+    {
+      "file": "methods/literature-experiment-ledger.json",
+      "original_reference": "integration/publication/src/exact-aero.cjs",
+      "repository_path": "research/campaign-exact-efficiency/src/exact-aero.cjs"
+    },
+    {
+      "file": "methods/literature-experiment-ledger.json",
+      "original_reference": "integration/publication/src/exact-aero.cjs",
+      "repository_path": "research/campaign-exact-efficiency/src/exact-aero.cjs"
+    },
+    {
+      "file": "methods/literature-experiment-ledger.json",
+      "original_reference": "integration/publication/src/exact-aero.cjs",
+      "repository_path": "research/campaign-exact-efficiency/src/exact-aero.cjs"
+    },
+    {
+      "file": "methods/literature-experiment-ledger.json",
+      "original_reference": "integration/publication/review/large-translation-v0.json",
+      "repository_path": "research/campaign-exact-efficiency/review/large-translation-v0.json"
+    },
+    {
+      "file": "methods/literature-experiment-ledger.json",
+      "original_reference": "integration/publication/review/large-translation-v1.json",
+      "repository_path": "research/campaign-exact-efficiency/review/large-translation-v1.json"
+    },
+    {
+      "file": "methods/literature-experiment-ledger.json",
+      "original_reference": "integration/publication/review/targeted-guards-v1.json",
+      "repository_path": "research/campaign-exact-efficiency/review/targeted-guards-v1.json"
+    },
+    {
+      "file": "methods/literature-experiment-ledger.json",
+      "original_reference": "integration/publication/robustness/raw/independent-checks.json",
+      "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-checks.json"
+    },
+    {
+      "file": "methods/saved-pipeline-attribution.json",
+      "original_reference": "integration/publication/results/pipeline.json",
+      "repository_path": "research/campaign-exact-efficiency/results/pipeline.json"
+    }
+  ],
+  "retained_historical_inventories": [
+    {
+      "path": "claims/MANIFEST.json",
+      "status": "Original claim-package inventory retained. This editorial map supersedes its hashes only for publication-edited claims/AUDIT.md and claims/claims.json; all other covered files remain unchanged."
+    }
+  ],
+  "excluded_artifacts": [
+    "Third-party full-text reading caches and renderings",
+    "Cache-dependent build_audit.py"
+  ],
+  "original_staged_inventory": [
+    {
+      "path": "README.md",
+      "sha256": "4e435cee73320314997a00f4f9b6cf3d7973b32099eb51c439e1d73033598844"
+    },
+    {
+      "path": "RESEARCH-CHARTER.md",
+      "sha256": "8cc672b8448133338113e07e4530f64c72cbe20be48f83fb3d2ef385af7bf85e"
+    },
+    {
+      "path": "RESEARCH-REQUIREMENT-11.md",
+      "sha256": "caebdc65edccb2b8ad6a957808a666a67d9a4e12c6ef33373c91bff37bd5d0c3"
+    },
+    {
+      "path": "claims/AUDIT.md",
+      "sha256": "3ae98818366727f94ee874ec11cd3becc8c9fe3ccda8de0b6906e547dd1e7137"
+    },
+    {
+      "path": "claims/MANIFEST.json",
+      "sha256": "d41edc82d7e18460cba29898429bd8d3aa99686890cc8b4fc660a07596df2321"
+    },
+    {
+      "path": "claims/README.md",
+      "sha256": "32ca11745807ccad9504daafc14a509569f8e907b72338fa44be9021f72508a7"
+    },
+    {
+      "path": "claims/audit-records.cjs",
+      "sha256": "aa4a430cddcd1df7c5386571359629a74657078fc2abee2f16d8eecb715bd4e7"
+    },
+    {
+      "path": "claims/audit-results.json",
+      "sha256": "7c803f7e8245beb83333f760d801a95a58ff5ea9eda249f8fefad5db249b4c83"
+    },
+    {
+      "path": "claims/build-ledger.py",
+      "sha256": "fb4c0afa222136be91e8da582613f0ce0392b4cccd0cf34f458ed7ebf11cb926"
+    },
+    {
+      "path": "claims/claims.json",
+      "sha256": "44068ee076b2d64c7dd1ef183623536a90c40c413cd1231daf8e7a8c16a30f16"
+    },
+    {
+      "path": "methods/HYPOTHESES.md",
+      "sha256": "285c601027d507ce806781264a853a8463ed0519397cd5a36ba6b95c1db6ceef"
+    },
+    {
+      "path": "methods/README.md",
+      "sha256": "112bdb7e00c66a5c15af38e02c35527b4dde29ca884c8f85703b06826d83be9e"
+    },
+    {
+      "path": "methods/audit-integrity.json",
+      "sha256": "7efbc570b74f664d0fb6bb624dd8206283bfd75a9c325a64d0e1c552038f2786"
+    },
+    {
+      "path": "methods/bibliography.bib",
+      "sha256": "2404b0613bc463e9d38183f72fa7fc64a2fd71cc2e18e7194f4b0fdf83368fb6"
+    },
+    {
+      "path": "methods/bibliography.json",
+      "sha256": "096fda6a7a7dda9fd52ce5ed64479426ff474ba641ac04b6a8106ede0d8f0fbe"
+    },
+    {
+      "path": "methods/literature-experiment-ledger.json",
+      "sha256": "3aa53aecdf7c3c10ebe67f2f3742c798365d055c5e29713682165d4df0434687"
+    },
+    {
+      "path": "methods/saved-pipeline-attribution.json",
+      "sha256": "ad7c3f68a5a522a16d6e7fed76c239f69221962dfa886e5f9574823a9397bd38"
+    },
+    {
+      "path": "methods/verification-log.json",
+      "sha256": "feba019ab43d15d161fa8089be0d62504b43156d874a7ee6f3815a88bfe1efb3"
+    },
+    {
+      "path": "physics/DATA-ACCESS.json",
+      "sha256": "852f7657cdfffd183a17a49b3497dc59bd1bd8a54aeeadb49ca1d7c21f177b80"
+    },
+    {
+      "path": "physics/NORMALIZATION-CORRECTION-2026-10-13.md",
+      "sha256": "d6555e8226f5cd3b3657ae96dc0da93dd6129cbbd4d5a97d7326afdb0c005c2b"
+    },
+    {
+      "path": "physics/PROSPECTIVE-PHYSICS-SCREEN.md",
+      "sha256": "2e725fc3e24b6164df63e0607dc7ae64d67fde267dad1e45398582ccb91c58dd"
+    },
+    {
+      "path": "physics/PROSPECTIVE-PHYSICS-SCREEN.superseded-2026-10-13.md",
+      "sha256": "df9117653257ac7dd7437005661531d73c42d6a723c483b329846edc344378b0"
+    },
+    {
+      "path": "physics/README.md",
+      "sha256": "26721ab2f9a16e4f629c67017bc3c5a35178e2dca1676696a2386225d72ad4a6"
+    },
+    {
+      "path": "physics/audit-integrity.json",
+      "sha256": "ce3780e7f0d4388f347856cabfd70ccb672905dcd2fb0a9572a6270fcea06377"
+    },
+    {
+      "path": "physics/bibliography.json",
+      "sha256": "9b522f3104b1e44992a10489dc95b08328355cb06949f70b20a2fed9ca523d64"
+    },
+    {
+      "path": "physics/literature-experiment-ledger.json",
+      "sha256": "cf6a9647235ee899b415170202c66045235fb36718ab34da7573458f72f6e890"
+    },
+    {
+      "path": "physics/verification-and-access.json",
+      "sha256": "4a02f66dfeb78dc6c7496bbb32d8ae27922675bd7a38287ce79c8eae316ca520"
+    }
+  ],
+  "source_checkpoint_addition": {
+    "commit": "d83a2a36d166eb2b3e83aa2cb673bd4ba1b2b4b3",
+    "sha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+    "scope": "Byte-matched later source publication only; not run execution commit."
+  }
+}

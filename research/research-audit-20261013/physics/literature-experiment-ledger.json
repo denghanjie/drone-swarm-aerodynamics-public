@@ -1,0 +1,267 @@
+{
+  "schema_version": 1,
+  "scope": "Retrospective addendum; no numerical record, implementation or frozen protocol changed.",
+  "physical_validation_established": false,
+  "entries": [
+    {
+      "retrospective": true,
+      "verified_date": "2026-10-13",
+      "implementation": {
+        "repository": "https://github.com/denghanjie/drone-swarm-aerodynamics-public",
+        "input_checkpoint_commit": "c024dfc27b9e6b7cd5b39132164d1339cb95b12f",
+        "physics_baseline_commit": "c591ce2b195fa01b895d4ba881a44a4b92fdd703",
+        "candidate_commit": null,
+        "candidate_commit_note": "Candidate existed as local untracked campaign at audit time; no publication commit invented.",
+        "candidate_path": "research/campaign-exact-efficiency/src/exact-aero.cjs",
+        "candidate_sha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+        "selected_variant": "lean",
+        "matching_published_source_commit": "d83a2a36d166eb2b3e83aa2cb673bd4ba1b2b4b3",
+        "matching_published_source_url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/d83a2a36d166eb2b3e83aa2cb673bd4ba1b2b4b3/research/campaign-exact-efficiency/src/exact-aero.cjs",
+        "publication_provenance_note": "This later published checkpoint contains matching evaluator bytes. It does not imply that the recorded runs executed from this commit; audit-time candidate_commit and run hashes are retained."
+      },
+      "causality_note": "This audit occurred after the recorded exact-code campaign. It does not claim these papers guided its design or constitute physical reference data.",
+      "id": "physics-mean-wake-provenance",
+      "bibliography_ids": [
+        "bauersfeld2025jet"
+      ],
+      "relationship": "adapted",
+      "actual_repository_use_evidence": [
+        "outputs/step03a-source/wake.cjs:1\u201324 explicitly cites arXiv:2403.13321v3",
+        "outputs/milestone-28-source/aero.cjs:2\u20135 explicitly cites Fig. 2 geometry",
+        "src/exact-aero.cjs:4\u201313, 96\u2013103 reproduces that kernel and fixed amplitude"
+      ],
+      "idea_and_source_location": "Mean kernel: Eqs. (1), (3)\u2013(9), VI-C; geometry: Fig. 2. See bibliography attributions.",
+      "source_assumptions_reference": "bibliography.json#bauersfeld2025jet",
+      "experiment_links": [
+        {
+          "id": "4391-16-lean-0.0025-0.01",
+          "record_path": "research/campaign-exact-efficiency/results/boids/4391-16-lean-0.0025-0.01.json",
+          "record_sha256": "ef578328327dc6220d93e60c553a46b01af0914cf8402c278eab200d3ed3dd86",
+          "state_stream_sha256": "4d5e4594a12f22b4f8ef4f5f060805f7b958a4beff5f9a38a53c1d338e15eca7"
+        },
+        {
+          "id": "4392-16-lean-0.0025-0.01",
+          "record_path": "research/campaign-exact-efficiency/results/boids/4392-16-lean-0.0025-0.01.json",
+          "record_sha256": "7430bab2a678f38134ef5ee15d2caa0c92aa490881dc5f67abeb97dff2aeec22",
+          "state_stream_sha256": "64b8b57d220e242ba5ecf5179c4e2b9afd0087be1d9606be0ea4fa8622791265"
+        },
+        {
+          "id": "4391-50-lean-0.0025-0.01",
+          "record_path": "research/campaign-exact-efficiency/results/boids/4391-50-lean-0.0025-0.01.json",
+          "record_sha256": "688c316b1a3474889778faff96fdaae8014eaa02a0338da8fbf5b6064dcf952e",
+          "state_stream_sha256": "b4b51e2bcc075b9d1c8b3554cd41d13adfa889588afeb6fdb6aaf8a6e61a25a6"
+        },
+        {
+          "id": "4392-50-lean-0.0025-0.01",
+          "record_path": "research/campaign-exact-efficiency/results/boids/4392-50-lean-0.0025-0.01.json",
+          "record_sha256": "95e68deab8cce572772c4e141e8d3c7dcbd87edbbf53bd1e6bfe2c56f7187372",
+          "state_stream_sha256": "1ed98661be685cd4c9bfe5d70148f1cd24fd60a927cd35729ebb232685da5cc0"
+        }
+      ],
+      "recorded_result": "Four selected-variant records completed; saved comparisons to legacy have identical state-stream hashes and zero saved-position differences. This tests implementation equivalence only.",
+      "failures_and_unresolved_applicability": "No recorded experiment compares velocities, force, moments or trajectories against physical measurements; the 27 g extrapolation remains unvalidated.",
+      "next_test_hypothesis": "A geometry-matched isolated hover dataset can reject or support the mean kernel within a preregistered velocity-error tolerance. Not run."
+    },
+    {
+      "retrospective": true,
+      "verified_date": "2026-10-13",
+      "implementation": {
+        "repository": "https://github.com/denghanjie/drone-swarm-aerodynamics-public",
+        "input_checkpoint_commit": "c024dfc27b9e6b7cd5b39132164d1339cb95b12f",
+        "physics_baseline_commit": "c591ce2b195fa01b895d4ba881a44a4b92fdd703",
+        "candidate_commit": null,
+        "candidate_commit_note": "Candidate existed as local untracked campaign at audit time; no publication commit invented.",
+        "candidate_path": "research/campaign-exact-efficiency/src/exact-aero.cjs",
+        "candidate_sha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+        "selected_variant": "lean",
+        "matching_published_source_commit": "d83a2a36d166eb2b3e83aa2cb673bd4ba1b2b4b3",
+        "matching_published_source_url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/d83a2a36d166eb2b3e83aa2cb673bd4ba1b2b4b3/research/campaign-exact-efficiency/src/exact-aero.cjs",
+        "publication_provenance_note": "This later published checkpoint contains matching evaluator bytes. It does not imply that the recorded runs executed from this commit; audit-time candidate_commit and run hashes are retained."
+      },
+      "causality_note": "This audit occurred after the recorded exact-code campaign. It does not claim these papers guided its design or constitute physical reference data.",
+      "id": "physics-receiver-response-provenance",
+      "bibliography_ids": [
+        "bauersfeld2025jet",
+        "jain2019proximity"
+      ],
+      "relationship": "unverified_provenance",
+      "actual_repository_use_evidence": [
+        "outputs/milestone-28-source/aero.cjs:8\u20139 computes idealPower and effectiveThrust",
+        "outputs/milestone-28-source/study.cjs:16 calls the response an assumed constant ideal induced-power relation",
+        "src/exact-aero.cjs:116\u2013121 delegates to effectiveThrust and retains nominal yaw torque"
+      ],
+      "idea_and_source_location": "Bauersfeld VII-A Eqs. (10)\u2013(11) concern maintained-thrust power. Jain II-C Eqs. (5)\u2013(8) are a distinct empirical response. Neither is evidence that the exact cubic is a validated motor/rotor law.",
+      "source_assumptions_reference": "bibliography.json entries bauersfeld2025jet and jain2019proximity",
+      "experiment_links": [
+        {
+          "id": "4391-16-lean-0.0025-0.01",
+          "record_path": "research/campaign-exact-efficiency/results/boids/4391-16-lean-0.0025-0.01.json",
+          "record_sha256": "ef578328327dc6220d93e60c553a46b01af0914cf8402c278eab200d3ed3dd86",
+          "state_stream_sha256": "4d5e4594a12f22b4f8ef4f5f060805f7b958a4beff5f9a38a53c1d338e15eca7"
+        },
+        {
+          "id": "4392-16-lean-0.0025-0.01",
+          "record_path": "research/campaign-exact-efficiency/results/boids/4392-16-lean-0.0025-0.01.json",
+          "record_sha256": "7430bab2a678f38134ef5ee15d2caa0c92aa490881dc5f67abeb97dff2aeec22",
+          "state_stream_sha256": "64b8b57d220e242ba5ecf5179c4e2b9afd0087be1d9606be0ea4fa8622791265"
+        },
+        {
+          "id": "4391-50-lean-0.0025-0.01",
+          "record_path": "research/campaign-exact-efficiency/results/boids/4391-50-lean-0.0025-0.01.json",
+          "record_sha256": "688c316b1a3474889778faff96fdaae8014eaa02a0338da8fbf5b6064dcf952e",
+          "state_stream_sha256": "b4b51e2bcc075b9d1c8b3554cd41d13adfa889588afeb6fdb6aaf8a6e61a25a6"
+        },
+        {
+          "id": "4392-50-lean-0.0025-0.01",
+          "record_path": "research/campaign-exact-efficiency/results/boids/4392-50-lean-0.0025-0.01.json",
+          "record_sha256": "95e68deab8cce572772c4e141e8d3c7dcbd87edbbf53bd1e6bfe2c56f7187372",
+          "state_stream_sha256": "1ed98661be685cd4c9bfe5d70148f1cd24fd60a927cd35729ebb232685da5cc0"
+        }
+      ],
+      "recorded_result": "Same receiver conversion runs under legacy and lean; equality between these implementations does not test the conversion against an independent force reference.",
+      "audit_algebra": "Writing T=f0*x, alpha=U/sqrt(f0/(2*rho*A)) and imposing idealPower(T,U)=idealPower(f0,0) gives x*(alpha/2+sqrt(alpha^2/4+x))=1, hence x^3+alpha*x-1=0. This audit derivation confirms internal algebra, not motor physics.",
+      "failures_and_unresolved_applicability": "Rotor electrical power, RPM, inflow response, airframe loads and yaw disturbance are not independently calibrated.",
+      "next_test_hypothesis": "A measured force/moment grid at documented voltage/RPM can discriminate this fixed-power surrogate from a fitted receiver model. Not run."
+    },
+    {
+      "retrospective": true,
+      "verified_date": "2026-10-13",
+      "implementation": {
+        "repository": "https://github.com/denghanjie/drone-swarm-aerodynamics-public",
+        "input_checkpoint_commit": "c024dfc27b9e6b7cd5b39132164d1339cb95b12f",
+        "physics_baseline_commit": "c591ce2b195fa01b895d4ba881a44a4b92fdd703",
+        "candidate_commit": null,
+        "candidate_commit_note": "Candidate existed as local untracked campaign at audit time; no publication commit invented.",
+        "candidate_path": "research/campaign-exact-efficiency/src/exact-aero.cjs",
+        "candidate_sha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+        "selected_variant": "lean",
+        "matching_published_source_commit": "d83a2a36d166eb2b3e83aa2cb673bd4ba1b2b4b3",
+        "matching_published_source_url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/d83a2a36d166eb2b3e83aa2cb673bd4ba1b2b4b3/research/campaign-exact-efficiency/src/exact-aero.cjs",
+        "publication_provenance_note": "This later published checkpoint contains matching evaluator bytes. It does not imply that the recorded runs executed from this commit; audit-time candidate_commit and run hashes are retained."
+      },
+      "causality_note": "This audit occurred after the recorded exact-code campaign. It does not claim these papers guided its design or constitute physical reference data.",
+      "id": "physics-added-support-and-overlap-assumptions",
+      "bibliography_ids": [
+        "bauersfeld2025jet"
+      ],
+      "relationship": "unverified_provenance",
+      "actual_repository_use_evidence": [
+        "outputs/milestone-28-source/aero.cjs:4, 11\u201317 defines support, guard, tilt, projection and sum/RSS rules",
+        "src/exact-aero.cjs:11\u201313, 93\u2013103 preserves these choices for sum-rotor"
+      ],
+      "idea_and_source_location": "The code adds 2\u20132.5 m downstream fade/cutoff, 2\u20133 half-width radial fade/cutoff, 3 m neighbor radius, 20-degree tilt guard, 0.15 m near-wake cylinder and axial scalar superposition. These values are not attributed to verified experimental support by the cited paper.",
+      "source_assumptions_reference": "bibliography.json#bauersfeld2025jet",
+      "experiment_links": [
+        {
+          "id": "4391-16-lean-0.0025-0.01",
+          "record_path": "research/campaign-exact-efficiency/results/boids/4391-16-lean-0.0025-0.01.json",
+          "record_sha256": "ef578328327dc6220d93e60c553a46b01af0914cf8402c278eab200d3ed3dd86",
+          "state_stream_sha256": "4d5e4594a12f22b4f8ef4f5f060805f7b958a4beff5f9a38a53c1d338e15eca7"
+        },
+        {
+          "id": "4392-16-lean-0.0025-0.01",
+          "record_path": "research/campaign-exact-efficiency/results/boids/4392-16-lean-0.0025-0.01.json",
+          "record_sha256": "7430bab2a678f38134ef5ee15d2caa0c92aa490881dc5f67abeb97dff2aeec22",
+          "state_stream_sha256": "64b8b57d220e242ba5ecf5179c4e2b9afd0087be1d9606be0ea4fa8622791265"
+        },
+        {
+          "id": "4391-50-lean-0.0025-0.01",
+          "record_path": "research/campaign-exact-efficiency/results/boids/4391-50-lean-0.0025-0.01.json",
+          "record_sha256": "688c316b1a3474889778faff96fdaae8014eaa02a0338da8fbf5b6064dcf952e",
+          "state_stream_sha256": "b4b51e2bcc075b9d1c8b3554cd41d13adfa889588afeb6fdb6aaf8a6e61a25a6"
+        },
+        {
+          "id": "4392-50-lean-0.0025-0.01",
+          "record_path": "research/campaign-exact-efficiency/results/boids/4392-50-lean-0.0025-0.01.json",
+          "record_sha256": "95e68deab8cce572772c4e141e8d3c7dcbd87edbbf53bd1e6bfe2c56f7187372",
+          "state_stream_sha256": "1ed98661be685cd4c9bfe5d70148f1cd24fd60a927cd35729ebb232685da5cc0"
+        }
+      ],
+      "recorded_result": "Code-equivalence checks preserve the existing positive contributions within this finite-support law. Their omission-free claim is conditional on the already-truncated model.",
+      "failures_and_unresolved_applicability": "No external overlapping-wake, far-tail, tilted-flight, moving-wake or wall/ground-effect validation in this campaign.",
+      "next_test_hypothesis": "Independent multiple-source data can distinguish sum, RSS and interacting-wake responses without reusing simulation output as ground truth. Not run."
+    },
+    {
+      "retrospective": true,
+      "verified_date": "2026-10-13",
+      "implementation": {
+        "repository": "https://github.com/denghanjie/drone-swarm-aerodynamics-public",
+        "input_checkpoint_commit": "c024dfc27b9e6b7cd5b39132164d1339cb95b12f",
+        "physics_baseline_commit": "c591ce2b195fa01b895d4ba881a44a4b92fdd703",
+        "candidate_commit": null,
+        "candidate_commit_note": "Candidate existed as local untracked campaign at audit time; no publication commit invented.",
+        "candidate_path": "research/campaign-exact-efficiency/src/exact-aero.cjs",
+        "candidate_sha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+        "selected_variant": "lean",
+        "matching_published_source_commit": "d83a2a36d166eb2b3e83aa2cb673bd4ba1b2b4b3",
+        "matching_published_source_url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/d83a2a36d166eb2b3e83aa2cb673bd4ba1b2b4b3/research/campaign-exact-efficiency/src/exact-aero.cjs",
+        "publication_provenance_note": "This later published checkpoint contains matching evaluator bytes. It does not imply that the recorded runs executed from this commit; audit-time candidate_commit and run hashes are retained."
+      },
+      "causality_note": "This audit occurred after the recorded exact-code campaign. It does not claim these papers guided its design or constitute physical reference data.",
+      "id": "physics-jain-empirical-comparator",
+      "bibliography_ids": [
+        "jain2019proximity"
+      ],
+      "relationship": "related_comparator",
+      "actual_repository_use_evidence": [],
+      "idea_and_source_location": "II-A\u2013C Eqs. (1)\u2013(8), IV-C, IV-G Fig. 8. See bibliography.",
+      "source_assumptions_reference": "bibliography.json#jain2019proximity",
+      "experiment_links": [],
+      "recorded_result": null,
+      "failures_and_unresolved_applicability": "No Jain-model implementation or matching measurement comparison was found in the audited sources. Its observed mismatch is not a failure recorded by this campaign.",
+      "next_test_hypothesis": "Matched propeller calibration may outperform the cubic on held-out receiver forces and moments. Not run."
+    },
+    {
+      "retrospective": true,
+      "verified_date": "2026-10-13",
+      "implementation": {
+        "repository": "https://github.com/denghanjie/drone-swarm-aerodynamics-public",
+        "input_checkpoint_commit": "c024dfc27b9e6b7cd5b39132164d1339cb95b12f",
+        "physics_baseline_commit": "c591ce2b195fa01b895d4ba881a44a4b92fdd703",
+        "candidate_commit": null,
+        "candidate_commit_note": "Candidate existed as local untracked campaign at audit time; no publication commit invented.",
+        "candidate_path": "research/campaign-exact-efficiency/src/exact-aero.cjs",
+        "candidate_sha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+        "selected_variant": "lean",
+        "matching_published_source_commit": "d83a2a36d166eb2b3e83aa2cb673bd4ba1b2b4b3",
+        "matching_published_source_url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/d83a2a36d166eb2b3e83aa2cb673bd4ba1b2b4b3/research/campaign-exact-efficiency/src/exact-aero.cjs",
+        "publication_provenance_note": "This later published checkpoint contains matching evaluator bytes. It does not imply that the recorded runs executed from this commit; audit-time candidate_commit and run hashes are retained."
+      },
+      "causality_note": "This audit occurred after the recorded exact-code campaign. It does not claim these papers guided its design or constitute physical reference data.",
+      "id": "physics-kiran-physical-reference-candidate",
+      "bibliography_ids": [
+        "kiran2025downwash"
+      ],
+      "relationship": "related_comparator",
+      "actual_repository_use_evidence": [],
+      "idea_and_source_location": "II-A, III-A\u2013C, Eqs. (3)\u2013(6), Table I, Figs. 5\u20136, 12\u201313, 15\u201316, V. See bibliography.",
+      "source_assumptions_reference": "bibliography.json#kiran2025downwash",
+      "experiment_links": [],
+      "recorded_result": null,
+      "failures_and_unresolved_applicability": "Raw data inaccessible in this audit; no simulator fit or validation executed. Existing roadmap mentions a blocked candidate dataset but does not identify this DOI in audited files, so historical use is not asserted.",
+      "next_test_hypothesis": "Raw static-force candidate deferred pending geometry and calibration; former 5 < z/l < 6.5 figure screen rejected before execution because conservative model-domain gate has no eligible points.",
+      "normalization_correction": "NORMALIZATION-CORRECTION-2026-10-13.md",
+      "proposal_status": "withdrawn_figure_screen_before_execution; raw_screen_deferred"
+    }
+  ],
+  "pre_execution_audit_events": [
+    {
+      "id": "normalization-gate-2026-10-13",
+      "type": "proposal_rejected_before_experiment",
+      "not_experiment_id": true,
+      "note": "NORMALIZATION-CORRECTION-2026-10-13.md",
+      "old_proposal_sha256": "26ec53ebdaa03bad24de55b0bb4a25b08a9cf2b9a46d6be951b59ef490ba3126",
+      "old_window_z_over_l": {
+        "lower_exclusive": 5,
+        "upper_exclusive": 6.5
+      },
+      "plausible_D_over_l": [
+        2,
+        2.8284271247461903
+      ],
+      "conservative_far_field_min_z_over_l": 7.0710678118654755,
+      "eligible_original_window": false,
+      "physical_result": null
+    }
+  ]
+}

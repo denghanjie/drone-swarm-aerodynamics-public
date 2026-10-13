@@ -1,0 +1,57 @@
+{
+  "verified_date": "2026-10-13",
+  "search_scope": [
+    "Repository .md and .cjs files below 250 kB excluding vendor, node_modules, .git and generated viewer QA; direct inspection of original wake, aero, mechanics, roadmap and final campaign provenance/results.",
+    "Public primary-source search for mean quadrotor wakes, receiver thrust/force/moment response and close-proximity measurements.",
+    "Exact-title correction/erratum searches; canonical arXiv version histories; Crossref relation/update fields; RSS proceedings."
+  ],
+  "source_use_conclusion": "Bauersfeld is explicitly named in three audited source files. No Jain/Kiran name, DOI or arXiv identifier appeared in the bounded code/document scan. This does not certify the entire historical project corpus.",
+  "access_gaps": [
+    {
+      "target": "IEEE DOI resolver pages for Bauersfeld/Jain",
+      "result": "Web fetch internal error; Crossref metadata and legitimate arXiv/institutional full text used."
+    },
+    {
+      "target": "Jain institutional PDF",
+      "result": "Web PDF tool supplied full nine-page text. Separate local download returned HTTP 403; not retried. No local PDF hash available."
+    },
+    {
+      "target": "eScholarship Jain item",
+      "result": "Web page supplied bibliographic metadata. Local response empty; not treated as full text."
+    },
+    {
+      "target": "https://roboticsconference.org/program/papers/102/",
+      "result": "404; official RSS proceedings at roboticsproceedings.org verified separately."
+    },
+    {
+      "target": "https://doi.org/10.26300/64d4-wa17",
+      "result": "Web tool reported inaccessible; no raw dataset downloaded."
+    }
+  ],
+  "exclusions": [
+    "No benchmark run.",
+    "No public upload.",
+    "No full articles or screenshots authorized for redistribution.",
+    "No exhaustive novelty, correction or retraction clearance."
+  ],
+  "public_file_allowlist": [
+    "README.md",
+    "bibliography.json",
+    "literature-experiment-ledger.json",
+    "verification-and-access.json",
+    "audit-integrity.json",
+    "DATA-ACCESS.json",
+    "PROSPECTIVE-PHYSICS-SCREEN.md",
+    "NORMALIZATION-CORRECTION-2026-10-13.md",
+    "PROSPECTIVE-PHYSICS-SCREEN.superseded-2026-10-13.md"
+  ],
+  "source_artefact_hash": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+  "follow_on_dataset_metadata": "DATA-ACCESS.json: DataCite identity verified; Brown landing returned 403; raw access and license remain unverified.",
+  "normalization_recheck": {
+    "date": "2026-10-13",
+    "note": "NORMALIZATION-CORRECTION-2026-10-13.md",
+    "materials": "Kiran arXiv v1 PDF Figs. 3\u20134, III-A and III-B1; Bauersfeld arXiv v3 Fig. 2; canonical arXiv history; RSS publisher PDF link.",
+    "result": "Supported projected-half-side reconciliation; prose ambiguity retained. Earlier figure screen rejected before execution."
+  },
+  "distribution_note": "Only listed prose/JSON audit files are distributed; third-party full texts and renderings are excluded."
+}

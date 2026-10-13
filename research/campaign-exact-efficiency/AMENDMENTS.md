@@ -21,3 +21,11 @@ Independent pre-timing harness review requires complete four-rotor/load output c
 ## A4 — Boids schedule validation (2026-10-13, before Boids or timing)
 
 Independent harness inspection requested explicit allowed-step checks. The Boids runner now rejects physics steps outside{2.5,1.25}ms, airflow steps outside{10,5}ms, nonfinite duration and non-integral field/control/frame/duration schedules. Planned cadences are unchanged. Benchmark setupMs means empty evaluator/scratch construction only; first geometry storage allocation occurs during documented warmup and is not presented as a full one-shot setup cost.
+
+## A5 — timed whole-pipeline terminal-state integrity (2026-10-13, before primary pipeline timing)
+
+Independent review requested deterministic terminal-state verification while recording remains disabled. Every primary timed Boids member now saves SHA256 of all final17-entry states and last held four-rotor winds, calculated after its measured total interval, and compares against a completed legacy warmup. Config, completed step count, field updates and end time are retained. This changes the harness only; airflow method6111d7a7 and frozen timing work/cadences are unchanged. Earlier independent whole-pipeline completion checks are not retroactively claimed as bitwise terminal-state verification.
+
+## A6 — independent pipeline integrity clarification (2026-10-13, report audit)
+
+A5's final sentence was too broad. Independent raw pipeline records already retained matching final full-state hashes and zero final-state difference for all27timed members. They lacked terminal held-wind hashes only. The primary A5 addition verifies both final states and held winds. This reporting correction does not change any method, timing or outcome.

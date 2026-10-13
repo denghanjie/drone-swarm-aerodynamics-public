@@ -1,0 +1,35 @@
+{
+  "analysis_kind": "retrospective arithmetic on existing measurements; no simulation or benchmark run",
+  "source": {
+    "sha256": "3f00fc007a783428ef536c4aa40f1ef69d3e85f5754e46027bcf184e430b2bce",
+    "repository_commit": null,
+    "commit_note": "Integrated local artifact identified by SHA256; no published commit asserted for this file.",
+    "repository_path": "research/campaign-exact-efficiency/results/pipeline.json"
+  },
+  "formula": "For each variant and stage, median across the seven saved repetitions of timing[stage]/timing[total]. Stage medians need not sum to one; uninstrumented overhead exists.",
+  "workload": "Development seed 4301, N=16, duration=1 second, 400 physics steps, 100 field updates, recording disabled",
+  "median_stage_fraction": {
+    "legacy": {
+      "field": 0.23264280525982384,
+      "controller": 0.18986680217738333,
+      "physics": 0.4600082406289919,
+      "safety": 0.09228274091144577,
+      "recording": 4.971610083973313e-05
+    },
+    "previous-zero": {
+      "field": 0.19649678788653585,
+      "controller": 0.19716618380885553,
+      "physics": 0.49719837131822814,
+      "safety": 0.102688422561008,
+      "recording": 5.872105663630702e-05
+    },
+    "lean": {
+      "field": 0.1755738658715412,
+      "controller": 0.20119092170194208,
+      "physics": 0.5058488313262136,
+      "safety": 0.10382775251497617,
+      "recording": 6.172874791112397e-05
+    }
+  },
+  "interpretation": "The lean measurement is approximately 50.6% physics and 17.6% field. It does not establish a universal bottleneck or causal decomposition of speedup. Timed nested counters and host/JIT effects are possible."
+}

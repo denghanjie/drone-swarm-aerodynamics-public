@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "scope": "Retrospective physical-model provenance and three closest directly relevant verified sources; not an exhaustive novelty review.",
+  "verified_date": "2026-10-13",
+  "entries": [
+    {
+      "verified_date": "2026-10-13",
+      "verification_method": "Primary full text read; bibliographic metadata checked against Crossref DOI record; search snippets used only for discovery.",
+      "retrospective": true,
+      "id": "bauersfeld2025jet",
+      "title": "Robotics Meets Fluid Dynamics: A Characterization of the Induced Airflow Below a Quadrotor as a Turbulent Jet",
+      "authors": [
+        "Leonard Bauersfeld",
+        "Koen Muller",
+        "Dominic Ziegler",
+        "Filippo Coletti",
+        "Davide Scaramuzza"
+      ],
+      "year": 2025,
+      "venue": "IEEE Robotics and Automation Letters",
+      "volume": "10",
+      "issue": "2",
+      "pages": "1241-1248",
+      "doi": "10.1109/lra.2024.3518835",
+      "doi_url": "https://doi.org/10.1109/lra.2024.3518835",
+      "publication_status": "Published journal article; consulted author accepted-manuscript preprint",
+      "version_consulted": {
+        "arxiv": "2403.13321v3",
+        "version_date": "2024-12-12",
+        "full_text": "https://arxiv.org/html/2403.13321v3",
+        "pdf": "https://arxiv.org/pdf/2403.13321v3",
+        "version_note": "arXiv labels RA-L 2024; Crossref assigns the journal issue to February 2025. Cite 2025 for volume 10(2), 1241–1248; 2024 for this preprint version."
+      },
+      "attributions": [
+        {
+          "location": "III-B, Eq. (1); III-C–D, Eqs. (3)–(8); VI-B, Eq. (9); VI-C",
+          "url": "https://arxiv.org/html/2403.13321v3#S6",
+          "finding": "Merged mean axial profile, hover-velocity and motor-distance normalization, fitted decay/spread/origin parameters."
+        },
+        {
+          "location": "Fig. 2; IV-B, Table I; IV-C; V; VII-A, Eqs. (10)–(11)",
+          "url": "https://arxiv.org/html/2403.13321v3#S3.F2",
+          "finding": "Opposite-motor scale; hover/near-hover measurements; uncanted fit; far-field boundary; maintained-thrust ideal power compensation."
+        }
+      ],
+      "assumptions_and_limits": [
+        "Mean far field of predominantly hovering vehicles; does not establish swarm superposition or the repository receiver law.",
+        "Table I spans 230 g–6.3 kg; the 27 g repository vehicle is outside that measured mass range.",
+        "Rotated tilted wakes, finite support, four point receiver samples and fixed-power thrust conversion are repository adaptations, not validations from this paper."
+      ],
+      "correction_and_version_check": {
+        "sources": [
+          "https://arxiv.org/abs/2403.13321",
+          "https://api.crossref.org/works/10.1109/LRA.2024.3518835"
+        ],
+        "latest_version_observed": "v3, 2024-12-12",
+        "result": "No newer arXiv version or update relation in consulted records; title-plus-correction/erratum search found no correction. This is a bounded check, not proof of absence."
+      }
+    },
+    {
+      "verified_date": "2026-10-13",
+      "verification_method": "Primary full text read; bibliographic metadata checked against Crossref DOI record; search snippets used only for discovery.",
+      "retrospective": true,
+      "id": "jain2019proximity",
+      "title": "Modeling of aerodynamic disturbances for proximity flight of multirotors",
+      "authors": [
+        "Karan P. Jain",
+        "Trey Fortmuller",
+        "Jaeseung Byun",
+        "Simo A. Makiharju",
+        "Mark W. Mueller"
+      ],
+      "year": 2019,
+      "venue": "2019 International Conference on Unmanned Aircraft Systems (ICUAS)",
+      "volume": null,
+      "issue": null,
+      "pages": "1261-1269",
+      "doi": "10.1109/icuas.2019.8798116",
+      "doi_url": "https://doi.org/10.1109/icuas.2019.8798116",
+      "publication_status": "Published conference paper; consulted institutional author PDF",
+      "version_consulted": {
+        "full_text": "https://hiperlab.berkeley.edu/wp-content/uploads/2019/05/Modeling_of_aerodynamic_disturbances_for_proximity_flight_of_multirotors.pdf",
+        "institutional_record": "https://escholarship.org/uc/item/43q2t9cv",
+        "version_note": "Nine-page institutional PDF, read through web PDF extraction. No explicit revision label; byte identity to publisher version not established."
+      },
+      "attributions": [
+        {
+          "location": "II-A–B, Eqs. (1)–(4)",
+          "url": "https://hiperlab.berkeley.edu/wp-content/uploads/2019/05/Modeling_of_aerodynamic_disturbances_for_proximity_flight_of_multirotors.pdf#page=2",
+          "finding": "Parameterized flow and airframe-drag contributions."
+        },
+        {
+          "location": "II-C, Eqs. (5)–(8); IV-C; IV-G, Fig. 8",
+          "url": "https://hiperlab.berkeley.edu/wp-content/uploads/2019/05/Modeling_of_aerodynamic_disturbances_for_proximity_flight_of_multirotors.pdf#page=3",
+          "finding": "Propeller-specific measured inflow/thrust response feeds summed forces and moments; validation includes substantial close-separation mismatch."
+        }
+      ],
+      "assumptions_and_limits": [
+        "Two vehicle types with fitted parameters, not a universal receiver conversion.",
+        "The response uses an experimentally fitted inflow and rotor-speed law; it is not the repository cubic.",
+        "IV-G reports disagreement at 0.5 m; matching larger separations cannot validate repository near-wake exclusion or its smaller vehicle."
+      ],
+      "correction_and_version_check": {
+        "sources": [
+          "https://api.crossref.org/works/10.1109/ICUAS.2019.8798116",
+          "https://escholarship.org/uc/item/43q2t9cv"
+        ],
+        "latest_version_observed": "Institutional 2019 paper, no explicit revision history",
+        "result": "No update relation in Crossref or correction located by title-plus-correction/erratum search. Publisher full-text access was not established; absence of corrections is not certified."
+      }
+    },
+    {
+      "verified_date": "2026-10-13",
+      "verification_method": "Primary full text read; bibliographic metadata checked against Crossref DOI record; search snippets used only for discovery.",
+      "retrospective": true,
+      "id": "kiran2025downwash",
+      "title": "Influence of Static and Dynamic Downwash Interactions on Multi-Quadrotor Systems",
+      "authors": [
+        "Anoop Kiran",
+        "Nora Ayanian",
+        "Kenneth Breuer"
+      ],
+      "year": 2025,
+      "venue": "Robotics: Science and Systems XXI",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "doi": "10.15607/rss.2025.xxi.102",
+      "doi_url": "https://doi.org/10.15607/rss.2025.xxi.102",
+      "publication_status": "Published RSS XXI proceedings paper; consulted arXiv v1 full text",
+      "version_consulted": {
+        "arxiv": "2507.09463v1",
+        "version_date": "2025-07-13",
+        "full_text": "https://arxiv.org/html/2507.09463v1",
+        "pdf": "https://arxiv.org/pdf/2507.09463v1",
+        "proceedings": "https://www.roboticsproceedings.org/rss21/p102.html",
+        "version_note": "RSS proceedings title/authors/year/DOI verified. Full text consulted is arXiv v1; publisher PDF byte-equivalence not established."
+      },
+      "attributions": [
+        {
+          "location": "II-A; III-A, Figs. 3, 5–6",
+          "url": "https://arxiv.org/html/2507.09463v1#S2.SS1",
+          "finding": "Crazyflie load-cell measurements with 4 V/PWM operation; l = 32.5 mm has ambiguous prose. Figures and cross-paper conversion support projected half-side. See normalization correction."
+        },
+        {
+          "location": "III-B2, Eqs. (3)–(6), Table I; III-B3, Figs. 12–13; III-C, Figs. 15–16; V",
+          "url": "https://arxiv.org/html/2507.09463v1#S3.SS2.SSS2",
+          "finding": "Measured jet scaling, interacting-pair flow changes and approach/retreat-dependent forces/moments; homogeneous, traverse-limited experiments."
+        }
+      ],
+      "assumptions_and_limits": [
+        "Constant voltage is not constant rotor frequency or the repository constant induced-power assumption.",
+        "Length mapping must distinguish radial arm and projected half-side. Supported projected reading gives opposite-motor D = 2√2 l. The previous asserted radial-arm mapping is superseded.",
+        "III-A and IV use inconsistent percentage wording for thrust loss; no quantitative loss target is adopted here.",
+        "Related dataset DOI 10.26300/64d4-wa17 could not be accessed through the web tool; raw observations were not acquired or compared."
+      ],
+      "correction_and_version_check": {
+        "sources": [
+          "https://arxiv.org/abs/2507.09463",
+          "https://www.roboticsproceedings.org/rss21/p102.html",
+          "https://api.crossref.org/works/10.15607/RSS.2025.XXI.102"
+        ],
+        "latest_version_observed": "v1, 2025-07-13",
+        "result": "No newer arXiv version or correction/update relation in consulted records; title-plus-correction/erratum search found no correction. Internal wording discrepancy remains unresolved.",
+        "local_audit_amendment": "Cross-paper geometry interpretation corrected before experiment execution; this is not a publisher-issued correction."
+      },
+      "normalization_correction": "NORMALIZATION-CORRECTION-2026-10-13.md"
+    }
+  ]
+}

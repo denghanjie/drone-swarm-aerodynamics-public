@@ -1,0 +1,1199 @@
+{
+  "config": {
+    "seed": 4301,
+    "count": 50,
+    "family": "sparse",
+    "stage": "development"
+  },
+  "sourceHash": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+  "sourceUnchanged": true,
+  "inputHash": "587622912bbc29b4a49a7f8340c42adc6f8622f8d77a6251996fae66dc58e9cc",
+  "inputHashAfter": "587622912bbc29b4a49a7f8340c42adc6f8622f8d77a6251996fae66dc58e9cc",
+  "inputUnchanged": true,
+  "inputFile": "fixtures/4301-50-sparse.json",
+  "times": [
+    0,
+    0.37,
+    0.91
+  ],
+  "setupMs": {
+    "legacy": 0.0010809999999992215,
+    "previous-zero": 0.002012999999998044,
+    "lean": 0.00143200000000121,
+    "support": 0.0015020000000021128,
+    "reuse": 0.003365000000002283
+  },
+  "warmupCallsPerVariant": 9,
+  "pilot": {
+    "variant": "previous-zero",
+    "calls": 3,
+    "ms": 2.7620540000000062
+  },
+  "calls": 11,
+  "repetitions": 7,
+  "rows": [
+    {
+      "scope": "field",
+      "rep": 0,
+      "order": [
+        "legacy",
+        "previous-zero",
+        "lean",
+        "support",
+        "reuse"
+      ],
+      "calls": 11,
+      "ms": {
+        "legacy": 15.851672000000008,
+        "previous-zero": 11.191471999999976,
+        "lean": 9.829244000000017,
+        "support": 10.114372000000003,
+        "reuse": 9.793379999999985
+      },
+      "checksums": {
+        "legacy": {
+          "outputHash": "38e47a637c5efb517f45284813aaaee1c684086ee641c3ad96df81e42a9fd5ed",
+          "passed": true
+        },
+        "previous-zero": {
+          "outputHash": "38e47a637c5efb517f45284813aaaee1c684086ee641c3ad96df81e42a9fd5ed",
+          "passed": true
+        },
+        "lean": {
+          "outputHash": "38e47a637c5efb517f45284813aaaee1c684086ee641c3ad96df81e42a9fd5ed",
+          "passed": true
+        },
+        "support": {
+          "outputHash": "38e47a637c5efb517f45284813aaaee1c684086ee641c3ad96df81e42a9fd5ed",
+          "passed": true
+        },
+        "reuse": {
+          "outputHash": "38e47a637c5efb517f45284813aaaee1c684086ee641c3ad96df81e42a9fd5ed",
+          "passed": true
+        }
+      }
+    },
+    {
+      "scope": "field",
+      "rep": 1,
+      "order": [
+        "legacy",
+        "reuse",
+        "support",
+        "lean",
+        "previous-zero"
+      ],
+      "calls": 11,
+      "ms": {
+        "legacy": 15.697819999999979,
+        "reuse": 8.709159,
+        "support": 8.830662000000018,
+        "lean": 8.43393500000002,
+        "previous-zero": 9.60149100000001
+      },
+      "checksums": {
+        "legacy": {
+          "outputHash": "38e47a637c5efb517f45284813aaaee1c684086ee641c3ad96df81e42a9fd5ed",
+          "passed": true
+        },
+        "reuse": {
+          "outputHash": "38e47a637c5efb517f45284813aaaee1c684086ee641c3ad96df81e42a9fd5ed",
+          "passed": true
+        },
+        "support": {
+          "outputHash": "38e47a637c5efb517f45284813aaaee1c684086ee641c3ad96df81e42a9fd5ed",
+          "passed": true
+        },
+        "lean": {
+          "outputHash": "38e47a637c5efb517f45284813aaaee1c684086ee641c3ad96df81e42a9fd5ed",
+          "passed": true
+        },
+        "previous-zero": {
+          "outputHash": "38e47a637c5efb517f45284813aaaee1c684086ee641c3ad96df81e42a9fd5ed",
+          "passed": true
+        }
+      }
+    },
+    {
+      "scope": "field",
+      "rep": 2,
+      "order": [
+        "lean",
+        "support",
+        "reuse",
+        "legacy",
+        "previous-zero"
+      ],
+      "calls": 11,
+      "ms": {
+        "lean": 8.563970999999981,
+        "support": 8.850190999999995,
+        "reuse": 8.71300500000001,
+        "legacy": 17.931249999999977,
+        "previous-zero": 10.11010600000003
+      },
+      "checksums": {
+        "lean": {
+          "outputHash": "38e47a637c5efb517f45284813aaaee1c684086ee641c3ad96df81e42a9fd5ed",
+          "passed": true
+        },
+        "support": {
+          "outputHash": "38e47a637c5efb517f45284813aaaee1c684086ee641c3ad96df81e42a9fd5ed",
+          "passed": true
+        },
+        "reuse": {
+          "outputHash": "38e47a637c5efb517f45284813aaaee1c684086ee641c3ad96df81e42a9fd5ed",
+          "passed": true
+        },
+        "legacy": {
+          "outputHash": "38e47a637c5efb517f45284813aaaee1c684086ee641c3ad96df81e42a9fd5ed",
+          "passed": true
+        },
+        "previous-zero": {
+          "outputHash": "38e47a637c5efb517f45284813aaaee1c684086ee641c3ad96df81e42a9fd5ed",
+          "passed": true
+        }
+      }
+    },
+    {
+      "scope": "field",
+      "rep": 3,
+      "order": [
+        "lean",
+        "previous-zero",
+        "legacy",
+        "reuse",
+        "support"
+      ],
+      "calls": 11,
+      "ms": {
+        "lean": 10.815215999999964,
+        "previous-zero": 14.830845999999951,
+        "legacy": 17.483986999999956,
+        "reuse": 8.965193999999997,
+        "support": 10.771370999999988
+      },
+      "checksums": {
+        "lean": {
+          "outputHash": "38e47a637c5efb517f45284813aaaee1c684086ee641c3ad96df81e42a9fd5ed",
+          "passed": true
+        },
+        "previous-zero": {
+          "outputHash": "38e47a637c5efb517f45284813aaaee1c684086ee641c3ad96df81e42a9fd5ed",
+          "passed": true
+        },
+        "legacy": {
+          "outputHash": "38e47a637c5efb517f45284813aaaee1c684086ee641c3ad96df81e42a9fd5ed",
+          "passed": true
+        },
+        "reuse": {
+          "outputHash": "38e47a637c5efb517f45284813aaaee1c684086ee641c3ad96df81e42a9fd5ed",
+          "passed": true
+        },
+        "support": {
+          "outputHash": "38e47a637c5efb517f45284813aaaee1c684086ee641c3ad96df81e42a9fd5ed",
+          "passed": true
+        }
+      }
+    },
+    {
+      "scope": "field",
+      "rep": 4,
+      "order": [
+        "reuse",
+        "legacy",
+        "previous-zero",
+        "lean",
+        "support"
+      ],
+      "calls": 11,
+      "ms": {
+        "reuse": 9.19045299999999,
+        "legacy": 16.048699,
+        "previous-zero": 10.020771000000025,
+        "lean": 8.678043000000002,
+        "support": 9.391065000000026
+      },
+      "checksums": {
+        "reuse": {
+          "outputHash": "38e47a637c5efb517f45284813aaaee1c684086ee641c3ad96df81e42a9fd5ed",
+          "passed": true
+        },
+        "legacy": {
+          "outputHash": "38e47a637c5efb517f45284813aaaee1c684086ee641c3ad96df81e42a9fd5ed",
+          "passed": true
+        },
+        "previous-zero": {
+          "outputHash": "38e47a637c5efb517f45284813aaaee1c684086ee641c3ad96df81e42a9fd5ed",
+          "passed": true
+        },
+        "lean": {
+          "outputHash": "38e47a637c5efb517f45284813aaaee1c684086ee641c3ad96df81e42a9fd5ed",
+          "passed": true
+        },
+        "support": {
+          "outputHash": "38e47a637c5efb517f45284813aaaee1c684086ee641c3ad96df81e42a9fd5ed",
+          "passed": true
+        }
+      }
+    },
+    {
+      "scope": "field",
+      "rep": 5,
+      "order": [
+        "reuse",
+        "support",
+        "lean",
+        "previous-zero",
+        "legacy"
+      ],
+      "calls": 11,
+      "ms": {
+        "reuse": 11.44831899999997,
+        "support": 8.852716000000044,
+        "lean": 8.149267000000009,
+        "previous-zero": 11.033694999999966,
+        "legacy": 15.870920999999953
+      },
+      "checksums": {
+        "reuse": {
+          "outputHash": "38e47a637c5efb517f45284813aaaee1c684086ee641c3ad96df81e42a9fd5ed",
+          "passed": true
+        },
+        "support": {
+          "outputHash": "38e47a637c5efb517f45284813aaaee1c684086ee641c3ad96df81e42a9fd5ed",
+          "passed": true
+        },
+        "lean": {
+          "outputHash": "38e47a637c5efb517f45284813aaaee1c684086ee641c3ad96df81e42a9fd5ed",
+          "passed": true
+        },
+        "previous-zero": {
+          "outputHash": "38e47a637c5efb517f45284813aaaee1c684086ee641c3ad96df81e42a9fd5ed",
+          "passed": true
+        },
+        "legacy": {
+          "outputHash": "38e47a637c5efb517f45284813aaaee1c684086ee641c3ad96df81e42a9fd5ed",
+          "passed": true
+        }
+      }
+    },
+    {
+      "scope": "field",
+      "rep": 6,
+      "order": [
+        "previous-zero",
+        "lean",
+        "support",
+        "reuse",
+        "legacy"
+      ],
+      "calls": 11,
+      "ms": {
+        "previous-zero": 10.409617000000026,
+        "lean": 8.452462999999966,
+        "support": 11.51131399999997,
+        "reuse": 8.530590999999959,
+        "legacy": 15.319772000000057
+      },
+      "checksums": {
+        "previous-zero": {
+          "outputHash": "38e47a637c5efb517f45284813aaaee1c684086ee641c3ad96df81e42a9fd5ed",
+          "passed": true
+        },
+        "lean": {
+          "outputHash": "38e47a637c5efb517f45284813aaaee1c684086ee641c3ad96df81e42a9fd5ed",
+          "passed": true
+        },
+        "support": {
+          "outputHash": "38e47a637c5efb517f45284813aaaee1c684086ee641c3ad96df81e42a9fd5ed",
+          "passed": true
+        },
+        "reuse": {
+          "outputHash": "38e47a637c5efb517f45284813aaaee1c684086ee641c3ad96df81e42a9fd5ed",
+          "passed": true
+        },
+        "legacy": {
+          "outputHash": "38e47a637c5efb517f45284813aaaee1c684086ee641c3ad96df81e42a9fd5ed",
+          "passed": true
+        }
+      }
+    },
+    {
+      "scope": "receiver",
+      "rep": 0,
+      "order": [
+        "legacy",
+        "previous-zero",
+        "lean",
+        "support",
+        "reuse"
+      ],
+      "calls": 11,
+      "ms": {
+        "legacy": 0.49869999999998527,
+        "previous-zero": 0.561554000000001,
+        "lean": 0.417116999999962,
+        "support": 0.37069799999994757,
+        "reuse": 0.5759859999999435
+      },
+      "checksums": {
+        "legacy": {
+          "outputHash": "cd89ddc23158d9953365aeee2a6026fae317ad8a7a76bf778a1abb7cf7c82cd3",
+          "passed": true
+        },
+        "previous-zero": {
+          "outputHash": "cd89ddc23158d9953365aeee2a6026fae317ad8a7a76bf778a1abb7cf7c82cd3",
+          "passed": true
+        },
+        "lean": {
+          "outputHash": "cd89ddc23158d9953365aeee2a6026fae317ad8a7a76bf778a1abb7cf7c82cd3",
+          "passed": true
+        },
+        "support": {
+          "outputHash": "cd89ddc23158d9953365aeee2a6026fae317ad8a7a76bf778a1abb7cf7c82cd3",
+          "passed": true
+        },
+        "reuse": {
+          "outputHash": "cd89ddc23158d9953365aeee2a6026fae317ad8a7a76bf778a1abb7cf7c82cd3",
+          "passed": true
+        }
+      }
+    },
+    {
+      "scope": "receiver",
+      "rep": 1,
+      "order": [
+        "legacy",
+        "reuse",
+        "support",
+        "lean",
+        "previous-zero"
+      ],
+      "calls": 11,
+      "ms": {
+        "legacy": 0.38533000000006723,
+        "reuse": 0.35375199999998586,
+        "support": 0.35896999999999935,
+        "lean": 0.3595909999999094,
+        "previous-zero": 0.5310379999999668
+      },
+      "checksums": {
+        "legacy": {
+          "outputHash": "cd89ddc23158d9953365aeee2a6026fae317ad8a7a76bf778a1abb7cf7c82cd3",
+          "passed": true
+        },
+        "reuse": {
+          "outputHash": "cd89ddc23158d9953365aeee2a6026fae317ad8a7a76bf778a1abb7cf7c82cd3",
+          "passed": true
+        },
+        "support": {
+          "outputHash": "cd89ddc23158d9953365aeee2a6026fae317ad8a7a76bf778a1abb7cf7c82cd3",
+          "passed": true
+        },
+        "lean": {
+          "outputHash": "cd89ddc23158d9953365aeee2a6026fae317ad8a7a76bf778a1abb7cf7c82cd3",
+          "passed": true
+        },
+        "previous-zero": {
+          "outputHash": "cd89ddc23158d9953365aeee2a6026fae317ad8a7a76bf778a1abb7cf7c82cd3",
+          "passed": true
+        }
+      }
+    },
+    {
+      "scope": "receiver",
+      "rep": 2,
+      "order": [
+        "lean",
+        "support",
+        "reuse",
+        "legacy",
+        "previous-zero"
+      ],
+      "calls": 11,
+      "ms": {
+        "lean": 0.3922900000000027,
+        "support": 0.373843000000079,
+        "reuse": 0.38904600000000755,
+        "legacy": 0.6406640000000152,
+        "previous-zero": 0.6225470000000541
+      },
+      "checksums": {
+        "lean": {
+          "outputHash": "cd89ddc23158d9953365aeee2a6026fae317ad8a7a76bf778a1abb7cf7c82cd3",
+          "passed": true
+        },
+        "support": {
+          "outputHash": "cd89ddc23158d9953365aeee2a6026fae317ad8a7a76bf778a1abb7cf7c82cd3",
+          "passed": true
+        },
+        "reuse": {
+          "outputHash": "cd89ddc23158d9953365aeee2a6026fae317ad8a7a76bf778a1abb7cf7c82cd3",
+          "passed": true
+        },
+        "legacy": {
+          "outputHash": "cd89ddc23158d9953365aeee2a6026fae317ad8a7a76bf778a1abb7cf7c82cd3",
+          "passed": true
+        },
+        "previous-zero": {
+          "outputHash": "cd89ddc23158d9953365aeee2a6026fae317ad8a7a76bf778a1abb7cf7c82cd3",
+          "passed": true
+        }
+      }
+    },
+    {
+      "scope": "receiver",
+      "rep": 3,
+      "order": [
+        "lean",
+        "previous-zero",
+        "legacy",
+        "reuse",
+        "support"
+      ],
+      "calls": 11,
+      "ms": {
+        "lean": 0.3956950000000461,
+        "previous-zero": 0.430437999999981,
+        "legacy": 0.3774980000000596,
+        "reuse": 0.600973999999951,
+        "support": 0.3769170000000486
+      },
+      "checksums": {
+        "lean": {
+          "outputHash": "cd89ddc23158d9953365aeee2a6026fae317ad8a7a76bf778a1abb7cf7c82cd3",
+          "passed": true
+        },
+        "previous-zero": {
+          "outputHash": "cd89ddc23158d9953365aeee2a6026fae317ad8a7a76bf778a1abb7cf7c82cd3",
+          "passed": true
+        },
+        "legacy": {
+          "outputHash": "cd89ddc23158d9953365aeee2a6026fae317ad8a7a76bf778a1abb7cf7c82cd3",
+          "passed": true
+        },
+        "reuse": {
+          "outputHash": "cd89ddc23158d9953365aeee2a6026fae317ad8a7a76bf778a1abb7cf7c82cd3",
+          "passed": true
+        },
+        "support": {
+          "outputHash": "cd89ddc23158d9953365aeee2a6026fae317ad8a7a76bf778a1abb7cf7c82cd3",
+          "passed": true
+        }
+      }
+    },
+    {
+      "scope": "receiver",
+      "rep": 4,
+      "order": [
+        "reuse",
+        "legacy",
+        "previous-zero",
+        "lean",
+        "support"
+      ],
+      "calls": 11,
+      "ms": {
+        "reuse": 0.4200619999999162,
+        "legacy": 0.35646699999995235,
+        "previous-zero": 0.36009200000000874,
+        "lean": 0.5488450000000284,
+        "support": 0.35556499999995594
+      },
+      "checksums": {
+        "reuse": {
+          "outputHash": "cd89ddc23158d9953365aeee2a6026fae317ad8a7a76bf778a1abb7cf7c82cd3",
+          "passed": true
+        },
+        "legacy": {
+          "outputHash": "cd89ddc23158d9953365aeee2a6026fae317ad8a7a76bf778a1abb7cf7c82cd3",
+          "passed": true
+        },
+        "previous-zero": {
+          "outputHash": "cd89ddc23158d9953365aeee2a6026fae317ad8a7a76bf778a1abb7cf7c82cd3",
+          "passed": true
+        },
+        "lean": {
+          "outputHash": "cd89ddc23158d9953365aeee2a6026fae317ad8a7a76bf778a1abb7cf7c82cd3",
+          "passed": true
+        },
+        "support": {
+          "outputHash": "cd89ddc23158d9953365aeee2a6026fae317ad8a7a76bf778a1abb7cf7c82cd3",
+          "passed": true
+        }
+      }
+    },
+    {
+      "scope": "receiver",
+      "rep": 5,
+      "order": [
+        "reuse",
+        "support",
+        "lean",
+        "previous-zero",
+        "legacy"
+      ],
+      "calls": 11,
+      "ms": {
+        "reuse": 0.6654410000001008,
+        "support": 0.5164270000000215,
+        "lean": 0.6982199999999921,
+        "previous-zero": 0.5504680000000235,
+        "legacy": 0.3763260000000628
+      },
+      "checksums": {
+        "reuse": {
+          "outputHash": "cd89ddc23158d9953365aeee2a6026fae317ad8a7a76bf778a1abb7cf7c82cd3",
+          "passed": true
+        },
+        "support": {
+          "outputHash": "cd89ddc23158d9953365aeee2a6026fae317ad8a7a76bf778a1abb7cf7c82cd3",
+          "passed": true
+        },
+        "lean": {
+          "outputHash": "cd89ddc23158d9953365aeee2a6026fae317ad8a7a76bf778a1abb7cf7c82cd3",
+          "passed": true
+        },
+        "previous-zero": {
+          "outputHash": "cd89ddc23158d9953365aeee2a6026fae317ad8a7a76bf778a1abb7cf7c82cd3",
+          "passed": true
+        },
+        "legacy": {
+          "outputHash": "cd89ddc23158d9953365aeee2a6026fae317ad8a7a76bf778a1abb7cf7c82cd3",
+          "passed": true
+        }
+      }
+    },
+    {
+      "scope": "receiver",
+      "rep": 6,
+      "order": [
+        "previous-zero",
+        "lean",
+        "support",
+        "reuse",
+        "legacy"
+      ],
+      "calls": 11,
+      "ms": {
+        "previous-zero": 0.4015239999999949,
+        "lean": 0.3604520000000093,
+        "support": 0.5911189999999351,
+        "reuse": 0.3556550000000698,
+        "legacy": 0.35539399999993293
+      },
+      "checksums": {
+        "previous-zero": {
+          "outputHash": "cd89ddc23158d9953365aeee2a6026fae317ad8a7a76bf778a1abb7cf7c82cd3",
+          "passed": true
+        },
+        "lean": {
+          "outputHash": "cd89ddc23158d9953365aeee2a6026fae317ad8a7a76bf778a1abb7cf7c82cd3",
+          "passed": true
+        },
+        "support": {
+          "outputHash": "cd89ddc23158d9953365aeee2a6026fae317ad8a7a76bf778a1abb7cf7c82cd3",
+          "passed": true
+        },
+        "reuse": {
+          "outputHash": "cd89ddc23158d9953365aeee2a6026fae317ad8a7a76bf778a1abb7cf7c82cd3",
+          "passed": true
+        },
+        "legacy": {
+          "outputHash": "cd89ddc23158d9953365aeee2a6026fae317ad8a7a76bf778a1abb7cf7c82cd3",
+          "passed": true
+        }
+      }
+    },
+    {
+      "scope": "field+receiver",
+      "rep": 0,
+      "order": [
+        "legacy",
+        "previous-zero",
+        "lean",
+        "support",
+        "reuse"
+      ],
+      "calls": 11,
+      "ms": {
+        "legacy": 16.023329999999987,
+        "previous-zero": 10.574704999999994,
+        "lean": 8.974849000000063,
+        "support": 9.143312000000037,
+        "reuse": 9.030502999999953
+      },
+      "checksums": {
+        "legacy": {
+          "outputHash": "e6e949e8202065e720b3aab7e4d54e4df8c9fdc5c44b8b34046494a26cdf1388",
+          "passed": true
+        },
+        "previous-zero": {
+          "outputHash": "e6e949e8202065e720b3aab7e4d54e4df8c9fdc5c44b8b34046494a26cdf1388",
+          "passed": true
+        },
+        "lean": {
+          "outputHash": "e6e949e8202065e720b3aab7e4d54e4df8c9fdc5c44b8b34046494a26cdf1388",
+          "passed": true
+        },
+        "support": {
+          "outputHash": "e6e949e8202065e720b3aab7e4d54e4df8c9fdc5c44b8b34046494a26cdf1388",
+          "passed": true
+        },
+        "reuse": {
+          "outputHash": "e6e949e8202065e720b3aab7e4d54e4df8c9fdc5c44b8b34046494a26cdf1388",
+          "passed": true
+        }
+      }
+    },
+    {
+      "scope": "field+receiver",
+      "rep": 1,
+      "order": [
+        "legacy",
+        "reuse",
+        "support",
+        "lean",
+        "previous-zero"
+      ],
+      "calls": 11,
+      "ms": {
+        "legacy": 15.720463999999993,
+        "reuse": 8.970191999999997,
+        "support": 9.382361999999944,
+        "lean": 9.132916000000023,
+        "previous-zero": 10.49849000000006
+      },
+      "checksums": {
+        "legacy": {
+          "outputHash": "e6e949e8202065e720b3aab7e4d54e4df8c9fdc5c44b8b34046494a26cdf1388",
+          "passed": true
+        },
+        "reuse": {
+          "outputHash": "e6e949e8202065e720b3aab7e4d54e4df8c9fdc5c44b8b34046494a26cdf1388",
+          "passed": true
+        },
+        "support": {
+          "outputHash": "e6e949e8202065e720b3aab7e4d54e4df8c9fdc5c44b8b34046494a26cdf1388",
+          "passed": true
+        },
+        "lean": {
+          "outputHash": "e6e949e8202065e720b3aab7e4d54e4df8c9fdc5c44b8b34046494a26cdf1388",
+          "passed": true
+        },
+        "previous-zero": {
+          "outputHash": "e6e949e8202065e720b3aab7e4d54e4df8c9fdc5c44b8b34046494a26cdf1388",
+          "passed": true
+        }
+      }
+    },
+    {
+      "scope": "field+receiver",
+      "rep": 2,
+      "order": [
+        "lean",
+        "support",
+        "reuse",
+        "legacy",
+        "previous-zero"
+      ],
+      "calls": 11,
+      "ms": {
+        "lean": 9.573640000000069,
+        "support": 8.935039000000074,
+        "reuse": 8.92196899999999,
+        "legacy": 15.768666999999937,
+        "previous-zero": 10.377279000000044
+      },
+      "checksums": {
+        "lean": {
+          "outputHash": "e6e949e8202065e720b3aab7e4d54e4df8c9fdc5c44b8b34046494a26cdf1388",
+          "passed": true
+        },
+        "support": {
+          "outputHash": "e6e949e8202065e720b3aab7e4d54e4df8c9fdc5c44b8b34046494a26cdf1388",
+          "passed": true
+        },
+        "reuse": {
+          "outputHash": "e6e949e8202065e720b3aab7e4d54e4df8c9fdc5c44b8b34046494a26cdf1388",
+          "passed": true
+        },
+        "legacy": {
+          "outputHash": "e6e949e8202065e720b3aab7e4d54e4df8c9fdc5c44b8b34046494a26cdf1388",
+          "passed": true
+        },
+        "previous-zero": {
+          "outputHash": "e6e949e8202065e720b3aab7e4d54e4df8c9fdc5c44b8b34046494a26cdf1388",
+          "passed": true
+        }
+      }
+    },
+    {
+      "scope": "field+receiver",
+      "rep": 3,
+      "order": [
+        "lean",
+        "previous-zero",
+        "legacy",
+        "reuse",
+        "support"
+      ],
+      "calls": 11,
+      "ms": {
+        "lean": 15.106652000000054,
+        "previous-zero": 15.755316999999991,
+        "legacy": 20.030867000000057,
+        "reuse": 11.586185999999998,
+        "support": 9.105715000000032
+      },
+      "checksums": {
+        "lean": {
+          "outputHash": "e6e949e8202065e720b3aab7e4d54e4df8c9fdc5c44b8b34046494a26cdf1388",
+          "passed": true
+        },
+        "previous-zero": {
+          "outputHash": "e6e949e8202065e720b3aab7e4d54e4df8c9fdc5c44b8b34046494a26cdf1388",
+          "passed": true
+        },
+        "legacy": {
+          "outputHash": "e6e949e8202065e720b3aab7e4d54e4df8c9fdc5c44b8b34046494a26cdf1388",
+          "passed": true
+        },
+        "reuse": {
+          "outputHash": "e6e949e8202065e720b3aab7e4d54e4df8c9fdc5c44b8b34046494a26cdf1388",
+          "passed": true
+        },
+        "support": {
+          "outputHash": "e6e949e8202065e720b3aab7e4d54e4df8c9fdc5c44b8b34046494a26cdf1388",
+          "passed": true
+        }
+      }
+    },
+    {
+      "scope": "field+receiver",
+      "rep": 4,
+      "order": [
+        "reuse",
+        "legacy",
+        "previous-zero",
+        "lean",
+        "support"
+      ],
+      "calls": 11,
+      "ms": {
+        "reuse": 9.04996200000005,
+        "legacy": 15.744109999999978,
+        "previous-zero": 12.844793999999979,
+        "lean": 10.171116999999981,
+        "support": 9.994392000000062
+      },
+      "checksums": {
+        "reuse": {
+          "outputHash": "e6e949e8202065e720b3aab7e4d54e4df8c9fdc5c44b8b34046494a26cdf1388",
+          "passed": true
+        },
+        "legacy": {
+          "outputHash": "e6e949e8202065e720b3aab7e4d54e4df8c9fdc5c44b8b34046494a26cdf1388",
+          "passed": true
+        },
+        "previous-zero": {
+          "outputHash": "e6e949e8202065e720b3aab7e4d54e4df8c9fdc5c44b8b34046494a26cdf1388",
+          "passed": true
+        },
+        "lean": {
+          "outputHash": "e6e949e8202065e720b3aab7e4d54e4df8c9fdc5c44b8b34046494a26cdf1388",
+          "passed": true
+        },
+        "support": {
+          "outputHash": "e6e949e8202065e720b3aab7e4d54e4df8c9fdc5c44b8b34046494a26cdf1388",
+          "passed": true
+        }
+      }
+    },
+    {
+      "scope": "field+receiver",
+      "rep": 5,
+      "order": [
+        "reuse",
+        "support",
+        "lean",
+        "previous-zero",
+        "legacy"
+      ],
+      "calls": 11,
+      "ms": {
+        "reuse": 10.09093699999994,
+        "support": 10.147862999999916,
+        "lean": 9.738146999999913,
+        "previous-zero": 11.150380999999925,
+        "legacy": 17.573361999999975
+      },
+      "checksums": {
+        "reuse": {
+          "outputHash": "e6e949e8202065e720b3aab7e4d54e4df8c9fdc5c44b8b34046494a26cdf1388",
+          "passed": true
+        },
+        "support": {
+          "outputHash": "e6e949e8202065e720b3aab7e4d54e4df8c9fdc5c44b8b34046494a26cdf1388",
+          "passed": true
+        },
+        "lean": {
+          "outputHash": "e6e949e8202065e720b3aab7e4d54e4df8c9fdc5c44b8b34046494a26cdf1388",
+          "passed": true
+        },
+        "previous-zero": {
+          "outputHash": "e6e949e8202065e720b3aab7e4d54e4df8c9fdc5c44b8b34046494a26cdf1388",
+          "passed": true
+        },
+        "legacy": {
+          "outputHash": "e6e949e8202065e720b3aab7e4d54e4df8c9fdc5c44b8b34046494a26cdf1388",
+          "passed": true
+        }
+      }
+    },
+    {
+      "scope": "field+receiver",
+      "rep": 6,
+      "order": [
+        "previous-zero",
+        "lean",
+        "support",
+        "reuse",
+        "legacy"
+      ],
+      "calls": 11,
+      "ms": {
+        "previous-zero": 11.021207000000004,
+        "lean": 9.524205000000052,
+        "support": 9.166237000000024,
+        "reuse": 9.236611999999923,
+        "legacy": 16.066974999999957
+      },
+      "checksums": {
+        "previous-zero": {
+          "outputHash": "e6e949e8202065e720b3aab7e4d54e4df8c9fdc5c44b8b34046494a26cdf1388",
+          "passed": true
+        },
+        "lean": {
+          "outputHash": "e6e949e8202065e720b3aab7e4d54e4df8c9fdc5c44b8b34046494a26cdf1388",
+          "passed": true
+        },
+        "support": {
+          "outputHash": "e6e949e8202065e720b3aab7e4d54e4df8c9fdc5c44b8b34046494a26cdf1388",
+          "passed": true
+        },
+        "reuse": {
+          "outputHash": "e6e949e8202065e720b3aab7e4d54e4df8c9fdc5c44b8b34046494a26cdf1388",
+          "passed": true
+        },
+        "legacy": {
+          "outputHash": "e6e949e8202065e720b3aab7e4d54e4df8c9fdc5c44b8b34046494a26cdf1388",
+          "passed": true
+        }
+      }
+    }
+  ],
+  "summaries": [
+    {
+      "scope": "field",
+      "variant": "legacy",
+      "reference": "previous-zero",
+      "medianRatio": 1.4716941074777314,
+      "bootstrap95": [
+        1.4164063494060515,
+        1.6349356573890412
+      ],
+      "medianMsPerCall": 1.4428109999999956,
+      "qualified": false
+    },
+    {
+      "scope": "field",
+      "variant": "previous-zero",
+      "reference": "legacy",
+      "medianRatio": 0.679489028948994,
+      "bootstrap95": [
+        0.6116448653379911,
+        0.7060120850343087
+      ],
+      "medianMsPerCall": 0.9463288181818205,
+      "qualified": true
+    },
+    {
+      "scope": "field",
+      "variant": "lean",
+      "reference": "legacy",
+      "medianRatio": 0.5407318686704762,
+      "bootstrap95": [
+        0.5134715874396976,
+        0.6185783597299627
+      ],
+      "medianMsPerCall": 0.7785428181818165,
+      "qualified": true
+    },
+    {
+      "scope": "field",
+      "variant": "lean",
+      "reference": "previous-zero",
+      "medianRatio": 0.8470703472347327,
+      "bootstrap95": [
+        0.7385800495663541,
+        0.8782798187763002
+      ],
+      "medianMsPerCall": 0.7785428181818165,
+      "qualified": true
+    },
+    {
+      "scope": "field",
+      "variant": "support",
+      "reference": "legacy",
+      "medianRatio": 0.5851605167496772,
+      "bootstrap95": [
+        0.5577947240743035,
+        0.638063416906431
+      ],
+      "medianMsPerCall": 0.8537331818181841,
+      "qualified": true
+    },
+    {
+      "scope": "field",
+      "variant": "support",
+      "reference": "previous-zero",
+      "medianRatio": 0.9037570750299894,
+      "bootstrap95": [
+        0.8023346666733194,
+        0.9371599251195345
+      ],
+      "medianMsPerCall": 0.8537331818181841,
+      "qualified": false
+    },
+    {
+      "scope": "field",
+      "variant": "reuse",
+      "reference": "legacy",
+      "medianRatio": 0.5568353758789574,
+      "bootstrap95": [
+        0.5127659955363739,
+        0.6178136918301098
+      ],
+      "medianMsPerCall": 0.8150176363636361,
+      "qualified": true
+    },
+    {
+      "scope": "field",
+      "variant": "reuse",
+      "reference": "previous-zero",
+      "medianRatio": 0.875075235858161,
+      "bootstrap95": [
+        0.8194913415162093,
+        0.9171403078665272
+      ],
+      "medianMsPerCall": 0.8150176363636361,
+      "qualified": true
+    },
+    {
+      "scope": "receiver",
+      "variant": "legacy",
+      "reference": "previous-zero",
+      "medianRatio": 0.8851127205346068,
+      "bootstrap95": [
+        0.7256166225394253,
+        0.9899331282004146
+      ],
+      "medianMsPerCall": 0.03431800000000542,
+      "qualified": true
+    },
+    {
+      "scope": "receiver",
+      "variant": "previous-zero",
+      "reference": "legacy",
+      "medianRatio": 1.129799602694673,
+      "bootstrap95": [
+        1.010169244278031,
+        1.3781382191884208
+      ],
+      "medianMsPerCall": 0.048276181818178804,
+      "qualified": false
+    },
+    {
+      "scope": "receiver",
+      "variant": "lean",
+      "reference": "legacy",
+      "medianRatio": 1.0142320917068868,
+      "bootstrap95": [
+        0.8364086625225071,
+        1.5396796898453484
+      ],
+      "medianMsPerCall": 0.03597227272727692,
+      "qualified": false
+    },
+    {
+      "scope": "receiver",
+      "variant": "lean",
+      "reference": "previous-zero",
+      "medianRatio": 0.8977097259441874,
+      "bootstrap95": [
+        0.6771473981145075,
+        1.2684116061241748
+      ],
+      "medianMsPerCall": 0.03597227272727692,
+      "qualified": false
+    },
+    {
+      "scope": "receiver",
+      "variant": "support",
+      "reference": "legacy",
+      "medianRatio": 0.9974696114927987,
+      "bootstrap95": [
+        0.7433286545016212,
+        1.3722862624424976
+      ],
+      "medianMsPerCall": 0.03398572727273445,
+      "qualified": false
+    },
+    {
+      "scope": "receiver",
+      "variant": "support",
+      "reference": "previous-zero",
+      "medianRatio": 0.8756592122444236,
+      "bootstrap95": [
+        0.660128856708254,
+        0.9874282127899184
+      ],
+      "medianMsPerCall": 0.03398572727273445,
+      "qualified": true
+    },
+    {
+      "scope": "receiver",
+      "variant": "reuse",
+      "reference": "legacy",
+      "medianRatio": 1.1549749348304803,
+      "bootstrap95": [
+        0.9180494640955132,
+        1.5919925403574486
+      ],
+      "medianMsPerCall": 0.038187454545446926,
+      "qualified": false
+    },
+    {
+      "scope": "receiver",
+      "variant": "reuse",
+      "reference": "previous-zero",
+      "medianRatio": 1.0257001107639558,
+      "bootstrap95": [
+        0.6661519514611157,
+        1.2088640938257489
+      ],
+      "medianMsPerCall": 0.038187454545446926,
+      "qualified": false
+    },
+    {
+      "scope": "field+receiver",
+      "variant": "legacy",
+      "reference": "previous-zero",
+      "medianRatio": 1.497402388343457,
+      "bootstrap95": [
+        1.2713718803626781,
+        1.5195377323862902
+      ],
+      "medianMsPerCall": 1.4566663636363624,
+      "qualified": false
+    },
+    {
+      "scope": "field+receiver",
+      "variant": "previous-zero",
+      "reference": "legacy",
+      "medianRatio": 0.6678231634893261,
+      "bootstrap95": [
+        0.6580948789139935,
+        0.7865519250864151
+      ],
+      "medianMsPerCall": 1.0019279090909095,
+      "qualified": true
+    },
+    {
+      "scope": "field+receiver",
+      "variant": "lean",
+      "reference": "legacy",
+      "medianRatio": 0.5927814663307858,
+      "bootstrap95": [
+        0.5601113501375851,
+        0.6460267998635677
+      ],
+      "medianMsPerCall": 0.8703309090909154,
+      "qualified": true
+    },
+    {
+      "scope": "field+receiver",
+      "variant": "lean",
+      "reference": "previous-zero",
+      "medianRatio": 0.8699266275435772,
+      "bootstrap95": [
+        0.848709160208258,
+        0.9225578304293474
+      ],
+      "medianMsPerCall": 0.8703309090909154,
+      "qualified": true
+    },
+    {
+      "scope": "field+receiver",
+      "variant": "support",
+      "reference": "legacy",
+      "medianRatio": 0.5706249574838717,
+      "bootstrap95": [
+        0.5666324870707277,
+        0.596824750210932
+      ],
+      "medianMsPerCall": 0.8332942727272749,
+      "qualified": true
+    },
+    {
+      "scope": "field+receiver",
+      "variant": "support",
+      "reference": "previous-zero",
+      "medianRatio": 0.8610194444998575,
+      "bootstrap95": [
+        0.778088928479513,
+        0.8936868063883368
+      ],
+      "medianMsPerCall": 0.8332942727272749,
+      "qualified": true
+    },
+    {
+      "scope": "field+receiver",
+      "variant": "reuse",
+      "reference": "legacy",
+      "medianRatio": 0.5742177848495896,
+      "bootstrap95": [
+        0.5658036281697131,
+        0.5748818305872728
+      ],
+      "medianMsPerCall": 0.8227238181818227,
+      "qualified": true
+    },
+    {
+      "scope": "field+receiver",
+      "variant": "reuse",
+      "reference": "previous-zero",
+      "medianRatio": 0.853972096621131,
+      "bootstrap95": [
+        0.7353826013148453,
+        0.8597599621249417
+      ],
+      "medianMsPerCall": 0.8227238181818227,
+      "qualified": true
+    }
+  ],
+  "wallSeconds": 1.077221203,
+  "finiteSink": true,
+  "scope": "Serial CPU wall time. Field includes validation, refreshed geometry, grid, kernels and owned output. Receiver is an identical-code noise control using saved legacy fields. Checksum processing is excluded; temporary output retention is included. Combined performs fields and all rotor loads. No browser/GPU/physical fidelity claim.",
+  "privacyRedactions": {
+    "removedTopLevelFields": [
+      "runtime",
+      "memory",
+      "processObservation"
+    ],
+    "reason": "Machine/runtime and process observations retained privately. Measurement values, configurations, repetitions, checksums, source/input hashes and scopes unchanged.",
+    "scientificPayloadSha256BeforeAddingRedactionNote": "75175cdbf1ef8f0e863a5b7537d63d3fff3d953000fb123fd74ff995c30a2147"
+  }
+}

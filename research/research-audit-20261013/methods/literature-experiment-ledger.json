@@ -1,0 +1,440 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-10-13",
+  "audit_kind": "retrospective",
+  "implementation_unchanged": true,
+  "new_experiments_executed": false,
+  "publication_performed": false,
+  "source_usage_rule": "All four sources were actually read and used for this audit. None has verified prior campaign-use provenance. Related comparator and inspiration describe the present relationship; they do not invent historical derivation.",
+  "entries": [
+    {
+      "id": "M01-local3d-boids",
+      "reference_ids": [
+        "reynolds1987"
+      ],
+      "relationship": "related comparator",
+      "historical_provenance": "unverified provenance; structural correspondence is retrospective, not proof the paper was consulted during implementation",
+      "source_idea": "Local collision avoidance, velocity matching and local centering define the behavioral model. A shared migratory target can coexist with local flock decisions; the paper also discusses spatial bins.",
+      "source_locations": [
+        {
+          "section": "Simulated Flocks",
+          "pdf_pages": [
+            6
+          ],
+          "item": "three-rule list and local-centroid discussion"
+        },
+        {
+          "section": "Simulated Perception",
+          "pdf_pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "section": "Scripted Flocking",
+          "pdf_pages": [
+            8,
+            9
+          ],
+          "item": "migratory urge"
+        },
+        {
+          "section": "Algorithmic Considerations",
+          "pdf_pages": [
+            10
+          ],
+          "item": "lattice bins and incremental nearness"
+        }
+      ],
+      "source_assumptions_and_limits": "Behavioral animation with simplified geometric flight and local perception, not a quadrotor dynamics or collision-safety theorem. The original prioritization and distance weighting differ from this implementation.",
+      "used_in_this_audit": "Classify the controller and bound the term genuine local 3D Boids. No Reynolds coefficients or physics equations are transplanted.",
+      "implementation_links": [
+        {
+          "sha256": "2b6fbc51334fd0669b23eb7173c6af83e62414a725b032796df5cb38ac7f1c9e",
+          "lines": [
+            4,
+            25
+          ],
+          "repository_commit": "c024dfc27b9e6b7cd5b39132164d1339cb95b12f",
+          "repository_path": "outputs/milestone-31-source/sim.cjs",
+          "repository_url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/c024dfc27b9e6b7cd5b39132164d1339cb95b12f/outputs/milestone-31-source/sim.cjs"
+        },
+        {
+          "sha256": "f06010781770b64432935e5d825bcd1405b154b735ac4d0d654f145600cea302",
+          "lines": [
+            1,
+            8
+          ],
+          "repository_commit": "c024dfc27b9e6b7cd5b39132164d1339cb95b12f",
+          "repository_path": "outputs/milestone-31-source/grid.cjs",
+          "repository_url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/c024dfc27b9e6b7cd5b39132164d1339cb95b12f/outputs/milestone-31-source/grid.cjs"
+        },
+        {
+          "sha256": "6fe5fd0f491a9163a9d454fe531231c99c95ea03d412c76e4b835fc3b3ed2d63",
+          "lines": [
+            13,
+            24
+          ],
+          "repository_commit": null,
+          "commit_note": "Integrated local artifact identified by SHA256; no published commit asserted for this file.",
+          "repository_path": "research/campaign-exact-efficiency/src/boids.cjs"
+        }
+      ],
+      "experiment_links": [
+        {
+          "sha256": "a6ce071c24754eabb81170d0f14cacc996eed3956e5c1735c4e2d0bd9e95898d",
+          "repository_commit": null,
+          "commit_note": "Integrated local artifact identified by SHA256; no published commit asserted for this file.",
+          "repository_path": "research/campaign-exact-efficiency/results/boids/index.json"
+        },
+        {
+          "sha256": "41253c7bd650f3e204c21185cbc0a2f6c5517be9519840fd0e559cbc56994095",
+          "repository_commit": null,
+          "commit_note": "Integrated local artifact identified by SHA256; no published commit asserted for this file.",
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/replay-audit.json"
+        }
+      ],
+      "our_observation": "The three social terms operate on all three position/velocity components, with strict 1.8 m local radius and shared route. Fourteen short records and eight matched comparisons establish deterministic replay consistency, not a full obstacle mission.",
+      "applicability_gaps": [
+        "No evidence the original paper supplied current weights, route or wall-priority filter.",
+        "No long-horizon convergence, delayed sensing or safety proof follows from Boids terminology."
+      ]
+    },
+    {
+      "id": "M02-exact-spatial-broadphase",
+      "reference_ids": [
+        "teschner2003"
+      ],
+      "relationship": "related comparator",
+      "historical_provenance": "unverified provenance; current Map grid is not the paper\u2019s compressed hash implementation",
+      "source_idea": "Separate grid-based candidate generation from exact primitive testing. Cell size trades bucket occupancy against traversal; timestamped buckets avoid clearing untouched table entries.",
+      "source_locations": [
+        {
+          "section": "3 Collision Detection Algorithm",
+          "pdf_pages": [
+            2,
+            3
+          ],
+          "item": "cell discretization and candidate/narrow-phase separation"
+        },
+        {
+          "section": "4.2 Hash Table Size",
+          "pdf_pages": [
+            4
+          ],
+          "item": "timestamped lazy clearing"
+        },
+        {
+          "section": "4.3 Grid Cell Size",
+          "pdf_pages": [
+            4,
+            5
+          ]
+        },
+        {
+          "section": "5 Time Complexity",
+          "pdf_pages": [
+            5
+          ],
+          "item": "O(n p q), with bounded p and q assumption"
+        },
+        {
+          "section": "7 Discussion",
+          "pdf_pages": [
+            6,
+            7
+          ]
+        }
+      ],
+      "source_assumptions_and_limits": "Tetrahedral vertex-in-volume detection, not wake evaluation; edge-only intersection is omitted. Linear scaling needs bounded local occupancy. Its average-edge-length optimum and timing hardware do not transfer to drone fields.",
+      "used_in_this_audit": "Interpret current exact search overhead and motivate H2 only. No claim that the published collision detector proves the wake support envelope.",
+      "implementation_links": [
+        {
+          "sha256": "f06010781770b64432935e5d825bcd1405b154b735ac4d0d654f145600cea302",
+          "lines": [
+            1,
+            8
+          ],
+          "repository_commit": "c024dfc27b9e6b7cd5b39132164d1339cb95b12f",
+          "repository_path": "outputs/milestone-26-source/grid.cjs",
+          "repository_url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/c024dfc27b9e6b7cd5b39132164d1339cb95b12f/outputs/milestone-26-source/grid.cjs"
+        },
+        {
+          "sha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+          "lines": [
+            52,
+            108
+          ],
+          "repository_commit": null,
+          "commit_note": "Integrated local artifact identified by SHA256; no published commit asserted for this file.",
+          "repository_path": "research/campaign-exact-efficiency/src/exact-aero.cjs"
+        }
+      ],
+      "experiment_links": [
+        {
+          "sha256": "6cdf5c616cefe105535d0e45847984829d9d330bac7e737f4da31499d1c217d2",
+          "repository_commit": null,
+          "commit_note": "Integrated local artifact identified by SHA256; no published commit asserted for this file.",
+          "repository_path": "research/campaign-exact-efficiency/results/selection.json"
+        },
+        {
+          "sha256": "8f8528df5d0cf1c5113bfb0974ab7368890ba1436552188a51b0467bdbc1be00",
+          "repository_commit": null,
+          "commit_note": "Integrated local artifact identified by SHA256; no published commit asserted for this file.",
+          "repository_path": "research/campaign-exact-efficiency/results/timing-summary.json"
+        },
+        {
+          "sha256": "d5c7c737ee3be5e752f79e8c8e665adf02e6c919b731951273cc14b7ce0c028c",
+          "repository_commit": null,
+          "commit_note": "Integrated local artifact identified by SHA256; no published commit asserted for this file.",
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-checks.json"
+        }
+      ],
+      "our_observation": "Current grid uses full integer-triple string keys, sorted source IDs and an exact strict-radius predicate. Support/reuse add geometric exact-zero tests; they did not consistently outperform lean. Reuse refreshes geometry and owns each returned wind array.",
+      "applicability_gaps": [
+        "No collision-detector runtime or asymptotic guarantee establishes current grid performance.",
+        "Dense packing can increase pair count quadratically even with a grid.",
+        "Existing numeric coordinate guard and support proof must survive any future indexing rewrite."
+      ]
+    },
+    {
+      "id": "M03-performance-inference",
+      "reference_ids": [
+        "kalibera2013"
+      ],
+      "relationship": "related comparator",
+      "historical_provenance": "unverified provenance; not a reproduction of the published statistical procedure",
+      "source_idea": "Quantify effect sizes and uncertainty; identify variation at iteration, execution and compilation levels; establish warmup/independence on the tested system.",
+      "source_locations": [
+        {
+          "section": "3 The Challenge of Reasonable Repetition",
+          "pdf_pages": [
+            3,
+            4
+          ]
+        },
+        {
+          "section": "4 The Challenge of Summarising Results",
+          "pdf_pages": [
+            4
+          ]
+        },
+        {
+          "section": "6 and 6.1 Repeating Iterations / Independent State",
+          "pdf_pages": [
+            5,
+            6
+          ]
+        },
+        {
+          "section": "9.3 Real Experiment: Confidence Interval",
+          "pdf_pages": [
+            10
+          ],
+          "equations": [
+            3,
+            4
+          ]
+        },
+        {
+          "section": "10.1 Confidence Interval",
+          "pdf_pages": [
+            10
+          ],
+          "equations": [
+            5
+          ]
+        }
+      ],
+      "source_assumptions_and_limits": "The paper estimates mean-time ratios with multilevel variance/Fieller machinery and assumptions on independent observations. Its DaCapo/SPEC repetition counts are platform-specific, not universal prescriptions.",
+      "used_in_this_audit": "Bound inference from saved campaign timing and motivate H1. The campaign\u2019s median paired-ratio percentile bootstrap is a different estimator.",
+      "implementation_links": [
+        {
+          "sha256": "e71f8b6c56ae775a5ae80100f845b6f72d377bf9e74abe0b77aab18270aebce0",
+          "lines": [
+            9,
+            36
+          ],
+          "repository_commit": null,
+          "commit_note": "Integrated local artifact identified by SHA256; no published commit asserted for this file.",
+          "repository_path": "research/campaign-exact-efficiency/src/benchmark.cjs"
+        },
+        {
+          "sha256": "a5fc600f9437e0287982a61424d58253a58bfbdfa6eaa60a244905c79c9f3de6",
+          "lines": [
+            9,
+            10
+          ],
+          "repository_commit": null,
+          "commit_note": "Integrated local artifact identified by SHA256; no published commit asserted for this file.",
+          "repository_path": "research/campaign-exact-efficiency/src/common.cjs"
+        },
+        {
+          "sha256": "6fe5fd0f491a9163a9d454fe531231c99c95ea03d412c76e4b835fc3b3ed2d63",
+          "lines": [
+            36,
+            45
+          ],
+          "repository_commit": null,
+          "commit_note": "Integrated local artifact identified by SHA256; no published commit asserted for this file.",
+          "repository_path": "research/campaign-exact-efficiency/src/boids.cjs"
+        }
+      ],
+      "experiment_links": [
+        {
+          "sha256": "3f00fc007a783428ef536c4aa40f1ef69d3e85f5754e46027bcf184e430b2bce",
+          "repository_commit": null,
+          "commit_note": "Integrated local artifact identified by SHA256; no published commit asserted for this file.",
+          "repository_path": "research/campaign-exact-efficiency/results/pipeline.json"
+        },
+        {
+          "sha256": "cff179f4c1c5b2957bd16f017b992a72397b0cdd29f3c1683f9b2af4acbf10ed",
+          "repository_commit": null,
+          "commit_note": "Integrated local artifact identified by SHA256; no published commit asserted for this file.",
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-pipeline-628791-16-boids-lean.json"
+        },
+        {
+          "sha256": "86c66fb52a59888e3e2b68cd013d71414528eb15a5c45f212ceb4e192bf5b86b",
+          "repository_commit": null,
+          "commit_note": "Integrated local artifact identified by SHA256; no published commit asserted for this file.",
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/primary-timing-audit.json"
+        },
+        {
+          "sha256": "8f8528df5d0cf1c5113bfb0974ab7368890ba1436552188a51b0467bdbc1be00",
+          "repository_commit": null,
+          "commit_note": "Integrated local artifact identified by SHA256; no published commit asserted for this file.",
+          "repository_path": "research/campaign-exact-efficiency/results/timing-summary.json"
+        }
+      ],
+      "our_observation": "Complete-output checks, matched work, rotated method order and separate controls are useful. Existing intervals describe small within-process samples on this machine; independent pipeline gain versus previous-zero is 4.0% with interval crossing no change.",
+      "applicability_gaps": [
+        "No saved dimensioning study establishes post-warmup independence or cross-process variance.",
+        "Five thousand bootstrap resamples are not five thousand independent executions.",
+        "Primary/independent checksum timing differs, so those measurements cannot be pooled.",
+        "Exact matching of outputs is required separately; performance statistics cannot validate physical fidelity."
+      ]
+    },
+    {
+      "id": "M04-robust-zero-culling",
+      "reference_ids": [
+        "shewchuk1996"
+      ],
+      "relationship": "inspiration only",
+      "historical_provenance": "unverified provenance; no adaptive expansion arithmetic is implemented in the campaign",
+      "source_idea": "Geometric branch decisions can fail under roundoff. Certify a cheap decision using error analysis, otherwise refine it; mathematically equivalent coordinate expressions can have different error behavior.",
+      "source_locations": [
+        {
+          "section": "3.1 Background",
+          "pdf_pages": [
+            2,
+            3
+          ]
+        },
+        {
+          "section": "4 and 4.1 Adaptive Precision Arithmetic",
+          "pdf_pages": [
+            5,
+            6
+          ]
+        },
+        {
+          "section": "5.1 Orientation and Incircle",
+          "pdf_pages": [
+            6,
+            7
+          ],
+          "equations": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "section": "5.2 ORIENT2D",
+          "pdf_pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "section": "5.4 Triangulation",
+          "pdf_pages": [
+            9,
+            10
+          ],
+          "tables": [
+            3,
+            4
+          ]
+        }
+      ],
+      "source_assumptions_and_limits": "Radix-two correctly rounded arithmetic; overflow/underflow are outside the short paper\u2019s scope. Its determinant error bounds do not bound this code\u2019s quaternion transforms, Math.hypot or nonlinear wake kernel.",
+      "used_in_this_audit": "Interpret the retained false cull and separate floating-point program equivalence from exact real arithmetic. Uncertain culling should conservatively fall through to the unchanged kernel.",
+      "implementation_links": [
+        {
+          "sha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+          "lines": [
+            14,
+            19
+          ],
+          "repository_commit": null,
+          "commit_note": "Integrated local artifact identified by SHA256; no published commit asserted for this file.",
+          "repository_path": "research/campaign-exact-efficiency/src/exact-aero.cjs"
+        },
+        {
+          "sha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+          "lines": [
+            31,
+            63
+          ],
+          "repository_commit": null,
+          "commit_note": "Integrated local artifact identified by SHA256; no published commit asserted for this file.",
+          "repository_path": "research/campaign-exact-efficiency/src/exact-aero.cjs"
+        },
+        {
+          "sha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+          "lines": [
+            83,
+            104
+          ],
+          "repository_commit": null,
+          "commit_note": "Integrated local artifact identified by SHA256; no published commit asserted for this file.",
+          "repository_path": "research/campaign-exact-efficiency/src/exact-aero.cjs"
+        }
+      ],
+      "experiment_links": [
+        {
+          "sha256": "d8f7e38beb69dfe772bfbc47aa4067c034f4dbe04164ef7c334e9e852c4d906e",
+          "repository_commit": null,
+          "commit_note": "Integrated local artifact identified by SHA256; no published commit asserted for this file.",
+          "repository_path": "research/campaign-exact-efficiency/review/large-translation-v0.json"
+        },
+        {
+          "sha256": "0301c096b667b6ecde47b53eb38867f0313c6d6bf7d3642cbd0f55ebb6904212",
+          "repository_commit": null,
+          "commit_note": "Integrated local artifact identified by SHA256; no published commit asserted for this file.",
+          "repository_path": "research/campaign-exact-efficiency/review/large-translation-v1.json"
+        },
+        {
+          "sha256": "80e462447cbf161e1211b137cef0a2dd29df9ecf5db89160eb225b9010fd67bb",
+          "repository_commit": null,
+          "commit_note": "Integrated local artifact identified by SHA256; no published commit asserted for this file.",
+          "repository_path": "research/campaign-exact-efficiency/review/targeted-guards-v1.json"
+        },
+        {
+          "sha256": "d5c7c737ee3be5e752f79e8c8e665adf02e6c919b731951273cc14b7ce0c028c",
+          "repository_commit": null,
+          "commit_note": "Integrated local artifact identified by SHA256; no published commit asserted for this file.",
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-checks.json"
+        }
+      ],
+      "our_observation": "A v0 huge-translation case lost a positive 0.001587065203100887 m/s contribution in support/reuse. A2 bounds each position component to \u00b11e6 m and inflates the envelope. Lean preserves kernel ordering and does not use the support branch.",
+      "applicability_gaps": [
+        "Passing sampled regressions is not a formal floating-point soundness proof over every accepted state.",
+        "Changing to high-precision wake values would change the target semantics; exact-to-legacy and exact-over-reals are different goals.",
+        "This source does not retrospectively prove the chosen 128*EPSILON*1e6 margin."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,910 @@
+{
+  "id": "independent-pipeline-628791-16-boids-lean",
+  "options": {
+    "seed": 628791,
+    "count": 16,
+    "family": "boids",
+    "mode": "pipeline",
+    "selected": "lean",
+    "frozenHash": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189"
+  },
+  "utc": "2026-10-13T00:19:00.644Z",
+  "sourceHashesStart": {
+    "legacy": "710b0a8f0df62208e3385ac9b8288240b379fe9248a1a645251a77c533f24a62",
+    "previous": "1d9e1afcf9983b900034b7b586c4ffd02ec4b3242c467f8e684fbdda1850d562",
+    "candidate": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189"
+  },
+  "runtime": {
+    "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+  },
+  "rows": [
+    {
+      "scope": "whole-pipeline",
+      "rep": 0,
+      "order": [
+        "legacy",
+        "previous-zero",
+        "lean"
+      ],
+      "calls": 1,
+      "measurements": {
+        "legacy": {
+          "ms": 127.70609499999995,
+          "before": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "after": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "metrics": {
+            "end": 1,
+            "stop": null,
+            "complete": true,
+            "updates": 100,
+            "maxInflow": 4.204578280451333
+          },
+          "internalTiming": {
+            "field": 31.763214999999377,
+            "controller": 30.566099000000577,
+            "physics": 54.44741199999919,
+            "safety": 10.071525000000008,
+            "recording": 0.0045089999997571795,
+            "total": 127.48450199999996
+          },
+          "finalHash": "ec12ae55a588effc5dcac13a28d74e4b73df94582e3255532cc8673bb2ad8f79",
+          "finalDifference": 0
+        },
+        "previous-zero": {
+          "ms": 117.84457799999996,
+          "before": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "after": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "metrics": {
+            "end": 1,
+            "stop": null,
+            "complete": true,
+            "updates": 100,
+            "maxInflow": 4.204578280451333
+          },
+          "internalTiming": {
+            "field": 22.889724,
+            "controller": 29.37718199999938,
+            "physics": 54.31227100000001,
+            "safety": 10.642643999998654,
+            "recording": 0.005015999999955056,
+            "total": 117.55482300000006
+          },
+          "finalHash": "ec12ae55a588effc5dcac13a28d74e4b73df94582e3255532cc8673bb2ad8f79",
+          "finalDifference": 0
+        },
+        "lean": {
+          "ms": 113.081727,
+          "before": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "after": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "metrics": {
+            "end": 1,
+            "stop": null,
+            "complete": true,
+            "updates": 100,
+            "maxInflow": 4.204578280451333
+          },
+          "internalTiming": {
+            "field": 18.845955000000572,
+            "controller": 31.87642199999982,
+            "physics": 51.63815099999988,
+            "safety": 10.210418000000459,
+            "recording": 0.0045240000001740555,
+            "total": 112.86244700000009
+          },
+          "finalHash": "ec12ae55a588effc5dcac13a28d74e4b73df94582e3255532cc8673bb2ad8f79",
+          "finalDifference": 0
+        }
+      }
+    },
+    {
+      "scope": "whole-pipeline",
+      "rep": 1,
+      "order": [
+        "previous-zero",
+        "lean",
+        "legacy"
+      ],
+      "calls": 1,
+      "measurements": {
+        "previous-zero": {
+          "ms": 111.135582,
+          "before": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "after": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "metrics": {
+            "end": 1,
+            "stop": null,
+            "complete": true,
+            "updates": 100,
+            "maxInflow": 4.204578280451333
+          },
+          "internalTiming": {
+            "field": 22.168829000000414,
+            "controller": 25.571091000000024,
+            "physics": 52.86185999999964,
+            "safety": 10.10107399999822,
+            "recording": 0.004508000000100765,
+            "total": 110.91843600000004
+          },
+          "finalHash": "ec12ae55a588effc5dcac13a28d74e4b73df94582e3255532cc8673bb2ad8f79",
+          "finalDifference": 0
+        },
+        "lean": {
+          "ms": 103.99319800000012,
+          "before": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "after": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "metrics": {
+            "end": 1,
+            "stop": null,
+            "complete": true,
+            "updates": 100,
+            "maxInflow": 4.204578280451333
+          },
+          "internalTiming": {
+            "field": 18.213553000000047,
+            "controller": 21.153923999998142,
+            "physics": 50.874245000001906,
+            "safety": 13.292940000001522,
+            "recording": 0.0054370000003700625,
+            "total": 103.79398800000001
+          },
+          "finalHash": "ec12ae55a588effc5dcac13a28d74e4b73df94582e3255532cc8673bb2ad8f79",
+          "finalDifference": 0
+        },
+        "legacy": {
+          "ms": 113.35038200000008,
+          "before": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "after": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "metrics": {
+            "end": 1,
+            "stop": null,
+            "complete": true,
+            "updates": 100,
+            "maxInflow": 4.204578280451333
+          },
+          "internalTiming": {
+            "field": 27.200758000000633,
+            "controller": 21.396095000001424,
+            "physics": 53.72645199999988,
+            "safety": 10.524541999999428,
+            "recording": 0.004328000000668908,
+            "total": 113.12124699999981
+          },
+          "finalHash": "ec12ae55a588effc5dcac13a28d74e4b73df94582e3255532cc8673bb2ad8f79",
+          "finalDifference": 0
+        }
+      }
+    },
+    {
+      "scope": "whole-pipeline",
+      "rep": 2,
+      "order": [
+        "lean",
+        "legacy",
+        "previous-zero"
+      ],
+      "calls": 1,
+      "measurements": {
+        "lean": {
+          "ms": 104.04638299999988,
+          "before": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "after": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "metrics": {
+            "end": 1,
+            "stop": null,
+            "complete": true,
+            "updates": 100,
+            "maxInflow": 4.204578280451333
+          },
+          "internalTiming": {
+            "field": 19.345977999999377,
+            "controller": 21.261939000000893,
+            "physics": 52.27844800000048,
+            "safety": 10.627213999998958,
+            "recording": 0.004826000000775821,
+            "total": 103.74951699999997
+          },
+          "finalHash": "ec12ae55a588effc5dcac13a28d74e4b73df94582e3255532cc8673bb2ad8f79",
+          "finalDifference": 0
+        },
+        "legacy": {
+          "ms": 107.55260399999997,
+          "before": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "after": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "metrics": {
+            "end": 1,
+            "stop": null,
+            "complete": true,
+            "updates": 100,
+            "maxInflow": 4.204578280451333
+          },
+          "internalTiming": {
+            "field": 25.108240999999907,
+            "controller": 20.67118400000186,
+            "physics": 50.72839000000158,
+            "safety": 10.564864000000625,
+            "recording": 0.004946000000700224,
+            "total": 107.34626400000002
+          },
+          "finalHash": "ec12ae55a588effc5dcac13a28d74e4b73df94582e3255532cc8673bb2ad8f79",
+          "finalDifference": 0
+        },
+        "previous-zero": {
+          "ms": 107.20308900000009,
+          "before": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "after": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "metrics": {
+            "end": 1,
+            "stop": null,
+            "complete": true,
+            "updates": 100,
+            "maxInflow": 4.204578280451333
+          },
+          "internalTiming": {
+            "field": 21.219617000000426,
+            "controller": 21.63291900000104,
+            "physics": 52.98268799999937,
+            "safety": 10.693058000000292,
+            "recording": 0.004066999998940446,
+            "total": 107.00024400000007
+          },
+          "finalHash": "ec12ae55a588effc5dcac13a28d74e4b73df94582e3255532cc8673bb2ad8f79",
+          "finalDifference": 0
+        }
+      }
+    },
+    {
+      "scope": "whole-pipeline",
+      "rep": 3,
+      "order": [
+        "lean",
+        "previous-zero",
+        "legacy"
+      ],
+      "calls": 1,
+      "measurements": {
+        "lean": {
+          "ms": 110.25932499999999,
+          "before": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "after": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "metrics": {
+            "end": 1,
+            "stop": null,
+            "complete": true,
+            "updates": 100,
+            "maxInflow": 4.204578280451333
+          },
+          "internalTiming": {
+            "field": 20.065267000000404,
+            "controller": 23.384193999999752,
+            "physics": 54.484080000001086,
+            "safety": 11.766310999997131,
+            "recording": 0.005658999999241132,
+            "total": 110.01410599999986
+          },
+          "finalHash": "ec12ae55a588effc5dcac13a28d74e4b73df94582e3255532cc8673bb2ad8f79",
+          "finalDifference": 0
+        },
+        "previous-zero": {
+          "ms": 114.04850099999999,
+          "before": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "after": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "metrics": {
+            "end": 1,
+            "stop": null,
+            "complete": true,
+            "updates": 100,
+            "maxInflow": 4.204578280451333
+          },
+          "internalTiming": {
+            "field": 20.939251000000922,
+            "controller": 23.324119000000337,
+            "physics": 58.58820300000002,
+            "safety": 10.6600490000003,
+            "recording": 0.006341000000020358,
+            "total": 113.78827999999999
+          },
+          "finalHash": "ec12ae55a588effc5dcac13a28d74e4b73df94582e3255532cc8673bb2ad8f79",
+          "finalDifference": 0
+        },
+        "legacy": {
+          "ms": 120.84993699999995,
+          "before": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "after": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "metrics": {
+            "end": 1,
+            "stop": null,
+            "complete": true,
+            "updates": 100,
+            "maxInflow": 4.204578280451333
+          },
+          "internalTiming": {
+            "field": 30.456810999999107,
+            "controller": 21.639265999999225,
+            "physics": 55.87778500000127,
+            "safety": 12.297116999999389,
+            "recording": 0.005270000000564323,
+            "total": 120.56601
+          },
+          "finalHash": "ec12ae55a588effc5dcac13a28d74e4b73df94582e3255532cc8673bb2ad8f79",
+          "finalDifference": 0
+        }
+      }
+    },
+    {
+      "scope": "whole-pipeline",
+      "rep": 4,
+      "order": [
+        "legacy",
+        "lean",
+        "previous-zero"
+      ],
+      "calls": 1,
+      "measurements": {
+        "legacy": {
+          "ms": 107.16027499999996,
+          "before": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "after": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "metrics": {
+            "end": 1,
+            "stop": null,
+            "complete": true,
+            "updates": 100,
+            "maxInflow": 4.204578280451333
+          },
+          "internalTiming": {
+            "field": 25.029276999999183,
+            "controller": 20.366099999999733,
+            "physics": 51.09191200000123,
+            "safety": 10.233191000002535,
+            "recording": 0.0049449999999069405,
+            "total": 106.94491099999982
+          },
+          "finalHash": "ec12ae55a588effc5dcac13a28d74e4b73df94582e3255532cc8673bb2ad8f79",
+          "finalDifference": 0
+        },
+        "lean": {
+          "ms": 106.31487400000015,
+          "before": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "after": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "metrics": {
+            "end": 1,
+            "stop": null,
+            "complete": true,
+            "updates": 100,
+            "maxInflow": 4.204578280451333
+          },
+          "internalTiming": {
+            "field": 17.97245099999691,
+            "controller": 21.130930999997418,
+            "physics": 53.70261899999923,
+            "safety": 13.04809400000022,
+            "recording": 0.005186999999750697,
+            "total": 106.12100299999997
+          },
+          "finalHash": "ec12ae55a588effc5dcac13a28d74e4b73df94582e3255532cc8673bb2ad8f79",
+          "finalDifference": 0
+        },
+        "previous-zero": {
+          "ms": 101.94739600000003,
+          "before": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "after": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "metrics": {
+            "end": 1,
+            "stop": null,
+            "complete": true,
+            "updates": 100,
+            "maxInflow": 4.204578280451333
+          },
+          "internalTiming": {
+            "field": 19.995022000000063,
+            "controller": 20.176672000000963,
+            "physics": 51.29340199999797,
+            "safety": 9.813705999995364,
+            "recording": 0.0048349999997299165,
+            "total": 101.73250299999972
+          },
+          "finalHash": "ec12ae55a588effc5dcac13a28d74e4b73df94582e3255532cc8673bb2ad8f79",
+          "finalDifference": 0
+        }
+      }
+    },
+    {
+      "scope": "whole-pipeline",
+      "rep": 5,
+      "order": [
+        "previous-zero",
+        "legacy",
+        "lean"
+      ],
+      "calls": 1,
+      "measurements": {
+        "previous-zero": {
+          "ms": 105.48561699999982,
+          "before": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "after": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "metrics": {
+            "end": 1,
+            "stop": null,
+            "complete": true,
+            "updates": 100,
+            "maxInflow": 4.204578280451333
+          },
+          "internalTiming": {
+            "field": 19.96579399999746,
+            "controller": 23.53027100000145,
+            "physics": 51.127363999995396,
+            "safety": 10.426751000004515,
+            "recording": 0.004189000001133536,
+            "total": 105.27557100000013
+          },
+          "finalHash": "ec12ae55a588effc5dcac13a28d74e4b73df94582e3255532cc8673bb2ad8f79",
+          "finalDifference": 0
+        },
+        "legacy": {
+          "ms": 105.24569599999995,
+          "before": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "after": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "metrics": {
+            "end": 1,
+            "stop": null,
+            "complete": true,
+            "updates": 100,
+            "maxInflow": 4.204578280451333
+          },
+          "internalTiming": {
+            "field": 24.32397000000128,
+            "controller": 19.925879000003533,
+            "physics": 50.40377500000568,
+            "safety": 10.154184999998051,
+            "recording": 0.004553999998279323,
+            "total": 105.0479479999999
+          },
+          "finalHash": "ec12ae55a588effc5dcac13a28d74e4b73df94582e3255532cc8673bb2ad8f79",
+          "finalDifference": 0
+        },
+        "lean": {
+          "ms": 101.03318300000001,
+          "before": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "after": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "metrics": {
+            "end": 1,
+            "stop": null,
+            "complete": true,
+            "updates": 100,
+            "maxInflow": 4.204578280451333
+          },
+          "internalTiming": {
+            "field": 17.426692000000003,
+            "controller": 19.524392000000717,
+            "physics": 53.03396100001055,
+            "safety": 10.541083999999046,
+            "recording": 0.005274999999528518,
+            "total": 100.83985200000006
+          },
+          "finalHash": "ec12ae55a588effc5dcac13a28d74e4b73df94582e3255532cc8673bb2ad8f79",
+          "finalDifference": 0
+        }
+      }
+    },
+    {
+      "scope": "whole-pipeline",
+      "rep": 6,
+      "order": [
+        "legacy",
+        "previous-zero",
+        "lean"
+      ],
+      "calls": 1,
+      "measurements": {
+        "legacy": {
+          "ms": 108.41591299999982,
+          "before": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "after": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "metrics": {
+            "end": 1,
+            "stop": null,
+            "complete": true,
+            "updates": 100,
+            "maxInflow": 4.204578280451333
+          },
+          "internalTiming": {
+            "field": 25.444335999997747,
+            "controller": 20.181679000000713,
+            "physics": 51.409258000000136,
+            "safety": 10.910789999996268,
+            "recording": 0.0038709999994352984,
+            "total": 108.19070399999964
+          },
+          "finalHash": "ec12ae55a588effc5dcac13a28d74e4b73df94582e3255532cc8673bb2ad8f79",
+          "finalDifference": 0
+        },
+        "previous-zero": {
+          "ms": 107.23953399999982,
+          "before": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "after": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "metrics": {
+            "end": 1,
+            "stop": null,
+            "complete": true,
+            "updates": 100,
+            "maxInflow": 4.204578280451333
+          },
+          "internalTiming": {
+            "field": 21.522289999999884,
+            "controller": 20.774429999999484,
+            "physics": 53.70473200000242,
+            "safety": 10.821116000000075,
+            "recording": 0.003998000001956825,
+            "total": 107.04686400000037
+          },
+          "finalHash": "ec12ae55a588effc5dcac13a28d74e4b73df94582e3255532cc8673bb2ad8f79",
+          "finalDifference": 0
+        },
+        "lean": {
+          "ms": 98.09957199999963,
+          "before": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "after": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "metrics": {
+            "end": 1,
+            "stop": null,
+            "complete": true,
+            "updates": 100,
+            "maxInflow": 4.204578280451333
+          },
+          "internalTiming": {
+            "field": 16.624540999998317,
+            "controller": 19.93280300000106,
+            "physics": 50.40863299999819,
+            "safety": 10.658793000003243,
+            "recording": 0.003972999999859894,
+            "total": 97.90306599999985
+          },
+          "finalHash": "ec12ae55a588effc5dcac13a28d74e4b73df94582e3255532cc8673bb2ad8f79",
+          "finalDifference": 0
+        }
+      }
+    },
+    {
+      "scope": "whole-pipeline",
+      "rep": 7,
+      "order": [
+        "previous-zero",
+        "lean",
+        "legacy"
+      ],
+      "calls": 1,
+      "measurements": {
+        "previous-zero": {
+          "ms": 109.88623300000017,
+          "before": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "after": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "metrics": {
+            "end": 1,
+            "stop": null,
+            "complete": true,
+            "updates": 100,
+            "maxInflow": 4.204578280451333
+          },
+          "internalTiming": {
+            "field": 21.28113599999824,
+            "controller": 21.667212999999265,
+            "physics": 55.4214160000015,
+            "safety": 11.041639000005944,
+            "recording": 0.007132000000638072,
+            "total": 109.68883599999981
+          },
+          "finalHash": "ec12ae55a588effc5dcac13a28d74e4b73df94582e3255532cc8673bb2ad8f79",
+          "finalDifference": 0
+        },
+        "lean": {
+          "ms": 96.28870899999993,
+          "before": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "after": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "metrics": {
+            "end": 1,
+            "stop": null,
+            "complete": true,
+            "updates": 100,
+            "maxInflow": 4.204578280451333
+          },
+          "internalTiming": {
+            "field": 16.10988800000132,
+            "controller": 19.370656999999483,
+            "physics": 50.451698000000306,
+            "safety": 9.891161999998076,
+            "recording": 0.005647999999382591,
+            "total": 96.0890089999998
+          },
+          "finalHash": "ec12ae55a588effc5dcac13a28d74e4b73df94582e3255532cc8673bb2ad8f79",
+          "finalDifference": 0
+        },
+        "legacy": {
+          "ms": 108.74048999999968,
+          "before": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "after": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "metrics": {
+            "end": 1,
+            "stop": null,
+            "complete": true,
+            "updates": 100,
+            "maxInflow": 4.204578280451333
+          },
+          "internalTiming": {
+            "field": 24.887625999999273,
+            "controller": 19.589924000000337,
+            "physics": 53.63161100000252,
+            "safety": 10.205035999998927,
+            "recording": 0.005629000001135864,
+            "total": 108.52007900000035
+          },
+          "finalHash": "ec12ae55a588effc5dcac13a28d74e4b73df94582e3255532cc8673bb2ad8f79",
+          "finalDifference": 0
+        }
+      }
+    },
+    {
+      "scope": "whole-pipeline",
+      "rep": 8,
+      "order": [
+        "lean",
+        "legacy",
+        "previous-zero"
+      ],
+      "calls": 1,
+      "measurements": {
+        "lean": {
+          "ms": 99.76522599999998,
+          "before": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "after": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "metrics": {
+            "end": 1,
+            "stop": null,
+            "complete": true,
+            "updates": 100,
+            "maxInflow": 4.204578280451333
+          },
+          "internalTiming": {
+            "field": 16.985685000001467,
+            "controller": 20.007980000000316,
+            "physics": 52.48475500000313,
+            "safety": 9.877667000000656,
+            "recording": 0.004606000001331267,
+            "total": 99.56699900000012
+          },
+          "finalHash": "ec12ae55a588effc5dcac13a28d74e4b73df94582e3255532cc8673bb2ad8f79",
+          "finalDifference": 0
+        },
+        "legacy": {
+          "ms": 105.90112100000033,
+          "before": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "after": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "metrics": {
+            "end": 1,
+            "stop": null,
+            "complete": true,
+            "updates": 100,
+            "maxInflow": 4.204578280451333
+          },
+          "internalTiming": {
+            "field": 24.06430500000033,
+            "controller": 19.85253599999669,
+            "physics": 51.09460500000887,
+            "safety": 10.449890999997933,
+            "recording": 0.005979000000024826,
+            "total": 105.6901340000004
+          },
+          "finalHash": "ec12ae55a588effc5dcac13a28d74e4b73df94582e3255532cc8673bb2ad8f79",
+          "finalDifference": 0
+        },
+        "previous-zero": {
+          "ms": 97.9717599999999,
+          "before": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "after": {
+            "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+          },
+          "metrics": {
+            "end": 1,
+            "stop": null,
+            "complete": true,
+            "updates": 100,
+            "maxInflow": 4.204578280451333
+          },
+          "internalTiming": {
+            "field": 18.444643999998334,
+            "controller": 19.086025999999947,
+            "physics": 50.380438000001504,
+            "safety": 9.612057999996068,
+            "recording": 0.007400999998480984,
+            "total": 97.72164299999986
+          },
+          "finalHash": "ec12ae55a588effc5dcac13a28d74e4b73df94582e3255532cc8673bb2ad8f79",
+          "finalDifference": 0
+        }
+      }
+    }
+  ],
+  "failures": [],
+  "warmups": [
+    {
+      "method": "legacy",
+      "metrics": {
+        "end": 1,
+        "stop": null,
+        "complete": true,
+        "updates": 100,
+        "maxInflow": 4.204578280451333
+      },
+      "maxFinalDifference": 0
+    },
+    {
+      "method": "previous-zero",
+      "metrics": {
+        "end": 1,
+        "stop": null,
+        "complete": true,
+        "updates": 100,
+        "maxInflow": 4.204578280451333
+      },
+      "maxFinalDifference": 0
+    },
+    {
+      "method": "lean",
+      "metrics": {
+        "end": 1,
+        "stop": null,
+        "complete": true,
+        "updates": 100,
+        "maxInflow": 4.204578280451333
+      },
+      "maxFinalDifference": 0
+    }
+  ],
+  "scope": "Whole fixed-work genuine Boids pipeline: initialization, field, unchanged controller, RK4, safety; recording disabled. External validation/checksum and JSON serialization excluded from timed region.",
+  "wallSeconds": 3.4098406650000004,
+  "summaries": [
+    {
+      "scope": "whole-pipeline",
+      "selected": "lean",
+      "reference": "legacy",
+      "repeats": 9,
+      "medianRatio": 0.9174490298585852,
+      "bootstrap95": [
+        0.8854908507401448,
+        0.967399943194308
+      ],
+      "selectedMedianMs": 103.99319800000012,
+      "referenceMedianMs": 108.41591299999982,
+      "qualified": false
+    },
+    {
+      "scope": "whole-pipeline",
+      "selected": "lean",
+      "reference": "previous-zero",
+      "repeats": 9,
+      "medianRatio": 0.9595836220822993,
+      "bootstrap95": [
+        0.9357326981020365,
+        1.0183059485713035
+      ],
+      "selectedMedianMs": 103.99319800000012,
+      "referenceMedianMs": 107.23953399999982,
+      "qualified": false
+    }
+  ],
+  "sourceHashesEnd": {
+    "legacy": "710b0a8f0df62208e3385ac9b8288240b379fe9248a1a645251a77c533f24a62",
+    "previous": "1d9e1afcf9983b900034b7b586c4ffd02ec4b3242c467f8e684fbdda1850d562",
+    "candidate": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189"
+  },
+  "sourceStable": true,
+  "pass": true,
+  "resourceUsage": {
+    "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+  }
+}
