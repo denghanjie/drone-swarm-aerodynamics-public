@@ -1,0 +1,175 @@
+{
+  "schema_version": "1.0",
+  "ledger_id": "temporal-reference-repair-ledger-20261013",
+  "status": "prospective_unimplemented_unrun",
+  "plan": "PLAN.md",
+  "bibliography": "bibliography.json",
+  "user_authority": "Continued research is already authorized; coordinator adoption and independent review remain pending.",
+  "rules": [
+    "Prospective IDs do not identify completed experiments.",
+    "implementation_links, run_artifacts and outcomes stay empty until real artifacts are produced and verified.",
+    "Literature motivates design choices; thresholds are analyst choices and numerical reference is not physical truth."
+  ],
+  "entries": [
+    {
+      "prospective_id": "TRR-PRE-01",
+      "step": "Saved-path regularity and controller preflight",
+      "status": "prospective",
+      "source_ids": [
+        "NORDAM_DURAN_2020",
+        "MORK_NORDAM_RUHS_2025"
+      ],
+      "source_locations": [
+        "NORDAM_DURAN_2020: sections 3.1-3.3",
+        "MORK_NORDAM_RUHS_2025: section 3.2"
+      ],
+      "question": "Do retained diagnostic windows expose integrity, domain, finite-jump, or controller branch obstructions before fresh coupled runs?",
+      "planned_inputs": [
+        "Original dense s840131-p1-a4 and s840137-p1-a4 full17 arrays",
+        "Corresponding event hashes and source freeze"
+      ],
+      "observables": [
+        "Signed geometric margins and conservative finite-jump risk brackets",
+        "Control command hashes and branch signatures"
+      ],
+      "failure_outcome": "Stop and retain exact offending inputs; do not infer an exact crossing time.",
+      "implementation_links": [],
+      "run_artifacts": [],
+      "outcomes": []
+    },
+    {
+      "prospective_id": "TRR-J-01",
+      "step": "Joint-state stage-wise field family",
+      "status": "prospective",
+      "source_ids": [
+        "NORDAM_DURAN_2020",
+        "HAIRER_2000_SYMPROJ"
+      ],
+      "source_locations": [
+        "NORDAM_DURAN_2020: section 2.2, equation 9; section 3.1",
+        "HAIRER_2000_SYMPROJ: section 1, preprint pages 1-2"
+      ],
+      "question": "Does the same on-manifold model with a documented geometry extension pass the joint-stage self-consistency screen?",
+      "planned_rows": [
+        "J1",
+        "J2",
+        "J3"
+      ],
+      "seeds": [
+        840131,
+        840137
+      ],
+      "observables": [
+        "Max common-endpoint position, velocity, attitude, body-rate differences",
+        "Stage synchronization, quaternion norm/projection diagnostics",
+        "Domain and finite-jump risk records"
+      ],
+      "acceptance_origin": "PLAN.md section 7; all numerical caps and 0.6 factor are analyst-designed.",
+      "implementation_links": [],
+      "run_artifacts": [],
+      "outcomes": []
+    },
+    {
+      "prospective_id": "TRR-H-01",
+      "step": "Held-input physics and source bridge checks",
+      "status": "prospective",
+      "source_ids": [
+        "NORDAM_DURAN_2020"
+      ],
+      "source_locations": [
+        "NORDAM_DURAN_2020: section 2.1"
+      ],
+      "question": "Are the new finest-hold differences dominated by hold cadence rather than unresolved held-ODE integration or changed baseline semantics?",
+      "planned_rows": [
+        "H4",
+        "P1",
+        "H1 versus retained p1-a4 driver"
+      ],
+      "seeds": [
+        840131,
+        840137
+      ],
+      "acceptance_origin": "PLAN.md section 7; no two-level order estimate.",
+      "implementation_links": [],
+      "run_artifacts": [],
+      "outcomes": []
+    },
+    {
+      "prospective_id": "TRR-X-01",
+      "step": "Cross-family numerical-reference screen",
+      "status": "prospective",
+      "source_ids": [
+        "NORDAM_DURAN_2020",
+        "MORK_NORDAM_RUHS_2025"
+      ],
+      "source_locations": [
+        "NORDAM_DURAN_2020: section 2.1",
+        "MORK_NORDAM_RUHS_2025: appendix C, equation C1"
+      ],
+      "question": "Does the held-input family approach J3 under the unchanged sampled controller within prescribed numerical screens?",
+      "planned_rows": [
+        "H1",
+        "H2",
+        "H3",
+        "H4",
+        "J3"
+      ],
+      "seeds": [
+        840131,
+        840137
+      ],
+      "observables": [
+        "E(h) per metric and seed",
+        "All gate outcomes and nonmonotonic cases",
+        "Controller branch differences and finite-jump risk traces"
+      ],
+      "acceptance_origin": "PLAN.md section 7; original four absolute caps, prospective 0.7 reduction screen, no Richardson/truth-error bound.",
+      "implementation_links": [],
+      "run_artifacts": [],
+      "outcomes": []
+    },
+    {
+      "prospective_id": "TRR-COST-01",
+      "step": "Instrumented matched numerical cost accounting",
+      "status": "prospective",
+      "source_ids": [
+        "NORDAM_DURAN_2020",
+        "MORK_NORDAM_RUHS_2025"
+      ],
+      "source_locations": [
+        "NORDAM_DURAN_2020: introduction, numerical work-precision scope",
+        "MORK_NORDAM_RUHS_2025: section 5.4 field-evaluation work discussion"
+      ],
+      "question": "What work and measured resource cost accompanies each completed numerical comparison?",
+      "observables": [
+        "Whole-swarm field evaluations and rotor kernels",
+        "Vehicle derivative evaluations and controller updates",
+        "Separated field/controller/RK/safety/recording and total job times",
+        "Wall/CPU/storage stop evidence"
+      ],
+      "claim_limit": "One-off instrumented CPU costs, not a browser speedup or established frontier.",
+      "implementation_links": [],
+      "run_artifacts": [],
+      "outcomes": []
+    },
+    {
+      "prospective_id": "TRR-PHYSICS-SCOPE-01",
+      "step": "Preserve physical-model limits throughout interpretation",
+      "status": "prospective_interpretation_constraint",
+      "source_ids": [
+        "BAUERSFELD_2024_V3"
+      ],
+      "source_locations": [
+        "III-A-D",
+        "VI-C",
+        "VII-A equations 10-11",
+        "VIII"
+      ],
+      "question": "Are numerical conclusions explicitly conditional on the frozen, unvalidated receiver/superposition model?",
+      "required_statement": "A numerical reference is not physical truth; no safe-flight, full-mission, novelty or 5000-drone browser feasibility claim.",
+      "implementation_links": [],
+      "run_artifacts": [],
+      "outcomes": []
+    }
+  ]
+}

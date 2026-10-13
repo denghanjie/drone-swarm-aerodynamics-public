@@ -1,0 +1,22 @@
+{
+  "status": "protocol_adopted_implementation_review_and_source_freeze_pending",
+  "adoptedAt": "2026-10-13T23:38:08.883776+00:00",
+  "planSha256": "26588970eb3d6aa0e984dfeffe23e94e32d26622daef551138051b374efcadaa",
+  "numericalExecutionStarted": false,
+  "requiredBeforeExecution": [
+    "Complete implementation and independent physics/robustness review",
+    "Hash-freeze complete transitive source/configuration graph and fixture identities",
+    "Verify exact retained storage forecast and failure reserve",
+    "Publish prospective checkpoint and verify its commit",
+    "Run one supervised serial numerical window under the frozen caps"
+  ],
+  "limits": {
+    "wallSeconds": 300,
+    "cpuSeconds": 300,
+    "perJobWallSeconds": 45,
+    "retainedLogicalBytes": 150000000,
+    "failureReserveBytes": 2000000
+  },
+  "authorizationScope": "User requested continued autonomous bounded research and checkpoint publication; no paid compute or external paper submission.",
+  "scientificStatus": "No new experiment run; neither a qualified numerical reference nor physical validation is claimed."
+}

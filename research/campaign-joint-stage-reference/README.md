@@ -1,0 +1,19 @@
+# Joint-stage airflow reference: prospective study
+
+Status: protocol adopted; implementation review and source freeze pending. No numerical experiment has started.
+
+The prior temporal campaign failed both airflow-reference screens. This study asks whether simultaneously recalculating the whole-swarm airflow at each Runge–Kutta stage provides a cross-checked numerical reference for the same frozen physical model. It does not validate that model against real drones.
+
+- [Bounded prospective plan](PLAN.md)
+- [Coordinator adoption and execution prerequisites](ADOPTION.json)
+- [Verified primary-source bibliography](bibliography.json)
+- [Literature–experiment ledger](literature-experiment-ledger.json)
+- [Planning provenance](PROVENANCE.json)
+- [Planning artifact hashes](ARTIFACT-MANIFEST.json)
+- [Prior actual-record Three.js replay](../campaign-temporal-sampling/implementation/demo/index.html)
+- [Prior offline replay](../campaign-temporal-sampling/implementation/temporal-airflow-evidence.html)
+- [Prior recovery limits](../campaign-temporal-sampling/implementation/RECOVERY-ADDENDUM.md)
+
+The linked replay shows prior recorded trajectories, not an execution of this proposed method. New runs will receive separate records and a matching viewer. Paths containing research-recovery in planning provenance refer to the local staging layout; the immutable public source and evidence are in the prior campaign directory and cited commit identities.
+
+Every coupled row retains genuine local 3D Boids and the original eight-step research framework. Tests proceed from input/branch checks to bounded N=16 runs, with no larger swarm or browser-performance claim. Failed, incomplete and intentionally skipped work will be retained.
