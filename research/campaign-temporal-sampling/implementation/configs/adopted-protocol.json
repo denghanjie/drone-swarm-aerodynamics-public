@@ -1,0 +1,66 @@
+{
+  "status": "protocol_adopted_before_execution",
+  "date": "2026-10-13",
+  "question": "Establish a bounded numerical reference and isolate held-airflow temporal error on identical genuine-Boids states",
+  "count": 16,
+  "seeds": [
+    840131,
+    840137
+  ],
+  "duration_seconds": 1,
+  "base_tick_seconds": 0.00015625,
+  "control_period_ticks": 64,
+  "coupled_rows": [
+    {
+      "airflow_period_ticks": 4,
+      "physics_step_ticks": 4
+    },
+    {
+      "airflow_period_ticks": 4,
+      "physics_step_ticks": 2
+    },
+    {
+      "airflow_period_ticks": 4,
+      "physics_step_ticks": 1
+    },
+    {
+      "airflow_period_ticks": 8,
+      "physics_step_ticks": 1
+    },
+    {
+      "airflow_period_ticks": 16,
+      "physics_step_ticks": 1
+    },
+    {
+      "airflow_period_ticks": 32,
+      "physics_step_ticks": 1
+    },
+    {
+      "airflow_period_ticks": 64,
+      "physics_step_ticks": 1
+    }
+  ],
+  "driver_row_zero_based": 2,
+  "fixed_path_hold_period_ticks": [
+    64,
+    32,
+    16,
+    8,
+    4
+  ],
+  "quadrature_step_ticks": [
+    1,
+    2
+  ],
+  "wall_cap_seconds": 300,
+  "job_cap_seconds": 45,
+  "physical_validation": false,
+  "parameter_fitting": false,
+  "source_change_permitted": false,
+  "details": "PLAN.md",
+  "hard_data_cap_bytes": 150000000,
+  "failure_reserve_bytes": 2000000,
+  "baseline_commit": "63befe815c85f76d42fe843b9a69bcaaa363e05c",
+  "priority_amendment_included": true,
+  "requires_source_freeze_before_execution": true
+}
