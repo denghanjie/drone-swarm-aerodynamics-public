@@ -1,0 +1,30 @@
+{
+  "id": "storage-amendment-001",
+  "adoptedAt": "2026-10-13T23:41:26.109364+00:00",
+  "beforeAnyNumericalExecution": true,
+  "initialPlanSha256": "26588970eb3d6aa0e984dfeffe23e94e32d26622daef551138051b374efcadaa",
+  "amendedPlanSha256": "4dfd2234c5aeafc2fd0fb23427e9cddc77d504196e0d83387a7bfc0fe16e271a",
+  "initialPublishedCommit": "f7ee3c703a4aa5156675e31d3065a901904b7c0e",
+  "oldRetainedLogicalBytes": 150000000,
+  "newRetainedLogicalBytes": 200000000,
+  "failureReserveBytes": 2000000,
+  "workspaceAvailableBytesObserved": 31509659648,
+  "reason": "Independent static full-completion forecast leaves only1518064bytes for all source/metadata/checkpoints/fixtures after required states, signatures, controllers, selected brackets and reserve; already present nonarray files approximately1.25MB. Retain evidence with a prospectively bounded margin instead of silently dropping diagnostics.",
+  "forecastComponentsBytes": {
+    "inputsAndNewRawStates": 131223856,
+    "roleReusedSignatureStreamsIncludingCompatibility": 8922080,
+    "controllerBinary": 4377600,
+    "selectedFirstWorstBracketsIncludingJointRawStages": 1958400,
+    "failureReserve": 2000000
+  },
+  "unchanged": [
+    "300second total wall cap",
+    "300CPU seconds",
+    "45second per-job cap",
+    "seeds and scenarios",
+    "all numerical acceptance gates",
+    "stop on exhausted adopted cap",
+    "no paid compute"
+  ],
+  "executionStatus": "No numerical tests, preflight, compatibility or new simulations executed; implementation/source freeze still pending."
+}

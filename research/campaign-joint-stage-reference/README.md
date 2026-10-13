@@ -5,6 +5,8 @@ Status: protocol adopted; implementation review and source freeze pending. No nu
 The prior temporal campaign failed both airflow-reference screens. This study asks whether simultaneously recalculating the whole-swarm airflow at each Runge–Kutta stage provides a cross-checked numerical reference for the same frozen physical model. It does not validate that model against real drones.
 
 - [Bounded prospective plan](PLAN.md)
+- [Pre-run storage-only amendment](STORAGE-AMENDMENT-001.json)
+- [Original published plan](PLAN-INITIAL.md)
 - [Coordinator adoption and execution prerequisites](ADOPTION.json)
 - [Verified primary-source bibliography](bibliography.json)
 - [Literature–experiment ledger](literature-experiment-ledger.json)
