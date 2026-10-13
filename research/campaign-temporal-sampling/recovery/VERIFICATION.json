@@ -1,0 +1,53 @@
+{
+  "description": "Recovery-time checks of existing records only; no simulation, field evaluation, gate recomputation from arrays, or regenerated numerical evidence.",
+  "status": "passed",
+  "physicsGates": [
+    {
+      "seed": 840131,
+      "passed": true
+    },
+    {
+      "seed": 840137,
+      "passed": true
+    }
+  ],
+  "airflowGates": [
+    {
+      "seed": 840131,
+      "passed": false,
+      "failedAbsoluteCaps": [
+        "velocityMps",
+        "attitudeRad",
+        "angularVelocityRadps"
+      ],
+      "allReductionChecksPassed": true
+    },
+    {
+      "seed": 840137,
+      "passed": false,
+      "failedAbsoluteCaps": [
+        "velocityMps",
+        "attitudeRad",
+        "angularVelocityRadps"
+      ],
+      "allReductionChecksPassed": true
+    }
+  ],
+  "referenceQualified": false,
+  "qualifiedCadenceCount": 0,
+  "attemptedCoupledRunCount": 11,
+  "freshCompleted": 10,
+  "freshSkipped": 4,
+  "compatibilityPreflights": 1,
+  "conditionalReplayDriverCount": 2,
+  "conditionalQuadratureRowsPassed": 10,
+  "supervisedElapsedWallMs": 51135.539888,
+  "supervisedElapsedWallSecondsRounded3dp": "51.136",
+  "workerCheckpointElapsedWallMs": 50486.659783999996,
+  "exitCode": 0,
+  "watchdogKilled": null,
+  "tenStandaloneCommonSidecarsMatchNestedObjects": true,
+  "frozenPlanSha256Matches": true,
+  "executionValidityIsNotReferenceQualification": true,
+  "note": "The 51.136 s value is the external supervised window. Instrumented per-run loop timings exclude later serialization and are not process CPU times."
+}

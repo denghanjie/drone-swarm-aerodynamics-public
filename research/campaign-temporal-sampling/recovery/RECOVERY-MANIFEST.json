@@ -1,0 +1,704 @@
+{
+  "schema": "embedded-evidence-recovery/v1",
+  "createdAt": "2026-10-13T23:22:06Z",
+  "timestampSource": "clock.curr_time; recovery metadata assembly",
+  "createdDuringRecovery": true,
+  "scope": "Post-loss recovery metadata, not an original campaign result or original audit. Read-only parsing/hash checks only; no remote writes or simulations.",
+  "immutableSource": {
+    "path": "research-recovery/attached-viewer/temporal-airflow-evidence(1).html",
+    "bytes": 8541556,
+    "sha256": "622ad9c80779dfef9434b92fc18cbc5d57c7b85a340e76a0a42dc0c2e0b54115",
+    "matchesProvidedOriginalSha256": true,
+    "unchangedAfterExtraction": true
+  },
+  "mapping": "Embedded relative URLs are resolved against implementation/demo/; recovered/ is the implementation directory. JSON file outputs retain exact original literal slices from the attachment, but do not claim byte identity with the lost pretty-printed original files.",
+  "counts": {
+    "moduleStringEntries": 4,
+    "directJsonRecords": 30,
+    "textStringEntries": 5,
+    "uniqueTextFiles": 4,
+    "directUniqueOutputFiles": 38,
+    "additionalNestedDenseSidecars": 2
+  },
+  "literalMaps": {
+    "sources": {
+      "path": "literal-maps/sources.json",
+      "bytes": 2254250,
+      "sha256": "988f3327c524839917992d064dde5f40558c07cbff595fdbd431943ac5c3bf4c",
+      "sourceUtf8ByteStart": 5958,
+      "sourceUtf8ByteEndExclusive": 2260208
+    },
+    "data": {
+      "path": "literal-maps/data.json",
+      "bytes": 6234313,
+      "sha256": "586288246503c353d758001856f6add95a1bf185609732421c2feaf70291c242",
+      "sourceUtf8ByteStart": 2260214,
+      "sourceUtf8ByteEndExclusive": 8494527
+    },
+    "texts": {
+      "path": "literal-maps/texts.json",
+      "bytes": 45750,
+      "sha256": "691347b4b9cdcec80339600e4ee3e4c5623b6caf2328e01c6be0f1ccb97df2cb",
+      "sourceUtf8ByteStart": 8494534,
+      "sourceUtf8ByteEndExclusive": 8540284
+    }
+  },
+  "additionalRecoveryEvidence": [
+    "JSON-FORMAT-RECONSTRUCTION.json",
+    "REMOTE-BLOB-VERIFICATION.json"
+  ],
+  "files": [
+    {
+      "path": "recovered/demo/vendor/three.core.js",
+      "bytes": 1403455,
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20",
+      "embeddedMap": "sources",
+      "embeddedKey": "vendor/three.core.js",
+      "recoveryMethod": "exact decoded JSON string, UTF-8, no added newline",
+      "sourceValueUtf8ByteStart": 5982,
+      "sourceValueUtf8ByteEndExclusive": 1546006,
+      "originalFileBytesVerified": true,
+      "priorUploadedGitBlobSha1": "7dcd0fbcbc04b8d9a20ecb96c1ce344cb55150d5",
+      "matchesPriorUploadedFileBytes": true
+    },
+    {
+      "path": "recovered/demo/vendor/three.module.js",
+      "bytes": 603113,
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+      "embeddedMap": "sources",
+      "embeddedKey": "vendor/three.module.js",
+      "recoveryMethod": "exact decoded JSON string, UTF-8, no added newline",
+      "sourceValueUtf8ByteStart": 1546032,
+      "sourceValueUtf8ByteEndExclusive": 2210565,
+      "originalFileBytesVerified": true,
+      "priorUploadedGitBlobSha1": "477ca4dafa7af919a2b9818e01b5ae25198d4aa4",
+      "matchesPriorUploadedFileBytes": true
+    },
+    {
+      "path": "recovered/demo/vendor/OrbitControls.js",
+      "bytes": 38703,
+      "sha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c",
+      "embeddedMap": "sources",
+      "embeddedKey": "vendor/OrbitControls.js",
+      "recoveryMethod": "exact decoded JSON string, UTF-8, no added newline",
+      "sourceValueUtf8ByteStart": 2210592,
+      "sourceValueUtf8ByteEndExclusive": 2253706,
+      "originalFileBytesVerified": true,
+      "priorUploadedGitBlobSha1": "eea26706dae735dade19367026185f6e68f5cf55",
+      "matchesPriorUploadedFileBytes": true
+    },
+    {
+      "path": "recovered/demo/app.js",
+      "bytes": 6442,
+      "sha256": "4cb84f87070f0da2e6569cc049546c282c94b1d7a0985e2098e18b4afe540dbf",
+      "embeddedMap": "sources",
+      "embeddedKey": "app.js",
+      "recoveryMethod": "exact decoded JSON string, UTF-8, no added newline",
+      "sourceValueUtf8ByteStart": 2253716,
+      "sourceValueUtf8ByteEndExclusive": 2260207,
+      "originalFileBytesVerified": false,
+      "priorUploadedGitBlobSha1": "87fc252231ce7f08ec301dbee77026a8e81e8674",
+      "matchesPriorUploadedFileBytes": false
+    },
+    {
+      "path": "recovered/demo/records.json",
+      "bytes": 2710902,
+      "sha256": "43f4bbcd88ffc125c1726b2beb2f471bde10c70771542fbf622ceb7e94370de2",
+      "embeddedMap": "data",
+      "embeddedKey": "./records.json",
+      "recoveryMethod": "verbatim JSON value literal; reconstructed file representation, original file whitespace/encoding not claimed",
+      "sourceValueUtf8ByteStart": 2260232,
+      "sourceValueUtf8ByteEndExclusive": 4971134,
+      "originalFileBytesVerified": false
+    },
+    {
+      "path": "recovered/results/campaign.json",
+      "bytes": 10027,
+      "sha256": "f22e4a6fdb83220a04abd62f83d51d80d10f4dd2c889a392fc146ac9182ef9de",
+      "embeddedMap": "data",
+      "embeddedKey": "../results/campaign.json",
+      "recoveryMethod": "verbatim JSON value literal; reconstructed file representation, original file whitespace/encoding not claimed",
+      "sourceValueUtf8ByteStart": 4971162,
+      "sourceValueUtf8ByteEndExclusive": 4981189,
+      "originalFileBytesVerified": false
+    },
+    {
+      "path": "recovered/results/compatibility.json",
+      "bytes": 502,
+      "sha256": "0313154903f6fd6ec603698636c8e6fc40c748303efa2c1cb013d8a318442b42",
+      "embeddedMap": "data",
+      "embeddedKey": "../results/compatibility.json",
+      "recoveryMethod": "verbatim JSON value literal; reconstructed file representation, original file whitespace/encoding not claimed",
+      "sourceValueUtf8ByteStart": 4981222,
+      "sourceValueUtf8ByteEndExclusive": 4981724,
+      "originalFileBytesVerified": false
+    },
+    {
+      "path": "recovered/results/matrix-status.json",
+      "bytes": 2778,
+      "sha256": "2f5d6fcb584f29baca4bafb76016d72b1e90a17349c5fc26caf2790d7a47b888",
+      "embeddedMap": "data",
+      "embeddedKey": "../results/matrix-status.json",
+      "recoveryMethod": "verbatim JSON value literal; reconstructed file representation, original file whitespace/encoding not claimed",
+      "sourceValueUtf8ByteStart": 4981757,
+      "sourceValueUtf8ByteEndExclusive": 4984535,
+      "originalFileBytesVerified": false
+    },
+    {
+      "path": "recovered/results/RAW-RETENTION-MANIFEST.json",
+      "bytes": 8105,
+      "sha256": "d6147dc356fd2cb3b5ebb033671202223b9c36fe51a8892be1b31327c50717a5",
+      "embeddedMap": "data",
+      "embeddedKey": "../results/RAW-RETENTION-MANIFEST.json",
+      "recoveryMethod": "verbatim JSON value literal; reconstructed file representation, original file whitespace/encoding not claimed",
+      "sourceValueUtf8ByteStart": 4984577,
+      "sourceValueUtf8ByteEndExclusive": 4992682,
+      "originalFileBytesVerified": false
+    },
+    {
+      "path": "recovered/results/execution-validity.json",
+      "bytes": 201,
+      "sha256": "00efee8a934885c03f0a3cbec9db86a82e4cc805c1870484b7475cacda25351a",
+      "embeddedMap": "data",
+      "embeddedKey": "../results/execution-validity.json",
+      "recoveryMethod": "verbatim JSON value literal; reconstructed file representation, original file whitespace/encoding not claimed",
+      "sourceValueUtf8ByteStart": 4992720,
+      "sourceValueUtf8ByteEndExclusive": 4992921,
+      "originalFileBytesVerified": false
+    },
+    {
+      "path": "recovered/results/supervisor.json",
+      "bytes": 361,
+      "sha256": "63c6683c52d1b159c4dcb52413f0ecee40c17ca79b8e4d926ffb50c197b87bc8",
+      "embeddedMap": "data",
+      "embeddedKey": "../results/supervisor.json",
+      "recoveryMethod": "verbatim JSON value literal; reconstructed file representation, original file whitespace/encoding not claimed",
+      "sourceValueUtf8ByteStart": 4992951,
+      "sourceValueUtf8ByteEndExclusive": 4993312,
+      "originalFileBytesVerified": false
+    },
+    {
+      "path": "recovered/results/cadence-screens.json",
+      "bytes": 688,
+      "sha256": "383960af77ff9c392a4f98c1a028c911b828d870b20af625552003ea84ea9c35",
+      "embeddedMap": "data",
+      "embeddedKey": "../results/cadence-screens.json",
+      "recoveryMethod": "verbatim JSON value literal; reconstructed file representation, original file whitespace/encoding not claimed",
+      "sourceValueUtf8ByteStart": 4993347,
+      "sourceValueUtf8ByteEndExclusive": 4994035,
+      "originalFileBytesVerified": false
+    },
+    {
+      "path": "recovered/FREEZE.json",
+      "bytes": 608,
+      "sha256": "6bccd82ad1a7b7c98f66f6c14fc8ec4c17d6b0d87278d1903530a53786d0f39e",
+      "embeddedMap": "data",
+      "embeddedKey": "../FREEZE.json",
+      "recoveryMethod": "verbatim JSON value literal; reconstructed file representation, original file whitespace/encoding not claimed",
+      "sourceValueUtf8ByteStart": 4994053,
+      "sourceValueUtf8ByteEndExclusive": 4994661,
+      "originalFileBytesVerified": false,
+      "priorUploadedGitBlobSha1": "617873c7818a2e45de25c8eee1a2782e1f5ac55d",
+      "matchesPriorUploadedFileBytes": false,
+      "matchesPriorUploadedJsonSemantics": true
+    },
+    {
+      "path": "recovered/source-manifest.json",
+      "bytes": 8113,
+      "sha256": "a66ec4c48156176f638055bfb8dc61ad440fab3d3096b309ba57f9f707c893f5",
+      "embeddedMap": "data",
+      "embeddedKey": "../source-manifest.json",
+      "recoveryMethod": "verbatim JSON value literal; reconstructed file representation, original file whitespace/encoding not claimed",
+      "sourceValueUtf8ByteStart": 4994688,
+      "sourceValueUtf8ByteEndExclusive": 5002801,
+      "originalFileBytesVerified": false,
+      "priorUploadedGitBlobSha1": "e5e9f585e22dd694ed53c145566dcaa03c0bd390",
+      "matchesPriorUploadedFileBytes": false,
+      "matchesPriorUploadedJsonSemantics": true
+    },
+    {
+      "path": "recovered/results/runs/s840131-p4-a4.json",
+      "bytes": 456028,
+      "sha256": "f64c506ff01602786a3b8cca045ba4b7d315631ac74a25bc71c90faddb7ee64e",
+      "embeddedMap": "data",
+      "embeddedKey": "../results/runs/s840131-p4-a4.json",
+      "recoveryMethod": "verbatim JSON value literal; reconstructed file representation, original file whitespace/encoding not claimed",
+      "sourceValueUtf8ByteStart": 5002839,
+      "sourceValueUtf8ByteEndExclusive": 5458867,
+      "originalFileBytesVerified": false
+    },
+    {
+      "path": "recovered/results/raw/s840131-p4-a4.states.f64.gz.json",
+      "bytes": 576,
+      "sha256": "6c556a0ece41ac1f9d1ba6d0597cd46350733e73d7fcca9989e2ae847c696195",
+      "embeddedMap": "data",
+      "embeddedKey": "../results/raw/s840131-p4-a4.states.f64.gz.json",
+      "recoveryMethod": "verbatim JSON value literal; reconstructed file representation, original file whitespace/encoding not claimed",
+      "sourceValueUtf8ByteStart": 5458918,
+      "sourceValueUtf8ByteEndExclusive": 5459494,
+      "originalFileBytesVerified": false
+    },
+    {
+      "path": "recovered/results/runs/s840131-p2-a4.json",
+      "bytes": 456012,
+      "sha256": "9dfd6861435336478b378aba7bcdc013c2f94fd1c98f9fe50e15b6c45e5207bb",
+      "embeddedMap": "data",
+      "embeddedKey": "../results/runs/s840131-p2-a4.json",
+      "recoveryMethod": "verbatim JSON value literal; reconstructed file representation, original file whitespace/encoding not claimed",
+      "sourceValueUtf8ByteStart": 5459532,
+      "sourceValueUtf8ByteEndExclusive": 5915544,
+      "originalFileBytesVerified": false
+    },
+    {
+      "path": "recovered/results/raw/s840131-p2-a4.states.f64.gz.json",
+      "bytes": 576,
+      "sha256": "a8513bfb0f943b8007ab7e9263fe109c273955a21e6e9d29b95b88f69352a85d",
+      "embeddedMap": "data",
+      "embeddedKey": "../results/raw/s840131-p2-a4.states.f64.gz.json",
+      "recoveryMethod": "verbatim JSON value literal; reconstructed file representation, original file whitespace/encoding not claimed",
+      "sourceValueUtf8ByteStart": 5915595,
+      "sourceValueUtf8ByteEndExclusive": 5916171,
+      "originalFileBytesVerified": false
+    },
+    {
+      "path": "recovered/results/runs/s840131-p1-a4.json",
+      "bytes": 456630,
+      "sha256": "77630a02d70885421b6f71fa51d53c3bc181292368c626caaf08ada3235e70b4",
+      "embeddedMap": "data",
+      "embeddedKey": "../results/runs/s840131-p1-a4.json",
+      "recoveryMethod": "verbatim JSON value literal; reconstructed file representation, original file whitespace/encoding not claimed",
+      "sourceValueUtf8ByteStart": 5916209,
+      "sourceValueUtf8ByteEndExclusive": 6372839,
+      "originalFileBytesVerified": false
+    },
+    {
+      "path": "recovered/results/raw/s840131-p1-a4.states.f64.gz.json",
+      "bytes": 576,
+      "sha256": "1243d28dbf8ceea9c94359aaa703754fdac3795893a7deb4da2b23a067891da0",
+      "embeddedMap": "data",
+      "embeddedKey": "../results/raw/s840131-p1-a4.states.f64.gz.json",
+      "recoveryMethod": "verbatim JSON value literal; reconstructed file representation, original file whitespace/encoding not claimed",
+      "sourceValueUtf8ByteStart": 6372890,
+      "sourceValueUtf8ByteEndExclusive": 6373466,
+      "originalFileBytesVerified": false
+    },
+    {
+      "path": "recovered/results/runs/s840137-p4-a4.json",
+      "bytes": 456077,
+      "sha256": "24ff037d2f497797eab0cf064a14011e6129eab3e5d8094d9e82a7c4fa9b01c1",
+      "embeddedMap": "data",
+      "embeddedKey": "../results/runs/s840137-p4-a4.json",
+      "recoveryMethod": "verbatim JSON value literal; reconstructed file representation, original file whitespace/encoding not claimed",
+      "sourceValueUtf8ByteStart": 6373504,
+      "sourceValueUtf8ByteEndExclusive": 6829581,
+      "originalFileBytesVerified": false
+    },
+    {
+      "path": "recovered/results/raw/s840137-p4-a4.states.f64.gz.json",
+      "bytes": 576,
+      "sha256": "d231b6428835e35f4c434d61962d3ff07ce4607ac5bf64b9a98fe6a1f7b18424",
+      "embeddedMap": "data",
+      "embeddedKey": "../results/raw/s840137-p4-a4.states.f64.gz.json",
+      "recoveryMethod": "verbatim JSON value literal; reconstructed file representation, original file whitespace/encoding not claimed",
+      "sourceValueUtf8ByteStart": 6829632,
+      "sourceValueUtf8ByteEndExclusive": 6830208,
+      "originalFileBytesVerified": false
+    },
+    {
+      "path": "recovered/results/runs/s840137-p2-a4.json",
+      "bytes": 456098,
+      "sha256": "b6b861ac7cc8c72afb5ef568d17b89c9c2f72f4ed585eb321ded17073689b40a",
+      "embeddedMap": "data",
+      "embeddedKey": "../results/runs/s840137-p2-a4.json",
+      "recoveryMethod": "verbatim JSON value literal; reconstructed file representation, original file whitespace/encoding not claimed",
+      "sourceValueUtf8ByteStart": 6830246,
+      "sourceValueUtf8ByteEndExclusive": 7286344,
+      "originalFileBytesVerified": false
+    },
+    {
+      "path": "recovered/results/raw/s840137-p2-a4.states.f64.gz.json",
+      "bytes": 576,
+      "sha256": "b755a04820c376275e28fd574716be67494ad8c121e34f780137dedda4770425",
+      "embeddedMap": "data",
+      "embeddedKey": "../results/raw/s840137-p2-a4.states.f64.gz.json",
+      "recoveryMethod": "verbatim JSON value literal; reconstructed file representation, original file whitespace/encoding not claimed",
+      "sourceValueUtf8ByteStart": 7286395,
+      "sourceValueUtf8ByteEndExclusive": 7286971,
+      "originalFileBytesVerified": false
+    },
+    {
+      "path": "recovered/results/runs/s840137-p1-a4.json",
+      "bytes": 456684,
+      "sha256": "f640861702c8a7a9dbbfafb99941c7c8f918329b3a52e5b4575bc138d082a5de",
+      "embeddedMap": "data",
+      "embeddedKey": "../results/runs/s840137-p1-a4.json",
+      "recoveryMethod": "verbatim JSON value literal; reconstructed file representation, original file whitespace/encoding not claimed",
+      "sourceValueUtf8ByteStart": 7287009,
+      "sourceValueUtf8ByteEndExclusive": 7743693,
+      "originalFileBytesVerified": false
+    },
+    {
+      "path": "recovered/results/raw/s840137-p1-a4.states.f64.gz.json",
+      "bytes": 576,
+      "sha256": "a6699278648b0ca6f9dbe452a246d875152e4bbb904e2cd2cedd49c411f33257",
+      "embeddedMap": "data",
+      "embeddedKey": "../results/raw/s840137-p1-a4.states.f64.gz.json",
+      "recoveryMethod": "verbatim JSON value literal; reconstructed file representation, original file whitespace/encoding not claimed",
+      "sourceValueUtf8ByteStart": 7743744,
+      "sourceValueUtf8ByteEndExclusive": 7744320,
+      "originalFileBytesVerified": false
+    },
+    {
+      "path": "recovered/results/runs/s840131-p1-a8.json",
+      "bytes": 240706,
+      "sha256": "4839c28d924934e666aa61ee957ba9366af9229f887fe07f59b639327aee5159",
+      "embeddedMap": "data",
+      "embeddedKey": "../results/runs/s840131-p1-a8.json",
+      "recoveryMethod": "verbatim JSON value literal; reconstructed file representation, original file whitespace/encoding not claimed",
+      "sourceValueUtf8ByteStart": 7744358,
+      "sourceValueUtf8ByteEndExclusive": 7985064,
+      "originalFileBytesVerified": false
+    },
+    {
+      "path": "recovered/results/raw/s840131-p1-a8.states.f64.gz.json",
+      "bytes": 576,
+      "sha256": "0bf87335fa073459ed5f2c7dc37dd2b690b4109fa815584dbfd446067dbe3e4a",
+      "embeddedMap": "data",
+      "embeddedKey": "../results/raw/s840131-p1-a8.states.f64.gz.json",
+      "recoveryMethod": "verbatim JSON value literal; reconstructed file representation, original file whitespace/encoding not claimed",
+      "sourceValueUtf8ByteStart": 7985115,
+      "sourceValueUtf8ByteEndExclusive": 7985691,
+      "originalFileBytesVerified": false
+    },
+    {
+      "path": "recovered/results/runs/s840131-p1-a16.json",
+      "bytes": 133038,
+      "sha256": "ed5b9aee4dd236f933162df6db1a1303d323cd6919a838541010bc37f7c04950",
+      "embeddedMap": "data",
+      "embeddedKey": "../results/runs/s840131-p1-a16.json",
+      "recoveryMethod": "verbatim JSON value literal; reconstructed file representation, original file whitespace/encoding not claimed",
+      "sourceValueUtf8ByteStart": 7985730,
+      "sourceValueUtf8ByteEndExclusive": 8118768,
+      "originalFileBytesVerified": false
+    },
+    {
+      "path": "recovered/results/raw/s840131-p1-a16.states.f64.gz.json",
+      "bytes": 578,
+      "sha256": "1c813af6c9ebd0a11067b92cfb90360070211f140d073c037aa979db49c47e45",
+      "embeddedMap": "data",
+      "embeddedKey": "../results/raw/s840131-p1-a16.states.f64.gz.json",
+      "recoveryMethod": "verbatim JSON value literal; reconstructed file representation, original file whitespace/encoding not claimed",
+      "sourceValueUtf8ByteStart": 8118820,
+      "sourceValueUtf8ByteEndExclusive": 8119398,
+      "originalFileBytesVerified": false
+    },
+    {
+      "path": "recovered/results/runs/s840137-p1-a8.json",
+      "bytes": 240740,
+      "sha256": "0b75af89d45a3dd30c73d8c86dbf62be8ce681fba615de6457875e23e4a2c7bd",
+      "embeddedMap": "data",
+      "embeddedKey": "../results/runs/s840137-p1-a8.json",
+      "recoveryMethod": "verbatim JSON value literal; reconstructed file representation, original file whitespace/encoding not claimed",
+      "sourceValueUtf8ByteStart": 8119436,
+      "sourceValueUtf8ByteEndExclusive": 8360176,
+      "originalFileBytesVerified": false
+    },
+    {
+      "path": "recovered/results/raw/s840137-p1-a8.states.f64.gz.json",
+      "bytes": 576,
+      "sha256": "78f47035a9de60b7c38bd73d90b19428efc4859e828d4f92c97c6cb3b0bdea3d",
+      "embeddedMap": "data",
+      "embeddedKey": "../results/raw/s840137-p1-a8.states.f64.gz.json",
+      "recoveryMethod": "verbatim JSON value literal; reconstructed file representation, original file whitespace/encoding not claimed",
+      "sourceValueUtf8ByteStart": 8360227,
+      "sourceValueUtf8ByteEndExclusive": 8360803,
+      "originalFileBytesVerified": false
+    },
+    {
+      "path": "recovered/results/runs/s840137-p1-a16.json",
+      "bytes": 133054,
+      "sha256": "dc6cbd80a7b7e21a154ef63ca2403ec923508be7331e721f0fd6e99cdcb34972",
+      "embeddedMap": "data",
+      "embeddedKey": "../results/runs/s840137-p1-a16.json",
+      "recoveryMethod": "verbatim JSON value literal; reconstructed file representation, original file whitespace/encoding not claimed",
+      "sourceValueUtf8ByteStart": 8360842,
+      "sourceValueUtf8ByteEndExclusive": 8493896,
+      "originalFileBytesVerified": false
+    },
+    {
+      "path": "recovered/results/raw/s840137-p1-a16.states.f64.gz.json",
+      "bytes": 578,
+      "sha256": "b1da661ce93df917f6823cf189e13520b9a75610a47e6a5903898ec932d05789",
+      "embeddedMap": "data",
+      "embeddedKey": "../results/raw/s840137-p1-a16.states.f64.gz.json",
+      "recoveryMethod": "verbatim JSON value literal; reconstructed file representation, original file whitespace/encoding not claimed",
+      "sourceValueUtf8ByteStart": 8493948,
+      "sourceValueUtf8ByteEndExclusive": 8494526,
+      "originalFileBytesVerified": false
+    },
+    {
+      "path": "recovered/REPORT.md",
+      "bytes": 11408,
+      "sha256": "fafe310d49959b21f0bf14edec609a678343cfee65b2edafbc2f772cef781341",
+      "embeddedMap": "texts",
+      "embeddedKey": "../REPORT.md",
+      "recoveryMethod": "exact decoded JSON string, UTF-8, no added newline",
+      "sourceValueUtf8ByteStart": 8494550,
+      "sourceValueUtf8ByteEndExclusive": 8506143,
+      "originalFileBytesVerified": false
+    },
+    {
+      "path": "recovered/PLAN.md",
+      "bytes": 25568,
+      "sha256": "0f528635c0c0e12dad5870fa7ccbad509029da741294e75e18bb63823033f267",
+      "embeddedMap": "texts",
+      "embeddedKey": "../PLAN.md",
+      "recoveryMethod": "exact decoded JSON string, UTF-8, no added newline",
+      "sourceValueUtf8ByteStart": 8506157,
+      "sourceValueUtf8ByteEndExclusive": 8532074,
+      "originalFileBytesVerified": true,
+      "priorUploadedGitBlobSha1": "ff6a9298916d00b406080b460af720d105dda2de",
+      "matchesPriorUploadedFileBytes": true
+    },
+    {
+      "path": "recovered/README.md",
+      "bytes": 5884,
+      "sha256": "634c56a3e8ec8ef4d5cbfa601c457e74ec0cd802de0162836d89d5d724da64b3",
+      "embeddedMap": "texts",
+      "embeddedKey": "../README.md",
+      "recoveryMethod": "exact decoded JSON string, UTF-8, no added newline",
+      "sourceValueUtf8ByteStart": 8532090,
+      "sourceValueUtf8ByteEndExclusive": 8538001,
+      "originalFileBytesVerified": false,
+      "priorUploadedGitBlobSha1": "a39ce6c34c46461a56281e9441d59c4fce6f1783",
+      "matchesPriorUploadedFileBytes": false
+    },
+    {
+      "path": "recovered/demo/vendor/THREE-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "embeddedMap": "texts",
+      "embeddedKey": "vendor/THREE-LICENSE.txt",
+      "recoveryMethod": "exact decoded JSON string, UTF-8, no added newline",
+      "sourceValueUtf8ByteStart": 8538029,
+      "sourceValueUtf8ByteEndExclusive": 8539141,
+      "originalFileBytesVerified": true,
+      "priorUploadedGitBlobSha1": "cf781430404b0ae0ba7d8dea3457a3515dd7c9b9",
+      "matchesPriorUploadedFileBytes": true
+    },
+    {
+      "path": "recovered/demo/vendor/THREE-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "embeddedMap": "texts",
+      "embeddedKey": "./vendor/THREE-LICENSE.txt",
+      "recoveryMethod": "exact decoded JSON string, UTF-8, no added newline",
+      "sourceValueUtf8ByteStart": 8539171,
+      "sourceValueUtf8ByteEndExclusive": 8540283,
+      "originalFileBytesVerified": true,
+      "priorUploadedGitBlobSha1": "cf781430404b0ae0ba7d8dea3457a3515dd7c9b9",
+      "matchesPriorUploadedFileBytes": true
+    }
+  ],
+  "nestedRecoveredSidecars": [
+    {
+      "path": "recovered/results/raw/s840131-p1-a4.dense.f64.gz.json",
+      "bytes": 586,
+      "sha256": "40da24d5ce968c0a93544bafb64ca25df231cfe5dcc11a9879fac772b20bc26d",
+      "embeddedMap": "data",
+      "embeddedKey": "../results/runs/s840131-p1-a4.json",
+      "jsonPointer": "/denseStates",
+      "recoveryMethod": "verbatim nested JSON sidecar object; reconstructed standalone file representation",
+      "originalFileBytesVerified": false,
+      "semanticIdentityBasis": "src/io.cjs:22-23 returns saved sidecar object; src/coupled.cjs:51 stores it as denseStates",
+      "sourceValueUtf8ByteStart": 6372252,
+      "sourceValueUtf8ByteEndExclusive": 6372838
+    },
+    {
+      "path": "recovered/results/raw/s840137-p1-a4.dense.f64.gz.json",
+      "bytes": 586,
+      "sha256": "1ecd01cbb18b3307d981fc77f8b334b9ab2f669b176fcb094fc263a4ddcd2cf6",
+      "embeddedMap": "data",
+      "embeddedKey": "../results/runs/s840137-p1-a4.json",
+      "jsonPointer": "/denseStates",
+      "recoveryMethod": "verbatim nested JSON sidecar object; reconstructed standalone file representation",
+      "originalFileBytesVerified": false,
+      "semanticIdentityBasis": "src/io.cjs:22-23 returns saved sidecar object; src/coupled.cjs:51 stores it as denseStates",
+      "sourceValueUtf8ByteStart": 7743106,
+      "sourceValueUtf8ByteEndExclusive": 7743692
+    }
+  ],
+  "limitations": [
+    "Full original replay records are absent; viewer-selected summaries and traces are not substitutes.",
+    "Two dense sidecar objects survive nested in full fresh-run records and are extracted separately with explicit provenance.",
+    "The compatibility and two inflow sidecars are absent as full objects. Retention-manifest entries provide partial metadata only.",
+    "The final REPORT.md is preserved as embedded text, including its historical retention claims; those claims describe the prior archive and must not be mistaken for current recovery completeness.",
+    "Unknown later review, ledger, packaging, and QA filenames cannot be comprehensively inventoried from this attachment.",
+    "References to missing files were not rewritten and no absent numerical evidence was generated.",
+    "Raw binary payloads are not embedded; they are separately represented by uploaded tree 62e8d56e6500228cc536f6966d921697ec0bc3ad and outside this extraction."
+  ],
+  "knownMissing": [
+    {
+      "campaignRelativePath": "implementation/results/replay/s840131-p1-a4.json",
+      "kind": "full original replay record",
+      "evidence": "REPORT.md conditional-record link; campaign replayRunIds; viewer has only selected summaries/traces",
+      "status": "not present in attachment or recovered uploaded tree; not recreated"
+    },
+    {
+      "campaignRelativePath": "implementation/results/replay/s840137-p1-a4.json",
+      "kind": "full original replay record",
+      "evidence": "REPORT.md conditional-record link; campaign replayRunIds; viewer has only selected summaries/traces",
+      "status": "not present in attachment or recovered uploaded tree; not recreated"
+    },
+    {
+      "campaignRelativePath": "implementation/results/runs/s4301-p16-a64.json",
+      "kind": "full compatibility coupled-run record",
+      "evidence": "campaign.runIds and matrix-status.compatibilityRun; compatibility summary survives",
+      "status": "not present in attachment or recovered uploaded tree; not recreated"
+    },
+    {
+      "campaignRelativePath": "implementation/results/raw/s4301-p16-a64.states.f64.gz.json",
+      "kind": "compatibility common-state sidecar",
+      "evidence": "RAW-RETENTION-MANIFEST files",
+      "status": "not present in attachment or recovered uploaded tree; not recreated"
+    },
+    {
+      "campaignRelativePath": "implementation/results/replay/s840131-p1-a4.fresh-inflow.f64.gz.json",
+      "kind": "fresh-inflow sidecar",
+      "evidence": "RAW-RETENTION-MANIFEST files; partial identity/shape metadata survives there",
+      "status": "not present in attachment or recovered uploaded tree; not recreated"
+    },
+    {
+      "campaignRelativePath": "implementation/results/replay/s840137-p1-a4.fresh-inflow.f64.gz.json",
+      "kind": "fresh-inflow sidecar",
+      "evidence": "RAW-RETENTION-MANIFEST files; partial identity/shape metadata survives there",
+      "status": "not present in attachment or recovered uploaded tree; not recreated"
+    },
+    {
+      "campaignRelativePath": "implementation/results/recomputed/reference-gates.json",
+      "kind": "original recomputed gate records",
+      "evidence": "frozen src/evaluate.cjs:11 writes this alongside verification.json; original gate summaries survive in campaign.json",
+      "status": "not present in attachment or recovered uploaded tree; not recreated"
+    },
+    {
+      "campaignRelativePath": "implementation/results/last-checkpoint.json",
+      "kind": "original last durable execution checkpoint",
+      "evidence": "frozen src/coupled.cjs:19 and src/replay.cjs:11 save checkpoint objects; none embedded",
+      "status": "not present in attachment or recovered uploaded tree; not recreated"
+    },
+    {
+      "campaignRelativePath": "implementation/results/recomputed/verification.json",
+      "kind": "original independent raw-reconstruction receipt",
+      "evidence": "REPORT.md link",
+      "status": "not present in attachment or recovered uploaded tree; not recreated"
+    },
+    {
+      "campaignRelativePath": "implementation/results/invocation.json",
+      "kind": "original invocation record",
+      "evidence": "REPORT.md link",
+      "status": "not present in attachment or recovered uploaded tree; not recreated"
+    },
+    {
+      "campaignRelativePath": "implementation/viewer-qa/browser-check.json",
+      "kind": "original browser-check failure receipt",
+      "evidence": "REPORT.md link",
+      "status": "not present in attachment or recovered uploaded tree; not recreated"
+    },
+    {
+      "campaignRelativePath": "coordination/CLAIM-EVIDENCE-LEDGER.md",
+      "kind": "final publication ledger",
+      "evidence": "README.md link",
+      "status": "not present in attachment or recovered uploaded tree; not recreated"
+    },
+    {
+      "campaignRelativePath": "coordination/dense-transport-parts.json",
+      "kind": "original dense transport manifest",
+      "evidence": "README.md link",
+      "status": "not present in attachment or recovered uploaded tree; not recreated"
+    },
+    {
+      "campaignRelativePath": "coordination/packaging/reconstruct_dense.py",
+      "kind": "original dense reconstruction utility",
+      "evidence": "README.md command",
+      "status": "not present in attachment or recovered uploaded tree; not recreated"
+    },
+    {
+      "campaignRelativePath": "implementation/publication-history/pre-label-correction/",
+      "kind": "original prior-label artifact history",
+      "evidence": "README.md names directory but individual original filenames are not established",
+      "status": "not present in attachment or recovered uploaded tree; not recreated"
+    }
+  ],
+  "checks": {
+    "description": "Recovery-time checks of existing records only; no simulation, field evaluation, gate recomputation from arrays, or regenerated numerical evidence.",
+    "status": "passed",
+    "physicsGates": [
+      {
+        "seed": 840131,
+        "passed": true
+      },
+      {
+        "seed": 840137,
+        "passed": true
+      }
+    ],
+    "airflowGates": [
+      {
+        "seed": 840131,
+        "passed": false,
+        "failedAbsoluteCaps": [
+          "velocityMps",
+          "attitudeRad",
+          "angularVelocityRadps"
+        ],
+        "allReductionChecksPassed": true
+      },
+      {
+        "seed": 840137,
+        "passed": false,
+        "failedAbsoluteCaps": [
+          "velocityMps",
+          "attitudeRad",
+          "angularVelocityRadps"
+        ],
+        "allReductionChecksPassed": true
+      }
+    ],
+    "referenceQualified": false,
+    "qualifiedCadenceCount": 0,
+    "attemptedCoupledRunCount": 11,
+    "freshCompleted": 10,
+    "freshSkipped": 4,
+    "compatibilityPreflights": 1,
+    "conditionalReplayDriverCount": 2,
+    "conditionalQuadratureRowsPassed": 10,
+    "supervisedElapsedWallMs": 51135.539888,
+    "supervisedElapsedWallSecondsRounded3dp": "51.136",
+    "workerCheckpointElapsedWallMs": 50486.659783999996,
+    "exitCode": 0,
+    "watchdogKilled": null,
+    "tenStandaloneCommonSidecarsMatchNestedObjects": true,
+    "frozenPlanSha256Matches": true,
+    "executionValidityIsNotReferenceQualification": true,
+    "note": "The 51.136 s value is the external supervised window. Instrumented per-run loop timings exclude later serialization and are not process CPU times."
+  },
+  "existingSourceTree": {
+    "treeSha": "62e8d56e6500228cc536f6966d921697ec0bc3ad",
+    "localRoot": "../github/recovered",
+    "reviewFilesAlreadyRecovered": [
+      "research/campaign-temporal-sampling/review/IMPLEMENTATION-REVIEW-SOURCE.json",
+      "research/campaign-temporal-sampling/review/IMPLEMENTATION-REVIEW.md",
+      "research/campaign-temporal-sampling/review/PLAN-REVIEW.md",
+      "research/campaign-temporal-sampling/review/POST-RUN-CHECKLIST.md",
+      "research/campaign-temporal-sampling/review/PROPOSED-PLAN-AMENDMENT.md",
+      "research/campaign-temporal-sampling/review/SOURCE-STATIC-AUDIT.json"
+    ],
+    "robustnessReportsAlreadyRecovered": [
+      "research/campaign-temporal-sampling/robustness/POST-ATTEMPT-FINDINGS.md",
+      "research/campaign-temporal-sampling/robustness/README.md",
+      "research/campaign-temporal-sampling/robustness/RESULTS.md",
+      "research/campaign-temporal-sampling/robustness/STATIC-REPRODUCIBILITY-REVIEW.md",
+      "research/campaign-temporal-sampling/robustness/results/attempt-2026-10-13T12-02-21-292Z/RESULTS.md"
+    ]
+  }
+}
