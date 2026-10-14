@@ -1,0 +1,135 @@
+{
+  "schema": "audit-c1-static-validation/v1",
+  "dateUtc": "2026-10-14T04:00:16.305077+00:00",
+  "status": "syntax_and_metadata_passed_numerical_unrun",
+  "syntaxChecks": [
+    {
+      "path": "implementation/src/branch-audit-c1.cjs",
+      "command": [
+        "node",
+        "--check",
+        "research-audit-optimization/implementation/src/branch-audit-c1.cjs"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "",
+      "sha256": "d75fb8eec52b4c34a2d8caf01d0e7fb5e42b8278c3a21b7a27b85fcc99520fda",
+      "bytes": 9012
+    },
+    {
+      "path": "implementation/src/child.cjs",
+      "command": [
+        "node",
+        "--check",
+        "research-audit-optimization/implementation/src/child.cjs"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "",
+      "sha256": "927daafa55d71364b602f318441eb42eea9f006d35ccaf96a6aab9b5b86c62f2",
+      "bytes": 11964
+    },
+    {
+      "path": "implementation/src/context.cjs",
+      "command": [
+        "node",
+        "--check",
+        "research-audit-optimization/implementation/src/context.cjs"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "",
+      "sha256": "f38c1866f143ea0d5c4e8e59f3c92ee901291f3644a75365487d42d4daa5b4f8",
+      "bytes": 7901
+    },
+    {
+      "path": "implementation/src/corpus.cjs",
+      "command": [
+        "node",
+        "--check",
+        "research-audit-optimization/implementation/src/corpus.cjs"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "",
+      "sha256": "642060c8043bbf62b5def9f6c73c649f569fa915b69de381b52764e7544748a3",
+      "bytes": 10345
+    },
+    {
+      "path": "implementation/src/exact.cjs",
+      "command": [
+        "node",
+        "--check",
+        "research-audit-optimization/implementation/src/exact.cjs"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "",
+      "sha256": "256f08b63f4cb399cab2adf00396fb9766119a63079479da1ed31d8c37290af4",
+      "bytes": 6354
+    },
+    {
+      "path": "implementation/src/load-audit.cjs",
+      "command": [
+        "node",
+        "--check",
+        "research-audit-optimization/implementation/src/load-audit.cjs"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "",
+      "sha256": "e12ef359b627484ad41032cf2c0ea6095231ff7b6d641f7df30945f50aa3125b",
+      "bytes": 3567
+    },
+    {
+      "path": "implementation/src/synthetic.cjs",
+      "command": [
+        "node",
+        "--check",
+        "research-audit-optimization/implementation/src/synthetic.cjs"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "",
+      "sha256": "ef37153c229ebdf6e8a0118ce1165edd1bd6d9730acf6ddae3abd8afe58990cc",
+      "bytes": 17763
+    },
+    {
+      "path": "implementation/src/workloads.cjs",
+      "command": [
+        "node",
+        "--check",
+        "research-audit-optimization/implementation/src/workloads.cjs"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "",
+      "sha256": "600df0828648b497d664fe47c07b3bef883afc5ba7814ee5b5dfceb99a435935",
+      "bytes": 5862
+    }
+  ],
+  "metadataChecks": {
+    "correctnessJobs": 18,
+    "performanceChildren": 64,
+    "syntheticCases": 73,
+    "uniqueJobAndCaseIds": true,
+    "allJsonParses": true,
+    "oldSourcesVerified": 71
+  },
+  "notPerformed": [
+    "import execution of audit/geometry/physics modules",
+    "numerical fixture",
+    "geometry evaluation",
+    "trajectory integration",
+    "timing pilot",
+    "benchmark",
+    "remote write"
+  ],
+  "independentReview": "Final semantic source/coverage static pass reported; reviewer pinning final hashes. Resource forecast final review pending.",
+  "executionRelease": false,
+  "limitations": [
+    "Static checks do not prove runtime correctness or performance.",
+    "Root owns full final source/config/input freeze and explicit execution release.",
+    "Full public-output graph consumption adds substantial unmeasured cost beyond initial aggregate safety-bucket proxy."
+  ]
+}

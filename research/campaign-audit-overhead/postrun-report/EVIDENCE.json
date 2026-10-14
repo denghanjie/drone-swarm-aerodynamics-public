@@ -1,0 +1,260 @@
+{
+  "schema": "audit-c1-terminal-postrun-evidence/v1",
+  "preparedAtUtc": "2026-10-14T04:57:17.444188+00:00",
+  "status": "terminal_integrity_blocked",
+  "statusLabel": "AUDIT-C1 \u00b7 terminal launch rejection",
+  "summary": "The one-shot supervisor rejected the frozen performance schedule before launching any correctness or performance child. No numerical comparison, timing benchmark or new trajectory was produced.",
+  "reason": "Performance jobs must match all 64 prescribed serial slots, zero-based blocks",
+  "startedAtUtc": "2026-10-14T04:53:51Z",
+  "retryAllowed": false,
+  "correctnessLabel": "Not run. Exact-output equivalence has not been established by this attempt.",
+  "speedLabel": "Not measured. Supervisor launch overhead is not a benchmark result.",
+  "oldReferenceQualified": false,
+  "newFlightTrajectories": false,
+  "physicalValidationEstablished": false,
+  "sourceReceiptFields": {
+    "windowStarted": {
+      "source": "../robustness-review/results/WINDOW-STARTED.json",
+      "fields": {
+        "schema": "audit-c1-window-start/v1",
+        "releaseSha256": "9e62f693e2761270718a17036793b81804b729324ac24408e5e4cbc83feaca3f",
+        "freezeSha256": "eb5dbadb92f592a320a2e1f3e791e28c5449464808915739e1aa4c3293ca37e5",
+        "startMonotonic": 23844.260000209997,
+        "startedAtUtc": "2026-10-14T04:53:51Z",
+        "numericalStopBySeconds": 270.0,
+        "finalAccountingReservedSeconds": 30,
+        "retryAllowed": false
+      }
+    },
+    "supervisor": {
+      "source": "../robustness-review/results/SUPERVISOR.json",
+      "fields": {
+        "status": "integrity_blocked",
+        "reason": "Performance jobs must match all 64 prescribed serial slots, zero-based blocks",
+        "completedJobIds": [],
+        "unrunJobIds": [],
+        "stoppingJob": null,
+        "reapedProcesses": [],
+        "wallSecondsBeforeFinalWrite": 0.04066734900334268,
+        "processTreeCpuSecondsBeforeFinalWrite": 0.039228,
+        "peakChildRssBytesSampled": 0,
+        "oldReferenceQualified": false,
+        "finalFrozenIdentityCheck": {
+          "status": "not_run_after_failed_window",
+          "reason": "No cost qualification; prioritize retained failure evidence."
+        },
+        "finalRuntimeIdentityCheck": {
+          "status": "not_run_after_failed_window"
+        }
+      }
+    },
+    "finalAccounting": {
+      "source": "../robustness-review/results/FINAL-ACCOUNTING.json",
+      "fields": {
+        "schema": "audit-c1-final-accounting/v1",
+        "wallSecondsBeforeWrite": 0.048071681001601974,
+        "processTreeCpuSecondsBeforeWrite": 0.046626999999999995,
+        "withinHardCapsBeforeWrite": true,
+        "retainedBeforeWrite": {
+          "new": {
+            "bytes": 1604492,
+            "files": 100
+          },
+          "old": {
+            "bytes": 134229313,
+            "files": 287
+          },
+          "combinedBytes": 135833805
+        },
+        "peakNewLogicalRetainedBytesBeforeWrite": 1604492,
+        "peakCombinedLogicalRetainedBytesBeforeWrite": 135833805,
+        "qualificationRequires": "Complete passed semantic gate, applicable cost terminal status, all resource/identity caps and no final overrun receipt.",
+        "meaning": "Final evidence write is charged to same clock; values here are explicitly before this write."
+      }
+    }
+  },
+  "interpretation": {
+    "noChildLaunched": "In the frozen supervisor, verify_release calls verify_jobs before the child loop; the reported exception occurs there. Empty completed/reaped lists and the absence of child receipts are consistent with this control flow.",
+    "emptyUnrunList": "unrunJobIds is empty because self.rows is assigned only after verify_jobs returns. It does not mean the prescribed jobs were completed or waived.",
+    "accountingLimits": "All reported wall/CPU/storage values retain their before-write qualification. withinHardCapsBeforeWrite does not qualify scientific execution, measure speedup or certify later report/storage totals.",
+    "checkpoint": "The supervisor includes a default lastDurableCheckpointPath, but no checkpoint file exists in the retained results. A path field does not establish a retained numerical state.",
+    "identityChecks": "Full frozen-file/runtime verification in verify_release follows schedule validation and was not reached. Final identity checks are explicitly not run after the failed window. Later static checks cannot retroactively make this attempt qualified.",
+    "oneShot": "The started marker consumes this release. Retain it and all failure evidence; no retry or repair-and-rerun is authorized by this report."
+  },
+  "sourceIdentities": [
+    {
+      "path": "../robustness-review/results/WINDOW-STARTED.json",
+      "bytes": 398,
+      "sha256": "79b29ffe6b2b3463c8bfe64df88ff2c9863da853016c506cb38ee5348d69091f"
+    },
+    {
+      "path": "../robustness-review/results/SUPERVISOR.json",
+      "bytes": 1755,
+      "sha256": "8379289fe24683772dcbba0dcdae70e846c025621de3ab8b7d114a34ce512c53"
+    },
+    {
+      "path": "../robustness-review/results/FINAL-ACCOUNTING.json",
+      "bytes": 758,
+      "sha256": "e9183625917b9528050e6e2087082033c388034ad3d7f65aff7a2f8e48c31587"
+    },
+    {
+      "path": "../EXECUTION-RELEASE.json",
+      "bytes": 1544,
+      "sha256": "9e62f693e2761270718a17036793b81804b729324ac24408e5e4cbc83feaca3f"
+    },
+    {
+      "path": "../FREEZE.json",
+      "bytes": 47586,
+      "sha256": "eb5dbadb92f592a320a2e1f3e791e28c5449464808915739e1aa4c3293ca37e5"
+    },
+    {
+      "path": "../robustness-review/supervise.py",
+      "bytes": 31739,
+      "sha256": "4693355dd181f6bce8fb9d03d3f8eee780f28b47143d71b72cfe74abdd71d3f3"
+    },
+    {
+      "path": "../implementation/config/jobs.json",
+      "bytes": 14585,
+      "sha256": "32171321a352b7e56447b716ad8cf182cf10ef7875fc5f016f3927956cf54e1b"
+    },
+    {
+      "path": "../postrun-diagnosis/REPORT.md",
+      "bytes": 6806,
+      "sha256": "8d6458e9f2de740c5967da517212b1e90f833102ebc531ff6f120288c919d2c5"
+    },
+    {
+      "path": "../postrun-diagnosis/SCHEDULE-DIAGNOSIS.json",
+      "bytes": 16011,
+      "sha256": "b039952eb7ccabe699fc96d55c9dc9d8baa81528cdfb1490e2fa72e13a8356de"
+    }
+  ],
+  "derivationSources": [
+    {
+      "path": "../demo/app.js",
+      "bytes": 1517,
+      "sha256": "b81cb8290da04a2bec3ca3b2d96374240976e3f60095d80a5a22b477965df8b6"
+    },
+    {
+      "path": "../demo/index.html",
+      "bytes": 4107,
+      "sha256": "932d63fa025d061ce8b07c76ac7e9737da49e513201856b3e2a78feb2d059ed7"
+    },
+    {
+      "path": "../demo/evidence.json",
+      "bytes": 1386,
+      "sha256": "872f10134642cc98109571306a83928e3668ceb3f78876df69875d4629ef5b58"
+    },
+    {
+      "path": "../demo/README.md",
+      "bytes": 1285,
+      "sha256": "4f10e1e800de92148baba1ef6015bd4cee8505143fd7de1a3a900522772245ae"
+    },
+    {
+      "path": "../demo/STATIC-PREPARATION.json",
+      "bytes": 919,
+      "sha256": "87b4e4f32a7ce5a3f2fdf10ce645031e34757359c3dd674a2c936854f201ae97"
+    },
+    {
+      "path": "../../research-next/implementation/demo/index.html",
+      "bytes": 3000,
+      "sha256": "5976e2b0107537d18ba0a4bbbb1f190c7c6be9df848806aca6a71309dc777e22",
+      "identityBasis": "original freeze entry"
+    },
+    {
+      "path": "../../research-next/implementation/demo/app.js",
+      "bytes": 4077,
+      "sha256": "9bb6d8b6e3df4aa4bb4402dc07ebe641b2de70f9719587f04475b5b154a368f7",
+      "identityBasis": "original freeze entry"
+    },
+    {
+      "path": "../../research-next/implementation/demo/records.json",
+      "bytes": 4467422,
+      "sha256": "38119ce73ad7128023880323424adff347c931dc38e30acaa9e49dda1d1fb6f7",
+      "identityBasis": "existing historical display dependency hashed without decoding; not a numerical input claim"
+    },
+    {
+      "path": "../../research-next/implementation/demo/vendor/three.module.js",
+      "bytes": 603113,
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+      "identityBasis": "original freeze entry"
+    },
+    {
+      "path": "../../research-next/implementation/demo/vendor/three.core.js",
+      "bytes": 1403455,
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20",
+      "identityBasis": "original freeze entry"
+    },
+    {
+      "path": "../../research-next/implementation/demo/vendor/OrbitControls.js",
+      "bytes": 38703,
+      "sha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c",
+      "identityBasis": "original freeze entry"
+    }
+  ],
+  "records": [
+    {
+      "path": "../robustness-review/results/WINDOW-STARTED.json",
+      "label": "Actual one-shot start marker",
+      "description": "Records 2026-10-14T04:53:51Z, the exact release/freeze identities and retryAllowed=false."
+    },
+    {
+      "path": "../robustness-review/results/SUPERVISOR.json",
+      "label": "Actual supervisor terminal receipt",
+      "description": "integrity_blocked at the 64-slot schedule check; no completed jobs or reaped numerical children."
+    },
+    {
+      "path": "../robustness-review/results/FINAL-ACCOUNTING.json",
+      "label": "Actual final-accounting receipt",
+      "description": "Pre-write supervisory resource counters only; not a benchmark or complete qualification."
+    },
+    {
+      "path": "../postrun-report/MILESTONE.md",
+      "label": "Postrun milestone",
+      "description": "Terminal outcome, caveats and the boundary on conclusions."
+    },
+    {
+      "path": "../postrun-report/EVIDENCE.json",
+      "label": "Machine-readable source evidence",
+      "description": "Exact receipt identities, copied fields and explicitly labeled interpretation."
+    },
+    {
+      "path": "../postrun-report/STATIC-CHECKS.json",
+      "label": "Static display verification",
+      "description": "Syntax, paths, receipt pins and unchanged scaffold checks; no browser verification."
+    },
+    {
+      "path": "../postrun-diagnosis/REPORT.md",
+      "label": "Independent static schedule diagnosis",
+      "description": "The supervisor reverses seed 840137 block 6 relative to protocol/jobs/cost validator; no repair or retry was made."
+    }
+  ],
+  "displayVerification": "New postrun wrapper statically checked only. No browser was launched. The existing Three.js replay and its historical records are unmodified.",
+  "display": {
+    "kind": "historical_record_replay_only",
+    "localPriorRelativeBase": "../../research-next/",
+    "publicPriorRelativeBase": "../../campaign-joint-stage-reference/",
+    "iframeSuffix": "implementation/demo/index.html",
+    "priorMilestoneSuffix": "MILESTONE.md",
+    "historicalPartialDisplay": "P1 displays poses through 0.990 s, then holds its last displayed pose; the prior accepted stop is 0.9915625 s. Interpolation is display-only.",
+    "notPerformed": [
+      "numerical execution",
+      "supervisor retry",
+      "new trajectory generation",
+      "browser launch",
+      "remote write"
+    ]
+  },
+  "configuredJobsUnrun": {
+    "correctness": 18,
+    "performance": 64,
+    "total": 82,
+    "independentCorrectnessGateAlsoUnrun": true,
+    "basis": "Frozen config inspection and schedule failure before the child loop; not inferred from the empty unrunJobIds field."
+  },
+  "scheduleDiagnosis": {
+    "source": "../postrun-diagnosis/REPORT.md",
+    "machineReadableSource": "../postrun-diagnosis/SCHEDULE-DIAGNOSIS.json",
+    "finding": "Supervisor seed 840137 zero-based block 6 uses CB, while protocol/jobs/cost validator prescribe BC; four of 64 performance slots differ across the two workloads.",
+    "kind": "postrun static diagnosis, not new experimental evidence"
+  }
+}

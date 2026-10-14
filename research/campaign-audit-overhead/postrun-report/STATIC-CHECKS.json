@@ -1,0 +1,206 @@
+{
+  "schema": "audit-c1-postrun-static-checks/v1",
+  "preparedAtUtc": "2026-10-14T05:00:39.826313+00:00",
+  "status": "pass_static_only",
+  "checks": {
+    "moduleSyntax": {
+      "command": "node --input-type=module --check < postrun-demo/app.js",
+      "result": "pass",
+      "appExecuted": false
+    },
+    "jsonParse": "pass",
+    "copiedTerminalFieldsExact": "pass",
+    "windowReleaseAndFreezePinsMatch": "pass",
+    "originalFrozenScaffoldAndHistoricalViewerPinsMatch": "pass",
+    "uniqueHtmlIds": "pass",
+    "relativeHtmlMarkdownEvidenceLinks": "pass",
+    "linkCheckSelfReceipt": "exists after this write; no self-hash",
+    "configuredJobsUnrun": {
+      "correctness": 18,
+      "performance": 64,
+      "independentGate": true
+    },
+    "resultDirectoryOnlyThreeTerminalReceipts": true,
+    "noChildReceiptsOrCheckpoint": true,
+    "basicPrivatePathAndIdentifierScan": "pass",
+    "allReferencedSourceIdentitiesMatch": "pass"
+  },
+  "layoutChecks": [
+    {
+      "pagePath": "/research-audit-optimization/postrun-demo/",
+      "priorBasePath": "/research-next/",
+      "urlResolution": "pass",
+      "historicalRequiredFilesExistLocally": true,
+      "publicCheckoutOrBrowserExecuted": false
+    },
+    {
+      "pagePath": "/research/campaign-audit-overhead/postrun-demo/",
+      "priorBasePath": "/research/campaign-joint-stage-reference/",
+      "urlResolution": "pass",
+      "historicalRequiredFilesExistLocally": true,
+      "publicCheckoutOrBrowserExecuted": false
+    }
+  ],
+  "verifiedLocalLinks": [
+    "README.md",
+    "demo/index.html",
+    "postrun-demo/app.js",
+    "postrun-demo/index.html",
+    "postrun-diagnosis/REPORT.md",
+    "postrun-report/EVIDENCE.json",
+    "postrun-report/MILESTONE.md",
+    "robustness-review/results/FINAL-ACCOUNTING.json",
+    "robustness-review/results/SUPERVISOR.json",
+    "robustness-review/results/WINDOW-STARTED.json",
+    "robustness-review/supervise.py"
+  ],
+  "sourceChecks": [
+    {
+      "path": "../robustness-review/results/WINDOW-STARTED.json",
+      "byteLengthAndSha256MatchEvidence": true
+    },
+    {
+      "path": "../robustness-review/results/SUPERVISOR.json",
+      "byteLengthAndSha256MatchEvidence": true
+    },
+    {
+      "path": "../robustness-review/results/FINAL-ACCOUNTING.json",
+      "byteLengthAndSha256MatchEvidence": true
+    },
+    {
+      "path": "../EXECUTION-RELEASE.json",
+      "byteLengthAndSha256MatchEvidence": true
+    },
+    {
+      "path": "../FREEZE.json",
+      "byteLengthAndSha256MatchEvidence": true
+    },
+    {
+      "path": "../robustness-review/supervise.py",
+      "byteLengthAndSha256MatchEvidence": true
+    },
+    {
+      "path": "../implementation/config/jobs.json",
+      "byteLengthAndSha256MatchEvidence": true
+    },
+    {
+      "path": "../postrun-diagnosis/REPORT.md",
+      "byteLengthAndSha256MatchEvidence": true
+    },
+    {
+      "path": "../postrun-diagnosis/SCHEDULE-DIAGNOSIS.json",
+      "byteLengthAndSha256MatchEvidence": true
+    },
+    {
+      "path": "../demo/app.js",
+      "byteLengthAndSha256MatchEvidence": true
+    },
+    {
+      "path": "../demo/index.html",
+      "byteLengthAndSha256MatchEvidence": true
+    },
+    {
+      "path": "../demo/evidence.json",
+      "byteLengthAndSha256MatchEvidence": true
+    },
+    {
+      "path": "../demo/README.md",
+      "byteLengthAndSha256MatchEvidence": true
+    },
+    {
+      "path": "../demo/STATIC-PREPARATION.json",
+      "byteLengthAndSha256MatchEvidence": true
+    },
+    {
+      "path": "../../research-next/implementation/demo/index.html",
+      "byteLengthAndSha256MatchEvidence": true
+    },
+    {
+      "path": "../../research-next/implementation/demo/app.js",
+      "byteLengthAndSha256MatchEvidence": true
+    },
+    {
+      "path": "../../research-next/implementation/demo/records.json",
+      "byteLengthAndSha256MatchEvidence": true
+    },
+    {
+      "path": "../../research-next/implementation/demo/vendor/three.module.js",
+      "byteLengthAndSha256MatchEvidence": true
+    },
+    {
+      "path": "../../research-next/implementation/demo/vendor/three.core.js",
+      "byteLengthAndSha256MatchEvidence": true
+    },
+    {
+      "path": "../../research-next/implementation/demo/vendor/OrbitControls.js",
+      "byteLengthAndSha256MatchEvidence": true
+    }
+  ],
+  "frozenDerivationFilesChecked": [
+    "demo/app.js",
+    "demo/index.html",
+    "demo/evidence.json",
+    "demo/README.md",
+    "demo/STATIC-PREPARATION.json",
+    "../research-next/implementation/demo/index.html",
+    "../research-next/implementation/demo/app.js",
+    "../research-next/implementation/demo/vendor/three.module.js",
+    "../research-next/implementation/demo/vendor/three.core.js",
+    "../research-next/implementation/demo/vendor/OrbitControls.js"
+  ],
+  "artifactFilesExcludingThisReceipt": [
+    {
+      "path": "CURRENT-STATUS.md",
+      "bytes": 1854,
+      "sha256": "082858b080b72a2e6dc3256c1794f4a485df68090784587d6f3af0ce5f34dc5e"
+    },
+    {
+      "path": "postrun-demo/README.md",
+      "bytes": 1875,
+      "sha256": "f5083579f563e3244c932de46a5657bc4f0e3a4f178eddb0c2b13eb8c0203f1f"
+    },
+    {
+      "path": "postrun-demo/app.js",
+      "bytes": 3501,
+      "sha256": "09644e16e910da2ddc6473ec37e69b60c785335d76d2bb83ec8e8be590f9a195"
+    },
+    {
+      "path": "postrun-demo/evidence.json",
+      "bytes": 3776,
+      "sha256": "af6b0a09c592dafe2977527d8639032af55b6038ee74be5bc4ff82fde62cd500"
+    },
+    {
+      "path": "postrun-demo/index.html",
+      "bytes": 5517,
+      "sha256": "420cff841b630dcc2e18b62b9a6f02d2c2a280512093360f022813778f58bf1c"
+    },
+    {
+      "path": "postrun-report/MILESTONE.md",
+      "bytes": 4518,
+      "sha256": "0e2a9593c0656a036197d88dc6c58f999fc04c7e58c9c41eea5f9c32c4e729e2"
+    },
+    {
+      "path": "postrun-report/EVIDENCE.json",
+      "bytes": 11599,
+      "sha256": "e635eb166236159e592707d2229e82ae1a3ea90d273726947ec2e2f82513505d"
+    }
+  ],
+  "artifactBytesBeforeThisReceipt": 32640,
+  "scope": {
+    "numericalCodeExecuted": false,
+    "historicalTrajectoryPayloadDecoded": false,
+    "browserLaunched": false,
+    "httpServerStarted": false,
+    "supervisorRetried": false,
+    "frozenSourceEdited": false,
+    "originalDemoEdited": false,
+    "terminalReceiptsEdited": false,
+    "remoteWrite": false
+  },
+  "limitations": [
+    "Browser rendering and dynamic SHA-256 UI flow are not runtime tested.",
+    "Public layout paths are checked by relative URL resolution and corresponding local file existence, not by a published checkout or remote browser.",
+    "Postrun bytes are additional retained artifacts and are not included in the attempt's original before-write accounting.",
+    "No full numerical or physics qualification follows from these static checks."
+  ]
+}

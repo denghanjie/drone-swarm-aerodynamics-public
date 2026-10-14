@@ -1,0 +1,30 @@
+{
+  "schema": "audit-c1-runtime/v1",
+  "node": "v24.19.0",
+  "v8": "13.6.233.17-node.51",
+  "execPath": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+  "platform": "linux",
+  "arch": "x64",
+  "execArgv": [],
+  "nodeExecutableSha256": "bc17c508ffeed0ec622934f9b7fa72f8e78da65350e63c3eceb56fa688aa5e12",
+  "nodeExecutableBytes": 125989464,
+  "osKernel": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "cpuModel": "AMD EPYC 9V74 80-Core Processor",
+  "visibleLogicalProcessors": 9,
+  "clockTicksPerSecond": 100,
+  "availableControls": {
+    "linuxProc": true,
+    "wait4": true,
+    "processGroups": true,
+    "resourceGetrusage": true
+  },
+  "limitations": [
+    "lscpu failed: /sys/devices/system/cpu/possible unavailable",
+    "Virtualized host; physical host contention/isolation not established",
+    "No timing pilot, numerical import, fixture, geometry, or trajectory run performed"
+  ],
+  "commands": [
+    "node implementation/src/child.cjs --job <id> --release <released-json>"
+  ],
+  "specialFlags": false
+}

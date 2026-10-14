@@ -1,0 +1,31 @@
+{
+  "schema": "audit-c1-independent-robustness-matrix/v1",
+  "status": "static_requirements_only_not_executed",
+  "fixture_policy": "Fixture definitions and assertions must be frozen before release; no missing or unexecuted case passes. All planned geometry fixtures belong to implementation; this independent matrix supplies review requirements.",
+  "families": [
+    {"id":"R1-predicates","required":["Each of eight pair predicates at nextDown(boundary), exact boundary, nextUp(boundary)","Downstream +0 and -0 remain false; other signed-zero margins use >=0", "Negative downstream and half-width, all inactive/out-of-support pairs", "First identity on equal absolute opposite-sign margins", "All 960 ordered N16 pairs and 7680 pair margin values consumed"]},
+    {"id":"R2-prepare-tilt","required":["Controlled axes below/equal/above tilt threshold", "Real prepare nonarray/empty/wrong-full17/nonfinite/coordinate/quaternion/tilt cases", "Competing failures across drones preserve first validation order", "Prepare failure has no auditLocation and no observe counter mutation"]},
+    {"id":"R3-near-wake-guard","required":["distance<neighbor, down>0, down<far, radial<near truth table with each independently flipped", "Exact boundary and immediately adjacent representable double", "Simultaneous violating receiver/rotor/source indices preserve first traversal failure", "Earlier prepare failure outranks guard", "Exception constructor/message/enumerable detail and auditLocation identity equal", "Partial hash/counter/pending/extrema state equal"]},
+    {"id":"R4-ties-aliases","required":["Nearest equal absolute with opposite sign", "Equal signed min/max", "Cross-rotor and cross-observation nearest ties", "Equal transition severity across pairs/later brackets", "Sample nearest/min/max relevant record aliases", "Run extrema separate records and first-observation location", "Repeated locations and signed zero remain exact"]},
+    {"id":"R5-transitions","required":["No signature change", "Multiple changed categories with nontrivial Map insertion order", "Tilt-only signature changes counted without pair tilt bracket", "First/greater-worst/equal-worst bracket paths", "First and worst same-object relationship where reference does so", "Raw/geometry/location references valid after subsequent calls"]},
+    {"id":"R6-jump-risk","required":["Downstream lower and upper equality endpoints", "Radial nextDown/equal/nextUp near and outer support boundaries", "One-sided downstream ranges", "Every flagged pair in traversal order", "N1 zero pairs", "Counter increments and full error evidence before throw"]},
+    {"id":"R7-joint-api-packet","required":["Six samples start endpoint/stage1/stage2/stage3/stage4/accepted endpoint", "Distinct half-time stage2/stage3 identities", "Endpoint-quiet full-trial-positive and endpoint-positive cases", "Distinct nonunit raw versus normalized geometry", "Compare endpoint→accepted; stage1→2→3→4; stage4→accepted; full checkStep", "No endpoint→stage1 comparison"]},
+    {"id":"R8-lifetime","required":["A→B→A with older retained outputs checked after each call", "N16→N2→N1→N16 in same sequence", "Actual identical input object reused, not fresh clones hiding stale caches", "raw=geometry alias and distinct raw", "Intervening guard failure followed by valid observation", "Frozen arrays/rows/location objects and exact descriptors/nonmutation", "Both baseline-first and candidate-first call ordering"]},
+    {"id":"R9-persistence","required":["N2 counts 0,1,1023,1024,1025", "Automatic flush at1024; manual flush; final flush; persist=false", "Full signature bytes, ordered JSON, bracket Float64 bytes under identical logical IDs", "Zero-bracket/null artifact and nonfinite JSON encoding", "One-shot repeated finish error and partial post-error state", "All old files remain read-only"]}
+  ],
+  "corpus": {"arrays":11,"rowsPerVariant":35597,"savedBracketPairs":110,"savedBracketSides":220,"savedJsonStates":23,"originalPreflightAudits":2,"retainedGenuineRkStageSides":0,"exactP1StopTick":50768,"notExactStopCheckpointTick":50688,"lastCommonRowTick":50752},
+  "supervisor_cases_prepared_for_future_testing": [
+    {"id":"S1-child-wall-stop","assert":"SIGTERM at1s reserve; SIGKILL by hard cap; no next job; exact capture only if child positively reports it."},
+    {"id":"S2-child-cpu-stop","assert":"Burn CPU; independent /proc live plus wait4 exited CPU reaches cap; parent-only cpu never accepted."},
+    {"id":"S3-exited-child-accounting","assert":"At least two serial short children: cumulative RUSAGE_CHILDREN survives exits; no double count when polling/reaping."},
+    {"id":"S4-unexpected-descendant","assert":"Observed extra process aborts; subreaper/killpg/adopted-child reap retain final usage; no speed ratios."},
+    {"id":"S5-child-rss-stop","assert":"Both sampled RSS and wait4 high-water peak enforce512MiB; conservative parent+child peak bound enforces1GiB."},
+    {"id":"S6-phase-stop","assert":"Correctness180/performance90/global300 separate wall and CPU; 30s accounting reservation cannot be spent on numeric jobs."},
+    {"id":"S7-restart-denial","assert":"Existing WINDOW-STARTED marker refuses before modifying any prior results."},
+    {"id":"S8-persistence-interruption","assert":"Partial/temp artifacts count at peak; old target+replacement coexistence reserved; no failure output disguised as completed block."},
+    {"id":"S9-hard-kill-evidence","assert":"Last durable checkpoint remains explicitly nonexact; captured current selector/input never fabricated from checkpoint."},
+    {"id":"S10-missing-gate","assert":"Failed/incomplete/missing correctness receipt prevents every benchmark child."}
+  ],
+  "receipt_mutation_fixtures":"test_receipt_rules.py; deterministic synthetic timing values, never represented as measurements",
+  "execution_release":false
+}
