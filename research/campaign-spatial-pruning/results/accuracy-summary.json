@@ -1,0 +1,78 @@
+{
+  "sourceHash": "1d9e1afcf9983b900034b7b586c4ffd02ec4b3242c467f8e684fbdda1850d562",
+  "rawFile": "accuracy-raw.jsonl.gz",
+  "scope": "same prescribed states; all four rotors; exact model-relative bounds; no physical validation",
+  "quick": false,
+  "config": {
+    "snapshot": "c591ce2b195fa01b895d4ba881a44a4b92fdd703",
+    "hypothesis": "Conservative accumulated weak-wake omission reduces matched field evaluation cost within numerical model-relative force and moment budgets",
+    "developmentSeeds": [
+      3301,
+      3302
+    ],
+    "heldoutSeeds": [
+      3391,
+      3392
+    ],
+    "families": [
+      "sparse",
+      "dense",
+      "tilted"
+    ],
+    "counts": [
+      16,
+      50,
+      100,
+      200
+    ],
+    "epsilonsMS": [
+      0.002,
+      0.01,
+      0.04
+    ],
+    "prescribedWindowSeconds": 1,
+    "fieldCadenceSeconds": 0.01,
+    "forceToleranceWeightFraction": 0.005,
+    "momentToleranceWeightArmFraction": 0.0075,
+    "physicalAccuracyClaim": false,
+    "maximumBenchmarkWallMinutes": 30,
+    "maximumArtifactBytes": 2147483648,
+    "timingRepetitions": 7,
+    "timingMinimumBatchMS": 50,
+    "closedLoop": {
+      "count": 16,
+      "duration": 1,
+      "seeds": [
+        3391,
+        3392
+      ],
+      "dt": 0.0025,
+      "controlDt": 0.01,
+      "aeroDt": 0.01,
+      "mode": "boids",
+      "filter": "wall-priority",
+      "epsilon": 0.04
+    }
+  },
+  "totals": {
+    "snapshots": 4848,
+    "receiverComparisons": 1330776,
+    "omittedPairs": 259032,
+    "maxReferenceError": 0,
+    "maxInflowError": 0.030855907349881306,
+    "maxForceError": 0.00034345891777037087,
+    "maxMomentError": 0.000006408601538176963
+  },
+  "force": {
+    "p95": 0.000009903000481314983,
+    "rms": 0.00002080701726988894
+  },
+  "moment": {
+    "p95": 3.0069033309870964e-7,
+    "rms": 4.3706983584154176e-7
+  },
+  "failures": [],
+  "wallSeconds": 109.90777164400001,
+  "passed": true,
+  "sourceUnchanged": true
+}

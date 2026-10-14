@@ -1,0 +1,308 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-13",
+  "scope": "Targeted seven-paper retrospective audit; not exhaustive prior-work or novelty verification. Original per-source verification details retained.",
+  "references": [
+    {
+      "audit_group": "physics",
+      "verified_date": "2026-10-13",
+      "verification_method": "Primary full text read; bibliographic metadata checked against Crossref DOI record; search snippets used only for discovery.",
+      "retrospective": true,
+      "id": "bauersfeld2025jet",
+      "title": "Robotics Meets Fluid Dynamics: A Characterization of the Induced Airflow Below a Quadrotor as a Turbulent Jet",
+      "authors": [
+        "Leonard Bauersfeld",
+        "Koen Muller",
+        "Dominic Ziegler",
+        "Filippo Coletti",
+        "Davide Scaramuzza"
+      ],
+      "year": 2025,
+      "venue": "IEEE Robotics and Automation Letters",
+      "volume": "10",
+      "issue": "2",
+      "pages": "1241-1248",
+      "doi": "10.1109/lra.2024.3518835",
+      "doi_url": "https://doi.org/10.1109/lra.2024.3518835",
+      "publication_status": "Published journal article; consulted author accepted-manuscript preprint",
+      "version_consulted": {
+        "arxiv": "2403.13321v3",
+        "version_date": "2024-12-12",
+        "full_text": "https://arxiv.org/html/2403.13321v3",
+        "pdf": "https://arxiv.org/pdf/2403.13321v3",
+        "version_note": "arXiv labels RA-L 2024; Crossref assigns the journal issue to February 2025. Cite 2025 for volume 10(2), 1241–1248; 2024 for this preprint version."
+      },
+      "attributions": [
+        {
+          "location": "III-B, Eq. (1); III-C–D, Eqs. (3)–(8); VI-B, Eq. (9); VI-C",
+          "url": "https://arxiv.org/html/2403.13321v3#S6",
+          "finding": "Merged mean axial profile, hover-velocity and motor-distance normalization, fitted decay/spread/origin parameters."
+        },
+        {
+          "location": "Fig. 2; IV-B, Table I; IV-C; V; VII-A, Eqs. (10)–(11)",
+          "url": "https://arxiv.org/html/2403.13321v3#S3.F2",
+          "finding": "Opposite-motor scale; hover/near-hover measurements; uncanted fit; far-field boundary; maintained-thrust ideal power compensation."
+        }
+      ],
+      "assumptions_and_limits": [
+        "Mean far field of predominantly hovering vehicles; does not establish swarm superposition or the repository receiver law.",
+        "Table I spans 230 g–6.3 kg; the 27 g repository vehicle is outside that measured mass range.",
+        "Rotated tilted wakes, finite support, four point receiver samples and fixed-power thrust conversion are repository adaptations, not validations from this paper."
+      ],
+      "correction_and_version_check": {
+        "sources": [
+          "https://arxiv.org/abs/2403.13321",
+          "https://api.crossref.org/works/10.1109/LRA.2024.3518835"
+        ],
+        "latest_version_observed": "v3, 2024-12-12",
+        "result": "No newer arXiv version or update relation in consulted records; title-plus-correction/erratum search found no correction. This is a bounded check, not proof of absence."
+      }
+    },
+    {
+      "audit_group": "physics",
+      "verified_date": "2026-10-13",
+      "verification_method": "Primary full text read; bibliographic metadata checked against Crossref DOI record; search snippets used only for discovery.",
+      "retrospective": true,
+      "id": "jain2019proximity",
+      "title": "Modeling of aerodynamic disturbances for proximity flight of multirotors",
+      "authors": [
+        "Karan P. Jain",
+        "Trey Fortmuller",
+        "Jaeseung Byun",
+        "Simo A. Makiharju",
+        "Mark W. Mueller"
+      ],
+      "year": 2019,
+      "venue": "2019 International Conference on Unmanned Aircraft Systems (ICUAS)",
+      "volume": null,
+      "issue": null,
+      "pages": "1261-1269",
+      "doi": "10.1109/icuas.2019.8798116",
+      "doi_url": "https://doi.org/10.1109/icuas.2019.8798116",
+      "publication_status": "Published conference paper; consulted institutional author PDF",
+      "version_consulted": {
+        "full_text": "https://hiperlab.berkeley.edu/wp-content/uploads/2019/05/Modeling_of_aerodynamic_disturbances_for_proximity_flight_of_multirotors.pdf",
+        "institutional_record": "https://escholarship.org/uc/item/43q2t9cv",
+        "version_note": "Nine-page institutional PDF, read through web PDF extraction. No explicit revision label; byte identity to publisher version not established."
+      },
+      "attributions": [
+        {
+          "location": "II-A–B, Eqs. (1)–(4)",
+          "url": "https://hiperlab.berkeley.edu/wp-content/uploads/2019/05/Modeling_of_aerodynamic_disturbances_for_proximity_flight_of_multirotors.pdf#page=2",
+          "finding": "Parameterized flow and airframe-drag contributions."
+        },
+        {
+          "location": "II-C, Eqs. (5)–(8); IV-C; IV-G, Fig. 8",
+          "url": "https://hiperlab.berkeley.edu/wp-content/uploads/2019/05/Modeling_of_aerodynamic_disturbances_for_proximity_flight_of_multirotors.pdf#page=3",
+          "finding": "Propeller-specific measured inflow/thrust response feeds summed forces and moments; validation includes substantial close-separation mismatch."
+        }
+      ],
+      "assumptions_and_limits": [
+        "Two vehicle types with fitted parameters, not a universal receiver conversion.",
+        "The response uses an experimentally fitted inflow and rotor-speed law; it is not the repository cubic.",
+        "IV-G reports disagreement at 0.5 m; matching larger separations cannot validate repository near-wake exclusion or its smaller vehicle."
+      ],
+      "correction_and_version_check": {
+        "sources": [
+          "https://api.crossref.org/works/10.1109/ICUAS.2019.8798116",
+          "https://escholarship.org/uc/item/43q2t9cv"
+        ],
+        "latest_version_observed": "Institutional 2019 paper, no explicit revision history",
+        "result": "No update relation in Crossref or correction located by title-plus-correction/erratum search. Publisher full-text access was not established; absence of corrections is not certified."
+      }
+    },
+    {
+      "audit_group": "physics",
+      "verified_date": "2026-10-13",
+      "verification_method": "Primary full text read; bibliographic metadata checked against Crossref DOI record; search snippets used only for discovery.",
+      "retrospective": true,
+      "id": "kiran2025downwash",
+      "title": "Influence of Static and Dynamic Downwash Interactions on Multi-Quadrotor Systems",
+      "authors": [
+        "Anoop Kiran",
+        "Nora Ayanian",
+        "Kenneth Breuer"
+      ],
+      "year": 2025,
+      "venue": "Robotics: Science and Systems XXI",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "doi": "10.15607/rss.2025.xxi.102",
+      "doi_url": "https://doi.org/10.15607/rss.2025.xxi.102",
+      "publication_status": "Published RSS XXI proceedings paper; consulted arXiv v1 full text",
+      "version_consulted": {
+        "arxiv": "2507.09463v1",
+        "version_date": "2025-07-13",
+        "full_text": "https://arxiv.org/html/2507.09463v1",
+        "pdf": "https://arxiv.org/pdf/2507.09463v1",
+        "proceedings": "https://www.roboticsproceedings.org/rss21/p102.html",
+        "version_note": "RSS proceedings title/authors/year/DOI verified. Full text consulted is arXiv v1; publisher PDF byte-equivalence not established."
+      },
+      "attributions": [
+        {
+          "location": "II-A; III-A, Figs. 3, 5–6",
+          "url": "https://arxiv.org/html/2507.09463v1#S2.SS1",
+          "finding": "Crazyflie load-cell measurements with 4 V/PWM operation; l = 32.5 mm has ambiguous prose. Figures and cross-paper conversion support projected half-side. See normalization correction."
+        },
+        {
+          "location": "III-B2, Eqs. (3)–(6), Table I; III-B3, Figs. 12–13; III-C, Figs. 15–16; V",
+          "url": "https://arxiv.org/html/2507.09463v1#S3.SS2.SSS2",
+          "finding": "Measured jet scaling, interacting-pair flow changes and approach/retreat-dependent forces/moments; homogeneous, traverse-limited experiments."
+        }
+      ],
+      "assumptions_and_limits": [
+        "Constant voltage is not constant rotor frequency or the repository constant induced-power assumption.",
+        "Length mapping must distinguish radial arm and projected half-side. Supported projected reading gives opposite-motor D = 2√2 l. The previous asserted radial-arm mapping is superseded.",
+        "III-A and IV use inconsistent percentage wording for thrust loss; no quantitative loss target is adopted here.",
+        "Related dataset DOI 10.26300/64d4-wa17 could not be accessed through the web tool; raw observations were not acquired or compared."
+      ],
+      "correction_and_version_check": {
+        "sources": [
+          "https://arxiv.org/abs/2507.09463",
+          "https://www.roboticsproceedings.org/rss21/p102.html",
+          "https://api.crossref.org/works/10.15607/RSS.2025.XXI.102"
+        ],
+        "latest_version_observed": "v1, 2025-07-13",
+        "result": "No newer arXiv version or correction/update relation in consulted records; title-plus-correction/erratum search found no correction. Internal wording discrepancy remains unresolved.",
+        "local_audit_amendment": "Cross-paper geometry interpretation corrected before experiment execution; this is not a publisher-issued correction."
+      },
+      "normalization_correction": "NORMALIZATION-CORRECTION-2026-10-13.md"
+    },
+    {
+      "audit_group": "methods",
+      "id": "reynolds1987",
+      "type": "paper-conference",
+      "title": "Flocks, Herds, and Schools: A Distributed Behavioral Model",
+      "authors": [
+        "Craig W. Reynolds"
+      ],
+      "year": 1987,
+      "venue": "Computer Graphics 21(4), SIGGRAPH '87 Conference Proceedings",
+      "pages": "25–34",
+      "doi": "10.1145/37401.37406",
+      "stable_url": "https://www.red3d.com/cwr/papers/1987/boids.html",
+      "full_text_url": "https://www.red3d.com/cwr/papers/1987/SIGGRAPH87.pdf",
+      "publication_status": "published peer-reviewed conference paper",
+      "version_consulted": "Author-hosted 13-page reflowed PDF without figures; cite PDF leaf numbers separately from original proceedings pagination.",
+      "primary_metadata_sources": [
+        "https://www.red3d.com/cwr/papers/1987/boids.html",
+        "https://doi.org/10.1145/37401.37406"
+      ],
+      "full_text_retrieved": true,
+      "abstract_only": false,
+      "verification_date": "2026-10-13",
+      "pre_campaign_use_verified": false,
+      "alternate_doi": "10.1145/37402.37406",
+      "metadata_note": "Conference DOI used; journal issue DOI is also indexed. Publisher search record and author page agree on publication identity. Direct DOI opening failed; no paywall bypass.",
+      "consulted_document": {
+        "sha256": "51d39235fc07ddeeb4dea0c7ad780a8c5785a7961982e52447da72a28fd103b0",
+        "bytes": 102978,
+        "redistribution_authorized": false,
+        "distributed": false
+      }
+    },
+    {
+      "audit_group": "methods",
+      "id": "teschner2003",
+      "type": "paper-conference",
+      "title": "Optimized Spatial Hashing for Collision Detection of Deformable Objects",
+      "authors": [
+        "Matthias Teschner",
+        "Bruno Heidelberger",
+        "Matthias Müller",
+        "Danat Pomeranets",
+        "Markus Gross"
+      ],
+      "year": 2003,
+      "venue": "Proceedings of Vision, Modeling, and Visualization 2003",
+      "pages": "47–54",
+      "doi": null,
+      "stable_url": "https://cgl.ethz.ch/publications/papers/papers.php",
+      "full_text_url": "https://cg.informatik.uni-freiburg.de/publications/2003_VMV_collisionDetectionHashing.pdf",
+      "publication_status": "published peer-reviewed conference paper",
+      "version_consulted": "Eight-page author/institution-hosted PDF; running page markers are malformed (666), so locations use 1-based PDF leaves.",
+      "primary_metadata_sources": [
+        "https://cgl.ethz.ch/publications/papers/papers.php",
+        "https://cg.informatik.uni-freiburg.de/publications/2003_VMV_collisionDetectionHashing.pdf"
+      ],
+      "full_text_retrieved": true,
+      "abstract_only": false,
+      "verification_date": "2026-10-13",
+      "pre_campaign_use_verified": false,
+      "metadata_note": "No DOI verified; retain a null value. Author PDF and ETH publication listing spell Pomeranets; do not silently replace it with the Pomerantes spelling in secondary indexes.",
+      "consulted_document": {
+        "sha256": "6c41abac9e0a61ef0819d224aac759316585836532ccf9497e298678ba102e4f",
+        "bytes": 467404,
+        "redistribution_authorized": false,
+        "distributed": false
+      }
+    },
+    {
+      "audit_group": "methods",
+      "id": "kalibera2013",
+      "type": "paper-conference",
+      "title": "Rigorous Benchmarking in Reasonable Time",
+      "authors": [
+        "Tomas Kalibera",
+        "Richard Jones"
+      ],
+      "year": 2013,
+      "venue": "Proceedings of the ACM SIGPLAN International Symposium on Memory Management (ISMM 2013)",
+      "pages": "63–74",
+      "doi": "10.1145/2464157.2464160",
+      "stable_url": "https://kar.kent.ac.uk/33611/",
+      "full_text_url": "https://kar.kent.ac.uk/33611/45/p63-kaliber.pdf",
+      "publication_status": "published peer-reviewed conference paper",
+      "version_consulted": "University of Kent Author's Accepted Manuscript, 12 PDF leaves including repository cover; source locations refer to those leaves.",
+      "primary_metadata_sources": [
+        "https://kar.kent.ac.uk/33611/",
+        "https://kar.kent.ac.uk/33611/45/p63-kaliber.pdf"
+      ],
+      "full_text_retrieved": true,
+      "abstract_only": false,
+      "verification_date": "2026-10-13",
+      "pre_campaign_use_verified": false,
+      "consulted_document": {
+        "sha256": "b50fb85079cbaea9524eb202393a60807dd3fc270d91eb80de5dba0faf02dbab",
+        "bytes": 484071,
+        "redistribution_authorized": false,
+        "distributed": false
+      }
+    },
+    {
+      "audit_group": "methods",
+      "id": "shewchuk1996",
+      "type": "paper-conference",
+      "title": "Robust Adaptive Floating-Point Geometric Predicates",
+      "authors": [
+        "Jonathan Richard Shewchuk"
+      ],
+      "year": 1996,
+      "venue": "Proceedings of the Twelfth Annual Symposium on Computational Geometry (SCG 1996)",
+      "pages": "141–150",
+      "doi": "10.1145/237218.237337",
+      "stable_url": "https://doi.org/10.1145/237218.237337",
+      "full_text_url": "https://people.eecs.berkeley.edu/~jrs/papers/robust-predicates.pdf",
+      "publication_status": "published peer-reviewed conference paper",
+      "version_consulted": "Ten-page author-hosted short conference paper; this omits proofs and predates the expanded 1997 journal version.",
+      "primary_metadata_sources": [
+        "https://www.cs.cmu.edu/~quake/robust.html",
+        "https://doi.org/10.1145/237218.237337",
+        "https://people.eecs.berkeley.edu/~jrs/papers/robust-predicates.pdf"
+      ],
+      "full_text_retrieved": true,
+      "abstract_only": false,
+      "verification_date": "2026-10-13",
+      "pre_campaign_use_verified": false,
+      "metadata_note": "Author manuscript and author website spell Jonathan; publisher record currently has Johnathan. Author spelling retained and discrepancy disclosed.",
+      "consulted_document": {
+        "sha256": "2e615f8f4479da5b2cfee772ad43143db95ac39c10b94ad14844d54bc1b04a14",
+        "bytes": 173851,
+        "redistribution_authorized": false,
+        "distributed": false
+      }
+    }
+  ],
+  "dataset_access_record": "physics/DATA-ACCESS.json"
+}

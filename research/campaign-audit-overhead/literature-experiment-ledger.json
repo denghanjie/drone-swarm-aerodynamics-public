@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0",
+  "ledger_id": "audit-exact-output-optimization-20261014",
+  "status": "implementation_and_static_review_unrun",
+  "plan": "PLAN.md",
+  "bibliography": "bibliography.json",
+  "candidate_id": "AUDIT-C1",
+  "rules": [
+    "No prospective ID is a completed experiment.",
+    "No new coupled trajectories and no old budget reset.",
+    "All implementation links and results must refer to actual verified artifacts.",
+    "Retain rejected/failed/incomplete cases; never replace them with a tuned retry."
+  ],
+  "entries": [
+    {
+      "prospective_id": "AUD-EQ-01",
+      "question": "Does winner-only allocation plus per-observation ordered distance caching preserve all exact audit outputs on the fixed corpus?",
+      "hypothesis": "H-EQ",
+      "source_ids": [
+        "CHILIMBI_HILL_LARUS_1999",
+        "BRUNI_2017_V8_PROPERTIES"
+      ],
+      "source_locations": [
+        "CHILIMBI_HILL_LARUS_1999: sections 1, 2.1, 3.1",
+        "BRUNI_2017_V8_PROPERTIES: HiddenClasses and DescriptorArrays; named properties"
+      ],
+      "source_role": "Design motivation only; the frozen source defines semantics.",
+      "inputs": [
+        "CORPUS-MANIFEST.json",
+        "PLAN.md sections 4\u20136"
+      ],
+      "acceptance": "Exact values, aliases/ties, exceptions, signatures, extrema, first/worst brackets and persisted bytes; no tolerance.",
+      "implementation_links": [],
+      "run_artifacts": [],
+      "outcomes": [],
+      "status": "prospective"
+    },
+    {
+      "prospective_id": "AUD-COST-01",
+      "question": "After exact correctness, does C1 provide a useful serial audit-replay saving on both fixed seeds?",
+      "hypothesis": "H-COST versus H-NULL",
+      "source_ids": [
+        "CHILIMBI_HILL_LARUS_1999",
+        "BRUNI_2017_V8_PROPERTIES"
+      ],
+      "source_role": "Neither source supplies a JS speedup guarantee or the acceptance threshold.",
+      "prerequisite": "AUD-EQ-01 completely passed within same bounded window",
+      "inputs": [
+        "W-ENDPOINT, seeds 840131 and 840137",
+        "W-STAGE-FIXTURE, deterministic synthetic API packets based on saved geometry"
+      ],
+      "measurements": [
+        "all paired wall/CPU ratios",
+        "full child job costs",
+        "max RSS",
+        "exact work and output digests"
+      ],
+      "acceptance": "PLAN.md section 8; 20% median primary wall reduction on each seed, 7/8 faster blocks, CPU corroboration, no stage-fixture material regression.",
+      "implementation_links": [],
+      "run_artifacts": [],
+      "outcomes": [],
+      "status": "prospective"
+    },
+    {
+      "prospective_id": "AUD-INTEGRATION-FUTURE-01",
+      "status": "conditional_future_separate_protocol",
+      "question": "Does C1 preserve the complete audit contract on actual full-window production joint stages?",
+      "prerequisite": "AUD-EQ-01 and AUD-COST-01 accepted; separate prospective freeze and release",
+      "source_ids": [],
+      "source_role": "Needed because retained saved corpus has no real stages; frozen numerical model/gates remain authoritative.",
+      "planned_trajectories": [
+        "seed 840131 J3 T=1 second",
+        "seed 840137 J3 T=1 second"
+      ],
+      "audit_mode": "Serial paired shadow audits on the identical real stage/endpoint inputs with immediate full exact-output comparison",
+      "budget": "Separate proposed 300 wall/300 CPU seconds, 100 seconds per shadowed job, 40 MB additional retention; not current-window permission",
+      "implementation_links": [],
+      "run_artifacts": [],
+      "outcomes": []
+    },
+    {
+      "prospective_id": "AUD-DISPLAY-01",
+      "status": "prospective_display_only",
+      "question": "Can the diagnostic outcome be inspected alongside actual retained local-Boids paths without implying a new flight experiment?",
+      "source_ids": [],
+      "inputs": [
+        "frozen existing Three.js renderer/vendor and actual-path records",
+        "actual AUD-EQ-01 and AUD-COST-01 receipts or terminal failure evidence"
+      ],
+      "deliverable": "Lightweight audit-comparison selector and exact record links in new isolated demo; old reference remains unqualified.",
+      "budget": "Separate 120 wall/120 CPU seconds after numerical terminal; within existing 16 MB study/200 MB combined retention caps. No overlap with benchmarks or packaging/uploads.",
+      "implementation_links": [],
+      "run_artifacts": [],
+      "outcomes": []
+    },
+    {
+      "prospective_id": "AUD-RESOURCE-01",
+      "question": "Does the serial supervisor retain and correctly account for live and reaped child resource usage under the prospective caps?",
+      "source_ids": [
+        "LINUX_GETRUSAGE_6_19",
+        "LINUX_PROC_PID_STAT_6_19",
+        "LINUX_WAIT4_6_19"
+      ],
+      "source_locations": {
+        "LINUX_GETRUSAGE_6_19": [
+          "DESCRIPTION: RUSAGE_SELF, RUSAGE_CHILDREN, ru_utime/ru_stime and ru_maxrss"
+        ],
+        "LINUX_PROC_PID_STAT_6_19": [
+          "DESCRIPTION: fields14\u201317,22and24"
+        ],
+        "LINUX_WAIT4_6_19": [
+          "DESCRIPTION: child selection and rusage; STANDARDS"
+        ]
+      },
+      "use": "Adapted documented operating-system accounting semantics, not reproduction of a research experiment.",
+      "implementation_paths": [
+        "robustness-review/supervise.py",
+        "robustness-review/validate_cost_receipts.py"
+      ],
+      "implementation_commits": [],
+      "experiment_ids": [],
+      "outcomes": [],
+      "status": "static_implementation_no_experiment",
+      "limitations": [
+        "Linux-specific runtime",
+        "Active /proc RSS is approximate",
+        "Resource tests and actual results remain unrun"
+      ]
+    }
+  ]
+}

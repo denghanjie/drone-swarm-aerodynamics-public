@@ -1,0 +1,46 @@
+{
+  "source": "Independent physics review: large-translation-v0.json",
+  "failed_source_sha256": "ff34626a3ba63a50195c17ecd63df2ef7aa50ef2bfa438b7519ca64f7b2ced6b",
+  "states": [
+    [
+      0,
+      300000000000000,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0.3826834323650898,
+      0.9238795325112867,
+      0,
+      0,
+      0,
+      0.0662175,
+      0.0662175,
+      0.0662175,
+      0.0662175
+    ],
+    [
+      0,
+      300000000000000.5,
+      2.495498637276162,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0.0662175,
+      0.0662175,
+      0.0662175,
+      0.0662175
+    ]
+  ],
+  "expected_new_behavior": "Explicit InputError because positions are outside abs(component)<=1e6 numerical domain",
+  "note": "This is API-range hardening; legacy has a positive interaction and is not required to reject."
+}

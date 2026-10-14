@@ -1,0 +1,2513 @@
+{
+  "utc": "2026-10-13T00:09:26.232Z",
+  "full": false,
+  "config": {
+    "source_commit": "c591ce2b195fa01b895d4ba881a44a4b92fdd703",
+    "campaign_head": "c024dfc27b9e6b7cd5b39132164d1339cb95b12f",
+    "development_seeds": [
+      628731,
+      628732
+    ],
+    "heldout_seeds": [
+      628791,
+      628792
+    ],
+    "order_seed": 7735201,
+    "sizes": [
+      16,
+      50,
+      100,
+      200
+    ],
+    "thresholds": {
+      "inflow_abs": 1e-12,
+      "force_abs": 1e-12,
+      "moment_xy_abs": 1e-13
+    },
+    "timing": {
+      "repeats": 9,
+      "warmup": 5,
+      "bootstrap_draws": 2000,
+      "saving_gate": 0.1,
+      "max_job_seconds": 60
+    },
+    "scope": "Independent finite-support software-model checks, not physical validation"
+  },
+  "sourceHashes": {
+    "legacy": "710b0a8f0df62208e3385ac9b8288240b379fe9248a1a645251a77c533f24a62",
+    "previous": "1d9e1afcf9983b900034b7b586c4ffd02ec4b3242c467f8e684fbdda1850d562",
+    "candidate": "ff34626a3ba63a50195c17ecd63df2ef7aa50ef2bfa438b7519ca64f7b2ced6b"
+  },
+  "finalHashes": {
+    "legacy": "710b0a8f0df62208e3385ac9b8288240b379fe9248a1a645251a77c533f24a62",
+    "previous": "1d9e1afcf9983b900034b7b586c4ffd02ec4b3242c467f8e684fbdda1850d562",
+    "candidate": "ff34626a3ba63a50195c17ecd63df2ef7aa50ef2bfa438b7519ca64f7b2ced6b"
+  },
+  "sourceStable": true,
+  "node": {
+    "redacted": "Machine/runtime observations withheld from public evidence; original records retained separately."
+  },
+  "rows": [
+    {
+      "id": "isolated",
+      "states": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0.0662175,
+          0.0662175,
+          0.0662175,
+          0.0662175
+        ]
+      ],
+      "tags": [
+        "zero"
+      ],
+      "oracle": {
+        "ok": true,
+        "value": {
+          "winds": [
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "maximumInflow": 0,
+          "contributions": 0,
+          "positiveInteractions": 0
+        }
+      },
+      "methods": {
+        "legacy": {
+          "ok": true,
+          "value": {
+            "winds": [
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 0,
+            "contributions": 0,
+            "candidates": 0
+          },
+          "comparison": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "againstLegacy": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "domainOutcome": "valid",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        },
+        "previous-zero": {
+          "ok": true,
+          "value": {
+            "winds": [
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "omittedBounds": [
+              0
+            ],
+            "maximumInflow": 0,
+            "candidates": 0,
+            "guardRotorChecks": 0,
+            "boundEvaluations": 0,
+            "exactZeroPairs": 0,
+            "omittedPairs": 0,
+            "retainedPairs": 0,
+            "evaluatedRotorKernels": 0,
+            "contributions": 0,
+            "counters": {
+              "candidates": 0,
+              "guardRotorChecks": 0,
+              "boundEvaluations": 0,
+              "exactZeroPairs": 0,
+              "omittedPairs": 0,
+              "retainedPairs": 0,
+              "evaluatedRotorKernels": 0,
+              "contributions": 0
+            }
+          },
+          "comparison": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "againstLegacy": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "domainOutcome": "valid",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        },
+        "lean": {
+          "ok": true,
+          "value": {
+            "winds": [
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 0,
+            "candidates": 0,
+            "guardRotorChecks": 0,
+            "supportTests": 0,
+            "exactZeroPairs": 0,
+            "evaluatedRotorKernels": 0,
+            "contributions": 0,
+            "counters": {
+              "candidates": 0,
+              "guardRotorChecks": 0,
+              "supportTests": 0,
+              "exactZeroPairs": 0,
+              "evaluatedRotorKernels": 0,
+              "contributions": 0
+            }
+          },
+          "comparison": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "againstLegacy": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "domainOutcome": "valid",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        },
+        "support": {
+          "ok": true,
+          "value": {
+            "winds": [
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 0,
+            "candidates": 0,
+            "guardRotorChecks": 0,
+            "supportTests": 0,
+            "exactZeroPairs": 0,
+            "evaluatedRotorKernels": 0,
+            "contributions": 0,
+            "counters": {
+              "candidates": 0,
+              "guardRotorChecks": 0,
+              "supportTests": 0,
+              "exactZeroPairs": 0,
+              "evaluatedRotorKernels": 0,
+              "contributions": 0
+            }
+          },
+          "comparison": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "againstLegacy": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "domainOutcome": "valid",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        },
+        "reuse": {
+          "ok": true,
+          "value": {
+            "winds": [
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 0,
+            "candidates": 0,
+            "guardRotorChecks": 0,
+            "supportTests": 0,
+            "exactZeroPairs": 0,
+            "evaluatedRotorKernels": 0,
+            "contributions": 0,
+            "counters": {
+              "candidates": 0,
+              "guardRotorChecks": 0,
+              "supportTests": 0,
+              "exactZeroPairs": 0,
+              "evaluatedRotorKernels": 0,
+              "contributions": 0
+            }
+          },
+          "comparison": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "againstLegacy": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "domainOutcome": "valid",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        }
+      }
+    },
+    {
+      "id": "centered",
+      "states": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0.0662175,
+          0.0662175,
+          0.0662175,
+          0.0662175
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0.0662175,
+          0.0662175,
+          0.0662175,
+          0.0662175
+        ]
+      ],
+      "tags": [
+        "pair"
+      ],
+      "oracle": {
+        "ok": true,
+        "value": {
+          "winds": [
+            [
+              1.9982768984164072,
+              1.9982768984164072,
+              1.9982768984164072,
+              1.9982768984164072
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "maximumInflow": 1.9982768984164072,
+          "contributions": 4,
+          "positiveInteractions": 4
+        }
+      },
+      "methods": {
+        "legacy": {
+          "ok": true,
+          "value": {
+            "winds": [
+              [
+                1.9982768984164072,
+                1.9982768984164072,
+                1.9982768984164072,
+                1.9982768984164072
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 1.9982768984164072,
+            "contributions": 4,
+            "candidates": 2
+          },
+          "comparison": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "againstLegacy": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "domainOutcome": "valid",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        },
+        "previous-zero": {
+          "ok": true,
+          "value": {
+            "winds": [
+              [
+                1.9982768984164072,
+                1.9982768984164072,
+                1.9982768984164072,
+                1.9982768984164072
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "omittedBounds": [
+              0,
+              0
+            ],
+            "maximumInflow": 1.9982768984164072,
+            "candidates": 2,
+            "guardRotorChecks": 0,
+            "boundEvaluations": 2,
+            "exactZeroPairs": 1,
+            "omittedPairs": 0,
+            "retainedPairs": 1,
+            "evaluatedRotorKernels": 4,
+            "contributions": 4,
+            "counters": {
+              "candidates": 2,
+              "guardRotorChecks": 0,
+              "boundEvaluations": 2,
+              "exactZeroPairs": 1,
+              "omittedPairs": 0,
+              "retainedPairs": 1,
+              "evaluatedRotorKernels": 4,
+              "contributions": 4
+            }
+          },
+          "comparison": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "againstLegacy": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "domainOutcome": "valid",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        },
+        "lean": {
+          "ok": true,
+          "value": {
+            "winds": [
+              [
+                1.9982768984164072,
+                1.9982768984164072,
+                1.9982768984164072,
+                1.9982768984164072
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 1.9982768984164072,
+            "candidates": 2,
+            "guardRotorChecks": 0,
+            "supportTests": 0,
+            "exactZeroPairs": 0,
+            "evaluatedRotorKernels": 4,
+            "contributions": 4,
+            "counters": {
+              "candidates": 2,
+              "guardRotorChecks": 0,
+              "supportTests": 0,
+              "exactZeroPairs": 0,
+              "evaluatedRotorKernels": 4,
+              "contributions": 4
+            }
+          },
+          "comparison": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "againstLegacy": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "domainOutcome": "valid",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        },
+        "support": {
+          "ok": true,
+          "value": {
+            "winds": [
+              [
+                1.9982768984164072,
+                1.9982768984164072,
+                1.9982768984164072,
+                1.9982768984164072
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 1.9982768984164072,
+            "candidates": 2,
+            "guardRotorChecks": 0,
+            "supportTests": 2,
+            "exactZeroPairs": 1,
+            "evaluatedRotorKernels": 4,
+            "contributions": 4,
+            "counters": {
+              "candidates": 2,
+              "guardRotorChecks": 0,
+              "supportTests": 2,
+              "exactZeroPairs": 1,
+              "evaluatedRotorKernels": 4,
+              "contributions": 4
+            }
+          },
+          "comparison": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "againstLegacy": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "domainOutcome": "valid",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        },
+        "reuse": {
+          "ok": true,
+          "value": {
+            "winds": [
+              [
+                1.9982768984164072,
+                1.9982768984164072,
+                1.9982768984164072,
+                1.9982768984164072
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 1.9982768984164072,
+            "candidates": 2,
+            "guardRotorChecks": 0,
+            "supportTests": 2,
+            "exactZeroPairs": 1,
+            "evaluatedRotorKernels": 4,
+            "contributions": 4,
+            "counters": {
+              "candidates": 2,
+              "guardRotorChecks": 0,
+              "supportTests": 2,
+              "exactZeroPairs": 1,
+              "evaluatedRotorKernels": 4,
+              "contributions": 4
+            }
+          },
+          "comparison": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "againstLegacy": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "domainOutcome": "valid",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        }
+      }
+    },
+    {
+      "id": "offset_asymmetric",
+      "states": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0.00662175,
+          0.052974,
+          0.0927045,
+          0.148989375
+        ],
+        [
+          0.24,
+          0.06,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0.0662175,
+          0.0662175,
+          0.0662175,
+          0.0662175
+        ]
+      ],
+      "tags": [
+        "pair",
+        "asymmetric-thrust"
+      ],
+      "oracle": {
+        "ok": true,
+        "value": {
+          "winds": [
+            [
+              0.34871391687850356,
+              0.1208435968531965,
+              0.0793660786040871,
+              0.2924358274577766
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "maximumInflow": 0.34871391687850356,
+          "contributions": 4,
+          "positiveInteractions": 4
+        }
+      },
+      "methods": {
+        "legacy": {
+          "ok": true,
+          "value": {
+            "winds": [
+              [
+                0.34871391687850356,
+                0.1208435968531965,
+                0.0793660786040871,
+                0.2924358274577766
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 0.34871391687850356,
+            "contributions": 4,
+            "candidates": 2
+          },
+          "comparison": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "againstLegacy": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "domainOutcome": "valid",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        },
+        "previous-zero": {
+          "ok": true,
+          "value": {
+            "winds": [
+              [
+                0.34871391687850356,
+                0.1208435968531965,
+                0.0793660786040871,
+                0.2924358274577766
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "omittedBounds": [
+              0,
+              0
+            ],
+            "maximumInflow": 0.34871391687850356,
+            "candidates": 2,
+            "guardRotorChecks": 0,
+            "boundEvaluations": 2,
+            "exactZeroPairs": 1,
+            "omittedPairs": 0,
+            "retainedPairs": 1,
+            "evaluatedRotorKernels": 4,
+            "contributions": 4,
+            "counters": {
+              "candidates": 2,
+              "guardRotorChecks": 0,
+              "boundEvaluations": 2,
+              "exactZeroPairs": 1,
+              "omittedPairs": 0,
+              "retainedPairs": 1,
+              "evaluatedRotorKernels": 4,
+              "contributions": 4
+            }
+          },
+          "comparison": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "againstLegacy": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "domainOutcome": "valid",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        },
+        "lean": {
+          "ok": true,
+          "value": {
+            "winds": [
+              [
+                0.34871391687850356,
+                0.1208435968531965,
+                0.0793660786040871,
+                0.2924358274577766
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 0.34871391687850356,
+            "candidates": 2,
+            "guardRotorChecks": 0,
+            "supportTests": 0,
+            "exactZeroPairs": 0,
+            "evaluatedRotorKernels": 4,
+            "contributions": 4,
+            "counters": {
+              "candidates": 2,
+              "guardRotorChecks": 0,
+              "supportTests": 0,
+              "exactZeroPairs": 0,
+              "evaluatedRotorKernels": 4,
+              "contributions": 4
+            }
+          },
+          "comparison": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "againstLegacy": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "domainOutcome": "valid",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        },
+        "support": {
+          "ok": true,
+          "value": {
+            "winds": [
+              [
+                0.34871391687850356,
+                0.1208435968531965,
+                0.0793660786040871,
+                0.2924358274577766
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 0.34871391687850356,
+            "candidates": 2,
+            "guardRotorChecks": 0,
+            "supportTests": 2,
+            "exactZeroPairs": 1,
+            "evaluatedRotorKernels": 4,
+            "contributions": 4,
+            "counters": {
+              "candidates": 2,
+              "guardRotorChecks": 0,
+              "supportTests": 2,
+              "exactZeroPairs": 1,
+              "evaluatedRotorKernels": 4,
+              "contributions": 4
+            }
+          },
+          "comparison": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "againstLegacy": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "domainOutcome": "valid",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        },
+        "reuse": {
+          "ok": true,
+          "value": {
+            "winds": [
+              [
+                0.34871391687850356,
+                0.1208435968531965,
+                0.0793660786040871,
+                0.2924358274577766
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 0.34871391687850356,
+            "candidates": 2,
+            "guardRotorChecks": 0,
+            "supportTests": 2,
+            "exactZeroPairs": 1,
+            "evaluatedRotorKernels": 4,
+            "contributions": 4,
+            "counters": {
+              "candidates": 2,
+              "guardRotorChecks": 0,
+              "supportTests": 2,
+              "exactZeroPairs": 1,
+              "evaluatedRotorKernels": 4,
+              "contributions": 4
+            }
+          },
+          "comparison": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "againstLegacy": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "domainOutcome": "valid",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        }
+      }
+    },
+    {
+      "id": "near_domain",
+      "states": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0.0662175,
+          0.0662175,
+          0.0662175,
+          0.0662175
+        ],
+        [
+          0.16,
+          0,
+          1.1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0.0662175,
+          0.0662175,
+          0.0662175,
+          0.0662175
+        ]
+      ],
+      "tags": [
+        "domain"
+      ],
+      "oracle": {
+        "ok": false,
+        "type": "Error",
+        "message": "near-field domain",
+        "detail": {
+          "receiver": 0,
+          "source": 1,
+          "downstream": 0.10000000000000009,
+          "radial": 0.13493702234746402
+        }
+      },
+      "methods": {
+        "legacy": {
+          "ok": false,
+          "type": "DomainError",
+          "message": "Receiver enters unmodeled near wake",
+          "detail": {
+            "receiver": 0,
+            "source": 1,
+            "downstream": 0.10000000000000009,
+            "radial": 0.13493702234746402
+          },
+          "comparison": null,
+          "againstLegacy": null,
+          "domainOutcome": "near-domain",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        },
+        "previous-zero": {
+          "ok": false,
+          "type": "DomainError",
+          "message": "Receiver enters unmodeled near wake",
+          "detail": {
+            "receiver": 0,
+            "source": 1,
+            "downstream": 0.10000000000000009,
+            "radial": 0.13493702234746402
+          },
+          "comparison": null,
+          "againstLegacy": null,
+          "domainOutcome": "near-domain",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        },
+        "lean": {
+          "ok": false,
+          "type": "DomainError",
+          "message": "Receiver enters unmodeled near wake",
+          "detail": {
+            "receiver": 0,
+            "source": 1,
+            "downstream": 0.10000000000000009,
+            "radial": 0.13493702234746402
+          },
+          "comparison": null,
+          "againstLegacy": null,
+          "domainOutcome": "near-domain",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        },
+        "support": {
+          "ok": false,
+          "type": "DomainError",
+          "message": "Receiver enters unmodeled near wake",
+          "detail": {
+            "receiver": 0,
+            "source": 1,
+            "downstream": 0.10000000000000009,
+            "radial": 0.13493702234746402
+          },
+          "comparison": null,
+          "againstLegacy": null,
+          "domainOutcome": "near-domain",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        },
+        "reuse": {
+          "ok": false,
+          "type": "DomainError",
+          "message": "Receiver enters unmodeled near wake",
+          "detail": {
+            "receiver": 0,
+            "source": 1,
+            "downstream": 0.10000000000000009,
+            "radial": 0.13493702234746402
+          },
+          "comparison": null,
+          "againstLegacy": null,
+          "domainOutcome": "near-domain",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        }
+      }
+    },
+    {
+      "id": "coincident_same_plane",
+      "states": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0.0662175,
+          0.0662175,
+          0.0662175,
+          0.0662175
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0.0662175,
+          0.0662175,
+          0.0662175,
+          0.0662175
+        ]
+      ],
+      "tags": [
+        "zero",
+        "overlap-model-stress"
+      ],
+      "oracle": {
+        "ok": true,
+        "value": {
+          "winds": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "maximumInflow": 0,
+          "contributions": 0,
+          "positiveInteractions": 0
+        }
+      },
+      "methods": {
+        "legacy": {
+          "ok": true,
+          "value": {
+            "winds": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 0,
+            "contributions": 0,
+            "candidates": 2
+          },
+          "comparison": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "againstLegacy": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "domainOutcome": "valid",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        },
+        "previous-zero": {
+          "ok": true,
+          "value": {
+            "winds": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "omittedBounds": [
+              0,
+              0
+            ],
+            "maximumInflow": 0,
+            "candidates": 2,
+            "guardRotorChecks": 8,
+            "boundEvaluations": 2,
+            "exactZeroPairs": 2,
+            "omittedPairs": 0,
+            "retainedPairs": 0,
+            "evaluatedRotorKernels": 0,
+            "contributions": 0,
+            "counters": {
+              "candidates": 2,
+              "guardRotorChecks": 8,
+              "boundEvaluations": 2,
+              "exactZeroPairs": 2,
+              "omittedPairs": 0,
+              "retainedPairs": 0,
+              "evaluatedRotorKernels": 0,
+              "contributions": 0
+            }
+          },
+          "comparison": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "againstLegacy": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "domainOutcome": "valid",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        },
+        "lean": {
+          "ok": true,
+          "value": {
+            "winds": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 0,
+            "candidates": 2,
+            "guardRotorChecks": 0,
+            "supportTests": 0,
+            "exactZeroPairs": 0,
+            "evaluatedRotorKernels": 0,
+            "contributions": 0,
+            "counters": {
+              "candidates": 2,
+              "guardRotorChecks": 0,
+              "supportTests": 0,
+              "exactZeroPairs": 0,
+              "evaluatedRotorKernels": 0,
+              "contributions": 0
+            }
+          },
+          "comparison": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "againstLegacy": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "domainOutcome": "valid",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        },
+        "support": {
+          "ok": true,
+          "value": {
+            "winds": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 0,
+            "candidates": 2,
+            "guardRotorChecks": 0,
+            "supportTests": 2,
+            "exactZeroPairs": 2,
+            "evaluatedRotorKernels": 0,
+            "contributions": 0,
+            "counters": {
+              "candidates": 2,
+              "guardRotorChecks": 0,
+              "supportTests": 2,
+              "exactZeroPairs": 2,
+              "evaluatedRotorKernels": 0,
+              "contributions": 0
+            }
+          },
+          "comparison": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "againstLegacy": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "domainOutcome": "valid",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        },
+        "reuse": {
+          "ok": true,
+          "value": {
+            "winds": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 0,
+            "candidates": 2,
+            "guardRotorChecks": 0,
+            "supportTests": 2,
+            "exactZeroPairs": 2,
+            "evaluatedRotorKernels": 0,
+            "contributions": 0,
+            "counters": {
+              "candidates": 2,
+              "guardRotorChecks": 0,
+              "supportTests": 2,
+              "exactZeroPairs": 2,
+              "evaluatedRotorKernels": 0,
+              "contributions": 0
+            }
+          },
+          "comparison": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "againstLegacy": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "domainOutcome": "valid",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        }
+      }
+    },
+    {
+      "id": "tilt_19.999999",
+      "states": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0.0662175,
+          0.0662175,
+          0.0662175,
+          0.0662175
+        ],
+        [
+          0.27314941851313806,
+          0.20583285060379833,
+          1.9396926267552859,
+          0,
+          0,
+          0,
+          -0.05509937262303764,
+          0.16467466641504006,
+          0.31248408617544227,
+          0.9339164894489987,
+          0,
+          0,
+          0,
+          0.0662175,
+          0.0662175,
+          0.0662175,
+          0.0662175
+        ]
+      ],
+      "tags": [
+        "tilt"
+      ],
+      "oracle": {
+        "ok": true,
+        "value": {
+          "winds": [
+            [
+              1.9136274828194033,
+              1.8762392261119827,
+              1.8848652951257372,
+              1.8801341122997923
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "maximumInflow": 1.9136274828194033,
+          "contributions": 4,
+          "positiveInteractions": 4
+        }
+      },
+      "methods": {
+        "legacy": {
+          "ok": true,
+          "value": {
+            "winds": [
+              [
+                1.9136274828194033,
+                1.8762392261119827,
+                1.8848652951257372,
+                1.8801341122997923
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 1.9136274828194033,
+            "contributions": 4,
+            "candidates": 2
+          },
+          "comparison": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "againstLegacy": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "domainOutcome": "valid",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        },
+        "previous-zero": {
+          "ok": true,
+          "value": {
+            "winds": [
+              [
+                1.9136274828194033,
+                1.8762392261119827,
+                1.8848652951257372,
+                1.8801341122997923
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "omittedBounds": [
+              0,
+              0
+            ],
+            "maximumInflow": 1.9136274828194033,
+            "candidates": 2,
+            "guardRotorChecks": 0,
+            "boundEvaluations": 2,
+            "exactZeroPairs": 1,
+            "omittedPairs": 0,
+            "retainedPairs": 1,
+            "evaluatedRotorKernels": 4,
+            "contributions": 4,
+            "counters": {
+              "candidates": 2,
+              "guardRotorChecks": 0,
+              "boundEvaluations": 2,
+              "exactZeroPairs": 1,
+              "omittedPairs": 0,
+              "retainedPairs": 1,
+              "evaluatedRotorKernels": 4,
+              "contributions": 4
+            }
+          },
+          "comparison": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "againstLegacy": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "domainOutcome": "valid",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        },
+        "lean": {
+          "ok": true,
+          "value": {
+            "winds": [
+              [
+                1.9136274828194033,
+                1.8762392261119827,
+                1.8848652951257372,
+                1.8801341122997923
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 1.9136274828194033,
+            "candidates": 2,
+            "guardRotorChecks": 0,
+            "supportTests": 0,
+            "exactZeroPairs": 0,
+            "evaluatedRotorKernels": 4,
+            "contributions": 4,
+            "counters": {
+              "candidates": 2,
+              "guardRotorChecks": 0,
+              "supportTests": 0,
+              "exactZeroPairs": 0,
+              "evaluatedRotorKernels": 4,
+              "contributions": 4
+            }
+          },
+          "comparison": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "againstLegacy": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "domainOutcome": "valid",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        },
+        "support": {
+          "ok": true,
+          "value": {
+            "winds": [
+              [
+                1.9136274828194033,
+                1.8762392261119827,
+                1.8848652951257372,
+                1.8801341122997923
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 1.9136274828194033,
+            "candidates": 2,
+            "guardRotorChecks": 0,
+            "supportTests": 2,
+            "exactZeroPairs": 1,
+            "evaluatedRotorKernels": 4,
+            "contributions": 4,
+            "counters": {
+              "candidates": 2,
+              "guardRotorChecks": 0,
+              "supportTests": 2,
+              "exactZeroPairs": 1,
+              "evaluatedRotorKernels": 4,
+              "contributions": 4
+            }
+          },
+          "comparison": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "againstLegacy": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "domainOutcome": "valid",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        },
+        "reuse": {
+          "ok": true,
+          "value": {
+            "winds": [
+              [
+                1.9136274828194033,
+                1.8762392261119827,
+                1.8848652951257372,
+                1.8801341122997923
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 1.9136274828194033,
+            "candidates": 2,
+            "guardRotorChecks": 0,
+            "supportTests": 2,
+            "exactZeroPairs": 1,
+            "evaluatedRotorKernels": 4,
+            "contributions": 4,
+            "counters": {
+              "candidates": 2,
+              "guardRotorChecks": 0,
+              "supportTests": 2,
+              "exactZeroPairs": 1,
+              "evaluatedRotorKernels": 4,
+              "contributions": 4
+            }
+          },
+          "comparison": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "againstLegacy": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "domainOutcome": "valid",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        }
+      }
+    },
+    {
+      "id": "tilt_20",
+      "states": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0.0662175,
+          0.0662175,
+          0.0662175,
+          0.0662175
+        ],
+        [
+          0.27314943161134364,
+          0.20583286047400418,
+          1.9396926207859084,
+          0,
+          0,
+          0,
+          -0.05509937534997572,
+          0.16467467456499887,
+          0.3124840856946095,
+          0.933916488011941,
+          0,
+          0,
+          0,
+          0.0662175,
+          0.0662175,
+          0.0662175,
+          0.0662175
+        ]
+      ],
+      "tags": [
+        "tilt"
+      ],
+      "oracle": {
+        "ok": true,
+        "value": {
+          "winds": [
+            [
+              1.9136274734831809,
+              1.876239214140032,
+              1.8848652844889295,
+              1.8801341004901504
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "maximumInflow": 1.9136274734831809,
+          "contributions": 4,
+          "positiveInteractions": 4
+        }
+      },
+      "methods": {
+        "legacy": {
+          "ok": true,
+          "value": {
+            "winds": [
+              [
+                1.9136274734831809,
+                1.876239214140032,
+                1.8848652844889295,
+                1.8801341004901504
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 1.9136274734831809,
+            "contributions": 4,
+            "candidates": 2
+          },
+          "comparison": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "againstLegacy": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "domainOutcome": "valid",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        },
+        "previous-zero": {
+          "ok": true,
+          "value": {
+            "winds": [
+              [
+                1.9136274734831809,
+                1.876239214140032,
+                1.8848652844889295,
+                1.8801341004901504
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "omittedBounds": [
+              0,
+              0
+            ],
+            "maximumInflow": 1.9136274734831809,
+            "candidates": 2,
+            "guardRotorChecks": 0,
+            "boundEvaluations": 2,
+            "exactZeroPairs": 1,
+            "omittedPairs": 0,
+            "retainedPairs": 1,
+            "evaluatedRotorKernels": 4,
+            "contributions": 4,
+            "counters": {
+              "candidates": 2,
+              "guardRotorChecks": 0,
+              "boundEvaluations": 2,
+              "exactZeroPairs": 1,
+              "omittedPairs": 0,
+              "retainedPairs": 1,
+              "evaluatedRotorKernels": 4,
+              "contributions": 4
+            }
+          },
+          "comparison": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "againstLegacy": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "domainOutcome": "valid",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        },
+        "lean": {
+          "ok": true,
+          "value": {
+            "winds": [
+              [
+                1.9136274734831809,
+                1.876239214140032,
+                1.8848652844889295,
+                1.8801341004901504
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 1.9136274734831809,
+            "candidates": 2,
+            "guardRotorChecks": 0,
+            "supportTests": 0,
+            "exactZeroPairs": 0,
+            "evaluatedRotorKernels": 4,
+            "contributions": 4,
+            "counters": {
+              "candidates": 2,
+              "guardRotorChecks": 0,
+              "supportTests": 0,
+              "exactZeroPairs": 0,
+              "evaluatedRotorKernels": 4,
+              "contributions": 4
+            }
+          },
+          "comparison": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "againstLegacy": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "domainOutcome": "valid",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        },
+        "support": {
+          "ok": true,
+          "value": {
+            "winds": [
+              [
+                1.9136274734831809,
+                1.876239214140032,
+                1.8848652844889295,
+                1.8801341004901504
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 1.9136274734831809,
+            "candidates": 2,
+            "guardRotorChecks": 0,
+            "supportTests": 2,
+            "exactZeroPairs": 1,
+            "evaluatedRotorKernels": 4,
+            "contributions": 4,
+            "counters": {
+              "candidates": 2,
+              "guardRotorChecks": 0,
+              "supportTests": 2,
+              "exactZeroPairs": 1,
+              "evaluatedRotorKernels": 4,
+              "contributions": 4
+            }
+          },
+          "comparison": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "againstLegacy": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "domainOutcome": "valid",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        },
+        "reuse": {
+          "ok": true,
+          "value": {
+            "winds": [
+              [
+                1.9136274734831809,
+                1.876239214140032,
+                1.8848652844889295,
+                1.8801341004901504
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 1.9136274734831809,
+            "candidates": 2,
+            "guardRotorChecks": 0,
+            "supportTests": 2,
+            "exactZeroPairs": 1,
+            "evaluatedRotorKernels": 4,
+            "contributions": 4,
+            "counters": {
+              "candidates": 2,
+              "guardRotorChecks": 0,
+              "supportTests": 2,
+              "exactZeroPairs": 1,
+              "evaluatedRotorKernels": 4,
+              "contributions": 4
+            }
+          },
+          "comparison": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "againstLegacy": {
+            "pass": true,
+            "shapeFinite": true,
+            "fieldMax": 0,
+            "fieldRMS": 0,
+            "forceMax": 0,
+            "momentXYMax": 0,
+            "bitwise": true,
+            "positivePreserved": true
+          },
+          "domainOutcome": "valid",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        }
+      }
+    },
+    {
+      "id": "tilt_20.000001",
+      "states": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0.0662175,
+          0.0662175,
+          0.0662175,
+          0.0662175
+        ],
+        [
+          0.27314944470954916,
+          0.20583287034421,
+          1.9396926148165305,
+          0,
+          0,
+          0,
+          -0.055099378076913806,
+          0.16467468271495772,
+          0.3124840852137768,
+          0.9339164865748835,
+          0,
+          0,
+          0,
+          0.0662175,
+          0.0662175,
+          0.0662175,
+          0.0662175
+        ]
+      ],
+      "tags": [
+        "tilt"
+      ],
+      "oracle": {
+        "ok": false,
+        "type": "Error",
+        "message": "tilt domain",
+        "detail": {
+          "drone": 1
+        }
+      },
+      "methods": {
+        "legacy": {
+          "ok": false,
+          "type": "DomainError",
+          "message": "Source/receiver tilt exceeds exploratory20-degree limit",
+          "detail": {
+            "drone": 1,
+            "axis": [
+              0.27314944470954916,
+              0.20583287034421,
+              0.9396926148165307
+            ]
+          },
+          "comparison": null,
+          "againstLegacy": null,
+          "domainOutcome": "tilt-domain",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        },
+        "previous-zero": {
+          "ok": false,
+          "type": "DomainError",
+          "message": "Source/receiver tilt exceeds exploratory20-degree limit",
+          "detail": {
+            "drone": 1,
+            "axis": [
+              0.27314944470954916,
+              0.20583287034421,
+              0.9396926148165307
+            ]
+          },
+          "comparison": null,
+          "againstLegacy": null,
+          "domainOutcome": "tilt-domain",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        },
+        "lean": {
+          "ok": false,
+          "type": "DomainError",
+          "message": "Source/receiver tilt exceeds exploratory20-degree limit",
+          "detail": {
+            "drone": 1,
+            "axis": [
+              0.27314944470954916,
+              0.20583287034421,
+              0.9396926148165307
+            ]
+          },
+          "comparison": null,
+          "againstLegacy": null,
+          "domainOutcome": "tilt-domain",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        },
+        "support": {
+          "ok": false,
+          "type": "DomainError",
+          "message": "Source/receiver tilt exceeds exploratory20-degree limit",
+          "detail": {
+            "drone": 1,
+            "axis": [
+              0.27314944470954916,
+              0.20583287034421,
+              0.9396926148165307
+            ]
+          },
+          "comparison": null,
+          "againstLegacy": null,
+          "domainOutcome": "tilt-domain",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        },
+        "reuse": {
+          "ok": false,
+          "type": "DomainError",
+          "message": "Source/receiver tilt exceeds exploratory20-degree limit",
+          "detail": {
+            "drone": 1,
+            "axis": [
+              0.27314944470954916,
+              0.20583287034421,
+              0.9396926148165307
+            ]
+          },
+          "comparison": null,
+          "againstLegacy": null,
+          "domainOutcome": "tilt-domain",
+          "domainMatch": true,
+          "inputsUnchanged": true
+        }
+      }
+    }
+  ],
+  "metamorphics": [],
+  "ownership": [],
+  "exportedLoads": [
+    {
+      "state": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -0.07486674818404881,
+        0.10692079719031314,
+        0.568669410425347,
+        0.8121440849941729,
+        0,
+        0,
+        0,
+        0.00662175,
+        0.052974,
+        0.0927045,
+        0.148989375
+      ],
+      "winds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "maximumDifference": 0,
+      "pass": true
+    },
+    {
+      "state": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -0.07486674818404881,
+        0.10692079719031314,
+        0.568669410425347,
+        0.8121440849941729,
+        0,
+        0,
+        0,
+        0.00662175,
+        0.052974,
+        0.0927045,
+        0.148989375
+      ],
+      "winds": [
+        0.001,
+        0.1,
+        1,
+        10
+      ],
+      "maximumDifference": 0,
+      "pass": true
+    },
+    {
+      "state": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "winds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "maximumDifference": 0,
+      "pass": true
+    },
+    {
+      "state": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "winds": [
+        0.001,
+        0.1,
+        1,
+        10
+      ],
+      "maximumDifference": 0,
+      "pass": true
+    }
+  ],
+  "malformedAPI": [],
+  "failures": [],
+  "pass": true,
+  "scope": "Untimed functional evidence. Malformed API behavior is separate and does not imply physical non-equivalence."
+}

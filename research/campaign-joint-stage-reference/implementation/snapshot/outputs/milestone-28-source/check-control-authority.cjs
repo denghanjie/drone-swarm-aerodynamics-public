@@ -1,0 +1,7 @@
+'use strict';
+// Algebraic diagnostic of the frozen command interface, not a new flight trial.
+const F=require('../step02c-source/physics.cjs'),S=require('./sim.cjs'),fs=require('fs'),path=require('path'),assert=require('assert/strict');
+const state=[0,0,4,0,0,0,0,0,0,1,0,0,0,...Array(4).fill(F.P.m*F.P.g/4)];
+const rows=[0,S.P.maxSpeed].map(vzCommand=>{const c=F.control(state,{vx:0,vy:0,z:state[2]+(2.5*vzCommand+1.5*state[5])/6,yaw:0},2.25),ratio=F.wrench(c.u).T/(F.P.m*F.P.g),expected=(F.P.g+2.5*vzCommand)/F.P.g;assert(Math.abs(ratio-expected)<1e-12);return {vzCommand,nominalVerticalThrustWeight:ratio,saturated:c.saturated};});
+const threshold=1/rows[1].nominalVerticalThrustWeight;
+const out={scope:'Frozen controller algebra at level attitude and zero actual velocity. No flight simulation, physical validation or constant-retention assumption imposed on mission data.',rows,maximumCommandedSpeed:S.P.maxSpeed,minimumConstantLiftRetentionForSteadyLevelHoverUnderThisInterface:threshold,interpretation:'For hypothetical constant fractional effective-lift retention eta below this threshold, no bounded desired vertical velocity can command enough nominal thrust for steady level hover at zero actual velocity. Transients and the full variable inflow dynamics are different. The wider route feedback can change desired velocity but remains subject to this bound. Nominal modeled motor authority is a separate constraint.'};fs.writeFileSync(path.join(__dirname,'../milestone-28-control-authority.json'),JSON.stringify(out,null,2));console.log(JSON.stringify(out));

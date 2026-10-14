@@ -1,0 +1,120 @@
+'use strict';
+// Exact implementation study of an unvalidated finite-support mean-wake model.
+// No positive in-model contribution may be removed. Outputs are caller-owned.
+const {source}=require('./source.cjs');
+const A=source('outputs/milestone-28-source/aero.cjs');
+const F=source('outputs/step02c-source/physics.cjs');
+const W=source('outputs/step03a-source/wake.cjs');
+const {Grid}=source('outputs/milestone-26-source/grid.cjs');
+const P=A.P,rotorOffset=Math.SQRT2*F.P.a;
+const area=Math.PI*P.rotorRadius**2;
+const induced=Math.sqrt(F.P.m*F.P.g/(2*P.rho*area*4));
+const farStart=W.parameters.minDownstream*P.motorDistance;
+const tiltCosine=Math.cos(P.maxTiltDegrees*Math.PI/180);
+// Accepted quaternion norm differs from 1 by <=1e-10. This inflated rotor
+// envelope covers that deviation and roundoff; it only reduces zero culling.
+const R=rotorOffset*(1+1e-8)+1e-10;
+const nearEnvelope=Math.hypot(farStart,P.nearFieldRadius)+R+1e-10;
+const profileConstant=Math.sqrt(2)-1;
+const variants=['lean','support','reuse'];
+class InputError extends Error {}
+function fade(a,b,x){const t=Math.max(0,Math.min(1,(x-a)/(b-a)));return 1-t*t*(3-2*t);}
+function rotateInto(qx,qy,qz,qw,x,y,z,out,k){
+  // Preserve F.rotate's component operation order, without temporary vectors.
+  const tx=(qy*z-qz*y)*2,ty=(qz*x-qx*z)*2,tz=(qx*y-qy*x)*2;
+  out[k]=x+(tx*qw+(qy*tz-qz*ty));
+  out[k+1]=y+(ty*qw+(qz*tx-qx*tz));
+  out[k+2]=z+(tz*qw+(qx*ty-qy*tx));
+}
+function prepare(states,scratch=null){
+  if(!Array.isArray(states)||!states.length)throw new InputError('Nonempty state array required');
+  const n=states.length;
+  const axes=scratch?(scratch.axes.length>=3*n?scratch.axes:(scratch.axes=new Float64Array(3*n))):new Float64Array(3*n);
+  const points=scratch?(scratch.points.length>=12*n?scratch.points:(scratch.points=new Float64Array(12*n))):new Float64Array(12*n);
+  for(let i=0;i<n;i++){
+    const s=states[i];
+    if(!Array.isArray(s)||s.length!==17||!s.every(Number.isFinite))throw new InputError('Every state must have 17 finite entries');
+    const qx=s[6],qy=s[7],qz=s[8],qw=s[9];
+    if(Math.abs(Math.hypot(qx,qy,qz,qw)-1)>1e-10)throw new InputError('Unit quaternion required');
+    rotateInto(qx,qy,qz,qw,0,0,1,axes,3*i);
+    if(axes[3*i+2]<tiltCosine)throw new A.DomainError('Source/receiver tilt exceeds exploratory20-degree limit',{drone:i,axis:Array.from(axes.subarray(3*i,3*i+3))});
+    for(let r=0;r<4;r++){
+      const k=12*i+3*r;
+      rotateInto(qx,qy,qz,qw,F.rotors[r][0],F.rotors[r][1],0,points,k);
+      points[k]+=s[0];points[k+1]+=s[1];points[k+2]+=s[2];
+    }
+  }
+  return {axes,points};
+}
+function zeroSupport(receiver,source,ax,ay,az){
+  const x=source[0]-receiver[0],y=source[1]-receiver[1],z=source[2]-receiver[2];
+  const down=((0+x*ax)+y*ay)+z*az;
+  const radial=Math.hypot(x-down*ax,y-down*ay,z-down*az);
+  // Account for tiny accepted axis-norm deviations conservatively. The radial
+  // projection I-aa^T has operator norm <=1+1e-8 in this input domain.
+  const axisNorm=Math.hypot(ax,ay,az),axialR=R*axisNorm+1e-10,radialR=R*(1+1e-8)+1e-10;
+  const low=down-axialR,high=down+axialR;
+  if(high<farStart||low>=P.downstreamCutoff)return true;
+  const halfmax=W.parameters.spread*(Math.min(P.downstreamCutoff,high)/P.motorDistance-W.parameters.origin)*P.motorDistance;
+  return Math.max(0,radial-radialR)>=P.radialCutoff*halfmax+1e-10;
+}
+function evaluate(states,variant,scratch){
+  const {axes,points}=prepare(states,scratch),n=states.length;
+  const grid=new Grid(states,1.5),winds=Array.from({length:n},()=>[0,0,0,0]);
+  const counters={candidates:0,guardRotorChecks:0,supportTests:0,exactZeroPairs:0,evaluatedRotorKernels:0,contributions:0};
+  let maximumInflow=0;
+  for(let i=0;i<n;i++){
+    const ids=grid.neighbors(i,P.neighborRadius),receiver=states[i];counters.candidates+=ids.length;
+    let flags=null;
+    if(variant!=='lean'){
+      flags=scratch?(scratch.flags.length>=ids.length?scratch.flags:(scratch.flags=new Uint8Array(ids.length))):new Uint8Array(ids.length);
+      for(let k=0;k<ids.length;k++){
+        const j=ids[k],s=states[j],a=3*j;counters.supportTests++;
+        const zero=zeroSupport(receiver,s,axes[a],axes[a+1],axes[a+2]);
+        // Flag 1: exact-zero support, guard still needed. Flag 2: exact-zero
+        // and conservatively outside near-domain envelope, so safe to skip.
+        flags[k]=zero?(Math.hypot(s[0]-receiver[0],s[1]-receiver[1],s[2]-receiver[2])>nearEnvelope?2:1):0;
+        if(zero)counters.exactZeroPairs++;
+      }
+    }
+    // Rotor-major traversal keeps first-error ordering and each rotor's source
+    // summation identical to legacy, including near-wake boundary behavior.
+    for(let r=0;r<4;r++){
+      const p=12*i+3*r;let total=0;
+      for(let k=0;k<ids.length;k++){
+        if(flags&&flags[k]===2)continue;
+        const j=ids[k],s=states[j],a=3*j,ax=axes[a],ay=axes[a+1],az=axes[a+2];
+        const x=s[0]-points[p],y=s[1]-points[p+1],z=s[2]-points[p+2];
+        const down=((0+x*ax)+y*ay)+z*az;
+        if(down<=0||down>=P.downstreamCutoff)continue;
+        const radial=Math.hypot(x-down*ax,y-down*ay,z-down*az);
+        if(down<farStart){counters.guardRotorChecks++;if(radial<P.nearFieldRadius)throw new A.DomainError('Receiver enters unmodeled near wake',{receiver:i,source:j,downstream:down,radial});continue;}
+        if(flags&&flags[k]===1)continue;
+        const normalizedDown=down/P.motorDistance,distance=normalizedDown-W.parameters.origin;
+        const half=W.parameters.spread*distance*P.motorDistance;
+        if(radial>=P.radialCutoff*half)continue;
+        const cosine=Math.max(0,((0+axes[3*i]*ax)+axes[3*i+1]*ay)+axes[3*i+2]*az);
+        const xi=(radial/P.motorDistance)/(W.parameters.spread*distance);
+        const speed=(W.parameters.decay/distance)/(1+profileConstant*xi*xi)**2;
+        const wake=speed*induced*fade(P.downstreamFade,P.downstreamCutoff,down)*fade(P.radialFade,P.radialCutoff,radial/half)*cosine;
+        total+=wake;counters.evaluatedRotorKernels++;counters.contributions++;
+      }
+      winds[i][r]=total;maximumInflow=Math.max(maximumInflow,total);
+    }
+  }
+  return {winds,maximumInflow,...counters,counters};
+}
+function createEvaluator({variant='reuse'}={}){
+  if(!variants.includes(variant))throw new InputError('Unknown exact variant');
+  const scratch=variant==='reuse'?{axes:new Float64Array(0),points:new Float64Array(0),flags:new Uint8Array(0)}:null;
+  return states=>evaluate(states,variant,scratch);
+}
+function fields(states,{variant='support'}={}){return createEvaluator({variant})(states);}
+function loads(state,winds){
+  const nominal=state.slice(13,17);
+  if(nominal.length!==4||nominal.some(x=>!Number.isFinite(x)||x<0))throw new InputError('Four finite nonnegative nominal rotor thrusts required');
+  const rotorThrusts=nominal.map((f,r)=>A.effectiveThrust(f,winds[r]));
+  const effective=F.wrench(rotorThrusts),original=F.wrench(nominal);
+  return {rotorThrusts,force:F.rotate(state.slice(6,10),[0,0,effective.T]),moment:[effective.t[0],effective.t[1],original.t[2]]};
+}
+module.exports={fields,createEvaluator,prepare,zeroSupport,loads,variants,P,F,A,W,rotorOffset,farStart,InputError,DomainError:A.DomainError,integrate:A.integrate};

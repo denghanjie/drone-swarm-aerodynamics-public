@@ -1,0 +1,69 @@
+{
+  "schema": "static-audit-cost-forecast/v1",
+  "status": "planning_arithmetic_only_no_pilot_or_benchmark",
+  "saved_input": {
+    "source": "research-next/implementation/results/runs/s840131-P1.json timing.safetyDiagnostics plus audit.samples",
+    "safety_diagnostics_seconds": 35.09314053,
+    "audit_observations": 25385,
+    "includes_other_safety_work": true
+  },
+  "proxy_seconds_per_observation": 0.0013824361051802245,
+  "proxy_limit": "Aggregate bucket divided by observation count; not measured audit cost, guaranteed upper bound, or speed forecast. Different schedules and fixture cases may cost differently.",
+  "children": {
+    "workloads": 2,
+    "seeds": 2,
+    "blocks_per_seed_workload": 8,
+    "variants": 2,
+    "total": 64
+  },
+  "observations_per_pass_all_children": 13376,
+  "superseded_six_pass_observations": 80256,
+  "superseded_proxy_seconds": 110.9487920573441,
+  "adopted_proposal": {
+    "warmup_passes": 1,
+    "measured_passes": 2,
+    "observations": 40128,
+    "timed_observations": 26752,
+    "warmup_observations": 13376,
+    "ordered_rotor_source_pair_observations": 38522880,
+    "proxy_seconds": 55.47439602867205,
+    "startup_allowance_seconds_per_child": 0.1,
+    "additional_io_accounting_allowance_seconds": 10,
+    "proxy_plus_allowances_seconds": 71.87439602867204,
+    "performance_phase_cap_seconds": 90,
+    "baseline_two_pass_proxy_seconds": {
+      "W-ENDPOINT": 0.7105721580626354,
+      "W-STAGE-FIXTURE": 0.44514442586803227
+    },
+    "illustrative_quarter_proxy_two_pass_seconds": {
+      "W-ENDPOINT": 0.17764303951565885,
+      "W-STAGE-FIXTURE": 0.11128610646700807
+    },
+    "quarter_fraction_evidence": "Hypothetical illustration only; actual audit fraction unknown.",
+    "minimum_measured_baseline_aggregate_seconds": 0.1,
+    "if_too_short": "cost inconclusive; no extra passes",
+    "jit_steady_state_established": false
+  },
+  "correctness": {
+    "endpoint_rows": 35597,
+    "auditors": 2,
+    "endpoint_observations": 71194,
+    "endpoint_proxy_seconds": 98.4211560722009,
+    "phase_wall_cpu_cap_seconds": 180,
+    "excluded_from_proxy": [
+      "exact output comparisons",
+      "all bracket and JSON state cases",
+      "synthetic and persistence fixtures",
+      "input checksums and decoding",
+      "serialization",
+      "source/runtime verification"
+    ],
+    "completion_guaranteed": false
+  },
+  "display_budget": {
+    "wall_cpu_seconds": 120,
+    "scope": "after numerical window; no simulation or numerical replay; within unchanged storage caps"
+  },
+  "no_candidate_speedup_assumed_in_forecast": true,
+  "no_overlap_with_packaging_or_uploads": true
+}

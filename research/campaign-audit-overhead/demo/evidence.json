@@ -1,0 +1,27 @@
+{
+  "schema": "audit-overhead-display-evidence/v1",
+  "status": "implementation_static_review_only",
+  "statusLabel": "Plan adopted; experiments not released",
+  "summary": "The exact-output candidate and independent checks are being prepared. No new numerical comparison or timing experiment has been executed in this study.",
+  "correctnessLabel": "No new exact-equivalence result yet. Complete corpus and fixture checks are required before the planned serial timing trials.",
+  "displayVerification": "Viewer scaffold written locally. Browser rendering has not been verified. The earlier standalone viewer passed static file/data checks but Chromium could not launch in that environment.",
+  "oldReferenceQualified": false,
+  "newFlightTrajectories": false,
+  "records": [
+    {
+      "path": "../ADOPTION.json",
+      "label": "Coordinator adoption",
+      "description": "Local implementation and static review only; numerical execution is not released."
+    },
+    {
+      "path": "../CORPUS-MANIFEST.json",
+      "label": "Fixed input corpus",
+      "description": "Identifies retained endpoint arrays and their sidecars, with no claim that missing real stages are available."
+    },
+    {
+      "path": "../PROTOCOL.json",
+      "label": "Prospective measurements and stopping conditions",
+      "description": "No experiment result is inferred from this protocol."
+    }
+  ]
+}

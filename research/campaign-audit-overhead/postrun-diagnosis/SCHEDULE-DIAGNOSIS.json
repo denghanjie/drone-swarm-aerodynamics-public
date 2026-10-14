@@ -1,0 +1,455 @@
+{
+  "schema": "audit-c1-postrun-schedule-diagnosis/v1",
+  "preparedAtUtc": "2026-10-14T04:56:32.889291+00:00",
+  "status": "terminal_integrity_blocked_no_retry",
+  "analysisMethod": "Read-only JSON and Python AST/literal inspection, byte hashing and metadata comparison. No supervisor/module import, child, gate, fixture, benchmark or numerical execution. Only new postrun-diagnosis files written.",
+  "rootCause": {
+    "file": "robustness-review/supervise.py",
+    "line": 32,
+    "seed": 840137,
+    "zeroBasedBlock": 6,
+    "prescribedOrder": "BC",
+    "supervisorOrder": "CB",
+    "effect": "Four of 64 serialized performance slots differ, from one reversed pair repeated in both workloads.",
+    "protocolJobsAndCostValidatorAll64Agree": true,
+    "prescribedBothSeedsOppositePerBlock": true,
+    "supervisorOrdersOppositePerBlock": false,
+    "smallFirstAmendmentPerformanceRowsUnchanged": true
+  },
+  "orders": {
+    "protocol": {
+      "840131": [
+        "BC",
+        "CB",
+        "CB",
+        "BC",
+        "BC",
+        "CB",
+        "CB",
+        "BC"
+      ],
+      "840137": [
+        "CB",
+        "BC",
+        "BC",
+        "CB",
+        "CB",
+        "BC",
+        "BC",
+        "CB"
+      ]
+    },
+    "supervisor": {
+      "840131": [
+        "BC",
+        "CB",
+        "CB",
+        "BC",
+        "BC",
+        "CB",
+        "CB",
+        "BC"
+      ],
+      "840137": [
+        "CB",
+        "BC",
+        "BC",
+        "CB",
+        "CB",
+        "BC",
+        "CB",
+        "CB"
+      ]
+    },
+    "costValidator": {
+      "840131": [
+        "BC",
+        "CB",
+        "CB",
+        "BC",
+        "BC",
+        "CB",
+        "CB",
+        "BC"
+      ],
+      "840137": [
+        "CB",
+        "BC",
+        "BC",
+        "CB",
+        "CB",
+        "BC",
+        "BC",
+        "CB"
+      ]
+    }
+  },
+  "slotMismatches": [
+    {
+      "zeroBasedPerformanceSlot": 28,
+      "oneBasedPerformanceSlot": 29,
+      "zeroBasedAllJobsIndex": 46,
+      "jobId": "bench-W-ENDPOINT-840137-6-B",
+      "configuredProtocolAndCostValidatorSlot": [
+        "W-ENDPOINT",
+        840137,
+        6,
+        "B"
+      ],
+      "supervisorExpectedSlot": [
+        "W-ENDPOINT",
+        840137,
+        6,
+        "C1"
+      ]
+    },
+    {
+      "zeroBasedPerformanceSlot": 29,
+      "oneBasedPerformanceSlot": 30,
+      "zeroBasedAllJobsIndex": 47,
+      "jobId": "bench-W-ENDPOINT-840137-6-C1",
+      "configuredProtocolAndCostValidatorSlot": [
+        "W-ENDPOINT",
+        840137,
+        6,
+        "C1"
+      ],
+      "supervisorExpectedSlot": [
+        "W-ENDPOINT",
+        840137,
+        6,
+        "B"
+      ]
+    },
+    {
+      "zeroBasedPerformanceSlot": 60,
+      "oneBasedPerformanceSlot": 61,
+      "zeroBasedAllJobsIndex": 78,
+      "jobId": "bench-W-STAGE-FIXTURE-840137-6-B",
+      "configuredProtocolAndCostValidatorSlot": [
+        "W-STAGE-FIXTURE",
+        840137,
+        6,
+        "B"
+      ],
+      "supervisorExpectedSlot": [
+        "W-STAGE-FIXTURE",
+        840137,
+        6,
+        "C1"
+      ]
+    },
+    {
+      "zeroBasedPerformanceSlot": 61,
+      "oneBasedPerformanceSlot": 62,
+      "zeroBasedAllJobsIndex": 79,
+      "jobId": "bench-W-STAGE-FIXTURE-840137-6-C1",
+      "configuredProtocolAndCostValidatorSlot": [
+        "W-STAGE-FIXTURE",
+        840137,
+        6,
+        "C1"
+      ],
+      "supervisorExpectedSlot": [
+        "W-STAGE-FIXTURE",
+        840137,
+        6,
+        "B"
+      ]
+    }
+  ],
+  "terminalEvidence": {
+    "window": {
+      "schema": "audit-c1-window-start/v1",
+      "releaseSha256": "9e62f693e2761270718a17036793b81804b729324ac24408e5e4cbc83feaca3f",
+      "freezeSha256": "eb5dbadb92f592a320a2e1f3e791e28c5449464808915739e1aa4c3293ca37e5",
+      "startMonotonic": 23844.260000209997,
+      "startedAtUtc": "2026-10-14T04:53:51Z",
+      "numericalStopBySeconds": 270.0,
+      "finalAccountingReservedSeconds": 30,
+      "retryAllowed": false
+    },
+    "supervisor": {
+      "schema": "audit-c1-supervisor/v1",
+      "status": "integrity_blocked",
+      "reason": "Performance jobs must match all 64 prescribed serial slots, zero-based blocks",
+      "wallSecondsBeforeFinalWrite": 0.04066734900334268,
+      "processTreeCpuSecondsBeforeFinalWrite": 0.039228,
+      "hardTotalOverrun": false,
+      "freezeSha256": "eb5dbadb92f592a320a2e1f3e791e28c5449464808915739e1aa4c3293ca37e5",
+      "completedJobIds": [],
+      "unrunJobIds": [],
+      "stoppingJob": null,
+      "reapedProcesses": [],
+      "peakNewLogicalRetainedBytesObserved": 1602737,
+      "peakCombinedLogicalRetainedBytesObserved": 135832050,
+      "peakTreeRssBytesSampled": 13500416,
+      "peakChildRssBytesSampled": 0,
+      "supervisorMaxRssBytes": 13500416,
+      "serialTreeRssConservativeUpperBoundBytes": 13500416,
+      "samplingIntervalSeconds": 0.01,
+      "accounting": "Monotonic wall; supervisor CPU plus wait4/RUSAGE_CHILDREN exited CPU plus every live descendant CPU including its own already-reaped descendants; no double counting of live descendants.",
+      "rssLimitations": "Active-tree RSS is sampled. wait4 supplies complete per-process maximum RSS for exited children. Short-lived unexpected descendants invalidate qualification.",
+      "exactCurrentStoppedState": false,
+      "lastDurableCheckpointPath": "robustness-review/results/last-durable-checkpoint.json",
+      "oldReferenceQualified": false,
+      "storage": {
+        "new": {
+          "bytes": 1602737,
+          "files": 99
+        },
+        "old": {
+          "bytes": 134229313,
+          "files": 287
+        },
+        "combinedBytes": 135832050
+      },
+      "finalFrozenIdentityCheck": {
+        "status": "not_run_after_failed_window",
+        "reason": "No cost qualification; prioritize retained failure evidence."
+      },
+      "finalRuntimeIdentityCheck": {
+        "status": "not_run_after_failed_window"
+      }
+    },
+    "finalAccounting": {
+      "schema": "audit-c1-final-accounting/v1",
+      "wallSecondsBeforeWrite": 0.048071681001601974,
+      "processTreeCpuSecondsBeforeWrite": 0.046626999999999995,
+      "withinHardCapsBeforeWrite": true,
+      "retainedBeforeWrite": {
+        "new": {
+          "bytes": 1604492,
+          "files": 100
+        },
+        "old": {
+          "bytes": 134229313,
+          "files": 287
+        },
+        "combinedBytes": 135833805
+      },
+      "peakNewLogicalRetainedBytesBeforeWrite": 1604492,
+      "peakCombinedLogicalRetainedBytesBeforeWrite": 135833805,
+      "qualificationRequires": "Complete passed semantic gate, applicable cost terminal status, all resource/identity caps and no final overrun receipt.",
+      "meaning": "Final evidence write is charged to same clock; values here are explicitly before this write."
+    }
+  },
+  "configuredJobs": {
+    "correctness": 18,
+    "performance": 64,
+    "allConfiguredJobsUnrunByControlFlow": 82,
+    "separateCorrectnessGateUnrun": true,
+    "note": "SUPERVISOR.unrunJobIds is empty because self.rows is initialized [] and verify_jobs raises before its assignment completes. The empty field does not indicate no pending work."
+  },
+  "staticAcceptanceGap": [
+    "The retained checks validate syntax, byte identities, jobs-vs-protocol order, or unchanged jobs across the correctness-only reorder, but do not demonstrate comparison of the supervisor ORDERS literal to the other schedule consumers.",
+    "Final resource acceptance allOrderedSlotsVerified=true is insufficient as an end-to-end assertion and conflicts with the frozen supervisor literal.",
+    "Prepared receipt tests import validate_receipt only and do not test verify_jobs, expected_performance_slots or cross-consumer schedule equality; they were not executed.",
+    "Hash pinning preserved the inconsistent literal; identity agreement cannot establish schedule semantic agreement.",
+    "Exact historical checker commands for boolean schedule claims are not retained here, so the specific human/script oversight is not reconstructed. The cross-consumer gap is directly established."
+  ],
+  "futureAmendmentProposal": {
+    "status": "proposal_only_not_adopted_no_execution_authorized",
+    "currentAttempt": "Keep WINDOW-STARTED, freeze, release and all terminal receipts untouched; do not retry or resume.",
+    "minimalFutureSourceCorrection": "In a separately authorized prospective revision, correct supervisor ORDERS[840137][6] from CB to BC. Keep the prescribed protocol, jobs and cost validator order unchanged.",
+    "staticAcceptanceRequirements": [
+      "Require an explicit 64-slot cross-consumer check of protocol, jobs, supervisor and cost validator using AST/literal inspection or separately authorized pure metadata helpers; no scientific imports.",
+      "Assert zero-based blocks 0..7, integer seeds, complete unique 64 slots, phase order, per-block opposing seed orders, and four BC/four CB orders per seed.",
+      "Add a separately authorized isolated metadata-only regression harness that evaluates the actual production expected_performance_slots helper against the frozen protocol and jobs, then verifies production verify_jobs rejects a synthetically reversed pair and other malformed schedules. Isolate the pure functions from top-level supervisor startup and all model imports; no Supervisor, child, fixture, benchmark or attempt marker may be invoked. These tests are proposed, not run.",
+      "Record schedule hashes, source pins, comparison scope and mismatch list in acceptance. Keep an independently specified protocol oracle instead of accepting a shared wrong constant.",
+      "If separately authorized prospectively, add metadata-only negative tests for one reversed pair, missing/extra/duplicate slots, wrong seed/block/variant and phase order; no test is executed by this diagnosis.",
+      "Run metadata preflight before consuming any future one-shot marker, while retaining a mandatory runtime recheck; a failed current marker never becomes resettable.",
+      "Improve future preflight-failure receipts with loaded/validated configuration status and truthful pending job IDs even when validation raises."
+    ],
+    "authorizationBoundary": "Any future execution would need separately approved protocol, independent review, new source/config freeze and explicit release. This report creates no campaign, edits no frozen source and grants no release."
+  },
+  "evidenceFiles": [
+    {
+      "path": "PLAN.md",
+      "bytes": 44865,
+      "sha256": "0c16567372f9d7efe2fff3982d822a27da4364281d1a15b0a4210dca409c41fd"
+    },
+    {
+      "path": "PROTOCOL.json",
+      "bytes": 5437,
+      "sha256": "7d586939589c82a2f5a168c395d915452c3fad369b1dd76842665e9471586abb"
+    },
+    {
+      "path": "implementation/config/jobs.json",
+      "bytes": 14585,
+      "sha256": "32171321a352b7e56447b716ad8cf182cf10ef7875fc5f016f3927956cf54e1b"
+    },
+    {
+      "path": "repair-record/schedule-before/jobs.json",
+      "bytes": 14585,
+      "sha256": "f1698ca0bdf3bf6ddc600a936fffe546aa863fc7bce6b0520456075fbf717355"
+    },
+    {
+      "path": "robustness-review/supervise.py",
+      "bytes": 31739,
+      "sha256": "4693355dd181f6bce8fb9d03d3f8eee780f28b47143d71b72cfe74abdd71d3f3"
+    },
+    {
+      "path": "robustness-review/validate_cost_receipts.py",
+      "bytes": 11161,
+      "sha256": "076c113f34ea33fef5ed4c40ad155db053b4a09ce0f303d40f8a8d9b07d8781e"
+    },
+    {
+      "path": "robustness-review/test_receipt_rules.py",
+      "bytes": 3505,
+      "sha256": "59216f082dac84e5eeaf0c51ae468383c54993679bc1e1da7d749fcb1662b749"
+    },
+    {
+      "path": "robustness-review/STATIC-VALIDATION.json",
+      "bytes": 1146,
+      "sha256": "074cf3f6aa9f05a26b8af4c95fee059f9a78df1220ce3559465ba25e2c790d4d"
+    },
+    {
+      "path": "robustness-review/REVIEW.md",
+      "bytes": 9456,
+      "sha256": "a473d436ba894a93f21ffb94dfac36f843f27eac9762b9fbc36d6d753ae87b26"
+    },
+    {
+      "path": "semantic-final-review/REVIEW-004.md",
+      "bytes": 3515,
+      "sha256": "e7fc38a6689c7fdcea54ced95ac83fe5eb84dc206056ac223058058b7e026e29"
+    },
+    {
+      "path": "semantic-final-review/STATIC-REVIEW-004.json",
+      "bytes": 17091,
+      "sha256": "8c44bb51cef44fe1282eee98ea5087241d9b514f26a1faf4b0196aaada4c5ecb"
+    },
+    {
+      "path": "final-release-review/STATIC-CHECKS.json",
+      "bytes": 4795,
+      "sha256": "021e3df1a949be202f0f81c2b07e1f6fcc27385cbaf86a1efc243425aefd749a"
+    },
+    {
+      "path": "final-release-review/STATIC-CHECKS-FINAL.json",
+      "bytes": 5134,
+      "sha256": "dc4cd8a8768841c8cf752f56c57a42417d58ffb388d7ed69f39cce03f891b8a5"
+    },
+    {
+      "path": "final-release-review/DECISION.json",
+      "bytes": 9042,
+      "sha256": "a554231fc28777d83a6c24cc364e99a1b6fb0abb1c6845e3a3aec96ce280a8c2"
+    },
+    {
+      "path": "final-release-review/REVIEW.md",
+      "bytes": 12581,
+      "sha256": "c6c36172a00a40ce0233d39b3745dfc9a9c3e7529d21ec7738f837c8b3c9b217"
+    },
+    {
+      "path": "SCHEDULING-CLARIFICATION-001.json",
+      "bytes": 1629,
+      "sha256": "dc1bacfdfff90c3b8c4fb8b4f411cfe52e835da521fcf7f66091ce6737565327"
+    },
+    {
+      "path": "FREEZE.json",
+      "bytes": 47586,
+      "sha256": "eb5dbadb92f592a320a2e1f3e791e28c5449464808915739e1aa4c3293ca37e5"
+    },
+    {
+      "path": "EXECUTION-RELEASE.json",
+      "bytes": 1544,
+      "sha256": "9e62f693e2761270718a17036793b81804b729324ac24408e5e4cbc83feaca3f"
+    },
+    {
+      "path": "robustness-review/results/WINDOW-STARTED.json",
+      "bytes": 398,
+      "sha256": "79b29ffe6b2b3463c8bfe64df88ff2c9863da853016c506cb38ee5348d69091f"
+    },
+    {
+      "path": "robustness-review/results/SUPERVISOR.json",
+      "bytes": 1755,
+      "sha256": "8379289fe24683772dcbba0dcdae70e846c025621de3ab8b7d114a34ce512c53"
+    },
+    {
+      "path": "robustness-review/results/FINAL-ACCOUNTING.json",
+      "bytes": 758,
+      "sha256": "e9183625917b9528050e6e2087082033c388034ad3d7f65aff7a2f8e48c31587"
+    }
+  ],
+  "frozenRelevantEvidenceChecks": [
+    {
+      "path": "PLAN.md",
+      "bytesMatchFreeze": true,
+      "sha256MatchesFreeze": true
+    },
+    {
+      "path": "PROTOCOL.json",
+      "bytesMatchFreeze": true,
+      "sha256MatchesFreeze": true
+    },
+    {
+      "path": "implementation/config/jobs.json",
+      "bytesMatchFreeze": true,
+      "sha256MatchesFreeze": true
+    },
+    {
+      "path": "repair-record/schedule-before/jobs.json",
+      "bytesMatchFreeze": true,
+      "sha256MatchesFreeze": true
+    },
+    {
+      "path": "robustness-review/supervise.py",
+      "bytesMatchFreeze": true,
+      "sha256MatchesFreeze": true
+    },
+    {
+      "path": "robustness-review/validate_cost_receipts.py",
+      "bytesMatchFreeze": true,
+      "sha256MatchesFreeze": true
+    },
+    {
+      "path": "robustness-review/test_receipt_rules.py",
+      "bytesMatchFreeze": true,
+      "sha256MatchesFreeze": true
+    },
+    {
+      "path": "robustness-review/STATIC-VALIDATION.json",
+      "bytesMatchFreeze": true,
+      "sha256MatchesFreeze": true
+    },
+    {
+      "path": "robustness-review/REVIEW.md",
+      "bytesMatchFreeze": true,
+      "sha256MatchesFreeze": true
+    },
+    {
+      "path": "semantic-final-review/REVIEW-004.md",
+      "bytesMatchFreeze": true,
+      "sha256MatchesFreeze": true
+    },
+    {
+      "path": "semantic-final-review/STATIC-REVIEW-004.json",
+      "bytesMatchFreeze": true,
+      "sha256MatchesFreeze": true
+    },
+    {
+      "path": "final-release-review/STATIC-CHECKS.json",
+      "bytesMatchFreeze": true,
+      "sha256MatchesFreeze": true
+    },
+    {
+      "path": "final-release-review/STATIC-CHECKS-FINAL.json",
+      "bytesMatchFreeze": true,
+      "sha256MatchesFreeze": true
+    },
+    {
+      "path": "final-release-review/DECISION.json",
+      "bytesMatchFreeze": true,
+      "sha256MatchesFreeze": true
+    },
+    {
+      "path": "final-release-review/REVIEW.md",
+      "bytesMatchFreeze": true,
+      "sha256MatchesFreeze": true
+    },
+    {
+      "path": "SCHEDULING-CLARIFICATION-001.json",
+      "bytesMatchFreeze": true,
+      "sha256MatchesFreeze": true
+    }
+  ]
+}

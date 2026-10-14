@@ -1,0 +1,2857 @@
+{
+  "schema": "independent-postrun-retention-verification/v1",
+  "scope": "Existing artifact identity/shape/count/timing verification only; no integration, field/controller evaluation, fixture rerun or scientific trajectory comparison",
+  "checks": [
+    {
+      "check": "freeze-document",
+      "path": "PLAN.md",
+      "matches": true,
+      "sha256": "b68a2a93b29e85b3784d874010c767ee7ba3eacfdcc71d4bb6b91d31606d4bba"
+    },
+    {
+      "check": "freeze-document",
+      "path": "ADOPTION.json",
+      "matches": true,
+      "sha256": "0e963cc827979f6a623a83c576a569751a301e0aedef5d70a1b100226d18ed23"
+    },
+    {
+      "check": "freeze-document",
+      "path": "STORAGE-AMENDMENT-001.json",
+      "matches": true,
+      "sha256": "1790cd1d087b0ad59e3d83968d97e6e8ad4dbd891a6539ffd62dd5880150dbcd"
+    }
+  ],
+  "errors": [],
+  "supervisor": {
+    "status": "worker-stopped",
+    "code": 1,
+    "signal": null,
+    "killed": null,
+    "elapsedWallMs": 223476.58426,
+    "totalCpuSeconds": 233.82,
+    "retainedBytes": 118104714,
+    "exactStoppedState": false
+  },
+  "validity": {
+    "uninterruptedSuccessfulExecution": false,
+    "qualifiedResultsMayBeConsidered": false,
+    "reason": "Worker stopped; inspect retained failures",
+    "wallMsBeforeValidityWrite": 223485.875585,
+    "cpuSecondsBeforeValidityWrite": 233.83,
+    "referenceStillRequiresEveryGate": true
+  },
+  "matrixCounts": {
+    "complete": 7,
+    "skipped": 8,
+    "failed": 1
+  },
+  "matrix": [
+    {
+      "runId": "s840131-J1",
+      "status": "complete",
+      "reason": "Earlier fixture, preflight or gate stopped cycle"
+    },
+    {
+      "runId": "s840131-J2",
+      "status": "complete",
+      "reason": "Earlier fixture, preflight or gate stopped cycle"
+    },
+    {
+      "runId": "s840131-J3",
+      "status": "complete",
+      "reason": "Earlier fixture, preflight or gate stopped cycle"
+    },
+    {
+      "runId": "s840131-H1",
+      "status": "skipped",
+      "reason": "Earlier fixture, preflight or gate stopped cycle"
+    },
+    {
+      "runId": "s840131-H2",
+      "status": "skipped",
+      "reason": "Earlier fixture, preflight or gate stopped cycle"
+    },
+    {
+      "runId": "s840131-H3",
+      "status": "skipped",
+      "reason": "Earlier fixture, preflight or gate stopped cycle"
+    },
+    {
+      "runId": "s840131-H4",
+      "status": "complete",
+      "reason": "Earlier fixture, preflight or gate stopped cycle"
+    },
+    {
+      "runId": "s840131-P1",
+      "status": "failed",
+      "reason": "Per-job cooperative wall cap"
+    },
+    {
+      "runId": "s840137-J1",
+      "status": "complete",
+      "reason": "Earlier fixture, preflight or gate stopped cycle"
+    },
+    {
+      "runId": "s840137-J2",
+      "status": "complete",
+      "reason": "Earlier fixture, preflight or gate stopped cycle"
+    },
+    {
+      "runId": "s840137-J3",
+      "status": "complete",
+      "reason": "Earlier fixture, preflight or gate stopped cycle"
+    },
+    {
+      "runId": "s840137-H1",
+      "status": "skipped",
+      "reason": "Earlier fixture, preflight or gate stopped cycle"
+    },
+    {
+      "runId": "s840137-H2",
+      "status": "skipped",
+      "reason": "Earlier fixture, preflight or gate stopped cycle"
+    },
+    {
+      "runId": "s840137-H3",
+      "status": "skipped",
+      "reason": "Earlier fixture, preflight or gate stopped cycle"
+    },
+    {
+      "runId": "s840137-H4",
+      "status": "skipped",
+      "reason": "Earlier fixture, preflight or gate stopped cycle"
+    },
+    {
+      "runId": "s840137-P1",
+      "status": "skipped",
+      "reason": "Earlier fixture, preflight or gate stopped cycle"
+    }
+  ],
+  "campaign": {
+    "status": "stopped",
+    "phase": "held-physics",
+    "failure": {
+      "type": "Error",
+      "message": "Coupled run stopped",
+      "detail": {
+        "runId": "s840131-P1",
+        "phase": "accepted-endpoint",
+        "tick": 50768,
+        "state": [
+          [
+            -5.858707300954273,
+            -1.0466673499046388,
+            5.037318628907644,
+            0.5370023197951542,
+            -0.4226265555559241,
+            -0.3949135283084193,
+            -0.01655006767721886,
+            -0.00010858414915203117,
+            -0.28820046992536197,
+            0.9574270586337962,
+            0.0549862793783497,
+            -0.35365643376537426,
+            0.23574635602625837,
+            0.06565833753092111,
+            0.0668653361365506,
+            0.065951918643166,
+            0.06646352410302446
+          ],
+          [
+            -6.654366922248274,
+            0.6684467091350452,
+            4.0732036728676455,
+            0.503030722443593,
+            -0.5079281863409781,
+            -0.39526106789071547,
+            0.06178281043262796,
+            0.03632273370147804,
+            -0.6046971888397283,
+            0.7932243397430688,
+            0.3007944417241887,
+            -0.35508551786167214,
+            -0.07990072500611878,
+            0.07227227473523952,
+            0.06832432950431076,
+            0.07055328131753585,
+            0.07130133673951992
+          ],
+          [
+            -6.592730686928281,
+            0.49474231982222827,
+            4.899619166098093,
+            0.24684735304230737,
+            -0.47485392097985846,
+            -0.3859355287944346,
+            0.0011419979974487114,
+            0.019533367123726685,
+            -0.47048175544495,
+            0.8821927573964896,
+            -0.04372129470842727,
+            0.020039481889093026,
+            0.22050280692775834,
+            0.06612158327449155,
+            0.06719706916463265,
+            0.06589259379614205,
+            0.06706718026669768
+          ],
+          [
+            -6.776490869066927,
+            -0.247061550935293,
+            3.3046392304117624,
+            0.06642386357626809,
+            -0.3664690268888307,
+            -0.6039083056107555,
+            -0.05473871960930111,
+            0.09355516718351797,
+            -0.3405809558606918,
+            0.9339463131110995,
+            0.15273815010837025,
+            0.17408172343848874,
+            -0.5735644000439772,
+            0.07863393598535955,
+            0.07732250262015103,
+            0.07171121729878473,
+            0.0774156265060652
+          ],
+          [
+            -6.487182260345337,
+            -0.9681354953174945,
+            4.191536223006634,
+            0.06251745007264131,
+            -0.08717597080607366,
+            -0.4379745956403034,
+            0.13961317468892226,
+            -0.05290312127922222,
+            -0.8489902089168367,
+            0.5068777430264051,
+            -1.0985659354659667,
+            0.5162834148479815,
+            0.47225298722511666,
+            0.0801005821652046,
+            0.06554342514437739,
+            0.07803740606024145,
+            0.07351625833310994
+          ],
+          [
+            -5.803915824700895,
+            -0.8104888863379662,
+            3.405132820493804,
+            0.3401179323104663,
+            -0.649546043718655,
+            -0.3479312415073434,
+            0.04083190492273412,
+            0.02122268419600951,
+            -0.48269573634512286,
+            0.874578286564523,
+            -0.3644578804724867,
+            -0.3581375654728747,
+            0.5968507460084885,
+            0.06945743020657782,
+            0.06748781749971874,
+            0.06971814209429453,
+            0.06876914415122616
+          ],
+          [
+            -6.643652134924934,
+            -0.28253984730302195,
+            4.473158138914542,
+            0.26592660075126556,
+            -0.4407295793203477,
+            -0.25384195393439485,
+            0.006033654873350014,
+            0.013608345044998124,
+            -0.48145788665824246,
+            0.8763428046880885,
+            -0.06355526205645258,
+            -0.08312795835892432,
+            0.38306187608526404,
+            0.06585902212422044,
+            0.06496375637129977,
+            0.06588063254489052,
+            0.06509187882569589
+          ],
+          [
+            -5.925087139841943,
+            0.8467032697374862,
+            3.323165738885244,
+            0.10943044902442485,
+            -0.34203372545438826,
+            -0.6982637701977258,
+            0.12858466188443746,
+            0.035460211051072936,
+            -0.5302559674284444,
+            0.8372796230452542,
+            -0.00585511664352283,
+            0.5445366905574323,
+            0.6123880595715342,
+            0.07850064822713172,
+            0.07291983018782311,
+            0.08188821735014909,
+            0.08316965834200546
+          ],
+          [
+            -6.641550963611862,
+            0.5693826897144749,
+            3.2564243003829296,
+            0.31622029700585425,
+            -0.17641541263749988,
+            -0.591170033339734,
+            0.01506465593546576,
+            0.017290744848008566,
+            -0.5325392006924898,
+            0.8460946081910409,
+            0.37987162510359934,
+            0.1800388021851352,
+            -0.45286135604691996,
+            0.07393362580667868,
+            0.07427876438564737,
+            0.07433157967307635,
+            0.07441512124081236
+          ],
+          [
+            -5.801376762424836,
+            0.5751795233965625,
+            4.9646530517156595,
+            0.29147627312634206,
+            -0.45973637166403075,
+            -0.39103151100791445,
+            0.006907951300507304,
+            0.018077026388034007,
+            -0.4544591783632456,
+            0.8905573291637098,
+            -0.03655840413630243,
+            0.012177704162172627,
+            0.011141295093219051,
+            0.06641282046255166,
+            0.06708666279043925,
+            0.06625178747112585,
+            0.06696436015606827
+          ],
+          [
+            -6.0534036520283,
+            -1.0631157377062717,
+            4.167275694436642,
+            0.46706539144505566,
+            -0.12907579233494185,
+            -0.4640165471565664,
+            0.06128266266250491,
+            -0.12622283302103443,
+            0.21512370413861548,
+            -0.966454356707454,
+            1.2534060929202306,
+            -0.08051315817992766,
+            -0.3986678067069995,
+            0.07661596042702185,
+            0.07370943108651327,
+            0.07199763771034043,
+            0.07700686198990511
+          ],
+          [
+            -6.585487044451127,
+            -1.0281281230053714,
+            5.0254001041536425,
+            0.19647606960065603,
+            -0.43332504481735995,
+            -0.4154724976242112,
+            -0.014444922414429465,
+            0.013853330693170149,
+            -0.42226743508869996,
+            0.9062503201151201,
+            -0.1798180369175689,
+            -0.05880965414086318,
+            1.4399801799223042,
+            0.06546980581925958,
+            0.06669135271485095,
+            0.06543917492118245,
+            0.06636320396028907
+          ],
+          [
+            -6.566723383334979,
+            -0.8914689394306974,
+            3.4541480218029235,
+            0.24806627110096327,
+            -0.6506178569410654,
+            -0.5459604725465776,
+            0.05250167348763861,
+            0.022649921147547228,
+            -0.5057770084224146,
+            0.8607672002953412,
+            -0.3693899970709841,
+            -0.5302860513625018,
+            1.2262842351638674,
+            0.07379540333759167,
+            0.07065563193527231,
+            0.07497504924040303,
+            0.07349394124512293
+          ],
+          [
+            -5.891243142295197,
+            -0.30042897700403515,
+            4.497810791461227,
+            0.44472617311534246,
+            -0.4476581025618759,
+            -0.2463942337271165,
+            0.011662095557959658,
+            0.017469679273256142,
+            -0.4153197572709799,
+            0.9094329579763761,
+            0.09631110188964381,
+            -0.22292250015774318,
+            -0.32415042602567107,
+            0.06542490250048628,
+            0.06522378854487625,
+            0.06560671024864705,
+            0.06522285501229359
+          ],
+          [
+            -5.985867029241686,
+            -0.22406693554481555,
+            3.508134367162416,
+            0.07486795129686827,
+            -0.5289867275430622,
+            -0.5233321263112136,
+            -0.011229077760199917,
+            -0.0423241496161138,
+            0.1697660443715504,
+            -0.9845110788357667,
+            -0.4894875569422954,
+            1.0209171089150288,
+            -0.23799684870915286,
+            0.07383529379847158,
+            0.0713572010750226,
+            0.07078281571887617,
+            0.077498348082787
+          ],
+          [
+            -5.8837533874140835,
+            0.6891405764185333,
+            4.149709393730602,
+            0.6190747715352163,
+            -0.5324754798905675,
+            -0.43127698135147674,
+            0.034722894803060546,
+            0.05346865252475445,
+            -0.5466833613228371,
+            0.8349088131205988,
+            0.40320751522227255,
+            -0.06950622793851764,
+            -0.53786486149737,
+            0.07383665187973026,
+            0.0695325110548144,
+            0.06912378553180189,
+            0.0724977768613203
+          ]
+        ],
+        "commands": [
+          [
+            0.06556931661104902,
+            0.06730420111469133,
+            0.06589972526487566,
+            0.06679326946697937
+          ],
+          [
+            0.07200799291445903,
+            0.06792308867923763,
+            0.07051092373472498,
+            0.071085726983761
+          ],
+          [
+            0.06627498075706965,
+            0.06733180732402398,
+            0.0660257083056922,
+            0.06723248757419596
+          ],
+          [
+            0.0788406174280009,
+            0.07687346077022657,
+            0.07328269814275497,
+            0.07718048348017624
+          ],
+          [
+            0.07995648650892404,
+            0.06606253811863455,
+            0.07725106698798814,
+            0.07083696744967932
+          ],
+          [
+            0.06943252451871815,
+            0.06758105632738898,
+            0.0696825281865911,
+            0.06862852577966524
+          ],
+          [
+            0.06631510698584486,
+            0.0652882460534353,
+            0.06632937806079695,
+            0.06542800346320196
+          ],
+          [
+            0.08146998394514958,
+            0.07338584368961991,
+            0.0818941821680196,
+            0.08450849231057135
+          ],
+          [
+            0.07421811702795013,
+            0.07473731441125465,
+            0.07528176414606592,
+            0.07483611278996145
+          ],
+          [
+            0.06661054619306496,
+            0.0671454122715525,
+            0.06644548428806409,
+            0.06706711684325666
+          ],
+          [
+            0.07445845697918485,
+            0.0731459336930492,
+            0.07265978233603926,
+            0.07617125715665615
+          ],
+          [
+            0.06535552673715384,
+            0.06736032725865837,
+            0.065244370149836,
+            0.06698291049630614
+          ],
+          [
+            0.0730862007724472,
+            0.07064925485624872,
+            0.07446442498067217,
+            0.07292411925166052
+          ],
+          [
+            0.06567244212146997,
+            0.06550975655847874,
+            0.06590768496820482,
+            0.0654652963874299
+          ],
+          [
+            0.07597859244712674,
+            0.07169213992943299,
+            0.06979965037121108,
+            0.07836459695845105
+          ],
+          [
+            0.07420167873997773,
+            0.06882480051940386,
+            0.06933717790416365,
+            0.07256188707499721
+          ]
+        ],
+        "heldWinds": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0.7683275783739613,
+            0.3795158865271416,
+            0.3933828397593589,
+            0.8068285103678726
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1.4761350782466864,
+            0.9747961802869936,
+            0.7557875994026692,
+            1.0844820538947721
+          ],
+          [
+            0.6641606107175323,
+            0.38927813394198113,
+            0.5336067782350229,
+            1.0133958289026859
+          ],
+          [
+            0.2550543424995378,
+            0.18583150303026114,
+            0.25751253865519286,
+            0.359264219978133
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2.322690212694451,
+            1.5620823700002657,
+            1.828963775895809,
+            2.8153626097322113
+          ],
+          [
+            1.559750180865381,
+            1.7028369317862444,
+            1.655693880674712,
+            1.584210834366808
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0.6350295325334291,
+            0.3249172353897522,
+            0.2374897314555342,
+            0.4764816894518716
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0.6157160484596516,
+            0.4866769944678938,
+            0.6804388849276435,
+            0.8920375755394232
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1.6545106065874624,
+            1.034878806156351,
+            1.114058984515926,
+            1.8168458158994836
+          ],
+          [
+            1.5454467065354103,
+            0.78302767297375,
+            0.7055147375390187,
+            1.3378084188108028
+          ]
+        ],
+        "type": "Error",
+        "message": "Per-job cooperative wall cap",
+        "detail": null,
+        "stageEvidence": null,
+        "endpointEvidence": null,
+        "exactStoppedState": true,
+        "exactIntegratorInput": false,
+        "internalFailingStageUnavailable": false
+      },
+      "phase": "held-physics"
+    },
+    "runIds": [
+      "s840131-J1",
+      "s840131-J2",
+      "s840131-J3",
+      "s840137-J1",
+      "s840137-J2",
+      "s840137-J3",
+      "s840131-H4",
+      "s840131-P1"
+    ],
+    "provisionalAllScientificGatesPassed": false,
+    "requiresSupervisorValidity": true
+  },
+  "savedGates": [
+    {
+      "name": "joint self-consistency",
+      "seed": 840131,
+      "passed": true
+    },
+    {
+      "name": "joint self-consistency",
+      "seed": 840137,
+      "passed": true
+    }
+  ],
+  "jobs": [
+    {
+      "id": "implementation-fixtures",
+      "wallMs": 18.136697,
+      "cpuMs": 24.893,
+      "includesSerialization": true
+    },
+    {
+      "id": "independent-test_joint_robustness.cjs",
+      "wallMs": 82.690489,
+      "cpuMs": 3.666,
+      "includesSerialization": true
+    },
+    {
+      "id": "independent-test_io_faults.cjs",
+      "wallMs": 69.368073,
+      "cpuMs": 3.536,
+      "includesSerialization": true
+    },
+    {
+      "id": "independent-test_branch_boundaries.cjs",
+      "wallMs": 58.8265,
+      "cpuMs": 3.482,
+      "includesSerialization": true
+    },
+    {
+      "id": "independent-test_watchdog_contract.cjs",
+      "wallMs": 65.856874,
+      "cpuMs": 3.817,
+      "includesSerialization": true
+    },
+    {
+      "id": "independent-test_runner_clock.cjs",
+      "wallMs": 513.487682,
+      "cpuMs": 3.742,
+      "includesSerialization": true
+    },
+    {
+      "id": "preflight-s840131",
+      "wallMs": 7172.995391,
+      "cpuMs": 7626.061,
+      "includesSerialization": true
+    },
+    {
+      "id": "preflight-s840137",
+      "wallMs": 6957.649131,
+      "cpuMs": 7237.648,
+      "includesSerialization": true
+    },
+    {
+      "id": "compatibility",
+      "wallMs": 783.665833,
+      "cpuMs": 1050.761,
+      "includesSerialization": true
+    },
+    {
+      "id": "s840131-J1",
+      "wallMs": 10369.286424,
+      "cpuMs": 10930.763,
+      "includesSerialization": true
+    },
+    {
+      "id": "s840131-J2",
+      "wallMs": 19699.068286,
+      "cpuMs": 20421.94,
+      "includesSerialization": true
+    },
+    {
+      "id": "s840131-J3",
+      "wallMs": 39753.134901,
+      "cpuMs": 41189.19,
+      "includesSerialization": true
+    },
+    {
+      "id": "s840137-J1",
+      "wallMs": 9844.861934,
+      "cpuMs": 10251.336,
+      "includesSerialization": true
+    },
+    {
+      "id": "s840137-J2",
+      "wallMs": 19979.590318,
+      "cpuMs": 20680.422,
+      "includesSerialization": true
+    },
+    {
+      "id": "s840137-J3",
+      "wallMs": 39895.44227,
+      "cpuMs": 41097.814,
+      "includesSerialization": true
+    },
+    {
+      "id": "joint-gates",
+      "wallMs": 115.139162,
+      "cpuMs": 175.076,
+      "includesSerialization": true
+    },
+    {
+      "id": "s840131-H4",
+      "wallMs": 23806.128743,
+      "cpuMs": 24558.757,
+      "includesSerialization": true
+    },
+    {
+      "id": "s840131-P1",
+      "wallMs": 44029.64837,
+      "cpuMs": 44925.806,
+      "includesSerialization": true
+    }
+  ],
+  "fixtures": {
+    "implementation": {
+      "passed": true,
+      "tests": 10
+    },
+    "independent": [
+      {
+        "file": "test_branch_boundaries.cjs.json",
+        "processStatus": 0,
+        "signal": null,
+        "passed": true,
+        "tests": 6,
+        "failures": []
+      },
+      {
+        "file": "test_io_faults.cjs.json",
+        "processStatus": 0,
+        "signal": null,
+        "passed": true,
+        "tests": 9,
+        "failures": []
+      },
+      {
+        "file": "test_joint_robustness.cjs.json",
+        "processStatus": 0,
+        "signal": null,
+        "passed": true,
+        "tests": 10,
+        "failures": []
+      },
+      {
+        "file": "test_runner_clock.cjs.json",
+        "processStatus": 0,
+        "signal": null,
+        "passed": true,
+        "tests": 2,
+        "failures": []
+      },
+      {
+        "file": "test_watchdog_contract.cjs.json",
+        "processStatus": 0,
+        "signal": null,
+        "passed": true,
+        "tests": 4,
+        "failures": []
+      }
+    ],
+    "totalTests": 41
+  },
+  "sourceIdentity": {
+    "sourceChecked": 71,
+    "inputChecked": 25,
+    "mismatches": []
+  },
+  "binaryFiles": [
+    {
+      "path": "results/audit/preflight-s840131.brackets.f64",
+      "bytes": 43520,
+      "expectedBytes": 43520,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "02ee966111d706f0eb1bac632b53f1a07b2e5f6ae08f80257093db9c266241ea"
+    },
+    {
+      "path": "results/audit/preflight-s840131.signatures.bin",
+      "bytes": 204832,
+      "expectedBytes": 204832,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "5df2543c7153a66fa99eead8e03c77f08b6402e3ec20eac10769373685a9cdb2",
+      "complete32ByteRecords": 6401,
+      "trailingBytes": 0
+    },
+    {
+      "path": "results/audit/preflight-s840137.brackets.f64",
+      "bytes": 43520,
+      "expectedBytes": 43520,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "97bc8e38e5a5986c6a40b56dfb50b1c0884dd49efa193e28406a7796e7d7a688"
+    },
+    {
+      "path": "results/audit/preflight-s840137.signatures.bin",
+      "bytes": 204832,
+      "expectedBytes": 204832,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "16fd482fe3846ffd4f2a2abfae8ab7580194fbc06f8ae35f6bc81e8cc3573638",
+      "complete32ByteRecords": 6401,
+      "trailingBytes": 0
+    },
+    {
+      "path": "results/audit/s4301-compatibility.brackets.f64",
+      "bytes": 43520,
+      "expectedBytes": 43520,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "f4ea568556fabe1e77950da7c0efec01eb5b3b7508c72ff3aced8ec243b2f31d"
+    },
+    {
+      "path": "results/audit/s4301-compatibility.signatures.bin",
+      "bytes": 12832,
+      "expectedBytes": 12832,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "281f891a5b69a69849ab568e81d63612fa8d756f1b9f2a9a481c3dbb73d16eaf",
+      "complete32ByteRecords": 401,
+      "trailingBytes": 0
+    },
+    {
+      "path": "results/audit/s840131-H4.brackets.f64",
+      "bytes": 43520,
+      "expectedBytes": 43520,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "24b039029ab40f73a9ade4baa67a84816c2092416c4768b4ee6560ad07e5b1a2"
+    },
+    {
+      "path": "results/audit/s840131-H4.signatures.bin",
+      "bytes": 409632,
+      "expectedBytes": 409632,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "4bc6e62b749bb6ac48bb39aae43e07aa35b428e749bf807c13b7bda271d2a94e",
+      "complete32ByteRecords": 12801,
+      "trailingBytes": 0
+    },
+    {
+      "path": "results/audit/s840131-J1.brackets.f64",
+      "bytes": 43520,
+      "expectedBytes": 43520,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "78ffd203bc6fb4dedab3295dc1d19922fdd3984a0c1bc144de924675d234952a"
+    },
+    {
+      "path": "results/audit/s840131-J1.signatures.bin",
+      "bytes": 256032,
+      "expectedBytes": 256032,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "756836326e53b43496fc738d033172cc3f3da03b8ce464a33019a9d535f113b3",
+      "complete32ByteRecords": 8001,
+      "trailingBytes": 0
+    },
+    {
+      "path": "results/audit/s840131-J2.brackets.f64",
+      "bytes": 43520,
+      "expectedBytes": 43520,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "bb2b9b910327bac27c7db3cbb8fffefb0cba82fcc6e06a4d4d1568d99b2b1491"
+    },
+    {
+      "path": "results/audit/s840131-J2.signatures.bin",
+      "bytes": 512032,
+      "expectedBytes": 512032,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "a3291c6a8a92ee79e710b4ab1aeaddb09560c70c9f6ab218722721f9b6eebc3f",
+      "complete32ByteRecords": 16001,
+      "trailingBytes": 0
+    },
+    {
+      "path": "results/audit/s840131-J3.brackets.f64",
+      "bytes": 43520,
+      "expectedBytes": 43520,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "1a3aa6dba654f111cfa0acb5da5153ff39b0b0ac2062c0f043cfaecfdded7896"
+    },
+    {
+      "path": "results/audit/s840131-J3.signatures.bin",
+      "bytes": 1024032,
+      "expectedBytes": 1024032,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "d8509852ac10824afc00711f442c0fa52ebe28bff366ea80150b0dd7bd8d56be",
+      "complete32ByteRecords": 32001,
+      "trailingBytes": 0
+    },
+    {
+      "path": "results/audit/s840131-P1.brackets.f64",
+      "bytes": 43520,
+      "expectedBytes": 43520,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "08d14721456f340d7975b7c811b9c4d49376f33355ea56331ab55be4a69695bd"
+    },
+    {
+      "path": "results/audit/s840131-P1.signatures.bin",
+      "bytes": 812320,
+      "expectedBytes": 812320,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "83c3dec16e8e056ae301d18af65dc7550fc3d3a3566f8a31819c56f130a565b6",
+      "complete32ByteRecords": 25385,
+      "trailingBytes": 0
+    },
+    {
+      "path": "results/audit/s840137-J1.brackets.f64",
+      "bytes": 43520,
+      "expectedBytes": 43520,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "aaad85b7b7db6a8b01a8b45cb9dbae49506096c13719bb10b240a4e4fff9a318"
+    },
+    {
+      "path": "results/audit/s840137-J1.signatures.bin",
+      "bytes": 256032,
+      "expectedBytes": 256032,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "45c6e4390b3fe8400e47ee4a226bca87f00059743bcd573fc9a9f7c86c82e9c1",
+      "complete32ByteRecords": 8001,
+      "trailingBytes": 0
+    },
+    {
+      "path": "results/audit/s840137-J2.brackets.f64",
+      "bytes": 43520,
+      "expectedBytes": 43520,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "6ce5009700ced49c7c0b100e8b74205f22b098c46f69e1885785bb73252c54de"
+    },
+    {
+      "path": "results/audit/s840137-J2.signatures.bin",
+      "bytes": 512032,
+      "expectedBytes": 512032,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "9b84a8391aa1a2007720e7e2a5bc7d70df5927b66df8455d377171181c9f0ec0",
+      "complete32ByteRecords": 16001,
+      "trailingBytes": 0
+    },
+    {
+      "path": "results/audit/s840137-J3.brackets.f64",
+      "bytes": 43520,
+      "expectedBytes": 43520,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "1c771d89500735ebc709d7fcb0ac8d65c51c5c34b741dc270496ea43c2aa939f"
+    },
+    {
+      "path": "results/audit/s840137-J3.signatures.bin",
+      "bytes": 1024032,
+      "expectedBytes": 1024032,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "e2b7ada95c5c988072d51e9c89fd9db4679ff1c2a700e23df4fc8cf98f240dfe",
+      "complete32ByteRecords": 32001,
+      "trailingBytes": 0
+    },
+    {
+      "path": "results/controllers/preflight-s840131.f64",
+      "bytes": 230400,
+      "expectedBytes": 230400,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "ba30cdb808a5bb263876f6d1c6bae812ff448f72178e83559d1b10eea82bc7f7",
+      "shape": [
+        100,
+        16,
+        18
+      ],
+      "shapeByteProduct": 230400,
+      "shapeBytesMatch": true
+    },
+    {
+      "path": "results/controllers/preflight-s840137.f64",
+      "bytes": 230400,
+      "expectedBytes": 230400,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "d0e1486251417fe855d9ace44a7b0d107d7c12a7b8b3e87fc7b81ecf81b54da4",
+      "shape": [
+        100,
+        16,
+        18
+      ],
+      "shapeByteProduct": 230400,
+      "shapeBytesMatch": true
+    },
+    {
+      "path": "results/controllers/s4301-compatibility.f64",
+      "bytes": 230400,
+      "expectedBytes": 230400,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "629e6e08b54a52944ea9d5b01f4b2764a2f891ec496b987f588029a8564fb3e7",
+      "shape": [
+        100,
+        16,
+        18
+      ],
+      "shapeByteProduct": 230400,
+      "shapeBytesMatch": true
+    },
+    {
+      "path": "results/controllers/s840131-H4.f64",
+      "bytes": 230400,
+      "expectedBytes": 230400,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "3743d772ba2ec0f97dc5acd20356b5344a985ba80301cb6a6d105824ed603303",
+      "shape": [
+        100,
+        16,
+        18
+      ],
+      "shapeByteProduct": 230400,
+      "shapeBytesMatch": true
+    },
+    {
+      "path": "results/controllers/s840131-J1.f64",
+      "bytes": 230400,
+      "expectedBytes": 230400,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "b16786a28b626d6002196ef239776bf4fa65791553305cb7cb472ec569c4acbd",
+      "shape": [
+        100,
+        16,
+        18
+      ],
+      "shapeByteProduct": 230400,
+      "shapeBytesMatch": true
+    },
+    {
+      "path": "results/controllers/s840131-J2.f64",
+      "bytes": 230400,
+      "expectedBytes": 230400,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "4081521ce1cf906a9083c84058a5738e7f5d1c75667631bf76e0bb3d6731513d",
+      "shape": [
+        100,
+        16,
+        18
+      ],
+      "shapeByteProduct": 230400,
+      "shapeBytesMatch": true
+    },
+    {
+      "path": "results/controllers/s840131-J3.f64",
+      "bytes": 230400,
+      "expectedBytes": 230400,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "35c73230921c94656c1de359b48e603b37a5ba498e68ea09cff0ea55652d4302",
+      "shape": [
+        100,
+        16,
+        18
+      ],
+      "shapeByteProduct": 230400,
+      "shapeBytesMatch": true
+    },
+    {
+      "path": "results/controllers/s840131-P1.f64",
+      "bytes": 230400,
+      "expectedBytes": 230400,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "066e0a10f48fd1f2e31ac687a2a682f88fc6d07bf8208c5d55dc0565c54121fe",
+      "shape": [
+        100,
+        16,
+        18
+      ],
+      "shapeByteProduct": 230400,
+      "shapeBytesMatch": true
+    },
+    {
+      "path": "results/controllers/s840137-J1.f64",
+      "bytes": 230400,
+      "expectedBytes": 230400,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "bb409a02504fd390a8f2a9432807e84b043157347149ee77170516106d7c441f",
+      "shape": [
+        100,
+        16,
+        18
+      ],
+      "shapeByteProduct": 230400,
+      "shapeBytesMatch": true
+    },
+    {
+      "path": "results/controllers/s840137-J2.f64",
+      "bytes": 230400,
+      "expectedBytes": 230400,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "0f45db4227363071f3ee7b459c80241bea3566450da69dd2d9d65d12262f533b",
+      "shape": [
+        100,
+        16,
+        18
+      ],
+      "shapeByteProduct": 230400,
+      "shapeBytesMatch": true
+    },
+    {
+      "path": "results/controllers/s840137-J3.f64",
+      "bytes": 230400,
+      "expectedBytes": 230400,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "28021191198bf1b6cafb9e53778597f0c1fdced46f488a55dfa367b4f1d92812",
+      "shape": [
+        100,
+        16,
+        18
+      ],
+      "shapeByteProduct": 230400,
+      "shapeBytesMatch": true
+    },
+    {
+      "path": "results/fixtures/roundtrip.f64",
+      "bytes": 2176,
+      "expectedBytes": 2176,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "a91e5fb4f43a0be10dde07f6618c5de4c5f349115ffc414b3e6da85405ad0076",
+      "shape": [
+        1,
+        16,
+        17
+      ],
+      "shapeByteProduct": 2176,
+      "shapeBytesMatch": true
+    },
+    {
+      "path": "results/raw/s4301-compatibility.common.f64",
+      "bytes": 872576,
+      "expectedBytes": 872576,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "055fa27e4b7baeb3e363a2f6a912a4fd50b44cb52ce948d23e061dffd8c4ed8d",
+      "shape": [
+        401,
+        16,
+        17
+      ],
+      "shapeByteProduct": 872576,
+      "shapeBytesMatch": true
+    },
+    {
+      "path": "results/raw/s840131-H4.common.f64",
+      "bytes": 3483776,
+      "expectedBytes": 3483776,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "89c6591f638288a5249b86b71ad2598101c1af1c0065e1140e4323c5c844748a",
+      "shape": [
+        1601,
+        16,
+        17
+      ],
+      "shapeByteProduct": 3483776,
+      "shapeBytesMatch": true
+    },
+    {
+      "path": "results/raw/s840131-J1.common.f64",
+      "bytes": 3483776,
+      "expectedBytes": 3483776,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "558ffa40b119e92bc827f419f3f29559db861601a42c1e6f79e8b3687e7abf40",
+      "shape": [
+        1601,
+        16,
+        17
+      ],
+      "shapeByteProduct": 3483776,
+      "shapeBytesMatch": true
+    },
+    {
+      "path": "results/raw/s840131-J2.common.f64",
+      "bytes": 3483776,
+      "expectedBytes": 3483776,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "4ac74398af724149a0c4aab1d1a1830fc1a6e639fb31a5f6d2c7d875b87eb6c9",
+      "shape": [
+        1601,
+        16,
+        17
+      ],
+      "shapeByteProduct": 3483776,
+      "shapeBytesMatch": true
+    },
+    {
+      "path": "results/raw/s840131-J3.dense.f64",
+      "bytes": 13928576,
+      "expectedBytes": 13928576,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "dbc554ed5e5f7056985a07b332afa788c7de7dfd10257507e0378c069c476ed5",
+      "shape": [
+        6401,
+        16,
+        17
+      ],
+      "shapeByteProduct": 13928576,
+      "shapeBytesMatch": true
+    },
+    {
+      "path": "results/raw/s840131-P1.common.f64",
+      "bytes": 3453312,
+      "expectedBytes": 3453312,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "3aa5605260b843d99c12d2155076723ed0b5ee522fa6c5e2e61473415656885d",
+      "shape": [
+        1587,
+        16,
+        17
+      ],
+      "shapeByteProduct": 3453312,
+      "shapeBytesMatch": true
+    },
+    {
+      "path": "results/raw/s840137-J1.common.f64",
+      "bytes": 3483776,
+      "expectedBytes": 3483776,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "40f79fa96de0865795bf11cfef7e6b642210e108918c84d418bd373559f39e79",
+      "shape": [
+        1601,
+        16,
+        17
+      ],
+      "shapeByteProduct": 3483776,
+      "shapeBytesMatch": true
+    },
+    {
+      "path": "results/raw/s840137-J2.common.f64",
+      "bytes": 3483776,
+      "expectedBytes": 3483776,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "15eaae72b7c987b5cfd07e5620e963d1fdba2d2c704b4e855f06a0e63a36f4b8",
+      "shape": [
+        1601,
+        16,
+        17
+      ],
+      "shapeByteProduct": 3483776,
+      "shapeBytesMatch": true
+    },
+    {
+      "path": "results/raw/s840137-J3.dense.f64",
+      "bytes": 13928576,
+      "expectedBytes": 13928576,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "95fa467cd439c43afe2d8f0d4d75e1812c42bf862c38bba398ae509d5312d4b8",
+      "shape": [
+        6401,
+        16,
+        17
+      ],
+      "shapeByteProduct": 13928576,
+      "shapeBytesMatch": true
+    },
+    {
+      "path": "results/fields/s4301-compatibility.bin",
+      "bytes": 3200,
+      "expectedBytes": 3200,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "3e5918b271f092d18e1bdd3fb91f8e5436bf296fd8980802a5f922db6ad358ae",
+      "complete32ByteRecords": 100,
+      "trailingBytes": 0
+    },
+    {
+      "path": "results/fields/s840131-H4.bin",
+      "bytes": 409600,
+      "expectedBytes": 409600,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "2c3a9b0dafc94b9aed28e9462e6dada11899c37f60b780dd16772c78233a8a86",
+      "complete32ByteRecords": 12800,
+      "trailingBytes": 0
+    },
+    {
+      "path": "results/fields/s840131-J1.bin",
+      "bytes": 0,
+      "expectedBytes": 0,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "complete32ByteRecords": 0,
+      "trailingBytes": 0
+    },
+    {
+      "path": "results/fields/s840131-J2.bin",
+      "bytes": 0,
+      "expectedBytes": 0,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "complete32ByteRecords": 0,
+      "trailingBytes": 0
+    },
+    {
+      "path": "results/fields/s840131-J3.bin",
+      "bytes": 0,
+      "expectedBytes": 0,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "complete32ByteRecords": 0,
+      "trailingBytes": 0
+    },
+    {
+      "path": "results/fields/s840131-P1.bin",
+      "bytes": 406144,
+      "expectedBytes": 406144,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "55b946cf7116d4608428b6872a6d562988f6d0f9563009a94f8ab9ba6aa23ce2",
+      "complete32ByteRecords": 12692,
+      "trailingBytes": 0
+    },
+    {
+      "path": "results/fields/s840137-J1.bin",
+      "bytes": 0,
+      "expectedBytes": 0,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "complete32ByteRecords": 0,
+      "trailingBytes": 0
+    },
+    {
+      "path": "results/fields/s840137-J2.bin",
+      "bytes": 0,
+      "expectedBytes": 0,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "complete32ByteRecords": 0,
+      "trailingBytes": 0
+    },
+    {
+      "path": "results/fields/s840137-J3.bin",
+      "bytes": 0,
+      "expectedBytes": 0,
+      "sizeMatches": true,
+      "sha256Matches": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "complete32ByteRecords": 0,
+      "trailingBytes": 0
+    }
+  ],
+  "runs": [
+    {
+      "runId": "s4301-compatibility",
+      "complete": true,
+      "endTick": 51200,
+      "stop": null,
+      "work": {
+        "physicsSteps": 400,
+        "rk4DerivativeCalls": 25600,
+        "fieldUpdates": 100,
+        "controllerUpdates": 100,
+        "rotorKernels": 5394,
+        "candidatePairs": 24000,
+        "safetySteps": 400,
+        "jointStageFields": 0,
+        "acceptedEndpointAudits": 401,
+        "productionRefreshAuditAliases": 100,
+        "fieldAttempts": 100,
+        "derivativeAttempts": 0,
+        "heldIntegratorAttempts": 6400,
+        "heldIntegratorCompleted": 6400,
+        "heldDerivativeAttemptUpperBound": 25600
+      },
+      "timing": {
+        "field": 24.3498400000135,
+        "controller": 44.61342400000285,
+        "rkArithmetic": 66.53317900001093,
+        "safetyDiagnostics": 590.6175319999311,
+        "recordingHash": 26.544491000016933,
+        "total": 768.801281,
+        "cpuMs": 1032.271,
+        "totalBeforeFinalRunRecordWrite": 781.7667519999995,
+        "cpuMsBeforeFinalRunRecordWrite": 1048.871,
+        "totalScope": "total/cpuMs cover numerical loop only; totalBeforeFinalRunRecordWrite includes artifact serialization; scheduler job timing includes final record serialization"
+      },
+      "metrics": {
+        "minPairClearance": 0.4557028809317213,
+        "minObstacleClearance": 3.125309262317287,
+        "maxInflow": 3.803039945033523,
+        "minMotor": 0.03727133058183612,
+        "maxMotor": 0.09001316204299227,
+        "projectionMaximum": 0,
+        "normDefectMaximum": 0,
+        "projectionWorst": null,
+        "normDefectWorst": null
+      },
+      "heldTick": 50688,
+      "raw": {
+        "count": 16,
+        "runId": "s4301-compatibility",
+        "dt": 0.0025,
+        "baseTickSeconds": 1.953125e-05,
+        "cadenceTicks": 128,
+        "path": "results/raw/s4301-compatibility.common.f64",
+        "encoding": "little-endian Float64, uncompressed",
+        "shape": [
+          401,
+          16,
+          17
+        ],
+        "bytes": 872576,
+        "sha256": "055fa27e4b7baeb3e363a2f6a912a4fd50b44cb52ce948d23e061dffd8c4ed8d"
+      },
+      "audit": {
+        "samples": 401,
+        "pairSamples": 384960,
+        "signatureChanges": 310,
+        "stepRiskChecks": 400,
+        "endpointRiskChecks": 400,
+        "fullTrialRiskChecks": 0
+      },
+      "controllers": {
+        "events": 100,
+        "shape": [
+          100,
+          16,
+          18
+        ]
+      },
+      "fieldEvents": {
+        "count": 100,
+        "bytes": 3200,
+        "tickSchedule": "k*airTicks, k=0..count-1; no terminal refresh"
+      }
+    },
+    {
+      "runId": "s840131-H4",
+      "complete": true,
+      "endTick": 51200,
+      "stop": null,
+      "work": {
+        "physicsSteps": 12800,
+        "rk4DerivativeCalls": 819200,
+        "fieldUpdates": 12800,
+        "controllerUpdates": 100,
+        "rotorKernels": 677418,
+        "candidatePairs": 3072000,
+        "safetySteps": 12800,
+        "jointStageFields": 0,
+        "acceptedEndpointAudits": 12801,
+        "productionRefreshAuditAliases": 12800,
+        "fieldAttempts": 12800,
+        "derivativeAttempts": 0,
+        "heldIntegratorAttempts": 204800,
+        "heldIntegratorCompleted": 204800,
+        "heldDerivativeAttemptUpperBound": 819200
+      },
+      "timing": {
+        "field": 2495.034392998903,
+        "controller": 37.649092999869026,
+        "rkArithmetic": 1813.9324340008898,
+        "safetyDiagnostics": 17772.861824999884,
+        "recordingHash": 756.9502300003078,
+        "total": 23785.738830000017,
+        "cpuMs": 24529.243,
+        "totalBeforeFinalRunRecordWrite": 23804.207899,
+        "cpuMsBeforeFinalRunRecordWrite": 24556.835,
+        "totalScope": "total/cpuMs cover numerical loop only; totalBeforeFinalRunRecordWrite includes artifact serialization; scheduler job timing includes final record serialization"
+      },
+      "metrics": {
+        "minPairClearance": 0.28037843510406624,
+        "minObstacleClearance": 3.1764288958150413,
+        "maxInflow": 4.260469283998184,
+        "minMotor": 0.03900272235906368,
+        "maxMotor": 0.09393570331268704,
+        "projectionMaximum": 0,
+        "normDefectMaximum": 0,
+        "projectionWorst": null,
+        "normDefectWorst": null
+      },
+      "heldTick": 51196,
+      "raw": {
+        "count": 16,
+        "runId": "s840131-H4",
+        "dt": 0.000625,
+        "baseTickSeconds": 1.953125e-05,
+        "cadenceTicks": 32,
+        "path": "results/raw/s840131-H4.common.f64",
+        "encoding": "little-endian Float64, uncompressed",
+        "shape": [
+          1601,
+          16,
+          17
+        ],
+        "bytes": 3483776,
+        "sha256": "89c6591f638288a5249b86b71ad2598101c1af1c0065e1140e4323c5c844748a"
+      },
+      "audit": {
+        "samples": 12801,
+        "pairSamples": 12288960,
+        "signatureChanges": 645,
+        "stepRiskChecks": 12800,
+        "endpointRiskChecks": 12800,
+        "fullTrialRiskChecks": 0
+      },
+      "controllers": {
+        "events": 100,
+        "shape": [
+          100,
+          16,
+          18
+        ]
+      },
+      "fieldEvents": {
+        "count": 12800,
+        "bytes": 409600,
+        "tickSchedule": "k*airTicks, k=0..count-1; no terminal refresh"
+      }
+    },
+    {
+      "runId": "s840131-J1",
+      "complete": true,
+      "endTick": 51200,
+      "stop": null,
+      "work": {
+        "physicsSteps": 1600,
+        "rk4DerivativeCalls": 102400,
+        "fieldUpdates": 0,
+        "controllerUpdates": 100,
+        "rotorKernels": 338703,
+        "candidatePairs": 1536000,
+        "safetySteps": 1600,
+        "jointStageFields": 6400,
+        "acceptedEndpointAudits": 1601,
+        "productionRefreshAuditAliases": 0,
+        "fieldAttempts": 6400,
+        "derivativeAttempts": 102400,
+        "heldIntegratorAttempts": 0,
+        "heldIntegratorCompleted": 0,
+        "heldDerivativeAttemptUpperBound": 0
+      },
+      "timing": {
+        "field": 1306.6383799998093,
+        "controller": 55.445253999982015,
+        "rkArithmetic": 360.2120839997551,
+        "safetyDiagnostics": 7732.653967000275,
+        "recordingHash": 838.1289800000341,
+        "total": 10348.97099,
+        "cpuMs": 10905.742,
+        "totalBeforeFinalRunRecordWrite": 10367.799914999998,
+        "cpuMsBeforeFinalRunRecordWrite": 10929.283,
+        "totalScope": "total/cpuMs cover numerical loop only; totalBeforeFinalRunRecordWrite includes artifact serialization; scheduler job timing includes final record serialization"
+      },
+      "metrics": {
+        "minPairClearance": 0.2803202617373507,
+        "minObstacleClearance": 3.1764376225979425,
+        "maxInflow": 4.260469283998184,
+        "minMotor": 0.03900272710628643,
+        "maxMotor": 0.0939356105831155,
+        "projectionMaximum": 1.1191340000144688e-13,
+        "normDefectMaximum": 1.5034209011055566e-06,
+        "projectionWorst": {
+          "tick": 1024,
+          "drone": 10,
+          "value": 1.1191340000144688e-13
+        },
+        "normDefectWorst": {
+          "tick": 7504,
+          "stage": 2,
+          "drone": 10,
+          "value": 1.5034209011055566e-06
+        }
+      },
+      "heldTick": null,
+      "raw": {
+        "count": 16,
+        "runId": "s840131-J1",
+        "dt": 0.000625,
+        "baseTickSeconds": 1.953125e-05,
+        "cadenceTicks": 32,
+        "path": "results/raw/s840131-J1.common.f64",
+        "encoding": "little-endian Float64, uncompressed",
+        "shape": [
+          1601,
+          16,
+          17
+        ],
+        "bytes": 3483776,
+        "sha256": "558ffa40b119e92bc827f419f3f29559db861601a42c1e6f79e8b3687e7abf40"
+      },
+      "audit": {
+        "samples": 8001,
+        "pairSamples": 7680960,
+        "signatureChanges": 1101,
+        "stepRiskChecks": 1600,
+        "endpointRiskChecks": 1600,
+        "fullTrialRiskChecks": 1600
+      },
+      "controllers": {
+        "events": 100,
+        "shape": [
+          100,
+          16,
+          18
+        ]
+      },
+      "fieldEvents": {
+        "count": 0,
+        "bytes": 0,
+        "tickSchedule": "k*airTicks, k=0..count-1; no terminal refresh"
+      }
+    },
+    {
+      "runId": "s840131-J2",
+      "complete": true,
+      "endTick": 51200,
+      "stop": null,
+      "work": {
+        "physicsSteps": 3200,
+        "rk4DerivativeCalls": 204800,
+        "fieldUpdates": 0,
+        "controllerUpdates": 100,
+        "rotorKernels": 677415,
+        "candidatePairs": 3072000,
+        "safetySteps": 3200,
+        "jointStageFields": 12800,
+        "acceptedEndpointAudits": 3201,
+        "productionRefreshAuditAliases": 0,
+        "fieldAttempts": 12800,
+        "derivativeAttempts": 204800,
+        "heldIntegratorAttempts": 0,
+        "heldIntegratorCompleted": 0,
+        "heldDerivativeAttemptUpperBound": 0
+      },
+      "timing": {
+        "field": 2476.542906000195,
+        "controller": 50.422273000014684,
+        "rkArithmetic": 652.0634980007053,
+        "safetyDiagnostics": 14791.148011999288,
+        "recordingHash": 1609.3204160004534,
+        "total": 19676.521251000002,
+        "cpuMs": 20396.64,
+        "totalBeforeFinalRunRecordWrite": 19695.989518,
+        "cpuMsBeforeFinalRunRecordWrite": 20418.876,
+        "totalScope": "total/cpuMs cover numerical loop only; totalBeforeFinalRunRecordWrite includes artifact serialization; scheduler job timing includes final record serialization"
+      },
+      "metrics": {
+        "minPairClearance": 0.28032026171714086,
+        "minObstacleClearance": 3.1764376225942135,
+        "maxInflow": 4.260469283998184,
+        "minMotor": 0.03900272709910334,
+        "maxMotor": 0.09393561059224606,
+        "projectionMaximum": 3.675498845247472e-15,
+        "normDefectMaximum": 3.7585543744000915e-07,
+        "projectionWorst": {
+          "tick": 1024,
+          "drone": 10,
+          "value": 3.675498845247472e-15
+        },
+        "normDefectWorst": {
+          "tick": 7496,
+          "stage": 2,
+          "drone": 10,
+          "value": 3.7585543744000915e-07
+        }
+      },
+      "heldTick": null,
+      "raw": {
+        "count": 16,
+        "runId": "s840131-J2",
+        "dt": 0.000625,
+        "baseTickSeconds": 1.953125e-05,
+        "cadenceTicks": 32,
+        "path": "results/raw/s840131-J2.common.f64",
+        "encoding": "little-endian Float64, uncompressed",
+        "shape": [
+          1601,
+          16,
+          17
+        ],
+        "bytes": 3483776,
+        "sha256": "4ac74398af724149a0c4aab1d1a1830fc1a6e639fb31a5f6d2c7d875b87eb6c9"
+      },
+      "audit": {
+        "samples": 16001,
+        "pairSamples": 15360960,
+        "signatureChanges": 1207,
+        "stepRiskChecks": 3200,
+        "endpointRiskChecks": 3200,
+        "fullTrialRiskChecks": 3200
+      },
+      "controllers": {
+        "events": 100,
+        "shape": [
+          100,
+          16,
+          18
+        ]
+      },
+      "fieldEvents": {
+        "count": 0,
+        "bytes": 0,
+        "tickSchedule": "k*airTicks, k=0..count-1; no terminal refresh"
+      }
+    },
+    {
+      "runId": "s840131-J3",
+      "complete": true,
+      "endTick": 51200,
+      "stop": null,
+      "work": {
+        "physicsSteps": 6400,
+        "rk4DerivativeCalls": 409600,
+        "fieldUpdates": 0,
+        "controllerUpdates": 100,
+        "rotorKernels": 1354825,
+        "candidatePairs": 6144000,
+        "safetySteps": 6400,
+        "jointStageFields": 25600,
+        "acceptedEndpointAudits": 6401,
+        "productionRefreshAuditAliases": 0,
+        "fieldAttempts": 25600,
+        "derivativeAttempts": 409600,
+        "heldIntegratorAttempts": 0,
+        "heldIntegratorCompleted": 0,
+        "heldDerivativeAttemptUpperBound": 0
+      },
+      "timing": {
+        "field": 4791.277965000416,
+        "controller": 44.5724510001819,
+        "rkArithmetic": 1369.018487999463,
+        "safetyDiagnostics": 30067.203445000923,
+        "recordingHash": 3254.0774109997,
+        "total": 39713.88096899999,
+        "cpuMs": 41147.913,
+        "totalBeforeFinalRunRecordWrite": 39751.297353,
+        "cpuMsBeforeFinalRunRecordWrite": 41187.345,
+        "totalScope": "total/cpuMs cover numerical loop only; totalBeforeFinalRunRecordWrite includes artifact serialization; scheduler job timing includes final record serialization"
+      },
+      "metrics": {
+        "minPairClearance": 0.2803202617155861,
+        "minObstacleClearance": 3.1764376225929984,
+        "maxInflow": 4.260469283998184,
+        "minMotor": 0.0390027270986576,
+        "maxMotor": 0.09393561059281272,
+        "projectionMaximum": 4.983580072506977e-16,
+        "normDefectMaximum": 9.396387246063398e-08,
+        "projectionWorst": {
+          "tick": 9136,
+          "drone": 5,
+          "value": 4.983580072506977e-16
+        },
+        "normDefectWorst": {
+          "tick": 7492,
+          "stage": 2,
+          "drone": 10,
+          "value": 9.396387246063398e-08
+        }
+      },
+      "heldTick": null,
+      "raw": {
+        "count": 16,
+        "runId": "s840131-J3",
+        "dt": 0.00015625,
+        "baseTickSeconds": 1.953125e-05,
+        "cadenceTicks": 8,
+        "path": "results/raw/s840131-J3.dense.f64",
+        "encoding": "little-endian Float64, uncompressed",
+        "shape": [
+          6401,
+          16,
+          17
+        ],
+        "bytes": 13928576,
+        "sha256": "dbc554ed5e5f7056985a07b332afa788c7de7dfd10257507e0378c069c476ed5"
+      },
+      "audit": {
+        "samples": 32001,
+        "pairSamples": 30720960,
+        "signatureChanges": 1267,
+        "stepRiskChecks": 6400,
+        "endpointRiskChecks": 6400,
+        "fullTrialRiskChecks": 6400
+      },
+      "controllers": {
+        "events": 100,
+        "shape": [
+          100,
+          16,
+          18
+        ]
+      },
+      "fieldEvents": {
+        "count": 0,
+        "bytes": 0,
+        "tickSchedule": "k*airTicks, k=0..count-1; no terminal refresh"
+      }
+    },
+    {
+      "runId": "s840131-P1",
+      "complete": false,
+      "endTick": 50768,
+      "stop": {
+        "runId": "s840131-P1",
+        "phase": "accepted-endpoint",
+        "tick": 50768,
+        "state": [
+          [
+            -5.858707300954273,
+            -1.0466673499046388,
+            5.037318628907644,
+            0.5370023197951542,
+            -0.4226265555559241,
+            -0.3949135283084193,
+            -0.01655006767721886,
+            -0.00010858414915203117,
+            -0.28820046992536197,
+            0.9574270586337962,
+            0.0549862793783497,
+            -0.35365643376537426,
+            0.23574635602625837,
+            0.06565833753092111,
+            0.0668653361365506,
+            0.065951918643166,
+            0.06646352410302446
+          ],
+          [
+            -6.654366922248274,
+            0.6684467091350452,
+            4.0732036728676455,
+            0.503030722443593,
+            -0.5079281863409781,
+            -0.39526106789071547,
+            0.06178281043262796,
+            0.03632273370147804,
+            -0.6046971888397283,
+            0.7932243397430688,
+            0.3007944417241887,
+            -0.35508551786167214,
+            -0.07990072500611878,
+            0.07227227473523952,
+            0.06832432950431076,
+            0.07055328131753585,
+            0.07130133673951992
+          ],
+          [
+            -6.592730686928281,
+            0.49474231982222827,
+            4.899619166098093,
+            0.24684735304230737,
+            -0.47485392097985846,
+            -0.3859355287944346,
+            0.0011419979974487114,
+            0.019533367123726685,
+            -0.47048175544495,
+            0.8821927573964896,
+            -0.04372129470842727,
+            0.020039481889093026,
+            0.22050280692775834,
+            0.06612158327449155,
+            0.06719706916463265,
+            0.06589259379614205,
+            0.06706718026669768
+          ],
+          [
+            -6.776490869066927,
+            -0.247061550935293,
+            3.3046392304117624,
+            0.06642386357626809,
+            -0.3664690268888307,
+            -0.6039083056107555,
+            -0.05473871960930111,
+            0.09355516718351797,
+            -0.3405809558606918,
+            0.9339463131110995,
+            0.15273815010837025,
+            0.17408172343848874,
+            -0.5735644000439772,
+            0.07863393598535955,
+            0.07732250262015103,
+            0.07171121729878473,
+            0.0774156265060652
+          ],
+          [
+            -6.487182260345337,
+            -0.9681354953174945,
+            4.191536223006634,
+            0.06251745007264131,
+            -0.08717597080607366,
+            -0.4379745956403034,
+            0.13961317468892226,
+            -0.05290312127922222,
+            -0.8489902089168367,
+            0.5068777430264051,
+            -1.0985659354659667,
+            0.5162834148479815,
+            0.47225298722511666,
+            0.0801005821652046,
+            0.06554342514437739,
+            0.07803740606024145,
+            0.07351625833310994
+          ],
+          [
+            -5.803915824700895,
+            -0.8104888863379662,
+            3.405132820493804,
+            0.3401179323104663,
+            -0.649546043718655,
+            -0.3479312415073434,
+            0.04083190492273412,
+            0.02122268419600951,
+            -0.48269573634512286,
+            0.874578286564523,
+            -0.3644578804724867,
+            -0.3581375654728747,
+            0.5968507460084885,
+            0.06945743020657782,
+            0.06748781749971874,
+            0.06971814209429453,
+            0.06876914415122616
+          ],
+          [
+            -6.643652134924934,
+            -0.28253984730302195,
+            4.473158138914542,
+            0.26592660075126556,
+            -0.4407295793203477,
+            -0.25384195393439485,
+            0.006033654873350014,
+            0.013608345044998124,
+            -0.48145788665824246,
+            0.8763428046880885,
+            -0.06355526205645258,
+            -0.08312795835892432,
+            0.38306187608526404,
+            0.06585902212422044,
+            0.06496375637129977,
+            0.06588063254489052,
+            0.06509187882569589
+          ],
+          [
+            -5.925087139841943,
+            0.8467032697374862,
+            3.323165738885244,
+            0.10943044902442485,
+            -0.34203372545438826,
+            -0.6982637701977258,
+            0.12858466188443746,
+            0.035460211051072936,
+            -0.5302559674284444,
+            0.8372796230452542,
+            -0.00585511664352283,
+            0.5445366905574323,
+            0.6123880595715342,
+            0.07850064822713172,
+            0.07291983018782311,
+            0.08188821735014909,
+            0.08316965834200546
+          ],
+          [
+            -6.641550963611862,
+            0.5693826897144749,
+            3.2564243003829296,
+            0.31622029700585425,
+            -0.17641541263749988,
+            -0.591170033339734,
+            0.01506465593546576,
+            0.017290744848008566,
+            -0.5325392006924898,
+            0.8460946081910409,
+            0.37987162510359934,
+            0.1800388021851352,
+            -0.45286135604691996,
+            0.07393362580667868,
+            0.07427876438564737,
+            0.07433157967307635,
+            0.07441512124081236
+          ],
+          [
+            -5.801376762424836,
+            0.5751795233965625,
+            4.9646530517156595,
+            0.29147627312634206,
+            -0.45973637166403075,
+            -0.39103151100791445,
+            0.006907951300507304,
+            0.018077026388034007,
+            -0.4544591783632456,
+            0.8905573291637098,
+            -0.03655840413630243,
+            0.012177704162172627,
+            0.011141295093219051,
+            0.06641282046255166,
+            0.06708666279043925,
+            0.06625178747112585,
+            0.06696436015606827
+          ],
+          [
+            -6.0534036520283,
+            -1.0631157377062717,
+            4.167275694436642,
+            0.46706539144505566,
+            -0.12907579233494185,
+            -0.4640165471565664,
+            0.06128266266250491,
+            -0.12622283302103443,
+            0.21512370413861548,
+            -0.966454356707454,
+            1.2534060929202306,
+            -0.08051315817992766,
+            -0.3986678067069995,
+            0.07661596042702185,
+            0.07370943108651327,
+            0.07199763771034043,
+            0.07700686198990511
+          ],
+          [
+            -6.585487044451127,
+            -1.0281281230053714,
+            5.0254001041536425,
+            0.19647606960065603,
+            -0.43332504481735995,
+            -0.4154724976242112,
+            -0.014444922414429465,
+            0.013853330693170149,
+            -0.42226743508869996,
+            0.9062503201151201,
+            -0.1798180369175689,
+            -0.05880965414086318,
+            1.4399801799223042,
+            0.06546980581925958,
+            0.06669135271485095,
+            0.06543917492118245,
+            0.06636320396028907
+          ],
+          [
+            -6.566723383334979,
+            -0.8914689394306974,
+            3.4541480218029235,
+            0.24806627110096327,
+            -0.6506178569410654,
+            -0.5459604725465776,
+            0.05250167348763861,
+            0.022649921147547228,
+            -0.5057770084224146,
+            0.8607672002953412,
+            -0.3693899970709841,
+            -0.5302860513625018,
+            1.2262842351638674,
+            0.07379540333759167,
+            0.07065563193527231,
+            0.07497504924040303,
+            0.07349394124512293
+          ],
+          [
+            -5.891243142295197,
+            -0.30042897700403515,
+            4.497810791461227,
+            0.44472617311534246,
+            -0.4476581025618759,
+            -0.2463942337271165,
+            0.011662095557959658,
+            0.017469679273256142,
+            -0.4153197572709799,
+            0.9094329579763761,
+            0.09631110188964381,
+            -0.22292250015774318,
+            -0.32415042602567107,
+            0.06542490250048628,
+            0.06522378854487625,
+            0.06560671024864705,
+            0.06522285501229359
+          ],
+          [
+            -5.985867029241686,
+            -0.22406693554481555,
+            3.508134367162416,
+            0.07486795129686827,
+            -0.5289867275430622,
+            -0.5233321263112136,
+            -0.011229077760199917,
+            -0.0423241496161138,
+            0.1697660443715504,
+            -0.9845110788357667,
+            -0.4894875569422954,
+            1.0209171089150288,
+            -0.23799684870915286,
+            0.07383529379847158,
+            0.0713572010750226,
+            0.07078281571887617,
+            0.077498348082787
+          ],
+          [
+            -5.8837533874140835,
+            0.6891405764185333,
+            4.149709393730602,
+            0.6190747715352163,
+            -0.5324754798905675,
+            -0.43127698135147674,
+            0.034722894803060546,
+            0.05346865252475445,
+            -0.5466833613228371,
+            0.8349088131205988,
+            0.40320751522227255,
+            -0.06950622793851764,
+            -0.53786486149737,
+            0.07383665187973026,
+            0.0695325110548144,
+            0.06912378553180189,
+            0.0724977768613203
+          ]
+        ],
+        "commands": [
+          [
+            0.06556931661104902,
+            0.06730420111469133,
+            0.06589972526487566,
+            0.06679326946697937
+          ],
+          [
+            0.07200799291445903,
+            0.06792308867923763,
+            0.07051092373472498,
+            0.071085726983761
+          ],
+          [
+            0.06627498075706965,
+            0.06733180732402398,
+            0.0660257083056922,
+            0.06723248757419596
+          ],
+          [
+            0.0788406174280009,
+            0.07687346077022657,
+            0.07328269814275497,
+            0.07718048348017624
+          ],
+          [
+            0.07995648650892404,
+            0.06606253811863455,
+            0.07725106698798814,
+            0.07083696744967932
+          ],
+          [
+            0.06943252451871815,
+            0.06758105632738898,
+            0.0696825281865911,
+            0.06862852577966524
+          ],
+          [
+            0.06631510698584486,
+            0.0652882460534353,
+            0.06632937806079695,
+            0.06542800346320196
+          ],
+          [
+            0.08146998394514958,
+            0.07338584368961991,
+            0.0818941821680196,
+            0.08450849231057135
+          ],
+          [
+            0.07421811702795013,
+            0.07473731441125465,
+            0.07528176414606592,
+            0.07483611278996145
+          ],
+          [
+            0.06661054619306496,
+            0.0671454122715525,
+            0.06644548428806409,
+            0.06706711684325666
+          ],
+          [
+            0.07445845697918485,
+            0.0731459336930492,
+            0.07265978233603926,
+            0.07617125715665615
+          ],
+          [
+            0.06535552673715384,
+            0.06736032725865837,
+            0.065244370149836,
+            0.06698291049630614
+          ],
+          [
+            0.0730862007724472,
+            0.07064925485624872,
+            0.07446442498067217,
+            0.07292411925166052
+          ],
+          [
+            0.06567244212146997,
+            0.06550975655847874,
+            0.06590768496820482,
+            0.0654652963874299
+          ],
+          [
+            0.07597859244712674,
+            0.07169213992943299,
+            0.06979965037121108,
+            0.07836459695845105
+          ],
+          [
+            0.07420167873997773,
+            0.06882480051940386,
+            0.06933717790416365,
+            0.07256188707499721
+          ]
+        ],
+        "heldWinds": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0.7683275783739613,
+            0.3795158865271416,
+            0.3933828397593589,
+            0.8068285103678726
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1.4761350782466864,
+            0.9747961802869936,
+            0.7557875994026692,
+            1.0844820538947721
+          ],
+          [
+            0.6641606107175323,
+            0.38927813394198113,
+            0.5336067782350229,
+            1.0133958289026859
+          ],
+          [
+            0.2550543424995378,
+            0.18583150303026114,
+            0.25751253865519286,
+            0.359264219978133
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2.322690212694451,
+            1.5620823700002657,
+            1.828963775895809,
+            2.8153626097322113
+          ],
+          [
+            1.559750180865381,
+            1.7028369317862444,
+            1.655693880674712,
+            1.584210834366808
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0.6350295325334291,
+            0.3249172353897522,
+            0.2374897314555342,
+            0.4764816894518716
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0.6157160484596516,
+            0.4866769944678938,
+            0.6804388849276435,
+            0.8920375755394232
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1.6545106065874624,
+            1.034878806156351,
+            1.114058984515926,
+            1.8168458158994836
+          ],
+          [
+            1.5454467065354103,
+            0.78302767297375,
+            0.7055147375390187,
+            1.3378084188108028
+          ]
+        ],
+        "type": "Error",
+        "message": "Per-job cooperative wall cap",
+        "detail": null,
+        "stageEvidence": null,
+        "endpointEvidence": null,
+        "exactStoppedState": true,
+        "exactIntegratorInput": false,
+        "internalFailingStageUnavailable": false
+      },
+      "work": {
+        "physicsSteps": 25384,
+        "rk4DerivativeCalls": 1624576,
+        "fieldUpdates": 12692,
+        "controllerUpdates": 100,
+        "rotorKernels": 672126,
+        "candidatePairs": 3046080,
+        "safetySteps": 25384,
+        "jointStageFields": 0,
+        "acceptedEndpointAudits": 25385,
+        "productionRefreshAuditAliases": 12692,
+        "fieldAttempts": 12692,
+        "derivativeAttempts": 0,
+        "heldIntegratorAttempts": 406144,
+        "heldIntegratorCompleted": 406144,
+        "heldDerivativeAttemptUpperBound": 1624576
+      },
+      "timing": {
+        "field": 2564.96282399958,
+        "controller": 47.4413450001739,
+        "rkArithmetic": 3499.567078002059,
+        "safetyDiagnostics": 35093.14053000475,
+        "recordingHash": 1559.3976890003833,
+        "total": 44008.68719699999,
+        "cpuMs": 44897.207,
+        "totalBeforeFinalRunRecordWrite": 44027.70824799998,
+        "cpuMsBeforeFinalRunRecordWrite": 44923.862,
+        "totalScope": "total/cpuMs cover numerical loop only; totalBeforeFinalRunRecordWrite includes artifact serialization; scheduler job timing includes final record serialization"
+      },
+      "metrics": {
+        "minPairClearance": 0.28037843510406824,
+        "minObstacleClearance": 3.1814243003829294,
+        "maxInflow": 4.260469283998184,
+        "minMotor": 0.03900272235906194,
+        "maxMotor": 0.09393570331268901,
+        "projectionMaximum": 0,
+        "normDefectMaximum": 0,
+        "projectionWorst": null,
+        "normDefectWorst": null
+      },
+      "heldTick": 50764,
+      "raw": {
+        "count": 16,
+        "runId": "s840131-P1",
+        "dt": 0.000625,
+        "baseTickSeconds": 1.953125e-05,
+        "cadenceTicks": 32,
+        "path": "results/raw/s840131-P1.common.f64",
+        "encoding": "little-endian Float64, uncompressed",
+        "shape": [
+          1587,
+          16,
+          17
+        ],
+        "bytes": 3453312,
+        "sha256": "3aa5605260b843d99c12d2155076723ed0b5ee522fa6c5e2e61473415656885d"
+      },
+      "audit": {
+        "samples": 25385,
+        "pairSamples": 24369600,
+        "signatureChanges": 655,
+        "stepRiskChecks": 25384,
+        "endpointRiskChecks": 25384,
+        "fullTrialRiskChecks": 0
+      },
+      "controllers": {
+        "events": 100,
+        "shape": [
+          100,
+          16,
+          18
+        ]
+      },
+      "fieldEvents": {
+        "count": 12692,
+        "bytes": 406144,
+        "tickSchedule": "k*airTicks, k=0..count-1; no terminal refresh"
+      }
+    },
+    {
+      "runId": "s840137-J1",
+      "complete": true,
+      "endTick": 51200,
+      "stop": null,
+      "work": {
+        "physicsSteps": 1600,
+        "rk4DerivativeCalls": 102400,
+        "fieldUpdates": 0,
+        "controllerUpdates": 100,
+        "rotorKernels": 351498,
+        "candidatePairs": 1536000,
+        "safetySteps": 1600,
+        "jointStageFields": 6400,
+        "acceptedEndpointAudits": 1601,
+        "productionRefreshAuditAliases": 0,
+        "fieldAttempts": 6400,
+        "derivativeAttempts": 102400,
+        "heldIntegratorAttempts": 0,
+        "heldIntegratorCompleted": 0,
+        "heldDerivativeAttemptUpperBound": 0
+      },
+      "timing": {
+        "field": 1204.0532499996625,
+        "controller": 39.303293000062695,
+        "rkArithmetic": 320.3397959997819,
+        "safetyDiagnostics": 7401.644535000451,
+        "recordingHash": 807.3393880005169,
+        "total": 9822.839038999999,
+        "cpuMs": 10212.22,
+        "totalBeforeFinalRunRecordWrite": 9842.768289999993,
+        "cpuMsBeforeFinalRunRecordWrite": 10248.991,
+        "totalScope": "total/cpuMs cover numerical loop only; totalBeforeFinalRunRecordWrite includes artifact serialization; scheduler job timing includes final record serialization"
+      },
+      "metrics": {
+        "minPairClearance": 0.35724906292754044,
+        "minObstacleClearance": 3.190822661968941,
+        "maxInflow": 3.7307597725434114,
+        "minMotor": 0.03213990225121765,
+        "maxMotor": 0.11513543342591367,
+        "projectionMaximum": 2.336105510169407e-13,
+        "normDefectMaximum": 1.5578633940638298e-06,
+        "projectionWorst": {
+          "tick": 39904,
+          "drone": 9,
+          "value": 2.336105510169407e-13
+        },
+        "normDefectWorst": {
+          "tick": 7792,
+          "stage": 2,
+          "drone": 13,
+          "value": 1.5578633940638298e-06
+        }
+      },
+      "heldTick": null,
+      "raw": {
+        "count": 16,
+        "runId": "s840137-J1",
+        "dt": 0.000625,
+        "baseTickSeconds": 1.953125e-05,
+        "cadenceTicks": 32,
+        "path": "results/raw/s840137-J1.common.f64",
+        "encoding": "little-endian Float64, uncompressed",
+        "shape": [
+          1601,
+          16,
+          17
+        ],
+        "bytes": 3483776,
+        "sha256": "40f79fa96de0865795bf11cfef7e6b642210e108918c84d418bd373559f39e79"
+      },
+      "audit": {
+        "samples": 8001,
+        "pairSamples": 7680960,
+        "signatureChanges": 1175,
+        "stepRiskChecks": 1600,
+        "endpointRiskChecks": 1600,
+        "fullTrialRiskChecks": 1600
+      },
+      "controllers": {
+        "events": 100,
+        "shape": [
+          100,
+          16,
+          18
+        ]
+      },
+      "fieldEvents": {
+        "count": 0,
+        "bytes": 0,
+        "tickSchedule": "k*airTicks, k=0..count-1; no terminal refresh"
+      }
+    },
+    {
+      "runId": "s840137-J2",
+      "complete": true,
+      "endTick": 51200,
+      "stop": null,
+      "work": {
+        "physicsSteps": 3200,
+        "rk4DerivativeCalls": 204800,
+        "fieldUpdates": 0,
+        "controllerUpdates": 100,
+        "rotorKernels": 703000,
+        "candidatePairs": 3072000,
+        "safetySteps": 3200,
+        "jointStageFields": 12800,
+        "acceptedEndpointAudits": 3201,
+        "productionRefreshAuditAliases": 0,
+        "fieldAttempts": 12800,
+        "derivativeAttempts": 204800,
+        "heldIntegratorAttempts": 0,
+        "heldIntegratorCompleted": 0,
+        "heldDerivativeAttemptUpperBound": 0
+      },
+      "timing": {
+        "field": 2384.329877999553,
+        "controller": 36.99657099999604,
+        "rkArithmetic": 677.5726280025119,
+        "safetyDiagnostics": 15118.549699000912,
+        "recordingHash": 1640.1431719998218,
+        "total": 19958.855744,
+        "cpuMs": 20643.633,
+        "totalBeforeFinalRunRecordWrite": 19977.847492999994,
+        "cpuMsBeforeFinalRunRecordWrite": 20678.679,
+        "totalScope": "total/cpuMs cover numerical loop only; totalBeforeFinalRunRecordWrite includes artifact serialization; scheduler job timing includes final record serialization"
+      },
+      "metrics": {
+        "minPairClearance": 0.3572489822429943,
+        "minObstacleClearance": 3.1908226619908144,
+        "maxInflow": 3.7307580801367117,
+        "minMotor": 0.03213990233650273,
+        "maxMotor": 0.11513543335463548,
+        "projectionMaximum": 7.402017709459285e-15,
+        "normDefectMaximum": 3.894674314164348e-07,
+        "projectionWorst": {
+          "tick": 39680,
+          "drone": 9,
+          "value": 7.402017709459285e-15
+        },
+        "normDefectWorst": {
+          "tick": 7800,
+          "stage": 2,
+          "drone": 13,
+          "value": 3.894674314164348e-07
+        }
+      },
+      "heldTick": null,
+      "raw": {
+        "count": 16,
+        "runId": "s840137-J2",
+        "dt": 0.000625,
+        "baseTickSeconds": 1.953125e-05,
+        "cadenceTicks": 32,
+        "path": "results/raw/s840137-J2.common.f64",
+        "encoding": "little-endian Float64, uncompressed",
+        "shape": [
+          1601,
+          16,
+          17
+        ],
+        "bytes": 3483776,
+        "sha256": "15eaae72b7c987b5cfd07e5620e963d1fdba2d2c704b4e855f06a0e63a36f4b8"
+      },
+      "audit": {
+        "samples": 16001,
+        "pairSamples": 15360960,
+        "signatureChanges": 1277,
+        "stepRiskChecks": 3200,
+        "endpointRiskChecks": 3200,
+        "fullTrialRiskChecks": 3200
+      },
+      "controllers": {
+        "events": 100,
+        "shape": [
+          100,
+          16,
+          18
+        ]
+      },
+      "fieldEvents": {
+        "count": 0,
+        "bytes": 0,
+        "tickSchedule": "k*airTicks, k=0..count-1; no terminal refresh"
+      }
+    },
+    {
+      "runId": "s840137-J3",
+      "complete": true,
+      "endTick": 51200,
+      "stop": null,
+      "work": {
+        "physicsSteps": 6400,
+        "rk4DerivativeCalls": 409600,
+        "fieldUpdates": 0,
+        "controllerUpdates": 100,
+        "rotorKernels": 1405998,
+        "candidatePairs": 6144000,
+        "safetySteps": 6400,
+        "jointStageFields": 25600,
+        "acceptedEndpointAudits": 6401,
+        "productionRefreshAuditAliases": 0,
+        "fieldAttempts": 25600,
+        "derivativeAttempts": 409600,
+        "heldIntegratorAttempts": 0,
+        "heldIntegratorCompleted": 0,
+        "heldDerivativeAttemptUpperBound": 0
+      },
+      "timing": {
+        "field": 4922.537075999848,
+        "controller": 40.54809599999862,
+        "rkArithmetic": 1344.9824029983865,
+        "safetyDiagnostics": 30105.247716000085,
+        "recordingHash": 3257.265509002391,
+        "total": 39851.70762599999,
+        "cpuMs": 41050.799,
+        "totalBeforeFinalRunRecordWrite": 39893.52634499999,
+        "cpuMsBeforeFinalRunRecordWrite": 41095.896,
+        "totalScope": "total/cpuMs cover numerical loop only; totalBeforeFinalRunRecordWrite includes artifact serialization; scheduler job timing includes final record serialization"
+      },
+      "metrics": {
+        "minPairClearance": 0.3572489667944375,
+        "minObstacleClearance": 3.190822661987756,
+        "maxInflow": 3.730765019154549,
+        "minMotor": 0.0321399023294867,
+        "maxMotor": 0.11513543336044023,
+        "projectionMaximum": 4.972850431340754e-16,
+        "normDefectMaximum": 9.736697825779572e-08,
+        "projectionWorst": {
+          "tick": 13248,
+          "drone": 3,
+          "value": 4.972850431340754e-16
+        },
+        "normDefectWorst": {
+          "tick": 7788,
+          "stage": 2,
+          "drone": 13,
+          "value": 9.736697825779572e-08
+        }
+      },
+      "heldTick": null,
+      "raw": {
+        "count": 16,
+        "runId": "s840137-J3",
+        "dt": 0.00015625,
+        "baseTickSeconds": 1.953125e-05,
+        "cadenceTicks": 8,
+        "path": "results/raw/s840137-J3.dense.f64",
+        "encoding": "little-endian Float64, uncompressed",
+        "shape": [
+          6401,
+          16,
+          17
+        ],
+        "bytes": 13928576,
+        "sha256": "95fa467cd439c43afe2d8f0d4d75e1812c42bf862c38bba398ae509d5312d4b8"
+      },
+      "audit": {
+        "samples": 32001,
+        "pairSamples": 30720960,
+        "signatureChanges": 1322,
+        "stepRiskChecks": 6400,
+        "endpointRiskChecks": 6400,
+        "fullTrialRiskChecks": 6400
+      },
+      "controllers": {
+        "events": 100,
+        "shape": [
+          100,
+          16,
+          18
+        ]
+      },
+      "fieldEvents": {
+        "count": 0,
+        "bytes": 0,
+        "tickSchedule": "k*airTicks, k=0..count-1; no terminal refresh"
+      }
+    }
+  ],
+  "preflights": [
+    {
+      "id": "preflight-s840131",
+      "passed": true,
+      "visitedEndpoints": 6401,
+      "expectedEndpoints": 6401,
+      "controllerEvents": 100
+    },
+    {
+      "id": "preflight-s840137",
+      "passed": true,
+      "visitedEndpoints": 6401,
+      "expectedEndpoints": 6401,
+      "controllerEvents": 100
+    }
+  ],
+  "compatibility": {
+    "passed": true,
+    "expected": {
+      "seed": 4301,
+      "arm": "compatibility",
+      "stepTicks": 128,
+      "airTicks": 512,
+      "kind": "held",
+      "terminalStateWindSha256": "fabdd3452577cfdc3cb948ecd12b90c93fc74ee8673129a9737ca2d3e1265ef7",
+      "work": {
+        "physicsSteps": 400,
+        "rk4DerivativeCalls": 25600,
+        "fieldUpdates": 100,
+        "controllerUpdates": 100,
+        "rotorKernels": 5394,
+        "candidatePairs": 24000,
+        "safetySteps": 400
+      }
+    },
+    "actual": {
+      "complete": true,
+      "terminalStateWindSha256": "fabdd3452577cfdc3cb948ecd12b90c93fc74ee8673129a9737ca2d3e1265ef7",
+      "work": {
+        "physicsSteps": 400,
+        "rk4DerivativeCalls": 25600,
+        "fieldUpdates": 100,
+        "controllerUpdates": 100,
+        "rotorKernels": 5394,
+        "candidatePairs": 24000,
+        "safetySteps": 400,
+        "jointStageFields": 0,
+        "acceptedEndpointAudits": 401,
+        "productionRefreshAuditAliases": 100,
+        "fieldAttempts": 100,
+        "derivativeAttempts": 0,
+        "heldIntegratorAttempts": 6400,
+        "heldIntegratorCompleted": 6400,
+        "heldDerivativeAttemptUpperBound": 25600
+      },
+      "heldTick": 50688
+    }
+  },
+  "lastDurableCheckpoint": {
+    "runId": "s840131-P1",
+    "phase": "accepted-endpoint",
+    "tick": 50688,
+    "exactStoppedState": false,
+    "meaning": "Last durable checkpoint only"
+  },
+  "failureFiles": [
+    {
+      "path": "results/failures/campaign.json",
+      "bytes": 12350,
+      "sha256": "188aea83c18221376d91e168daa847caa2a3f1797dda5a2e6e593c135222ad66"
+    },
+    {
+      "path": "results/failures/s840131-P1.json",
+      "bytes": 11224,
+      "sha256": "e3582b5b0ace6c7c7ab9c3f485c416e3dded49874309665db4fad20542d677da"
+    }
+  ],
+  "partialFiles": [],
+  "currentRetainedBytes": 118140355,
+  "under200MBCap": true,
+  "status": "verification-complete",
+  "allIdentityChecksPassed": true,
+  "verificationWallSecondsBeforeReportWrite": 0.13389239800017094,
+  "verificationCpuSecondsBeforeReportWrite": 0.13167521100000001
+}

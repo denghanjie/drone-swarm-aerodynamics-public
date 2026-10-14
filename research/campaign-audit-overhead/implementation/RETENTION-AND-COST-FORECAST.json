@@ -1,0 +1,109 @@
+{
+  "schema": "audit-c1-retention-cost-forecast/v1",
+  "status": "prospective_static_no_numerical_run",
+  "baselineOldRetainedBytes": 133854607,
+  "currentNewStudyRetainedBytes": 818044,
+  "hardAllocations": {
+    "documentsSourcesManifests": 1000000,
+    "receiptsLogsIncludingDisplayEvidence": 2000000,
+    "regeneratedSignaturesBracketsEqualityEvidence": 9000000,
+    "temporaryOverlap": 2000000,
+    "failureReserve": 2000000
+  },
+  "allocationTotal": 16000000,
+  "combinedWorstCaseBytes": 149854607,
+  "combinedCap": 200000000,
+  "documentationRemainingBeforeOneMB": 181956,
+  "artifacts": {
+    "pairedPreflightExactKnownBytes": 1068444,
+    "preflightInputs": [
+      {
+        "path": "research-next/implementation/results/audit/preflight-s840131.json",
+        "bytes": 18725
+      },
+      {
+        "path": "research-next/implementation/results/audit/preflight-s840131.signatures.bin",
+        "bytes": 204832
+      },
+      {
+        "path": "research-next/implementation/results/audit/preflight-s840131.brackets.f64",
+        "bytes": 43520
+      },
+      {
+        "path": "research-next/implementation/results/audit/preflight-s840137.json",
+        "bytes": 18793
+      },
+      {
+        "path": "research-next/implementation/results/audit/preflight-s840137.signatures.bin",
+        "bytes": 204832
+      },
+      {
+        "path": "research-next/implementation/results/audit/preflight-s840137.brackets.f64",
+        "bytes": 43520
+      }
+    ],
+    "persistenceSignatureBytes": 196672,
+    "persistenceJSONAndBracketBound": 200000,
+    "workloadComponentAndCrossAliasEvidenceBound": 2000000,
+    "miscEqualityEvidenceAllowance": 1000000,
+    "noCopiesOfHistoricalArrays": true,
+    "nonpreflightAggregatesPersist": false
+  },
+  "normalReceiptLogForecast": {
+    "completedCaseAndChildJobReceiptsCeiling": 600000,
+    "supervisorStdoutStderrBound": 84992,
+    "perChildSupervisorRowsCeiling": 166000,
+    "supervisorGateCostFinalAccountingCeiling": 120000,
+    "displayEvidenceReservation": 1000000,
+    "total": 1970992,
+    "headroomWithinTwoMB": 29008
+  },
+  "failureScope": {
+    "reserve": 2000000,
+    "maximumAdmittedSwarm": 16,
+    "largestCurrentObservationPairs": 960,
+    "largestPacketSamples": 6,
+    "capture": "One current paired observation or risk component; compact raw-state/location inputs for compare/checkStep, not six duplicated pair graphs. Whole-pass benchmark outputs are never captured. Correctness finish mismatch retains first differing component/value plus deterministic original selectors. Benchmark hierarchy locates first mismatching sample/finish component; cross-component alias counterexample is retained separately.",
+    "pairedN16ObservationConservativeBytes": 1000000,
+    "pairedRiskErrorAndSixRawInputsConservativeBytes": 1000000,
+    "crossAliasCounterexampleConservativeBytes": 1500000,
+    "metadataAndCheckpointAllowance": 200000,
+    "failureEncoding": "v8 serialization after lossless Error-to-record conversion; numbers, raw Float64 and object aliases preserved; private Error stack excluded",
+    "unavailableBaselineDuringBenchmark": "Expected baseline component digest/source/freeze preserved; baseline complete output unavailable, explicitly reported",
+    "hardKill": "Exact current input may be unavailable, last durable checkpoint explicitly not exact",
+    "crossAliasBoundBasis": "Only cross-component alias edges are emitted; within-sample/reduction aliases are already included in each canonical component digest. Both expected/current cross-component lists plus up to257sample/finish/risk reference paths fit a conservative1.5MB bound;200KB separate metadata allowance leaves300KB failure reserve headroom. Any unexpected overflow is a resource/evidence blocker, never silently truncated or promoted."
+  },
+  "temporaryBound": {
+    "largestNormalTemporaryFileBound": 1000000,
+    "largestEmergencyTemporaryFileBound": 1700000,
+    "allTemporaryOverlapAllocation": 2000000,
+    "finalEmergencyEvidenceAllocationSeparate": 2000000
+  },
+  "correctnessExtraCost": {
+    "workloadContracts": 4,
+    "observationsPerVariant": 836,
+    "additionalPairedObservations": 1672,
+    "syntheticSuccessfulObservationsPerVariant": 3117,
+    "bracketObservationsPerVariant": 220,
+    "jsonObservationsPerVariant": 23
+  },
+  "costLimitsUnchanged": {
+    "totalWallCpuSeconds": 300,
+    "correctnessWallCpuSeconds": 180,
+    "performanceWallCpuSeconds": 90,
+    "accountingReservationSeconds": 30
+  },
+  "costUncertainty": [
+    "The old71.9s proxy excluded complete public-output canonical graph consumption, 4 exact workload contracts, descriptor/alias comparisons and much serialization.",
+    "Canonical consumption visits at least308,183,040 pair-margin values across40,128 performance observations, plus all pair fields, input states, extrema, brackets and risks. Buffered encoding avoids per-number allocation, but actual CPU and memory costs are unmeasured.",
+    "Full graph retention and canonical reference maps increase RSS; finite512MiB child/1GiB tree caps may end the study.",
+    "Original aggregate safety bucket is neither an audit-only measurement nor a bound. No guarantee of completion or speedup.",
+    "Resource-limited correctness means no benchmark; resource-limited cost means no qualifying ratios. No retries, threshold changes or extension."
+  ],
+  "scopeLimits": [
+    "No new trajectories, physics calls, geometry evaluations, timing pilots or module execution during preparation.",
+    "All output ceilings include duplicate and partial files; no prior evidence is deleted.",
+    "The forecast must be independently accepted and rechecked against actual final source/manifest size before release.",
+    "Benchmark timing includes fixed per-observation current-input capture and cooperative resource guards, equally in both variants; ratios are full guarded replay costs."
+  ]
+}

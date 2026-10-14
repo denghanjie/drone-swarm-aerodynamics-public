@@ -1,0 +1,129 @@
+{
+  "schema": "selector-contract-r4-sanitized-postrun-summary/v1",
+  "isOriginalReceipt": false,
+  "status": "prepared_local_unpublished",
+  "experimentId": "SELECTOR-CONTRACT-R4",
+  "transformation": "Explicit selection of aggregate outcome/resource fields and evidence commitments from retained originals. No detailed input inventory, source descriptor, runtime command/path, raw state bytes, or full checkpoint is included. Originals are unchanged.",
+  "terminal": {
+    "status": "incomplete_or_blocked",
+    "terminal": true,
+    "attempt": 1,
+    "retries": 0,
+    "childReturnCode": -9,
+    "childResultStatus": null,
+    "errorClass": "FileNotFoundError",
+    "errorTargetBasename": "current-context.next.json"
+  },
+  "coverage": {
+    "plannedCases": 100,
+    "completedCases": 8,
+    "interruptedCases": 1,
+    "unreachedCases": 91,
+    "nominalAcceptCompleted": 8,
+    "nominalAcceptPlanned": 23,
+    "negativeControlsReached": 0,
+    "negativeControlsPlanned": 73,
+    "positiveControlsReached": 0,
+    "positiveControlsPlanned": 4,
+    "completedCaseIds": [
+      "json-0-initial",
+      "json-0-final",
+      "json-1-initial",
+      "json-1-final",
+      "json-2-initial",
+      "json-2-final",
+      "json-3-initial",
+      "json-3-final"
+    ],
+    "completedCasesRecordedExpectedAndActual": "accept"
+  },
+  "lastDurableContext": {
+    "caseId": "json-4-initial",
+    "sequence": 116,
+    "stage": "before-case-receipt",
+    "completedCount": 8,
+    "descriptorComputed": true,
+    "directStateEqualityRecorded": true,
+    "savedSignatureRecorded": true,
+    "ninthCaseReceiptPresent": false,
+    "exactInterruptionOrWholeProcessState": false,
+    "meaning": "Last durably available fields only; work may have advanced after that save. The ninth case is not counted as completed."
+  },
+  "failureInterpretation": {
+    "observation": "The wrapper stopped after a checkpoint temporary filename disappeared during storage accounting.",
+    "supportedExplanation": "Enumeration-to-stat race with the checkpoint atomic rename.",
+    "certainty": "Source-supported explanation; the retained receipt has no traceback proving which census call observed the disappearance."
+  },
+  "recordedResourceObservations": {
+    "wallSecondsBeforeReceipt": 0.357154133,
+    "wholeTreeCpuSecondsBeforeReceipt": 0.5101749999999999,
+    "conservativeRssBytes": 84267008,
+    "logicalSourceBytesLastObservedOrReported": 98669013,
+    "logicalSourceReadConservativeUpperBytes": null,
+    "readAccounting": "incomplete_unknown_interval_after_last_sample",
+    "campaignBytesBeforeTerminalSwap": 153989719,
+    "r4ScopeBytesBeforeTerminalSwap": 894466,
+    "meaning": "Observation points before terminal writes, not complete final totals or complete read accounting."
+  },
+  "preservationEvidence": {
+    "inputMetadataRecordedUnchanged": true,
+    "fullInputHashes": "not_confirmed",
+    "pinnedPreparationAndReleaseRecordCount": 55,
+    "preparationRecordedStatus": "all_pinned_r4_scope_preparation_and_release_hashes_unchanged",
+    "meaning": "Metadata stability and preparation hashes do not establish the missing final full-input hash verification."
+  },
+  "sourceCommitments": {
+    "terminalResourceReceipt": {
+      "bytes": 3262,
+      "sha256": "36b1ee1b4ddfbf31517eeac8e31070ba93a9d11870efb2837dc0b4c7d6eed1ef"
+    },
+    "lastDurableContext": {
+      "bytes": 10045,
+      "sha256": "3d27a883cde3ca8f2738b7f15ddcc216e2cfd3c2f9b8ca4bd0d571f177ef5745"
+    },
+    "consumedAttemptMarker": {
+      "bytes": 629,
+      "sha256": "a215c74129aa75c4ff1dbd070533ea5e68cece9f16fad69fcf47a54cc3b70d20"
+    },
+    "completedReceiptSet": {
+      "receipts": 8,
+      "aggregateSha256": "d7d014d0bd475b7fc123c2ae4bc1b048051d94cf556cd1f395e7eb042d937e73",
+      "encoding": "In case order: UTF-8 case ID, zero byte, then raw SHA-256 digest of that receipt. No source inventory is reproduced."
+    }
+  },
+  "scientificLimits": {
+    "completeContractPass": false,
+    "negativeControlCoverageEstablished": false,
+    "auditEquivalence": false,
+    "numericalAccuracy": false,
+    "speedup": false,
+    "physicalValidation": false,
+    "newFlightTrajectories": false
+  },
+  "historicalReplay": {
+    "sourceBytes": 10742467,
+    "sourceSha256": "7b29b559805582d5558d87b1008906cf63443b8f2e81fbba5f5fa5e801d9cb73",
+    "localPath": "../../research-next/postrun-display/joint-stages-partial-offline.html",
+    "siblingRepositoryPath": "../../campaign-joint-stage-reference/postrun-display/joint-stages-partial-offline.html",
+    "p1DisplayedThroughSeconds": 0.99,
+    "p1AcceptedStopSeconds": 0.9915625,
+    "afterDisplayedEnd": "Hold last displayed pose; not additional simulated motion.",
+    "newTrajectories": false
+  },
+  "publication": {
+    "currentVerifiedRepositoryCommit": "5293fba9093179096963784aa8fe765238259eb4",
+    "r4Published": false,
+    "detailedInventoryApproval": "pending",
+    "fullReproductionPackage": false,
+    "originalRawCheckpointLinked": false,
+    "prospectiveDestination": "research/campaign-selector-contract-r4/",
+    "asOf": "Preparation before any R4 publication"
+  },
+  "r3Delivery": {
+    "status": "built_and_delivered",
+    "htmlBytes": 10756560,
+    "htmlSha256": "c3bfbdaaa23b0f79237618347a10431bbfa06d0166025e7f3256c10e9221dff5",
+    "browserRenderingVerified": false,
+    "meaning": "Earlier R3 standalone delivery is complete. It does not contain new R4 flight trajectories."
+  }
+}

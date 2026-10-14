@@ -1,0 +1,29 @@
+{
+  "status": "DRAFT_NOT_AUTHORIZED_TO_RUN",
+  "count": 16,
+  "seeds": [840131, 840137],
+  "duration": 1,
+  "physicsDt": 0.00015625,
+  "referenceAirDt": 0.000625,
+  "airCadences": [0.01, 0.005, 0.0025, 0.00125, 0.000625],
+  "physicsRefinements": [0.000625, 0.0003125, 0.00015625],
+  "commonRecordDt": 0.000625,
+  "controllerDt": 0.01,
+  "exactVariant": "lean",
+  "exactSourceSha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+  "maxCpuSeconds": 300,
+  "maxWallSeconds": 300,
+  "maxJobWallSeconds": 45,
+  "maxStorageBytes": 150000000,
+  "gates": {
+    "physics": {"positionM":0.0001,"velocityMps":0.0001,"attitudeRad":0.0001,"angularVelocityRadps":0.001},
+    "airReference": {"positionM":0.001,"velocityMps":0.001,"attitudeRad":0.001,"angularVelocityRadps":0.01},
+    "comparisonFloors":{"positionM":1e-8,"velocityMps":1e-8,"attitudeRad":1e-7,"angularVelocityRadps":1e-7},
+    "airReferenceReduction":0.6,
+    "normalizedPeakForce":0.01,
+    "normalizedPeakTorque":0.01,
+    "normalizedIntegral":0.001,
+    "quadratureIntegralDifference":0.0001,
+    "quadraturePeakDifference":0.001
+  }
+}

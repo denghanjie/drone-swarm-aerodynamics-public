@@ -1,0 +1,43 @@
+{
+  "schema": "audit-c1-supervisor/v1",
+  "status": "integrity_blocked",
+  "reason": "Performance jobs must match all 64 prescribed serial slots, zero-based blocks",
+  "wallSecondsBeforeFinalWrite": 0.04066734900334268,
+  "processTreeCpuSecondsBeforeFinalWrite": 0.039228,
+  "hardTotalOverrun": false,
+  "freezeSha256": "eb5dbadb92f592a320a2e1f3e791e28c5449464808915739e1aa4c3293ca37e5",
+  "completedJobIds": [],
+  "unrunJobIds": [],
+  "stoppingJob": null,
+  "reapedProcesses": [],
+  "peakNewLogicalRetainedBytesObserved": 1602737,
+  "peakCombinedLogicalRetainedBytesObserved": 135832050,
+  "peakTreeRssBytesSampled": 13500416,
+  "peakChildRssBytesSampled": 0,
+  "supervisorMaxRssBytes": 13500416,
+  "serialTreeRssConservativeUpperBoundBytes": 13500416,
+  "samplingIntervalSeconds": 0.01,
+  "accounting": "Monotonic wall; supervisor CPU plus wait4/RUSAGE_CHILDREN exited CPU plus every live descendant CPU including its own already-reaped descendants; no double counting of live descendants.",
+  "rssLimitations": "Active-tree RSS is sampled. wait4 supplies complete per-process maximum RSS for exited children. Short-lived unexpected descendants invalidate qualification.",
+  "exactCurrentStoppedState": false,
+  "lastDurableCheckpointPath": "robustness-review/results/last-durable-checkpoint.json",
+  "oldReferenceQualified": false,
+  "storage": {
+    "new": {
+      "bytes": 1602737,
+      "files": 99
+    },
+    "old": {
+      "bytes": 134229313,
+      "files": 287
+    },
+    "combinedBytes": 135832050
+  },
+  "finalFrozenIdentityCheck": {
+    "status": "not_run_after_failed_window",
+    "reason": "No cost qualification; prioritize retained failure evidence."
+  },
+  "finalRuntimeIdentityCheck": {
+    "status": "not_run_after_failed_window"
+  }
+}

@@ -1,0 +1,570 @@
+{
+  "path": "results/controllers/s840137-J1.f64",
+  "shape": [
+    100,
+    16,
+    18
+  ],
+  "fields": [
+    "command0",
+    "command1",
+    "command2",
+    "command3",
+    "neighborMask",
+    "pairMask",
+    "wallMask",
+    "steeringSpeed",
+    "desiredHorizontalSpeedNorm",
+    "torqueErrorScalar",
+    "tiltExcess",
+    "saturated",
+    "motorBoundsBase3",
+    "speedAtLimit",
+    "wallRepairIterations",
+    "wallRepairConverged",
+    "pairResidual",
+    "wallResidual"
+  ],
+  "encoding": "little-endian Float64; integer bit masks are exact",
+  "wallIds": [
+    "floor",
+    "ceiling",
+    "north-wall",
+    "south-wall",
+    "partition-0-left",
+    "partition-0-right",
+    "partition-0-below",
+    "partition-0-above",
+    "partition-1-left",
+    "partition-1-right",
+    "partition-1-below",
+    "partition-1-above",
+    "partition-2-left",
+    "partition-2-right",
+    "partition-2-below",
+    "partition-2-above",
+    "rack-3.5--1",
+    "rack-3.5-1",
+    "rack-7--1",
+    "rack-7-1",
+    "rack-15.5--1",
+    "rack-15.5-1",
+    "rack-19--1",
+    "rack-19-1",
+    "rack-27.5--1",
+    "rack-27.5-1",
+    "rack-31--1",
+    "rack-31-1",
+    "press-A",
+    "press-B",
+    "press-C",
+    "overhead-A",
+    "overhead-B",
+    "loading-platform"
+  ],
+  "bytes": 230400,
+  "sha256": "bb409a02504fd390a8f2a9432807e84b043157347149ee77170516106d7c441f",
+  "events": [
+    {
+      "tick": 0,
+      "commandsSha256": "0cfdbdd9a06ac55263f446e063d98f1cd34096aff8b5794a8f2faba7af4818b6",
+      "branchSignatureSha256": "bc213b86bab616873a3a6bda792a7342abc4e214d3734400f000eed9b84f9c11"
+    },
+    {
+      "tick": 512,
+      "commandsSha256": "472dc6d0f577600d28c2f4b0d1c1d591230217ea7843339054410e9d717d4570",
+      "branchSignatureSha256": "bc213b86bab616873a3a6bda792a7342abc4e214d3734400f000eed9b84f9c11"
+    },
+    {
+      "tick": 1024,
+      "commandsSha256": "74d56bbf932c04570df8b4097195a1e427a58bc7b8362dd35c089c20286f663e",
+      "branchSignatureSha256": "bc213b86bab616873a3a6bda792a7342abc4e214d3734400f000eed9b84f9c11"
+    },
+    {
+      "tick": 1536,
+      "commandsSha256": "72e6057c56b3350830eeac169093f40d18d3a87470a8c4d9bdf6a4fb28dc8571",
+      "branchSignatureSha256": "4a7e0c80944a14cf8124667c2533bb35eed75d04648a6fb013290a53c94c8030"
+    },
+    {
+      "tick": 2048,
+      "commandsSha256": "4bb13f8ad672e599e4939eff197436ad5d79da6879145f60c1ba5929cef663c7",
+      "branchSignatureSha256": "4a7e0c80944a14cf8124667c2533bb35eed75d04648a6fb013290a53c94c8030"
+    },
+    {
+      "tick": 2560,
+      "commandsSha256": "4fee03b46aaa5c1b15a13fd24d3d7e4723cdfc270aa395e4ee0389b974993a4e",
+      "branchSignatureSha256": "db507e6878f5cd149b27669884da387de5fbe055399b7b58440084675f1b922d"
+    },
+    {
+      "tick": 3072,
+      "commandsSha256": "3913ea94bbdda7d7237c6e3eae53085c3dee48854d1e02b0c1f6c442bb7339db",
+      "branchSignatureSha256": "db507e6878f5cd149b27669884da387de5fbe055399b7b58440084675f1b922d"
+    },
+    {
+      "tick": 3584,
+      "commandsSha256": "7b5435bc65432980a613d113974d00b1544e15cfb41eab0941ef5ae2e9e882e4",
+      "branchSignatureSha256": "db507e6878f5cd149b27669884da387de5fbe055399b7b58440084675f1b922d"
+    },
+    {
+      "tick": 4096,
+      "commandsSha256": "b7444dc99c7f4ee16c426a4b3fdf4bed299b7bf1e5c52e949964f77f4afe0fcb",
+      "branchSignatureSha256": "db507e6878f5cd149b27669884da387de5fbe055399b7b58440084675f1b922d"
+    },
+    {
+      "tick": 4608,
+      "commandsSha256": "57cbd8074caf0a593f0c2b66d4ba582f19a9df145414b3b63b3a2119a1e897fe",
+      "branchSignatureSha256": "db507e6878f5cd149b27669884da387de5fbe055399b7b58440084675f1b922d"
+    },
+    {
+      "tick": 5120,
+      "commandsSha256": "7c5ed8bf586c6812083d3f17817c7535ba047c44a7eba5c724a3f673f124acb4",
+      "branchSignatureSha256": "ea5816bdc2976dd5d7bd20cd333f54a5b77bb77e913d3e920c5e52872f479391"
+    },
+    {
+      "tick": 5632,
+      "commandsSha256": "cefff56d4f84c7b40454134f1c42ae6a23f1be6aab95b824d8476f7e25908a7a",
+      "branchSignatureSha256": "ea5816bdc2976dd5d7bd20cd333f54a5b77bb77e913d3e920c5e52872f479391"
+    },
+    {
+      "tick": 6144,
+      "commandsSha256": "699cfa1b4f2618e06a72b15c1af44ecfd95c841e55b29444b9ca11008a0859d1",
+      "branchSignatureSha256": "54e97480e4638fe9770d73fb5e255aac4e12b8da056c2a927a27db03006e0ba7"
+    },
+    {
+      "tick": 6656,
+      "commandsSha256": "6c82e912453b3d7cfc8e10243a781f27c7ba8d2e6588089c98324d43d76bc4a7",
+      "branchSignatureSha256": "54e97480e4638fe9770d73fb5e255aac4e12b8da056c2a927a27db03006e0ba7"
+    },
+    {
+      "tick": 7168,
+      "commandsSha256": "ca12b319af8774bbd8f5f5b71da625344090c5c783cc900b36abaefaa4651e41",
+      "branchSignatureSha256": "54e97480e4638fe9770d73fb5e255aac4e12b8da056c2a927a27db03006e0ba7"
+    },
+    {
+      "tick": 7680,
+      "commandsSha256": "301be590655057b55a64050c18769a5f7ad58018e24bc650dbfe8143bbc1a42c",
+      "branchSignatureSha256": "54e97480e4638fe9770d73fb5e255aac4e12b8da056c2a927a27db03006e0ba7"
+    },
+    {
+      "tick": 8192,
+      "commandsSha256": "6c8a774ab119c3e4bdfbf44e6fd885dfab9c7d8400baeff4e69b4c8c5dbae1fb",
+      "branchSignatureSha256": "54e97480e4638fe9770d73fb5e255aac4e12b8da056c2a927a27db03006e0ba7"
+    },
+    {
+      "tick": 8704,
+      "commandsSha256": "67fef9a0b868ed13f2a08e763abdeba61a44c56cbee792d42b74b43bcb3fb2c3",
+      "branchSignatureSha256": "54e97480e4638fe9770d73fb5e255aac4e12b8da056c2a927a27db03006e0ba7"
+    },
+    {
+      "tick": 9216,
+      "commandsSha256": "19f1698c00460a837a904f274d346a5ce27a873bccbb9517406d92c372c11095",
+      "branchSignatureSha256": "54e97480e4638fe9770d73fb5e255aac4e12b8da056c2a927a27db03006e0ba7"
+    },
+    {
+      "tick": 9728,
+      "commandsSha256": "dae5d5c80fb559a48d527cf7be4439b6db6282d57a909abfc59217f7a51bbd24",
+      "branchSignatureSha256": "a9ee5539eb3a4d75b7249eb95b64f497cde03790073689f6620e70de3e1c258c"
+    },
+    {
+      "tick": 10240,
+      "commandsSha256": "4f217d25a354973e0a9a0ec64b3bc5ef1b695ddbec3017e6ec75cff6b599eef7",
+      "branchSignatureSha256": "a9ee5539eb3a4d75b7249eb95b64f497cde03790073689f6620e70de3e1c258c"
+    },
+    {
+      "tick": 10752,
+      "commandsSha256": "47de96b44c277ff946954f15a5b11ded4bc011c1b4a6e8d0f23e1e9702bcffef",
+      "branchSignatureSha256": "e4ba957df3de97b01fc80f1009a493182f4ffb32def350384ab9a3ac001079d4"
+    },
+    {
+      "tick": 11264,
+      "commandsSha256": "0cd2729bfce57450771e8f0f089ef591561faa915406563f810d35d80e57d9c3",
+      "branchSignatureSha256": "e4ba957df3de97b01fc80f1009a493182f4ffb32def350384ab9a3ac001079d4"
+    },
+    {
+      "tick": 11776,
+      "commandsSha256": "cc95c50544c27d2d83bcda989a6bf50961d0bd270afa5e1f86460a5a652f2c65",
+      "branchSignatureSha256": "e4ba957df3de97b01fc80f1009a493182f4ffb32def350384ab9a3ac001079d4"
+    },
+    {
+      "tick": 12288,
+      "commandsSha256": "726f4699290bf4419d0971f7096b6cbaac073f390359132375c8180d9a70b513",
+      "branchSignatureSha256": "e4ba957df3de97b01fc80f1009a493182f4ffb32def350384ab9a3ac001079d4"
+    },
+    {
+      "tick": 12800,
+      "commandsSha256": "4a446331ae6eda315fb94f4a37e7fa317b76f12654e4e894d00831324b7c7964",
+      "branchSignatureSha256": "e4ba957df3de97b01fc80f1009a493182f4ffb32def350384ab9a3ac001079d4"
+    },
+    {
+      "tick": 13312,
+      "commandsSha256": "df80a04be611f5e50c277529af0b349f9b0d41275c287e8d77d0231dd95e2476",
+      "branchSignatureSha256": "e4ba957df3de97b01fc80f1009a493182f4ffb32def350384ab9a3ac001079d4"
+    },
+    {
+      "tick": 13824,
+      "commandsSha256": "e4d62f9965ee0776300d3ebe0e5f61f3972929fe1a209fb92d246528d9c021dd",
+      "branchSignatureSha256": "e4ba957df3de97b01fc80f1009a493182f4ffb32def350384ab9a3ac001079d4"
+    },
+    {
+      "tick": 14336,
+      "commandsSha256": "deac45534b713a67ce00719db4e6cb18e093c749ecdfeb4713aebf868c878046",
+      "branchSignatureSha256": "b578cba7f70334e0f4ccff6c9e0eab2ca809de75e7208280d735ce670ecb1dc0"
+    },
+    {
+      "tick": 14848,
+      "commandsSha256": "98f913e03be30e009aa7aaccfa04ca23004219c154dcac522a2a47986cb6f1e9",
+      "branchSignatureSha256": "b578cba7f70334e0f4ccff6c9e0eab2ca809de75e7208280d735ce670ecb1dc0"
+    },
+    {
+      "tick": 15360,
+      "commandsSha256": "3e1b535debf9329ff39101e74def18b9ce73b1e1180403444bc37a2fa1ad34f7",
+      "branchSignatureSha256": "7db5b44636fbc4a7071fe8402ed6ccaa1fd0e7a671bc9ed9cc128ff505d734b1"
+    },
+    {
+      "tick": 15872,
+      "commandsSha256": "797d01154c3f8d9174781787ef89c87f92f80d6398dd2fa5916fd0eeec04b8d3",
+      "branchSignatureSha256": "7db5b44636fbc4a7071fe8402ed6ccaa1fd0e7a671bc9ed9cc128ff505d734b1"
+    },
+    {
+      "tick": 16384,
+      "commandsSha256": "991a94e56a0be889602a34c35aaf5decdf447cdbef1b20073f768286550a0efd",
+      "branchSignatureSha256": "7db5b44636fbc4a7071fe8402ed6ccaa1fd0e7a671bc9ed9cc128ff505d734b1"
+    },
+    {
+      "tick": 16896,
+      "commandsSha256": "64227b512f88da03480967a23a4b908281a333a0865b6b3cfd23b117aa6d8ae3",
+      "branchSignatureSha256": "7db5b44636fbc4a7071fe8402ed6ccaa1fd0e7a671bc9ed9cc128ff505d734b1"
+    },
+    {
+      "tick": 17408,
+      "commandsSha256": "39d68554848dc104f5ec68609d3de1dd7b727e431c79c7c42575140c36ebadc9",
+      "branchSignatureSha256": "7db5b44636fbc4a7071fe8402ed6ccaa1fd0e7a671bc9ed9cc128ff505d734b1"
+    },
+    {
+      "tick": 17920,
+      "commandsSha256": "3e67359fa85e94367996da026fce5ae7a4855fc088509919605b226710649db3",
+      "branchSignatureSha256": "7db5b44636fbc4a7071fe8402ed6ccaa1fd0e7a671bc9ed9cc128ff505d734b1"
+    },
+    {
+      "tick": 18432,
+      "commandsSha256": "c50385a9eac151e4892bd3d741451a7a1b875924d377f605c38cbf5b830babb7",
+      "branchSignatureSha256": "7db5b44636fbc4a7071fe8402ed6ccaa1fd0e7a671bc9ed9cc128ff505d734b1"
+    },
+    {
+      "tick": 18944,
+      "commandsSha256": "68f4ac3e1e16b0ddceb7d16d552414ff9972a47fb682a4662296064ad32c464c",
+      "branchSignatureSha256": "7db5b44636fbc4a7071fe8402ed6ccaa1fd0e7a671bc9ed9cc128ff505d734b1"
+    },
+    {
+      "tick": 19456,
+      "commandsSha256": "5bbe78df1f1efb569a1939f92c1a6ec4c8adc84ca7c6abc92f166ef54606e685",
+      "branchSignatureSha256": "ed6598b6e60d79c40e07f52cc99d6e8037608c7cd06e46fdb318b6e82b1a482a"
+    },
+    {
+      "tick": 19968,
+      "commandsSha256": "064b403c27427ec32da4bd3c604512d18e76216156ff62719e1c73b770eff045",
+      "branchSignatureSha256": "ed6598b6e60d79c40e07f52cc99d6e8037608c7cd06e46fdb318b6e82b1a482a"
+    },
+    {
+      "tick": 20480,
+      "commandsSha256": "8bf63e461eef07bfb63aa06c3f5424ffe32cdd169877cd91e19632fa258ac4bf",
+      "branchSignatureSha256": "ed6598b6e60d79c40e07f52cc99d6e8037608c7cd06e46fdb318b6e82b1a482a"
+    },
+    {
+      "tick": 20992,
+      "commandsSha256": "bca60b859594c41163c279dfa3ec59d573e3843e6482ca53ee63698a83206c50",
+      "branchSignatureSha256": "ed6598b6e60d79c40e07f52cc99d6e8037608c7cd06e46fdb318b6e82b1a482a"
+    },
+    {
+      "tick": 21504,
+      "commandsSha256": "a0cf35f87e35fd6fa566104ab2711cde5bf451d4df4bdc4e473c6037c5ce4011",
+      "branchSignatureSha256": "ed6598b6e60d79c40e07f52cc99d6e8037608c7cd06e46fdb318b6e82b1a482a"
+    },
+    {
+      "tick": 22016,
+      "commandsSha256": "45b8425d9164d5d63200c05222f0ffabccf351889a2b1ad45ec0d804e1d07e3c",
+      "branchSignatureSha256": "ed6598b6e60d79c40e07f52cc99d6e8037608c7cd06e46fdb318b6e82b1a482a"
+    },
+    {
+      "tick": 22528,
+      "commandsSha256": "9f47c288b4dcbd5abb105a1cc1cc48682e0dc9ed792607a36c86ef53420f393c",
+      "branchSignatureSha256": "92cfb09542d366ae1c78ba8025d63be31c2f2ab5a7659ba87fe96f86829e0b9d"
+    },
+    {
+      "tick": 23040,
+      "commandsSha256": "8697bb39c64dc086def792b83d51ff568376d82688462ce0cb9574074a1ec524",
+      "branchSignatureSha256": "92cfb09542d366ae1c78ba8025d63be31c2f2ab5a7659ba87fe96f86829e0b9d"
+    },
+    {
+      "tick": 23552,
+      "commandsSha256": "3d8c282ccff075d7588b835667837e061c87b997a706b285eabd79b79485be2b",
+      "branchSignatureSha256": "92cfb09542d366ae1c78ba8025d63be31c2f2ab5a7659ba87fe96f86829e0b9d"
+    },
+    {
+      "tick": 24064,
+      "commandsSha256": "2f8e7c08c1450db516e1e97755b4dbc7c26d843afb4b26ed1cdb039688533fbb",
+      "branchSignatureSha256": "92cfb09542d366ae1c78ba8025d63be31c2f2ab5a7659ba87fe96f86829e0b9d"
+    },
+    {
+      "tick": 24576,
+      "commandsSha256": "f7686bc478589d3d2d08ed054cb243fa6d328172c1e112ffd2bac73e8e8887b0",
+      "branchSignatureSha256": "92cfb09542d366ae1c78ba8025d63be31c2f2ab5a7659ba87fe96f86829e0b9d"
+    },
+    {
+      "tick": 25088,
+      "commandsSha256": "1f3b209a37d737ffe05098c9ea2d8176d3b5a2692247b2c8ef139820c592a8e3",
+      "branchSignatureSha256": "92cfb09542d366ae1c78ba8025d63be31c2f2ab5a7659ba87fe96f86829e0b9d"
+    },
+    {
+      "tick": 25600,
+      "commandsSha256": "994cdb63130f89656bef264899b90add4381aa7e23885632debbdd5b6037c9ba",
+      "branchSignatureSha256": "b024925a5e63826c7c286d57088eee31dd4c89323aad3ddd1aa99a64436792eb"
+    },
+    {
+      "tick": 26112,
+      "commandsSha256": "07d2266a9305c9b582c036fcdd15cd836604d19d9fbb28fbb0646e629d842abb",
+      "branchSignatureSha256": "b024925a5e63826c7c286d57088eee31dd4c89323aad3ddd1aa99a64436792eb"
+    },
+    {
+      "tick": 26624,
+      "commandsSha256": "ca570d3b254ce07600d973669184b3210ddaae0e0fc5e330f580d735c811c941",
+      "branchSignatureSha256": "b024925a5e63826c7c286d57088eee31dd4c89323aad3ddd1aa99a64436792eb"
+    },
+    {
+      "tick": 27136,
+      "commandsSha256": "3e3d6cec328c368a97f2a2c6f582520bb91a2e744f8052f34a39991da07f6729",
+      "branchSignatureSha256": "b024925a5e63826c7c286d57088eee31dd4c89323aad3ddd1aa99a64436792eb"
+    },
+    {
+      "tick": 27648,
+      "commandsSha256": "8718bc4afa0c7935e31e06d65803fc59da2362d33262074c5bfe76121b40e262",
+      "branchSignatureSha256": "b024925a5e63826c7c286d57088eee31dd4c89323aad3ddd1aa99a64436792eb"
+    },
+    {
+      "tick": 28160,
+      "commandsSha256": "e82d3141715b51f59665f377d6c8e31050f6dd1fca1ed6e24afffad584a85c2f",
+      "branchSignatureSha256": "b024925a5e63826c7c286d57088eee31dd4c89323aad3ddd1aa99a64436792eb"
+    },
+    {
+      "tick": 28672,
+      "commandsSha256": "1f64dea14ab3e38ab79395f492acf1415d806966c8087a559d5b94751fe963a9",
+      "branchSignatureSha256": "b024925a5e63826c7c286d57088eee31dd4c89323aad3ddd1aa99a64436792eb"
+    },
+    {
+      "tick": 29184,
+      "commandsSha256": "403a2f4e9df998b001c009a7934fe3d0b3d7051fb8f98a2b60bf6f3ed3395240",
+      "branchSignatureSha256": "734d0b6ad3c34a20f067fd042894d025ccf0986b3198b225ad8cd22db3c3bf27"
+    },
+    {
+      "tick": 29696,
+      "commandsSha256": "20f315d01f885fbd20743f260dde359fe8c521d82ccffdf3a03248d42407b193",
+      "branchSignatureSha256": "734d0b6ad3c34a20f067fd042894d025ccf0986b3198b225ad8cd22db3c3bf27"
+    },
+    {
+      "tick": 30208,
+      "commandsSha256": "43e5b4d9dd8ee165831b89741894f757ae6c38faadf348ef8576a68a4f714fbf",
+      "branchSignatureSha256": "734d0b6ad3c34a20f067fd042894d025ccf0986b3198b225ad8cd22db3c3bf27"
+    },
+    {
+      "tick": 30720,
+      "commandsSha256": "fcaa931bd402151d4c81633de47c2cb12ac2a3ec7e6aaa27372d393942d08d0f",
+      "branchSignatureSha256": "734d0b6ad3c34a20f067fd042894d025ccf0986b3198b225ad8cd22db3c3bf27"
+    },
+    {
+      "tick": 31232,
+      "commandsSha256": "95fd3a8a3cd47d641e881fe3c15d6ad36087462cf2fd3ef476a9f6209217b636",
+      "branchSignatureSha256": "734d0b6ad3c34a20f067fd042894d025ccf0986b3198b225ad8cd22db3c3bf27"
+    },
+    {
+      "tick": 31744,
+      "commandsSha256": "a7da96dc19fec035d5f7b5d06755f9896f2e868b448990700fb4ec3374dd01da",
+      "branchSignatureSha256": "fa0d249ed1c45252a43838eaa805080ef3d8546c911d9f7530928c508c43d073"
+    },
+    {
+      "tick": 32256,
+      "commandsSha256": "66e31cbb6377a0dbab39161b3552dda90087486c481206d99accfae5ee9106cf",
+      "branchSignatureSha256": "fa0d249ed1c45252a43838eaa805080ef3d8546c911d9f7530928c508c43d073"
+    },
+    {
+      "tick": 32768,
+      "commandsSha256": "6ffd714e7b281629ee81c2c08a395e9f05e7edaa8cfbf44f80a5d6984d39987d",
+      "branchSignatureSha256": "9973d4c8cd88675e12d5b993a9530270daba8828e2fb598a0dadaf65ce45ccdf"
+    },
+    {
+      "tick": 33280,
+      "commandsSha256": "a5358de1704b957ac03384dc5e8829f223ea7783339812c2179337e817e6b55b",
+      "branchSignatureSha256": "1c735a1cd0632602362ac3a0607666f9a51ba890061e138f4ae4eda89b3d088b"
+    },
+    {
+      "tick": 33792,
+      "commandsSha256": "440a03bd90ccb880865fdd7d01d5294113acfc8c5849d7b924ed1b94addf45e1",
+      "branchSignatureSha256": "1c735a1cd0632602362ac3a0607666f9a51ba890061e138f4ae4eda89b3d088b"
+    },
+    {
+      "tick": 34304,
+      "commandsSha256": "0d2c367c8b58e7c5f3546ba6f0746fd3571d662805acae67ba9d0f838efae3d5",
+      "branchSignatureSha256": "1c735a1cd0632602362ac3a0607666f9a51ba890061e138f4ae4eda89b3d088b"
+    },
+    {
+      "tick": 34816,
+      "commandsSha256": "94bdf29ab5b1ae315e9ed33ffe64018d4ab593ed1d4debed11d91922c8b62b26",
+      "branchSignatureSha256": "1c735a1cd0632602362ac3a0607666f9a51ba890061e138f4ae4eda89b3d088b"
+    },
+    {
+      "tick": 35328,
+      "commandsSha256": "2a6af4a6cc40174fc3c4542d832a74089e9b760db1f54da46e509d8d0809b987",
+      "branchSignatureSha256": "1c735a1cd0632602362ac3a0607666f9a51ba890061e138f4ae4eda89b3d088b"
+    },
+    {
+      "tick": 35840,
+      "commandsSha256": "54ab73ae06b7bf11e599c37d21ec6f7e517a0480fc56fd17a67f595ee1fe17d6",
+      "branchSignatureSha256": "4d6a7d95beccc6cb7c306921f43e214d65ec53a885636f87db0f9fd45e6f4461"
+    },
+    {
+      "tick": 36352,
+      "commandsSha256": "6618b96ff41d108055df4fd742b5800ef1e35da1e76335c00b553fdc2d3d7173",
+      "branchSignatureSha256": "4d6a7d95beccc6cb7c306921f43e214d65ec53a885636f87db0f9fd45e6f4461"
+    },
+    {
+      "tick": 36864,
+      "commandsSha256": "1df79a5a65841d748884d0c628dd198c1e6c1349e1f8d481a3eca560df597039",
+      "branchSignatureSha256": "4d6a7d95beccc6cb7c306921f43e214d65ec53a885636f87db0f9fd45e6f4461"
+    },
+    {
+      "tick": 37376,
+      "commandsSha256": "083e33c14dbec797d451dc9cd03889a002ac96b7159aff451eb6d4bd3f66f01b",
+      "branchSignatureSha256": "4d6a7d95beccc6cb7c306921f43e214d65ec53a885636f87db0f9fd45e6f4461"
+    },
+    {
+      "tick": 37888,
+      "commandsSha256": "64d1652bd7d89759bac3cb51dbe5aafe95ccca4ecf95950d70ec5de30e7b802a",
+      "branchSignatureSha256": "4d6a7d95beccc6cb7c306921f43e214d65ec53a885636f87db0f9fd45e6f4461"
+    },
+    {
+      "tick": 38400,
+      "commandsSha256": "e838ec71c62a9962abbae09bb5feabca4d6da01ca601ed8d1eb8b0fa402a598c",
+      "branchSignatureSha256": "4d6a7d95beccc6cb7c306921f43e214d65ec53a885636f87db0f9fd45e6f4461"
+    },
+    {
+      "tick": 38912,
+      "commandsSha256": "d002d3c4a66a3b171d22e6e013bb15f62782ed547f7fefa96c692fc2ea1b089d",
+      "branchSignatureSha256": "215c128913645d9d0304c6ca699adccad2dae7944f56428ef426a091ac42eb3e"
+    },
+    {
+      "tick": 39424,
+      "commandsSha256": "f19aef8116d21e1331e21548c1bdd9fcaa13df139b62db491b9436ed09d15e1a",
+      "branchSignatureSha256": "bd67e977eaed951acc103223f28a8d104c15b31cef8912267602c2fa1e51abd6"
+    },
+    {
+      "tick": 39936,
+      "commandsSha256": "918374bdc9eec823e9e61e86626a33d8831bedddae3b9308c4860a0321551324",
+      "branchSignatureSha256": "bd67e977eaed951acc103223f28a8d104c15b31cef8912267602c2fa1e51abd6"
+    },
+    {
+      "tick": 40448,
+      "commandsSha256": "658416ad99799bb1a91dbf9aa51688b05f9a62bfe0a1cdbbf3f66158f80c0d56",
+      "branchSignatureSha256": "bd67e977eaed951acc103223f28a8d104c15b31cef8912267602c2fa1e51abd6"
+    },
+    {
+      "tick": 40960,
+      "commandsSha256": "da97a46f6fea39d58b1c967a29e564e7764336a2bc9ed19973b89b7a86c0cee1",
+      "branchSignatureSha256": "bd67e977eaed951acc103223f28a8d104c15b31cef8912267602c2fa1e51abd6"
+    },
+    {
+      "tick": 41472,
+      "commandsSha256": "25647ab114288c1a546ad6873bb302f334c5328c69cf03c1d224de4106248810",
+      "branchSignatureSha256": "bd67e977eaed951acc103223f28a8d104c15b31cef8912267602c2fa1e51abd6"
+    },
+    {
+      "tick": 41984,
+      "commandsSha256": "adde410af4d2bf6a63a884aae8a420e495946f1053a715506963bb7a3325c7fa",
+      "branchSignatureSha256": "bd67e977eaed951acc103223f28a8d104c15b31cef8912267602c2fa1e51abd6"
+    },
+    {
+      "tick": 42496,
+      "commandsSha256": "748c5c3de6f75bb644fc29750f6701fc210be1b96b5e1dfa84d8aa6abdf07cfe",
+      "branchSignatureSha256": "4c72b10e11eceb1fda0d9b617edcc9575f71c5d3d327ef68160ee8f2ad5880de"
+    },
+    {
+      "tick": 43008,
+      "commandsSha256": "1d87a5f9962689061a4e872e23b4bbc809c447f7729559f606e650ed21ecd1e4",
+      "branchSignatureSha256": "4c72b10e11eceb1fda0d9b617edcc9575f71c5d3d327ef68160ee8f2ad5880de"
+    },
+    {
+      "tick": 43520,
+      "commandsSha256": "76ba7daa4c04d2eeac6fe1be80b446321bf86e0030bd230704c9028b4f6d63d7",
+      "branchSignatureSha256": "1a11f7d52f8aac438d7d3cdca36e445c37e63345ae5a4de823bbd52e1fbd6fce"
+    },
+    {
+      "tick": 44032,
+      "commandsSha256": "c64a9b2cac2bb4509fb066a5e12a60ce37f9be5f74383a035a55cfbc3ee1ead3",
+      "branchSignatureSha256": "1a11f7d52f8aac438d7d3cdca36e445c37e63345ae5a4de823bbd52e1fbd6fce"
+    },
+    {
+      "tick": 44544,
+      "commandsSha256": "f67571bf6aa69421808d1f40d2119d3f784a590da85f3cd8c912db6bd630b9f0",
+      "branchSignatureSha256": "8d8c2486d60be745ae9cb0d4e4b04c8c333ecb17787bf3f4e1743740eaf208bb"
+    },
+    {
+      "tick": 45056,
+      "commandsSha256": "043e19e1ca65f15e8ddb8b63c95f16a42a525dd25f0941ca51d5f0a265afe1b3",
+      "branchSignatureSha256": "6a941ce0ef96901d8100e71f7e5813ed180f13e902cebdf9bfe64f4ba453bb09"
+    },
+    {
+      "tick": 45568,
+      "commandsSha256": "2832ae73e4fa264afd21677bc7d5c29db0c9b43de153483905252f3145c2fc55",
+      "branchSignatureSha256": "6a941ce0ef96901d8100e71f7e5813ed180f13e902cebdf9bfe64f4ba453bb09"
+    },
+    {
+      "tick": 46080,
+      "commandsSha256": "339c369006075da5b87281561e9ddc5734740e0d9aeec983a210dc72a9fb8b54",
+      "branchSignatureSha256": "6a941ce0ef96901d8100e71f7e5813ed180f13e902cebdf9bfe64f4ba453bb09"
+    },
+    {
+      "tick": 46592,
+      "commandsSha256": "8bac71339342ea494fc4d1aebbcb5143182d25d88f3ab5042274f5c7078ed341",
+      "branchSignatureSha256": "76cbc3720d23d669f277ef4fdd373d4ad51181d55990e3d6962daf26a851993f"
+    },
+    {
+      "tick": 47104,
+      "commandsSha256": "8a19de3e1e39c3b0a15b1a9f961568674f40269035dc6b8207ffcec6ed7ea8c8",
+      "branchSignatureSha256": "f959679e5973fa518cf3904810aa9b0b2dbc9035c9d28f798383ed0e1cff4c84"
+    },
+    {
+      "tick": 47616,
+      "commandsSha256": "2bb8542a29e782be38a17c839389e86495e2c127e5aef49992be954edefae1e8",
+      "branchSignatureSha256": "f959679e5973fa518cf3904810aa9b0b2dbc9035c9d28f798383ed0e1cff4c84"
+    },
+    {
+      "tick": 48128,
+      "commandsSha256": "ff094280e9f131827bdd0f0ad9fb8fb6af40115c9c59511cebc5cf1981069613",
+      "branchSignatureSha256": "f959679e5973fa518cf3904810aa9b0b2dbc9035c9d28f798383ed0e1cff4c84"
+    },
+    {
+      "tick": 48640,
+      "commandsSha256": "e4ce77806909c9e3d4ff2beb14a2370487698834c11b020e7859660db8587946",
+      "branchSignatureSha256": "f959679e5973fa518cf3904810aa9b0b2dbc9035c9d28f798383ed0e1cff4c84"
+    },
+    {
+      "tick": 49152,
+      "commandsSha256": "5214291125350cc1a722ade82f702b10a426f591f90c8f960b6d347a96c54af4",
+      "branchSignatureSha256": "f959679e5973fa518cf3904810aa9b0b2dbc9035c9d28f798383ed0e1cff4c84"
+    },
+    {
+      "tick": 49664,
+      "commandsSha256": "c2eafa7e889b0893d66da72e16e18ef7a0c8bd198e793cf15bf2d86be0d2b2ca",
+      "branchSignatureSha256": "f959679e5973fa518cf3904810aa9b0b2dbc9035c9d28f798383ed0e1cff4c84"
+    },
+    {
+      "tick": 50176,
+      "commandsSha256": "05e4bfeba737c1d24eecf566d86762b756ba0f19841218f25e4f5e82dc60b7e8",
+      "branchSignatureSha256": "f959679e5973fa518cf3904810aa9b0b2dbc9035c9d28f798383ed0e1cff4c84"
+    },
+    {
+      "tick": 50688,
+      "commandsSha256": "a26f62434784b1bb455637efe00e9a277c9d88c5b89693b7a6cee2adac5f8574",
+      "branchSignatureSha256": "f959679e5973fa518cf3904810aa9b0b2dbc9035c9d28f798383ed0e1cff4c84"
+    }
+  ],
+  "meaning": "Commands and branch inputs at each actual nonterminal controller event; vectors/constraint normals can be reconstructed only where full state was retained"
+}

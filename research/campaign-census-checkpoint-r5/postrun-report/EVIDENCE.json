@@ -1,0 +1,80 @@
+{
+  "schema": "census-r5-sanitized-postrun-summary/v1",
+  "isOriginalReceipt": false,
+  "experimentId": "CENSUS-CHECKPOINT-R5",
+  "status": "census_checkpoint_coordination_satisfied_on_fixed_interleavings_only",
+  "coordinatorAccepted": true,
+  "acceptedAtUtc": "2026-10-14T07:39:35.420100+00:00",
+  "coordinatorAcceptanceSha256": "1f8223d8d194cd4c0d3264830d46c52e9216b8a3d1e552894c626c8f916f35da",
+  "coverage": {
+    "planned": 21,
+    "completed": 21,
+    "matchedExpected": 21,
+    "accepts": 10,
+    "intendedControlErrors": 11,
+    "unexpectedOutcomes": 0,
+    "unrun": 0,
+    "attempts": 1,
+    "retries": 0,
+    "hookActions": 9,
+    "injectedMetadataControlIds": [
+      "R5-12",
+      "R5-16",
+      "R5-17",
+      "R5-18"
+    ]
+  },
+  "fixtureEvidence": {
+    "retainedFiles": 54,
+    "verifiedPayloadBytes": 132809,
+    "literalFixtureComparisonPassed": true
+  },
+  "resourceObservations": {
+    "parentExit": 0,
+    "timeout": false,
+    "launchToChildReapedSeconds": 0.06665610500203911,
+    "childCpuSeconds": 0.068349,
+    "reapedChildMaxRssBytes": 12320768,
+    "instrumentedPayloadReadUpperBytes": 330834,
+    "instrumentedPayloadWriteUpperBytes": 152936,
+    "instrumentedPayloadAccountingComplete": true,
+    "outerToolRoundTripMilliseconds": 614,
+    "normalRunEndRetainedBytes": 251584
+  },
+  "accountingLimits": [
+    "Wall time ends at child reap; parent CPU precedes the final parent write. The separately recorded 614 ms tool roundtrip supports the 10 s bound, not a benchmark.",
+    "RSS is the reaped child high-water, not a whole-OS aggregate guarantee. Payload accounting excludes interpreter/library I/O.",
+    "Run-end storage excludes later launch/postrun records; all later evidence remains charged to retained storage."
+  ],
+  "scope": "Fixed deterministic interleavings and prescribed metadata controls under trusted-writer assumptions only.",
+  "pendingOriginalStatusExplanation": "Original child and parent receipts retain pending status fields. This later sanitized derivative reports the separate reviewed coordinator acceptance without rewriting those receipts.",
+  "reproduction": "This selected public subset omits the driver, configuration and retained fixtures; it is not a full reproduction package.",
+  "notEstablished": [
+    "general atomic filesystem snapshot",
+    "arbitrary-writer safety",
+    "R5 integration with the R4 wrapper",
+    "R4 completion",
+    "audit equivalence",
+    "speedup",
+    "new flight",
+    "numerical accuracy",
+    "physical validation"
+  ],
+  "historicalReplay": {
+    "runId": "s840131-P1",
+    "historicalOnly": true,
+    "complete": false,
+    "savedDisplayFrames": 100,
+    "lastSavedDisplaySeconds": 0.99,
+    "actualHistoricalStopSeconds": 0.9915625,
+    "holdAfterLastSavedPose": true,
+    "newR5Trajectory": false
+  },
+  "sourceLinks": {
+    "childResult": "../results/attempt-001/result.json",
+    "parentObservation": "../results/attempt-001/PARENT-OBSERVATION.json",
+    "casePattern": "../results/attempt-001/R5-{01..21}.json",
+    "selectedImplementation": "../implementation/census.py",
+    "literalOracle": "../implementation/oracle.json"
+  }
+}

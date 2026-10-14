@@ -1,0 +1,11 @@
+--- frozen/robustness-review/supervise.py
++++ newcandidate/supervise.py
+@@ -29,7 +29,7 @@
+ POLL_SECONDS = 0.01
+ EXPECTED_SEEDS = [840131, 840137]
+ ORDERS = {840131: ['BC','CB','CB','BC','BC','CB','CB','BC'],
+-          840137: ['CB','BC','BC','CB','CB','BC','CB','CB']}
++          840137: ['CB','BC','BC','CB','CB','BC','BC','CB']}
+ 
+ 
+ class ResourceLimit(RuntimeError):

@@ -1,0 +1,13 @@
+'use strict';
+// Independent active-set enumeration in 3D: test each affine face, intersect
+// with the speed ball, and retain the feasible candidate closest to preferred.
+const fs=require('fs'),assert=require('assert'),{repair,residual}=require('./wall-filter.cjs');
+const dot=(a,b)=>a.reduce((z,x,k)=>z+x*b[k],0),sub=(a,b)=>a.map((x,k)=>x-b[k]);
+function solve(A,b){const m=A.map((r,i)=>[...r,b[i]]),n=b.length;for(let k=0;k<n;k++){let p=k;for(let i=k+1;i<n;i++)if(Math.abs(m[i][k])>Math.abs(m[p][k]))p=i;if(Math.abs(m[p][k])<1e-10)return null;[m[k],m[p]]=[m[p],m[k]];const q=m[k][k];m[k]=m[k].map(x=>x/q);for(let i=0;i<n;i++)if(i!==k){const q=m[i][k];m[i]=m[i].map((x,j)=>x-q*m[k][j]);}}return m.map(r=>r[n]);}
+function reference(p,cs,R){let best=null,cost=Infinity;
+ for(let mask=0;mask<2**cs.length;mask++){const face=cs.filter((_,i)=>mask&(1<<i));if(face.length>3)continue;let h=[0,0,0],u=p.slice();if(face.length){const gram=face.map(a=>face.map(b=>dot(a.n,b.n))),l=solve(gram,face.map(c=>c.lower)),lp=solve(gram,face.map(c=>dot(c.n,p)));if(!l||!lp)continue;h=h.map((_,k)=>face.reduce((v,c,i)=>v+l[i]*c.n[k],0));u=u.map((v,k)=>v-face.reduce((z,c,i)=>z+lp[i]*c.n[k],0));}const r2=R*R-dot(h,h);if(r2< -1e-9)continue;const factor=Math.min(1,Math.sqrt(Math.max(0,r2))/Math.max(1e-30,Math.hypot(...u))),v=h.map((x,k)=>x+factor*u[k]);if(residual(v,cs,R)>1e-8)continue;const c=dot(sub(v,p),sub(v,p));if(c<cost){best=v;cost=c;}}
+ assert(best);return best;
+}
+let seed=30123;const random=()=>((seed=(Math.imul(seed,1664525)+1013904223)>>>0)/2**32),rows=[];
+for(let i=0;i<200;i++){const witness=Array.from({length:3},()=>.3*(2*random()-1)),p=Array.from({length:3},()=>2*(2*random()-1)),cs=Array.from({length:1+i%6},()=>{const a=Array.from({length:3},()=>2*random()-1),length=Math.hypot(...a),n=a.map(x=>x/length);return {n,lower:dot(n,witness)-.5*random()};}),a=repair(p,cs),b=reference(p,cs,.9),error=Math.hypot(...sub(a.velocity,b));assert(a.velocity.every(Number.isFinite));if(a.converged)assert(error<1e-6);rows.push({case:i,converged:a.converged,iterations:a.iterations,residual:residual(a.velocity,cs,.9),errorAgainstEnumeratedOptimum:error});}
+const result={cases:rows.length,converged:rows.filter(r=>r.converged).length,maximumError:Math.max(...rows.map(r=>r.errorAgainstEnumeratedOptimum)),maximumConvergedError:Math.max(...rows.filter(r=>r.converged).map(r=>r.errorAgainstEnumeratedOptimum)),passed:true,scope:'200 deterministic feasible random wall/speed projection problems. Nonconvergence retained, not certified infeasibility.',rows};fs.writeFileSync(__dirname+'/../milestone-30-reference-checks.json',JSON.stringify(result,null,2));console.log({...result,rows:undefined});

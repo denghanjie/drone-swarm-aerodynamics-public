@@ -1,0 +1,8 @@
+{
+  "name": "test_joint_robustness.cjs",
+  "status": 0,
+  "signal": null,
+  "error": null,
+  "stdout": "{\"schema\":\"independent-joint-robustness-fixtures/v1\",\"kind\":\"tiny synthetic fixtures, no genuine Boids trajectory\",\"sourceSha256\":\"e9899ef7864032d147bde3d3d0d6dd02af662fceea691ae54b575b64955ec7b9\",\"tests\":[{\"name\":\"full-swarm coupled RK4 stages use one simultaneous state\",\"passed\":true},{\"name\":\"geometry normalization is a disjoint copy and preserves all nonquaternion entries\",\"passed\":true},{\"name\":\"geometry guards reject zero and nonfinite quaternions or other invalid entries\",\"passed\":true},{\"name\":\"endpoint normalization copies raw endpoint and normalizes each drone\",\"passed\":true},{\"name\":\"joint step computes complete field before derivatives and passes raw stage state\",\"passed\":true},{\"name\":\"each failing RK stage retains exact raw geometry commands and original guard\",\"passed\":true},{\"name\":\"geometry rejection retains raw input even before geometry exists\",\"passed\":true},{\"name\":\"nonfinite derivative is rejected and retains available field and derivative\",\"passed\":true},{\"name\":\"failed endpoint projection retains the actual combined endpoint rather than k4\",\"passed\":true},{\"name\":\"prescribed steps and their stage clocks are integer and event-aligned\",\"passed\":true}],\"passed\":true}\n",
+  "stderr": ""
+}

@@ -1,0 +1,25 @@
+{
+  "command": [
+    "node",
+    "implementation/src/child.cjs",
+    "--job",
+    "{id}",
+    "--release",
+    "{release}"
+  ],
+  "correctnessGate": {
+    "command": [
+      "node",
+      "semantic-final-review/verify-correctness-receipts.cjs",
+      "--root",
+      "{study}",
+      "--freeze",
+      "{freeze}",
+      "--release",
+      "{release}"
+    ],
+    "receipt": "semantic-final-review/results/CORRECTNESS-GATE.json"
+  },
+  "jobs": [],
+  "schema": "audit-c1-jobs/v1"
+}

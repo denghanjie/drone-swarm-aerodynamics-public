@@ -1,0 +1,8 @@
+{
+  "name": "test_io_faults.cjs",
+  "status": 0,
+  "signal": null,
+  "error": null,
+  "stdout": "{\"schema\":\"independent-io-fault-fixtures/v1\",\"kind\":\"in-memory fault injection, no genuine Boids trajectory\",\"tests\":[{\"name\":\"raw byte encoding and checksum round-trip are exact little-endian Float64\",\"passed\":true},{\"name\":\"raw checksum, truncated data, malformed shapes and out-of-range samples fail closed\",\"passed\":true},{\"name\":\"metadata cannot override computed raw identity\",\"passed\":true},{\"name\":\"atomic write syncs payload and containing directory and preserves exact bytes\",\"passed\":true},{\"name\":\"mid-write interruption preserves prior durable file and raw partial bytes\",\"passed\":true},{\"name\":\"rename interruption keeps old durable file and full partial candidate\",\"passed\":true},{\"name\":\"allocation includes replacement temporary duplicate and preserves failure reserve\",\"passed\":true},{\"name\":\"retained-byte accounting counts duplicate forms and partial files independently\",\"passed\":true},{\"name\":\"nonfinite failure fields survive JSON explicitly without silent null coercion\",\"passed\":true}],\"passed\":true}\n",
+  "stderr": ""
+}

@@ -1,0 +1,210 @@
+{
+  "schema_version": "1.0",
+  "document_id": "temporal-reference-repair-bibliography-20261013",
+  "created_date": "2026-10-13",
+  "status": "consulted_sources_only_no_experiment_run",
+  "consultation_method": "Direct primary-source web reads; source metadata and local code inspection. No paper code, datasets, or model implementations executed.",
+  "correction_check_caveat": "A limited search or absence of a correction link is not proof that no correction exists. No definitive Crossmark/retraction-database audit was completed.",
+  "sources": [
+    {
+      "id": "BAUERSFELD_2024_V3",
+      "type": "article",
+      "title": "Robotics meets Fluid Dynamics: A Characterization of the Induced Airflow below a Quadrotor as a Turbulent Jet",
+      "authors": [
+        "Leonard Bauersfeld",
+        "Koen Muller",
+        "Dominic Ziegler",
+        "Filippo Coletti",
+        "Davide Scaramuzza"
+      ],
+      "identifier": {
+        "arxiv": "2403.13321v3",
+        "arxiv_doi": "10.48550/arXiv.2403.13321"
+      },
+      "consulted_version": "Author-deposited arXiv v3, 2024-12-12",
+      "publication_status": "Author record reports IEEE Robotics and Automation Letters publication; v3 manuscript states accepted 2024-11-28.",
+      "publication_status_evidence_url": "https://arxiv.org/abs/2403.13321",
+      "primary_full_text_url": "https://arxiv.org/html/2403.13321v3",
+      "accessed_on": "2026-10-13",
+      "consulted_locations": [
+        "Version history: v1 2024-03-20; v2 2024-10-31; v3 2024-12-12",
+        "III-A Coordinate System and Notation, Figure 2",
+        "III-B Propeller-Induced Flow, equation 1",
+        "III-C Turbulent Jet Flow, equations 3-6",
+        "III-D Normalization, equations 7-8",
+        "VI-C Unified Model",
+        "VII-A Downwash Compensation, equations 10-11",
+        "VIII Conclusion and Discussion"
+      ],
+      "supports": [
+        "Provenance of a mean hover/near-hover far-field model and its normalization.",
+        "The cited receiver-related relation is a hover-power compensation relation."
+      ],
+      "does_not_support": [
+        "Physical validity of the frozen transient receiver-thrust inversion, finite-support fades or multi-wake superposition.",
+        "Validation of the 27 g implemented vehicle or its controller.",
+        "Any numerical acceptance cap in this proposal."
+      ],
+      "access_limits": [
+        "Final publisher DOI landing page https://doi.org/10.1109/LRA.2024.3518835 returned an internal error; final journal pagination is not asserted.",
+        "No empirical raw dataset acquired or analyzed in this task.",
+        "No formal source-to-published-version text diff performed."
+      ],
+      "correction_check": {
+        "status": "limited_check_no_explicit_notice_identified",
+        "date": "2026-10-13",
+        "checks": [
+          "Read author version history and v3 title/acceptance metadata.",
+          "Searched: site:arxiv.org \"2403.13321\" correction OR erratum"
+        ],
+        "scope_limits": "Search returned no explicit matching correction notice; publication-side correction status remains unverified."
+      }
+    },
+    {
+      "id": "NORDAM_DURAN_2020",
+      "type": "article",
+      "title": "Numerical integrators for Lagrangian oceanography",
+      "authors": [
+        "Tor Nordam",
+        "Rafael Duran"
+      ],
+      "identifier": {
+        "doi": "10.5194/gmd-13-5935-2020"
+      },
+      "venue": "Geoscientific Model Development",
+      "volume": "13",
+      "pages": "5935-5957",
+      "publication_date": "2020-12-01",
+      "consulted_version": "Publisher final HTML article",
+      "publication_status": "Published; received 2020-05-21, accepted 2020-10-08.",
+      "primary_full_text_url": "https://gmd.copernicus.org/articles/13/5935/2020/",
+      "publication_status_evidence_url": "https://gmd.copernicus.org/articles/13/5935/2020/gmd-13-5935-2020-discussion.html",
+      "accessed_on": "2026-10-13",
+      "consulted_locations": [
+        "1 Introduction, distinction between physical prediction and numerical work-precision comparison",
+        "2.1 Error bounds, equations 5-7",
+        "2.2 Numerical integration methods, equation 9",
+        "3.1 Discontinuous derivatives",
+        "3.2 Analytical example, equations 16-17",
+        "3.3 Special-purpose integrators for interpolated velocity fields, equation 18"
+      ],
+      "supports": [
+        "A Runge-Kutta stage evaluates the right-hand side at that stage's state.",
+        "Regularity and event handling affect numerical order; known temporal discontinuities can be aligned with integration boundaries."
+      ],
+      "does_not_support": [
+        "A theorem for this drone field or its hybrid controller.",
+        "The plan's thresholds, budgets, or expected outcome."
+      ],
+      "access_limits": [
+        "Article and peer-review/status page read; source code and ocean datasets were not imported or executed."
+      ],
+      "correction_check": {
+        "status": "limited_check_no_explicit_notice_identified",
+        "date": "2026-10-13",
+        "checks": [
+          "Inspected final article and peer-review page.",
+          "Find on publisher article: Corrigendum; no match.",
+          "Searched: site:gmd.copernicus.org \"Numerical integrators for Lagrangian oceanography\" corrigendum OR correction"
+        ],
+        "scope_limits": "Later related work exists; it is not labeled a correction of this article. No formal Crossmark check."
+      }
+    },
+    {
+      "id": "HAIRER_2000_SYMPROJ",
+      "type": "article",
+      "title": "Symmetric projection methods for differential equations on manifolds",
+      "authors": [
+        "Ernst Hairer"
+      ],
+      "identifier": {
+        "doi": "10.1023/A:1022344502818"
+      },
+      "venue": "BIT",
+      "volume": "40",
+      "issue": "4",
+      "pages": "726-734",
+      "publication_year": 2000,
+      "consulted_version": "Author-hosted preprint dated 1999-05-25; publication metadata from author institutional repository",
+      "publication_status": "Published in BIT in 2000, verified in University of Geneva institutional record.",
+      "primary_full_text_url": "https://www.unige.ch/~hairer/preprints/symproj.pdf",
+      "publication_status_evidence_url": "https://archive-ouverte.unige.ch/unige:12526",
+      "additional_consulted_url": "https://www.unige.ch/~hairer/preprints/symproj.html",
+      "accessed_on": "2026-10-13",
+      "consulted_locations": [
+        "Section 1 Differential equations on manifolds, preprint pages 1-2, equations 1.1-1.2",
+        "Section 1, page 2: ordinary one-step integration followed by projection; off-manifold extension and smooth-case order discussion"
+      ],
+      "supports": [
+        "Ordinary projected integration requires the vector field to be defined near the invariant manifold.",
+        "Smooth-case projection order statements are conditional and distinct from structure preservation."
+      ],
+      "does_not_support": [
+        "Using the author's symmetric projection algorithm in this plan.",
+        "Fourth-order convergence, symplecticity or reversibility for this nonsmooth hybrid implementation."
+      ],
+      "access_limits": [
+        "Publisher final article is login-restricted at the institutional repository; author preprint was read instead.",
+        "No complete published-version versus preprint diff."
+      ],
+      "correction_check": {
+        "status": "limited_check_no_explicit_notice_identified",
+        "date": "2026-10-13",
+        "checks": [
+          "Read author abstract/preprint page and institutional publication record.",
+          "Searched: site:unige.ch \"Symmetric projection methods for differential equations on manifolds\" correction OR erratum"
+        ],
+        "scope_limits": "No explicit paper-specific correction identified in consulted primary pages; publisher correction status not independently certified."
+      }
+    },
+    {
+      "id": "MORK_NORDAM_RUHS_2025",
+      "type": "article",
+      "title": "Handling discontinuities in numerical ODE methods for Lagrangian oceanography",
+      "authors": [
+        "Jenny M. Mørk",
+        "Tor Nordam",
+        "Siren Rühs"
+      ],
+      "identifier": {
+        "doi": "10.5194/gmd-18-7831-2025"
+      },
+      "venue": "Geoscientific Model Development",
+      "volume": "18",
+      "pages": "7831-7851",
+      "publication_date": "2025-10-27",
+      "consulted_version": "Publisher final HTML article",
+      "publication_status": "Published; accepted 2025-09-20.",
+      "primary_full_text_url": "https://gmd.copernicus.org/articles/18/7831/2025/gmd-18-7831-2025.html",
+      "accessed_on": "2026-10-13",
+      "consulted_locations": [
+        "2.1 Error bounds",
+        "2.2 Error estimation",
+        "2.3 Interpolation and discontinuities",
+        "3.2 Discontinuities in the spatial dimension, equation 5 and event-detection/localization discussion",
+        "Appendix C Reference solutions, equation C1",
+        "5.4 Comparison to variable-timestep methods, right-hand-side work accounting"
+      ],
+      "supports": [
+        "Spatial crossings need separate event handling; endpoint signs alone do not locate an event.",
+        "Refinement reference construction must account for finite precision."
+      ],
+      "does_not_support": [
+        "Drone-specific convergence results or an imported event-location implementation.",
+        "The proposed finite-jump detector as a proof of continuous regularity."
+      ],
+      "access_limits": [
+        "Publisher text read; archived code/data and numerical results not independently reproduced."
+      ],
+      "correction_check": {
+        "status": "publisher_page_only_no_explicit_notice_identified",
+        "date": "2026-10-13",
+        "checks": [
+          "Read final article publication metadata.",
+          "Find on publisher article: Corrigendum; no match."
+        ],
+        "scope_limits": "No exhaustive correction/retraction search; study was encountered during the 2020 article correction search and is a later related publication, not an erratum."
+      }
+    }
+  ]
+}

@@ -1,0 +1,647 @@
+{
+  "command": [
+    "node",
+    "implementation/src/child.cjs",
+    "--job",
+    "{id}",
+    "--release",
+    "{release}"
+  ],
+  "correctnessGate": {
+    "command": [
+      "node",
+      "semantic-final-review/verify-correctness-receipts.cjs",
+      "--root",
+      "{study}",
+      "--freeze",
+      "{freeze}",
+      "--release",
+      "{release}"
+    ],
+    "receipt": "semantic-final-review/results/CORRECTNESS-GATE.json"
+  },
+  "jobs": [
+    {
+      "id": "saved-json-states",
+      "kind": "json-states",
+      "phase": "correctness"
+    },
+    {
+      "id": "saved-brackets",
+      "kind": "brackets",
+      "phase": "correctness"
+    },
+    {
+      "id": "array-0",
+      "kind": "array",
+      "manifestIndex": 0,
+      "phase": "correctness"
+    },
+    {
+      "id": "array-1",
+      "kind": "array",
+      "manifestIndex": 1,
+      "phase": "correctness"
+    },
+    {
+      "id": "array-2",
+      "kind": "array",
+      "manifestIndex": 2,
+      "phase": "correctness"
+    },
+    {
+      "id": "array-3",
+      "kind": "array",
+      "manifestIndex": 3,
+      "phase": "correctness"
+    },
+    {
+      "id": "array-4",
+      "kind": "array",
+      "manifestIndex": 4,
+      "phase": "correctness"
+    },
+    {
+      "id": "array-5",
+      "kind": "array",
+      "manifestIndex": 5,
+      "phase": "correctness"
+    },
+    {
+      "id": "array-6",
+      "kind": "array",
+      "manifestIndex": 6,
+      "phase": "correctness"
+    },
+    {
+      "id": "array-7",
+      "kind": "array",
+      "manifestIndex": 7,
+      "phase": "correctness"
+    },
+    {
+      "id": "array-8",
+      "kind": "array",
+      "manifestIndex": 8,
+      "phase": "correctness"
+    },
+    {
+      "id": "array-9",
+      "kind": "array",
+      "manifestIndex": 9,
+      "phase": "correctness"
+    },
+    {
+      "id": "array-10",
+      "kind": "array",
+      "manifestIndex": 10,
+      "phase": "correctness"
+    },
+    {
+      "id": "contract-W-ENDPOINT-840131",
+      "kind": "workload-contract",
+      "phase": "correctness",
+      "seed": 840131,
+      "workload": "W-ENDPOINT"
+    },
+    {
+      "id": "contract-W-ENDPOINT-840137",
+      "kind": "workload-contract",
+      "phase": "correctness",
+      "seed": 840137,
+      "workload": "W-ENDPOINT"
+    },
+    {
+      "id": "contract-W-STAGE-FIXTURE-840131",
+      "kind": "workload-contract",
+      "phase": "correctness",
+      "seed": 840131,
+      "workload": "W-STAGE-FIXTURE"
+    },
+    {
+      "id": "contract-W-STAGE-FIXTURE-840137",
+      "kind": "workload-contract",
+      "phase": "correctness",
+      "seed": 840137,
+      "workload": "W-STAGE-FIXTURE"
+    },
+    {
+      "block": 0,
+      "id": "bench-W-ENDPOINT-840131-0-B",
+      "phase": "performance",
+      "seed": 840131,
+      "variant": "B",
+      "workload": "W-ENDPOINT"
+    },
+    {
+      "block": 0,
+      "id": "bench-W-ENDPOINT-840131-0-C1",
+      "phase": "performance",
+      "seed": 840131,
+      "variant": "C1",
+      "workload": "W-ENDPOINT"
+    },
+    {
+      "block": 1,
+      "id": "bench-W-ENDPOINT-840131-1-C1",
+      "phase": "performance",
+      "seed": 840131,
+      "variant": "C1",
+      "workload": "W-ENDPOINT"
+    },
+    {
+      "block": 1,
+      "id": "bench-W-ENDPOINT-840131-1-B",
+      "phase": "performance",
+      "seed": 840131,
+      "variant": "B",
+      "workload": "W-ENDPOINT"
+    },
+    {
+      "block": 2,
+      "id": "bench-W-ENDPOINT-840131-2-C1",
+      "phase": "performance",
+      "seed": 840131,
+      "variant": "C1",
+      "workload": "W-ENDPOINT"
+    },
+    {
+      "block": 2,
+      "id": "bench-W-ENDPOINT-840131-2-B",
+      "phase": "performance",
+      "seed": 840131,
+      "variant": "B",
+      "workload": "W-ENDPOINT"
+    },
+    {
+      "block": 3,
+      "id": "bench-W-ENDPOINT-840131-3-B",
+      "phase": "performance",
+      "seed": 840131,
+      "variant": "B",
+      "workload": "W-ENDPOINT"
+    },
+    {
+      "block": 3,
+      "id": "bench-W-ENDPOINT-840131-3-C1",
+      "phase": "performance",
+      "seed": 840131,
+      "variant": "C1",
+      "workload": "W-ENDPOINT"
+    },
+    {
+      "block": 4,
+      "id": "bench-W-ENDPOINT-840131-4-B",
+      "phase": "performance",
+      "seed": 840131,
+      "variant": "B",
+      "workload": "W-ENDPOINT"
+    },
+    {
+      "block": 4,
+      "id": "bench-W-ENDPOINT-840131-4-C1",
+      "phase": "performance",
+      "seed": 840131,
+      "variant": "C1",
+      "workload": "W-ENDPOINT"
+    },
+    {
+      "block": 5,
+      "id": "bench-W-ENDPOINT-840131-5-C1",
+      "phase": "performance",
+      "seed": 840131,
+      "variant": "C1",
+      "workload": "W-ENDPOINT"
+    },
+    {
+      "block": 5,
+      "id": "bench-W-ENDPOINT-840131-5-B",
+      "phase": "performance",
+      "seed": 840131,
+      "variant": "B",
+      "workload": "W-ENDPOINT"
+    },
+    {
+      "block": 6,
+      "id": "bench-W-ENDPOINT-840131-6-C1",
+      "phase": "performance",
+      "seed": 840131,
+      "variant": "C1",
+      "workload": "W-ENDPOINT"
+    },
+    {
+      "block": 6,
+      "id": "bench-W-ENDPOINT-840131-6-B",
+      "phase": "performance",
+      "seed": 840131,
+      "variant": "B",
+      "workload": "W-ENDPOINT"
+    },
+    {
+      "block": 7,
+      "id": "bench-W-ENDPOINT-840131-7-B",
+      "phase": "performance",
+      "seed": 840131,
+      "variant": "B",
+      "workload": "W-ENDPOINT"
+    },
+    {
+      "block": 7,
+      "id": "bench-W-ENDPOINT-840131-7-C1",
+      "phase": "performance",
+      "seed": 840131,
+      "variant": "C1",
+      "workload": "W-ENDPOINT"
+    },
+    {
+      "block": 0,
+      "id": "bench-W-ENDPOINT-840137-0-C1",
+      "phase": "performance",
+      "seed": 840137,
+      "variant": "C1",
+      "workload": "W-ENDPOINT"
+    },
+    {
+      "block": 0,
+      "id": "bench-W-ENDPOINT-840137-0-B",
+      "phase": "performance",
+      "seed": 840137,
+      "variant": "B",
+      "workload": "W-ENDPOINT"
+    },
+    {
+      "block": 1,
+      "id": "bench-W-ENDPOINT-840137-1-B",
+      "phase": "performance",
+      "seed": 840137,
+      "variant": "B",
+      "workload": "W-ENDPOINT"
+    },
+    {
+      "block": 1,
+      "id": "bench-W-ENDPOINT-840137-1-C1",
+      "phase": "performance",
+      "seed": 840137,
+      "variant": "C1",
+      "workload": "W-ENDPOINT"
+    },
+    {
+      "block": 2,
+      "id": "bench-W-ENDPOINT-840137-2-B",
+      "phase": "performance",
+      "seed": 840137,
+      "variant": "B",
+      "workload": "W-ENDPOINT"
+    },
+    {
+      "block": 2,
+      "id": "bench-W-ENDPOINT-840137-2-C1",
+      "phase": "performance",
+      "seed": 840137,
+      "variant": "C1",
+      "workload": "W-ENDPOINT"
+    },
+    {
+      "block": 3,
+      "id": "bench-W-ENDPOINT-840137-3-C1",
+      "phase": "performance",
+      "seed": 840137,
+      "variant": "C1",
+      "workload": "W-ENDPOINT"
+    },
+    {
+      "block": 3,
+      "id": "bench-W-ENDPOINT-840137-3-B",
+      "phase": "performance",
+      "seed": 840137,
+      "variant": "B",
+      "workload": "W-ENDPOINT"
+    },
+    {
+      "block": 4,
+      "id": "bench-W-ENDPOINT-840137-4-C1",
+      "phase": "performance",
+      "seed": 840137,
+      "variant": "C1",
+      "workload": "W-ENDPOINT"
+    },
+    {
+      "block": 4,
+      "id": "bench-W-ENDPOINT-840137-4-B",
+      "phase": "performance",
+      "seed": 840137,
+      "variant": "B",
+      "workload": "W-ENDPOINT"
+    },
+    {
+      "block": 5,
+      "id": "bench-W-ENDPOINT-840137-5-B",
+      "phase": "performance",
+      "seed": 840137,
+      "variant": "B",
+      "workload": "W-ENDPOINT"
+    },
+    {
+      "block": 5,
+      "id": "bench-W-ENDPOINT-840137-5-C1",
+      "phase": "performance",
+      "seed": 840137,
+      "variant": "C1",
+      "workload": "W-ENDPOINT"
+    },
+    {
+      "block": 6,
+      "id": "bench-W-ENDPOINT-840137-6-B",
+      "phase": "performance",
+      "seed": 840137,
+      "variant": "B",
+      "workload": "W-ENDPOINT"
+    },
+    {
+      "block": 6,
+      "id": "bench-W-ENDPOINT-840137-6-C1",
+      "phase": "performance",
+      "seed": 840137,
+      "variant": "C1",
+      "workload": "W-ENDPOINT"
+    },
+    {
+      "block": 7,
+      "id": "bench-W-ENDPOINT-840137-7-C1",
+      "phase": "performance",
+      "seed": 840137,
+      "variant": "C1",
+      "workload": "W-ENDPOINT"
+    },
+    {
+      "block": 7,
+      "id": "bench-W-ENDPOINT-840137-7-B",
+      "phase": "performance",
+      "seed": 840137,
+      "variant": "B",
+      "workload": "W-ENDPOINT"
+    },
+    {
+      "block": 0,
+      "id": "bench-W-STAGE-FIXTURE-840131-0-B",
+      "phase": "performance",
+      "seed": 840131,
+      "variant": "B",
+      "workload": "W-STAGE-FIXTURE"
+    },
+    {
+      "block": 0,
+      "id": "bench-W-STAGE-FIXTURE-840131-0-C1",
+      "phase": "performance",
+      "seed": 840131,
+      "variant": "C1",
+      "workload": "W-STAGE-FIXTURE"
+    },
+    {
+      "block": 1,
+      "id": "bench-W-STAGE-FIXTURE-840131-1-C1",
+      "phase": "performance",
+      "seed": 840131,
+      "variant": "C1",
+      "workload": "W-STAGE-FIXTURE"
+    },
+    {
+      "block": 1,
+      "id": "bench-W-STAGE-FIXTURE-840131-1-B",
+      "phase": "performance",
+      "seed": 840131,
+      "variant": "B",
+      "workload": "W-STAGE-FIXTURE"
+    },
+    {
+      "block": 2,
+      "id": "bench-W-STAGE-FIXTURE-840131-2-C1",
+      "phase": "performance",
+      "seed": 840131,
+      "variant": "C1",
+      "workload": "W-STAGE-FIXTURE"
+    },
+    {
+      "block": 2,
+      "id": "bench-W-STAGE-FIXTURE-840131-2-B",
+      "phase": "performance",
+      "seed": 840131,
+      "variant": "B",
+      "workload": "W-STAGE-FIXTURE"
+    },
+    {
+      "block": 3,
+      "id": "bench-W-STAGE-FIXTURE-840131-3-B",
+      "phase": "performance",
+      "seed": 840131,
+      "variant": "B",
+      "workload": "W-STAGE-FIXTURE"
+    },
+    {
+      "block": 3,
+      "id": "bench-W-STAGE-FIXTURE-840131-3-C1",
+      "phase": "performance",
+      "seed": 840131,
+      "variant": "C1",
+      "workload": "W-STAGE-FIXTURE"
+    },
+    {
+      "block": 4,
+      "id": "bench-W-STAGE-FIXTURE-840131-4-B",
+      "phase": "performance",
+      "seed": 840131,
+      "variant": "B",
+      "workload": "W-STAGE-FIXTURE"
+    },
+    {
+      "block": 4,
+      "id": "bench-W-STAGE-FIXTURE-840131-4-C1",
+      "phase": "performance",
+      "seed": 840131,
+      "variant": "C1",
+      "workload": "W-STAGE-FIXTURE"
+    },
+    {
+      "block": 5,
+      "id": "bench-W-STAGE-FIXTURE-840131-5-C1",
+      "phase": "performance",
+      "seed": 840131,
+      "variant": "C1",
+      "workload": "W-STAGE-FIXTURE"
+    },
+    {
+      "block": 5,
+      "id": "bench-W-STAGE-FIXTURE-840131-5-B",
+      "phase": "performance",
+      "seed": 840131,
+      "variant": "B",
+      "workload": "W-STAGE-FIXTURE"
+    },
+    {
+      "block": 6,
+      "id": "bench-W-STAGE-FIXTURE-840131-6-C1",
+      "phase": "performance",
+      "seed": 840131,
+      "variant": "C1",
+      "workload": "W-STAGE-FIXTURE"
+    },
+    {
+      "block": 6,
+      "id": "bench-W-STAGE-FIXTURE-840131-6-B",
+      "phase": "performance",
+      "seed": 840131,
+      "variant": "B",
+      "workload": "W-STAGE-FIXTURE"
+    },
+    {
+      "block": 7,
+      "id": "bench-W-STAGE-FIXTURE-840131-7-B",
+      "phase": "performance",
+      "seed": 840131,
+      "variant": "B",
+      "workload": "W-STAGE-FIXTURE"
+    },
+    {
+      "block": 7,
+      "id": "bench-W-STAGE-FIXTURE-840131-7-C1",
+      "phase": "performance",
+      "seed": 840131,
+      "variant": "C1",
+      "workload": "W-STAGE-FIXTURE"
+    },
+    {
+      "block": 0,
+      "id": "bench-W-STAGE-FIXTURE-840137-0-C1",
+      "phase": "performance",
+      "seed": 840137,
+      "variant": "C1",
+      "workload": "W-STAGE-FIXTURE"
+    },
+    {
+      "block": 0,
+      "id": "bench-W-STAGE-FIXTURE-840137-0-B",
+      "phase": "performance",
+      "seed": 840137,
+      "variant": "B",
+      "workload": "W-STAGE-FIXTURE"
+    },
+    {
+      "block": 1,
+      "id": "bench-W-STAGE-FIXTURE-840137-1-B",
+      "phase": "performance",
+      "seed": 840137,
+      "variant": "B",
+      "workload": "W-STAGE-FIXTURE"
+    },
+    {
+      "block": 1,
+      "id": "bench-W-STAGE-FIXTURE-840137-1-C1",
+      "phase": "performance",
+      "seed": 840137,
+      "variant": "C1",
+      "workload": "W-STAGE-FIXTURE"
+    },
+    {
+      "block": 2,
+      "id": "bench-W-STAGE-FIXTURE-840137-2-B",
+      "phase": "performance",
+      "seed": 840137,
+      "variant": "B",
+      "workload": "W-STAGE-FIXTURE"
+    },
+    {
+      "block": 2,
+      "id": "bench-W-STAGE-FIXTURE-840137-2-C1",
+      "phase": "performance",
+      "seed": 840137,
+      "variant": "C1",
+      "workload": "W-STAGE-FIXTURE"
+    },
+    {
+      "block": 3,
+      "id": "bench-W-STAGE-FIXTURE-840137-3-C1",
+      "phase": "performance",
+      "seed": 840137,
+      "variant": "C1",
+      "workload": "W-STAGE-FIXTURE"
+    },
+    {
+      "block": 3,
+      "id": "bench-W-STAGE-FIXTURE-840137-3-B",
+      "phase": "performance",
+      "seed": 840137,
+      "variant": "B",
+      "workload": "W-STAGE-FIXTURE"
+    },
+    {
+      "block": 4,
+      "id": "bench-W-STAGE-FIXTURE-840137-4-C1",
+      "phase": "performance",
+      "seed": 840137,
+      "variant": "C1",
+      "workload": "W-STAGE-FIXTURE"
+    },
+    {
+      "block": 4,
+      "id": "bench-W-STAGE-FIXTURE-840137-4-B",
+      "phase": "performance",
+      "seed": 840137,
+      "variant": "B",
+      "workload": "W-STAGE-FIXTURE"
+    },
+    {
+      "block": 5,
+      "id": "bench-W-STAGE-FIXTURE-840137-5-B",
+      "phase": "performance",
+      "seed": 840137,
+      "variant": "B",
+      "workload": "W-STAGE-FIXTURE"
+    },
+    {
+      "block": 5,
+      "id": "bench-W-STAGE-FIXTURE-840137-5-C1",
+      "phase": "performance",
+      "seed": 840137,
+      "variant": "C1",
+      "workload": "W-STAGE-FIXTURE"
+    },
+    {
+      "block": 6,
+      "id": "bench-W-STAGE-FIXTURE-840137-6-B",
+      "phase": "performance",
+      "seed": 840137,
+      "variant": "B",
+      "workload": "W-STAGE-FIXTURE"
+    },
+    {
+      "block": 6,
+      "id": "bench-W-STAGE-FIXTURE-840137-6-C1",
+      "phase": "performance",
+      "seed": 840137,
+      "variant": "C1",
+      "workload": "W-STAGE-FIXTURE"
+    },
+    {
+      "block": 7,
+      "id": "bench-W-STAGE-FIXTURE-840137-7-C1",
+      "phase": "performance",
+      "seed": 840137,
+      "variant": "C1",
+      "workload": "W-STAGE-FIXTURE"
+    },
+    {
+      "block": 7,
+      "id": "bench-W-STAGE-FIXTURE-840137-7-B",
+      "phase": "performance",
+      "seed": 840137,
+      "variant": "B",
+      "workload": "W-STAGE-FIXTURE"
+    },
+    {
+      "id": "synthetic",
+      "kind": "synthetic",
+      "phase": "correctness"
+    }
+  ],
+  "schema": "audit-c1-jobs/v1"
+}

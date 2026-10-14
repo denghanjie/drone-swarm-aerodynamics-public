@@ -1,0 +1,21 @@
+{
+  "schema": "postrun-retention-verification-plan/v1",
+  "status": "prospectively bounded, verification only",
+  "maximumWallSeconds": 30,
+  "scope": [
+    "Inspect existing JSON execution, fixture, matrix, failure and timing records",
+    "Check existing raw sizes and SHA256 identities against sidecars",
+    "Inspect partial-file and partial-row boundaries without new trajectory comparisons",
+    "Verify frozen source and reviewer-file identities",
+    "Describe cost bottleneck hypotheses using retained timing scopes and source only"
+  ],
+  "forbidden": [
+    "New integration or numerical fixture execution",
+    "Field or controller evaluation",
+    "Scientific trajectory comparison or recomputation of numerical gates",
+    "Remote writes or spawning agents",
+    "Modification of frozen robustness-review files"
+  ],
+  "accounting": "Record verification wall and CPU separately from the original supervised numerical window. This audit cannot extend that window or qualify a stopped reference.",
+  "stopping": "Stop verification after30wall seconds; retain incomplete checks explicitly. Preserve every existing artifact."
+}

@@ -1,0 +1,37 @@
+--- research-next/implementation/src/branch-audit.cjs	2026-10-14 07:49:27.505303929 +0800
++++ research-audit-optimization/implementation/src/branch-audit-c1.cjs	2026-10-14 11:34:40.021271196 +0800
+@@ -4,20 +4,20 @@
+ const categories=['downstreamZero','farStart','downstreamFade','downstreamCutoff','nearRadius','radialFade','radialCutoff','neighborRadius','tilt'];
+ const outerAtFar=M.P.radialCutoff*M.W.parameters.spread*(M.W.parameters.minDownstream-M.W.parameters.origin)*M.P.motorDistance;
+ function sample(states,location){
+- const {axes,points}=M.prepare(states),n=states.length,pairs=[],signature=Buffer.alloc(n*(n-1)*4*2+n),closest=categories.map(()=>null),minimum=categories.map(()=>null),maximum=categories.map(()=>null);let offset=0;
+- function margin(k,value,identity){const v={margin:value,...identity};if(!closest[k]||Math.abs(value)<Math.abs(closest[k].margin))closest[k]=v;if(!minimum[k]||value<minimum[k].margin)minimum[k]=v;if(!maximum[k]||value>maximum[k].margin)maximum[k]=v;}
++ const {axes,points}=M.prepare(states),n=states.length,pairs=[],signature=Buffer.alloc(n*(n-1)*4*2+n),closest=categories.map(()=>null),minimum=categories.map(()=>null),maximum=categories.map(()=>null),distances=new Array(n*n);let offset=0;
++ function margin(k,value,i,r,j){const near=!closest[k]||Math.abs(value)<Math.abs(closest[k].margin),low=!minimum[k]||value<minimum[k].margin,high=!maximum[k]||value>maximum[k].margin;if(near||low||high){const v=k===8?{margin:value,drone:i}:{margin:value,receiver:i,rotor:r,source:j};if(near)closest[k]=v;if(low)minimum[k]=v;if(high)maximum[k]=v;}}
+  for(let i=0;i<n;i++)for(let r=0;r<4;r++)for(let j=0;j<n;j++)if(i!==j){
+   const a=3*j,p=12*i+3*r,x=states[j][0]-points[p],y=states[j][1]-points[p+1],z=states[j][2]-points[p+2];
+   const down=((0+x*axes[a])+y*axes[a+1])+z*axes[a+2],radial=Math.hypot(x-down*axes[a],y-down*axes[a+1],z-down*axes[a+2]);
+   const half=M.W.parameters.spread*(down/M.P.motorDistance-M.W.parameters.origin)*M.P.motorDistance;
+-  const distance=Math.hypot(...[0,1,2].map(k=>states[j][k]-states[i][k]));
++  const distance=r===0?(distances[i*n+j]=Math.hypot(...[0,1,2].map(k=>states[j][k]-states[i][k]))):distances[i*n+j];
+   const margins=[down,down-M.farStart,down-M.P.downstreamFade,down-M.P.downstreamCutoff,radial-M.P.nearFieldRadius,radial-M.P.radialFade*half,radial-M.P.radialCutoff*half,distance-M.P.neighborRadius];
+-  let bits=0;for(let k=0;k<margins.length;k++){if(k===0?margins[k]>0:margins[k]>=0)bits|=1<<k;margin(k,margins[k],{receiver:i,rotor:r,source:j});}
++  let bits=0;for(let k=0;k<margins.length;k++){if(k===0?margins[k]>0:margins[k]>=0)bits|=1<<k;margin(k,margins[k],i,r,j);}
+   signature.writeUInt16LE(bits,offset);offset+=2;
+   const identity={receiver:i,rotor:r,source:j};pairs.push({down,radial,bits,margins,...identity});
+   if(distance<M.P.neighborRadius&&down>0&&down<M.farStart&&radial<M.P.nearFieldRadius)throw Object.assign(new M.DomainError('Receiver enters unmodeled near wake', {...identity,downstream:down,radial}),{auditLocation:location});
+  }
+- for(let i=0;i<n;i++){const m=axes[3*i+2]-Math.cos(M.P.maxTiltDegrees*Math.PI/180);margin(8,m,{drone:i});signature[offset++]=m>=0?1:0;}
++ for(let i=0;i<n;i++){const m=axes[3*i+2]-Math.cos(M.P.maxTiltDegrees*Math.PI/180);margin(8,m,i);signature[offset++]=m>=0?1:0;}
+  return {states,location,pairs,closest,minimum,maximum,signatureSha256:sha(signature)};
+ }
+ function jumpRisk(samples){
+@@ -33,7 +33,7 @@
+  observe(states,location,{comparePrevious=true,raw=null}={}){
+   const s=sample(states,location);s.raw=raw||states;this.samples++;this.pairSamples+=s.pairs.length;
+   const b=Buffer.from(s.signatureSha256,'hex');this.hash.update(b);if(this.persist)this.pending.push(b);
+-  for(let k=0;k<categories.length;k++){const e=this.extrema[k];for(const [key,entry]of [['nearest',s.closest[k]],['minimum',s.minimum[k]],['maximum',s.maximum[k]]]){const value={...entry,location};if(!e[key]||(key==='nearest'?Math.abs(value.margin)<Math.abs(e[key].margin):key==='minimum'?value.margin<e[key].margin:value.margin>e[key].margin))e[key]=value;}}
++  for(let k=0;k<categories.length;k++){const e=this.extrema[k];for(const [key,entry]of [['nearest',s.closest[k]],['minimum',s.minimum[k]],['maximum',s.maximum[k]]]){const value=entry===null?undefined:entry.margin;if(!e[key]||(key==='nearest'?Math.abs(value)<Math.abs(e[key].margin):key==='minimum'?value<e[key].margin:value>e[key].margin))e[key]={...entry,location};}}
+   if(comparePrevious&&this.previous)this.compare(this.previous,s);
+   this.previous=s;if(this.pending.length>=1024)this.flush();return s;
+  }

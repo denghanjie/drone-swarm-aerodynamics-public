@@ -1,0 +1,85 @@
+{
+  "audit_date": "2026-10-13",
+  "search_scope": "Targeted primary-source verification, corrections/version search and local-code applicability audit. Not a systematic review.",
+  "records": [
+    {
+      "reference_id": "reynolds1987",
+      "version_consulted": "Author-hosted 13-page reflowed PDF without figures; cite PDF leaf numbers separately from original proceedings pagination.",
+      "read_coverage": "Full author-hosted paper text (PDF leaves 1–13), focusing on local rules, perception, shared migration, algorithmic considerations and limitations. Author background/update page also inspected.",
+      "equation_visual_check": "No numerical source equation used; author PDF has no original figures.",
+      "corrections_and_new_versions": {
+        "sources_checked": [
+          "https://www.red3d.com/cwr/papers/1987/boids.html",
+          "https://www.red3d.com/cwr/boids/",
+          "https://doi.org/10.1145/37401.37406"
+        ],
+        "queries": [
+          "site.red3d.com boids errata",
+          "Flocks Herds and Schools 1987 errata DOI"
+        ],
+        "result": "No formal correction located in inspected author/publisher records or targeted search. Author background/update material is supplementary; not a revised paper or proof of absence of corrections.",
+        "access_issue": "Direct DOI fetch returned an error; publisher-indexed record and full author manuscript were accessible."
+      }
+    },
+    {
+      "reference_id": "teschner2003",
+      "version_consulted": "Eight-page author/institution-hosted PDF; running page markers are malformed (666), so locations use 1-based PDF leaves.",
+      "read_coverage": "Full eight-page institutional PDF, including sections 3–7 and stated missing edge-intersection handling.",
+      "equation_visual_check": "Discretization and hash expression read from source text; no hash constants imported into code.",
+      "corrections_and_new_versions": {
+        "sources_checked": [
+          "https://cgl.ethz.ch/publications/papers/papers.php",
+          "https://cg.informatik.uni-freiburg.de/publications/2003_VMV_collisionDetectionHashing.pdf"
+        ],
+        "queries": [
+          "Optimized Spatial Hashing for Collision Detection of Deformable Objects errata DOI",
+          "site.cg.informatik.uni-freiburg.de Optimized Spatial Hashing corrections"
+        ],
+        "result": "No correction or replacement located in consulted primary records. Later 2004 deformable-solids and 2005 collision-detection papers appeared in the ETH list; they are related follow-ons, not verified errata or adopted methods.",
+        "metadata_caution": "DOI unverified/null; use stable institutional URLs."
+      }
+    },
+    {
+      "reference_id": "kalibera2013",
+      "version_consulted": "University of Kent Author's Accepted Manuscript, 12 PDF leaves including repository cover; source locations refer to those leaves.",
+      "read_coverage": "Entire accessible accepted-manuscript content, including repository cover and all sections/references. Plot explanation read; published confidence-interval equation visually checked on PDF leaf 10.",
+      "equation_visual_check": "Leaf 10 rendered and inspected: Eq. (5) is a mean-ratio Fieller interval, not the campaign median bootstrap.",
+      "corrections_and_new_versions": {
+        "sources_checked": [
+          "https://kar.kent.ac.uk/33611/",
+          "https://arxiv.org/abs/2007.10899"
+        ],
+        "queries": [
+          "Rigorous Benchmarking in Reasonable Time corrections errata extended version",
+          "site.kar.kent.ac.uk Rigorous Benchmarking erratum"
+        ],
+        "result": "No dedicated erratum found in consulted records. ISMM paper cites fuller Kent TR 4–12. arXiv:2007.10899v1 was deposited 21 July 2020, displays November 2013 manuscript date, and has one listed version. It is a related fuller report, not a 2020 new benchmark experiment. Report metadata inspected; its full proofs were not audited here.",
+        "related_version_url": "https://arxiv.org/abs/2007.10899v1"
+      }
+    },
+    {
+      "reference_id": "shewchuk1996",
+      "version_consulted": "Ten-page author-hosted short conference paper; this omits proofs and predates the expanded 1997 journal version.",
+      "read_coverage": "Full ten-page short paper using layout and raw extraction. Relevant numerical forms in section 5.1 visually checked on PDF leaf 6 because text extraction loses mathematical symbols.",
+      "equation_visual_check": "Leaf 6 rendered and inspected: determinants (1)–(4); no coefficients/error bounds applied to the wake test.",
+      "corrections_and_new_versions": {
+        "sources_checked": [
+          "https://www.cs.cmu.edu/~quake/robust.html",
+          "https://www.cs.cmu.edu/afs/cs/project/quake/public/papers/robust-arithmetic.abstract",
+          "https://doi.org/10.1145/237218.237337"
+        ],
+        "queries": [
+          "site.cs.berkeley.edu/~jrs robust errata",
+          "site.cs.cmu.edu/~quake robust correction"
+        ],
+        "result": "Author identifies expanded 1997 Discrete & Computational Geometry 18:305–363 version, also CMU-CS-96-140. Author warns that extended-precision internal registers need suitable rounding configuration. No separate erratum located. Long-version metadata, not all long-version proofs, inspected; no claim to have audited those proofs.",
+        "related_version_url": "https://www.cs.cmu.edu/~quake/robust.html"
+      }
+    }
+  ],
+  "excluded_as_authorities": [
+    "Search snippets and secondary indexes were discovery aids; paper content and bibliographic decisions rely on listed author/institution/publisher sources.",
+    "Goldberg, Verlet, Allen/Tildesley and other discovered literature were not adopted without a matching verified reading; not included as phantom references."
+  ],
+  "cache_handling": "sources/ is local reading cache only. Exclude all PDFs, extracted text, and rendered pages from publication or distribution unless independently authorized."
+}

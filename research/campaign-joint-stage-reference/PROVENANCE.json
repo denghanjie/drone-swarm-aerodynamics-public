@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.0",
+  "artifact_id": "temporal-reference-repair-plan-20261013",
+  "status": "proposal_complete_coordinator_adoption_pending",
+  "scientific_execution_performed": false,
+  "implementation_execution_performed": false,
+  "raw_arrays_read_by_planning_agent": false,
+  "remote_writes_performed": false,
+  "authorized_scope": "Continued research authorized by user; this assignment was source/literature inspection and bounded planning only.",
+  "prior_model": {
+    "source_aggregate_sha256": "dc73105f85b4f81c9a84899a117eefbb03c82b3c651a34fa9c73716f2c2c289b",
+    "exact_evaluator_sha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+    "prior_plan_sha256": "0f528635c0c0e12dad5870fa7ccbad509029da741294e75e18bb63823033f267",
+    "frozen_source_commit": "16d106ee0d80adfaaf7fb4f70a24d9349b8ee27b",
+    "raw_checkpoint_commit": "b9bd5065d02561920af27468f5e4740b301bd174",
+    "latest_recovery_head_reported_by_coordinator": "d220fefcb5c3f0ac5e59acb97db5fdc233b7ea1a",
+    "latest_head_verification_scope": "Coordinator reported 61 overlay files and 17 raw objects verified; planner did not independently reread that remote commit."
+  },
+  "directly_hashed_inputs": [
+    {
+      "path": "../research-recovery/github/recovered/research/campaign-temporal-sampling/implementation/PLAN.md",
+      "sha256": "0f528635c0c0e12dad5870fa7ccbad509029da741294e75e18bb63823033f267"
+    },
+    {
+      "path": "../research-recovery/github/recovered/research/campaign-temporal-sampling/implementation/src/exact-aero.cjs",
+      "sha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189"
+    },
+    {
+      "path": "../research-recovery/github/recovered/research/campaign-temporal-sampling/implementation/src/coupled.cjs",
+      "sha256": "bfb729c74494d1efad24671937e10dc407f6dabc1f69a8bc269fb38fe9731641"
+    },
+    {
+      "path": "../research-recovery/embedded/recovered/REPORT.md",
+      "sha256": "fafe310d49959b21f0bf14edec609a678343cfee65b2edafbc2f772cef781341"
+    },
+    {
+      "path": "../research-recovery/embedded/recovered/results/campaign.json",
+      "sha256": "f22e4a6fdb83220a04abd62f83d51d80d10f4dd2c889a392fc146ac9182ef9de"
+    },
+    {
+      "path": "../research-recovery/embedded/recovered/results/RAW-RETENTION-MANIFEST.json",
+      "sha256": "d6147dc356fd2cb3b5ebb033671202223b9c36fe51a8892be1b31327c50717a5"
+    }
+  ],
+  "static_findings": [
+    {
+      "id": "S1",
+      "finding": "Held scalar inflows are frozen through per-drone RK4 stages.",
+      "source": "implementation/snapshot/outputs/milestone-28-source/aero.cjs:18-19"
+    },
+    {
+      "id": "S2",
+      "finding": "Exact field requires unit input quaternion but production RK intermediate quaternions are not normalized.",
+      "source": "implementation/src/exact-aero.cjs:41; implementation/snapshot/outputs/step02c-source/physics.cjs:19"
+    },
+    {
+      "id": "S3",
+      "finding": "Lower far-field switch admits a possible finite jump in a narrow valid annulus; actual path exposure is untested.",
+      "source": "implementation/src/exact-aero.cjs:92-102",
+      "arithmetic_from_printed_constants": {
+        "farStartM": 0.19798989873223333,
+        "nearGuardRadiusM": 0.15,
+        "outerSupportAtFarStartM": 0.15152108978535467
+      }
+    }
+  ],
+  "independent_planning_review": {
+    "status": "completed_one_required_correction_applied; coordinator review still pending",
+    "finding": "No additional mathematical/provenance blocker identified; finite-jump audit had to cover new trajectories as well as old paths.",
+    "correction": "PLAN.md now mandates separate accepted-endpoint and RK-trial candidate flags on every new trajectory, and stop/no acceptance on any candidate.",
+    "verification_reported": "All 61 manifest source files, aggregate and prior-plan identity checked; no numerical execution."
+  },
+  "prospective_resources": {
+    "count": 16,
+    "seeds": [
+      840131,
+      840137
+    ],
+    "durationSeconds": 1,
+    "maxNewCoupledRuns": 16,
+    "historicalCompatibilityRuns": 1,
+    "maxWallSeconds": 300,
+    "maxCpuSeconds": 300,
+    "maxJobWallSeconds": 45,
+    "maxLogicalBytes": 150000000,
+    "failureReserveBytes": 2000000,
+    "swarmSteps": 176000,
+    "vehicleDerivativeCalls": 11264000,
+    "dynamicsFieldCalls": 163200,
+    "newRawStateBytes": 76630016,
+    "oldDenseUncompressedBytes": 27857152,
+    "oldDenseTransportPartsBytes": 26736688,
+    "baselineWithRetainedTransportDuplicatesBytes": 131223856,
+    "remainingForSourcesLogsMetadataIncludingReserveBytes": 18776144
+  },
+  "open_prerequisites": [
+    "Coordinator adoption and final independent review of the plan.",
+    "Code-only implementation and review with complete hashes; no actual implementation artifact asserted here.",
+    "Read-only input materialization and integrity verification by separate assigned worker.",
+    "Prospective freeze before any fixture, preflight, replay, or coupled numerical execution."
+  ],
+  "compact_retention": {
+    "status": "Coordinator-selected before freeze",
+    "per_sample": "Branch-signature hash only; every required margin still evaluated.",
+    "per_run": "Signed margin extrema with times, sample/pair/rotor IDs; first/worst brackets per boundary category, not per pair.",
+    "stage_evidence": "Only first/worst/failing raw J stage inputs retained; general J stage histories have rolling hashes only and are not fully reconstructible.",
+    "forecast_status": "Approximately 10 MB signature logs; implementation must verify full logical allocation before freeze."
+  },
+  "recordScope": "Original proposal provenance; original150MB budget fields below are historical, superseded prospectively before numerical execution.",
+  "currentAdoptedProtocol": {
+    "planSha256": "b68a2a93b29e85b3784d874010c767ee7ba3eacfdcc71d4bb6b91d31606d4bba",
+    "retainedLogicalBytes": 200000000,
+    "initialPublishedPlanCommit": "f7ee3c703a4aa5156675e31d3065a901904b7c0e",
+    "storageAmendmentCommit": "17a3f9bdfce678d7a22ba04e1bb4d8d3a56e8fd1",
+    "details": "STORAGE-AMENDMENT-001.json",
+    "executionStatus": "implementation_review_and_source_freeze_pending",
+    "retentionClarification": "RETENTION-CLARIFICATION-002.json"
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "schema": "r7-terminal-admission-evidence/v1",
+  "campaignId": "AUDIT-C1-R7",
+  "preparedAtUtc": "2026-10-14T09:31:57.031420+00:00",
+  "status": "terminal_outer_admission_rejected_before_supervisor_launch",
+  "experimentCompleted": false,
+  "scientificAcceptance": false,
+  "attemptConsumed": true,
+  "retryAllowed": false,
+  "benchmarkPermission": false,
+  "coverage": {
+    "adapterControls": {
+      "completed": 0,
+      "planned": 32
+    },
+    "scientificCases": {
+      "completed": 0,
+      "planned": 229
+    },
+    "correctnessJobs": {
+      "completed": 0,
+      "planned": 18
+    },
+    "independentCorrectnessGates": {
+      "completed": 0,
+      "planned": 1
+    },
+    "benchmarks": {
+      "completed": 0,
+      "authorized": 0
+    },
+    "auditCalls": 0,
+    "modelCalls": 0
+  },
+  "failure": {
+    "stage": "outer observer pipe-capacity admission before subprocess.Popen",
+    "exactMessage": "Combined outer pipe capacity exceeds frozen16KB allowance",
+    "actualCombinedPipeCapacityBytes": 131072,
+    "frozenCombinedCapacityCeilingBytes": 16384,
+    "perPipeCapacitiesRecorded": false,
+    "sourceLocation": "robustness-review/observe_once.py:77-83",
+    "toolExitCode": 1,
+    "timeout": false,
+    "supervisorLaunched": false,
+    "directWait4": null,
+    "reapedProcessCount": 0,
+    "innerTerminalStatus": null
+  },
+  "recordedMeasurements": {
+    "outerCpuSecondsBeforeObservationWrite": 0.032898,
+    "outerProcessMaxRssBytes": 12582912,
+    "outerElapsedSecondsBeforeObservationWrite": 0.04220154900394846,
+    "launchThroughAllReapedWallSeconds": null,
+    "processCreationSeconds": null,
+    "combinedChildLogBytes": 0,
+    "scope": "Only the outer admission process. Before-write timing is not final end-to-end duration; no supervisor or scientific child was created."
+  },
+  "nonMeasurementFallbacks": [
+    {
+      "field": "conservativeCorrectnessWallSeconds",
+      "rawValue": 420.01,
+      "interpretation": "Missing inner interval and missing creation timestamp each contribute the 210-second rejection fallback, plus 0.01s clock-tick allowance; not 420.01s elapsed."
+    },
+    {
+      "field": "conservativeCorrectnessCpuSeconds",
+      "rawValue": 210.032898,
+      "interpretation": "Missing inner finalization-start CPU uses 210s plus measured outer CPU; not observed scientific CPU."
+    },
+    {
+      "field": "conservativeFinalizationWallSecondsBeforeWrite",
+      "rawValue": 210.0,
+      "interpretation": "Missing launch timestamp produces 210s fallback; no finalization job ran."
+    },
+    {
+      "field": "serialTreePlusOuterRssUpperBoundBytes",
+      "rawValue": 1086324737,
+      "interpretation": "Missing inner RSS bound contributes 1,073,741,825 B plus 12,582,912 B outer maxRSS; not measured tree memory."
+    },
+    {
+      "fields": [
+        "observedReapedSubtreeCpuSeconds",
+        "maximumWait4RssBytes"
+      ],
+      "rawValues": [
+        0.0,
+        0
+      ],
+      "interpretation": "Zero-initialized aggregates over an empty set of reaped children; no child-resource measurement."
+    },
+    {
+      "field": "completePipeCapture",
+      "rawValue": false,
+      "interpretation": "Admission did not reach the normal launched-process EOF path; both retained logs are empty and no child was launched."
+    }
+  ],
+  "toolTiming": {
+    "rawReportedWallSeconds": 3.0817e-05,
+    "isEndToEndTiming": false,
+    "authority": "ROOT-LAUNCH-RESULT.json explicitly rejects interpreting tool chunk timing as full launch duration."
+  },
+  "noExecutionEvidence": {
+    "absentResultDirectories": [
+      "implementation/results",
+      "robustness-review/results",
+      "semantic-final-review/results"
+    ],
+    "exclusiveOuterMarkerRetained": true,
+    "sourceOrder": "Capacity query and rejection precede Popen in the exact pinned observer.",
+    "rawObservationPinned": true
+  },
+  "postrunRootVerification": {
+    "authority": "POSTRUN-PRESERVATION.json; performed by root after the failed attempt, not by an unlaunched runtime supervisor",
+    "frozenFilesChecked": 230,
+    "allFrozenNamesSizesHashesMatch": true,
+    "externalImmutableFilesChecked": 1252,
+    "externalImmutableBytesChecked": 173884973,
+    "externalImmutableCensusPassed": true,
+    "rawInventoryPublished": false
+  },
+  "interpretation": {
+    "established": "The frozen outer observer rejected the observed environment before the inner supervisor, controls or scientific comparison began. Source preservation was separately verified by root.",
+    "notEstablished": [
+      "R7 adapter integration correctness",
+      "B/C1 equivalence across 229 cases",
+      "C1 speedup or benchmark performance",
+      "Physical/model validity or new 3D simulation findings"
+    ],
+    "predecessors": "R3 and R4 failures remain separate; prior R5/R6 finite infrastructure/selector evidence is not expanded by this non-executed scientific attempt.",
+    "nextAction": "Preserve terminal R7. Any future proposal needs separate prospective review/release; no successor implementation or retry is authorized by this report."
+  },
+  "immutableEvidencePins": [
+    {
+      "path": "PROTOCOL.json",
+      "bytes": 1089,
+      "sha256": "636678488a99589cb7963c735397daff7afe7bf73bae758d447510ce756308da"
+    },
+    {
+      "path": "PROPOSAL.json",
+      "bytes": 3751,
+      "sha256": "2c024a9134bd7e32f4dc5b30e2f20b6a6e3c0d69bb584ebaed730b7d92a7efdb"
+    },
+    {
+      "path": "FREEZE.json",
+      "bytes": 44888,
+      "sha256": "4d568a40ae0d038163b551a1eead15ba5b7046bbbbc79ecaaca7e446b0581833"
+    },
+    {
+      "path": "EXECUTION-RELEASE.json",
+      "bytes": 2015,
+      "sha256": "eae9726b5cab7f96660e0c65b347bbc3387e1d2f9297407f04288dedd9083928"
+    },
+    {
+      "path": "IMPLEMENTATION-PINS.json",
+      "bytes": 7521,
+      "sha256": "cba46d469e735cfe05c7114283c48260c74dd7418159e2fd001f7649af46363d"
+    },
+    {
+      "path": "OUTER-OBSERVER-PINS-002.json",
+      "bytes": 1237,
+      "sha256": "9a971b69c1ef189e9d045920ecf838b76f17bb361ee07db98b83d37aed823f3a"
+    },
+    {
+      "path": "robustness-review/observe_once.py",
+      "bytes": 13122,
+      "sha256": "a3a2f1c63d7921290277136579b04e7c09e3681150b11afa1393bfc6814c77dc"
+    },
+    {
+      "path": "robustness-review/outer-observation/STARTED.json",
+      "bytes": 226,
+      "sha256": "f95c4559637f8e2f7c0e590693e3ccb690f0b375066ad117b3f1550d308c4bb8"
+    },
+    {
+      "path": "robustness-review/outer-observation/PARENT-OBSERVATION.json",
+      "bytes": 1518,
+      "sha256": "f4e7e3797a3c4769783fb4698c776aeaf261012d960f39d7d067db5b44d3ccee"
+    },
+    {
+      "path": "ROOT-LAUNCH-RESULT.json",
+      "bytes": 608,
+      "sha256": "27c6afcdabd6fc4458dbd0d65054fe4eb75c67e33e726b568ed03e57ee01b55d"
+    },
+    {
+      "path": "POSTRUN-PRESERVATION.json",
+      "bytes": 488,
+      "sha256": "3070b7fbe11159fb4c8ad56303c40ac68f49942e44998e56c0e31dff3377501f"
+    },
+    {
+      "path": "implementation/src/branch-audit-c1.cjs",
+      "bytes": 9012,
+      "sha256": "d75fb8eec52b4c34a2d8caf01d0e7fb5e42b8278c3a21b7a27b85fcc99520fda"
+    },
+    {
+      "path": "implementation/src/selector-contract.cjs",
+      "bytes": 20726,
+      "sha256": "c0ea66d80510199762738d325a76073d215053b4e80af4ace1612c9afb785c1f"
+    }
+  ],
+  "publicationSafety": {
+    "containsAbsoluteWorkspacePaths": false,
+    "includesPrivateInventories": false,
+    "rawFreezeAndExternalCensusAreReferencesOnly": true
+  }
+}

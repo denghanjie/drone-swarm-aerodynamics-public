@@ -1,0 +1,664 @@
+{
+  "id": "s4301-compatibility",
+  "samples": 401,
+  "pairSamples": 384960,
+  "signatureChanges": 310,
+  "stepRiskChecks": 400,
+  "endpointRiskChecks": 400,
+  "fullTrialRiskChecks": 0,
+  "worstBracketDefinition": "Largest absolute signed-margin change among sampled category transitions; signature changes are not physical discontinuity claims",
+  "extrema": {
+    "downstreamZero": {
+      "nearest": {
+        "margin": 8.91012079402842e-7,
+        "receiver": 11,
+        "rotor": 1,
+        "source": 7,
+        "location": {
+          "tick": 51200,
+          "time": 1,
+          "role": "endpoint"
+        }
+      },
+      "minimum": {
+        "margin": -1.9086501956895279,
+        "receiver": 5,
+        "rotor": 1,
+        "source": 2,
+        "location": {
+          "tick": 24960,
+          "time": 0.4875,
+          "role": "endpoint"
+        }
+      },
+      "maximum": {
+        "margin": 1.8695047167735306,
+        "receiver": 2,
+        "rotor": 3,
+        "source": 3,
+        "location": {
+          "tick": 51200,
+          "time": 1,
+          "role": "endpoint"
+        }
+      }
+    },
+    "farStart": {
+      "nearest": {
+        "margin": 0.000007191720024363191,
+        "receiver": 2,
+        "rotor": 2,
+        "source": 8,
+        "location": {
+          "tick": 26752,
+          "time": 0.5225,
+          "role": "endpoint"
+        }
+      },
+      "minimum": {
+        "margin": -2.106640094421761,
+        "receiver": 5,
+        "rotor": 1,
+        "source": 2,
+        "location": {
+          "tick": 24960,
+          "time": 0.4875,
+          "role": "endpoint"
+        }
+      },
+      "maximum": {
+        "margin": 1.6715148180412973,
+        "receiver": 2,
+        "rotor": 3,
+        "source": 3,
+        "location": {
+          "tick": 51200,
+          "time": 1,
+          "role": "endpoint"
+        }
+      }
+    },
+    "downstreamFade": {
+      "nearest": {
+        "margin": -0.13049528322646942,
+        "receiver": 2,
+        "rotor": 3,
+        "source": 3,
+        "location": {
+          "tick": 51200,
+          "time": 1,
+          "role": "endpoint"
+        }
+      },
+      "minimum": {
+        "margin": -3.908650195689528,
+        "receiver": 5,
+        "rotor": 1,
+        "source": 2,
+        "location": {
+          "tick": 24960,
+          "time": 0.4875,
+          "role": "endpoint"
+        }
+      },
+      "maximum": {
+        "margin": -0.13049528322646942,
+        "receiver": 2,
+        "rotor": 3,
+        "source": 3,
+        "location": {
+          "tick": 51200,
+          "time": 1,
+          "role": "endpoint"
+        }
+      }
+    },
+    "downstreamCutoff": {
+      "nearest": {
+        "margin": -0.6304952832264694,
+        "receiver": 2,
+        "rotor": 3,
+        "source": 3,
+        "location": {
+          "tick": 51200,
+          "time": 1,
+          "role": "endpoint"
+        }
+      },
+      "minimum": {
+        "margin": -4.408650195689528,
+        "receiver": 5,
+        "rotor": 1,
+        "source": 2,
+        "location": {
+          "tick": 24960,
+          "time": 0.4875,
+          "role": "endpoint"
+        }
+      },
+      "maximum": {
+        "margin": -0.6304952832264694,
+        "receiver": 2,
+        "rotor": 3,
+        "source": 3,
+        "location": {
+          "tick": 51200,
+          "time": 1,
+          "role": "endpoint"
+        }
+      }
+    },
+    "nearRadius": {
+      "nearest": {
+        "margin": 0.000001024884360933953,
+        "receiver": 6,
+        "rotor": 1,
+        "source": 15,
+        "location": {
+          "tick": 24192,
+          "time": 0.47250000000000003,
+          "role": "endpoint"
+        }
+      },
+      "minimum": {
+        "margin": -0.14976029842273766,
+        "receiver": 5,
+        "rotor": 2,
+        "source": 1,
+        "location": {
+          "tick": 42752,
+          "time": 0.835,
+          "role": "endpoint"
+        }
+      },
+      "maximum": {
+        "margin": 1.7954765167955107,
+        "receiver": 2,
+        "rotor": 3,
+        "source": 1,
+        "location": {
+          "tick": 14336,
+          "time": 0.28,
+          "role": "endpoint"
+        }
+      }
+    },
+    "radialFade": {
+      "nearest": {
+        "margin": 0.00004273216464523166,
+        "receiver": 2,
+        "rotor": 2,
+        "source": 6,
+        "location": {
+          "tick": 23296,
+          "time": 0.455,
+          "role": "endpoint"
+        }
+      },
+      "minimum": {
+        "margin": -0.30957192698304226,
+        "receiver": 13,
+        "rotor": 0,
+        "source": 12,
+        "location": {
+          "tick": 13440,
+          "time": 0.2625,
+          "role": "endpoint"
+        }
+      },
+      "maximum": {
+        "margin": 2.0693245435813217,
+        "receiver": 11,
+        "rotor": 3,
+        "source": 13,
+        "location": {
+          "tick": 51200,
+          "time": 1,
+          "role": "endpoint"
+        }
+      }
+    },
+    "radialCutoff": {
+      "nearest": {
+        "margin": -0.000006742072412857514,
+        "receiver": 8,
+        "rotor": 3,
+        "source": 14,
+        "location": {
+          "tick": 39424,
+          "time": 0.77,
+          "role": "endpoint"
+        }
+      },
+      "minimum": {
+        "margin": -0.4652424346051273,
+        "receiver": 13,
+        "rotor": 0,
+        "source": 12,
+        "location": {
+          "tick": 13440,
+          "time": 0.2625,
+          "role": "endpoint"
+        }
+      },
+      "maximum": {
+        "margin": 2.164614280505191,
+        "receiver": 11,
+        "rotor": 3,
+        "source": 13,
+        "location": {
+          "tick": 51200,
+          "time": 1,
+          "role": "endpoint"
+        }
+      }
+    },
+    "neighborRadius": {
+      "nearest": {
+        "margin": -0.4895241335075351,
+        "receiver": 11,
+        "rotor": 0,
+        "source": 13,
+        "location": {
+          "tick": 51200,
+          "time": 1,
+          "role": "endpoint"
+        }
+      },
+      "minimum": {
+        "margin": -2.3942971190682787,
+        "receiver": 1,
+        "rotor": 0,
+        "source": 9,
+        "location": {
+          "tick": 51200,
+          "time": 1,
+          "role": "endpoint"
+        }
+      },
+      "maximum": {
+        "margin": -0.4895241335075351,
+        "receiver": 11,
+        "rotor": 0,
+        "source": 13,
+        "location": {
+          "tick": 51200,
+          "time": 1,
+          "role": "endpoint"
+        }
+      }
+    },
+    "tilt": {
+      "nearest": {
+        "margin": 0.023882035135921242,
+        "drone": 0,
+        "location": {
+          "tick": 50048,
+          "time": 0.9775,
+          "role": "endpoint"
+        }
+      },
+      "minimum": {
+        "margin": 0.023882035135921242,
+        "drone": 0,
+        "location": {
+          "tick": 50048,
+          "time": 0.9775,
+          "role": "endpoint"
+        }
+      },
+      "maximum": {
+        "margin": 0.06030737921409157,
+        "drone": 0,
+        "location": {
+          "tick": 0,
+          "time": 0,
+          "role": "endpoint"
+        }
+      }
+    }
+  },
+  "brackets": {
+    "nearRadius": {
+      "count": 133,
+      "first": {
+        "category": "nearRadius",
+        "severity": 0.0004017924933253092,
+        "receiver": 7,
+        "rotor": 2,
+        "source": 14,
+        "fromMargin": 0.0002723595258000422,
+        "toMargin": -0.000129432967525267,
+        "from": {
+          "location": {
+            "tick": 384,
+            "time": 0.0075,
+            "role": "endpoint"
+          },
+          "geometryOffsetBytes": 0,
+          "geometryBytes": 2176,
+          "geometrySha256": "76cf02b85f81ef706eb339ed3c1e00a6eefa938758883cf2054f4f2cd3b6953a"
+        },
+        "to": {
+          "location": {
+            "tick": 512,
+            "time": 0.01,
+            "role": "endpoint"
+          },
+          "geometryOffsetBytes": 2176,
+          "geometryBytes": 2176,
+          "geometrySha256": "fbb73898eaee388eb865935a6b07f5d55051582bd5ea84b2baf4c29778303921"
+        },
+        "meaning": "Sample bracket only; equal-time RK trial states are not ordered physical observations"
+      },
+      "worst": {
+        "category": "nearRadius",
+        "severity": 0.005777975941673619,
+        "receiver": 7,
+        "rotor": 1,
+        "source": 8,
+        "fromMargin": 0.0046864775037979145,
+        "toMargin": -0.0010914984378757042,
+        "from": {
+          "location": {
+            "tick": 22272,
+            "time": 0.435,
+            "role": "endpoint"
+          },
+          "geometryOffsetBytes": 4352,
+          "geometryBytes": 2176,
+          "geometrySha256": "c805de2e10d7996148443c6b5ff47b1598b3c2bb2d4417af82403c2eabf4094e"
+        },
+        "to": {
+          "location": {
+            "tick": 22400,
+            "time": 0.4375,
+            "role": "endpoint"
+          },
+          "geometryOffsetBytes": 6528,
+          "geometryBytes": 2176,
+          "geometrySha256": "d6aa9898b113014e0af99d930023b8eda0bc74a618d161d893f56e54121aa760"
+        },
+        "meaning": "Sample bracket only; equal-time RK trial states are not ordered physical observations"
+      }
+    },
+    "downstreamZero": {
+      "count": 190,
+      "first": {
+        "category": "downstreamZero",
+        "severity": 0.0007560112123484123,
+        "receiver": 13,
+        "rotor": 3,
+        "source": 8,
+        "fromMargin": -0.00011470415813218311,
+        "toMargin": 0.0006413070542162292,
+        "from": {
+          "location": {
+            "tick": 896,
+            "time": 0.0175,
+            "role": "endpoint"
+          },
+          "geometryOffsetBytes": 8704,
+          "geometryBytes": 2176,
+          "geometrySha256": "0ade12f1d4ae140f2e1c7e8753a76ade7c5d0d52425d307848806da12f0df6a5"
+        },
+        "to": {
+          "location": {
+            "tick": 1024,
+            "time": 0.02,
+            "role": "endpoint"
+          },
+          "geometryOffsetBytes": 10880,
+          "geometryBytes": 2176,
+          "geometrySha256": "e1e79076d14362fdeac987c9082905c141a830f20670e32dd5c3d084d5b2669b"
+        },
+        "meaning": "Sample bracket only; equal-time RK trial states are not ordered physical observations"
+      },
+      "worst": {
+        "category": "downstreamZero",
+        "severity": 0.00529951649504172,
+        "receiver": 13,
+        "rotor": 1,
+        "source": 2,
+        "fromMargin": 0.0011807461962302646,
+        "toMargin": -0.0041187702988114555,
+        "from": {
+          "location": {
+            "tick": 18560,
+            "time": 0.3625,
+            "role": "endpoint"
+          },
+          "geometryOffsetBytes": 13056,
+          "geometryBytes": 2176,
+          "geometrySha256": "9f19dd22854082e25c7a838c50b530ebf6ecafa7b0ff70f7bd39f9fac59afe94"
+        },
+        "to": {
+          "location": {
+            "tick": 18688,
+            "time": 0.365,
+            "role": "endpoint"
+          },
+          "geometryOffsetBytes": 15232,
+          "geometryBytes": 2176,
+          "geometrySha256": "d9a8c4e0f76241324a6802df9d80a965c0635c421d4f798dae76aa5cb555b607"
+        },
+        "meaning": "Sample bracket only; equal-time RK trial states are not ordered physical observations"
+      }
+    },
+    "radialFade": {
+      "count": 53,
+      "first": {
+        "category": "radialFade",
+        "severity": 0.002483085028602894,
+        "receiver": 10,
+        "rotor": 3,
+        "source": 0,
+        "fromMargin": -0.002345825152193143,
+        "toMargin": 0.00013725987640975101,
+        "from": {
+          "location": {
+            "tick": 4736,
+            "time": 0.0925,
+            "role": "endpoint"
+          },
+          "geometryOffsetBytes": 17408,
+          "geometryBytes": 2176,
+          "geometrySha256": "65465540b4119d692b8a6e3cea4bb2a0d61b4322f7147cc5f7581073108b8d4a"
+        },
+        "to": {
+          "location": {
+            "tick": 4864,
+            "time": 0.095,
+            "role": "endpoint"
+          },
+          "geometryOffsetBytes": 19584,
+          "geometryBytes": 2176,
+          "geometrySha256": "b4debf9ddb8dab804f611cd0e30d31e8ae98db0034432db0956844b1edf34714"
+        },
+        "meaning": "Sample bracket only; equal-time RK trial states are not ordered physical observations"
+      },
+      "worst": {
+        "category": "radialFade",
+        "severity": 0.0038108310122995093,
+        "receiver": 10,
+        "rotor": 2,
+        "source": 0,
+        "fromMargin": -0.0028248485577718196,
+        "toMargin": 0.0009859824545276896,
+        "from": {
+          "location": {
+            "tick": 39808,
+            "time": 0.7775,
+            "role": "endpoint"
+          },
+          "geometryOffsetBytes": 21760,
+          "geometryBytes": 2176,
+          "geometrySha256": "e57d8de1035c5c2912108f414c1ba7b1f970b127c2f0d23d60e927fa51b923ce"
+        },
+        "to": {
+          "location": {
+            "tick": 39936,
+            "time": 0.78,
+            "role": "endpoint"
+          },
+          "geometryOffsetBytes": 23936,
+          "geometryBytes": 2176,
+          "geometrySha256": "b47912e45ae5119243cac4e830c28ad632bf71cb258f5d4ca3fe7aa38a635bf0"
+        },
+        "meaning": "Sample bracket only; equal-time RK trial states are not ordered physical observations"
+      }
+    },
+    "farStart": {
+      "count": 46,
+      "first": {
+        "category": "farStart",
+        "severity": 0.0016060118281130409,
+        "receiver": 14,
+        "rotor": 1,
+        "source": 9,
+        "fromMargin": -0.0003234550162896088,
+        "toMargin": 0.001282556811823432,
+        "from": {
+          "location": {
+            "tick": 7424,
+            "time": 0.145,
+            "role": "endpoint"
+          },
+          "geometryOffsetBytes": 26112,
+          "geometryBytes": 2176,
+          "geometrySha256": "8a66a13508539989f1a77af78eab2515bd5d506a07200e3e4bb6c683a03644b2"
+        },
+        "to": {
+          "location": {
+            "tick": 7552,
+            "time": 0.1475,
+            "role": "endpoint"
+          },
+          "geometryOffsetBytes": 28288,
+          "geometryBytes": 2176,
+          "geometrySha256": "f732026583b7e1b3aa66ae4703c5621f4582fd174d67f8da43c0a0fb41e49773"
+        },
+        "meaning": "Sample bracket only; equal-time RK trial states are not ordered physical observations"
+      },
+      "worst": {
+        "category": "farStart",
+        "severity": 0.004301766375272076,
+        "receiver": 6,
+        "rotor": 3,
+        "source": 1,
+        "fromMargin": -0.004054477222397379,
+        "toMargin": 0.00024728915287469677,
+        "from": {
+          "location": {
+            "tick": 49664,
+            "time": 0.97,
+            "role": "endpoint"
+          },
+          "geometryOffsetBytes": 30464,
+          "geometryBytes": 2176,
+          "geometrySha256": "00cdbdad64591e11bdec1a188db6ae4e7bd5effe12cd8a6c332a5c861f68fb32"
+        },
+        "to": {
+          "location": {
+            "tick": 49792,
+            "time": 0.9725,
+            "role": "endpoint"
+          },
+          "geometryOffsetBytes": 32640,
+          "geometryBytes": 2176,
+          "geometrySha256": "3d66a5ded2601897915568a7822e858a6cbf17204b9e6cf14ee1d19dd5a66111"
+        },
+        "meaning": "Sample bracket only; equal-time RK trial states are not ordered physical observations"
+      }
+    },
+    "radialCutoff": {
+      "count": 44,
+      "first": {
+        "category": "radialCutoff",
+        "severity": 0.001660673674523494,
+        "receiver": 13,
+        "rotor": 2,
+        "source": 7,
+        "fromMargin": 0.0005152362385655862,
+        "toMargin": -0.0011454374359579078,
+        "from": {
+          "location": {
+            "tick": 9728,
+            "time": 0.19,
+            "role": "endpoint"
+          },
+          "geometryOffsetBytes": 34816,
+          "geometryBytes": 2176,
+          "geometrySha256": "538b73f17716930e3f597f8cb022c364441ceb36a3c3d3239501927b090c0993"
+        },
+        "to": {
+          "location": {
+            "tick": 9856,
+            "time": 0.1925,
+            "role": "endpoint"
+          },
+          "geometryOffsetBytes": 36992,
+          "geometryBytes": 2176,
+          "geometrySha256": "16c3f2c3c335bb24889f1256f23de56ac7653092b01a63ff49755415eb59a76d"
+        },
+        "meaning": "Sample bracket only; equal-time RK trial states are not ordered physical observations"
+      },
+      "worst": {
+        "category": "radialCutoff",
+        "severity": 0.004494456504555822,
+        "receiver": 10,
+        "rotor": 3,
+        "source": 0,
+        "fromMargin": -0.00038819782035631745,
+        "toMargin": 0.004106258684199504,
+        "from": {
+          "location": {
+            "tick": 42368,
+            "time": 0.8275,
+            "role": "endpoint"
+          },
+          "geometryOffsetBytes": 39168,
+          "geometryBytes": 2176,
+          "geometrySha256": "bbaf783d67c4900d868aba1614802fbfe879a89c5138a6e60fb956c6b8c4921d"
+        },
+        "to": {
+          "location": {
+            "tick": 42496,
+            "time": 0.8300000000000001,
+            "role": "endpoint"
+          },
+          "geometryOffsetBytes": 41344,
+          "geometryBytes": 2176,
+          "geometrySha256": "cebbc0434c3b429afa958c991fb9f37eb49e418cb368bbdfe6d9a5fffd337073"
+        },
+        "meaning": "Sample bracket only; equal-time RK trial states are not ordered physical observations"
+      }
+    }
+  },
+  "bracketRaw": {
+    "path": "results/audit/s4301-compatibility.brackets.f64",
+    "bytes": 43520,
+    "sha256": "f4ea568556fabe1e77950da7c0efec01eb5b3b7508c72ff3aced8ec243b2f31d",
+    "encoding": "little-endian Float64; whole swarm full17 states; offsets in bracket entries"
+  },
+  "risks": [],
+  "signatureStream": {
+    "path": "results/audit/s4301-compatibility.signatures.bin",
+    "bytes": 12832,
+    "sha256": "281f891a5b69a69849ab568e81d63612fa8d756f1b9f2a9a481c3dbb73d16eaf",
+    "encoding": "32 raw SHA256 bytes per observation; sample schedule specified by run/preflight record",
+    "inputEncoding": "receiver-major, rotor-major, source-major excluding self; UInt16LE predicate bits: bit0 downstream>0; bits1-7 signed margin>=0 in category order; then one tilt>=0 byte per drone. Inactive pairs included; signature changes need not change field",
+    "categories": [
+      "downstreamZero",
+      "farStart",
+      "downstreamFade",
+      "downstreamCutoff",
+      "nearRadius",
+      "radialFade",
+      "radialCutoff",
+      "neighborRadius",
+      "tilt"
+    ]
+  },
+  "coverage": "All ordered receiver-rotor/source pairs including those outside field neighbor support; domain guard applies only to production eligible pairs. Full per-pair margins are evaluated, not serialized."
+}

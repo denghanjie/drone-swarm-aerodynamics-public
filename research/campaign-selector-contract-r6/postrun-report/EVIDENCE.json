@@ -1,0 +1,99 @@
+{
+  "schema": "selector-r6-sanitized-postrun-summary/v1",
+  "isOriginalReceipt": false,
+  "experimentId": "SELECTOR-CONTRACT-R6",
+  "recordedTerminalStatus": "selector_contract_satisfied_on_fixed_records_only",
+  "terminal": true,
+  "coordinatorAcceptance": {
+    "accepted": true,
+    "status": "selector_contract_satisfied_on_fixed_records_only",
+    "decidedAtUtc": "2026-10-14T08:07:48.498082+00:00",
+    "originalRecordSha256": "f9537dc763f5e824323bb8371a364aee9ab6a05bc4e250f67b6417548ed7aecc",
+    "scope": "Separate reviewed final acceptance for the fixed retained-record selector/timebase contract only."
+  },
+  "coverage": {
+    "nominal": 23,
+    "negative": 73,
+    "positive_control": 4,
+    "total": 100,
+    "matchedExpectedDecisions": 100,
+    "nominalAccepts": 23,
+    "intendedNegativeRejections": 73,
+    "positiveControlsAccepted": 4,
+    "unexpectedOutcomes": 0,
+    "unrun": 0,
+    "attempts": 1,
+    "retries": 0
+  },
+  "actualExitEvidence": {
+    "childExit": 0,
+    "wrapperToolExit": 0,
+    "wrapperToolElapsedSeconds": 0.974720483,
+    "outerToolRoundtripMilliseconds": 1591
+  },
+  "recordedResourceObservations": {
+    "wallSecondsBeforeTerminalReceipt": 0.956736061,
+    "wholeTreeCpuSecondsBeforeTerminalReceipt": 1.462173,
+    "conservativeRssBytes": 127610880,
+    "logicalSourceReadUpperBytes": 183365113,
+    "readAccounting": "complete_conservative_counter",
+    "studyAndHelpersBytesBeforeTerminalSwap": 662083
+  },
+  "resourceLimits": [
+    "Wrapper wall/CPU values precede terminal writing. The separate exit-0 tool observation and 1591 ms outer roundtrip include completion; neither is a benchmark.",
+    "Memory used sampled tree RSS with margin and process high-water sums, not a cgroup hard-limit guarantee.",
+    "Retained-byte observations precede later postrun preparation, which stays separately counted.",
+    "Pinned wrapper exit 0 supports successful post-write checks; exact post-write numeric measurements were not saved."
+  ],
+  "checkpointCoordination": {
+    "liveReservedPairBytes": 131072,
+    "quiescentActualPairBytes": 7754,
+    "writerReaped": true,
+    "strictQuiescentCheckPassed": true,
+    "liveOrdinaryFileSnapshotAtomic": false,
+    "scopeTotalsOverlapDoNotAdd": true
+  },
+  "sourcePreservation": {
+    "fullSourceHashes": "verified_by_pinned_child_before_and_after",
+    "metadataUnchanged": true,
+    "changedSourceCount": 0,
+    "evidencePrecision": "Before/after full hashes are attested by the pinned child. Independent review reconciles the attestation and current metadata; it did not independently reread every scientific payload."
+  },
+  "forbiddenExecutionCounters": {
+    "audit_calls": 0,
+    "model_calls": 0,
+    "fixture_imports": 0,
+    "integration_steps": 0,
+    "benchmarks": 0,
+    "remote_writes": 0
+  },
+  "caseDecisionIndex": {
+    "file": "CASE-DECISIONS.json",
+    "bytes": 15149,
+    "sha256": "cd5406ee04995b14e966602c194126aa23afe635876aa27d926384d98e7d41f6"
+  },
+  "originalRecordCommitments": {
+    "childResultSha256": "30e4a9669c1f49e6d58a8b929be6d1e7f23d85da1d6e86458b2dfe610d88cb27",
+    "resourceReceiptSha256": "110ab11ee01c0999cfe3d4d4c2884d6902b3564ab6d9b5f9be8dbb1415491868"
+  },
+  "contractLimits": [
+    "Fixed retained-record selector/timebase contract only. Saved signatures were read, never recomputed.",
+    "Historical source tick 6400 at 1/6400 s maps to canonical tick 51200 and raw/anchor row 6400; the row800 mutation rejects.",
+    "Historical P1 exact stop is 50768 canonical ticks =3173/3200 s, anchor entry25384. The exact sparse raw row is unavailable; three correlated JSON witnesses do not independently prove signature/state association.",
+    "Reverse-order and requested-duration positive controls used precomputed descriptors, with no selector reexecution.",
+    "No full C1 equivalence, audit correctness, dynamic integration correctness, numerical accuracy, speedup, physical validation or scale feasibility is established."
+  ],
+  "publicScope": "Selected candidate source plus sanitized aggregates and case-decision commitments. Original 100 case receipts, descriptors, raw state/checkpoint data, runtime/private census and release/inventory material are withheld; full reproduction is incomplete.",
+  "historicalReplay": {
+    "noR6Flight": true,
+    "sourceViewerUnchanged": true,
+    "P1LastSavedDisplaySeconds": 0.99,
+    "P1HistoricalStopSeconds": 0.9915625,
+    "P1HoldsAfterLastSavedPose": true
+  },
+  "methodologyLinks": {
+    "checkpointRuleDocumentationLedger": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/ba7c0340aa7fe3c6d4bd9b70265e0e7e5e3c7685/research/campaign-census-checkpoint-r5/postrun-literature/literature-experiment-ledger.json",
+    "verificationVersusValidationLedger": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/5293fba9093179096963784aa8fe765238259eb4/research/campaign-audit-successor-r3/postrun-literature/narrow/literature-experiment-ledger.json",
+    "relationship": "Previously verified sources only. API documentation is not experimental research; finite checks are inspiration, not formal translation validation or physical validation."
+  }
+}

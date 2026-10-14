@@ -1,0 +1,175 @@
+{
+  "schema_version": "1.0",
+  "bibliography_id": "audit-overhead-primary-sources-20261014",
+  "consulted_on_utc": "2026-10-14",
+  "primary_sources_only": true,
+  "records": [
+    {
+      "source_id": "CHILIMBI_HILL_LARUS_1999",
+      "title": "Cache-Conscious Structure Layout",
+      "authors": [
+        "Trishul M. Chilimbi",
+        "Mark D. Hill",
+        "James R. Larus"
+      ],
+      "year": 1999,
+      "venue": "Proceedings of the ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)",
+      "pages": "1\u201312",
+      "doi": "10.1145/301618.301633",
+      "publication_type": "peer-reviewed conference paper",
+      "full_text_url": "https://research.cs.wisc.edu/multifacet/papers/pldi99_cache_layout_pdf.pdf",
+      "metadata_url": "https://research.cs.wisc.edu/arch/uwarch-wiki2/index.php/PubsUWArch/B2hd-DBLPconfpldiChilimbiHL99",
+      "consultation": {
+        "status": "primary full text read via web extraction; institutional metadata corroborated",
+        "page_count": 12,
+        "locations": [
+          "section 1, printed pages 1\u20132",
+          "section 2.1 Clustering, printed page 2",
+          "section 3.1 Cache-Conscious Data Reorganization, printed page 3"
+        ],
+        "specific_use": "Motivation to examine data organization and access locality while retaining semantics; no reported performance number is used.",
+        "visual_page_verification": false
+      },
+      "access_corrections": [
+        {
+          "url": "https://www.cs.wisc.edu/multifacet/papers/pldi99_cache_layout_pdf.pdf",
+          "outcome": "Web reader failed; research.cs.wisc.edu author-institution equivalent accessed."
+        },
+        {
+          "url": "https://doi.org/10.1145/301618.301633",
+          "outcome": "Web reader inaccessible."
+        },
+        {
+          "url": "https://dl.acm.org/doi/10.1145/301618.301633",
+          "outcome": "Publisher reader inaccessible; DOI metadata corroborated from institution."
+        },
+        {
+          "url": "https://www.microsoft.com/en-us/research/publication/cache-conscious-structure-layout/",
+          "outcome": "Redirected to Microsoft Research homepage; not accepted as inspected publication record."
+        },
+        {
+          "url": "https://research.cs.wisc.edu/multifacet/papers/pldi99_cache_layout_pdf.pdf",
+          "outcome": "Text accessible; screenshot requests for pages 1\u20133 failed with cache miss."
+        }
+      ],
+      "correction_check": {
+        "status": "No explicit notice found within bounded inspected sources/search; absence not certified",
+        "queries": [
+          "\"10.1145/301618.301633\" correction erratum",
+          "site.cs.wisc.edu \"Cache-Conscious Structure Layout\" errata",
+          "site.microsoft.com \"Cache-Conscious Structure Layout\" correction"
+        ],
+        "limits": "No exhaustive publisher/Crossmark verification; publisher endpoint unavailable."
+      },
+      "limitations": [
+        "C/pointer-rich layouts and historical hardware, not this JavaScript runtime.",
+        "No guarantee that fewer temporary JS objects yield a speedup or cache improvement.",
+        "Does not justify dropping pair checks, changing arithmetic, or altering output contracts."
+      ]
+    },
+    {
+      "source_id": "BRUNI_2017_V8_PROPERTIES",
+      "title": "Fast properties in V8",
+      "authors": [
+        "Camillo Bruni"
+      ],
+      "published_date": "2017-08-30",
+      "publisher": "V8 project",
+      "publication_type": "official engineering documentation; not peer-reviewed",
+      "url": "https://v8.dev/blog/fast-properties",
+      "consultation": {
+        "status": "Official page directly read",
+        "locations": [
+          "HiddenClasses and DescriptorArrays",
+          "The three different kinds of named properties",
+          "Elements or array-indexed properties"
+        ],
+        "specific_use": "Motivation to keep object shapes/property insertion order stable and avoid unnecessary churn; no engine-performance guarantee."
+      },
+      "correction_check": {
+        "status": "No explicit correction/version banner observed; current official page read on consultation date",
+        "queries": [
+          "site.v8.dev/blog/fast-properties \"updated\""
+        ],
+        "limits": "Historical 2017 engine description; no claim that every detail describes current Node/V8."
+      },
+      "limitations": [
+        "Official engineering explanation, not experimental evidence for C1.",
+        "Object count, allocation elimination and GC cost require measurement; RSS is not an allocation counter.",
+        "Current runtime/version must be recorded; no browser or end-to-end speedup follows."
+      ]
+    },
+    {
+      "source_id": "LINUX_GETRUSAGE_6_19",
+      "title": "getrusage(2) \u2014 Linux manual page",
+      "authors": [
+        "Linux man-pages project (institutional documentation attribution)"
+      ],
+      "year": 2026,
+      "venue": "Linux man-pages6.19, online HTML rendering",
+      "publication_status": "Technical reference documentation; not peer-reviewed research",
+      "version_consulted": "man-pages6.19; page date2026-02-08; HTML colophon2026-09-09",
+      "stable_url": "https://man7.org/linux/man-pages/man2/getrusage.2.html",
+      "source_locations": [
+        "DESCRIPTION: RUSAGE_SELF, RUSAGE_CHILDREN, ru_utime/ru_stime and ru_maxrss"
+      ],
+      "used_for": "Thread-inclusive process CPU; waited-for child accounting; child maxRSS is not simultaneous tree maxRSS.",
+      "access": "Relevant full sections and colophon read2026-10-14; project homepage independently links the online manual site.",
+      "limitations": [
+        "Describes interfaces, not correctness of our parser/accounting implementation.",
+        "No experimental speedup or scientific model result is attributed.",
+        "Correction/version check limited to inspected page, project homepage and release index; not an exhaustive commit-history audit."
+      ],
+      "release_index_checked": "https://mirrors.edge.kernel.org/pub/linux/docs/man-pages/",
+      "release_check_result": "Inspected2026-10-14: index lists6.19 dated2026-08-25, with no later release listed. Consulted HTML identifies6.19. No claim to exhaustive source-history or correction audit."
+    },
+    {
+      "source_id": "LINUX_PROC_PID_STAT_6_19",
+      "title": "proc_pid_stat(5) \u2014 Linux manual page",
+      "authors": [
+        "Linux man-pages project (institutional documentation attribution)"
+      ],
+      "year": 2026,
+      "venue": "Linux man-pages6.19, online HTML rendering",
+      "publication_status": "Technical reference documentation; not peer-reviewed research",
+      "version_consulted": "man-pages6.19; page date2026-02-08; HTML colophon2026-09-09",
+      "stable_url": "https://man7.org/linux/man-pages/man5/proc_pid_stat.5.html",
+      "source_locations": [
+        "DESCRIPTION: fields14\u201317,22and24"
+      ],
+      "used_for": "Clock-tick conversion for CPU fields; RSS page units and documented inaccuracy; PID start-time identity.",
+      "access": "Relevant full sections and colophon read2026-10-14; project homepage independently links the online manual site.",
+      "limitations": [
+        "Describes interfaces, not correctness of our parser/accounting implementation.",
+        "No experimental speedup or scientific model result is attributed.",
+        "Correction/version check limited to inspected page, project homepage and release index; not an exhaustive commit-history audit."
+      ],
+      "release_index_checked": "https://mirrors.edge.kernel.org/pub/linux/docs/man-pages/",
+      "release_check_result": "Inspected2026-10-14: index lists6.19 dated2026-08-25, with no later release listed. Consulted HTML identifies6.19. No claim to exhaustive source-history or correction audit."
+    },
+    {
+      "source_id": "LINUX_WAIT4_6_19",
+      "title": "wait4(2) \u2014 Linux manual page",
+      "authors": [
+        "Linux man-pages project (institutional documentation attribution)"
+      ],
+      "year": 2026,
+      "venue": "Linux man-pages6.19, online HTML rendering",
+      "publication_status": "Technical reference documentation; not peer-reviewed research",
+      "version_consulted": "man-pages6.19; page date2026-02-08; HTML colophon2026-09-09",
+      "stable_url": "https://man7.org/linux/man-pages/man2/wait4.2.html",
+      "source_locations": [
+        "DESCRIPTION: child selection and rusage; STANDARDS"
+      ],
+      "used_for": "Reap the chosen child and collect its resource record. Nonstandard interface; Linux-specific harness, not a portability claim.",
+      "access": "Relevant full sections and colophon read2026-10-14; project homepage independently links the online manual site.",
+      "limitations": [
+        "Describes interfaces, not correctness of our parser/accounting implementation.",
+        "No experimental speedup or scientific model result is attributed.",
+        "Correction/version check limited to inspected page, project homepage and release index; not an exhaustive commit-history audit."
+      ],
+      "release_index_checked": "https://mirrors.edge.kernel.org/pub/linux/docs/man-pages/",
+      "release_check_result": "Inspected2026-10-14: index lists6.19 dated2026-08-25, with no later release listed. Consulted HTML identifies6.19. No claim to exhaustive source-history or correction audit."
+    }
+  ]
+}

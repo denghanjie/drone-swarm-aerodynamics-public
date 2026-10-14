@@ -1,0 +1,598 @@
+{
+  "schema": "r8-sanitized-postrun-evidence/v1",
+  "campaignId": "AUDIT-C1-R8",
+  "preparedAtUtc": "2026-10-14T10:22:06.317587+00:00",
+  "terminal": {
+    "status": "resource_limited",
+    "reason": "Cooperative resource reserve reached",
+    "exitCode": 1,
+    "attempts": 1,
+    "retryAllowed": false,
+    "fullCorrectnessQualified": false,
+    "benchmarkPermission": false,
+    "gateExecuted": false,
+    "benchmarksExecuted": 0
+  },
+  "coverage": {
+    "requiredControls": 32,
+    "completedControls": 32,
+    "controlAccepts": 8,
+    "intendedControlRejects": 24,
+    "unexpectedControlOutcomes": 0,
+    "requiredCases": 229,
+    "completedCases": 218,
+    "partialCases": 1,
+    "unstartedCases": 10,
+    "requiredJobs": 18,
+    "completedJobs": 7,
+    "partialJobs": 1,
+    "unstartedJobs": 10,
+    "completedJobIds": [
+      "synthetic",
+      "saved-json-states",
+      "saved-brackets",
+      "array-0",
+      "array-1",
+      "array-2",
+      "array-3"
+    ],
+    "partialJobId": "array-4",
+    "unstartedJobIds": [
+      "array-5",
+      "array-6",
+      "array-7",
+      "array-8",
+      "array-9",
+      "array-10",
+      "contract-W-ENDPOINT-840131",
+      "contract-W-ENDPOINT-840137",
+      "contract-W-STAGE-FIXTURE-840131",
+      "contract-W-STAGE-FIXTURE-840137"
+    ],
+    "requiredGates": 1,
+    "completedGates": 0,
+    "originalPreflightReproductions": 0,
+    "requiredOriginalPreflightReproductions": 2,
+    "originalPreflightArtifactComparisons": 0,
+    "requiredOriginalPreflightArtifactComparisons": 6,
+    "completedCaseCounts": {
+      "observationsPerVariant": 8568,
+      "pairsPerVariant": 5257880,
+      "tiltMarginsPerVariant": 93448,
+      "marginsPerVariant": 42156488,
+      "exactSampleComparisons": 8568,
+      "savedSignatureAnchors": 5447,
+      "compareCallsPerVariant": 5326,
+      "riskCallsPerVariant": 5214,
+      "expectedExceptionsPerVariant": 31,
+      "finishedAuditComparisons": 218,
+      "savedBracketSides": 220,
+      "savedBracketPairs": 110,
+      "savedJsonStates": 23,
+      "completeOriginalPreflightAudits": 0,
+      "directArtifactByteComparisons": 11
+    },
+    "includingPartialCounts": {
+      "observationsPerVariant": 12287,
+      "pairsPerVariant": 8828120,
+      "tiltMarginsPerVariant": 152952,
+      "marginsPerVariant": 70777912,
+      "exactSampleComparisons": 12287,
+      "savedSignatureAnchors": 9166,
+      "compareCallsPerVariant": 9044,
+      "riskCallsPerVariant": 8931,
+      "expectedExceptionsPerVariant": 31,
+      "finishedAuditComparisons": 218,
+      "savedBracketSides": 220,
+      "savedBracketPairs": 110,
+      "savedJsonStates": 23,
+      "completeOriginalPreflightAudits": 0,
+      "directArtifactByteComparisons": 11
+    },
+    "countMeaning": "Counts are paired differential checks; PerVariant counters must not be added again across B and C1. Partial rows do not complete array-4. Synthetic artifact comparisons are distinct from the six unrun original-preflight artifacts.",
+    "semanticReconciliation": "Independent reviewer confirmed all218 completed identities/assertions/sourceSelectors/counts,32 literal controls,23 selector contracts,27 JSON-state witness comparisons,23 original signature slices and11 synthetic artifact pairs (272572B). Final consolidated postreview pin is pending at report preparation."
+  },
+  "cooperativeStopDiagnosis": {
+    "classification": "Source-and-record inference; branch-specific guard telemetry unavailable",
+    "inferredBindingPredicate": "Child process CPU reached the44-second cooperative threshold, reserving1second before the45-second child cap.",
+    "sourceLocations": [
+      "robustness-review/supervise.py:326,338,434-440",
+      "implementation/src/child.cjs:11-13",
+      "implementation/src/context.cjs:54",
+      "implementation/src/corpus.cjs:19-27"
+    ],
+    "childError": "Cooperative resource stop",
+    "parentReason": "Cooperative resource reserve reached",
+    "childCooperativeThresholdSeconds": 44,
+    "childHardCapSeconds": 45,
+    "receiptChildWallSeconds": 42.278444587,
+    "receiptChildCpuSeconds": 44.012738,
+    "wait4ChildCpuSeconds": 44.110964,
+    "receiptChildMaxRssBytes": 304967680,
+    "parentIntervalTrackedCpuDeltaSeconds": 49.33702800000002,
+    "parentIntervalCpuMeaning": "Supervisor plus tracked children over this interval; not child-only CPU.",
+    "otherPredicatesExcludedByRetainedBounds": "Child wall42.278<44; complete child maxRSS304967680<536870912; inner whole-attempt wall112.064 and CPU134.345<179. Receipt and wait4 childCPU cross44.",
+    "sigkillSent": false,
+    "exactTriggerTimestampAvailable": false,
+    "exactInstructionStateAvailable": false,
+    "supportedStopPosition": "After row3718 observe and anchor comparison, at the next checkStep tick guard before that pair's risk call; inferred from preserved capture, counters and frozen serial order."
+  },
+  "partialMatchedEvidence": {
+    "caseId": "array-4",
+    "sourceRunId": "s840131-J3",
+    "totalRows": 6401,
+    "lastMatchedRow": 3718,
+    "rowsWithMatchedSamplesAndAnchors": 3719,
+    "riskCallsCompleted": 3717,
+    "canonicalTick": 29744,
+    "displayTime": 0.5809375,
+    "anchorEntry": 18590,
+    "arrayFinishExecuted": false,
+    "retainedOperation": "observe",
+    "pairedSavedOutputEqual": true,
+    "pairedSavedBoundedClassStateEqual": true,
+    "reviewMethod": "Saved-data-only ordered-key/Object.is/alias-bijection traversal",
+    "sourceRowBytes": 2176,
+    "sourceRowSha256": "9dd779ea6dbe289b1ff8dbea53b9606fda3ac0521fa8e88c6dc6dd5fd3ca2648",
+    "sourceRowDirectEqual": true,
+    "savedSignatureHex": "71e828280288c0264bf139b2db55fb42213987323daae9436312e772fd12c9e5",
+    "savedSignatureDirectEqual": true,
+    "privateWitnessIdentity": {
+      "bytes": 424947,
+      "sha256": "c0652fcaa18aa64636620a8839f3cf9abf415933972c1b45601c3c880565647b",
+      "publishedRawBytes": false
+    },
+    "failureDataReviewIdentity": {
+      "id": "independent-failure-data-review",
+      "bytes": 3236,
+      "sha256": "4256df078eb1f296a08152858a703bbd5d3ef0e8369be2f841f92ab9f999d7b3"
+    },
+    "exactStoppedState": false,
+    "limits": [
+      "No finish or full array result exists.",
+      "Bounded class state omits accumulated risk histories by design; all current risksLength fields happen to be0.",
+      "The original resource-limited receipt correctly marks exactCurrentCaptureAvailable=false and exactStoppedState=false.",
+      "The equality finding concerns the retained paired graph, not recomputed numerical outputs."
+    ]
+  },
+  "selectorIntegration": {
+    "all23SavedJsonCasesPassed": true,
+    "all110BracketPairCasesPassed": true,
+    "bracketSides": 220,
+    "historicalJsonExample": {
+      "selectorId": "json-9-final",
+      "sourceTick": 6400,
+      "sourceClock": "1/6400s",
+      "canonicalTick": 51200,
+      "canonicalClock": "1/51200s",
+      "physicalTime": "1s",
+      "anchorEntry": 6400,
+      "rawRow": 6400,
+      "legacyPublicLocationTick": 6400,
+      "stateWitnessBytes": 2176,
+      "stateSha256": "2745e9f9c0748e10132772c276ad7c8118f1431d03871dd4838e036c024de7c8"
+    },
+    "auditBracketClock": "1/51200s; original location objects and16 floating display-time differences preserved",
+    "p1Stop": {
+      "canonicalTick": 50768,
+      "physicalTime": "3173/3200s",
+      "anchorEntry": 25384,
+      "exactRawRowAvailable": false,
+      "correlatedJsonWitnesses": 3,
+      "interpolationUsed": false,
+      "limit": "Peer JSON representations are correlated and do not independently prove state/signature association."
+    }
+  },
+  "actualOuterPipeIntegration": {
+    "verified": true,
+    "pipes": [
+      {
+        "pipe": 0,
+        "baselineBothEndsBytes": [
+          65536,
+          65536
+        ],
+        "requestedBytes": 8192,
+        "returnedBytes": 8192,
+        "postQueryBothEndsBytes": [
+          8192,
+          8192
+        ]
+      },
+      {
+        "pipe": 1,
+        "baselineBothEndsBytes": [
+          65536,
+          65536
+        ],
+        "requestedBytes": 8192,
+        "returnedBytes": 8192,
+        "postQueryBothEndsBytes": [
+          8192,
+          8192
+        ]
+      }
+    ],
+    "combinedCapacityBytes": 16384,
+    "ownedDescriptors": 4,
+    "closedDescriptors": 4,
+    "closeErrors": 0,
+    "completePipeCapture": true,
+    "retainedLogBytes": 37,
+    "scope": "Actual campaign outer pipes passed before Popen; inner pipes remain unchanged and had131072B combined observed capacity. This does not establish all failure/interleaving paths."
+  },
+  "resources": {
+    "outerLaunchThroughAllReapedWallSeconds": 112.07971709000412,
+    "outerTimeout": false,
+    "innerWallSecondsBeforeFinalAccountingWrite": 112.06441320900194,
+    "innerCpuSecondsBeforeFinalAccountingWrite": 134.345066,
+    "outerCpuSecondsBeforeObservationWrite": 6.930434999999999,
+    "combinedCpuSecondsBeforeObservationWrite": 141.292092,
+    "conservativeCorrectnessWallSeconds": 111.89026353299938,
+    "conservativeCorrectnessCpuSeconds": 141.048078,
+    "conservativeFinalizationWallSecondsBeforeWrite": 0.25343480399693363,
+    "conservativeFinalizationCpuSecondsBeforeWrite": 7.174448999999981,
+    "serialInnerPlusOuterRssUpperBoundBytes": 337428480,
+    "exactSimultaneousRssPeakAvailable": false,
+    "quiescentStudyBytesBeforeFinalAccountingWrite": 2312650,
+    "peakLiveConservativeChargedStudyBytes": 5134180,
+    "peakLiveConservativeChargedCombinedBytes": 187873968,
+    "peakStorageMeaning": "Live bounds include reserved atomic/ordinary future capacity; they are not physical filesystem high-water measurements.",
+    "wholeProcessIoAvailable": false,
+    "timingLimitations": "Before-write fields exclude their own final evidence persistence. Tool chunk times are not end-to-end. These observations are not controlled B/C1 benchmarks or separately timed cost categories."
+  },
+  "preservation": {
+    "runtimeInitialAndFinalExternalCensusPassed": true,
+    "externalFiles": 1359,
+    "externalBytes": 178739788,
+    "externalRoots": 39,
+    "runtimeFinalFrozenAndRuntimeChecks": "Not run after failed window",
+    "separateRootFrozenFilesChecked": 263,
+    "separateRootAllFrozenIdentitiesMatch": true,
+    "separateRootExternalCensusPassed": true,
+    "sourceOrModelChangesDuringDiagnosis": false,
+    "originalR3R4R7FailuresRemainSeparate": true
+  },
+  "jobObservations": [
+    {
+      "jobId": "synthetic",
+      "status": "passed",
+      "casesPassed": 81,
+      "casesRunning": 0,
+      "childReceiptWallSeconds": 3.198249758,
+      "childReceiptCpuSeconds": 3.799085,
+      "wait4ChildCpuSeconds": 3.9008899999999995,
+      "counts": {
+        "observationsPerVariant": 3121,
+        "pairsPerVariant": 28760,
+        "tiltMarginsPerVariant": 6296,
+        "marginsPerVariant": 236376,
+        "exactSampleComparisons": 3121,
+        "savedSignatureAnchors": 0,
+        "compareCallsPerVariant": 16,
+        "riskCallsPerVariant": 14,
+        "expectedExceptionsPerVariant": 31,
+        "finishedAuditComparisons": 81,
+        "savedBracketSides": 0,
+        "savedBracketPairs": 0,
+        "savedJsonStates": 0,
+        "completeOriginalPreflightAudits": 0,
+        "directArtifactByteComparisons": 11
+      },
+      "receiptIdentity": {
+        "id": "synthetic-receipt",
+        "bytes": 100353,
+        "sha256": "ef10709f8a0d11c670593afa3135854bc7eeed3fe5f2fcfa1f360062d0f9b786"
+      }
+    },
+    {
+      "jobId": "saved-json-states",
+      "status": "passed",
+      "casesPassed": 23,
+      "casesRunning": 0,
+      "childReceiptWallSeconds": 0.780873358,
+      "childReceiptCpuSeconds": 1.181622,
+      "wait4ChildCpuSeconds": 1.277509,
+      "counts": {
+        "observationsPerVariant": 23,
+        "pairsPerVariant": 22080,
+        "tiltMarginsPerVariant": 368,
+        "marginsPerVariant": 177008,
+        "exactSampleComparisons": 23,
+        "savedSignatureAnchors": 23,
+        "compareCallsPerVariant": 0,
+        "riskCallsPerVariant": 0,
+        "expectedExceptionsPerVariant": 0,
+        "finishedAuditComparisons": 23,
+        "savedBracketSides": 0,
+        "savedBracketPairs": 0,
+        "savedJsonStates": 23,
+        "completeOriginalPreflightAudits": 0,
+        "directArtifactByteComparisons": 0
+      },
+      "receiptIdentity": {
+        "id": "saved-json-states-receipt",
+        "bytes": 124236,
+        "sha256": "d6f337d2415a0c7da50e205023d89efc14e888ed19a371107c715710da5f4b16"
+      }
+    },
+    {
+      "jobId": "saved-brackets",
+      "status": "passed",
+      "casesPassed": 110,
+      "casesRunning": 0,
+      "childReceiptWallSeconds": 3.071706503,
+      "childReceiptCpuSeconds": 5.177775,
+      "wait4ChildCpuSeconds": 5.273107,
+      "counts": {
+        "observationsPerVariant": 220,
+        "pairsPerVariant": 211200,
+        "tiltMarginsPerVariant": 3520,
+        "marginsPerVariant": 1693120,
+        "exactSampleComparisons": 220,
+        "savedSignatureAnchors": 220,
+        "compareCallsPerVariant": 110,
+        "riskCallsPerVariant": 0,
+        "expectedExceptionsPerVariant": 0,
+        "finishedAuditComparisons": 110,
+        "savedBracketSides": 220,
+        "savedBracketPairs": 110,
+        "savedJsonStates": 0,
+        "completeOriginalPreflightAudits": 0,
+        "directArtifactByteComparisons": 0
+      },
+      "receiptIdentity": {
+        "id": "saved-brackets-receipt",
+        "bytes": 228137,
+        "sha256": "dbc7d2043b076d05b12ba6ea14230bb91c555b00886cb129404985f536e5fb47"
+      }
+    },
+    {
+      "jobId": "array-0",
+      "status": "passed",
+      "casesPassed": 1,
+      "casesRunning": 0,
+      "childReceiptWallSeconds": 4.93408808,
+      "childReceiptCpuSeconds": 5.566393,
+      "wait4ChildCpuSeconds": 5.674842,
+      "counts": {
+        "observationsPerVariant": 401,
+        "pairsPerVariant": 384960,
+        "tiltMarginsPerVariant": 6416,
+        "marginsPerVariant": 3086096,
+        "exactSampleComparisons": 401,
+        "savedSignatureAnchors": 401,
+        "compareCallsPerVariant": 400,
+        "riskCallsPerVariant": 400,
+        "expectedExceptionsPerVariant": 0,
+        "finishedAuditComparisons": 1,
+        "savedBracketSides": 0,
+        "savedBracketPairs": 0,
+        "savedJsonStates": 0,
+        "completeOriginalPreflightAudits": 0,
+        "directArtifactByteComparisons": 0
+      },
+      "receiptIdentity": {
+        "id": "array-0-receipt",
+        "bytes": 3523,
+        "sha256": "4cf4c49d33df1c64ad3ad2e3fb1014464cd94029954a8e40f86c69e4b0698030"
+      }
+    },
+    {
+      "jobId": "array-1",
+      "status": "passed",
+      "casesPassed": 1,
+      "casesRunning": 0,
+      "childReceiptWallSeconds": 18.782180376,
+      "childReceiptCpuSeconds": 19.794802,
+      "wait4ChildCpuSeconds": 19.877684,
+      "counts": {
+        "observationsPerVariant": 1601,
+        "pairsPerVariant": 1536960,
+        "tiltMarginsPerVariant": 25616,
+        "marginsPerVariant": 12321296,
+        "exactSampleComparisons": 1601,
+        "savedSignatureAnchors": 1601,
+        "compareCallsPerVariant": 1600,
+        "riskCallsPerVariant": 1600,
+        "expectedExceptionsPerVariant": 0,
+        "finishedAuditComparisons": 1,
+        "savedBracketSides": 0,
+        "savedBracketPairs": 0,
+        "savedJsonStates": 0,
+        "completeOriginalPreflightAudits": 0,
+        "directArtifactByteComparisons": 0
+      },
+      "receiptIdentity": {
+        "id": "array-1-receipt",
+        "bytes": 3519,
+        "sha256": "12d2ed19bc80064c7cf57baa8e1f367f9da564b737e1d0ca6758c3e59200fd62"
+      }
+    },
+    {
+      "jobId": "array-2",
+      "status": "passed",
+      "casesPassed": 1,
+      "casesRunning": 0,
+      "childReceiptWallSeconds": 17.816136705,
+      "childReceiptCpuSeconds": 18.748513,
+      "wait4ChildCpuSeconds": 18.826664,
+      "counts": {
+        "observationsPerVariant": 1601,
+        "pairsPerVariant": 1536960,
+        "tiltMarginsPerVariant": 25616,
+        "marginsPerVariant": 12321296,
+        "exactSampleComparisons": 1601,
+        "savedSignatureAnchors": 1601,
+        "compareCallsPerVariant": 1600,
+        "riskCallsPerVariant": 1600,
+        "expectedExceptionsPerVariant": 0,
+        "finishedAuditComparisons": 1,
+        "savedBracketSides": 0,
+        "savedBracketPairs": 0,
+        "savedJsonStates": 0,
+        "completeOriginalPreflightAudits": 0,
+        "directArtifactByteComparisons": 0
+      },
+      "receiptIdentity": {
+        "id": "array-2-receipt",
+        "bytes": 3509,
+        "sha256": "de3700c446bf6034d571041e50e595e3774e363a23620901dda117ff98e2f3d3"
+      }
+    },
+    {
+      "jobId": "array-3",
+      "status": "passed",
+      "casesPassed": 1,
+      "casesRunning": 0,
+      "childReceiptWallSeconds": 18.697435881,
+      "childReceiptCpuSeconds": 19.910741,
+      "wait4ChildCpuSeconds": 19.991063,
+      "counts": {
+        "observationsPerVariant": 1601,
+        "pairsPerVariant": 1536960,
+        "tiltMarginsPerVariant": 25616,
+        "marginsPerVariant": 12321296,
+        "exactSampleComparisons": 1601,
+        "savedSignatureAnchors": 1601,
+        "compareCallsPerVariant": 1600,
+        "riskCallsPerVariant": 1600,
+        "expectedExceptionsPerVariant": 0,
+        "finishedAuditComparisons": 1,
+        "savedBracketSides": 0,
+        "savedBracketPairs": 0,
+        "savedJsonStates": 0,
+        "completeOriginalPreflightAudits": 0,
+        "directArtifactByteComparisons": 0
+      },
+      "receiptIdentity": {
+        "id": "array-3-receipt",
+        "bytes": 3510,
+        "sha256": "7056565e3ae3dd91c639d3c5738670f9b2c83fa2b8d46cc1780ce76740f50c6e"
+      }
+    },
+    {
+      "jobId": "array-4",
+      "status": "resource_limited",
+      "casesPassed": 0,
+      "casesRunning": 1,
+      "childReceiptWallSeconds": 42.278444587,
+      "childReceiptCpuSeconds": 44.012738,
+      "wait4ChildCpuSeconds": 44.110964,
+      "counts": {
+        "observationsPerVariant": 3719,
+        "pairsPerVariant": 3570240,
+        "tiltMarginsPerVariant": 59504,
+        "marginsPerVariant": 28621424,
+        "exactSampleComparisons": 3719,
+        "savedSignatureAnchors": 3719,
+        "compareCallsPerVariant": 3718,
+        "riskCallsPerVariant": 3717,
+        "expectedExceptionsPerVariant": 0,
+        "finishedAuditComparisons": 0,
+        "savedBracketSides": 0,
+        "savedBracketPairs": 0,
+        "savedJsonStates": 0,
+        "completeOriginalPreflightAudits": 0,
+        "directArtifactByteComparisons": 0
+      },
+      "receiptIdentity": {
+        "id": "array-4-receipt",
+        "bytes": 3614,
+        "sha256": "6527ad7625197c7bb9d94b46517b98ad0d83318c16c584266eac523df5656e10"
+      }
+    }
+  ],
+  "evidenceIdentities": [
+    {
+      "id": "held-implementation",
+      "bytes": 8596,
+      "sha256": "0b983fd5dfd0420d321330ea51c28f96b69f45e0a9a29787f27d39de48c60db7"
+    },
+    {
+      "id": "execution-release",
+      "bytes": 2060,
+      "sha256": "868f49abbe1344f968bb19db88cbd2974ca499ddefd55c752e72beee35ed31b8"
+    },
+    {
+      "id": "freeze",
+      "bytes": 51370,
+      "sha256": "2ceceb1cf91d6fe567093b7315c1291b24d4027927ceebbd981fea3d534d84f9"
+    },
+    {
+      "id": "root-launch",
+      "bytes": 416,
+      "sha256": "614c71823e9db6cb1a2d627069f7d7f612fac522f7d8f6537ab073231d907f51"
+    },
+    {
+      "id": "root-preservation",
+      "bytes": 576,
+      "sha256": "b7bce85f680e322b15e99c824ed6dee66b234e001c218d578d51be4a3ab6cb14"
+    },
+    {
+      "id": "outer-observation",
+      "bytes": 2248,
+      "sha256": "e068753515ac626af6f3a328bb9693234fbf7f8eb9e2614cd2fe7ec71e9b7907"
+    },
+    {
+      "id": "inner-supervisor",
+      "bytes": 6447,
+      "sha256": "79c22263e115f0d210883cd7906662519d0044ea900ccdd0d2812dfa631b2d39"
+    },
+    {
+      "id": "final-accounting",
+      "bytes": 1127,
+      "sha256": "c0888ac413402035dd3cf4fa6f57852791a57d7280ee82841fa7fdfcb10d7bba"
+    },
+    {
+      "id": "adapter-controls",
+      "bytes": 107696,
+      "sha256": "cb9ff8438207895aac6708f5d659d934663366afc7a66d5c1437a609cd759bea"
+    },
+    {
+      "id": "cooperative-child-source",
+      "bytes": 10712,
+      "sha256": "1e42bdfc99fdc1a6bb7d3cba3572c13faa2ee98ba7b94442b7ca5a2a326162fc"
+    },
+    {
+      "id": "supervisor-source",
+      "bytes": 46409,
+      "sha256": "49bab5db644e6b22963aa3e412c9d79504b125c320fbedd26154944cfbf37ace"
+    },
+    {
+      "id": "context-source",
+      "bytes": 12469,
+      "sha256": "4ce275b316fe6012d2175407b6cfeecda1dcef57ac9c77219d05c3e948ba0e01"
+    },
+    {
+      "id": "corpus-source",
+      "bytes": 11117,
+      "sha256": "cea71e6837e9bdabf4bccbbf23391ffbc7b3965f9e5e0f0597ec7d15378d4a30"
+    },
+    {
+      "id": "source-ledger-before-run",
+      "bytes": 3404,
+      "sha256": "4697ddf59e086b6d9158d7f75241b3998f3c9e562a7d7a0627585380786c2feb"
+    }
+  ],
+  "interpretation": {
+    "supported": "Pipe admission integrated successfully; the reconciled completed subset and retained partial paired outputs agree exactly under the prescribed checks.",
+    "notEstablished": [
+      "All229 cases or18 jobs complete",
+      "Independent correctness gate acceptance",
+      "Full array-4 replay or remaining preflight/workload contracts",
+      "C1 speedup or component-level overhead profile",
+      "Physical/operational model validity",
+      "Instruction-exact interrupted process state"
+    ],
+    "costDiagnosis": "Array-4 has persist=false and no per-row artifact fsync; parent durable checkpoints occur between jobs. ChildCPU includes B/C1 arithmetic, clones, nonmutation, exact/property/alias/class-state checks, signatures and risk comparisons. No component timings identify a dominant cost.",
+    "recommendedNextStep": "Preserve the terminal campaign. Propose a separately bounded component-cost diagnosis and exact-coverage resource design before any successor; isolate checking overhead without weakening comparisons. Controlled B/C1 benchmarks wait for complete correctness acceptance. No execution is authorized by this report.",
+    "storageBlocker": "A reviewer postrun snapshot of181060078B actual active storage already yields201060078B for another16MB study+4MB future delivery, above200MB before completing the existing R8 demo reserve. Fresh accounting and an explicit prospective storage plan are required; no automatic deletion or retry."
+  },
+  "sanitization": {
+    "rawBinaryPublished": false,
+    "privateInventoriesPublished": false,
+    "absoluteRuntimePathsPublished": false,
+    "processIdsDescriptorNumbersInodesPublished": false
+  }
+}

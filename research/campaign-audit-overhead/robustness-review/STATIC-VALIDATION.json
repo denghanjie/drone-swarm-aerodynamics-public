@@ -1,0 +1,37 @@
+{
+  "schema": "audit-c1-robustness-static-validation/v1",
+  "status": "source_syntax_and_config_only_not_run",
+  "pythonFiles": [
+    {
+      "path": "robustness-review/supervise.py",
+      "bytes": 30920,
+      "sha256": "2225c6a3c86f60eb3ead98784702766f60b4ade13f8ae30174f799a9222d8343",
+      "syntax": "passed_ast_parse_only"
+    },
+    {
+      "path": "robustness-review/test_receipt_rules.py",
+      "bytes": 3505,
+      "sha256": "59216f082dac84e5eeaf0c51ae468383c54993679bc1e1da7d749fcb1662b749",
+      "syntax": "passed_ast_parse_only"
+    },
+    {
+      "path": "robustness-review/validate_cost_receipts.py",
+      "bytes": 10057,
+      "sha256": "349460df0d0920ac92cd398d4de83c8ccdc112cfb08c22b27ef043cb038a4444",
+      "syntax": "passed_ast_parse_only"
+    }
+  ],
+  "numericModulesImported": false,
+  "numericExecution": false,
+  "testsExecuted": false,
+  "executionRelease": false,
+  "fixedJobConfiguration": {
+    "correctness": 18,
+    "performance": 64,
+    "gate": 1,
+    "oneWarmupTwoMeasuredPerBenchmarkChild": true,
+    "benchmarkOrderMatchesProtocol": true
+  },
+  "oldRootBytes": 133854607,
+  "newRootBytesAtCheck": 789893
+}

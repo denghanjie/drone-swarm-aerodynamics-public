@@ -1,0 +1,11 @@
+{
+  "id": "retention-clarification-002",
+  "recordedAt": "2026-10-13T23:47:55.883107+00:00",
+  "beforeAnyNumericalExecution": true,
+  "previousPlanSha256": "4dfd2234c5aeafc2fd0fb23427e9cddc77d504196e0d83387a7bfc0fe16e271a",
+  "currentPlanSha256": "b68a2a93b29e85b3784d874010c767ee7ba3eacfdcc71d4bb6b91d31606d4bba",
+  "scope": "Truthful evidence available from unchanged held-integrator internal exceptions; no metric, gate, scenario or resource-cap change.",
+  "detail": "For J stage or projection failures, retain the actual offending raw trial/endpoint and available field/commands. The unchanged held integrator exposes no internal-stage exception hook: an unexpected exception inside H/P integration retains the exact pre-step input, held winds, commands and vehicle ID, labeled exactIntegratorInput=true and exactStoppedState=false; the hidden intermediate state is unavailable. Do not alter or replay the baseline to fabricate an original failure state. This limitation is prospective, and such a failure stops the cycle with no reference acceptance.",
+  "previousPlanPreserved": "PLAN-STORAGE-AMENDED.md",
+  "previousPublishedCommit": "17a3f9bdfce678d7a22ba04e1bb4d8d3a56e8fd1"
+}

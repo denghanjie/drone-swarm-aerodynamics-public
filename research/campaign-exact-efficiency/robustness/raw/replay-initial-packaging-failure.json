@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-13T00:23:44Z",
+  "stage": "initial standalone static identity check",
+  "pass": false,
+  "failure": {
+    "type": "JSONDecodeError",
+    "message": "Expecting ',' delimiter: line 28 column 772906 (char 778725)",
+    "operation": "Decode embedded const sources JSON"
+  },
+  "artifactHashCaptured": false,
+  "limitation": "The initial HTML was replaced during diagnosis before its hash was captured. Do not assign the later rebuilt artifact hash to this failure.",
+  "diagnosis": "Sequential global placeholder replacement could replace uppercase DATA inside serialized vendored JavaScript, corrupting JSON. The builder was changed to replace one exact declaration line in one pass.",
+  "action": "Recheck the rebuilt artifact against actual sources and raw records; no browser retry."
+}

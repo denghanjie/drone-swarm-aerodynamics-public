@@ -1,0 +1,1283 @@
+{
+  "id": "preflight-s840137",
+  "seed": 840137,
+  "passed": true,
+  "stop": null,
+  "input": {
+    "path": "results/raw/s840137-p1-a4.dense.f64.gz",
+    "encoding": "gzip / little-endian Float64",
+    "shape": [
+      6401,
+      16,
+      17
+    ],
+    "kind": "full17 dense physics endpoints",
+    "dt": 0.00015625,
+    "startTime": 0,
+    "endTime": 1,
+    "runId": "s840137-p1-a4",
+    "fields": [
+      "px",
+      "py",
+      "pz",
+      "vx",
+      "vy",
+      "vz",
+      "qx",
+      "qy",
+      "qz",
+      "qw",
+      "wx",
+      "wy",
+      "wz",
+      "nominal_f0",
+      "nominal_f1",
+      "nominal_f2",
+      "nominal_f3"
+    ],
+    "nonfiniteValues": 0,
+    "sha256": "4464824125d4b6aafeb61b3e875eefe3d9afaf07f191d7cda9a042c76fa0ca65",
+    "uncompressedSha256": "0264220304fa02d7e14f9983beb818b3edc5ad3cba7a2f1372a2e73633c46954",
+    "compressedBytes": 13365454,
+    "uncompressedBytes": 13928576
+  },
+  "visitedEndpoints": 6401,
+  "expectedEndpoints": 6401,
+  "controllerEvents": 100,
+  "audit": {
+    "id": "preflight-s840137",
+    "samples": 6401,
+    "pairSamples": 6144960,
+    "signatureChanges": 646,
+    "stepRiskChecks": 6400,
+    "endpointRiskChecks": 6400,
+    "fullTrialRiskChecks": 0,
+    "worstBracketDefinition": "Largest absolute signed-margin change among sampled category transitions; signature changes are not physical discontinuity claims",
+    "extrema": {
+      "downstreamZero": {
+        "nearest": {
+          "margin": -1.8909198111830006e-7,
+          "receiver": 12,
+          "rotor": 0,
+          "source": 2,
+          "location": {
+            "tick": 18880,
+            "time": 0.36875,
+            "role": "endpoint"
+          }
+        },
+        "minimum": {
+          "margin": -1.8818464293938484,
+          "receiver": 5,
+          "rotor": 2,
+          "source": 11,
+          "location": {
+            "tick": 14688,
+            "time": 0.286875,
+            "role": "endpoint"
+          }
+        },
+        "maximum": {
+          "margin": 1.820576180102355,
+          "receiver": 11,
+          "rotor": 0,
+          "source": 5,
+          "location": {
+            "tick": 45384,
+            "time": 0.88640625,
+            "role": "endpoint"
+          }
+        }
+      },
+      "farStart": {
+        "nearest": {
+          "margin": 0.0000011031364225977391,
+          "receiver": 13,
+          "rotor": 1,
+          "source": 7,
+          "location": {
+            "tick": 31048,
+            "time": 0.60640625,
+            "role": "endpoint"
+          }
+        },
+        "minimum": {
+          "margin": -2.0798363281260817,
+          "receiver": 5,
+          "rotor": 2,
+          "source": 11,
+          "location": {
+            "tick": 14688,
+            "time": 0.286875,
+            "role": "endpoint"
+          }
+        },
+        "maximum": {
+          "margin": 1.6225862813701217,
+          "receiver": 11,
+          "rotor": 0,
+          "source": 5,
+          "location": {
+            "tick": 45384,
+            "time": 0.88640625,
+            "role": "endpoint"
+          }
+        }
+      },
+      "downstreamFade": {
+        "nearest": {
+          "margin": -0.179423819897645,
+          "receiver": 11,
+          "rotor": 0,
+          "source": 5,
+          "location": {
+            "tick": 45384,
+            "time": 0.88640625,
+            "role": "endpoint"
+          }
+        },
+        "minimum": {
+          "margin": -3.8818464293938484,
+          "receiver": 5,
+          "rotor": 2,
+          "source": 11,
+          "location": {
+            "tick": 14688,
+            "time": 0.286875,
+            "role": "endpoint"
+          }
+        },
+        "maximum": {
+          "margin": -0.179423819897645,
+          "receiver": 11,
+          "rotor": 0,
+          "source": 5,
+          "location": {
+            "tick": 45384,
+            "time": 0.88640625,
+            "role": "endpoint"
+          }
+        }
+      },
+      "downstreamCutoff": {
+        "nearest": {
+          "margin": -0.679423819897645,
+          "receiver": 11,
+          "rotor": 0,
+          "source": 5,
+          "location": {
+            "tick": 45384,
+            "time": 0.88640625,
+            "role": "endpoint"
+          }
+        },
+        "minimum": {
+          "margin": -4.381846429393848,
+          "receiver": 5,
+          "rotor": 2,
+          "source": 11,
+          "location": {
+            "tick": 14688,
+            "time": 0.286875,
+            "role": "endpoint"
+          }
+        },
+        "maximum": {
+          "margin": -0.679423819897645,
+          "receiver": 11,
+          "rotor": 0,
+          "source": 5,
+          "location": {
+            "tick": 45384,
+            "time": 0.88640625,
+            "role": "endpoint"
+          }
+        }
+      },
+      "nearRadius": {
+        "nearest": {
+          "margin": 1.3647386831738828e-8,
+          "receiver": 4,
+          "rotor": 2,
+          "source": 8,
+          "location": {
+            "tick": 27976,
+            "time": 0.54640625,
+            "role": "endpoint"
+          }
+        },
+        "minimum": {
+          "margin": -0.14987901462359526,
+          "receiver": 2,
+          "rotor": 2,
+          "source": 14,
+          "location": {
+            "tick": 43024,
+            "time": 0.8403125,
+            "role": "endpoint"
+          }
+        },
+        "maximum": {
+          "margin": 1.7252899252214486,
+          "receiver": 5,
+          "rotor": 3,
+          "source": 11,
+          "location": {
+            "tick": 49208,
+            "time": 0.96109375,
+            "role": "endpoint"
+          }
+        }
+      },
+      "radialFade": {
+        "nearest": {
+          "margin": 4.6996270375299076e-8,
+          "receiver": 15,
+          "rotor": 0,
+          "source": 1,
+          "location": {
+            "tick": 11848,
+            "time": 0.23140625,
+            "role": "endpoint"
+          }
+        },
+        "minimum": {
+          "margin": -0.2929374292085178,
+          "receiver": 15,
+          "rotor": 1,
+          "source": 5,
+          "location": {
+            "tick": 11504,
+            "time": 0.2246875,
+            "role": "endpoint"
+          }
+        },
+        "maximum": {
+          "margin": 2.035948951963242,
+          "receiver": 5,
+          "rotor": 3,
+          "source": 11,
+          "location": {
+            "tick": 49360,
+            "time": 0.9640625,
+            "role": "endpoint"
+          }
+        }
+      },
+      "radialCutoff": {
+        "nearest": {
+          "margin": 0.0000013941167322784054,
+          "receiver": 0,
+          "rotor": 1,
+          "source": 2,
+          "location": {
+            "tick": 42680,
+            "time": 0.83359375,
+            "role": "endpoint"
+          }
+        },
+        "minimum": {
+          "margin": -0.44106074118047256,
+          "receiver": 15,
+          "rotor": 1,
+          "source": 5,
+          "location": {
+            "tick": 11528,
+            "time": 0.22515625,
+            "role": "endpoint"
+          }
+        },
+        "maximum": {
+          "margin": 2.1163357540271774,
+          "receiver": 5,
+          "rotor": 3,
+          "source": 11,
+          "location": {
+            "tick": 49472,
+            "time": 0.96625,
+            "role": "endpoint"
+          }
+        }
+      },
+      "neighborRadius": {
+        "nearest": {
+          "margin": -0.605505992044205,
+          "receiver": 5,
+          "rotor": 0,
+          "source": 11,
+          "location": {
+            "tick": 17312,
+            "time": 0.338125,
+            "role": "endpoint"
+          }
+        },
+        "minimum": {
+          "margin": -2.493103414323953,
+          "receiver": 9,
+          "rotor": 0,
+          "source": 11,
+          "location": {
+            "tick": 38072,
+            "time": 0.74359375,
+            "role": "endpoint"
+          }
+        },
+        "maximum": {
+          "margin": -0.605505992044205,
+          "receiver": 5,
+          "rotor": 0,
+          "source": 11,
+          "location": {
+            "tick": 17312,
+            "time": 0.338125,
+            "role": "endpoint"
+          }
+        }
+      },
+      "tilt": {
+        "nearest": {
+          "margin": 0.007601861491695394,
+          "drone": 1,
+          "location": {
+            "tick": 40520,
+            "time": 0.79140625,
+            "role": "endpoint"
+          }
+        },
+        "minimum": {
+          "margin": 0.007601861491695394,
+          "drone": 1,
+          "location": {
+            "tick": 40520,
+            "time": 0.79140625,
+            "role": "endpoint"
+          }
+        },
+        "maximum": {
+          "margin": 0.06030737921409157,
+          "drone": 0,
+          "location": {
+            "tick": 0,
+            "time": 0,
+            "role": "endpoint"
+          }
+        }
+      }
+    },
+    "brackets": {
+      "nearRadius": {
+        "count": 176,
+        "first": {
+          "category": "nearRadius",
+          "severity": 0.00004505076231017813,
+          "receiver": 11,
+          "rotor": 1,
+          "source": 2,
+          "fromMargin": -0.00004368680776858924,
+          "toMargin": 0.0000013639545415888854,
+          "from": {
+            "location": {
+              "tick": 192,
+              "time": 0.00375,
+              "role": "endpoint"
+            },
+            "geometryOffsetBytes": 0,
+            "geometryBytes": 2176,
+            "geometrySha256": "5cba12736ef0c6cf34d852bfad006e1d26c76dc4b2e4c172de5a5aacc2784040"
+          },
+          "to": {
+            "location": {
+              "tick": 200,
+              "time": 0.00390625,
+              "role": "endpoint"
+            },
+            "geometryOffsetBytes": 2176,
+            "geometryBytes": 2176,
+            "geometrySha256": "07c2a41eeab7e06ff76ae176e03b43730c1d43290f4b771e296bbebe5b51877c"
+          },
+          "meaning": "Sample bracket only; equal-time RK trial states are not ordered physical observations"
+        },
+        "worst": {
+          "category": "nearRadius",
+          "severity": 0.00038462946161713085,
+          "receiver": 15,
+          "rotor": 2,
+          "source": 1,
+          "fromMargin": -0.00026163208415383443,
+          "toMargin": 0.00012299737746329642,
+          "from": {
+            "location": {
+              "tick": 29832,
+              "time": 0.58265625,
+              "role": "endpoint"
+            },
+            "geometryOffsetBytes": 4352,
+            "geometryBytes": 2176,
+            "geometrySha256": "dfd53613bb6ccf6e0e729918d8ebbf58960137d2c87092aae6f88657cf44c204"
+          },
+          "to": {
+            "location": {
+              "tick": 29840,
+              "time": 0.5828125,
+              "role": "endpoint"
+            },
+            "geometryOffsetBytes": 6528,
+            "geometryBytes": 2176,
+            "geometrySha256": "d646e64c1256154f6faf71a4436bb7105bd91be26b20fb8e45ae27e31c5223c6"
+          },
+          "meaning": "Sample bracket only; equal-time RK trial states are not ordered physical observations"
+        }
+      },
+      "downstreamZero": {
+        "count": 325,
+        "first": {
+          "category": "downstreamZero",
+          "severity": 0.00004435404227503139,
+          "receiver": 13,
+          "rotor": 2,
+          "source": 7,
+          "fromMargin": -0.000025844797524636523,
+          "toMargin": 0.00001850924475039487,
+          "from": {
+            "location": {
+              "tick": 264,
+              "time": 0.00515625,
+              "role": "endpoint"
+            },
+            "geometryOffsetBytes": 8704,
+            "geometryBytes": 2176,
+            "geometrySha256": "46ff1fece496378b303631a88674710523b6170af351c5652385aa0a5747bfa2"
+          },
+          "to": {
+            "location": {
+              "tick": 272,
+              "time": 0.0053125,
+              "role": "endpoint"
+            },
+            "geometryOffsetBytes": 10880,
+            "geometryBytes": 2176,
+            "geometrySha256": "405ea33f269c8e0c0ef4ca65c7f0f4b8a7820310269bb8fd86d5a3913dffe85a"
+          },
+          "meaning": "Sample bracket only; equal-time RK trial states are not ordered physical observations"
+        },
+        "worst": {
+          "category": "downstreamZero",
+          "severity": 0.00039394180622434605,
+          "receiver": 10,
+          "rotor": 2,
+          "source": 13,
+          "fromMargin": 0.000024100121836040378,
+          "toMargin": -0.00036984168438830567,
+          "from": {
+            "location": {
+              "tick": 27912,
+              "time": 0.54515625,
+              "role": "endpoint"
+            },
+            "geometryOffsetBytes": 13056,
+            "geometryBytes": 2176,
+            "geometrySha256": "c87a9db86d3cef5966ca185d238e05c9cd494b2f8eee54005fa7be84b0ad8ae3"
+          },
+          "to": {
+            "location": {
+              "tick": 27920,
+              "time": 0.5453125,
+              "role": "endpoint"
+            },
+            "geometryOffsetBytes": 15232,
+            "geometryBytes": 2176,
+            "geometrySha256": "df7d338536259c3fa74b238c02bed02668595323d428292546a9308de4a08498"
+          },
+          "meaning": "Sample bracket only; equal-time RK trial states are not ordered physical observations"
+        }
+      },
+      "radialFade": {
+        "count": 71,
+        "first": {
+          "category": "radialFade",
+          "severity": 0.00003684713100438053,
+          "receiver": 14,
+          "rotor": 2,
+          "source": 2,
+          "fromMargin": -0.000027437151610992805,
+          "toMargin": 0.000009409979393387724,
+          "from": {
+            "location": {
+              "tick": 456,
+              "time": 0.00890625,
+              "role": "endpoint"
+            },
+            "geometryOffsetBytes": 17408,
+            "geometryBytes": 2176,
+            "geometrySha256": "e1da19f1160e89550f061091105cf66c707fad0e275718100dfe39eff4108d04"
+          },
+          "to": {
+            "location": {
+              "tick": 464,
+              "time": 0.0090625,
+              "role": "endpoint"
+            },
+            "geometryOffsetBytes": 19584,
+            "geometryBytes": 2176,
+            "geometrySha256": "bb948429f8a0a1da697c258d685a799e2e4e96b2893b71790fa02232a0131a77"
+          },
+          "meaning": "Sample bracket only; equal-time RK trial states are not ordered physical observations"
+        },
+        "worst": {
+          "category": "radialFade",
+          "severity": 0.0004098648794352844,
+          "receiver": 15,
+          "rotor": 2,
+          "source": 1,
+          "fromMargin": -0.000017044828759638087,
+          "toMargin": 0.0003928200506756463,
+          "from": {
+            "location": {
+              "tick": 30616,
+              "time": 0.59796875,
+              "role": "endpoint"
+            },
+            "geometryOffsetBytes": 21760,
+            "geometryBytes": 2176,
+            "geometrySha256": "bf845e06908e9bb56dd43f2f73460a9f2cbfd50fc637314a4a19e22e0ee115f2"
+          },
+          "to": {
+            "location": {
+              "tick": 30624,
+              "time": 0.598125,
+              "role": "endpoint"
+            },
+            "geometryOffsetBytes": 23936,
+            "geometryBytes": 2176,
+            "geometrySha256": "73da699c19ee5690090d87df3b54405d3005aed87eec321d0e581fc6d714a51e"
+          },
+          "meaning": "Sample bracket only; equal-time RK trial states are not ordered physical observations"
+        }
+      },
+      "radialCutoff": {
+        "count": 22,
+        "first": {
+          "category": "radialCutoff",
+          "severity": 0.0000988829044394901,
+          "receiver": 0,
+          "rotor": 2,
+          "source": 13,
+          "fromMargin": -0.00009636422487971363,
+          "toMargin": 0.000002518679559776471,
+          "from": {
+            "location": {
+              "tick": 6448,
+              "time": 0.1259375,
+              "role": "endpoint"
+            },
+            "geometryOffsetBytes": 26112,
+            "geometryBytes": 2176,
+            "geometrySha256": "4bd423c65251ad5c44072ddbfcdae1ae83334689a76eca32b249a91e51a0da4f"
+          },
+          "to": {
+            "location": {
+              "tick": 6456,
+              "time": 0.12609375,
+              "role": "endpoint"
+            },
+            "geometryOffsetBytes": 28288,
+            "geometryBytes": 2176,
+            "geometrySha256": "ade1c93c5004ca2a015ee632ed63b687f68f555318fafde6cd10e5fdc6b33bd4"
+          },
+          "meaning": "Sample bracket only; equal-time RK trial states are not ordered physical observations"
+        },
+        "worst": {
+          "category": "radialCutoff",
+          "severity": 0.00044388614476797983,
+          "receiver": 15,
+          "rotor": 1,
+          "source": 1,
+          "fromMargin": -0.0003524311305180272,
+          "toMargin": 0.00009145501424995262,
+          "from": {
+            "location": {
+              "tick": 31408,
+              "time": 0.6134375,
+              "role": "endpoint"
+            },
+            "geometryOffsetBytes": 30464,
+            "geometryBytes": 2176,
+            "geometrySha256": "643f83e71486a3dd8a6d2dc95abda14ab6c8dc67948fe93d47b70492faae88fd"
+          },
+          "to": {
+            "location": {
+              "tick": 31416,
+              "time": 0.61359375,
+              "role": "endpoint"
+            },
+            "geometryOffsetBytes": 32640,
+            "geometryBytes": 2176,
+            "geometrySha256": "19aa7b0c91dac25e03fc5c1996e72c6db062963304b8d4207d734a1e58412b5d"
+          },
+          "meaning": "Sample bracket only; equal-time RK trial states are not ordered physical observations"
+        }
+      },
+      "farStart": {
+        "count": 74,
+        "first": {
+          "category": "farStart",
+          "severity": 0.00013645029154057964,
+          "receiver": 11,
+          "rotor": 3,
+          "source": 4,
+          "fromMargin": -0.00008126568034413917,
+          "toMargin": 0.00005518461119644047,
+          "from": {
+            "location": {
+              "tick": 10264,
+              "time": 0.20046875,
+              "role": "endpoint"
+            },
+            "geometryOffsetBytes": 34816,
+            "geometryBytes": 2176,
+            "geometrySha256": "3f170488aa5defeb83d0411f4de114410c8c432d8c420853b06261c7bf7d8493"
+          },
+          "to": {
+            "location": {
+              "tick": 10272,
+              "time": 0.200625,
+              "role": "endpoint"
+            },
+            "geometryOffsetBytes": 36992,
+            "geometryBytes": 2176,
+            "geometrySha256": "373d15d1817ae1443a4fba7a092bada7bacfb7374567fd189c9b1c91f39c84cb"
+          },
+          "meaning": "Sample bracket only; equal-time RK trial states are not ordered physical observations"
+        },
+        "worst": {
+          "category": "farStart",
+          "severity": 0.0002224937127753568,
+          "receiver": 11,
+          "rotor": 0,
+          "source": 3,
+          "fromMargin": -0.00002562605437647636,
+          "toMargin": 0.00019686765839888043,
+          "from": {
+            "location": {
+              "tick": 31680,
+              "time": 0.61875,
+              "role": "endpoint"
+            },
+            "geometryOffsetBytes": 39168,
+            "geometryBytes": 2176,
+            "geometrySha256": "bcff7939625bb451f9f75545ad7d6c47c74fa3e7905cd1dd4fade25bfa66d9fe"
+          },
+          "to": {
+            "location": {
+              "tick": 31688,
+              "time": 0.61890625,
+              "role": "endpoint"
+            },
+            "geometryOffsetBytes": 41344,
+            "geometryBytes": 2176,
+            "geometrySha256": "746e7ce509c0227a78eb2819d84f116cc3b18c7258081abd09611d3c5798300c"
+          },
+          "meaning": "Sample bracket only; equal-time RK trial states are not ordered physical observations"
+        }
+      }
+    },
+    "bracketRaw": {
+      "path": "results/audit/preflight-s840137.brackets.f64",
+      "bytes": 43520,
+      "sha256": "97bc8e38e5a5986c6a40b56dfb50b1c0884dd49efa193e28406a7796e7d7a688",
+      "encoding": "little-endian Float64; whole swarm full17 states; offsets in bracket entries"
+    },
+    "risks": [],
+    "signatureStream": {
+      "path": "results/audit/preflight-s840137.signatures.bin",
+      "bytes": 204832,
+      "sha256": "16fd482fe3846ffd4f2a2abfae8ab7580194fbc06f8ae35f6bc81e8cc3573638",
+      "encoding": "32 raw SHA256 bytes per observation; sample schedule specified by run/preflight record",
+      "inputEncoding": "receiver-major, rotor-major, source-major excluding self; UInt16LE predicate bits: bit0 downstream>0; bits1-7 signed margin>=0 in category order; then one tilt>=0 byte per drone. Inactive pairs included; signature changes need not change field",
+      "categories": [
+        "downstreamZero",
+        "farStart",
+        "downstreamFade",
+        "downstreamCutoff",
+        "nearRadius",
+        "radialFade",
+        "radialCutoff",
+        "neighborRadius",
+        "tilt"
+      ]
+    },
+    "coverage": "All ordered receiver-rotor/source pairs including those outside field neighbor support; domain guard applies only to production eligible pairs. Full per-pair margins are evaluated, not serialized."
+  },
+  "controllers": {
+    "path": "results/controllers/preflight-s840137.f64",
+    "shape": [
+      100,
+      16,
+      18
+    ],
+    "fields": [
+      "command0",
+      "command1",
+      "command2",
+      "command3",
+      "neighborMask",
+      "pairMask",
+      "wallMask",
+      "steeringSpeed",
+      "desiredHorizontalSpeedNorm",
+      "torqueErrorScalar",
+      "tiltExcess",
+      "saturated",
+      "motorBoundsBase3",
+      "speedAtLimit",
+      "wallRepairIterations",
+      "wallRepairConverged",
+      "pairResidual",
+      "wallResidual"
+    ],
+    "encoding": "little-endian Float64; integer bit masks are exact",
+    "wallIds": [
+      "floor",
+      "ceiling",
+      "north-wall",
+      "south-wall",
+      "partition-0-left",
+      "partition-0-right",
+      "partition-0-below",
+      "partition-0-above",
+      "partition-1-left",
+      "partition-1-right",
+      "partition-1-below",
+      "partition-1-above",
+      "partition-2-left",
+      "partition-2-right",
+      "partition-2-below",
+      "partition-2-above",
+      "rack-3.5--1",
+      "rack-3.5-1",
+      "rack-7--1",
+      "rack-7-1",
+      "rack-15.5--1",
+      "rack-15.5-1",
+      "rack-19--1",
+      "rack-19-1",
+      "rack-27.5--1",
+      "rack-27.5-1",
+      "rack-31--1",
+      "rack-31-1",
+      "press-A",
+      "press-B",
+      "press-C",
+      "overhead-A",
+      "overhead-B",
+      "loading-platform"
+    ],
+    "bytes": 230400,
+    "sha256": "d0e1486251417fe855d9ace44a7b0d107d7c12a7b8b3e87fc7b81ecf81b54da4",
+    "events": [
+      {
+        "tick": 0,
+        "commandsSha256": "0cfdbdd9a06ac55263f446e063d98f1cd34096aff8b5794a8f2faba7af4818b6",
+        "branchSignatureSha256": "bc213b86bab616873a3a6bda792a7342abc4e214d3734400f000eed9b84f9c11"
+      },
+      {
+        "tick": 512,
+        "commandsSha256": "53617325fff3aab73523ea1e82b17b87d408af534ae57da3f20ed29dc388b0c7",
+        "branchSignatureSha256": "bc213b86bab616873a3a6bda792a7342abc4e214d3734400f000eed9b84f9c11"
+      },
+      {
+        "tick": 1024,
+        "commandsSha256": "4dcf547620c9ab0e6f75b59830e106a702d20f73074165291186ed5d13957134",
+        "branchSignatureSha256": "bc213b86bab616873a3a6bda792a7342abc4e214d3734400f000eed9b84f9c11"
+      },
+      {
+        "tick": 1536,
+        "commandsSha256": "1966a62bc6593d9a6e3d60d42cfb8da331ac808004ad16c3f3220b0075e01625",
+        "branchSignatureSha256": "4a7e0c80944a14cf8124667c2533bb35eed75d04648a6fb013290a53c94c8030"
+      },
+      {
+        "tick": 2048,
+        "commandsSha256": "dd5423eb009d20ce486b3c0d0387a6104843afa025dfa6590719d3696502dccf",
+        "branchSignatureSha256": "4a7e0c80944a14cf8124667c2533bb35eed75d04648a6fb013290a53c94c8030"
+      },
+      {
+        "tick": 2560,
+        "commandsSha256": "0193bff2f8938d9ae05f0a3479c52fdd7f33922c4da9c683ebf2a6cce3b04cc4",
+        "branchSignatureSha256": "db507e6878f5cd149b27669884da387de5fbe055399b7b58440084675f1b922d"
+      },
+      {
+        "tick": 3072,
+        "commandsSha256": "f6bc84002e972c94eed3f592ced2b37666339899ebc9d8638e0b382eaedcf6b3",
+        "branchSignatureSha256": "db507e6878f5cd149b27669884da387de5fbe055399b7b58440084675f1b922d"
+      },
+      {
+        "tick": 3584,
+        "commandsSha256": "6f0df3b1bb854319d98c64218b4abc36cccf30525aa0cb77d5c6bcb5f9d325e4",
+        "branchSignatureSha256": "db507e6878f5cd149b27669884da387de5fbe055399b7b58440084675f1b922d"
+      },
+      {
+        "tick": 4096,
+        "commandsSha256": "9552875b6e1000646236149faec599f719d7acadcec7378881d48fe343ef8167",
+        "branchSignatureSha256": "db507e6878f5cd149b27669884da387de5fbe055399b7b58440084675f1b922d"
+      },
+      {
+        "tick": 4608,
+        "commandsSha256": "3fd3d94ec1bf3740f694327061d42dbd412724179ad50c81df950575fa565565",
+        "branchSignatureSha256": "db507e6878f5cd149b27669884da387de5fbe055399b7b58440084675f1b922d"
+      },
+      {
+        "tick": 5120,
+        "commandsSha256": "526dcabf48a8f1122ecaa23ede40ab49c30f05d8b48412eb263dfca0d5f32ab0",
+        "branchSignatureSha256": "ea5816bdc2976dd5d7bd20cd333f54a5b77bb77e913d3e920c5e52872f479391"
+      },
+      {
+        "tick": 5632,
+        "commandsSha256": "d837b5df45a53d4bffba666a7271c701160366a0c1dc5205ee6bf98f1c27fe4c",
+        "branchSignatureSha256": "ea5816bdc2976dd5d7bd20cd333f54a5b77bb77e913d3e920c5e52872f479391"
+      },
+      {
+        "tick": 6144,
+        "commandsSha256": "860958c8ed5c59fc63b230d26e08425b9db08a6d4669e175aa95ea98352e44f0",
+        "branchSignatureSha256": "54e97480e4638fe9770d73fb5e255aac4e12b8da056c2a927a27db03006e0ba7"
+      },
+      {
+        "tick": 6656,
+        "commandsSha256": "7ea878d036ec48855e87f12fc2a3d2962870bf1960b346b08a39f46ffeb5347a",
+        "branchSignatureSha256": "54e97480e4638fe9770d73fb5e255aac4e12b8da056c2a927a27db03006e0ba7"
+      },
+      {
+        "tick": 7168,
+        "commandsSha256": "2e9ac6d5604558f48e27d981c22d66005213f74cf4632768b6bab1952007e2ef",
+        "branchSignatureSha256": "54e97480e4638fe9770d73fb5e255aac4e12b8da056c2a927a27db03006e0ba7"
+      },
+      {
+        "tick": 7680,
+        "commandsSha256": "b591b9ff80ee9766b4b217d5479b7ced2f5a8cd57a3b1f4adece3d8f5110b550",
+        "branchSignatureSha256": "54e97480e4638fe9770d73fb5e255aac4e12b8da056c2a927a27db03006e0ba7"
+      },
+      {
+        "tick": 8192,
+        "commandsSha256": "5eaa6867236034b54a77097f6e5b64a82974989ea3fce16f71df780cacf82f82",
+        "branchSignatureSha256": "54e97480e4638fe9770d73fb5e255aac4e12b8da056c2a927a27db03006e0ba7"
+      },
+      {
+        "tick": 8704,
+        "commandsSha256": "a560565a314c0263b1e9e71f8dddaa29d18bb5813e540245018b46d2341775b4",
+        "branchSignatureSha256": "54e97480e4638fe9770d73fb5e255aac4e12b8da056c2a927a27db03006e0ba7"
+      },
+      {
+        "tick": 9216,
+        "commandsSha256": "7f06a5daaedb5a20ec020b130bafef4a515b0d0c89119b01e9a280d316b0698e",
+        "branchSignatureSha256": "54e97480e4638fe9770d73fb5e255aac4e12b8da056c2a927a27db03006e0ba7"
+      },
+      {
+        "tick": 9728,
+        "commandsSha256": "3061cda1dca1786de1562f7717be0942e4f6989e8ec0ff7e05b907a04d8fb744",
+        "branchSignatureSha256": "a9ee5539eb3a4d75b7249eb95b64f497cde03790073689f6620e70de3e1c258c"
+      },
+      {
+        "tick": 10240,
+        "commandsSha256": "294bdd21413c3683c13a034b980c322e8447aa022c9edffc7f6c8b6223a87ce5",
+        "branchSignatureSha256": "a9ee5539eb3a4d75b7249eb95b64f497cde03790073689f6620e70de3e1c258c"
+      },
+      {
+        "tick": 10752,
+        "commandsSha256": "345f626751f5265726275c9513bb7947436320e9b40d4905a90eca78b93dfa30",
+        "branchSignatureSha256": "e4ba957df3de97b01fc80f1009a493182f4ffb32def350384ab9a3ac001079d4"
+      },
+      {
+        "tick": 11264,
+        "commandsSha256": "334a87903ab789b92463880aee839adf5e25b790ecb3d7cdc794512d0ff785ca",
+        "branchSignatureSha256": "e4ba957df3de97b01fc80f1009a493182f4ffb32def350384ab9a3ac001079d4"
+      },
+      {
+        "tick": 11776,
+        "commandsSha256": "f0f5b0853b604358979c60b678a27b3079d63a0d29486ff5d9f6044d0e7775d2",
+        "branchSignatureSha256": "e4ba957df3de97b01fc80f1009a493182f4ffb32def350384ab9a3ac001079d4"
+      },
+      {
+        "tick": 12288,
+        "commandsSha256": "c5a02efb3d171a932cb6a43dfe0276f5f24f40e217002d634ccddcc7088fed61",
+        "branchSignatureSha256": "e4ba957df3de97b01fc80f1009a493182f4ffb32def350384ab9a3ac001079d4"
+      },
+      {
+        "tick": 12800,
+        "commandsSha256": "61a695072e5897991862416eea4f827673bac27ecb64851e4f03c3e43e237a55",
+        "branchSignatureSha256": "e4ba957df3de97b01fc80f1009a493182f4ffb32def350384ab9a3ac001079d4"
+      },
+      {
+        "tick": 13312,
+        "commandsSha256": "834b56ca6899e7515aa247bf09da2924c307eba68a3bf636714d07e80e9d4299",
+        "branchSignatureSha256": "e4ba957df3de97b01fc80f1009a493182f4ffb32def350384ab9a3ac001079d4"
+      },
+      {
+        "tick": 13824,
+        "commandsSha256": "04e78b93943ccd0dc73eab0128ce25b793efb73f6e46e414a44d2a9c66a7490d",
+        "branchSignatureSha256": "e4ba957df3de97b01fc80f1009a493182f4ffb32def350384ab9a3ac001079d4"
+      },
+      {
+        "tick": 14336,
+        "commandsSha256": "7ec121a89c5cb83432b66707b385bbfa6b7a8bcb28194221ec087ba0a0abb0b5",
+        "branchSignatureSha256": "b578cba7f70334e0f4ccff6c9e0eab2ca809de75e7208280d735ce670ecb1dc0"
+      },
+      {
+        "tick": 14848,
+        "commandsSha256": "741029f5d9c6164ada188a87f0118936fbed92b157b2752d96e41ad504502e75",
+        "branchSignatureSha256": "b578cba7f70334e0f4ccff6c9e0eab2ca809de75e7208280d735ce670ecb1dc0"
+      },
+      {
+        "tick": 15360,
+        "commandsSha256": "0f7cdf5236780b24deddcc8cd70b71dd072219095402e84c174dff43b2a6aaac",
+        "branchSignatureSha256": "7db5b44636fbc4a7071fe8402ed6ccaa1fd0e7a671bc9ed9cc128ff505d734b1"
+      },
+      {
+        "tick": 15872,
+        "commandsSha256": "e2b216a60a839c025dbc380f87c50301f78e5af821c259512ded8b6bdcdc6652",
+        "branchSignatureSha256": "7db5b44636fbc4a7071fe8402ed6ccaa1fd0e7a671bc9ed9cc128ff505d734b1"
+      },
+      {
+        "tick": 16384,
+        "commandsSha256": "423efd593443f5ae7c8d779259ee2e9045d5eed719dab26ddf903e5e5f2204ff",
+        "branchSignatureSha256": "7db5b44636fbc4a7071fe8402ed6ccaa1fd0e7a671bc9ed9cc128ff505d734b1"
+      },
+      {
+        "tick": 16896,
+        "commandsSha256": "10b3ff127712cb96f669439843bacba1a0a3418c259b2f4dd258d4c577e13d55",
+        "branchSignatureSha256": "7db5b44636fbc4a7071fe8402ed6ccaa1fd0e7a671bc9ed9cc128ff505d734b1"
+      },
+      {
+        "tick": 17408,
+        "commandsSha256": "0acfe101ccb012bdc1b2e443b1b1fef513d0896666b57f5d42976a71d79b8ed8",
+        "branchSignatureSha256": "7db5b44636fbc4a7071fe8402ed6ccaa1fd0e7a671bc9ed9cc128ff505d734b1"
+      },
+      {
+        "tick": 17920,
+        "commandsSha256": "5f09b349a9aa3a96db00095c455a97a7ecab8d7d3793212b633c302ea3e7e096",
+        "branchSignatureSha256": "7db5b44636fbc4a7071fe8402ed6ccaa1fd0e7a671bc9ed9cc128ff505d734b1"
+      },
+      {
+        "tick": 18432,
+        "commandsSha256": "2c76be274a2ccb78d884f6e2eec06ac9a68e33cb1da540fc307f575bffa0c43e",
+        "branchSignatureSha256": "7db5b44636fbc4a7071fe8402ed6ccaa1fd0e7a671bc9ed9cc128ff505d734b1"
+      },
+      {
+        "tick": 18944,
+        "commandsSha256": "4892122cc3bea896327cc7bc580b106df4b024aacda285c888e67b342cb10b12",
+        "branchSignatureSha256": "7db5b44636fbc4a7071fe8402ed6ccaa1fd0e7a671bc9ed9cc128ff505d734b1"
+      },
+      {
+        "tick": 19456,
+        "commandsSha256": "49d52c5496d926e5930c835566737f01d2cdfc18e63902fb4d9a1a6747e5fef0",
+        "branchSignatureSha256": "ed6598b6e60d79c40e07f52cc99d6e8037608c7cd06e46fdb318b6e82b1a482a"
+      },
+      {
+        "tick": 19968,
+        "commandsSha256": "3947d530f4f0aff7d8de5cdc1d4b1f6c3239322b7b91365f28c530b0a36b2f3f",
+        "branchSignatureSha256": "ed6598b6e60d79c40e07f52cc99d6e8037608c7cd06e46fdb318b6e82b1a482a"
+      },
+      {
+        "tick": 20480,
+        "commandsSha256": "b065bf12eacc49985c87b6facd00d283a1d421ee896fb7573ed18c067f840a9f",
+        "branchSignatureSha256": "ed6598b6e60d79c40e07f52cc99d6e8037608c7cd06e46fdb318b6e82b1a482a"
+      },
+      {
+        "tick": 20992,
+        "commandsSha256": "f83a779cf6ca348f1e5f1e1a16a6e3446af5ba9680d62c13cc2002a4f666b524",
+        "branchSignatureSha256": "ed6598b6e60d79c40e07f52cc99d6e8037608c7cd06e46fdb318b6e82b1a482a"
+      },
+      {
+        "tick": 21504,
+        "commandsSha256": "dc79544b476d2f28ef6c00632ee44e2a09e70ecb30713fdd2e433d5b9a27b4b5",
+        "branchSignatureSha256": "ed6598b6e60d79c40e07f52cc99d6e8037608c7cd06e46fdb318b6e82b1a482a"
+      },
+      {
+        "tick": 22016,
+        "commandsSha256": "9812e9af7abb20fd6e1e00b05dde6d14a42a8020d8505abcda1deea29a3b79d5",
+        "branchSignatureSha256": "ed6598b6e60d79c40e07f52cc99d6e8037608c7cd06e46fdb318b6e82b1a482a"
+      },
+      {
+        "tick": 22528,
+        "commandsSha256": "20402437c71e4215e6f01b91bc3726ffb057952ff837456aef380dc852adaf8d",
+        "branchSignatureSha256": "92cfb09542d366ae1c78ba8025d63be31c2f2ab5a7659ba87fe96f86829e0b9d"
+      },
+      {
+        "tick": 23040,
+        "commandsSha256": "8cd36a2482fc8bb842c218508cf671f1bfe2bd3b029c75611e28024f12d473de",
+        "branchSignatureSha256": "92cfb09542d366ae1c78ba8025d63be31c2f2ab5a7659ba87fe96f86829e0b9d"
+      },
+      {
+        "tick": 23552,
+        "commandsSha256": "9cfa6f44a0505b762ccb03ba9987ac88c109b9d41ef5d39056392a34fd1fa2e9",
+        "branchSignatureSha256": "92cfb09542d366ae1c78ba8025d63be31c2f2ab5a7659ba87fe96f86829e0b9d"
+      },
+      {
+        "tick": 24064,
+        "commandsSha256": "69640f8b9ae3c0e6b91fd032bffa698c24cf84cf76bb5e95359a58fb909aae07",
+        "branchSignatureSha256": "92cfb09542d366ae1c78ba8025d63be31c2f2ab5a7659ba87fe96f86829e0b9d"
+      },
+      {
+        "tick": 24576,
+        "commandsSha256": "4944fb2f8c6743185158393a7681f0c5a47094cab3656e9e5e58868de28a0eb4",
+        "branchSignatureSha256": "92cfb09542d366ae1c78ba8025d63be31c2f2ab5a7659ba87fe96f86829e0b9d"
+      },
+      {
+        "tick": 25088,
+        "commandsSha256": "ea5ace81e03de34a504eaf9a5d1ae7d8865b8847441fd4f76b2c6c31ac1f9174",
+        "branchSignatureSha256": "92cfb09542d366ae1c78ba8025d63be31c2f2ab5a7659ba87fe96f86829e0b9d"
+      },
+      {
+        "tick": 25600,
+        "commandsSha256": "47b16ea5384cd594f65345e4f80b070aa57dbf373c76f562a8ffda5f69117c19",
+        "branchSignatureSha256": "b024925a5e63826c7c286d57088eee31dd4c89323aad3ddd1aa99a64436792eb"
+      },
+      {
+        "tick": 26112,
+        "commandsSha256": "592b8c76ecd2f3a6f1079679545e2ab7347102681470868e45c568571dc5ca72",
+        "branchSignatureSha256": "b024925a5e63826c7c286d57088eee31dd4c89323aad3ddd1aa99a64436792eb"
+      },
+      {
+        "tick": 26624,
+        "commandsSha256": "f1a659118a91db15707985678893a6ff0586288e46f784f8c3769fee69eef56d",
+        "branchSignatureSha256": "b024925a5e63826c7c286d57088eee31dd4c89323aad3ddd1aa99a64436792eb"
+      },
+      {
+        "tick": 27136,
+        "commandsSha256": "930ff70e485bc9876ba87c52793aaa2adf1ba373d21b573fab141d7070bc785a",
+        "branchSignatureSha256": "b024925a5e63826c7c286d57088eee31dd4c89323aad3ddd1aa99a64436792eb"
+      },
+      {
+        "tick": 27648,
+        "commandsSha256": "2ea09920b64cf4bdcd8659dee4b1e8345471b946908414a6f987945abae480fa",
+        "branchSignatureSha256": "b024925a5e63826c7c286d57088eee31dd4c89323aad3ddd1aa99a64436792eb"
+      },
+      {
+        "tick": 28160,
+        "commandsSha256": "cb69b55c436fa7c7c9fe009266861cadabcd3a333096ebdaac18e80086143630",
+        "branchSignatureSha256": "b024925a5e63826c7c286d57088eee31dd4c89323aad3ddd1aa99a64436792eb"
+      },
+      {
+        "tick": 28672,
+        "commandsSha256": "f77748ccc6bd0f9f5ab4ef5badc9f39333772bf969da12e0559b925ace417bd3",
+        "branchSignatureSha256": "b024925a5e63826c7c286d57088eee31dd4c89323aad3ddd1aa99a64436792eb"
+      },
+      {
+        "tick": 29184,
+        "commandsSha256": "59ecafea248cf78a06da8bce64d0c0cf60b1db8421f8187d248ba38860ba5f1f",
+        "branchSignatureSha256": "734d0b6ad3c34a20f067fd042894d025ccf0986b3198b225ad8cd22db3c3bf27"
+      },
+      {
+        "tick": 29696,
+        "commandsSha256": "176ccb61717c958eda23193a485c48a47c56e5f155b77b0228c1153ee79748c9",
+        "branchSignatureSha256": "734d0b6ad3c34a20f067fd042894d025ccf0986b3198b225ad8cd22db3c3bf27"
+      },
+      {
+        "tick": 30208,
+        "commandsSha256": "f3209a4f302af0dfb01589a990ba31df3696bfea927aed2391d6de097e665b43",
+        "branchSignatureSha256": "734d0b6ad3c34a20f067fd042894d025ccf0986b3198b225ad8cd22db3c3bf27"
+      },
+      {
+        "tick": 30720,
+        "commandsSha256": "4354b9101a4077ea6e4a7daf4e437c570217aec317ebceccd2fc94ecf90ee540",
+        "branchSignatureSha256": "734d0b6ad3c34a20f067fd042894d025ccf0986b3198b225ad8cd22db3c3bf27"
+      },
+      {
+        "tick": 31232,
+        "commandsSha256": "163135b6c3e63d081d8701ec439efadfc47c2503f167ee7436dafe5fe57346ff",
+        "branchSignatureSha256": "734d0b6ad3c34a20f067fd042894d025ccf0986b3198b225ad8cd22db3c3bf27"
+      },
+      {
+        "tick": 31744,
+        "commandsSha256": "3e453480ed57dc412adec5df2cec467d6666322b562f8f5a0cbb0650d9c9bb0f",
+        "branchSignatureSha256": "fa0d249ed1c45252a43838eaa805080ef3d8546c911d9f7530928c508c43d073"
+      },
+      {
+        "tick": 32256,
+        "commandsSha256": "490fc91283f15e77c3678ff2d434ccb6f0d93c96fe54340d60f34a61b1b65a38",
+        "branchSignatureSha256": "fa0d249ed1c45252a43838eaa805080ef3d8546c911d9f7530928c508c43d073"
+      },
+      {
+        "tick": 32768,
+        "commandsSha256": "05806bdac344df275b37fdf8135613af4d4aaff808f1f2dc860e68499ef6c892",
+        "branchSignatureSha256": "9973d4c8cd88675e12d5b993a9530270daba8828e2fb598a0dadaf65ce45ccdf"
+      },
+      {
+        "tick": 33280,
+        "commandsSha256": "20b179b2181d9496c5e4756194dfd74b7de3983e27364707c0890f355c8af357",
+        "branchSignatureSha256": "1c735a1cd0632602362ac3a0607666f9a51ba890061e138f4ae4eda89b3d088b"
+      },
+      {
+        "tick": 33792,
+        "commandsSha256": "a0e3c863e2f68b87b22e533f1e2736dcb2a3573a631e465588cbb24a39f75b0c",
+        "branchSignatureSha256": "1c735a1cd0632602362ac3a0607666f9a51ba890061e138f4ae4eda89b3d088b"
+      },
+      {
+        "tick": 34304,
+        "commandsSha256": "9e791cbecf5ad526def76d9048ccdbfbf474d21ebcb2ba47eac2f42e3d453db6",
+        "branchSignatureSha256": "1c735a1cd0632602362ac3a0607666f9a51ba890061e138f4ae4eda89b3d088b"
+      },
+      {
+        "tick": 34816,
+        "commandsSha256": "9cee90ab670aafb30edf3ad0f2107868bc38cb601507400f3f6d15dbf8989fe6",
+        "branchSignatureSha256": "1c735a1cd0632602362ac3a0607666f9a51ba890061e138f4ae4eda89b3d088b"
+      },
+      {
+        "tick": 35328,
+        "commandsSha256": "e643cdd5412e3ba6d2248ce9b311b6bc23486685e522ad332574c0717dd9047a",
+        "branchSignatureSha256": "1c735a1cd0632602362ac3a0607666f9a51ba890061e138f4ae4eda89b3d088b"
+      },
+      {
+        "tick": 35840,
+        "commandsSha256": "721fc53e3ce97fa6dd191f60f9e1ce32daac0188a656b1b670ffec3bbbdc2560",
+        "branchSignatureSha256": "4d6a7d95beccc6cb7c306921f43e214d65ec53a885636f87db0f9fd45e6f4461"
+      },
+      {
+        "tick": 36352,
+        "commandsSha256": "f546290182d293b66ce4fb938e7b18e796aa4db2c73454c3c1427748584c2ff8",
+        "branchSignatureSha256": "4d6a7d95beccc6cb7c306921f43e214d65ec53a885636f87db0f9fd45e6f4461"
+      },
+      {
+        "tick": 36864,
+        "commandsSha256": "1d595dea91b8ae9961a50a497b60763271cf51e397f2c2b99f64bcf1493bccf4",
+        "branchSignatureSha256": "4d6a7d95beccc6cb7c306921f43e214d65ec53a885636f87db0f9fd45e6f4461"
+      },
+      {
+        "tick": 37376,
+        "commandsSha256": "3cf8e9e551e319a73f456709b392810c08f2818d4ca176c8dc5b3b2334dad4a7",
+        "branchSignatureSha256": "4d6a7d95beccc6cb7c306921f43e214d65ec53a885636f87db0f9fd45e6f4461"
+      },
+      {
+        "tick": 37888,
+        "commandsSha256": "6badb5f8593a9ef8b554d59e8cd9a6ee4939a0c5d6e53e22a573815ab520e3ff",
+        "branchSignatureSha256": "4d6a7d95beccc6cb7c306921f43e214d65ec53a885636f87db0f9fd45e6f4461"
+      },
+      {
+        "tick": 38400,
+        "commandsSha256": "66f2710bd1f25eb3f572b5e54d746334d6657f0efc70ee78b13a2f89524c6d88",
+        "branchSignatureSha256": "4d6a7d95beccc6cb7c306921f43e214d65ec53a885636f87db0f9fd45e6f4461"
+      },
+      {
+        "tick": 38912,
+        "commandsSha256": "815f8debbd6ef630b105c69548418a5c7019a91aeb7ab2140e130eb3067f8491",
+        "branchSignatureSha256": "215c128913645d9d0304c6ca699adccad2dae7944f56428ef426a091ac42eb3e"
+      },
+      {
+        "tick": 39424,
+        "commandsSha256": "efbe4df8dee51fd61c4ac0b950033c98641d44d360936ed95d58767fe0f79899",
+        "branchSignatureSha256": "bd67e977eaed951acc103223f28a8d104c15b31cef8912267602c2fa1e51abd6"
+      },
+      {
+        "tick": 39936,
+        "commandsSha256": "e7cffc3b86cb1714e1f9a1e470d5739f44182acb85994eaddf82fc33558c7b1d",
+        "branchSignatureSha256": "bd67e977eaed951acc103223f28a8d104c15b31cef8912267602c2fa1e51abd6"
+      },
+      {
+        "tick": 40448,
+        "commandsSha256": "a08ee1920e38643f5601b5e89fd6df398ea72b3c21edaabda888e9dae5747ff7",
+        "branchSignatureSha256": "bd67e977eaed951acc103223f28a8d104c15b31cef8912267602c2fa1e51abd6"
+      },
+      {
+        "tick": 40960,
+        "commandsSha256": "72cb02d25be75699962e4a20734109329a49e4b836615aa93f637fc6264329d9",
+        "branchSignatureSha256": "bd67e977eaed951acc103223f28a8d104c15b31cef8912267602c2fa1e51abd6"
+      },
+      {
+        "tick": 41472,
+        "commandsSha256": "2aaaf31ae70110de72370941c38876d7241eab03578e0e2b44fb5e87b1f037a6",
+        "branchSignatureSha256": "bd67e977eaed951acc103223f28a8d104c15b31cef8912267602c2fa1e51abd6"
+      },
+      {
+        "tick": 41984,
+        "commandsSha256": "92ffd73744d23da6cec967bda25c69b4c8230dfa19b2443fa3a75f93708e3f3b",
+        "branchSignatureSha256": "bd67e977eaed951acc103223f28a8d104c15b31cef8912267602c2fa1e51abd6"
+      },
+      {
+        "tick": 42496,
+        "commandsSha256": "495390ea654f41118d9d3227d2078b475cec45d7fec7ed82dcb4ad5bb711fa91",
+        "branchSignatureSha256": "4c72b10e11eceb1fda0d9b617edcc9575f71c5d3d327ef68160ee8f2ad5880de"
+      },
+      {
+        "tick": 43008,
+        "commandsSha256": "98992b91d5d1e0dbc031e76de892d0131eb5450561f1641ec74d9abda23bed8d",
+        "branchSignatureSha256": "4c72b10e11eceb1fda0d9b617edcc9575f71c5d3d327ef68160ee8f2ad5880de"
+      },
+      {
+        "tick": 43520,
+        "commandsSha256": "3af97546155b05f90d604f96854cea9d7b3bb1273c457dde6566d5ae6fd92a22",
+        "branchSignatureSha256": "1a11f7d52f8aac438d7d3cdca36e445c37e63345ae5a4de823bbd52e1fbd6fce"
+      },
+      {
+        "tick": 44032,
+        "commandsSha256": "d1ab3c3f2d37f8dc77ef7728f0bef6b9c26d0761e37af463a1290f051b5c7103",
+        "branchSignatureSha256": "1a11f7d52f8aac438d7d3cdca36e445c37e63345ae5a4de823bbd52e1fbd6fce"
+      },
+      {
+        "tick": 44544,
+        "commandsSha256": "5edc6c17a0def5fefdcd5a541475d8008bef281cdd7b510371dcf133d2ae630b",
+        "branchSignatureSha256": "8d8c2486d60be745ae9cb0d4e4b04c8c333ecb17787bf3f4e1743740eaf208bb"
+      },
+      {
+        "tick": 45056,
+        "commandsSha256": "9090f4febded021d04e4823fe9b2499c44b7d02b5be6b40aabf9712730de83cc",
+        "branchSignatureSha256": "6a941ce0ef96901d8100e71f7e5813ed180f13e902cebdf9bfe64f4ba453bb09"
+      },
+      {
+        "tick": 45568,
+        "commandsSha256": "61afb957a20128e19b01cc81ccbb814ad4905e7310b80f6a9da8d976bf0d654d",
+        "branchSignatureSha256": "6a941ce0ef96901d8100e71f7e5813ed180f13e902cebdf9bfe64f4ba453bb09"
+      },
+      {
+        "tick": 46080,
+        "commandsSha256": "75456d129dea4fb2004f5d7369774ed4bcc275a5f828d75866ba287bd5493387",
+        "branchSignatureSha256": "6a941ce0ef96901d8100e71f7e5813ed180f13e902cebdf9bfe64f4ba453bb09"
+      },
+      {
+        "tick": 46592,
+        "commandsSha256": "124006d02aeb6a9c52775421f0630c99f5dacffed24f8f90d3debfadc9fbaa56",
+        "branchSignatureSha256": "76cbc3720d23d669f277ef4fdd373d4ad51181d55990e3d6962daf26a851993f"
+      },
+      {
+        "tick": 47104,
+        "commandsSha256": "11604b94715d46a155988f6b8712e4b8bed73dc7e36ddf103326318cd7b2f5e0",
+        "branchSignatureSha256": "f959679e5973fa518cf3904810aa9b0b2dbc9035c9d28f798383ed0e1cff4c84"
+      },
+      {
+        "tick": 47616,
+        "commandsSha256": "376a73ebe4d67b3deb6ff5b1efa8c7b5ce1ff2a0e9b21b5eaa7da96ab1aad29a",
+        "branchSignatureSha256": "f959679e5973fa518cf3904810aa9b0b2dbc9035c9d28f798383ed0e1cff4c84"
+      },
+      {
+        "tick": 48128,
+        "commandsSha256": "af29ec547632b8c1e7f9491847fec1a4c027588628f0b53f137be5e26fd6fc69",
+        "branchSignatureSha256": "f959679e5973fa518cf3904810aa9b0b2dbc9035c9d28f798383ed0e1cff4c84"
+      },
+      {
+        "tick": 48640,
+        "commandsSha256": "c1ce536c9242fc30675beefba2fa544b66ff6932e4b6f6da892b66bda959fd95",
+        "branchSignatureSha256": "f959679e5973fa518cf3904810aa9b0b2dbc9035c9d28f798383ed0e1cff4c84"
+      },
+      {
+        "tick": 49152,
+        "commandsSha256": "f0822aefae2c3b375fe4f79f7d8713adfef0953c66856cf380f7c83bf102d644",
+        "branchSignatureSha256": "f959679e5973fa518cf3904810aa9b0b2dbc9035c9d28f798383ed0e1cff4c84"
+      },
+      {
+        "tick": 49664,
+        "commandsSha256": "77fc12ff80b5f678f395c3ca5eaba878c474b37ac71d1a2d774a9477ef043f55",
+        "branchSignatureSha256": "f959679e5973fa518cf3904810aa9b0b2dbc9035c9d28f798383ed0e1cff4c84"
+      },
+      {
+        "tick": 50176,
+        "commandsSha256": "fa6314234f68e1b53001feeced435d9f0bbcb38dbc241901b5f1108195766b1e",
+        "branchSignatureSha256": "f959679e5973fa518cf3904810aa9b0b2dbc9035c9d28f798383ed0e1cff4c84"
+      },
+      {
+        "tick": 50688,
+        "commandsSha256": "872e23078d23fad8015ea06cca838b24940bf45659146c64ad65484aa83e7927",
+        "branchSignatureSha256": "f959679e5973fa518cf3904810aa9b0b2dbc9035c9d28f798383ed0e1cff4c84"
+      }
+    ],
+    "meaning": "Commands and branch inputs at each actual nonterminal controller event; vectors/constraint normals can be reconstructed only where full state was retained"
+  },
+  "sampleSchedule": "Endpoints n=0..6400, base tick=8n, no interpolation; terminal has no controller event",
+  "baseTickSeconds": 0.00001953125
+}

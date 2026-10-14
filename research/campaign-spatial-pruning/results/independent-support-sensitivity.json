@@ -1,0 +1,1623 @@
+{
+  "utc": "2026-10-12T14:26:21.125Z",
+  "config": {
+    "scope": "Only sensitivity to declared finite-support/fade assumptions. All-pairs formula extension is exploratory and not a higher-fidelity or calibrated reference.",
+    "supports": {
+      "nominal": {},
+      "axial_extension": {
+        "axialFade": 4,
+        "axialCutoff": 5
+      },
+      "radial_extension": {
+        "radialFade": 4,
+        "radialCutoff": 5
+      },
+      "both_extensions": {
+        "axialFade": 4,
+        "axialCutoff": 5,
+        "radialFade": 4,
+        "radialCutoff": 5
+      }
+    },
+    "fixtures": [
+      {
+        "id": "far_axial_3m",
+        "states": [
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0.0662175,
+            0.0662175,
+            0.0662175,
+            0.0662175
+          ],
+          [
+            0,
+            0,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0.0662175,
+            0.0662175,
+            0.0662175,
+            0.0662175
+          ]
+        ]
+      },
+      {
+        "id": "far_radial_tail",
+        "states": [
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0.0662175,
+            0.0662175,
+            0.0662175,
+            0.0662175
+          ],
+          [
+            0.4590311592784573,
+            0,
+            2.3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0.0662175,
+            0.0662175,
+            0.0662175,
+            0.0662175
+          ]
+        ]
+      },
+      {
+        "id": "nominal_axial_fade",
+        "states": [
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0.0662175,
+            0.0662175,
+            0.0662175,
+            0.0662175
+          ],
+          [
+            0,
+            0,
+            3.4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0.0662175,
+            0.0662175,
+            0.0662175,
+            0.0662175
+          ]
+        ]
+      },
+      {
+        "id": "nominal_radial_fade",
+        "states": [
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0.0662175,
+            0.0662175,
+            0.0662175,
+            0.0662175
+          ],
+          [
+            0.36452474413289254,
+            0,
+            2.3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0.0662175,
+            0.0662175,
+            0.0662175,
+            0.0662175
+          ]
+        ]
+      },
+      {
+        "id": "many_far_axial_tails",
+        "states": [
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0.0662175,
+            0.0662175,
+            0.0662175,
+            0.0662175
+          ],
+          [
+            0.5,
+            0,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0.0662175,
+            0.0662175,
+            0.0662175,
+            0.0662175
+          ],
+          [
+            0.46193976625564337,
+            0.1913417161825449,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0.0662175,
+            0.0662175,
+            0.0662175,
+            0.0662175
+          ],
+          [
+            0.3535533905932738,
+            0.35355339059327373,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0.0662175,
+            0.0662175,
+            0.0662175,
+            0.0662175
+          ],
+          [
+            0.19134171618254492,
+            0.46193976625564337,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0.0662175,
+            0.0662175,
+            0.0662175,
+            0.0662175
+          ],
+          [
+            3.061616997868383e-17,
+            0.5,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0.0662175,
+            0.0662175,
+            0.0662175,
+            0.0662175
+          ],
+          [
+            -0.19134171618254486,
+            0.46193976625564337,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0.0662175,
+            0.0662175,
+            0.0662175,
+            0.0662175
+          ],
+          [
+            -0.35355339059327373,
+            0.3535533905932738,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0.0662175,
+            0.0662175,
+            0.0662175,
+            0.0662175
+          ],
+          [
+            -0.46193976625564337,
+            0.19134171618254495,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0.0662175,
+            0.0662175,
+            0.0662175,
+            0.0662175
+          ],
+          [
+            -0.5,
+            6.123233995736766e-17,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0.0662175,
+            0.0662175,
+            0.0662175,
+            0.0662175
+          ],
+          [
+            -0.4619397662556434,
+            -0.19134171618254484,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0.0662175,
+            0.0662175,
+            0.0662175,
+            0.0662175
+          ],
+          [
+            -0.35355339059327384,
+            -0.35355339059327373,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0.0662175,
+            0.0662175,
+            0.0662175,
+            0.0662175
+          ],
+          [
+            -0.19134171618254517,
+            -0.46193976625564326,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0.0662175,
+            0.0662175,
+            0.0662175,
+            0.0662175
+          ],
+          [
+            -9.184850993605148e-17,
+            -0.5,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0.0662175,
+            0.0662175,
+            0.0662175,
+            0.0662175
+          ],
+          [
+            0.191341716182545,
+            -0.4619397662556433,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0.0662175,
+            0.0662175,
+            0.0662175,
+            0.0662175
+          ],
+          [
+            0.3535533905932737,
+            -0.35355339059327384,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0.0662175,
+            0.0662175,
+            0.0662175,
+            0.0662175
+          ],
+          [
+            0.46193976625564326,
+            -0.1913417161825452,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0.0662175,
+            0.0662175,
+            0.0662175,
+            0.0662175
+          ]
+        ]
+      },
+      {
+        "id": "near_domain_must_still_fail",
+        "states": [
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0.0662175,
+            0.0662175,
+            0.0662175,
+            0.0662175
+          ],
+          [
+            0.16,
+            0,
+            1.1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0.0662175,
+            0.0662175,
+            0.0662175,
+            0.0662175
+          ]
+        ],
+        "expectedDomainFailure": true
+      }
+    ],
+    "invariant": "Same state arrays, all four receiver rotors, receiver law, source strength, near-field and tilt limits. Only named support/fade constants differ. All-pairs search covers expanded support.",
+    "sourceCommit": "c591ce2b195fa01b895d4ba881a44a4b92fdd703"
+  },
+  "records": [
+    {
+      "id": "far_axial_3m",
+      "outputs": {
+        "nominal": {
+          "ok": true,
+          "fields": {
+            "winds": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 0,
+            "contributions": 0,
+            "candidates": 2
+          },
+          "differenceFromNominal": {
+            "finiteAndShape": true,
+            "inflowMaxAbs": 0,
+            "inflowRMS": 0,
+            "forceMaxAbs": 0,
+            "momentXYMaxAbs": 0,
+            "forceMaxWeightFraction": 0,
+            "momentMaxWeightArmFraction": 0
+          }
+        },
+        "axial_extension": {
+          "ok": true,
+          "fields": {
+            "winds": [
+              [
+                0.9160485286568006,
+                0.9160485286568006,
+                0.9160485286568006,
+                0.9160485286568006
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 0.9160485286568006,
+            "contributions": 4,
+            "candidates": 2
+          },
+          "differenceFromNominal": {
+            "finiteAndShape": true,
+            "inflowMaxAbs": 0.9160485286568006,
+            "inflowRMS": 0.6477441265091831,
+            "forceMaxAbs": 0.02001410755539415,
+            "momentXYMaxAbs": 0,
+            "forceMaxWeightFraction": 0.07556200232338185,
+            "momentMaxWeightArmFraction": 0
+          }
+        },
+        "radial_extension": {
+          "ok": true,
+          "fields": {
+            "winds": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 0,
+            "contributions": 0,
+            "candidates": 2
+          },
+          "differenceFromNominal": {
+            "finiteAndShape": true,
+            "inflowMaxAbs": 0,
+            "inflowRMS": 0,
+            "forceMaxAbs": 0,
+            "momentXYMaxAbs": 0,
+            "forceMaxWeightFraction": 0,
+            "momentMaxWeightArmFraction": 0
+          }
+        },
+        "both_extensions": {
+          "ok": true,
+          "fields": {
+            "winds": [
+              [
+                0.9160485286568006,
+                0.9160485286568006,
+                0.9160485286568006,
+                0.9160485286568006
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 0.9160485286568006,
+            "contributions": 4,
+            "candidates": 2
+          },
+          "differenceFromNominal": {
+            "finiteAndShape": true,
+            "inflowMaxAbs": 0.9160485286568006,
+            "inflowRMS": 0.6477441265091831,
+            "forceMaxAbs": 0.02001410755539415,
+            "momentXYMaxAbs": 0,
+            "forceMaxWeightFraction": 0.07556200232338185,
+            "momentMaxWeightArmFraction": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "far_radial_tail",
+      "outputs": {
+        "nominal": {
+          "ok": true,
+          "fields": {
+            "winds": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 0,
+            "contributions": 0,
+            "candidates": 2
+          },
+          "differenceFromNominal": {
+            "finiteAndShape": true,
+            "inflowMaxAbs": 0,
+            "inflowRMS": 0,
+            "forceMaxAbs": 0,
+            "momentXYMaxAbs": 0,
+            "forceMaxWeightFraction": 0,
+            "momentMaxWeightArmFraction": 0
+          }
+        },
+        "axial_extension": {
+          "ok": true,
+          "fields": {
+            "winds": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 0,
+            "contributions": 0,
+            "candidates": 2
+          },
+          "differenceFromNominal": {
+            "finiteAndShape": true,
+            "inflowMaxAbs": 0,
+            "inflowRMS": 0,
+            "forceMaxAbs": 0,
+            "momentXYMaxAbs": 0,
+            "forceMaxWeightFraction": 0,
+            "momentMaxWeightArmFraction": 0
+          }
+        },
+        "radial_extension": {
+          "ok": true,
+          "fields": {
+            "winds": [
+              [
+                0.06679538795891271,
+                0.044659678985329965,
+                0.044659678985329965,
+                0.06679538795891271
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 0.06679538795891271,
+            "contributions": 4,
+            "candidates": 2
+          },
+          "differenceFromNominal": {
+            "finiteAndShape": true,
+            "inflowMaxAbs": 0.06679538795891271,
+            "inflowRMS": 0.040174963533444505,
+            "forceMaxAbs": 0.0012200491033677596,
+            "momentXYMaxAbs": 0.00000678458079242817,
+            "forceMaxWeightFraction": 0.00460621853500872,
+            "momentMaxWeightArmFraction": 0.0009148127642709051
+          }
+        },
+        "both_extensions": {
+          "ok": true,
+          "fields": {
+            "winds": [
+              [
+                0.06679538795891271,
+                0.044659678985329965,
+                0.044659678985329965,
+                0.06679538795891271
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 0.06679538795891271,
+            "contributions": 4,
+            "candidates": 2
+          },
+          "differenceFromNominal": {
+            "finiteAndShape": true,
+            "inflowMaxAbs": 0.06679538795891271,
+            "inflowRMS": 0.040174963533444505,
+            "forceMaxAbs": 0.0012200491033677596,
+            "momentXYMaxAbs": 0.00000678458079242817,
+            "forceMaxWeightFraction": 0.00460621853500872,
+            "momentMaxWeightArmFraction": 0.0009148127642709051
+          }
+        }
+      }
+    },
+    {
+      "id": "nominal_axial_fade",
+      "outputs": {
+        "nominal": {
+          "ok": true,
+          "fields": {
+            "winds": [
+              [
+                0.11428063785882224,
+                0.11428063785882224,
+                0.11428063785882224,
+                0.11428063785882224
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 0.11428063785882224,
+            "contributions": 4,
+            "candidates": 2
+          },
+          "differenceFromNominal": {
+            "finiteAndShape": true,
+            "inflowMaxAbs": 0,
+            "inflowRMS": 0,
+            "forceMaxAbs": 0,
+            "momentXYMaxAbs": 0,
+            "forceMaxWeightFraction": 0,
+            "momentMaxWeightArmFraction": 0
+          }
+        },
+        "axial_extension": {
+          "ok": true,
+          "fields": {
+            "winds": [
+              [
+                1.0988522871040578,
+                1.0988522871040578,
+                1.0988522871040578,
+                1.0988522871040578
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 1.0988522871040578,
+            "contributions": 4,
+            "candidates": 2
+          },
+          "differenceFromNominal": {
+            "finiteAndShape": true,
+            "inflowMaxAbs": 0.9845716492452355,
+            "inflowRMS": 0.696197289745329,
+            "forceMaxAbs": 0.021483492933741327,
+            "momentXYMaxAbs": 0,
+            "forceMaxWeightFraction": 0.08110957425809388,
+            "momentMaxWeightArmFraction": 0
+          }
+        },
+        "radial_extension": {
+          "ok": true,
+          "fields": {
+            "winds": [
+              [
+                0.11428063785882224,
+                0.11428063785882224,
+                0.11428063785882224,
+                0.11428063785882224
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 0.11428063785882224,
+            "contributions": 4,
+            "candidates": 2
+          },
+          "differenceFromNominal": {
+            "finiteAndShape": true,
+            "inflowMaxAbs": 0,
+            "inflowRMS": 0,
+            "forceMaxAbs": 0,
+            "momentXYMaxAbs": 0,
+            "forceMaxWeightFraction": 0,
+            "momentMaxWeightArmFraction": 0
+          }
+        },
+        "both_extensions": {
+          "ok": true,
+          "fields": {
+            "winds": [
+              [
+                1.0988522871040578,
+                1.0988522871040578,
+                1.0988522871040578,
+                1.0988522871040578
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 1.0988522871040578,
+            "contributions": 4,
+            "candidates": 2
+          },
+          "differenceFromNominal": {
+            "finiteAndShape": true,
+            "inflowMaxAbs": 0.9845716492452355,
+            "inflowRMS": 0.696197289745329,
+            "forceMaxAbs": 0.021483492933741327,
+            "momentXYMaxAbs": 0,
+            "forceMaxWeightFraction": 0.08110957425809388,
+            "momentMaxWeightArmFraction": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "nominal_radial_fade",
+      "outputs": {
+        "nominal": {
+          "ok": true,
+          "fields": {
+            "winds": [
+              [
+                0.07083262419955319,
+                0.001845250123574899,
+                0.001845250123574899,
+                0.07083262419955319
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 0.07083262419955319,
+            "contributions": 4,
+            "candidates": 2
+          },
+          "differenceFromNominal": {
+            "finiteAndShape": true,
+            "inflowMaxAbs": 0,
+            "inflowRMS": 0,
+            "forceMaxAbs": 0,
+            "momentXYMaxAbs": 0,
+            "forceMaxWeightFraction": 0,
+            "momentMaxWeightArmFraction": 0
+          }
+        },
+        "axial_extension": {
+          "ok": true,
+          "fields": {
+            "winds": [
+              [
+                0.07083262419955319,
+                0.001845250123574899,
+                0.001845250123574899,
+                0.07083262419955319
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 0.07083262419955319,
+            "contributions": 4,
+            "candidates": 2
+          },
+          "differenceFromNominal": {
+            "finiteAndShape": true,
+            "inflowMaxAbs": 0,
+            "inflowRMS": 0,
+            "forceMaxAbs": 0,
+            "momentXYMaxAbs": 0,
+            "forceMaxWeightFraction": 0,
+            "momentMaxWeightArmFraction": 0
+          }
+        },
+        "radial_extension": {
+          "ok": true,
+          "fields": {
+            "winds": [
+              [
+                0.14218552044495192,
+                0.08979716397943671,
+                0.08979716397943671,
+                0.14218552044495192
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 0.14218552044495192,
+            "contributions": 4,
+            "candidates": 2
+          },
+          "differenceFromNominal": {
+            "finiteAndShape": true,
+            "inflowMaxAbs": 0.08795191385586182,
+            "inflowRMS": 0.05662767643457476,
+            "forceMaxAbs": 0.001743771071133493,
+            "momentXYMaxAbs": 0.000005088969832296383,
+            "forceMaxWeightFraction": 0.006583497833403153,
+            "momentMaxWeightArmFraction": 0.0006861816082682587
+          }
+        },
+        "both_extensions": {
+          "ok": true,
+          "fields": {
+            "winds": [
+              [
+                0.14218552044495192,
+                0.08979716397943671,
+                0.08979716397943671,
+                0.14218552044495192
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 0.14218552044495192,
+            "contributions": 4,
+            "candidates": 2
+          },
+          "differenceFromNominal": {
+            "finiteAndShape": true,
+            "inflowMaxAbs": 0.08795191385586182,
+            "inflowRMS": 0.05662767643457476,
+            "forceMaxAbs": 0.001743771071133493,
+            "momentXYMaxAbs": 0.000005088969832296383,
+            "forceMaxWeightFraction": 0.006583497833403153,
+            "momentMaxWeightArmFraction": 0.0006861816082682587
+          }
+        }
+      }
+    },
+    {
+      "id": "many_far_axial_tails",
+      "outputs": {
+        "nominal": {
+          "ok": true,
+          "fields": {
+            "winds": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 0,
+            "contributions": 0,
+            "candidates": 272
+          },
+          "differenceFromNominal": {
+            "finiteAndShape": true,
+            "inflowMaxAbs": 0,
+            "inflowRMS": 0,
+            "forceMaxAbs": 0,
+            "momentXYMaxAbs": 0,
+            "forceMaxWeightFraction": 0,
+            "momentMaxWeightArmFraction": 0
+          }
+        },
+        "axial_extension": {
+          "ok": true,
+          "fields": {
+            "winds": [
+              [
+                2.459362054513695,
+                2.459362054513695,
+                2.459362054513695,
+                2.4593620545136954
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 2.4593620545136954,
+            "contributions": 64,
+            "candidates": 272
+          },
+          "differenceFromNominal": {
+            "finiteAndShape": true,
+            "inflowMaxAbs": 2.4593620545136954,
+            "inflowRMS": 0.596482913082119,
+            "forceMaxAbs": 0.052961303245614655,
+            "momentXYMaxAbs": 0,
+            "forceMaxWeightFraction": 0.1999520642036269,
+            "momentMaxWeightArmFraction": 0
+          }
+        },
+        "radial_extension": {
+          "ok": true,
+          "fields": {
+            "winds": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 0,
+            "contributions": 0,
+            "candidates": 272
+          },
+          "differenceFromNominal": {
+            "finiteAndShape": true,
+            "inflowMaxAbs": 0,
+            "inflowRMS": 0,
+            "forceMaxAbs": 0,
+            "momentXYMaxAbs": 0,
+            "forceMaxWeightFraction": 0,
+            "momentMaxWeightArmFraction": 0
+          }
+        },
+        "both_extensions": {
+          "ok": true,
+          "fields": {
+            "winds": [
+              [
+                2.460174163800707,
+                2.460174163800708,
+                2.4601741638007075,
+                2.460174163800708
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "maximumInflow": 2.460174163800708,
+            "contributions": 64,
+            "candidates": 272
+          },
+          "differenceFromNominal": {
+            "finiteAndShape": true,
+            "inflowMaxAbs": 2.460174163800708,
+            "inflowRMS": 0.5966798785156424,
+            "forceMaxAbs": 0.05297816956624349,
+            "momentXYMaxAbs": 0,
+            "forceMaxWeightFraction": 0.20001574193469812,
+            "momentMaxWeightArmFraction": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "near_domain_must_still_fail",
+      "outputs": {
+        "nominal": {
+          "ok": false,
+          "message": "near-field domain",
+          "detail": {
+            "receiver": 0,
+            "source": 1,
+            "downstream": 0.10000000000000009,
+            "radial": 0.13493702234746402
+          }
+        },
+        "axial_extension": {
+          "ok": false,
+          "message": "near-field domain",
+          "detail": {
+            "receiver": 0,
+            "source": 1,
+            "downstream": 0.10000000000000009,
+            "radial": 0.13493702234746402
+          }
+        },
+        "radial_extension": {
+          "ok": false,
+          "message": "near-field domain",
+          "detail": {
+            "receiver": 0,
+            "source": 1,
+            "downstream": 0.10000000000000009,
+            "radial": 0.13493702234746402
+          }
+        },
+        "both_extensions": {
+          "ok": false,
+          "message": "near-field domain",
+          "detail": {
+            "receiver": 0,
+            "source": 1,
+            "downstream": 0.10000000000000009,
+            "radial": 0.13493702234746402
+          }
+        }
+      }
+    }
+  ]
+}

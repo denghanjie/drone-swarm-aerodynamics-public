@@ -1,0 +1,633 @@
+{
+  "status": "reference-not-established",
+  "phase": "airflow-screen-failed / conditional-fixed-path",
+  "failure": null,
+  "freeze": {
+    "status": "FROZEN_AUTHORIZED",
+    "frozenAt": "2026-10-13T12:17:22.457Z",
+    "planSha256": "0f528635c0c0e12dad5870fa7ccbad509029da741294e75e18bb63823033f267",
+    "sourceManifestSha256": "a66ec4c48156176f638055bfb8dc61ad440fab3d3096b309ba57f9f707c893f5",
+    "sourceAggregateSha256": "dc73105f85b4f81c9a84899a117eefbb03c82b3c651a34fa9c73716f2c2c289b",
+    "exactEvaluatorSha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+    "runtime": {
+      "node": "v24.19.0",
+      "platform": "linux",
+      "arch": "x64"
+    },
+    "claim": "No compatibility or fresh Boids campaign cases observed before freeze; analytic unit checks are separately recorded."
+  },
+  "config": {
+    "status": "FROZEN_AUTHORIZED",
+    "count": 16,
+    "seeds": [
+      840131,
+      840137
+    ],
+    "duration": 1,
+    "physicsDt": 0.00015625,
+    "referenceAirDt": 0.000625,
+    "airCadences": [
+      0.01,
+      0.005,
+      0.0025,
+      0.00125,
+      0.000625
+    ],
+    "physicsRefinements": [
+      0.000625,
+      0.0003125,
+      0.00015625
+    ],
+    "commonRecordDt": 0.000625,
+    "controllerDt": 0.01,
+    "exactVariant": "lean",
+    "exactSourceSha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+    "maxCpuSeconds": 300,
+    "maxWallSeconds": 300,
+    "maxJobWallSeconds": 45,
+    "maxStorageBytes": 150000000,
+    "gates": {
+      "physics": {
+        "positionM": 0.0001,
+        "velocityMps": 0.0001,
+        "attitudeRad": 0.0001,
+        "angularVelocityRadps": 0.001
+      },
+      "airReference": {
+        "positionM": 0.001,
+        "velocityMps": 0.001,
+        "attitudeRad": 0.001,
+        "angularVelocityRadps": 0.01
+      },
+      "comparisonFloors": {
+        "positionM": 1e-8,
+        "velocityMps": 1e-8,
+        "attitudeRad": 1e-7,
+        "angularVelocityRadps": 1e-7
+      },
+      "airReferenceReduction": 0.6,
+      "normalizedPeakForce": 0.01,
+      "normalizedPeakTorque": 0.01,
+      "normalizedIntegral": 0.001,
+      "quadratureIntegralDifference": 0.0001,
+      "quadraturePeakDifference": 0.001
+    }
+  },
+  "runIds": [
+    "s4301-p16-a64",
+    "s840131-p4-a4",
+    "s840131-p2-a4",
+    "s840131-p1-a4",
+    "s840137-p4-a4",
+    "s840137-p2-a4",
+    "s840137-p1-a4",
+    "s840131-p1-a8",
+    "s840131-p1-a16",
+    "s840137-p1-a8",
+    "s840137-p1-a16"
+  ],
+  "gates": {
+    "physics": [
+      {
+        "seed": 840131,
+        "passed": true,
+        "rows": [
+          {
+            "key": "positionM",
+            "coarse": 2.5515334453398736e-11,
+            "fine": 1.5841460914216698e-12,
+            "limit": 0.0001,
+            "floor": 1e-8,
+            "magnitudePassed": true,
+            "reductionPassed": true
+          },
+          {
+            "key": "velocityMps",
+            "coarse": 9.743034802113194e-11,
+            "fine": 6.08756256312854e-12,
+            "limit": 0.0001,
+            "floor": 1e-8,
+            "magnitudePassed": true,
+            "reductionPassed": true
+          },
+          {
+            "key": "attitudeRad",
+            "coarse": 4.2146848510894035e-8,
+            "fine": 4.2146848510894035e-8,
+            "limit": 0.0001,
+            "floor": 1e-7,
+            "magnitudePassed": true,
+            "reductionPassed": true
+          },
+          {
+            "key": "angularVelocityRadps",
+            "coarse": 1.3522987275360154e-9,
+            "fine": 8.392639546209843e-11,
+            "limit": 0.001,
+            "floor": 1e-7,
+            "magnitudePassed": true,
+            "reductionPassed": true
+          }
+        ],
+        "reduction": 1,
+        "coarse": {
+          "a": "s840131-p4-a4",
+          "b": "s840131-p2-a4",
+          "records": 1601,
+          "maximum": {
+            "positionM": 2.5515334453398736e-11,
+            "velocityMps": 9.743034802113194e-11,
+            "attitudeRad": 4.2146848510894035e-8,
+            "angularVelocityRadps": 1.3522987275360154e-9,
+            "nominalMotorN": 1.0492225144265177e-11
+          },
+          "worst": {
+            "positionM": {
+              "record": 1600,
+              "tick": 6400,
+              "time": 1,
+              "drone": 10
+            },
+            "velocityMps": {
+              "record": 1476,
+              "tick": 5904,
+              "time": 0.9225,
+              "drone": 10
+            },
+            "angularVelocityRadps": {
+              "record": 202,
+              "tick": 808,
+              "time": 0.12625,
+              "drone": 10
+            },
+            "nominalMotorN": {
+              "record": 268,
+              "tick": 1072,
+              "time": 0.1675,
+              "drone": 10
+            },
+            "attitudeRad": {
+              "record": 5,
+              "tick": 20,
+              "time": 0.003125,
+              "drone": 11
+            }
+          }
+        },
+        "fine": {
+          "a": "s840131-p2-a4",
+          "b": "s840131-p1-a4",
+          "records": 1601,
+          "maximum": {
+            "positionM": 1.5841460914216698e-12,
+            "velocityMps": 6.08756256312854e-12,
+            "attitudeRad": 4.2146848510894035e-8,
+            "angularVelocityRadps": 8.392639546209843e-11,
+            "nominalMotorN": 6.50424158976648e-13
+          },
+          "worst": {
+            "velocityMps": {
+              "record": 1475,
+              "tick": 5900,
+              "time": 0.921875,
+              "drone": 10
+            },
+            "angularVelocityRadps": {
+              "record": 202,
+              "tick": 808,
+              "time": 0.12625,
+              "drone": 10
+            },
+            "nominalMotorN": {
+              "record": 268,
+              "tick": 1072,
+              "time": 0.1675,
+              "drone": 10
+            },
+            "positionM": {
+              "record": 1600,
+              "tick": 6400,
+              "time": 1,
+              "drone": 10
+            },
+            "attitudeRad": {
+              "record": 6,
+              "tick": 24,
+              "time": 0.00375,
+              "drone": 10
+            }
+          }
+        }
+      },
+      {
+        "seed": 840137,
+        "passed": true,
+        "rows": [
+          {
+            "key": "positionM",
+            "coarse": 3.7068906601055124e-11,
+            "fine": 2.2823410938862095e-12,
+            "limit": 0.0001,
+            "floor": 1e-8,
+            "magnitudePassed": true,
+            "reductionPassed": true
+          },
+          {
+            "key": "velocityMps",
+            "coarse": 1.3922027487477832e-10,
+            "fine": 8.580820053648187e-12,
+            "limit": 0.0001,
+            "floor": 1e-8,
+            "magnitudePassed": true,
+            "reductionPassed": true
+          },
+          {
+            "key": "attitudeRad",
+            "coarse": 4.2146848510894035e-8,
+            "fine": 4.2146848510894035e-8,
+            "limit": 0.0001,
+            "floor": 1e-7,
+            "magnitudePassed": true,
+            "reductionPassed": true
+          },
+          {
+            "key": "angularVelocityRadps",
+            "coarse": 1.900724526332627e-9,
+            "fine": 1.1908010898306438e-10,
+            "limit": 0.001,
+            "floor": 1e-7,
+            "magnitudePassed": true,
+            "reductionPassed": true
+          }
+        ],
+        "reduction": 1,
+        "coarse": {
+          "a": "s840137-p4-a4",
+          "b": "s840137-p2-a4",
+          "records": 1601,
+          "maximum": {
+            "positionM": 3.7068906601055124e-11,
+            "velocityMps": 1.3922027487477832e-10,
+            "attitudeRad": 4.2146848510894035e-8,
+            "angularVelocityRadps": 1.900724526332627e-9,
+            "nominalMotorN": 1.1904033314635853e-11
+          },
+          "worst": {
+            "positionM": {
+              "record": 1600,
+              "tick": 6400,
+              "time": 1,
+              "drone": 0
+            },
+            "velocityMps": {
+              "record": 1367,
+              "tick": 5468,
+              "time": 0.854375,
+              "drone": 0
+            },
+            "angularVelocityRadps": {
+              "record": 1274,
+              "tick": 5096,
+              "time": 0.79625,
+              "drone": 9
+            },
+            "nominalMotorN": {
+              "record": 1469,
+              "tick": 5876,
+              "time": 0.918125,
+              "drone": 9
+            },
+            "attitudeRad": {
+              "record": 7,
+              "tick": 28,
+              "time": 0.004375,
+              "drone": 14
+            }
+          }
+        },
+        "fine": {
+          "a": "s840137-p2-a4",
+          "b": "s840137-p1-a4",
+          "records": 1601,
+          "maximum": {
+            "positionM": 2.2823410938862095e-12,
+            "velocityMps": 8.580820053648187e-12,
+            "attitudeRad": 4.2146848510894035e-8,
+            "angularVelocityRadps": 1.1908010898306438e-10,
+            "nominalMotorN": 7.342182417602316e-13
+          },
+          "worst": {
+            "positionM": {
+              "record": 1600,
+              "tick": 6400,
+              "time": 1,
+              "drone": 0
+            },
+            "velocityMps": {
+              "record": 1366,
+              "tick": 5464,
+              "time": 0.85375,
+              "drone": 0
+            },
+            "angularVelocityRadps": {
+              "record": 1274,
+              "tick": 5096,
+              "time": 0.79625,
+              "drone": 9
+            },
+            "nominalMotorN": {
+              "record": 1469,
+              "tick": 5876,
+              "time": 0.918125,
+              "drone": 9
+            },
+            "attitudeRad": {
+              "record": 3,
+              "tick": 12,
+              "time": 0.001875,
+              "drone": 9
+            }
+          }
+        }
+      }
+    ],
+    "air": [
+      {
+        "seed": 840131,
+        "passed": false,
+        "rows": [
+          {
+            "key": "positionM",
+            "coarse": 0.0017716936309528607,
+            "fine": 0.0008890960535376159,
+            "limit": 0.001,
+            "floor": 1e-8,
+            "magnitudePassed": true,
+            "reductionPassed": true
+          },
+          {
+            "key": "velocityMps",
+            "coarse": 0.004499210505374142,
+            "fine": 0.0022467353081045407,
+            "limit": 0.001,
+            "floor": 1e-8,
+            "magnitudePassed": false,
+            "reductionPassed": true
+          },
+          {
+            "key": "attitudeRad",
+            "coarse": 0.004856482214448206,
+            "fine": 0.002438374249827623,
+            "limit": 0.001,
+            "floor": 1e-7,
+            "magnitudePassed": false,
+            "reductionPassed": true
+          },
+          {
+            "key": "angularVelocityRadps",
+            "coarse": 0.03560586958859385,
+            "fine": 0.017839376406433665,
+            "limit": 0.01,
+            "floor": 1e-7,
+            "magnitudePassed": false,
+            "reductionPassed": true
+          }
+        ],
+        "reduction": 0.6,
+        "coarse": {
+          "a": "s840131-p1-a16",
+          "b": "s840131-p1-a8",
+          "records": 1601,
+          "maximum": {
+            "positionM": 0.0017716936309528607,
+            "velocityMps": 0.004499210505374142,
+            "attitudeRad": 0.004856482214448206,
+            "angularVelocityRadps": 0.03560586958859385,
+            "nominalMotorN": 0.00017454758887905375
+          },
+          "worst": {
+            "positionM": {
+              "record": 1408,
+              "tick": 5632,
+              "time": 0.88,
+              "drone": 10
+            },
+            "velocityMps": {
+              "record": 1580,
+              "tick": 6320,
+              "time": 0.9875,
+              "drone": 10
+            },
+            "angularVelocityRadps": {
+              "record": 1500,
+              "tick": 6000,
+              "time": 0.9375,
+              "drone": 10
+            },
+            "attitudeRad": {
+              "record": 1066,
+              "tick": 4264,
+              "time": 0.66625,
+              "drone": 8
+            },
+            "nominalMotorN": {
+              "record": 1280,
+              "tick": 5120,
+              "time": 0.8,
+              "drone": 10
+            }
+          }
+        },
+        "fine": {
+          "a": "s840131-p1-a8",
+          "b": "s840131-p1-a4",
+          "records": 1601,
+          "maximum": {
+            "positionM": 0.0008890960535376159,
+            "velocityMps": 0.0022467353081045407,
+            "attitudeRad": 0.002438374249827623,
+            "angularVelocityRadps": 0.017839376406433665,
+            "nominalMotorN": 0.00008724649264746365
+          },
+          "worst": {
+            "positionM": {
+              "record": 1406,
+              "tick": 5624,
+              "time": 0.87875,
+              "drone": 10
+            },
+            "velocityMps": {
+              "record": 1578,
+              "tick": 6312,
+              "time": 0.9862500000000001,
+              "drone": 10
+            },
+            "angularVelocityRadps": {
+              "record": 1496,
+              "tick": 5984,
+              "time": 0.935,
+              "drone": 10
+            },
+            "attitudeRad": {
+              "record": 1064,
+              "tick": 4256,
+              "time": 0.665,
+              "drone": 8
+            },
+            "nominalMotorN": {
+              "record": 1280,
+              "tick": 5120,
+              "time": 0.8,
+              "drone": 10
+            }
+          }
+        }
+      },
+      {
+        "seed": 840137,
+        "passed": false,
+        "rows": [
+          {
+            "key": "positionM",
+            "coarse": 0.0009215757830824264,
+            "fine": 0.0004673618317149894,
+            "limit": 0.001,
+            "floor": 1e-8,
+            "magnitudePassed": true,
+            "reductionPassed": true
+          },
+          {
+            "key": "velocityMps",
+            "coarse": 0.0042433162721420585,
+            "fine": 0.002134535198854353,
+            "limit": 0.001,
+            "floor": 1e-8,
+            "magnitudePassed": false,
+            "reductionPassed": true
+          },
+          {
+            "key": "attitudeRad",
+            "coarse": 0.014323018333005855,
+            "fine": 0.007295006417197118,
+            "limit": 0.001,
+            "floor": 1e-7,
+            "magnitudePassed": false,
+            "reductionPassed": true
+          },
+          {
+            "key": "angularVelocityRadps",
+            "coarse": 0.1421149283650415,
+            "fine": 0.0723496068691585,
+            "limit": 0.01,
+            "floor": 1e-7,
+            "magnitudePassed": false,
+            "reductionPassed": true
+          }
+        ],
+        "reduction": 0.6,
+        "coarse": {
+          "a": "s840137-p1-a16",
+          "b": "s840137-p1-a8",
+          "records": 1601,
+          "maximum": {
+            "positionM": 0.0009215757830824264,
+            "velocityMps": 0.0042433162721420585,
+            "attitudeRad": 0.014323018333005855,
+            "angularVelocityRadps": 0.1421149283650415,
+            "nominalMotorN": 0.0009556647862335177
+          },
+          "worst": {
+            "positionM": {
+              "record": 1600,
+              "tick": 6400,
+              "time": 1,
+              "drone": 0
+            },
+            "velocityMps": {
+              "record": 1403,
+              "tick": 5612,
+              "time": 0.8768750000000001,
+              "drone": 0
+            },
+            "angularVelocityRadps": {
+              "record": 1316,
+              "tick": 5264,
+              "time": 0.8225,
+              "drone": 9
+            },
+            "attitudeRad": {
+              "record": 1463,
+              "tick": 5852,
+              "time": 0.914375,
+              "drone": 9
+            },
+            "nominalMotorN": {
+              "record": 1232,
+              "tick": 4928,
+              "time": 0.77,
+              "drone": 9
+            }
+          }
+        },
+        "fine": {
+          "a": "s840137-p1-a8",
+          "b": "s840137-p1-a4",
+          "records": 1601,
+          "maximum": {
+            "positionM": 0.0004673618317149894,
+            "velocityMps": 0.002134535198854353,
+            "attitudeRad": 0.007295006417197118,
+            "angularVelocityRadps": 0.0723496068691585,
+            "nominalMotorN": 0.00048357689903770484
+          },
+          "worst": {
+            "positionM": {
+              "record": 1600,
+              "tick": 6400,
+              "time": 1,
+              "drone": 0
+            },
+            "velocityMps": {
+              "record": 1400,
+              "tick": 5600,
+              "time": 0.875,
+              "drone": 0
+            },
+            "angularVelocityRadps": {
+              "record": 1314,
+              "tick": 5256,
+              "time": 0.82125,
+              "drone": 9
+            },
+            "attitudeRad": {
+              "record": 1461,
+              "tick": 5844,
+              "time": 0.913125,
+              "drone": 9
+            },
+            "nominalMotorN": {
+              "record": 1232,
+              "tick": 4928,
+              "time": 0.77,
+              "drone": 9
+            }
+          }
+        }
+      }
+    ]
+  },
+  "replayRunIds": [
+    "s840131-p1-a4",
+    "s840137-p1-a4"
+  ],
+  "coupledComparisons": [],
+  "resources": {
+    "elapsedWallMs": 50486.659783999996,
+    "cpuMs": 53786.028,
+    "rawUncompressedBytes": 70122112,
+    "allCampaignLogicalUncompressedBytes": 80210613,
+    "retainedDiskBytes": 71051530,
+    "maxRssKiB": 469044
+  },
+  "claim": "Numerical screens conditional on unchanged physically unvalidated model. No physical validation, full mission, GPU or hardware-throughput claim."
+}

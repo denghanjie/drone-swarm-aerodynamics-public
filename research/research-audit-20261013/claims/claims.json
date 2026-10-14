@@ -1,0 +1,1468 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-10-13",
+  "title": "Exact-equation campaign claim\u2013evidence ledger",
+  "repository": "https://github.com/denghanjie/drone-swarm-aerodynamics-public",
+  "source_checkpoint": "c024dfc27b9e6b7cd5b39132164d1339cb95b12f",
+  "first_published_checkpoint": "d83a2a36d166eb2b3e83aa2cb673bd4ba1b2b4b3",
+  "evidence_link_policy": "Campaign links use the named branch; exact audited bytes are content-hashed in audit-results.json. The first checkpoint is provenance only and is not asserted to contain every later campaign record. Pin campaign links to the complete publication commit when available.",
+  "statuses": {
+    "hypothesis": "A proposed research goal or causal claim awaiting a discriminating test.",
+    "provisional_support": "Observed support with meaningful unresolved generalization or proof requirements.",
+    "confirmed_within_scope": "The precisely bounded saved-record claim was independently checked; this does not imply physical validation.",
+    "contradicted": "A direct checked record falsifies the stated claim.",
+    "unresolved": "Evidence does not decide the claim, or explicitly identified historical evidence was not audited."
+  },
+  "audit_methods": {
+    "simulation_rerun": false,
+    "benchmark_rerun": false,
+    "primary_timing_records": 30,
+    "primary_timing_summaries_recalculated": 720,
+    "independent_field_records": 14,
+    "independent_field_summaries_recalculated": 56,
+    "primary_correctness_cases": 151,
+    "primary_variant_comparisons": 604,
+    "independent_correctness_fixtures": 85,
+    "boids_records": 14,
+    "matched_saved_replay_pairs": 8,
+    "historical_raw_campaigns_reaudited": false,
+    "reproduction_script": "audit-records.cjs",
+    "recalculated_evidence": "audit-results.json"
+  },
+  "original_eight_step_framework": [
+    {
+      "step": 1,
+      "original_name": "Define the experiment",
+      "audited_contribution": "Current source/configuration and bounded protocol are identified.",
+      "unmet_gate": "Independent physical prediction contract and vehicle-matched measurements remain needed."
+    },
+    {
+      "step": 2,
+      "original_name": "Build one credible drone",
+      "audited_contribution": "Mechanics byte identity and numerical software comparisons checked.",
+      "unmet_gate": "Measured hover, attitude, motor and flight agreement remains unestablished."
+    },
+    {
+      "step": 3,
+      "original_name": "Model two-drone interaction",
+      "audited_contribution": "One-law implementation checks and original counterexample retained.",
+      "unmet_gate": "Independent source-flow and receiver-force validation remain missing."
+    },
+    {
+      "step": 4,
+      "original_name": "Model overlapping wakes",
+      "audited_contribution": "Overlap implementation equivalence checked.",
+      "unmet_gate": "Multi-wake superposition, cutoffs and airflow-cadence accuracy remain unvalidated."
+    },
+    {
+      "step": 5,
+      "original_name": "Test a real local flock",
+      "audited_contribution": "Short genuine local 3D Boids records and saved equivalence verified.",
+      "unmet_gate": "Full-mission behavior, numerical robustness and real-flight validity are not established by these short records."
+    },
+    {
+      "step": 6,
+      "original_name": "Accelerate validated calculations",
+      "audited_contribution": "CPU acceleration of an unvalidated model is measured, with corrected incremental counts.",
+      "unmet_gate": "Physical validation and present-pipeline GPU equivalence/throughput remain open."
+    },
+    {
+      "step": 7,
+      "original_name": "Scale the actual flock",
+      "audited_contribution": "Prescribed-state checks/timing reach N=200; recorded current Boids reaches N=50.",
+      "unmet_gate": "N=500 exact-campaign promotion stopped; 5,000 coupled browser feasibility remains a target."
+    },
+    {
+      "step": 8,
+      "original_name": "Evaluate the contribution",
+      "audited_contribution": "A reproducible implementation-efficiency contribution with explicit negative evidence is supported.",
+      "unmet_gate": "A physical accuracy\u2013cost frontier, external novelty comparison and safe-flight claim are not established."
+    }
+  ],
+  "claims": [
+    {
+      "id": "E01",
+      "claim": "The audited evaluator is the frozen source 6111d7a7, with unchanged upstream mechanics and wake sources.",
+      "status": "confirmed_within_scope",
+      "audited": true,
+      "original_framework_steps": [
+        1,
+        2,
+        6
+      ],
+      "scope": "Byte identity of the 11 available upstream files and the candidate; all checked record source identities agree.",
+      "evidence": [
+        {
+          "repository_path": "research/campaign-exact-efficiency/provenance.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/provenance.json",
+          "sha256": "498e3fd7b37e9c652408f1493a428e505465d1d24abb6096c0e9b4cd615cae84",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/src/exact-aero.cjs",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/src/exact-aero.cjs",
+          "sha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/configs/campaign.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/configs/campaign.json",
+          "sha256": "ab527ffa7f184e700892a01d253b7c69d9f05b63f3ff5622ca468a0f647a5274",
+          "role": "saved independent record or source"
+        }
+      ],
+      "experiment_ids": [
+        "provenance",
+        "campaign"
+      ],
+      "code_and_configuration": {
+        "candidate_sha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+        "source_checkpoint": "c024dfc27b9e6b7cd5b39132164d1339cb95b12f",
+        "physics_baseline": "c591ce2b195fa01b895d4ba881a44a4b92fdd703",
+        "configuration_repository_path": "research/campaign-exact-efficiency/configs/campaign.json",
+        "configuration_sha256": "ab527ffa7f184e700892a01d253b7c69d9f05b63f3ff5622ca468a0f647a5274"
+      },
+      "analysis_uncertainty": "Content hashes establish identity, not correctness or independently timestamped preregistration.",
+      "counterevidence": "No mismatching source identity was found in the audited files.",
+      "next_falsification_test": "Recompute source and configuration hashes on every new run; reject mixed identities."
+    },
+    {
+      "id": "E02",
+      "claim": "All 151 primary prescribed-state cases report zero inflow, force and moment difference versus legacy.",
+      "status": "confirmed_within_scope",
+      "audited": true,
+      "original_framework_steps": [
+        2,
+        3,
+        4,
+        6
+      ],
+      "scope": "7 tiny + 72 development + 72 held-out cases, 604 variant comparisons, N=16/50/100/200 in the matrix.",
+      "evidence": [
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/checks-tiny.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/checks-tiny.json",
+          "sha256": "6590c9b5c4219f948734b8f330c67334e3ad4d8815c047c5a17baf9aa9cae38f",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/checks-development.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/checks-development.json",
+          "sha256": "e1b49950e479a37620d17b7d7561d02ee1a696e4e025034151d4a657d5a3d994",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/checks-heldout.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/checks-heldout.json",
+          "sha256": "5989861db4d3e82f971dfbfda71241c99e4919f733edb94a1fac0e48f555644b",
+          "role": "saved primary record"
+        }
+      ],
+      "experiment_ids": [
+        "checks-tiny",
+        "checks-development",
+        "checks-heldout"
+      ],
+      "code_and_configuration": {
+        "candidate_sha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+        "source_checkpoint": "c024dfc27b9e6b7cd5b39132164d1339cb95b12f",
+        "physics_baseline": "c591ce2b195fa01b895d4ba881a44a4b92fdd703",
+        "configuration_repository_path": "research/campaign-exact-efficiency/configs/campaign.json",
+        "configuration_sha256": "ab527ffa7f184e700892a01d253b7c69d9f05b63f3ff5622ca468a0f647a5274"
+      },
+      "analysis_uncertainty": "The audit recomputed maxima and counts from saved records; it did not rerun the model. This is finite sample software equivalence, not physical measurement.",
+      "counterevidence": "An earlier support/reuse version had a positive-contribution false cull at extreme coordinates; E04 retains that failure.",
+      "next_falsification_test": "Adversarial accepted-domain cases against an independently implemented all-pairs oracle, especially support boundaries and coordinate extremes."
+    },
+    {
+      "id": "E03",
+      "claim": "The corrected implementation preserves positive contributions throughout its accepted numerical domain.",
+      "status": "provisional_support",
+      "audited": true,
+      "original_framework_steps": [
+        3,
+        4,
+        6
+      ],
+      "scope": "Finite 17-entry states, quaternion norm tolerance 1e-10, coordinate components within \u00b11e6 m, plus tilt/near-wake restrictions.",
+      "evidence": [
+        {
+          "repository_path": "research/campaign-exact-efficiency/src/exact-aero.cjs",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/src/exact-aero.cjs",
+          "sha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-checks.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/robustness/raw/independent-checks.json",
+          "sha256": "d5c7c737ee3be5e752f79e8c8e665adf02e6c919b731951273cc14b7ce0c028c",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/review/large-translation-v1.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/review/large-translation-v1.json",
+          "sha256": "0301c096b667b6ecde47b53eb38867f0313c6d6bf7d3642cbd0f55ebb6904212",
+          "role": "saved independent record or source"
+        }
+      ],
+      "experiment_ids": [
+        "independent-checks",
+        "large-translation-v1"
+      ],
+      "code_and_configuration": {
+        "candidate_sha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+        "source_checkpoint": "c024dfc27b9e6b7cd5b39132164d1339cb95b12f",
+        "physics_baseline": "c591ce2b195fa01b895d4ba881a44a4b92fdd703",
+        "configuration_repository_path": "research/campaign-exact-efficiency/configs/campaign.json",
+        "configuration_sha256": "ab527ffa7f184e700892a01d253b7c69d9f05b63f3ff5622ca468a0f647a5274"
+      },
+      "analysis_uncertainty": "85 fixtures include 78 valid cases and 7 matching physical-model domain rejections; 45 metamorphic, 33 ownership and 39 API assertions pass. Finite testing is not a universal floating-point proof.",
+      "counterevidence": "The v0 envelope failed at a 3e14 m translation; the correction narrows the API and adds roundoff margin rather than supporting all finite coordinates.",
+      "next_falsification_test": "Prove a conservative floating-point envelope or search accepted-domain boundary combinations with a high-precision oracle, retaining every first counterexample."
+    },
+    {
+      "id": "E04",
+      "claim": "The original v0 support/reuse envelope could never discard a positive legacy contribution.",
+      "status": "contradicted",
+      "audited": true,
+      "original_framework_steps": [
+        3,
+        4,
+        6
+      ],
+      "scope": "The claim applies to the retained pre-correction v0, not the corrected candidate.",
+      "evidence": [
+        {
+          "repository_path": "research/campaign-exact-efficiency/review/large-translation-v0.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/review/large-translation-v0.json",
+          "sha256": "d8f7e38beb69dfe772bfbc47aa4067c034f4dbe04164ef7c334e9e852c4d906e",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/review/large-translation-v1.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/review/large-translation-v1.json",
+          "sha256": "0301c096b667b6ecde47b53eb38867f0313c6d6bf7d3642cbd0f55ebb6904212",
+          "role": "saved independent record or source"
+        }
+      ],
+      "experiment_ids": [
+        "large-translation-v0",
+        "large-translation-v1"
+      ],
+      "code_and_configuration": {
+        "candidate_sha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+        "source_checkpoint": "c024dfc27b9e6b7cd5b39132164d1339cb95b12f",
+        "physics_baseline": "c591ce2b195fa01b895d4ba881a44a4b92fdd703",
+        "configuration_repository_path": "research/campaign-exact-efficiency/configs/campaign.json",
+        "configuration_sha256": "ab527ffa7f184e700892a01d253b7c69d9f05b63f3ff5622ca468a0f647a5274",
+        "tested_source_sha256": "ff34626a3ba63a50195c17ecd63df2ef7aa50ef2bfa438b7519ca64f7b2ced6b"
+      },
+      "analysis_uncertainty": "A direct saved two-state counterexample is sufficient to refute this universal statement.",
+      "counterevidence": "At a 3e14 m translation legacy/lean returned 0.001587065203100887 m/s on one rotor; v0 support/reuse returned zero. The corrected API rejects this input.",
+      "next_falsification_test": "Keep the exact counterexample as a permanent regression and test representable accepted-coordinate boundary neighbors.",
+      "superseded_by": "E03"
+    },
+    {
+      "id": "E05",
+      "claim": "Lean met the primary \u226510% field-time plus upper-bootstrap-ratio<1 screen in 8/12 held-out N=100/200 cases.",
+      "status": "confirmed_within_scope",
+      "audited": true,
+      "original_framework_steps": [
+        6,
+        7
+      ],
+      "scope": "Two held-out seeds \u00d7 N=100/200 \u00d7 three prescribed-state families; nine paired repeats per case.",
+      "evidence": [
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/timing/heldout-4391-100-dense.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/timing/heldout-4391-100-dense.json",
+          "sha256": "7b813cb0531a15d0335ab5f412bd1878ae3b8fb81567e22b0a26e1ac1ed616ce",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/timing/heldout-4391-100-sparse.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/timing/heldout-4391-100-sparse.json",
+          "sha256": "b754eea7a04897baa8b65ac3f2a0e5eadb149f1fcb7c32666589adb21cf3e62e",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/timing/heldout-4391-100-tilted.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/timing/heldout-4391-100-tilted.json",
+          "sha256": "a102b4e18e52de29e4ed9d0be7b9525b03722e873115be893c82328b3c7b735e",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/timing/heldout-4391-200-dense.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/timing/heldout-4391-200-dense.json",
+          "sha256": "697fb480db50c8117c8e95f6fa19b366c9b2d50ef5eb201a729a7b79490f7a58",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/timing/heldout-4391-200-sparse.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/timing/heldout-4391-200-sparse.json",
+          "sha256": "e439626e06f7164fbd6787b4b52e57c3fc267807309607d0909e5da750956c74",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/timing/heldout-4391-200-tilted.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/timing/heldout-4391-200-tilted.json",
+          "sha256": "da1e5638a496f90f9fe4ccfb3b1b98d7a1d2a72dee72292f8864c871948ad1fd",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/timing/heldout-4392-100-dense.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/timing/heldout-4392-100-dense.json",
+          "sha256": "011218acb50a5e262cfe50fc40ddc3733c8b1ce27b575e3a67c8276fe4e62b26",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/timing/heldout-4392-100-sparse.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/timing/heldout-4392-100-sparse.json",
+          "sha256": "68533827563eb8e5f300206cb018786611414bcad7f614e101e2b6fc0dd50de0",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/timing/heldout-4392-100-tilted.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/timing/heldout-4392-100-tilted.json",
+          "sha256": "432074a35077db5da264e36992f024d592a6244dfa89151fed6a03af8247fcd3",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/timing/heldout-4392-200-dense.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/timing/heldout-4392-200-dense.json",
+          "sha256": "b8dfcd67969441f8247e2d9f1a2bbfde8ae59dbf2e4c2e60e0285e964529ab6a",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/timing/heldout-4392-200-sparse.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/timing/heldout-4392-200-sparse.json",
+          "sha256": "20dc942711c346696fd32e7cda1f06bef15272e6da48efa2935d2626cfce530e",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/timing/heldout-4392-200-tilted.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/timing/heldout-4392-200-tilted.json",
+          "sha256": "c100de5ffd5f7836c4b1509e72e5b4ea367420396bbdab3606384d2cbb6c8919",
+          "role": "saved primary record"
+        }
+      ],
+      "experiment_ids": [
+        "heldout-4391-100-dense",
+        "heldout-4391-100-sparse",
+        "heldout-4391-100-tilted",
+        "heldout-4391-200-dense",
+        "heldout-4391-200-sparse",
+        "heldout-4391-200-tilted",
+        "heldout-4392-100-dense",
+        "heldout-4392-100-sparse",
+        "heldout-4392-100-tilted",
+        "heldout-4392-200-dense",
+        "heldout-4392-200-sparse",
+        "heldout-4392-200-tilted"
+      ],
+      "code_and_configuration": {
+        "candidate_sha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+        "source_checkpoint": "c024dfc27b9e6b7cd5b39132164d1339cb95b12f",
+        "physics_baseline": "c591ce2b195fa01b895d4ba881a44a4b92fdd703",
+        "configuration_repository_path": "research/campaign-exact-efficiency/configs/campaign.json",
+        "configuration_sha256": "ab527ffa7f184e700892a01d253b7c69d9f05b63f3ff5622ca468a0f647a5274"
+      },
+      "analysis_uncertainty": "The 95% paired bootstrap intervals describe these recorded timings. They do not provide a multi-case family-wise confidence guarantee or a cross-machine estimate. Raw timings include small batches and outliers.",
+      "counterevidence": "At N=200 only sparse passes on both seeds; dense passes neither, tilted one. Four of the twelve cases fail the specified screen.",
+      "next_falsification_test": "Use fresh independent seeds, longer batches and fixed balanced order, preserving previous-zero as the primary comparator; do not relabel a legacy comparison as incremental gain."
+    },
+    {
+      "id": "E06",
+      "claim": "Four of twelve independent nonzero field cases satisfy the same \u226510% plus upper-CI<1 screen versus previous-zero.",
+      "status": "contradicted",
+      "audited": true,
+      "original_framework_steps": [
+        6,
+        8
+      ],
+      "scope": "Fresh seeds 628791/628792 \u00d7 N=100/200 \u00d7 sparse/dense/tilted; nine paired repeats.",
+      "evidence": [
+        {
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-field-628791-100-dense-lean.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/robustness/raw/independent-field-628791-100-dense-lean.json",
+          "sha256": "38a5d85428278e7a7f44c01398c45f2ddc28010c1d6a8c93fd45f4561ea693e2",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-field-628791-100-sparse-lean.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/robustness/raw/independent-field-628791-100-sparse-lean.json",
+          "sha256": "2d5a65c858aa457aa3cb4f4648187b47cc982c01f73c4b0e210d49e7da4d3a6d",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-field-628791-100-tilted-lean.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/robustness/raw/independent-field-628791-100-tilted-lean.json",
+          "sha256": "33d459295dcf78ecbd60ef1711e7094c2f6cd8ebf1dddba64b8f62475c95a24a",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-field-628791-200-dense-lean.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/robustness/raw/independent-field-628791-200-dense-lean.json",
+          "sha256": "720154f2c517f8a8d3ae43e1591b66d1c7c48b745a1f6054a153ad1300c611f9",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-field-628791-200-sparse-lean.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/robustness/raw/independent-field-628791-200-sparse-lean.json",
+          "sha256": "4ba9f46ecdd0c4b236762884608edf97dfd185d76aa5fcea234d5d4d63cf2f19",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-field-628791-200-tilted-lean.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/robustness/raw/independent-field-628791-200-tilted-lean.json",
+          "sha256": "4bdd7ac7bad3580946aee8d45ffc0c90b935dda35c21deaa5a37ab5295a16897",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-field-628792-100-dense-lean.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/robustness/raw/independent-field-628792-100-dense-lean.json",
+          "sha256": "720f5e90ac83cd15f6645a53ce93f526f84c54e3faf18a2a0091d58e6dc888e7",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-field-628792-100-sparse-lean.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/robustness/raw/independent-field-628792-100-sparse-lean.json",
+          "sha256": "28748b01b5f92c4b458ef09360a80281b4f7dd0c1c668ce07ea6916896eb1438",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-field-628792-100-tilted-lean.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/robustness/raw/independent-field-628792-100-tilted-lean.json",
+          "sha256": "ca6432df145b540d4e1578f8829a09e49cb4a957cabaec1f34d5934ac9919ba3",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-field-628792-200-dense-lean.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/robustness/raw/independent-field-628792-200-dense-lean.json",
+          "sha256": "fbeb167f3419e8fcd5f0672d8cf9f5c6cbbf0f89fc29e449978c8567374cdf63",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-field-628792-200-sparse-lean.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/robustness/raw/independent-field-628792-200-sparse-lean.json",
+          "sha256": "7c324f32793f8223a5c246654125e585df2602051924a87578f6fdc1be204ec8",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-field-628792-200-tilted-lean.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/robustness/raw/independent-field-628792-200-tilted-lean.json",
+          "sha256": "c91d01b8f422c6225240a470f7303f16df6574425153942e0d376a3ec7083ab7",
+          "role": "saved independent record or source"
+        }
+      ],
+      "experiment_ids": [
+        "independent-field-628791-100-dense-lean",
+        "independent-field-628791-100-sparse-lean",
+        "independent-field-628791-100-tilted-lean",
+        "independent-field-628791-200-dense-lean",
+        "independent-field-628791-200-sparse-lean",
+        "independent-field-628791-200-tilted-lean",
+        "independent-field-628792-100-dense-lean",
+        "independent-field-628792-100-sparse-lean",
+        "independent-field-628792-100-tilted-lean",
+        "independent-field-628792-200-dense-lean",
+        "independent-field-628792-200-sparse-lean",
+        "independent-field-628792-200-tilted-lean"
+      ],
+      "code_and_configuration": {
+        "candidate_sha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+        "source_checkpoint": "c024dfc27b9e6b7cd5b39132164d1339cb95b12f",
+        "physics_baseline": "c591ce2b195fa01b895d4ba881a44a4b92fdd703",
+        "configuration_repository_path": "research/campaign-exact-efficiency/configs/campaign.json",
+        "configuration_sha256": "ab527ffa7f184e700892a01d253b7c69d9f05b63f3ff5622ca468a0f647a5274"
+      },
+      "analysis_uncertainty": "Four medians are \u22640.9, but only three also have bootstrap upper ratio below 1. Every saved per-case qualified flag and interval matches independent recalculation. This is a prose counting error.",
+      "counterevidence": "The 628791-100-tilted ratio is 0.872160303446306 with CI [0.7046978668544749, 1.0105362127091932], so it fails. Passing cases: 628791-100-sparse, 628791-200-tilted, 628792-100-tilted.",
+      "next_falsification_test": "Generate prose counts from the Boolean conjunction of the two registered criteria and test those counts against the raw records.",
+      "corrected_claim": "Three of twelve independent nonzero cases pass both criteria; four meet the median-only criterion."
+    },
+    {
+      "id": "E07",
+      "claim": "Lean has a substantial cumulative CPU field-time advantage over the allocation-heavy legacy evaluator in the observed workloads.",
+      "status": "provisional_support",
+      "audited": true,
+      "original_framework_steps": [
+        6
+      ],
+      "scope": "Primary held-out N=100/200 legacy/lean speedups 1.607\u20132.068\u00d7; all 12 fresh nonzero cases pass their independent legacy-comparator screen.",
+      "evidence": [
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/timing/heldout-4391-100-dense.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/timing/heldout-4391-100-dense.json",
+          "sha256": "7b813cb0531a15d0335ab5f412bd1878ae3b8fb81567e22b0a26e1ac1ed616ce",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/timing/heldout-4391-100-sparse.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/timing/heldout-4391-100-sparse.json",
+          "sha256": "b754eea7a04897baa8b65ac3f2a0e5eadb149f1fcb7c32666589adb21cf3e62e",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/timing/heldout-4391-100-tilted.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/timing/heldout-4391-100-tilted.json",
+          "sha256": "a102b4e18e52de29e4ed9d0be7b9525b03722e873115be893c82328b3c7b735e",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/timing/heldout-4391-200-dense.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/timing/heldout-4391-200-dense.json",
+          "sha256": "697fb480db50c8117c8e95f6fa19b366c9b2d50ef5eb201a729a7b79490f7a58",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/timing/heldout-4391-200-sparse.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/timing/heldout-4391-200-sparse.json",
+          "sha256": "e439626e06f7164fbd6787b4b52e57c3fc267807309607d0909e5da750956c74",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/timing/heldout-4391-200-tilted.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/timing/heldout-4391-200-tilted.json",
+          "sha256": "da1e5638a496f90f9fe4ccfb3b1b98d7a1d2a72dee72292f8864c871948ad1fd",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/timing/heldout-4392-100-dense.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/timing/heldout-4392-100-dense.json",
+          "sha256": "011218acb50a5e262cfe50fc40ddc3733c8b1ce27b575e3a67c8276fe4e62b26",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/timing/heldout-4392-100-sparse.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/timing/heldout-4392-100-sparse.json",
+          "sha256": "68533827563eb8e5f300206cb018786611414bcad7f614e101e2b6fc0dd50de0",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/timing/heldout-4392-100-tilted.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/timing/heldout-4392-100-tilted.json",
+          "sha256": "432074a35077db5da264e36992f024d592a6244dfa89151fed6a03af8247fcd3",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/timing/heldout-4392-200-dense.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/timing/heldout-4392-200-dense.json",
+          "sha256": "b8dfcd67969441f8247e2d9f1a2bbfde8ae59dbf2e4c2e60e0285e964529ab6a",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/timing/heldout-4392-200-sparse.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/timing/heldout-4392-200-sparse.json",
+          "sha256": "20dc942711c346696fd32e7cda1f06bef15272e6da48efa2935d2626cfce530e",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/timing/heldout-4392-200-tilted.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/timing/heldout-4392-200-tilted.json",
+          "sha256": "c100de5ffd5f7836c4b1509e72e5b4ea367420396bbdab3606384d2cbb6c8919",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-field-628791-100-dense-lean.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/robustness/raw/independent-field-628791-100-dense-lean.json",
+          "sha256": "38a5d85428278e7a7f44c01398c45f2ddc28010c1d6a8c93fd45f4561ea693e2",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-field-628791-100-sparse-lean.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/robustness/raw/independent-field-628791-100-sparse-lean.json",
+          "sha256": "2d5a65c858aa457aa3cb4f4648187b47cc982c01f73c4b0e210d49e7da4d3a6d",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-field-628791-100-tilted-lean.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/robustness/raw/independent-field-628791-100-tilted-lean.json",
+          "sha256": "33d459295dcf78ecbd60ef1711e7094c2f6cd8ebf1dddba64b8f62475c95a24a",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-field-628791-200-dense-lean.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/robustness/raw/independent-field-628791-200-dense-lean.json",
+          "sha256": "720154f2c517f8a8d3ae43e1591b66d1c7c48b745a1f6054a153ad1300c611f9",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-field-628791-200-sparse-lean.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/robustness/raw/independent-field-628791-200-sparse-lean.json",
+          "sha256": "4ba9f46ecdd0c4b236762884608edf97dfd185d76aa5fcea234d5d4d63cf2f19",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-field-628791-200-tilted-lean.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/robustness/raw/independent-field-628791-200-tilted-lean.json",
+          "sha256": "4bdd7ac7bad3580946aee8d45ffc0c90b935dda35c21deaa5a37ab5295a16897",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-field-628792-100-dense-lean.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/robustness/raw/independent-field-628792-100-dense-lean.json",
+          "sha256": "720f5e90ac83cd15f6645a53ce93f526f84c54e3faf18a2a0091d58e6dc888e7",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-field-628792-100-sparse-lean.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/robustness/raw/independent-field-628792-100-sparse-lean.json",
+          "sha256": "28748b01b5f92c4b458ef09360a80281b4f7dd0c1c668ce07ea6916896eb1438",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-field-628792-100-tilted-lean.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/robustness/raw/independent-field-628792-100-tilted-lean.json",
+          "sha256": "ca6432df145b540d4e1578f8829a09e49cb4a957cabaec1f34d5934ac9919ba3",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-field-628792-200-dense-lean.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/robustness/raw/independent-field-628792-200-dense-lean.json",
+          "sha256": "fbeb167f3419e8fcd5f0672d8cf9f5c6cbbf0f89fc29e449978c8567374cdf63",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-field-628792-200-sparse-lean.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/robustness/raw/independent-field-628792-200-sparse-lean.json",
+          "sha256": "7c324f32793f8223a5c246654125e585df2602051924a87578f6fdc1be204ec8",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-field-628792-200-tilted-lean.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/robustness/raw/independent-field-628792-200-tilted-lean.json",
+          "sha256": "c91d01b8f422c6225240a470f7303f16df6574425153942e0d376a3ec7083ab7",
+          "role": "saved independent record or source"
+        }
+      ],
+      "experiment_ids": [
+        "heldout-4391-100-dense",
+        "heldout-4391-100-sparse",
+        "heldout-4391-100-tilted",
+        "heldout-4391-200-dense",
+        "heldout-4391-200-sparse",
+        "heldout-4391-200-tilted",
+        "heldout-4392-100-dense",
+        "heldout-4392-100-sparse",
+        "heldout-4392-100-tilted",
+        "heldout-4392-200-dense",
+        "heldout-4392-200-sparse",
+        "heldout-4392-200-tilted",
+        "independent-field-628791-100-dense-lean",
+        "independent-field-628791-100-sparse-lean",
+        "independent-field-628791-100-tilted-lean",
+        "independent-field-628791-200-dense-lean",
+        "independent-field-628791-200-sparse-lean",
+        "independent-field-628791-200-tilted-lean",
+        "independent-field-628792-100-dense-lean",
+        "independent-field-628792-100-sparse-lean",
+        "independent-field-628792-100-tilted-lean",
+        "independent-field-628792-200-dense-lean",
+        "independent-field-628792-200-sparse-lean",
+        "independent-field-628792-200-tilted-lean"
+      ],
+      "code_and_configuration": {
+        "candidate_sha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+        "source_checkpoint": "c024dfc27b9e6b7cd5b39132164d1339cb95b12f",
+        "physics_baseline": "c591ce2b195fa01b895d4ba881a44a4b92fdd703",
+        "configuration_repository_path": "research/campaign-exact-efficiency/configs/campaign.json",
+        "configuration_sha256": "ab527ffa7f184e700892a01d253b7c69d9f05b63f3ff5622ca468a0f647a5274"
+      },
+      "analysis_uncertainty": "Primary and independent instrumentation differ: checksum work is outside the primary timing and inside independent field timing. Do not pool them or generalize beyond tested CPU workloads.",
+      "counterevidence": "The incremental comparison against previous-zero is smaller and inconsistent across cases; this is not a new accuracy\u2013cost frontier.",
+      "next_falsification_test": "Replicate on a second declared runtime/hardware environment at identical work and numerical outputs, with independent fresh fixtures."
+    },
+    {
+      "id": "E08",
+      "claim": "A general \u226510% incremental field-time benefit over previous-zero has been established.",
+      "status": "unresolved",
+      "audited": true,
+      "original_framework_steps": [
+        6,
+        8
+      ],
+      "scope": "Generalization beyond the recorded fixture/count/seed combinations is not established.",
+      "evidence": [
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/timing/heldout-4391-100-dense.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/timing/heldout-4391-100-dense.json",
+          "sha256": "7b813cb0531a15d0335ab5f412bd1878ae3b8fb81567e22b0a26e1ac1ed616ce",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/timing/heldout-4391-100-sparse.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/timing/heldout-4391-100-sparse.json",
+          "sha256": "b754eea7a04897baa8b65ac3f2a0e5eadb149f1fcb7c32666589adb21cf3e62e",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/timing/heldout-4391-100-tilted.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/timing/heldout-4391-100-tilted.json",
+          "sha256": "a102b4e18e52de29e4ed9d0be7b9525b03722e873115be893c82328b3c7b735e",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/timing/heldout-4391-200-dense.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/timing/heldout-4391-200-dense.json",
+          "sha256": "697fb480db50c8117c8e95f6fa19b366c9b2d50ef5eb201a729a7b79490f7a58",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/timing/heldout-4391-200-sparse.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/timing/heldout-4391-200-sparse.json",
+          "sha256": "e439626e06f7164fbd6787b4b52e57c3fc267807309607d0909e5da750956c74",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/timing/heldout-4391-200-tilted.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/timing/heldout-4391-200-tilted.json",
+          "sha256": "da1e5638a496f90f9fe4ccfb3b1b98d7a1d2a72dee72292f8864c871948ad1fd",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/timing/heldout-4392-100-dense.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/timing/heldout-4392-100-dense.json",
+          "sha256": "011218acb50a5e262cfe50fc40ddc3733c8b1ce27b575e3a67c8276fe4e62b26",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/timing/heldout-4392-100-sparse.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/timing/heldout-4392-100-sparse.json",
+          "sha256": "68533827563eb8e5f300206cb018786611414bcad7f614e101e2b6fc0dd50de0",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/timing/heldout-4392-100-tilted.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/timing/heldout-4392-100-tilted.json",
+          "sha256": "432074a35077db5da264e36992f024d592a6244dfa89151fed6a03af8247fcd3",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/timing/heldout-4392-200-dense.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/timing/heldout-4392-200-dense.json",
+          "sha256": "b8dfcd67969441f8247e2d9f1a2bbfde8ae59dbf2e4c2e60e0285e964529ab6a",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/timing/heldout-4392-200-sparse.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/timing/heldout-4392-200-sparse.json",
+          "sha256": "20dc942711c346696fd32e7cda1f06bef15272e6da48efa2935d2626cfce530e",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/timing/heldout-4392-200-tilted.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/timing/heldout-4392-200-tilted.json",
+          "sha256": "c100de5ffd5f7836c4b1509e72e5b4ea367420396bbdab3606384d2cbb6c8919",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-field-628791-100-dense-lean.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/robustness/raw/independent-field-628791-100-dense-lean.json",
+          "sha256": "38a5d85428278e7a7f44c01398c45f2ddc28010c1d6a8c93fd45f4561ea693e2",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-field-628791-100-sparse-lean.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/robustness/raw/independent-field-628791-100-sparse-lean.json",
+          "sha256": "2d5a65c858aa457aa3cb4f4648187b47cc982c01f73c4b0e210d49e7da4d3a6d",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-field-628791-100-tilted-lean.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/robustness/raw/independent-field-628791-100-tilted-lean.json",
+          "sha256": "33d459295dcf78ecbd60ef1711e7094c2f6cd8ebf1dddba64b8f62475c95a24a",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-field-628791-200-dense-lean.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/robustness/raw/independent-field-628791-200-dense-lean.json",
+          "sha256": "720154f2c517f8a8d3ae43e1591b66d1c7c48b745a1f6054a153ad1300c611f9",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-field-628791-200-sparse-lean.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/robustness/raw/independent-field-628791-200-sparse-lean.json",
+          "sha256": "4ba9f46ecdd0c4b236762884608edf97dfd185d76aa5fcea234d5d4d63cf2f19",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-field-628791-200-tilted-lean.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/robustness/raw/independent-field-628791-200-tilted-lean.json",
+          "sha256": "4bdd7ac7bad3580946aee8d45ffc0c90b935dda35c21deaa5a37ab5295a16897",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-field-628792-100-dense-lean.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/robustness/raw/independent-field-628792-100-dense-lean.json",
+          "sha256": "720f5e90ac83cd15f6645a53ce93f526f84c54e3faf18a2a0091d58e6dc888e7",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-field-628792-100-sparse-lean.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/robustness/raw/independent-field-628792-100-sparse-lean.json",
+          "sha256": "28748b01b5f92c4b458ef09360a80281b4f7dd0c1c668ce07ea6916896eb1438",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-field-628792-100-tilted-lean.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/robustness/raw/independent-field-628792-100-tilted-lean.json",
+          "sha256": "ca6432df145b540d4e1578f8829a09e49cb4a957cabaec1f34d5934ac9919ba3",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-field-628792-200-dense-lean.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/robustness/raw/independent-field-628792-200-dense-lean.json",
+          "sha256": "fbeb167f3419e8fcd5f0672d8cf9f5c6cbbf0f89fc29e449978c8567374cdf63",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-field-628792-200-sparse-lean.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/robustness/raw/independent-field-628792-200-sparse-lean.json",
+          "sha256": "7c324f32793f8223a5c246654125e585df2602051924a87578f6fdc1be204ec8",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-field-628792-200-tilted-lean.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/robustness/raw/independent-field-628792-200-tilted-lean.json",
+          "sha256": "c91d01b8f422c6225240a470f7303f16df6574425153942e0d376a3ec7083ab7",
+          "role": "saved independent record or source"
+        }
+      ],
+      "experiment_ids": [
+        "heldout-4391-100-dense",
+        "heldout-4391-100-sparse",
+        "heldout-4391-100-tilted",
+        "heldout-4391-200-dense",
+        "heldout-4391-200-sparse",
+        "heldout-4391-200-tilted",
+        "heldout-4392-100-dense",
+        "heldout-4392-100-sparse",
+        "heldout-4392-100-tilted",
+        "heldout-4392-200-dense",
+        "heldout-4392-200-sparse",
+        "heldout-4392-200-tilted",
+        "independent-field-628791-100-dense-lean",
+        "independent-field-628791-100-sparse-lean",
+        "independent-field-628791-100-tilted-lean",
+        "independent-field-628791-200-dense-lean",
+        "independent-field-628791-200-sparse-lean",
+        "independent-field-628791-200-tilted-lean",
+        "independent-field-628792-100-dense-lean",
+        "independent-field-628792-100-sparse-lean",
+        "independent-field-628792-100-tilted-lean",
+        "independent-field-628792-200-dense-lean",
+        "independent-field-628792-200-sparse-lean",
+        "independent-field-628792-200-tilted-lean"
+      ],
+      "code_and_configuration": {
+        "candidate_sha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+        "source_checkpoint": "c024dfc27b9e6b7cd5b39132164d1339cb95b12f",
+        "physics_baseline": "c591ce2b195fa01b895d4ba881a44a4b92fdd703",
+        "configuration_repository_path": "research/campaign-exact-efficiency/configs/campaign.json",
+        "configuration_sha256": "ab527ffa7f184e700892a01d253b7c69d9f05b63f3ff5622ca468a0f647a5274"
+      },
+      "analysis_uncertainty": "Primary screen passes 8/12; independent screen passes 3/12. No family/count passes on both fresh independent seeds. Small-sample intervals are descriptive.",
+      "counterevidence": "Dense N=200 primary cases fail, and most fresh incremental screens fail.",
+      "next_falsification_test": "Preregister a replication target and fresh seed set; repeat identical instrumentation with enough batch duration to separate workload effects from timer/scheduling noise."
+    },
+    {
+      "id": "E09",
+      "claim": "All 14 short Boids recordings complete, and all eight matched legacy/previous-zero/lean pairs have identical saved data and stored stream hashes.",
+      "status": "confirmed_within_scope",
+      "audited": true,
+      "original_framework_steps": [
+        5,
+        6
+      ],
+      "scope": "Two seeds; N=16 for 1 s and N=50 for 3 s; three implementations; two additional N=16 refinements.",
+      "evidence": [
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/boids/index.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/boids/index.json",
+          "sha256": "a6ce071c24754eabb81170d0f14cacc996eed3956e5c1735c4e2d0bd9e95898d",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/boids/4391-16-lean-0.00125-0.01.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/boids/4391-16-lean-0.00125-0.01.json",
+          "sha256": "cd5f1dd0b04328afb407ffc93686a92c5152b47ee8b4362dd7097c916aba962d",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/boids/4391-16-lean-0.0025-0.005.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/boids/4391-16-lean-0.0025-0.005.json",
+          "sha256": "24e8d1d237633ed474a7ad70994a52e6edd3abfd145f0dfd429a04e97aedf927",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/boids/4391-16-lean-0.0025-0.01.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/boids/4391-16-lean-0.0025-0.01.json",
+          "sha256": "ef578328327dc6220d93e60c553a46b01af0914cf8402c278eab200d3ed3dd86",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/boids/4391-16-legacy-0.0025-0.01.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/boids/4391-16-legacy-0.0025-0.01.json",
+          "sha256": "e4b45cd2438fcfa04a5967f0d87e2ac3f65f5691eb2183c9f06992272540d071",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/boids/4391-16-previous-zero-0.0025-0.01.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/boids/4391-16-previous-zero-0.0025-0.01.json",
+          "sha256": "db8547a7d09016b9637f6aeb0b2082baa54030a9bb57af9942147f2199867713",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/boids/4391-50-lean-0.0025-0.01.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/boids/4391-50-lean-0.0025-0.01.json",
+          "sha256": "688c316b1a3474889778faff96fdaae8014eaa02a0338da8fbf5b6064dcf952e",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/boids/4391-50-legacy-0.0025-0.01.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/boids/4391-50-legacy-0.0025-0.01.json",
+          "sha256": "7a01550b063658d5a24f72a90b81d4fe158a4a6851d02170d1807c1692c3003e",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/boids/4391-50-previous-zero-0.0025-0.01.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/boids/4391-50-previous-zero-0.0025-0.01.json",
+          "sha256": "211af429671e888ee9d6de18afb5cc3afbc49f2d37af2909a18335c9d669d12d",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/boids/4392-16-lean-0.0025-0.01.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/boids/4392-16-lean-0.0025-0.01.json",
+          "sha256": "7430bab2a678f38134ef5ee15d2caa0c92aa490881dc5f67abeb97dff2aeec22",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/boids/4392-16-legacy-0.0025-0.01.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/boids/4392-16-legacy-0.0025-0.01.json",
+          "sha256": "bf1ab583fe50fcc9efe7e057329a106a95c2436cdc3fc48d8f85f5ff637239da",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/boids/4392-16-previous-zero-0.0025-0.01.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/boids/4392-16-previous-zero-0.0025-0.01.json",
+          "sha256": "d5ae50277717fb12603f1c59c8f2a4d32c388c258db05f511d3052b34f73192a",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/boids/4392-50-lean-0.0025-0.01.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/boids/4392-50-lean-0.0025-0.01.json",
+          "sha256": "95e68deab8cce572772c4e141e8d3c7dcbd87edbbf53bd1e6bfe2c56f7187372",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/boids/4392-50-legacy-0.0025-0.01.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/boids/4392-50-legacy-0.0025-0.01.json",
+          "sha256": "f08a2be0630b9f4f1914458ff2f1a0ceca3fe0b6e284cd2bd9c5e004e5c4a08d",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/boids/4392-50-previous-zero-0.0025-0.01.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/boids/4392-50-previous-zero-0.0025-0.01.json",
+          "sha256": "552f03810695a04c44953b73d07d6d8931c178bc37aa22d6b87dc37a6899ef56",
+          "role": "saved primary record"
+        }
+      ],
+      "experiment_ids": [
+        "index",
+        "4391-16-lean-0.00125-0.01",
+        "4391-16-lean-0.0025-0.005",
+        "4391-16-lean-0.0025-0.01",
+        "4391-16-legacy-0.0025-0.01",
+        "4391-16-previous-zero-0.0025-0.01",
+        "4391-50-lean-0.0025-0.01",
+        "4391-50-legacy-0.0025-0.01",
+        "4391-50-previous-zero-0.0025-0.01",
+        "4392-16-lean-0.0025-0.01",
+        "4392-16-legacy-0.0025-0.01",
+        "4392-16-previous-zero-0.0025-0.01",
+        "4392-50-lean-0.0025-0.01",
+        "4392-50-legacy-0.0025-0.01",
+        "4392-50-previous-zero-0.0025-0.01"
+      ],
+      "code_and_configuration": {
+        "candidate_sha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+        "source_checkpoint": "c024dfc27b9e6b7cd5b39132164d1339cb95b12f",
+        "physics_baseline": "c591ce2b195fa01b895d4ba881a44a4b92fdd703",
+        "configuration_repository_path": "research/campaign-exact-efficiency/configs/campaign.json",
+        "configuration_sha256": "ab527ffa7f184e700892a01d253b7c69d9f05b63f3ff5622ca468a0f647a5274"
+      },
+      "analysis_uncertainty": "Full initial/final states, saved poses and held winds were compared directly; stored every-step rolling hashes agree but cannot be independently reconstructed because every intermediate full state was not retained.",
+      "counterevidence": "Short starting-cloud windows do not test full obstacle-course passage, long-horizon trajectory stability or physical accuracy.",
+      "next_falsification_test": "Extend a preregistered bounded trajectory window using the same initial states, full-state rolling hashes, stop-reason equality and untouched seeds; retain failed members."
+    },
+    {
+      "id": "E10",
+      "claim": "Both one-second N=16 refinement comparisons pass their 1 cm saved-position screen.",
+      "status": "confirmed_within_scope",
+      "audited": true,
+      "original_framework_steps": [
+        2,
+        5
+      ],
+      "scope": "Seed 4391 only, 21 common saved frames; physics step 2.5\u21921.25 ms or airflow interval 10\u21925 ms changed separately.",
+      "evidence": [
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/boids/index.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/boids/index.json",
+          "sha256": "a6ce071c24754eabb81170d0f14cacc996eed3956e5c1735c4e2d0bd9e95898d",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/boids/4391-16-lean-0.0025-0.01.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/boids/4391-16-lean-0.0025-0.01.json",
+          "sha256": "ef578328327dc6220d93e60c553a46b01af0914cf8402c278eab200d3ed3dd86",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/boids/4391-16-lean-0.00125-0.01.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/boids/4391-16-lean-0.00125-0.01.json",
+          "sha256": "cd5f1dd0b04328afb407ffc93686a92c5152b47ee8b4362dd7097c916aba962d",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/boids/4391-16-lean-0.0025-0.005.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/boids/4391-16-lean-0.0025-0.005.json",
+          "sha256": "24e8d1d237633ed474a7ad70994a52e6edd3abfd145f0dfd429a04e97aedf927",
+          "role": "saved primary record"
+        }
+      ],
+      "experiment_ids": [
+        "index",
+        "4391-16-lean-0.0025-0.01",
+        "4391-16-lean-0.00125-0.01",
+        "4391-16-lean-0.0025-0.005"
+      ],
+      "code_and_configuration": {
+        "candidate_sha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+        "source_checkpoint": "c024dfc27b9e6b7cd5b39132164d1339cb95b12f",
+        "physics_baseline": "c591ce2b195fa01b895d4ba881a44a4b92fdd703",
+        "configuration_repository_path": "research/campaign-exact-efficiency/configs/campaign.json",
+        "configuration_sha256": "ab527ffa7f184e700892a01d253b7c69d9f05b63f3ff5622ca468a0f647a5274"
+      },
+      "analysis_uncertainty": "Recomputed maximum position differences: 7.213822827802545e-9 m and 0.0070135070174269076 m. One refinement level and one short window do not estimate a convergence order or a physical error.",
+      "counterevidence": "Airflow-refresh sensitivity is far larger than rigid-body-step sensitivity, and historical long-horizon/cadence failures remain unresolved, not erased by this screen.",
+      "next_falsification_test": "Use independently declared longer common-state windows and at least three refinement levels for airflow cadence, with synchronized-time errors and stop reasons; no tuning after evaluation."
+    },
+    {
+      "id": "E11",
+      "claim": "The exact implementation establishes converged long-horizon trajectories.",
+      "status": "unresolved",
+      "audited": true,
+      "original_framework_steps": [
+        2,
+        5,
+        8
+      ],
+      "scope": "No such convergence study is present in the exact-equation campaign.",
+      "evidence": [
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/boids/index.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/boids/index.json",
+          "sha256": "a6ce071c24754eabb81170d0f14cacc996eed3956e5c1735c4e2d0bd9e95898d",
+          "role": "saved primary record"
+        }
+      ],
+      "experiment_ids": [
+        "index"
+      ],
+      "code_and_configuration": {
+        "candidate_sha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+        "source_checkpoint": "c024dfc27b9e6b7cd5b39132164d1339cb95b12f",
+        "physics_baseline": "c591ce2b195fa01b895d4ba881a44a4b92fdd703",
+        "configuration_repository_path": "research/campaign-exact-efficiency/configs/campaign.json",
+        "configuration_sha256": "ab527ffa7f184e700892a01d253b7c69d9f05b63f3ff5622ca468a0f647a5274"
+      },
+      "analysis_uncertainty": "Bitwise implementation agreement at a fixed cadence cannot establish convergence to a continuous-time solution. Historical evidence is marked outside this audit below.",
+      "counterevidence": "Only one-second cadence/refinement diagnostics were performed here. The roadmap retains failed longer trajectory and airflow-cadence screens.",
+      "next_falsification_test": "Resolve common-state versus inherited-state sensitivity and airflow-cadence convergence separately before claiming trajectory accuracy."
+    },
+    {
+      "id": "E12",
+      "claim": "Measured whole-pipeline gains differ between the two workloads and both previous-zero comparisons fall below the 10% median-saving screen.",
+      "status": "confirmed_within_scope",
+      "audited": true,
+      "original_framework_steps": [
+        5,
+        6
+      ],
+      "scope": "Primary seed 4301: seven paired N=16/1 s repeats; independent seed 628791: nine paired repeats.",
+      "evidence": [
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/pipeline.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/pipeline.json",
+          "sha256": "3f00fc007a783428ef536c4aa40f1ef69d3e85f5754e46027bcf184e430b2bce",
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/robustness/raw/independent-pipeline-628791-16-boids-lean.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/robustness/raw/independent-pipeline-628791-16-boids-lean.json",
+          "sha256": "cff179f4c1c5b2957bd16f017b992a72397b0cdd29f3c1683f9b2af4acbf10ed",
+          "role": "saved independent record or source"
+        }
+      ],
+      "experiment_ids": [
+        "pipeline",
+        "independent-pipeline-628791-16-boids-lean"
+      ],
+      "code_and_configuration": {
+        "candidate_sha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+        "source_checkpoint": "c024dfc27b9e6b7cd5b39132164d1339cb95b12f",
+        "physics_baseline": "c591ce2b195fa01b895d4ba881a44a4b92fdd703",
+        "configuration_repository_path": "research/campaign-exact-efficiency/configs/campaign.json",
+        "configuration_sha256": "ab527ffa7f184e700892a01d253b7c69d9f05b63f3ff5622ca468a0f647a5274"
+      },
+      "analysis_uncertainty": "Primary lean/previous-zero = 0.9112399631, CI [0.9012365634,0.9595856530]; independent = 0.9595836221, CI [0.9357326981,1.0183059486]. Final full-state hashes match all 48 timed members; held-wind terminal hashes exist only in primary.",
+      "counterevidence": "Neither previous-zero comparison passes the \u226510% screen; the independent interval includes 1. Primary legacy ratio 0.846558 passes, independent legacy ratio 0.917449 does not.",
+      "next_falsification_test": "Use a bounded longer fixed-work workload with several untouched initial states and identical instrumentation; require identical completion/work and full-state plus held-wind hashes."
+    },
+    {
+      "id": "E13",
+      "claim": "The exact-equation campaign provides measured N=500 or N=5,000 scalability.",
+      "status": "unresolved",
+      "audited": true,
+      "original_framework_steps": [
+        7
+      ],
+      "scope": "Maximum primary prescribed-state benchmark count is 200; maximum actual Boids record count is 50.",
+      "evidence": [
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/timing-summary.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/timing-summary.json",
+          "sha256": null,
+          "role": "saved primary record"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/resource-ledger.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/resource-ledger.json",
+          "sha256": null,
+          "role": "saved primary record"
+        }
+      ],
+      "experiment_ids": [
+        "timing-summary",
+        "resource-ledger"
+      ],
+      "code_and_configuration": {
+        "candidate_sha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+        "source_checkpoint": "c024dfc27b9e6b7cd5b39132164d1339cb95b12f",
+        "physics_baseline": "c591ce2b195fa01b895d4ba881a44a4b92fdd703",
+        "configuration_repository_path": "research/campaign-exact-efficiency/configs/campaign.json",
+        "configuration_sha256": "ab527ffa7f184e700892a01d253b7c69d9f05b63f3ff5622ca468a0f647a5274"
+      },
+      "analysis_uncertainty": "No measured exact-campaign record at N=500/5,000 exists in the inspected inventory. Historical unrelated missions cannot substitute for current implementation throughput.",
+      "counterevidence": "N=500 promotion stopped because N=200 did not show two consistently passing families.",
+      "next_falsification_test": "Only reopen larger-N timing after an explicitly revised or satisfied promotion gate; separate fixed-density from fixed-volume scaling."
+    },
+    {
+      "id": "E14",
+      "claim": "The viewer demonstrates coupled browser or WebGPU simulation throughput.",
+      "status": "unresolved",
+      "audited": true,
+      "original_framework_steps": [
+        6,
+        7
+      ],
+      "scope": "Simulation ran offline in Node CPU; the viewer renders recorded states.",
+      "evidence": [
+        {
+          "repository_path": "research/campaign-exact-efficiency/provenance.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/provenance.json",
+          "sha256": "498e3fd7b37e9c652408f1493a428e505465d1d24abb6096c0e9b4cd615cae84",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/results/viewer-qa/browser-check.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/results/viewer-qa/browser-check.json",
+          "sha256": "0d83ab4dd3eff604a79d924407f32e9b5be4b16af55f4fcdd14a5d5400e34368",
+          "role": "saved primary record"
+        }
+      ],
+      "experiment_ids": [
+        "provenance",
+        "browser-check"
+      ],
+      "code_and_configuration": {
+        "candidate_sha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+        "source_checkpoint": "c024dfc27b9e6b7cd5b39132164d1339cb95b12f",
+        "physics_baseline": "c591ce2b195fa01b895d4ba881a44a4b92fdd703",
+        "configuration_repository_path": "research/campaign-exact-efficiency/configs/campaign.json",
+        "configuration_sha256": "ab527ffa7f184e700892a01d253b7c69d9f05b63f3ff5622ca468a0f647a5274"
+      },
+      "analysis_uncertainty": "No GPU simulation or coupled browser benchmark was performed. Static bundle checks do not measure rendering throughput or interaction correctness.",
+      "counterevidence": "One browser launch failed with a socket-permission denial; no screenshot or rendered interaction QA was obtained.",
+      "next_falsification_test": "Run a separately specified authorized browser/GPU implementation-equivalence and fixed-work throughput experiment; separate simulation and rendering times."
+    },
+    {
+      "id": "E15",
+      "claim": "The frozen model predicts physical receiver forces and moments for this vehicle.",
+      "status": "unresolved",
+      "audited": true,
+      "original_framework_steps": [
+        2,
+        3
+      ],
+      "scope": "The model combines an isolated-hover source profile with a constant-ideal-induced-power receiver response, sampled at four rotors.",
+      "evidence": [
+        {
+          "repository_path": "research/campaign-exact-efficiency/src/exact-aero.cjs",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/src/exact-aero.cjs",
+          "sha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/provenance.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/provenance.json",
+          "sha256": "498e3fd7b37e9c652408f1493a428e505465d1d24abb6096c0e9b4cd615cae84",
+          "role": "saved independent record or source"
+        }
+      ],
+      "experiment_ids": [
+        "provenance"
+      ],
+      "code_and_configuration": {
+        "candidate_sha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+        "source_checkpoint": "c024dfc27b9e6b7cd5b39132164d1339cb95b12f",
+        "physics_baseline": "c591ce2b195fa01b895d4ba881a44a4b92fdd703",
+        "configuration_repository_path": "research/campaign-exact-efficiency/configs/campaign.json",
+        "configuration_sha256": "ab527ffa7f184e700892a01d253b7c69d9f05b63f3ff5622ca468a0f647a5274"
+      },
+      "analysis_uncertainty": "No independent measured receiver-force or moment observations were acquired or compared here. Paper-derived source geometry alone cannot validate the receiver response. Source strength is fixed by isolated-hover weight while nominal receiver motor states vary.",
+      "counterevidence": "Code and control may agree exactly while sharing a structurally wrong source operating-condition or receiver-response assumption.",
+      "next_falsification_test": "Prioritize independently measured one-source/one-receiver data: hold geometry and operating conditions fixed, input measured local inflow to isolate receiver response, and test untouched inflow/load conditions with reported measurement uncertainty."
+    },
+    {
+      "id": "E16",
+      "claim": "Linear superposition of wakes and the finite spatial cutoffs accurately represent multi-vehicle airflow.",
+      "status": "unresolved",
+      "audited": true,
+      "original_framework_steps": [
+        4
+      ],
+      "scope": "Frozen source axial cutoff 2.5 m, radial cutoff three model half-widths, center search 3 m; algebraic overlap.",
+      "evidence": [
+        {
+          "repository_path": "research/campaign-exact-efficiency/src/exact-aero.cjs",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/src/exact-aero.cjs",
+          "sha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/provenance.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/provenance.json",
+          "sha256": "498e3fd7b37e9c652408f1493a428e505465d1d24abb6096c0e9b4cd615cae84",
+          "role": "saved independent record or source"
+        }
+      ],
+      "experiment_ids": [
+        "provenance"
+      ],
+      "code_and_configuration": {
+        "candidate_sha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+        "source_checkpoint": "c024dfc27b9e6b7cd5b39132164d1339cb95b12f",
+        "physics_baseline": "c591ce2b195fa01b895d4ba881a44a4b92fdd703",
+        "configuration_repository_path": "research/campaign-exact-efficiency/configs/campaign.json",
+        "configuration_sha256": "ab527ffa7f184e700892a01d253b7c69d9f05b63f3ff5622ca468a0f647a5274"
+      },
+      "analysis_uncertainty": "Exact-zero omission is exact only relative to those imposed supports. It says nothing about omitted real tails, wake deformation, rotor-resolved flow, confinement or turbulence.",
+      "counterevidence": "No independently measured multi-wake reference is part of this campaign.",
+      "next_falsification_test": "After one-source/one-receiver validation, hold out a two-source receiver experiment with offset/overlap conditions and measured inflow/load uncertainty; compare linear addition with preregistered alternatives."
+    },
+    {
+      "id": "E17",
+      "claim": "The research has established a new physically grounded accuracy\u2013computation frontier toward 5,000 coupled browser drones.",
+      "status": "hypothesis",
+      "audited": true,
+      "original_framework_steps": [
+        1,
+        6,
+        7,
+        8
+      ],
+      "scope": "This remains the original research target, not a conclusion of same-equation optimization.",
+      "evidence": [
+        {
+          "repository_path": "research/campaign-exact-efficiency/PLAN.md",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/PLAN.md",
+          "sha256": null,
+          "role": "saved independent record or source"
+        },
+        {
+          "repository_path": "research/campaign-exact-efficiency/provenance.json",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/dot/spatial-wake-pruning/research/campaign-exact-efficiency/provenance.json",
+          "sha256": "498e3fd7b37e9c652408f1493a428e505465d1d24abb6096c0e9b4cd615cae84",
+          "role": "saved independent record or source"
+        }
+      ],
+      "experiment_ids": [
+        "provenance"
+      ],
+      "code_and_configuration": {
+        "candidate_sha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+        "source_checkpoint": "c024dfc27b9e6b7cd5b39132164d1339cb95b12f",
+        "physics_baseline": "c591ce2b195fa01b895d4ba881a44a4b92fdd703",
+        "configuration_repository_path": "research/campaign-exact-efficiency/configs/campaign.json",
+        "configuration_sha256": "ab527ffa7f184e700892a01d253b7c69d9f05b63f3ff5622ca468a0f647a5274"
+      },
+      "analysis_uncertainty": "A frontier requires multiple approximations, independently validated prediction error and matched computational budgets. Here all selected implementations target one unvalidated equation set.",
+      "counterevidence": "No physical error axis, current GPU benchmark, novel-method external baseline or exact-campaign N=500/5,000 measurement is available.",
+      "next_falsification_test": "First establish a narrow physical prediction contract and independent held-out reference; only then compare approximation families at matched error and cost."
+    },
+    {
+      "id": "H01",
+      "claim": "Milestone 28 reports 25 cases, four physics-step screens passing and one airflow-cadence screen failing.",
+      "status": "unresolved",
+      "audited": false,
+      "audit_boundary": "Historical claim outside this audit; status means not independently adjudicated here, not that the historical claim is false. Roadmap was read; milestone 28 narrative was additionally inspected, but raw historical mission/refinement records were not recalculated.",
+      "original_framework_steps": [
+        2,
+        3,
+        4
+      ],
+      "scope": "Historical repository record, independent of the current exact-equation campaign.",
+      "evidence": [
+        {
+          "repository_path": "outputs/milestone-28-report.md",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/c024dfc27b9e6b7cd5b39132164d1339cb95b12f/outputs/milestone-28-report.md",
+          "role": "historical narrative; not re-audited"
+        }
+      ],
+      "experiment_ids": [],
+      "code_and_configuration": {
+        "source_checkpoint": "c024dfc27b9e6b7cd5b39132164d1339cb95b12f",
+        "raw_experiment_identity": "not audited"
+      },
+      "analysis_uncertainty": "Historical source/raw-record correspondence and calculations were not independently verified in this audit.",
+      "counterevidence": "The roadmap itself retains failed cadence/trajectory criteria and limits physical/navigation conclusions.",
+      "next_falsification_test": "Audit the stated historical raw manifests, source identities, complete outcomes and synchronized refinement calculations before relying on this quantitative claim."
+    },
+    {
+      "id": "H02",
+      "claim": "The factory benchmark reports primary 50/200 missions complete and repeat contact failures at larger baseline counts.",
+      "status": "unresolved",
+      "audited": false,
+      "audit_boundary": "Historical claim outside this audit; status means not independently adjudicated here, not that the historical claim is false. Roadmap was read; milestone 28 narrative was additionally inspected, but raw historical mission/refinement records were not recalculated.",
+      "original_framework_steps": [
+        5,
+        7
+      ],
+      "scope": "Historical repository record, independent of the current exact-equation campaign.",
+      "evidence": [
+        {
+          "repository_path": "outputs/research-roadmap.md",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/c024dfc27b9e6b7cd5b39132164d1339cb95b12f/outputs/research-roadmap.md",
+          "role": "historical narrative; not re-audited"
+        }
+      ],
+      "experiment_ids": [],
+      "code_and_configuration": {
+        "source_checkpoint": "c024dfc27b9e6b7cd5b39132164d1339cb95b12f",
+        "raw_experiment_identity": "not audited"
+      },
+      "analysis_uncertainty": "Historical source/raw-record correspondence and calculations were not independently verified in this audit.",
+      "counterevidence": "The roadmap itself retains failed cadence/trajectory criteria and limits physical/navigation conclusions.",
+      "next_falsification_test": "Audit the stated historical raw manifests, source identities, complete outcomes and synchronized refinement calculations before relying on this quantitative claim."
+    },
+    {
+      "id": "H03",
+      "claim": "Milestone 31 reports prescribed candidate 1,000/5,000 missions complete and all three trajectory-refinement criteria failing.",
+      "status": "unresolved",
+      "audited": false,
+      "audit_boundary": "Historical claim outside this audit; status means not independently adjudicated here, not that the historical claim is false. Roadmap was read; milestone 28 narrative was additionally inspected, but raw historical mission/refinement records were not recalculated.",
+      "original_framework_steps": [
+        5,
+        7
+      ],
+      "scope": "Historical repository record, independent of the current exact-equation campaign.",
+      "evidence": [
+        {
+          "repository_path": "outputs/milestone-31-summary.md",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/c024dfc27b9e6b7cd5b39132164d1339cb95b12f/outputs/milestone-31-summary.md",
+          "role": "historical narrative; not re-audited"
+        }
+      ],
+      "experiment_ids": [],
+      "code_and_configuration": {
+        "source_checkpoint": "c024dfc27b9e6b7cd5b39132164d1339cb95b12f",
+        "raw_experiment_identity": "not audited"
+      },
+      "analysis_uncertainty": "Historical source/raw-record correspondence and calculations were not independently verified in this audit.",
+      "counterevidence": "The roadmap itself retains failed cadence/trajectory criteria and limits physical/navigation conclusions.",
+      "next_falsification_test": "Audit the stated historical raw manifests, source identities, complete outcomes and synchronized refinement calculations before relying on this quantitative claim."
+    },
+    {
+      "id": "H04",
+      "claim": "Milestone 32 attributes a selected 20\u201330 s discrepancy mainly to inherited-state sensitivity rather than common-state integration-step changes.",
+      "status": "unresolved",
+      "audited": false,
+      "audit_boundary": "Historical claim outside this audit; status means not independently adjudicated here, not that the historical claim is false. Roadmap was read; milestone 28 narrative was additionally inspected, but raw historical mission/refinement records were not recalculated.",
+      "original_framework_steps": [
+        2,
+        5
+      ],
+      "scope": "Historical repository record, independent of the current exact-equation campaign.",
+      "evidence": [
+        {
+          "repository_path": "outputs/milestone-32-summary.md",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/c024dfc27b9e6b7cd5b39132164d1339cb95b12f/outputs/milestone-32-summary.md",
+          "role": "historical narrative; not re-audited"
+        }
+      ],
+      "experiment_ids": [],
+      "code_and_configuration": {
+        "source_checkpoint": "c024dfc27b9e6b7cd5b39132164d1339cb95b12f",
+        "raw_experiment_identity": "not audited"
+      },
+      "analysis_uncertainty": "Historical source/raw-record correspondence and calculations were not independently verified in this audit.",
+      "counterevidence": "The roadmap itself retains failed cadence/trajectory criteria and limits physical/navigation conclusions.",
+      "next_falsification_test": "Audit the stated historical raw manifests, source identities, complete outcomes and synchronized refinement calculations before relying on this quantitative claim."
+    },
+    {
+      "id": "H05",
+      "claim": "Earlier observer experiments help some delayed-observation cases and harm others.",
+      "status": "unresolved",
+      "audited": false,
+      "audit_boundary": "Historical claim outside this audit; status means not independently adjudicated here, not that the historical claim is false. Roadmap was read; milestone 28 narrative was additionally inspected, but raw historical mission/refinement records were not recalculated.",
+      "original_framework_steps": [
+        5,
+        8
+      ],
+      "scope": "Historical repository record, independent of the current exact-equation campaign.",
+      "evidence": [
+        {
+          "repository_path": "outputs/research-block-22-23-summary.md",
+          "url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/c024dfc27b9e6b7cd5b39132164d1339cb95b12f/outputs/research-block-22-23-summary.md",
+          "role": "historical narrative; not re-audited"
+        }
+      ],
+      "experiment_ids": [],
+      "code_and_configuration": {
+        "source_checkpoint": "c024dfc27b9e6b7cd5b39132164d1339cb95b12f",
+        "raw_experiment_identity": "not audited"
+      },
+      "analysis_uncertainty": "Historical source/raw-record correspondence and calculations were not independently verified in this audit.",
+      "counterevidence": "The roadmap itself retains failed cadence/trajectory criteria and limits physical/navigation conclusions.",
+      "next_falsification_test": "Audit the stated historical raw manifests, source identities, complete outcomes and synchronized refinement calculations before relying on this quantitative claim."
+    }
+  ],
+  "priority_next_experiment": {
+    "question": "Does the receiver force response predict independent measured force under matched inflow and operating conditions?",
+    "why_this_first": "The scientifically essential physical-error axis is missing. Additional speed measurements cannot supply it; isolating the receiver separates source-profile error from receiver-model error.",
+    "bounded_design": [
+      "First establish access to numerical observations with geometry, source/receiver operating conditions, repeated-force measurements and uncertainty. A plot image or simulation-generated reference is insufficient for the primary validation claim.",
+      "Freeze the current receiver law and a unit/geometry mapping before residual inspection. Use measured receiver-plane inflow as model input when available, so the first test isolates the receiver law.",
+      "Choose a compact set of up to three inflow strata and up to three receiver operating levels supported by the data; reserve entire operating-condition groups or independent trials as held-out data, rather than random neighboring samples.",
+      "Preregister an accuracy tolerance appropriate to the intended physical prediction, measurement uncertainty, signed bias, normalized force error and uncertainty coverage. Do not choose the tolerance after seeing residuals.",
+      "Stop this bounded phase after data adequacy and one frozen held-out receiver-response evaluation. Report out-of-domain conditions and missing measurements as blockers; do not fill them with model-generated values."
+    ],
+    "falsifier": "Consistent held-out force bias or errors outside the predeclared combined measurement/model tolerance reject the receiver-response adequacy claim within those conditions.",
+    "if_raw_data_unavailable": "Do not claim physical validation. Retain a data-readiness failure, document the exact missing metadata/measurements, and separately test the known airflow-cadence sensitivity with synchronized common-state refinements. This numerical fallback cannot replace the physical test.",
+    "after_this": "Only after a credible pair baseline, test two-source overlap and compare approximation error versus CPU/GPU cost."
+  },
+  "publication_version_note": "This audit adjudicates the original exact-equation evidence. Its original-report 4/12 counting error is retained as a contradicted claim; the corrected publication documents 3/12 in research/campaign-exact-efficiency/CORRECTIONS.md. Recorded run identities and scientific conclusions are unchanged."
+}

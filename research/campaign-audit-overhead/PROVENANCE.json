@@ -1,0 +1,601 @@
+{
+  "schema": "audit-optimization-planning-provenance/v1",
+  "date_utc": "2026-10-14",
+  "scope": "Static source/document bytes and existing JSON metadata only. No module imported or numerical state decoded/evaluated.",
+  "documents_and_sources": [
+    {
+      "path": "research-next/PLAN.md",
+      "bytes": 30563,
+      "sha256": "b68a2a93b29e85b3784d874010c767ee7ba3eacfdcc71d4bb6b91d31606d4bba"
+    },
+    {
+      "path": "research-next/postrun-physics/INTERPRETATION.md",
+      "bytes": 13354,
+      "sha256": "2b4fd6c6a005ac359b849d8e392966cc937dd6c223dbdf975ec0b90991d7d7e3"
+    },
+    {
+      "path": "research-next/postrun-robustness/REVIEW.md",
+      "bytes": 8710,
+      "sha256": "cb6539840906ebce7104a9cf1d7b8c4905b1ce0a63df24e63b81b2f0860d58cd"
+    },
+    {
+      "path": "research-next/implementation/FREEZE.json",
+      "bytes": 19120,
+      "sha256": "d41bb998788ff207eec4719d4a05d18125fcfdb658bfd0a18631921343735f3a"
+    },
+    {
+      "path": "research-next/implementation/src/branch-audit.cjs",
+      "bytes": 8871,
+      "sha256": "41ad1b087b1d7ba77f37d9c99b61e8a7c398915c6cfa3a74ef496258de8a822a"
+    },
+    {
+      "path": "research-next/implementation/src/exact-aero.cjs",
+      "bytes": 7465,
+      "sha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189"
+    },
+    {
+      "path": "research-next/implementation/src/io.cjs",
+      "bytes": 3953,
+      "sha256": "4039e2a272d10936f9428dbc961067e739b9f79313d62621bec24acc88dff475"
+    },
+    {
+      "path": "research-next/implementation/src/run.cjs",
+      "bytes": 10961,
+      "sha256": "3554fc82371aa04f317953d55580fdc61c967afc395bfe78caa73d9b8fea4150"
+    },
+    {
+      "path": "research-next/implementation/src/joint-step.cjs",
+      "bytes": 3121,
+      "sha256": "e9899ef7864032d147bde3d3d0d6dd02af662fceea691ae54b575b64955ec7b9"
+    },
+    {
+      "path": "research-next/implementation/src/preflight.cjs",
+      "bytes": 3702,
+      "sha256": "13ebd373e76eae90f1ac185d2be17ecf41cb1c8c9e2302055dbebe2ca50ff0a4"
+    },
+    {
+      "path": "research-next/robustness-review/test_branch_boundaries.cjs",
+      "bytes": 3619,
+      "sha256": "b3aebd640acc2dae7ead5f6cc4feae294edc937b93ff3eb6c49ca8d299b50fca"
+    },
+    {
+      "path": "research-next/implementation/results/campaign.json",
+      "bytes": 57235,
+      "sha256": "5cc4e8bdd8e848caa6ab3b35e0d3e40e03aa64f5fee06ea19e0232aeb24da3ab"
+    },
+    {
+      "path": "research-next/implementation/results/execution-validity.json",
+      "bytes": 281,
+      "sha256": "783485e3c01d2dfed6a220a228407f6129338d9523e03d6ef5aa8ef2235c73f8"
+    },
+    {
+      "path": "research-next/implementation/results/matrix-status.json",
+      "bytes": 2212,
+      "sha256": "85c1bd941a54c6ce553f90cf59919bf3b35d977698bf460efc3793e8109811cd"
+    }
+  ],
+  "frozen_source_checks": [
+    {
+      "path": "research-next/implementation/src/branch-audit.cjs",
+      "expected_sha256": "41ad1b087b1d7ba77f37d9c99b61e8a7c398915c6cfa3a74ef496258de8a822a",
+      "actual_sha256": "41ad1b087b1d7ba77f37d9c99b61e8a7c398915c6cfa3a74ef496258de8a822a",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/src/build-viewer.cjs",
+      "expected_sha256": "50d4cb21a30760943a93d7279f28fa2979274f08b8b6159798e33b8a549914aa",
+      "actual_sha256": "50d4cb21a30760943a93d7279f28fa2979274f08b8b6159798e33b8a549914aa",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/src/campaign.cjs",
+      "expected_sha256": "484203e1fdcf89d6a96855b98d7e2a9f95e5e1591686e95c12a2d1b254e04436",
+      "actual_sha256": "484203e1fdcf89d6a96855b98d7e2a9f95e5e1591686e95c12a2d1b254e04436",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/src/compare.cjs",
+      "expected_sha256": "294da37b4f921bca58334ffd015fbb60e6f58e91255c846842b4ab37e7e023f7",
+      "actual_sha256": "294da37b4f921bca58334ffd015fbb60e6f58e91255c846842b4ab37e7e023f7",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/src/controller-record.cjs",
+      "expected_sha256": "2cc74b6f1fbb3ebd34787a9c96d581f61305b7f5d4978a19c157f343dfc6f933",
+      "actual_sha256": "2cc74b6f1fbb3ebd34787a9c96d581f61305b7f5d4978a19c157f343dfc6f933",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/src/controller.cjs",
+      "expected_sha256": "35be1110afd6265e2911ef77b979cf40eaa4bd0f0ffc65e3174ecedc01120d46",
+      "actual_sha256": "35be1110afd6265e2911ef77b979cf40eaa4bd0f0ffc65e3174ecedc01120d46",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/src/exact-aero.cjs",
+      "expected_sha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+      "actual_sha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/src/freeze.cjs",
+      "expected_sha256": "c8b9d1fe8619b97eaa1a588ed8699c6aac7ff5b82aee3ccc6d63e4276d2643d1",
+      "actual_sha256": "c8b9d1fe8619b97eaa1a588ed8699c6aac7ff5b82aee3ccc6d63e4276d2643d1",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/src/io.cjs",
+      "expected_sha256": "4039e2a272d10936f9428dbc961067e739b9f79313d62621bec24acc88dff475",
+      "actual_sha256": "4039e2a272d10936f9428dbc961067e739b9f79313d62621bec24acc88dff475",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/src/joint-step.cjs",
+      "expected_sha256": "e9899ef7864032d147bde3d3d0d6dd02af662fceea691ae54b575b64955ec7b9",
+      "actual_sha256": "e9899ef7864032d147bde3d3d0d6dd02af662fceea691ae54b575b64955ec7b9",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/src/preflight.cjs",
+      "expected_sha256": "13ebd373e76eae90f1ac185d2be17ecf41cb1c8c9e2302055dbebe2ca50ff0a4",
+      "actual_sha256": "13ebd373e76eae90f1ac185d2be17ecf41cb1c8c9e2302055dbebe2ca50ff0a4",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/src/run.cjs",
+      "expected_sha256": "3554fc82371aa04f317953d55580fdc61c967afc395bfe78caa73d9b8fea4150",
+      "actual_sha256": "3554fc82371aa04f317953d55580fdc61c967afc395bfe78caa73d9b8fea4150",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/src/source.cjs",
+      "expected_sha256": "b5bd33d233704f497b580e42a9523e2d78c9f6a7b540bfdbd03d5a9747ddff43",
+      "actual_sha256": "b5bd33d233704f497b580e42a9523e2d78c9f6a7b540bfdbd03d5a9747ddff43",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/src/supervise.cjs",
+      "expected_sha256": "1d732ba7ff7b4ce7ebb458733616e0a98270754cf45172f9604d4b0a3206f0eb",
+      "actual_sha256": "1d732ba7ff7b4ce7ebb458733616e0a98270754cf45172f9604d4b0a3206f0eb",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-26-source/check-course.cjs",
+      "expected_sha256": "3876bfe04488bafe65cb44f453641f4bcd732919e1fc895b0789a933b34aac02",
+      "actual_sha256": "3876bfe04488bafe65cb44f453641f4bcd732919e1fc895b0789a933b34aac02",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-26-source/check.cjs",
+      "expected_sha256": "d841442107bfd711afcc74bc0aee74e8afbf5b9f452d668d0dbfdd7024bc4713",
+      "actual_sha256": "d841442107bfd711afcc74bc0aee74e8afbf5b9f452d668d0dbfdd7024bc4713",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-26-source/diagnose-contact.cjs",
+      "expected_sha256": "81222c34afd5f191a190828cddd836c644adba6fb7dbd1d9deca21714d8a2418",
+      "actual_sha256": "81222c34afd5f191a190828cddd836c644adba6fb7dbd1d9deca21714d8a2418",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-26-source/factory-narrow.json",
+      "expected_sha256": "1277cd41d5e63c9452192e99e9b83d4bb522a9df93651fb7387fac9c1257beac",
+      "actual_sha256": "1277cd41d5e63c9452192e99e9b83d4bb522a9df93651fb7387fac9c1257beac",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-26-source/factory-wide.cjs",
+      "expected_sha256": "8ea0d8784accfc039fee9ca2a2c0a86dc8e502b6d1003e4de54a8df8a999cc22",
+      "actual_sha256": "8ea0d8784accfc039fee9ca2a2c0a86dc8e502b6d1003e4de54a8df8a999cc22",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-26-source/factory-wide.json",
+      "expected_sha256": "43d42c22844101e5b338fbd49c5e9c25adb3c6b51042dd490b2e446a528c38a8",
+      "actual_sha256": "43d42c22844101e5b338fbd49c5e9c25adb3c6b51042dd490b2e446a528c38a8",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-26-source/factory.cjs",
+      "expected_sha256": "fe46384aac6150c45a2ba38e4494da16969aeab4a8875a8596f6ad8e53bb2c40",
+      "actual_sha256": "fe46384aac6150c45a2ba38e4494da16969aeab4a8875a8596f6ad8e53bb2c40",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-26-source/geometry.cjs",
+      "expected_sha256": "e209e492fc523ab3c0c7df62745fb0d3dd7204f35e53309938a19d7895ed3d4f",
+      "actual_sha256": "e209e492fc523ab3c0c7df62745fb0d3dd7204f35e53309938a19d7895ed3d4f",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-26-source/grid.cjs",
+      "expected_sha256": "f06010781770b64432935e5d825bcd1405b154b735ac4d0d654f145600cea302",
+      "actual_sha256": "f06010781770b64432935e5d825bcd1405b154b735ac4d0d654f145600cea302",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-26-source/sim.cjs",
+      "expected_sha256": "e14f2a6634539956b2a72cde8e2ed7855537021e7be2ad497910c9bfa93014a1",
+      "actual_sha256": "e14f2a6634539956b2a72cde8e2ed7855537021e7be2ad497910c9bfa93014a1",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-26-source/study.cjs",
+      "expected_sha256": "bb116ee1ecdfd8a0ae143880651ef308697ba248607ba3a8d30381df0e650308",
+      "actual_sha256": "bb116ee1ecdfd8a0ae143880651ef308697ba248607ba3a8d30381df0e650308",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-28-source/aero.cjs",
+      "expected_sha256": "710b0a8f0df62208e3385ac9b8288240b379fe9248a1a645251a77c533f24a62",
+      "actual_sha256": "710b0a8f0df62208e3385ac9b8288240b379fe9248a1a645251a77c533f24a62",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-28-source/check-aero.cjs",
+      "expected_sha256": "6fd3c0d4b08c56ce56c0f7c4a4756c3e7f022df1345435f3bb62b5b983082fbe",
+      "actual_sha256": "6fd3c0d4b08c56ce56c0f7c4a4756c3e7f022df1345435f3bb62b5b983082fbe",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-28-source/check-control-authority.cjs",
+      "expected_sha256": "e417e1bf624f5b86bc652013bbf43b14aaef0d5d8faed55c88a8b3deaa8a3801",
+      "actual_sha256": "e417e1bf624f5b86bc652013bbf43b14aaef0d5d8faed55c88a8b3deaa8a3801",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-28-source/check-coupling.cjs",
+      "expected_sha256": "17aa653cce4f4556863d389b52e4a5c9fed4d187e52360afdb588c7703654ba6",
+      "actual_sha256": "17aa653cce4f4556863d389b52e4a5c9fed4d187e52360afdb588c7703654ba6",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-28-source/check-domain.cjs",
+      "expected_sha256": "76f94a51e9f9e645dd386ced93cd9d9dfc9c97217dc5b5799b0476877f0dd9a6",
+      "actual_sha256": "76f94a51e9f9e645dd386ced93cd9d9dfc9c97217dc5b5799b0476877f0dd9a6",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-28-source/factory-narrow.json",
+      "expected_sha256": "1277cd41d5e63c9452192e99e9b83d4bb522a9df93651fb7387fac9c1257beac",
+      "actual_sha256": "1277cd41d5e63c9452192e99e9b83d4bb522a9df93651fb7387fac9c1257beac",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-28-source/factory-wide.cjs",
+      "expected_sha256": "8ea0d8784accfc039fee9ca2a2c0a86dc8e502b6d1003e4de54a8df8a999cc22",
+      "actual_sha256": "8ea0d8784accfc039fee9ca2a2c0a86dc8e502b6d1003e4de54a8df8a999cc22",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-28-source/factory-wide.json",
+      "expected_sha256": "43d42c22844101e5b338fbd49c5e9c25adb3c6b51042dd490b2e446a528c38a8",
+      "actual_sha256": "43d42c22844101e5b338fbd49c5e9c25adb3c6b51042dd490b2e446a528c38a8",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-28-source/factory.cjs",
+      "expected_sha256": "fe46384aac6150c45a2ba38e4494da16969aeab4a8875a8596f6ad8e53bb2c40",
+      "actual_sha256": "fe46384aac6150c45a2ba38e4494da16969aeab4a8875a8596f6ad8e53bb2c40",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-28-source/geometry.cjs",
+      "expected_sha256": "e209e492fc523ab3c0c7df62745fb0d3dd7204f35e53309938a19d7895ed3d4f",
+      "actual_sha256": "e209e492fc523ab3c0c7df62745fb0d3dd7204f35e53309938a19d7895ed3d4f",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-28-source/grid.cjs",
+      "expected_sha256": "f06010781770b64432935e5d825bcd1405b154b735ac4d0d654f145600cea302",
+      "actual_sha256": "f06010781770b64432935e5d825bcd1405b154b735ac4d0d654f145600cea302",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-28-source/sim.cjs",
+      "expected_sha256": "a6b76aa75c530b652c23f53e6c71cfaa61ba2c05c0ecd20593cae26e0ef02c85",
+      "actual_sha256": "a6b76aa75c530b652c23f53e6c71cfaa61ba2c05c0ecd20593cae26e0ef02c85",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-28-source/study.cjs",
+      "expected_sha256": "fd576578fbaff156b9e5092b3123630ebd04e98b15e037e94de7732d94af51ea",
+      "actual_sha256": "fd576578fbaff156b9e5092b3123630ebd04e98b15e037e94de7732d94af51ea",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-30-source/check-reference.cjs",
+      "expected_sha256": "f49520309e6f973019b0a981fb942d2bb81c58664f32abca82e891db8e6da113",
+      "actual_sha256": "f49520309e6f973019b0a981fb942d2bb81c58664f32abca82e891db8e6da113",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-30-source/check.cjs",
+      "expected_sha256": "6c881d132b1fbd9df8c0b910d6d18582f6f2404acf6a3543bf021bdcb983ddc2",
+      "actual_sha256": "6c881d132b1fbd9df8c0b910d6d18582f6f2404acf6a3543bf021bdcb983ddc2",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-30-source/factory-narrow.json",
+      "expected_sha256": "1277cd41d5e63c9452192e99e9b83d4bb522a9df93651fb7387fac9c1257beac",
+      "actual_sha256": "1277cd41d5e63c9452192e99e9b83d4bb522a9df93651fb7387fac9c1257beac",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-30-source/factory-wide.cjs",
+      "expected_sha256": "8ea0d8784accfc039fee9ca2a2c0a86dc8e502b6d1003e4de54a8df8a999cc22",
+      "actual_sha256": "8ea0d8784accfc039fee9ca2a2c0a86dc8e502b6d1003e4de54a8df8a999cc22",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-30-source/factory-wide.json",
+      "expected_sha256": "43d42c22844101e5b338fbd49c5e9c25adb3c6b51042dd490b2e446a528c38a8",
+      "actual_sha256": "43d42c22844101e5b338fbd49c5e9c25adb3c6b51042dd490b2e446a528c38a8",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-30-source/factory.cjs",
+      "expected_sha256": "fe46384aac6150c45a2ba38e4494da16969aeab4a8875a8596f6ad8e53bb2c40",
+      "actual_sha256": "fe46384aac6150c45a2ba38e4494da16969aeab4a8875a8596f6ad8e53bb2c40",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-30-source/geometry.cjs",
+      "expected_sha256": "e209e492fc523ab3c0c7df62745fb0d3dd7204f35e53309938a19d7895ed3d4f",
+      "actual_sha256": "e209e492fc523ab3c0c7df62745fb0d3dd7204f35e53309938a19d7895ed3d4f",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-30-source/grid.cjs",
+      "expected_sha256": "f06010781770b64432935e5d825bcd1405b154b735ac4d0d654f145600cea302",
+      "actual_sha256": "f06010781770b64432935e5d825bcd1405b154b735ac4d0d654f145600cea302",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-30-source/sim.cjs",
+      "expected_sha256": "d795530fb51f8f09281e70af6f9c6f075b626719926b0f02896e8ed0b5c9ac2d",
+      "actual_sha256": "d795530fb51f8f09281e70af6f9c6f075b626719926b0f02896e8ed0b5c9ac2d",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-30-source/study.cjs",
+      "expected_sha256": "021220c964308c401fd2fee61f5441a2684778e2cbb2369204c713547882c078",
+      "actual_sha256": "021220c964308c401fd2fee61f5441a2684778e2cbb2369204c713547882c078",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-30-source/wall-filter.cjs",
+      "expected_sha256": "8273cc40a9530748fe43e9ef0a4d9a995ee152f9968ce2368e61e2f205502512",
+      "actual_sha256": "8273cc40a9530748fe43e9ef0a4d9a995ee152f9968ce2368e61e2f205502512",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-31-source/audit-controls.cjs",
+      "expected_sha256": "33fc5e760ef2410ab3e6693d50c1b23574c0ffc005b43ea17b7db1206e455593",
+      "actual_sha256": "33fc5e760ef2410ab3e6693d50c1b23574c0ffc005b43ea17b7db1206e455593",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-31-source/check.cjs",
+      "expected_sha256": "3817ceeeb7c2cf68988b7b4691a2d44df330399942a430a117d55665edd3f892",
+      "actual_sha256": "3817ceeeb7c2cf68988b7b4691a2d44df330399942a430a117d55665edd3f892",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-31-source/factory-narrow.json",
+      "expected_sha256": "1277cd41d5e63c9452192e99e9b83d4bb522a9df93651fb7387fac9c1257beac",
+      "actual_sha256": "1277cd41d5e63c9452192e99e9b83d4bb522a9df93651fb7387fac9c1257beac",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-31-source/factory-wide.cjs",
+      "expected_sha256": "8ea0d8784accfc039fee9ca2a2c0a86dc8e502b6d1003e4de54a8df8a999cc22",
+      "actual_sha256": "8ea0d8784accfc039fee9ca2a2c0a86dc8e502b6d1003e4de54a8df8a999cc22",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-31-source/factory-wide.json",
+      "expected_sha256": "43d42c22844101e5b338fbd49c5e9c25adb3c6b51042dd490b2e446a528c38a8",
+      "actual_sha256": "43d42c22844101e5b338fbd49c5e9c25adb3c6b51042dd490b2e446a528c38a8",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-31-source/factory.cjs",
+      "expected_sha256": "fe46384aac6150c45a2ba38e4494da16969aeab4a8875a8596f6ad8e53bb2c40",
+      "actual_sha256": "fe46384aac6150c45a2ba38e4494da16969aeab4a8875a8596f6ad8e53bb2c40",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-31-source/geometry.cjs",
+      "expected_sha256": "e209e492fc523ab3c0c7df62745fb0d3dd7204f35e53309938a19d7895ed3d4f",
+      "actual_sha256": "e209e492fc523ab3c0c7df62745fb0d3dd7204f35e53309938a19d7895ed3d4f",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-31-source/grid.cjs",
+      "expected_sha256": "f06010781770b64432935e5d825bcd1405b154b735ac4d0d654f145600cea302",
+      "actual_sha256": "f06010781770b64432935e5d825bcd1405b154b735ac4d0d654f145600cea302",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-31-source/sim.cjs",
+      "expected_sha256": "2b6fbc51334fd0669b23eb7173c6af83e62414a725b032796df5cb38ac7f1c9e",
+      "actual_sha256": "2b6fbc51334fd0669b23eb7173c6af83e62414a725b032796df5cb38ac7f1c9e",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-31-source/study.cjs",
+      "expected_sha256": "b78d712bc66ba12c9faa6823520967cba8742edb5853e5d6b58e6a709cb9f5e6",
+      "actual_sha256": "b78d712bc66ba12c9faa6823520967cba8742edb5853e5d6b58e6a709cb9f5e6",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/milestone-31-source/wall-filter.cjs",
+      "expected_sha256": "8273cc40a9530748fe43e9ef0a4d9a995ee152f9968ce2368e61e2f205502512",
+      "actual_sha256": "8273cc40a9530748fe43e9ef0a4d9a995ee152f9968ce2368e61e2f205502512",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/research-roadmap.md",
+      "expected_sha256": "4186ab5a4af72ce4b2a813ef74472dd20f91863739190654ee7d3e4989154e0a",
+      "actual_sha256": "4186ab5a4af72ce4b2a813ef74472dd20f91863739190654ee7d3e4989154e0a",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/step02c-source/physics.cjs",
+      "expected_sha256": "0c46c9beb4e831c621658f6600c074f97c95966de07f5000eb64aa476a443fa1",
+      "actual_sha256": "0c46c9beb4e831c621658f6600c074f97c95966de07f5000eb64aa476a443fa1",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/snapshot/outputs/step03a-source/wake.cjs",
+      "expected_sha256": "fb6d5a1d632a0023818041ef6bc39316ff8ed950f318da1a6649e2515b9fd8bc",
+      "actual_sha256": "fb6d5a1d632a0023818041ef6bc39316ff8ed950f318da1a6649e2515b9fd8bc",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/configs/campaign.json",
+      "expected_sha256": "a5a981ac8d75bc109f835e4725ac60aebff278504579a0d6e8a27520af905992",
+      "actual_sha256": "a5a981ac8d75bc109f835e4725ac60aebff278504579a0d6e8a27520af905992",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/tests/fixtures.cjs",
+      "expected_sha256": "68665fb20fd1ba55d92406d77b52a18f1c1d5137c58ed44155ea294b33873e2e",
+      "actual_sha256": "68665fb20fd1ba55d92406d77b52a18f1c1d5137c58ed44155ea294b33873e2e",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/demo/app.js",
+      "expected_sha256": "9bb6d8b6e3df4aa4bb4402dc07ebe641b2de70f9719587f04475b5b154a368f7",
+      "actual_sha256": "9bb6d8b6e3df4aa4bb4402dc07ebe641b2de70f9719587f04475b5b154a368f7",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/demo/index.html",
+      "expected_sha256": "5976e2b0107537d18ba0a4bbbb1f190c7c6be9df848806aca6a71309dc777e22",
+      "actual_sha256": "5976e2b0107537d18ba0a4bbbb1f190c7c6be9df848806aca6a71309dc777e22",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/demo/vendor/OrbitControls.js",
+      "expected_sha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c",
+      "actual_sha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/demo/vendor/THREE-LICENSE.txt",
+      "expected_sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "actual_sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/demo/vendor/three.core.js",
+      "expected_sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20",
+      "actual_sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20",
+      "matches": true
+    },
+    {
+      "path": "research-next/implementation/demo/vendor/three.module.js",
+      "expected_sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+      "actual_sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+      "matches": true
+    }
+  ],
+  "frozen_source_count": 71,
+  "all_frozen_sources_match": true,
+  "saved_audit_metadata_inventory": [
+    {
+      "path": "research-next/implementation/results/audit/preflight-s840131.json",
+      "sha256": "e01d6d5373522c99814f38c2adcf58ff5f6aaed71a066a231428fd03fe3aa346",
+      "sample_count_recorded": 6401,
+      "bracket_sides": 20,
+      "retained_stage_sides": 0,
+      "retained_distinct_raw_stage_sides": 0
+    },
+    {
+      "path": "research-next/implementation/results/audit/preflight-s840137.json",
+      "sha256": "79236c42ab51e918a5f5abd980ec9491c00095085785aa9d0d0720a8c53e5e82",
+      "sample_count_recorded": 6401,
+      "bracket_sides": 20,
+      "retained_stage_sides": 0,
+      "retained_distinct_raw_stage_sides": 0
+    },
+    {
+      "path": "research-next/implementation/results/audit/s4301-compatibility.json",
+      "sha256": "38ad8891d3594237e852e829d2d81918e1e70f9b608e05c9b41e496be16e1e9f",
+      "sample_count_recorded": 401,
+      "bracket_sides": 20,
+      "retained_stage_sides": 0,
+      "retained_distinct_raw_stage_sides": 0
+    },
+    {
+      "path": "research-next/implementation/results/audit/s840131-H4.json",
+      "sha256": "4185dce5a507eade33df766692844042373c94aa259c6d9e328bbeff883a486b",
+      "sample_count_recorded": 12801,
+      "bracket_sides": 20,
+      "retained_stage_sides": 0,
+      "retained_distinct_raw_stage_sides": 0
+    },
+    {
+      "path": "research-next/implementation/results/audit/s840131-J1.json",
+      "sha256": "13d903bbabb5167f60020dba9ff051f875b44fb11b9a427e0ece012438d377f4",
+      "sample_count_recorded": 8001,
+      "bracket_sides": 20,
+      "retained_stage_sides": 0,
+      "retained_distinct_raw_stage_sides": 0
+    },
+    {
+      "path": "research-next/implementation/results/audit/s840131-J2.json",
+      "sha256": "3544de1278be0d4598b7648dc7e66fc2c2e734ba2ed9df15ec42d7b22cd94d73",
+      "sample_count_recorded": 16001,
+      "bracket_sides": 20,
+      "retained_stage_sides": 0,
+      "retained_distinct_raw_stage_sides": 0
+    },
+    {
+      "path": "research-next/implementation/results/audit/s840131-J3.json",
+      "sha256": "ac5477bb1ad59aa46e21f49cce3e896e79cf2c13c00d7f369ed950e70e8daf99",
+      "sample_count_recorded": 32001,
+      "bracket_sides": 20,
+      "retained_stage_sides": 0,
+      "retained_distinct_raw_stage_sides": 0
+    },
+    {
+      "path": "research-next/implementation/results/audit/s840131-P1.json",
+      "sha256": "947bb7d568c0ed84315f855ec408aa91d7888f82b92e9ab4475998c526ed9415",
+      "sample_count_recorded": 25385,
+      "bracket_sides": 20,
+      "retained_stage_sides": 0,
+      "retained_distinct_raw_stage_sides": 0
+    },
+    {
+      "path": "research-next/implementation/results/audit/s840137-J1.json",
+      "sha256": "d555394034d381a6af1a3368741714eaade0969e49fbc735e14b19595f5487e6",
+      "sample_count_recorded": 8001,
+      "bracket_sides": 20,
+      "retained_stage_sides": 0,
+      "retained_distinct_raw_stage_sides": 0
+    },
+    {
+      "path": "research-next/implementation/results/audit/s840137-J2.json",
+      "sha256": "5d856a108b26c5a5ec533d5c775093fdd193bc04c6ccd1e3373a48d5b5c2125e",
+      "sample_count_recorded": 16001,
+      "bracket_sides": 20,
+      "retained_stage_sides": 0,
+      "retained_distinct_raw_stage_sides": 0
+    },
+    {
+      "path": "research-next/implementation/results/audit/s840137-J3.json",
+      "sha256": "fa89c399d117214862d95dd6e8a1da034d93797001e702252cdbd5db15e03a22",
+      "sample_count_recorded": 32001,
+      "bracket_sides": 20,
+      "retained_stage_sides": 0,
+      "retained_distinct_raw_stage_sides": 0
+    }
+  ],
+  "retained_stage_sides": 0,
+  "input_manifest": "CORPUS-MANIFEST.json",
+  "old_window_terminal": true,
+  "old_window_resumed": false
+}

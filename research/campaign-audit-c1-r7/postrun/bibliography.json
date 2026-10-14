@@ -1,0 +1,146 @@
+{
+  "schema": "verified-postrun-bibliography/v1",
+  "campaignId": "AUDIT-C1-R7",
+  "preparedAtUtc": "2026-10-14T09:33:59.869531+00:00",
+  "resultContext": "Terminal outer admission rejection before supervisor launch; 0/32 controls, 0/229 scientific cases. References support planned methodology/API assumptions, not completed scientific tests.",
+  "paperMetadataProvenance": {
+    "path": "research-audit-successor-r3/postrun-literature/bibliography.json",
+    "bytes": 2675,
+    "sha256": "1926c04cbb0dd8bd8a39b264dfc0b2df7b3e477d941ff3e5f4fed92807f62aec",
+    "rawPrivateInventoryIncluded": false
+  },
+  "references": [
+    {
+      "id": "necula2000translation",
+      "title": "Translation Validation for an Optimizing Compiler",
+      "authors": [
+        "George C. Necula"
+      ],
+      "year": 2000,
+      "venue": "ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)",
+      "publicationStatus": "Published conference paper; consulted author-hosted institutional full text",
+      "url": "https://people.eecs.berkeley.edu/~necula/Papers/tv_pldi00.pdf",
+      "version": "Author-hosted published-paper copy, accessed 2026-10-14",
+      "verification": "Title, author, venue and year in PDF header; corroborated by author publication list https://people.eecs.berkeley.edu/~necula/papers.html",
+      "locations": [
+        "Abstract and section 1, PDF pages 1–2"
+      ],
+      "accessLimitations": "ACM/Crossref endpoints could not be read in this session; DOI and inconsistent secondary page ranges omitted.",
+      "kind": "conference_paper_or_tutorial",
+      "verificationStatus": "bibliographic_identity_verified_in_inherited_primary_source_record; relevant sections freshly read by root for R7",
+      "correctionSearchStatus": "No new correction/erratum search performed for this R7 report. The inherited record describes only a limited search; no exhaustive clearance or latest-work claim.",
+      "r7Locations": [
+        "Abstract and section 1, PDF pages 1–2"
+      ],
+      "r7Use": "Inspiration for checking transformed outputs against an implementation comparator; no formal translation-validation proof or novel-method claim."
+    },
+    {
+      "id": "sargent2020validation",
+      "title": "Verification and Validation of Simulation Models: An Advanced Tutorial",
+      "authors": [
+        "Robert G. Sargent"
+      ],
+      "year": 2020,
+      "venue": "Proceedings of the 2020 Winter Simulation Conference",
+      "publicationStatus": "Published conference tutorial; individual review process not independently verified",
+      "url": "https://informs-sim.org/wsc20papers/002.pdf",
+      "version": "Official proceedings PDF, accessed 2026-10-14",
+      "verification": "Title, author, year and proceedings venue verified in full-text header.",
+      "locations": [
+        "Section 3.1, PDF page 4 / printed page 19",
+        "Section 4, PDF pages 4–5 / printed pages 19–20",
+        "Section 8, PDF page 11 / printed page 26"
+      ],
+      "accessLimitations": "IEEE landing page returned insufficient bibliographic text; unverified DOI omitted in favor of official stable URL.",
+      "kind": "conference_paper_or_tutorial",
+      "verificationStatus": "bibliographic_identity_verified_in_inherited_primary_source_record; relevant sections freshly read by root for R7",
+      "correctionSearchStatus": "No new correction/erratum search performed for this R7 report. The inherited record describes only a limited search; no exhaustive clearance or latest-work claim.",
+      "r7Locations": [
+        "Section 3.1, PDF page 4 / printed page 19",
+        "Section 7, operational validity",
+        "Section 8, PDF page 11 / printed page 26"
+      ],
+      "r7Use": "Distinguish implementation verification from physical/operational validation; retain detailed and summary evidence. R7 scientific work never began."
+    },
+    {
+      "kind": "official_technical_documentation",
+      "accessedDate": "2026-10-14",
+      "publicationStatus": "Technical API documentation, not a peer-reviewed research paper",
+      "correctionSearchStatus": "No independent correction or erratum search claimed.",
+      "id": "node24190util",
+      "title": "Node.js v24.19.0 documentation: Utilities",
+      "url": "https://nodejs.org/download/release/v24.19.0/docs/api/util.html",
+      "version": "Node.js v24.19.0; matches the frozen Node runtime version",
+      "locations": [
+        "util.isDeepStrictEqual section: default comparison includes object prototypes and constructors"
+      ],
+      "verificationStatus": "Root read the version-pinned official documentation on 2026-10-14; earlier latest-v24 fetch failed, pinned page succeeded.",
+      "r7Use": "Explicit metadata-prototype normalization at the bridge boundary; unchanged live B/C1 property/reference comparator. Documentation is not executed test evidence."
+    },
+    {
+      "kind": "official_technical_documentation",
+      "accessedDate": "2026-10-14",
+      "publicationStatus": "Technical API documentation, not a peer-reviewed research paper",
+      "correctionSearchStatus": "No independent correction or erratum search claimed.",
+      "id": "node24190fs",
+      "title": "Node.js v24.19.0 documentation: File system",
+      "url": "https://nodejs.org/download/release/v24.19.0/docs/api/fs.html",
+      "version": "Node.js v24.19.0; matches the frozen Node runtime version",
+      "locations": [
+        "File system flags: wx exclusive creation",
+        "fs.writeSync: returned byte count",
+        "fs.fsyncSync: flush request and platform-dependent behavior"
+      ],
+      "verificationStatus": "Root read the version-pinned official documentation on 2026-10-14.",
+      "r7Use": "Exclusive first-failure target, checked writes and file/directory flush assumptions; no power-loss/crash-durability proof."
+    },
+    {
+      "kind": "official_technical_documentation",
+      "accessedDate": "2026-10-14",
+      "publicationStatus": "Technical API documentation, not a peer-reviewed research paper",
+      "correctionSearchStatus": "No independent correction or erratum search claimed.",
+      "id": "python312osread",
+      "title": "Python 3.12 documentation: os — Miscellaneous operating system interfaces",
+      "url": "https://docs.python.org/3.12/library/os.html#os.read",
+      "version": "Python 3.12 documentation; page reported 3.12.15 when consulted, frozen interpreter 3.12.14",
+      "locations": [
+        "os.read(fd,n): at most n bytes; empty bytes at end of file"
+      ],
+      "verificationStatus": "Official API section read by independent resource review on 2026-10-14. Same documented 3.12 series, not an exact-patch experiment claim.",
+      "r7Use": "Bound requested pipe-read chunk sizes; actual R7 stopped before supervisor launch."
+    },
+    {
+      "kind": "official_technical_documentation",
+      "accessedDate": "2026-10-14",
+      "publicationStatus": "Technical API documentation, not a peer-reviewed research paper",
+      "correctionSearchStatus": "No independent correction or erratum search claimed.",
+      "id": "python312fcntl",
+      "title": "Python 3.12 documentation: fcntl — The fcntl and ioctl system calls",
+      "url": "https://docs.python.org/3.12/library/fcntl.html",
+      "version": "Python 3.12 documentation; page reported 3.12.15 when consulted, frozen interpreter 3.12.14",
+      "locations": [
+        "fcntl.fcntl function",
+        "F_GETPIPE_SZ and F_SETPIPE_SZ Linux constants; the R7 observer uses only the GET capacity query"
+      ],
+      "verificationStatus": "Official API section read during implementation/resource review on 2026-10-14.",
+      "r7Use": "Query actual capacity without resizing. R7 measured 131,072 B combined, which exceeded its frozen 16,384 B outer admission ceiling."
+    },
+    {
+      "kind": "official_technical_documentation",
+      "accessedDate": "2026-10-14",
+      "publicationStatus": "Technical API documentation, not a peer-reviewed research paper",
+      "correctionSearchStatus": "No independent correction or erratum search claimed.",
+      "id": "linuxman619pipe7",
+      "title": "pipe(7) — Linux manual page",
+      "url": "https://man7.org/linux/man-pages/man7/pipe.7.html#DESCRIPTION",
+      "version": "Linux man-pages 6.19 as consulted; this is the documentation version, not a measured kernel version",
+      "locations": [
+        "DESCRIPTION: I/O on pipes and FIFOs",
+        "DESCRIPTION: Pipe capacity"
+      ],
+      "verificationStatus": "Primary Linux interface documentation read by independent resource review on 2026-10-14.",
+      "r7Use": "EOF requires closing all write descriptors; capacity should be queried rather than assumed. Supports the admission/log reasoning, not a scientific result or universal concurrency proof."
+    }
+  ],
+  "searchScope": "Verified primary paper sections and official API documentation used by the implementation ledger. Not a systematic novelty search. Unverified DOIs are omitted. No new correction, latest-literature, formal-proof or physical-validation claim."
+}

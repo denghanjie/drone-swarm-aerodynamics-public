@@ -1,0 +1,68 @@
+test_52_logical_files_54_objects_two_exact_raw_dense_identities (__main__.CheckpointManifestMetadataTests.test_52_logical_files_54_objects_two_exact_raw_dense_identities) ... ok
+test_checks_all_destinations_before_creating_any (__main__.ReconstructionTests.test_checks_all_destinations_before_creating_any) ... ok
+test_cli_success_and_failure_codes (__main__.ReconstructionTests.test_cli_success_and_failure_codes) ... ok
+test_detects_change_while_reading (__main__.ReconstructionTests.test_detects_change_while_reading) ... ok
+test_duplicate_logical_paths_are_rejected (__main__.ReconstructionTests.test_duplicate_logical_paths_are_rejected) ... ok
+test_existing_mismatched_destination_is_never_overwritten (__main__.ReconstructionTests.test_existing_mismatched_destination_is_never_overwritten) ... ok
+test_existing_wrong_size_destination_is_never_overwritten (__main__.ReconstructionTests.test_existing_wrong_size_destination_is_never_overwritten) ... ok
+test_extra_trailing_byte_is_rejected (__main__.ReconstructionTests.test_extra_trailing_byte_is_rejected) ... ok
+test_file_as_ancestor_is_rejected (__main__.ReconstructionTests.test_file_as_ancestor_is_rejected) ... ok
+test_install_race_cannot_clobber_new_destination (__main__.ReconstructionTests.test_install_race_cannot_clobber_new_destination) ... ok
+test_local_path_metadata_is_never_used_for_io (__main__.ReconstructionTests.test_local_path_metadata_is_never_used_for_io) ... ok
+test_manifest_counts_and_total_are_checked (__main__.ReconstructionTests.test_manifest_counts_and_total_are_checked) ... ok
+test_manifest_symlink_and_duplicate_keys_rejected (__main__.ReconstructionTests.test_manifest_symlink_and_duplicate_keys_rejected) ... ok
+test_matching_concurrent_destination_is_preserved (__main__.ReconstructionTests.test_matching_concurrent_destination_is_preserved) ... ok
+test_missing_input_is_rejected (__main__.ReconstructionTests.test_missing_input_is_rejected) ... ok
+test_modes_and_object_counts_are_checked (__main__.ReconstructionTests.test_modes_and_object_counts_are_checked) ... ok
+test_object_git_blob_sha1_is_independently_checked (__main__.ReconstructionTests.test_object_git_blob_sha1_is_independently_checked) ... ok
+test_object_sha256_is_independently_checked (__main__.ReconstructionTests.test_object_sha256_is_independently_checked) ... ok
+test_offsets_reject_gaps_overlaps_and_wrong_types (__main__.ReconstructionTests.test_offsets_reject_gaps_overlaps_and_wrong_types) ... ok
+test_original_dense_git_blob_identity_is_checked (__main__.ReconstructionTests.test_original_dense_git_blob_identity_is_checked) ... ok
+test_other_inventory_object_is_also_verified (__main__.ReconstructionTests.test_other_inventory_object_is_also_verified) ... ok
+test_oversized_transport_object_is_rejected_without_io (__main__.ReconstructionTests.test_oversized_transport_object_is_rejected_without_io) ... ok
+test_part_changed_after_precheck_is_reverified (__main__.ReconstructionTests.test_part_changed_after_precheck_is_reverified) ... ok
+test_rejects_dangling_symlink_input (__main__.ReconstructionTests.test_rejects_dangling_symlink_input) ... ok
+test_rejects_dangling_symlink_output (__main__.ReconstructionTests.test_rejects_dangling_symlink_output) ... ok
+test_rejects_duplicate_input_and_output_overlaps (__main__.ReconstructionTests.test_rejects_duplicate_input_and_output_overlaps) ... ok
+test_rejects_existing_directory_as_destination (__main__.ReconstructionTests.test_rejects_existing_directory_as_destination) ... ok
+test_rejects_fifo_without_blocking (__main__.ReconstructionTests.test_rejects_fifo_without_blocking) ... ok
+test_rejects_noninteger_size_and_bad_hash (__main__.ReconstructionTests.test_rejects_noninteger_size_and_bad_hash) ... ok
+test_rejects_symlink_input (__main__.ReconstructionTests.test_rejects_symlink_input) ... ok
+test_rejects_symlink_output (__main__.ReconstructionTests.test_rejects_symlink_output) ... ok
+test_rejects_symlink_parent (__main__.ReconstructionTests.test_rejects_symlink_parent) ... ok
+test_rejects_symlink_root_and_root_ancestor (__main__.ReconstructionTests.test_rejects_symlink_root_and_root_ancestor) ... ok
+test_rejects_traversal_absolute_and_nonportable_paths (__main__.ReconstructionTests.test_rejects_traversal_absolute_and_nonportable_paths) ... ok
+test_success_preserves_parts_and_exact_existing_output (__main__.ReconstructionTests.test_success_preserves_parts_and_exact_existing_output) ... ok
+test_temp_name_collision_preserves_existing_file (__main__.ReconstructionTests.test_temp_name_collision_preserves_existing_file) ... ok
+test_truncated_by_one_byte_is_rejected (__main__.ReconstructionTests.test_truncated_by_one_byte_is_rejected) ... ok
+test_verify_only_checks_joined_identity_without_existing_output (__main__.ReconstructionTests.test_verify_only_checks_joined_identity_without_existing_output) ... ok
+test_verify_only_does_not_create_output (__main__.ReconstructionTests.test_verify_only_does_not_create_output) ... ok
+test_verify_only_rejects_mismatched_existing_output (__main__.ReconstructionTests.test_verify_only_rejects_mismatched_existing_output) ... ok
+test_whole_identity_must_match_its_object (__main__.ReconstructionTests.test_whole_identity_must_match_its_object) ... ok
+test_wrong_part_hash (__main__.ReconstructionTests.test_wrong_part_hash) ... ok
+test_wrong_part_order_rejected_by_original_whole_sha (__main__.ReconstructionTests.test_wrong_part_order_rejected_by_original_whole_sha) ... ok
+test_wrong_part_size (__main__.ReconstructionTests.test_wrong_part_size) ... ok
+test_wrong_whole_sha_is_rejected_without_destination (__main__.ReconstructionTests.test_wrong_whole_sha_is_rejected_without_destination) ... ok
+
+----------------------------------------------------------------------
+Ran 45 tests in 0.083s
+
+OK
+
+Separate local-source identity audit: PASS
+Audit date: 2026-10-14
+Python: 3.12.14
+Platform family: Linux
+Logical files checked: 52
+Transport byte slices checked: 54
+Logical bytes checked: 58664800
+Checks: exact byte size, SHA-256, Git blob SHA-1
+Procedure: sequentially read each original file; independently hash each declared object slice and complete logical file.
+Part files or full-size data copies created: 0
+Numerical models or experiments run: 0
+Downloaded public checkout verified: no; requires separate publication evidence
+
+Public checkout test command:
+python3 -B research/campaign-joint-stage-reference/archive/test_reconstruct_binary_checkpoint.py
+reconstruct_binary_checkpoint.py SHA-256: 2b9614cc5001a4505aa899ef417320f58768a80f4b4b9cac4a3e16db76f29b4a
+test_reconstruct_binary_checkpoint.py SHA-256: ebe43f40965a69e13db0aef78ff50010739199bbe54ecfdeb97f8d22d35e5d70
