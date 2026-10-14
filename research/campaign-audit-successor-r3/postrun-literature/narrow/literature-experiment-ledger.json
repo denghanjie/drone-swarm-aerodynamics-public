@@ -1,0 +1,44 @@
+{
+  "schema": "literature-experiment-ledger/v1",
+  "status": "Results-only postrun literature supplement; no detailed scientific inventory supplied",
+  "unresolvedProblem": "Historical and current saved states use different tick units, but the anchor selector treated them as the same clock.",
+  "entries": [
+    {
+      "referenceId": "necula2000translation",
+      "idea": "Check the result of a transformation rather than assume that the transforming implementation is always correct.",
+      "sourceLocation": [
+        "Abstract and section 1, PDF pages 1\u20132"
+      ],
+      "relationship": "Inspiration only; our finite differential tests are not formal translation validation.",
+      "assumptionsAndLimits": "Compiler intermediate representations and symbolic validation differ from our JavaScript finite-corpus observation checks.",
+      "hypothesis": "Separate candidate-versus-baseline comparison from record-identity selection; an anchor mismatch can be localized without attributing it prematurely to the candidate.",
+      "experimentIds": [
+        "AUDIT-C1-R3"
+      ],
+      "implementationCommits": [],
+      "results": "Retained-data diagnosis: B and C1 agree in the failed observation and match the correct existing 1-second signature; the selected 0.125-second anchor differs. No new scientific execution; full correctness remains unestablished.",
+      "evidence": "../../postrun-diagnosis/public-narrow/EVIDENCE.json"
+    },
+    {
+      "referenceId": "sargent2020validation",
+      "idea": "Separate data validity, implementation verification and operational validity; document detailed and summary evidence.",
+      "sourceLocation": [
+        "Section 3.1, PDF page 4 / printed page 19",
+        "Section 4, PDF pages 4\u20135 / printed pages 19\u201320",
+        "Section 8, PDF page 11 / printed page 26"
+      ],
+      "relationship": "Adapted evaluation organization; no reproduction of physical-validation results.",
+      "assumptionsAndLimits": "General simulation methodology supplies neither drone aerodynamics parameters nor physical reference data.",
+      "hypothesis": "An explicit source-timebase identity contract will reject wrongly mapped anchors before any audit comparison.",
+      "proposedExperiment": "In a separate prospective plan, validate all 23 saved-state selectors against source clock, physical time, anchor row and exact retained state identity; mutate units, end times and missing metadata to demand rejection. No model integration is needed for this contract check.",
+      "acceptance": "Every declared selector maps to its independently specified event; all wrong-unit or ambiguous mappings reject. Any unexplained case blocks a numerical successor.",
+      "stoppingCondition": "Stop on first unexplained identity mismatch; preserve all inputs and outputs. Do not edit or retry terminal R3.",
+      "experimentIds": [
+        "AUDIT-C1-R3"
+      ],
+      "implementationCommits": [],
+      "results": "The one observed failure is diagnosed from retained bytes. Proposed contract experiment is not yet run; there is no new aerodynamic validation.",
+      "evidence": "../../postrun-review/REVIEW.narrow.md"
+    }
+  ]
+}

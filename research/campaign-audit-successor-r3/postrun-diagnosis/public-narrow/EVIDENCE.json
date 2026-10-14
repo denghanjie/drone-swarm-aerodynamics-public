@@ -1,0 +1,64 @@
+{
+  "schema": "audit-c1-r3-event-only-diagnosis/v1",
+  "publicDerivative": true,
+  "scope": "Selected facts about one already-retained failed observation. No file inventory, source-pin list, runtime manifest, raw state array or decoded output graph is included. No scientific code rerun.",
+  "publicationRestriction": "Detailed retained-file and runtime inventory publication remains blocked pending explicit approval. This event-only derivative does not imply that approval.",
+  "terminal": {
+    "campaign": "AUDIT-C1-R3",
+    "status": "integrity_blocked",
+    "job": "saved-json-states",
+    "case": "json-9-final",
+    "error": "Available endpoint original signature mismatch",
+    "fullyPassedSavedCases": 19,
+    "attemptedSavedObservationsPerVariant": 20,
+    "plannedSavedCases": 23,
+    "unattemptedSavedCases": 3
+  },
+  "event": {
+    "historicalEndTick": 6400,
+    "historicalTickSeconds": 0.00015625,
+    "historicalEndTimeSeconds": 1,
+    "currentTickSeconds": 1.953125e-05,
+    "unconvertedSelectedTick": 6400,
+    "incorrectAnchorRow": 800,
+    "incorrectAnchorTimeSeconds": 0.125,
+    "correspondingCurrentTick": 51200,
+    "correctExistingAnchorRow": 6400,
+    "correctExistingAnchorTimeSeconds": 1
+  },
+  "retainedDataComparisons": {
+    "baselineCandidateOutputAndClassStateEqual": true,
+    "capturedInputEqualsSourceJsonFinal": true,
+    "capturedInputEqualsDenseRow6400": true,
+    "capturedInputEqualsDenseRow800": false,
+    "jsonFinalRoundtripPreservesFloat64Bytes": true,
+    "inputShape": [
+      16,
+      17
+    ],
+    "inputValues": 272,
+    "inputBytes": 2176,
+    "capturedBaselineSignature": "5d54ccfe9b4598655fadac3080ee70a56b29968eafbe3d8ec7c769b2ca392cc0",
+    "capturedCandidateSignature": "5d54ccfe9b4598655fadac3080ee70a56b29968eafbe3d8ec7c769b2ca392cc0",
+    "selectedExistingSignature": "cf7cd01b3a3df7c3a9b57f9b707e8f9eada4de279671e245d4fa84d0948f0eea",
+    "correctExistingSignature": "5d54ccfe9b4598655fadac3080ee70a56b29968eafbe3d8ec7c769b2ca392cc0",
+    "signatureRecalculated": false
+  },
+  "interpretation": {
+    "cause": "Historical tick6400 was interpreted using the current clock; the final one-second state was compared with the already-existing one-eighth-second anchor.",
+    "candidateCalculationMismatchDemonstrated": false,
+    "fullEquivalenceEstablished": false,
+    "completeGatePassed": false,
+    "benchmarksRun": 0,
+    "oldReferenceQualified": false,
+    "retryPerformed": false,
+    "remainingCasesStillUnknown": true
+  },
+  "limits": [
+    "These comparisons were established by the prior read-only retained-data diagnosis; this derivative performs no new simulation, audit, fixture or gate.",
+    "Exact B/C1 observation equality preceded the failed historical anchor. The failed case did not complete its finish check.",
+    "The active-case running label is a stale status at the exception, not a currently running process.",
+    "A single diagnosed selector error does not prove the remaining corpus or proposed fix would pass.",
+    "The public checkpoint omits the detailed freeze/input/source/runtime inventories and cannot provide full reproduction."
+  ]
+}

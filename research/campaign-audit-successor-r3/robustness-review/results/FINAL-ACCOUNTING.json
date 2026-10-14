@@ -1,0 +1,24 @@
+{
+  "schema": "audit-c1-final-accounting/v1",
+  "wallSecondsBeforeWrite": 4.2006738310046785,
+  "processTreeCpuSecondsBeforeWrite": 5.604814999999999,
+  "withinHardCapsBeforeWrite": true,
+  "retainedBeforeWrite": {
+    "new": {
+      "bytes": 1997493,
+      "files": 91
+    },
+    "old": {
+      "bytes": 134229313,
+      "files": 287
+    },
+    "predecessorReservationBytes": 4217947,
+    "accountingManifestSha256": "c3edcb8e53697ad12e589baccb223bafd88bdd56c13e311310045d1a4b9407a9",
+    "combinedBytes": 140444753
+  },
+  "immutableCensusVerified": true,
+  "peakNewLogicalRetainedBytesBeforeWrite": 1997493,
+  "peakCombinedLogicalRetainedBytesBeforeWrite": 140444753,
+  "qualificationRequires": "Complete passed semantic gate, applicable cost terminal status, all resource/identity caps and no final overrun receipt.",
+  "meaning": "Final evidence write is charged to same clock; values here are explicitly before this write."
+}

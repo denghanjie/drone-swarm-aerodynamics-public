@@ -1,0 +1,76 @@
+{
+  "schema": "audit-c1-r3-results-only-display/v1",
+  "campaignId": "AUDIT-C1-R3",
+  "publicationScope": "Separate results-only derivative while broader inventory publication remains pending. The disclosure scope changed; scientific results did not. Originals and prior public derivatives remain unchanged.",
+  "fullReproductionPackage": false,
+  "fullCorrectnessEstablished": false,
+  "speedupMeasured": false,
+  "newFlightTrajectories": false,
+  "physicalValidation": false,
+  "terminalStatus": "integrity_blocked",
+  "failureReason": "Available endpoint original signature mismatch",
+  "counts": {
+    "plannedJobs": 82,
+    "passedJobs": 1,
+    "failedJobs": 1,
+    "unstartedJobs": 80,
+    "syntheticPassedCases": 81,
+    "savedCompletedCases": 19,
+    "savedPairedObservations": 20,
+    "requiredCases": 229,
+    "fullyPassedCases": 100,
+    "failedWhileActiveCases": 1,
+    "unattemptedCases": 128,
+    "benchmarkJobsRun": 0
+  },
+  "aggregateCommitments": {
+    "freezeSha256": "39fb07b5b0c461dab938302397914756cd645c81aa16718f4e267100dc54c74f",
+    "releaseSha256": "7eb939908f3fa82356cb98a3c592f18c203ad6ce549c4df0ac60981e639af0bb",
+    "failureCaptureBytes": 325273,
+    "failureCaptureSha256": "dbdda8c74c5ac50d042eafb2e6d1572683a3602eda052f144c9f8e38f8b8bdbd",
+    "meaning": "Aggregate commitments only. Detailed frozen/source/runtime/input inventories and raw binary capture are not included or linked."
+  },
+  "records": [
+    {
+      "id": "start",
+      "path": "../robustness-review/results/WINDOW-STARTED.json",
+      "label": "Original start marker",
+      "bytes": 527,
+      "sha256": "f35edfbd10c97c0605090fc4e263c561a893ac35bf4986a26c61912712a8bef1"
+    },
+    {
+      "id": "accounting",
+      "path": "../robustness-review/results/FINAL-ACCOUNTING.json",
+      "label": "Original final accounting",
+      "bytes": 931,
+      "sha256": "db9c2f7d10ed24aec2c83ffb99357250ee337c70fa416cfba1c7a30a6c42f873"
+    },
+    {
+      "id": "synthetic",
+      "path": "../implementation/results/receipts/synthetic.json",
+      "label": "Original synthetic child receipt",
+      "bytes": 100295,
+      "sha256": "0b504959db5a34186411d98562673b532d7e270d3059ef1e39a9916adcca280c"
+    },
+    {
+      "id": "saved",
+      "path": "../implementation/results/receipts/saved-json-states.json",
+      "label": "Original failed saved-state child receipt",
+      "bytes": 26599,
+      "sha256": "3fb8e7924b8d5ef72501ff42ce9e2628a9d7c3906996aa2aedf31fa61372c8ba"
+    },
+    {
+      "id": "checkpoint",
+      "path": "../robustness-review/results/last-durable-checkpoint.json",
+      "label": "Original last-completed-job checkpoint",
+      "bytes": 3527,
+      "sha256": "52b255971751c52b18684d4e73f666b3406efc6b6b381037d2389479596d7367"
+    }
+  ],
+  "historicalReplay": {
+    "localPath": "../../research-next/postrun-display/joint-stages-partial-offline.html",
+    "publicPath": "../../campaign-joint-stage-reference/postrun-display/joint-stages-partial-offline.html",
+    "meaning": "Existing historical viewer only. P1 displayed poses end at 0.990 s, then hold; actual accepted historical stop is 0.9915625 s. No new simulation."
+  },
+  "verification": "Static local links, JSON, selected-record hashes, and JavaScript syntax only. No browser, scientific execution, or remote write."
+}
