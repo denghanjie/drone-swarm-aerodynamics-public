@@ -1,0 +1,20 @@
+{
+  "allowlist": "Literal constants plus exact named FunctionDefs only. No full-module import, Supervisor construction, initialization, marker or numerical code.",
+  "candidate": {
+    "EXPECTED_SEEDS": "EXPECTED_SEEDS = [840131, 840137]",
+    "ORDERS": "ORDERS = {840131: ['BC','CB','CB','BC','BC','CB','CB','BC'],\n          840137: ['CB','BC','BC','CB','CB','BC','BC','CB']}",
+    "expected_performance_slots": "def expected_performance_slots():\n    return [(w, s, b, 'B' if v == 'B' else 'C1')\n            for w in ('W-ENDPOINT', 'W-STAGE-FIXTURE')\n            for s in EXPECTED_SEEDS for b, order in enumerate(ORDERS[s])\n            for v in order]",
+    "verify_jobs": "def verify_jobs(jobs):\n    rows = jobs.get('jobs')\n    if not isinstance(rows, list) or not rows:\n        raise RuntimeError('Missing fixed job list')\n    seen_performance = False\n    seen = set()\n    slots = []\n    for row in rows:\n        if row.get('id') in seen or not isinstance(row.get('id'), str):\n            raise RuntimeError('Missing/duplicate job ID')\n        seen.add(row['id'])\n        phase = row.get('phase')\n        if phase == 'performance':\n            seen_performance = True\n            if type(row.get('block')) is not int or type(row.get('seed')) is not int:\n                raise RuntimeError('Benchmark seed/block must be integers')\n            slots.append((row.get('workload'), row.get('seed'), row.get('block'), row.get('variant')))\n        elif phase != 'correctness' or seen_performance:\n            raise RuntimeError('Incorrect strict phase order')\n    if slots != expected_performance_slots():\n        raise RuntimeError('Performance jobs must match all 64 prescribed serial slots, zero-based blocks')\n    return rows"
+  },
+  "costValidator": {
+    "OBS": "OBS={'W-ENDPOINT':257,'W-STAGE-FIXTURE':161}",
+    "ORDERS": "ORDERS={840131:['BC','CB','CB','BC','BC','CB','CB','BC'],840137:['CB','BC','BC','CB','CB','BC','BC','CB']}",
+    "expected_slots": "def expected_slots():\n    return [(w,s,b,'B' if v=='B' else 'C1') for w in OBS for s in ORDERS for b,order in enumerate(ORDERS[s]) for v in order]"
+  },
+  "original": {
+    "EXPECTED_SEEDS": "EXPECTED_SEEDS = [840131, 840137]",
+    "ORDERS": "ORDERS = {840131: ['BC','CB','CB','BC','BC','CB','CB','BC'],\n          840137: ['CB','BC','BC','CB','CB','BC','CB','CB']}",
+    "expected_performance_slots": "def expected_performance_slots():\n    return [(w, s, b, 'B' if v == 'B' else 'C1')\n            for w in ('W-ENDPOINT', 'W-STAGE-FIXTURE')\n            for s in EXPECTED_SEEDS for b, order in enumerate(ORDERS[s])\n            for v in order]",
+    "verify_jobs": "def verify_jobs(jobs):\n    rows = jobs.get('jobs')\n    if not isinstance(rows, list) or not rows:\n        raise RuntimeError('Missing fixed job list')\n    seen_performance = False\n    seen = set()\n    slots = []\n    for row in rows:\n        if row.get('id') in seen or not isinstance(row.get('id'), str):\n            raise RuntimeError('Missing/duplicate job ID')\n        seen.add(row['id'])\n        phase = row.get('phase')\n        if phase == 'performance':\n            seen_performance = True\n            if type(row.get('block')) is not int or type(row.get('seed')) is not int:\n                raise RuntimeError('Benchmark seed/block must be integers')\n            slots.append((row.get('workload'), row.get('seed'), row.get('block'), row.get('variant')))\n        elif phase != 'correctness' or seen_performance:\n            raise RuntimeError('Incorrect strict phase order')\n    if slots != expected_performance_slots():\n        raise RuntimeError('Performance jobs must match all 64 prescribed serial slots, zero-based blocks')\n    return rows"
+  }
+}

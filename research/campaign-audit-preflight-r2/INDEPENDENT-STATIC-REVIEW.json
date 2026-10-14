@@ -1,0 +1,41 @@
+{
+  "status": "supports_metadata_fix_with_budget_and_scope_caveats",
+  "reviewMethod": "Static evidence reconciliation only; no production helper, model, fixture, gate, benchmark, or numerical code executed by this review. Reviewed trees were read-only.",
+  "oneLiteralPatchVerified": true,
+  "changedSeed": 840137,
+  "changedZeroBasedBlock": 6,
+  "oldOrder": "CB",
+  "newOrder": "BC",
+  "allOtherBytesUnchanged": true,
+  "exactProductionAstExtractionVerified": true,
+  "independentFrozenSourcesMatch": true,
+  "orderedSlots": 64,
+  "originalMismatchIndices": [
+    28,
+    29,
+    60,
+    61
+  ],
+  "tests": {
+    "originalRejected": 1,
+    "candidateAccepted": 1,
+    "candidateRejected": 14
+  },
+  "allRawTestInputsAndRecordedResultsReconciled": true,
+  "originalFileCount": 111,
+  "beforeAfterCurrentOriginalIdentical": true,
+  "executionArtifactBytesIncludingClosedStdout": 430689,
+  "executionHarnessFinalByteCountExcludesBufferedStdout": true,
+  "recordedMetadataWallSeconds": 0.041751032000320265,
+  "recordedMetadataCpuSeconds": 0.04094030199999999,
+  "recordedPreparationThroughCompletionWallSeconds": 129.66040086746216,
+  "currentPreflightTreeBytes": 462988,
+  "endToEnd30SecondBudgetCompliant": false,
+  "limitations": [
+    "Review did not rerun production helpers; outcomes are retained execution evidence reconciled with code and input contents.",
+    "The PLAN oracle independently derives orders; workload enumeration and eight-block structure are cross-checked, not wholly parsed by the execution harness.",
+    "Focused examples do not establish exhaustive input validation or full supervisor integration, terminal behavior, receipt correctness, numerical equivalence, speed, or physics.",
+    "Before/after/current content hashes establish equality at snapshots, not a tamper-proof execution history.",
+    "Timing uses in-process clocks and excludes startup/imports, interactive preparation, and this independent review; no claim of end-to-end CPU cap compliance."
+  ]
+}

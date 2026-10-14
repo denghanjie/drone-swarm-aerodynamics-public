@@ -1,0 +1,181 @@
+{
+  "schema": "bounded-audit-optimization-protocol/v1",
+  "status": "proposed_not_implemented_not_run",
+  "prepared_date_utc": "2026-10-14",
+  "execution_release": false,
+  "candidate": "AUDIT-C1",
+  "variants": [
+    "B",
+    "C1"
+  ],
+  "seeds": [
+    840131,
+    840137
+  ],
+  "saved_compatibility_seed": 4301,
+  "synthetic_seed": null,
+  "scenario_manifest": "CORPUS-MANIFEST.json",
+  "plan": "PLAN.md",
+  "baseline_sha256": "41ad1b087b1d7ba77f37d9c99b61e8a7c398915c6cfa3a74ef496258de8a822a",
+  "sequence": [
+    "adopt_static_review_freeze_release",
+    "correctness_all_required_cases",
+    "verify_correctness_receipt",
+    "serial_paired_cost",
+    "final_accounting_and_interpretation"
+  ],
+  "forbidden": [
+    "new coupled trajectories",
+    "old campaign resume or budget reset",
+    "paid compute",
+    "remote writes",
+    "dropping checks",
+    "changing physics",
+    "threshold/source tuning after numeric start",
+    "extra trials or seed replacement"
+  ],
+  "budgets": {
+    "total_wall_seconds": 300,
+    "total_process_tree_cpu_seconds": 300,
+    "preparation_correctness_wall_cpu_seconds": 180,
+    "performance_wall_cpu_seconds": 90,
+    "final_accounting_reserved_seconds": 30,
+    "correctness_job_wall_cpu_seconds": 45,
+    "benchmark_child_wall_cpu_seconds": 20,
+    "child_stop_reserve_seconds": 1,
+    "overall_numerical_stop_by_wall_cpu_seconds": 298,
+    "child_rss_bytes": 536870912,
+    "process_tree_rss_bytes": 1073741824,
+    "new_retained_byte_cap": 16000000,
+    "new_failure_reserve_bytes": 2000000,
+    "combined_old_new_retained_byte_cap": 200000000,
+    "parallel_numerical_children": 1,
+    "planned_retries": 0
+  },
+  "workloads": {
+    "W-ENDPOINT": {
+      "rows": [
+        0,
+        256
+      ],
+      "inclusive": true,
+      "observations_per_pass": 257,
+      "source": "each seed saved J3 dense endpoints",
+      "persist": false
+    },
+    "W-STAGE-FIXTURE": {
+      "rows": [
+        0,
+        32
+      ],
+      "inclusive": true,
+      "steps_per_pass": 32,
+      "observations_per_pass": 161,
+      "raw_quaternion_scale": "1 + 2^-20",
+      "genuine_RK_states": false,
+      "persist": false
+    }
+  },
+  "benchmarks": {
+    "matched_blocks_per_seed_per_workload": 8,
+    "warmup_passes_per_variant_block": 1,
+    "timed_passes_per_variant_block": 2,
+    "fresh_process_each_variant_block": true,
+    "block_orders_840131": [
+      "BC",
+      "CB",
+      "CB",
+      "BC",
+      "BC",
+      "CB",
+      "CB",
+      "BC"
+    ],
+    "block_orders_840137": [
+      "CB",
+      "BC",
+      "BC",
+      "CB",
+      "CB",
+      "BC",
+      "BC",
+      "CB"
+    ],
+    "outlier_removal": false,
+    "extra_instrumented_pass": false,
+    "minimum_baseline_two_pass_wall_seconds": 0.1,
+    "fresh_children": 64,
+    "total_observations_including_warmup": 40128,
+    "steady_state_claim": false,
+    "must_not_overlap": [
+      "other numerical workers",
+      "browser rendering",
+      "profilers",
+      "root publication packaging",
+      "uploads"
+    ]
+  },
+  "acceptance": {
+    "correctness": "all required cases exact and complete; saved anchors checked",
+    "primary_median_wall_ratio_each_seed_max": 0.8,
+    "primary_blocks_wall_ratio_below_one_min": 7,
+    "primary_median_timed_cpu_ratio_each_seed_max": 0.85,
+    "stage_fixture_median_wall_cpu_ratio_each_seed_max": 1.05,
+    "median_max_rss_increase_allowance": "max(10 percent baseline, 16 MiB)",
+    "evidence_size": "same serialized bytes under same logical IDs"
+  },
+  "terminal_statuses": [
+    "equivalence_failed",
+    "integrity_blocked",
+    "resource_limited",
+    "correct_but_no_useful_speedup",
+    "correct_cost_inconclusive",
+    "equivalent_faster_on_prescribed_replays"
+  ],
+  "old_reference_qualified": false,
+  "later_confirmation": {
+    "status": "prospective_separate_protocol_and_release_required",
+    "condition": "equivalent_faster_on_prescribed_replays",
+    "reason": "Saved real corpus contains no RK stages",
+    "trajectories": [
+      {
+        "seed": 840131,
+        "arm": "J3",
+        "duration_seconds": 1,
+        "count": 16
+      },
+      {
+        "seed": 840137,
+        "arm": "J3",
+        "duration_seconds": 1,
+        "count": 16
+      }
+    ],
+    "audit_mode": "Both exact auditors on each identical real geometry/raw input; direct per-pair equality, nonmutation and full retained-output checks",
+    "wall_seconds": 300,
+    "process_tree_cpu_seconds": 300,
+    "per_job_wall_cpu_seconds": 100,
+    "additional_retained_bytes": 40000000,
+    "failure_reserve_bytes": 2000000,
+    "combined_retained_cap_bytes": 200000000,
+    "unchanged_original_numerical_gates": true,
+    "not_part_of_current_window": true,
+    "execution_authorized_by_this_file": false
+  },
+  "display": {
+    "status": "prospective_not_built",
+    "type": "lightweight Three.js actual-path audit comparison",
+    "reuse_read_only_assets": "../research-next/implementation/demo/",
+    "no_new_flight_paths": true,
+    "must_link_actual_records": true,
+    "wall_seconds": 120,
+    "process_tree_cpu_seconds": 120,
+    "separate_from_numerical_budget": true,
+    "run_after_numerical_terminal": true,
+    "new_code_index_bytes_within_document_allocation": 250000,
+    "evidence_bytes_within_log_allocation": 1000000,
+    "inside_existing_storage_caps": true,
+    "standalone_offline_package": "separate prospective documentation forecast required"
+  },
+  "framework_mapping": "PLAN.md section 11"
+}
