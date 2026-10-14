@@ -1,0 +1,23 @@
+{
+  "schema": "prospective-audit-retention-clarification/v1",
+  "status": "coordinator_adopted_before_any_numerical_execution",
+  "date": "2026-10-14T04:27:18.562622+00:00",
+  "planSha256": "0c16567372f9d7efe2fff3982d822a27da4364281d1a15b0a4210dca409c41fd",
+  "scope": "Resolve availability wording in PLAN sections8and9 without changing any pass criterion or cap.",
+  "rules": [
+    "Every correctness observation comparison retains both current outputs/errors and exact current inputs when available; available evidence must not be discarded.",
+    "Direct comparison and lifetime fixtures must update exact-current input/output capture before their first assertion. Last durable checkpoint is always labeled separately.",
+    "An alias mismatch must retain the differing relationship, not only a null/null value pair and a path.",
+    "A later benchmark-only mismatch cannot access the prior complete baseline pass graph, because successful complete output histories are not retained. Preserve the prior component digest, exact frozen source/input selector, current offending component and any available alias counterexample. Explicitly label absent baseline output.",
+    "Any benchmark mismatch is a terminal failure, contributes no passing ratio, and triggers no automatic baseline rerun. A future reproduction requires a separately planned window.",
+    "No failure record may silently truncate available evidence or promote a failed/incomplete check. A retention overflow is a disclosed resource/evidence failure."
+  ],
+  "changedNumericalThresholds": false,
+  "changedResourceCaps": false,
+  "executionReleased": false,
+  "nextRequirements": [
+    "Repair first-failure capture before freeze",
+    "Re-review all changed source pins and independent gate requirements",
+    "Include this clarification in the freeze and release identity checks"
+  ]
+}

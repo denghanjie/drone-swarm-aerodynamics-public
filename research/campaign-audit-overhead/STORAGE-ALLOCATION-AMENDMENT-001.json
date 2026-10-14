@@ -1,0 +1,32 @@
+{
+  "schema": "prospective-audit-storage-allocation-amendment/v1",
+  "status": "coordinator_adopted_before_any_numerical_execution",
+  "date": "2026-10-14T04:31:06.402663+00:00",
+  "planSha256": "0c16567372f9d7efe2fff3982d822a27da4364281d1a15b0a4210dca409c41fd",
+  "reason": "Static implementation, independent review, repair history and explicit retention clarifications exceed the original1MB documentation partition before any numerical work. Preserve history and reallocate within the unchanged total cap.",
+  "previousAllocations": {
+    "documentsSourcesManifests": 1000000,
+    "receiptsLogsIncludingDisplayEvidence": 2000000,
+    "regeneratedSignaturesBracketsEqualityEvidence": 9000000,
+    "temporaryOverlap": 2000000,
+    "failureReserve": 2000000
+  },
+  "activeAllocations": {
+    "documentsSourcesManifests": 2000000,
+    "receiptsLogsIncludingDisplayEvidence": 2000000,
+    "regeneratedSignaturesBracketsEqualityEvidence": 8000000,
+    "temporaryOverlap": 2000000,
+    "failureReserve": 2000000
+  },
+  "totalRetainedByteCap": 16000000,
+  "combinedOldNewCap": 200000000,
+  "timeBudgetsChanged": false,
+  "numericalGatesChanged": false,
+  "failureReserveChanged": false,
+  "executionReleased": false,
+  "releaseConditions": [
+    "Independent reviewers verify full concrete normal and temporary output forecast fits the active allocations.",
+    "Retain original plan, forecast and this amendment; include hashes in final freeze and release.",
+    "Do not delete old evidence, reduce coverage or trim failing witnesses to fit. If forecast fails, remain blocked before execution."
+  ]
+}

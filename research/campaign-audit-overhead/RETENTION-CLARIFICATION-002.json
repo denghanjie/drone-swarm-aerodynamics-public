@@ -1,0 +1,20 @@
+{
+  "schema": "prospective-audit-retention-clarification/v2",
+  "status": "coordinator_adopted_before_any_numerical_execution",
+  "date": "2026-10-14T04:30:37.171806+00:00",
+  "priorClarification": "RETENTION-CLARIFICATION-001.json",
+  "priorSha256": "f1a46317c0dd256ccbabfd21d9ac80d275eb521f27de23944f666ecf05c17fb6",
+  "scope": "Explicitly narrow only aggregate/finish failure serialization to a complete minimal counterexample. Prior clarification is preserved; no numerical experiment has started.",
+  "rules": [
+    "Every current paired observation output/error and raw input must still be captured when available.",
+    "For accumulated finish/aggregate failures, retain both sides of the first differing component/value or exact structural/alias relationship, relevant exact raw inputs/source selectors, and bounded actual class state. Preserve counters, hash-finalization status, pending/written evidence state and the relevant failing event.",
+    "Full accumulated finish histories can exceed the fixed2MB failure reserve. If present in memory but not serialized, explicitly label them available in memory but not serialized by design. Do not falsely label them unavailable or fully retained.",
+    "The retained witness must be complete for the reported mismatch. No silent truncation. If the complete minimal witness cannot fit, record terminal resource/evidence failure and make no passing claim.",
+    "Benchmark prior complete baseline pass output remains genuinely unavailable during a later child; prior digest/source selector and current failing component/alias relation remain required.",
+    "All original raw trajectory inputs, original campaign outputs and sources remain retained and unchanged. No automatic rerun is authorized."
+  ],
+  "changedNumericalThresholds": false,
+  "changedResourceCaps": false,
+  "executionReleased": false,
+  "freezeRequirement": "Include both clarification files and this explicit supersession in final independent acceptance, source freeze and release."
+}

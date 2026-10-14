@@ -1,0 +1,23 @@
+{
+  "status": "adopted_for_local_implementation_and_static_review_only",
+  "date": "2026-10-14T03:32:33.989365+00:00",
+  "planSha256": "0c16567372f9d7efe2fff3982d822a27da4364281d1a15b0a4210dca409c41fd",
+  "protocolSha256": "7d586939589c82a2f5a168c395d915452c3fad369b1dd76842665e9471586abb",
+  "numericalExecutionReleased": false,
+  "priorCampaignRemainsTerminalAndUnqualified": true,
+  "publication": "Local preparation only; publication is a separate coordinator step.",
+  "scope": [
+    "Implement single exact-output AUDIT-C1 candidate and frozen-oracle adapter",
+    "Independently review assumptions, invariants and complete fixture coverage",
+    "Prepare serial resource supervisor and fair benchmark harness; do not execute numerical code before independent review and source/config/input freeze"
+  ],
+  "limits": "Unchanged prospective PLAN.md and PROTOCOL.json; no paid compute, source tuning after execution or old-window restart",
+  "releaseRequirements": [
+    "Independent static physics/numerical semantics review",
+    "Independent robustness, resource and cost review",
+    "Complete storage and workload forecast",
+    "Unchanged old-source identity check",
+    "Hash freeze of source/config/cases/inputs",
+    "Coordinator explicit release; no overlap with publication packaging or other timing work"
+  ]
+}
