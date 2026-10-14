@@ -1,0 +1,10 @@
+'use strict';
+const $=id=>document.getElementById(id),pub=location.pathname.includes('/campaign-audit-c1-r7/'),base=pub?'../':'../../../research-audit-successor-r7/';
+for(const [id,path]of [['milestone','postrun/MILESTONE.md'],['evidence','postrun/EVIDENCE.json'],['literature','LITERATURE-EXPERIMENT-LEDGER.md']])$(id).href=base+path;
+(async()=>{try{const response=await fetch(base+'postrun/EVIDENCE.json',{cache:'no-store'});if(!response.ok)throw Error('Evidence unavailable');const e=await response.json();
+if(e.schema!=='r7-terminal-admission-evidence/v1'||e.scientificAcceptance!==false||e.retryAllowed!==false||e.failure.supervisorLaunched!==false||e.failure.actualCombinedPipeCapacityBytes!==131072||e.failure.frozenCombinedCapacityCeilingBytes!==16384)throw Error('Unexpected evidence facts');
+for(const name of ['adapterControls','scientificCases','correctnessJobs','independentCorrectnessGates'])if(e.coverage[name].completed!==0)throw Error('Unexpected completed work');
+$('check').textContent='Loaded actual-record-derived evidence: terminal outer admission rejection, no supervisor or scientific work launched.';const m=e.recordedMeasurements;
+$('measurements').textContent='Outer process only, before its observation write: '+m.outerElapsedSecondsBeforeObservationWrite+' s elapsed, '+m.outerCpuSecondsBeforeObservationWrite+' s CPU, '+m.outerProcessMaxRssBytes.toLocaleString()+' B maximum RSS. These are not end-to-end supervisor measurements. Fallback wall/RSS fields are not measured overruns.';
+}catch(error){$('check').textContent='Evidence loading/checking incomplete: '+error.message+'. Saved text is not live verification.';}})();
+$('load').onclick=()=>{const f=document.createElement('iframe');f.title='Unchanged historical replay; no R7 flight';f.src=pub?'../../campaign-joint-stage-reference/postrun-display/joint-stages-partial-offline.html':'../../../research-next/postrun-display/joint-stages-partial-offline.html';$('replay').replaceChildren(f);$('load').hidden=true;};
