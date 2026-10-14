@@ -1,0 +1,144 @@
+{
+  "schema": "r8-verified-bibliography-addendum/v1",
+  "campaignId": "AUDIT-C1-R8",
+  "inheritedBibliographyIdentity": {
+    "id": "R7-verified-bibliography",
+    "bytes": 9063,
+    "sha256": "4b916f23ca8f28851610e81aa564e36f57e4713776c917cfb2f6d104f6c6fe0c"
+  },
+  "references": [
+    {
+      "id": "necula2000translation",
+      "title": "Translation Validation for an Optimizing Compiler",
+      "authors": [
+        "George C. Necula"
+      ],
+      "year": 2000,
+      "venue": "ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)",
+      "publicationStatus": "Published conference paper; consulted author-hosted institutional full text",
+      "url": "https://people.eecs.berkeley.edu/~necula/Papers/tv_pldi00.pdf",
+      "version": "Author-hosted published-paper copy, accessed 2026-10-14",
+      "locations": [
+        "Abstract and section 1, PDF pages 1\u20132"
+      ],
+      "accessLimitations": "ACM/Crossref endpoints could not be read in this session; DOI and inconsistent secondary page ranges omitted.",
+      "kind": "conference_paper_or_tutorial",
+      "verificationStatus": "bibliographic_identity_verified_in_inherited_primary_source_record; relevant sections freshly read by root for R7",
+      "correctionSearchStatus": "No new correction/erratum search performed for this R7 report. The inherited record describes only a limited search; no exhaustive clearance or latest-work claim.",
+      "verificationProvenance": "Inherited R7 bibliography, verified2026-10-14; no fresh literature search or correction clearance performed for this R8 addendum."
+    },
+    {
+      "id": "sargent2020validation",
+      "title": "Verification and Validation of Simulation Models: An Advanced Tutorial",
+      "authors": [
+        "Robert G. Sargent"
+      ],
+      "year": 2020,
+      "venue": "Proceedings of the 2020 Winter Simulation Conference",
+      "publicationStatus": "Published conference tutorial; individual review process not independently verified",
+      "url": "https://informs-sim.org/wsc20papers/002.pdf",
+      "version": "Official proceedings PDF, accessed 2026-10-14",
+      "locations": [
+        "Section 3.1, PDF page 4 / printed page 19",
+        "Section 4, PDF pages 4\u20135 / printed pages 19\u201320",
+        "Section 8, PDF page 11 / printed page 26"
+      ],
+      "accessLimitations": "IEEE landing page returned insufficient bibliographic text; unverified DOI omitted in favor of official stable URL.",
+      "kind": "conference_paper_or_tutorial",
+      "verificationStatus": "bibliographic_identity_verified_in_inherited_primary_source_record; relevant sections freshly read by root for R7",
+      "correctionSearchStatus": "No new correction/erratum search performed for this R7 report. The inherited record describes only a limited search; no exhaustive clearance or latest-work claim.",
+      "verificationProvenance": "Inherited R7 bibliography, verified2026-10-14; no fresh literature search or correction clearance performed for this R8 addendum."
+    },
+    {
+      "kind": "official_technical_documentation",
+      "publicationStatus": "Technical API documentation, not a peer-reviewed research paper",
+      "correctionSearchStatus": "No independent correction or erratum search claimed.",
+      "id": "node24190util",
+      "title": "Node.js v24.19.0 documentation: Utilities",
+      "url": "https://nodejs.org/download/release/v24.19.0/docs/api/util.html",
+      "version": "Node.js v24.19.0; matches the frozen Node runtime version",
+      "locations": [
+        "util.isDeepStrictEqual section: default comparison includes object prototypes and constructors"
+      ],
+      "verificationStatus": "Root read the version-pinned official documentation on 2026-10-14; earlier latest-v24 fetch failed, pinned page succeeded.",
+      "verificationProvenance": "Inherited R7 bibliography, verified2026-10-14; no fresh literature search or correction clearance performed for this R8 addendum."
+    },
+    {
+      "kind": "official_technical_documentation",
+      "publicationStatus": "Technical API documentation, not a peer-reviewed research paper",
+      "correctionSearchStatus": "No independent correction or erratum search claimed.",
+      "id": "node24190fs",
+      "title": "Node.js v24.19.0 documentation: File system",
+      "url": "https://nodejs.org/download/release/v24.19.0/docs/api/fs.html",
+      "version": "Node.js v24.19.0; matches the frozen Node runtime version",
+      "locations": [
+        "File system flags: wx exclusive creation",
+        "fs.writeSync: returned byte count",
+        "fs.fsyncSync: flush request and platform-dependent behavior"
+      ],
+      "verificationStatus": "Root read the version-pinned official documentation on 2026-10-14.",
+      "verificationProvenance": "Inherited R7 bibliography, verified2026-10-14; no fresh literature search or correction clearance performed for this R8 addendum."
+    },
+    {
+      "kind": "official_technical_documentation",
+      "publicationStatus": "Technical API documentation, not a peer-reviewed research paper",
+      "correctionSearchStatus": "No independent correction or erratum search claimed.",
+      "id": "python312osread",
+      "title": "Python 3.12 documentation: os \u2014 Miscellaneous operating system interfaces",
+      "url": "https://docs.python.org/3.12/library/os.html#os.read",
+      "version": "Python 3.12 documentation; page reported 3.12.15 when consulted, frozen interpreter 3.12.14",
+      "locations": [
+        "os.read(fd,n): at most n bytes; empty bytes at end of file"
+      ],
+      "verificationStatus": "Official API section read by independent resource review on 2026-10-14. Same documented 3.12 series, not an exact-patch experiment claim.",
+      "verificationProvenance": "Inherited R7 bibliography, verified2026-10-14; no fresh literature search or correction clearance performed for this R8 addendum."
+    },
+    {
+      "kind": "official_technical_documentation",
+      "publicationStatus": "Technical API documentation, not a peer-reviewed research paper",
+      "correctionSearchStatus": "No independent correction or erratum search claimed.",
+      "id": "python312fcntl",
+      "title": "Python 3.12 documentation: fcntl \u2014 The fcntl and ioctl system calls",
+      "url": "https://docs.python.org/3.12/library/fcntl.html",
+      "version": "Python 3.12 documentation; page reported 3.12.15 when consulted, frozen interpreter 3.12.14",
+      "locations": [
+        "fcntl.fcntl function",
+        "F_GETPIPE_SZ and F_SETPIPE_SZ Linux constants; the R7 observer uses only the GET capacity query"
+      ],
+      "verificationStatus": "Official API section read during implementation/resource review on 2026-10-14.",
+      "verificationProvenance": "Inherited R7 bibliography, verified2026-10-14; no fresh literature search or correction clearance performed for this R8 addendum."
+    },
+    {
+      "kind": "official_technical_documentation",
+      "publicationStatus": "Technical API documentation, not a peer-reviewed research paper",
+      "correctionSearchStatus": "No independent correction or erratum search claimed.",
+      "id": "linuxman619pipe7",
+      "title": "pipe(7) \u2014 Linux manual page",
+      "url": "https://man7.org/linux/man-pages/man7/pipe.7.html#DESCRIPTION",
+      "version": "Linux man-pages 6.19 as consulted; this is the documentation version, not a measured kernel version",
+      "locations": [
+        "DESCRIPTION: I/O on pipes and FIFOs",
+        "DESCRIPTION: Pipe capacity"
+      ],
+      "verificationStatus": "Primary Linux interface documentation read by independent resource review on 2026-10-14.",
+      "verificationProvenance": "Inherited R7 bibliography, verified2026-10-14; no fresh literature search or correction clearance performed for this R8 addendum."
+    },
+    {
+      "id": "linuxman619pipe-size",
+      "title": "F_GETPIPE_SZ(2const) \u2014 Linux manual page",
+      "url": "https://man7.org/linux/man-pages/man2/F_GETPIPE_SZ.2const.html",
+      "version": "Linux man-pages6.19; page date2025-09-21",
+      "locations": [
+        "DESCRIPTION",
+        "RETURN VALUE",
+        "ERRORS",
+        "COLOPHON"
+      ],
+      "kind": "official_technical_documentation",
+      "publicationStatus": "Linux interface documentation; not a research paper",
+      "verificationStatus": "Primary page verified by root/resource review on2026-10-14 and pinned in the accepted R8 preflight source ledger.",
+      "correctionSearchStatus": "No independent erratum or correction search claimed."
+    }
+  ],
+  "limits": "No invented DOI, peer-review certification, novelty search, exhaustive correction clearance, runtime-kernel version inference or new verification beyond stated provenance."
+}
