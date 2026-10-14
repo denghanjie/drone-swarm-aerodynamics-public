@@ -1,0 +1,591 @@
+{
+  "schema": "publication-checkpoint-review/v1",
+  "reviewedAtUtc": "2026-10-14T03:05:15.801746+00:00",
+  "scope": "Local artifact identity, publication privacy and recorded-claim consistency only. No experiment, integration, fixture rerun or scientific trajectory comparison.",
+  "frozenPublicSourceCommit": "3f25c755a7073a120e5fd1e85f1534f0e3e5f0e7",
+  "status": "locally_reviewed_pending_remote_commit_verification",
+  "errors": [],
+  "claimChecks": {
+    "six_J_runs_completed": true,
+    "both_saved_J_gates_passed": true,
+    "all_saved_fine_J_differences_below_prescribed_floor": true,
+    "seed_840131_H4_completed": true,
+    "P1_incomplete_at_tick_50768": true,
+    "P1_exact_failure_endpoint_retained": true,
+    "eight_prescribed_rows_skipped": true,
+    "campaign_unqualified": true,
+    "browser_static_only": true
+  },
+  "matrixCounts": {
+    "complete": 7,
+    "skipped": 8,
+    "failed": 1
+  },
+  "runs": [
+    {
+      "runId": "s840131-J1",
+      "complete": true,
+      "endTick": 51200,
+      "stop": null
+    },
+    {
+      "runId": "s840131-J2",
+      "complete": true,
+      "endTick": 51200,
+      "stop": null
+    },
+    {
+      "runId": "s840131-J3",
+      "complete": true,
+      "endTick": 51200,
+      "stop": null
+    },
+    {
+      "runId": "s840137-J1",
+      "complete": true,
+      "endTick": 51200,
+      "stop": null
+    },
+    {
+      "runId": "s840137-J2",
+      "complete": true,
+      "endTick": 51200,
+      "stop": null
+    },
+    {
+      "runId": "s840137-J3",
+      "complete": true,
+      "endTick": 51200,
+      "stop": null
+    },
+    {
+      "runId": "s840131-H4",
+      "complete": true,
+      "endTick": 51200,
+      "stop": null
+    },
+    {
+      "runId": "s840131-P1",
+      "complete": false,
+      "endTick": 50768,
+      "stop": "Per-job cooperative wall cap"
+    }
+  ],
+  "P1JobTiming": {
+    "id": "s840131-P1",
+    "wallMs": 44029.64837,
+    "cpuMs": 44925.806,
+    "includesSerialization": true
+  },
+  "binaryLogicalFiles": 52,
+  "binaryBytes": 58664800,
+  "binaryStoredObjects": 54,
+  "binaryPathInventoryComplete": true,
+  "binaryFiles": [
+    {
+      "path": "implementation/results/audit/preflight-s840131.brackets.f64",
+      "bytes": 43520,
+      "sha256": "02ee966111d706f0eb1bac632b53f1a07b2e5f6ae08f80257093db9c266241ea",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/audit/preflight-s840131.signatures.bin",
+      "bytes": 204832,
+      "sha256": "5df2543c7153a66fa99eead8e03c77f08b6402e3ec20eac10769373685a9cdb2",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/audit/preflight-s840137.brackets.f64",
+      "bytes": 43520,
+      "sha256": "97bc8e38e5a5986c6a40b56dfb50b1c0884dd49efa193e28406a7796e7d7a688",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/audit/preflight-s840137.signatures.bin",
+      "bytes": 204832,
+      "sha256": "16fd482fe3846ffd4f2a2abfae8ab7580194fbc06f8ae35f6bc81e8cc3573638",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/audit/s4301-compatibility.brackets.f64",
+      "bytes": 43520,
+      "sha256": "f4ea568556fabe1e77950da7c0efec01eb5b3b7508c72ff3aced8ec243b2f31d",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/audit/s4301-compatibility.signatures.bin",
+      "bytes": 12832,
+      "sha256": "281f891a5b69a69849ab568e81d63612fa8d756f1b9f2a9a481c3dbb73d16eaf",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/audit/s840131-H4.brackets.f64",
+      "bytes": 43520,
+      "sha256": "24b039029ab40f73a9ade4baa67a84816c2092416c4768b4ee6560ad07e5b1a2",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/audit/s840131-H4.signatures.bin",
+      "bytes": 409632,
+      "sha256": "4bc6e62b749bb6ac48bb39aae43e07aa35b428e749bf807c13b7bda271d2a94e",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/audit/s840131-J1.brackets.f64",
+      "bytes": 43520,
+      "sha256": "78ffd203bc6fb4dedab3295dc1d19922fdd3984a0c1bc144de924675d234952a",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/audit/s840131-J1.signatures.bin",
+      "bytes": 256032,
+      "sha256": "756836326e53b43496fc738d033172cc3f3da03b8ce464a33019a9d535f113b3",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/audit/s840131-J2.brackets.f64",
+      "bytes": 43520,
+      "sha256": "bb2b9b910327bac27c7db3cbb8fffefb0cba82fcc6e06a4d4d1568d99b2b1491",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/audit/s840131-J2.signatures.bin",
+      "bytes": 512032,
+      "sha256": "a3291c6a8a92ee79e710b4ab1aeaddb09560c70c9f6ab218722721f9b6eebc3f",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/audit/s840131-J3.brackets.f64",
+      "bytes": 43520,
+      "sha256": "1a3aa6dba654f111cfa0acb5da5153ff39b0b0ac2062c0f043cfaecfdded7896",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/audit/s840131-J3.signatures.bin",
+      "bytes": 1024032,
+      "sha256": "d8509852ac10824afc00711f442c0fa52ebe28bff366ea80150b0dd7bd8d56be",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/audit/s840131-P1.brackets.f64",
+      "bytes": 43520,
+      "sha256": "08d14721456f340d7975b7c811b9c4d49376f33355ea56331ab55be4a69695bd",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/audit/s840131-P1.signatures.bin",
+      "bytes": 812320,
+      "sha256": "83c3dec16e8e056ae301d18af65dc7550fc3d3a3566f8a31819c56f130a565b6",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/audit/s840137-J1.brackets.f64",
+      "bytes": 43520,
+      "sha256": "aaad85b7b7db6a8b01a8b45cb9dbae49506096c13719bb10b240a4e4fff9a318",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/audit/s840137-J1.signatures.bin",
+      "bytes": 256032,
+      "sha256": "45c6e4390b3fe8400e47ee4a226bca87f00059743bcd573fc9a9f7c86c82e9c1",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/audit/s840137-J2.brackets.f64",
+      "bytes": 43520,
+      "sha256": "6ce5009700ced49c7c0b100e8b74205f22b098c46f69e1885785bb73252c54de",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/audit/s840137-J2.signatures.bin",
+      "bytes": 512032,
+      "sha256": "9b84a8391aa1a2007720e7e2a5bc7d70df5927b66df8455d377171181c9f0ec0",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/audit/s840137-J3.brackets.f64",
+      "bytes": 43520,
+      "sha256": "1c771d89500735ebc709d7fcb0ac8d65c51c5c34b741dc270496ea43c2aa939f",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/audit/s840137-J3.signatures.bin",
+      "bytes": 1024032,
+      "sha256": "e2b7ada95c5c988072d51e9c89fd9db4679ff1c2a700e23df4fc8cf98f240dfe",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/controllers/preflight-s840131.f64",
+      "bytes": 230400,
+      "sha256": "ba30cdb808a5bb263876f6d1c6bae812ff448f72178e83559d1b10eea82bc7f7",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/controllers/preflight-s840137.f64",
+      "bytes": 230400,
+      "sha256": "d0e1486251417fe855d9ace44a7b0d107d7c12a7b8b3e87fc7b81ecf81b54da4",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/controllers/s4301-compatibility.f64",
+      "bytes": 230400,
+      "sha256": "629e6e08b54a52944ea9d5b01f4b2764a2f891ec496b987f588029a8564fb3e7",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/controllers/s840131-H4.f64",
+      "bytes": 230400,
+      "sha256": "3743d772ba2ec0f97dc5acd20356b5344a985ba80301cb6a6d105824ed603303",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/controllers/s840131-J1.f64",
+      "bytes": 230400,
+      "sha256": "b16786a28b626d6002196ef239776bf4fa65791553305cb7cb472ec569c4acbd",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/controllers/s840131-J2.f64",
+      "bytes": 230400,
+      "sha256": "4081521ce1cf906a9083c84058a5738e7f5d1c75667631bf76e0bb3d6731513d",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/controllers/s840131-J3.f64",
+      "bytes": 230400,
+      "sha256": "35c73230921c94656c1de359b48e603b37a5ba498e68ea09cff0ea55652d4302",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/controllers/s840131-P1.f64",
+      "bytes": 230400,
+      "sha256": "066e0a10f48fd1f2e31ac687a2a682f88fc6d07bf8208c5d55dc0565c54121fe",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/controllers/s840137-J1.f64",
+      "bytes": 230400,
+      "sha256": "bb409a02504fd390a8f2a9432807e84b043157347149ee77170516106d7c441f",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/controllers/s840137-J2.f64",
+      "bytes": 230400,
+      "sha256": "0f45db4227363071f3ee7b459c80241bea3566450da69dd2d9d65d12262f533b",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/controllers/s840137-J3.f64",
+      "bytes": 230400,
+      "sha256": "28021191198bf1b6cafb9e53778597f0c1fdced46f488a55dfa367b4f1d92812",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/fields/s4301-compatibility.bin",
+      "bytes": 3200,
+      "sha256": "3e5918b271f092d18e1bdd3fb91f8e5436bf296fd8980802a5f922db6ad358ae",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/fields/s840131-H4.bin",
+      "bytes": 409600,
+      "sha256": "2c3a9b0dafc94b9aed28e9462e6dada11899c37f60b780dd16772c78233a8a86",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/fields/s840131-J1.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/fields/s840131-J2.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/fields/s840131-J3.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/fields/s840131-P1.bin",
+      "bytes": 406144,
+      "sha256": "55b946cf7116d4608428b6872a6d562988f6d0f9563009a94f8ab9ba6aa23ce2",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/fields/s840137-J1.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/fields/s840137-J2.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/fields/s840137-J3.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/fixtures/roundtrip.f64",
+      "bytes": 2176,
+      "sha256": "a91e5fb4f43a0be10dde07f6618c5de4c5f349115ffc414b3e6da85405ad0076",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/raw/s4301-compatibility.common.f64",
+      "bytes": 872576,
+      "sha256": "055fa27e4b7baeb3e363a2f6a912a4fd50b44cb52ce948d23e061dffd8c4ed8d",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/raw/s840131-H4.common.f64",
+      "bytes": 3483776,
+      "sha256": "89c6591f638288a5249b86b71ad2598101c1af1c0065e1140e4323c5c844748a",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/raw/s840131-J1.common.f64",
+      "bytes": 3483776,
+      "sha256": "558ffa40b119e92bc827f419f3f29559db861601a42c1e6f79e8b3687e7abf40",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/raw/s840131-J2.common.f64",
+      "bytes": 3483776,
+      "sha256": "4ac74398af724149a0c4aab1d1a1830fc1a6e639fb31a5f6d2c7d875b87eb6c9",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/raw/s840131-J3.dense.f64",
+      "bytes": 13928576,
+      "sha256": "dbc554ed5e5f7056985a07b332afa788c7de7dfd10257507e0378c069c476ed5",
+      "objects": 2,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/raw/s840131-P1.common.f64",
+      "bytes": 3453312,
+      "sha256": "3aa5605260b843d99c12d2155076723ed0b5ee522fa6c5e2e61473415656885d",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/raw/s840137-J1.common.f64",
+      "bytes": 3483776,
+      "sha256": "40f79fa96de0865795bf11cfef7e6b642210e108918c84d418bd373559f39e79",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/raw/s840137-J2.common.f64",
+      "bytes": 3483776,
+      "sha256": "15eaae72b7c987b5cfd07e5620e963d1fdba2d2c704b4e855f06a0e63a36f4b8",
+      "objects": 1,
+      "matches": true
+    },
+    {
+      "path": "implementation/results/raw/s840137-J3.dense.f64",
+      "bytes": 13928576,
+      "sha256": "95fa467cd439c43afe2d8f0d4d75e1812c42bf862c38bba398ae509d5312d4b8",
+      "objects": 2,
+      "matches": true
+    }
+  ],
+  "frozenSourceFilesChecked": 71,
+  "frozenSourceMismatches": [],
+  "decodedEmbeddedDocuments": [
+    {
+      "key": "../inputs/runs/s840131-p1-a4.json",
+      "bytes": 456630,
+      "sha256": "77630a02d70885421b6f71fa51d53c3bc181292368c626caaf08ada3235e70b4",
+      "matchesOriginal": true
+    },
+    {
+      "key": "../inputs/runs/s840137-p1-a4.json",
+      "bytes": 456684,
+      "sha256": "f640861702c8a7a9dbbfafb99941c7c8f918329b3a52e5b4575bc138d082a5de",
+      "matchesOriginal": true
+    },
+    {
+      "key": "../results/runs/s840131-J1.json",
+      "bytes": 62241,
+      "sha256": "36e6ce4f4c1a2a56c0a60156bcfc3d3e7c3f3727d6208e4d2235b40822943218",
+      "matchesOriginal": true
+    },
+    {
+      "key": "../results/runs/s840131-J2.json",
+      "bytes": 62189,
+      "sha256": "eb79f076f8ca1fd4ce7eb49271aa06f17d09fa61a4bf222b28f257bdf092470d",
+      "matchesOriginal": true
+    },
+    {
+      "key": "../results/runs/s840131-J3.json",
+      "bytes": 62317,
+      "sha256": "90dcad78ed1ece9aff7462c85acba75e1fb339169306eb8cc3e1cfe5cbf0e57a",
+      "matchesOriginal": true
+    },
+    {
+      "key": "../results/runs/s840137-J1.json",
+      "bytes": 62379,
+      "sha256": "83daa1c3401b0392c79c3656c25900882ea2a8b59944f1330a401b2957fd143a",
+      "matchesOriginal": true
+    },
+    {
+      "key": "../results/runs/s840137-J2.json",
+      "bytes": 62376,
+      "sha256": "35f319b67deb2bb0156e8320aa412fa8f9619f3696897f4d18fa0fd69da2291d",
+      "matchesOriginal": true
+    },
+    {
+      "key": "../results/runs/s840137-J3.json",
+      "bytes": 62575,
+      "sha256": "8abf5e78eabf980bfc91ec5a055785e139a66ce0514f41ed9e80115f0002b0a0",
+      "matchesOriginal": true
+    },
+    {
+      "key": "../results/runs/s840131-H4.json",
+      "bytes": 63346,
+      "sha256": "9a9e89b52737dd4752737cdec5fa15cc6437befc3f96be815e2157928d6f91c0",
+      "matchesOriginal": true
+    },
+    {
+      "key": "../results/runs/s840131-P1.json",
+      "bytes": 75668,
+      "sha256": "dfd379105721549587e3adbfa1da4998f16ab86a458807e834b10ae6333199b4",
+      "matchesOriginal": true
+    },
+    {
+      "key": "../../PLAN.md",
+      "bytes": 30563,
+      "sha256": "b68a2a93b29e85b3784d874010c767ee7ba3eacfdcc71d4bb6b91d31606d4bba",
+      "matchesOriginal": true
+    },
+    {
+      "key": "../FREEZE.json",
+      "bytes": 19120,
+      "sha256": "d41bb998788ff207eec4719d4a05d18125fcfdb658bfd0a18631921343735f3a",
+      "matchesOriginal": true
+    },
+    {
+      "key": "../results/campaign.json",
+      "bytes": 57235,
+      "sha256": "5cc4e8bdd8e848caa6ab3b35e0d3e40e03aa64f5fee06ea19e0232aeb24da3ab",
+      "matchesOriginal": true
+    },
+    {
+      "key": "vendor/THREE-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "matchesOriginal": true
+    }
+  ],
+  "privacyScanFindings": [
+    {
+      "path": "archive/reconstruct_binary_checkpoint.py",
+      "matches": {
+        "private_service_or_credential_marker": [
+          "file_h"
+        ]
+      }
+    },
+    {
+      "path": "archive/synthetic-test-results.txt",
+      "matches": {
+        "private_service_or_credential_marker": [
+          "file_a"
+        ]
+      }
+    },
+    {
+      "path": "archive/test_reconstruct_binary_checkpoint.py",
+      "matches": {
+        "private_service_or_credential_marker": [
+          "file_a",
+          "file_l"
+        ],
+        "absolute_user_or_workspace_path": [
+          "/tmp/escape"
+        ]
+      }
+    },
+    {
+      "path": "postrun-display/BROWSER-PROCESS-TIMING.json",
+      "matches": {
+        "absolute_user_or_workspace_path": [
+          "/tmp/playwright_chromiumdev_profile-JaMTIp",
+          "/workspace/scratch/b216c09cf619/research-next/postrun-display/verify-display.cjs:3:150",
+          "/workspace/scratch/b216c09cf619/research-next/postrun-display/verify-display.cjs:3:3804)"
+        ]
+      }
+    },
+    {
+      "path": "postrun-display/BROWSER-VERIFICATION-FAILURE.json",
+      "matches": {
+        "absolute_user_or_workspace_path": [
+          "/tmp/playwright_chromiumdev_profile-JaMTIp",
+          "/workspace/scratch/b216c09cf619/research-next/postrun-display/verify-display.cjs:3:150",
+          "/workspace/scratch/b216c09cf619/research-next/postrun-display/verify-display.cjs:3:3804)"
+        ]
+      }
+    }
+  ],
+  "privacyInterpretation": "No owner identifier, private conversation URL, credential value or sensitive personal data detected in recommended additions, including decoded HTML. Generic workspace and temporary Chromium paths in the two browser-failure logs reveal no user information and may be retained unchanged. Synthetic path-security test strings are not actual user paths.",
+  "remoteVerificationPerformed": false,
+  "remoteGate": "Verify committed branch tree includes every approved public object with expected Git blob SHA and excludes private receipts. Record final commit and tree identity separately. Local hashes and upload success alone are not proof of a committed checkpoint."
+}

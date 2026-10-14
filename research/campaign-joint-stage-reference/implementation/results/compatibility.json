@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "expected": {
+    "seed": 4301,
+    "arm": "compatibility",
+    "stepTicks": 128,
+    "airTicks": 512,
+    "kind": "held",
+    "terminalStateWindSha256": "fabdd3452577cfdc3cb948ecd12b90c93fc74ee8673129a9737ca2d3e1265ef7",
+    "work": {
+      "physicsSteps": 400,
+      "rk4DerivativeCalls": 25600,
+      "fieldUpdates": 100,
+      "controllerUpdates": 100,
+      "rotorKernels": 5394,
+      "candidatePairs": 24000,
+      "safetySteps": 400
+    }
+  },
+  "actual": {
+    "complete": true,
+    "terminalStateWindSha256": "fabdd3452577cfdc3cb948ecd12b90c93fc74ee8673129a9737ca2d3e1265ef7",
+    "work": {
+      "physicsSteps": 400,
+      "rk4DerivativeCalls": 25600,
+      "fieldUpdates": 100,
+      "controllerUpdates": 100,
+      "rotorKernels": 5394,
+      "candidatePairs": 24000,
+      "safetySteps": 400,
+      "jointStageFields": 0,
+      "acceptedEndpointAudits": 401,
+      "productionRefreshAuditAliases": 100,
+      "fieldAttempts": 100,
+      "derivativeAttempts": 0,
+      "heldIntegratorAttempts": 6400,
+      "heldIntegratorCompleted": 6400,
+      "heldDerivativeAttemptUpperBound": 25600
+    },
+    "heldTick": 50688
+  }
+}

@@ -1,0 +1,2558 @@
+{
+  "schema": "independent-postrun-physics-interpretation/v1",
+  "reviewedAtUtc": "2026-10-14T00:07:31Z",
+  "conclusion": "Joint-stage self-consistency observed for both saved windows; full reference remains unqualified after cooperative per-job resource stop",
+  "scope": {
+    "newIntegration": false,
+    "fixtureRerun": false,
+    "newScientificTrajectoryComparison": false,
+    "rawBinaryArrayDecoding": false,
+    "writesOutsidePostrunPhysics": false,
+    "method": "Inspection and selection of existing JSON records, source-byte hash verification only"
+  },
+  "campaign": {
+    "status": "stopped",
+    "phase": "held-physics",
+    "runIds": [
+      "s840131-J1",
+      "s840131-J2",
+      "s840131-J3",
+      "s840137-J1",
+      "s840137-J2",
+      "s840137-J3",
+      "s840131-H4",
+      "s840131-P1"
+    ],
+    "jobs": [
+      {
+        "id": "implementation-fixtures",
+        "wallMs": 18.136697,
+        "cpuMs": 24.893,
+        "includesSerialization": true
+      },
+      {
+        "id": "independent-test_joint_robustness.cjs",
+        "wallMs": 82.690489,
+        "cpuMs": 3.666,
+        "includesSerialization": true
+      },
+      {
+        "id": "independent-test_io_faults.cjs",
+        "wallMs": 69.368073,
+        "cpuMs": 3.536,
+        "includesSerialization": true
+      },
+      {
+        "id": "independent-test_branch_boundaries.cjs",
+        "wallMs": 58.8265,
+        "cpuMs": 3.482,
+        "includesSerialization": true
+      },
+      {
+        "id": "independent-test_watchdog_contract.cjs",
+        "wallMs": 65.856874,
+        "cpuMs": 3.817,
+        "includesSerialization": true
+      },
+      {
+        "id": "independent-test_runner_clock.cjs",
+        "wallMs": 513.487682,
+        "cpuMs": 3.742,
+        "includesSerialization": true
+      },
+      {
+        "id": "preflight-s840131",
+        "wallMs": 7172.995391,
+        "cpuMs": 7626.061,
+        "includesSerialization": true
+      },
+      {
+        "id": "preflight-s840137",
+        "wallMs": 6957.649131,
+        "cpuMs": 7237.648,
+        "includesSerialization": true
+      },
+      {
+        "id": "compatibility",
+        "wallMs": 783.665833,
+        "cpuMs": 1050.761,
+        "includesSerialization": true
+      },
+      {
+        "id": "s840131-J1",
+        "wallMs": 10369.286424,
+        "cpuMs": 10930.763,
+        "includesSerialization": true
+      },
+      {
+        "id": "s840131-J2",
+        "wallMs": 19699.068286,
+        "cpuMs": 20421.94,
+        "includesSerialization": true
+      },
+      {
+        "id": "s840131-J3",
+        "wallMs": 39753.134901,
+        "cpuMs": 41189.19,
+        "includesSerialization": true
+      },
+      {
+        "id": "s840137-J1",
+        "wallMs": 9844.861934,
+        "cpuMs": 10251.336,
+        "includesSerialization": true
+      },
+      {
+        "id": "s840137-J2",
+        "wallMs": 19979.590318,
+        "cpuMs": 20680.422,
+        "includesSerialization": true
+      },
+      {
+        "id": "s840137-J3",
+        "wallMs": 39895.44227,
+        "cpuMs": 41097.814,
+        "includesSerialization": true
+      },
+      {
+        "id": "joint-gates",
+        "wallMs": 115.139162,
+        "cpuMs": 175.076,
+        "includesSerialization": true
+      },
+      {
+        "id": "s840131-H4",
+        "wallMs": 23806.128743,
+        "cpuMs": 24558.757,
+        "includesSerialization": true
+      },
+      {
+        "id": "s840131-P1",
+        "wallMs": 44029.64837,
+        "cpuMs": 44925.806,
+        "includesSerialization": true
+      }
+    ],
+    "gates": [
+      {
+        "name": "joint self-consistency",
+        "seed": 840131,
+        "passed": true,
+        "rows": [
+          {
+            "key": "positionM",
+            "value": 8.799137067744731e-11,
+            "cap": 0.0001,
+            "absolutePassed": true,
+            "reductionPassed": true,
+            "coarse": 5.843040723830244e-10,
+            "floor": 1e-08
+          },
+          {
+            "key": "velocityMps",
+            "value": 2.0176425055042244e-10,
+            "cap": 0.0001,
+            "absolutePassed": true,
+            "reductionPassed": true,
+            "coarse": 1.13432061855226e-09,
+            "floor": 1e-08
+          },
+          {
+            "key": "attitudeRad",
+            "value": 4.2146848510894035e-08,
+            "cap": 0.0001,
+            "absolutePassed": true,
+            "reductionPassed": true,
+            "coarse": 4.2146848510894035e-08,
+            "floor": 1e-07
+          },
+          {
+            "key": "angularVelocityRadps",
+            "value": 1.7355620045940678e-09,
+            "cap": 0.001,
+            "absolutePassed": true,
+            "reductionPassed": true,
+            "coarse": 1.29167924888665e-08,
+            "floor": 1e-07
+          }
+        ],
+        "fine": {
+          "a": "s840131-J2",
+          "b": "s840131-J3",
+          "records": 1601,
+          "maximum": {
+            "positionM": 8.799137067744731e-11,
+            "velocityMps": 2.0176425055042244e-10,
+            "attitudeRad": 4.2146848510894035e-08,
+            "angularVelocityRadps": 1.7355620045940678e-09,
+            "nominalMotorN": 3.956168725949283e-12,
+            "attitudeAtan2Rad": 1.2826950986369821e-10
+          },
+          "worst": {
+            "positionM": {
+              "record": 1600,
+              "tick": 51200,
+              "time": 1,
+              "drone": 5
+            },
+            "velocityMps": {
+              "record": 1111,
+              "tick": 35552,
+              "time": 0.694375,
+              "drone": 5
+            },
+            "angularVelocityRadps": {
+              "record": 637,
+              "tick": 20384,
+              "time": 0.398125,
+              "drone": 5
+            },
+            "attitudeRad": {
+              "record": 10,
+              "tick": 320,
+              "time": 0.00625,
+              "drone": 4
+            },
+            "attitudeAtan2Rad": {
+              "record": 1600,
+              "tick": 51200,
+              "time": 1,
+              "drone": 14
+            },
+            "nominalMotorN": {
+              "record": 720,
+              "tick": 23040,
+              "time": 0.45,
+              "drone": 5
+            }
+          }
+        },
+        "coarse": {
+          "a": "s840131-J1",
+          "b": "s840131-J2",
+          "records": 1601,
+          "maximum": {
+            "positionM": 5.843040723830244e-10,
+            "velocityMps": 1.13432061855226e-09,
+            "attitudeRad": 4.2146848510894035e-08,
+            "angularVelocityRadps": 1.29167924888665e-08,
+            "nominalMotorN": 3.2932115368033976e-11,
+            "attitudeAtan2Rad": 7.538801028578554e-10
+          },
+          "worst": {
+            "positionM": {
+              "record": 1600,
+              "tick": 51200,
+              "time": 1,
+              "drone": 5
+            },
+            "velocityMps": {
+              "record": 893,
+              "tick": 28576,
+              "time": 0.558125,
+              "drone": 5
+            },
+            "angularVelocityRadps": {
+              "record": 873,
+              "tick": 27936,
+              "time": 0.545625,
+              "drone": 5
+            },
+            "attitudeRad": {
+              "record": 1,
+              "tick": 32,
+              "time": 0.000625,
+              "drone": 12
+            },
+            "attitudeAtan2Rad": {
+              "record": 963,
+              "tick": 30816,
+              "time": 0.601875,
+              "drone": 7
+            },
+            "nominalMotorN": {
+              "record": 912,
+              "tick": 29184,
+              "time": 0.57,
+              "drone": 7
+            }
+          }
+        },
+        "reduction": 0.6
+      },
+      {
+        "name": "joint self-consistency",
+        "seed": 840137,
+        "passed": true,
+        "rows": [
+          {
+            "key": "positionM",
+            "value": 1.2379449674492317e-10,
+            "cap": 0.0001,
+            "absolutePassed": true,
+            "reductionPassed": true,
+            "coarse": 1.0551576884521697e-09,
+            "floor": 1e-08
+          },
+          {
+            "key": "velocityMps",
+            "value": 3.7141191570972284e-10,
+            "cap": 0.0001,
+            "absolutePassed": true,
+            "reductionPassed": true,
+            "coarse": 2.9042820874891088e-09,
+            "floor": 1e-08
+          },
+          {
+            "key": "attitudeRad",
+            "value": 4.2146848510894035e-08,
+            "cap": 0.0001,
+            "absolutePassed": true,
+            "reductionPassed": true,
+            "coarse": 4.2146848510894035e-08,
+            "floor": 1e-07
+          },
+          {
+            "key": "angularVelocityRadps",
+            "value": 3.7574459035789136e-09,
+            "cap": 0.001,
+            "absolutePassed": true,
+            "reductionPassed": true,
+            "coarse": 3.123546433004497e-08,
+            "floor": 1e-07
+          }
+        ],
+        "fine": {
+          "a": "s840137-J2",
+          "b": "s840137-J3",
+          "records": 1601,
+          "maximum": {
+            "positionM": 1.2379449674492317e-10,
+            "velocityMps": 3.7141191570972284e-10,
+            "attitudeRad": 4.2146848510894035e-08,
+            "angularVelocityRadps": 3.7574459035789136e-09,
+            "nominalMotorN": 1.3828202471977136e-11,
+            "attitudeAtan2Rad": 2.4879856498981526e-10
+          },
+          "worst": {
+            "positionM": {
+              "record": 1600,
+              "tick": 51200,
+              "time": 1,
+              "drone": 0
+            },
+            "velocityMps": {
+              "record": 1264,
+              "tick": 40448,
+              "time": 0.79,
+              "drone": 0
+            },
+            "angularVelocityRadps": {
+              "record": 861,
+              "tick": 27552,
+              "time": 0.538125,
+              "drone": 0
+            },
+            "attitudeRad": {
+              "record": 5,
+              "tick": 160,
+              "time": 0.003125,
+              "drone": 2
+            },
+            "attitudeAtan2Rad": {
+              "record": 1003,
+              "tick": 32096,
+              "time": 0.626875,
+              "drone": 0
+            },
+            "nominalMotorN": {
+              "record": 1248,
+              "tick": 39936,
+              "time": 0.78,
+              "drone": 9
+            }
+          }
+        },
+        "coarse": {
+          "a": "s840137-J1",
+          "b": "s840137-J2",
+          "records": 1601,
+          "maximum": {
+            "positionM": 1.0551576884521697e-09,
+            "velocityMps": 2.9042820874891088e-09,
+            "attitudeRad": 4.2146848510894035e-08,
+            "angularVelocityRadps": 3.123546433004497e-08,
+            "nominalMotorN": 1.5200213310251343e-10,
+            "attitudeAtan2Rad": 1.967651352995693e-09
+          },
+          "worst": {
+            "positionM": {
+              "record": 1600,
+              "tick": 51200,
+              "time": 1,
+              "drone": 0
+            },
+            "velocityMps": {
+              "record": 1224,
+              "tick": 39168,
+              "time": 0.765,
+              "drone": 0
+            },
+            "angularVelocityRadps": {
+              "record": 861,
+              "tick": 27552,
+              "time": 0.538125,
+              "drone": 0
+            },
+            "attitudeRad": {
+              "record": 22,
+              "tick": 704,
+              "time": 0.01375,
+              "drone": 5
+            },
+            "attitudeAtan2Rad": {
+              "record": 994,
+              "tick": 31808,
+              "time": 0.62125,
+              "drone": 0
+            },
+            "nominalMotorN": {
+              "record": 1248,
+              "tick": 39936,
+              "time": 0.78,
+              "drone": 9
+            }
+          }
+        },
+        "reduction": 0.6
+      }
+    ],
+    "comparisons": [
+      {
+        "a": "s840131-J2",
+        "b": "s840131-J3",
+        "records": 1601,
+        "maximum": {
+          "positionM": 8.799137067744731e-11,
+          "velocityMps": 2.0176425055042244e-10,
+          "attitudeRad": 4.2146848510894035e-08,
+          "angularVelocityRadps": 1.7355620045940678e-09,
+          "nominalMotorN": 3.956168725949283e-12,
+          "attitudeAtan2Rad": 1.2826950986369821e-10
+        },
+        "worst": {
+          "positionM": {
+            "record": 1600,
+            "tick": 51200,
+            "time": 1,
+            "drone": 5
+          },
+          "velocityMps": {
+            "record": 1111,
+            "tick": 35552,
+            "time": 0.694375,
+            "drone": 5
+          },
+          "angularVelocityRadps": {
+            "record": 637,
+            "tick": 20384,
+            "time": 0.398125,
+            "drone": 5
+          },
+          "attitudeRad": {
+            "record": 10,
+            "tick": 320,
+            "time": 0.00625,
+            "drone": 4
+          },
+          "attitudeAtan2Rad": {
+            "record": 1600,
+            "tick": 51200,
+            "time": 1,
+            "drone": 14
+          },
+          "nominalMotorN": {
+            "record": 720,
+            "tick": 23040,
+            "time": 0.45,
+            "drone": 5
+          }
+        }
+      },
+      {
+        "a": "s840131-J1",
+        "b": "s840131-J2",
+        "records": 1601,
+        "maximum": {
+          "positionM": 5.843040723830244e-10,
+          "velocityMps": 1.13432061855226e-09,
+          "attitudeRad": 4.2146848510894035e-08,
+          "angularVelocityRadps": 1.29167924888665e-08,
+          "nominalMotorN": 3.2932115368033976e-11,
+          "attitudeAtan2Rad": 7.538801028578554e-10
+        },
+        "worst": {
+          "positionM": {
+            "record": 1600,
+            "tick": 51200,
+            "time": 1,
+            "drone": 5
+          },
+          "velocityMps": {
+            "record": 893,
+            "tick": 28576,
+            "time": 0.558125,
+            "drone": 5
+          },
+          "angularVelocityRadps": {
+            "record": 873,
+            "tick": 27936,
+            "time": 0.545625,
+            "drone": 5
+          },
+          "attitudeRad": {
+            "record": 1,
+            "tick": 32,
+            "time": 0.000625,
+            "drone": 12
+          },
+          "attitudeAtan2Rad": {
+            "record": 963,
+            "tick": 30816,
+            "time": 0.601875,
+            "drone": 7
+          },
+          "nominalMotorN": {
+            "record": 912,
+            "tick": 29184,
+            "time": 0.57,
+            "drone": 7
+          }
+        }
+      },
+      {
+        "a": "s840137-J2",
+        "b": "s840137-J3",
+        "records": 1601,
+        "maximum": {
+          "positionM": 1.2379449674492317e-10,
+          "velocityMps": 3.7141191570972284e-10,
+          "attitudeRad": 4.2146848510894035e-08,
+          "angularVelocityRadps": 3.7574459035789136e-09,
+          "nominalMotorN": 1.3828202471977136e-11,
+          "attitudeAtan2Rad": 2.4879856498981526e-10
+        },
+        "worst": {
+          "positionM": {
+            "record": 1600,
+            "tick": 51200,
+            "time": 1,
+            "drone": 0
+          },
+          "velocityMps": {
+            "record": 1264,
+            "tick": 40448,
+            "time": 0.79,
+            "drone": 0
+          },
+          "angularVelocityRadps": {
+            "record": 861,
+            "tick": 27552,
+            "time": 0.538125,
+            "drone": 0
+          },
+          "attitudeRad": {
+            "record": 5,
+            "tick": 160,
+            "time": 0.003125,
+            "drone": 2
+          },
+          "attitudeAtan2Rad": {
+            "record": 1003,
+            "tick": 32096,
+            "time": 0.626875,
+            "drone": 0
+          },
+          "nominalMotorN": {
+            "record": 1248,
+            "tick": 39936,
+            "time": 0.78,
+            "drone": 9
+          }
+        }
+      },
+      {
+        "a": "s840137-J1",
+        "b": "s840137-J2",
+        "records": 1601,
+        "maximum": {
+          "positionM": 1.0551576884521697e-09,
+          "velocityMps": 2.9042820874891088e-09,
+          "attitudeRad": 4.2146848510894035e-08,
+          "angularVelocityRadps": 3.123546433004497e-08,
+          "nominalMotorN": 1.5200213310251343e-10,
+          "attitudeAtan2Rad": 1.967651352995693e-09
+        },
+        "worst": {
+          "positionM": {
+            "record": 1600,
+            "tick": 51200,
+            "time": 1,
+            "drone": 0
+          },
+          "velocityMps": {
+            "record": 1224,
+            "tick": 39168,
+            "time": 0.765,
+            "drone": 0
+          },
+          "angularVelocityRadps": {
+            "record": 861,
+            "tick": 27552,
+            "time": 0.538125,
+            "drone": 0
+          },
+          "attitudeRad": {
+            "record": 22,
+            "tick": 704,
+            "time": 0.01375,
+            "drone": 5
+          },
+          "attitudeAtan2Rad": {
+            "record": 994,
+            "tick": 31808,
+            "time": 0.62125,
+            "drone": 0
+          },
+          "nominalMotorN": {
+            "record": 1248,
+            "tick": 39936,
+            "time": 0.78,
+            "drone": 9
+          }
+        }
+      }
+    ],
+    "controllerComparisons": [
+      {
+        "a": "s840131-J2",
+        "b": "s840131-J3",
+        "events": 100,
+        "maximumCommandDifference": 5.925607227119656e-12,
+        "worst": {
+          "tick": 20480,
+          "drone": 5,
+          "rotor": 1,
+          "a": 0.07020805374513776,
+          "b": 0.07020805375106337
+        },
+        "branchDifferences": [],
+        "meaning": "Branch signature changes are not themselves physical controller discontinuities; actual command differences retained"
+      },
+      {
+        "a": "s840131-J1",
+        "b": "s840131-J2",
+        "events": 100,
+        "maximumCommandDifference": 4.92627327819406e-11,
+        "worst": {
+          "tick": 28160,
+          "drone": 5,
+          "rotor": 0,
+          "a": 0.07327746370540958,
+          "b": 0.07327746365614685
+        },
+        "branchDifferences": [],
+        "meaning": "Branch signature changes are not themselves physical controller discontinuities; actual command differences retained"
+      },
+      {
+        "a": "s840137-J2",
+        "b": "s840137-J3",
+        "events": 100,
+        "maximumCommandDifference": 4.1678299700365073e-11,
+        "worst": {
+          "tick": 38912,
+          "drone": 9,
+          "rotor": 2,
+          "a": 0.13209272186667728,
+          "b": 0.13209272190835558
+        },
+        "branchDifferences": [],
+        "meaning": "Branch signature changes are not themselves physical controller discontinuities; actual command differences retained"
+      },
+      {
+        "a": "s840137-J1",
+        "b": "s840137-J2",
+        "events": 100,
+        "maximumCommandDifference": 5.539653458175309e-10,
+        "worst": {
+          "tick": 38912,
+          "drone": 9,
+          "rotor": 2,
+          "a": 0.13209272242064263,
+          "b": 0.13209272186667728
+        },
+        "branchDifferences": [],
+        "meaning": "Branch signature changes are not themselves physical controller discontinuities; actual command differences retained"
+      }
+    ],
+    "provisionalAllScientificGatesPassed": false,
+    "requiresSupervisorValidity": true
+  },
+  "supervisor": {
+    "status": "worker-stopped",
+    "code": 1,
+    "signal": null,
+    "killed": null,
+    "elapsedWallMs": 223476.58426,
+    "totalCpuSeconds": 233.82,
+    "retainedBytes": 118104714
+  },
+  "executionValidity": {
+    "uninterruptedSuccessfulExecution": false,
+    "qualifiedResultsMayBeConsidered": false,
+    "reason": "Worker stopped; inspect retained failures",
+    "wallMsBeforeValidityWrite": 223485.875585,
+    "cpuSecondsBeforeValidityWrite": 233.83,
+    "referenceStillRequiresEveryGate": true
+  },
+  "matrix": {
+    "rows": [
+      {
+        "runId": "s840131-J1",
+        "status": "complete",
+        "reason": "Earlier fixture, preflight or gate stopped cycle"
+      },
+      {
+        "runId": "s840131-J2",
+        "status": "complete",
+        "reason": "Earlier fixture, preflight or gate stopped cycle"
+      },
+      {
+        "runId": "s840131-J3",
+        "status": "complete",
+        "reason": "Earlier fixture, preflight or gate stopped cycle"
+      },
+      {
+        "runId": "s840131-H1",
+        "status": "skipped",
+        "reason": "Earlier fixture, preflight or gate stopped cycle"
+      },
+      {
+        "runId": "s840131-H2",
+        "status": "skipped",
+        "reason": "Earlier fixture, preflight or gate stopped cycle"
+      },
+      {
+        "runId": "s840131-H3",
+        "status": "skipped",
+        "reason": "Earlier fixture, preflight or gate stopped cycle"
+      },
+      {
+        "runId": "s840131-H4",
+        "status": "complete",
+        "reason": "Earlier fixture, preflight or gate stopped cycle"
+      },
+      {
+        "runId": "s840131-P1",
+        "status": "failed",
+        "reason": "Per-job cooperative wall cap"
+      },
+      {
+        "runId": "s840137-J1",
+        "status": "complete",
+        "reason": "Earlier fixture, preflight or gate stopped cycle"
+      },
+      {
+        "runId": "s840137-J2",
+        "status": "complete",
+        "reason": "Earlier fixture, preflight or gate stopped cycle"
+      },
+      {
+        "runId": "s840137-J3",
+        "status": "complete",
+        "reason": "Earlier fixture, preflight or gate stopped cycle"
+      },
+      {
+        "runId": "s840137-H1",
+        "status": "skipped",
+        "reason": "Earlier fixture, preflight or gate stopped cycle"
+      },
+      {
+        "runId": "s840137-H2",
+        "status": "skipped",
+        "reason": "Earlier fixture, preflight or gate stopped cycle"
+      },
+      {
+        "runId": "s840137-H3",
+        "status": "skipped",
+        "reason": "Earlier fixture, preflight or gate stopped cycle"
+      },
+      {
+        "runId": "s840137-H4",
+        "status": "skipped",
+        "reason": "Earlier fixture, preflight or gate stopped cycle"
+      },
+      {
+        "runId": "s840137-P1",
+        "status": "skipped",
+        "reason": "Earlier fixture, preflight or gate stopped cycle"
+      }
+    ],
+    "executionQualified": false
+  },
+  "compatibility": {
+    "passed": true,
+    "expected": {
+      "seed": 4301,
+      "arm": "compatibility",
+      "stepTicks": 128,
+      "airTicks": 512,
+      "kind": "held",
+      "terminalStateWindSha256": "fabdd3452577cfdc3cb948ecd12b90c93fc74ee8673129a9737ca2d3e1265ef7",
+      "work": {
+        "physicsSteps": 400,
+        "rk4DerivativeCalls": 25600,
+        "fieldUpdates": 100,
+        "controllerUpdates": 100,
+        "rotorKernels": 5394,
+        "candidatePairs": 24000,
+        "safetySteps": 400
+      }
+    },
+    "actual": {
+      "complete": true,
+      "terminalStateWindSha256": "fabdd3452577cfdc3cb948ecd12b90c93fc74ee8673129a9737ca2d3e1265ef7",
+      "work": {
+        "physicsSteps": 400,
+        "rk4DerivativeCalls": 25600,
+        "fieldUpdates": 100,
+        "controllerUpdates": 100,
+        "rotorKernels": 5394,
+        "candidatePairs": 24000,
+        "safetySteps": 400,
+        "jointStageFields": 0,
+        "acceptedEndpointAudits": 401,
+        "productionRefreshAuditAliases": 100,
+        "fieldAttempts": 100,
+        "derivativeAttempts": 0,
+        "heldIntegratorAttempts": 6400,
+        "heldIntegratorCompleted": 6400,
+        "heldDerivativeAttemptUpperBound": 25600
+      },
+      "heldTick": 50688
+    }
+  },
+  "preflights": [
+    {
+      "source": "implementation/results/preflight/preflight-s840131.json",
+      "id": "preflight-s840131",
+      "passed": true,
+      "visitedEndpoints": 6401,
+      "controllerEvents": 100,
+      "audit": {
+        "samples": 6401,
+        "pairSamples": 6144960,
+        "signatureChanges": 630,
+        "stepRiskChecks": 6400,
+        "endpointRiskChecks": 6400,
+        "fullTrialRiskChecks": 0,
+        "risks": []
+      }
+    },
+    {
+      "source": "implementation/results/preflight/preflight-s840137.json",
+      "id": "preflight-s840137",
+      "passed": true,
+      "visitedEndpoints": 6401,
+      "controllerEvents": 100,
+      "audit": {
+        "samples": 6401,
+        "pairSamples": 6144960,
+        "signatureChanges": 646,
+        "stepRiskChecks": 6400,
+        "endpointRiskChecks": 6400,
+        "fullTrialRiskChecks": 0,
+        "risks": []
+      }
+    }
+  ],
+  "runs": [
+    {
+      "source": "implementation/results/runs/s4301-compatibility.json",
+      "runId": "s4301-compatibility",
+      "complete": true,
+      "endTick": 51200,
+      "work": {
+        "physicsSteps": 400,
+        "rk4DerivativeCalls": 25600,
+        "fieldUpdates": 100,
+        "controllerUpdates": 100,
+        "rotorKernels": 5394,
+        "candidatePairs": 24000,
+        "safetySteps": 400,
+        "jointStageFields": 0,
+        "acceptedEndpointAudits": 401,
+        "productionRefreshAuditAliases": 100,
+        "fieldAttempts": 100,
+        "derivativeAttempts": 0,
+        "heldIntegratorAttempts": 6400,
+        "heldIntegratorCompleted": 6400,
+        "heldDerivativeAttemptUpperBound": 25600
+      },
+      "timing": {
+        "field": 24.3498400000135,
+        "controller": 44.61342400000285,
+        "rkArithmetic": 66.53317900001093,
+        "safetyDiagnostics": 590.6175319999311,
+        "recordingHash": 26.544491000016933,
+        "total": 768.801281,
+        "cpuMs": 1032.271,
+        "totalBeforeFinalRunRecordWrite": 781.7667519999995,
+        "cpuMsBeforeFinalRunRecordWrite": 1048.871,
+        "totalScope": "total/cpuMs cover numerical loop only; totalBeforeFinalRunRecordWrite includes artifact serialization; scheduler job timing includes final record serialization"
+      },
+      "metrics": {
+        "minPairClearance": 0.4557028809317213,
+        "minObstacleClearance": 3.125309262317287,
+        "maxInflow": 3.803039945033523,
+        "minMotor": 0.03727133058183612,
+        "maxMotor": 0.09001316204299227,
+        "projectionMaximum": 0,
+        "normDefectMaximum": 0,
+        "projectionWorst": null,
+        "normDefectWorst": null
+      },
+      "audit": {
+        "samples": 401,
+        "pairSamples": 384960,
+        "signatureChanges": 310,
+        "stepRiskChecks": 400,
+        "endpointRiskChecks": 400,
+        "fullTrialRiskChecks": 0,
+        "risks": []
+      },
+      "branchCounts": {
+        "nearRadius": 133,
+        "downstreamZero": 190,
+        "radialFade": 53,
+        "farStart": 46,
+        "radialCutoff": 44
+      },
+      "tiltExtrema": {
+        "nearest": {
+          "margin": 0.023882035135921242,
+          "drone": 0,
+          "location": {
+            "tick": 50048,
+            "time": 0.9775,
+            "role": "endpoint"
+          }
+        },
+        "minimum": {
+          "margin": 0.023882035135921242,
+          "drone": 0,
+          "location": {
+            "tick": 50048,
+            "time": 0.9775,
+            "role": "endpoint"
+          }
+        },
+        "maximum": {
+          "margin": 0.06030737921409157,
+          "drone": 0,
+          "location": {
+            "tick": 0,
+            "time": 0,
+            "role": "endpoint"
+          }
+        }
+      }
+    },
+    {
+      "source": "implementation/results/runs/s840131-H4.json",
+      "runId": "s840131-H4",
+      "complete": true,
+      "endTick": 51200,
+      "work": {
+        "physicsSteps": 12800,
+        "rk4DerivativeCalls": 819200,
+        "fieldUpdates": 12800,
+        "controllerUpdates": 100,
+        "rotorKernels": 677418,
+        "candidatePairs": 3072000,
+        "safetySteps": 12800,
+        "jointStageFields": 0,
+        "acceptedEndpointAudits": 12801,
+        "productionRefreshAuditAliases": 12800,
+        "fieldAttempts": 12800,
+        "derivativeAttempts": 0,
+        "heldIntegratorAttempts": 204800,
+        "heldIntegratorCompleted": 204800,
+        "heldDerivativeAttemptUpperBound": 819200
+      },
+      "timing": {
+        "field": 2495.034392998903,
+        "controller": 37.649092999869026,
+        "rkArithmetic": 1813.9324340008898,
+        "safetyDiagnostics": 17772.861824999884,
+        "recordingHash": 756.9502300003078,
+        "total": 23785.738830000017,
+        "cpuMs": 24529.243,
+        "totalBeforeFinalRunRecordWrite": 23804.207899,
+        "cpuMsBeforeFinalRunRecordWrite": 24556.835,
+        "totalScope": "total/cpuMs cover numerical loop only; totalBeforeFinalRunRecordWrite includes artifact serialization; scheduler job timing includes final record serialization"
+      },
+      "metrics": {
+        "minPairClearance": 0.28037843510406624,
+        "minObstacleClearance": 3.1764288958150413,
+        "maxInflow": 4.260469283998184,
+        "minMotor": 0.03900272235906368,
+        "maxMotor": 0.09393570331268704,
+        "projectionMaximum": 0,
+        "normDefectMaximum": 0,
+        "projectionWorst": null,
+        "normDefectWorst": null
+      },
+      "audit": {
+        "samples": 12801,
+        "pairSamples": 12288960,
+        "signatureChanges": 645,
+        "stepRiskChecks": 12800,
+        "endpointRiskChecks": 12800,
+        "fullTrialRiskChecks": 0,
+        "risks": []
+      },
+      "branchCounts": {
+        "downstreamZero": 258,
+        "radialFade": 51,
+        "nearRadius": 172,
+        "farStart": 149,
+        "radialCutoff": 27
+      },
+      "tiltExtrema": {
+        "nearest": {
+          "margin": 0.007982982908185554,
+          "drone": 10,
+          "location": {
+            "tick": 46120,
+            "time": 0.90078125,
+            "role": "endpoint"
+          }
+        },
+        "minimum": {
+          "margin": 0.007982982908185554,
+          "drone": 10,
+          "location": {
+            "tick": 46120,
+            "time": 0.90078125,
+            "role": "endpoint"
+          }
+        },
+        "maximum": {
+          "margin": 0.06030737921409157,
+          "drone": 0,
+          "location": {
+            "tick": 0,
+            "time": 0,
+            "role": "endpoint"
+          }
+        }
+      }
+    },
+    {
+      "source": "implementation/results/runs/s840131-J1.json",
+      "runId": "s840131-J1",
+      "complete": true,
+      "endTick": 51200,
+      "work": {
+        "physicsSteps": 1600,
+        "rk4DerivativeCalls": 102400,
+        "fieldUpdates": 0,
+        "controllerUpdates": 100,
+        "rotorKernels": 338703,
+        "candidatePairs": 1536000,
+        "safetySteps": 1600,
+        "jointStageFields": 6400,
+        "acceptedEndpointAudits": 1601,
+        "productionRefreshAuditAliases": 0,
+        "fieldAttempts": 6400,
+        "derivativeAttempts": 102400,
+        "heldIntegratorAttempts": 0,
+        "heldIntegratorCompleted": 0,
+        "heldDerivativeAttemptUpperBound": 0
+      },
+      "timing": {
+        "field": 1306.6383799998093,
+        "controller": 55.445253999982015,
+        "rkArithmetic": 360.2120839997551,
+        "safetyDiagnostics": 7732.653967000275,
+        "recordingHash": 838.1289800000341,
+        "total": 10348.97099,
+        "cpuMs": 10905.742,
+        "totalBeforeFinalRunRecordWrite": 10367.799914999998,
+        "cpuMsBeforeFinalRunRecordWrite": 10929.283,
+        "totalScope": "total/cpuMs cover numerical loop only; totalBeforeFinalRunRecordWrite includes artifact serialization; scheduler job timing includes final record serialization"
+      },
+      "metrics": {
+        "minPairClearance": 0.2803202617373507,
+        "minObstacleClearance": 3.1764376225979425,
+        "maxInflow": 4.260469283998184,
+        "minMotor": 0.03900272710628643,
+        "maxMotor": 0.0939356105831155,
+        "projectionMaximum": 1.1191340000144688e-13,
+        "normDefectMaximum": 1.5034209011055566e-06,
+        "projectionWorst": {
+          "tick": 1024,
+          "drone": 10,
+          "value": 1.1191340000144688e-13
+        },
+        "normDefectWorst": {
+          "tick": 7504,
+          "stage": 2,
+          "drone": 10,
+          "value": 1.5034209011055566e-06
+        }
+      },
+      "audit": {
+        "samples": 8001,
+        "pairSamples": 7680960,
+        "signatureChanges": 1101,
+        "stepRiskChecks": 1600,
+        "endpointRiskChecks": 1600,
+        "fullTrialRiskChecks": 1600,
+        "risks": []
+      },
+      "branchCounts": {
+        "downstreamZero": 463,
+        "radialFade": 99,
+        "nearRadius": 334,
+        "farStart": 274,
+        "radialCutoff": 54
+      },
+      "tiltExtrema": {
+        "nearest": {
+          "margin": 0.00796647101065584,
+          "drone": 10,
+          "location": {
+            "tick": 46128,
+            "time": 0.9009375000000001,
+            "role": "stage",
+            "stage": 2
+          }
+        },
+        "minimum": {
+          "margin": 0.00796647101065584,
+          "drone": 10,
+          "location": {
+            "tick": 46128,
+            "time": 0.9009375000000001,
+            "role": "stage",
+            "stage": 2
+          }
+        },
+        "maximum": {
+          "margin": 0.06030737921409157,
+          "drone": 0,
+          "location": {
+            "tick": 0,
+            "time": 0,
+            "role": "endpoint"
+          }
+        }
+      }
+    },
+    {
+      "source": "implementation/results/runs/s840131-J2.json",
+      "runId": "s840131-J2",
+      "complete": true,
+      "endTick": 51200,
+      "work": {
+        "physicsSteps": 3200,
+        "rk4DerivativeCalls": 204800,
+        "fieldUpdates": 0,
+        "controllerUpdates": 100,
+        "rotorKernels": 677415,
+        "candidatePairs": 3072000,
+        "safetySteps": 3200,
+        "jointStageFields": 12800,
+        "acceptedEndpointAudits": 3201,
+        "productionRefreshAuditAliases": 0,
+        "fieldAttempts": 12800,
+        "derivativeAttempts": 204800,
+        "heldIntegratorAttempts": 0,
+        "heldIntegratorCompleted": 0,
+        "heldDerivativeAttemptUpperBound": 0
+      },
+      "timing": {
+        "field": 2476.542906000195,
+        "controller": 50.422273000014684,
+        "rkArithmetic": 652.0634980007053,
+        "safetyDiagnostics": 14791.148011999288,
+        "recordingHash": 1609.3204160004534,
+        "total": 19676.521251000002,
+        "cpuMs": 20396.64,
+        "totalBeforeFinalRunRecordWrite": 19695.989518,
+        "cpuMsBeforeFinalRunRecordWrite": 20418.876,
+        "totalScope": "total/cpuMs cover numerical loop only; totalBeforeFinalRunRecordWrite includes artifact serialization; scheduler job timing includes final record serialization"
+      },
+      "metrics": {
+        "minPairClearance": 0.28032026171714086,
+        "minObstacleClearance": 3.1764376225942135,
+        "maxInflow": 4.260469283998184,
+        "minMotor": 0.03900272709910334,
+        "maxMotor": 0.09393561059224606,
+        "projectionMaximum": 3.675498845247472e-15,
+        "normDefectMaximum": 3.7585543744000915e-07,
+        "projectionWorst": {
+          "tick": 1024,
+          "drone": 10,
+          "value": 3.675498845247472e-15
+        },
+        "normDefectWorst": {
+          "tick": 7496,
+          "stage": 2,
+          "drone": 10,
+          "value": 3.7585543744000915e-07
+        }
+      },
+      "audit": {
+        "samples": 16001,
+        "pairSamples": 15360960,
+        "signatureChanges": 1207,
+        "stepRiskChecks": 3200,
+        "endpointRiskChecks": 3200,
+        "fullTrialRiskChecks": 3200,
+        "risks": []
+      },
+      "branchCounts": {
+        "downstreamZero": 492,
+        "radialFade": 103,
+        "nearRadius": 339,
+        "farStart": 289,
+        "radialCutoff": 54
+      },
+      "tiltExtrema": {
+        "nearest": {
+          "margin": 0.007966547598231788,
+          "drone": 10,
+          "location": {
+            "tick": 46120,
+            "time": 0.90078125,
+            "role": "stage",
+            "stage": 2
+          }
+        },
+        "minimum": {
+          "margin": 0.007966547598231788,
+          "drone": 10,
+          "location": {
+            "tick": 46120,
+            "time": 0.90078125,
+            "role": "stage",
+            "stage": 2
+          }
+        },
+        "maximum": {
+          "margin": 0.06030737921409157,
+          "drone": 0,
+          "location": {
+            "tick": 0,
+            "time": 0,
+            "role": "endpoint"
+          }
+        }
+      }
+    },
+    {
+      "source": "implementation/results/runs/s840131-J3.json",
+      "runId": "s840131-J3",
+      "complete": true,
+      "endTick": 51200,
+      "work": {
+        "physicsSteps": 6400,
+        "rk4DerivativeCalls": 409600,
+        "fieldUpdates": 0,
+        "controllerUpdates": 100,
+        "rotorKernels": 1354825,
+        "candidatePairs": 6144000,
+        "safetySteps": 6400,
+        "jointStageFields": 25600,
+        "acceptedEndpointAudits": 6401,
+        "productionRefreshAuditAliases": 0,
+        "fieldAttempts": 25600,
+        "derivativeAttempts": 409600,
+        "heldIntegratorAttempts": 0,
+        "heldIntegratorCompleted": 0,
+        "heldDerivativeAttemptUpperBound": 0
+      },
+      "timing": {
+        "field": 4791.277965000416,
+        "controller": 44.5724510001819,
+        "rkArithmetic": 1369.018487999463,
+        "safetyDiagnostics": 30067.203445000923,
+        "recordingHash": 3254.0774109997,
+        "total": 39713.88096899999,
+        "cpuMs": 41147.913,
+        "totalBeforeFinalRunRecordWrite": 39751.297353,
+        "cpuMsBeforeFinalRunRecordWrite": 41187.345,
+        "totalScope": "total/cpuMs cover numerical loop only; totalBeforeFinalRunRecordWrite includes artifact serialization; scheduler job timing includes final record serialization"
+      },
+      "metrics": {
+        "minPairClearance": 0.2803202617155861,
+        "minObstacleClearance": 3.1764376225929984,
+        "maxInflow": 4.260469283998184,
+        "minMotor": 0.0390027270986576,
+        "maxMotor": 0.09393561059281272,
+        "projectionMaximum": 4.983580072506977e-16,
+        "normDefectMaximum": 9.396387246063398e-08,
+        "projectionWorst": {
+          "tick": 9136,
+          "drone": 5,
+          "value": 4.983580072506977e-16
+        },
+        "normDefectWorst": {
+          "tick": 7492,
+          "stage": 2,
+          "drone": 10,
+          "value": 9.396387246063398e-08
+        }
+      },
+      "audit": {
+        "samples": 32001,
+        "pairSamples": 30720960,
+        "signatureChanges": 1267,
+        "stepRiskChecks": 6400,
+        "endpointRiskChecks": 6400,
+        "fullTrialRiskChecks": 6400,
+        "risks": []
+      },
+      "branchCounts": {
+        "downstreamZero": 507,
+        "radialFade": 102,
+        "nearRadius": 344,
+        "farStart": 296,
+        "radialCutoff": 54
+      },
+      "tiltExtrema": {
+        "nearest": {
+          "margin": 0.007966573315353553,
+          "drone": 10,
+          "location": {
+            "tick": 46116,
+            "time": 0.900703125,
+            "role": "stage",
+            "stage": 2
+          }
+        },
+        "minimum": {
+          "margin": 0.007966573315353553,
+          "drone": 10,
+          "location": {
+            "tick": 46116,
+            "time": 0.900703125,
+            "role": "stage",
+            "stage": 2
+          }
+        },
+        "maximum": {
+          "margin": 0.06030737921409157,
+          "drone": 0,
+          "location": {
+            "tick": 0,
+            "time": 0,
+            "role": "endpoint"
+          }
+        }
+      }
+    },
+    {
+      "source": "implementation/results/runs/s840131-P1.json",
+      "runId": "s840131-P1",
+      "complete": false,
+      "endTick": 50768,
+      "work": {
+        "physicsSteps": 25384,
+        "rk4DerivativeCalls": 1624576,
+        "fieldUpdates": 12692,
+        "controllerUpdates": 100,
+        "rotorKernels": 672126,
+        "candidatePairs": 3046080,
+        "safetySteps": 25384,
+        "jointStageFields": 0,
+        "acceptedEndpointAudits": 25385,
+        "productionRefreshAuditAliases": 12692,
+        "fieldAttempts": 12692,
+        "derivativeAttempts": 0,
+        "heldIntegratorAttempts": 406144,
+        "heldIntegratorCompleted": 406144,
+        "heldDerivativeAttemptUpperBound": 1624576
+      },
+      "timing": {
+        "field": 2564.96282399958,
+        "controller": 47.4413450001739,
+        "rkArithmetic": 3499.567078002059,
+        "safetyDiagnostics": 35093.14053000475,
+        "recordingHash": 1559.3976890003833,
+        "total": 44008.68719699999,
+        "cpuMs": 44897.207,
+        "totalBeforeFinalRunRecordWrite": 44027.70824799998,
+        "cpuMsBeforeFinalRunRecordWrite": 44923.862,
+        "totalScope": "total/cpuMs cover numerical loop only; totalBeforeFinalRunRecordWrite includes artifact serialization; scheduler job timing includes final record serialization"
+      },
+      "metrics": {
+        "minPairClearance": 0.28037843510406824,
+        "minObstacleClearance": 3.1814243003829294,
+        "maxInflow": 4.260469283998184,
+        "minMotor": 0.03900272235906194,
+        "maxMotor": 0.09393570331268901,
+        "projectionMaximum": 0,
+        "normDefectMaximum": 0,
+        "projectionWorst": null,
+        "normDefectWorst": null
+      },
+      "audit": {
+        "samples": 25385,
+        "pairSamples": 24369600,
+        "signatureChanges": 655,
+        "stepRiskChecks": 25384,
+        "endpointRiskChecks": 25384,
+        "fullTrialRiskChecks": 0,
+        "risks": []
+      },
+      "branchCounts": {
+        "downstreamZero": 261,
+        "radialFade": 51,
+        "nearRadius": 170,
+        "farStart": 152,
+        "radialCutoff": 27
+      },
+      "tiltExtrema": {
+        "nearest": {
+          "margin": 0.007982982908196323,
+          "drone": 10,
+          "location": {
+            "tick": 46120,
+            "time": 0.90078125,
+            "role": "endpoint"
+          }
+        },
+        "minimum": {
+          "margin": 0.007982982908196323,
+          "drone": 10,
+          "location": {
+            "tick": 46120,
+            "time": 0.90078125,
+            "role": "endpoint"
+          }
+        },
+        "maximum": {
+          "margin": 0.06030737921409157,
+          "drone": 0,
+          "location": {
+            "tick": 0,
+            "time": 0,
+            "role": "endpoint"
+          }
+        }
+      }
+    },
+    {
+      "source": "implementation/results/runs/s840137-J1.json",
+      "runId": "s840137-J1",
+      "complete": true,
+      "endTick": 51200,
+      "work": {
+        "physicsSteps": 1600,
+        "rk4DerivativeCalls": 102400,
+        "fieldUpdates": 0,
+        "controllerUpdates": 100,
+        "rotorKernels": 351498,
+        "candidatePairs": 1536000,
+        "safetySteps": 1600,
+        "jointStageFields": 6400,
+        "acceptedEndpointAudits": 1601,
+        "productionRefreshAuditAliases": 0,
+        "fieldAttempts": 6400,
+        "derivativeAttempts": 102400,
+        "heldIntegratorAttempts": 0,
+        "heldIntegratorCompleted": 0,
+        "heldDerivativeAttemptUpperBound": 0
+      },
+      "timing": {
+        "field": 1204.0532499996625,
+        "controller": 39.303293000062695,
+        "rkArithmetic": 320.3397959997819,
+        "safetyDiagnostics": 7401.644535000451,
+        "recordingHash": 807.3393880005169,
+        "total": 9822.839038999999,
+        "cpuMs": 10212.22,
+        "totalBeforeFinalRunRecordWrite": 9842.768289999993,
+        "cpuMsBeforeFinalRunRecordWrite": 10248.991,
+        "totalScope": "total/cpuMs cover numerical loop only; totalBeforeFinalRunRecordWrite includes artifact serialization; scheduler job timing includes final record serialization"
+      },
+      "metrics": {
+        "minPairClearance": 0.35724906292754044,
+        "minObstacleClearance": 3.190822661968941,
+        "maxInflow": 3.7307597725434114,
+        "minMotor": 0.03213990225121765,
+        "maxMotor": 0.11513543342591367,
+        "projectionMaximum": 2.336105510169407e-13,
+        "normDefectMaximum": 1.5578633940638298e-06,
+        "projectionWorst": {
+          "tick": 39904,
+          "drone": 9,
+          "value": 2.336105510169407e-13
+        },
+        "normDefectWorst": {
+          "tick": 7792,
+          "stage": 2,
+          "drone": 13,
+          "value": 1.5578633940638298e-06
+        }
+      },
+      "audit": {
+        "samples": 8001,
+        "pairSamples": 7680960,
+        "signatureChanges": 1175,
+        "stepRiskChecks": 1600,
+        "endpointRiskChecks": 1600,
+        "fullTrialRiskChecks": 1600,
+        "risks": []
+      },
+      "branchCounts": {
+        "nearRadius": 345,
+        "downstreamZero": 614,
+        "radialFade": 141,
+        "radialCutoff": 44,
+        "farStart": 148
+      },
+      "tiltExtrema": {
+        "nearest": {
+          "margin": 0.00763436594339606,
+          "drone": 1,
+          "location": {
+            "tick": 40496,
+            "time": 0.7909375000000001,
+            "role": "stage",
+            "stage": 2
+          }
+        },
+        "minimum": {
+          "margin": 0.00763436594339606,
+          "drone": 1,
+          "location": {
+            "tick": 40496,
+            "time": 0.7909375000000001,
+            "role": "stage",
+            "stage": 2
+          }
+        },
+        "maximum": {
+          "margin": 0.06030737921409157,
+          "drone": 0,
+          "location": {
+            "tick": 0,
+            "time": 0,
+            "role": "endpoint"
+          }
+        }
+      }
+    },
+    {
+      "source": "implementation/results/runs/s840137-J2.json",
+      "runId": "s840137-J2",
+      "complete": true,
+      "endTick": 51200,
+      "work": {
+        "physicsSteps": 3200,
+        "rk4DerivativeCalls": 204800,
+        "fieldUpdates": 0,
+        "controllerUpdates": 100,
+        "rotorKernels": 703000,
+        "candidatePairs": 3072000,
+        "safetySteps": 3200,
+        "jointStageFields": 12800,
+        "acceptedEndpointAudits": 3201,
+        "productionRefreshAuditAliases": 0,
+        "fieldAttempts": 12800,
+        "derivativeAttempts": 204800,
+        "heldIntegratorAttempts": 0,
+        "heldIntegratorCompleted": 0,
+        "heldDerivativeAttemptUpperBound": 0
+      },
+      "timing": {
+        "field": 2384.329877999553,
+        "controller": 36.99657099999604,
+        "rkArithmetic": 677.5726280025119,
+        "safetyDiagnostics": 15118.549699000912,
+        "recordingHash": 1640.1431719998218,
+        "total": 19958.855744,
+        "cpuMs": 20643.633,
+        "totalBeforeFinalRunRecordWrite": 19977.847492999994,
+        "cpuMsBeforeFinalRunRecordWrite": 20678.679,
+        "totalScope": "total/cpuMs cover numerical loop only; totalBeforeFinalRunRecordWrite includes artifact serialization; scheduler job timing includes final record serialization"
+      },
+      "metrics": {
+        "minPairClearance": 0.3572489822429943,
+        "minObstacleClearance": 3.1908226619908144,
+        "maxInflow": 3.7307580801367117,
+        "minMotor": 0.03213990233650273,
+        "maxMotor": 0.11513543335463548,
+        "projectionMaximum": 7.402017709459285e-15,
+        "normDefectMaximum": 3.894674314164348e-07,
+        "projectionWorst": {
+          "tick": 39680,
+          "drone": 9,
+          "value": 7.402017709459285e-15
+        },
+        "normDefectWorst": {
+          "tick": 7800,
+          "stage": 2,
+          "drone": 13,
+          "value": 3.894674314164348e-07
+        }
+      },
+      "audit": {
+        "samples": 16001,
+        "pairSamples": 15360960,
+        "signatureChanges": 1277,
+        "stepRiskChecks": 3200,
+        "endpointRiskChecks": 3200,
+        "fullTrialRiskChecks": 3200,
+        "risks": []
+      },
+      "branchCounts": {
+        "nearRadius": 354,
+        "downstreamZero": 644,
+        "radialFade": 142,
+        "radialCutoff": 44,
+        "farStart": 150
+      },
+      "tiltExtrema": {
+        "nearest": {
+          "margin": 0.007634399725020891,
+          "drone": 1,
+          "location": {
+            "tick": 40504,
+            "time": 0.79109375,
+            "role": "stage",
+            "stage": 2
+          }
+        },
+        "minimum": {
+          "margin": 0.007634399725020891,
+          "drone": 1,
+          "location": {
+            "tick": 40504,
+            "time": 0.79109375,
+            "role": "stage",
+            "stage": 2
+          }
+        },
+        "maximum": {
+          "margin": 0.06030737921409157,
+          "drone": 0,
+          "location": {
+            "tick": 0,
+            "time": 0,
+            "role": "endpoint"
+          }
+        }
+      }
+    },
+    {
+      "source": "implementation/results/runs/s840137-J3.json",
+      "runId": "s840137-J3",
+      "complete": true,
+      "endTick": 51200,
+      "work": {
+        "physicsSteps": 6400,
+        "rk4DerivativeCalls": 409600,
+        "fieldUpdates": 0,
+        "controllerUpdates": 100,
+        "rotorKernels": 1405998,
+        "candidatePairs": 6144000,
+        "safetySteps": 6400,
+        "jointStageFields": 25600,
+        "acceptedEndpointAudits": 6401,
+        "productionRefreshAuditAliases": 0,
+        "fieldAttempts": 25600,
+        "derivativeAttempts": 409600,
+        "heldIntegratorAttempts": 0,
+        "heldIntegratorCompleted": 0,
+        "heldDerivativeAttemptUpperBound": 0
+      },
+      "timing": {
+        "field": 4922.537075999848,
+        "controller": 40.54809599999862,
+        "rkArithmetic": 1344.9824029983865,
+        "safetyDiagnostics": 30105.247716000085,
+        "recordingHash": 3257.265509002391,
+        "total": 39851.70762599999,
+        "cpuMs": 41050.799,
+        "totalBeforeFinalRunRecordWrite": 39893.52634499999,
+        "cpuMsBeforeFinalRunRecordWrite": 41095.896,
+        "totalScope": "total/cpuMs cover numerical loop only; totalBeforeFinalRunRecordWrite includes artifact serialization; scheduler job timing includes final record serialization"
+      },
+      "metrics": {
+        "minPairClearance": 0.3572489667944375,
+        "minObstacleClearance": 3.190822661987756,
+        "maxInflow": 3.730765019154549,
+        "minMotor": 0.0321399023294867,
+        "maxMotor": 0.11513543336044023,
+        "projectionMaximum": 4.972850431340754e-16,
+        "normDefectMaximum": 9.736697825779572e-08,
+        "projectionWorst": {
+          "tick": 13248,
+          "drone": 3,
+          "value": 4.972850431340754e-16
+        },
+        "normDefectWorst": {
+          "tick": 7788,
+          "stage": 2,
+          "drone": 13,
+          "value": 9.736697825779572e-08
+        }
+      },
+      "audit": {
+        "samples": 32001,
+        "pairSamples": 30720960,
+        "signatureChanges": 1322,
+        "stepRiskChecks": 6400,
+        "endpointRiskChecks": 6400,
+        "fullTrialRiskChecks": 6400,
+        "risks": []
+      },
+      "branchCounts": {
+        "nearRadius": 357,
+        "downstreamZero": 656,
+        "radialFade": 142,
+        "radialCutoff": 44,
+        "farStart": 151
+      },
+      "tiltExtrema": {
+        "nearest": {
+          "margin": 0.007634412406183455,
+          "drone": 1,
+          "location": {
+            "tick": 40508,
+            "time": 0.791171875,
+            "role": "stage",
+            "stage": 2
+          }
+        },
+        "minimum": {
+          "margin": 0.007634412406183455,
+          "drone": 1,
+          "location": {
+            "tick": 40508,
+            "time": 0.791171875,
+            "role": "stage",
+            "stage": 2
+          }
+        },
+        "maximum": {
+          "margin": 0.06030737921409157,
+          "drone": 0,
+          "location": {
+            "tick": 0,
+            "time": 0,
+            "role": "endpoint"
+          }
+        }
+      }
+    }
+  ],
+  "stop": {
+    "source": "implementation/results/failures/s840131-P1.json",
+    "fields": {
+      "runId": "s840131-P1",
+      "phase": "accepted-endpoint",
+      "tick": 50768,
+      "type": "Error",
+      "message": "Per-job cooperative wall cap",
+      "detail": null,
+      "stageEvidence": null,
+      "endpointEvidence": null,
+      "exactStoppedState": true,
+      "exactIntegratorInput": false,
+      "internalFailingStageUnavailable": false
+    },
+    "heldTick": 50764,
+    "commonStates": {
+      "count": 16,
+      "runId": "s840131-P1",
+      "dt": 0.000625,
+      "baseTickSeconds": 1.953125e-05,
+      "cadenceTicks": 32,
+      "path": "results/raw/s840131-P1.common.f64",
+      "encoding": "little-endian Float64, uncompressed",
+      "shape": [
+        1587,
+        16,
+        17
+      ],
+      "bytes": 3453312,
+      "sha256": "3aa5605260b843d99c12d2155076723ed0b5ee522fa6c5e2e61473415656885d"
+    },
+    "lastControllerEvent": {
+      "tick": 50688,
+      "commandsSha256": "3d5a9664cab2d075458acc0cba395f06a1b01fa039c63930c3852d94109dc4e8",
+      "branchSignatureSha256": "b5909aaeb7ac9fe0e064969d9acd14f6612195d6f10fd4520189e45a8d49b884"
+    },
+    "lastDurableCheckpoint": {
+      "runId": "s840131-P1",
+      "phase": "accepted-endpoint",
+      "tick": 50688,
+      "exactStoppedState": false,
+      "meaning": "Last durable checkpoint only"
+    }
+  },
+  "savedFixtureOutcomes": {
+    "builtIn": {
+      "passed": true,
+      "outcomes": [
+        {
+          "name": "Analytic coupled RK stages use simultaneous source state",
+          "passed": true
+        },
+        {
+          "name": "Geometry copy nonmutation and raw motor preservation",
+          "passed": true
+        },
+        {
+          "name": "Zero and nonfinite stage quaternion rejected",
+          "passed": true
+        },
+        {
+          "name": "Joint zero-inflow reduction and endpoint normalization",
+          "passed": true
+        },
+        {
+          "name": "Field receives unit geometry and unchanged raw derivative is used",
+          "passed": true
+        },
+        {
+          "name": "Controller boundary left command semantics",
+          "passed": true
+        },
+        {
+          "name": "Exact failing joint stage retained",
+          "passed": true
+        },
+        {
+          "name": "Conservative finite jump sampled-range detector",
+          "passed": true
+        },
+        {
+          "name": "Skipped rows never become passes",
+          "passed": true
+        },
+        {
+          "name": "Raw-array checksum roundtrip and metadata identity",
+          "passed": true
+        }
+      ],
+      "meaning": "Implementation fixtures only; smooth analytic checks do not establish model RK order; no genuine Boids trajectory in this file"
+    },
+    "independent": [
+      {
+        "source": "implementation/results/fixtures/test_branch_boundaries.cjs.json",
+        "processStatus": 0,
+        "signal": null,
+        "error": null,
+        "savedReport": {
+          "schema": "independent-branch-boundary-fixtures/v1",
+          "kind": "synthetic geometry ranges, no genuine Boids trajectory",
+          "tests": [
+            {
+              "name": "near-radius equality belongs to possible valid-annulus jump risk",
+              "passed": true
+            },
+            {
+              "name": "outer-support equality is excluded by half-open valid-annulus interval",
+              "passed": true
+            },
+            {
+              "name": "farStart equality is conservatively included",
+              "passed": true
+            },
+            {
+              "name": "below-near-radius and one-sided-downstream sampled ranges do not flag annulus",
+              "passed": true
+            },
+            {
+              "name": "equal-time RK trial straddle is distinct from endpoint bracket",
+              "passed": true
+            },
+            {
+              "name": "endpoint-only evidence never claims an RK trial flag",
+              "passed": true
+            }
+          ],
+          "passed": true
+        }
+      },
+      {
+        "source": "implementation/results/fixtures/test_io_faults.cjs.json",
+        "processStatus": 0,
+        "signal": null,
+        "error": null,
+        "savedReport": {
+          "schema": "independent-io-fault-fixtures/v1",
+          "kind": "in-memory fault injection, no genuine Boids trajectory",
+          "tests": [
+            {
+              "name": "raw byte encoding and checksum round-trip are exact little-endian Float64",
+              "passed": true
+            },
+            {
+              "name": "raw checksum, truncated data, malformed shapes and out-of-range samples fail closed",
+              "passed": true
+            },
+            {
+              "name": "metadata cannot override computed raw identity",
+              "passed": true
+            },
+            {
+              "name": "atomic write syncs payload and containing directory and preserves exact bytes",
+              "passed": true
+            },
+            {
+              "name": "mid-write interruption preserves prior durable file and raw partial bytes",
+              "passed": true
+            },
+            {
+              "name": "rename interruption keeps old durable file and full partial candidate",
+              "passed": true
+            },
+            {
+              "name": "allocation includes replacement temporary duplicate and preserves failure reserve",
+              "passed": true
+            },
+            {
+              "name": "retained-byte accounting counts duplicate forms and partial files independently",
+              "passed": true
+            },
+            {
+              "name": "nonfinite failure fields survive JSON explicitly without silent null coercion",
+              "passed": true
+            }
+          ],
+          "passed": true
+        }
+      },
+      {
+        "source": "implementation/results/fixtures/test_joint_robustness.cjs.json",
+        "processStatus": 0,
+        "signal": null,
+        "error": null,
+        "savedReport": {
+          "schema": "independent-joint-robustness-fixtures/v1",
+          "kind": "tiny synthetic fixtures, no genuine Boids trajectory",
+          "sourceSha256": "e9899ef7864032d147bde3d3d0d6dd02af662fceea691ae54b575b64955ec7b9",
+          "tests": [
+            {
+              "name": "full-swarm coupled RK4 stages use one simultaneous state",
+              "passed": true
+            },
+            {
+              "name": "geometry normalization is a disjoint copy and preserves all nonquaternion entries",
+              "passed": true
+            },
+            {
+              "name": "geometry guards reject zero and nonfinite quaternions or other invalid entries",
+              "passed": true
+            },
+            {
+              "name": "endpoint normalization copies raw endpoint and normalizes each drone",
+              "passed": true
+            },
+            {
+              "name": "joint step computes complete field before derivatives and passes raw stage state",
+              "passed": true
+            },
+            {
+              "name": "each failing RK stage retains exact raw geometry commands and original guard",
+              "passed": true
+            },
+            {
+              "name": "geometry rejection retains raw input even before geometry exists",
+              "passed": true
+            },
+            {
+              "name": "nonfinite derivative is rejected and retains available field and derivative",
+              "passed": true
+            },
+            {
+              "name": "failed endpoint projection retains the actual combined endpoint rather than k4",
+              "passed": true
+            },
+            {
+              "name": "prescribed steps and their stage clocks are integer and event-aligned",
+              "passed": true
+            }
+          ],
+          "passed": true
+        }
+      },
+      {
+        "source": "implementation/results/fixtures/test_runner_clock.cjs.json",
+        "processStatus": 0,
+        "signal": null,
+        "error": null,
+        "savedReport": {
+          "schema": "independent-actual-runner-clock-fixtures/v1",
+          "kind": "actual run.cjs scheduler with synthetic stubs; no genuine Boids trajectories",
+          "tests": [
+            {
+              "name": "actual joint runner uses old command through boundary and has no terminal discrete update",
+              "passed": true
+            },
+            {
+              "name": "actual held runner uses old command through boundary and has no terminal discrete update",
+              "passed": true
+            }
+          ],
+          "passed": true
+        }
+      },
+      {
+        "source": "implementation/results/fixtures/test_watchdog_contract.cjs.json",
+        "processStatus": 0,
+        "signal": null,
+        "error": null,
+        "savedReport": {
+          "schema": "independent-supervisor-fault-fixtures/v1",
+          "kind": "actual supervisor source with virtual clocks, CPU census, process-group kill and partial-file inventory",
+          "tests": [
+            {
+              "name": "per-job deadline kills worker process group and reports only last durable checkpoint",
+              "passed": true
+            },
+            {
+              "name": "live descendant CPU triggers total watchdog even with negligible wall time",
+              "passed": true
+            },
+            {
+              "name": "overlapping job lifecycle cannot silently reset watchdog deadline",
+              "passed": true
+            },
+            {
+              "name": "failed or skipped execution cannot be relabeled qualified by normal cleanup",
+              "passed": true
+            }
+          ],
+          "passed": true
+        }
+      }
+    ]
+  },
+  "sourceByteVerification": {
+    "recordedAggregate": "0475b03ad8907e6ca527233a00e8eee3d17cbbc4f70fab6bb0b48e03e62be9e1",
+    "files": [
+      {
+        "path": "src/branch-audit.cjs",
+        "sha256": "41ad1b087b1d7ba77f37d9c99b61e8a7c398915c6cfa3a74ef496258de8a822a",
+        "matchesFreeze": true
+      },
+      {
+        "path": "src/build-viewer.cjs",
+        "sha256": "50d4cb21a30760943a93d7279f28fa2979274f08b8b6159798e33b8a549914aa",
+        "matchesFreeze": true
+      },
+      {
+        "path": "src/campaign.cjs",
+        "sha256": "484203e1fdcf89d6a96855b98d7e2a9f95e5e1591686e95c12a2d1b254e04436",
+        "matchesFreeze": true
+      },
+      {
+        "path": "src/compare.cjs",
+        "sha256": "294da37b4f921bca58334ffd015fbb60e6f58e91255c846842b4ab37e7e023f7",
+        "matchesFreeze": true
+      },
+      {
+        "path": "src/controller-record.cjs",
+        "sha256": "2cc74b6f1fbb3ebd34787a9c96d581f61305b7f5d4978a19c157f343dfc6f933",
+        "matchesFreeze": true
+      },
+      {
+        "path": "src/controller.cjs",
+        "sha256": "35be1110afd6265e2911ef77b979cf40eaa4bd0f0ffc65e3174ecedc01120d46",
+        "matchesFreeze": true
+      },
+      {
+        "path": "src/exact-aero.cjs",
+        "sha256": "6111d7a70a7ca60ed7404889042e4f0ad61c852794289fc6f5e95d67070c9189",
+        "matchesFreeze": true
+      },
+      {
+        "path": "src/freeze.cjs",
+        "sha256": "c8b9d1fe8619b97eaa1a588ed8699c6aac7ff5b82aee3ccc6d63e4276d2643d1",
+        "matchesFreeze": true
+      },
+      {
+        "path": "src/io.cjs",
+        "sha256": "4039e2a272d10936f9428dbc961067e739b9f79313d62621bec24acc88dff475",
+        "matchesFreeze": true
+      },
+      {
+        "path": "src/joint-step.cjs",
+        "sha256": "e9899ef7864032d147bde3d3d0d6dd02af662fceea691ae54b575b64955ec7b9",
+        "matchesFreeze": true
+      },
+      {
+        "path": "src/preflight.cjs",
+        "sha256": "13ebd373e76eae90f1ac185d2be17ecf41cb1c8c9e2302055dbebe2ca50ff0a4",
+        "matchesFreeze": true
+      },
+      {
+        "path": "src/run.cjs",
+        "sha256": "3554fc82371aa04f317953d55580fdc61c967afc395bfe78caa73d9b8fea4150",
+        "matchesFreeze": true
+      },
+      {
+        "path": "src/source.cjs",
+        "sha256": "b5bd33d233704f497b580e42a9523e2d78c9f6a7b540bfdbd03d5a9747ddff43",
+        "matchesFreeze": true
+      },
+      {
+        "path": "src/supervise.cjs",
+        "sha256": "1d732ba7ff7b4ce7ebb458733616e0a98270754cf45172f9604d4b0a3206f0eb",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-26-source/check-course.cjs",
+        "sha256": "3876bfe04488bafe65cb44f453641f4bcd732919e1fc895b0789a933b34aac02",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-26-source/check.cjs",
+        "sha256": "d841442107bfd711afcc74bc0aee74e8afbf5b9f452d668d0dbfdd7024bc4713",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-26-source/diagnose-contact.cjs",
+        "sha256": "81222c34afd5f191a190828cddd836c644adba6fb7dbd1d9deca21714d8a2418",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-26-source/factory-narrow.json",
+        "sha256": "1277cd41d5e63c9452192e99e9b83d4bb522a9df93651fb7387fac9c1257beac",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-26-source/factory-wide.cjs",
+        "sha256": "8ea0d8784accfc039fee9ca2a2c0a86dc8e502b6d1003e4de54a8df8a999cc22",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-26-source/factory-wide.json",
+        "sha256": "43d42c22844101e5b338fbd49c5e9c25adb3c6b51042dd490b2e446a528c38a8",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-26-source/factory.cjs",
+        "sha256": "fe46384aac6150c45a2ba38e4494da16969aeab4a8875a8596f6ad8e53bb2c40",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-26-source/geometry.cjs",
+        "sha256": "e209e492fc523ab3c0c7df62745fb0d3dd7204f35e53309938a19d7895ed3d4f",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-26-source/grid.cjs",
+        "sha256": "f06010781770b64432935e5d825bcd1405b154b735ac4d0d654f145600cea302",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-26-source/sim.cjs",
+        "sha256": "e14f2a6634539956b2a72cde8e2ed7855537021e7be2ad497910c9bfa93014a1",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-26-source/study.cjs",
+        "sha256": "bb116ee1ecdfd8a0ae143880651ef308697ba248607ba3a8d30381df0e650308",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-28-source/aero.cjs",
+        "sha256": "710b0a8f0df62208e3385ac9b8288240b379fe9248a1a645251a77c533f24a62",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-28-source/check-aero.cjs",
+        "sha256": "6fd3c0d4b08c56ce56c0f7c4a4756c3e7f022df1345435f3bb62b5b983082fbe",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-28-source/check-control-authority.cjs",
+        "sha256": "e417e1bf624f5b86bc652013bbf43b14aaef0d5d8faed55c88a8b3deaa8a3801",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-28-source/check-coupling.cjs",
+        "sha256": "17aa653cce4f4556863d389b52e4a5c9fed4d187e52360afdb588c7703654ba6",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-28-source/check-domain.cjs",
+        "sha256": "76f94a51e9f9e645dd386ced93cd9d9dfc9c97217dc5b5799b0476877f0dd9a6",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-28-source/factory-narrow.json",
+        "sha256": "1277cd41d5e63c9452192e99e9b83d4bb522a9df93651fb7387fac9c1257beac",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-28-source/factory-wide.cjs",
+        "sha256": "8ea0d8784accfc039fee9ca2a2c0a86dc8e502b6d1003e4de54a8df8a999cc22",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-28-source/factory-wide.json",
+        "sha256": "43d42c22844101e5b338fbd49c5e9c25adb3c6b51042dd490b2e446a528c38a8",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-28-source/factory.cjs",
+        "sha256": "fe46384aac6150c45a2ba38e4494da16969aeab4a8875a8596f6ad8e53bb2c40",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-28-source/geometry.cjs",
+        "sha256": "e209e492fc523ab3c0c7df62745fb0d3dd7204f35e53309938a19d7895ed3d4f",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-28-source/grid.cjs",
+        "sha256": "f06010781770b64432935e5d825bcd1405b154b735ac4d0d654f145600cea302",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-28-source/sim.cjs",
+        "sha256": "a6b76aa75c530b652c23f53e6c71cfaa61ba2c05c0ecd20593cae26e0ef02c85",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-28-source/study.cjs",
+        "sha256": "fd576578fbaff156b9e5092b3123630ebd04e98b15e037e94de7732d94af51ea",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-30-source/check-reference.cjs",
+        "sha256": "f49520309e6f973019b0a981fb942d2bb81c58664f32abca82e891db8e6da113",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-30-source/check.cjs",
+        "sha256": "6c881d132b1fbd9df8c0b910d6d18582f6f2404acf6a3543bf021bdcb983ddc2",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-30-source/factory-narrow.json",
+        "sha256": "1277cd41d5e63c9452192e99e9b83d4bb522a9df93651fb7387fac9c1257beac",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-30-source/factory-wide.cjs",
+        "sha256": "8ea0d8784accfc039fee9ca2a2c0a86dc8e502b6d1003e4de54a8df8a999cc22",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-30-source/factory-wide.json",
+        "sha256": "43d42c22844101e5b338fbd49c5e9c25adb3c6b51042dd490b2e446a528c38a8",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-30-source/factory.cjs",
+        "sha256": "fe46384aac6150c45a2ba38e4494da16969aeab4a8875a8596f6ad8e53bb2c40",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-30-source/geometry.cjs",
+        "sha256": "e209e492fc523ab3c0c7df62745fb0d3dd7204f35e53309938a19d7895ed3d4f",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-30-source/grid.cjs",
+        "sha256": "f06010781770b64432935e5d825bcd1405b154b735ac4d0d654f145600cea302",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-30-source/sim.cjs",
+        "sha256": "d795530fb51f8f09281e70af6f9c6f075b626719926b0f02896e8ed0b5c9ac2d",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-30-source/study.cjs",
+        "sha256": "021220c964308c401fd2fee61f5441a2684778e2cbb2369204c713547882c078",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-30-source/wall-filter.cjs",
+        "sha256": "8273cc40a9530748fe43e9ef0a4d9a995ee152f9968ce2368e61e2f205502512",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-31-source/audit-controls.cjs",
+        "sha256": "33fc5e760ef2410ab3e6693d50c1b23574c0ffc005b43ea17b7db1206e455593",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-31-source/check.cjs",
+        "sha256": "3817ceeeb7c2cf68988b7b4691a2d44df330399942a430a117d55665edd3f892",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-31-source/factory-narrow.json",
+        "sha256": "1277cd41d5e63c9452192e99e9b83d4bb522a9df93651fb7387fac9c1257beac",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-31-source/factory-wide.cjs",
+        "sha256": "8ea0d8784accfc039fee9ca2a2c0a86dc8e502b6d1003e4de54a8df8a999cc22",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-31-source/factory-wide.json",
+        "sha256": "43d42c22844101e5b338fbd49c5e9c25adb3c6b51042dd490b2e446a528c38a8",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-31-source/factory.cjs",
+        "sha256": "fe46384aac6150c45a2ba38e4494da16969aeab4a8875a8596f6ad8e53bb2c40",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-31-source/geometry.cjs",
+        "sha256": "e209e492fc523ab3c0c7df62745fb0d3dd7204f35e53309938a19d7895ed3d4f",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-31-source/grid.cjs",
+        "sha256": "f06010781770b64432935e5d825bcd1405b154b735ac4d0d654f145600cea302",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-31-source/sim.cjs",
+        "sha256": "2b6fbc51334fd0669b23eb7173c6af83e62414a725b032796df5cb38ac7f1c9e",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-31-source/study.cjs",
+        "sha256": "b78d712bc66ba12c9faa6823520967cba8742edb5853e5d6b58e6a709cb9f5e6",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/milestone-31-source/wall-filter.cjs",
+        "sha256": "8273cc40a9530748fe43e9ef0a4d9a995ee152f9968ce2368e61e2f205502512",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/research-roadmap.md",
+        "sha256": "4186ab5a4af72ce4b2a813ef74472dd20f91863739190654ee7d3e4989154e0a",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/step02c-source/physics.cjs",
+        "sha256": "0c46c9beb4e831c621658f6600c074f97c95966de07f5000eb64aa476a443fa1",
+        "matchesFreeze": true
+      },
+      {
+        "path": "snapshot/outputs/step03a-source/wake.cjs",
+        "sha256": "fb6d5a1d632a0023818041ef6bc39316ff8ed950f318da1a6649e2515b9fd8bc",
+        "matchesFreeze": true
+      },
+      {
+        "path": "configs/campaign.json",
+        "sha256": "a5a981ac8d75bc109f835e4725ac60aebff278504579a0d6e8a27520af905992",
+        "matchesFreeze": true
+      },
+      {
+        "path": "tests/fixtures.cjs",
+        "sha256": "68665fb20fd1ba55d92406d77b52a18f1c1d5137c58ed44155ea294b33873e2e",
+        "matchesFreeze": true
+      },
+      {
+        "path": "demo/app.js",
+        "sha256": "9bb6d8b6e3df4aa4bb4402dc07ebe641b2de70f9719587f04475b5b154a368f7",
+        "matchesFreeze": true
+      },
+      {
+        "path": "demo/index.html",
+        "sha256": "5976e2b0107537d18ba0a4bbbb1f190c7c6be9df848806aca6a71309dc777e22",
+        "matchesFreeze": true
+      },
+      {
+        "path": "demo/vendor/OrbitControls.js",
+        "sha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c",
+        "matchesFreeze": true
+      },
+      {
+        "path": "demo/vendor/THREE-LICENSE.txt",
+        "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+        "matchesFreeze": true
+      },
+      {
+        "path": "demo/vendor/three.core.js",
+        "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20",
+        "matchesFreeze": true
+      },
+      {
+        "path": "demo/vendor/three.module.js",
+        "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+        "matchesFreeze": true
+      }
+    ],
+    "allMatched": true
+  },
+  "inspectedEvidenceDigests": [
+    {
+      "path": "PLAN.md",
+      "bytes": 30563,
+      "sha256": "b68a2a93b29e85b3784d874010c767ee7ba3eacfdcc71d4bb6b91d31606d4bba"
+    },
+    {
+      "path": "implementation/FREEZE.json",
+      "bytes": 19120,
+      "sha256": "d41bb998788ff207eec4719d4a05d18125fcfdb658bfd0a18631921343735f3a"
+    },
+    {
+      "path": "implementation/results/campaign.json",
+      "bytes": 57235,
+      "sha256": "5cc4e8bdd8e848caa6ab3b35e0d3e40e03aa64f5fee06ea19e0232aeb24da3ab"
+    },
+    {
+      "path": "implementation/results/compatibility.json",
+      "bytes": 1157,
+      "sha256": "7873e67ecdba31b500df172ee60a22014c00c12acc8b4af877033c52f388e86c"
+    },
+    {
+      "path": "implementation/results/execution-validity.json",
+      "bytes": 281,
+      "sha256": "783485e3c01d2dfed6a220a228407f6129338d9523e03d6ef5aa8ef2235c73f8"
+    },
+    {
+      "path": "implementation/results/failures/s840131-P1.json",
+      "bytes": 11224,
+      "sha256": "e3582b5b0ace6c7c7ab9c3f485c416e3dded49874309665db4fad20542d677da"
+    },
+    {
+      "path": "implementation/results/fixtures.json",
+      "bytes": 1180,
+      "sha256": "c8e3c4ab41baab609c931d10e09f9ed5fb3d4f33b6d99229be4436afdf62d4ee"
+    },
+    {
+      "path": "implementation/results/fixtures/test_branch_boundaries.cjs.json",
+      "bytes": 840,
+      "sha256": "423a3c328c030f80b065bf40c2f7e9fe0498c01045a5c7930b762c0a9175920d"
+    },
+    {
+      "path": "implementation/results/fixtures/test_io_faults.cjs.json",
+      "bytes": 1210,
+      "sha256": "cc0c9a6cb687f60dca76d4234683804f6b7143fd1219c60eab2c4e3d6ccb1e4b"
+    },
+    {
+      "path": "implementation/results/fixtures/test_joint_robustness.cjs.json",
+      "bytes": 1408,
+      "sha256": "991cc5f5e9c48fdf387dd3872699207dc7a40bb73f28b9ed80b3ae7602b760e4"
+    },
+    {
+      "path": "implementation/results/fixtures/test_runner_clock.cjs.json",
+      "bytes": 541,
+      "sha256": "0956174b9c7091cc69b4ed3a253c2a8bc6a188b012c8c4eb3463d922f9f64190"
+    },
+    {
+      "path": "implementation/results/fixtures/test_watchdog_contract.cjs.json",
+      "bytes": 755,
+      "sha256": "4077bc990f051728f78a5e068b862c09777c4c933855b4c2134d3667cb528897"
+    },
+    {
+      "path": "implementation/results/last-checkpoint.json",
+      "bytes": 11050,
+      "sha256": "94f2adad0ce3c2dd435a4e6a52b5afb4d5e84cb2ad88c3ef1ba1950a742db305"
+    },
+    {
+      "path": "implementation/results/matrix-status.json",
+      "bytes": 2212,
+      "sha256": "85c1bd941a54c6ce553f90cf59919bf3b35d977698bf460efc3793e8109811cd"
+    },
+    {
+      "path": "implementation/results/preflight/preflight-s840131.json",
+      "bytes": 46291,
+      "sha256": "e6fa03ab6e75339b29d107cd9d24df7243ff51d82ba2b8524b8958641c78a671"
+    },
+    {
+      "path": "implementation/results/preflight/preflight-s840137.json",
+      "bytes": 46359,
+      "sha256": "50ecaf9fb05320fa9900ecf18f7ce77875eab874888e1f9a9ddd77b32550adf9"
+    },
+    {
+      "path": "implementation/results/raw/s840131-P1.common.f64.json",
+      "bytes": 362,
+      "sha256": "326066b7127c14a17c0298be3218f384edec8d48cdfb42ef98e22a81db62449d"
+    },
+    {
+      "path": "implementation/results/runs/s4301-compatibility.json",
+      "bytes": 63306,
+      "sha256": "d185d3b3e69895096c23c4dd1b944b79b99695c56edc026529970753c9d82087"
+    },
+    {
+      "path": "implementation/results/runs/s840131-H4.json",
+      "bytes": 63346,
+      "sha256": "9a9e89b52737dd4752737cdec5fa15cc6437befc3f96be815e2157928d6f91c0"
+    },
+    {
+      "path": "implementation/results/runs/s840131-J1.json",
+      "bytes": 62241,
+      "sha256": "36e6ce4f4c1a2a56c0a60156bcfc3d3e7c3f3727d6208e4d2235b40822943218"
+    },
+    {
+      "path": "implementation/results/runs/s840131-J2.json",
+      "bytes": 62189,
+      "sha256": "eb79f076f8ca1fd4ce7eb49271aa06f17d09fa61a4bf222b28f257bdf092470d"
+    },
+    {
+      "path": "implementation/results/runs/s840131-J3.json",
+      "bytes": 62317,
+      "sha256": "90dcad78ed1ece9aff7462c85acba75e1fb339169306eb8cc3e1cfe5cbf0e57a"
+    },
+    {
+      "path": "implementation/results/runs/s840131-P1.json",
+      "bytes": 75668,
+      "sha256": "dfd379105721549587e3adbfa1da4998f16ab86a458807e834b10ae6333199b4"
+    },
+    {
+      "path": "implementation/results/runs/s840137-J1.json",
+      "bytes": 62379,
+      "sha256": "83daa1c3401b0392c79c3656c25900882ea2a8b59944f1330a401b2957fd143a"
+    },
+    {
+      "path": "implementation/results/runs/s840137-J2.json",
+      "bytes": 62376,
+      "sha256": "35f319b67deb2bb0156e8320aa412fa8f9619f3696897f4d18fa0fd69da2291d"
+    },
+    {
+      "path": "implementation/results/runs/s840137-J3.json",
+      "bytes": 62575,
+      "sha256": "8abf5e78eabf980bfc91ec5a055785e139a66ce0514f41ed9e80115f0002b0a0"
+    },
+    {
+      "path": "implementation/results/supervisor.json",
+      "bytes": 25818,
+      "sha256": "6dca4556144d29c46dea2be6b1ac11f0ca99a7346448cd8a36db6f742781238d"
+    }
+  ],
+  "interpretationLimits": [
+    "Every saved fine primary J difference is below its comparison floor; do not infer observed fourth-order convergence",
+    "Empty risk lists describe sampled tests only; category sign changes are not physical jump counts",
+    "P1 prefix cannot pass the prescribed full-T held-physics gate",
+    "Only joint-family comparisons were saved; held-physics, bridge, cross-family qualification remain untested",
+    "Combined safetyDiagnostics timing does not isolate a particular bottleneck function",
+    "No physical validation or operational cadence claim"
+  ],
+  "nextTestRecommendation": "Prospectively test evidence-preserving diagnostic equivalence/cost reduction, then separately freeze completion of missing full-window held-physics, bridge and cross-family work; preserve failed cycle and reuse completed evidence only under explicit identity checks"
+}
