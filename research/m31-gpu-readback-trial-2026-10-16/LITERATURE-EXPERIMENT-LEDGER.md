@@ -1,5 +1,7 @@
 # Literature–experiment ledger
 
-The dated primary W3C WebGPU CRD15September2026 and WGSL CRD21September2026 materially inform this test's mapping/ownership/error and concrete-u32/layout contract. Exact verified citations are in bibliography.bib; normative passage locations and cached-source digest are retained in WGSL-SOURCE-RECEIPT.json and the published integration STATIC-REVIEW.md at1a315275756982ad83319013a7ad2dff16768326.
+The existing machine-readable bibliography.bib and WGSL-SOURCE-RECEIPT.json are unchanged. They cite the dated W3C WGSL source used for concrete-u32 modular arithmetic, workgroup dispatch and buffer layout. This is specification/documentation support for the fixture, not experimental evidence of this implementation or a physical model.
 
-These are standards drafts, not aerodynamic validation studies. This trial adapts their prescribed API/representation contract to one fixed128-byte test. It does not reproduce a published physical experiment or establish runtime conformance beyond observed predicates. Actual outcome remains pending and will be linked here after the single trial closes.
+Adaptation: the fixed17active-word,128-byte fixture in source/fixture.wgsl and independent expected.bin; source commit e0ee811bd1f3cf22ea40c6a56a0d974dabbfc7b2. Result: the ownership observer stopped before retained GPU output. No observed GPU values can be compared with the specification-derived reference. No disagreement with WGSL arithmetic is established.
+
+No new aerodynamic paper, physical parameter or novelty claim is introduced by this engineering trial. Existing physical-data candidates and their independently checked provenance remain in the prior followup-planning package. A subsequent rotor-data question must state its own scope, units, model assumptions and exposure status before analysis. The failed MODERA range acquisition stays terminal.

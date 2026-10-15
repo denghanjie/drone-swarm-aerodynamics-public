@@ -4,9 +4,13 @@
 
 Public additive worktree: current repository, branch `codex/m31-audit-2026-10-15`. Preserve the original eight-step roadmap and historical M31 base. Later remote main/DOT at `1336f5c416875a9651f92b58b2ed06649f25b04e` remains separate and untouched. The private workspace, attachments, credentials and chat records must never be published.
 
-## New prospective GPU readback cycle — preparing source publication
+## Latest completed cycle — GPU readback failed before saved output
 
-`research/m31-gpu-readback-trial-2026-10-16/` is a separate prospectively adopted engineering test. Opening 23:40:54 UTC, diagnostic launch closes23:55 UTC, saved review closes00:10 UTC, presentation QA closes00:20 UTC. Original overnight cutoff and all earlier terminal campaigns remain unchanged. Independent integrated static review is complete; runtime selected-file pins and immutable freeze are saved. No launch until exact GitHub source commit/freeze are independently retrieved and all pins verified. One diagnostic and one supervised review only. No new scientific qualification.
+`research/m31-gpu-readback-trial-2026-10-16/`: source commit`e0ee811bd1f3cf22ea40c6a56a0d974dabbfc7b2`, freeze`8557a275d8387bfe5e1aa0ceddbad784b392f558e1c4c7d16721b3cbe06a66fa`(41pins), independently retrieved before the sole trial. Monitor aborted on “Unregistered detached descendant”; one browser-launch-intent event, no host result/page envelope/GPU binary. Actual capture/observer exits1, captured relay exit−9; external tool interval3.565s. Known-group cleanup is recorded, but the unidentified descendant's closure is unresolved; no survivor is inferred.
+
+Sole supervised saved review also failed:2/5groups pass, checker/supervisor actualexits1, outer0.220s, complete retained pipes/bound failure summary. The independent read-only audit explains the ownership/closure limitation. All allocations are consumed/closed, no retry. No diagnostic/review/QA tool session remains active. Existing server8876 stays available.
+
+The new Three.js recorded evidence view binds15actualfiles, clearly marking absent bytes. Final QA11checks pass plus settled-mobile check; root inspected screenshots. First QA's incorrect label expectation and initial resized capture remain retained. Read MILESTONE-SUMMARY,POSTRUN-RESTART,FINAL-DISPOSITION and final manifest. No numerical,physics,5,000-drone,low-end or novelty result follows. Next priority is a scientific reference question independent of the browser pipeline; no successor experiment is automatically authorized by this failure. All predecessor packages and original overnight cutoff remain immutable.
 
 ## Additive static integration checkpoint — original launch window remains closed
 

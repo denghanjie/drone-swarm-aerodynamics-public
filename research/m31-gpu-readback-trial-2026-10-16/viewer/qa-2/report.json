@@ -1,0 +1,74 @@
+{
+  "kind": "presentation-only-qa",
+  "flow": "Recorded view loads → choose comparison and word → inspect only saved state → reset camera",
+  "browserPlugin": "Browser plugin not available",
+  "engine": "Installed Playwright 1.62.1 / dedicated Chrome",
+  "url": "http://127.0.0.1:8876/research/m31-gpu-readback-trial-2026-10-16/viewer/",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1100
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "diagnosticInvoked": false,
+  "savedReviewInvoked": false,
+  "checks": [
+    {
+      "name": "identity",
+      "pass": true
+    },
+    {
+      "name": "meaningful failure state",
+      "pass": true
+    },
+    {
+      "name": "verified binding and no framework overlay",
+      "pass": true
+    },
+    {
+      "name": "Three.js canvas",
+      "pass": true
+    },
+    {
+      "name": "actual failure, no invented bytes",
+      "pass": true
+    },
+    {
+      "name": "comparison selection",
+      "pass": true
+    },
+    {
+      "name": "word selection and missing data",
+      "pass": true
+    },
+    {
+      "name": "only actual event",
+      "pass": true
+    },
+    {
+      "name": "reset interaction",
+      "pass": true
+    },
+    {
+      "name": "mobile no whole-page overflow",
+      "pass": true
+    },
+    {
+      "name": "console health",
+      "pass": true,
+      "detail": {
+        "warnings": 0
+      }
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "passed": true,
+  "elapsedSeconds": 1.949919875,
+  "retainedBytesBeforeReport": 329197,
+  "withinPresentationCaps": true
+}

@@ -1,0 +1,115 @@
+{
+  "kind": "independent-public-failure-projection-audit",
+  "sourceCommit": "e0ee811bd1f3cf22ea40c6a56a0d974dabbfc7b2",
+  "sourceFreezeSHA256": "8557a275d8387bfe5e1aa0ceddbad784b392f558e1c4c7d16721b3cbe06a66fa",
+  "scope": "Bounded reads of actual public evidence and frozen observer source only; no historical or new checker, supervisor, producer, browser, GPU, live process probe or private evidence read. This is not a full saved-file integrity review.",
+  "supportedFinding": "The observer aborted work on its unregistered-descendant group invariant and retained incomplete diagnostic evidence. The public projection establishes no GPU outcome.",
+  "observedFacts": {
+    "firstWorkError": {
+      "phase": "work",
+      "reason": "Unregistered detached descendant",
+      "type": "RuntimeError"
+    },
+    "laterError": {
+      "phase": "final-evidence",
+      "reason": "Regular evidence file required",
+      "type": "RuntimeError"
+    },
+    "wrapperExitCode": -9,
+    "wrapperKillSent": true,
+    "wrapperReaped": true,
+    "recordedProcessClosureComplete": true,
+    "registeredDetachedGroups": 1,
+    "detachedGroupsConfirmedAbsent": 1,
+    "detachedGroupKillSignals": 1,
+    "rssSamples": 12,
+    "rssProbeErrors": 1,
+    "candidateLifecycleVerified": false,
+    "actualObserverExitCode": 1,
+    "actualCaptureExitCode": 1,
+    "actualFullElapsedSeconds": 3.565,
+    "externalElapsedScope": "Conservative interval around the complete execution-tool call, including tool/approval overhead.",
+    "publicTraceEvents": 1,
+    "publicTraceKinds": [
+      "browser-launch-intent"
+    ],
+    "absentArtifacts": [
+      "results/wrapper.json",
+      "results/result.json",
+      "raw/returned.json",
+      "raw/rejected-return.json",
+      "raw/received.bin"
+    ],
+    "diagnosticStdoutBytes": 0,
+    "diagnosticStderrBytes": 0
+  },
+  "interpretation": [
+    "sample() expands membership recursively from admitted process groups, then rejects a reachable descendant whose process-group ID is not admitted. The public record does not reveal which descendant or why its group was outside that set.",
+    "The work-exception cleanup kills the directly owned relay group and registered browser groups. Recorded wrapper exit -9 is consistent with the recorded cleanup kill; it is not a GPU return code.",
+    "The closure_complete predicate checks reaped relay, absence of relay and registered browser groups, closed pipes, complete registry, no tracked probe children and no cleanup error. The failing snapshot does not preserve the offending identity or link it to later cleanup. Cleanup might cover it if subsequently registered, but the public projection cannot establish that link. Therefore processClosureComplete:true is only this known-group predicate, not proof that every offending descendant closed. This gap does not prove a survivor existed.",
+    "rssProbeErrors increments for any exception raised by sample(), including this ownership invariant. It does not independently demonstrate an RSS-cap breach or failed process-table command.",
+    "The final-evidence error occurs while reading wrapper.json before result.json; both are absent. Observer/capture completion and byte accounting flags do not make the diagnostic record complete or successful.",
+    "Only browser-launch-intent was retained publicly. Browser launch completion, page execution, GPU computation, mapping, cleanup of GPU resources and numerical correctness are all undetermined from this projection."
+  ],
+  "possibleMechanismsNotDiagnoses": [
+    "Registry entries are read before the process-table snapshot. New registration/spawn activity between those observations can produce a temporal mismatch.",
+    "A reachable process may also belong to a genuinely unadmitted process group. The retained public projection cannot distinguish these possibilities or identify a specific helper."
+  ],
+  "nextQuestion": "Can the ownership observer distinguish a registration/process-snapshot timing gap from a genuinely unadmitted descendant group, and track any detected exception through verified closure? First examine the observation/closure state machine with inert deterministic cases; any later operational study requires a new preregistered question and allocation. Do not rerun or repair this frozen trial.",
+  "narrowBindingsChecked": {
+    "observerSummaryToBudget": true,
+    "captureSummaryToCaptureReceipt": true,
+    "captureReceiptToObserverSummary": true,
+    "sourceAndFreezeIdentity": true
+  },
+  "sourceAnchors": {
+    "def sample():": 329,
+    "Unregistered detached descendant": 347,
+    "def cleanup():": 371,
+    "closure_complete =": 549,
+    "relay = json.loads(read_file": 565,
+    "processClosureComplete=closure_complete": 591
+  },
+  "pins": [
+    {
+      "path": "freeze.json",
+      "bytes": 8439,
+      "sha256": "8557a275d8387bfe5e1aa0ceddbad784b392f558e1c4c7d16721b3cbe06a66fa"
+    },
+    {
+      "path": "source/observe-transport.py",
+      "bytes": 32526,
+      "sha256": "aacb3daa611f7f3893b27ebf0b6bed0ff2a434d7042d1d10f429e833cf31069e"
+    },
+    {
+      "path": "raw/trace.public.ndjson",
+      "bytes": 139,
+      "sha256": "f6b1b6e6701bdc95d333910cdc84b6a3b890774d7f8ec5f58e21020277f7e4fd"
+    },
+    {
+      "path": "results/budget.json",
+      "bytes": 2727,
+      "sha256": "04d93dd179544f3873d91906576d4564623f221d4c97b967677320d57c6b8552"
+    },
+    {
+      "path": "results/capture.json",
+      "bytes": 2178,
+      "sha256": "58dd7f377dfb3b72048ac59bebde3ca98bea4d05ea6d405bba891443607bddcc"
+    },
+    {
+      "path": "publication/observer-output.json",
+      "bytes": 808,
+      "sha256": "5e4fa3f0c7a1d747f95bb09b00e98c924fe23fbc799c3cf39de24a1110dc0d5b"
+    },
+    {
+      "path": "publication/capture-output.json",
+      "bytes": 487,
+      "sha256": "f4fceddd79311ba2ecff8c57763acbbddc19f00a8cdc3c23e1d400296d5b8425"
+    },
+    {
+      "path": "publication/capture-execution.json",
+      "bytes": 569,
+      "sha256": "184714428466cd24ed31f2be7896d997c91e5d2b59c94ef2957bf12721f39f21"
+    }
+  ]
+}

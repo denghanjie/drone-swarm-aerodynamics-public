@@ -1,0 +1,28 @@
+{
+  "kind": "root-final-output-accounting",
+  "diagnosticAndSupervisedReviewBaseBytes": 18996,
+  "addedPublicArtifacts": [
+    {
+      "path": "publication/FINAL-DISPOSITION.json",
+      "bytes": 2113
+    },
+    {
+      "path": "publication/independent-failure-audit.json",
+      "bytes": 6031
+    },
+    {
+      "path": "publication/postclosure-profile-observation.json",
+      "bytes": 480
+    },
+    {
+      "path": "publication/review-execution.json",
+      "bytes": 858
+    }
+  ],
+  "additionalSupervisorToolOutputCopyBytes": 739,
+  "scope": "Supervisor base already counts private checker stdout once, public checker copy, supervisor receipt and one supervisor stdout copy. The public supervisor stdout file is that one copy; add a second tool-visible stdout copy conservatively. Added public artifacts exclude already-accounted capture files. Sources, ledgers, presentation and final inventory are additionally bounded by the all-campaign-file check below. Private raw paths and identities remain excluded from publication.",
+  "accountingReceiptBytes": 1177,
+  "accountedExperimentAndAddedPublicBytes": 30394,
+  "budgetBytes": 8388608,
+  "scientificQualified": false
+}

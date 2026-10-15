@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>M31 · GPU readback evidence</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">{"imports":{"three":"../../../outputs/step02b-source/vendor/three.module.js"}}</script>
+</head>
+<body data-ready="false" data-binding="pending">
+<main>
+  <header>
+    <p class="eyebrow">MILESTONE 31 · RECORDED ENGINEERING VIEW</p>
+    <h1>Stopped before<br>GPU readback.</h1>
+    <p class="lead">The process monitor stopped the trial during browser startup. No GPU result was saved. Inspect the missing evidence alongside the fixed reference.</p>
+    <p class="scope">32 words · 4 prefix + 17 active + 11 suffix · little endian</p>
+  </header>
+
+  <section class="outcome" aria-label="Evidence summary">
+    <div><span>Host record</span><strong id="host-status">Pending actual artifact</strong></div>
+    <div><span>Returned → saved</span><strong id="transfer-status">Unavailable</strong></div>
+    <div><span>Saved review</span><strong id="review-status">Unavailable</strong></div>
+    <div><span>Evidence binding</span><strong id="binding-status">Pending</strong></div>
+  </section>
+  <p id="status" role="status" aria-live="polite">No actual trial artifact is bound. No result is displayed.</p>
+
+  <section class="lab" aria-labelledby="byte-heading">
+    <div class="labhead"><h2 id="byte-heading">The complete byte layout</h2><button id="reset" type="button" disabled>Reset camera</button></div>
+    <div class="toolbar">
+      <label>Compare<select id="comparison" disabled>
+        <option value="returned-file">Returned values ↔ saved file</option>
+        <option value="file-expected">Saved file ↔ expected reference</option>
+        <option value="returned-expected">Returned values ↔ expected reference</option>
+      </select></label>
+      <p class="legend"><span class="swatch match"></span>Equal bytes <span class="swatch mismatch"></span>Different / missing byte <span class="swatch unknown"></span>Unavailable</p>
+    </div>
+    <p id="comparison-detail" class="hint">Comparison unavailable.</p>
+    <div id="scene" aria-label="Recorded byte layout in three dimensions"><p class="scene-placeholder">Waiting for actual evidence</p></div>
+    <p id="scene-status" class="hint">The diagram will show recorded bytes only. Drag to orbit; select a word below or in the diagram.</p>
+    <div id="words" class="words" role="group" aria-label="Select one of 32 recorded words"></div>
+    <article class="detail">
+      <p id="word-region" class="eyebrow">NO WORD SELECTED</p>
+      <h3 id="word-title">Byte details unavailable</h3>
+      <div class="table-wrap"><table>
+        <caption>Selected word: four bytes in storage order</caption>
+        <thead><tr><th scope="col">Offset</th><th scope="col">Returned</th><th scope="col">Saved file</th><th scope="col">Expected</th><th scope="col">Selected comparison</th></tr></thead>
+        <tbody id="byte-rows"><tr><td colspan="5">No actual artifact is bound.</td></tr></tbody>
+      </table></div>
+      <p id="word-values" class="hint">A missing value is shown as —; it is never replaced with the reference.</p>
+    </article>
+  </section>
+
+  <section aria-labelledby="comparison-heading"><h2 id="comparison-heading">Three separate comparisons</h2><div id="comparison-cards" class="comparison-cards"><p class="hint">No byte comparison is available.</p></div></section>
+
+  <section aria-labelledby="boundary-heading">
+    <h2 id="boundary-heading">What each record establishes</h2>
+    <p class="hint">These are recorded claims with different scopes. A matching file does not authenticate GPU execution or establish process closure.</p>
+    <div id="boundaries" class="boundaries"><p class="hint">Page, host, capture and review records are unavailable.</p></div>
+  </section>
+
+  <section aria-labelledby="failures-heading"><h2 id="failures-heading">Failures and unavailable evidence</h2><ul id="failures"><li>Waiting for an actual terminal trial artifact.</li></ul></section>
+
+  <section aria-labelledby="trace-heading">
+    <h2 id="trace-heading">Inspect the saved trace</h2>
+    <div class="eventbar"><button id="previous" type="button" disabled aria-label="Previous saved event">←</button><label>Saved event<select id="event" disabled><option>No events bound</option></select></label><button id="next" type="button" disabled aria-label="Next saved event">→</button></div>
+    <pre id="event-record">Unavailable</pre>
+    <p class="hint">Events retain saved order. Browser and host clocks are independent; the view does not derive transfer performance from their timestamps.</p>
+  </section>
+
+  <section><h2>One narrow engineering observation</h2><p id="interpretation">No trial conclusion is available.</p><p class="limit">This fixture covers 128 bytes of integer data. It does not establish hardware execution, general driver reliability, floating-point accuracy, large-transfer cost, or an explanation for missing historical output. Drone dynamics, aerodynamic validity and 5,000-agent performance remain outside this view.</p></section>
+  <details><summary>Bound files and exact checksums</summary><p class="hint">Digests bind this view to the listed saved bytes. They do not authenticate those records independently of the repository.</p><div id="receipts"><p>Unavailable</p></div></details>
+  <footer><a href="../README.md">Trial summary</a><a href="../PROTOCOL.md">Trial protocol</a><a href="../../m31-gpu-readback-integration-2026-10-16/STATIC-REVIEW.md">Static integration review</a><a href="../../m31-control-channel-2026-10-16/viewer/">Earlier control-channel evidence</a><a href="../../m31-restart-2026-10-15/viewer/">Historical 3D Boids · airflow off</a></footer>
+</main>
+<script type="module" src="app.js"></script>
+</body>
+</html>
