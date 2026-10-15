@@ -4,6 +4,10 @@
 
 Public additive worktree: current repository, branch `codex/m31-audit-2026-10-15`. Preserve the original eight-step roadmap and historical M31 base. Later remote main/DOT at `1336f5c416875a9651f92b58b2ed06649f25b04e` remains separate and untouched. The private workspace, attachments, credentials and chat records must never be published.
 
+## Ancillary next-reference decision — data analysis deferred
+
+`research/m31-next-reference-decision-2026-10-16/` preserves a proposed ENOLA power-factor diagnostic and independent challenge. The proposed identities cannot identify common CT/CP normalization; a related ICAS definition belongs to a different specimen/setup. Root deferred the data calculation as insufficient to resolve the physical reference gap. A small pure Decimal module with13synthetic checks is retained as unallocated preparation. No real-row formula, fit, benchmark, acquisition or new browser/GPU invocation occurred. Read DECISION and bibliography; do not interpret the proposal's suggested budgets as allocated. Latest visible milestone remains the actual GPU-trial failure view. Goal stays active and incomplete; no successor experiment is currently allocated.
+
 ## Latest completed cycle — GPU readback failed before saved output
 
 `research/m31-gpu-readback-trial-2026-10-16/`: source commit`e0ee811bd1f3cf22ea40c6a56a0d974dabbfc7b2`, freeze`8557a275d8387bfe5e1aa0ceddbad784b392f558e1c4c7d16721b3cbe06a66fa`(41pins), independently retrieved before the sole trial. Monitor aborted on “Unregistered detached descendant”; one browser-launch-intent event, no host result/page envelope/GPU binary. Actual capture/observer exits1, captured relay exit−9; external tool interval3.565s. Known-group cleanup is recorded, but the unidentified descendant's closure is unresolved; no survivor is inferred.

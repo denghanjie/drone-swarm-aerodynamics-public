@@ -1,0 +1,60 @@
+# Next scientific reference: an existing 62-row axial propeller power diagnostic
+
+**Recommendation:** use the already retained ENOLA MS1101 experimental CSV for one CPU-only, descriptive question: **at each admissible measured axial operating point, what fraction of reported shaft-power coefficient is represented by an ideal non-swirling actuator disk evaluated at the same measured thrust coefficient and advance ratio?** Compare that model discrepancy with numerical evaluation error. This progresses the accuracy–computation question without reopening browser/GPU work or acquiring another dataset.
+
+This is a proposed finite analysis, **not an allocated or executed experiment**. The file has prior exposure, so this cannot be presented as a new blinded confirmation. No load, power ratio, model fit, score or timing was computed in this desk review. The GPU trial and MODERA attempt remain terminal.
+
+## Candidate comparison
+
+| Candidate already retained | Useful observable | Decision now |
+|---|---|---|
+| **ENOLA MS1101 axial experiment: 3,155 bytes, 62 rows; CC BY-SA 4.0** | Measured thrust and shaft torque, RPM and imposed velocity; reported `J`, `CT`, `CP`. A rowwise power comparison needs neither a matched zero-inflow baseline nor a fixed-command interpretation. | **Select.** Small, real measurement slice with clear reuse terms. Unknown control/tare/uncertainty provenance limits it to a conditional descriptive diagnostic. |
+| UIUC GWS 2.5×0.8: 595-byte axial coefficient file plus static sweep | `CT(J)`, `CP(J)` under documented prescribed-RPM methods. | Defer: dataset reuse license remains unverified; the static/axial RPM baseline is unmatched. The inspected 15,030 RPM curve is exposed development evidence. |
+| NanoBench pinned release | Processed PWM, supply and vehicle telemetry; BSD 3-Clause. | Defer for this question: locally retained files are metadata, not CSV measurements; no independent thrust/torque/spatial airflow target. Acquisition accounting and repeated-content aliases remain unresolved. |
+| Existing CPU cubic/full-flock numerical reference | Error and cost conditional on the existing receiver equations. | Available fallback, but numerical agreement of the fixed-source model is already established on retained static poses. Another arithmetic-only exercise would add less physical information than the ENOLA slice. |
+| MODERA / air-duct / Wolf raw flow leads | Potential force, confinement or flow evidence. | No suitable small measurement payload established locally. MODERA's range attempt failed before data and is closed; no retry is proposed. Wolf's accessible article does not establish a reusable raw-flow archive. |
+
+## What was verified from existing bytes
+
+The retained primary record is Universitat Politècnica de València, *ENOLA numerical and experimental propeller database*, 10 May 2026, DOI [10.5281/zenodo.20111572](https://doi.org/10.5281/zenodo.20111572). Its saved API response explicitly declares `access_right:open` and license `cc-by-sa-4.0`. Preserve attribution, share-alike requirements and the accompanying research/education notice in any later reuse. The declaration covers this dataset; it is not borrowed from an article license.
+
+The selected original member is `BBDD/T-Motor/MS1101/results/MS1101_exp_0deg.csv`, retained at `retained-source-cache/enola/`. This review independently rehashed it and parsed only its structure: UTF-8 BOM, **62 data rows, eight fields in every row**, header `RPM,V[m/s],J,THRUST[N],TORQUE[Nm],CT,CQ,CP`. No numerical columns were analyzed. Its SHA-256 matches the existing acquisition manifest.
+
+The original MS1101 README identifies measurements of the original commercial propeller at the CMT wind tunnel and explicitly defines 0 degrees as axial flow. The retained workbook's `sheet1` header `E3` is `Diameter [m]`; row 12 identifies T-Motor / MS1101 and `E12` contains the floating representation of **0.2794 m**. This is declared geometry, not an independently measured diameter. The general README distinguishes experimental and simulation results. The selected `_exp_0deg` member is not a CFD/BEM output.
+
+| Existing primary artifact, relative to `retained-source-cache/` | Bytes | SHA-256 |
+|---|---:|---|
+| `zenodo.json` | 5,594 | `25c75ad6d228269e9842f4ac219d313200a7bcb79d4b8dcba2fdf4ca26473460` |
+| `enola/BBDD/README.txt` | 1,592 | `a17ea7117d4aa5d8405f16caa8a809ee00cd7390962218945150d0c7ec9eae7a` |
+| `enola/BBDD/T-Motor/MS1101/README.txt` | 1,550 | `bd09763eb0d86201b0d76869927425177d6cd01985e323d654e3fd490468748e` |
+| `enola/BBDD/00_Generalnfo.xlsx` | 17,873 | `4db3b159427eb9f23c7c6a94b5369e02a173efae86984e22a2c3aee39f152e93` |
+| `enola/BBDD/T-Motor/MS1101/results/MS1101_exp_0deg.csv` | 3,155 | `3a8d5fe5969a5b1578dcfd54fe78af487dcbbdc4c04cb02af6e698ce35c4f121` |
+
+The prior acquisition used selected ZIP ranges and member CRC checks; this review did not repeat acquisition or reconstruct the full archive checksum. Rehashing local files verifies continuity with the retained bytes, not independent authentication of the experiment.
+
+## Proposed preregistration
+
+**Question and observable.** Under the conventional definitions `n=RPM/60`, `J=V/(nD)`, `CT=T/(ρn²D⁴)`, `CP=Pshaft/(ρn³D⁵)` and `Pshaft=2πnQ`, evaluate
+
+`CPideal = CT × [J/2 + sqrt(J²/4 + 2CT/π)]`
+
+and report `r=CPideal/CP` and signed discrepancy `d=1−r`. This is the coefficient form of `Pideal=T[V/2+sqrt(V²/4+T/(2ρA))]` for `A=πD²/4`, already derived in the retained receiver-compatibility review. Density cancels. **Measured thrust is an input**, so this tests a conditional shaft-power approximation, not a prediction of thrust. No fixed-RPM, fixed-PWM, constant-shaft-power or constant-ideal-power control is inferred from a row.
+
+The coefficient definitions and `Pshaft=2πnQ` were independently reread in the retained Deters, Ananda and Selig, *Reynolds Number Effects on the Performance of Small-Scale Propellers*, AIAA 2014-2151, §II-D, Eqs. (2)–(5), [DOI 10.2514/6.2014-2151](https://doi.org/10.2514/6.2014-2151). This verifies a conventional normalization, not that ENOLA necessarily uses it; the compatibility screen below is required.
+
+1. **Freeze the complete file and exposure.** Use only the exact 62-row member above, all original rows and row numbers. Treat the whole slice as previously exposed descriptive evidence. No training, fitting, learned correction, held-out claim, archive switching or additional acquisition. Leave Aeronaut's merged header and Casalino's angle/duplicate defect out of scope without repairing them into this study.
+2. **Check coefficient compatibility before the power comparison.** The retained MS1101 README does not explicitly define the coefficient normalization. Therefore first report the division-free identities `J n D ≈ V` and `CP T D ≈ 2π CT Q` against the dimensional channels, using declared `D=0.2794 m`. Freeze a conservative format-resolution sensitivity envelope of ±one last printed decimal unit per CSV number; treat declared diameter similarly at 0.0001 m resolution. This is a representational screen, not measurement uncertainty or proof of the physical diameter. A screen pass means compatibility with the declared convention, not proof of its provenance. If the conventional identities cannot be reconciled within that declared envelope, stop with “coefficient convention unresolved”; do not tune density, diameter, multipliers or row selection to rescue the comparison. Freeze this screen before running it.
+3. **Prespecify the physical domain.** Score only finite rows with `n>0`, `V≥0`, `J≥0`, `T>0`, `Q>0`, `CT>0`, `CP>0` after the convention screen. Retain every other row with the exact exclusion reason; negative thrust is an out-of-domain observation for this positive-thrust ideal-disk relation, not an erased failure. Do not discard a high or low ratio after seeing it. `CQ=NaN` is not imputed and is not required: the measured dimensional torque and reported `CP` remain separate retained fields. Report static and nonzero-inflow rows separately, and retain each reported velocity level without interpolation or pooling into invented replicates.
+4. **Separate model discrepancy from numerical error.** Compute the same fixed formula in ordinary binary64 and an independently written scalar implementation at 80 and 120 decimal digits, retaining both high-precision outputs. Require their absolute `CPideal` difference ≤10⁻⁵⁰ to use the high-precision result as the comparison reference; otherwise retain numerical-reference failure without increasing the run budget. This is a numerical reproducibility screen, not a certified rounding bound. Compare binary64 and high-precision values row by row. The high-precision calculation is a numerical reference for this formula, not another physical reference. Report the largest numerical difference beside the observed `d`; do not absorb model residuals into a numerical tolerance. No Newton solver, GPU or dynamic simulation is required.
+5. **Report the finite evidence rather than inventing a physical pass gate.** Retain a table of all original fields, eligibility, `CPideal`, `r`, `d` and numerical difference; show `r` versus reported `J`, labeled by reported velocity. Report the full eligible range and median, plus counts of excluded rows and apparent `r>1` cases. Do not use a percentage threshold borrowed from f32 screens. This file has no established per-row uncertainty, independent-repeat labels, or applicable tare budget, so no confidence interval, significance claim, universal energy-violation claim or “physically validated” verdict is justified. An apparent ideal-power excess is a flagged discrepancy requiring provenance/uncertainty investigation.
+6. **Keep cost claims proportional.** The candidate is a constant-size algebraic evaluation with one square root per row; that is a source-level operation description, not a measured speed result. A proposed later allocation can cap the entire CPU analysis at 10 seconds, 256 MiB and 1 MiB of outputs, with one invocation and no retries. Those limits are proposed, not granted. Avoid timing 62 evaluations and extrapolating to 5,000 drones. A later approximation benchmark should be motivated by the physical discrepancy found here, not bundled into this first audit.
+
+## What this would settle—and what it would not
+
+The useful result is a finite, reproducible estimate of how far a very inexpensive ideal-disk power representation lies from reported shaft power on one real axial-propeller slice, with arithmetic error exposed separately. It can show whether numerical optimization is addressing an error scale much smaller than the model discrepancy. No numerical outcome is asserted now.
+
+It cannot identify the real actuator condition corresponding to M28's nominal `f0`, test constant ideal power at fixed command, validate 46 mm nanoquad rotors using this 279.4 mm specimen, infer a wake velocity field, establish transient behavior, or validate receiver roll/pitch loads, wake superposition or swarm trajectories. Missing wind-tunnel control, calibration, support/tare, uncertainty and repeat provenance remain limitations; applying an ideal formula does not fill them.
+
+This recommendation follows the published planning boundary in `research/m31-source-contract-planning-2026-10-16/EVIDENCE-AND-NEXT-TEST.md` and `DATA-REQUIREMENTS.md`, the dataset/metadata ledgers in `research/m31-followup-planning-2026-10-16/`, and the retained `research/m31-omission-ablation-2026-10-16/physical-compatibility-review.md`. The full paired thrust-plus-spatial-flow source-scaling falsification remains a later physical target. This smaller, already available reference answers a different explicit question and requires no recorder redesign.
+
+**Work performed here:** existing-file reads, source/metadata interpretation, structural CSV/workbook inspection, hashing, and this proposal. No network acquisition, MODERA retry, experiment, formula evaluation, fitting, benchmark, browser/GPU work or published-file edit occurred.
