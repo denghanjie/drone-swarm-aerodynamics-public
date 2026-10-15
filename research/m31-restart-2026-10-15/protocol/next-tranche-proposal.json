@@ -1,0 +1,269 @@
+{
+  "status": "proposal_only_not_executed",
+  "currentCheckpointScope": "No new full-swarm trajectory campaigns. Separate evidence audit performed six single-drone RK4 contact-replay consistency steps. This protocol audit imports no simulator.",
+  "baseline": "Frozen M31 airflow-off wall-priority local 3D Boids and 17-state rigid-body physics",
+  "priorExposure": [
+    "All M31 cases",
+    "All M32 diagnostics and checkpoint comparisons",
+    "Artificial full neighbor-ID reversal fixed-state checkpoint probe"
+  ],
+  "caps": {
+    "newTrajectories": 10,
+    "maxFlockSecondsAt1000": 64,
+    "additionalMicrocheckSeconds": 0.2,
+    "totalComputationWallSeconds": 1200,
+    "perTrajectoryWallSeconds": 240,
+    "newRawDataBytes": 2147483648,
+    "solverProcesses": 1,
+    "cloudSpend": 0,
+    "controllerTuningRounds": 0,
+    "harnessRepairAttempts": 1,
+    "microcheckTraces": 4,
+    "microcheckTraceDuration_s": 0.05,
+    "microchecksIncludedInTotalWallBudget": true,
+    "retriesIncludedInAllCaps": true
+  },
+  "fixedStateOnlyTests": [
+    "natural function exact regression",
+    "reverse only pair-constraint order",
+    "reverse only social accumulation order"
+  ],
+  "starts": {
+    "A": "M31 checkpoint-heldout-2002-1000-narrow-wall-priority-0.0025-20.json",
+    "B": "M31 checkpoint-refinement-2002-1000-narrow-wall-priority-0.00125-20.json"
+  },
+  "jobs": [
+    {
+      "id": "D1",
+      "start": "A",
+      "feedback": "natural",
+      "dt_s": 0.0025,
+      "interval_s": [
+        20,
+        30
+      ]
+    },
+    {
+      "id": "D2",
+      "start": "B",
+      "feedback": "natural",
+      "dt_s": 0.0025,
+      "interval_s": [
+        20,
+        30
+      ]
+    },
+    {
+      "id": "D3",
+      "start": "A",
+      "feedback": "natural",
+      "dt_s": 0.00125,
+      "interval_s": [
+        20,
+        30
+      ]
+    },
+    {
+      "id": "D4",
+      "start": "B",
+      "feedback": "natural",
+      "dt_s": 0.00125,
+      "interval_s": [
+        20,
+        30
+      ]
+    },
+    {
+      "id": "D5",
+      "start": "A",
+      "feedback": "exact D1 four-motor targets, common 10 ms schedule",
+      "dt_s": 0.0025,
+      "interval_s": [
+        20,
+        30
+      ],
+      "dependency": "D1 command stream complete over compared interval"
+    },
+    {
+      "id": "D6",
+      "start": "B",
+      "feedback": "exact D1 four-motor targets, common 10 ms schedule",
+      "dt_s": 0.0025,
+      "interval_s": [
+        20,
+        30
+      ],
+      "dependency": "D1 command stream complete over compared interval"
+    },
+    {
+      "id": "L1",
+      "start": "A-derived",
+      "feedback": "natural",
+      "dt_s": 0.00125,
+      "maxDuration_s": 1,
+      "condition": "first differing pair-membership tick; lowest affected IDs; omitted if none",
+      "claimScope": "local explanatory counterfactual, no policy acceptance"
+    },
+    {
+      "id": "L2",
+      "start": "A-derived",
+      "feedback": "one 10 ms interval selected pair membership from A",
+      "dt_s": 0.00125,
+      "maxDuration_s": 1,
+      "condition": "first differing pair-membership tick; lowest affected IDs; omitted if none",
+      "claimScope": "local explanatory counterfactual, no policy acceptance"
+    },
+    {
+      "id": "L3",
+      "start": "B-derived",
+      "feedback": "natural",
+      "dt_s": 0.00125,
+      "maxDuration_s": 1,
+      "condition": "first differing pair-membership tick; lowest affected IDs; omitted if none",
+      "claimScope": "local explanatory counterfactual, no policy acceptance"
+    },
+    {
+      "id": "L4",
+      "start": "B-derived",
+      "feedback": "one 10 ms interval selected pair membership from A",
+      "dt_s": 0.00125,
+      "maxDuration_s": 1,
+      "condition": "first differing pair-membership tick; lowest affected IDs; omitted if none",
+      "claimScope": "local explanatory counterfactual, no policy acceptance"
+    }
+  ],
+  "controlDt_s": 0.01,
+  "stateComponents": [
+    "position_m[3]",
+    "velocity_m_s[3]",
+    "quaternion_xyzw[4]",
+    "body_angular_velocity_rad_s[3]",
+    "lagged_motor_thrust_N[4]"
+  ],
+  "restartAlsoRequires": [
+    "absolute_time",
+    "integer_scheduler_ticks",
+    "stable_IDs",
+    "held_commands_if_not_on_control_boundary",
+    "controller_memory_if_any",
+    "per_drone_crossing_history",
+    "termination_state",
+    "postinitialization_rng_if_any",
+    "future_aero_held_fields_refresh_phase_and_history"
+  ],
+  "gates": [
+    "G0 exact passive-instrumentation and restart parity",
+    "G1 local adjacent-step evidence and limits",
+    "G2 matched state_step_forcing and selected one-tick mechanism contrasts",
+    "G3 stop at cap; at most one later candidate proposal or unresolved mechanism"
+  ],
+  "freshSeedPolicy": "No fresh confirmatory seed is consumed by this diagnostic tranche. Audit historical seed use, freeze unused seed values and serialized initial states before future model/controller outcomes, reserve untouched confirmation cases.",
+  "historicalCriterion": "M31 three 1 cm synchronized-path criteria remain failed; no new threshold overwrites them",
+  "notClaims": [
+    "finest step is truth",
+    "general convergence",
+    "physical accuracy",
+    "chaos",
+    "population safety probability",
+    "novelty",
+    "real-time 5000-drone closed-loop operation"
+  ],
+  "followingCampaign": {
+    "status": "separate_proposal_not_automatic",
+    "count": 50,
+    "seeds": 2,
+    "geometry": [
+      "wide",
+      "narrow"
+    ],
+    "models": [
+      "off",
+      "assumed force-only",
+      "assumed rotor force-plus-moment"
+    ],
+    "dt_s": [
+      0.0025,
+      0.00125
+    ],
+    "duration_s": 20,
+    "jobs": 24,
+    "controlDt_s": 0.01,
+    "fieldDt_s": 0.01,
+    "proposedWallSecondsCap": 1200,
+    "claimScope": "small paired model-sensitivity study, not full mission or physical validation"
+  },
+  "integrationProvenance": {
+    "historicalBase": "c591ce2b195fa01b895d4ba881a44a4b92fdd703",
+    "newerRemoteMain": "1336f5c416875a9651f92b58b2ed06649f25b04e",
+    "laterWork": "DOT wake-pruning campaign; R8 partial stop preserved separately",
+    "source": "parent checkpoint integration context, not new remote audit",
+    "noveltyBoundary": "Do not duplicate DOT optimization or claim wake-pruning novelty for this historical checkpoint"
+  },
+  "executionOrder": [
+    "D1",
+    "D5",
+    "D2",
+    "D6",
+    "D3",
+    "D4",
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+  ],
+  "microchecks": [
+    {
+      "duration_s": 0.05,
+      "mode": "uninstrumented uninterrupted",
+      "splitAt_s": null
+    },
+    {
+      "duration_s": 0.05,
+      "mode": "instrumented uninterrupted",
+      "splitAt_s": null
+    },
+    {
+      "duration_s": 0.05,
+      "mode": "instrumented split",
+      "splitAt_s": 0.02
+    },
+    {
+      "duration_s": 0.05,
+      "mode": "instrumented split held-command resume",
+      "splitAt_s": 0.025
+    }
+  ],
+  "scheduler": {
+    "commandTicks": 1000,
+    "commandStart_s": 20,
+    "commandEndExclusive_s": 30,
+    "commandAtRightEndpoint": false,
+    "commandOrdering": "recompute/read once at left endpoint then hold across all RK substeps",
+    "microchecks": "same 100 Hz schedule, preserve held command at 20.025 s split"
+  },
+  "replayInterpretation": "A-derived forcing conditional contrast only; no symmetric or global fraction attributed to feedback",
+  "localIntervention": {
+    "selection": "first actual directed pair-membership difference on common pre-control tick; lowest i then j; left-censored if t=20",
+    "onlyOverride": "one directed pair inclusion, bypass d<1.5 gate, retain ascending-ID placement and all other computation",
+    "geometry": "recompute own-state normal/lower, skip if singular; no replacement event",
+    "firstCommandHeld_s": 0.01,
+    "firstCommandSubsteps": 8,
+    "negativeControl": "L1 and L2 must be identical for whole local continuation",
+    "staticFixtures": [
+      "force-on gate bypass",
+      "force-off gate bypass"
+    ],
+    "noEligibilityFallback": true
+  },
+  "historicalParity": "Pin runtime where recoverable; historical-only mismatch is unresolved reproduction, not automatically instrumentation defect. Do not relax criterion; do not reuse historical third level if parity fails.",
+  "reproductionScript": "reproduce-evidence-audit.py",
+  "costPlanning": {
+    "phaseTimedMicrocheck": true,
+    "physicsAndSweptSafetyCoarseStepEquivalentFlockSeconds": 88,
+    "naturalControlFlockSeconds": 44,
+    "factor": 2,
+    "fixedStateAndOfflineReserve_s": 120,
+    "notGuarantee": true,
+    "replayedCommandFlockSeconds": 20
+  }
+}

@@ -1,0 +1,1997 @@
+{
+  "schema": "m31-audit-saved-poses-v1",
+  "dataType": "Float64LE",
+  "valuesPerDrone": 7,
+  "quaternionOrder": "x,y,z,w",
+  "positionUnits": "m",
+  "offsetUnits": "Float64 values",
+  "scope": "Exact selected saved poses from existing M31 traces. No new simulations. Statistics computed for all drones at each displayed time, with no interpolation.",
+  "binarySha256": "c9918697fc61576a9c0454cda354a8d66f42b0b6e21e082cdbf12054b372c927",
+  "binaryBytes": 3360000,
+  "comparisonInput": {
+    "path": "outputs/milestone-31-comparisons.json",
+    "sha256": "4107c9f7ba606253c6348d94507e803f96f4a040f0377abd6df615c20788c3df"
+  },
+  "cases": [
+    {
+      "label": "1,000 drones \u00b7 wide openings",
+      "count": 1000,
+      "course": "wide",
+      "seed": 2001,
+      "ids": [
+        "heldout-2001-1000-wide-wall-priority-0.0025",
+        "refinement-2001-1000-wide-wall-priority-0.00125"
+      ],
+      "stepMs": [
+        2.5,
+        1.25
+      ],
+      "times": [
+        0,
+        20,
+        30,
+        60,
+        180
+      ],
+      "samples": [
+        {
+          "t": 0,
+          "offsets": [
+            0,
+            7000
+          ],
+          "maximum": 0.0,
+          "median": 0.0,
+          "p95": 0.0,
+          "worstDrone": 0
+        },
+        {
+          "t": 20,
+          "offsets": [
+            14000,
+            21000
+          ],
+          "maximum": 1.774284212583099e-06,
+          "median": 4.205798309385605e-08,
+          "p95": 1.6120307087918185e-07,
+          "worstDrone": 881
+        },
+        {
+          "t": 30,
+          "offsets": [
+            28000,
+            35000
+          ],
+          "maximum": 0.0017913447583219506,
+          "median": 8.044271943083997e-07,
+          "p95": 4.5097168968445456e-05,
+          "worstDrone": 29
+        },
+        {
+          "t": 60,
+          "offsets": [
+            42000,
+            49000
+          ],
+          "maximum": 0.5007707058623236,
+          "median": 0.0038559930583119554,
+          "p95": 0.1050352714274211,
+          "worstDrone": 221
+        },
+        {
+          "t": 180,
+          "offsets": [
+            56000,
+            63000
+          ],
+          "maximum": 5.1666097554990404,
+          "median": 0.397738973234249,
+          "p95": 1.108852180689641,
+          "worstDrone": 434
+        }
+      ],
+      "geometry": {
+        "id": "factory-v1",
+        "name": "Three factory halls",
+        "units": "metres",
+        "boxes": [
+          {
+            "id": "floor",
+            "min": [
+              -60,
+              -10,
+              -0.4
+            ],
+            "max": [
+              42,
+              10,
+              0
+            ],
+            "kind": "shell"
+          },
+          {
+            "id": "ceiling",
+            "min": [
+              -14,
+              -10,
+              10
+            ],
+            "max": [
+              42,
+              10,
+              10.4
+            ],
+            "kind": "shell"
+          },
+          {
+            "id": "north-wall",
+            "min": [
+              -14,
+              10,
+              0
+            ],
+            "max": [
+              42,
+              10.4,
+              10
+            ],
+            "kind": "shell"
+          },
+          {
+            "id": "south-wall",
+            "min": [
+              -14,
+              -10.4,
+              0
+            ],
+            "max": [
+              42,
+              -10,
+              10
+            ],
+            "kind": "shell"
+          },
+          {
+            "id": "partition-0-left",
+            "min": [
+              -0.18,
+              -10,
+              0
+            ],
+            "max": [
+              0.18,
+              -4.5,
+              10
+            ],
+            "kind": "partition"
+          },
+          {
+            "id": "partition-0-right",
+            "min": [
+              -0.18,
+              0.5,
+              0
+            ],
+            "max": [
+              0.18,
+              10,
+              10
+            ],
+            "kind": "partition"
+          },
+          {
+            "id": "partition-0-below",
+            "min": [
+              -0.18,
+              -4.5,
+              0
+            ],
+            "max": [
+              0.18,
+              0.5,
+              2
+            ],
+            "kind": "partition"
+          },
+          {
+            "id": "partition-0-above",
+            "min": [
+              -0.18,
+              -4.5,
+              6
+            ],
+            "max": [
+              0.18,
+              0.5,
+              10
+            ],
+            "kind": "partition"
+          },
+          {
+            "id": "partition-1-left",
+            "min": [
+              11.82,
+              -10,
+              0
+            ],
+            "max": [
+              12.18,
+              -0.5,
+              10
+            ],
+            "kind": "partition"
+          },
+          {
+            "id": "partition-1-right",
+            "min": [
+              11.82,
+              4.5,
+              0
+            ],
+            "max": [
+              12.18,
+              10,
+              10
+            ],
+            "kind": "partition"
+          },
+          {
+            "id": "partition-1-below",
+            "min": [
+              11.82,
+              -0.5,
+              0
+            ],
+            "max": [
+              12.18,
+              4.5,
+              3.8
+            ],
+            "kind": "partition"
+          },
+          {
+            "id": "partition-1-above",
+            "min": [
+              11.82,
+              -0.5,
+              7.8
+            ],
+            "max": [
+              12.18,
+              4.5,
+              10
+            ],
+            "kind": "partition"
+          },
+          {
+            "id": "partition-2-left",
+            "min": [
+              23.82,
+              -10,
+              0
+            ],
+            "max": [
+              24.18,
+              -3.5,
+              10
+            ],
+            "kind": "partition"
+          },
+          {
+            "id": "partition-2-right",
+            "min": [
+              23.82,
+              1.5,
+              0
+            ],
+            "max": [
+              24.18,
+              10,
+              10
+            ],
+            "kind": "partition"
+          },
+          {
+            "id": "partition-2-below",
+            "min": [
+              23.82,
+              -3.5,
+              0
+            ],
+            "max": [
+              24.18,
+              1.5,
+              1.2000000000000002
+            ],
+            "kind": "partition"
+          },
+          {
+            "id": "partition-2-above",
+            "min": [
+              23.82,
+              -3.5,
+              5.2
+            ],
+            "max": [
+              24.18,
+              1.5,
+              10
+            ],
+            "kind": "partition"
+          },
+          {
+            "id": "rack-3.5--1",
+            "min": [
+              2.9,
+              -8.2,
+              0
+            ],
+            "max": [
+              4.1,
+              -5.8,
+              7
+            ],
+            "kind": "rack"
+          },
+          {
+            "id": "rack-3.5-1",
+            "min": [
+              2.9,
+              5.8,
+              0
+            ],
+            "max": [
+              4.1,
+              8.2,
+              7
+            ],
+            "kind": "rack"
+          },
+          {
+            "id": "rack-7--1",
+            "min": [
+              6.4,
+              -8.2,
+              0
+            ],
+            "max": [
+              7.6,
+              -5.8,
+              7
+            ],
+            "kind": "rack"
+          },
+          {
+            "id": "rack-7-1",
+            "min": [
+              6.4,
+              5.8,
+              0
+            ],
+            "max": [
+              7.6,
+              8.2,
+              7
+            ],
+            "kind": "rack"
+          },
+          {
+            "id": "rack-15.5--1",
+            "min": [
+              14.9,
+              -8.2,
+              0
+            ],
+            "max": [
+              16.1,
+              -5.8,
+              7
+            ],
+            "kind": "rack"
+          },
+          {
+            "id": "rack-15.5-1",
+            "min": [
+              14.9,
+              5.8,
+              0
+            ],
+            "max": [
+              16.1,
+              8.2,
+              7
+            ],
+            "kind": "rack"
+          },
+          {
+            "id": "rack-19--1",
+            "min": [
+              18.4,
+              -8.2,
+              0
+            ],
+            "max": [
+              19.6,
+              -5.8,
+              7
+            ],
+            "kind": "rack"
+          },
+          {
+            "id": "rack-19-1",
+            "min": [
+              18.4,
+              5.8,
+              0
+            ],
+            "max": [
+              19.6,
+              8.2,
+              7
+            ],
+            "kind": "rack"
+          },
+          {
+            "id": "rack-27.5--1",
+            "min": [
+              26.9,
+              -8.2,
+              0
+            ],
+            "max": [
+              28.1,
+              -5.8,
+              7
+            ],
+            "kind": "rack"
+          },
+          {
+            "id": "rack-27.5-1",
+            "min": [
+              26.9,
+              5.8,
+              0
+            ],
+            "max": [
+              28.1,
+              8.2,
+              7
+            ],
+            "kind": "rack"
+          },
+          {
+            "id": "rack-31--1",
+            "min": [
+              30.4,
+              -8.2,
+              0
+            ],
+            "max": [
+              31.6,
+              -5.8,
+              7
+            ],
+            "kind": "rack"
+          },
+          {
+            "id": "rack-31-1",
+            "min": [
+              30.4,
+              5.8,
+              0
+            ],
+            "max": [
+              31.6,
+              8.2,
+              7
+            ],
+            "kind": "rack"
+          },
+          {
+            "id": "press-A",
+            "min": [
+              4,
+              -0.2,
+              0
+            ],
+            "max": [
+              6,
+              2.5,
+              4.5
+            ],
+            "kind": "equipment"
+          },
+          {
+            "id": "press-B",
+            "min": [
+              16,
+              -4.8,
+              0
+            ],
+            "max": [
+              18,
+              -1.8,
+              6
+            ],
+            "kind": "equipment"
+          },
+          {
+            "id": "press-C",
+            "min": [
+              28,
+              1.5,
+              0
+            ],
+            "max": [
+              30,
+              4.5,
+              5.5
+            ],
+            "kind": "equipment"
+          },
+          {
+            "id": "overhead-A",
+            "min": [
+              6,
+              -5,
+              7.8
+            ],
+            "max": [
+              9,
+              5,
+              8.4
+            ],
+            "kind": "overhead"
+          },
+          {
+            "id": "overhead-B",
+            "min": [
+              18,
+              -5,
+              8.3
+            ],
+            "max": [
+              21,
+              5,
+              8.9
+            ],
+            "kind": "overhead"
+          },
+          {
+            "id": "loading-platform",
+            "min": [
+              32,
+              -5,
+              0
+            ],
+            "max": [
+              34,
+              0,
+              1.2
+            ],
+            "kind": "equipment"
+          }
+        ],
+        "gates": [
+          {
+            "x": 0,
+            "y": -2,
+            "z": 4,
+            "width": 5,
+            "height": 4
+          },
+          {
+            "x": 12,
+            "y": 2,
+            "z": 5.8,
+            "width": 5,
+            "height": 4
+          },
+          {
+            "x": 24,
+            "y": -1,
+            "z": 3.2,
+            "width": 5,
+            "height": 4
+          }
+        ],
+        "route": [
+          [
+            -7,
+            -2,
+            4
+          ],
+          [
+            1,
+            -2,
+            4
+          ],
+          [
+            6,
+            -2.5,
+            5.7
+          ],
+          [
+            10,
+            2,
+            5.8
+          ],
+          [
+            13,
+            2,
+            5.8
+          ],
+          [
+            18,
+            2.5,
+            5.8
+          ],
+          [
+            22,
+            -1,
+            3.2
+          ],
+          [
+            25,
+            -1,
+            3.2
+          ],
+          [
+            30,
+            -1,
+            3.7
+          ],
+          [
+            36,
+            0,
+            4
+          ]
+        ],
+        "finish": 36,
+        "duration": 120,
+        "description": "Synthetic factory: thick offset partitions, changing-height doorways, racks, presses and overhead structures. All shown solid boxes are checked. The ceiling and side shell can be visually hidden; their collisions remain active."
+      },
+      "scope": "full mission",
+      "firstSavedTimeAtOrAboveOneCentimeter": 35.0,
+      "maximumOverAllSavedTimes": 5.1666097554990404,
+      "inputHashes": [
+        {
+          "path": "outputs/milestone-31-source/heldout-2001-1000-wide-wall-priority-0.0025.json",
+          "sha256": "220d88a10fa22f51496381d9681a7282b7068131e38281855957ff660c619d18"
+        },
+        {
+          "path": "outputs/milestone-31-source/heldout-2001-1000-wide-wall-priority-0.0025.f64",
+          "sha256": "e9e9f3cd2fb5734040d93143d8c2f2be985a77f68f324a7a0928936006b80772"
+        },
+        {
+          "path": "outputs/milestone-31-source/refinement-2001-1000-wide-wall-priority-0.00125.json",
+          "sha256": "0f80c747ad2f61fa309fb14ebe6f00923611d8c9790e948b4d66df93bffa5f87"
+        },
+        {
+          "path": "outputs/milestone-31-source/refinement-2001-1000-wide-wall-priority-0.00125.f64",
+          "sha256": "46882543f4ed1f2f5c99df22a0b51d144f8f804b887e9d6a21b2f5578cbf66f9"
+        },
+        {
+          "path": "outputs/milestone-31-source/factory-wide.json",
+          "sha256": "43d42c22844101e5b338fbd49c5e9c25adb3c6b51042dd490b2e446a528c38a8"
+        }
+      ]
+    },
+    {
+      "label": "1,000 drones \u00b7 narrow openings",
+      "count": 1000,
+      "course": "narrow",
+      "seed": 2002,
+      "ids": [
+        "heldout-2002-1000-narrow-wall-priority-0.0025",
+        "refinement-2002-1000-narrow-wall-priority-0.00125"
+      ],
+      "stepMs": [
+        2.5,
+        1.25
+      ],
+      "times": [
+        0,
+        20,
+        30,
+        60,
+        180
+      ],
+      "samples": [
+        {
+          "t": 0,
+          "offsets": [
+            70000,
+            77000
+          ],
+          "maximum": 0.0,
+          "median": 0.0,
+          "p95": 0.0,
+          "worstDrone": 0
+        },
+        {
+          "t": 20,
+          "offsets": [
+            84000,
+            91000
+          ],
+          "maximum": 8.638877634877444e-06,
+          "median": 2.0101395003884774e-07,
+          "p95": 2.4654847785219476e-06,
+          "worstDrone": 271
+        },
+        {
+          "t": 30,
+          "offsets": [
+            98000,
+            105000
+          ],
+          "maximum": 0.04851032503047644,
+          "median": 0.0001516322206602098,
+          "p95": 0.0017588744359100976,
+          "worstDrone": 705
+        },
+        {
+          "t": 60,
+          "offsets": [
+            112000,
+            119000
+          ],
+          "maximum": 6.382712967691394,
+          "median": 0.49742254170478767,
+          "p95": 2.8099281136604497,
+          "worstDrone": 836
+        },
+        {
+          "t": 180,
+          "offsets": [
+            126000,
+            133000
+          ],
+          "maximum": 32.7674603483237,
+          "median": 1.784077560987566,
+          "p95": 17.37077408126587,
+          "worstDrone": 390
+        }
+      ],
+      "geometry": {
+        "id": "factory-narrow-v1",
+        "name": "Three factory halls \u2014 narrower openings",
+        "units": "metres",
+        "boxes": [
+          {
+            "id": "floor",
+            "min": [
+              -60,
+              -10,
+              -0.4
+            ],
+            "max": [
+              42,
+              10,
+              0
+            ],
+            "kind": "shell"
+          },
+          {
+            "id": "ceiling",
+            "min": [
+              -14,
+              -10,
+              10
+            ],
+            "max": [
+              42,
+              10,
+              10.4
+            ],
+            "kind": "shell"
+          },
+          {
+            "id": "north-wall",
+            "min": [
+              -14,
+              10,
+              0
+            ],
+            "max": [
+              42,
+              10.4,
+              10
+            ],
+            "kind": "shell"
+          },
+          {
+            "id": "south-wall",
+            "min": [
+              -14,
+              -10.4,
+              0
+            ],
+            "max": [
+              42,
+              -10,
+              10
+            ],
+            "kind": "shell"
+          },
+          {
+            "id": "partition-0-left",
+            "min": [
+              -0.18,
+              -10,
+              0
+            ],
+            "max": [
+              0.18,
+              -3.5,
+              10
+            ],
+            "kind": "partition"
+          },
+          {
+            "id": "partition-0-right",
+            "min": [
+              -0.18,
+              -0.5,
+              0
+            ],
+            "max": [
+              0.18,
+              10,
+              10
+            ],
+            "kind": "partition"
+          },
+          {
+            "id": "partition-0-below",
+            "min": [
+              -0.18,
+              -3.5,
+              0
+            ],
+            "max": [
+              0.18,
+              -0.5,
+              2.75
+            ],
+            "kind": "partition"
+          },
+          {
+            "id": "partition-0-above",
+            "min": [
+              -0.18,
+              -3.5,
+              5.25
+            ],
+            "max": [
+              0.18,
+              -0.5,
+              10
+            ],
+            "kind": "partition"
+          },
+          {
+            "id": "partition-1-left",
+            "min": [
+              11.82,
+              -10,
+              0
+            ],
+            "max": [
+              12.18,
+              0.5,
+              10
+            ],
+            "kind": "partition"
+          },
+          {
+            "id": "partition-1-right",
+            "min": [
+              11.82,
+              3.5,
+              0
+            ],
+            "max": [
+              12.18,
+              10,
+              10
+            ],
+            "kind": "partition"
+          },
+          {
+            "id": "partition-1-below",
+            "min": [
+              11.82,
+              0.5,
+              0
+            ],
+            "max": [
+              12.18,
+              3.5,
+              4.55
+            ],
+            "kind": "partition"
+          },
+          {
+            "id": "partition-1-above",
+            "min": [
+              11.82,
+              0.5,
+              7.05
+            ],
+            "max": [
+              12.18,
+              3.5,
+              10
+            ],
+            "kind": "partition"
+          },
+          {
+            "id": "partition-2-left",
+            "min": [
+              23.82,
+              -10,
+              0
+            ],
+            "max": [
+              24.18,
+              -2.5,
+              10
+            ],
+            "kind": "partition"
+          },
+          {
+            "id": "partition-2-right",
+            "min": [
+              23.82,
+              0.5,
+              0
+            ],
+            "max": [
+              24.18,
+              10,
+              10
+            ],
+            "kind": "partition"
+          },
+          {
+            "id": "partition-2-below",
+            "min": [
+              23.82,
+              -2.5,
+              0
+            ],
+            "max": [
+              24.18,
+              0.5,
+              1.9500000000000002
+            ],
+            "kind": "partition"
+          },
+          {
+            "id": "partition-2-above",
+            "min": [
+              23.82,
+              -2.5,
+              4.45
+            ],
+            "max": [
+              24.18,
+              0.5,
+              10
+            ],
+            "kind": "partition"
+          },
+          {
+            "id": "rack-3.5--1",
+            "min": [
+              2.9,
+              -8.2,
+              0
+            ],
+            "max": [
+              4.1,
+              -5.8,
+              7
+            ],
+            "kind": "rack"
+          },
+          {
+            "id": "rack-3.5-1",
+            "min": [
+              2.9,
+              5.8,
+              0
+            ],
+            "max": [
+              4.1,
+              8.2,
+              7
+            ],
+            "kind": "rack"
+          },
+          {
+            "id": "rack-7--1",
+            "min": [
+              6.4,
+              -8.2,
+              0
+            ],
+            "max": [
+              7.6,
+              -5.8,
+              7
+            ],
+            "kind": "rack"
+          },
+          {
+            "id": "rack-7-1",
+            "min": [
+              6.4,
+              5.8,
+              0
+            ],
+            "max": [
+              7.6,
+              8.2,
+              7
+            ],
+            "kind": "rack"
+          },
+          {
+            "id": "rack-15.5--1",
+            "min": [
+              14.9,
+              -8.2,
+              0
+            ],
+            "max": [
+              16.1,
+              -5.8,
+              7
+            ],
+            "kind": "rack"
+          },
+          {
+            "id": "rack-15.5-1",
+            "min": [
+              14.9,
+              5.8,
+              0
+            ],
+            "max": [
+              16.1,
+              8.2,
+              7
+            ],
+            "kind": "rack"
+          },
+          {
+            "id": "rack-19--1",
+            "min": [
+              18.4,
+              -8.2,
+              0
+            ],
+            "max": [
+              19.6,
+              -5.8,
+              7
+            ],
+            "kind": "rack"
+          },
+          {
+            "id": "rack-19-1",
+            "min": [
+              18.4,
+              5.8,
+              0
+            ],
+            "max": [
+              19.6,
+              8.2,
+              7
+            ],
+            "kind": "rack"
+          },
+          {
+            "id": "rack-27.5--1",
+            "min": [
+              26.9,
+              -8.2,
+              0
+            ],
+            "max": [
+              28.1,
+              -5.8,
+              7
+            ],
+            "kind": "rack"
+          },
+          {
+            "id": "rack-27.5-1",
+            "min": [
+              26.9,
+              5.8,
+              0
+            ],
+            "max": [
+              28.1,
+              8.2,
+              7
+            ],
+            "kind": "rack"
+          },
+          {
+            "id": "rack-31--1",
+            "min": [
+              30.4,
+              -8.2,
+              0
+            ],
+            "max": [
+              31.6,
+              -5.8,
+              7
+            ],
+            "kind": "rack"
+          },
+          {
+            "id": "rack-31-1",
+            "min": [
+              30.4,
+              5.8,
+              0
+            ],
+            "max": [
+              31.6,
+              8.2,
+              7
+            ],
+            "kind": "rack"
+          },
+          {
+            "id": "press-A",
+            "min": [
+              4,
+              -0.2,
+              0
+            ],
+            "max": [
+              6,
+              2.5,
+              4.5
+            ],
+            "kind": "equipment"
+          },
+          {
+            "id": "press-B",
+            "min": [
+              16,
+              -4.8,
+              0
+            ],
+            "max": [
+              18,
+              -1.8,
+              6
+            ],
+            "kind": "equipment"
+          },
+          {
+            "id": "press-C",
+            "min": [
+              28,
+              1.5,
+              0
+            ],
+            "max": [
+              30,
+              4.5,
+              5.5
+            ],
+            "kind": "equipment"
+          },
+          {
+            "id": "overhead-A",
+            "min": [
+              6,
+              -5,
+              7.8
+            ],
+            "max": [
+              9,
+              5,
+              8.4
+            ],
+            "kind": "overhead"
+          },
+          {
+            "id": "overhead-B",
+            "min": [
+              18,
+              -5,
+              8.3
+            ],
+            "max": [
+              21,
+              5,
+              8.9
+            ],
+            "kind": "overhead"
+          },
+          {
+            "id": "loading-platform",
+            "min": [
+              32,
+              -5,
+              0
+            ],
+            "max": [
+              34,
+              0,
+              1.2
+            ],
+            "kind": "equipment"
+          }
+        ],
+        "gates": [
+          {
+            "x": 0,
+            "y": -2,
+            "z": 4,
+            "width": 3,
+            "height": 2.5
+          },
+          {
+            "x": 12,
+            "y": 2,
+            "z": 5.8,
+            "width": 3,
+            "height": 2.5
+          },
+          {
+            "x": 24,
+            "y": -1,
+            "z": 3.2,
+            "width": 3,
+            "height": 2.5
+          }
+        ],
+        "route": [
+          [
+            -7,
+            -2,
+            4
+          ],
+          [
+            1,
+            -2,
+            4
+          ],
+          [
+            6,
+            -2.5,
+            5.7
+          ],
+          [
+            10,
+            2,
+            5.8
+          ],
+          [
+            13,
+            2,
+            5.8
+          ],
+          [
+            18,
+            2.5,
+            5.8
+          ],
+          [
+            22,
+            -1,
+            3.2
+          ],
+          [
+            25,
+            -1,
+            3.2
+          ],
+          [
+            30,
+            -1,
+            3.7
+          ],
+          [
+            36,
+            0,
+            4
+          ]
+        ],
+        "finish": 36,
+        "duration": 120,
+        "description": "Synthetic factory: thick offset partitions, changing-height doorways, racks, presses and overhead structures. All shown solid boxes are checked. The ceiling and side shell can be visually hidden; their collisions remain active. Narrow variant changes only the three doorways to3\u00d72.5m."
+      },
+      "scope": "full mission",
+      "firstSavedTimeAtOrAboveOneCentimeter": 30.0,
+      "maximumOverAllSavedTimes": 32.7674603483237,
+      "inputHashes": [
+        {
+          "path": "outputs/milestone-31-source/heldout-2002-1000-narrow-wall-priority-0.0025.json",
+          "sha256": "8dc46948c7316771c535f712459ba1e54e2c01abf55afca55fc9b38d73577dcf"
+        },
+        {
+          "path": "outputs/milestone-31-source/heldout-2002-1000-narrow-wall-priority-0.0025.f64",
+          "sha256": "6bcd0a01c28bb557fd1a7ed305b684e4574077365e067140697a36d1ec5f6c80"
+        },
+        {
+          "path": "outputs/milestone-31-source/refinement-2002-1000-narrow-wall-priority-0.00125.json",
+          "sha256": "68bb2baad26f47b48f8757f4187844455931fbb9eee591e9a32ea02bb079168c"
+        },
+        {
+          "path": "outputs/milestone-31-source/refinement-2002-1000-narrow-wall-priority-0.00125.f64",
+          "sha256": "55c20488ac4c2921a23976bc2031cc4d628af5f9c36bf89afde346aadfec26c8"
+        },
+        {
+          "path": "outputs/milestone-31-source/factory-narrow.json",
+          "sha256": "1277cd41d5e63c9452192e99e9b83d4bb522a9df93651fb7387fac9c1257beac"
+        }
+      ]
+    },
+    {
+      "label": "5,000 drones \u00b7 wide openings",
+      "count": 5000,
+      "course": "wide",
+      "seed": 2001,
+      "ids": [
+        "heldout-2001-5000-wide-wall-priority-0.0025",
+        "window-refinement-2001-5000-wide-wall-priority-0.00125"
+      ],
+      "stepMs": [
+        2.5,
+        1.25
+      ],
+      "times": [
+        0,
+        20,
+        30,
+        60
+      ],
+      "samples": [
+        {
+          "t": 0,
+          "offsets": [
+            140000,
+            175000
+          ],
+          "maximum": 0.0,
+          "median": 0.0,
+          "p95": 0.0,
+          "worstDrone": 0
+        },
+        {
+          "t": 20,
+          "offsets": [
+            210000,
+            245000
+          ],
+          "maximum": 1.3531850516208571e-05,
+          "median": 6.084157707933963e-08,
+          "p95": 2.471351957828058e-07,
+          "worstDrone": 4142
+        },
+        {
+          "t": 30,
+          "offsets": [
+            280000,
+            315000
+          ],
+          "maximum": 0.008341198496202778,
+          "median": 1.0965131238009707e-06,
+          "p95": 0.00025509053604376767,
+          "worstDrone": 1411
+        },
+        {
+          "t": 60,
+          "offsets": [
+            350000,
+            385000
+          ],
+          "maximum": 7.981792207494606,
+          "median": 0.34393612090263453,
+          "p95": 1.9712005530456005,
+          "worstDrone": 3683
+        }
+      ],
+      "geometry": {
+        "id": "factory-v1",
+        "name": "Three factory halls",
+        "units": "metres",
+        "boxes": [
+          {
+            "id": "floor",
+            "min": [
+              -60,
+              -10,
+              -0.4
+            ],
+            "max": [
+              42,
+              10,
+              0
+            ],
+            "kind": "shell"
+          },
+          {
+            "id": "ceiling",
+            "min": [
+              -14,
+              -10,
+              10
+            ],
+            "max": [
+              42,
+              10,
+              10.4
+            ],
+            "kind": "shell"
+          },
+          {
+            "id": "north-wall",
+            "min": [
+              -14,
+              10,
+              0
+            ],
+            "max": [
+              42,
+              10.4,
+              10
+            ],
+            "kind": "shell"
+          },
+          {
+            "id": "south-wall",
+            "min": [
+              -14,
+              -10.4,
+              0
+            ],
+            "max": [
+              42,
+              -10,
+              10
+            ],
+            "kind": "shell"
+          },
+          {
+            "id": "partition-0-left",
+            "min": [
+              -0.18,
+              -10,
+              0
+            ],
+            "max": [
+              0.18,
+              -4.5,
+              10
+            ],
+            "kind": "partition"
+          },
+          {
+            "id": "partition-0-right",
+            "min": [
+              -0.18,
+              0.5,
+              0
+            ],
+            "max": [
+              0.18,
+              10,
+              10
+            ],
+            "kind": "partition"
+          },
+          {
+            "id": "partition-0-below",
+            "min": [
+              -0.18,
+              -4.5,
+              0
+            ],
+            "max": [
+              0.18,
+              0.5,
+              2
+            ],
+            "kind": "partition"
+          },
+          {
+            "id": "partition-0-above",
+            "min": [
+              -0.18,
+              -4.5,
+              6
+            ],
+            "max": [
+              0.18,
+              0.5,
+              10
+            ],
+            "kind": "partition"
+          },
+          {
+            "id": "partition-1-left",
+            "min": [
+              11.82,
+              -10,
+              0
+            ],
+            "max": [
+              12.18,
+              -0.5,
+              10
+            ],
+            "kind": "partition"
+          },
+          {
+            "id": "partition-1-right",
+            "min": [
+              11.82,
+              4.5,
+              0
+            ],
+            "max": [
+              12.18,
+              10,
+              10
+            ],
+            "kind": "partition"
+          },
+          {
+            "id": "partition-1-below",
+            "min": [
+              11.82,
+              -0.5,
+              0
+            ],
+            "max": [
+              12.18,
+              4.5,
+              3.8
+            ],
+            "kind": "partition"
+          },
+          {
+            "id": "partition-1-above",
+            "min": [
+              11.82,
+              -0.5,
+              7.8
+            ],
+            "max": [
+              12.18,
+              4.5,
+              10
+            ],
+            "kind": "partition"
+          },
+          {
+            "id": "partition-2-left",
+            "min": [
+              23.82,
+              -10,
+              0
+            ],
+            "max": [
+              24.18,
+              -3.5,
+              10
+            ],
+            "kind": "partition"
+          },
+          {
+            "id": "partition-2-right",
+            "min": [
+              23.82,
+              1.5,
+              0
+            ],
+            "max": [
+              24.18,
+              10,
+              10
+            ],
+            "kind": "partition"
+          },
+          {
+            "id": "partition-2-below",
+            "min": [
+              23.82,
+              -3.5,
+              0
+            ],
+            "max": [
+              24.18,
+              1.5,
+              1.2000000000000002
+            ],
+            "kind": "partition"
+          },
+          {
+            "id": "partition-2-above",
+            "min": [
+              23.82,
+              -3.5,
+              5.2
+            ],
+            "max": [
+              24.18,
+              1.5,
+              10
+            ],
+            "kind": "partition"
+          },
+          {
+            "id": "rack-3.5--1",
+            "min": [
+              2.9,
+              -8.2,
+              0
+            ],
+            "max": [
+              4.1,
+              -5.8,
+              7
+            ],
+            "kind": "rack"
+          },
+          {
+            "id": "rack-3.5-1",
+            "min": [
+              2.9,
+              5.8,
+              0
+            ],
+            "max": [
+              4.1,
+              8.2,
+              7
+            ],
+            "kind": "rack"
+          },
+          {
+            "id": "rack-7--1",
+            "min": [
+              6.4,
+              -8.2,
+              0
+            ],
+            "max": [
+              7.6,
+              -5.8,
+              7
+            ],
+            "kind": "rack"
+          },
+          {
+            "id": "rack-7-1",
+            "min": [
+              6.4,
+              5.8,
+              0
+            ],
+            "max": [
+              7.6,
+              8.2,
+              7
+            ],
+            "kind": "rack"
+          },
+          {
+            "id": "rack-15.5--1",
+            "min": [
+              14.9,
+              -8.2,
+              0
+            ],
+            "max": [
+              16.1,
+              -5.8,
+              7
+            ],
+            "kind": "rack"
+          },
+          {
+            "id": "rack-15.5-1",
+            "min": [
+              14.9,
+              5.8,
+              0
+            ],
+            "max": [
+              16.1,
+              8.2,
+              7
+            ],
+            "kind": "rack"
+          },
+          {
+            "id": "rack-19--1",
+            "min": [
+              18.4,
+              -8.2,
+              0
+            ],
+            "max": [
+              19.6,
+              -5.8,
+              7
+            ],
+            "kind": "rack"
+          },
+          {
+            "id": "rack-19-1",
+            "min": [
+              18.4,
+              5.8,
+              0
+            ],
+            "max": [
+              19.6,
+              8.2,
+              7
+            ],
+            "kind": "rack"
+          },
+          {
+            "id": "rack-27.5--1",
+            "min": [
+              26.9,
+              -8.2,
+              0
+            ],
+            "max": [
+              28.1,
+              -5.8,
+              7
+            ],
+            "kind": "rack"
+          },
+          {
+            "id": "rack-27.5-1",
+            "min": [
+              26.9,
+              5.8,
+              0
+            ],
+            "max": [
+              28.1,
+              8.2,
+              7
+            ],
+            "kind": "rack"
+          },
+          {
+            "id": "rack-31--1",
+            "min": [
+              30.4,
+              -8.2,
+              0
+            ],
+            "max": [
+              31.6,
+              -5.8,
+              7
+            ],
+            "kind": "rack"
+          },
+          {
+            "id": "rack-31-1",
+            "min": [
+              30.4,
+              5.8,
+              0
+            ],
+            "max": [
+              31.6,
+              8.2,
+              7
+            ],
+            "kind": "rack"
+          },
+          {
+            "id": "press-A",
+            "min": [
+              4,
+              -0.2,
+              0
+            ],
+            "max": [
+              6,
+              2.5,
+              4.5
+            ],
+            "kind": "equipment"
+          },
+          {
+            "id": "press-B",
+            "min": [
+              16,
+              -4.8,
+              0
+            ],
+            "max": [
+              18,
+              -1.8,
+              6
+            ],
+            "kind": "equipment"
+          },
+          {
+            "id": "press-C",
+            "min": [
+              28,
+              1.5,
+              0
+            ],
+            "max": [
+              30,
+              4.5,
+              5.5
+            ],
+            "kind": "equipment"
+          },
+          {
+            "id": "overhead-A",
+            "min": [
+              6,
+              -5,
+              7.8
+            ],
+            "max": [
+              9,
+              5,
+              8.4
+            ],
+            "kind": "overhead"
+          },
+          {
+            "id": "overhead-B",
+            "min": [
+              18,
+              -5,
+              8.3
+            ],
+            "max": [
+              21,
+              5,
+              8.9
+            ],
+            "kind": "overhead"
+          },
+          {
+            "id": "loading-platform",
+            "min": [
+              32,
+              -5,
+              0
+            ],
+            "max": [
+              34,
+              0,
+              1.2
+            ],
+            "kind": "equipment"
+          }
+        ],
+        "gates": [
+          {
+            "x": 0,
+            "y": -2,
+            "z": 4,
+            "width": 5,
+            "height": 4
+          },
+          {
+            "x": 12,
+            "y": 2,
+            "z": 5.8,
+            "width": 5,
+            "height": 4
+          },
+          {
+            "x": 24,
+            "y": -1,
+            "z": 3.2,
+            "width": 5,
+            "height": 4
+          }
+        ],
+        "route": [
+          [
+            -7,
+            -2,
+            4
+          ],
+          [
+            1,
+            -2,
+            4
+          ],
+          [
+            6,
+            -2.5,
+            5.7
+          ],
+          [
+            10,
+            2,
+            5.8
+          ],
+          [
+            13,
+            2,
+            5.8
+          ],
+          [
+            18,
+            2.5,
+            5.8
+          ],
+          [
+            22,
+            -1,
+            3.2
+          ],
+          [
+            25,
+            -1,
+            3.2
+          ],
+          [
+            30,
+            -1,
+            3.7
+          ],
+          [
+            36,
+            0,
+            4
+          ]
+        ],
+        "finish": 36,
+        "duration": 120,
+        "description": "Synthetic factory: thick offset partitions, changing-height doorways, racks, presses and overhead structures. All shown solid boxes are checked. The ceiling and side shell can be visually hidden; their collisions remain active."
+      },
+      "scope": "first 60 s only; primary checkpoint used",
+      "firstSavedTimeAtOrAboveOneCentimeter": 31.0,
+      "maximumOverAllSavedTimes": 7.981792207494606,
+      "inputHashes": [
+        {
+          "path": "outputs/milestone-31-source/heldout-2001-5000-wide-wall-priority-0.0025.json",
+          "sha256": "77761327c0f5309e0190a1334b0dab1c377603fbd3844a3c4d36fdafcb326608"
+        },
+        {
+          "path": "outputs/milestone-31-source/heldout-2001-5000-wide-wall-priority-0.0025.f64",
+          "sha256": "8f3f9f43fc7cc05aed98d7e1dba23ae547d55d6b7214ad92936b4652e2d80614"
+        },
+        {
+          "path": "outputs/milestone-31-source/window-refinement-2001-5000-wide-wall-priority-0.00125.json",
+          "sha256": "16dcca30139558d5aad71fb7fbeda382a7850b147a29350f8c8dcbf3ff98ba43"
+        },
+        {
+          "path": "outputs/milestone-31-source/window-refinement-2001-5000-wide-wall-priority-0.00125.f64",
+          "sha256": "2f533f1e48d6eab5844cf81963da9ccd4860de82277c4c52ce026a9a57706a7f"
+        },
+        {
+          "path": "outputs/milestone-31-source/factory-wide.json",
+          "sha256": "43d42c22844101e5b338fbd49c5e9c25adb3c6b51042dd490b2e446a528c38a8"
+        }
+      ]
+    }
+  ]
+}

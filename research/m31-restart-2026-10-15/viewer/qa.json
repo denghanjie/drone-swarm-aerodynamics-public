@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-15",
+  "browser": "155.0.8059.40",
+  "automation": "Playwright 1.62.1 with installed Chrome",
+  "fallback": "Browser plugin not available; bundled Playwright browser absent, installed Chrome used; no dependencies installed",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "checks": [
+    "identity, meaningful screen, WebGL canvas, no framework overlay",
+    "all 14 saved case/time combinations match metadata and drone IDs",
+    "largest-gap and whole-flock cameras, both fleet toggles, next-time wrap",
+    "mouse orbit changes scene",
+    "390px mobile layout, no horizontal overflow, 5000 case ends at 60 s",
+    "all six footer links return HTTP 200",
+    "corrupted snapshot rejected with visible checksum error and disabled controls"
+  ],
+  "normalPageErrors": [],
+  "normalHttpFailures": [],
+  "normalConsole": [],
+  "scope": "Viewer behavior and saved-data consistency only; no simulation speed or physical validity claim"
+}
