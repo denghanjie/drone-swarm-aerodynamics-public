@@ -1,0 +1,3 @@
+# Visible Three.js evidence QA
+
+Installed Chrome 155 with Playwright 1.62.1. Browser plugin unavailable, so installed tooling was used without dependency installation. Desktop 1440×1000 and mobile 390×844. Passed page identity, meaningful content/canvas, all 6 cases × 5 methods × 3 times against raw thrust, exact source-pitch startup failure at 5 ms left, initial/terminal semantics, playback/pause, orbit/reset/focus, six evidence links, no horizontal overflow and corrupted-evidence rejection. Normal page/console/network errors absent. Page-only desktop/mobile/focus captures were inspected visually; quaternions, source count and inflow direction follow saved states. These are display checks, not scientific flight/performance validation.

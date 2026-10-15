@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "checks": 922282,
+  "failedChecks": [],
+  "samplingFailures": [],
+  "metricDiscrepancy": {
+    "peak": 0.0,
+    "rmsFsum": 9.75781955236954e-19,
+    "rmsSequential": 0.0
+  },
+  "suiteStrictImprovementCounts": {
+    "peak": 18,
+    "rms": 18
+  },
+  "predictorVsHold2p5msCounts": {
+    "peak": {
+      "better": 12,
+      "worse": 6
+    },
+    "rms": {
+      "better": 18
+    }
+  },
+  "sourcePitchPredictorStartup": {
+    "scope": "Descriptive decomposition of saved samples only; no new sampling.",
+    "initialHoldPeak": {
+      "tick": 20,
+      "timeSeconds": 0.005,
+      "side": "left",
+      "signedThrustErrorN": -0.0028984383829929183,
+      "absoluteThrustErrorN": 0.0028984383829929183,
+      "initialHoldInterval": true
+    },
+    "afterInitialHoldPeak": {
+      "tick": 1860,
+      "timeSeconds": 0.465,
+      "side": "left",
+      "signedThrustErrorN": -0.0007417141945950112,
+      "absoluteThrustErrorN": 0.0007417141945950112,
+      "initialHoldInterval": false
+    },
+    "exceedanceCount": 12,
+    "allExceedancesInInitialHold": true,
+    "firstExceedance": {
+      "tick": 9,
+      "timeSeconds": 0.0022500000000000003,
+      "side": "sample",
+      "signedThrustErrorN": -0.001347040526451071,
+      "absoluteThrustErrorN": 0.001347040526451071,
+      "initialHoldInterval": true
+    },
+    "lastExceedance": {
+      "tick": 20,
+      "timeSeconds": 0.005,
+      "side": "left",
+      "signedThrustErrorN": -0.0028984383829929183,
+      "absoluteThrustErrorN": 0.0028984383829929183,
+      "initialHoldInterval": true
+    }
+  },
+  "accounting": {
+    "rawBytes": 41337905,
+    "rawFiles": 194,
+    "savedFineInputs": 24006,
+    "savedOracleScalarComparisons": 312078,
+    "scienceFieldCalls": 53436,
+    "timingFieldCalls": 104580,
+    "totalFieldCalls": 158016,
+    "includedOracleCalls": 24006,
+    "boundCalls": 0,
+    "timingRecords": 180,
+    "supervisorWallSeconds": 3.2304365,
+    "driverElapsedSeconds": 3.128539834,
+    "budgetTerminalAtReview": false
+  },
+  "invocationArchive": "/tmp/m31-predictor-verifier-runs/1792077892696773000",
+  "verificationWallSecondsThroughReviewWrites": 1.76253
+}
