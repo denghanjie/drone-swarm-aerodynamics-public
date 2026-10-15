@@ -1,0 +1,5 @@
+# Viewer verification
+
+Final full browser matrix passes38cases including all four expected domain rejections. First/last receiver values, all four rotor inflows, load-error percentages and source counts match saved bytes. Case/color/extreme/focus/orbit controls, desktop1440×1000 and390pxmobile, no page overflow, empty normal console/error/HTTP-failure lists, and deliberate binary-corruption rejection were checked. Direct canvas picking was not part of this automated matrix. Focus/mobile screenshots were visually inspected; selected receiver and source links are visible.
+
+The first UI attempt found a case-switch race; viewer-qa-initial-failure.md preserves the fault, source fingerprint and display-only fix. A complete UI rerun then passed; no scientific execution repeated. QA scratch screenshots were overwritten on rerun. Public QA source replaces its machine-specific Playwright import path with the package name; exact original remains in /tmp. The browser is155.0.8059.40 with Playwright1.62.1, using installed Chrome. Footer targets are checked after final documentation is written. Viewing is recorded evidence, not a browser physics benchmark.

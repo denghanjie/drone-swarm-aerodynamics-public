@@ -1,0 +1,150 @@
+{
+  "passed": true,
+  "scientificStatus": "completed",
+  "scientificQualificationCompleted": true,
+  "checkCount": 2829776,
+  "failedCheckCount": 0,
+  "failedChecks": [],
+  "exception": null,
+  "retainedCoverage": {
+    "savedStateRows": 6052,
+    "outputRows": 52176,
+    "decisionRows": 34044,
+    "auditRows": 6044,
+    "retainedPositiveSourceTermTuples": 31711,
+    "recordedZeroTermChecks": 28691320,
+    "historicalInflatedCodeBytes": 432000000
+  },
+  "budgetAndInventory": {
+    "rawFiles": 240,
+    "rawBytes": 38259345,
+    "supervisor": {
+      "id": "bounded-omission",
+      "exitCode": 0,
+      "wallSeconds": 40.740462375,
+      "childCPUSeconds": 41.279581,
+      "cumulativeChildMaxRSSPlatformUnits": 463077376,
+      "stop": null,
+      "completeProcess": true,
+      "rawBytesAfter": 38259345
+    },
+    "terminalFlagAtReview": false,
+    "completedCaseSummaries": 38,
+    "recordedCalls": 152,
+    "timingsRetained": 36
+  },
+  "timingSummaries": {
+    "fresh1000": {
+      "B": {
+        "warmupSeconds": [
+          0.16884675
+        ],
+        "measuredSeconds": [
+          0.171705417,
+          0.168893291,
+          0.170814209,
+          0.171332125,
+          0.169796125
+        ],
+        "measuredCount": 5,
+        "minimum": 0.168893291,
+        "maximum": 0.171705417,
+        "median": 0.170814209
+      },
+      "M": {
+        "warmupSeconds": [
+          0.119093791
+        ],
+        "measuredSeconds": [
+          0.12223275,
+          0.107694083,
+          0.108610083,
+          0.110685583,
+          0.108092791
+        ],
+        "measuredCount": 5,
+        "minimum": 0.107694083,
+        "maximum": 0.12223275,
+        "median": 0.108610083
+      },
+      "C": {
+        "warmupSeconds": [
+          0.090444209
+        ],
+        "measuredSeconds": [
+          0.090545791,
+          0.084825875,
+          0.084201792,
+          0.086162042,
+          0.084604458
+        ],
+        "measuredCount": 5,
+        "minimum": 0.084201792,
+        "maximum": 0.090545791,
+        "median": 0.084825875
+      },
+      "ratiosOfMedians": {
+        "C_over_B": 0.4965973000524798,
+        "C_over_M": 0.7810128917772763
+      },
+      "interpretation": "C bundles exact-zero culling, positive omissions, bound/guard/mask work and its implementation overhead; five technical repeats are not independent swarm samples."
+    },
+    "fresh5000": {
+      "B": {
+        "warmupSeconds": [
+          1.859900791
+        ],
+        "measuredSeconds": [
+          1.857205458,
+          1.888841125,
+          1.861298584,
+          1.90478475,
+          1.912019042
+        ],
+        "measuredCount": 5,
+        "minimum": 1.857205458,
+        "maximum": 1.912019042,
+        "median": 1.888841125
+      },
+      "M": {
+        "warmupSeconds": [
+          1.307955542
+        ],
+        "measuredSeconds": [
+          1.307943917,
+          1.322262459,
+          1.333426792,
+          1.336225,
+          1.343442375
+        ],
+        "measuredCount": 5,
+        "minimum": 1.307943917,
+        "maximum": 1.343442375,
+        "median": 1.333426792
+      },
+      "C": {
+        "warmupSeconds": [
+          1.0837415
+        ],
+        "measuredSeconds": [
+          1.110087959,
+          1.117471708,
+          1.121855125,
+          1.224038417,
+          1.122320458
+        ],
+        "measuredCount": 5,
+        "minimum": 1.110087959,
+        "maximum": 1.224038417,
+        "median": 1.121855125
+      },
+      "ratiosOfMedians": {
+        "C_over_B": 0.5939383202491422,
+        "C_over_M": 0.8413323713987592
+      },
+      "interpretation": "C bundles exact-zero culling, positive omissions, bound/guard/mask work and its implementation overhead; five technical repeats are not independent swarm samples."
+    }
+  },
+  "failureAnalysis": null
+}
+{"runtime": {"wallSecondsThroughReviewAndLogs": 4.121925084, "internalAlarmSeconds": 55, "authorizedWallSeconds": 60, "exitCode": 0, "passed": true, "checkCount": 2829776, "checkerSha256": "532bf8d63abee6a19e76b4140c61f8fb68c6965528a8ecb6ce3d8a9924c1b83e", "invocationArchive": "/tmp/m31-omission-verifier-runs/1792082563824793000"}}
