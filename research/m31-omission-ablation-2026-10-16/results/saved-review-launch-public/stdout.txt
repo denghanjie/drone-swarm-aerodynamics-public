@@ -1,0 +1,424 @@
+{
+  "passed": true,
+  "scientificStatus": "completed",
+  "scientificQualificationCompleted": true,
+  "checkCount": 1594583,
+  "failedCheckCount": 0,
+  "failedChecks": [],
+  "exception": null,
+  "retainedCoverage": {
+    "savedStateRows": 6052,
+    "outputRows": 30220,
+    "decisionRows": 6044,
+    "ZshadowDecisionRows": 6044,
+    "positiveRealizedSelectedSources": 15404,
+    "zeroRealizedSelectedSources": 15994,
+    "independentSelectedProfileCodes": 27125,
+    "auditRows": 6044,
+    "retainedPositiveSourceTermTuples": 31398,
+    "recordedZeroTermChecks": 28690232
+  },
+  "budgetAndInventory": {
+    "rawFiles": 254,
+    "rawBytes": 22074354,
+    "supervisor": {
+      "id": "sole-ablation",
+      "exitCode": 0,
+      "wallSeconds": 59.989628333,
+      "childCPUSeconds": 60.930308000000004,
+      "cumulativeChildMaxRSSPlatformUnits": 419610624,
+      "stop": null,
+      "completeProcess": true,
+      "rawBytesAfter": 22074354
+    },
+    "terminalFlagAtReview": true,
+    "completedCaseSummaries": 26,
+    "recordedCalls": 202,
+    "timingsRetained": 72
+  },
+  "timingSummaries": {
+    "fresh1000": {
+      "B": {
+        "warmupSeconds": [
+          0.152558
+        ],
+        "measuredSeconds": [
+          0.145614583,
+          0.147141292,
+          0.145927,
+          0.147244209,
+          0.148244292,
+          0.154433333,
+          0.146851416,
+          0.148748792
+        ],
+        "measuredCount": 8,
+        "minimum": 0.145614583,
+        "maximum": 0.154433333,
+        "median": 0.1471927505
+      },
+      "M": {
+        "warmupSeconds": [
+          0.114365166
+        ],
+        "measuredSeconds": [
+          0.10662875,
+          0.10906625,
+          0.106002375,
+          0.113116625,
+          0.113914625,
+          0.104836417,
+          0.105377084,
+          0.104252041
+        ],
+        "measuredCount": 8,
+        "minimum": 0.104252041,
+        "maximum": 0.113914625,
+        "median": 0.10631556249999999
+      },
+      "C": {
+        "warmupSeconds": [
+          0.08925175
+        ],
+        "measuredSeconds": [
+          0.086893625,
+          0.085033458,
+          0.084714792,
+          0.08473325,
+          0.08387775,
+          0.087385041,
+          0.083937958,
+          0.086897041
+        ],
+        "measuredCount": 8,
+        "minimum": 0.08387775,
+        "maximum": 0.087385041,
+        "median": 0.084883354
+      },
+      "Z": {
+        "warmupSeconds": [
+          0.087735708
+        ],
+        "measuredSeconds": [
+          0.085703125,
+          0.084285292,
+          0.084675458,
+          0.084130375,
+          0.086261584,
+          0.084001291,
+          0.09562575,
+          0.096280458
+        ],
+        "measuredCount": 8,
+        "minimum": 0.084001291,
+        "maximum": 0.096280458,
+        "median": 0.0851892915
+      },
+      "interpretation": "C/Z includes matched shadow selection plus Z reporting and changed receiver workload; M/Z is the zero-screen package. Technical repetitions are not independent swarm samples."
+    },
+    "fresh5000": {
+      "B": {
+        "warmupSeconds": [
+          1.733464583
+        ],
+        "measuredSeconds": [
+          1.731812083,
+          1.730163084,
+          1.727717875,
+          1.742296375,
+          1.703813209,
+          1.737137542,
+          1.738402,
+          1.711556458
+        ],
+        "measuredCount": 8,
+        "minimum": 1.703813209,
+        "maximum": 1.742296375,
+        "median": 1.7309875835
+      },
+      "M": {
+        "warmupSeconds": [
+          1.296994625
+        ],
+        "measuredSeconds": [
+          1.398923916,
+          1.315699583,
+          1.3246225,
+          1.310586833,
+          1.332703375,
+          1.319613292,
+          1.306173833,
+          1.336927834
+        ],
+        "measuredCount": 8,
+        "minimum": 1.306173833,
+        "maximum": 1.398923916,
+        "median": 1.322117896
+      },
+      "C": {
+        "warmupSeconds": [
+          1.244387625
+        ],
+        "measuredSeconds": [
+          1.081051083,
+          1.088605583,
+          1.070215875,
+          1.089235,
+          1.079132042,
+          1.074093458,
+          1.065919958,
+          1.199513458
+        ],
+        "measuredCount": 8,
+        "minimum": 1.065919958,
+        "maximum": 1.199513458,
+        "median": 1.0800915624999998
+      },
+      "Z": {
+        "warmupSeconds": [
+          1.210062833
+        ],
+        "measuredSeconds": [
+          1.088487209,
+          1.087298542,
+          1.087419375,
+          1.206751208,
+          1.08593175,
+          1.066173542,
+          1.082693625,
+          1.186768291
+        ],
+        "measuredCount": 8,
+        "minimum": 1.066173542,
+        "maximum": 1.206751208,
+        "median": 1.0873589585
+      },
+      "interpretation": "C/Z includes matched shadow selection plus Z reporting and changed receiver workload; M/Z is the zero-screen package. Technical repetitions are not independent swarm samples."
+    }
+  },
+  "performance": {
+    "byCase": {
+      "fresh1000": {
+        "blocks": [
+          {
+            "rep": 1,
+            "B": 0.145614583,
+            "M": 0.10662875,
+            "Z": 0.085703125,
+            "C": 0.086893625,
+            "C_over_Z": 1.0138909753874201,
+            "M_minus_C": 0.019735124999999992,
+            "M_minus_Z": 0.02092562499999999,
+            "Z_minus_C": -0.0011904999999999971
+          },
+          {
+            "rep": 2,
+            "B": 0.147141292,
+            "M": 0.10906625,
+            "Z": 0.084285292,
+            "C": 0.085033458,
+            "C_over_Z": 1.0088765902359336,
+            "M_minus_C": 0.024032791999999997,
+            "M_minus_Z": 0.024780958000000006,
+            "Z_minus_C": -0.0007481660000000084
+          },
+          {
+            "rep": 3,
+            "B": 0.145927,
+            "M": 0.106002375,
+            "Z": 0.084675458,
+            "C": 0.084714792,
+            "C_over_Z": 1.0004645265691978,
+            "M_minus_C": 0.021287583,
+            "M_minus_Z": 0.021326917,
+            "Z_minus_C": -3.933400000000198e-05
+          },
+          {
+            "rep": 4,
+            "B": 0.147244209,
+            "M": 0.113116625,
+            "Z": 0.084130375,
+            "C": 0.08473325,
+            "C_over_Z": 1.0071659611644428,
+            "M_minus_C": 0.028383375000000002,
+            "M_minus_Z": 0.028986250000000005,
+            "Z_minus_C": -0.0006028750000000027
+          },
+          {
+            "rep": 5,
+            "B": 0.148244292,
+            "M": 0.113914625,
+            "Z": 0.086261584,
+            "C": 0.08387775,
+            "C_over_Z": 0.9723650565007014,
+            "M_minus_C": 0.030036875000000005,
+            "M_minus_Z": 0.027653041000000003,
+            "Z_minus_C": 0.0023838340000000013
+          },
+          {
+            "rep": 6,
+            "B": 0.154433333,
+            "M": 0.104836417,
+            "Z": 0.084001291,
+            "C": 0.087385041,
+            "C_over_Z": 1.040282118997433,
+            "M_minus_C": 0.017451376000000005,
+            "M_minus_Z": 0.020835125999999995,
+            "Z_minus_C": -0.003383749999999991
+          },
+          {
+            "rep": 7,
+            "B": 0.146851416,
+            "M": 0.105377084,
+            "Z": 0.09562575,
+            "C": 0.083937958,
+            "C_over_Z": 0.8777756828051021,
+            "M_minus_C": 0.021439126000000003,
+            "M_minus_Z": 0.009751334,
+            "Z_minus_C": 0.011687792000000002
+          },
+          {
+            "rep": 8,
+            "B": 0.148748792,
+            "M": 0.104252041,
+            "Z": 0.096280458,
+            "C": 0.086897041,
+            "C_over_Z": 0.9025407938960988,
+            "M_minus_C": 0.01735500000000001,
+            "M_minus_Z": 0.007971583000000004,
+            "Z_minus_C": 0.009383417000000005
+          }
+        ],
+        "sums": {
+          "B": 1.184204917,
+          "M": 0.8631941670000001,
+          "Z": 0.7009633329999999,
+          "C": 0.683472915
+        },
+        "medianPairedCOverZ": 1.0038152438668204,
+        "CFasterBlocks": 3,
+        "H1": false,
+        "aggregateNetSavings": 0.1797212520000001,
+        "aggregateZeroPackageSavings": 0.16223083400000016,
+        "aggregatePositiveOmissionSavings": 0.017490417999999952,
+        "aggregateZeroShare": 0.90268030182652,
+        "H2": true,
+        "identityResidual": 0.0,
+        "scope": "Descriptive paired technical blocks, no confidence interval or population claim"
+      },
+      "fresh5000": {
+        "blocks": [
+          {
+            "rep": 1,
+            "B": 1.731812083,
+            "M": 1.398923916,
+            "Z": 1.088487209,
+            "C": 1.081051083,
+            "C_over_Z": 0.9931683845813571,
+            "M_minus_C": 0.317872833,
+            "M_minus_Z": 0.31043670700000003,
+            "Z_minus_C": 0.007436125999999987
+          },
+          {
+            "rep": 2,
+            "B": 1.730163084,
+            "M": 1.315699583,
+            "Z": 1.087298542,
+            "C": 1.088605583,
+            "C_over_Z": 1.0012020994690158,
+            "M_minus_C": 0.2270939999999999,
+            "M_minus_Z": 0.22840104099999992,
+            "Z_minus_C": -0.0013070410000000088
+          },
+          {
+            "rep": 3,
+            "B": 1.727717875,
+            "M": 1.3246225,
+            "Z": 1.087419375,
+            "C": 1.070215875,
+            "C_over_Z": 0.9841795167572767,
+            "M_minus_C": 0.2544066250000001,
+            "M_minus_Z": 0.23720312499999996,
+            "Z_minus_C": 0.01720350000000015
+          },
+          {
+            "rep": 4,
+            "B": 1.742296375,
+            "M": 1.310586833,
+            "Z": 1.206751208,
+            "C": 1.089235,
+            "C_over_Z": 0.9026177001349228,
+            "M_minus_C": 0.22135183299999994,
+            "M_minus_Z": 0.10383562499999988,
+            "Z_minus_C": 0.11751620800000007
+          },
+          {
+            "rep": 5,
+            "B": 1.703813209,
+            "M": 1.332703375,
+            "Z": 1.08593175,
+            "C": 1.079132042,
+            "C_over_Z": 0.9937383652333582,
+            "M_minus_C": 0.253571333,
+            "M_minus_Z": 0.24677162499999983,
+            "Z_minus_C": 0.006799708000000182
+          },
+          {
+            "rep": 6,
+            "B": 1.737137542,
+            "M": 1.319613292,
+            "Z": 1.066173542,
+            "C": 1.074093458,
+            "C_over_Z": 1.0074283554112056,
+            "M_minus_C": 0.24551983400000021,
+            "M_minus_Z": 0.2534397500000001,
+            "Z_minus_C": -0.00791991599999986
+          },
+          {
+            "rep": 7,
+            "B": 1.738402,
+            "M": 1.306173833,
+            "Z": 1.082693625,
+            "C": 1.065919958,
+            "C_over_Z": 0.9845074667360306,
+            "M_minus_C": 0.24025387499999984,
+            "M_minus_Z": 0.2234802079999998,
+            "Z_minus_C": 0.016773667000000048
+          },
+          {
+            "rep": 8,
+            "B": 1.711556458,
+            "M": 1.336927834,
+            "Z": 1.186768291,
+            "C": 1.199513458,
+            "C_over_Z": 1.0107393895646308,
+            "M_minus_C": 0.13741437599999995,
+            "M_minus_Z": 0.150159543,
+            "Z_minus_C": -0.012745167000000057
+          }
+        ],
+        "sums": {
+          "B": 13.822898626,
+          "M": 10.645251166000001,
+          "Z": 8.891523542000002,
+          "C": 8.747766456999999
+        },
+        "medianPairedCOverZ": 0.9934533749073577,
+        "CFasterBlocks": 5,
+        "H1": false,
+        "aggregateNetSavings": 1.8974847090000022,
+        "aggregateZeroPackageSavings": 1.7537276239999997,
+        "aggregatePositiveOmissionSavings": 0.1437570850000025,
+        "aggregateZeroShare": 0.9242380798547967,
+        "H2": true,
+        "identityResidual": 0.0,
+        "scope": "Descriptive paired technical blocks, no confidence interval or population claim"
+      }
+    },
+    "H1BothFreshCases": false,
+    "H2BothFreshCases": true
+  },
+  "performanceQualified": true,
+  "failureAnalysis": null
+}
+{"runtime": {"wallSecondsThroughReviewAndLogs": 1.731856708, "internalAlarmSeconds": 55, "authorizedWallSeconds": 60, "exitCode": 0, "passed": true, "checkCount": 1594583, "checkerSha256": "83bc57c83c6befa63d92278e09d181ee5655dc7f5ac48118df1f9e45fc41ca29", "invocationArchive": "/tmp/m31-ablation-verifier-runs/1792084001138159000"}}

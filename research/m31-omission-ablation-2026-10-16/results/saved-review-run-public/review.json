@@ -1,0 +1,4944 @@
+{
+  "scope": "Saved evidence only; no geometry, quaternion rotation, field evaluation, root solving, input generation, fixture execution, integration or timing repeat.",
+  "method": {
+    "checkerSha256": "83bc57c83c6befa63d92278e09d181ee5655dc7f5ac48118df1f9e45fc41ca29",
+    "invocationArchive": "/tmp/m31-ablation-verifier-runs/1792084001138159000",
+    "sourceCommit": "b6aafb006bbc406deb95f7defcebde6801eaa7f5",
+    "authorizedWallSeconds": 60,
+    "internalAlarmSeconds": 55,
+    "checkerArithmeticTolerance": {
+      "absolute": 2e-16,
+      "relative": 8e-15,
+      "residualReconstructionAbsolute": 4e-15,
+      "summaryRelative": 5e-13,
+      "smallDiscrepancyAbsolute": 1e-30
+    },
+    "toleranceSeparation": "Checker tolerances apply only to scalar reconstruction and summaries; frozen scientific gates receive no extra checker tolerance. nextUp accumulation is reconstructed as the declared binary64 operation.",
+    "freezeSha256": "ccd1695ca48fefd85225c830fd1a93fbbd6bfbde4e1fcaffd1e0532a9c799ec0",
+    "freezeFileCount": 34
+  },
+  "sourceHashes": [
+    {
+      "path": "outputs/milestone-26-source/grid.cjs",
+      "bytes": 898,
+      "sha256": "f06010781770b64432935e5d825bcd1405b154b735ac4d0d654f145600cea302",
+      "matches": true
+    },
+    {
+      "path": "outputs/milestone-28-source/aero.cjs",
+      "bytes": 4259,
+      "sha256": "710b0a8f0df62208e3385ac9b8288240b379fe9248a1a645251a77c533f24a62",
+      "matches": true
+    },
+    {
+      "path": "outputs/step02c-source/physics.cjs",
+      "bytes": 6115,
+      "sha256": "0c46c9beb4e831c621658f6600c074f97c95966de07f5000eb64aa476a443fa1",
+      "matches": true
+    },
+    {
+      "path": "outputs/step03a-source/wake.cjs",
+      "bytes": 2069,
+      "sha256": "fb6d5a1d632a0023818041ef6bc39316ff8ed950f318da1a6649e2515b9fd8bc",
+      "matches": true
+    },
+    {
+      "path": "research/m31-omission-ablation-2026-10-16/.gitignore",
+      "bytes": 5,
+      "sha256": "e138ca829d938927384c82d7f176eaa6c61a82bd28ba28320ddd736a505c3b4f",
+      "matches": true
+    },
+    {
+      "path": "research/m31-omission-ablation-2026-10-16/DESIGN-REVIEW.md",
+      "bytes": 16711,
+      "sha256": "ef8f9a384e208013ccc28cccac8f7856e972e4f888755c89b9554b91ffa70388",
+      "matches": true
+    },
+    {
+      "path": "research/m31-omission-ablation-2026-10-16/FINAL-PREFLIGHT.md",
+      "bytes": 3576,
+      "sha256": "6bda56e5c76d05820a1e195b22aa4887fad73c2b6a918cbca27cb5f303bb1494",
+      "matches": true
+    },
+    {
+      "path": "research/m31-omission-ablation-2026-10-16/PREFLIGHT-CHALLENGE.md",
+      "bytes": 15499,
+      "sha256": "c833762b11aea2bdd3919a35ea2f1132d1043f00c252cca148a187ccae43d954",
+      "matches": true
+    },
+    {
+      "path": "research/m31-omission-ablation-2026-10-16/PREFLIGHT-RESOLUTIONS.md",
+      "bytes": 2560,
+      "sha256": "2244442a3c7e85c8fe90c0e24c33f23962a68f485e716e33fc9a8bd650907043",
+      "matches": true
+    },
+    {
+      "path": "research/m31-omission-ablation-2026-10-16/PROTOCOL.md",
+      "bytes": 11341,
+      "sha256": "346ac3856474c2673a42d4a476fa0962ded7f57ce6a6525e718e972c06b695f6",
+      "matches": true
+    },
+    {
+      "path": "research/m31-omission-ablation-2026-10-16/PUBLICATION-AUDIT.md",
+      "bytes": 1132,
+      "sha256": "fcf729787dcdbdaf53bcd58d47d8fce556ad4715abfa4322754147a40259e730",
+      "matches": true
+    },
+    {
+      "path": "research/m31-omission-ablation-2026-10-16/RESTART.md",
+      "bytes": 610,
+      "sha256": "140c19d1da269c5f95c2cebb0162b12d4bcfc5855bf63e6773420bbaf98a0884",
+      "matches": true
+    },
+    {
+      "path": "research/m31-omission-ablation-2026-10-16/ZERO-CONTROL-NOTE.md",
+      "bytes": 9659,
+      "sha256": "4482414b6eba300ac861ee4c8a85d0022b19f13e358791048a9eca301328ca8c",
+      "matches": true
+    },
+    {
+      "path": "research/m31-omission-ablation-2026-10-16/ZERO-CONTROL.diff",
+      "bytes": 5630,
+      "sha256": "4b3afae96c7cd3117dc513b211a52c74091c43bd1f0ab5b2536c6672eca169f6",
+      "matches": true
+    },
+    {
+      "path": "research/m31-omission-ablation-2026-10-16/config.json",
+      "bytes": 2404,
+      "sha256": "23c8f46f244cf32904ee0b1b31fe615216ddafb8941bcde69ae0bb12a404ec24",
+      "matches": true
+    },
+    {
+      "path": "research/m31-omission-ablation-2026-10-16/review-disclosures.json",
+      "bytes": 1320,
+      "sha256": "efb69968a6bdaea7b345e654778be9fa5117e3fcdfbb168f3dd9fcfc806dcdc3",
+      "matches": true
+    },
+    {
+      "path": "research/m31-omission-ablation-2026-10-16/schema.json",
+      "bytes": 1435,
+      "sha256": "30be37b4873f6f87015d532f50a9c971f6a16e2a6ffd15878e92fbcc3ed0579c",
+      "matches": true
+    },
+    {
+      "path": "research/m31-omission-ablation-2026-10-16/source/experiment.cjs",
+      "bytes": 22994,
+      "sha256": "11d08a703c419564eeb9d7acb223c1661eb7c6bea55ea8664095d46851323fd2",
+      "matches": true
+    },
+    {
+      "path": "research/m31-omission-ablation-2026-10-16/source/run-step.py",
+      "bytes": 4416,
+      "sha256": "db4171d2e7c00b48523bec91637a6d00265fa966dbcbf3b1103c8bea2b5d8e21",
+      "matches": true
+    },
+    {
+      "path": "research/m31-omission-ablation-2026-10-16/source/zero-control.cjs",
+      "bytes": 7349,
+      "sha256": "c85390788f5db157fd17b0703de187774d118679514c59e1e1da7cfdebfcee01",
+      "matches": true
+    },
+    {
+      "path": "research/m31-source-omission-2026-10-16/DESIGN-REVIEW.md",
+      "bytes": 18909,
+      "sha256": "664a6e84a30d210259da7a4365c683118c0b3efa188e9aa97c9c2c84279ae81d",
+      "matches": true
+    },
+    {
+      "path": "research/m31-source-omission-2026-10-16/MATH-FINAL-REVIEW.md",
+      "bytes": 6349,
+      "sha256": "6ad49d4116bbeb4cb2bbad47b71509ccba9ccc8c801ec5769ac1c3c3850b14b7",
+      "matches": true
+    },
+    {
+      "path": "research/m31-source-omission-2026-10-16/MATH-REVIEW.md",
+      "bytes": 13972,
+      "sha256": "cce5645b7881be7aa028005836ae0954dab3e0aafbddb9b4880b785f6c264117",
+      "matches": true
+    },
+    {
+      "path": "research/m31-source-omission-2026-10-16/PROTOCOL.md",
+      "bytes": 11332,
+      "sha256": "f014c68a8c5c33b21e81782c9524457a3a2232c224af7e1c2335bee75a3aa972",
+      "matches": true
+    },
+    {
+      "path": "research/m31-source-omission-2026-10-16/config.json",
+      "bytes": 1222,
+      "sha256": "13cbe6498c142a6d12cdf20eb4b7c9303e6f3cbc78c6a64ea0ab46c2ed396c3a",
+      "matches": true
+    },
+    {
+      "path": "research/m31-source-omission-2026-10-16/freeze.json",
+      "bytes": 13358,
+      "sha256": "855f71dc0f8993ed1fb51eb5e882cfe9c07c5bb5f37ea275e4705bf33114516c",
+      "matches": true
+    },
+    {
+      "path": "research/m31-source-omission-2026-10-16/manifest.json",
+      "bytes": 50943,
+      "sha256": "bbb1ab3149db34c4953454b3cdf4dfdec5163a48bbcd3da965e768e5ea177044",
+      "matches": true
+    },
+    {
+      "path": "research/m31-source-omission-2026-10-16/prior-work.md",
+      "bytes": 10416,
+      "sha256": "672328513e1ca91d9c65babaaf0d9e83ddd40398b727d32899077e679ee3f9b9",
+      "matches": true
+    },
+    {
+      "path": "research/m31-source-omission-2026-10-16/results/result.json",
+      "bytes": 166242,
+      "sha256": "096d1deae55556fcb38499312be8ad2e4ae5206e8d48ecf3e4be7f7565da6cbd",
+      "matches": true
+    },
+    {
+      "path": "research/m31-source-omission-2026-10-16/schema.json",
+      "bytes": 1006,
+      "sha256": "07975c3635e42d14d17ad06867bc3bc16165653fac326c1447f3b25b7154e04b",
+      "matches": true
+    },
+    {
+      "path": "research/m31-source-omission-2026-10-16/source/candidate.cjs",
+      "bytes": 6345,
+      "sha256": "c88eef4e67b29ba133dd24965db7cf831cb4337853a5e42f282cca4ceed9317e",
+      "matches": true
+    },
+    {
+      "path": "research/m31-source-omission-2026-10-16/source/cases.cjs",
+      "bytes": 2344,
+      "sha256": "f9432791bc90385c7ade62b81c4b66a7a0053c083569707a9bb7556b346f63d9",
+      "matches": true
+    },
+    {
+      "path": "research/m31-source-omission-2026-10-16/source/independent.cjs",
+      "bytes": 18306,
+      "sha256": "da857f37129c6d3fc87fe223efd2b37b140fbf11417c1f1bb92331d5cfa53cec",
+      "matches": true
+    },
+    {
+      "path": "research/m31-source-omission-2026-10-16/sources.bib",
+      "bytes": 2638,
+      "sha256": "3a9a4fa6adfc1c08b15c4170702dfef8e71adec0ce456294dba2b74c924b7468",
+      "matches": true
+    }
+  ],
+  "rawHashes": [
+    {
+      "name": "center3--1e-12-B.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "center3--1e-12-C-decisions.ndjson",
+      "bytes": 418,
+      "sha256": "2de210bda1ee66f099c64535ce8691b0b19f9371aeacf469e70d9145e72ad80a"
+    },
+    {
+      "name": "center3--1e-12-C.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "center3--1e-12-I.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "center3--1e-12-M.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "center3--1e-12-Z-decisions.ndjson",
+      "bytes": 558,
+      "sha256": "2312f8a8e3a4f790c984d3841ce4a77c3478e64ff642a4f2c6f763c4a4a9f2ee"
+    },
+    {
+      "name": "center3--1e-12-Z.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "center3--1e-12-source-audit.ndjson",
+      "bytes": 1326,
+      "sha256": "ccb7efac88859088b7ff84698b13f7968284465e71c35578b5da70895d275a7f"
+    },
+    {
+      "name": "center3--1e-12-states.f64",
+      "bytes": 272,
+      "sha256": "3041cc7878eac6cccbf9d6f34ea5e4fae5b3e0ab4bab7326eae38cea50fcd4e2"
+    },
+    {
+      "name": "center3--1e-12-summary.json",
+      "bytes": 1496,
+      "sha256": "2c7e615d915afa5d20bad7af442fb526750a8ba463ec6551334babc54a5f1301"
+    },
+    {
+      "name": "center3-0-B.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "center3-0-C-decisions.ndjson",
+      "bytes": 418,
+      "sha256": "0bf186a3c065b6076f02dd7dee26160ef1a61d40e5987d283b6d8f545a10f2ec"
+    },
+    {
+      "name": "center3-0-C.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "center3-0-I.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "center3-0-M.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "center3-0-Z-decisions.ndjson",
+      "bytes": 558,
+      "sha256": "c8bfc409c6ac90c4b2237aaa591b0da97149c87eb5395cde11f6196c01b49c29"
+    },
+    {
+      "name": "center3-0-Z.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "center3-0-source-audit.ndjson",
+      "bytes": 1326,
+      "sha256": "743a5c1e9e7eea73ebda50b8258da215dc13c5fbd6ad3a92d7002ab4379bc1c5"
+    },
+    {
+      "name": "center3-0-states.f64",
+      "bytes": 272,
+      "sha256": "afb3e742cb90dacab888c4dd8906f481bb9a458a9a4ac016a28fdc9fa8082b8d"
+    },
+    {
+      "name": "center3-0-summary.json",
+      "bytes": 1491,
+      "sha256": "9e21377a0cb7d94ba921ae97a87ac54d5dbc4287700ed60536a38eda67a57963"
+    },
+    {
+      "name": "center3-1e-12-B.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "center3-1e-12-C-decisions.ndjson",
+      "bytes": 418,
+      "sha256": "0bf186a3c065b6076f02dd7dee26160ef1a61d40e5987d283b6d8f545a10f2ec"
+    },
+    {
+      "name": "center3-1e-12-C.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "center3-1e-12-I.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "center3-1e-12-M.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "center3-1e-12-Z-decisions.ndjson",
+      "bytes": 558,
+      "sha256": "c8bfc409c6ac90c4b2237aaa591b0da97149c87eb5395cde11f6196c01b49c29"
+    },
+    {
+      "name": "center3-1e-12-Z.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "center3-1e-12-source-audit.ndjson",
+      "bytes": 1326,
+      "sha256": "743a5c1e9e7eea73ebda50b8258da215dc13c5fbd6ad3a92d7002ab4379bc1c5"
+    },
+    {
+      "name": "center3-1e-12-states.f64",
+      "bytes": 272,
+      "sha256": "beb618cb5b3be45afbb463ee3d70c4c904e018ac190fc8d7b5eb496e49c2cf13"
+    },
+    {
+      "name": "center3-1e-12-summary.json",
+      "bytes": 1495,
+      "sha256": "0bda214f2c30259332cbb95f690a521d6297962edea06d1d65f70d06f9eab1ed"
+    },
+    {
+      "name": "centerInferenceInvalid-B-domain.json",
+      "bytes": 213,
+      "sha256": "191fd664877b27adca9f4f7d5c9e9d85a8dfc306bf4043f3550ac177166fa791"
+    },
+    {
+      "name": "centerInferenceInvalid-C-domain.json",
+      "bytes": 226,
+      "sha256": "caae3ef04d6aebbfe16287c00549a37d3f031ea54632d541ab9af91d4187eb4c"
+    },
+    {
+      "name": "centerInferenceInvalid-I-domain.json",
+      "bytes": 636,
+      "sha256": "1a8644b5d908b3c9e2b6aad6a4171a94bb65d0f4d3610d5dbc08e8e590ce5150"
+    },
+    {
+      "name": "centerInferenceInvalid-M-domain.json",
+      "bytes": 226,
+      "sha256": "04789751561ccbfb9f31eacb6a115b4fd59d0f573f3725808f282eabd5000dc2"
+    },
+    {
+      "name": "centerInferenceInvalid-Z-domain.json",
+      "bytes": 226,
+      "sha256": "afb800f2719a0f95be2e3d95623847b640c9169e876c81b4fb0af25fda249b30"
+    },
+    {
+      "name": "centerInferenceInvalid-states.f64",
+      "bytes": 272,
+      "sha256": "137590e4f5a5861aac4387e2e3d611b01077b4abaf6d6c59a09c4b950aa908a2"
+    },
+    {
+      "name": "centerInferenceInvalid-summary.json",
+      "bytes": 1085,
+      "sha256": "ce5906e54437d464db5615880a6abaee77b8f08fb5e90245162438d4cd8650f6"
+    },
+    {
+      "name": "combinedTiltYaw-B.f64",
+      "bytes": 272,
+      "sha256": "b05d8108ac543f8da73467dbedcebac6da63c1bf0a726df5410ba4af527d33ee"
+    },
+    {
+      "name": "combinedTiltYaw-C-decisions.ndjson",
+      "bytes": 418,
+      "sha256": "2de210bda1ee66f099c64535ce8691b0b19f9371aeacf469e70d9145e72ad80a"
+    },
+    {
+      "name": "combinedTiltYaw-C.f64",
+      "bytes": 272,
+      "sha256": "b05d8108ac543f8da73467dbedcebac6da63c1bf0a726df5410ba4af527d33ee"
+    },
+    {
+      "name": "combinedTiltYaw-I.f64",
+      "bytes": 272,
+      "sha256": "f9fb973669bfbf5c0e10b1cc7841ad76dcb3e7cc8463024e346eec6f39165b33"
+    },
+    {
+      "name": "combinedTiltYaw-M.f64",
+      "bytes": 272,
+      "sha256": "b05d8108ac543f8da73467dbedcebac6da63c1bf0a726df5410ba4af527d33ee"
+    },
+    {
+      "name": "combinedTiltYaw-Z-decisions.ndjson",
+      "bytes": 558,
+      "sha256": "2312f8a8e3a4f790c984d3841ce4a77c3478e64ff642a4f2c6f763c4a4a9f2ee"
+    },
+    {
+      "name": "combinedTiltYaw-Z.f64",
+      "bytes": 272,
+      "sha256": "b05d8108ac543f8da73467dbedcebac6da63c1bf0a726df5410ba4af527d33ee"
+    },
+    {
+      "name": "combinedTiltYaw-source-audit.ndjson",
+      "bytes": 1375,
+      "sha256": "58e168dc12bdbbe878fe153b4a1ecc70112df236a5dea3cf05eab6c0aef8ffba"
+    },
+    {
+      "name": "combinedTiltYaw-states.f64",
+      "bytes": 272,
+      "sha256": "5329170adbc0d7a21866414c6b64588978ed62d82f291b7443102c88b1e88032"
+    },
+    {
+      "name": "combinedTiltYaw-summary.json",
+      "bytes": 1577,
+      "sha256": "27af8c02eae499436e645e8e3cfd20de47f493ab5238f7f7a3605cbfb419d6a7"
+    },
+    {
+      "name": "down0--1e-12-B.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "down0--1e-12-C-decisions.ndjson",
+      "bytes": 418,
+      "sha256": "2de210bda1ee66f099c64535ce8691b0b19f9371aeacf469e70d9145e72ad80a"
+    },
+    {
+      "name": "down0--1e-12-C.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "down0--1e-12-I.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "down0--1e-12-M.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "down0--1e-12-Z-decisions.ndjson",
+      "bytes": 558,
+      "sha256": "2312f8a8e3a4f790c984d3841ce4a77c3478e64ff642a4f2c6f763c4a4a9f2ee"
+    },
+    {
+      "name": "down0--1e-12-Z.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "down0--1e-12-source-audit.ndjson",
+      "bytes": 1326,
+      "sha256": "14bce3f5f451f0b49f33f2ab67835973eb88b5f38af7e3adcdd6c5cc68e84aa7"
+    },
+    {
+      "name": "down0--1e-12-states.f64",
+      "bytes": 272,
+      "sha256": "b7cab8eb5743fde540f1a980b5af45e1e289df46c9b8b1f791d1ac9207ea544c"
+    },
+    {
+      "name": "down0--1e-12-summary.json",
+      "bytes": 1494,
+      "sha256": "b6e1e9e01c53bdc37bb52e1b0efea5b7179bcfda6b0ec06f87f05570927344f7"
+    },
+    {
+      "name": "down0-0-B.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "down0-0-C-decisions.ndjson",
+      "bytes": 418,
+      "sha256": "2de210bda1ee66f099c64535ce8691b0b19f9371aeacf469e70d9145e72ad80a"
+    },
+    {
+      "name": "down0-0-C.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "down0-0-I.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "down0-0-M.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "down0-0-Z-decisions.ndjson",
+      "bytes": 558,
+      "sha256": "2312f8a8e3a4f790c984d3841ce4a77c3478e64ff642a4f2c6f763c4a4a9f2ee"
+    },
+    {
+      "name": "down0-0-Z.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "down0-0-source-audit.ndjson",
+      "bytes": 1326,
+      "sha256": "ccb7efac88859088b7ff84698b13f7968284465e71c35578b5da70895d275a7f"
+    },
+    {
+      "name": "down0-0-states.f64",
+      "bytes": 272,
+      "sha256": "37ef6cff13a8ef95963203336c06f43c5e50721c8c51787c25a2b0dba819bb72"
+    },
+    {
+      "name": "down0-0-summary.json",
+      "bytes": 1489,
+      "sha256": "00487949b00603b068f25e7f9c0ddbbd472db730eac1dcdb9510503645d0876a"
+    },
+    {
+      "name": "down0-1e-12-B.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "down0-1e-12-C-decisions.ndjson",
+      "bytes": 418,
+      "sha256": "2de210bda1ee66f099c64535ce8691b0b19f9371aeacf469e70d9145e72ad80a"
+    },
+    {
+      "name": "down0-1e-12-C.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "down0-1e-12-I.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "down0-1e-12-M.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "down0-1e-12-Z-decisions.ndjson",
+      "bytes": 558,
+      "sha256": "2312f8a8e3a4f790c984d3841ce4a77c3478e64ff642a4f2c6f763c4a4a9f2ee"
+    },
+    {
+      "name": "down0-1e-12-Z.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "down0-1e-12-source-audit.ndjson",
+      "bytes": 1326,
+      "sha256": "a77ec2168263e9a4c8c35fabf63fa50022959baf03c7902d99ab58843b88c3d3"
+    },
+    {
+      "name": "down0-1e-12-states.f64",
+      "bytes": 272,
+      "sha256": "79c7765b15647faff27bd5e55f4d2c1c03ac90d7c3d17f7b1d5cfcf4241388bc"
+    },
+    {
+      "name": "down0-1e-12-summary.json",
+      "bytes": 1493,
+      "sha256": "6642a61302ea7355c2ce42243e9540d2289fe54520b45b316244fc85641d9f9f"
+    },
+    {
+      "name": "downEnd--1e-12-B.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "downEnd--1e-12-C-decisions.ndjson",
+      "bytes": 461,
+      "sha256": "6e870ab8d1440d9b900980fc1bfc166e381a093472a521e5368843d16ff15966"
+    },
+    {
+      "name": "downEnd--1e-12-C.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "downEnd--1e-12-I.f64",
+      "bytes": 272,
+      "sha256": "317f0af15c49e33ec284f7f07e5e79d4ce4b10520c3ba9a45bc48f06402c7820"
+    },
+    {
+      "name": "downEnd--1e-12-M.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "downEnd--1e-12-Z-decisions.ndjson",
+      "bytes": 601,
+      "sha256": "9b1d4de7921acce96c2cfd1171fbe0b2c04a8060054eaad1a50c7087d757de49"
+    },
+    {
+      "name": "downEnd--1e-12-Z.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "downEnd--1e-12-source-audit.ndjson",
+      "bytes": 1777,
+      "sha256": "45200927e4b4fc5b99d1a8ece83975d88873119ebed6ddf904b515386e968a69"
+    },
+    {
+      "name": "downEnd--1e-12-states.f64",
+      "bytes": 272,
+      "sha256": "a9a194e83d6138e92b07bc833cc54adf802837e54c223d58ac4bb40a80f19f89"
+    },
+    {
+      "name": "downEnd--1e-12-summary.json",
+      "bytes": 1786,
+      "sha256": "ec093883a6126722cc17fe534d80a61606290a42d6cd393d4d1e6bccf8836d9d"
+    },
+    {
+      "name": "downEnd-0-B.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "downEnd-0-C-decisions.ndjson",
+      "bytes": 461,
+      "sha256": "57260d2326363ce153c5e5aa99832bb6c5902766d11b2bdb06a6eae2420017a9"
+    },
+    {
+      "name": "downEnd-0-C.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "downEnd-0-I.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "downEnd-0-M.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "downEnd-0-Z-decisions.ndjson",
+      "bytes": 601,
+      "sha256": "d1248f5da9b8c9395cc20a62ea43931888b0f3844c3f838751207590a33812e4"
+    },
+    {
+      "name": "downEnd-0-Z.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "downEnd-0-source-audit.ndjson",
+      "bytes": 1369,
+      "sha256": "4e7cd7d7ae1134cfadb2d717bf73ce2dedd2ce5c7239258407730f2fcfba6140"
+    },
+    {
+      "name": "downEnd-0-states.f64",
+      "bytes": 272,
+      "sha256": "4747feb2b6adf753cd2a3cbac52643f2d38d297dd81b425f5bb8889bca5fe884"
+    },
+    {
+      "name": "downEnd-0-summary.json",
+      "bytes": 1508,
+      "sha256": "e4dc2f368cb7f390f6d8b8e9fec8a3f5f2ea80b935bb94f99d2ba3c6a9b4f787"
+    },
+    {
+      "name": "downEnd-1e-12-B.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "downEnd-1e-12-C-decisions.ndjson",
+      "bytes": 460,
+      "sha256": "2d03f6a9108888dad8028736ff0fb0e2ebc3c31ae5e5dc19ccd719354b8eba60"
+    },
+    {
+      "name": "downEnd-1e-12-C.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "downEnd-1e-12-I.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "downEnd-1e-12-M.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "downEnd-1e-12-Z-decisions.ndjson",
+      "bytes": 600,
+      "sha256": "a67f8575e7b4f6d25db78fdcba31e544caf497fd5a0c2eb81effeb7a5979a76a"
+    },
+    {
+      "name": "downEnd-1e-12-Z.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "downEnd-1e-12-source-audit.ndjson",
+      "bytes": 1368,
+      "sha256": "0deba76d48ad326c1cc0c96c0db0ba486c6e1bd1e4b4fc5cc869308bd43a81db"
+    },
+    {
+      "name": "downEnd-1e-12-states.f64",
+      "bytes": 272,
+      "sha256": "d7641cd9f5538cc8c969888e0fbf8c75599c654bd1f7910227b6ce42f734ea40"
+    },
+    {
+      "name": "downEnd-1e-12-summary.json",
+      "bytes": 1512,
+      "sha256": "127eb6c15153f131e5adaf3d8127c68cf706c95b5dcbb4642b773b3062943cb9"
+    },
+    {
+      "name": "downFade2-B.f64",
+      "bytes": 272,
+      "sha256": "0955c7a0df5e4c76eb232fec6f5530ea8082c52593d31b1af4780f8b7bfd4388"
+    },
+    {
+      "name": "downFade2-C-decisions.ndjson",
+      "bytes": 418,
+      "sha256": "aab2c918c01c2c4d523555f9ad40e43c4220f397952ad4ef5ffc12818bb26b09"
+    },
+    {
+      "name": "downFade2-C.f64",
+      "bytes": 272,
+      "sha256": "0955c7a0df5e4c76eb232fec6f5530ea8082c52593d31b1af4780f8b7bfd4388"
+    },
+    {
+      "name": "downFade2-I.f64",
+      "bytes": 272,
+      "sha256": "0955c7a0df5e4c76eb232fec6f5530ea8082c52593d31b1af4780f8b7bfd4388"
+    },
+    {
+      "name": "downFade2-M.f64",
+      "bytes": 272,
+      "sha256": "0955c7a0df5e4c76eb232fec6f5530ea8082c52593d31b1af4780f8b7bfd4388"
+    },
+    {
+      "name": "downFade2-Z-decisions.ndjson",
+      "bytes": 558,
+      "sha256": "21f6b5ea384804470ad4ac343924e1fd99b06d47605a4235cd8db63ab6a1fcb4"
+    },
+    {
+      "name": "downFade2-Z.f64",
+      "bytes": 272,
+      "sha256": "0955c7a0df5e4c76eb232fec6f5530ea8082c52593d31b1af4780f8b7bfd4388"
+    },
+    {
+      "name": "downFade2-source-audit.ndjson",
+      "bytes": 1782,
+      "sha256": "e19b715c013a63b855bd5ecac01569e17d4d587b59c96368ee042e0d4063e069"
+    },
+    {
+      "name": "downFade2-states.f64",
+      "bytes": 272,
+      "sha256": "5548e466fe0da0156bfee2e2768e53ad042c908dada6c47132649a5a80524748"
+    },
+    {
+      "name": "downFade2-summary.json",
+      "bytes": 1491,
+      "sha256": "28c2b4b31f6cfbcb311481673bf4537c5e3ede110f6283040d86b70e39832bd8"
+    },
+    {
+      "name": "farStart--1e-12-B-domain.json",
+      "bytes": 225,
+      "sha256": "c019b4e207e807aea415e42e2d89f2a331a95b6d9a70bd906f6f4a2256f9c757"
+    },
+    {
+      "name": "farStart--1e-12-C-domain.json",
+      "bytes": 235,
+      "sha256": "041f7377f53fec7b1e28aa28d623276f4794bac48b3126928679cf355fe301cd"
+    },
+    {
+      "name": "farStart--1e-12-I-domain.json",
+      "bytes": 658,
+      "sha256": "c298ecabbcfabf61c3a602e023747926266a9d39e995f7e4d268d2db6dca8955"
+    },
+    {
+      "name": "farStart--1e-12-M-domain.json",
+      "bytes": 235,
+      "sha256": "484defbf0f8814f48feba703ded69adf3f5188b15f0ae0076da45faf20f153ff"
+    },
+    {
+      "name": "farStart--1e-12-Z-domain.json",
+      "bytes": 235,
+      "sha256": "3022a3a42b2aa092397c6cb5e0069677ffe3692ca972a9be47b60b85d46dd557"
+    },
+    {
+      "name": "farStart--1e-12-states.f64",
+      "bytes": 272,
+      "sha256": "87ab0b05b557788ddafa4b043b6b4c15e02e7ad1be39b7c1fe0e19cae5bb79ff"
+    },
+    {
+      "name": "farStart--1e-12-summary.json",
+      "bytes": 1171,
+      "sha256": "8a99037456125f92f733ec03d4afe9821286560204aacebc9bf2bec8df682480"
+    },
+    {
+      "name": "farStart-0-B.f64",
+      "bytes": 272,
+      "sha256": "c7a4e3179a52e3785ea726429eb883c40bfe0fe50440a2aab618fae199b54c1a"
+    },
+    {
+      "name": "farStart-0-C-decisions.ndjson",
+      "bytes": 418,
+      "sha256": "ae9ba2dcf3c8a63f119b300eacd5e56fcca17e74f9326043ce5e1a122620f61a"
+    },
+    {
+      "name": "farStart-0-C.f64",
+      "bytes": 272,
+      "sha256": "c7a4e3179a52e3785ea726429eb883c40bfe0fe50440a2aab618fae199b54c1a"
+    },
+    {
+      "name": "farStart-0-I.f64",
+      "bytes": 272,
+      "sha256": "c7a4e3179a52e3785ea726429eb883c40bfe0fe50440a2aab618fae199b54c1a"
+    },
+    {
+      "name": "farStart-0-M.f64",
+      "bytes": 272,
+      "sha256": "c7a4e3179a52e3785ea726429eb883c40bfe0fe50440a2aab618fae199b54c1a"
+    },
+    {
+      "name": "farStart-0-Z-decisions.ndjson",
+      "bytes": 558,
+      "sha256": "c70cd23a022e8c36a8515bcf4b18ed48de8f778807245932e70429533c5e0105"
+    },
+    {
+      "name": "farStart-0-Z.f64",
+      "bytes": 272,
+      "sha256": "c7a4e3179a52e3785ea726429eb883c40bfe0fe50440a2aab618fae199b54c1a"
+    },
+    {
+      "name": "farStart-0-source-audit.ndjson",
+      "bytes": 1782,
+      "sha256": "0ac1f7d8ddecd566f21f996656c76991fc477d18d944017b54bfcb488d4391d7"
+    },
+    {
+      "name": "farStart-0-states.f64",
+      "bytes": 272,
+      "sha256": "f1eeab396c26bed33e5dce4aa3577d45e04fc96086c7b142184c89566b65ae69"
+    },
+    {
+      "name": "farStart-0-summary.json",
+      "bytes": 1492,
+      "sha256": "d17be0caecfeb3535b34a6b6b3eb9853abf8d3d44b5103681499c55c0e4e2185"
+    },
+    {
+      "name": "farStart-1e-12-B.f64",
+      "bytes": 272,
+      "sha256": "661db2cd745f2a73978a9a6d524a648720189f87405600f3cd0d4946c2db8945"
+    },
+    {
+      "name": "farStart-1e-12-C-decisions.ndjson",
+      "bytes": 418,
+      "sha256": "ae9ba2dcf3c8a63f119b300eacd5e56fcca17e74f9326043ce5e1a122620f61a"
+    },
+    {
+      "name": "farStart-1e-12-C.f64",
+      "bytes": 272,
+      "sha256": "661db2cd745f2a73978a9a6d524a648720189f87405600f3cd0d4946c2db8945"
+    },
+    {
+      "name": "farStart-1e-12-I.f64",
+      "bytes": 272,
+      "sha256": "661db2cd745f2a73978a9a6d524a648720189f87405600f3cd0d4946c2db8945"
+    },
+    {
+      "name": "farStart-1e-12-M.f64",
+      "bytes": 272,
+      "sha256": "661db2cd745f2a73978a9a6d524a648720189f87405600f3cd0d4946c2db8945"
+    },
+    {
+      "name": "farStart-1e-12-Z-decisions.ndjson",
+      "bytes": 558,
+      "sha256": "c70cd23a022e8c36a8515bcf4b18ed48de8f778807245932e70429533c5e0105"
+    },
+    {
+      "name": "farStart-1e-12-Z.f64",
+      "bytes": 272,
+      "sha256": "661db2cd745f2a73978a9a6d524a648720189f87405600f3cd0d4946c2db8945"
+    },
+    {
+      "name": "farStart-1e-12-source-audit.ndjson",
+      "bytes": 1768,
+      "sha256": "8f4c41592fea9e8b508ab0baf8a9fa7e2b397d5d44688499a35713751acaf660"
+    },
+    {
+      "name": "farStart-1e-12-states.f64",
+      "bytes": 272,
+      "sha256": "f794c6eceb2041d5215f25f7673dcb8d9b30595da6a76457f1b58114265d6571"
+    },
+    {
+      "name": "farStart-1e-12-summary.json",
+      "bytes": 1496,
+      "sha256": "80daabad5e7b6b307e5823ec4a8a53236e8426613a4fa8a8a596712146982acc"
+    },
+    {
+      "name": "fresh1000-B.f64",
+      "bytes": 136000,
+      "sha256": "952af20be0a1312cd377fcd9ca9cd89039793e7fc573da0f3604d014c4fbe3f7"
+    },
+    {
+      "name": "fresh1000-C-decisions.ndjson",
+      "bytes": 461647,
+      "sha256": "3e95e229f7105136bdd8bb752c566e41362f5d511250a264063700f0892a3beb"
+    },
+    {
+      "name": "fresh1000-C.f64",
+      "bytes": 136000,
+      "sha256": "5bc87ecbd0c967177a394e7c147643a0b9e344f6b7fcd822a0ee47fcc070f5d7"
+    },
+    {
+      "name": "fresh1000-I.f64",
+      "bytes": 136000,
+      "sha256": "3de8b548aa5ce68f0427b765df98f4e794fdfb2c9a5ee1cc41b285de1dca2f5d"
+    },
+    {
+      "name": "fresh1000-M.f64",
+      "bytes": 136000,
+      "sha256": "952af20be0a1312cd377fcd9ca9cd89039793e7fc573da0f3604d014c4fbe3f7"
+    },
+    {
+      "name": "fresh1000-Z-decisions.ndjson",
+      "bytes": 532347,
+      "sha256": "c739dc8281c5c6f767a541185d5c8a4d808c96d968860536e7a7fb757ed422c5"
+    },
+    {
+      "name": "fresh1000-Z.f64",
+      "bytes": 136000,
+      "sha256": "952af20be0a1312cd377fcd9ca9cd89039793e7fc573da0f3604d014c4fbe3f7"
+    },
+    {
+      "name": "fresh1000-source-audit.ndjson",
+      "bytes": 1592601,
+      "sha256": "2a17a716376188fedc413332b5620588e85719c78803c76767cfd41ec9aa5cfa"
+    },
+    {
+      "name": "fresh1000-states.f64",
+      "bytes": 136000,
+      "sha256": "2bbd2ce8e7687eb33d1932beb2ed46cc7641706c2de15d9f8ee1e2abad5fc79e"
+    },
+    {
+      "name": "fresh1000-summary.json",
+      "bytes": 2853,
+      "sha256": "42ca352a14020b1190db9c8ac4a805733c011197e4ba70e12d77ac30b071bf93"
+    },
+    {
+      "name": "fresh5000-B.f64",
+      "bytes": 680000,
+      "sha256": "2873b02c171bf139f2043ccf893549518afbd926814990f11ec6cbf21b5b20f1"
+    },
+    {
+      "name": "fresh5000-C-decisions.ndjson",
+      "bytes": 2866233,
+      "sha256": "675aa1b58b3690c6dd795ef07a648cbc5f979d0d5e21d4d1d4011704c58cf569"
+    },
+    {
+      "name": "fresh5000-C.f64",
+      "bytes": 680000,
+      "sha256": "d269f40766b9e09242521ed23b40a9a82c8e68da24db4d7825dca1daae2b460f"
+    },
+    {
+      "name": "fresh5000-I.f64",
+      "bytes": 680000,
+      "sha256": "8aee6aa17b9818042e9334a597cbaae8e96e6f9605dd0bfbd7814395b0708f07"
+    },
+    {
+      "name": "fresh5000-M.f64",
+      "bytes": 680000,
+      "sha256": "2873b02c171bf139f2043ccf893549518afbd926814990f11ec6cbf21b5b20f1"
+    },
+    {
+      "name": "fresh5000-Z-decisions.ndjson",
+      "bytes": 3219747,
+      "sha256": "3ab85a6924165e05a25fcf9c7b95367b60db16d2e3cdc8c72f850b2bbec8b3b2"
+    },
+    {
+      "name": "fresh5000-Z.f64",
+      "bytes": 680000,
+      "sha256": "2873b02c171bf139f2043ccf893549518afbd926814990f11ec6cbf21b5b20f1"
+    },
+    {
+      "name": "fresh5000-source-audit.ndjson",
+      "bytes": 8147310,
+      "sha256": "70b12c1785aa5439d4fb4a29fa48075b763343af395bb627b330d598cd72e050"
+    },
+    {
+      "name": "fresh5000-states.f64",
+      "bytes": 680000,
+      "sha256": "7ba393893a4757e4d257b8c1495ba212a27d4be0aefd0fc67829bf0efd950900"
+    },
+    {
+      "name": "fresh5000-summary.json",
+      "bytes": 2892,
+      "sha256": "44ad8b29bfd703bb5152694a21c49aacac9741871e0a1d8d94e0f75b35896cea"
+    },
+    {
+      "name": "multipleWeak-B.f64",
+      "bytes": 680,
+      "sha256": "dd61bce7b9a93403cdae54653c62eac27fffd42182b371a7354e4205405421c8"
+    },
+    {
+      "name": "multipleWeak-C-decisions.ndjson",
+      "bytes": 1065,
+      "sha256": "09172210b38a694620d77e366a23c2462ba0580466a345f6d9126c2bfc9ca22e"
+    },
+    {
+      "name": "multipleWeak-C.f64",
+      "bytes": 680,
+      "sha256": "dd61bce7b9a93403cdae54653c62eac27fffd42182b371a7354e4205405421c8"
+    },
+    {
+      "name": "multipleWeak-I.f64",
+      "bytes": 680,
+      "sha256": "b7cc57a3a0246be7e496962c59235030811b72458541d3e66641971e1a8483e2"
+    },
+    {
+      "name": "multipleWeak-M.f64",
+      "bytes": 680,
+      "sha256": "dd61bce7b9a93403cdae54653c62eac27fffd42182b371a7354e4205405421c8"
+    },
+    {
+      "name": "multipleWeak-Z-decisions.ndjson",
+      "bytes": 1415,
+      "sha256": "5e424f4b1c0ef070c32ba0fe686512851df95eefa5d3fbc306b320336a8235e8"
+    },
+    {
+      "name": "multipleWeak-Z.f64",
+      "bytes": 680,
+      "sha256": "dd61bce7b9a93403cdae54653c62eac27fffd42182b371a7354e4205405421c8"
+    },
+    {
+      "name": "multipleWeak-source-audit.ndjson",
+      "bytes": 3861,
+      "sha256": "dd3d9d236a06c5091447f184a08ec58fc10c2b1b9da0cf9c7c40a3e81747bc9d"
+    },
+    {
+      "name": "multipleWeak-states.f64",
+      "bytes": 680,
+      "sha256": "49396087f867c65d32a250318997a182cdab49e6a78cebe73943354c436013b9"
+    },
+    {
+      "name": "multipleWeak-summary.json",
+      "bytes": 2220,
+      "sha256": "2dd49a386eb60a0f80c000f5a462b9703867dfc436750d06b728b72c6207d456"
+    },
+    {
+      "name": "nearRadius--1e-12-B-domain.json",
+      "bytes": 206,
+      "sha256": "2e3dbb310e34654db6ea1f17d1ffd5b6fa701265e6d544747c7ddd8b117bd4ac"
+    },
+    {
+      "name": "nearRadius--1e-12-C-domain.json",
+      "bytes": 216,
+      "sha256": "2911677cd2c3c5f6748f6e3dea94afdc271732e8537f00b01ecf22b6a78b2749"
+    },
+    {
+      "name": "nearRadius--1e-12-I-domain.json",
+      "bytes": 645,
+      "sha256": "14626e9511b37832ab9a634396272c5c292f6e14491ead0c0fea2e5f6f8aad7e"
+    },
+    {
+      "name": "nearRadius--1e-12-M-domain.json",
+      "bytes": 213,
+      "sha256": "5bbe77fe81a6b0bc43ef1dedce23efea527d19d9b0233302ee5be90b014c6ad5"
+    },
+    {
+      "name": "nearRadius--1e-12-Z-domain.json",
+      "bytes": 216,
+      "sha256": "ae49165266692e5a3510110bc964598e245928fbc58a79d621122d062d82da0d"
+    },
+    {
+      "name": "nearRadius--1e-12-states.f64",
+      "bytes": 272,
+      "sha256": "a22192343aed9569824a6f1301de5b74803cfc1cba20eb08a20b6feec71f76e3"
+    },
+    {
+      "name": "nearRadius--1e-12-summary.json",
+      "bytes": 1074,
+      "sha256": "04f697c53b5dd69203c64c72f574ec47fda51476c80f7cee9193ead3d024c824"
+    },
+    {
+      "name": "nearRadius-0-B.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "nearRadius-0-C-decisions.ndjson",
+      "bytes": 418,
+      "sha256": "ae9ba2dcf3c8a63f119b300eacd5e56fcca17e74f9326043ce5e1a122620f61a"
+    },
+    {
+      "name": "nearRadius-0-C.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "nearRadius-0-I.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "nearRadius-0-M.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "nearRadius-0-Z-decisions.ndjson",
+      "bytes": 558,
+      "sha256": "c70cd23a022e8c36a8515bcf4b18ed48de8f778807245932e70429533c5e0105"
+    },
+    {
+      "name": "nearRadius-0-Z.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "nearRadius-0-source-audit.ndjson",
+      "bytes": 1326,
+      "sha256": "5f81f9a11707c6999bfe76557ce776d33cb0c75b48c56ee979fdf8a23c2b3f79"
+    },
+    {
+      "name": "nearRadius-0-states.f64",
+      "bytes": 272,
+      "sha256": "f0b016631a7363b43022a225fa6c92b19f42fae2856eb5185f332e5ed277865e"
+    },
+    {
+      "name": "nearRadius-0-summary.json",
+      "bytes": 1498,
+      "sha256": "cd1aede4c566cfd62ce8dbb472e422396b4a3709a64a181f12ad597a058cda88"
+    },
+    {
+      "name": "nearRadius-1e-12-B.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "nearRadius-1e-12-C-decisions.ndjson",
+      "bytes": 418,
+      "sha256": "ae9ba2dcf3c8a63f119b300eacd5e56fcca17e74f9326043ce5e1a122620f61a"
+    },
+    {
+      "name": "nearRadius-1e-12-C.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "nearRadius-1e-12-I.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "nearRadius-1e-12-M.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "nearRadius-1e-12-Z-decisions.ndjson",
+      "bytes": 558,
+      "sha256": "c70cd23a022e8c36a8515bcf4b18ed48de8f778807245932e70429533c5e0105"
+    },
+    {
+      "name": "nearRadius-1e-12-Z.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "nearRadius-1e-12-source-audit.ndjson",
+      "bytes": 1326,
+      "sha256": "5f81f9a11707c6999bfe76557ce776d33cb0c75b48c56ee979fdf8a23c2b3f79"
+    },
+    {
+      "name": "nearRadius-1e-12-states.f64",
+      "bytes": 272,
+      "sha256": "fe9cf22410dde48b5abc42c54ee1ac2a495296e5980179701d7477f23eb399f3"
+    },
+    {
+      "name": "nearRadius-1e-12-summary.json",
+      "bytes": 1498,
+      "sha256": "98938f8b9af004387e5adf0a9487e546ab0f67c1a0dd4e8ef7fa0c1a750ef79e"
+    },
+    {
+      "name": "normDefect-B.f64",
+      "bytes": 272,
+      "sha256": "6bd63cd93cf96c2745070acb5856e67a1c90e1f39ffafdb3e8702c8cf6cca7fb"
+    },
+    {
+      "name": "normDefect-C-decisions.ndjson",
+      "bytes": 418,
+      "sha256": "2de210bda1ee66f099c64535ce8691b0b19f9371aeacf469e70d9145e72ad80a"
+    },
+    {
+      "name": "normDefect-C.f64",
+      "bytes": 272,
+      "sha256": "6bd63cd93cf96c2745070acb5856e67a1c90e1f39ffafdb3e8702c8cf6cca7fb"
+    },
+    {
+      "name": "normDefect-I.f64",
+      "bytes": 272,
+      "sha256": "4bd14a30226b53848e72b9013ab493efd50a32f986f117d59e685aea8953b1a4"
+    },
+    {
+      "name": "normDefect-M.f64",
+      "bytes": 272,
+      "sha256": "6bd63cd93cf96c2745070acb5856e67a1c90e1f39ffafdb3e8702c8cf6cca7fb"
+    },
+    {
+      "name": "normDefect-Z-decisions.ndjson",
+      "bytes": 558,
+      "sha256": "2312f8a8e3a4f790c984d3841ce4a77c3478e64ff642a4f2c6f763c4a4a9f2ee"
+    },
+    {
+      "name": "normDefect-Z.f64",
+      "bytes": 272,
+      "sha256": "6bd63cd93cf96c2745070acb5856e67a1c90e1f39ffafdb3e8702c8cf6cca7fb"
+    },
+    {
+      "name": "normDefect-source-audit.ndjson",
+      "bytes": 1378,
+      "sha256": "383d03edbe07dd073665048b9823415e2375a56e35647880101ccd1aff4b6f7a"
+    },
+    {
+      "name": "normDefect-states.f64",
+      "bytes": 272,
+      "sha256": "05ade70a77f924c09cc2b0397fc5e69a0cc5100e8bdc16e85b9a16bef5d82ac5"
+    },
+    {
+      "name": "normDefect-summary.json",
+      "bytes": 1572,
+      "sha256": "2d986b98be76826e400422b4b9e1ed865f1f1b8e96784e08c339ed99ec841a05"
+    },
+    {
+      "name": "performance.json",
+      "bytes": 4210,
+      "sha256": "4a5f0f73193e4816a12df9591d1f1a0e80f97c12f523038ce2cca3e5fd97524c"
+    },
+    {
+      "name": "radial-2-B.f64",
+      "bytes": 272,
+      "sha256": "72634cefafea345ed4e7426c98ae72b950e9798e3677b6c58c9ffc542633a6ea"
+    },
+    {
+      "name": "radial-2-C-decisions.ndjson",
+      "bytes": 418,
+      "sha256": "aab2c918c01c2c4d523555f9ad40e43c4220f397952ad4ef5ffc12818bb26b09"
+    },
+    {
+      "name": "radial-2-C.f64",
+      "bytes": 272,
+      "sha256": "72634cefafea345ed4e7426c98ae72b950e9798e3677b6c58c9ffc542633a6ea"
+    },
+    {
+      "name": "radial-2-I.f64",
+      "bytes": 272,
+      "sha256": "e7625e009e86dc21e3f5a02c396abf87971a3c0cd47001382ee00009899cec1a"
+    },
+    {
+      "name": "radial-2-M.f64",
+      "bytes": 272,
+      "sha256": "72634cefafea345ed4e7426c98ae72b950e9798e3677b6c58c9ffc542633a6ea"
+    },
+    {
+      "name": "radial-2-Z-decisions.ndjson",
+      "bytes": 558,
+      "sha256": "21f6b5ea384804470ad4ac343924e1fd99b06d47605a4235cd8db63ab6a1fcb4"
+    },
+    {
+      "name": "radial-2-Z.f64",
+      "bytes": 272,
+      "sha256": "72634cefafea345ed4e7426c98ae72b950e9798e3677b6c58c9ffc542633a6ea"
+    },
+    {
+      "name": "radial-2-source-audit.ndjson",
+      "bytes": 1929,
+      "sha256": "6b1ebf723033320af39f718823cc60438ab169b544c0a40277f2b2418f31c464"
+    },
+    {
+      "name": "radial-2-states.f64",
+      "bytes": 272,
+      "sha256": "c2ecb7ce9f7bd96161a2f573e64208e3e6686766b83129e086d2b9169b03fffc"
+    },
+    {
+      "name": "radial-2-summary.json",
+      "bytes": 1937,
+      "sha256": "2ba480e48b42aaad4bdb08a842c61f478ca70e9d8f955be20c57b4918695c2d6"
+    },
+    {
+      "name": "radial-3-B.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "radial-3-C-decisions.ndjson",
+      "bytes": 460,
+      "sha256": "d15499b7c6fbfdd0bd5a4d2187d5fca1a3a4f3785513c2d25dc2d8e2b6064d27"
+    },
+    {
+      "name": "radial-3-C.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "radial-3-I.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "radial-3-M.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "radial-3-Z-decisions.ndjson",
+      "bytes": 600,
+      "sha256": "9f5f532419e85be7506377173955e0d21c0d4adc74df421b18b28e9a8842a6dc"
+    },
+    {
+      "name": "radial-3-Z.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "radial-3-source-audit.ndjson",
+      "bytes": 1369,
+      "sha256": "f78237cd36b65453d4ada275c994111c9dfba51f50fc2de89892855d051aea9b"
+    },
+    {
+      "name": "radial-3-states.f64",
+      "bytes": 272,
+      "sha256": "1926ebfd8b0afbedba4dd9f2470e82adb567e8d06b9eec03300104abbfbbb363"
+    },
+    {
+      "name": "radial-3-summary.json",
+      "bytes": 1507,
+      "sha256": "7e89a5d289ed78c6d3d985b070a7ba5da1bb5683ba103c4d70a2762e2ad754cc"
+    },
+    {
+      "name": "result.json",
+      "bytes": 176059,
+      "sha256": "54ffdc78fbea1bc206adf8c0d0572c225f940172d61ba4ac71900671ba7056fd"
+    },
+    {
+      "name": "scalar-checks.json",
+      "bytes": 51,
+      "sha256": "9f2f8c7bb675ddb7b42dc24d0c96cce76a53cd9b3aafa0f39f59514ceaf4cc2a"
+    },
+    {
+      "name": "signedMoment-B.f64",
+      "bytes": 408,
+      "sha256": "fbfdc156d08ed41cc8922ef325be56e028f77490c70168a31d0e393cffce4040"
+    },
+    {
+      "name": "signedMoment-C-decisions.ndjson",
+      "bytes": 627,
+      "sha256": "e378105f2fdba983e006da18b4bb4b04a5f207011c242e7577d0ce773b9d937b"
+    },
+    {
+      "name": "signedMoment-C.f64",
+      "bytes": 408,
+      "sha256": "fbfdc156d08ed41cc8922ef325be56e028f77490c70168a31d0e393cffce4040"
+    },
+    {
+      "name": "signedMoment-I.f64",
+      "bytes": 408,
+      "sha256": "4051850c65560e49150eac6c7df32924c41857455f65b4fcb2a514ac6d2fdfd2"
+    },
+    {
+      "name": "signedMoment-M.f64",
+      "bytes": 408,
+      "sha256": "fbfdc156d08ed41cc8922ef325be56e028f77490c70168a31d0e393cffce4040"
+    },
+    {
+      "name": "signedMoment-Z-decisions.ndjson",
+      "bytes": 837,
+      "sha256": "9db88cc9a11ce781f8a12e79f2ef31cff6d36ecce2c5651381d5392d956d005f"
+    },
+    {
+      "name": "signedMoment-Z.f64",
+      "bytes": 408,
+      "sha256": "fbfdc156d08ed41cc8922ef325be56e028f77490c70168a31d0e393cffce4040"
+    },
+    {
+      "name": "signedMoment-source-audit.ndjson",
+      "bytes": 2575,
+      "sha256": "dfab609acf451fffdfa43b980d7ae17c1a29450d149a65c4faf53ec3813fe38f"
+    },
+    {
+      "name": "signedMoment-states.f64",
+      "bytes": 408,
+      "sha256": "c08ffcdc097e91abbf7d5950b4d45e0f75567e502c0abe002447bc66f40655bd"
+    },
+    {
+      "name": "signedMoment-summary.json",
+      "bytes": 2042,
+      "sha256": "c4822e89ffb273c49ae3925dd7a82f95c350f467c1b87d061f9d3864ded04653"
+    },
+    {
+      "name": "started.json",
+      "bytes": 3364,
+      "sha256": "458ed84e3e31d7b10fec19a8e7e2a89ed7404af1a0b49a5989cc638a7fc09594"
+    },
+    {
+      "name": "tiltRejected-B-domain.json",
+      "bytes": 216,
+      "sha256": "d3edfe89c2d0b30ef696ab2caa94dc16a73357b95b7fd5db41a8f4bb6cabeca8"
+    },
+    {
+      "name": "tiltRejected-C-domain.json",
+      "bytes": 216,
+      "sha256": "49784a28cd22aa8312f0e750909831e70226f3920f44fd39108a636690919127"
+    },
+    {
+      "name": "tiltRejected-I-domain.json",
+      "bytes": 409,
+      "sha256": "5db9c89c29b771a8345a5b9595c8eb1d52c5881dc9c33199770caa9dcf076578"
+    },
+    {
+      "name": "tiltRejected-M-domain.json",
+      "bytes": 216,
+      "sha256": "72074e3785a035bad82ba4b3c731397d7fa620de31337c94528165429b599b28"
+    },
+    {
+      "name": "tiltRejected-Z-domain.json",
+      "bytes": 216,
+      "sha256": "0a8364219d5f2ad94b64ce573e12de0089639a315c9730771cf5739ab77289dd"
+    },
+    {
+      "name": "tiltRejected-states.f64",
+      "bytes": 272,
+      "sha256": "456740f1435d8f8581b866730a5e71c539213d327735fc409dda3cd97c8c8665"
+    },
+    {
+      "name": "tiltRejected-summary.json",
+      "bytes": 768,
+      "sha256": "27dec0e377b17406ca1986d472fb0414fcf0398633b9ea1f37d9c831aff88365"
+    },
+    {
+      "name": "timing-validations.ndjson",
+      "bytes": 3888,
+      "sha256": "66884a57101f55e1a53a0b95643aa4c47eabb5bc49dac3e38c056d676fe4a4c3"
+    },
+    {
+      "name": "timings.ndjson",
+      "bytes": 31291,
+      "sha256": "2d6b403967d8a0a704f96f8f3c317cb987bf08a54f0c38ed66bf21299d632af0"
+    }
+  ],
+  "cases": [
+    {
+      "id": "center3--1e-12",
+      "kind": "fixture",
+      "expected": "valid",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 2,
+        "M": 2,
+        "Z": 2,
+        "C": 2,
+        "I": 2
+      },
+      "decisionRows": 2,
+      "ZshadowDecisionRows": 2,
+      "auditRows": 2,
+      "decisionCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 2,
+        "positiveOmissions": 0,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0
+      },
+      "ZactualCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 2,
+        "positiveOmissions": 0,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0,
+        "profileEvaluations": 0,
+        "actualPositiveOmissions": 0
+      },
+      "ZshadowCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 2,
+        "positiveOmissions": 0,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0,
+        "profileEvaluations": 0
+      },
+      "ZselectedSourceWork": {
+        "rotorVisits": 0,
+        "profileEvaluations": 0
+      },
+      "bitwiseZvsM": {
+        "differingComponents": 0,
+        "totalComponents": 34
+      },
+      "recomputedErrors": {
+        "inflow": 0.0,
+        "rotor": 0.0,
+        "thrust": 0.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "worldForce": 0.0,
+        "worldMoment": 0.0,
+        "usedCapacity": 0.0
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "M": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Z": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "center3-0",
+      "kind": "fixture",
+      "expected": "valid",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 2,
+        "M": 2,
+        "Z": 2,
+        "C": 2,
+        "I": 2
+      },
+      "decisionRows": 2,
+      "ZshadowDecisionRows": 2,
+      "auditRows": 2,
+      "decisionCounts": {
+        "candidates": 0,
+        "boundAttempts": 0,
+        "zeroCulls": 0,
+        "positiveOmissions": 0,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0
+      },
+      "ZactualCounts": {
+        "candidates": 0,
+        "boundAttempts": 0,
+        "zeroCulls": 0,
+        "positiveOmissions": 0,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0,
+        "profileEvaluations": 0,
+        "actualPositiveOmissions": 0
+      },
+      "ZshadowCounts": {
+        "candidates": 0,
+        "boundAttempts": 0,
+        "zeroCulls": 0,
+        "positiveOmissions": 0,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0,
+        "profileEvaluations": 0
+      },
+      "ZselectedSourceWork": {
+        "rotorVisits": 0,
+        "profileEvaluations": 0
+      },
+      "bitwiseZvsM": {
+        "differingComponents": 0,
+        "totalComponents": 34
+      },
+      "recomputedErrors": {
+        "inflow": 0.0,
+        "rotor": 0.0,
+        "thrust": 0.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "worldForce": 0.0,
+        "worldMoment": 0.0,
+        "usedCapacity": 0.0
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "M": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Z": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "center3-1e-12",
+      "kind": "fixture",
+      "expected": "valid",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 2,
+        "M": 2,
+        "Z": 2,
+        "C": 2,
+        "I": 2
+      },
+      "decisionRows": 2,
+      "ZshadowDecisionRows": 2,
+      "auditRows": 2,
+      "decisionCounts": {
+        "candidates": 0,
+        "boundAttempts": 0,
+        "zeroCulls": 0,
+        "positiveOmissions": 0,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0
+      },
+      "ZactualCounts": {
+        "candidates": 0,
+        "boundAttempts": 0,
+        "zeroCulls": 0,
+        "positiveOmissions": 0,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0,
+        "profileEvaluations": 0,
+        "actualPositiveOmissions": 0
+      },
+      "ZshadowCounts": {
+        "candidates": 0,
+        "boundAttempts": 0,
+        "zeroCulls": 0,
+        "positiveOmissions": 0,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0,
+        "profileEvaluations": 0
+      },
+      "ZselectedSourceWork": {
+        "rotorVisits": 0,
+        "profileEvaluations": 0
+      },
+      "bitwiseZvsM": {
+        "differingComponents": 0,
+        "totalComponents": 34
+      },
+      "recomputedErrors": {
+        "inflow": 0.0,
+        "rotor": 0.0,
+        "thrust": 0.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "worldForce": 0.0,
+        "worldMoment": 0.0,
+        "usedCapacity": 0.0
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "M": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Z": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "down0--1e-12",
+      "kind": "fixture",
+      "expected": "valid",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 2,
+        "M": 2,
+        "Z": 2,
+        "C": 2,
+        "I": 2
+      },
+      "decisionRows": 2,
+      "ZshadowDecisionRows": 2,
+      "auditRows": 2,
+      "decisionCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 2,
+        "positiveOmissions": 0,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0
+      },
+      "ZactualCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 2,
+        "positiveOmissions": 0,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0,
+        "profileEvaluations": 0,
+        "actualPositiveOmissions": 0
+      },
+      "ZshadowCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 2,
+        "positiveOmissions": 0,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0,
+        "profileEvaluations": 0
+      },
+      "ZselectedSourceWork": {
+        "rotorVisits": 0,
+        "profileEvaluations": 0
+      },
+      "bitwiseZvsM": {
+        "differingComponents": 0,
+        "totalComponents": 34
+      },
+      "recomputedErrors": {
+        "inflow": 0.0,
+        "rotor": 0.0,
+        "thrust": 0.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "worldForce": 0.0,
+        "worldMoment": 0.0,
+        "usedCapacity": 0.0
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "M": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Z": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "down0-0",
+      "kind": "fixture",
+      "expected": "valid",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 2,
+        "M": 2,
+        "Z": 2,
+        "C": 2,
+        "I": 2
+      },
+      "decisionRows": 2,
+      "ZshadowDecisionRows": 2,
+      "auditRows": 2,
+      "decisionCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 2,
+        "positiveOmissions": 0,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0
+      },
+      "ZactualCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 2,
+        "positiveOmissions": 0,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0,
+        "profileEvaluations": 0,
+        "actualPositiveOmissions": 0
+      },
+      "ZshadowCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 2,
+        "positiveOmissions": 0,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0,
+        "profileEvaluations": 0
+      },
+      "ZselectedSourceWork": {
+        "rotorVisits": 0,
+        "profileEvaluations": 0
+      },
+      "bitwiseZvsM": {
+        "differingComponents": 0,
+        "totalComponents": 34
+      },
+      "recomputedErrors": {
+        "inflow": 0.0,
+        "rotor": 0.0,
+        "thrust": 0.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "worldForce": 0.0,
+        "worldMoment": 0.0,
+        "usedCapacity": 0.0
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "M": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Z": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "down0-1e-12",
+      "kind": "fixture",
+      "expected": "valid",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 2,
+        "M": 2,
+        "Z": 2,
+        "C": 2,
+        "I": 2
+      },
+      "decisionRows": 2,
+      "ZshadowDecisionRows": 2,
+      "auditRows": 2,
+      "decisionCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 2,
+        "positiveOmissions": 0,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0
+      },
+      "ZactualCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 2,
+        "positiveOmissions": 0,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0,
+        "profileEvaluations": 0,
+        "actualPositiveOmissions": 0
+      },
+      "ZshadowCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 2,
+        "positiveOmissions": 0,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0,
+        "profileEvaluations": 0
+      },
+      "ZselectedSourceWork": {
+        "rotorVisits": 0,
+        "profileEvaluations": 0
+      },
+      "bitwiseZvsM": {
+        "differingComponents": 0,
+        "totalComponents": 34
+      },
+      "recomputedErrors": {
+        "inflow": 0.0,
+        "rotor": 0.0,
+        "thrust": 0.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "worldForce": 0.0,
+        "worldMoment": 0.0,
+        "usedCapacity": 0.0
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "M": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Z": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "farStart--1e-12",
+      "kind": "fixture",
+      "expected": "reject",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": true,
+      "outputRows": {},
+      "decisionRows": 0,
+      "ZshadowDecisionRows": 0,
+      "auditRows": 0,
+      "decisionCounts": {},
+      "ZactualCounts": null,
+      "ZshadowCounts": null,
+      "ZselectedSourceWork": null,
+      "bitwiseZvsM": null,
+      "recomputedErrors": null,
+      "fullComparisonMaxima": {}
+    },
+    {
+      "id": "farStart-0",
+      "kind": "fixture",
+      "expected": "valid",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 2,
+        "M": 2,
+        "Z": 2,
+        "C": 2,
+        "I": 2
+      },
+      "decisionRows": 2,
+      "ZshadowDecisionRows": 2,
+      "auditRows": 2,
+      "decisionCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 0,
+        "retained": 1,
+        "nearFallbacks": 1,
+        "rotorVisits": 4
+      },
+      "ZactualCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 0,
+        "retained": 1,
+        "nearFallbacks": 1,
+        "rotorVisits": 4,
+        "profileEvaluations": 4,
+        "actualPositiveOmissions": 0
+      },
+      "ZshadowCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 0,
+        "retained": 1,
+        "nearFallbacks": 1,
+        "rotorVisits": 4,
+        "profileEvaluations": 4
+      },
+      "ZselectedSourceWork": {
+        "rotorVisits": 0,
+        "profileEvaluations": 0
+      },
+      "bitwiseZvsM": {
+        "differingComponents": 0,
+        "totalComponents": 34
+      },
+      "recomputedErrors": {
+        "inflow": 0.0,
+        "rotor": 0.0,
+        "thrust": 0.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "worldForce": 0.0,
+        "worldMoment": 0.0,
+        "usedCapacity": 0.0
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "M": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Z": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "farStart-1e-12",
+      "kind": "fixture",
+      "expected": "valid",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 2,
+        "M": 2,
+        "Z": 2,
+        "C": 2,
+        "I": 2
+      },
+      "decisionRows": 2,
+      "ZshadowDecisionRows": 2,
+      "auditRows": 2,
+      "decisionCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 0,
+        "retained": 1,
+        "nearFallbacks": 1,
+        "rotorVisits": 4
+      },
+      "ZactualCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 0,
+        "retained": 1,
+        "nearFallbacks": 1,
+        "rotorVisits": 4,
+        "profileEvaluations": 4,
+        "actualPositiveOmissions": 0
+      },
+      "ZshadowCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 0,
+        "retained": 1,
+        "nearFallbacks": 1,
+        "rotorVisits": 4,
+        "profileEvaluations": 4
+      },
+      "ZselectedSourceWork": {
+        "rotorVisits": 0,
+        "profileEvaluations": 0
+      },
+      "bitwiseZvsM": {
+        "differingComponents": 0,
+        "totalComponents": 34
+      },
+      "recomputedErrors": {
+        "inflow": 0.0,
+        "rotor": 0.0,
+        "thrust": 0.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "worldForce": 0.0,
+        "worldMoment": 0.0,
+        "usedCapacity": 0.0
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "M": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Z": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "downEnd--1e-12",
+      "kind": "fixture",
+      "expected": "valid",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 2,
+        "M": 2,
+        "Z": 2,
+        "C": 2,
+        "I": 2
+      },
+      "decisionRows": 2,
+      "ZshadowDecisionRows": 2,
+      "auditRows": 2,
+      "decisionCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 1,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0
+      },
+      "ZactualCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 0,
+        "retained": 1,
+        "nearFallbacks": 0,
+        "rotorVisits": 4,
+        "profileEvaluations": 4,
+        "actualPositiveOmissions": 0
+      },
+      "ZshadowCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 1,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0,
+        "profileEvaluations": 0
+      },
+      "ZselectedSourceWork": {
+        "rotorVisits": 4,
+        "profileEvaluations": 4
+      },
+      "bitwiseZvsM": {
+        "differingComponents": 0,
+        "totalComponents": 34
+      },
+      "recomputedErrors": {
+        "inflow": 1.2765686823417747e-23,
+        "rotor": 0.0,
+        "thrust": 0.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "worldForce": 0.0,
+        "worldMoment": 0.0,
+        "usedCapacity": 0.5757235352751585
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          1.2765686823417747e-23,
+          1.2765686823417747e-23,
+          1.2765686823417747e-23,
+          1.2765686823417747e-23,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "M": [
+          1.2765686823417747e-23,
+          1.2765686823417747e-23,
+          1.2765686823417747e-23,
+          1.2765686823417747e-23,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Z": [
+          1.2765686823417747e-23,
+          1.2765686823417747e-23,
+          1.2765686823417747e-23,
+          1.2765686823417747e-23,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "downEnd-0",
+      "kind": "fixture",
+      "expected": "valid",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 2,
+        "M": 2,
+        "Z": 2,
+        "C": 2,
+        "I": 2
+      },
+      "decisionRows": 2,
+      "ZshadowDecisionRows": 2,
+      "auditRows": 2,
+      "decisionCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 1,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0
+      },
+      "ZactualCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 0,
+        "retained": 1,
+        "nearFallbacks": 0,
+        "rotorVisits": 4,
+        "profileEvaluations": 0,
+        "actualPositiveOmissions": 0
+      },
+      "ZshadowCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 1,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0,
+        "profileEvaluations": 0
+      },
+      "ZselectedSourceWork": {
+        "rotorVisits": 4,
+        "profileEvaluations": 0
+      },
+      "bitwiseZvsM": {
+        "differingComponents": 0,
+        "totalComponents": 34
+      },
+      "recomputedErrors": {
+        "inflow": 0.0,
+        "rotor": 0.0,
+        "thrust": 0.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "worldForce": 0.0,
+        "worldMoment": 0.0,
+        "usedCapacity": 0.5757235352466936
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "M": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Z": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "downEnd-1e-12",
+      "kind": "fixture",
+      "expected": "valid",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 2,
+        "M": 2,
+        "Z": 2,
+        "C": 2,
+        "I": 2
+      },
+      "decisionRows": 2,
+      "ZshadowDecisionRows": 2,
+      "auditRows": 2,
+      "decisionCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 1,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0
+      },
+      "ZactualCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 0,
+        "retained": 1,
+        "nearFallbacks": 0,
+        "rotorVisits": 4,
+        "profileEvaluations": 0,
+        "actualPositiveOmissions": 0
+      },
+      "ZshadowCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 1,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0,
+        "profileEvaluations": 0
+      },
+      "ZselectedSourceWork": {
+        "rotorVisits": 4,
+        "profileEvaluations": 0
+      },
+      "bitwiseZvsM": {
+        "differingComponents": 0,
+        "totalComponents": 34
+      },
+      "recomputedErrors": {
+        "inflow": 0.0,
+        "rotor": 0.0,
+        "thrust": 0.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "worldForce": 0.0,
+        "worldMoment": 0.0,
+        "usedCapacity": 0.5757235352182255
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "M": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Z": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "nearRadius--1e-12",
+      "kind": "fixture",
+      "expected": "reject",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": true,
+      "outputRows": {},
+      "decisionRows": 0,
+      "ZshadowDecisionRows": 0,
+      "auditRows": 0,
+      "decisionCounts": {},
+      "ZactualCounts": null,
+      "ZshadowCounts": null,
+      "ZselectedSourceWork": null,
+      "bitwiseZvsM": null,
+      "recomputedErrors": null,
+      "fullComparisonMaxima": {}
+    },
+    {
+      "id": "nearRadius-0",
+      "kind": "fixture",
+      "expected": "agreement",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 2,
+        "M": 2,
+        "Z": 2,
+        "C": 2,
+        "I": 2
+      },
+      "decisionRows": 2,
+      "ZshadowDecisionRows": 2,
+      "auditRows": 2,
+      "decisionCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 0,
+        "retained": 1,
+        "nearFallbacks": 1,
+        "rotorVisits": 4
+      },
+      "ZactualCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 0,
+        "retained": 1,
+        "nearFallbacks": 1,
+        "rotorVisits": 4,
+        "profileEvaluations": 0,
+        "actualPositiveOmissions": 0
+      },
+      "ZshadowCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 0,
+        "retained": 1,
+        "nearFallbacks": 1,
+        "rotorVisits": 4,
+        "profileEvaluations": 0
+      },
+      "ZselectedSourceWork": {
+        "rotorVisits": 0,
+        "profileEvaluations": 0
+      },
+      "bitwiseZvsM": {
+        "differingComponents": 0,
+        "totalComponents": 34
+      },
+      "recomputedErrors": {
+        "inflow": 0.0,
+        "rotor": 0.0,
+        "thrust": 0.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "worldForce": 0.0,
+        "worldMoment": 0.0,
+        "usedCapacity": 0.0
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "M": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Z": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "nearRadius-1e-12",
+      "kind": "fixture",
+      "expected": "valid",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 2,
+        "M": 2,
+        "Z": 2,
+        "C": 2,
+        "I": 2
+      },
+      "decisionRows": 2,
+      "ZshadowDecisionRows": 2,
+      "auditRows": 2,
+      "decisionCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 0,
+        "retained": 1,
+        "nearFallbacks": 1,
+        "rotorVisits": 4
+      },
+      "ZactualCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 0,
+        "retained": 1,
+        "nearFallbacks": 1,
+        "rotorVisits": 4,
+        "profileEvaluations": 0,
+        "actualPositiveOmissions": 0
+      },
+      "ZshadowCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 0,
+        "retained": 1,
+        "nearFallbacks": 1,
+        "rotorVisits": 4,
+        "profileEvaluations": 0
+      },
+      "ZselectedSourceWork": {
+        "rotorVisits": 0,
+        "profileEvaluations": 0
+      },
+      "bitwiseZvsM": {
+        "differingComponents": 0,
+        "totalComponents": 34
+      },
+      "recomputedErrors": {
+        "inflow": 0.0,
+        "rotor": 0.0,
+        "thrust": 0.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "worldForce": 0.0,
+        "worldMoment": 0.0,
+        "usedCapacity": 0.0
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "M": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Z": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "radial-2",
+      "kind": "fixture",
+      "expected": "valid",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 2,
+        "M": 2,
+        "Z": 2,
+        "C": 2,
+        "I": 2
+      },
+      "decisionRows": 2,
+      "ZshadowDecisionRows": 2,
+      "auditRows": 2,
+      "decisionCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 0,
+        "retained": 1,
+        "nearFallbacks": 0,
+        "rotorVisits": 4
+      },
+      "ZactualCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 0,
+        "retained": 1,
+        "nearFallbacks": 0,
+        "rotorVisits": 4,
+        "profileEvaluations": 4,
+        "actualPositiveOmissions": 0
+      },
+      "ZshadowCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 0,
+        "retained": 1,
+        "nearFallbacks": 0,
+        "rotorVisits": 4,
+        "profileEvaluations": 4
+      },
+      "ZselectedSourceWork": {
+        "rotorVisits": 0,
+        "profileEvaluations": 0
+      },
+      "bitwiseZvsM": {
+        "differingComponents": 0,
+        "totalComponents": 34
+      },
+      "recomputedErrors": {
+        "inflow": 0.0,
+        "rotor": 1.3877787807814457e-17,
+        "thrust": 0.0,
+        "roll": 9.105604182983729e-19,
+        "pitch": 6.911788849595091e-19,
+        "worldForce": 0.0,
+        "worldMoment": 1.143174757587648e-18,
+        "usedCapacity": 0.0
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.3877787807814457e-17,
+          0.0,
+          1.3877787807814457e-17,
+          0.0,
+          9.105604182983729e-19,
+          6.911788849595091e-19,
+          0.0,
+          0.0,
+          0.0,
+          9.105604182983729e-19,
+          6.911788849595091e-19,
+          0.0
+        ],
+        "M": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.3877787807814457e-17,
+          0.0,
+          1.3877787807814457e-17,
+          0.0,
+          9.105604182983729e-19,
+          6.911788849595091e-19,
+          0.0,
+          0.0,
+          0.0,
+          9.105604182983729e-19,
+          6.911788849595091e-19,
+          0.0
+        ],
+        "Z": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.3877787807814457e-17,
+          0.0,
+          1.3877787807814457e-17,
+          0.0,
+          9.105604182983729e-19,
+          6.911788849595091e-19,
+          0.0,
+          0.0,
+          0.0,
+          9.105604182983729e-19,
+          6.911788849595091e-19,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "radial-3",
+      "kind": "fixture",
+      "expected": "valid",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 2,
+        "M": 2,
+        "Z": 2,
+        "C": 2,
+        "I": 2
+      },
+      "decisionRows": 2,
+      "ZshadowDecisionRows": 2,
+      "auditRows": 2,
+      "decisionCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 1,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0
+      },
+      "ZactualCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 0,
+        "retained": 1,
+        "nearFallbacks": 0,
+        "rotorVisits": 4,
+        "profileEvaluations": 0,
+        "actualPositiveOmissions": 0
+      },
+      "ZshadowCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 1,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0,
+        "profileEvaluations": 0
+      },
+      "ZselectedSourceWork": {
+        "rotorVisits": 4,
+        "profileEvaluations": 0
+      },
+      "bitwiseZvsM": {
+        "differingComponents": 0,
+        "totalComponents": 34
+      },
+      "recomputedErrors": {
+        "inflow": 0.0,
+        "rotor": 0.0,
+        "thrust": 0.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "worldForce": 0.0,
+        "worldMoment": 0.0,
+        "usedCapacity": 0.2760015787707456
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "M": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Z": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "downFade2",
+      "kind": "fixture",
+      "expected": "valid",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 2,
+        "M": 2,
+        "Z": 2,
+        "C": 2,
+        "I": 2
+      },
+      "decisionRows": 2,
+      "ZshadowDecisionRows": 2,
+      "auditRows": 2,
+      "decisionCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 0,
+        "retained": 1,
+        "nearFallbacks": 0,
+        "rotorVisits": 4
+      },
+      "ZactualCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 0,
+        "retained": 1,
+        "nearFallbacks": 0,
+        "rotorVisits": 4,
+        "profileEvaluations": 4,
+        "actualPositiveOmissions": 0
+      },
+      "ZshadowCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 0,
+        "retained": 1,
+        "nearFallbacks": 0,
+        "rotorVisits": 4,
+        "profileEvaluations": 4
+      },
+      "ZselectedSourceWork": {
+        "rotorVisits": 0,
+        "profileEvaluations": 0
+      },
+      "bitwiseZvsM": {
+        "differingComponents": 0,
+        "totalComponents": 34
+      },
+      "recomputedErrors": {
+        "inflow": 0.0,
+        "rotor": 0.0,
+        "thrust": 0.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "worldForce": 0.0,
+        "worldMoment": 0.0,
+        "usedCapacity": 0.0
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "M": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Z": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "centerInferenceInvalid",
+      "kind": "fixture",
+      "expected": "reject",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": true,
+      "outputRows": {},
+      "decisionRows": 0,
+      "ZshadowDecisionRows": 0,
+      "auditRows": 0,
+      "decisionCounts": {},
+      "ZactualCounts": null,
+      "ZshadowCounts": null,
+      "ZselectedSourceWork": null,
+      "bitwiseZvsM": null,
+      "recomputedErrors": null,
+      "fullComparisonMaxima": {}
+    },
+    {
+      "id": "combinedTiltYaw",
+      "kind": "fixture",
+      "expected": "valid",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 2,
+        "M": 2,
+        "Z": 2,
+        "C": 2,
+        "I": 2
+      },
+      "decisionRows": 2,
+      "ZshadowDecisionRows": 2,
+      "auditRows": 2,
+      "decisionCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 2,
+        "positiveOmissions": 0,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0
+      },
+      "ZactualCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 2,
+        "positiveOmissions": 0,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0,
+        "profileEvaluations": 0,
+        "actualPositiveOmissions": 0
+      },
+      "ZshadowCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 2,
+        "positiveOmissions": 0,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0,
+        "profileEvaluations": 0
+      },
+      "ZselectedSourceWork": {
+        "rotorVisits": 0,
+        "profileEvaluations": 0
+      },
+      "bitwiseZvsM": {
+        "differingComponents": 0,
+        "totalComponents": 34
+      },
+      "recomputedErrors": {
+        "inflow": 0.0,
+        "rotor": 0.0,
+        "thrust": 0.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "worldForce": 3.469446951953614e-18,
+        "worldMoment": 0.0,
+        "usedCapacity": 0.0
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          3.469446951953614e-18,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "M": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          3.469446951953614e-18,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Z": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          3.469446951953614e-18,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "normDefect",
+      "kind": "fixture",
+      "expected": "valid",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 2,
+        "M": 2,
+        "Z": 2,
+        "C": 2,
+        "I": 2
+      },
+      "decisionRows": 2,
+      "ZshadowDecisionRows": 2,
+      "auditRows": 2,
+      "decisionCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 2,
+        "positiveOmissions": 0,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0
+      },
+      "ZactualCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 2,
+        "positiveOmissions": 0,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0,
+        "profileEvaluations": 0,
+        "actualPositiveOmissions": 0
+      },
+      "ZshadowCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 2,
+        "positiveOmissions": 0,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0,
+        "profileEvaluations": 0
+      },
+      "ZselectedSourceWork": {
+        "rotorVisits": 0,
+        "profileEvaluations": 0
+      },
+      "bitwiseZvsM": {
+        "differingComponents": 0,
+        "totalComponents": 34
+      },
+      "recomputedErrors": {
+        "inflow": 0.0,
+        "rotor": 0.0,
+        "thrust": 0.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "worldForce": 4.336808689942018e-19,
+        "worldMoment": 0.0,
+        "usedCapacity": 0.0
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          4.336808689942018e-19,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "M": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          4.336808689942018e-19,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Z": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          4.336808689942018e-19,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "tiltRejected",
+      "kind": "fixture",
+      "expected": "reject",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": true,
+      "outputRows": {},
+      "decisionRows": 0,
+      "ZshadowDecisionRows": 0,
+      "auditRows": 0,
+      "decisionCounts": {},
+      "ZactualCounts": null,
+      "ZshadowCounts": null,
+      "ZselectedSourceWork": null,
+      "bitwiseZvsM": null,
+      "recomputedErrors": null,
+      "fullComparisonMaxima": {}
+    },
+    {
+      "id": "multipleWeak",
+      "kind": "fixture",
+      "expected": "valid",
+      "count": 5,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 5,
+        "M": 5,
+        "Z": 5,
+        "C": 5,
+        "I": 5
+      },
+      "decisionRows": 5,
+      "ZshadowDecisionRows": 5,
+      "auditRows": 5,
+      "decisionCounts": {
+        "candidates": 20,
+        "boundAttempts": 20,
+        "zeroCulls": 16,
+        "positiveOmissions": 0,
+        "retained": 4,
+        "nearFallbacks": 0,
+        "rotorVisits": 16
+      },
+      "ZactualCounts": {
+        "candidates": 20,
+        "boundAttempts": 20,
+        "zeroCulls": 16,
+        "positiveOmissions": 0,
+        "retained": 4,
+        "nearFallbacks": 0,
+        "rotorVisits": 16,
+        "profileEvaluations": 8,
+        "actualPositiveOmissions": 0
+      },
+      "ZshadowCounts": {
+        "candidates": 20,
+        "boundAttempts": 20,
+        "zeroCulls": 16,
+        "positiveOmissions": 0,
+        "retained": 4,
+        "nearFallbacks": 0,
+        "rotorVisits": 16,
+        "profileEvaluations": 8
+      },
+      "ZselectedSourceWork": {
+        "rotorVisits": 0,
+        "profileEvaluations": 0
+      },
+      "bitwiseZvsM": {
+        "differingComponents": 0,
+        "totalComponents": 85
+      },
+      "recomputedErrors": {
+        "inflow": 1.3877787807814457e-17,
+        "rotor": 1.3877787807814457e-17,
+        "thrust": 5.551115123125783e-17,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "worldForce": 5.551115123125783e-17,
+        "worldMoment": 0.0,
+        "usedCapacity": 0.0
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          1.3877787807814457e-17,
+          1.3877787807814457e-17,
+          1.3877787807814457e-17,
+          1.3877787807814457e-17,
+          1.3877787807814457e-17,
+          1.3877787807814457e-17,
+          1.3877787807814457e-17,
+          1.3877787807814457e-17,
+          5.551115123125783e-17,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          5.551115123125783e-17,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "M": [
+          1.3877787807814457e-17,
+          1.3877787807814457e-17,
+          1.3877787807814457e-17,
+          1.3877787807814457e-17,
+          1.3877787807814457e-17,
+          1.3877787807814457e-17,
+          1.3877787807814457e-17,
+          1.3877787807814457e-17,
+          5.551115123125783e-17,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          5.551115123125783e-17,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Z": [
+          1.3877787807814457e-17,
+          1.3877787807814457e-17,
+          1.3877787807814457e-17,
+          1.3877787807814457e-17,
+          1.3877787807814457e-17,
+          1.3877787807814457e-17,
+          1.3877787807814457e-17,
+          1.3877787807814457e-17,
+          5.551115123125783e-17,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          5.551115123125783e-17,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "signedMoment",
+      "kind": "fixture",
+      "expected": "valid",
+      "count": 3,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 3,
+        "M": 3,
+        "Z": 3,
+        "C": 3,
+        "I": 3
+      },
+      "decisionRows": 3,
+      "ZshadowDecisionRows": 3,
+      "auditRows": 3,
+      "decisionCounts": {
+        "candidates": 6,
+        "boundAttempts": 6,
+        "zeroCulls": 4,
+        "positiveOmissions": 0,
+        "retained": 2,
+        "nearFallbacks": 0,
+        "rotorVisits": 8
+      },
+      "ZactualCounts": {
+        "candidates": 6,
+        "boundAttempts": 6,
+        "zeroCulls": 4,
+        "positiveOmissions": 0,
+        "retained": 2,
+        "nearFallbacks": 0,
+        "rotorVisits": 8,
+        "profileEvaluations": 7,
+        "actualPositiveOmissions": 0
+      },
+      "ZshadowCounts": {
+        "candidates": 6,
+        "boundAttempts": 6,
+        "zeroCulls": 4,
+        "positiveOmissions": 0,
+        "retained": 2,
+        "nearFallbacks": 0,
+        "rotorVisits": 8,
+        "profileEvaluations": 7
+      },
+      "ZselectedSourceWork": {
+        "rotorVisits": 0,
+        "profileEvaluations": 0
+      },
+      "bitwiseZvsM": {
+        "differingComponents": 0,
+        "totalComponents": 51
+      },
+      "recomputedErrors": {
+        "inflow": 2.7755575615628914e-17,
+        "rotor": 1.3877787807814457e-17,
+        "thrust": 0.0,
+        "roll": 4.1674021004911577e-19,
+        "pitch": 3.5236570605778894e-19,
+        "worldForce": 0.0,
+        "worldMoment": 5.457416911666043e-19,
+        "usedCapacity": 0.0
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          0.0,
+          2.7755575615628914e-17,
+          1.3877787807814457e-17,
+          0.0,
+          0.0,
+          1.3877787807814457e-17,
+          0.0,
+          0.0,
+          0.0,
+          4.1674021004911577e-19,
+          3.5236570605778894e-19,
+          0.0,
+          0.0,
+          0.0,
+          4.1674021004911577e-19,
+          3.5236570605778894e-19,
+          0.0
+        ],
+        "M": [
+          0.0,
+          2.7755575615628914e-17,
+          1.3877787807814457e-17,
+          0.0,
+          0.0,
+          1.3877787807814457e-17,
+          0.0,
+          0.0,
+          0.0,
+          4.1674021004911577e-19,
+          3.5236570605778894e-19,
+          0.0,
+          0.0,
+          0.0,
+          4.1674021004911577e-19,
+          3.5236570605778894e-19,
+          0.0
+        ],
+        "Z": [
+          0.0,
+          2.7755575615628914e-17,
+          1.3877787807814457e-17,
+          0.0,
+          0.0,
+          1.3877787807814457e-17,
+          0.0,
+          0.0,
+          0.0,
+          4.1674021004911577e-19,
+          3.5236570605778894e-19,
+          0.0,
+          0.0,
+          0.0,
+          4.1674021004911577e-19,
+          3.5236570605778894e-19,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "fresh1000",
+      "kind": "fresh",
+      "expected": "valid",
+      "count": 1000,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 1000,
+        "M": 1000,
+        "Z": 1000,
+        "C": 1000,
+        "I": 1000
+      },
+      "decisionRows": 1000,
+      "ZshadowDecisionRows": 1000,
+      "auditRows": 1000,
+      "decisionCounts": {
+        "candidates": 706766,
+        "boundAttempts": 706766,
+        "zeroCulls": 683632,
+        "positiveOmissions": 4931,
+        "retained": 18203,
+        "nearFallbacks": 0,
+        "rotorVisits": 72812
+      },
+      "ZactualCounts": {
+        "candidates": 706766,
+        "boundAttempts": 706766,
+        "zeroCulls": 683632,
+        "positiveOmissions": 0,
+        "retained": 23134,
+        "nearFallbacks": 0,
+        "rotorVisits": 92536,
+        "profileEvaluations": 66790,
+        "actualPositiveOmissions": 0
+      },
+      "ZshadowCounts": {
+        "candidates": 706766,
+        "boundAttempts": 706766,
+        "zeroCulls": 683632,
+        "positiveOmissions": 4931,
+        "retained": 18203,
+        "nearFallbacks": 0,
+        "rotorVisits": 72812,
+        "profileEvaluations": 62474
+      },
+      "ZselectedSourceWork": {
+        "rotorVisits": 19724,
+        "profileEvaluations": 4316
+      },
+      "bitwiseZvsM": {
+        "differingComponents": 0,
+        "totalComponents": 17000
+      },
+      "recomputedErrors": {
+        "inflow": 0.025844768607864665,
+        "rotor": 9.985207554676079e-05,
+        "thrust": 0.00013573041844167077,
+        "roll": 2.655429852628204e-06,
+        "pitch": 3.500683954555078e-06,
+        "worldForce": 0.0001357304184416497,
+        "worldMoment": 3.958897543306962e-06,
+        "usedCapacity": 0.9999965176899885
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          1.1546319456101628e-14,
+          1.3322676295501878e-14,
+          1.4210854715202004e-14,
+          2.042810365310288e-14,
+          4.163336342344337e-17,
+          6.245004513516506e-17,
+          5.551115123125783e-17,
+          6.938893903907228e-17,
+          8.326672684688674e-17,
+          2.439454888092385e-18,
+          2.8731357570865868e-18,
+          1.3877787807814457e-17,
+          6.938893903907228e-18,
+          8.326672684688674e-17,
+          2.439454888092385e-18,
+          2.927345865710862e-18,
+          4.336808689942018e-19
+        ],
+        "M": [
+          1.1546319456101628e-14,
+          1.3322676295501878e-14,
+          1.4210854715202004e-14,
+          2.042810365310288e-14,
+          4.163336342344337e-17,
+          6.245004513516506e-17,
+          5.551115123125783e-17,
+          6.938893903907228e-17,
+          8.326672684688674e-17,
+          2.439454888092385e-18,
+          2.8731357570865868e-18,
+          1.3877787807814457e-17,
+          6.938893903907228e-18,
+          8.326672684688674e-17,
+          2.439454888092385e-18,
+          2.927345865710862e-18,
+          4.336808689942018e-19
+        ],
+        "Z": [
+          1.1546319456101628e-14,
+          1.3322676295501878e-14,
+          1.4210854715202004e-14,
+          2.042810365310288e-14,
+          4.163336342344337e-17,
+          6.245004513516506e-17,
+          5.551115123125783e-17,
+          6.938893903907228e-17,
+          8.326672684688674e-17,
+          2.439454888092385e-18,
+          2.8731357570865868e-18,
+          1.3877787807814457e-17,
+          6.938893903907228e-18,
+          8.326672684688674e-17,
+          2.439454888092385e-18,
+          2.927345865710862e-18,
+          4.336808689942018e-19
+        ]
+      }
+    },
+    {
+      "id": "fresh5000",
+      "kind": "fresh",
+      "expected": "valid",
+      "count": 5000,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 5000,
+        "M": 5000,
+        "Z": 5000,
+        "C": 5000,
+        "I": 5000
+      },
+      "decisionRows": 5000,
+      "ZshadowDecisionRows": 5000,
+      "auditRows": 5000,
+      "decisionCounts": {
+        "candidates": 6614514,
+        "boundAttempts": 6614514,
+        "zeroCulls": 6488884,
+        "positiveOmissions": 26463,
+        "retained": 99167,
+        "nearFallbacks": 0,
+        "rotorVisits": 396668
+      },
+      "ZactualCounts": {
+        "candidates": 6614514,
+        "boundAttempts": 6614514,
+        "zeroCulls": 6488884,
+        "positiveOmissions": 0,
+        "retained": 125630,
+        "nearFallbacks": 0,
+        "rotorVisits": 502520,
+        "profileEvaluations": 360756,
+        "actualPositiveOmissions": 0
+      },
+      "ZshadowCounts": {
+        "candidates": 6614514,
+        "boundAttempts": 6614514,
+        "zeroCulls": 6488884,
+        "positiveOmissions": 26463,
+        "retained": 99167,
+        "nearFallbacks": 0,
+        "rotorVisits": 396668,
+        "profileEvaluations": 337951
+      },
+      "ZselectedSourceWork": {
+        "rotorVisits": 105852,
+        "profileEvaluations": 22805
+      },
+      "bitwiseZvsM": {
+        "differingComponents": 0,
+        "totalComponents": 85000
+      },
+      "recomputedErrors": {
+        "inflow": 0.02652329975489387,
+        "rotor": 9.825107924457677e-05,
+        "thrust": 0.000135753501473046,
+        "roll": 2.809915842182792e-06,
+        "pitch": 3.7467002556263265e-06,
+        "worldForce": 0.00013575350147305277,
+        "worldMoment": 3.9048803981232746e-06,
+        "usedCapacity": 0.999998394967478
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          3.730349362740526e-14,
+          3.197442310920451e-14,
+          3.108624468950438e-14,
+          2.6645352591003757e-14,
+          1.0061396160665481e-16,
+          9.020562075079397e-17,
+          1.1102230246251565e-16,
+          9.71445146547012e-17,
+          1.6653345369377348e-16,
+          6.288372600415926e-18,
+          5.719166459861036e-18,
+          2.7755575615628914e-17,
+          2.0816681711721685e-17,
+          1.6653345369377348e-16,
+          7.887570804832045e-18,
+          6.288372600415926e-18,
+          1.5212711732687234e-18
+        ],
+        "M": [
+          3.730349362740526e-14,
+          3.197442310920451e-14,
+          3.108624468950438e-14,
+          2.6645352591003757e-14,
+          1.0061396160665481e-16,
+          9.020562075079397e-17,
+          1.1102230246251565e-16,
+          9.71445146547012e-17,
+          1.6653345369377348e-16,
+          6.288372600415926e-18,
+          5.719166459861036e-18,
+          2.7755575615628914e-17,
+          2.0816681711721685e-17,
+          1.6653345369377348e-16,
+          7.887570804832045e-18,
+          6.288372600415926e-18,
+          1.5212711732687234e-18
+        ],
+        "Z": [
+          3.730349362740526e-14,
+          3.197442310920451e-14,
+          3.108624468950438e-14,
+          2.6645352591003757e-14,
+          1.0061396160665481e-16,
+          9.020562075079397e-17,
+          1.1102230246251565e-16,
+          9.71445146547012e-17,
+          1.6653345369377348e-16,
+          6.288372600415926e-18,
+          5.719166459861036e-18,
+          2.7755575615628914e-17,
+          2.0816681711721685e-17,
+          1.6653345369377348e-16,
+          7.887570804832045e-18,
+          6.288372600415926e-18,
+          1.5212711732687234e-18
+        ]
+      }
+    }
+  ],
+  "partialTails": [],
+  "limitations": [
+    "A passing saved review of a failed campaign confirms retained evidence consistency; it does not turn the scientific failure into a passing qualification.",
+    "The generated poses are hash-checked and decoded only for finite layout and prescribed placeholders/motors. No generator, quaternion norm, rotation, geometry or domain predicate is recomputed.",
+    "Fresh successful source-audit rows retain all four terms only for positive omissions. Exact-zero term checks and full-code digests are recorded runtime assertions; absent complete vectors/zero doubles are not regenerated.",
+    "C does not retain fallback source IDs or retained-positive source bound values; their equality is not an empirical offline gate.",
+    "New output rows omit axes. Body wrench arithmetic and saved world-vector discrepancies are checked, but world rotations cannot be independently reconstructed without forbidden geometry.",
+    "Successful timed query output matrices are not retained. Checksums/counters/times and recorded pass assertions can be reconciled, not every repeated output component reconstructed.",
+    "C/Z compares complete implementations including Z reporting overhead and changed receiver-law work; M/Z measures the zero-screen package including bound/selection/mask overhead. Positive envelopes need not have positive realized terms.",
+    "Eight paired blocks are technical repeats of two fixed same-family inputs, not independent swarm draws or a confidence interval.",
+    "Runtime logical-check count and unavailable partial-call actual instruction counts remain recorded evidence; attempted-call shape counters are independently reconstructed exactly.",
+    "Engineering numerical allowances and finite synthetic cases do not establish a universal rounding certificate, physical validity, flight safety, trajectory qualification or algorithmic novelty."
+  ],
+  "scientificStatus": "completed",
+  "unlistedRawFiles": [
+    {
+      "name": "result.json",
+      "bytes": 176059,
+      "sha256": "54ffdc78fbea1bc206adf8c0d0572c225f940172d61ba4ac71900671ba7056fd"
+    }
+  ],
+  "targetsAndAllowances": {
+    "targets": {
+      "thrust": 0.0013243500000000002,
+      "roll": 1.0488316895441329e-05,
+      "pitch": 1.0488316895441329e-05
+    },
+    "allowances": {
+      "geometry": 1e-12,
+      "boundRelative": 1e-12,
+      "boundAbsolute": 1e-12,
+      "rotor": 1e-12,
+      "inflowAudit": 1e-11
+    },
+    "L": 0.005473321384225967,
+    "Bcap": 0.0342189610265993
+  },
+  "operationAccounting": {
+    "fieldCalls": 202,
+    "independentCenterShape": 25994070,
+    "boundAttemptShape": 519880140,
+    "rotorVisitShape": 4263017400,
+    "receiverCalls": 985040,
+    "integrationSteps": 0
+  },
+  "recordedRuntimeLogicalChecks": 34017127,
+  "timingSummaries": {
+    "fresh1000": {
+      "B": {
+        "warmupSeconds": [
+          0.152558
+        ],
+        "measuredSeconds": [
+          0.145614583,
+          0.147141292,
+          0.145927,
+          0.147244209,
+          0.148244292,
+          0.154433333,
+          0.146851416,
+          0.148748792
+        ],
+        "measuredCount": 8,
+        "minimum": 0.145614583,
+        "maximum": 0.154433333,
+        "median": 0.1471927505
+      },
+      "M": {
+        "warmupSeconds": [
+          0.114365166
+        ],
+        "measuredSeconds": [
+          0.10662875,
+          0.10906625,
+          0.106002375,
+          0.113116625,
+          0.113914625,
+          0.104836417,
+          0.105377084,
+          0.104252041
+        ],
+        "measuredCount": 8,
+        "minimum": 0.104252041,
+        "maximum": 0.113914625,
+        "median": 0.10631556249999999
+      },
+      "C": {
+        "warmupSeconds": [
+          0.08925175
+        ],
+        "measuredSeconds": [
+          0.086893625,
+          0.085033458,
+          0.084714792,
+          0.08473325,
+          0.08387775,
+          0.087385041,
+          0.083937958,
+          0.086897041
+        ],
+        "measuredCount": 8,
+        "minimum": 0.08387775,
+        "maximum": 0.087385041,
+        "median": 0.084883354
+      },
+      "Z": {
+        "warmupSeconds": [
+          0.087735708
+        ],
+        "measuredSeconds": [
+          0.085703125,
+          0.084285292,
+          0.084675458,
+          0.084130375,
+          0.086261584,
+          0.084001291,
+          0.09562575,
+          0.096280458
+        ],
+        "measuredCount": 8,
+        "minimum": 0.084001291,
+        "maximum": 0.096280458,
+        "median": 0.0851892915
+      },
+      "interpretation": "C/Z includes matched shadow selection plus Z reporting and changed receiver workload; M/Z is the zero-screen package. Technical repetitions are not independent swarm samples."
+    },
+    "fresh5000": {
+      "B": {
+        "warmupSeconds": [
+          1.733464583
+        ],
+        "measuredSeconds": [
+          1.731812083,
+          1.730163084,
+          1.727717875,
+          1.742296375,
+          1.703813209,
+          1.737137542,
+          1.738402,
+          1.711556458
+        ],
+        "measuredCount": 8,
+        "minimum": 1.703813209,
+        "maximum": 1.742296375,
+        "median": 1.7309875835
+      },
+      "M": {
+        "warmupSeconds": [
+          1.296994625
+        ],
+        "measuredSeconds": [
+          1.398923916,
+          1.315699583,
+          1.3246225,
+          1.310586833,
+          1.332703375,
+          1.319613292,
+          1.306173833,
+          1.336927834
+        ],
+        "measuredCount": 8,
+        "minimum": 1.306173833,
+        "maximum": 1.398923916,
+        "median": 1.322117896
+      },
+      "C": {
+        "warmupSeconds": [
+          1.244387625
+        ],
+        "measuredSeconds": [
+          1.081051083,
+          1.088605583,
+          1.070215875,
+          1.089235,
+          1.079132042,
+          1.074093458,
+          1.065919958,
+          1.199513458
+        ],
+        "measuredCount": 8,
+        "minimum": 1.065919958,
+        "maximum": 1.199513458,
+        "median": 1.0800915624999998
+      },
+      "Z": {
+        "warmupSeconds": [
+          1.210062833
+        ],
+        "measuredSeconds": [
+          1.088487209,
+          1.087298542,
+          1.087419375,
+          1.206751208,
+          1.08593175,
+          1.066173542,
+          1.082693625,
+          1.186768291
+        ],
+        "measuredCount": 8,
+        "minimum": 1.066173542,
+        "maximum": 1.206751208,
+        "median": 1.0873589585
+      },
+      "interpretation": "C/Z includes matched shadow selection plus Z reporting and changed receiver workload; M/Z is the zero-screen package. Technical repetitions are not independent swarm samples."
+    }
+  },
+  "performance": {
+    "byCase": {
+      "fresh1000": {
+        "blocks": [
+          {
+            "rep": 1,
+            "B": 0.145614583,
+            "M": 0.10662875,
+            "Z": 0.085703125,
+            "C": 0.086893625,
+            "C_over_Z": 1.0138909753874201,
+            "M_minus_C": 0.019735124999999992,
+            "M_minus_Z": 0.02092562499999999,
+            "Z_minus_C": -0.0011904999999999971
+          },
+          {
+            "rep": 2,
+            "B": 0.147141292,
+            "M": 0.10906625,
+            "Z": 0.084285292,
+            "C": 0.085033458,
+            "C_over_Z": 1.0088765902359336,
+            "M_minus_C": 0.024032791999999997,
+            "M_minus_Z": 0.024780958000000006,
+            "Z_minus_C": -0.0007481660000000084
+          },
+          {
+            "rep": 3,
+            "B": 0.145927,
+            "M": 0.106002375,
+            "Z": 0.084675458,
+            "C": 0.084714792,
+            "C_over_Z": 1.0004645265691978,
+            "M_minus_C": 0.021287583,
+            "M_minus_Z": 0.021326917,
+            "Z_minus_C": -3.933400000000198e-05
+          },
+          {
+            "rep": 4,
+            "B": 0.147244209,
+            "M": 0.113116625,
+            "Z": 0.084130375,
+            "C": 0.08473325,
+            "C_over_Z": 1.0071659611644428,
+            "M_minus_C": 0.028383375000000002,
+            "M_minus_Z": 0.028986250000000005,
+            "Z_minus_C": -0.0006028750000000027
+          },
+          {
+            "rep": 5,
+            "B": 0.148244292,
+            "M": 0.113914625,
+            "Z": 0.086261584,
+            "C": 0.08387775,
+            "C_over_Z": 0.9723650565007014,
+            "M_minus_C": 0.030036875000000005,
+            "M_minus_Z": 0.027653041000000003,
+            "Z_minus_C": 0.0023838340000000013
+          },
+          {
+            "rep": 6,
+            "B": 0.154433333,
+            "M": 0.104836417,
+            "Z": 0.084001291,
+            "C": 0.087385041,
+            "C_over_Z": 1.040282118997433,
+            "M_minus_C": 0.017451376000000005,
+            "M_minus_Z": 0.020835125999999995,
+            "Z_minus_C": -0.003383749999999991
+          },
+          {
+            "rep": 7,
+            "B": 0.146851416,
+            "M": 0.105377084,
+            "Z": 0.09562575,
+            "C": 0.083937958,
+            "C_over_Z": 0.8777756828051021,
+            "M_minus_C": 0.021439126000000003,
+            "M_minus_Z": 0.009751334,
+            "Z_minus_C": 0.011687792000000002
+          },
+          {
+            "rep": 8,
+            "B": 0.148748792,
+            "M": 0.104252041,
+            "Z": 0.096280458,
+            "C": 0.086897041,
+            "C_over_Z": 0.9025407938960988,
+            "M_minus_C": 0.01735500000000001,
+            "M_minus_Z": 0.007971583000000004,
+            "Z_minus_C": 0.009383417000000005
+          }
+        ],
+        "sums": {
+          "B": 1.184204917,
+          "M": 0.8631941670000001,
+          "Z": 0.7009633329999999,
+          "C": 0.683472915
+        },
+        "medianPairedCOverZ": 1.0038152438668204,
+        "CFasterBlocks": 3,
+        "H1": false,
+        "aggregateNetSavings": 0.1797212520000001,
+        "aggregateZeroPackageSavings": 0.16223083400000016,
+        "aggregatePositiveOmissionSavings": 0.017490417999999952,
+        "aggregateZeroShare": 0.90268030182652,
+        "H2": true,
+        "identityResidual": 0.0,
+        "scope": "Descriptive paired technical blocks, no confidence interval or population claim"
+      },
+      "fresh5000": {
+        "blocks": [
+          {
+            "rep": 1,
+            "B": 1.731812083,
+            "M": 1.398923916,
+            "Z": 1.088487209,
+            "C": 1.081051083,
+            "C_over_Z": 0.9931683845813571,
+            "M_minus_C": 0.317872833,
+            "M_minus_Z": 0.31043670700000003,
+            "Z_minus_C": 0.007436125999999987
+          },
+          {
+            "rep": 2,
+            "B": 1.730163084,
+            "M": 1.315699583,
+            "Z": 1.087298542,
+            "C": 1.088605583,
+            "C_over_Z": 1.0012020994690158,
+            "M_minus_C": 0.2270939999999999,
+            "M_minus_Z": 0.22840104099999992,
+            "Z_minus_C": -0.0013070410000000088
+          },
+          {
+            "rep": 3,
+            "B": 1.727717875,
+            "M": 1.3246225,
+            "Z": 1.087419375,
+            "C": 1.070215875,
+            "C_over_Z": 0.9841795167572767,
+            "M_minus_C": 0.2544066250000001,
+            "M_minus_Z": 0.23720312499999996,
+            "Z_minus_C": 0.01720350000000015
+          },
+          {
+            "rep": 4,
+            "B": 1.742296375,
+            "M": 1.310586833,
+            "Z": 1.206751208,
+            "C": 1.089235,
+            "C_over_Z": 0.9026177001349228,
+            "M_minus_C": 0.22135183299999994,
+            "M_minus_Z": 0.10383562499999988,
+            "Z_minus_C": 0.11751620800000007
+          },
+          {
+            "rep": 5,
+            "B": 1.703813209,
+            "M": 1.332703375,
+            "Z": 1.08593175,
+            "C": 1.079132042,
+            "C_over_Z": 0.9937383652333582,
+            "M_minus_C": 0.253571333,
+            "M_minus_Z": 0.24677162499999983,
+            "Z_minus_C": 0.006799708000000182
+          },
+          {
+            "rep": 6,
+            "B": 1.737137542,
+            "M": 1.319613292,
+            "Z": 1.066173542,
+            "C": 1.074093458,
+            "C_over_Z": 1.0074283554112056,
+            "M_minus_C": 0.24551983400000021,
+            "M_minus_Z": 0.2534397500000001,
+            "Z_minus_C": -0.00791991599999986
+          },
+          {
+            "rep": 7,
+            "B": 1.738402,
+            "M": 1.306173833,
+            "Z": 1.082693625,
+            "C": 1.065919958,
+            "C_over_Z": 0.9845074667360306,
+            "M_minus_C": 0.24025387499999984,
+            "M_minus_Z": 0.2234802079999998,
+            "Z_minus_C": 0.016773667000000048
+          },
+          {
+            "rep": 8,
+            "B": 1.711556458,
+            "M": 1.336927834,
+            "Z": 1.186768291,
+            "C": 1.199513458,
+            "C_over_Z": 1.0107393895646308,
+            "M_minus_C": 0.13741437599999995,
+            "M_minus_Z": 0.150159543,
+            "Z_minus_C": -0.012745167000000057
+          }
+        ],
+        "sums": {
+          "B": 13.822898626,
+          "M": 10.645251166000001,
+          "Z": 8.891523542000002,
+          "C": 8.747766456999999
+        },
+        "medianPairedCOverZ": 0.9934533749073577,
+        "CFasterBlocks": 5,
+        "H1": false,
+        "aggregateNetSavings": 1.8974847090000022,
+        "aggregateZeroPackageSavings": 1.7537276239999997,
+        "aggregatePositiveOmissionSavings": 0.1437570850000025,
+        "aggregateZeroShare": 0.9242380798547967,
+        "H2": true,
+        "identityResidual": 0.0,
+        "scope": "Descriptive paired technical blocks, no confidence interval or population claim"
+      }
+    },
+    "H1BothFreshCases": false,
+    "H2BothFreshCases": true
+  },
+  "performanceQualified": true,
+  "performanceInterpretation": "H1/H2 are descriptive prespecified cost criteria separate from correctness; unmet criteria are valid negative results. Incomplete science cannot qualify a primary performance claim.",
+  "retainedCoverage": {
+    "savedStateRows": 6052,
+    "outputRows": 30220,
+    "decisionRows": 6044,
+    "ZshadowDecisionRows": 6044,
+    "positiveRealizedSelectedSources": 15404,
+    "zeroRealizedSelectedSources": 15994,
+    "independentSelectedProfileCodes": 27125,
+    "auditRows": 6044,
+    "retainedPositiveSourceTermTuples": 31398,
+    "recordedZeroTermChecks": 28690232
+  },
+  "budgetAndInventory": {
+    "rawFiles": 254,
+    "rawBytes": 22074354,
+    "supervisor": {
+      "id": "sole-ablation",
+      "exitCode": 0,
+      "wallSeconds": 59.989628333,
+      "childCPUSeconds": 60.930308000000004,
+      "cumulativeChildMaxRSSPlatformUnits": 419610624,
+      "stop": null,
+      "completeProcess": true,
+      "rawBytesAfter": 22074354
+    },
+    "terminalFlagAtReview": true,
+    "completedCaseSummaries": 26,
+    "recordedCalls": 202,
+    "timingsRetained": 72
+  },
+  "scientificQualificationCompleted": true,
+  "outcome": "Complete campaign retained evidence verified",
+  "checkCount": 1594583,
+  "checkCategories": {
+    "externally supplied published source and freeze identities": 1,
+    "externally pinned unique-file freeze": 1,
+    "required protocol/scientific/dependency pins": 1,
+    "frozen file hash/size": 34,
+    "frozen started provenance/config/schema": 1,
+    "completed run has saved started provenance": 1,
+    "completed result provenance/config/schema": 1,
+    "raw/published successful result equality": 1,
+    "exact 17-column schemas": 1,
+    "frozen cases/seeds/shapes without generation": 1,
+    "closed reference manifest pin": 1,
+    "unchanged resource caps": 1,
+    "prospective exact charge vector": 1,
+    "prospective H1/H2 definitions": 1,
+    "unchanged full-reference numerical gates": 1,
+    "flat raw file inventory": 254,
+    "unique listed evidence names": 1,
+    "retained file inventory hash/size": 253,
+    "complete successful raw inventory": 1,
+    "frozen numerical allowances": 1,
+    "target and Lipschitz scalar formulas": 1,
+    "reserved signed load budget and capacity formulas": 1,
+    "retained scalar-check record": 1,
+    "saved capacity scalar identities": 1,
+    "recognized case summary": 26,
+    "terminal/raw completed summary equality": 26,
+    "completed summaries form frozen case prefix": 1,
+    "all 26 case summaries": 1,
+    "unique retained call identities": 1,
+    "case identity/count/kind/expected decision": 26,
+    "binary row coverage within case size": 136,
+    "complete accepted binary row count": 136,
+    "saved state layout/finite/prescribed placeholders": 6052,
+    "finite retained 17-value output row": 30220,
+    "saved-rotor signed body wrench arithmetic": 30220,
+    "scientific observation: Receiver range": 120880,
+    "scientific observation: Zero-inflow identity": 120880,
+    "scientific observation: Root residual": 120880,
+    "scientific observation: Power identity": 120880,
+    "complete accepted method outputs": 22,
+    "retained receiver prefixes within N": 26,
+    "complete accepted decision/audit rows": 22,
+    "ordered decision receivers": 6044,
+    "strict complete deflate payload": 12088,
+    "complete decision mask digest": 6044,
+    "zero unused padding bits": 6044,
+    "self mask code zero": 6044,
+    "ascending complete positive-omission source identities": 6044,
+    "mask and decision counter accounting": 6044,
+    "declared nextUp bound accumulation exact": 6044,
+    "scientific observation: Omission capacity": 12088,
+    "Z retained receiver prefix within N": 26,
+    "complete accepted Z shadow decisions": 22,
+    "Z ordered mask digest": 6044,
+    "Z padding and self slot": 6044,
+    "Z ascending complete shadow-selected identities": 6044,
+    "Z exact nextUp shadow accumulation": 6044,
+    "Z shadow mask/count accounting": 6044,
+    "scientific observation: Z actual/shadow record semantics": 6044,
+    "scientific observation: Z shadow capacity": 6044,
+    "scientific observation: C/Z observable shadow equality": 6044,
+    "ordered finite audit output row": 6044,
+    "retained complete-code digest format": 6044,
+    "audit/binary independent output equality": 6044,
+    "audit/decision positive source and bound identity": 6044,
+    "recorded exact-zero inspection coverage": 6044,
+    "four saved omitted sums scalar reconstruction": 6044,
+    "scientific observation: Omitted terms do not explain field difference": 24176,
+    "scientific observation: Summed omitted terms within retained bound": 24176,
+    "selected source support-code identities": 6044,
+    "positive-envelope versus realized-term counts": 6044,
+    "four retained independent root diagnostics": 6044,
+    "finite saved independent solution": 24176,
+    "scientific observation: Independent root bracket/residual": 24176,
+    "independent saved root scalar identities": 24176,
+    "full comparison complete equal row counts": 66,
+    "scientific observation: Full implementation mismatch": 308244,
+    "all 17 saved full-comparison maxima": 66,
+    "scientific observation: Aggregate inflow bound": 24176,
+    "scientific observation: Rotor error bound/sign": 24176,
+    "scientific observation: Thrust analytic bound": 6044,
+    "scientific observation: Moment analytic bound": 6044,
+    "scientific observation: Declared load budget": 6044,
+    "saved approximation maximum summaries": 22,
+    "Z complete shadow work reconstructed from masks": 22,
+    "scientific observation: Z actual retained and zero positive omissions": 22,
+    "scientific observation: Z actual rotor work identity": 22,
+    "scientific observation: Z actual profile work identity": 22,
+    "Z actual/shared decision counters": 22,
+    "Z profile work ranges": 22,
+    "Z summary/call work equality": 22,
+    "saved narrowed shadow assertion": 22,
+    "bitwise Z/M diagnostic from retained doubles": 22,
+    "scientific observation: complete C/Z shadow counter equality": 22,
+    "actual completed C counters from all masks": 22,
+    "C profile-evaluation count range": 22,
+    "summary/call C counters equality": 22,
+    "scientific observation: Domain decisions differ": 26,
+    "scientific observation: Expected valid case rejected": 26,
+    "scientific observation: Expected rejection accepted": 26,
+    "full-reference direct/eligible work counter identities": 22,
+    "B/M full support and candidate counters": 22,
+    "all full-reference summary counters": 22,
+    "accepted rejection summary has five rejecting calls": 4,
+    "finite positive source bound": 31398,
+    "Z finite positive shadow bound": 31398,
+    "finite saved omitted-source term tuple": 31398,
+    "scientific observation: Per-source upper bound": 125592,
+    "retained selected source support codes": 31398,
+    "retained nonpositive-support codes have zero terms": 125592,
+    "frozen timing orders": 1,
+    "recorded calls within frozen schedule": 202,
+    "exact attempted call order/identity/size": 202,
+    "domain call witness file equality": 20,
+    "attempted call count in fixed schedule": 1,
+    "all exact charged operation-shape counters": 1,
+    "at most one unreturned last attempted call": 1,
+    "complete exact matrix shape totals": 1,
+    "complete timing/validation records and result equality": 1,
+    "validation prefix cannot exceed returned timing records": 1,
+    "validation within frozen timing schedule": 72,
+    "exact successful timing-validation prefix": 72,
+    "timing prefix within fixed schedule": 72,
+    "exact timing order and warmup designation": 72,
+    "scientific observation: Timed query rejected": 72,
+    "scientific observation: Invalid timed duration": 72,
+    "returned timing/call ledger agreement": 72,
+    "timed shadow/selected work ledger equality": 72,
+    "finite saved returned checksum": 72,
+    "scientific observation: Timed work counters changed": 72,
+    "scientific observation: Timed checksum changed": 72,
+    "scientific observation: Timing checksum versus retained correctness scalars": 72,
+    "scientific observation: Timed Z shadow/selected counters changed": 18,
+    "one warmup and eight measured samples": 8,
+    "two complete paired performance inputs": 1,
+    "independent paired H1/H2 reconstruction": 1,
+    "terminal/performance artifact equality": 1,
+    "one supervised scientific invocation": 1,
+    "no active supervised science process": 1,
+    "raw byte count matches supervisor": 1,
+    "supervisor caps match freeze": 1,
+    "supervisor completion semantics": 1,
+    "completed scientific status matches supervisor": 1,
+    "scientific observation: raw storage cap": 1,
+    "scientific observation: executable wall cap": 1,
+    "driver/supervisor elapsed accounting": 1,
+    "success preserves full failure reserve": 1
+  },
+  "failedCheckCount": 0,
+  "failedChecks": [],
+  "observedScientificGateViolations": [],
+  "passed": true,
+  "verificationWallSecondsBeforeOutput": 1.727721708,
+  "canonicalAlreadyExisted": false
+}
