@@ -4,15 +4,21 @@
 
 Public additive worktree: current repository, branch `codex/m31-audit-2026-10-15`. Preserve the original eight-step roadmap and historical M31 base. Later remote main/DOT at `1336f5c416875a9651f92b58b2ed06649f25b04e` remains separate and untouched. The private workspace, attachments, credentials and chat records must never be published.
 
-## Current checkpoint — science and review COMPLETE; result publication pending
+## Current next campaign — receiver-only browser precision, UNEXECUTED
+
+`research/m31-browser-receiver-2026-10-16/` contains the final protocol/source and independent static clearances. The consumed-file freeze is prepared; publication and independent retrieval verification are required before launch. No shader compilation, GPU dispatch, scientific root solve or saved-input examination has occurred. Only static literal/constant encodings and syntax parsers ran. Do not execute before source/config/input/dependency freeze is published and independently verified.
+
+This is a new actual-browser f32 receiver-stage question: 32scalar probes,5invalid raw-bit guard records, and24,000reused prior-Irotorinflows;4dispatches,48,096newbisectionsmax,180sscience/60ssavedreview,32MiBrawcap. No wake/geometry/sum/flight or speed test. New1e-7Nrotor gate is distinct from the old1e-12Ndiagnostic. Read PROTOCOL/config/schema/PREFLIGHT-RESOLUTIONS and latest review. No scientific process active. Current code/papers address NaN storage, root attribution, readback failure preservation and complete-operation cleanup; these are prospective, not measured success. Latest repair: a pre-Playwright spawn hook records detached Chrome groups to a private registry; the Python supervisor cleans Node and all registered groups. Final containment and numerical reviews cleared the bounded design; live ownership checks and non-atomic supervision limitations are documented. Positive returned-alpha and actual-device limit checks were reconciled before freeze.
+
+## Latest completed and published checkpoint — exact-zero E/L
 
 `research/m31-zero-screen-2026-10-16/`: exact-zero E/L campaign. Source `4717d9b5bb3d82fe2b3d75ea26801de201d124b6`, freeze `2f1313c8476c09352ae22711be15afce5c7a3d229755a0502b1266201cb41f6a`, all40pins independently verified before execution. Sole science53.795325667s,275rawfiles/26,810,779bytes,26case checks/202calls/72timings. All numerical/control gates pass. Both E/Z and L/E usefulness criteria are unmet on both fresh inputs. Preserve this negative result.
 
-Sole saved review passed1,371,035checks/0failures in3.262752916s; both budgets terminal. Viewer passed all26cases/bothE-Ltreatments/first-lastreceiver checks, data corruption rejection and desktop/mobile controls. No science process active. Independent final memo and privacy review saved; result manifest/push/verification are next; do NOT rerun scientific or saved-review commands. Prior prospective files retain historical wording.
+Sole saved review passed1,371,035checks/0failures in3.262752916s; both budgets terminal. Viewer passed all26cases/bothE-Ltreatments/first-lastreceiver checks, data corruption rejection and desktop/mobile controls. No science process active. Result `cefe6c7bb47362e90135179d22a9721b6f03bb88` published; manifest `f45749c824579ebb522d81484ba1814eb1d9e2073f68b9df12d82e959a586626` independently byte-verified and all340local pins reconciled; do NOT rerun scientific or saved-review commands. Prior prospective files retain historical wording.
 
 Next question under static desk review: a distinct browser f32 wake/receiver feasibility gate. It has not been frozen or executed. It must separate quantized-input error, actual GPU arithmetic, roots and load assembly; M8 mechanics timing is not wake qualification. E repeats DOT's broad support idea and L is ordinary lazy evaluation, without novelty claims. Read new README,claims,POSTRUN-RESTART plus frozen prior-work comparison.
 
-## Latest completed and published checkpoint
+## Preceding completed checkpoint
 
 **Omission ablation:** `f5dd23e20b4e64eda647f30870c4a8e0a717e99e`, directory `research/m31-omission-ablation-2026-10-16/`. Manifest SHA256 `f2eef0eac63d10ab80bd0984bdebe644410bed25eaa6617c6937615f252838ae`: remote commit/manifest exact bytes independently verified; all314local files matched. Source `b6aafb006bbc406deb95f7defcebde6801eaa7f5`, freeze `ccd1695ca48fefd85225c830fd1a93fbbd6bfbde4e1fcaffd1e0532a9c799ec0`,34pins verified before execution.
 

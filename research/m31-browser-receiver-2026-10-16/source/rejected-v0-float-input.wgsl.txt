@@ -1,0 +1,114 @@
+// STATIC DRAFT ONLY: not compiled or executed.
+// Scope: fixed uploaded f0/vi constants, U in [0, 128].
+// Binding 0: ReceiverInput array, 16-byte stride.
+// Binding 1: ReceiverOutput array, 32-byte stride; same record count.
+// Host dispatch: ceil(inputCount / 64) workgroups in x, y=z=1.
+
+struct ReceiverInput {
+  u: f32,
+  f0: f32,
+  vi: f32,
+  pad: f32,
+}
+
+struct ReceiverOutput {
+  alpha: f32,
+  x: f32,
+  f: f32,
+  reportedResidual: f32,
+  iterations: f32,
+  stopCode: f32,
+  finalAbsStep: f32,
+  reserved: f32,
+}
+
+@group(0) @binding(0)
+var<storage, read> inputs: array<ReceiverInput>;
+
+@group(0) @binding(1)
+var<storage, read_write> outputs: array<ReceiverOutput>;
+
+fn finiteBits(value: f32) -> bool {
+  return (bitcast<u32>(value) & 0x7f800000u) != 0x7f800000u;
+}
+
+fn invalidOutput() -> ReceiverOutput {
+  return ReceiverOutput(0.0f, 0.0f, 0.0f, 0.0f,
+                        0.0f, 3.0f, 0.0f, 0.0f);
+}
+
+@compute @workgroup_size(64)
+fn main(@builtin(global_invocation_id) invocation: vec3<u32>) {
+  let index = invocation.x;
+  if (index >= arrayLength(&inputs)) {
+    return;
+  }
+
+  // Every in-range invocation writes a complete record, including rejection.
+  outputs[index] = invalidOutput();
+  let input = inputs[index];
+
+  // Inspect raw exponent bits before floating-point comparisons/arithmetic.
+  if (!finiteBits(input.u) || !finiteBits(input.f0) || !finiteBits(input.vi)) {
+    return;
+  }
+
+  // These protect this fixed-constant experiment, not a general receiver API.
+  if (input.u < 0.0f || input.u > 128.0f ||
+      input.f0 < 0.01f || input.f0 > 0.1f ||
+      input.vi < 1.0f || input.vi > 10.0f) {
+    return;
+  }
+
+  // Identity relative to the uploaded f32 nominal thrust; no Newton step.
+  if (input.u == 0.0f) {
+    outputs[index] = ReceiverOutput(0.0f, 1.0f, input.f0, 0.0f,
+                                    0.0f, 0.0f, 0.0f, 0.0f);
+    return;
+  }
+
+  let alpha = input.u / input.vi;
+  if (!finiteBits(alpha) || alpha <= 0.0f) {
+    return;
+  }
+  var x = min(1.0f, 1.0f / alpha);
+  if (!finiteBits(x) || x < 0.0f || x > 1.0f) {
+    return;
+  }
+
+  var iterations = 0u;
+  var stopCode = 2.0f;
+  var finalAbsStep = 0.0f;
+
+  for (var k = 0u; k < 12u; k = k + 1u) {
+    // Same source grouping as M28: no pow, fma, clamp or alternate solver.
+    let numerator = x * x * x + alpha * x - 1.0f;
+    let denominator = 3.0f * x * x + alpha;
+    if (!finiteBits(numerator) || !finiteBits(denominator) || denominator <= 0.0f) {
+      return;
+    }
+    let next = x - numerator / denominator;
+    if (!finiteBits(next) || next < 0.0f || next > 1.0f) {
+      return;
+    }
+
+    finalAbsStep = abs(next - x);
+    iterations = k + 1u;
+    if (finalAbsStep < 1e-15f) {
+      x = next;
+      stopCode = 1.0f;
+      break;
+    }
+    x = next;
+  }
+
+  let f = input.f0 * x;
+  let reportedResidual = x * x * x + alpha * x - 1.0f;
+  if (!finiteBits(f) || !finiteBits(reportedResidual) || !finiteBits(finalAbsStep) ||
+      f < 0.0f || f > input.f0) {
+    return;
+  }
+
+  outputs[index] = ReceiverOutput(alpha, x, f, reportedResidual,
+                                  f32(iterations), stopCode, finalAbsStep, 0.0f);
+}

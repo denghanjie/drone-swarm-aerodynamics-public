@@ -1,0 +1,39 @@
+# Receiver feasibility host: verified WebGPU API evidence
+
+2026-10-16, documentation-only follow-up. The earlier search-tool retrieval failure is resolved: bounded HTTPS reads obtained the current API specification and its dated snapshot, byte-for-byte identical. Primary source: **W3C WebGPU, Candidate Recommendation Draft, 15 September 2026**, [stable snapshot](https://www.w3.org/TR/2026/CRD-webgpu-20260915/), 4,521,455 bytes, SHA256 `7c67681430753937fd878fcbab9c2f0e93d757bdc24de6f3789ea0ff6c6f2438`. Relevant definitions and algorithm steps were read from the downloaded HTML. This establishes an API contract, not actual browser support or numerical success.
+
+## Primary specification ledger
+
+| Verified passage | Relevant contract |
+|---|---|
+| [requestAdapter](https://www.w3.org/TR/2026/CRD-webgpu-20260915/#dom-gpu-requestadapter), [requestDevice](https://www.w3.org/TR/2026/CRD-webgpu-20260915/#dom-gpuadapter-requestdevice) | Adapter selection can return null. Device requests validate features/limits and can return an already-lost device. Successful requests consume the adapter. |
+| [adapter info](https://www.w3.org/TR/2026/CRD-webgpu-20260915/#gpuadapterinfo) | Identity strings may be empty. Fallback status is `adapter.info.isFallbackAdapter`. |
+| [createShaderModule](https://www.w3.org/TR/2026/CRD-webgpu-20260915/#dom-gpudevice-createshadermodule), [getCompilationInfo](https://www.w3.org/TR/2026/CRD-webgpu-20260915/#dom-gpushadermodule-getcompilationinfo) | Module creation can fail validation. Compilation messages are implementation-defined; the list can be empty on device loss. |
+| [createComputePipelineAsync](https://www.w3.org/TR/2026/CRD-webgpu-20260915/#dom-gpudevice-createcomputepipelineasync) | Pipeline failure rejects with GPUPipelineError rather than dispatching GPUError. A lost device can instead resolve the promise. |
+| [push](https://www.w3.org/TR/2026/CRD-webgpu-20260915/#dom-gpudevice-pusherrorscope)/[pop error scope](https://www.w3.org/TR/2026/CRD-webgpu-20260915/#dom-gpudevice-poperrorscope), [device.lost](https://www.w3.org/TR/2026/CRD-webgpu-20260915/#dom-gpudevice-lost) | Pop returns an observed error or null; loss can yield null. `lost` independently resolves when device loss occurs. |
+| [dispatchWorkgroups](https://www.w3.org/TR/2026/CRD-webgpu-20260915/#dom-gpucomputepassencoder-dispatchworkgroups), [submit](https://www.w3.org/TR/2026/CRD-webgpu-20260915/#dom-gpuqueue-submit) | Dispatch dimensions count workgroups. Submit schedules command buffers; it is not a result check. |
+| [mapAsync](https://www.w3.org/TR/2026/CRD-webgpu-20260915/#dom-gpubuffer-mapasync), [getMappedRange](https://www.w3.org/TR/2026/CRD-webgpu-20260915/#dom-gpubuffer-getmappedrange), [unmap](https://www.w3.org/TR/2026/CRD-webgpu-20260915/#dom-gpubuffer-unmap) | Mapping resolves for that buffer's accessible contents, not every unrelated operation. Unmap detaches returned mapped views. |
+
+Also read the [writeBuffer](https://www.w3.org/TR/2026/CRD-webgpu-20260915/#dom-gpuqueue-writebuffer) and [copyBufferToBuffer](https://www.w3.org/TR/2026/CRD-webgpu-20260915/#dom-gpucommandencoder-copybuffertobuffer) argument/validation/queue steps to review the proposed upload and output-copy path. No GPU timing claims are drawn from any of these sections.
+
+## Independent documentation crosschecks
+
+Official Chrome implementation notes, **27 August 2025**, explicitly describe successful device requests consuming adapters and removal of the old `GPUAdapter.isFallbackAdapter` in favor of `GPUAdapterInfo.isFallbackAdapter`: [Chrome 140 notes](https://developer.chrome.com/blog/new-in-webgpu-140). The [Chrome 136 notes, 23 April 2025](https://developer.chrome.com/blog/new-in-webgpu-136) introduced the latter property. Their statements about fallback support at those release dates must not be extrapolated to the current host. No host browser version was queried here.
+
+MDN's [obsolete adapter property page](https://developer.mozilla.org/en-US/docs/Web/API/GPUAdapter/isFallbackAdapter), modified 21 August 2026, also directs new code to `GPUAdapterInfo.isFallbackAdapter`. Some older MDN examples still use the obsolete member; the dated W3C specification and Chrome removal note control this draft. Missing metadata must remain “unavailable,” not be converted to an assertion of nonfallback hardware.
+
+MDN [getCompilationInfo](https://developer.mozilla.org/en-US/docs/Web/API/GPUShaderModule/getCompilationInfo), modified 18 June 2025, documents the returned compilation-message array and diagnostic fields. [createComputePipelineAsync](https://developer.mozilla.org/en-US/docs/Web/API/GPUDevice/createComputePipelineAsync) documents promise rejection reasons `validation` and `internal`. [pushErrorScope](https://developer.mozilla.org/en-US/docs/Web/API/GPUDevice/pushErrorScope) and [popErrorScope](https://developer.mozilla.org/en-US/docs/Web/API/GPUDevice/popErrorScope) document filters and asynchronous results. These are API usage documentation, not independent shader verification.
+
+MDN [mapAsync](https://developer.mozilla.org/en-US/docs/Web/API/GPUBuffer/mapAsync), modified 21 May 2026, requires mapped offsets divisible by eight, sizes divisible by four, in-bounds ranges, and matching MAP_READ/MAP_WRITE usage. A mapped buffer cannot be used in GPU commands. MDN [device.lost](https://developer.mozilla.org/en-US/docs/Web/API/GPUDevice/lost), modified 18 June 2025, emphasizes that a newly requested device can already be lost and that later loss is possible. Its general application advice to recreate lost devices does **not** authorize a retry in this one-shot study.
+
+## Host design implications for this proposed study
+
+These are application-specific recommendations, not observations from an executed browser:
+
+1. Require the intended APIs and an adapter; record missing capabilities and stop. Use only `adapter.info.isFallbackAdapter`, with a frozen policy for true/unavailable values. Request one device and check actual device limits against the two storage bindings, byte lengths and 64-invocation workgroup. No browser flags, optional speed features or automatic fallback/retry should be introduced.
+2. Attach the device-loss observer and uncaptured-error handler immediately. Capture compilation diagnostics, catch the async-pipeline promise separately, and use balanced error scopes for validation/internal/out-of-memory errors. An empty diagnostic list, null error scopes and resolved pipeline promise together still do not replace the loss/readback/coverage checks.
+3. Preserve the frozen raw input bytes. The conventional layout is input STORAGE|COPY_DST, output STORAGE|COPY_SRC, and separate readback MAP_READ|COPY_DST. Bind exact array ranges, dispatch the frozen workgroup count, end the pass, encode the exact output-byte copy, then submit. The recorded count must describe submitted dispatches, not just commands encoded before a failure.
+4. Await the readback buffer's `mapAsync(READ)`, obtain its complete mapped range, copy all bytes into ordinary host-owned storage, then unmap. Check expected byte length, input identities, output-row coverage, API outcomes and independently assessed numerical gates. An untouched zero buffer must fail coverage/known-row checks rather than look like successful zero-input results.
+5. Distinguish unexpected loss before evidence completion from deliberate `device.destroy()` during final cleanup. Preserve reasons/errors and partial evidence; do not reopen the run to recover a lost dispatch. A successful API path remains only a prerequisite for numerical qualification.
+
+No requestAdapter/requestDevice, shader compilation, pipeline creation, dispatch, mapping, browser launch, hardware inspection or timing measurement was performed. Only documentation retrieval, HTML/text reading and source-draft editing occurred.
