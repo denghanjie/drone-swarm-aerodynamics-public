@@ -10,11 +10,9 @@ Stop new overnight launches at **07:00 Asia/Shanghai on 2026-10-16**. Use the ac
 
 ## Current work
 
-`research/m31-refresh-envelope-2026-10-15/`: prospective restricted pair-envelope challenge. Protocol, configuration, independent bound module and experiment driver are prepared but not yet frozen or run. Independent pre-execution review is pending. Inspect current Git status and any subsequent freeze/results before acting. No active solver at this index's preparation.
+`research/m31-refresh-envelope-2026-10-15/`: COMPLETE, awaiting result publication at this index update. Source frozen/pushed as `f56909390c4875db5a9241ba6bc79596b84628a6`; one invocation completed. Budget terminal. Read POSTRUN-RESTART.md. All checked targets/containment and event-aware sampling screens passed, but total adaptive overhead erased its presumed advantage: 6.367416 ms median vs fixed2.5ms 6.393833 ms, overlapping ranges. Simple predict5ms: 3.5695 ms and smaller errors on this encounter. 27,709 field calls,4,309 bound calls,6,278,564 raw bytes. Independent saved-record review passed57,504 checks; its tiny operation-order checker failure/correction is retained. No solver active.
 
-The candidate bounds airflow changes over a future hold using prospectively valid motion bounds, then propagates them into lift and roll/pitch intervals. Fixed identity orientations and hover rotor nominal thrusts are required. Numerical margins are not formally outward-rounded. Compare six variants on one new analytic encounter, including fixed holds and a causal linear predictor; count complete scheduling/root overhead. No novelty, real-world validity or swarm scaling claim.
-
-Next: resolve preflight findings, freeze/push source and complete one bounded invocation; preserve failures, independently verify saved results and update a visible 3D milestone before publishing. If the process is active, do not start another solver/benchmark. Never automatically retry terminal campaigns or tune against a used challenge while calling it fresh.
+Next: publish/verify this checkpoint if not yet done, then separately freeze a fresh predictor stress challenge. Proposed stresses: support entry/exit/startup, reversal, orientation changes and multiple source wakes. Independent static domain-design review and verified temporal prior-art search are underway. Do not execute until prospective code/configuration/protocol receive scrutiny and are frozen/pushed. Never rerun terminal campaigns or tune exposed data as fresh confirmation. Every substantial milestone needs raw evidence, independent scrutiny, visible Three.js and GitHub verification. No novelty, physical validation or swarm scalability is established.
 
 ## Evidence transfer and physical data
 

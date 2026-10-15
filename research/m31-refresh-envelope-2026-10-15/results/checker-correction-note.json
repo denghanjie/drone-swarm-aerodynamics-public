@@ -1,0 +1,66 @@
+{
+  "scope": "Saved-record verification only; no model, field, bound, receiver, dynamics, pose, sample, refinement, benchmark, or experiment evaluated or rerun.",
+  "artifacts": {
+    "currentPortableChecker": {
+      "path": "/tmp/m31-envelope-recompute.py",
+      "sha256": "44f65cd969da5ea8cea921d6ac560468357fce5b1ff526e25907e4b92eb9c585"
+    },
+    "currentReview": {
+      "path": "/tmp/m31-envelope-review.json",
+      "status": "actual output of corrected checker invocation"
+    },
+    "firstChecker": {
+      "path": "/tmp/m31-envelope-recompute-first-reconstructed.py",
+      "sha256": "05df8b39ad2be5e4c56ca9f92f25331db3dbebe21e71de80e45a25ae2c8e2233",
+      "status": "reconstructed pre-correction source by reversing exact applied patch; not preserved original bytes"
+    },
+    "firstStdout": {
+      "path": "/tmp/m31-envelope-first-stdout-reconstructed.json",
+      "status": "reconstructed JSON transcription of exact observed first invocation stdout from tool history; not preserved original bytes"
+    },
+    "firstFullReview": {
+      "status": "unavailable; overwritten by corrected invocation before preservation request arrived; no reproduced full review was generated"
+    }
+  },
+  "observedFirstFailure": {
+    "checks": 57504,
+    "failedChecks": [
+      {
+        "passed": false,
+        "check": "causal prediction sample 3326"
+      }
+    ],
+    "tick": 3326,
+    "lastRefreshTick": 3320,
+    "previousRefreshTick": 3300,
+    "rotor": 0,
+    "savedWind": 6.923112372597326e-07,
+    "initialCheckerWind": 6.923112372596784e-07,
+    "signedDifference": -5.421010862427522e-20,
+    "ratioFirstWind": 6.923112372597326e-07,
+    "ratioFirstMatchesExactly": true
+  },
+  "checkerCorrection": {
+    "before": "u + (u-p)*(tick-last)/(last-priorTick)",
+    "after": "u + (u-p)*((tick-last)/(last-priorTick))",
+    "reason": "Original JavaScript calculates the ratio first. The initial checker multiplied before division, changing rounding under cancellation. No substantive causality mismatch was observed.",
+    "comparisonChange": "Predictor sample and left-limit checks changed from math.isclose to exact equality. All predictor values now match exactly.",
+    "changedFiles": "Only /tmp verifier and review artifacts; no repository edits."
+  },
+  "verifierInvocations": [
+    {
+      "invocation": 1,
+      "status": "57503 passed; one failed prediction check",
+      "wallSecondsThroughReviewFileWrite": 0.257567792
+    },
+    {
+      "invocation": 2,
+      "status": "57504 passed; zero failed checks",
+      "wallSecondsThroughReviewFileWrite": 0.22701049999999998,
+      "wallSecondsBeforeReviewFileWrite": 0.22632424999999998
+    }
+  ],
+  "sumMeasuredVerifierWallSeconds": 0.484578292,
+  "timingBoundary": "time.perf_counter elapsed from verifier startup through JSON review file write, sampled before stdout JSON serialization. Investigative reads and evidence packaging are not verifier invocations and are not included.",
+  "rmsEstimandCaution": "The event-split trapezoid RMS is a prospectively changed estimand. Passing these screens does not erase the earlier pilot uniform-RMS failures."
+}

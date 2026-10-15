@@ -1,0 +1,38 @@
+{
+  "passed": false,
+  "checks": 57504,
+  "failedChecks": [
+    {
+      "passed": false,
+      "check": "causal prediction sample 3326"
+    }
+  ],
+  "coverage": {
+    "samples": 12585,
+    "maxExcess": -1.427455339278054e-15,
+    "worst": {
+      "tick": 3373,
+      "k": 2,
+      "side": "sample",
+      "error": -3.4316906134292113e-07,
+      "interval": [
+        -3.4316906277037647e-07,
+        3.543009872317038e-06
+      ],
+      "anchor": 3320
+    },
+    "targetViolations": 0
+  },
+  "samplingFailures": [],
+  "comparisons": {
+    "predict5msLowerPeakForEveryObservable": true,
+    "predict5msRecordedRangeStrictlyBelowEnvelope": true,
+    "envelopeAndHold2p5msRecordedRangesOverlap": true,
+    "envelopeMedianVsHold2p5msFraction": -0.004131637470049299
+  },
+  "metricDiscrepancy": {
+    "peak": 0.0,
+    "rms": 5.963111948670274e-19
+  },
+  "verificationWallSecondsIncludingOutput": 0.257567792
+}

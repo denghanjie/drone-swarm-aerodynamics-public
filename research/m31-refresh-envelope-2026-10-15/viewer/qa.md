@@ -1,0 +1,3 @@
+# Three.js display verification
+
+Installed Chrome 155 with Playwright 1.62.1, desktop 1440×1000 and mobile 390×844. Browser plugin was unavailable; used installed tooling without dependency installation. QA checks page identity, canvas, all six methods × three times against raw lift values, adaptive refresh-left semantics, start/end values, playback/pause, orbit/reset/receiver focus, footer links, no overflow, normal console/page/network errors and corrupted-evidence rejection. All checks passed. Page-only desktop/mobile/focus captures were visually inspected. These checks validate the recorded display, not physics, numerical integration or real-time speed. Browser QA timing is outside scientific execution accounting.
