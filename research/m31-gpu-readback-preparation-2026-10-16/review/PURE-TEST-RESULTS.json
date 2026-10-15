@@ -1,0 +1,142 @@
+{
+  "kind": "static-gpu-readback-pure-byte-tests",
+  "operational_sources_imported": false,
+  "browser_gpu_network_operations": false,
+  "full_checker_executed": false,
+  "cases": [
+    {
+      "case": "independent_repeated_addition_reference",
+      "pass": true
+    },
+    {
+      "case": "explicit_little_endian_encoding",
+      "pass": true
+    },
+    {
+      "case": "all_active_words_differ_from_initial_sentinels",
+      "pass": true
+    },
+    {
+      "case": "exact_expected_fixture",
+      "pass": true
+    },
+    {
+      "case": "missing_dispatch_fixture_is_consistent_but_not_positive",
+      "pass": true
+    },
+    {
+      "case": "reversed_word_endianness_rejected",
+      "pass": true
+    },
+    {
+      "case": "one_active_byte_corruption",
+      "pass": true
+    },
+    {
+      "case": "one_prefix_padding_byte_corruption",
+      "pass": true
+    },
+    {
+      "case": "last_suffix_padding_byte_corruption",
+      "pass": true
+    },
+    {
+      "case": "short_file",
+      "pass": true
+    },
+    {
+      "case": "empty_file",
+      "pass": true
+    },
+    {
+      "case": "trailing_file_byte",
+      "pass": true
+    },
+    {
+      "case": "oversized_evidence_rejected_before_comparison",
+      "pass": true
+    },
+    {
+      "case": "substituting_expected_file_for_wrong_return_breaks_identity",
+      "pass": true
+    },
+    {
+      "case": "honest_wrong_byte_receipt_matches_actual",
+      "pass": true
+    },
+    {
+      "case": "expected_digest_cannot_replace_actual_bytes",
+      "pass": true
+    },
+    {
+      "case": "boolean_receipt_size_is_rejected",
+      "pass": true
+    },
+    {
+      "case": "malformed_short_array",
+      "pass": true
+    },
+    {
+      "case": "malformed_trailing_array",
+      "pass": true
+    },
+    {
+      "case": "malformed_object",
+      "pass": true
+    },
+    {
+      "case": "malformed_null",
+      "pass": true
+    },
+    {
+      "case": "malformed_boolean",
+      "pass": true
+    },
+    {
+      "case": "malformed_float",
+      "pass": true
+    },
+    {
+      "case": "malformed_negative_zero",
+      "pass": true
+    },
+    {
+      "case": "malformed_nan",
+      "pass": true
+    },
+    {
+      "case": "malformed_infinity",
+      "pass": true
+    },
+    {
+      "case": "malformed_string",
+      "pass": true
+    },
+    {
+      "case": "malformed_negative",
+      "pass": true
+    },
+    {
+      "case": "malformed_overflow",
+      "pass": true
+    },
+    {
+      "case": "malformed_nested",
+      "pass": true
+    },
+    {
+      "case": "CPU_generated_expected_bytes_can_match_without_GPU_evidence",
+      "pass": true
+    },
+    {
+      "case": "producer_phase_claims_are_not_byte_evidence_inputs",
+      "pass": true
+    },
+    {
+      "case": "ordinary_owned_copy_survives_original_mutation",
+      "pass": true
+    }
+  ],
+  "passed": 33,
+  "failed": 0
+}

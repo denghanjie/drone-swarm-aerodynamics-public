@@ -1,0 +1,46 @@
+{
+  "kind": "static-only-check-receipt",
+  "version": 1,
+  "preparationStartedUTC": "2026-10-15 22:59:55 UTC",
+  "originalLaunchCutoffUTC": "2026-10-15 23:00:00 UTC",
+  "executionAllocated": false,
+  "nodeBinary": "bundled Node.js runtime (local installation path omitted from public provenance)",
+  "nodeSyntaxChecks": {
+    "gpu-readback-page.js": {
+      "exitCode": 0
+    },
+    "validation.cjs": {
+      "exitCode": 0
+    },
+    "generate-fixture.cjs": {
+      "exitCode": 0
+    },
+    "validation.test.cjs": {
+      "exitCode": 0,
+      "note": "Initial syntax check passed; final revised tests also parsed and executed with exit0."
+    }
+  },
+  "pureTestRun": {
+    "script": "validation.test.cjs",
+    "exitCode": 0,
+    "testsPassed": 70,
+    "stdout": "pure-test-results.txt"
+  },
+  "pageImportedOrEvaluated": false,
+  "wgslCompiledOrRun": false,
+  "browserInvocations": 0,
+  "gpuInvocations": 0,
+  "networkRequests": 0,
+  "operationalHostWrapperProvided": false,
+  "referenceGeneratorExecuted": true,
+  "referenceGeneratorScope": "BigInt/manual-byte static calculation; only local fixture writes",
+  "validationDoesNotEstablish": [
+    "GPU execution",
+    "ownership transitions",
+    "actual output correctness",
+    "persistence",
+    "process closure",
+    "historical scientific failure cause",
+    "performance"
+  ]
+}

@@ -1,0 +1,9 @@
+# Resume from prepared source, not from a passing GPU result
+
+The new page/validator and independent byte primitives are source preparation. Pure tests and static review do not execute the GPU path. No operational host, process supervisor integration, full saved-file checker, launch-ready freeze, execution allocation or new runtime result exists here. Existing terminal campaigns must not be rerun or completed retroactively.
+
+Before a separately scoped test, resolve the WGSL primary-source passages and the static review's integration gates. Build a new host around the actual returned envelope, keep page-self-reported phases separate from external observations, and persist only the actual strictly validated values. The independent reviewer must reread bounded closed files, validate source/manifests and incorporate actual external completion rather than certify its own future exit.
+
+The page proposes 8 seconds for substantive work and 10 seconds including cleanup. A future host must provide a strictly larger evaluate allowance and sufficient separate validation, persistence and outer closure budget. Those values are draft integration constraints, not a new allocation. The original overnight launch cutoff remains closed; any later execution/review windows require an explicit prospective allocation and source admission. Do not infer permission to invoke a worker from a source-preparation manifest.
+
+Source reproduction is limited to the documented inert tests and syntax checks. No additional repetition is needed while the reviewed bytes are unchanged. An actual run, if separately allocated and admitted, must have its own fresh evidence location and preserve this preparation record. Successful small readback would still leave realistic-output cost and the aerodynamic research requirements unresolved.

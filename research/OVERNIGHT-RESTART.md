@@ -4,6 +4,12 @@
 
 Public additive worktree: current repository, branch `codex/m31-audit-2026-10-15`. Preserve the original eight-step roadmap and historical M31 base. Later remote main/DOT at `1336f5c416875a9651f92b58b2ed06649f25b04e` remains separate and untouched. The private workspace, attachments, credentials and chat records must never be published.
 
+## Latest source preparation — GPU readback remains unexecuted
+
+`research/m31-gpu-readback-preparation-2026-10-16/` contains a new page/shader/strict validator and independent byte primitives for a 128-byte uint32 fixture with 17 active words and protected padding. Source preparation continued across the end of the overnight window; no browser/GPU/diagnostic/saved-file checker was launched. Seventy page/validator pure checks and 33 independent byte cases passed; independent expected-byte files match exactly. Their hash is `ba507e3ef0ad8991b3e84530f89fa51501e9c6fd274157d519ef10cb8aded951`.
+
+Static API/source review is retained, with scope and final source pins. It does not establish a runtime result. No host/supervisor integration, full saved-file checker, launch-ready freeze, fresh execution allocation or new launch window exists. Resolve normative WGSL arithmetic/layout passages and integration gates in NEXT.md before a later separately scoped test. The original overnight launch cutoff is closed and unchanged. The latest completed Three.js result remains the prior engineering evidence diagram; this source-only package does not fabricate new GPU or drone observations.
+
 ## Current engineering checkpoint — exact small control-channel transfer observed
 
 `research/m31-control-channel-2026-10-16/`: source commit`4edf40a7cbfa2d41414dc8a8a6ff0718d0fa5671`, freeze`c36018ea48530e17c91bed62b5f062ff93577dd4328559c9dd9ca6d22e1d932b`(30pins) independently published/verified before sole trial. Actual3840-byte ordinary-heap return and exclusive persistence succeeded; independent post-closure byte equality confirmed. One browser and one evaluate call,21events, no local recorder errors/deviations. Whole tool observation4.995s, observer1.620248959s, complete recorded ownership closure. No GPU/science performed.

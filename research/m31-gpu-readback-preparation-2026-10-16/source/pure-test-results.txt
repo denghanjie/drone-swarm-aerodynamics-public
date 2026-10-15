@@ -1,0 +1,71 @@
+ok 1 - canonical candidate accepted without claiming independent verification
+ok 2 - wrong active byte remains structurally valid
+ok 3 - wrong prefix byte remains structurally valid
+ok 4 - wrong suffix byte remains structurally valid
+ok 5 - untouched sentinels remain structurally valid but are not fixture success
+ok 6 - independent exact byte comparison catches active/prefix/suffix corruptions
+ok 7 - warning and info do not claim compilation failure
+ok 8 - scope error preserves raw owned bytes in failed report
+ok 9 - early insecure failure accepted
+ok 10 - fallback refusal accepted without device request
+ok 11 - unavailable fallback information refused before device request
+ok 12 - pending adapter timeout failure accepted
+ok 13 - settled adapter rejection is not pending
+ok 14 - pending map timeout preserves unresolved observation with cleanup
+ok 15 - partial buffer creation cleans storage without claiming readback cleanup
+ok 16 - unexpected loss and null scopes is a failed report
+ok 17 - unexpected loss cannot be a candidate
+ok 18 - candidate requires all cleanup observations
+ok 19 - candidate needs detached range
+ok 20 - candidate requires independent owned buffer
+ok 21 - candidate requires nonfallback report
+ok 22 - candidate rejects unavailable fallback status
+ok 23 - candidate rejects nonempty scope
+ok 24 - candidate rejects scope after destroy ordering
+ok 25 - candidate rejects unfinished map
+ok 26 - candidate rejects unfinished work
+ok 27 - candidate rejects scope unresolved
+ok 28 - candidate rejects omitted final event
+ok 29 - candidate rejects cleanup deadline boundary
+ok 30 - candidate rejects uncaptured validation error
+ok 31 - sparse byte array
+ok 32 - extra byte array property
+ok 33 - symbol byte array property
+ok 34 - extra object key
+ok 35 - symbol object key
+ok 36 - nonenumerable schema key
+ok 37 - custom prototype
+ok 38 - typed byte array rejected before coercion
+ok 39 - nested byte value
+ok 40 - NaN byte
+ok 41 - infinite byte
+ok 42 - negative byte
+ok 43 - negative zero byte
+ok 44 - fractional byte
+ok 45 - byte greater than 255
+ok 46 - string byte
+ok 47 - oversized byte array
+ok 48 - accessor byte is rejected without invoking getter
+ok 49 - accessor object key is rejected without invoking getter
+ok 50 - missing observation key
+ok 51 - sparse events
+ok 52 - event sequence gap
+ok 53 - event time regression
+ok 54 - event NaN timestamp
+ok 55 - event time exceeds envelope
+ok 56 - event array overflow
+ok 57 - false event overflow
+ok 58 - unknown failure code
+ok 59 - failure array overflow
+ok 60 - failed report must give reason
+ok 61 - duplicated invocation counter
+ok 62 - wrong fixture id
+ok 63 - byte order mutation
+ok 64 - scientific promotion
+ok 65 - independent proof promotion
+ok 66 - scope filter reordering
+ok 67 - reference has fixed expected hashes
+ok 68 - reference preserves exactly prefix4 and suffix11 guards
+ok 69 - WGSL file equals embedded shader without evaluating either
+ok 70 - page failure allowlist exactly matches validator without executing page
+{"pureTestsPassed":70,"browserInvocations":0,"gpuInvocations":0,"networkRequests":0}
