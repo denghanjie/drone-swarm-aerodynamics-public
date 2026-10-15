@@ -1,0 +1,127 @@
+{
+  "kind": "static-only-independent-GPU-saved-review-source-preparation",
+  "version": 1,
+  "full_checker_main_invoked": false,
+  "historical_checker_imported_or_invoked": false,
+  "browser_gpu_network_or_operational_source_executed": false,
+  "actual_campaign_evidence_read": false,
+  "pure_synthetic_and_scratch_tests_only": true,
+  "execution_allocated": false,
+  "review_allocated": false,
+  "closed_overnight_cutoff_extended": false,
+  "host_config_verified_disabled_with_null_windows": true,
+  "python_syntax": "AST parsed only",
+  "static_admission_order": "config-only gate precedes alarm, runtime file reads, reservation and result creation",
+  "meaningful_evidence_groups": 5,
+  "pure_cases_passed": 37,
+  "expected_fixture_bytes": 128,
+  "expected_fixture_sha256": "ba507e3ef0ad8991b3e84530f89fa51501e9c6fd274157d519ef10cb8aded951",
+  "source_review_inputs": [
+    {
+      "path": "research/m31-control-channel-2026-10-16/review/check-records.py",
+      "bytes": 35120,
+      "sha256": "3b7c265cba31bf38064dcd90044b7463ba0bc4251bf9f5d9392d57081da9d32d"
+    },
+    {
+      "path": "research/m31-gpu-readback-preparation-2026-10-16/review/byte_primitives.py",
+      "bytes": 3656,
+      "sha256": "c8b24ee9ce9bf9bb364433fd065914efbafce79af6a252ca0cfd953a4ef5e7c8"
+    },
+    {
+      "path": "research/m31-gpu-readback-preparation-2026-10-16/source/validation.cjs",
+      "bytes": 15146,
+      "sha256": "d8a9865f5dced23c8f7564ab18a18aa0c889fe5e76026e33a3f1176fa5d11243"
+    },
+    {
+      "path": "research/m31-gpu-readback-integration-2026-10-16/source/admission.py",
+      "bytes": 2522,
+      "sha256": "54177672b4de59274d9bbc973b49ccb6220386260a1953c083ed55ed10dcf42e"
+    },
+    {
+      "path": "research/m31-gpu-readback-integration-2026-10-16/source/capture-transport.py",
+      "bytes": 13431,
+      "sha256": "fa905f47d571492ead718e76ca4b442be3656baceda083d08b0cc2ccbd8f000e"
+    },
+    {
+      "path": "research/m31-gpu-readback-integration-2026-10-16/source/observe-transport.py",
+      "bytes": 32526,
+      "sha256": "aacb3daa611f7f3893b27ebf0b6bed0ff2a434d7042d1d10f429e833cf31069e"
+    },
+    {
+      "path": "research/m31-gpu-readback-integration-2026-10-16/source/run-once.py",
+      "bytes": 5472,
+      "sha256": "1aea5fc37e9a17a22a1926cb7f3896ec68045e0babfdba17ee3cc6d76785cd2d"
+    }
+  ],
+  "negotiated_host_inputs": [
+    {
+      "path": "config.json",
+      "bytes": 415,
+      "sha256": "b028e13800c513fc966d8634753b9a9eda244e1f751133e3ce6a94bec4d33c4b"
+    },
+    {
+      "path": "source/host-worker.cjs",
+      "bytes": 28543,
+      "sha256": "43d743884a62c50d6b1eb67eee0138156e59db6e6dfb81fc46fd3d34c68b8f4c"
+    },
+    {
+      "path": "source/host-logic.cjs",
+      "bytes": 4235,
+      "sha256": "6d81f6fbcff5448d08cd9a9c2fa47eb3f5f1d3efc2451e20c3625b9b3d0175dc"
+    },
+    {
+      "path": "RESULT-SCHEMA.md",
+      "bytes": 6836,
+      "sha256": "a9d49488ab20b133921132c4509e187a8abc4b13e25a63ce817181f9fefd29c7"
+    },
+    {
+      "path": "SOURCE-CONTRACT.md",
+      "bytes": 6020,
+      "sha256": "7edf36b72047d02a9b1433628471d55ea88ee97b766676fe59dc357c689c26d2"
+    }
+  ],
+  "delivery_files": [
+    {
+      "path": "check_saved_files.py",
+      "bytes": 38838,
+      "sha256": "83b9b3c3b619c8857f4ca39427d9036156fb281a4f6e92e3cc017e9896cc4b39"
+    },
+    {
+      "path": "review_primitives.py",
+      "bytes": 19752,
+      "sha256": "e36a32c78a27a9ffe5c266b3d9fa687a9ae8b2bf01c56cd79e43bca1a5f9dca9"
+    },
+    {
+      "path": "byte_primitives.py",
+      "bytes": 3656,
+      "sha256": "c8b24ee9ce9bf9bb364433fd065914efbafce79af6a252ca0cfd953a4ef5e7c8"
+    },
+    {
+      "path": "test_review_primitives.py",
+      "bytes": 9794,
+      "sha256": "6f427eefab0f5da1b931b8c43b357f8393613dfdda9364f4764f6f6a04af83ea"
+    },
+    {
+      "path": "PURE-TEST-RESULTS.json",
+      "bytes": 3227,
+      "sha256": "68eed7a03d5d2579988376451e38b5701371813628ba2e2c1c56d8213f685de8"
+    },
+    {
+      "path": "INPUT-CONTRACT.md",
+      "bytes": 9328,
+      "sha256": "f6ee26f3449816851a23a42716e6d228e830df0043db5f55e75cf653a73385ff"
+    },
+    {
+      "path": "PRIMITIVE-DERIVATION.md",
+      "bytes": 1053,
+      "sha256": "b93c15b817b521637fb4bb10bb8baae46d1e08394221948e0b6121dad4b2d6c2"
+    }
+  ],
+  "limitations": [
+    "No actual saved-file review result exists.",
+    "Page phase checks establish reported consistency, not authenticated GPU execution.",
+    "Exact-byte facts do not replace source, allocation, external lifecycle or process-closure evidence.",
+    "Partial persistence and incomplete lifecycle remain outside aggregate integrity-pass scope.",
+    "Runtime/freeze/publication/admission and future launch/review windows remain separately required; this package is disabled."
+  ]
+}

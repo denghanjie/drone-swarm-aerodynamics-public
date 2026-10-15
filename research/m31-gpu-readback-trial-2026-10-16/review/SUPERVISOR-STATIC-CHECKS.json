@@ -1,0 +1,49 @@
+{
+  "kind": "static-saved-review-supervisor-preparation",
+  "version": 1,
+  "executionAllocated": false,
+  "upstreamCommit": "1a315275756982ad83319013a7ad2dff16768326",
+  "unchangedCheckerPins": {
+    "review/check_saved_files.py": "83b9b3c3b619c8857f4ca39427d9036156fb281a4f6e92e3cc017e9896cc4b39",
+    "review/review_primitives.py": "e36a32c78a27a9ffe5c266b3d9fa687a9ae8b2bf01c56cd79e43bca1a5f9dca9",
+    "review/byte_primitives.py": "c8b24ee9ce9bf9bb364433fd065914efbafce79af6a252ca0cfd953a4ef5e7c8"
+  },
+  "astParsed": [
+    "review/byte_primitives.py",
+    "review/check_saved_files.py",
+    "review/review_primitives.py",
+    "review/supervise_saved_review.py",
+    "review/supervisor_primitives.py",
+    "review/test_supervisor_primitives.py"
+  ],
+  "pureTestReceipt": {
+    "kind": "pure-supervisor-helper-tests",
+    "testsRun": 19,
+    "failures": 0,
+    "errors": 0,
+    "checkerInvocations": 0,
+    "supervisorInvocations": 0,
+    "browserInvocations": 0,
+    "gpuInvocations": 0
+  },
+  "pureTestOutput": "PURE-TEST-RESULTS.txt",
+  "operationalImports": false,
+  "supervisorInvocations": 0,
+  "checkerInvocations": 0,
+  "browserInvocations": 0,
+  "gpuInvocations": 0,
+  "networkRequests": 0,
+  "timingContract": {
+    "checkerHardSeconds": 30,
+    "supervisorSoftSeconds": 31,
+    "supervisorReapSeconds": 33,
+    "supervisorHardSeconds": 35
+  },
+  "remainingGates": [
+    "independent integrated source review",
+    "new trial source freeze including both supervisor modules before GPU trial",
+    "runtime pins and independent source retrieval",
+    "prospective cycle budget and explicit new launch/review allocation",
+    "actual external tool completion and final byte accounting"
+  ]
+}

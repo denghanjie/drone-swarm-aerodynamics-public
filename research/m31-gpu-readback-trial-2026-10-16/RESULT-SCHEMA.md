@@ -1,0 +1,34 @@
+# Worker result contract, version1
+
+This document specifies future artifacts; it is not a run receipt. Public result kind is `synthetic-gpu-readback-diagnostic`, fixture ID `m31-u32-readback-128-v1`. All paths below are relative to the future integration directory.
+
+| Artifact | Conditional presence and meaning |
+|---|---|
+| `results/result.json` | Bounded≤65,536B worker-local result, exclusively written; terminal does not imply external completion. |
+| Worker stdout | One `synthetic-gpu-readback-worker-summary` JSON line after result close: status, terminal, qualified:false, externalCompletionRequired:true, resultBytes, resultSHA256, resultWriteClosed. Parent owns captured stdout artifact. |
+| `raw/returned.json` | Full actual decoded envelope only after strict validation; ≤32,768B; retained for candidate or failed page, including valid no-byte failure. |
+| `raw/rejected-return.json` | Safe rejection projection when validator returns ok:false; never retains arbitrary malformed fields. Original invalidity cannot be independently reconstructed from this projection. |
+| `raw/received.bin` | Only when a valid envelope contains byte values: exact actual128B attempted, even when page status failed or content mismatched. Partial bytes remain if write fails. No expected-byte substitution. |
+| `raw/trace.public.ndjson` | Public allowlisted host/Playwright/CDP events. |
+| Private `trace.private.ndjson` | Beside the external private process registry, outside publication tree. Only its digest/length appear publicly. |
+
+## Exact top-level result fields
+
+`version`, `kind`, `fixtureId`, `sourceCommit`, `sourceFreezeSHA256`, `terminal`, `executionAllocated`, `scope`, `qualified`, `scientificSuccess`, `explainsHistoricalFailure`, `performanceClaim`, `retryPermitted`, `independentPersistenceVerified`, `externalCompletionRequired`, `browserLaunches`, `evaluateCalls`, `applicationFetchCalls`, `observerReadyEvent`, `browserVersion`, `browserContext`, `runtimePinsBefore`, `runtimePinsAfter`, `expected`, `errors`, `cleanupErrors`, `protocolDeviations`, `evaluation`, `returned`, `pageReport`, `persistence`, `timing`, `browserCloseAttempted`, `browserCloseReturned`, `browserClosed`, `lastPhase`, `instrumentation`, `trace`, `localObservationComplete`, `status`, `elapsedSeconds`.
+
+Claim flags qualified/scientificSuccess/explainsHistoricalFailure/performanceClaim/retryPermitted/independentPersistenceVerified always remain false; externalCompletionRequired remains true. Source commit is40hex; freeze and file digests are64hex when available. Runtime pin flags indicate worker checks only. Expected is `{bytes:128,sha256:"ba507e3ef0ad8991b3e84530f89fa51501e9c6fd274157d519ef10cb8aded951"}`. Errors/cleanupErrors contain only stage/type; protocol deviations are bounded source-defined labels.
+
+- `evaluation`: settled, timedOut, deadlineExceeded, errorName, hostMilliseconds, limitMilliseconds:12000. Settled rejection is distinct from timeout. Timeout does not cancel the page. No second extraction follows either outcome.
+- `returned`: received, validationPassed, validationError, json, rejectionProjection, bytes, sha256, exact, pageStatus, pageFailureCodes, candidateByPageSelfReport. Bytes/hash/exact remain null without converted bytes; exact is host in-memory comparison only. pageStatus is null/failed/candidate-readback. Failure codes are copied from the validated envelope. Rejection projection carries kind/errorCode/rootType/rootIsArray/originalRetained:false.
+- `json` and `rejectionProjection`: null or write receipt `{attempted,opened,closed,complete,writtenBytes,writeCalls,bytes,sha256}`. Bytes/hash are populated only after a complete write and actual close. The original decoded object remains unavailable when validation fails.
+- `pageReport`: null or `{phaseEvidenceKind:"page-self-report",browserElapsedMilliseconds,lastWorkStage,counts,observation,independentPersistenceVerified:false}`; counts/observation must equal the validated envelope. Device release/loss fields are only page self-report, never browser/process closure evidence.
+- `persistence`: attempted, opened, closed, complete, writtenBytes, writeCalls, exists, bytes, sha256, exact, equalsReturned. First six are write/close observations; remaining fields come from the worker's bounded raw-file reread after browser-close attempt. `exact` compares fixture; `equalsReturned` compares actual automation bytes. Neither is independent review.
+- `timing`: hostValidationMilliseconds, hostPersistenceMilliseconds, browserElapsedMilliseconds. Independent clocks; no performance or cross-clock ordering claim.
+- `instrumentation`: ready `{playwright,cdpNetwork,cdpAudits,routes}`, eventCount, attemptedEvents, eventCap:2048, droppedEvents, truncatedEvents, observerExceptions, callbackErrors, collectionBeforeEvaluate, captureClosedAfterCleanup, traceCloses `{private,public}`, unexpectedRedirectObservations, unexpectedApplicationRequestObservations, unexpectedRouteRequests, complete, clock:"worker-monotonic-receipt", browserClock:"browser-performance-independent", crossClockOrderingClaimed:false.
+- `trace`: public/private nullable `{bytes,sha256}` receipts. Private path/contents are omitted.
+
+`localObservationComplete` requires exactly one browser launch and payload evaluation, settled non-timeout/non-overrun evaluation, complete bounded instrumentation, returned browser close, no host/cleanup errors or protocol deviations. It does not require page success or matching bytes. Worker exit0 means only this local condition; exit1 indicates incompleteness. A faithfully recorded page failure, wrong bytes, envelope rejection or non-timeout automation rejection may therefore exit0.
+
+Status enum and precedence: `host-incomplete`; then no return→`evaluate-rejected`; invalid envelope→`envelope-rejected`; available bytes without complete closed equality to returned→`persistence-failed`; page failed→`page-failed-without-bytes` or `page-failed-with-bytes`; candidate with wrong bytes→`valid-byte-mismatch`; otherwise→`candidate-byte-transfer-recorded`. Page failure and byte mismatch remain distinct in returned fields even when status prioritizes the page failure.
+
+The independent reviewer must validate actual retained artifacts and parent-owned capture/wrapper/observer receipts, not trust status/exit0. In particular, verify one invocation; exact source/runtime/allocation binding; exclusive writes and actual closes; full persisted128B equality to actual return and independently generated expected bytes; and externally observed whole-process completion. Root's capture receipt supplies captureStartedUTC/captureCompletedUTC. Page/device flags, browser.close return and external process closure are separate predicates. A well-recorded failure may pass record-integrity review without passing readback success.

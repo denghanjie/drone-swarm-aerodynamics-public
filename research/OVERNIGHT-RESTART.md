@@ -4,6 +4,10 @@
 
 Public additive worktree: current repository, branch `codex/m31-audit-2026-10-15`. Preserve the original eight-step roadmap and historical M31 base. Later remote main/DOT at `1336f5c416875a9651f92b58b2ed06649f25b04e` remains separate and untouched. The private workspace, attachments, credentials and chat records must never be published.
 
+## New prospective GPU readback cycle — preparing source publication
+
+`research/m31-gpu-readback-trial-2026-10-16/` is a separate prospectively adopted engineering test. Opening 23:40:54 UTC, diagnostic launch closes23:55 UTC, saved review closes00:10 UTC, presentation QA closes00:20 UTC. Original overnight cutoff and all earlier terminal campaigns remain unchanged. Independent integrated static review is complete; runtime selected-file pins and immutable freeze are saved. No launch until exact GitHub source commit/freeze are independently retrieved and all pins verified. One diagnostic and one supervised review only. No new scientific qualification.
+
 ## Additive static integration checkpoint — original launch window remains closed
 
 `research/m31-gpu-readback-integration-2026-10-16/` continues source preparation after the original overnight cutoff. The dated WGSL primary-source arithmetic/layout gate is now resolved; the prior30preparation pins and expected fixture remain unchanged. A new host recorder, copied lifecycle wrappers with disabled admission, and independent saved-file checker source are integrated with25host pure cases,37independent checker pure/scratch cases,4admission test methods and independent static review. Nine integratedPython files parse successfully. No new browser,GPU,diagnostic or full saved-review invocation is allocated or executed.
