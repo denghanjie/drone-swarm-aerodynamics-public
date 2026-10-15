@@ -51,9 +51,14 @@ labels={'synthetic-transfer-complete':'Synthetic transfer completed once',
         'transfer-failed-before-sink-acceptance':'Transfer failed before upload acceptance',
         'incomplete':'Diagnostic incomplete'}
 outcome=labels[worker['status']] if capture_ok else 'Diagnostic lacks complete external closure'
+browser_blocks=[e for e in events if e['kind']=='cdp-loading-failed' and e['data'].get('corsError')=='LocalNetworkAccessPermissionDenied']
 interpretation=('The exact synthetic payload reached the file and the browser accepted its receipt in this one recorded attempt.'
                 if worker['status']=='synthetic-transfer-complete' and capture_ok else
                 'The saved records locate the observed boundary for this single synthetic attempt. Inspect the trace for what the browser and server actually reported; the historical GPU failure remains unexplained.')
+if browser_blocks and worker['status']=='transfer-failed-before-sink-acceptance' and capture_ok:
+    interpretation='Chrome reported LocalNetworkAccessPermissionDenied for this synthetic request. The sink recorded one socket connection but no HTTP request, and no payload file was saved. This identifies a browser-reported boundary in this trial; it does not establish the historical GPU failure cause.'
+    stages[1]['detail'] += ' The later browser failure event reports LocalNetworkAccessPermissionDenied.'
+    stages[1]['evidenceRefs'] += refs('cdp-loading-failed')
 names=['results/result.json','raw/trace.public.ndjson','results/budget.json','results/capture.json',
        'publication/capture-execution.json','publication/capture-output.json','publication/observer-output.json',
        'review/results/review.json','publication/review-execution.json','publication/review-output.json','payload.json','payload.bin']

@@ -4,11 +4,11 @@
 
 Public additive worktree: current repository, branch `codex/m31-audit-2026-10-15`. Preserve the original eight-step roadmap and historical M31 base. Later remote main/DOT at `1336f5c416875a9651f92b58b2ed06649f25b04e` remains separate and untouched. The private workspace, attachments, credentials and chat records must never be published.
 
-## Current preparation — separate synthetic transport diagnostic
+## Current checkpoint — synthetic diagnostic terminal; saved review prepared
 
-`research/m31-transport-diagnostic-2026-10-16/PROTOCOL.md` prospectively adopts one new 3,840-byte heap-backed transfer, after independent scope challenge. It is not a third runtime/scientific campaign: no GPU, old data, wake/root/body calculation or old missing-output replacement. At most one browser lifecycle and one POST; 60-second external envelope, 8-MiB combined retained-output cap, sampled 2-GiB RSS cap and original 23:00 UTC cutoff. No automatic scientific successor. Source and schema are under independent static review; **no freeze, published source or diagnostic invocation exists yet**. The historical failure cause remains unknown.
+`research/m31-transport-diagnostic-2026-10-16/`: source `fe2c19a30b4605ec755e8e7103946d7ef037a76a`, freeze `3a2f596279d7720ad16ca4eb07685061ecb54769c6c86867750d23d75327d7d8` (44pins), published and independently verified before invocation. Sole synthetic attempt closed cleanly: Chrome reported LocalNetworkAccessPermissionDenied; one sink connection, zero HTTP handler entries, no file or acknowledgement. No GPU or scientific work. Actual capture exit0; conservative full tool observation8.073s. Historical failure cause remains unknown.
 
-A separate official-browser-documentation ledger and static physical-data lead are retained in the new directory. The latter verifies a 2026 preprint on one quadcopter's interacting rotor wakes but identifies no compatible reusable raw dataset; no physical experiment or fit. A Three.js evidence diagram is source-only and unbound pending actual diagnostic records. All prior packages, budgets and failures below remain immutable.
+The new public saved review is frozen separately (`ea167831dea2016e84a4378f900be5d54cedd4d64398454872fe568f8623ec01`,9pins) after20inert schema cases, but has not run. One30s/8MiBreview only. Never repeat the diagnostic. New viewer binding and final publication follow actual review completion. All prior budgets/failures below remain immutable. The original23:00UTCcutoff remains unchanged and no scientific successor is allocated.
 
 ## Latest closed operational state — both failed attempts published and verified
 

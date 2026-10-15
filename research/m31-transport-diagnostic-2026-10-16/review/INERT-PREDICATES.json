@@ -1,0 +1,163 @@
+{
+  "kind": "inert-pure-predicate-extractions",
+  "sourcePins": [
+    {
+      "path": "check-records.py",
+      "bytes": 28070,
+      "sha256": "f58ceecf9fe13ded86697c7fc5a0ade7e9cf82ec60ab3a5479015d3e10588dbe"
+    },
+    {
+      "path": "check-records.pre-edge-test.py.txt",
+      "bytes": 27793,
+      "sha256": "8ea847daae61421bc0291eb19cca48ae639971462fa01b6ca01e34ad74c58ade"
+    }
+  ],
+  "operationalSourceImported": false,
+  "operationalCheckerInvoked": false,
+  "extractions": [
+    {
+      "label": "worker-envelope",
+      "source": "check-records.py",
+      "line": 162,
+      "expression": "worker['version'] == 1 and worker['kind'] == 'synthetic-transport-diagnostic'\n            and worker['terminal'] is True and worker['sourceCommit'] == source\n            and worker['sourceFreezeSHA256'] == freeze_sha",
+      "expressionSHA256": "6b5ade79638498097eba6bffa5657236cd3523983cff1518f139fb550e7d0e11",
+      "ast": "BoolOp(op=And(), values=[Compare(left=Subscript(value=Name(id='worker', ctx=Load()), slice=Constant(value='version'), ctx=Load()), ops=[Eq()], comparators=[Constant(value=1)]), Compare(left=Subscript(value=Name(id='worker', ctx=Load()), slice=Constant(value='kind'), ctx=Load()), ops=[Eq()], comparators=[Constant(value='synthetic-transport-diagnostic')]), Compare(left=Subscript(value=Name(id='worker', ctx=Load()), slice=Constant(value='terminal'), ctx=Load()), ops=[Is()], comparators=[Constant(value=True)]), Compare(left=Subscript(value=Name(id='worker', ctx=Load()), slice=Constant(value='sourceCommit'), ctx=Load()), ops=[Eq()], comparators=[Name(id='source', ctx=Load())]), Compare(left=Subscript(value=Name(id='worker', ctx=Load()), slice=Constant(value='sourceFreezeSHA256'), ctx=Load()), ops=[Eq()], comparators=[Name(id='freeze_sha', ctx=Load())])])"
+    },
+    {
+      "label": "instrumentation-conjunction",
+      "source": "check-records.py",
+      "line": 178,
+      "expression": "inst['complete'] is healthy and inst['eventCap'] == 2048\n            and inst['clock'] == 'worker-monotonic-receipt'\n            and inst['browserClock'] == 'browser-performance-independent'\n            and inst['crossClockOrderingClaimed'] is False\n            and inst['captureClosedAfterCleanup'] is True",
+      "expressionSHA256": "4d93c5413e6edfa4dd9f734fde0ce647389c090527443910aeb20e883d6b72da",
+      "ast": "BoolOp(op=And(), values=[Compare(left=Subscript(value=Name(id='inst', ctx=Load()), slice=Constant(value='complete'), ctx=Load()), ops=[Is()], comparators=[Name(id='healthy', ctx=Load())]), Compare(left=Subscript(value=Name(id='inst', ctx=Load()), slice=Constant(value='eventCap'), ctx=Load()), ops=[Eq()], comparators=[Constant(value=2048)]), Compare(left=Subscript(value=Name(id='inst', ctx=Load()), slice=Constant(value='clock'), ctx=Load()), ops=[Eq()], comparators=[Constant(value='worker-monotonic-receipt')]), Compare(left=Subscript(value=Name(id='inst', ctx=Load()), slice=Constant(value='browserClock'), ctx=Load()), ops=[Eq()], comparators=[Constant(value='browser-performance-independent')]), Compare(left=Subscript(value=Name(id='inst', ctx=Load()), slice=Constant(value='crossClockOrderingClaimed'), ctx=Load()), ops=[Is()], comparators=[Constant(value=False)]), Compare(left=Subscript(value=Name(id='inst', ctx=Load()), slice=Constant(value='captureClosedAfterCleanup'), ctx=Load()), ops=[Is()], comparators=[Constant(value=True)])])"
+    },
+    {
+      "label": "one-post-and-bounded-written-bytes",
+      "source": "check-records.py",
+      "line": 235,
+      "expression": "sink['postCount'] <= 1 and sink['writtenBytes'] <= 3840\n            and sink['writtenBytes'] <= sink['receivedBytes']",
+      "expressionSHA256": "ec65ace0221bb184b1d5f1a094b70df79311fdc8df891093010d8e12d4129a6d",
+      "ast": "BoolOp(op=And(), values=[Compare(left=Subscript(value=Name(id='sink', ctx=Load()), slice=Constant(value='postCount'), ctx=Load()), ops=[LtE()], comparators=[Constant(value=1)]), Compare(left=Subscript(value=Name(id='sink', ctx=Load()), slice=Constant(value='writtenBytes'), ctx=Load()), ops=[LtE()], comparators=[Constant(value=3840)]), Compare(left=Subscript(value=Name(id='sink', ctx=Load()), slice=Constant(value='writtenBytes'), ctx=Load()), ops=[LtE()], comparators=[Subscript(value=Name(id='sink', ctx=Load()), slice=Constant(value='receivedBytes'), ctx=Load())])])"
+    },
+    {
+      "label": "independent-persisted-byte-read",
+      "source": "check-records.py",
+      "line": 248,
+      "expression": "persistence['bytes'] == len(received) == sink['writtenBytes']\n                and persistence['sha256'] == digest(received)\n                and persistence['exact'] is (received == fixture)",
+      "expressionSHA256": "5edfed51a8ba6a6fdf01d121f4603c2b698d35f8b2286f61d5134ac163793bfe",
+      "ast": "BoolOp(op=And(), values=[Compare(left=Subscript(value=Name(id='persistence', ctx=Load()), slice=Constant(value='bytes'), ctx=Load()), ops=[Eq(), Eq()], comparators=[Call(func=Name(id='len', ctx=Load()), args=[Name(id='received', ctx=Load())], keywords=[]), Subscript(value=Name(id='sink', ctx=Load()), slice=Constant(value='writtenBytes'), ctx=Load())]), Compare(left=Subscript(value=Name(id='persistence', ctx=Load()), slice=Constant(value='sha256'), ctx=Load()), ops=[Eq()], comparators=[Call(func=Name(id='digest', ctx=Load()), args=[Name(id='received', ctx=Load())], keywords=[])]), Compare(left=Subscript(value=Name(id='persistence', ctx=Load()), slice=Constant(value='exact'), ctx=Load()), ops=[Is()], comparators=[Compare(left=Name(id='received', ctx=Load()), ops=[Eq()], comparators=[Name(id='fixture', ctx=Load())])])])"
+    },
+    {
+      "label": "complete-sink-persistence",
+      "source": "check-records.py",
+      "line": 255,
+      "expression": "sink['started'] is True and persistence['exists'] is True and persistence['bytes'] == 3840\n                and sink['status'] == 200\n                and sink['receipt'] == {'complete':True,'bytes':3840,'sha256':persistence['sha256']}\n                and len(by_kind('sink-persisted')) == 1",
+      "expressionSHA256": "1f3d58e51ed3b29b69f3c094ab563253c352551132a3450127c15bfea215381c",
+      "ast": "BoolOp(op=And(), values=[Compare(left=Subscript(value=Name(id='sink', ctx=Load()), slice=Constant(value='started'), ctx=Load()), ops=[Is()], comparators=[Constant(value=True)]), Compare(left=Subscript(value=Name(id='persistence', ctx=Load()), slice=Constant(value='exists'), ctx=Load()), ops=[Is()], comparators=[Constant(value=True)]), Compare(left=Subscript(value=Name(id='persistence', ctx=Load()), slice=Constant(value='bytes'), ctx=Load()), ops=[Eq()], comparators=[Constant(value=3840)]), Compare(left=Subscript(value=Name(id='sink', ctx=Load()), slice=Constant(value='status'), ctx=Load()), ops=[Eq()], comparators=[Constant(value=200)]), Compare(left=Subscript(value=Name(id='sink', ctx=Load()), slice=Constant(value='receipt'), ctx=Load()), ops=[Eq()], comparators=[Dict(keys=[Constant(value='complete'), Constant(value='bytes'), Constant(value='sha256')], values=[Constant(value=True), Constant(value=3840), Subscript(value=Name(id='persistence', ctx=Load()), slice=Constant(value='sha256'), ctx=Load())])]), Compare(left=Call(func=Name(id='len', ctx=Load()), args=[Call(func=Name(id='by_kind', ctx=Load()), args=[Constant(value='sink-persisted')], keywords=[])], keywords=[]), ops=[Eq()], comparators=[Constant(value=1)])])"
+    },
+    {
+      "label": "sink-persistence-event-projection",
+      "source": "check-records.py",
+      "line": 260,
+      "expression": "all(persisted_event[k] == sink['receipt'][k] for k in ['complete','bytes','sha256'])",
+      "expressionSHA256": "59d4e553cf5b29b6a1884ffc933b077b7dd354e2c14b9563893adfcdc545cf23",
+      "ast": "Call(func=Name(id='all', ctx=Load()), args=[GeneratorExp(elt=Compare(left=Subscript(value=Name(id='persisted_event', ctx=Load()), slice=Name(id='k', ctx=Load()), ctx=Load()), ops=[Eq()], comparators=[Subscript(value=Subscript(value=Name(id='sink', ctx=Load()), slice=Constant(value='receipt'), ctx=Load()), slice=Name(id='k', ctx=Load()), ctx=Load())]), generators=[comprehension(target=Name(id='k', ctx=Store()), iter=List(elts=[Constant(value='complete'), Constant(value='bytes'), Constant(value='sha256')], ctx=Load()), ifs=[], is_async=0)])], keywords=[])"
+    },
+    {
+      "label": "independent-limited-transport-classification",
+      "source": "check-records.py",
+      "line": 281,
+      "expression": "worker['status'] == status",
+      "expressionSHA256": "f31851ba79bf87dd856132fbb5bfbf0f943e6f085ea1142cd320241aa94869f4",
+      "ast": "Compare(left=Subscript(value=Name(id='worker', ctx=Load()), slice=Constant(value='status'), ctx=Load()), ops=[Eq()], comparators=[Name(id='status', ctx=Load())])"
+    },
+    {
+      "label": "incomplete-diagnostic-outside-review-pass-scope",
+      "source": "check-records.py",
+      "line": 356,
+      "expression": "complete and sink['closed'] is True and sink['activeWrites'] == 0",
+      "expressionSHA256": "da9623e53763b1d2560c3298c2766d9227d64b01b5b11edc9162d524a62e5dfa",
+      "ast": "BoolOp(op=And(), values=[Name(id='complete', ctx=Load()), Compare(left=Subscript(value=Name(id='sink', ctx=Load()), slice=Constant(value='closed'), ctx=Load()), ops=[Is()], comparators=[Constant(value=True)]), Compare(left=Subscript(value=Name(id='sink', ctx=Load()), slice=Constant(value='activeWrites'), ctx=Load()), ops=[Eq()], comparators=[Constant(value=0)])])"
+    },
+    {
+      "label": "complete-required-new-evidence-pins",
+      "source": "check-records.py",
+      "line": 137,
+      "expression": "needed <= pins.keys()",
+      "expressionSHA256": "62d71db61f79d205cf778de8ad7a6a519f5290ec67ed225366ec5f30ee6d87fe",
+      "ast": "Compare(left=Name(id='needed', ctx=Load()), ops=[LtE()], comparators=[Call(func=Attribute(value=Name(id='pins', ctx=Load()), attr='keys', ctx=Load()), args=[], keywords=[])])"
+    },
+    {
+      "label": "actual-completed-capture-within-allowance",
+      "source": "check-records.py",
+      "line": 333,
+      "expression": "execution['toolSessionCompleted'] is True and execution['actualCaptureExitCode'] == 0\n            and number(execution['actualFullElapsedSeconds'], 60)",
+      "expressionSHA256": "139f7384a7c309224f686e0b495d4d72f367369edc9d34bcce6c0b5403b6100b",
+      "ast": "BoolOp(op=And(), values=[Compare(left=Subscript(value=Name(id='execution', ctx=Load()), slice=Constant(value='toolSessionCompleted'), ctx=Load()), ops=[Is()], comparators=[Constant(value=True)]), Compare(left=Subscript(value=Name(id='execution', ctx=Load()), slice=Constant(value='actualCaptureExitCode'), ctx=Load()), ops=[Eq()], comparators=[Constant(value=0)]), Call(func=Name(id='number', ctx=Load()), args=[Subscript(value=Name(id='execution', ctx=Load()), slice=Constant(value='actualFullElapsedSeconds'), ctx=Load()), Constant(value=60)], keywords=[])])"
+    },
+    {
+      "label": "assignment:healthy:1",
+      "source": "check-records.py",
+      "line": 175,
+      "expression": "all(inst['ready'].values()) and all(inst[k] == 0 for k in\n        ['droppedEvents','truncatedEvents','observerExceptions','callbackErrors','unexpectedRedirectObservations'])",
+      "expressionSHA256": "9b588c54cbb026a41a7253788991116a1c1f45d4fb6179b7aa1cdd24d3b996bc",
+      "ast": "BoolOp(op=And(), values=[Call(func=Name(id='all', ctx=Load()), args=[Call(func=Attribute(value=Subscript(value=Name(id='inst', ctx=Load()), slice=Constant(value='ready'), ctx=Load()), attr='values', ctx=Load()), args=[], keywords=[])], keywords=[]), Call(func=Name(id='all', ctx=Load()), args=[GeneratorExp(elt=Compare(left=Subscript(value=Name(id='inst', ctx=Load()), slice=Name(id='k', ctx=Load()), ctx=Load()), ops=[Eq()], comparators=[Constant(value=0)]), generators=[comprehension(target=Name(id='k', ctx=Store()), iter=List(elts=[Constant(value='droppedEvents'), Constant(value='truncatedEvents'), Constant(value='observerExceptions'), Constant(value='callbackErrors'), Constant(value='unexpectedRedirectObservations')], ctx=Load()), ifs=[], is_async=0)])], keywords=[])])"
+    },
+    {
+      "label": "assignment:healthy:2",
+      "source": "check-records.py",
+      "line": 177,
+      "expression": "healthy and inst['attemptedEvents'] == inst['eventCount']",
+      "expressionSHA256": "b14d907dbdb349c7c8fb083f978bbf065df9484ad67ee4cd463add788eafd5f7",
+      "ast": "BoolOp(op=And(), values=[Name(id='healthy', ctx=Load()), Compare(left=Subscript(value=Name(id='inst', ctx=Load()), slice=Constant(value='attemptedEvents'), ctx=Load()), ops=[Eq()], comparators=[Subscript(value=Name(id='inst', ctx=Load()), slice=Constant(value='eventCount'), ctx=Load())])])"
+    },
+    {
+      "label": "assignment:complete:1",
+      "source": "check-records.py",
+      "line": 275,
+      "expression": "healthy and not worker['errors'] and not worker['cleanupErrors']\n                and not worker['protocolDeviations'] and browser is not None",
+      "expressionSHA256": "aa380071dafd13f8b425a46cfc49a0639af81ed14f59bbcd03e4c157b051378b",
+      "ast": "BoolOp(op=And(), values=[Name(id='healthy', ctx=Load()), UnaryOp(op=Not(), operand=Subscript(value=Name(id='worker', ctx=Load()), slice=Constant(value='errors'), ctx=Load())), UnaryOp(op=Not(), operand=Subscript(value=Name(id='worker', ctx=Load()), slice=Constant(value='cleanupErrors'), ctx=Load())), UnaryOp(op=Not(), operand=Subscript(value=Name(id='worker', ctx=Load()), slice=Constant(value='protocolDeviations'), ctx=Load())), Compare(left=Name(id='browser', ctx=Load()), ops=[IsNot()], comparators=[Constant(value=None)])])"
+    },
+    {
+      "label": "assignment:status:1",
+      "source": "check-records.py",
+      "line": 278,
+      "expression": "'incomplete' if not complete else 'synthetic-transfer-complete' if persistence['exact'] and ack\n              else 'exact-persistence-acknowledgement-failed' if persistence['exact']\n              else 'sink-accepted-incomplete' if sink['started'] else 'transfer-failed-before-sink-acceptance'",
+      "expressionSHA256": "9452b8b6bf8c4cdba87ac68b8c6d43033139ba03e0dde6493b3bb0a2241f1cff",
+      "ast": "IfExp(test=UnaryOp(op=Not(), operand=Name(id='complete', ctx=Load())), body=Constant(value='incomplete'), orelse=IfExp(test=BoolOp(op=And(), values=[Subscript(value=Name(id='persistence', ctx=Load()), slice=Constant(value='exact'), ctx=Load()), Name(id='ack', ctx=Load())]), body=Constant(value='synthetic-transfer-complete'), orelse=IfExp(test=Subscript(value=Name(id='persistence', ctx=Load()), slice=Constant(value='exact'), ctx=Load()), body=Constant(value='exact-persistence-acknowledgement-failed'), orelse=IfExp(test=Subscript(value=Name(id='sink', ctx=Load()), slice=Constant(value='started'), ctx=Load()), body=Constant(value='sink-accepted-incomplete'), orelse=Constant(value='transfer-failed-before-sink-acceptance')))))"
+    },
+    {
+      "label": "assignment:needed:1",
+      "source": "check-records.py",
+      "line": 131,
+      "expression": "{'freeze.json', 'payload.bin', 'payload.json', 'config.json',\n              'runtime-provenance.json', 'capture-launch.lock', 'raw/trace.public.ndjson',\n              'results/result.json', 'results/budget.json', 'results/capture.json',\n              'results/wrapper.json', 'results/diagnostic-stdout.txt', 'results/diagnostic-stderr.txt',\n              'results/sole-launch.lock', 'publication/capture-output.json',\n              'publication/observer-output.json', 'publication/capture-execution.json'}",
+      "expressionSHA256": "23809367a86bd49600561a2b2104eb074d805d4a222083b60bccb1b5d1e653fd",
+      "ast": "Set(elts=[Constant(value='freeze.json'), Constant(value='payload.bin'), Constant(value='payload.json'), Constant(value='config.json'), Constant(value='runtime-provenance.json'), Constant(value='capture-launch.lock'), Constant(value='raw/trace.public.ndjson'), Constant(value='results/result.json'), Constant(value='results/budget.json'), Constant(value='results/capture.json'), Constant(value='results/wrapper.json'), Constant(value='results/diagnostic-stdout.txt'), Constant(value='results/diagnostic-stderr.txt'), Constant(value='results/sole-launch.lock'), Constant(value='publication/capture-output.json'), Constant(value='publication/observer-output.json'), Constant(value='publication/capture-execution.json')])"
+    },
+    {
+      "label": "helper:digest",
+      "source": "check-records.py",
+      "line": 41,
+      "expression": "hashlib.sha256(data).hexdigest()",
+      "expressionSHA256": "3d8a489697b08e91e8c4d1c64f1036abd3ff8336a54086f5536996df5b932d8b",
+      "ast": "Call(func=Attribute(value=Call(func=Attribute(value=Name(id='hashlib', ctx=Load()), attr='sha256', ctx=Load()), args=[Name(id='data', ctx=Load())], keywords=[]), attr='hexdigest', ctx=Load()), args=[], keywords=[])"
+    },
+    {
+      "label": "helper:number",
+      "source": "check-records.py",
+      "line": 47,
+      "expression": "type(value) in (int, float) and math.isfinite(value) and 0 <= value < maximum",
+      "expressionSHA256": "9e3eda0a50b5d2a119f971ce7e17fecbe4c6a919e4133e92f9bc788525b40678",
+      "ast": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='type', ctx=Load()), args=[Name(id='value', ctx=Load())], keywords=[]), ops=[In()], comparators=[Tuple(elts=[Name(id='int', ctx=Load()), Name(id='float', ctx=Load())], ctx=Load())]), Call(func=Attribute(value=Name(id='math', ctx=Load()), attr='isfinite', ctx=Load()), args=[Name(id='value', ctx=Load())], keywords=[]), Compare(left=Constant(value=0), ops=[LtE(), Lt()], comparators=[Name(id='value', ctx=Load()), Name(id='maximum', ctx=Load())])])"
+    },
+    {
+      "label": "baseline:complete-sink-persistence",
+      "source": "check-records.pre-edge-test.py.txt",
+      "line": 255,
+      "expression": "sink['started'] is True and persistence['exact'] is True and sink['status'] == 200\n                and sink['receipt'] == {'complete':True,'bytes':3840,'sha256':EXPECTED_SHA}\n                and len(by_kind('sink-persisted')) == 1",
+      "expressionSHA256": "be0e85c8eb22ff174c7f94c7e908ca89a58a399c982b8acef533f81167feb93f",
+      "ast": "BoolOp(op=And(), values=[Compare(left=Subscript(value=Name(id='sink', ctx=Load()), slice=Constant(value='started'), ctx=Load()), ops=[Is()], comparators=[Constant(value=True)]), Compare(left=Subscript(value=Name(id='persistence', ctx=Load()), slice=Constant(value='exact'), ctx=Load()), ops=[Is()], comparators=[Constant(value=True)]), Compare(left=Subscript(value=Name(id='sink', ctx=Load()), slice=Constant(value='status'), ctx=Load()), ops=[Eq()], comparators=[Constant(value=200)]), Compare(left=Subscript(value=Name(id='sink', ctx=Load()), slice=Constant(value='receipt'), ctx=Load()), ops=[Eq()], comparators=[Dict(keys=[Constant(value='complete'), Constant(value='bytes'), Constant(value='sha256')], values=[Constant(value=True), Constant(value=3840), Name(id='EXPECTED_SHA', ctx=Load())])]), Compare(left=Call(func=Name(id='len', ctx=Load()), args=[Call(func=Name(id='by_kind', ctx=Load()), args=[Constant(value='sink-persisted')], keywords=[])], keywords=[]), ops=[Eq()], comparators=[Constant(value=1)])])"
+    }
+  ]
+}

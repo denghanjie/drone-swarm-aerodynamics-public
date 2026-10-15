@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "kind": "synthetic-transport-diagnostic",
+  "sourceCommit": "fe2c19a30b4605ec755e8e7103946d7ef037a76a",
+  "sourceFreezeSHA256": "3a2f596279d7720ad16ca4eb07685061ecb54769c6c86867750d23d75327d7d8",
+  "terminal": true,
+  "scope": "One heap-backed synthetic transport; no scientific qualification",
+  "qualified": false,
+  "scientificSuccess": false,
+  "explainsHistoricalFailure": false,
+  "retryPermitted": false,
+  "browserLaunches": 1,
+  "fetchCalls": 1,
+  "observerReadyEvent": "e2",
+  "browserResult": {
+    "attempted": true,
+    "fetchCompleted": false,
+    "acknowledged": false,
+    "httpStatus": null,
+    "receipt": null,
+    "errorName": "TypeError",
+    "redirected": null,
+    "lastPhase": "fetch-error"
+  },
+  "browserVersion": "155.0.8059.80",
+  "browserContext": {
+    "originLabel": "page-origin",
+    "isSecureContext": true
+  },
+  "expected": {
+    "bytes": 3840,
+    "sha256": "b92773fc3edb949a8a0d6e4a2f60ef2020ee2bd5bf6f8299c1448142a6cd3404"
+  },
+  "errors": [],
+  "cleanupErrors": [],
+  "protocolDeviations": [],
+  "origins": {
+    "page": {
+      "scheme": "http",
+      "host": "127.0.0.1",
+      "hostClass": "loopback",
+      "portLabel": "page8876"
+    },
+    "sink": {
+      "scheme": "http",
+      "host": "127.0.0.1",
+      "hostClass": "loopback",
+      "portLabel": "sink-ephemeral"
+    },
+    "actualOriginsEqual": false
+  },
+  "sink": {
+    "started": false,
+    "complete": false,
+    "receivedBytes": 0,
+    "writtenBytes": 0,
+    "writeCalls": 0,
+    "requestCount": 0,
+    "postCount": 0,
+    "optionsCount": 0,
+    "activeWrites": 0,
+    "status": null,
+    "receipt": null,
+    "closed": true
+  },
+  "persistence": {
+    "exists": false,
+    "bytes": null,
+    "sha256": null,
+    "exact": false
+  },
+  "runtimePinsBefore": true,
+  "runtimePinsAfter": true,
+  "lastPhase": "transfer-returned",
+  "instrumentation": {
+    "ready": {
+      "server": true,
+      "playwright": true,
+      "cdpNetwork": true,
+      "cdpAudits": true,
+      "browserBinding": true,
+      "routes": true
+    },
+    "eventCount": 32,
+    "attemptedEvents": 32,
+    "eventCap": 2048,
+    "droppedEvents": 0,
+    "truncatedEvents": 0,
+    "observerExceptions": 0,
+    "callbackErrors": 0,
+    "collectionBeforeFetch": true,
+    "captureClosedAfterCleanup": true,
+    "unexpectedRedirectObservations": 0,
+    "complete": true,
+    "clock": "worker-monotonic-receipt",
+    "browserClock": "browser-performance-independent",
+    "crossClockOrderingClaimed": false
+  },
+  "trace": {
+    "public": {
+      "bytes": 7802,
+      "sha256": "16b9231f2537874a61a4b2bf12ed80b8ea7c2993c12eb443b6306c5547a2f29f"
+    },
+    "private": {
+      "bytes": 9911,
+      "sha256": "8508ffe17e324c8f49dcc00ebb4413a8eaa9150bcdf66fbba636247bf2c061e0"
+    }
+  },
+  "status": "transfer-failed-before-sink-acceptance",
+  "elapsedSeconds": 1.374019958,
+  "localObservationComplete": true
+}

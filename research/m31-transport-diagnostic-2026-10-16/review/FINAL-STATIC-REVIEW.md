@@ -1,0 +1,7 @@
+# Final separate saved-review source gate
+
+The coordinator inspected the complete corrected checker source and producer schema, all20inert cases, extraction method, phase accounting, external completion projection and final output contract. The checker reads this new campaign only, imports standard-library readers, contains no subprocess/browser/GPU execution, and never reads private traces or prior campaigns. The terminal lock, fresh output requirement,30secondhard timer,25secondwork deadline and8MiBoutput cap are explicit. Source pin: `f58ceecf9fe13ded86697c7fc5a0ade7e9cf82ec60ab3a5479015d3e10588dbe`.
+
+The source was corrected before this review freeze after an inert example exposed the byte-count/fixture-equality conflation. Preserve the old source and test evidence. The diagnostic source is unchanged. A complete failed transfer can pass this public-consistency scope; incomplete lifecycle cannot, and a review failure alone does not establish corrupted data. Actual checker exit and exact summary are mandatory before any final scoped pass claim. Private raw-trace transformation and private directory enumeration are outside this checker’s scope.
+
+The real new evidence manifest contains17pins and includes the exact actual capture completion and later summary copies. Final source/manifest pins must be checked immediately before the sole invocation. Any failure consumes this saved-review allocation; no source repair or retry is authorized.
