@@ -1,0 +1,7 @@
+# Public checkpoint review
+
+Reviewed all new text, code, JSON and compressed-vector evidence before publishing. No user attachments, screenshots of conversations, private workspace paths, credentials, emails, hostnames, usernames, hardware serials, external personal data or access-controlled third-party observations are included. Generic /tmp artifact locations in the original verifier metadata/source are tooling provenance and contain no user identity. Scientific hardware/OS/runtime specifications are retained intentionally for reproducibility.
+
+All26raw files are copied exactly from the single invocation. Original independent checker/report/stdout/stderr/runtime are unchanged; no sanitizer alters scientific values. The budget ledger adds terminal status and separate saved-verifier accounting after the review. Frozen scientific files remain byte-identical. Later main/DOT and historical checkpoints are untouched. Generated viewer and narrative documents are postrun artifacts. Source/data manifest excludes itself and records every included checkpoint file.
+
+New remote source freeze e23e053 was verified by a separate GitHub API commit fetch and byte-for-byte freeze fetch before execution. Result push/remote manifest verification are recorded in the private publication receipt after publication, without committing that private receipt. No archive transfer is necessary: full40,076,924byte raw payload is retained in Git.
