@@ -1,0 +1,111 @@
+{
+  "scope": "isolated-sanitization-only",
+  "sourceSHA256": "eba4076827bf71158e6b39b1bd9f07f5e863472e7c0e4125e15498f78f88d099",
+  "projectionSHA256": "915ca0c75ac006b94ff4c207c2146e10681193dac66145789bf0974c4ef95ae0",
+  "noRunnerImport": true,
+  "noTransportOrScience": true,
+  "status": "pass",
+  "testsPassed": 25,
+  "tests": [
+    {
+      "name": "case-insensitive-secret-header-exclusion",
+      "passed": true
+    },
+    {
+      "name": "opaque-null-origin-headers",
+      "passed": true
+    },
+    {
+      "name": "page-wildcard-origin-headers",
+      "passed": true
+    },
+    {
+      "name": "unknown-origin-does-not-expose-authority",
+      "passed": true
+    },
+    {
+      "name": "content-type-parameters-cannot-expose-private-data",
+      "passed": true
+    },
+    {
+      "name": "unknown-and-multiline-header-values-redacted",
+      "passed": true
+    },
+    {
+      "name": "known-protocol-values-retained",
+      "passed": true
+    },
+    {
+      "name": "exact-sink-label",
+      "passed": true
+    },
+    {
+      "name": "query-bearing-unknown-url-redacted",
+      "passed": true
+    },
+    {
+      "name": "private-file-url-redacted",
+      "passed": true
+    },
+    {
+      "name": "fixture-html-label",
+      "passed": true
+    },
+    {
+      "name": "fixture-script-label",
+      "passed": true
+    },
+    {
+      "name": "error-structure-retained-sensitive-text-excluded",
+      "passed": true
+    },
+    {
+      "name": "noncategorical-error-text-redacted",
+      "passed": true
+    },
+    {
+      "name": "opaque-origin-context-preserved",
+      "passed": true
+    },
+    {
+      "name": "lna-state-and-warning-preserved",
+      "passed": true
+    },
+    {
+      "name": "preflight-correlation-preserved",
+      "passed": true
+    },
+    {
+      "name": "unknown-transfer-identifier-excluded",
+      "passed": true
+    },
+    {
+      "name": "missing-fields-remain-missing",
+      "passed": true
+    },
+    {
+      "name": "lexical-private-values-rejected",
+      "passed": true
+    },
+    {
+      "name": "oversized-header-value-redacted",
+      "passed": true
+    },
+    {
+      "name": "undefined-optionals-remain-absent",
+      "passed": true
+    },
+    {
+      "name": "oversized-header-increments-health-counter",
+      "passed": true
+    },
+    {
+      "name": "vm-has-no-host-io-capabilities",
+      "passed": true
+    },
+    {
+      "name": "aggregate-no-cookie-auth-token-private-path-or-ephemeral-port",
+      "passed": true
+    }
+  ]
+}

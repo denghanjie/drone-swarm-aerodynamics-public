@@ -4,7 +4,13 @@
 
 Public additive worktree: current repository, branch `codex/m31-audit-2026-10-15`. Preserve the original eight-step roadmap and historical M31 base. Later remote main/DOT at `1336f5c416875a9651f92b58b2ed06649f25b04e` remains separate and untouched. The private workspace, attachments, credentials and chat records must never be published.
 
-## Current operational state — both failed attempts published and verified
+## Current preparation — separate synthetic transport diagnostic
+
+`research/m31-transport-diagnostic-2026-10-16/PROTOCOL.md` prospectively adopts one new 3,840-byte heap-backed transfer, after independent scope challenge. It is not a third runtime/scientific campaign: no GPU, old data, wake/root/body calculation or old missing-output replacement. At most one browser lifecycle and one POST; 60-second external envelope, 8-MiB combined retained-output cap, sampled 2-GiB RSS cap and original 23:00 UTC cutoff. No automatic scientific successor. Source and schema are under independent static review; **no freeze, published source or diagnostic invocation exists yet**. The historical failure cause remains unknown.
+
+A separate official-browser-documentation ledger and static physical-data lead are retained in the new directory. The latter verifies a 2026 preprint on one quadcopter's interacting rotor wakes but identifies no compatible reusable raw dataset; no physical experiment or fit. A Three.js evidence diagram is source-only and unbound pending actual diagnostic records. All prior packages, budgets and failures below remain immutable.
+
+## Latest closed operational state — both failed attempts published and verified
 
 The terminal runtime-replication result is published at **22ca9e45cfe777def90dcab03530ba00055d3e99**. The exact remote commit and45,026-byte manifest were independently retrieved through the GitHub connector; manifest SHA-256 `ed08cdd59dfd73e93d28c1f4c4f4ef7e5f50ba6ef77a5c5e0024308d2caae778` and all208local pins matched. See `research/publication-receipts/m31-runtime-result-2026-10-16.json`. This is publication-byte verification, not a passing scientific or semantic review.
 

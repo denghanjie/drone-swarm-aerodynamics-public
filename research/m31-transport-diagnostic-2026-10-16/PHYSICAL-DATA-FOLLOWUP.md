@@ -1,0 +1,11 @@
+# Parallel physical-data desk review
+
+This note is independent of the synthetic transport diagnostic. No physical dataset was downloaded, fitted or digitized, and no physical or scientific experiment ran for this review.
+
+The newly checked [DLR institutional record for Wolf et al.](https://elib.dlr.de/223206/) lists a published article PDF, not a raw-flow dataset manifest. A focused search of the title/DOI and DLR/Zenodo leads did not locate a compatible raw record. This limited search does not establish that none exists. The earlier [data requirements](../m31-source-contract-planning-2026-10-16/DATA-REQUIREMENTS.md) remain unresolved.
+
+New verified lead: Pratschke, Wolf, Schanz, Schröder and Schmidt, [*Wake interactions drive synchronized vortex merging in a hovering quadcopter*, arXiv:2609.19507v2](https://arxiv.org/html/2609.19507v2), revised 18 September 2026; **preprint**, not a verified journal publication. Read §§2.1, 3.3, 4–5. It analyzes Wolf's assimilated hover observations and reports a collective wake feature near 39.6 Hz. The short 2.62-second record includes varying rotor speeds and uncertain control action. The authors leave broader configurations and parameter identification open. The inspected HTML supplies no raw-data manifest; its CC BY-NC-ND article license does not establish a raw-data license. The abstract page lists v1 and v2; v2 was used after discovery through v1. No independent reproduction is claimed.
+
+**Our next-question proposal:** distinguish average-load preservation from fluctuation/spectral preservation before defining a physically meaningful approximation target. A steady model's inability to reproduce fluctuations is not by itself evidence of unacceptable average-load error. A future experiment needs compatible measured flow and receiver-load time series, adequate durations/repeats, actuator records, uncertainty and reuse terms; lock the observable and tolerance before inspecting held-outs. This is a falsification direction, not an adopted algorithm, a novelty claim or a new launch allocation.
+
+No figure, full article, numerical dataset or externally licensed analysis code is redistributed here. The machine-readable source entry and search scope are in `physical-source-additions.json`; all prior negative results and physical limitations remain unchanged.
