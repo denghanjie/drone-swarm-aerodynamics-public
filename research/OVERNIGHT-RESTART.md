@@ -4,7 +4,13 @@
 
 Public additive worktree: current repository, branch `codex/m31-audit-2026-10-15`. Preserve the original eight-step roadmap and historical M31 base. Later remote main/DOT at `1336f5c416875a9651f92b58b2ed06649f25b04e` remains separate and untouched. The private workspace, attachments, credentials and chat records must never be published.
 
-## Current checkpoint — synthetic transport and its public review are terminal
+## Current static follow-up — ready for publication
+
+`research/m31-followup-planning-2026-10-16/` contains the completed public-data compatibility desk review, independent NanoBench metadata challenge, coordinator reproduction, verified bibliography, claim/literature ledgers, and installed-API rationale for a control-channel alternative. Three partial datasets were identified; none currently establishes joint thrust-plus-spatial-flow validation. NanoBench inventory107CSV/107YAML/87distinctCSVblobs and all33treeobjects reconcile; instrumented mass40.85g differs from assumed27g. Archives and CSV payloads were not acquired. Read its MORNING-SUMMARY and NEXT-DECISION.
+
+No new experiment or implementation is allocated. The existing Three.js transport view remains unchanged and byte-bound to the prior result; this is ancillary desk work. Original23:00UTCcutoff and every closed historical allocation remain unchanged. Complete privacy review, additive publication and independent exact-commit verification before reporting publication.
+
+## Latest completed experimental checkpoint — synthetic transport and its public review are terminal
 
 `research/m31-transport-diagnostic-2026-10-16/`: diagnostic source `fe2c19a30b4605ec755e8e7103946d7ef037a76a`, freeze `3a2f596279d7720ad16ca4eb07685061ecb54769c6c86867750d23d75327d7d8` (44 pins), published and independently verified before invocation. Sole synthetic attempt closed cleanly. Chrome reported LocalNetworkAccessPermissionDenied; one sink connection, zero HTTP handler entries, no file or acknowledgement. No GPU or scientific work. Actual capture exit 0; conservative full tool observation 8.073 s. Historical GPU failure cause remains unknown.
 
@@ -12,7 +18,7 @@ Review source `459a5c6f3bb5abf3107c39f9fe2b413c1bbbcbcf`, freeze `ea167831dea201
 
 The new Three.js evidence diagram binds 32 events and 12 backing records. Both presentation QA versions passed all 8 groups; root inspected screenshots, and the readability adjustment preserves all data. Viewer queued at http://127.0.0.1:8876/research/m31-transport-diagnostic-2026-10-16/viewer/ . The original server remains available; no diagnostic or scientific process is active. Read the new MILESTONE-SUMMARY and POSTRUN-RESTART.
 
-The control-channel return option is an unallocated static proposal. A physical-data desk review proceeds independently. The original 23:00 UTC cutoff remains unchanged. Publication identity and exact remote-byte verification are recorded separately after the result push; consult `research/publication-receipts/m31-transport-result-2026-10-16.json` when present. All earlier failures and budgets below remain immutable; remote main/DOT stays untouched.
+The control-channel return option is an unallocated static proposal. A physical-data desk review proceeds independently. The original 23:00 UTC cutoff remains unchanged. Result published as `98880952397aedbc99bdd11794ad6085d883328a`. The exact remote commit and 24,601-byte manifest (`6183f058ad7c616efc7b5c3e5dc0a4024e6611ed310dc6ab7b902b99c86a12ab`) were independently retrieved; all 114 local pins and committed blobs match. Receipt: `research/publication-receipts/m31-transport-result-2026-10-16.json`. All earlier failures and budgets below remain immutable; remote main/DOT stays untouched.
 
 ## Historical closed state — both failed numerical attempts published and verified
 

@@ -1,0 +1,11 @@
+# Public package review
+
+Scope: the new static follow-up directory, its publication receipt when created, and the operational restart-index update. Previously published experimental artifacts remain unchanged.
+
+The dataset specialist supplied an explicit 14-file public allowlist. Only that directory was copied; raw API wrappers, commit author/committer metadata, account identifiers, drafts and private working paths were excluded. [The transformation note](datasets/PUBLICATION-NOTE.md) describes the reduced provider records. Unmodified BSD-licensed README/LICENSE and two small YAML files retain their public scientific provenance. Author names are retained only as scholarly attribution; no contact email is needed or included. Data and article permissions are kept separate. MODERA's accompanying use notice is preserved.
+
+The coordinator reviewed the compatibility matrix, source records, two independent-audit files, installed-package receipt, source-access note, bibliography, ledgers, summary and restart decision. Automated scanning of the assembled text found no user/private absolute path, email address, private-key marker or common access-token signature. The installed-package inspection identifies package-relative source files and hashes, without exposing the installation path. Public DOI, GitHub and provider URLs are intentional. The loopback viewer URL is the existing local presentation link, not a published remote service.
+
+No flight CSV payload, large archive, browser profile, nonce, process identifier, original private trace, credential, pasted chat or attachment is included. Advertised file sizes/checksums are labeled as provider metadata, not independently verified archive payloads. The independent memo's original-input hashes bind private saved metadata originals; the public projections have their own actual bytes and checksums. The included coordinator script reproduces structural checks from those public projections.
+
+This is an explicit content review plus bounded pattern scanning, not a guarantee that arbitrary undiscovered secrets can be detected. The publication manifest binds the final actual public bytes. The evidence supports publishing this allowlisted research package under the user's standing authorization.

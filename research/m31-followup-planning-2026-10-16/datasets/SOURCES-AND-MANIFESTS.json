@@ -1,0 +1,245 @@
+{
+  "review_date_utc": "2026-10-15",
+  "scope": "Bounded public metadata and license review. No raw CSV payloads, large archives, fitting, source execution, author contact or experiments. No complete contract-compatible dataset established.",
+  "model_assumptions": {
+    "mass_g": 27,
+    "rotor_radius_mm": 23,
+    "arm_coordinates_mm": [
+      -28,
+      28
+    ],
+    "status": "Assumed model parameters, not independently verified tested hardware."
+  },
+  "candidates": [
+    {
+      "title": "UAV digital model and experimental tests",
+      "creators": [
+        {
+          "name": "Universitat Politècnica de València",
+          "affiliation": null
+        }
+      ],
+      "publication_date": "2025-10-27",
+      "version_metadata_field": null,
+      "doi": "10.5281/zenodo.17457069",
+      "record_url": "https://zenodo.org/records/17457069",
+      "metadata_url": "https://zenodo.org/api/records/17457069",
+      "access_right": "open",
+      "dataset_license": {
+        "id": "cc-by-sa-4.0"
+      },
+      "files": [
+        {
+          "filename": "digital_model_sample_hover.sim",
+          "bytes": 7163689466,
+          "provider_checksum": "md5:b6a0dd12651348b767bbc05c4c2056d7",
+          "download_url": "https://zenodo.org/api/records/17457069/files/digital_model_sample_hover.sim/content"
+        },
+        {
+          "filename": "digital_model.zip",
+          "bytes": 21886719,
+          "provider_checksum": "md5:639c34877df1fac6638d829ba79a3149",
+          "download_url": "https://zenodo.org/api/records/17457069/files/digital_model.zip/content"
+        },
+        {
+          "filename": "experimental_data.zip",
+          "bytes": 2512858162,
+          "provider_checksum": "md5:7db17fe4e723571fcffd2e7da6fed637",
+          "download_url": "https://zenodo.org/api/records/17457069/files/experimental_data.zip/content"
+        }
+      ],
+      "verification": "Official API metadata and top-level file manifest read; payloads and internal manifests not downloaded or validated.",
+      "version_page_label": "v1; API version field unset",
+      "provider_policy_url": "https://modera.webs.upv.es/data/",
+      "paper_license": "Not established; no related paper DOI supplied by the inspected API record.",
+      "measurement_description": "133 four-motor throttle combinations; provider describes seven force/moment CSV files at differing vehicle angles. These are advertised measurements; internal sampling/rawness unverified.",
+      "hardware_match": "Mass and rotor dimensions not established from inspected metadata.",
+      "unverified_contract_fields": [
+        "spatial air velocity",
+        "measured RPM",
+        "electrical supply logs",
+        "calibration and uncertainty",
+        "settled all-off observations",
+        "independently thrust-matched unequal conditions",
+        "sensor/support/registration completeness"
+      ],
+      "permitted_interpretation": "Partial command-to-load and geometry follow-up only; sample hover CFD is simulation.",
+      "provider_use_note": "Provider publishes research/education-only and operational-use exclusions; preserve that notice in any later acquisition review."
+    },
+    {
+      "title": "NanoBench",
+      "repository": "syediu/nanobench",
+      "commit": "934a1ab92c458cad99c9278a5cb63bf68af6e56c",
+      "commit_date_utc": "2026-09-16T18:29:00Z",
+      "commit_metadata_url": "https://api.github.com/repos/syediu/nanobench/commits/934a1ab92c458cad99c9278a5cb63bf68af6e56c",
+      "readme_url": "https://github.com/syediu/nanobench/blob/934a1ab92c458cad99c9278a5cb63bf68af6e56c/README.md",
+      "license_url": "https://github.com/syediu/nanobench/blob/934a1ab92c458cad99c9278a5cb63bf68af6e56c/LICENSE",
+      "directory_manifest_url": "https://api.github.com/repos/syediu/nanobench/contents/datasets/dataset?ref=934a1ab92c458cad99c9278a5cb63bf68af6e56c",
+      "recursive_tree_url": "https://api.github.com/repos/syediu/nanobench/git/trees/789b1a57d1908a81e46647d9eded7a310a0d7bf6?recursive=1",
+      "dataset_license": "BSD-3-Clause; pinned README explicitly applies it to dataset and codebase.",
+      "paper": {
+        "title": "NanoBench: A Multi-Task Benchmark Dataset for Nano-Quadrotor System Identification, Control, and State Estimation",
+        "authors": [
+          "Syed Izzat Ullah",
+          "José Baca"
+        ],
+        "url": "https://arxiv.org/html/2603.09908v2",
+        "identifier": "arXiv:2603.09908v2",
+        "date": "2026-09-16",
+        "paper_license": "CC BY 4.0",
+        "original_submission_date": "2026-03-10"
+      },
+      "hardware": {
+        "current_readme_instrumented_flying_mass_g": 40.85,
+        "stock_mass_g": 27,
+        "preprint_propeller_diameter_mm": 46,
+        "caveat": "Current v2 paper and README agree on measured 40.85 g instrumented mass versus stock 27 g. The model mass does not match this as-flown mass. Exact arm geometry remains unverified.",
+        "current_v2_instrumented_flying_mass_g": 40.85
+      },
+      "directory_inventory": {
+        "directory": "datasets/dataset",
+        "csv_files": 107,
+        "yaml_files": 107,
+        "csv_bytes": 290797892,
+        "distinct_csv_git_blob_ids": 87,
+        "shared_blob_groups": 18,
+        "csv_entries_beyond_distinct_blob_ids": 20,
+        "readme_advertised_recordings": 172,
+        "all_repository_csv_entries": 152,
+        "tree_truncated": false,
+        "interpretation": "107 is directory-scoped. Whole repository also has benchmark data and results. Equal Git blob IDs identify repeated file content at this pin; no inference about trial independence, dependence, cause or misconduct."
+      },
+      "measurement_description": "Documented synchronized/resampled 100 Hz flight telemetry includes four PWM commands, battery voltage, IMU, Vicon pose and derived vehicle velocity, and estimator/controller states. Battery voltage is forward-filled. CSV payloads not fetched; two small YAML metadata files and pinned README/LICENSE inspected.",
+      "not_identified_in_documented_schema": [
+        "independently measured thrust",
+        "measured spatial air velocity",
+        "measured RPM"
+      ],
+      "unverified_contract_fields": [
+        "settled all-off background",
+        "matched-thrust unequal conditions",
+        "force calibration and uncertainty",
+        "flow sampling positions and intervals",
+        "exact instrumented geometry"
+      ],
+      "permitted_interpretation": "Partial actuator/supply/timing reference; command thrust is not measured force.",
+      "full_manifest_local": "nanobench-pinned-manifest.json",
+      "full_tree_local": "nanobench-tree-projection.json",
+      "root_tree_sha": "789b1a57d1908a81e46647d9eded7a310a0d7bf6",
+      "estimator_caveat": "README CSV Column Reference note and v2 section III-B describe Vicon pose supplied to the EKF; Vicon-aided estimates are not an independent ground truth.",
+      "metadata_text_files_verified_against_git_blob_ids": [
+        "nanobench-README.md",
+        "nanobench-LICENSE",
+        "A1b_multisine_sysid_rep1_metadata.yaml",
+        "C4_battery_drain_rep1_metadata.yaml"
+      ]
+    },
+    {
+      "title": "Aerodynamic forces in air ducts",
+      "creators": [
+        {
+          "name": "Mouret, Jean-Baptiste",
+          "affiliation": "Centre Inria de l'Université de Lorraine"
+        },
+        {
+          "name": "Renaud, Lucien",
+          "affiliation": "Centre Inria de l'Université de Lorraine"
+        },
+        {
+          "name": "Tempez, Vladislav",
+          "affiliation": "Centre Inria de l'Université de Lorraine"
+        }
+      ],
+      "publication_date": "2024-09-25",
+      "version_metadata_field": "1.0",
+      "doi": "10.5281/zenodo.13837470",
+      "record_url": "https://zenodo.org/records/13837470",
+      "metadata_url": "https://zenodo.org/api/records/13837470",
+      "access_right": "open",
+      "dataset_license": {
+        "id": "cc-by-4.0"
+      },
+      "files": [
+        {
+          "filename": "aero_forces_in_air_ducts.tgz",
+          "bytes": 5051965098,
+          "provider_checksum": "md5:2c7c8a0ddf262bd7c513c4b5c04e71f0",
+          "download_url": "https://zenodo.org/api/records/13837470/files/aero_forces_in_air_ducts.tgz/content"
+        }
+      ],
+      "verification": "Official API metadata and top-level file manifest read; payloads and internal manifests not downloaded or validated.",
+      "article": {
+        "title": "Flying in air ducts",
+        "doi": "10.1038/s44182-025-00032-5",
+        "url": "https://www.nature.com/articles/s44182-025-00032-5",
+        "publication_date": "2025-06-13",
+        "journal": "npj Robotics",
+        "volume": 3,
+        "article_number": 16,
+        "paper_license": "CC BY 4.0, checked separately from dataset metadata"
+      },
+      "hardware": {
+        "mass_g": 130,
+        "propeller_diameter_mm": 76,
+        "width_mm": 180,
+        "controller": "Bitcraze Bolt",
+        "force_sensor": "ATI FTN-NANO17",
+        "sensor_calibration_identifier": "SI-12-0.12"
+      },
+      "measurement_description": "Force/torque map as supported drone position varies in a duct; free-air reference; sensor calibration identifier is documented, but complete uncertainty not established.",
+      "unverified_contract_fields": [
+        "measured spatial air velocity",
+        "per-motor command logs",
+        "measured RPM",
+        "logged electrical supply",
+        "raw sampling schema",
+        "matched-thrust comparison settings",
+        "settled all-off background",
+        "calibrated uncertainty"
+      ],
+      "permitted_interpretation": "Boundary/confinement load reference, not free-air nanoquad source-wake evidence."
+    }
+  ],
+  "search_scope": {
+    "providers": [
+      "Zenodo",
+      "GitHub",
+      "arXiv",
+      "Nature/npj Robotics",
+      "MODERA/UPV",
+      "Bitcraze"
+    ],
+    "discovery_topics": [
+      "Crazyflie raw thrust and PWM data",
+      "multirotor wake velocity and PIV datasets",
+      "public multirotor actuator measurements with explicit reuse licenses",
+      "figshare quadrotor thrust and propeller datasets"
+    ],
+    "not_promoted": [
+      {
+        "lead": "Large eddy simulation of quadcopter forward flight, Zenodo 7059240",
+        "reason": "Simulation-only for this evidence question."
+      },
+      {
+        "lead": "Numerical rotor configuration, Zenodo 17973886",
+        "reason": "Simulation-only for this evidence question."
+      },
+      {
+        "lead": "Bitcraze PWM-to-thrust documentation",
+        "url": "https://www.bitcraze.io/documentation/repository/crazyflie-firmware/master/functional-areas/pwm-to-thrust/",
+        "reason": "Raw file manifest and dataset-license coverage not established in bounded review."
+      },
+      {
+        "lead": "ISAE MAV rotor loads/acoustics, DOI 10.57745/AHKAZU",
+        "reason": "Provider access/manifest-license verification incomplete."
+      }
+    ],
+    "excluded_repeated_leads": [
+      "Previously discussed Wolf dataset",
+      "Previously discussed DLR dataset",
+      "Previously discussed recent vortex-merging arXiv lead"
+    ],
+    "negative_result_limit": "This is not an exhaustive survey and does not prove no suitable dataset exists."
+  },
+  "publication_scope": "Only files enumerated in public/SHA256SUMS and PUBLICATION-NOTE.md are proposed public artifacts. Raw API originals and intermediate files outside public/ are excluded."
+}

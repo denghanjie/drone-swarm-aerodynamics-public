@@ -1,0 +1,42 @@
+{
+  "projection_notice": "Allowlisted public scientific metadata and file manifest. Owner/account IDs, API action links, statistics and unrelated record-management metadata omitted. Provider description and license preserved.",
+  "source_url": "https://zenodo.org/api/records/17457069",
+  "record_url": "https://zenodo.org/records/17457069",
+  "record_id": 17457069,
+  "metadata": {
+    "title": "UAV digital model and experimental tests",
+    "publication_date": "2025-10-27",
+    "doi": "10.5281/zenodo.17457069",
+    "license": {
+      "id": "cc-by-sa-4.0"
+    },
+    "description": "<p>This dataset contains both the digital models and the experimental data of a small quadcopter UAV, developed in the context of project MODERA.&nbsp;</p>\n<p><strong>Digital model</strong></p>\n<p>This zip file contains the digital models of the UAV airframe with and without propellers, in order to conduct either a fully transient, meshed simulation or to take advantage of reduced order models such as actuator disk or actuator line. These files are provided in STEP formats. Additionally, a STEP file of the propeller is available, together with the blade description and pre-computed airfoil polar data in order to feed reduced-order models. A fully working sample model in Siemens StarCCM+ format is also provided, with the aircraft in hover conditions.<br><br><strong>Experimental data</strong></p>\n<p>This zip file contains the 133 combinations of throttle levels that have been measured at the anechoic chamber of the CMT-Clean Mobility &amp; Thermofluid Institute of UPV.&nbsp; The measurements have been repeated 7 times in order to acquire acoustic data at different angles with respect to the symmetry plane of the vehicle.</p>\n<p>The order of the motors is:<br>&nbsp;0 - front right<br>&nbsp;1 - rear left<br>&nbsp;2 - front left<br>&nbsp;3 - rear right</p>\n<p>The \"forces\" folder contains 7 csv files with the throttle level of each motor, and the forces and moments measurements at each of the seven angles.&nbsp;In the absence of flow (this case) forces and moments shouldn't be affected by UAV angle, but the 7 repetitions may be useful to cross-validate the results. The axes are defined as follows: the x-axis of the balance points towards the microphones (towards the front of the UAV at the 0-degree position and towards the rear at the 180-degree position).<br>The z-axis of the balance is vertical and points upwards from the UAV, being positive in the direction of the thrust of the propellers. The y-axis is defined in such a way that a right-handed trihedron is created.</p>\n<p>The \"acoustics\" folder contains acoustic measurements at the 7 different angles. The microphones are located approximately at a 2 m radius and equispaced 30 degrees.&nbsp; Mic1 is 60 degrees below the plane of rotation of the propellers. Mic2 is 30 degrees below the plane of rotation. Mic3 is at the plane of rotation. Mic4 is 30 degrees above the plane of rotation. Mic5 is 60 degrees above the plane of rotation. Mic 6 is 90 degrees above the plane of rotation (just above the UAV). The angle on the file name represents the angle of the symmetry plane of the UAV with respect to the microphones (and with respect to the x-axis of the balance). The last four numbers of the acoustics files' names represent the throttle of the four propellers in order.</p>\n<p><strong>Disclaimer</strong></p>\n<p>This dataset is provided on a best-effort basis for research and educational purposes only.&nbsp;While reasonable care has been taken in its preparation, the authors make no representations or warranties of any kind, express or implied, regarding the accuracy, completeness, reliability, or suitability of the data.&nbsp;The dataset must not be used for operational, safety-critical, navigational, or decision-making purposes.&nbsp;The authors and affiliated institutions accept no liability for any loss, damage, or consequences arising directly or indirectly from the use of this dataset.&nbsp;Users assume full responsibility for any application of the data beyond its intended scope.</p>",
+    "access_right": "open"
+  },
+  "creators": [
+    {
+      "name": "Universitat Politècnica de València",
+      "affiliation": null
+    }
+  ],
+  "files": [
+    {
+      "filename": "digital_model_sample_hover.sim",
+      "bytes": 7163689466,
+      "provider_checksum": "md5:b6a0dd12651348b767bbc05c4c2056d7",
+      "download_url": "https://zenodo.org/api/records/17457069/files/digital_model_sample_hover.sim/content"
+    },
+    {
+      "filename": "digital_model.zip",
+      "bytes": 21886719,
+      "provider_checksum": "md5:639c34877df1fac6638d829ba79a3149",
+      "download_url": "https://zenodo.org/api/records/17457069/files/digital_model.zip/content"
+    },
+    {
+      "filename": "experimental_data.zip",
+      "bytes": 2512858162,
+      "provider_checksum": "md5:7db17fe4e723571fcffd2e7da6fed637",
+      "download_url": "https://zenodo.org/api/records/17457069/files/experimental_data.zip/content"
+    }
+  ]
+}
