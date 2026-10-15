@@ -1,0 +1,41 @@
+{
+  "status": "prospective synthetic stress suite, not random population or physically integrated motion",
+  "tickSeconds": 0.00025,
+  "finalTick": 4000,
+  "primaryStride": 2,
+  "fineStride": 1,
+  "cases": [
+    "support-transit",
+    "cold-start-inflow",
+    "smooth-fast-reversal",
+    "fixed-position-source-pitch",
+    "two-source-receiver-roll",
+    "stacked-moving-sources"
+  ],
+  "variants": [
+    "instant",
+    "hold-10ms",
+    "hold-5ms",
+    "hold-2.5ms",
+    "predict-5ms"
+  ],
+  "periodTicks": {
+    "hold-10ms": 40,
+    "hold-5ms": 20,
+    "hold-2.5ms": 10,
+    "predict-5ms": 20
+  },
+  "nominalThrust": "constant mg/4 at every motor; M28 source strength fixed by isolated hover weight",
+  "forceBudgetMgFraction": 0.005,
+  "momentBudgetMgDFraction": 0.005,
+  "arithmeticAgreementTolerance": 1e-12,
+  "samplingRelativeTolerance": 0.05,
+  "forceSamplingFloor": 1e-09,
+  "momentSamplingFloor": 1e-11,
+  "warmupPasses": 1,
+  "recordedTimingPasses": 5,
+  "wallCapSeconds": 120,
+  "fieldCallCap": 200000,
+  "rawByteCap": 134217728,
+  "failureReserveBytes": 1048576
+}
