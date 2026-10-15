@@ -8,7 +8,11 @@ This is an ongoing research record, including unsuccessful experiments. The hist
 
 ## Current Milestone 31 restart
 
-The additive research branch preserves the historical milestones and later work. Its latest [body-load attempt](research/m31-body-load-2026-10-16/README.md) stopped at a browser-version mismatch before any GPU or main-family calculation. Its saved-record audit passed 12,793 checks; the scientific attempt remains failed. The [Three.js evidence view](research/m31-body-load-2026-10-16/viewer/) shows saved control inputs and explicitly absent GPU results.
+The additive research branch preserves the historical milestones and later work. The latest [runtime replication](research/m31-body-runtime-replication-2026-10-16/README.md) passed browser/GPU admission, but failed to persist its first GPU control output. No main-family body-load query ran; scientific qualification remains false. The [Three.js evidence view](research/m31-body-runtime-replication-2026-10-16/viewer/) shows saved control inputs and explicitly absent GPU results. Read the [plain-language overnight summary](research/m31-body-runtime-replication-2026-10-16/OVERNIGHT-SUMMARY.md) for the broader findings and remaining gaps.
+
+The preceding [body-load attempt](research/m31-body-load-2026-10-16/README.md) stopped at a browser-version mismatch before GPU/main-family work. Its saved-record audit passed 12,793 checks; the original scientific failure remains unchanged. The separate [physical source-contract review](research/m31-source-contract-planning-2026-10-16/README.md) motivates a test against independent thrust/flow measurements, which remain missing.
+
+The latest replication's [saved review](research/m31-body-runtime-replication-2026-10-16/INDEPENDENT-SAVED-REVIEW.md) also failed on a checker metadata-shape assumption. Its failed report and unexecuted later checks remain preserved; no aggregate integrity pass or scientific qualification is claimed.
 
 The preceding [coordinate-origin diagnostic](research/m31-coordinate-origin-2026-10-16/README.md) selected no candidate. Its independent review failed two bookkeeping checks; the checker error and immutable failed review remain disclosed.
 
@@ -92,6 +96,8 @@ python3 outputs/research-reproduce.py
 |`docs/`|Repository packaging/provenance notes|
 |`work/`|Ignored local scratch files, installed plotting dependencies and reproductions|
 
-This is a sanitized export with fresh Git history. Local machine paths, saved browser/GPU/CPU/OS/runtime identity and host-memory/load metadata were removed or replaced. Scientific trajectories and model parameters are preserved. See the [privacy audit](docs/public-release-audit.md) and [change inventory](docs/public-export-changes.json). Older embedded manifests describe the original private records; their hashes may differ for listed sanitized files. The top-level output manifest verifies this public snapshot. Hardware-specific performance comparisons are limited because host specifications are withheld. User chats, authentication files, original private Git history and local environments are excluded.
+The historical export began with fresh Git history and removed or replaced local machine paths, browser/GPU/CPU/OS/runtime identity and host-memory/load metadata. Scientific trajectories and model parameters were preserved; see its [privacy audit](docs/public-release-audit.md) and [change inventory](docs/public-export-changes.json). Older embedded manifests describe original private records, so their hashes may differ for listed sanitized files. The top-level output manifest verifies that historical snapshot. Hardware-specific comparisons from that export are limited by its withheld specifications.
+
+New research checkpoints retain the nonprivate hardware descriptions, software versions, executable hashes and resource observations needed to interpret their experiments. Their own manifests and privacy disclosures define the retained scope. Private home paths, process identities, browser profiles, transport authority, user chats, authentication files and local environments remain excluded.
 
 No open-source license has been selected for original project material. Third-party files retain their existing notices; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

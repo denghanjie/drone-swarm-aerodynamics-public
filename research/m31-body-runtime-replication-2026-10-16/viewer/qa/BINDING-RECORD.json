@@ -1,0 +1,53 @@
+{
+  "schema": "m31-runtime-viewer-binding-record/1",
+  "state": "bound-after-actual-terminal-review-failure",
+  "sourceCommit": "f12d8c836e7b991ec33e6de662d00ed05dcce33e",
+  "artifact": {
+    "path": "viewer-artifact.json",
+    "bytes": 14391,
+    "sha256": "baafe9202c9016c99bbe70d5106491481b0bf626d80571f122e94ac462fcc9a2"
+  },
+  "finalExternalAuthority": {
+    "label": "Final saved-review observation",
+    "role": "final-external-observation",
+    "statusPointer": "/observedIntegrityVerified",
+    "detailPointer": "/scope",
+    "artifact": {
+      "name": "review-1.json",
+      "url": "./evidence/review-1.json",
+      "bytes": 1994,
+      "sha256": "4a0fb558acd26bbf53a2636d11b04fc2a644e89663aa4edd57cc963a8ce2c137"
+    }
+  },
+  "recordedIntegrityVerified": false,
+  "recordedScientificQualified": false,
+  "reviewTerminalFailureObserved": true,
+  "rawManifestEntriesVerified": 21,
+  "copiedBrowserAssets": 26,
+  "successfulBindings": 1,
+  "binderInvocations": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "exitCode": 1,
+      "record": "qa/attempts/binding-attempt-01.json"
+    },
+    {
+      "attempt": 2,
+      "exitCode": 0
+    }
+  ],
+  "authority": "Root supplied exact terminal result and actual review capture pins, then authorized binding and browser QA. No scientific or saved-review invocation by the viewer task.",
+  "publicRegressionTransformation": {
+    "originalScratchHarnessSHA256": "ec8c929b03f3ce8135d5c221b698473e480ff6838282b35a4f76c7a48b5ffe27",
+    "publicHarness": {
+      "path": "qa/regression.cjs",
+      "bytes": 26259,
+      "sha256": "30aebe478809e6f7a2bb9d16e3ac46cefac97cfc1a67bdbdcd930282007fe8ef"
+    },
+    "changes": [
+      "Replace private default Playwright path with package resolution for playwright; M31_QA_PLAYWRIGHT override remains available.",
+      "Require M31_QA_OUTPUT for a new scratch output directory. No test semantics changed."
+    ]
+  }
+}

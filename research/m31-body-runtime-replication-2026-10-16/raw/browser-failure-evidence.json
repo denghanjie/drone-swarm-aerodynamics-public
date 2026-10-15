@@ -1,0 +1,92 @@
+{
+  "initialization": {
+    "stage": "compiling",
+    "adapter": {
+      "vendor": "apple",
+      "architecture": "metal-3",
+      "device": "",
+      "description": "",
+      "isFallbackAdapter": false,
+      "features": [
+        "depth32float-stencil8",
+        "rg11b10ufloat-renderable",
+        "texture-formats-tier1",
+        "bgra8unorm-storage",
+        "texture-compression-bc",
+        "dual-source-blending",
+        "core-features-and-limits",
+        "float32-filterable",
+        "indirect-first-instance",
+        "texture-compression-astc-sliced-3d",
+        "float32-blendable",
+        "subgroup-size-control",
+        "texture-compression-astc",
+        "texture-compression-etc2",
+        "depth-clip-control",
+        "texture-compression-bc-sliced-3d",
+        "texture-formats-tier2",
+        "timestamp-query",
+        "shader-f16",
+        "clip-distances",
+        "primitive-index",
+        "texture-component-swizzle",
+        "subgroups"
+      ],
+      "limits": {
+        "maxStorageBufferBindingSize": 4294967292,
+        "maxBufferSize": 4294967292,
+        "maxComputeWorkgroupsPerDimension": 65535,
+        "maxStorageBuffersPerShaderStage": 10,
+        "maxComputeWorkgroupSizeX": 1024,
+        "maxComputeInvocationsPerWorkgroup": 1024
+      },
+      "deviceLimits": {
+        "maxStorageBufferBindingSize": 134217728,
+        "maxBufferSize": 268435456,
+        "maxComputeWorkgroupsPerDimension": 65535,
+        "maxStorageBuffersPerShaderStage": 8,
+        "maxComputeWorkgroupSizeX": 256,
+        "maxComputeInvocationsPerWorkgroup": 256
+      }
+    },
+    "shader": "// SOURCE-ONLY DRAFT. Never compiled/dispatched during preparation.",
+    "messages": [],
+    "entryPoint": "controlRoots"
+  },
+  "dispatch": {
+    "key": "controls-pairs",
+    "entry": "controlPairs",
+    "count": 15,
+    "groups": 1,
+    "submitted": true,
+    "readbacks": [
+      {
+        "name": "output",
+        "bytes": 3840,
+        "persisted": false
+      }
+    ],
+    "completed": false
+  },
+  "health": {
+    "stage": "failed-batch",
+    "current": null,
+    "loss": null,
+    "uncaptured": null,
+    "seen": [
+      "controls-pairs"
+    ],
+    "costs": {
+      "pipelineCreations": 3,
+      "bufferCreations": 4,
+      "allocatedBytes": 11648,
+      "uploadedBytes": 3968,
+      "readbackBytes": 0,
+      "dispatches": 1,
+      "activeInvocations": 15,
+      "launchedInvocations": 64,
+      "liveBufferBytes": 0,
+      "peakLiveBufferBytes": 11648
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "attempt": 1,
+  "exitCode": 1,
+  "error": "Private path or evidence-sink URL in external-1.json",
+  "cause": "Public accountingScope contains directory/private/pipe; privacy matcher treated an interior slash-delimited phrase as an absolute private path.",
+  "evidenceCopied": false,
+  "artifactRemainsUnbound": true,
+  "fix": "Require a string-start or path-leading delimiter before private absolute path prefixes; retain actual absolute-path and evidence-sink URL rejection."
+}

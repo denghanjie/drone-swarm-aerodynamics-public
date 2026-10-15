@@ -1,0 +1,73 @@
+{
+  "scope": "Actual saved pair/scalar-input runtime replication viewer QA only; no scientific generator, profile/root evaluator, WebGPU compute or scientific rerun.",
+  "browserAvailability": "absent",
+  "fallbackReason": "Browser plugin not available",
+  "url": "http://127.0.0.1:8876/research/m31-body-runtime-replication-2026-10-16/viewer/",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "flow": "Runtime replication checkpoint → saved pair/scalar control selection → CPU R/Q diagnostics; submitted GPU pair work with unavailable output; separate final review",
+  "checks": [
+    {
+      "name": "Page identity, meaningful screen and absence of framework overlay",
+      "pass": true
+    },
+    {
+      "name": "Actual control-only availability and separate review",
+      "pass": true
+    },
+    {
+      "name": "All 15 saved pair selections expose saved R/Q validity and no GPU values",
+      "pass": true
+    },
+    {
+      "name": "Orbit and reset change the rendered view",
+      "pass": true
+    },
+    {
+      "name": "All 146 saved scalar controls match original and R/Q bytes with no invented GPU/H values",
+      "pass": false,
+      "message": "Unexpected end of JSON input"
+    }
+  ],
+  "consoleRecords": [],
+  "pageErrors": [],
+  "screenshots": [
+    {
+      "name": "desktop-controls.png",
+      "bytes": 186374,
+      "sha256": "a079a3e6957e0890d55913d9a0f0221c3de4a3404e64121a8d3eade6c7549be5"
+    },
+    {
+      "name": "pair-14-original-input.png",
+      "bytes": 401656,
+      "sha256": "9161696cfbfbb0cb1883de47e3ad4111dc5cfadf882816433b5cb23caf0b1325"
+    },
+    {
+      "name": "failure-state.png",
+      "bytes": 390294,
+      "sha256": "82b9ec0fe1acb3333a2a65ebab3476cfc317261b59adcb90add2c004e22fb6e2"
+    }
+  ],
+  "remainingUntested": [
+    "Main-family scene, receiver picking and force/lift colors: no main evidence exists.",
+    "Scientific correctness, flight physics and timing comparison.",
+    "Historical mission correctness; only link navigation/source identity is checked."
+  ],
+  "artifactSHA256": "baafe9202c9016c99bbe70d5106491481b0bf626d80571f122e94ac462fcc9a2",
+  "finalReviewSHA256": "4a0fb558acd26bbf53a2636d11b04fc2a644e89663aa4edd57cc963a8ce2c137",
+  "resultSHA256": "a6a03d917e23fb7172f9c036441b0c05e9d92381f79803dbe1099bdf3d827acf",
+  "finalExternalStatus": false,
+  "playwrightVersion": "1.62.1",
+  "browserVersion": "155.0.8059.80",
+  "httpFailures": [],
+  "passed": false,
+  "failure": "Unexpected end of JSON input"
+}
