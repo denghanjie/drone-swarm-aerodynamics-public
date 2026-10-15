@@ -1,0 +1,395 @@
+{
+  "status": "conditional-shape-screen-no-physical-pass-fail",
+  "input_manifest_sha256": "b3c14e51a256f161df96f5f1df96c1b42d3c3cb2abed7869272a58b4fe1a01de",
+  "evaluator_sha256": "4528859fabe3c7fbaaf4c437f3f7b5d7f46b617454c0b3535f2db54dd9bb12c6",
+  "release_sha256": "8a6402177bafcd0a010f747151eb2f5c8e156c0e6fb2f26c74bcef16e1f637fe",
+  "kernel_sha256": "fb6d5a1d632a0023818041ef6bc39316ff8ed950f318da1a6649e2515b9fd8bc",
+  "public_commit": "1336f5c416875a9651f92b58b2ed06649f25b04e",
+  "model_version": "arXiv:2403.13321v3",
+  "measurement_version": "arXiv:2507.09463v1 Fig.9",
+  "scalar_calls": 36,
+  "geometry": {
+    "lambda": 2.8284271247461903,
+    "eta": 1,
+    "floor": 7.0710678118654755
+  },
+  "monotonicity": {
+    "formula": "q=C*lambda*t^3/(t^2+A)^2; derivative sign=3A-t^2",
+    "A": 70.44661117197947,
+    "domain_margin": 342.0400784840617
+  },
+  "anchor": {
+    "id": "anchor246",
+    "q": {
+      "center": 0.9384723846839245,
+      "low": 0.9329009558848723,
+      "high": 0.9440540290040084
+    }
+  },
+  "results": [
+    {
+      "id": "m294",
+      "neighborhood": 11,
+      "zeta": 10.120388349514563,
+      "partial_eligibility": true,
+      "observed_ratio": 1.001525165226233,
+      "model_ratio": 0.9480484023596155,
+      "observed_interval": [
+        0.9407407407407407,
+        1.0660377358490567
+      ],
+      "model_interval": [
+        0.9367523067458299,
+        0.9594976635986592
+      ],
+      "paired_difference": 0.0534767628666174,
+      "paired_difference_interval": [
+        -0.018756922857918523,
+        0.12928542910322682
+      ],
+      "q": {
+        "center": 0.8897172449582131,
+        "low": 0.8843447893621994,
+        "high": 0.8951162875404908
+      }
+    },
+    {
+      "id": "m310",
+      "neighborhood": 11,
+      "zeta": 10.866019417475728,
+      "partial_eligibility": false,
+      "observed_ratio": 0.972547025927809,
+      "model_ratio": 0.9312473482415592,
+      "observed_interval": [
+        0.9155555555555556,
+        1.0330188679245282
+      ],
+      "model_interval": [
+        0.9201471460105902,
+        0.9425020131948904
+      ],
+      "paired_difference": 0.04129967768624976,
+      "paired_difference_interval": [
+        -0.026946457639334787,
+        0.11287172191393802
+      ],
+      "q": {
+        "center": 0.8739499196348371,
+        "low": 0.8686686204678372,
+        "high": 0.8792610290329298
+      }
+    },
+    {
+      "id": "m326",
+      "neighborhood": 11,
+      "zeta": 11.611650485436893,
+      "partial_eligibility": true,
+      "observed_ratio": 0.9740721911540419,
+      "model_ratio": 0.9147602934772743,
+      "observed_interval": [
+        0.914074074074074,
+        1.0377358490566038
+      ],
+      "model_interval": [
+        0.9038622667507938,
+        0.9258131459017604
+      ],
+      "paired_difference": 0.05931189767676759,
+      "paired_difference_interval": [
+        -0.01173907182768641,
+        0.13387358230580992
+      ],
+      "q": {
+        "center": 0.8584772740337842,
+        "low": 0.8532948145907827,
+        "high": 0.8636919687825331
+      }
+    },
+    {
+      "id": "m358",
+      "neighborhood": 14,
+      "zeta": 13.09126213592233,
+      "partial_eligibility": true,
+      "observed_ratio": 0.9374682257244537,
+      "model_ratio": 0.8830506030994822,
+      "observed_interval": [
+        0.8785185185185185,
+        1
+      ],
+      "model_interval": [
+        0.8730456614957137,
+        0.8931962784702656
+      ],
+      "paired_difference": 0.05441762262497141,
+      "paired_difference_interval": [
+        -0.014677759951747138,
+        0.12695433850428628
+      ],
+      "q": {
+        "center": 0.8287186052873488,
+        "low": 0.8242022742394982,
+        "high": 0.8332636619777214
+      }
+    },
+    {
+      "id": "m374",
+      "neighborhood": 14,
+      "zeta": 13.836893203883495,
+      "partial_eligibility": false,
+      "observed_ratio": 0.9222165734621252,
+      "model_ratio": 0.8676029045622623,
+      "observed_interval": [
+        0.8637037037037036,
+        0.9842767295597484
+      ],
+      "model_interval": [
+        0.8577952996237174,
+        0.8775497766379248
+      ],
+      "paired_difference": 0.054613668899862855,
+      "paired_difference_interval": [
+        -0.013846072934221132,
+        0.12648142993603106
+      ],
+      "q": {
+        "center": 0.8142213668032456,
+        "low": 0.809805108670471,
+        "high": 0.8186670254620763
+      }
+    },
+    {
+      "id": "m390",
+      "neighborhood": 14,
+      "zeta": 14.58252427184466,
+      "partial_eligibility": true,
+      "observed_ratio": 0.9054397559735639,
+      "model_ratio": 0.8525207837149817,
+      "observed_interval": [
+        0.8503703703703703,
+        0.9638364779874213
+      ],
+      "model_interval": [
+        0.8429097204951755,
+        0.8622693364878219
+      ],
+      "paired_difference": 0.05291897225858211,
+      "paired_difference_interval": [
+        -0.01189896611745156,
+        0.1209267574922458
+      ],
+      "q": {
+        "center": 0.8000672128856071,
+        "low": 0.795752317720113,
+        "high": 0.8044118882397037
+      }
+    },
+    {
+      "id": "m422",
+      "neighborhood": 17,
+      "zeta": 16.062135922330096,
+      "partial_eligibility": true,
+      "observed_ratio": 0.8520589730554144,
+      "model_ratio": 0.8236818409963497,
+      "observed_interval": [
+        0.7955555555555555,
+        0.9119496855345912
+      ],
+      "model_interval": [
+        0.8140184493408157,
+        0.833490908650372
+      ],
+      "paired_difference": 0.02837713205906478,
+      "paired_difference_interval": [
+        -0.03793535309481655,
+        0.09793123619377553
+      ],
+      "q": {
+        "center": 0.7730026615406894,
+        "low": 0.7684773967837923,
+        "high": 0.7775644654012829
+      }
+    },
+    {
+      "id": "m438",
+      "neighborhood": 17,
+      "zeta": 16.80776699029126,
+      "partial_eligibility": false,
+      "observed_ratio": 0.8261311642094561,
+      "model_ratio": 0.8096954342331196,
+      "observed_interval": [
+        0.7733333333333333,
+        0.8820754716981132
+      ],
+      "model_interval": [
+        0.8002328222926379,
+        0.8193011871659138
+      ],
+      "paired_difference": 0.016435729976336466,
+      "paired_difference_interval": [
+        -0.04596785383258051,
+        0.08184264940547525
+      ],
+      "q": {
+        "center": 0.7598768050324415,
+        "low": 0.7554630200266135,
+        "high": 0.7643268606646917
+      }
+    },
+    {
+      "id": "m454",
+      "neighborhood": 17,
+      "zeta": 17.553398058252426,
+      "partial_eligibility": true,
+      "observed_ratio": 0.807829181494662,
+      "model_ratio": 0.7960705356373426,
+      "observed_interval": [
+        0.7555555555555555,
+        0.8632075471698113
+      ],
+      "model_interval": [
+        0.7868051468894576,
+        0.8054764075089246
+      ],
+      "paired_difference": 0.011758645857319339,
+      "paired_difference_interval": [
+        -0.04992085195336904,
+        0.07640240028035372
+      ],
+      "q": {
+        "center": 0.747090213956186,
+        "low": 0.7427865689620831,
+        "high": 0.7514297105077887
+      }
+    },
+    {
+      "id": "m486",
+      "neighborhood": 20,
+      "zeta": 19.044660194174757,
+      "partial_eligibility": true,
+      "observed_ratio": 0.7727503812913066,
+      "model_ratio": 0.7698826848500367,
+      "observed_interval": [
+        0.7244444444444443,
+        0.8238993710691824
+      ],
+      "model_interval": [
+        0.7609997219111819,
+        0.7789005936438357
+      ],
+      "paired_difference": 0.002867696441269829,
+      "paired_difference_interval": [
+        -0.054456149199391346,
+        0.0628996491580005
+      ],
+      "q": {
+        "center": 0.7225136391780763,
+        "low": 0.7184248535411812,
+        "high": 0.7266371083496288
+      }
+    },
+    {
+      "id": "m501",
+      "neighborhood": 20,
+      "zeta": 19.74368932038835,
+      "partial_eligibility": false,
+      "observed_ratio": 0.7239450940518557,
+      "model_ratio": 0.7580822290373457,
+      "observed_interval": [
+        0.6651851851851852,
+        0.7861635220125787
+      ],
+      "model_interval": [
+        0.7486006715068102,
+        0.767713230990503
+      ],
+      "paired_difference": -0.03413713498548998,
+      "paired_difference_interval": [
+        -0.10252804580531782,
+        0.037562850505768464
+      ],
+      "q": {
+        "center": 0.7114392372711829,
+        "low": 0.7067194800511103,
+        "high": 0.7162004070365041
+      }
+    }
+  ],
+  "neighborhoods": [
+    {
+      "target": 11,
+      "ids": [
+        "m294",
+        "m310",
+        "m326"
+      ],
+      "paired_difference_union": [
+        [
+          -0.026946457639334787,
+          0.13387358230580992
+        ]
+      ],
+      "paired_difference_hull": [
+        -0.026946457639334787,
+        0.13387358230580992
+      ],
+      "truncated_at_20": false
+    },
+    {
+      "target": 14,
+      "ids": [
+        "m358",
+        "m374",
+        "m390"
+      ],
+      "paired_difference_union": [
+        [
+          -0.014677759951747138,
+          0.12695433850428628
+        ]
+      ],
+      "paired_difference_hull": [
+        -0.014677759951747138,
+        0.12695433850428628
+      ],
+      "truncated_at_20": false
+    },
+    {
+      "target": 17,
+      "ids": [
+        "m422",
+        "m438",
+        "m454"
+      ],
+      "paired_difference_union": [
+        [
+          -0.04992085195336904,
+          0.09793123619377553
+        ]
+      ],
+      "paired_difference_hull": [
+        -0.04992085195336904,
+        0.09793123619377553
+      ],
+      "truncated_at_20": false
+    },
+    {
+      "target": 20,
+      "ids": [
+        "m486",
+        "m501"
+      ],
+      "paired_difference_union": [
+        [
+          -0.10252804580531782,
+          0.0628996491580005
+        ]
+      ],
+      "paired_difference_hull": [
+        -0.10252804580531782,
+        0.0628996491580005
+      ],
+      "truncated_at_20": true
+    }
+  ],
+  "limitations": "Unknown experimental/plane error; shared anchor/calibration; no confidence level or amplitude validation. Hull overlap is not joint agreement. Target20 ends at20."
+}

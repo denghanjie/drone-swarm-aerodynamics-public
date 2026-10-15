@@ -1,0 +1,107 @@
+{
+  "status": "stopped-at-predeclared-selection-gate",
+  "failed_target": 11,
+  "failed_rule": "winner distance upper bound must be strictly less than each competitor distance lower bound",
+  "decisions": [
+    {
+      "target": 8,
+      "selected_distance_bounds": [
+        0,
+        0.36801242236024834
+      ],
+      "neighbor_x_only_witnesses": [
+        {
+          "x_bbox_inclusive": [
+            229,
+            232
+          ],
+          "pixel_center": 230.5,
+          "pixel_half_bound": 3,
+          "zeta_bounds": [
+            6.933229813664596,
+            7.38927738927739
+          ],
+          "distance_bounds": [
+            0.6107226107226102,
+            1.066770186335404
+          ],
+          "response_ordinate_collected": false
+        },
+        {
+          "x_bbox_inclusive": [
+            260,
+            264
+          ],
+          "pixel_center": 262,
+          "pixel_half_bound": 3.5,
+          "zeta_bounds": [
+            8.377329192546584,
+            8.881118881118882
+          ],
+          "distance_bounds": [
+            0.3773291925465845,
+            0.8811188811188817
+          ],
+          "response_ordinate_collected": false
+        }
+      ],
+      "within_075_window": true,
+      "strict_nearestness": true,
+      "exact_farfield_floor": true,
+      "nonnegative_v_lower": true,
+      "anchor_positive_v_lower": true
+    },
+    {
+      "target": 11,
+      "selected_distance_bounds": [
+        0,
+        0.38664596273291885
+      ],
+      "neighbor_x_only_witnesses": [
+        {
+          "x_bbox_inclusive": [
+            292,
+            296
+          ],
+          "pixel_center": 294,
+          "pixel_half_bound": 3.5,
+          "zeta_bounds": [
+            9.868012422360248,
+            10.372960372960373
+          ],
+          "distance_bounds": [
+            0.6270396270396272,
+            1.1319875776397517
+          ],
+          "response_ordinate_collected": false
+        },
+        {
+          "x_bbox_inclusive": [
+            324,
+            328
+          ],
+          "pixel_center": 326,
+          "pixel_half_bound": 3.5,
+          "zeta_bounds": [
+            11.358695652173912,
+            11.864801864801866
+          ],
+          "distance_bounds": [
+            0.3586956521739122,
+            0.8648018648018656
+          ],
+          "response_ordinate_collected": false
+        }
+      ],
+      "within_075_window": true,
+      "strict_nearestness": false,
+      "exact_farfield_floor": true,
+      "nonnegative_v_lower": true,
+      "anchor_positive_v_lower": null
+    }
+  ],
+  "collection_passes": 1,
+  "model_calls": 0,
+  "observed_ratios_computed": false,
+  "physical_inference": "None. Failure is a conservative extraction/selection certificate, not evidence against the wake model."
+}

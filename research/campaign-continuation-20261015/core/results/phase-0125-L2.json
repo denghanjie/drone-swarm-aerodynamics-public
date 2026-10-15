@@ -1,0 +1,171 @@
+{
+  "experimentId": "CORE-EXTENT-CERTIFICATE-20261015",
+  "status": "complete",
+  "fixture": "phase-0125-L2",
+  "phaseMeters": [
+    0.125,
+    0.125
+  ],
+  "extentMeters": 2,
+  "sourceCount": 20,
+  "coordinates": {
+    "encoding": "ordered xyz Float64 little-endian triples, no header",
+    "sha256": "3b486f7053cffc2104572a607aa4ba2469d3cdef8037648c19b9d1847014772b",
+    "bytes": 480,
+    "retained": false
+  },
+  "layers": [
+    {
+      "downstream": 0.5,
+      "sourceRadius": 0.10773234924088115,
+      "count": 0,
+      "axialFade": 1,
+      "countLower": 0,
+      "countUpper": 4.068759403943308
+    },
+    {
+      "downstream": 0.75,
+      "sourceRadius": 0.14607234924088117,
+      "count": 0,
+      "axialFade": 1,
+      "countLower": 0,
+      "countUpper": 5.239246914177489
+    },
+    {
+      "downstream": 1,
+      "sourceRadius": 0.18441234924088115,
+      "count": 4,
+      "axialFade": 1,
+      "countLower": 0.0029306390375868786,
+      "countUpper": 6.557510479261687
+    },
+    {
+      "downstream": 1.25,
+      "sourceRadius": 0.22275234924088114,
+      "count": 4,
+      "axialFade": 1,
+      "countLower": 0.10624920417987536,
+      "countUpper": 8.023550099195912
+    },
+    {
+      "downstream": 1.5,
+      "sourceRadius": 0.26109234924088115,
+      "count": 4,
+      "axialFade": 1,
+      "countLower": 0.3573438241721856,
+      "countUpper": 9.637365773980154
+    },
+    {
+      "downstream": 1.75,
+      "sourceRadius": 0.29943234924088113,
+      "count": 4,
+      "axialFade": 1,
+      "countLower": 0.7562144990145172,
+      "countUpper": 11.398957503614419
+    },
+    {
+      "downstream": 2,
+      "sourceRadius": 0.3377723492408811,
+      "count": 4,
+      "axialFade": 1,
+      "countLower": 1.3028612287068704,
+      "countUpper": 13.308325288098711
+    }
+  ],
+  "B": 0,
+  "boundsMS": {
+    "lower": 0,
+    "upper": 0
+  },
+  "rotors": [
+    {
+      "rotor": 0,
+      "P": 12.939923442413557,
+      "X": 12.939923442413557,
+      "P_over_vi": 3.2087149025986643,
+      "X_over_vi": 3.2087149025986643,
+      "difference": 0,
+      "directOmissionSum": 0,
+      "omissionFractionOfX": 0,
+      "lowerSlack": 0,
+      "upperSlack": 0
+    },
+    {
+      "rotor": 1,
+      "P": 12.939923442413555,
+      "X": 12.939923442413555,
+      "P_over_vi": 3.208714902598664,
+      "X_over_vi": 3.208714902598664,
+      "difference": 0,
+      "directOmissionSum": 0,
+      "omissionFractionOfX": 0,
+      "lowerSlack": 0,
+      "upperSlack": 0
+    },
+    {
+      "rotor": 2,
+      "P": 12.939923442413557,
+      "X": 12.939923442413557,
+      "P_over_vi": 3.2087149025986643,
+      "X_over_vi": 3.2087149025986643,
+      "difference": 0,
+      "directOmissionSum": 0,
+      "omissionFractionOfX": 0,
+      "lowerSlack": 0,
+      "upperSlack": 0
+    },
+    {
+      "rotor": 3,
+      "P": 12.939923442413557,
+      "X": 12.939923442413557,
+      "P_over_vi": 3.2087149025986643,
+      "X_over_vi": 3.2087149025986643,
+      "difference": 0,
+      "directOmissionSum": 0,
+      "omissionFractionOfX": 0,
+      "lowerSlack": 0,
+      "upperSlack": 0
+    }
+  ],
+  "largestIndividualTerm": {
+    "rotor": 0,
+    "sourceIndex": 11,
+    "coordinates": [
+      0.125,
+      0.125,
+      1.5
+    ],
+    "downstream": 1.5,
+    "radial": 0.13717871555019023,
+    "xi": 0.9124251918056963,
+    "P": 0.9105536454699764,
+    "X": 0.9105536454699764,
+    "omitted": 0
+  },
+  "largestIndividualOmission": {
+    "rotor": 0,
+    "sourceIndex": 0,
+    "coordinates": [
+      -0.125,
+      -0.125,
+      1
+    ],
+    "downstream": 1,
+    "radial": 0.21637467504308355,
+    "xi": 1.9318276618871784,
+    "P": 0.34106786974285674,
+    "X": 0.34106786974285674,
+    "omitted": 0
+  },
+  "checks": {
+    "maxClosedFormResidual": 4.440892098500626e-16,
+    "maxOmissionCancellationResidual": 0,
+    "maxXi": 1.9318276618871784,
+    "minDownstream": 1,
+    "maxDownstream": 2,
+    "maxRotorRadiusResidual": 0,
+    "radialWeightsExactlyOne": 80,
+    "pairVisits": 80
+  },
+  "inputNonmutation": true
+}

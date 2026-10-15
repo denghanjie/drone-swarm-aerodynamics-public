@@ -1,0 +1,171 @@
+{
+  "experimentId": "CORE-EXTENT-CERTIFICATE-20261015",
+  "status": "complete",
+  "fixture": "phase-0-L2",
+  "phaseMeters": [
+    0,
+    0
+  ],
+  "extentMeters": 2,
+  "sourceCount": 19,
+  "coordinates": {
+    "encoding": "ordered xyz Float64 little-endian triples, no header",
+    "sha256": "59b40f66186b1a23f9fe0800ebf1824c87e37cc28f859c951f85f95e371c709f",
+    "bytes": 456,
+    "retained": false
+  },
+  "layers": [
+    {
+      "downstream": 0.5,
+      "sourceRadius": 0.10773234924088115,
+      "count": 1,
+      "axialFade": 1,
+      "countLower": 0,
+      "countUpper": 4.068759403943308
+    },
+    {
+      "downstream": 0.75,
+      "sourceRadius": 0.14607234924088117,
+      "count": 1,
+      "axialFade": 1,
+      "countLower": 0,
+      "countUpper": 5.239246914177489
+    },
+    {
+      "downstream": 1,
+      "sourceRadius": 0.18441234924088115,
+      "count": 1,
+      "axialFade": 1,
+      "countLower": 0.0029306390375868786,
+      "countUpper": 6.557510479261687
+    },
+    {
+      "downstream": 1.25,
+      "sourceRadius": 0.22275234924088114,
+      "count": 1,
+      "axialFade": 1,
+      "countLower": 0.10624920417987536,
+      "countUpper": 8.023550099195912
+    },
+    {
+      "downstream": 1.5,
+      "sourceRadius": 0.26109234924088115,
+      "count": 5,
+      "axialFade": 1,
+      "countLower": 0.3573438241721856,
+      "countUpper": 9.637365773980154
+    },
+    {
+      "downstream": 1.75,
+      "sourceRadius": 0.29943234924088113,
+      "count": 5,
+      "axialFade": 1,
+      "countLower": 0.7562144990145172,
+      "countUpper": 11.398957503614419
+    },
+    {
+      "downstream": 2,
+      "sourceRadius": 0.3377723492408811,
+      "count": 5,
+      "axialFade": 1,
+      "countLower": 1.3028612287068704,
+      "countUpper": 13.308325288098711
+    }
+  ],
+  "B": 0,
+  "boundsMS": {
+    "lower": 0,
+    "upper": 0
+  },
+  "rotors": [
+    {
+      "rotor": 0,
+      "P": 17.810679576458273,
+      "X": 17.810679576458273,
+      "P_over_vi": 4.416517086574959,
+      "X_over_vi": 4.416517086574959,
+      "difference": 0,
+      "directOmissionSum": 0,
+      "omissionFractionOfX": 0,
+      "lowerSlack": 0,
+      "upperSlack": 0
+    },
+    {
+      "rotor": 1,
+      "P": 17.810679576458277,
+      "X": 17.810679576458277,
+      "P_over_vi": 4.4165170865749594,
+      "X_over_vi": 4.4165170865749594,
+      "difference": 0,
+      "directOmissionSum": 0,
+      "omissionFractionOfX": 0,
+      "lowerSlack": 0,
+      "upperSlack": 0
+    },
+    {
+      "rotor": 2,
+      "P": 17.810679576458277,
+      "X": 17.810679576458277,
+      "P_over_vi": 4.4165170865749594,
+      "X_over_vi": 4.4165170865749594,
+      "difference": 0,
+      "directOmissionSum": 0,
+      "omissionFractionOfX": 0,
+      "lowerSlack": 0,
+      "upperSlack": 0
+    },
+    {
+      "rotor": 3,
+      "P": 17.810679576458277,
+      "X": 17.810679576458277,
+      "P_over_vi": 4.4165170865749594,
+      "X_over_vi": 4.4165170865749594,
+      "difference": 0,
+      "directOmissionSum": 0,
+      "omissionFractionOfX": 0,
+      "lowerSlack": 0,
+      "upperSlack": 0
+    }
+  ],
+  "largestIndividualTerm": {
+    "rotor": 0,
+    "sourceIndex": 0,
+    "coordinates": [
+      0,
+      0,
+      0.5
+    ],
+    "downstream": 0.5,
+    "radial": 0.03959797974644667,
+    "xi": 0.537540098072442,
+    "P": 2.680906237435722,
+    "X": 2.680906237435722,
+    "omitted": 0
+  },
+  "largestIndividualOmission": {
+    "rotor": 0,
+    "sourceIndex": 0,
+    "coordinates": [
+      0,
+      0,
+      0.5
+    ],
+    "downstream": 0.5,
+    "radial": 0.03959797974644667,
+    "xi": 0.537540098072442,
+    "P": 2.680906237435722,
+    "X": 2.680906237435722,
+    "omitted": 0
+  },
+  "checks": {
+    "maxClosedFormResidual": 3.3306690738754696e-16,
+    "maxOmissionCancellationResidual": 0,
+    "maxXi": 1.8584336571351847,
+    "minDownstream": 0.5,
+    "maxDownstream": 2,
+    "maxRotorRadiusResidual": 0,
+    "radialWeightsExactlyOne": 76,
+    "pairVisits": 76
+  },
+  "inputNonmutation": true
+}

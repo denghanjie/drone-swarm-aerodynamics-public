@@ -1,0 +1,100 @@
+{
+  "experimentId": "CORE-EXTENT-CERTIFICATE-20261015",
+  "initialStatus": "running",
+  "planSha256": "b71f9b869b64836b38f0cb21c87cebd460def9cafd62dee9315d4d68c4ca4eaa",
+  "runnerSha256": "f61b20ca327110262dd55fe4b8f907acca959e34c54a74caad742d4306439c3a",
+  "publicCommit": "1336f5c416875a9651f92b58b2ed06649f25b04e",
+  "sources": [
+    {
+      "path": "snapshot/outputs/milestone-28-source/aero.cjs",
+      "sha256": "710b0a8f0df62208e3385ac9b8288240b379fe9248a1a645251a77c533f24a62",
+      "bytes": 4259
+    },
+    {
+      "path": "snapshot/outputs/step02c-source/physics.cjs",
+      "sha256": "0c46c9beb4e831c621658f6600c074f97c95966de07f5000eb64aa476a443fa1",
+      "bytes": 6115
+    },
+    {
+      "path": "snapshot/outputs/step03a-source/wake.cjs",
+      "sha256": "fb6d5a1d632a0023818041ef6bc39316ff8ed950f318da1a6649e2515b9fd8bc",
+      "bytes": 2069
+    },
+    {
+      "path": "snapshot/outputs/milestone-26-source/grid.cjs",
+      "sha256": "f06010781770b64432935e5d825bcd1405b154b735ac4d0d654f145600cea302",
+      "bytes": 898
+    }
+  ],
+  "geometry": {
+    "receiver": [
+      0,
+      0,
+      0
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "rotors": [
+      [
+        0.028,
+        0.028,
+        0
+      ],
+      [
+        -0.028,
+        0.028,
+        0
+      ],
+      [
+        -0.028,
+        -0.028,
+        0
+      ],
+      [
+        0.028,
+        -0.028,
+        0
+      ]
+    ],
+    "delta": 0.25,
+    "phases": [
+      0,
+      0.125
+    ],
+    "extents": [
+      2,
+      4,
+      8
+    ],
+    "order": "phase, extent; coordinates height/y/x"
+  },
+  "constants": {
+    "D": 0.07919595949289333,
+    "r0": 0.03959797974644667,
+    "s": 0.4606828963701605,
+    "k": 0.07668,
+    "vi": 4.032743274241601,
+    "A": 3.2289011969498866,
+    "c": 0.41421356237309515,
+    "f2": 0.14166564366153925,
+    "supportBound": 2.630711448903349
+  },
+  "arms": {
+    "P": "original finite axial/radial support",
+    "X": "axial support removed, radial support retained"
+  },
+  "claim": "Conditional finite-population core support certificate; no physical accuracy, source-source coupling, load law, flight, or novelty claim",
+  "limits": "Core radial location does not validate 8 m axial extent or multi-source independence",
+  "caps": {
+    "outputBytes": 100000,
+    "campaignBytes": 200000,
+    "wallSeconds": 60,
+    "maxSourcesPerFixture": 4096,
+    "maxSourceRotorArmSlots": 196608
+  },
+  "inputReuse": "No input files or historical replay are evaluated; existing PUBLIC-SUPPORT-FACTORIAL-20261015 is context only"
+}
