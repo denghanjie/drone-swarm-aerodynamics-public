@@ -4,11 +4,11 @@
 
 Public additive worktree: current repository, branch `codex/m31-audit-2026-10-15`. Preserve the original eight-step roadmap and historical M31 base. Later remote main/DOT at `1336f5c416875a9651f92b58b2ed06649f25b04e` remains separate and untouched. The private workspace, attachments, credentials and chat records must never be published.
 
-## Current static follow-up — ready for publication
+## Current static follow-up — published and verified
 
 `research/m31-followup-planning-2026-10-16/` contains the completed public-data compatibility desk review, independent NanoBench metadata challenge, coordinator reproduction, verified bibliography, claim/literature ledgers, and installed-API rationale for a control-channel alternative. Three partial datasets were identified; none currently establishes joint thrust-plus-spatial-flow validation. NanoBench inventory107CSV/107YAML/87distinctCSVblobs and all33treeobjects reconcile; instrumented mass40.85g differs from assumed27g. Archives and CSV payloads were not acquired. Read its MORNING-SUMMARY and NEXT-DECISION.
 
-No new experiment or implementation is allocated. The existing Three.js transport view remains unchanged and byte-bound to the prior result; this is ancillary desk work. Original23:00UTCcutoff and every closed historical allocation remain unchanged. Complete privacy review, additive publication and independent exact-commit verification before reporting publication.
+No new experiment or implementation is allocated. The existing Three.js transport view remains unchanged and byte-bound to the prior result; this is ancillary desk work. Original23:00UTCcutoff and every closed historical allocation remain unchanged. Public result `57d275a1eed21475c76880cbab0ad1cf5edae8b1` is verified: exact remote commit and5303-byte manifest SHA256`bd8f1a14733041ba74df75f99e01fa9b44771ba6f7a56201bf391fbffc554d11`, all30local/committed pins283410B match; prior114transport pins unchanged. No remote individual-file acquisition is claimed. Receipt: `research/publication-receipts/m31-followup-planning-2026-10-16.json`. The overnight research is at a saved handoff checkpoint; no scientific/diagnostic/reviewer invocation is active. Existing local viewer server remains available while the environment runs.
 
 ## Latest completed experimental checkpoint — synthetic transport and its public review are terminal
 
