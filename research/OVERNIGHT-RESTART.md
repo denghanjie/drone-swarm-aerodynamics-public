@@ -14,6 +14,10 @@ Result publication independently verified at `468b980b94ad406257207767099ad06874
 
 The overnight work is at a saved handoff checkpoint. No diagnostic, saved checker, presentation QA or scientific process remains active; the existing local server remains available while the environment runs. The overall research goal remains active and unresolved. No successor experiment has been allocated. A separately designed GPU readback/owned-copy/unmap test and a bounded physical-data schema inspection remain next questions, not established results. Original 23:00 UTC launch cutoff and every historical closed allocation remain unchanged. Do not reopen a terminal campaign, silently extend the cutoff, or treat this narrow engineering success as physical validation or a publication-ready contribution.
 
+## Ancillary physical-data access checkpoint
+
+`research/m31-modera-index-2026-10-16/` records one bounded archive-index acquisition attempt at 22:57:48 UTC. It failed during TLS communication with no recorded HTTP status and no application response-body read. Range support and internal schema remain unknown; no member/measurement was acquired. The second range was not attempted. This attempt is terminal, no retry is allocated, and no process remains active. Read PLAN, acquisition.json and RESULT; retain the provider-frame distinction before any future pooling of angle acquisitions. This does not change the scientific status or the original 23:00 UTC launch cutoff.
+
 ## Current static follow-up — published and verified
 
 `research/m31-followup-planning-2026-10-16/` contains the completed public-data compatibility desk review, independent NanoBench metadata challenge, coordinator reproduction, verified bibliography, claim/literature ledgers, and installed-API rationale for a control-channel alternative. Three partial datasets were identified; none currently establishes joint thrust-plus-spatial-flow validation. NanoBench inventory107CSV/107YAML/87distinctCSVblobs and all33treeobjects reconcile; instrumented mass40.85g differs from assumed27g. Archives and CSV payloads were not acquired. Read its MORNING-SUMMARY and NEXT-DECISION.
