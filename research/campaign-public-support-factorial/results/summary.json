@@ -1,0 +1,1020 @@
+{
+  "status": "complete",
+  "interpretation": "In-model support sensitivity on one fixed historical trajectory; uncut arms are not physical truth",
+  "completeRows": 401,
+  "rotorSamplesPerArm": 25664,
+  "receiverTimes": 6416,
+  "counts": {
+    "pairVisits": 384960,
+    "upstreamExcluded": 199640,
+    "nearFieldExcluded": 47187,
+    "farFieldPairs": 138133,
+    "originalExactRotorMatches": 25664,
+    "originalRotorComparisons": 25664,
+    "baselineZeroRotors": 10416,
+    "newlyNonzeroRotors": [
+      0,
+      1314,
+      1314
+    ]
+  },
+  "checks": {
+    "maxProductionInflowResidual": 0,
+    "maxProductionLoadResidual": 0,
+    "maxInteractionResidual": 2.7755575615628914e-17,
+    "maxReceiverCubicResidual": 6.661338147750939e-16,
+    "inputNonmutationRows": 401
+  },
+  "baselineBitEquality": true,
+  "armInflowMS": [
+    {
+      "arm": "P",
+      "count": 25664,
+      "min": 0,
+      "median": 0.3743959210285681,
+      "p95": 2.2811673444790737,
+      "max": 3.803039945033523
+    },
+    {
+      "arm": "X",
+      "count": 25664,
+      "min": 0,
+      "median": 0.3743959210285681,
+      "p95": 2.2811673444790737,
+      "max": 3.803039945033523
+    },
+    {
+      "arm": "R",
+      "count": 25664,
+      "min": 0,
+      "median": 0.45894307519043775,
+      "p95": 2.3173626375762684,
+      "max": 3.8584061978712736
+    },
+    {
+      "arm": "U",
+      "count": 25664,
+      "min": 0,
+      "median": 0.45894307519043775,
+      "p95": 2.3173626375762684,
+      "max": 3.8584061978712736
+    }
+  ],
+  "contrasts": [
+    {
+      "arm": "X",
+      "values": {
+        "inflow": {
+          "signed": {
+            "count": 6416,
+            "min": 0,
+            "median": 0,
+            "p95": 0,
+            "max": 0
+          },
+          "absolute": {
+            "count": 6416,
+            "min": 0,
+            "median": 0,
+            "p95": 0,
+            "max": 0
+          }
+        },
+        "thrust": {
+          "signed": {
+            "count": 6416,
+            "min": 0,
+            "median": 0,
+            "p95": 0,
+            "max": 0
+          },
+          "absolute": {
+            "count": 6416,
+            "min": 0,
+            "median": 0,
+            "p95": 0,
+            "max": 0
+          }
+        },
+        "roll": {
+          "signed": {
+            "count": 6416,
+            "min": 0,
+            "median": 0,
+            "p95": 0,
+            "max": 0
+          },
+          "absolute": {
+            "count": 6416,
+            "min": 0,
+            "median": 0,
+            "p95": 0,
+            "max": 0
+          }
+        },
+        "pitch": {
+          "signed": {
+            "count": 6416,
+            "min": 0,
+            "median": 0,
+            "p95": 0,
+            "max": 0
+          },
+          "absolute": {
+            "count": 6416,
+            "min": 0,
+            "median": 0,
+            "p95": 0,
+            "max": 0
+          }
+        },
+        "angular": {
+          "signed": {
+            "count": 6416,
+            "min": 0,
+            "median": 0,
+            "p95": 0,
+            "max": 0
+          },
+          "absolute": {
+            "count": 6416,
+            "min": 0,
+            "median": 0,
+            "p95": 0,
+            "max": 0
+          }
+        },
+        "momentNorm": {
+          "signed": {
+            "count": 6416,
+            "min": 0,
+            "median": 0,
+            "p95": 0,
+            "max": 0
+          },
+          "absolute": {
+            "count": 6416,
+            "min": 0,
+            "median": 0,
+            "p95": 0,
+            "max": 0
+          }
+        },
+        "verticalForce": {
+          "signed": {
+            "count": 6416,
+            "min": 0,
+            "median": 0,
+            "p95": 0,
+            "max": 0
+          },
+          "absolute": {
+            "count": 6416,
+            "min": 0,
+            "median": 0,
+            "p95": 0,
+            "max": 0
+          }
+        }
+      },
+      "maxima": {
+        "inflow": {
+          "value": 0,
+          "absolute": 0,
+          "row": 0,
+          "time": 0,
+          "receiver": 0,
+          "rotor": 0
+        },
+        "thrust": {
+          "value": 0,
+          "absolute": 0,
+          "row": 0,
+          "time": 0,
+          "receiver": 0
+        },
+        "roll": {
+          "value": 0,
+          "absolute": 0,
+          "row": 0,
+          "time": 0,
+          "receiver": 0
+        },
+        "pitch": {
+          "value": 0,
+          "absolute": 0,
+          "row": 0,
+          "time": 0,
+          "receiver": 0
+        },
+        "angular": {
+          "value": 0,
+          "absolute": 0,
+          "row": 0,
+          "time": 0,
+          "receiver": 0
+        },
+        "momentNorm": {
+          "value": 0,
+          "absolute": 0,
+          "row": 0,
+          "time": 0,
+          "receiver": 0
+        },
+        "verticalForce": {
+          "value": 0,
+          "absolute": 0,
+          "row": 0,
+          "time": 0,
+          "receiver": 0
+        }
+      },
+      "descriptiveBins": {
+        "inflow": [
+          6416,
+          0,
+          0
+        ],
+        "thrust": [
+          6416,
+          0,
+          0
+        ],
+        "angular": [
+          6416,
+          0,
+          0
+        ]
+      },
+      "longestConsecutiveSampleRunAboveUpperBin": {
+        "inflow": 0,
+        "thrust": 0,
+        "angular": 0
+      }
+    },
+    {
+      "arm": "R",
+      "values": {
+        "inflow": {
+          "signed": {
+            "count": 6416,
+            "min": 0,
+            "median": 0.012022099636925798,
+            "p95": 0.18133709508852547,
+            "max": 0.3055554034013147
+          },
+          "absolute": {
+            "count": 6416,
+            "min": 0,
+            "median": 0.012022099636925798,
+            "p95": 0.18133709508852547,
+            "max": 0.3055554034013147
+          }
+        },
+        "thrust": {
+          "signed": {
+            "count": 6416,
+            "min": -0.005214235805224066,
+            "median": -0.00023676943539802098,
+            "p95": 0,
+            "max": 0
+          },
+          "absolute": {
+            "count": 6416,
+            "min": 0,
+            "median": 0.00023664131458178694,
+            "p95": 0.0034139893372163166,
+            "max": 0.005214235805224066
+          }
+        },
+        "roll": {
+          "signed": {
+            "count": 6416,
+            "min": -0.00003111837253455714,
+            "median": 0,
+            "p95": 0.000014474588223307083,
+            "max": 0.000036424581628625215
+          },
+          "absolute": {
+            "count": 6416,
+            "min": 0,
+            "median": 3.2454060561572587e-7,
+            "p95": 0.00001507134321296756,
+            "max": 0.000036424581628625215
+          }
+        },
+        "pitch": {
+          "signed": {
+            "count": 6416,
+            "min": -0.000012554630784003713,
+            "median": 0,
+            "p95": 0.00001834951497327146,
+            "max": 0.00003324623049213646
+          },
+          "absolute": {
+            "count": 6416,
+            "min": 0,
+            "median": 3.235705620756573e-7,
+            "p95": 0.00001834951497327146,
+            "max": 0.00003324623049213646
+          }
+        },
+        "angular": {
+          "signed": {
+            "count": 6416,
+            "min": 0,
+            "median": 0.03538791491411329,
+            "p95": 1.6510793022029393,
+            "max": 2.601755830616087
+          },
+          "absolute": {
+            "count": 6416,
+            "min": 0,
+            "median": 0.03538791491411329,
+            "p95": 1.6510793022029393,
+            "max": 2.601755830616087
+          }
+        },
+        "momentNorm": {
+          "signed": {
+            "count": 6416,
+            "min": 0,
+            "median": 5.557488545377857e-7,
+            "p95": 0.00002519402686152904,
+            "max": 0.000038812723939869844
+          },
+          "absolute": {
+            "count": 6416,
+            "min": 0,
+            "median": 5.557488545377857e-7,
+            "p95": 0.00002519402686152904,
+            "max": 0.000038812723939869844
+          }
+        },
+        "verticalForce": {
+          "signed": {
+            "count": 6416,
+            "min": -0.005163638718125762,
+            "median": -0.0002343922680196371,
+            "p95": 0,
+            "max": 0
+          },
+          "absolute": {
+            "count": 6416,
+            "min": 0,
+            "median": 0.00023434059914402927,
+            "p95": 0.003402086136740459,
+            "max": 0.005163638718125762
+          }
+        }
+      },
+      "maxima": {
+        "inflow": {
+          "value": 0.3055554034013147,
+          "absolute": 0.3055554034013147,
+          "row": 251,
+          "time": 0.6275000000000001,
+          "receiver": 8,
+          "rotor": 3
+        },
+        "thrust": {
+          "value": -0.005214235805224066,
+          "absolute": 0.005214235805224066,
+          "row": 261,
+          "time": 0.6525,
+          "receiver": 8
+        },
+        "roll": {
+          "value": 0.000036424581628625215,
+          "absolute": 0.000036424581628625215,
+          "row": 199,
+          "time": 0.4975,
+          "receiver": 4
+        },
+        "pitch": {
+          "value": 0.00003324623049213646,
+          "absolute": 0.00003324623049213646,
+          "row": 260,
+          "time": 0.65,
+          "receiver": 8
+        },
+        "angular": {
+          "value": 2.601755830616087,
+          "absolute": 2.601755830616087,
+          "row": 199,
+          "time": 0.4975,
+          "receiver": 4
+        },
+        "momentNorm": {
+          "value": 0.000038812723939869844,
+          "absolute": 0.000038812723939869844,
+          "row": 199,
+          "time": 0.4975,
+          "receiver": 4
+        },
+        "verticalForce": {
+          "value": -0.005163638718125762,
+          "absolute": 0.005163638718125762,
+          "row": 263,
+          "time": 0.6575,
+          "receiver": 8
+        }
+      },
+      "descriptiveBins": {
+        "inflow": [
+          4053,
+          2127,
+          236
+        ],
+        "thrust": [
+          3506,
+          2023,
+          887
+        ],
+        "angular": [
+          2406,
+          1544,
+          2466
+        ]
+      },
+      "longestConsecutiveSampleRunAboveUpperBin": {
+        "inflow": 164,
+        "thrust": 243,
+        "angular": 401
+      }
+    },
+    {
+      "arm": "U",
+      "values": {
+        "inflow": {
+          "signed": {
+            "count": 6416,
+            "min": 0,
+            "median": 0.012022099636925798,
+            "p95": 0.18133709508852547,
+            "max": 0.3055554034013147
+          },
+          "absolute": {
+            "count": 6416,
+            "min": 0,
+            "median": 0.012022099636925798,
+            "p95": 0.18133709508852547,
+            "max": 0.3055554034013147
+          }
+        },
+        "thrust": {
+          "signed": {
+            "count": 6416,
+            "min": -0.005214235805224066,
+            "median": -0.00023676943539802098,
+            "p95": 0,
+            "max": 0
+          },
+          "absolute": {
+            "count": 6416,
+            "min": 0,
+            "median": 0.00023664131458178694,
+            "p95": 0.0034139893372163166,
+            "max": 0.005214235805224066
+          }
+        },
+        "roll": {
+          "signed": {
+            "count": 6416,
+            "min": -0.00003111837253455714,
+            "median": 0,
+            "p95": 0.000014474588223307083,
+            "max": 0.000036424581628625215
+          },
+          "absolute": {
+            "count": 6416,
+            "min": 0,
+            "median": 3.2454060561572587e-7,
+            "p95": 0.00001507134321296756,
+            "max": 0.000036424581628625215
+          }
+        },
+        "pitch": {
+          "signed": {
+            "count": 6416,
+            "min": -0.000012554630784003713,
+            "median": 0,
+            "p95": 0.00001834951497327146,
+            "max": 0.00003324623049213646
+          },
+          "absolute": {
+            "count": 6416,
+            "min": 0,
+            "median": 3.235705620756573e-7,
+            "p95": 0.00001834951497327146,
+            "max": 0.00003324623049213646
+          }
+        },
+        "angular": {
+          "signed": {
+            "count": 6416,
+            "min": 0,
+            "median": 0.03538791491411329,
+            "p95": 1.6510793022029393,
+            "max": 2.601755830616087
+          },
+          "absolute": {
+            "count": 6416,
+            "min": 0,
+            "median": 0.03538791491411329,
+            "p95": 1.6510793022029393,
+            "max": 2.601755830616087
+          }
+        },
+        "momentNorm": {
+          "signed": {
+            "count": 6416,
+            "min": 0,
+            "median": 5.557488545377857e-7,
+            "p95": 0.00002519402686152904,
+            "max": 0.000038812723939869844
+          },
+          "absolute": {
+            "count": 6416,
+            "min": 0,
+            "median": 5.557488545377857e-7,
+            "p95": 0.00002519402686152904,
+            "max": 0.000038812723939869844
+          }
+        },
+        "verticalForce": {
+          "signed": {
+            "count": 6416,
+            "min": -0.005163638718125762,
+            "median": -0.0002343922680196371,
+            "p95": 0,
+            "max": 0
+          },
+          "absolute": {
+            "count": 6416,
+            "min": 0,
+            "median": 0.00023434059914402927,
+            "p95": 0.003402086136740459,
+            "max": 0.005163638718125762
+          }
+        }
+      },
+      "maxima": {
+        "inflow": {
+          "value": 0.3055554034013147,
+          "absolute": 0.3055554034013147,
+          "row": 251,
+          "time": 0.6275000000000001,
+          "receiver": 8,
+          "rotor": 3
+        },
+        "thrust": {
+          "value": -0.005214235805224066,
+          "absolute": 0.005214235805224066,
+          "row": 261,
+          "time": 0.6525,
+          "receiver": 8
+        },
+        "roll": {
+          "value": 0.000036424581628625215,
+          "absolute": 0.000036424581628625215,
+          "row": 199,
+          "time": 0.4975,
+          "receiver": 4
+        },
+        "pitch": {
+          "value": 0.00003324623049213646,
+          "absolute": 0.00003324623049213646,
+          "row": 260,
+          "time": 0.65,
+          "receiver": 8
+        },
+        "angular": {
+          "value": 2.601755830616087,
+          "absolute": 2.601755830616087,
+          "row": 199,
+          "time": 0.4975,
+          "receiver": 4
+        },
+        "momentNorm": {
+          "value": 0.000038812723939869844,
+          "absolute": 0.000038812723939869844,
+          "row": 199,
+          "time": 0.4975,
+          "receiver": 4
+        },
+        "verticalForce": {
+          "value": -0.005163638718125762,
+          "absolute": 0.005163638718125762,
+          "row": 263,
+          "time": 0.6575,
+          "receiver": 8
+        }
+      },
+      "descriptiveBins": {
+        "inflow": [
+          4053,
+          2127,
+          236
+        ],
+        "thrust": [
+          3506,
+          2023,
+          887
+        ],
+        "angular": [
+          2406,
+          1544,
+          2466
+        ]
+      },
+      "longestConsecutiveSampleRunAboveUpperBin": {
+        "inflow": 164,
+        "thrust": 243,
+        "angular": 401
+      }
+    }
+  ],
+  "normalizers": {
+    "inflow": 4.032743274241601,
+    "thrust": 0.26487,
+    "rollPitchMoment": 0.00741636,
+    "angular": "rad/s^2"
+  },
+  "descriptiveBins": {
+    "inflowNormalized": [
+      0.01,
+      0.05
+    ],
+    "thrustMagnitudeNormalized": [
+      0.001,
+      0.01
+    ],
+    "angularMagnitude": [
+      0.01,
+      0.1
+    ],
+    "meaning": "Conventions only; no physical pass/fail threshold"
+  },
+  "partitions": [
+    {
+      "radial": "core_xi_le_2",
+      "axial": "d_lt_2",
+      "pairs": 16039,
+      "armInflowSums": [
+        16061.818825054943,
+        16061.818825054943,
+        16061.818825054943,
+        16061.818825054943
+      ],
+      "interactionSum": 0
+    },
+    {
+      "radial": "core_xi_le_2",
+      "axial": "2_le_d_lt_2.5",
+      "pairs": 0,
+      "armInflowSums": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "interactionSum": 0
+    },
+    {
+      "radial": "core_xi_le_2",
+      "axial": "d_ge_2.5",
+      "pairs": 0,
+      "armInflowSums": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "interactionSum": 0
+    },
+    {
+      "radial": "transition_2_lt_xi_lt_3",
+      "axial": "d_lt_2",
+      "pairs": 5563,
+      "armInflowSums": [
+        597.8717521340669,
+        597.8717521340669,
+        959.3734632336351,
+        959.3734632336351
+      ],
+      "interactionSum": 0
+    },
+    {
+      "radial": "transition_2_lt_xi_lt_3",
+      "axial": "2_le_d_lt_2.5",
+      "pairs": 0,
+      "armInflowSums": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "interactionSum": 0
+    },
+    {
+      "radial": "transition_2_lt_xi_lt_3",
+      "axial": "d_ge_2.5",
+      "pairs": 0,
+      "armInflowSums": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "interactionSum": 0
+    },
+    {
+      "radial": "outer_3_le_xi_le_5",
+      "axial": "d_lt_2",
+      "pairs": 13345,
+      "armInflowSums": [
+        0,
+        0,
+        437.3756406468867,
+        437.3756406468867
+      ],
+      "interactionSum": 0
+    },
+    {
+      "radial": "outer_3_le_xi_le_5",
+      "axial": "2_le_d_lt_2.5",
+      "pairs": 0,
+      "armInflowSums": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "interactionSum": 0
+    },
+    {
+      "radial": "outer_3_le_xi_le_5",
+      "axial": "d_ge_2.5",
+      "pairs": 0,
+      "armInflowSums": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "interactionSum": 0
+    },
+    {
+      "radial": "extreme_xi_gt_5",
+      "axial": "d_lt_2",
+      "pairs": 103186,
+      "armInflowSums": [
+        0,
+        0,
+        286.5194496690526,
+        286.5194496690526
+      ],
+      "interactionSum": 0
+    },
+    {
+      "radial": "extreme_xi_gt_5",
+      "axial": "2_le_d_lt_2.5",
+      "pairs": 0,
+      "armInflowSums": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "interactionSum": 0
+    },
+    {
+      "radial": "extreme_xi_gt_5",
+      "axial": "d_ge_2.5",
+      "pairs": 0,
+      "armInflowSums": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "interactionSum": 0
+    }
+  ],
+  "addedContributionExtents": [
+    {
+      "arm": "X",
+      "maxDownstream": null,
+      "maxXi": null,
+      "positivePairTerms": 0
+    },
+    {
+      "arm": "R",
+      "maxDownstream": 1.8695047167735306,
+      "maxXi": 34.97752282054446,
+      "positivePairTerms": 122094
+    },
+    {
+      "arm": "U",
+      "maxDownstream": 1.8695047167735306,
+      "maxXi": 34.97752282054446,
+      "positivePairTerms": 122094
+    }
+  ],
+  "worstAddedPairTerms": [
+    [],
+    [
+      {
+        "value": 0.12978145959337606,
+        "row": 218,
+        "time": 0.545,
+        "receiver": 9,
+        "rotor": 0,
+        "source": 3,
+        "downstream": 0.7648010657709423,
+        "radial": 0.2625579490248458,
+        "xi": 2.794058115060116
+      },
+      {
+        "value": 0.12976008654936486,
+        "row": 217,
+        "time": 0.5425,
+        "receiver": 9,
+        "rotor": 0,
+        "source": 3,
+        "downstream": 0.7646578461152361,
+        "radial": 0.2616781422682988,
+        "xi": 2.785020970987705
+      },
+      {
+        "value": 0.12975020370263246,
+        "row": 219,
+        "time": 0.5475,
+        "receiver": 9,
+        "rotor": 0,
+        "source": 3,
+        "downstream": 0.7649423562231585,
+        "radial": 0.2634336759428804,
+        "xi": 2.8030541479659736
+      },
+      {
+        "value": 0.1296851236513522,
+        "row": 216,
+        "time": 0.54,
+        "receiver": 9,
+        "rotor": 0,
+        "source": 3,
+        "downstream": 0.7645127175604226,
+        "radial": 0.2607942158664208,
+        "xi": 2.7759421889266287
+      },
+      {
+        "value": 0.12966727610122225,
+        "row": 220,
+        "time": 0.55,
+        "receiver": 9,
+        "rotor": 0,
+        "source": 3,
+        "downstream": 0.7650816969303512,
+        "radial": 0.26430536414097466,
+        "xi": 2.812009610992167
+      },
+      {
+        "value": 0.12955559381614495,
+        "row": 215,
+        "time": 0.5375,
+        "receiver": 9,
+        "rotor": 0,
+        "source": 3,
+        "downstream": 0.7643657127989233,
+        "radial": 0.25990613448686817,
+        "xi": 2.7668212616719954
+      },
+      {
+        "value": 0.12953363975521126,
+        "row": 221,
+        "time": 0.5525,
+        "receiver": 9,
+        "rotor": 0,
+        "source": 3,
+        "downstream": 0.76521905738098,
+        "radial": 0.2651730566905175,
+        "xi": 2.8209250891084006
+      },
+      {
+        "value": 0.12937051839410385,
+        "row": 214,
+        "time": 0.535,
+        "receiver": 9,
+        "rotor": 0,
+        "source": 3,
+        "downstream": 0.7642168619354119,
+        "radial": 0.2590138702739458,
+        "xi": 2.7576577677891216
+      }
+    ],
+    [
+      {
+        "value": 0.12978145959337606,
+        "row": 218,
+        "time": 0.545,
+        "receiver": 9,
+        "rotor": 0,
+        "source": 3,
+        "downstream": 0.7648010657709423,
+        "radial": 0.2625579490248458,
+        "xi": 2.794058115060116
+      },
+      {
+        "value": 0.12976008654936486,
+        "row": 217,
+        "time": 0.5425,
+        "receiver": 9,
+        "rotor": 0,
+        "source": 3,
+        "downstream": 0.7646578461152361,
+        "radial": 0.2616781422682988,
+        "xi": 2.785020970987705
+      },
+      {
+        "value": 0.12975020370263246,
+        "row": 219,
+        "time": 0.5475,
+        "receiver": 9,
+        "rotor": 0,
+        "source": 3,
+        "downstream": 0.7649423562231585,
+        "radial": 0.2634336759428804,
+        "xi": 2.8030541479659736
+      },
+      {
+        "value": 0.1296851236513522,
+        "row": 216,
+        "time": 0.54,
+        "receiver": 9,
+        "rotor": 0,
+        "source": 3,
+        "downstream": 0.7645127175604226,
+        "radial": 0.2607942158664208,
+        "xi": 2.7759421889266287
+      },
+      {
+        "value": 0.12966727610122225,
+        "row": 220,
+        "time": 0.55,
+        "receiver": 9,
+        "rotor": 0,
+        "source": 3,
+        "downstream": 0.7650816969303512,
+        "radial": 0.26430536414097466,
+        "xi": 2.812009610992167
+      },
+      {
+        "value": 0.12955559381614495,
+        "row": 215,
+        "time": 0.5375,
+        "receiver": 9,
+        "rotor": 0,
+        "source": 3,
+        "downstream": 0.7643657127989233,
+        "radial": 0.25990613448686817,
+        "xi": 2.7668212616719954
+      },
+      {
+        "value": 0.12953363975521126,
+        "row": 221,
+        "time": 0.5525,
+        "receiver": 9,
+        "rotor": 0,
+        "source": 3,
+        "downstream": 0.76521905738098,
+        "radial": 0.2651730566905175,
+        "xi": 2.8209250891084006
+      },
+      {
+        "value": 0.12937051839410385,
+        "row": 214,
+        "time": 0.535,
+        "receiver": 9,
+        "rotor": 0,
+        "source": 3,
+        "downstream": 0.7642168619354119,
+        "radial": 0.2590138702739458,
+        "xi": 2.7576577677891216
+      }
+    ]
+  ],
+  "artifacts": [
+    {
+      "path": "winds.f64",
+      "bytes": 821248,
+      "sha256": "7b672779275b0b1a4e2a4f871758d0845f7bcd17ebb91841f4277c43e42d94c3"
+    },
+    {
+      "path": "loads.f64",
+      "bytes": 615936,
+      "sha256": "a6d68dc2e982edf1890e1b4fea5dbc9c771459397cae271ee92f5f8f4c4e8d75"
+    }
+  ]
+}

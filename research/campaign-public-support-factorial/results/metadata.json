@@ -1,0 +1,122 @@
+{
+  "schema": "public-support-factorial/v1",
+  "validity": "All 401 rows completed. See summary.json and INDEPENDENT-REVIEW.md. Original progress and execution receipts remain privately retained.",
+  "claim": "Fixed-state finite-population formal support sensitivity; not physical validation or a new flight",
+  "planSha256": "2879a16281c5ce16ef064165fbcd9254ccf77ca6fde7759844144838305add44",
+  "runnerSha256": "9b27c5fe2e3011ee994cd35179e8b2948bf62241ebd9a286f7eae235c6518e9b",
+  "commit": "1336f5c416875a9651f92b58b2ed06649f25b04e",
+  "input": {
+    "path": "research/campaign-joint-stage-reference/implementation/results/raw/s4301-compatibility.common.f64",
+    "sha256": "055fa27e4b7baeb3e363a2f6a912a4fd50b44cb52ce948d23e061dffd8c4ed8d",
+    "shape": [
+      401,
+      16,
+      17
+    ],
+    "source_url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/1336f5c416875a9651f92b58b2ed06649f25b04e/research/campaign-joint-stage-reference/implementation/results/raw/s4301-compatibility.common.f64"
+  },
+  "sources": [
+    {
+      "path": "research/campaign-joint-stage-reference/implementation/snapshot/outputs/milestone-28-source/aero.cjs",
+      "git_blob_sha": "61ca85bc698b115f8c9597929b3bdbf46e10b4ff",
+      "bytes": 4259,
+      "source_url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/1336f5c416875a9651f92b58b2ed06649f25b04e/research/campaign-joint-stage-reference/implementation/snapshot/outputs/milestone-28-source/aero.cjs",
+      "sha256": "710b0a8f0df62208e3385ac9b8288240b379fe9248a1a645251a77c533f24a62",
+      "byte_exact_to_pinned_git_blob": true
+    },
+    {
+      "path": "research/campaign-joint-stage-reference/implementation/snapshot/outputs/step02c-source/physics.cjs",
+      "git_blob_sha": "40c3ee2b59ae882c34c81bb589b6c65f9b519346",
+      "bytes": 6115,
+      "source_url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/1336f5c416875a9651f92b58b2ed06649f25b04e/research/campaign-joint-stage-reference/implementation/snapshot/outputs/step02c-source/physics.cjs",
+      "sha256": "0c46c9beb4e831c621658f6600c074f97c95966de07f5000eb64aa476a443fa1",
+      "byte_exact_to_pinned_git_blob": true
+    },
+    {
+      "path": "research/campaign-joint-stage-reference/implementation/snapshot/outputs/step03a-source/wake.cjs",
+      "git_blob_sha": "055ee37053f42cad1471455491f03fdf438b2cdb",
+      "bytes": 2069,
+      "source_url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/1336f5c416875a9651f92b58b2ed06649f25b04e/research/campaign-joint-stage-reference/implementation/snapshot/outputs/step03a-source/wake.cjs",
+      "sha256": "fb6d5a1d632a0023818041ef6bc39316ff8ed950f318da1a6649e2515b9fd8bc",
+      "byte_exact_to_pinned_git_blob": true
+    },
+    {
+      "path": "research/campaign-joint-stage-reference/implementation/snapshot/outputs/milestone-26-source/grid.cjs",
+      "git_blob_sha": "da6950ce6de759095f5283122f3ac638ad41b9a4",
+      "bytes": 898,
+      "source_url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/blob/1336f5c416875a9651f92b58b2ed06649f25b04e/research/campaign-joint-stage-reference/implementation/snapshot/outputs/milestone-26-source/grid.cjs",
+      "sha256": "f06010781770b64432935e5d825bcd1405b154b735ac4d0d654f145600cea302",
+      "byte_exact_to_pinned_git_blob": true
+    }
+  ],
+  "armOrder": [
+    "P",
+    "X",
+    "R",
+    "U"
+  ],
+  "arms": {
+    "P": "both original tapers",
+    "X": "remove axial taper/cutoff, retain radial taper",
+    "R": "retain axial taper/cutoff, remove radial taper",
+    "U": "uncut formal continuation over finite sources"
+  },
+  "winds": {
+    "path": "winds.f64",
+    "shape": [
+      401,
+      4,
+      16,
+      4
+    ],
+    "bytes": 821248,
+    "units": "m/s",
+    "encoding": "little-endian float64",
+    "availability": "withheld from public checkpoint; privately retained",
+    "sha256": "7b672779275b0b1a4e2a4f871758d0845f7bcd17ebb91841f4277c43e42d94c3",
+    "publicDownload": false
+  },
+  "loads": {
+    "path": "loads.f64",
+    "shape": [
+      401,
+      4,
+      16,
+      3
+    ],
+    "bytes": 615936,
+    "columns": [
+      "total thrust N",
+      "body roll moment N m",
+      "body pitch moment N m"
+    ],
+    "encoding": "little-endian float64",
+    "yaw": "nominal original yaw torque unchanged",
+    "availability": "withheld from public checkpoint; privately retained",
+    "sha256": "a6d68dc2e982edf1890e1b4fea5dbc9c771459397cae271ee92f5f8f4c4e8d75",
+    "publicDownload": false
+  },
+  "dt": 0.0025,
+  "supportBound": 2.630711448903349,
+  "nearBound": 0.28799382671393103,
+  "vi": 4.032743274241601,
+  "mg": 0.26487,
+  "armScale": 0.00741636,
+  "inertia": [
+    1.4e-05,
+    1.4e-05,
+    2.17e-05
+  ],
+  "countsMeaning": "Rows, source terms and receiver-times are correlated; no independent-replicate inference",
+  "partitionMeaning": "Unweighted sums over endpoint source-to-rotor terms, not time integrals",
+  "tolerance": "absolute1e-12 + relative1e-12 for adapter comparisons",
+  "caps": {
+    "outputBytes": 2000000,
+    "wallSeconds": 60
+  },
+  "durability": "Row progress replaced atomically using a counted temporary file; tensor fsync only at final close; no per-row power-loss durability claim",
+  "publicSummaryStatus": "complete",
+  "publicPlan": "../feasibility/PUBLIC-PLAN.md",
+  "originalMetadataSha256": "d4f5dccf106a19717c71aab913150a9966042072df28a268e9f7496ec687dbb8",
+  "exportNote": "Public availability annotations added; numerical schema, source identities and scientific constants unchanged."
+}
