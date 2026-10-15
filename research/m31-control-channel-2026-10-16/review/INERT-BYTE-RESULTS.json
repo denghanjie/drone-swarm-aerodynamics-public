@@ -1,0 +1,77 @@
+{
+  "kind": "inert-byte-predicate-tests",
+  "operational_sources_imported": false,
+  "actual_campaign_evidence_read": false,
+  "cases": [
+    {
+      "case": "object_instead_of_array",
+      "pass": true
+    },
+    {
+      "case": "null",
+      "pass": true
+    },
+    {
+      "case": "short_array",
+      "pass": true
+    },
+    {
+      "case": "long_array",
+      "pass": true
+    },
+    {
+      "case": "boolean_is_not_integer",
+      "pass": true
+    },
+    {
+      "case": "integral_float_is_not_json_integer",
+      "pass": true
+    },
+    {
+      "case": "negative_zero_is_not_integer_byte",
+      "pass": true
+    },
+    {
+      "case": "nan_is_not_integer_byte",
+      "pass": true
+    },
+    {
+      "case": "infinity_is_not_integer_byte",
+      "pass": true
+    },
+    {
+      "case": "string_is_not_integer",
+      "pass": true
+    },
+    {
+      "case": "negative_byte",
+      "pass": true
+    },
+    {
+      "case": "overflow_byte",
+      "pass": true
+    },
+    {
+      "case": "nested_array",
+      "pass": true
+    },
+    {
+      "case": "correct_array_and_file",
+      "pass": true
+    },
+    {
+      "case": "wrong_valid_bytes_are_consistent_failed_transfer",
+      "pass": true
+    },
+    {
+      "case": "changed_persisted_file_breaks_evidence_agreement",
+      "pass": true
+    },
+    {
+      "case": "full_length_inert_synthetic_array",
+      "pass": true
+    }
+  ],
+  "passed": 17,
+  "failed": 0
+}

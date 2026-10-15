@@ -4,6 +4,10 @@
 
 Public additive worktree: current repository, branch `codex/m31-audit-2026-10-15`. Preserve the original eight-step roadmap and historical M31 base. Later remote main/DOT at `1336f5c416875a9651f92b58b2ed06649f25b04e` remains separate and untouched. The private workspace, attachments, credentials and chat records must never be published.
 
+## Current engineering allocation — source frozen, not launched
+
+A new isolated `research/m31-control-channel-2026-10-16/` adopts one ordinary-heap3840-byte return through the existing automation channel. Source freeze SHA256`c36018ea48530e17c91bed62b5f062ff93577dd4328559c9dd9ca6d22e1d932b`,6325B,30pins includes worker, lifecycle sources and independent saved checker. Independent static review plus31validator and17byte-comparison inert cases completed. No browser or diagnostic has run. Next: publish/independently verify exact source then one60s capture and one30s saved-only review, both before unchanged23:00UTCcutoff. No science/GPU/larger transfer or automatic successor is allocated. Read PROTOCOL and frozen FINAL-STATIC-REVIEW; preserve all earlier locks and results.
+
 ## Current static follow-up — published and verified
 
 `research/m31-followup-planning-2026-10-16/` contains the completed public-data compatibility desk review, independent NanoBench metadata challenge, coordinator reproduction, verified bibliography, claim/literature ledgers, and installed-API rationale for a control-channel alternative. Three partial datasets were identified; none currently establishes joint thrust-plus-spatial-flow validation. NanoBench inventory107CSV/107YAML/87distinctCSVblobs and all33treeobjects reconcile; instrumented mass40.85g differs from assumed27g. Archives and CSV payloads were not acquired. Read its MORNING-SUMMARY and NEXT-DECISION.
