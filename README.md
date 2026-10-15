@@ -6,6 +6,13 @@ This is an ongoing research record, including unsuccessful experiments. The curr
 
 ![Visible airflow in the milestone 32 lab](outputs/milestone-32-flock.png)
 
+
+## Research checkpoint — 15 October 2026
+
+[Current evidence and publication decision](research/research-decision-20261015/DECISION-MEMO.md) · [Verified literature ledger](research/research-decision-20261015/LITERATURE-CLAIMS-LEDGER.md) · [Latest saved-data viewer](research/campaign-predictor-event-stress/demo/index.html#controller-replay).
+
+Short, locally controlled 3D Boids tests show substantially smaller model-relative errors with causal airflow prediction at matched refresh counts. Required obstacle/support events were absent; physical validation, novelty, runtime speedup and coupled WebGPU scaling remain unestablished. All failed/inconclusive studies and an unused failure-writer erratum are preserved. The original eight-step roadmap below is unchanged. The new viewer is statically checked; browser rendering is unverified.
+
 ## Start here
 
 - [Research direction and assessment of proposed trade-offs](outputs/research-tradeoff-assessment.md)
