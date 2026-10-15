@@ -1,0 +1,15 @@
+# Claim–evidence ledger
+
+The independent saved-only review reproduced the observations below with zero integrity failures and the same single scientific gate failure; see INDEPENDENT-SAVED-REVIEW.md. No checker/agent agreement replaces experimental evidence. Source 4767787487fc7f8c3a8e8189523b1299c9c7f190; exact conditions and input provenance in freeze.json/config.json/PROTOCOL.md.
+
+|Claim|Status|Evidence and scope|Counterevidence / next challenge|
+|---|---|---|---|
+|Original R reproduces the stored I oracle on the 16 selected rotors.|Confirmed numerically within tested scope|raw/R-assessment.json; all 80,000 saved codes match,16 ordinary sums reproduce prior values, exact stored-sum allowance gates pass.|Stored numerical implementation agreement only; physical model remains unvalidated.|
+|Packing the prepared inputs to binary32 satisfies the selected absolute term budget on all 16 rotors.|Confirmed numerically within tested scope|raw/Q-assessment.json; Q/R policy identity and exact L1 gates pass.|Exposed slice; input packing combines coordinates, axes, offsets and constants. Not a cause attribution or fleet-wide guarantee.|
+|GPU records have matching branch classes, finite valid terms and complete coverage for 80,000 slots.|Confirmed numerically within tested scope|raw/terms-gpu.u32, R/Q metadata/codes, terms-assessment.json;388 positive, 79,612 early zeros; all 16 controls pass.|No cross-device or arbitrary-input qualification. Successful implementation does not guarantee requested accuracy.|
+|This GPU wake slice meets the predeclared contribution-error budget.|Contradicted; independently reproduced from saved operands|raw/terms-assessment.json, index 15: receiver 988, rotor 3 fails; 15 pass.|One counterexample is sufficient to reject the all16gate; it does not establish impossibility of accurate GPU wake computation.|
+|The serial GPU reduction or final composed pipeline is qualified.|Unresolved / unexecuted|results/result.json counts gpuSumSlots = 0; no reduce-gpu file; stop after term gate.|Must not run the skipped stage under this closed budget or infer its output.|
+|World-coordinate arithmetic is a cause of the failure and relative coordinates would repair it.|Hypothesis only|Current reports separate Q−R and T−Q, not individual operations.|Requires a distinct prospective ablation and genuinely fresh confirmation; no repair has been executed.|
+|This establishes speedup, physical validity, coupled-flight accuracy, low-end feasibility or novelty.|Unresolved|No matched timings, independent physical measurements, coupled flight, hardware sample or completed novelty evidence.|Retain prior trajectory failures and physical compatibility gaps; do not extrapolate.|
+
+Exact signed attribution and absolute-error certificates use stored operands, not exact real-valued aerodynamics. There is no sampling uncertainty estimate for four deliberately selected exposed receivers. The source freeze preceded execution and all failures/skipped stages remain intact.

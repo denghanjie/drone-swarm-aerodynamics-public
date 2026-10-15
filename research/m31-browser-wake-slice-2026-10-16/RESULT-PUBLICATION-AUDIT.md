@@ -1,0 +1,11 @@
+# Result publication audit
+
+The scientific raw data are synthetic numerical records from the already public5000source state file. All51new raw files, terminal result/budgets, controls, source freeze, one saved-review report/checker/launcher, independent disposition, readable claims/literature/reproduction/restart records and tested Three.js evidence are retained. The numerical failure and missing reduction remain explicit. No experiment or saved checker was rerun.
+
+Privacy review found no private home/folder paths or recognized credential markers in the new text payload. Manual inspection confirmed there are no user attachments, chat records, credentials, cookies, private workspace files, browser profile/PID/serial records or restricted third-party datasets. Generic OS/browser/adapter details and public GitHub identity are retained for reproducibility. Literature is cited; no full text is redistributed.
+
+Private process/command/index records remain local. Public transformations are documented in path-disclosures.json, final-review-disclosures.json, host-provenance-disclosures.json, results/final-static-followup-disclosure.json and results/saved-review-publication-disclosures.json. Actual public checksums apply to transformed copies; exact original checker/report/closure bytes are unchanged. The original private input-index digest must not be mistaken for the sanitized public index digest.
+
+All82frozen pins are rechecked before publication. The result manifest excludes itself and includes this campaign, its pinned dependencies, local Three.js dependencies and the global restart's current snapshot. Later restart changes do not alter the committed snapshot. Privacy review and authorized branch push precede independent remote commit/manifest-byte retrieval and local pin reconciliation. Do not claim every remote binary was independently downloaded.
+
+UI-only correction traces are preserved: missing import-map failure, subsequent passing functional run, and the focused-view visibility correction prompted by screenshot inspection. This is separate from the two immutable research budgets. A future coordinate-origin experiment remains a new prospective question; its source must be frozen and independently verified before numerical exposure.

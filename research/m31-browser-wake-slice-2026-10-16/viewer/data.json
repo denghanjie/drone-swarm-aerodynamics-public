@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "scope": "Static display of original saved poses/terms/reports; no fresh wake, root, flight, timing or scientific gate execution",
+  "nSources": 5000,
+  "receiverIds": [
+    27,
+    445,
+    4500,
+    988
+  ],
+  "poseStride": 17,
+  "quaternionOffset": 6,
+  "sourceCommit": "4767787487fc7f8c3a8e8189523b1299c9c7f190",
+  "references": {
+    "R": {
+      "metadata": "RMetadata",
+      "scalars": "RScalars",
+      "terms": "RTerms",
+      "sums": "RSums",
+      "validity": "RValidity",
+      "counts": "RCounts"
+    },
+    "Q": {
+      "metadata": "QMetadata",
+      "scalars": "QScalars",
+      "terms": "QTerms",
+      "sums": "QSums",
+      "validity": "QValidity",
+      "counts": "QCounts"
+    }
+  },
+  "reviewContract": {
+    "version": 1,
+    "bound": true,
+    "integrityField": "reviewPass",
+    "numericalField": "fullSuiteQualified",
+    "inputIndexSha256": "ba00b67474e5f4c7ae9025c9aed960193384433b286aba4d6ac04e6b9b59d53a",
+    "checkerSha256": "1d546f28965f40785b6bdc426a9163c126710e2e3f65cf96a5cc0727663c335b"
+  },
+  "default": {
+    "selectionIndex": 3,
+    "rotor": 3,
+    "color": "error-TR",
+    "sourceRule": "largest absolute difference of valid saved T and R terms; ascending source ID breaks ties",
+    "view": "focused"
+  },
+  "files": {
+    "result": {
+      "url": "../results/result.json",
+      "bytes": 207247,
+      "sha256": "0ceac9a79fd94f6b6eeaa8d60f6b36f991a7675fee0b451ed38aa937f32352b4",
+      "label": "Original terminal scientific result"
+    },
+    "budget": {
+      "url": "../results/budget.json",
+      "bytes": 763,
+      "sha256": "94b66918250d62e4ca3ea4d2448e1193e59e4109af68e2fafdf0459a2af34258",
+      "label": "Terminal scientific supervision ledger"
+    },
+    "freeze": {
+      "url": "../freeze.json",
+      "bytes": 16870,
+      "sha256": "5862d96e2556d58852f7b1d3a65e00e5303c8061e137f27280041156191c282f",
+      "label": "Prospective source/input freeze"
+    },
+    "selection": {
+      "url": "../selection/selection.json",
+      "bytes": 9501,
+      "sha256": "00bfae2e0d0cc8cfc811556ea549fe69399d45882693b760f612e15f8daa125f",
+      "label": "Frozen exposed receiver selection"
+    },
+    "schema": {
+      "url": "../schema.json",
+      "bytes": 4578,
+      "sha256": "8379083eef50257c3eb6af36a7fa06a2019ec923719a85cf81ecb39134629a54",
+      "label": "Retained record layout"
+    },
+    "poses": {
+      "url": "../../m31-zero-screen-2026-10-16/raw/fresh5000-states.f64",
+      "bytes": 680000,
+      "sha256": "6e7e813c8b4127a4fa567249f0bf685d460adc6de2dd6a59fc4444f1a153a1bb",
+      "label": "Original 5,000 saved poses",
+      "repoPath": "research/m31-zero-screen-2026-10-16/raw/fresh5000-states.f64"
+    },
+    "RMetadata": {
+      "url": "../raw/R-metadata.u32",
+      "bytes": 2560000,
+      "sha256": "f326ab43b9f8af4eb812d28dc57e0e4620030997e0a3dd7ed0b9296a74879e2d",
+      "label": "R metadata",
+      "rawName": "R-metadata.u32"
+    },
+    "RScalars": {
+      "url": "../raw/R-scalars.f64",
+      "bytes": 7680000,
+      "sha256": "55db4c18ea103e1b9cce91ecb97b56aa53722e2bd74ac3f6a152ed9c5b260df8",
+      "label": "R scalars",
+      "rawName": "R-scalars.f64"
+    },
+    "RTerms": {
+      "url": "../raw/R-terms.f64",
+      "bytes": 640000,
+      "sha256": "91131d34b8908b6b348bed254dbf70f37f1455a9c84ae3cdf9fdf11f48cbe167",
+      "label": "R terms",
+      "rawName": "R-terms.f64"
+    },
+    "RSums": {
+      "url": "../raw/R-ordinarySums.f64",
+      "bytes": 128,
+      "sha256": "59b19bae769648d0108bd8e2a7fc3eb112b0fad5abb8d09fe16e4aedd1197a07",
+      "label": "R sums",
+      "rawName": "R-ordinarySums.f64"
+    },
+    "RValidity": {
+      "url": "../raw/R-sumValidity.u8",
+      "bytes": 16,
+      "sha256": "cc8cd41cef907c4d216069122c4b89936211361f9050a717a1e37ad1862e952f",
+      "label": "R validity",
+      "rawName": "R-sumValidity.u8"
+    },
+    "RCounts": {
+      "url": "../raw/R-counts.json",
+      "bytes": 521,
+      "sha256": "a277cb148bc4f06ef37efcf2d6a3360d1a632929fbe605e08ded48778f9c0175",
+      "label": "R counts",
+      "rawName": "R-counts.json"
+    },
+    "QMetadata": {
+      "url": "../raw/Q-metadata.u32",
+      "bytes": 2560000,
+      "sha256": "f326ab43b9f8af4eb812d28dc57e0e4620030997e0a3dd7ed0b9296a74879e2d",
+      "label": "Q metadata",
+      "rawName": "Q-metadata.u32"
+    },
+    "QScalars": {
+      "url": "../raw/Q-scalars.f64",
+      "bytes": 7680000,
+      "sha256": "d025fd4d7399fe1fd60df62fb30122be0308107c2e8a56defe3b7540f5264ffa",
+      "label": "Q scalars",
+      "rawName": "Q-scalars.f64"
+    },
+    "QTerms": {
+      "url": "../raw/Q-terms.f64",
+      "bytes": 640000,
+      "sha256": "49299da26e4af4c8a5a22e4bf17dbcf02ebd14c851ed5ce75f6980fb327cf0d4",
+      "label": "Q terms",
+      "rawName": "Q-terms.f64"
+    },
+    "QSums": {
+      "url": "../raw/Q-ordinarySums.f64",
+      "bytes": 128,
+      "sha256": "7539759b4d41dd56f6b94bfea91c1d82675da209f34fd2c0a273325f00359b16",
+      "label": "Q sums",
+      "rawName": "Q-ordinarySums.f64"
+    },
+    "QValidity": {
+      "url": "../raw/Q-sumValidity.u8",
+      "bytes": 16,
+      "sha256": "cc8cd41cef907c4d216069122c4b89936211361f9050a717a1e37ad1862e952f",
+      "label": "Q validity",
+      "rawName": "Q-sumValidity.u8"
+    },
+    "QCounts": {
+      "url": "../raw/Q-counts.json",
+      "bytes": 521,
+      "sha256": "a277cb148bc4f06ef37efcf2d6a3360d1a632929fbe605e08ded48778f9c0175",
+      "label": "Q counts",
+      "rawName": "Q-counts.json"
+    },
+    "originalOffsets": {
+      "url": "../raw/R-prepared-offsets.f64",
+      "bytes": 512,
+      "sha256": "6ce79054ec22fc0321ae023e8a56c0e88e659c9c0d179f240c64b6a25f6999f9",
+      "label": "Saved prepared receiver offsets",
+      "rawName": "R-prepared-offsets.f64"
+    },
+    "gpuTerms": {
+      "url": "../raw/terms-gpu.u32",
+      "bytes": 6400000,
+      "sha256": "549b50dcc4c65c7d7ef6910024110a31fb8511fef5448a30015494ddd4660b5c",
+      "label": "Original materialized GPU term words",
+      "rawName": "terms-gpu.u32"
+    },
+    "gpuControls": {
+      "url": "../raw/controls-gpu.u32",
+      "bytes": 1280,
+      "sha256": "ee4c4f557368029910422e171f066111892d61e0487dc6f26375413132fe4406",
+      "label": "Original GPU control words",
+      "rawName": "controls-gpu.u32"
+    },
+    "RReport": {
+      "url": "../raw/R-assessment.json",
+      "bytes": 31136,
+      "sha256": "4813419a6e70ad44529b994099eed260565071622cdd6f3c6626c4a8629a9540",
+      "label": "R original saved assessment",
+      "rawName": "R-assessment.json"
+    },
+    "QReport": {
+      "url": "../raw/Q-assessment.json",
+      "bytes": 51143,
+      "sha256": "99d91e9888ed3a7a91f08d82b35ad3fd4f672ef31bb46fb3aaa3895af8a943c0",
+      "label": "Q original saved assessment",
+      "rawName": "Q-assessment.json"
+    },
+    "controlsReport": {
+      "url": "../raw/controls-assessment.json",
+      "bytes": 193,
+      "sha256": "160c21f2ff5839662bdf3c38d52b5d0bc7fb15586fcb9d6d804a9399f9e7c88e",
+      "label": "controls original saved assessment",
+      "rawName": "controls-assessment.json"
+    },
+    "termsReport": {
+      "url": "../raw/terms-assessment.json",
+      "bytes": 49923,
+      "sha256": "9e919c4129e9d061eebcdb8d368a1cc74fa0e6161e007165990cc983906ae424",
+      "label": "terms original saved assessment",
+      "rawName": "terms-assessment.json"
+    },
+    "reviewClosure": {
+      "url": "../results/saved-review-launch-public/runtime.json",
+      "bytes": 481,
+      "sha256": "76df357b535ea3f2e9b283a188caee4bf4dae30d9baffc3b9daf226901536571",
+      "label": "Original independent-review external closure"
+    },
+    "review": {
+      "url": "../results/independent-review.json",
+      "bytes": 70783,
+      "sha256": "2e2c62b883df1ecc15418c424e9c731521400b53d71ee307cf8024c224a5d95e",
+      "label": "Original independent saved review"
+    }
+  }
+}
