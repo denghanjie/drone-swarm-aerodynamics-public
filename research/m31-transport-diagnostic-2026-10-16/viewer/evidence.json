@@ -1,0 +1,637 @@
+{
+  "schema": "m31-transport-view-v1",
+  "sourceCommit": "fe2c19a30b4605ec755e8e7103946d7ef037a76a",
+  "sourceFreezeSHA256": "3a2f596279d7720ad16ca4eb07685061ecb54769c6c86867750d23d75327d7d8",
+  "summary": {
+    "outcome": "Transfer failed before upload acceptance",
+    "review": "Public saved-record review passed",
+    "status": "Bound to actual terminal records. Private raw traces were not independently reviewed by the saved-public-evidence checker.",
+    "interpretation": "Chrome reported LocalNetworkAccessPermissionDenied for this synthetic request. The sink recorded one socket connection but no HTTP request, and no payload file was saved. This identifies a browser-reported boundary in this trial; it does not establish the historical GPU failure cause."
+  },
+  "stages": [
+    {
+      "name": "Known payload",
+      "observed": "yes",
+      "detail": "The fixed fixture is 3,840 synthetic bytes. A browser payload-ready event records allocation; exact persistence is checked separately.",
+      "evidenceRefs": [
+        {
+          "file": "raw/trace.public.ndjson",
+          "event": "e16",
+          "kind": "browser-payload-ready"
+        },
+        {
+          "file": "payload.json",
+          "field": "length / sha256"
+        }
+      ]
+    },
+    {
+      "name": "Fetch attempt",
+      "observed": "yes",
+      "detail": "The browser recorded 1 pre-fetch reservation marker(s). This is an attempt boundary, not proof that an HTTP request reached the server. The later browser failure event reports LocalNetworkAccessPermissionDenied.",
+      "evidenceRefs": [
+        {
+          "file": "raw/trace.public.ndjson",
+          "event": "e17",
+          "kind": "browser-fetch-start"
+        },
+        {
+          "file": "results/result.json",
+          "field": "browserResult.attempted"
+        },
+        {
+          "file": "raw/trace.public.ndjson",
+          "event": "e14",
+          "kind": "cdp-loading-failed"
+        },
+        {
+          "file": "raw/trace.public.ndjson",
+          "event": "e29",
+          "kind": "cdp-loading-failed"
+        }
+      ]
+    },
+    {
+      "name": "Sink acceptance",
+      "observed": "no",
+      "detail": "Actual server entries: 0 POST and 0 OPTIONS. Matching upload reservation accepted: False. Receipt of any request and acceptance of the matching POST are different stages.",
+      "evidenceRefs": [
+        {
+          "file": "results/result.json",
+          "field": "sink"
+        }
+      ]
+    },
+    {
+      "name": "Exact file",
+      "observed": "no",
+      "detail": "Saved file present: False. Retained bytes: none. Exact match to the frozen fixture: False. Review status above determines whether the independent saved-record check completed.",
+      "evidenceRefs": [
+        {
+          "file": "results/result.json",
+          "field": "persistence"
+        },
+        {
+          "file": "review/results/review.json",
+          "field": "exactSyntheticBytesPersisted"
+        }
+      ]
+    },
+    {
+      "name": "Acknowledgement",
+      "observed": "no",
+      "detail": "Browser accepted the completion, length and hash receipt: False. A server response-finish event alone does not establish that acknowledgement.",
+      "evidenceRefs": [
+        {
+          "file": "raw/trace.public.ndjson",
+          "event": "e28",
+          "kind": "browser-fetch-error"
+        },
+        {
+          "file": "results/result.json",
+          "field": "browserResult"
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "version": 1,
+      "id": "e1",
+      "sequence": 1,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1254.570083,
+      "kind": "sink-listening",
+      "data": {
+        "urlLabel": "reserved-sink",
+        "transferID": "transfer-1"
+      }
+    },
+    {
+      "version": 1,
+      "id": "e2",
+      "sequence": 2,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1254.949,
+      "kind": "observers-ready",
+      "data": {}
+    },
+    {
+      "version": 1,
+      "id": "e3",
+      "sequence": 3,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1259.906125,
+      "kind": "cdp-request",
+      "data": {
+        "cdpID": "cdp-1",
+        "method": "GET",
+        "resourceType": "Document",
+        "initiatorType": "other",
+        "redirected": false,
+        "urlLabel": "fixture-html",
+        "headers": {}
+      }
+    },
+    {
+      "version": 1,
+      "id": "e4",
+      "sequence": 4,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1265.068292,
+      "kind": "pw-request",
+      "data": {
+        "requestID": "pw-1",
+        "method": "GET",
+        "resourceType": "document",
+        "redirected": false,
+        "urlLabel": "fixture-html",
+        "headers": {}
+      }
+    },
+    {
+      "version": 1,
+      "id": "e5",
+      "sequence": 5,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1269.960083,
+      "kind": "pw-response",
+      "data": {
+        "requestID": "pw-1",
+        "status": 200,
+        "urlLabel": "fixture-html",
+        "headers": {
+          "content-length": "202",
+          "content-type": "text/html"
+        }
+      }
+    },
+    {
+      "version": 1,
+      "id": "e6",
+      "sequence": 6,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1270.5447080000001,
+      "kind": "cdp-response",
+      "data": {
+        "cdpID": "cdp-1",
+        "status": 200,
+        "hasExtraInfo": false,
+        "urlLabel": "fixture-html",
+        "headers": {
+          "content-length": "202",
+          "content-type": "text/html"
+        }
+      }
+    },
+    {
+      "version": 1,
+      "id": "e7",
+      "sequence": 7,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1279.499042,
+      "kind": "cdp-request",
+      "data": {
+        "cdpID": "cdp-2",
+        "method": "GET",
+        "resourceType": "Script",
+        "initiatorType": "parser",
+        "redirected": false,
+        "urlLabel": "fixture-script",
+        "headers": {}
+      }
+    },
+    {
+      "version": 1,
+      "id": "e8",
+      "sequence": 8,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1280.494583,
+      "kind": "cdp-loading-finished",
+      "data": {
+        "cdpID": "cdp-1",
+        "encodedDataLength": 261
+      }
+    },
+    {
+      "version": 1,
+      "id": "e9",
+      "sequence": 9,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1281.817083,
+      "kind": "pw-request",
+      "data": {
+        "requestID": "pw-2",
+        "method": "GET",
+        "resourceType": "script",
+        "redirected": false,
+        "urlLabel": "fixture-script",
+        "headers": {}
+      }
+    },
+    {
+      "version": 1,
+      "id": "e10",
+      "sequence": 10,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1285.900292,
+      "kind": "pw-response",
+      "data": {
+        "requestID": "pw-2",
+        "status": 200,
+        "urlLabel": "fixture-script",
+        "headers": {
+          "content-type": "application/javascript",
+          "content-length": "2173"
+        }
+      }
+    },
+    {
+      "version": 1,
+      "id": "e11",
+      "sequence": 11,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1286.716875,
+      "kind": "cdp-response",
+      "data": {
+        "cdpID": "cdp-2",
+        "status": 200,
+        "hasExtraInfo": false,
+        "urlLabel": "fixture-script",
+        "headers": {
+          "content-type": "application/javascript",
+          "content-length": "2173"
+        }
+      }
+    },
+    {
+      "version": 1,
+      "id": "e12",
+      "sequence": 12,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1286.785292,
+      "kind": "cdp-loading-finished",
+      "data": {
+        "cdpID": "cdp-2",
+        "encodedDataLength": 2246
+      }
+    },
+    {
+      "version": 1,
+      "id": "e13",
+      "sequence": 13,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1293.212667,
+      "kind": "cdp-request",
+      "data": {
+        "cdpID": "cdp-3",
+        "method": "GET",
+        "resourceType": "Other",
+        "initiatorType": "other",
+        "redirected": false,
+        "urlLabel": "other-page-origin",
+        "headers": {}
+      }
+    },
+    {
+      "version": 1,
+      "id": "e14",
+      "sequence": 14,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1297.034875,
+      "kind": "cdp-loading-failed",
+      "data": {
+        "cdpID": "cdp-3",
+        "resourceType": "Other",
+        "errorText": "net::ERR_ABORTED",
+        "canceled": true
+      }
+    },
+    {
+      "version": 1,
+      "id": "e15",
+      "sequence": 15,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1299.996083,
+      "kind": "browser-browser-context",
+      "data": {
+        "originLabel": "page-origin",
+        "browserMilliseconds": 41.09999942779541,
+        "isSecureContext": true,
+        "transferID": "transfer-1"
+      }
+    },
+    {
+      "version": 1,
+      "id": "e16",
+      "sequence": 16,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1301.881833,
+      "kind": "browser-payload-ready",
+      "data": {
+        "bytes": 3840,
+        "browserMilliseconds": 43.5,
+        "transferID": "transfer-1"
+      }
+    },
+    {
+      "version": 1,
+      "id": "e17",
+      "sequence": 17,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1302.338875,
+      "kind": "browser-fetch-start",
+      "data": {
+        "bytes": 3840,
+        "browserMilliseconds": 44.09999942779541,
+        "transferID": "transfer-1"
+      }
+    },
+    {
+      "version": 1,
+      "id": "e18",
+      "sequence": 18,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1303.851042,
+      "kind": "cdp-request",
+      "data": {
+        "cdpID": "cdp-4",
+        "relatedCDPID": "cdp-5",
+        "method": "OPTIONS",
+        "resourceType": "Other",
+        "initiatorType": "preflight",
+        "redirected": false,
+        "urlLabel": "reserved-sink",
+        "transferID": "transfer-1",
+        "headers": {
+          "access-control-request-headers": "content-type",
+          "access-control-request-method": "POST",
+          "origin": "page-origin"
+        }
+      }
+    },
+    {
+      "version": 1,
+      "id": "e19",
+      "sequence": 19,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1304.146625,
+      "kind": "cdp-request",
+      "data": {
+        "cdpID": "cdp-5",
+        "method": "POST",
+        "resourceType": "Fetch",
+        "initiatorType": "script",
+        "redirected": false,
+        "urlLabel": "reserved-sink",
+        "transferID": "transfer-1",
+        "headers": {
+          "content-type": "application/octet-stream"
+        }
+      }
+    },
+    {
+      "version": 1,
+      "id": "e20",
+      "sequence": 20,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1304.580042,
+      "kind": "cdp-response",
+      "data": {
+        "cdpID": "cdp-4",
+        "status": 204,
+        "hasExtraInfo": false,
+        "urlLabel": "reserved-sink",
+        "transferID": "transfer-1",
+        "headers": {
+          "access-control-allow-headers": "content-type",
+          "access-control-allow-methods": "POST",
+          "access-control-allow-origin": "page-origin"
+        }
+      }
+    },
+    {
+      "version": 1,
+      "id": "e21",
+      "sequence": 21,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1304.6115,
+      "kind": "cdp-loading-finished",
+      "data": {
+        "cdpID": "cdp-4",
+        "encodedDataLength": 0
+      }
+    },
+    {
+      "version": 1,
+      "id": "e22",
+      "sequence": 22,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1304.690667,
+      "kind": "pw-request",
+      "data": {
+        "requestID": "pw-3",
+        "method": "POST",
+        "resourceType": "fetch",
+        "redirected": false,
+        "urlLabel": "reserved-sink",
+        "transferID": "transfer-1",
+        "headers": {
+          "content-type": "application/octet-stream",
+          "origin": "page-origin"
+        }
+      }
+    },
+    {
+      "version": 1,
+      "id": "e23",
+      "sequence": 23,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1305.453875,
+      "kind": "sink-connection",
+      "data": {
+        "connectionID": "conn-1"
+      }
+    },
+    {
+      "version": 1,
+      "id": "e24",
+      "sequence": 24,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1305.710875,
+      "kind": "cdp-audit-issue",
+      "data": {
+        "cdpID": "cdp-5",
+        "corsError": "LocalNetworkAccessPermissionDenied",
+        "issueCode": "CorsIssue",
+        "initiatorIPAddressSpace": "Unknown",
+        "localNetworkAccessRequestPolicy": "PermissionBlock",
+        "failedParameterObserved": true,
+        "initiatorOriginLabel": "other-origin",
+        "initiatorIsSecureContext": true,
+        "isWarning": false,
+        "auditReplayPossible": true,
+        "urlLabel": "reserved-sink",
+        "transferID": "transfer-1"
+      }
+    },
+    {
+      "version": 1,
+      "id": "e25",
+      "sequence": 25,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1305.792542,
+      "kind": "page-console",
+      "data": {
+        "type": "error"
+      }
+    },
+    {
+      "version": 1,
+      "id": "e26",
+      "sequence": 26,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1306.000542,
+      "kind": "pw-request-failed",
+      "data": {
+        "requestID": "pw-3",
+        "errorText": "net::ERR_FAILED",
+        "urlLabel": "reserved-sink",
+        "transferID": "transfer-1"
+      }
+    },
+    {
+      "version": 1,
+      "id": "e27",
+      "sequence": 27,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1306.0524580000001,
+      "kind": "page-console",
+      "data": {
+        "type": "error"
+      }
+    },
+    {
+      "version": 1,
+      "id": "e28",
+      "sequence": 28,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1306.096625,
+      "kind": "browser-fetch-error",
+      "data": {
+        "errorName": "TypeError",
+        "browserMilliseconds": 47.5,
+        "transferID": "transfer-1"
+      }
+    },
+    {
+      "version": 1,
+      "id": "e29",
+      "sequence": 29,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1306.318542,
+      "kind": "cdp-loading-failed",
+      "data": {
+        "cdpID": "cdp-5",
+        "resourceType": "Fetch",
+        "corsError": "LocalNetworkAccessPermissionDenied",
+        "errorText": "net::ERR_FAILED",
+        "failedParameterObserved": true,
+        "canceled": false
+      }
+    },
+    {
+      "version": 1,
+      "id": "e30",
+      "sequence": 30,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1311.5614170000001,
+      "kind": "page-close",
+      "data": {}
+    },
+    {
+      "version": 1,
+      "id": "e31",
+      "sequence": 31,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1338.339917,
+      "kind": "sink-socket-close",
+      "data": {
+        "connectionID": "conn-1"
+      }
+    },
+    {
+      "version": 1,
+      "id": "e32",
+      "sequence": 32,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1373.087292,
+      "kind": "cleanup-finished",
+      "data": {
+        "complete": true
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": "../results/result.json",
+      "bytes": 2896,
+      "sha256": "addc065f69deef0e962ec28cf009283dc2f593cfc7d91a7b78fedff016f2cb98"
+    },
+    {
+      "path": "../raw/trace.public.ndjson",
+      "bytes": 7802,
+      "sha256": "16b9231f2537874a61a4b2bf12ed80b8ea7c2993c12eb443b6306c5547a2f29f"
+    },
+    {
+      "path": "../results/budget.json",
+      "bytes": 2676,
+      "sha256": "bc8a67ef6fcbd6f699662c5088b17638ed34aec21a413ac76fcc819b07a84b5d"
+    },
+    {
+      "path": "../results/capture.json",
+      "bytes": 2065,
+      "sha256": "5c097e1eeb9c8217ace9f69299196218105bd4d1f9e6dd758fbc5e977a7e9468"
+    },
+    {
+      "path": "../publication/capture-execution.json",
+      "bytes": 310,
+      "sha256": "45449b964281e92789c6f73ad67e0fde45c3110f9fc812d1795000d87cc635f7"
+    },
+    {
+      "path": "../publication/capture-output.json",
+      "bytes": 487,
+      "sha256": "0f4ba956623ecf808d9a4ff67efc78bcb9f9a6202449288573515195e3992e6c"
+    },
+    {
+      "path": "../publication/observer-output.json",
+      "bytes": 624,
+      "sha256": "d7e67323e6f1890d3af2d2c7a1145db4972454735d9bcddd6b67841c71b8dfc3"
+    },
+    {
+      "path": "../review/results/review.json",
+      "bytes": 1959,
+      "sha256": "c76fbf1db11c98d35053e86cfd77d316d110ea2bde38abbd5771f5b4dcd32a0a"
+    },
+    {
+      "path": "../publication/review-execution.json",
+      "bytes": 308,
+      "sha256": "dcc528c8a76c07a125fe8706e3a9210ec405a862502d16b7f15b91c1918f6db6"
+    },
+    {
+      "path": "../publication/review-output.json",
+      "bytes": 357,
+      "sha256": "6b11f852b8387cb6b88eb21ab902a405ae4a4934fbd4780f52d9876ebd1c3c1e"
+    },
+    {
+      "path": "../payload.json",
+      "bytes": 217,
+      "sha256": "5f477ad085b57a464a2f663efd26b8065ca41202a4868b1e6d809a570dcf9d14"
+    },
+    {
+      "path": "../payload.bin",
+      "bytes": 3840,
+      "sha256": "b92773fc3edb949a8a0d6e4a2f60ef2020ee2bd5bf6f8299c1448142a6cd3404"
+    }
+  ]
+}

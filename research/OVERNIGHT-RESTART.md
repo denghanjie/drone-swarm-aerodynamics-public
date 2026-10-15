@@ -4,13 +4,17 @@
 
 Public additive worktree: current repository, branch `codex/m31-audit-2026-10-15`. Preserve the original eight-step roadmap and historical M31 base. Later remote main/DOT at `1336f5c416875a9651f92b58b2ed06649f25b04e` remains separate and untouched. The private workspace, attachments, credentials and chat records must never be published.
 
-## Current checkpoint — synthetic diagnostic terminal; saved review prepared
+## Current checkpoint — synthetic transport and its public review are terminal
 
-`research/m31-transport-diagnostic-2026-10-16/`: source `fe2c19a30b4605ec755e8e7103946d7ef037a76a`, freeze `3a2f596279d7720ad16ca4eb07685061ecb54769c6c86867750d23d75327d7d8` (44pins), published and independently verified before invocation. Sole synthetic attempt closed cleanly: Chrome reported LocalNetworkAccessPermissionDenied; one sink connection, zero HTTP handler entries, no file or acknowledgement. No GPU or scientific work. Actual capture exit0; conservative full tool observation8.073s. Historical failure cause remains unknown.
+`research/m31-transport-diagnostic-2026-10-16/`: diagnostic source `fe2c19a30b4605ec755e8e7103946d7ef037a76a`, freeze `3a2f596279d7720ad16ca4eb07685061ecb54769c6c86867750d23d75327d7d8` (44 pins), published and independently verified before invocation. Sole synthetic attempt closed cleanly. Chrome reported LocalNetworkAccessPermissionDenied; one sink connection, zero HTTP handler entries, no file or acknowledgement. No GPU or scientific work. Actual capture exit 0; conservative full tool observation 8.073 s. Historical GPU failure cause remains unknown.
 
-The new public saved review is frozen separately (`ea167831dea2016e84a4378f900be5d54cedd4d64398454872fe568f8623ec01`,9pins) after20inert schema cases, but has not run. One30s/8MiBreview only. Never repeat the diagnostic. New viewer binding and final publication follow actual review completion. All prior budgets/failures below remain immutable. The original23:00UTCcutoff remains unchanged and no scientific successor is allocated.
+Review source `459a5c6f3bb5abf3107c39f9fe2b413c1bbbcbcf`, freeze `ea167831dea2016e84a4378f900be5d54cedd4d64398454872fe568f8623ec01` (9 pins), separately published and verified. Sole saved review passed 1,943 checks; actual exit 0 and full tool observation 0.080 s. The scope is complete observation/public consistency, not private trace reconstruction, successful transfer or science. Exact summaries and completion receipts are retained. Both allocations are closed, with no retry or automatic successor.
 
-## Latest closed operational state — both failed attempts published and verified
+The new Three.js evidence diagram binds 32 events and 12 backing records. Both presentation QA versions passed all 8 groups; root inspected screenshots, and the readability adjustment preserves all data. Viewer queued at http://127.0.0.1:8876/research/m31-transport-diagnostic-2026-10-16/viewer/ . The original server remains available; no diagnostic or scientific process is active. Read the new MILESTONE-SUMMARY and POSTRUN-RESTART.
+
+The control-channel return option is an unallocated static proposal. A physical-data desk review proceeds independently. The original 23:00 UTC cutoff remains unchanged. Publication identity and exact remote-byte verification are recorded separately after the result push; consult `research/publication-receipts/m31-transport-result-2026-10-16.json` when present. All earlier failures and budgets below remain immutable; remote main/DOT stays untouched.
+
+## Historical closed state — both failed numerical attempts published and verified
 
 The terminal runtime-replication result is published at **22ca9e45cfe777def90dcab03530ba00055d3e99**. The exact remote commit and45,026-byte manifest were independently retrieved through the GitHub connector; manifest SHA-256 `ed08cdd59dfd73e93d28c1f4c4f4ef7e5f50ba6ef77a5c5e0024308d2caae778` and all208local pins matched. See `research/publication-receipts/m31-runtime-result-2026-10-16.json`. This is publication-byte verification, not a passing scientific or semantic review.
 
