@@ -1,0 +1,384 @@
+{
+  "kind": "saved-only-exposed-selection",
+  "status": "completed",
+  "selectionRuleVersion": "four-distinct-saved-ranking-v1",
+  "priorSourceCommit": "cefe6c7bb47362e90135179d22a9721b6f03bb88",
+  "receiverPublishedCommit": "2ba59cc634c4634011aa78df4caceda399761efc",
+  "priorManifestSha256": "f45749c824579ebb522d81484ba1814eb1d9e2073f68b9df12d82e959a586626",
+  "sourcePins": [
+    {
+      "path": "research/m31-zero-screen-2026-10-16/raw/fresh5000-I.f64",
+      "bytes": 680000,
+      "sha256": "cc17e5d23a3761f5b175c987c1ca1d8a1631f34f0502ac533365b8c8526043aa",
+      "use": "saved evidence selection"
+    },
+    {
+      "path": "research/m31-zero-screen-2026-10-16/raw/fresh5000-source-audit.ndjson",
+      "bytes": 9519110,
+      "sha256": "2844f10cb3490bdc3756c048fa26a5430f447bcc85d0d1452df70ca911788302",
+      "use": "saved evidence selection"
+    },
+    {
+      "path": "research/m31-zero-screen-2026-10-16/raw/fresh5000-states.f64",
+      "bytes": 680000,
+      "sha256": "6e7e813c8b4127a4fa567249f0bf685d460adc6de2dd6a59fc4444f1a153a1bb",
+      "use": "hash only; never decoded"
+    }
+  ],
+  "selected": [
+    {
+      "receiverId": 27,
+      "maximumSavedInflow": 14.816090124914474,
+      "minimumSavedInflow": 12.056744475161441,
+      "savedRotorSpread": 2.7593456497530333,
+      "savedContributionCount": 120,
+      "winds": [
+        13.731749920543518,
+        14.816090124914474,
+        12.728398934625453,
+        12.056744475161441
+      ],
+      "selectedIndex": 0,
+      "rule": "largest maximum saved rotor inflow",
+      "tieBreak": "ascending receiverId",
+      "savedSumFloat64LEHex": "862bf3eca7762b4044319a90d6a12d40ac5085b4f07429401a18a29c0d1d2840",
+      "savedEligibleSources": 820,
+      "savedCodeCounts": [
+        16720,
+        336,
+        126,
+        0,
+        298,
+        2400,
+        0,
+        120
+      ],
+      "savedCodeCountsPerRotor": [
+        [
+          4180,
+          86,
+          31,
+          0,
+          74,
+          599,
+          0,
+          30
+        ],
+        [
+          4180,
+          84,
+          31,
+          0,
+          75,
+          600,
+          0,
+          30
+        ],
+        [
+          4180,
+          82,
+          32,
+          0,
+          76,
+          599,
+          0,
+          31
+        ],
+        [
+          4180,
+          84,
+          32,
+          0,
+          73,
+          602,
+          0,
+          29
+        ]
+      ],
+      "savedCodePath": "selected-0-codes.u8",
+      "savedCodeSha256": "4eb7cf54c9d440138792ed03848f3c2aae22f3736c8d8e910afb0d0bb15688f1",
+      "savedSumsPath": "selected-0-saved-sums.f64",
+      "strictlyPositiveTerms": "Not retained in prior successful source audit; not inferred from code 7 or contribution count"
+    },
+    {
+      "receiverId": 445,
+      "maximumSavedInflow": 11.360319535504592,
+      "minimumSavedInflow": 9.067082711519053,
+      "savedRotorSpread": 2.2932368239855396,
+      "savedContributionCount": 168,
+      "winds": [
+        11.360319535504592,
+        10.212855899553373,
+        9.067082711519053,
+        9.78872843964112
+      ],
+      "selectedIndex": 1,
+      "rule": "largest saved contribution count among remaining IDs",
+      "tieBreak": "ascending receiverId",
+      "savedSumFloat64LEHex": "4b345acd7bb826404fafce72fb6c2440e23348aa58222240115ecb36d4932340",
+      "savedEligibleSources": 816,
+      "savedCodeCounts": [
+        16736,
+        321,
+        97,
+        0,
+        268,
+        2410,
+        0,
+        168
+      ],
+      "savedCodeCountsPerRotor": [
+        [
+          4184,
+          81,
+          24,
+          0,
+          67,
+          600,
+          0,
+          44
+        ],
+        [
+          4184,
+          78,
+          24,
+          0,
+          69,
+          604,
+          0,
+          41
+        ],
+        [
+          4184,
+          78,
+          25,
+          0,
+          68,
+          606,
+          0,
+          39
+        ],
+        [
+          4184,
+          84,
+          24,
+          0,
+          64,
+          600,
+          0,
+          44
+        ]
+      ],
+      "savedCodePath": "selected-1-codes.u8",
+      "savedCodeSha256": "68f6ffdfd495c9647f3fb7b2537e1b46a6a5508be5e1ddd484135447f570b739",
+      "savedSumsPath": "selected-1-saved-sums.f64",
+      "strictlyPositiveTerms": "Not retained in prior successful source audit; not inferred from code 7 or contribution count"
+    },
+    {
+      "receiverId": 4500,
+      "maximumSavedInflow": 0.0,
+      "minimumSavedInflow": 0.0,
+      "savedRotorSpread": 0.0,
+      "savedContributionCount": 0,
+      "winds": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "selectedIndex": 2,
+      "rule": "smallest maximum saved rotor inflow among remaining IDs",
+      "tieBreak": "ascending receiverId",
+      "savedSumFloat64LEHex": "0000000000000000000000000000000000000000000000000000000000000000",
+      "savedEligibleSources": 400,
+      "savedCodeCounts": [
+        18400,
+        1443,
+        0,
+        0,
+        99,
+        58,
+        0,
+        0
+      ],
+      "savedCodeCountsPerRotor": [
+        [
+          4600,
+          360,
+          0,
+          0,
+          25,
+          15,
+          0,
+          0
+        ],
+        [
+          4600,
+          361,
+          0,
+          0,
+          24,
+          15,
+          0,
+          0
+        ],
+        [
+          4600,
+          361,
+          0,
+          0,
+          26,
+          13,
+          0,
+          0
+        ],
+        [
+          4600,
+          361,
+          0,
+          0,
+          24,
+          15,
+          0,
+          0
+        ]
+      ],
+      "savedCodePath": "selected-2-codes.u8",
+      "savedCodeSha256": "061bc39fcfda067d5df6f57e9b877fd786e67d42c978451faf99c2c1b9ece93d",
+      "savedSumsPath": "selected-2-saved-sums.f64",
+      "strictlyPositiveTerms": "Not retained in prior successful source audit; not inferred from code 7 or contribution count"
+    },
+    {
+      "receiverId": 988,
+      "maximumSavedInflow": 10.027064437347855,
+      "minimumSavedInflow": 5.8219684427812854,
+      "savedRotorSpread": 4.20509599456657,
+      "savedContributionCount": 100,
+      "winds": [
+        10.027064437347855,
+        7.756778973688518,
+        5.8219684427812854,
+        7.567391891918997
+      ],
+      "selectedIndex": 3,
+      "rule": "largest saved maximum-minus-minimum rotor inflow among remaining IDs",
+      "tieBreak": "ascending receiverId",
+      "savedSumFloat64LEHex": "5d96d263db0d2440a72b3911f1061f40d25b7018b24917400b3b4f6102451e40",
+      "savedEligibleSources": 903,
+      "savedCodeCounts": [
+        16388,
+        980,
+        94,
+        0,
+        230,
+        2208,
+        0,
+        100
+      ],
+      "savedCodeCountsPerRotor": [
+        [
+          4097,
+          244,
+          25,
+          0,
+          56,
+          553,
+          0,
+          25
+        ],
+        [
+          4097,
+          244,
+          23,
+          0,
+          58,
+          551,
+          0,
+          27
+        ],
+        [
+          4097,
+          247,
+          23,
+          0,
+          57,
+          551,
+          0,
+          25
+        ],
+        [
+          4097,
+          245,
+          23,
+          0,
+          59,
+          553,
+          0,
+          23
+        ]
+      ],
+      "savedCodePath": "selected-3-codes.u8",
+      "savedCodeSha256": "10068823ee1e4d98b583171a14c4f45df1735f6af6d825620f8802c2922d7b46",
+      "savedSumsPath": "selected-3-saved-sums.f64",
+      "strictlyPositiveTerms": "Not retained in prior successful source audit; not inferred from code 7 or contribution count"
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "selected-0-codes.u8",
+      "bytes": 20000,
+      "sha256": "4eb7cf54c9d440138792ed03848f3c2aae22f3736c8d8e910afb0d0bb15688f1"
+    },
+    {
+      "name": "selected-0-saved-sums.f64",
+      "bytes": 32,
+      "sha256": "9b8933877febc15856a19794a69af89a600621f3576e28f23ac77da79696d8ba"
+    },
+    {
+      "name": "selected-1-codes.u8",
+      "bytes": 20000,
+      "sha256": "68f6ffdfd495c9647f3fb7b2537e1b46a6a5508be5e1ddd484135447f570b739"
+    },
+    {
+      "name": "selected-1-saved-sums.f64",
+      "bytes": 32,
+      "sha256": "fe5808b6cb7939f31631129c120f402d7fe89f09a8df3cb28889a30d5582da54"
+    },
+    {
+      "name": "selected-2-codes.u8",
+      "bytes": 20000,
+      "sha256": "061bc39fcfda067d5df6f57e9b877fd786e67d42c978451faf99c2c1b9ece93d"
+    },
+    {
+      "name": "selected-2-saved-sums.f64",
+      "bytes": 32,
+      "sha256": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925"
+    },
+    {
+      "name": "selected-3-codes.u8",
+      "bytes": 20000,
+      "sha256": "10068823ee1e4d98b583171a14c4f45df1735f6af6d825620f8802c2922d7b46"
+    },
+    {
+      "name": "selected-3-saved-sums.f64",
+      "bytes": 32,
+      "sha256": "fa78e6c194bf6f3812c9ac77fa43670eb7a891cd4adbc7b3d1c32de52e33cc57"
+    }
+  ],
+  "scriptSha256": "aeea18d8334d150157888f623a1bcc9e17992c1f6ca029bc29c0ed1ca1a56d6a",
+  "runtime": {
+    "python": "3.9.6 (default, Apr 30 2025, 02:07:17) \n[Clang 17.0.0 (clang-1700.0.13.5)]",
+    "platform": "macOS-26.5.2-arm64-arm-64bit"
+  },
+  "operations": {
+    "savedRowsRanked": 5000,
+    "selectedRows": 4,
+    "selectedCodeBytes": 80000,
+    "stateBytesDecoded": 0,
+    "newGeometry": 0,
+    "newWakeTerms": 0,
+    "rootSolves": 0,
+    "gpuDispatches": 0
+  },
+  "limits": "Selection uses saved maxima, differences, counts and classifications only. No geometric or scientific model calculation."
+}

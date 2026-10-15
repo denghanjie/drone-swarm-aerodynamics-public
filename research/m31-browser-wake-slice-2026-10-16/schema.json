@@ -1,0 +1,210 @@
+{
+  "status": "STATIC_UNCOMPILED",
+  "slotOrder": "((selectionIndex*5000+sourceID)*4+rotor)",
+  "termRecord": {
+    "strideBytes": 80,
+    "storageType": "u32",
+    "fields": [
+      {
+        "name": "ordinal",
+        "word": 0,
+        "byteOffset": 0,
+        "f32BitPattern": false
+      },
+      {
+        "name": "receiverID",
+        "word": 1,
+        "byteOffset": 4,
+        "f32BitPattern": false
+      },
+      {
+        "name": "sourceID",
+        "word": 2,
+        "byteOffset": 8,
+        "f32BitPattern": false
+      },
+      {
+        "name": "rotor",
+        "word": 3,
+        "byteOffset": 12,
+        "f32BitPattern": false
+      },
+      {
+        "name": "status",
+        "word": 4,
+        "byteOffset": 16,
+        "f32BitPattern": false
+      },
+      {
+        "name": "policyCode",
+        "word": 5,
+        "byteOffset": 20,
+        "f32BitPattern": false
+      },
+      {
+        "name": "validityMask",
+        "word": 6,
+        "byteOffset": 24,
+        "f32BitPattern": false
+      },
+      {
+        "name": "routingFlags",
+        "word": 7,
+        "byteOffset": 28,
+        "f32BitPattern": false
+      },
+      {
+        "name": "centerNormBits",
+        "word": 8,
+        "byteOffset": 32,
+        "f32BitPattern": true
+      },
+      {
+        "name": "downBits",
+        "word": 9,
+        "byteOffset": 36,
+        "f32BitPattern": true
+      },
+      {
+        "name": "radialBits",
+        "word": 10,
+        "byteOffset": 40,
+        "f32BitPattern": true
+      },
+      {
+        "name": "halfWidthBits",
+        "word": 11,
+        "byteOffset": 44,
+        "f32BitPattern": true
+      },
+      {
+        "name": "axisDotBits",
+        "word": 12,
+        "byteOffset": 48,
+        "f32BitPattern": true
+      },
+      {
+        "name": "projectionBits",
+        "word": 13,
+        "byteOffset": 52,
+        "f32BitPattern": true
+      },
+      {
+        "name": "normalizedDownBits",
+        "word": 14,
+        "byteOffset": 56,
+        "f32BitPattern": true
+      },
+      {
+        "name": "xiBits",
+        "word": 15,
+        "byteOffset": 60,
+        "f32BitPattern": true
+      },
+      {
+        "name": "normalizedSpeedBits",
+        "word": 16,
+        "byteOffset": 64,
+        "f32BitPattern": true
+      },
+      {
+        "name": "fadeDownBits",
+        "word": 17,
+        "byteOffset": 68,
+        "f32BitPattern": true
+      },
+      {
+        "name": "fadeRadialBits",
+        "word": 18,
+        "byteOffset": 72,
+        "f32BitPattern": true
+      },
+      {
+        "name": "termBits",
+        "word": 19,
+        "byteOffset": 76,
+        "f32BitPattern": true
+      }
+    ],
+    "statuses": {
+      "0": "unwritten",
+      "1": "malformed",
+      "2": "model-domain-invalid",
+      "3": "valid-early-zero",
+      "4": "profile-evaluated-zero",
+      "5": "profile-positive",
+      "6": "arithmetic-invalid"
+    },
+    "numericValidityBits": "bit k corresponds to numeric word8+k; bit11 denotes valid term"
+  },
+  "reductionRecord": {
+    "strideBytes": 32,
+    "fields": [
+      "selectionIndex",
+      "receiverID",
+      "rotor",
+      "status",
+      "validityMask",
+      "termCount",
+      "sumBits",
+      "firstBadSlot"
+    ],
+    "statuses": {
+      "0": "unwritten",
+      "1": "invalid",
+      "2": "complete-valid"
+    }
+  },
+  "controlInput": {
+    "strideBytes": 128,
+    "records": 16,
+    "expectedOutputs": "controls.json"
+  },
+  "entrypoints": {
+    "termsMain": {
+      "bindings": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "groupsX": 1250
+    },
+    "controlsMain": {
+      "bindings": [
+        0,
+        5,
+        6
+      ],
+      "groupsX": 1
+    },
+    "reduceMain": {
+      "bindings": [
+        3,
+        4,
+        7
+      ],
+      "groupsX": 1
+    }
+  },
+  "workgroupSize": [
+    64,
+    1,
+    1
+  ],
+  "referenceRecords": {
+    "metadata": "8u32 per slot matching termRecord words0..7",
+    "scalars": "12f64LE per slot matching termRecord numeric fields, no recomputed geometry in review",
+    "codes": "oneu8 per slot:0..7computed,255unwritten",
+    "terms": "onef64LE per slot; term validity requires metadata bit11",
+    "ordinarySums": "16f64LE in selection-major/rotor order",
+    "compensatedSums": "16f64LE same order",
+    "sumValidity": "16u8;1only after complete rotor traversal"
+  },
+  "dyadicCertificates": {
+    "coefficient": "decimal signed integer string",
+    "exponent": "-1074 for f64/common units, -149 for storedf32 terms",
+    "approximateDisplay": "rounded/truncated convenience number; never drives gates"
+  }
+}

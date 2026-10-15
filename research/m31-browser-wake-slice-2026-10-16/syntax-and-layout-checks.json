@@ -1,0 +1,43 @@
+{
+  "scientificWork": false,
+  "shaderCompilation": false,
+  "checks": [
+    {
+      "file": "source/host.cjs",
+      "kind": "Node --check syntax only, no import",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "source/experiment.cjs",
+      "kind": "Node --check syntax only, no import",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "source/process-registry.cjs",
+      "kind": "Node --check syntax only, no import",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "source/browser.js",
+      "kind": "Node --check syntax only, no import",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "source/run-once.py",
+      "kind": "Python ast.parse only, no execution",
+      "pass": true
+    },
+    {
+      "kind": "Static JSON byte and reservation accounting",
+      "pass": true
+    }
+  ]
+}
