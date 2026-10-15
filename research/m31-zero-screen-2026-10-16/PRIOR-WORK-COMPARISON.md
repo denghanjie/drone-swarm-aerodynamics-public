@@ -1,0 +1,15 @@
+# Relation to existing DOT and browser research
+
+The read-only remote audit in EXISTING-WORK-AUDIT.md covers preserved main1336f5c416875a9651f92b58b2ed06649f25b04e. Its original design-status wording refers to the earlier unselected proposal; E/L are now drafted but remain unexecuted. No old budget is reopened.
+
+**Decision:** retain this narrowly scoped E/L implementation experiment, without a method-novelty claim. E repeats the broad exact-zero strategy already present in DOT's support variant. Its purpose here is a controlled removal of current Z's unused positive-policy apparatus under the current source geometry/numerical/evidence contract, at fresh1,000/5,000inputs. L tests one additional scheduling change: downstream center-interval exits before the center radial norm. This was absent from inspected DOT center screening, but is ordinary lazy evaluation and already used at rotor level. Distinguishable code is not publishable algorithmic novelty.
+
+DOT exact-efficiency previously compared legacy, previous-zero, lean, support and scratch-reuse, with smaller N=100/200 timing. Gains over its already optimized control were mixed; scaling stopped beforeN=500. Its lean method was selected; support/reuse did not consistently outperform it. That is adverse relevant prior evidence, not a result to ignore. Current M is a no-screen comparison in the current geometry/traversal style; it is not a claim to be DOT's fastest lean implementation.
+
+DOT support cannot simply be substituted as an instruction-identical control. Its coordinate admission,128epsilon×1e6m margin, rotor-major traversal/first-error behavior, scalar arithmetic grouping, output ownership and consumption of current nominal motors differ. Current E/Z isolates the current package removal; L/E isolates scheduling with identical E/L instrumentation. Their finite binary64 tests cannot establish superiority over DOT lean or over all CPU implementations. No DOT timing is rerun or scaled/extrapolated toN=5,000.
+
+The original M8 GPU kernel computes independent rigid-body mechanics only; M9 hybrid flights had airflow off. Its historical rendering timing is separate. No qualified5,000-droneGPUwake/receiver implementation was found in the inspected tree. If exact CPU changes remain insufficient, a separately frozen f32/browser port needs new input-quantization, domain, reduction, receiver-root and transfer/compute gates; M8 mechanics tolerances do not license weakening current force-reference gates. This is a future research direction, not executed work.
+
+R8 is terminal resource-limited:218/229complete,1partial,10unstarted; fullCorrectnessQualifiedfalse,benchmarkPermissionfalse,gateExecutedfalse,benchmarksExecuted0. No recovery/retry/benchmark is proposed. Later main is preserved and this branch stays additive.
+
+Verified repository sources and exact paths/hashes are in the accompanying audit. Prior literature on bounded omission remains in the closed parent source-omission audit. No new citation or novelty inference is manufactured from this engineering simplification.

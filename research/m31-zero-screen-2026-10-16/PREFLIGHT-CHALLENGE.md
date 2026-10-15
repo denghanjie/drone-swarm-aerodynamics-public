@@ -1,0 +1,74 @@
+M31 E/L zero-screen campaign — static preflight challenge
+
+The selected next design is coherent as two bounded implementation interventions, and its exact operation reservations fit the proposed caps. It is not yet an implementation clearance: new source/config/schema/protocol, final seeds and usefulness criteria have not been inspected. The new campaign must remain separate from the completed ablation result f5dd23e20b4e64eda647f30870c4a8e0a717e99e reported published and verified by the coordinator.
+
+Inspected proposal: /tmp/m31-zero-screen-design-challenge.md, 14,021 bytes, SHA-256 74418f0a0f3302fea2fa5bb9d43f1073c4d293381d1d6ab122f4fc4aef2e2eeb. Its title and ending still say unselected; those are proposal-time status, while the coordinator has now selected the bounded successor. This review used text inspection and declared-size arithmetic only. No implementation, scientific import, input/fixture generation, geometry, field, root, integration or timing was performed. No repository file was edited.
+
+M/Z/E/L/I correctness preserves five queries on each of the 24 exposed fixtures plus two fresh inputs. Four timing methods M/Z/E/L on both fresh inputs, one warmup plus eight measured blocks, add 72 calls. Thus the total is 26×5+2×9×4=202. There are three screened methods, Z/E/L. Z alone still computes positive envelopes and shadow selection; E/L must not be charged as if they execute that magnitude tail, although their conservative screen-attempt shape is reserved identically.
+
+The fixture sizes are 22×N2, one N5 and one N3: 52 vehicle rows and 70 ordered nonself pairs. Fresh N1000/N5000 contribute 6,000 rows and 25,994,000 pairs. The complete correctness size sums are therefore 6,052 rows and 25,994,070 pairs. Four expected-rejection fixtures keep their full attempted shape charges despite early returns.
+
+| Reservation | Correctness | Timing | Total | Proposed cap | Headroom |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Field calls | 130 | 72 | 202 | 202 | 0 |
+| I center slots | 25,994,070 | 0 | 25,994,070 | 26,000,000 | 5,930 |
+| Z/E/L screen slots | 77,982,210 | 701,838,000 | 779,820,210 | 780,000,000 | 179,790 |
+| Rotor-visit slots | 519,881,400 | 3,743,136,000 | 4,263,017,400 | 4,300,000,000 | 36,982,600 |
+| Rotor receiver-law/root slots | 121,040 | 864,000 | 985,040 | 1,000,000 | 14,960 |
+| Integration steps | 0 | 0 | 0 | 0 | 0 |
+
+The screening formula is 3×25,994,070+27×25,994,000=779,820,210. Each screened method reserves 259,940,070 slots across its correctness and timing queries. Rotor and root formulas remain 20×25,994,070+144×25,994,000 and 20×6,052+144×6,000. receiverCalls, if that inherited name is kept, must explicitly mean 4N rotor-law slots, not 246,260 vehicle-query receivers or solver iterations. Reserve before invocation, retain actual work separately, and require the complete exact vector plus ordered case/method/timing identities at completion. No optional extra field or root pass fits the authorized matrix merely because actual sparse work was lower than its reservation.
+
+The 128 MiB raw cap must remain a total of 134,217,728 bytes with its 4 MiB reserve inside that total, leaving a normal-write ceiling of 130,023,424 bytes. It must not silently become 128+4 MiB. The coordinator confirmed the original total cap remains.
+
+The nominal binary storage arithmetic is:
+
+| Retained material | Uncompressed bytes |
+| --- | ---: |
+| All exact 17-double states | 823,072 |
+| Five nominal full 17-double correctness matrices | 4,115,360 |
+| Five accepted correctness matrices, expected four rejects excluded | 4,109,920 |
+| One nominal source category/mask stream | 6,500,057 |
+| Three nominal Z/E/L mask streams | 19,500,171 |
+| All nominal independent four-rotor classification bytes | 104,000,488 |
+| All nominal independent four-rotor Float64 terms, excluded from plan | 832,003,904 |
+
+One mask stream is 22×2×1+5×2+3×1+1,000×250+5,000×1,250. Independent code storage is 4×(22×2²+5²+3²+1,000²+5,000²). Summing states, nominal five-method outputs, three masks and independent codes gives 128,439,091 bytes before framing, roots, audit rows, timings, summaries, code-7 exceptions and manifests. Only 1,584,333 bytes remain under the normal cap at that uncompressed shape. This is not a proof of failure or a prediction of compression: per-receiver zlib compression will change the payload, while base64 and JSON add overhead. It establishes that success cannot be guaranteed by this shape alone.
+
+Keep a lossless, prospective retention plan with per-write byte checks, compressed-length bounds, exclusive file creation, independent supervisor accounting and a bounded terminal failure record. Unknown compression or exception volume can legitimately stop the campaign as incomplete. Do not omit required source classifications, trim case counts, replace seeds, spill bulk evidence outside the counted cap or extend the budget after exposure. A complete successful timing-matrix duplicate would add 29,376,000 bytes; explicitly freeze whether those matrices remain omitted, with checksum/counter/validation limitations disclosed as before.
+
+Saving the complete independent classification stream materially improves the zero-cull audit, but classification and exact term values are distinct. The independent classifier's code meanings are fixed by its existing source: 0 self/outside; 1 nonpositive downstream; 2 beyond downstream cutoff; 3 invalid near domain; 4 near slab outside the near radius; 5 outside radial support; 6 nonpositive receiver projection; 7 positive projection inside the support branch. Code7 does not prove a strictly positive realized term: a fade may round to zero. Code6 reaches the profile computation with zero projection, so it must not be described as an early-return branch. Code3 is a rejection, never a zero certificate.
+
+The coordinator adopted the following prospective correction during this review: in the one scheduled independent pass, test every shared Z/E/L zero slot's computed term for exact zero. Persist complete compressed per-receiver code vectors, their length/hash, zeroInspections, and a zeroCode7Exceptions list of [sourceID,rotorID,term] for every claimed-zero slot whose independent code is7. No second field, sourceBound call or exactTerm replay is required. This resolves the code7/rounded-zero ambiguity without retaining an 832 MB all-term matrix.
+
+For the offline rule, use an explicit whitelist rather than code<7. A claimed-zero eligible pair's rotor code must be one of {1,2,4,5,6}, or code7 with its matching retained exact-zero scalar. Code0 must fail eligibility consistency for an eligible zero mask slot; code3 must fail valid-case qualification. Require exactly one exception for every claimed-zero code7 slot, with no duplicates, extras, wrong source/rotor IDs or missing slots, in a frozen source/rotor order. Require finite term==0, matching exception counts, valid source/rotor bounds and agreement with zeroInspections=4×sharedZeroPairCount. If the serialization cannot preserve signed zero, state that the gate is numerical exact-zero equality, consistent with the runtime ===0 check, rather than a signed-zero bit-pattern claim.
+
+The reviewer can then reconcile source-category masks, complete recorded independent code vectors, exact-zero exceptions and conservation counts. It still does not independently recompute geometry or prove physical correctness. It depends on the frozen oracle's classification semantics and its same-pass recorded scalar values. All codes should be integers0..7; accepted complete receiver rows must contain no code3; all four rotor codes for a self/outside source must be0, while all four for an eligible source must be nonzero. Decode exactly4N bytes per receiver, validate complete zlib termination/no trailing data, exact hash and receiver order, and disallow a truncated last row in any completed qualification. Partial domain-rejected prefixes remain partial evidence.
+
+Z's frozen mask and the new E/L category masks require separate schemas. For E/L:0 self/outside,1 screened zero,2 near fallback,3 remaining retained. For Z:0 self/outside,1 screened zero,2 shadow-C retained,3 shadow-C positive-selected but actually evaluated. Never apply C's old interpretation of code3 as an actual omission to Z, E or L.
+
+The observable gates should be:
+
+- E/L masks byte-equal, giving equality of zero, fallback and remaining-retained identities; all actual counters equal; downstreamZeroExits equal; all17 output components and checksum bitwise equal.
+- Map E/L2,3→actual-retained2 and Z3→actual-retained2. Require the actual masks equal, with candidates/zero/actual-retained/rotor/profile/fallback counts equal. Every Z shadow-selected3 must be E/L remaining-retained3. Z's2 may be E/L2or3.
+- E and L outputs each bitwise equal to Z for every completed valid input, including the full17-column matrix. Use byte equality or explicit Object.is-equivalent comparisons that distinguish signed zero, not tolerances or checksums alone. A bitwise difference is a failure of this prespecified equivalence claim even if independent precision tolerances pass.
+- Apply unchanged full-reference I precision, range, scalar root/bracket/power and domain gates to all four full methods M/Z/E/L. None receives C's positive-omission allowance. Expected rejection and exact equality-at-boundary expectations remain the frozen fixture outcomes.
+- Enforce screenCalls=candidates, candidates=zeroCulls+nearFallbacks+remainingRetained, actualRetained=nearFallbacks+remainingRetained, rotorVisits=4×actualRetained, actual positive omissions0 and actual omitted-inflow budget0, with per-receiver and complete-call accounting.
+
+Frozen Z does not expose its full fallback identities, retained-positive bound values or zero reasons. E/L fallback identities can be compared to each other, while only Z fallback counts and coarser actual masks can be compared empirically. The new classification evidence cannot retroactively manufacture unavailable Z internal decisions. Keep these distinctions in the final claim ledger.
+
+Static E review must confirm exact preserved geometry expressions/grouping, axes/offsets/nonunit norms/radii, strict source-center neighborhood, ascending source order, eager projection, near-domain obligation, zero thresholds and exactTerm/load/checksum helpers. It removes the positive-magnitude and capacity/selection apparatus as a package. Do not quietly change Math.hypot, projection timing, cutoff inequalities, padding, source order, numerical precision or grid behavior while calling the treatment E.
+
+Static L/E review must show only the radial-evaluation schedule change: same d0 and lo/hi, the same two downstream-zero exits, then the exact E radial residual/r0/rlo expressions for surviving sources. All near, radial and projection decisions remain after the necessary near-domain check. The global tilt gate remains first. E/L record formats, guards and instrumentation must match. If one method gains an unmatched counter, allocation, persistence step or alternate root path, L/E no longer isolates the proposed schedule as cleanly.
+
+Record downstreamZeroExits at the same source-screen return in E/L and require 0≤downstreamZeroExits≤zeroCulls≤screenCalls. The reported source-center radial-norm count is derived as E:screenCalls and L:screenCalls−downstreamZeroExits, using the retained counter plus static schedule. It is not a replayed independent geometry count, does not identify all zero reasons, excludes other Math.hypot work, and is not measured CPU time. Do not infer the frequency of this exit from prior Z's aggregate zero count.
+
+The proposed four-block cycle MZLE, ZEML, ELZM, LMEZ balances each method's position and every ordered within-block predecessor pair; repeating it twice gives eight technical blocks. Freeze one warmup order, the fresh-case order, exact timer boundaries and all comparison/persistence exclusions. One warmup means one query per method/input, not an extra four-block cycle. Save each returned time/checksum/count record before validating it, retain separate validation records, and preserve the first failed full-row/bitwise witness. Each query rebuilds its geometry/masks/fields/roots. Same-process shared state, JIT, GC, thermal and between-block effects remain limitations despite balancing.
+
+The proposal suggests, but does not yet select, usefulness thresholds. Before generation, freeze separate E/Z and L/E hypotheses, including whether each is judged on both fresh inputs. A concrete continuation of the prior criterion is median of eight paired treatment/control ratios≤0.95 plus at least7/8strict wins per input, with the even median averaging positions4and5 and ties counted as non-wins. Freeze which comparison is primary and which is secondary, or treat them as two explicitly named descriptive criteria. E/M and L/M provide same-block context without extra queries. Do not replace paired ratios by ratios of marginal medians or reinterpret a negative result after seeing it. Numerical/equivalence qualification and usefulness outcomes must remain separate.
+
+E/Z estimates removal of the whole positive-policy/shadow apparatus, including the changed reporting structure; it is not the cost of one envelope formula. L/E estimates the complete implementation effect of delaying radial work under matched instrumentation, not an isolated hardware norm latency. E/M and L/M determine whether screening remains useful against the full unbounded implementation. A favorable ratio on one input does not establish robustness to density, distribution, coordinate magnitudes, hardware or trajectories. A failed usefulness criterion does not by itself imply zero benefit or statistical equivalence.
+
+New seeds are unresolved in the inspected proposal. Select and freeze two unexposed seeds before any generation, record the exposure search, preserve the unchanged family and N1000/N5000 shapes, and exclude the now-exposed seeds733109/891007/421337/914629. No substitute-seed loop follows rejection or weak performance. The24fixtures remain exposed diagnostics. Same spacing means larger extent at larger N; neither the matrix nor eight technical blocks provides population or physical generalization.
+
+Required final resolutions before launch are: reviewed E/L source and minimal static diffs; coherent mask/code/exception schemas with the explicit non-7 whitelist; bounded code/mask/audit/failure storage policy; exact all-method accounting and ordered coverage gates; fixed new seeds and usefulness criteria; preserved numerical/bitwise/domain failures; and a complete source/protocol/dependency freeze independently verified after publication. The adopted code7 exception plan and exact779,820,210screen reservation resolve the two main design clarifications from this review. This memo authorizes no implementation or scientific execution and makes no performance forecast.

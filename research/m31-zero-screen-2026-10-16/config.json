@@ -1,0 +1,127 @@
+{
+  "scope": "Exact-zero screen simplification and lazy radial geometry, no positive omission",
+  "referenceCommit": "f5dd23e20b4e64eda647f30870c4a8e0a717e99e",
+  "referenceDirectory": "research/m31-omission-ablation-2026-10-16",
+  "referenceManifestSha256": "f2eef0eac63d10ab80bd0984bdebe644410bed25eaa6617c6937615f252838ae",
+  "freshCases": [
+    {
+      "id": "fresh1000",
+      "shape": [
+        10,
+        10,
+        10
+      ],
+      "seed": 253741
+    },
+    {
+      "id": "fresh5000",
+      "shape": [
+        20,
+        25,
+        10
+      ],
+      "seed": 608897
+    }
+  ],
+  "historicalCases": 0,
+  "fixtureCases": 24,
+  "wallCapSeconds": 300,
+  "rawByteCap": 134217728,
+  "failureReserveBytes": 4194304,
+  "fieldCallCap": 202,
+  "independentCenterCap": 26000000,
+  "rotorVisitShapeCap": 4300000000,
+  "receiverCallCap": 1000000,
+  "verificationWallCapSeconds": 60,
+  "timingOrders": [
+    [
+      "M",
+      "Z",
+      "L",
+      "E"
+    ],
+    [
+      "M",
+      "Z",
+      "L",
+      "E"
+    ],
+    [
+      "Z",
+      "E",
+      "M",
+      "L"
+    ],
+    [
+      "E",
+      "L",
+      "Z",
+      "M"
+    ],
+    [
+      "L",
+      "M",
+      "E",
+      "Z"
+    ],
+    [
+      "M",
+      "Z",
+      "L",
+      "E"
+    ],
+    [
+      "Z",
+      "E",
+      "M",
+      "L"
+    ],
+    [
+      "E",
+      "L",
+      "Z",
+      "M"
+    ],
+    [
+      "L",
+      "M",
+      "E",
+      "Z"
+    ]
+  ],
+  "inflowAbsTolerance": 1e-11,
+  "inflowRelTolerance": 1e-12,
+  "rotorTolerance": 1e-12,
+  "bodyThrustTolerance": 5e-12,
+  "bodyMomentTolerance": 2e-13,
+  "worldForceTolerance": 1e-11,
+  "worldMomentTolerance": 1e-12,
+  "rootResidualTolerance": 1e-12,
+  "bracketWidthTolerance": 2e-15,
+  "powerAbsoluteTolerance": 1e-14,
+  "powerRelativeTolerance": 1e-12,
+  "stopNewLaunchUTC": "2026-10-15T23:00:00Z",
+  "performanceCriteria": {
+    "E_over_Z": {
+      "maximumMedianPairedRatio": 0.95,
+      "minimumFasterBlocks": 7,
+      "measuredBlocks": 8,
+      "requireBothFreshCases": true
+    },
+    "L_over_E": {
+      "maximumMedianPairedRatio": 0.95,
+      "minimumFasterBlocks": 7,
+      "measuredBlocks": 8,
+      "requireBothFreshCases": true
+    }
+  },
+  "expectedCharges": {
+    "fieldCalls": 202,
+    "independentCenterShape": 25994070,
+    "rotorVisitShape": 4263017400,
+    "receiverCalls": 985040,
+    "integrationSteps": 0,
+    "screenAttemptShape": 779820210
+  },
+  "screenAttemptShapeCap": 780000000
+}
