@@ -1,0 +1,229 @@
+{
+  "scope": "Static source/JSON/hash and parser checks only; no scientific module imports, browser, runtime inspection helper, shader compilation, scientific binary decoding or execution.",
+  "passed": true,
+  "checks": [
+    {
+      "name": "Byte-identical and matches original freeze: source/host.cjs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Byte-identical and matches original freeze: source/body.wgsl",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Byte-identical and matches original freeze: source/browser.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Byte-identical and matches original freeze: source/browser.html",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Byte-identical and matches original freeze: source/process-registry.cjs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Byte-identical and matches original freeze: source/independent-frozen.source.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Byte-identical and matches original freeze: schema.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Byte-identical and matches original freeze: BYTE-ACCOUNTING.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original freeze matches: source/experiment.cjs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original freeze matches: source/generator.cjs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original freeze matches: source/run-once.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original freeze matches: config.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original freeze matches: runtime-provenance.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Generator one literal only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Supervisor description/prefix only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Numerical and cost configuration unchanged",
+      "passed": true,
+      "detail": [
+        "scope",
+        "families",
+        "stopNewLaunchUTC",
+        "limits",
+        "workLimits",
+        "expectedGPUCosts",
+        "decision",
+        "timingComparison"
+      ]
+    },
+    {
+      "name": "Node/Playwright pins unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Six distinct Chrome pins",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Two inventory byte sum",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Admission source order",
+      "passed": true,
+      "detail": [
+        {
+          "marker": "saveRuntime('browser-runtime-before-launch')",
+          "line": 80
+        },
+        {
+          "marker": "browser=await chromium.launch(",
+          "line": 81
+        },
+        {
+          "marker": "saveRuntime('browser-runtime-after-launch')",
+          "line": 82
+        },
+        {
+          "marker": "page=await browser.newPage()",
+          "line": 83
+        },
+        {
+          "marker": "const capability=await deadline(",
+          "line": 90
+        },
+        {
+          "marker": "assert(capability.supported&&capability.compiled",
+          "line": 93
+        },
+        {
+          "marker": "const h=require('./host.cjs')",
+          "line": 94
+        },
+        {
+          "marker": "const C=h.createConfig()",
+          "line": 95
+        },
+        {
+          "marker": "controls=h.buildControls(",
+          "line": 96
+        },
+        {
+          "marker": "controlReferences=h.runControlsReference(",
+          "line": 100
+        },
+        {
+          "marker": "generated=generator.generateFamily(",
+          "line": 119
+        }
+      ]
+    },
+    {
+      "name": "One launch call",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Shared helpers unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "All post-control dispatch/science/cleanup unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Relocated scientific control block unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Partial inventory metadata and common writer connected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Actual metadata captured before rejection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Current target exact-location admission remains",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Parser only: source/experiment.cjs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Parser only: source/runtime-pins.cjs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Parser only: source/generator.cjs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Python AST parse only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No freeze/launch or evidence artifacts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Only reviewed remediation files changed",
+      "passed": true,
+      "detail": [
+        "source/experiment.cjs",
+        "source/runtime-pins.cjs",
+        "SOURCE-CHANGE-LEDGER.md"
+      ]
+    }
+  ]
+}

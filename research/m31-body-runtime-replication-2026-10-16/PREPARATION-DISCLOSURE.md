@@ -1,0 +1,13 @@
+# Preparation disclosure
+
+The original campaign stopped at an expected/actual Chrome-version mismatch before page creation or GPU work. The reason for that version change is not established. The original fixed CPU controls had already run; none of its four main-family inputs was generated. Its failure remains unchanged.
+
+This package copies the numerical host, kernel, browser API, schema and byte-accounting contract unchanged. The new generator differs only in its fixed namespace. The driver checks the explicit runtime and admits the GPU before importing scientific modules. A preliminary independent source review found a missing partial runtime-inventory receipt; it was corrected before freeze and re-reviewed. Both the finding and correction are preserved in design/PRELIMINARY-SOURCE-REVIEW.md.
+
+Installed-file inspection established the prospective Chrome .80 version and six file pins. This is read-only environment inventory, not a scientific experiment, shader test or browser launch. Two passes during the future sole invocation will read 1,041,799,344 pinned bytes plus EOF probes. No claims about the browser's update mechanism are made.
+
+No new literature reading is claimed. The inherited verified literature ledger and bibliography identify the numerical and physical sources and their limitations. The source contract retains the engineering nature of accuracy targets and unresolved physical validation.
+
+Final static review additionally found that the inherited science wrapper did not cover startup and final I/O with a hard whole-wrapper deadline and included unbounded waits. This was discovered before source freeze or execution. The original new-wrapper bytes are preserved; a separate observer, bounded relay, pre-spawn process registry and final external capture recorder are under source review. The final source review will document the corrections, including preserved private diagnostics and exact accounting without double-counting capture copies. The old campaigns remain immutable. No actual overrun of an old campaign is inferred from this source finding; its significance is that the inherited wrapper alone did not guarantee the claimed whole lifecycle bound.
+
+The lifecycle draft's private pipe capture also received static-only cap-edge corrections: retain no overflow probe byte, distinguish observed/retained bytes, and count actual partial-write returns before failing. Unexecuted intermediate observer/caller sources are preserved under preparation/ with their exact hashes in the final review/integration records. These are preparation revisions, not scientific attempts or omitted outcomes.
