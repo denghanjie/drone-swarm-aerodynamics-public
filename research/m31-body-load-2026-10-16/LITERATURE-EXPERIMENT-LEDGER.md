@@ -1,0 +1,16 @@
+# Literature and prospective experiment ledger
+
+This checkpoint inherits the verified source readings documented in the preceding coordinate checkpoint and original M31 audit. Copying metadata is not a new full-text reading. No new algorithmic novelty is claimed. The new scaled receiver equations are elementary algebraic transformations of the existing assumed closure; their finite implementation remains unqualified.
+
+| Verified source / recorded reading | Use in this design | Limit and experimental status |
+|---|---|---|
+| [Goldberg 1991](https://doi.org/10.1145/103162.103163), Oracle edited reprint, Cancellation section | Separate original-input R, decoded-interface Q and actual GPU output | General floating-point reasoning; does not explain any particular backend failure. Prospective only. |
+| [WGSL fixed 21 September 2026](https://www.w3.org/TR/2026/CRD-WGSL-20260921/), §§15.7.4–15.7.6, 17.5.32; prior verified reading | Explicit raw-word status, subnormal policy, actual returned coefficients and results | Written grouping does not guarantee a unique hardware operation graph. Finite checks are backend-specific evidence, not portability proof. |
+| [Higham 1993](https://doi.org/10.1137/0914050), Eqs.1.2,2.6–2.8,3.6; [Neumaier 1974](https://doi.org/10.1002/zamm.19740540106), §2IV and §6 | Retain ordinary and same-pass compensated R/Q sums | Agreement is numerical consistency, not a formal exact-field uncertainty bound. No retained GPU terms means no separate term/L1/reduction certificate. |
+| [WebGPU fixed 15 September 2026](https://www.w3.org/TR/2026/CRD-webgpu-20260915/), retained [API evidence](../m31-browser-receiver-2026-10-16/API-EVIDENCE.md) | Device-limit admission, buffer lifetime, dispatch, error scopes and readback accounting | Counts and buffer-fit arithmetic are not observed feasibility or speed. |
+| [Bauersfeld et al., arXiv v3](https://arxiv.org/abs/2403.13321v3), inherited wake-model reading; [Kiran et al., RSS 2025](https://www.roboticsproceedings.org/rss21/p102.html); [Gielis et al.](https://doi.org/10.1007/978-3-031-63596-0_35), read arXiv v1 | Existing wake/interaction context and limitations | No compatible physical validation of this 27 g closure is supplied. Exact details and version/access limitations remain in the inherited ledgers. |
+| [Nyland, Harris and Prins, GPU Gems 3 ch.31](https://developer.nvidia.com/gpugems/gpugems3/part-v-physics-simulation/chapter-31-fast-n-body-simulation-cuda), previously verified chapter | Established all-pairs GPU computation context | Direct all-pairs GPU execution is prior art. CUDA gravitational performance does not transfer to this WGSL airflow/load query. |
+
+Reading provenance: [preceding literature ledger](../m31-coordinate-origin-2026-10-16/LITERATURE-EXPERIMENT-LEDGER.md), [preceding result ledger](../m31-coordinate-origin-2026-10-16/RESULT-LITERATURE-LEDGER.md), and [original audited ledger](../m31-restart-2026-10-15/literature/annotated-ledger.md). The bibliography preserves the verified inherited records; references not used by this narrowed query remain historical context, not evidence of new adaptation.
+
+Any eventual publication claim requires renewed closest-prior-work and citation review. Absence of a method from this scoped record is not evidence that it is novel. No new physical data were obtained and no author was contacted.

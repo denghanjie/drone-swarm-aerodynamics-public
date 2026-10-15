@@ -1,0 +1,118 @@
+"""One terminal body-load launch, with private spawn-time browser group registry."""
+import sys,os,json,time,signal,subprocess,pathlib,resource,datetime,tempfile
+base=pathlib.Path(__file__).resolve().parents[1];cfg=json.loads((base/'config.json').read_text());out=base/'results';raw=base/'raw';out.mkdir(exist_ok=True)
+if len(sys.argv)<2:raise SystemExit('Supply the executable and script arguments')
+if datetime.datetime.now(datetime.timezone.utc)>=datetime.datetime.fromisoformat(cfg['stopNewLaunchUTC'].replace('Z','+00:00')):raise SystemExit('Overnight launch cutoff reached')
+with (out/'sole-launch.lock').open('x') as f:f.write('One attempt reserved. Permanent lock; never remove.\n')
+fd,registry_name=tempfile.mkstemp(prefix='m31-body-load-process-registry-',suffix='.ndjson');os.close(fd);registry=pathlib.Path(registry_name)
+env=os.environ.copy();env['RESEARCH_PROCESS_REGISTRY']=registry_name
+ledger=out/'budget.json';record={'terminal':False,'active':True,'attempts':1,'wallCapSeconds':cfg['limits']['scientificWallSeconds'],'rawByteCap':cfg['limits']['rawBytes'],'resultByteCap':cfg['limits']['resultBytes'],'scope':'Execution diagnostics, no benchmark. Browser groups recorded at spawn before scientific work; original PID registry is private.','status':'reserved'}
+ledger.write_text(json.dumps(record,indent=2)+'\n');start=time.perf_counter();before=resource.getrusage(resource.RUSAGE_CHILDREN);p=None;launch_error=None
+try:
+ with (out/'scientific-stdout.txt').open('x') as stdout,(out/'scientific-stderr.txt').open('x') as stderr:
+  p=subprocess.Popen(sys.argv[1:],stdout=stdout,stderr=stderr,start_new_session=True,cwd=base.parents[1],env=env)
+  record['timeout']=False;record['outputCapExceeded']=False;record['rssCapExceeded']=False;record['rssSamples']=0;record['peakObservedOwnedRSSBytes']=0;record['rssProbeErrors']=0
+  record['rssScope']='Sum of resident-set sizes of supervisor-owned Node/browser groups and their observed descendants; shared pages may be counted repeatedly. Sampled every loop; transient peaks and GPU/driver allocations are not a proven total-memory bound.'
+  while p.poll() is None:
+   elapsed=time.perf_counter()-start
+   result_bytes=sum(x.stat().st_size for x in out.glob('*') if x.is_file())
+   raw_bytes=sum(x.stat().st_size for x in raw.glob('*') if x.is_file()) if raw.exists() else 0
+   rss=0
+   try:
+    probe=subprocess.run(['/bin/ps','-axo','pid=,ppid=,pgid=,rss='],capture_output=True,text=True,timeout=.25,check=True)
+    rows=[line.split() for line in probe.stdout.splitlines() if line.strip()]
+    if not rows or any(len(row)!=4 for row in rows):raise ValueError('Malformed or empty RSS process table')
+    table=[tuple(map(int,row)) for row in rows]
+    if any(pid<=0 or ppid<0 or pgid<0 or kib<0 for pid,ppid,pgid,kib in table):raise ValueError('Invalid RSS process row')
+    owned={p.pid}; groups_owned={p.pid}
+    rss_registry_text=registry.read_text()
+    rss_registry_lines=rss_registry_text.splitlines()
+    if rss_registry_text and not rss_registry_text.endswith('\n'):rss_registry_lines=rss_registry_lines[:-1]
+    for line in rss_registry_lines:
+     entry=json.loads(line)
+     if isinstance(entry.get('pid'),int):
+      owned.add(entry['pid'])
+      if entry.get('detached'):groups_owned.add(entry['pid'])
+    changed=True
+    while changed:
+     before_count=len(owned)
+     owned.update(pid for pid,ppid,pgid,kib in table if ppid in owned or pgid in groups_owned)
+     changed=len(owned)!=before_count
+    rss=sum(kib*1024 for pid,ppid,pgid,kib in table if pid in owned)
+    record['rssSamples']+=1;record['peakObservedOwnedRSSBytes']=max(record['peakObservedOwnedRSSBytes'],rss)
+   except (OSError,ValueError,subprocess.SubprocessError):
+    record['rssProbeErrors']+=1
+   record['rssCapExceeded']=rss>cfg['limits']['ownedRSSBytes']
+   over=result_bytes>cfg['limits']['resultBytes'] or raw_bytes>cfg['limits']['rawBytes']
+   rss_bad=record['rssCapExceeded'] or record['rssProbeErrors']>0
+   if elapsed>=cfg['limits']['scientificWallSeconds']-1.5 or over or rss_bad:
+    os.killpg(p.pid,signal.SIGKILL);p.wait();record.update(timeout=not over and not rss_bad,outputCapExceeded=over);break
+   try:p.wait(timeout=min(.25,max(.01,cfg['limits']['scientificWallSeconds']-1.5-elapsed)))
+   except subprocess.TimeoutExpired:pass
+  record['exitCode']=p.returncode
+except BaseException as e:
+ launch_error={'type':type(e).__name__,'message':str(e)};record['launchErrorType']=type(e).__name__
+ if p is not None and p.poll() is None:os.killpg(p.pid,signal.SIGKILL);p.wait()
+finally:
+ # Include detached Chrome groups: Playwright's browser is not in Node's group.
+ entries=[];registry_complete=True;cleanup_errors=[]
+ try:registry_lines=registry.read_text().splitlines()
+ except OSError as e:registry_lines=[];registry_complete=False;cleanup_errors.append({'phase':'registry-read','errorType':type(e).__name__})
+ for line in registry_lines:
+  try:
+   e=json.loads(line)
+   if not isinstance(e,dict):raise ValueError('Registry record shape')
+   entries.append(e)
+  except (ValueError,TypeError):registry_complete=False
+ groups={p.pid:{'executable':sys.argv[1],'commandPrefix':' '.join(sys.argv[1:])}} if p else {}
+ for e in entries:
+  if e.get('detached') and isinstance(e.get('pid'),int) and e['pid']>0:groups[e['pid']]=e.get('ownership',{})
+ details=[]
+ for pgid,owner in groups.items():
+  item={'pgid':pgid,'killSent':False,'confirmedAbsent':False,'ownershipVerified':False}
+  try:
+   os.killpg(pgid,0)
+  except ProcessLookupError:
+   item['confirmedAbsent']=True;details.append(item);continue
+  except OSError as e:
+   item['cleanupErrorType']=type(e).__name__;cleanup_errors.append({'phase':'group-probe','errorType':type(e).__name__});details.append(item);continue
+  try:
+   # Private command fingerprint: exact executable plus the unique browser profile,
+   # or the supervisor's exact Node invocation. Never signal an unidentified group.
+   probe=subprocess.run(['/bin/ps','-ww','-p',str(pgid),'-o','command='],capture_output=True,text=True,timeout=.15)
+   command=probe.stdout.strip();exe=owner.get('executable');profile=owner.get('profileArgument');prefix=owner.get('commandPrefix')
+   identified=probe.returncode==0 and isinstance(exe,str) and (command==exe or command.startswith(exe+' '))
+   if prefix:identified=identified and (command==prefix or command.startswith(prefix+' '))
+   else:identified=identified and isinstance(profile,str) and profile in command.split()
+   item['ownershipVerified']=bool(identified)
+   if not identified:
+    item['identityUnconfirmed']=True;cleanup_errors.append({'phase':'group-identity','errorType':'UnconfirmedOwnership'})
+   else:
+    os.killpg(pgid,signal.SIGKILL);item['killSent']=True
+  except ProcessLookupError:item['confirmedAbsent']=True
+  except (OSError,subprocess.TimeoutExpired) as e:item['cleanupErrorType']=type(e).__name__;cleanup_errors.append({'phase':'group-identity-or-kill','errorType':type(e).__name__})
+  details.append(item)
+ for _ in range(20):
+  pending=[x for x in details if not x['confirmedAbsent']]
+  if not pending:break
+  for item in pending:
+   try:os.killpg(item['pgid'],0)
+   except ProcessLookupError:item['confirmedAbsent']=True
+   except OSError as e:item['absenceProbeErrorType']=type(e).__name__
+  if all(x['confirmedAbsent'] for x in details):break
+  time.sleep(.05)
+ private={'registry':registry_name,'nodePID':p.pid if p else None,'entries':entries,'registryComplete':registry_complete,'cleanup':details,'launchError':launch_error}
+ try:registry.with_suffix('.cleanup.json').write_text(json.dumps(private,indent=2)+'\n')
+ except OSError as e:cleanup_errors.append({'phase':'private-audit-write','errorType':type(e).__name__})
+ record['processGroupCleanup']={'registeredProcesses':len(entries),'registeredDetachedGroups':sum(bool(e.get('detached') and e.get('pid')) for e in entries),'registryComplete':registry_complete,'groupsChecked':len(details),'killSignalsSent':sum(x['killSent'] for x in details),'ownershipChecksPassed':sum(x['ownershipVerified'] for x in details),'errors':cleanup_errors,'confirmedAbsent':registry_complete and not cleanup_errors and all(x['confirmedAbsent'] for x in details)}
+ after=resource.getrusage(resource.RUSAGE_CHILDREN);record.update(terminal=True,active=False,status='closed',wallSeconds=time.perf_counter()-start,childCPUSeconds=(after.ru_utime+after.ru_stime)-(before.ru_utime+before.ru_stime),cumulativeChildMaxRSSPlatformUnits=after.ru_maxrss,rawFiles=len(list(raw.glob('*'))) if raw.exists() else 0,rawBytes=sum(x.stat().st_size for x in raw.glob('*') if x.is_file()) if raw.exists() else 0,retryPermitted=False)
+ record['resultFiles']=len([x for x in out.glob('*') if x.is_file()]);record['resultNonBudgetBytes']=sum(x.stat().st_size for x in out.glob('*') if x.is_file() and x!=ledger);record['resultBudgetBytes']=0;record['resultBytes']=0
+ record['rawWithinCap']=record['rawBytes']<=record['rawByteCap'];record['resultsWithinCap']=False
+ for _ in range(8):
+  text=json.dumps(record,indent=2)+'\n';n=len(text.encode('utf8'))
+  if n==record['resultBudgetBytes'] and record['resultBytes']==record['resultNonBudgetBytes']+n:break
+  record['resultBudgetBytes']=n;record['resultBytes']=record['resultNonBudgetBytes']+n;record['resultsWithinCap']=record['resultBytes']<=record['resultByteCap']
+ ledger.write_text(json.dumps(record,indent=2)+'\n')
+
+print(json.dumps(record))
+raise SystemExit(0 if record.get('exitCode')==0 and not record.get('timeout') and not record.get('outputCapExceeded') and not record.get('rssCapExceeded') and record.get('rssProbeErrors',0)==0 and record.get('rssSamples',0)>0 and record['rawWithinCap'] and record['resultsWithinCap'] and record['processGroupCleanup']['confirmedAbsent'] and record['wallSeconds']<record['wallCapSeconds'] else 1)
