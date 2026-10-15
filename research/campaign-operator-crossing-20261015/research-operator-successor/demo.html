@@ -1,0 +1,38 @@
+<!doctype html><meta charset="utf-8"><title>Crossing</title>
+<style>body{font:14px system-ui}canvas{max-width:100%;height:auto}pre{white-space:pre-wrap}</style>
+<h1>Prescribed operator</h1>
+<p>Sampled/unvalidated; no flight. Source cyan; receiver coral. Rings: fade/support; dots: receiver centers at brackets. Z hold, L linear, Q quadratic, C restricted cliff.</p>
+<a href="../research-operator-successor-plan/PROTOCOL.md">Protocol</a> · <a href="EVIDENCE.bin">Evidence</a> · <a href="../../campaign-public-support-factorial/demo/vendor/LICENSE.txt">License</a>
+Case <select id="case"></select><label>Node <input id="node" type="range" max="15" value="0"></label>
+<pre id="metrics"></pre><div id="scene"></div><p id="status"></p>
+<script type="module">
+const $=id=>document.getElementById(id),H=[1.25,1.25,5,5],phi=[0,.000625,0,.0025];
+H.forEach((h,i)=>$('case').add(new Option('H '+h+' ms; phase '+phi[i]*1000+' ms',i)));
+try{
+const b=await fetch('EVIDENCE.bin').then(r=>{if(!r.ok)throw Error(r.status);return r.arrayBuffer()}),d=new DataView(b),u=p=>d.getUint32(p,true),v=p=>d.getFloat64(p,true);
+if(b.byteLength!==26000||u(8)!==2)throw Error('Incomplete evidence');
+const nums=(p,n)=>Array.from({length:n},(_,i)=>v(p+8*i).toPrecision(5));
+let draw=()=>{};
+const row=()=>64+(+$('case').value*16+ +$('node').value)*168;
+const x=n=>.22-.12*Math.cos(4*Math.PI*(n/12800+phi[+$('case').value]));
+function update(){
+let c=+$('case').value,p=row(),text='Peak errors U[m/s], F/W, M/(Wa); leakage[m/s]\n';
+for(let m=0;m<4;m++){let q=20416+(c*4+m)*108;text+='ZLQC'[m]+': '+nums(q,3).join('  ')+'  '+v(q+80).toPrecision(5)+'\n'}
+text+='Saved n='+u(p+4)+', t='+(u(p+4)/12800)+' s; raw inflow[m/s]\nTruth: '+nums(p+8,4)+'\n';
+for(let m=0;m<4;m++)text+='ZLQC'[m]+': '+nums(p+40+m*32,4)+'\n';
+$('metrics').textContent=text;draw();
+}
+$('case').onchange=$('node').oninput=update;update();
+try{
+const T=await import('../../campaign-public-support-factorial/demo/vendor/three.module.js'),s=new T.Scene(),cam=new T.PerspectiveCamera(45,640/360,.01,5),r=new T.WebGLRenderer();
+r.setSize(640,360);$('scene').append(r.domElement);cam.up.set(0,0,1);cam.position.set(.7,-.8,.65);cam.lookAt(.12,0,.24);
+function mesh(g,color,parent=s){const o=new T.Mesh(g,new T.MeshBasicMaterial({color}));parent.add(o);return o}
+function body(z,color){const g=new T.Group();s.add(g);g.position.z=z;for(const a of [-.028,.028])for(const b of [-.028,.028])mesh(new T.TorusGeometry(.023,.0015,4,24),color,g).position.set(a,b,0);return g}
+body(.5,0x78dddd);const receiver=body(0,0xff9977);
+for(const rad of [.1473303289873278,.22099549348099173])mesh(new T.TorusGeometry(rad,.001,4,48),0x668899);
+const dots=Array.from({length:16},()=>mesh(new T.SphereGeometry(.003),0xffff99));
+draw=()=>{receiver.position.x=x(u(row()+4));dots.forEach((o,i)=>o.position.x=x(u(68+(+$('case').value*16+i)*168)));r.render(s,cam)};draw();
+}catch(e){$('status').textContent='3D unavailable: '+e.message}
+}catch(e){$('status').textContent=e.message}
+</script>
+
