@@ -1,0 +1,42 @@
+{
+  "status": "PREPARED_NOT_EXECUTED",
+  "privateOriginalInvocation": true,
+  "executable": "/usr/bin/python3",
+  "argv": [
+    "/tmp/m31-browser-receiver-saved-review.py",
+    "--repo",
+    "<REPOSITORY_ROOT>",
+    "--source-commit",
+    "4f2ead30ce48e4845ceefc105f9796ce468d907e",
+    "--freeze-sha256",
+    "ad64a3f092d08045e1233fa9e05a4db72cda3ae8b5db039dec329f7628f8e7ae",
+    "--output",
+    "/tmp/m31-browser-receiver-saved-review.json",
+    "--review-lock",
+    "/tmp/m31-browser-receiver-saved-review.lock",
+    "--private-cleanup",
+    "<PRIVATE_CLEANUP_RECORD>",
+    "--private-cleanup-sha256",
+    "5a5944a557f8232f4c2eb5b2458885c0c716c0b9fb2fe6c85d766ab5fb52d75d"
+  ],
+  "externalWallCapSeconds": 59,
+  "internalCooperativeSeconds": 55,
+  "attemptsAllowed": 1,
+  "noRetry": true,
+  "checker": {
+    "bytes": 30746,
+    "sha256": "2b2253cb703f98dbb24922b35e8b9cf1bca2c75d4721bbcdf86d7c5d7b5db26b"
+  },
+  "pythonExecutable": {
+    "bytes": 118928,
+    "sha256": "179301dcb41ea78accc3fa0048a7e6f6710d891945a751a34addd622020c1818"
+  },
+  "preserve": [
+    "Exact checker bytes",
+    "This exact argument array and executable",
+    "Original external-supervisor stdout/stderr/exit/time records",
+    "Permanent review lock even on failure",
+    "Review JSON if created",
+    "Original private cleanup/registry files; do not publish PID/profile contents"
+  ]
+}

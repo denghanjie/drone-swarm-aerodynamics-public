@@ -1,0 +1,62 @@
+{
+  "claims": [
+    {
+      "id": "F1",
+      "claim": "Three inspected public resources offer partial relevant evidence; none has been established here as meeting the joint thrust-and-spatial-flow contract.",
+      "status": "confirmed within inspected metadata scope",
+      "evidence": [
+        "datasets/COMPATIBILITY-MATRIX.md",
+        "datasets/SOURCES-AND-MANIFESTS.json"
+      ],
+      "limits": "Not an exhaustive search or an archive-quality assessment.",
+      "challenge": "Inspect actual selected data schemas and uncertainties; broaden search if needed."
+    },
+    {
+      "id": "F2",
+      "claim": "NanoBench documentation reports 40.85 g instrumented flying mass versus the current model assumption of 27 g.",
+      "status": "confirmed documentation observation",
+      "evidence": [
+        "datasets/nanobench-README.md",
+        "datasets/SOURCE-SECTIONS.md"
+      ],
+      "limits": "No independently repeated weighing or recalibration.",
+      "challenge": "Verify exact as-flown configuration and compatible physical measurements."
+    },
+    {
+      "id": "F3",
+      "claim": "At the pinned NanoBench commit, datasets/dataset has 107 CSV filenames and 87 distinct advertised CSV Git blob IDs.",
+      "status": "confirmed within saved metadata scope",
+      "evidence": [
+        "m31-nanobench-independent-metadata-reconciliation.json",
+        "metadata-verification.json",
+        "datasets/nanobench-tree-projection.json"
+      ],
+      "limits": "No CSV payload hashing; byte identity uses Git content addressing. Flight independence and advertised172 accounting unresolved.",
+      "challenge": "Reconcile acquisition identities and any aliases before trial selection."
+    },
+    {
+      "id": "F4",
+      "claim": "Installed Playwright API/source support proposing a page-to-host value return with an externally enforced deadline.",
+      "status": "supported static rationale",
+      "evidence": [
+        "CONTROL-CHANNEL-API.md",
+        "CONTROL-CHANNEL-SOURCE-INSPECTION.json"
+      ],
+      "limits": "No new transfer, memory, reliability or GPU-lifetime observation.",
+      "challenge": "A separately designed bounded heap-return test."
+    },
+    {
+      "id": "F5",
+      "claim": "The complete 5000-drone coupled model is physically validated or offers a publishable accuracy–computation contribution.",
+      "status": "unresolved",
+      "evidence": [
+        "../m31-transport-diagnostic-2026-10-16/claims.md",
+        "../m31-source-contract-planning-2026-10-16/DATA-REQUIREMENTS.md"
+      ],
+      "limits": "No sufficient evidence; no positive claim made.",
+      "challenge": "Qualified numerical references, compatible physical evidence, fair performance comparisons and fresh confirmation."
+    }
+  ],
+  "agentAgreementIsNotEvidence": true,
+  "separateNumericalPhysicalAndPerformanceClaims": true
+}

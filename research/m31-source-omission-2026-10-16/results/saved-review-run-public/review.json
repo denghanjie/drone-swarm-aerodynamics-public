@@ -1,0 +1,4026 @@
+{
+  "scope": "Saved evidence only; no geometry, quaternion rotation, field evaluation, root solving, input generation, fixture execution, integration or timing repeat.",
+  "method": {
+    "checkerSha256": "532bf8d63abee6a19e76b4140c61f8fb68c6965528a8ecb6ce3d8a9924c1b83e",
+    "invocationArchive": "/tmp/m31-omission-verifier-runs/1792082563824793000",
+    "sourceCommit": "88dc542604d902909b7cc96c0bd0ca93b88cab0c",
+    "authorizedWallSeconds": 60,
+    "internalAlarmSeconds": 55,
+    "checkerArithmeticTolerance": {
+      "absolute": 2e-16,
+      "relative": 8e-15,
+      "residualReconstructionAbsolute": 4e-15,
+      "summaryRelative": 5e-13,
+      "smallDiscrepancyAbsolute": 1e-30
+    },
+    "toleranceSeparation": "Checker tolerances apply only to scalar reconstruction and summaries; frozen scientific gates receive no extra checker tolerance. nextUp accumulation is reconstructed as the declared binary64 operation."
+  },
+  "sourceHashes": [
+    {
+      "path": "outputs/milestone-26-source/grid.cjs",
+      "bytes": 898,
+      "sha256": "f06010781770b64432935e5d825bcd1405b154b735ac4d0d654f145600cea302",
+      "matches": true
+    },
+    {
+      "path": "outputs/milestone-28-source/aero.cjs",
+      "bytes": 4259,
+      "sha256": "710b0a8f0df62208e3385ac9b8288240b379fe9248a1a645251a77c533f24a62",
+      "matches": true
+    },
+    {
+      "path": "outputs/step02c-source/physics.cjs",
+      "bytes": 6115,
+      "sha256": "0c46c9beb4e831c621658f6600c074f97c95966de07f5000eb64aa476a443fa1",
+      "matches": true
+    },
+    {
+      "path": "outputs/step03a-source/wake.cjs",
+      "bytes": 2069,
+      "sha256": "fb6d5a1d632a0023818041ef6bc39316ff8ed950f318da1a6649e2515b9fd8bc",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-domain-2026-10-15/raw/case-0-t-0.ndjson",
+      "bytes": 900054,
+      "sha256": "c2fe46a2a67b85bf7d2ae1a9350d12ebd6e216f18a3498afa1b7fbfff937816f",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-domain-2026-10-15/raw/case-0-t-20.ndjson",
+      "bytes": 1093262,
+      "sha256": "217a5bd9e00359a0bb788acffede9cb4846b58fb5a31eb9884836de8b3d18008",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-domain-2026-10-15/raw/case-0-t-30.ndjson",
+      "bytes": 1072671,
+      "sha256": "689d2cca4a66f6353b2eec8809539b86b0f5b95449ecde2cbf4d87b7ac5154ab",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-domain-2026-10-15/raw/case-0-t-60.ndjson",
+      "bytes": 1039818,
+      "sha256": "62ccc0ad3e10cf8c1e24b097d14ed9c020d18c339fcb957141e4d9b693364587",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-domain-2026-10-15/raw/case-1-t-0.ndjson",
+      "bytes": 899704,
+      "sha256": "f7f93dfa17a6765329025aa48d196641bc7be56a1b116b6f9aaa5ec2e0ada00b",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-domain-2026-10-15/raw/case-1-t-20.ndjson",
+      "bytes": 1099258,
+      "sha256": "4bab89a6e1dc56da186083a11882e2ee46d57ac843fb891517cc38dce8cd5f77",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-domain-2026-10-15/raw/case-1-t-30.ndjson",
+      "bytes": 1078305,
+      "sha256": "6cc11a456f68139892dc34a2450a72090a122d7896a995c0e1bc777b1123be5e",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-domain-2026-10-15/raw/case-1-t-60.ndjson",
+      "bytes": 970514,
+      "sha256": "da684162c03f7b683c1b35f1bede1964f4847752bee93b20436993a71f9572af",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-domain-2026-10-15/raw/case-2-t-0.ndjson",
+      "bytes": 5940844,
+      "sha256": "e60be16af20070e1cfede7f58a59a3e885187449edff9df30c91afb0aff9f3f2",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-domain-2026-10-15/raw/case-2-t-20.ndjson",
+      "bytes": 8695636,
+      "sha256": "88e87d9425ad7fb4a42f51f08f8a93555d8132d87c602cb30a9feff7cbde209b",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-domain-2026-10-15/raw/case-2-t-30.ndjson",
+      "bytes": 8636829,
+      "sha256": "e41c55a830b0b5d7216844e670166467e526f97703f014b3e430d511df22c7ec",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-domain-2026-10-15/raw/case-2-t-60.ndjson",
+      "bytes": 8371764,
+      "sha256": "f7a505a89bfce95d0fa53b7f78a9c496a627dff07a11b5c7f82c065243a49b83",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-force-reference-2026-10-15/POSTRUN-RESTART.md",
+      "bytes": 1023,
+      "sha256": "72cd3f6d7f44eb29055560c5adec2349509e61f12a47b968fbfba8f3b5dd2437",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-force-reference-2026-10-15/freeze.json",
+      "bytes": 4476,
+      "sha256": "c6c6c91dbde3e342da355474d60f5bd2b81316c8c31cefe4a87777fa21c5456a",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-force-reference-2026-10-15/manifest.json",
+      "bytes": 16831,
+      "sha256": "daaf6c8baf6c89aff29c02ad1427a6d80a39d59e001b185e2bb6390c32ada111",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-force-reference-2026-10-15/raw/case-0-t-0-rotors.f64",
+      "bytes": 512000,
+      "sha256": "6149ed6740fb130958b31b248d3c39c3a47532e01a71ab145c4c657016c28603",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-force-reference-2026-10-15/raw/case-0-t-0-vehicles.f64",
+      "bytes": 280000,
+      "sha256": "956792993bbece8160c8a556d3c31cdcd0291bf58bb480487725138c1420a5df",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-force-reference-2026-10-15/raw/case-0-t-20-rotors.f64",
+      "bytes": 512000,
+      "sha256": "ee1dada3ff9441bf938c5bc3439947e5b01013cae9a7f6a89abcae5f1bda983b",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-force-reference-2026-10-15/raw/case-0-t-20-vehicles.f64",
+      "bytes": 280000,
+      "sha256": "3f1525f78ac877380cea87fec83ac6ea3e47db39ca8e4df908578b0e4a319dec",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-force-reference-2026-10-15/raw/case-0-t-30-rotors.f64",
+      "bytes": 512000,
+      "sha256": "adf1ee970a750156c001a58933c338fa0015dce31e3fd377800ab57b76a530c8",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-force-reference-2026-10-15/raw/case-0-t-30-vehicles.f64",
+      "bytes": 280000,
+      "sha256": "d3e53b92001dc85ba819c3c4a8648b90865463082996a9e9028ced949c221255",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-force-reference-2026-10-15/raw/case-0-t-60-rotors.f64",
+      "bytes": 512000,
+      "sha256": "9aa737f561a56a0902c45afe60637a135a60a52a7997e6352fc0124a600c68dc",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-force-reference-2026-10-15/raw/case-0-t-60-vehicles.f64",
+      "bytes": 280000,
+      "sha256": "646bd0a0a827be3d6ab3f8b8543ed2f0fc7c5b81a6e085d4a24454c4edba7f45",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-force-reference-2026-10-15/raw/case-1-t-0-rotors.f64",
+      "bytes": 512000,
+      "sha256": "f288bacecb4151cfd78f8a40ddbc4249f6b054aafeed8e35abcae6f615bd15b3",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-force-reference-2026-10-15/raw/case-1-t-0-vehicles.f64",
+      "bytes": 280000,
+      "sha256": "2ed2afddc43499874808018e1908ec160db52f353eeec922abb1000833a3d1ec",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-force-reference-2026-10-15/raw/case-1-t-20-rotors.f64",
+      "bytes": 512000,
+      "sha256": "ebcf03f37aa8d99c3c6960349ef295b3219a3430bc4ac284af3b797198647b9c",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-force-reference-2026-10-15/raw/case-1-t-20-vehicles.f64",
+      "bytes": 280000,
+      "sha256": "9ae03e1dc734059515a244d28427b9a4c0593da4c91c67ef5d5c9ef65a1d7606",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-force-reference-2026-10-15/raw/case-1-t-30-rotors.f64",
+      "bytes": 512000,
+      "sha256": "e4a3f7d3368b1f62f80229c96d8015913d0c1683a158715cbc0454e478681958",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-force-reference-2026-10-15/raw/case-1-t-30-vehicles.f64",
+      "bytes": 280000,
+      "sha256": "08974eabb3ae8d220c2a3b8aa1a0fce594568be6b4b4ffc8ddef7982135c967f",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-force-reference-2026-10-15/raw/case-1-t-60-rotors.f64",
+      "bytes": 512000,
+      "sha256": "98652c80fdf5f4aa55f65e7148026e3dcb163bf0a60ef5b99420373f68a2fbe6",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-force-reference-2026-10-15/raw/case-1-t-60-vehicles.f64",
+      "bytes": 280000,
+      "sha256": "3d34794a076a5bf1128d41a164410c92cf25fe876e1e8857af4041061c4ead4b",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-force-reference-2026-10-15/raw/case-2-t-0-rotors.f64",
+      "bytes": 2560000,
+      "sha256": "dd214806f7cba90d4b8ffa213511706822fb304289e62637350081cb1d41f6a7",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-force-reference-2026-10-15/raw/case-2-t-0-vehicles.f64",
+      "bytes": 1400000,
+      "sha256": "fed19a4c9b5c6b3eb565dcd341a6aae5925c05ee52df9c42a65872e5f8ea2cfb",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-force-reference-2026-10-15/raw/case-2-t-20-rotors.f64",
+      "bytes": 2560000,
+      "sha256": "a0d70a9ec217db147b14f56e35ecb7891bca5f5e4ddc059b9266cd4d1dfd53b8",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-force-reference-2026-10-15/raw/case-2-t-20-vehicles.f64",
+      "bytes": 1400000,
+      "sha256": "25e14a4e68b36be03f3dfd297cb940c58a04361a14db7a080c0a59b878f3be23",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-force-reference-2026-10-15/raw/case-2-t-30-rotors.f64",
+      "bytes": 2560000,
+      "sha256": "3a8f642e0429c103c1f8c00528dd343415234aa925dd05a05e0f864ee57c2197",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-force-reference-2026-10-15/raw/case-2-t-30-vehicles.f64",
+      "bytes": 1400000,
+      "sha256": "58a8fdee6f90f023ae4532734cb7254a87ab2ee53e82c72926e47514912bb4e3",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-force-reference-2026-10-15/raw/case-2-t-60-rotors.f64",
+      "bytes": 2560000,
+      "sha256": "ea54a000c54fd231f2eb1de03807e0946262e347e3827f10bf3135e68f25aa82",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-force-reference-2026-10-15/raw/case-2-t-60-vehicles.f64",
+      "bytes": 1400000,
+      "sha256": "73131de2980853b9b86eb972acb5c2c91f4e4c4bcbbfe5d02d815744fe5917b1",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-force-reference-2026-10-15/raw/result.json",
+      "bytes": 47693,
+      "sha256": "9fb29288532e6d02be5b6810c7224e01a4f74754e6ce52d075ece7aaca4878f1",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-force-reference-2026-10-15/results/independent-review.json",
+      "bytes": 89034,
+      "sha256": "f66d8ad4fa733c3a26fcb6290be035e7f2c0538f85fbdd0fd71719f8835dc6f4",
+      "matches": true
+    },
+    {
+      "path": "research/m31-flock-force-reference-2026-10-15/schema.json",
+      "bytes": 1654,
+      "sha256": "ed864fb1d79e64bb81c0e7bc59d637912847372c7c72e013e5638823aebdabb3",
+      "matches": true
+    },
+    {
+      "path": "research/m31-restart-2026-10-15/viewer/snapshots.bin",
+      "bytes": 3360000,
+      "sha256": "c9918697fc61576a9c0454cda354a8d66f42b0b6e21e082cdbf12054b372c927",
+      "matches": true
+    },
+    {
+      "path": "research/m31-source-omission-2026-10-16/.gitignore",
+      "bytes": 5,
+      "sha256": "e138ca829d938927384c82d7f176eaa6c61a82bd28ba28320ddd736a505c3b4f",
+      "matches": true
+    },
+    {
+      "path": "research/m31-source-omission-2026-10-16/DESIGN-REVIEW.md",
+      "bytes": 18909,
+      "sha256": "664a6e84a30d210259da7a4365c683118c0b3efa188e9aa97c9c2c84279ae81d",
+      "matches": true
+    },
+    {
+      "path": "research/m31-source-omission-2026-10-16/DRIVER-REVIEW.md",
+      "bytes": 14063,
+      "sha256": "91426e30b39a19fd62d53ebb163a4f45947bd8767371223fcee65dea79965477",
+      "matches": true
+    },
+    {
+      "path": "research/m31-source-omission-2026-10-16/MATH-FINAL-REVIEW.md",
+      "bytes": 6349,
+      "sha256": "6ad49d4116bbeb4cb2bbad47b71509ccba9ccc8c801ec5769ac1c3c3850b14b7",
+      "matches": true
+    },
+    {
+      "path": "research/m31-source-omission-2026-10-16/MATH-REVIEW.md",
+      "bytes": 13972,
+      "sha256": "cce5645b7881be7aa028005836ae0954dab3e0aafbddb9b4880b785f6c264117",
+      "matches": true
+    },
+    {
+      "path": "research/m31-source-omission-2026-10-16/PREFLIGHT-RESOLUTIONS.md",
+      "bytes": 3535,
+      "sha256": "375e6b22314c4126944ac2950dded529481a48e29a76b2298f904c65a0eb91fc",
+      "matches": true
+    },
+    {
+      "path": "research/m31-source-omission-2026-10-16/PROTOCOL.md",
+      "bytes": 11332,
+      "sha256": "f014c68a8c5c33b21e81782c9524457a3a2232c224af7e1c2335bee75a3aa972",
+      "matches": true
+    },
+    {
+      "path": "research/m31-source-omission-2026-10-16/PUBLICATION-AUDIT.md",
+      "bytes": 1315,
+      "sha256": "899a9054ca58c17fa3789ec0485e9e27d5becbae9ac7bae73245e1d764f0179d",
+      "matches": true
+    },
+    {
+      "path": "research/m31-source-omission-2026-10-16/RESTART.md",
+      "bytes": 385,
+      "sha256": "64a1d3dd868ce4c2a981166f6c36331a5f36d131be8d8db391152a99f01f5241",
+      "matches": true
+    },
+    {
+      "path": "research/m31-source-omission-2026-10-16/config.json",
+      "bytes": 1222,
+      "sha256": "13cbe6498c142a6d12cdf20eb4b7c9303e6f3cbc78c6a64ea0ab46c2ed396c3a",
+      "matches": true
+    },
+    {
+      "path": "research/m31-source-omission-2026-10-16/prior-work.md",
+      "bytes": 10416,
+      "sha256": "672328513e1ca91d9c65babaaf0d9e83ddd40398b727d32899077e679ee3f9b9",
+      "matches": true
+    },
+    {
+      "path": "research/m31-source-omission-2026-10-16/review-disclosures.json",
+      "bytes": 998,
+      "sha256": "f07b6b37a996c18f91b3042399d09ee45be2b4c055de63c4db758d4bc6f79e42",
+      "matches": true
+    },
+    {
+      "path": "research/m31-source-omission-2026-10-16/schema.json",
+      "bytes": 1006,
+      "sha256": "07975c3635e42d14d17ad06867bc3bc16165653fac326c1447f3b25b7154e04b",
+      "matches": true
+    },
+    {
+      "path": "research/m31-source-omission-2026-10-16/source/candidate.cjs",
+      "bytes": 6345,
+      "sha256": "c88eef4e67b29ba133dd24965db7cf831cb4337853a5e42f282cca4ceed9317e",
+      "matches": true
+    },
+    {
+      "path": "research/m31-source-omission-2026-10-16/source/cases.cjs",
+      "bytes": 2344,
+      "sha256": "f9432791bc90385c7ade62b81c4b66a7a0053c083569707a9bb7556b346f63d9",
+      "matches": true
+    },
+    {
+      "path": "research/m31-source-omission-2026-10-16/source/experiment.cjs",
+      "bytes": 16933,
+      "sha256": "72deaadaf0df5ea8562f029b9739c143e0af56cc9e13d039ce6964a0a5d535ec",
+      "matches": true
+    },
+    {
+      "path": "research/m31-source-omission-2026-10-16/source/independent.cjs",
+      "bytes": 18306,
+      "sha256": "da857f37129c6d3fc87fe223efd2b37b140fbf11417c1f1bb92331d5cfa53cec",
+      "matches": true
+    },
+    {
+      "path": "research/m31-source-omission-2026-10-16/source/run-step.py",
+      "bytes": 4414,
+      "sha256": "7913761453ea934f2fd1fb2576335b8974fa91c3ea107e9b096e0385608ad154",
+      "matches": true
+    },
+    {
+      "path": "research/m31-source-omission-2026-10-16/sources.bib",
+      "bytes": 2638,
+      "sha256": "3a9a4fa6adfc1c08b15c4170702dfef8e71adec0ce456294dba2b74c924b7468",
+      "matches": true
+    }
+  ],
+  "rawHashes": [
+    {
+      "name": "center3--1e-12-B.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "center3--1e-12-C.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "center3--1e-12-I.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "center3--1e-12-M.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "center3--1e-12-decisions.ndjson",
+      "bytes": 418,
+      "sha256": "2de210bda1ee66f099c64535ce8691b0b19f9371aeacf469e70d9145e72ad80a"
+    },
+    {
+      "name": "center3--1e-12-source-audit.ndjson",
+      "bytes": 1154,
+      "sha256": "8e848f5c4c6ec57da796ed261f7658c40f09fce55493db67a53cab60e385e9b8"
+    },
+    {
+      "name": "center3--1e-12-states.f64",
+      "bytes": 272,
+      "sha256": "3041cc7878eac6cccbf9d6f34ea5e4fae5b3e0ab4bab7326eae38cea50fcd4e2"
+    },
+    {
+      "name": "center3--1e-12-summary.json",
+      "bytes": 721,
+      "sha256": "bf90235461d68fb4ae0913379e5d9ac69ce04de14117ecc8a9a75c503ba1f015"
+    },
+    {
+      "name": "center3-0-B.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "center3-0-C.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "center3-0-I.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "center3-0-M.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "center3-0-decisions.ndjson",
+      "bytes": 418,
+      "sha256": "0bf186a3c065b6076f02dd7dee26160ef1a61d40e5987d283b6d8f545a10f2ec"
+    },
+    {
+      "name": "center3-0-source-audit.ndjson",
+      "bytes": 1154,
+      "sha256": "36f3c1ae5b6acf99d774956e7ca03eaa1c391d8ce60eecfceed1253c4972de5a"
+    },
+    {
+      "name": "center3-0-states.f64",
+      "bytes": 272,
+      "sha256": "afb3e742cb90dacab888c4dd8906f481bb9a458a9a4ac016a28fdc9fa8082b8d"
+    },
+    {
+      "name": "center3-0-summary.json",
+      "bytes": 716,
+      "sha256": "6f6f5cb6ddadbbb992c09cc4371f73d0fdf9007b54640b18c8657908ad781da1"
+    },
+    {
+      "name": "center3-1e-12-B.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "center3-1e-12-C.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "center3-1e-12-I.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "center3-1e-12-M.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "center3-1e-12-decisions.ndjson",
+      "bytes": 418,
+      "sha256": "0bf186a3c065b6076f02dd7dee26160ef1a61d40e5987d283b6d8f545a10f2ec"
+    },
+    {
+      "name": "center3-1e-12-source-audit.ndjson",
+      "bytes": 1154,
+      "sha256": "36f3c1ae5b6acf99d774956e7ca03eaa1c391d8ce60eecfceed1253c4972de5a"
+    },
+    {
+      "name": "center3-1e-12-states.f64",
+      "bytes": 272,
+      "sha256": "beb618cb5b3be45afbb463ee3d70c4c904e018ac190fc8d7b5eb496e49c2cf13"
+    },
+    {
+      "name": "center3-1e-12-summary.json",
+      "bytes": 720,
+      "sha256": "b0eacb7d718138151404eda48593d59177cb58d05ccb116895aac6827e26a92c"
+    },
+    {
+      "name": "centerInferenceInvalid-B-domain.json",
+      "bytes": 216,
+      "sha256": "611360e256a03fa5cee6242bde1cd2aabe9af2a870d54ed3ca621a757ecca400"
+    },
+    {
+      "name": "centerInferenceInvalid-C-domain.json",
+      "bytes": 226,
+      "sha256": "ad69b375c5d0d5a1d6d8c24332417d2fa466fa14d08bbb89301d0a6e4e4b5b23"
+    },
+    {
+      "name": "centerInferenceInvalid-I-domain.json",
+      "bytes": 636,
+      "sha256": "1a8644b5d908b3c9e2b6aad6a4171a94bb65d0f4d3610d5dbc08e8e590ce5150"
+    },
+    {
+      "name": "centerInferenceInvalid-M-domain.json",
+      "bytes": 226,
+      "sha256": "3df5293038a5ecc9359f93912c3aaeca860c6952b1c8cfe908e3c75114816646"
+    },
+    {
+      "name": "centerInferenceInvalid-states.f64",
+      "bytes": 272,
+      "sha256": "137590e4f5a5861aac4387e2e3d611b01077b4abaf6d6c59a09c4b950aa908a2"
+    },
+    {
+      "name": "centerInferenceInvalid-summary.json",
+      "bytes": 979,
+      "sha256": "7ac4429496c82184a4a090b5ba01c0e36b433bb0c07e29830ca7bf85b3e44342"
+    },
+    {
+      "name": "combinedTiltYaw-B.f64",
+      "bytes": 272,
+      "sha256": "b05d8108ac543f8da73467dbedcebac6da63c1bf0a726df5410ba4af527d33ee"
+    },
+    {
+      "name": "combinedTiltYaw-C.f64",
+      "bytes": 272,
+      "sha256": "b05d8108ac543f8da73467dbedcebac6da63c1bf0a726df5410ba4af527d33ee"
+    },
+    {
+      "name": "combinedTiltYaw-I.f64",
+      "bytes": 272,
+      "sha256": "f9fb973669bfbf5c0e10b1cc7841ad76dcb3e7cc8463024e346eec6f39165b33"
+    },
+    {
+      "name": "combinedTiltYaw-M.f64",
+      "bytes": 272,
+      "sha256": "b05d8108ac543f8da73467dbedcebac6da63c1bf0a726df5410ba4af527d33ee"
+    },
+    {
+      "name": "combinedTiltYaw-decisions.ndjson",
+      "bytes": 418,
+      "sha256": "2de210bda1ee66f099c64535ce8691b0b19f9371aeacf469e70d9145e72ad80a"
+    },
+    {
+      "name": "combinedTiltYaw-source-audit.ndjson",
+      "bytes": 1203,
+      "sha256": "fabddaf48f4bb7a50720056c99357e53ba9c7a7a841d0b83adcfe81cdda58129"
+    },
+    {
+      "name": "combinedTiltYaw-states.f64",
+      "bytes": 272,
+      "sha256": "5329170adbc0d7a21866414c6b64588978ed62d82f291b7443102c88b1e88032"
+    },
+    {
+      "name": "combinedTiltYaw-summary.json",
+      "bytes": 782,
+      "sha256": "24921b1d698f046026b7ed4614ae4d079750d5b5f52d0a9d11a9ad00f90cab8f"
+    },
+    {
+      "name": "down0--1e-12-B.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "down0--1e-12-C.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "down0--1e-12-I.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "down0--1e-12-M.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "down0--1e-12-decisions.ndjson",
+      "bytes": 418,
+      "sha256": "2de210bda1ee66f099c64535ce8691b0b19f9371aeacf469e70d9145e72ad80a"
+    },
+    {
+      "name": "down0--1e-12-source-audit.ndjson",
+      "bytes": 1154,
+      "sha256": "a3b31ca03b1ac46aac7cd1e22eeb4d22a8bf11d48a3b746e1dc2b816a6619283"
+    },
+    {
+      "name": "down0--1e-12-states.f64",
+      "bytes": 272,
+      "sha256": "b7cab8eb5743fde540f1a980b5af45e1e289df46c9b8b1f791d1ac9207ea544c"
+    },
+    {
+      "name": "down0--1e-12-summary.json",
+      "bytes": 719,
+      "sha256": "f7dd7aed96ce81cdcf9602feb926d654b0068ebe918c769e1bab2189efa42647"
+    },
+    {
+      "name": "down0-0-B.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "down0-0-C.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "down0-0-I.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "down0-0-M.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "down0-0-decisions.ndjson",
+      "bytes": 418,
+      "sha256": "2de210bda1ee66f099c64535ce8691b0b19f9371aeacf469e70d9145e72ad80a"
+    },
+    {
+      "name": "down0-0-source-audit.ndjson",
+      "bytes": 1154,
+      "sha256": "8e848f5c4c6ec57da796ed261f7658c40f09fce55493db67a53cab60e385e9b8"
+    },
+    {
+      "name": "down0-0-states.f64",
+      "bytes": 272,
+      "sha256": "37ef6cff13a8ef95963203336c06f43c5e50721c8c51787c25a2b0dba819bb72"
+    },
+    {
+      "name": "down0-0-summary.json",
+      "bytes": 714,
+      "sha256": "59b23084f2cd51709d44072b35741950433c447fb705d1937d1659f811b9441c"
+    },
+    {
+      "name": "down0-1e-12-B.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "down0-1e-12-C.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "down0-1e-12-I.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "down0-1e-12-M.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "down0-1e-12-decisions.ndjson",
+      "bytes": 418,
+      "sha256": "2de210bda1ee66f099c64535ce8691b0b19f9371aeacf469e70d9145e72ad80a"
+    },
+    {
+      "name": "down0-1e-12-source-audit.ndjson",
+      "bytes": 1154,
+      "sha256": "9b0678f40eb0da0f9ad2fed1bbeb887a8d40280d526720362a9bc7bcfcec8fe2"
+    },
+    {
+      "name": "down0-1e-12-states.f64",
+      "bytes": 272,
+      "sha256": "79c7765b15647faff27bd5e55f4d2c1c03ac90d7c3d17f7b1d5cfcf4241388bc"
+    },
+    {
+      "name": "down0-1e-12-summary.json",
+      "bytes": 718,
+      "sha256": "0127709902b0bdbb2526882ef9461a81c7d7e34a995307eafd746aad57d5c764"
+    },
+    {
+      "name": "downEnd--1e-12-B.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "downEnd--1e-12-C.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "downEnd--1e-12-I.f64",
+      "bytes": 272,
+      "sha256": "317f0af15c49e33ec284f7f07e5e79d4ce4b10520c3ba9a45bc48f06402c7820"
+    },
+    {
+      "name": "downEnd--1e-12-M.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "downEnd--1e-12-decisions.ndjson",
+      "bytes": 461,
+      "sha256": "6e870ab8d1440d9b900980fc1bfc166e381a093472a521e5368843d16ff15966"
+    },
+    {
+      "name": "downEnd--1e-12-source-audit.ndjson",
+      "bytes": 1594,
+      "sha256": "3a702bbb4a7653b46da7d20307aac754c31effc9761e6bef670a36a221e4e4c4"
+    },
+    {
+      "name": "downEnd--1e-12-states.f64",
+      "bytes": 272,
+      "sha256": "a9a194e83d6138e92b07bc833cc54adf802837e54c223d58ac4bb40a80f19f89"
+    },
+    {
+      "name": "downEnd--1e-12-summary.json",
+      "bytes": 927,
+      "sha256": "4be475a8ba58bbed3075e93986bea2261a859c613210b47d6176462c838e0461"
+    },
+    {
+      "name": "downEnd-0-B.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "downEnd-0-C.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "downEnd-0-I.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "downEnd-0-M.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "downEnd-0-decisions.ndjson",
+      "bytes": 461,
+      "sha256": "57260d2326363ce153c5e5aa99832bb6c5902766d11b2bdb06a6eae2420017a9"
+    },
+    {
+      "name": "downEnd-0-source-audit.ndjson",
+      "bytes": 1186,
+      "sha256": "0b8fcda2b6a19b7ccb2a47056010c73230be7b10525994ba4e50bcf3b2bbd192"
+    },
+    {
+      "name": "downEnd-0-states.f64",
+      "bytes": 272,
+      "sha256": "4747feb2b6adf753cd2a3cbac52643f2d38d297dd81b425f5bb8889bca5fe884"
+    },
+    {
+      "name": "downEnd-0-summary.json",
+      "bytes": 733,
+      "sha256": "50043e8531b96345394abe1e5d7a8d05a4dff0e4d947f4ee47f0c74aa28c53a0"
+    },
+    {
+      "name": "downEnd-1e-12-B.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "downEnd-1e-12-C.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "downEnd-1e-12-I.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "downEnd-1e-12-M.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "downEnd-1e-12-decisions.ndjson",
+      "bytes": 460,
+      "sha256": "2d03f6a9108888dad8028736ff0fb0e2ebc3c31ae5e5dc19ccd719354b8eba60"
+    },
+    {
+      "name": "downEnd-1e-12-source-audit.ndjson",
+      "bytes": 1185,
+      "sha256": "700753611049118eedea40f4e042732034d842accad194716d76687265772d63"
+    },
+    {
+      "name": "downEnd-1e-12-states.f64",
+      "bytes": 272,
+      "sha256": "d7641cd9f5538cc8c969888e0fbf8c75599c654bd1f7910227b6ce42f734ea40"
+    },
+    {
+      "name": "downEnd-1e-12-summary.json",
+      "bytes": 737,
+      "sha256": "d907fbf39783aa106fa40b4be9a678462421240713fa86ca1b64361e456481fc"
+    },
+    {
+      "name": "downFade2-B.f64",
+      "bytes": 272,
+      "sha256": "0955c7a0df5e4c76eb232fec6f5530ea8082c52593d31b1af4780f8b7bfd4388"
+    },
+    {
+      "name": "downFade2-C.f64",
+      "bytes": 272,
+      "sha256": "0955c7a0df5e4c76eb232fec6f5530ea8082c52593d31b1af4780f8b7bfd4388"
+    },
+    {
+      "name": "downFade2-I.f64",
+      "bytes": 272,
+      "sha256": "0955c7a0df5e4c76eb232fec6f5530ea8082c52593d31b1af4780f8b7bfd4388"
+    },
+    {
+      "name": "downFade2-M.f64",
+      "bytes": 272,
+      "sha256": "0955c7a0df5e4c76eb232fec6f5530ea8082c52593d31b1af4780f8b7bfd4388"
+    },
+    {
+      "name": "downFade2-decisions.ndjson",
+      "bytes": 418,
+      "sha256": "aab2c918c01c2c4d523555f9ad40e43c4220f397952ad4ef5ffc12818bb26b09"
+    },
+    {
+      "name": "downFade2-source-audit.ndjson",
+      "bytes": 1610,
+      "sha256": "db1931e644dbf182100030e7e67aaa2cc5b7ed237eed813dfcceab8af4f21e70"
+    },
+    {
+      "name": "downFade2-states.f64",
+      "bytes": 272,
+      "sha256": "5548e466fe0da0156bfee2e2768e53ad042c908dada6c47132649a5a80524748"
+    },
+    {
+      "name": "downFade2-summary.json",
+      "bytes": 716,
+      "sha256": "d6f44536318ae21bde1b066c40e40c704ac422f633c26637851089b2b1de6c2a"
+    },
+    {
+      "name": "farStart--1e-12-B-domain.json",
+      "bytes": 225,
+      "sha256": "34d8ae4d0ebc201800194fb7d25d83985ccb997e6b325d4c9bd5081a9bb41b7b"
+    },
+    {
+      "name": "farStart--1e-12-C-domain.json",
+      "bytes": 232,
+      "sha256": "76a23673dd4cf9c390b5f8fd892dc6a3eee9a3f86855edfab5f66c0ab813eef2"
+    },
+    {
+      "name": "farStart--1e-12-I-domain.json",
+      "bytes": 658,
+      "sha256": "c298ecabbcfabf61c3a602e023747926266a9d39e995f7e4d268d2db6dca8955"
+    },
+    {
+      "name": "farStart--1e-12-M-domain.json",
+      "bytes": 235,
+      "sha256": "45a0ab79789edb892f3fef169ee8df8bf783333d232375683cb38bc9443c5ac5"
+    },
+    {
+      "name": "farStart--1e-12-states.f64",
+      "bytes": 272,
+      "sha256": "87ab0b05b557788ddafa4b043b6b4c15e02e7ad1be39b7c1fe0e19cae5bb79ff"
+    },
+    {
+      "name": "farStart--1e-12-summary.json",
+      "bytes": 1049,
+      "sha256": "afa61afc801a9ca9cdde5fa4caa8dc0c9dbfbbdb048cb6d62df9217cb8fc964a"
+    },
+    {
+      "name": "farStart-0-B.f64",
+      "bytes": 272,
+      "sha256": "c7a4e3179a52e3785ea726429eb883c40bfe0fe50440a2aab618fae199b54c1a"
+    },
+    {
+      "name": "farStart-0-C.f64",
+      "bytes": 272,
+      "sha256": "c7a4e3179a52e3785ea726429eb883c40bfe0fe50440a2aab618fae199b54c1a"
+    },
+    {
+      "name": "farStart-0-I.f64",
+      "bytes": 272,
+      "sha256": "c7a4e3179a52e3785ea726429eb883c40bfe0fe50440a2aab618fae199b54c1a"
+    },
+    {
+      "name": "farStart-0-M.f64",
+      "bytes": 272,
+      "sha256": "c7a4e3179a52e3785ea726429eb883c40bfe0fe50440a2aab618fae199b54c1a"
+    },
+    {
+      "name": "farStart-0-decisions.ndjson",
+      "bytes": 418,
+      "sha256": "ae9ba2dcf3c8a63f119b300eacd5e56fcca17e74f9326043ce5e1a122620f61a"
+    },
+    {
+      "name": "farStart-0-source-audit.ndjson",
+      "bytes": 1610,
+      "sha256": "e167df4e4be532ef8aedd5560fe83e49d48cd6fd51db10b9cad80cca8530b17c"
+    },
+    {
+      "name": "farStart-0-states.f64",
+      "bytes": 272,
+      "sha256": "f1eeab396c26bed33e5dce4aa3577d45e04fc96086c7b142184c89566b65ae69"
+    },
+    {
+      "name": "farStart-0-summary.json",
+      "bytes": 717,
+      "sha256": "0164d620c97a9e7a9961065b66cf0617acc45f9a6f7e706acc7f8bac6e5c79e6"
+    },
+    {
+      "name": "farStart-1e-12-B.f64",
+      "bytes": 272,
+      "sha256": "661db2cd745f2a73978a9a6d524a648720189f87405600f3cd0d4946c2db8945"
+    },
+    {
+      "name": "farStart-1e-12-C.f64",
+      "bytes": 272,
+      "sha256": "661db2cd745f2a73978a9a6d524a648720189f87405600f3cd0d4946c2db8945"
+    },
+    {
+      "name": "farStart-1e-12-I.f64",
+      "bytes": 272,
+      "sha256": "661db2cd745f2a73978a9a6d524a648720189f87405600f3cd0d4946c2db8945"
+    },
+    {
+      "name": "farStart-1e-12-M.f64",
+      "bytes": 272,
+      "sha256": "661db2cd745f2a73978a9a6d524a648720189f87405600f3cd0d4946c2db8945"
+    },
+    {
+      "name": "farStart-1e-12-decisions.ndjson",
+      "bytes": 418,
+      "sha256": "ae9ba2dcf3c8a63f119b300eacd5e56fcca17e74f9326043ce5e1a122620f61a"
+    },
+    {
+      "name": "farStart-1e-12-source-audit.ndjson",
+      "bytes": 1596,
+      "sha256": "dbacee7993796b07d451ff3ae95ae67bac7abe9c669322a9df8e1bd0eec6d015"
+    },
+    {
+      "name": "farStart-1e-12-states.f64",
+      "bytes": 272,
+      "sha256": "f794c6eceb2041d5215f25f7673dcb8d9b30595da6a76457f1b58114265d6571"
+    },
+    {
+      "name": "farStart-1e-12-summary.json",
+      "bytes": 721,
+      "sha256": "4d1d9954550239af99495b827e233b7e019265bdfb918141a4246f13b346954c"
+    },
+    {
+      "name": "fresh1000-B.f64",
+      "bytes": 136000,
+      "sha256": "fbba213ba55cedb4be662c9b2dac91ee9b7f3d806767a49562b716bc2e2ea642"
+    },
+    {
+      "name": "fresh1000-C.f64",
+      "bytes": 136000,
+      "sha256": "0b866c22cfb479e8164a8bc79bc855cea10b111474675f033b29acb7936b169e"
+    },
+    {
+      "name": "fresh1000-I.f64",
+      "bytes": 136000,
+      "sha256": "11c530f8578b30f8e299f7776aefd16c663fe2408e651ec5c2949c5ceb43cae8"
+    },
+    {
+      "name": "fresh1000-M.f64",
+      "bytes": 136000,
+      "sha256": "fbba213ba55cedb4be662c9b2dac91ee9b7f3d806767a49562b716bc2e2ea642"
+    },
+    {
+      "name": "fresh1000-decisions.ndjson",
+      "bytes": 462522,
+      "sha256": "339e3280914821f5bf90f4e437d90c303cb2df2658d0f6b05bccc09aa65a2031"
+    },
+    {
+      "name": "fresh1000-source-audit.ndjson",
+      "bytes": 1449102,
+      "sha256": "7ee4a23adf8da639223ef71ecfb425f7bb2c3accbd04d18c4d6c740ee1d8ea20"
+    },
+    {
+      "name": "fresh1000-states.f64",
+      "bytes": 136000,
+      "sha256": "2898f68362f19dfc3cf1a1195aa25eed5da90eb33e094dbe23036d9ecd84c840"
+    },
+    {
+      "name": "fresh1000-summary.json",
+      "bytes": 1657,
+      "sha256": "cd1118d093168db172fa505cefcedce7e524dd684d061e8c8df6eb6cca0f97ff"
+    },
+    {
+      "name": "fresh5000-B.f64",
+      "bytes": 680000,
+      "sha256": "b9f359a1345f19e1de7ade1bb9a34a8144a6255f4986cc59d4f452b47fe8b8bb"
+    },
+    {
+      "name": "fresh5000-C.f64",
+      "bytes": 680000,
+      "sha256": "b36fea5e8f63b08807b1c2ba9ba70fac02ec921045fee9e0a27ca3e82f94a9f6"
+    },
+    {
+      "name": "fresh5000-I.f64",
+      "bytes": 680000,
+      "sha256": "50e3f6bc0ae226ecebda502c8d7840feed6256423a86421bb527bdf974b0f92e"
+    },
+    {
+      "name": "fresh5000-M.f64",
+      "bytes": 680000,
+      "sha256": "b9f359a1345f19e1de7ade1bb9a34a8144a6255f4986cc59d4f452b47fe8b8bb"
+    },
+    {
+      "name": "fresh5000-decisions.ndjson",
+      "bytes": 2875112,
+      "sha256": "f805889bd9fc3cc8f21913408336be2755b0cf0a02ee22dd4ad12b4fff246c78"
+    },
+    {
+      "name": "fresh5000-source-audit.ndjson",
+      "bytes": 7341251,
+      "sha256": "c9d8e7d6ba649f7aa168b9d22f522793467b610b4be9e82ed4f8973fbfdfa53c"
+    },
+    {
+      "name": "fresh5000-states.f64",
+      "bytes": 680000,
+      "sha256": "750ab57b7d055c27f1d6e51664219828951b5ae1e8ba484dc6e9d085764ec5d1"
+    },
+    {
+      "name": "fresh5000-summary.json",
+      "bytes": 1678,
+      "sha256": "f2695f8898d6bb05649df43ee71c11163a600d5d0567c1d2dc20e3451c513bb9"
+    },
+    {
+      "name": "historical-case-0-t-0-C.f64",
+      "bytes": 136000,
+      "sha256": "16ca5802fc2bd34cd47dd0c01c2f1e528c35f3c811c3191c8df0db404a81e2aa"
+    },
+    {
+      "name": "historical-case-0-t-0-decisions.ndjson",
+      "bytes": 383016,
+      "sha256": "515b46bd801ce8e5a2a066631fcf5e3e10c0c05ab48ba013699c2cd865a773e9"
+    },
+    {
+      "name": "historical-case-0-t-0-summary.json",
+      "bytes": 522,
+      "sha256": "3c74a20589b644b9a19c04365440bc97a0fc4afe0dbd3475c52ea241390aecaf"
+    },
+    {
+      "name": "historical-case-0-t-20-C.f64",
+      "bytes": 136000,
+      "sha256": "a9e0c9d31d15b1069874b6034f09c742c530c6b182e7f4cdad1fcaa769d085eb"
+    },
+    {
+      "name": "historical-case-0-t-20-decisions.ndjson",
+      "bytes": 437022,
+      "sha256": "7ab18702d442bf5845473891206bd10568c393b9a16db8005e50ef89d8cb506b"
+    },
+    {
+      "name": "historical-case-0-t-20-summary.json",
+      "bytes": 523,
+      "sha256": "e53252d5e5b08f055daa638c6e91a68a648916943d28e1df8fc28036bb13a7a1"
+    },
+    {
+      "name": "historical-case-0-t-30-C.f64",
+      "bytes": 136000,
+      "sha256": "90c2b21e14b769ee2b38dad5d3b289b7ffcd4331ee71ffee8a3d25bc2c65f13e"
+    },
+    {
+      "name": "historical-case-0-t-30-decisions.ndjson",
+      "bytes": 429912,
+      "sha256": "75b16323eaea9a1b59f9c513074c027500e47fb09c56115a5a3b75f5989e5360"
+    },
+    {
+      "name": "historical-case-0-t-30-summary.json",
+      "bytes": 521,
+      "sha256": "7d0d7869f09301bd728ba1920d7514657f812fe9b058f829ab08f96efe356853"
+    },
+    {
+      "name": "historical-case-0-t-60-C.f64",
+      "bytes": 136000,
+      "sha256": "c03b864af2437e61603b22f932c192f70fc7f1e9c34328af130d89857bc7e824"
+    },
+    {
+      "name": "historical-case-0-t-60-decisions.ndjson",
+      "bytes": 416719,
+      "sha256": "b86517630dedd344f2d4d8e4f92fb428e9be9c0e13f3db3c9777e4e1e219c91e"
+    },
+    {
+      "name": "historical-case-0-t-60-summary.json",
+      "bytes": 521,
+      "sha256": "a94bf39fc91497f3e2b1e8849c87a48c3cce666ffb4ca28c54ffb73aaac59cdb"
+    },
+    {
+      "name": "historical-case-1-t-0-C.f64",
+      "bytes": 136000,
+      "sha256": "465a83a022aa4b5de69656f799f880d59c9cc3354175ca2d6f22d709e10254ce"
+    },
+    {
+      "name": "historical-case-1-t-0-decisions.ndjson",
+      "bytes": 382235,
+      "sha256": "8393e66ec856442dd608761c1b1fe43d7061ce3481187894e98f46f7a503ef1a"
+    },
+    {
+      "name": "historical-case-1-t-0-summary.json",
+      "bytes": 526,
+      "sha256": "46fa6a00db1c9916df2308e5aa28b92e1db8ff16d12a3380ebca39997f5c79af"
+    },
+    {
+      "name": "historical-case-1-t-20-C.f64",
+      "bytes": 136000,
+      "sha256": "ed890c7ee0ca7f6258b6c159f2ce68c7a7d9eabb86748141bbe75abbd701234e"
+    },
+    {
+      "name": "historical-case-1-t-20-decisions.ndjson",
+      "bytes": 445550,
+      "sha256": "9a6f4edf95b2a03b78c882ba0aa5c5a95a55b08d841cef7529c952962507e9cc"
+    },
+    {
+      "name": "historical-case-1-t-20-summary.json",
+      "bytes": 521,
+      "sha256": "8606de8a760e4e7b5e1a57fffae1882ac5f8975111b35af72dd24962ee2c9a9a"
+    },
+    {
+      "name": "historical-case-1-t-30-C.f64",
+      "bytes": 136000,
+      "sha256": "3c23c5646ce0959cd20fda7c63c4fc8ca1397ead88b38e4d985b0a0726d9c34d"
+    },
+    {
+      "name": "historical-case-1-t-30-decisions.ndjson",
+      "bytes": 440334,
+      "sha256": "56286c498889a6884661dc89cd8bef18bc45a494997839c60c84f7606f308250"
+    },
+    {
+      "name": "historical-case-1-t-30-summary.json",
+      "bytes": 521,
+      "sha256": "ec0e6221c66d2d3f9525239d73645681b66ab4bf44a8a71f449b72f3f9cbfb54"
+    },
+    {
+      "name": "historical-case-1-t-60-C.f64",
+      "bytes": 136000,
+      "sha256": "ed95e940d5a811ed7bca5faa9551f33bc304bb904c35c1733fea0109597865fd"
+    },
+    {
+      "name": "historical-case-1-t-60-decisions.ndjson",
+      "bytes": 393603,
+      "sha256": "a5911514b06f0f28f20502828dfdbca039502f1081a6c70508a8c057bf7237aa"
+    },
+    {
+      "name": "historical-case-1-t-60-summary.json",
+      "bytes": 519,
+      "sha256": "360584e0228db8371254dcd67533250b80bea0bb066156564f8748edc3937055"
+    },
+    {
+      "name": "historical-case-2-t-0-C.f64",
+      "bytes": 680000,
+      "sha256": "d6c8351ccad7147ee4fdea07ebdcfe8ef611727b4d23b1ae09b198070ac4f825"
+    },
+    {
+      "name": "historical-case-2-t-0-decisions.ndjson",
+      "bytes": 2751168,
+      "sha256": "a0a37e1bcbfb6698cf0086fc18ec4129b5886551121809a870f8d5915cdce9be"
+    },
+    {
+      "name": "historical-case-2-t-0-summary.json",
+      "bytes": 522,
+      "sha256": "e43e04a72f5bce3809ea338ccc559debaf7647e1c5b3374c270f42a608b6bc05"
+    },
+    {
+      "name": "historical-case-2-t-20-C.f64",
+      "bytes": 680000,
+      "sha256": "bfa26c5011e3338e273c81624ccd36b6edbdba9acede0a9e6439de8c2156aa10"
+    },
+    {
+      "name": "historical-case-2-t-20-decisions.ndjson",
+      "bytes": 4040525,
+      "sha256": "d1f2f99a221b842ea26faca87abec73f621a7e93270ff08eb654fe709ec63b89"
+    },
+    {
+      "name": "historical-case-2-t-20-summary.json",
+      "bytes": 528,
+      "sha256": "261086c9d6b65922456952e0be950f6b32af40b2db341b1253345d3b7db0bec8"
+    },
+    {
+      "name": "historical-case-2-t-30-C.f64",
+      "bytes": 680000,
+      "sha256": "3721715f4f48a9c46859aef1f36b75985845c33e80d08c99e74691220fd61d72"
+    },
+    {
+      "name": "historical-case-2-t-30-decisions.ndjson",
+      "bytes": 4008716,
+      "sha256": "f6b801fab925df751cc0d4478849e743f6292187215b2d8182707561951fb916"
+    },
+    {
+      "name": "historical-case-2-t-30-summary.json",
+      "bytes": 527,
+      "sha256": "e6e743dc9af02581f09cb80b97e404921a425b12500264e62a1eced4deeed49a"
+    },
+    {
+      "name": "historical-case-2-t-60-C.f64",
+      "bytes": 680000,
+      "sha256": "1fde471e2b5d37264f0897b67a8bf98149496a5d74a5195279ee2ded6861cb1f"
+    },
+    {
+      "name": "historical-case-2-t-60-decisions.ndjson",
+      "bytes": 3896048,
+      "sha256": "5f004c85466f2db92f12680beed093541e5a940c1f22701cd93f9f4051dc64ff"
+    },
+    {
+      "name": "historical-case-2-t-60-summary.json",
+      "bytes": 526,
+      "sha256": "487866c67b96eb24e35c28290de5de8fec8fb90d8c662a6f5405b2da7f67f3c5"
+    },
+    {
+      "name": "multipleWeak-B.f64",
+      "bytes": 680,
+      "sha256": "dd61bce7b9a93403cdae54653c62eac27fffd42182b371a7354e4205405421c8"
+    },
+    {
+      "name": "multipleWeak-C.f64",
+      "bytes": 680,
+      "sha256": "dd61bce7b9a93403cdae54653c62eac27fffd42182b371a7354e4205405421c8"
+    },
+    {
+      "name": "multipleWeak-I.f64",
+      "bytes": 680,
+      "sha256": "b7cc57a3a0246be7e496962c59235030811b72458541d3e66641971e1a8483e2"
+    },
+    {
+      "name": "multipleWeak-M.f64",
+      "bytes": 680,
+      "sha256": "dd61bce7b9a93403cdae54653c62eac27fffd42182b371a7354e4205405421c8"
+    },
+    {
+      "name": "multipleWeak-decisions.ndjson",
+      "bytes": 1065,
+      "sha256": "09172210b38a694620d77e366a23c2462ba0580466a345f6d9126c2bfc9ca22e"
+    },
+    {
+      "name": "multipleWeak-source-audit.ndjson",
+      "bytes": 3431,
+      "sha256": "86129a2e794710d1b07875d86916d144914f8fd0885ac284c5ccc28030afbc82"
+    },
+    {
+      "name": "multipleWeak-states.f64",
+      "bytes": 680,
+      "sha256": "49396087f867c65d32a250318997a182cdab49e6a78cebe73943354c436013b9"
+    },
+    {
+      "name": "multipleWeak-summary.json",
+      "bytes": 1229,
+      "sha256": "cbd53d0bf5ad2658ecdbc35e90d48260a091814acb9b3411475609a29deb1796"
+    },
+    {
+      "name": "nearRadius--1e-12-B-domain.json",
+      "bytes": 206,
+      "sha256": "f26435b146059dc21506697225b9f8d072e1c540c4a7b7f4633a1aeabc9cde5b"
+    },
+    {
+      "name": "nearRadius--1e-12-C-domain.json",
+      "bytes": 216,
+      "sha256": "b52387c9d34dbaeab818bb67f8cc21dbbf625626fe090f7ca7ab66d3a682f18c"
+    },
+    {
+      "name": "nearRadius--1e-12-I-domain.json",
+      "bytes": 645,
+      "sha256": "14626e9511b37832ab9a634396272c5c292f6e14491ead0c0fea2e5f6f8aad7e"
+    },
+    {
+      "name": "nearRadius--1e-12-M-domain.json",
+      "bytes": 216,
+      "sha256": "ba54122b2af1367b918f3e3a79e99b0de20e814a433a71dd6a7734587e7fafeb"
+    },
+    {
+      "name": "nearRadius--1e-12-states.f64",
+      "bytes": 272,
+      "sha256": "a22192343aed9569824a6f1301de5b74803cfc1cba20eb08a20b6feec71f76e3"
+    },
+    {
+      "name": "nearRadius--1e-12-summary.json",
+      "bytes": 973,
+      "sha256": "8fa0b4e9cb6b5a30c6a281457c30014273a612789d390c8a4f6a90416fb96f54"
+    },
+    {
+      "name": "nearRadius-0-B.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "nearRadius-0-C.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "nearRadius-0-I.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "nearRadius-0-M.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "nearRadius-0-decisions.ndjson",
+      "bytes": 418,
+      "sha256": "ae9ba2dcf3c8a63f119b300eacd5e56fcca17e74f9326043ce5e1a122620f61a"
+    },
+    {
+      "name": "nearRadius-0-source-audit.ndjson",
+      "bytes": 1154,
+      "sha256": "ae4f1dc359d55d98e2a86aa363639b4bb2500610d8f54e92f78cfa718bce4462"
+    },
+    {
+      "name": "nearRadius-0-states.f64",
+      "bytes": 272,
+      "sha256": "f0b016631a7363b43022a225fa6c92b19f42fae2856eb5185f332e5ed277865e"
+    },
+    {
+      "name": "nearRadius-0-summary.json",
+      "bytes": 723,
+      "sha256": "2d81f805d5184292eec7c0c0e322065b01c6a3e4901243923fe6acf4de7c9d3e"
+    },
+    {
+      "name": "nearRadius-1e-12-B.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "nearRadius-1e-12-C.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "nearRadius-1e-12-I.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "nearRadius-1e-12-M.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "nearRadius-1e-12-decisions.ndjson",
+      "bytes": 418,
+      "sha256": "ae9ba2dcf3c8a63f119b300eacd5e56fcca17e74f9326043ce5e1a122620f61a"
+    },
+    {
+      "name": "nearRadius-1e-12-source-audit.ndjson",
+      "bytes": 1154,
+      "sha256": "ae4f1dc359d55d98e2a86aa363639b4bb2500610d8f54e92f78cfa718bce4462"
+    },
+    {
+      "name": "nearRadius-1e-12-states.f64",
+      "bytes": 272,
+      "sha256": "fe9cf22410dde48b5abc42c54ee1ac2a495296e5980179701d7477f23eb399f3"
+    },
+    {
+      "name": "nearRadius-1e-12-summary.json",
+      "bytes": 723,
+      "sha256": "01bc7ba7f5ea6f16ace97f8654456c6a92e938f57fc987fad1e908630634443b"
+    },
+    {
+      "name": "normDefect-B.f64",
+      "bytes": 272,
+      "sha256": "6bd63cd93cf96c2745070acb5856e67a1c90e1f39ffafdb3e8702c8cf6cca7fb"
+    },
+    {
+      "name": "normDefect-C.f64",
+      "bytes": 272,
+      "sha256": "6bd63cd93cf96c2745070acb5856e67a1c90e1f39ffafdb3e8702c8cf6cca7fb"
+    },
+    {
+      "name": "normDefect-I.f64",
+      "bytes": 272,
+      "sha256": "4bd14a30226b53848e72b9013ab493efd50a32f986f117d59e685aea8953b1a4"
+    },
+    {
+      "name": "normDefect-M.f64",
+      "bytes": 272,
+      "sha256": "6bd63cd93cf96c2745070acb5856e67a1c90e1f39ffafdb3e8702c8cf6cca7fb"
+    },
+    {
+      "name": "normDefect-decisions.ndjson",
+      "bytes": 418,
+      "sha256": "2de210bda1ee66f099c64535ce8691b0b19f9371aeacf469e70d9145e72ad80a"
+    },
+    {
+      "name": "normDefect-source-audit.ndjson",
+      "bytes": 1206,
+      "sha256": "b1c19aea5d935dad4c5d4785d5f04e114454c6be76c4152e7731b534c7c173ba"
+    },
+    {
+      "name": "normDefect-states.f64",
+      "bytes": 272,
+      "sha256": "05ade70a77f924c09cc2b0397fc5e69a0cc5100e8bdc16e85b9a16bef5d82ac5"
+    },
+    {
+      "name": "normDefect-summary.json",
+      "bytes": 777,
+      "sha256": "9f7415065aeefc62bc6b09d53984d33bcf186325a5408b04e720b09c999d48af"
+    },
+    {
+      "name": "radial-2-B.f64",
+      "bytes": 272,
+      "sha256": "72634cefafea345ed4e7426c98ae72b950e9798e3677b6c58c9ffc542633a6ea"
+    },
+    {
+      "name": "radial-2-C.f64",
+      "bytes": 272,
+      "sha256": "72634cefafea345ed4e7426c98ae72b950e9798e3677b6c58c9ffc542633a6ea"
+    },
+    {
+      "name": "radial-2-I.f64",
+      "bytes": 272,
+      "sha256": "e7625e009e86dc21e3f5a02c396abf87971a3c0cd47001382ee00009899cec1a"
+    },
+    {
+      "name": "radial-2-M.f64",
+      "bytes": 272,
+      "sha256": "72634cefafea345ed4e7426c98ae72b950e9798e3677b6c58c9ffc542633a6ea"
+    },
+    {
+      "name": "radial-2-decisions.ndjson",
+      "bytes": 418,
+      "sha256": "aab2c918c01c2c4d523555f9ad40e43c4220f397952ad4ef5ffc12818bb26b09"
+    },
+    {
+      "name": "radial-2-source-audit.ndjson",
+      "bytes": 1757,
+      "sha256": "49c09333bbd61f291c68bcdc60e2ff655f76dd89db01033906f7510cc81dcd9a"
+    },
+    {
+      "name": "radial-2-states.f64",
+      "bytes": 272,
+      "sha256": "c2ecb7ce9f7bd96161a2f573e64208e3e6686766b83129e086d2b9169b03fffc"
+    },
+    {
+      "name": "radial-2-summary.json",
+      "bytes": 1040,
+      "sha256": "6bf2af373e1ce1533bd684320cc8bf680d2d8990d056222dbe121f4a0f891549"
+    },
+    {
+      "name": "radial-3-B.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "radial-3-C.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "radial-3-I.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "radial-3-M.f64",
+      "bytes": 272,
+      "sha256": "bfcf1d648df063ac1335cb138e38c395fa4c4f1cf9b1a31a6fe4a29b42e301cc"
+    },
+    {
+      "name": "radial-3-decisions.ndjson",
+      "bytes": 460,
+      "sha256": "d15499b7c6fbfdd0bd5a4d2187d5fca1a3a4f3785513c2d25dc2d8e2b6064d27"
+    },
+    {
+      "name": "radial-3-source-audit.ndjson",
+      "bytes": 1186,
+      "sha256": "5cfbbda30053aaa7727ef703799b561a3f7eae9f812eab84f9ad7e27160d9764"
+    },
+    {
+      "name": "radial-3-states.f64",
+      "bytes": 272,
+      "sha256": "1926ebfd8b0afbedba4dd9f2470e82adb567e8d06b9eec03300104abbfbbb363"
+    },
+    {
+      "name": "radial-3-summary.json",
+      "bytes": 732,
+      "sha256": "9e882ca4ef28e8dd0c244ca69a6bff6d15ee2f927290acc777b41a1f94a4ed01"
+    },
+    {
+      "name": "result.json",
+      "bytes": 102816,
+      "sha256": "5f45a5f7f44480267613fad62c20971de6aa4b673d43f396a4c0af73a8358dc7"
+    },
+    {
+      "name": "scalar-checks.json",
+      "bytes": 51,
+      "sha256": "9f2f8c7bb675ddb7b42dc24d0c96cce76a53cd9b3aafa0f39f59514ceaf4cc2a"
+    },
+    {
+      "name": "signedMoment-B.f64",
+      "bytes": 408,
+      "sha256": "fbfdc156d08ed41cc8922ef325be56e028f77490c70168a31d0e393cffce4040"
+    },
+    {
+      "name": "signedMoment-C.f64",
+      "bytes": 408,
+      "sha256": "fbfdc156d08ed41cc8922ef325be56e028f77490c70168a31d0e393cffce4040"
+    },
+    {
+      "name": "signedMoment-I.f64",
+      "bytes": 408,
+      "sha256": "4051850c65560e49150eac6c7df32924c41857455f65b4fcb2a514ac6d2fdfd2"
+    },
+    {
+      "name": "signedMoment-M.f64",
+      "bytes": 408,
+      "sha256": "fbfdc156d08ed41cc8922ef325be56e028f77490c70168a31d0e393cffce4040"
+    },
+    {
+      "name": "signedMoment-decisions.ndjson",
+      "bytes": 627,
+      "sha256": "e378105f2fdba983e006da18b4bb4b04a5f207011c242e7577d0ce773b9d937b"
+    },
+    {
+      "name": "signedMoment-source-audit.ndjson",
+      "bytes": 2317,
+      "sha256": "ed44b96fa4d06a6062b5372998e5aa8b6e948e0078c4d9e73266d41f78de3376"
+    },
+    {
+      "name": "signedMoment-states.f64",
+      "bytes": 408,
+      "sha256": "c08ffcdc097e91abbf7d5950b4d45e0f75567e502c0abe002447bc66f40655bd"
+    },
+    {
+      "name": "signedMoment-summary.json",
+      "bytes": 1120,
+      "sha256": "cc062119aa72048a9b0fe239dc2ccf173b511241775097ef1c29f70e083b4333"
+    },
+    {
+      "name": "started.json",
+      "bytes": 2655,
+      "sha256": "b403cf692ec2b3f2e88c40089ba1313ec98d2299343c38915a4911cedbaa04db"
+    },
+    {
+      "name": "tiltRejected-B-domain.json",
+      "bytes": 216,
+      "sha256": "b00feb20e69c8f292c43e81072b2982f02c9ee16a0e57d698339f9e6d104c9b2"
+    },
+    {
+      "name": "tiltRejected-C-domain.json",
+      "bytes": 216,
+      "sha256": "b0157ce2f109874b59634b46e88a375794ed9da5abde8bf17f4e43e765119f18"
+    },
+    {
+      "name": "tiltRejected-I-domain.json",
+      "bytes": 409,
+      "sha256": "5db9c89c29b771a8345a5b9595c8eb1d52c5881dc9c33199770caa9dcf076578"
+    },
+    {
+      "name": "tiltRejected-M-domain.json",
+      "bytes": 215,
+      "sha256": "604e226a8d2ded0a8706b385df2adb6f520089c773d9bc7824995ad4af7326ac"
+    },
+    {
+      "name": "tiltRejected-states.f64",
+      "bytes": 272,
+      "sha256": "456740f1435d8f8581b866730a5e71c539213d327735fc409dda3cd97c8c8665"
+    },
+    {
+      "name": "tiltRejected-summary.json",
+      "bytes": 682,
+      "sha256": "192931ab244b1f7e7de2912f11be5618d03efe03cb2f0291be8268042dc8d645"
+    },
+    {
+      "name": "timings.ndjson",
+      "bytes": 9208,
+      "sha256": "3e3017b301c2877fc60139af4e01690a6f49d469e3e935c4c4c71c2577d0cfd6"
+    }
+  ],
+  "cases": [
+    {
+      "id": "center3--1e-12",
+      "kind": "fixture",
+      "expected": "valid",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 2,
+        "M": 2,
+        "C": 2,
+        "I": 2
+      },
+      "decisionRows": 2,
+      "auditRows": 2,
+      "decisionCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 2,
+        "positiveOmissions": 0,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0
+      },
+      "recomputedErrors": {
+        "inflow": 0.0,
+        "rotor": 0.0,
+        "thrust": 0.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "worldForce": 0.0,
+        "worldMoment": 0.0,
+        "usedCapacity": 0.0
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "M": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "center3-0",
+      "kind": "fixture",
+      "expected": "valid",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 2,
+        "M": 2,
+        "C": 2,
+        "I": 2
+      },
+      "decisionRows": 2,
+      "auditRows": 2,
+      "decisionCounts": {
+        "candidates": 0,
+        "boundAttempts": 0,
+        "zeroCulls": 0,
+        "positiveOmissions": 0,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0
+      },
+      "recomputedErrors": {
+        "inflow": 0.0,
+        "rotor": 0.0,
+        "thrust": 0.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "worldForce": 0.0,
+        "worldMoment": 0.0,
+        "usedCapacity": 0.0
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "M": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "center3-1e-12",
+      "kind": "fixture",
+      "expected": "valid",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 2,
+        "M": 2,
+        "C": 2,
+        "I": 2
+      },
+      "decisionRows": 2,
+      "auditRows": 2,
+      "decisionCounts": {
+        "candidates": 0,
+        "boundAttempts": 0,
+        "zeroCulls": 0,
+        "positiveOmissions": 0,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0
+      },
+      "recomputedErrors": {
+        "inflow": 0.0,
+        "rotor": 0.0,
+        "thrust": 0.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "worldForce": 0.0,
+        "worldMoment": 0.0,
+        "usedCapacity": 0.0
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "M": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "down0--1e-12",
+      "kind": "fixture",
+      "expected": "valid",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 2,
+        "M": 2,
+        "C": 2,
+        "I": 2
+      },
+      "decisionRows": 2,
+      "auditRows": 2,
+      "decisionCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 2,
+        "positiveOmissions": 0,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0
+      },
+      "recomputedErrors": {
+        "inflow": 0.0,
+        "rotor": 0.0,
+        "thrust": 0.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "worldForce": 0.0,
+        "worldMoment": 0.0,
+        "usedCapacity": 0.0
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "M": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "down0-0",
+      "kind": "fixture",
+      "expected": "valid",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 2,
+        "M": 2,
+        "C": 2,
+        "I": 2
+      },
+      "decisionRows": 2,
+      "auditRows": 2,
+      "decisionCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 2,
+        "positiveOmissions": 0,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0
+      },
+      "recomputedErrors": {
+        "inflow": 0.0,
+        "rotor": 0.0,
+        "thrust": 0.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "worldForce": 0.0,
+        "worldMoment": 0.0,
+        "usedCapacity": 0.0
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "M": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "down0-1e-12",
+      "kind": "fixture",
+      "expected": "valid",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 2,
+        "M": 2,
+        "C": 2,
+        "I": 2
+      },
+      "decisionRows": 2,
+      "auditRows": 2,
+      "decisionCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 2,
+        "positiveOmissions": 0,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0
+      },
+      "recomputedErrors": {
+        "inflow": 0.0,
+        "rotor": 0.0,
+        "thrust": 0.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "worldForce": 0.0,
+        "worldMoment": 0.0,
+        "usedCapacity": 0.0
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "M": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "farStart--1e-12",
+      "kind": "fixture",
+      "expected": "reject",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": true,
+      "outputRows": {},
+      "decisionRows": 0,
+      "auditRows": 0,
+      "decisionCounts": {},
+      "recomputedErrors": null,
+      "fullComparisonMaxima": {}
+    },
+    {
+      "id": "farStart-0",
+      "kind": "fixture",
+      "expected": "valid",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 2,
+        "M": 2,
+        "C": 2,
+        "I": 2
+      },
+      "decisionRows": 2,
+      "auditRows": 2,
+      "decisionCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 0,
+        "retained": 1,
+        "nearFallbacks": 1,
+        "rotorVisits": 4
+      },
+      "recomputedErrors": {
+        "inflow": 0.0,
+        "rotor": 0.0,
+        "thrust": 0.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "worldForce": 0.0,
+        "worldMoment": 0.0,
+        "usedCapacity": 0.0
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "M": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "farStart-1e-12",
+      "kind": "fixture",
+      "expected": "valid",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 2,
+        "M": 2,
+        "C": 2,
+        "I": 2
+      },
+      "decisionRows": 2,
+      "auditRows": 2,
+      "decisionCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 0,
+        "retained": 1,
+        "nearFallbacks": 1,
+        "rotorVisits": 4
+      },
+      "recomputedErrors": {
+        "inflow": 0.0,
+        "rotor": 0.0,
+        "thrust": 0.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "worldForce": 0.0,
+        "worldMoment": 0.0,
+        "usedCapacity": 0.0
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "M": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "downEnd--1e-12",
+      "kind": "fixture",
+      "expected": "valid",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 2,
+        "M": 2,
+        "C": 2,
+        "I": 2
+      },
+      "decisionRows": 2,
+      "auditRows": 2,
+      "decisionCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 1,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0
+      },
+      "recomputedErrors": {
+        "inflow": 1.2765686823417747e-23,
+        "rotor": 0.0,
+        "thrust": 0.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "worldForce": 0.0,
+        "worldMoment": 0.0,
+        "usedCapacity": 0.5757235352751585
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          1.2765686823417747e-23,
+          1.2765686823417747e-23,
+          1.2765686823417747e-23,
+          1.2765686823417747e-23,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "M": [
+          1.2765686823417747e-23,
+          1.2765686823417747e-23,
+          1.2765686823417747e-23,
+          1.2765686823417747e-23,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "downEnd-0",
+      "kind": "fixture",
+      "expected": "valid",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 2,
+        "M": 2,
+        "C": 2,
+        "I": 2
+      },
+      "decisionRows": 2,
+      "auditRows": 2,
+      "decisionCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 1,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0
+      },
+      "recomputedErrors": {
+        "inflow": 0.0,
+        "rotor": 0.0,
+        "thrust": 0.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "worldForce": 0.0,
+        "worldMoment": 0.0,
+        "usedCapacity": 0.5757235352466936
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "M": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "downEnd-1e-12",
+      "kind": "fixture",
+      "expected": "valid",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 2,
+        "M": 2,
+        "C": 2,
+        "I": 2
+      },
+      "decisionRows": 2,
+      "auditRows": 2,
+      "decisionCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 1,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0
+      },
+      "recomputedErrors": {
+        "inflow": 0.0,
+        "rotor": 0.0,
+        "thrust": 0.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "worldForce": 0.0,
+        "worldMoment": 0.0,
+        "usedCapacity": 0.5757235352182255
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "M": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "nearRadius--1e-12",
+      "kind": "fixture",
+      "expected": "reject",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": true,
+      "outputRows": {},
+      "decisionRows": 0,
+      "auditRows": 0,
+      "decisionCounts": {},
+      "recomputedErrors": null,
+      "fullComparisonMaxima": {}
+    },
+    {
+      "id": "nearRadius-0",
+      "kind": "fixture",
+      "expected": "agreement",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 2,
+        "M": 2,
+        "C": 2,
+        "I": 2
+      },
+      "decisionRows": 2,
+      "auditRows": 2,
+      "decisionCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 0,
+        "retained": 1,
+        "nearFallbacks": 1,
+        "rotorVisits": 4
+      },
+      "recomputedErrors": {
+        "inflow": 0.0,
+        "rotor": 0.0,
+        "thrust": 0.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "worldForce": 0.0,
+        "worldMoment": 0.0,
+        "usedCapacity": 0.0
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "M": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "nearRadius-1e-12",
+      "kind": "fixture",
+      "expected": "valid",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 2,
+        "M": 2,
+        "C": 2,
+        "I": 2
+      },
+      "decisionRows": 2,
+      "auditRows": 2,
+      "decisionCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 0,
+        "retained": 1,
+        "nearFallbacks": 1,
+        "rotorVisits": 4
+      },
+      "recomputedErrors": {
+        "inflow": 0.0,
+        "rotor": 0.0,
+        "thrust": 0.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "worldForce": 0.0,
+        "worldMoment": 0.0,
+        "usedCapacity": 0.0
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "M": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "radial-2",
+      "kind": "fixture",
+      "expected": "valid",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 2,
+        "M": 2,
+        "C": 2,
+        "I": 2
+      },
+      "decisionRows": 2,
+      "auditRows": 2,
+      "decisionCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 0,
+        "retained": 1,
+        "nearFallbacks": 0,
+        "rotorVisits": 4
+      },
+      "recomputedErrors": {
+        "inflow": 0.0,
+        "rotor": 1.3877787807814457e-17,
+        "thrust": 0.0,
+        "roll": 9.105604182983729e-19,
+        "pitch": 6.911788849595091e-19,
+        "worldForce": 0.0,
+        "worldMoment": 1.143174757587648e-18,
+        "usedCapacity": 0.0
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.3877787807814457e-17,
+          0.0,
+          1.3877787807814457e-17,
+          0.0,
+          9.105604182983729e-19,
+          6.911788849595091e-19,
+          0.0,
+          0.0,
+          0.0,
+          9.105604182983729e-19,
+          6.911788849595091e-19,
+          0.0
+        ],
+        "M": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.3877787807814457e-17,
+          0.0,
+          1.3877787807814457e-17,
+          0.0,
+          9.105604182983729e-19,
+          6.911788849595091e-19,
+          0.0,
+          0.0,
+          0.0,
+          9.105604182983729e-19,
+          6.911788849595091e-19,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "radial-3",
+      "kind": "fixture",
+      "expected": "valid",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 2,
+        "M": 2,
+        "C": 2,
+        "I": 2
+      },
+      "decisionRows": 2,
+      "auditRows": 2,
+      "decisionCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 1,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0
+      },
+      "recomputedErrors": {
+        "inflow": 0.0,
+        "rotor": 0.0,
+        "thrust": 0.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "worldForce": 0.0,
+        "worldMoment": 0.0,
+        "usedCapacity": 0.2760015787707456
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "M": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "downFade2",
+      "kind": "fixture",
+      "expected": "valid",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 2,
+        "M": 2,
+        "C": 2,
+        "I": 2
+      },
+      "decisionRows": 2,
+      "auditRows": 2,
+      "decisionCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 1,
+        "positiveOmissions": 0,
+        "retained": 1,
+        "nearFallbacks": 0,
+        "rotorVisits": 4
+      },
+      "recomputedErrors": {
+        "inflow": 0.0,
+        "rotor": 0.0,
+        "thrust": 0.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "worldForce": 0.0,
+        "worldMoment": 0.0,
+        "usedCapacity": 0.0
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "M": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "centerInferenceInvalid",
+      "kind": "fixture",
+      "expected": "reject",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": true,
+      "outputRows": {},
+      "decisionRows": 0,
+      "auditRows": 0,
+      "decisionCounts": {},
+      "recomputedErrors": null,
+      "fullComparisonMaxima": {}
+    },
+    {
+      "id": "combinedTiltYaw",
+      "kind": "fixture",
+      "expected": "valid",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 2,
+        "M": 2,
+        "C": 2,
+        "I": 2
+      },
+      "decisionRows": 2,
+      "auditRows": 2,
+      "decisionCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 2,
+        "positiveOmissions": 0,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0
+      },
+      "recomputedErrors": {
+        "inflow": 0.0,
+        "rotor": 0.0,
+        "thrust": 0.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "worldForce": 3.469446951953614e-18,
+        "worldMoment": 0.0,
+        "usedCapacity": 0.0
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          3.469446951953614e-18,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "M": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          3.469446951953614e-18,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "normDefect",
+      "kind": "fixture",
+      "expected": "valid",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 2,
+        "M": 2,
+        "C": 2,
+        "I": 2
+      },
+      "decisionRows": 2,
+      "auditRows": 2,
+      "decisionCounts": {
+        "candidates": 2,
+        "boundAttempts": 2,
+        "zeroCulls": 2,
+        "positiveOmissions": 0,
+        "retained": 0,
+        "nearFallbacks": 0,
+        "rotorVisits": 0
+      },
+      "recomputedErrors": {
+        "inflow": 0.0,
+        "rotor": 0.0,
+        "thrust": 0.0,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "worldForce": 4.336808689942018e-19,
+        "worldMoment": 0.0,
+        "usedCapacity": 0.0
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          4.336808689942018e-19,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "M": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          4.336808689942018e-19,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "tiltRejected",
+      "kind": "fixture",
+      "expected": "reject",
+      "count": 2,
+      "acceptedSummary": true,
+      "recordedDomainRejection": true,
+      "outputRows": {},
+      "decisionRows": 0,
+      "auditRows": 0,
+      "decisionCounts": {},
+      "recomputedErrors": null,
+      "fullComparisonMaxima": {}
+    },
+    {
+      "id": "multipleWeak",
+      "kind": "fixture",
+      "expected": "valid",
+      "count": 5,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 5,
+        "M": 5,
+        "C": 5,
+        "I": 5
+      },
+      "decisionRows": 5,
+      "auditRows": 5,
+      "decisionCounts": {
+        "candidates": 20,
+        "boundAttempts": 20,
+        "zeroCulls": 16,
+        "positiveOmissions": 0,
+        "retained": 4,
+        "nearFallbacks": 0,
+        "rotorVisits": 16
+      },
+      "recomputedErrors": {
+        "inflow": 1.3877787807814457e-17,
+        "rotor": 1.3877787807814457e-17,
+        "thrust": 5.551115123125783e-17,
+        "roll": 0.0,
+        "pitch": 0.0,
+        "worldForce": 5.551115123125783e-17,
+        "worldMoment": 0.0,
+        "usedCapacity": 0.0
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          1.3877787807814457e-17,
+          1.3877787807814457e-17,
+          1.3877787807814457e-17,
+          1.3877787807814457e-17,
+          1.3877787807814457e-17,
+          1.3877787807814457e-17,
+          1.3877787807814457e-17,
+          1.3877787807814457e-17,
+          5.551115123125783e-17,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          5.551115123125783e-17,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "M": [
+          1.3877787807814457e-17,
+          1.3877787807814457e-17,
+          1.3877787807814457e-17,
+          1.3877787807814457e-17,
+          1.3877787807814457e-17,
+          1.3877787807814457e-17,
+          1.3877787807814457e-17,
+          1.3877787807814457e-17,
+          5.551115123125783e-17,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          5.551115123125783e-17,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "signedMoment",
+      "kind": "fixture",
+      "expected": "valid",
+      "count": 3,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 3,
+        "M": 3,
+        "C": 3,
+        "I": 3
+      },
+      "decisionRows": 3,
+      "auditRows": 3,
+      "decisionCounts": {
+        "candidates": 6,
+        "boundAttempts": 6,
+        "zeroCulls": 4,
+        "positiveOmissions": 0,
+        "retained": 2,
+        "nearFallbacks": 0,
+        "rotorVisits": 8
+      },
+      "recomputedErrors": {
+        "inflow": 2.7755575615628914e-17,
+        "rotor": 1.3877787807814457e-17,
+        "thrust": 0.0,
+        "roll": 4.1674021004911577e-19,
+        "pitch": 3.5236570605778894e-19,
+        "worldForce": 0.0,
+        "worldMoment": 5.457416911666043e-19,
+        "usedCapacity": 0.0
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          0.0,
+          2.7755575615628914e-17,
+          1.3877787807814457e-17,
+          0.0,
+          0.0,
+          1.3877787807814457e-17,
+          0.0,
+          0.0,
+          0.0,
+          4.1674021004911577e-19,
+          3.5236570605778894e-19,
+          0.0,
+          0.0,
+          0.0,
+          4.1674021004911577e-19,
+          3.5236570605778894e-19,
+          0.0
+        ],
+        "M": [
+          0.0,
+          2.7755575615628914e-17,
+          1.3877787807814457e-17,
+          0.0,
+          0.0,
+          1.3877787807814457e-17,
+          0.0,
+          0.0,
+          0.0,
+          4.1674021004911577e-19,
+          3.5236570605778894e-19,
+          0.0,
+          0.0,
+          0.0,
+          4.1674021004911577e-19,
+          3.5236570605778894e-19,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "historical-case-0-t-0",
+      "kind": "exposed",
+      "expected": "valid",
+      "count": 1000,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "C": 1000
+      },
+      "decisionRows": 1000,
+      "auditRows": 0,
+      "decisionCounts": {
+        "candidates": 148126,
+        "boundAttempts": 148126,
+        "zeroCulls": 145670,
+        "positiveOmissions": 290,
+        "retained": 2166,
+        "nearFallbacks": 0,
+        "rotorVisits": 8664
+      },
+      "recomputedErrors": {
+        "inflow": 0.007759116310719794,
+        "rotor": 4.194848476456875e-05,
+        "thrust": 6.485935846500812e-05,
+        "roll": 1.1844953098945473e-06,
+        "pitch": 1.799079050376204e-06,
+        "worldForce": 6.485935846500812e-05,
+        "worldMoment": 1.881282843404708e-06,
+        "usedCapacity": 0.47322747668601783
+      },
+      "fullComparisonMaxima": {}
+    },
+    {
+      "id": "historical-case-0-t-20",
+      "kind": "exposed",
+      "expected": "valid",
+      "count": 1000,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "C": 1000
+      },
+      "decisionRows": 1000,
+      "auditRows": 0,
+      "decisionCounts": {
+        "candidates": 275358,
+        "boundAttempts": 275358,
+        "zeroCulls": 270947,
+        "positiveOmissions": 1016,
+        "retained": 3395,
+        "nearFallbacks": 0,
+        "rotorVisits": 13580
+      },
+      "recomputedErrors": {
+        "inflow": 0.02561868471707829,
+        "rotor": 0.00013387052114475356,
+        "thrust": 0.00026634311482776063,
+        "roll": 4.456317876748794e-06,
+        "pitch": 4.753059459578898e-06,
+        "worldForce": 0.00026634311482773027,
+        "worldMoment": 5.308504254811804e-06,
+        "usedCapacity": 0.9998802034363803
+      },
+      "fullComparisonMaxima": {}
+    },
+    {
+      "id": "historical-case-0-t-30",
+      "kind": "exposed",
+      "expected": "valid",
+      "count": 1000,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "C": 1000
+      },
+      "decisionRows": 1000,
+      "auditRows": 0,
+      "decisionCounts": {
+        "candidates": 249226,
+        "boundAttempts": 249226,
+        "zeroCulls": 245294,
+        "positiveOmissions": 926,
+        "retained": 3006,
+        "nearFallbacks": 0,
+        "rotorVisits": 12024
+      },
+      "recomputedErrors": {
+        "inflow": 0.024581622387933155,
+        "rotor": 0.00013349789809975754,
+        "thrust": 0.00028057844066436965,
+        "roll": 5.01414639871142e-06,
+        "pitch": 4.7592989360337634e-06,
+        "worldForce": 0.0002805784406643653,
+        "worldMoment": 5.487260752719191e-06,
+        "usedCapacity": 0.997866029408493
+      },
+      "fullComparisonMaxima": {}
+    },
+    {
+      "id": "historical-case-0-t-60",
+      "kind": "exposed",
+      "expected": "valid",
+      "count": 1000,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "C": 1000
+      },
+      "decisionRows": 1000,
+      "auditRows": 0,
+      "decisionCounts": {
+        "candidates": 213142,
+        "boundAttempts": 213142,
+        "zeroCulls": 209759,
+        "positiveOmissions": 753,
+        "retained": 2630,
+        "nearFallbacks": 0,
+        "rotorVisits": 10520
+      },
+      "recomputedErrors": {
+        "inflow": 0.024757528143858565,
+        "rotor": 0.00013309402706498247,
+        "thrust": 0.0002627434302438503,
+        "roll": 4.549630341255229e-06,
+        "pitch": 4.856025262219978e-06,
+        "worldForce": 0.00026274343024386724,
+        "worldMoment": 5.506962709270767e-06,
+        "usedCapacity": 0.9971936336133617
+      },
+      "fullComparisonMaxima": {}
+    },
+    {
+      "id": "historical-case-1-t-0",
+      "kind": "exposed",
+      "expected": "valid",
+      "count": 1000,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "C": 1000
+      },
+      "decisionRows": 1000,
+      "auditRows": 0,
+      "decisionCounts": {
+        "candidates": 147228,
+        "boundAttempts": 147228,
+        "zeroCulls": 144795,
+        "positiveOmissions": 279,
+        "retained": 2154,
+        "nearFallbacks": 0,
+        "rotorVisits": 8616
+      },
+      "recomputedErrors": {
+        "inflow": 0.007289377464874125,
+        "rotor": 3.9156485718075396e-05,
+        "thrust": 5.2836872828143644e-05,
+        "roll": 1.0794732719929061e-06,
+        "pitch": 1.3517426040608662e-06,
+        "worldForce": 5.2836872828143644e-05,
+        "worldMoment": 1.5920187532762148e-06,
+        "usedCapacity": 0.3658747581555405
+      },
+      "fullComparisonMaxima": {}
+    },
+    {
+      "id": "historical-case-1-t-20",
+      "kind": "exposed",
+      "expected": "valid",
+      "count": 1000,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "C": 1000
+      },
+      "decisionRows": 1000,
+      "auditRows": 0,
+      "decisionCounts": {
+        "candidates": 292876,
+        "boundAttempts": 292876,
+        "zeroCulls": 287112,
+        "positiveOmissions": 1275,
+        "retained": 4489,
+        "nearFallbacks": 0,
+        "rotorVisits": 17956
+      },
+      "recomputedErrors": {
+        "inflow": 0.02617584763480796,
+        "rotor": 0.000136966305882176,
+        "thrust": 0.00027416957787709806,
+        "roll": 4.768039687357607e-06,
+        "pitch": 4.697118007213274e-06,
+        "worldForce": 0.00027416957787711047,
+        "worldMoment": 5.426012942351859e-06,
+        "usedCapacity": 0.9990180223157227
+      },
+      "fullComparisonMaxima": {}
+    },
+    {
+      "id": "historical-case-1-t-30",
+      "kind": "exposed",
+      "expected": "valid",
+      "count": 1000,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "C": 1000
+      },
+      "decisionRows": 1000,
+      "auditRows": 0,
+      "decisionCounts": {
+        "candidates": 263550,
+        "boundAttempts": 263550,
+        "zeroCulls": 258029,
+        "positiveOmissions": 1238,
+        "retained": 4283,
+        "nearFallbacks": 0,
+        "rotorVisits": 17132
+      },
+      "recomputedErrors": {
+        "inflow": 0.02574972509554918,
+        "rotor": 0.0001307641209002744,
+        "thrust": 0.00022944786432063657,
+        "roll": 4.8100407861207e-06,
+        "pitch": 4.4491257881585055e-06,
+        "worldForce": 0.00022944786432061982,
+        "worldMoment": 5.296477198016107e-06,
+        "usedCapacity": 0.9997586499898999
+      },
+      "fullComparisonMaxima": {}
+    },
+    {
+      "id": "historical-case-1-t-60",
+      "kind": "exposed",
+      "expected": "valid",
+      "count": 1000,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "C": 1000
+      },
+      "decisionRows": 1000,
+      "auditRows": 0,
+      "decisionCounts": {
+        "candidates": 151156,
+        "boundAttempts": 151156,
+        "zeroCulls": 148441,
+        "positiveOmissions": 595,
+        "retained": 2120,
+        "nearFallbacks": 0,
+        "rotorVisits": 8480
+      },
+      "recomputedErrors": {
+        "inflow": 0.025549237267908864,
+        "rotor": 0.0001395822516033346,
+        "thrust": 0.0002355498503931741,
+        "roll": 4.315403201909294e-06,
+        "pitch": 5.111174061080896e-06,
+        "worldForce": 0.00023554985039316717,
+        "worldMoment": 5.527339574926264e-06,
+        "usedCapacity": 0.9995430955896749
+      },
+      "fullComparisonMaxima": {}
+    },
+    {
+      "id": "historical-case-2-t-0",
+      "kind": "exposed",
+      "expected": "valid",
+      "count": 5000,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "C": 5000
+      },
+      "decisionRows": 5000,
+      "auditRows": 0,
+      "decisionCounts": {
+        "candidates": 925686,
+        "boundAttempts": 925686,
+        "zeroCulls": 912472,
+        "positiveOmissions": 1632,
+        "retained": 11582,
+        "nearFallbacks": 0,
+        "rotorVisits": 46328
+      },
+      "recomputedErrors": {
+        "inflow": 0.00884885491604992,
+        "rotor": 4.52360795263132e-05,
+        "thrust": 6.71862062053552e-05,
+        "roll": 1.688593765231171e-06,
+        "pitch": 1.8107187750159449e-06,
+        "worldForce": 6.71862062053552e-05,
+        "worldMoment": 1.8186658979603578e-06,
+        "usedCapacity": 0.5629313360421917
+      },
+      "fullComparisonMaxima": {}
+    },
+    {
+      "id": "historical-case-2-t-20",
+      "kind": "exposed",
+      "expected": "valid",
+      "count": 5000,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "C": 5000
+      },
+      "decisionRows": 5000,
+      "auditRows": 0,
+      "decisionCounts": {
+        "candidates": 2313748,
+        "boundAttempts": 2313748,
+        "zeroCulls": 2277318,
+        "positiveOmissions": 8526,
+        "retained": 27904,
+        "nearFallbacks": 0,
+        "rotorVisits": 111616
+      },
+      "recomputedErrors": {
+        "inflow": 0.026772601918929606,
+        "rotor": 0.0001391499188236195,
+        "thrust": 0.00028156093998743525,
+        "roll": 5.019711956946435e-06,
+        "pitch": 5.055113101123307e-06,
+        "worldForce": 0.00028156093998744816,
+        "worldMoment": 5.52271639732409e-06,
+        "usedCapacity": 0.9999664184217116
+      },
+      "fullComparisonMaxima": {}
+    },
+    {
+      "id": "historical-case-2-t-30",
+      "kind": "exposed",
+      "expected": "valid",
+      "count": 5000,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "C": 5000
+      },
+      "decisionRows": 5000,
+      "auditRows": 0,
+      "decisionCounts": {
+        "candidates": 2282534,
+        "boundAttempts": 2282534,
+        "zeroCulls": 2245843,
+        "positiveOmissions": 8483,
+        "retained": 28208,
+        "nearFallbacks": 1,
+        "rotorVisits": 112832
+      },
+      "recomputedErrors": {
+        "inflow": 0.02562384945805163,
+        "rotor": 0.00013690280617926348,
+        "thrust": 0.0002824332605847468,
+        "roll": 4.91985703837214e-06,
+        "pitch": 4.864139955727996e-06,
+        "worldForce": 0.00028243326058475176,
+        "worldMoment": 5.439445167508085e-06,
+        "usedCapacity": 0.9999914376277621
+      },
+      "fullComparisonMaxima": {}
+    },
+    {
+      "id": "historical-case-2-t-60",
+      "kind": "exposed",
+      "expected": "valid",
+      "count": 5000,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "C": 5000
+      },
+      "decisionRows": 5000,
+      "auditRows": 0,
+      "decisionCounts": {
+        "candidates": 2115930,
+        "boundAttempts": 2115930,
+        "zeroCulls": 2081167,
+        "positiveOmissions": 8146,
+        "retained": 26617,
+        "nearFallbacks": 0,
+        "rotorVisits": 106468
+      },
+      "recomputedErrors": {
+        "inflow": 0.02511715494786937,
+        "rotor": 0.0001369851472747194,
+        "thrust": 0.00026664450024380115,
+        "roll": 4.807446620164839e-06,
+        "pitch": 4.901584761473133e-06,
+        "worldForce": 0.0002666445002437854,
+        "worldMoment": 5.505692951553854e-06,
+        "usedCapacity": 0.9998155695394348
+      },
+      "fullComparisonMaxima": {}
+    },
+    {
+      "id": "fresh1000",
+      "kind": "fresh",
+      "expected": "valid",
+      "count": 1000,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 1000,
+        "M": 1000,
+        "C": 1000,
+        "I": 1000
+      },
+      "decisionRows": 1000,
+      "auditRows": 1000,
+      "decisionCounts": {
+        "candidates": 707024,
+        "boundAttempts": 707024,
+        "zeroCulls": 684020,
+        "positiveOmissions": 4965,
+        "retained": 18039,
+        "nearFallbacks": 0,
+        "rotorVisits": 72156
+      },
+      "recomputedErrors": {
+        "inflow": 0.024126370671727848,
+        "rotor": 9.107860346031782e-05,
+        "thrust": 0.00012563175800092696,
+        "roll": 3.002402550299663e-06,
+        "pitch": 3.515061767034422e-06,
+        "worldForce": 0.00012563175800092772,
+        "worldMoment": 3.606528695156234e-06,
+        "usedCapacity": 0.9999188791209538
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          1.0658141036401503e-14,
+          2.4868995751603507e-14,
+          1.9539925233402755e-14,
+          1.2434497875801753e-14,
+          3.469446951953614e-17,
+          9.020562075079397e-17,
+          7.632783294297951e-17,
+          5.551115123125783e-17,
+          8.326672684688674e-17,
+          4.336808689942018e-18,
+          4.119968255444917e-18,
+          6.938893903907228e-18,
+          6.938893903907228e-18,
+          8.326672684688674e-17,
+          4.553649124439119e-18,
+          3.903127820947816e-18,
+          3.3542504711270293e-19
+        ],
+        "M": [
+          1.0658141036401503e-14,
+          2.4868995751603507e-14,
+          1.9539925233402755e-14,
+          1.2434497875801753e-14,
+          3.469446951953614e-17,
+          9.020562075079397e-17,
+          7.632783294297951e-17,
+          5.551115123125783e-17,
+          8.326672684688674e-17,
+          4.336808689942018e-18,
+          4.119968255444917e-18,
+          6.938893903907228e-18,
+          6.938893903907228e-18,
+          8.326672684688674e-17,
+          4.553649124439119e-18,
+          3.903127820947816e-18,
+          3.3542504711270293e-19
+        ]
+      }
+    },
+    {
+      "id": "fresh5000",
+      "kind": "fresh",
+      "expected": "valid",
+      "count": 5000,
+      "acceptedSummary": true,
+      "recordedDomainRejection": false,
+      "outputRows": {
+        "B": 5000,
+        "M": 5000,
+        "C": 5000,
+        "I": 5000
+      },
+      "decisionRows": 5000,
+      "auditRows": 5000,
+      "decisionCounts": {
+        "candidates": 6614638,
+        "boundAttempts": 6614638,
+        "zeroCulls": 6488768,
+        "positiveOmissions": 26742,
+        "retained": 99128,
+        "nearFallbacks": 0,
+        "rotorVisits": 396512
+      },
+      "recomputedErrors": {
+        "inflow": 0.025668856951080343,
+        "rotor": 0.00011252967497896171,
+        "thrust": 0.00014152435287470566,
+        "roll": 3.064275099031984e-06,
+        "pitch": 3.4073860767755667e-06,
+        "worldForce": 0.0001415243528747045,
+        "worldMoment": 4.47069478173481e-06,
+        "usedCapacity": 0.9999994238973356
+      },
+      "fullComparisonMaxima": {
+        "B": [
+          3.9968028886505635e-14,
+          3.375077994860476e-14,
+          2.6645352591003757e-14,
+          2.6645352591003757e-14,
+          1.249000902703301e-16,
+          1.3877787807814457e-16,
+          1.249000902703301e-16,
+          9.71445146547012e-17,
+          1.6653345369377348e-16,
+          4.391018798566293e-18,
+          4.7704895589362195e-18,
+          1.9081958235744878e-17,
+          1.734723475976807e-17,
+          1.6653345369377348e-16,
+          6.451002926288751e-18,
+          3.686287386450715e-18,
+          7.487771253728015e-19
+        ],
+        "M": [
+          3.9968028886505635e-14,
+          3.375077994860476e-14,
+          2.6645352591003757e-14,
+          2.6645352591003757e-14,
+          1.249000902703301e-16,
+          1.3877787807814457e-16,
+          1.249000902703301e-16,
+          9.71445146547012e-17,
+          1.6653345369377348e-16,
+          4.391018798566293e-18,
+          4.7704895589362195e-18,
+          1.9081958235744878e-17,
+          1.734723475976807e-17,
+          1.6653345369377348e-16,
+          6.451002926288751e-18,
+          3.686287386450715e-18,
+          7.487771253728015e-19
+        ]
+      }
+    }
+  ],
+  "partialTails": [],
+  "limitations": [
+    "A passing saved review of a failed campaign confirms retained evidence consistency; it does not turn the scientific failure into a passing qualification.",
+    "The generated poses are hash-checked and decoded only for finite layout and prescribed placeholders/motors. No generator, quaternion norm, rotation, geometry or domain predicate is recomputed.",
+    "Fresh successful source-audit rows retain all four terms only for positive omissions. Exact-zero term checks and full-code digests are recorded runtime assertions; absent complete vectors/zero doubles are not regenerated.",
+    "Historical inputs retain full prior classifications and full resultant loads but no per-source magnitudes; historical omission checks remain aggregate plus prior-code checks.",
+    "New output rows omit axes. Body wrench arithmetic and saved world-vector discrepancies are checked, but world rotations cannot be independently reconstructed without forbidden geometry.",
+    "Successful timed query output matrices are not retained. Checksums/counters/times and recorded pass assertions can be reconciled, not every repeated output component reconstructed.",
+    "C includes exact-zero culling, positive-bound omission, bound/guard work, masking and data-structure overhead. Its C/M or C/B timing ratio does not isolate positive omission alone. A positive upper bound does not imply that every corresponding realized rotor term is positive.",
+    "Runtime logical-check count and unavailable partial-call actual instruction counts remain recorded evidence; attempted-call shape counters are independently reconstructed exactly.",
+    "Engineering numerical allowances and finite synthetic cases do not establish a universal rounding certificate, physical validity, flight safety, trajectory qualification or algorithmic novelty."
+  ],
+  "scientificStatus": "completed",
+  "unlistedRawFiles": [
+    {
+      "name": "result.json",
+      "bytes": 102816,
+      "sha256": "5f45a5f7f44480267613fad62c20971de6aa4b673d43f396a4c0af73a8358dc7"
+    }
+  ],
+  "targetsAndAllowances": {
+    "targets": {
+      "thrust": 0.0013243500000000002,
+      "roll": 1.0488316895441329e-05,
+      "pitch": 1.0488316895441329e-05
+    },
+    "allowances": {
+      "geometry": 1e-12,
+      "boundRelative": 1e-12,
+      "boundAbsolute": 1e-12,
+      "rotor": 1e-12,
+      "inflowAudit": 1e-11
+    },
+    "L": 0.005473321384225967,
+    "Bcap": 0.0342189610265993
+  },
+  "operationAccounting": {
+    "fieldCalls": 152,
+    "independentCenterShape": 25994070,
+    "boundAttemptShape": 289930070,
+    "rotorVisitShape": 2719361120,
+    "receiverCalls": 640832,
+    "integrationSteps": 0
+  },
+  "recordedRuntimeLogicalChecks": 69285616,
+  "timingSummaries": {
+    "fresh1000": {
+      "B": {
+        "warmupSeconds": [
+          0.16884675
+        ],
+        "measuredSeconds": [
+          0.171705417,
+          0.168893291,
+          0.170814209,
+          0.171332125,
+          0.169796125
+        ],
+        "measuredCount": 5,
+        "minimum": 0.168893291,
+        "maximum": 0.171705417,
+        "median": 0.170814209
+      },
+      "M": {
+        "warmupSeconds": [
+          0.119093791
+        ],
+        "measuredSeconds": [
+          0.12223275,
+          0.107694083,
+          0.108610083,
+          0.110685583,
+          0.108092791
+        ],
+        "measuredCount": 5,
+        "minimum": 0.107694083,
+        "maximum": 0.12223275,
+        "median": 0.108610083
+      },
+      "C": {
+        "warmupSeconds": [
+          0.090444209
+        ],
+        "measuredSeconds": [
+          0.090545791,
+          0.084825875,
+          0.084201792,
+          0.086162042,
+          0.084604458
+        ],
+        "measuredCount": 5,
+        "minimum": 0.084201792,
+        "maximum": 0.090545791,
+        "median": 0.084825875
+      },
+      "ratiosOfMedians": {
+        "C_over_B": 0.4965973000524798,
+        "C_over_M": 0.7810128917772763
+      },
+      "interpretation": "C bundles exact-zero culling, positive omissions, bound/guard/mask work and its implementation overhead; five technical repeats are not independent swarm samples."
+    },
+    "fresh5000": {
+      "B": {
+        "warmupSeconds": [
+          1.859900791
+        ],
+        "measuredSeconds": [
+          1.857205458,
+          1.888841125,
+          1.861298584,
+          1.90478475,
+          1.912019042
+        ],
+        "measuredCount": 5,
+        "minimum": 1.857205458,
+        "maximum": 1.912019042,
+        "median": 1.888841125
+      },
+      "M": {
+        "warmupSeconds": [
+          1.307955542
+        ],
+        "measuredSeconds": [
+          1.307943917,
+          1.322262459,
+          1.333426792,
+          1.336225,
+          1.343442375
+        ],
+        "measuredCount": 5,
+        "minimum": 1.307943917,
+        "maximum": 1.343442375,
+        "median": 1.333426792
+      },
+      "C": {
+        "warmupSeconds": [
+          1.0837415
+        ],
+        "measuredSeconds": [
+          1.110087959,
+          1.117471708,
+          1.121855125,
+          1.224038417,
+          1.122320458
+        ],
+        "measuredCount": 5,
+        "minimum": 1.110087959,
+        "maximum": 1.224038417,
+        "median": 1.121855125
+      },
+      "ratiosOfMedians": {
+        "C_over_B": 0.5939383202491422,
+        "C_over_M": 0.8413323713987592
+      },
+      "interpretation": "C bundles exact-zero culling, positive omissions, bound/guard/mask work and its implementation overhead; five technical repeats are not independent swarm samples."
+    }
+  },
+  "retainedCoverage": {
+    "savedStateRows": 6052,
+    "outputRows": 52176,
+    "decisionRows": 34044,
+    "auditRows": 6044,
+    "retainedPositiveSourceTermTuples": 31711,
+    "recordedZeroTermChecks": 28691320,
+    "historicalInflatedCodeBytes": 432000000
+  },
+  "budgetAndInventory": {
+    "rawFiles": 240,
+    "rawBytes": 38259345,
+    "supervisor": {
+      "id": "bounded-omission",
+      "exitCode": 0,
+      "wallSeconds": 40.740462375,
+      "childCPUSeconds": 41.279581,
+      "cumulativeChildMaxRSSPlatformUnits": 463077376,
+      "stop": null,
+      "completeProcess": true,
+      "rawBytesAfter": 38259345
+    },
+    "terminalFlagAtReview": false,
+    "completedCaseSummaries": 38,
+    "recordedCalls": 152,
+    "timingsRetained": 36
+  },
+  "scientificQualificationCompleted": true,
+  "outcome": "Complete campaign retained evidence verified",
+  "checkCount": 2829776,
+  "checkCategories": {
+    "pinned 66-file freeze": 1,
+    "frozen file hash/size": 66,
+    "frozen started provenance/config/schema": 1,
+    "completed result provenance/config/schema": 1,
+    "raw/published successful result equality": 1,
+    "exact 17-column schemas": 1,
+    "frozen cases/seeds/shapes without generation": 1,
+    "closed reference manifest pin": 1,
+    "unchanged resource caps": 1,
+    "flat raw file inventory": 240,
+    "unique listed evidence names": 1,
+    "retained file inventory hash/size": 239,
+    "complete successful raw inventory": 1,
+    "frozen numerical allowances": 1,
+    "target and Lipschitz scalar formulas": 1,
+    "reserved signed load budget and capacity formulas": 1,
+    "retained scalar-check record": 1,
+    "saved capacity scalar identities": 1,
+    "recognized case summary": 38,
+    "terminal/raw completed summary equality": 38,
+    "completed summaries form frozen case prefix": 1,
+    "all 38 case summaries": 1,
+    "case identity/count/kind/expected decision": 38,
+    "binary row coverage within case size": 126,
+    "complete accepted binary row count": 126,
+    "saved state layout/finite/prescribed placeholders": 6052,
+    "finite retained 17-value output row": 52176,
+    "saved-rotor signed body wrench arithmetic": 52176,
+    "scientific observation: Receiver range": 208704,
+    "scientific observation: Zero-inflow identity": 208704,
+    "scientific observation: Root residual": 208704,
+    "scientific observation: Power identity": 208704,
+    "complete accepted method outputs": 34,
+    "retained receiver prefixes within N": 38,
+    "complete accepted decision/audit rows": 34,
+    "ordered decision receivers": 34044,
+    "strict complete deflate payload": 62044,
+    "complete decision mask digest": 34044,
+    "zero unused padding bits": 34044,
+    "self mask code zero": 34044,
+    "ascending complete positive-omission source identities": 34044,
+    "mask and decision counter accounting": 34044,
+    "declared nextUp bound accumulation exact": 34044,
+    "scientific observation: Omission capacity": 68088,
+    "ordered finite audit output row": 6044,
+    "retained complete-code digest format": 6044,
+    "audit/binary independent output equality": 6044,
+    "audit/decision positive source and bound identity": 6044,
+    "recorded exact-zero inspection coverage": 6044,
+    "four saved omitted sums scalar reconstruction": 6044,
+    "scientific observation: Omitted terms do not explain field difference": 24176,
+    "scientific observation: Summed omitted terms within retained bound": 24176,
+    "four retained independent root diagnostics": 6044,
+    "finite saved independent solution": 24176,
+    "scientific observation: Independent root bracket/residual": 24176,
+    "independent saved root scalar identities": 24176,
+    "full comparison complete equal row counts": 44,
+    "scientific observation: Full implementation mismatch": 205496,
+    "all 17 saved full-comparison maxima": 44,
+    "scientific observation: Aggregate inflow bound": 136176,
+    "scientific observation: Rotor error bound/sign": 136176,
+    "scientific observation: Thrust analytic bound": 34044,
+    "scientific observation: Moment analytic bound": 34044,
+    "scientific observation: Declared load budget": 34044,
+    "saved approximation maximum summaries": 34,
+    "actual completed C counters from all masks": 34,
+    "C profile-evaluation count range": 34,
+    "summary/call C counters equality": 34,
+    "scientific observation: Domain decisions differ": 26,
+    "scientific observation: Expected valid case rejected": 26,
+    "scientific observation: Expected rejection accepted": 26,
+    "full-reference direct/eligible work counter identities": 22,
+    "B/M full support and candidate counters": 22,
+    "all full-reference summary counters": 22,
+    "accepted rejection summary has four rejecting calls": 4,
+    "finite positive source bound": 64870,
+    "finite saved omitted-source term tuple": 31711,
+    "scientific observation: Per-source upper bound": 126844,
+    "full pinned historical domain rows": 12,
+    "pinned prior code vector receiver/hash": 28000,
+    "historical full source-center eligibility correspondence": 28000,
+    "scientific observation: Historical claimed-zero has positive support": 491535,
+    "complete historical saved reference rows": 12,
+    "frozen timing orders": 1,
+    "recorded calls within frozen schedule": 152,
+    "exact attempted call order/identity/size": 152,
+    "domain call witness file equality": 16,
+    "attempted call count in fixed schedule": 1,
+    "all exact charged operation-shape counters": 1,
+    "at most one unreturned last attempted call": 1,
+    "complete exact matrix shape totals": 1,
+    "complete timing records and result equality": 1,
+    "timing prefix within fixed schedule": 36,
+    "exact timing order and warmup designation": 36,
+    "finite positive saved timing/checksum": 36,
+    "timing/call ledger agreement": 36,
+    "timed and correctness query work counters": 36,
+    "timing checksum against retained correctness scalars": 36,
+    "one warmup and five measured samples": 6,
+    "one supervised scientific invocation": 1,
+    "no active supervised science process": 1,
+    "raw byte count matches supervisor": 1,
+    "supervisor caps match freeze": 1,
+    "supervisor completion semantics": 1,
+    "completed scientific status matches supervisor": 1,
+    "scientific observation: raw storage cap": 1,
+    "scientific observation: executable wall cap": 1,
+    "driver/supervisor elapsed accounting": 1,
+    "success preserves full failure reserve": 1
+  },
+  "failedCheckCount": 0,
+  "failedChecks": [],
+  "observedScientificGateViolations": [],
+  "passed": true,
+  "verificationWallSecondsBeforeOutput": 4.119794292,
+  "canonicalAlreadyExisted": false
+}

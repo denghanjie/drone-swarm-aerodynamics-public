@@ -1,0 +1,153 @@
+{
+  "sourceCommit": "4767787487fc7f8c3a8e8189523b1299c9c7f190",
+  "freezeSha256": "5862d96e2556d58852f7b1d3a65e00e5303c8061e137f27280041156191c282f",
+  "config": {
+    "status": "SELECTED_UNEXECUTED_PENDING_FINAL_REVIEW",
+    "scope": "Prepared-geometry wake terms and one ascending-source materialized-term reduction for four exposed receiver rows; no roots, full field, integration or timing comparison",
+    "parentResultCommit": "2ba59cc634c4634011aa78df4caceda399761efc",
+    "sourceReferenceDirectory": "research/m31-zero-screen-2026-10-16",
+    "sourceCase": "fresh5000",
+    "nSources": 5000,
+    "receiverIds": [
+      27,
+      445,
+      4500,
+      988
+    ],
+    "nSlots": 80000,
+    "selectionSha256": "00bfae2e0d0cc8cfc811556ea549fe69399d45882693b760f612e15f8daa125f",
+    "gates": {
+      "wakeForceAllocationN": 1e-7,
+      "referenceAllowanceMps": 1e-12,
+      "requireAllCodesEqual": true,
+      "chargeAbsoluteTermErrors": true,
+      "exactDyadicGate": true
+    },
+    "limits": {
+      "scientificWallSeconds": 60,
+      "cooperativeWallSeconds": 53,
+      "gpuBatchTimeoutMilliseconds": 10000,
+      "rawBytes": 67108864,
+      "failureReserveBytes": 4194304,
+      "reviewWallSeconds": 60,
+      "dispatches": 3,
+      "gpuPairSlots": 80000,
+      "gpuControlSlots": 16,
+      "gpuSumSlots": 16,
+      "referencePairSlots": 160000,
+      "axisRotations": 5000,
+      "offsetRotations": 16,
+      "roots": 0,
+      "integrationSteps": 0,
+      "gpuLaunchedInvocations": 80128,
+      "gpuPaddingInvocations": 96,
+      "gpuSumReadReservation": 80000,
+      "originalStateAdmissions": 5000,
+      "originalQuaternionNorms": 5000,
+      "originalAxisRotations": 5000,
+      "originalOffsetRotations": 16,
+      "RAxisMetrics": 5000,
+      "QAxisMetrics": 5000,
+      "packedFloatWords": 40080,
+      "decodedNodeAdmissions": 5000,
+      "decodedOffsetAdmissions": 16,
+      "RPairSlots": 80000,
+      "QPairSlots": 80000,
+      "RCenterChecks": 19996,
+      "QCenterChecks": 19996,
+      "RWorldPoints": 16,
+      "QWorldPoints": 16,
+      "RRotorVisits": 79984,
+      "QRotorVisits": 79984,
+      "RProfileEvaluations": 79984,
+      "QProfileEvaluations": 79984,
+      "RSumTermVisits": 79984,
+      "QSumTermVisits": 79984
+    },
+    "stopNewLaunchUTC": "2026-10-15T23:00:00Z",
+    "timingComparison": false,
+    "assessmentReservations": {
+      "R": {
+        "savedCodeComparisons": 80000,
+        "savedInflowComparisons": 16,
+        "referenceSumComparisons": 16,
+        "RExactStoredTermAdds": 80000,
+        "RExactStoredSumGates": 48
+      },
+      "Q": {
+        "packedCodeComparisons": 80000,
+        "packingDyadicTermRows": 80000,
+        "referenceSumComparisons": 32,
+        "packingExactStoredTermAdds": 160000,
+        "QExactStoredSumGates": 32
+      },
+      "controls": {
+        "controlRecordsChecked": 16,
+        "numericFieldsChecked": 192
+      },
+      "terms": {
+        "gpuTermRecordsChecked": 80000,
+        "numericFieldsChecked": 960000,
+        "gpuDyadicTermRows": 80000,
+        "gpuExactStoredTermAdds": 80000
+      },
+      "serial": {
+        "serialRecordsChecked": 16,
+        "serialDyadicGates": 16
+      }
+    },
+    "assessmentLimits": {
+      "savedCodeComparisons": 80000,
+      "savedInflowComparisons": 16,
+      "referenceSumComparisons": 48,
+      "RExactStoredTermAdds": 80000,
+      "RExactStoredSumGates": 48,
+      "packedCodeComparisons": 80000,
+      "packingDyadicTermRows": 80000,
+      "packingExactStoredTermAdds": 160000,
+      "QExactStoredSumGates": 32,
+      "controlRecordsChecked": 16,
+      "numericFieldsChecked": 960192,
+      "gpuTermRecordsChecked": 80000,
+      "gpuDyadicTermRows": 80000,
+      "gpuExactStoredTermAdds": 80000,
+      "serialRecordsChecked": 16,
+      "serialDyadicGates": 16
+    }
+  },
+  "node": "v24.19.0",
+  "platform": "darwin",
+  "architecture": "arm64",
+  "runtimePinsVerified": [
+    {
+      "label": "Node executable",
+      "bytes": 121304480,
+      "sha256": "3c9448363b9976bf3d9e8f4d320397975800131b42c7b1be342dadc05871dd25"
+    },
+    {
+      "label": "playwright/package.json",
+      "bytes": 1416,
+      "sha256": "ca170ec143a88ed3043ac953eb3b2377b2b97304104f4e1e23316684ce2c35af"
+    },
+    {
+      "label": "playwright/index.js",
+      "bytes": 648,
+      "sha256": "4e98f65f0a9d9bcab8cffc0c5cfdd87fd3f5b0be74fc494ff166a466b204cd44"
+    },
+    {
+      "label": "playwright-core/package.json",
+      "bytes": 876,
+      "sha256": "07c47543631fef9508760365dee9fbe958c562093ec8d122543949ed231f233f"
+    },
+    {
+      "label": "playwright-core/index.js",
+      "bytes": 697,
+      "sha256": "a58fb2cec4293e7dcf73c58a179898a4f3986666451a19da4e731fa3af63265b"
+    },
+    {
+      "label": "playwright-core/lib/coreBundle.js (spawn behavior)",
+      "bytes": 3425603,
+      "sha256": "9393fa79e1c67c74edc26b610d65a4f7ed73d345a762465cc88340a33a2454ac"
+    }
+  ]
+}

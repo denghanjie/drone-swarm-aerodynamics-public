@@ -1,0 +1,7 @@
+# Independent pre-execution review
+
+The independent protocol reviewer inspected protocol, configuration, production driver, supervisor and separately coded arithmetic oracle without executing the experiment. The reviewer initially found an undisclosed pair of zero-flow RK4 verification calls. Before freeze, the protocol was corrected to disclose both 2.5 ms single-vehicle steps (0.005 s aggregate); neither prescribed path is integrated.
+
+After reading the earlier internal temporal report, the parent added refresh-left-limit maxima before freeze. The reviewer verified that prior held winds are used at the current exact event pose before replacement, t=0 is excluded, t=1 s included, both peak grids include all event limits, and RMS uses only uniform samples. Expected total field calls are 29,924, including expected domain-error calls, below 40,000. Static review found no remaining launch blocker. Agent agreement is not empirical evidence; the actual oracle tests must pass at runtime.
+
+On external termination, `results/budget.json` plus `raw/started.json` is the authoritative incomplete record even if the child cannot write `failure.json`. No retry is allowed. The supervisor is the previously synthetically tested implementation with changed local campaign root, log location and cap constants only. Oracle provenance/hashes are embedded in its source; it imports none of the original model functions.

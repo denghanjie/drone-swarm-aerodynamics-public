@@ -1,0 +1,39 @@
+{
+  "method": "Integer layout/accounting only; no scientific inputs generated or evaluated.",
+  "Ns": [
+    50,
+    500,
+    5000,
+    5000
+  ],
+  "totalReceivers": 10550,
+  "orderedPairs": 50252500,
+  "mainPerFamilyFormula": "8*N*N + 2424*N",
+  "mainTypedBytesByFamily": [
+    141200,
+    3212000,
+    212120000,
+    212120000
+  ],
+  "mainTypedBytesTotal": 427593200,
+  "controlAndMetadataReserveBytes": 67108864,
+  "partialFailureAllowance": "A failed family retains its own prefix/full backing arrays, not permission for a replacement. Conservatively reserve another maximum family backing set for duplicated-prefix persistence. Actual writer cap always governs.",
+  "maximumFamilyBackingBytes": 212120000,
+  "conservativeTotalWithDuplicateFailureAndExtras": 706822064,
+  "rawCapBytes": 805306368,
+  "mainHostArrays": "Original 136N; candidate/R/Q-prepared 3*224N; packed 112N; R/Q outputs 960N; GPU 256N; H 288N; R/Q/GPU policy 8N\u00b2. Extra generator/metadata/JSON/filesystem buffers within fixed reserve; JS object/GC and browser overhead checked by sampled RSS.",
+  "GPU": {
+    "mainPerBatchLive": "128+112N+2*(4N\u00b2+256N)",
+    "maximumMainLive": 203120128,
+    "cumulativeAllocated": 408727616,
+    "uploaded": 1223584,
+    "readback": 203752016,
+    "buffers": 40,
+    "pipelines": 3,
+    "dispatches": 6,
+    "activeInvocations": 10711,
+    "launchedInvocations": 10944,
+    "capBytes": 218103808
+  },
+  "limitations": "This payload ledger is not a proof of total host/driver memory; sampled owned-process RSS is separately enforced at 4 GiB. Counts are not performance evidence."
+}

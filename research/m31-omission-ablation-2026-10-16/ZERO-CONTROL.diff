@@ -1,0 +1,63 @@
+--- frozen-candidate.cjs
++++ zero-control.cjs
+@@ -1,4 +1,6 @@
+ 'use strict';
++// Z control: masks, omitted lists, B and shadowCounts describe C's shadow policy.
++// Mask code 3 is evaluated and retained by Z; only code 1 is actually culled.
+ // No stored-reference input: every query rebuilds all geometry, neighbors and decisions.
+ const F=require('../../../outputs/step02c-source/physics.cjs'),A=require('../../../outputs/milestone-28-source/aero.cjs'),W=require('../../../outputs/step03a-source/wake.cjs'),{Grid}=require('../../../outputs/milestone-26-source/grid.cjs');
+ const f0=F.P.m*F.P.g/4,D=A.P.motorDistance,area=Math.PI*A.P.rotorRadius**2,vi0=Math.sqrt(f0/(2*A.P.rho*area)),L=f0/(3*vi0),a=F.P.a;
+@@ -33,17 +35,20 @@
+  counts.profileEvaluations++;
+  return W.normalizedWake(nd,radial/D).speed*vi0*fade(A.P.downstreamFade,A.P.downstreamCutoff,down)*fade(A.P.radialFade,A.P.radialCutoff,radial/half)*Math.max(0,dot(axes[i],axis));
+ }
+-function fields(states,omit,options={}){
++function actualCounts(shadow,selected){return {...shadow,positiveOmissions:0,actualPositiveOmissions:0,retained:shadow.retained+shadow.positiveOmissions,rotorVisits:shadow.rotorVisits+selected.rotorVisits,profileEvaluations:shadow.profileEvaluations+selected.profileEvaluations};}
++function fields(states,options={}){
++ const omit=true; // Always build the full frozen C policy; selections are shadow only.
+  const n=states.length,axes=states.map(s=>F.rotate(s.slice(6,10),[0,0,1]));
+  for(let i=0;i<n;i++)if(axes[i][2]<Math.cos(A.P.maxTiltDegrees*Math.PI/180))throw new A.DomainError('Source/receiver tilt exceeds exploratory20-degree limit',{drone:i,axis:axes[i]});
+  const offsets=states.map(s=>F.rotors.map(r=>F.rotate(s.slice(6,10),[r[0],r[1],0]))),points=offsets.map((rr,i)=>rr.map(r=>r.map((v,k)=>v+states[i][k])));
+- // Matched baseline shares geometry but does not pay unused bound preprocessing.
++ // The full C bound preprocessing is retained in Z.
+  const radii=omit?offsets.map(rr=>Math.max(...rr.map(r=>Math.hypot(...r)))):null;
+  const axisNorms=omit?axes.map(v=>Math.hypot(...v)):null,radialNorms=omit?axisNorms.map(s=>Math.max(1,Math.abs(1-s*s))):null;
+  const grid=new Grid(states,1.5),winds=[],records=[];
+  const counts={candidates:0,boundAttempts:0,zeroCulls:0,positiveOmissions:0,retained:0,nearFallbacks:0,rotorVisits:0,profileEvaluations:0};
++ const selectedSourceWork={rotorVisits:0,profileEvaluations:0};
+  for(let i=0;i<n;i++){
+-  if(options.guard)options.guard(counts);
++  if(options.guard)options.guard(actualCounts(counts,selectedSourceWork),counts);
+   const ids=grid.neighbors(i,A.P.neighborRadius),wind=[0,0,0,0],mask=(omit||options.evidence)?new Uint8Array(Math.ceil(n/4)):null,omitted=[];
+   let B=0,zero=0,retained=0,fallback=0;
+   const put=(j,code)=>{if(mask)mask[j>>2]|=code<<((j&3)*2);};
+@@ -52,20 +57,23 @@
+    if(omit){counts.boundAttempts++;decision=sourceBound([states[j][0]-states[i][0],states[j][1]-states[i][1],states[j][2]-states[i][2]],axes[j],axisNorms[j],radialNorms[j],radii[i],Math.max(0,dot(axes[i],axes[j])));
+     if(decision.kind==='zero'){put(j,1);counts.zeroCulls++;zero++;continue;}
+     if(decision.kind==='fallback'){counts.nearFallbacks++;fallback++;}
+-    else {const next=nextUp(B+decision.bound);if(next<=Bcap){B=next;put(j,3);counts.positiveOmissions++;omitted.push([j,decision.bound]);continue;}}
++    else {const next=nextUp(B+decision.bound);if(next<=Bcap){B=next;put(j,3);counts.positiveOmissions++;omitted.push([j,decision.bound]);
++     // Preserve C's shadow decision and bookkeeping, but evaluate this source in Z.
++     for(let k=0;k<4;k++)wind[k]+=exactTerm(states,i,j,k,points,axes,selectedSourceWork);
++     continue;}}
+    }
+    put(j,2);counts.retained++;retained++;
+    for(let k=0;k<4;k++)wind[k]+=exactTerm(states,i,j,k,points,axes,counts);
+   }
+   winds.push(wind);
+-  if(omit||options.evidence){const row={receiver:i,mask,omitted,B,candidates:ids.length,zeroCulls:zero,retained,nearFallbacks:fallback};records.push(row);if(options.onReceiver)options.onReceiver(row);}
++  if(omit||options.evidence){const row={receiver:i,mask,omitted,B,candidates:ids.length,zeroCulls:zero,retained,nearFallbacks:fallback,semantics:'shadow-C',actualRetained:retained+omitted.length,actualPositiveOmissions:0};records.push(row);if(options.onReceiver)options.onReceiver(row);}
+  }
+- return {winds,counts,records};
++ return {winds,counts:actualCounts(counts,selectedSourceWork),shadowCounts:counts,selectedSourceWork,records,recordSemantics:'shadow-C',actualOmittedInflowBound:0};
+ }
+ function loadRows(states,winds){return states.map((s,i)=>{const f=winds[i].map(U=>A.effectiveThrust(f0,U)),w=F.wrench(f),torque=[w.t[0],w.t[1],0];return [...winds[i],...f,w.T,torque[0],torque[1],...F.rotate(s.slice(6,10),[0,0,w.T]),...F.rotate(s.slice(6,10),torque)];});}
+-function query(states,method,options={}){
+- const field=method==='B'?A.fields(states,'sum-rotor'):fields(states,method==='C',options);
++function query(states,options={}){
++ const field=fields(states,options);
+  const rows=loadRows(states,field.winds);let checksum=0;for(const row of rows)for(const x of row)checksum+=x;
+- return {rows,checksum,counts:field.counts||{candidates:field.candidates,rotorVisits:4*field.candidates,profileEvaluations:field.contributions},records:field.records||[]};
++ return {rows,checksum,counts:field.counts,shadowCounts:field.shadowCounts,selectedSourceWork:field.selectedSourceWork,records:field.records,recordSemantics:field.recordSemantics,actualOmittedInflowBound:field.actualOmittedInflowBound};
+ }
+ module.exports={f0,D,vi0,L,a,targets,allowances,Bcap,nextUp,sourceBound,fields,query};

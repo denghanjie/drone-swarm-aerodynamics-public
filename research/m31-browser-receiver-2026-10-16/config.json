@@ -1,0 +1,101 @@
+{
+  "status": "FROZEN_UNEXECUTED",
+  "sourceReferenceCommit": "cefe6c7bb47362e90135179d22a9721b6f03bb88",
+  "sourceReferenceDirectory": "research/m31-zero-screen-2026-10-16",
+  "scalarInflows": [
+    0,
+    5.960464477539063e-08,
+    9.5367431640625e-07,
+    1.52587890625e-05,
+    0.000244140625,
+    0.00390625,
+    0.0625,
+    0.1,
+    0.25,
+    0.5,
+    1,
+    1.5,
+    2,
+    2.5,
+    3,
+    4,
+    5,
+    6,
+    8,
+    10,
+    12,
+    16,
+    20,
+    24,
+    32,
+    40,
+    48,
+    64,
+    80,
+    96,
+    112,
+    128
+  ],
+  "savedCases": [
+    {
+      "id": "fresh1000",
+      "n": 1000
+    },
+    {
+      "id": "fresh5000",
+      "n": 5000
+    }
+  ],
+  "invalidGuards": [
+    "negative-inflow",
+    "quiet-NaN-inflow",
+    "positive-infinite-inflow",
+    "zero-induced-speed",
+    "negative-nominal-thrust"
+  ],
+  "batchOrder": [
+    "scalar32",
+    "invalid5",
+    "fresh1000",
+    "fresh5000"
+  ],
+  "validInputDomain": {
+    "inflowMinimum": 0,
+    "inflowMaximum": 128,
+    "nominalMinimum": 0.01,
+    "nominalMaximum": 0.1,
+    "inducedMinimum": 1,
+    "inducedMaximum": 10,
+    "claim": "Fixed nominal/induced constant bit patterns only",
+    "positiveAlphaMinimum": 7.52316384526264e-37,
+    "source": "All saved and scalar inflows validated before their dispatch, no omission/clipping"
+  },
+  "gates": {
+    "rotorTotalAbsoluteN": 1e-07,
+    "rootXAbsolute": 1e-06,
+    "hostResidualAbsolute": 2e-06,
+    "representedPowerRatioAbsolute": 2e-06,
+    "referenceBracketWidth": 2e-15,
+    "referenceResidualAbsolute": 1e-12,
+    "originalRotorDiagnosticN": 1e-12
+  },
+  "limits": {
+    "scientificWallSeconds": 180,
+    "cooperativeWallSeconds": 175,
+    "gpuBatchTimeoutMilliseconds": 30000,
+    "rawBytes": 33554432,
+    "failureReserveBytes": 2097152,
+    "reviewWallSeconds": 60,
+    "dispatches": 4,
+    "gpuValidRoots": 24032,
+    "gpuInvalidGuards": 5,
+    "gpuIterationReservation": 288384,
+    "hostBisectionRoots": 48096,
+    "hostIterationReservation": 4617216,
+    "fieldEvaluations": 0,
+    "integrationSteps": 0
+  },
+  "stopNewLaunchUTC": "2026-10-15T23:00:00Z",
+  "timingComparison": false,
+  "scope": "Receiver-only actual browser f32 feasibility on reused numerical inflows and frozen scalar probes; not physical, field, flight, speed, novelty or fresh full-flock qualification"
+}

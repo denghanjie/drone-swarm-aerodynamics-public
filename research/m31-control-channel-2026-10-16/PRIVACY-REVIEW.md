@@ -1,0 +1,9 @@
+# Publication review and transformation scope
+
+This additive package contains the new standalone source, fixed synthetic fixture, reviewed protocol, selected runtime hashes, actual decoded safe return, synthetic binary, public trace, lifecycle summaries, independent review, interpretation and viewer. Earlier frozen source/results remain unchanged.
+
+Only the strict fixed return envelope is retained publicly. Invalid arbitrary returns would be reduced to a bounded rejection projection; that path was not taken in the observed trial. The public event trace retains allowlisted fields and logical IDs. Request URLs/origins are normalized, header values are restricted, arbitrary console/error text is omitted, and process/profile/nonce/private-path values remain in private originals. The frozen source contract describes this transformation. Public hashes bind the published derivative bytes, not the private originals.
+
+The source, result documents and text artifacts are scanned before publication for private absolute paths, common access-token signatures, private-key markers and email addresses. Screenshot review shows only the local research visualization. No attachment, pasted chat, credential, unrelated page content or provider physical-data payload is published. Public source citations and scholarly metadata are retained. The loopback URL is the existing local presentation route.
+
+The saved checker verifies public-record consistency and exact synthetic bytes. It does not independently reconstruct the private trace transformation or inspect original private process records. Those limits remain visible. The synthetic payload contains no user data. This content review supports publication under the user's standing authorization; pattern scanning alone is not a complete privacy guarantee.

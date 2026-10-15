@@ -1,0 +1,19 @@
+# Preflight decisions and resolved draft differences
+
+No scientific execution has occurred. Static literal/constant encoding produced constant-encoding.json without model imports, root solves or saved scientific-input inspection. Syntax parsing used Node --check/Python ast.parse only. The original scope notes remain archived; current PROTOCOL/config/schema/source control the selected study.
+
+- Selected receiver-only scope before a full wake port. Prior broad f32 proposals are background, not execution instructions.
+- Initial float-input kernel rejected: retain it as source/rejected-v0-float-input.wgsl.txt. Current shader loads rawu32, rejects exponent/padding bits, then bitcasts finite values. No shader was compiled in either version.
+- Current four dispatches include32scalarprobes,5invalidguards,and4,000/20,000reusedrotorinputs. Earlier design memo's3dispatches/72,096newR/Q/Asolves reflect the initial sketch. Current R24,000roots are reused from priorIrecords; only32Rroots are newly solved. Q/Aeach24,032, so48,096newhostroots and4,617,216maximumhostiterations.
+- Independently parameterized alpha bisection avoids recomputing vi from packedf0. QusesdecodedUq/viq; AusesreturnedalphaGdirectly. The originalIAPI is not imported to solve a different parameter contract.
+- Atmost12Newton steps retain the original threshold. CapReacheddoesnotautomaticallyfail; independentx/residual/force/powergates decide. No after-the-fact iteration/threshold change.
+- Positivealphaadmission>=2^-120 excludes tiny/subnormal/reciprocal-overflow conditions before dispatch. All saved and scalarinputs must comply, no clipping/filtering.
+- New1e-7Ntotalrotor gate, Arootx/residual and Q-parameterpower gate are explicit. Original1e-12Nrotor compatibility remains a separately reported diagnostic. Original-rho/areapower is additionally reported, with nophysicalvalidationclaim.
+- Full rawGPUwords persist before decoding/checks. Q/Areturnedroots append to separateprefixfiles before comparison. Signederror attribution includesfinalmultiplication; componentabsolute maxima do not telescope.
+- Completeinitialization/batch promises have outer30sdeadlines, readbackalsohas30stimeout, andwholeprocessgrouphas180swatchdog with175scooperativeguard. Device-lossischeckedindependentlyofapparentlysuccessfulAPIresponses. No unsupportedbackendfallback/retry.
+
+Final static reviews and freeze will identify any remaining blocking gaps before publication and execution. Every closed preceding budget remains closed.
+
+Additional prefreeze fixes: the driver now receives/persists raw readback words before awaiting the pending error scope. Initialization phase/adapter/compiler/shader and attempted/submitted dispatch metadata are separately available on failure. Exact frozen runner HTML/JS/WGSL bytes are supplied by explicit browser routes. Code2 requires both12updates and finalstep>=thef32threshold. GPU and browser cleanup attempts are independent; the supervisor always cleans its own process group, even after normal leader exit, and reserves1.5sinside180sfor that operation. No shader/solver was run to select these fixes.
+
+Final protocol reconciliation also requires positive returned alpha for positive inputs and records/checks actual device buffer/dispatch limits as well as adapter limits. Playwright detached groups are now tracked at spawn before scientific work and cleaned independently by the supervisor; private PID records stay local. The final containment review records its disposition separately. Cleanup verifies the live executable and unique browser profile before signaling a surviving group; unknown identities fail qualification. Private registry and audit I/O errors are retained without suppressing the terminal ledger. The non-atomic OS supervision limits are disclosed in the protocol.

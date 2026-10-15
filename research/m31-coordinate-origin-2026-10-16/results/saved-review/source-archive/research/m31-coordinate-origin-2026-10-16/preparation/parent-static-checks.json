@@ -1,0 +1,55 @@
+{
+  "activity": "Source syntax/hash/layout only; no imports, generator, scientific model, shader compilation, browser or checker",
+  "priorPreparationFailure": "A Python bytecode syntax invocation could not write the default cache. It did not execute the script body. Replaced by in-memory AST parsing.",
+  "checks": [
+    {
+      "file": "research/m31-coordinate-origin-2026-10-16/source/run-once.py",
+      "check": "PythonASTparse",
+      "pass": true
+    },
+    {
+      "file": "research/m31-coordinate-origin-2026-10-16/source/experiment.cjs",
+      "check": "Node syntax only; no import/execution",
+      "pass": true
+    },
+    {
+      "file": "research/m31-coordinate-origin-2026-10-16/source/generator.cjs",
+      "check": "Node syntax only; no import/execution",
+      "pass": true
+    },
+    {
+      "file": "research/m31-coordinate-origin-2026-10-16/source/process-registry.cjs",
+      "check": "Node syntax only; no import/execution",
+      "pass": true
+    },
+    {
+      "file": "research/m31-coordinate-origin-2026-10-16/source/host.cjs",
+      "check": "Node syntax only; no import/execution",
+      "pass": true
+    },
+    {
+      "file": "research/m31-coordinate-origin-2026-10-16/source/browser.js",
+      "check": "Node syntax only; no import/execution",
+      "pass": true
+    },
+    {
+      "check": "Control literal file hash/bytes",
+      "pass": true
+    },
+    {
+      "file": "source/host.cjs",
+      "check": "Exact author handoff SHA",
+      "pass": true
+    },
+    {
+      "file": "source/generator.cjs",
+      "check": "Exact author handoff SHA",
+      "pass": true
+    },
+    {
+      "file": "source/coordinate.wgsl",
+      "check": "Exact author handoff SHA",
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,362 @@
+"""One saved failed-record integrity check. Never import scientific/runtime code."""
+import time
+START = time.monotonic()
+import os, sys, json, hashlib, stat
+from pathlib import Path
+
+BASE = Path(__file__).resolve().parents[2]
+REPO = BASE.parents[1]
+SOURCE = 'f12d8c836e7b991ec33e6de662d00ed05dcce33e'
+FREEZE = 'c0c6b2fda84567a76025b2e5f06832cbc1dd5811c23a246df5623f46baf8f8a9'
+REVIEW_FILES = ['review/IMPLEMENTATION.md', 'review/STATIC-CHALLENGE.md',
+                'review/observe-review.py', 'review/source/check-records.py']
+LOCK = b'One saved failed-record review reserved. Permanent; no retry.\n'
+deadline = START + 110
+report = {'kind': 'saved-runtime-failure-record-review', 'sourceCommit': SOURCE,
+          'sourceFreezeSHA256': FREEZE, 'completed': False, 'integrityVerified': False,
+          'terminalFailureVerified': False, 'decisionVerified': False, 'qualified': False,
+          'status': 'incomplete', 'checks': 0, 'errors': [], 'numericalCodeImported': False,
+          'numericalEvaluations': 0, 'generatedInputs': 0, 'rootSolves': 0,
+          'browserLaunches': 0, 'gpuDispatches': 0, 'subprocesses': 0}
+
+def require(ok, code):
+    report['checks'] += 1
+    if not ok:
+        raise RuntimeError(code)
+    if time.monotonic() >= deadline:
+        raise TimeoutError('Saved review deadline')
+
+def digest(data):
+    return hashlib.sha256(data).hexdigest()
+
+def safe_file(root, relative):
+    p = Path(relative)
+    require(isinstance(relative, str) and relative and not p.is_absolute()
+            and all(x not in ['', '.', '..'] for x in relative.split('/')), 'relative-evidence-path')
+    target = root / p
+    require(target.resolve() == target and stat.S_ISREG(target.lstat().st_mode), 'regular-contained-file')
+    return target
+
+def read_path(target, cap=1048576):
+    require(stat.S_ISREG(target.lstat().st_mode) and target.stat().st_size <= cap, 'bounded-regular-input')
+    with target.open('rb') as handle:
+        data = handle.read(cap + 1)
+    require(len(data) <= cap, 'bounded-input-growth')
+    return data
+
+def read(relative, cap=1048576):
+    return read_path(safe_file(BASE, relative), cap)
+
+def load(relative):
+    return json.loads(read(relative))
+
+def check_pin(root, pin):
+    require(set(pin) == {'path', 'bytes', 'sha256'} and type(pin['bytes']) is int
+            and 0 <= pin['bytes'] <= 16777216 and isinstance(pin['sha256'], str)
+            and len(pin['sha256']) == 64, 'pin-schema')
+    target = safe_file(root, pin['path'])
+    require(target.stat().st_size == pin['bytes'], 'pinned-size')
+    count = 0
+    hashed = hashlib.sha256()
+    with target.open('rb') as handle:
+        while True:
+            part = handle.read(65536)
+            if not part:
+                break
+            count += len(part)
+            require(count <= pin['bytes'], 'pinned-growth')
+            hashed.update(part)
+    require(count == pin['bytes'] and hashed.hexdigest() == pin['sha256'], 'pinned-bytes')
+
+def check_pins(root, pins):
+    require(isinstance(pins, list) and len(pins) <= 256
+            and len({p['path'] for p in pins}) == len(pins), 'unique-pin-inventory')
+    for pin in pins:
+        check_pin(root, pin)
+
+def names(relative):
+    directory = BASE / relative
+    require(directory.is_dir() and not directory.is_symlink(), 'regular-evidence-directory')
+    result = []
+    for item in directory.iterdir():
+        require(len(result) < 256 and stat.S_ISREG(item.lstat().st_mode), 'flat-evidence-inventory')
+        result.append(item.name)
+    return sorted(result)
+
+def private_files(manifest):
+    locator = Path(os.environ['M31_RUNTIME_REVIEW_PRIVATE_LOCATIONS'])
+    require(locator.is_absolute(), 'absolute-private-locator')
+    locator_data = read_path(locator, 16384)
+    require(digest(locator_data) == manifest['privateLocatorSHA256'], 'private-locator-binding')
+    locations = json.loads(locator_data)
+    require(len(locations) == len(manifest['privateGroups']) == 2, 'two-private-groups')
+    output = {}
+    for expected, actual in zip(manifest['privateGroups'], locations):
+        require(actual['files'] == expected['files'], 'private-inventory-binding')
+        root = Path(actual['path'])
+        require(root.is_absolute() and root.is_dir() and not root.is_symlink(), 'private-directory')
+        root = root.resolve()  # macOS /var is an alias; final files must be canonical.
+        require(sorted(x.name for x in root.iterdir()) == sorted(x['name'] for x in expected['files']), 'private-exact-files')
+        output[expected['label']] = {}
+        for item in expected['files']:
+            target = safe_file(root, item['name'])
+            data = read_path(target, 65536)
+            require(len(data) == item['bytes'] and digest(data) == item['sha256'], 'private-pinned-bytes')
+            output[expected['label']][item['name']] = data
+    return output
+
+try:
+    require(len(sys.argv) == 1, 'fixed-checker-command')
+    require(os.getppid() == int(os.environ['M31_SAVED_REVIEW_PARENT_PID']), 'direct-review-observer')
+    deadline = min(deadline, float(os.environ['M31_SAVED_REVIEW_DEADLINE']))
+    require(read('review/results/sole-review.lock') == LOCK, 'permanent-review-lock')
+    rb = read('review/review-freeze.json')
+    require(digest(rb) == os.environ['RESEARCH_REVIEW_FREEZE_SHA256'], 'review-freeze-authority')
+    rf = json.loads(rb)
+    require(rf['kind'] == 'frozen-saved-failure-record-review' and rf['sourceCommit'] == SOURCE
+            and rf['sourceFreezeSHA256'] == FREEZE and rf['invocations'] == 1
+            and rf['wallSeconds'] == 120 and rf['outputByteCap'] == 33554432, 'review-freeze-contract')
+    require(sorted(p['path'] for p in rf['files']) == sorted(REVIEW_FILES), 'review-source-inventory')
+    check_pins(BASE, rf['files'])
+    require(rf['scienceManifest']['path'] == 'review/science-manifest.json', 'manifest-path')
+    check_pin(BASE, rf['scienceManifest'])
+    manifest = load('review/science-manifest.json')
+    require(manifest['kind'] == 'sealed-terminal-failed-runtime-science' and manifest['sourceCommit'] == SOURCE
+            and manifest['sourceFreezeSHA256'] == FREEZE and manifest['scientificStatus'] == 'failed'
+            and manifest['scientificQualified'] is False and manifest['decisionVerified'] is False, 'manifest-contract')
+    fb = read('freeze.json')
+    require(digest(fb) == FREEZE, 'science-freeze')
+    frozen = json.loads(fb)
+    require(frozen['files'] == manifest['sourceFiles'] and len(frozen['files']) == 57
+            and frozen['scientificInvocations'] == frozen['savedReviewInvocations'] == 1
+            and frozen['savedReviewWallSeconds'] == 120 and frozen['savedReviewOutputByteCap'] == 33554432, 'science-freeze-scope')
+    check_pins(REPO, frozen['files'])
+    check_pins(BASE, manifest['terminalFiles'])
+    require(len(manifest['terminalFiles']) == 32, 'terminal-pin-count')
+    for folder, count in [('raw', 22), ('results', 7), ('publication', 2)]:
+        expected = sorted(p['path'].split('/', 1)[1] for p in manifest['terminalFiles'] if p['path'].startswith(folder + '/'))
+        require(len(expected) == count and names(folder) == expected, 'exact-terminal-inventory')
+    require('capture-launch.lock' in [p['path'] for p in manifest['terminalFiles']], 'capture-lock-pinned')
+    private = private_files(manifest)
+    worker, budget, relay, capture = [load('results/' + name + '.json') for name in ['result', 'budget', 'wrapper', 'capture']]
+    started, cfg, runtime = load('raw/started.json'), load('config.json'), load('runtime-provenance.json')
+    require(read('raw/result.json') == read('results/result.json'), 'terminal-worker-copies')
+    require(digest(read('results/result.json')) == 'a6a03d917e23fb7172f9c036441b0c05e9d92381f79803dbe1099bdf3d827acf', 'expected-terminal-worker')
+    require(started['sourceCommit'] == worker['sourceCommit'] == SOURCE and started['freezeSha256'] == FREEZE
+            and started['config'] == cfg and started['runtimePinsVerified'] == runtime['pins'], 'recorded-source-runtime')
+    require(started['node'] == 'v24.19.0' and started['platform'] == 'darwin' and started['architecture'] == 'arm64', 'recorded-runtime-platform')
+    require(worker['terminal'] is True and worker['status'] == 'failed' and worker['qualified'] is False
+            and worker['cases'] == [] and worker['context'] == 'GPU controls-pairs' and 'decision' not in worker, 'failure-boundary')
+    expected_error = {'name': 'Error', 'message': 'Complete persisted raw readback',
+                      'detail': {'name': 'controls-pairs-gpu-output.u32', 'complete': False, 'expected': 3840}}
+    require(worker['error'] == expected_error, 'exact-persistence-failure')
+    require(worker['checks'] == 6848 and 0 < worker['elapsedSeconds'] < 285, 'worker-recorded-time')
+    raw_pins = {p['path'].split('/', 1)[1]: p for p in manifest['terminalFiles'] if p['path'].startswith('raw/')}
+    require(sorted(p['name'] for p in worker['files']) == sorted(set(raw_pins) - {'result.json'}), 'worker-pre-result-inventory')
+    for pin in worker['files']:
+        require(pin['bytes'] == raw_pins[pin['name']]['bytes'] and pin['sha256'] == raw_pins[pin['name']]['sha256'], 'worker-raw-receipt')
+    require('controls-pairs-gpu-output.u32' not in raw_pins, 'no-persisted-gpu-binary')
+    expected_counts = {'constantSetups': 1, 'controlBuilds': 1, 'controlViConstructions': 8,
+                       'controlPairConstruction': 15, 'controlRootConstruction': 146, 'controlReferenceCalls': 1,
+                       'controlPairEvaluations': 30, 'referenceRootAttempts': 292, 'referenceBisectionSolves': 216,
+                       'referenceBisectionIterations': 11330, 'hostOnlyCalls': 1, 'hostAdmissionControls': 13,
+                       'prepareStates': 7, 'decoderControls': 16, 'gpuDispatches': 1,
+                       'gpuActiveInvocations': 15, 'gpuLaunchedInvocations': 64}
+    require(worker['counts'] == expected_counts, 'exact-reported-work-boundary')
+    for name, value in expected_counts.items():
+        require(type(value) is int and 0 <= value <= cfg['workLimits'][name], 'recorded-work-cap')
+    reference, host = load('raw/controls-reference-status.json'), load('raw/controls-host-only-result.json')
+    require(all(x['completed'] is True and x['pass'] is True and x['status'] == 'complete' for x in [reference, host]), 'saved-cpu-completion-reports')
+    require(reference['failure'] is None and reference['counters'] == {'receiversAttempted': 0, 'receiversCompleted': 0,
+            'centerChecks': 0, 'eligiblePairs': 0, 'rotorVisits': 30, 'terminalSymbols': 0,
+            'rootAttempts': 292, 'bisectionSolves': 216, 'bisectionIterations': 11330, 'bodyAssemblies': 0}, 'saved-reference-counters')
+    require(len(host['records']) == 13 and all(x['rejected'] is True for x in host['records'])
+            and len(host['decoder']) == 16 and all(x['pass'] is True for x in host['decoder'])
+            and host['counters'] == {'admissionControls': 13, 'decoderControls': 16}, 'saved-host-report-coverage')
+    metadata = load('raw/control-metadata.json')
+    require(metadata['pairs']['count'] == 15 and metadata['roots']['count'] == 146
+            and len(metadata['roots']['definitions']) == 146, 'saved-control-coverage')
+    for name, size in {'controls-pairs-input.u32': 3840, 'controls-pairs-original.f64': 1920,
+                       'controls-roots-input.u32': 37376, 'controls-roots-original.f64': 2336,
+                       'controls-reference-R-roots.bin': 14016, 'controls-reference-Q-roots.bin': 14016,
+                       'controls-pairs-constants.u32': 128}.items():
+        require(raw_pins[name]['bytes'] == size, 'saved-binary-shape-only')
+    require(worker['browserVersion'] == runtime['chromeBundleVersion'] == runtime['chromeFrameworkVersion'] == '155.0.8059.80', 'recorded-runtime-version')
+    before, after = load('raw/browser-runtime-before-launch.json'), load('raw/browser-runtime-after-launch.json')
+    require(before == after and before['completed'] is True and before['explicitExecutable'] is True
+            and before['frameworkVersion'] == worker['browserVersion'] and before['currentFile'] is None, 'two-saved-runtime-passes')
+    expected_chrome = [{k: p[k] for k in ['label', 'bytes', 'sha256']} for p in runtime['chromePins']]
+    require(len(expected_chrome) == 6 and before['files'] == expected_chrome
+            and before['bytesChecked'] == sum(p['bytes'] for p in expected_chrome) == 520899672, 'six-recorded-runtime-pins')
+    served = load('raw/served-source-contract.json')
+    for pin in served['files']:
+        require(pin['name'] in ['browser.html', 'browser.js', 'body.wgsl'], 'served-source-name')
+        data = read('source/' + pin['name'])
+        require(len(data) == pin['bytes'] and digest(data) == pin['sha256'], 'saved-served-source-binding')
+    capability, api, failure = load('raw/capability.json'), load('raw/controls-pairs-gpu-api.json'), load('raw/browser-failure-evidence.json')
+    zero_cost = {'pipelineCreations': 3, 'bufferCreations': 0, 'allocatedBytes': 0, 'uploadedBytes': 0,
+                 'readbackBytes': 0, 'dispatches': 0, 'activeInvocations': 0, 'launchedInvocations': 0,
+                 'liveBufferBytes': 0, 'peakLiveBufferBytes': 0}
+    after_cost = dict(zero_cost, bufferCreations=4, allocatedBytes=11648, uploadedBytes=3968,
+                      dispatches=1, activeInvocations=15, launchedInvocations=64, peakLiveBufferBytes=11648)
+    require(capability == worker['capability'] and capability['supported'] is True and capability['compiled'] is True
+            and capability['stage'] == 'ready' and capability['costs'] == zero_cost
+            and capability['messages'] == [] and all(capability[k] is None for k in ['pipelineError', 'validation', 'loss', 'uncaptured']), 'saved-three-pipeline-admission')
+    dispatch = {'key': 'controls-pairs', 'entry': 'controlPairs', 'count': 15, 'groups': 1, 'submitted': True,
+                'readbacks': [{'name': 'output', 'bytes': 3840, 'persisted': False}], 'completed': False}
+    require(api['dispatch'] == failure['dispatch'] == dispatch and api['error'] == {'name': 'TypeError', 'message': 'Failed to fetch'}
+            and api['validation'] is None and api['cleanupErrors'] == [], 'saved-submitted-fetch-failure')
+    require(api['before'] == zero_cost and api['after'] == after_cost and api['health'] == failure['health']
+            and api['health']['costs'] == after_cost and api['health']['seen'] == ['controls-pairs']
+            and api['health']['stage'] == 'failed-batch', 'saved-api-cost-boundary')
+    require(len(api['allocated']) == 4 and [x['size'] for x in api['allocated']] == [128, 3840, 3840, 3840]
+            and all(x['destroyed'] is True for x in api['allocated']), 'saved-buffer-destruction')
+    require(worker['gpuShutdown'] == {'deviceDestroyed': True, 'costs': after_cost}, 'saved-device-shutdown')
+    require(worker['sinkClosure'] == {'activeWrites': 0, 'reservations': [{'name': 'controls-pairs-gpu-output.u32',
+            'size': 3840, 'started': False, 'complete': False}], 'closed': True}, 'saved-sink-never-started')
+    require(after_cost['peakLiveBufferBytes'] <= cfg['limits']['rawGpuLiveBytes'], 'recorded-gpu-live-cap')
+    require(relay['terminal'] is True and relay['nodeInvocations'] == 1 and relay['nodeExitCode'] == 1
+            and relay['nodeReaped'] is True and relay['pipeCaptureComplete'] is True and relay['errors'] == [], 'actual-relay-node-failure-record')
+    stdout, stderr = read('results/scientific-stdout.txt'), read('results/scientific-stderr.txt')
+    require(len(stdout) == relay['stdoutBytes'] == 674 and len(stderr) == relay['stderrBytes'] == 0, 'persisted-node-pipes')
+    terminal_stdout = json.loads(stdout)
+    require(terminal_stdout['status'] == 'failed' and terminal_stdout['qualified'] is False
+            and terminal_stdout['error'] == worker['error'] and terminal_stdout['counts'] == worker['counts']
+            and terminal_stdout['elapsedSeconds'] == worker['elapsedSeconds'] and terminal_stdout['rawBytes'] == 127681, 'node-summary-binding')
+    require(budget['terminal'] is True and budget['active'] is False and budget['status'] == 'closed'
+            and budget['processClosureComplete'] is True and budget['outputAccountingComplete'] is True
+            and budget['attempts'] == budget['wrapperInvocations'] == 1 and budget['wrapperExitCode'] == budget['exitCode'] == 1,
+            'closed-failed-observer-record')
+    require(budget['wrapperReaped'] is True and budget['wrapperGroupAbsent'] is True
+            and budget['wrapperPipeCaptureComplete'] is True and budget['registryComplete'] is True
+            and budget['registeredDetachedGroups'] == budget['detachedGroupsConfirmedAbsent'] == 1
+            and budget['wrapperKillSent'] is False and budget['detachedGroupKillSignals'] == 0
+            and budget['cleanupErrorObserved'] is False and budget['rssProbeErrors'] == 0, 'reported-science-closure')
+    require(budget['rssSamples'] == 34 and budget['peakObservedOwnedRSSBytes'] == 1143390208
+            and budget['peakObservedOwnedRSSBytes'] <= cfg['limits']['ownedRSSBytes'] == budget['ownedRSSByteCap']
+            and budget['workStopSeconds'] == 296 and budget['cleanupStopSeconds'] == 299 and budget['wallCapSeconds'] == 300,
+            'recorded-science-resource-envelope')
+    expected_budget_errors = [{'phase': 'final-evidence', 'reason': 'Actual successful relay/Node exits', 'type': 'RuntimeError'}]
+    require(budget['errors'] == expected_budget_errors and budget['candidateLifecycleVerified'] is False
+            and budget['reportedScientificQualified'] is False and budget['reportedScientificStatus'] == 'failed', 'expected-inner-candidate-rejection')
+    summary = json.loads(private['capture']['observer-stdout.bin'])
+    require(private['capture']['observer-stderr.bin'] == b'' and len(private['capture']['observer-stdout.bin']) == 723
+            and summary['budgetSHA256'] == digest(read('results/budget.json'))
+            and summary['budgetBytes'] == len(read('results/budget.json')) == 2763 and summary['summaryBytes'] == 723
+            and summary['errors'] == expected_budget_errors and summary['wrapperExitCode'] == 1
+            and summary['candidateLifecycleVerified'] is False and summary['outputAccountingComplete'] is True, 'private-observer-summary-binding')
+    cleanup = json.loads(private['science']['cleanup.json'])
+    registry = [json.loads(line) for line in private['science']['processes.ndjson'].splitlines()]
+    require(len(registry) == 4 and cleanup['entries'] == registry and len(cleanup['browsers']) == 1, 'private-registry-cleanup-binding')
+    require([x['phase'] for x in registry] == ['node-intent', 'node-spawned', 'spawn-intent', 'spawned']
+            and all(x['version'] == 1 for x in registry) and len({x['nonce'] for x in registry}) == 1, 'private-registration-sequence')
+    browser = next(iter(cleanup['browsers'].values()))
+    require(browser['seen'] is True and browser['absent'] is True and browser['killSent'] is False
+            and browser['pid'] == registry[3]['pid'] and browser['executable'] == registry[2]['ownership']['executable']
+            and browser['profile'] == registry[2]['ownership']['profileArgument']
+            and registry[2]['ownership'] == registry[3]['ownership']
+            and cleanup['relayPID'] == registry[1]['pgid'] and registry[0]['detached'] is False
+            and registry[1]['detached'] is False and registry[2]['detached'] is True and registry[3]['detached'] is True,
+            'private-owned-closure-record')
+    private_errors = private['science']['processes.ndjson.errors.json']
+    require(len(private_errors) == worker['privateErrorReceipt']['bytes'] == 773
+            and digest(private_errors) == worker['privateErrorReceipt']['sha256'], 'private-error-receipt-binding')
+    private_error_records = json.loads(private_errors)
+    require(len(private_error_records) == 1 and {k: private_error_records[0][k] for k in ['name', 'message', 'detail']} == expected_error
+            and private_error_records[0]['label'] == worker['context'], 'private-saved-error-identity')
+    require(private['science']['relay-stdout.bin'] == private['science']['relay-stderr.bin'] == b'', 'private-empty-relay-pipes')
+    require(capture['terminal'] is True and capture['active'] is False and capture['observerInvocations'] == 1
+            and capture['actualObserverExitCode'] == 1 and capture['observerReaped'] is True
+            and capture['observerPipeCaptureComplete'] is True and capture['observerSummaryValidated'] is True
+            and capture['outputAccountingComplete'] is True and capture['directObserverKillSent'] is False
+            and capture['descendantCleanupInferredFromCallerKill'] is False, 'actual-capture-failure-and-closure-record')
+    require(capture['observerSummarySHA256'] == digest(private['capture']['observer-stdout.bin'])
+            and capture['observerBudgetSHA256'] == digest(read('results/budget.json'))
+            and capture['errors'] == [{'phase': 'validate-observer', 'reason': 'Observed whole lifecycle candidate conjunction', 'type': 'RuntimeError'}]
+            and capture['candidateWholeLifecycleVerified'] is False, 'expected-caller-candidate-rejection')
+    require(worker['elapsedSeconds'] < budget['wallSecondsBeforeFinalRecords'] < capture['observerFullElapsedSeconds'] < 300
+            and capture['observerFullElapsedSeconds'] == 2.0539421669999998, 'full-actual-observer-interval')
+    publication, output = load('publication/science-capture-execution.json'), load('publication/science-capture-output.json')
+    require(digest(read('publication/science-capture-execution.json')) == '64946543e2e8660e7ce9b57e7f2d7c9f0e9032c66d4f2bfe8396630425c939ed'
+            and publication['kind'] == 'actual-science-capture-tool-completion' and publication['actualCaptureExitCode'] == 1
+            and publication['toolSessionCompleted'] is True and publication['completeSummaryBindingVerified'] is True
+            and publication['terminalFailureObserved'] is True and publication['observedWholeLifecycleVerified'] is False
+            and publication['scientificQualified'] is False, 'actual-tool-terminal-failure')
+    require(publication['captureSummarySHA256'] == digest(read('publication/science-capture-output.json'))
+            and publication['captureSummaryBytes'] == len(read('publication/science-capture-output.json')) == 493
+            and publication['captureReceiptSHA256'] == output['captureReceiptSHA256'] == digest(read('results/capture.json'))
+            and publication['captureReceiptBytes'] == output['captureReceiptBytes'] == len(read('results/capture.json')) == 2187,
+            'actual-tool-summary-receipt-binding')
+    require(output['actualObserverExitCode'] == 1 and output['observerFullElapsedSeconds'] == capture['observerFullElapsedSeconds']
+            and output['candidateWholeLifecycleVerified'] is False and output['outputAccountingComplete'] is True, 'capture-stdout-copy')
+    for record in [budget, capture, summary, publication]:
+        require(record['sourceCommit'] == SOURCE and record['sourceFreezeSHA256'] == FREEZE, 'all-lifecycle-source-bindings')
+    for record in [budget, capture, summary, output]:
+        require(record['qualified'] is False and record['wholeLifecycleVerified'] is False, 'no-failed-candidate-upgrade')
+    totals = manifest['phaseBytes']
+    result_pins = [p for p in manifest['terminalFiles'] if p['path'].startswith('results/')]
+    pre_pins = [p for p in result_pins if p['path'] not in ['results/budget.json', 'results/capture.json']]
+    S, P, B, O = sum(p['bytes'] for p in pre_pins), sum(len(x) for x in private['science'].values()), len(read('results/budget.json')), len(private['capture']['observer-stdout.bin'])
+    require(len(raw_pins) == totals['rawFiles'] == budget['rawFiles'] == 22
+            and sum(p['bytes'] for p in raw_pins.values()) == totals['rawBytes'] == budget['rawBytes'] == 127681, 'final-raw-phase-accounting')
+    require(len(pre_pins) == totals['preObserverResultFiles'] == budget['resultDirectoryFiles'] == 5
+            and S == totals['preObserverResultBytes'] == budget['resultDirectoryBytes'] == 8711
+            and P == totals['privateScienceBytes'] == budget['privateDiagnosticBytes'] == 3548
+            and len(private['science']) == totals['privateScienceFiles'] == budget['privateDiagnosticFiles'] == 5,
+            'pre-observer-phase-accounting')
+    require(B == totals['observerBudgetBytes'] == budget['budgetBytes'] == 2763
+            and O == totals['observerSummaryBytes'] == budget['observerSummaryBytes'] == 723
+            and S + P + B + O == totals['observerAccountedTotal'] == budget['accountedTotalResultBytes']
+            == capture['observedInnerAccountedResultBytes'] == summary['accountedTotalResultBytes'] == 15745,
+            'inner-exact-s-p-b-o-total')
+    L, C, F = len(read('capture-launch.lock')), len(read('results/capture.json')), len(read('publication/science-capture-output.json'))
+    require(L == totals['callerLockBytes'] == capture['captureLockBytes'] == 60
+            and C == totals['callerReceiptBytes'] == capture['receiptBytes'] == 2187
+            and F == totals['callerSummaryBytes'] == capture['callerSummaryBytes'] == output['summaryBytes'] == 493
+            and totals['callerStderrBytes'] == capture['stderrBytesRetained'] == capture['stderrBytesObserved'] == 0,
+            'caller-additional-phase-bytes')
+    require(S + P + B + O + L + C + F == totals['callerAccountedTotal'] == capture['accountedCombinedResultBytes']
+            == output['accountedCombinedResultBytes'] == 18485
+            and len(result_pins) == totals['currentResultFiles'] == 7
+            and sum(p['bytes'] for p in result_pins) == totals['currentResultBytes'] == S + B + C == 13661,
+            'final-caller-vs-directory-accounting')
+    require(capture['stdoutBytesObserved'] == capture['stdoutBytesRetained'] == capture['privateCaptureBytes'] == O
+            and capture['observedCallerArtifactBytes'] == O + L + C + F == 3463, 'captured-summary-counted-once')
+    require(budget['rawBytes'] <= cfg['limits']['rawBytes'] == budget['rawByteCap']
+            and capture['accountedCombinedResultBytes'] <= cfg['limits']['resultBytes'] == budget['resultByteCap'], 'original-byte-envelopes')
+    require(read('results/sole-launch.lock') == b'One science invocation reserved. Permanent; no retry.\n'
+            and read('capture-launch.lock') == b'One external science capture reserved. Permanent; no retry.\n', 'unchanged-science-locks')
+    # Repeat byte verification only, detecting evidence changes during this one check.
+    check_pins(REPO, frozen['files'])
+    check_pins(BASE, manifest['terminalFiles'])
+    check_pins(BASE, rf['files'])
+    check_pin(BASE, rf['scienceManifest'])
+    private_files(manifest)
+    require(read('review/review-freeze.json') == rb and read('freeze.json') == fb, 'freezes-stable')
+    report.update(completed=True, integrityVerified=True, terminalFailureVerified=True,
+                  status='terminal-failure-record-integrity-verified',
+                  reviewFreezeSHA256=digest(rb), scienceManifestSHA256=rf['scienceManifest']['sha256'],
+                  checkedSourcePins=57, checkedTerminalPins=32, checkedPrivateFiles=7,
+                  phaseBytes=totals, actualScienceExitCodes={'capture': 1, 'observer': 1, 'relay': 1, 'node': 1},
+                  reportedScienceProcessClosureComplete=True, observedScienceFullElapsedSeconds=capture['observerFullElapsedSeconds'],
+                  savedCPUControls='Reported complete; saved records/bytes checked without numerical recomputation.',
+                  savedGPUStage='Three pipelines admitted; first pair-control dispatch submitted15active/64lanes; fetch failed; no output persisted; sink POST never started.',
+                  missingStages=['GPU control roots', 'control handoff', 'control assessment', 'main-family generation', 'main GPU/reference/handoff/assessment'],
+                  limits=['Record integrity only: no independent numeric, physical, accuracy or speed validation.',
+                          'readbackBytes0 records persistence accounting, not whether GPU mapping was reached.',
+                          'Historical process closure and actual tool exit rely on sealed saved receipts; old processes are not reprobed.',
+                          'Private diagnostics were checked without publishing contents, paths, process IDs or launch authority.'])
+except BaseException as error:
+    report['status'] = 'review-failed'
+    report['errors'].append({'type': type(error).__name__, 'code': str(error) if type(error) is RuntimeError else 'saved-record-processing-failed'})
+
+report['elapsedSecondsBeforeReport'] = time.monotonic() - START
+encoded = (json.dumps(report, sort_keys=True) + '\n').encode()
+require(len(encoded) <= 65536, 'review-report-cap')
+with (BASE / 'review/results/review.json').open('xb') as handle:
+    require(handle.write(encoded) == len(encoded), 'complete-review-report')
+summary = (json.dumps({'status': report['status'], 'integrityVerified': report['integrityVerified'],
+                       'decisionVerified': False, 'qualified': False, 'reportBytes': len(encoded)}) + '\n').encode()
+if os.write(sys.stdout.fileno(), summary) != len(summary):
+    os._exit(125)
+raise SystemExit(0 if report['integrityVerified'] and not report['errors'] else 1)

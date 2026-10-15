@@ -1,0 +1,114 @@
+{
+  "status": "SELECTED_UNEXECUTED_PENDING_FINAL_REVIEW",
+  "scope": "Prepared-geometry wake terms and one ascending-source materialized-term reduction for four exposed receiver rows; no roots, full field, integration or timing comparison",
+  "parentResultCommit": "2ba59cc634c4634011aa78df4caceda399761efc",
+  "sourceReferenceDirectory": "research/m31-zero-screen-2026-10-16",
+  "sourceCase": "fresh5000",
+  "nSources": 5000,
+  "receiverIds": [
+    27,
+    445,
+    4500,
+    988
+  ],
+  "nSlots": 80000,
+  "selectionSha256": "00bfae2e0d0cc8cfc811556ea549fe69399d45882693b760f612e15f8daa125f",
+  "gates": {
+    "wakeForceAllocationN": 1e-07,
+    "referenceAllowanceMps": 1e-12,
+    "requireAllCodesEqual": true,
+    "chargeAbsoluteTermErrors": true,
+    "exactDyadicGate": true
+  },
+  "limits": {
+    "scientificWallSeconds": 60,
+    "cooperativeWallSeconds": 53,
+    "gpuBatchTimeoutMilliseconds": 10000,
+    "rawBytes": 67108864,
+    "failureReserveBytes": 4194304,
+    "reviewWallSeconds": 60,
+    "dispatches": 3,
+    "gpuPairSlots": 80000,
+    "gpuControlSlots": 16,
+    "gpuSumSlots": 16,
+    "referencePairSlots": 160000,
+    "axisRotations": 5000,
+    "offsetRotations": 16,
+    "roots": 0,
+    "integrationSteps": 0,
+    "gpuLaunchedInvocations": 80128,
+    "gpuPaddingInvocations": 96,
+    "gpuSumReadReservation": 80000,
+    "originalStateAdmissions": 5000,
+    "originalQuaternionNorms": 5000,
+    "originalAxisRotations": 5000,
+    "originalOffsetRotations": 16,
+    "RAxisMetrics": 5000,
+    "QAxisMetrics": 5000,
+    "packedFloatWords": 40080,
+    "decodedNodeAdmissions": 5000,
+    "decodedOffsetAdmissions": 16,
+    "RPairSlots": 80000,
+    "QPairSlots": 80000,
+    "RCenterChecks": 19996,
+    "QCenterChecks": 19996,
+    "RWorldPoints": 16,
+    "QWorldPoints": 16,
+    "RRotorVisits": 79984,
+    "QRotorVisits": 79984,
+    "RProfileEvaluations": 79984,
+    "QProfileEvaluations": 79984,
+    "RSumTermVisits": 79984,
+    "QSumTermVisits": 79984
+  },
+  "stopNewLaunchUTC": "2026-10-15T23:00:00Z",
+  "timingComparison": false,
+  "assessmentReservations": {
+    "R": {
+      "savedCodeComparisons": 80000,
+      "savedInflowComparisons": 16,
+      "referenceSumComparisons": 16,
+      "RExactStoredTermAdds": 80000,
+      "RExactStoredSumGates": 48
+    },
+    "Q": {
+      "packedCodeComparisons": 80000,
+      "packingDyadicTermRows": 80000,
+      "referenceSumComparisons": 32,
+      "packingExactStoredTermAdds": 160000,
+      "QExactStoredSumGates": 32
+    },
+    "controls": {
+      "controlRecordsChecked": 16,
+      "numericFieldsChecked": 192
+    },
+    "terms": {
+      "gpuTermRecordsChecked": 80000,
+      "numericFieldsChecked": 960000,
+      "gpuDyadicTermRows": 80000,
+      "gpuExactStoredTermAdds": 80000
+    },
+    "serial": {
+      "serialRecordsChecked": 16,
+      "serialDyadicGates": 16
+    }
+  },
+  "assessmentLimits": {
+    "savedCodeComparisons": 80000,
+    "savedInflowComparisons": 16,
+    "referenceSumComparisons": 48,
+    "RExactStoredTermAdds": 80000,
+    "RExactStoredSumGates": 48,
+    "packedCodeComparisons": 80000,
+    "packingDyadicTermRows": 80000,
+    "packingExactStoredTermAdds": 160000,
+    "QExactStoredSumGates": 32,
+    "controlRecordsChecked": 16,
+    "numericFieldsChecked": 960192,
+    "gpuTermRecordsChecked": 80000,
+    "gpuDyadicTermRows": 80000,
+    "gpuExactStoredTermAdds": 80000,
+    "serialRecordsChecked": 16,
+    "serialDyadicGates": 16
+  }
+}

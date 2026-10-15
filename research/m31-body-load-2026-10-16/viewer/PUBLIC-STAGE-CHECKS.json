@@ -1,0 +1,100 @@
+{
+  "scope": "Public source staging hash/import/link checks only; no binder, evidence decoding, browser or scientific execution.",
+  "passed": true,
+  "checks": [
+    {
+      "name": "Staged bytes index.html",
+      "pass": true
+    },
+    {
+      "name": "Staged bytes style.css",
+      "pass": true
+    },
+    {
+      "name": "Staged bytes app.js",
+      "pass": true
+    },
+    {
+      "name": "Staged bytes scene.js",
+      "pass": true
+    },
+    {
+      "name": "Staged bytes evidence.js",
+      "pass": true
+    },
+    {
+      "name": "Staged bytes adapter.js",
+      "pass": true
+    },
+    {
+      "name": "Staged bytes package.json",
+      "pass": true
+    },
+    {
+      "name": "Staged bytes build-bindings.cjs",
+      "pass": true
+    },
+    {
+      "name": "Staged bytes viewer-artifact.json",
+      "pass": true
+    },
+    {
+      "name": "Staged bytes DATA-CONTRACT.md",
+      "pass": true
+    },
+    {
+      "name": "Staged bytes README.md",
+      "pass": true
+    },
+    {
+      "name": "Staged bytes QA-PLAN.md",
+      "pass": true
+    },
+    {
+      "name": "adapter.js import ./evidence.js",
+      "pass": true
+    },
+    {
+      "name": "app.js import ./adapter.js",
+      "pass": true
+    },
+    {
+      "name": "app.js import ./evidence.js",
+      "pass": true
+    },
+    {
+      "name": "app.js import ./scene.js",
+      "pass": true
+    },
+    {
+      "name": "scene.js import ../../../outputs/step02b-source/vendor/three.module.js",
+      "pass": true
+    },
+    {
+      "name": "scene.js import ../../../outputs/step02b-source/vendor/OrbitControls.js",
+      "pass": true
+    },
+    {
+      "name": "Historical link absolute resolution",
+      "pass": true
+    },
+    {
+      "name": "No staged evidence or request",
+      "pass": true
+    },
+    {
+      "name": "Stage artifact unbound",
+      "pass": true
+    },
+    {
+      "name": "three.module.js dependency ./three.core.js",
+      "pass": true
+    },
+    {
+      "name": "OrbitControls.js dependency three",
+      "pass": true
+    }
+  ],
+  "ledgerSHA256": "0363a77a3fcdde94834e1ded7db9dcc78fbdbabd01c075fb0ae80ec0cf64ec90",
+  "method": "Textual module imports with vendor documentation comments excluded; no module imported or evaluated."
+}

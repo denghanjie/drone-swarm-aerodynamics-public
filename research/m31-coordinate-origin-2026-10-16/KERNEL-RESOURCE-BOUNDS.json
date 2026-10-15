@@ -1,0 +1,64 @@
+{
+  "status": "STATIC_MAXIMUMS_NOT_MEASUREMENTS",
+  "parentLedgerAuthoritative": true,
+  "pipelines": 7,
+  "adapterRequestsMaximum": 1,
+  "deviceRequestsMaximum": 1,
+  "maximumDispatches": {
+    "controls": 3,
+    "terms": 6,
+    "serial": 6,
+    "total": 15
+  },
+  "maximumGroups": 7509,
+  "maximumLaunchedLanes": 480576,
+  "maximumPaddingLanes": {
+    "controls": 132,
+    "serial": 288,
+    "total": 420
+  },
+  "maximumActiveOutputs": {
+    "controls": 60,
+    "terms": 480000,
+    "serial": 96,
+    "total": 480156
+  },
+  "maximumStoredTermVisits": 480000,
+  "controlOutputClear": {
+    "operations": 3,
+    "bytesEach": 2080,
+    "totalClearedBytes": 6240,
+    "inputUpload": false,
+    "computeDispatch": false
+  },
+  "retainedGPUOutputBytes": {
+    "controls": 6240,
+    "terms": 49920000,
+    "serial": 3072,
+    "completeTotal": 49929312
+  },
+  "actualDriverInputUploadPlan": {
+    "nodeBuffersPerCell": 6,
+    "ABNodeBytes": 640000,
+    "CNodeBytes": 480000,
+    "offsetBytes": 1536,
+    "selectedIDBytes": 96,
+    "constantBytes": 64,
+    "controlBytes": 3200,
+    "totalBytes": 1124896,
+    "note": "Per-cell node/offset/ID uploads; constants/controls once; no output initialization uploads"
+  },
+  "oneCellPersistentBufferBytes": {
+    "A": 8480848,
+    "B": 8480848,
+    "C": 8560848
+  },
+  "oneCellWithTermReadbackBytes": {
+    "A": 16800848,
+    "B": 16800848,
+    "C": 16880848
+  },
+  "controlPhaseWithOneOutputAndReadbackBytes": 7424,
+  "bufferPeakAssumptions": "Release control input/output/readback before term cells; constants64retained; one cell at a time; include512sum output; parent must add any actually retained concurrent buffers",
+  "limits": "Payload sizes only, not host/GPU total memory or speed. No launch, compilation, geometry, wake, roots or timing occurred."
+}

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>M31 runtime replication · Saved static evidence</title><link rel="icon" href="data:,">
+  <script type="importmap">{"imports":{"three":"../../../outputs/step02b-source/vendor/three.module.js"}}</script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-binding="unbound" data-ready="false"><main>
+  <header><h1 id="hero-title">Runtime replication.<br>Saved static evidence.</h1>
+    <p class="intro" id="hero-intro">Source-only viewer draft. After authorized binding, inspect prescribed static fixture inputs and saved R/Q/GPU/H records. These are not Boids trajectories or flight playback.</p>
+    <p class="historical"><a id="historical-link" href="../../m31-restart-2026-10-15/viewer/">Historical M31 · local 3D Boids saved-pose audit</a><span class="note">Separate historical records with airflow off.</span></p>
+  </header>
+  <section class="outcome" aria-label="Evidence disposition">
+    <div><span>Byte binding</span><strong id="binding">No evidence bound</strong></div>
+    <div><span>Recorded execution</span><strong id="execution">Unavailable</strong></div>
+    <div><span>Final external observation</span><strong id="review">Pending</strong></div>
+  </section>
+  <p id="status" role="status" aria-live="polite">Source-only scaffold. No campaign evidence has been bound.</p>
+  <p id="dispatch-status" class="cell-note">No dispatch evidence bound. Source-only draft awaiting final review.</p>
+  <section class="lab">
+    <div class="lab-head"><h2>Explore saved records</h2><span class="recorded">Static evidence</span></div>
+    <div class="controls">
+      <label class="wide">Input family / controls<select id="family" disabled><option>No evidence bound</option></select></label>
+      <label id="receiver-label">Receiver ID<input id="receiver" type="number" min="0" step="1" disabled></label>
+      <label id="pair-label" hidden><span id="pair-kind">Pair control</span><select id="pair" disabled></select></label>
+      <label id="color-label">Color by<select id="color" disabled><option value="forceError">Maximum rotor force error · GPU vs R</option><option value="liftReduction">Thrust reduction · GPU vs GPU nominal</option></select></label>
+    </div>
+    <div class="subcontrols"><button id="reset" disabled>Reset camera</button><button id="focus" disabled>Focus selected receiver</button><span id="interaction-hint">Drag to orbit · scroll to zoom · click a body to select</span></div>
+    <p class="cell-note" id="selection-note">No saved positions are loaded.</p>
+    <div class="explorer">
+      <div><div id="scene" aria-label="Saved position explorer"><p class="scene-placeholder">The scene will show only positions and orientations from bound evidence. No substitute geometry or flight is generated.</p></div>
+        <div class="legend" id="legend" data-mode="unavailable">Gray = unavailable. Colors summarize displayed records; they do not establish qualification.</div>
+      </div>
+      <aside class="inspector"><h3 id="inspector-title">Selected record</h3><dl id="identity"><dt>Availability</dt><dd>No evidence bound</dd></dl>
+        <details><summary>Saved record headers and validity</summary><pre id="record-details">Unavailable</pre></details>
+      </aside>
+    </div>
+    <div class="table-wrap"><table><caption id="rotor-caption">R uses original binary64 inputs. GPU values are the saved binary32 outputs. Invalid or unwritten fields stay unavailable.</caption><thead id="rotor-head"><tr><th>Rotor</th><th>R inflow</th><th>GPU raw inflow</th><th>R force</th><th>GPU force</th><th>GPU − R force</th></tr></thead><tbody id="rotor-table"><tr><td colspan="6">No saved values</td></tr></tbody></table></div>
+    <div class="table-wrap" id="body-wrap"><table><caption>Saved body-frame outputs: R, Q and GPU. H has no body payload. Nominal yaw is a prescribed output; no dynamics or body recomposition is performed.</caption><thead><tr><th>Component</th><th>R</th><th>Q</th><th>GPU</th><th>H</th><th>GPU − R</th><th>Recorded gate</th></tr></thead><tbody id="body-table"><tr><td colspan="6">No saved values</td></tr></tbody></table></div>
+    <details><summary>Saved family assessment and geometry audit</summary><pre id="family-report">No family records bound.</pre></details>
+    <details><summary>Saved thresholds and gate scope</summary><pre id="gate-record">No constants or gates bound.</pre></details>
+  </section>
+  <section><h2>Execution and review coverage</h2><p class="section-intro">Byte consistency, recorded numerical outcomes and independent review are separate. Failed or pending reviews remain visible alongside byte-consistent evidence.</p>
+    <div class="table-wrap"><table><thead><tr><th>Family</th><th>Planned N</th><th>Saved records</th><th>Recorded disposition</th><th>Recorded assessment</th></tr></thead><tbody id="coverage-table"></tbody></table></div>
+    <div id="review-list"><p class="note">No review artifacts bound.</p></div>
+    <details><summary>Recorded campaign and control reports</summary><pre id="report-details">Unavailable</pre></details>
+  </section>
+  <details class="evidence"><summary>Evidence receipt and byte verification</summary><p class="note">The offline binder verifies the full listed files, including policy arrays. The browser hashes only the reports and selected small records it actually fetches. A receipt is a byte-binding record, not an independent scientific review.</p><div id="receipt-list"></div></details>
+  <footer><span>Runtime replication · prescribed static fixtures.</span><span>No flight playback, timing comparison or physical validation.</span><a href="DATA-CONTRACT.md">Data contract</a></footer>
+</main><script type="module" src="app.js"></script></body></html>

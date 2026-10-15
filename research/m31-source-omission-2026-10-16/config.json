@@ -1,0 +1,15 @@
+{
+ "scope":"Static bounded source omission; numerical accuracy/cost relative to unchanged exploratory M28 model",
+ "referenceCommit":"3b8273f17b927d56289a2a3839b047bd6a01a15a",
+ "referenceDirectory":"research/m31-flock-force-reference-2026-10-15",
+ "referenceManifestSha256":"daaf6c8baf6c89aff29c02ad1427a6d80a39d59e001b185e2bb6390c32ada111",
+ "freshCases":[{"id":"fresh1000","shape":[10,10,10],"seed":733109},{"id":"fresh5000","shape":[20,25,10],"seed":891007}],
+ "historicalCases":12,"fixtureCases":24,
+ "wallCapSeconds":300,"rawByteCap":134217728,"failureReserveBytes":4194304,
+ "fieldCallCap":152,"independentCenterCap":26000000,"boundAttemptShapeCap":290000000,"rotorVisitShapeCap":2750000000,"receiverCallCap":700000,
+ "verificationWallCapSeconds":60,
+ "timingOrders":[["B","M","C"],["M","C","B"],["C","B","M"],["B","C","M"],["C","M","B"],["M","B","C"]],
+ "inflowAbsTolerance":1e-11,"inflowRelTolerance":1e-12,"rotorTolerance":1e-12,"bodyThrustTolerance":5e-12,"bodyMomentTolerance":2e-13,"worldForceTolerance":1e-11,"worldMomentTolerance":1e-12,
+ "rootResidualTolerance":1e-12,"bracketWidthTolerance":2e-15,"powerAbsoluteTolerance":1e-14,"powerRelativeTolerance":1e-12,
+ "stopNewLaunchUTC":"2026-10-15T23:00:00Z"
+}

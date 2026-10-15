@@ -1,0 +1,30 @@
+# Independent NanoBench metadata review
+
+At commit `934a1ab92c458cad99c9278a5cb63bf68af6e56c`, the saved manifest supports **107 CSV files, 107 matching YAML files and 87 distinct CSV Git blob IDs** in `datasets/dataset/`. These are verified directory-level content counts, not a verified number of independent flights. NanoBench remains a possible source for a separate vehicle-telemetry question; the documented observables do not satisfy the joint thrust-and-spatial-flow evidence needed to validate the assumed 27 g nanoquad wake model.
+
+This independent review recomputed counts from the saved complete recursive Git tree, reconciled every manifest path, byte count and blob ID, reconstructed Git tree objects, and hashed four downloaded text files. It did not fetch CSV payloads, execute repository or campaign source, fit a model, perform an experiment, or verify the provider's measurement statistics. The companion `m31-nanobench-independent-metadata-reconciliation.json` preserves the checks and evidence hashes.
+
+| Inventory check | Independently reconciled result |
+|---|---:|
+| Recursive tree entries | 416; `truncated=false`; unique paths |
+| Blobs in `datasets/dataset/` | 215: 107 CSV, 107 YAML, one Python source file |
+| CSV/YAML pairing | Every CSV has its same-stem `_metadata.yaml`; no unmatched YAML |
+| CSV advertised byte total | 290,797,892 |
+| Distinct CSV Git blob IDs | 87 |
+| Repeated CSV blob groups | 18: 16 pairs and two triples |
+| CSV filenames beyond distinct content | 20; all repeated groups are B9 trefoil files |
+| CSV entries across the full repository | 152, including benchmark data and result tables |
+
+The pinned README advertises 172 recordings. Neither the directory count nor the repository-wide CSV count establishes the number of acquired or independent flights; result tables and derived records are not automatically recordings. The advertised accounting remains unresolved. Equal Git blob IDs support byte identity under Git's content-addressing assumption; they do not establish experimental independence, dependence, acquisition history, intent or misconduct. No CSV payload was independently downloaded and hashed. Resolve repeated-content aliases and acquisition provenance before selecting repetitions or train/test splits.
+
+There was a response-label anomaly worth retaining. The original commit-addressed tree response labeled its top-level `sha` with the commit ID, while the commit metadata identified tree `789b1a57d1908a81e46647d9eded7a310a0d7bf6`. Reconstructing all 33 tree objects from their direct child names, modes and object IDs reproduced every expected subtree hash and this exact root tree hash. A later response requested by the explicit tree ID has that correct top-level ID and an identical 416-entry array. The entry-level binding is therefore reconciled; the anomalous label must not be presented as the actual Git tree object ID. This review relies on the saved provider responses for the association between that tree and the stated commit; it is not a separately authenticated acquisition.
+
+The downloaded README, LICENSE and the A1b multisine / C4 battery-drain YAML samples each reproduce their advertised Git blob ID and size. In particular, the README blob is `470a058b8be4ac3ea7a6c70707ad0476ec0315ce`; its line 48 reports that all flights used retroreflective markers and a wireless-charging deck, raising stock mass from 27 g to a measured **40.85 g**. This is a provider-reported measured mass, 13.85 g (about 51.3%) above the model assumption, not an independently repeated weighing. The nominal 46 mm propeller description cited in the wider literature review would correspond geometrically to a 23 mm radius, but matching nominal radius does not resolve the different flying mass or establish the exact as-flown rotor, arm, inertia and instrumentation configuration. No present paper-versus-README conflict is asserted here.
+
+README lines 135–162 describe synchronized, resampled 100 Hz telemetry. The listed motor signals are **PWM commands**, and `pid_controller_cmd_thrust` is a **controller command**, not an independently measured force. Battery voltage is described as 10 Hz and forward-filled. Vicon-derived vehicle velocity is not air velocity at spatial wake-sampling points. Vicon pose also feeds the onboard EKF, so EKF-versus-Vicon agreement is not independent dead-reckoning validation. The later task description's reference to motor speeds in rad/s does not establish measured RPM in the listed CSV schema. Any PWM-to-speed conversion would need separate calibration and provenance before such an interpretation.
+
+Accordingly, the inspected documentation supplies no identified independent thrust measurement, spatial air-velocity measurement, measured rotor RPM, matched-total-thrust unequal-command condition, or source/receiver interaction measurement. Settled background, force/flow uncertainty, flow sampling positions and the required registration are also unestablished. These are bounds on the inspected schema and evidence, not proof that no supplementary measurements exist. Two YAML samples confirm that small metadata files carry battery endpoints and per-stream row counts; they do not verify all CSV columns, timing quality or missingness across the release.
+
+The pinned README explicitly applies **BSD 3-Clause** to both dataset and codebase, and the downloaded LICENSE matches its pinned Git blob. Preserve its notices in later reuse. This metadata review accepts the inventory and reported instrumented mass, with the stated provenance limits; it accepts no fit, physical-model validation, flight independence or performance claim.
+
+Public references: [pinned repository](https://github.com/syediu/nanobench/tree/934a1ab92c458cad99c9278a5cb63bf68af6e56c), [pinned README](https://github.com/syediu/nanobench/blob/934a1ab92c458cad99c9278a5cb63bf68af6e56c/README.md), [pinned LICENSE](https://github.com/syediu/nanobench/blob/934a1ab92c458cad99c9278a5cb63bf68af6e56c/LICENSE), and [explicit tree metadata](https://api.github.com/repos/syediu/nanobench/git/trees/789b1a57d1908a81e46647d9eded7a310a0d7bf6?recursive=1).

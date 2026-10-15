@@ -1,0 +1,13 @@
+# Control-channel option: API evidence before any implementation
+
+Supporting desk work only; no new invocation or implementation is allocated. This adds version-specific evidence to the [unallocated engineering proposal](../m31-transport-diagnostic-2026-10-16/NEXT-TRANSPORT-OPTION.md) without modifying its published snapshot.
+
+Playwright documents `page.evaluate` as running a function in the page and returning its value to the automation environment. It waits for a returned promise; a nonserializable result may become undefined, and additional numerical values such as NaN/Infinity are supported. Therefore any byte-array receiver must explicitly reject nonfinite/noninteger/out-of-range elements. These are API semantics, not observations of our proposed payload transfer. [Official Page.evaluate reference](https://playwright.dev/docs/api/class-page#page-evaluate)
+
+The browser function and automation script inhabit different environments. Arguments and results are explicitly transferred; host variables are not implicitly present in the page. Our proposed payload must be constructed in the page, and the host must persist the actual returned bytes rather than regenerate them from its expected fixture. [Official evaluating guide, Different environments](https://playwright.dev/docs/evaluating#different-environments)
+
+The website is rolling documentation and contains features newer than the installed runtime. We separately read the installed 1.62.1 package as text: the Page evaluate overloads expose only `exposeFunctions`, and the Frame client delegates using `kNoTimeout`. A call to `setDefaultTimeout` must not be treated as a verified bound on this evaluate path. The planned host deadline and owned-process cleanup remain necessary. No operational code was imported or invoked. Package-relative files, hashes and inspected source locations are in [the static source receipt](CONTROL-CHANNEL-SOURCE-INSPECTION.json).
+
+The installed protocol serializer has explicit array handling and also a typed-array branch. This does not establish end-to-end handling of a GPU-mapped array. The proposed plain number array is an intentional representation choice, not evidence that this runtime lacks typed-array support. Its copies, serialization, memory amplification and complete transfer cost require a later, separately designed measurement before any scaling claim.
+
+**Decision:** the API evidence makes a small, bounded ordinary-heap return a reasonable next engineering test. It does not demonstrate that the test works, authorize a scientific successor, establish the historical failure cause or alter the original overnight cutoff. No browser permission or security setting was changed.

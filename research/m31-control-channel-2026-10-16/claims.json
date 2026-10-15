@@ -1,0 +1,63 @@
+{
+  "sourceCommit": "4edf40a7cbfa2d41414dc8a8a6ff0718d0fa5671",
+  "claims": [
+    {
+      "id": "C1",
+      "claim": "One3840-byte ordinary-heap payload returned through the pinned automation stack and was persisted exactly, with independent post-closure comparison.",
+      "status": "confirmed within tested conditions",
+      "evidence": [
+        "raw/returned.json",
+        "raw/received.bin",
+        "raw/trace.public.ndjson",
+        "results/result.json",
+        "results/budget.json",
+        "results/capture.json",
+        "review/results/report.json",
+        "publication/capture-execution.json",
+        "publication/review-execution.json",
+        "publication/FINAL-DISPOSITION.json"
+      ],
+      "limitations": [
+        "Single fixed periodic fixture; no reliability estimate",
+        "Public checker does not reconstruct private original traces/process observations",
+        "No GPU, model, dynamics or performance comparison"
+      ],
+      "challenge": "Separately designed actual GPU-buffer-lifetime test and measured larger-output integration."
+    },
+    {
+      "id": "C2",
+      "claim": "The prior GPU-transfer failure cause has been identified.",
+      "status": "unresolved",
+      "evidence": [
+        "../m31-body-runtime-replication-2026-10-16/README.md",
+        "../m31-transport-diagnostic-2026-10-16/OBSERVATIONS.md"
+      ],
+      "limitations": [
+        "A different ordinary-heap API path succeeding cannot retrospectively establish the earlier cause."
+      ]
+    },
+    {
+      "id": "C3",
+      "claim": "The control-channel representation is efficient for realistic numerical output.",
+      "status": "unresolved",
+      "evidence": [
+        "OBSERVATIONS.md"
+      ],
+      "limitations": [
+        "Saved JSON size and one measured interval are not wire-size/memory amplification or benchmark statistics."
+      ]
+    },
+    {
+      "id": "C4",
+      "claim": "The coupled5000-drone simulation is physically validated or publication-ready.",
+      "status": "unresolved",
+      "evidence": [
+        "POSTRUN-RESTART.md",
+        "../m31-followup-planning-2026-10-16/datasets/COMPATIBILITY-MATRIX.md"
+      ],
+      "limitations": [
+        "No new aerodynamic/numerical scientific test here; compatible physical evidence and full performance/accuracy comparison remain incomplete."
+      ]
+    }
+  ]
+}

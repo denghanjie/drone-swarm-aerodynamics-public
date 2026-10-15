@@ -1,0 +1,419 @@
+"""One saved-public-evidence review of the new synthetic transport diagnostic.
+
+Never import this script for tests: its exclusive lock is an invocation. Static
+AST/text/schema inspection is allowed. No browser, subprocess, scientific input,
+old campaign, private trace, or numerical module is read or executed.
+"""
+import time
+START = time.monotonic()
+import os, signal
+signal.signal(signal.SIGALRM, lambda *_: os._exit(124))
+signal.setitimer(signal.ITIMER_REAL, max(.001, START + 30 - time.monotonic()))
+import sys, json, hashlib, stat, math, re
+from pathlib import Path, PurePosixPath
+
+CAP = 8388608
+EXPECTED_SHA = 'b92773fc3edb949a8a0d6e4a2f60ef2020ee2bd5bf6f8299c1448142a6cd3404'
+LOCK = b'One new-transport public saved review. Permanent; no retry.\n'
+report = {'kind': 'new-transport-public-saved-review', 'version': 1,
+          'checks': 0, 'completed': False, 'candidatePublicEvidenceVerified': False,
+          'publicEvidenceVerified': False, 'privateTraceVerified': False,
+          'observedTransportOutcome': None,
+          'reviewPassScope': 'Complete operational observation and public-record consistency; a fully observed failed transfer can pass, but an incomplete diagnostic cannot.',
+          'reviewFailureAloneEstablishesCorruption': False,
+          'scientificQualified': False, 'historicalFailureExplained': False,
+          'furtherScienceAuthorized': False, 'retryPermitted': False,
+          'requiresActualCheckerExit0AndCompleteSummary': True,
+          'numericalCodeImported': False, 'generatedInputs': 0, 'browserLaunches': 0,
+          'gpuDispatches': 0, 'subprocesses': 0, 'errors': []}
+root = None
+reserved = False
+cache = {}
+
+def require(ok, code):
+    report['checks'] += 1
+    if not ok:
+        raise RuntimeError(code)
+    if time.monotonic() - START >= 25:
+        raise TimeoutError('review-work-deadline')
+
+def digest(data):
+    return hashlib.sha256(data).hexdigest()
+
+def integer(value, minimum=0, maximum=CAP):
+    return type(value) is int and minimum <= value <= maximum
+
+def number(value, maximum):
+    return type(value) in (int, float) and math.isfinite(value) and 0 <= value < maximum
+
+def read(relative, cap=CAP):
+    pure = PurePosixPath(relative)
+    require(isinstance(relative, str) and relative == pure.as_posix()
+            and not pure.is_absolute() and '..' not in pure.parts and bool(pure.parts), 'contained-path')
+    target = root
+    for part in pure.parts:
+        target = target / part
+        require(not target.is_symlink(), 'no-symlink')
+    info = target.lstat()
+    require(stat.S_ISREG(info.st_mode) and info.st_size <= cap, 'bounded-regular-file')
+    with target.open('rb') as handle:
+        data = handle.read(cap + 1)
+    require(len(data) == info.st_size and len(data) <= cap, 'complete-bounded-read')
+    cache[relative] = (len(data), digest(data))
+    return data
+
+def unique_object(pairs):
+    value = {}
+    for key, item in pairs:
+        require(key not in value, 'duplicate-json-key')
+        value[key] = item
+    return value
+
+def decode(data):
+    return json.loads(data, object_pairs_hook=unique_object,
+                      parse_constant=lambda _: (_ for _ in ()).throw(ValueError('nonfinite-json')))
+
+def load(relative, cap=CAP):
+    return decode(read(relative, cap))
+
+def receipt(actual, value, code):
+    require(type(value) is dict and value['bytes'] == len(actual)
+            and value['sha256'] == digest(actual), code)
+
+def one_line(relative, cap=32768):
+    data = read(relative, cap)
+    require(data.endswith(b'\n') and len(data.splitlines()) == 1, 'one-complete-summary')
+    return data, decode(data)
+
+def directory_receipt(relative, excluded=()):
+    folder = root / relative
+    require(folder.is_dir() and not folder.is_symlink(), 'regular-evidence-directory')
+    entries = sorted(p for p in folder.iterdir() if p.name not in excluded)
+    total = 0
+    for entry in entries:
+        total += len(read(str(PurePosixPath(relative) / entry.name)))
+    return total, len(entries)
+
+def main():
+    global root, reserved
+    require(len(sys.argv) == 2, 'one-campaign-root-argument')
+    original = Path(sys.argv[1])
+    require(original.is_absolute() and original.resolve() == original, 'absolute-real-campaign-root')
+    root = original
+    require(root.name == 'm31-transport-diagnostic-2026-10-16', 'new-campaign-only')
+    review_dir = root / 'review'
+    require(review_dir.is_dir() and not review_dir.is_symlink(), 'regular-review-directory')
+    with (review_dir / 'sole-review.lock').open('xb') as handle:
+        require(handle.write(LOCK) == len(LOCK), 'complete-terminal-review-lock')
+    reserved = True
+    output = review_dir / 'results'
+    output.mkdir(exist_ok=True)
+    require(output.is_dir() and not output.is_symlink() and not list(output.iterdir()), 'fresh-review-results')
+    manifest_data = read('review/evidence-manifest.json')
+    manifest = decode(manifest_data)
+    require(manifest['kind'] == 'new-transport-public-evidence-manifest'
+            and manifest['version'] == 1, 'new-evidence-manifest-schema')
+    source = manifest['sourceCommit']
+    freeze_sha = manifest['sourceFreezeSHA256']
+    require(re.fullmatch(r'[a-f0-9]{40}', source) is not None
+            and re.fullmatch(r'[a-f0-9]{64}', freeze_sha) is not None, 'source-identity-format')
+    report.update(sourceCommit=source, sourceFreezeSHA256=freeze_sha,
+                  evidenceManifestSHA256=digest(manifest_data))
+    pins = {}
+    for pin in manifest['files']:
+        name = pin['path']
+        require(name not in pins and not name.startswith('review/'), 'unique-new-evidence-pin')
+        require(name.split('/')[0] in {'source', 'raw', 'results', 'publication'}
+                or name in {'freeze.json', 'payload.bin', 'payload.json', 'config.json',
+                            'runtime-provenance.json', 'capture-launch.lock'}, 'allowed-new-evidence-pin')
+        receipt(read(name), pin, 'manifest-file-pin')
+        pins[name] = pin
+    needed = {'freeze.json', 'payload.bin', 'payload.json', 'config.json',
+              'runtime-provenance.json', 'capture-launch.lock', 'raw/trace.public.ndjson',
+              'results/result.json', 'results/budget.json', 'results/capture.json',
+              'results/wrapper.json', 'results/diagnostic-stdout.txt', 'results/diagnostic-stderr.txt',
+              'results/sole-launch.lock', 'publication/capture-output.json',
+              'publication/observer-output.json', 'publication/capture-execution.json'}
+    require(needed <= pins.keys(), 'complete-required-new-evidence-pins')
+    freeze_data = read('freeze.json')
+    require(digest(freeze_data) == freeze_sha, 'science-free-source-freeze')
+    freeze = decode(freeze_data)
+    prefix = 'research/' + root.name + '/'
+    frozen_paths = set()
+    for pin in freeze['files']:
+        require(pin['path'].startswith(prefix), 'new-source-pin-scope')
+        name = pin['path'][len(prefix):]
+        require(name not in frozen_paths, 'unique-source-pin')
+        frozen_paths.add(name)
+        receipt(read(name), pin, 'immutable-new-source-pin')
+    require({'payload.bin', 'payload.json', 'config.json', 'runtime-provenance.json',
+             'source/diagnostic.cjs', 'source/browser.js'} <= frozen_paths, 'frozen-core-inputs')
+    fixture = read('payload.bin', 3840)
+    require(len(fixture) == 3840 and digest(fixture) == EXPECTED_SHA, 'fixed-synthetic-byte-identity')
+    payload = load('payload.json')
+    require(payload['length'] == 3840 and payload['sha256'] == EXPECTED_SHA
+            and payload['scientificData'] is False, 'fixture-descriptor')
+    config = load('config.json')
+    require(config['stopNewLaunchUTC'] == '2026-10-15T23:00:00Z'
+            and config['limits'] == {'wallSeconds':60, 'workerSeconds':40, 'fetchSeconds':10,
+                                    'cleanupSeconds':58, 'combinedBytes':CAP,
+                                    'ownedRSSBytes':2147483648, 'traceEvents':2048}, 'adopted-config')
+    worker = load('results/result.json', 65536)
+    require(worker['version'] == 1 and worker['kind'] == 'synthetic-transport-diagnostic'
+            and worker['terminal'] is True and worker['sourceCommit'] == source
+            and worker['sourceFreezeSHA256'] == freeze_sha, 'worker-envelope')
+    for key in ['qualified', 'scientificSuccess', 'explainsHistoricalFailure', 'retryPermitted']:
+        require(worker[key] is False, 'worker-limited-claims')
+    require(worker['expected'] == {'bytes':3840, 'sha256':EXPECTED_SHA}, 'worker-expected-projection')
+    require(integer(worker['browserLaunches'], maximum=1) and integer(worker['fetchCalls'], maximum=1), 'reserved-attempt-cardinality')
+    inst = worker['instrumentation']
+    require(set(inst['ready']) == {'server','playwright','cdpNetwork','cdpAudits','browserBinding','routes'}
+            and all(type(v) is bool for v in inst['ready'].values()), 'readiness-schema')
+    for key in ['eventCount', 'attemptedEvents', 'droppedEvents', 'truncatedEvents',
+                'observerExceptions', 'callbackErrors', 'unexpectedRedirectObservations']:
+        require(integer(inst[key], maximum=2048), 'instrumentation-counter')
+    healthy = all(inst['ready'].values()) and all(inst[k] == 0 for k in
+        ['droppedEvents','truncatedEvents','observerExceptions','callbackErrors','unexpectedRedirectObservations'])
+    healthy = healthy and inst['attemptedEvents'] == inst['eventCount']
+    require(inst['complete'] is healthy and inst['eventCap'] == 2048
+            and inst['clock'] == 'worker-monotonic-receipt'
+            and inst['browserClock'] == 'browser-performance-independent'
+            and inst['crossClockOrderingClaimed'] is False
+            and inst['captureClosedAfterCleanup'] is True, 'instrumentation-conjunction')
+    trace_data = read('raw/trace.public.ndjson', 2 * 1024 * 1024)
+    receipt(trace_data, worker['trace']['public'], 'closed-public-trace-pin')
+    require(trace_data.endswith(b'\n') and len(trace_data.splitlines()) == inst['eventCount'], 'complete-trace-lines')
+    events = []
+    prior = -1
+    kinds = set(('sink-listening sink-connection sink-socket-error sink-socket-close sink-client-error '
+                 'sink-server-error sink-request sink-post-started sink-file-open sink-data sink-write-error '
+                 'sink-persisted sink-request-close sink-response-finish sink-response-close pw-request '
+                 'pw-response pw-request-failed page-console page-error page-crash page-close cdp-request '
+                 'cdp-request-extra cdp-response cdp-response-extra cdp-loading-finished cdp-loading-failed '
+                 'cdp-audit-issue observers-ready browser-browser-context browser-payload-ready '
+                 'browser-fetch-start browser-fetch-response browser-receipt-matched browser-fetch-error '
+                 'worker-error observer-callback-error cleanup-finished').split())
+    data_keys = set(('requestID connectionID cdpID relatedCDPID method resourceType errorName blockedReason '
+                     'corsError issueCode initiatorType initiatorIPAddressSpace resourceIPAddressSpace '
+                     'localNetworkAccessRequestPolicy type reason stage errorText failedParameterObserved '
+                     'initiatorOriginLabel originLabel bytes receivedBytes writtenBytes writeCalls status '
+                     'browserMilliseconds encodedDataLength match started complete ok canceled hasExtraInfo '
+                     'ipProtectionUsed initiatorIsSecureContext isSecureContext isWarning auditReplayPossible '
+                     'redirected urlLabel transferID headers sha256').split())
+    header_keys = set(('origin content-type content-length access-control-request-method '
+                       'access-control-request-headers access-control-request-private-network '
+                       'access-control-allow-origin access-control-allow-methods access-control-allow-headers '
+                       'access-control-allow-private-network cache-control').split())
+    forbidden = re.compile(r'/Users/|/private/|/tmp/|https?://|--user-data-dir|127\.0\.0\.1:\d')
+    for index, line in enumerate(trace_data.splitlines(), 1):
+        event = decode(line)
+        require(set(event) == {'version','id','sequence','clock','milliseconds','kind','data'}
+                and event['version'] == 1 and event['sequence'] == index and event['id'] == 'e' + str(index)
+                and event['clock'] == 'worker-monotonic-receipt'
+                and number(event['milliseconds'], 40000) and event['milliseconds'] >= prior
+                and event['kind'] in kinds and type(event['data']) is dict
+                and set(event['data']) <= data_keys, 'trace-envelope-and-clock')
+        require(forbidden.search(line.decode('utf-8')) is None, 'public-trace-location-redaction')
+        headers = event['data'].get('headers')
+        if headers is not None:
+            require(type(headers) is dict and set(headers) <= header_keys
+                    and all(type(v) is str and len(v) <= 512 for v in headers.values()), 'public-header-envelope')
+        prior = event['milliseconds']
+        events.append(event)
+    by_kind = lambda kind: [e for e in events if e['kind'] == kind]
+    starts = by_kind('browser-fetch-start')
+    require(len(starts) == worker['fetchCalls'], 'fetch-reservation-not-network-count')
+    ready_events = by_kind('observers-ready')
+    if starts:
+        require(len(ready_events) == 1 and ready_events[0]['id'] == worker['observerReadyEvent']
+                and ready_events[0]['sequence'] < starts[0]['sequence']
+                and inst['collectionBeforeFetch'] is True, 'observers-before-reserved-fetch')
+    sink = worker['sink']
+    require(all(type(sink[k]) is bool for k in ['started','complete','closed']), 'sink-state-types')
+    for key in ['requestCount','postCount','optionsCount','activeWrites','receivedBytes','writtenBytes','writeCalls']:
+        require(integer(sink[key]), 'sink-counter')
+    require(sink['postCount'] <= 1 and sink['writtenBytes'] <= 3840
+            and sink['writtenBytes'] <= sink['receivedBytes'], 'one-post-and-bounded-written-bytes')
+    requests = by_kind('sink-request')
+    require(len(requests) == sink['requestCount']
+            and sum(e['data']['method'] == 'POST' for e in requests) == sink['postCount']
+            and sum(e['data']['method'] == 'OPTIONS' for e in requests) == sink['optionsCount'], 'actual-sink-request-cardinality')
+    require(len(by_kind('sink-post-started')) == int(sink['started']), 'sink-started-event')
+    persistence = worker['persistence']
+    exists = (root / 'raw/received.bin').exists()
+    require(persistence['exists'] is exists, 'persisted-file-presence')
+    if exists:
+        require('raw/received.bin' in pins, 'received-file-pinned')
+        received = read('raw/received.bin', 3840)
+        require(persistence['bytes'] == len(received) == sink['writtenBytes']
+                and persistence['sha256'] == digest(received)
+                and persistence['exact'] is (received == fixture), 'independent-persisted-byte-read')
+    else:
+        require(persistence == {'exists':False,'bytes':None,'sha256':None,'exact':False}
+                and sink['writtenBytes'] == 0, 'absent-output-is-explicit')
+    if sink['complete']:
+        require(sink['started'] is True and persistence['exists'] is True and persistence['bytes'] == 3840
+                and sink['status'] == 200
+                and sink['receipt'] == {'complete':True,'bytes':3840,'sha256':persistence['sha256']}
+                and len(by_kind('sink-persisted')) == 1, 'complete-sink-persistence')
+        persisted_event = by_kind('sink-persisted')[0]['data']
+        require(all(persisted_event[k] == sink['receipt'][k] for k in ['complete','bytes','sha256']),
+                'sink-persistence-event-projection')
+    browser = worker['browserResult']
+    ack = False
+    if browser is not None:
+        require(type(browser) is dict and all(type(browser[k]) is bool for k in
+                ['attempted','fetchCompleted','acknowledged']), 'browser-result-schema')
+        require(not browser['attempted'] or worker['fetchCalls'] == 1, 'browser-attempt-reservation')
+        require(not browser['fetchCompleted'] or browser['attempted'], 'response-headers-follow-attempt')
+        ack = browser['acknowledged']
+        if ack:
+            require(browser['fetchCompleted'] is True and browser['httpStatus'] == 200
+                    and browser['receipt'] == {'complete':True,'bytes':3840,'sha256':EXPECTED_SHA}
+                    and sink['complete'] is True and persistence['exact'] is True
+                    and len(by_kind('browser-receipt-matched')) == 1, 'browser-acknowledgement-projection')
+    complete = (healthy and not worker['errors'] and not worker['cleanupErrors']
+                and not worker['protocolDeviations'] and browser is not None)
+    require(worker['localObservationComplete'] is complete, 'local-observation-conjunction')
+    status = ('incomplete' if not complete else 'synthetic-transfer-complete' if persistence['exact'] and ack
+              else 'exact-persistence-acknowledgement-failed' if persistence['exact']
+              else 'sink-accepted-incomplete' if sink['started'] else 'transfer-failed-before-sink-acceptance')
+    require(worker['status'] == status, 'independent-limited-transport-classification')
+    if complete:
+        require(worker['browserLaunches'] == 1 and worker['browserContext']['originLabel'] == 'page-origin'
+                and type(worker['browserContext']['isSecureContext']) is bool
+                and worker['origins']['actualOriginsEqual'] is False
+                and len(by_kind('browser-browser-context')) == 1, 'observed-complete-browser-context')
+        require(events[-1]['kind'] == 'cleanup-finished' and events[-1]['data']['complete'] is True,
+                'final-trace-cleanup-barrier')
+    report.update(observedTransportOutcome=status, localObservationComplete=complete,
+                  exactSyntheticBytesPersisted=persistence['exact'], browserAcknowledged=ack,
+                  actualPostObserved=sink['postCount'] == 1)
+    require(number(worker['elapsedSeconds'], 40), 'worker-inclusive-deadline')
+    stdout, summary = one_line('results/diagnostic-stdout.txt', 8192)
+    require(summary['kind'] == 'synthetic-transport-worker-summary'
+            and summary['status'] == status and summary['terminal'] is True and summary['qualified'] is False
+            and summary['resultBytes'] == cache['results/result.json'][0]
+            and summary['resultSHA256'] == cache['results/result.json'][1], 'worker-summary-binding')
+    stderr = read('results/diagnostic-stderr.txt', 8192)
+    relay = load('results/wrapper.json', 8192)
+    require(relay['kind'] == 'single-transport-relay' and relay['terminal'] is True
+            and relay['nodeInvocations'] == 1 and relay['nodeReaped'] is True
+            and relay['pipeCaptureComplete'] is True and relay['errors'] == []
+            and relay['stdoutBytes'] == relay['stdoutObservedBytes'] == len(stdout)
+            and relay['stderrBytes'] == relay['stderrObservedBytes'] == len(stderr), 'relay-pipe-and-reap-receipt')
+    budget_data = read('results/budget.json', 32768)
+    budget = decode(budget_data)
+    capture_data = read('results/capture.json', 16384)
+    capture = decode(capture_data)
+    inner_data, inner = one_line('publication/observer-output.json', 8192)
+    outer_data, outer = one_line('publication/capture-output.json', 4096)
+    execution_data = read('publication/capture-execution.json', 32768)
+    execution = decode(execution_data)
+    for record in [budget,capture,execution]:
+        require(record['sourceCommit'] == source and record['sourceFreezeSHA256'] == freeze_sha, 'lifecycle-source-binding')
+    require(budget['kind'] == 'whole-transport-lifecycle-observation'
+            and capture['kind'] == 'external-transport-lifecycle-observation'
+            and execution['kind'] == 'actual-transport-capture-tool-completion', 'lifecycle-record-kinds')
+    require(inner['kind'] == 'caller-retained-transport-observer-summary'
+            and inner['budgetBytes'] == len(budget_data) and inner['budgetSHA256'] == digest(budget_data)
+            and budget['budgetBytes'] == len(budget_data)
+            and inner['summaryBytes'] == len(inner_data) == budget['observerSummaryBytes']
+            and inner['sourceCommit'] == source and inner['sourceFreezeSHA256'] == freeze_sha
+            and inner['candidateLifecycleVerified'] == budget['candidateLifecycleVerified']
+            and inner['qualified'] is False and inner['wholeLifecycleVerified'] is False, 'observer-summary-binding')
+    require(outer['kind'] == 'external-transport-capture-summary'
+            and outer['captureReceiptBytes'] == len(capture_data)
+            and outer['captureReceiptSHA256'] == digest(capture_data)
+            and outer['summaryBytes'] == len(outer_data) == capture['callerSummaryBytes']
+            and outer['candidateWholeLifecycleVerified'] == capture['candidateWholeLifecycleVerified']
+            and outer['actualObserverExitCode'] == capture['actualObserverExitCode']
+            and outer['observerFullElapsedSeconds'] == capture['observerFullElapsedSeconds']
+            and outer['qualified'] is False and outer['wholeLifecycleVerified'] is False, 'capture-summary-binding')
+    require(execution['toolSessionCompleted'] is True and execution['actualCaptureExitCode'] == 0
+            and number(execution['actualFullElapsedSeconds'], 60), 'actual-completed-capture-within-allowance')
+    require(capture['observerInvocations'] == 1 and capture['actualObserverExitCode'] == 0
+            and capture['observerReaped'] is True and capture['observerPipeCaptureComplete'] is True
+            and number(capture['observerFullElapsedSeconds'], 60)
+            and capture['directObserverKillSent'] is False and capture['observerSummaryValidated'] is True
+            and capture['candidateWholeLifecycleVerified'] is True and capture['errors'] == [], 'actual-observer-lifecycle')
+    require(capture['observerBudgetSHA256'] == digest(budget_data)
+            and capture['observerSummarySHA256'] == digest(inner_data)
+            and capture['stdoutBytesObserved'] == capture['stdoutBytesRetained'] == len(inner_data)
+            and capture['stderrBytesObserved'] == capture['stderrBytesRetained'] == 0, 'capture-pipe-completeness')
+    require(budget['wrapperInvocations'] == 1 and budget['wrapperExitCode'] == relay['nodeExitCode'] == 0
+            and budget['wrapperReaped'] is True and budget['wrapperGroupAbsent'] is True
+            and budget['wrapperPipeCaptureComplete'] is True and budget['registryComplete'] is True
+            and budget['processClosureComplete'] is True and budget['candidateLifecycleVerified'] is True
+            and budget['registeredDetachedGroups'] == budget['detachedGroupsConfirmedAbsent'] <= 1
+            and budget['registeredDetachedGroups'] == worker['browserLaunches']
+            and budget['rssSamples'] > 0 and budget['rssProbeErrors'] == 0
+            and budget['ownedRSSByteCap'] == 2147483648
+            and budget['wallCapSeconds'] == 60 and budget['workStopSeconds'] == 40
+            and budget['cleanupStopSeconds'] == 58 and budget['combinedByteCap'] == CAP
+            and integer(budget['peakObservedOwnedRSSBytes'], maximum=2147483648)
+            and budget['errors'] == [], 'recorded-owned-lifecycle-and-sampled-rss')
+    require(complete and sink['closed'] is True and sink['activeWrites'] == 0,
+            'incomplete-diagnostic-outside-review-pass-scope')
+    require(budget['outputAccountingComplete'] is True and capture['outputAccountingComplete'] is True
+            and inner['outputAccountingComplete'] is True and outer['outputAccountingComplete'] is True, 'complete-accounting-receipts')
+    raw_bytes, raw_files = directory_receipt('raw')
+    before_bytes, before_files = directory_receipt('results', {'budget.json','capture.json'})
+    require((raw_bytes,raw_files) == (budget['rawBytes'],budget['rawFiles'])
+            and (before_bytes,before_files) == (budget['resultDirectoryBytes'],budget['resultDirectoryFiles']), 'public-phase-byte-enumeration')
+    private_bytes = budget['privateDiagnosticBytes']
+    require(integer(private_bytes), 'recorded-private-byte-total-only')
+    inner_total = raw_bytes + before_bytes + private_bytes + len(budget_data) + len(inner_data)
+    require(inner_total == budget['accountedTotalResultBytes'] == inner['accountedTotalResultBytes']
+            == capture['observedInnerAccountedResultBytes'], 'combined-inner-accounting')
+    lock_bytes = len(read('capture-launch.lock', 1024))
+    total = inner_total + lock_bytes + capture['stderrBytesRetained'] + len(capture_data) + len(outer_data)
+    require(capture['captureLockBytes'] == lock_bytes and capture['receiptBytes'] == len(capture_data)
+            and total == capture['accountedCombinedResultBytes'] == outer['accountedCombinedResultBytes']
+            and total <= CAP, 'combined-capture-accounting')
+    later_copies = len(inner_data) + len(outer_data)
+    require(total + later_copies + len(execution_data) <= CAP, 'diagnostic-plus-later-publication-cap')
+    report.update(accountedDiagnosticOutputBytes=total, laterExecutionReceiptBytes=len(execution_data),
+                  laterPublicationCopiesBytes=later_copies,
+                  diagnosticPlusLaterPublicationBytes=total+later_copies+len(execution_data),
+                  publicationAccountingScope='The two later public summary copies are additional persisted copies; their original invocation summaries remain counted once in diagnostic output.',
+                  privateByteAccountingIndependentlyEnumerated=False,
+                  privateByteScope='Recorded observer total only; no private trace or directory was read.',
+                  sampledRSSScope='Recorded samples only; no transient peak or driver-memory bound.')
+    for name, prior_pin in list(cache.items()):
+        require((len(read(name)), cache[name][1]) == prior_pin, 'no-inspected-file-mutation')
+    report.update(completed=True, candidatePublicEvidenceVerified=True, status='review-complete')
+
+try:
+    main()
+except BaseException as error:
+    report.update(status='review-failed', completed=False, candidatePublicEvidenceVerified=False)
+    report['errors'].append({'type':type(error).__name__,
+                             'code':str(error) if type(error) is RuntimeError else 'bounded-review-operation-failed'})
+
+report.update(elapsedSecondsBeforeFinalRecords=time.monotonic()-START,
+              checkCountIncludesRejectedCheck=True, reportBytes=0, summaryBytes=0,
+              lockBytes=len(LOCK) if reserved else 0, accountedReviewOutputBytes=0)
+for _ in range(24):
+    data = (json.dumps(report, sort_keys=True)+'\n').encode()
+    summary = {'kind':'new-transport-public-review-summary', 'completed':report['completed'],
+               'candidatePublicEvidenceVerified':report['candidatePublicEvidenceVerified'],
+               'publicEvidenceVerified':False, 'requiresActualCheckerExit0AndCompleteSummary':True,
+               'reviewBytes':len(data), 'reviewSHA256':digest(data),
+               'summaryBytes':report['summaryBytes'], 'accountedReviewOutputBytes':report['accountedReviewOutputBytes']}
+    output = (json.dumps(summary, sort_keys=True)+'\n').encode()
+    total = report['lockBytes']+len(data)+len(output)
+    if report['reportBytes']==len(data) and report['summaryBytes']==len(output) and report['accountedReviewOutputBytes']==total:
+        break
+    report.update(reportBytes=len(data),summaryBytes=len(output),accountedReviewOutputBytes=total)
+else:
+    os._exit(125)
+if len(data)>65536 or len(output)>4096 or total>CAP or time.monotonic()-START>=29:
+    os._exit(125)
+if reserved:
+    with (root/'review/results/review.json').open('xb') as handle:
+        if handle.write(data)!=len(data):
+            os._exit(125)
+if os.write(sys.stdout.fileno(),output)!=len(output):
+    os._exit(125)
+raise SystemExit(0 if report['candidatePublicEvidenceVerified'] else 1)

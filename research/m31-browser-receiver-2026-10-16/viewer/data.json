@@ -1,0 +1,121 @@
+{
+  "scope": "Recorded receiver-only WebGPU results on reused static numerical inputs. Poses are context; no wake, controller or trajectory computed in this campaign. Host force sums are display reductions, not GPU assembly qualification.",
+  "review": {
+    "url": "../results/independent-review.json",
+    "bytes": 17611,
+    "sha256": "fd665da37bd231b46957fd9be1129a96c88e218fc8612b2bd8a502ce72068e77"
+  },
+  "result": {
+    "url": "../results/result.json",
+    "bytes": 17450,
+    "sha256": "299e89e2a07c82c0d86693d0e448873906d07a525d52cb907823f4d134a4b80a"
+  },
+  "budget": {
+    "url": "../results/budget.json",
+    "bytes": 756,
+    "sha256": "8bb429a4f66abee4a7c2bc1515caea8750fc18f823918f62e077a3110342ef44"
+  },
+  "cases": [
+    {
+      "id": "fresh1000",
+      "n": 1000,
+      "label": "1,000 drones \u00b7 reused static poses",
+      "poseStride": 17,
+      "poseQOffset": 6,
+      "poses": {
+        "url": "../../m31-zero-screen-2026-10-16/raw/fresh1000-states.f64",
+        "bytes": 136000,
+        "sha256": "7ed029ba4bbacd549ecd3dd1107c81210a01472b7c9372199bd0e67c6337a360"
+      },
+      "reference": {
+        "url": "../raw/fresh1000-original.f64",
+        "bytes": 256000,
+        "sha256": "89264ead0ea63ad0bc87310e093e3586ebfc8dbd4a8594faf70e796fa7ad6456"
+      },
+      "gpu": {
+        "url": "../raw/fresh1000-gpu.u32",
+        "bytes": 128000,
+        "sha256": "9ff1d33946a817362ca648bf3be842ab12e90388d749f82951b1d046821d864b"
+      },
+      "packed": {
+        "url": "../raw/fresh1000-packed.u32",
+        "bytes": 64000,
+        "sha256": "e382665ee617931e8e087296a8b6a8d746f3ef9e0af98ba8b8c03d535f83670c"
+      },
+      "q": {
+        "url": "../raw/fresh1000-Q.f64",
+        "bytes": 192000,
+        "sha256": "30d5f35ac9c990e03b4310e37415c38c2ccc92407c35c52c5aefcc4e469506ab"
+      },
+      "a": {
+        "url": "../raw/fresh1000-A.f64",
+        "bytes": 192000,
+        "sha256": "ce55cfafea952c6b3d55e36f40c0bba2e69bf1cceb3cf390f917c532c4654f2e"
+      }
+    },
+    {
+      "id": "fresh5000",
+      "n": 5000,
+      "label": "5,000 drones \u00b7 reused static poses",
+      "poseStride": 17,
+      "poseQOffset": 6,
+      "poses": {
+        "url": "../../m31-zero-screen-2026-10-16/raw/fresh5000-states.f64",
+        "bytes": 680000,
+        "sha256": "6e7e813c8b4127a4fa567249f0bf685d460adc6de2dd6a59fc4444f1a153a1bb"
+      },
+      "reference": {
+        "url": "../raw/fresh5000-original.f64",
+        "bytes": 1280000,
+        "sha256": "6b59f8e1d582573c6fc28e275f2648c51904a45a5f985f2af80d49ef3d377416"
+      },
+      "gpu": {
+        "url": "../raw/fresh5000-gpu.u32",
+        "bytes": 640000,
+        "sha256": "368a0f98eda5a2ddb78776278d1a1aad7bf7e1ff95f8abdcc9984d0024d75b56"
+      },
+      "packed": {
+        "url": "../raw/fresh5000-packed.u32",
+        "bytes": 320000,
+        "sha256": "64dac9600bc90868616805c240f96c94f7a281d3cfb5227cf308d160ddb7ad07"
+      },
+      "q": {
+        "url": "../raw/fresh5000-Q.f64",
+        "bytes": 960000,
+        "sha256": "17a4eff508f060e4a889f7ccd0153a43595532513ec19af23b4114d83bc7e293"
+      },
+      "a": {
+        "url": "../raw/fresh5000-A.f64",
+        "bytes": 960000,
+        "sha256": "1b72f2a1ea066bcaed8b813fdfb5ff5719a58580c1f1b17cc92ef31992c07a59"
+      }
+    }
+  ],
+  "scalars": {
+    "reference": {
+      "url": "../raw/scalar32-original.f64",
+      "bytes": 2048,
+      "sha256": "2a6608a8bd760740a0d89c27c297063cbaf6c31fdbb70ed29f00ac070ac79e18"
+    },
+    "gpu": {
+      "url": "../raw/scalar32-gpu.u32",
+      "bytes": 1024,
+      "sha256": "a34d818ada7a1abb76ac16a7631aa0b4498d428065767fcf8a3dd34b8860fb17"
+    },
+    "q": {
+      "url": "../raw/scalar32-Q.f64",
+      "bytes": 1536,
+      "sha256": "23f3b9e76258e8ff04686974641440156344b4950701d0835c5d3b3c4d55bb3b"
+    },
+    "a": {
+      "url": "../raw/scalar32-A.f64",
+      "bytes": 1536,
+      "sha256": "90091bb19912dd6908de024650d69a46a0b1e122c2390a499fb3246a740bd524"
+    }
+  },
+  "invalid": {
+    "url": "../raw/invalid5-gpu.u32",
+    "bytes": 160,
+    "sha256": "25eb40f933361abd29a0a40467b5ea5b5b86220dc5b510726ff0f26f977f891b"
+  }
+}

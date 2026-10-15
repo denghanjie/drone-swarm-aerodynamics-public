@@ -1,0 +1,49 @@
+{
+  "checkpoint": "M31 restart: evidence audit and bounded next plan",
+  "date": "2026-10-15",
+  "publicRepository": "https://github.com/denghanjie/drone-swarm-aerodynamics-public",
+  "sourceCommit": "c591ce2b195fa01b895d4ba881a44a4b92fdd703",
+  "sourceCommitUrl": "https://github.com/denghanjie/drone-swarm-aerodynamics-public/commit/c591ce2b195fa01b895d4ba881a44a4b92fdd703",
+  "publicationBranch": "codex/m31-audit-2026-10-15",
+  "remoteMainObserved": "1336f5c416875a9651f92b58b2ed06649f25b04e",
+  "remoteContextInspected": [
+    "pull request 1 title and changed-file listing",
+    "research/campaign-audit-c1-r8/postrun/MILESTONE.md at 1336f5c416875a9651f92b58b2ed06649f25b04e"
+  ],
+  "historyPolicy": "Additive directory on historical source snapshot. Preserve newer main and M32/DOT work; no reset, rebase of published evidence, or force push.",
+  "priorExposure": [
+    "All examined M31 cases",
+    "M32 diagnostic reports and selected saved trajectories",
+    "Later DOT wake-pruning/audit work exists; R8 milestone summary inspected",
+    "New exploratory group-level summaries and fixed-state neighbor-order probe in this checkpoint"
+  ],
+  "originalEvidenceVerification": {
+    "releaseFilesVerified": 306,
+    "manifestFilesVerified": 1581,
+    "changedOrMissing": [],
+    "commands": [
+      "python3 scripts/fetch-research-data.py --verify-only",
+      "python3 outputs/research-reproduce.py"
+    ],
+    "scope": "Existing public archive integrity, not re-executed trajectories."
+  },
+  "newWork": [
+    "Independent saved-data audit and selected M32 recomparison",
+    "Six single-drone RK4 contact replay steps",
+    "Exploratory fixed-state normal/reversed-neighbor controller evaluations",
+    "Eight-source bounded primary literature verification",
+    "Bounded proposed numerical diagnosis, not executed",
+    "Three.js exact stored-pose comparison with browser QA"
+  ],
+  "sourceSelection": "All scientific reads use sanitized public checkout and checksum-verified release assets. Private originals and user attachments were not copied into publication payload.",
+  "sanitization": [
+    {
+      "artifact": "protocol/read-only-evidence-audit.json",
+      "field": "sourceRoot",
+      "change": "Replace machine-specific absolute source root with PUBLIC_REPOSITORY and normalize relative artifact path spelling; input bytes and scientific comparison values unchanged.",
+      "scientificValuesChanged": false
+    }
+  ],
+  "permissions": "No raw third-party measurement datasets, full papers or copied copyrighted figures included. Existing vendor licenses retained.",
+  "checkpointVersion": "The Git commit containing this manifest and these files pins the new analysis sources; individual original input hashes remain in their audit records."
+}

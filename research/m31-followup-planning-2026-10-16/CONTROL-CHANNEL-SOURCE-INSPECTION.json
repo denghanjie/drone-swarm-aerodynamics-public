@@ -1,0 +1,28 @@
+{
+  "kind": "static-installed-api-contract-inspection",
+  "package": "playwright-core",
+  "version": "1.62.1",
+  "executedPackageCode": false,
+  "files": [
+    {
+      "packageRelativePath": "package.json",
+      "bytes": 876,
+      "sha256": "07c47543631fef9508760365dee9fbe958c562093ec8d122543949ed231f233f"
+    },
+    {
+      "packageRelativePath": "types/types.d.ts",
+      "bytes": 1110840,
+      "sha256": "6c688250f2b7061cec3a17ab8797671137b653f8c4e81a6df3190cb112a7579a"
+    },
+    {
+      "packageRelativePath": "lib/coreBundle.js",
+      "bytes": 3425603,
+      "sha256": "9393fa79e1c67c74edc26b610d65a4f7ed73d345a762465cc88340a33a2454ac"
+    }
+  ],
+  "locations": {
+    "types/types.d.ts": "Page interface lines85\u2013190, evaluate overloads137/190; only exposeFunctions option declared",
+    "lib/coreBundle.js": "Frame evaluate lines60006\u201360011 uses evaluateExpression with kNoTimeout and parses returned result; protocol serializer around11920\u201311933 handles plain arrays elementwise"
+  },
+  "limits": "Static source and documentation support design; no synthetic transfer, GPU lifetime, end-to-end execution, reliability or scaling conclusion."
+}

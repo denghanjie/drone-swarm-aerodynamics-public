@@ -1,0 +1,286 @@
+{
+  "schema": "m31-official-transport-sources-v1",
+  "scope": "Static literature only; no execution or permission changes",
+  "historicalCause": "unresolved",
+  "readStatusMeaning": "Relevant official-source passages were opened and read, including work preserved in conversation compaction.",
+  "sources": [
+    {
+      "id": "fetch",
+      "title": "WHATWG Fetch Standard",
+      "url": "https://fetch.spec.whatwg.org/commit-snapshots/e9460d1b22ead1c6a72eeac37fb2ec0dc01aeb1d/",
+      "version": "Immutable commit e9460d1b22ead1c6a72eeac37fb2ec0dc01aeb1d; living page reported last update 2026-10-06",
+      "readStatus": "passages-read",
+      "passages": [
+        "2.2.2 Headers: CORS safelist",
+        "2.2.6 Responses: network error and opaque response",
+        "3.3.3 HTTP responses",
+        "4.8 CORS-preflight fetch",
+        "4.9 CORS-preflight cache",
+        "5.6 Fetch methods, response handling step 12.3"
+      ],
+      "readerLineRanges": [
+        [
+          540,
+          562
+        ],
+        [
+          1249,
+          1273
+        ],
+        [
+          3270,
+          3323
+        ],
+        [
+          4707,
+          4754
+        ]
+      ],
+      "limitation": "Standard behavior does not identify the saved failure's cause. Line numbers are web-reader locations, not source-file pins."
+    },
+    {
+      "id": "origin",
+      "title": "RFC 6454: The Web Origin Concept",
+      "url": "https://www.rfc-editor.org/rfc/rfc6454.html",
+      "version": "RFC 6454, December 2011",
+      "readStatus": "passages-read",
+      "passages": [
+        "3.2 Origin examples",
+        "5 Comparing Origins",
+        "6 Serializing Origins"
+      ],
+      "readerLineRanges": [
+        [
+          329,
+          345
+        ],
+        [
+          570,
+          580
+        ]
+      ]
+    },
+    {
+      "id": "lna-draft",
+      "title": "Local Network Access",
+      "url": "https://wicg.github.io/local-network-access/",
+      "version": "Draft Community Group Report, 2026-08-07",
+      "readStatus": "passages-read",
+      "passages": [
+        "1 Introduction",
+        "2.1 IP address space",
+        "2.2 Local network request",
+        "2.3 Permission",
+        "2.4 Secure contexts"
+      ],
+      "readerLineRanges": [
+        [
+          107,
+          192
+        ]
+      ],
+      "limitation": "Draft and implementation note are not an installed Chrome 155 behavior guarantee; rollout note differs from Chrome 142 release-note scope."
+    },
+    {
+      "id": "chrome142",
+      "title": "Chrome 142 release notes",
+      "url": "https://developer.chrome.com/release-notes/142",
+      "version": "Stable 2025-10-28",
+      "readStatus": "passages-read",
+      "passages": [
+        "Security: Local network access restrictions"
+      ],
+      "readerLineRanges": [
+        [
+          126,
+          135
+        ]
+      ]
+    },
+    {
+      "id": "chrome145",
+      "title": "Chrome 145 release notes",
+      "url": "https://developer.chrome.com/release-notes/145",
+      "version": "Stable 2026-02-10",
+      "readStatus": "passages-read",
+      "passages": [
+        "Local Network Access split permissions"
+      ],
+      "readerLineRanges": [
+        [
+          210,
+          214
+        ]
+      ]
+    },
+    {
+      "id": "lna-blog",
+      "title": "New permission prompt for Local Network Access",
+      "url": "https://developer.chrome.com/blog/local-network-access",
+      "version": "Published 2025-06-09; update 2025-09-29",
+      "readStatus": "passages-read",
+      "passages": [
+        "Permission approach replacing paused PNA",
+        "Initial milestone scope"
+      ],
+      "readerLineRanges": [
+        [
+          46,
+          71
+        ]
+      ],
+      "limitation": "Historical launch context, not current Chrome 155 scope authority."
+    },
+    {
+      "id": "cdp-network",
+      "title": "Chrome DevTools Protocol: Network domain source",
+      "url": "https://github.com/ChromeDevTools/devtools-protocol/blob/master/pdl/domains/Network.pdl",
+      "readUrl": "https://raw.githubusercontent.com/ChromeDevTools/devtools-protocol/master/pdl/domains/Network.pdl",
+      "version": "master retrieved 2026-10-15; not revision-pinned",
+      "readStatus": "passages-read",
+      "passages": [
+        "BlockedReason and CorsError",
+        "Response",
+        "Initiator",
+        "loadingFailed",
+        "ClientSecurityState",
+        "requestWillBeSentExtraInfo",
+        "responseReceivedExtraInfo"
+      ],
+      "readerLineRanges": [
+        [
+          272,
+          334
+        ],
+        [
+          408,
+          467
+        ],
+        [
+          511,
+          534
+        ],
+        [
+          1205,
+          1221
+        ],
+        [
+          1560,
+          1564
+        ],
+        [
+          1604,
+          1653
+        ]
+      ],
+      "limitation": "Tip-of-tree schema does not guarantee every field/event exists in installed Chrome 155; optional fields and event ordering require cautious interpretation."
+    },
+    {
+      "id": "cdp-audits",
+      "title": "Chrome DevTools Protocol: Audits domain source",
+      "url": "https://github.com/ChromeDevTools/devtools-protocol/blob/master/pdl/domains/Audits.pdl",
+      "readUrl": "https://raw.githubusercontent.com/ChromeDevTools/devtools-protocol/master/pdl/domains/Audits.pdl",
+      "version": "master retrieved 2026-10-15; not revision-pinned",
+      "readStatus": "passages-read",
+      "passages": [
+        "CorsIssueDetails",
+        "InspectorIssueDetails",
+        "enable",
+        "issueAdded"
+      ],
+      "readerLineRanges": [
+        [
+          240,
+          250
+        ],
+        [
+          763,
+          809
+        ],
+        [
+          832,
+          847
+        ]
+      ],
+      "limitation": "Previously collected issues may be delivered when enabled; correlate to the attempt."
+    },
+    {
+      "id": "network-reference",
+      "title": "Chrome DevTools Network features reference",
+      "url": "https://developer.chrome.com/docs/devtools/network/reference",
+      "version": "Current page retrieved 2026-10-15",
+      "readStatus": "passages-read",
+      "passages": [
+        "Status column",
+        "Provisional headers",
+        "Timing",
+        "Recording requests",
+        "Sanitized HAR"
+      ],
+      "readerLineRanges": [
+        [
+          357,
+          360
+        ],
+        [
+          493,
+          500
+        ],
+        [
+          552,
+          586
+        ],
+        [
+          602,
+          609
+        ],
+        [
+          628,
+          639
+        ]
+      ]
+    },
+    {
+      "id": "net-errors",
+      "title": "Chromium network error definitions",
+      "url": "https://github.com/chromium/chromium/blob/main/net/base/net_error_list.h",
+      "readUrl": "https://raw.githubusercontent.com/chromium/chromium/main/net/base/net_error_list.h",
+      "version": "main retrieved 2026-10-15; not revision-pinned",
+      "readStatus": "passages-read",
+      "passages": [
+        "Local-network permission error",
+        "Connection errors",
+        "Empty/invalid response",
+        "HTTP response-code caveat",
+        "IP-address-space and LNA errors"
+      ],
+      "readerLineRanges": [
+        [
+          133,
+          172
+        ],
+        [
+          592,
+          605
+        ],
+        [
+          774,
+          800
+        ]
+      ],
+      "limitation": "Definitions classify a captured error; they do not establish which occurred."
+    },
+    {
+      "id": "chrome155-limited",
+      "title": "ChromeStatus Chrome 155 release notes",
+      "url": "https://chromestatus.com/release-notes/155",
+      "version": "Retrieved page labeled Preview; stable schedule 2026-10-06",
+      "readStatus": "limited-page-read",
+      "passages": [
+        "Release header and retrieved text; no matching Local passage"
+      ],
+      "limitation": "developer.chrome.com/release-notes/155 failed to open. No matching retrieved passage is not evidence of no relevant change."
+    }
+  ],
+  "preparedDateUtc": "2026-10-15"
+}

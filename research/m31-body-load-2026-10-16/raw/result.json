@@ -1,0 +1,109 @@
+{
+  "sourceCommit": "e60702197dde11893f01f01496edafbefb4a43de",
+  "scope": "One complete static field-to-body-load GPU feasibility query on each of four fresh families. Original-R direct rotor/thrust/roll/pitch/nominal-yaw targets; no dynamics, world rotation, timing comparison or physical-validation claim.",
+  "cases": [],
+  "counts": {
+    "constantSetups": 1,
+    "controlBuilds": 1,
+    "controlViConstructions": 8,
+    "controlPairConstruction": 15,
+    "controlRootConstruction": 146,
+    "controlReferenceCalls": 1,
+    "controlPairEvaluations": 30,
+    "referenceRootAttempts": 292,
+    "referenceBisectionSolves": 216,
+    "referenceBisectionIterations": 11330,
+    "hostOnlyCalls": 1,
+    "hostAdmissionControls": 13,
+    "prepareStates": 7,
+    "decoderControls": 16
+  },
+  "qualified": false,
+  "terminal": true,
+  "browserVersion": "155.0.8059.80",
+  "status": "failed",
+  "error": {
+    "name": "Error",
+    "message": "Frozen browser version"
+  },
+  "context": "browser initialization",
+  "sinkClosure": {
+    "activeWrites": 0,
+    "reservations": [],
+    "closed": true
+  },
+  "privateErrorReceipt": {
+    "bytes": 441,
+    "sha256": "5dca420332a1b6fb2e45f093748448be920b4b2cbcee67a53cbfd05fb1be435d",
+    "disclosure": "Full exceptions retained privately; public first-line errors redact local paths, profiles, transport nonce and process identities."
+  },
+  "checks": 4769,
+  "elapsedSeconds": 4.986785000000001,
+  "files": [
+    {
+      "name": "control-host-only-spec.json",
+      "bytes": 72,
+      "sha256": "0872e1a29335d67a0a0b8390611de00808b584980e3a615714316b90920975b1"
+    },
+    {
+      "name": "control-metadata.json",
+      "bytes": 16957,
+      "sha256": "2385b2887b708f8b4acda95438f77f720045c1ad353c1a52738d94c7169110a4"
+    },
+    {
+      "name": "controls-host-only-result.json",
+      "bytes": 4544,
+      "sha256": "ee3a9d14e34c6dbb387566f0d1c36418b008db03af8cb031059e1ae440222a55"
+    },
+    {
+      "name": "controls-pairs-input.u32",
+      "bytes": 3840,
+      "sha256": "f60f97b7ff02427b3a4e8546315a2a31225f2bee49888ab2043bf2b1b5fafcc6"
+    },
+    {
+      "name": "controls-pairs-original.f64",
+      "bytes": 1920,
+      "sha256": "e6f6998a194cd36bce386f967a5a43b84e69b5e0c0ea0b5176484af80f998fbf"
+    },
+    {
+      "name": "controls-reference-Q-roots.bin",
+      "bytes": 14016,
+      "sha256": "0f6e7cdb88a2c4938da6fdcf67e75d1de21586adf38bef7857c0edcd5767325e"
+    },
+    {
+      "name": "controls-reference-R-roots.bin",
+      "bytes": 14016,
+      "sha256": "196c0f01242dec1d586d4561b9a8042b74ccc465f2dc0a6de599dec7dd091528"
+    },
+    {
+      "name": "controls-reference-pairs.json",
+      "bytes": 6324,
+      "sha256": "adecf5f6289b5952fef3fe520592e6d14f8945061a196a0b62cbf7c807e77edd"
+    },
+    {
+      "name": "controls-reference-status.json",
+      "bytes": 369,
+      "sha256": "fd336db836f2eb7bf2925ec2c73bfd454af7c3f2ec934aef17d83c0ccd495e07"
+    },
+    {
+      "name": "controls-roots-input.u32",
+      "bytes": 37376,
+      "sha256": "92dd301cbd17e608fe791cd6ed6ff0ef525d17e5ff872a0d587ff55f8f25e156"
+    },
+    {
+      "name": "controls-roots-original.f64",
+      "bytes": 2336,
+      "sha256": "02d0f7f61b07c3fe6a1985ca1386da33d55b706f55ad5927937be4aa20ca8e31"
+    },
+    {
+      "name": "scientific-constants-and-gates.json",
+      "bytes": 2422,
+      "sha256": "2eeffbe666a645f40f0a7c97d061b1525aadc9f1a34c9b6d8c867180eb7d814b"
+    },
+    {
+      "name": "started.json",
+      "bytes": 5048,
+      "sha256": "39bfbaf58cb41acb17971b8bfbe10826eeca7e000a05d67e64f61413cb917b55"
+    }
+  ]
+}

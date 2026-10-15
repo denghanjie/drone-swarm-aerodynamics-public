@@ -1,0 +1,913 @@
+{
+  "schemaVersion": 1,
+  "bindingState": "bound-unqualified-records",
+  "scope": "Byte-bound retained evidence with explicit failed independent integrity review. Display is not scientific qualification.",
+  "nSources": 5000,
+  "declaredOrigins": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      64,
+      -32,
+      16
+    ]
+  ],
+  "declaredArms": [
+    "A",
+    "B",
+    "C"
+  ],
+  "receiverIds": [
+    749,
+    500,
+    2250,
+    4750
+  ],
+  "receiverIdsFile": "generated-receiver-ids.u32",
+  "sourceCommit": "ccafbd9b9fd3a3cdd7ffacb5fb360ee5f3dc1abc",
+  "reviewContract": {
+    "bound": true,
+    "version": 2,
+    "displayMode": "terminal-review-failed",
+    "integrityPassRequiredForQualification": true,
+    "checkerSHA256": "82c22b704ca1ace26caa73d636b58375c4f3bbb9bbca77c507f143e3d76b20b6",
+    "publicInputIndexSHA256": "d230cf736db74c1676096cc171727998ae78d691087bb1fde4f4068ac5a1269d",
+    "closureSHA256": "581490dbd2a000be0a6917bdd41b295513150e721886801576666e6ca56edce8"
+  },
+  "initialSelection": {
+    "origin": 1,
+    "arm": "C",
+    "selection": 0,
+    "rotor": 2,
+    "source": 1249,
+    "color": "error-T:C-R"
+  },
+  "files": {
+    "freeze": {
+      "url": "../freeze.json",
+      "bytes": 11238,
+      "sha256": "ccfeac8a7b6386f647d00899933757004146f4e01f8b135eaf73389190f9efaa",
+      "format": "json",
+      "label": "freeze"
+    },
+    "result": {
+      "url": "../results/result.json",
+      "bytes": 766836,
+      "sha256": "0d73b7b733a2203d72dce38beb8426fcc290866c239e7bfc818acca8d1d2991e",
+      "format": "json",
+      "label": "result"
+    },
+    "budget": {
+      "url": "../results/budget.json",
+      "bytes": 975,
+      "sha256": "616db4a22de79e46a52475cb1865b920dbd27657b885eb60c01fbcdff0a63d8f",
+      "format": "json",
+      "label": "budget"
+    },
+    "config.json": {
+      "url": "../config.json",
+      "bytes": 6014,
+      "sha256": "729d2e93573f9a4809e21386614c8cba5d0700a3db3cf8fde1e79972527dbb7d",
+      "repoPath": "research/m31-coordinate-origin-2026-10-16/config.json",
+      "format": "json",
+      "label": "config.json"
+    },
+    "schema.json": {
+      "url": "../schema.json",
+      "bytes": 9519,
+      "sha256": "6085989e7d942d80a5afc095e61f66d899d4270b8822e6812e12fdc5b585bcc7",
+      "repoPath": "research/m31-coordinate-origin-2026-10-16/schema.json",
+      "format": "json",
+      "label": "schema.json"
+    },
+    "PROTOCOL.md": {
+      "url": "../PROTOCOL.md",
+      "bytes": 11711,
+      "sha256": "e51443bf054924b64687e5722c47b74d73d6f38ea8b93c747c63c8a241508214",
+      "repoPath": "research/m31-coordinate-origin-2026-10-16/PROTOCOL.md",
+      "format": "text",
+      "label": "PROTOCOL.md"
+    },
+    "KERNEL-CONTRACT.md": {
+      "url": "../KERNEL-CONTRACT.md",
+      "bytes": 13217,
+      "sha256": "83b79fbb9831bc1603763da07e65944387f628aa0b38432300d55cf2b72056d7",
+      "repoPath": "research/m31-coordinate-origin-2026-10-16/KERNEL-CONTRACT.md",
+      "format": "text",
+      "label": "KERNEL-CONTRACT.md"
+    },
+    "generated-receiver-ids.u32": {
+      "url": "../raw/generated-receiver-ids.u32",
+      "bytes": 16,
+      "sha256": "09e78aefce1235599205b2d129ff1aef33f6dda6276c456a040c1024129a05ff",
+      "rawName": "generated-receiver-ids.u32",
+      "format": "binary",
+      "label": "generated-receiver-ids.u32"
+    },
+    "o0-states.f64": {
+      "url": "../raw/o0-states.f64",
+      "bytes": 680000,
+      "sha256": "d3a40031b40c275fdbcd18b45ec606443c05cc12c7885a4a44dc913c112c9aff",
+      "rawName": "o0-states.f64",
+      "format": "binary",
+      "label": "o0-states.f64"
+    },
+    "o0-R-prepared-offsets.f64": {
+      "url": "../raw/o0-R-prepared-offsets.f64",
+      "bytes": 512,
+      "sha256": "f55abd9d03429c8742534fdd786ef62a2419cc7b28815ab6e942e97241371e44",
+      "rawName": "o0-R-prepared-offsets.f64",
+      "format": "binary",
+      "label": "o0-R-prepared-offsets.f64"
+    },
+    "o0-R-metadata.u32": {
+      "url": "../raw/o0-R-metadata.u32",
+      "bytes": 2560000,
+      "sha256": "1670db67c751751ad3a3570e72e7cfcd1377856b60e20ab9300ffee3485d14d5",
+      "rawName": "o0-R-metadata.u32",
+      "format": "binary",
+      "label": "o0-R-metadata.u32"
+    },
+    "o0-R-scalars.f64": {
+      "url": "../raw/o0-R-scalars.f64",
+      "bytes": 11520000,
+      "sha256": "4a5777d83881b6ba58635842e948d570aa0150309e6bdf24a602040587a322e5",
+      "rawName": "o0-R-scalars.f64",
+      "format": "binary",
+      "label": "o0-R-scalars.f64"
+    },
+    "o0-R-terms.f64": {
+      "url": "../raw/o0-R-terms.f64",
+      "bytes": 640000,
+      "sha256": "279e47c25305211dd816784e7915c39b2b060b1b19ee89e5422967988fceb428",
+      "rawName": "o0-R-terms.f64",
+      "format": "binary",
+      "label": "o0-R-terms.f64"
+    },
+    "o0-R-ordinarySums.f64": {
+      "url": "../raw/o0-R-ordinarySums.f64",
+      "bytes": 128,
+      "sha256": "1855c1ca027821939231f8f09aa30541f8a85d019f1a801aa3c3b0e0c1094893",
+      "rawName": "o0-R-ordinarySums.f64",
+      "format": "binary",
+      "label": "o0-R-ordinarySums.f64"
+    },
+    "o0-R-compensatedSums.f64": {
+      "url": "../raw/o0-R-compensatedSums.f64",
+      "bytes": 128,
+      "sha256": "f9c51a93d024d22d329e801e79c50a2a83cae3bcdcb47be1c0c9c778a7a66a0f",
+      "rawName": "o0-R-compensatedSums.f64",
+      "format": "binary",
+      "label": "o0-R-compensatedSums.f64"
+    },
+    "o0-R-sumValidity.u8": {
+      "url": "../raw/o0-R-sumValidity.u8",
+      "bytes": 16,
+      "sha256": "cc8cd41cef907c4d216069122c4b89936211361f9050a717a1e37ad1862e952f",
+      "rawName": "o0-R-sumValidity.u8",
+      "format": "binary",
+      "label": "o0-R-sumValidity.u8"
+    },
+    "o0-R-counts.json": {
+      "url": "../raw/o0-R-counts.json",
+      "bytes": 523,
+      "sha256": "dcaf0651d5d940928f6ffa9592da0ced8f8c65fee96fbe573868b2a2dde20127",
+      "rawName": "o0-R-counts.json",
+      "format": "json",
+      "label": "o0-R-counts.json"
+    },
+    "o0-R-assessment.json": {
+      "url": "../raw/o0-R-assessment.json",
+      "bytes": 22620,
+      "sha256": "3c1e6d2a757ad80f729603ee216724cbc5bcee9a9d8a84ff865ca21f89b70b61",
+      "rawName": "o0-R-assessment.json",
+      "format": "json",
+      "label": "o0-R-assessment.json"
+    },
+    "o0-Q0-metadata.u32": {
+      "url": "../raw/o0-Q0-metadata.u32",
+      "bytes": 2560000,
+      "sha256": "1670db67c751751ad3a3570e72e7cfcd1377856b60e20ab9300ffee3485d14d5",
+      "rawName": "o0-Q0-metadata.u32",
+      "format": "binary",
+      "label": "o0-Q0-metadata.u32"
+    },
+    "o0-Q0-scalars.f64": {
+      "url": "../raw/o0-Q0-scalars.f64",
+      "bytes": 11520000,
+      "sha256": "5b3adbe2ea0317de4d715b1a9efc8241d8371e2b32cc4ca3532057ad86ccea11",
+      "rawName": "o0-Q0-scalars.f64",
+      "format": "binary",
+      "label": "o0-Q0-scalars.f64"
+    },
+    "o0-Q0-terms.f64": {
+      "url": "../raw/o0-Q0-terms.f64",
+      "bytes": 640000,
+      "sha256": "d0ea867a5a9e6c98296c268e8bf8038689a8cdccd49af3f28953afdbfd1c0812",
+      "rawName": "o0-Q0-terms.f64",
+      "format": "binary",
+      "label": "o0-Q0-terms.f64"
+    },
+    "o0-Q0-ordinarySums.f64": {
+      "url": "../raw/o0-Q0-ordinarySums.f64",
+      "bytes": 128,
+      "sha256": "ce6363a9ee34c0341bee2c64f9ca599b29508b45ae05ee92b88dba5b15b57853",
+      "rawName": "o0-Q0-ordinarySums.f64",
+      "format": "binary",
+      "label": "o0-Q0-ordinarySums.f64"
+    },
+    "o0-Q0-compensatedSums.f64": {
+      "url": "../raw/o0-Q0-compensatedSums.f64",
+      "bytes": 128,
+      "sha256": "14dcaf14ffc18f27561eaeba202807402cf5b10f6bea21f13be53a440a16d7b8",
+      "rawName": "o0-Q0-compensatedSums.f64",
+      "format": "binary",
+      "label": "o0-Q0-compensatedSums.f64"
+    },
+    "o0-Q0-sumValidity.u8": {
+      "url": "../raw/o0-Q0-sumValidity.u8",
+      "bytes": 16,
+      "sha256": "cc8cd41cef907c4d216069122c4b89936211361f9050a717a1e37ad1862e952f",
+      "rawName": "o0-Q0-sumValidity.u8",
+      "format": "binary",
+      "label": "o0-Q0-sumValidity.u8"
+    },
+    "o0-Q0-counts.json": {
+      "url": "../raw/o0-Q0-counts.json",
+      "bytes": 523,
+      "sha256": "dcaf0651d5d940928f6ffa9592da0ced8f8c65fee96fbe573868b2a2dde20127",
+      "rawName": "o0-Q0-counts.json",
+      "format": "json",
+      "label": "o0-Q0-counts.json"
+    },
+    "o0-Q0-assessment.json": {
+      "url": "../raw/o0-Q0-assessment.json",
+      "bytes": 51213,
+      "sha256": "9fc7a60219990f0376f78cc05f13c26144283d3523cd340c7550b02ab3b2ebe3",
+      "rawName": "o0-Q0-assessment.json",
+      "format": "json",
+      "label": "o0-Q0-assessment.json"
+    },
+    "o0-Q1-metadata.u32": {
+      "url": "../raw/o0-Q1-metadata.u32",
+      "bytes": 2560000,
+      "sha256": "1670db67c751751ad3a3570e72e7cfcd1377856b60e20ab9300ffee3485d14d5",
+      "rawName": "o0-Q1-metadata.u32",
+      "format": "binary",
+      "label": "o0-Q1-metadata.u32"
+    },
+    "o0-Q1-scalars.f64": {
+      "url": "../raw/o0-Q1-scalars.f64",
+      "bytes": 11520000,
+      "sha256": "5b3adbe2ea0317de4d715b1a9efc8241d8371e2b32cc4ca3532057ad86ccea11",
+      "rawName": "o0-Q1-scalars.f64",
+      "format": "binary",
+      "label": "o0-Q1-scalars.f64"
+    },
+    "o0-Q1-terms.f64": {
+      "url": "../raw/o0-Q1-terms.f64",
+      "bytes": 640000,
+      "sha256": "d0ea867a5a9e6c98296c268e8bf8038689a8cdccd49af3f28953afdbfd1c0812",
+      "rawName": "o0-Q1-terms.f64",
+      "format": "binary",
+      "label": "o0-Q1-terms.f64"
+    },
+    "o0-Q1-ordinarySums.f64": {
+      "url": "../raw/o0-Q1-ordinarySums.f64",
+      "bytes": 128,
+      "sha256": "ce6363a9ee34c0341bee2c64f9ca599b29508b45ae05ee92b88dba5b15b57853",
+      "rawName": "o0-Q1-ordinarySums.f64",
+      "format": "binary",
+      "label": "o0-Q1-ordinarySums.f64"
+    },
+    "o0-Q1-compensatedSums.f64": {
+      "url": "../raw/o0-Q1-compensatedSums.f64",
+      "bytes": 128,
+      "sha256": "14dcaf14ffc18f27561eaeba202807402cf5b10f6bea21f13be53a440a16d7b8",
+      "rawName": "o0-Q1-compensatedSums.f64",
+      "format": "binary",
+      "label": "o0-Q1-compensatedSums.f64"
+    },
+    "o0-Q1-sumValidity.u8": {
+      "url": "../raw/o0-Q1-sumValidity.u8",
+      "bytes": 16,
+      "sha256": "cc8cd41cef907c4d216069122c4b89936211361f9050a717a1e37ad1862e952f",
+      "rawName": "o0-Q1-sumValidity.u8",
+      "format": "binary",
+      "label": "o0-Q1-sumValidity.u8"
+    },
+    "o0-Q1-counts.json": {
+      "url": "../raw/o0-Q1-counts.json",
+      "bytes": 523,
+      "sha256": "dcaf0651d5d940928f6ffa9592da0ced8f8c65fee96fbe573868b2a2dde20127",
+      "rawName": "o0-Q1-counts.json",
+      "format": "json",
+      "label": "o0-Q1-counts.json"
+    },
+    "o0-Q1-assessment.json": {
+      "url": "../raw/o0-Q1-assessment.json",
+      "bytes": 51213,
+      "sha256": "9fc7a60219990f0376f78cc05f13c26144283d3523cd340c7550b02ab3b2ebe3",
+      "rawName": "o0-Q1-assessment.json",
+      "format": "json",
+      "label": "o0-Q1-assessment.json"
+    },
+    "o0-A-terms-gpu.u32": {
+      "url": "../raw/o0-A-terms-gpu.u32",
+      "bytes": 8320000,
+      "sha256": "2ac0bd7e1aeab3dee6e14aa6d244eb392bfa3a7c49a2e52e732ef2072d1d47ca",
+      "rawName": "o0-A-terms-gpu.u32",
+      "format": "binary",
+      "label": "o0-A-terms-gpu.u32"
+    },
+    "o0-A-reduce-gpu.u32": {
+      "url": "../raw/o0-A-reduce-gpu.u32",
+      "bytes": 512,
+      "sha256": "72e549f3186038f5564a98eaf0f6674f9c798487a7d01c1dbb197146a82f169a",
+      "rawName": "o0-A-reduce-gpu.u32",
+      "format": "binary",
+      "label": "o0-A-reduce-gpu.u32"
+    },
+    "o0-A-terms-assessment.json": {
+      "url": "../raw/o0-A-terms-assessment.json",
+      "bytes": 50091,
+      "sha256": "3c76e695c1b44082712e648695cb825ddf3a98867ba05ca918dba543124379e8",
+      "rawName": "o0-A-terms-assessment.json",
+      "format": "json",
+      "label": "o0-A-terms-assessment.json"
+    },
+    "o0-A-serial-assessment.json": {
+      "url": "../raw/o0-A-serial-assessment.json",
+      "bytes": 58698,
+      "sha256": "3881153b8c4707842dc20429a6e3e13c23f5f1d56f828d7e93575ad3e6f92845",
+      "rawName": "o0-A-serial-assessment.json",
+      "format": "json",
+      "label": "o0-A-serial-assessment.json"
+    },
+    "o0-A-disposition.json": {
+      "url": "../raw/o0-A-disposition.json",
+      "bytes": 112846,
+      "sha256": "bb56a72c20b1c2d7289f0aedc67ad0825dc8d5d1a16b234dd9d88b4dd638d313",
+      "rawName": "o0-A-disposition.json",
+      "format": "json",
+      "label": "o0-A-disposition.json"
+    },
+    "o0-B-terms-gpu.u32": {
+      "url": "../raw/o0-B-terms-gpu.u32",
+      "bytes": 8320000,
+      "sha256": "cfa43166a22fcdb2d14554e192cd6afe20f65c25d72dafb81114724d649f2a95",
+      "rawName": "o0-B-terms-gpu.u32",
+      "format": "binary",
+      "label": "o0-B-terms-gpu.u32"
+    },
+    "o0-B-reduce-gpu.u32": {
+      "url": "../raw/o0-B-reduce-gpu.u32",
+      "bytes": 512,
+      "sha256": "eaa46adfab9d947fc7fa27a1a65327ea5e35c294c1fe830fdf6681a6097b3516",
+      "rawName": "o0-B-reduce-gpu.u32",
+      "format": "binary",
+      "label": "o0-B-reduce-gpu.u32"
+    },
+    "o0-B-terms-assessment.json": {
+      "url": "../raw/o0-B-terms-assessment.json",
+      "bytes": 50042,
+      "sha256": "bf0ac4c504933f8ef7a68566be7db128ce20ac0a688e3ca493e5bd391c2874ca",
+      "rawName": "o0-B-terms-assessment.json",
+      "format": "json",
+      "label": "o0-B-terms-assessment.json"
+    },
+    "o0-B-serial-assessment.json": {
+      "url": "../raw/o0-B-serial-assessment.json",
+      "bytes": 58680,
+      "sha256": "16c694b0c89c0ff3d447ad940f31dd4423ae86ae29e6b4442b2357507532c88f",
+      "rawName": "o0-B-serial-assessment.json",
+      "format": "json",
+      "label": "o0-B-serial-assessment.json"
+    },
+    "o0-B-disposition.json": {
+      "url": "../raw/o0-B-disposition.json",
+      "bytes": 112782,
+      "sha256": "11063f7e7caa4270c3502eebd01beacf9e94212d3926621075af6093a3867ef9",
+      "rawName": "o0-B-disposition.json",
+      "format": "json",
+      "label": "o0-B-disposition.json"
+    },
+    "o0-C-terms-gpu.u32": {
+      "url": "../raw/o0-C-terms-gpu.u32",
+      "bytes": 8320000,
+      "sha256": "cfa43166a22fcdb2d14554e192cd6afe20f65c25d72dafb81114724d649f2a95",
+      "rawName": "o0-C-terms-gpu.u32",
+      "format": "binary",
+      "label": "o0-C-terms-gpu.u32"
+    },
+    "o0-C-reduce-gpu.u32": {
+      "url": "../raw/o0-C-reduce-gpu.u32",
+      "bytes": 512,
+      "sha256": "eaa46adfab9d947fc7fa27a1a65327ea5e35c294c1fe830fdf6681a6097b3516",
+      "rawName": "o0-C-reduce-gpu.u32",
+      "format": "binary",
+      "label": "o0-C-reduce-gpu.u32"
+    },
+    "o0-C-terms-assessment.json": {
+      "url": "../raw/o0-C-terms-assessment.json",
+      "bytes": 50042,
+      "sha256": "bf0ac4c504933f8ef7a68566be7db128ce20ac0a688e3ca493e5bd391c2874ca",
+      "rawName": "o0-C-terms-assessment.json",
+      "format": "json",
+      "label": "o0-C-terms-assessment.json"
+    },
+    "o0-C-serial-assessment.json": {
+      "url": "../raw/o0-C-serial-assessment.json",
+      "bytes": 58680,
+      "sha256": "16c694b0c89c0ff3d447ad940f31dd4423ae86ae29e6b4442b2357507532c88f",
+      "rawName": "o0-C-serial-assessment.json",
+      "format": "json",
+      "label": "o0-C-serial-assessment.json"
+    },
+    "o0-C-disposition.json": {
+      "url": "../raw/o0-C-disposition.json",
+      "bytes": 112782,
+      "sha256": "398089dea2af15e922e06964abf444056b483879df35ea72e6341d87aac7e1d9",
+      "rawName": "o0-C-disposition.json",
+      "format": "json",
+      "label": "o0-C-disposition.json"
+    },
+    "o0-B-A-vectors-assessment.json": {
+      "url": "../raw/o0-B-A-vectors-assessment.json",
+      "bytes": 1605,
+      "sha256": "616605e3654d144102d2efefbc084a891edde3fca44bd8e510fc78b2584cc43c",
+      "rawName": "o0-B-A-vectors-assessment.json",
+      "format": "json",
+      "label": "o0-B-A-vectors-assessment.json"
+    },
+    "o0-C-B-vectors-assessment.json": {
+      "url": "../raw/o0-C-B-vectors-assessment.json",
+      "bytes": 1519,
+      "sha256": "581a232575a758aac67f9687247255d338388f53bd9be2228a35c2ba7b5fe7ac",
+      "rawName": "o0-C-B-vectors-assessment.json",
+      "format": "json",
+      "label": "o0-C-B-vectors-assessment.json"
+    },
+    "o0-Q1-Q0-assessment.json": {
+      "url": "../raw/o0-Q1-Q0-assessment.json",
+      "bytes": 12534,
+      "sha256": "d498e30f03ed55ff25314b4beb5cffa5a54bd938a8a3792bb90b3e3ed68befa7",
+      "rawName": "o0-Q1-Q0-assessment.json",
+      "format": "json",
+      "label": "o0-Q1-Q0-assessment.json"
+    },
+    "o1-states.f64": {
+      "url": "../raw/o1-states.f64",
+      "bytes": 680000,
+      "sha256": "e47515221176e5aec5413f3cb5074b5b06f0a5e6a77962615d42e18d52abf639",
+      "rawName": "o1-states.f64",
+      "format": "binary",
+      "label": "o1-states.f64"
+    },
+    "o1-R-prepared-offsets.f64": {
+      "url": "../raw/o1-R-prepared-offsets.f64",
+      "bytes": 512,
+      "sha256": "f55abd9d03429c8742534fdd786ef62a2419cc7b28815ab6e942e97241371e44",
+      "rawName": "o1-R-prepared-offsets.f64",
+      "format": "binary",
+      "label": "o1-R-prepared-offsets.f64"
+    },
+    "o1-R-metadata.u32": {
+      "url": "../raw/o1-R-metadata.u32",
+      "bytes": 2560000,
+      "sha256": "1670db67c751751ad3a3570e72e7cfcd1377856b60e20ab9300ffee3485d14d5",
+      "rawName": "o1-R-metadata.u32",
+      "format": "binary",
+      "label": "o1-R-metadata.u32"
+    },
+    "o1-R-scalars.f64": {
+      "url": "../raw/o1-R-scalars.f64",
+      "bytes": 11520000,
+      "sha256": "8dcaeed5076a82207f2e511461be6a8de0b4e91e780818d3b442982cfbc4b665",
+      "rawName": "o1-R-scalars.f64",
+      "format": "binary",
+      "label": "o1-R-scalars.f64"
+    },
+    "o1-R-terms.f64": {
+      "url": "../raw/o1-R-terms.f64",
+      "bytes": 640000,
+      "sha256": "bbf93a061ff98244d5c101cdc99d6fbe345b1cb2ee6a7920e939e92c0c5ae669",
+      "rawName": "o1-R-terms.f64",
+      "format": "binary",
+      "label": "o1-R-terms.f64"
+    },
+    "o1-R-ordinarySums.f64": {
+      "url": "../raw/o1-R-ordinarySums.f64",
+      "bytes": 128,
+      "sha256": "a2b76b8e0c3b16b2acb55b6a5b879e7d4ff6c7f1826dc9284c1061955f280f03",
+      "rawName": "o1-R-ordinarySums.f64",
+      "format": "binary",
+      "label": "o1-R-ordinarySums.f64"
+    },
+    "o1-R-compensatedSums.f64": {
+      "url": "../raw/o1-R-compensatedSums.f64",
+      "bytes": 128,
+      "sha256": "526216214841e76b337bff3cc4c7768ab804ac0c19a826039d9b0a7465d3a128",
+      "rawName": "o1-R-compensatedSums.f64",
+      "format": "binary",
+      "label": "o1-R-compensatedSums.f64"
+    },
+    "o1-R-sumValidity.u8": {
+      "url": "../raw/o1-R-sumValidity.u8",
+      "bytes": 16,
+      "sha256": "cc8cd41cef907c4d216069122c4b89936211361f9050a717a1e37ad1862e952f",
+      "rawName": "o1-R-sumValidity.u8",
+      "format": "binary",
+      "label": "o1-R-sumValidity.u8"
+    },
+    "o1-R-counts.json": {
+      "url": "../raw/o1-R-counts.json",
+      "bytes": 523,
+      "sha256": "dcaf0651d5d940928f6ffa9592da0ced8f8c65fee96fbe573868b2a2dde20127",
+      "rawName": "o1-R-counts.json",
+      "format": "json",
+      "label": "o1-R-counts.json"
+    },
+    "o1-R-assessment.json": {
+      "url": "../raw/o1-R-assessment.json",
+      "bytes": 22593,
+      "sha256": "b1aa26766b0a58b7e896f3dba19ddbc11a0b20e4dc5be176b033c89991357f11",
+      "rawName": "o1-R-assessment.json",
+      "format": "json",
+      "label": "o1-R-assessment.json"
+    },
+    "o1-Q0-metadata.u32": {
+      "url": "../raw/o1-Q0-metadata.u32",
+      "bytes": 2560000,
+      "sha256": "1670db67c751751ad3a3570e72e7cfcd1377856b60e20ab9300ffee3485d14d5",
+      "rawName": "o1-Q0-metadata.u32",
+      "format": "binary",
+      "label": "o1-Q0-metadata.u32"
+    },
+    "o1-Q0-scalars.f64": {
+      "url": "../raw/o1-Q0-scalars.f64",
+      "bytes": 11520000,
+      "sha256": "60cb70d3bc262c836592a0f2ea0db0886061cbd20e870252a9dba245af365636",
+      "rawName": "o1-Q0-scalars.f64",
+      "format": "binary",
+      "label": "o1-Q0-scalars.f64"
+    },
+    "o1-Q0-terms.f64": {
+      "url": "../raw/o1-Q0-terms.f64",
+      "bytes": 640000,
+      "sha256": "ccc9518395314c56a21c6424d09f8c6303503cc7754a23cde29c92f6b3e57301",
+      "rawName": "o1-Q0-terms.f64",
+      "format": "binary",
+      "label": "o1-Q0-terms.f64"
+    },
+    "o1-Q0-ordinarySums.f64": {
+      "url": "../raw/o1-Q0-ordinarySums.f64",
+      "bytes": 128,
+      "sha256": "f52192e214d367b913e514983581cd4e2a660ab2ba5d66e0db625581f5169060",
+      "rawName": "o1-Q0-ordinarySums.f64",
+      "format": "binary",
+      "label": "o1-Q0-ordinarySums.f64"
+    },
+    "o1-Q0-compensatedSums.f64": {
+      "url": "../raw/o1-Q0-compensatedSums.f64",
+      "bytes": 128,
+      "sha256": "c5301fc228bd15e7ee8eca44ad527eda6e5e040d5aaa46b5a04bc1750308452a",
+      "rawName": "o1-Q0-compensatedSums.f64",
+      "format": "binary",
+      "label": "o1-Q0-compensatedSums.f64"
+    },
+    "o1-Q0-sumValidity.u8": {
+      "url": "../raw/o1-Q0-sumValidity.u8",
+      "bytes": 16,
+      "sha256": "cc8cd41cef907c4d216069122c4b89936211361f9050a717a1e37ad1862e952f",
+      "rawName": "o1-Q0-sumValidity.u8",
+      "format": "binary",
+      "label": "o1-Q0-sumValidity.u8"
+    },
+    "o1-Q0-counts.json": {
+      "url": "../raw/o1-Q0-counts.json",
+      "bytes": 523,
+      "sha256": "dcaf0651d5d940928f6ffa9592da0ced8f8c65fee96fbe573868b2a2dde20127",
+      "rawName": "o1-Q0-counts.json",
+      "format": "json",
+      "label": "o1-Q0-counts.json"
+    },
+    "o1-Q0-assessment.json": {
+      "url": "../raw/o1-Q0-assessment.json",
+      "bytes": 52576,
+      "sha256": "d5c8de5351d6d05e9440f644e62816110ae291da765ea66c8d2d94b69cb657c4",
+      "rawName": "o1-Q0-assessment.json",
+      "format": "json",
+      "label": "o1-Q0-assessment.json"
+    },
+    "o1-Q1-metadata.u32": {
+      "url": "../raw/o1-Q1-metadata.u32",
+      "bytes": 2560000,
+      "sha256": "1670db67c751751ad3a3570e72e7cfcd1377856b60e20ab9300ffee3485d14d5",
+      "rawName": "o1-Q1-metadata.u32",
+      "format": "binary",
+      "label": "o1-Q1-metadata.u32"
+    },
+    "o1-Q1-scalars.f64": {
+      "url": "../raw/o1-Q1-scalars.f64",
+      "bytes": 11520000,
+      "sha256": "5b3adbe2ea0317de4d715b1a9efc8241d8371e2b32cc4ca3532057ad86ccea11",
+      "rawName": "o1-Q1-scalars.f64",
+      "format": "binary",
+      "label": "o1-Q1-scalars.f64"
+    },
+    "o1-Q1-terms.f64": {
+      "url": "../raw/o1-Q1-terms.f64",
+      "bytes": 640000,
+      "sha256": "d0ea867a5a9e6c98296c268e8bf8038689a8cdccd49af3f28953afdbfd1c0812",
+      "rawName": "o1-Q1-terms.f64",
+      "format": "binary",
+      "label": "o1-Q1-terms.f64"
+    },
+    "o1-Q1-ordinarySums.f64": {
+      "url": "../raw/o1-Q1-ordinarySums.f64",
+      "bytes": 128,
+      "sha256": "ce6363a9ee34c0341bee2c64f9ca599b29508b45ae05ee92b88dba5b15b57853",
+      "rawName": "o1-Q1-ordinarySums.f64",
+      "format": "binary",
+      "label": "o1-Q1-ordinarySums.f64"
+    },
+    "o1-Q1-compensatedSums.f64": {
+      "url": "../raw/o1-Q1-compensatedSums.f64",
+      "bytes": 128,
+      "sha256": "14dcaf14ffc18f27561eaeba202807402cf5b10f6bea21f13be53a440a16d7b8",
+      "rawName": "o1-Q1-compensatedSums.f64",
+      "format": "binary",
+      "label": "o1-Q1-compensatedSums.f64"
+    },
+    "o1-Q1-sumValidity.u8": {
+      "url": "../raw/o1-Q1-sumValidity.u8",
+      "bytes": 16,
+      "sha256": "cc8cd41cef907c4d216069122c4b89936211361f9050a717a1e37ad1862e952f",
+      "rawName": "o1-Q1-sumValidity.u8",
+      "format": "binary",
+      "label": "o1-Q1-sumValidity.u8"
+    },
+    "o1-Q1-counts.json": {
+      "url": "../raw/o1-Q1-counts.json",
+      "bytes": 523,
+      "sha256": "dcaf0651d5d940928f6ffa9592da0ced8f8c65fee96fbe573868b2a2dde20127",
+      "rawName": "o1-Q1-counts.json",
+      "format": "json",
+      "label": "o1-Q1-counts.json"
+    },
+    "o1-Q1-assessment.json": {
+      "url": "../raw/o1-Q1-assessment.json",
+      "bytes": 51186,
+      "sha256": "dbcc7edb46dec271c629ae367622e411c6bc83ea580a9ad9dcca938319d7c208",
+      "rawName": "o1-Q1-assessment.json",
+      "format": "json",
+      "label": "o1-Q1-assessment.json"
+    },
+    "o1-A-disposition.json": {
+      "url": "../raw/o1-A-disposition.json",
+      "bytes": 130,
+      "sha256": "8ad4867c306e382d0ede1f3b5fd318182f6c598e26a2159160ff844f416abc61",
+      "rawName": "o1-A-disposition.json",
+      "format": "json",
+      "label": "o1-A-disposition.json"
+    },
+    "o1-B-disposition.json": {
+      "url": "../raw/o1-B-disposition.json",
+      "bytes": 130,
+      "sha256": "8c4af85615facc335b98c0d5ab280ce7d5cda981288af5a46dd02f64b6fcfbb0",
+      "rawName": "o1-B-disposition.json",
+      "format": "json",
+      "label": "o1-B-disposition.json"
+    },
+    "o1-C-terms-gpu.u32": {
+      "url": "../raw/o1-C-terms-gpu.u32",
+      "bytes": 8320000,
+      "sha256": "d01eb2568b2c353ba5804f18af8de7f714160f8df59410c979bd8941e6de233d",
+      "rawName": "o1-C-terms-gpu.u32",
+      "format": "binary",
+      "label": "o1-C-terms-gpu.u32"
+    },
+    "o1-C-terms-assessment.json": {
+      "url": "../raw/o1-C-terms-assessment.json",
+      "bytes": 51545,
+      "sha256": "96a839c153869e9ae1e19b4a0409619b1b01d93002234a7ef1ca1628d4fe4c0b",
+      "rawName": "o1-C-terms-assessment.json",
+      "format": "json",
+      "label": "o1-C-terms-assessment.json"
+    },
+    "o1-C-disposition.json": {
+      "url": "../raw/o1-C-disposition.json",
+      "bytes": 54018,
+      "sha256": "64f3237b1e21fd3ddaaaaa3fef84736adaa2886f26cbb26d41ee37c9b011bd9c",
+      "rawName": "o1-C-disposition.json",
+      "format": "json",
+      "label": "o1-C-disposition.json"
+    },
+    "o1-Q1-Q0-assessment.json": {
+      "url": "../raw/o1-Q1-Q0-assessment.json",
+      "bytes": 21361,
+      "sha256": "2617f3d9a4ea35286bb52b6d9f4be39cc1173086d19ee5844547cdb73f2e29ac",
+      "rawName": "o1-Q1-Q0-assessment.json",
+      "format": "json",
+      "label": "o1-Q1-Q0-assessment.json"
+    },
+    "R-origin-contrast-assessment.json": {
+      "url": "../raw/R-origin-contrast-assessment.json",
+      "bytes": 20952,
+      "sha256": "4593fc5c0abbee2e3b1e3bf5a454b5c4f654f9ab6cacae659b57066922668e28",
+      "rawName": "R-origin-contrast-assessment.json",
+      "format": "json",
+      "label": "R-origin-contrast-assessment.json"
+    },
+    "controls-A-assessment.json": {
+      "url": "../raw/controls-A-assessment.json",
+      "bytes": 351,
+      "sha256": "879732baabac9f5f64dbbc46455e7cb4c912ef056d1c5687dc631b5fcd211957",
+      "rawName": "controls-A-assessment.json",
+      "format": "json",
+      "label": "controls-A-assessment.json"
+    },
+    "controls-B-assessment.json": {
+      "url": "../raw/controls-B-assessment.json",
+      "bytes": 351,
+      "sha256": "879732baabac9f5f64dbbc46455e7cb4c912ef056d1c5687dc631b5fcd211957",
+      "rawName": "controls-B-assessment.json",
+      "format": "json",
+      "label": "controls-B-assessment.json"
+    },
+    "controls-C-assessment.json": {
+      "url": "../raw/controls-C-assessment.json",
+      "bytes": 351,
+      "sha256": "bd6d36e554c92177456501d290fa28662d18bfc9db5ef0421aac46bafa397d1b",
+      "rawName": "controls-C-assessment.json",
+      "format": "json",
+      "label": "controls-C-assessment.json"
+    },
+    "cost-reconciliation.json": {
+      "url": "../raw/cost-reconciliation.json",
+      "bytes": 715,
+      "sha256": "cb6579826d97c889256eb1bbe4466993a2586d18ae1849075d2705648952a976",
+      "rawName": "cost-reconciliation.json",
+      "format": "json",
+      "label": "cost-reconciliation.json"
+    },
+    "review": {
+      "url": "../results/independent-review.json",
+      "bytes": 8012,
+      "sha256": "577272a4cfd22b1e283f2e5cbcea0978561b96c3fbdd3ee876d729083ed63276",
+      "format": "json",
+      "label": "Independent review \u2014 failed integrity"
+    },
+    "reviewClosure": {
+      "url": "../results/saved-review/runtime.json",
+      "bytes": 10167,
+      "sha256": "581490dbd2a000be0a6917bdd41b295513150e721886801576666e6ca56edce8",
+      "format": "json",
+      "label": "Terminal external review closure"
+    },
+    "reviewInputIndex": {
+      "url": "../results/saved-review/input-index.public.json",
+      "bytes": 48361,
+      "sha256": "d230cf736db74c1676096cc171727998ae78d691087bb1fde4f4068ac5a1269d",
+      "format": "json",
+      "label": "Public review input index"
+    },
+    "reviewPrepared": {
+      "url": "../results/saved-review/prepared-manifest.json",
+      "bytes": 13176,
+      "sha256": "90301055b15e2fec66e42a9284b978d9bdc7d66ff560a00a14fc098b14be88db",
+      "format": "json",
+      "label": "Prepared review artifact index"
+    },
+    "reviewChecker": {
+      "url": "../results/saved-review/checker.py",
+      "bytes": 49013,
+      "sha256": "82c22b704ca1ace26caa73d636b58375c4f3bbb9bbca77c507f143e3d76b20b6",
+      "format": "text",
+      "label": "Exact executed independent checker"
+    }
+  },
+  "origins": [
+    {
+      "id": 0,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "poses": "o0-states.f64",
+      "preparedOffsets": "o0-R-prepared-offsets.f64",
+      "references": {
+        "R": {
+          "metadata": "o0-R-metadata.u32",
+          "scalars": "o0-R-scalars.f64",
+          "terms": "o0-R-terms.f64",
+          "sums": "o0-R-ordinarySums.f64",
+          "compensatedSums": "o0-R-compensatedSums.f64",
+          "validity": "o0-R-sumValidity.u8",
+          "counts": "o0-R-counts.json"
+        },
+        "Q0": {
+          "metadata": "o0-Q0-metadata.u32",
+          "scalars": "o0-Q0-scalars.f64",
+          "terms": "o0-Q0-terms.f64",
+          "sums": "o0-Q0-ordinarySums.f64",
+          "compensatedSums": "o0-Q0-compensatedSums.f64",
+          "validity": "o0-Q0-sumValidity.u8",
+          "counts": "o0-Q0-counts.json"
+        },
+        "Q1": {
+          "metadata": "o0-Q1-metadata.u32",
+          "scalars": "o0-Q1-scalars.f64",
+          "terms": "o0-Q1-terms.f64",
+          "sums": "o0-Q1-ordinarySums.f64",
+          "compensatedSums": "o0-Q1-compensatedSums.f64",
+          "validity": "o0-Q1-sumValidity.u8",
+          "counts": "o0-Q1-counts.json"
+        }
+      }
+    },
+    {
+      "id": 1,
+      "offset": [
+        64,
+        -32,
+        16
+      ],
+      "poses": "o1-states.f64",
+      "preparedOffsets": "o1-R-prepared-offsets.f64",
+      "references": {
+        "R": {
+          "metadata": "o1-R-metadata.u32",
+          "scalars": "o1-R-scalars.f64",
+          "terms": "o1-R-terms.f64",
+          "sums": "o1-R-ordinarySums.f64",
+          "compensatedSums": "o1-R-compensatedSums.f64",
+          "validity": "o1-R-sumValidity.u8",
+          "counts": "o1-R-counts.json"
+        },
+        "Q0": {
+          "metadata": "o1-Q0-metadata.u32",
+          "scalars": "o1-Q0-scalars.f64",
+          "terms": "o1-Q0-terms.f64",
+          "sums": "o1-Q0-ordinarySums.f64",
+          "compensatedSums": "o1-Q0-compensatedSums.f64",
+          "validity": "o1-Q0-sumValidity.u8",
+          "counts": "o1-Q0-counts.json"
+        },
+        "Q1": {
+          "metadata": "o1-Q1-metadata.u32",
+          "scalars": "o1-Q1-scalars.f64",
+          "terms": "o1-Q1-terms.f64",
+          "sums": "o1-Q1-ordinarySums.f64",
+          "compensatedSums": "o1-Q1-compensatedSums.f64",
+          "validity": "o1-Q1-sumValidity.u8",
+          "counts": "o1-Q1-counts.json"
+        }
+      }
+    }
+  ],
+  "cells": [
+    {
+      "origin": 0,
+      "arm": "A",
+      "terms": "o0-A-terms-gpu.u32",
+      "serial": "o0-A-reduce-gpu.u32"
+    },
+    {
+      "origin": 0,
+      "arm": "B",
+      "terms": "o0-B-terms-gpu.u32",
+      "serial": "o0-B-reduce-gpu.u32"
+    },
+    {
+      "origin": 0,
+      "arm": "C",
+      "terms": "o0-C-terms-gpu.u32",
+      "serial": "o0-C-reduce-gpu.u32"
+    },
+    {
+      "origin": 1,
+      "arm": "A",
+      "terms": null,
+      "serial": null
+    },
+    {
+      "origin": 1,
+      "arm": "B",
+      "terms": null,
+      "serial": null
+    },
+    {
+      "origin": 1,
+      "arm": "C",
+      "terms": "o1-C-terms-gpu.u32",
+      "serial": null
+    }
+  ],
+  "initialSelectionReason": "Display example: failed receiver749rotor2 and its largest displayed absolute saved T\u2212R term difference (source1249), observed during UI QA. This is a view selection, not scientific candidate selection or new evidence."
+}

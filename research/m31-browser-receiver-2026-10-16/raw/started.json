@@ -1,0 +1,141 @@
+{
+  "sourceCommit": "4f2ead30ce48e4845ceefc105f9796ce468d907e",
+  "freezeSha256": "ad64a3f092d08045e1233fa9e05a4db72cda3ae8b5db039dec329f7628f8e7ae",
+  "config": {
+    "status": "FROZEN_UNEXECUTED",
+    "sourceReferenceCommit": "cefe6c7bb47362e90135179d22a9721b6f03bb88",
+    "sourceReferenceDirectory": "research/m31-zero-screen-2026-10-16",
+    "scalarInflows": [
+      0,
+      5.960464477539063e-8,
+      9.5367431640625e-7,
+      0.0000152587890625,
+      0.000244140625,
+      0.00390625,
+      0.0625,
+      0.1,
+      0.25,
+      0.5,
+      1,
+      1.5,
+      2,
+      2.5,
+      3,
+      4,
+      5,
+      6,
+      8,
+      10,
+      12,
+      16,
+      20,
+      24,
+      32,
+      40,
+      48,
+      64,
+      80,
+      96,
+      112,
+      128
+    ],
+    "savedCases": [
+      {
+        "id": "fresh1000",
+        "n": 1000
+      },
+      {
+        "id": "fresh5000",
+        "n": 5000
+      }
+    ],
+    "invalidGuards": [
+      "negative-inflow",
+      "quiet-NaN-inflow",
+      "positive-infinite-inflow",
+      "zero-induced-speed",
+      "negative-nominal-thrust"
+    ],
+    "batchOrder": [
+      "scalar32",
+      "invalid5",
+      "fresh1000",
+      "fresh5000"
+    ],
+    "validInputDomain": {
+      "inflowMinimum": 0,
+      "inflowMaximum": 128,
+      "nominalMinimum": 0.01,
+      "nominalMaximum": 0.1,
+      "inducedMinimum": 1,
+      "inducedMaximum": 10,
+      "claim": "Fixed nominal/induced constant bit patterns only",
+      "positiveAlphaMinimum": 7.52316384526264e-37,
+      "source": "All saved and scalar inflows validated before their dispatch, no omission/clipping"
+    },
+    "gates": {
+      "rotorTotalAbsoluteN": 1e-7,
+      "rootXAbsolute": 0.000001,
+      "hostResidualAbsolute": 0.000002,
+      "representedPowerRatioAbsolute": 0.000002,
+      "referenceBracketWidth": 2e-15,
+      "referenceResidualAbsolute": 1e-12,
+      "originalRotorDiagnosticN": 1e-12
+    },
+    "limits": {
+      "scientificWallSeconds": 180,
+      "cooperativeWallSeconds": 175,
+      "gpuBatchTimeoutMilliseconds": 30000,
+      "rawBytes": 33554432,
+      "failureReserveBytes": 2097152,
+      "reviewWallSeconds": 60,
+      "dispatches": 4,
+      "gpuValidRoots": 24032,
+      "gpuInvalidGuards": 5,
+      "gpuIterationReservation": 288384,
+      "hostBisectionRoots": 48096,
+      "hostIterationReservation": 4617216,
+      "fieldEvaluations": 0,
+      "integrationSteps": 0
+    },
+    "stopNewLaunchUTC": "2026-10-15T23:00:00Z",
+    "timingComparison": false,
+    "scope": "Receiver-only actual browser f32 feasibility on reused numerical inflows and frozen scalar probes; not physical, field, flight, speed, novelty or fresh full-flock qualification"
+  },
+  "node": "v24.19.0",
+  "platform": "darwin",
+  "architecture": "arm64",
+  "invocations": 1,
+  "runtimePinsVerified": [
+    {
+      "label": "Node executable",
+      "bytes": 121304480,
+      "sha256": "3c9448363b9976bf3d9e8f4d320397975800131b42c7b1be342dadc05871dd25"
+    },
+    {
+      "label": "playwright/package.json",
+      "bytes": 1416,
+      "sha256": "ca170ec143a88ed3043ac953eb3b2377b2b97304104f4e1e23316684ce2c35af"
+    },
+    {
+      "label": "playwright/index.js",
+      "bytes": 648,
+      "sha256": "4e98f65f0a9d9bcab8cffc0c5cfdd87fd3f5b0be74fc494ff166a466b204cd44"
+    },
+    {
+      "label": "playwright-core/package.json",
+      "bytes": 876,
+      "sha256": "07c47543631fef9508760365dee9fbe958c562093ec8d122543949ed231f233f"
+    },
+    {
+      "label": "playwright-core/index.js",
+      "bytes": 697,
+      "sha256": "a58fb2cec4293e7dcf73c58a179898a4f3986666451a19da4e731fa3af63265b"
+    },
+    {
+      "label": "playwright-core/lib/coreBundle.js (spawn behavior)",
+      "bytes": 3425603,
+      "sha256": "9393fa79e1c67c74edc26b610d65a4f7ed73d345a762465cc88340a33a2454ac"
+    }
+  ]
+}

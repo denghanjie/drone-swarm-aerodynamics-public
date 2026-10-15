@@ -1,0 +1,224 @@
+{
+  "completed": true,
+  "status": "complete",
+  "pass": true,
+  "records": [
+    {
+      "id": "P15-global-tilt",
+      "expected": "BodyContractError: Global tilt admission",
+      "rejected": true,
+      "message": "Global tilt admission",
+      "detail": {
+        "i": 0,
+        "axisZ": 0
+      }
+    },
+    {
+      "id": "A00-negative-original-nominal",
+      "expected": "BodyContractError: Original nominal",
+      "rejected": true,
+      "message": "Original nominal",
+      "detail": {
+        "i": 0,
+        "k": 13
+      }
+    },
+    {
+      "id": "A01-above-original-maximum",
+      "expected": "BodyContractError: Original nominal",
+      "rejected": true,
+      "message": "Original nominal",
+      "detail": {
+        "i": 0,
+        "k": 13
+      }
+    },
+    {
+      "id": "A02-nonfinite-quaternion",
+      "expected": "BodyContractError: Original finite17",
+      "rejected": true,
+      "message": "Original finite17",
+      "detail": {
+        "i": 0
+      }
+    },
+    {
+      "id": "A03-infinite-position",
+      "expected": "BodyContractError: Original finite17",
+      "rejected": true,
+      "message": "Original finite17",
+      "detail": {
+        "i": 0
+      }
+    },
+    {
+      "id": "A04-zero-quaternion",
+      "expected": "BodyContractError: Original quaternion norm",
+      "rejected": true,
+      "message": "Original quaternion norm",
+      "detail": {
+        "i": 0,
+        "drift": 1
+      }
+    },
+    {
+      "id": "A05-position129",
+      "expected": "BodyContractError: Original position",
+      "rejected": true,
+      "message": "Original position",
+      "detail": {
+        "i": 0,
+        "k": 0
+      }
+    },
+    {
+      "id": "A06-packed-pad",
+      "expected": "BodyContractError: Nonzero prepared pad",
+      "rejected": true,
+      "message": "Nonzero prepared pad",
+      "detail": {
+        "i": 0,
+        "k": 3
+      }
+    },
+    {
+      "id": "A07-state-length",
+      "expected": "BodyContractError: Original finite17",
+      "rejected": true,
+      "message": "Original finite17",
+      "detail": {
+        "i": 0
+      }
+    },
+    {
+      "id": "A08-source-index",
+      "expected": "BodyContractError: Pair identifiers",
+      "rejected": true,
+      "message": "Pair identifiers",
+      "detail": null
+    },
+    {
+      "id": "A09-term-limit",
+      "expected": "BodyContractError: Term limit",
+      "rejected": true,
+      "message": "Term limit",
+      "detail": null
+    },
+    {
+      "id": "A10-sum-limit",
+      "expected": "BodyContractError: Sum limit",
+      "rejected": true,
+      "message": "Sum limit",
+      "detail": null
+    },
+    {
+      "id": "A11-unwritten-output",
+      "expected": "BodyContractError: Unwritten header",
+      "rejected": true,
+      "message": "Unwritten header",
+      "detail": null
+    }
+  ],
+  "decoder": [
+    {
+      "symbol": 0,
+      "expectedClass": -1,
+      "actualClass": -1,
+      "pass": true
+    },
+    {
+      "symbol": 1,
+      "expectedClass": 0,
+      "actualClass": 0,
+      "pass": true
+    },
+    {
+      "symbol": 2,
+      "expectedClass": 1,
+      "actualClass": 1,
+      "pass": true
+    },
+    {
+      "symbol": 3,
+      "expectedClass": 2,
+      "actualClass": 2,
+      "pass": true
+    },
+    {
+      "symbol": 4,
+      "expectedClass": -1,
+      "actualClass": -1,
+      "pass": true
+    },
+    {
+      "symbol": 5,
+      "expectedClass": 4,
+      "actualClass": 4,
+      "pass": true
+    },
+    {
+      "symbol": 6,
+      "expectedClass": 5,
+      "actualClass": 5,
+      "pass": true
+    },
+    {
+      "symbol": 7,
+      "expectedClass": 6,
+      "actualClass": 6,
+      "pass": true
+    },
+    {
+      "symbol": 8,
+      "expectedClass": 7,
+      "actualClass": 7,
+      "pass": true
+    },
+    {
+      "symbol": 9,
+      "expectedClass": 7,
+      "actualClass": 7,
+      "pass": true
+    },
+    {
+      "symbol": 10,
+      "expectedClass": -1,
+      "actualClass": -1,
+      "pass": true
+    },
+    {
+      "symbol": 11,
+      "expectedClass": -1,
+      "actualClass": -1,
+      "pass": true
+    },
+    {
+      "symbol": 12,
+      "expectedClass": -1,
+      "actualClass": -1,
+      "pass": true
+    },
+    {
+      "symbol": 13,
+      "expectedClass": -1,
+      "actualClass": -1,
+      "pass": true
+    },
+    {
+      "symbol": 14,
+      "expectedClass": -1,
+      "actualClass": -1,
+      "pass": true
+    },
+    {
+      "symbol": 15,
+      "expectedClass": -1,
+      "actualClass": -1,
+      "pass": true
+    }
+  ],
+  "counters": {
+    "admissionControls": 13,
+    "decoderControls": 16
+  }
+}

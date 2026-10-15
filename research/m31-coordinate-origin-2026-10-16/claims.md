@@ -1,0 +1,19 @@
+# Claims after the coordinate-origin diagnostic
+
+The [terminal driver result](results/result.json) records **no candidate** and no qualifying path to the planned broader confirmation. **Independent review completed but failed its aggregate integrity gate.** It recorded two final-control bookkeeping mismatches. Static source inspection identifies a checker lifecycle-assumption error; the saved API record matches the frozen source. The immutable failed report and exit code remain unchanged, with no retry or waiver. Read the [disposition](INDEPENDENT-SAVED-REVIEW.md), [exact report](results/independent-review.json) and [external closure](results/saved-review/runtime.json). The observations below retain their recorded status; no complete independent qualification is claimed.
+
+| Claim | Recorded evidence | Permitted conclusion |
+|---|---|---|
+| B supplies a qualifying local-first remedy | Origin-0 B passed; translated Q0 failed and B's GPU cell was skipped | B did not qualify across the required origins. There is no translated B GPU measurement. |
+| C's high/low positions supply a qualifying remedy | Saved reconstruction checks and Q1 passed; translated C failed its term L1 gate | Exact input-coordinate recovery was insufficient for this complete numerical component. C did not qualify. |
+| The coordinate stimulus was implemented | Driver flags record exact translation, canonical packing exactness, translated packing loss and exact high/low reconstruction | These are implementation observations for the bounded synthetic family, with the aggregate saved-review gate failed; not a guarantee for arbitrary coordinates. |
+| Original R supplies a reference | R's saved internal consistency gates passed at each origin | R is the declared numerical baseline. It is neither an exact real-valued solution nor independent physical evidence. Exact input translation does not imply bitwise translation invariance of R's arithmetic. |
+| A/B differ observably in local arithmetic | The origin-0 [saved vector comparison](raw/o0-B-A-vectors-assessment.json) records matching reached center components and differences in reached rotor components | The outputs differ on the recorded backend. Their compiler operation graph and the historical failure's cause remain unresolved. |
+| C has a concrete storage cost | The frozen layout increases the node buffer from 160,000 to 240,000 bytes for 5,000 nodes | An additional 80,000 bytes is a known interface cost. No speedup or full-workload efficiency is established. |
+| This work validates 5,000 coupled Boids, wake physics, broad portability or a novel method | No such experiment or novelty audit was performed | These claims remain unsupported. High/low positions and local-coordinate techniques have established prior art. |
+
+Q0−R concerns the represented input interface. Q1−Q0 changes position representation while holding other packed fields fixed. T−Q includes GPU computation on the matched interface; it is not a pure compiler-error measurement. The saved L1 quantities are not additive causal percentages, and signed cancellation cannot replace the frozen conservative gate.
+
+The six cells share one scene; no independent-sample confidence interval or population inference is warranted. Missing or skipped cells remain missing. A consistent negative result could pass an evidence-integrity review while remaining numerically unqualified.
+
+The [frozen protocol](PROTOCOL.md) requires stopping the position-only choice when no arm qualifies. No confirmation, retry, extra reduction, threshold relaxation or replacement seed follows from this result. A different architecture or replication requires separate authorization and a fresh protocol. See the [source freeze](freeze.json), [exact source commit](https://github.com/denghanjie/drone-swarm-aerodynamics-public/commit/ccafbd9b9fd3a3cdd7ffacb5fb360ee5f3dc1abc), [saved viewer](viewer/) and [result/literature ledger](RESULT-LITERATURE-LEDGER.md).

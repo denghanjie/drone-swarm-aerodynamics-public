@@ -1,0 +1,48 @@
+{
+  "scope": "Source-only lifecycle integration; no target execution or scientific exposure.",
+  "files": [
+    {
+      "path": "source/capture-science.py",
+      "bytes": 13034,
+      "sha256": "3eeedec0a3bdabd143114ebf7e3c16256323adeff4fb9c7b177611c690456260"
+    },
+    {
+      "path": "source/observe-science.py",
+      "bytes": 31747,
+      "sha256": "fba4f8c4822a3d6d410e952b610f8ad6519ca857b5fdf4611f64384c53fc7c71"
+    },
+    {
+      "path": "source/run-once.py",
+      "bytes": 4781,
+      "sha256": "d653bc08304cb68eb92f561332007f5ed933ef0464b60030a4d44b768992df54"
+    },
+    {
+      "path": "source/process-registry.cjs",
+      "bytes": 2669,
+      "sha256": "8162e6b53c28a6f7a3e8adeaa5d529ceb802eb35e01a7e9b6eeb049ef1332063"
+    }
+  ],
+  "contract": {
+    "path": "design/SCIENCE-LIFECYCLE-CONTRACT.md",
+    "bytes": 11064,
+    "sha256": "a774327442cbdec42c9c79d116ed4a125bc340c7e5fe22c0138ebf86b35a64e9"
+  },
+  "preservedRejectedSupervisor": {
+    "path": "preparation/supervisor-before-final-review.py.txt",
+    "sha256": "4f211596301b809c8caf338c0ead229fea1615c677f20271305f07a105418847"
+  },
+  "numericalChanges": false,
+  "staticReviewOnly": true,
+  "preservedUnexecutedIntermediates": [
+    {
+      "path": "preparation/observer-before-pipe-cap-fix.py.txt",
+      "bytes": 31624,
+      "sha256": "30df036d1a36066a50fba63cca5b68d2f83cfdbc1ce475e079281c40a6968737"
+    },
+    {
+      "path": "preparation/capture-before-partial-write-fix.py.txt",
+      "bytes": 13014,
+      "sha256": "d31ae86ea104ecc771a23b0076ccba53dc11d3ddcfe8f919d1badee5f96435d2"
+    }
+  ]
+}

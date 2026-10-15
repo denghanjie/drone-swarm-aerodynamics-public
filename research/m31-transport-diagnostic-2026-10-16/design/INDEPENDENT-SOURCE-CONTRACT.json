@@ -1,0 +1,122 @@
+{
+  "kind": "independent-static-source-contract-check",
+  "operationalSourcesExecuted": false,
+  "checkerInvoked": false,
+  "checks": [
+    {
+      "check": "adopted-config-exact",
+      "passed": true
+    },
+    {
+      "check": "ast-only-run-once.py",
+      "passed": true
+    },
+    {
+      "check": "ast-only-observe-transport.py",
+      "passed": true
+    },
+    {
+      "check": "ast-only-capture-transport.py",
+      "passed": true
+    },
+    {
+      "check": "observer-adopted-memory-and-byte-constants",
+      "passed": true
+    },
+    {
+      "check": "producer-config-field-values-not-executed",
+      "passed": true
+    },
+    {
+      "check": "raw-in-incremental-combined-cap",
+      "passed": true
+    },
+    {
+      "check": "raw-in-final-combined-total",
+      "passed": true
+    },
+    {
+      "check": "literal-lock-write-length-observe-transport.py",
+      "passed": true
+    },
+    {
+      "check": "single-browser-fetch-call-source",
+      "passed": true
+    },
+    {
+      "check": "synthetic-heap-fixture-source",
+      "passed": true
+    },
+    {
+      "check": "no-gpu-entry-points-in-worker-or-page",
+      "passed": true
+    },
+    {
+      "check": "worker-import-allowlist",
+      "passed": true
+    },
+    {
+      "check": "listener-removal-before-frozen-trace-snapshot",
+      "passed": true
+    },
+    {
+      "check": "complete-observation-requires-returned-browser-state",
+      "passed": true
+    },
+    {
+      "check": "frozen-fixture-hash-and-length",
+      "passed": true
+    },
+    {
+      "check": "inert-byte-fixture-formula",
+      "passed": true
+    },
+    {
+      "check": "saved-checker-ast-only-no-import-or-invocation",
+      "passed": true
+    }
+  ],
+  "sourcePins": [
+    {
+      "path": "source/browser.html",
+      "bytes": 202,
+      "sha256": "0fd3cd1b97459dbe428b8d70682746a6dd1f0b8ee4fdbaa4b46aaf364f99506b"
+    },
+    {
+      "path": "source/browser.js",
+      "bytes": 2173,
+      "sha256": "e892111089850920e9c8febe74429c57f3b2958f04b54906095b515d71d4dfd9"
+    },
+    {
+      "path": "source/diagnostic.cjs",
+      "bytes": 26741,
+      "sha256": "9467968ded4f8c2409eb30daa7b59dff768025f76a9004e017a65a5d2af92e8e"
+    },
+    {
+      "path": "source/process-registry.cjs",
+      "bytes": 2737,
+      "sha256": "e9a7b179ce8d75fa70f633f553bc825636b550f1438de6e48d9a6d69ca5fae43"
+    },
+    {
+      "path": "source/run-once.py",
+      "bytes": 5069,
+      "sha256": "7d6d0cbdeab682cde0727a209e427420f43ed44521390b00d4479548960579c3"
+    },
+    {
+      "path": "source/observe-transport.py",
+      "bytes": 32224,
+      "sha256": "d4eac733ccee156331dfbfab10c3637f2f7080d59a91eff0b45bf5b1f6d64598"
+    },
+    {
+      "path": "source/capture-transport.py",
+      "bytes": 13026,
+      "sha256": "ddb0220db2082a922436763a19f2212e0fc64fd9406c839f257cff3c0e36839d"
+    }
+  ],
+  "lockComparisons": [
+    {
+      "file": "observe-transport.py",
+      "bytes": 56
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+ "byteOrder":"little-endian",
+ "originalRows":{"file":"*-original.f64","type":"Float64","stride":8,"columns":["originalU","originalF0","originalVI","R_x","R_f","R_lo","R_hi","R_iterations"]},
+ "packedRows":{"file":"*-packed.u32","type":"Uint32 binary32 bit patterns","stride":4,"columns":["U_bits","f0_bits","vi_bits","pad_zero_bits"]},
+ "gpuRows":{"file":"*-gpu.u32","type":"Uint32 preserving returned binary32 bits","stride":8,"columns":["alpha","x","f","reportedResidual","iterations","stopCode","finalAbsStep","reserved_zero"]},
+ "independentRows":{"files":["*-Q.f64","*-A.f64"],"type":"Float64","stride":6,"columns":["alpha","x","f","lo","hi","iterations"],"meaning":"Complete prefix appended after every scheduled bisection; no geometry or field"},
+ "sourceOrder":"For reused cases: record index=4*receiverID+rotorID. Scalar32 uses config order; invalid5 uses config guard order.",
+ "stopCodes":{"0":"zero input identity","1":"strict step threshold","2":"twelve updates without threshold","3":"invalid input/intermediate sentinel, not a root"},
+ "scope":"No GPU body/world load assembly; displayed body sums are host reductions of four saved forces. Full original states only provide prior 3D pose context."
+}

@@ -1,0 +1,11 @@
+# Pilot closed — overnight restart
+
+Do not rerun the pilot or refine its four failed 5 ms uniform-RMS sampling checks under this budget. Source commit `fd857ed1f5a4662ff98635e1998b53944b98738a` was pushed before the sole run. All eight implementation fixture groups and the independent saved-record review passed. The augmented sampled maxima agree across query grids; four 5 ms RMS comparisons remain unresolved. No cadence or physical validity is accepted.
+
+Science execution: 0.513021083 s supervised pilot plus 0.097805959 s independently measured saved-record verification; total 0.610827042 s, 29,924 field calls, 3,184,006 raw bytes. Budget terminal. Browser/report/packaging work is delivery work, not another experiment. Raw records are committed with hashes; no separate release required for this 3.2 MB payload. Frozen initial RESTART.md and source/protocol inputs remain unchanged; this postrun file supersedes the initial stage description.
+
+The previous M31 diagnosis is also terminal. Historical and later-main reference failures remain unchanged. A release download verifying the older 24 MB microcheck archive may still be running slowly; its GitHub server-computed digest and size already match the committed manifest. Do not launch duplicate transfers blindly.
+
+Next permissible action: prepare a separately frozen temporal approximation challenge with event-aware error estimates, matched field-query budgets, and new analytic paths that include onset, reversal and changing spacing. A simple causal linear predictor is a baseline, not automatically novel. An interval-bounded refresh rule is currently a mathematical candidate only; inspect the independent critique before implementation. Source/receiver assumptions, allowable motion and validity restrictions must be explicit. First test whether bounds contain actual model discrepancies and whether bound overhead defeats saved field work. Do not use these two pilot fixtures as fresh confirmation.
+
+Continue through the original eight-step framework. A verified numerical approximation is only one component of the 5,000-drone accuracy–computation goal; compatible measurements, full-stack timings, independent confirmation and novelty checks remain required. Overnight launches stop at 07:00 Asia/Shanghai on 2026-10-16.

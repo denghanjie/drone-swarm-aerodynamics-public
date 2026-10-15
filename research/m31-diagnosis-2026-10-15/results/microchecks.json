@@ -1,0 +1,52 @@
+{
+  "firstChecks": [
+    {
+      "start": "A",
+      "source": "closed-0.0025-commands.f64",
+      "matchedMotorTargets": 4000
+    },
+    {
+      "start": "B",
+      "source": "fine-start-0.0025-commands.f64",
+      "matchedMotorTargets": 4000
+    }
+  ],
+  "pairOverrideFixtures": {
+    "forcedOnBeyondCutoff": true,
+    "forcedOffInsideCutoff": true,
+    "otherPairRetained": true
+  },
+  "traces": 4,
+  "totalSimulatedSeconds": 0.2,
+  "endStatesAndHeldControlExactlyEqual": true,
+  "allCommandStreamsExactlyEqual": true,
+  "endpointHash": "3c5282b2a3819b364d50579f0b0e07fe6f20dbf9014bf2f8c33fd0e5a46b41a0",
+  "microPhaseMilliseconds": {
+    "control": 473.982709,
+    "physics": 93.49141799999995,
+    "safety": 34.082249000000616,
+    "io": 15.375207000000046,
+    "measurement": 88.56241699999998
+  },
+  "fullMatrixPlanningSeconds": 1500.1949766500018,
+  "alreadyUsedBeforeMicroJob": 0.626661708,
+  "preliminaryPlanningGate": false,
+  "planningLimit": "Supervisor measured current microcheck time must also be subtracted before launch; estimate is a conservative planning gate, not a completion guarantee.",
+  "runtime": "v24.19.0",
+  "outputIds": [
+    [
+      "micro-frozen"
+    ],
+    [
+      "micro-instrumented"
+    ],
+    [
+      "micro-boundary-a",
+      "micro-boundary-b"
+    ],
+    [
+      "micro-held-a",
+      "micro-held-b"
+    ]
+  ]
+}

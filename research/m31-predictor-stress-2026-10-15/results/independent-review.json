@@ -1,0 +1,5921 @@
+{
+  "scope": "Independent saved-record arithmetic verification only; no field, receiver, case/pose, dynamics, refinement, timing, or experiment rerun.",
+  "method": {
+    "script": "m31-predictor-recompute.py",
+    "scriptSha256": "0b5b834626fc745dcb8aca9142d393b4888af02d6ffca5f3e1e68af752150f6e",
+    "invocationArchive": "/tmp/m31-predictor-verifier-runs/1792077892696773000",
+    "prediction": "Exact binary64 equality, matching source ratio-first arithmetic; only saved actual refresh winds enter history.",
+    "rms": "Event-split squared-error trapezoids; independent math.fsum accumulation plus source-order sequential sum cross-check.",
+    "oracle": "Direct comparison of every saved all-vehicle production/independent rotor wind and saved receiver0 loads.",
+    "timing": "Saved timing records only; exact primary-load checksum, call counts, order, min/median/max.",
+    "comparisonScope": "Matched hold5 suite rule is prospective. Hold2.5 comparisons and source-pitch startup decomposition are descriptive saved-record checks."
+  },
+  "sourceCommit": "661bb14c99521ef2b1d3350600e202b4fb44d5b9",
+  "sourceHashes": [
+    {
+      "path": "outputs/milestone-26-source/grid.cjs",
+      "sha256": "f06010781770b64432935e5d825bcd1405b154b735ac4d0d654f145600cea302",
+      "bytes": 898,
+      "matches": true
+    },
+    {
+      "path": "outputs/milestone-28-source/aero.cjs",
+      "sha256": "710b0a8f0df62208e3385ac9b8288240b379fe9248a1a645251a77c533f24a62",
+      "bytes": 4259,
+      "matches": true
+    },
+    {
+      "path": "outputs/step02c-source/physics.cjs",
+      "sha256": "0c46c9beb4e831c621658f6600c074f97c95966de07f5000eb64aa476a443fa1",
+      "bytes": 6115,
+      "matches": true
+    },
+    {
+      "path": "outputs/step03a-source/wake.cjs",
+      "sha256": "fb6d5a1d632a0023818041ef6bc39316ff8ed950f318da1a6649e2515b9fd8bc",
+      "bytes": 2069,
+      "matches": true
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/.gitignore",
+      "sha256": "e138ca829d938927384c82d7f176eaa6c61a82bd28ba28320ddd736a505c3b4f",
+      "bytes": 5,
+      "matches": true
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/CASES-CLEARANCE.md",
+      "sha256": "79dbed40939418dd8b73abdd463d23f9c9347e795e2b04299ed2b88c4998f3f4",
+      "bytes": 2689,
+      "matches": true
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/DESIGN-REVIEW.md",
+      "sha256": "47d0653e768de08932500ceb7c47f4d67b7f174e248de02cbd7921d0c4a7b1f1",
+      "bytes": 14819,
+      "matches": true
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/DRIVER-REVIEW.md",
+      "sha256": "7c051d7f9e796492c28c5414c13333f9a2b4b10259f801f828589ccddde12d79",
+      "bytes": 13860,
+      "matches": true
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/PROTOCOL.md",
+      "sha256": "5acf4f3888780ae5ac8c3bebea9f57c72c878f553aad32c9cd46d44f0b1c1f23",
+      "bytes": 8945,
+      "matches": true
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/RESTART.md",
+      "sha256": "4b10052658a0c0feda5c2dd9058a95a02a97f88b8caddca7cbc70e7062bb5f5d",
+      "bytes": 451,
+      "matches": true
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/config.json",
+      "sha256": "d42c5f2b1bb89c33956e7f4fe4672eae6d0637b7b1eeb7478e6796f74b96d9cc",
+      "bytes": 1076,
+      "matches": true
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/literature-and-prior-work.md",
+      "sha256": "b0397682237bfc2c90502a82c9eb5f0f688ca235e9e7b7605df91f64bc1b0b4f",
+      "bytes": 10462,
+      "matches": true
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/source/cases.cjs",
+      "sha256": "f836b6469cdc7a9ab8bf0b213394707b1ff9e6c74b4fe9321569e02f406f1452",
+      "bytes": 2473,
+      "matches": true
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/source/experiment.cjs",
+      "sha256": "4f0a235dd44dd1f542012ed5a05dfa8422164170fb7bf2627baaa94ff17ada96",
+      "bytes": 10880,
+      "matches": true
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/source/independent.cjs",
+      "sha256": "e0445be31ec647c8ddfb79533d4866dc8133e99ba5f25061bf393aab6bc58baf",
+      "bytes": 12813,
+      "matches": true
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/source/run-step.py",
+      "sha256": "54acd31ee0a10ab5eda28139baf910eb8a684dbc7d39645dff270deb52c8a9f3",
+      "bytes": 4415,
+      "matches": true
+    }
+  ],
+  "rawHashes": [
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/cold-start-inflow-accuracy.json",
+      "bytes": 9846,
+      "sha256": "6abc503ef5fcc4d5ef460f97ac282ed464d5d921da0f24eb5ed24ee86f885fd8"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/cold-start-inflow.ndjson",
+      "bytes": 6190186,
+      "sha256": "e8324b518a200a43dcc2580a668abe6a392d96480b7536187a3c62d6bbdccb02"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/fixed-position-source-pitch-accuracy.json",
+      "bytes": 8008,
+      "sha256": "1337e0d7d002de6dcbe16bbd5938c0e2deba03dcbafa7bf43f9f4de854159501"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/fixed-position-source-pitch.ndjson",
+      "bytes": 6156148,
+      "sha256": "cd234bd31ab0ae1772e0cee324abff42c0941f158bf641479b8b59d872a2a448"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/result.json",
+      "bytes": 62644,
+      "sha256": "2b5dca174afed195808de7d7c1992c171304aaa39acd4c6d8c40d8cc6a4970b0"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/smooth-fast-reversal-accuracy.json",
+      "bytes": 11530,
+      "sha256": "e634ad0e235ecc921b8a70266b5661c992566fcf388537a3f6447ccb25227408"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/smooth-fast-reversal.ndjson",
+      "bytes": 6665243,
+      "sha256": "3c98fb593297d3583041ebb59617ec122bb94b35e1b255aae09c699e32bb679e"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/stacked-moving-sources-accuracy.json",
+      "bytes": 8012,
+      "sha256": "8a00846ea05cfd266460320e5a9989a985270b062ff62475d0413a8e6da66249"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/stacked-moving-sources.ndjson",
+      "bytes": 8856721,
+      "sha256": "fdeffb48a185cbc3734620ea658ea362ff61bdf2dc680b7906b2c622d4f7045d"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/started.json",
+      "bytes": 992,
+      "sha256": "60cf8c1c9cb4d21c7270cc5dc7403d309d056cedea671458f57263633f034679"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/support-transit-accuracy.json",
+      "bytes": 7984,
+      "sha256": "230edbe3c2a72a2ea6145775c4a34505ab8aaf37f6d6534d8c29b3597dd1ae02"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/support-transit.ndjson",
+      "bytes": 6052894,
+      "sha256": "5b713ffc47ce985d776728c42eb7ea0ac9ce90927d2f8eb47ab51a32289e3681"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-0-0-0.json",
+      "bytes": 142,
+      "sha256": "375192bd8f900a6c7e033681a0f846c5e80133d98d8f28d54b7ba27d23f0f19e"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-0-0-1.json",
+      "bytes": 143,
+      "sha256": "05d151eb9466b8b7ae5f5d3aa735eea93af1ad60a7e44f11b34f03be17390b7a"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-0-0-2.json",
+      "bytes": 140,
+      "sha256": "618860a4c92ae524fa9bc053ad12a5f00ff33e12eb9bed7305da0204b3805786"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-0-0-3.json",
+      "bytes": 143,
+      "sha256": "33bed53a155a901625edf5e44825f2dfe41f0ba4c95366db04c9d9ca14595f66"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-0-0-4.json",
+      "bytes": 143,
+      "sha256": "9f59874c7ee541c7e5cb6f18583fe8c1a55a679e5f935f8d436b62114519a17c"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-0-1-0.json",
+      "bytes": 144,
+      "sha256": "966a5186ecd05baffbec529b311de2a9573ea4bcf93843f23abda3b4e75592cd"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-0-1-1.json",
+      "bytes": 144,
+      "sha256": "e5de8696f6028e2439246ce90455c91276875bea2c033770d55cb65f1ac0ac2f"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-0-1-2.json",
+      "bytes": 142,
+      "sha256": "cda131e01d77b8a3d08565dcc316d566c7c548819950cb7ab9d63e92c533aace"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-0-1-3.json",
+      "bytes": 144,
+      "sha256": "8522a0878caf07fccc72243d3bcdd38c6fdffd2f66fdfaef1db66611748b3560"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-0-1-4.json",
+      "bytes": 145,
+      "sha256": "9a8307b9b4b0698f99a46d711cf3e32c5e1270958c29190292ad929aabdc5acf"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-0-2-0.json",
+      "bytes": 144,
+      "sha256": "2703d92ae91b19e94013f72cf39665bc2a2c1afaa640b6b28e0fd004390ada7a"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-0-2-1.json",
+      "bytes": 146,
+      "sha256": "f97aafcf9c2ee7ad2edf0c57e0cfe6cab73bcea4b05daf06dff754324fa946b6"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-0-2-2.json",
+      "bytes": 145,
+      "sha256": "d4ea5e564c2fcce5a5ebfafcbfb88e643307c2c78b95c953ec4391a370fad253"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-0-2-3.json",
+      "bytes": 147,
+      "sha256": "19f98149fa17b5cd891043fe683c96b65b29d77a88bfcb96dcda19d9845e4a0f"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-0-2-4.json",
+      "bytes": 148,
+      "sha256": "1bc95f43c406af3a65a50cbb73ef829865eadcee868d68768fd2880348fc1bfa"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-0-3-0.json",
+      "bytes": 153,
+      "sha256": "eb71303642ef2fd4069ec0041856d33e0983383d9ab4959f7293222e15370d61"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-0-3-1.json",
+      "bytes": 153,
+      "sha256": "0a5c0024ab5729fb03eee45ecea85c0bc228fead109d86ddd501d7b35a0ede53"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-0-3-2.json",
+      "bytes": 154,
+      "sha256": "0a24c781796ee2d3a1c33928459a363ed9fe0f584297d3733de431e68eb5f5f0"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-0-3-3.json",
+      "bytes": 155,
+      "sha256": "f318c934d296d1bb8e9b8de9760d00cd36750a1fd916f552fbcd33a29415a02d"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-0-3-4.json",
+      "bytes": 155,
+      "sha256": "215ea968417758f07a97cbf4a18e0e4ab5ebfeef68784072f933e735b26472a8"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-0-4-0.json",
+      "bytes": 149,
+      "sha256": "eabd29622ec9f40460e548a08c35162133b62617ecb1c411a7f82fc055d54848"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-0-4-1.json",
+      "bytes": 152,
+      "sha256": "e9a659d536814e412e03f8d20d9367ecc65c671b2a0d3b53fffe029a31ebb9ea"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-0-4-2.json",
+      "bytes": 149,
+      "sha256": "3fe2ef938aed1a4aef26227a0ed3475c567561860a882162995f36ccec672962"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-0-4-3.json",
+      "bytes": 152,
+      "sha256": "e48446550640e072a427e5f059d89c8117aa45ada518a95af646b305b181cb22"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-0-4-4.json",
+      "bytes": 152,
+      "sha256": "275689eb55117fc1d63e84f67e066ce6b7e24b2ed9f53f04bde3f87cc9e6cec2"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-0-5-0.json",
+      "bytes": 149,
+      "sha256": "0f69ba564876a6f33a888ea4a31dcf2ac4f400f830bdd8c64547dfa8b3acd30b"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-0-5-1.json",
+      "bytes": 149,
+      "sha256": "c2227c2706f4a61df669ef85378ffd8c6aa2dc89f59ce250e3df8ce0b5eb8ef7"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-0-5-2.json",
+      "bytes": 146,
+      "sha256": "d7bac8a3286462539e52d4a4aa96754332c9227fcf4864e552dedcb723ebac7c"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-0-5-3.json",
+      "bytes": 151,
+      "sha256": "754fcec15dc87dbc925809dae4508a83c2b31635a6ea88b6f3a20580ef336100"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-0-5-4.json",
+      "bytes": 151,
+      "sha256": "80ec584fd09bca07f7f8aeeab88a986c6d300761a7df97e90657f03c28bdf0dd"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-1-0-0.json",
+      "bytes": 143,
+      "sha256": "82040c59c3acd182609e3243e0a7806fdf3349ebff72f799277d356d173fb5a7"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-1-0-1.json",
+      "bytes": 142,
+      "sha256": "5936924f6e92747a7a7ee665b614fa6ce2fc86f4948c277aa030e79a10f4927c"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-1-0-2.json",
+      "bytes": 145,
+      "sha256": "96574009324f421a93a556398b3da2927feb350a98d8f5c646434b05618445ca"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-1-0-3.json",
+      "bytes": 146,
+      "sha256": "0fdc8f014d71bc5d54d6ca0f74e432d89c02bc308998ec9b1c26d38c0e500d1e"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-1-0-4.json",
+      "bytes": 145,
+      "sha256": "7bfb48390f7487014500550b815265d040996af3a6a0e769c6ffd9445744f5b6"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-1-1-0.json",
+      "bytes": 148,
+      "sha256": "726ae976608355d38e6a261c8d3bfd5200489203e23d259d8948e01af039d780"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-1-1-1.json",
+      "bytes": 146,
+      "sha256": "b2c3bddd0fef9ec30a9d82832a4c05834ed605fbc232057f853b9fb8b5011d34"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-1-1-2.json",
+      "bytes": 148,
+      "sha256": "db171abb4e58f666a1101d095fe98e1e2ccf599dc5d67444ad79fc1c2bb4136a"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-1-1-3.json",
+      "bytes": 149,
+      "sha256": "aa5c25e9b5fcebe64dcb7f10c4412f8c62b5aa1c9e60cf2eeb8d894539b19562"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-1-1-4.json",
+      "bytes": 146,
+      "sha256": "95cdc92ed1eb85a91256c4e1dece824d7a1aae09e4edb51e00aa45236f92976c"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-1-2-0.json",
+      "bytes": 154,
+      "sha256": "95eb3629507d2f10468bea19e30107ad861cf02103f93840293d61bb5772ae17"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-1-2-1.json",
+      "bytes": 154,
+      "sha256": "8216fb6446822bea3bae6657d6570f439c177bec51df5391079048fc61850b5b"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-1-2-2.json",
+      "bytes": 156,
+      "sha256": "b6d313723d521b491be61f13f2a204e3338de41fe4c5d5a64dddc6230337080c"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-1-2-3.json",
+      "bytes": 157,
+      "sha256": "e5e24c0c0043e586e5f6b7c8138a1a787d81c1b49a91f9f05cd07dbd8c72cc30"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-1-2-4.json",
+      "bytes": 154,
+      "sha256": "8f89900f95bb4f30b1f095aacd92f296213af8c3e7ffcbe2d61de77faea2f354"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-1-3-0.json",
+      "bytes": 152,
+      "sha256": "16605c6c13b7e51e52898afd20463ee278471a9c5e870f1e37546c0e8ec8735d"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-1-3-1.json",
+      "bytes": 150,
+      "sha256": "f3ff3864d4615c4565ee6d38fe7ef492f54acd1aed7ace8ed3b5acfa86e27b99"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-1-3-2.json",
+      "bytes": 152,
+      "sha256": "2b6a15bed9fb11348c88ef30d1e1fd199ee6338642ed1dece8cd56b662f70169"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-1-3-3.json",
+      "bytes": 154,
+      "sha256": "512bc0d8b9cecca49365b46bc6d38bc8f7aac51743218c4594e6b9ee4003f9bb"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-1-3-4.json",
+      "bytes": 150,
+      "sha256": "56d1da8a9f6d7cf5fb4bd096c2b9a3bb5aef6e0cead700af34705d18191f01bd"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-1-4-0.json",
+      "bytes": 151,
+      "sha256": "d89d4caa57db35f705e9bda6355eea27b3db9e48b2940505d910806cdd2736d2"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-1-4-1.json",
+      "bytes": 148,
+      "sha256": "590afad9eb7cb4a74cc670add74773da412085337bfef1a1ee2f6211a4ee2dbb"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-1-4-2.json",
+      "bytes": 143,
+      "sha256": "7bfd983d20b3cbec795e952c20a26fd50c1137033953302d3a81b30a74870b31"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-1-4-3.json",
+      "bytes": 152,
+      "sha256": "04a4b5b8d4a98c08ca022bb727c42933d52051db846926489bdd6fa950cecf12"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-1-4-4.json",
+      "bytes": 149,
+      "sha256": "8ff82a0a68c4d58768dabafa1a1da1b7093399ac15ea55191b5c933c20112833"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-1-5-0.json",
+      "bytes": 144,
+      "sha256": "145d2b09311b62dbfcd3dfd88478f8d9b8d581d91f4ec9fccd5e130e5deec0b2"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-1-5-1.json",
+      "bytes": 142,
+      "sha256": "97c7dbb23b6e6aeda9f94303d3ddac7592f76e926beed1a41c27a3c5373199ef"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-1-5-2.json",
+      "bytes": 144,
+      "sha256": "ee735a056515a42c80ad6ce1e6f7be730345062db06cebb034ac792070dcfc25"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-1-5-3.json",
+      "bytes": 145,
+      "sha256": "0ed0ddaac7fc759d2a7203e761dfe6f2e4e49002fbc02d524733f35f651947ff"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-1-5-4.json",
+      "bytes": 142,
+      "sha256": "468c7814059584beaf72bd8240b92a6bff0a0b77a9a37f895bc138a11927f311"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-2-0-0.json",
+      "bytes": 146,
+      "sha256": "445c642d96b291ceca7da5de1b33bd9689bdc4e50c66785a0bac0bd69b640c43"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-2-0-1.json",
+      "bytes": 149,
+      "sha256": "d46caeb5619ac9fec95198dbf7c42a6c822127bdfba9e24aeddf7685cc56e9a8"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-2-0-2.json",
+      "bytes": 150,
+      "sha256": "88961f07c73b3ea6ce88ae322180d403d2fb0de93221a7fb02aa753c2b35fd86"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-2-0-3.json",
+      "bytes": 146,
+      "sha256": "4d0a71e787d2db4a95dca1c157d6d8574f587752e9324d6f5183e499136ec51f"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-2-0-4.json",
+      "bytes": 148,
+      "sha256": "df27e4a55579b6138633f8fa6419c19132be0a724d6538241be98608396d361c"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-2-1-0.json",
+      "bytes": 153,
+      "sha256": "f19a10e888eeb633428dfcc093f19363e84bbc89f7852b8396d364cc5aa190e5"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-2-1-1.json",
+      "bytes": 154,
+      "sha256": "c319155148f6c39ee83372e5818280a08face53f1a22f66dfe7196140e5da3be"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-2-1-2.json",
+      "bytes": 156,
+      "sha256": "8dd6309e9efa263c03f3359a76e51b2f2cfc01009c4f12b0526537342e543264"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-2-1-3.json",
+      "bytes": 153,
+      "sha256": "60b8b57de4eb672e19d49f15d455b9d2b934354f207f2c44c691bf784f1b939a"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-2-1-4.json",
+      "bytes": 153,
+      "sha256": "73f62621762e2de412b4368b9e58724537255fd2988294624e66a3719236187b"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-2-2-0.json",
+      "bytes": 150,
+      "sha256": "2cdc404f3769ba8afc981a6298fe9458cb7bba17ff96ce3dbc4cb708e2228dde"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-2-2-1.json",
+      "bytes": 152,
+      "sha256": "7a8df6b8c121d7cb664c1e5cc63f250ae11cf45cc82ceab0d1f4c47ad935e223"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-2-2-2.json",
+      "bytes": 154,
+      "sha256": "2fe90192fdcb2e2eb1cf5550d4fa0e90be205799f3ad670fd5249efa30c9b78f"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-2-2-3.json",
+      "bytes": 151,
+      "sha256": "a136bd35e01bcace3e8d95f653d7c20107c64239116b0ce8515d594034cb3b17"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-2-2-4.json",
+      "bytes": 153,
+      "sha256": "0f8d994c2856cf5a2cc38cb1b53b163cc34f597485bba4eb5471b3d1ab704563"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-2-3-0.json",
+      "bytes": 148,
+      "sha256": "9cf4cf1181fa1df3fc3907e3cc805c4fe7e506f516dc4ce71e59f1f8b2221ed7"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-2-3-1.json",
+      "bytes": 152,
+      "sha256": "16fab9be8332280f3c14aab2dc60cfa3bef1f168ec296f9a59eb766c2622669d"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-2-3-2.json",
+      "bytes": 152,
+      "sha256": "ad9b39bd4e98fee06b41a27a6e1e299ad1b90b42871575edb691483966a99cfe"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-2-3-3.json",
+      "bytes": 149,
+      "sha256": "a38d47dffb34fe569b705e55cf9096eeb4089259195c2ccbcabee6e37a7e489d"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-2-3-4.json",
+      "bytes": 150,
+      "sha256": "b9d657633bed78bcdf89b36fe786ba9cc9b57ba6a119f0d259a33a4deb2efa3d"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-2-4-0.json",
+      "bytes": 140,
+      "sha256": "be8c745571ea0822619b95cc4fa054d87dcb87dd5022af8ce8d2f36cd35a6d0f"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-2-4-1.json",
+      "bytes": 144,
+      "sha256": "60403a26be281b0d6585943f321e7930d719ccb7c2a5c6f38be6c8745ecff5ce"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-2-4-2.json",
+      "bytes": 145,
+      "sha256": "b7f441c4860388a35e344f1b938f3f4fafaa57cf24182c356ec642f458e05b5d"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-2-4-3.json",
+      "bytes": 143,
+      "sha256": "28631dc5acadd9f11d88315030f4e2424ddbec7fd00d3fc61d00d26f3009aa32"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-2-4-4.json",
+      "bytes": 144,
+      "sha256": "d8984ebcda8c71076f10de0fe64f729609e23659c8adee3132b59be1f7bf807b"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-2-5-0.json",
+      "bytes": 143,
+      "sha256": "7e881232ce466d3021314c4d014ad6fa170adf7a7597a9de2a6620ca43ca54f4"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-2-5-1.json",
+      "bytes": 146,
+      "sha256": "a3da8bda28f8806536d8c23e490c5a00cda9d03c52a4ea7e5662f0ecce04d8db"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-2-5-2.json",
+      "bytes": 147,
+      "sha256": "af4940833ca7ce52bb596eab9bd8de815a8870a5b3276fbd82b15af593b2f9bd"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-2-5-3.json",
+      "bytes": 144,
+      "sha256": "0d34061832f3625e9d168b1c1c3aa1bae948524b885db1f272f8c9437b9744b7"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-2-5-4.json",
+      "bytes": 145,
+      "sha256": "0ca5028a6c5c929d865f5e95d907fbd06cb8b710c267ec0111a14f4644b57d0d"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-3-0-0.json",
+      "bytes": 155,
+      "sha256": "1fc1410f664474c0d676cd2b2ed7d08c5697cf62dc420f6d3970446c5366268a"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-3-0-1.json",
+      "bytes": 157,
+      "sha256": "4bfc1e6f8a36ea186d0ab60d5d52c2678799885a6de02e7a5fe3b38957af410b"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-3-0-2.json",
+      "bytes": 154,
+      "sha256": "b13aee044440d351ff4a6aeb2e003eeb57af272521da4cd3846089797b92dcf2"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-3-0-3.json",
+      "bytes": 154,
+      "sha256": "43a45f66faed59af98478ce0936d6167a7cbbef840a0db9ea1765731d675c6a9"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-3-0-4.json",
+      "bytes": 153,
+      "sha256": "80788a09f1127f47efe1c1cc1897e830c2f57105f5272074eb8058d3b8b4376b"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-3-1-0.json",
+      "bytes": 151,
+      "sha256": "1706732e4b2c52beda06afd914d3ebf394693e2775f7bcdcfc6c46a15a4badd9"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-3-1-1.json",
+      "bytes": 154,
+      "sha256": "f4912a0d6924324b92e94ee6c8408d89f0590d966b110ac21192d1412378a2d8"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-3-1-2.json",
+      "bytes": 150,
+      "sha256": "5a9a4803c8ca47932fb0da8be320da15dc45e62ea192676ad546e593c7c4da7b"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-3-1-3.json",
+      "bytes": 152,
+      "sha256": "1a9465bfe44196d6a2b73b843e05e29707846d5a82b57d12f39e8412102bb2eb"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-3-1-4.json",
+      "bytes": 150,
+      "sha256": "096c8977aa284018f443d1fea6c25b119e9e306318e3d94c4512dce39b592fb6"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-3-2-0.json",
+      "bytes": 152,
+      "sha256": "8ca74c831e83263b4905f2b5b7ac6b478d49c22f7cc963bc9f04e5f66247f0b1"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-3-2-1.json",
+      "bytes": 152,
+      "sha256": "190bbb4cc1ad211f9651ce72733e2e106d1a4859e27831eadc9af16c5b49aa83"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-3-2-2.json",
+      "bytes": 149,
+      "sha256": "aa4d74321ec6f2cde5641f8e24fe2542a9535123fca730a4a43c0f8120f3f8a0"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-3-2-3.json",
+      "bytes": 150,
+      "sha256": "0f00389d216ffe8130aa24259187fb6e55957238700c16ea2549ac3fba3451c6"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-3-2-4.json",
+      "bytes": 148,
+      "sha256": "db851ae947afcf541375abbdf08de62180e28dc3d82852c0fcf0fcdff5cd1ca1"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-3-3-0.json",
+      "bytes": 144,
+      "sha256": "b55f850ce0730fb8e31450c35fcbcfd8e65ae6f84a9d5035685c9e16b4d782a4"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-3-3-1.json",
+      "bytes": 145,
+      "sha256": "86583eda90683322afb47baaa3240f66b858e2f846bf0a605a8d3a16f0b91787"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-3-3-2.json",
+      "bytes": 143,
+      "sha256": "e34e43bdd7f2f301ae00ec50c9c2b2dc350b87efd9b75b51569489ae9f675c19"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-3-3-3.json",
+      "bytes": 144,
+      "sha256": "64cad9d022b4b0f193806301416b656f5d3473bc361d9f7da0a11e44aec09cda"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-3-3-4.json",
+      "bytes": 141,
+      "sha256": "814cfc3ee4e07fff57ae297f8f169d321630b87c575620643f3ba0a72dd4e326"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-3-4-0.json",
+      "bytes": 144,
+      "sha256": "dadad3b2121a3ad473ac2968c7aebcf66c15013f8b151ec86c6543a582834379"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-3-4-1.json",
+      "bytes": 146,
+      "sha256": "8ebaefa90b20a9c05a53cf4bebc58127b4f58bb26e1a63b984d2bd560526af20"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-3-4-2.json",
+      "bytes": 145,
+      "sha256": "4d1c88df99783def8a2e86b5685118afe05c7974636bfff5680914890ad8b5f6"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-3-4-3.json",
+      "bytes": 145,
+      "sha256": "ef4a019de979953f8f2ef8bac07b5c46e569edc571f5e03c3c3a34b7b0504d64"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-3-4-4.json",
+      "bytes": 143,
+      "sha256": "d7eb586bb69083f044f7e664531ead0908a6c0e825e4379ebd21aa772e9cf579"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-3-5-0.json",
+      "bytes": 147,
+      "sha256": "3be5005b399e8f0d5ff29e3bfbc5f89fae92397417a3b9c41e6ac672e9be247f"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-3-5-1.json",
+      "bytes": 149,
+      "sha256": "91c1259cbccec59033e9b67cb72387d025e33d90605325105b743c69375b328e"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-3-5-2.json",
+      "bytes": 145,
+      "sha256": "1c6f23c69a523bfa8012cb6ac54be99e6b1c0acee36671ae81e78e7664bd4d23"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-3-5-3.json",
+      "bytes": 148,
+      "sha256": "6f8e2cb2d3407d7af0a9d0f6fd6d5540614fc14a77abfa103dc0607d3e742105"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-3-5-4.json",
+      "bytes": 146,
+      "sha256": "87d03d95764b4588efc4ce11aa01cd40555a3aca6fd3ad9e0d8a93658434e494"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-4-0-0.json",
+      "bytes": 154,
+      "sha256": "dacf48b65855fb52fca2a4158626d1cb1b085e49988693bf2b1f901e96d6dd42"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-4-0-1.json",
+      "bytes": 150,
+      "sha256": "66201328df1851ee5bf047b0d5f7b7a826d6b3c2f01a92319a7c704d7ee7b054"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-4-0-2.json",
+      "bytes": 153,
+      "sha256": "6da82de6a558c52d12e54003d846d052634bca3df90af540347818422c2126c8"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-4-0-3.json",
+      "bytes": 150,
+      "sha256": "4fd30109a42478ae9bbe2c063ad2f00b3d9a47092a42211a77a155675d234df8"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-4-0-4.json",
+      "bytes": 152,
+      "sha256": "716d61031978286500f51c6301120fb702d5d281a48727a1f1d2f1be37e82a96"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-4-1-0.json",
+      "bytes": 152,
+      "sha256": "67605cadb527b77bac08ff651c7f8a325c7ae06fd1a2f3b3c8eddbf38bab918d"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-4-1-1.json",
+      "bytes": 150,
+      "sha256": "512edb66d16c347996badb96be3a04f38aab1f803a4a1bdd80ebeb49c3df6e6c"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-4-1-2.json",
+      "bytes": 150,
+      "sha256": "cf28b2b743ba8e0fb41a7cb1ba1cb4255bd6b3f1ffa67d2ce2f91ce2a78a042a"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-4-1-3.json",
+      "bytes": 148,
+      "sha256": "6bd5d005a4c367bcfdb43b523bca3c31cec60d5d02dce2d3086855d82cb2dc5a"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-4-1-4.json",
+      "bytes": 152,
+      "sha256": "23e30fef7bbe61d7d0fe8217277c76ee62776d13ac53ffb1a4be2c42fe6dbb55"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-4-2-0.json",
+      "bytes": 145,
+      "sha256": "fd357626236c0f0cd1cf7e3072f25a5f4feb319f6bda7f1856cf4554c928f311"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-4-2-1.json",
+      "bytes": 143,
+      "sha256": "3240e0876b5c6a74815e69bb47c981e4abbc317e1aab54e9f7311789001686c5"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-4-2-2.json",
+      "bytes": 143,
+      "sha256": "f4e83d80e7f772af39ec442b10130aa068ec1bf41f00450c4f9a550cbbdf565f"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-4-2-3.json",
+      "bytes": 141,
+      "sha256": "2d4870acee3db4c9af81089df7acbb85ab376885fe30001d2f1ec6b6b72c9884"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-4-2-4.json",
+      "bytes": 144,
+      "sha256": "c9fdd843bad431191557e6e092e1bad8f783451258a29d38877322640a5a02ad"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-4-3-0.json",
+      "bytes": 147,
+      "sha256": "691b351934f3f13eb32702a17cd3ab0fb9454ac03cda842001c9831246f1aa79"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-4-3-1.json",
+      "bytes": 145,
+      "sha256": "8986579cea8cda0e812934713dadef1f6545b1221abbe3e89bfda82a470cb8e3"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-4-3-2.json",
+      "bytes": 144,
+      "sha256": "a0b53d46feecbe21869fe69104d9c599e9be8444065776e5ea8925ea4ed444f5"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-4-3-3.json",
+      "bytes": 143,
+      "sha256": "0f77b9217844a6490ad7cd7b0de41b5148d59802413bf419ad46cde2aa01ddee"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-4-3-4.json",
+      "bytes": 145,
+      "sha256": "63c6eb353daf1eeb35b315c0b2d0220eed2faecd0a5a2619538d14fd3fd0c31d"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-4-4-0.json",
+      "bytes": 150,
+      "sha256": "0e6405459ca38796cec61896eeb1042e2d1b55867610a5c4a16dd5832cbbc50a"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-4-4-1.json",
+      "bytes": 146,
+      "sha256": "3deaceb4f9dd1fc88ad007eeb29c54b18070f882c9e249da42ca3eaf31257719"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-4-4-2.json",
+      "bytes": 147,
+      "sha256": "c7d158e5f4196e8d527a2a536199d6c4e195c332f04263cfb379ee37814d0e2f"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-4-4-3.json",
+      "bytes": 145,
+      "sha256": "f8aa40acb67145621614f88f699baecd6edf5bca01d3ab35da82e55c36d74208"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-4-4-4.json",
+      "bytes": 147,
+      "sha256": "92ff9c285cbdb22fc044b7bf51c410034684dcf725cadceeecf086469edea338"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-4-5-0.json",
+      "bytes": 157,
+      "sha256": "622fb382d56a9e93ba11711a266f4070d2588fd929aac5731b511819132f5633"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-4-5-1.json",
+      "bytes": 154,
+      "sha256": "54ece8a16d1542c210001fa778a2251fec4dd531680ff5026f2092fa75a1ab55"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-4-5-2.json",
+      "bytes": 154,
+      "sha256": "ac4d52aa106f5dfffa1181bd977ae30056c0190bc19bd2cd6d361a02459bc401"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-4-5-3.json",
+      "bytes": 154,
+      "sha256": "c17148ec13b9173f8272a5ee9daff0f8be9efff985311169d67b781a0dbde8fb"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-4-5-4.json",
+      "bytes": 155,
+      "sha256": "236fd3b7e32e0b256be296766d8086fd3d65fde32105e030376c8272e9caafec"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-5-0-0.json",
+      "bytes": 149,
+      "sha256": "b1e4b7c9fab6e5ef5d533a587b713225278ff9e4d5299f82da5eb2b064852fcd"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-5-0-1.json",
+      "bytes": 151,
+      "sha256": "c2a1b15914bd07ec58c2e97893da0614a589db6661103a8084b462018661ba67"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-5-0-2.json",
+      "bytes": 148,
+      "sha256": "90c42d36e4a5b7f737987d9d92df7f08864be19d33367d5fc4a016fbcdee9ba3"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-5-0-3.json",
+      "bytes": 152,
+      "sha256": "bc2d7c8d47ab028bdd0d2a6881504eb34a118bef02574fa2202bc92f0fb809f9"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-5-0-4.json",
+      "bytes": 152,
+      "sha256": "39b07ac0702efafd1f388898362e6ff0a72bd161fbbdd06de0cae5bde66817ed"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-5-1-0.json",
+      "bytes": 143,
+      "sha256": "8a0c7b34a38be151a339cc4d9a6994f335d21a6091c217547af57115d5afae78"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-5-1-1.json",
+      "bytes": 144,
+      "sha256": "279e8d34b9fbc8705b68ba274dc69fa6f89730c2973e2d150db6cdac8f1543ec"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-5-1-2.json",
+      "bytes": 141,
+      "sha256": "11111a847b1b8f05bb110d2175f697b3bf64d6df99f4999204c7d9d4cf30ff53"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-5-1-3.json",
+      "bytes": 144,
+      "sha256": "5e92eae6b34027229e079a0a991b1fcb343f8be5b062faa5cfce9e6f9781e9be"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-5-1-4.json",
+      "bytes": 144,
+      "sha256": "a4db1ccd55f2cee99e0a67dbaf32feaf507414cd1c708cabf2abdce22e19bdec"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-5-2-0.json",
+      "bytes": 136,
+      "sha256": "87a52fe509b714d9b5644a36260ac34e8ad28a92eeb24e7877949aa36999cd4d"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-5-2-1.json",
+      "bytes": 145,
+      "sha256": "3b65fde37ac13b29248e0b3803e6b04cb9a72eef3fb00fb4f8e99c478efc2422"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-5-2-2.json",
+      "bytes": 142,
+      "sha256": "8ed51013515b59de8a37505b868a761a7e8d3386698b7a98e97043b7f5413b1d"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-5-2-3.json",
+      "bytes": 145,
+      "sha256": "f13af6a9d9cd8dee962d073e322e5d536801b6288616d85284f8b70e44b9cad5"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-5-2-4.json",
+      "bytes": 146,
+      "sha256": "4f6cb52ffe45ab522e7f7836c3c1b2334f7db59f85273fa7a4321846bd3a5967"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-5-3-0.json",
+      "bytes": 145,
+      "sha256": "6e56c3483dd9c3370abc8c9571c6e7dc7c528a8dfab3b4c2bf26faa09b13706e"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-5-3-1.json",
+      "bytes": 148,
+      "sha256": "c392d503bc7f23bf309c595ad053c8159ad2d61a70bf195e38827ff50cff03ae"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-5-3-2.json",
+      "bytes": 147,
+      "sha256": "07d41f970e2136de541f46dc3538a8b64ca10228dead61d864bb49b4517faa33"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-5-3-3.json",
+      "bytes": 148,
+      "sha256": "431f528c0630bf3a7576aa3fdeb032c55149810697ae5396ef99a9e299466080"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-5-3-4.json",
+      "bytes": 149,
+      "sha256": "e6a613385c14541aa15731b207fc6cb7e3d020bf0ca6cbecad601cdd5af4769c"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-5-4-0.json",
+      "bytes": 153,
+      "sha256": "61f3912e2f3e7cee748d9302c68d7d191567c6fc7fadff02ba8ea03ccd8899c1"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-5-4-1.json",
+      "bytes": 153,
+      "sha256": "1a5147efc34c754f60456a9a3e65fea8bfe133a67b0ccd0de138cf8eb9a5243f"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-5-4-2.json",
+      "bytes": 154,
+      "sha256": "16c101345140b2441244d036b53ff8fc35da0f87418733f29a4f0b367cd79766"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-5-4-3.json",
+      "bytes": 155,
+      "sha256": "df4fc9c2398caf2623f5a0f39bf265e141be9b861dc47b22ea34be6e5a6d9589"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-5-4-4.json",
+      "bytes": 157,
+      "sha256": "b2d57aee7a06219007977643e50aaf4e23f6fdfff60632532494784dd0dba3e0"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-5-5-0.json",
+      "bytes": 150,
+      "sha256": "1c9924e274d129b5a25e5ee3d4c80f8b43b676523c9a946ff9c1922a7593e6c9"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-5-5-1.json",
+      "bytes": 152,
+      "sha256": "4684d1837d6c95a71bb1280afe20647301f986bc2a457660060be02b93b0cdfe"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-5-5-2.json",
+      "bytes": 150,
+      "sha256": "475d8b6599fae493e47e5696bc73787df6a7b757199a885dcecdfb4946a1e930"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-5-5-3.json",
+      "bytes": 151,
+      "sha256": "9c03e672630253d8a3340e129e453596030f43fd1060650a3e8c11ab1ba2605a"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/timing-5-5-4.json",
+      "bytes": 154,
+      "sha256": "788249b7dd139c76d1338893db310f862105aae2faa97732eb1e2949629b4025"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/two-source-receiver-roll-accuracy.json",
+      "bytes": 7996,
+      "sha256": "7abc8f964153afdba257920ab4fe3338fdc1dd1e1d77676a611cd63c5df519f0"
+    },
+    {
+      "path": "research/m31-predictor-stress-2026-10-15/raw/two-source-receiver-roll.ndjson",
+      "bytes": 7272996,
+      "sha256": "75d147013f5a17f0a18ffd1bdae4d2bf35d77b0c205a7295dbd13e77464aaf61"
+    }
+  ],
+  "cases": [
+    {
+      "id": "support-transit",
+      "oracleMaximumDifference": {
+        "wind": 5.551115123125783e-17,
+        "loads": [
+          1.1102230246251565e-16,
+          1.353558649712372e-18,
+          1.2468324983583301e-18
+        ]
+      },
+      "receiverInflowRange": [
+        0,
+        2.5501409576771343
+      ],
+      "metrics": [
+        {
+          "id": "instant",
+          "primary": [
+            {
+              "observable": "thrust",
+              "peak": 0.0,
+              "rms": 0.0,
+              "worstTick": 0,
+              "worstSide": "sample",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 0.0,
+              "rms": 0.0,
+              "worstTick": 0,
+              "worstSide": "sample",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 0.0,
+              "rms": 0.0,
+              "worstTick": 0,
+              "worstSide": "sample",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "refined": [
+            {
+              "observable": "thrust",
+              "peak": 0.0,
+              "rms": 0.0,
+              "worstTick": 0,
+              "worstSide": "sample",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 0.0,
+              "rms": 0.0,
+              "worstTick": 0,
+              "worstSide": "sample",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 0.0,
+              "rms": 0.0,
+              "worstTick": 0,
+              "worstSide": "sample",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "sampling": [
+            {
+              "observable": "thrust",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 0.0,
+              "rmsStable": true
+            },
+            {
+              "observable": "roll",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 0.0,
+              "rmsStable": true
+            },
+            {
+              "observable": "pitch",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 0.0,
+              "rmsStable": true
+            }
+          ]
+        },
+        {
+          "id": "hold-10ms",
+          "primary": [
+            {
+              "observable": "thrust",
+              "peak": 0.0019956790663867574,
+              "rms": 0.000646738880512556,
+              "worstTick": 2480,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": false,
+              "queryExceedances": 155
+            },
+            {
+              "observable": "roll",
+              "peak": 1.0350926177217501e-05,
+              "rms": 2.994865002976635e-06,
+              "worstTick": 1600,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 3.9169030729566384e-05,
+              "rms": 7.856747144580846e-06,
+              "worstTick": 2000,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "refined": [
+            {
+              "observable": "thrust",
+              "peak": 0.0019956790663867574,
+              "rms": 0.0006464363630062442,
+              "worstTick": 2480,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": false,
+              "queryExceedances": 297
+            },
+            {
+              "observable": "roll",
+              "peak": 1.0350926177217501e-05,
+              "rms": 2.9934661304097212e-06,
+              "worstTick": 1600,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 3.9169030729566384e-05,
+              "rms": 7.853079846895008e-06,
+              "worstTick": 2000,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "sampling": [
+            {
+              "observable": "thrust",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 3.025175063117681e-07,
+              "rmsStable": true
+            },
+            {
+              "observable": "roll",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 1.3988725669138944e-09,
+              "rmsStable": true
+            },
+            {
+              "observable": "pitch",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 3.6672976858374102e-09,
+              "rmsStable": true
+            }
+          ]
+        },
+        {
+          "id": "hold-5ms",
+          "primary": [
+            {
+              "observable": "thrust",
+              "peak": 0.0009989181054110285,
+              "rms": 0.0003240333500321055,
+              "worstTick": 1560,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 5.187784704825237e-06,
+              "rms": 1.5007276495205883e-06,
+              "worstTick": 1600,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 1.966483189226641e-05,
+              "rms": 3.937701335327005e-06,
+              "worstTick": 2000,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "refined": [
+            {
+              "observable": "thrust",
+              "peak": 0.0009989181054110285,
+              "rms": 0.0003234284267534017,
+              "worstTick": 1560,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 5.187784704825237e-06,
+              "rms": 1.4979265214004973e-06,
+              "worstTick": 1600,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 1.966483189226641e-05,
+              "rms": 3.930353291568606e-06,
+              "worstTick": 2000,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "sampling": [
+            {
+              "observable": "thrust",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 6.049232787037851e-07,
+              "rmsStable": true
+            },
+            {
+              "observable": "roll",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 2.801128120090916e-09,
+              "rmsStable": true
+            },
+            {
+              "observable": "pitch",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 7.348043758399226e-09,
+              "rmsStable": true
+            }
+          ]
+        },
+        {
+          "id": "hold-2.5ms",
+          "primary": [
+            {
+              "observable": "thrust",
+              "peak": 0.0004995031235439096,
+              "rms": 0.000163228576659418,
+              "worstTick": 1560,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 2.595436978648129e-06,
+              "rms": 7.560101830205087e-07,
+              "worstTick": 2410,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 9.84248716296007e-06,
+              "rms": 1.983752701293684e-06,
+              "worstTick": 2000,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "refined": [
+            {
+              "observable": "thrust",
+              "peak": 0.0004995031235439096,
+              "rms": 0.00016202401462535245,
+              "worstTick": 1560,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 2.595436978648129e-06,
+              "rms": 7.504312634932485e-07,
+              "worstTick": 2410,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 9.84248716296007e-06,
+              "rms": 1.969115057305347e-06,
+              "worstTick": 2000,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "sampling": [
+            {
+              "observable": "thrust",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 1.2045620340655388e-06,
+              "rmsStable": true
+            },
+            {
+              "observable": "roll",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 5.578919527260193e-09,
+              "rmsStable": true
+            },
+            {
+              "observable": "pitch",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 1.4637643988336787e-08,
+              "rmsStable": true
+            }
+          ]
+        },
+        {
+          "id": "predict-5ms",
+          "primary": [
+            {
+              "observable": "thrust",
+              "peak": 7.322325301156729e-05,
+              "rms": 1.3826893222176724e-05,
+              "worstTick": 2020,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 4.6674736616176063e-07,
+              "rms": 8.880888712924464e-08,
+              "worstTick": 2900,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 1.3139825396832599e-06,
+              "rms": 2.888219961761225e-07,
+              "worstTick": 2280,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "refined": [
+            {
+              "observable": "thrust",
+              "peak": 7.322325301156729e-05,
+              "rms": 1.3777296587231766e-05,
+              "worstTick": 2020,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 4.6674736616176063e-07,
+              "rms": 8.849584314096624e-08,
+              "worstTick": 2900,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 1.3139825396832599e-06,
+              "rms": 2.8778641167134314e-07,
+              "worstTick": 2280,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "sampling": [
+            {
+              "observable": "thrust",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 4.95966349449582e-08,
+              "rmsStable": true
+            },
+            {
+              "observable": "roll",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 3.130439882783991e-10,
+              "rmsStable": true
+            },
+            {
+              "observable": "pitch",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 1.0355845047793686e-09,
+              "rmsStable": true
+            }
+          ]
+        }
+      ],
+      "reportingWindows": [],
+      "targetPassingMethods": [
+        "instant",
+        "hold-5ms",
+        "hold-2.5ms",
+        "predict-5ms"
+      ]
+    },
+    {
+      "id": "cold-start-inflow",
+      "oracleMaximumDifference": {
+        "wind": 5.551115123125783e-17,
+        "loads": [
+          5.551115123125783e-17,
+          1.4179331537036988e-18,
+          1.0570971181733668e-18
+        ]
+      },
+      "receiverInflowRange": [
+        0,
+        2.5501424013884844
+      ],
+      "metrics": [
+        {
+          "id": "instant",
+          "primary": [
+            {
+              "observable": "thrust",
+              "peak": 0.0,
+              "rms": 0.0,
+              "worstTick": 0,
+              "worstSide": "sample",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 0.0,
+              "rms": 0.0,
+              "worstTick": 0,
+              "worstSide": "sample",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 0.0,
+              "rms": 0.0,
+              "worstTick": 0,
+              "worstSide": "sample",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "refined": [
+            {
+              "observable": "thrust",
+              "peak": 0.0,
+              "rms": 0.0,
+              "worstTick": 0,
+              "worstSide": "sample",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 0.0,
+              "rms": 0.0,
+              "worstTick": 0,
+              "worstSide": "sample",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 0.0,
+              "rms": 0.0,
+              "worstTick": 0,
+              "worstSide": "sample",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "sampling": [
+            {
+              "observable": "thrust",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 0.0,
+              "rmsStable": true
+            },
+            {
+              "observable": "roll",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 0.0,
+              "rmsStable": true
+            },
+            {
+              "observable": "pitch",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 0.0,
+              "rmsStable": true
+            }
+          ]
+        },
+        {
+          "id": "hold-10ms",
+          "primary": [
+            {
+              "observable": "thrust",
+              "peak": 0.0013865495570197783,
+              "rms": 0.0005091902156972244,
+              "worstTick": 480,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": false,
+              "queryExceedances": 14
+            },
+            {
+              "observable": "roll",
+              "peak": 7.207757953573129e-06,
+              "rms": 2.4480981971777867e-06,
+              "worstTick": 1720,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 2.7277662435179007e-05,
+              "rms": 6.334357229291181e-06,
+              "worstTick": 1120,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "refined": [
+            {
+              "observable": "thrust",
+              "peak": 0.0013865495570197783,
+              "rms": 0.0005089529891820491,
+              "worstTick": 480,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": false,
+              "queryExceedances": 24
+            },
+            {
+              "observable": "roll",
+              "peak": 7.207757953573129e-06,
+              "rms": 2.446956235694417e-06,
+              "worstTick": 1720,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 2.7277662435179007e-05,
+              "rms": 6.331401882128795e-06,
+              "worstTick": 1120,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "sampling": [
+            {
+              "observable": "thrust",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 2.372265151752602e-07,
+              "rmsStable": true
+            },
+            {
+              "observable": "roll",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 1.1419614833698751e-09,
+              "rmsStable": true
+            },
+            {
+              "observable": "pitch",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 2.955347162386093e-09,
+              "rmsStable": true
+            }
+          ]
+        },
+        {
+          "id": "hold-5ms",
+          "primary": [
+            {
+              "observable": "thrust",
+              "peak": 0.0006937253543796429,
+              "rms": 0.0002549990314872464,
+              "worstTick": 480,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 3.6046349295370487e-06,
+              "rms": 1.2262226251300405e-06,
+              "worstTick": 1700,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 1.3665787562638747e-05,
+              "rms": 3.1732864905282463e-06,
+              "worstTick": 1120,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "refined": [
+            {
+              "observable": "thrust",
+              "peak": 0.0006937253543796429,
+              "rms": 0.0002545239710495105,
+              "worstTick": 480,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 3.6046349295370487e-06,
+              "rms": 1.2239366886970797e-06,
+              "worstTick": 1700,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 1.3665787562638747e-05,
+              "rms": 3.1673693881108625e-06,
+              "worstTick": 1120,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "sampling": [
+            {
+              "observable": "thrust",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 4.7506043773592284e-07,
+              "rmsStable": true
+            },
+            {
+              "observable": "roll",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 2.2859364329608687e-09,
+              "rmsStable": true
+            },
+            {
+              "observable": "pitch",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 5.917102417383755e-09,
+              "rmsStable": true
+            }
+          ]
+        },
+        {
+          "id": "hold-2.5ms",
+          "primary": [
+            {
+              "observable": "thrust",
+              "peak": 0.0003468995366187888,
+              "rms": 0.00012842587354151591,
+              "worstTick": 480,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 1.8026696878810713e-06,
+              "rms": 6.176142460421817e-07,
+              "worstTick": 1700,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 6.836268445111707e-06,
+              "rms": 1.598385090122342e-06,
+              "worstTick": 1120,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "refined": [
+            {
+              "observable": "thrust",
+              "peak": 0.0003468995366187888,
+              "rms": 0.00012747914147779078,
+              "worstTick": 480,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 1.8026696878810713e-06,
+              "rms": 6.130597464805109e-07,
+              "worstTick": 1700,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 6.836268445111707e-06,
+              "rms": 1.5865963455083925e-06,
+              "worstTick": 1120,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "sampling": [
+            {
+              "observable": "thrust",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 9.467320637251378e-07,
+              "rmsStable": true
+            },
+            {
+              "observable": "roll",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 4.5544995616708685e-09,
+              "rmsStable": true
+            },
+            {
+              "observable": "pitch",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 1.1788744613949463e-08,
+              "rmsStable": true
+            }
+          ]
+        },
+        {
+          "id": "predict-5ms",
+          "primary": [
+            {
+              "observable": "thrust",
+              "peak": 0.00048597912894732254,
+              "rms": 2.1264559183341533e-05,
+              "worstTick": 20,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 1.923467225222516e-06,
+              "rms": 9.134525359752372e-08,
+              "worstTick": 20,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 4.269623513172187e-06,
+              "rms": 2.3616934054988123e-07,
+              "worstTick": 20,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "refined": [
+            {
+              "observable": "thrust",
+              "peak": 0.00048597912894732254,
+              "rms": 2.1219383669306637e-05,
+              "worstTick": 20,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 1.923467225222516e-06,
+              "rms": 9.112986917409151e-08,
+              "worstTick": 20,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 4.269623513172187e-06,
+              "rms": 2.3554121492133278e-07,
+              "worstTick": 20,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "sampling": [
+            {
+              "observable": "thrust",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 4.5175514034895975e-08,
+              "rmsStable": true
+            },
+            {
+              "observable": "roll",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 2.153844234322027e-10,
+              "rmsStable": true
+            },
+            {
+              "observable": "pitch",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 6.281256285484491e-10,
+              "rmsStable": true
+            }
+          ]
+        }
+      ],
+      "reportingWindows": [
+        {
+          "label": "startup 0\u20135 ms",
+          "startTick": 0,
+          "endTick": 20,
+          "methods": [
+            {
+              "id": "instant",
+              "signedLoadMin": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "signedLoadMax": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "signedWindMin": 0.0,
+              "signedWindMax": 0.0
+            },
+            {
+              "id": "hold-10ms",
+              "signedLoadMin": [
+                0.0,
+                -1.923467225222516e-06,
+                0.0
+              ],
+              "signedLoadMax": [
+                0.00048597912894732254,
+                0.0,
+                4.269623513172187e-06
+              ],
+              "signedWindMin": -0.03403624413345807,
+              "signedWindMax": 0.0
+            },
+            {
+              "id": "hold-5ms",
+              "signedLoadMin": [
+                0.0,
+                -1.923467225222516e-06,
+                0.0
+              ],
+              "signedLoadMax": [
+                0.00048597912894732254,
+                0.0,
+                4.269623513172187e-06
+              ],
+              "signedWindMin": -0.03403624413345807,
+              "signedWindMax": 0.0
+            },
+            {
+              "id": "hold-2.5ms",
+              "signedLoadMin": [
+                0.0,
+                -9.713341225022366e-07,
+                0.0
+              ],
+              "signedLoadMax": [
+                0.00024457544110678686,
+                0.0,
+                2.140792978295959e-06
+              ],
+              "signedWindMin": -0.01712473612595966,
+              "signedWindMax": 0.0
+            },
+            {
+              "id": "predict-5ms",
+              "signedLoadMin": [
+                0.0,
+                -1.923467225222516e-06,
+                0.0
+              ],
+              "signedLoadMax": [
+                0.00048597912894732254,
+                0.0,
+                4.269623513172187e-06
+              ],
+              "signedWindMin": -0.03403624413345807,
+              "signedWindMax": 0.0
+            }
+          ]
+        },
+        {
+          "label": "second interval 5\u201310 ms",
+          "startTick": 20,
+          "endTick": 40,
+          "methods": [
+            {
+              "id": "instant",
+              "signedLoadMin": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "signedLoadMax": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "signedWindMin": 0.0,
+              "signedWindMax": 0.0
+            },
+            {
+              "id": "hold-10ms",
+              "signedLoadMin": [
+                0.0,
+                -3.924507560115016e-06,
+                0.0
+              ],
+              "signedLoadMax": [
+                0.0009846574300329813,
+                0.0,
+                8.583215509496908e-06
+              ],
+              "signedWindMin": -0.06892135453298143,
+              "signedWindMax": 0.0
+            },
+            {
+              "id": "hold-5ms",
+              "signedLoadMin": [
+                0.0,
+                -2.0010403348925e-06,
+                0.0
+              ],
+              "signedLoadMax": [
+                0.0004986783010856588,
+                0.0,
+                4.313591996324721e-06
+              ],
+              "signedWindMin": -0.034885110399523356,
+              "signedWindMax": 0.0
+            },
+            {
+              "id": "hold-2.5ms",
+              "signedLoadMin": [
+                0.0,
+                -1.0103106098779523e-06,
+                0.0
+              ],
+              "signedLoadMax": [
+                0.00025092756293146334,
+                0.0,
+                2.1617928729002374e-06
+              ],
+              "signedWindMin": -0.01754810404958773,
+              "signedWindMax": 0.0
+            },
+            {
+              "id": "predict-5ms",
+              "signedLoadMin": [
+                0.0,
+                -1.923467225222516e-06,
+                0.0
+              ],
+              "signedLoadMax": [
+                0.00048597912894732254,
+                0.0,
+                4.269623513172187e-06
+              ],
+              "signedWindMin": -0.03403624413345807,
+              "signedWindMax": 0.0
+            }
+          ]
+        }
+      ],
+      "targetPassingMethods": [
+        "instant",
+        "hold-5ms",
+        "hold-2.5ms",
+        "predict-5ms"
+      ]
+    },
+    {
+      "id": "smooth-fast-reversal",
+      "oracleMaximumDifference": {
+        "wind": 5.551115123125783e-17,
+        "loads": [
+          1.1102230246251565e-16,
+          1.6872896309305663e-18,
+          1.111307226797642e-18
+        ]
+      },
+      "receiverInflowRange": [
+        0.07599546353838109,
+        2.5279558094262757
+      ],
+      "metrics": [
+        {
+          "id": "instant",
+          "primary": [
+            {
+              "observable": "thrust",
+              "peak": 0.0,
+              "rms": 0.0,
+              "worstTick": 0,
+              "worstSide": "sample",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 0.0,
+              "rms": 0.0,
+              "worstTick": 0,
+              "worstSide": "sample",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 0.0,
+              "rms": 0.0,
+              "worstTick": 0,
+              "worstSide": "sample",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "refined": [
+            {
+              "observable": "thrust",
+              "peak": 0.0,
+              "rms": 0.0,
+              "worstTick": 0,
+              "worstSide": "sample",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 0.0,
+              "rms": 0.0,
+              "worstTick": 0,
+              "worstSide": "sample",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 0.0,
+              "rms": 0.0,
+              "worstTick": 0,
+              "worstSide": "sample",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "sampling": [
+            {
+              "observable": "thrust",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 0.0,
+              "rmsStable": true
+            },
+            {
+              "observable": "roll",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 0.0,
+              "rmsStable": true
+            },
+            {
+              "observable": "pitch",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 0.0,
+              "rmsStable": true
+            }
+          ]
+        },
+        {
+          "id": "hold-10ms",
+          "primary": [
+            {
+              "observable": "thrust",
+              "peak": 0.0028432183069760364,
+              "rms": 0.0009833218688327123,
+              "worstTick": 600,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": false,
+              "queryExceedances": 402
+            },
+            {
+              "observable": "roll",
+              "peak": 1.593519513447294e-05,
+              "rms": 5.122864594678857e-06,
+              "worstTick": 2640,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 1.8929284310005437e-05,
+              "rms": 6.416409797201863e-06,
+              "worstTick": 1560,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "refined": [
+            {
+              "observable": "thrust",
+              "peak": 0.0028432183069760364,
+              "rms": 0.0009828623979059737,
+              "worstTick": 600,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": false,
+              "queryExceedances": 776
+            },
+            {
+              "observable": "roll",
+              "peak": 1.593519513447294e-05,
+              "rms": 5.1204749111081836e-06,
+              "worstTick": 2640,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 1.8929284310005437e-05,
+              "rms": 6.413445181954035e-06,
+              "worstTick": 1560,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "sampling": [
+            {
+              "observable": "thrust",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 4.594709267385401e-07,
+              "rmsStable": true
+            },
+            {
+              "observable": "roll",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 2.3896835706733324e-09,
+              "rmsStable": true
+            },
+            {
+              "observable": "pitch",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 2.9646152478281622e-09,
+              "rmsStable": true
+            }
+          ]
+        },
+        {
+          "id": "hold-5ms",
+          "primary": [
+            {
+              "observable": "thrust",
+              "peak": 0.0014262284630535693,
+              "rms": 0.0004927805252299516,
+              "worstTick": 600,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": false,
+              "queryExceedances": 28
+            },
+            {
+              "observable": "roll",
+              "peak": 7.973187882569406e-06,
+              "rms": 2.5676074686846137e-06,
+              "worstTick": 3380,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 9.549301030942984e-06,
+              "rms": 3.2200149097919282e-06,
+              "worstTick": 500,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "refined": [
+            {
+              "observable": "thrust",
+              "peak": 0.0014262284630535693,
+              "rms": 0.0004918608916089589,
+              "worstTick": 600,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": false,
+              "queryExceedances": 44
+            },
+            {
+              "observable": "roll",
+              "peak": 7.973187882569406e-06,
+              "rms": 2.5628157451121896e-06,
+              "worstTick": 3380,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 9.549301030942984e-06,
+              "rms": 3.214018067632152e-06,
+              "worstTick": 500,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "sampling": [
+            {
+              "observable": "thrust",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 9.196336209927464e-07,
+              "rmsStable": true
+            },
+            {
+              "observable": "roll",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 4.791723572424107e-09,
+              "rmsStable": true
+            },
+            {
+              "observable": "pitch",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 5.996842159776043e-09,
+              "rmsStable": true
+            }
+          ]
+        },
+        {
+          "id": "hold-2.5ms",
+          "primary": [
+            {
+              "observable": "thrust",
+              "peak": 0.0007132875550911189,
+              "rms": 0.0002482458230382104,
+              "worstTick": 600,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 3.992050483725895e-06,
+              "rms": 1.2935526918387341e-06,
+              "worstTick": 3380,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 4.785874127551581e-06,
+              "rms": 1.6227901453592691e-06,
+              "worstTick": 2490,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "refined": [
+            {
+              "observable": "thrust",
+              "peak": 0.0007132875550911189,
+              "rms": 0.0002464140082712399,
+              "worstTick": 600,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 3.992050483725895e-06,
+              "rms": 1.284007564173572e-06,
+              "worstTick": 3380,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 4.785874127551581e-06,
+              "rms": 1.6108219268793892e-06,
+              "worstTick": 2490,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "sampling": [
+            {
+              "observable": "thrust",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 1.8318147669705155e-06,
+              "rmsStable": true
+            },
+            {
+              "observable": "roll",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 9.54512766516225e-09,
+              "rmsStable": true
+            },
+            {
+              "observable": "pitch",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 1.1968218479879914e-08,
+              "rmsStable": true
+            }
+          ]
+        },
+        {
+          "id": "predict-5ms",
+          "primary": [
+            {
+              "observable": "thrust",
+              "peak": 9.703088440099483e-05,
+              "rms": 3.108517112965773e-05,
+              "worstTick": 1240,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 9.658777858040195e-07,
+              "rms": 1.9903130674886008e-07,
+              "worstTick": 3660,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 1.6785960014055294e-06,
+              "rms": 4.5216911489391216e-07,
+              "worstTick": 1360,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "refined": [
+            {
+              "observable": "thrust",
+              "peak": 9.703088440099483e-05,
+              "rms": 3.097342279875924e-05,
+              "worstTick": 1240,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 9.658777858040195e-07,
+              "rms": 1.9832382367230507e-07,
+              "worstTick": 3660,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 1.6785960014055294e-06,
+              "rms": 4.50547151894547e-07,
+              "worstTick": 1360,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "sampling": [
+            {
+              "observable": "thrust",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 1.1174833089848841e-07,
+              "rmsStable": true
+            },
+            {
+              "observable": "roll",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 7.074830765550093e-10,
+              "rmsStable": true
+            },
+            {
+              "observable": "pitch",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 1.6219629993651597e-09,
+              "rmsStable": true
+            }
+          ]
+        }
+      ],
+      "reportingWindows": [
+        {
+          "label": "reversal at 0.25s \u00b110ms",
+          "startTick": 960,
+          "endTick": 1040,
+          "methods": [
+            {
+              "id": "instant",
+              "signedLoadMin": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "signedLoadMax": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "signedWindMin": 0.0,
+              "signedWindMax": 0.0
+            },
+            {
+              "id": "hold-10ms",
+              "signedLoadMin": [
+                -0.0001112402363364351,
+                -2.1931018338815483e-06,
+                -8.013784857019944e-06
+              ],
+              "signedLoadMax": [
+                0.0003450108945872721,
+                7.08096759939993e-07,
+                2.7695821940873326e-06
+              ],
+              "signedWindMin": -0.03637629387105168,
+              "signedWindMax": 0.012131878415806874
+            },
+            {
+              "id": "hold-5ms",
+              "signedLoadMin": [
+                -8.361153409952582e-05,
+                -9.014907991148745e-07,
+                -3.39301244613047e-06
+              ],
+              "signedLoadMax": [
+                0.00014173104392548042,
+                5.32182368329125e-07,
+                2.0726034480906402e-06
+              ],
+              "signedWindMin": -0.015162652556003353,
+              "signedWindMax": 0.009098945041371875
+            },
+            {
+              "id": "hold-2.5ms",
+              "signedLoadMin": [
+                -4.890509256072484e-05,
+                -4.034497621018592e-07,
+                -1.5363606437077213e-06
+              ],
+              "signedLoadMax": [
+                6.341461965650441e-05,
+                3.112451520718377e-07,
+                1.2056736224481859e-06
+              ],
+              "signedWindMin": -0.006823787207986376,
+              "signedWindMax": 0.0053077064965774134
+            },
+            {
+              "id": "predict-5ms",
+              "signedLoadMin": [
+                -6.144363580948276e-05,
+                0.0,
+                0.0
+              ],
+              "signedLoadMax": [
+                0.0,
+                3.8842467972241557e-07,
+                1.393897620607541e-06
+              ],
+              "signedWindMin": 0.0,
+              "signedWindMax": 0.006066011666937543
+            }
+          ]
+        },
+        {
+          "label": "reversal at 0.5s \u00b110ms",
+          "startTick": 1960,
+          "endTick": 2040,
+          "methods": [
+            {
+              "id": "instant",
+              "signedLoadMin": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "signedLoadMax": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "signedWindMin": 0.0,
+              "signedWindMax": 0.0
+            },
+            {
+              "id": "hold-10ms",
+              "signedLoadMin": [
+                -0.00021402223475758264,
+                -2.1478799401087115e-07,
+                -5.041880346554669e-07
+              ],
+              "signedLoadMax": [
+                7.055284055218491e-05,
+                6.926137861183387e-07,
+                1.884824836733811e-07
+              ],
+              "signedWindMin": -0.0038899295357776587,
+              "signedWindMax": 0.011841762235253628
+            },
+            {
+              "id": "hold-5ms",
+              "signedLoadMin": [
+                -8.850975377283632e-05,
+                -1.6262272556160327e-07,
+                -2.1432760727952901e-07
+              ],
+              "signedLoadMax": [
+                5.292470403156502e-05,
+                2.8656468020402115e-07,
+                1.3960607560085936e-07
+              ],
+              "signedWindMin": -0.0029201254847911473,
+              "signedWindMax": 0.004902657868266158
+            },
+            {
+              "id": "hold-2.5ms",
+              "signedLoadMin": [
+                -3.973361254006047e-05,
+                -9.598569275948848e-08,
+                -9.787816780768704e-08
+              ],
+              "signedLoadMax": [
+                3.08797930225202e-05,
+                1.2794495832398577e-07,
+                8.015330684027142e-08
+              ],
+              "signedWindMin": -0.0017053604658867072,
+              "signedWindMax": 0.002200654673761182
+            },
+            {
+              "id": "predict-5ms",
+              "signedLoadMin": [
+                0.0,
+                -1.2395502535186322e-07,
+                0.0
+              ],
+              "signedLoadMax": [
+                3.7005699134340375e-05,
+                0.0,
+                9.775398106389929e-08
+              ],
+              "signedWindMin": -0.0020364464987213116,
+              "signedWindMax": 0.0
+            }
+          ]
+        },
+        {
+          "label": "reversal at 0.75s \u00b110ms",
+          "startTick": 2960,
+          "endTick": 3040,
+          "methods": [
+            {
+              "id": "instant",
+              "signedLoadMin": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "signedLoadMax": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "signedWindMin": 0.0,
+              "signedWindMax": 0.0
+            },
+            {
+              "id": "hold-10ms",
+              "signedLoadMin": [
+                -0.0001112402363364351,
+                -2.193101833881765e-06,
+                -8.013784857020161e-06
+              ],
+              "signedLoadMax": [
+                0.0003450108945872721,
+                7.08096759939993e-07,
+                2.7695821940873326e-06
+              ],
+              "signedWindMin": -0.036376293871052345,
+              "signedWindMax": 0.012131878415806874
+            },
+            {
+              "id": "hold-5ms",
+              "signedLoadMin": [
+                -8.361153409952582e-05,
+                -9.014907991153082e-07,
+                -3.393012446130904e-06
+              ],
+              "signedLoadMax": [
+                0.00014173104392548042,
+                5.32182368329125e-07,
+                2.0726034480906402e-06
+              ],
+              "signedWindMin": -0.015162652556004907,
+              "signedWindMax": 0.009098945041371875
+            },
+            {
+              "id": "hold-2.5ms",
+              "signedLoadMin": [
+                -4.890509256072484e-05,
+                -4.0344976210207606e-07,
+                -1.5363606437079382e-06
+              ],
+              "signedLoadMax": [
+                6.341461965650441e-05,
+                3.1124515207227137e-07,
+                1.205673622447969e-06
+              ],
+              "signedWindMin": -0.006823787207987042,
+              "signedWindMax": 0.0053077064965774134
+            },
+            {
+              "id": "predict-5ms",
+              "signedLoadMin": [
+                -6.1443635809455e-05,
+                0.0,
+                0.0
+              ],
+              "signedLoadMax": [
+                0.0,
+                3.884246797219819e-07,
+                1.393897620607541e-06
+              ],
+              "signedWindMin": 0.0,
+              "signedWindMax": 0.006066011666936877
+            }
+          ]
+        }
+      ],
+      "targetPassingMethods": [
+        "instant",
+        "hold-2.5ms",
+        "predict-5ms"
+      ]
+    },
+    {
+      "id": "fixed-position-source-pitch",
+      "oracleMaximumDifference": {
+        "wind": 5.551115123125783e-17,
+        "loads": [
+          5.551115123125783e-17,
+          1.734723475976807e-18,
+          1.0909784360635388e-18
+        ]
+      },
+      "receiverInflowRange": [
+        0,
+        2.523124281703499
+      ],
+      "metrics": [
+        {
+          "id": "instant",
+          "primary": [
+            {
+              "observable": "thrust",
+              "peak": 0.0,
+              "rms": 0.0,
+              "worstTick": 0,
+              "worstSide": "sample",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 0.0,
+              "rms": 0.0,
+              "worstTick": 0,
+              "worstSide": "sample",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 0.0,
+              "rms": 0.0,
+              "worstTick": 0,
+              "worstSide": "sample",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "refined": [
+            {
+              "observable": "thrust",
+              "peak": 0.0,
+              "rms": 0.0,
+              "worstTick": 0,
+              "worstSide": "sample",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 0.0,
+              "rms": 0.0,
+              "worstTick": 0,
+              "worstSide": "sample",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 0.0,
+              "rms": 0.0,
+              "worstTick": 0,
+              "worstSide": "sample",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "sampling": [
+            {
+              "observable": "thrust",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 0.0,
+              "rmsStable": true
+            },
+            {
+              "observable": "roll",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 0.0,
+              "rmsStable": true
+            },
+            {
+              "observable": "pitch",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 0.0,
+              "rmsStable": true
+            }
+          ]
+        },
+        {
+          "id": "hold-10ms",
+          "primary": [
+            {
+              "observable": "thrust",
+              "peak": 0.007072522539900927,
+              "rms": 0.001894118101886889,
+              "worstTick": 3960,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": false,
+              "queryExceedances": 734
+            },
+            {
+              "observable": "roll",
+              "peak": 3.579614879466175e-05,
+              "rms": 8.901388683756425e-06,
+              "worstTick": 3080,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 0.00011497123311619839,
+              "rms": 2.4827831518609466e-05,
+              "worstTick": 1200,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": false,
+              "queryExceedances": 8
+            }
+          ],
+          "refined": [
+            {
+              "observable": "thrust",
+              "peak": 0.007072522539900927,
+              "rms": 0.0018932437115925073,
+              "worstTick": 3960,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": false,
+              "queryExceedances": 1438
+            },
+            {
+              "observable": "roll",
+              "peak": 3.579614879466175e-05,
+              "rms": 8.89730679107694e-06,
+              "worstTick": 3080,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 0.00011497123311619839,
+              "rms": 2.4816571694273394e-05,
+              "worstTick": 1200,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": false,
+              "queryExceedances": 16
+            }
+          ],
+          "sampling": [
+            {
+              "observable": "thrust",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 8.743902943817664e-07,
+              "rmsStable": true
+            },
+            {
+              "observable": "roll",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 4.081892679485226e-09,
+              "rmsStable": true
+            },
+            {
+              "observable": "pitch",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 1.1259824336071498e-08,
+              "rmsStable": true
+            }
+          ]
+        },
+        {
+          "id": "hold-5ms",
+          "primary": [
+            {
+              "observable": "thrust",
+              "peak": 0.003567855713999729,
+              "rms": 0.0009511364328348578,
+              "worstTick": 3960,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": false,
+              "queryExceedances": 358
+            },
+            {
+              "observable": "roll",
+              "peak": 1.8095869900036426e-05,
+              "rms": 4.478377197264941e-06,
+              "worstTick": 1080,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 5.763912833990029e-05,
+              "rms": 1.249767245741092e-05,
+              "worstTick": 3820,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "refined": [
+            {
+              "observable": "thrust",
+              "peak": 0.003567855713999729,
+              "rms": 0.0009493667176550307,
+              "worstTick": 3960,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": false,
+              "queryExceedances": 670
+            },
+            {
+              "observable": "roll",
+              "peak": 1.8095869900036426e-05,
+              "rms": 4.4700649516368e-06,
+              "worstTick": 1080,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 5.763912833990029e-05,
+              "rms": 1.2474526292273721e-05,
+              "worstTick": 3820,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "sampling": [
+            {
+              "observable": "thrust",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 1.769715179827133e-06,
+              "rmsStable": true
+            },
+            {
+              "observable": "roll",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 8.312245628141678e-09,
+              "rmsStable": true
+            },
+            {
+              "observable": "pitch",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 2.3146165137198483e-08,
+              "rmsStable": true
+            }
+          ]
+        },
+        {
+          "id": "hold-2.5ms",
+          "primary": [
+            {
+              "observable": "thrust",
+              "peak": 0.0017876488637917076,
+              "rms": 0.00047940023582423747,
+              "worstTick": 3950,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": false,
+              "queryExceedances": 84
+            },
+            {
+              "observable": "roll",
+              "peak": 9.069753491433314e-06,
+              "rms": 2.2579045247922565e-06,
+              "worstTick": 1940,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 2.9090802562038156e-05,
+              "rms": 6.302967065937877e-06,
+              "worstTick": 3820,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "refined": [
+            {
+              "observable": "thrust",
+              "peak": 0.0017876488637917076,
+              "rms": 0.00047586554213664435,
+              "worstTick": 3950,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": false,
+              "queryExceedances": 128
+            },
+            {
+              "observable": "roll",
+              "peak": 9.069753491433314e-06,
+              "rms": 2.241262961925722e-06,
+              "worstTick": 1940,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 2.9090802562038156e-05,
+              "rms": 6.256539651288507e-06,
+              "worstTick": 3820,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "sampling": [
+            {
+              "observable": "thrust",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 3.534693687593123e-06,
+              "rmsStable": true
+            },
+            {
+              "observable": "roll",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 1.664156286653437e-08,
+              "rmsStable": true
+            },
+            {
+              "observable": "pitch",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 4.642741464936999e-08,
+              "rmsStable": true
+            }
+          ]
+        },
+        {
+          "id": "predict-5ms",
+          "primary": [
+            {
+              "observable": "thrust",
+              "peak": 0.0028984383829929183,
+              "rms": 0.000190607844352849,
+              "worstTick": 20,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": false,
+              "queryExceedances": 6
+            },
+            {
+              "observable": "roll",
+              "peak": 1.2136382813608118e-05,
+              "rms": 9.978000366839305e-07,
+              "worstTick": 20,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 2.286792428234964e-05,
+              "rms": 2.9868451381210545e-06,
+              "worstTick": 20,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "refined": [
+            {
+              "observable": "thrust",
+              "peak": 0.0028984383829929183,
+              "rms": 0.0001900709197970758,
+              "worstTick": 20,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": false,
+              "queryExceedances": 12
+            },
+            {
+              "observable": "roll",
+              "peak": 1.2136382813608118e-05,
+              "rms": 9.94817348182497e-07,
+              "worstTick": 20,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 2.286792428234964e-05,
+              "rms": 2.9768631145722877e-06,
+              "worstTick": 20,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "sampling": [
+            {
+              "observable": "thrust",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 5.369245557732048e-07,
+              "rmsStable": true
+            },
+            {
+              "observable": "roll",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 2.982688501433447e-09,
+              "rmsStable": true
+            },
+            {
+              "observable": "pitch",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 9.982023548766832e-09,
+              "rmsStable": true
+            }
+          ]
+        }
+      ],
+      "reportingWindows": [],
+      "targetPassingMethods": [
+        "instant"
+      ]
+    },
+    {
+      "id": "two-source-receiver-roll",
+      "oracleMaximumDifference": {
+        "wind": 1.1102230246251565e-15,
+        "loads": [
+          1.1102230246251565e-16,
+          1.5788694136820158e-18,
+          1.3417001884508117e-18
+        ]
+      },
+      "receiverInflowRange": [
+        0.31685687156089215,
+        1.3501050938641665
+      ],
+      "metrics": [
+        {
+          "id": "instant",
+          "primary": [
+            {
+              "observable": "thrust",
+              "peak": 0.0,
+              "rms": 0.0,
+              "worstTick": 0,
+              "worstSide": "sample",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 0.0,
+              "rms": 0.0,
+              "worstTick": 0,
+              "worstSide": "sample",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 0.0,
+              "rms": 0.0,
+              "worstTick": 0,
+              "worstSide": "sample",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "refined": [
+            {
+              "observable": "thrust",
+              "peak": 0.0,
+              "rms": 0.0,
+              "worstTick": 0,
+              "worstSide": "sample",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 0.0,
+              "rms": 0.0,
+              "worstTick": 0,
+              "worstSide": "sample",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 0.0,
+              "rms": 0.0,
+              "worstTick": 0,
+              "worstSide": "sample",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "sampling": [
+            {
+              "observable": "thrust",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 0.0,
+              "rmsStable": true
+            },
+            {
+              "observable": "roll",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 0.0,
+              "rmsStable": true
+            },
+            {
+              "observable": "pitch",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 0.0,
+              "rmsStable": true
+            }
+          ]
+        },
+        {
+          "id": "hold-10ms",
+          "primary": [
+            {
+              "observable": "thrust",
+              "peak": 0.0006843210830285718,
+              "rms": 0.00028281168190196436,
+              "worstTick": 1440,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 2.6789181492047672e-06,
+              "rms": 9.354271972663543e-07,
+              "worstTick": 1400,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 1.117015140255891e-05,
+              "rms": 4.644959986002125e-06,
+              "worstTick": 3640,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "refined": [
+            {
+              "observable": "thrust",
+              "peak": 0.0006843210830285718,
+              "rms": 0.00028267951165742805,
+              "worstTick": 1440,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 2.6789181492047672e-06,
+              "rms": 9.349917906697658e-07,
+              "worstTick": 1400,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 1.117015140255891e-05,
+              "rms": 4.642786025792705e-06,
+              "worstTick": 3640,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "sampling": [
+            {
+              "observable": "thrust",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 1.321702445363144e-07,
+              "rmsStable": true
+            },
+            {
+              "observable": "roll",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 4.35406596588526e-10,
+              "rmsStable": true
+            },
+            {
+              "observable": "pitch",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 2.1739602094197284e-09,
+              "rmsStable": true
+            }
+          ]
+        },
+        {
+          "id": "hold-5ms",
+          "primary": [
+            {
+              "observable": "thrust",
+              "peak": 0.0003426725741325076,
+              "rms": 0.00014171395887897133,
+              "worstTick": 1440,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 1.3398255755501381e-06,
+              "rms": 4.688788396282963e-07,
+              "worstTick": 1400,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 5.595185626543816e-06,
+              "rms": 2.327125480278996e-06,
+              "worstTick": 3640,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "refined": [
+            {
+              "observable": "thrust",
+              "peak": 0.0003426725741325076,
+              "rms": 0.00014144945741356084,
+              "worstTick": 1440,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 1.3398255755501381e-06,
+              "rms": 4.680040393209644e-07,
+              "worstTick": 1400,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 5.595185626543816e-06,
+              "rms": 2.3227808171526114e-06,
+              "worstTick": 3640,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "sampling": [
+            {
+              "observable": "thrust",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 2.645014654104928e-07,
+              "rmsStable": true
+            },
+            {
+              "observable": "roll",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 8.748003073319044e-10,
+              "rmsStable": true
+            },
+            {
+              "observable": "pitch",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 4.344663126384541e-09,
+              "rmsStable": true
+            }
+          ]
+        },
+        {
+          "id": "hold-2.5ms",
+          "primary": [
+            {
+              "observable": "thrust",
+              "peak": 0.00017135965867975944,
+              "rms": 7.138944911118093e-05,
+              "worstTick": 1440,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 6.703033856418367e-07,
+              "rms": 2.3625081175477835e-07,
+              "worstTick": 1390,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 2.811136932796615e-06,
+              "rms": 1.1722422937591755e-06,
+              "worstTick": 1630,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "refined": [
+            {
+              "observable": "thrust",
+              "peak": 0.00017135965867975944,
+              "rms": 7.086264294537123e-05,
+              "worstTick": 1440,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 6.703033856418367e-07,
+              "rms": 2.3450764574604106e-07,
+              "worstTick": 1390,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 2.811136932796615e-06,
+              "rms": 1.1635916340646927e-06,
+              "worstTick": 1630,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "sampling": [
+            {
+              "observable": "thrust",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 5.268061658097008e-07,
+              "rmsStable": true
+            },
+            {
+              "observable": "roll",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 1.7431660087372882e-09,
+              "rmsStable": true
+            },
+            {
+              "observable": "pitch",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 8.650659694482813e-09,
+              "rmsStable": true
+            }
+          ]
+        },
+        {
+          "id": "predict-5ms",
+          "primary": [
+            {
+              "observable": "thrust",
+              "peak": 2.5077294986436405e-05,
+              "rms": 8.156597902194297e-06,
+              "worstTick": 1020,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 3.6519985272226267e-07,
+              "rms": 4.5959173719431596e-08,
+              "worstTick": 20,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 3.55688550599865e-06,
+              "rms": 1.673781917807102e-07,
+              "worstTick": 20,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "refined": [
+            {
+              "observable": "thrust",
+              "peak": 2.5077294986436405e-05,
+              "rms": 8.127288280366838e-06,
+              "worstTick": 1020,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 3.6519985272226267e-07,
+              "rms": 4.580221306926123e-08,
+              "worstTick": 20,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 3.55688550599865e-06,
+              "rms": 1.6698239951583348e-07,
+              "worstTick": 20,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "sampling": [
+            {
+              "observable": "thrust",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 2.93096218274588e-08,
+              "rmsStable": true
+            },
+            {
+              "observable": "roll",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 1.56960650170367e-10,
+              "rmsStable": true
+            },
+            {
+              "observable": "pitch",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 3.957922648767174e-10,
+              "rmsStable": true
+            }
+          ]
+        }
+      ],
+      "reportingWindows": [],
+      "targetPassingMethods": [
+        "instant",
+        "hold-10ms",
+        "hold-5ms",
+        "hold-2.5ms",
+        "predict-5ms"
+      ]
+    },
+    {
+      "id": "stacked-moving-sources",
+      "oracleMaximumDifference": {
+        "wind": 8.881784197001252e-16,
+        "loads": [
+          5.551115123125783e-17,
+          1.1045309632196076e-18,
+          7.860465750519907e-19
+        ]
+      },
+      "receiverInflowRange": [
+        2.852311778065822,
+        6.056848981249903
+      ],
+      "metrics": [
+        {
+          "id": "instant",
+          "primary": [
+            {
+              "observable": "thrust",
+              "peak": 0.0,
+              "rms": 0.0,
+              "worstTick": 0,
+              "worstSide": "sample",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 0.0,
+              "rms": 0.0,
+              "worstTick": 0,
+              "worstSide": "sample",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 0.0,
+              "rms": 0.0,
+              "worstTick": 0,
+              "worstSide": "sample",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "refined": [
+            {
+              "observable": "thrust",
+              "peak": 0.0,
+              "rms": 0.0,
+              "worstTick": 0,
+              "worstSide": "sample",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 0.0,
+              "rms": 0.0,
+              "worstTick": 0,
+              "worstSide": "sample",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 0.0,
+              "rms": 0.0,
+              "worstTick": 0,
+              "worstSide": "sample",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "sampling": [
+            {
+              "observable": "thrust",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 0.0,
+              "rmsStable": true
+            },
+            {
+              "observable": "roll",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 0.0,
+              "rmsStable": true
+            },
+            {
+              "observable": "pitch",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 0.0,
+              "rmsStable": true
+            }
+          ]
+        },
+        {
+          "id": "hold-10ms",
+          "primary": [
+            {
+              "observable": "thrust",
+              "peak": 0.0017898047460835897,
+              "rms": 0.0004638476786091856,
+              "worstTick": 1960,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": false,
+              "queryExceedances": 50
+            },
+            {
+              "observable": "roll",
+              "peak": 2.134188324528054e-05,
+              "rms": 7.849688595336139e-06,
+              "worstTick": 3160,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 3.760517438238854e-05,
+              "rms": 9.942892731553285e-06,
+              "worstTick": 2360,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "refined": [
+            {
+              "observable": "thrust",
+              "peak": 0.0017898047460835897,
+              "rms": 0.000463630782903173,
+              "worstTick": 1960,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": false,
+              "queryExceedances": 92
+            },
+            {
+              "observable": "roll",
+              "peak": 2.134188324528054e-05,
+              "rms": 7.846015270676575e-06,
+              "worstTick": 3160,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 3.760517438238854e-05,
+              "rms": 9.938243226428832e-06,
+              "worstTick": 2360,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "sampling": [
+            {
+              "observable": "thrust",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 2.1689570601260118e-07,
+              "rmsStable": true
+            },
+            {
+              "observable": "roll",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 3.673324659564088e-09,
+              "rmsStable": true
+            },
+            {
+              "observable": "pitch",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 4.649505124453105e-09,
+              "rmsStable": true
+            }
+          ]
+        },
+        {
+          "id": "hold-5ms",
+          "primary": [
+            {
+              "observable": "thrust",
+              "peak": 0.0008965444936188394,
+              "rms": 0.00023241130473936286,
+              "worstTick": 1940,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 1.0671093842521068e-05,
+              "rms": 3.932616521320823e-06,
+              "worstTick": 3160,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 1.8827652673505425e-05,
+              "rms": 4.981867215370916e-06,
+              "worstTick": 2360,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "refined": [
+            {
+              "observable": "thrust",
+              "peak": 0.0008965444936188394,
+              "rms": 0.00023197745000972866,
+              "worstTick": 1940,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 1.0671093842521068e-05,
+              "rms": 3.925273935392089e-06,
+              "worstTick": 3160,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 1.8827652673505425e-05,
+              "rms": 4.97256723996767e-06,
+              "worstTick": 2360,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "sampling": [
+            {
+              "observable": "thrust",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 4.338547296341979e-07,
+              "rmsStable": true
+            },
+            {
+              "observable": "roll",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 7.342585928734058e-09,
+              "rmsStable": true
+            },
+            {
+              "observable": "pitch",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 9.299975403245783e-09,
+              "rmsStable": true
+            }
+          ]
+        },
+        {
+          "id": "hold-2.5ms",
+          "primary": [
+            {
+              "observable": "thrust",
+              "peak": 0.0004484391584092806,
+              "rms": 0.00011707646493876058,
+              "worstTick": 1930,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 5.335954074102466e-06,
+              "rms": 1.9809824220276194e-06,
+              "worstTick": 3150,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 9.414437533856058e-06,
+              "rms": 2.5095952360674206e-06,
+              "worstTick": 2360,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "refined": [
+            {
+              "observable": "thrust",
+              "peak": 0.0004484391584092806,
+              "rms": 0.00011621249686993466,
+              "worstTick": 1930,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 5.335954074102466e-06,
+              "rms": 1.966363069894902e-06,
+              "worstTick": 3150,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 9.414437533856058e-06,
+              "rms": 2.4910755665546887e-06,
+              "worstTick": 2360,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "sampling": [
+            {
+              "observable": "thrust",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 8.639680688259159e-07,
+              "rmsStable": true
+            },
+            {
+              "observable": "roll",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 1.4619352132717503e-08,
+              "rmsStable": true
+            },
+            {
+              "observable": "pitch",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 1.8519669512731913e-08,
+              "rmsStable": true
+            }
+          ]
+        },
+        {
+          "id": "predict-5ms",
+          "primary": [
+            {
+              "observable": "thrust",
+              "peak": 0.00048139330807359104,
+              "rms": 2.2550159182075486e-05,
+              "worstTick": 20,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 4.033941693140641e-06,
+              "rms": 2.0512120699635806e-07,
+              "worstTick": 20,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 5.462626822044488e-06,
+              "rms": 3.369924020686921e-07,
+              "worstTick": 20,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "refined": [
+            {
+              "observable": "thrust",
+              "peak": 0.00048139330807359104,
+              "rms": 2.2498316936810777e-05,
+              "worstTick": 20,
+              "worstSide": "left",
+              "budget": 0.00132435,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "roll",
+              "peak": 4.033941693140641e-06,
+              "rms": 2.0459507940003432e-07,
+              "worstTick": 20,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            },
+            {
+              "observable": "pitch",
+              "peak": 5.462626822044488e-06,
+              "rms": 3.3606834013834746e-07,
+              "worstTick": 20,
+              "worstSide": "left",
+              "budget": 0.00010488316895441328,
+              "peakWithinBudget": true,
+              "queryExceedances": 0
+            }
+          ],
+          "sampling": [
+            {
+              "observable": "thrust",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 5.184224526470871e-08,
+              "rmsStable": true
+            },
+            {
+              "observable": "roll",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 5.261275963237399e-10,
+              "rmsStable": true
+            },
+            {
+              "observable": "pitch",
+              "peakDifference": 0.0,
+              "peakStable": true,
+              "rmsDifference": 9.240619303446183e-10,
+              "rmsStable": true
+            }
+          ]
+        }
+      ],
+      "reportingWindows": [],
+      "targetPassingMethods": [
+        "instant",
+        "hold-5ms",
+        "hold-2.5ms",
+        "predict-5ms"
+      ]
+    }
+  ],
+  "samplingFailures": [],
+  "targetExceedances": [
+    {
+      "case": "support-transit",
+      "method": "hold-10ms",
+      "observable": "thrust",
+      "peak": 0.0019956790663867574,
+      "rms": 0.0006464363630062442,
+      "worstTick": 2480,
+      "worstSide": "left",
+      "budget": 0.00132435,
+      "peakWithinBudget": false,
+      "queryExceedances": 297
+    },
+    {
+      "case": "cold-start-inflow",
+      "method": "hold-10ms",
+      "observable": "thrust",
+      "peak": 0.0013865495570197783,
+      "rms": 0.0005089529891820491,
+      "worstTick": 480,
+      "worstSide": "left",
+      "budget": 0.00132435,
+      "peakWithinBudget": false,
+      "queryExceedances": 24
+    },
+    {
+      "case": "smooth-fast-reversal",
+      "method": "hold-10ms",
+      "observable": "thrust",
+      "peak": 0.0028432183069760364,
+      "rms": 0.0009828623979059737,
+      "worstTick": 600,
+      "worstSide": "left",
+      "budget": 0.00132435,
+      "peakWithinBudget": false,
+      "queryExceedances": 776
+    },
+    {
+      "case": "smooth-fast-reversal",
+      "method": "hold-5ms",
+      "observable": "thrust",
+      "peak": 0.0014262284630535693,
+      "rms": 0.0004918608916089589,
+      "worstTick": 600,
+      "worstSide": "left",
+      "budget": 0.00132435,
+      "peakWithinBudget": false,
+      "queryExceedances": 44
+    },
+    {
+      "case": "fixed-position-source-pitch",
+      "method": "hold-10ms",
+      "observable": "thrust",
+      "peak": 0.007072522539900927,
+      "rms": 0.0018932437115925073,
+      "worstTick": 3960,
+      "worstSide": "left",
+      "budget": 0.00132435,
+      "peakWithinBudget": false,
+      "queryExceedances": 1438
+    },
+    {
+      "case": "fixed-position-source-pitch",
+      "method": "hold-10ms",
+      "observable": "pitch",
+      "peak": 0.00011497123311619839,
+      "rms": 2.4816571694273394e-05,
+      "worstTick": 1200,
+      "worstSide": "left",
+      "budget": 0.00010488316895441328,
+      "peakWithinBudget": false,
+      "queryExceedances": 16
+    },
+    {
+      "case": "fixed-position-source-pitch",
+      "method": "hold-5ms",
+      "observable": "thrust",
+      "peak": 0.003567855713999729,
+      "rms": 0.0009493667176550307,
+      "worstTick": 3960,
+      "worstSide": "left",
+      "budget": 0.00132435,
+      "peakWithinBudget": false,
+      "queryExceedances": 670
+    },
+    {
+      "case": "fixed-position-source-pitch",
+      "method": "hold-2.5ms",
+      "observable": "thrust",
+      "peak": 0.0017876488637917076,
+      "rms": 0.00047586554213664435,
+      "worstTick": 3950,
+      "worstSide": "left",
+      "budget": 0.00132435,
+      "peakWithinBudget": false,
+      "queryExceedances": 128
+    },
+    {
+      "case": "fixed-position-source-pitch",
+      "method": "predict-5ms",
+      "observable": "thrust",
+      "peak": 0.0028984383829929183,
+      "rms": 0.0001900709197970758,
+      "worstTick": 20,
+      "worstSide": "left",
+      "budget": 0.00132435,
+      "peakWithinBudget": false,
+      "queryExceedances": 12
+    },
+    {
+      "case": "stacked-moving-sources",
+      "method": "hold-10ms",
+      "observable": "thrust",
+      "peak": 0.0017898047460835897,
+      "rms": 0.000463630782903173,
+      "worstTick": 1960,
+      "worstSide": "left",
+      "budget": 0.00132435,
+      "peakWithinBudget": false,
+      "queryExceedances": 92
+    }
+  ],
+  "predictorTargetExceedanceRecords": [
+    {
+      "case": "fixed-position-source-pitch",
+      "tick": 9,
+      "timeSeconds": 0.0022500000000000003,
+      "side": "sample",
+      "observable": "thrust",
+      "signedError": -0.001347040526451071,
+      "budget": 0.00132435
+    },
+    {
+      "case": "fixed-position-source-pitch",
+      "tick": 10,
+      "timeSeconds": 0.0025,
+      "side": "sample",
+      "observable": "thrust",
+      "signedError": -0.001492467164404071,
+      "budget": 0.00132435
+    },
+    {
+      "case": "fixed-position-source-pitch",
+      "tick": 11,
+      "timeSeconds": 0.00275,
+      "side": "sample",
+      "observable": "thrust",
+      "signedError": -0.0016370267245570114,
+      "budget": 0.00132435
+    },
+    {
+      "case": "fixed-position-source-pitch",
+      "tick": 12,
+      "timeSeconds": 0.003,
+      "side": "sample",
+      "observable": "thrust",
+      "signedError": -0.0017807150383334358,
+      "budget": 0.00132435
+    },
+    {
+      "case": "fixed-position-source-pitch",
+      "tick": 13,
+      "timeSeconds": 0.0032500000000000003,
+      "side": "sample",
+      "observable": "thrust",
+      "signedError": -0.0019235281905470303,
+      "budget": 0.00132435
+    },
+    {
+      "case": "fixed-position-source-pitch",
+      "tick": 14,
+      "timeSeconds": 0.0035,
+      "side": "sample",
+      "observable": "thrust",
+      "signedError": -0.0020654625157968676,
+      "budget": 0.00132435
+    },
+    {
+      "case": "fixed-position-source-pitch",
+      "tick": 15,
+      "timeSeconds": 0.00375,
+      "side": "sample",
+      "observable": "thrust",
+      "signedError": -0.0022065145948165776,
+      "budget": 0.00132435
+    },
+    {
+      "case": "fixed-position-source-pitch",
+      "tick": 16,
+      "timeSeconds": 0.004,
+      "side": "sample",
+      "observable": "thrust",
+      "signedError": -0.0023466812507807466,
+      "budget": 0.00132435
+    },
+    {
+      "case": "fixed-position-source-pitch",
+      "tick": 17,
+      "timeSeconds": 0.00425,
+      "side": "sample",
+      "observable": "thrust",
+      "signedError": -0.002485959545571792,
+      "budget": 0.00132435
+    },
+    {
+      "case": "fixed-position-source-pitch",
+      "tick": 18,
+      "timeSeconds": 0.0045000000000000005,
+      "side": "sample",
+      "observable": "thrust",
+      "signedError": -0.0026243467760116435,
+      "budget": 0.00132435
+    },
+    {
+      "case": "fixed-position-source-pitch",
+      "tick": 19,
+      "timeSeconds": 0.00475,
+      "side": "sample",
+      "observable": "thrust",
+      "signedError": -0.0027618404700613663,
+      "budget": 0.00132435
+    },
+    {
+      "case": "fixed-position-source-pitch",
+      "tick": 20,
+      "timeSeconds": 0.005,
+      "side": "left",
+      "observable": "thrust",
+      "signedError": -0.0028984383829929183,
+      "budget": 0.00132435
+    }
+  ],
+  "predictorVsHold2p5ms": [
+    {
+      "case": "support-transit",
+      "observable": "thrust",
+      "floor": 1e-09,
+      "peak": {
+        "predictor": 7.322325301156729e-05,
+        "hold2p5ms": 0.0004995031235439096,
+        "difference": -0.0004262798705323423,
+        "predictorVsHold2p5ms": 0.14659218243132865,
+        "comparison": "better",
+        "bothSamplingScreensPass": true
+      },
+      "rms": {
+        "predictor": 1.3777296587231766e-05,
+        "hold2p5ms": 0.00016202401462535245,
+        "difference": -0.00014824671803812068,
+        "predictorVsHold2p5ms": 0.08503243558733536,
+        "comparison": "better",
+        "bothSamplingScreensPass": true
+      }
+    },
+    {
+      "case": "support-transit",
+      "observable": "roll",
+      "floor": 1e-11,
+      "peak": {
+        "predictor": 4.6674736616176063e-07,
+        "hold2p5ms": 2.595436978648129e-06,
+        "difference": -2.1286896124863685e-06,
+        "predictorVsHold2p5ms": 0.179833827598801,
+        "comparison": "better",
+        "bothSamplingScreensPass": true
+      },
+      "rms": {
+        "predictor": 8.849584314096624e-08,
+        "hold2p5ms": 7.504312634932485e-07,
+        "difference": -6.619354203522823e-07,
+        "predictorVsHold2p5ms": 0.11792664757731328,
+        "comparison": "better",
+        "bothSamplingScreensPass": true
+      }
+    },
+    {
+      "case": "support-transit",
+      "observable": "pitch",
+      "floor": 1e-11,
+      "peak": {
+        "predictor": 1.3139825396832599e-06,
+        "hold2p5ms": 9.84248716296007e-06,
+        "difference": -8.52850462327681e-06,
+        "predictorVsHold2p5ms": 0.13350106715182014,
+        "comparison": "better",
+        "bothSamplingScreensPass": true
+      },
+      "rms": {
+        "predictor": 2.8778641167134314e-07,
+        "hold2p5ms": 1.969115057305347e-06,
+        "difference": -1.681328645634004e-06,
+        "predictorVsHold2p5ms": 0.14615012495266122,
+        "comparison": "better",
+        "bothSamplingScreensPass": true
+      }
+    },
+    {
+      "case": "cold-start-inflow",
+      "observable": "thrust",
+      "floor": 1e-09,
+      "peak": {
+        "predictor": 0.00048597912894732254,
+        "hold2p5ms": 0.0003468995366187888,
+        "difference": 0.00013907959232853373,
+        "predictorVsHold2p5ms": 1.400921816397148,
+        "comparison": "worse",
+        "bothSamplingScreensPass": true
+      },
+      "rms": {
+        "predictor": 2.1219383669306637e-05,
+        "hold2p5ms": 0.00012747914147779078,
+        "difference": -0.00010625975780848414,
+        "predictorVsHold2p5ms": 0.16645376979577042,
+        "comparison": "better",
+        "bothSamplingScreensPass": true
+      }
+    },
+    {
+      "case": "cold-start-inflow",
+      "observable": "roll",
+      "floor": 1e-11,
+      "peak": {
+        "predictor": 1.923467225222516e-06,
+        "hold2p5ms": 1.8026696878810713e-06,
+        "difference": 1.2079753734144452e-07,
+        "predictorVsHold2p5ms": 1.0670103558924513,
+        "comparison": "worse",
+        "bothSamplingScreensPass": true
+      },
+      "rms": {
+        "predictor": 9.112986917409151e-08,
+        "hold2p5ms": 6.130597464805109e-07,
+        "difference": -5.219298773064193e-07,
+        "predictorVsHold2p5ms": 0.14864761501184048,
+        "comparison": "better",
+        "bothSamplingScreensPass": true
+      }
+    },
+    {
+      "case": "cold-start-inflow",
+      "observable": "pitch",
+      "floor": 1e-11,
+      "peak": {
+        "predictor": 4.269623513172187e-06,
+        "hold2p5ms": 6.836268445111707e-06,
+        "difference": -2.5666449319395202e-06,
+        "predictorVsHold2p5ms": 0.6245546890753234,
+        "comparison": "better",
+        "bothSamplingScreensPass": true
+      },
+      "rms": {
+        "predictor": 2.3554121492133278e-07,
+        "hold2p5ms": 1.5865963455083925e-06,
+        "difference": -1.3510551305870596e-06,
+        "predictorVsHold2p5ms": 0.1484569251581494,
+        "comparison": "better",
+        "bothSamplingScreensPass": true
+      }
+    },
+    {
+      "case": "smooth-fast-reversal",
+      "observable": "thrust",
+      "floor": 1e-09,
+      "peak": {
+        "predictor": 9.703088440099483e-05,
+        "hold2p5ms": 0.0007132875550911189,
+        "difference": -0.000616256670690124,
+        "predictorVsHold2p5ms": 0.13603333425409284,
+        "comparison": "better",
+        "bothSamplingScreensPass": true
+      },
+      "rms": {
+        "predictor": 3.097342279875924e-05,
+        "hold2p5ms": 0.0002464140082712399,
+        "difference": -0.00021544058547248065,
+        "predictorVsHold2p5ms": 0.12569668021740585,
+        "comparison": "better",
+        "bothSamplingScreensPass": true
+      }
+    },
+    {
+      "case": "smooth-fast-reversal",
+      "observable": "roll",
+      "floor": 1e-11,
+      "peak": {
+        "predictor": 9.658777858040195e-07,
+        "hold2p5ms": 3.992050483725895e-06,
+        "difference": -3.0261726979218754e-06,
+        "predictorVsHold2p5ms": 0.2419502933997313,
+        "comparison": "better",
+        "bothSamplingScreensPass": true
+      },
+      "rms": {
+        "predictor": 1.9832382367230507e-07,
+        "hold2p5ms": 1.284007564173572e-06,
+        "difference": -1.0856837405012668e-06,
+        "predictorVsHold2p5ms": 0.15445689667720344,
+        "comparison": "better",
+        "bothSamplingScreensPass": true
+      }
+    },
+    {
+      "case": "smooth-fast-reversal",
+      "observable": "pitch",
+      "floor": 1e-11,
+      "peak": {
+        "predictor": 1.6785960014055294e-06,
+        "hold2p5ms": 4.785874127551581e-06,
+        "difference": -3.1072781261460517e-06,
+        "predictorVsHold2p5ms": 0.35073968864791,
+        "comparison": "better",
+        "bothSamplingScreensPass": true
+      },
+      "rms": {
+        "predictor": 4.50547151894547e-07,
+        "hold2p5ms": 1.6108219268793892e-06,
+        "difference": -1.1602747749848421e-06,
+        "predictorVsHold2p5ms": 0.2797001607541948,
+        "comparison": "better",
+        "bothSamplingScreensPass": true
+      }
+    },
+    {
+      "case": "fixed-position-source-pitch",
+      "observable": "thrust",
+      "floor": 1e-09,
+      "peak": {
+        "predictor": 0.0028984383829929183,
+        "hold2p5ms": 0.0017876488637917076,
+        "difference": 0.0011107895192012107,
+        "predictorVsHold2p5ms": 1.621368962160254,
+        "comparison": "worse",
+        "bothSamplingScreensPass": true
+      },
+      "rms": {
+        "predictor": 0.0001900709197970758,
+        "hold2p5ms": 0.00047586554213664435,
+        "difference": -0.00028579462233956857,
+        "predictorVsHold2p5ms": 0.3994214814202645,
+        "comparison": "better",
+        "bothSamplingScreensPass": true
+      }
+    },
+    {
+      "case": "fixed-position-source-pitch",
+      "observable": "roll",
+      "floor": 1e-11,
+      "peak": {
+        "predictor": 1.2136382813608118e-05,
+        "hold2p5ms": 9.069753491433314e-06,
+        "difference": 3.0666293221748037e-06,
+        "predictorVsHold2p5ms": 1.3381160607144766,
+        "comparison": "worse",
+        "bothSamplingScreensPass": true
+      },
+      "rms": {
+        "predictor": 9.94817348182497e-07,
+        "hold2p5ms": 2.241262961925722e-06,
+        "difference": -1.246445613743225e-06,
+        "predictorVsHold2p5ms": 0.44386462681190125,
+        "comparison": "better",
+        "bothSamplingScreensPass": true
+      }
+    },
+    {
+      "case": "fixed-position-source-pitch",
+      "observable": "pitch",
+      "floor": 1e-11,
+      "peak": {
+        "predictor": 2.286792428234964e-05,
+        "hold2p5ms": 2.9090802562038156e-05,
+        "difference": -6.222878279688515e-06,
+        "predictorVsHold2p5ms": 0.7860877758041294,
+        "comparison": "better",
+        "bothSamplingScreensPass": true
+      },
+      "rms": {
+        "predictor": 2.9768631145722877e-06,
+        "hold2p5ms": 6.256539651288507e-06,
+        "difference": -3.2796765367162194e-06,
+        "predictorVsHold2p5ms": 0.4758002474993051,
+        "comparison": "better",
+        "bothSamplingScreensPass": true
+      }
+    },
+    {
+      "case": "two-source-receiver-roll",
+      "observable": "thrust",
+      "floor": 1e-09,
+      "peak": {
+        "predictor": 2.5077294986436405e-05,
+        "hold2p5ms": 0.00017135965867975944,
+        "difference": -0.00014628236369332304,
+        "predictorVsHold2p5ms": 0.1463430493480463,
+        "comparison": "better",
+        "bothSamplingScreensPass": true
+      },
+      "rms": {
+        "predictor": 8.127288280366838e-06,
+        "hold2p5ms": 7.086264294537123e-05,
+        "difference": -6.27353546650044e-05,
+        "predictorVsHold2p5ms": 0.11469073044075213,
+        "comparison": "better",
+        "bothSamplingScreensPass": true
+      }
+    },
+    {
+      "case": "two-source-receiver-roll",
+      "observable": "roll",
+      "floor": 1e-11,
+      "peak": {
+        "predictor": 3.6519985272226267e-07,
+        "hold2p5ms": 6.703033856418367e-07,
+        "difference": -3.0510353291957407e-07,
+        "predictorVsHold2p5ms": 0.5448277012245317,
+        "comparison": "better",
+        "bothSamplingScreensPass": true
+      },
+      "rms": {
+        "predictor": 4.580221306926123e-08,
+        "hold2p5ms": 2.3450764574604106e-07,
+        "difference": -1.8870543267677983e-07,
+        "predictorVsHold2p5ms": 0.1953122377888801,
+        "comparison": "better",
+        "bothSamplingScreensPass": true
+      }
+    },
+    {
+      "case": "two-source-receiver-roll",
+      "observable": "pitch",
+      "floor": 1e-11,
+      "peak": {
+        "predictor": 3.55688550599865e-06,
+        "hold2p5ms": 2.811136932796615e-06,
+        "difference": 7.457485732020354e-07,
+        "predictorVsHold2p5ms": 1.2652836169243948,
+        "comparison": "worse",
+        "bothSamplingScreensPass": true
+      },
+      "rms": {
+        "predictor": 1.6698239951583348e-07,
+        "hold2p5ms": 1.1635916340646927e-06,
+        "difference": -9.966092345488593e-07,
+        "predictorVsHold2p5ms": 0.14350601587992312,
+        "comparison": "better",
+        "bothSamplingScreensPass": true
+      }
+    },
+    {
+      "case": "stacked-moving-sources",
+      "observable": "thrust",
+      "floor": 1e-09,
+      "peak": {
+        "predictor": 0.00048139330807359104,
+        "hold2p5ms": 0.0004484391584092806,
+        "difference": 3.295414966431043e-05,
+        "predictorVsHold2p5ms": 1.0734863337564153,
+        "comparison": "worse",
+        "bothSamplingScreensPass": true
+      },
+      "rms": {
+        "predictor": 2.2498316936810777e-05,
+        "hold2p5ms": 0.00011621249686993466,
+        "difference": -9.371417993312388e-05,
+        "predictorVsHold2p5ms": 0.19359636478674883,
+        "comparison": "better",
+        "bothSamplingScreensPass": true
+      }
+    },
+    {
+      "case": "stacked-moving-sources",
+      "observable": "roll",
+      "floor": 1e-11,
+      "peak": {
+        "predictor": 4.033941693140641e-06,
+        "hold2p5ms": 5.335954074102466e-06,
+        "difference": -1.3020123809618245e-06,
+        "predictorVsHold2p5ms": 0.7559925811054081,
+        "comparison": "better",
+        "bothSamplingScreensPass": true
+      },
+      "rms": {
+        "predictor": 2.0459507940003432e-07,
+        "hold2p5ms": 1.966363069894902e-06,
+        "difference": -1.7617679904948675e-06,
+        "predictorVsHold2p5ms": 0.10404745824023715,
+        "comparison": "better",
+        "bothSamplingScreensPass": true
+      }
+    },
+    {
+      "case": "stacked-moving-sources",
+      "observable": "pitch",
+      "floor": 1e-11,
+      "peak": {
+        "predictor": 5.462626822044488e-06,
+        "hold2p5ms": 9.414437533856058e-06,
+        "difference": -3.95181071181157e-06,
+        "predictorVsHold2p5ms": 0.5802393188546711,
+        "comparison": "better",
+        "bothSamplingScreensPass": true
+      },
+      "rms": {
+        "predictor": 3.3606834013834746e-07,
+        "hold2p5ms": 2.4910755665546887e-06,
+        "difference": -2.155007226416341e-06,
+        "predictorVsHold2p5ms": 0.13490893036342158,
+        "comparison": "better",
+        "bothSamplingScreensPass": true
+      }
+    }
+  ],
+  "metricDiscrepancy": {
+    "peak": 0.0,
+    "rmsFsum": 9.75781955236954e-19,
+    "rmsSequential": 0.0
+  },
+  "suiteDecision": {
+    "comparisons": [
+      {
+        "case": "support-transit",
+        "observable": "thrust",
+        "floor": 1e-09,
+        "peakNoWorse": true,
+        "peakStrictlyBetter": true,
+        "peakScreensPass": true,
+        "rmsNoWorse": true,
+        "rmsStrictlyBetter": true,
+        "rmsScreensPass": true
+      },
+      {
+        "case": "support-transit",
+        "observable": "roll",
+        "floor": 1e-11,
+        "peakNoWorse": true,
+        "peakStrictlyBetter": true,
+        "peakScreensPass": true,
+        "rmsNoWorse": true,
+        "rmsStrictlyBetter": true,
+        "rmsScreensPass": true
+      },
+      {
+        "case": "support-transit",
+        "observable": "pitch",
+        "floor": 1e-11,
+        "peakNoWorse": true,
+        "peakStrictlyBetter": true,
+        "peakScreensPass": true,
+        "rmsNoWorse": true,
+        "rmsStrictlyBetter": true,
+        "rmsScreensPass": true
+      },
+      {
+        "case": "cold-start-inflow",
+        "observable": "thrust",
+        "floor": 1e-09,
+        "peakNoWorse": true,
+        "peakStrictlyBetter": true,
+        "peakScreensPass": true,
+        "rmsNoWorse": true,
+        "rmsStrictlyBetter": true,
+        "rmsScreensPass": true
+      },
+      {
+        "case": "cold-start-inflow",
+        "observable": "roll",
+        "floor": 1e-11,
+        "peakNoWorse": true,
+        "peakStrictlyBetter": true,
+        "peakScreensPass": true,
+        "rmsNoWorse": true,
+        "rmsStrictlyBetter": true,
+        "rmsScreensPass": true
+      },
+      {
+        "case": "cold-start-inflow",
+        "observable": "pitch",
+        "floor": 1e-11,
+        "peakNoWorse": true,
+        "peakStrictlyBetter": true,
+        "peakScreensPass": true,
+        "rmsNoWorse": true,
+        "rmsStrictlyBetter": true,
+        "rmsScreensPass": true
+      },
+      {
+        "case": "smooth-fast-reversal",
+        "observable": "thrust",
+        "floor": 1e-09,
+        "peakNoWorse": true,
+        "peakStrictlyBetter": true,
+        "peakScreensPass": true,
+        "rmsNoWorse": true,
+        "rmsStrictlyBetter": true,
+        "rmsScreensPass": true
+      },
+      {
+        "case": "smooth-fast-reversal",
+        "observable": "roll",
+        "floor": 1e-11,
+        "peakNoWorse": true,
+        "peakStrictlyBetter": true,
+        "peakScreensPass": true,
+        "rmsNoWorse": true,
+        "rmsStrictlyBetter": true,
+        "rmsScreensPass": true
+      },
+      {
+        "case": "smooth-fast-reversal",
+        "observable": "pitch",
+        "floor": 1e-11,
+        "peakNoWorse": true,
+        "peakStrictlyBetter": true,
+        "peakScreensPass": true,
+        "rmsNoWorse": true,
+        "rmsStrictlyBetter": true,
+        "rmsScreensPass": true
+      },
+      {
+        "case": "fixed-position-source-pitch",
+        "observable": "thrust",
+        "floor": 1e-09,
+        "peakNoWorse": true,
+        "peakStrictlyBetter": true,
+        "peakScreensPass": true,
+        "rmsNoWorse": true,
+        "rmsStrictlyBetter": true,
+        "rmsScreensPass": true
+      },
+      {
+        "case": "fixed-position-source-pitch",
+        "observable": "roll",
+        "floor": 1e-11,
+        "peakNoWorse": true,
+        "peakStrictlyBetter": true,
+        "peakScreensPass": true,
+        "rmsNoWorse": true,
+        "rmsStrictlyBetter": true,
+        "rmsScreensPass": true
+      },
+      {
+        "case": "fixed-position-source-pitch",
+        "observable": "pitch",
+        "floor": 1e-11,
+        "peakNoWorse": true,
+        "peakStrictlyBetter": true,
+        "peakScreensPass": true,
+        "rmsNoWorse": true,
+        "rmsStrictlyBetter": true,
+        "rmsScreensPass": true
+      },
+      {
+        "case": "two-source-receiver-roll",
+        "observable": "thrust",
+        "floor": 1e-09,
+        "peakNoWorse": true,
+        "peakStrictlyBetter": true,
+        "peakScreensPass": true,
+        "rmsNoWorse": true,
+        "rmsStrictlyBetter": true,
+        "rmsScreensPass": true
+      },
+      {
+        "case": "two-source-receiver-roll",
+        "observable": "roll",
+        "floor": 1e-11,
+        "peakNoWorse": true,
+        "peakStrictlyBetter": true,
+        "peakScreensPass": true,
+        "rmsNoWorse": true,
+        "rmsStrictlyBetter": true,
+        "rmsScreensPass": true
+      },
+      {
+        "case": "two-source-receiver-roll",
+        "observable": "pitch",
+        "floor": 1e-11,
+        "peakNoWorse": true,
+        "peakStrictlyBetter": true,
+        "peakScreensPass": true,
+        "rmsNoWorse": true,
+        "rmsStrictlyBetter": true,
+        "rmsScreensPass": true
+      },
+      {
+        "case": "stacked-moving-sources",
+        "observable": "thrust",
+        "floor": 1e-09,
+        "peakNoWorse": true,
+        "peakStrictlyBetter": true,
+        "peakScreensPass": true,
+        "rmsNoWorse": true,
+        "rmsStrictlyBetter": true,
+        "rmsScreensPass": true
+      },
+      {
+        "case": "stacked-moving-sources",
+        "observable": "roll",
+        "floor": 1e-11,
+        "peakNoWorse": true,
+        "peakStrictlyBetter": true,
+        "peakScreensPass": true,
+        "rmsNoWorse": true,
+        "rmsStrictlyBetter": true,
+        "rmsScreensPass": true
+      },
+      {
+        "case": "stacked-moving-sources",
+        "observable": "pitch",
+        "floor": 1e-11,
+        "peakNoWorse": true,
+        "peakStrictlyBetter": true,
+        "peakScreensPass": true,
+        "rmsNoWorse": true,
+        "rmsStrictlyBetter": true,
+        "rmsScreensPass": true
+      }
+    ],
+    "allTestedPeaksImproved": true,
+    "allTestedRmsImproved": true,
+    "scope": "Finite selected suite only, not universal superiority or physical validation"
+  },
+  "suiteStrictImprovementCounts": {
+    "peak": 18,
+    "rms": 18
+  },
+  "predictorVsHold2p5msCounts": {
+    "peak": {
+      "better": 12,
+      "worse": 6
+    },
+    "rms": {
+      "better": 18
+    }
+  },
+  "sourcePitchPredictorStartup": {
+    "scope": "Descriptive decomposition of saved samples only; no new sampling.",
+    "initialHoldPeak": {
+      "tick": 20,
+      "timeSeconds": 0.005,
+      "side": "left",
+      "signedThrustErrorN": -0.0028984383829929183,
+      "absoluteThrustErrorN": 0.0028984383829929183,
+      "initialHoldInterval": true
+    },
+    "afterInitialHoldPeak": {
+      "tick": 1860,
+      "timeSeconds": 0.465,
+      "side": "left",
+      "signedThrustErrorN": -0.0007417141945950112,
+      "absoluteThrustErrorN": 0.0007417141945950112,
+      "initialHoldInterval": false
+    },
+    "exceedanceCount": 12,
+    "allExceedancesInInitialHold": true,
+    "firstExceedance": {
+      "tick": 9,
+      "timeSeconds": 0.0022500000000000003,
+      "side": "sample",
+      "signedThrustErrorN": -0.001347040526451071,
+      "absoluteThrustErrorN": 0.001347040526451071,
+      "initialHoldInterval": true
+    },
+    "lastExceedance": {
+      "tick": 20,
+      "timeSeconds": 0.005,
+      "side": "left",
+      "signedThrustErrorN": -0.0028984383829929183,
+      "absoluteThrustErrorN": 0.0028984383829929183,
+      "initialHoldInterval": true
+    }
+  },
+  "timing": [
+    {
+      "case": "support-transit",
+      "methods": [
+        {
+          "id": "instant",
+          "totalMs": {
+            "minimum": 27.852292000000034,
+            "median": 28.151916999999685,
+            "maximum": 30.63866699999994
+          },
+          "recordedMs": [
+            30.63866699999994,
+            27.852292000000034,
+            28.151916999999685,
+            28.882916000000023,
+            27.913250000000062
+          ],
+          "fieldCalls": 2001,
+          "checksum": 500.22268739074354
+        },
+        {
+          "id": "hold-10ms",
+          "totalMs": {
+            "minimum": 2.249667000000045,
+            "median": 2.3625419999998485,
+            "maximum": 2.4314590000001317
+          },
+          "recordedMs": [
+            2.4314590000001317,
+            2.3625419999998485,
+            2.3392079999998714,
+            2.249667000000045,
+            2.4027499999997417
+          ],
+          "fieldCalls": 101,
+          "checksum": 500.22269622582576
+        },
+        {
+          "id": "hold-5ms",
+          "totalMs": {
+            "minimum": 3.549999999999727,
+            "median": 3.786999999999807,
+            "maximum": 4.9284999999999854
+          },
+          "recordedMs": [
+            4.9284999999999854,
+            3.55795900000021,
+            3.549999999999727,
+            3.799250000000029,
+            3.786999999999807
+          ],
+          "fieldCalls": 201,
+          "checksum": 500.2226848267427
+        },
+        {
+          "id": "hold-2.5ms",
+          "totalMs": {
+            "minimum": 6.354957999999897,
+            "median": 6.433084000000008,
+            "maximum": 6.596958000000086
+          },
+          "recordedMs": [
+            6.433084000000008,
+            6.374041999999918,
+            6.354957999999897,
+            6.596958000000086,
+            6.538000000000011
+          ],
+          "fieldCalls": 401,
+          "checksum": 500.22268675744874
+        },
+        {
+          "id": "predict-5ms",
+          "totalMs": {
+            "minimum": 3.6846669999999904,
+            "median": 3.8647079999996095,
+            "maximum": 4.222000000000207
+          },
+          "recordedMs": [
+            3.9101670000000013,
+            3.8388750000001437,
+            3.8647079999996095,
+            3.6846669999999904,
+            4.222000000000207
+          ],
+          "fieldCalls": 201,
+          "checksum": 500.2228632896687
+        }
+      ],
+      "predictorComparisons": {
+        "hold-5ms": {
+          "medianRatio": 1.0205196725639838,
+          "predictorRangeStrictlyLower": false,
+          "predictorRangeStrictlyHigher": false,
+          "rangesOverlap": true
+        },
+        "hold-2.5ms": {
+          "medianRatio": 0.6007550966223362,
+          "predictorRangeStrictlyLower": true,
+          "predictorRangeStrictlyHigher": false,
+          "rangesOverlap": false
+        }
+      }
+    },
+    {
+      "case": "cold-start-inflow",
+      "methods": [
+        {
+          "id": "instant",
+          "totalMs": {
+            "minimum": 28.36737499999981,
+            "median": 28.855083999999806,
+            "maximum": 29.307416999999987
+          },
+          "recordedMs": [
+            28.855083999999806,
+            28.36737499999981,
+            28.964124999999967,
+            29.307416999999987,
+            28.777333
+          ],
+          "fieldCalls": 2001,
+          "checksum": 490.68370280744244
+        },
+        {
+          "id": "hold-10ms",
+          "totalMs": {
+            "minimum": 2.2442919999998594,
+            "median": 2.2731659999999465,
+            "maximum": 3.59575000000018
+          },
+          "recordedMs": [
+            3.59575000000018,
+            2.2731659999999465,
+            2.2442919999998594,
+            2.284041999999772,
+            2.2598339999999553
+          ],
+          "fieldCalls": 101,
+          "checksum": 490.5364678725483
+        },
+        {
+          "id": "hold-5ms",
+          "totalMs": {
+            "minimum": 3.6951249999997344,
+            "median": 3.7515000000003056,
+            "maximum": 4.079666000000088
+          },
+          "recordedMs": [
+            3.765083000000004,
+            3.7515000000003056,
+            3.7456669999996848,
+            3.6951249999997344,
+            4.079666000000088
+          ],
+          "fieldCalls": 201,
+          "checksum": 490.613594060261
+        },
+        {
+          "id": "hold-2.5ms",
+          "totalMs": {
+            "minimum": 6.249416999999994,
+            "median": 6.59829099999979,
+            "maximum": 6.801249999999982
+          },
+          "recordedMs": [
+            6.801249999999982,
+            6.2941249999998945,
+            6.59829099999979,
+            6.750166999999692,
+            6.249416999999994
+          ],
+          "fieldCalls": 401,
+          "checksum": 490.6524626855877
+        },
+        {
+          "id": "predict-5ms",
+          "totalMs": {
+            "minimum": 3.699290999999903,
+            "median": 3.710833999999977,
+            "maximum": 5.004791000000068
+          },
+          "recordedMs": [
+            5.004791000000068,
+            3.8264160000003358,
+            3.699290999999903,
+            3.7005420000000413,
+            3.710833999999977
+          ],
+          "fieldCalls": 201,
+          "checksum": 490.6842431866222
+        }
+      ],
+      "predictorComparisons": {
+        "hold-5ms": {
+          "medianRatio": 0.9891600693055244,
+          "predictorRangeStrictlyLower": false,
+          "predictorRangeStrictlyHigher": false,
+          "rangesOverlap": true
+        },
+        "hold-2.5ms": {
+          "medianRatio": 0.5623932015123454,
+          "predictorRangeStrictlyLower": true,
+          "predictorRangeStrictlyHigher": false,
+          "rangesOverlap": false
+        }
+      }
+    },
+    {
+      "case": "smooth-fast-reversal",
+      "methods": [
+        {
+          "id": "instant",
+          "totalMs": {
+            "minimum": 27.97979200000009,
+            "median": 28.12004100000013,
+            "maximum": 30.168750000000045
+          },
+          "recordedMs": [
+            29.846624999999904,
+            30.168750000000045,
+            27.97979200000009,
+            28.043125000000146,
+            28.12004100000013
+          ],
+          "fieldCalls": 2001,
+          "checksum": 486.409229762705
+        },
+        {
+          "id": "hold-10ms",
+          "totalMs": {
+            "minimum": 2.2200410000000375,
+            "median": 2.3015419999999267,
+            "maximum": 2.3983749999999873
+          },
+          "recordedMs": [
+            2.3983749999999873,
+            2.3015419999999267,
+            2.2200410000000375,
+            2.369416999999885,
+            2.2329170000002705
+          ],
+          "fieldCalls": 101,
+          "checksum": 486.4091914530456
+        },
+        {
+          "id": "hold-5ms",
+          "totalMs": {
+            "minimum": 3.5712499999999636,
+            "median": 3.645708999999897,
+            "maximum": 4.324374999999918
+          },
+          "recordedMs": [
+            4.324374999999918,
+            3.732875000000149,
+            3.645708999999897,
+            3.62112500000012,
+            3.5712499999999636
+          ],
+          "fieldCalls": 201,
+          "checksum": 486.4092340290677
+        },
+        {
+          "id": "hold-2.5ms",
+          "totalMs": {
+            "minimum": 6.28899999999976,
+            "median": 6.556667000000061,
+            "maximum": 7.4538330000000315
+          },
+          "recordedMs": [
+            6.556667000000061,
+            7.4538330000000315,
+            6.55199999999968,
+            6.28899999999976,
+            6.614708000000064
+          ],
+          "fieldCalls": 401,
+          "checksum": 486.4092283551199
+        },
+        {
+          "id": "predict-5ms",
+          "totalMs": {
+            "minimum": 3.681082999999944,
+            "median": 3.732416000000285,
+            "maximum": 3.882957999999917
+          },
+          "recordedMs": [
+            3.882957999999917,
+            3.7360419999999976,
+            3.732416000000285,
+            3.7146670000001905,
+            3.681082999999944
+          ],
+          "fieldCalls": 201,
+          "checksum": 486.4097166368638
+        }
+      ],
+      "predictorComparisons": {
+        "hold-5ms": {
+          "medianRatio": 1.0237833025072463,
+          "predictorRangeStrictlyLower": false,
+          "predictorRangeStrictlyHigher": false,
+          "rangesOverlap": true
+        },
+        "hold-2.5ms": {
+          "medianRatio": 0.5692550803632775,
+          "predictorRangeStrictlyLower": true,
+          "predictorRangeStrictlyHigher": false,
+          "rangesOverlap": false
+        }
+      }
+    },
+    {
+      "case": "fixed-position-source-pitch",
+      "methods": [
+        {
+          "id": "instant",
+          "totalMs": {
+            "minimum": 27.717375000000175,
+            "median": 28.307374999999865,
+            "maximum": 29.105167000000165
+          },
+          "recordedMs": [
+            29.105167000000165,
+            28.74029100000007,
+            27.717375000000175,
+            28.307374999999865,
+            27.93337500000007
+          ],
+          "fieldCalls": 2001,
+          "checksum": 492.0379985344284
+        },
+        {
+          "id": "hold-10ms",
+          "totalMs": {
+            "minimum": 2.20904100000007,
+            "median": 2.276875000000018,
+            "maximum": 2.408708999999817
+          },
+          "recordedMs": [
+            2.294499999999971,
+            2.22204099999999,
+            2.408708999999817,
+            2.276875000000018,
+            2.20904100000007
+          ],
+          "fieldCalls": 101,
+          "checksum": 492.0379298439883
+        },
+        {
+          "id": "hold-5ms",
+          "totalMs": {
+            "minimum": 3.545292000000245,
+            "median": 3.65949999999998,
+            "maximum": 3.893332999999984
+          },
+          "recordedMs": [
+            3.771624999999858,
+            3.65949999999998,
+            3.55987499999992,
+            3.893332999999984,
+            3.545292000000245
+          ],
+          "fieldCalls": 201,
+          "checksum": 492.03797288725445
+        },
+        {
+          "id": "hold-2.5ms",
+          "totalMs": {
+            "minimum": 6.323709000000235,
+            "median": 6.595374999999876,
+            "maximum": 7.3348749999997835
+          },
+          "recordedMs": [
+            7.3348749999997835,
+            6.74758299999985,
+            6.595374999999876,
+            6.340291999999863,
+            6.323709000000235
+          ],
+          "fieldCalls": 401,
+          "checksum": 492.0379905791334
+        },
+        {
+          "id": "predict-5ms",
+          "totalMs": {
+            "minimum": 3.6119999999996253,
+            "median": 3.8140830000002097,
+            "maximum": 3.9357089999998607
+          },
+          "recordedMs": [
+            3.9269999999999072,
+            3.769375000000082,
+            3.6119999999996253,
+            3.8140830000002097,
+            3.9357089999998607
+          ],
+          "fieldCalls": 201,
+          "checksum": 492.0243249661601
+        }
+      ],
+      "predictorComparisons": {
+        "hold-5ms": {
+          "medianRatio": 1.0422415630551252,
+          "predictorRangeStrictlyLower": false,
+          "predictorRangeStrictlyHigher": false,
+          "rangesOverlap": true
+        },
+        "hold-2.5ms": {
+          "medianRatio": 0.5782966093664547,
+          "predictorRangeStrictlyLower": true,
+          "predictorRangeStrictlyHigher": false,
+          "rangesOverlap": false
+        }
+      }
+    },
+    {
+      "case": "two-source-receiver-roll",
+      "methods": [
+        {
+          "id": "instant",
+          "totalMs": {
+            "minimum": 43.44058300000006,
+            "median": 44.494416999999885,
+            "maximum": 45.70945900000015
+          },
+          "recordedMs": [
+            45.70945900000015,
+            44.494416999999885,
+            43.44058300000006,
+            44.82954100000006,
+            43.52412499999991
+          ],
+          "fieldCalls": 2001,
+          "checksum": 501.8662298239156
+        },
+        {
+          "id": "hold-10ms",
+          "totalMs": {
+            "minimum": 3.2089579999999387,
+            "median": 3.458415999999943,
+            "maximum": 3.572040999999899
+          },
+          "recordedMs": [
+            3.467332999999826,
+            3.2089579999999387,
+            3.458415999999943,
+            3.4484999999999673,
+            3.572040999999899
+          ],
+          "fieldCalls": 101,
+          "checksum": 501.86622259570066
+        },
+        {
+          "id": "hold-5ms",
+          "totalMs": {
+            "minimum": 5.410750000000007,
+            "median": 5.566792000000078,
+            "maximum": 6.416124999999965
+          },
+          "recordedMs": [
+            6.416124999999965,
+            5.566792000000078,
+            5.417499999999563,
+            5.820290999999997,
+            5.410750000000007
+          ],
+          "fieldCalls": 201,
+          "checksum": 501.8662339678668
+        },
+        {
+          "id": "hold-2.5ms",
+          "totalMs": {
+            "minimum": 9.686625000000276,
+            "median": 9.911292000000003,
+            "maximum": 9.979125000000067
+          },
+          "recordedMs": [
+            9.911292000000003,
+            9.979125000000067,
+            9.91995900000029,
+            9.686625000000276,
+            9.85070799999994
+          ],
+          "fieldCalls": 401,
+          "checksum": 501.8662297480693
+        },
+        {
+          "id": "predict-5ms",
+          "totalMs": {
+            "minimum": 5.548916999999847,
+            "median": 5.624124999999822,
+            "maximum": 6.763916999999992
+          },
+          "recordedMs": [
+            6.763916999999992,
+            5.548916999999847,
+            5.552625000000262,
+            5.771749999999884,
+            5.624124999999822
+          ],
+          "fieldCalls": 201,
+          "checksum": 501.86621847673257
+        }
+      ],
+      "predictorComparisons": {
+        "hold-5ms": {
+          "medianRatio": 1.0102991094331786,
+          "predictorRangeStrictlyLower": false,
+          "predictorRangeStrictlyHigher": false,
+          "rangesOverlap": true
+        },
+        "hold-2.5ms": {
+          "medianRatio": 0.5674462017666133,
+          "predictorRangeStrictlyLower": true,
+          "predictorRangeStrictlyHigher": false,
+          "rangesOverlap": false
+        }
+      }
+    },
+    {
+      "case": "stacked-moving-sources",
+      "methods": [
+        {
+          "id": "instant",
+          "totalMs": {
+            "minimum": 62.13879100000008,
+            "median": 63.009207999999944,
+            "maximum": 64.82291600000008
+          },
+          "recordedMs": [
+            64.82291600000008,
+            62.13879100000008,
+            62.23516699999982,
+            63.009207999999944,
+            63.48583299999973
+          ],
+          "fieldCalls": 2001,
+          "checksum": 357.56860712175853
+        },
+        {
+          "id": "hold-10ms",
+          "totalMs": {
+            "minimum": 4.3732499999996435,
+            "median": 4.6222080000000005,
+            "maximum": 4.831749999999829
+          },
+          "recordedMs": [
+            4.6222080000000005,
+            4.626917000000049,
+            4.599083000000064,
+            4.831749999999829,
+            4.3732499999996435
+          ],
+          "fieldCalls": 101,
+          "checksum": 357.56860688838856
+        },
+        {
+          "id": "hold-5ms",
+          "totalMs": {
+            "minimum": 7.574583000000075,
+            "median": 7.595375000000104,
+            "maximum": 8.470000000000027
+          },
+          "recordedMs": [
+            8.470000000000027,
+            7.595375000000104,
+            7.820957999999791,
+            7.592958000000181,
+            7.574583000000075
+          ],
+          "fieldCalls": 201,
+          "checksum": 357.5686073802899
+        },
+        {
+          "id": "hold-2.5ms",
+          "totalMs": {
+            "minimum": 13.456749999999829,
+            "median": 13.906833000000006,
+            "maximum": 14.877792
+          },
+          "recordedMs": [
+            14.877792,
+            13.906833000000006,
+            14.027292000000216,
+            13.456749999999829,
+            13.745499999999993
+          ],
+          "fieldCalls": 401,
+          "checksum": 357.56860707358555
+        },
+        {
+          "id": "predict-5ms",
+          "totalMs": {
+            "minimum": 7.656582999999955,
+            "median": 7.952708999999686,
+            "maximum": 8.148333000000093
+          },
+          "recordedMs": [
+            7.845625000000155,
+            8.028917000000092,
+            7.656582999999955,
+            7.952708999999686,
+            8.148333000000093
+          ],
+          "fieldCalls": 201,
+          "checksum": 357.56777391843013
+        }
+      ],
+      "predictorComparisons": {
+        "hold-5ms": {
+          "medianRatio": 1.0470462617052585,
+          "predictorRangeStrictlyLower": false,
+          "predictorRangeStrictlyHigher": false,
+          "rangesOverlap": true
+        },
+        "hold-2.5ms": {
+          "medianRatio": 0.5718562234837855,
+          "predictorRangeStrictlyLower": true,
+          "predictorRangeStrictlyHigher": false,
+          "rangesOverlap": false
+        }
+      }
+    }
+  ],
+  "accounting": {
+    "rawBytes": 41337905,
+    "rawFiles": 194,
+    "savedFineInputs": 24006,
+    "savedOracleScalarComparisons": 312078,
+    "scienceFieldCalls": 53436,
+    "timingFieldCalls": 104580,
+    "totalFieldCalls": 158016,
+    "includedOracleCalls": 24006,
+    "boundCalls": 0,
+    "timingRecords": 180,
+    "supervisorWallSeconds": 3.2304365,
+    "driverElapsedSeconds": 3.128539834,
+    "budgetTerminalAtReview": false
+  },
+  "limitations": [
+    "The matched hold5 suite decision is restricted to these six selected model-input cases; it is not physical validation or a universal predictor advantage.",
+    "A suite-relative improvement does not imply passing numerical targets. Source-pitch predictor target failure must remain visible.",
+    "Hold2.5 comparisons are descriptive; preserve any peak/RMS losses and report recorded timing with errors.",
+    "Event-split RMS is a different, prospectively declared estimand; earlier uniform-RMS failures remain failed.",
+    "Exact timing checksums verify the accumulated saved primary loads, not a collision-proof per-query identity proof.",
+    "This verifier does not reevaluate the physical/model meaning of saved loads or the analytic case functions.",
+    "Technical timing ranges are not confidence intervals. The separate all-pairs static domain audit and frozen source define scope."
+  ],
+  "checkCount": 922282,
+  "checkCategories": {
+    "source commit": 1,
+    "started source/config": 1,
+    "published/raw/config equality": 1,
+    "fixed grids": 1,
+    "all six case order": 1,
+    "fixed method order": 1,
+    "frozen file": 16,
+    "complete raw file inventory": 1,
+    "numerical target arithmetic": 1,
+    "accuracy/result equality": 6,
+    "complete ordered fine ticks": 6,
+    "saved state shape/finiteness": 24006,
+    "saved constant nominal thrust": 24006,
+    "row variant order": 24006,
+    "all-vehicle oracle shape": 24006,
+    "oracle rotor shape/finiteness": 60015,
+    "every saved oracle wind": 240060,
+    "instant/reference linkage": 24006,
+    "every saved oracle receiver load": 72018,
+    "treatment and left finite/nonnegative wind": 125430,
+    "oracle maxima": 6,
+    "inflow range and vehicle count": 6,
+    "metric method order": 30,
+    "exact refresh schedule": 30,
+    "instant refresh/no left": 24006,
+    "exact peak/location/target/exceedance metrics": 180,
+    "source-order RMS exact": 180,
+    "independent fsum RMS agreement": 180,
+    "sampling classification": 180,
+    "saved primary checksum exact": 30,
+    "refreshes on both grids": 24,
+    "left-limit event accounting": 96024,
+    "actual refresh matches reference": 5424,
+    "exact causal sample wind": 96024,
+    "constant held or startup load": 72138,
+    "exact causal old left wind": 5400,
+    "old hold left load": 4206,
+    "prospective window ranges": 6,
+    "per-case science/oracle count": 6,
+    "exact signed window extrema": 5,
+    "all 18 prospective suite decisions": 1,
+    "timing order/identity/warmup": 180,
+    "timing exact count/checksum": 180,
+    "timing finite/positive": 180,
+    "six total/five recorded passes": 30,
+    "timing summary exact": 30,
+    "total field accounting including oracle": 1,
+    "total oracle accounting": 1,
+    "raw byte accounting": 1,
+    "raw cap and reserved failure allowance": 1,
+    "single successful supervisor invocation": 1,
+    "observed wall/call caps": 1,
+    "restricted conclusion flags": 1
+  },
+  "failedChecks": [],
+  "passed": true,
+  "verificationWallSecondsBeforeOutput": 1.758971833
+}

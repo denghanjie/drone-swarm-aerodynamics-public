@@ -1,0 +1,240 @@
+{
+  "schema": "m31-body-viewer/1",
+  "binding": {
+    "state": "bound",
+    "verifiedAt": "2026-10-15T21:02:08.426Z",
+    "method": "Exact lengths and SHA-256 for all result.files and explicitly pinned reports; no scientific evaluation",
+    "rawFileCount": 13,
+    "rawBytes": 109240
+  },
+  "result": {
+    "name": "campaign-result.json",
+    "url": "./evidence/campaign-result.json",
+    "bytes": 3554,
+    "sha256": "7f876389a2013060cd308a51c2fea84efc6cc3e7d5cc2e2aa894c61102a4e71c"
+  },
+  "reviews": [
+    {
+      "label": "External review",
+      "statusPointer": "/observedIntegrityVerified",
+      "detailPointer": "/scope",
+      "artifact": {
+        "name": "review-1.json",
+        "url": "./evidence/review-1.json",
+        "bytes": 547,
+        "sha256": "eca5f4a3189afb3a9fcc065f51368e5b10e54ac4ac6974bf42708fce24208a4a"
+      }
+    }
+  ],
+  "externalReports": [
+    {
+      "label": "Scientific execution closure",
+      "artifact": {
+        "name": "external-1.json",
+        "url": "./evidence/external-1.json",
+        "bytes": 1328,
+        "sha256": "9dae04baa822b0522fd550ffa0e81811b4c99018147e70e9392f8dec7943728a"
+      }
+    },
+    {
+      "label": "Saved-review scope and result",
+      "artifact": {
+        "name": "external-2.json",
+        "url": "./evidence/external-2.json",
+        "bytes": 3902,
+        "sha256": "cb31d328d0cf164eaf32e5e1858eba8675e2ee4e09fc0d10bea61fa39e09c77f"
+      }
+    },
+    {
+      "label": "Frozen observer summary",
+      "artifact": {
+        "name": "external-3.json",
+        "url": "./evidence/external-3.json",
+        "bytes": 1672,
+        "sha256": "70cd00f8b4f4be72d742772612196428ae9973c466c09423782adde2fec72f8e"
+      }
+    },
+    {
+      "label": "Sole saved-review completion",
+      "artifact": {
+        "name": "external-4.json",
+        "url": "./evidence/external-4.json",
+        "bytes": 1956,
+        "sha256": "baa0389e6659c91bed6af8da7c0e022daf61afd71c3e1b896900664fe5d7020a"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": 1,
+      "N": 50,
+      "files": {},
+      "observedFiles": []
+    },
+    {
+      "id": 2,
+      "N": 500,
+      "files": {},
+      "observedFiles": []
+    },
+    {
+      "id": 3,
+      "N": 5000,
+      "files": {},
+      "observedFiles": []
+    },
+    {
+      "id": 4,
+      "N": 5000,
+      "files": {},
+      "observedFiles": []
+    }
+  ],
+  "controls": {
+    "pairCount": 15,
+    "rootCount": 146,
+    "files": {
+      "pairPoses": {
+        "name": "controls-pairs-original.f64",
+        "url": "./evidence/controls-pairs-original.f64",
+        "bytes": 1920,
+        "sha256": "e6f6998a194cd36bce386f967a5a43b84e69b5e0c0ea0b5176484af80f998fbf"
+      },
+      "pairReference": {
+        "name": "controls-reference-pairs.json",
+        "url": "./evidence/controls-reference-pairs.json",
+        "bytes": 6324,
+        "sha256": "adecf5f6289b5952fef3fe520592e6d14f8945061a196a0b62cbf7c807e77edd"
+      },
+      "referenceStatus": {
+        "name": "controls-reference-status.json",
+        "url": "./evidence/controls-reference-status.json",
+        "bytes": 369,
+        "sha256": "fd336db836f2eb7bf2925ec2c73bfd454af7c3f2ec934aef17d83c0ccd495e07"
+      },
+      "metadata": {
+        "name": "control-metadata.json",
+        "url": "./evidence/control-metadata.json",
+        "bytes": 16957,
+        "sha256": "2385b2887b708f8b4acda95438f77f720045c1ad353c1a52738d94c7169110a4"
+      }
+    },
+    "assessment": null
+  },
+  "receipt": [
+    {
+      "name": "control-host-only-spec.json",
+      "bytes": 72,
+      "sha256": "0872e1a29335d67a0a0b8390611de00808b584980e3a615714316b90920975b1",
+      "verification": "offline-byte-hash"
+    },
+    {
+      "name": "control-metadata.json",
+      "bytes": 16957,
+      "sha256": "2385b2887b708f8b4acda95438f77f720045c1ad353c1a52738d94c7169110a4",
+      "verification": "offline-byte-hash"
+    },
+    {
+      "name": "controls-host-only-result.json",
+      "bytes": 4544,
+      "sha256": "ee3a9d14e34c6dbb387566f0d1c36418b008db03af8cb031059e1ae440222a55",
+      "verification": "offline-byte-hash"
+    },
+    {
+      "name": "controls-pairs-input.u32",
+      "bytes": 3840,
+      "sha256": "f60f97b7ff02427b3a4e8546315a2a31225f2bee49888ab2043bf2b1b5fafcc6",
+      "verification": "offline-byte-hash"
+    },
+    {
+      "name": "controls-pairs-original.f64",
+      "bytes": 1920,
+      "sha256": "e6f6998a194cd36bce386f967a5a43b84e69b5e0c0ea0b5176484af80f998fbf",
+      "verification": "offline-byte-hash"
+    },
+    {
+      "name": "controls-reference-Q-roots.bin",
+      "bytes": 14016,
+      "sha256": "0f6e7cdb88a2c4938da6fdcf67e75d1de21586adf38bef7857c0edcd5767325e",
+      "verification": "offline-byte-hash"
+    },
+    {
+      "name": "controls-reference-R-roots.bin",
+      "bytes": 14016,
+      "sha256": "196c0f01242dec1d586d4561b9a8042b74ccc465f2dc0a6de599dec7dd091528",
+      "verification": "offline-byte-hash"
+    },
+    {
+      "name": "controls-reference-pairs.json",
+      "bytes": 6324,
+      "sha256": "adecf5f6289b5952fef3fe520592e6d14f8945061a196a0b62cbf7c807e77edd",
+      "verification": "offline-byte-hash"
+    },
+    {
+      "name": "controls-reference-status.json",
+      "bytes": 369,
+      "sha256": "fd336db836f2eb7bf2925ec2c73bfd454af7c3f2ec934aef17d83c0ccd495e07",
+      "verification": "offline-byte-hash"
+    },
+    {
+      "name": "controls-roots-input.u32",
+      "bytes": 37376,
+      "sha256": "92dd301cbd17e608fe791cd6ed6ff0ef525d17e5ff872a0d587ff55f8f25e156",
+      "verification": "offline-byte-hash"
+    },
+    {
+      "name": "controls-roots-original.f64",
+      "bytes": 2336,
+      "sha256": "02d0f7f61b07c3fe6a1985ca1386da33d55b706f55ad5927937be4aa20ca8e31",
+      "verification": "offline-byte-hash"
+    },
+    {
+      "name": "scientific-constants-and-gates.json",
+      "bytes": 2422,
+      "sha256": "2eeffbe666a645f40f0a7c97d061b1525aadc9f1a34c9b6d8c867180eb7d814b",
+      "verification": "offline-byte-hash"
+    },
+    {
+      "name": "started.json",
+      "bytes": 5048,
+      "sha256": "39bfbaf58cb41acb17971b8bfbe10826eeca7e000a05d67e64f61413cb917b55",
+      "verification": "offline-byte-hash"
+    },
+    {
+      "name": "campaign-result.json",
+      "bytes": 3554,
+      "sha256": "7f876389a2013060cd308a51c2fea84efc6cc3e7d5cc2e2aa894c61102a4e71c",
+      "verification": "offline-byte-hash"
+    },
+    {
+      "name": "review-1.json",
+      "bytes": 547,
+      "sha256": "eca5f4a3189afb3a9fcc065f51368e5b10e54ac4ac6974bf42708fce24208a4a",
+      "verification": "offline-byte-hash"
+    },
+    {
+      "name": "external-1.json",
+      "bytes": 1328,
+      "sha256": "9dae04baa822b0522fd550ffa0e81811b4c99018147e70e9392f8dec7943728a",
+      "verification": "offline-byte-hash"
+    },
+    {
+      "name": "external-2.json",
+      "bytes": 3902,
+      "sha256": "cb31d328d0cf164eaf32e5e1858eba8675e2ee4e09fc0d10bea61fa39e09c77f",
+      "verification": "offline-byte-hash"
+    },
+    {
+      "name": "external-3.json",
+      "bytes": 1672,
+      "sha256": "70cd00f8b4f4be72d742772612196428ae9973c466c09423782adde2fec72f8e",
+      "verification": "offline-byte-hash"
+    },
+    {
+      "name": "external-4.json",
+      "bytes": 1956,
+      "sha256": "baa0389e6659c91bed6af8da7c0e022daf61afd71c3e1b896900664fe5d7020a",
+      "verification": "offline-byte-hash"
+    }
+  ]
+}

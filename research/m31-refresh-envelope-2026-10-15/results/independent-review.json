@@ -1,0 +1,943 @@
+{
+  "scope": "Independent saved-record arithmetic/source review; no model evaluation or new samples.",
+  "method": {
+    "script": "m31-envelope-recompute.py",
+    "scriptSha256": "44f65cd969da5ea8cea921d6ac560468357fce5b1ff526e25907e4b92eb9c585",
+    "rms": "sqrt(fsum of squared-error trapezoids / duration); prior post-refresh value starts each interval, current refresh-left value ends it when present.",
+    "peak": "Uniform observations and all recorded refresh-left values; all refreshes checked to lie on both grids.",
+    "coverageSign": "instantaneous reference minus treatment; exactly matches saved load-difference intervals.",
+    "timing": "Exact sequential checksum from saved primary loads; counts/order/statistics read and recomputed without benchmark rerun."
+  },
+  "sourceCommit": "f56909390c4875db5a9241ba6bc79596b84628a6",
+  "rawHashes": [
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/accuracy.json",
+      "bytes": 9341,
+      "sha256": "77c96571fca8ebcc0774d7b6726ba49fe7d16fd2ddb27817aeca7e233d6ad86e"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/envelope-decisions.json",
+      "bytes": 589635,
+      "sha256": "1dfd63e98841077db579f60c560558f4f2ef798c72e60dd7e478c815e2c1ce0b"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/result.json",
+      "bytes": 11588,
+      "sha256": "6ccf0d9881bffaa3f2e6b89ff0c19b77a6cd600e9e63783163190dd6f4224d85"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/samples.ndjson",
+      "bytes": 5661652,
+      "sha256": "93eff8740f62b94650c5c74f8aaa5d1cb78ac688c20b871d46530a58ce6e7dd1"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/started.json",
+      "bytes": 985,
+      "sha256": "6168d3fac3d1f1eeb0cebc4d4bdb333c3e73d27509c7face1daf36341e26515f"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/timing-0-0.json",
+      "bytes": 131,
+      "sha256": "93910972ac18f3a4ef62a6c9fd0bfce44a3e57b432b2f7b8a45131790cbdd571"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/timing-0-1.json",
+      "bytes": 132,
+      "sha256": "54b5fc7e8b89003936ecafae41f2099c93519f7a59262ee3506c823f068e3013"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/timing-0-2.json",
+      "bytes": 131,
+      "sha256": "267b25837c6b2817932432bb51ef80580a9b315907b71f396e15595647cdc5a7"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/timing-0-3.json",
+      "bytes": 132,
+      "sha256": "311d92c2a3248f76101b619bdf7bb8b01629e583aeb73ab68b6c78fe6ccd95a4"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/timing-0-4.json",
+      "bytes": 133,
+      "sha256": "03cea8d44c24a7a63eb340a52a253faafc91c63fe7fa541a609d08d8ac2d00bd"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/timing-0-5.json",
+      "bytes": 124,
+      "sha256": "e3bbf5091ef4cac9c049bf91190267be0da84a36b8e83674c52cc50a0e746e5e"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/timing-1-0.json",
+      "bytes": 133,
+      "sha256": "b05e97866255be426cc085ecf7a56a049b95f86f0a602bafb6cffc40af257c03"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/timing-1-1.json",
+      "bytes": 131,
+      "sha256": "1120eb299608f95644953d56d7e0db3cbd6a74622c4dbfa46adb63ebf657bfde"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/timing-1-2.json",
+      "bytes": 133,
+      "sha256": "0ecc6bb5d6975bab865ae56db96fcf48c8f2a9298f84b22ee97970c1eebc015f"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/timing-1-3.json",
+      "bytes": 134,
+      "sha256": "b7a8b265c374ab347d4b50617fbeb5a38fe201d3cc1ef3b23dda313f31c768d0"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/timing-1-4.json",
+      "bytes": 135,
+      "sha256": "67c8e1bdfc9e15e9822d4debb60100a2a8881ee9199a2ed90c054f2a83860ee7"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/timing-1-5.json",
+      "bytes": 132,
+      "sha256": "843f4ddab0f74b5c310b398e95d42c137ccfad840eb0b8bb93b11aa66df392ed"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/timing-2-0.json",
+      "bytes": 132,
+      "sha256": "1c10132f282b167e8303cf0f5435c30c8d0fc44d54fdd3eed145586120d3420e"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/timing-2-1.json",
+      "bytes": 133,
+      "sha256": "3efb45d825d611d6190c0cde622d7a5222a8bc5859e7174a206c5dc439dd93ae"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/timing-2-2.json",
+      "bytes": 135,
+      "sha256": "997f868119a618ebd81359db2a7ba7a9404a2e7c1e41ba9348707ebc768f8190"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/timing-2-3.json",
+      "bytes": 134,
+      "sha256": "b6b128b128e094a4c124f4a8c8d32d34235ed1722818824f88879efdf54d281a"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/timing-2-4.json",
+      "bytes": 131,
+      "sha256": "86113bd4d35a135ad1f31d51b2946b01f04e0acefbef2895e7ada4943500beb3"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/timing-2-5.json",
+      "bytes": 134,
+      "sha256": "29130efb4f1382d555fd1f27ce1ba4b21426063863518a1aaa08f9bcebbb5aed"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/timing-3-0.json",
+      "bytes": 133,
+      "sha256": "f3d902dc6fafa8852c039b3dd523d0b33654d56708f7782ae9664181f951f2c8"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/timing-3-1.json",
+      "bytes": 133,
+      "sha256": "113946c309a0e1835eacecbfb2e921c92aead9a4cabbcff7243bf25789e088ab"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/timing-3-2.json",
+      "bytes": 135,
+      "sha256": "96c74c069a04e5c665235fe156c5e9680d8954e7bf7c18e3c7fb0a0a942d67cc"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/timing-3-3.json",
+      "bytes": 132,
+      "sha256": "c0ec287e37b2ec3c53f8c83ad7112035fbd67e022680ef95693a44fa0c2d8f48"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/timing-3-4.json",
+      "bytes": 134,
+      "sha256": "eb88d1f2d472dbeba0106e5c1760d7a3345118b3a4986884e25ba34089d44f7a"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/timing-3-5.json",
+      "bytes": 132,
+      "sha256": "8b7f88af34c4929eef242471a2ce2dd386fe210390ff7a6f75fe8c4fcd28de32"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/timing-4-0.json",
+      "bytes": 135,
+      "sha256": "0ab3ddc9751d2a5e264a593407c966aae02c12a9e23fcc23ced1a464cca2cd47"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/timing-4-1.json",
+      "bytes": 134,
+      "sha256": "ab8aaf79312b5ba2b75c20b7f856f0c89c6d81fa0f8372d208e082deebc07e2e"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/timing-4-2.json",
+      "bytes": 132,
+      "sha256": "3f95f72a096f2ff8bf8a7eae9c329dd87562993adc3218c43c4e0f490e71d9b1"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/timing-4-3.json",
+      "bytes": 134,
+      "sha256": "accd37c58c34732fda76becf2e368d127fc4d0ab5b55cfc021c80159573be9cb"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/timing-4-4.json",
+      "bytes": 132,
+      "sha256": "aba7046976357c07f1e28666c9c4fd30537d0c320a43479f2ee88a7f523a39fb"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/timing-4-5.json",
+      "bytes": 133,
+      "sha256": "ae61bd0105a27b31b0df94f085b8dad4e336ace95123c5e99a5ab85222753246"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/timing-5-0.json",
+      "bytes": 135,
+      "sha256": "b4c92be6da140ef090fe33b3b504e33e57e9590d5fb3534e1c1e6e81ad7b921b"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/timing-5-1.json",
+      "bytes": 132,
+      "sha256": "3c27750af5e4de97346a3fca28443bfc234d92b73d52b986f6ad7183b29bb0e8"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/timing-5-2.json",
+      "bytes": 134,
+      "sha256": "3dbf3654b737332de16bcf8f6001a9b623ea94f490fb5deffc1b8a37c8ea7502"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/timing-5-3.json",
+      "bytes": 132,
+      "sha256": "09222a151b8761a4ffd66a4ac82032d593d62cf536bfe0d7b14b1a6994eea4f3"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/timing-5-4.json",
+      "bytes": 134,
+      "sha256": "2506fa396d48fd41e5e93704cee280b69906b3f8d3528e02f0684c4456ac0fe9"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/timing-5-5.json",
+      "bytes": 135,
+      "sha256": "cde1b9825e2245a2e78d126967991936572536bcac890ed89f68d64bc20ca82b"
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/raw/verification.json",
+      "bytes": 582,
+      "sha256": "ff7f2a4941370a2bc508462a2a0748e60530d17ed378d53c8e4aba51afcdd83b"
+    }
+  ],
+  "sourceHashes": [
+    {
+      "path": "outputs/milestone-26-source/grid.cjs",
+      "sha256": "f06010781770b64432935e5d825bcd1405b154b735ac4d0d654f145600cea302",
+      "matches": true
+    },
+    {
+      "path": "outputs/milestone-28-source/aero.cjs",
+      "sha256": "710b0a8f0df62208e3385ac9b8288240b379fe9248a1a645251a77c533f24a62",
+      "matches": true
+    },
+    {
+      "path": "outputs/step02c-source/physics.cjs",
+      "sha256": "0c46c9beb4e831c621658f6600c074f97c95966de07f5000eb64aa476a443fa1",
+      "matches": true
+    },
+    {
+      "path": "outputs/step03a-source/wake.cjs",
+      "sha256": "fb6d5a1d632a0023818041ef6bc39316ff8ed950f318da1a6649e2515b9fd8bc",
+      "matches": true
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/.gitignore",
+      "sha256": "e138ca829d938927384c82d7f176eaa6c61a82bd28ba28320ddd736a505c3b4f",
+      "matches": true
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/PREFLIGHT-REVIEW.md",
+      "sha256": "70cf952eefff8b34f7581a44bcf4b1c92665a7f5ffc32ece007bd02e9734260b",
+      "matches": true
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/PROTOCOL.md",
+      "sha256": "b9b59a1be29791bde675ba7c8ee6302af5dd37966b93ed758ed80c64269f05f7",
+      "matches": true
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/RESTART.md",
+      "sha256": "f64a3ddfc5b1a0c413a74a05751bc6ea22115ebc1d0ed173a442931d039a04bf",
+      "matches": true
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/config.json",
+      "sha256": "d592fddf8158a12bcba979b7de9a1182260fe21ee88c2892068e27403a12eb2f",
+      "matches": true
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/source/bound.cjs",
+      "sha256": "d0b39a8f2aa63cee21e76c565eba0fbcdf890d8902a1b705ca49d5c3fbdbedfa",
+      "matches": true
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/source/experiment.cjs",
+      "sha256": "bbc40904fd5a436da7b102b98d36cbf81db6e1463236063b449623582c669fd5",
+      "matches": true
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/source/independent.cjs",
+      "sha256": "e0445be31ec647c8ddfb79533d4866dc8133e99ba5f25061bf393aab6bc58baf",
+      "matches": true
+    },
+    {
+      "path": "research/m31-refresh-envelope-2026-10-15/source/run-step.py",
+      "sha256": "a523d6e3de15c06ca7e97b9944ad2c43fa70fad34750776451f5fc8643c5e298",
+      "matches": true
+    }
+  ],
+  "metrics": [
+    {
+      "id": "instant",
+      "primary": [
+        {
+          "observable": "thrust",
+          "peak": 0.0,
+          "rms": 0.0,
+          "worstTick": 0,
+          "worstSide": "sample",
+          "budget": 0.00132435,
+          "peakWithinBudget": true
+        },
+        {
+          "observable": "roll",
+          "peak": 0,
+          "rms": 0.0,
+          "worstTick": 0,
+          "worstSide": "sample",
+          "budget": 0.00010488316895441328,
+          "peakWithinBudget": true
+        },
+        {
+          "observable": "pitch",
+          "peak": 0,
+          "rms": 0.0,
+          "worstTick": 0,
+          "worstSide": "sample",
+          "budget": 0.00010488316895441328,
+          "peakWithinBudget": true
+        }
+      ],
+      "refined": [
+        {
+          "observable": "thrust",
+          "peak": 0.0,
+          "rms": 0.0,
+          "worstTick": 0,
+          "worstSide": "sample",
+          "budget": 0.00132435,
+          "peakWithinBudget": true
+        },
+        {
+          "observable": "roll",
+          "peak": 0,
+          "rms": 0.0,
+          "worstTick": 0,
+          "worstSide": "sample",
+          "budget": 0.00010488316895441328,
+          "peakWithinBudget": true
+        },
+        {
+          "observable": "pitch",
+          "peak": 0,
+          "rms": 0.0,
+          "worstTick": 0,
+          "worstSide": "sample",
+          "budget": 0.00010488316895441328,
+          "peakWithinBudget": true
+        }
+      ],
+      "sampling": [
+        {
+          "observable": "thrust",
+          "peakDifference": 0.0,
+          "peakStable": true,
+          "rmsDifference": 0.0,
+          "rmsStable": true
+        },
+        {
+          "observable": "roll",
+          "peakDifference": 0,
+          "peakStable": true,
+          "rmsDifference": 0.0,
+          "rmsStable": true
+        },
+        {
+          "observable": "pitch",
+          "peakDifference": 0,
+          "peakStable": true,
+          "rmsDifference": 0.0,
+          "rmsStable": true
+        }
+      ]
+    },
+    {
+      "id": "hold-10ms",
+      "primary": [
+        {
+          "observable": "thrust",
+          "peak": 0.003359652590082862,
+          "rms": 0.0008425978686385845,
+          "worstTick": 1720,
+          "worstSide": "left",
+          "budget": 0.00132435,
+          "peakWithinBudget": false
+        },
+        {
+          "observable": "roll",
+          "peak": 2.4736206906523627e-05,
+          "rms": 5.512237383955819e-06,
+          "worstTick": 1760,
+          "worstSide": "left",
+          "budget": 0.00010488316895441328,
+          "peakWithinBudget": true
+        },
+        {
+          "observable": "pitch",
+          "peak": 7.486998617938986e-05,
+          "rms": 1.1622785589451204e-05,
+          "worstTick": 2000,
+          "worstSide": "left",
+          "budget": 0.00010488316895441328,
+          "peakWithinBudget": true
+        }
+      ],
+      "refined": [
+        {
+          "observable": "thrust",
+          "peak": 0.003359652590082862,
+          "rms": 0.0008422045160534124,
+          "worstTick": 1720,
+          "worstSide": "left",
+          "budget": 0.00132435,
+          "peakWithinBudget": false
+        },
+        {
+          "observable": "roll",
+          "peak": 2.4736206906523627e-05,
+          "rms": 5.509668114740799e-06,
+          "worstTick": 1760,
+          "worstSide": "left",
+          "budget": 0.00010488316895441328,
+          "peakWithinBudget": true
+        },
+        {
+          "observable": "pitch",
+          "peak": 7.486998617938986e-05,
+          "rms": 1.1617384222444404e-05,
+          "worstTick": 2000,
+          "worstSide": "left",
+          "budget": 0.00010488316895441328,
+          "peakWithinBudget": true
+        }
+      ],
+      "sampling": [
+        {
+          "observable": "thrust",
+          "peakDifference": 0.0,
+          "peakStable": true,
+          "rmsDifference": 3.933525851721126e-07,
+          "rmsStable": true
+        },
+        {
+          "observable": "roll",
+          "peakDifference": 0.0,
+          "peakStable": true,
+          "rmsDifference": 2.5692692150201585e-09,
+          "rmsStable": true
+        },
+        {
+          "observable": "pitch",
+          "peakDifference": 0.0,
+          "peakStable": true,
+          "rmsDifference": 5.401367006800369e-09,
+          "rmsStable": true
+        }
+      ]
+    },
+    {
+      "id": "hold-5ms",
+      "primary": [
+        {
+          "observable": "thrust",
+          "peak": 0.0016881223652114863,
+          "rms": 0.0004222804545378684,
+          "worstTick": 1740,
+          "worstSide": "left",
+          "budget": 0.00132435,
+          "peakWithinBudget": false
+        },
+        {
+          "observable": "roll",
+          "peak": 1.2384094071808552e-05,
+          "rms": 2.7632808009025323e-06,
+          "worstTick": 1760,
+          "worstSide": "left",
+          "budget": 0.00010488316895441328,
+          "peakWithinBudget": true
+        },
+        {
+          "observable": "pitch",
+          "peak": 3.775154421718709e-05,
+          "rms": 5.829717120819691e-06,
+          "worstTick": 2000,
+          "worstSide": "left",
+          "budget": 0.00010488316895441328,
+          "peakWithinBudget": true
+        }
+      ],
+      "refined": [
+        {
+          "observable": "thrust",
+          "peak": 0.0016881223652114863,
+          "rms": 0.0004214924487295983,
+          "worstTick": 1740,
+          "worstSide": "left",
+          "budget": 0.00132435,
+          "peakWithinBudget": false
+        },
+        {
+          "observable": "roll",
+          "peak": 1.2384094071808552e-05,
+          "rms": 2.758126441151347e-06,
+          "worstTick": 1760,
+          "worstSide": "left",
+          "budget": 0.00010488316895441328,
+          "peakWithinBudget": true
+        },
+        {
+          "observable": "pitch",
+          "peak": 3.775154421718709e-05,
+          "rms": 5.818851991972118e-06,
+          "worstTick": 2000,
+          "worstSide": "left",
+          "budget": 0.00010488316895441328,
+          "peakWithinBudget": true
+        }
+      ],
+      "sampling": [
+        {
+          "observable": "thrust",
+          "peakDifference": 0.0,
+          "peakStable": true,
+          "rmsDifference": 7.880058082701449e-07,
+          "rmsStable": true
+        },
+        {
+          "observable": "roll",
+          "peakDifference": 0.0,
+          "peakStable": true,
+          "rmsDifference": 5.1543597511853456e-09,
+          "rmsStable": true
+        },
+        {
+          "observable": "pitch",
+          "peakDifference": 0.0,
+          "peakStable": true,
+          "rmsDifference": 1.0865128847573248e-08,
+          "rmsStable": true
+        }
+      ]
+    },
+    {
+      "id": "hold-2.5ms",
+      "primary": [
+        {
+          "observable": "thrust",
+          "peak": 0.0008451391710991574,
+          "rms": 0.00021273406176735578,
+          "worstTick": 1730,
+          "worstSide": "left",
+          "budget": 0.00132435,
+          "peakWithinBudget": true
+        },
+        {
+          "observable": "roll",
+          "peak": 6.19853038819106e-06,
+          "rms": 1.3921920569192708e-06,
+          "worstTick": 1750,
+          "worstSide": "left",
+          "budget": 0.00010488316895441328,
+          "peakWithinBudget": true
+        },
+        {
+          "observable": "pitch",
+          "peak": 1.8903571043407674e-05,
+          "rms": 2.9374607264809088e-06,
+          "worstTick": 2000,
+          "worstSide": "left",
+          "budget": 0.00010488316895441328,
+          "peakWithinBudget": true
+        }
+      ],
+      "refined": [
+        {
+          "observable": "thrust",
+          "peak": 0.0008451391710991574,
+          "rms": 0.00021116433261177188,
+          "worstTick": 1730,
+          "worstSide": "left",
+          "budget": 0.00132435,
+          "peakWithinBudget": true
+        },
+        {
+          "observable": "roll",
+          "peak": 6.19853038819106e-06,
+          "rms": 1.3819207349566406e-06,
+          "worstTick": 1750,
+          "worstSide": "left",
+          "budget": 0.00010488316895441328,
+          "peakWithinBudget": true
+        },
+        {
+          "observable": "pitch",
+          "peak": 1.8903571043407674e-05,
+          "rms": 2.9157923255187807e-06,
+          "worstTick": 2000,
+          "worstSide": "left",
+          "budget": 0.00010488316895441328,
+          "peakWithinBudget": true
+        }
+      ],
+      "sampling": [
+        {
+          "observable": "thrust",
+          "peakDifference": 0.0,
+          "peakStable": true,
+          "rmsDifference": 1.569729155583905e-06,
+          "rmsStable": true
+        },
+        {
+          "observable": "roll",
+          "peakDifference": 0.0,
+          "peakStable": true,
+          "rmsDifference": 1.027132196263026e-08,
+          "rmsStable": true
+        },
+        {
+          "observable": "pitch",
+          "peakDifference": 0.0,
+          "peakStable": true,
+          "rmsDifference": 2.1668400962128076e-08,
+          "rmsStable": true
+        }
+      ]
+    },
+    {
+      "id": "predict-5ms",
+      "primary": [
+        {
+          "observable": "thrust",
+          "peak": 0.00019320483686116607,
+          "rms": 2.874053700104436e-05,
+          "worstTick": 2020,
+          "worstSide": "left",
+          "budget": 0.00132435,
+          "peakWithinBudget": true
+        },
+        {
+          "observable": "roll",
+          "peak": 1.5155848532399496e-06,
+          "rms": 2.462689564666242e-07,
+          "worstTick": 2000,
+          "worstSide": "left",
+          "budget": 0.00010488316895441328,
+          "peakWithinBudget": true
+        },
+        {
+          "observable": "pitch",
+          "peak": 4.161062251348312e-06,
+          "rms": 6.720993853259997e-07,
+          "worstTick": 1860,
+          "worstSide": "left",
+          "budget": 0.00010488316895441328,
+          "peakWithinBudget": true
+        }
+      ],
+      "refined": [
+        {
+          "observable": "thrust",
+          "peak": 0.00019320483686116607,
+          "rms": 2.8637375599680132e-05,
+          "worstTick": 2020,
+          "worstSide": "left",
+          "budget": 0.00132435,
+          "peakWithinBudget": true
+        },
+        {
+          "observable": "roll",
+          "peak": 1.5155848532399496e-06,
+          "rms": 2.4539655146788914e-07,
+          "worstTick": 2000,
+          "worstSide": "left",
+          "budget": 0.00010488316895441328,
+          "peakWithinBudget": true
+        },
+        {
+          "observable": "pitch",
+          "peak": 4.161062251348312e-06,
+          "rms": 6.696886516803162e-07,
+          "worstTick": 1860,
+          "worstSide": "left",
+          "budget": 0.00010488316895441328,
+          "peakWithinBudget": true
+        }
+      ],
+      "sampling": [
+        {
+          "observable": "thrust",
+          "peakDifference": 0.0,
+          "peakStable": true,
+          "rmsDifference": 1.031614013642269e-07,
+          "rmsStable": true
+        },
+        {
+          "observable": "roll",
+          "peakDifference": 0.0,
+          "peakStable": true,
+          "rmsDifference": 8.724049987350849e-10,
+          "rmsStable": true
+        },
+        {
+          "observable": "pitch",
+          "peakDifference": 0.0,
+          "peakStable": true,
+          "rmsDifference": 2.4107336456835196e-09,
+          "rmsStable": true
+        }
+      ]
+    },
+    {
+      "id": "envelope",
+      "primary": [
+        {
+          "observable": "thrust",
+          "peak": 0.0010001596796984646,
+          "rms": 0.0002703891512431169,
+          "worstTick": 1552,
+          "worstSide": "left",
+          "budget": 0.00132435,
+          "peakWithinBudget": true
+        },
+        {
+          "observable": "roll",
+          "peak": 5.880451564443815e-06,
+          "rms": 1.3728162876311496e-06,
+          "worstTick": 1552,
+          "worstSide": "left",
+          "budget": 0.00010488316895441328,
+          "peakWithinBudget": true
+        },
+        {
+          "observable": "pitch",
+          "peak": 2.1847394220587783e-05,
+          "rms": 4.1292442799780685e-06,
+          "worstTick": 1088,
+          "worstSide": "left",
+          "budget": 0.00010488316895441328,
+          "peakWithinBudget": true
+        }
+      ],
+      "refined": [
+        {
+          "observable": "thrust",
+          "peak": 0.0010001596796984646,
+          "rms": 0.0002691551525143101,
+          "worstTick": 1552,
+          "worstSide": "left",
+          "budget": 0.00132435,
+          "peakWithinBudget": true
+        },
+        {
+          "observable": "roll",
+          "peak": 5.880451564443815e-06,
+          "rms": 1.3623957363068505e-06,
+          "worstTick": 1552,
+          "worstSide": "left",
+          "budget": 0.00010488316895441328,
+          "peakWithinBudget": true
+        },
+        {
+          "observable": "pitch",
+          "peak": 2.1847394220587783e-05,
+          "rms": 4.113852068529374e-06,
+          "worstTick": 1088,
+          "worstSide": "left",
+          "budget": 0.00010488316895441328,
+          "peakWithinBudget": true
+        }
+      ],
+      "sampling": [
+        {
+          "observable": "thrust",
+          "peakDifference": 0.0,
+          "peakStable": true,
+          "rmsDifference": 1.2339987288068023e-06,
+          "rmsStable": true
+        },
+        {
+          "observable": "roll",
+          "peakDifference": 0.0,
+          "peakStable": true,
+          "rmsDifference": 1.0420551324299108e-08,
+          "rmsStable": true
+        },
+        {
+          "observable": "pitch",
+          "peakDifference": 0.0,
+          "peakStable": true,
+          "rmsDifference": 1.5392211448694218e-08,
+          "rmsStable": true
+        }
+      ]
+    }
+  ],
+  "timing": [
+    {
+      "id": "instant",
+      "totalMs": {
+        "minimum": 26.822457999999983,
+        "median": 27.13549999999998,
+        "maximum": 27.941374999999994
+      },
+      "fieldCalls": 2001,
+      "boundCalls": 0,
+      "checksum": 510.1758729251405
+    },
+    {
+      "id": "hold-10ms",
+      "totalMs": {
+        "minimum": 1.9524169999999685,
+        "median": 2.0226670000000126,
+        "maximum": 2.2485829999999964
+      },
+      "fieldCalls": 101,
+      "boundCalls": 0,
+      "checksum": 510.17588691510235
+    },
+    {
+      "id": "hold-5ms",
+      "totalMs": {
+        "minimum": 3.2608749999999986,
+        "median": 3.5552079999999933,
+        "maximum": 4.081832999999989
+      },
+      "fieldCalls": 201,
+      "boundCalls": 0,
+      "checksum": 510.1758719634473
+    },
+    {
+      "id": "hold-2.5ms",
+      "totalMs": {
+        "minimum": 5.871457999999961,
+        "median": 6.393833000000029,
+        "maximum": 6.573124999999976
+      },
+      "fieldCalls": 401,
+      "boundCalls": 0,
+      "checksum": 510.1758718920376
+    },
+    {
+      "id": "predict-5ms",
+      "totalMs": {
+        "minimum": 3.47950000000003,
+        "median": 3.569500000000005,
+        "maximum": 3.9013330000000224
+      },
+      "fieldCalls": 201,
+      "boundCalls": 0,
+      "checksum": 510.1763838188326
+    },
+    {
+      "id": "envelope",
+      "totalMs": {
+        "minimum": 6.241667000000007,
+        "median": 6.3674159999999915,
+        "maximum": 6.8444580000000315
+      },
+      "fieldCalls": 196,
+      "boundCalls": 615,
+      "checksum": 510.17197593920304
+    }
+  ],
+  "samplingFailures": [],
+  "targetExceedances": [
+    {
+      "variant": "hold-10ms",
+      "observable": "thrust",
+      "peak": 0.003359652590082862,
+      "rms": 0.0008422045160534124,
+      "worstTick": 1720,
+      "worstSide": "left",
+      "budget": 0.00132435,
+      "peakWithinBudget": false
+    },
+    {
+      "variant": "hold-5ms",
+      "observable": "thrust",
+      "peak": 0.0016881223652114863,
+      "rms": 0.0004214924487295983,
+      "worstTick": 1740,
+      "worstSide": "left",
+      "budget": 0.00132435,
+      "peakWithinBudget": false
+    }
+  ],
+  "coverage": {
+    "samples": 12585,
+    "maxExcess": -1.427455339278054e-15,
+    "worst": {
+      "tick": 3373,
+      "k": 2,
+      "side": "sample",
+      "error": -3.4316906134292113e-07,
+      "interval": [
+        -3.4316906277037647e-07,
+        3.543009872317038e-06
+      ],
+      "anchor": 3320
+    },
+    "targetViolations": 0
+  },
+  "accounting": {
+    "rawBytes": 6278564,
+    "fieldCalls": 27709,
+    "oracleCalls": 4001,
+    "boundCalls": 4309,
+    "scienceFieldCalls": 9103,
+    "scienceBoundCalls": 619,
+    "timingFieldCalls": 18606,
+    "timingBoundCalls": 3690,
+    "envelopeDecisions": 195,
+    "attemptsPerEnvelopePass": 615,
+    "refreshesPerEnvelopePass": 196,
+    "pilotSupervisorWallSeconds": 0.5240428749999999,
+    "experimentElapsedSeconds": 0.47978958400000005
+  },
+  "comparisons": {
+    "predict5msLowerPeakForEveryObservable": true,
+    "predict5msRecordedRangeStrictlyBelowEnvelope": true,
+    "envelopeAndHold2p5msRecordedRangesOverlap": true,
+    "envelopeMedianVsHold2p5msFraction": -0.004131637470049299
+  },
+  "sourceSemantics": [
+    "Containment checks use reference minus held; peak/RMS code uses treatment minus reference. Squaring/absolute value removes the sign, while interval coverage uses the correct original sign.",
+    "Every refresh event is on both grids. Trapezoids terminate at old left-limit values and restart from new post-refresh values; no interval bridges a refresh jump.",
+    "Predictor uses only two previous actual inflow samples, clips extrapolated inflow at zero, and holds before its second refresh; these saved winds were recomputed arithmetically without the field or receiver model.",
+    "Envelope accepted intervals and moment signs were reconstructed from saved rotor thrust intervals and held rotor loads, without reevaluating bounds, fields, or bisection.",
+    "Shortest-horizon failure, oracle mismatch, sampled interval violation, or envelope target failure throws before timing; source catch retains detailed failure context and preceding rows. Hard watchdog termination may preserve only already-written evidence.",
+    "Scheduler/bound/receiver and pose overhead are included in the full query loop; verification, persistence, and absent flight/Boids/render/GPU operations are excluded.",
+    "Observed coverage and successful sampling screens are restricted to this encounter and saved grids. Margins are not certified outward rounding and no physical or general cadence/safety acceptance follows.",
+    "No meaningful speed advantage over hold-2.5ms is established by overlapping five-repeat ranges; the causal predictor has lower peak errors and a lower nonoverlapping recorded time range in this encounter."
+  ],
+  "maximumMetricDiscrepancy": {
+    "peak": 0.0,
+    "rms": 5.963111948670274e-19
+  },
+  "checkCount": 57504,
+  "failedChecks": [],
+  "passed": true,
+  "verificationWallSecondsBeforeOutput": 0.22632424999999998
+}

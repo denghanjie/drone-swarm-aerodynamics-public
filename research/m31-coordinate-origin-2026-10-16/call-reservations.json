@@ -1,0 +1,16 @@
+{
+ "generateFresh":1,
+ "prepareOriginal":1,
+ "translatePrepared":1,
+ "packPrepared":2,
+ "evaluateSelected":6,
+ "assessR":2,
+ "assessQ":4,
+ "assessUsefulness":2,
+ "assessControls":3,
+ "assessGpuTerms":6,
+ "assessSerial":6,
+ "compareReferences":3,
+ "compareGpuVectors":4,
+ "notes":"Reserve each whole assessor before entry; compareReferences is R0/R1 plus Q0/Q1 within each origin. compareGpuVectors is A/B and B/C within each origin if both raw cells exist and pass integrity; no extra invocation after missing or failed dependency. LABEL expands to R,Q0,Q1; callback names are unprefixed and aggregate caps multiply each repeated call. Each origin retains its own saved result counts. Callback reservations are maxima, never requests to perform more work."
+}

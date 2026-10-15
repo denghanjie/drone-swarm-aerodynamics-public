@@ -1,0 +1,9 @@
+# Coordinator final pre-exposure disposition
+
+Accept this bounded, synthetic transport diagnostic for one invocation, subject to exact source publication and independent remote verification. Inspected the seven final source files and their lifecycle, schema, runtime-admission, event projection, fixture, reservation, accounting and shutdown contracts. Reconciled the author’s final source pins with the independent source/schema review and the final privacy review. No operational source or saved checker has been invoked.
+
+The observer only signals its owned unreaped relay group, or a detached browser whose exact executable/profile identity is freshly established. Reaped numeric groups are never signalled again. Cleanup failure prevents complete classification. Pipe retention is bounded; actual completion and exact summaries remain mandatory outside the process chain. RSS is sampled and does not bound transient or GPU-driver memory. Trace completeness is local recorder health, not exhaustive browser-event emission.
+
+One browser lifecycle and at most one application POST are fixed. Runtime/source admission may terminate before either. The worker constructs ordinary heap bytes and contains no GPU or scientific path. Both transport success and a completely observed transfer failure can finish normally; neither establishes scientific correctness or the historical failure cause. Incomplete instrumentation, deviations or closure take precedence. Preserve every terminal failure, with no retry or automatic scientific successor.
+
+Independent evidence: `design/INDEPENDENT-FINAL-SOURCE-REVIEW.md`, `design/INDEPENDENT-SOURCE-CONTRACT.json`, `design/AUTHOR-STATIC-CHECKS.json`, and `design/privacy-review/FINAL-REVIEW.md`. Static checks are not experimental observations. The saved-public-evidence checker has a separate later freeze and one invocation; its inert edge-case challenge remains a review-stage gate.

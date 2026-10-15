@@ -1,0 +1,1355 @@
+{
+  "scope": "Saved-record arithmetic and source-semantics audit only; no field/dynamics/experiment execution.",
+  "method": {
+    "script": "m31-cadence-recompute.py",
+    "scriptSha256": "3585fa846374dc62ca5481ac3e64f6e1b9b7d79a1bb1b0bb61b8feef123dd305",
+    "rms": "sqrt(math.fsum(error^2)/uniform sample count); equal weights; refresh-left records excluded.",
+    "maximum": "Uniform samples plus every saved old-hold refresh-left record, including terminal events. Earliest saved candidate wins a tie.",
+    "checksum": "Sequential binary64 accumulation of (thrust+roll)+pitch at even ticks, matching the stated checksum estimand.",
+    "limits": "Production field values and oracle fixture outcomes are not regenerated. Timing records are arithmetic-checked, not rerun or independently benchmarked."
+  },
+  "sourceCommit": "fd857ed1f5a4662ff98635e1998b53944b98738a",
+  "paths": [
+    {
+      "id": "lateral-pass",
+      "metrics": [
+        {
+          "name": "thrust",
+          "periodTicks": 0,
+          "refreshMs": 0.0,
+          "grid": "primary",
+          "max": 0.0,
+          "rms": 0.0,
+          "worstTick": 0,
+          "worstSide": "sample",
+          "uniformCount": 1001,
+          "leftCount": 0,
+          "maxNormalized": 0.0,
+          "rmsNormalized": 0.0
+        },
+        {
+          "name": "roll",
+          "periodTicks": 0,
+          "refreshMs": 0.0,
+          "grid": "primary",
+          "max": 0.0,
+          "rms": 0.0,
+          "worstTick": 0,
+          "worstSide": "sample",
+          "uniformCount": 1001,
+          "leftCount": 0,
+          "maxNormalized": 0.0,
+          "rmsNormalized": 0.0
+        },
+        {
+          "name": "pitch",
+          "periodTicks": 0,
+          "refreshMs": 0.0,
+          "grid": "primary",
+          "max": 0.0,
+          "rms": 0.0,
+          "worstTick": 0,
+          "worstSide": "sample",
+          "uniformCount": 1001,
+          "leftCount": 0,
+          "maxNormalized": 0.0,
+          "rmsNormalized": 0.0
+        },
+        {
+          "name": "thrust",
+          "periodTicks": 20,
+          "refreshMs": 10.0,
+          "grid": "primary",
+          "max": 0.0018491037897929996,
+          "rms": 0.0006245033130012308,
+          "worstTick": 1300,
+          "worstSide": "refresh-left",
+          "uniformCount": 1001,
+          "leftCount": 100,
+          "maxNormalized": 0.0069811748774606395,
+          "rmsNormalized": 0.002357772918794997
+        },
+        {
+          "name": "roll",
+          "periodTicks": 20,
+          "refreshMs": 10.0,
+          "grid": "primary",
+          "max": 4.336808689942018e-19,
+          "rms": 2.012226494748809e-19,
+          "worstTick": 12,
+          "worstSide": "sample",
+          "uniformCount": 1001,
+          "leftCount": 100,
+          "maxNormalized": 2.0674473956002324e-17,
+          "rmsNormalized": 9.592704505445525e-18
+        },
+        {
+          "name": "pitch",
+          "periodTicks": 20,
+          "refreshMs": 10.0,
+          "grid": "primary",
+          "max": 4.168285917395716e-05,
+          "rms": 8.699917340353557e-06,
+          "worstTick": 1000,
+          "worstSide": "refresh-left",
+          "uniformCount": 1001,
+          "leftCount": 100,
+          "maxNormalized": 0.0019871090657107393,
+          "rmsNormalized": 0.0004147432532351742
+        },
+        {
+          "name": "thrust",
+          "periodTicks": 10,
+          "refreshMs": 5.0,
+          "grid": "primary",
+          "max": 0.0009250206554986262,
+          "rms": 0.0002865683298273234,
+          "worstTick": 1300,
+          "worstSide": "refresh-left",
+          "uniformCount": 1001,
+          "leftCount": 200,
+          "maxNormalized": 0.0034923572148549335,
+          "rmsNormalized": 0.0010819206774165568
+        },
+        {
+          "name": "roll",
+          "periodTicks": 10,
+          "refreshMs": 5.0,
+          "grid": "primary",
+          "max": 4.336808689942018e-19,
+          "rms": 1.866917740927318e-19,
+          "worstTick": 22,
+          "worstSide": "sample",
+          "uniformCount": 1001,
+          "leftCount": 200,
+          "maxNormalized": 2.0674473956002324e-17,
+          "rmsNormalized": 8.899987288421655e-18
+        },
+        {
+          "name": "pitch",
+          "periodTicks": 10,
+          "refreshMs": 5.0,
+          "grid": "primary",
+          "max": 2.0892924046621124e-05,
+          "rms": 3.992963027695125e-06,
+          "worstTick": 1000,
+          "worstSide": "refresh-left",
+          "uniformCount": 1001,
+          "leftCount": 200,
+          "maxNormalized": 0.0009960093814338354,
+          "rmsNormalized": 0.00019035289777669847
+        },
+        {
+          "name": "thrust",
+          "periodTicks": 5,
+          "refreshMs": 2.5,
+          "grid": "primary",
+          "max": 0.00046252585477707386,
+          "rms": 0.00014328703015360962,
+          "worstTick": 710,
+          "worstSide": "refresh-left",
+          "uniformCount": 1001,
+          "leftCount": 400,
+          "maxNormalized": 0.001746237228742681,
+          "rmsNormalized": 0.0005409711562412113
+        },
+        {
+          "name": "roll",
+          "periodTicks": 5,
+          "refreshMs": 2.5,
+          "grid": "primary",
+          "max": 4.336808689942018e-19,
+          "rms": 1.9360861391700669e-19,
+          "worstTick": 22,
+          "worstSide": "sample",
+          "uniformCount": 1001,
+          "leftCount": 400,
+          "maxNormalized": 2.0674473956002324e-17,
+          "rmsNormalized": 9.229727507621232e-18
+        },
+        {
+          "name": "pitch",
+          "periodTicks": 5,
+          "refreshMs": 2.5,
+          "grid": "primary",
+          "max": 1.045291081538946e-05,
+          "rms": 1.9966070944307863e-06,
+          "worstTick": 1005,
+          "worstSide": "refresh-left",
+          "uniformCount": 1001,
+          "leftCount": 400,
+          "maxNormalized": 0.0004983121181212948,
+          "rmsNormalized": 9.518243557737073e-05
+        },
+        {
+          "name": "thrust",
+          "periodTicks": 0,
+          "refreshMs": 0.0,
+          "grid": "refined",
+          "max": 0.0,
+          "rms": 0.0,
+          "worstTick": 0,
+          "worstSide": "sample",
+          "uniformCount": 2001,
+          "leftCount": 0,
+          "maxNormalized": 0.0,
+          "rmsNormalized": 0.0
+        },
+        {
+          "name": "roll",
+          "periodTicks": 0,
+          "refreshMs": 0.0,
+          "grid": "refined",
+          "max": 0.0,
+          "rms": 0.0,
+          "worstTick": 0,
+          "worstSide": "sample",
+          "uniformCount": 2001,
+          "leftCount": 0,
+          "maxNormalized": 0.0,
+          "rmsNormalized": 0.0
+        },
+        {
+          "name": "pitch",
+          "periodTicks": 0,
+          "refreshMs": 0.0,
+          "grid": "refined",
+          "max": 0.0,
+          "rms": 0.0,
+          "worstTick": 0,
+          "worstSide": "sample",
+          "uniformCount": 2001,
+          "leftCount": 0,
+          "maxNormalized": 0.0,
+          "rmsNormalized": 0.0
+        },
+        {
+          "name": "thrust",
+          "periodTicks": 20,
+          "refreshMs": 10.0,
+          "grid": "refined",
+          "max": 0.0018491037897929996,
+          "rms": 0.000650160946842219,
+          "worstTick": 1300,
+          "worstSide": "refresh-left",
+          "uniformCount": 2001,
+          "leftCount": 100,
+          "maxNormalized": 0.0069811748774606395,
+          "rmsNormalized": 0.0024546416991060483
+        },
+        {
+          "name": "roll",
+          "periodTicks": 20,
+          "refreshMs": 10.0,
+          "grid": "refined",
+          "max": 4.336808689942018e-19,
+          "rms": 2.1101888875278313e-19,
+          "worstTick": 12,
+          "worstSide": "sample",
+          "uniformCount": 2001,
+          "leftCount": 100,
+          "maxNormalized": 2.0674473956002324e-17,
+          "rmsNormalized": 1.0059711718116611e-17
+        },
+        {
+          "name": "pitch",
+          "periodTicks": 20,
+          "refreshMs": 10.0,
+          "grid": "refined",
+          "max": 4.168285917395716e-05,
+          "rms": 9.057232744273193e-06,
+          "worstTick": 1000,
+          "worstSide": "refresh-left",
+          "uniformCount": 2001,
+          "leftCount": 100,
+          "maxNormalized": 0.0019871090657107393,
+          "rmsNormalized": 0.0004317772257725095
+        },
+        {
+          "name": "thrust",
+          "periodTicks": 10,
+          "refreshMs": 5.0,
+          "grid": "refined",
+          "max": 0.0009250206554986262,
+          "rms": 0.0003123574036450966,
+          "worstTick": 1300,
+          "worstSide": "refresh-left",
+          "uniformCount": 2001,
+          "leftCount": 200,
+          "maxNormalized": 0.0034923572148549335,
+          "rmsNormalized": 0.0011792857010801397
+        },
+        {
+          "name": "roll",
+          "periodTicks": 10,
+          "refreshMs": 5.0,
+          "grid": "refined",
+          "max": 4.336808689942018e-19,
+          "rms": 2.016811265018967e-19,
+          "worstTick": 21,
+          "worstSide": "sample",
+          "uniformCount": 2001,
+          "leftCount": 200,
+          "maxNormalized": 2.0674473956002324e-17,
+          "rmsNormalized": 9.61456106410915e-18
+        },
+        {
+          "name": "pitch",
+          "periodTicks": 10,
+          "refreshMs": 5.0,
+          "grid": "refined",
+          "max": 2.0892924046621124e-05,
+          "rms": 4.352269159380311e-06,
+          "worstTick": 1000,
+          "worstSide": "refresh-left",
+          "uniformCount": 2001,
+          "leftCount": 200,
+          "maxNormalized": 0.0009960093814338354,
+          "rmsNormalized": 0.00020748177246970837
+        },
+        {
+          "name": "thrust",
+          "periodTicks": 5,
+          "refreshMs": 2.5,
+          "grid": "refined",
+          "max": 0.00046252585477707386,
+          "rms": 0.0001433229150625242,
+          "worstTick": 710,
+          "worstSide": "refresh-left",
+          "uniformCount": 2001,
+          "leftCount": 400,
+          "maxNormalized": 0.001746237228742681,
+          "rmsNormalized": 0.0005411066374543141
+        },
+        {
+          "name": "roll",
+          "periodTicks": 5,
+          "refreshMs": 2.5,
+          "grid": "refined",
+          "max": 4.336808689942018e-19,
+          "rms": 1.9359630685066764e-19,
+          "worstTick": 21,
+          "worstSide": "sample",
+          "uniformCount": 2001,
+          "leftCount": 400,
+          "maxNormalized": 2.0674473956002324e-17,
+          "rmsNormalized": 9.229140804031813e-18
+        },
+        {
+          "name": "pitch",
+          "periodTicks": 5,
+          "refreshMs": 2.5,
+          "grid": "refined",
+          "max": 1.045291081538946e-05,
+          "rms": 1.9971036256577895e-06,
+          "worstTick": 1005,
+          "worstSide": "refresh-left",
+          "uniformCount": 2001,
+          "leftCount": 400,
+          "maxNormalized": 0.0004983121181212948,
+          "rmsNormalized": 9.520610625932824e-05
+        }
+      ],
+      "sampling": [
+        {
+          "periodTicks": 0,
+          "refreshMs": 0.0,
+          "observable": "thrust",
+          "maxDifference": 0.0,
+          "maxThreshold": 1e-09,
+          "maxStable": true,
+          "rmsDifference": 0.0,
+          "rmsThreshold": 1e-09,
+          "rmsStable": true
+        },
+        {
+          "periodTicks": 0,
+          "refreshMs": 0.0,
+          "observable": "roll",
+          "maxDifference": 0.0,
+          "maxThreshold": 1e-11,
+          "maxStable": true,
+          "rmsDifference": 0.0,
+          "rmsThreshold": 1e-11,
+          "rmsStable": true
+        },
+        {
+          "periodTicks": 0,
+          "refreshMs": 0.0,
+          "observable": "pitch",
+          "maxDifference": 0.0,
+          "maxThreshold": 1e-11,
+          "maxStable": true,
+          "rmsDifference": 0.0,
+          "rmsThreshold": 1e-11,
+          "rmsStable": true
+        },
+        {
+          "periodTicks": 20,
+          "refreshMs": 10.0,
+          "observable": "thrust",
+          "maxDifference": 0.0,
+          "maxThreshold": 9.245518948964999e-05,
+          "maxStable": true,
+          "rmsDifference": 2.565763384098816e-05,
+          "rmsThreshold": 3.250804734211095e-05,
+          "rmsStable": true
+        },
+        {
+          "periodTicks": 20,
+          "refreshMs": 10.0,
+          "observable": "roll",
+          "maxDifference": 0.0,
+          "maxThreshold": 1e-11,
+          "maxStable": true,
+          "rmsDifference": 9.796239277902232e-21,
+          "rmsThreshold": 1e-11,
+          "rmsStable": true
+        },
+        {
+          "periodTicks": 20,
+          "refreshMs": 10.0,
+          "observable": "pitch",
+          "maxDifference": 0.0,
+          "maxThreshold": 2.084142958697858e-06,
+          "maxStable": true,
+          "rmsDifference": 3.573154039196364e-07,
+          "rmsThreshold": 4.5286163721365967e-07,
+          "rmsStable": true
+        },
+        {
+          "periodTicks": 10,
+          "refreshMs": 5.0,
+          "observable": "thrust",
+          "maxDifference": 0.0,
+          "maxThreshold": 4.6251032774931316e-05,
+          "maxStable": true,
+          "rmsDifference": 2.5789073817773203e-05,
+          "rmsThreshold": 1.5617870182254832e-05,
+          "rmsStable": false
+        },
+        {
+          "periodTicks": 10,
+          "refreshMs": 5.0,
+          "observable": "roll",
+          "maxDifference": 0.0,
+          "maxThreshold": 1e-11,
+          "maxStable": true,
+          "rmsDifference": 1.4989352409164903e-20,
+          "rmsThreshold": 1e-11,
+          "rmsStable": true
+        },
+        {
+          "periodTicks": 10,
+          "refreshMs": 5.0,
+          "observable": "pitch",
+          "maxDifference": 0.0,
+          "maxThreshold": 1.0446462023310563e-06,
+          "maxStable": true,
+          "rmsDifference": 3.5930613168518655e-07,
+          "rmsThreshold": 2.1761345796901559e-07,
+          "rmsStable": false
+        },
+        {
+          "periodTicks": 5,
+          "refreshMs": 2.5,
+          "observable": "thrust",
+          "maxDifference": 0.0,
+          "maxThreshold": 2.3126292738853695e-05,
+          "maxStable": true,
+          "rmsDifference": 3.5884908914572645e-08,
+          "rmsThreshold": 7.16614575312621e-06,
+          "rmsStable": true
+        },
+        {
+          "periodTicks": 5,
+          "refreshMs": 2.5,
+          "observable": "roll",
+          "maxDifference": 0.0,
+          "maxThreshold": 1e-11,
+          "maxStable": true,
+          "rmsDifference": 1.2307066339044408e-23,
+          "rmsThreshold": 1e-11,
+          "rmsStable": true
+        },
+        {
+          "periodTicks": 5,
+          "refreshMs": 2.5,
+          "observable": "pitch",
+          "maxDifference": 0.0,
+          "maxThreshold": 5.22645540769473e-07,
+          "maxStable": true,
+          "rmsDifference": 4.965312270031892e-10,
+          "rmsThreshold": 9.985518128288948e-08,
+          "rmsStable": true
+        }
+      ]
+    },
+    {
+      "id": "offset-approach",
+      "metrics": [
+        {
+          "name": "thrust",
+          "periodTicks": 0,
+          "refreshMs": 0.0,
+          "grid": "primary",
+          "max": 0.0,
+          "rms": 0.0,
+          "worstTick": 0,
+          "worstSide": "sample",
+          "uniformCount": 1001,
+          "leftCount": 0,
+          "maxNormalized": 0.0,
+          "rmsNormalized": 0.0
+        },
+        {
+          "name": "roll",
+          "periodTicks": 0,
+          "refreshMs": 0.0,
+          "grid": "primary",
+          "max": 0,
+          "rms": 0.0,
+          "worstTick": 0,
+          "worstSide": "sample",
+          "uniformCount": 1001,
+          "leftCount": 0,
+          "maxNormalized": 0.0,
+          "rmsNormalized": 0.0
+        },
+        {
+          "name": "pitch",
+          "periodTicks": 0,
+          "refreshMs": 0.0,
+          "grid": "primary",
+          "max": 0.0,
+          "rms": 0.0,
+          "worstTick": 0,
+          "worstSide": "sample",
+          "uniformCount": 1001,
+          "leftCount": 0,
+          "maxNormalized": 0.0,
+          "rmsNormalized": 0.0
+        },
+        {
+          "name": "thrust",
+          "periodTicks": 20,
+          "refreshMs": 10.0,
+          "grid": "primary",
+          "max": 1.8951017456303454e-05,
+          "rms": 7.270352599293582e-06,
+          "worstTick": 20,
+          "worstSide": "refresh-left",
+          "uniformCount": 1001,
+          "leftCount": 100,
+          "maxNormalized": 7.15483726216765e-05,
+          "rmsNormalized": 2.7448758256101417e-05
+        },
+        {
+          "name": "roll",
+          "periodTicks": 20,
+          "refreshMs": 10.0,
+          "grid": "primary",
+          "max": 4.336808689942018e-19,
+          "rms": 2.0618046734512016e-19,
+          "worstTick": 26,
+          "worstSide": "sample",
+          "uniformCount": 1001,
+          "leftCount": 100,
+          "maxNormalized": 2.0674473956002324e-17,
+          "rmsNormalized": 9.82905405130994e-18
+        },
+        {
+          "name": "pitch",
+          "periodTicks": 20,
+          "refreshMs": 10.0,
+          "grid": "primary",
+          "max": 1.217334459525151e-06,
+          "rms": 5.723664033815317e-07,
+          "worstTick": 2000,
+          "worstSide": "refresh-left",
+          "uniformCount": 1001,
+          "leftCount": 100,
+          "maxNormalized": 5.803287942483206e-05,
+          "rmsNormalized": 2.7285903405069056e-05
+        },
+        {
+          "name": "thrust",
+          "periodTicks": 10,
+          "refreshMs": 5.0,
+          "grid": "primary",
+          "max": 9.4858086406302e-06,
+          "rms": 3.3339978985547307e-06,
+          "worstTick": 10,
+          "worstSide": "refresh-left",
+          "uniformCount": 1001,
+          "leftCount": 200,
+          "maxNormalized": 3.5813072981576624e-05,
+          "rmsNormalized": 1.258729904690879e-05
+        },
+        {
+          "name": "roll",
+          "periodTicks": 10,
+          "refreshMs": 5.0,
+          "grid": "primary",
+          "max": 4.336808689942018e-19,
+          "rms": 1.9792755297634614e-19,
+          "worstTick": 26,
+          "worstSide": "sample",
+          "uniformCount": 1001,
+          "leftCount": 200,
+          "maxNormalized": 2.0674473956002324e-17,
+          "rmsNormalized": 9.435620364520733e-18
+        },
+        {
+          "name": "pitch",
+          "periodTicks": 10,
+          "refreshMs": 5.0,
+          "grid": "primary",
+          "max": 6.089741515983953e-07,
+          "rms": 2.6266594099608115e-07,
+          "worstTick": 2000,
+          "worstSide": "refresh-left",
+          "uniformCount": 1001,
+          "leftCount": 200,
+          "maxNormalized": 2.9031071318176967e-05,
+          "rmsNormalized": 1.2521834704968108e-05
+        },
+        {
+          "name": "thrust",
+          "periodTicks": 5,
+          "refreshMs": 2.5,
+          "grid": "primary",
+          "max": 4.74547195117303e-06,
+          "rms": 1.6669997670815978e-06,
+          "worstTick": 5,
+          "worstSide": "refresh-left",
+          "uniformCount": 1001,
+          "leftCount": 400,
+          "maxNormalized": 1.791623041934923e-05,
+          "rmsNormalized": 6.293652611022758e-06
+        },
+        {
+          "name": "roll",
+          "periodTicks": 5,
+          "refreshMs": 2.5,
+          "grid": "primary",
+          "max": 4.336808689942018e-19,
+          "rms": 1.8919110586527264e-19,
+          "worstTick": 6,
+          "worstSide": "sample",
+          "uniformCount": 1001,
+          "leftCount": 400,
+          "maxNormalized": 2.0674473956002324e-17,
+          "rmsNormalized": 9.019135660722799e-18
+        },
+        {
+          "name": "pitch",
+          "periodTicks": 5,
+          "refreshMs": 2.5,
+          "grid": "primary",
+          "max": 3.0456357908185613e-07,
+          "rms": 1.3133297466801374e-07,
+          "worstTick": 2000,
+          "worstSide": "refresh-left",
+          "uniformCount": 1001,
+          "leftCount": 400,
+          "maxNormalized": 1.4519182730559587e-05,
+          "rmsNormalized": 6.2609175512753944e-06
+        },
+        {
+          "name": "thrust",
+          "periodTicks": 0,
+          "refreshMs": 0.0,
+          "grid": "refined",
+          "max": 0.0,
+          "rms": 0.0,
+          "worstTick": 0,
+          "worstSide": "sample",
+          "uniformCount": 2001,
+          "leftCount": 0,
+          "maxNormalized": 0.0,
+          "rmsNormalized": 0.0
+        },
+        {
+          "name": "roll",
+          "periodTicks": 0,
+          "refreshMs": 0.0,
+          "grid": "refined",
+          "max": 0,
+          "rms": 0.0,
+          "worstTick": 0,
+          "worstSide": "sample",
+          "uniformCount": 2001,
+          "leftCount": 0,
+          "maxNormalized": 0.0,
+          "rmsNormalized": 0.0
+        },
+        {
+          "name": "pitch",
+          "periodTicks": 0,
+          "refreshMs": 0.0,
+          "grid": "refined",
+          "max": 0.0,
+          "rms": 0.0,
+          "worstTick": 0,
+          "worstSide": "sample",
+          "uniformCount": 2001,
+          "leftCount": 0,
+          "maxNormalized": 0.0,
+          "rmsNormalized": 0.0
+        },
+        {
+          "name": "thrust",
+          "periodTicks": 20,
+          "refreshMs": 10.0,
+          "grid": "refined",
+          "max": 1.8951017456303454e-05,
+          "rms": 7.568410855753393e-06,
+          "worstTick": 20,
+          "worstSide": "refresh-left",
+          "uniformCount": 2001,
+          "leftCount": 100,
+          "maxNormalized": 7.15483726216765e-05,
+          "rmsNormalized": 2.857405842773207e-05
+        },
+        {
+          "name": "roll",
+          "periodTicks": 20,
+          "refreshMs": 10.0,
+          "grid": "refined",
+          "max": 4.336808689942018e-19,
+          "rms": 2.091734516094069e-19,
+          "worstTick": 21,
+          "worstSide": "sample",
+          "uniformCount": 2001,
+          "leftCount": 100,
+          "maxNormalized": 2.0674473956002324e-17,
+          "rmsNormalized": 9.971735870238754e-18
+        },
+        {
+          "name": "pitch",
+          "periodTicks": 20,
+          "refreshMs": 10.0,
+          "grid": "refined",
+          "max": 1.217334459525151e-06,
+          "rms": 5.959039505174663e-07,
+          "worstTick": 2000,
+          "worstSide": "refresh-left",
+          "uniformCount": 2001,
+          "leftCount": 100,
+          "maxNormalized": 5.803287942483206e-05,
+          "rmsNormalized": 2.840798749971369e-05
+        },
+        {
+          "name": "thrust",
+          "periodTicks": 10,
+          "refreshMs": 5.0,
+          "grid": "refined",
+          "max": 9.4858086406302e-06,
+          "rms": 3.6336821149094624e-06,
+          "worstTick": 10,
+          "worstSide": "refresh-left",
+          "uniformCount": 2001,
+          "leftCount": 200,
+          "maxNormalized": 3.5813072981576624e-05,
+          "rmsNormalized": 1.3718737927698352e-05
+        },
+        {
+          "name": "roll",
+          "periodTicks": 10,
+          "refreshMs": 5.0,
+          "grid": "refined",
+          "max": 4.336808689942018e-19,
+          "rms": 2.0782102287173347e-19,
+          "worstTick": 21,
+          "worstSide": "sample",
+          "uniformCount": 2001,
+          "leftCount": 200,
+          "maxNormalized": 2.0674473956002324e-17,
+          "rmsNormalized": 9.907262764059952e-18
+        },
+        {
+          "name": "pitch",
+          "periodTicks": 10,
+          "refreshMs": 5.0,
+          "grid": "refined",
+          "max": 6.089741515983953e-07,
+          "rms": 2.8631407381425423e-07,
+          "worstTick": 2000,
+          "worstSide": "refresh-left",
+          "uniformCount": 2001,
+          "leftCount": 200,
+          "maxNormalized": 2.9031071318176967e-05,
+          "rmsNormalized": 1.364919065034632e-05
+        },
+        {
+          "name": "thrust",
+          "periodTicks": 5,
+          "refreshMs": 2.5,
+          "grid": "refined",
+          "max": 4.74547195117303e-06,
+          "rms": 1.6667792517782108e-06,
+          "worstTick": 5,
+          "worstSide": "refresh-left",
+          "uniformCount": 2001,
+          "leftCount": 400,
+          "maxNormalized": 1.791623041934923e-05,
+          "rmsNormalized": 6.292820069385777e-06
+        },
+        {
+          "name": "roll",
+          "periodTicks": 5,
+          "refreshMs": 2.5,
+          "grid": "refined",
+          "max": 4.336808689942018e-19,
+          "rms": 1.9133765683252578e-19,
+          "worstTick": 6,
+          "worstSide": "sample",
+          "uniformCount": 2001,
+          "leftCount": 400,
+          "maxNormalized": 2.0674473956002324e-17,
+          "rmsNormalized": 9.121466234286329e-18
+        },
+        {
+          "name": "pitch",
+          "periodTicks": 5,
+          "refreshMs": 2.5,
+          "grid": "refined",
+          "max": 3.0456357908185613e-07,
+          "rms": 1.3138145881093047e-07,
+          "worstTick": 2000,
+          "worstSide": "refresh-left",
+          "uniformCount": 2001,
+          "leftCount": 400,
+          "maxNormalized": 1.4519182730559587e-05,
+          "rmsNormalized": 6.263228891760245e-06
+        }
+      ],
+      "sampling": [
+        {
+          "periodTicks": 0,
+          "refreshMs": 0.0,
+          "observable": "thrust",
+          "maxDifference": 0.0,
+          "maxThreshold": 1e-09,
+          "maxStable": true,
+          "rmsDifference": 0.0,
+          "rmsThreshold": 1e-09,
+          "rmsStable": true
+        },
+        {
+          "periodTicks": 0,
+          "refreshMs": 0.0,
+          "observable": "roll",
+          "maxDifference": 0,
+          "maxThreshold": 1e-11,
+          "maxStable": true,
+          "rmsDifference": 0.0,
+          "rmsThreshold": 1e-11,
+          "rmsStable": true
+        },
+        {
+          "periodTicks": 0,
+          "refreshMs": 0.0,
+          "observable": "pitch",
+          "maxDifference": 0.0,
+          "maxThreshold": 1e-11,
+          "maxStable": true,
+          "rmsDifference": 0.0,
+          "rmsThreshold": 1e-11,
+          "rmsStable": true
+        },
+        {
+          "periodTicks": 20,
+          "refreshMs": 10.0,
+          "observable": "thrust",
+          "maxDifference": 0.0,
+          "maxThreshold": 9.475508728151728e-07,
+          "maxStable": true,
+          "rmsDifference": 2.980582564598109e-07,
+          "rmsThreshold": 3.784205427876697e-07,
+          "rmsStable": true
+        },
+        {
+          "periodTicks": 20,
+          "refreshMs": 10.0,
+          "observable": "roll",
+          "maxDifference": 0.0,
+          "maxThreshold": 1e-11,
+          "maxStable": true,
+          "rmsDifference": 2.9929842642867472e-21,
+          "rmsThreshold": 1e-11,
+          "rmsStable": true
+        },
+        {
+          "periodTicks": 20,
+          "refreshMs": 10.0,
+          "observable": "pitch",
+          "maxDifference": 0.0,
+          "maxThreshold": 6.086672297625756e-08,
+          "maxStable": true,
+          "rmsDifference": 2.3537547135934607e-08,
+          "rmsThreshold": 2.9795197525873318e-08,
+          "rmsStable": true
+        },
+        {
+          "periodTicks": 10,
+          "refreshMs": 5.0,
+          "observable": "thrust",
+          "maxDifference": 0.0,
+          "maxThreshold": 4.7429043203151e-07,
+          "maxStable": true,
+          "rmsDifference": 2.9968421635473167e-07,
+          "rmsThreshold": 1.8168410574547313e-07,
+          "rmsStable": false
+        },
+        {
+          "periodTicks": 10,
+          "refreshMs": 5.0,
+          "observable": "roll",
+          "maxDifference": 0.0,
+          "maxThreshold": 1e-11,
+          "maxStable": true,
+          "rmsDifference": 9.893469895387326e-21,
+          "rmsThreshold": 1e-11,
+          "rmsStable": true
+        },
+        {
+          "periodTicks": 10,
+          "refreshMs": 5.0,
+          "observable": "pitch",
+          "maxDifference": 0.0,
+          "maxThreshold": 3.0448707579919763e-08,
+          "maxStable": true,
+          "rmsDifference": 2.3648132818173082e-08,
+          "rmsThreshold": 1.4315703690712713e-08,
+          "rmsStable": false
+        },
+        {
+          "periodTicks": 5,
+          "refreshMs": 2.5,
+          "observable": "thrust",
+          "maxDifference": 0.0,
+          "maxThreshold": 2.3727359755865153e-07,
+          "maxStable": true,
+          "rmsDifference": 2.2051530338708471e-10,
+          "rmsThreshold": 8.333896258891055e-08,
+          "rmsStable": true
+        },
+        {
+          "periodTicks": 5,
+          "refreshMs": 2.5,
+          "observable": "roll",
+          "maxDifference": 0.0,
+          "maxThreshold": 1e-11,
+          "maxStable": true,
+          "rmsDifference": 2.14655096725314e-21,
+          "rmsThreshold": 1e-11,
+          "rmsStable": true
+        },
+        {
+          "periodTicks": 5,
+          "refreshMs": 2.5,
+          "observable": "pitch",
+          "maxDifference": 0.0,
+          "maxThreshold": 1.5228178954092806e-08,
+          "maxStable": true,
+          "rmsDifference": 4.8484142916729477e-11,
+          "rmsThreshold": 6.569072940546523e-09,
+          "rmsStable": true
+        }
+      ]
+    }
+  ],
+  "timing": [
+    {
+      "path": "lateral-pass",
+      "periodTicks": 0,
+      "fieldCalls": 1001,
+      "checksum": 242.49020433382915,
+      "totalMs": {
+        "median": 14.045124999999985,
+        "minimum": 13.781624999999991,
+        "maximum": 14.614000000000033
+      },
+      "fieldMs": {
+        "median": 13.556963000000621,
+        "minimum": 13.295465000000178,
+        "maximum": 14.10317099999952
+      },
+      "receiverMs": {
+        "median": 0.19806500000044025,
+        "minimum": 0.1967549999997118,
+        "maximum": 0.20273700000046802
+      }
+    },
+    {
+      "path": "lateral-pass",
+      "periodTicks": 20,
+      "fieldCalls": 101,
+      "checksum": 242.49075219966755,
+      "totalMs": {
+        "median": 1.842999999999961,
+        "minimum": 1.798750000000041,
+        "maximum": 1.8937080000000037
+      },
+      "fieldMs": {
+        "median": 1.3722470000000726,
+        "minimum": 1.3566199999996797,
+        "maximum": 1.412793000000022
+      },
+      "receiverMs": {
+        "median": 0.19387399999993704,
+        "minimum": 0.1900819999997907,
+        "maximum": 0.22945100000018215
+      }
+    },
+    {
+      "path": "lateral-pass",
+      "periodTicks": 10,
+      "fieldCalls": 201,
+      "checksum": 242.49036799420617,
+      "totalMs": {
+        "median": 3.209333000000015,
+        "minimum": 3.1431249999999977,
+        "maximum": 3.24675000000002
+      },
+      "fieldMs": {
+        "median": 2.7326570000002164,
+        "minimum": 2.692122000000097,
+        "maximum": 2.792963000000668
+      },
+      "receiverMs": {
+        "median": 0.19780299999951012,
+        "minimum": 0.1931479999996668,
+        "maximum": 0.22437900000022637
+      }
+    },
+    {
+      "path": "lateral-pass",
+      "periodTicks": 5,
+      "fieldCalls": 401,
+      "checksum": 242.49027462903024,
+      "totalMs": {
+        "median": 5.8697500000000105,
+        "minimum": 5.792833999999971,
+        "maximum": 6.079417000000035
+      },
+      "fieldMs": {
+        "median": 5.327036999999677,
+        "minimum": 5.285288000000435,
+        "maximum": 5.556847999999434
+      },
+      "receiverMs": {
+        "median": 0.22765399999894953,
+        "minimum": 0.19953399999997146,
+        "maximum": 0.24090299999986087
+      }
+    },
+    {
+      "path": "offset-approach",
+      "periodTicks": 0,
+      "fieldCalls": 1001,
+      "checksum": 228.5444616708005,
+      "totalMs": {
+        "median": 13.926333,
+        "minimum": 13.672208000000012,
+        "maximum": 14.281458999999984
+      },
+      "fieldMs": {
+        "median": 13.477152999998964,
+        "minimum": 13.143258999999716,
+        "maximum": 13.740296000000171
+      },
+      "receiverMs": {
+        "median": 0.22522300000161977,
+        "minimum": 0.18896900000078176,
+        "maximum": 0.2727139999982455
+      }
+    },
+    {
+      "path": "offset-approach",
+      "periodTicks": 20,
+      "fieldCalls": 101,
+      "checksum": 228.5507864507771,
+      "totalMs": {
+        "median": 1.8009170000000267,
+        "minimum": 1.7037499999999568,
+        "maximum": 2.0220829999999523
+      },
+      "fieldMs": {
+        "median": 1.3702110000003245,
+        "minimum": 1.2802930000004267,
+        "maximum": 1.452166999999804
+      },
+      "receiverMs": {
+        "median": 0.2016580000005206,
+        "minimum": 0.18501200000019935,
+        "maximum": 0.2575910000006161
+      }
+    },
+    {
+      "path": "offset-approach",
+      "periodTicks": 10,
+      "fieldCalls": 201,
+      "checksum": 228.5472703291467,
+      "totalMs": {
+        "median": 3.2624999999999886,
+        "minimum": 3.151875000000018,
+        "maximum": 3.5922919999999863
+      },
+      "fieldMs": {
+        "median": 2.7953439999994316,
+        "minimum": 2.680792999999966,
+        "maximum": 3.06217200000043
+      },
+      "receiverMs": {
+        "median": 0.2002050000003237,
+        "minimum": 0.19632699999971237,
+        "maximum": 0.23838200000000143
+      }
+    },
+    {
+      "path": "offset-approach",
+      "periodTicks": 5,
+      "fieldCalls": 401,
+      "checksum": 228.5458656467261,
+      "totalMs": {
+        "median": 6.0933749999999804,
+        "minimum": 6.022375000000011,
+        "maximum": 6.27049999999997
+      },
+      "fieldMs": {
+        "median": 5.598246000000358,
+        "minimum": 5.494455000000187,
+        "maximum": 5.7062949999996135
+      },
+      "receiverMs": {
+        "median": 0.20458199999950466,
+        "minimum": 0.1944889999988959,
+        "maximum": 0.22354899999936606
+      }
+    }
+  ],
+  "sourceHashChecks": [
+    {
+      "path": "outputs/milestone-26-source/grid.cjs",
+      "sha256": "f06010781770b64432935e5d825bcd1405b154b735ac4d0d654f145600cea302",
+      "matches": true
+    },
+    {
+      "path": "outputs/milestone-28-source/aero.cjs",
+      "sha256": "710b0a8f0df62208e3385ac9b8288240b379fe9248a1a645251a77c533f24a62",
+      "matches": true
+    },
+    {
+      "path": "outputs/step02c-source/physics.cjs",
+      "sha256": "0c46c9beb4e831c621658f6600c074f97c95966de07f5000eb64aa476a443fa1",
+      "matches": true
+    },
+    {
+      "path": "outputs/step03a-source/wake.cjs",
+      "sha256": "fb6d5a1d632a0023818041ef6bc39316ff8ed950f318da1a6649e2515b9fd8bc",
+      "matches": true
+    },
+    {
+      "path": "research/m31-airflow-cadence-2026-10-15/.gitignore",
+      "sha256": "e138ca829d938927384c82d7f176eaa6c61a82bd28ba28320ddd736a505c3b4f",
+      "matches": true
+    },
+    {
+      "path": "research/m31-airflow-cadence-2026-10-15/PREFLIGHT-REVIEW.md",
+      "sha256": "7ab6f1c4f9a2b2a7cdf0f8770f90201831c14e8794891aa25ef2139cbf0759a0",
+      "matches": true
+    },
+    {
+      "path": "research/m31-airflow-cadence-2026-10-15/PROTOCOL.md",
+      "sha256": "d07d3535a9c443ece425c421cfc11743a2700a28be30ad0a8b9ccfc366a17c2d",
+      "matches": true
+    },
+    {
+      "path": "research/m31-airflow-cadence-2026-10-15/RESTART.md",
+      "sha256": "c70377559ebc8be07723137fafd98814a8a1fd0c07750f36346e7f60ee48ea47",
+      "matches": true
+    },
+    {
+      "path": "research/m31-airflow-cadence-2026-10-15/config.json",
+      "sha256": "bede4684f3563d253ba10f82a0c80b75c50bb9bba2b9fbb67243a102c8dd5a30",
+      "matches": true
+    },
+    {
+      "path": "research/m31-airflow-cadence-2026-10-15/literature-and-prior-work.md",
+      "sha256": "ad21431affbbbe2b06e8c977b9375186490b59c5988c0a52e932569d957f862e",
+      "matches": true
+    },
+    {
+      "path": "research/m31-airflow-cadence-2026-10-15/source/experiment.cjs",
+      "sha256": "e47c55c94923f625c20969bbeb7e390604467ef8c69c054baaeb54de29849b70",
+      "matches": true
+    },
+    {
+      "path": "research/m31-airflow-cadence-2026-10-15/source/independent.cjs",
+      "sha256": "e0445be31ec647c8ddfb79533d4866dc8133e99ba5f25061bf393aab6bc58baf",
+      "matches": true
+    },
+    {
+      "path": "research/m31-airflow-cadence-2026-10-15/source/run-step.py",
+      "sha256": "335871744b689d697cfa72fab6aa990967cab807f4362019cc234092b7f9226c",
+      "matches": true
+    }
+  ],
+  "samplingFailures": [
+    {
+      "path": "lateral-pass",
+      "refreshMs": 5.0,
+      "observable": "thrust",
+      "quantity": "rms",
+      "difference": 2.5789073817773203e-05,
+      "threshold": 1.5617870182254832e-05,
+      "relativeDifference": 0.08256271026978759
+    },
+    {
+      "path": "lateral-pass",
+      "refreshMs": 5.0,
+      "observable": "pitch",
+      "quantity": "rms",
+      "difference": 3.5930613168518655e-07,
+      "threshold": 2.1761345796901559e-07,
+      "relativeDifference": 0.08255604571486236
+    },
+    {
+      "path": "offset-approach",
+      "refreshMs": 5.0,
+      "observable": "thrust",
+      "quantity": "rms",
+      "difference": 2.9968421635473167e-07,
+      "threshold": 1.8168410574547313e-07,
+      "relativeDifference": 0.08247397732594412
+    },
+    {
+      "path": "offset-approach",
+      "refreshMs": 5.0,
+      "observable": "pitch",
+      "quantity": "rms",
+      "difference": 2.3648132818173082e-08,
+      "threshold": 1.4315703690712713e-08,
+      "relativeDifference": 0.082595076459688
+    }
+  ],
+  "rawHashes": [
+    {
+      "path": "research/m31-airflow-cadence-2026-10-15/raw/accuracy.json",
+      "bytes": 15194,
+      "sha256": "278972a4155d2754d1ebfea78cf74cdd38e31bcc940a48e0f669fbb27fb768eb"
+    },
+    {
+      "path": "research/m31-airflow-cadence-2026-10-15/raw/fixtures.json",
+      "bytes": 678,
+      "sha256": "567aaf597144f5b69f9b8c60b8d1d1345cc2c2a5e2d928c4e6cea3f789e35a52"
+    },
+    {
+      "path": "research/m31-airflow-cadence-2026-10-15/raw/lateral-pass.json",
+      "bytes": 1565061,
+      "sha256": "7d4851ecf1d23a3830b39c8b7c819f47c766682e281131f71b112dc8546428eb"
+    },
+    {
+      "path": "research/m31-airflow-cadence-2026-10-15/raw/offset-approach.json",
+      "bytes": 1573095,
+      "sha256": "f76f6762ec1a66584b9bff25bfa3a9110e0980b891e2de491b24525d1f91b80a"
+    },
+    {
+      "path": "research/m31-airflow-cadence-2026-10-15/raw/result.json",
+      "bytes": 19734,
+      "sha256": "28948dc95dededf1b8eae1ba39745dc7ea20d2e9f1c48dde2bcec770ec5973ac"
+    },
+    {
+      "path": "research/m31-airflow-cadence-2026-10-15/raw/started.json",
+      "bytes": 762,
+      "sha256": "1e40f3e2182a058021fd183d274794e3dbef62d3e1513e1d2b144ab7b0138c22"
+    },
+    {
+      "path": "research/m31-airflow-cadence-2026-10-15/raw/timing-pass-0-path-0.json",
+      "bytes": 781,
+      "sha256": "9cb34ca4bebd248aad5c4d72dfe485cb95632a38701f1e32ec4abaffea7a09f5"
+    },
+    {
+      "path": "research/m31-airflow-cadence-2026-10-15/raw/timing-pass-0-path-1.json",
+      "bytes": 793,
+      "sha256": "29b4cb7fee1950229dc0afd45c68a8d81da8aa36d3504efa89ad2e1a65a09050"
+    },
+    {
+      "path": "research/m31-airflow-cadence-2026-10-15/raw/timing-pass-1-path-0.json",
+      "bytes": 790,
+      "sha256": "64179698a6e99f3aa67cd82d2d50994bfdfd3961535c5da71fef6804dd9f9eab"
+    },
+    {
+      "path": "research/m31-airflow-cadence-2026-10-15/raw/timing-pass-1-path-1.json",
+      "bytes": 797,
+      "sha256": "05557da2131125d8e344b2aa9cb0bcb90d89152c849e5f21978a34ce30af98a8"
+    },
+    {
+      "path": "research/m31-airflow-cadence-2026-10-15/raw/timing-pass-2-path-0.json",
+      "bytes": 787,
+      "sha256": "7e0506853b67a259640a9e60c9e7b53a399aece58a2088d1a8f3fa4ab0b1510b"
+    },
+    {
+      "path": "research/m31-airflow-cadence-2026-10-15/raw/timing-pass-2-path-1.json",
+      "bytes": 794,
+      "sha256": "a75538f674e29b8a9acaab2bb264bb5b2e6c248fee294169030bf54299c755c1"
+    },
+    {
+      "path": "research/m31-airflow-cadence-2026-10-15/raw/timing-pass-3-path-0.json",
+      "bytes": 786,
+      "sha256": "3becd3297541497064cc12fad95af01f0a5dc1ffff8b296d213ebc5ef5521c05"
+    },
+    {
+      "path": "research/m31-airflow-cadence-2026-10-15/raw/timing-pass-3-path-1.json",
+      "bytes": 796,
+      "sha256": "968d92582cece0d9b0287b3d73e1aae3b5de51e206cd5a29613b058874af226a"
+    },
+    {
+      "path": "research/m31-airflow-cadence-2026-10-15/raw/timing-pass-4-path-0.json",
+      "bytes": 788,
+      "sha256": "10a96421bbdc18afad1f15c83d7579f01c80692ace5b313a9ef9a2bc0d71cf7f"
+    },
+    {
+      "path": "research/m31-airflow-cadence-2026-10-15/raw/timing-pass-4-path-1.json",
+      "bytes": 797,
+      "sha256": "c42e2a61b0e434f3db70edbebff7c202e84b79e59a18f6ae6de2469d1b3a8d3f"
+    },
+    {
+      "path": "research/m31-airflow-cadence-2026-10-15/raw/timing-pass-5-path-0.json",
+      "bytes": 786,
+      "sha256": "9363c27a6cac69f623badbf668924006bf366e34eca2b1744a01ab6979119a70"
+    },
+    {
+      "path": "research/m31-airflow-cadence-2026-10-15/raw/timing-pass-5-path-1.json",
+      "bytes": 787,
+      "sha256": "b9f6a53487296713e18eaa049c0a17436eb74c445fbb682223476f56d482c783"
+    }
+  ],
+  "accounting": {
+    "rawBytes": 3184006,
+    "fieldCalls": 29924,
+    "timingFieldCalls": 20448,
+    "expectedProduction": 25889,
+    "expectedOracle": 4035,
+    "recordedPilotSupervisorWallSeconds": 0.5130210829999999,
+    "recordedExperimentElapsedSeconds": 0.46494658299999997
+  },
+  "largestRMSAbsoluteDifferenceFromPublished": 2.168404344971009e-19,
+  "largestMaximumAbsoluteDifferenceFromPublished": 0.0,
+  "semanticFindings": [
+    "All held fields correspond to the exact saved floor-refresh pose; 2.5 ms refresh events are not rounded to the 1 ms primary query grid.",
+    "Maximum error includes old-hold refresh-left values at every event, including the terminal event; uniform RMS deliberately excludes event-only records.",
+    "Timing uses one warmup plus five technical repeats with rotated variant order; field calls include time zero and terminal refresh. Checksum uses receiver thrust+roll+pitch only, not all state components.",
+    "Timed totals exclude file persistence, independent oracle, controller, ODE integration, contact checks, rendering, and GPU operations. Saved wall measurements are not independently validated here.",
+    "These are prescribed moving positions evaluated through a quasi-static field and receiver map. They are not physically actuated trajectories, physical unsteady-wake validation, or operational cadence acceptance.",
+    "Five-millisecond RMS sampling screens fail thrust and pitch in both fixtures; maximum screens pass. The failure follows the stated criterion and must remain unresolved without another authorized protocol.",
+    "The production/oracle tolerance result is only read as a saved outcome; this verifier does not reevaluate either field implementation."
+  ],
+  "checkCount": 25671,
+  "failedChecks": [],
+  "passed": true,
+  "verifierWallSecondsBeforeOutput": 0.096799584
+}

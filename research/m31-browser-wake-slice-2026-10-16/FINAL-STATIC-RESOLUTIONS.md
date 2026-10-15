@@ -1,0 +1,7 @@
+# Final prospective disposition
+
+Independent static review found no unresolved code blocker. Its publication condition P1 is resolved: HOST-CONTRACT.md now describes the pinned bundled Node executable without a private absolute path. The final document SHA256 is c425182b01865edb60948cd5fccb48976158237ec60e7d28679d1faa843e966d. `path-disclosures.json` preserves old/new identities. All scientific-source/config/schema/control/constant/selection hashes in the final static review remain identical. The 13 reserved versus12 successful scalar-helper distinction is clarified in preparation disclosure.
+
+The coordinator reviewed the code/protocol, accepted the exact fixed scope/budgets and ran only syntax and static layout checks. Source publication remains the next gate. No wake/reference computation, shader compilation, browser/device launch or science has run. Final review and supplementary inventory copies disclose path transformations in final-review-disclosures.json. The original notes remain private.
+
+The initial checklist remains a historical prospective checklist; its open boxes do not supersede the final source review. The source freeze will bind adopted documents and exact external input/reference dependencies. A verified source commit is required before the sole supervised attempt. No older budget is reopened, no retry is authorized, and no static review predicts experimental success.

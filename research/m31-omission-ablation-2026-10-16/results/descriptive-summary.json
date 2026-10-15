@@ -1,0 +1,72 @@
+{
+  "qualification": {
+    "cases": 26,
+    "valid": 22,
+    "expectedRejections": [
+      "farStart--1e-12",
+      "nearRadius--1e-12",
+      "centerInferenceInvalid",
+      "tiltRejected"
+    ]
+  },
+  "byCase": {
+    "fresh1000": {
+      "B": {
+        "median": 0.1471927505,
+        "minimum": 0.145614583,
+        "maximum": 0.154433333
+      },
+      "M": {
+        "median": 0.10631556249999999,
+        "minimum": 0.104252041,
+        "maximum": 0.113914625
+      },
+      "Z": {
+        "median": 0.0851892915,
+        "minimum": 0.084001291,
+        "maximum": 0.096280458
+      },
+      "C": {
+        "median": 0.084883354,
+        "minimum": 0.08387775,
+        "maximum": 0.087385041
+      },
+      "selectedRealizedPositiveSources": 2416,
+      "selectedRealizedZeroSources": 2515
+    },
+    "fresh5000": {
+      "B": {
+        "median": 1.7309875835,
+        "minimum": 1.703813209,
+        "maximum": 1.742296375
+      },
+      "M": {
+        "median": 1.322117896,
+        "minimum": 1.306173833,
+        "maximum": 1.398923916
+      },
+      "Z": {
+        "median": 1.0873589585,
+        "minimum": 1.066173542,
+        "maximum": 1.206751208
+      },
+      "C": {
+        "median": 1.0800915624999998,
+        "minimum": 1.065919958,
+        "maximum": 1.199513458
+      },
+      "selectedRealizedPositiveSources": 12987,
+      "selectedRealizedZeroSources": 13476
+    }
+  },
+  "maxErrors": {
+    "inflow": 0.02652329975489387,
+    "rotor": 9.985207554676079e-05,
+    "thrust": 0.000135753501473046,
+    "roll": 2.809915842182792e-06,
+    "pitch": 3.7467002556263265e-06,
+    "worldForce": 0.00013575350147305277,
+    "worldMoment": 3.958897543306962e-06,
+    "usedCapacity": 0.999998394967478
+  }
+}

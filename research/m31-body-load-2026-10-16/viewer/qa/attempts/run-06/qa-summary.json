@@ -1,0 +1,174 @@
+{
+  "scope": "Saved original pair-input viewer QA only; no scientific generator, profile/root evaluator, WebGPU compute or scientific rerun.",
+  "browserAvailability": "absent",
+  "fallbackReason": "Browser plugin not available",
+  "url": "http://127.0.0.1:8876/research/m31-body-load-2026-10-16/viewer/",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "flow": "Checkpoint → fixed original pair input selection → saved R/Q diagnostics and no observed GPU/body-load result",
+  "checks": [
+    {
+      "name": "Page identity, meaningful screen and absence of framework overlay",
+      "pass": true
+    },
+    {
+      "name": "Actual control-only availability and separate review",
+      "pass": true
+    },
+    {
+      "name": "All 15 saved pair selections expose saved R/Q validity and no GPU values",
+      "pass": true
+    },
+    {
+      "name": "Orbit and reset change the rendered view",
+      "pass": true
+    },
+    {
+      "name": "Four unexecuted main families stay empty",
+      "pass": true
+    },
+    {
+      "name": "Keyboard selection, disclosures and browser/offline receipt distinction",
+      "pass": true
+    },
+    {
+      "name": "Historical M31 link navigates to the separate airflow-off replay",
+      "pass": true
+    },
+    {
+      "name": "Mobile viewport keeps content and controls visible",
+      "pass": true
+    },
+    {
+      "name": "Mobile empty family and return preserve responsive controls",
+      "pass": true
+    },
+    {
+      "name": "Delayed selection cannot overwrite a newer empty family",
+      "pass": true
+    },
+    {
+      "name": "Corrupt selected pair evidence is rejected (sha256)",
+      "pass": true
+    },
+    {
+      "name": "Corrupt selected pair evidence is rejected (length)",
+      "pass": true
+    },
+    {
+      "name": "No policy-array downloads or relevant runtime errors",
+      "pass": true
+    }
+  ],
+  "consoleRecords": [
+    {
+      "scope": "historical-link",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (File not found)",
+      "resource": "/favicon.ico"
+    },
+    {
+      "scope": "historical-link",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (File not found)",
+      "resource": "/outputs/milestone-31-source/heldout-2001-5000-wide-wall-priority-0.0025.json"
+    }
+  ],
+  "pageErrors": [],
+  "screenshots": [
+    {
+      "name": "desktop-controls.png",
+      "bytes": 153925,
+      "sha256": "6c4c51ef5d1893533e3a26e776ff93e2679df4972848002e0d64742e3a6d0acc"
+    },
+    {
+      "name": "pair-14-original-input.png",
+      "bytes": 155382,
+      "sha256": "342ba2a8a59c440106c594771ceb2b4c0d4fe7096c5380108850ec634a01fb9c"
+    },
+    {
+      "name": "family-4-not-executed.png",
+      "bytes": 105207,
+      "sha256": "8a75b5f4b853163d45f3fa9b3f283af41a147c1f728ec59289c39f8d2b026d4b"
+    },
+    {
+      "name": "historical-link-target.png",
+      "bytes": 104652,
+      "sha256": "f7f96a8d59863cbe5a8812e49eeca8c689376b29ceb6eded933757c2959fadfe"
+    },
+    {
+      "name": "mobile-controls.png",
+      "bytes": 271732,
+      "sha256": "c04b4584581177be5803aa76e64608d47424d2ee4645f438a887571fd6133cbc"
+    },
+    {
+      "name": "corrupt-sha256-rejected.png",
+      "bytes": 123781,
+      "sha256": "a8b882dc97c4e7857619e7ac2377fee4c0edc9f640753a847782341fdc00dc6f"
+    },
+    {
+      "name": "corrupt-length-rejected.png",
+      "bytes": 123600,
+      "sha256": "e8638da691f08f1ef2204d34136440e859959014ced62c9bfc150f5a9a3ea241"
+    },
+    {
+      "name": "desktop-recovered.png",
+      "bytes": 309260,
+      "sha256": "c17b16f8c9bdfa4217ab9673b8cf2af77c5166c3c482a3686a0488ed3e46aded"
+    }
+  ],
+  "remainingUntested": [
+    "Main-family scene, receiver picking and force/lift colors: no main evidence exists.",
+    "Scientific correctness, flight physics and timing comparison.",
+    "Historical mission correctness; only link navigation/source identity is checked."
+  ],
+  "artifactSHA256": "975bd4ef3273150decf7f5f7e404af5e119a3929c3ce10145b9ea76fd2da3738",
+  "finalReviewSHA256": "eca5f4a3189afb3a9fcc065f51368e5b10e54ac4ac6974bf42708fce24208a4a",
+  "resultSHA256": "7f876389a2013060cd308a51c2fea84efc6cc3e7d5cc2e2aa894c61102a4e71c",
+  "playwrightVersion": "1.62.1",
+  "browserVersion": "155.0.8059.80",
+  "httpFailures": [
+    {
+      "scope": "historical-link",
+      "path": "/outputs/milestone-31-source/heldout-2001-5000-wide-wall-priority-0.0025.json",
+      "status": 404
+    }
+  ],
+  "historicalReplayNotice": "Could not load replay: Replay HTTP404",
+  "requestPaths": [
+    "/research/m31-body-load-2026-10-16/viewer/",
+    "/research/m31-body-load-2026-10-16/viewer/style.css",
+    "/research/m31-body-load-2026-10-16/viewer/app.js",
+    "/research/m31-body-load-2026-10-16/viewer/adapter.js",
+    "/research/m31-body-load-2026-10-16/viewer/evidence.js",
+    "/research/m31-body-load-2026-10-16/viewer/viewer-artifact.json",
+    "/research/m31-body-load-2026-10-16/viewer/evidence/campaign-result.json",
+    "/research/m31-body-load-2026-10-16/viewer/evidence/review-1.json",
+    "/research/m31-body-load-2026-10-16/viewer/evidence/external-1.json",
+    "/research/m31-body-load-2026-10-16/viewer/evidence/external-2.json",
+    "/research/m31-body-load-2026-10-16/viewer/evidence/external-3.json",
+    "/research/m31-body-load-2026-10-16/viewer/evidence/external-4.json",
+    "/research/m31-body-load-2026-10-16/viewer/evidence/controls-pairs-original.f64",
+    "/research/m31-body-load-2026-10-16/viewer/evidence/controls-reference-pairs.json",
+    "/research/m31-body-load-2026-10-16/viewer/evidence/control-metadata.json",
+    "/research/m31-body-load-2026-10-16/viewer/evidence/controls-reference-status.json",
+    "/research/m31-body-load-2026-10-16/viewer/scene.js",
+    "/outputs/step02b-source/vendor/three.module.js",
+    "/outputs/step02b-source/vendor/OrbitControls.js",
+    "/outputs/step02b-source/vendor/three.core.js",
+    "/outputs/milestone-31-lab.html",
+    "/outputs/milestone-31-source/app.js",
+    "/outputs/milestone-31-source/index.json",
+    "/outputs/milestone-31-protocol.json",
+    "/outputs/milestone-31-source/heldout-2001-5000-wide-wall-priority-0.0025.json"
+  ],
+  "passed": true
+}

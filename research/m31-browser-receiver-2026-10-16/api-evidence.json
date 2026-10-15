@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-16",
+  "status": "documentation-only; no API invocation or GPU execution",
+  "primary": {
+    "title": "WebGPU",
+    "publisher": "W3C GPU for the Web Working Group",
+    "version": "Candidate Recommendation Draft 15 September 2026",
+    "url": "https://www.w3.org/TR/2026/CRD-webgpu-20260915/",
+    "retrievedBytes": 4521455,
+    "sha256": "7c67681430753937fd878fcbab9c2f0e93d757bdc24de6f3789ea0ff6c6f2438",
+    "latestUrlByteIdenticalAtRetrieval": true,
+    "anchorsRead": [
+      "gpuadapterinfo",
+      "dom-gpu-requestadapter",
+      "dom-gpuadapter-requestdevice",
+      "dom-gpudevice-createshadermodule",
+      "dom-gpushadermodule-getcompilationinfo",
+      "dom-gpudevice-createcomputepipelineasync",
+      "dom-gpudevice-pusherrorscope",
+      "dom-gpudevice-poperrorscope",
+      "dom-gpudevice-lost",
+      "dom-gpuqueue-writebuffer",
+      "dom-gpucomputepassencoder-dispatchworkgroups",
+      "dom-gpucommandencoder-copybuffertobuffer",
+      "dom-gpuqueue-submit",
+      "dom-gpubuffer-mapasync",
+      "dom-gpubuffer-getmappedrange",
+      "dom-gpubuffer-unmap"
+    ]
+  },
+  "implementationDocumentation": [
+    {"url":"https://developer.chrome.com/blog/new-in-webgpu-136","published":"2025-04-23","scope":"GPUAdapterInfo.isFallbackAdapter introduction; historical Chrome implementation note"},
+    {"url":"https://developer.chrome.com/blog/new-in-webgpu-140","published":"2025-08-27","scope":"adapter consumption and obsolete GPUAdapter.isFallbackAdapter removal"}
+  ],
+  "mdnUsageDocumentationRead": [
+    "https://developer.mozilla.org/en-US/docs/Web/API/GPUAdapter/isFallbackAdapter",
+    "https://developer.mozilla.org/en-US/docs/Web/API/GPUAdapterInfo/isFallbackAdapter",
+    "https://developer.mozilla.org/en-US/docs/Web/API/GPUShaderModule/getCompilationInfo",
+    "https://developer.mozilla.org/en-US/docs/Web/API/GPUDevice/createComputePipelineAsync",
+    "https://developer.mozilla.org/en-US/docs/Web/API/GPUDevice/pushErrorScope",
+    "https://developer.mozilla.org/en-US/docs/Web/API/GPUDevice/popErrorScope",
+    "https://developer.mozilla.org/en-US/docs/Web/API/GPUBuffer/mapAsync",
+    "https://developer.mozilla.org/en-US/docs/Web/API/GPUDevice/lost"
+  ],
+  "limits": [
+    "No actual host support or device capability verified",
+    "No timing claim",
+    "API success is not numerical qualification",
+    "General documentation retry advice does not authorize a study retry"
+  ]
+}

@@ -1,0 +1,15 @@
+# One attempt and process supervision
+
+This checkpoint reuses the reviewed receiver launch supervisor and spawn registry, with campaign-specific names. The final freeze pins these exact bytes. The configured scientific ceiling is60seconds external wall time, with a53second cooperative guard; the supervisor reserves1.5seconds before its subprocess timeout for cleanup. This is a termination mechanism, not a runtime prediction or a hard guarantee of kernel preemption. Wall overruns fail qualification. One permanent `results/sole-launch.lock` is acquired before any launch. Never remove it, retry, enlarge a cap or add rows after exposure.
+
+The Node driver loads the process registry before Playwright. It records every child spawn synchronously, including the detached Chrome process's executable and unique profile argument. GPU work requires confirmed browser registration. The registry, PIDs, profile and per-group cleanup details remain private; public evidence retains only aggregate counts and later provenance digests.
+
+The supervisor checks both Node's group and all registered detached groups even after normal completion. For a surviving group it bounds a `/bin/ps` fingerprint check to0.15seconds. It requires the exact executable plus unique browser profile, or the exact Node invocation, before signaling. An unidentified group is not signaled and qualification fails. After any owned signal it polls disappearance. Registry/read/audit/cleanup failures remain terminal and cannot suppress the final ledger.
+
+The spawn-to-append and identity-check-to-signal intervals are not atomic. This is ordinary best-effort process supervision, not an OS containment sandbox. Earlier receiver normal closure exercised already-absent groups; active-identity, kill and failure paths have not been failure-injected. No new failure-injection process is implicitly authorized here.
+
+Browser startup and GPU initialization each have15second stage limits. Each complete GPU dispatch/readback/error-scope stage shares one10second parent deadline; the browser also has a10second map timeout that destroys its device. Failure evidence has a1second read limit, GPU shutdown1second, browser close3seconds. The external supervisor remains authoritative if JavaScript is blocked. All initialization, references, transfers, persistence and cleanup are charged to the same scientific attempt.
+
+The64MiB raw evidence ceiling reserves4MiB for terminal/failure records. Array/buffer capacities and operation reservations are declared in the protocol/schema. These are not a hard cap on all host/browser/OS memory. The supervisor records child maximum resident set size in platform units, whose cumulative/process scope must not be presented as total simultaneous footprint. No timing comparison or performance inference is permitted.
+
+The final single saved-only review has its own60second ceiling and externally supervised invocation. It may inspect retained bytes and declared saved-operand arithmetic, but must not regenerate geometry, wake terms, roots or GPU work. Its exact checker and arguments must be preserved before launch; all previous reviews remain closed.

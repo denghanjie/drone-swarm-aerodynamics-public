@@ -1,0 +1,274 @@
+{
+  "scope": "Read-only audit of existing artifact hashes and saved-time-key binary position comparisons; raw paired timestamp equality and maximum discrepancy are explicitly checked per comparison; no simulator imports, solver runs or frozen-source edits in this script. Hashes validate consistency with protocols, not physical accuracy or independent replication.",
+  "sourceRoot": "PUBLIC_REPOSITORY",
+  "sourceRootRedaction": "Metadata-only replacement of the original machine-specific absolute path and normalization of relative artifact path spelling; input bytes, hash values and numerical comparison values are unchanged.",
+  "reproductionScript": "reproduce-evidence-audit.py",
+  "runtime": {
+    "pythonVersion": "3.9.6",
+    "byteOrder": "little"
+  },
+  "timeMatching": "Match saved timestamp keys rounded to 9 decimal places; reject duplicate/colliding keys; no interpolation. Compare every raw paired timestamp explicitly and report its maximum discrepancy. Exact-common-time language is valid only for records with rawPairedTimestampsExactlyEqual=true.",
+  "checkpointScopeNote": "The wider checkpoint executed no new full-swarm trajectory campaign. A separate evidence audit performed six single-drone RK4 contact-replay consistency steps; this script performs none.",
+  "sourceHashChecks": [
+    {
+      "file": "outputs/milestone-31-source/sim.cjs",
+      "expected": "2b6fbc51334fd0669b23eb7173c6af83e62414a725b032796df5cb38ac7f1c9e",
+      "actual": "2b6fbc51334fd0669b23eb7173c6af83e62414a725b032796df5cb38ac7f1c9e",
+      "match": true
+    },
+    {
+      "file": "outputs/milestone-31-source/wall-filter.cjs",
+      "expected": "8273cc40a9530748fe43e9ef0a4d9a995ee152f9968ce2368e61e2f205502512",
+      "actual": "8273cc40a9530748fe43e9ef0a4d9a995ee152f9968ce2368e61e2f205502512",
+      "match": true
+    },
+    {
+      "file": "outputs/milestone-31-source/grid.cjs",
+      "expected": "f06010781770b64432935e5d825bcd1405b154b735ac4d0d654f145600cea302",
+      "actual": "f06010781770b64432935e5d825bcd1405b154b735ac4d0d654f145600cea302",
+      "match": true
+    },
+    {
+      "file": "outputs/milestone-31-source/geometry.cjs",
+      "expected": "e209e492fc523ab3c0c7df62745fb0d3dd7204f35e53309938a19d7895ed3d4f",
+      "actual": "e209e492fc523ab3c0c7df62745fb0d3dd7204f35e53309938a19d7895ed3d4f",
+      "match": true
+    },
+    {
+      "file": "outputs/milestone-31-source/factory.cjs",
+      "expected": "fe46384aac6150c45a2ba38e4494da16969aeab4a8875a8596f6ad8e53bb2c40",
+      "actual": "fe46384aac6150c45a2ba38e4494da16969aeab4a8875a8596f6ad8e53bb2c40",
+      "match": true
+    },
+    {
+      "file": "outputs/milestone-31-source/factory-wide.cjs",
+      "expected": "8ea0d8784accfc039fee9ca2a2c0a86dc8e502b6d1003e4de54a8df8a999cc22",
+      "actual": "8ea0d8784accfc039fee9ca2a2c0a86dc8e502b6d1003e4de54a8df8a999cc22",
+      "match": true
+    },
+    {
+      "file": "outputs/milestone-31-source/study.cjs",
+      "expected": "b78d712bc66ba12c9faa6823520967cba8742edb5853e5d6b58e6a709cb9f5e6",
+      "actual": "b78d712bc66ba12c9faa6823520967cba8742edb5853e5d6b58e6a709cb9f5e6",
+      "match": true
+    },
+    {
+      "file": "outputs/milestone-31-source/check.cjs",
+      "expected": "3817ceeeb7c2cf68988b7b4691a2d44df330399942a430a117d55665edd3f892",
+      "actual": "3817ceeeb7c2cf68988b7b4691a2d44df330399942a430a117d55665edd3f892",
+      "match": true
+    },
+    {
+      "file": "outputs/milestone-31-source/method.md",
+      "expected": "3f7d64515695483f026c9e5c9e16fe96360f41a8a8b9d26cc54babfc56af1236",
+      "actual": "3f7d64515695483f026c9e5c9e16fe96360f41a8a8b9d26cc54babfc56af1236",
+      "match": true
+    },
+    {
+      "file": "outputs/step02c-source/physics.cjs",
+      "expected": "0c46c9beb4e831c621658f6600c074f97c95966de07f5000eb64aa476a443fa1",
+      "actual": "0c46c9beb4e831c621658f6600c074f97c95966de07f5000eb64aa476a443fa1",
+      "match": true
+    },
+    {
+      "file": "outputs/milestone-32-source/diagnostic.cjs",
+      "expected": "fcf80a1fcb22d3efe54c5b363b261978167323e928fb847f98e8424101927615",
+      "actual": "fcf80a1fcb22d3efe54c5b363b261978167323e928fb847f98e8424101927615",
+      "match": true
+    },
+    {
+      "file": "outputs/milestone-31-source/checkpoint-heldout-2002-1000-narrow-wall-priority-0.0025-20.json",
+      "expected": "43c3d24444aa5c59bd9227ddc8dd756651eb5ecfb8a25b48f5929ce298eff090",
+      "actual": "43c3d24444aa5c59bd9227ddc8dd756651eb5ecfb8a25b48f5929ce298eff090",
+      "match": true
+    },
+    {
+      "file": "outputs/milestone-31-source/sim.cjs",
+      "expected": "2b6fbc51334fd0669b23eb7173c6af83e62414a725b032796df5cb38ac7f1c9e",
+      "actual": "2b6fbc51334fd0669b23eb7173c6af83e62414a725b032796df5cb38ac7f1c9e",
+      "match": true
+    },
+    {
+      "file": "outputs/milestone-31-source/grid.cjs",
+      "expected": "f06010781770b64432935e5d825bcd1405b154b735ac4d0d654f145600cea302",
+      "actual": "f06010781770b64432935e5d825bcd1405b154b735ac4d0d654f145600cea302",
+      "match": true
+    },
+    {
+      "file": "outputs/milestone-31-source/wall-filter.cjs",
+      "expected": "8273cc40a9530748fe43e9ef0a4d9a995ee152f9968ce2368e61e2f205502512",
+      "actual": "8273cc40a9530748fe43e9ef0a4d9a995ee152f9968ce2368e61e2f205502512",
+      "match": true
+    },
+    {
+      "file": "outputs/step02c-source/physics.cjs",
+      "expected": "0c46c9beb4e831c621658f6600c074f97c95966de07f5000eb64aa476a443fa1",
+      "actual": "0c46c9beb4e831c621658f6600c074f97c95966de07f5000eb64aa476a443fa1",
+      "match": true
+    },
+    {
+      "file": "outputs/milestone-28-source/aero.cjs",
+      "expected": "710b0a8f0df62208e3385ac9b8288240b379fe9248a1a645251a77c533f24a62",
+      "actual": "710b0a8f0df62208e3385ac9b8288240b379fe9248a1a645251a77c533f24a62",
+      "match": true
+    },
+    {
+      "file": "outputs/step03a-source/wake.cjs",
+      "expected": "fb6d5a1d632a0023818041ef6bc39316ff8ed950f318da1a6649e2515b9fd8bc",
+      "actual": "fb6d5a1d632a0023818041ef6bc39316ff8ed950f318da1a6649e2515b9fd8bc",
+      "match": true
+    },
+    {
+      "file": "outputs/milestone-32-source/checkpoint-probe.cjs",
+      "expected": "1ca2e0404252d4bc3994a60a795ded495c27e0999235ff9c6b80304563375cc9",
+      "actual": "1ca2e0404252d4bc3994a60a795ded495c27e0999235ff9c6b80304563375cc9",
+      "match": true
+    },
+    {
+      "file": "outputs/milestone-31-source/checkpoint-refinement-2002-1000-narrow-wall-priority-0.00125-20.json",
+      "expected": "aa261154db61b121373395e187b600215b957955453baa3c9c2890b3f1aa6f51",
+      "actual": "aa261154db61b121373395e187b600215b957955453baa3c9c2890b3f1aa6f51",
+      "match": true
+    }
+  ],
+  "m31RecomputedComparisons": [
+    {
+      "a": "outputs/milestone-31-source/heldout-2001-1000-wide-wall-priority-0.0025.f64",
+      "b": "outputs/milestone-31-source/refinement-2001-1000-wide-wall-priority-0.00125.f64",
+      "count": 1000,
+      "commonFrames": 181,
+      "firstTime": 0.0,
+      "lastTime": 180.0,
+      "maximumPositionDifference_m": 5.1666097554990404,
+      "maximumAt": {
+        "t": 180.0,
+        "drone": 434
+      },
+      "firstSavedTimeAtOrAbove1cm": 35.0,
+      "maxPairedTimestampDiscrepancy_s": 0.0,
+      "rawPairedTimestampsExactlyEqual": true,
+      "comparisonTimeMode": "raw timestamps exactly equal"
+    },
+    {
+      "a": "outputs/milestone-31-source/heldout-2002-1000-narrow-wall-priority-0.0025.f64",
+      "b": "outputs/milestone-31-source/refinement-2002-1000-narrow-wall-priority-0.00125.f64",
+      "count": 1000,
+      "commonFrames": 181,
+      "firstTime": 0.0,
+      "lastTime": 180.0,
+      "maximumPositionDifference_m": 32.7674603483237,
+      "maximumAt": {
+        "t": 180.0,
+        "drone": 390
+      },
+      "firstSavedTimeAtOrAbove1cm": 30.0,
+      "maxPairedTimestampDiscrepancy_s": 0.0,
+      "rawPairedTimestampsExactlyEqual": true,
+      "comparisonTimeMode": "raw timestamps exactly equal"
+    },
+    {
+      "a": "outputs/milestone-31-source/heldout-2001-5000-wide-wall-priority-0.0025.f64",
+      "b": "outputs/milestone-31-source/window-refinement-2001-5000-wide-wall-priority-0.00125.f64",
+      "count": 5000,
+      "commonFrames": 61,
+      "firstTime": 0.0,
+      "lastTime": 60.0,
+      "maximumPositionDifference_m": 7.981792207494607,
+      "maximumAt": {
+        "t": 60.0,
+        "drone": 3683
+      },
+      "firstSavedTimeAtOrAbove1cm": 31.0,
+      "maxPairedTimestampDiscrepancy_s": 0.0,
+      "rawPairedTimestampsExactlyEqual": true,
+      "comparisonTimeMode": "raw timestamps exactly equal"
+    }
+  ],
+  "m32RecomputedComparisons": [
+    {
+      "a": "outputs/milestone-32-source/closed-0.0025-positions.f64",
+      "b": "outputs/milestone-32-source/closed-0.00125-positions.f64",
+      "count": 1000,
+      "commonFrames": 101,
+      "firstTime": 20.0,
+      "lastTime": 30.0,
+      "maximumPositionDifference_m": 8.787744512652059e-07,
+      "maximumAt": {
+        "t": 30.0,
+        "drone": 417
+      },
+      "firstSavedTimeAtOrAbove1cm": null,
+      "maxPairedTimestampDiscrepancy_s": 0.0,
+      "rawPairedTimestampsExactlyEqual": true,
+      "comparisonTimeMode": "raw timestamps exactly equal"
+    },
+    {
+      "a": "outputs/milestone-32-source/closed-0.00125-positions.f64",
+      "b": "outputs/milestone-32-source/closed-0.000625-positions.f64",
+      "count": 1000,
+      "commonFrames": 101,
+      "firstTime": 20.0,
+      "lastTime": 30.0,
+      "maximumPositionDifference_m": 5.354372686921762e-08,
+      "maximumAt": {
+        "t": 30.0,
+        "drone": 417
+      },
+      "firstSavedTimeAtOrAbove1cm": null,
+      "maxPairedTimestampDiscrepancy_s": 0.0,
+      "rawPairedTimestampsExactlyEqual": true,
+      "comparisonTimeMode": "raw timestamps exactly equal"
+    },
+    {
+      "a": "outputs/milestone-32-source/closed-0.0025-positions.f64",
+      "b": "outputs/milestone-32-source/replayed-0.00125-positions.f64",
+      "count": 1000,
+      "commonFrames": 101,
+      "firstTime": 20.0,
+      "lastTime": 30.0,
+      "maximumPositionDifference_m": 9.84729242471643e-06,
+      "maximumAt": {
+        "t": 30.0,
+        "drone": 890
+      },
+      "firstSavedTimeAtOrAbove1cm": null,
+      "maxPairedTimestampDiscrepancy_s": 0.0,
+      "rawPairedTimestampsExactlyEqual": true,
+      "comparisonTimeMode": "raw timestamps exactly equal"
+    },
+    {
+      "a": "outputs/milestone-32-source/replayed-0.00125-positions.f64",
+      "b": "outputs/milestone-32-source/replayed-0.000625-positions.f64",
+      "count": 1000,
+      "commonFrames": 101,
+      "firstTime": 20.0,
+      "lastTime": 30.0,
+      "maximumPositionDifference_m": 6.020136976885824e-07,
+      "maximumAt": {
+        "t": 30.0,
+        "drone": 890
+      },
+      "firstSavedTimeAtOrAbove1cm": null,
+      "maxPairedTimestampDiscrepancy_s": 0.0,
+      "rawPairedTimestampsExactlyEqual": true,
+      "comparisonTimeMode": "raw timestamps exactly equal"
+    },
+    {
+      "a": "outputs/milestone-32-source/closed-0.0025-positions.f64",
+      "b": "outputs/milestone-32-source/fine-start-0.0025-positions.f64",
+      "count": 1000,
+      "commonFrames": 101,
+      "firstTime": 20.0,
+      "lastTime": 30.0,
+      "maximumPositionDifference_m": 0.04851036762706587,
+      "maximumAt": {
+        "t": 30.0,
+        "drone": 705
+      },
+      "firstSavedTimeAtOrAbove1cm": 29.7,
+      "maxPairedTimestampDiscrepancy_s": 0.0,
+      "rawPairedTimestampsExactlyEqual": true,
+      "comparisonTimeMode": "raw timestamps exactly equal"
+    }
+  ]
+}

@@ -1,0 +1,608 @@
+{
+  "scope": "Saved-only algebra/evidence audit; no scientific modules, root solving, Newton, field, geometry, browser or GPU execution",
+  "sourceCommitExpected": "4f2ead30ce48e4845ceefc105f9796ce468d907e",
+  "freezeSha256Expected": "ad64a3f092d08045e1233fa9e05a4db72cda3ae8b5db039dec329f7628f8e7ae",
+  "argv": [
+    "/tmp/m31-browser-receiver-saved-review.py",
+    "--repo",
+    "<REPOSITORY_ROOT>",
+    "--source-commit",
+    "4f2ead30ce48e4845ceefc105f9796ce468d907e",
+    "--freeze-sha256",
+    "ad64a3f092d08045e1233fa9e05a4db72cda3ae8b5db039dec329f7628f8e7ae",
+    "--output",
+    "/tmp/m31-browser-receiver-saved-review.json",
+    "--review-lock",
+    "/tmp/m31-browser-receiver-saved-review.lock",
+    "--private-cleanup",
+    "<private cleanup path retained in original invocation archive>",
+    "--private-cleanup-sha256",
+    "5a5944a557f8232f4c2eb5b2458885c0c716c0b9fb2fe6c85d766ab5fb52d75d"
+  ],
+  "originalArgvSha256": "ed57f581409a9771425a447885446a98d5b62069a4a079192be4f9615269843d",
+  "checks": 126636,
+  "integrityFailures": 0,
+  "failureExamples": [],
+  "scientificChecks": 942059,
+  "scientificFindings": 0,
+  "scientificExamples": [],
+  "batches": [
+    {
+      "id": "scalar32",
+      "expectedRecords": 32,
+      "retainedRecords": {
+        "original": 32,
+        "packed": 32,
+        "gpu": 32,
+        "Q": 32,
+        "A": 32
+      },
+      "complete": true,
+      "stopCounts": {
+        "0": 1,
+        "1": 1,
+        "2": 30
+      },
+      "exactZeroStepStops": 1,
+      "iterationCapRecords": 30,
+      "oldPrecisionFailures": 32,
+      "computedGateFailures": 0,
+      "allAvailableRowsHaveFullAttribution": true,
+      "metadataValid": true,
+      "maxima": {
+        "rootOriginalX": {
+          "value": 4.665934927317039e-08,
+          "index": 17
+        },
+        "rootRepresentedX": {
+          "value": 4.6304486467363404e-08,
+          "index": 7
+        },
+        "originalCubicAtReturnedX": {
+          "value": 1.38504403945916e-07,
+          "index": 7
+        },
+        "representedCubicAtReturnedX": {
+          "value": 1.3777479512810942e-07,
+          "index": 7
+        },
+        "rotorTotal": {
+          "value": 7.853246469791131e-09,
+          "index": 4
+        },
+        "inputRepresentation": {
+          "value": 3.008842466845074e-09,
+          "index": 0
+        },
+        "shaderVersusRepresented": {
+          "value": 4.844524351121926e-09,
+          "index": 4
+        },
+        "alphaDivision": {
+          "value": 5.99587512084554e-07,
+          "index": 29
+        },
+        "alphaForceEffect": {
+          "value": 5.71332071930275e-10,
+          "index": 17
+        },
+        "rootX": {
+          "value": 4.6138707965326375e-08,
+          "index": 7
+        },
+        "rootForceEffect": {
+          "value": 3.0551897558698953e-09,
+          "index": 7
+        },
+        "finalMultiplication": {
+          "value": 3.5467460079985358e-09,
+          "index": 8
+        },
+        "hostResidual": {
+          "value": 1.3728153680503397e-07,
+          "index": 7
+        },
+        "shaderResidual": {
+          "value": 1.9336502532496525e-07,
+          "index": 7
+        },
+        "representedPower": {
+          "value": 1.0991152354922207e-07,
+          "index": 16
+        },
+        "originalPower": {
+          "value": 1.7789841522120042e-07,
+          "index": 4
+        }
+      }
+    },
+    {
+      "id": "invalid5",
+      "expectedRecords": 5,
+      "complete": true,
+      "retainedPacked": 5,
+      "retainedGPU": 5
+    },
+    {
+      "id": "fresh1000",
+      "expectedRecords": 4000,
+      "retainedRecords": {
+        "original": 4000,
+        "packed": 4000,
+        "gpu": 4000,
+        "Q": 4000,
+        "A": 4000
+      },
+      "complete": true,
+      "stopCounts": {
+        "0": 400,
+        "1": 0,
+        "2": 3600
+      },
+      "exactZeroStepStops": 0,
+      "iterationCapRecords": 3600,
+      "oldPrecisionFailures": 3998,
+      "computedGateFailures": 0,
+      "allAvailableRowsHaveFullAttribution": true,
+      "metadataValid": true,
+      "maxima": {
+        "rootOriginalX": {
+          "value": 7.889381559156305e-08,
+          "index": 1681
+        },
+        "rootRepresentedX": {
+          "value": 5.966109295485467e-08,
+          "index": 2698
+        },
+        "originalCubicAtReturnedX": {
+          "value": 1.9976316045777764e-07,
+          "index": 2314
+        },
+        "representedCubicAtReturnedX": {
+          "value": 1.5305083556071963e-07,
+          "index": 3595
+        },
+        "rotorTotal": {
+          "value": 7.2060424849418325e-09,
+          "index": 3240
+        },
+        "inputRepresentation": {
+          "value": 3.008842466845074e-09,
+          "index": 3600
+        },
+        "shaderVersusRepresented": {
+          "value": 5.6249560148602384e-09,
+          "index": 2698
+        },
+        "alphaDivision": {
+          "value": 1.3220615979747663e-07,
+          "index": 700
+        },
+        "alphaForceEffect": {
+          "value": 1.4458748989754078e-09,
+          "index": 1271
+        },
+        "rootX": {
+          "value": 5.485779919212064e-08,
+          "index": 3595
+        },
+        "rootForceEffect": {
+          "value": 3.6325461529457724e-09,
+          "index": 3595
+        },
+        "finalMultiplication": {
+          "value": 3.6313130280518635e-09,
+          "index": 3344
+        },
+        "hostResidual": {
+          "value": 1.4543412696355063e-07,
+          "index": 3595
+        },
+        "shaderResidual": {
+          "value": 1.889728196147189e-07,
+          "index": 3243
+        },
+        "representedPower": {
+          "value": 1.676601713018755e-07,
+          "index": 2698
+        },
+        "originalPower": {
+          "value": 1.7791874473704894e-07,
+          "index": 237
+        }
+      }
+    },
+    {
+      "id": "fresh5000",
+      "expectedRecords": 20000,
+      "retainedRecords": {
+        "original": 20000,
+        "packed": 20000,
+        "gpu": 20000,
+        "Q": 20000,
+        "A": 20000
+      },
+      "complete": true,
+      "stopCounts": {
+        "0": 2000,
+        "1": 0,
+        "2": 18000
+      },
+      "exactZeroStepStops": 0,
+      "iterationCapRecords": 18000,
+      "oldPrecisionFailures": 19992,
+      "computedGateFailures": 0,
+      "allAvailableRowsHaveFullAttribution": true,
+      "metadataValid": true,
+      "maxima": {
+        "rootOriginalX": {
+          "value": 8.731752632051837e-08,
+          "index": 12360
+        },
+        "rootRepresentedX": {
+          "value": 6.133772334493415e-08,
+          "index": 17151
+        },
+        "originalCubicAtReturnedX": {
+          "value": 2.1797714566673676e-07,
+          "index": 4981
+        },
+        "representedCubicAtReturnedX": {
+          "value": 1.6752696962996083e-07,
+          "index": 17151
+        },
+        "rotorTotal": {
+          "value": 8.564453909953862e-09,
+          "index": 17540
+        },
+        "inputRepresentation": {
+          "value": 3.008842466845074e-09,
+          "index": 18000
+        },
+        "shaderVersusRepresented": {
+          "value": 5.96934372765201e-09,
+          "index": 17540
+        },
+        "alphaDivision": {
+          "value": 1.3339638105236418e-07,
+          "index": 3180
+        },
+        "alphaForceEffect": {
+          "value": 1.4637542740392195e-09,
+          "index": 5514
+        },
+        "rootX": {
+          "value": 5.754927290269052e-08,
+          "index": 17151
+        },
+        "rootForceEffect": {
+          "value": 3.810768805277213e-09,
+          "index": 17151
+        },
+        "finalMultiplication": {
+          "value": 3.67684727109463e-09,
+          "index": 17540
+        },
+        "hostResidual": {
+          "value": 1.5725065705129992e-07,
+          "index": 17620
+        },
+        "shaderResidual": {
+          "value": 2.0053684579579567e-07,
+          "index": 17620
+        },
+        "representedPower": {
+          "value": 1.623912597725763e-07,
+          "index": 2736
+        },
+        "originalPower": {
+          "value": 1.9937463768826547e-07,
+          "index": 17540
+        }
+      }
+    }
+  ],
+  "rawFiles": [
+    {
+      "name": "capability.json",
+      "bytes": 1343,
+      "sha256": "e59613feb78fa6031a2ab03cc2e88d161cd8df26bcdfe9db81fbfdd6deaed80d"
+    },
+    {
+      "name": "constants.json",
+      "bytes": 411,
+      "sha256": "981a19daf8771f99948554e161c27cb78ded2ede319c7f5f03d8f15e20781a36"
+    },
+    {
+      "name": "final-gpu-health.json",
+      "bytes": 41,
+      "sha256": "94976067d5451c7cdca1936fac2972cb5f5a9cb416caae89cd569e89aa39dc2e"
+    },
+    {
+      "name": "fresh1000-A.f64",
+      "bytes": 192000,
+      "sha256": "ce55cfafea952c6b3d55e36f40c0bba2e69bf1cceb3cf390f917c532c4654f2e"
+    },
+    {
+      "name": "fresh1000-Q.f64",
+      "bytes": 192000,
+      "sha256": "30d5f35ac9c990e03b4310e37415c38c2ccc92407c35c52c5aefcc4e469506ab"
+    },
+    {
+      "name": "fresh1000-api.json",
+      "bytes": 63,
+      "sha256": "7430de05c25cfef41e6ee3e3dcfd795d3d452042dc220409052833b60a322774"
+    },
+    {
+      "name": "fresh1000-gpu.u32",
+      "bytes": 128000,
+      "sha256": "9ff1d33946a817362ca648bf3be842ab12e90388d749f82951b1d046821d864b"
+    },
+    {
+      "name": "fresh1000-original.f64",
+      "bytes": 256000,
+      "sha256": "89264ead0ea63ad0bc87310e093e3586ebfc8dbd4a8594faf70e796fa7ad6456"
+    },
+    {
+      "name": "fresh1000-packed.u32",
+      "bytes": 64000,
+      "sha256": "e382665ee617931e8e087296a8b6a8d746f3ef9e0af98ba8b8c03d535f83670c"
+    },
+    {
+      "name": "fresh1000-readback.json",
+      "bytes": 178,
+      "sha256": "1e8fe307d8b751278330ada6e49bbdb61b415af0c00601b43991e4b497a3ea0b"
+    },
+    {
+      "name": "fresh1000-summary.json",
+      "bytes": 1779,
+      "sha256": "b4fc7c469088075f52ae44e602041bfbdcd044dba321b30db1f33fadb6e742e3"
+    },
+    {
+      "name": "fresh5000-A.f64",
+      "bytes": 960000,
+      "sha256": "1b72f2a1ea066bcaed8b813fdfb5ff5719a58580c1f1b17cc92ef31992c07a59"
+    },
+    {
+      "name": "fresh5000-Q.f64",
+      "bytes": 960000,
+      "sha256": "17a4eff508f060e4a889f7ccd0153a43595532513ec19af23b4114d83bc7e293"
+    },
+    {
+      "name": "fresh5000-api.json",
+      "bytes": 63,
+      "sha256": "7430de05c25cfef41e6ee3e3dcfd795d3d452042dc220409052833b60a322774"
+    },
+    {
+      "name": "fresh5000-gpu.u32",
+      "bytes": 640000,
+      "sha256": "368a0f98eda5a2ddb78776278d1a1aad7bf7e1ff95f8abdcc9984d0024d75b56"
+    },
+    {
+      "name": "fresh5000-original.f64",
+      "bytes": 1280000,
+      "sha256": "6b59f8e1d582573c6fc28e275f2648c51904a45a5f985f2af80d49ef3d377416"
+    },
+    {
+      "name": "fresh5000-packed.u32",
+      "bytes": 320000,
+      "sha256": "64dac9600bc90868616805c240f96c94f7a281d3cfb5227cf308d160ddb7ad07"
+    },
+    {
+      "name": "fresh5000-readback.json",
+      "bytes": 183,
+      "sha256": "16bbaf2c25f4b3bd8043470137d5147e59a69812971ae7785c7bb1ab41fbdc72"
+    },
+    {
+      "name": "fresh5000-summary.json",
+      "bytes": 1795,
+      "sha256": "879c7858cc6fcc4b1bc58e663e7fd3c1b1a5d7a2085665289759e191d8f7236a"
+    },
+    {
+      "name": "invalid5-api.json",
+      "bytes": 63,
+      "sha256": "7430de05c25cfef41e6ee3e3dcfd795d3d452042dc220409052833b60a322774"
+    },
+    {
+      "name": "invalid5-gpu.u32",
+      "bytes": 160,
+      "sha256": "25eb40f933361abd29a0a40467b5ea5b5b86220dc5b510726ff0f26f977f891b"
+    },
+    {
+      "name": "invalid5-packed.u32",
+      "bytes": 80,
+      "sha256": "56abc84e778fe8a380db1757410501d47e42007c7490ec7ac8f30f6109009531"
+    },
+    {
+      "name": "invalid5-readback.json",
+      "bytes": 162,
+      "sha256": "4c5237781249f998243c870ee90de31787f06d170e300f2d19489fddb134aceb"
+    },
+    {
+      "name": "invalid5-summary.json",
+      "bytes": 130,
+      "sha256": "19dce6d2ed39e903efc0ccc91ef5dae8acea70ea7f9964a1c8d1eea8ff0c947c"
+    },
+    {
+      "name": "process-registration-summary.json",
+      "bytes": 93,
+      "sha256": "5013a4a4aeaf62432864093874afa6f36d3fd77ab4967575ad5ec44d90dc14f0"
+    },
+    {
+      "name": "result.json",
+      "bytes": 17450,
+      "sha256": "299e89e2a07c82c0d86693d0e448873906d07a525d52cb907823f4d134a4b80a"
+    },
+    {
+      "name": "scalar32-A.f64",
+      "bytes": 1536,
+      "sha256": "90091bb19912dd6908de024650d69a46a0b1e122c2390a499fb3246a740bd524"
+    },
+    {
+      "name": "scalar32-Q.f64",
+      "bytes": 1536,
+      "sha256": "23f3b9e76258e8ff04686974641440156344b4950701d0835c5d3b3c4d55bb3b"
+    },
+    {
+      "name": "scalar32-api.json",
+      "bytes": 63,
+      "sha256": "7430de05c25cfef41e6ee3e3dcfd795d3d452042dc220409052833b60a322774"
+    },
+    {
+      "name": "scalar32-gpu.u32",
+      "bytes": 1024,
+      "sha256": "a34d818ada7a1abb76ac16a7631aa0b4498d428065767fcf8a3dd34b8860fb17"
+    },
+    {
+      "name": "scalar32-original.f64",
+      "bytes": 2048,
+      "sha256": "2a6608a8bd760740a0d89c27c297063cbaf6c31fdbb70ed29f00ac070ac79e18"
+    },
+    {
+      "name": "scalar32-packed.u32",
+      "bytes": 512,
+      "sha256": "e075677a84597057e42f16de74fe00b6281cdbd3bdf49fba932a5c1f3888d43f"
+    },
+    {
+      "name": "scalar32-readback.json",
+      "bytes": 167,
+      "sha256": "3d2b0f4272ad334145502080ec6f7a248aa8b69070ed9a484ca1f3c2c89f9cc3"
+    },
+    {
+      "name": "scalar32-summary.json",
+      "bytes": 1719,
+      "sha256": "9d70b585a292e1d6f345d82cdccdacb232cad9884fd08d4e0490dd1893d2da9a"
+    },
+    {
+      "name": "served-source-contract.json",
+      "bytes": 566,
+      "sha256": "70e52bbbaec9f4cafde4be056faaec96cdba13704f89b04189be481d9fe19365"
+    },
+    {
+      "name": "started.json",
+      "bytes": 3787,
+      "sha256": "efad2596dda9ffe017f254f703297a05405e2d609637df440d674b297ea61639"
+    }
+  ],
+  "terminal": true,
+  "fullSuiteQualified": true,
+  "checker": {
+    "path": "/private/tmp/m31-browser-receiver-saved-review.py",
+    "bytes": 30746,
+    "sha256": "2b2253cb703f98dbb24922b35e8b9cf1bca2c75d4721bbcdf86d7c5d7b5db26b",
+    "python": "3.9.6 (default, Apr 30 2025, 02:07:17) \n[Clang 17.0.0 (clang-1700.0.13.5)]",
+    "executable": "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "executableBytes": 102352,
+    "executableSha256": "5c5950c62eee5fd227a67e4bdfcde81c9add59799bba0949635f3d5ba9661c26",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "lock": "/tmp/m31-browser-receiver-saved-review.lock"
+  },
+  "freezePinsChecked": 51,
+  "recordedOutcome": "completed",
+  "driverOutcome": {
+    "status": "completed",
+    "pass": true,
+    "error": null,
+    "cleanupErrors": null,
+    "cleanupError": null,
+    "elapsedSeconds": 2.6887737499999997
+  },
+  "supervisor": {
+    "exitCode": 0,
+    "timeout": false,
+    "wallSeconds": 2.982534083,
+    "rawFiles": 36,
+    "rawBytes": 5028952,
+    "processGroupCleanup": {
+      "registeredProcesses": 1,
+      "registeredDetachedGroups": 1,
+      "registryComplete": true,
+      "groupsChecked": 2,
+      "killSignalsSent": 0,
+      "ownershipChecksPassed": 0,
+      "errors": [],
+      "confirmedAbsent": true
+    },
+    "launchError": null
+  },
+  "rawByteTotal": 5028952,
+  "operationCounts": {
+    "dispatches": 4,
+    "gpuValidRoots": 24032,
+    "gpuInvalidGuards": 5,
+    "gpuIterationReservation": 288384,
+    "hostBisectionRoots": 48096,
+    "hostIterationReservation": 4617216,
+    "actualHostIterations": 2121357,
+    "fieldEvaluations": 0,
+    "integrationSteps": 0
+  },
+  "capabilityEvidence": {
+    "browserVersion": "155.0.8059.40",
+    "supported": true,
+    "compiled": true,
+    "adapter": {
+      "vendor": "apple",
+      "architecture": "metal-3",
+      "device": "",
+      "description": "",
+      "isFallbackAdapter": false,
+      "features": [
+        "depth32float-stencil8",
+        "rg11b10ufloat-renderable",
+        "bgra8unorm-storage",
+        "texture-formats-tier1",
+        "texture-compression-bc",
+        "dual-source-blending",
+        "core-features-and-limits",
+        "float32-filterable",
+        "indirect-first-instance",
+        "texture-compression-astc-sliced-3d",
+        "float32-blendable",
+        "subgroup-size-control",
+        "texture-compression-astc",
+        "texture-compression-etc2",
+        "depth-clip-control",
+        "texture-compression-bc-sliced-3d",
+        "texture-formats-tier2",
+        "timestamp-query",
+        "clip-distances",
+        "shader-f16",
+        "primitive-index",
+        "texture-component-swizzle",
+        "subgroups"
+      ],
+      "limits": {
+        "maxStorageBufferBindingSize": 4294967292,
+        "maxComputeWorkgroupsPerDimension": 65535,
+        "maxBufferSize": 4294967292
+      },
+      "deviceLimits": {
+        "maxStorageBufferBindingSize": 134217728,
+        "maxComputeWorkgroupsPerDimension": 65535,
+        "maxBufferSize": 268435456
+      }
+    },
+    "messages": [],
+    "validation": null,
+    "loss": null,
+    "uncaptured": null
+  },
+  "newReferenceRowsRetained": 48096,
+  "retainedNewReferenceIterations": 2121357,
+  "privateCleanupEvidence": {
+    "supplied": true,
+    "bytes": 775,
+    "sha256": "5a5944a557f8232f4c2eb5b2458885c0c716c0b9fb2fe6c85d766ab5fb52d75d",
+    "groups": 2,
+    "registeredProcesses": 1,
+    "identityDataOmitted": true,
+    "liveOwnershipBranchExercised": false,
+    "killBranchExercised": false,
+    "limitation": "No failure-injection claim; branches not taken are not runtime-tested."
+  },
+  "reviewPass": true,
+  "status": "consistent-full-pass",
+  "elapsedSecondsBeforeOutput": 0.806667084,
+  "interpretation": "Final-step metadata establishes only the recorded threshold/cap outcome. It does not establish oscillation, a multi-step trajectory, physical adequacy, full-field/flock correctness, speed or old binary64 compatibility."
+}

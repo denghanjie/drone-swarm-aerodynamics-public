@@ -1,0 +1,621 @@
+{
+  "schema": "m31-body-viewer-final/1",
+  "state": "bound-and-browser-verified",
+  "scientificStatus": "failed",
+  "scientificQualified": false,
+  "finalReviewScope": "Preservation and consistency of terminal environment failure; no GPU numerical decision or physical validity.",
+  "priorPublicSourceLedger": {
+    "path": "PUBLIC-SOURCE-LEDGER.json",
+    "bytes": 6746,
+    "sha256": "0363a77a3fcdde94834e1ded7db9dcc78fbdbabd01c075fb0ae80ec0cf64ec90"
+  },
+  "bindingInvocations": 1,
+  "scientificInvocationsDuringViewerWork": 0,
+  "savedReviewInvocationsDuringViewerWork": 0,
+  "finalQACheckGroups": 14,
+  "finalQARun": "qa/final/qa-summary.json",
+  "fallbackReason": "Browser plugin not available",
+  "sourceTransformations": [
+    {
+      "path": "index.html",
+      "stageBytes": 5320,
+      "stageSHA256": "438d9fe8d9e0f2bac9e2e86fc3166ec1a504402ab8d48f5da46329a204447908",
+      "finalBytes": 5329,
+      "finalSHA256": "64c83892e07730a27041aa4b38c60496630709470556cd8b6ce8f276c946b0ac",
+      "changed": true,
+      "transformations": [
+        "Replace broken historical full replay link with the existing checksum-verified M31 restart saved-pose audit; state airflow-off historical scope."
+      ]
+    },
+    {
+      "path": "style.css",
+      "stageBytes": 5613,
+      "stageSHA256": "4c47484f28255688f736a289c77bcff5cb947268a75d5280884bbc64d005e395",
+      "finalBytes": 5652,
+      "finalSHA256": "688c2332c42010922bf5a8d4b728fe5ea746027cfcf618585fbf21c762ddafdd",
+      "changed": true,
+      "transformations": [
+        "Hide color gradient for unavailable geometry as well as fixed pair controls."
+      ]
+    },
+    {
+      "path": "app.js",
+      "stageBytes": 15498,
+      "stageSHA256": "2f4b63c473e6abca5d6368830edeb0be94ddae65d8b6091fa9d4aee2a9055d69",
+      "finalBytes": 16474,
+      "finalSHA256": "c58afc908337dba5916cbc2392d3207e4d9103eeafedead029d2e874cede514c",
+      "changed": true,
+      "transformations": [
+        "Display recorded qualified false separately from verified final evidence integrity using the externally observed final-review status pointer.",
+        "Clear readiness when selecting replacement evidence; preserve sequence/abort protection.",
+        "Clear inspector, records and interaction/color hints after failed verification; explicit unavailable labels.",
+        "Remove interactive scene hints and color gradient for missing family geometry."
+      ]
+    },
+    {
+      "path": "scene.js",
+      "stageBytes": 7112,
+      "stageSHA256": "7311f5d560f402e410777dff92014faa2d3f6e612769251cdd43a364955edbeb",
+      "finalBytes": 7359,
+      "finalSHA256": "c88c7ac9e535a3012001ed9a7f479a0101def7476388e3e1cb08d6c6de0c4344",
+      "changed": true,
+      "transformations": [
+        "Include displayed axis-guide endpoints and marker margins in camera-fit bounds.",
+        "Refit saved geometry after viewport resizing."
+      ]
+    },
+    {
+      "path": "evidence.js",
+      "stageBytes": 5688,
+      "stageSHA256": "5d52cdf63854f563fd46e152414b788716851c2c7feac886a8e6e1ae0b803fdd",
+      "finalBytes": 5688,
+      "finalSHA256": "5d52cdf63854f563fd46e152414b788716851c2c7feac886a8e6e1ae0b803fdd",
+      "changed": false,
+      "transformations": [
+        "Byte-identical to public source stage"
+      ]
+    },
+    {
+      "path": "adapter.js",
+      "stageBytes": 4322,
+      "stageSHA256": "e71a172fa2b2dec67cbb1bd9ed7b80672b85d2aafb4966c8b73c1afbfd22aaeb",
+      "finalBytes": 4322,
+      "finalSHA256": "e71a172fa2b2dec67cbb1bd9ed7b80672b85d2aafb4966c8b73c1afbfd22aaeb",
+      "changed": false,
+      "transformations": [
+        "Byte-identical to public source stage"
+      ]
+    },
+    {
+      "path": "package.json",
+      "stageBytes": 33,
+      "stageSHA256": "a90fc33418afa2b9cbf4768524b021135b965ecdf993457505bfae3ac44a8428",
+      "finalBytes": 33,
+      "finalSHA256": "a90fc33418afa2b9cbf4768524b021135b965ecdf993457505bfae3ac44a8428",
+      "changed": false,
+      "transformations": [
+        "Byte-identical to public source stage"
+      ]
+    },
+    {
+      "path": "build-bindings.cjs",
+      "stageBytes": 8263,
+      "stageSHA256": "e96986e8a3194ebb937f2e3dbb10c1fc8713708daaa05b15c3609a23ae270e2d",
+      "finalBytes": 8263,
+      "finalSHA256": "e96986e8a3194ebb937f2e3dbb10c1fc8713708daaa05b15c3609a23ae270e2d",
+      "changed": false,
+      "transformations": [
+        "Byte-identical to public source stage"
+      ]
+    },
+    {
+      "path": "viewer-artifact.json",
+      "stageBytes": 234,
+      "stageSHA256": "9dd6a51254a97066242ba54353d8ab77e10a6f52ab898ccaff6af16ad83189be",
+      "finalBytes": 7282,
+      "finalSHA256": "975bd4ef3273150decf7f5f7e404af5e119a3929c3ce10145b9ea76fd2da3738",
+      "changed": true,
+      "transformations": [
+        "One authorized offline binding replaced the unbound placeholder with actual terminal result, final externally observed review, external closure/review reports, and selected original pair evidence descriptors. No scientific values rewritten."
+      ]
+    },
+    {
+      "path": "DATA-CONTRACT.md",
+      "stageBytes": 9464,
+      "stageSHA256": "054b630b5ddef0e38811b80ac9f471c9d95196619a84b97646597bf26b689e1d",
+      "finalBytes": 9464,
+      "finalSHA256": "054b630b5ddef0e38811b80ac9f471c9d95196619a84b97646597bf26b689e1d",
+      "changed": false,
+      "transformations": [
+        "Byte-identical to public source stage"
+      ]
+    },
+    {
+      "path": "README.md",
+      "stageBytes": 2944,
+      "stageSHA256": "b0a4cb1bd13b227dd37a855c96b413b57b7a760ca7dfdf87aeb8d930e8f92942",
+      "finalBytes": 2859,
+      "finalSHA256": "ce512d22b4bbb95a9df46dd61d995f98d2f9a6b57e048d9197d7f495d048fe12",
+      "changed": true,
+      "transformations": [
+        "Replace source-only status with actual bound-viewer outcome, final QA and scope limits, and working historical audit link."
+      ]
+    },
+    {
+      "path": "QA-PLAN.md",
+      "stageBytes": 4397,
+      "stageSHA256": "234e57a218a8a7fce9611147ad3af61de5be3b6762b500a37ec4e4262ec2810e",
+      "finalBytes": 4561,
+      "finalSHA256": "fc3d61f3f4147185365eb23681daeb111aedfb1a6aed5b6aaa25ba924ad94cd7",
+      "changed": true,
+      "transformations": [
+        "Record completed authorized verification and point to final evidence; clarify historical saved-pose audit target."
+      ]
+    }
+  ],
+  "exactEvidenceAssets": [
+    {
+      "path": "evidence/campaign-result.json",
+      "bytes": 3554,
+      "sha256": "7f876389a2013060cd308a51c2fea84efc6cc3e7d5cc2e2aa894c61102a4e71c"
+    },
+    {
+      "path": "evidence/control-metadata.json",
+      "bytes": 16957,
+      "sha256": "2385b2887b708f8b4acda95438f77f720045c1ad353c1a52738d94c7169110a4"
+    },
+    {
+      "path": "evidence/controls-pairs-original.f64",
+      "bytes": 1920,
+      "sha256": "e6f6998a194cd36bce386f967a5a43b84e69b5e0c0ea0b5176484af80f998fbf"
+    },
+    {
+      "path": "evidence/controls-reference-pairs.json",
+      "bytes": 6324,
+      "sha256": "adecf5f6289b5952fef3fe520592e6d14f8945061a196a0b62cbf7c807e77edd"
+    },
+    {
+      "path": "evidence/controls-reference-status.json",
+      "bytes": 369,
+      "sha256": "fd336db836f2eb7bf2925ec2c73bfd454af7c3f2ec934aef17d83c0ccd495e07"
+    },
+    {
+      "path": "evidence/external-1.json",
+      "bytes": 1328,
+      "sha256": "9dae04baa822b0522fd550ffa0e81811b4c99018147e70e9392f8dec7943728a"
+    },
+    {
+      "path": "evidence/external-2.json",
+      "bytes": 3902,
+      "sha256": "cb31d328d0cf164eaf32e5e1858eba8675e2ee4e09fc0d10bea61fa39e09c77f"
+    },
+    {
+      "path": "evidence/external-3.json",
+      "bytes": 1672,
+      "sha256": "70cd00f8b4f4be72d742772612196428ae9973c466c09423782adde2fec72f8e"
+    },
+    {
+      "path": "evidence/external-4.json",
+      "bytes": 1956,
+      "sha256": "baa0389e6659c91bed6af8da7c0e022daf61afd71c3e1b896900664fe5d7020a"
+    },
+    {
+      "path": "evidence/review-1.json",
+      "bytes": 547,
+      "sha256": "eca5f4a3189afb3a9fcc065f51368e5b10e54ac4ac6974bf42708fce24208a4a"
+    }
+  ],
+  "historicalTargetDependencies": [
+    {
+      "path": "research/m31-restart-2026-10-15/README.md",
+      "bytes": 5536,
+      "sha256": "60c96a2c7dcc3b6b72ab1c8a9380b2f7d72c956a38943b52dcfdd3c7021c7e8c"
+    },
+    {
+      "path": "research/m31-restart-2026-10-15/provenance.json",
+      "bytes": 2769,
+      "sha256": "96e99956ac494739e43d52f2b130adec38d09c16fe641fb2f6a46c95cc25fbc7"
+    },
+    {
+      "path": "research/m31-restart-2026-10-15/viewer/index.html",
+      "bytes": 3904,
+      "sha256": "98ff88938cd27801d507923d43f3266e22984a5d24fa2810d9f58a119a0f4e67"
+    },
+    {
+      "path": "research/m31-restart-2026-10-15/viewer/app.js",
+      "bytes": 6900,
+      "sha256": "d4e3bf698beb1d51a635b51be822d062d40d724d9c146244bbee27d79f775dbc"
+    },
+    {
+      "path": "research/m31-restart-2026-10-15/viewer/style.css",
+      "bytes": 3360,
+      "sha256": "f250b34f9b1c0458ebea4827f77151e9e343fb4ca9eced4ce8a49dbcb7180442"
+    },
+    {
+      "path": "research/m31-restart-2026-10-15/viewer/data.json",
+      "bytes": 41823,
+      "sha256": "f69cae28818dd0802863b512af96a448ffcd3aa7aa8824f528b4ed59032d613c"
+    },
+    {
+      "path": "research/m31-restart-2026-10-15/viewer/snapshots.bin",
+      "bytes": 3360000,
+      "sha256": "c9918697fc61576a9c0454cda354a8d66f42b0b6e21e082cdbf12054b372c927"
+    }
+  ],
+  "unchangedVendoredDependencies": [
+    {
+      "path": "outputs/step02b-source/vendor/three.module.js",
+      "bytes": 603113,
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+    },
+    {
+      "path": "outputs/step02b-source/vendor/three.core.js",
+      "bytes": 1403455,
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+    },
+    {
+      "path": "outputs/step02b-source/vendor/OrbitControls.js",
+      "bytes": 38703,
+      "sha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c"
+    },
+    {
+      "path": "outputs/step02b-source/vendor/THREE-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    }
+  ],
+  "scratchHarnessProvenance": {
+    "finalHarnessSHA256": "ebd541170d7b101aa110363f41ef5b00e43586fa4503bab9d012f25b1a7f8f26",
+    "published": false,
+    "reason": "Temporary test harness uses local browser runtime paths; final checks and screenshots published separately."
+  },
+  "packaging": "Intended summaries and screenshots copied byte-for-byte; private stacks/scripts excluded. No Git commit.",
+  "files": [
+    {
+      "path": "DATA-CONTRACT.md",
+      "bytes": 9464,
+      "sha256": "054b630b5ddef0e38811b80ac9f471c9d95196619a84b97646597bf26b689e1d"
+    },
+    {
+      "path": "PUBLIC-SOURCE-LEDGER.json",
+      "bytes": 6746,
+      "sha256": "0363a77a3fcdde94834e1ded7db9dcc78fbdbabd01c075fb0ae80ec0cf64ec90"
+    },
+    {
+      "path": "PUBLIC-STAGE-CHECKS.json",
+      "bytes": 2225,
+      "sha256": "cf801493f09e938645c5a117d045accd5b32b47468902382cfce2e9fcf03baa5"
+    },
+    {
+      "path": "QA-PLAN.md",
+      "bytes": 4561,
+      "sha256": "fc3d61f3f4147185365eb23681daeb111aedfb1a6aed5b6aaa25ba924ad94cd7"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2859,
+      "sha256": "ce512d22b4bbb95a9df46dd61d995f98d2f9a6b57e048d9197d7f495d048fe12"
+    },
+    {
+      "path": "SOURCE-INSTALL-CHECKS.json",
+      "bytes": 352,
+      "sha256": "21d4ae5c4367b2fe5af08a2c534688d2138645456ae5f35c794b0d3c7eff90ce"
+    },
+    {
+      "path": "SOURCE-STATIC-CHECKS.json",
+      "bytes": 6360,
+      "sha256": "aa0f8eb7ef248f679c0c62e229ed59e7dc23fbde5d06064a544bb24a2f0165f7"
+    },
+    {
+      "path": "adapter.js",
+      "bytes": 4322,
+      "sha256": "e71a172fa2b2dec67cbb1bd9ed7b80672b85d2aafb4966c8b73c1afbfd22aaeb"
+    },
+    {
+      "path": "app.js",
+      "bytes": 16474,
+      "sha256": "c58afc908337dba5916cbc2392d3207e4d9103eeafedead029d2e874cede514c"
+    },
+    {
+      "path": "build-bindings.cjs",
+      "bytes": 8263,
+      "sha256": "e96986e8a3194ebb937f2e3dbb10c1fc8713708daaa05b15c3609a23ae270e2d"
+    },
+    {
+      "path": "evidence/campaign-result.json",
+      "bytes": 3554,
+      "sha256": "7f876389a2013060cd308a51c2fea84efc6cc3e7d5cc2e2aa894c61102a4e71c"
+    },
+    {
+      "path": "evidence/control-metadata.json",
+      "bytes": 16957,
+      "sha256": "2385b2887b708f8b4acda95438f77f720045c1ad353c1a52738d94c7169110a4"
+    },
+    {
+      "path": "evidence/controls-pairs-original.f64",
+      "bytes": 1920,
+      "sha256": "e6f6998a194cd36bce386f967a5a43b84e69b5e0c0ea0b5176484af80f998fbf"
+    },
+    {
+      "path": "evidence/controls-reference-pairs.json",
+      "bytes": 6324,
+      "sha256": "adecf5f6289b5952fef3fe520592e6d14f8945061a196a0b62cbf7c807e77edd"
+    },
+    {
+      "path": "evidence/controls-reference-status.json",
+      "bytes": 369,
+      "sha256": "fd336db836f2eb7bf2925ec2c73bfd454af7c3f2ec934aef17d83c0ccd495e07"
+    },
+    {
+      "path": "evidence/external-1.json",
+      "bytes": 1328,
+      "sha256": "9dae04baa822b0522fd550ffa0e81811b4c99018147e70e9392f8dec7943728a"
+    },
+    {
+      "path": "evidence/external-2.json",
+      "bytes": 3902,
+      "sha256": "cb31d328d0cf164eaf32e5e1858eba8675e2ee4e09fc0d10bea61fa39e09c77f"
+    },
+    {
+      "path": "evidence/external-3.json",
+      "bytes": 1672,
+      "sha256": "70cd00f8b4f4be72d742772612196428ae9973c466c09423782adde2fec72f8e"
+    },
+    {
+      "path": "evidence/external-4.json",
+      "bytes": 1956,
+      "sha256": "baa0389e6659c91bed6af8da7c0e022daf61afd71c3e1b896900664fe5d7020a"
+    },
+    {
+      "path": "evidence/review-1.json",
+      "bytes": 547,
+      "sha256": "eca5f4a3189afb3a9fcc065f51368e5b10e54ac4ac6974bf42708fce24208a4a"
+    },
+    {
+      "path": "evidence.js",
+      "bytes": 5688,
+      "sha256": "5d52cdf63854f563fd46e152414b788716851c2c7feac886a8e6e1ae0b803fdd"
+    },
+    {
+      "path": "index.html",
+      "bytes": 5329,
+      "sha256": "64c83892e07730a27041aa4b38c60496630709470556cd8b6ce8f276c946b0ac"
+    },
+    {
+      "path": "package.json",
+      "bytes": 33,
+      "sha256": "a90fc33418afa2b9cbf4768524b021135b965ecdf993457505bfae3ac44a8428"
+    },
+    {
+      "path": "qa/PRESERVATION-CHECKS.json",
+      "bytes": 3413,
+      "sha256": "b081c2b415c3ea77e390aec1cfb76aa1fa179b8ce227c573f5f012112812ce27"
+    },
+    {
+      "path": "qa/PRIVACY-CHECKS.json",
+      "bytes": 1479,
+      "sha256": "b0581d300ab4c0ec85037b132ac1fdc19e11ccca314a535ae01a4b7c2aca6d25"
+    },
+    {
+      "path": "qa/QA-REPORT.md",
+      "bytes": 9488,
+      "sha256": "d6524882bdc445d6cabb82246f219cf24fc91a597aa97308173caa946297f121"
+    },
+    {
+      "path": "qa/attempts/run-01/qa-summary.json",
+      "bytes": 969,
+      "sha256": "f15868d743a778a92523158d566b522782c8addb831289432c15a8b7eaa17a6b"
+    },
+    {
+      "path": "qa/attempts/run-02/desktop-controls.png",
+      "bytes": 154110,
+      "sha256": "2f38232d147e0200575a8abafe1f8508d2e0d6aca99f683c22bbdb6119d132b4"
+    },
+    {
+      "path": "qa/attempts/run-02/failure-state.png",
+      "bytes": 311550,
+      "sha256": "a0be850c2b871c6a7826f197fb4b608956ad209e613e679d63ae2cb09b604e2d"
+    },
+    {
+      "path": "qa/attempts/run-02/pair-14-original-input.png",
+      "bytes": 155522,
+      "sha256": "38a48c65803ee70961f1377fc0842378170228eaf74195678ad91ec5ab081728"
+    },
+    {
+      "path": "qa/attempts/run-02/qa-summary.json",
+      "bytes": 2313,
+      "sha256": "394c0fbe5c7c1b26b72932dce8a72ac12d511489732168133326091001144516"
+    },
+    {
+      "path": "qa/attempts/run-03/desktop-controls.png",
+      "bytes": 154110,
+      "sha256": "2f38232d147e0200575a8abafe1f8508d2e0d6aca99f683c22bbdb6119d132b4"
+    },
+    {
+      "path": "qa/attempts/run-03/failure-state.png",
+      "bytes": 310194,
+      "sha256": "134280a9aff71ef0f1b946e2ae73e7768dcb41ef881e3172bc6d6ddcdf8d6583"
+    },
+    {
+      "path": "qa/attempts/run-03/family-4-not-executed.png",
+      "bytes": 105207,
+      "sha256": "8a75b5f4b853163d45f3fa9b3f283af41a147c1f728ec59289c39f8d2b026d4b"
+    },
+    {
+      "path": "qa/attempts/run-03/pair-14-original-input.png",
+      "bytes": 155522,
+      "sha256": "38a48c65803ee70961f1377fc0842378170228eaf74195678ad91ec5ab081728"
+    },
+    {
+      "path": "qa/attempts/run-03/qa-summary.json",
+      "bytes": 2668,
+      "sha256": "effcec445b30c61fb966b992e41a6672e5d7bab37ed63d1947ca56e0a8e660af"
+    },
+    {
+      "path": "qa/attempts/run-04/desktop-controls.png",
+      "bytes": 154110,
+      "sha256": "2f38232d147e0200575a8abafe1f8508d2e0d6aca99f683c22bbdb6119d132b4"
+    },
+    {
+      "path": "qa/attempts/run-04/failure-state.png",
+      "bytes": 310205,
+      "sha256": "49291a24fcc553f09674c0ae43bae061d104273c768e9dacca34826fe7e8a56c"
+    },
+    {
+      "path": "qa/attempts/run-04/family-4-not-executed.png",
+      "bytes": 105207,
+      "sha256": "8a75b5f4b853163d45f3fa9b3f283af41a147c1f728ec59289c39f8d2b026d4b"
+    },
+    {
+      "path": "qa/attempts/run-04/pair-14-original-input.png",
+      "bytes": 155522,
+      "sha256": "38a48c65803ee70961f1377fc0842378170228eaf74195678ad91ec5ab081728"
+    },
+    {
+      "path": "qa/attempts/run-04/qa-summary.json",
+      "bytes": 2688,
+      "sha256": "dd91343be4631701e8627f615bbf821f4ff32efc78b2980a1660a4f8d56d5a46"
+    },
+    {
+      "path": "qa/attempts/run-05/desktop-controls.png",
+      "bytes": 153925,
+      "sha256": "6c4c51ef5d1893533e3a26e776ff93e2679df4972848002e0d64742e3a6d0acc"
+    },
+    {
+      "path": "qa/attempts/run-05/failure-state.png",
+      "bytes": 216725,
+      "sha256": "bc5639596345f2eca529e67e52f25d818df80e0bf37beb39964dade133a9eff9"
+    },
+    {
+      "path": "qa/attempts/run-05/family-4-not-executed.png",
+      "bytes": 105207,
+      "sha256": "8a75b5f4b853163d45f3fa9b3f283af41a147c1f728ec59289c39f8d2b026d4b"
+    },
+    {
+      "path": "qa/attempts/run-05/mobile-controls.png",
+      "bytes": 271705,
+      "sha256": "1fbd27369d7af5f93f08bc07fe579bdc93ed8b9cedf08ebc7924fa7caa68c410"
+    },
+    {
+      "path": "qa/attempts/run-05/pair-14-original-input.png",
+      "bytes": 155382,
+      "sha256": "342ba2a8a59c440106c594771ceb2b4c0d4fe7096c5380108850ec634a01fb9c"
+    },
+    {
+      "path": "qa/attempts/run-05/qa-summary.json",
+      "bytes": 3421,
+      "sha256": "da3cd068e80f6d03fad84e875089e7d2fc58773dd700571212a3a2d116984219"
+    },
+    {
+      "path": "qa/attempts/run-06/corrupt-length-rejected.png",
+      "bytes": 123600,
+      "sha256": "e8638da691f08f1ef2204d34136440e859959014ced62c9bfc150f5a9a3ea241"
+    },
+    {
+      "path": "qa/attempts/run-06/corrupt-sha256-rejected.png",
+      "bytes": 123781,
+      "sha256": "a8b882dc97c4e7857619e7ac2377fee4c0edc9f640753a847782341fdc00dc6f"
+    },
+    {
+      "path": "qa/attempts/run-06/desktop-controls.png",
+      "bytes": 153925,
+      "sha256": "6c4c51ef5d1893533e3a26e776ff93e2679df4972848002e0d64742e3a6d0acc"
+    },
+    {
+      "path": "qa/attempts/run-06/desktop-recovered.png",
+      "bytes": 309260,
+      "sha256": "c17b16f8c9bdfa4217ab9673b8cf2af77c5166c3c482a3686a0488ed3e46aded"
+    },
+    {
+      "path": "qa/attempts/run-06/family-4-not-executed.png",
+      "bytes": 105207,
+      "sha256": "8a75b5f4b853163d45f3fa9b3f283af41a147c1f728ec59289c39f8d2b026d4b"
+    },
+    {
+      "path": "qa/attempts/run-06/historical-link-target.png",
+      "bytes": 104652,
+      "sha256": "f7f96a8d59863cbe5a8812e49eeca8c689376b29ceb6eded933757c2959fadfe"
+    },
+    {
+      "path": "qa/attempts/run-06/mobile-controls.png",
+      "bytes": 271732,
+      "sha256": "c04b4584581177be5803aa76e64608d47424d2ee4645f438a887571fd6133cbc"
+    },
+    {
+      "path": "qa/attempts/run-06/pair-14-original-input.png",
+      "bytes": 155382,
+      "sha256": "342ba2a8a59c440106c594771ceb2b4c0d4fe7096c5380108850ec634a01fb9c"
+    },
+    {
+      "path": "qa/attempts/run-06/qa-summary.json",
+      "bytes": 6312,
+      "sha256": "72ac21bc8a09d2cbe21f4748bcde00fce5f72a83b470c5d86c0f3d0bdfd54ad0"
+    },
+    {
+      "path": "qa/final/corrupt-length-rejected.png",
+      "bytes": 128354,
+      "sha256": "03b4d03d46f9f53e4cc5bb9df25d8f9c6f9db56956dfc60890818ba1dea98c25"
+    },
+    {
+      "path": "qa/final/corrupt-sha256-rejected.png",
+      "bytes": 128534,
+      "sha256": "f238b71a297414499d04e1ff81eb63095b9a465cf09c83a44aefe57cccfaa6e6"
+    },
+    {
+      "path": "qa/final/desktop-controls.png",
+      "bytes": 154550,
+      "sha256": "4dc2138912ff6ab338ef2789a0973a6cc8d6d1d6baaa0a2a5d50e5c9dc502d41"
+    },
+    {
+      "path": "qa/final/desktop-recovered.png",
+      "bytes": 309879,
+      "sha256": "dca9bd45cc84c6fec96f071fd5b7cd1c82fa1049eae2ee21352a4d310b7cd5f5"
+    },
+    {
+      "path": "qa/final/family-4-not-executed.png",
+      "bytes": 290493,
+      "sha256": "3e7498887e5b60e78b4c56327e4e6870772bccb1c772335268e7c83b49d889d9"
+    },
+    {
+      "path": "qa/final/historical-link-target.png",
+      "bytes": 283414,
+      "sha256": "7138835f344757ed9f2a9d381ec591dcd456d085c21ec1de48ad2c575bdaac90"
+    },
+    {
+      "path": "qa/final/mobile-controls.png",
+      "bytes": 272301,
+      "sha256": "96649e1e856eb93018d0ac5d900c6df37cf62ef2e4512670bc083086a35e90f9"
+    },
+    {
+      "path": "qa/final/mobile-table-scrolled.png",
+      "bytes": 71674,
+      "sha256": "db66f4d4706a299f7d5bbe1bb58802ee1f49b115814848580dce9d8bd5ee7649"
+    },
+    {
+      "path": "qa/final/pair-14-original-input.png",
+      "bytes": 309951,
+      "sha256": "f377002bed0ae4a866b5830514e7e87a1dcf14ebc5e7b2f91a27f73d0f1ea384"
+    },
+    {
+      "path": "qa/final/qa-summary.json",
+      "bytes": 6030,
+      "sha256": "8f6c62f23018f2ad2ec88f211d61e7f69a6e71dce63275b54d165855ededa00b"
+    },
+    {
+      "path": "scene.js",
+      "bytes": 7359,
+      "sha256": "c88c7ac9e535a3012001ed9a7f479a0101def7476388e3e1cb08d6c6de0c4344"
+    },
+    {
+      "path": "style.css",
+      "bytes": 5652,
+      "sha256": "688c2332c42010922bf5a8d4b728fe5ea746027cfcf618585fbf21c762ddafdd"
+    },
+    {
+      "path": "viewer-artifact.json",
+      "bytes": 7282,
+      "sha256": "975bd4ef3273150decf7f5f7e404af5e119a3929c3ce10145b9ea76fd2da3738"
+    }
+  ],
+  "selfExclusion": "This manifest excludes its own hash."
+}

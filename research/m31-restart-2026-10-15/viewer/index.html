@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Milestone 31 — evidence audit in 3D</title>
+  <link rel="icon" href="data:,">
+  <script type="importmap">{"imports":{"three":"../../../outputs/step02b-source/vendor/three.module.js"}}</script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body><main>
+  <header><p class="eyebrow">RESEARCH CHECKPOINT · MILESTONE 31 RESTART</p><h1>Same mission.<br>Different paths.</h1><p class="intro">Compare the same drones at the same saved time. Only the physics integration step differs. The old trajectory-accuracy failure stays visible.</p></header>
+  <div class="verdicts"><div><strong>3 / 3</strong><span>saved path comparisons fail the 1 cm criterion</span></div><div><strong>Airflow off</strong><span>these records do not test aerodynamic interaction</span></div><div><strong>Audit, not a new flight</strong><span>exact poses extracted from the historical evidence</span></div></div>
+  <section class="lab" aria-labelledby="lab-title">
+    <div class="lab-head"><h2 id="lab-title">Inspect the disagreement</h2><span class="recorded">SAVED SIMULATION POSES</span></div>
+    <div class="controls"><label>Matched case<select id="case" disabled></select></label><label>Saved time<select id="time" disabled></select></label><button id="whole" disabled>Whole flock</button><button id="gap" disabled>Largest gap</button><button id="next" disabled>Next saved time</button></div>
+    <p id="status" role="status">Loading verified historical snapshots…</p>
+    <div id="scene" aria-label="Three dimensional overlay of matched historical drone positions"></div>
+    <div class="legend"><label><input type="checkbox" id="coarse" checked disabled><i class="cyan"></i>2.5 ms step</label><label><input type="checkbox" id="fine" checked disabled><i class="amber"></i>1.25 ms step</label><span>White line: largest same-drone position difference at this time.</span></div>
+    <div class="metrics"><div><span>Largest difference</span><strong id="maximum">—</strong></div><div><span>Median difference</span><strong id="median">—</strong></div><div><span>95th percentile</span><strong id="p95">—</strong></div><div><span>Highlighted drone · zero-based ID</span><strong id="drone">—</strong></div></div>
+    <p class="note">Drag to orbit · scroll to zoom. Simplified drone glyphs use a 3× display scale for visibility. Exact stored positions and attitudes; no interpolation or live solver. The 5,000-drone comparison ends at 60 s. Neither trace is established physical truth.</p>
+  </section>
+  <section class="reading"><article><p class="eyebrow">WHAT THE EVIDENCE SAYS</p><h2>Finishing together does not mean matching paths.</h2><p>The tested primary flocks finished the factory course. Halving the physics step changed individual paths beyond the frozen tolerance. Both observations matter; a successful outcome cannot cancel the failed accuracy test.</p><p id="scope"></p></article><article><p class="eyebrow">WHAT COMES NEXT</p><h2>Test the cause before choosing a fix.</h2><p>The next bounded plan separates sensitivity to the order of neighbor calculations from integration and feedback effects. These are hypotheses to test, not established explanations or novel algorithms.</p><p>Physical airflow validation and computation trade-offs remain separate work streams. This checkpoint makes no claim of a breakthrough.</p></article></section>
+  <footer><a href="../README.md">Checkpoint summary</a><a href="../evidence/audit.md">Evidence audit</a><a href="../protocol/bounded-restart-plan.md">Next experiment plan</a><a href="../literature/annotated-ledger.md">Verified literature</a><a href="../REPRODUCE.md">Reproduction &amp; full replay</a><a href="data.json">Snapshot provenance</a></footer>
+</main><script type="module" src="app.js"></script></body></html>

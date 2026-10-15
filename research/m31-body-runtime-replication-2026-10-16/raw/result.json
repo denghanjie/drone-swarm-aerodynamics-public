@@ -1,0 +1,251 @@
+{
+  "sourceCommit": "f12d8c836e7b991ec33e6de662d00ed05dcce33e",
+  "scope": "One complete static field-to-body-load GPU feasibility query on each of four fresh families. Original-R direct rotor/thrust/roll/pitch/nominal-yaw targets; no dynamics, world rotation, timing comparison or physical-validation claim.",
+  "cases": [],
+  "counts": {
+    "constantSetups": 1,
+    "controlBuilds": 1,
+    "controlViConstructions": 8,
+    "controlPairConstruction": 15,
+    "controlRootConstruction": 146,
+    "controlReferenceCalls": 1,
+    "controlPairEvaluations": 30,
+    "referenceRootAttempts": 292,
+    "referenceBisectionSolves": 216,
+    "referenceBisectionIterations": 11330,
+    "hostOnlyCalls": 1,
+    "hostAdmissionControls": 13,
+    "prepareStates": 7,
+    "decoderControls": 16,
+    "gpuDispatches": 1,
+    "gpuActiveInvocations": 15,
+    "gpuLaunchedInvocations": 64
+  },
+  "qualified": false,
+  "terminal": true,
+  "browserVersion": "155.0.8059.80",
+  "capability": {
+    "supported": true,
+    "compiled": true,
+    "adapter": {
+      "vendor": "apple",
+      "architecture": "metal-3",
+      "device": "",
+      "description": "",
+      "isFallbackAdapter": false,
+      "features": [
+        "depth32float-stencil8",
+        "rg11b10ufloat-renderable",
+        "texture-formats-tier1",
+        "bgra8unorm-storage",
+        "texture-compression-bc",
+        "dual-source-blending",
+        "core-features-and-limits",
+        "float32-filterable",
+        "indirect-first-instance",
+        "texture-compression-astc-sliced-3d",
+        "float32-blendable",
+        "subgroup-size-control",
+        "texture-compression-astc",
+        "texture-compression-etc2",
+        "depth-clip-control",
+        "texture-compression-bc-sliced-3d",
+        "texture-formats-tier2",
+        "timestamp-query",
+        "shader-f16",
+        "clip-distances",
+        "primitive-index",
+        "texture-component-swizzle",
+        "subgroups"
+      ],
+      "limits": {
+        "maxStorageBufferBindingSize": 4294967292,
+        "maxBufferSize": 4294967292,
+        "maxComputeWorkgroupsPerDimension": 65535,
+        "maxStorageBuffersPerShaderStage": 10,
+        "maxComputeWorkgroupSizeX": 1024,
+        "maxComputeInvocationsPerWorkgroup": 1024
+      },
+      "deviceLimits": {
+        "maxStorageBufferBindingSize": 134217728,
+        "maxBufferSize": 268435456,
+        "maxComputeWorkgroupsPerDimension": 65535,
+        "maxStorageBuffersPerShaderStage": 8,
+        "maxComputeWorkgroupSizeX": 256,
+        "maxComputeInvocationsPerWorkgroup": 256
+      }
+    },
+    "messages": [],
+    "pipelineError": null,
+    "validation": null,
+    "stage": "ready",
+    "current": null,
+    "loss": null,
+    "uncaptured": null,
+    "seen": [],
+    "costs": {
+      "pipelineCreations": 3,
+      "bufferCreations": 0,
+      "allocatedBytes": 0,
+      "uploadedBytes": 0,
+      "readbackBytes": 0,
+      "dispatches": 0,
+      "activeInvocations": 0,
+      "launchedInvocations": 0,
+      "liveBufferBytes": 0,
+      "peakLiveBufferBytes": 0
+    }
+  },
+  "status": "failed",
+  "error": {
+    "name": "Error",
+    "message": "Complete persisted raw readback",
+    "detail": {
+      "name": "controls-pairs-gpu-output.u32",
+      "complete": false,
+      "expected": 3840
+    }
+  },
+  "context": "GPU controls-pairs",
+  "gpuShutdown": {
+    "deviceDestroyed": true,
+    "costs": {
+      "pipelineCreations": 3,
+      "bufferCreations": 4,
+      "allocatedBytes": 11648,
+      "uploadedBytes": 3968,
+      "readbackBytes": 0,
+      "dispatches": 1,
+      "activeInvocations": 15,
+      "launchedInvocations": 64,
+      "liveBufferBytes": 0,
+      "peakLiveBufferBytes": 11648
+    }
+  },
+  "sinkClosure": {
+    "activeWrites": 0,
+    "reservations": [
+      {
+        "name": "controls-pairs-gpu-output.u32",
+        "size": 3840,
+        "started": false,
+        "complete": false
+      }
+    ],
+    "closed": true
+  },
+  "privateErrorReceipt": {
+    "bytes": 773,
+    "sha256": "705d5372e36a9323a7567a925e69335ea0f7abbf5494c7e9e87a388bc50a7fe1",
+    "disclosure": "Full exceptions retained privately; public first-line errors redact local paths, profiles, transport nonce and process identities."
+  },
+  "checks": 6848,
+  "elapsedSeconds": 1.659714,
+  "files": [
+    {
+      "name": "browser-failure-evidence.json",
+      "bytes": 2486,
+      "sha256": "d399d72971bc7f52b708934acdaec78126fe3e011626d19645e8fa88d0127914"
+    },
+    {
+      "name": "browser-runtime-after-launch.json",
+      "bytes": 1691,
+      "sha256": "a2c9d5e7d16b26f6716f518b2679256612144011cdf4ca85ea26917021763787"
+    },
+    {
+      "name": "browser-runtime-before-launch.json",
+      "bytes": 1691,
+      "sha256": "a2c9d5e7d16b26f6716f518b2679256612144011cdf4ca85ea26917021763787"
+    },
+    {
+      "name": "capability.json",
+      "bytes": 1965,
+      "sha256": "06562eaf6c106211b52d793d354a32e906193dff0c6e204d4fd42331bfcfb9a9"
+    },
+    {
+      "name": "control-host-only-spec.json",
+      "bytes": 72,
+      "sha256": "0872e1a29335d67a0a0b8390611de00808b584980e3a615714316b90920975b1"
+    },
+    {
+      "name": "control-metadata.json",
+      "bytes": 16957,
+      "sha256": "2385b2887b708f8b4acda95438f77f720045c1ad353c1a52738d94c7169110a4"
+    },
+    {
+      "name": "controls-host-only-result.json",
+      "bytes": 4544,
+      "sha256": "ee3a9d14e34c6dbb387566f0d1c36418b008db03af8cb031059e1ae440222a55"
+    },
+    {
+      "name": "controls-pairs-constants.u32",
+      "bytes": 128,
+      "sha256": "f3ac33c94f0a3b21b3363682193c2d1bae373a4434a2f3386390b36c64174c9f"
+    },
+    {
+      "name": "controls-pairs-gpu-api.json",
+      "bytes": 2093,
+      "sha256": "3a7aecec9fcf82e0775776f89b7bb5d66010533a5d4f7539c4d7028c1f18032f"
+    },
+    {
+      "name": "controls-pairs-input.u32",
+      "bytes": 3840,
+      "sha256": "f60f97b7ff02427b3a4e8546315a2a31225f2bee49888ab2043bf2b1b5fafcc6"
+    },
+    {
+      "name": "controls-pairs-original.f64",
+      "bytes": 1920,
+      "sha256": "e6f6998a194cd36bce386f967a5a43b84e69b5e0c0ea0b5176484af80f998fbf"
+    },
+    {
+      "name": "controls-reference-Q-roots.bin",
+      "bytes": 14016,
+      "sha256": "0f6e7cdb88a2c4938da6fdcf67e75d1de21586adf38bef7857c0edcd5767325e"
+    },
+    {
+      "name": "controls-reference-R-roots.bin",
+      "bytes": 14016,
+      "sha256": "196c0f01242dec1d586d4561b9a8042b74ccc465f2dc0a6de599dec7dd091528"
+    },
+    {
+      "name": "controls-reference-pairs.json",
+      "bytes": 6324,
+      "sha256": "adecf5f6289b5952fef3fe520592e6d14f8945061a196a0b62cbf7c807e77edd"
+    },
+    {
+      "name": "controls-reference-status.json",
+      "bytes": 369,
+      "sha256": "fd336db836f2eb7bf2925ec2c73bfd454af7c3f2ec934aef17d83c0ccd495e07"
+    },
+    {
+      "name": "controls-roots-input.u32",
+      "bytes": 37376,
+      "sha256": "92dd301cbd17e608fe791cd6ed6ff0ef525d17e5ff872a0d587ff55f8f25e156"
+    },
+    {
+      "name": "controls-roots-original.f64",
+      "bytes": 2336,
+      "sha256": "02d0f7f61b07c3fe6a1985ca1386da33d55b706f55ad5927937be4aa20ca8e31"
+    },
+    {
+      "name": "process-registration-summary.json",
+      "bytes": 93,
+      "sha256": "5013a4a4aeaf62432864093874afa6f36d3fd77ab4967575ad5ec44d90dc14f0"
+    },
+    {
+      "name": "scientific-constants-and-gates.json",
+      "bytes": 2422,
+      "sha256": "2eeffbe666a645f40f0a7c97d061b1525aadc9f1a34c9b6d8c867180eb7d814b"
+    },
+    {
+      "name": "served-source-contract.json",
+      "bytes": 532,
+      "sha256": "b3aa9abc7e3e3d36539393a88581d66ee2426925297fcd767e153f7d2169057d"
+    },
+    {
+      "name": "started.json",
+      "bytes": 5151,
+      "sha256": "ff5dfa5396d1b6a8c1ab5094c1e829f4a28a91c5fdb4de6f0cbb216c3ce421dd"
+    }
+  ]
+}

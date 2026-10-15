@@ -1,0 +1,14 @@
+# Literature–experiment result ledger
+
+The [frozen ledger](LITERATURE-EXPERIMENT-LEDGER.md), [machine-readable bibliography](bibliography.bib) and linked prior reading records retain the verified identities, versions and exact passages used. This result adds no new literature or novelty claim. The independent saved-data review reproduced the numerical observations below; see INDEPENDENT-SAVED-REVIEW.md.
+
+|Source and passage used|Adaptation / tested consequence|Observed outcome and limits|
+|---|---|---|
+|[WGSL2026-09-21](https://www.w3.org/TR/2026/CRD-WGSL-20260921/), §§15.7.2–15.7.6,17.5.32; §16.2checked during preparation|Raw binary32words; actualGPU arithmetic rather than JSemulation; explicit branch/finite/status checks. Source source/wake.wgsl at4767787.|Compiled with no reported compilation messages. All80000term records valid/class-matched, but one term-error gate failed. Written operation order does not establish per-operation rounding or portable bitwise results.|
+|[WebGPU2026-09-15](https://www.w3.org/TR/2026/CRD-webgpu-20260915/)|Separate retained-term and reduction dispatches, bounded readback and API/device health.|Controls and terms executed, reduction skipped by numerical gate. API success is distinct from accuracy.|
+|[Higham1993](https://doi.org/10.1137/0914050), pp.784–788; [Neumaier1974](https://doi.org/10.1002/zamm.19740540106),p.40|Separate term and summation error; host compensated sum diagnostic; exact dyadic saved-operand certificates used for gates.|Original/packed reference sum checks passed; no newGPUaddition result. These citations do not guarantee WGSLarithmetic or physical accuracy.|
+|[Bauersfeld et al.,v3](https://arxiv.org/html/2403.13321v3),III–VIII|Declared far-field mean wake form inherited by independentR/Q andGPUterm implementations.|Numerical implementation comparison only. The27gapplication, support/fade/near-field policy, superposition and receiver closure remain unvalidated.|
+|[Kiran et al.,RSS2025](https://www.roboticsproceedings.org/rss21/p102.html); [Gielis et al.,v1](https://arxiv.org/html/2312.03488v1)|Prior evidence motivated explicit receiver/actuation and aggregation limitations.|No new compatible physical dataset or validation supplied by this campaign.|
+|[Nyland,Harris,Prins,GPU Gems3ch31](https://developer.nvidia.com/gpugems/gpugems3/part-v-physics-simulation/chapter-31-fast-n-body-simulation-cuda),31.2–31.4|Directed all-source component baseline and explicit work accounting.|Four selected receivers,5000sourceIDs,80000slots. NoCUDAperformance claim transfers to thisWebGPUwake test; no matched speed result.|
+
+The error allowance and exposed selection are this protocol's declared choices. The failure is preserved; no cited result is used to excuse it. Static comparison, source compilation and numerical agreement cannot establish a publishable new method. No third-party full text or external physical dataset was redistributed.

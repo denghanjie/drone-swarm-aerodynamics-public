@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "kind": "caller-observed-review-completion",
+  "observationSource": "Caller-supplied wrapper exit/time; final acceptance also requires observed completion-process exit, owned-group absence and total chain wall below120s.",
+  "observedSupervisorExitCode": 0,
+  "observedSupervisorWallSeconds": 0.266802167,
+  "internalLifecycleTimerSeconds": 2,
+  "internalTimerScope": "Armed on completion-mode entry; excludes interpreter startup/imports. Outer caller timeout covers the whole process.",
+  "terminal": true,
+  "integrityVerified": false,
+  "candidateIntegrityVerified": true,
+  "externalCompletionObservationRequired": true,
+  "decisionVerified": false,
+  "qualified": false,
+  "retryPermitted": false,
+  "priorOutputs": [
+    {
+      "path": "review/results/budget.json",
+      "bytes": 1356,
+      "sha256": "677dae679a81759a2ee52043320bccee338653cff639c45cb79698487556f121"
+    },
+    {
+      "path": "review/results/review.json",
+      "bytes": 3902,
+      "sha256": "cb31d328d0cf164eaf32e5e1858eba8675e2ee4e09fc0d10bea61fa39e09c77f"
+    },
+    {
+      "path": "review/results/sole-review.lock",
+      "bytes": 62,
+      "sha256": "fa4f1b18d525a3102d6da0081360f36713a9cba5b16ca684b688dc9525d56713"
+    },
+    {
+      "path": "review/results/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "review/results/stdout.txt",
+      "bytes": 151,
+      "sha256": "3360001bda4e42512c86cbf29f74586b5367bdd013162a4cda04ffce65e8b516"
+    }
+  ],
+  "priorOutputBytes": 5471,
+  "receiptByteReserve": 4096,
+  "observerProvenanceByteReserve": 16384,
+  "receiptBytes": 1956,
+  "finalOutputBytes": 7427,
+  "finalOutputFiles": 6,
+  "outputByteCap": 33554432,
+  "errors": [],
+  "sourceFreezeSHA256": "aadba212ed2c2006c4a5e8196df21c04f9d9c478bc5714353ddb6bc5415f81fe",
+  "reviewFreezeSHA256": "fa832d1c40f3ce569f3a78d27486f2e0102d984a17a03d19f09dd7261a779075"
+}

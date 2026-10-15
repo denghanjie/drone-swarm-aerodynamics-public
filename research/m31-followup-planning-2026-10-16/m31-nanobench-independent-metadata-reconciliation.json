@@ -1,0 +1,398 @@
+{
+  "kind": "independent-nanobench-metadata-reconciliation",
+  "commit": "934a1ab92c458cad99c9278a5cb63bf68af6e56c",
+  "scope": "Local saved manifest/tree reconciliation and Git object hashing only; no network re-fetch, CSV payload download, fit, source execution or experimental operation.",
+  "checks": {
+    "tree_untruncated": true,
+    "tree_paths_unique": true,
+    "manifest_paths_unique": true,
+    "manifest_tree_same_paths": true,
+    "manifest_tree_size_blob_agree": true,
+    "csv_yaml_pairing_exact": true,
+    "manifest_duplicate_groups_exact": true,
+    "manifest_summary_counts_agree": true,
+    "all_recursive_git_tree_hashes_match": true,
+    "four_downloaded_text_files_match_tree": true,
+    "explicit_tree_sha_refetch_same_entries": true,
+    "explicit_tree_sha_refetch_untruncated": true,
+    "explicit_tree_sha_refetch_root_label_matches": true
+  },
+  "counts": {
+    "tree_entries": 416,
+    "directory_blobs": 215,
+    "csv_count": 107,
+    "yaml_count": 107,
+    "csv_unique_blob_count": 87,
+    "csv_total_bytes": 290797892,
+    "duplicate_csv_groups": 18,
+    "duplicate_group_size_histogram": {
+      "2": 16,
+      "3": 2
+    },
+    "csv_entries_beyond_distinct_blob_ids": 20,
+    "all_repository_csv_entries": 152
+  },
+  "csv_family_counts": {
+    "A1b": 2,
+    "B10": 2,
+    "B11": 2,
+    "B12": 1,
+    "B2": 9,
+    "B3": 8,
+    "B5": 10,
+    "B6": 4,
+    "B7": 9,
+    "B8": 9,
+    "B9": 49,
+    "C4": 2
+  },
+  "b9_filename_speed_counts": {
+    "fast": 15,
+    "medium": 16,
+    "slow": 18
+  },
+  "duplicate_csv_groups": {
+    "7850bd0d7df78aa600349eac7cd8ce17062ae703": [
+      "B9_trefoil_fast_rep10.csv",
+      "B9_trefoil_fast_rep5.csv"
+    ],
+    "87b38c8870b13d27377b308f571d5c3b1f9918d9": [
+      "B9_trefoil_fast_rep11.csv",
+      "B9_trefoil_fast_rep6.csv"
+    ],
+    "a90b090936f047ef9b962b81d33768db4a8cfaa7": [
+      "B9_trefoil_fast_rep12.csv",
+      "B9_trefoil_fast_rep7.csv"
+    ],
+    "b8d16377e07594bd0ad740eaaa2e4db76d827861": [
+      "B9_trefoil_fast_rep13.csv",
+      "B9_trefoil_fast_rep8.csv"
+    ],
+    "47b61d67529936b72de1a1d8d8f0643763792923": [
+      "B9_trefoil_fast_rep15.csv",
+      "B9_trefoil_fast_rep3.csv"
+    ],
+    "8be19dab1775e16aaaee4c26cb86582be77a6f6f": [
+      "B9_trefoil_fast_rep2.csv",
+      "B9_trefoil_fast_rep9.csv"
+    ],
+    "c34438ac7b43e68b9306d9ed283190bd4353b320": [
+      "B9_trefoil_medium_rep1.csv",
+      "B9_trefoil_medium_rep9.csv"
+    ],
+    "97504d235d85d0931454da02daa3c8a1740579fe": [
+      "B9_trefoil_medium_rep10.csv",
+      "B9_trefoil_medium_rep3.csv",
+      "B9_trefoil_medium_rep7.csv"
+    ],
+    "56aef49101224ccab4144d50f8747f5ddcbf025b": [
+      "B9_trefoil_medium_rep11.csv",
+      "B9_trefoil_medium_rep6.csv"
+    ],
+    "cc3ac71a2d44aa5b520bf45affe1b594cf2b00f3": [
+      "B9_trefoil_medium_rep12.csv",
+      "B9_trefoil_medium_rep4.csv"
+    ],
+    "16bed004e9892b30b626964d4393340044b382df": [
+      "B9_trefoil_medium_rep13.csv",
+      "B9_trefoil_medium_rep16.csv",
+      "B9_trefoil_medium_rep5.csv"
+    ],
+    "692d46d6bc772667d814f7db90c3e933e26ab6bf": [
+      "B9_trefoil_medium_rep2.csv",
+      "B9_trefoil_medium_rep8.csv"
+    ],
+    "06cb0dd39a9b2fccbf5b81fdbc4dc31a73e2a372": [
+      "B9_trefoil_slow_rep10.csv",
+      "B9_trefoil_slow_rep5.csv"
+    ],
+    "a3ba12eeb2bf4fff723ddf429412aefd895578d1": [
+      "B9_trefoil_slow_rep11.csv",
+      "B9_trefoil_slow_rep4.csv"
+    ],
+    "5eb04fa6febdfac10b00f3e34274a17ac0c9a32a": [
+      "B9_trefoil_slow_rep12.csv",
+      "B9_trefoil_slow_rep7.csv"
+    ],
+    "1d0c28391fbc2cb4017233ff1929cd36c234158a": [
+      "B9_trefoil_slow_rep18.csv",
+      "B9_trefoil_slow_rep3.csv"
+    ],
+    "e78ba715b2d64a7733edcb8759df1d714680ccc5": [
+      "B9_trefoil_slow_rep2.csv",
+      "B9_trefoil_slow_rep8.csv"
+    ],
+    "cb9f4c7ec69e3d0f8542c686f3b81aba8c107518": [
+      "B9_trefoil_slow_rep6.csv",
+      "B9_trefoil_slow_rep9.csv"
+    ]
+  },
+  "git_tree_label": {
+    "saved_top_level_sha": "934a1ab92c458cad99c9278a5cb63bf68af6e56c",
+    "commit_tree_sha": "789b1a57d1908a81e46647d9eded7a310a0d7bf6",
+    "root_reconstructed_tree_sha": "789b1a57d1908a81e46647d9eded7a310a0d7bf6",
+    "saved_top_level_sha_equals_commit_tree_sha": false,
+    "explicit_tree_sha_refetch_top_level_sha": "789b1a57d1908a81e46647d9eded7a310a0d7bf6",
+    "interpretation": "Initial commit-addressed tree response labels sha with commit ID. Explicit-tree-addressed response labels sha with actual tree ID and has identical entries. All reconstructed tree hashes match, so the response label anomaly does not undermine the reconciled tree content."
+  },
+  "git_tree_reconstruction": [
+    {
+      "path": ".",
+      "computed_tree_sha": "789b1a57d1908a81e46647d9eded7a310a0d7bf6",
+      "expected_tree_sha": "789b1a57d1908a81e46647d9eded7a310a0d7bf6",
+      "match": true
+    },
+    {
+      "path": "benchmarks",
+      "computed_tree_sha": "29adde0c4e692dad3237261a8460061024d658d7",
+      "expected_tree_sha": "29adde0c4e692dad3237261a8460061024d658d7",
+      "match": true
+    },
+    {
+      "path": "benchmarks/__pycache__",
+      "computed_tree_sha": "ea4f83bf0ab3dc1bfc2116f51af2e20f334a7687",
+      "expected_tree_sha": "ea4f83bf0ab3dc1bfc2116f51af2e20f334a7687",
+      "match": true
+    },
+    {
+      "path": "benchmarks/results",
+      "computed_tree_sha": "58b1249a9f35bb6a508d9d30c3ad50c8b57d7e6e",
+      "expected_tree_sha": "58b1249a9f35bb6a508d9d30c3ad50c8b57d7e6e",
+      "match": true
+    },
+    {
+      "path": "benchmarks/results/tables",
+      "computed_tree_sha": "cccf12c870c2f8f2f0a6cb538799887b83a3d821",
+      "expected_tree_sha": "cccf12c870c2f8f2f0a6cb538799887b83a3d821",
+      "match": true
+    },
+    {
+      "path": "benchmarks/task2_control",
+      "computed_tree_sha": "d5ee46c3b1a26d4f0d4a29add34a4dea70ac4f2c",
+      "expected_tree_sha": "d5ee46c3b1a26d4f0d4a29add34a4dea70ac4f2c",
+      "match": true
+    },
+    {
+      "path": "benchmarks/task2_control/__pycache__",
+      "computed_tree_sha": "4a56fd0fe4f67dc148e20dd9ca2bdf7cf58956b9",
+      "expected_tree_sha": "4a56fd0fe4f67dc148e20dd9ca2bdf7cf58956b9",
+      "match": true
+    },
+    {
+      "path": "benchmarks/task2_control/baselines",
+      "computed_tree_sha": "e176db2dbc8a8f916b09c8a73fb593bf2fb02207",
+      "expected_tree_sha": "e176db2dbc8a8f916b09c8a73fb593bf2fb02207",
+      "match": true
+    },
+    {
+      "path": "benchmarks/task2_control/baselines/__pycache__",
+      "computed_tree_sha": "3beeba0db6e80d5f9176360f2dc0eb2515d408f4",
+      "expected_tree_sha": "3beeba0db6e80d5f9176360f2dc0eb2515d408f4",
+      "match": true
+    },
+    {
+      "path": "benchmarks/task2_control/data",
+      "computed_tree_sha": "bf8ba5380e9788f02cea6c4ed8c67f5189e3ad91",
+      "expected_tree_sha": "bf8ba5380e9788f02cea6c4ed8c67f5189e3ad91",
+      "match": true
+    },
+    {
+      "path": "benchmarks/task2_control/data/__pycache__",
+      "computed_tree_sha": "1af4efe70e963c99e8c21c4d5003dcf7641e65b7",
+      "expected_tree_sha": "1af4efe70e963c99e8c21c4d5003dcf7641e65b7",
+      "match": true
+    },
+    {
+      "path": "benchmarks/task2_control/debug",
+      "computed_tree_sha": "9aea6983e2cdece474846ff3dde2702b30712e96",
+      "expected_tree_sha": "9aea6983e2cdece474846ff3dde2702b30712e96",
+      "match": true
+    },
+    {
+      "path": "benchmarks/task2_control/dynamics",
+      "computed_tree_sha": "4c61c4630d1cb4eda5e879d77588a2b5dca206aa",
+      "expected_tree_sha": "4c61c4630d1cb4eda5e879d77588a2b5dca206aa",
+      "match": true
+    },
+    {
+      "path": "benchmarks/task2_control/dynamics/__pycache__",
+      "computed_tree_sha": "9028f0a10df8d9c84362dee9ca2010f6f9125942",
+      "expected_tree_sha": "9028f0a10df8d9c84362dee9ca2010f6f9125942",
+      "match": true
+    },
+    {
+      "path": "benchmarks/task2_control/evaluation",
+      "computed_tree_sha": "8420e9735cfa1c71814ec252c4eaed941c500956",
+      "expected_tree_sha": "8420e9735cfa1c71814ec252c4eaed941c500956",
+      "match": true
+    },
+    {
+      "path": "benchmarks/task2_control/evaluation/__pycache__",
+      "computed_tree_sha": "2b0eb173812a00f14299e005ebd47d1e2c1790bf",
+      "expected_tree_sha": "2b0eb173812a00f14299e005ebd47d1e2c1790bf",
+      "match": true
+    },
+    {
+      "path": "benchmarks/task2_control/pid_mell_data",
+      "computed_tree_sha": "0460cd71ac54bee20b8e1cbd46eaaab6abe4fc87",
+      "expected_tree_sha": "0460cd71ac54bee20b8e1cbd46eaaab6abe4fc87",
+      "match": true
+    },
+    {
+      "path": "benchmarks/task2_control/results",
+      "computed_tree_sha": "5b6630e78a83eecfb2a88259bafe6d47074778e9",
+      "expected_tree_sha": "5b6630e78a83eecfb2a88259bafe6d47074778e9",
+      "match": true
+    },
+    {
+      "path": "benchmarks/task2_control/results/checkpoints",
+      "computed_tree_sha": "2ef1d353d86e85ef070464c2c24a329f7a271f87",
+      "expected_tree_sha": "2ef1d353d86e85ef070464c2c24a329f7a271f87",
+      "match": true
+    },
+    {
+      "path": "benchmarks/task2_control/results/figures",
+      "computed_tree_sha": "e1a6bd16a774e70508c7729613d60589710b2369",
+      "expected_tree_sha": "e1a6bd16a774e70508c7729613d60589710b2369",
+      "match": true
+    },
+    {
+      "path": "benchmarks/task2_control/results/plot_data",
+      "computed_tree_sha": "e6b6adc580b69b44fb110e843a633fe05ea12a2b",
+      "expected_tree_sha": "e6b6adc580b69b44fb110e843a633fe05ea12a2b",
+      "match": true
+    },
+    {
+      "path": "benchmarks/task2_control/results/tables",
+      "computed_tree_sha": "35998639bd59659fbc133152658c429e090f1897",
+      "expected_tree_sha": "35998639bd59659fbc133152658c429e090f1897",
+      "match": true
+    },
+    {
+      "path": "benchmarks/task2_control/visualization",
+      "computed_tree_sha": "48d9e421391f1eaf0f370e7a099d71ddf3a411eb",
+      "expected_tree_sha": "48d9e421391f1eaf0f370e7a099d71ddf3a411eb",
+      "match": true
+    },
+    {
+      "path": "benchmarks/task2_control/visualization/__pycache__",
+      "computed_tree_sha": "104d4f9c14510363ee951ee139b0b068d20037fa",
+      "expected_tree_sha": "104d4f9c14510363ee951ee139b0b068d20037fa",
+      "match": true
+    },
+    {
+      "path": "benchmarks/task3_stateEst",
+      "computed_tree_sha": "404e3f2357576dcefa41f0edf01bf22914c4787a",
+      "expected_tree_sha": "404e3f2357576dcefa41f0edf01bf22914c4787a",
+      "match": true
+    },
+    {
+      "path": "benchmarks/task3_stateEst/mellinger_trefoil",
+      "computed_tree_sha": "e514c9bd4734c700a2b423e066a3b9302618f349",
+      "expected_tree_sha": "e514c9bd4734c700a2b423e066a3b9302618f349",
+      "match": true
+    },
+    {
+      "path": "benchmarks/task3_stateEst/pid_trefoil",
+      "computed_tree_sha": "16bcdbee124d14b78f03a4cb12235a8ae793a378",
+      "expected_tree_sha": "16bcdbee124d14b78f03a4cb12235a8ae793a378",
+      "match": true
+    },
+    {
+      "path": "benchmarks/task3_stateEst/results",
+      "computed_tree_sha": "6aed287556043c8635601b70bf62307d15029082",
+      "expected_tree_sha": "6aed287556043c8635601b70bf62307d15029082",
+      "match": true
+    },
+    {
+      "path": "benchmarks/task3_stateEst/results/tables",
+      "computed_tree_sha": "295df85caab5c2a54a4ef6875f89b6a97218f89b",
+      "expected_tree_sha": "295df85caab5c2a54a4ef6875f89b6a97218f89b",
+      "match": true
+    },
+    {
+      "path": "benchmarks/utils",
+      "computed_tree_sha": "fc499abce99b6eb432a8cee56b62c39663007959",
+      "expected_tree_sha": "fc499abce99b6eb432a8cee56b62c39663007959",
+      "match": true
+    },
+    {
+      "path": "benchmarks/utils/__pycache__",
+      "computed_tree_sha": "63238a3e3b228961fc05d29f47fad9fd8b88c594",
+      "expected_tree_sha": "63238a3e3b228961fc05d29f47fad9fd8b88c594",
+      "match": true
+    },
+    {
+      "path": "datasets",
+      "computed_tree_sha": "a9b57bc2298a5b482b50577339faf7fece21e235",
+      "expected_tree_sha": "a9b57bc2298a5b482b50577339faf7fece21e235",
+      "match": true
+    },
+    {
+      "path": "datasets/dataset",
+      "computed_tree_sha": "f6683a110360b83d6253404007347641f47b9e9e",
+      "expected_tree_sha": "f6683a110360b83d6253404007347641f47b9e9e",
+      "match": true
+    }
+  ],
+  "downloaded_text_bindings": [
+    {
+      "file": "nanobench-README.md",
+      "repository_path": "README.md",
+      "bytes": 18341,
+      "sha256": "dcdadfbc306d9218905e08e5710e1bd23f22522aa3d5d3d318821214404f8197",
+      "computed_git_blob_sha": "470a058b8be4ac3ea7a6c70707ad0476ec0315ce",
+      "tree_git_blob_sha": "470a058b8be4ac3ea7a6c70707ad0476ec0315ce",
+      "matches_tree_blob": true
+    },
+    {
+      "file": "nanobench-LICENSE",
+      "repository_path": "LICENSE",
+      "bytes": 1517,
+      "sha256": "69901188c51f2f874baf81666074a9e8dfbeb581592a068ad60a10dd43a5de59",
+      "computed_git_blob_sha": "52d887746a44c05fb29dbd985d49c436fd910f7d",
+      "tree_git_blob_sha": "52d887746a44c05fb29dbd985d49c436fd910f7d",
+      "matches_tree_blob": true
+    },
+    {
+      "file": "A1b_multisine_sysid_rep1_metadata.yaml",
+      "repository_path": "datasets/dataset/A1b_multisine_sysid_rep1_metadata.yaml",
+      "bytes": 683,
+      "sha256": "26468128c8e01c9b19e22ac2d4f5f532e489a4027420c5b51e1da94468160781",
+      "computed_git_blob_sha": "bd82f0d564c382fe3533c123a6d71f9ca346a50a",
+      "tree_git_blob_sha": "bd82f0d564c382fe3533c123a6d71f9ca346a50a",
+      "matches_tree_blob": true
+    },
+    {
+      "file": "C4_battery_drain_rep1_metadata.yaml",
+      "repository_path": "datasets/dataset/C4_battery_drain_rep1_metadata.yaml",
+      "bytes": 537,
+      "sha256": "b4fd85cdfd131d5cc000e1221fe3b8d5e9ce06cfb9c478f62fe8fef882515d81",
+      "computed_git_blob_sha": "17ccf9a09bb55ea254e5c6e67ad26437905c983b",
+      "tree_git_blob_sha": "17ccf9a09bb55ea254e5c6e67ad26437905c983b",
+      "matches_tree_blob": true
+    }
+  ],
+  "input_artifacts": [
+    {
+      "file": "nanobench-pinned-manifest.json",
+      "bytes": 89068,
+      "sha256": "2062eaf6186e9ef316134b43e5ed67aaaa1de02382e224133beefcb5b7a5a3e8"
+    },
+    {
+      "file": "nanobench-tree.json",
+      "bytes": 131812,
+      "sha256": "29d06958bcbbaddb64a040d02e0c3644bbe26af636e8ff9860e92d8be33af1a4"
+    },
+    {
+      "file": "nanobench-tree-by-tree-sha.json",
+      "bytes": 131812,
+      "sha256": "d3e7eb89d3f28128a30fd397d3c1fcd33563a3a2497509cd1d22befa2afb136f"
+    },
+    {
+      "file": "nanobench-commit.json",
+      "bytes": 770,
+      "sha256": "7beabe09d1f93bd84b9fab4df0d0f9ea885ef5fff3f0ce4d0f0e6fd3fd622bf2"
+    }
+  ]
+}

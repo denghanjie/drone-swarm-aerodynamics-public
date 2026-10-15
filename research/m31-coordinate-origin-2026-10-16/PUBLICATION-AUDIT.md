@@ -1,0 +1,9 @@
+# Prospective source publication audit
+
+The new package contains synthetic experiment source, literal controls, inherited public constants/runtime fingerprints, protocol and machine-readable resource reservations, independently reviewed source contracts, public literature citations and static preparation traces. It contains no fresh generated scene, reference, GPUresult or claimed experimental success.
+
+Manual/file scans check for home paths, private temporary paths, credentials, profiles, process IDs, user attachments/chat records, private workspace files and restricted datasets. The scientific source/control/generator bytes are exact author handoffs. The independent original plan memo contains only public project context. Literal source code for redacting private runtime information is not disclosure of such information. Full texts of cited papers are not redistributed.
+
+Any path transformations in independent final-review/public copies must be listed in the companion disclosure with original and public hashes. Sourcefreeze paths are relative to the public repository. Runtime provenance contains generic platform/version/hash information only. Full process groups, profiles and exceptions remain private. Inspect captured runtime logs again before result publication; early import/launcher errors can bypass the driver sanitizer.
+
+Source publication and independent remote commit/freeze-byte verification must precede commit-derived seed release. The source freeze excludes its own checksum and eventual raw/results/viewer artifacts; it pins all sources/configuration/contracts/controls and explicit inherited reference/API/literature dependencies. All local pins are reconciled before launch. Do not claim every remote binary was independently downloaded. The result will have a separate manifest and verified checkpoint after sole scientific and saved-review budgets close.

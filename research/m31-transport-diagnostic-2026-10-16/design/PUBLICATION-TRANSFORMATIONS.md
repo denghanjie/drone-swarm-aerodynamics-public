@@ -1,0 +1,5 @@
+# Static-publication treatment
+
+Final executable sources, final schema, independent review memos, and inert test artifacts are copied byte for byte from the reviewed snapshots. The privacy reviewer’s older `source/SCHEMA.md` staging snapshot is retained privately and omitted here because its introductory paragraph describes a private staging location. Its final reviewed schema is retained under `source-final/SCHEMA.md` and at the campaign root. No operational source or test result is transformed. The earlier schema is not needed for the projection extraction, which uses `source/diagnostic.cjs`.
+
+The projection checker deliberately contains synthetic values (`/Users/example/`, port 54321 and a repeated hexadecimal sentinel) for redaction tests. These are invented fixtures, not machine identities, credentials or an actual transport URL. Private adaptation logs and process/trace files are excluded. The independent memos and source-contract pins contain no actual personal installation paths.

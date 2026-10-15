@@ -1,0 +1,22 @@
+{
+  "scope": "Source-text checks and Node parser only; no generation, numerical model, scientific import, WGSL compiler or GPU execution.",
+  "checks": {
+    "generator_node_syntax_check": "passed separately with node --check; no import",
+    "wgsl_balanced_delimiters": true,
+    "wgsl_unique_function_names": true,
+    "entries_exact": true,
+    "bindings_exact": true,
+    "main_node_pad_mapping": true,
+    "primitive_a_literal": true,
+    "positive_x_guard": true,
+    "fixed_twelve_updates": true,
+    "masked_root_payloads": true,
+    "generator_partial_validity": true,
+    "no_top_level_generate_call": true
+  },
+  "sha256": {
+    "generator.cjs": "7dfaeb42aa25bd3dc19e42738c3632137c4faced766c6c6b94dd3cd146b20888",
+    "body.wgsl": "09aa77ff09dda9a93db6cce60dd4ef4599f0b6613b2945e90bc39eb74c417f2e",
+    "README.md": "770316fd75d9d71a46cd159e79db90a140f59a67df5f8831efce1ea81a6e22df"
+  }
+}

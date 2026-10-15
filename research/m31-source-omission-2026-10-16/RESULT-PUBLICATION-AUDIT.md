@@ -1,0 +1,9 @@
+# Result-publication audit
+
+All66frozen pins remain unchanged. All240raw files (38,259,345bytes) are inventoried and retained, with independent saved-review hash checks. No raw/scientific value or frozen source was edited after execution. The payload contains synthetic poses, model outputs, code/protocols, research evidence and verified bibliographic metadata. It excludes private attachments/workspace files, credentials/cookies and personal local paths.
+
+Review artifacts under results/*-public and INDEPENDENT-SAVED-REVIEW.md are disclosure copies; machine-local repository path strings are replaced with `<REPOSITORY_ROOT>`. The QA script's local Playwright import path becomes the package name. Exact originals remain locally in /tmp; original/public SHA256s and transformations are in results/public-transformations.json. Generic temporary archive IDs are retained. The original scientific-budget archive records terminal=false before closure; current budget marks sole science and sole review terminal. Numerical records, failures and source fingerprints are unchanged.
+
+Scoped text scans for local paths and common secret patterns passed. Screenshots contain the synthetic visualization, were visually inspected, and show no private app UI. An initial UI-only case-switch race and its corrected full38-case QA are preserved. No scientific rerun occurred. Final viewer footer targets exist. Direct canvas picking is not claimed as automatically tested.
+
+The final manifest inventories every checkpoint file except itself. Independently verify the pushed result commit and exact manifest bytes, then reconcile every local file hash. This confirms published metadata identity and local evidence integrity; it is not an independent redownload of every large raw binary. The previous microcheck archive transfer failure remains disclosed separately.

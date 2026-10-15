@@ -1,0 +1,5 @@
+# Closed campaign — restart here
+
+Sole scientific invocation and sole saved-data review passed. Source89c3b14e6d59f2446d257bd106e3af4bbcb029c6; budget terminal. Never rerun, enlarge caps or patch source/raw outputs. Science7.878831208s; external review5.317982083s; total13.196813291s. All50raw files retained. Three.js QA passed all12snapshots, first/last IDs, extrema/focus/orbit/next controls, desktop/mobile and deliberate data corruption; direct canvas picking was not part of the automated matrix. Selected-arrow and heat-legend visibility were corrected after visual inspection and rechecked.
+
+Results support only finite static model arithmetic with equal prescribed nominal motors. Physical accuracy, long-flight trajectory convergence, speedup and novelty remain unestablished. Proceed only to a separately reviewed and frozen falsifiable approximation protocol. Consult research/OVERNIGHT-RESTART.md for current publication and next-campaign status. Stop new overnight launches at07:00Asia/Shanghai2026-10-16.

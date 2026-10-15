@@ -1,0 +1,224 @@
+{
+  "schema": "m31-runtime-viewer-evidence-preparation/1",
+  "state": "unbound-pending-final-saved-review",
+  "scope": "Read-only saved JSON, file lengths and hashes. Intended descriptors only; not a deployment binding, adapter execution, scientific evaluation or final review.",
+  "sourceCommit": "f12d8c836e7b991ec33e6de662d00ed05dcce33e",
+  "verifiedTerminalPins": [
+    {
+      "path": "freeze.json",
+      "bytes": 12606,
+      "sha256": "c0c6b2fda84567a76025b2e5f06832cbc1dd5811c23a246df5623f46baf8f8a9"
+    },
+    {
+      "path": "results/result.json",
+      "bytes": 7659,
+      "sha256": "a6a03d917e23fb7172f9c036441b0c05e9d92381f79803dbe1099bdf3d827acf"
+    },
+    {
+      "path": "results/budget.json",
+      "bytes": 2763,
+      "sha256": "86ad50511f1f459a5bbc00980f399dd6f5f04259a71237aeece01321a7b672fc"
+    },
+    {
+      "path": "publication/science-capture-execution.json",
+      "bytes": 1016,
+      "sha256": "64946543e2e8660e7ce9b57e7f2d7c9f0e9032c66d4f2bfe8396630425c939ed"
+    },
+    {
+      "path": "publication/science-capture-output.json",
+      "bytes": 493,
+      "sha256": "ea7f6a1c1471fb0bcc9285a93949fb3722079d5636532e477a80c312efdfc19a"
+    },
+    {
+      "path": "results/capture.json",
+      "bytes": 2187,
+      "sha256": "94b7b9c05a0257922e68c360f8b54d2187c06469614410c56cd64a55bc790955"
+    }
+  ],
+  "manifest": {
+    "listedRawFiles": 21,
+    "listedRawBytes": 120022,
+    "allListedRawPinsVerified": true,
+    "rawDirectoryFiles": 22,
+    "rawDirectoryBytes": 127681,
+    "resultsDirectoryFiles": 7,
+    "resultsDirectoryBytes": 13661
+  },
+  "observed": {
+    "terminal": true,
+    "status": "failed",
+    "scientificQualified": false,
+    "cases": 0,
+    "runtime": "155.0.8059.80",
+    "capabilitySupported": true,
+    "capabilityCompiled": true,
+    "pipelineCreations": 3,
+    "pairControls": 15,
+    "scalarControls": 146,
+    "referenceRootRecords": 292,
+    "pairDispatch": {
+      "key": "controls-pairs",
+      "entry": "controlPairs",
+      "count": 15,
+      "groups": 1,
+      "submitted": true,
+      "readbacks": [
+        {
+          "name": "output",
+          "bytes": 3840,
+          "persisted": false
+        }
+      ],
+      "completed": false
+    },
+    "activeInvocations": 15,
+    "launchedInvocations": 64,
+    "apiError": {
+      "name": "TypeError",
+      "message": "Failed to fetch"
+    },
+    "apiErrorUnderlyingCause": "Not established by saved evidence",
+    "sinkClosure": {
+      "activeWrites": 0,
+      "reservations": [
+        {
+          "name": "controls-pairs-gpu-output.u32",
+          "size": 3840,
+          "started": false,
+          "complete": false
+        }
+      ],
+      "closed": true
+    },
+    "gpuShutdown": {
+      "deviceDestroyed": true,
+      "costs": {
+        "pipelineCreations": 3,
+        "bufferCreations": 4,
+        "allocatedBytes": 11648,
+        "uploadedBytes": 3968,
+        "readbackBytes": 0,
+        "dispatches": 1,
+        "activeInvocations": 15,
+        "launchedInvocations": 64,
+        "liveBufferBytes": 0,
+        "peakLiveBufferBytes": 11648
+      }
+    },
+    "missing": [
+      "GPU pair output binary",
+      "GPU scalar output binary",
+      "H output",
+      "Main-family input",
+      "Main-family receiver/rotor/body output"
+    ],
+    "headline": "GPU dispatch submitted. Output unavailable.",
+    "wholeLifecycleVerified": false,
+    "processClosureComplete": true,
+    "actualCaptureExitCode": 1,
+    "observerFullElapsedSeconds": 2.0539421669999998,
+    "elapsedScope": "Execution diagnostic only; not a benchmark or performance comparison"
+  },
+  "intendedRawDescriptors": {
+    "pairPoses": {
+      "path": "raw/controls-pairs-original.f64",
+      "bytes": 1920,
+      "sha256": "e6f6998a194cd36bce386f967a5a43b84e69b5e0c0ea0b5176484af80f998fbf"
+    },
+    "pairReference": {
+      "path": "raw/controls-reference-pairs.json",
+      "bytes": 6324,
+      "sha256": "adecf5f6289b5952fef3fe520592e6d14f8945061a196a0b62cbf7c807e77edd"
+    },
+    "referenceStatus": {
+      "path": "raw/controls-reference-status.json",
+      "bytes": 369,
+      "sha256": "fd336db836f2eb7bf2925ec2c73bfd454af7c3f2ec934aef17d83c0ccd495e07"
+    },
+    "metadata": {
+      "path": "raw/control-metadata.json",
+      "bytes": 16957,
+      "sha256": "2385b2887b708f8b4acda95438f77f720045c1ad353c1a52738d94c7169110a4"
+    },
+    "rootOriginal": {
+      "path": "raw/controls-roots-original.f64",
+      "bytes": 2336,
+      "sha256": "02d0f7f61b07c3fe6a1985ca1386da33d55b706f55ad5927937be4aa20ca8e31"
+    },
+    "rootR": {
+      "path": "raw/controls-reference-R-roots.bin",
+      "bytes": 14016,
+      "sha256": "196c0f01242dec1d586d4561b9a8042b74ccc465f2dc0a6de599dec7dd091528"
+    },
+    "rootQ": {
+      "path": "raw/controls-reference-Q-roots.bin",
+      "bytes": 14016,
+      "sha256": "0f6e7cdb88a2c4938da6fdcf67e75d1de21586adf38bef7857c0edcd5767325e"
+    },
+    "constants": {
+      "path": "raw/scientific-constants-and-gates.json",
+      "bytes": 2422,
+      "sha256": "2eeffbe666a645f40f0a7c97d061b1525aadc9f1a34c9b6d8c867180eb7d814b"
+    },
+    "pairDispatch": {
+      "path": "raw/controls-pairs-gpu-api.json",
+      "bytes": 2093,
+      "sha256": "3a7aecec9fcf82e0775776f89b7bb5d66010533a5d4f7539c4d7028c1f18032f"
+    },
+    "browserFailure": {
+      "path": "raw/browser-failure-evidence.json",
+      "bytes": 2486,
+      "sha256": "d399d72971bc7f52b708934acdaec78126fe3e011626d19645e8fa88d0127914"
+    },
+    "capability": {
+      "path": "raw/capability.json",
+      "bytes": 1965,
+      "sha256": "06562eaf6c106211b52d793d354a32e906193dff0c6e204d4fd42331bfcfb9a9"
+    },
+    "runtimeBefore": {
+      "path": "raw/browser-runtime-before-launch.json",
+      "bytes": 1691,
+      "sha256": "a2c9d5e7d16b26f6716f518b2679256612144011cdf4ca85ea26917021763787"
+    },
+    "runtimeAfter": {
+      "path": "raw/browser-runtime-after-launch.json",
+      "bytes": 1691,
+      "sha256": "a2c9d5e7d16b26f6716f518b2679256612144011cdf4ca85ea26917021763787"
+    },
+    "hostControls": {
+      "path": "raw/controls-host-only-result.json",
+      "bytes": 4544,
+      "sha256": "ee3a9d14e34c6dbb387566f0d1c36418b008db03af8cb031059e1ae440222a55"
+    }
+  },
+  "finalReviewAuthority": {
+    "state": "pending",
+    "artifact": null,
+    "statusPointer": null,
+    "detailPointer": null,
+    "scope": "The actual scientific capture observation is an execution report; final saved-review authority must be supplied separately."
+  },
+  "preservation": {
+    "protectedFiles": 89,
+    "bytesSHA256MtimeAndInodeUnchanged": true,
+    "frozenSciencePinsVerified": 57,
+    "predecessorViewerManifest": {
+      "path": "research/m31-body-load-2026-10-16/viewer/qa/FINAL-MANIFEST.json",
+      "bytes": 22026,
+      "sha256": "66ce999c1234dcccc13e9ae203d5f32e967ee9c8ec53d1647c90c8210e7106f7"
+    },
+    "predecessorViewerPinsVerified": 69
+  },
+  "execution": {
+    "bindingInvocations": 0,
+    "adapterExecutions": 0,
+    "browserQAInvocations": 0,
+    "scientificInvocations": 0
+  },
+  "unboundArtifact": {
+    "path": "viewer/viewer-artifact.json",
+    "bytes": 258,
+    "sha256": "5e5a3754a41a3324df4efd1a5366b2e1f7b431047436bfc5765e511a3cc31dc6"
+  },
+  "nextStep": "Await sole saved review completion and final external-observation identity, then authorized binding and actual-data browser QA."
+}

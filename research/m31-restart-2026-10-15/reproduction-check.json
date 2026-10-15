@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-15",
+  "method": "Root reran copied audit scripts against the restored sanitized public evidence in an external scratch directory. No original evidence files were written. Exact output equality checked below.",
+  "interpretation": "Execution reproducibility of the same analysis scripts, not a new independent model or physical validation. Contact checks are three two-step single-drone replays per script invocation.",
+  "checks": [
+    {
+      "file": "evidence/audit-data.json",
+      "byteIdentical": true,
+      "sha256": "552faaad54035063efeff93729db8732523caad44b5dcb935e9717d53b645053"
+    },
+    {
+      "file": "evidence/audit-controls.json",
+      "byteIdentical": true,
+      "sha256": "ec9c201923f778d82168e65ba43fff673da52ec495e2afffb3ebefdce6612b01"
+    },
+    {
+      "file": "protocol/read-only-evidence-audit.json",
+      "byteIdentical": true,
+      "sha256": "edb39dd8dae6181d7aedb752768f5f161e2e6b704598913afaa72bd84fd15b3a"
+    }
+  ]
+}
