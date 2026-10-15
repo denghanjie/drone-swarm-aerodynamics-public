@@ -1,0 +1,477 @@
+{
+  "status": "STATIC_UNCOMPILED_UNEXECUTED",
+  "slotOrder": "((selectionIndex*5000+sourceID)*4+rotor)",
+  "context": "originIndex and arm are immutable external dispatch/file provenance, not encoded in record identity",
+  "origins": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      64,
+      -32,
+      16
+    ]
+  ],
+  "bindings": [
+    {
+      "binding": 0,
+      "name": "constants",
+      "access": "read",
+      "bytes": 64
+    },
+    {
+      "binding": 1,
+      "name": "nodes",
+      "access": "read",
+      "bytesByArm": {
+        "A": 160000,
+        "B": 160000,
+        "C": 240000
+      }
+    },
+    {
+      "binding": 2,
+      "name": "offsets",
+      "access": "read",
+      "bytes": 256
+    },
+    {
+      "binding": 3,
+      "name": "selectedIDs",
+      "access": "read",
+      "bytes": 16
+    },
+    {
+      "binding": 4,
+      "name": "terms",
+      "access": "read_write",
+      "bytes": 8320000
+    },
+    {
+      "binding": 5,
+      "name": "controls",
+      "access": "read",
+      "bytes": 3200
+    },
+    {
+      "binding": 6,
+      "name": "controlOutputs",
+      "access": "read_write",
+      "bytes": 2080,
+      "usage": "STORAGE|COPY_SRC|COPY_DST; clearBuffer before each arm dispatch"
+    },
+    {
+      "binding": 7,
+      "name": "sums",
+      "access": "read_write",
+      "bytes": 512
+    }
+  ],
+  "nodes": {
+    "A": {
+      "strideWords": 8,
+      "fields": [
+        "px",
+        "py",
+        "pz",
+        "ax",
+        "ay",
+        "az",
+        "pad0",
+        "pad1"
+      ]
+    },
+    "B": {
+      "strideWords": 8,
+      "identity": "byte-identical to A at the same origin"
+    },
+    "C": {
+      "strideWords": 12,
+      "fields": [
+        "pxHi",
+        "pyHi",
+        "pzHi",
+        "ax",
+        "ay",
+        "az",
+        "pad0",
+        "pad1",
+        "pxLo",
+        "pyLo",
+        "pzLo",
+        "pad2"
+      ],
+      "firstEightWords": "byte-identical to A/B per node",
+      "lowMagnitudeMaximum": "2^-17; raw finite/padding check precedes interpretation, numeric bound precedes geometry"
+    }
+  },
+  "termRecord": {
+    "strideBytes": 104,
+    "storageType": "u32",
+    "fields": [
+      {
+        "name": "ordinal",
+        "word": 0,
+        "byteOffset": 0,
+        "f32BitPattern": false
+      },
+      {
+        "name": "receiverID",
+        "word": 1,
+        "byteOffset": 4,
+        "f32BitPattern": false
+      },
+      {
+        "name": "sourceID",
+        "word": 2,
+        "byteOffset": 8,
+        "f32BitPattern": false
+      },
+      {
+        "name": "rotor",
+        "word": 3,
+        "byteOffset": 12,
+        "f32BitPattern": false
+      },
+      {
+        "name": "status",
+        "word": 4,
+        "byteOffset": 16,
+        "f32BitPattern": false
+      },
+      {
+        "name": "policyCode",
+        "word": 5,
+        "byteOffset": 20,
+        "f32BitPattern": false
+      },
+      {
+        "name": "validityMask",
+        "word": 6,
+        "byteOffset": 24,
+        "f32BitPattern": false
+      },
+      {
+        "name": "routingFlags",
+        "word": 7,
+        "byteOffset": 28,
+        "f32BitPattern": false
+      },
+      {
+        "name": "centerNorm",
+        "word": 8,
+        "byteOffset": 32,
+        "f32BitPattern": true,
+        "validityBit": 0
+      },
+      {
+        "name": "down",
+        "word": 9,
+        "byteOffset": 36,
+        "f32BitPattern": true,
+        "validityBit": 1
+      },
+      {
+        "name": "radial",
+        "word": 10,
+        "byteOffset": 40,
+        "f32BitPattern": true,
+        "validityBit": 2
+      },
+      {
+        "name": "halfWidth",
+        "word": 11,
+        "byteOffset": 44,
+        "f32BitPattern": true,
+        "validityBit": 3
+      },
+      {
+        "name": "axisDot",
+        "word": 12,
+        "byteOffset": 48,
+        "f32BitPattern": true,
+        "validityBit": 4
+      },
+      {
+        "name": "projection",
+        "word": 13,
+        "byteOffset": 52,
+        "f32BitPattern": true,
+        "validityBit": 5
+      },
+      {
+        "name": "normalizedDown",
+        "word": 14,
+        "byteOffset": 56,
+        "f32BitPattern": true,
+        "validityBit": 6
+      },
+      {
+        "name": "xi",
+        "word": 15,
+        "byteOffset": 60,
+        "f32BitPattern": true,
+        "validityBit": 7
+      },
+      {
+        "name": "normalizedSpeed",
+        "word": 16,
+        "byteOffset": 64,
+        "f32BitPattern": true,
+        "validityBit": 8
+      },
+      {
+        "name": "fadeDown",
+        "word": 17,
+        "byteOffset": 68,
+        "f32BitPattern": true,
+        "validityBit": 9
+      },
+      {
+        "name": "fadeRadial",
+        "word": 18,
+        "byteOffset": 72,
+        "f32BitPattern": true,
+        "validityBit": 10
+      },
+      {
+        "name": "term",
+        "word": 19,
+        "byteOffset": 76,
+        "f32BitPattern": true,
+        "validityBit": 11
+      },
+      {
+        "name": "centerDeltaX",
+        "word": 20,
+        "byteOffset": 80,
+        "f32BitPattern": true,
+        "validityBit": 12
+      },
+      {
+        "name": "centerDeltaY",
+        "word": 21,
+        "byteOffset": 84,
+        "f32BitPattern": true,
+        "validityBit": 13
+      },
+      {
+        "name": "centerDeltaZ",
+        "word": 22,
+        "byteOffset": 88,
+        "f32BitPattern": true,
+        "validityBit": 14
+      },
+      {
+        "name": "rotorDeltaX",
+        "word": 23,
+        "byteOffset": 92,
+        "f32BitPattern": true,
+        "validityBit": 15
+      },
+      {
+        "name": "rotorDeltaY",
+        "word": 24,
+        "byteOffset": 96,
+        "f32BitPattern": true,
+        "validityBit": 16
+      },
+      {
+        "name": "rotorDeltaZ",
+        "word": 25,
+        "byteOffset": 100,
+        "f32BitPattern": true,
+        "validityBit": 17
+      }
+    ],
+    "statuses": {
+      "0": "unwritten",
+      "1": "malformed",
+      "2": "model-domain-invalid",
+      "3": "valid-early-zero",
+      "4": "profile-evaluated-zero",
+      "5": "profile-positive",
+      "6": "arithmetic-invalid"
+    },
+    "numericValidityBits": "bitk mapsword8+k; termbit11,centerbits12..14,rotorbits15..17",
+    "mainMasks": {
+      "self": 2048,
+      "outside": 30721,
+      "downExit": 260099,
+      "nearInvalid": 258055,
+      "nearSkip": 260103,
+      "radialCutoff": 260175,
+      "fullProfile": 262143
+    },
+    "scalarControlMasks": {
+      "self": 2048,
+      "outside": 2049,
+      "downExit": 2051,
+      "nearInvalid": 7,
+      "nearSkip": 2055,
+      "radialCutoff": 2127,
+      "fullProfile": 4095
+    },
+    "invalidPayload": "Unreached fields must be raw+0 with validityclear; invalid term status clears termbit and termword"
+  },
+  "reductionRecord": {
+    "strideBytes": 32,
+    "fields": [
+      "selectionIndex",
+      "receiverID",
+      "rotor",
+      "status",
+      "validityMask",
+      "termCount",
+      "sumBits",
+      "firstBadSlot"
+    ],
+    "statuses": {
+      "0": "unwritten",
+      "1": "invalid",
+      "2": "complete-valid"
+    },
+    "success": {
+      "status": 2,
+      "validityMask": 1,
+      "termCount": 5000,
+      "firstBadSlot": 4294967295
+    }
+  },
+  "controlInput": {
+    "strideBytes": 160,
+    "records": 20,
+    "words": "id,kind,selfFlag,0;8scalars;sourceHigh.xyz,0;receiverHigh.xyz,0;sourceAxis.xyz,0;receiverAxis.xyz,0;offset.xyz,0;sourceLow.xyz,0;receiverLow.xyz,0",
+    "expected": "controls.json controls[i].expectedByArm[arm]; expectedNumericWords are absolute outputwordindices8..25",
+    "sameBytesAllArms": true
+  },
+  "entrypoints": {
+    "controlsA": {
+      "arm": "A",
+      "bindings": [
+        0,
+        5,
+        6
+      ],
+      "groupsX": 1,
+      "activeSlots": 20,
+      "paddingLanes": 44
+    },
+    "termsA": {
+      "arm": "A",
+      "bindings": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "groupsX": 1250,
+      "activeSlots": 80000,
+      "paddingLanes": 0
+    },
+    "controlsB": {
+      "arm": "B",
+      "bindings": [
+        0,
+        5,
+        6
+      ],
+      "groupsX": 1,
+      "activeSlots": 20,
+      "paddingLanes": 44
+    },
+    "termsB": {
+      "arm": "B",
+      "bindings": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "groupsX": 1250,
+      "activeSlots": 80000,
+      "paddingLanes": 0
+    },
+    "controlsC": {
+      "arm": "C",
+      "bindings": [
+        0,
+        5,
+        6
+      ],
+      "groupsX": 1,
+      "activeSlots": 20,
+      "paddingLanes": 44
+    },
+    "termsC": {
+      "arm": "C",
+      "bindings": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "groupsX": 1250,
+      "activeSlots": 80000,
+      "paddingLanes": 0
+    },
+    "reduceMain": {
+      "bindings": [
+        3,
+        4,
+        7
+      ],
+      "groupsX": 1,
+      "activeSlots": 16,
+      "paddingLanes": 48,
+      "storedTermVisits": 80000,
+      "requires": "passing exact matching-cell gate and original retained term buffer"
+    }
+  },
+  "workgroupSize": [
+    64,
+    1,
+    1
+  ],
+  "numericAbsoluteBounds": [
+    512,
+    1024,
+    2048,
+    8,
+    4,
+    4,
+    64,
+    128,
+    3,
+    1.0010000467300415,
+    1.0010000467300415,
+    128,
+    257,
+    257,
+    257,
+    258,
+    258,
+    258
+  ],
+  "signedFields": [
+    1,
+    4,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "referenceRecords": {
+    "metadata": "8u32 matching outputwords0..7",
+    "scalars": "18f64LE matching numeric words8..25",
+    "terms": "onef64LE per slot, validitybit11 required",
+    "sumOrder": "selectionIndex*4+rotor"
+  }
+}

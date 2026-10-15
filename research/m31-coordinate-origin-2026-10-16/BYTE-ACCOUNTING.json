@@ -1,0 +1,501 @@
+{
+  "scope": "Maximum complete exposure. Conditional skipped files remain absent; no budget must be filled. JSON/meta/failure files also pass boundedwriter. Byte counts do not measure speed or total process memory.",
+  "typedRawFiles": [
+    {
+      "path": "generated-receiver-ids.u32",
+      "bytes": 16
+    },
+    {
+      "path": "generated-canonicalNumerators.i32",
+      "bytes": 60000
+    },
+    {
+      "path": "generated-translatedNumerators.i32",
+      "bytes": 60000
+    },
+    {
+      "path": "generated-angleTicks.i32",
+      "bytes": 60000
+    },
+    {
+      "path": "generated-angles.f64",
+      "bytes": 120000
+    },
+    {
+      "path": "generated-translationResiduals.f64",
+      "bytes": 120000
+    },
+    {
+      "path": "o0-states.f64",
+      "bytes": 680000
+    },
+    {
+      "path": "o0-R-prepared-nodes.f64",
+      "bytes": 320000
+    },
+    {
+      "path": "o0-R-prepared-offsets.f64",
+      "bytes": 512
+    },
+    {
+      "path": "o0-R-prepared-axis-metrics.f64",
+      "bytes": 120000
+    },
+    {
+      "path": "o0-R-prepared-constants.f64",
+      "bytes": 128
+    },
+    {
+      "path": "o0-R-prepared-ids.u32",
+      "bytes": 16
+    },
+    {
+      "path": "o0-R-scalars.f64",
+      "bytes": 11520000
+    },
+    {
+      "path": "o0-R-terms.f64",
+      "bytes": 640000
+    },
+    {
+      "path": "o0-R-ordinarySums.f64",
+      "bytes": 128
+    },
+    {
+      "path": "o0-R-compensatedSums.f64",
+      "bytes": 128
+    },
+    {
+      "path": "o0-R-metadata.u32",
+      "bytes": 2560000
+    },
+    {
+      "path": "o0-R-codes.u8",
+      "bytes": 80000
+    },
+    {
+      "path": "o0-R-sumValidity.u8",
+      "bytes": 16
+    },
+    {
+      "path": "o0-Q0-prepared-nodes.f64",
+      "bytes": 320000
+    },
+    {
+      "path": "o0-Q0-prepared-offsets.f64",
+      "bytes": 512
+    },
+    {
+      "path": "o0-Q0-prepared-axis-metrics.f64",
+      "bytes": 120000
+    },
+    {
+      "path": "o0-Q0-prepared-constants.f64",
+      "bytes": 128
+    },
+    {
+      "path": "o0-Q0-prepared-ids.u32",
+      "bytes": 16
+    },
+    {
+      "path": "o0-Q0-scalars.f64",
+      "bytes": 11520000
+    },
+    {
+      "path": "o0-Q0-terms.f64",
+      "bytes": 640000
+    },
+    {
+      "path": "o0-Q0-ordinarySums.f64",
+      "bytes": 128
+    },
+    {
+      "path": "o0-Q0-compensatedSums.f64",
+      "bytes": 128
+    },
+    {
+      "path": "o0-Q0-metadata.u32",
+      "bytes": 2560000
+    },
+    {
+      "path": "o0-Q0-codes.u8",
+      "bytes": 80000
+    },
+    {
+      "path": "o0-Q0-sumValidity.u8",
+      "bytes": 16
+    },
+    {
+      "path": "o0-Q1-prepared-nodes.f64",
+      "bytes": 320000
+    },
+    {
+      "path": "o0-Q1-prepared-offsets.f64",
+      "bytes": 512
+    },
+    {
+      "path": "o0-Q1-prepared-axis-metrics.f64",
+      "bytes": 120000
+    },
+    {
+      "path": "o0-Q1-prepared-constants.f64",
+      "bytes": 128
+    },
+    {
+      "path": "o0-Q1-prepared-ids.u32",
+      "bytes": 16
+    },
+    {
+      "path": "o0-Q1-scalars.f64",
+      "bytes": 11520000
+    },
+    {
+      "path": "o0-Q1-terms.f64",
+      "bytes": 640000
+    },
+    {
+      "path": "o0-Q1-ordinarySums.f64",
+      "bytes": 128
+    },
+    {
+      "path": "o0-Q1-compensatedSums.f64",
+      "bytes": 128
+    },
+    {
+      "path": "o0-Q1-metadata.u32",
+      "bytes": 2560000
+    },
+    {
+      "path": "o0-Q1-codes.u8",
+      "bytes": 80000
+    },
+    {
+      "path": "o0-Q1-sumValidity.u8",
+      "bytes": 16
+    },
+    {
+      "path": "o0-positionPackingResiduals.f64",
+      "bytes": 120000
+    },
+    {
+      "path": "o0-reconstructionResiduals.f64",
+      "bytes": 120000
+    },
+    {
+      "path": "o0-packedAB-nodes.u32",
+      "bytes": 160000
+    },
+    {
+      "path": "o0-packedAB-offsets.u32",
+      "bytes": 256
+    },
+    {
+      "path": "o0-packedAB-ids.u32",
+      "bytes": 16
+    },
+    {
+      "path": "o0-packedAB-constants.u32",
+      "bytes": 64
+    },
+    {
+      "path": "o0-packedC-nodes.u32",
+      "bytes": 240000
+    },
+    {
+      "path": "o0-packedC-offsets.u32",
+      "bytes": 256
+    },
+    {
+      "path": "o0-packedC-ids.u32",
+      "bytes": 16
+    },
+    {
+      "path": "o0-packedC-constants.u32",
+      "bytes": 64
+    },
+    {
+      "path": "o0-A-terms-gpu.u32",
+      "bytes": 8320000
+    },
+    {
+      "path": "o0-A-reduce-gpu.u32",
+      "bytes": 512
+    },
+    {
+      "path": "o0-B-terms-gpu.u32",
+      "bytes": 8320000
+    },
+    {
+      "path": "o0-B-reduce-gpu.u32",
+      "bytes": 512
+    },
+    {
+      "path": "o0-C-terms-gpu.u32",
+      "bytes": 8320000
+    },
+    {
+      "path": "o0-C-reduce-gpu.u32",
+      "bytes": 512
+    },
+    {
+      "path": "o1-states.f64",
+      "bytes": 680000
+    },
+    {
+      "path": "o1-R-prepared-nodes.f64",
+      "bytes": 320000
+    },
+    {
+      "path": "o1-R-prepared-offsets.f64",
+      "bytes": 512
+    },
+    {
+      "path": "o1-R-prepared-axis-metrics.f64",
+      "bytes": 120000
+    },
+    {
+      "path": "o1-R-prepared-constants.f64",
+      "bytes": 128
+    },
+    {
+      "path": "o1-R-prepared-ids.u32",
+      "bytes": 16
+    },
+    {
+      "path": "o1-R-scalars.f64",
+      "bytes": 11520000
+    },
+    {
+      "path": "o1-R-terms.f64",
+      "bytes": 640000
+    },
+    {
+      "path": "o1-R-ordinarySums.f64",
+      "bytes": 128
+    },
+    {
+      "path": "o1-R-compensatedSums.f64",
+      "bytes": 128
+    },
+    {
+      "path": "o1-R-metadata.u32",
+      "bytes": 2560000
+    },
+    {
+      "path": "o1-R-codes.u8",
+      "bytes": 80000
+    },
+    {
+      "path": "o1-R-sumValidity.u8",
+      "bytes": 16
+    },
+    {
+      "path": "o1-Q0-prepared-nodes.f64",
+      "bytes": 320000
+    },
+    {
+      "path": "o1-Q0-prepared-offsets.f64",
+      "bytes": 512
+    },
+    {
+      "path": "o1-Q0-prepared-axis-metrics.f64",
+      "bytes": 120000
+    },
+    {
+      "path": "o1-Q0-prepared-constants.f64",
+      "bytes": 128
+    },
+    {
+      "path": "o1-Q0-prepared-ids.u32",
+      "bytes": 16
+    },
+    {
+      "path": "o1-Q0-scalars.f64",
+      "bytes": 11520000
+    },
+    {
+      "path": "o1-Q0-terms.f64",
+      "bytes": 640000
+    },
+    {
+      "path": "o1-Q0-ordinarySums.f64",
+      "bytes": 128
+    },
+    {
+      "path": "o1-Q0-compensatedSums.f64",
+      "bytes": 128
+    },
+    {
+      "path": "o1-Q0-metadata.u32",
+      "bytes": 2560000
+    },
+    {
+      "path": "o1-Q0-codes.u8",
+      "bytes": 80000
+    },
+    {
+      "path": "o1-Q0-sumValidity.u8",
+      "bytes": 16
+    },
+    {
+      "path": "o1-Q1-prepared-nodes.f64",
+      "bytes": 320000
+    },
+    {
+      "path": "o1-Q1-prepared-offsets.f64",
+      "bytes": 512
+    },
+    {
+      "path": "o1-Q1-prepared-axis-metrics.f64",
+      "bytes": 120000
+    },
+    {
+      "path": "o1-Q1-prepared-constants.f64",
+      "bytes": 128
+    },
+    {
+      "path": "o1-Q1-prepared-ids.u32",
+      "bytes": 16
+    },
+    {
+      "path": "o1-Q1-scalars.f64",
+      "bytes": 11520000
+    },
+    {
+      "path": "o1-Q1-terms.f64",
+      "bytes": 640000
+    },
+    {
+      "path": "o1-Q1-ordinarySums.f64",
+      "bytes": 128
+    },
+    {
+      "path": "o1-Q1-compensatedSums.f64",
+      "bytes": 128
+    },
+    {
+      "path": "o1-Q1-metadata.u32",
+      "bytes": 2560000
+    },
+    {
+      "path": "o1-Q1-codes.u8",
+      "bytes": 80000
+    },
+    {
+      "path": "o1-Q1-sumValidity.u8",
+      "bytes": 16
+    },
+    {
+      "path": "o1-positionPackingResiduals.f64",
+      "bytes": 120000
+    },
+    {
+      "path": "o1-reconstructionResiduals.f64",
+      "bytes": 120000
+    },
+    {
+      "path": "o1-packedAB-nodes.u32",
+      "bytes": 160000
+    },
+    {
+      "path": "o1-packedAB-offsets.u32",
+      "bytes": 256
+    },
+    {
+      "path": "o1-packedAB-ids.u32",
+      "bytes": 16
+    },
+    {
+      "path": "o1-packedAB-constants.u32",
+      "bytes": 64
+    },
+    {
+      "path": "o1-packedC-nodes.u32",
+      "bytes": 240000
+    },
+    {
+      "path": "o1-packedC-offsets.u32",
+      "bytes": 256
+    },
+    {
+      "path": "o1-packedC-ids.u32",
+      "bytes": 16
+    },
+    {
+      "path": "o1-packedC-constants.u32",
+      "bytes": 64
+    },
+    {
+      "path": "o1-A-terms-gpu.u32",
+      "bytes": 8320000
+    },
+    {
+      "path": "o1-A-reduce-gpu.u32",
+      "bytes": 512
+    },
+    {
+      "path": "o1-B-terms-gpu.u32",
+      "bytes": 8320000
+    },
+    {
+      "path": "o1-B-reduce-gpu.u32",
+      "bytes": 512
+    },
+    {
+      "path": "o1-C-terms-gpu.u32",
+      "bytes": 8320000
+    },
+    {
+      "path": "o1-C-reduce-gpu.u32",
+      "bytes": 512
+    },
+    {
+      "path": "packed-controls.u32",
+      "bytes": 3200
+    },
+    {
+      "path": "controls-A-gpu.u32",
+      "bytes": 2080
+    },
+    {
+      "path": "controls-B-gpu.u32",
+      "bytes": 2080
+    },
+    {
+      "path": "controls-C-gpu.u32",
+      "bytes": 2080
+    }
+  ],
+  "typedRawFileCount": 116,
+  "typedRawBytes": 144439440,
+  "rawByteCap": 268435456,
+  "rawFailureReserveBytes": 8388608,
+  "separateResultCap": 33554432,
+  "GPU": {
+    "pipelineCreations": 7,
+    "shaderModules": 1,
+    "adapterRequests": 1,
+    "deviceRequests": 1,
+    "maximumComputeDispatches": 15,
+    "maximumBufferCreations": 48,
+    "maximumCumulativeAllocatedBytes": 100979360,
+    "maximumCumulativeUploadedBytes": 1124896,
+    "maximumCumulativeReadbackBytes": 49929312,
+    "maximumClearedControlOutputBytes": 6240,
+    "maximumLiveBufferBytes": 16880848,
+    "ABNodeBytes": 160000,
+    "CNodeBytes": 240000,
+    "CExtraNodeBytes": 80000,
+    "termsPerCellBytes": 8320000,
+    "sumPerCellBytes": 512,
+    "controlInputBytes": 3200,
+    "controlOutputBytes": 2080,
+    "lifecycle": "onecommonconstantbuffer;controlinput/outputreleasedafterall3controls;onecellnode/offset/id/term/sumbufferset retainedthroughitsoptionalreductionthenreleased;oneephemeralreadbackbufferatonce",
+    "exclusions": "Browser/driverruntime,shadercompiler,driverinternalcopies,JSobjects,hostreferences,base64encodingsandUIrendering arenot boundedbythisGPUbufferledger."
+  },
+  "hostReferencePasses": 6,
+  "hostReferenceSlots": 480000,
+  "gpuTermSlots": 480000,
+  "serialTermReadReservation": 480000,
+  "costInterpretation": "C adds80kBper5000nodebuffer(50percent); commoninstrumentationanddiagnosticreadbacksarenotproductionarchitecture. No speedclaim."
+}
