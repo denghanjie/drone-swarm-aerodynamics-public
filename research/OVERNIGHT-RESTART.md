@@ -4,11 +4,13 @@
 
 Public additive worktree: current repository, branch `codex/m31-audit-2026-10-15`. Preserve the original eight-step roadmap and historical M31 base. Later remote main/DOT at `1336f5c416875a9651f92b58b2ed06649f25b04e` remains separate and untouched. The private workspace, attachments, credentials and chat records must never be published.
 
-## Current next campaign — UNEXECUTED
+## Current checkpoint — science and review COMPLETE; result publication pending
 
-`research/m31-zero-screen-2026-10-16/`: exact-zero E/L engineering experiment. E removes current Z's unused positive-policy work; L delays center radial geometry past downstream-zero exits. Static source/driver and protocol exist, no cases generated, modules imported, geometry/field/root evaluation or timings performed. Independent source review found/fixed signed-zero and timed-mask failure-witness gaps. Supervisor now closes every attempted science invocation immediately. Final static review/freeze/publication verification remain pending. No scientific process is active.
+`research/m31-zero-screen-2026-10-16/`: exact-zero E/L campaign. Source `4717d9b5bb3d82fe2b3d75ea26801de201d124b6`, freeze `2f1313c8476c09352ae22711be15afce5c7a3d229755a0502b1266201cb41f6a`, all40pins independently verified before execution. Sole science53.795325667s,275rawfiles/26,810,779bytes,26case checks/202calls/72timings. All numerical/control gates pass. Both E/Z and L/E usefulness criteria are unmet on both fresh inputs. Preserve this negative result.
 
-Historical comparison is complete: E substantially repeats DOT's support idea; L is ordinary scheduling, not an algorithmic novelty claim. Current M is not claimed to be DOT's fastest lean implementation. Read PROTOCOL.md, PREFLIGHT-RESOLUTIONS.md, PRIOR-WORK-COMPARISON.md and any later FINAL-PREFLIGHT.md/freeze.json. Do NOT execute before the new source commit and exact freeze/pins are independently verified. Planned one-shot matrix202calls,24exposed fixtures+2fresh static lattices, seeds253741/608897. Current draft status is not execution permission.
+Sole saved review passed1,371,035checks/0failures in3.262752916s; both budgets terminal. Viewer passed all26cases/bothE-Ltreatments/first-lastreceiver checks, data corruption rejection and desktop/mobile controls. No science process active. Independent final memo and privacy review saved; result manifest/push/verification are next; do NOT rerun scientific or saved-review commands. Prior prospective files retain historical wording.
+
+Next question under static desk review: a distinct browser f32 wake/receiver feasibility gate. It has not been frozen or executed. It must separate quantized-input error, actual GPU arithmetic, roots and load assembly; M8 mechanics timing is not wake qualification. E repeats DOT's broad support idea and L is ordinary lazy evaluation, without novelty claims. Read new README,claims,POSTRUN-RESTART plus frozen prior-work comparison.
 
 ## Latest completed and published checkpoint
 
