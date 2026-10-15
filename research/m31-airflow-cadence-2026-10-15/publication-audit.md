@@ -1,0 +1,5 @@
+# Public-payload review
+
+New records contain synthetic prescribed positions, assumed aerodynamic model loads and technical timings. No private chat/attachments, credentials, raw tool logs, private home paths, hostnames, serials or actual flight locations are published. The physical-data note contains bibliographic facts, paraphrases and source links only; no third-party raw telemetry, copyrighted figures, papers or externally copied source code are included. The arithmetic comparator is independently written local code. Source records retain their original public hashes.
+
+All raw JSON contents are unchanged and included in this modest 3.2MB Git payload. Browser captures are page-only. Existing Three.js vendor licenses remain. Text was scanned for private paths and common credential patterns and reviewed by provenance; pattern scans alone are not a universal secrecy guarantee. The payload manifest lists the reviewed bytes. Frozen execution sources and inputs are unchanged, and no failed result is removed.

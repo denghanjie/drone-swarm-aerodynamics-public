@@ -1,0 +1,39 @@
+{
+  "wallCapSeconds": 120,
+  "rawByteCap": 33554432,
+  "entries": [
+    {
+      "id": "cadence-pilot",
+      "exitCode": 0,
+      "wallSeconds": 0.5130210829999999,
+      "childCPUSeconds": 0.6759390000000001,
+      "cumulativeChildMaxRSSPlatformUnits": 90832896,
+      "stop": null,
+      "completeProcess": true,
+      "rawBytesAfter": 3184006
+    },
+    {
+      "id": "independent-saved-record-recompute",
+      "wallSeconds": 0.097805959,
+      "completeProcess": true,
+      "rawBytesAfter": 3184006,
+      "scope": "Independent read-only JSON analysis; no fields, integrator calls or new samples",
+      "wallMeasurement": "Reviewer perf_counter, including report output; CPU/RSS not measured for this tiny verifier"
+    }
+  ],
+  "terminal": true,
+  "platform": {
+    "system": "Darwin",
+    "release": "25.5.0",
+    "machine": "arm64",
+    "python": "3.9.6"
+  },
+  "scope": "Execution diagnostics only, not a speed benchmark. CPU time is child aggregate; maximum RSS is cumulative child high-water, not simultaneous total memory.",
+  "active": null,
+  "requiresFailureReview": false,
+  "closure": {
+    "reason": "once-only pilot and saved-record review completed; preserve four failed sampling checks",
+    "noFurtherExecution": true,
+    "sourceCommit": "fd857ed1f5a4662ff98635e1998b53944b98738a"
+  }
+}
