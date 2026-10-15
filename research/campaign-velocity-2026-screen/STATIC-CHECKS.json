@@ -1,0 +1,64 @@
+{
+  "kind": "Author static checks with independent final package review",
+  "result_byte_identical": true,
+  "result_bytes": 11196,
+  "result_sha256": "eaf189fa69b2b74913c741e6ac58c8e373956d034898807cd803c7f9e702c1fe",
+  "all_six_summary_rows_exact": true,
+  "measurement_numeric_fields_unchanged": true,
+  "syntax_checks": [
+    "node --input-type=module --check for both original/public app.js",
+    "node --check public historical evaluator; syntax only, no execution"
+  ],
+  "private_content_scan": "No artwork files, selected XML, access tool arguments or host absolute paths found. Explicit allowlist only.",
+  "relative_document_links_checked": 29,
+  "geometry_static_check": {
+    "measurement_plane_y_m": 0,
+    "rotor_centers_xy_m": [
+      [
+        0.046,
+        0
+      ],
+      [
+        -0.046,
+        0
+      ],
+      [
+        0,
+        0.046
+      ],
+      [
+        0,
+        -0.046
+      ]
+    ],
+    "rotor_radius_m": 0.0225,
+    "scene_depth": "-zeta * .046",
+    "bars": "Observed and fixed-nominal prediction from exact saved result; display comparison only, not vectors",
+    "model_imports_or_calls": 0
+  },
+  "shared_vendor": {
+    "destination_relative_to_public_demo": "../../campaign-public-support-factorial/demo/vendor/",
+    "files": [
+      {
+        "file": "three.module.js",
+        "bytes": 603113,
+        "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+      },
+      {
+        "file": "three.core.js",
+        "bytes": 1403455,
+        "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+      },
+      {
+        "file": "LICENSE.txt",
+        "bytes": 1081,
+        "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+      }
+    ],
+    "copied": false
+  },
+  "browser_render_verified": false,
+  "browser_interaction_verified": false,
+  "ui_runtime_verified": false,
+  "independent_public_package_review": "Completed: public allowlist, exact result bytes, source/data provenance, geometry and link checks. Browser rendering remains unverified."
+}

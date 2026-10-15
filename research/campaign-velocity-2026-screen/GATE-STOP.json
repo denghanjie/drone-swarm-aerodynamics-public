@@ -1,0 +1,51 @@
+{
+  "status": "STOPPED_BEFORE_MARKER_EXTRACTION",
+  "utc": "2026-10-15T04:12:13.547658+00:00",
+  "plan_sha256": "c2ca80c01e18deb314e7a2425c747b49c13cdb3469d1a25c88720f9fe8a1a497",
+  "adoption_sha256": "cbf1dd184fa4ac4125666a38fda7f9531182dffb7ac4957538350938e9e1ae1a",
+  "gate": "Confirm coordinate decimal quantization <=0.001 SVG unit",
+  "finding": "Unverified. Encoded exact decimal spellings omit trailing zeros and do not prove historical exporter rounding or pre-publication coordinate precision. No pass is claimed.",
+  "completed_inspection": "Readiness source structure/legend/marker-local shape and axis tick paths only; marker transforms were inspected only for syntax, not positions.",
+  "tick_inspection": {
+    "layer_child_x_indices": [
+      6,
+      7,
+      9,
+      10
+    ],
+    "x_svg_coordinates": [
+      87.6,
+      218.4,
+      480,
+      610.8
+    ],
+    "x_values": [
+      0,
+      5,
+      15,
+      20
+    ],
+    "layer_child_y_indices": [
+      27,
+      28,
+      30,
+      31
+    ],
+    "y_svg_coordinates": [
+      460.1997,
+      355.0497,
+      144.7497,
+      39.5997
+    ],
+    "y_values": [
+      0,
+      0.5,
+      1.5,
+      2
+    ]
+  },
+  "measured_marker_coordinates_extracted": 0,
+  "model_calls": 0,
+  "classification": "Method admission/representation gate, no scientific negative",
+  "next_action": "Separate prospective exact-decimal amendment and independent review/root adoption required"
+}

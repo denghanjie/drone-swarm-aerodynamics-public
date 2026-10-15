@@ -1,0 +1,439 @@
+{
+  "epoch": 2,
+  "status": "conditional-scale-retaining-screen-no-physical-pass-fail",
+  "input_manifest_sha256": "1f7d28e85096abf4f3e4c62633370437dd60bf8bb9bc74e635e4b7aa9614844e",
+  "evaluator_sha256": "f58ceca766bca807be0f9818549849afa401525851346f809b89134563c941f7",
+  "release_sha256": "e946c4c9cdeac49b4520e67ee23405368fe3a64cdbb40e5704a9534c5964e2cc",
+  "kernel_sha256": "fb6d5a1d632a0023818041ef6bc39316ff8ed950f318da1a6649e2515b9fd8bc",
+  "public_commit": "1336f5c416875a9651f92b58b2ed06649f25b04e",
+  "model_version": "arXiv:2403.13321v3",
+  "measurement_version": "arXiv:2608.30900v1 Fig.5(a), PREPRINT",
+  "scalar_calls": 18,
+  "normalization": {
+    "Ui_reported": 4.36,
+    "UH_nominal": 4.373329400265024,
+    "kappa": 1.0030572018956476,
+    "formula": "UH=sqrt(m*g/(8*rho*pi*R^2)); primary predicted normalized velocity=kappa*q"
+  },
+  "geometry": {
+    "l_m": 0.046,
+    "D_opposite_motors_m": 0.092,
+    "r_m": 0,
+    "axial_argument": "zeta/2",
+    "lower_domain": 5
+  },
+  "monotonicity": "dq/dzeta=-10.11/[2*(zeta/2+5.817)^2]<0 on the accepted domain; coordinate-endpoint enclosure at fixed nominal parameters.",
+  "results": [
+    {
+      "id": "gold-12",
+      "target": 7,
+      "stratum": "developing-profile",
+      "zeta": {
+        "center": 6.615030581039755,
+        "interval": [
+          6.6142660550448715,
+          6.615795107034639
+        ]
+      },
+      "observed": {
+        "center": 0.937001902044698,
+        "interval": [
+          0.9369067998087955,
+          0.9370970042806005
+        ]
+      },
+      "q": {
+        "center": 1.1080040613778153,
+        "interval": [
+          1.1079576445330017,
+          1.1080504821119717
+        ]
+      },
+      "predicted_on_reported_scale": {
+        "center": 1.1113914534946447,
+        "interval": [
+          1.1113448947441653,
+          1.1114380161463577
+        ]
+      },
+      "paired_difference": {
+        "center": -0.17438955144994672,
+        "interval": [
+          -0.1745312163385622,
+          -0.1742478904625648
+        ]
+      },
+      "nominal_m_per_s": {
+        "observed": 4.085328292914884,
+        "observed_interval": [
+          4.084913647166349,
+          4.085742938663419
+        ],
+        "predicted": 4.845666737236652,
+        "predicted_interval": [
+          4.8454637410845605,
+          4.845869750398119
+        ],
+        "paired_difference": -0.7603384443217678,
+        "paired_difference_interval": [
+          -0.7609561032361313,
+          -0.7597208024167826
+        ]
+      }
+    },
+    {
+      "id": "gold-13",
+      "target": 7,
+      "stratum": "developing-profile",
+      "zeta": {
+        "center": 7.14151376146789,
+        "interval": [
+          7.140749235473006,
+          7.142278287462774
+        ]
+      },
+      "observed": {
+        "center": 0.9229158345221112,
+        "interval": [
+          0.9228207322862088,
+          0.9230109367580138
+        ]
+      },
+      "q": {
+        "center": 1.0769345785624551,
+        "interval": [
+          1.076890728313354,
+          1.0769784323828058
+        ]
+      },
+      "predicted_on_reported_scale": {
+        "center": 1.0802269849975248,
+        "interval": [
+          1.080183000689359,
+          1.0802709728878581
+        ]
+      },
+      "paired_difference": {
+        "center": -0.15731115047541355,
+        "interval": [
+          -0.15745024060264937,
+          -0.15717206393034508
+        ]
+      },
+      "nominal_m_per_s": {
+        "observed": 4.0239130385164055,
+        "observed_interval": [
+          4.023498392767871,
+          4.02432768426494
+        ],
+        "predicted": 4.709789654589208,
+        "predicted_interval": [
+          4.709597883005605,
+          4.7099814417910615
+        ],
+        "paired_difference": -0.6858766160728031,
+        "paired_difference_interval": [
+          -0.6864830490275513,
+          -0.6852701987363046
+        ]
+      }
+    },
+    {
+      "id": "gold-20",
+      "target": 11,
+      "stratum": "developing-profile",
+      "zeta": {
+        "center": 10.826884556574923,
+        "interval": [
+          10.82612003058004,
+          10.827649082569808
+        ]
+      },
+      "observed": {
+        "center": 0.758622444127437,
+        "interval": [
+          0.7585273418915345,
+          0.7587175463633395
+        ]
+      },
+      "q": {
+        "center": 0.9002316871835327,
+        "interval": [
+          0.9002010460438845,
+          0.9002623304091849
+        ]
+      },
+      "predicted_on_reported_scale": {
+        "center": 0.9029838772041123,
+        "interval": [
+          0.9029531423883138,
+          0.903014614112292
+        ]
+      },
+      "paired_difference": {
+        "center": -0.14436143307667537,
+        "interval": [
+          -0.14448727222175753,
+          -0.14423559602397426
+        ]
+      },
+      "nominal_m_per_s": {
+        "observed": 3.3075938563956253,
+        "observed_interval": [
+          3.3071792106470905,
+          3.3080085021441605
+        ],
+        "predicted": 3.9370097046099297,
+        "predicted_interval": [
+          3.9368757008130486,
+          3.9371437175295934
+        ],
+        "paired_difference": -0.6294158482143046,
+        "paired_difference_interval": [
+          -0.6299645068868629,
+          -0.6288671986645278
+        ]
+      }
+    },
+    {
+      "id": "gold-21",
+      "target": 11,
+      "stratum": "developing-profile",
+      "zeta": {
+        "center": 11.353367737003058,
+        "interval": [
+          11.352603211008175,
+          11.354132262997942
+        ]
+      },
+      "observed": {
+        "center": 0.7333737517831669,
+        "interval": [
+          0.7332786495472644,
+          0.7334688540190694
+        ]
+      },
+      "q": {
+        "center": 0.8796135438966162,
+        "interval": [
+          0.879584290218585,
+          0.8796427995205807
+        ]
+      },
+      "predicted_on_reported_scale": {
+        "center": 0.8823027000904542,
+        "interval": [
+          0.8822733569780231,
+          0.8823320451547678
+        ]
+      },
+      "paired_difference": {
+        "center": -0.1489289483072873,
+        "interval": [
+          -0.14905339560850342,
+          -0.14880450295795375
+        ]
+      },
+      "nominal_m_per_s": {
+        "observed": 3.197509557774608,
+        "observed_interval": [
+          3.197094912026073,
+          3.1979242035231428
+        ],
+        "predicted": 3.8468397723943806,
+        "predicted_interval": [
+          3.846711836424181,
+          3.846967716874788
+        ],
+        "paired_difference": -0.6493302146197727,
+        "paired_difference_interval": [
+          -0.649872804853075,
+          -0.6487876328966784
+        ]
+      }
+    },
+    {
+      "id": "gold-27",
+      "target": 15,
+      "stratum": "approximately-self-similar",
+      "zeta": {
+        "center": 14.512259174311927,
+        "interval": [
+          14.511494648317043,
+          14.51302370030681
+        ]
+      },
+      "observed": {
+        "center": 0.6106257727056585,
+        "interval": [
+          0.6105306704697561,
+          0.6107208749415611
+        ]
+      },
+      "q": {
+        "center": 0.7733419861402454,
+        "interval": [
+          0.7733193740044201,
+          0.7733645995984834
+        ]
+      },
+      "predicted_on_reported_scale": {
+        "center": 0.7757062487262573,
+        "interval": [
+          0.7756835674605674,
+          0.7757289313184026
+        ]
+      },
+      "paired_difference": {
+        "center": -0.16508047602059872,
+        "interval": [
+          -0.16519826084964653,
+          -0.1649626925180063
+        ]
+      },
+      "nominal_m_per_s": {
+        "observed": 2.6623283689966715,
+        "observed_interval": [
+          2.6619137232481367,
+          2.6627430147452067
+        ],
+        "predicted": 3.382079244446482,
+        "predicted_interval": [
+          3.381980354128074,
+          3.3821781405482354
+        ],
+        "paired_difference": -0.7197508754498104,
+        "paired_difference_interval": [
+          -0.7202644173044589,
+          -0.7192373393785075
+        ]
+      }
+    },
+    {
+      "id": "gold-28",
+      "target": 15,
+      "stratum": "approximately-self-similar",
+      "zeta": {
+        "center": 15.038738532110091,
+        "interval": [
+          15.037974006115208,
+          15.039503058104975
+        ]
+      },
+      "observed": {
+        "center": 0.5925130765572991,
+        "interval": [
+          0.5924179743213966,
+          0.5926081787932016
+        ]
+      },
+      "q": {
+        "center": 0.7580773896035483,
+        "interval": [
+          0.7580556613037737,
+          0.7580991191489639
+        ]
+      },
+      "predicted_on_reported_scale": {
+        "center": 0.7603949852360918,
+        "interval": [
+          0.7603731905085179,
+          0.7604167812131148
+        ]
+      },
+      "paired_difference": {
+        "center": -0.1678819086787927,
+        "interval": [
+          -0.1679988068927182,
+          -0.16776501171431632
+        ]
+      },
+      "nominal_m_per_s": {
+        "observed": 2.5833570137898243,
+        "observed_interval": [
+          2.5829423680412895,
+          2.583771659538359
+        ],
+        "predicted": 3.3153221356293607,
+        "predicted_interval": [
+          3.3152271106171387,
+          3.315417166089181
+        ],
+        "paired_difference": -0.7319651218395363,
+        "paired_difference_interval": [
+          -0.7324747980522515,
+          -0.7314554510744192
+        ]
+      }
+    }
+  ],
+  "neighborhoods": [
+    {
+      "target": 7,
+      "stratum": "developing-profile",
+      "ids": [
+        "gold-12",
+        "gold-13"
+      ],
+      "paired_difference_union": [
+        [
+          -0.1745312163385622,
+          -0.1742478904625648
+        ],
+        [
+          -0.15745024060264937,
+          -0.15717206393034508
+        ]
+      ],
+      "paired_difference_hull": [
+        -0.1745312163385622,
+        -0.15717206393034508
+      ]
+    },
+    {
+      "target": 11,
+      "stratum": "developing-profile",
+      "ids": [
+        "gold-20",
+        "gold-21"
+      ],
+      "paired_difference_union": [
+        [
+          -0.14905339560850342,
+          -0.14880450295795375
+        ],
+        [
+          -0.14448727222175753,
+          -0.14423559602397426
+        ]
+      ],
+      "paired_difference_hull": [
+        -0.14905339560850342,
+        -0.14423559602397426
+      ]
+    },
+    {
+      "target": 15,
+      "stratum": "approximately-self-similar",
+      "ids": [
+        "gold-27",
+        "gold-28"
+      ],
+      "paired_difference_union": [
+        [
+          -0.1679988068927182,
+          -0.16776501171431632
+        ],
+        [
+          -0.16519826084964653,
+          -0.1649626925180063
+        ]
+      ],
+      "paired_difference_hull": [
+        -0.1679988068927182,
+        -0.1649626925180063
+      ]
+    }
+  ],
+  "limitations": "Fixed +/-0.01 SVG-unit graphical envelope only. Historical export, symbol placement, experimental PIV and nominal-input uncertainty unbounded. Mean speed magnitude differs from mean axial velocity under fluctuations. Shared calibration remains dependent. No fitted parameters or physical/statistical pass. Original quantization-gate epoch remains stopped."
+}
