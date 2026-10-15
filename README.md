@@ -2,16 +2,22 @@
 
 Research into **which approximations of mutual aerodynamic interaction preserve useful physical predictions while enabling locally controlled 3D drone flocks within browser compute budgets**, scaling toward 5,000 drones using WebGPU.
 
-This is an ongoing research record, including unsuccessful experiments. The current numerical pipeline runs offline on CPU; Three.js displays recorded trajectories and reconstructed airflow. A validated 5,000-drone, airflow-coupled WebGPU simulation has **not** been demonstrated.
+This is an ongoing research record, including unsuccessful experiments. The historical numerical pipeline runs offline on CPU; a new receiver-only component has also been evaluated on actual browser WebGPU. Three.js displays recorded trajectories and numerical evidence. A validated 5,000-drone, airflow-coupled WebGPU simulation has **not** been demonstrated.
 
 ![Visible airflow in the milestone 32 lab](outputs/milestone-32-flock.png)
 
-## Start here
+## Current Milestone 31 restart
+
+The additive research branch preserves the historical milestones and later work. Its latest component checkpoint is [browser GPU rotor precision](research/m31-browser-receiver-2026-10-16/README.md), with [Three.js saved evidence](research/m31-browser-receiver-2026-10-16/viewer/), raw records, frozen source, independent review and explicit limits. This is not a complete coupled GPU swarm.
+
+The preceding [exact-zero experiment](research/m31-zero-screen-2026-10-16/README.md) retained a negative performance result: fewer arithmetic operations did not meet its preset usefulness criteria. The [restart index](research/OVERNIGHT-RESTART.md) links every preserved campaign and terminal budget.
+
+## Historical snapshot and roadmap
 
 - [Research direction and assessment of proposed trade-offs](outputs/research-tradeoff-assessment.md)
 - [Original eight-step roadmap](outputs/research-roadmap.md)
 - [Current research status](outputs/research-final-report.md)
-- [Latest milestone: visible airflow and numerical diagnosis](outputs/milestone-32-summary.md)
+- [Historical milestone 32: visible airflow and numerical diagnosis](outputs/milestone-32-summary.md)
 - [Stage history, including failures](outputs/research-stage-log.md)
 - [Physical-validation requirements](outputs/research-physical-validation-gate-2026-10-12.md)
 

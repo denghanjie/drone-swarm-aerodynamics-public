@@ -1,0 +1,19 @@
+{
+  "flow": "Saved evidence viewer → select context/drone/color/scalar → exact retained values and responsive Three.js rendering",
+  "browserAvailability": "Browser plugin not available; installed Playwright used",
+  "checks": [
+    "Correct page/title, meaningful screen, WebGL canvas, no framework overlay",
+    "Both contexts, first/last/worst drone, all four rotor rows and displayed host sums match retained binary values",
+    "All four batch summaries; all 32 scalar rows and signed attribution components; row-click selection",
+    "Color modes, worst selection, focus/whole, and orbit interaction change visible scene",
+    "390px mobile scene and controls; no horizontal page overflow",
+    "All 9 document/replay/footer links return HTTP200",
+    "GPU, reference, scalar attribution and pose corruption each rejected before accepting display"
+  ],
+  "errors": [],
+  "logs": [],
+  "http": [],
+  "browser": "155.0.8059.40",
+  "passed": true,
+  "limits": "One installed Chrome browser; direct canvas picking and failure-injected cleanup not automated. UI QA does not execute the WebGPU scientific kernel, new roots or a new field; no performance claim."
+}

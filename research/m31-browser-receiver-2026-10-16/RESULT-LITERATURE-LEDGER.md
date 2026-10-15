@@ -1,0 +1,11 @@
+# Literature-to-result update
+
+The frozen LITERATURE-EXPERIMENT-LEDGER.md is a prospective record and remains unchanged. This companion records what the sole run actually tested. Bibliographic identities and verified source passages remain in literature.md, API-EVIDENCE.md, api-evidence.json and bibliography.bib.
+
+- W3C WGSL CRD, 21 September 2026: the shader executed under the declared binary32 contract on one browser/adapter. We retained exact returned words and compared them against independent binary64 references. The result does not establish a particular rounding/contraction path, cross-device equivalence or general Math.fround emulation. The 12-update outcomes do not identify the compiler's causal behavior.
+- ECMA-262, 16th edition, 2025: original scalar encodings and their binary32 packed words were checked; saved original/decoded operands support the measured representation contribution. Packing success does not make original and represented models identical.
+- W3C WebGPU CRD, 15 September 2026, with official Chrome and MDN documentation crosschecks: adapter/device limit checks, pipeline creation, exact source routing, all four dispatch/readback sequences and independent device/error-scope checks succeeded in this invocation. The adapter reported nonfallback Apple / metal-3; unavailable device/description fields remain empty. No unsupported fallback or extra browser attempt occurred.
+- Higham (1993), DOI10.1137/0914050, and Ogita, Rump and Oishi (2005), DOI10.1137/030601818: neither summation nor compensated arithmetic was implemented or tested. Their motivation belongs to prospective future work; no summation theorem is claimed for this receiver shader.
+- Existing M28 receiver law and the pinned independent reference: numerical agreement supports the implementation within the selected error allocation. It adds no physical evidence for the constant ideal-power law, source-wake model, wake aggregation or actual aircraft.
+
+No solver, GPU algorithm or theoretical result is claimed as novel. No publication gate is satisfied by this component alone. The future wake recommendation, if archived alongside this result, is a static proposal with separate prerequisites and no executed evidence.
