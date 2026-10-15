@@ -1,0 +1,56 @@
+# Prospective omission attribution checkpoint
+
+Status: unexecuted prospective specification. This is a separate, one-shot campaign. Parent result85e789c8d29a05364b163714a6540f6dc265134a is closed; its source/raw evidence is unchanged. Its C query combines exact-zero screening and positive-envelope omission. This checkpoint asks whether the latter supplies a useful incremental benefit. It does not optimize C or claim a new algorithm.
+
+## Intervention and hypotheses
+
+B, M, C, the independent I oracle and all case-generation formulas are imported unchanged from the parent source. B is the original grid/sum-rotor implementation. M retains all neighborhood sources under C's geometry/traversal structure without bound preprocessing. C computes common four-rotor source envelopes and omits exact zeros and positive bounds accepted within its capacity.
+
+Z is a new control. It performs C's identical geometry, bounds, near-domain fallback, ascending-source selection, upward capacity accumulation, masks and selected-bound bookkeeping. At each shadow code3 selection it additionally evaluates and accumulates all four exact terms. Actual positive omissions are zero; only code1 exact zeros are culled. Its shadow B is not an actual error budget. Z's actual retention is obtained by mapping shadow mask3 to2. Source comparison is preserved in ZERO-CONTROL.diff and ZERO-CONTROL-NOTE.md. Helper formulas are text-identical. Z adds a selected-work counter object, per-guard actual-count snapshots, semantic fields and return metadata; these reporting costs are included in measured implementation cost. C/Z therefore estimates the incremental effect of these complete implementations, including changed receiver-law workload and reporting overhead, not solely exactTerm instruction cost.
+
+H1 (chosen engineering usefulness criterion): on EACH fresh case, the median of the eight paired C/Z durations is <=0.95 AND C is strictly faster in at least7/8blocks. For even samples the median averages sorted positions4and5. Ties are not wins. Joint H1 requires both cases. This criterion is descriptive, not a statistical significance test.
+
+H2 (attribution criterion): let TX be the sum of the same eight measured durations for methodX. Save net TM−TC, zero-screen-package component TM−TZ and positive-omission component TZ−TC. If net>0, calculate the unbounded share (TM−TZ)/(TM−TC), with no clipping; H2 requires share>=0.5 for EACH case. Nonpositive net means unsupported H2. Report absolute components and the additive identity residual. The zero-screen package includes bounds/selection/mask overhead and is not an optimized zero-only algorithm. Do not decompose unrelated medians.
+
+Complete numerical/control qualification is separate from H1/H2. Unmet performance criteria yield a completed negative result, not a retry, new seed, changed threshold or extended budget. Invalid/incomplete scientific qualification prevents a primary performance conclusion.
+
+## Fixed physical model and numerical targets
+
+Same M28 instantaneous additive sum-rotor model, strict3m source-center radius,20-degree tilt gate, near-domain reject/fallback policy, finite radial/downstream fades and isolated-hover source amplitude as the parent. Every rotor's prescribed nominal motor thrust is0.0662175N. No recovered historical motor data, equilibrium assertion, controller, trajectory or integration occurs. The receiver is the unchanged constant ideal-induced-power law x³+(U/vi0)x−1=0, f=f0*x. Under the real-arithmetic bound L=f0/(3vi0), omitted total inflow boundB implies0<=deltaT<=4LB and |deltaRoll/Pitch|<=2aLB. Add the unchanged two-sided rotor allowanceeta=1e-12N:4eta for thrust and4aeta for moments.
+
+Parent targets remain epsilonT=0.005mg=0.0013243500000000002N and epsilonRoll=epsilonPitch=0.0005mgD=1.0488316895441329e-5Nm; Bcap=0.0342189610265993m/s. These analyst-selected fidelity thresholds are not safety or measurement tolerances. The1e-12m geometry pad,1e-12relative+1e-12m/s bound inflation, nextUp and empirically checked floating allowances are not a universal binary64 certificate. Full derivation and verified related research remain in the parent PROTOCOL.md, DESIGN-REVIEW.md, MATH-REVIEW.md, MATH-FINAL-REVIEW.md, prior-work.md and sources.bib; their bytes are frozen here.
+
+No agreement between implementations validates this wake or receiver law physically. Existing long-flight1cm failures and later main/DOT results remain unchanged. Generic error-controlled pruning has published prior art; no novelty inference is permitted.
+
+## Inputs, order and evidence
+
+Only after source publication and independent verification:
+
+1. Five scalar nextUp/capacity checks, as in the parent.
+2.24unchanged exposed regression fixtures, in the exact parent generator order, with B,M,Z,C,I for each. The4expected rejections must be preserved; exact near-radius equality uses agreement. These are exposed diagnostics, not new evidence populations.
+3. Two fresh static lattices from the unchanged xorshift32 generator:10×10×10 seed421337, then20×25×10 seed914629. Spacings(0.30,0.30,0.50)m; independent per-coordinate jitter±0.02m; roll/pitch±8degrees and yaw±pi. Each again runs B,M,Z,C,I. Seeds were chosen prospectively and exact literal searches found no preexisting source/config occurrences before drafting. Neither case has been generated or inspected. They are same-family synthetic static configurations, not Boids flights, and increased N expands the cloud rather than increasing density.
+4. After ALL correctness gates, timing on fresh1000 thenfresh5000. One warmup in B,M,C,Z order, followed by eight blocks: BMCZ, MZBC, ZCMB, CBZM, repeated twice. Each method occupies each position twice; within-block predecessor pairs are balanced. This does not eliminate JIT/GC, thermal drift, between-block carryover, fixed case-order or shared-machine effects.
+
+Every query reconstructs geometry/grid/neighbors/fields/roots/loads; no reused masks, warmed geometry or reference-informed decisions. No forced/selective GC. Complete query timer includes its instrumentation and checksum, excludes state decoding/generation, comparisons, compression/persistence and rendering during measured calls. Correctness calls with evidence-writing callbacks are not speed measurements. Returned timing/checksum/counters are saved BEFORE validation; separate validations record completed checks. Successful timed row matrices are not duplicated, so offline review can reconcile recorded checksums/assertions, not replay every timed component. Failure witnesses include the differing full row.
+
+For valid correctness cases save17-columnFloat64LE input and all five output matrices, C and Z compressed2bit masks, selected bound lists, B, counts, and the independent oracle's selected per-source four terms/support codes, zero checks and root brackets. The oracle uses one complete direct pass, not a second term audit. Positive envelope selection is distinct from positive realized wake: count selected sources with any positive term and with four zero terms. No full all-source term matrix is stored; its shape would exceed the raw cap. Schema defines actual/shadow meanings.
+
+## Qualification gates
+
+All inputs finite,17columns, quaternion norm within1e-10. Complete valid query/output/decision rows equalN; each returned row17columns. All methods agree on domain acceptance, with exact expected fixture outcomes. Save rejection witnesses and any completed prefixes; they are not complete fields. All roots: U>=0,0<=f<=f0, exactU=0 givesf0; dimensionless residual<=1e-12; independent bracket width<=2e-15,0<=lo<=x<=hi<=1,<=96iterations. Power identity1e-14W+1e-12relative.
+
+B/M/Z versus I use parent tolerances: inflow1e-11m/s+1e-12relative; rotor1e-12N; bodythrust5e-12N; bodymoment2e-13Nm; worldforce1e-11N; worldmoment1e-12Nm. Z/M bitwise differing components are descriptive, not a replacement for these gates.
+
+C preserves all parent capacity, one-sided inflow/thrust, rotor/sign and signed moment bounds, fixed targets and independent omitted-term reconstruction. Every bounded-zero independent term is exactly zero. Each selected term is<=its stored bound+1e-11m/s. World-vector differences are descriptive. No numerical threshold is retuned.
+
+C/Z observed equality covers complete masks (including zero identities), selected source/bound lists, upward B, candidate/zero/retained/fallback COUNTS and shared counters. Check actual Z positive omissions=0, actual retained=Cretained+Cselected, actual rotor/profile counts=shadow+selected work, selected rotor visits=4*Cselected. Retained-positive bound values and fallback source IDs are NOT recorded by C and are NOT claimed as empirically equal. Static helper/branch identity is separate evidence. Check same invariances on timed Z; timed C selections/masks/B must repeat correctness. All timed outputs reproduce their method's correctness output under fixed tolerances, checksum exactly, counters exactly; durations finite and positive.
+
+Completion requires ordered26case identities, B/M/Z/C/I per case, ordered72timing identities,9passes per fresh-case/method, and exact charge vector below. Any qualification failure terminates without rescue, preserving prefix and failure. Performance failure alone does not terminate the completed matrix.
+
+## Bounds and terminal state
+
+Exactly202attempted field calls:130correctness and72timing. Full shape charged before each invocation even for early domain rejection. Exact totals:25,994,070independent center slots;519,880,140combinedC/Z bound slots;4,263,017,400rotor-visit slots;985,040rotor receiver-law/root slots;zero integration. receiverCalls counts4N rotor slots, not246,260vehicle receivers or root iterations. Caps26million/520million/4.3billion/1million respectively; no spare field calls. Actual completed work is separate.
+
+One scientific process invocation, max300s external process-group watchdog and cooperative298s guard. Raw evidence max128MiB, with4MiB reserved for failure. Normal writes enforce130,023,424bytes. Unknown selection density/compressibility may exhaust storage; that is a terminal incomplete result, never grounds for deleting data or changing inputs. Failure serialization is bounded by min(4MiB, remaining raw bytes). If full diagnostic exceeds it, save its byte count/hash and essential context, then a minimal witness if needed, explicitly flagging evidence incomplete; no bulk spill into uncounted files. Supervisor separately records termination/accounting. No memory acceptance cap; report platform child RSS semantics without claiming total concurrent RAM.
+
+Exclusive launch lock/started file and ledger; no reruns, pilot launch, added matrix, alternative seeds or cap enlargement. Independently verify all freeze pins and published source bytes before invocation. Stop new launches at2026-10-15T23:00:00Z (07:00Shanghai). This and every old budget is terminal after its sole invocation. One independent saved-only review has a separately recorded60s cap, with no scientific geometry/field/root/timing repeats; preserve its original output/failure. Save plain-language summary, claim ledger, reproducibility/restart notes and tested Three.js view of retained actual data. Privacy-review and independently verify GitHub source and result checkpoints. No paid services, author contact or submission.

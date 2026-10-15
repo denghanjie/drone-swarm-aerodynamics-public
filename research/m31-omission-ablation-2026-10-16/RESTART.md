@@ -1,0 +1,3 @@
+# Prospective restart
+
+Unexecuted draft until source commit/freeze have been published and independently verified. Read PROTOCOL.md and PREFLIGHT-RESOLUTIONS.md. The parent omission budget is terminal; do not rerun it. Run this campaign at most once via source/run-step.py, never if raw/started.json exists or budget is terminal/active/failed. Stop new launches07:00Shanghai2026-10-16. After any invocation preserve prefix/failure and close this budget; only one saved-data review is allowed. Result records, when present, supersede this prospective note. No scientific inputs have been generated in drafting.
