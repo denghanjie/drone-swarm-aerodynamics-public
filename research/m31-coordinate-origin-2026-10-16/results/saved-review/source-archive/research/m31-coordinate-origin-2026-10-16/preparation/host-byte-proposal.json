@@ -1,0 +1,82 @@
+{
+  "status": "STATIC_SAVED_PAYLOAD_PROPOSAL_NOT_ALLOCATED",
+  "endianness": "little",
+  "items": {
+    "generatorStates": {
+      "count": 2,
+      "bytesEach": 680000,
+      "totalBytes": 1360000
+    },
+    "generatorSignedIntegerArrays": {
+      "count": 3,
+      "bytesEach": 60000,
+      "totalBytes": 180000
+    },
+    "generatorAnglesAndTranslationResiduals": {
+      "count": 2,
+      "bytesEach": 120000,
+      "totalBytes": 240000
+    },
+    "generatorReceiverIDs": {
+      "count": 1,
+      "bytesEach": 16,
+      "totalBytes": 16
+    },
+    "preparedSnapshots_R_Q0_Q1": {
+      "count": 6,
+      "bytesEach": 440656,
+      "totalBytes": 2643936
+    },
+    "packedAB": {
+      "count": 2,
+      "bytesEach": 160336,
+      "totalBytes": 320672
+    },
+    "packedC": {
+      "count": 2,
+      "bytesEach": 240336,
+      "totalBytes": 480672
+    },
+    "packingResidualArrays": {
+      "count": 4,
+      "bytesEach": 120000,
+      "totalBytes": 480000
+    },
+    "references_R_Q0_Q1": {
+      "count": 6,
+      "bytesEach": 14800272,
+      "totalBytes": 88801632
+    },
+    "sharedControlInput": {
+      "count": 1,
+      "bytesEach": 3200,
+      "totalBytes": 3200
+    },
+    "gpuTerms": {
+      "count": 6,
+      "bytesEach": 8320000,
+      "totalBytes": 49920000
+    },
+    "gpuControls": {
+      "count": 3,
+      "bytesEach": 2080,
+      "totalBytes": 6240
+    },
+    "gpuSerialSums": {
+      "count": 6,
+      "bytesEach": 512,
+      "totalBytes": 3072
+    }
+  },
+  "fullCompletionRawBytes": 144439440,
+  "proposedAggregateSavedBytesCap": 268435456,
+  "proposedIndividualJSONBytesCap": 4194304,
+  "proposedAggregateJSONBytesCap": 33554432,
+  "proposedOtherSourceLogsManifestBytesCap": 8388608,
+  "notes": [
+    "Logical saved payload; includes A/B and C side-array duplicate encodings even though shared in memory.",
+    "Scalar constants already belong to each prepared/packed snapshot; optional duplicate frozen original constants128B and packed constants64B fit other/source allowance.",
+    "Excludes temporary in-memory decode copies and JS object overhead; this is an artifact quota, not a process-RSS estimate.",
+    "All reports/logs/source must remain within separately adopted bounded limits; 256MiB is a parent proposal, not extra computation permission."
+  ]
+}

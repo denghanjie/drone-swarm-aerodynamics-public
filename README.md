@@ -8,9 +8,9 @@ This is an ongoing research record, including unsuccessful experiments. The hist
 
 ## Current Milestone 31 restart
 
-The additive research branch preserves the historical milestones and later work. Its latest component checkpoint is [browser GPU rotor precision](research/m31-browser-receiver-2026-10-16/README.md), with [Three.js saved evidence](research/m31-browser-receiver-2026-10-16/viewer/), raw records, frozen source, independent review and explicit limits. This is not a complete coupled GPU swarm.
+The additive research branch preserves the historical milestones and later work. Its latest checkpoint is the [coordinate-origin diagnostic](research/m31-coordinate-origin-2026-10-16/README.md), with [Three.js saved records](research/m31-coordinate-origin-2026-10-16/viewer/). It selected no candidate. Its independent review completed but failed two bookkeeping checks; the checker error and immutable failed review are disclosed. The viewer labels the records unqualified.
 
-The preceding [exact-zero experiment](research/m31-zero-screen-2026-10-16/README.md) retained a negative performance result: fewer arithmetic operations did not meet its preset usefulness criteria. The [restart index](research/OVERNIGHT-RESTART.md) links every preserved campaign and terminal budget.
+The earlier [GPU receiver component](research/m31-browser-receiver-2026-10-16/README.md) passed its finite new allocation, while the [wake-slice gate](research/m31-browser-wake-slice-2026-10-16/README.md) failed. The [exact-zero experiment](research/m31-zero-screen-2026-10-16/README.md) retained a negative performance result. None demonstrates a complete coupled GPU swarm. The [restart index](research/OVERNIGHT-RESTART.md) links the preserved campaigns and terminal budgets.
 
 ## Historical snapshot and roadmap
 

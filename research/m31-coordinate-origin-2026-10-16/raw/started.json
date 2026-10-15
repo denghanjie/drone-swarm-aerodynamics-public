@@ -1,0 +1,240 @@
+{
+  "sourceCommit": "ccafbd9b9fd3a3cdd7ffacb5fb360ee5f3dc1abc",
+  "freezeSha256": "ccfeac8a7b6386f647d00899933757004146f4e01f8b135eaf73389190f9efaa",
+  "config": {
+    "status": "PROSPECTIVE_STATIC_UNEXECUTED",
+    "scope": "Fresh coordinate-origin diagnostic; one synthetic geometry, three position/arithmetic arms, two paired origins, four receivers and all5000sources. Numerical term and serial-sum evidence, not flight/physics/performance.",
+    "parentResultCommit": "3f8ce4b433c469c4a9a21b972206c287d48c6618",
+    "nSources": 5000,
+    "receiverIds": [
+      749,
+      500,
+      2250,
+      4750
+    ],
+    "origins": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        64,
+        -32,
+        16
+      ]
+    ],
+    "arms": [
+      "A",
+      "B",
+      "C"
+    ],
+    "nSlotsPerCell": 80000,
+    "seedRule": "firstu32LE(SHA256(UTF8('m31-coordinate-origin-v1\\n'+independentlyVerifiedSourceCommit+'\\n'))); exactly one release, zero accepted, no search",
+    "gates": {
+      "wakeForceAllocationN": 1e-7,
+      "referenceAllowanceMps": 1e-12,
+      "epsilonWakeMps": 0.000018270441835956964,
+      "requireAllCodesEqual": true,
+      "chargeAbsoluteTermErrors": true,
+      "exactDyadicGate": true,
+      "activeReceiverIndices": [
+        0,
+        1,
+        2
+      ],
+      "minimumSubstantialTermsPerActiveRotor": 4,
+      "substantialTermEpsilonMultiplier": 16,
+      "activeRotorSumEpsilonMultiplier": 256
+    },
+    "limits": {
+      "scientificWallSeconds": 180,
+      "cooperativeWallSeconds": 170,
+      "gpuBatchTimeoutMilliseconds": 10000,
+      "rawBytes": 268435456,
+      "failureReserveBytes": 8388608,
+      "resultBytes": 33554432,
+      "reviewWallSeconds": 90,
+      "reviewOutputBytes": 33554432,
+      "freshGeneratorCalls": 1,
+      "originalPreparationCalls": 1,
+      "translationPreparationCalls": 1,
+      "packingCalls": 2,
+      "hostReferencePasses": 6,
+      "gpuCellPreparations": 6,
+      "dispatches": 15,
+      "gpuControlSlots": 60,
+      "gpuPairSlots": 480000,
+      "gpuSumSlots": 96,
+      "gpuLaunchedInvocations": 480576,
+      "gpuPaddingInvocations": 420,
+      "gpuSumReadReservation": 480000,
+      "roots": 0,
+      "integrationSteps": 0,
+      "generationSeedHashes": 1,
+      "generationRandomWords": 30000,
+      "generationStates": 5000,
+      "generationCoordinateCertificates": 15000,
+      "generationQuaternions": 5000,
+      "originalStateAdmissions": 5000,
+      "originalQuaternionNorms": 5000,
+      "originalAxisRotations": 5000,
+      "originalOffsetRotations": 16,
+      "RAxisMetrics": 5000,
+      "translatedPreparedFloatCopies": 55080,
+      "translatedPreparedIdCopies": 4,
+      "translatedStateAdmissions": 5000,
+      "translatedPositionWrites": 15000,
+      "packedFloatWords": 80160,
+      "decodedNodeAdmissions": 10000,
+      "decodedOffsetAdmissions": 32,
+      "Q0AxisMetrics": 10000,
+      "Q1PreparedFloatCopies": 110160,
+      "Q1PreparedIdCopies": 8,
+      "splitBaseWordCopies": 80000,
+      "splitLowFloatWords": 30000,
+      "splitCoordinateCertificates": 30000,
+      "splitBaseWordComparisons": 80000,
+      "QInterfaceNonpositionComparisons": 80168,
+      "RPairSlots": 160000,
+      "RCenterChecks": 39992,
+      "RWorldPoints": 32,
+      "RRotorVisits": 159968,
+      "RProfileEvaluations": 159968,
+      "RSumTermVisits": 159968,
+      "Q0PairSlots": 160000,
+      "Q0CenterChecks": 39992,
+      "Q0WorldPoints": 32,
+      "Q0RotorVisits": 159968,
+      "Q0ProfileEvaluations": 159968,
+      "Q0SumTermVisits": 159968,
+      "Q1PairSlots": 160000,
+      "Q1CenterChecks": 39992,
+      "Q1WorldPoints": 32,
+      "Q1RotorVisits": 159968,
+      "Q1ProfileEvaluations": 159968,
+      "Q1SumTermVisits": 159968,
+      "assessmentCalls:R": 2,
+      "assessmentCalls:Q": 4,
+      "assessmentCalls:usefulness": 2,
+      "assessmentCalls:controls": 3,
+      "assessmentCalls:terms": 6,
+      "assessmentCalls:serial": 6,
+      "assessmentCalls:referenceContrast": 3,
+      "assessmentCalls:gpuContrast": 4
+    },
+    "assessmentReservations": {
+      "R": {
+        "referenceRowsChecked": 80000,
+        "referenceSumComparisons": 16,
+        "RExactStoredTermAdds": 80000,
+        "RExactStoredSumGates": 32,
+        "referenceNumericFieldsChecked": 1440000
+      },
+      "Q": {
+        "packedCodeComparisons": 80000,
+        "packingDyadicTermRows": 80000,
+        "referenceSumComparisons": 32,
+        "packingExactStoredTermAdds": 160000,
+        "QExactStoredSumGates": 32,
+        "referenceRowsChecked": 80000,
+        "referenceNumericFieldsChecked": 1440000
+      },
+      "usefulness": {
+        "usefulnessTermRows": 80000,
+        "usefulnessDyadicAdds": 80000,
+        "usefulnessRotorGates": 12
+      },
+      "controls": {
+        "controlRecordsChecked": 20,
+        "numericFieldsChecked": 360,
+        "controlLiteralWordComparisons": 4
+      },
+      "terms": {
+        "gpuTermRecordsChecked": 80000,
+        "numericFieldsChecked": 1440000,
+        "gpuDyadicTermRows": 80000,
+        "gpuExactStoredTermAdds": 80000,
+        "gpuStageComparisons": 1440000
+      },
+      "serial": {
+        "serialRecordsChecked": 16,
+        "serialDyadicGates": 16
+      },
+      "referenceContrast": {
+        "comparisonTermRows": 80000,
+        "comparisonStageFields": 1440000,
+        "comparisonDyadicRows": 80000
+      },
+      "gpuContrast": {
+        "vectorComparisonRows": 80000,
+        "vectorComponentComparisons": 480000
+      }
+    },
+    "assessmentLimits": {
+      "referenceRowsChecked": 480000,
+      "referenceSumComparisons": 160,
+      "RExactStoredTermAdds": 160000,
+      "RExactStoredSumGates": 64,
+      "referenceNumericFieldsChecked": 8640000,
+      "packedCodeComparisons": 320000,
+      "packingDyadicTermRows": 320000,
+      "packingExactStoredTermAdds": 640000,
+      "QExactStoredSumGates": 128,
+      "usefulnessTermRows": 160000,
+      "usefulnessDyadicAdds": 160000,
+      "usefulnessRotorGates": 24,
+      "controlRecordsChecked": 60,
+      "numericFieldsChecked": 8641080,
+      "controlLiteralWordComparisons": 12,
+      "gpuTermRecordsChecked": 480000,
+      "gpuDyadicTermRows": 480000,
+      "gpuExactStoredTermAdds": 480000,
+      "gpuStageComparisons": 8640000,
+      "serialRecordsChecked": 96,
+      "serialDyadicGates": 96,
+      "comparisonTermRows": 240000,
+      "comparisonStageFields": 4320000,
+      "comparisonDyadicRows": 240000,
+      "vectorComparisonRows": 320000,
+      "vectorComponentComparisons": 1920000
+    },
+    "stopNewLaunchUTC": "2026-10-15T23:00:00Z",
+    "timingComparison": false
+  },
+  "node": "v24.19.0",
+  "platform": "darwin",
+  "architecture": "arm64",
+  "runtimePinsVerified": [
+    {
+      "label": "Node executable",
+      "bytes": 121304480,
+      "sha256": "3c9448363b9976bf3d9e8f4d320397975800131b42c7b1be342dadc05871dd25"
+    },
+    {
+      "label": "playwright/package.json",
+      "bytes": 1416,
+      "sha256": "ca170ec143a88ed3043ac953eb3b2377b2b97304104f4e1e23316684ce2c35af"
+    },
+    {
+      "label": "playwright/index.js",
+      "bytes": 648,
+      "sha256": "4e98f65f0a9d9bcab8cffc0c5cfdd87fd3f5b0be74fc494ff166a466b204cd44"
+    },
+    {
+      "label": "playwright-core/package.json",
+      "bytes": 876,
+      "sha256": "07c47543631fef9508760365dee9fbe958c562093ec8d122543949ed231f233f"
+    },
+    {
+      "label": "playwright-core/index.js",
+      "bytes": 697,
+      "sha256": "a58fb2cec4293e7dcf73c58a179898a4f3986666451a19da4e731fa3af63265b"
+    },
+    {
+      "label": "playwright-core/lib/coreBundle.js (spawn behavior)",
+      "bytes": 3425603,
+      "sha256": "9393fa79e1c67c74edc26b610d65a4f7ed73d345a762465cc88340a33a2454ac"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+# Three.js saved-record UI QA
+
+Browser plugin not available; used installed Playwright1.62.1 with Chrome155.0.8059.40. This is display validation only. No scientific model, shader, reference or saved-review checker was executed.
+
+The flow was saved viewer → origin/arm/receiver/rotor/source controls → faithful retained words, reported gates and explicitly absent stages. The initial complete UI suite passed **2,283 checks**, including1,536 pair comparisons,36 vector comparisons,96 gate rows, all six cells/all16rotors, all evidence links, keyboard selection, focus/whole, recentering, mobile overflow and six pending/corrupt/contradictory-evidence cases. Console/page errors were absent. The failed independent review remained visibly unqualified.
+
+A subsequent UI-only change selects the existing translated-C failed receiver749rotor2/source1249 display example and focuses its contributor cloud, reducing the distant-source clutter on mobile. The source is the largest displayed saved term difference for that row, identified during UI QA; this is neither a scientific candidate nor new evidence. Returned vectors are described as returned values, without backend-order claims. A targeted final desktop/mobile follow-up passed24checks and records hashes of all seven final viewer files. The full earlier suite and final follow-up are both preserved; no scientific/review retry occurred.
+
+Desktop/mobile initial and scene screenshots were visually inspected. The disclosure is legible, contributor geometry is visible, controls respond and no page-level mobile overflow occurs. Dense technical tables scroll horizontally. Limits: one browser/OS/device; no cross-device or accessibility audit; the viewer's byte consistency checks do not authenticate a publisher or turn a failed research review into a pass.
+
+Key commands/APIs: Playwright chromium.launch(channel=chrome), newContext(desktop/mobile), goto, selectOption, fill/change, click/keyboard, original saved-word display comparisons, isolated route corruption, screenshots, browser.close. All exact QA code/reports and screenshot artifacts are retained here. Scientific source remains unchanged. Installing the Browser plugin would allow future in-app browser QA; it was unavailable for this checkpoint.

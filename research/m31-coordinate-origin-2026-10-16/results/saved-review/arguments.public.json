@@ -1,0 +1,33 @@
+{
+  "attemptsAllowed": 1,
+  "checkerArgv": [
+    "[python-executable]",
+    "[review-directory]/checker.py",
+    "--repo",
+    "[scientific-repository]",
+    "--campaign",
+    "research/m31-coordinate-origin-2026-10-16",
+    "--input-index",
+    "[review-directory]/input-index.private.json",
+    "--output",
+    "[review-directory]"
+  ],
+  "environmentAdditions": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONUNBUFFERED": "1"
+  },
+  "freezeSHA256": "ccfeac8a7b6386f647d00899933757004146f4e01f8b135eaf73389190f9efaa",
+  "launcherArgv": [
+    "[python-executable]",
+    "[review-directory]/launcher.py",
+    "--directory",
+    "[review-directory]"
+  ],
+  "retriesAllowed": 0,
+  "sourceCommit": "ccafbd9b9fd3a3cdd7ffacb5fb360ee5f3dc1abc",
+  "transformation": {
+    "disclosure": "Absolute runtime, repository and review locations are replaced by descriptive placeholders. Exact original argv is preserved privately and verified by the launcher.",
+    "privateOriginalSHA256": "3f16c846e59b894e6767b84e5347a6d3ad4940df77c2d127aa17e92040a73b82"
+  },
+  "workingDirectory": "[review-directory]"
+}
