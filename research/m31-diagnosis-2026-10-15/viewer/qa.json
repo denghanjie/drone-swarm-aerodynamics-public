@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-15",
+  "browser": "155.0.8059.40",
+  "automation": "Playwright 1.62.1; installed Chrome",
+  "fallback": "Browser plugin not available; no dependency installation",
+  "viewports": [
+    "1440x1000",
+    "390x844"
+  ],
+  "checks": [
+    "page identity, meaningful content, one canvas, no framework error overlay",
+    "both cases and selected drone IDs match saved data; largest-effect button selects actual maximum",
+    "focus/whole cameras and all three measured-arrow toggles change rendered scene",
+    "orbit interaction changes scene",
+    "390px mobile no horizontal overflow",
+    "all footer evidence links return HTTP 200",
+    "missing evidence shows visible error and disabled controls"
+  ],
+  "normalConsole": [],
+  "normalPageErrors": [],
+  "normalHttpFailures": [],
+  "scope": "Fixed-state viewer QA only; no live-flight or speed claim"
+}
