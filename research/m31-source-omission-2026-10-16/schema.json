@@ -1,0 +1,8 @@
+{
+ "rowType":"Float64LE","rowColumns":["U0","U1","U2","U3","f0","f1","f2","f3","bodyThrust","roll","pitch","worldFx","worldFy","worldFz","worldMx","worldMy","worldMz"],
+ "poseType":"Float64LE","poseColumns":["x","y","z","vx","vy","vz","qx","qy","qz","qw","wx","wy","wz","motor0","motor1","motor2","motor3"],
+ "decisionMask":"2 bits per source, least-significant first;0 self/outside grid radius,1 bounded exact-zero,2 retained,3 positive-bound omitted; ceil(N/4) bytes, zlib-deflated base64 per receiver",
+ "omissions":"ascending [sourceID,inflatedUpperBoundMps] rows; B is nextUp-accumulated sum",
+ "independentAudit":"fresh/fixture complete receiver rows retain [sourceID,upperBound,independentTerm0..3] for positive omissions, exact-zero checks/counts, summed omitted inflow and code hash; no second field pass",
+ "timing":"complete B/M/C static queries with geometry/grid/bounds/roots/load assembly/checksum, excluding generation/decoding/evidence writes; one warmup plus five measured permutations"
+}
