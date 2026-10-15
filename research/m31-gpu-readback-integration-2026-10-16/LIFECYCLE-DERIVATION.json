@@ -1,0 +1,32 @@
+{
+  "kind": "static-source-derivation",
+  "operationalExecution": false,
+  "files": [
+    {
+      "new": "source/capture-transport.py",
+      "derivedFrom": "research/m31-control-channel-2026-10-16/source/capture-transport.py",
+      "baseBytes": 13024,
+      "baseSHA256": "51f05741774405fc5a1538fa91df6d9a763dedc89174b55e026edfa23d4c3e67"
+    },
+    {
+      "new": "source/observe-transport.py",
+      "derivedFrom": "research/m31-control-channel-2026-10-16/source/observe-transport.py",
+      "baseBytes": 32249,
+      "baseSHA256": "a4df30adfec12452a7fdb29d79d0de70bdd53f40d807802dbcd7b9db57926ebc"
+    },
+    {
+      "new": "source/run-once.py",
+      "derivedFrom": "research/m31-control-channel-2026-10-16/source/run-once.py",
+      "baseBytes": 5069,
+      "baseSHA256": "7d6d0cbdeab682cde0727a209e427420f43ed44521390b00d4479548960579c3"
+    }
+  ],
+  "changes": [
+    "Fail closed on disabled/null/invalid/out-of-window allocation before timers, runtime artifact reads, locks, subprocesses or writes.",
+    "Redirect only to new host-worker.cjs; require new page/source/config pins.",
+    "Change evaluate allowance from10 to12seconds; outer60/40/58second guards unchanged draft values.",
+    "New worker kind synthetic-gpu-readback-diagnostic; legacy transport receipt kinds retained for reuse, not historical record identity.",
+    "Use new private temporary directory prefixes.",
+    "Monotonic start precedes admission so config-gate time is included; timers and operational side effects follow admission."
+  ]
+}

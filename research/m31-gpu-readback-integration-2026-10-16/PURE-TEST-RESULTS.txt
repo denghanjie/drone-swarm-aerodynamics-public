@@ -1,0 +1,26 @@
+ok 1 - delivered config rejects disabled allocation
+ok 2 - true allocation with null windows rejects
+ok 3 - all four windows required
+ok 4 - strict whole-second UTC only
+ok 5 - launch window start included
+ok 6 - launch window end excluded
+ok 7 - before launch window rejected
+ok 8 - both window durations must be positive
+ok 9 - limits are exact seven-field proposed values
+ok 10 - Boolean is not numeric limit
+ok 11 - invalid validator result is handled as ok false
+ok 12 - unvalidated arbitrary text omitted from rejection projection
+ok 13 - handcrafted wrong-byte envelope retains exact values and bounded full envelope
+ok 14 - handcrafted page failure with bytes retains actual bytes
+ok 15 - handcrafted early failure retains full envelope without byte artifact input
+ok 16 - accessor bytes rejected without getter invocation
+ok 17 - partial writes continue in exact order and actual close recorded
+ok 18 - later write error preserves first bytes and closes descriptor
+ok 19 - zero write fails without fabricated completed bytes
+ok 20 - exclusive existing file refusal performs no write or close
+ok 21 - close failure does not claim closed or complete
+ok 22 - guard refusal before opening touches no writer
+ok 23 - guard refusal after partial write preserves and closes partial file
+ok 24 - pure classification distinguishes page failure from mismatch
+ok 25 - static host source has exactly one payload evaluate and adjacent counter
+{"kind":"inert-host-source-test-receipt","pureTestsPassed":25,"workerInvocations":0,"browserInvocations":0,"gpuInvocations":0,"networkRequests":0,"runtimeOutcomesSimulated":false}

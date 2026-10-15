@@ -4,6 +4,12 @@
 
 Public additive worktree: current repository, branch `codex/m31-audit-2026-10-15`. Preserve the original eight-step roadmap and historical M31 base. Later remote main/DOT at `1336f5c416875a9651f92b58b2ed06649f25b04e` remains separate and untouched. The private workspace, attachments, credentials and chat records must never be published.
 
+## Additive static integration checkpoint — original launch window remains closed
+
+`research/m31-gpu-readback-integration-2026-10-16/` continues source preparation after the original overnight cutoff. The dated WGSL primary-source arithmetic/layout gate is now resolved; the prior30preparation pins and expected fixture remain unchanged. A new host recorder, copied lifecycle wrappers with disabled admission, and independent saved-file checker source are integrated with25host pure cases,37independent checker pure/scratch cases,4admission test methods and independent static review. Nine integratedPython files parse successfully. No new browser,GPU,diagnostic or full saved-review invocation is allocated or executed.
+
+The package remains executionAllocated=false with four null UTC windows. Runtime provenance,operational freeze,external review supervisor and a new prospective allocation remain absent. This publication is a source inventory, not launch admission. Read its README,SOURCE-STATUS,STATIC-REVIEW,NEXT and exact manifest. Keep the old preparation and all failed/successful historical records immutable. The latest completed Three.js evidence view remains the control-channel viewer. Overall scientific goal stays active and incomplete; no physics,5,000-drone or novelty claim follows.
+
 ## Latest source preparation — GPU readback remains unexecuted
 
 `research/m31-gpu-readback-preparation-2026-10-16/` contains a new page/shader/strict validator and independent byte primitives for a 128-byte uint32 fixture with 17 active words and protected padding. Source preparation continued across the end of the overnight window; no browser/GPU/diagnostic/saved-file checker was launched. Seventy page/validator pure checks and 33 independent byte cases passed; independent expected-byte files match exactly. Their hash is `ba507e3ef0ad8991b3e84530f89fa51501e9c6fd274157d519ef10cb8aded951`.

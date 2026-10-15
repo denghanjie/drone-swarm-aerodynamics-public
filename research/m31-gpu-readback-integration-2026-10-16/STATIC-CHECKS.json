@@ -1,0 +1,56 @@
+{
+  "kind": "static-host-source-checks",
+  "version": 1,
+  "executionAllocated": false,
+  "nodeSyntaxChecks": {
+    "source/host-worker.cjs": {
+      "exitCode": 0
+    },
+    "source/host-logic.cjs": {
+      "exitCode": 0
+    },
+    "source/process-registry.cjs": {
+      "exitCode": 0
+    },
+    "source/host-logic.test.cjs": {
+      "exitCode": 0
+    },
+    "source/gpu-readback-page.js": {
+      "exitCode": 0
+    },
+    "source/validation.cjs": {
+      "exitCode": 0
+    }
+  },
+  "pureTestRun": {
+    "script": "source/host-logic.test.cjs",
+    "stdout": "PURE-TEST-RESULTS.txt",
+    "exitCode": 0,
+    "passed": 25
+  },
+  "upstreamStaticSourceCommit": "1241213790d94fb0e99efa0804d4affcf1446b24",
+  "byteIdenticalCopiedSourceSHA256": {
+    "source/gpu-readback-page.js": "2852f5e0b7fd6362fa5eced1fe2cfabfe86d103347ad6cb7aea56926e2cbfdaa",
+    "source/validation.cjs": "d8a9865f5dced23c8f7564ab18a18aa0c889fe5e76026e33a3f1176fa5d11243",
+    "source/browser.html": "a7de83bae32a843934d8084e0c0c8ec7fc20841f440043b20c900830f91cb2c4",
+    "source/fixture.wgsl": "64c0b55164b6dabfa2c88845913221c96bad1ad89b2c16b9aefe70134d652d59",
+    "source/FIXTURE.json": "ab3cedfe660bc1afa498c6dfbdbfd38d7f89f716ac5edecce28e70d0f127f801"
+  },
+  "workerInvocations": 0,
+  "pageInvocations": 0,
+  "browserInvocations": 0,
+  "gpuInvocations": 0,
+  "networkRequests": 0,
+  "supervisorInvocations": 0,
+  "fullSavedCheckerInvocations": 0,
+  "mockScope": "Pure policy tables, handcrafted envelopes and injected in-memory file writer only; no runtime lifecycle simulated",
+  "remainingGates": [
+    "final independent integrated-source review",
+    "full saved-review external supervisor",
+    "new runtime provenance",
+    "new source freeze and independent retrieval",
+    "explicit future execution and review allocations",
+    "external observed process completion",
+    "independent post-closure exact persisted-byte comparison"
+  ]
+}
