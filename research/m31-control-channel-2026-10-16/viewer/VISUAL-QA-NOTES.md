@@ -1,0 +1,9 @@
+# Presentation QA
+
+The viewer displays five stages from 21 actual saved events and verifies 19 backing files before rendering. Evidence JSON is 14,037 bytes, SHA-256`22bd69451021b8d9895452bf1864273f31ff32808f2dd32db1d6d64e094564c9`. It is an engineering diagram, not live transport, drone flight or aerodynamic computation.
+
+Browser plugin not available; installed Playwright with explicit Chrome was used on the existing localhost 8876 server. No server restart, installation or dependency change. Viewports 1440×1000 and 390×844. Tests exercised page identity, meaningful content/canvas, bound outcome/review/file count, all five stages, event selection/boundaries, orbit/reset, responsive layout, footer links, corrupted-evidence rejection/recovery, and console/page health. Nine grouped checks passed with zero errors. No framework overlay was observed.
+
+The first automated pass is preserved under qa-before-reset-fix/. Root visual inspection found residual OrbitControls damping could move the camera after reset, even though the old state-attribute assertion passed. The new renderer clears pending camera motion before restoring the view. The strengthened test verifies that orbit changes rendered pixels and reset exactly restores the baseline canvas pixels. The final nine groups pass; screenshots and report are under qa/. Root inspected final desktop canvas and mobile screenshots: all five nodes fit and the page has no horizontal overflow. Small-screen node labels are supplemented by stage buttons and detail text.
+
+The change affects only presentation; every frozen diagnostic/checker pin, raw record and independent review result remains unchanged. The QA browser never visits or invokes the diagnostic source page. No additional transport observation is inferred. Other browsers and viewports remain untested.

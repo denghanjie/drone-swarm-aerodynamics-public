@@ -4,9 +4,11 @@
 
 Public additive worktree: current repository, branch `codex/m31-audit-2026-10-15`. Preserve the original eight-step roadmap and historical M31 base. Later remote main/DOT at `1336f5c416875a9651f92b58b2ed06649f25b04e` remains separate and untouched. The private workspace, attachments, credentials and chat records must never be published.
 
-## Current engineering allocation — source frozen, not launched
+## Current engineering checkpoint — exact small control-channel transfer observed
 
-A new isolated `research/m31-control-channel-2026-10-16/` adopts one ordinary-heap3840-byte return through the existing automation channel. Source freeze SHA256`c36018ea48530e17c91bed62b5f062ff93577dd4328559c9dd9ca6d22e1d932b`,6325B,30pins includes worker, lifecycle sources and independent saved checker. Independent static review plus31validator and17byte-comparison inert cases completed. No browser or diagnostic has run. Next: publish/independently verify exact source then one60s capture and one30s saved-only review, both before unchanged23:00UTCcutoff. No science/GPU/larger transfer or automatic successor is allocated. Read PROTOCOL and frozen FINAL-STATIC-REVIEW; preserve all earlier locks and results.
+`research/m31-control-channel-2026-10-16/`: source commit`4edf40a7cbfa2d41414dc8a8a6ff0718d0fa5671`, freeze`c36018ea48530e17c91bed62b5f062ff93577dd4328559c9dd9ca6d22e1d932b`(30pins) independently published/verified before sole trial. Actual3840-byte ordinary-heap return and exclusive persistence succeeded; independent post-closure byte equality confirmed. One browser and one evaluate call,21events, no local recorder errors/deviations. Whole tool observation4.995s, observer1.620248959s, complete recorded ownership closure. No GPU/science performed.
+
+Sole saved review passed5groups/0errors, actualexit0, fulltool0.089s; report SHA256`d3c75c54d9f35a979fb21cc84c325a580cbb68292d1a7aaea1569794d28cebdd`. Public consistency/private-trace limits retained. Both allocations terminal, no retry/automatic successor. Three.js viewer binds19backingfiles/21events; final9QA groups pass and root inspected screenshots. Camera-reset-only fix is disclosed, firstQA retained, all30frozenpins unchanged. Read MILESTONE-SUMMARY and POSTRUN-RESTART. Result publication in progress. Original23:00UTC cutoff and every historical closed allocation unchanged.
 
 ## Current static follow-up — published and verified
 

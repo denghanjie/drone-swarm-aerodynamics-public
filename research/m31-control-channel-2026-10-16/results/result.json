@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "kind": "synthetic-control-channel-diagnostic",
+  "sourceCommit": "4edf40a7cbfa2d41414dc8a8a6ff0718d0fa5671",
+  "sourceFreezeSHA256": "c36018ea48530e17c91bed62b5f062ff93577dd4328559c9dd9ca6d22e1d932b",
+  "terminal": true,
+  "scope": "One ordinary-heap value returned through the existing automation channel",
+  "qualified": false,
+  "scientificSuccess": false,
+  "explainsHistoricalFailure": false,
+  "retryPermitted": false,
+  "browserLaunches": 1,
+  "evaluateCalls": 1,
+  "applicationFetchCalls": 0,
+  "observerReadyEvent": "e1",
+  "browserVersion": "155.0.8059.80",
+  "browserContext": {
+    "originLabel": "page-origin",
+    "isSecureContext": true
+  },
+  "expected": {
+    "bytes": 3840,
+    "sha256": "b92773fc3edb949a8a0d6e4a2f60ef2020ee2bd5bf6f8299c1448142a6cd3404"
+  },
+  "errors": [],
+  "cleanupErrors": [],
+  "protocolDeviations": [],
+  "evaluation": {
+    "settled": true,
+    "timedOut": false,
+    "deadlineExceeded": false,
+    "errorName": null,
+    "hostMilliseconds": 44.14604200000008
+  },
+  "returned": {
+    "received": true,
+    "validationPassed": true,
+    "validationError": null,
+    "json": {
+      "bytes": 13971,
+      "sha256": "1b6c8407445c7e57e25bbbe8d1a24ef61c6e11674e0d7a1a8cbec72892cac920"
+    },
+    "rejectionProjection": null,
+    "bytes": 3840,
+    "sha256": "b92773fc3edb949a8a0d6e4a2f60ef2020ee2bd5bf6f8299c1448142a6cd3404",
+    "exact": true
+  },
+  "persistence": {
+    "attempted": true,
+    "opened": true,
+    "closed": true,
+    "complete": true,
+    "writtenBytes": 3840,
+    "writeCalls": 1,
+    "exists": true,
+    "bytes": 3840,
+    "sha256": "b92773fc3edb949a8a0d6e4a2f60ef2020ee2bd5bf6f8299c1448142a6cd3404",
+    "exact": true,
+    "equalsReturned": true
+  },
+  "timing": {
+    "hostValidationMilliseconds": 1.4786669999998594,
+    "hostPersistenceMilliseconds": 0.12733400000001893,
+    "browserConstructionMilliseconds": 0.2999992370605469
+  },
+  "browserClosed": true,
+  "runtimePinsBefore": true,
+  "runtimePinsAfter": true,
+  "lastPhase": "persistence-returned",
+  "instrumentation": {
+    "ready": {
+      "playwright": true,
+      "cdpNetwork": true,
+      "cdpAudits": true,
+      "routes": true
+    },
+    "eventCount": 21,
+    "attemptedEvents": 21,
+    "eventCap": 2048,
+    "droppedEvents": 0,
+    "truncatedEvents": 0,
+    "observerExceptions": 0,
+    "callbackErrors": 0,
+    "collectionBeforeEvaluate": true,
+    "captureClosedAfterCleanup": true,
+    "unexpectedRedirectObservations": 0,
+    "unexpectedApplicationRequestObservations": 0,
+    "complete": true,
+    "clock": "worker-monotonic-receipt",
+    "browserClock": "browser-performance-independent",
+    "crossClockOrderingClaimed": false
+  },
+  "trace": {
+    "public": {
+      "bytes": 4848,
+      "sha256": "235d6585b50dba776c3513207076d7755aa6687f6721bf888719142f5aacda9e"
+    },
+    "private": {
+      "bytes": 5693,
+      "sha256": "bdd9f5820b84659bc71085c9a3b65fff8ab762035620d2a568199d40f4da68f8"
+    }
+  },
+  "localObservationComplete": true,
+  "status": "synthetic-control-transfer-complete",
+  "elapsedSeconds": 1.4056422089999998
+}

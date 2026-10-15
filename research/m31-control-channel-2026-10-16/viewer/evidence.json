@@ -1,0 +1,496 @@
+{
+  "schema": "m31-transport-view-v1",
+  "sourceCommit": "4edf40a7cbfa2d41414dc8a8a6ff0718d0fa5671",
+  "sourceFreezeSHA256": "c36018ea48530e17c91bed62b5f062ff93577dd4328559c9dd9ca6d22e1d932b",
+  "summary": {
+    "outcome": "Exact small-payload transfer observed once",
+    "review": "Independent saved-byte review passed",
+    "status": "Bound to actual terminal records and external completion. Ordinary heap only; no GPU or flight computation.",
+    "interpretation": "This single 3,840-byte payload returned through the existing automation connection and was saved exactly, with an independent post-closure comparison. It supports this small engineering path; it does not validate GPU lifetime, large-transfer cost, general reliability or aerodynamics."
+  },
+  "stages": [
+    {
+      "name": "Page payload",
+      "observed": "yes",
+      "detail": "The returned, validated envelope reports array-ready from the frozen page function. Its page-generated values are retained. There is no separate browser-phase event if the call does not return.",
+      "evidenceRefs": [
+        {
+          "file": "raw/returned.json",
+          "field": "constructionPhase / values"
+        }
+      ]
+    },
+    {
+      "name": "API return",
+      "observed": "yes",
+      "detail": "One payload-bearing evaluate call was observed. Return received: True. No application payload HTTP request was observed. The host interval includes several kinds of work and is not a benchmark.",
+      "evidenceRefs": [
+        {
+          "file": "raw/trace.public.ndjson",
+          "event": "e12",
+          "kind": "control-evaluate-started"
+        },
+        {
+          "file": "raw/trace.public.ndjson",
+          "event": "e15",
+          "kind": "control-evaluate-returned"
+        }
+      ]
+    },
+    {
+      "name": "Valid bytes",
+      "observed": "yes",
+      "detail": "Strict representation validation passed: True. Actual returned bytes: 3840. The saved JSON represents decoded values, not protocol wire bytes.",
+      "evidenceRefs": [
+        {
+          "file": "raw/trace.public.ndjson",
+          "event": "e16",
+          "kind": "control-envelope-validated"
+        },
+        {
+          "file": "results/result.json",
+          "field": "returned"
+        }
+      ]
+    },
+    {
+      "name": "Closed file",
+      "observed": "yes",
+      "detail": "Exclusive file written and closed: True. Bytes written: 3840. The file matches the actual return: True. Matching expected fixture bytes is checked separately.",
+      "evidenceRefs": [
+        {
+          "file": "raw/trace.public.ndjson",
+          "event": "e17",
+          "kind": "persistence-started"
+        },
+        {
+          "file": "raw/trace.public.ndjson",
+          "event": "e18",
+          "kind": "persistence-write"
+        },
+        {
+          "file": "raw/trace.public.ndjson",
+          "event": "e19",
+          "kind": "persistence-completed"
+        }
+      ]
+    },
+    {
+      "name": "Independent check",
+      "observed": "yes",
+      "detail": "Saved-public-evidence review: 5/5 groups passed. Independent post-closure exact-byte comparison passed: True. Actual external review exit is retained; private trace transformation was not independently reconstructed.",
+      "evidenceRefs": [
+        {
+          "file": "review/results/report.json",
+          "field": "byteEvidence / groups"
+        },
+        {
+          "file": "publication/review-execution.json",
+          "field": "actualCheckerExitCode"
+        },
+        {
+          "file": "publication/FINAL-DISPOSITION.json",
+          "field": "scopedPublicRecordIntegrityVerified"
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "version": 1,
+      "id": "e1",
+      "sequence": 1,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1258.1615,
+      "kind": "observers-ready",
+      "data": {}
+    },
+    {
+      "version": 1,
+      "id": "e2",
+      "sequence": 2,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1262.9132089999998,
+      "kind": "cdp-request",
+      "data": {
+        "cdpID": "cdp-1",
+        "method": "GET",
+        "resourceType": "Document",
+        "initiatorType": "other",
+        "redirected": false,
+        "urlLabel": "fixture-html",
+        "headers": {}
+      }
+    },
+    {
+      "version": 1,
+      "id": "e3",
+      "sequence": 3,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1266.486584,
+      "kind": "pw-request",
+      "data": {
+        "requestID": "pw-1",
+        "method": "GET",
+        "resourceType": "document",
+        "redirected": false,
+        "urlLabel": "fixture-html",
+        "headers": {}
+      }
+    },
+    {
+      "version": 1,
+      "id": "e4",
+      "sequence": 4,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1273.239709,
+      "kind": "pw-response",
+      "data": {
+        "requestID": "pw-1",
+        "status": 200,
+        "urlLabel": "fixture-html",
+        "headers": {
+          "content-length": "217",
+          "content-type": "text/html"
+        }
+      }
+    },
+    {
+      "version": 1,
+      "id": "e5",
+      "sequence": 5,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1274.104625,
+      "kind": "cdp-response",
+      "data": {
+        "cdpID": "cdp-1",
+        "status": 200,
+        "hasExtraInfo": false,
+        "urlLabel": "fixture-html",
+        "headers": {
+          "content-length": "217",
+          "content-type": "text/html"
+        }
+      }
+    },
+    {
+      "version": 1,
+      "id": "e6",
+      "sequence": 6,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1282.2692499999998,
+      "kind": "cdp-request",
+      "data": {
+        "cdpID": "cdp-2",
+        "method": "GET",
+        "resourceType": "Script",
+        "initiatorType": "parser",
+        "redirected": false,
+        "urlLabel": "fixture-script",
+        "headers": {}
+      }
+    },
+    {
+      "version": 1,
+      "id": "e7",
+      "sequence": 7,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1283.4674169999998,
+      "kind": "cdp-loading-finished",
+      "data": {
+        "cdpID": "cdp-1",
+        "encodedDataLength": 276
+      }
+    },
+    {
+      "version": 1,
+      "id": "e8",
+      "sequence": 8,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1284.5014999999999,
+      "kind": "pw-request",
+      "data": {
+        "requestID": "pw-2",
+        "method": "GET",
+        "resourceType": "script",
+        "redirected": false,
+        "urlLabel": "fixture-script",
+        "headers": {}
+      }
+    },
+    {
+      "version": 1,
+      "id": "e9",
+      "sequence": 9,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1286.5787919999998,
+      "kind": "pw-response",
+      "data": {
+        "requestID": "pw-2",
+        "status": 200,
+        "urlLabel": "fixture-script",
+        "headers": {
+          "content-type": "application/javascript",
+          "content-length": "650"
+        }
+      }
+    },
+    {
+      "version": 1,
+      "id": "e10",
+      "sequence": 10,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1287.3681669999999,
+      "kind": "cdp-response",
+      "data": {
+        "cdpID": "cdp-2",
+        "status": 200,
+        "hasExtraInfo": false,
+        "urlLabel": "fixture-script",
+        "headers": {
+          "content-type": "application/javascript",
+          "content-length": "650"
+        }
+      }
+    },
+    {
+      "version": 1,
+      "id": "e11",
+      "sequence": 11,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1287.4234999999999,
+      "kind": "cdp-loading-finished",
+      "data": {
+        "cdpID": "cdp-2",
+        "encodedDataLength": 722
+      }
+    },
+    {
+      "version": 1,
+      "id": "e12",
+      "sequence": 12,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1287.4764169999999,
+      "kind": "control-evaluate-started",
+      "data": {
+        "transferID": "channel-1"
+      }
+    },
+    {
+      "version": 1,
+      "id": "e13",
+      "sequence": 13,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1290.6998339999998,
+      "kind": "cdp-request",
+      "data": {
+        "cdpID": "cdp-3",
+        "method": "GET",
+        "resourceType": "Other",
+        "initiatorType": "other",
+        "redirected": false,
+        "urlLabel": "other-page-origin",
+        "headers": {}
+      }
+    },
+    {
+      "version": 1,
+      "id": "e14",
+      "sequence": 14,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1292.9622089999998,
+      "kind": "cdp-loading-failed",
+      "data": {
+        "cdpID": "cdp-3",
+        "resourceType": "Other",
+        "errorText": "net::ERR_ABORTED",
+        "canceled": true
+      }
+    },
+    {
+      "version": 1,
+      "id": "e15",
+      "sequence": 15,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1331.587167,
+      "kind": "control-evaluate-returned",
+      "data": {
+        "callMilliseconds": 43.98479199999997,
+        "transferID": "channel-1"
+      }
+    },
+    {
+      "version": 1,
+      "id": "e16",
+      "sequence": 16,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1333.521875,
+      "kind": "control-envelope-validated",
+      "data": {
+        "bytes": 3840,
+        "jsonBytes": 13971,
+        "valid": true,
+        "exact": true,
+        "transferID": "channel-1",
+        "sha256": "b92773fc3edb949a8a0d6e4a2f60ef2020ee2bd5bf6f8299c1448142a6cd3404"
+      }
+    },
+    {
+      "version": 1,
+      "id": "e17",
+      "sequence": 17,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1333.6497499999998,
+      "kind": "persistence-started",
+      "data": {
+        "bytes": 3840,
+        "transferID": "channel-1",
+        "sha256": "b92773fc3edb949a8a0d6e4a2f60ef2020ee2bd5bf6f8299c1448142a6cd3404"
+      }
+    },
+    {
+      "version": 1,
+      "id": "e18",
+      "sequence": 18,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1333.781542,
+      "kind": "persistence-write",
+      "data": {
+        "writtenBytes": 3840,
+        "writeCalls": 1,
+        "transferID": "channel-1"
+      }
+    },
+    {
+      "version": 1,
+      "id": "e19",
+      "sequence": 19,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1333.83225,
+      "kind": "persistence-completed",
+      "data": {
+        "bytes": 3840,
+        "complete": true,
+        "transferID": "channel-1",
+        "sha256": "b92773fc3edb949a8a0d6e4a2f60ef2020ee2bd5bf6f8299c1448142a6cd3404"
+      }
+    },
+    {
+      "version": 1,
+      "id": "e20",
+      "sequence": 20,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1344.7287919999999,
+      "kind": "page-close",
+      "data": {}
+    },
+    {
+      "version": 1,
+      "id": "e21",
+      "sequence": 21,
+      "clock": "worker-monotonic-receipt",
+      "milliseconds": 1405.221042,
+      "kind": "cleanup-finished",
+      "data": {
+        "complete": true
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": "../results/result.json",
+      "bytes": 3089,
+      "sha256": "772a07993be0909028ab09b799efd525a5f3e4b782e3966c6e639d78ed7d33d3"
+    },
+    {
+      "path": "../raw/trace.public.ndjson",
+      "bytes": 4848,
+      "sha256": "235d6585b50dba776c3513207076d7755aa6687f6721bf888719142f5aacda9e"
+    },
+    {
+      "path": "../raw/returned.json",
+      "bytes": 13971,
+      "sha256": "1b6c8407445c7e57e25bbbe8d1a24ef61c6e11674e0d7a1a8cbec72892cac920"
+    },
+    {
+      "path": "../raw/received.bin",
+      "bytes": 3840,
+      "sha256": "b92773fc3edb949a8a0d6e4a2f60ef2020ee2bd5bf6f8299c1448142a6cd3404"
+    },
+    {
+      "path": "../results/wrapper.json",
+      "bytes": 371,
+      "sha256": "468e5f6c045b203aa3b9cd67f054f2f05e36b09388e62bcaa4cdbe30bc4556b4"
+    },
+    {
+      "path": "../results/budget.json",
+      "bytes": 2673,
+      "sha256": "c17363e5d475cc514328738f6b72bc65fef73bd628fa9d53366e23245c6b5279"
+    },
+    {
+      "path": "../results/capture.json",
+      "bytes": 2058,
+      "sha256": "6a6c7af97c42192cb647c59347f2fe2679734c418beab901b9e360b930f72769"
+    },
+    {
+      "path": "../publication/capture-execution.json",
+      "bytes": 509,
+      "sha256": "c5164f9b30eefe20295c20bda227a0b71c324e5a0b798b068abf7bc84ff74e66"
+    },
+    {
+      "path": "../publication/capture-output.json",
+      "bytes": 487,
+      "sha256": "7445f8f83e47d737fbfda50d5989c3d5c5d235006e98bf7847bff3cf45ac8260"
+    },
+    {
+      "path": "../publication/observer-output.json",
+      "bytes": 624,
+      "sha256": "0f627f171ddf15435c9be2baec7ac248a22ac87d3fe212a9628c73a0400033c9"
+    },
+    {
+      "path": "../review/results/report.json",
+      "bytes": 1685,
+      "sha256": "d3c75c54d9f35a979fb21cc84c325a580cbb68292d1a7aaea1569794d28cebdd"
+    },
+    {
+      "path": "../review/results/summary.json",
+      "bytes": 432,
+      "sha256": "57c6c3daa795d84e50c646258cd2350cb9e9e0bcf02d990c16830bdbc0d898fb"
+    },
+    {
+      "path": "../review/evidence-manifest.json",
+      "bytes": 2459,
+      "sha256": "ea6c8fad7006d8d728f112e672a4f24c208e5f35ffcb45e609d67d71db77d3b1"
+    },
+    {
+      "path": "../publication/review-execution.json",
+      "bytes": 566,
+      "sha256": "26c767252befe50932f61211a323a5bae9b8ee1787ca248b5241b8c2dd212c14"
+    },
+    {
+      "path": "../publication/review-output.json",
+      "bytes": 432,
+      "sha256": "57c6c3daa795d84e50c646258cd2350cb9e9e0bcf02d990c16830bdbc0d898fb"
+    },
+    {
+      "path": "../publication/FINAL-DISPOSITION.json",
+      "bytes": 1055,
+      "sha256": "9565fdc78065f38654297b8da259f159c11423c7371c1db6ee315e33c40b4fb3"
+    },
+    {
+      "path": "../payload.json",
+      "bytes": 217,
+      "sha256": "5f477ad085b57a464a2f663efd26b8065ca41202a4868b1e6d809a570dcf9d14"
+    },
+    {
+      "path": "../payload.bin",
+      "bytes": 3840,
+      "sha256": "b92773fc3edb949a8a0d6e4a2f60ef2020ee2bd5bf6f8299c1448142a6cd3404"
+    },
+    {
+      "path": "../freeze.json",
+      "bytes": 6325,
+      "sha256": "c36018ea48530e17c91bed62b5f062ff93577dd4328559c9dd9ca6d22e1d932b"
+    }
+  ]
+}
