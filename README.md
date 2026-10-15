@@ -8,7 +8,9 @@ This is an ongoing research record, including unsuccessful experiments. The hist
 
 ## Current Milestone 31 restart
 
-The additive research branch preserves the historical milestones and later work. Its latest checkpoint is the [coordinate-origin diagnostic](research/m31-coordinate-origin-2026-10-16/README.md), with [Three.js saved records](research/m31-coordinate-origin-2026-10-16/viewer/). It selected no candidate. Its independent review completed but failed two bookkeeping checks; the checker error and immutable failed review are disclosed. The viewer labels the records unqualified.
+The additive research branch preserves the historical milestones and later work. Its latest [body-load attempt](research/m31-body-load-2026-10-16/README.md) stopped at a browser-version mismatch before any GPU or main-family calculation. Its saved-record audit passed 12,793 checks; the scientific attempt remains failed. The [Three.js evidence view](research/m31-body-load-2026-10-16/viewer/) shows saved control inputs and explicitly absent GPU results.
+
+The preceding [coordinate-origin diagnostic](research/m31-coordinate-origin-2026-10-16/README.md) selected no candidate. Its independent review failed two bookkeeping checks; the checker error and immutable failed review remain disclosed.
 
 The earlier [GPU receiver component](research/m31-browser-receiver-2026-10-16/README.md) passed its finite new allocation, while the [wake-slice gate](research/m31-browser-wake-slice-2026-10-16/README.md) failed. The [exact-zero experiment](research/m31-zero-screen-2026-10-16/README.md) retained a negative performance result. None demonstrates a complete coupled GPU swarm. The [restart index](research/OVERNIGHT-RESTART.md) links the preserved campaigns and terminal budgets.
 

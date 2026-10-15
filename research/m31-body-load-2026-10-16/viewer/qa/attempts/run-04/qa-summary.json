@@ -1,0 +1,80 @@
+{
+  "scope": "Saved original pair-input viewer QA only; no scientific generator, profile/root evaluator, WebGPU compute or scientific rerun.",
+  "browserAvailability": "absent",
+  "fallbackReason": "Browser plugin not available",
+  "url": "http://127.0.0.1:8876/research/m31-body-load-2026-10-16/viewer/",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "flow": "Checkpoint → fixed original pair input selection → saved R/Q diagnostics and no observed GPU/body-load result",
+  "checks": [
+    {
+      "name": "Page identity, meaningful screen and absence of framework overlay",
+      "pass": true
+    },
+    {
+      "name": "Actual control-only availability and separate review",
+      "pass": true
+    },
+    {
+      "name": "All 15 saved pair selections expose saved R/Q validity and no GPU values",
+      "pass": true
+    },
+    {
+      "name": "Orbit and reset change the rendered view",
+      "pass": true
+    },
+    {
+      "name": "Four unexecuted main families stay empty",
+      "pass": true
+    },
+    {
+      "name": "Keyboard selection, disclosures and browser/offline receipt distinction",
+      "pass": false,
+      "message": "page.waitForFunction: Timeout 15000ms exceeded."
+    }
+  ],
+  "consoleRecords": [],
+  "pageErrors": [],
+  "screenshots": [
+    {
+      "name": "desktop-controls.png",
+      "bytes": 154110,
+      "sha256": "2f38232d147e0200575a8abafe1f8508d2e0d6aca99f683c22bbdb6119d132b4"
+    },
+    {
+      "name": "pair-14-original-input.png",
+      "bytes": 155522,
+      "sha256": "38a48c65803ee70961f1377fc0842378170228eaf74195678ad91ec5ab081728"
+    },
+    {
+      "name": "family-4-not-executed.png",
+      "bytes": 105207,
+      "sha256": "8a75b5f4b853163d45f3fa9b3f283af41a147c1f728ec59289c39f8d2b026d4b"
+    },
+    {
+      "name": "failure-state.png",
+      "bytes": 310205,
+      "sha256": "49291a24fcc553f09674c0ae43bae061d104273c768e9dacca34826fe7e8a56c"
+    }
+  ],
+  "remainingUntested": [
+    "Main-family scene, receiver picking and force/lift colors: no main evidence exists.",
+    "Scientific correctness, flight physics and timing comparison.",
+    "Historical mission correctness; only link navigation/source identity is checked."
+  ],
+  "artifactSHA256": "975bd4ef3273150decf7f5f7e404af5e119a3929c3ce10145b9ea76fd2da3738",
+  "finalReviewSHA256": "eca5f4a3189afb3a9fcc065f51368e5b10e54ac4ac6974bf42708fce24208a4a",
+  "resultSHA256": "7f876389a2013060cd308a51c2fea84efc6cc3e7d5cc2e2aa894c61102a4e71c",
+  "playwrightVersion": "1.62.1",
+  "browserVersion": "155.0.8059.80",
+  "passed": false,
+  "failure": "page.waitForFunction: Timeout 15000ms exceeded."
+}

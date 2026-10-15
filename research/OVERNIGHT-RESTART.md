@@ -4,7 +4,15 @@
 
 Public additive worktree: current repository, branch `codex/m31-audit-2026-10-15`. Preserve the original eight-step roadmap and historical M31 base. Later remote main/DOT at `1336f5c416875a9651f92b58b2ed06649f25b04e` remains separate and untouched. The private workspace, attachments, credentials and chat records must never be published.
 
-## Current checkpoint — receiver-only browser result published and verified
+## Current operational state — body-load runtime failure
+
+The latest published source is `e60702197dde11893f01f01496edafbefb4a43de`; its body-load attempt is terminal after a frozen/actual Chrome-version mismatch. Original scientific source, raw14/results5 and launch lock are immutable. No GPU or main-family calculation ran. Its sole saved-only review passed 12,793 checks / 0 failures with the observer exit 0 externally confirmed; its review lock and six output files are terminal. Three.js QA passed 14 groups on desktop/mobile; final result publication is in progress in `research/m31-body-load-2026-10-16/`. Never repeat any reserved science or review invocation.
+
+A distinct proposed replication exists only as static preparation in `research/m31-body-runtime-replication-2026-10-16/`. No freeze or scientific launch exists there. Its parent result provenance remains pending until the old failure is published. Keep current-runtime admission before any new numerical construction. No automatic third runtime campaign; common cutoff unchanged.
+
+The chronological sections below are historical records; later entries supersede their preparation/status wording, never their terminal evidence or consumed budgets.
+
+## Historical checkpoint — receiver-only browser result published and verified
 
 `research/m31-browser-receiver-2026-10-16/`: source `4f2ead30ce48e4845ceefc105f9796ce468d907e`, freeze `ad64a3f092d08045e1233fa9e05a4db72cda3ae8b5db039dec329f7628f8e7ae`. Independent GitHub retrieval matched exact freeze bytes and all 51 local pins before science.
 
@@ -97,3 +105,21 @@ Coordinate result published436762c2d05408a22ba66400d64e46e759cc7b99;manifest7542
 ## Body-load source frozen — no numerical exposure
 
 `research/m31-body-load-2026-10-16/` scientific source is now frozen after independent static review. Freeze SHA256 `aadba212ed2c2006c4a5e8196df21c04f9d9c478bc5714353ddb6bc5415f81fe`, 50 pins, 10458 bytes; final static review `462bd3b9c09fb01f604a21c064c3a22d22783cd667d238794ffd40eb13c878b4`. No geometry, input hashes, fields, roots, shader compilation, browser experiment or saved-only review has run. Source publication and independent byte verification must precede the sole 300-second invocation. Fixed four families 50/500/5000/5000, full field-to-body outputs; no dynamics or performance comparison. Later saved-only review is prepared only after terminal raw/result and external results/budget.json closure; separately reviewed/frozen, one 120-second invocation. Read PROTOCOL, FINAL-STATIC-REVIEW, REPRODUCIBILITY, SOURCE-RESTART. Old campaigns remain closed. Cutoff unchanged at 2026-10-15T23:00:00Z.
+
+Body-load source published `e60702197dde11893f01f01496edafbefb4a43de`; exact freeze `aadba212ed2c2006c4a5e8196df21c04f9d9c478bc5714353ddb6bc5415f81fe` independently retrieved (10458 bytes), all 50 local pins verified before exposure. Sole 300-second supervisor invocation is now authorized; inspect permanent results/sole-launch.lock and budget.json before any further action. No retry or completion of terminal omitted stages.
+
+
+## Body-load science terminal — browser-version admission failure
+
+Source e60702197dde11893f01f01496edafbefb4a43de/freeze aadba212ed2c2006c4a5e8196df21c04f9d9c478bc5714353ddb6bc5415f81fe. Sole invocation closed in 5.205577917 seconds. Frozen Chrome version 155.0.8059.40 differed from actual launched 155.0.8059.80. No page, shader, GPU dispatch, H, main-family generation, field/body evaluation or timing comparison ran. 292 fixed R/Q control root attempts (216 positive solves, 11330 bisection iterations), 30 R/Q pair evaluations, 13 host admission and 16 decoder controls retained. Raw: 14 files/112794 bytes. External RSS samples19, peak412401664 bytes, no probe/cap/time errors; both process groups absent, no kill signals. Scientific qualified=false. Do not rerun, change frozen sources or complete omitted stages. This is an environment interruption, not a GPU accuracy/scaling result.
+
+Independent saved-only reviewer is being prepared in isolation after final external closure; no review invocation yet. Three.js adapter is being updated to show saved original pair controls with R/Q diagnostics and explicit absent GPU/main outputs. A distinct next-question runtime/replication decision is under static challenge only; no new source freeze or new launch exists.
+
+Runtime attribution correction: evidence establishes a frozen/actual Chrome version mismatch (.40 versus .80); it does not establish the mechanism or time of an update. Current installed metadata also reports .80. No scientific inference depends on the unverified update explanation.
+
+
+## Body-load saved review terminal — integrity of failed record verified
+
+The sole saved review passed 12,793 checks with zero failures. Review freeze fa832d1c40f3ce569f3a78d27486f2e0102d984a17a03d19f09dd7261a779075; report cb31d328d0cf164eaf32e5e1858eba8675e2ee4e09fc0d10bea61fa39e09c77f; final external observation publication/observer-execution.json SHA eca5f4a3189afb3a9fcc065f51368e5b10e54ac4ac6974bf42708fce24208a4a. Actual observer exit 0; total interval before final stdout summary 0.303336333 seconds, both owned command groups absent, no kill signals/errors/timeouts. Six review outputs 7427 bytes plus 524 command-pipe bytes and 1672 observer-summary bytes = 9623 accounted bytes. No reviewer or science process remains active. Scientific decisionVerified=false and qualified=false; no GPU or main-family result exists. Never repeat the checker, wrapper, observer or completion seal. Viewer is bound to actual saved controls and review, UI QA in progress. New distinct runtime replication remains static, unallocated/unfrozen/unlaunched pending original result publication.
+
+Body-load viewer final QA passed 14 groups with zero console/page/HTTP failures. Bound artifact 975bd4ef3273150decf7f5f7e404af5e119a3929c3ce10145b9ea76fd2da3738; final QA manifest 66ce999c1234dcccc13e9ae203d5f32e967ee9c8ec53d1647c90c8210e7106f7. Parent inspected desktop/mobile/pair14/historical/error screenshots. UI-only camera, readiness, error-label and historical-link fixes are disclosed; all protected source/raw/report bytes unchanged. Source-only and UI failures retained. Final result manifest/publication now being prepared.

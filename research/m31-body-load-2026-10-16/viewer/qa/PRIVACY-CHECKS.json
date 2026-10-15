@@ -1,0 +1,28 @@
+{
+  "schema": "m31-body-viewer-privacy/1",
+  "passed": true,
+  "scope": "Viewer sources, exact public evidence, intended QA summaries and screenshots. Audit manifest/report excluded from self-scanning and checked separately at finalization.",
+  "textFilesScanned": 34,
+  "screenshotsChecked": 33,
+  "forbiddenMachinePaths": 0,
+  "privateEvidenceSinkURLs": 0,
+  "numericPrivateProcessIDs": 0,
+  "pngTextOrExifMetadataChunks": 0,
+  "findings": [],
+  "permittedContext": [
+    "Approved loopback viewer URL appears only as QA target provenance.",
+    "Generic words such as profile and PID describe prohibited operations or sanitized historical reports; no private runtime/profile path or PID value is included.",
+    "The binder contains generic rejection regexes for local paths and private evidence endpoints."
+  ],
+  "visualInspection": [
+    "Final desktop, mobile, pair 14, empty-family, corruption, recovery and historical screenshots were opened for inspection.",
+    "Parent independently inspected the final desktop, mobile, pair 14, historical and SHA-rejection screenshots."
+  ],
+  "excludedPrivateMaterial": [
+    "Scratch test scripts and keyboard probe",
+    "Private failure stacks",
+    "Local binding request",
+    "Process/profile paths and runtime executable locations"
+  ],
+  "noEvidenceRedaction": "Selected evidence files were copied exactly and match their original bound descriptors. No pinned scientific/report bytes were sanitized during QA packaging."
+}
