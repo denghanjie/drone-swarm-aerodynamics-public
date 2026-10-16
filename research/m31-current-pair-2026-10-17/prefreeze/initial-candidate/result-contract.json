@@ -1,0 +1,58 @@
+{
+  "schema": "m31-current-pair-result-v1",
+  "journalSchema": "m31-current-pair-journal-v1",
+  "fields": [
+    "schema",
+    "specId",
+    "runtime",
+    "sourceSha256",
+    "constants",
+    "records"
+  ],
+  "recordFields": [
+    "id",
+    "input",
+    "prepared",
+    "result"
+  ],
+  "input": {
+    "receiver": "17 binary64 lowercase16hex strings",
+    "source": "17 binary64 lowercase16hex strings",
+    "self": "boolean",
+    "rotor": "integer0..3"
+  },
+  "prepared": "null if initial nonfinite or nonpositive raw force; otherwise {receiver,source}, each {center:3bits,axis:3bits,offsets:4x3bits,points:4x3bits,forces:4bits}; preserve even invalid geometry/nonfinite prepared output",
+  "result": "{status, branch, intervals?}; qualified zero: status=zero branch=self/neighbor/upstream/down-cut/near-outside/radial/projection with K/coefficient exactly [0,0]; positive: status=positive branch=active intervals K,scaledK,beta,nu,coefficient; rejection: status=rejected branch=raw-nonfinite/raw-force/preparation/center-guard/rotor-guard/down-guard/radial-guard/near/width/cap; arithmetic uncertainty: status=unresolved branch=library error code or cap/normalizer",
+  "interval": "{l,u} decimal integer strings endpoints divided by2^96",
+  "sourceFiles": [
+    "spec.json",
+    "result-contract.json",
+    "interval.cjs",
+    "rational.cjs",
+    "adapter.cjs",
+    "pair.cjs",
+    "run.cjs"
+  ],
+  "preparationOrder": [
+    "raw-nonfinite across receiver then source",
+    "raw-force across both",
+    "compute and emit both prepared records",
+    "validate all exact norm/orthogonality and finite prepared predicates; any failure preparation",
+    "self exit",
+    "pair branches"
+  ],
+  "toleranceSemantics": "All decimal literals including tolerances are exact dyadic RN binary64 encodings. No native norm predicates.",
+  "operationGraph": "cross(a,b)=[RN(RN(a1*b2)-RN(a2*b1)),RN(RN(a2*b0)-RN(a0*b2)),RN(RN(a0*b1)-RN(a1*b0))]; t=RN(2*cross(q,v)); u=cross(q,t); rotate[k]=RN(v[k]+RN(RN(q3*t[k])+u[k])); rotor points RN(center+offset). Norm/force calculations afterwards exact mathematical model. Native adapter signed-zero bit behavior retained; independent IEEE oracle must handle signs.",
+  "referencePolicy": "Fixed2^192 directed rational square-root enclosure only; no adaptive retry/refinement. Exact branch guards use rational squared norms. Exact K may need reference interval decision for cap; straddling=>reference-undecidable, unqualified record. Candidate unresolved cases retained, counted unqualified, never baseline pass for full finite qualification. Declared stress tiny-force/huge-force may legitimately be unresolved; classify against exact target, no false zero/rejection. Require all ordinary cases resolved. Stress unresolved limited to tiny-force and huge-force; a sound positive/true rejection for them also acceptable. Reference positive interval must be fully contained in candidate. No bound-width tolerance qualification is claimed.",
+  "negativeControls": [
+    "unsound-positive-interval",
+    "wrong-branch",
+    "altered-prepared",
+    "missing-case",
+    "duplicate-case",
+    "reordered-cases",
+    "altered-input"
+  ],
+  "displacements": "center=source.center-receiver.center; rotor=source.center-receiver.points[rotor]; no source rotor point; actual prepared points are supplied dyadics, not recomputed exact center+offset.",
+  "rawEncoding": "Finite decimal strings encoded RN binary64; NaN canonical7ff8000000000000, Infinity7ff0000000000000, -Infinityfff0000000000000; preserve -0 as8000000000000000. Self is explicit identity-exclusion flag after validating both supplied records."
+}

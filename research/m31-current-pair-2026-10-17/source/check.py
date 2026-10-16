@@ -1,0 +1,952 @@
+#!/usr/bin/env python3
+"""Independent source-authored current-pair checker; no candidate imports.
+
+Case/oracle construction occurs only inside the single authorized main run.
+Hash/JSON/CLI helpers reuse the prior independent checker; binary64 preparation
+and the exact-real pair oracle are newly and independently authored.
+"""
+import argparse
+from collections import Counter
+import copy
+from fractions import Fraction
+from functools import lru_cache
+import hashlib
+import json
+from math import isqrt
+from pathlib import Path, PurePosixPath
+import re
+import sys
+
+MAX_INPUT_BYTES = 16 * 1024 * 1024
+MAX_MANIFEST_BYTES = 1024 * 1024
+MAX_SPEC_BYTES = 256 * 1024
+MAX_SOURCE_BYTES = 16 * 1024 * 1024
+MAX_SOURCE_TOTAL = 64 * 1024 * 1024
+MAX_SOURCE_FILES = 256
+MAX_ERRORS = 32
+EXPECTED_RECORDS = 322
+
+class CheckError(Exception):
+    """An intentionally public-safe validation failure."""
+
+
+def require(condition, code):
+    if not condition:
+        raise CheckError(code)
+
+
+def canonical_integer(value):
+    require(isinstance(value, str) and len(value) <= 128,
+            "endpoint-string-shape")
+    require(re.fullmatch(r"0|-?[1-9][0-9]*", value) is not None,
+            "endpoint-string-syntax")
+    return int(value)
+
+
+def pairs_without_duplicates(pairs):
+    result = {}
+    for key, value in pairs:
+        require(key not in result, "duplicate-json-key")
+        result[key] = value
+    return result
+
+
+def reject_json_constant(_value):
+    raise CheckError("nonfinite-json-number")
+
+
+def same_json(left, right):
+    """Structural equality without Python's True == 1 or 1.0 == 1 aliases."""
+    if type(left) is not type(right):
+        return False
+    if isinstance(left, dict):
+        return set(left) == set(right) and all(same_json(left[k], right[k]) for k in left)
+    if isinstance(left, list):
+        return len(left) == len(right) and all(same_json(a, b) for a, b in zip(left, right))
+    return left == right
+
+
+def load_json(path, limit):
+    require(path.is_file(), "required-file-missing")
+    require(path.stat().st_size <= limit, "input-file-budget")
+    with path.open("rb") as handle:
+        data = handle.read(limit + 1)
+    require(len(data) <= limit, "input-file-budget")
+    try:
+        return json.loads(data, object_pairs_hook=pairs_without_duplicates,
+                          parse_constant=reject_json_constant)
+    except (UnicodeError, ValueError, RecursionError):
+        raise CheckError("invalid-json") from None
+
+
+def relative_name(path, root):
+    try:
+        relative = path.resolve(strict=True).relative_to(root)
+    except (OSError, ValueError):
+        raise CheckError("input-path-outside-root-or-missing") from None
+    require(relative.parts and not any(p in (".", "..") for p in relative.parts),
+            "invalid-relative-path")
+    return relative.as_posix()
+
+
+def file_sha256(path, limit=MAX_SOURCE_BYTES):
+    h = hashlib.sha256()
+    total = 0
+    with path.open("rb") as handle:
+        while True:
+            block = handle.read(65536)
+            if not block:
+                break
+            total += len(block)
+            require(total <= limit, "source-file-budget")
+            h.update(block)
+    return total, h.hexdigest()
+
+
+def verify_manifest(manifest_path, root, spec_path, contract_path):
+    manifest = load_json(manifest_path, MAX_MANIFEST_BYTES)
+    require(isinstance(manifest, dict), "manifest-object-required")
+    files = manifest.get("files")
+    require(isinstance(files, list) and 1 <= len(files) <= MAX_SOURCE_FILES,
+            "manifest-file-count")
+    seen = set()
+    verified = []
+    total = 0
+    for item in files:
+        require(isinstance(item, dict), "manifest-record-object")
+        name = item.get("path")
+        require(isinstance(name, str) and len(name) <= 512 and "\\" not in name,
+                "manifest-path-shape")
+        parts = PurePosixPath(name)
+        require(not parts.is_absolute() and str(parts) == name and
+                all(part not in (".", "..") for part in parts.parts),
+                "manifest-path-not-relative")
+        require(name not in seen, "duplicate-manifest-path")
+        seen.add(name)
+        size = item.get("bytes")
+        expected_sha = item.get("sha256")
+        require(type(size) is int and 0 <= size <= MAX_SOURCE_BYTES,
+                "manifest-size-shape")
+        require(isinstance(expected_sha, str) and
+                re.fullmatch(r"[0-9a-f]{64}", expected_sha) is not None,
+                "manifest-hash-shape")
+        source_path = root / name
+        require(relative_name(source_path, root) == name,
+                "manifest-noncanonical-file-path")
+        actual_size, actual_sha = file_sha256(source_path)
+        total += actual_size
+        require(total <= MAX_SOURCE_TOTAL, "source-total-budget")
+        require(actual_size == size and actual_sha == expected_sha,
+                "source-manifest-pin-mismatch")
+        verified.append({"path": name, "bytes": size, "sha256": actual_sha})
+    require(relative_name(spec_path, root) in seen, "spec-not-source-pinned")
+    require(relative_name(contract_path, root) in seen,
+            "result-contract-not-source-pinned")
+    require(relative_name(Path(__file__), root) in seen,
+            "checker-not-source-pinned")
+    return verified
+
+
+class PublicArgumentParser(argparse.ArgumentParser):
+    def error(self, _message):
+        raise CheckError("invalid-command-line")
+
+
+def hex_bits(word):
+    return format(word, "016x")
+
+
+def parse_bits(text):
+    require(isinstance(text, str) and re.fullmatch(r"[0-9a-f]{16}", text) is not None,
+            "binary64-bit-string")
+    return int(text, 16)
+
+
+def finite(word):
+    return ((word >> 52) & 2047) != 2047
+
+
+def nan(word):
+    return not finite(word) and (word & ((1 << 52) - 1)) != 0
+
+
+@lru_cache(maxsize=16384)
+def dyadic(word):
+    require(finite(word), "nonfinite-value-in-exact-arithmetic")
+    exponent = (word >> 52) & 2047
+    mantissa = word & ((1 << 52) - 1)
+    if exponent:
+        mantissa += 1 << 52
+        power = exponent - 1075
+    else:
+        power = -1074
+    value = (Fraction(mantissa << power) if power >= 0
+             else Fraction(mantissa, 1 << -power))
+    return -value if word >> 63 else value
+
+
+def rounded_integer(numerator, denominator):
+    quotient, remainder = divmod(numerator, denominator)
+    return quotient + int(2 * remainder > denominator or
+                          (2 * remainder == denominator and quotient % 2 == 1))
+
+
+@lru_cache(maxsize=32768)
+def rn(value, negative_zero=False):
+    """Exact rational -> binary64 RN-even, including gradual under/overflow."""
+    sign = (1 << 63) if value < 0 or (value == 0 and negative_zero) else 0
+    value = abs(value)
+    if value == 0:
+        return sign
+    numerator, denominator = value.numerator, value.denominator
+    exponent = numerator.bit_length() - denominator.bit_length()
+    if ((exponent >= 0 and numerator < (denominator << exponent)) or
+            (exponent < 0 and (numerator << -exponent) < denominator)):
+        exponent -= 1
+    if exponent < -1022:
+        significand = rounded_integer(numerator << 1074, denominator)
+        return sign | significand  # 2^52 is the smallest normal encoding.
+    if exponent > 1023:
+        return sign | (2047 << 52)
+    shift = 52 - exponent
+    significand = (rounded_integer(numerator << shift, denominator) if shift >= 0
+                   else rounded_integer(numerator, denominator << -shift))
+    if significand == 1 << 53:
+        significand >>= 1
+        exponent += 1
+    if exponent > 1023:
+        return sign | (2047 << 52)
+    return sign | ((exponent + 1023) << 52) | (significand - (1 << 52))
+
+
+@lru_cache(maxsize=1024)
+def literal(text):
+    require(isinstance(text, str) and len(text) <= 96, "literal-shape")
+    special = {"NaN": 0x7ff8000000000000, "Infinity": 0x7ff0000000000000,
+               "-Infinity": 0xfff0000000000000}
+    if text in special:
+        return special[text]
+    require(re.fullmatch(r"[+-]?(?:[0-9]+(?:\.[0-9]*)?|\.[0-9]+)(?:[eE][+-]?[0-9]{1,3})?",
+                         text) is not None, "decimal-literal-syntax")
+    return rn(Fraction(text), text.startswith("-"))
+
+
+@lru_cache(maxsize=32768)
+def fp_add(left, right):
+    if nan(left) or nan(right):
+        return 0x7ff8000000000000
+    if not finite(left) or not finite(right):
+        if not finite(left) and not finite(right) and ((left ^ right) >> 63):
+            return 0x7ff8000000000000
+        return left if not finite(left) else right
+    negative_zero = left == (1 << 63) and right == (1 << 63)
+    return rn(dyadic(left) + dyadic(right), negative_zero)
+
+
+def fp_sub(left, right):
+    return fp_add(left, right ^ (1 << 63))
+
+
+@lru_cache(maxsize=32768)
+def fp_mul(left, right):
+    sign = (left ^ right) & (1 << 63)
+    if nan(left) or nan(right):
+        return 0x7ff8000000000000
+    if not finite(left) or not finite(right):
+        other = right if not finite(left) else left
+        if finite(other) and dyadic(other) == 0:
+            return 0x7ff8000000000000
+        return sign | (2047 << 52)
+    return rn(dyadic(left) * dyadic(right), bool(sign))
+
+
+def fp_div(left, right):
+    require(finite(left) and finite(right) and dyadic(right) != 0,
+            "constant-division-domain")
+    return rn(dyadic(left) / dyadic(right), bool((left ^ right) >> 63))
+
+
+def sqrt_rn(word):
+    """Correctly rounded sqrt by representable-neighbor midpoint comparisons.
+
+    Binary search uses exact squared dyadics. Comparing the input against the
+    squared midpoint distinguishes nearest values; an exact tie selects the
+    even significand bit. No approximate sqrt result is used as evidence.
+    """
+    require(finite(word) and dyadic(word) >= 0, "constant-sqrt-domain")
+    target = dyadic(word)
+    if target == 0:
+        return word
+    lo, hi = 0, 0x7fefffffffffffff
+    while lo < hi:
+        middle = (lo + hi + 1) // 2
+        value = dyadic(middle)
+        if value * value <= target:
+            lo = middle
+        else:
+            hi = middle - 1
+    floor_value = dyadic(lo)
+    if floor_value * floor_value == target:
+        return lo
+    require(lo < 0x7fefffffffffffff, "constant-sqrt-overflow")
+    upper = lo + 1
+    midpoint = (floor_value + dyadic(upper)) / 2
+    square_midpoint = midpoint * midpoint
+    if target < square_midpoint:
+        return lo
+    if target > square_midpoint:
+        return upper
+    return lo if lo % 2 == 0 else upper
+
+
+def constants_from_graph(spec):
+    declarations = spec.get("constants")
+    require(isinstance(declarations, dict) and set(declarations) == {
+        "mg0", "g", "arm", "radius", "rho", "decay", "spread", "origin",
+        "minDown", "neighbor", "nearRad", "downFade", "downCut", "radFade",
+        "radCut", "qTolerance", "geometryTolerance"}, "constant-literal-fields")
+    values = {name: literal(text) for name, text in declarations.items()}
+    require(spec.get("PIBits") == "400921fb54442d18", "pi-declaration")
+    values["PI"] = parse_bits(spec["PIBits"])
+    values["mg"] = fp_mul(values["mg0"], values["g"])
+    pi_radius = fp_mul(values["PI"], values["radius"])
+    values["A"] = fp_mul(pi_radius, values["radius"])
+    values["rt2"] = sqrt_rn(literal("2"))
+    values["R"] = fp_mul(values["rt2"], values["arm"])
+    values["D"] = fp_mul(literal("2"), values["R"])
+    eight_rho = fp_mul(literal("8"), values["rho"])
+    denominator = fp_mul(eight_rho, values["A"])
+    induced_square = fp_div(values["mg"], denominator)
+    values["induced"] = sqrt_rn(induced_square)
+    values["kappa"] = fp_sub(values["rt2"], literal("1"))
+    require(all(finite(v) for v in values.values()), "nonfinite-constant")
+    require(all(dyadic(values[name]) > 0 for name in values if name != "origin"),
+            "nonpositive-constant")
+    trace = {"PI_times_radius": pi_radius, "eight_times_rho": eight_rho,
+             "induced_denominator": denominator, "induced_square": induced_square}
+    return values, {name: hex_bits(value) for name, value in trace.items()}
+
+
+def cross_bits(left, right):
+    return tuple(fp_sub(fp_mul(left[(i + 1) % 3], right[(i + 2) % 3]),
+                        fp_mul(left[(i + 2) % 3], right[(i + 1) % 3]))
+                 for i in range(3))
+
+
+@lru_cache(maxsize=2048)
+def rotate_bits(quaternion, vector):
+    first = cross_bits(quaternion[:3], vector)
+    twice = tuple(fp_mul(literal("2"), value) for value in first)
+    second = cross_bits(quaternion[:3], twice)
+    return tuple(fp_add(vector[i], fp_add(fp_mul(quaternion[3], twice[i]), second[i]))
+                 for i in range(3))
+
+
+def prepare_one(raw, constants, corners):
+    quaternion = tuple(raw[6:10])
+    axis = rotate_bits(quaternion, (literal("0"), literal("0"), literal("1")))
+    offsets = []
+    for corner in corners:
+        vector = tuple(fp_mul(literal(str(sign)), constants["arm"]) for sign in corner)
+        offsets.append(rotate_bits(quaternion, vector))
+    points = [tuple(fp_add(raw[i], offset[i]) for i in range(3)) for offset in offsets]
+    return {"center": [hex_bits(v) for v in raw[:3]],
+            "axis": [hex_bits(v) for v in axis],
+            "offsets": [[hex_bits(v) for v in offset] for offset in offsets],
+            "points": [[hex_bits(v) for v in point] for point in points],
+            "forces": [hex_bits(v) for v in raw[13:17]]}
+
+
+def dot(left, right):
+    return sum((a * b for a, b in zip(left, right)), Fraction(0))
+
+
+def exact_vector(encoded):
+    return tuple(dyadic(parse_bits(v)) for v in encoded)
+
+
+def preparation_valid(raw, prepared, constants):
+    encoded = prepared["center"] + prepared["axis"] + prepared["forces"]
+    encoded += [v for offset in prepared["offsets"] for v in offset]
+    encoded += [v for point in prepared["points"] for v in point]
+    if not all(finite(parse_bits(value)) for value in encoded):
+        return False
+    q = tuple(dyadic(v) for v in raw[6:10])
+    q_tolerance = constants["qTolerance"]
+    geometry_tolerance = constants["geometryTolerance"]
+    if not (1 - q_tolerance) ** 2 <= dot(q, q) <= (1 + q_tolerance) ** 2:
+        return False
+    axis = exact_vector(prepared["axis"])
+    if not (1 - geometry_tolerance) ** 2 <= dot(axis, axis) <= (1 + geometry_tolerance) ** 2:
+        return False
+    radius = constants["R"]
+    require(radius > geometry_tolerance, "geometry-radius-versus-tolerance")
+    for encoded_offset in prepared["offsets"]:
+        offset = exact_vector(encoded_offset)
+        if not ((radius - geometry_tolerance) ** 2 <= dot(offset, offset)
+                <= (radius + geometry_tolerance) ** 2):
+            return False
+        if abs(dot(offset, axis)) > geometry_tolerance:
+            return False
+    return True
+
+
+def regenerated_cases(spec):
+    require(isinstance(spec, dict) and spec.get("id") == "m31-current-pair-v1"
+            and type(spec.get("expectedRecords")) is int
+            and spec["expectedRecords"] == EXPECTED_RECORDS
+            and type(spec.get("fractionBits")) is int and spec["fractionBits"] == 96
+            and type(spec.get("referenceFractionBits")) is int
+            and spec["referenceFractionBits"] == 192, "spec-allocation")
+    require(spec.get("corners") == [[1, 1, 0], [-1, 1, 0], [-1, -1, 0], [1, -1, 0]],
+            "rotor-order-declaration")
+    overrides = {"Position": [0, 3], "Velocity": [3, 6], "Quaternion": [6, 10],
+                 "AngularVelocity": [10, 13], "Forces": [13, 17]}
+    require(same_json(spec.get("overrides"), overrides), "override-layout")
+    base = spec.get("baseState")
+    source_position = spec.get("defaultSourcePosition")
+    require(isinstance(base, list) and len(base) == 17 and
+            isinstance(source_position, list) and len(source_position) == 3,
+            "base-state-shape")
+    require(type(spec.get("defaultRotor")) is int and 0 <= spec["defaultRotor"] < 4,
+            "default-rotor")
+    declarations = spec.get("cases")
+    require(isinstance(declarations, list) and len(declarations) == EXPECTED_RECORDS,
+            "declared-case-count")
+    allowed = {"id", "rotor", "self"} | {side + suffix for side in ("receiver", "source")
+                                          for suffix in overrides}
+    cases, seen = [], set()
+    for entry in declarations:
+        require(isinstance(entry, dict) and set(entry) <= allowed, "case-fields")
+        case_id = entry.get("id")
+        require(isinstance(case_id, str) and re.fullmatch(r"[a-z0-9-]{1,64}", case_id),
+                "case-id")
+        require(case_id not in seen, "duplicate-declared-id")
+        seen.add(case_id)
+        receiver, source = list(base), list(base)
+        source[:3] = source_position
+        for side, state in (("receiver", receiver), ("source", source)):
+            for suffix, (start, end) in overrides.items():
+                key = side + suffix
+                if key in entry:
+                    values = entry[key]
+                    require(isinstance(values, list) and len(values) == end - start,
+                            "override-component-count")
+                    state[start:end] = values
+        rotor = entry.get("rotor", spec["defaultRotor"])
+        self_flag = entry.get("self", False)
+        require(type(rotor) is int and 0 <= rotor < 4 and type(self_flag) is bool,
+                "case-query-shape")
+        input_record = {"receiver": [hex_bits(literal(v)) for v in receiver],
+                        "source": [hex_bits(literal(v)) for v in source],
+                        "self": self_flag, "rotor": rotor}
+        cases.append({"id": case_id, "input": input_record})
+    require({"tiny-force", "huge-force", "self"} <= seen, "required-control-ids")
+    return cases
+
+
+def sqrt_enclosure(value):
+    """One fixed192 directed lattice enclosure; no adaptive refinement."""
+    require(value >= 0, "reference-sqrt-domain")
+    scale = 1 << 192
+    scaled = value * scale * scale
+    lower = isqrt(scaled.numerator // scaled.denominator)
+    upper = lower if lower * lower == scaled else lower + 1
+    return Fraction(lower, scale), Fraction(upper, scale)
+
+
+def fade_exact(value, start, end):
+    require(start < end, "reference-fade-domain")
+    if value <= start:
+        return Fraction(1)
+    if value >= end:
+        return Fraction(0)
+    progress = (value - start) / (end - start)
+    return (1 - progress) ** 2 * (1 + 2 * progress)
+
+
+def positive_product(first, second):
+    require(0 <= first[0] <= first[1] and 0 <= second[0] <= second[1],
+            "reference-positive-product-domain")
+    return first[0] * second[0], first[1] * second[1]
+
+
+def oracle_case(case, constant_bits, corners):
+    raw = {side: tuple(parse_bits(v) for v in case["input"][side])
+           for side in ("receiver", "source")}
+    answer = {"id": case["id"], "input": case["input"], "prepared": None,
+              "status": None, "branch": None}
+
+    def finish(status, branch, intervals=None):
+        answer["status"], answer["branch"] = status, branch
+        if intervals is not None:
+            answer["referenceIntervals"] = intervals
+        return answer
+
+    if not all(finite(v) for state in raw.values() for v in state):
+        return finish("rejected", "raw-nonfinite")
+    if not all(dyadic(v) > 0 for state in raw.values() for v in state[13:17]):
+        return finish("rejected", "raw-force")
+    prepared = {side: prepare_one(state, constant_bits, corners) for side, state in raw.items()}
+    answer["prepared"] = prepared
+    c = {name: dyadic(value) for name, value in constant_bits.items()}
+    if not all(preparation_valid(raw[side], prepared[side], c) for side in raw):
+        return finish("rejected", "preparation")
+    if case["input"]["self"]:
+        return finish("zero", "self")
+    receiver, source = prepared["receiver"], prepared["source"]
+    centers = tuple(a - b for a, b in zip(exact_vector(source["center"]),
+                                         exact_vector(receiver["center"])))
+    if any(abs(v) > 257 for v in centers) or dot(centers, centers) > 512 ** 2:
+        return finish("rejected", "center-guard")
+    if dot(centers, centers) >= c["neighbor"] ** 2:
+        return finish("zero", "neighbor")
+    displacement = tuple(a - b for a, b in zip(exact_vector(source["center"]),
+                                              exact_vector(receiver["points"][case["input"]["rotor"]])))
+    if any(abs(v) > 258 for v in displacement):
+        return finish("rejected", "rotor-guard")
+    axis = exact_vector(source["axis"])
+    down = dot(displacement, axis)
+    if abs(down) > 1024:
+        return finish("rejected", "down-guard")
+    if down <= 0:
+        return finish("zero", "upstream")
+    if down >= c["downCut"]:
+        return finish("zero", "down-cut")
+    residual = tuple(d - down * a for d, a in zip(displacement, axis))
+    radial_squared = dot(residual, residual)
+    if radial_squared > 2048 ** 2:
+        return finish("rejected", "radial-guard")
+    if down < c["minDown"] * c["D"]:
+        if radial_squared < c["nearRad"] ** 2:
+            return finish("rejected", "near")
+        return finish("zero", "near-outside")
+    height = down / c["D"] - c["origin"]
+    width = c["spread"] * height * c["D"]
+    if width <= 0 or height <= 0:
+        return finish("rejected", "width")
+    if radial_squared >= (c["radCut"] * width) ** 2:
+        return finish("zero", "radial")
+    projection = max(Fraction(0), dot(exact_vector(receiver["axis"]), axis))
+    if projection == 0:
+        return finish("zero", "projection")
+    xi_squared = radial_squared / (width * width)
+    rational_profile = (c["decay"] / height / (1 + c["kappa"] * xi_squared) ** 2
+                        * c["induced"] * projection
+                        * fade_exact(down, c["downFade"], c["downCut"]))
+    require(rational_profile > 0, "reference-positive-profile")
+    xi = sqrt_enclosure(xi_squared)
+    fade = (fade_exact(xi[1], c["radFade"], c["radCut"]),
+            fade_exact(xi[0], c["radFade"], c["radCut"]))
+    K = (rational_profile * fade[0], rational_profile * fade[1])
+    nominal_total = sum(exact_vector(source["forces"]), Fraction(0))
+    beta = sqrt_enclosure(nominal_total / c["mg"])
+    scaled_K = positive_product(K, beta)
+    intervals = {"K": K, "scaledK": scaled_K, "beta": beta}
+    if K[0] > 128 or scaled_K[0] > 128:
+        return finish("rejected", "cap", intervals)
+    if K[1] > 128 or scaled_K[1] > 128:
+        return finish("reference-undecidable", "cap", intervals)
+    receiver_force = dyadic(parse_bits(receiver["forces"][case["input"]["rotor"]]))
+    # This denominator is exact-real, unlike the rounded induced graph above.
+    nu = sqrt_enclosure(receiver_force / (2 * c["rho"] * c["A"]))
+    intervals["nu"] = nu
+    if nu[0] <= 0:
+        return finish("reference-undecidable", "normalizer", intervals)
+    intervals["coefficient"] = (scaled_K[0] / nu[1], scaled_K[1] / nu[0])
+    return finish("positive", "active", intervals)
+
+
+def read_contract(path):
+    contract = load_json(path, MAX_SPEC_BYTES)
+    require(isinstance(contract, dict) and contract.get("schema") == "m31-current-pair-result-v1"
+            and contract.get("journalSchema") == "m31-current-pair-journal-v1",
+            "result-contract-schema")
+    require(contract.get("fields") == ["schema", "specId", "runtime", "sourceSha256",
+                                        "constants", "records"] and
+            contract.get("recordFields") == ["id", "input", "prepared", "result"],
+            "result-contract-fields")
+    require(contract.get("sourceFiles") == ["spec.json", "result-contract.json", "interval.cjs",
+                                             "rational.cjs", "adapter.cjs", "pair.cjs", "run.cjs"],
+            "result-contract-source-files")
+    require(contract.get("negativeControls") == ["unsound-positive-interval", "wrong-branch",
+            "altered-prepared", "missing-case", "duplicate-case", "reordered-cases", "altered-input"],
+            "result-contract-controls")
+    allowed = contract.get("allowedUnresolvedBranches")
+    require(isinstance(allowed, list) and len(allowed) == 8 and set(allowed) == {
+        "unresolved-range", "unresolved-domain", "unresolved-iteration", "unresolved-sqrt-check",
+        "invalid-bits", "invalid-interval", "cap", "normalizer"},
+        "result-contract-unresolved-branches")
+    require(same_json(contract.get("allowedStressUnresolved"), {
+        "tiny-force": ["normalizer"], "huge-force": ["unresolved-range"]}),
+        "result-contract-stress-policy")
+    return contract
+
+
+class Findings:
+    def __init__(self):
+        self.total = 0
+        self.errors = []
+
+    def add(self, code, index=None):
+        self.total += 1
+        if len(self.errors) < MAX_ERRORS:
+            self.errors.append(code if index is None else code + ":row=" + str(index))
+
+    def check(self, condition, code, index=None):
+        if not condition:
+            self.add(code, index)
+
+
+def fraction_wire(value):
+    return {"numerator": str(value.numerator), "denominator": str(value.denominator)}
+
+
+def reference_wire(intervals):
+    return {name: {"l": fraction_wire(bounds[0]), "u": fraction_wire(bounds[1])}
+            for name, bounds in intervals.items()}
+
+
+def candidate_interval(value):
+    require(isinstance(value, dict) and set(value) == {"l", "u"}, "candidate-interval-fields")
+    lo, hi = canonical_integer(value["l"]), canonical_integer(value["u"])
+    require(-(1 << 352) <= lo <= hi <= 1 << 352, "candidate-interval-order-or-range")
+    return Fraction(lo, 1 << 96), Fraction(hi, 1 << 96)
+
+
+def validate_core(document, spec, contract, expected, constant_table, source_hashes):
+    """One validator for baseline and all seven controls, without journal checks."""
+    findings = Findings()
+    statuses = Counter({key: 0 for key in ("positive", "zero", "rejected", "unresolved")})
+    reference_counts = Counter(case["status"] for case in expected)
+    branches = Counter()
+    rows = []
+    if not isinstance(document, dict):
+        findings.add("result-document-object")
+    else:
+        findings.check(set(document) == set(contract["fields"]), "result-document-fields")
+        findings.check(document.get("schema") == contract["schema"], "result-schema")
+        findings.check(document.get("specId") == spec["id"], "result-spec-id")
+        findings.check(same_json(document.get("sourceSha256"), source_hashes), "source-hash-report")
+        findings.check(same_json(document.get("constants"), constant_table), "constant-encoding-graph")
+        runtime = document.get("runtime")
+        findings.check(isinstance(runtime, dict) and set(runtime) == {"node", "v8", "platform", "arch"}
+                       and all(isinstance(v, str) and 1 <= len(v) <= 256 for v in runtime.values()),
+                       "runner-runtime-fields")
+        records = document.get("records")
+        if not isinstance(records, list) or len(records) > 512:
+            findings.add("records-array-or-budget")
+        else:
+            rows = records
+    findings.check(len(rows) == EXPECTED_RECORDS, "record-count")
+    global_fields_valid = findings.total == 0
+    seen = set()
+    evidence = []
+    qualified_count = ordinary_qualified = 0
+    max_width = Fraction(0)
+    max_relative_width = Fraction(0)
+    relative_unavailable = 0
+    for index, row in enumerate(rows):
+        before = findings.total
+        if not isinstance(row, dict):
+            findings.add("record-not-object", index)
+            continue
+        findings.check(set(row) == set(contract["recordFields"]), "record-fields", index)
+        identifier = row.get("id")
+        if not isinstance(identifier, str) or len(identifier) > 64:
+            findings.add("record-id-shape", index)
+        elif identifier in seen:
+            findings.add("duplicate-record-id", index)
+        else:
+            seen.add(identifier)
+        result = row.get("result")
+        status = result.get("status") if isinstance(result, dict) else None
+        branch = result.get("branch") if isinstance(result, dict) else None
+        statuses[status if isinstance(status, str) and status in statuses else "_invalid"] += 1
+        if isinstance(branch, str) and re.fullmatch(r"[a-z][a-z0-9-]{0,63}", branch):
+            branches[branch] += 1
+        else:
+            branches["_invalid"] += 1
+        if index >= len(expected):
+            findings.add("unexpected-extra-record", index)
+            continue
+        target = expected[index]
+        findings.check(identifier == target["id"], "record-id-or-order", index)
+        findings.check(same_json(row.get("input"), target["input"]), "raw-input-regeneration", index)
+        findings.check(same_json(row.get("prepared"), target["prepared"]), "prepared-operation-graph", index)
+        item = {"id": target["id"], "referenceStatus": target["status"],
+                "referenceBranch": target["branch"],
+                "candidateStatus": status if status in ("positive", "zero", "rejected", "unresolved") else "_invalid",
+                "candidateBranch": branch if isinstance(branch, str) and re.fullmatch(r"[a-z][a-z0-9-]{0,63}", branch) else "_invalid",
+                "qualified": False}
+        if "referenceIntervals" in target:
+            item["referenceIntervals"] = reference_wire(target["referenceIntervals"])
+        evidence.append(item)
+        if not isinstance(result, dict):
+            findings.add("result-not-object", index)
+            continue
+        unresolved = status == "unresolved"
+        stress = target["id"] in ("tiny-force", "huge-force")
+        if unresolved:
+            findings.check(set(result) == {"status", "branch"}, "unresolved-result-fields", index)
+            findings.check(branch in contract["allowedUnresolvedBranches"], "unresolved-branch", index)
+            findings.check(stress, "ordinary-case-unresolved", index)
+            findings.check(branch in contract["allowedStressUnresolved"].get(target["id"], []),
+                           "unexpected-stress-refusal", index)
+            findings.check(target["status"] in ("positive", "reference-undecidable") or
+                           (target["status"] == "rejected" and target["branch"] == "cap"),
+                           "unresolved-before-exact-early-branch", index)
+            item["unqualifiedReason"] = "declared-stress-refusal"
+        elif target["status"] == "reference-undecidable":
+            findings.add("reference-undecidable-no-resolved-qualification", index)
+            item["unqualifiedReason"] = "reference-undecidable"
+        else:
+            findings.check(status == target["status"], "target-status", index)
+            findings.check(branch == target["branch"], "target-branch-precedence", index)
+            if target["status"] == "rejected":
+                findings.check(set(result) == {"status", "branch"}, "rejection-result-fields", index)
+            elif target["status"] == "zero":
+                findings.check(set(result) == {"status", "branch", "intervals"},
+                               "zero-result-fields", index)
+                findings.check(same_json(result.get("intervals"), {
+                    "K": {"l": "0", "u": "0"}, "coefficient": {"l": "0", "u": "0"}}),
+                    "zero-not-exactly-zero", index)
+            elif target["status"] == "positive":
+                findings.check(set(result) == {"status", "branch", "intervals"},
+                               "positive-result-fields", index)
+                intervals = result.get("intervals")
+                required = {"K", "scaledK", "beta", "nu", "coefficient"}
+                if not isinstance(intervals, dict) or set(intervals) != required:
+                    findings.add("positive-interval-fields", index)
+                else:
+                    parsed = {}
+                    for name in sorted(required):
+                        try:
+                            bounds = candidate_interval(intervals[name])
+                            parsed[name] = bounds
+                            exact = target["referenceIntervals"][name]
+                            findings.check(bounds[0] >= 0, "negative-positive-interval:" + name, index)
+                            findings.check(bounds[0] <= exact[0] and exact[1] <= bounds[1],
+                                           "reference-containment:" + name, index)
+                        except CheckError as error:
+                            findings.add(str(error) + ":" + name, index)
+                    if "K" in parsed:
+                        findings.check(parsed["K"][1] <= 128, "positive-K-cap-not-certified", index)
+                    if "scaledK" in parsed:
+                        findings.check(parsed["scaledK"][1] <= 128,
+                                       "positive-scaled-cap-not-certified", index)
+                    if "nu" in parsed:
+                        findings.check(parsed["nu"][0] > 0,
+                                       "positive-normalizer-not-certified", index)
+                    if findings.total == before and "coefficient" in parsed:
+                        width = parsed["coefficient"][1] - parsed["coefficient"][0]
+                        max_width = max(max_width, width)
+                        lower_reference = target["referenceIntervals"]["coefficient"][0]
+                        if lower_reference > 0:
+                            max_relative_width = max(max_relative_width, width / lower_reference)
+                        else:
+                            relative_unavailable += 1
+            else:
+                findings.add("unknown-oracle-status", index)
+        item["verified"] = global_fields_valid and findings.total == before
+        if item["verified"] and not unresolved and target["status"] != "reference-undecidable":
+            item["qualified"] = True
+            qualified_count += 1
+            ordinary_qualified += int(not stress)
+    findings.check(ordinary_qualified == EXPECTED_RECORDS - 2, "ordinary-qualification-count")
+    return {"verificationPassed": findings.total == 0,
+            "fullQualification": findings.total == 0 and qualified_count == EXPECTED_RECORDS,
+            "totalRecords": len(rows), "qualifiedRecords": qualified_count,
+            "unqualifiedRecords": EXPECTED_RECORDS - qualified_count,
+            "ordinaryQualifiedRecords": ordinary_qualified,
+            "referenceStatusCounts": dict(reference_counts), "observedStatusCounts": dict(statuses),
+            "observedBranchCounts": dict(branches),
+            "referenceUndecidableRecords": reference_counts["reference-undecidable"],
+            "candidateUnresolvedRecords": statuses["unresolved"],
+            "coefficientWidthDiagnostics": {
+                "maximumAbsoluteWidth": fraction_wire(max_width),
+                "maximumRelativeWidthUpperBound": fraction_wire(max_relative_width),
+                "relativeWidthUnavailableCount": relative_unavailable,
+                "criterion": "descriptive only; relative bound divides width by positive reference lower endpoint"},
+            "errorCount": findings.total, "errors": findings.errors, "cases": evidence}
+
+
+def validate_journal(path, document, spec, contract):
+    require(path.is_file() and path.stat().st_size <= MAX_INPUT_BYTES, "journal-missing-or-budget")
+    with path.open("rb") as handle:
+        data = handle.read(MAX_INPUT_BYTES + 1)
+    require(len(data) <= MAX_INPUT_BYTES, "journal-budget")
+    lines = data.splitlines()
+    require(len(lines) == EXPECTED_RECORDS + 2, "journal-line-count")
+    decoded = []
+    for line in lines:
+        try:
+            decoded.append(json.loads(line, object_pairs_hook=pairs_without_duplicates,
+                                      parse_constant=reject_json_constant))
+        except (ValueError, UnicodeError, RecursionError):
+            raise CheckError("journal-invalid-json") from None
+    require(same_json(decoded[0], {"kind": "header", "schema": contract["journalSchema"],
+                                  "specId": spec["id"]}), "journal-header")
+    require(same_json(decoded[-1], {"kind": "complete", "records": EXPECTED_RECORDS}),
+            "journal-completion")
+    require(isinstance(document, dict) and isinstance(document.get("records"), list)
+            and len(document["records"]) == EXPECTED_RECORDS, "journal-final-count")
+    for index, (entry, row) in enumerate(zip(decoded[1:-1], document["records"])):
+        require(same_json(entry, {"kind": "record", "row": row}),
+                "journal-final-row:row=" + str(index))
+    return {"passed": True, "rows": EXPECTED_RECORDS,
+            "bytes": len(data), "sha256": hashlib.sha256(data).hexdigest()}
+
+
+def negative_controls(document, expected, validator):
+    positive_index = next((i for i, target in enumerate(expected)
+                           if target["status"] == "positive" and
+                           target["referenceIntervals"]["coefficient"][0] > 0), None)
+    self_index = next((i for i, target in enumerate(expected) if target["id"] == "self"), None)
+    require(positive_index is not None and self_index is not None, "negative-control-witness-missing")
+
+    def unsound(clone):
+        clone["records"][positive_index]["result"]["intervals"]["coefficient"] = {"l": "0", "u": "0"}
+
+    def wrong_branch(clone):
+        clone["records"][self_index]["result"]["branch"] = "neighbor"
+
+    def prepared(clone):
+        old = clone["records"][positive_index]["prepared"]["receiver"]["points"][0][0]
+        clone["records"][positive_index]["prepared"]["receiver"]["points"][0][0] = hex_bits(parse_bits(old) ^ 1)
+
+    def missing(clone):
+        clone["records"].pop()
+
+    def duplicate(clone):
+        clone["records"][1] = copy.deepcopy(clone["records"][0])
+
+    def reorder(clone):
+        clone["records"][0], clone["records"][1] = clone["records"][1], clone["records"][0]
+
+    def raw_input(clone):
+        old = clone["records"][0]["input"]["receiver"][0]
+        clone["records"][0]["input"]["receiver"][0] = hex_bits(parse_bits(old) ^ 1)
+
+    probes = [
+        ("unsound-positive-interval", "Replace a proven-positive coefficient interval with [0,0].", unsound),
+        ("wrong-branch", "Change the valid self exclusion branch to neighbor.", wrong_branch),
+        ("altered-prepared", "Flip one bit of an emitted prepared receiver point.", prepared),
+        ("missing-case", "Remove the last required record.", missing),
+        ("duplicate-case", "Replace the second record with a duplicate of the first.", duplicate),
+        ("reordered-cases", "Exchange the first two records.", reorder),
+        ("altered-input", "Flip one bit of the first raw receiver position.", raw_input),
+    ]
+    controls = []
+    for name, description, mutation in probes:
+        clone = copy.deepcopy(document)
+        mutation(clone)
+        verdict = validator(clone)
+        controls.append({"name": name, "description": description, "executed": True,
+                         "rejected": not verdict["verificationPassed"],
+                         "errorCount": verdict["errorCount"], "errors": verdict["errors"]})
+    return controls
+
+
+def main(argv=None):
+    parser = PublicArgumentParser(description="Independent current-pair saved-result checker")
+    for name in ("spec", "input", "manifest", "output", "root"):
+        parser.add_argument("--" + name, required=True)
+    try:
+        args = parser.parse_args(argv)
+    except CheckError:
+        print('{"verificationPassed":false,"error":"invalid-command-line"}', file=sys.stderr)
+        return 2
+    report = {"schema": "m31-current-pair-independent-check-v1", "passed": False,
+              "verificationPassed": False, "fullQualification": False,
+              "checkerRuntime": {"pythonVersion": ".".join(str(v) for v in sys.version_info[:3]),
+                                 "implementation": sys.implementation.name},
+              "scope": "finite raw-adapter and exact-real individual-pair verification; unresolved records remain unqualified",
+              "expectedRecords": EXPECTED_RECORDS, "totalRecords": 0,
+              "faultControls": [], "errors": []}
+    output_allowed = False
+    try:
+        root = Path(args.root).resolve(strict=True)
+        require(root.is_dir(), "root-not-directory")
+        output = Path(args.output)
+        try:
+            output.parent.resolve(strict=True).relative_to(root)
+        except (OSError, ValueError):
+            raise CheckError("output-parent-outside-root-or-missing") from None
+        output_allowed = True
+        spec_path, input_path, manifest_path = Path(args.spec), Path(args.input), Path(args.manifest)
+        contract_path = spec_path.parent / "result-contract.json"
+        for path in (spec_path, input_path, manifest_path, contract_path):
+            relative_name(path, root)
+        verified = verify_manifest(manifest_path, root, spec_path, contract_path)
+        indexed = {item["path"]: item for item in verified}
+        spec = load_json(spec_path, MAX_SPEC_BYTES)
+        contract = read_contract(contract_path)
+        inputs = regenerated_cases(spec)
+        constant_bits, constant_trace = constants_from_graph(spec)
+        constant_table = {name: hex_bits(value) for name, value in constant_bits.items()}
+        expected = [oracle_case(case, constant_bits, spec["corners"]) for case in inputs]
+        source_hashes = {}
+        for name in contract["sourceFiles"]:
+            relative = relative_name(spec_path.parent / name, root)
+            require(relative in indexed, "candidate-source-not-pinned")
+            source_hashes[name] = indexed[relative]["sha256"]
+        document = load_json(input_path, MAX_INPUT_BYTES)
+
+        def validator(candidate):
+            return validate_core(candidate, spec, contract, expected, constant_table, source_hashes)
+
+        baseline = validator(document)
+        for key, value in baseline.items():
+            if key not in ("verificationPassed", "fullQualification", "errorCount"):
+                report[key] = value
+        report["baselineErrorCount"] = baseline["errorCount"]
+        report["baselineVerificationPassed"] = baseline["verificationPassed"]
+        report["expectedConstantEncodings"] = constant_table
+        report["constantGraphIntermediateEncodings"] = constant_trace
+        report["verifiedSources"] = verified
+        report["sourceManifest"] = {"path": relative_name(manifest_path, root),
+                                    "sha256": file_sha256(manifest_path, MAX_MANIFEST_BYTES)[1]}
+        report["input"] = {"path": relative_name(input_path, root),
+                           "sha256": file_sha256(input_path, MAX_INPUT_BYTES)[1]}
+        journal_path = Path(str(input_path) + ".jsonl")
+        try:
+            relative_name(journal_path, root)
+            report["journal"] = validate_journal(journal_path, document, spec, contract)
+            report["journal"]["path"] = relative_name(journal_path, root)
+        except CheckError as error:
+            report["journal"] = {"passed": False, "errors": [str(error)]}
+            report["errors"].append(str(error))
+        if baseline["verificationPassed"]:
+            report["faultControls"] = negative_controls(document, expected, validator)
+        else:
+            report["errors"].append("controls-not-run-on-invalid-baseline")
+        controls_passed = (len(report["faultControls"]) == 7 and
+                           all(item["executed"] and item["rejected"] for item in report["faultControls"]))
+        if not controls_passed:
+            report["errors"].append("negative-controls-incomplete-or-ineffective")
+        report["verificationPassed"] = baseline["verificationPassed"] and report["journal"]["passed"] and controls_passed
+        report["fullQualification"] = report["verificationPassed"] and baseline["fullQualification"]
+        report["passed"] = report["verificationPassed"]
+    except CheckError as error:
+        report["errors"].append(str(error))
+    except Exception as error:
+        report["errors"].append("checker-exception:" + type(error).__name__)
+    report["errors"] = report["errors"][:MAX_ERRORS]
+    payload = (json.dumps(report, indent=2, sort_keys=True) + "\n").encode("utf-8")
+    try:
+        require(output_allowed and len(payload) <= MAX_INPUT_BYTES, "report-output-path-or-budget")
+        with Path(args.output).open("xb") as handle:
+            handle.write(payload)
+    except Exception:
+        print('{"verificationPassed":false,"error":"exclusive-report-write-failed"}', file=sys.stderr)
+        return 2
+    print(json.dumps({"verificationPassed": report["verificationPassed"],
+                      "fullQualification": report["fullQualification"],
+                      "totalRecords": report["totalRecords"],
+                      "faultControls": len(report["faultControls"])}))
+    return 0 if report["verificationPassed"] else 1
+
+
+if __name__ == "__main__":
+    sys.exit(main())
