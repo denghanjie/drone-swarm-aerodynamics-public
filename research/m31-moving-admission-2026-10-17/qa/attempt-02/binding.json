@@ -1,0 +1,132 @@
+{
+  "schema": "m31-moving-view-v1",
+  "checkPath": "research/m31-moving-admission-2026-10-17/results/check.json",
+  "indexPath": "research/m31-moving-admission-2026-10-17/results/index.json",
+  "generationPaths": {
+    "run-a": "research/m31-moving-admission-2026-10-17/results/generation/run-a.json",
+    "run-b": "research/m31-moving-admission-2026-10-17/results/generation/run-b.json"
+  },
+  "rows": [
+    {
+      "id": "run-a-t0",
+      "runId": "run-a",
+      "t": 0,
+      "recordPath": "research/m31-moving-admission-2026-10-17/results/scenes/run-a-t0.json",
+      "modelStatus": "certified",
+      "modelBranch": "loads",
+      "captured": "yes",
+      "outcome": "certified",
+      "validation": "Passed individually; overall gate failed"
+    },
+    {
+      "id": "run-a-t5",
+      "runId": "run-a",
+      "t": 5,
+      "recordPath": "research/m31-moving-admission-2026-10-17/results/scenes/run-a-t5.json",
+      "modelStatus": "certified",
+      "modelBranch": "loads",
+      "captured": "yes",
+      "outcome": "certified",
+      "validation": "Passed individually; overall gate failed"
+    },
+    {
+      "id": "run-a-t10",
+      "runId": "run-a",
+      "t": 10,
+      "recordPath": "research/m31-moving-admission-2026-10-17/results/scenes/run-a-t10.json",
+      "modelStatus": "certified",
+      "modelBranch": "loads",
+      "captured": "yes",
+      "outcome": "certified",
+      "validation": "Passed individually; overall gate failed"
+    },
+    {
+      "id": "run-b-t0",
+      "runId": "run-b",
+      "t": 0,
+      "recordPath": "research/m31-moving-admission-2026-10-17/results/scenes/run-b-t0.json",
+      "modelStatus": "certified",
+      "modelBranch": "loads",
+      "captured": "yes",
+      "outcome": "certified",
+      "validation": "Passed individually; overall gate failed"
+    },
+    {
+      "id": "run-b-t5",
+      "runId": "run-b",
+      "t": 5,
+      "recordPath": "research/m31-moving-admission-2026-10-17/results/scenes/run-b-t5.json",
+      "modelStatus": "certified",
+      "modelBranch": "loads",
+      "captured": "yes",
+      "outcome": "certified",
+      "validation": "Passed individually; overall gate failed"
+    },
+    {
+      "id": "run-b-t10",
+      "runId": "run-b",
+      "t": 10,
+      "recordPath": "research/m31-moving-admission-2026-10-17/results/scenes/run-b-t10.json",
+      "modelStatus": "certified",
+      "modelBranch": "loads",
+      "captured": "yes",
+      "outcome": "certified",
+      "validation": "Passed individually; overall gate failed"
+    }
+  ],
+  "pins": [
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/check.json",
+      "bytes": 31917,
+      "sha256": "9991d6a3d60d7d0e58f69d0074947b38453013246b2c63ecfa3bf26a7086eb6d"
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/generation/run-a.json",
+      "bytes": 583176,
+      "sha256": "7bd98a82e8d5deeeb23c911cbfdd9ba0b649fe6faf271cb0b822442e4b280b22"
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/generation/run-b.json",
+      "bytes": 583199,
+      "sha256": "e199a9d37aa58199a243db02c31ec1da9f0d66e6a4ff0460bb8f3ac4e4c1ad5c"
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/index.json",
+      "bytes": 12244,
+      "sha256": "7ee103f78b697d4619510543935a319a5e0b032925800247f5c4da3536b3c437"
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/scenes/run-a-t0.json",
+      "bytes": 561547,
+      "sha256": "532cc6b7c2a163523786c4ce7851752c053b9be968b3e08c6c54df9af5e808d3"
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/scenes/run-a-t10.json",
+      "bytes": 776337,
+      "sha256": "4a510c53028fa350ecbb43a748d0c5a3d1d2a7af93d11fa1cbe1fabf78bb7a65"
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/scenes/run-a-t5.json",
+      "bytes": 656172,
+      "sha256": "8c5baabfaacc3784582e209214d6eff0e80f8a1fb3f271d8e046be5bba05aa65"
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/scenes/run-b-t0.json",
+      "bytes": 563828,
+      "sha256": "9bbafd0cf12c763afb92ac97a4974b1caf765422e9bf53bc811b0ae4ad42f572"
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/scenes/run-b-t10.json",
+      "bytes": 739311,
+      "sha256": "17625cc0a6f25ee5c4bef9a0e7296173f7565b20bb05a9105499b6fd03eb9205"
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/scenes/run-b-t5.json",
+      "bytes": 653465,
+      "sha256": "4c073fc5c6fdf69bb9eef054480bdfac89af392f54ba39dd2099620797688d44"
+    }
+  ],
+  "headline": "6 / 6 snapshots passed individual load checks. Overall checkpoint failed its validation-control gate.",
+  "diagnosis": "All 20 corruptions were rejected, but only 19 reached their required failure rule. The false-zero control was intercepted by a work-counter check. This allocation stays failed.",
+  "verdict": "Promising moving-state evidence; advancement blocked. The six states meet the four model-error tolerances, but the checker qualification must be repaired and tested under a fresh protocol before transfer."
+}

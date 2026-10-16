@@ -1,0 +1,474 @@
+{
+  "stage": "checker",
+  "sourceCommit": "2a957d2b0bb26e731c8cd184bc13f51f673e9a0d",
+  "sourceManifestSha256": "37a865330bbb86d0aef03dd3de775b830d7398abe69717b80c64860d4a8caa21",
+  "configSha256": "0a6b876edb63f13ce17ac81f996dea741e93abe72bdb28b7c6649626ffab278e",
+  "launchCutoffUtc": "2026-10-16T23:00:00Z",
+  "commandTemplate": [
+    "PYTHON",
+    "-I",
+    "-B",
+    "PACKAGE/source/check.py",
+    "--config",
+    "PACKAGE/source/config.json",
+    "--input",
+    "PACKAGE/results/index.json",
+    "--manifest",
+    "PACKAGE/source-manifest.json",
+    "--output",
+    "PACKAGE/results/check.json",
+    "--root",
+    "REPOSITORY_ROOT"
+  ],
+  "runtimePins": {
+    "node": {
+      "bytes": 121304480,
+      "sha256": "3c9448363b9976bf3d9e8f4d320397975800131b42c7b1be342dadc05871dd25"
+    },
+    "python": {
+      "bytes": 18058560,
+      "sha256": "7a314947596fc484d4ec36ffc28e843b78d6d749c68736f8b5c24e7333f418eb"
+    }
+  },
+  "runtimeIsolation": {
+    "supervisorPythonIsolated": true,
+    "guardianCheckerPythonIsolated": true,
+    "clearedChildEnvironmentKeys": [
+      "NODE_OPTIONS",
+      "NODE_PATH",
+      "NODE_V8_COVERAGE",
+      "NODE_REDIRECT_WARNINGS",
+      "PYTHONPATH",
+      "PYTHONHOME",
+      "PYTHONSTARTUP",
+      "PYTHONUSERBASE",
+      "PYTHONINSPECT",
+      "LD_PRELOAD",
+      "LD_LIBRARY_PATH",
+      "DYLD_INSERT_LIBRARIES",
+      "DYLD_LIBRARY_PATH",
+      "DYLD_FRAMEWORK_PATH",
+      "DYLD_FALLBACK_LIBRARY_PATH",
+      "DYLD_FALLBACK_FRAMEWORK_PATH"
+    ]
+  },
+  "wallLimitSeconds": 600,
+  "guardianWallLimitSeconds": 610,
+  "sampledRssLimitBytes": 1073741824,
+  "scientificOutputLimitBytes": 268435456,
+  "outputLimitBytes": 285212672,
+  "artifactLimitBytes": {
+    "index.json": 2097152,
+    "kernel-journal.jsonl": 4194304,
+    "eachSceneControlReference": 33554432,
+    "eachGenerationRecording": 8388608,
+    "allKernelScientificOutputs": 201326592,
+    "allCheckerOutputs": 67108864,
+    "check.json": 2097152
+  },
+  "logMetadataLimitBytes": 16777216,
+  "finalReportLimitBytes": 65536,
+  "nominalSleepSeconds": 0.05,
+  "success": false,
+  "closed": true,
+  "samples": 505,
+  "peakSampledGroupRssBytes": 107364352,
+  "maxSampleGapSeconds": 0.1365856658667326,
+  "terminationReason": null,
+  "containmentScope": "Reviewed scientific children spawn no subprocesses. Retained guardian owns process group; sampling is not hostile-code/escaped-descendant isolation.",
+  "accountingScope": "Recursive closed-set results and all private raw logs. Kernel scientific outputs192 MiB plus checker64 MiB share256 MiB. Controls/scenes/references32 MiB each; generation8 MiB per run; index2 MiB; journal4 MiB; check.json2 MiB. Metadata, supervision reports and private/public logs share16 MiB; combined272 MiB. Supervisor reports64 KiB each. Missing scheduled scene files are allowed only for subsequent independent reached/not-reached validation.",
+  "processGroup": 25659,
+  "scientificChildAbsentBeforeRelease": true,
+  "exitCode": 1,
+  "guardianExitCode": 0,
+  "childGroupAbsent": true,
+  "logs": [
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/checker-stdout.log",
+      "rawBytes": 102,
+      "rawSha256": "9dedf9e091043acad493c1868236c94a21a6f83cc213c689913d0734112c414f",
+      "publishedBytes": 102,
+      "publishedSha256": "9dedf9e091043acad493c1868236c94a21a6f83cc213c689913d0734112c414f",
+      "redaction": "machine/runtime path prefixes replaced; raw logs retained privately"
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/checker-stderr.log",
+      "rawBytes": 0,
+      "rawSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "publishedBytes": 0,
+      "publishedSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "redaction": "machine/runtime path prefixes replaced; raw logs retained privately"
+    }
+  ],
+  "output": {
+    "path": "research/m31-moving-admission-2026-10-17/results/check.json",
+    "bytes": 31917,
+    "sha256": "9991d6a3d60d7d0e58f69d0074947b38453013246b2c63ecfa3bf26a7086eb6d"
+  },
+  "journal": {
+    "path": "research/m31-moving-admission-2026-10-17/results/kernel-journal.jsonl",
+    "bytes": 16315,
+    "sha256": "ae52e3fb6d8e797ddcfc995d155a585d6d0a8b28419901d6fb6613436761f1e9"
+  },
+  "scientificEvidence": [
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/controls/distant-zero.json",
+      "bytes": 8423,
+      "sha256": "242eb217c57429a620b8849f94db679496821e948ad33e1b57edadfadf24f8ec"
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/controls/order-incompatible.json",
+      "bytes": 4760,
+      "sha256": "400719447092e873208c1ee77294c39ea714e4d50f32e86c149dc0527ea71809"
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/controls/positive.json",
+      "bytes": 13549,
+      "sha256": "210deaeb19fda489d06fade1bb978999083b3c4c74d15943d856ed07a433ba78"
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/controls/raw-force.json",
+      "bytes": 2111,
+      "sha256": "a14751a7ca01552a6e2dbde7a150b8c5a49554b118b53e636fc6f9a02dccabd2"
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/generation/run-a.json",
+      "bytes": 583176,
+      "sha256": "7bd98a82e8d5deeeb23c911cbfdd9ba0b649fe6faf271cb0b822442e4b280b22"
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/generation/run-b.json",
+      "bytes": 583199,
+      "sha256": "e199a9d37aa58199a243db02c31ec1da9f0d66e6a4ff0460bb8f3ac4e4c1ad5c"
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/index.json",
+      "bytes": 12244,
+      "sha256": "7ee103f78b697d4619510543935a319a5e0b032925800247f5c4da3536b3c437"
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/kernel-journal.jsonl",
+      "bytes": 16315,
+      "sha256": "ae52e3fb6d8e797ddcfc995d155a585d6d0a8b28419901d6fb6613436761f1e9"
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/scenes/run-a-t0.json",
+      "bytes": 561547,
+      "sha256": "532cc6b7c2a163523786c4ce7851752c053b9be968b3e08c6c54df9af5e808d3"
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/scenes/run-a-t10.json",
+      "bytes": 776337,
+      "sha256": "4a510c53028fa350ecbb43a748d0c5a3d1d2a7af93d11fa1cbe1fabf78bb7a65"
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/scenes/run-a-t5.json",
+      "bytes": 656172,
+      "sha256": "8c5baabfaacc3784582e209214d6eff0e80f8a1fb3f271d8e046be5bba05aa65"
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/scenes/run-b-t0.json",
+      "bytes": 563828,
+      "sha256": "9bbafd0cf12c763afb92ac97a4974b1caf765422e9bf53bc811b0ae4ad42f572"
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/scenes/run-b-t10.json",
+      "bytes": 739311,
+      "sha256": "17625cc0a6f25ee5c4bef9a0e7296173f7565b20bb05a9105499b6fd03eb9205"
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/scenes/run-b-t5.json",
+      "bytes": 653465,
+      "sha256": "4c073fc5c6fdf69bb9eef054480bdfac89af392f54ba39dd2099620797688d44"
+    }
+  ],
+  "privateLogDirectorySha256": "995a31b2b96a6b2192c7f03248f7468f7f945fcc8a25aa1135e3a2324bcb9798",
+  "privateRawLogs": [
+    {
+      "name": "checker-stderr.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "checker-stdout.raw",
+      "bytes": 102,
+      "sha256": "9dedf9e091043acad493c1868236c94a21a6f83cc213c689913d0734112c414f"
+    },
+    {
+      "name": "kernel-stderr.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "kernel-stdout.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "checkerEvidence": [
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/check.json",
+      "bytes": 31917,
+      "sha256": "9991d6a3d60d7d0e58f69d0074947b38453013246b2c63ecfa3bf26a7086eb6d"
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/reference/distant-zero.json",
+      "bytes": 4540,
+      "sha256": "2386b83f29ef8a901ab3264b11e3b3e85056ccfa092d1bcd2fa3359b4c63ed43"
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/reference/order-incompatible.json",
+      "bytes": 3487,
+      "sha256": "7d92b20e142ceb043e47c868eb313627767ae6ecd3868b6221f49d87f19b9dda"
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/reference/positive.json",
+      "bytes": 10388,
+      "sha256": "3641079a821125c666234c4f0478b558968676b482df3ef3255d92fb85688db1"
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/reference/raw-force.json",
+      "bytes": 1150,
+      "sha256": "edd6f1f61219a966096932ce0d4c098ba0214cd9e04c9cff5df6ce6d5e525096"
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/reference/run-a-t0.json",
+      "bytes": 1264307,
+      "sha256": "dbbac3f535005a248d63900194ce5af20ddaff7c92ae67b0004d0a327d4b8055"
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/reference/run-a-t10.json",
+      "bytes": 1239622,
+      "sha256": "588e1641cdc9c2d9a58a04533f4204e1dcd131e3ab58786552bc6c7fe21c526c"
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/reference/run-a-t5.json",
+      "bytes": 1261290,
+      "sha256": "8fd8605e3ba66598d80abbacb95e637f7ca813defc6214854e4da3fa6889e909"
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/reference/run-b-t0.json",
+      "bytes": 1262411,
+      "sha256": "11fcc5da424ac81193e7999285a1114ad24589b968dc88f66e4478b0b6b564ec"
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/reference/run-b-t10.json",
+      "bytes": 1237515,
+      "sha256": "a538e09f73f14f664585edc055620177b457220303d925e5ae33a2e1ebe476f0"
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/reference/run-b-t5.json",
+      "bytes": 1244701,
+      "sha256": "4792bc2f5af6adc504471a0026087665fe5f3a9c27c41c74d3f30b3b2afc4a3d"
+    }
+  ],
+  "sourceAndRuntimeRechecked": true,
+  "outputAccountingBeforeReport": {
+    "aggregateBytes": 12747066,
+    "scientificBytes": 12735765,
+    "kernelBytes": 5174437,
+    "checkerBytes": 7561328,
+    "indexBytes": 12244,
+    "journalBytes": 16315,
+    "sceneControlReferenceBytes": 11508914,
+    "generationBytes": 1166375,
+    "logMetadataBytes": 11301,
+    "reportBytes": 10032,
+    "unclassifiedBytes": 0,
+    "files": [
+      {
+        "scope": "results",
+        "path": "check.json",
+        "bytes": 31917
+      },
+      {
+        "scope": "results",
+        "path": "checker-attempt.json",
+        "bytes": 422
+      },
+      {
+        "scope": "results",
+        "path": "checker-guardian.jsonl",
+        "bytes": 111
+      },
+      {
+        "scope": "results",
+        "path": "checker-stderr.log",
+        "bytes": 0
+      },
+      {
+        "scope": "results",
+        "path": "checker-stdout.log",
+        "bytes": 102
+      },
+      {
+        "scope": "results",
+        "path": "controls/distant-zero.json",
+        "bytes": 8423
+      },
+      {
+        "scope": "results",
+        "path": "controls/order-incompatible.json",
+        "bytes": 4760
+      },
+      {
+        "scope": "results",
+        "path": "controls/positive.json",
+        "bytes": 13549
+      },
+      {
+        "scope": "results",
+        "path": "controls/raw-force.json",
+        "bytes": 2111
+      },
+      {
+        "scope": "results",
+        "path": "generation/run-a.json",
+        "bytes": 583176
+      },
+      {
+        "scope": "results",
+        "path": "generation/run-b.json",
+        "bytes": 583199
+      },
+      {
+        "scope": "results",
+        "path": "index.json",
+        "bytes": 12244
+      },
+      {
+        "scope": "results",
+        "path": "kernel-attempt.json",
+        "bytes": 421
+      },
+      {
+        "scope": "results",
+        "path": "kernel-guardian.jsonl",
+        "bytes": 111
+      },
+      {
+        "scope": "results",
+        "path": "kernel-journal.jsonl",
+        "bytes": 16315
+      },
+      {
+        "scope": "results",
+        "path": "kernel-stderr.log",
+        "bytes": 0
+      },
+      {
+        "scope": "results",
+        "path": "kernel-stdout.log",
+        "bytes": 0
+      },
+      {
+        "scope": "results",
+        "path": "kernel-supervision.json",
+        "bytes": 10032
+      },
+      {
+        "scope": "results",
+        "path": "reference/distant-zero.json",
+        "bytes": 4540
+      },
+      {
+        "scope": "results",
+        "path": "reference/order-incompatible.json",
+        "bytes": 3487
+      },
+      {
+        "scope": "results",
+        "path": "reference/positive.json",
+        "bytes": 10388
+      },
+      {
+        "scope": "results",
+        "path": "reference/raw-force.json",
+        "bytes": 1150
+      },
+      {
+        "scope": "results",
+        "path": "reference/run-a-t0.json",
+        "bytes": 1264307
+      },
+      {
+        "scope": "results",
+        "path": "reference/run-a-t10.json",
+        "bytes": 1239622
+      },
+      {
+        "scope": "results",
+        "path": "reference/run-a-t5.json",
+        "bytes": 1261290
+      },
+      {
+        "scope": "results",
+        "path": "reference/run-b-t0.json",
+        "bytes": 1262411
+      },
+      {
+        "scope": "results",
+        "path": "reference/run-b-t10.json",
+        "bytes": 1237515
+      },
+      {
+        "scope": "results",
+        "path": "reference/run-b-t5.json",
+        "bytes": 1244701
+      },
+      {
+        "scope": "results",
+        "path": "scenes/run-a-t0.json",
+        "bytes": 561547
+      },
+      {
+        "scope": "results",
+        "path": "scenes/run-a-t10.json",
+        "bytes": 776337
+      },
+      {
+        "scope": "results",
+        "path": "scenes/run-a-t5.json",
+        "bytes": 656172
+      },
+      {
+        "scope": "results",
+        "path": "scenes/run-b-t0.json",
+        "bytes": 563828
+      },
+      {
+        "scope": "results",
+        "path": "scenes/run-b-t10.json",
+        "bytes": 739311
+      },
+      {
+        "scope": "results",
+        "path": "scenes/run-b-t5.json",
+        "bytes": 653465
+      },
+      {
+        "scope": "private",
+        "path": "checker-stderr.raw",
+        "bytes": 0
+      },
+      {
+        "scope": "private",
+        "path": "checker-stdout.raw",
+        "bytes": 102
+      },
+      {
+        "scope": "private",
+        "path": "kernel-stderr.raw",
+        "bytes": 0
+      },
+      {
+        "scope": "private",
+        "path": "kernel-stdout.raw",
+        "bytes": 0
+      }
+    ],
+    "violations": []
+  },
+  "finalOutputBytesBeforeReport": 12747066,
+  "wallSeconds": 42.78275154065341
+}

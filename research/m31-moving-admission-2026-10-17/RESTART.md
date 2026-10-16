@@ -1,0 +1,7 @@
+# Closed moving-state allocation — preserve failure
+
+Source2a957d2b0bb26e731c8cd184bc13f51f673e9a0d was published and exactly verified before execution. Both scientific stages and both display allocations are permanently closed. Do not repair the frozen source, rerun either stage, remove attempt markers or rewrite evidence. Kernel succeeded; checker failed its overall control qualification despite all six individually verified/certified states. Read MILESTONE-SUMMARY.md, RESULT-CLAIM-LEDGER.md, results/check.json and saved reviews.
+
+Display attempt01 failed a404console-resource gate after position/playback checks; attempt02 repaired the favicon declaration and passed221checks including four fail-closed corrupt-evidence routes. All19,584rendered position components checked. Viewer: http://127.0.0.1:8876/research/m31-moving-admission-2026-10-17/viewer/ . Keep localhost8876 running.
+
+Next candidate is a separately named, prospectively frozen saved-evidence validator-qualification package. It may diagnose the known mutation interception and test a corrected corruption recipe on exposed data, but must not relabel this original failure as a pass or imply fresh moving-state replication. No browser scientific transfer is authorized by this failed result. All new numerical work requires its own public source verification, resource bounds, single attempt and independent review. No new scientific launch at/after2026-10-16T23:00:00Z. Overall5000-moving-drone research goal remains incomplete.

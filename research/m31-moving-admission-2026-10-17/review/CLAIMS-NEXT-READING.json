@@ -1,0 +1,147 @@
+{
+  "schema": "m31-moving-admission-claims-next-reading-delta-v1",
+  "createdUtc": "2026-10-16T22:04:40.297563+00:00",
+  "reviewer": "m31_verified_literature",
+  "scope": "Saved-result claims interpretation and prospective next-checkpoint source-only thought. No allocation opened.",
+  "priorInventory": {
+    "path": "research/m31-moving-admission-2026-10-17/review/PROTOCOL-CHECKER-SOURCE-READING.json",
+    "bytes": 11962,
+    "sha256": "972dc62926f7ad12b8bb56ec6ad2e9bf8d5b494ea02833c170e0c52464b9ad7b"
+  },
+  "previousInheritedDistinctPathsRead": 11,
+  "newInheritedDistinctPathsRead": 3,
+  "cumulativeInheritedDistinctPathsRead": 14,
+  "inheritedReadCap": 20,
+  "inheritedCapSatisfied": true,
+  "newInheritedInputs": [
+    {
+      "path": "research/m31-filter-cost-2026-10-17/LITERATURE-AND-DIRECTION.md",
+      "bytes": 2625,
+      "sha256": "01f12e0829db99ac1cf0872cbb0ed3a984a29debcf9fd5155b42c316255b7dff",
+      "readScope": "Full published literature/direction summary read; reuse of prior verified records, no retrieval."
+    },
+    {
+      "path": "research/m31-filter-design-2026-10-17/review/literature/LITERATURE.md",
+      "bytes": 14345,
+      "sha256": "e7856bbb5f5a1caa2d8994ee02eedcb73aabc97f06e85badf59a4d57560a8e36",
+      "readScope": "Published literature review text read, with focused reread of primary-source versions, passage scope and implementation limits; no primary paper assets opened."
+    },
+    {
+      "path": "research/m31-filter-design-2026-10-17/review/literature/bibliography.json",
+      "bytes": 12386,
+      "sha256": "2e63972dbda81e3d007e5ba9ec442de91f0fbe3dfe8daa92a4ecc032e7f32e7d",
+      "readScope": "Full published bibliography JSON read for exact titles, DOI, versions and limited previous correction-check scope; no new verification retrieval."
+    }
+  ],
+  "currentCycleInputs": [
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/check.json",
+      "bytes": 31917,
+      "sha256": "9991d6a3d60d7d0e58f69d0074947b38453013246b2c63ecfa3bf26a7086eb6d",
+      "readScope": "Whole saved JSON parsed as data; inspected counts, all10 outcome decisions, graph summaries, both nontriviality witnesses and all20 control outcomes including failed witness. No scientific values recomputed."
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/kernel-supervision.json",
+      "bytes": 10032,
+      "sha256": "1c7111780d7da4315f502da70de447bb14ecdd3e5ad02a2a5565d8b87707e6e6",
+      "readScope": "Saved closure, return code, resource accounting, source/runtime recheck and publication/evidence metadata read. No supervisor invocation."
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/checker-supervision.json",
+      "bytes": 14898,
+      "sha256": "1086c03e34f19f580c9e78637de3d6918e63f9339f6d7a0cd47837eeb8c43c43",
+      "readScope": "Saved closure, return code, resource accounting, source/runtime recheck and check.json pin inspected. No checker invocation."
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/source-publication.json",
+      "bytes": 862,
+      "sha256": "16ac44573337e85fc56e9468dc5820c778ca110dad51fd4c521438b1a24b6b17",
+      "readScope": "Full saved public source verification receipt read; no fresh network verification performed by this reviewer."
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/MILESTONE-SUMMARY.md",
+      "bytes": 1821,
+      "sha256": "9c507ac47db79dc2048bbe5359640af334b9eb1ec859a2c478643aa0990177eb",
+      "readScope": "Full current summary reread after parent prose-only spacing and number-format changes; substantive claims unchanged from first review and remain consistent with saved result."
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/MODEL-AND-CLAIMS.md",
+      "bytes": 3769,
+      "sha256": "ed80a8335cd312924d810d174840d5961d01c593819671fc8988fc363fd94f0d",
+      "readScope": "Frozen prospective claims/limitations reread as historical protocol; not modified."
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/source/check.py",
+      "bytes": 68149,
+      "sha256": "084f4f45aa353f7a7d8adc5c4a78eae4b09ee83fb2119741b01a317225d3fa69",
+      "readScope": "Re-read validate_filter_method and method_controls source only to diagnose recorded control interception. No import, evaluation, mutation creation or source change."
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/review/PARENT-POSTRUN-NOTE.md",
+      "bytes": 1053,
+      "sha256": "5cd4261a731ef81f4b2497dc141f128f4f621aa441f80b5d6ed57475e2eb0f16",
+      "readScope": "Full current-package postrun disclosure read; parent inherited-content reading cap23/24at source stage and25/24after two administrative closeout reads; does not alter failed gate."
+    }
+  ],
+  "accounting": "Current-package result records, frozen source rereads and new summary are outside the inherited-content delta. Three older published literature records are charged to the cap. The earlier11path inventory remains unchanged.",
+  "principalSavedResult": {
+    "path": "research/m31-moving-admission-2026-10-17/results/check.json",
+    "bytes": 31917,
+    "sha256": "9991d6a3d60d7d0e58f69d0074947b38453013246b2c63ecfa3bf26a7086eb6d",
+    "passed": false,
+    "advancement": false,
+    "counts": {
+      "certified": 6,
+      "independentlyVerified": 6,
+      "modelAdmitted": 6,
+      "reached": 6
+    },
+    "fixedControlsPassed": true,
+    "corruptionsRejected": 20,
+    "intendedCoreFamiliesReached": 19,
+    "nontriviality": true
+  },
+  "notPerformed": [
+    "Scientific imports or evaluations",
+    "Reference/candidate computation",
+    "Mutation object generation or execution",
+    "Trajectory generation",
+    "Runtime probe",
+    "Browser operation",
+    "Literature retrieval",
+    "Edits to frozen source/results",
+    "Any allocation retry",
+    "Commit"
+  ],
+  "limits": [
+    "Saved report interpretation, not a fresh independent numerical validation of raw scene or reference files",
+    "No new bibliography verification; previous version-specific and limited correction checks are reused",
+    "Existing numerical observations are exposed and cannot serve as a new unexposed moving-state sample",
+    "Pre-run source review missed the mixed-leaf mutation/counter interaction; the actual fail-closed gate remains authoritative"
+  ],
+  "finalization": {
+    "updatedUtc": "2026-10-16T22:06:09.427638+00:00",
+    "status": "Locked after final summary exact-pin update and parent postrun-note inspection; no further edits planned.",
+    "supersededSummaryPin": {
+      "path": "research/m31-moving-admission-2026-10-17/MILESTONE-SUMMARY.md",
+      "bytes": 1804,
+      "sha256": "c491ad4ffd720d31b8981dfcac7336d90b71d5bc082c026b4aa0a6971b520aa2"
+    },
+    "currentSummaryPin": {
+      "path": "research/m31-moving-admission-2026-10-17/MILESTONE-SUMMARY.md",
+      "bytes": 1821,
+      "sha256": "9c507ac47db79dc2048bbe5359640af334b9eb1ec859a2c478643aa0990177eb"
+    },
+    "summaryChange": "Prose-only spacing and readable number formatting; no substantive claim changes.",
+    "parentAdministrativeDeviation": {
+      "sourceStageReads": 23,
+      "cap": 24,
+      "postrunCumulativeReads": 25,
+      "additionalReads": 2,
+      "timing": "after both numerical stages closed",
+      "source": "research/m31-moving-admission-2026-10-17/review/PARENT-POSTRUN-NOTE.md",
+      "reviewerCumulativeInheritedReads": 14,
+      "reviewerCap": 20
+    }
+  }
+}

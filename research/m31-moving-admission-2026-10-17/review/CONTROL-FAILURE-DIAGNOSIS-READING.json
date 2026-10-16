@@ -1,0 +1,118 @@
+{
+  "schema": "m31-moving-admission-control-failure-diagnosis-reading-v1",
+  "sourceCommit": "2a957d2b0bb26e731c8cd184bc13f51f673e9a0d",
+  "sourceManifestSha256": "37a865330bbb86d0aef03dd3de775b830d7398abe69717b80c64860d4a8caa21",
+  "stage": "closed-allocation source-only control diagnosis",
+  "files": [
+    {
+      "path": "research/m31-moving-admission-2026-10-17/source/check.py",
+      "bytes": 68149,
+      "sha256": "084f4f45aa353f7a7d8adc5c4a78eae4b09ee83fb2119741b01a317225d3fa69",
+      "access": "source-text",
+      "purpose": "Frozen wrapper, single mutation recipe, failure-prefix recorder and final gate; unchanged own-authored package source."
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/source/result-contract.json",
+      "bytes": 9872,
+      "sha256": "f9dea13a77a04a2a974caf5ffec06125b6fcb506eb23e9d34266fe2494e8a7c3",
+      "access": "selected-json",
+      "purpose": "Frozen failure families for false-zero-active-leaf; unchanged own-authored contract."
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/source/semantic-reference.py",
+      "bytes": 39634,
+      "sha256": "ee77aab09109d3fba898555dacc4509312813caae4116bb3e1063efd88e3ad2c",
+      "access": "source-text",
+      "purpose": "Existing node-zero-rule and node-zero-oracle-member checks only; already in inherited reading inventory."
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/source-manifest.json",
+      "bytes": 10425,
+      "sha256": "37a865330bbb86d0aef03dd3de775b830d7398abe69717b80c64860d4a8caa21",
+      "access": "selected-json",
+      "purpose": "Three frozen source pin rows only."
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/check.json",
+      "bytes": 31917,
+      "sha256": "9991d6a3d60d7d0e58f69d0074947b38453013246b2c63ecfa3bf26a7086eb6d",
+      "access": "selected-json",
+      "purpose": "Saved summary, failed corruption control and existing corruption verdict count."
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/controls/positive.json",
+      "bytes": 13549,
+      "sha256": "210deaeb19fda489d06fade1bb978999083b3c4c74d15943d856ed07a433ba78",
+      "access": "selected-json",
+      "purpose": "Saved original first mixed leaf query and work counters only."
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/checker-attempt.json",
+      "bytes": 422,
+      "sha256": "f4b98d31589dc0c8ddeca9bba45b58a716d2db52de35699a5b77c360839d68ac",
+      "access": "hash-only",
+      "purpose": "Permanent attempt byte pin; contents not parsed."
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/kernel-supervision.json",
+      "bytes": 10032,
+      "sha256": "1c7111780d7da4315f502da70de447bb14ecdd3e5ad02a2a5565d8b87707e6e6",
+      "access": "json",
+      "purpose": "Saved kernel exit/closure/source-binding evidence; full JSON initially displayed then closure fields selected."
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/checker-supervision.json",
+      "bytes": 14898,
+      "sha256": "1086c03e34f19f580c9e78637de3d6918e63f9339f6d7a0cd47837eeb8c43c43",
+      "access": "json",
+      "purpose": "Saved checker exit/closure/source-binding and check.json pin evidence; full JSON initially displayed then closure fields selected."
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/review/CHECKER-READING.json",
+      "bytes": 3932,
+      "sha256": "73526c79fbf5e245a6140e1a0ca8fe9f367d5f2514bc35a40c47c5d177ceb1d6",
+      "access": "hash-only",
+      "purpose": "Prior inventory byte pin; frozen contents not modified."
+    }
+  ],
+  "delta": {
+    "totalFilesTouched": 10,
+    "additionalInheritedSourceFiles": 0,
+    "inheritedSourceTotalRemains": 11,
+    "inheritedSourceCap": 20,
+    "newSavedJsonContentFiles": [
+      "results/check.json",
+      "results/controls/positive.json",
+      "results/kernel-supervision.json",
+      "results/checker-supervision.json",
+      "source-manifest.json"
+    ],
+    "revisitedFrozenAuthoredSource": [
+      "source/check.py",
+      "source/result-contract.json"
+    ],
+    "revisitedInheritedSource": [
+      "source/semantic-reference.py"
+    ]
+  },
+  "operations": [
+    "text inspection",
+    "saved JSON parsing/projection",
+    "byte hashing",
+    "write diagnosis prose and this inventory"
+  ],
+  "excluded": [
+    "no scientific imports",
+    "no scientific execution",
+    "no oracle or reference regeneration",
+    "no mutation generated or evaluated",
+    "no checker invocation",
+    "no source repair",
+    "no allocation reopening",
+    "no commit"
+  ],
+  "outputs": [
+    "review/CONTROL-FAILURE-DIAGNOSIS.md",
+    "review/CONTROL-FAILURE-DIAGNOSIS-READING.json"
+  ]
+}

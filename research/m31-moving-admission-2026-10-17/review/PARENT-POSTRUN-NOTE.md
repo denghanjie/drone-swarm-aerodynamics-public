@@ -1,0 +1,5 @@
+# Parent postrun publication note
+
+No scientific source/results were changed after freeze. Source-stage inherited reading was23/24. During public closeout the parent additionally read the mutable overnight restart index and reused bibliography, bringing conservative cumulative inherited content reads to25against the stated24cap. This is a disclosed postrun administrative reading-budget deviation; it occurred after both numerical stages closed and provided no tuning or replacement of numerical data. It does not excuse the separately failed corruption-control gate. No further inherited content reads are allocated here. Source identity, execution limits and failure preservation remain intact.
+
+New saved records were inspected only as JSON/text and hashes; no scientific module was imported by the parent. Browser display verification uses only recorded poses and outcomes. Figure glyphs are explicitly enlarged3times while centers and attitudes remain recorded values. Separate authors review saved-evidence claims and the missed control family.

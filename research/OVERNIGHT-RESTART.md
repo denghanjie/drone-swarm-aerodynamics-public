@@ -1,3 +1,9 @@
+# Latest checkpoint: moving states individually pass; validator qualification fails
+
+Read [closed allocation restart](m31-moving-admission-2026-10-17/RESTART.md) and [plain-language milestone](m31-moving-admission-2026-10-17/MILESTONE-SUMMARY.md). All six scheduled full flight states passed individual load checks, but only19/20mutation controls reached their required semantic families. Overall passed=false and advancement=false. Preserve both closed scientific attempts and both display attempts. New Three.js recorded-flight viewer: http://127.0.0.1:8876/research/m31-moving-admission-2026-10-17/viewer/ . Source2a957d2b0bb26e731c8cd184bc13f51f673e9a0d was independently publicly verified before execution. A separately frozen saved-evidence validator qualification is a proposed next step, not yet executed. Broader goal incomplete; keep8876running; no scientific launch at/after23:00UTC16Oct.
+
+---
+
 # Current preparation: genuine moving-state admission
 
 Closed source-only decision: m31-moving-admission-planning-2026-10-17/PARENT-DECISION.md. The next question is actual full17-field flight-state admission, not a Chrome speed race. New m31-moving-admission-2026-10-17 is source preparation only; no numerical generation or evaluation has run. Read its prospective protocol, config and source review before any continuation. All earlier allocations closed. Latest completed numerical viewer remains m31-filter-cost; preserve localhost8876. Source must be frozen/pushed/exactly verified before any new science. No new overnight launch after07:00Asia/Shanghai17Oct.
