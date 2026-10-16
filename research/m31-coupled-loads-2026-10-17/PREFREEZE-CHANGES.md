@@ -1,0 +1,11 @@
+# Prospective corrections and retained drafts
+
+No new scientific code, oracle, fixture generator or closed allocation has been executed. The scene declaration author assembled literal strings/JSON and counted planned records only.
+
+1. Independent review required exact stable-ID, global-invalid coverage, full pair validation, candidate load identity, signed three-component world-moment, exact tolerance and meaningful control-witness semantics. These are explicit in source/result-contract.json. Expected scene classes are prospective hypotheses; the reference must derive outcomes.
+2. A source-only coverage inspection found that symmetric nominal forces in tilted scenes could leave world-z moment unexercised. Before any evaluation, tilted-4 now uses asymmetric rotor forces and a slightly non-unit but prospectively admissible quaternion (w literal .99498743711662). This probes the actual-axis/three-coordinate signed load calculation. The initial spec is preserved; counts remain19 scenes and2,632 planned pairs. Admission and nonzero-moment outcomes remain empirical questions, not assumed results.
+3. Inherited supervisor/guardian originals are preserved. The new stage cap is180s and32MiB aggregate result/log output, with1GiB sampled RSS and64KiB final-report reservation. Guardian fallback becomes190s so the old130s safety fallback cannot truncate the new allocation. No old numerical test is rerun.
+
+4. Mathematical source review identified a vacuous empty-scene acceptance outside the frozen suite; candidate now explicitly rejects N<1. Initial candidate source is retained. Protocol review clarified scene-granularity fsync durability: incomplete in-memory scene data may be lost on interruption, earlier scene rows and supervisor logs remain. No numerical execution preceded these changes.
+
+5. Protocol reviewer identified bytecode-cache and stress-exception scope risks in the independent checker. Before execution, the checker was changed to compile the freshly hash-verified helper byte buffer rather than import cached bytecode. Stress exceptions now bind exact stable pair IDs/rotors as well as named scenes/codes. Initial checker/contract snapshots are retained. No empirical result informed these corrections.

@@ -1,0 +1,3 @@
+# Source privacy review
+
+The public package contains synthetic drone-state declarations, mathematical/code documentation and bounded research source. No chat transcript, user attachment, credential, personal filesystem path or external paper asset is intentionally included. Runtime paths are supplied privately through environment variables; published pins identify executable bytes without a personal path. Historical inheritance is by repository-relative path and content hash. Parent reviews all staged text and verifies a forbidden-pattern scan before publication. Publication is already authorized by the user, conditioned on avoiding sensitive information.

@@ -1,0 +1,100 @@
+{
+  "schema": "m31-coupled-load-result-v1",
+  "journalSchema": "m31-coupled-load-journal-v1",
+  "documentFields": [
+    "schema",
+    "specId",
+    "runtime",
+    "sourceSha256",
+    "constants",
+    "records"
+  ],
+  "recordFields": [
+    "id",
+    "input",
+    "prepared",
+    "coverage",
+    "pairs",
+    "result",
+    "solve",
+    "certificate"
+  ],
+  "input": "{drones:[{id: integer0..65535 unique,state:17lowercase16hex binary64 strings}]}",
+  "prepared": "one record per input drone in same order: {id,value:prepared receiver object or null,rejection:null or adapter raw/preparation reason}. All states prepared even if any invalid; pair iteration then stops when global invalid. Identical published adapter fields center/axis/offsets/points/forces.",
+  "coverage": "{plannedPairs:4*N*(N-1),observedPairs:pairs.length,positiveTerms:number of pair.result.status=positive,stopReason:null or global-preparation}; if global invalid pairs=[] observed0; otherwise ALL pairs in (input receiver index,rotor0..3,input source index excluding identical stableID) order.",
+  "pair": "{i:receiver stableID,r:rotor,j:source stableID,result:published pair result}; prepared geometry omitted here because identical global prepared records are supplied. Retain all five positive intervals and two zero intervals.",
+  "result": "{status:certified|tolerance-failed|rejected|unresolved|resource,branch:string,witness:null or {i,r,j} or {id},toleranceAchieved:null or boolean}; priority in PROTOCOL. admitted branch=loads; pair rejection/refusal branch prefix pair-; global rejection adapter reason; order violation=ordering; term cap=positive-term-budget; candidate/certificate errors named.",
+  "solve": "null unless candidate was constructed; otherwise {iterations:48,bisections:54,candidate:[{id,x:4binary64 bits}]}. Candidate recipe is source-pinned, not independently re-executed in native arithmetic. Mathematical checker verifies recorded candidate domain and exact proof/load identities.",
+  "certificate": "null on rejection/unresolved/resource; otherwise {rows:[{id,r,s:interval,p:interval,kbar:integerString,xstar:interval}],Kbar:integerString,loads:[loadRecord],maxErrors:{rotor:integerString,collective:integerString,worldForce:integerString,worldMoment:integerString}}",
+  "interval": "{l,u} integer strings /2^96; endpoint range\u00b12^352; every returned interval ordered. kbar/Kbar and error upper strings are nonnegative exact lattice values /2^96.",
+  "loadRecord": "{id,candidate:{rotor:4rationals,collective:rational,force:3rationals,moment:3rationals},bounds:{rotor:4intervals,collective:interval,force:3intervals,moment:3intervals},error:{rotor:4upperStrings,collective:upperString,worldForce:upperString,worldMoment:upperString}}",
+  "rational": "{n,d} canonical integer strings, d>0, gcd=1. Exact loads of recorded candidate with supplied exact-dyadic nominal forces, axis and offsets; no native-rounded load silently treated exact.",
+  "certificateChecks": "Every row and load stableID/rotor covered once. s/p include independent exact-target enclosures at recorded candidate. kbar>=max(1,p.u/S,1/(p.l/S)), p.l>0; Kbar>=max kbar; xstar encloses exact corollary endpoints using those factors and candidate. Independent topological root reference is contained. Load bounds enclose exact signed linear map of returned xstar box AND independent model load reference. Error uppers cover full RETURNED load boxes relative to exact candidate loads; world norms use all3 components. Maxima cover all per-drone errors. Tolerance is exact1/1e8, with <= comparison upper*1e8<=S.",
+  "worldMoment": "sum_r cross(prepared offsets[r],prepared axis)*force[r]*x[r]; cross/sub/add/mul exact real, all3components. Do not infer zero world-z moment or exactly unit norm.",
+  "allowedStressUnresolved": {
+    "tiny-force": [
+      "pair-normalizer"
+    ],
+    "huge-force": [
+      "pair-unresolved-range"
+    ]
+  },
+  "negativeControls": [
+    "missing-positive-pair",
+    "false-root-one",
+    "altered-candidate",
+    "false-error-zero",
+    "altered-lever-arm",
+    "altered-stable-id",
+    "missing-scene",
+    "duplicate-scene",
+    "reordered-scenes"
+  ],
+  "controlWitnesses": "First admitted scene/row in spec order whose independent root upper<1 for false-root-one. First admitted scene/rotor whose independent reference root interval excludes candidate and hence proves nonzero normalized rotor-load error for false-error-zero. First oracle-positive pair for removal. Controls require proven witnesses; inability to find them fails control coverage. All controls use same core validator without journal.",
+  "sourceFiles": [
+    "spec.json",
+    "result-contract.json",
+    "interval.cjs",
+    "rational.cjs",
+    "adapter.cjs",
+    "pair.cjs",
+    "coupled.cjs",
+    "run.cjs"
+  ],
+  "allowedStressPairs": {
+    "tiny-force": [
+      {
+        "i": 0,
+        "r": 0,
+        "j": 1,
+        "branch": "normalizer"
+      }
+    ],
+    "huge-force": [
+      {
+        "i": 0,
+        "r": 0,
+        "j": 1,
+        "branch": "unresolved-range"
+      },
+      {
+        "i": 0,
+        "r": 1,
+        "j": 1,
+        "branch": "unresolved-range"
+      },
+      {
+        "i": 0,
+        "r": 2,
+        "j": 1,
+        "branch": "unresolved-range"
+      },
+      {
+        "i": 0,
+        "r": 3,
+        "j": 1,
+        "branch": "unresolved-range"
+      }
+    ]
+  }
+}
