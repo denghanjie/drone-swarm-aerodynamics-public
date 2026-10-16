@@ -1,0 +1,69 @@
+{
+  "contextLabel": "host",
+  "kind": "echo-only-process-admission",
+  "sourceCommit": "402158183fc5db02e2b64e2efd1c2fdf66262299",
+  "sourceCommitVerification": "coordinator independently retrieved remote manifest before dispatch; this script checks local source pins",
+  "sourceManifestSha256": "48df6d2b576c3b41986c1e7a0e0cb5de132a2b5e3bd661abc0a1ec85a3ee32f1",
+  "nodeSha256": "3c9448363b9976bf3d9e8f4d320397975800131b42c7b1be342dadc05871dd25",
+  "pythonSha256": "7a314947596fc484d4ec36ffc28e843b78d6d749c68736f8b5c24e7333f418eb",
+  "startedUTC": "2026-10-16T02:25:22.262573+00:00",
+  "events": [
+    {
+      "stage": "before-node-popen",
+      "elapsedSeconds": 7.979106158018112e-05
+    },
+    {
+      "stage": "node-popen-returned",
+      "elapsedSeconds": 0.0026030000299215317
+    },
+    {
+      "stage": "before-handshake-read",
+      "elapsedSeconds": 0.0026813754811882973
+    },
+    {
+      "stage": "handshake-read",
+      "elapsedSeconds": 0.02297891676425934,
+      "exact": true,
+      "bytes": 15
+    },
+    {
+      "stage": "before-ps-popen",
+      "elapsedSeconds": 0.0230427086353302
+    },
+    {
+      "stage": "ps-returned",
+      "elapsedSeconds": 0.025445541366934776,
+      "rssKiB": 45824
+    },
+    {
+      "stage": "before-child-completion",
+      "elapsedSeconds": 0.025497958064079285
+    },
+    {
+      "stage": "child-completed",
+      "elapsedSeconds": 0.02692637499421835,
+      "returnCode": 0
+    },
+    {
+      "stage": "before-cleanup",
+      "elapsedSeconds": 0.026952375657856464
+    },
+    {
+      "stage": "cleanup-complete",
+      "elapsedSeconds": 0.026990833692252636,
+      "returnCode": 0
+    }
+  ],
+  "admitted": true,
+  "performanceMeasurement": false,
+  "pidOmitted": true,
+  "handshakeExact": true,
+  "rssKiB": 45824,
+  "childReturnCode": 0,
+  "remainingStdoutBytes": 14,
+  "stderrBytes": 0,
+  "cleanupReturnCode": 0,
+  "cleanupStdoutBytes": 14,
+  "cleanupStderrBytes": 0,
+  "elapsedSeconds": 0.027025707997381687
+}

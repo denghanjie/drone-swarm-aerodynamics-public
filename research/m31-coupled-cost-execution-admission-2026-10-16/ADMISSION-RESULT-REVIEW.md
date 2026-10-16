@@ -1,0 +1,30 @@
+# Admission results and replacement-allocation rationale
+
+Saved-record/source-only review, 2026-10-16. Read both admission JSON records, journals and locks, the frozen admission source/manifest/protocol, and the earlier cost campaign's source manifest/protocol and supervisor records. Compared saved JSON event sequences with journals and hashed existing files only. No admission child, numerical candidate, scientific checker, geometry, load solve or timing workload was executed by this review.
+
+## Verified evidence
+
+Both records identify source commit `402158183fc5db02e2b64e2efd1c2fdf66262299` and source-manifest SHA-256 `48df6d2b576c3b41986c1e7a0e0cb5de132a2b5e3bd661abc0a1ec85a3ee32f1`. The local manifest has that digest, its contents match the manifest read from the named local Git commit, and all four local pinned files match their recorded hashes and byte counts. In particular, `source/admit.py` remains `cc008fec83531293a8de56b84eac8bd137a4953c3b1d3aae5483c303233ad972`, the source reviewed before dispatch.
+
+Both records report identical executable hashes: Node `3c9448363b9976bf3d9e8f4d320397975800131b42c7b1be342dadc05871dd25` and Python `7a314947596fc484d4ec36ffc28e843b78d6d749c68736f8b5c24e7333f418eb`. This review checked consistency of those recorded values; executable paths are deliberately absent. The coordinator identifies the actual contexts as default sandbox and approved host. Context labels and the source-commit metadata alone do not authenticate tool permissions or independently prove remote retrieval; retain the corresponding dispatch/publication receipts.
+
+The eight sandbox events and ten host events match their respective JSONL journals exactly after JSON formatting normalization. Each context has its consumed invocation lock. No journal or cleanup error is recorded.
+
+| Context | Saved operation evidence | Admission |
+| --- | --- | --- |
+| Default sandbox | Child handle returned; exact 15-byte READY observed; RSS helper operation raised `PermissionError`, errno 1, at `before-ps-popen`; child cleanup completed with return code -9 and no remaining stdout/stderr. No RSS sample or normal DONE completion is recorded. | Failed |
+| Approved host | Child handle returned; exact READY observed; RSS sample 45,824 KiB; normal child return code 0, 14 remaining stdout bytes, empty stderr; cleanup return code 0; `admitted=true`. The pinned predicate requires those 14 bytes to equal the fixed DONE token. | Passed for this path |
+
+The host's repeated 14-byte cleanup stdout count is compatible with `communicate` returning cached output; it is not evidence of another DONE emission. The saved elapsed values describe diagnostic bookkeeping and are not a speed comparison. The host RSS value is one echo-process sample, not a scientific memory requirement or peak.
+
+The supported conclusion is that this exact Node READY/monitor/ACK/DONE path worked in the declared host context, while the sandbox run reached Node READY and then failed during the `/bin/ps` sampling operation. No model code appears in this frozen diagnostic payload. These records neither prove that every sandbox process operation is denied nor predict a full campaign's completion. They do not retroactively locate the earlier campaign's PermissionError: its missing stage marker, null return code and empty logs still permit a briefly started candidate. Both diagnostic allowances are consumed; neither needs another attempt.
+
+## Proposed replacement allocation
+
+The proposal has a defensible infrastructure rationale: retain the already frozen numerical candidate, kernel, reference excerpt, checker, exposed inputs and scientific rules, but use the demonstrated approved host dispatch with a separately reviewed supervisor that records failures and cleanup explicitly. There are no retained valid outcomes from the failed cost campaign to select among or use for tuning. Earlier swarm-transfer oracle records were already part of the original fixed contract and remain disclosed dependencies.
+
+As a reuse baseline, the existing cost manifest still hashes to `6c653f2665428b342dff7f7265c03c94a20f8d8b0ade42841972378f73b68a31`. Current hashes match that manifest for `experiment.cjs` (`af36eab1f047778fecb0b831db35cdb156f1e8c7517252605eceed94193fea23`), `kernel.cjs` (`c2ab29e4f53341706582d52149df96cd93323d3943ac145f288fbbae4de71a8a`), and `review.py` (`a0e7cc3fdbfe5374e935e86bbe771d896e512e87e173d08b715b390c239ae8d2`). The reference excerpt, protocol, schema, input index and all four input binaries were also hashed and match their original pins. No proposed replacement implementation was supplied for this review, so this establishes the reuse baseline, not the final replacement's identity.
+
+Freeze the replacement as an explicit new allocation and execution amendment with its own directory, locks, source commit and independently verified remote manifest. Carry over the 21 controls, eight qualification builds/16 solves, 84 full calls, 56 cached calls, stopping/qualification rules, tolerances, practical comparison rule and resource/output limits without adaptive changes. Declare exactly one 300-second candidate allocation and one 60-second saved-record review; retain every failure or incomplete prefix and close each allowance after its invocation. Review the new supervisor and its compatibility with the unchanged checker before dispatch. The new wrapper must keep its records and output destinations separate from the closed campaign.
+
+This is a newly budgeted repeat of the same exposed development workload after an infrastructure failure, not restoration of unused old budget or fresh-scenario confirmation. Preserve the old failed checkpoint and its unknown transient-execution exposure. Improved launch evidence cannot justify an assertion that the previous candidate performed no science. Host admission is not scientific qualification, and the replacement still cannot support physical, flight, browser-real-time, generalization or novelty claims beyond its original protocol.
