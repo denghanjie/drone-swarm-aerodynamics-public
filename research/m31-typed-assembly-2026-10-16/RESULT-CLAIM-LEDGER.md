@@ -1,0 +1,16 @@
+# Result claim–evidence ledger
+
+Experiment:m31-typed-assembly-2026-10-16. Source commit[ec066cc0d555393606ceb05e5e6e04e09d567020](https://github.com/denghanjie/drone-swarm-aerodynamics-public/commit/ec066cc0d555393606ceb05e5e6e04e09d567020). All result claims refer to the fixed config, source-manifest, raw call records, evidence.json and independent-review.json.
+
+| Claim | Status | Evidence, scope and challenge |
+|---|---|---|
+| A/L/T preserve canonical outputs on these controls and fresh final poses | Confirmed within tested scope |24literal controls, retained/interleaved ownership records; exact612M total symbols, CSR/source order/K/a, graph/admission/loads; timed transient outputs compared outside clocks. All saved repeated assertions pass.2Mthrow branch only source-reviewed. Future domains/aliasing patterns unproven. |
+| Independent geometry and load computation agrees | Confirmed numerically within scope | Python/NumPy204M A classifications exact; max coefficient difference1.7763568394002505e-15; analytic hyperbolic-root loads and residuals pass inherited tolerances. L/T exact against independently checked A.16,239 grouped checks pass. Independent arithmetic is not experimental physics. |
+| Three unchanged new local3DBoids flights supply admitted inputs | Confirmed within short horizon | Generation configs, full17initial/final states,63individual frame records and exact concatenations; end2seconds, nullstop/failure. Airflowoff; shared route/avoidance disclosed. No long-flight or obstacle-passage inference. |
+| Typed storage meets the predeclared practical advantage over matched lean storage | Contradicted on tested workload | Median paired T/L0.9991066 and1.0018898,3/6wins each; required≤0.90 and≥5. T/A condition passes, but whole rule fails. No retuning against these cases. This does not prove all typed storage ineffective. |
+| Lean package beats A in these5000paired timings | Observed | L/A medians0.8903484 and0.9339666;6/6wins each. Established implementation ideas, whole-package contrast and within-process dependence. Large A observations retained; causes unmeasured. No isolated allocation/GC attribution or population inference. |
+| Typed storage lowers memory use | Unresolved | Source-level typed allocation/copy counters audited; L's ordinary arrays/objects not measured. Whole candidate RSS826,114,048bytes does not compare methods. |
+| Current model is physically validated or live5000browser-ready | Unresolved | No independent physical measurements or live browser workload in this campaign. Query timings exclude flight, steering, rendering and transport. Viewer replays exact recorded poses. |
+| This negative result is novel or publication-ready | Unsupported | It usefully rejects one engineering intervention; no demonstrated non-obvious general limitation or complete closest-prior-work publication case. |
+
+No outlier was discarded. All63raw times are saved before validation. Null/unsupported control inputs keep their rejection classifications. Source and independent-recomputed numerical errors are separate from approximation error (no approximation added) and physical model error (unresolved). Both allocations are closed; source and results stay immutable. The next decision should address a different important uncertainty rather than change chunks, repeats or seeds to rescue this intervention.
