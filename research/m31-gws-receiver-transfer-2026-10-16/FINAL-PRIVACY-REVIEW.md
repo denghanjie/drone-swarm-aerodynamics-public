@@ -1,0 +1,7 @@
+# Result publication privacy review
+
+Only our protocol/code, source citations and hashes, two baseline anchors, aggregate discrepancy summaries, review checks, viewer and display captures are public. Original source text tables/PDF and complete derived rows stay private. No complete per-row predictor/residual pairs, independent original figures or data payload are included. No dataset redistribution license is inferred.
+
+Admission-note sanitization is recorded in the frozen admission/IMPORT.json. New numerical and interpretation reviews were imported byte-for-byte from their public-safe deliveries; review/IMPORT.json pins the delivery. New reports and source use repository-relative paths or generic reproduction arguments. Credentials, private filesystem paths, machine identifiers, private attachments and chat logs are excluded. Public GitHub account identity, citation URLs, localhost viewer URLs, source commits, browser versions and package dependencies are intentional provenance.
+
+Screenshots show our generated aggregate graph and UI only. Root inspected the desktop/scene images. The final packaging audit checks all 18 frozen source pins, viewer dependencies, retained screenshot pins and local viewer links, and scans public text for private-path/credential patterns. This is a targeted review of this checkpoint, not a claim to have re-audited the entire historical repository. Result manifests hash the actual public bytes; remote observation is recorded separately after publication.

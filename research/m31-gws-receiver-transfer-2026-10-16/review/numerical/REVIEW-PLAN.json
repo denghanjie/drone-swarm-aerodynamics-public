@@ -1,0 +1,37 @@
+{
+  "kind": "prospective-independent-GWS-saved-result-review-design",
+  "status": "prepared_only_no_target_scoring_authorized_yet",
+  "executionGate": "Do not execute until the parent supplies the published source commit and both saved-result locations.",
+  "plannedReviewExecutions": 1,
+  "maxCPUSeconds": 15,
+  "maxPublicOutputBytes": 262144,
+  "rootAnalyzerImports": 0,
+  "rootAnalyzerReruns": 0,
+  "sourcePackage": "research/m31-gws-receiver-transfer-2026-10-16",
+  "method": {
+    "inputPins": "Read config, analyzer and protocol from the supplied immutable Git commit; verify source-input hashes and private-evidence hash before parsing values.",
+    "baseline": "Parse decimal source values independently, sort static records numerically by RPM, and bisect the sorted values around 15030; require original row IDs 13 and 14 and the frozen anchor values.",
+    "interpolation": "Use Decimal arithmetic for the interpolation weight and baseline coefficient; retain lower and higher anchor scenarios separately.",
+    "positiveCubic": "For alpha>0 use the hyperbolic solution x=2 sqrt(alpha/3) sinh(asinh(3 sqrt(3)/(2 alpha^(3/2)))/3), evaluated with logarithmic and small-argument branches. Use x=1 at alpha=0. Recompute the cubic residual independently.",
+    "predictions": "Recompute alpha, root and CT prediction separately for every scenario and every one of the fourteen rows, for 42 predictions total.",
+    "metrics": "Recompute full-run and strict reported-CT-positive secondary max/RMS, scenario-C0-normalized max/RMS, signed mean, row counts and maximizing IDs. Use Decimal accumulation for residual statistics.",
+    "branchLabels": "Independently derive reported CT>0 membership; preserve and publicly count CT<=0 rows as outside the model's representable positive-thrust branch.",
+    "savedNumerics": "Check all saved alpha/root/prediction/residual values, bisection brackets, residuals, iterations and public numerical summaries without rerunning the bisection solver."
+  },
+  "numericalTolerances": {
+    "baselineCoefficientAbsolute": 1e-14,
+    "alphaAbsolute": 1e-12,
+    "rootAbsolute": 2e-12,
+    "CTAndUnnormalizedMetricsAbsolute": 1e-12,
+    "normalizedMetricsAbsolute": 1e-10,
+    "independentCubicResidualAbsolute": 1e-12
+  },
+  "publicationPolicy": "Public review output contains hashes, aggregate metrics, aggregate comparison deltas, counts, row-ID labels and pass/fail checks only. No complete raw table, complete per-row derived table, or per-row predictor/residual pairs are emitted.",
+  "limits": [
+    "Exposed law-plus-control-mapping comparison only",
+    "Nearest static baseline is determined by RPM sorting, not source-file order",
+    "Endpoint scenarios recompute alpha and predictions, not just rescaled metrics",
+    "No physical adequacy threshold, confidence interval, shaft-power equivalence or model-only rejection",
+    "No new source acquisition, parameter fitting, additional target rows or physical extensions"
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "kind": "exposed-GWS-aggregate-transfer",
+  "source_commit": "ffec6dccee9def5acc473cd907417d09533bc636",
+  "analysis_sha256": "2f2e856c271343170e09c655794297e8dd9cd8002c1a5c9471102797d6c69185",
+  "private_row_evidence_sha256": "cbf5d0ca5d31760335774a557dee8634900121dabb2406bc2b5cf4a9d607e42d",
+  "private_row_evidence_bytes": 22869,
+  "input_hashes": {
+    "static": "e9da09f8bf80445334e879c501d9699005dba2f1780c51618f2c9dbf89cbb9be",
+    "axial": "856147593b897d1d4c61cd98e3db8e6f5f200769f1126bad1ffa040302195658"
+  },
+  "rows_per_scenario": 14,
+  "root_count": 42,
+  "baseline_anchors": [
+    {
+      "row_id": 13,
+      "RPM": 15006.667,
+      "CT": 0.061549
+    },
+    {
+      "row_id": 14,
+      "RPM": 15960.0,
+      "CT": 0.062855
+    }
+  ],
+  "scenarios": [
+    {
+      "scenario": "linear-static-baseline",
+      "C0": 0.061580964589498105,
+      "full_run": {
+        "count": 14,
+        "row_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "max_absolute_CT_discrepancy": 0.06697136889011769,
+        "maximizing_row_ids": [
+          14
+        ],
+        "rms_CT_discrepancy": 0.031950299882515375,
+        "max_absolute_divided_by_C0": 1.087533612643977,
+        "rms_divided_by_C0": 0.518834027617101,
+        "signed_mean_CT_discrepancy": 0.023626342545763245
+      },
+      "reported_positive_thrust_subset": {
+        "count": 9,
+        "row_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "max_absolute_CT_discrepancy": 0.026036852567866642,
+        "maximizing_row_ids": [
+          9
+        ],
+        "rms_CT_discrepancy": 0.012692790855530232,
+        "max_absolute_divided_by_C0": 0.4228068322967925,
+        "rms_divided_by_C0": 0.2061154926711693,
+        "signed_mean_CT_discrepancy": 0.009404284352584578
+      },
+      "nonpositive_row_ids": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "max_absolute_cubic_residual": 2.7755575615628914e-15,
+      "max_bracket_width": 1.7763568394002505e-15,
+      "bisection_iterations": 686
+    },
+    {
+      "scenario": "lower-rpm-anchor",
+      "C0": 0.061549,
+      "full_run": {
+        "count": 14,
+        "row_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "max_absolute_CT_discrepancy": 0.06695578039862239,
+        "maximizing_row_ids": [
+          14
+        ],
+        "rms_CT_discrepancy": 0.03193656705720739,
+        "max_absolute_divided_by_C0": 1.0878451379977319,
+        "rms_divided_by_C0": 0.5188803564185834,
+        "signed_mean_CT_discrepancy": 0.023603760274785536
+      },
+      "reported_positive_thrust_subset": {
+        "count": 9,
+        "row_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "max_absolute_CT_discrepancy": 0.026016167853143243,
+        "maximizing_row_ids": [
+          9
+        ],
+        "rms_CT_discrepancy": 0.012675935213786469,
+        "max_absolute_divided_by_C0": 0.42269034189252863,
+        "rms_divided_by_C0": 0.2059486785128348,
+        "signed_mean_CT_discrepancy": 0.009378865017281364
+      },
+      "nonpositive_row_ids": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "max_absolute_cubic_residual": 2.220446049250313e-15,
+      "max_bracket_width": 1.7763568394002505e-15,
+      "bisection_iterations": 686
+    },
+    {
+      "scenario": "higher-rpm-anchor",
+      "C0": 0.062855,
+      "full_run": {
+        "count": 14,
+        "row_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "max_absolute_CT_discrepancy": 0.06759531497600785,
+        "maximizing_row_ids": [
+          14
+        ],
+        "rms_CT_discrepancy": 0.032508090844566774,
+        "max_absolute_divided_by_C0": 1.0754166729139742,
+        "rms_divided_by_C0": 0.5171918040659736,
+        "signed_mean_CT_discrepancy": 0.02452830558933513
+      },
+      "reported_positive_thrust_subset": {
+        "count": 9,
+        "row_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "max_absolute_CT_discrepancy": 0.026863741354510175,
+        "maximizing_row_ids": [
+          9
+        ],
+        "rms_CT_discrepancy": 0.013388761664982821,
+        "max_absolute_divided_by_C0": 0.4273922735583514,
+        "rms_divided_by_C0": 0.21301028820273363,
+        "signed_mean_CT_discrepancy": 0.010418914180096677
+      },
+      "nonpositive_row_ids": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "max_absolute_cubic_residual": 1.9984014443252818e-15,
+      "max_bracket_width": 1.7763568394002505e-15,
+      "bisection_iterations": 686
+    }
+  ],
+  "physical_adequacy_threshold": null,
+  "experimental_confidence_interval": null,
+  "scope": "Nominal prescribed-RPM coefficient transfer of ideal-disk equation plus explicit f0=T0(run-label) bridge; exposed data, no direct M28 qualification."
+}

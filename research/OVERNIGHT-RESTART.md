@@ -4,6 +4,18 @@
 
 Public additive worktree: current repository, branch `codex/m31-audit-2026-10-15`. Preserve the original eight-step roadmap and historical M31 base. Later remote main/DOT at `1336f5c416875a9651f92b58b2ed06649f25b04e` remains separate and untouched. The private workspace, attachments, credentials and chat records must never be published.
 
+## Latest completed checkpoint — exposed GWS receiver transfer
+
+`research/m31-gws-receiver-transfer-2026-10-16/` completed its separately specified coefficient-transfer question. Source `ffec6dccee9def5acc473cd907417d09533bc636`, manifest SHA256 `f2e644114d1911c0c93c389c5a9e97dc899cce41a9831486f2a790815e6cd3a2`, all 18 pins unchanged. One scoring invocation completed 42 roots / 2058 bisection iterations, exit 0. This compares the ideal-power equation plus an explicit nominal-RPM static-baseline bridge; it does not silently equate RPM with ideal power.
+
+Interpolated-baseline primary RMS CT discrepancy is 0.031950299882515375, or 0.518834027617101 of static C0, over all 14 records. The predeclared positive-nine secondary is 0.012692790855530232, or 0.2061154926711693 of C0. Discrepancy persists for all three specified baseline choices; these are not uncertainty bounds. Five nonpositive-CT records remain in the primary result. No physical adequacy threshold, cause isolation, original-vehicle qualification or novelty claim follows.
+
+Independent hyperbolic-root review passed 71/71 checks for all 42 predictions without analyzer imports/reruns. Review delivery manifest `e1ff3e6dc94fdba4531b0c2cfbb509b547faaddaca05d22d1eb909ea3eaca7e9`; private row evidence `cbf5d0ca5d31760335774a557dee8634900121dabb2406bc2b5cf4a9d607e42d` remains private together with official raw tables. Exact public-safe numerical and interpretation reviews are saved. Three.js aggregate graph passed 16 display checks; screenshots inspected; new summary link returns exact bytes. A packaging-only sandbox HTTP denial and successful permissioned link check are disclosed; science was not repeated.
+
+Read MILESTONE-SUMMARY, RESULT-CLAIM-LEDGER, RESULT-LITERATURE-LEDGER, NEXT-DECISION and POSTRUN-RESTART. Viewer queued at http://127.0.0.1:8876/research/m31-gws-receiver-transfer-2026-10-16/viewer/ . Both scientific/review allocations are closed; no active scientific or QA process. Existing server retained. Result publication verification will be recorded in a separate receipt without changing frozen package files.
+
+Next priority: admit a documented physical command-to-f0 bridge, an independent matched zero-inflow baseline and two predetermined nonzero inflow levels with direct thrust and uncertainty. No next experiment or acquisition is allocated; do not retune the exposed GWS run or reopen historical budgets. The overall goal remains active and incomplete. This checkpoint improves evidence about the reference model, not 5,000-drone performance.
+
 ## Latest scientific checkpoint — exposed published-profile audit
 
 `research/m31-source-reference-admission-2026-10-16/` completed a separately specified descriptive comparison of Bauersfeld Fig. 7 Offboard 1/2 median curves, after source publication `37750e0ea4d929ac7bb414a7636cfebaea3f3c2a`. Independent pdfplumber/pypdf reconstruction agrees on all 34 visible/clipped knots; off-axis paths and paper images remain private. Maximum normalized gap is 0.2581468313 and radial L2 referenced to Offboard 2 is 0.2406993666. Normalized center medians nearly coincide while unique half-centerline radii differ (0.4487046 / 0.5591574).

@@ -1,0 +1,9 @@
+# Review and display checks
+
+Six synthetic analyzer checks passed before real scoring. One scientific invocation completed 42 roots / 2058 iterations with exit 0. The exact executed source and original 18 pins are unchanged.
+
+One independent review used numerical RPM sorting, Decimal interpolation and a stable hyperbolic cubic formula, without importing or rerunning the analyzer. All 71 checks passed. Maximum root difference was 8.881784197001252e-16 and maximum CT prediction difference 5.551115123125783e-17. It checked every saved prediction privately, all source pins and aggregate membership. [Review plan](review/numerical/REVIEW-PLAN.json), [checks](review/numerical/REVIEW-CHECKS.json), [conclusion](review/numerical/REVIEW-CONCLUSION.md). Root inspected the independent source and conclusions before importing exact public-safe bytes. Agent agreement itself is not empirical evidence.
+
+The display-only Playwright run passed all 16 checks on attempt 1: exact evidence binding, both headline values, all baseline table and bar values for both metrics, camera orbit/reset, mobile layout/canvas, resource/script errors and refusal of same-length corrupted evidence. [QA JSON](qa/attempt-1/qa.json). Desktop, RMS scene, maximum scene, mobile and corruption screenshots are retained; desktop and scene captures were visually inspected. No scientific calculation is performed by that QA or viewer. Display success does not validate the physical law.
+
+The viewer presents normalized summaries; absolute and normalized results are retained together in the milestone table and exact evidence. Its newly added milestone link is checked during final package integrity inspection. Final source/dependency/hash and privacy checks are recorded in PUBLICATION-AUDIT.json. No measured performance or total measurement-uncertainty claim is inferred from these checks.
