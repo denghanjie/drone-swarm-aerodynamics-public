@@ -16,6 +16,8 @@ Read MILESTONE-SUMMARY, RESULT-CLAIM-LEDGER, RESULT-LITERATURE-LEDGER, NEXT-DECI
 
 Next priority: admit a documented physical command-to-f0 bridge, an independent matched zero-inflow baseline and two predetermined nonzero inflow levels with direct thrust and uncertainty. No next experiment or acquisition is allocated; do not retune the exposed GWS run or reopen historical budgets. The overall goal remains active and incomplete. This checkpoint improves evidence about the reference model, not 5,000-drone performance.
 
+Result independently published and verified at `3105d5b0c3a23b925111e79b05c43783735fa396`. Exact manifest 9297 bytes, SHA256 `10d98b06f5173b569a1b4142d2ae7c843721cddff89ec94417d091a90c88f823`; all 56 local/committed pins (438441 bytes) match. Receipt: `research/publication-receipts/m31-gws-receiver-transfer-2026-10-16.json`. No next scientific invocation is active or allocated.
+
 ## Latest scientific checkpoint — exposed published-profile audit
 
 `research/m31-source-reference-admission-2026-10-16/` completed a separately specified descriptive comparison of Bauersfeld Fig. 7 Offboard 1/2 median curves, after source publication `37750e0ea4d929ac7bb414a7636cfebaea3f3c2a`. Independent pdfplumber/pypdf reconstruction agrees on all 34 visible/clipped knots; off-axis paths and paper images remain private. Maximum normalized gap is 0.2581468313 and radial L2 referenced to Offboard 2 is 0.2406993666. Normalized center medians nearly coincide while unique half-centerline radii differ (0.4487046 / 0.5591574).
