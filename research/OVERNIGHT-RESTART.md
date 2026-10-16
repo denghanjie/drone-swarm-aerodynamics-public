@@ -4,6 +4,12 @@
 
 Public additive worktree: current repository, branch `codex/m31-audit-2026-10-15`. Preserve the original eight-step roadmap and historical M31 base. Later remote main/DOT at `1336f5c416875a9651f92b58b2ed06649f25b04e` remains separate and untouched. The private workspace, attachments, credentials and chat records must never be published.
 
+## New separate computational question — source freeze pending
+
+`research/m31-coupled-solve-2026-10-16/` defines a separately bounded four-rotor steady-coupling verification after the closed physical-transfer and source-admission questions. Two eight-drone ladders, a six-drone cycle, and a nearby rejection control are fixed before any target evaluation. An explicit hypothetical source-strength law retains all four receiver roots. Static proofs establish a sufficient45degree downward-order condition and a factor1/2 log-coordinate contraction for the fixed nonnegative-coefficient contract. Neither is physical validation or novelty.
+
+Source and independent checker are prepared; parsing only has run. After independent verification of the public source commit/manifest, allocate exactly one30second candidate invocation and one120second independent saved-record review. Both are serial, with exclusive locks and retained failures. No prior expired window or closed budget is reopened. Read PROTOCOL, source-manifest, static reviews and REPRODUCE. Viewer preparation is separate from scientific execution. Full goal remains active.
+
 ## Latest ancillary checkpoint — fixed-command source admission
 
 `research/m31-command-bridge-admission-2026-10-16/` completed its finite six-query methods admission. NASA/TM-20210014010 documents direct loads under fixed PWM and matching static/positive-pressure settings; the related accepted article corroborates the same experiment. Numeric baseline/targets remain unadmitted. All source-access failures and incidental fitted-model exposure are preserved. No scoring, fitting, figure extraction or dataset payload occurred. Read DECISION, REVIEW, SOURCE-ACCESS and bibliography. This ancillary desk result retains the existing GWS Three.js result view. A separate static coupling-structure question is under review; no numerical execution is yet allocated. Historical launch windows and all closed campaigns remain closed.

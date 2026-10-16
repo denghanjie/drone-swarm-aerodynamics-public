@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-16",
+  "scope": "Nearest mathematical/computational antecedents; no novelty claim or physical validation",
+  "local_inputs_read": [
+    "review/CONTRACT-CHALLENGE.md",
+    "review/DERIVATION-AND-NEXT-QUESTION.md"
+  ],
+  "counts": {
+    "discovery_queries": 3,
+    "primary_reference_identities": 2,
+    "full_text_references_read": 1,
+    "open_requests": 7,
+    "failed_open_requests": 4,
+    "successful_open_requests": 3,
+    "numerical_executions": 0,
+    "repository_edits": 0,
+    "datasets_acquired": 0,
+    "source_archives_acquired": 0
+  },
+  "queries": [
+    "\"two-sided\" \"contractive interference\" logarithmic metric",
+    "\"Kahn\" \"Topological sorting of large networks\" pdf",
+    "\"Topological sorting of large networks\" \"pdf\" -site:researchgate.net -site:kiphub.com -site:eurekamag.com -site:deepdyve.com"
+  ],
+  "accesses": [
+    {
+      "url": "https://people.kth.se/~hamidrez/3.pdf",
+      "reference": "Feyzmahdavian et al.",
+      "outcome": "404; no full text read",
+      "reader_ref": "turn877530view0"
+    },
+    {
+      "url": "https://dl.acm.org/doi/pdf/10.1145/368996.369025",
+      "reference": "Kahn1962",
+      "outcome": "403; no full text read",
+      "reader_ref": "turn877530view1"
+    },
+    {
+      "url": "https://www.diva-portal.org/smash/get/diva2%3A576794/FULLTEXT01.pdf",
+      "reference": "Feyzmahdavian et al.",
+      "outcome": "Reader timeout; no full text read",
+      "reader_ref": "turn841841view0"
+    },
+    {
+      "url": "https://doi.org/10.1145/368996.369025",
+      "reference": "Kahn1962",
+      "outcome": "403; metadata/abstract previously visible only in indexed official-publisher search result",
+      "reader_ref": "turn841841view1",
+      "indexed_publisher_refs": [
+        "turn989986search0",
+        "turn877530search0"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/1201.3740",
+      "reference": "Feyzmahdavian et al.",
+      "outcome": "Metadata read: authors, v2 date, journal reference",
+      "reader_ref": "turn649147view0",
+      "locators": "lines 8-29"
+    },
+    {
+      "url": "https://arxiv.org/html/1201.3740",
+      "reference": "Feyzmahdavian et al.",
+      "outcome": "Text identifies v2; section II-A Proposition 1 and standard-map assumptions read",
+      "reader_ref": "turn649147view1",
+      "locators": "lines 55-129"
+    },
+    {
+      "url": "https://arxiv.org/html/1201.3740v2",
+      "reference": "Feyzmahdavian et al.",
+      "outcome": "Pinned same version; exact logarithmic and two-sided results read",
+      "reader_ref": "turn296673view0",
+      "locators": "section IV Theorem 6 and Corollary 1, lines 340-384; section V Definitions 3-4, Theorem 8 and Corollary 2, lines 394-433"
+    }
+  ],
+  "unread_cited_works": "References inside the verified paper were not followed; no third primary reference was added",
+  "publication_scope": "Short paraphrases, bibliographic metadata and our applicability analysis only; no full source text retained",
+  "decision": "Log-coordinate framework verified; Kahn exact-method verification incomplete; bounded search closed",
+  "sanitization": "Two scratch paths replaced by package-relative imported-note paths. Scientific/source-access facts unchanged."
+}
