@@ -1,0 +1,74 @@
+{
+  "schema": "m31-screening-cost-semantic-reading-v1",
+  "reviewer": "m31_evidence_audit",
+  "priorInventories": [
+    "review/MATHEMATICAL-AND-COST-READING.json",
+    "review/RUNNER-SUPERVISION-READING.json"
+  ],
+  "inheritedSemanticFilesReadCumulative": 7,
+  "inheritedAllowance": 16,
+  "remainingInheritedAllowance": 9,
+  "newDistinctInheritedFilesThisPhase": 0,
+  "reads": [
+    {
+      "path": "research/m31-exact-screening-2026-10-17/source/check.py",
+      "sha256": "df3c6330dc2f8577819a582f88d8a2a0379fc9377f8b7ec3097dc6565cee2599",
+      "bytes": 70784,
+      "scope": "Already-counted inherited checker. Whole source parsed as AST; textual diff requested (truncated output), complete changed-function diffs and regenerate646-754 inspected. No execution."
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/source/semantic-reference.py",
+      "sha256": "ee77aab09109d3fba898555dacc4509312813caae4116bb3e1063efd88e3ad2c",
+      "bytes": 39634,
+      "scope": "Whole source AST; complete changed-function diffs; regenerate517-606, validate_certificate222-350, common projection/validate_method710-754; module constant comparison."
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/source/check.py",
+      "sha256": "10d91cd1674de7caa5baaed71904ba913255579afc7bb398bcde1653b77ebcd2",
+      "bytes": 42462,
+      "scope": "Observed read snapshot: rg matches and lines1-36,214-258,700-770 only. Source subsequently edited concurrently; this is the hash observed at those reads, not current-file attestation."
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/source/pair-reference.py",
+      "sha256": "845f52cf350a09d2043934dff3e797a7b7416f4ef5c64beb716104bcd74f38f0",
+      "bytes": 44757,
+      "scope": "Metadata SHA/bytes only; no semantic reading/import."
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "research/m31-screening-cost-2026-10-17/review/SEMANTIC-SOURCE-REVIEW.md",
+      "sha256": "ba0938ea7efce2f83c32687d0cbd865a96ba1cf716e32072792e87af15e0407d",
+      "bytes": 3759,
+      "scope": "Authored source-only comparison/review."
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/review/SEMANTIC-AST-COMPARISON.json",
+      "sha256": "dd2067a25c9b39c3613ead4ff5daff8efa3076ca443945b3fe45bb7f6263b50c",
+      "bytes": 2380,
+      "scope": "Authored source-only comparison/review."
+    }
+  ],
+  "operations": [
+    "Textual diff",
+    "AST parse/structural comparison",
+    "Targeted source reads",
+    "Hash/byte metadata",
+    "Review writing"
+  ],
+  "notPerformed": [
+    "Scientific imports",
+    "Scientific compile/exec/evaluation",
+    "Numerical probes/generators",
+    "Old suite/control runs",
+    "External operations",
+    "New agents"
+  ],
+  "notes": [
+    "Prior checker scope expanded without a new distinct inherited file.",
+    "Initial administrative AST selector failed; corrected named-scene selector succeeded.",
+    "Concurrent checker edits invalidated one pre-write snapshot assertion; no report was written by that aborted command.",
+    "Full wrapper review is separate; only the explicitly pinned integration snapshot was inspected.",
+    "Self hash excluded; delivered separately."
+  ]
+}

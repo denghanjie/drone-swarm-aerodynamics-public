@@ -1,0 +1,11 @@
+# Unchanged aerodynamic model; newly measured computation
+
+The exact pair law, current-state adapter and coupled-load certificate are inherited from ../m31-exact-screening-2026-10-17/MODEL.md and its pinned ancestry. This checkpoint changes the timing harness, scene declaration, storage and checking schedule. It does not change or experimentally validate the aerodynamic law.
+
+Prepared native values are treated as exact dyadic operands. Both methods use the same finite-support pair law, rejection precedence, preparation, positive-edge ordering restriction and2,000,000positive-term cap. The hierarchy may remove only interactions proved zero using exact rational boxes; failed global guard proof falls back to scalar enumeration. Exact tree and scalar outcomes are independently reconstructed for every pair. Complete enumeration pays the same preparation cache.
+
+For admitted ordered scenes: x_ir^3+x_ir*sum_j(a_irj*y_j)=1; y_i=sqrt(sum_r(w_ir*x_ir)); w_ir=f_ir/sum_r(f_ir). Rotor thrust is f_ir*x_ir. Collective thrust, world force along prepared axis and world moment from cross(prepared offset,axis) use the same exact-real semantics. A native48iteration/54bisection proposal is accepted only with the fixed96root-defect/full-load-box certificate and independent192coefficient/128bisection reference checks. Four normalized error tolerances are exactly1e-8. No across-permutation native-bit invariance is claimed.
+
+All fixed scenes are identity-orientation lattices. The separately reviewed literal/support proof bounds every possible nonzero outcome by63,792per method across dense scenes and zero in sparse scenes. It accounts for actual rounded prepared rotorPoint-minus-center, not just stored lever offsets. It is used for storage feasibility only; the checker still evaluates every nonself pair. The source-only proofs and ten permitted fraction emission categories are recorded in review/STATIC-BOUND-ADDENDUM.md.
+
+An observed computation improvement would establish a descriptive Node cost result for these static scenes and this model only. It cannot validate flight physics, cyclic positive coupling, moving5,000-drone browser performance or novelty. Those remain separate research obligations.

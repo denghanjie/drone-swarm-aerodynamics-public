@@ -1,0 +1,87 @@
+{
+  "schema": "m31-screening-cost-document-reconciliation-reading-v1",
+  "reviewer": "m31_verified_literature",
+  "date": "2026-10-17",
+  "inheritedReadCap": 16,
+  "inheritedDistinctPathsReadCumulative": 11,
+  "inheritedCapSatisfied": true,
+  "priorInventory": {
+    "path": "research/m31-screening-cost-2026-10-17/review/SUPERVISION-READING.json",
+    "bytes": 6008,
+    "sha256": "d602b64a1e29a50ebab1b0211dc92f88379969a8625b2f72b46e20ebb920db70"
+  },
+  "currentCycleInputs": [
+    {
+      "path": "research/m31-screening-cost-2026-10-17/PROTOCOL.md",
+      "bytes": 9425,
+      "sha256": "a69cd12d8dc8314a1e20e917d34c064d2545ab3aeb45156aa1fbbbd99e28b67b",
+      "readScope": "full"
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/MODEL.md",
+      "bytes": 2214,
+      "sha256": "a879cae53d83fb8cdbeb4b835cdfabedb072f243127b41ce8041b387c18fe7f1",
+      "readScope": "full"
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/CONTRACT-DRAFT.md",
+      "bytes": 2517,
+      "sha256": "85689663b1662a14366137a3dadc6fa32739aba5720fcd31144f2edfbb2e5dc7",
+      "readScope": "full"
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/source/result-contract.json",
+      "bytes": 34801,
+      "sha256": "58f2f238b588ae4ee3c3d28d8825c469f24d03b43919e5942cd4bf9124c76c16",
+      "readScope": "full; initial truncated display completed through parsed section reads"
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/review/STATIC-BOUND-ADDENDUM.md",
+      "bytes": 11215,
+      "sha256": "660364392df72c1234a63cc9685152f03f93b23de8395cdc7bfc7f2bc391a5ce",
+      "readScope": "full"
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/source/run.cjs",
+      "bytes": 11343,
+      "sha256": "74764d0e32e1d4e24ba8bea42ccef29fd6a1ce28e98233741a1bb04e907a4d3f",
+      "readScope": "rg matches for anomaly capacity/source file references only; not a full runner review"
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/source/supervise.py",
+      "bytes": 20249,
+      "sha256": "053cc97e59830b838d95d73474b8eb597c4b23c1b6783f2555d4db79b9149868",
+      "readScope": "authored source; durability diff and AST parsing"
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/source/guardian.py",
+      "bytes": 1892,
+      "sha256": "5c97c5a23556120226fab52955e427144d8ae69beb685e18d667bc6b66e1717a",
+      "readScope": "authored source; durability diff and AST parsing"
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/prefreeze/pre-durability-supervision/supervise.py",
+      "bytes": 20057,
+      "sha256": "fc16e1228af4954458bbb01dd949502babd32b355ef725e920f406493d9fc2b6",
+      "readScope": "own previously authored snapshot; byte preservation and source diff"
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/prefreeze/pre-durability-supervision/guardian.py",
+      "bytes": 1748,
+      "sha256": "57d25d48a5e59268ed77bc2ba6fe8364e34b46b89c89faba5f8459e235be16a9",
+      "readScope": "own previously authored snapshot; byte preservation and source diff"
+    }
+  ],
+  "note": "No new inherited source reads. Preserved pre-durability files are snapshots of this reviewer authored current-cycle code; counted here as current inputs.",
+  "operations": [
+    "Read and compare prospective documents, schema and adopted caps/schedule",
+    "Parent-authorized durability edits after independent review",
+    "AST parse of modified supervisor and guardian only",
+    "Hash and preserve source snapshots; no scientific imports or execution"
+  ],
+  "reviewArtifact": {
+    "path": "research/m31-screening-cost-2026-10-17/review/FINAL-DOCUMENT-RECONCILIATION.md",
+    "bytes": 7308,
+    "sha256": "6168c33f04efe9e4f6c7ac53f93dba6291e9ff25d09bfc2f623c15aa51ec0e8a"
+  }
+}

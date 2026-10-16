@@ -1,0 +1,614 @@
+{
+  "schema": "m31-screening-cost-result-contract-v1",
+  "status": "Final prospective contract accepted before implementation; numerical execution still requires independent reviews, immutable source publication and exact remote verification.",
+  "scientificContract": {
+    "base": "research/m31-exact-screening-2026-10-17/source/result-contract.json",
+    "unchanged": "All method, prepared, raw-input, exact tree/guard/proof, canonical assembly, model/domain, coefficient, solve, certificate, load, error and method-equality semantics remain unchanged. New packaging, fresh fixed scenes, evidence wire caps, digest/timing ledger and controls are specified here.",
+    "methodFields": [
+      "name",
+      "prepared",
+      "assembly",
+      "result",
+      "solve",
+      "certificate"
+    ],
+    "methodOrder": [
+      "complete",
+      "hierarchy"
+    ],
+    "pairChecks": "Independently classify all 527776 nonself pairs per method across six scenes, including every implicit scalar zero and every eligible member of every zero node. Cross-method agreement and counts never replace these checks.",
+    "expectedScenes": 6,
+    "expectedDrones": 810,
+    "maxDrones": 216,
+    "expectedLogicalPairsPerMethod": 527776,
+    "maxSceneLogicalPairsPerMethod": 185760,
+    "sceneOrder": [
+      "dense64",
+      "dense125",
+      "dense216",
+      "sparse64",
+      "sparse125",
+      "sparse216"
+    ],
+    "sceneOrderIdentityRule": "The six labels describe fixed family/size positions; exact scene IDs are the corresponding six IDs already frozen in spec order. Do not rename spec IDs from these labels.",
+    "expectedClass": "admitted is a hypothesis independently checked for every scene; mismatch fails this cost qualification",
+    "sourceSupportBound": "At most63792 positive outcomes per method across the three dense upright lattice scenes, conditional on the separately frozen source-only prepared-point RN-margin proof; sparse support is empty under its separately frozen neighbor-distance proof. This output bound never replaces the full pair oracle.",
+    "literalStateFreeze": "All17 binary64 input literals per drone, IDs and scene order are frozen before execution. Validate every literal/raw-word identity independently."
+  },
+  "encoding": {
+    "canonicalJson": "Printable-ASCII-only JSON. Object keys sorted by ASCII byte order recursively; arrays preserve order; UTF-8 bytes; no whitespace; no duplicate keys. Allowed JSON values: null, booleans, printable ASCII strings(U+0020..U+007e), safe integers in[-9007199254740991,9007199254740991], arrays and objects. Reject floats, negative zero, NaN, Infinity, BigInt, undefined, non-ASCII and control characters. Escape only quote and backslash; no slash escaping. Scientific exact integers/timestamps obey their independent canonical-string rules. Node JSON.stringify over recursively key-sorted values and Python json.dumps(sort_keys=True,separators=(comma,colon),ensure_ascii=True,allow_nan=False) must agree after explicit value/type validation.",
+    "sha256": "Lowercase64hex SHA-256 of exactly canonicalJson UTF-8 bytes unless the field explicitly pins raw file bytes.",
+    "integerString": "0 or -?[1-9][0-9]*; no +, leading zero or -0; positive denominator; reduce every fraction to gcd1.",
+    "timeString": "0 or [1-9][0-9]*; at most20digits; nanoseconds, never JSON floating point.",
+    "filePin": "Exact raw on-disk byte length and SHA-256; no newline normalization or recanonicalization for file pins.",
+    "rawInputDigestEnvelope": [
+      "domain",
+      "sceneId",
+      "input"
+    ],
+    "rawInputDigestDomain": "m31-screening-cost/raw-input/v1",
+    "rawInputValue": "Entire unchanged input object {drones:[{id,state:[17lowercase16hex]}]}, including unused velocity/angular components and declared input order.",
+    "methodDigestEnvelope": [
+      "domain",
+      "specSha256",
+      "sourceManifestSha256",
+      "sceneId",
+      "rawInputSha256",
+      "method",
+      "scientific"
+    ],
+    "methodDigestDomain": "m31-screening-cost/method/v1",
+    "methodDigestScientific": "Whole unchanged method record, including assembly/proof/work; omit timing and trial metadata because they are separate records.",
+    "commonDigestEnvelope": [
+      "domain",
+      "specSha256",
+      "sourceManifestSha256",
+      "sceneId",
+      "rawInputSha256",
+      "scientific"
+    ],
+    "commonDigestDomain": "m31-screening-cost/common/v1",
+    "commonScientificFields": [
+      "prepared",
+      "result",
+      "canonicalPositiveEntries",
+      "solve",
+      "certificate"
+    ],
+    "commonPositiveOrder": "input receiver, rotor0..3, input source; emitted i/j are stable IDs exactly as in the inherited common-equality interface",
+    "sourceManifestSha256": "SHA-256 of raw immutable source manifest bytes, excluding the manifest itself from its own file inventory. Supervisor and checker independently pin the same bytes.",
+    "specSha256": "SHA-256 of raw immutable spec.json bytes.",
+    "parsedTypeValidation": "Reject numeric float/constant tokens and the negative-zero integer token during saved-JSON parsing; reject duplicate keys and nonprintable strings recursively. Do not rely on Python float-to-int equality or loss of the lexical -0 sign. In Node reject Object.is(value,-0), unsafe/noninteger numbers, BigInt, undefined and nonplain/unsupported values before canonical encoding."
+  },
+  "storage": {
+    "resultSchema": "m31-screening-cost-result-v1",
+    "resultFields": [
+      "schema",
+      "specId",
+      "specSha256",
+      "sourceManifestSha256",
+      "runtime",
+      "sourceSha256",
+      "constants",
+      "clock",
+      "recordedHarnessScope",
+      "scenes",
+      "trials",
+      "summaries"
+    ],
+    "sceneDescriptorFields": [
+      "sceneIndex",
+      "id",
+      "path",
+      "bytes",
+      "sha256",
+      "rawInputSha256",
+      "representatives",
+      "inputConversionTiming"
+    ],
+    "representativeFields": [
+      "method",
+      "trialSequence",
+      "scientificDigest",
+      "commonDigest"
+    ],
+    "sceneSchema": "m31-screening-cost-scene-v1",
+    "sceneFields": [
+      "schema",
+      "specId",
+      "specSha256",
+      "sourceManifestSha256",
+      "id",
+      "rawInputSha256",
+      "input",
+      "methods"
+    ],
+    "paths": "Authoritative index results/timing-index.json; journal results/timing-index.json.jsonl; exactly6 paired shards results/scenes/<declaredSceneID>.json in spec order. Paths are relative to package attempt root and allowlisted exactly; reject escapes, duplicate paths, symlinks, missing/extra/reordered identities or unexpected scientific output files. First mismatch anomaly uses one fixed allowlisted results/anomalies/first-mismatch.json path and is forbidden in successful qualification.",
+    "representativeSelection": "First measured call for each method in each scene. Per-scene local call indices2 and3, respectively complete and hierarchy. Never choose fastest or last trial.",
+    "sceneWrite": "After the first measured pair completes, canonical-serialize the paired representative shard, create exclusively, write all bytes, fsync the file, make the directory entry durable, and append/fsync its pin event before the next method call. Retain no duplicate full scientific document in the journal.",
+    "successfulIndex": "Written exclusively only after all60 trials, all6 shard pins and all6 scene-complete records exist; exact index, ledger and journal consistency required. Finalization/durability failures leave the attempt failed.",
+    "mismatch": "Compare each freshly generated method digest with that method's first observed digest for the scene, including warmup. On the first mismatch, retain the current offending full scientific record in an exclusively created, fsynced failure shard; append/fsync a failure event with prior/current digests and offending pin; terminate allocation with failure and no retry. Warmup-to-representative mismatch is visible even if it occurs when first measured output is produced. No successful result index may be emitted.",
+    "checkerLifetime": "Only one scene scientific record, one current-scene independent oracle/plans/roots/loads, and at most one scene-local disposable control copy live at a time. Release all before loading the next scene. Compact metadata, counters and bounded witnesses may persist. Never eagerly parse six shards or clone a whole run.",
+    "kernelLifetime": "Retain only current scene's two representative method records plus current trial result until digest comparison. Release nonrepresentative result after successful hashing and journaling. After scene completion release representatives; final index retains pins/metadata only.",
+    "checkerEvidence": "Final compact checker report independent-check.json plus6 bounded reference-scenes/<declaredSceneID>.json evidence files; report pins each evidence file. Write and release each current-scene reference before next scene. Their aggregate is at most96MiB. The small report may contain bounded15control witnesses and all trial timing summaries, never all full scene references.",
+    "mismatchResourceFailure": "Byte caps take precedence over full anomaly retention. Before exclusive anomaly write, determine required canonical record bytes and remaining per-file/scientific/aggregate capacity. If full record cannot fit, fail as anomaly-retention-resource, retain bounded prior/current digest and required/available-byte evidence, and do not write a truncated scientific record. This is an unsuccessful allocation with incomplete anomaly retention explicitly reported, never a pass or retry. This accepted precedence is necessary because arbitrary erroneous output need not obey successful-science bounds.",
+    "anomalySchema": "m31-screening-cost-anomaly-v1",
+    "anomalyFields": [
+      "schema",
+      "sceneId",
+      "method",
+      "sequence",
+      "previousDigest",
+      "currentDigest",
+      "scientific"
+    ]
+  },
+  "trialProtocol": {
+    "methodLabels": {
+      "A": "complete",
+      "B": "hierarchy"
+    },
+    "warmupOrder": "AB",
+    "measuredPairOrders": [
+      "AB",
+      "BA",
+      "BA",
+      "AB"
+    ],
+    "trialsPerScene": 10,
+    "totalTrials": 60,
+    "trialFields": [
+      "sequence",
+      "sceneIndex",
+      "sceneId",
+      "phase",
+      "repetition",
+      "pairOrder",
+      "pairPosition",
+      "method",
+      "timing",
+      "harnessTiming",
+      "scientificDigest",
+      "commonDigest",
+      "work"
+    ],
+    "sequence": "Global0-based index0..59 in authoritative actual call order; sceneIndex0..5; warmup phase repetition0; measured phase repetitions1..4; pairPosition0..1. Require exact frozen sequence before other ledger checks.",
+    "timingFields": [
+      "startNs",
+      "endNs",
+      "totalNs",
+      "offsetsNs",
+      "stagesNs"
+    ],
+    "offsetFields": [
+      "prepared",
+      "spatial",
+      "assembled",
+      "completed"
+    ],
+    "stageFields": [
+      "preparation",
+      "spatial",
+      "assembly",
+      "admissionSolveCertificate"
+    ],
+    "clock": "process.hrtime.bigint; one kernel origin sampled before shared literal input conversion; startNs/endNs are nonnegative offsets from that same origin",
+    "methodBoundary": "Start stamp immediately before synchronous method(rawWords,name), before raw-word identity/shape validation. Phase hooks: prepared after exact prepared-cache construction; spatial after global proof/tree wire construction; assembled after full query assembly and canonical nonzero sort/stable-ID conversion. Tail includes canonical admission and shared solve/load certificate. completed is the outer end stamp after the entire unchanged scientific method record returns. Include all raw decoding/preparation, proof/build/traversal/scalar work, canonical assembly/admission, solve/certificate and internal compact proof-output construction. No outstanding asynchronous work.",
+    "phaseAccounting": "Same3 internal hooks in same order for both methods; completed offset is outer return stamp. No per-pair stamps. All hook/outer stamp overhead is charged, none subtracted. 0<=prepared<=spatial<=assembled<=completed=totalNs=endNs-startNs; totalNs>0. stagesNs equals[prepared,spatial-prepared,assembled-spatial,completed-assembled] exactly. Zero individual stages allowed. Phase errors fail.",
+    "chronology": "Every trial start/end is serial and nonoverlapping across the full run in declared actual order. Every inputConversionTiming precedes its scene's first trial; every trial harness start>=method end and harness end<=next method start. Per-scene input conversion begins after previous scene's final method/harness interval. Store no wall-clock claims as monotonic duration.",
+    "intervalFields": [
+      "startNs",
+      "endNs",
+      "totalNs"
+    ],
+    "harnessTimingFields": [
+      "startNs",
+      "endNs",
+      "totalNs",
+      "serializationNs",
+      "hashNs"
+    ],
+    "harnessAccounting": "After method return, start harness interval before digest-context/common-payload projection; construct and canonical-serialize method/common envelopes; stamp; SHA-256 them; end stamp. serializationNs+hashNs=totalNs=endNs-startNs>=0, each component nonnegative. Common input literal-to-word conversion has separate per-scene interval fields. No timing inside scientific digests.",
+    "recordedHarnessScope": "Input literal conversion and per-call scientific canonical serialization/hash are timed separately. File/journal fsync, supervisor, final index/shard serialization and other orchestration are outside the reported method and named harness intervals; disclose that scope. Do not call their sum full wall-clock run cost.",
+    "binding": "For every trial recompute expected method/common digest from retained first-measured representative and frozen context; compare every digest, including warmups. Compare every work field with independently reconstructed method work. Reject missing/extra/repeated calls, wrong phase/order/repetition/method/scene/context/digest/work. No trial-to-trial equality-only acceptance.",
+    "workFields": [
+      "preparationCalls",
+      "globalProofs",
+      "treeNodes",
+      "nodeVisits",
+      "nodeRuleTests",
+      "zeroNodes",
+      "zeroPairs",
+      "leafVisits",
+      "scalarPairs",
+      "scalarZeroPairs",
+      "positiveTerms",
+      "rejectedPairs",
+      "unresolvedPairs"
+    ],
+    "summary": "Exactly6 scene-order summaries, with4 measured pair objects each. ratio=completeNs/hierarchyNs. completeMedianNs and hierarchyMedianNs are exact medians of4 integer durations; medianPairedRatio is exact median of4 reduced ratios sorted as rational numbers; ratioOfMedians is completeMedianNs/hierarchyMedianNs. Every rational is reduced{n,d} with canonical integer strings. Warmups excluded only from comparison; no adaptive repeats or outlier deletion.",
+    "summaryFields": [
+      "sceneId",
+      "pairs",
+      "completeMedianNs",
+      "hierarchyMedianNs",
+      "medianPairedRatio",
+      "ratioOfMedians"
+    ],
+    "summaryPairFields": [
+      "repetition",
+      "pairOrder",
+      "completeNs",
+      "hierarchyNs",
+      "ratio"
+    ]
+  },
+  "journal": {
+    "schema": "m31-screening-cost-journal-v1",
+    "encoding": "One bounded canonical ASCII JSON object per line; append-only, exclusive attempt file; flush and fsync each completed event before next method call. Reject partial/trailing lines on successful qualification.",
+    "events": [
+      "run-start",
+      "input-ready",
+      "trial-complete",
+      "representative-shard",
+      "scene-complete",
+      "run-complete",
+      "run-failed"
+    ],
+    "eventFields": [
+      "schema",
+      "eventSequence",
+      "type",
+      "payload"
+    ],
+    "runStartPayloadFields": [
+      "specSha256",
+      "sourceManifestSha256",
+      "runtime",
+      "sourceSha256",
+      "constants"
+    ],
+    "inputReadyPayloadFields": [
+      "sceneIndex",
+      "sceneId",
+      "rawInputSha256",
+      "inputConversionTiming"
+    ],
+    "trialCompletePayload": "Exactly the full immutable trial record; fsync each of60 completed calls, including warmups.",
+    "representativeShardPayload": "Exactly the final matching scene descriptor, after local calls2 and3 and before call4; file and directory durability precede event durability.",
+    "sceneCompletePayloadFields": [
+      "sceneIndex",
+      "sceneId",
+      "firstSequence",
+      "lastSequence",
+      "sha256"
+    ],
+    "runCompletePayloadFields": [
+      "resultPath",
+      "resultBytes",
+      "resultSha256",
+      "trialCount",
+      "sceneCount"
+    ],
+    "runFailedPayloadFields": [
+      "reason",
+      "sceneIndex",
+      "trialSequence",
+      "previousDigest",
+      "currentDigest",
+      "offendingPath",
+      "offendingBytes",
+      "offendingSha256",
+      "anomalyRequiredBytes",
+      "anomalyAvailableBytes"
+    ],
+    "failedNullableFields": "For failure before mismatch evidence exists, relevant contextual/pin/byte fields may be null; error reason must identify the precise failure. anomaly-retention-resource records required/available bytes and digests, with null offending file pin because no complete anomaly exists. Never fabricate unavailable evidence.",
+    "order": "run-start; for each scene input-ready, trial0,trial1,trial2,trial3,representative-shard,trial4..trial9,scene-complete; then run-complete. Failure may terminate prefix with run-failed. Journal trial records equal authoritative index trial records exactly. Exact6 shard descriptors equal index descriptors. Successful run-complete pins raw result index bytes; the result index does not contain its own hash."
+  },
+  "controls": {
+    "count": 15,
+    "selection": "First qualifying witness in frozen scene order; hierarchy method; input receiver then rotor then deterministic terminal then input source. Root/load witnesses input drone then rotor. Select each recipe's first qualifying witness; absence across all6 scenes fails. Metadata recipes use first scene. No old controls or fixture runs.",
+    "execution": "Validate baseline scene first. For each applicable control make one current-scene copy, mutate, run same semantic core before scientific digest/equality checks, require intended failure prefix, save bounded witness, release copy. Hash/equality/generic exception alone never qualifies. Index/ledger controls use small metadata copies and the same index/ledger validator.",
+    "candidateIdentityOrder": "Within the same certificate validator, validate parsed candidate exact load identities before row-defect/root validation; then retain all inherited row/root/full-load-box/error checks. This order lets altered-candidate control prove its intended identity failure without changing mathematical acceptance.",
+    "recipes": [
+      {
+        "name": "omitted-positive-entry",
+        "mutation": "Remove first hierarchy leaf positive entry; increment zeroCount by1; leave source coverage unchanged.",
+        "witness": "Independent oracle positive pair and fixed192 coefficient.",
+        "failurePrefixes": [
+          "implicit-zero-nonzero"
+        ]
+      },
+      {
+        "name": "false-zero-active-leaf",
+        "mutation": "Replace first leaf with a positive member by {kind:zero,node:sameNode,rule:neighbor,count:eligibleNonselfMemberCount}.",
+        "witness": "Independent positive member; complete original membership retained.",
+        "failurePrefixes": [
+          "node-zero-rule",
+          "node-zero-oracle-member"
+        ]
+      },
+      {
+        "name": "altered-positive-coefficient",
+        "mutation": "Set first positive coefficient with independent lower>0 to fixed96{l:0,u:0}, encoded as integer strings.",
+        "witness": "Independent fixed192 coefficient lower>0.",
+        "failurePrefixes": [
+          "coefficient-reference-containment"
+        ]
+      },
+      {
+        "name": "false-root-one",
+        "mutation": "Set first affected certificate root xstar to fixed96{l:2^96,u:2^96}.",
+        "witness": "Independent fixed128 reference root upper<1.",
+        "failurePrefixes": [
+          "root-defect-corollary",
+          "independent-root-containment"
+        ]
+      },
+      {
+        "name": "altered-candidate",
+        "mutation": "Toggle low bit of first affected native candidate word whose changed value remains finite in(0,1]; do not update exact candidate load.",
+        "witness": "Original/changed words and exact candidate rotor load identity disagree; reference root upper<1.",
+        "failurePrefixes": [
+          "candidate-load-identity:rotor"
+        ]
+      },
+      {
+        "name": "altered-candidate-load",
+        "mutation": "For first admitted drone rotor0 add exact1 to saved candidate rotor rational: n becomes n+d, d unchanged; require canonicality and wire bound.",
+        "witness": "Original exact candidate rotor load and changed rational.",
+        "failurePrefixes": [
+          "candidate-load-identity:rotor"
+        ]
+      },
+      {
+        "name": "false-load-box",
+        "mutation": "For first rotor whose independent reference load lower>0 set saved bounds.rotor[r] to fixed96{l:0,u:0}; keep ordered valid interval.",
+        "witness": "Independent load interval with positive lower.",
+        "failurePrefixes": [
+          "signed-root-load-propagation:rotor",
+          "independent-load-containment:rotor"
+        ]
+      },
+      {
+        "name": "false-error-zero",
+        "mutation": "Set first rotor error bound to0 where exact candidate lies strictly outside independent root interval.",
+        "witness": "Candidate exact dyadic, independent root, strictly positive exact normalized rotor-load gap force*distance/(mg/4).",
+        "failurePrefixes": [
+          "rotor-error-full-box"
+        ]
+      },
+      {
+        "name": "missing-scene",
+        "mutation": "Remove final scene descriptor from small index.",
+        "witness": "Expected6 versus observed5 IDs.",
+        "failurePrefixes": [
+          "scene-count"
+        ]
+      },
+      {
+        "name": "duplicate-scene",
+        "mutation": "Replace second descriptor by copy of first.",
+        "witness": "Duplicate first ID, absent second ID.",
+        "failurePrefixes": [
+          "duplicate-scene-id"
+        ]
+      },
+      {
+        "name": "reordered-scenes",
+        "mutation": "Exchange first2 distinct scene descriptors.",
+        "witness": "Frozen versus mutated ID order.",
+        "failurePrefixes": [
+          "scene-order"
+        ]
+      },
+      {
+        "name": "timing-partition-mismatch",
+        "mutation": "In global trial2 add1 to timing.stagesNs.preparation, preserving all offsets/endpoints/total and other fields.",
+        "witness": "Declared stage differs from independently computed offset difference.",
+        "failurePrefixes": [
+          "timing-stage-partition"
+        ]
+      },
+      {
+        "name": "trial-order-mismatch",
+        "mutation": "Swap complete trial objects at global positions2 and3 without changing any contained fields; schedule validation precedes timing/binding.",
+        "witness": "Actual sequence/method order differs from frozen first measured AB.",
+        "failurePrefixes": [
+          "trial-schedule"
+        ]
+      },
+      {
+        "name": "trial-digest-mismatch",
+        "mutation": "Replace global trial2 scientificDigest by64zeros, or64ones if original already64zeros.",
+        "witness": "Expected context-bound digest recomputed from representative versus changed valid64hex.",
+        "failurePrefixes": [
+          "trial-scientific-digest-binding"
+        ]
+      },
+      {
+        "name": "trial-work-mismatch",
+        "mutation": "Add1 to global trial2 work.scalarPairs while preserving representative and digest.",
+        "witness": "Independent representative scalar count versus changed trial count.",
+        "failurePrefixes": [
+          "trial-work-reconstruction"
+        ]
+      }
+    ]
+  },
+  "wireLimits": {
+    "kernelSeconds": 1800,
+    "checkerSeconds": 1800,
+    "sampledProcessGroupRssBytes": 1073741824,
+    "aggregateOutputBytes": 402653184,
+    "sceneFileBytes": 67108864,
+    "journalBytes": 8388608,
+    "checkerCorpusBytes": 100663296,
+    "eachShortReportBytes": 65536,
+    "shortReportCount": 2,
+    "resultIndexBytes": 8388608,
+    "journalLineBytes": 65536,
+    "nonzeroEntryBytes": 384,
+    "certificateRowBytes": 1024,
+    "loadRecordBytes": 12288,
+    "treeNodeBytes": 8192,
+    "fixed96IntegerChars": 108,
+    "candidateLoadRationalIntegerChars": 256,
+    "generatedReferenceRationalIntegerChars": 256,
+    "generatedWitnessRationalIntegerChars": 256,
+    "treeNumeratorChars": 310,
+    "treeDenominatorChars": 324,
+    "controlWitnessBytes": 65536,
+    "maxErrors": 48,
+    "maxErrorChars": 256,
+    "accounting": "Scientific128MiB cap includes6 paired shards plus at most1 first-mismatch anomaly; index8MiB and journal8MiB are separate. Checker96MiB includes independent-check.json, reference-scenes/* and bounded controls. Metadata/log16MiB includes kernel/checker private raw logs, every public log copy and supervisor/guardian metadata. Aggregate384MiB includes all these and2 short reports. Frozen scientific sources are inputs. Every byte cap is fail-closed, with no truncation and no retries. Source-only science envelope104162304B, largest scene57880576B, per-load9322B<12KiB and reference envelope<25.7MB are conditional on the separate frozen math/storage proof; these do not prove RSS or completion feasibility.",
+    "scientificShardsAndAnomalyBytes": 134217728,
+    "metadataAndCombinedLogsBytes": 16777216
+  },
+  "fractionEmissionInventory": [
+    {
+      "site": "Independent per-scene root evidence",
+      "values": "4 intervals/drone,2 endpoints each",
+      "bound": "Fixed128 bisection endpoints in[0,1], numerator/denominator<=129bits."
+    },
+    {
+      "site": "Independent per-scene load evidence",
+      "values": "11 intervals/drone:4rotor,1collective,3force,3moment",
+      "bound": "Upright fixed literals: force denominator<=2^57, lever<=2^58, roots<=2^128 denominator; reference moments denominator<=2^243 and modest numerator magnitudes."
+    },
+    {
+      "site": "Independent reconstructed tree wire",
+      "values": "3 center and3 axis intervals/node",
+      "bound": "Finite fixed identity-lattice raw binary64 geometry; independent source-only prepared RN-margin proof bounds coordinate magnitudes/exponents. Retain inherited candidate tree parser limits; generated endpoints obey256chars."
+    },
+    {
+      "site": "Positive pair/zero/coefficient control witnesses",
+      "values": "Fixed192 coefficient intervals only; no unquantized oracle expression trees",
+      "bound": "Quantized192 denominator<=2^192, coarse numerator<=2^391(392bits); <=118 decimal digits."
+    },
+    {
+      "site": "Root corruption control witness",
+      "values": "Fixed128 reference root interval",
+      "bound": "Same fixed128 endpoint bound as ordinary reference evidence."
+    },
+    {
+      "site": "Candidate-bit control witness",
+      "values": "Original and changed raw words plus exact dyadic candidate/rotor identity when emitted",
+      "bound": "Original midpoint denominator<=2^55; bit-toggled value remains in(0,1] and denominator<=2^107, so candidate rotor denominator<=2^164. Original candidate moment denominator<=2^170."
+    },
+    {
+      "site": "Candidate-load corruption control witness",
+      "values": "Original rotor rational and original+1",
+      "bound": "Original candidate root/force denom<=2^112; adding1 preserves denominator; original full candidate moments bounded by2^170 denominator."
+    },
+    {
+      "site": "Load-box corruption control witness",
+      "values": "Independent rotor-load interval; zero singleton optionally",
+      "bound": "Reference rotor denominator<=2^185; same modest-magnitude reference bound."
+    },
+    {
+      "site": "Error-zero control witness",
+      "values": "Exact native candidate, fixed128 root interval, normalized gap force*distance/(mg/4)",
+      "bound": "Source-only frozen arithmetic gives mg=M/2^54 with2^52<M<2^53, force=F/2^57 with|F|<2^54 and gap=G/2^128 with|G|<=2^128. normalized=F*G*2^56/(2^185*M); numerator and denominator<2^238 before reduction, below73decimal digits. 256characters includes ample sign margin."
+    },
+    {
+      "site": "Timing and scalar-work summary fractions",
+      "values": "Paired ratios,2 medians,ratio of medians; optional normalized work ratios",
+      "bound": "At-most20digit timestamp operands and fixed scene counts; products for ratio of medians<=42decimal digits before reduction."
+    }
+  ],
+  "evidencePolicy": "Only enumerated fraction sites may use the256character output proof. No old failed-guard/tree-corruption controls are rerun or emitted. New fraction sites require prospective bound review before freeze. 256 is a rejection cap, never a rounding rule. Roots, coefficients, full returned load-box propagation, exact candidate identities and every normalized error retain inherited mathematical checks.",
+  "qualificationLimits": "Scientific qualification, digest consistency and timing integrity are distinct reported fields. Retained hashes cannot cryptographically attest actual recomputation or truthful elapsed time. Synchronous frozen source, exclusive attempts, journal and supervisor/runtime pins provide provenance. Timing is descriptive Node raw-words-to-record cost for six static scenes; no5000-drone, browser, dynamics, physical-validity, novelty or general speedup conclusion.",
+  "sourceFiles": [
+    "spec.json",
+    "result-contract.json",
+    "interval.cjs",
+    "rational.cjs",
+    "adapter.cjs",
+    "pair-prepared.cjs",
+    "boxes.cjs",
+    "tree.cjs",
+    "loads.cjs",
+    "methods.cjs",
+    "canonical.cjs",
+    "run.cjs"
+  ],
+  "independentSourceFiles": [
+    "check.py",
+    "semantic-reference.py",
+    "pair-reference.py"
+  ],
+  "methodFields": [
+    "name",
+    "prepared",
+    "assembly",
+    "result",
+    "solve",
+    "certificate"
+  ],
+  "methods": [
+    "complete",
+    "hierarchy"
+  ],
+  "assemblyFields": [
+    "mode",
+    "globalGuard",
+    "tree",
+    "queries",
+    "work"
+  ],
+  "workFields": [
+    "preparationCalls",
+    "globalProofs",
+    "treeNodes",
+    "nodeVisits",
+    "nodeRuleTests",
+    "zeroNodes",
+    "zeroPairs",
+    "leafVisits",
+    "scalarPairs",
+    "scalarZeroPairs",
+    "positiveTerms",
+    "rejectedPairs",
+    "unresolvedPairs"
+  ],
+  "query": "{i:original input receiver index,r:rotor0..3,terminals:[terminal]}; input receiver then rotor order",
+  "scan": "{kind:scan,entries:[{j:original input source index,result}],zeroCount}; exactly one terminal per complete/fallback query; all missing nonself sources explicitly claim zero",
+  "leaf": "{kind:leaf,node:preorder ID,entries:[{j:original input source index,result}],zeroCount}; all missing nonself members explicitly claim zero; entries input-source sorted",
+  "zero": "{kind:zero,node:preorder ID,rule:declared first valid proof,count:exact nonself member count}; empty self-only coverage allowed and counted as actual traversal",
+  "positiveResult": "{status:positive,branch:active,coefficient:{l,u}}; all positive exact-domain/cap conditions independently checked; coefficient contains fixed192 independent reference",
+  "refusedResult": "{status:rejected|unresolved,branch}; no permitted unresolved or stress exception in this suite",
+  "globalGuard": "null or {passed:boolean,checks:{centerComponent:boolean,centerNorm:boolean,rotorComponent:boolean,down:boolean,radial:boolean}}; all checks evaluated independently; completed false proof alone chooses fallback",
+  "globalGuardOrder": [
+    "centerComponent",
+    "centerNorm",
+    "rotorComponent",
+    "down",
+    "radial"
+  ],
+  "tree": "{permutation:[stableID],nodes:[{id,start,end,left,right,center,axis}]}; center/axis each3 arrays [lowerRational,upperRational]; exact extrema; preorder; leaf incoming order retained; root<=8 preserves input order",
+  "zeroRuleOrder": [
+    "neighbor",
+    "upstream",
+    "down-cut",
+    "near-outside",
+    "radial"
+  ],
+  "indexPolicy": "Query i and entry j are original input indices. Prepared/solve/load IDs, tree permutation and canonical result witness i/j are stable IDs. Canonical outcome order is input receiver/rotor/input-source, never traversal order.",
+  "preparation": "All drones prepared independently per method before self exclusion; raw invalid=>null, preparation invalid=>prepared object; global invalid=>noqueries, guard/tree/solve/certificate null, only preparationCalls=N",
+  "commonResult": "{status:certified|tolerance-failed|rejected|unresolved|resource,branch,witness:null|{id}|{i,r,j},toleranceAchieved:null|boolean}; inherited canonical priority; no source/reference expectedClass oracle",
+  "solve": "null or {iterations:48,bisections:54,candidate:[{id:stableID,x:4lowercase16hex}]}; candidate untrusted finite0<x<=1; no independent native proposal replay",
+  "certificate": "null or {rows:[{id,r,s:{l,u},p:{l,u},kbar,xstar:{l,u}}],Kbar,loads:[load],maxErrors:{rotor,collective,worldForce,worldMoment}}; all upper strings /2^96",
+  "load": "{id,candidate:{rotor:4rationals,collective:rational,force:3rationals,moment:3rationals},bounds:{rotor:4intervals,collective:interval,force:3intervals,moment:3intervals},error:{rotor:4upperStrings,collective:upperString,worldForce:upperString,worldMoment:upperString}}",
+  "certificateChecks": "Full returned coefficient boxes and exact candidate-derived source enclosure cover complete s; p encloses xhat^3+xhat*returned s; kbar>=max(1,pU,1/pL), pL>0, Kbar>=all kbar; roots contain exact corollary and independent fixed192/fixed128 reference; exact candidate loads; signed load boxes cover entire returned root box and independent reference; all3 full-box Euclidean norm error proofs; exact mg/4,mg,mg*R; upper*100000000<=2^96",
+  "interval": "{l,u} canonical signed integer strings /2^96; ordered endpoints in[-2^352,2^352]; <=108characters each",
+  "methodEquality": [
+    "prepared",
+    "result",
+    "canonicalPositiveEntries",
+    "solve",
+    "certificate"
+  ],
+  "allowedStressPairs": {},
+  "rational": "Canonical reduced{n,d}; load and generated reference/witness integers<=256characters; candidate tree numerator<=310,denominator<=324characters; positive denominator."
+}

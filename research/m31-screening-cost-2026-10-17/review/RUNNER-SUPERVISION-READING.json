@@ -1,0 +1,148 @@
+{
+  "schema": "m31-screening-cost-runner-supervision-reading-v1",
+  "reviewer": "m31_evidence_audit",
+  "priorInventory": "review/MATHEMATICAL-AND-COST-READING.json",
+  "inheritedSemanticFilesReadCumulative": 7,
+  "inheritedAllowance": 16,
+  "remainingInheritedAllowance": 9,
+  "newInheritedReadsThisPhase": 0,
+  "reads": [
+    {
+      "path": "research/m31-screening-cost-2026-10-17/source/run.cjs",
+      "sha256": "74764d0e32e1d4e24ba8bea42ccef29fd6a1ce28e98233741a1bb04e907a4d3f",
+      "bytes": 11343,
+      "scope": "Full new-cycle source; final correction deltas and syntax-only checks."
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/source/canonical.cjs",
+      "sha256": "7112bccefcf00d85451e0c08ef937f46823e012fc806628a588489d34608b7d5",
+      "bytes": 1175,
+      "scope": "Full new-cycle source; final correction deltas and syntax-only checks."
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/source/supervise.py",
+      "sha256": "053cc97e59830b838d95d73474b8eb597c4b23c1b6783f2555d4db79b9149868",
+      "bytes": 20249,
+      "scope": "Full new-cycle source; final correction deltas and syntax-only checks."
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/source/guardian.py",
+      "sha256": "5c97c5a23556120226fab52955e427144d8ae69beb685e18d667bc6b66e1717a",
+      "bytes": 1892,
+      "scope": "Full new-cycle source; final correction deltas and syntax-only checks."
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/review/RESULT-CONTRACT-DRAFT.json",
+      "sha256": "e0cf786d088a48df8009b89eeceee7726576e2c49c94f8f1a41ba99510f211b7",
+      "bytes": 28871,
+      "scope": "Retained draft already read; reread selected encoding/storage/timing/journal/cap fields."
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/source/result-contract.json",
+      "sha256": "58f2f238b588ae4ee3c3d28d8825c469f24d03b43919e5942cd4bf9124c76c16",
+      "bytes": 34801,
+      "scope": "Encoding/storage/trialProtocol/journal/wireLimits/sourceFiles plus explicit common-positive entry correction; flat inherited scientific schema not reread."
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/source/semantic-reference.py",
+      "sha256": "ee77aab09109d3fba898555dacc4509312813caae4116bb3e1063efd88e3ad2c",
+      "bytes": 39634,
+      "scope": "Only grep matches and lines710-754 for common-entry shape and validate_method call interface; full semantic delta review pending."
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/PROTOCOL.md",
+      "sha256": "5bad475780d0294c097bdc1d5da49059ec9509c523eddbf0393b553acd1bd992",
+      "bytes": 9444,
+      "scope": "Only grep-matching timing/supervision/durability/pinning/budget/publication passages, lines17,21,33,35,37,41,43,47."
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/MODEL.md",
+      "sha256": "a879cae53d83fb8cdbeb4b835cdfabedb072f243127b41ce8041b387c18fe7f1",
+      "bytes": 2214,
+      "scope": "Only grep-matching inherited-model scope sentence, line3."
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/CONTRACT-DRAFT.md",
+      "sha256": "85689663b1662a14366137a3dadc6fa32739aba5720fcd31144f2edfbb2e5dc7",
+      "bytes": 2517,
+      "scope": "Only grep-matching canonical/file-pin/anomaly passages, lines5 and9."
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/prefreeze/runner-before-durability-anomaly-fix.cjs",
+      "sha256": "f896a9f4f41e0ede385efe75fc819e99952179e30b75b3c66616a55a4d0313f7",
+      "bytes": 11061,
+      "scope": "Full final-versus-preserved textual delta."
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/prefreeze/canonical-before-dense-index-fix.cjs",
+      "sha256": "c96a5115d81c760a0fa0070dad204fcb3c0e0fd65dd31db43f757804dcad0d67",
+      "bytes": 1126,
+      "scope": "Full final-versus-preserved textual delta."
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/prefreeze/runner-before-common-projection-fix.cjs",
+      "sha256": "3dd8c89844206ae801f509a35f94e4e9e6d40c5bdad47fc561a529fc17f56aa0",
+      "bytes": 11326,
+      "scope": "Full final-versus-preserved textual delta."
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/prefreeze/pre-durability-supervision/supervise.py",
+      "sha256": "fc16e1228af4954458bbb01dd949502babd32b355ef725e920f406493d9fc2b6",
+      "bytes": 20057,
+      "scope": "Full final-versus-preserved textual delta."
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/prefreeze/pre-durability-supervision/guardian.py",
+      "sha256": "57d25d48a5e59268ed77bc2ba6fe8364e34b46b89c89faba5f8459e235be16a9",
+      "bytes": 1748,
+      "scope": "Full final-versus-preserved textual delta."
+    }
+  ],
+  "syntaxChecks": [
+    {
+      "kind": "node --check",
+      "files": [
+        "source/run.cjs",
+        "source/canonical.cjs"
+      ],
+      "initialPathAttempt": "Both exit127 before parsing; administrative only.",
+      "pinnedRuntimeRetry": "Both exit0; run rechecked after common-projection correction; no imports/evaluation."
+    },
+    {
+      "kind": "ast.parse",
+      "files": [
+        "source/supervise.py",
+        "source/guardian.py"
+      ],
+      "result": "Both passed; no imports/execution/bytecode."
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "research/m31-screening-cost-2026-10-17/review/RUNNER-SOURCE-REVIEW.md",
+      "sha256": "79ac78611e516c5ac76c6e77b641f925cf5803ec3211d1fa4ab7213d5c42871f",
+      "bytes": 4824,
+      "scope": "Authored source-only review."
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/review/SUPERVISION-SOURCE-REVIEW.md",
+      "sha256": "f4b992ec799899aaf2a4c2073358a5d81e576214b4cc06a991583c60d749a97f",
+      "bytes": 3187,
+      "scope": "Authored source-only review."
+    }
+  ],
+  "notPerformed": [
+    "Scientific imports/evaluation",
+    "Generators or numerical probes",
+    "Old suite runs",
+    "Actual supervision or child execution",
+    "External operations",
+    "New agents"
+  ],
+  "notes": [
+    "Parent/author edits reviewed, not performed by this reviewer.",
+    "Protocol author directly confirmed final schema precedence.",
+    "Separate bounded semantic-reference delta review follows; this inventory predates it.",
+    "Self hash excluded; delivered separately."
+  ]
+}
