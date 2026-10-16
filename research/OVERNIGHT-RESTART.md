@@ -1,3 +1,9 @@
+# Current source freeze: exact normalizer reuse
+
+The validator qualification result is publicly verified at10a586963e4786389bd28bef75d0f5063b973ae1 with195pins. The source-only normalizer design is closed. New m31-normalizer-ablation-2026-10-17 has independent static acceptance and a frozen source manifest; no scientific invocation yet. Read its PARENT-SOURCE-DECISION,PROTOCOL,SOURCE-RESTART and actual attempt files. Source must be pushed and exact-public verified before the sole kernel/checker launches. Keep HEAD fixed through both. No new scientific launch at/after23:00UTC16Oct. Latest completed3D remains validator-qualification/viewer; preserve8876. Overallgoal active/incomplete.
+
+---
+
 # Latest completed numerical checkpoint: repaired validator qualified on saved corpus
 
 m31-validator-qualification-2026-10-17 passed its sole allocation:21/21 intended negative tests,4fixed controls,6/6old states revalidated; historical failure remains unchanged. Read its RESTART.md and MILESTONE-SUMMARY.md. First display QA passed224checks; Three.js viewer http://127.0.0.1:8876/research/m31-validator-qualification-2026-10-17/viewer/ replays the same historical flights and shows old/new outcomes separately. All numerical allocations closed. Next is exact-normalizer-reuse source planning, not an allocated numerical successor. Broader goal remains incomplete; preserve8876; cutoff23:00UTC16Oct remains.

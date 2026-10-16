@@ -1,0 +1,13 @@
+# Exact normalizer reuse: source-only decision
+
+Opened 2026-10-16 after exact public verification of the completed validator qualification result at 10a586963e4786389bd28bef75d0f5063b973ae1. This is a new source-only allocation. No numerical execution, module import, profiling, generation, benchmark or mutation evaluation is allocated here. Old closed allocations stay closed.
+
+Question: can lazy reuse of successful source beta and receiver-rotor nu intervals within one immutable method invocation preserve complete output semantics? Identify dependency keys, lifetime, operation order, exceptional behavior and non-mutation. Keep center geometry, coefficient arithmetic, filtering, hierarchy, solver and certificate unchanged. Reuse is a standard optimization, not presumed novelty or a proved bottleneck.
+
+Each of the three existing reviewers may read up to 12 distinct inherited public source/document files for this new desk task and must save exact path/byte/SHA256 inventories. Generated documents in this package are outside the inherited-file cap but must be inventoried separately. Parent has 24 inherited-file slots, including four source files already read during planning (pair-prepared.cjs, methods.cjs, zero-filter.cjs, config.json from m31-moving-admission) and interval.cjs and rational.cjs. Metadata-only inventory/hashing is not scientific evaluation. No new agents or literature retrieval. Previously verified bibliography may be read if relevant.
+
+Deliver a minimal prospective design, explicit source proof obligations and adversarial controls, with an independently challenged decision. A numerical successor requires a separately fixed protocol, new source package, fixed fresh moving seeds/schedule, exact public source verification before execution, bounded paired complete-cost measurement and independent saved-evidence checking. No scientific launch at or after 2026-10-16T23:00:00Z. Do not rush an incomplete design to meet that cutoff.
+
+Physical validity, browser transfer, performance benefit and novelty remain separate unresolved claims. Keep localhost8876 running. Latest numerical Three.js milestone remains the validator-qualification viewer; a source-only decision creates no new flight to animate.
+
+Parent may save a non-executed candidate patch and two draft modules for source review. Syntax checking without import is permitted; these are incomplete standalone drafts (unchanged dependency closure is inherited), not a frozen executable experiment. Reviewers can inspect these generated files outside their inherited-file count. Draft changes do not modify or reopen any historical implementation.

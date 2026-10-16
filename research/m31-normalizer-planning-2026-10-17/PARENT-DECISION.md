@@ -1,0 +1,9 @@
+# Source-only decision: accept the narrow candidate for preparation
+
+The three independent desk reviews support the exact two-file draft under its closed-call ownership assumptions. Source inspection finds no mutation of force operands or relevant constants during synchronous assembly, and successful interval values are frozen. The candidate keeps the same arithmetic expression sites and beta-before-nu exception order, and creates fresh object-keyed maps per method call. This is a conditional source argument, not an empirical result or a general mutable-client API guarantee.
+
+Accept preparation of a separate prospective ablation. Do not execute the drafts here. A new experiment must bind its full source and fixtures, independently validate all scheduled states, compare complete outputs exactly, preserve the qualified validator controls, and measure isolated-worker spawn-to-exit wall time so cache allocation and process cleanup are charged. Method-only timing is secondary. Use four balanced paired repetitions at each of six fixed fresh moving states if a complete source gate is ready before the cutoff. No fresh numerical allocation is created by this desk decision itself.
+
+The proposed application hardware/density/cadence table is a reviewer hypothesis, not a user requirement or measured target. It is not adopted as a performance claim or a coupled-flight configuration. The current exact method remains capped at 180 drones. Reuse is standard memoization; no novelty, primitive bottleneck, speed benefit, physical validation or 5,000-drone capability follows.
+
+The successor may refine the proposed synthetic-control roster before freeze, with documented reasons. Recommendations are design inputs, not evidence that the controls have run. No old source/result is edited, and no old allowance is reopened. If complete independent source review/publication cannot finish before 2026-10-16T23:00:00Z, save the preparation without a scientific launch.
