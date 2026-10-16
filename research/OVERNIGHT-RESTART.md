@@ -12,6 +12,8 @@ Independent quadrature review passed 38 checks; final display suite passed 48 ch
 
 Next-path caution: a suggested fixed-RPM receiver-thrust test is not yet admitted for the existing constant-ideal-actuator-disk-power receiver cubic. RPM, shaft power and ideal actuator-disk power (including throughflow) must be distinguished. Preserve the interpretation recommendation and its correction; no new dataset or model execution is allocated by that suggestion.
 
+Result independently published and verified at `6b87801860ef2380fda9042ec68101f6cc2f3e78`. Exact manifest 11732 bytes, SHA256 `b428ad5ea69099b7a6fea6ab20a516abb9248570a75eb20eb0fccc2d9fb0640e`; all 73 local/committed pins (1020143 bytes) match. Receipt: `research/publication-receipts/m31-source-reference-admission-2026-10-16.json`. The latest bounded next-reference task inspects existing receiver-load compatibility records; no new scientific run is allocated.
+
 ## Latest scientific checkpoint — source-state limitation confirmed
 
 `research/m31-source-accounting-2026-10-16/` completed one separately declared CPU audit after source publication `b515ac7a0b146ebf337431fb492d145d9a43c619`; freeze SHA256 `e343f288205b27e0996a6141db6af20ea4ab2f5be2ab5e0eb3ca5b6cd287eca3` (14 pins). Both exits were 0. Twenty extracted field calls gave exactly 2.5241780354649195 m/s for all five source-motor states at fixed geometry. Profile accounting gives radial squared-speed retention 0.9713664384 and zero faded field at and beyond 2.5 m. This proxy is not measured thrust; the Wolf printed-number comparison is descriptive and supplies no 27 g validation.
