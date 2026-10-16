@@ -1,0 +1,263 @@
+{
+  "schema": "m31-validator-qualification-contract-v1",
+  "cli": [
+    "PYTHON",
+    "-I",
+    "-B",
+    "source/qualify.py",
+    "--config",
+    "PACKAGE/source/config.json",
+    "--manifest",
+    "PACKAGE/source-manifest.json",
+    "--output",
+    "PACKAGE/results/qualification.json",
+    "--root",
+    "REPOSITORY_ROOT"
+  ],
+  "qualificationReportSchema": "m31-validator-qualification-v1",
+  "referenceSchema": "m31-validator-qualification-reference-v1",
+  "referenceIds": [
+    "positive",
+    "distant-zero",
+    "raw-force",
+    "order-incompatible",
+    "run-a-t0",
+    "run-a-t5",
+    "run-a-t10",
+    "run-b-t0",
+    "run-b-t5",
+    "run-b-t10"
+  ],
+  "negativeControls": [
+    {
+      "name": "source-report-binding",
+      "failurePrefixes": [
+        "source-report-binding"
+      ]
+    },
+    {
+      "name": "altered-control-input",
+      "failurePrefixes": [
+        "fixed-control-input-binding"
+      ]
+    },
+    {
+      "name": "altered-prepared-point",
+      "failurePrefixes": [
+        "prepared-operation-graph"
+      ]
+    },
+    {
+      "name": "omitted-positive-entry",
+      "failurePrefixes": [
+        "implicit-zero-nonzero"
+      ]
+    },
+    {
+      "name": "false-zero-active-leaf",
+      "failurePrefixes": [
+        "node-zero-rule",
+        "node-zero-oracle-member"
+      ]
+    },
+    {
+      "name": "altered-positive-coefficient",
+      "failurePrefixes": [
+        "coefficient-reference-containment"
+      ]
+    },
+    {
+      "name": "false-fast-zero-positive",
+      "failurePrefixes": [
+        "filter-zero-oracle-status"
+      ]
+    },
+    {
+      "name": "wrong-fast-zero-branch",
+      "failurePrefixes": [
+        "filter-zero-oracle-branch"
+      ]
+    },
+    {
+      "name": "filter-work-mismatch",
+      "failurePrefixes": [
+        "filter-work-counter-reconstruction"
+      ]
+    },
+    {
+      "name": "raw-force-filter-prepared",
+      "failurePrefixes": [
+        "filter-work-counter-reconstruction"
+      ]
+    },
+    {
+      "name": "raw-force-refusal-status",
+      "failurePrefixes": [
+        "canonical-model-refusal"
+      ]
+    },
+    {
+      "name": "ordering-refusal-witness",
+      "failurePrefixes": [
+        "canonical-model-refusal"
+      ]
+    },
+    {
+      "name": "false-root-one",
+      "failurePrefixes": [
+        "root-defect-corollary",
+        "independent-root-containment"
+      ]
+    },
+    {
+      "name": "altered-candidate",
+      "failurePrefixes": [
+        "candidate-load-identity"
+      ]
+    },
+    {
+      "name": "false-load-box",
+      "failurePrefixes": [
+        "signed-root-load-propagation",
+        "independent-load-containment"
+      ]
+    },
+    {
+      "name": "false-error-zero",
+      "failurePrefixes": [
+        "rotor-error-full-box"
+      ]
+    },
+    {
+      "name": "missing-scheduled-slot",
+      "failurePrefixes": [
+        "scheduled-count"
+      ]
+    },
+    {
+      "name": "reordered-scheduled-slots",
+      "failurePrefixes": [
+        "scheduled-identity-order"
+      ]
+    },
+    {
+      "name": "capture-record-disagreement",
+      "failurePrefixes": [
+        "capture-record-input-disagreement"
+      ]
+    },
+    {
+      "name": "pose-capture-disagreement",
+      "failurePrefixes": [
+        "pose-capture-disagreement"
+      ]
+    },
+    {
+      "name": "false-zero-counter-interception",
+      "failurePrefixes": [
+        "filter-work-counter-reconstruction"
+      ]
+    }
+  ],
+  "negativeControlCount": 21,
+  "fixedBaselineMethodCount": 10,
+  "scheduledDenominator": 6,
+  "scope": "Exposed-corpus validator qualification only; no retroactive pass, fresh replication or transfer.",
+  "provenance": {
+    "newIdentity": [
+      "sourceCommit",
+      "sourceManifestSha256",
+      "configSha256"
+    ],
+    "priorIdentity": [
+      "priorSourceCommit",
+      "priorResultCommit",
+      "priorResultManifestSha256"
+    ],
+    "immutablePrior": {
+      "package": "research/m31-moving-admission-2026-10-17",
+      "sourceCommit": "2a957d2b0bb26e731c8cd184bc13f51f673e9a0d",
+      "sourceManifestSha256": "37a865330bbb86d0aef03dd3de775b830d7398abe69717b80c64860d4a8caa21",
+      "resultCommit": "5a5efeef2d216188fa93a8034c4573d7327c5411",
+      "resultManifestSha256": "e60a5bf356f9f27bf31f79fc3274c0c37675353f1b8b0de20a1a6fc1b69487d8",
+      "resultPublicationReceipt": "research/publication-receipts/m31-moving-admission-result-2026-10-17.json",
+      "resultPublicationReceiptSha256": "246869cd1b867de7a4bfb692f948926eef2aeb696e2185fdcfb89dc2aa3c9758",
+      "checkSha256": "9991d6a3d60d7d0e58f69d0074947b38453013246b2c63ecfa3bf26a7086eb6d",
+      "checkerSourceSha256": "084f4f45aa353f7a7d8adc5c4a78eae4b09ee83fb2119741b01a317225d3fa69"
+    },
+    "newManifestIncludes": "all128priorresultpins, prior source/result manifests, prior public receipt, new package source/docs/reviews; dedupe paths",
+    "gatesBeforeFrozenImports": "exact config; complete new source manifest; exact prior source/result manifest bytes and complete53/128 closures; prior receipt; exact Python runtime; new source environment and exclusive attempt; cutoff; own21-recipe contract",
+    "supervisorOwned": "Exact new source commit/publication receipt/local-and-remote verification, current launch clock, process-group time/RSS/output budget and final closure. Driver independently binds supplied new identity and attempt to its manifest/config and cutoff.",
+    "beforeAfter": "all old source/result closure pins, newsource closure, exact Python executable and exclusive attempt unchanged"
+  },
+  "frozenModules": {
+    "check.py": "084f4f45aa353f7a7d8adc5c4a78eae4b09ee83fb2119741b01a317225d3fa69",
+    "pair-reference.py": "845f52cf350a09d2043934dff3e797a7b7416f4ef5c64beb716104bcd74f38f0",
+    "semantic-reference.py": "ee77aab09109d3fba898555dacc4509312813caae4116bb3e1063efd88e3ad2c"
+  },
+  "reuse": "Explicit frozen module namespace; own copied mutation controller and21-recipe table. No assignment to any frozen module function/global, no old main, no candidate/generator imports or calls.",
+  "revalidation": [
+    "4fixed controls and6scheduled methods",
+    "both original generation records including seed/options/source/callbacks/initial/final/poses/full17state captures",
+    "original fixed schedule,index descriptors/input digests and complete journal/call ledger",
+    "every independent logical pair/preparation/filterzero/hierarchy/certificate/load check",
+    "both run nontriviality including changed edge set per run"
+  ],
+  "nodeControls": {
+    "fixedWitness": {
+      "scene": "positive",
+      "queryIndex": 0,
+      "terminalIndex": 0,
+      "entryIndex": 0,
+      "i": 0,
+      "r": 0,
+      "j": 1,
+      "node": 0,
+      "removedFilterZeros": 1
+    },
+    "corrected": "Replace leaf with false neighbor-zero node exactly as old recipe; additionally decrement only work.filterZeros by removed list length and increment only work.exactScalarCalls by that length. Keep base hierarchy work and all other fields. Invoke full frozen filter wrapper; require node-zero-rule or node-zero-oracle-member.",
+    "regression": "Separate pristine clone with original whole-leaf replacement and unchanged counters; require filter-work-counter-reconstruction. This new regression does not reclassify the old failed control.",
+    "copies": "two independent copies of the original fixed positive method, never sequential edits to one clone",
+    "witnessPolicy": "exact fixed witness only; missing/mismatched witness fails, no later search or substitution",
+    "other19": "same original recipes and expected families; all execute again from saved original records"
+  },
+  "outputs": {
+    "report": "results/qualification.json",
+    "references": [
+      "results/reference/positive.json",
+      "results/reference/distant-zero.json",
+      "results/reference/raw-force.json",
+      "results/reference/order-incompatible.json",
+      "results/reference/run-a-t0.json",
+      "results/reference/run-a-t5.json",
+      "results/reference/run-a-t10.json",
+      "results/reference/run-b-t0.json",
+      "results/reference/run-b-t5.json",
+      "results/reference/run-b-t10.json"
+    ],
+    "scientificFilesOnPass": 11,
+    "exclusive": true,
+    "limits": {
+      "qualificationSeconds": 600,
+      "guardianSeconds": 610,
+      "rssBytes": 1073741824,
+      "scientificOutputBytes": 67108864,
+      "referenceBytes": 33554432,
+      "qualificationReportBytes": 2097152,
+      "metadataLogBytes": 16777216,
+      "combinedOutputBytes": 83886080
+    }
+  },
+  "reportSemantics": {
+    "passed": "complete old/new provenance gates,10baseline records scientifically revalidated, all4fixed controls,21targeted negative controls, all6scheduled states verified/certified and both runs informative, final unchanged pins",
+    "exposedCorpusQualificationPassed": "same boolean as passed",
+    "recordIntegrityPassed": "all reached scientific records,4fixed controls and21negative controls pass",
+    "historicalOriginalPassed": false,
+    "historicalOriginalAdvancement": false,
+    "transferAuthorized": false,
+    "freshReplication": false,
+    "historicalOutcome": "old failure flags and causal control error preserved as pinned facts; never rewritten",
+    "exitCode": "0 only when passed true; otherwise1, preserving exclusive attempt and all produced evidence"
+  },
+  "preparedOnly": true
+}

@@ -1,3 +1,9 @@
+# Current preparation: exposed-corpus validator qualification
+
+The failed moving-state result is publicly verified at5a5efeef2d216188fa93a8034c4573d7327c5411;128pins match. Receipt: publication-receipts/m31-moving-admission-result-2026-10-17.json. New m31-validator-qualification-2026-10-17 is source preparation only:21fixednegative controls and the complete old saved corpus, no new flight/candidate. Read its PROTOCOL and exact source decision before continuation. The old moving-state failure stays closed. No new qualification has executed at this update. Keep8876running. New scientific launch cutoff23:00UTC16Oct remains in force.
+
+---
+
 # Latest checkpoint: moving states individually pass; validator qualification fails
 
 Read [closed allocation restart](m31-moving-admission-2026-10-17/RESTART.md) and [plain-language milestone](m31-moving-admission-2026-10-17/MILESTONE-SUMMARY.md). All six scheduled full flight states passed individual load checks, but only19/20mutation controls reached their required semantic families. Overall passed=false and advancement=false. Preserve both closed scientific attempts and both display attempts. New Three.js recorded-flight viewer: http://127.0.0.1:8876/research/m31-moving-admission-2026-10-17/viewer/ . Source2a957d2b0bb26e731c8cd184bc13f51f673e9a0d was independently publicly verified before execution. A separately frozen saved-evidence validator qualification is a proposed next step, not yet executed. Broader goal incomplete; keep8876running; no scientific launch at/after23:00UTC16Oct.

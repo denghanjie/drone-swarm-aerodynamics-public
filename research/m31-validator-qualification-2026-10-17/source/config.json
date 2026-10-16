@@ -1,0 +1,39 @@
+{
+  "id": "m31-validator-qualification-v1",
+  "launchCutoffUtc": "2026-10-16T23:00:00Z",
+  "limits": {
+    "qualificationSeconds": 600,
+    "guardianSeconds": 610,
+    "rssBytes": 1073741824,
+    "scientificOutputBytes": 67108864,
+    "referenceBytes": 33554432,
+    "qualificationReportBytes": 2097152,
+    "metadataLogBytes": 16777216,
+    "combinedOutputBytes": 83886080
+  },
+  "prior": {
+    "package": "research/m31-moving-admission-2026-10-17",
+    "sourceCommit": "2a957d2b0bb26e731c8cd184bc13f51f673e9a0d",
+    "sourceManifestSha256": "37a865330bbb86d0aef03dd3de775b830d7398abe69717b80c64860d4a8caa21",
+    "resultCommit": "5a5efeef2d216188fa93a8034c4573d7327c5411",
+    "resultManifestSha256": "e60a5bf356f9f27bf31f79fc3274c0c37675353f1b8b0de20a1a6fc1b69487d8",
+    "resultPublicationReceipt": "research/publication-receipts/m31-moving-admission-result-2026-10-17.json",
+    "resultPublicationReceiptSha256": "246869cd1b867de7a4bfb692f948926eef2aeb696e2185fdcfb89dc2aa3c9758",
+    "checkSha256": "9991d6a3d60d7d0e58f69d0074947b38453013246b2c63ecfa3bf26a7086eb6d",
+    "checkerSourceSha256": "084f4f45aa353f7a7d8adc5c4a78eae4b09ee83fb2119741b01a317225d3fa69"
+  },
+  "referenceIds": [
+    "positive",
+    "distant-zero",
+    "raw-force",
+    "order-incompatible",
+    "run-a-t0",
+    "run-a-t5",
+    "run-a-t10",
+    "run-b-t0",
+    "run-b-t5",
+    "run-b-t10"
+  ],
+  "negativeControlCount": 21,
+  "scope": "Exposed-corpus validator qualification only; no retroactive pass, fresh replication or transfer."
+}
