@@ -1,0 +1,36 @@
+{
+  "kind": "independent-exposed-profile-saved-result-review-plan",
+  "sourceCommit": "37750e0ea4d929ac7bb414a7636cfebaea3f3c2a",
+  "sourceManifestSHA256": "d6b3b245699eab623251d11c20377e9b4ff10865c54ebac3a6dc6c40ee9d521d",
+  "independentPypdfVisibleCoordinatesSHA256": "fc9a0bc90dd50912dc95d7a96f5c39ee1089e2ea294164db86656c3b6e0ad09d",
+  "authorResultsAlreadySeen": true,
+  "planSavedBeforeIndependentCalculation": true,
+  "reviewExecutions": 1,
+  "maxCPUSeconds": 30,
+  "maxOutputBytes": 2097152,
+  "domain": [0, 3],
+  "inputPolicy": "Use only the independent pypdf visible original vertices and labeled clipping endpoints; do not read private off-axis paths or the PDF again.",
+  "checks": [
+    "Verify published source-manifest hash and every frozen Git blob against its pin",
+    "Verify result source commit, analysis-source hash, root input hash and independent extraction hash",
+    "Verify curve attribution, original versus clipping semantics, shared support and positive centerlines",
+    "Reconstruct the two independent pypdf polylines and verify every saved union knot and signed difference",
+    "Find maximum absolute discrepancy over the independent union knots and every maximizing knot",
+    "Integrate x times squared difference and x times squared Offboard 2 reference with two-point and three-point Gauss-Legendre on each union interval",
+    "Enumerate every half-centerline intersection and plateau; verify direction and uniqueness without assuming monotonicity",
+    "Verify null experimental confidence intervals and null physical pass threshold"
+  ],
+  "numericalTolerances": {
+    "crossExtractorCoordinates": 1e-6,
+    "savedValuesAbsolute": 1e-10,
+    "twoVersusThreePointGaussAbsolute": 1e-12
+  },
+  "quadratureRationale": "Each profile is affine on a union interval, so both weighted-square integrands are cubic there. Gauss quadrature is independent of the author's polynomial-antiderivative implementation.",
+  "limits": [
+    "Descriptive reanalysis of exposed displayed medians only",
+    "No root analysis imports or original analyzer rerun",
+    "No new physical data, fit, confidence interval, significance or rejection verdict",
+    "No physical validation or novelty claim",
+    "No source paper, figure image, hidden path coordinates or local private paths in public handoff"
+  ]
+}

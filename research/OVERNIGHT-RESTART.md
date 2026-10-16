@@ -4,6 +4,14 @@
 
 Public additive worktree: current repository, branch `codex/m31-audit-2026-10-15`. Preserve the original eight-step roadmap and historical M31 base. Later remote main/DOT at `1336f5c416875a9651f92b58b2ed06649f25b04e` remains separate and untouched. The private workspace, attachments, credentials and chat records must never be published.
 
+## Latest scientific checkpoint — exposed published-profile audit
+
+`research/m31-source-reference-admission-2026-10-16/` completed a separately specified descriptive comparison of Bauersfeld Fig. 7 Offboard 1/2 median curves, after source publication `37750e0ea4d929ac7bb414a7636cfebaea3f3c2a`. Independent pdfplumber/pypdf reconstruction agrees on all 34 visible/clipped knots; off-axis paths and paper images remain private. Maximum normalized gap is 0.2581468313 and radial L2 referenced to Offboard 2 is 0.2406993666. Normalized center medians nearly coincide while unique half-centerline radii differ (0.4487046 / 0.5591574).
+
+Independent quadrature review passed 38 checks; final display suite passed 48 checks after one preserved 404 failure. The new Three.js view plots actual extracted scalar profiles, not fluid simulation; historical Boids replay remains linked. Original source pins/result unchanged, no physical significance, adequacy, motor-response, swarm-feasibility or novelty claim. Read MILESTONE-SUMMARY, RESULT-CLAIM-LEDGER, POSTRUN-RESTART and final manifest; publication receipt stored separately after remote verification. Existing server 8876 retained. No scientific or QA tool session remains active. The overall goal remains active; this bounded campaign is closed.
+
+Next-path caution: a suggested fixed-RPM receiver-thrust test is not yet admitted for the existing constant-ideal-actuator-disk-power receiver cubic. RPM, shaft power and ideal actuator-disk power (including throughflow) must be distinguished. Preserve the interpretation recommendation and its correction; no new dataset or model execution is allocated by that suggestion.
+
 ## Latest scientific checkpoint — source-state limitation confirmed
 
 `research/m31-source-accounting-2026-10-16/` completed one separately declared CPU audit after source publication `b515ac7a0b146ebf337431fb492d145d9a43c619`; freeze SHA256 `e343f288205b27e0996a6141db6af20ea4ab2f5be2ab5e0eb3ca5b6cd287eca3` (14 pins). Both exits were 0. Twenty extracted field calls gave exactly 2.5241780354649195 m/s for all five source-motor states at fixed geometry. Profile accounting gives radial squared-speed retention 0.9713664384 and zero faded field at and beyond 2.5 m. This proxy is not measured thrust; the Wolf printed-number comparison is descriptive and supplies no 27 g validation.

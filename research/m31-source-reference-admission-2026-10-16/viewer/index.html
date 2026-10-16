@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Published wake profiles · M31 research</title><link rel="icon" href="data:,"><link rel="stylesheet" href="style.css">
+<script type="importmap">{"imports":{"three":"../../../outputs/step02b-source/vendor/three.module.js"}}</script></head>
+<body data-binding="pending"><main>
+<nav><a href="../../m31-source-accounting-2026-10-16/viewer/">← Previous source audit</a><span>M31 / Physical reference checkpoint</span></nav>
+<header><p class="eyebrow">Two published hover measurements · One fixed comparison</p>
+<h1>A matching center can hide a different wake.</h1>
+<p class="lead">We compared two published median airflow profiles after accounting for the drones’ size and calculated hover speed. Their normalized center speeds nearly coincide. The surrounding profiles differ.</p></header>
+<p id="status" role="status">Checking the saved evidence…</p>
+<section id="evidence" hidden>
+<div class="metrics"><article><span>Whole-profile discrepancy</span><strong id="l2">—</strong><p>Radially weighted relative L2, with Offboard 2 as the reference. This is a profile metric.</p></article>
+<article><span>Largest normalized gap</span><strong id="max">—</strong><p id="max-location"></p></article>
+<article><span>Half-center-speed radius</span><strong id="widths">—</strong><p>Distance where each displayed curve falls to half its own center value, in units of motor distance.</p></article></div>
+<section class="panel"><div class="section-head"><div><p class="eyebrow">Explore the evidence</p><h2>One radial slice, two measured profiles</h2></div><div class="legend"><span class="first">● Offboard 1 · 0.572 kg</span><span class="second">● Offboard 2 · 1.207 kg</span></div></div>
+<p>Read from left to right: move away from the wake center and watch the air speed decrease. The 3D depth separates the two curves for inspection; it does not represent a third measurement coordinate.</p>
+<div class="controls"><label>Display units<select id="units"><option value="normalized">Published normalized units</option><option value="target">Transfer to Offboard 2 units</option></select></label><label class="check"><input type="checkbox" id="overlay"> Overlay the curves</label><button id="reset" disabled>Reset camera</button></div>
+<div id="scene" tabindex="0" role="img" aria-label="Saved profile graph"></div>
+<p class="caption" id="scene-caption">Static Three.js scientific plot of saved graphical coordinates. Drag to rotate; scroll to zoom. No drone or fluid solver runs here.</p>
+<div class="probe"><label for="probe">Inspect saved radial position</label><input id="probe" type="range" min="0" max="16" step="1" value="2"><output id="probe-output"></output></div>
+<p id="units-explanation"></p></section>
+<div class="reading"><section><h2>What this tells us</h2><p>A single center-speed check could miss differences in how far the airflow spreads. A future approximation needs to preserve the relevant profile, not just its peak.</p><p>The curves come from the same paper that informed our existing wake model. This is a reproducible check of exposed published evidence, with no new fit.</p></section><section><h2>What remains open</h2><p>These are plotted medians from hover experiments, not the original measurement samples. Their statistical uncertainty is unavailable here. We cannot declare the difference physically significant or the model sufficiently accurate.</p><p>This does not validate changing motor commands, shutdown, multiple interacting wakes, tiny drones, or 5,000-drone feasibility.</p></section></div>
+<details><summary>Exact saved values and calculation</summary><p>The first 16 vertices per curve are visible graphical vertices. The endpoint at r/l = 3 is an interpolated plot-clipping intersection, not an extra measurement. Straight lines connect the graphical points. Drawing vertices are not independent trials.</p>
+<div class="table-wrap"><table><thead><tr><th>r/l</th><th>Offboard 1 / UH1</th><th>Offboard 2 / UH2</th><th>Difference 2−1</th></tr></thead><tbody id="rows"></tbody></table></div>
+<p>L2 = √[∫₀³ x(g₂−g₁)² dx / ∫₀³ xg₂² dx]. It is asymmetric, weights outer radii more, and is not thrust error. No statistical interval or physical pass threshold is assigned.</p><pre id="result-json"></pre></details>
+<details><summary>Provenance and reproduction</summary><p>Source: <a href="https://arxiv.org/abs/2403.13321v3">Bauersfeld et al., accepted RA-L manuscript, version 3 (2024)</a>, Fig. 7 at s/l = 3; equations 7–8 and Table I. Colored median lines only; fitted black curve and dispersion bands excluded.</p><p><a href="../PROFILE-PROTOCOL.md">Fixed protocol</a> · <a href="../visible-profiles.json">Extracted graphical coordinates</a> · <a href="../results/result.json">Saved analysis</a> · <a href="../REPRODUCE.md">Reproduce</a> · <a href="../MILESTONE-SUMMARY.md">Plain-language record</a></p><ul id="pins"></ul><p>Checksums detect changed evidence bytes; they do not establish physical truth.</p></details>
+<footer><a href="../../m31-restart-2026-10-15/viewer/">Historical local 3D Boids replay</a><span>The full accuracy–computation research goal remains open.</span></footer>
+</section></main><script type="module" src="app.js"></script></body></html>

@@ -1,0 +1,11 @@
+# Restart after the published-profile audit
+
+Campaign completed: one fixed descriptive analysis, one independent saved-result review, two display-test attempts and final wording/screenshot review. No stochastic samples, tuning or new physical measurements. Source commit 37750e0ea4d929ac7bb414a7636cfebaea3f3c2a and source-manifest.json are immutable. Analysis/source inputs and original result remain unchanged. Do not reopen this campaign or predecessor closed allocations.
+
+Result: maximum gap 0.258146831346001; radial L2 with Offboard 2 reference 0.24069936659546007; unique downward half-centerline crossings 0.4487045906456554 and 0.5591573742129741. Independent review passed 38 checks using independently extracted coordinates and different quadrature. These describe exposed plotted medians; no independent physical validation, statistical verdict or novelty.
+
+Use the new viewer at /research/m31-source-reference-admission-2026-10-16/viewer/ on the retained local server port 8876. It is a static 3D scientific plot, with a separate link to historical local Boids replay. Final result manifest and external publication receipt identify the public checkpoint.
+
+Next research decision: preserve a strict distinction between (a) improving computations under a declared provisional model and (b) validating source/receiver physics against compatible independent observations. This result requires profile-level comparisons; center-only validation is inadequate for these two curves. It cannot identify source actuation or validate source aggregation. Consult review/CONTROL-CONDITION-CORRECTION.md for the next component experiment; the original fixed-RPM recommendation is superseded. The current cubic fixes ideal actuator-disk power, including throughflow, rather than shaft power or RPM. A documented hardware-command-to-nominal-thrust bridge is a separate hypothesis to test. NASA HVAB admission remains unresolved, and no large archive is allocated. Do not turn this bounded audit into an endless additional scan of already exposed curves.
+
+The full research goal remains active and incomplete. No publication submission, paid resource, dependency installation, author contact or permission change was made. Record any future execution as a new prospective question with justified scope; preserve historical evidence and failures.
