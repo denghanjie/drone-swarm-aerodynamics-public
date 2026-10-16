@@ -1,0 +1,45 @@
+{
+  "schema": "m31-filter-cost-method-containment-review-v1",
+  "reviewer": "m31_evidence_audit",
+  "scope": "Independent source-only review of parent-authored methods and separately authored supervisor/guardian; runner self-check is disclosed separately.",
+  "pins": [
+    {
+      "path": "research/m31-filter-cost-2026-10-17/source/run.cjs",
+      "bytes": 11889,
+      "sha256": "3c97c54ed38b2118113d81a99c3f7b01f21aa7fc35afcb04e0a5d161eaf3c4f8"
+    },
+    {
+      "path": "research/m31-filter-cost-2026-10-17/source/methods.cjs",
+      "bytes": 6204,
+      "sha256": "9cc6f8dc3bd82acc873f73e52b520297bcba90dea6985bf67fa96ac38fa450d6"
+    },
+    {
+      "path": "research/m31-filter-cost-2026-10-17/source/supervise.py",
+      "bytes": 22023,
+      "sha256": "4d517a3515f66816b4ca74864147e63cc61aa15af0e2fc8e78aa6c640e4365cb"
+    },
+    {
+      "path": "research/m31-filter-cost-2026-10-17/source/guardian.py",
+      "bytes": 1890,
+      "sha256": "074f3e4921bf94718fd6a9eb5fec83b524d786cf445bc733946c026d4e30eed1"
+    }
+  ],
+  "syntaxOnly": {
+    "run.cjs": "node --check exit 0",
+    "methods.cjs": "node --check exit 0",
+    "supervise.py": "ast.parse success without import",
+    "guardian.py": "ast.parse success without import"
+  },
+  "methodsReview": "No blocking finding in the reviewed current source.",
+  "containmentReview": "No blocking finding within the declared trusted-child, sampled-process-group containment scope.",
+  "repairs": [],
+  "scientificExecution": false,
+  "fullPublicationGatePassed": false,
+  "limitations": [
+    "No runtime containment test, candidate/reference computation, timing measurement, or new numerical result was performed.",
+    "Independent checker review and the publication gate remain pending; this review does not authorize execution.",
+    "Reused model, directed arithmetic and certificate helpers are inherited trust; reading their call paths is not a new proof of all their mathematics.",
+    "Sampling cannot establish a hard instantaneous RSS/filesystem bound or hostile-process isolation; reported scope must remain qualified."
+  ],
+  "runnerContractReview": "RUNNER-CONTRACT-REVIEW.json; 21 source/interface checks passed, no numerical execution"
+}

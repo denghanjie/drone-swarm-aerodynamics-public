@@ -1,0 +1,72 @@
+{
+  "schema": "m31-filter-cost-supervisor-adaptation-reading-v1",
+  "reviewer": "m31_verified_literature",
+  "createdUtc": "2026-10-16T21:10:48.861636+00:00",
+  "inheritedReadCap": 16,
+  "inheritedDistinctPathsReadCumulative": 4,
+  "inheritedCapSatisfied": true,
+  "inheritedInputsCumulative": [
+    {
+      "path": "research/m31-screening-cost-2026-10-17/source/supervise.py",
+      "bytes": 20249,
+      "sha256": "053cc97e59830b838d95d73474b8eb597c4b23c1b6783f2555d4db79b9149868",
+      "readScope": "Full text; primary source adaptation."
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/source/guardian.py",
+      "bytes": 1892,
+      "sha256": "5c97c5a23556120226fab52955e427144d8ae69beb685e18d667bc6b66e1717a",
+      "readScope": "Full text; guardian deadline-only adaptation."
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/runtime-pins.json",
+      "bytes": 248,
+      "sha256": "842b2522133ed499f4706e071b09f3d100c5f4ed3f41d0fd135736c4dc191087",
+      "readScope": "Full JSON text; exact byte copy, no runtime probe."
+    },
+    {
+      "path": "research/m31-filter-design-2026-10-17/source/supervise.py",
+      "bytes": 19730,
+      "sha256": "a09af9c14853fc1440440e25c443163594bafed7f6257b8194ae3fb8208cdf7d",
+      "readScope": "Full text; carry forward exclusive stage allocation and complete prior lifecycle/raw-log pinning."
+    }
+  ],
+  "currentAuthoredFiles": [
+    {
+      "path": "research/m31-filter-cost-2026-10-17/source/supervise.py",
+      "bytes": 22023,
+      "sha256": "4d517a3515f66816b4ca74864147e63cc61aa15af0e2fc8e78aa6c640e4365cb"
+    },
+    {
+      "path": "research/m31-filter-cost-2026-10-17/source/guardian.py",
+      "bytes": 1890,
+      "sha256": "074f3e4921bf94718fd6a9eb5fec83b524d786cf445bc733946c026d4e30eed1"
+    },
+    {
+      "path": "research/m31-filter-cost-2026-10-17/runtime-pins.json",
+      "bytes": 248,
+      "sha256": "842b2522133ed499f4706e071b09f3d100c5f4ed3f41d0fd135736c4dc191087"
+    },
+    {
+      "path": "research/m31-filter-cost-2026-10-17/review/SUPERVISOR-ADAPTATION.md",
+      "bytes": 5263,
+      "sha256": "6dd2b52346374dd4b5babfacba483a30de3c94715ae8deadd59e0c4089182960"
+    }
+  ],
+  "validation": [
+    "AST parse only for new supervisor and guardian",
+    "Exact runtime-pin byte comparison",
+    "Static inherited-source adaptation and required-pin/output/budget reconciliation"
+  ],
+  "notPerformed": [
+    "Scientific imports",
+    "Kernel/checker/supervisor/guardian execution",
+    "Runtime probe",
+    "Numeric experiment or warmup",
+    "Prior-cycle rerun",
+    "New literature retrieval",
+    "Installation",
+    "Commit"
+  ],
+  "nextGate": "Independent containment review, overall new protocol/checker source review, then full published-source verification before any execution."
+}

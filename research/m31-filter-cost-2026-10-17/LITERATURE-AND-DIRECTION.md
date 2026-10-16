@@ -1,0 +1,13 @@
+# Why test this mechanism, and what it could establish
+
+The closed hierarchy comparison located most dense-case cost in combined interaction assembly, without identifying an individual primitive. The subsequent scalar filter established finite branch/interval correctness but measured no production speed. This fresh experiment tests whether those ingredients improve complete cost together. The strongest competing option is an unchanged exact hierarchy with no scalar filter; shared exact work reuse and batching remain later alternatives. No positive coefficient is approximated in either method.
+
+Verified prior sources from the preceding checkpoint are reused, not newly searched or re-reviewed in full:
+
+- Jonathan Richard Shewchuk (1997), “Adaptive Precision Floating-Point Arithmetic and Fast Robust Geometric Predicates,” *Discrete & Computational Geometry* 18, 305–363. DOI: https://doi.org/10.1007/PL00009321 . The reviewed revised author report supports adaptive exact fallback and highlights arithmetic assumptions and overhead.
+- Hervé Brönnimann, Christoph Burnikel and Sylvain Pion (2001), “Interval arithmetic yields efficient dynamic filters for computational geometry,” *Discrete Applied Mathematics* 109, 25–47. DOI: https://doi.org/10.1016/S0166-218X(00)00231-6 . The reviewed author manuscript supports outward interval inclusion, uncertainty and exact fallback; it does not establish speed for this drone model.
+- Guillaume Melquiond and Sylvain Pion (2007), “Formally certified floating-point filters for homogeneous geometric predicates,” *RAIRO - Theoretical Informatics and Applications* 41, 57–69. DOI: https://doi.org/10.1051/ita:2007005 . The reviewed HAL v2 manuscript motivates explicit range/underflow guards. Its homogeneous-predicate theorem is not transferred as a proof of this expression graph.
+
+Exact source URLs, versions, byte hashes, read scopes and limited correction checks are retained in `../m31-filter-design-2026-10-17/review/literature/bibliography.json` and `LITERATURE.md`. Those public records are pinned here; private original papers are not republished. Official ECMAScript arithmetic documentation in that record states the assumed binary64 semantics; runtime conformance is a separate premise. MPFR is not installed or used.
+
+The possible contribution at this stage is evidence about an accuracy–cost tradeoff for this declared model and implementation. A successful finite Node result would justify the next browser/moving-state test, not establish a new general filtering method, physical validity or a completed 5,000-drone coupled simulation.

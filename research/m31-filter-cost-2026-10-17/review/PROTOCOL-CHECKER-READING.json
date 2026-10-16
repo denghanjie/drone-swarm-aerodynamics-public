@@ -1,0 +1,19 @@
+{
+  "reviewer": "m31_protocol_challenge",
+  "phase": "fresh prospective filter-cost checker authoring",
+  "inheritedFileCap": 16,
+  "inheritedDistinctFilesCounted": 4,
+  "inheritedFiles": [
+    {"path":"research/m31-screening-cost-2026-10-17/source/result-contract.json","use":"Read and adapted contract source only"},
+    {"path":"research/m31-screening-cost-2026-10-17/source/check.py","use":"Read and adapted saved checker source only"},
+    {"path":"research/m31-filter-cost-2026-10-17/source/semantic-reference.py","use":"Read copied inherited generic semantic source; unchanged SHA256 ee77aab09109d3fba898555dacc4509312813caae4116bb3e1063efd88e3ad2c"},
+    {"path":"research/m31-filter-cost-2026-10-17/source/pair-reference.py","use":"Reused copied inherited exact oracle; this fresh phase hashed it and reused documented interface without rereading its body; conservatively counted under cap; SHA256 845f52cf350a09d2043934dff3e797a7b7416f4ef5c64beb716104bcd74f38f0"}
+  ],
+  "freshSpecRead": "source/spec.json, declared literal states and metadata only",
+  "candidateFilesNotRead": ["source/binary64-interval.cjs","source/zero-filter.cjs","source/methods.cjs","source/run.cjs"],
+  "numericalResultsRead": [],
+  "sourceChecks": ["AST parsing", "JSON parsing and declared allocation counts", "SHA256 inherited helper copies", "source-only all-pair wire-size arithmetic"],
+  "scientificImportsOrExecutions": 0,
+  "newAgentsSpawned": 0,
+  "notes": "No candidate helper import, fixture evaluation, oracle evaluation, old-suite run, timing probe or after-result tuning. Prefreeze drafts preserved; no commit made."
+}

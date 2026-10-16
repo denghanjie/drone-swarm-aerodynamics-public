@@ -1,0 +1,13 @@
+# Parent source review before publication
+
+Reviewed the local method wrapper, complete runner diff from the prior timing harness, supervisor/guardian changes and lifecycle/accounting paths, and the independent checker's new specification, timing reconstruction, filter metadata validator, corruption recipes and stage orchestration. This is source reasoning, not an experimental pass. Inherited helpers are reused trust, with byte identities recorded separately; the parent's targeted reads do not claim a fresh full independent proof of those helpers.
+
+The candidate pays interval preparation and constants inside the call, using exactly the adapter's admitted words. Both methods use identical hierarchy and load paths. All fast zeros are persisted with branch and source identity; ambiguity takes the original exact query. Exact work counts follow the two explicit branches. There is no shared mutable geometry or warm cache across calls.
+
+The runner's four measured pairs are balanced AB/BA/BA/AB. Summaries divide filtered by hierarchy, take the median of paired ratios, and apply the stated <=0.9 and >=3/4 rule. The ratio of medians is separately named. The first measured records are retained regardless of speed; all 60 call digests/work and 80 journal events remain accountable. Input ingestion and digest/serialization are excluded from method time but separately recorded; this is not complete process wall time.
+
+The checker validates filter metadata against its independently regenerated all-pair oracle before projecting into the unchanged full hierarchy validator. Exact branch identity, leaf membership, ordering/disjointness and work reconstruction prevent a claimed zero from bypassing the mathematical check. The full returned coefficient/root/load boxes and original error tests remain in the inherited core. Three additional controls attack the new metadata alongside the 15 adapted controls. Practical-benefit false is a valid result separate from scientific qualification.
+
+All 19 source files passed the appropriate Node syntax, Python AST or JSON parsing check. A literal-only check verified scene sizes, 422,560 pair count, 17-state shape, IDs, quaternion slots and rotor-force strings. It did not convert/evaluate the model or run a fixture. No scientific imports or runtime probes occurred.
+
+No blocking issue was identified in these inspected paths. Final independent protocol/checker review, exact source freeze/publication and runtime/input/source gates are still required before the sole scientific allocation. Resource limits are rejection limits, not promises of feasibility. Physical validity, novel contribution and moving browser performance remain unproved.

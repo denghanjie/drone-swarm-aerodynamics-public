@@ -1,0 +1,53 @@
+{
+  "schema": "m31-filter-cost-source-review-reading-v1",
+  "reviewer": "m31_evidence_audit",
+  "freshInheritedPathCap": 16,
+  "distinctPriorPackageContentPaths": 5,
+  "priorPackageContentReads": [
+    {
+      "path": "research/m31-screening-cost-2026-10-17/source/run.cjs",
+      "scope": "Full source; implementation base, no import or execution."
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/source/result-contract.json",
+      "scope": "Broad source read; displayed controls portion was truncated; not claimed as complete contract review."
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/source/methods.cjs",
+      "scope": "Source diff against current method; changed sections and context only."
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/source/supervise.py",
+      "scope": "Source diff against current supervision; changed sections and context only."
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/source/guardian.py",
+      "scope": "Source diff against current guardian; deadline change and context only."
+    }
+  ],
+  "currentPackageReusedSourceReads": [
+    "research/m31-filter-cost-2026-10-17/source/zero-filter.cjs",
+    "research/m31-filter-cost-2026-10-17/source/binary64-interval.cjs",
+    "research/m31-filter-cost-2026-10-17/source/tree.cjs",
+    "research/m31-filter-cost-2026-10-17/source/pair-prepared.cjs",
+    "research/m31-filter-cost-2026-10-17/source/loads.cjs"
+  ],
+  "conservativeInheritedContentCountIncludingCurrentReusedCopies": 10,
+  "currentPackageNewSourceReads": [
+    "methods.cjs",
+    "run.cjs",
+    "spec.json (header/tail and family metadata)",
+    "result-contract.json (full source in segmented reads; final interface reviewed)",
+    "supervise.py",
+    "guardian.py"
+  ],
+  "otherCurrentPackageReads": [
+    "PROTOCOL.md",
+    "REPRODUCIBILITY.md",
+    "runtime-pins.json",
+    "review/SUPERVISOR-ADAPTATION.md",
+    "review/INDEPENDENT-CHECKER-DESIGN.md"
+  ],
+  "discovery": "Ancestor AGENTS.md candidates and recursive research AGENTS.md inventory returned none. Runtime-path inventory was filename-only.",
+  "executionBoundary": "No scientific file imported or executed. node --check used for run.cjs and methods.cjs; Python ast.parse used for supervise.py and guardian.py. Source text editing, JSON metadata parsing and hashing only."
+}
