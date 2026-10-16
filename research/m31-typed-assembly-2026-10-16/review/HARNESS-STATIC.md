@@ -1,0 +1,45 @@
+# M31 typed-assembly harness: source-only adversarial review
+
+Date: 2026-10-16. Reviewer: `m31_evidence_audit`. Status: **no remaining blocking source finding in the reviewed harness, controls, and supervisor**. This is a prospective source assessment, not a successful-execution or scientific-result claim.
+
+## Scope and restrictions
+
+Reviewed `source/experiment.cjs`, `source/controls.cjs`, and `source/run.py` against `PROTOCOL.md`, `config.json`, and `SCHEMA.md` under `research/m31-typed-assembly-2026-10-16` in `[repository]`. Read the relevant unchanged simulator and candidate kernel source to trace generation, query timing boundaries, and storage ownership. No imports, fixture/control execution, simulator execution, target generation, scientific evaluation, independent checker execution, or benchmark was performed. No repository files were edited by this review. Other reviewers cover the mathematical kernel and independent NumPy checker.
+
+## Reviewed source identity
+
+SHA-256 values read after the corrections below:
+
+| File | SHA-256 |
+| --- | --- |
+| `source/experiment.cjs` | `aedf1e6bf6548f344f4af2822f05c06b5289a2f05117ac22bf5f2ba69ef8239f` |
+| `source/controls.cjs` | `2b228b5d24542979896d25805265923d82468394a6d607d11c4e8c6449de028b` |
+| `source/run.py` | `cedddb9dfa2ee8f4bee36dc9dc0b330dc4e8ebf0b3595b1e559e6ac56ff761c1` |
+| `config.json` | `41f4a5c7743f3647ffbcd34343f942e2b56ba1fefd895586e388830bf68cafd8` |
+| `PROTOCOL.md` | `52cbc9a307353b70e91f0a594cc70d7769ed53d75c04bac8dcb26a148deb5f3c` |
+| `SCHEMA.md` | `a09cff6daaeeebfb867c0bbb0cb13e0ff0b0fd5751f4de2800c79867f9b2c306` |
+
+Review applies to these bytes. Final source-manifest closure, committed-source identity, publication, and remote verification remain the dispatcher's separate gates. The unchanged simulator's selected and transitive dependencies must be in that closure; source inspection observed its physics, grid, geometry, factory, wall-filter, and selected factory-wide JavaScript dependency paths.
+
+## Findings resolved before closure
+
+1. **Rejected target evidence:** a completed rejected build is now persisted before qualification exits. `persist(id,label,q,null)` retains symbols and available CSR arrays, the complete graph/admission/certificate/metadata, and an explicit null solution. `matrixHash` tolerates absent `aa`; persistence omits that unavailable binary artifact rather than dereferencing null.
+2. **Ownership coverage:** the `extraBuilds` record contains input tokens and complete bundle literals for all four frozen extra builds. The retained L/T planes-66 arrays are checked for full backing-store extent and cross-array independence before the extra builds, and each extra build is checked against all retained storage. Literal retained before/after values and full17 inputs must remain unchanged. Returned offsets, sources, K, a, and symbols are covered. Prepared point storage is separately allocated by source but is not part of the returned-storage assertion.
+3. **Comparison completeness and input integrity:** qualification and timed comparisons now evaluate `fullGraph`, including order/depth, outside timing. All full17 target input bytes must match the original generated snapshot after every qualification and timed query. Matrix fingerprints intentionally retain the schema's smaller graph projection; full graph equality is a separate exact assertion.
+4. **Supervisor end-of-process caps:** a child could previously exceed log or aggregate size caps and exit between monitoring samples. The current wrapper measures final aggregate directory bytes, combined supervisor log bytes, and elapsed wall time after `wait()` and makes any excess unsuccessful. It also checks the projected size including its own serialized run record. These checks preserve the actual child return code and do not launch another child or monitoring attempt.
+
+## Supported by static inspection
+
+- **Frozen generation and retention:** the exact three fresh case IDs, seeds, sizes, and two-second horizon are fixed in config. The wide factory environment is set before the unchanged simulator import. All full17 initial/final states, 21 individual pose frames at 0.1-second cadence, and their concatenation are retained. Completion requires initial bytes to match the returned initial state, the expected configuration, end time, no failure or stop reason, cadence/streaming metadata, exact frame count/times/widths, and exact final-pose correspondence. A failed completion check ends the campaign without replacement states. All three generation checks finish before target qualification begins; all target qualifications finish before any timed calls.
+- **Qualification and admission:** A/L/T are each built once with full symbols and solved with the common ordered solver on every admitted fresh state. Rejection or descending-ineligibility stops the campaign. L/T must match A's symbols, CSR order and values, input/admission/full graph/certificate/counters, ordinary Lmax, solved values, residual map, work, termination and residual values. Exact finite numeric equality uses `Object.is`. A's self-comparison also rejects nonfinite numerical outputs and excessive residuals. No tolerance relaxation or alternate target/method is introduced.
+- **Controls:** 24 literal cases cover the inherited radius/cell/coarse/invalid/near-field/duplicate semantics, plus planes-62/64/66. Their expected positive counts 3,844/4,096/4,356 span the 4,096-entry typed chunk boundary. Four further interleaved L/T dense/sparse builds exercise retained-array ownership. Full input tokens preserve NaN, Infinity and signed zero. Controls have no scientific solve or timing calls. Nonfinite metadata uses the declared JSON-null representation.
+- **Fair timing schedule:** the nine warmups and six measured blocks yield 54 measured calls and 63 total full queries. Each case sees all six A/L/T permutations exactly once, and block-level case order rotates. Queries include the declared build/setup/solve/residual/checksum work; persistence, cryptographic hashes, full equality checks and full-symbol tensor output are outside query timing. The common generation/qualification/control work remains inside the overall candidate allocation. A remains the immutable measured historical anchor; T/L is the primary assembly-package contrast.
+- **Raw timing preservation:** each completed query's raw time and phase record is written exclusively before equality validation, full-graph comparison, matrix/solution hashing, or full17 input integrity checking. The validated record links to its raw pin. A failed numerical comparison retains its output bundle before failure. Transient successful timed arrays are not all retained; their saved assertions and hashes cannot independently reconstruct them, as the schema already states.
+- **Budget and failure discipline:** normal candidate scientific writes enforce 184 MiB, reserving 8 MiB within the 192 MiB absolute candidate allocation for failure records. Symbol bundles have the declared compressed cap; positive-term limits are in the frozen kernel. Cooperative guards are called around scientific stages and during generation frames. Supervisor wall/RSS/log/directory limits, exclusive candidate/review locks, exception phases, real return codes and cleanup outcomes are recorded. A monitor error while the child is alive fails closed. A monitor attempt racing confirmed child exit is recorded as an exit race without another attempt. Success requires exit zero and absence of supervisor exception, termination, cleanup error and live-child monitor errors. Partial files are not removed.
+- **Prospective decision:** per-case paired T/L and T/A criteria, strict-win count and two required N5000 cases are fixed before results. This review does not anticipate whether the criteria will pass or whether either allocation will complete.
+
+## Interpretation limits retained
+
+The 0.2-second external samples and cooperative guards may overshoot; final checks establish acceptance/failure, not hard real-time containment. Final artifact hashing and run-record serialization occur after the recorded supervisor elapsed measurement. Logical typed-byte capacity/copy accounting does not establish actual JavaScript heap, garbage-collection overhead, or peak process memory. Successful source checks do not establish valid host admission, runtime completion, valid independent numerical review, or a speedup.
+
+The fresh inputs remain one initialization family with a two-second airflow-off flight and two N5000 seeds. The coupled aerodynamic loads are not fed back into these trajectories. Exact same-runtime A/L/T agreement and the independent numerical tolerances are numerical verification only, not physical validation, general-population evidence, a novelty result, publication acceptance, or evidence for the unresolved full live 5000-vehicle browser goal. Six within-process timing repeats are not independent swarm trials. Preserve failed or incomplete evidence and apply the frozen decision without a seed, threshold, chunk-size, or repetition search.
