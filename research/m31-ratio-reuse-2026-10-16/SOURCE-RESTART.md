@@ -1,0 +1,5 @@
+# Prospective restart
+
+At initial source preparation: no target imports/calculation/control execution. The only allocation is six paths (three full repetitions and three conditional reuse), plus one independent saved-only review. Before launch, finish static review, privacy scan, source freeze, push, exact remote manifest retrieval and all committed/local pin checks. Keep HEAD fixed for both invocations. Inspect permanent results/{candidate,review}-invocation.lock before action. No retries after consumed locks, no source edits after freeze, no reopening prior campaigns.
+
+After terminal candidate evidence, execute the frozen independent reviewer once. Retain failures and distinguish an adequate experiment from a successful approximation. Save Three.js raw-bound replay, QA, plain-language summary, claim/literature ledger, decision and restart; publish privacy-checked result and verified receipt. Keep localhost server 8876. Overall goal remains active/incomplete. Historical expired windows are historical; this cycle has its own explicit caps.

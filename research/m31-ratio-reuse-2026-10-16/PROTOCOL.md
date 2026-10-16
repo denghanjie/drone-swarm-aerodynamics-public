@@ -1,0 +1,62 @@
+# Prospective experiment: reuse full rotor-load ratios for 10 milliseconds
+
+## Question, status and scope
+
+Can a fixed 10 ms reuse interval preserve the exposed 16-drone full-wrench trajectory within declared numerical tolerances while reducing expensive joint-query calls? Previous force/moment ablation showed that deleting added aerodynamic moments changes this trajectory substantially. We therefore retain full force and moment, and test stale interaction ratios rather than a force-only approximation. This is a new feedback-motion question, distinct from closed M28 prescribed-kinematics cadence tests. It uses one already-exposed seed and cannot establish generalization, novelty, physical validity, real-time performance or a 5,000-drone result.
+
+All target calculations, including controls and imports of scientific modules, are forbidden until source, reviewer, dependencies and references are frozen, pushed and verified against the exact remote source manifest. Syntax/AST parsing and static review only before freeze. Earlier experiments remain closed. Historical overnight cutoffs are not reopened; this is a separate bounded cycle under the current continuation authorization.
+
+## Fixed experiment and mechanics
+
+Maximum six paths: first the full coupled reference at integration steps 0.005, 0.0025 and 0.00125 s; conditional on reference completeness, exact repetition and sampled refinement, the reuse arm at the same three steps. Both arms use 16 drones, seed 260201, duration 2 s, original local 3D separation/alignment/cohesion, shared route/avoidance and the original 100 Hz controller. There are no imposed individual tracks or flat-height constraint. Each arm evolves using its own positions, orientations, velocities, motor states and commands. Initial states match; subsequent commands need not match between arms.
+
+Full reference rebuilds geometry and solves the inherited steady source-total/ideal-power four-rotor closure at each globally synchronized projected RK4 stage. Physics parameters, controller, aerodynamic kernel, interaction ordering and guards are inherited unchanged. This closure, moving-pose extension and receiver law remain provisional physical assumptions.
+
+Reuse stores each solved root `witness.rotors[i][r].x` directly in an immutable per-path cache. It does not recover roots through a rounded division. At an intermediate state it computes rotor load `T[i,r] = current_nominal_motor_state[i,r] * cached_x[i,r]`. It assembles the full effective-minus-current-nominal force, rotates the collective force using the current quaternion, and applies the roll/pitch moment at current body lever arms. Nominal yaw, gyroscopic terms and motor lag remain. This is a synthetic lagged-ratio model, not a physically validated wake-memory model. No other arm supplies states, commands or loads. No predictors, adaptive cadence, alternative seed, N64 expansion or browser/GPU attempt is allocated.
+
+## Exact event, controller and sample ordering
+
+Initial commands are computed before the t=0 refresh. At t=0 a fresh solve creates the cache, with no left value; its right evaluation supplies the first sample. The existing initial controller update is retained before the first step. Within an RK interval every stage, including k4 at a right refresh boundary, uses the old cache. After step acceptance and contact checks, at every 10 ms boundary:
+
+1. Evaluate old-cache LEFT loads on the accepted state and old commands.
+2. Perform a fresh joint solve at exactly that state and those commands.
+3. Store its roots, then evaluate RIGHT loads on the same state/commands.
+4. Take any scheduled positive-time saved sample from LEFT, before the next controller update.
+
+The next loop updates the controller, as in the reference. Saved samples occur every 100 ms, including 0 and 2 s. All positive reuse samples use LEFT; t=0 uses RIGHT. Thus refreshing cannot conceal the stale load discrepancy in the saved load observable. States at left/fresh/right are identical accepted states. The terminal 2 s refresh is audit-only and never affects propagation. All event evaluations, commands, states, roots, errors and sides are saved. No extra 10 ms reference queries are added.
+
+Cached stages validate finite states, unit quaternion, positive nominal motor states, valid roots and cache age in [0,10 ms] with 1e-12 numerical allowance. Current geometry, admission, descending order and closure residual are not evaluated at ordinary cached stages and their metadata are explicitly null. Old residuals are never presented as current residuals. Reviewer checks geometry at all refresh events and captured stages, which does not establish domain validity between them. No new tilt ceiling is introduced.
+
+## Verification, observables and gates
+
+Inherited six analytic controls run once plus identity-root, current-nominal scaling/cache-immutability and cache-age and nonfinite-cache rejection controls. Identity roots should exactly recover the nominal derivative. Directly recomputing a cached load immediately after refresh must match fresh loads within 1e-12 in the normalized wrench metrics.
+
+All three full-reference paths must reproduce every saved t, state, command, rotor load, modeled/applied correction, derivative, geometry witness and group summary from the three pinned prior ablation records exactly as JSON numbers/structure. New metadata and timing are excluded. A mismatch skips reuse. These are repetition controls, not independent experimental replicates.
+
+Sampled adjacent-step discrepancies are: maximum drone position norm (m), velocity norm (m/s), sign-invariant full quaternion orientation distance (rad), maximum per-rotor load difference divided by nominal hover load mg/4, and body-rate norm (rad/s). Tolerances respectively are 0.001, 0.001, 0.0017453292519943296, 0.001 and 0.001. Each arm passes refinement only if medium/fine discrepancy is within tolerance and no larger than 0.75 times coarse/medium discrepancy, unless BOTH are below 1% of tolerance. This exemption is resolution context, not observed numerical order or a rigorous error bound.
+
+Approximation gates compare full/reuse at each matching step, using the same five tolerances. **All three step-size comparisons must pass**, a deliberately stricter condition than checking only the finest. These tolerances are prospective engineering screens tied to the inherited numerical resolution targets, not empirically justified physical accuracy requirements.
+
+At every positive refresh, compare LEFT versus fresh on the same accepted state. Report maxima for per-rotor discrepancy divided by mg/4, collective-force vector discrepancy divided by mg, and roll/pitch-moment vector discrepancy divided by mgR, where R = sqrt(2)*0.028 m is the motor-arm radius. Each tolerance is 0.001. All three paths must pass all three event-error gates. Also report post-refresh RIGHT/fresh errors, which must be <=1e-12. A small collective force error cannot conceal differential rotor/moment error.
+
+Report each gate, maximum, grid discrepancy, path completion, event count and stage count separately. `allocationPass` means paths/reference/refinement/post-refresh identity are adequate for this numerical comparison. `approximationPass` additionally requires every trajectory and event-error gate. An approximation miss does not halt the remaining planned reuse grids. No thresholds are relaxed after results. If integrity/refinement fails, keep outcomes diagnostic and require a separately frozen repair experiment. If integrity/refinement passes but approximation misses, reject this fixed 10 ms candidate for the declared screen. If all pass, mark eligible for a separately planned larger/fresh test; no automatic expansion or speedup claim.
+
+## Failure and resource accounting
+
+One candidate invocation with 300 s external wall cap, 280 s cooperative guard, 768 MiB RSS; one saved-only independent reviewer invocation with 120 s and the same RSS cap. Aggregate scientific artifacts cap 96 MiB, including supervisor/reviewer outputs; normal candidate write allowance 88 MiB reserves 8 MiB for failure evidence. Logs cap 4 MiB. The prospective budget increased from the initial source-only 64 MiB proposal to 96 MiB before execution, because storing 603 complete refresh witnesses materially increases evidence size; three old full paths alone occupy 10,067,919 bytes. This is not a post-observation extension.
+
+Use exclusive immutable invocation locks. No retry, pilot, seed tuning, extra grids or completion of omitted terminal stages. A hard external termination cannot execute candidate finally: only previously written path files, logs and the external supervisor record are guaranteed to survive. In-memory active-path diagnostics may be lost; no claim of complete failure-prefix retention follows in that case. Per-path model/contact failure saves the accepted prefix and fixed other diagnostic paths may proceed; global RSS/wall/storage failure closes the campaign. Stage records distinguish projection failure from an entered evaluator via `evaluationAttempted`; counts/final accepted state/time are finalized even on global interruption. Retain full failure records where possible and explicitly label compact-only retention if the reserved budget cannot hold the active record.
+
+Complete-path joint-query plan: full integration 11,200 calls plus 63 endpoint calls; reuse 603 refresh calls (600 propagation refreshes including t=0, plus three terminal audits); total 11,866. A reuse path has 4*steps + 401 cached applications (initial right, then 200 left/right pairs), totaling 12,403 for the three paths; eight synthetic cached-control attempts are separate. Compact cooperative-failure retention includes the last two events so a rejected refresh retains the preceding cache. Counting calls is not counting completed root solves in a failure path and is not measuring speedup. Record attempts and statuses. Analysis/control arithmetic and independent reconstructions are additional work, outside this candidate joint-query count.
+
+Timing/RSS are resource accounting only: one instrumented run cannot establish performance. The previous approximately 475 ms 5,000-drone query is incompatible with a 10 ms compute budget; this small accuracy experiment does not change that evidence.
+
+## Independent scrutiny and visibility
+
+Freeze Python/NumPy reviewer with the candidate. It reads saved data only, independently reconstructing geometry, roots, load assembly, body derivatives, cached multiplication, event errors, schedules, 100 ms endpoints, exact old-reference equality and selected first/last RK stages. Check projected RK assembly from saved slopes, not full reintegration. There are 48 captured global stages: 24 full and 24 reuse. Additional current-geometry checks at captured cached stages are reviewer reconstructions, not missing candidate queries. Scalar diagnostics at other stages and candidate swept-contact checks do not establish independent continuous safety. Assertion count is not a count of experiments.
+
+Save candidate/reviewer outputs, limits, integrity records, all gates and failures. Create a Three.js paired replay bound to raw hashes and using exact saved poses/common spatial bounds; it runs no scientific solver. Clearly show a failed approximation if observed. Preserve the original eight-step framework: this checkpoint belongs to model verification and approximation/scaling evaluation, not final physical validation. Save digestible summary, ledger, next decision and restart record; privacy-check, commit/push and verify result publication. Keep server 8876 running.
+
+## Literature and inference limits
+
+Use previously verified-scope Reynolds (1987) for separation/alignment/cohesion and Bauersfeld et al. arXiv:2403.13321v3 for inherited hover-jet shape motivation. Specific access/scope records are in the pinned motion-feedback literature ledger. Neither validates our closure, receiver, moving orientation or ratio reuse. No newly acquired source or measurement is claimed. Conventional zero-order holding motivates the implementation; we claim no novel method. This is a deterministic exposed-seed mechanism screen: no population confidence interval, seed-level statistical inference, physical-validation, stability, safety, novelty or real-time claim. Before a publication claim or stalled-method redesign, separately verify the relevant closest literature and physical evidence.

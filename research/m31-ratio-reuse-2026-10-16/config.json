@@ -1,0 +1,84 @@
+{
+  "kind": "prospective-full-wrench-ratio-reuse",
+  "cases": [
+    {
+      "id": "boids16",
+      "n": 16,
+      "seed": 260201,
+      "duration": 2,
+      "command": "local-boids",
+      "conditionalMode": "reuse10ms"
+    }
+  ],
+  "timesteps": [
+    0.005,
+    0.0025,
+    0.00125
+  ],
+  "modes": [
+    "coupled",
+    "reuse10ms"
+  ],
+  "controlDt": 0.01,
+  "sampleDt": 0.1,
+  "tolerances": {
+    "position": 0.001,
+    "velocity": 0.001,
+    "attitude": 0.0017453292519943296,
+    "rotor": 0.001,
+    "bodyRate": 0.001
+  },
+  "refinementRatio": 0.75,
+  "roundoffFraction": 0.01,
+  "residualLimit": 1e-09,
+  "sourceReceiverLimit": 2e-09,
+  "identityTolerance": 1e-12,
+  "limits": {
+    "candidateWallSeconds": 300,
+    "reviewWallSeconds": 120,
+    "candidateCooperativeSeconds": 280,
+    "rssBytes": 805306368,
+    "evidenceBytes": 100663296
+  },
+  "references": [
+    {
+      "case": "boids16",
+      "mode": "coupled",
+      "dt": 0.005,
+      "path": "research/m31-force-ablation-2026-10-16/results/boids16-coupled-0.005.json",
+      "sha256": "3f4fd16d65576be639b488ddda98423b82a8bd5c74d92a93b8ae3898329578f5",
+      "bytes": 2444177
+    },
+    {
+      "case": "boids16",
+      "mode": "coupled",
+      "dt": 0.0025,
+      "path": "research/m31-force-ablation-2026-10-16/results/boids16-coupled-0.0025.json",
+      "sha256": "25284d0565463b390c9174fc2051dbaff447b64f70612969fe8128c071d4c73a",
+      "bytes": 3126799
+    },
+    {
+      "case": "boids16",
+      "mode": "coupled",
+      "dt": 0.00125,
+      "path": "research/m31-force-ablation-2026-10-16/results/boids16-coupled-0.00125.json",
+      "sha256": "2288c5161858dbbe32dbfc7bc5bb8b30ed26006bc5a89e3eef1572f6570ed4fb",
+      "bytes": 4496943
+    }
+  ],
+  "refreshDt": 0.01,
+  "sampleSide": "initial-right-positive-left",
+  "approximationTolerances": {
+    "position": 0.001,
+    "velocity": 0.001,
+    "attitude": 0.0017453292519943296,
+    "rotor": 0.001,
+    "bodyRate": 0.001
+  },
+  "eventErrorTolerances": {
+    "rotor": 0.001,
+    "force": 0.001,
+    "moment": 0.001
+  },
+  "momentLengthScale": "motor-arm-radius"
+}

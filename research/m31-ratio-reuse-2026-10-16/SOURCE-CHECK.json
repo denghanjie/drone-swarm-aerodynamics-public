@@ -1,0 +1,13 @@
+{
+  "scope": "New ratio-reuse source package; existing pinned dependencies retain prior scope",
+  "filesScanned": 17,
+  "patterns": [
+    "private_paths",
+    "secrets",
+    "private_contact"
+  ],
+  "matches": [],
+  "targetExecutionsBeforeFreeze": 0,
+  "syntaxOnlyChecks": "Node --check and Python ast.parse; no scientific imports/evaluations",
+  "sanitization": "Reviewer scratch/repository absolute path prefixes replaced with public relative labels; scientific source/results unchanged."
+}
