@@ -1,0 +1,2874 @@
+{
+  "schema": "m31-coupled-cost-saved-review-v1",
+  "pass": false,
+  "complete": false,
+  "checkCount": 448,
+  "passedChecks": 234,
+  "errors": [
+    "evidence.absent",
+    "evidence.complete",
+    "constants.mg",
+    "constants.arm",
+    "constants.radius",
+    "constants.rho",
+    "constants.A",
+    "constants.R",
+    "constants.c.D",
+    "constants.c.decay",
+    "constants.c.spread",
+    "constants.c.origin",
+    "constants.c.minDown",
+    "constants.c.neighbor",
+    "constants.c.nearRad",
+    "constants.c.downFade",
+    "constants.c.downCut",
+    "constants.c.radFade",
+    "constants.c.radCut",
+    "constants.c.induced",
+    "constants.c.sqrt2minus1",
+    "candidate.supervisor-success",
+    "candidate.external-sampled-RSS",
+    "candidate.external-RSS-samples-present",
+    "candidate.internal-sampled-RSS",
+    "candidate.RSS-unit-semantics",
+    "controls.fixed-coverage-order",
+    "control.radius-0-below.review-error",
+    "control.radius-0-exact.review-error",
+    "control.radius-0-above.review-error",
+    "control.radius--6-below.review-error",
+    "control.radius--6-exact.review-error",
+    "control.radius--6-above.review-error",
+    "control.cell-below.review-error",
+    "control.cell-exact.review-error",
+    "control.cell-above.review-error",
+    "control.signed-zero.review-error",
+    "control.coarse-origin.review-error",
+    "control.coarse-translated.review-error",
+    "control.dense-16.review-error",
+    "control.span-256.review-error",
+    "control.span-nextUp256.review-error",
+    "control.far-invalid258.review-error",
+    "control.nonfinite-nan.review-error",
+    "control.nonfinite-infinity.review-error",
+    "control.overflow-span.review-error",
+    "control.near-field.review-error",
+    "control.duplicates.review-error",
+    "qualification.fixed-coverage-order",
+    "n1000-t20.all.review-error",
+    "n1000-t20.grid.review-error",
+    "n5000-t20.all.review-error",
+    "n5000-t20.grid.review-error",
+    "n5000-t60.all.review-error",
+    "n5000-t60.grid.review-error",
+    "n5000-t180.all.review-error",
+    "n5000-t180.grid.review-error",
+    "timing.evidence-count-140",
+    "timing.raw-and-validated-file-count",
+    "call.0.review-error",
+    "call.1.review-error",
+    "call.2.review-error",
+    "call.3.review-error",
+    "call.4.review-error",
+    "call.5.review-error",
+    "call.6.review-error",
+    "call.7.review-error",
+    "call.8.review-error",
+    "call.9.review-error",
+    "call.10.review-error",
+    "call.11.review-error",
+    "call.12.review-error",
+    "call.13.review-error",
+    "call.14.review-error",
+    "call.15.review-error",
+    "call.16.review-error",
+    "call.17.review-error",
+    "call.18.review-error",
+    "call.19.review-error",
+    "call.20.review-error",
+    "call.21.review-error",
+    "call.22.review-error",
+    "call.23.review-error",
+    "call.24.review-error",
+    "call.25.review-error",
+    "call.26.review-error",
+    "call.27.review-error",
+    "call.28.review-error",
+    "call.29.review-error",
+    "call.30.review-error",
+    "call.31.review-error",
+    "call.32.review-error",
+    "call.33.review-error",
+    "call.34.review-error",
+    "call.35.review-error",
+    "call.36.review-error",
+    "call.37.review-error",
+    "call.38.review-error",
+    "call.39.review-error",
+    "call.40.review-error",
+    "call.41.review-error",
+    "call.42.review-error",
+    "call.43.review-error",
+    "call.44.review-error",
+    "call.45.review-error",
+    "call.46.review-error",
+    "call.47.review-error",
+    "call.48.review-error",
+    "call.49.review-error",
+    "call.50.review-error",
+    "call.51.review-error",
+    "call.52.review-error",
+    "call.53.review-error",
+    "call.54.review-error",
+    "call.55.review-error",
+    "call.56.review-error",
+    "call.57.review-error",
+    "call.58.review-error",
+    "call.59.review-error",
+    "call.60.review-error",
+    "call.61.review-error",
+    "call.62.review-error",
+    "call.63.review-error",
+    "call.64.review-error",
+    "call.65.review-error",
+    "call.66.review-error",
+    "call.67.review-error",
+    "call.68.review-error",
+    "call.69.review-error",
+    "call.70.review-error",
+    "call.71.review-error",
+    "call.72.review-error",
+    "call.73.review-error",
+    "call.74.review-error",
+    "call.75.review-error",
+    "call.76.review-error",
+    "call.77.review-error",
+    "call.78.review-error",
+    "call.79.review-error",
+    "call.80.review-error",
+    "call.81.review-error",
+    "call.82.review-error",
+    "call.83.review-error",
+    "call.84.review-error",
+    "call.85.review-error",
+    "call.86.review-error",
+    "call.87.review-error",
+    "call.88.review-error",
+    "call.89.review-error",
+    "call.90.review-error",
+    "call.91.review-error",
+    "call.92.review-error",
+    "call.93.review-error",
+    "call.94.review-error",
+    "call.95.review-error",
+    "call.96.review-error",
+    "call.97.review-error",
+    "call.98.review-error",
+    "call.99.review-error",
+    "call.100.review-error",
+    "call.101.review-error",
+    "call.102.review-error",
+    "call.103.review-error",
+    "call.104.review-error",
+    "call.105.review-error",
+    "call.106.review-error",
+    "call.107.review-error",
+    "call.108.review-error",
+    "call.109.review-error",
+    "call.110.review-error",
+    "call.111.review-error",
+    "call.112.review-error",
+    "call.113.review-error",
+    "call.114.review-error",
+    "call.115.review-error",
+    "call.116.review-error",
+    "call.117.review-error",
+    "call.118.review-error",
+    "call.119.review-error",
+    "call.120.review-error",
+    "call.121.review-error",
+    "call.122.review-error",
+    "call.123.review-error",
+    "call.124.review-error",
+    "call.125.review-error",
+    "call.126.review-error",
+    "call.127.review-error",
+    "call.128.review-error",
+    "call.129.review-error",
+    "call.130.review-error",
+    "call.131.review-error",
+    "call.132.review-error",
+    "call.133.review-error",
+    "call.134.review-error",
+    "call.135.review-error",
+    "call.136.review-error",
+    "call.137.review-error",
+    "call.138.review-error",
+    "call.139.review-error",
+    "readings.fixed-coverage",
+    "cache.fixed-coverage",
+    "n1000-t20.other-records-error",
+    "n5000-t20.other-records-error",
+    "n5000-t60.other-records-error",
+    "n5000-t180.other-records-error",
+    "environmentStart.present",
+    "environmentEnd.present",
+    "environment.stable-nodeExecutableSha256",
+    "environment.stable-node",
+    "environment.stable-v8",
+    "environment.stable-architecture",
+    "environment.stable-platform",
+    "environment.stable-kernel",
+    "environment.stable-clock"
+  ],
+  "checks": [
+    {
+      "name": "evidence.absent",
+      "pass": false
+    },
+    {
+      "name": "evidence.complete",
+      "pass": false
+    },
+    {
+      "name": "candidate.no-failure-record",
+      "pass": true
+    },
+    {
+      "name": "constants.mg",
+      "pass": false
+    },
+    {
+      "name": "constants.arm",
+      "pass": false
+    },
+    {
+      "name": "constants.radius",
+      "pass": false
+    },
+    {
+      "name": "constants.rho",
+      "pass": false
+    },
+    {
+      "name": "constants.A",
+      "pass": false
+    },
+    {
+      "name": "constants.R",
+      "pass": false
+    },
+    {
+      "name": "constants.c.D",
+      "pass": false
+    },
+    {
+      "name": "constants.c.decay",
+      "pass": false
+    },
+    {
+      "name": "constants.c.spread",
+      "pass": false
+    },
+    {
+      "name": "constants.c.origin",
+      "pass": false
+    },
+    {
+      "name": "constants.c.minDown",
+      "pass": false
+    },
+    {
+      "name": "constants.c.neighbor",
+      "pass": false
+    },
+    {
+      "name": "constants.c.nearRad",
+      "pass": false
+    },
+    {
+      "name": "constants.c.downFade",
+      "pass": false
+    },
+    {
+      "name": "constants.c.downCut",
+      "pass": false
+    },
+    {
+      "name": "constants.c.radFade",
+      "pass": false
+    },
+    {
+      "name": "constants.c.radCut",
+      "pass": false
+    },
+    {
+      "name": "constants.c.induced",
+      "pass": false
+    },
+    {
+      "name": "constants.c.sqrt2minus1",
+      "pass": false
+    },
+    {
+      "name": "manifest.unique-path.0",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.0.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.0.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.1",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.1.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.1.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.2",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.2.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.2.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.3",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.3.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.3.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.4",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.4.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.4.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.5",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.5.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.5.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.6",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.6.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.6.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.7",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.7.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.7.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.8",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.8.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.8.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.9",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.9.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.9.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.10",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.10.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.10.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.11",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.11.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.11.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.12",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.12.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.12.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.13",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.13.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.13.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.14",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.14.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.14.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.15",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.15.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.15.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.16",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.16.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.16.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.17",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.17.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.17.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.18",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.18.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.18.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.19",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.19.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.19.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.20",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.20.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.20.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.21",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.21.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.21.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.22",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.22.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.22.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.23",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.23.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.23.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.24",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.24.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.24.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.25",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.25.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.25.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.26",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.26.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.26.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.27",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.27.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.27.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.28",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.28.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.28.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.29",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.29.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.29.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.30",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.30.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.30.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.31",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.31.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.31.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.32",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.32.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.32.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.33",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.33.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.33.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.34",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.34.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.34.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.35",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.35.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.35.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.36",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.36.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.36.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.37",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.37.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.37.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.38",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.38.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.38.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.39",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.39.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.39.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.40",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.40.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.40.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.41",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.41.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.41.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.42",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.42.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.42.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.43",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.43.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.43.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.44",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.44.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.44.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.45",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.45.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.45.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.46",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.46.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.46.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.47",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.47.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.47.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.48",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.48.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.48.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.49",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.49.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.49.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.50",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.50.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.50.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.51",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.51.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.51.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.52",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.52.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.52.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.53",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.53.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.53.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.54",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.54.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.54.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.55",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.55.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.55.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.56",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.56.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.56.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.57",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.57.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.57.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.58",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.58.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.58.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.59",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.59.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.59.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.60",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.60.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.60.sha256",
+      "pass": true
+    },
+    {
+      "name": "manifest.unique-path.61",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.61.bytes",
+      "pass": true
+    },
+    {
+      "name": "manifest.pin.61.sha256",
+      "pass": true
+    },
+    {
+      "name": "candidate.supervisor-success",
+      "pass": false
+    },
+    {
+      "name": "candidate.external-time-cap",
+      "pass": true
+    },
+    {
+      "name": "candidate.pinned-source-manifest",
+      "pass": true
+    },
+    {
+      "name": "candidate.source-commit-identity",
+      "pass": true
+    },
+    {
+      "name": "candidate.external-sampled-RSS",
+      "pass": false
+    },
+    {
+      "name": "candidate.external-RSS-samples-present",
+      "pass": false
+    },
+    {
+      "name": "candidate.run-artifact.0.bytes",
+      "pass": true
+    },
+    {
+      "name": "candidate.run-artifact.0.sha256",
+      "pass": true
+    },
+    {
+      "name": "candidate.run-artifact.1.bytes",
+      "pass": true
+    },
+    {
+      "name": "candidate.run-artifact.1.sha256",
+      "pass": true
+    },
+    {
+      "name": "candidate.run-artifact.2.bytes",
+      "pass": true
+    },
+    {
+      "name": "candidate.run-artifact.2.sha256",
+      "pass": true
+    },
+    {
+      "name": "candidate.internal-sampled-RSS",
+      "pass": false
+    },
+    {
+      "name": "candidate.RSS-unit-semantics",
+      "pass": false
+    },
+    {
+      "name": "candidate.scientific-byte-cap",
+      "pass": true
+    },
+    {
+      "name": "results.total-byte-cap-at-review",
+      "pass": true
+    },
+    {
+      "name": "controls.fixed-coverage-order",
+      "pass": false
+    },
+    {
+      "name": "control.radius-0-below.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "control.radius-0-exact.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "control.radius-0-above.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "control.radius--6-below.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "control.radius--6-exact.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "control.radius--6-above.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "control.cell-below.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "control.cell-exact.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "control.cell-above.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "control.signed-zero.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "control.coarse-origin.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "control.coarse-translated.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "control.dense-16.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "control.span-256.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "control.span-nextUp256.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "control.far-invalid258.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "control.nonfinite-nan.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "control.nonfinite-infinity.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "control.overflow-span.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "control.near-field.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "control.duplicates.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "qualification.fixed-coverage-order",
+      "pass": false
+    },
+    {
+      "name": "n1000-t20.input-bytes.bytes",
+      "pass": true
+    },
+    {
+      "name": "n1000-t20.input-bytes.sha256",
+      "pass": true
+    },
+    {
+      "name": "n1000-t20.reference-identity",
+      "pass": true
+    },
+    {
+      "name": "n1000-t20.ref-offsets.bytes",
+      "pass": true
+    },
+    {
+      "name": "n1000-t20.ref-offsets.sha256",
+      "pass": true
+    },
+    {
+      "name": "n1000-t20.ref-sources.bytes",
+      "pass": true
+    },
+    {
+      "name": "n1000-t20.ref-sources.sha256",
+      "pass": true
+    },
+    {
+      "name": "n1000-t20.ref-K.bytes",
+      "pass": true
+    },
+    {
+      "name": "n1000-t20.ref-K.sha256",
+      "pass": true
+    },
+    {
+      "name": "n1000-t20.all.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "n1000-t20.grid.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "n5000-t20.input-bytes.bytes",
+      "pass": true
+    },
+    {
+      "name": "n5000-t20.input-bytes.sha256",
+      "pass": true
+    },
+    {
+      "name": "n5000-t20.reference-identity",
+      "pass": true
+    },
+    {
+      "name": "n5000-t20.ref-offsets.bytes",
+      "pass": true
+    },
+    {
+      "name": "n5000-t20.ref-offsets.sha256",
+      "pass": true
+    },
+    {
+      "name": "n5000-t20.ref-sources.bytes",
+      "pass": true
+    },
+    {
+      "name": "n5000-t20.ref-sources.sha256",
+      "pass": true
+    },
+    {
+      "name": "n5000-t20.ref-K.bytes",
+      "pass": true
+    },
+    {
+      "name": "n5000-t20.ref-K.sha256",
+      "pass": true
+    },
+    {
+      "name": "n5000-t20.all.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "n5000-t20.grid.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "n5000-t60.input-bytes.bytes",
+      "pass": true
+    },
+    {
+      "name": "n5000-t60.input-bytes.sha256",
+      "pass": true
+    },
+    {
+      "name": "n5000-t60.reference-identity",
+      "pass": true
+    },
+    {
+      "name": "n5000-t60.ref-offsets.bytes",
+      "pass": true
+    },
+    {
+      "name": "n5000-t60.ref-offsets.sha256",
+      "pass": true
+    },
+    {
+      "name": "n5000-t60.ref-sources.bytes",
+      "pass": true
+    },
+    {
+      "name": "n5000-t60.ref-sources.sha256",
+      "pass": true
+    },
+    {
+      "name": "n5000-t60.ref-K.bytes",
+      "pass": true
+    },
+    {
+      "name": "n5000-t60.ref-K.sha256",
+      "pass": true
+    },
+    {
+      "name": "n5000-t60.all.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "n5000-t60.grid.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "n5000-t180.input-bytes.bytes",
+      "pass": true
+    },
+    {
+      "name": "n5000-t180.input-bytes.sha256",
+      "pass": true
+    },
+    {
+      "name": "n5000-t180.reference-identity",
+      "pass": true
+    },
+    {
+      "name": "n5000-t180.ref-offsets.bytes",
+      "pass": true
+    },
+    {
+      "name": "n5000-t180.ref-offsets.sha256",
+      "pass": true
+    },
+    {
+      "name": "n5000-t180.ref-sources.bytes",
+      "pass": true
+    },
+    {
+      "name": "n5000-t180.ref-sources.sha256",
+      "pass": true
+    },
+    {
+      "name": "n5000-t180.ref-K.bytes",
+      "pass": true
+    },
+    {
+      "name": "n5000-t180.ref-K.sha256",
+      "pass": true
+    },
+    {
+      "name": "n5000-t180.all.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "n5000-t180.grid.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "timing.evidence-count-140",
+      "pass": false
+    },
+    {
+      "name": "timing.raw-and-validated-file-count",
+      "pass": false
+    },
+    {
+      "name": "call.0.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.1.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.2.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.3.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.4.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.5.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.6.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.7.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.8.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.9.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.10.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.11.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.12.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.13.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.14.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.15.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.16.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.17.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.18.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.19.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.20.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.21.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.22.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.23.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.24.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.25.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.26.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.27.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.28.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.29.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.30.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.31.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.32.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.33.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.34.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.35.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.36.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.37.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.38.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.39.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.40.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.41.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.42.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.43.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.44.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.45.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.46.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.47.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.48.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.49.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.50.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.51.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.52.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.53.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.54.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.55.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.56.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.57.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.58.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.59.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.60.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.61.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.62.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.63.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.64.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.65.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.66.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.67.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.68.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.69.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.70.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.71.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.72.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.73.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.74.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.75.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.76.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.77.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.78.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.79.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.80.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.81.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.82.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.83.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.84.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.85.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.86.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.87.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.88.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.89.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.90.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.91.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.92.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.93.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.94.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.95.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.96.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.97.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.98.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.99.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.100.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.101.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.102.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.103.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.104.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.105.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.106.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.107.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.108.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.109.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.110.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.111.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.112.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.113.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.114.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.115.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.116.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.117.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.118.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.119.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.120.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.121.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.122.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.123.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.124.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.125.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.126.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.127.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.128.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.129.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.130.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.131.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.132.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.133.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.134.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.135.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.136.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.137.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.138.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "call.139.review-error",
+      "pass": false,
+      "details": {
+        "type": "ValueError",
+        "message": "artifact missing or outside its base"
+      }
+    },
+    {
+      "name": "readings.fixed-coverage",
+      "pass": false
+    },
+    {
+      "name": "cache.fixed-coverage",
+      "pass": false
+    },
+    {
+      "name": "n1000-t20.other-records-error",
+      "pass": false,
+      "details": {
+        "type": "StopIteration",
+        "message": ""
+      }
+    },
+    {
+      "name": "n5000-t20.other-records-error",
+      "pass": false,
+      "details": {
+        "type": "StopIteration",
+        "message": ""
+      }
+    },
+    {
+      "name": "n5000-t60.other-records-error",
+      "pass": false,
+      "details": {
+        "type": "StopIteration",
+        "message": ""
+      }
+    },
+    {
+      "name": "n5000-t180.other-records-error",
+      "pass": false,
+      "details": {
+        "type": "StopIteration",
+        "message": ""
+      }
+    },
+    {
+      "name": "environmentStart.present",
+      "pass": false
+    },
+    {
+      "name": "environmentEnd.present",
+      "pass": false
+    },
+    {
+      "name": "environment.stable-nodeExecutableSha256",
+      "pass": false
+    },
+    {
+      "name": "environment.stable-node",
+      "pass": false
+    },
+    {
+      "name": "environment.stable-v8",
+      "pass": false
+    },
+    {
+      "name": "environment.stable-architecture",
+      "pass": false
+    },
+    {
+      "name": "environment.stable-platform",
+      "pass": false
+    },
+    {
+      "name": "environment.stable-kernel",
+      "pass": false
+    },
+    {
+      "name": "environment.stable-clock",
+      "pass": false
+    }
+  ],
+  "qualification": [
+    {
+      "id": "n1000-t20",
+      "label": "all",
+      "complete": false,
+      "pass": false
+    },
+    {
+      "id": "n1000-t20",
+      "label": "grid",
+      "complete": false,
+      "pass": false
+    },
+    {
+      "id": "n5000-t20",
+      "label": "all",
+      "complete": false,
+      "pass": false
+    },
+    {
+      "id": "n5000-t20",
+      "label": "grid",
+      "complete": false,
+      "pass": false
+    },
+    {
+      "id": "n5000-t60",
+      "label": "all",
+      "complete": false,
+      "pass": false
+    },
+    {
+      "id": "n5000-t60",
+      "label": "grid",
+      "complete": false,
+      "pass": false
+    },
+    {
+      "id": "n5000-t180",
+      "label": "all",
+      "complete": false,
+      "pass": false
+    },
+    {
+      "id": "n5000-t180",
+      "label": "grid",
+      "complete": false,
+      "pass": false
+    }
+  ],
+  "controls": [
+    {
+      "id": "radius-0-below",
+      "complete": false
+    },
+    {
+      "id": "radius-0-exact",
+      "complete": false
+    },
+    {
+      "id": "radius-0-above",
+      "complete": false
+    },
+    {
+      "id": "radius--6-below",
+      "complete": false
+    },
+    {
+      "id": "radius--6-exact",
+      "complete": false
+    },
+    {
+      "id": "radius--6-above",
+      "complete": false
+    },
+    {
+      "id": "cell-below",
+      "complete": false
+    },
+    {
+      "id": "cell-exact",
+      "complete": false
+    },
+    {
+      "id": "cell-above",
+      "complete": false
+    },
+    {
+      "id": "signed-zero",
+      "complete": false
+    },
+    {
+      "id": "coarse-origin",
+      "complete": false
+    },
+    {
+      "id": "coarse-translated",
+      "complete": false
+    },
+    {
+      "id": "dense-16",
+      "complete": false
+    },
+    {
+      "id": "span-256",
+      "complete": false
+    },
+    {
+      "id": "span-nextUp256",
+      "complete": false
+    },
+    {
+      "id": "far-invalid258",
+      "complete": false
+    },
+    {
+      "id": "nonfinite-nan",
+      "complete": false
+    },
+    {
+      "id": "nonfinite-infinity",
+      "complete": false
+    },
+    {
+      "id": "overflow-span",
+      "complete": false
+    },
+    {
+      "id": "near-field",
+      "complete": false
+    },
+    {
+      "id": "duplicates",
+      "complete": false
+    }
+  ],
+  "coverage": {
+    "full-warmup": 0,
+    "full-measured": 0,
+    "cached-warmup": 0,
+    "cached-measured": 0
+  },
+  "resources": {
+    "candidateExternalElapsedSeconds": 0.0021168338134884834,
+    "candidateSampledPeakRSSBytes": null,
+    "scientificBytes": 0,
+    "externalSampledPeakRSSKiB": null,
+    "rssSamples": 0,
+    "rssSampleErrors": 0,
+    "normalScientificBytes": 0,
+    "resultBytesAtReview": 1204,
+    "sourceCommit": "4fdcc83fe870c110679a72666029d4cbc987e22c",
+    "sourceManifestSha256": "6c653f2665428b342dff7f7265c03c94a20f8d8b0ade42841972378f73b68a31"
+  },
+  "practicalRulePass": null,
+  "analysisPath": "results/analysis.json",
+  "elapsedSeconds": 0.1783598344773054,
+  "limitations": [
+    "No geometry, field, root, solver or timing query was run by this reviewer.",
+    "Timed transient arrays are not retained: repeat fingerprints and recorded comparison assertions do not independently reconstruct those arrays.",
+    "Full JS JSON fingerprints are compared with qualified fingerprints, not reserialized in Python; qualification matrix binary bytes and numerical values are independently checked.",
+    "Coefficient scaling and force-total consistency use saved K, nominal motor states and saved solutions only; no geometry or load map is recomputed.",
+    "Clock records and hardware metadata are audited for internal consistency, not independently measured again.",
+    "An unmet practical timing rule can coexist with a passing evidence audit."
+  ]
+}

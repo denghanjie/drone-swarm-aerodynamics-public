@@ -1,0 +1,13 @@
+# The timing checkpoint produced no performance result
+
+We prepared a fair comparison: both primary methods use the same exact neighbor search, and the clock includes building the mutual-load coefficients. The source, protocol and independent reviewer were frozen and published at [4fdcc83](https://github.com/denghanjie/drone-swarm-aerodynamics-public/commit/4fdcc83fe870c110679a72666029d4cbc987e22c). Independent GitHub retrieval matched the exact12928-byte source manifest, SHA2566c653f2665428b342dff7f7265c03c94a20f8d8b0ade42841972378f73b68a31, covering62pins/39052762bytes.
+
+The supervisor reported PermissionError after0.00212seconds. Its child return code is null; stdout/stderr are empty; no control, qualification, coefficient, solution or timing artifacts were saved. The supervisor does not record the failing operation. Therefore we cannot determine from this record whether Node failed to launch or briefly started before another operation failed. **There is no usable experimental coverage and no speed comparison.** The duration is supervisor bookkeeping, not a query time.
+
+The one allocated saved-record review ran with approved host execution and completed in0.426seconds of supervisor time. It reported incomplete evidence:0/21controls,0/8qualifications and0/140timing calls. Of448consistency checks,234passed and214failed because required evidence was absent or incomplete. These are missing-evidence failures, not214numerical counterexamples. The practical performance rule is null, not false. Both allocations are closed; locks and all files are retained. No scientific rerun was made.
+
+The [updated Three.js view](viewer/) shows this failure and the preceding successful checkpoint's actual saved swarm poses/load colors. It clearly identifies those earlier records; no new flight, load or performance result is implied.
+
+The next useful action is a separately specified **execution-admission test** containing only a benign Node echo child and explicit stage markers. It can establish which process operation is permitted without evaluating drones or tuning the scientific method. A later replacement scientific allocation would require its own prospective source checkpoint and would preserve this failure. The full research goal, physical-validation gap and browser-runtime gap remain open.
+
+Raw records: [candidate supervisor](results/candidate-run.json), [saved-record review](results/independent-review.json), [review supervisor](results/review-run.json), [incomplete analysis](results/analysis.json). See RESULT-CLAIM-LEDGER.md, RESULT-PRIVACY-REVIEW.md and POSTRUN-RESTART.md.
