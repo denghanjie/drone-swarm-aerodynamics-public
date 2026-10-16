@@ -1,0 +1,27 @@
+{
+  "documentSchema": "m31-fixed96-result-v1",
+  "journal": "Input path plus .jsonl. First line exactly {kind:header,schema:m31-fixed96-journal-v1,specId:<id>}; then one {kind:record,row:<full record>} per case in final order; last line {kind:complete,records:1488}. All journal rows must equal final records. fsync every32 records and at header/completion; partial journal retained on failure, no retry.",
+  "documentFields": ["schema", "specId", "runtime", "sourceSha256", "records"],
+  "runtimeFields": ["node", "v8", "platform", "arch"],
+  "sourceSha256Keys": ["interval.cjs", "spec.json", "run.cjs"],
+  "sourceSha256Meaning": "SHA256 of each named source file; must match source manifest and current file bytes, not trusted self-report alone",
+  "recordFields": ["id", "op", "input", "result", "inputUnchanged"],
+  "ids": "bits-INDEX for fromBits; square-INDEX and sqrt-INDEX for each interval; OP-INDEX for each of all 256 pairs in specification order (48 explicit then 208 generated). INDEX is zero-based decimal without padding.",
+  "operations": ["fromBits", "square", "sqrt", "add", "sub", "mul", "div"],
+  "fromBitsInput": "one-element array containing lowercase 16-digit hex string",
+  "intervalInput": "array of one or two objects with exactly l and u fields, each a signed decimal integer string; endpoints denote integer/2^96",
+  "successResult": {"status": "ok", "interval": {"l": "decimal integer string", "u": "decimal integer string"}},
+  "failureResult": "object with exactly one field status",
+  "statuses": {
+    "invalid-nonfinite": "fromBits exponent bits are all ones (NaN or either infinity)",
+    "unresolved-domain": "div denominator interval contains zero, or sqrt input lower endpoint is negative",
+    "unresolved-range": "exact outward lattice endpoint falls outside [-2^352,2^352]",
+    "unresolved-iteration": "sqrt reaches iteration cap; must count as qualification failure in this fixed valid suite",
+    "unresolved-sqrt-check": "sqrt final exact floor-root verification fails; must count as qualification failure",
+    "invalid-bits": "malformed input; not expected in the fixed suite and is qualification failure",
+    "invalid-interval": "malformed/reversed input; not expected in the fixed suite and is qualification failure"
+  },
+  "precedence": "Validate operands, then domain condition, then exact outward endpoint range. All generated interval operands are valid. fromBits rejects exponent-all-ones before conversion/range.",
+  "inputUnchanged": "must be true for every record; runner compares serialized operands before/after and uses frozen operand objects",
+  "expectedEndpointRule": "Successful endpoints must equal the tight outward lattice image for the declared operation, not merely contain it. Independent inclusion checks are also required. This makes one-unit endpoint mutation a valid negative control."
+}

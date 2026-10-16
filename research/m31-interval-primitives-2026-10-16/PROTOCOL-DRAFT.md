@@ -1,0 +1,31 @@
+# Prospective interval-primitive qualification
+
+2026-10-16. Parent: published current-bound design d4b6407dc1287e1656f70a810cafd2c1635d7403; receipt be208e34535777a330f11e69444008a3f241689c. The previous turn made progress and closed that design checkpoint. All prior scientific allocations remain closed.
+
+## Purpose and scope
+
+Establish a sound, inspectable arithmetic foundation for M-current enclosures. Build a fixed-lattice interval kernel using JavaScript BigInt, then qualify its primitive behavior with independent Python rational arithmetic. This is a numerical foundation checkpoint toward the complete current-state hierarchy/load method, not a substitute for a 5,000-drone browser experiment or aerodynamic validation. BigInt cost is not assumed practical. No swarm target arrays, old science reruns, trajectory generation, timing comparison or new physical/literature acquisition is allocated here.
+
+All finite binary64 inputs are interpreted exactly from their bits. The arithmetic lattice has scale S=2^96. A returned interval [l/S,u/S] uses integer endpoints with |l|,|u|<=2^352 (real magnitude <=2^256). This bounded representation is an implementation resource range, not a physical-domain restriction. An input/operation outside it returns named unresolved-range status. Zero-containing division and negative sqrt lower endpoints return named unresolved-domain status. NaN and infinities are invalid numeric inputs. Coarse bounds for tiny positive values may contain zero; that must remain visible and can prevent later normalization qualification.
+
+Operations: fromBits(binary64), add, subtract, multiply, divide, square, squareRoot. Directed integer floor/ceiling enforce inclusion. Square root uses integer iteration with exact comparisons and a hard 512-step cap; no native Math.sqrt/hypot accuracy premise. Mathematical/source challenge must independently inspect domain/range logic and endpoint formulas. This does not implement complete preparation, guards, coefficients, coupled solve, load propagation or native compatibility.
+
+## Source gate
+
+Author primitive kernel, deterministic case generator/runner, independent checker and supervision code without importing or evaluating them. Existing reviewers provide source-only challenges. Preserve drafts and every review; corrections are additive or recorded prefreeze diffs. A separate frozen protocol and source manifest identify adopted code and finite case allocation. Commit/push and independently fetch/verify the exact source manifest before any generator, kernel import, numerical control, compilation that evaluates module code or checker execution. Syntax/source inspection only is allowed before that gate; no observed outputs may guide this source revision.
+
+The parent and each existing reviewer may inspect at most 16 inherited content files plus this checkpoint's new files; record actual names/hashes. Reuse the existing three reviewers, no new agents. No external operations are allocated. Algebraic reasoning and source authoring are not numerical trial results.
+
+## Sole bounded numerical allocation (pending source gate)
+
+One supervised runner execution and one independent saved-result checker execution, each maximum 120 seconds wall, sampled process-group RSS <=1 GiB, output <=16 MiB, no child subprocesses in either scientific child. Close and preserve a failed or timed-out attempt; do not retry it in this allocation. Supervisor polls at <=0.1s and terminates process group on budget exceedance; report terminal state and all partial output. No performance conclusion from wall time.
+
+Fixed suite: 32 explicitly enumerated binary64 bit patterns (zeros, subnormals, normal boundaries, both signs, constants, range limits, NaNs/infinities) plus 128 deterministic binary64 bit patterns from a fixed unsigned 64-bit LCG seed; 24 explicitly enumerated lattice intervals and 128 generated lattice intervals from that same documented generator; all 152 unary intervals through square and squareRoot; 256 deterministic interval pairs through add/subtract/multiply/divide. Case IDs/order and every success/unresolved/invalid status are retained. Expected count is 1,488 primitive records: 160 conversions +304 unary +1,024 binary. If the exact source inventory differs from these counts, the independent review must resolve it before freezing; no post-run allocation adjustment.
+
+The independent checker must regenerate the cases from the frozen declaration without trusting runner-supplied expected values; enforce exact IDs/order/coverage, inputs and statuses; use Python Fraction and math.isqrt to verify exact outward endpoints or the named failure rule; check sound inclusions; verify no input interval was mutated; retain all cases including negative and range outcomes. Native JS finite input conversion is decoded from bits, not Decimal/float approximations. Require zero mismatches for primitive qualification. This finite qualification supports its stated cases; general inclusion rests on the reviewed algorithmic argument, not coverage alone.
+
+Independent checker fault controls are part of that one checker execution: wrong endpoint, wrong status, missing case, duplicated/reordered case and altered input must each be detected by the same validator. Mutated fixtures are in-memory copies of saved output with recorded fault descriptions/results; preserve original outputs. The checker must not declare pass after any missing/ineffective control. Source reviews must assess whether controls are genuinely wrong, rather than merely different but valid wide intervals.
+
+## Closure and next step
+
+Retain source/runtime/command provenance, raw per-case results, wall/RSS/closure records, independent check results and source review. Distinguish arithmetic qualification from browser portability/performance, full model integration, physical validity and novelty. Add a visible milestone explanation with unchanged byte-pinned Three.js evidence, clearly labelled no new flight. Perform bounded display QA separately from science. Privacy review, result manifest, public push and independent remote manifest verification close this checkpoint. Goal remains incomplete. Further science requires a new prospective allocation.
