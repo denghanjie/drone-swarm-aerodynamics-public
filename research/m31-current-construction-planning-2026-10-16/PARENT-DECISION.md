@@ -1,0 +1,15 @@
+# Adopt a finite-runtime experiment; reject the portable-exactness claim
+
+The source/history review found a separable current implementation intervention: the lean all-pairs loop evaluates a center norm before its neighborhood exit, whereas the closed E/L comparison changed a later source-axis radial norm after neighbor selection. This supports one implementation-specific question. It establishes no algorithmic originality, superiority to every historical neighbor implementation or expected speedup.
+
+The contract review supplies an exact geometric motivation but rejects a portable proof about the returned Math.hypot value. Accept that rejection. The original invalid-center branch precedes its far-neighbor branch; preserving only positive coefficients cannot establish equivalent behavior. The whole-scene span predicate and 4 m component margin do not themselves prove universal runtime equivalence.
+
+Adopt only the review's narrower, expressly defensible empirical question: a frozen named-runtime comparison on fixed controls and three new Boids-generated states, against unchanged current L, with every omitted pair checked against the complete original symbols and all sparse/model outputs retained. A pass qualifies only tested finite inputs/runtime, and timing is interpreted only after those checks and independent review. Unseen states, other runtimes and operational deployment remain unqualified.
+
+The new package `../m31-center-screen-2026-10-16/` contains prospective protocol/config and may now receive static source/checker preparation. That is a new scope with its own future freeze and one-shot allocations; this desk decision does not permit scientific evaluation before independent static clearance, publication and exact remote verification. Its fixed 4 m and 256 m constants were specified before the reviewer's inadvertent historical result-file exposure. Its seeds are fixed prospectively. No value from that exposure is used to select them.
+
+The accidental read of typed-assembly review/ARITHMETIC.json violated the desk's intended target-array exclusion. Preserve the reviewer's exact path/hash/requested extent and disclosure in review/CONTRACT.md. The parent does not erase the read, reset the eight-file cap or describe this as clean unexposed design. No additional numerical calculation was performed, no old threshold was changed and no closed experiment was reopened. The source-based formal rejection and finite-test conditions do not depend on those exposed values.
+
+The screen retains ordered all-pairs enumeration and current matrix construction. Its potential savings concern center norms already leading to far rejection, not newly removed rotor work. Whole-scene scanning, branch overhead, fallback, coefficient scaling, scheduling, solve and residual belong in complete-query timings. No speed prediction is adopted.
+
+The prior physical evidence gap remains unresolved. No progress in this implementation experiment can establish physical validity, a novel aerodynamic law or live 5,000-drone feasibility. Overall research goal remains active and incomplete.

@@ -1,3 +1,15 @@
+# Active preparation: finite-runtime center-screen test
+
+The two desk results are published at db8365078da3f54c258f18bb4f3cb20ef32dfb6a with independently reconciled exact remote manifests/local committed pins; receipts pushed at d64de5643bf0738fed68da72fb49ff42c841ed82. Root-defect bound is conditional/unimplemented; fixed-PWM access3/3closed with no extracted triplet.
+
+Current construction source review is closed: see m31-current-construction-planning-2026-10-16/PARENT-DECISION.md. Portable Math.hypot equivalence is not proved; a finite named-runtime test is adopted. Preserve the accidental historical result-file exposure and never describe the design as unexposed.
+
+m31-center-screen-2026-10-16 has a prospective protocol/config. Existing agents prepare candidate/controls, harness/supervisor and independent checker in isolated scratch. No source freeze, scientific import/control/target evaluation, generation or benchmark has occurred. Controls count/config placeholders require resolution before freeze. No invocation is authorized until full static clearance/source publication/independent byte verification. Fixed screen4m/span256m; unchangedL comparator; fresh seeds261601/261602/261603; primary paired10% gate on both5000cases. Read protocol, not this abbreviated index, for limits.
+
+Keep server8876 and root-secant Three.js view. All historical allocations remain closed. Broader goal active/incomplete. Mutable discovery index excluded from result/source pins.
+
+---
+
 # Current continuation: two desk results closed; construction review active
 
 `m31-root-defect-planning-2026-10-16/` retains an independently checked conditional exact-real polynomial-defect bound. No numerical certificate, speed result, physical validation or novelty claim. The eight-file cost/history review recommends current interaction construction; the six-file claims review is resolved. Read its PARENT-DECISION and result manifest. No numerical test is allocated.

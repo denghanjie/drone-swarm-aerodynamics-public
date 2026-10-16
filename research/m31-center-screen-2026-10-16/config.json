@@ -1,0 +1,80 @@
+{
+  "schema": "m31-center-screen-v1",
+  "cases": [
+    {
+      "id": "n1000-s261601-t2",
+      "n": 1000,
+      "seed": 261601,
+      "t": 2
+    },
+    {
+      "id": "n5000-s261602-t2",
+      "n": 5000,
+      "seed": 261602,
+      "t": 2
+    },
+    {
+      "id": "n5000-s261603-t2",
+      "n": 5000,
+      "seed": 261603,
+      "t": 2
+    }
+  ],
+  "generation": {
+    "duration": 2,
+    "dt": 0.0025,
+    "mode": "boids",
+    "search": "grid",
+    "filter": "wall-priority",
+    "record": true,
+    "frameEvery": 0.1,
+    "factoryVariant": "wide",
+    "expectedCourse": "factory-v1",
+    "airflow": "off",
+    "observation": "ideal"
+  },
+  "methods": [
+    "L",
+    "F"
+  ],
+  "permutations": [
+    "LF",
+    "FL"
+  ],
+  "blocks": 6,
+  "controls": null,
+  "ownershipExtraBuilds": null,
+  "qualificationBuilds": 6,
+  "qualificationSolves": 6,
+  "warmupCalls": 6,
+  "measuredCalls": 36,
+  "totalCalls": 42,
+  "primary": {
+    "ratio": "F/L",
+    "maximumMedianPairedRatio": 0.9,
+    "minimumStrictWins": 5,
+    "requiredCases": [
+      "n5000-s261602-t2",
+      "n5000-s261603-t2"
+    ]
+  },
+  "limits": {
+    "candidateWallSeconds": 900,
+    "candidateCooperativeSeconds": 895,
+    "reviewWallSeconds": 180,
+    "reviewCooperativeSeconds": 175,
+    "rssBytes": 1610612736,
+    "positiveTerms": 2000000,
+    "normalScientificBytes": 192937984,
+    "scientificBytes": 201326592,
+    "compressedSymbolsBytesPerBundle": 67108864,
+    "supervisorLogsBytes": 4194304,
+    "scientificDirectoryBytes": 218103808
+  },
+  "scope": "finite runtime current-state center-screen experiment; fresh short airflow-off Boids inputs; no portable exactness, coupled flight or browser performance",
+  "screen": {
+    "spanLimit": 256,
+    "componentThreshold": 4,
+    "runtimeGeneralEquivalenceProven": false
+  }
+}

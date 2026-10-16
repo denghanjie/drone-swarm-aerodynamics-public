@@ -1,0 +1,37 @@
+# Finite-runtime test of a current-position center screen
+
+Prospective separate cycle, 2026-10-16. Status: source preparation only; no scientific import, fixture evaluation, generation, benchmark or saved review has run. Source/checker/protocol/resource freeze, independent static review, publication and independent byte verification must precede execution. All prior experiments and access allocations remain closed.
+
+Question: does a componentwise far screen reduce the complete cost of the current lean coupled query on a fixed finite set while preserving every tested model output? This is ordinary broad-phase screening, not an algorithmic novelty claim. The source-only history review distinguishes its pre-center norm intervention from the closed source-axis radial screen and typed-storage experiments. Those adverse outcomes remain evidence against inferring speed from fewer arithmetic operations.
+
+## Exact intervention and claim boundary
+
+L is the byte-pinned current lean implementation from m31-typed-assembly-2026-10-16. F differs only by a fresh whole-scene finite coordinate-span predicate, the ordered componentwise early skip, and explicit screen-work metadata. No grid, coefficient approximation, stale state, changed precision, assembly policy, root method or source accumulation order.
+
+The fixed proposal uses rounded per-axis scene spans <=256 m. If any coordinate/span is nonfinite or any span exceeds 256 m, F falls back to unchanged L evaluation. On an eligible scene, an already formed nonself center displacement with max(|dx|,|dy|,|dz|)>=4 m skips the original center norm and retains the original outside-neighborhood symbol 1. Retained pairs execute the original center guards and strict 3 m neighborhood rule, followed by identical rotor classification/scaling/solve/residual work. Whole-scene preparation remains mandatory. Timing includes the predicate and all screen overhead.
+
+Exact geometric inequalities motivate this margin but **do not prove portable JavaScript Math.hypot equivalence**: the inspected source contract does not give that library call a universal error bound. This experiment explicitly tests the named runtime on finite controls and fresh states. A pass cannot qualify unseen states, other runtimes, all possible guard behavior, or flight. The prior contract reviewer inadvertently opened an existing result-bearing arithmetic file; that exposure and its bounds are retained. No new seed or threshold is selected using those values, and this is not an unexposed literature/design process.
+
+## Inputs and comparator
+
+Three deterministic new inputs: N=1000 seed261601, N=5000 seeds261602 and261603. Generate each with the unchanged M31 wide-factory local 3D Boids and rigid-body dynamics, ideal observations, wall-priority filter, grid neighbor search, dt=.0025 s and a 2 s horizon. Airflow is off during generation. Save initial/final complete 17-state arrays and all 21 poses at .1 s spacing. These are short synthetic same-family inputs, not mature flock generalization, physical validation or coupled flight. Incomplete generation, domain rejection or missing ownership/equality evidence stops the allocation; no replacement seeds.
+
+Controls, fixed in source before freeze, cover the original 3 m boundary; the proposed 4 m component boundary on all axes; finite/span boundaries and full fallback; invalid/nonfinite and overflow geometry; signed zero and translations; near-wake rejection with far neighbors; positive support with far neighbors; and current input/nominal validation. No control may be selected or modified after execution. The final literal count and IDs are part of the source manifest/config before launch.
+
+All control states remain observable even when invalid; token encodings preserve NaN/infinity/signed zero. Compare complete symbol tensors/census, canonical sparse support/order/K/a, input/admission, graph, ordinary bound, every rotor/source solution and residual. Do not use equal checksums alone. Compare array ownership and no input mutation across calls. Algorithm work metadata must explicitly distinguish enumerated pairs, skipped norm calls and actual norms; no claim of fewer logical pairs.
+
+For each fresh input, build and retain both complete classification tensors before any timing. Same-runtime exact output equality is required. An independent saved-data Python/NumPy reviewer reconstructs geometry/coefficient support and loads using the inherited independent arithmetic/root reference, checks exact L/F equality, independently reconstructs the screen predicate/counters, and reconciles timing schedule, raw evidence and gates. Inherited numerical tolerances are K/a absolute2e-12 plus relative2e-12; positive solution relative1e-9. They are not physical tolerances and cannot change after outcomes.
+
+## Timing and decision
+
+Six saved warmup calls (L then F on each case), then six measured blocks with paired LF/FL order alternating by block+case and case traversal rotated by block. Total 36 measured calls, 42 complete calls. Qualification is outside measured calls; each call includes current preparation, screen predicate, construction/scaling, schedule, ordered solve, residual and output consumption. Raw call data are written before validation. No forced GC, custom JIT flags or concurrent heavy scientific work. Record runtime binary/version, architecture, power/load metadata and sampled RSS.
+
+Primary practical gate on **each** N=5000 case: median of the six paired F/L total-time ratios <=.90 and at least5/6 strict F wins. N=1000 is contextual. All output/control/resource/audit requirements must pass before any performance qualification. Six process repeats are not six independent swarm trials. Preserve every raw time, paired ratio/difference, median/min/max, phase and screen count; no operation-count speed inference or transferred phase fraction. Failure closes this fixed screen experiment; no threshold, comparator, seed, repetition or fallback tuning.
+
+## Resource and evidence boundaries
+
+One candidate invocation:900 s external,895 s cooperative,1.5 GiB sampled RSS,2 million positive coefficients per state. One independent saved-review invocation:180 s external,175 s cooperative, same RSS cap. Candidate scientific writes:184 MiB normal plus8 MiB failure reserve; total results+inputs+generation+review208 MiB; aggregate supervisor logs4 MiB; each compressed symbol artifact64 MiB. Source/review notes and UI QA are outside scientific output caps. Exclusive locks consume each allocation. Close with actual process/monitor outcomes; retain partial progress. Sampling/cooperative guards can overshoot and are not hard real-time guarantees. No retries or cap extension.
+
+Source includes a supervisor, exact pins, independent checker and all imported scientific dependencies. After both terminal closures, update a Three.js replay bound to the newly saved 3D Boids poses and complete-query evidence; label the load evaluation as frozen-state and airflow-off generation. Independently test the UI, inspect desktop/mobile screenshots, preserve stage summaries/failures, privacy-review, push and verify result manifests. No private paths, credentials, attachments, chat records or original paper assets may enter public artifacts.
+
+The broader goal remains incomplete regardless of this test: aerodynamic model validity, dense mutual-wake physics, application-derived tolerances, coupled moving-swarm accuracy, browser/GPU/live cost and novel contribution remain separate questions.
