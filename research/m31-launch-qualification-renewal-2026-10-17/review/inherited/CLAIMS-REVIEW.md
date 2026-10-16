@@ -1,0 +1,33 @@
+# Independent harmless-qualification claims review
+
+Status: accepted for source freeze at the exact six input pins in `CLAIMS-READING.json`, conditional on the other independent reviews, exact public-source verification and all registered launch gates. No launch or qualification result is asserted. This separate review used six of its maximum eight files; earlier allocations remain closed. No scientific, operational or browser code was imported or executed by this reviewer.
+
+## Harmless scope and outcome inference
+
+The inspected harness uses Python standard-library process, file, time and signal operations. Its child imports no research modules, creates no subprocesses, performs no network activity and only writes a tiny fixed JSON result, exits with code 7 or sleeps for the timeout fixture. The process-table command requests numeric PID, parent PID, group and RSS columns. The capability case creates no inert child group; the process-table command itself is still an ordinary monitoring subprocess. The remaining cases use a retained guardian group and at most one inert child. None produces trajectories, forces, candidate outputs or numerical certificates.
+
+All eight cases and their order are fixed prospectively. The two sampler errors are synthetic inputs at a declared boundary after a real leader observation and before start authorization. Their explicit injection labels, fixed error details and intended absence of child-start evidence must survive validation. They are tests of diagnostic behavior under those inputs, not empirical reproductions of the historical launch error.
+
+Expected child or sampler failures are distinct from failure of the qualification. A case qualifies only when its designated first failure, secondary missing-output fact, permitted event sequence and closure evidence all agree with the frozen contract. Normal and delayed-ready cases require their fixed output; a nonzero inert-child exit is still permitted to use the normal release handshake after child absence. Timeout and injected sampler cases require forced cleanup. Early guardian exit must never be represented as a normal release. Unknown failures, missing cases and failed closure do not qualify.
+
+The runner's exit status alone is not qualification success. Its successful completion can mean that it collected all eight reports, including reports with expected or unexpected first failures. Only a passing saved-evidence checker establishes that all eight observed outcomes satisfy the registered contracts. Any milestone must keep those two facts separate.
+
+The final source reconciles the inspected interface changes: the parser accepts exactly four ASCII decimal-integer fields; guardian-start is part of every guarded event roster; delayed readiness is measured from that guardian event; the saved leader observation precedes and is bound into authorization; normal release requires a later leader-only process observation; and timeout cleanup records the child wait result. The checker requires the timeout child PID to match and its exit code to be a negative integer, rather than inferring child termination solely from a guardian failure. It binds supervisor PID/group and config identity across the attempt, index and case reports, and checks the fixed case order. These remain prospective contracts until the single permitted run and checker actually produce passing evidence.
+
+## Environment, provenance and limits
+
+The intended execution context is the tool's explicitly escalated local environment. The runtime executable is pinned and isolated Python flags are required. The environment variable `RESEARCH_EXECUTION_CONTEXT` is a caller declaration: its required value and the saved context string do not independently detect the sandbox or prove the tool permission mode. The source correctly labels this as caller attestation and locates the supporting tool invocation outside the package. Any final claim about actual escalation must cite that dispatch evidence separately. A saved checker can confirm the attestation's consistency, not turn it into an independent detector.
+
+Source/publication digests bind the proposed operational code and fixed contract. A publication receipt reports the preceding exact-source verification; the harness does not itself perform a remote download. The saved checker validates the source/member pins, runtime identity, chronology, case/result closure and unchanged evidence. These are provenance checks and do not substitute for the required independent public-source verification before launch.
+
+An eventual pass would support only this finite readiness, diagnosis and cleanup mechanism on these inert cases in the recorded environment and runtime. Positive numeric process samples establish observations at sampled instants. Two absent-group probes and guardian wait status establish the declared recorded closure criterion. Neither is continuous resource measurement, a complete reconstruction of all process lifetimes or hostile-process isolation. The 128 MiB sampled limit and fixed time/output caps remain operational containment gates, not performance results.
+
+## Transfer and scientific boundaries
+
+Passing would not qualify the prior normalizer supervisor, repair its consumed allocation, establish its lost first exception, prove that process inspection was denied in the old sandbox or authorize its checker/rerun. A successful real process sample in the new execution context does not reveal what happened during the old failure. Synthetic nonzero and malformed outputs also supply no evidence for that historical cause.
+
+This replacement mechanism would still need separate review and qualification after integration into a scientific supervisor. Inert success cannot establish safe behavior under long scientific computation, large output, arbitrary descendants, host suspension, every signal race or a different sandbox. The strict claims are about the eight specified cases and their saved evidence.
+
+No outcome here establishes normalizer equality, model admission, aerodynamic accuracy, speedup, physical validity, new flight data, browser computation performance, novelty or 5,000-drone feasibility. Any later status page may reuse explicitly historical recorded Three.js flights as context, without describing them as products of this qualification. The broader research goal remains incomplete regardless of the operational result.
+
+The allocation remains single-use and bounded by the fixed launch cutoff. A source review is neither an executed qualification nor an extension of that cutoff. An infrastructure failure consumes this allocation under the prospective rules and does not authorize an improvised retry.
