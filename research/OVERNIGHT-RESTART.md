@@ -1,3 +1,15 @@
+# Latest completed checkpoint: scalar filtering reduces total method cost
+
+Read [verified restart](publication-receipts/m31-filter-cost-restart-2026-10-17.md) and [plain-language milestone](m31-filter-cost-2026-10-17/MILESTONE-SUMMARY.md). Result99a9b742e6a555e51bbdb8a88f69fdcfc101ccf0 is publicly verified:134pins. All6scientific gates and the3dense benefit gates passed; all24pairs favoured filtering. Scientific/display allocations are closed. Next browser/local3D Boids-state transfer is planning only, with no numerical successor allocation. Read NEXT-QUESTION before defining it. Keep localhost8876 running. Overall goal remains active/incomplete.
+
+---
+
+# Active source-published cost attempt
+
+Current package: m31-filter-cost-2026-10-17. Source fb9754529a4df7350410187123c5d443e463cdf0 is frozen/pushed and independently verified before any numerical execution. Read its PROTOCOL, source-publication and actual results/attempt markers before any continuation. One kernel and one checker only; no retries. All three reviewers idle at launch. Existing viewer remains m31-filter-design until saved new evidence and display QA finish. Broader goal remains active.
+
+---
+
 # Latest completed checkpoint: conservative scalar filter
 
 Read [verified restart](publication-receipts/m31-filter-restart-2026-10-17.md) and [milestone summary](m31-filter-design-2026-10-17/MILESTONE-SUMMARY.md). Result c1afe65dc2a458086b8993e50a940c479fb08f9b is publicly verified. Scientific and display allocations are closed; do not rerun. Next is a fresh prospective total-cost comparison. Broader goal remains active; keep localhost8876 running.
