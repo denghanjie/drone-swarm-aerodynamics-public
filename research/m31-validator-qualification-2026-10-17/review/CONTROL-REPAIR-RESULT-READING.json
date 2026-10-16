@@ -1,0 +1,141 @@
+{
+  "schema": "m31-control-repair-result-reading-v1",
+  "stage": "saved-result-interpretation",
+  "baseInventory": {
+    "path": "research/m31-validator-qualification-2026-10-17/review/DRIVER-READING.json",
+    "bytes": 35105,
+    "sha256": "e05d12c5114310d3f81b818e204e3c49194313824692535bc7705fd731c9290f"
+  },
+  "counting": {
+    "inheritedContentCap": 20,
+    "inheritedContentFilesBeforeDelta": 4,
+    "additionalInheritedContentFiles": 3,
+    "inheritedContentFilesAfterDelta": 7,
+    "currentPackageContentFilesInDelta": 2,
+    "conservativeCountIncludingCurrentPackageDelta": 9,
+    "note": "The three added inherited files are old check.json, RESULT-CLAIM-LEDGER.md and MILESTONE-SUMMARY.md. The two current-package files are qualification.json and prior reading-inventory metadata. Earlier inventory is unchanged."
+  },
+  "contentFiles": [
+    {
+      "path": "research/m31-validator-qualification-2026-10-17/results/qualification.json",
+      "bytes": 33837,
+      "sha256": "d3249e923b6b96daf316b04f693a9e16f9f29b3b1ea02f55e74dbf1f6788ff04",
+      "purpose": "Selected saved status, source/publication pins, counts, baseline error lists and false-zero control records."
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/results/check.json",
+      "bytes": 31917,
+      "sha256": "9991d6a3d60d7d0e58f69d0074947b38453013246b2c63ecfa3bf26a7086eb6d",
+      "purpose": "Selected saved historical flags, baseline count and false-zero control record; no re-evaluation."
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/RESULT-CLAIM-LEDGER.md",
+      "bytes": 2762,
+      "sha256": "1a67338db82779ccb3b3aa4b9abcf1577800bb9cb8d1479f18053ee8d3ea5d28",
+      "purpose": "Selected saved summary lines concerning flight completion, containment durations and claim limits."
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/MILESTONE-SUMMARY.md",
+      "bytes": 1821,
+      "sha256": "9c507ac47db79dc2048bbe5359640af334b9eb1ec859a2c478643aa0990177eb",
+      "purpose": "Saved summary of failed original allocation, six checked states and scope limits."
+    },
+    {
+      "path": "research/m31-validator-qualification-2026-10-17/review/DRIVER-READING.json",
+      "bytes": 35105,
+      "sha256": "e05d12c5114310d3f81b818e204e3c49194313824692535bc7705fd731c9290f",
+      "purpose": "Prior reading-inventory metadata; no referenced scientific file content was followed."
+    }
+  ],
+  "opaqueBytePins": [
+    {
+      "path": "research/m31-validator-qualification-2026-10-17/source/qualify.py",
+      "bytes": 48885,
+      "sha256": "fd3c20618a4f893c6e90c39c23a309b1830530367384fa4392d2562f85f969cd",
+      "accessThisStage": "opaque-byte-hash-only"
+    },
+    {
+      "path": "research/m31-validator-qualification-2026-10-17/source/config.json",
+      "bytes": 1515,
+      "sha256": "70eb6bb3b3faddf5ffa356cce3c2768303477a884ea985a85563ce041b02f9e7",
+      "accessThisStage": "opaque-byte-hash-only"
+    },
+    {
+      "path": "research/m31-validator-qualification-2026-10-17/source/result-contract.json",
+      "bytes": 9307,
+      "sha256": "f343f93fdb3e4fef0399663e20cc02998923b7b3db730f2ae7c2a611e92d755e",
+      "accessThisStage": "opaque-byte-hash-only"
+    },
+    {
+      "path": "research/m31-validator-qualification-2026-10-17/source-manifest.json",
+      "bytes": 30815,
+      "sha256": "102a500c818a5bb4652374c3c8621b7acc7bd42b0db53692646e942de8e27c3b",
+      "accessThisStage": "opaque-byte-hash-only"
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/source/check.py",
+      "bytes": 68149,
+      "sha256": "084f4f45aa353f7a7d8adc5c4a78eae4b09ee83fb2119741b01a317225d3fa69",
+      "accessThisStage": "opaque-byte-hash-only"
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/source-manifest.json",
+      "bytes": 10425,
+      "sha256": "37a865330bbb86d0aef03dd3de775b830d7398abe69717b80c64860d4a8caa21",
+      "accessThisStage": "opaque-byte-hash-only"
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/result-manifest.json",
+      "bytes": 25781,
+      "sha256": "e60a5bf356f9f27bf31f79fc3274c0c37675353f1b8b0de20a1a6fc1b69487d8",
+      "accessThisStage": "opaque-byte-hash-only"
+    }
+  ],
+  "authoredNote": {
+    "path": "research/m31-validator-qualification-2026-10-17/review/CONTROL-REPAIR-RESULT.md",
+    "bytes": 6207,
+    "sha256": "93fc90aaa5217f53f9996ded485915aecb81cbd442f8f1907ff8bd5832b713b3"
+  },
+  "savedFindings": {
+    "qualificationPassed": true,
+    "intendedCorruptionControlsPassed": 21,
+    "corruptionControlCount": 21,
+    "baselineRecordCount": 10,
+    "baselineRecordsWithEmptyErrors": 10,
+    "scheduledStateCounts": {
+      "certified": 6,
+      "independentlyVerified": 6,
+      "modelAdmitted": 6,
+      "reached": 6
+    },
+    "correctedControlError": "node-zero-rule",
+    "counterRegressionError": "filter-work-counter-reconstruction",
+    "historicalOriginalPassed": false,
+    "historicalOriginalAdvancement": false,
+    "freshReplication": false,
+    "transferAuthorized": false
+  },
+  "sourceCommit": "a5f0b2092965b536bd7f096194303f510f787356",
+  "sourceManifestSha256": "102a500c818a5bb4652374c3c8621b7acc7bd42b0db53692646e942de8e27c3b",
+  "originalSourceCommit": "2a957d2b0bb26e731c8cd184bc13f51f673e9a0d",
+  "originalResultCommit": "5a5efeef2d216188fa93a8034c4573d7327c5411",
+  "originalResultManifestSha256": "e60a5bf356f9f27bf31f79fc3274c0c37675353f1b8b0de20a1a6fc1b69487d8",
+  "scope": "Interpretation and opaque-pin verification of existing saved reports. Future exact-normalizer reuse appears only as an untested source-audit question; no new source investigation was performed.",
+  "checksPerformed": [
+    "JSON parsing and field assertions on saved reports",
+    "Opaque byte size/SHA256 checks against fixed report/source/manifest pins",
+    "Prose and inventory authoring"
+  ],
+  "excluded": [
+    "no numerical module import",
+    "no scientific evaluation",
+    "no checker or qualification rerun",
+    "no candidate, simulator or generator invocation",
+    "no numerical probes",
+    "no new scientific source content read",
+    "no source repair or implementation",
+    "no old package edit",
+    "no commit",
+    "no publication action"
+  ]
+}

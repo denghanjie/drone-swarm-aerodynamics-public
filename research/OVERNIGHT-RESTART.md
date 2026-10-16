@@ -1,3 +1,9 @@
+# Latest completed numerical checkpoint: repaired validator qualified on saved corpus
+
+m31-validator-qualification-2026-10-17 passed its sole allocation:21/21 intended negative tests,4fixed controls,6/6old states revalidated; historical failure remains unchanged. Read its RESTART.md and MILESTONE-SUMMARY.md. First display QA passed224checks; Three.js viewer http://127.0.0.1:8876/research/m31-validator-qualification-2026-10-17/viewer/ replays the same historical flights and shows old/new outcomes separately. All numerical allocations closed. Next is exact-normalizer-reuse source planning, not an allocated numerical successor. Broader goal remains incomplete; preserve8876; cutoff23:00UTC16Oct remains.
+
+---
+
 # Current preparation: exposed-corpus validator qualification
 
 The failed moving-state result is publicly verified at5a5efeef2d216188fa93a8034c4573d7327c5411;128pins match. Receipt: publication-receipts/m31-moving-admission-result-2026-10-17.json. New m31-validator-qualification-2026-10-17 is source preparation only:21fixednegative controls and the complete old saved corpus, no new flight/candidate. Read its PROTOCOL and exact source decision before continuation. The old moving-state failure stays closed. No new qualification has executed at this update. Keep8876running. New scientific launch cutoff23:00UTC16Oct remains in force.

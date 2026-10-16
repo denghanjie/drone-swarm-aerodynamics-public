@@ -1,0 +1,275 @@
+{
+  "stage": "qualification",
+  "sourceCommit": "a5f0b2092965b536bd7f096194303f510f787356",
+  "sourceManifestSha256": "102a500c818a5bb4652374c3c8621b7acc7bd42b0db53692646e942de8e27c3b",
+  "configSha256": "70eb6bb3b3faddf5ffa356cce3c2768303477a884ea985a85563ce041b02f9e7",
+  "priorSourceCommit": "2a957d2b0bb26e731c8cd184bc13f51f673e9a0d",
+  "priorResultCommit": "5a5efeef2d216188fa93a8034c4573d7327c5411",
+  "priorResultManifestSha256": "e60a5bf356f9f27bf31f79fc3274c0c37675353f1b8b0de20a1a6fc1b69487d8",
+  "launchCutoffUtc": "2026-10-16T23:00:00Z",
+  "commandTemplate": [
+    "PYTHON",
+    "-I",
+    "-B",
+    "PACKAGE/source/qualify.py",
+    "--config",
+    "PACKAGE/source/config.json",
+    "--manifest",
+    "PACKAGE/source-manifest.json",
+    "--output",
+    "PACKAGE/results/qualification.json",
+    "--root",
+    "REPOSITORY_ROOT"
+  ],
+  "runtimePins": {
+    "python": {
+      "bytes": 18058560,
+      "sha256": "7a314947596fc484d4ec36ffc28e843b78d6d749c68736f8b5c24e7333f418eb"
+    }
+  },
+  "runtimeIsolation": {
+    "pythonIsolated": true,
+    "bytecodeDisabled": true,
+    "clearedChildEnvironmentKeys": [
+      "NODE_OPTIONS",
+      "NODE_PATH",
+      "NODE_V8_COVERAGE",
+      "NODE_REDIRECT_WARNINGS",
+      "PYTHONPATH",
+      "PYTHONHOME",
+      "PYTHONSTARTUP",
+      "PYTHONUSERBASE",
+      "PYTHONINSPECT",
+      "LD_PRELOAD",
+      "LD_AUDIT",
+      "LD_LIBRARY_PATH",
+      "DYLD_INSERT_LIBRARIES",
+      "DYLD_LIBRARY_PATH",
+      "DYLD_FRAMEWORK_PATH",
+      "DYLD_FALLBACK_LIBRARY_PATH",
+      "DYLD_FALLBACK_FRAMEWORK_PATH"
+    ]
+  },
+  "priorSourceManifestSha256": "37a865330bbb86d0aef03dd3de775b830d7398abe69717b80c64860d4a8caa21",
+  "priorSourceFileCount": 53,
+  "priorResultFileCount": 128,
+  "historicalOriginalPassed": false,
+  "historicalOriginalAdvancement": false,
+  "transferAuthorized": false,
+  "wallLimitSeconds": 600,
+  "guardianWallLimitSeconds": 610,
+  "sampledRssLimitBytes": 1073741824,
+  "scientificOutputLimitBytes": 67108864,
+  "qualificationReportLimitBytes": 2097152,
+  "referenceLimitBytes": 33554432,
+  "logMetadataLimitBytes": 16777216,
+  "outputLimitBytes": 83886080,
+  "finalReportLimitBytes": 65536,
+  "nominalSleepSeconds": 0.05,
+  "success": true,
+  "closed": true,
+  "samples": 489,
+  "peakSampledGroupRssBytes": 107577344,
+  "maxSampleGapSeconds": 0.1265767076984048,
+  "terminationReason": null,
+  "scope": "Exposed-corpus validator qualification only. Historical failed gate remains false; no new trajectory, retroactive pass or transfer authorization.",
+  "containmentScope": "Reviewed child spawns no subprocesses; retained guardian owns its process group. Sampling is not continuous peak or hostile escape isolation.",
+  "accountingScope": "New results only: qualification.json and ten reference files share64MiB; report2MiB and each reference32MiB. Metadata plus public/private logs share16MiB; combined80MiB. Old corpus is read-only and rehashed before/after.",
+  "processGroup": 29587,
+  "scientificChildAbsentBeforeRelease": true,
+  "exitCode": 0,
+  "guardianExitCode": 0,
+  "childGroupAbsent": true,
+  "logs": [
+    {
+      "path": "research/m31-validator-qualification-2026-10-17/results/qualification-stdout.log",
+      "rawBytes": 137,
+      "rawSha256": "8826c19f2375771ffb3fe4e878f9c3bc83158631f560329987118cf5ab743de4",
+      "publishedBytes": 137,
+      "publishedSha256": "8826c19f2375771ffb3fe4e878f9c3bc83158631f560329987118cf5ab743de4",
+      "redaction": "Machine/runtime prefixes replaced; raw logs retained privately."
+    },
+    {
+      "path": "research/m31-validator-qualification-2026-10-17/results/qualification-stderr.log",
+      "rawBytes": 0,
+      "rawSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "publishedBytes": 0,
+      "publishedSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "redaction": "Machine/runtime prefixes replaced; raw logs retained privately."
+    }
+  ],
+  "privateLogDirectorySha256": "c8a34c50204b19c1cbae6ecf35e3f54610441712b9bc438e4b5d59b40006cdfd",
+  "privateRawLogs": [
+    {
+      "name": "qualification-stderr.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "qualification-stdout.raw",
+      "bytes": 137,
+      "sha256": "8826c19f2375771ffb3fe4e878f9c3bc83158631f560329987118cf5ab743de4"
+    }
+  ],
+  "scientificEvidence": [
+    {
+      "path": "research/m31-validator-qualification-2026-10-17/results/qualification.json",
+      "bytes": 33837,
+      "sha256": "d3249e923b6b96daf316b04f693a9e16f9f29b3b1ea02f55e74dbf1f6788ff04"
+    },
+    {
+      "path": "research/m31-validator-qualification-2026-10-17/results/reference/distant-zero.json",
+      "bytes": 4762,
+      "sha256": "e5ab19193732c9b61bc754560a0a0709ad964aeaedd84e7d845b7370c68df265"
+    },
+    {
+      "path": "research/m31-validator-qualification-2026-10-17/results/reference/order-incompatible.json",
+      "bytes": 3709,
+      "sha256": "c078cc3d06e49a83f40a7f351928baf193932020711551d95ca72d02b459dd8e"
+    },
+    {
+      "path": "research/m31-validator-qualification-2026-10-17/results/reference/positive.json",
+      "bytes": 10610,
+      "sha256": "209a39a2c7d422da3a94998108128d595f7051b3050ba706ca64642a5ab03467"
+    },
+    {
+      "path": "research/m31-validator-qualification-2026-10-17/results/reference/raw-force.json",
+      "bytes": 1372,
+      "sha256": "db8e26862048ac63e79ad38f6d917065f64a2e91cd1590e07ccb68447b1fd521"
+    },
+    {
+      "path": "research/m31-validator-qualification-2026-10-17/results/reference/run-a-t0.json",
+      "bytes": 1264529,
+      "sha256": "d3d83350cb283cb01cffb07b24ab971cba353910a5c3bea1bf3db15e1481d16b"
+    },
+    {
+      "path": "research/m31-validator-qualification-2026-10-17/results/reference/run-a-t10.json",
+      "bytes": 1239844,
+      "sha256": "97dee908796308621ec8776b6cc9b0f6e1baaeb12c5a2951c19313253bd06af3"
+    },
+    {
+      "path": "research/m31-validator-qualification-2026-10-17/results/reference/run-a-t5.json",
+      "bytes": 1261512,
+      "sha256": "72695e26f3d5c24f870171cb6be070af4754e9027ad7914acf1d837ba391c557"
+    },
+    {
+      "path": "research/m31-validator-qualification-2026-10-17/results/reference/run-b-t0.json",
+      "bytes": 1262633,
+      "sha256": "438773dd37c21cbffc4f99db2e8361fe797b2dbecfdea76ae3bdde3d1f72fa6c"
+    },
+    {
+      "path": "research/m31-validator-qualification-2026-10-17/results/reference/run-b-t10.json",
+      "bytes": 1237737,
+      "sha256": "8dc5c09545df6e85edb6b6aeb2c258d69d7838f7970dd7b1a9d0cfd07d196cfe"
+    },
+    {
+      "path": "research/m31-validator-qualification-2026-10-17/results/reference/run-b-t5.json",
+      "bytes": 1244923,
+      "sha256": "d0e567ec9c97a3720e27c9d7dcd303cca59ca899af40a0c86d1c0e650fa30c06"
+    }
+  ],
+  "output": {
+    "path": "research/m31-validator-qualification-2026-10-17/results/qualification.json",
+    "bytes": 33837,
+    "sha256": "d3249e923b6b96daf316b04f693a9e16f9f29b3b1ea02f55e74dbf1f6788ff04"
+  },
+  "sourceAndRuntimeRechecked": true,
+  "priorCorpusRechecked": true,
+  "outputAccountingBeforeReport": {
+    "aggregateBytes": 7566514,
+    "scientificBytes": 7565468,
+    "logMetadataBytes": 1046,
+    "unclassifiedBytes": 0,
+    "files": [
+      {
+        "scope": "results",
+        "path": "qualification-attempt.json",
+        "bytes": 661
+      },
+      {
+        "scope": "results",
+        "path": "qualification-guardian.jsonl",
+        "bytes": 111
+      },
+      {
+        "scope": "results",
+        "path": "qualification-stderr.log",
+        "bytes": 0
+      },
+      {
+        "scope": "results",
+        "path": "qualification-stdout.log",
+        "bytes": 137
+      },
+      {
+        "scope": "results",
+        "path": "qualification.json",
+        "bytes": 33837
+      },
+      {
+        "scope": "results",
+        "path": "reference/distant-zero.json",
+        "bytes": 4762
+      },
+      {
+        "scope": "results",
+        "path": "reference/order-incompatible.json",
+        "bytes": 3709
+      },
+      {
+        "scope": "results",
+        "path": "reference/positive.json",
+        "bytes": 10610
+      },
+      {
+        "scope": "results",
+        "path": "reference/raw-force.json",
+        "bytes": 1372
+      },
+      {
+        "scope": "results",
+        "path": "reference/run-a-t0.json",
+        "bytes": 1264529
+      },
+      {
+        "scope": "results",
+        "path": "reference/run-a-t10.json",
+        "bytes": 1239844
+      },
+      {
+        "scope": "results",
+        "path": "reference/run-a-t5.json",
+        "bytes": 1261512
+      },
+      {
+        "scope": "results",
+        "path": "reference/run-b-t0.json",
+        "bytes": 1262633
+      },
+      {
+        "scope": "results",
+        "path": "reference/run-b-t10.json",
+        "bytes": 1237737
+      },
+      {
+        "scope": "results",
+        "path": "reference/run-b-t5.json",
+        "bytes": 1244923
+      },
+      {
+        "scope": "private",
+        "path": "qualification-stderr.raw",
+        "bytes": 0
+      },
+      {
+        "scope": "private",
+        "path": "qualification-stdout.raw",
+        "bytes": 137
+      }
+    ],
+    "violations": []
+  },
+  "finalOutputBytesBeforeReport": 7566514,
+  "qualificationReportPassed": true,
+  "wallSeconds": 45.00549075007439
+}

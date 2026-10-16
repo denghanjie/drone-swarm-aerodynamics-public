@@ -1,0 +1,5 @@
+# Publication review
+
+New artifacts contain synthetic-state validation, public code/provenance, finite control witnesses, scoped reviews and display-only screenshots. No original user attachment, private paper asset, credential, real-world personal data or concrete private host path is included. Public logs use generic path replacements; raw logs remain private and are represented publicly only by hashes/byte counts. The standard scan found no sensitive concrete path or token. Rendered screenshots show only the research page.
+
+The old failed package and the entire frozen new source chain are rehashed unchanged after execution. The result manifest pins them, all new outputs, saved reviews and display evidence. The mutable overnight index merely points here and is excluded. Commit/push the exact result, then retrieve its manifest over HTTPS at that commit and verify every local/committed pin before claiming publication complete. Keep the original failure and new qualification distinct in every summary.

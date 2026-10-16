@@ -1,0 +1,9 @@
+# Closed saved-corpus qualification
+
+The sole qualification allocation passed and is permanently closed. Source a5f0b2092965b536bd7f096194303f510f787356 was independently publicly verified before execution; source-manifest SHA256102a500c818a5bb4652374c3c8621b7acc7bd42b0db53692646e942de8e27c3b. All21 targeted negative tests, four fixed controls and six scheduled saved states pass. Original moving-state failed flags remain false. No retry, rewrite of old results or fresh flight/candidate run occurred.
+
+Read MILESTONE-SUMMARY.md, RESULT-CLAIM-LEDGER.md, results/qualification.json, results/qualification-supervision.json and saved reviews. The new reference bodies reuse the same independent numerical helpers, with separate current validation provenance. This is retrospective qualification on exposed records, not new replication or browser transfer.
+
+The first display-only allocation passed224checks, including19,584rendered center components, old/new outcome separation and five corrupted-evidence fail-closed routes. Its second optional allocation remains unused and is not needed without a concrete defect. Viewer: http://127.0.0.1:8876/research/m31-validator-qualification-2026-10-17/viewer/ . It replays the same historical flights as explicit context. Keep localhost8876running.
+
+Next research priority is source-only planning for exact within-frame normalizer reuse, with fresh moving-state admission as a prospective gate in a later paired ablation. Current data do not prove which primitive dominates cost or that reuse saves time. Physical calibration remains a separate unresolved requirement. No successor numerical allocation exists at this restart. New source review, public freeze/verification, resource limits and single-attempt rules are required before future execution. No scientific launch at/after2026-10-16T23:00:00Z. Overall5,000moving-drone research goal remains incomplete.
