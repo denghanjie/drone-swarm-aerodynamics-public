@@ -1,3 +1,11 @@
+# Active preparation: causal saved-root secant diagnostic
+
+`m31-root-secant-2026-10-16/` has a prospective protocol, fixed input/config, candidate, independent checker and supervised one-shot execution source. Preparation is static only; no prediction score, trajectory or synthetic fixture has run. Final static review/source freeze/publication are pending. Before any execution inspect source-manifest, publication verification and results locks/closures. Candidate and review allocations are not yet consumed.
+
+The two-paper desk result below is published at89862278dd99efd73b008d20576204a6e9530e3a, with exact remote manifest/local committed pins verified and receipt pushed at42cc94c. New candidate remains an exposed same-state endpoint diagnostic, not a new flight or a novel extrapolation method. Keep port8876 and closed history intact. This mutable navigation index is outside experiment pins.
+
+---
+
 # Latest continuation: two-paper review closed; causal root prediction proposed
 
 `m31-reuse-literature-2026-10-16/` completes its two-paper/ten-file desk review. All 8 researcher and 4 parent source operations are closed. Ahmad–Cohen1973 and Tuckerman–Berne–Martyna1992 provide admitted method antecedents within recorded access/status limits; neither validates this drone approximation. Earlier internal scalar prediction/adaptive refresh and M28 feedback cadence prevent a new-extrapolation claim.

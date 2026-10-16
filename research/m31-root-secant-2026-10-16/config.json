@@ -1,0 +1,60 @@
+{
+  "kind": "causal-saved-joint-root-secant",
+  "input": {
+    "path": "research/m31-ratio-reuse-2026-10-16/results/boids16-reuse10ms-0.00125.json",
+    "bytes": 15814425,
+    "sha256": "ca0a19b3fe2c9f17ec9f89dcd0fda19a649912033fd4809882da9d7a4cfc7e07"
+  },
+  "provenance": [
+    {
+      "path": "research/m31-ratio-reuse-2026-10-16/results/independent-review.json",
+      "bytes": 27348,
+      "sha256": "e88cc48df67113deb75c5fdc670991eb145031e8a15d24530f4d52c4f5b13816"
+    },
+    {
+      "path": "research/m31-ratio-reuse-2026-10-16/results/review-run.json",
+      "bytes": 3542,
+      "sha256": "038344ce3a678b3d473e59e52c387d73837a699da807b663d87b5ce99b64093a"
+    },
+    {
+      "path": "research/m31-ratio-reuse-2026-10-16/result-manifest.json",
+      "bytes": 28439,
+      "sha256": "b7b9b4d05f137120cb471780950d953eb906a3be389e595cb890f7d1aa0af4ae"
+    },
+    {
+      "path": "research/publication-receipts/m31-ratio-reuse-result-2026-10-16.json",
+      "bytes": 550,
+      "sha256": "62498b8dbecfd6daf4b216b9c099a2a158cd85aec9aa85236f31afccb2869ab5"
+    }
+  ],
+  "events": 201,
+  "targets": 200,
+  "n": 16,
+  "dt": 0.00125,
+  "refreshDt": 0.01,
+  "duration": 2,
+  "mass": 0.027,
+  "gravity": 9.81,
+  "armCoordinate": 0.028,
+  "rootDomain": "finite and 0 < x <= 1",
+  "thresholds": {
+    "rotor": 0.001,
+    "force": 0.001,
+    "moment": 0.001
+  },
+  "agreementAtol": 1e-11,
+  "agreementRtol": 1e-10,
+  "residualLimit": 1e-09,
+  "sourceReceiverLimit": 2e-09,
+  "limits": {
+    "wallSeconds": 60,
+    "cooperativeSeconds": 55,
+    "rssBytes": 536870912,
+    "resultsBytes": 10485760,
+    "logsBytes": 1048576,
+    "closureReserveBytes": 131072,
+    "packageBytes": 16777216,
+    "candidateResultsBytes": 6291456
+  },
+  "geometryAdmission": "inherited prior audited geometry; new checks of saved metadata and root/load correspondence only"
+}
