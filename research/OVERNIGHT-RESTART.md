@@ -1,3 +1,13 @@
+# Current continuation: fixed 10 ms ratio reuse rejected
+
+Newest completed experiment: `m31-ratio-reuse-2026-10-16/`. Six paths completed, prescribed saved fields of all three full-reference paths reproduced exactly, ten refinement gates passed (eight below-floor), and 559,589 independent assertions passed. The approximation failed all 24 trajectory/event-error gates: finest maximum sampled position difference 36.861 mm versus a 1 mm limit. Fewer joint queries (11,263 full versus 603 reuse across grids) are not measured speedups. Both scientific allocations are closed; no reruns.
+
+Source commit b8ff0c4dca71187db7efd8d72cde2d83fcdb3288; manifest cdec3a218b10658f2196e56a47aac71c8811ee460bfcaa368a808297cdd77560. Read MILESTONE-SUMMARY, RESULT-CLAIM-LITERATURE-LEDGER, independent interpretation, POSTRUN-RESTART, NEXT-QUESTION and publication receipts. The new Three.js raw-bound replay is http://127.0.0.1:8876/research/m31-ratio-reuse-2026-10-16/viewer/ . Final QA passed 53 checks, including mobile and altered-evidence rejection. Keep server 8876 running. No science/review/QA process remains active.
+
+The overall goal remains active/incomplete; physical validity, fresh confirmation, novel contribution and 5,000-drone real-time behavior remain unresolved. This turn made experimental/publication progress, not an unchanged-blocker wait. Next-question notes are planning only, with no fresh execution allocation. Historical windows and budgets below remain closed/historical. This navigation index is mutable and excluded from experimental pins.
+
+---
+
 # Current continuation: force/moment feedback ablation
 
 The newest completed experiment is `m31-force-ablation-2026-10-16/`: 12/12 paths passed, six old-seed off/full recordings reproduced exactly, and 360,829 independent saved-data assertions passed. Full versus force-only motion differs by up to 0.511 m over two seconds. Removing added aerodynamic torque reduces maximum recorded tilt from 19.56° to 8.90°, while final group mean height remains similar. This is within-model sensitivity, not physical validation, novelty or a speed benefit. Both scientific allocations are closed. Read its MILESTONE-SUMMARY, RESULT-CLAIM-LITERATURE-LEDGER, POSTRUN-RESTART and result publication receipt in `publication-receipts/`.

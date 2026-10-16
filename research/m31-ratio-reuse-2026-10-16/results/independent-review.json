@@ -1,0 +1,984 @@
+{
+  "kind": "independent-saved-ratio-reuse-review",
+  "complete": true,
+  "method": "independent fixed-state geometry/analytic roots/body derivatives/cache arithmetic/event errors/saved-slope algebra; no trajectory integration",
+  "limits": [
+    "A passing audit establishes saved-evidence consistency; approximation acceptance is a separate field.",
+    "Incomplete paths or globally interrupted analysis fail closed; candidate prefixes remain evidence but are not accepted as a full audit.",
+    "Ordinary cached stages have no current geometry or closure evaluation; captured current-domain reconstructions are descriptive only.",
+    "Initial/controller generation, group summaries and swept collision checks are not independently rerun.",
+    "Only first/last saved RK steps are reconstructed; sampled refinement is not a rigorous trajectory-error bound.",
+    "Analytic guard records are checked against frozen predicates and source; candidate rejection code is not re-executed.",
+    "Joint-query counts are evaluator attempts, not measured speedups; synthetic controls and reviewer work are separate.",
+    "One exposed seed and provisional model do not establish physical validity, stability, continuous safety, novelty or 5000-drone performance."
+  ],
+  "primaryPass": true,
+  "reuseExecuted": true,
+  "allocationPass": true,
+  "approximationPass": false,
+  "decision": "missed-declared-targets",
+  "convergence": [
+    {
+      "case": "boids16",
+      "mode": "coupled",
+      "pass": true,
+      "coarseMedium": {
+        "position": 3.2652685575202245e-07,
+        "velocity": 1.248542769859481e-06,
+        "attitude": 2.0128315511267333e-06,
+        "rotor": 9.533042592991991e-07,
+        "bodyRate": 2.33370085177897e-05
+      },
+      "mediumFine": {
+        "position": 5.353805181811646e-08,
+        "velocity": 2.1411907658663509e-07,
+        "attitude": 1.433414308051835e-07,
+        "rotor": 1.1362859502438268e-07,
+        "bodyRate": 1.8189440748735147e-06
+      },
+      "gates": {
+        "position": {
+          "coarseMedium": 3.2652685575202245e-07,
+          "mediumFine": 5.353805181811646e-08,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        },
+        "velocity": {
+          "coarseMedium": 1.248542769859481e-06,
+          "mediumFine": 2.1411907658663509e-07,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        },
+        "attitude": {
+          "coarseMedium": 2.0128315511267333e-06,
+          "mediumFine": 1.433414308051835e-07,
+          "tolerance": 0.0017453292519943296,
+          "bothTiny": true,
+          "pass": true
+        },
+        "rotor": {
+          "coarseMedium": 9.533042592991991e-07,
+          "mediumFine": 1.1362859502438268e-07,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        },
+        "bodyRate": {
+          "coarseMedium": 2.33370085177897e-05,
+          "mediumFine": 1.8189440748735147e-06,
+          "tolerance": 0.001,
+          "bothTiny": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "case": "boids16",
+      "mode": "reuse10ms",
+      "pass": true,
+      "coarseMedium": {
+        "position": 4.968932166333953e-07,
+        "velocity": 1.3346605563223744e-06,
+        "attitude": 1.2408800745753192e-06,
+        "rotor": 1.9084135828157822e-06,
+        "bodyRate": 1.505965483573583e-05
+      },
+      "mediumFine": {
+        "position": 2.9634294034385108e-08,
+        "velocity": 7.949678893637691e-08,
+        "attitude": 7.379412834531717e-08,
+        "rotor": 1.135313140738936e-07,
+        "bodyRate": 8.9610021076516e-07
+      },
+      "gates": {
+        "position": {
+          "coarseMedium": 4.968932166333953e-07,
+          "mediumFine": 2.9634294034385108e-08,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        },
+        "velocity": {
+          "coarseMedium": 1.3346605563223744e-06,
+          "mediumFine": 7.949678893637691e-08,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        },
+        "attitude": {
+          "coarseMedium": 1.2408800745753192e-06,
+          "mediumFine": 7.379412834531717e-08,
+          "tolerance": 0.0017453292519943296,
+          "bothTiny": true,
+          "pass": true
+        },
+        "rotor": {
+          "coarseMedium": 1.9084135828157822e-06,
+          "mediumFine": 1.135313140738936e-07,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        },
+        "bodyRate": {
+          "coarseMedium": 1.505965483573583e-05,
+          "mediumFine": 8.9610021076516e-07,
+          "tolerance": 0.001,
+          "bothTiny": false,
+          "pass": true
+        }
+      }
+    }
+  ],
+  "referenceAgreement": [
+    {
+      "id": "boids16-coupled-0.005",
+      "reference": "research/m31-force-ablation-2026-10-16/results/boids16-coupled-0.005.json",
+      "sha256": "3f4fd16d65576be639b488ddda98423b82a8bd5c74d92a93b8ae3898329578f5",
+      "fields": [
+        "t",
+        "states",
+        "commands",
+        "forces",
+        "modeledCorrections",
+        "corrections",
+        "derivatives",
+        "witness",
+        "group"
+      ],
+      "samples": 21,
+      "mismatches": [],
+      "pass": true
+    },
+    {
+      "id": "boids16-coupled-0.0025",
+      "reference": "research/m31-force-ablation-2026-10-16/results/boids16-coupled-0.0025.json",
+      "sha256": "25284d0565463b390c9174fc2051dbaff447b64f70612969fe8128c071d4c73a",
+      "fields": [
+        "t",
+        "states",
+        "commands",
+        "forces",
+        "modeledCorrections",
+        "corrections",
+        "derivatives",
+        "witness",
+        "group"
+      ],
+      "samples": 21,
+      "mismatches": [],
+      "pass": true
+    },
+    {
+      "id": "boids16-coupled-0.00125",
+      "reference": "research/m31-force-ablation-2026-10-16/results/boids16-coupled-0.00125.json",
+      "sha256": "2288c5161858dbbe32dbfc7bc5bb8b30ed26006bc5a89e3eef1572f6570ed4fb",
+      "fields": [
+        "t",
+        "states",
+        "commands",
+        "forces",
+        "modeledCorrections",
+        "corrections",
+        "derivatives",
+        "witness",
+        "group"
+      ],
+      "samples": 21,
+      "mismatches": [],
+      "pass": true
+    }
+  ],
+  "comparisons": [
+    {
+      "dt": 0.005,
+      "left": "coupled",
+      "right": "reuse10ms",
+      "maximumSampled": {
+        "position": 0.03686074434277369,
+        "velocity": 0.16829035177943605,
+        "attitude": 0.16283405936221287,
+        "rotor": 0.23834625914269592,
+        "bodyRate": 1.9410851137524547
+      },
+      "gates": {
+        "position": {
+          "maximum": 0.03686074434277369,
+          "tolerance": 0.001,
+          "pass": false
+        },
+        "velocity": {
+          "maximum": 0.16829035177943605,
+          "tolerance": 0.001,
+          "pass": false
+        },
+        "attitude": {
+          "maximum": 0.16283405936221287,
+          "tolerance": 0.0017453292519943296,
+          "pass": false
+        },
+        "rotor": {
+          "maximum": 0.23834625914269592,
+          "tolerance": 0.001,
+          "pass": false
+        },
+        "bodyRate": {
+          "maximum": 1.9410851137524547,
+          "tolerance": 0.001,
+          "pass": false
+        }
+      },
+      "pass": false
+    },
+    {
+      "dt": 0.0025,
+      "left": "coupled",
+      "right": "reuse10ms",
+      "maximumSampled": {
+        "position": 0.036860745355859086,
+        "velocity": 0.16829036694183303,
+        "attitude": 0.16283477126649018,
+        "rotor": 0.23834737034944084,
+        "bodyRate": 1.94109648580652
+      },
+      "gates": {
+        "position": {
+          "maximum": 0.036860745355859086,
+          "tolerance": 0.001,
+          "pass": false
+        },
+        "velocity": {
+          "maximum": 0.16829036694183303,
+          "tolerance": 0.001,
+          "pass": false
+        },
+        "attitude": {
+          "maximum": 0.16283477126649018,
+          "tolerance": 0.0017453292519943296,
+          "pass": false
+        },
+        "rotor": {
+          "maximum": 0.23834737034944084,
+          "tolerance": 0.001,
+          "pass": false
+        },
+        "bodyRate": {
+          "maximum": 1.94109648580652,
+          "tolerance": 0.001,
+          "pass": false
+        }
+      },
+      "pass": false
+    },
+    {
+      "dt": 0.00125,
+      "left": "coupled",
+      "right": "reuse10ms",
+      "maximumSampled": {
+        "position": 0.036860741576165854,
+        "velocity": 0.16829036245320803,
+        "attitude": 0.16283482351579007,
+        "rotor": 0.23834746852281224,
+        "bodyRate": 1.9410970490705355
+      },
+      "gates": {
+        "position": {
+          "maximum": 0.036860741576165854,
+          "tolerance": 0.001,
+          "pass": false
+        },
+        "velocity": {
+          "maximum": 0.16829036245320803,
+          "tolerance": 0.001,
+          "pass": false
+        },
+        "attitude": {
+          "maximum": 0.16283482351579007,
+          "tolerance": 0.0017453292519943296,
+          "pass": false
+        },
+        "rotor": {
+          "maximum": 0.23834746852281224,
+          "tolerance": 0.001,
+          "pass": false
+        },
+        "bodyRate": {
+          "maximum": 1.9410970490705355,
+          "tolerance": 0.001,
+          "pass": false
+        }
+      },
+      "pass": false
+    }
+  ],
+  "eventErrors": [
+    {
+      "id": "boids16-reuse10ms-0.005",
+      "dt": 0.005,
+      "positiveEvents": 200,
+      "maxima": {
+        "rotor": 0.034641433424826694,
+        "force": 0.022282054200094853,
+        "moment": 0.010175739826182764
+      },
+      "postMaxima": {
+        "rotor": 0.0,
+        "force": 0.0,
+        "moment": 0.0
+      },
+      "postRefreshPass": true,
+      "gates": {
+        "rotor": {
+          "maximum": 0.034641433424826694,
+          "tolerance": 0.001,
+          "pass": false
+        },
+        "force": {
+          "maximum": 0.022282054200094853,
+          "tolerance": 0.001,
+          "pass": false
+        },
+        "moment": {
+          "maximum": 0.010175739826182764,
+          "tolerance": 0.001,
+          "pass": false
+        }
+      },
+      "pass": false
+    },
+    {
+      "id": "boids16-reuse10ms-0.0025",
+      "dt": 0.0025,
+      "positiveEvents": 200,
+      "maxima": {
+        "rotor": 0.03464131722352506,
+        "force": 0.022282032557521713,
+        "moment": 0.010175727397039697
+      },
+      "postMaxima": {
+        "rotor": 0.0,
+        "force": 0.0,
+        "moment": 0.0
+      },
+      "postRefreshPass": true,
+      "gates": {
+        "rotor": {
+          "maximum": 0.03464131722352506,
+          "tolerance": 0.001,
+          "pass": false
+        },
+        "force": {
+          "maximum": 0.022282032557521713,
+          "tolerance": 0.001,
+          "pass": false
+        },
+        "moment": {
+          "maximum": 0.010175727397039697,
+          "tolerance": 0.001,
+          "pass": false
+        }
+      },
+      "pass": false
+    },
+    {
+      "id": "boids16-reuse10ms-0.00125",
+      "dt": 0.00125,
+      "positiveEvents": 200,
+      "maxima": {
+        "rotor": 0.034641310306829855,
+        "force": 0.02228203128505856,
+        "moment": 0.0101757266661471
+      },
+      "postMaxima": {
+        "rotor": 0.0,
+        "force": 0.0,
+        "moment": 0.0
+      },
+      "postRefreshPass": true,
+      "gates": {
+        "rotor": {
+          "maximum": 0.034641310306829855,
+          "tolerance": 0.001,
+          "pass": false
+        },
+        "force": {
+          "maximum": 0.02228203128505856,
+          "tolerance": 0.001,
+          "pass": false
+        },
+        "moment": {
+          "maximum": 0.0101757266661471,
+          "tolerance": 0.001,
+          "pass": false
+        }
+      },
+      "pass": false
+    }
+  ],
+  "descriptive": [
+    {
+      "id": "boids16-coupled-0.005",
+      "mode": "coupled",
+      "dt": 0.005,
+      "maxRecordedStageTiltDegrees": 19.557309536951607,
+      "finalCentroid": [
+        -6.119114384426938,
+        -0.7567806792076117,
+        3.6553639790039463
+      ],
+      "minimumSweptSeparation": 0.5714540698754266,
+      "counts": {
+        "integrationStageAttempts": 1600,
+        "endpointAttempts": 21,
+        "jointQueryAttempts": 1621,
+        "cachedApplicationAttempts": 0,
+        "refreshEventAttempts": 0,
+        "propagationRefreshAttempts": 0,
+        "terminalAuditAttempts": 0,
+        "saturatedControllerUpdates": 0
+      }
+    },
+    {
+      "id": "boids16-coupled-0.0025",
+      "mode": "coupled",
+      "dt": 0.0025,
+      "maxRecordedStageTiltDegrees": 19.556299889542416,
+      "finalCentroid": [
+        -6.119114344939092,
+        -0.7567807068877063,
+        3.6553639818308916
+      ],
+      "minimumSweptSeparation": 0.5714540986393102,
+      "counts": {
+        "integrationStageAttempts": 3200,
+        "endpointAttempts": 21,
+        "jointQueryAttempts": 3221,
+        "cachedApplicationAttempts": 0,
+        "refreshEventAttempts": 0,
+        "propagationRefreshAttempts": 0,
+        "terminalAuditAttempts": 0,
+        "saturatedControllerUpdates": 0
+      }
+    },
+    {
+      "id": "boids16-coupled-0.00125",
+      "mode": "coupled",
+      "dt": 0.00125,
+      "maxRecordedStageTiltDegrees": 19.555806443232534,
+      "finalCentroid": [
+        -6.119114340998772,
+        -0.7567807083756847,
+        3.6553639837593215
+      ],
+      "minimumSweptSeparation": 0.5714541003781142,
+      "counts": {
+        "integrationStageAttempts": 6400,
+        "endpointAttempts": 21,
+        "jointQueryAttempts": 6421,
+        "cachedApplicationAttempts": 0,
+        "refreshEventAttempts": 0,
+        "propagationRefreshAttempts": 0,
+        "terminalAuditAttempts": 0,
+        "saturatedControllerUpdates": 0
+      }
+    },
+    {
+      "id": "boids16-reuse10ms-0.005",
+      "mode": "reuse10ms",
+      "dt": 0.005,
+      "maxRecordedStageTiltDegrees": 19.60777762485426,
+      "finalCentroid": [
+        -6.119294478969662,
+        -0.7563031824556834,
+        3.657312678625764
+      ],
+      "minimumSweptSeparation": 0.5652385996359376,
+      "counts": {
+        "integrationStageAttempts": 1600,
+        "endpointAttempts": 21,
+        "jointQueryAttempts": 201,
+        "cachedApplicationAttempts": 2001,
+        "refreshEventAttempts": 201,
+        "propagationRefreshAttempts": 200,
+        "terminalAuditAttempts": 1,
+        "saturatedControllerUpdates": 0
+      }
+    },
+    {
+      "id": "boids16-reuse10ms-0.0025",
+      "mode": "reuse10ms",
+      "dt": 0.0025,
+      "maxRecordedStageTiltDegrees": 19.605337192896066,
+      "finalCentroid": [
+        -6.119294417620215,
+        -0.756303205966984,
+        3.657312698014862
+      ],
+      "minimumSweptSeparation": 0.5652386354919621,
+      "counts": {
+        "integrationStageAttempts": 3200,
+        "endpointAttempts": 21,
+        "jointQueryAttempts": 201,
+        "cachedApplicationAttempts": 3601,
+        "refreshEventAttempts": 201,
+        "propagationRefreshAttempts": 200,
+        "terminalAuditAttempts": 1,
+        "saturatedControllerUpdates": 0
+      }
+    },
+    {
+      "id": "boids16-reuse10ms-0.00125",
+      "mode": "reuse10ms",
+      "dt": 0.00125,
+      "maxRecordedStageTiltDegrees": 19.605263061414924,
+      "finalCentroid": [
+        -6.119294413973126,
+        -0.7563032073576278,
+        3.657312699184702
+      ],
+      "minimumSweptSeparation": 0.5652368475306266,
+      "counts": {
+        "integrationStageAttempts": 6400,
+        "endpointAttempts": 21,
+        "jointQueryAttempts": 201,
+        "cachedApplicationAttempts": 6801,
+        "refreshEventAttempts": 201,
+        "propagationRefreshAttempts": 200,
+        "terminalAuditAttempts": 1,
+        "saturatedControllerUpdates": 0
+      }
+    }
+  ],
+  "totalJointQueryAttempts": 11866,
+  "syntheticCachedControlAttempts": 8,
+  "aggregateBeforeReviewBytes": 54666904,
+  "sourceCommit": "b8ff0c4dca71187db7efd8d72cde2d83fcdb3288",
+  "sourceManifestSHA256": "cdec3a218b10658f2196e56a47aac71c8811ee460bfcaa368a808297cdd77560",
+  "candidateElapsedSeconds": 2.965186874382198,
+  "candidateSampledPeakRSSKiB": 312992,
+  "pass": true,
+  "checkCount": 559589,
+  "failures": [],
+  "savedInstantaneousEndpointsAndEventsChecked": 666,
+  "cachedEvaluationsChecked": 1293,
+  "capturedReuseCurrentDomainAudits": [
+    {
+      "id": "boids16-reuse10ms-0.005",
+      "step": 0,
+      "stage": 1,
+      "t": 0,
+      "admitted": true,
+      "descendingEligible": true,
+      "cachedVersusFreshLoadError": {
+        "rotor": 4.1915770930084817e-16,
+        "force": 2.619735683130301e-16,
+        "moment": 1.1715814141122404e-16
+      }
+    },
+    {
+      "id": "boids16-reuse10ms-0.005",
+      "step": 0,
+      "stage": 2,
+      "t": 0.0025,
+      "admitted": true,
+      "descendingEligible": true,
+      "cachedVersusFreshLoadError": {
+        "rotor": 0.004952658806311574,
+        "force": 0.0009064707320964404,
+        "moment": 0.0007515650975918216
+      }
+    },
+    {
+      "id": "boids16-reuse10ms-0.005",
+      "step": 0,
+      "stage": 3,
+      "t": 0.0025,
+      "admitted": true,
+      "descendingEligible": true,
+      "cachedVersusFreshLoadError": {
+        "rotor": 0.004742512655544509,
+        "force": 0.0008004101288774916,
+        "moment": 0.0007202876193661517
+      }
+    },
+    {
+      "id": "boids16-reuse10ms-0.005",
+      "step": 0,
+      "stage": 4,
+      "t": 0.005,
+      "admitted": true,
+      "descendingEligible": true,
+      "cachedVersusFreshLoadError": {
+        "rotor": 0.009604879026535586,
+        "force": 0.0016067827776947096,
+        "moment": 0.0014194830391107333
+      }
+    },
+    {
+      "id": "boids16-reuse10ms-0.005",
+      "step": 399,
+      "stage": 1,
+      "t": 1.995,
+      "admitted": true,
+      "descendingEligible": true,
+      "cachedVersusFreshLoadError": {
+        "rotor": 0.002941312337029403,
+        "force": 0.001269267101459941,
+        "moment": 0.0013193495993698422
+      }
+    },
+    {
+      "id": "boids16-reuse10ms-0.005",
+      "step": 399,
+      "stage": 2,
+      "t": 1.9975,
+      "admitted": true,
+      "descendingEligible": true,
+      "cachedVersusFreshLoadError": {
+        "rotor": 0.00440918453273324,
+        "force": 0.001915181392057666,
+        "moment": 0.0019841076078136615
+      }
+    },
+    {
+      "id": "boids16-reuse10ms-0.005",
+      "step": 399,
+      "stage": 3,
+      "t": 1.9975,
+      "admitted": true,
+      "descendingEligible": true,
+      "cachedVersusFreshLoadError": {
+        "rotor": 0.004414039481950876,
+        "force": 0.0019265151662027264,
+        "moment": 0.001988900851520205
+      }
+    },
+    {
+      "id": "boids16-reuse10ms-0.005",
+      "step": 399,
+      "stage": 4,
+      "t": 2,
+      "admitted": true,
+      "descendingEligible": true,
+      "cachedVersusFreshLoadError": {
+        "rotor": 0.005887461728705755,
+        "force": 0.002583933788255528,
+        "moment": 0.002657029553802657
+      }
+    },
+    {
+      "id": "boids16-reuse10ms-0.0025",
+      "step": 0,
+      "stage": 1,
+      "t": 0,
+      "admitted": true,
+      "descendingEligible": true,
+      "cachedVersusFreshLoadError": {
+        "rotor": 4.1915770930084817e-16,
+        "force": 2.619735683130301e-16,
+        "moment": 1.1715814141122404e-16
+      }
+    },
+    {
+      "id": "boids16-reuse10ms-0.0025",
+      "step": 0,
+      "stage": 2,
+      "t": 0.00125,
+      "admitted": true,
+      "descendingEligible": true,
+      "cachedVersusFreshLoadError": {
+        "rotor": 0.002461543797470321,
+        "force": 0.0004534855125829807,
+        "moment": 0.00037893498847218083
+      }
+    },
+    {
+      "id": "boids16-reuse10ms-0.0025",
+      "step": 0,
+      "stage": 3,
+      "t": 0.00125,
+      "admitted": true,
+      "descendingEligible": true,
+      "cachedVersusFreshLoadError": {
+        "rotor": 0.0024096452988295065,
+        "force": 0.00042697061626569444,
+        "moment": 0.0003708734599744871
+      }
+    },
+    {
+      "id": "boids16-reuse10ms-0.0025",
+      "step": 0,
+      "stage": 4,
+      "t": 0.0025,
+      "admitted": true,
+      "descendingEligible": true,
+      "cachedVersusFreshLoadError": {
+        "rotor": 0.004849255488827746,
+        "force": 0.0008544340189213173,
+        "moment": 0.0007360387709418495
+      }
+    },
+    {
+      "id": "boids16-reuse10ms-0.0025",
+      "step": 799,
+      "stage": 1,
+      "t": 1.9975,
+      "admitted": true,
+      "descendingEligible": true,
+      "cachedVersusFreshLoadError": {
+        "rotor": 0.004411682711144041,
+        "force": 0.0019208373115737762,
+        "moment": 0.0019864594970902213
+      }
+    },
+    {
+      "id": "boids16-reuse10ms-0.0025",
+      "step": 799,
+      "stage": 2,
+      "t": 1.99875,
+      "admitted": true,
+      "descendingEligible": true,
+      "cachedVersusFreshLoadError": {
+        "rotor": 0.005146506116585864,
+        "force": 0.0022495308362172196,
+        "moment": 0.002320882962729399
+      }
+    },
+    {
+      "id": "boids16-reuse10ms-0.0025",
+      "step": 799,
+      "stage": 3,
+      "t": 1.99875,
+      "admitted": true,
+      "descendingEligible": true,
+      "cachedVersusFreshLoadError": {
+        "rotor": 0.00514785995786535,
+        "force": 0.0022523641099173692,
+        "moment": 0.0023220134182407102
+      }
+    },
+    {
+      "id": "boids16-reuse10ms-0.0025",
+      "step": 799,
+      "stage": 4,
+      "t": 2,
+      "admitted": true,
+      "descendingEligible": true,
+      "cachedVersusFreshLoadError": {
+        "rotor": 0.005888245873103525,
+        "force": 0.00258396249209996,
+        "moment": 0.002657193622714722
+      }
+    },
+    {
+      "id": "boids16-reuse10ms-0.00125",
+      "step": 0,
+      "stage": 1,
+      "t": 0,
+      "admitted": true,
+      "descendingEligible": true,
+      "cachedVersusFreshLoadError": {
+        "rotor": 4.1915770930084817e-16,
+        "force": 2.619735683130301e-16,
+        "moment": 1.1715814141122404e-16
+      }
+    },
+    {
+      "id": "boids16-reuse10ms-0.00125",
+      "step": 0,
+      "stage": 2,
+      "t": 0.000625,
+      "admitted": true,
+      "descendingEligible": true,
+      "cachedVersusFreshLoadError": {
+        "rotor": 0.001227035388283699,
+        "force": 0.00022680513488114727,
+        "moment": 0.00019024946966124853
+      }
+    },
+    {
+      "id": "boids16-reuse10ms-0.00125",
+      "step": 0,
+      "stage": 3,
+      "t": 0.000625,
+      "admitted": true,
+      "descendingEligible": true,
+      "cachedVersusFreshLoadError": {
+        "rotor": 0.001214143406328438,
+        "force": 0.00022017650189685325,
+        "moment": 0.0001882039017685364
+      }
+    },
+    {
+      "id": "boids16-reuse10ms-0.00125",
+      "step": 0,
+      "stage": 4,
+      "t": 0.00125,
+      "admitted": true,
+      "descendingEligible": true,
+      "cachedVersusFreshLoadError": {
+        "rotor": 0.002435801533192266,
+        "force": 0.00044035216028259235,
+        "moment": 0.00037492023791414124
+      }
+    },
+    {
+      "id": "boids16-reuse10ms-0.00125",
+      "step": 1599,
+      "stage": 1,
+      "t": 1.99875,
+      "admitted": true,
+      "descendingEligible": true,
+      "cachedVersusFreshLoadError": {
+        "rotor": 0.005147191274552939,
+        "force": 0.002250946073951581,
+        "moment": 0.0023214428163728833
+      }
+    },
+    {
+      "id": "boids16-reuse10ms-0.00125",
+      "step": 1599,
+      "stage": 2,
+      "t": 1.9993750000000001,
+      "admitted": true,
+      "descendingEligible": true,
+      "cachedVersusFreshLoadError": {
+        "rotor": 0.005514891986511584,
+        "force": 0.002416737454783126,
+        "moment": 0.002489101575615874
+      }
+    },
+    {
+      "id": "boids16-reuse10ms-0.00125",
+      "step": 1599,
+      "stage": 3,
+      "t": 1.9993750000000001,
+      "admitted": true,
+      "descendingEligible": true,
+      "cachedVersusFreshLoadError": {
+        "rotor": 0.005515246820363276,
+        "force": 0.002417445562542472,
+        "moment": 0.0024893759513559557
+      }
+    },
+    {
+      "id": "boids16-reuse10ms-0.00125",
+      "step": 1599,
+      "stage": 4,
+      "t": 2,
+      "admitted": true,
+      "descendingEligible": true,
+      "cachedVersusFreshLoadError": {
+        "rotor": 0.005888346401377559,
+        "force": 0.0025839667760866577,
+        "moment": 0.002657212886605558
+      }
+    }
+  ],
+  "trials": [
+    {
+      "id": "boids16-coupled-0.005",
+      "complete": true,
+      "savedSamples": 21,
+      "refreshEvents": 0,
+      "capturedStageDerivativesChecked": 8,
+      "counts": {
+        "integrationStageAttempts": 1600,
+        "endpointAttempts": 21,
+        "jointQueryAttempts": 1621,
+        "cachedApplicationAttempts": 0,
+        "refreshEventAttempts": 0,
+        "propagationRefreshAttempts": 0,
+        "terminalAuditAttempts": 0,
+        "saturatedControllerUpdates": 0
+      }
+    },
+    {
+      "id": "boids16-coupled-0.0025",
+      "complete": true,
+      "savedSamples": 21,
+      "refreshEvents": 0,
+      "capturedStageDerivativesChecked": 8,
+      "counts": {
+        "integrationStageAttempts": 3200,
+        "endpointAttempts": 21,
+        "jointQueryAttempts": 3221,
+        "cachedApplicationAttempts": 0,
+        "refreshEventAttempts": 0,
+        "propagationRefreshAttempts": 0,
+        "terminalAuditAttempts": 0,
+        "saturatedControllerUpdates": 0
+      }
+    },
+    {
+      "id": "boids16-coupled-0.00125",
+      "complete": true,
+      "savedSamples": 21,
+      "refreshEvents": 0,
+      "capturedStageDerivativesChecked": 8,
+      "counts": {
+        "integrationStageAttempts": 6400,
+        "endpointAttempts": 21,
+        "jointQueryAttempts": 6421,
+        "cachedApplicationAttempts": 0,
+        "refreshEventAttempts": 0,
+        "propagationRefreshAttempts": 0,
+        "terminalAuditAttempts": 0,
+        "saturatedControllerUpdates": 0
+      }
+    },
+    {
+      "id": "boids16-reuse10ms-0.005",
+      "complete": true,
+      "savedSamples": 21,
+      "refreshEvents": 201,
+      "capturedStageDerivativesChecked": 8,
+      "counts": {
+        "integrationStageAttempts": 1600,
+        "endpointAttempts": 21,
+        "jointQueryAttempts": 201,
+        "cachedApplicationAttempts": 2001,
+        "refreshEventAttempts": 201,
+        "propagationRefreshAttempts": 200,
+        "terminalAuditAttempts": 1,
+        "saturatedControllerUpdates": 0
+      }
+    },
+    {
+      "id": "boids16-reuse10ms-0.0025",
+      "complete": true,
+      "savedSamples": 21,
+      "refreshEvents": 201,
+      "capturedStageDerivativesChecked": 8,
+      "counts": {
+        "integrationStageAttempts": 3200,
+        "endpointAttempts": 21,
+        "jointQueryAttempts": 201,
+        "cachedApplicationAttempts": 3601,
+        "refreshEventAttempts": 201,
+        "propagationRefreshAttempts": 200,
+        "terminalAuditAttempts": 1,
+        "saturatedControllerUpdates": 0
+      }
+    },
+    {
+      "id": "boids16-reuse10ms-0.00125",
+      "complete": true,
+      "savedSamples": 21,
+      "refreshEvents": 201,
+      "capturedStageDerivativesChecked": 8,
+      "counts": {
+        "integrationStageAttempts": 6400,
+        "endpointAttempts": 21,
+        "jointQueryAttempts": 201,
+        "cachedApplicationAttempts": 6801,
+        "refreshEventAttempts": 201,
+        "propagationRefreshAttempts": 200,
+        "terminalAuditAttempts": 1,
+        "saturatedControllerUpdates": 0
+      }
+    }
+  ],
+  "elapsedSeconds": 7.170163874514401
+}

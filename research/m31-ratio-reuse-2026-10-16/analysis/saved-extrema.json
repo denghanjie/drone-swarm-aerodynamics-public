@@ -1,0 +1,204 @@
+{
+  "kind": "postrun-descriptive-saved-extrema",
+  "sourceCommit": "b8ff0c4dca71187db7efd8d72cde2d83fcdb3288",
+  "method": "Locate maxima from saved arrays only; no simulation, fitting or new gate. Drone and rotor indices are zero-based.",
+  "inputPins": [
+    {
+      "path": "results/boids16-coupled-0.005.json",
+      "bytes": 2618211,
+      "sha256": "904c1c09eda02ed2350190a5cba8f1723cc55d8bccbbbd269e1811e7b5e29dce"
+    },
+    {
+      "path": "results/boids16-reuse10ms-0.005.json",
+      "bytes": 13369038,
+      "sha256": "f0a5fcdbc6384dc3ec9107c817ce72bb3b183f4e4cc64d303cbdd3aea78dd8a3"
+    },
+    {
+      "path": "results/boids16-coupled-0.0025.json",
+      "bytes": 3472024,
+      "sha256": "19ff327f5ef9d7d3dcfb4c48c9045a32b5a3bf9aa7dfc85142a13740254e2261"
+    },
+    {
+      "path": "results/boids16-reuse10ms-0.0025.json",
+      "bytes": 14182122,
+      "sha256": "8388d302b1b16c9aa822c9facafdeb3fed32c55e2c383e755e2f2329c8028127"
+    },
+    {
+      "path": "results/boids16-coupled-0.00125.json",
+      "bytes": 5184568,
+      "sha256": "ba5da0617aaf01118f5900163432940c83018ae27c895950f25d3c393e0df4ef"
+    },
+    {
+      "path": "results/boids16-reuse10ms-0.00125.json",
+      "bytes": 15814425,
+      "sha256": "ca0a19b3fe2c9f17ec9f89dcd0fda19a649912033fd4809882da9d7a4cfc7e07"
+    }
+  ],
+  "grids": [
+    {
+      "dt": 0.005,
+      "trajectoryExtrema": {
+        "position": {
+          "maximum": 0.03686074434277369,
+          "t": 1.7,
+          "droneIndex": 11
+        },
+        "velocity": {
+          "maximum": 0.16829035177943605,
+          "t": 1.4,
+          "droneIndex": 11
+        },
+        "attitude": {
+          "maximum": 0.16283405936221287,
+          "t": 1.5,
+          "droneIndex": 11
+        },
+        "rotor": {
+          "maximum": 0.23834625914269592,
+          "t": 1.8,
+          "droneIndex": 8,
+          "rotorIndex": 2
+        },
+        "bodyRate": {
+          "maximum": 1.9410851137524547,
+          "t": 1.4,
+          "droneIndex": 11
+        }
+      },
+      "beforeRefreshExtrema": {
+        "rotor": {
+          "maximum": 0.034641433424826694,
+          "t": 1.81,
+          "eventIndex": 181,
+          "droneIndex": 8,
+          "rawSI": 0.0022938691178084614,
+          "rotorIndex": 2
+        },
+        "force": {
+          "maximum": 0.02228205420009485,
+          "t": 0.42,
+          "eventIndex": 42,
+          "droneIndex": 15,
+          "rawSI": 0.005901847695979122
+        },
+        "moment": {
+          "maximum": 0.010175739826182768,
+          "t": 0.45,
+          "eventIndex": 45,
+          "droneIndex": 15,
+          "rawSI": 0.00010672638394256792
+        }
+      }
+    },
+    {
+      "dt": 0.0025,
+      "trajectoryExtrema": {
+        "position": {
+          "maximum": 0.036860745355859086,
+          "t": 1.7,
+          "droneIndex": 11
+        },
+        "velocity": {
+          "maximum": 0.16829036694183303,
+          "t": 1.4,
+          "droneIndex": 11
+        },
+        "attitude": {
+          "maximum": 0.16283477126649018,
+          "t": 1.5,
+          "droneIndex": 11
+        },
+        "rotor": {
+          "maximum": 0.23834737034944084,
+          "t": 1.8,
+          "droneIndex": 8,
+          "rotorIndex": 2
+        },
+        "bodyRate": {
+          "maximum": 1.94109648580652,
+          "t": 1.4,
+          "droneIndex": 11
+        }
+      },
+      "beforeRefreshExtrema": {
+        "rotor": {
+          "maximum": 0.03464131722352506,
+          "t": 1.81,
+          "eventIndex": 181,
+          "droneIndex": 8,
+          "rawSI": 0.0022938614232487706,
+          "rotorIndex": 2
+        },
+        "force": {
+          "maximum": 0.022282032557521727,
+          "t": 0.42,
+          "eventIndex": 42,
+          "droneIndex": 15,
+          "rawSI": 0.0059018419635107795
+        },
+        "moment": {
+          "maximum": 0.01017572739703969,
+          "t": 0.45,
+          "eventIndex": 45,
+          "droneIndex": 15,
+          "rawSI": 0.00010672625358177658
+        }
+      }
+    },
+    {
+      "dt": 0.00125,
+      "trajectoryExtrema": {
+        "position": {
+          "maximum": 0.036860741576165854,
+          "t": 1.7,
+          "droneIndex": 11
+        },
+        "velocity": {
+          "maximum": 0.16829036245320803,
+          "t": 1.4,
+          "droneIndex": 11
+        },
+        "attitude": {
+          "maximum": 0.16283482351579007,
+          "t": 1.5,
+          "droneIndex": 11
+        },
+        "rotor": {
+          "maximum": 0.23834746852281224,
+          "t": 1.8,
+          "droneIndex": 8,
+          "rotorIndex": 2
+        },
+        "bodyRate": {
+          "maximum": 1.9410970490705355,
+          "t": 1.4,
+          "droneIndex": 11
+        }
+      },
+      "beforeRefreshExtrema": {
+        "rotor": {
+          "maximum": 0.034641310306829855,
+          "t": 1.81,
+          "eventIndex": 181,
+          "droneIndex": 8,
+          "rawSI": 0.0022938609652425057,
+          "rotorIndex": 2
+        },
+        "force": {
+          "maximum": 0.02228203128505854,
+          "t": 0.42,
+          "eventIndex": 42,
+          "droneIndex": 15,
+          "rawSI": 0.005901841626473455
+        },
+        "moment": {
+          "maximum": 0.0101757266661471,
+          "t": 0.45,
+          "eventIndex": 45,
+          "droneIndex": 15,
+          "rawSI": 0.00010672624591594349
+        }
+      }
+    }
+  ]
+}

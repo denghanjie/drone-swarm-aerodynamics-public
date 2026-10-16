@@ -1,0 +1,11 @@
+# Next decision — planning only, no new scientific allocation
+
+Reject the fixed10ms root-hold shortcut under the frozen screen. Smaller integration steps leave the discrepancy essentially unchanged, while refreshing restores instantaneous equality. That supports investigating the stale-load approximation rather than tuning the integrator. It does not isolate the physical mechanism, establish an optimal refresh schedule or justify extrapolation to5000drones.
+
+Before another computational candidate, use this closed evidence to formulate one falsifiable mechanism question: can a cheap indicator based on changes in relative drone positions, orientations and nominal rotor states identify when a previously solved load ratio becomes inaccurate? A cached derivative or geometry-sensitive correction might help; both are untested hypotheses. Any predictive approximation must count the monitoring cost and needs an explicit valid domain, full force/moment error targets and independent fresh conditions. The current seed may be used for exploratory diagnosis only. Avoid an undirected cadence sweep or tuning against future confirmation cases.
+
+Next source-only work should verify relevant published multirate, event-triggered or error-controlled interaction-reuse methods and compare their assumptions with this provisional instantaneous closure. Consult original sources, cite exact sections and retain inaccessible/rejected sources. Do not assert novelty from failure to find a precedent. If no credible route can bridge the existing measured5000query cost and required accuracy, record that unresolved gap instead of building another visually convincing replay.
+
+Physical validation remains a separate priority: the current receiver/closure lacks compatible measured flight/rotor evidence. A better numerical approximation cannot repair model error. A future result should choose between a meaningful numerically scoped contribution and an experimentally supported physical one explicitly.
+
+This note is not a source freeze, new execution allocation, permission to reopen GPU/transport studies, confirmation that indicators work, or a publication claim. Preserve every prior failure, keep the viewer server running and proceed only through a separately recorded bounded cycle.
