@@ -1,0 +1,11 @@
+# Completed ablation; allocations closed
+
+Source commit a3705740e586941855a71a320d48e7374ccd5224. Source-manifest SHA256 5864adc22bbbf9d27afca25bb2ccb6f8da3c234997bf2a7e8c55bdafd750917d. All 63 pins and exact GitHub source bytes were verified before dispatch. Both one-use locks are consumed; no retries or new targets in this package.
+
+Candidate completed all 12 paths, including conditional force-only Boids; all gates pass and six prior off/full sample fields reproduce exactly. Independent reviewer passed 360829 assertions, 207 endpoints and 96 captured RK stages; no full reintegration or controller/contact replay. Candidate/reviewer supervisors 4.446899291 s / 2.107516210 s, successful and within fixed caps. Keep raw evidence unchanged.
+
+Finest full/force-only max position difference 0.510847004 m. Force-only/off 1.331128103 m versus full/off 1.102444041 m; different drone maxima, not additive shares. Stage tilt full 19.555806443°, force-only 8.904407282°, off 8.853803732°. Final mean heights full 3.655363984 m and force-only 3.654584264 m remain near each other despite path changes. These are model outputs, not physically validated flight. Of 20 sampled refinement gates, 19 use the below-floor rule; coupled body rate passes ordinary refinement. No formal-order claim.
+
+Read MILESTONE-SUMMARY.md, RESULT-CLAIM-LITERATURE-LEDGER.md, PROTOCOL.md, review/SOURCE-REVIEW.md, results/independent-review.json and the result interpretation review. New Three.js viewer compares finest saved off/full/force-only recordings; no model solver runs there. Keep localhost port 8876 server alive. Preserve previous packages, locks and failure history. Next targets require a distinct prospective protocol; overall 5,000-drone accuracy/computation, physical validation and novelty goals remain incomplete.
+
+Next planning decision is in NEXT-QUESTION.md: a separately defined full-wrench fixed10ms ratio-reuse diagnostic on the same exposed16seed, six paths maximum if later frozen. No next numerical allocation exists yet; event ordering, diagnostics, gates and independent review must be designed before execution. Browser cost work is deferred in view of existing half-second static-query evidence and unresolved closed transport/monitor studies.

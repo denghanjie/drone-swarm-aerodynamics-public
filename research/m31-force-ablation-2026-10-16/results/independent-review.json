@@ -1,0 +1,1025 @@
+{
+  "kind": "independent-saved-force-moment-ablation-review",
+  "complete": true,
+  "method": "independent saved-state geometry/analytic roots/modeled and applied wrench/full derivative; no trajectory integration",
+  "limits": [
+    "First/last saved stage derivatives and RK4 assembly are checked; other stages have diagnostics only and are not reintegrated.",
+    "Boids commands/initialization and collision detector are candidate-source provenance, not independently rerun.",
+    "Sampled timestep comparisons do not bound between-sample error or physical error.",
+    "Forces are modeled rotor loads; force-only applies their collective force but masks added roll/pitch torque.",
+    "Nominal roll/pitch/yaw torque, gyroscopic terms and motor dynamics are retained; physical validity is unresolved.",
+    "Each arm evolves its own states, commands and geometry; raw pairwise differences are not additive causal attribution.",
+    "Saved-state coverage counts describe exercised states and are not an additional outcome gate."
+  ],
+  "primaryPass": true,
+  "exploratoryExecuted": true,
+  "allocationPass": true,
+  "allConvergencePass": true,
+  "convergence": [
+    {
+      "case": "offset-pair",
+      "mode": "force-only",
+      "pass": true,
+      "coarseMedium": {
+        "position": 1.3322676295501878e-12,
+        "velocity": 1.669886451338698e-12,
+        "attitude": 0.0,
+        "rotor": 1.6252840178140388e-13,
+        "bodyRate": 0.0
+      },
+      "mediumFine": {
+        "position": 7.72715225139109e-14,
+        "velocity": 1.042499420123022e-13,
+        "attitude": 0.0,
+        "rotor": 9.326259031943871e-15,
+        "bodyRate": 0.0
+      },
+      "gates": {
+        "position": {
+          "coarseMedium": 1.3322676295501878e-12,
+          "mediumFine": 7.72715225139109e-14,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        },
+        "velocity": {
+          "coarseMedium": 1.669886451338698e-12,
+          "mediumFine": 1.042499420123022e-13,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        },
+        "attitude": {
+          "coarseMedium": 0.0,
+          "mediumFine": 0.0,
+          "tolerance": 0.0017453292519943296,
+          "bothTiny": true,
+          "pass": true
+        },
+        "rotor": {
+          "coarseMedium": 1.6252840178140388e-13,
+          "mediumFine": 9.326259031943871e-15,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        },
+        "bodyRate": {
+          "coarseMedium": 0.0,
+          "mediumFine": 0.0,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        }
+      }
+    },
+    {
+      "case": "boids16",
+      "mode": "off",
+      "pass": true,
+      "coarseMedium": {
+        "position": 3.356640699232704e-08,
+        "velocity": 6.887412795060695e-08,
+        "attitude": 1.945848776404293e-07,
+        "rotor": 5.008675100457845e-07,
+        "bodyRate": 4.547184585063547e-06
+      },
+      "mediumFine": {
+        "position": 2.0022773240330534e-09,
+        "velocity": 4.0998091270177676e-09,
+        "attitude": 1.1551495619151087e-08,
+        "rotor": 2.9662157524838454e-08,
+        "bodyRate": 2.6929128458163693e-07
+      },
+      "gates": {
+        "position": {
+          "coarseMedium": 3.356640699232704e-08,
+          "mediumFine": 2.0022773240330534e-09,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        },
+        "velocity": {
+          "coarseMedium": 6.887412795060695e-08,
+          "mediumFine": 4.0998091270177676e-09,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        },
+        "attitude": {
+          "coarseMedium": 1.945848776404293e-07,
+          "mediumFine": 1.1551495619151087e-08,
+          "tolerance": 0.0017453292519943296,
+          "bothTiny": true,
+          "pass": true
+        },
+        "rotor": {
+          "coarseMedium": 5.008675100457845e-07,
+          "mediumFine": 2.9662157524838454e-08,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        },
+        "bodyRate": {
+          "coarseMedium": 4.547184585063547e-06,
+          "mediumFine": 2.6929128458163693e-07,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        }
+      }
+    },
+    {
+      "case": "boids16",
+      "mode": "coupled",
+      "pass": true,
+      "coarseMedium": {
+        "position": 3.2652685575202245e-07,
+        "velocity": 1.248542769859481e-06,
+        "attitude": 2.0128315511267333e-06,
+        "rotor": 9.533042592991991e-07,
+        "bodyRate": 2.33370085177897e-05
+      },
+      "mediumFine": {
+        "position": 5.353805181811646e-08,
+        "velocity": 2.1411907658663509e-07,
+        "attitude": 1.433414308051835e-07,
+        "rotor": 1.1362859502438268e-07,
+        "bodyRate": 1.8189440748735147e-06
+      },
+      "gates": {
+        "position": {
+          "coarseMedium": 3.2652685575202245e-07,
+          "mediumFine": 5.353805181811646e-08,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        },
+        "velocity": {
+          "coarseMedium": 1.248542769859481e-06,
+          "mediumFine": 2.1411907658663509e-07,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        },
+        "attitude": {
+          "coarseMedium": 2.0128315511267333e-06,
+          "mediumFine": 1.433414308051835e-07,
+          "tolerance": 0.0017453292519943296,
+          "bothTiny": true,
+          "pass": true
+        },
+        "rotor": {
+          "coarseMedium": 9.533042592991991e-07,
+          "mediumFine": 1.1362859502438268e-07,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        },
+        "bodyRate": {
+          "coarseMedium": 2.33370085177897e-05,
+          "mediumFine": 1.8189440748735147e-06,
+          "tolerance": 0.001,
+          "bothTiny": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "case": "boids16",
+      "mode": "force-only",
+      "pass": true,
+      "coarseMedium": {
+        "position": 1.1024959343459428e-07,
+        "velocity": 1.2910535157723815e-07,
+        "attitude": 1.927545976235858e-07,
+        "rotor": 5.309880844292923e-07,
+        "bodyRate": 4.5592498385934966e-06
+      },
+      "mediumFine": {
+        "position": 6.904073867458464e-09,
+        "velocity": 7.64418107598919e-09,
+        "attitude": 1.1437944428658071e-08,
+        "rotor": 3.1443055938018977e-08,
+        "bodyRate": 2.7000530415183704e-07
+      },
+      "gates": {
+        "position": {
+          "coarseMedium": 1.1024959343459428e-07,
+          "mediumFine": 6.904073867458464e-09,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        },
+        "velocity": {
+          "coarseMedium": 1.2910535157723815e-07,
+          "mediumFine": 7.64418107598919e-09,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        },
+        "attitude": {
+          "coarseMedium": 1.927545976235858e-07,
+          "mediumFine": 1.1437944428658071e-08,
+          "tolerance": 0.0017453292519943296,
+          "bothTiny": true,
+          "pass": true
+        },
+        "rotor": {
+          "coarseMedium": 5.309880844292923e-07,
+          "mediumFine": 3.1443055938018977e-08,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        },
+        "bodyRate": {
+          "coarseMedium": 4.5592498385934966e-06,
+          "mediumFine": 2.7000530415183704e-07,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        }
+      }
+    }
+  ],
+  "controls": {
+    "forceOnlyPair": [
+      {
+        "dt": 0.005,
+        "maxAttitude": 0.0,
+        "maxRate": 0.0,
+        "maxAppliedTorque": 0.0,
+        "maxHorizontalDrift": 0.0,
+        "positiveModeledPitch": true,
+        "negativeCollective": true,
+        "pass": true
+      },
+      {
+        "dt": 0.0025,
+        "maxAttitude": 0.0,
+        "maxRate": 0.0,
+        "maxAppliedTorque": 0.0,
+        "maxHorizontalDrift": 0.0,
+        "positiveModeledPitch": true,
+        "negativeCollective": true,
+        "pass": true
+      },
+      {
+        "dt": 0.00125,
+        "maxAttitude": 0.0,
+        "maxRate": 0.0,
+        "maxAppliedTorque": 0.0,
+        "maxHorizontalDrift": 0.0,
+        "positiveModeledPitch": true,
+        "negativeCollective": true,
+        "pass": true
+      }
+    ],
+    "forceOnlyMask": [
+      {
+        "id": "offset-pair-force-only-0.005",
+        "stagePass": true,
+        "endpointPass": true,
+        "pass": true
+      },
+      {
+        "id": "offset-pair-force-only-0.0025",
+        "stagePass": true,
+        "endpointPass": true,
+        "pass": true
+      },
+      {
+        "id": "offset-pair-force-only-0.00125",
+        "stagePass": true,
+        "endpointPass": true,
+        "pass": true
+      },
+      {
+        "id": "boids16-force-only-0.005",
+        "stagePass": true,
+        "endpointPass": true,
+        "pass": true
+      },
+      {
+        "id": "boids16-force-only-0.0025",
+        "stagePass": true,
+        "endpointPass": true,
+        "pass": true
+      },
+      {
+        "id": "boids16-force-only-0.00125",
+        "stagePass": true,
+        "endpointPass": true,
+        "pass": true
+      }
+    ],
+    "initialEquality": [
+      {
+        "dt": 0.005,
+        "fields": [
+          "states",
+          "commands",
+          "forces",
+          "modeledCorrections",
+          "witness"
+        ],
+        "equal": true,
+        "pass": true
+      },
+      {
+        "dt": 0.0025,
+        "fields": [
+          "states",
+          "commands",
+          "forces",
+          "modeledCorrections",
+          "witness"
+        ],
+        "equal": true,
+        "pass": true
+      },
+      {
+        "dt": 0.00125,
+        "fields": [
+          "states",
+          "commands",
+          "forces",
+          "modeledCorrections",
+          "witness"
+        ],
+        "equal": true,
+        "pass": true
+      }
+    ]
+  },
+  "referenceAgreement": [
+    {
+      "id": "boids16-off-0.005",
+      "reference": "research/m31-motion-feedback-2026-10-16/results/boids16-off-0.005.json",
+      "sha256": "eca1e7332d43a1b273797f89d238fb536249811f814534da6c31d1f89cd177fd",
+      "fields": [
+        "t",
+        "states",
+        "commands",
+        "forces",
+        "corrections",
+        "derivatives",
+        "witness",
+        "group"
+      ],
+      "samples": 21,
+      "mismatches": [],
+      "pass": true
+    },
+    {
+      "id": "boids16-off-0.0025",
+      "reference": "research/m31-motion-feedback-2026-10-16/results/boids16-off-0.0025.json",
+      "sha256": "8c4b30ec74463c6e9aad25b66ddb4b8a877b627e4776011da4190d33e3645303",
+      "fields": [
+        "t",
+        "states",
+        "commands",
+        "forces",
+        "corrections",
+        "derivatives",
+        "witness",
+        "group"
+      ],
+      "samples": 21,
+      "mismatches": [],
+      "pass": true
+    },
+    {
+      "id": "boids16-off-0.00125",
+      "reference": "research/m31-motion-feedback-2026-10-16/results/boids16-off-0.00125.json",
+      "sha256": "03dc1f5a4b7074564ce4f820c31feb409a7e7eb49ede250e4bd539c8046e2ff0",
+      "fields": [
+        "t",
+        "states",
+        "commands",
+        "forces",
+        "corrections",
+        "derivatives",
+        "witness",
+        "group"
+      ],
+      "samples": 21,
+      "mismatches": [],
+      "pass": true
+    },
+    {
+      "id": "boids16-coupled-0.005",
+      "reference": "research/m31-motion-feedback-2026-10-16/results/boids16-coupled-0.005.json",
+      "sha256": "341c0fcd9e796f316b528741bccc79b832032952e6e468ef7488645e571a9e5d",
+      "fields": [
+        "t",
+        "states",
+        "commands",
+        "forces",
+        "corrections",
+        "derivatives",
+        "witness",
+        "group"
+      ],
+      "samples": 21,
+      "mismatches": [],
+      "pass": true
+    },
+    {
+      "id": "boids16-coupled-0.0025",
+      "reference": "research/m31-motion-feedback-2026-10-16/results/boids16-coupled-0.0025.json",
+      "sha256": "70cbb865cdafa9946e808d84a894ef89b435cac1de496f28c2045f478ede19cf",
+      "fields": [
+        "t",
+        "states",
+        "commands",
+        "forces",
+        "corrections",
+        "derivatives",
+        "witness",
+        "group"
+      ],
+      "samples": 21,
+      "mismatches": [],
+      "pass": true
+    },
+    {
+      "id": "boids16-coupled-0.00125",
+      "reference": "research/m31-motion-feedback-2026-10-16/results/boids16-coupled-0.00125.json",
+      "sha256": "37fc64506929f0e5280bf4d3dc7b905532344583850cc1b95383bbf96652ce3f",
+      "fields": [
+        "t",
+        "states",
+        "commands",
+        "forces",
+        "corrections",
+        "derivatives",
+        "witness",
+        "group"
+      ],
+      "samples": 21,
+      "mismatches": [],
+      "pass": true
+    }
+  ],
+  "comparisons": [
+    {
+      "left": "off",
+      "right": "coupled",
+      "dt": 0.005,
+      "maximumSampled": {
+        "position": 1.1024439333954277,
+        "velocity": 0.830354782831736,
+        "attitude": 1.468352302091639,
+        "rotor": 0.3288583077149529,
+        "bodyRate": 8.473371908017405
+      },
+      "maximumSampledBodyAxisAngle": 0.32697874408565253,
+      "maximumSampledBodyRateDifference": 8.473371908017405
+    },
+    {
+      "left": "off",
+      "right": "force-only",
+      "dt": 0.005,
+      "maximumSampled": {
+        "position": 1.3311281418127958,
+        "velocity": 0.9917644909863026,
+        "attitude": 0.33541920210158627,
+        "rotor": 0.30346754720181773,
+        "bodyRate": 1.5689977177169312
+      },
+      "maximumSampledBodyAxisAngle": 0.051790121278307934,
+      "maximumSampledBodyRateDifference": 1.5689977177169312
+    },
+    {
+      "left": "force-only",
+      "right": "coupled",
+      "dt": 0.005,
+      "maximumSampled": {
+        "position": 0.5108471995962605,
+        "velocity": 0.6939888756993404,
+        "attitude": 1.6230856968921479,
+        "rotor": 0.32419947820716233,
+        "bodyRate": 8.43904900476666
+      },
+      "maximumSampledBodyAxisAngle": 0.315786538129624,
+      "maximumSampledBodyRateDifference": 8.43904900476666
+    },
+    {
+      "left": "off",
+      "right": "coupled",
+      "dt": 0.0025,
+      "maximumSampled": {
+        "position": 1.1024440491719711,
+        "velocity": 0.8303547740394424,
+        "attitude": 1.4683518375962266,
+        "rotor": 0.328857723363148,
+        "bodyRate": 8.473370996270555
+      },
+      "maximumSampledBodyAxisAngle": 0.3269787477320312,
+      "maximumSampledBodyRateDifference": 8.473370996270555
+    },
+    {
+      "left": "off",
+      "right": "force-only",
+      "dt": 0.0025,
+      "maximumSampled": {
+        "position": 1.3311281049658272,
+        "velocity": 0.991764445966386,
+        "attitude": 0.3354191791540157,
+        "rotor": 0.30346754720181773,
+        "bodyRate": 1.5689979180031162
+      },
+      "maximumSampledBodyAxisAngle": 0.051790115922431317,
+      "maximumSampledBodyRateDifference": 1.5689979180031162
+    },
+    {
+      "left": "force-only",
+      "right": "coupled",
+      "dt": 0.0025,
+      "maximumSampled": {
+        "position": 0.5108469937997415,
+        "velocity": 0.6939889291594351,
+        "attitude": 1.6230852608104738,
+        "rotor": 0.32419890024505565,
+        "bodyRate": 8.439048068687217
+      },
+      "maximumSampledBodyAxisAngle": 0.3157865429340733,
+      "maximumSampledBodyRateDifference": 8.439048068687217
+    },
+    {
+      "left": "off",
+      "right": "coupled",
+      "dt": 0.00125,
+      "maximumSampled": {
+        "position": 1.1024440412918044,
+        "velocity": 0.8303547728154905,
+        "attitude": 1.4683518097153496,
+        "rotor": 0.3288576865093974,
+        "bodyRate": 8.473370820072592
+      },
+      "maximumSampledBodyAxisAngle": 0.3269787464580789,
+      "maximumSampledBodyRateDifference": 8.473370820072592
+    },
+    {
+      "left": "off",
+      "right": "force-only",
+      "dt": 0.00125,
+      "maximumSampled": {
+        "position": 1.3311281027508866,
+        "velocity": 0.9917644432505479,
+        "attitude": 0.33541917778497377,
+        "rotor": 0.30346754720181773,
+        "bodyRate": 1.568997929731829
+      },
+      "maximumSampledBodyAxisAngle": 0.05179011560460022,
+      "maximumSampledBodyRateDifference": 1.568997929731829
+    },
+    {
+      "left": "force-only",
+      "right": "coupled",
+      "dt": 0.00125,
+      "maximumSampled": {
+        "position": 0.5108470040360158,
+        "velocity": 0.693988933828657,
+        "attitude": 1.62308523377364,
+        "rotor": 0.3241988637642759,
+        "bodyRate": 8.439047890959671
+      },
+      "maximumSampledBodyAxisAngle": 0.3157865416479297,
+      "maximumSampledBodyRateDifference": 8.439047890959671
+    }
+  ],
+  "descriptive": [
+    {
+      "id": "boids16-off-0.005",
+      "mode": "off",
+      "dt": 0.005,
+      "maxRecordedStageTiltDegrees": 8.854014615848872,
+      "maxRecordedStageModeledTorque": 0,
+      "maxRecordedStageAppliedTorque": 0,
+      "finalCentroid": [
+        -5.911293744827669,
+        -0.7845415437699333,
+        4.28347540706052
+      ],
+      "minimumSweptSeparation": 0.6133921929829149,
+      "saturatedControllerUpdates": 0
+    },
+    {
+      "id": "boids16-off-0.0025",
+      "mode": "off",
+      "dt": 0.0025,
+      "maxRecordedStageTiltDegrees": 8.853819631109582,
+      "maxRecordedStageModeledTorque": 0,
+      "maxRecordedStageAppliedTorque": 0,
+      "finalCentroid": [
+        -5.9112937451696865,
+        -0.7845415392174349,
+        4.283475406082453
+      ],
+      "minimumSweptSeparation": 0.6133905853222212,
+      "saturatedControllerUpdates": 0
+    },
+    {
+      "id": "boids16-off-0.00125",
+      "mode": "off",
+      "dt": 0.00125,
+      "maxRecordedStageTiltDegrees": 8.853803732139589,
+      "maxRecordedStageModeledTorque": 0,
+      "maxRecordedStageAppliedTorque": 0,
+      "finalCentroid": [
+        -5.911293745192547,
+        -0.7845415389434438,
+        4.283475406023788
+      ],
+      "minimumSweptSeparation": 0.6133905856496042,
+      "saturatedControllerUpdates": 0
+    },
+    {
+      "id": "boids16-coupled-0.005",
+      "mode": "coupled",
+      "dt": 0.005,
+      "maxRecordedStageTiltDegrees": 19.557309536951607,
+      "maxRecordedStageModeledTorque": 0.00041663068506784645,
+      "maxRecordedStageAppliedTorque": 0.00041663068506784645,
+      "finalCentroid": [
+        -6.119114384426938,
+        -0.7567806792076117,
+        3.6553639790039463
+      ],
+      "minimumSweptSeparation": 0.5714540698754266,
+      "saturatedControllerUpdates": 0
+    },
+    {
+      "id": "boids16-coupled-0.0025",
+      "mode": "coupled",
+      "dt": 0.0025,
+      "maxRecordedStageTiltDegrees": 19.556299889542416,
+      "maxRecordedStageModeledTorque": 0.0004166284272966872,
+      "maxRecordedStageAppliedTorque": 0.0004166284272966872,
+      "finalCentroid": [
+        -6.119114344939092,
+        -0.7567807068877063,
+        3.6553639818308916
+      ],
+      "minimumSweptSeparation": 0.5714540986393102,
+      "saturatedControllerUpdates": 0
+    },
+    {
+      "id": "boids16-coupled-0.00125",
+      "mode": "coupled",
+      "dt": 0.00125,
+      "maxRecordedStageTiltDegrees": 19.555806443232534,
+      "maxRecordedStageModeledTorque": 0.0004166571535663913,
+      "maxRecordedStageAppliedTorque": 0.0004166571535663913,
+      "finalCentroid": [
+        -6.119114340998772,
+        -0.7567807083756847,
+        3.6553639837593215
+      ],
+      "minimumSweptSeparation": 0.5714541003781142,
+      "saturatedControllerUpdates": 0
+    },
+    {
+      "id": "boids16-force-only-0.005",
+      "mode": "force-only",
+      "dt": 0.005,
+      "maxRecordedStageTiltDegrees": 8.904410503747062,
+      "maxRecordedStageModeledTorque": 0.0003800815805455171,
+      "maxRecordedStageAppliedTorque": 0,
+      "finalCentroid": [
+        -5.977648405097617,
+        -0.7004972344562221,
+        3.654584234671169
+      ],
+      "minimumSweptSeparation": 0.6334690122514149,
+      "saturatedControllerUpdates": 0
+    },
+    {
+      "id": "boids16-force-only-0.0025",
+      "mode": "force-only",
+      "dt": 0.0025,
+      "maxRecordedStageTiltDegrees": 8.90441209872527,
+      "maxRecordedStageModeledTorque": 0.0003800815805455171,
+      "maxRecordedStageAppliedTorque": 0,
+      "finalCentroid": [
+        -5.977648406224541,
+        -0.7004972348395612,
+        3.654584262302615
+      ],
+      "minimumSweptSeparation": 0.6334690122514149,
+      "saturatedControllerUpdates": 0
+    },
+    {
+      "id": "boids16-force-only-0.00125",
+      "mode": "force-only",
+      "dt": 0.00125,
+      "maxRecordedStageTiltDegrees": 8.90440728216174,
+      "maxRecordedStageModeledTorque": 0.0003800815805455171,
+      "maxRecordedStageAppliedTorque": 0,
+      "finalCentroid": [
+        -5.977648406295998,
+        -0.7004972348659938,
+        3.654584263997542
+      ],
+      "minimumSweptSeparation": 0.6334690122514149,
+      "saturatedControllerUpdates": 0
+    }
+  ],
+  "tilt": [
+    {
+      "id": "boids16-off-0.005",
+      "independentMaximumSampledTiltDegrees": 8.851310954985102,
+      "candidateReportedMaximumStageTiltDegrees": 8.854014615848872
+    },
+    {
+      "id": "boids16-off-0.0025",
+      "independentMaximumSampledTiltDegrees": 8.851309927820491,
+      "candidateReportedMaximumStageTiltDegrees": 8.853819631109582
+    },
+    {
+      "id": "boids16-off-0.00125",
+      "independentMaximumSampledTiltDegrees": 8.851309867096422,
+      "candidateReportedMaximumStageTiltDegrees": 8.853803732139589
+    },
+    {
+      "id": "boids16-coupled-0.005",
+      "independentMaximumSampledTiltDegrees": 18.904913748214632,
+      "candidateReportedMaximumStageTiltDegrees": 19.557309536951607
+    },
+    {
+      "id": "boids16-coupled-0.0025",
+      "independentMaximumSampledTiltDegrees": 18.904913766797065,
+      "candidateReportedMaximumStageTiltDegrees": 19.556299889542416
+    },
+    {
+      "id": "boids16-coupled-0.00125",
+      "independentMaximumSampledTiltDegrees": 18.904913676965148,
+      "candidateReportedMaximumStageTiltDegrees": 19.555806443232534
+    },
+    {
+      "id": "boids16-force-only-0.005",
+      "independentMaximumSampledTiltDegrees": 8.752735214935152,
+      "candidateReportedMaximumStageTiltDegrees": 8.904410503747062
+    },
+    {
+      "id": "boids16-force-only-0.0025",
+      "independentMaximumSampledTiltDegrees": 8.752734474508951,
+      "candidateReportedMaximumStageTiltDegrees": 8.90441209872527
+    },
+    {
+      "id": "boids16-force-only-0.00125",
+      "independentMaximumSampledTiltDegrees": 8.752734430569243,
+      "candidateReportedMaximumStageTiltDegrees": 8.90440728216174
+    }
+  ],
+  "aggregateBeforeReviewBytes": 28915644,
+  "sourceCommit": "a3705740e586941855a71a320d48e7374ccd5224",
+  "sourceManifestSHA256": "5864adc22bbbf9d27afca25bb2ccb6f8da3c234997bf2a7e8c55bdafd750917d",
+  "candidateElapsedSeconds": 4.44689929112792,
+  "candidateSampledPeakRSSKiB": 285296,
+  "pass": true,
+  "checkCount": 360829,
+  "failures": [],
+  "savedEndpointsChecked": 207,
+  "trials": [
+    {
+      "id": "offset-pair-force-only-0.005",
+      "complete": true,
+      "end": 0.5,
+      "savedEndpoints": 6,
+      "stageAttemptRecords": 400,
+      "capturedStageDerivativesChecked": 8,
+      "failure": null,
+      "maximumEndpointErrors": {
+        "coefficient": 6.661338147750939e-16,
+        "load": 2.0816681711721685e-17,
+        "derivative": 2.220446049250313e-15
+      }
+    },
+    {
+      "id": "offset-pair-force-only-0.0025",
+      "complete": true,
+      "end": 0.5,
+      "savedEndpoints": 6,
+      "stageAttemptRecords": 800,
+      "capturedStageDerivativesChecked": 8,
+      "failure": null,
+      "maximumEndpointErrors": {
+        "coefficient": 0.0,
+        "load": 2.0816681711721685e-17,
+        "derivative": 1.9984014443252818e-15
+      }
+    },
+    {
+      "id": "offset-pair-force-only-0.00125",
+      "complete": true,
+      "end": 0.5,
+      "savedEndpoints": 6,
+      "stageAttemptRecords": 1600,
+      "capturedStageDerivativesChecked": 8,
+      "failure": null,
+      "maximumEndpointErrors": {
+        "coefficient": 0.0,
+        "load": 2.0816681711721685e-17,
+        "derivative": 1.9984014443252818e-15
+      }
+    },
+    {
+      "id": "boids16-off-0.005",
+      "complete": true,
+      "end": 2,
+      "savedEndpoints": 21,
+      "stageAttemptRecords": 1600,
+      "capturedStageDerivativesChecked": 8,
+      "failure": null,
+      "maximumEndpointErrors": {
+        "coefficient": 0.0,
+        "load": 0.0,
+        "derivative": 4.263256414560601e-14
+      }
+    },
+    {
+      "id": "boids16-off-0.0025",
+      "complete": true,
+      "end": 2,
+      "savedEndpoints": 21,
+      "stageAttemptRecords": 3200,
+      "capturedStageDerivativesChecked": 8,
+      "failure": null,
+      "maximumEndpointErrors": {
+        "coefficient": 0.0,
+        "load": 0.0,
+        "derivative": 4.529709940470639e-14
+      }
+    },
+    {
+      "id": "boids16-off-0.00125",
+      "complete": true,
+      "end": 2,
+      "savedEndpoints": 21,
+      "stageAttemptRecords": 6400,
+      "capturedStageDerivativesChecked": 8,
+      "failure": null,
+      "maximumEndpointErrors": {
+        "coefficient": 0.0,
+        "load": 0.0,
+        "derivative": 4.4853010194856324e-14
+      }
+    },
+    {
+      "id": "boids16-coupled-0.005",
+      "complete": true,
+      "end": 2,
+      "savedEndpoints": 21,
+      "stageAttemptRecords": 1600,
+      "capturedStageDerivativesChecked": 8,
+      "failure": null,
+      "maximumEndpointErrors": {
+        "coefficient": 1.3322676295501878e-15,
+        "load": 5.551115123125783e-17,
+        "derivative": 2.1049828546892968e-13
+      }
+    },
+    {
+      "id": "boids16-coupled-0.0025",
+      "complete": true,
+      "end": 2,
+      "savedEndpoints": 21,
+      "stageAttemptRecords": 3200,
+      "capturedStageDerivativesChecked": 8,
+      "failure": null,
+      "maximumEndpointErrors": {
+        "coefficient": 1.3322676295501878e-15,
+        "load": 4.85722573273506e-17,
+        "derivative": 1.8385293287792592e-13
+      }
+    },
+    {
+      "id": "boids16-coupled-0.00125",
+      "complete": true,
+      "end": 2,
+      "savedEndpoints": 21,
+      "stageAttemptRecords": 6400,
+      "capturedStageDerivativesChecked": 8,
+      "failure": null,
+      "maximumEndpointErrors": {
+        "coefficient": 1.3322676295501878e-15,
+        "load": 6.938893903907228e-17,
+        "derivative": 2.2470914018413168e-13
+      }
+    },
+    {
+      "id": "boids16-force-only-0.005",
+      "complete": true,
+      "end": 2,
+      "savedEndpoints": 21,
+      "stageAttemptRecords": 1600,
+      "capturedStageDerivativesChecked": 8,
+      "failure": null,
+      "maximumEndpointErrors": {
+        "coefficient": 1.3322676295501878e-15,
+        "load": 4.163336342344337e-17,
+        "derivative": 4.8627768478581856e-14
+      }
+    },
+    {
+      "id": "boids16-force-only-0.0025",
+      "complete": true,
+      "end": 2,
+      "savedEndpoints": 21,
+      "stageAttemptRecords": 3200,
+      "capturedStageDerivativesChecked": 8,
+      "failure": null,
+      "maximumEndpointErrors": {
+        "coefficient": 1.3322676295501878e-15,
+        "load": 5.551115123125783e-17,
+        "derivative": 4.556077737305486e-14
+      }
+    },
+    {
+      "id": "boids16-force-only-0.00125",
+      "complete": true,
+      "end": 2,
+      "savedEndpoints": 21,
+      "stageAttemptRecords": 6400,
+      "capturedStageDerivativesChecked": 8,
+      "failure": null,
+      "maximumEndpointErrors": {
+        "coefficient": 1.3322676295501878e-15,
+        "load": 6.938893903907228e-17,
+        "derivative": 4.718447854656915e-14
+      }
+    }
+  ],
+  "elapsedSeconds": 1.9041556250303984,
+  "savedStateCoverage": {
+    "thresholds": {
+      "bodyRateNormRadPerSecond": 1e-12,
+      "nominalRotorRangeNewtons": 1e-12,
+      "nominalRollPitchTorqueNormNewtonMetres": 1e-12
+    },
+    "rows": [
+      {
+        "mode": "force-only",
+        "recordKind": "endpoint",
+        "vehicleStates": 1044,
+        "nonzeroBodyRate": 960,
+        "unequalNominalRotors": 960,
+        "bodyRateAndUnequalNominalRotors": 960,
+        "nonzeroNominalRollPitchTorque": 960,
+        "bodyRateAndNominalRollPitchTorque": 960
+      },
+      {
+        "mode": "force-only",
+        "recordKind": "captured-stage",
+        "vehicleStates": 432,
+        "nonzeroBodyRate": 288,
+        "unequalNominalRotors": 336,
+        "bodyRateAndUnequalNominalRotors": 288,
+        "nonzeroNominalRollPitchTorque": 336,
+        "bodyRateAndNominalRollPitchTorque": 288
+      },
+      {
+        "mode": "off",
+        "recordKind": "endpoint",
+        "vehicleStates": 1008,
+        "nonzeroBodyRate": 960,
+        "unequalNominalRotors": 960,
+        "bodyRateAndUnequalNominalRotors": 960,
+        "nonzeroNominalRollPitchTorque": 960,
+        "bodyRateAndNominalRollPitchTorque": 960
+      },
+      {
+        "mode": "off",
+        "recordKind": "captured-stage",
+        "vehicleStates": 384,
+        "nonzeroBodyRate": 288,
+        "unequalNominalRotors": 336,
+        "bodyRateAndUnequalNominalRotors": 288,
+        "nonzeroNominalRollPitchTorque": 336,
+        "bodyRateAndNominalRollPitchTorque": 288
+      },
+      {
+        "mode": "coupled",
+        "recordKind": "endpoint",
+        "vehicleStates": 1008,
+        "nonzeroBodyRate": 960,
+        "unequalNominalRotors": 960,
+        "bodyRateAndUnequalNominalRotors": 960,
+        "nonzeroNominalRollPitchTorque": 960,
+        "bodyRateAndNominalRollPitchTorque": 960
+      },
+      {
+        "mode": "coupled",
+        "recordKind": "captured-stage",
+        "vehicleStates": 384,
+        "nonzeroBodyRate": 318,
+        "unequalNominalRotors": 336,
+        "bodyRateAndUnequalNominalRotors": 318,
+        "nonzeroNominalRollPitchTorque": 336,
+        "bodyRateAndNominalRollPitchTorque": 318
+      }
+    ]
+  }
+}

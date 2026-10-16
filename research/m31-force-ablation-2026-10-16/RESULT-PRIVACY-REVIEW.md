@@ -1,0 +1,3 @@
+# Result privacy review
+
+New public numerical data are original synthetic positions, orientations, nominal commands, modeled rotor loads, applied/modelled wrench components, derivatives, diagnostic booleans and hashes. No human/flight-record identifiers, user attachments, report pages, third-party plots, private paths, credentials, correspondence or author contact data are included. Resource records use generic command descriptions and omit process IDs. Browser screenshots contain only the original local research page and synthetic motion; source evidence files remain unchanged. A narrow new-file scan and source-pin verification precede publication, without claiming an exhaustive historical audit.

@@ -1,3 +1,13 @@
+# Current continuation: force/moment feedback ablation
+
+The newest completed experiment is `m31-force-ablation-2026-10-16/`: 12/12 paths passed, six old-seed off/full recordings reproduced exactly, and 360,829 independent saved-data assertions passed. Full versus force-only motion differs by up to 0.511 m over two seconds. Removing added aerodynamic torque reduces maximum recorded tilt from 19.56° to 8.90°, while final group mean height remains similar. This is within-model sensitivity, not physical validation, novelty or a speed benefit. Both scientific allocations are closed. Read its MILESTONE-SUMMARY, RESULT-CLAIM-LITERATURE-LEDGER, POSTRUN-RESTART and result publication receipt in `publication-receipts/`.
+
+New Three.js replay: http://127.0.0.1:8876/research/m31-force-ablation-2026-10-16/viewer/ . Desktop/mobile QA passed 46 checks and screenshots were inspected. Previous motion-feedback result is published at e8896aede3b4bb2ea879ac703a32f033ec44b9a2, with verified receipt. Preserve all prior packages and failures. Keep server 8876 running. The overall research goal remains active and incomplete; fresh targets require separate prospective scope. This navigation index is mutable and is not an experiment input.
+
+The historical continuation records below retain their original dates, cutoffs and closed budgets. None is reopened by the new checkpoints.
+
+---
+
 # Overnight research restart index
 
 Current continuation: completed coupled-cost result47e620d and independent receipt8971e93 are public and exact-byte verified. Read `m31-post-cost-decision-2026-10-16/DECISION.md` for the latest source-only next questions and `m31-coupled-cost-host-2026-10-16/POSTRUN-RESTART.md` for the completed experiment. No scientific, reviewer or QA process is active; server8876 remains. The overall goal is active and incomplete. The older overnight window below is historical; no old budget may be reopened. Any next finite cycle needs its own prospectively saved scope.
