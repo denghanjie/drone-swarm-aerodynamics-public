@@ -4,6 +4,10 @@
 
 Public additive worktree: current repository, branch `codex/m31-audit-2026-10-15`. Preserve the original eight-step roadmap and historical M31 base. Later remote main/DOT at `1336f5c416875a9651f92b58b2ed06649f25b04e` remains separate and untouched. The private workspace, attachments, credentials and chat records must never be published.
 
+## Latest ancillary checkpoint — fixed-command source admission
+
+`research/m31-command-bridge-admission-2026-10-16/` completed its finite six-query methods admission. NASA/TM-20210014010 documents direct loads under fixed PWM and matching static/positive-pressure settings; the related accepted article corroborates the same experiment. Numeric baseline/targets remain unadmitted. All source-access failures and incidental fitted-model exposure are preserved. No scoring, fitting, figure extraction or dataset payload occurred. Read DECISION, REVIEW, SOURCE-ACCESS and bibliography. This ancillary desk result retains the existing GWS Three.js result view. A separate static coupling-structure question is under review; no numerical execution is yet allocated. Historical launch windows and all closed campaigns remain closed.
+
 ## Latest completed checkpoint — exposed GWS receiver transfer
 
 `research/m31-gws-receiver-transfer-2026-10-16/` completed its separately specified coefficient-transfer question. Source `ffec6dccee9def5acc473cd907417d09533bc636`, manifest SHA256 `f2e644114d1911c0c93c389c5a9e97dc899cce41a9831486f2a790815e6cd3a2`, all 18 pins unchanged. One scoring invocation completed 42 roots / 2058 bisection iterations, exit 0. This compares the ideal-power equation plus an explicit nominal-RPM static-baseline bridge; it does not silently equate RPM with ideal power.
