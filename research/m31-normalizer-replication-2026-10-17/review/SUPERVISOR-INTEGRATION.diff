@@ -1,0 +1,742 @@
+--- research/m31-normalizer-ablation-2026-10-17/source/supervise.py
++++ research/m31-normalizer-replication-2026-10-17/source/supervise.py
+@@ -1,4 +1,4 @@
+-"""Exclusive normalizer-ablation stages. Prepublication validation is syntax only."""
++"""Exclusive normalizer-replication stages. Prepublication validation is syntax only."""
+ import argparse
+ import hashlib
+ import json
+@@ -20,9 +20,12 @@
+ METADATA_BYTES = 16 * MIB
+ TOTAL_BYTES = KERNEL_BYTES + CHECKER_BYTES + METADATA_BYTES
+ REPORT_BYTES = 65536
+-CUTOFF = '2026-10-16T23:00:00Z'
++EXECUTION_CONTEXT = 'tool-require-escalated'
++CONTEXT_EVIDENCE = 'Caller attestation via environment variable; tool invocation retained outside package. Not a sandbox detector.'
++PS_COMMAND = ['/bin/ps', '-axo', 'pid=,ppid=,pgid=,rss=']
++CUTOFF = '2026-10-17T01:00:00Z'
+ CUTOFF_EPOCH = datetime.fromisoformat(CUTOFF.replace('Z', '+00:00')).timestamp()
+-PACKAGE_NAME = 'research/m31-normalizer-ablation-2026-10-17'
++PACKAGE_NAME = 'research/m31-normalizer-replication-2026-10-17'
+ CONTROL_IDS = ['positive', 'distant-zero', 'raw-force', 'order-incompatible']
+ SCENE_IDS = [run + '-t' + str(t) for run in ['run-a', 'run-b'] for t in [0, 5, 10]]
+ ARMS = ['baseline', 'candidate']
+@@ -83,6 +86,8 @@
+     launch_gate()
+     if not sys.flags.isolated or not sys.dont_write_bytecode:
+         raise RuntimeError('Supervisor requires Python -I -B')
++    if os.environ.get('RESEARCH_EXECUTION_CONTEXT') != EXECUTION_CONTEXT:
++        raise RuntimeError('Explicit escalated execution context required')
+     if any(value for key, value in os.environ.items() if key in LOADER_KEYS or key.startswith('DYLD_')):
+         raise RuntimeError('Loader injection environment refused')
+     package = Path(__file__).resolve().parents[1]
+@@ -97,10 +102,10 @@
+                        'metadataLogBytes': METADATA_BYTES, 'combinedOutputBytes': TOTAL_BYTES,
+                        'workerSeconds': 60, 'sceneBytes': 32 * MIB, 'generationBytesPerRun': 8 * MIB,
+                        'reportBytes': 2 * MIB, 'indexBytes': 2 * MIB, 'journalBytes': 4 * MIB}
+-    if (config.get('id') != 'm31-normalizer-ablation-v1' or config.get('launchCutoffUtc') != CUTOFF
++    if (config.get('id') != 'm31-normalizer-replication-v1' or config.get('launchCutoffUtc') != CUTOFF
+             or config.get('limits') != expected_limits or config.get('arms') != ARMS
+             or config.get('scheduledTimes') != [0, 5, 10]
+-            or config.get('cases') != [{'id': 'run-a', 'seed': 26171011}, {'id': 'run-b', 'seed': 26171012}]
++            or config.get('cases') != [{'id': 'run-a', 'seed': 26171021}, {'id': 'run-b', 'seed': 26171022}]
+             or [c.get('id') for c in config.get('controls', [])] != CONTROL_IDS):
+         raise RuntimeError('Frozen configuration mismatch')
+     mp = package / 'source-manifest.json'
+@@ -150,6 +155,7 @@
+     git_env.update({'GIT_NO_REPLACE_OBJECTS': '1', 'GIT_OPTIONAL_LOCKS': '0'})
+     prior_pins, prior_private_pins = [], []
+     attempt_bytes = None
++    authorization_bytes = None
+     private = Path(env['RESEARCH_PRIVATE_RUN_DIR']).resolve()
+     if private == root or root in private.parents:
+         raise RuntimeError('Private raw logs must be outside repository')
+@@ -170,6 +176,8 @@
+             raise RuntimeError('Local source closure changed')
+         if attempt_bytes is not None and (resultdir / (stage + '-attempt.json')).read_bytes() != attempt_bytes:
+             raise RuntimeError('Permanent attempt marker changed')
++        if authorization_bytes is not None and (resultdir / (stage + '-authorization.json')).read_bytes() != authorization_bytes:
++            raise RuntimeError('Launch authorization changed')
+         if git('rev-parse', '--verify', 'HEAD').decode().strip() != publication['commit']:
+             raise RuntimeError('HEAD differs from published source')
+         if git('show', publication['commit'] + ':' + mp.relative_to(root).as_posix()) != mb:
+@@ -206,7 +214,7 @@
+     checker_names = {'check.json'} | references
+     report_names = {s + '-supervision.json' for s in ['kernel', 'checker']}
+     metadata_names = {s + suffix for s in ['kernel', 'checker'] for suffix in
+-                      ['-attempt.json', '-guardian.jsonl', '-stdout.log', '-stderr.log', '-terminal-error.json']}
++                      ['-attempt.json', '-authorization.json', '-failures.jsonl', '-guardian.jsonl', '-stdout.log', '-stderr.log', '-terminal-error.json']}
+     allowed_names = kernel_names | checker_names | report_names | metadata_names
+     allowed_dirs = {'inputs', 'generation', 'calls', 'direct', 'lifetime', 'reference'}
+     raw_names = {s + '-' + stream + '.raw' for s in ['kernel', 'checker'] for stream in ['stdout', 'stderr']}
+@@ -231,7 +239,7 @@
+                     totals['unclassifiedBytes'] += size; violations.append('unexpected-output-file'); continue
+                 totals['kernelBytes' if name in kernel_names else 'checkerBytes' if name in checker_names else 'logMetadataBytes'] += size
+                 cap = (2 * MIB if name in {'index.json', 'check.json'} else 4 * MIB if name == 'kernel-journal.jsonl'
+-                       else 8 * MIB if name in generations else REPORT_BYTES if name in report_names
++                       else 8 * MIB if name in generations else REPORT_BYTES if name in report_names or name.endswith(('-authorization.json', '-failures.jsonl', '-guardian.jsonl'))
+                        else 32 * MIB if name in kernel_names | checker_names else None)
+                 if cap is not None and size > cap:
+                     violations.append('artifact-output-limit')
+@@ -269,11 +277,22 @@
+             raise RuntimeError('Kernel finalization failed')
+         prev = parse((resultdir / 'kernel-supervision.json').read_bytes())
+         if (prev.get('stage') != 'kernel' or any(prev.get(k) is not True for k in
+-                ['success', 'closed', 'childGroupAbsent', 'scientificChildAbsentBeforeRelease', 'sourceAndRuntimeRechecked'])
++                ['success', 'closed', 'childGroupAbsent', 'scientificChildAbsentBeforeRelease', 'sourceAndRuntimeRechecked',
++                 'guardianReadyObserved', 'normalRelease', 'guardianWaitStatusKnown', 'failureJournalDurable'])
+                 or prev.get('exitCode') != 0 or prev.get('guardianExitCode') != 0
++                or prev.get('executionContext') != EXECUTION_CONTEXT or prev.get('firstFailure') is not None
++                or prev.get('secondaryFailures') != [] or prev.get('terminationReason') is not None
++                or prev.get('firstFailureDurable') is not None
+                 or prev.get('sourceCommit') != publication['commit'] or prev.get('sourceManifestSha256') != sha(mb)
+                 or prev.get('configSha256') != sha(config_bytes) or prev.get('privateLogDirectorySha256') != private_identity):
+             raise RuntimeError('Kernel not closed and qualified for checker')
++        if (prev.get('failureJournal') != pin(resultdir / 'kernel-failures.jsonl', root)
++                or (resultdir / 'kernel-failures.jsonl').read_bytes() != b''
++                or prev.get('authorizationEvidence') != pin(resultdir / 'kernel-authorization.json', root)
++                or prev.get('authorization') != parse((resultdir / 'kernel-authorization.json').read_bytes())
++                or len(prev.get('closureProbes', [])) != 2
++                or any(p.get('absent') is not True for p in prev['closureProbes'])):
++            raise RuntimeError('Kernel lifecycle evidence not qualified')
+         present = {name for name in kernel_names if (resultdir / name).is_file() and not (resultdir / name).is_symlink()}
+         expected_paths = {(resultdir / name).relative_to(root).as_posix() for name in present}
+         evidence = prev.get('scientificEvidence')
+@@ -281,31 +300,38 @@
+                 or len(evidence) != len(expected_paths) or {x.get('path') for x in evidence} != expected_paths):
+             raise RuntimeError('Kernel evidence pin set incomplete')
+         prior_pins.extend(evidence)
+-        lifecycle = ['kernel-supervision.json', 'kernel-attempt.json', 'kernel-guardian.jsonl', 'kernel-stdout.log', 'kernel-stderr.log']
++        lifecycle = ['kernel-supervision.json', 'kernel-attempt.json', 'kernel-authorization.json', 'kernel-failures.jsonl',
++                     'kernel-guardian.jsonl', 'kernel-stdout.log', 'kernel-stderr.log']
+         prior_pins.extend(pin(resultdir / name, root) for name in lifecycle)
+         raw = prev.get('privateRawLogs')
+         if not isinstance(raw, list) or len(raw) != 2 or {x.get('name') for x in raw} != {'kernel-stdout.raw', 'kernel-stderr.raw'}:
+             raise RuntimeError('Kernel private raw log set incomplete')
+         prior_private_pins.extend(raw)
+     stage_names = (kernel_names if stage == 'kernel' else checker_names) | {stage + suffix for suffix in
+-                  ['-attempt.json', '-guardian.jsonl', '-stdout.log', '-stderr.log', '-supervision.json', '-terminal-error.json']}
++                  ['-attempt.json', '-authorization.json', '-failures.jsonl', '-guardian.jsonl', '-stdout.log', '-stderr.log', '-supervision.json', '-terminal-error.json']}
+     if any((resultdir / name).exists() for name in stage_names) or any((private / (stage + '-' + stream + '.raw')).exists() for stream in ['stdout', 'stderr']):
+         raise RuntimeError('Exclusive stage already used or output preexists')
+     if stage == 'kernel' and (any(resultdir.iterdir()) or any(private.iterdir())):
+         raise RuntimeError('Kernel requires empty result and private directories')
+     identity_check(); launch_gate()
+     shared = {'stage': stage, 'sourceCommit': publication['commit'], 'sourceManifestSha256': sha(mb),
+-              'configSha256': sha(config_bytes), 'launchCutoffUtc': CUTOFF}
++              'configSha256': sha(config_bytes), 'launchCutoffUtc': CUTOFF,
++              'executionContext': EXECUTION_CONTEXT, 'executionContextEvidence': CONTEXT_EVIDENCE,
++              'supervisorPid': os.getpid(), 'supervisorPgid': os.getpgrp()}
+     dump(resultdir / (stage + '-attempt.json'), {**shared, 'allocation': 'sole attempt; existence prevents retry',
+                                               'startedUtc': datetime.now(timezone.utc).isoformat()})
+     attempt_bytes = (resultdir / (stage + '-attempt.json')).read_bytes()
+     env.update({'RESEARCH_SUPERVISION_STAGE': stage, 'RESEARCH_SOURCE_COMMIT': publication['commit'],
+-                'RESEARCH_SOURCE_MANIFEST_PATH': str(mp), 'RESEARCH_EXPECTED_MANIFEST_SHA256': sha(mb)})
++                'RESEARCH_SOURCE_MANIFEST_PATH': str(mp), 'RESEARCH_EXPECTED_MANIFEST_SHA256': sha(mb),
++                'RESEARCH_CONFIG_SHA256': sha(config_bytes)})
+     command = ([str(runtime_paths['node']), str(package / 'source/run.cjs'), str(package)] if stage == 'kernel'
+                else [str(runtime_paths['python']), '-I', '-B', str(package / 'source/check.py'), str(package)])
+     template = ['NODE', 'PACKAGE/source/run.cjs', 'PACKAGE'] if stage == 'kernel' else ['PYTHON', '-I', '-B', 'PACKAGE/source/check.py', 'PACKAGE']
+     events = resultdir / (stage + '-guardian.jsonl')
+-    env.update({'RESEARCH_CHILD_COMMAND': json.dumps(command), 'RESEARCH_GUARD_EVENTS': str(events)})
++    authorization_path = resultdir / (stage + '-authorization.json')
++    failure_path = resultdir / (stage + '-failures.jsonl')
++    env.update({'RESEARCH_CHILD_COMMAND': json.dumps(command), 'RESEARCH_GUARD_EVENTS': str(events),
++                'RESEARCH_GUARD_AUTHORIZATION': str(authorization_path)})
+     stdout, stderr = [private / (stage + '-' + stream + '.raw') for stream in ['stdout', 'stderr']]
+     output = resultdir / ('index.json' if stage == 'kernel' else 'check.json')
+     report = {**shared, 'commandTemplate': template, 'runtimePins': runtimes,
+@@ -317,13 +343,78 @@
+               'maxSampleGapSeconds': 0, 'nominalSleepSeconds': 0.05, 'terminationReason': None,
+               'containmentScope': 'Retained guardian group: kernel runner plus at most one sequential inherited-group worker; checker has no subprocesses. Sampled RSS is neither continuous peak nor hostile escape isolation.',
+               'accountingScope': 'Closed new-package results only: kernel192MiB,checker64MiB,metadata and private/public logs16MiB,total272MiB. Records32MiB,generation8MiB,index/check2MiB,journal4MiB,supervision64KiB. Missing planned scientific files remain the checker responsibility and cannot support scientific success.'}
++    report.update(firstFailure=None, secondaryFailures=[], failureJournalDurable=False, firstFailureDurable=None,
++                  authorization=None, authorizationEvidence=None, guardianReadyObserved=False,
++                  guardianEvents=[], closureProbes=[], cleanupActions=[], normalRelease=False,
++                  guardianWaitStatusKnown=False, guardianExitCode=None, exitCode=None,
++                  scientificChildAbsentBeforeRelease=False)
+     started = time.monotonic(); last = started; guardian = None; child_pid = None; child_exit = None
++    report['startedMonotonicNs'] = time.monotonic_ns()
+     observed_worker_pids = set()
++    failure_stream = None
++    failure_bytes = b''
++
++    def clean(value, limit=1024):
++        value = str(value).replace(str(root), 'REPOSITORY_ROOT').replace(str(private), 'PRIVATE_RUN_DIR')
++        for name, runtime in runtime_paths.items():
++            value = value.replace(str(runtime), name.upper() + '_EXECUTABLE')
++        value = value.replace(str(Path.home()), 'USER_HOME')
++        value = re.sub(r'/private/var/folders/[^\s\"\']+', 'PRIVATE_TEMP_PATH', value)
++        return value[:limit]
++
++    def fail(kind, **details):
++        nonlocal failure_bytes
++        failure = {'kind': kind, 'monotonicNs': time.monotonic_ns(), **details}
++        first = report['firstFailure'] is None
++        if first:
++            report['firstFailure'] = failure
++            report['terminationReason'] = kind
++        else:
++            report['secondaryFailures'].append(failure)
++        record = {'role': 'firstFailure' if first else 'secondaryFailure', 'failure': failure}
++        encoded = (json.dumps(record, allow_nan=False) + '\n').encode()
++        try:
++            if failure_stream is None or len(failure_bytes) + len(encoded) > REPORT_BYTES:
++                raise RuntimeError('failure-journal-unavailable-or-full')
++            failure_stream.write(encoded); failure_stream.flush(); os.fsync(failure_stream.fileno())
++            failure_bytes += encoded
++            if first:
++                report['firstFailureDurable'] = True
++        except Exception as error:
++            report['failureJournalDurable'] = False
++            if first:
++                report['firstFailureDurable'] = False
++            report['secondaryFailures'].append({'kind': 'failure-persistence-error', 'monotonicNs': time.monotonic_ns(),
++                                                'exception': type(error).__name__, 'message': clean(error)})
++
++    class ProbeError(Exception):
++        def __init__(self, kind, detail):
++            self.kind, self.detail = kind, detail
++
+     def sample():
+         nonlocal last
+         now = time.monotonic(); report['maxSampleGapSeconds'] = max(report['maxSampleGapSeconds'], now - last); last = now
+-        table = subprocess.run(['ps', '-axo', 'pid=,ppid=,pgid=,rss='], capture_output=True, text=True, check=True, timeout=2).stdout
+-        rows = [tuple(map(int, line.split())) for line in table.splitlines() if len(line.split()) == 4]
++        detail = {'operation': 'process-sample', 'command': PS_COMMAND, 'timeoutSeconds': 2, 'injected': False}
++        try:
++            process = subprocess.run(PS_COMMAND, capture_output=True, text=True, timeout=2)
++        except Exception as error:
++            raise ProbeError('sampler-exception', {**detail, 'exception': type(error).__name__, 'message': clean(error)})
++        detail.update(returnCode=process.returncode, stderr=clean(process.stderr))
++        if process.returncode != 0:
++            raise ProbeError('sampler-nonzero', detail)
++        rows = []
++        for line in process.stdout.splitlines():
++            if not line.strip():
++                continue
++            tokens = line.split()
++            if len(tokens) != 4 or any(re.fullmatch(r'[0-9]+', token) is None for token in tokens):
++                raise ProbeError('sampler-malformed', {**detail, 'exception': 'ValueError',
++                                 'message': 'malformed-numeric-row', 'offendingRow': '[redacted numeric process row]'})
++            try:
++                rows.append(tuple(map(int, tokens)))
++            except ValueError:
++                raise ProbeError('sampler-malformed', {**detail, 'exception': 'ValueError',
++                                 'message': 'invalid-numeric-row', 'offendingRow': '[redacted numeric process row]'})
+         group = [row for row in rows if row[2] == guardian.pid]
+         report['samples'] += 1
+         rss = sum(row[3] * 1024 for row in group)
+@@ -331,10 +422,7 @@
+         if rss > RSS:
+             raise RuntimeError('rss-limit')
+         direct_children = [row for row in group if row[0] != guardian.pid and row[1] == guardian.pid]
+-        if child_pid is None and len(direct_children) == 1:
+-            inferred_child = direct_children[0][0]
+-        else:
+-            inferred_child = child_pid
++        inferred_child = direct_children[0][0] if child_pid is None and len(direct_children) == 1 else child_pid
+         workers = [row for row in group if row[0] not in {guardian.pid, inferred_child}]
+         if (len(group) > (3 if stage == 'kernel' else 2) or len(direct_children) > 1
+                 or any(row[1] != inferred_child for row in workers) or (stage == 'checker' and workers)
+@@ -345,11 +433,41 @@
+         if any(row[1] in parents and row[2] != guardian.pid for row in rows):
+             raise RuntimeError('escaped-descendant-observed')
+         return group
++
++    def read_events(final=False):
++        if not events.exists():
++            return []
++        if events.is_symlink() or not events.is_file() or events.stat().st_size > REPORT_BYTES:
++            raise RuntimeError('invalid-guardian-events')
++        data = events.read_bytes()
++        if data and not data.endswith(b'\n'):
++            if final:
++                raise RuntimeError('incomplete-guardian-event')
++            data = data.rsplit(b'\n', 1)[0] + b'\n' if b'\n' in data else b''
++        result = [parse(line) for line in data.splitlines()]
++        last_ns = 0
++        for event in result:
++            if (not isinstance(event, dict) or type(event.get('monotonicNs')) is not int
++                    or event['monotonicNs'] < last_ns or not isinstance(event.get('event'), str)):
++                raise RuntimeError('invalid-guardian-event')
++            last_ns = event['monotonicNs']
++        return result
++
++    def leader_row(rows):
++        leaders = [row for row in rows if row[0] == guardian.pid]
++        if len(leaders) != 1 or leaders[0][1] != os.getpid() or leaders[0][2] != guardian.pid or leaders[0][3] <= 0:
++            raise RuntimeError('leader-sample-not-qualified')
++        return leaders[0]
++
+     known = {'wall-limit', 'rss-limit', 'output-limit', 'kernel-output-limit', 'checker-output-limit', 'log-metadata-limit',
+              'artifact-output-limit', 'unexpected-output-file', 'unexpected-output-directory', 'unexpected-private-log',
+              'output-accounting-failure', 'unexpected-descendant', 'escaped-descendant-observed', 'guardian-failure',
+-             'guardian-exited-before-release', 'residual-group-member'}
++             'guardian-exited-before-release', 'residual-group-member', 'leader-sample-not-qualified',
++             'invalid-guardian-events', 'invalid-guardian-event', 'incomplete-guardian-event', 'guardian-event-sequence'}
+     try:
++        failure_stream = failure_path.open('xb')
++        failure_stream.flush(); os.fsync(failure_stream.fileno()); sync_directory(resultdir)
++        report['failureJournalDurable'] = True
+         with stdout.open('xb') as out, stderr.open('xb') as err:
+             launch_gate()
+             guardian = subprocess.Popen([str(runtime_paths['python']), '-I', '-B', str(package / 'source/guardian.py')],
+@@ -362,98 +480,214 @@
+                 reason = output_reason()
+                 if reason:
+                     raise RuntimeError(reason)
+-                if events.exists():
+-                    for line in events.read_text().splitlines():
+-                        try:
+-                            event = parse(line)
+-                        except json.JSONDecodeError:
+-                            continue
+-                        if event['event'] == 'child-start': child_pid = event['pid']
+-                        if event['event'] == 'child-exit': child_exit = event['exitCode']
+-                        if event['event'] == 'guardian-failure': raise RuntimeError('guardian-failure')
+-                rows = sample()
++                observed = read_events()
++                if observed[:len(report['guardianEvents'])] != report['guardianEvents']:
++                    raise RuntimeError('guardian-event-sequence')
++                for event in observed[len(report['guardianEvents']):]:
++                    name = event['event']
++                    previous = [item['event'] for item in report['guardianEvents']]
++                    if name == 'guardian-failure':
++                        fail('guardian-failure', guardianDetail=event)
++                        report['guardianEvents'].append(event)
++                        break
++                    expected = ['guardian-start', 'ready', 'child-start', 'child-exit', 'released']
++                    if len(previous) >= len(expected) or name != expected[len(previous)]:
++                        raise RuntimeError('guardian-event-sequence')
++                    if name in {'guardian-start', 'ready'}:
++                        if event.get('pid') != guardian.pid or event.get('pgid') != guardian.pid:
++                            raise RuntimeError('guardian-event-sequence')
++                        if name == 'ready': report['guardianReadyObserved'] = True
++                    if name == 'child-start':
++                        if (report['authorization'] is None or event.get('guardian') != guardian.pid
++                                or event.get('authorizationMonotonicNs') != report['authorization']['monotonicNs']
++                                or event['monotonicNs'] < report['authorization']['monotonicNs']
++                                or type(event.get('pid')) is not int or event['pid'] <= 0):
++                            raise RuntimeError('guardian-event-sequence')
++                        child_pid = event['pid']
++                    if name == 'child-exit':
++                        if event.get('pid') != child_pid or type(event.get('exitCode')) is not int:
++                            raise RuntimeError('guardian-event-sequence')
++                        child_exit = event['exitCode']; report['exitCode'] = child_exit
++                        if child_exit != 0:
++                            fail('child-exit', exitCode=child_exit)
++                    report['guardianEvents'].append(event)
++                if any(event['event'] == 'guardian-failure' for event in report['guardianEvents']):
++                    break
+                 if guardian.poll() is not None:
+                     raise RuntimeError('guardian-exited-before-release')
++                rows = sample()
++                if report['guardianReadyObserved'] and report['authorization'] is None:
++                    leader = leader_row(rows)
++                    if len(rows) != 1:
++                        raise RuntimeError('unexpected-descendant')
++                    report['leaderObservation'] = {**dict(zip(['pid', 'ppid', 'pgid', 'rssKiB'], leader)),
++                                                   'monotonicNs': time.monotonic_ns()}
++                    launch_gate()
++                    authorization = {**shared, 'guardianPid': guardian.pid, 'monotonicNs': time.monotonic_ns(),
++                                     'leaderSampleObserved': True, 'leaderObservation': report['leaderObservation']}
++                    dump(authorization_path, authorization)
++                    authorization_bytes = authorization_path.read_bytes()
++                    report['authorization'] = authorization
++                    report['authorizationEvidence'] = pin(authorization_path, root)
++                    guardian.stdin.write('start\n'); guardian.stdin.flush()
+                 if child_exit is not None:
+-                    if any(row[0] != guardian.pid for row in rows):
++                    leader_row(rows)
++                    if len(rows) != 1:
+                         raise RuntimeError('residual-group-member')
+                     report['scientificChildAbsentBeforeRelease'] = True
++                    report['releaseObservation'] = {'monotonicNs': time.monotonic_ns(), 'groupRows': [list(row) for row in rows]}
+                     guardian.stdin.write('release\n'); guardian.stdin.flush(); guardian.wait(timeout=3)
++                    report['normalRelease'] = guardian.returncode == 0
+                     break
+                 time.sleep(0.05)
+-            report['exitCode'] = child_exit; report['guardianExitCode'] = guardian.returncode
++    except ProbeError as error:
++        fail(error.kind, **error.detail)
+     except Exception as error:
+-        report['terminationReason'] = str(error) if str(error) in known else 'supervisor-' + type(error).__name__
++        fail(str(error) if str(error) in known else 'supervisor-' + type(error).__name__,
++             exception=type(error).__name__, message=clean(error))
+     finally:
+         if guardian is not None:
+-            # The retained owned leader anchors group identity; never signal an already-exited group ID.
+-            if guardian.poll() is None:
+-                try: os.killpg(guardian.pid, signal.SIGTERM)
+-                except ProcessLookupError: pass
+-                try: guardian.wait(timeout=2)
+-                except subprocess.TimeoutExpired:
+-                    if guardian.poll() is None:
+-                        os.killpg(guardian.pid, signal.SIGKILL)
+-                    guardian.wait(timeout=2)
+-            absent = True
++            try:
++                # Never signal an ID after observing that its retained owner has exited.
++                if guardian.poll() is None:
++                    try:
++                        os.killpg(guardian.pid, signal.SIGTERM)
++                        report['cleanupActions'].append({'signal': 'SIGTERM', 'monotonicNs': time.monotonic_ns()})
++                    except ProcessLookupError:
++                        pass
++                    try: guardian.wait(timeout=2)
++                    except subprocess.TimeoutExpired:
++                        if guardian.poll() is None:
++                            os.killpg(guardian.pid, signal.SIGKILL)
++                            report['cleanupActions'].append({'signal': 'SIGKILL', 'monotonicNs': time.monotonic_ns()})
++                        guardian.wait(timeout=2)
++                report['guardianExitCode'] = guardian.poll()
++                report['guardianWaitStatusKnown'] = report['guardianExitCode'] is not None
++                if guardian.stdin is not None:
++                    guardian.stdin.close()
++            except Exception as error:
++                fail('cleanup-error', exception=type(error).__name__, message=clean(error))
++                report['guardianExitCode'] = guardian.returncode
++                report['guardianWaitStatusKnown'] = guardian.returncode is not None
+             for _ in range(2):
+-                try: os.killpg(guardian.pid, 0); absent = False
+-                except ProcessLookupError: pass
++                probe = {'monotonicNs': time.monotonic_ns(), 'pgid': guardian.pid, 'absent': False}
++                try:
++                    try: os.killpg(guardian.pid, 0)
++                    except ProcessLookupError: probe['absent'] = True
++                except Exception as error:
++                    probe['exception'] = type(error).__name__
++                    fail('closure-probe-error', exception=type(error).__name__, message=clean(error))
++                report['closureProbes'].append(probe)
+                 time.sleep(0.05)
+-            report['childGroupAbsent'] = absent
++            report['childGroupAbsent'] = all(probe['absent'] for probe in report['closureProbes'])
++            report['closed'] = report['childGroupAbsent'] and report['guardianWaitStatusKnown']
++            try:
++                final_events = read_events(final=True)
++                if final_events[:len(report['guardianEvents'])] != report['guardianEvents']:
++                    raise RuntimeError('guardian-event-prefix-changed')
++                for event in final_events[len(report['guardianEvents']):]:
++                    if event['event'] == 'guardian-failure':
++                        fail('guardian-failure', guardianDetail=event)
++                report['guardianEvents'] = final_events
++                report['guardianEventsEvidence'] = pin(events, root)
++                if report['normalRelease'] and [event['event'] for event in report['guardianEvents']] != [
++                        'guardian-start', 'ready', 'child-start', 'child-exit', 'released']:
++                    fail('normal-release-evidence-missing')
++                if report['normalRelease'] and final_events[-1]['monotonicNs'] < report['releaseObservation']['monotonicNs']:
++                    fail('normal-release-chronology-invalid')
++            except Exception as error:
++                fail('final-guardian-events-error', exception=type(error).__name__, message=clean(error))
+         else:
+-            report['childGroupAbsent'] = True
+-        report['closed'] = report['childGroupAbsent']
++            report.update(childGroupAbsent=True, closed=True, noGroupCreated=True)
++        if not report['closed']:
++            fail('closure-unproven')
+         report['observedSequentialWorkerPids'] = sorted(observed_worker_pids)
+         logs = []
+-        for path in [stdout, stderr]:
+-            if not path.exists(): continue
+-            raw = path.read_bytes()
+-            text = raw.decode('utf-8', errors='replace').replace(str(root), 'REPOSITORY_ROOT').replace(str(private), 'PRIVATE_RUN_DIR')
+-            for name, runtime in runtime_paths.items(): text = text.replace(str(runtime), name.upper() + '_EXECUTABLE')
+-            text = text.replace(str(Path.home()), 'USER_HOME')
+-            text = re.sub(r'/private/var/folders/[^\s\"\']+', 'PRIVATE_TEMP_PATH', text)
+-            dest = resultdir / (path.stem + '.log')
+-            with dest.open('x') as stream:
+-                stream.write(text); stream.flush(); os.fsync(stream.fileno())
+-            sync_directory(resultdir)
+-            logs.append({'path': dest.relative_to(root).as_posix(), 'rawBytes': len(raw), 'rawSha256': sha(raw),
+-                         'publishedBytes': dest.stat().st_size, 'publishedSha256': sha(dest.read_bytes()),
+-                         'redaction': 'Machine/runtime prefixes replaced; raw bytes retained privately.'})
++        try:
++            for path in [stdout, stderr]:
++                if not path.exists(): continue
++                raw = path.read_bytes()
++                text = clean(raw.decode('utf-8', errors='replace'), limit=len(raw) * 4 + 1024)
++                dest = resultdir / (path.stem + '.log')
++                with dest.open('x') as stream:
++                    stream.write(text); stream.flush(); os.fsync(stream.fileno())
++                sync_directory(resultdir)
++                logs.append({'path': dest.relative_to(root).as_posix(), 'rawBytes': len(raw), 'rawSha256': sha(raw),
++                             'publishedBytes': dest.stat().st_size, 'publishedSha256': sha(dest.read_bytes()),
++                             'redaction': 'Machine/runtime prefixes replaced; raw bytes retained privately.'})
++            report['privateRawLogs'] = [{'name': name, 'bytes': (private / name).stat().st_size,
++                                        'sha256': sha((private / name).read_bytes())} for name in sorted(raw_names)
++                                       if (private / name).is_file() and not (private / name).is_symlink()]
++        except Exception as error:
++            fail('log-finalization-error', exception=type(error).__name__, message=clean(error))
+         report['logs'] = logs
+         report['privateLogDirectorySha256'] = private_identity
+-        report['privateRawLogs'] = [{'name': name, 'bytes': (private / name).stat().st_size,
+-                                    'sha256': sha((private / name).read_bytes())} for name in sorted(raw_names)
+-                                   if (private / name).is_file() and not (private / name).is_symlink()]
+-        report['scientificEvidence'] = [pin(resultdir / name, root) for name in sorted(kernel_names)
+-                                        if (resultdir / name).is_file() and not (resultdir / name).is_symlink()]
+-        if stage == 'checker':
+-            report['checkerEvidence'] = [pin(resultdir / name, root) for name in sorted(checker_names)
+-                                         if (resultdir / name).is_file() and not (resultdir / name).is_symlink()]
+-        if output.is_file() and not output.is_symlink(): report['output'] = pin(output, root)
++        try:
++            report['scientificEvidence'] = [pin(resultdir / name, root) for name in sorted(kernel_names)
++                                            if (resultdir / name).is_file() and not (resultdir / name).is_symlink()]
++            if stage == 'checker':
++                report['checkerEvidence'] = [pin(resultdir / name, root) for name in sorted(checker_names)
++                                             if (resultdir / name).is_file() and not (resultdir / name).is_symlink()]
++            if output.is_file() and not output.is_symlink(): report['output'] = pin(output, root)
++        except Exception as error:
++            fail('evidence-pin-error', exception=type(error).__name__, message=clean(error))
+         try:
+             identity_check(); report['sourceAndRuntimeRechecked'] = True
+-        except Exception:
+-            report['sourceAndRuntimeRechecked'] = False; report['terminationReason'] = 'postrun-identity-failure'
++        except Exception as error:
++            report['sourceAndRuntimeRechecked'] = False
++            fail('postrun-identity-failure', exception=type(error).__name__, message=clean(error))
++        try:
++            if not output.is_file() or output.is_symlink():
++                fail('incomplete-stage-evidence', artifact=output.name)
++            elif output.stat().st_size <= 2 * MIB:
++                outcome = parse(output.read_bytes())
++                if any(outcome.get(key) != shared[key] for key in ['sourceCommit', 'sourceManifestSha256', 'configSha256']):
++                    fail('stage-report-provenance-mismatch')
++                if stage == 'checker': report['scientificPassed'] = outcome.get('passed') is True
++            if stage == 'kernel' and not (resultdir / 'kernel-journal.jsonl').is_file():
++                fail('incomplete-stage-evidence', artifact='kernel-journal.jsonl')
++        except Exception as error:
++            fail('stage-evidence-read-error', exception=type(error).__name__, message=clean(error))
++        report['wallSeconds'] = time.monotonic() - started
++        if report['wallSeconds'] > WALL:
++            fail('wall-limit')
++        reason = output_reason(REPORT_BYTES)
++        if reason:
++            fail(reason)
+         report['outputAccountingBeforeReport'] = accounting()
+-        reason = output_reason(REPORT_BYTES)
+-        if reason: report['terminationReason'] = reason
+-        if not output.is_file() or output.is_symlink():
+-            if report['terminationReason'] is None: report['terminationReason'] = 'incomplete-stage-evidence'
+-        elif output.stat().st_size <= 2 * MIB:
+-            outcome = parse(output.read_bytes())
+-            if any(outcome.get(key) != shared[key] for key in ['sourceCommit', 'sourceManifestSha256', 'configSha256']):
+-                report['terminationReason'] = 'stage-report-provenance-mismatch'
+-            if stage == 'checker': report['scientificPassed'] = outcome.get('passed') is True
+-        if stage == 'kernel' and not (resultdir / 'kernel-journal.jsonl').is_file():
+-            report['terminationReason'] = 'incomplete-stage-evidence'
++        recorded_kinds = {failure['kind'] for failure in ([report['firstFailure']] if report['firstFailure'] else []) + report['secondaryFailures']}
++        for violation in report['outputAccountingBeforeReport']['violations']:
++            if violation not in recorded_kinds:
++                fail(violation)
+         report['wallSeconds'] = time.monotonic() - started
+-        if report['wallSeconds'] > WALL: report['terminationReason'] = 'wall-limit'
+-        report['success'] = (report.get('exitCode') == 0 and report.get('guardianExitCode') == 0
+-                             and report['terminationReason'] is None and report['closed'] and report['sourceAndRuntimeRechecked'])
++        if report['wallSeconds'] > WALL and 'wall-limit' not in recorded_kinds:
++            fail('wall-limit')
++        try:
++            if failure_path.is_symlink() or failure_path.read_bytes() != failure_bytes:
++                raise RuntimeError('failure-journal-bytes-changed')
++            report['failureJournal'] = pin(failure_path, root)
++        except Exception as error:
++            fail('failure-journal-identity-failure', exception=type(error).__name__, message=clean(error))
++            report['failureJournalDurable'] = False
++        report['outputAccountingBeforeReport'] = accounting()
++        report['success'] = (report['exitCode'] == 0 and report['guardianExitCode'] == 0
++                             and report['firstFailure'] is None and not report['secondaryFailures']
++                             and report['closed'] and report['sourceAndRuntimeRechecked']
++                             and report['guardianReadyObserved'] and report['authorization'] is not None
++                             and report['normalRelease'] and report['scientificChildAbsentBeforeRelease']
++                             and report['guardianWaitStatusKnown'] and report['failureJournalDurable']
++                             and not report['outputAccountingBeforeReport']['violations'])
+         if len((json.dumps(report, indent=2) + '\n').encode()) > REPORT_BYTES:
+-            raise RuntimeError('Final supervision report budget exceeded')
+-        dump(resultdir / (stage + '-supervision.json'), report)
++            fail('supervision-report-size-limit')
++            raise RuntimeError('Final supervision report budget exceeded; first failure retained in journal')
++        try:
++            dump(resultdir / (stage + '-supervision.json'), report)
++        except Exception as error:
++            fail('supervision-report-write-error', exception=type(error).__name__, message=clean(error))
++            raise
++        finally:
++            if failure_stream is not None:
++                failure_stream.close()
+         print(json.dumps({key: report[key] for key in ['stage', 'success', 'closed', 'wallSeconds', 'peakSampledGroupRssBytes', 'terminationReason']}))
+     return 0 if report['success'] else 1
+ 
+@@ -463,10 +697,20 @@
+         sys.exit(main())
+     except Exception as error:
+         fallback = {'success': False, 'closed': False, 'closureUnproven': True,
+-                    'terminationReason': 'supervisor-terminal-' + type(error).__name__}
++                    'terminationReason': 'supervisor-terminal-' + type(error).__name__,
++                    'terminalFailure': {'exception': type(error).__name__}}
+         try:
+             if len(sys.argv) == 2 and sys.argv[1] in {'kernel', 'checker'}:
+-                dump(Path(__file__).resolve().parents[1] / 'results' / (sys.argv[1] + '-terminal-error.json'), fallback)
++                directory = Path(__file__).resolve().parents[1] / 'results'
++                journal = directory / (sys.argv[1] + '-failures.jsonl')
++                if journal.is_file() and not journal.is_symlink() and journal.stat().st_size <= REPORT_BYTES:
++                    records = [parse(line) for line in journal.read_bytes().splitlines()]
++                    first = next((record['failure'] for record in records if record.get('role') == 'firstFailure'), None)
++                    if first is not None:
++                        fallback['firstFailure'] = first
++                        fallback['terminationReason'] = first['kind']
++                        fallback['durableFailureJournal'] = journal.name
++                dump(directory / (sys.argv[1] + '-terminal-error.json'), fallback)
+         except Exception:
+             pass
+         print(json.dumps(fallback)); sys.exit(1)
+--- research/m31-normalizer-ablation-2026-10-17/source/guardian.py
++++ research/m31-normalizer-replication-2026-10-17/source/guardian.py
+@@ -1,7 +1,8 @@
+-"""Retain the group leader until closure is acknowledged; kill owned group on failure."""
++"""Ready-gated retained group owner; scientific spawn needs observed-leader authorization."""
+ import json
+ import os
+ from pathlib import Path
++import re
+ import select
+ import signal
+ import subprocess
+@@ -9,27 +10,53 @@
+ import time
+ from datetime import datetime
+ 
++CUTOFF = '2026-10-17T01:00:00Z'
+ if not sys.flags.isolated or not sys.dont_write_bytecode:
+     raise RuntimeError('Guardian requires Python -I -B')
+-if os.environ.get('RESEARCH_SUPERVISION_STAGE') not in {'kernel', 'checker'}:
++stage = os.environ.get('RESEARCH_SUPERVISION_STAGE')
++if stage not in {'kernel', 'checker'}:
+     raise RuntimeError('Wrong supervision stage')
++if os.environ.get('RESEARCH_EXECUTION_CONTEXT') != 'tool-require-escalated':
++    raise RuntimeError('Explicit escalated execution context required')
+ if os.environ.get('NODE_OPTIONS') or os.environ.get('NODE_PATH'):
+     raise RuntimeError('Node preload environment refused')
+ if os.getpid() != os.getpgrp():
+     raise RuntimeError('Guardian must own its new process group')
+ events = Path(os.environ['RESEARCH_GUARD_EVENTS'])
++authorization_path = Path(os.environ['RESEARCH_GUARD_AUTHORIZATION'])
+ child = None
+ released = False
+ start = time.monotonic()
+ 
+ 
+-def emit(value):
++def emit(event, **values):
++    timestamp = time.monotonic_ns()
+     with events.open('a') as stream:
+-        stream.write(json.dumps(value) + '\n'); stream.flush(); os.fsync(stream.fileno())
++        stream.write(json.dumps({'event': event, 'monotonicNs': timestamp, **values}, allow_nan=False) + '\n')
++        stream.flush(); os.fsync(stream.fileno())
++    return timestamp
++
++
++def command():
++    while time.monotonic() - start <= 610:
++        if select.select([sys.stdin], [], [], 0.05)[0]:
++            value = sys.stdin.readline()
++            if not value:
++                raise RuntimeError('supervisor-disconnected')
++            return value.strip()
++    raise RuntimeError('guardian-timeout')
+ 
+ 
+ def stopping(_signal, _frame):
+-    raise RuntimeError('Guardian signalled')
++    raise RuntimeError('guardian-signalled')
++
++
++def clean(value):
++    value = str(value).replace(str(Path(__file__).resolve().parents[3]), 'REPOSITORY_ROOT')
++    value = value.replace(os.environ.get('RESEARCH_PRIVATE_RUN_DIR', '__UNSET_PRIVATE__'), 'PRIVATE_RUN_DIR')
++    value = value.replace(str(Path.home()), 'USER_HOME').replace(sys.executable, 'PYTHON_EXECUTABLE')
++    value = re.sub(r'/private/var/folders/[^\s\"\']+', 'PRIVATE_TEMP_PATH', value)
++    return value[:256]
+ 
+ 
+ signal.signal(signal.SIGTERM, stopping)
+@@ -39,35 +66,61 @@
+     fd = os.open(events.parent, os.O_RDONLY)
+     try: os.fsync(fd)
+     finally: os.close(fd)
+-    if time.time() >= datetime.fromisoformat('2026-10-16T23:00:00+00:00').timestamp():
+-        raise RuntimeError('Scientific launch cutoff reached')
+-    child = subprocess.Popen(json.loads(os.environ['RESEARCH_CHILD_COMMAND']))
+-    emit({'event': 'child-start', 'pid': child.pid, 'guardian': os.getpid()})
++    emit('guardian-start', pid=os.getpid(), pgid=os.getpgrp())
++    ready_ns = emit('ready', pid=os.getpid(), pgid=os.getpgrp())
++    if command() != 'start':
++        raise RuntimeError('wrong-start-command')
++    if (authorization_path.parent != events.parent or authorization_path.name != stage + '-authorization.json'
++            or authorization_path.is_symlink() or not authorization_path.is_file()
++            or authorization_path.stat().st_size > 65536):
++        raise RuntimeError('invalid-authorization-path')
++    authorization = json.loads(authorization_path.read_bytes())
++    expected = {'stage': stage, 'sourceCommit': os.environ['RESEARCH_SOURCE_COMMIT'],
++                'sourceManifestSha256': os.environ['RESEARCH_EXPECTED_MANIFEST_SHA256'],
++                'configSha256': os.environ['RESEARCH_CONFIG_SHA256'], 'launchCutoffUtc': CUTOFF,
++                'executionContext': 'tool-require-escalated', 'guardianPid': os.getpid(),
++                'supervisorPid': os.getppid(), 'leaderSampleObserved': True}
++    leader = authorization.get('leaderObservation', {})
++    authorized_ns = authorization.get('monotonicNs')
++    observed_ns = leader.get('monotonicNs')
++    if (any(authorization.get(k) != v for k, v in expected.items())
++            or leader.get('pid') != os.getpid() or leader.get('pgid') != os.getpgrp()
++            or leader.get('ppid') != os.getppid() or type(leader.get('rssKiB')) is not int or leader['rssKiB'] <= 0
++            or type(authorized_ns) is not int or type(observed_ns) is not int
++            or not ready_ns <= observed_ns <= authorized_ns <= time.monotonic_ns()):
++        raise RuntimeError('wrong-authorization')
++    child_command = json.loads(os.environ['RESEARCH_CHILD_COMMAND'])
++    if time.monotonic() - start > 610:
++        raise RuntimeError('guardian-timeout')
++    # This is the last check immediately before the scientific child can be spawned.
++    if time.time() >= datetime.fromisoformat(CUTOFF.replace('Z', '+00:00')).timestamp():
++        raise RuntimeError('scientific-launch-cutoff')
++    child = subprocess.Popen(child_command)
++    emit('child-start', pid=child.pid, guardian=os.getpid(), authorizationMonotonicNs=authorized_ns)
+     while child.poll() is None:
+         if time.monotonic() - start > 610:
+-            raise RuntimeError('Guardian timeout')
+-        if select.select([sys.stdin], [], [], 0.05)[0] and sys.stdin.readline() == '':
+-            raise RuntimeError('Supervisor disconnected')
+-    emit({'event': 'child-exit', 'pid': child.pid, 'exitCode': child.returncode})
+-    while time.monotonic() - start <= 610:
++            raise RuntimeError('guardian-timeout')
+         if select.select([sys.stdin], [], [], 0.05)[0]:
+-            if sys.stdin.readline().strip() == 'release':
+-                released = True
+-                break
+-            raise RuntimeError('Supervisor disconnected')
+-    if not released:
+-        raise RuntimeError('Release timeout')
++            if not sys.stdin.readline():
++                raise RuntimeError('supervisor-disconnected')
++            raise RuntimeError('premature-command')
++    emit('child-exit', pid=child.pid, exitCode=child.returncode)
++    if command() != 'release':
++        raise RuntimeError('wrong-release-command')
++    emit('released')
++    released = True
+ except Exception as error:
+-    try: emit({'event': 'guardian-failure', 'reason': type(error).__name__})
++    try: emit('guardian-failure', exception=type(error).__name__, reason=clean(error))
+     except Exception: pass
+ finally:
+     if not released:
+-        # The current process remains the live group leader, so this ID cannot be reused.
+-        # Include a runner's inherited-group worker even if the runner already exited.
++        # This live group leader owns the ID; include any inherited-group worker.
+         signal.signal(signal.SIGTERM, signal.SIG_IGN)
+         os.killpg(os.getpgrp(), signal.SIGTERM)
+         if child and child.poll() is None:
+             try: child.wait(timeout=1)
+             except subprocess.TimeoutExpired: pass
+-        # Kill the whole still-owned group, including this guardian, on every failure.
++        if child:
++            try: emit('cleanup-child-exit', pid=child.pid, exitCode=child.poll())
++            except Exception: pass
+         os.killpg(os.getpgrp(), signal.SIGKILL)

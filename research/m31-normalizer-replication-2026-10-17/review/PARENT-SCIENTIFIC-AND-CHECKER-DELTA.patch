@@ -1,0 +1,236 @@
+--- predecessor/source/check.py
++++ replication/source/check.py
+@@ -300,11 +300,97 @@
+     return controls
+ 
+ 
++def verify_kernel_lifecycle(results, root, closed, shared, pins):
++    """Bind saved operational evidence; caller attestation is not OS detection."""
++    require(closed.get('stage') == 'kernel' and all(closed.get(k) == v for k,v in shared.items()),
++            'lifecycle-source-binding')
++    require(closed.get('executionContext') == 'tool-require-escalated' and
++            closed.get('executionContextEvidence') == 'Caller attestation via environment variable; tool invocation retained outside package. Not a sandbox detector.',
++            'lifecycle-context-attestation')
++    require(all(closed.get(k) is True for k in ('guardianReadyObserved','guardianWaitStatusKnown',
++            'normalRelease','failureJournalDurable')), 'lifecycle-positive-facts')
++    require(closed.get('firstFailure') is None and closed.get('firstFailureDurable') is None and
++            closed.get('secondaryFailures') == [] and closed.get('terminationReason') is None,
++            'lifecycle-no-failure')
++    group=closed.get('processGroup'); supervisor=closed.get('supervisorPid')
++    require(type(group) is int and group>0 and type(supervisor) is int and supervisor>0,
++            'lifecycle-pids')
++    require(type(closed.get('supervisorPgid')) is int and closed['supervisorPgid']>0,
++            'lifecycle-supervisor-group')
++    def monotonic(value):
++        require(type(value) is int and 0<value<2**53,'lifecycle-monotonic-time')
++        return value
++    leader=closed.get('leaderObservation')
++    fields(leader,('pid','ppid','pgid','rssKiB','monotonicNs'),'lifecycle-leader-fields')
++    require(leader['pid']==group and leader['pgid']==group and leader['ppid']==supervisor and
++            type(leader['rssKiB']) is int and leader['rssKiB']>0,'lifecycle-positive-leader')
++    leader_time=monotonic(leader['monotonicNs'])
++    for name,key in (('kernel-authorization.json','authorizationEvidence'),
++                     ('kernel-failures.jsonl','failureJournal')):
++        path=results/name; pin=file_pin(path,65536); full=dict(path=relative(path,root),**pin)
++        require(same(closed.get(key),full),'lifecycle-artifact-pin:'+name)
++        pins[full['path']]=pin
++    require((results/'kernel-failures.jsonl').read_bytes()==b'','lifecycle-empty-success-journal')
++    authorization=load(results/'kernel-authorization.json',65536)
++    require(same(authorization,closed.get('authorization')),'lifecycle-authorization-copy')
++    require(all(authorization.get(k)==v for k,v in shared.items()) and
++            authorization.get('stage')=='kernel' and authorization.get('guardianPid')==group and
++            authorization.get('supervisorPid')==supervisor and
++            authorization.get('executionContext')=='tool-require-escalated' and
++            authorization.get('leaderSampleObserved') is True and
++            same(authorization.get('leaderObservation'),leader),'lifecycle-authorization-binding')
++    authorization_time=monotonic(authorization.get('monotonicNs'))
++    eventpath=results/'kernel-guardian.jsonl'; eventpin=file_pin(eventpath,65536)
++    require(same(closed.get('guardianEventsEvidence'),dict(path=relative(eventpath,root),**eventpin)),
++            'lifecycle-events-pin')
++    raw=eventpath.read_bytes(); lines=raw.splitlines(keepends=True)
++    require(len(lines)==5 and all(line.endswith(b'\n') for line in lines),'lifecycle-event-lines')
++    events=[decode(line) for line in lines]
++    require(same(events,closed.get('guardianEvents')),'lifecycle-event-copy')
++    require([e.get('event') for e in events]==['guardian-start','ready','child-start','child-exit','released'],
++            'lifecycle-event-order')
++    event_times=[monotonic(e.get('monotonicNs')) for e in events]
++    require(monotonic(closed.get('startedMonotonicNs'))<=event_times[0],
++            'lifecycle-supervisor-before-guardian')
++    require(all(e.get('pid')==group and e.get('pgid')==group for e in events[:2]),
++            'lifecycle-start-ready-group-binding')
++    require(event_times==sorted(event_times) and event_times[1]<=leader_time<=authorization_time<=event_times[2],
++            'lifecycle-authorization-before-child')
++    require(events[2].get('authorizationMonotonicNs')==authorization_time,
++            'lifecycle-child-authorization-binding')
++    child=events[2].get('pid')
++    require(type(child) is int and child>0 and child!=group and events[2].get('guardian')==group and
++            events[3].get('pid')==child and events[3].get('exitCode')==0,'lifecycle-child-exit')
++    release=closed.get('releaseObservation')
++    fields(release,('monotonicNs','groupRows'),'lifecycle-release-fields')
++    release_time=monotonic(release['monotonicNs'])
++    rows=release['groupRows']
++    require(type(rows) is list and len(rows)==1 and type(rows[0]) is list and len(rows[0])==4 and
++            all(type(v) is int for v in rows[0]) and rows[0][:3]==[group,supervisor,group] and rows[0][3]>0,
++            'lifecycle-leader-only-release')
++    require(event_times[3]<=release_time<=event_times[4],'lifecycle-release-order')
++    probes=closed.get('closureProbes')
++    require(type(probes) is list and len(probes)==2,'lifecycle-two-closure-probes')
++    last=event_times[4]
++    for probe in probes:
++        fields(probe,('monotonicNs','pgid','absent'),'lifecycle-closure-probe-fields')
++        moment=monotonic(probe['monotonicNs'])
++        require(probe['pgid']==group and probe['absent'] is True and moment>=last,'lifecycle-group-absent')
++        last=moment
++    require(type(closed.get('samples')) is int and closed['samples']>0 and
++            0<closed.get('peakSampledGroupRssBytes',0)<=1073741824 and
++            0<closed.get('wallSeconds',0)<=600,'lifecycle-resource-limits')
++    require(closed['peakSampledGroupRssBytes']>=leader['rssKiB']*1024 and
++            closed['peakSampledGroupRssBytes']>=rows[0][3]*1024,
++            'lifecycle-peak-covers-saved-observations')
++    pins[relative(eventpath,root)]=eventpin
++
++
+ def main(argv=None):
+     argv=sys.argv[1:] if argv is None else argv
+     require(len(argv)==1,'checker-cli')
+     package=Path(argv[0]).resolve(strict=True)
+-    require(package==Path(__file__).resolve(strict=True).parent.parent and package.name=='m31-normalizer-ablation-2026-10-17','checker-fixed-package')
++    require(package==Path(__file__).resolve(strict=True).parent.parent and package.name=='m31-normalizer-replication-2026-10-17','checker-fixed-package')
+     root=package.parent.parent
+     source=package/'source'; results=package/'results'; output=results/'check.json'
+     require(not output.exists(),'checker-output-already-exists')
+@@ -319,6 +405,8 @@
+     pins={}; used=0
+     try:
+         require(os.environ.get('RESEARCH_SUPERVISION_STAGE')=='checker','supervised-checker-required')
++        require(os.environ.get('RESEARCH_EXECUTION_CONTEXT')=='tool-require-escalated',
++            'checker-context-attestation-required')
+         manifest=package/'source-manifest.json'
+         require(Path(os.environ.get('RESEARCH_SOURCE_MANIFEST_PATH','')).resolve()==manifest,'source-manifest-environment')
+         mp=file_pin(manifest,1024*1024)
+@@ -336,31 +424,39 @@
+         config=load(source/'config.json',SOURCE_LIMIT); cp=file_pin(source/'config.json',SOURCE_LIMIT)
+         runtime=load(package/'runtime-pins.json',65536)
+         require(same(file_pin(Path(sys.executable).resolve(strict=True),256*1024*1024),runtime['python']),'python-runtime-pin')
+-        require(config['id']=='m31-normalizer-ablation-v1' and config['method']=='filtered','config-id')
+-        require(same(config['cases'],[{'id':'run-a','seed':26171011},{'id':'run-b','seed':26171012}]),'config-fresh-seeds')
++        require(config['id']=='m31-normalizer-replication-v1' and config['method']=='filtered','config-id')
++        require(same(config['cases'],[{'id':'run-a','seed':26171021},{'id':'run-b','seed':26171022}]),'config-fresh-seeds')
+         require(config['scheduledTimes']==[0,5,10] and config['pairedOrders']==[
+             ['baseline','candidate'],['candidate','baseline'],['candidate','baseline'],['baseline','candidate']], 'config-pair-order')
+-        require(config['launchCutoffUtc']=='2026-10-16T23:00:00Z','config-cutoff')
++        require(config['launchCutoffUtc']=='2026-10-17T01:00:00Z','config-cutoff')
+         receipt=load(package/'source-publication.json',65536)
+         require(receipt.get('commit')==commit and receipt.get('manifestSha256')==mp['sha256'] and receipt.get('manifestBytes')==mp['bytes'] and receipt.get('remoteBytesEqualLocal') is True and receipt.get('committedBytesEqualLocal') is True and receipt.get('verifiedFilePins')==len(indexed),'public-source-verification')
+         verified=datetime.fromisoformat(receipt['verifiedUtc'].replace('Z','+00:00'))
+         cutoff=datetime.fromisoformat(config['launchCutoffUtc'].replace('Z','+00:00'))
+         previous=verified
+         pins[relative(package/'source-publication.json',root)]=file_pin(package/'source-publication.json',65536)
++        attempts={}
+         for stage in ('kernel','checker'):
+             ap=results/f'{stage}-attempt.json'; attempt=load(ap,65536)
++            attempts[stage]=attempt
+             require(attempt.get('stage')==stage and attempt.get('sourceCommit')==commit and
+                 attempt.get('sourceManifestSha256')==mp['sha256'] and attempt.get('configSha256')==cp['sha256'] and
+                 attempt.get('launchCutoffUtc')==config['launchCutoffUtc'] and
++                attempt.get('executionContext')=='tool-require-escalated' and
+                 attempt.get('allocation')=='sole attempt; existence prevents retry','attempt-source-binding')
+             started=datetime.fromisoformat(attempt['startedUtc'].replace('Z','+00:00'))
+             require(previous<=started<cutoff,'attempt-publication-cutoff-chronology'); previous=started
+             pins[relative(ap,root)]=file_pin(ap,65536)
+         closed=load(results/'kernel-supervision.json',2*1024*1024)
++        require(all(same(closed.get(k),attempts['kernel'].get(k)) for k in
++            ('supervisorPid','supervisorPgid')),'kernel-attempt-supervisor-binding')
+         require(all(closed.get(k) is True for k in ('success','closed','childGroupAbsent',
+             'scientificChildAbsentBeforeRelease','sourceAndRuntimeRechecked')) and
+             closed.get('exitCode')==0 and closed.get('guardianExitCode')==0,'kernel-closed-success')
+         require(not (results/'kernel-terminal-error.json').exists(),'kernel-terminal-error')
++        verify_kernel_lifecycle(results,root,closed,dict(sourceCommit=commit,
++            sourceManifestSha256=mp['sha256'],configSha256=cp['sha256'],
++            launchCutoffUtc=config['launchCutoffUtc']),pins)
+         pins[relative(results/'kernel-supervision.json',root)]=file_pin(results/'kernel-supervision.json',2*1024*1024)
+         report.update(sourceCommit=commit,sourceManifestSha256=mp['sha256'],configSha256=cp['sha256'])
+         # Only these four pinned Python modules are loaded; their main functions are never called.
+@@ -526,7 +622,7 @@
+ def extract_direct(document,root,old,pins):
+     result={}
+     require(type(document['directControls']) is list and len(document['directControls'])==2,'direct-descriptor-count')
+-    package=root/'research/m31-normalizer-ablation-2026-10-17'
++    package=root/'research/m31-normalizer-replication-2026-10-17'
+     for arm,desc in zip(ARMS,document['directControls']):
+         fields(desc,('arm','path','bytes','sha256'),'direct-descriptor-fields')
+         path=package/'results/direct'/f'{arm}.json'
+--- predecessor/source/config.json
++++ replication/source/config.json
+@@ -1,13 +1,13 @@
+ {
+-  "id": "m31-normalizer-ablation-v1",
++  "id": "m31-normalizer-replication-v1",
+   "cases": [
+     {
+       "id": "run-a",
+-      "seed": 26171011
++      "seed": 26171021
+     },
+     {
+       "id": "run-b",
+-      "seed": 26171012
++      "seed": 26171022
+     }
+   ],
+   "generation": {
+@@ -293,7 +293,7 @@
+     "indexBytes": 2097152,
+     "journalBytes": 4194304
+   },
+-  "launchCutoffUtc": "2026-10-16T23:00:00Z",
++  "launchCutoffUtc": "2026-10-17T01:00:00Z",
+   "pairedOrders": [
+     [
+       "baseline",
+--- predecessor/source/run.cjs
++++ replication/source/run.cjs
+@@ -95,19 +95,19 @@
+ }
+ function preflight() {
+   assert(process.argv.length === 3 && packageRoot === path.resolve(__dirname, '..'), 'Exactly this package root is required');
+-  assert(packageRelative === 'research/m31-normalizer-ablation-2026-10-17', 'Wrong package allocation');
++  assert(packageRelative === 'research/m31-normalizer-replication-2026-10-17', 'Wrong package allocation');
+   assert(process.env.RESEARCH_SUPERVISION_STAGE === 'kernel', 'Kernel supervision required');
+   assert(!process.env.NODE_OPTIONS && !process.env.NODE_PATH, 'Node preloads/search overrides are forbidden');
+   configBytes = fs.readFileSync(path.join(__dirname, 'config.json'));
+   config = JSON.parse(configBytes);
+-  assert(config.id === 'm31-normalizer-ablation-v1' && config.method === 'filtered', 'Wrong frozen method/config');
+-  assert(same(config.cases, [{id: 'run-a', seed: 26171011}, {id: 'run-b', seed: 26171012}]), 'Wrong fixed cases');
++  assert(config.id === 'm31-normalizer-replication-v1' && config.method === 'filtered', 'Wrong frozen method/config');
++  assert(same(config.cases, [{id: 'run-a', seed: 26171021}, {id: 'run-b', seed: 26171022}]), 'Wrong fixed cases');
+   assert(same(config.scheduledTimes, [0, 5, 10]), 'Wrong fixed schedule');
+   assert(same(config.generation, {count: 64, duration: 10, dt: 0.0025, mode: 'boids', search: 'grid', filter: 'wall-priority', record: true, frameEvery: 0.2, factoryVariant: 'wide', airflow: 'off', observation: 'ideal'}), 'Wrong generation configuration');
+   assert(same(config.controls.map(c => c.id), ['positive', 'distant-zero', 'raw-force', 'order-incompatible']), 'Wrong fixed controls');
+   for (const [key, expected] of Object.entries({kernelSeconds: 600, rssBytes: 1024 * MiB, kernelOutputBytes: 192 * MiB,
+     sceneBytes: 32 * MiB, generationBytesPerRun: 8 * MiB, indexBytes: 2 * MiB, journalBytes: 4 * MiB})) assert(config.limits[key] === expected, 'Wrong resource cap: ' + key);
+-  assert(config.launchCutoffUtc === '2026-10-16T23:00:00Z' && Date.now() < Date.parse(config.launchCutoffUtc), 'Launch cutoff reached');
++  assert(config.launchCutoffUtc === '2026-10-17T01:00:00Z' && Date.now() < Date.parse(config.launchCutoffUtc), 'Launch cutoff reached');
+   manifestPath = path.resolve(process.env.RESEARCH_SOURCE_MANIFEST_PATH || '');
+   assert(manifestPath.startsWith(root + path.sep), 'Manifest must belong to repository');
+   checkRegular(manifestPath);
+--- predecessor/source/worker.cjs
++++ replication/source/worker.cjs
+@@ -2,7 +2,7 @@
+ const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
+ const [pkg,mode,id,arm,repetitionText,inputPath,outputName]=process.argv.slice(2);
+ if(process.argv.length!==9||path.resolve(pkg)!==path.resolve(__dirname,'..')||process.env.RESEARCH_SUPERVISION_STAGE!=='kernel-worker'||!['baseline','candidate'].includes(arm)||!['control','scheduled','lifetime'].includes(mode)||!/^\d$/.test(repetitionText))throw Error('Worker invocation mismatch');
+-if(Date.now()>=Date.parse('2026-10-16T23:00:00Z'))throw Error('Worker launch cutoff reached');
++if(Date.now()>=Date.parse('2026-10-17T01:00:00Z'))throw Error('Worker launch cutoff reached');
+ const root=path.resolve(pkg,'../..'),results=path.join(pkg,'results'),manifestPath=process.env.RESEARCH_SOURCE_MANIFEST_PATH;
+ const mb=fs.readFileSync(manifestPath),sha=b=>crypto.createHash('sha256').update(b).digest('hex');
+ if(sha(mb)!==process.env.RESEARCH_EXPECTED_MANIFEST_SHA256||!/^[a-f0-9]{40}$/.test(process.env.RESEARCH_SOURCE_COMMIT||''))throw Error('Worker source identity');
+@@ -23,7 +23,7 @@
+  const a=JSON.parse(fs.readFileSync(path.join(results,'inputs/lifetime-a.json'))),b=JSON.parse(fs.readFileSync(path.join(results,'inputs/lifetime-b.json')));
+  record={arm,records:[evaluate(a,'lifetime-a','lifetime'),evaluate(b,'lifetime-b','lifetime'),evaluate(a,'lifetime-a','lifetime')]};
+ }else{
+- if(!inputPath.startsWith('research/m31-normalizer-ablation-2026-10-17/results/inputs/')||inputPath.includes('..'))throw Error('Worker input path');
++ if(!inputPath.startsWith('research/m31-normalizer-replication-2026-10-17/results/inputs/')||inputPath.includes('..'))throw Error('Worker input path');
+  record=evaluate(JSON.parse(fs.readFileSync(path.join(root,inputPath))),id,mode);
+ }
+ const bytes=Buffer.from(C.encode(record)+'\n');if(bytes.length>33554432)throw Error('Worker output budget');

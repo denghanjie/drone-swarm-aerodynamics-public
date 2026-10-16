@@ -1,0 +1,328 @@
+{
+  "id": "m31-normalizer-replication-v1",
+  "cases": [
+    {
+      "id": "run-a",
+      "seed": 26171021
+    },
+    {
+      "id": "run-b",
+      "seed": 26171022
+    }
+  ],
+  "generation": {
+    "count": 64,
+    "duration": 10,
+    "dt": 0.0025,
+    "mode": "boids",
+    "search": "grid",
+    "filter": "wall-priority",
+    "record": true,
+    "frameEvery": 0.2,
+    "factoryVariant": "wide",
+    "airflow": "off",
+    "observation": "ideal"
+  },
+  "scheduledTimes": [
+    0,
+    5,
+    10
+  ],
+  "method": "filtered",
+  "controls": [
+    {
+      "id": "positive",
+      "expected": {
+        "status": "certified",
+        "branch": "loads"
+      },
+      "drones": [
+        {
+          "id": 0,
+          "state": [
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            ".06",
+            ".06",
+            ".06",
+            ".06"
+          ]
+        },
+        {
+          "id": 1,
+          "state": [
+            "0",
+            "0",
+            "1.5",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            ".06",
+            ".06",
+            ".06",
+            ".06"
+          ]
+        },
+        {
+          "id": 2,
+          "state": [
+            "1",
+            "0",
+            "1.5",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            ".06",
+            ".06",
+            ".06",
+            ".06"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "distant-zero",
+      "expected": {
+        "status": "certified",
+        "branch": "loads"
+      },
+      "drones": [
+        {
+          "id": 0,
+          "state": [
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            ".06",
+            ".06",
+            ".06",
+            ".06"
+          ]
+        },
+        {
+          "id": 1,
+          "state": [
+            "4",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            ".06",
+            ".06",
+            ".06",
+            ".06"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "raw-force",
+      "expected": {
+        "status": "rejected",
+        "branch": "raw-force"
+      },
+      "drones": [
+        {
+          "id": 0,
+          "state": [
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            ".06",
+            ".06",
+            ".06"
+          ]
+        },
+        {
+          "id": 1,
+          "state": [
+            "0",
+            "0",
+            "1.5",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            ".06",
+            ".06",
+            ".06",
+            ".06"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-incompatible",
+      "expected": {
+        "status": "rejected",
+        "branch": "ordering"
+      },
+      "drones": [
+        {
+          "id": 0,
+          "state": [
+            "0",
+            "0",
+            "1.05",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0.7071067811865476",
+            "0",
+            "0.7071067811865476",
+            "0",
+            "0",
+            "0",
+            ".06",
+            ".06",
+            ".06",
+            ".06"
+          ]
+        },
+        {
+          "id": 1,
+          "state": [
+            "1",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0.7071067811865476",
+            "0",
+            "0.7071067811865476",
+            "0",
+            "0",
+            "0",
+            ".06",
+            ".06",
+            ".06",
+            ".06"
+          ]
+        }
+      ]
+    }
+  ],
+  "nontriviality": {
+    "positiveTimesPerRun": 2,
+    "horizontalAxisSquaredMinimum": {
+      "n": 1,
+      "d": 1000000
+    },
+    "relativeCoordinateChangeMinimum": {
+      "n": 1,
+      "d": 1000
+    },
+    "requireChangedPositiveEdgeSet": true
+  },
+  "limits": {
+    "kernelSeconds": 600,
+    "checkerSeconds": 600,
+    "guardianSeconds": 610,
+    "rssBytes": 1073741824,
+    "kernelOutputBytes": 201326592,
+    "checkerOutputBytes": 67108864,
+    "metadataLogBytes": 16777216,
+    "combinedOutputBytes": 285212672,
+    "workerSeconds": 60,
+    "sceneBytes": 33554432,
+    "generationBytesPerRun": 8388608,
+    "reportBytes": 2097152,
+    "indexBytes": 2097152,
+    "journalBytes": 4194304
+  },
+  "launchCutoffUtc": "2026-10-17T01:00:00Z",
+  "pairedOrders": [
+    [
+      "baseline",
+      "candidate"
+    ],
+    [
+      "candidate",
+      "baseline"
+    ],
+    [
+      "candidate",
+      "baseline"
+    ],
+    [
+      "baseline",
+      "candidate"
+    ]
+  ],
+  "arms": [
+    "baseline",
+    "candidate"
+  ],
+  "benefitRule": {
+    "medianRatioMax": 0.9,
+    "minimumWins": 3,
+    "pairsPerState": 4,
+    "requireEveryScheduledState": true,
+    "primary": "parent monotonic spawn-to-exit wall ns per isolated Node worker",
+    "secondary": "method-entry-to-return ns; excludes deferred cleanup",
+    "scope": "descriptive fixed six-state isolated-worker comparison; no browser or persistent-process inference"
+  }
+}

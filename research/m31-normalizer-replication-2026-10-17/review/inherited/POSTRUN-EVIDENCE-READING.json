@@ -1,0 +1,131 @@
+{
+  "schema": "m31-postrun-saved-evidence-reading-v1",
+  "reviewer": "m31_evidence_audit",
+  "allocation": "Separate saved-evidence audit of the sole failed normalizer-ablation attempt; no scientific execution or rerun",
+  "package": "research/m31-normalizer-ablation-2026-10-17",
+  "sourceCommit": "2839f76cb0aaf908f82964dd3d1bf4296e7774b5",
+  "distinctFileLimit": 12,
+  "distinctPackageFilesRead": 10,
+  "remainingSlots": 2,
+  "files": [
+    {
+      "path": "research/m31-normalizer-ablation-2026-10-17/results/kernel-attempt.json",
+      "bytes": 421,
+      "sha256": "9c53e1bb0ca1caff4d2a6de6e3c81fc8a2c4c6c7e88b814f0e086082de1d492b",
+      "scope": "full JSON evidence"
+    },
+    {
+      "path": "research/m31-normalizer-ablation-2026-10-17/results/kernel-supervision.json",
+      "bytes": 4450,
+      "sha256": "6a87f4df5626f39d4f495597da3a68c8a9fd1398702dc00319e2067a9b53f791",
+      "scope": "full JSON evidence"
+    },
+    {
+      "path": "research/m31-normalizer-ablation-2026-10-17/results/kernel-stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "scope": "full opaque bytes; empty"
+    },
+    {
+      "path": "research/m31-normalizer-ablation-2026-10-17/results/kernel-stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "scope": "full opaque bytes; empty"
+    },
+    {
+      "path": "research/m31-normalizer-ablation-2026-10-17/source-publication.json",
+      "bytes": 868,
+      "sha256": "94baf45b50363a0af7bc44ecaadbb09a852f891086e4ba71de60d74dace94d4b",
+      "scope": "full JSON receipt; no repeated HTTPS retrieval"
+    },
+    {
+      "path": "research/m31-normalizer-ablation-2026-10-17/source-manifest.json",
+      "bytes": 17703,
+      "sha256": "3e943151180c584eb4618056bd3a29d8ef6f9457d47468c6c3c43f72a86f86cb",
+      "scope": "parsed envelope and selected member pins; whole-file local/committed byte comparison; no full closure re-audit"
+    },
+    {
+      "path": "research/m31-normalizer-ablation-2026-10-17/source/supervise.py",
+      "bytes": 29715,
+      "sha256": "1e008611cd0e05132b2eb38e161b03c30c9ed2eb4fa1ddb3f494be62edfabddb",
+      "scope": "source text lines235-472; whole-file opaque local/manifest/committed identity comparison"
+    },
+    {
+      "path": "research/m31-normalizer-ablation-2026-10-17/source/guardian.py",
+      "bytes": 2964,
+      "sha256": "4f34f3a34b6fcf059dfb7c40e2d3eb05e0c361c8290fd397781896c65bd6a771",
+      "scope": "full source text; whole-file local/manifest/committed identity comparison"
+    },
+    {
+      "path": "research/m31-normalizer-ablation-2026-10-17/source/config.json",
+      "bytes": 5966,
+      "sha256": "8023f4c8c508e344695549fda99645268fa96043b4e62bdd1e3f19bef00351b2",
+      "scope": "opaque local/manifest/committed byte/hash comparison only; no fixture evaluation or text interpretation"
+    },
+    {
+      "path": "research/m31-normalizer-ablation-2026-10-17/runtime-pins.json",
+      "bytes": 248,
+      "sha256": "aefc7be89683200586715deed2054fafd6c212224aeacbf2944fdad3fb173b65",
+      "scope": "full JSON pin document; local/manifest/committed comparison and match against supervision report; executables not rehashed"
+    }
+  ],
+  "privateMetadataOnly": {
+    "directoryIdentitySha256": "931f2dd609ffba498436645541750c534366dae5459fb9b55e62be748094af9d",
+    "directoryBindingMatches": true,
+    "entries": [
+      {
+        "name": "kernel-stderr.raw",
+        "bytes": 0,
+        "isFile": true,
+        "isSymlink": false
+      },
+      {
+        "name": "kernel-stdout.raw",
+        "bytes": 0,
+        "isFile": true,
+        "isSymlink": false
+      }
+    ],
+    "contentRead": false,
+    "machinePathPublished": false
+  },
+  "independentChecks": {
+    "receiptAttemptReportManifestIdentityAgreement": true,
+    "manifestBytesAndPinCountMatchReceipt": true,
+    "selectedFourFilesMatchManifestAndCommittedSource": true,
+    "manifestMatchesCommittedSource": true,
+    "publicResultDirectoryExactlyFourFiles": true,
+    "publicResultBytes": 4871,
+    "emptyPublicLogsMatchSavedHashes": true,
+    "privateDirectoryBindingAndZeroByteMetadataMatch": true,
+    "normalChildExitReleaseProven": false,
+    "groupAbsenceClaimConsistentWithFrozenSource": true,
+    "independentLiveClosureReconstructionPerformed": false
+  },
+  "operationsPerformed": [
+    "Saved JSON parsing",
+    "Source text reading",
+    "Opaque file hashing and Git committed-blob comparison",
+    "Private directory/file metadata inspection",
+    "Writing two new audit documents"
+  ],
+  "operationsNotPerformed": [
+    "Scientific import/execution",
+    "Supervisor/guardian invocation",
+    "ps or live-process reproduction",
+    "Fixture/control/generator/checker evaluation",
+    "Runtime executable rehash or version probe",
+    "Remote HTTPS verification repeat",
+    "Repair/rerun",
+    "Frozen source/result alteration"
+  ],
+  "ownedOutputs": [
+    "review/POSTRUN-EVIDENCE-AUDIT.md",
+    "review/POSTRUN-EVIDENCE-READING.json"
+  ],
+  "auditDocument": {
+    "path": "research/m31-normalizer-ablation-2026-10-17/review/POSTRUN-EVIDENCE-AUDIT.md",
+    "bytes": 8233,
+    "sha256": "2b1b1de28bd55928f6c4ceb45921031dabd3378a82144cfe54796875af198dc0"
+  }
+}
