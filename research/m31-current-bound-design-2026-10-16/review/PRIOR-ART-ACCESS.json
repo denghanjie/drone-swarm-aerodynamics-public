@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-16",
+  "scope": "m31-current-bound-design-2026-10-16: prior-art desk review",
+  "status": "closed-budget-exhausted",
+  "budget": {
+    "externalOperationsAllowed": 8,
+    "externalOperationsUsed": 8,
+    "externalOperationsRemaining": 0,
+    "selectedPrimaryWorksAllowed": 3,
+    "selectedPrimaryWorksUsed": 3,
+    "existingLocalContentFilesAllowed": 14,
+    "existingLocalContentFilesRead": 1,
+    "currentCheckpointDraftsAndNotesRead": 3
+  },
+  "restrictionsObserved": {
+    "scientificExecution": false,
+    "targetArrayRead": false,
+    "pdfOpenedOrExtracted": false,
+    "imageOpenedOrExtracted": false,
+    "paperAssetPublication": false,
+    "newAgent": false,
+    "contact": false,
+    "physicalSourceAccess": false,
+    "repositoryEdits": false
+  },
+  "works": [
+    {
+      "id": "W1",
+      "title": "Nonparametric Density Estimation: Toward Computational Tractability",
+      "authors": [
+        "Alexander G. Gray",
+        "Andrew W. Moore"
+      ],
+      "year": 2003,
+      "venue": "Proceedings of the 2003 SIAM International Conference on Data Mining",
+      "pages": "203–211",
+      "doi": "10.1137/1.9781611972733.19",
+      "publisherUrl": "https://epubs.siam.org/doi/10.1137/1.9781611972733.19",
+      "supportingAuthorUrl": "https://www.cs.cmu.edu/~agray/nbody.html",
+      "publicationStatus": "publisher identity and abstract verified; publisher lists online publication 2013-12-18 separately from 2003 proceedings",
+      "readPassages": [
+        {
+          "location": "Publisher heading, Abstract, Information & Authors",
+          "returnedLines": "57–74, 90–109",
+          "status": "read"
+        },
+        {
+          "location": "Author HTML: Multi-tree Methods; Kernel Density Estimation",
+          "returnedLines": "5–16",
+          "status": "read"
+        }
+      ],
+      "notRead": [
+        "full algorithm",
+        "pruning/error-budget formulas",
+        "proof",
+        "experiments"
+      ],
+      "scopeOfAdmission": "hierarchical kernel-sum approximation with error control is a published methodological antecedent; no theorem transfer or speed claim admitted"
+    },
+    {
+      "id": "W2",
+      "title": "Verification methods: Rigorous results using floating-point arithmetic",
+      "authors": [
+        "Siegfried M. Rump"
+      ],
+      "year": 2010,
+      "venue": "Acta Numerica",
+      "volume": "19",
+      "pages": "287–449",
+      "doi": "10.1017/S096249291000005X",
+      "publisherUrl": "https://www.cambridge.org/core/journals/acta-numerica/article/abs/verification-methods-rigorous-results-using-floatingpoint-arithmetic/770FE58E5293985CCAB770AF09C4F3FF",
+      "publicationStatus": "publisher identity and introductory extract verified; online publication 2010-05-10",
+      "readPassages": [
+        {
+          "location": "Publisher heading/author/date, Extract, Information",
+          "returnedLines": "425–465",
+          "status": "read"
+        }
+      ],
+      "notRead": [
+        "article body",
+        "interval inclusion theorem",
+        "directed-rounding policy",
+        "norm/square-root theorem",
+        "nonlinear verification theorem"
+      ],
+      "scopeOfAdmission": "verification-method identity and general purpose only; no specific interval theorem verified",
+      "metadataCaution": "Incidental search result for separate ISSAC short item was not merged or adopted."
+    },
+    {
+      "id": "W3",
+      "title": "Tree-Independent Dual-Tree Algorithms",
+      "authors": [
+        "Ryan R. Curtin",
+        "William B. March",
+        "Parikshit Ram",
+        "David V. Anderson",
+        "Alexander G. Gray",
+        "Charles L. Isbell, Jr."
+      ],
+      "year": 2013,
+      "venue": "Proceedings of the 30th International Conference on Machine Learning",
+      "series": "Proceedings of Machine Learning Research",
+      "volume": "28",
+      "number": "3",
+      "pages": "1435–1443",
+      "doi": null,
+      "doiStatus": "not displayed in inspected PMLR record; no claim of global absence",
+      "publisherUrl": "https://proceedings.mlr.press/v28/curtin13.html",
+      "authorTextUrl": "https://www.researchgate.net/publication/236203408_Tree-Independent_Dual-Tree_Algorithms",
+      "displayedAuthorTextVersion": "arXiv:1304.4327v1 [cs.DS], 16 April 2013",
+      "displayedUploadAttribution": "David V. Anderson; 2014-09-12",
+      "versionCaution": "Partial author-uploaded HTML view; no byte identity to published version established.",
+      "readPassages": [
+        {
+          "location": "PMLR title/authors/venue/abstract/citation",
+          "returnedLines": "8–40",
+          "status": "read"
+        },
+        {
+          "location": "Author HTML title and expanded authors",
+          "returnedLines": "48–71",
+          "status": "read"
+        },
+        {
+          "location": "Section 2: Overview of Meta-Algorithm",
+          "returnedLines": "231–278",
+          "status": "read"
+        },
+        {
+          "location": "Section 3: Space Trees and node distance bounds",
+          "returnedLines": "280–469",
+          "status": "read"
+        },
+        {
+          "location": "Section 4: Tree Traversals",
+          "returnedLines": "471–615",
+          "status": "read"
+        },
+        {
+          "location": "Section 5: k-Nearest Neighbor Search",
+          "returnedLines": "619–834",
+          "status": "partial; returned text ends midsection"
+        }
+      ],
+      "notRead": [
+        "remainder of section 5",
+        "later sections",
+        "KDE-specific error-budget rule"
+      ],
+      "scopeOfAdmission": "tree/traversal/base-case/pruning separation, node geometry bounds, pruning semantics; not the project's coupled-root theorem"
+    }
+  ],
+  "operations": [
+    {
+      "operation": 1,
+      "type": "search",
+      "query": "Gray Moore \"Nonparametric Density Estimation\" \"Computational Tractability\"",
+      "targetWork": "W1",
+      "outcome": "publisher and author pages discovered; incidental PDF/third-party snippets not adopted"
+    },
+    {
+      "operation": 2,
+      "type": "open",
+      "url": "https://www.cs.cmu.edu/~agray/nbody.html",
+      "targetWork": "W1",
+      "outcome": "author HTML read; relevant passages under Multi-tree Methods and Kernel Density Estimation; linked works not followed"
+    },
+    {
+      "operation": 3,
+      "type": "open",
+      "url": "https://epubs.siam.org/doi/10.1137/1.9781611972733.19",
+      "targetWork": "W1",
+      "outcome": "metadata/abstract read; full chapter access boundary retained"
+    },
+    {
+      "operation": 4,
+      "type": "search",
+      "query": "Rump \"Verification methods\" \"Rigorous results using floating-point arithmetic\" 2010 interval",
+      "targetWork": "W2",
+      "outcome": "Cambridge article identified; similarly titled ISSAC entry and other incidental items not adopted"
+    },
+    {
+      "operation": 5,
+      "type": "open",
+      "url": "https://www.cambridge.org/core/journals/acta-numerica/article/abs/verification-methods-rigorous-results-using-floatingpoint-arithmetic/770FE58E5293985CCAB770AF09C4F3FF",
+      "targetWork": "W2",
+      "outcome": "metadata and introductory Extract read; body/theorems unavailable in returned view"
+    },
+    {
+      "operation": 6,
+      "type": "search",
+      "query": "\"Tree-Independent Dual-Tree Algorithms\" Curtin 2013",
+      "targetWork": "W3",
+      "outcome": "PMLR and author-uploaded HTML discovered; incidental PDF snippets not used as additional evidence"
+    },
+    {
+      "operation": 7,
+      "type": "open",
+      "url": "https://proceedings.mlr.press/v28/curtin13.html",
+      "targetWork": "W3",
+      "outcome": "publication metadata/abstract/citation read; PDF link not followed"
+    },
+    {
+      "operation": 8,
+      "type": "open",
+      "url": "https://www.researchgate.net/publication/236203408_Tree-Independent_Dual-Tree_Algorithms",
+      "targetWork": "W3",
+      "outcome": "partial indexed author HTML through part of section 5; total-page line count exceeded returned text; no follow-up operation available"
+    }
+  ],
+  "localReadInventory": [
+    {
+      "path": "research/m31-current-bound-design-2026-10-16/PROSPECTIVE-SCOPE.md",
+      "category": "current-checkpoint",
+      "bytes": 2741,
+      "sha256": "fc13783c7331466becb0649db86b57455d9401ee2556a3698da1e58ae2f13461"
+    },
+    {
+      "path": "research/m31-current-bound-design-2026-10-16/DERIVATION-DRAFT.md",
+      "category": "current-checkpoint",
+      "bytes": 9835,
+      "sha256": "e1bd9faf15a76f5b8b2acccb4bdce34b6f5fdc0bf292cbabb079127b606fb014"
+    },
+    {
+      "path": "research/m31-current-bound-design-2026-10-16/QUERY-CONTRACT-CLARIFICATION.md",
+      "category": "current-checkpoint",
+      "bytes": 2037,
+      "sha256": "f34915372d63570c4ebb419b5130ac015e887f8a696ea7f7e38fea2575dd2585"
+    },
+    {
+      "path": "research/m31-root-defect-planning-2026-10-16/ADOPTED-DERIVATION.md",
+      "category": "existing",
+      "bytes": 4242,
+      "sha256": "dd1afefb4cefb4f10176cb2ba2fae25024e28116ce7c78d73fa152e3ea29104c"
+    }
+  ],
+  "claims": {
+    "noveltyEstablished": false,
+    "absenceOfPriorArtEstablished": false,
+    "closestPossibleWorkEstablished": false,
+    "specificExternalIntervalTheoremVerified": false,
+    "coupledRootBridgeExternallyVerified": false,
+    "implementationSoundnessVerified": false,
+    "performanceVerified": false,
+    "physicalValidityVerified": false,
+    "correctionOrRetractionStatusSearched": false
+  },
+  "publicSafety": {
+    "contents": "authored metadata, access statuses, references and local repository-relative hashes only",
+    "rawConnectorReturnsIncluded": false,
+    "paperTextOrImagesIncluded": false,
+    "privateFilesystemPathsIncluded": false,
+    "personalContactDetailsIncluded": false
+  },
+  "closure": "No external operations remain in this scope. All earlier physical-source and experiment allocations remain closed."
+}
