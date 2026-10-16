@@ -1,0 +1,7 @@
+# Public result privacy review
+
+This checkpoint contains generated scientific fixtures, numerical outputs and independent references, scoped process-containment records, source/runtime hashes, verified bibliographic records, reviews and viewer QA. It excludes user attachments/conversations, credentials, browser profiles, unrelated process inventories and downloaded paper assets/full texts. Private original logs and research-source downloads remain outside the public repository. Generic example commands may use a temporary directory; these are instructions, not disclosed private data locations.
+
+Review of public text checks private home/attachment/runtime paths, credential patterns and private-key markers. Public log copies contain only experiment output; process identifiers are scoped transient containment evidence. The four successful QA screenshots were visually inspected and show research content only; the failed screenshot is retained for reproducibility. Version/hash metadata and timing/memory observations remain to document the execution environment, without a hardware-general performance claim.
+
+The source manifest's 51 pins are rechecked during closeout. No frozen scientific source, raw evidence, reference or original supervision record is modified. README navigation and the mutable overnight discovery index are updated. The result manifest pins the public records, presentation repairs and failures; its later publication receipt is separately committed to avoid a circular identity.

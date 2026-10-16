@@ -1,0 +1,1088 @@
+{
+  "auditScriptPin": {
+    "bytes": 22027,
+    "sha256": "632aedc52067260ea57c81e4c07b616140cdf5f2847f9c2d8490dbc0b2f007cd"
+  },
+  "checkCount": 792,
+  "closureEvidence": "Saved supervisor closure assertions agree with paired guardian child-start/zero-exit events; process-group IDs were not re-probed after possible reuse.",
+  "controls": [
+    {
+      "detectedFailures": [
+        "primitive-containment"
+      ],
+      "expectedFailure": "primitive-containment",
+      "id": "inward-add-upper",
+      "savedWitnessConsistent": true
+    },
+    {
+      "detectedFailures": [
+        "primitive-containment"
+      ],
+      "expectedFailure": "primitive-containment",
+      "id": "inward-add-lower",
+      "savedWitnessConsistent": true
+    },
+    {
+      "detectedFailures": [
+        "primitive-containment"
+      ],
+      "expectedFailure": "primitive-containment",
+      "id": "lost-underflow",
+      "savedWitnessConsistent": true
+    },
+    {
+      "detectedFailures": [
+        "primitive-containment"
+      ],
+      "expectedFailure": "primitive-containment",
+      "id": "finite-overflow",
+      "savedWitnessConsistent": true
+    },
+    {
+      "detectedFailures": [
+        "primitive-domain"
+      ],
+      "expectedFailure": "primitive-domain",
+      "id": "zero-divisor",
+      "savedWitnessConsistent": true
+    },
+    {
+      "detectedFailures": [
+        "primitive-containment"
+      ],
+      "expectedFailure": "primitive-containment",
+      "id": "lost-square-zero",
+      "savedWitnessConsistent": true
+    },
+    {
+      "detectedFailures": [
+        "candidate-target-status"
+      ],
+      "expectedFailure": "candidate-target-status",
+      "id": "false-positive-zero",
+      "savedWitnessConsistent": true
+    },
+    {
+      "detectedFailures": [
+        "candidate-target-status"
+      ],
+      "expectedFailure": "candidate-target-status",
+      "id": "guard-preempted",
+      "savedWitnessConsistent": true
+    },
+    {
+      "detectedFailures": [
+        "candidate-target-branch"
+      ],
+      "expectedFailure": "candidate-target-branch",
+      "id": "wrong-zero-branch",
+      "savedWitnessConsistent": true
+    },
+    {
+      "detectedFailures": [
+        "prepared-operation-graph"
+      ],
+      "expectedFailure": "prepared-operation-graph",
+      "id": "altered-prepared-point",
+      "savedWitnessConsistent": true
+    },
+    {
+      "detectedFailures": [
+        "candidate-containment-coefficient"
+      ],
+      "expectedFailure": "candidate-containment-coefficient",
+      "id": "lost-fallback-coefficient",
+      "savedWitnessConsistent": true
+    },
+    {
+      "detectedFailures": [
+        "preparation-gate"
+      ],
+      "expectedFailure": "preparation-gate",
+      "id": "preparation-bypassed",
+      "savedWitnessConsistent": true
+    },
+    {
+      "detectedFailures": [
+        "record-count"
+      ],
+      "expectedFailure": "record-count",
+      "id": "missing-row",
+      "savedWitnessConsistent": true
+    },
+    {
+      "detectedFailures": [
+        "duplicate-record-id"
+      ],
+      "expectedFailure": "duplicate-record-id",
+      "id": "duplicate-row",
+      "savedWitnessConsistent": true
+    },
+    {
+      "detectedFailures": [
+        "record-order",
+        "record-order"
+      ],
+      "expectedFailure": "record-order",
+      "id": "reordered-rows",
+      "savedWitnessConsistent": true
+    },
+    {
+      "detectedFailures": [
+        "journal-row-agreement"
+      ],
+      "expectedFailure": "journal-row-agreement",
+      "id": "journal-disagreement",
+      "savedWitnessConsistent": true
+    }
+  ],
+  "errors": [],
+  "finalOutputAccounting": {
+    "aggregateBytes": 349631,
+    "checkerBytes": 130112,
+    "documentBytes": 102403,
+    "journalBytes": 104246,
+    "logMetadataBytes": 965,
+    "reportBytes": 11905,
+    "unclassifiedBytes": 0
+  },
+  "journalEvents": 110,
+  "notPerformed": [
+    "No scientific source import or model/oracle evaluation",
+    "No candidate/checker rerun",
+    "No numerical containment recomputation",
+    "No new network fetch",
+    "No live process-group re-probe or signals",
+    "No frozen source edits"
+  ],
+  "passed": true,
+  "preparationRejectionBranches": {
+    "preparation": 1,
+    "raw-force": 2,
+    "raw-nonfinite": 2
+  },
+  "readingScope": "All evidence and source metadata pins read in this new package; inherited source bytes were hashed only. No additional inherited semantic content read.",
+  "records": {
+    "pair": 36,
+    "primitive": 72
+  },
+  "savedEvidencePins": [
+    {
+      "bytes": 10379,
+      "path": "research/m31-filter-design-2026-10-17/source-manifest.json",
+      "scope": "repository",
+      "sha256": "cce61010030bdb8a62cdfd152fb2bb7ec1267fcc6d97f48bd9368098a3a71736"
+    },
+    {
+      "bytes": 4754,
+      "path": "research/m31-current-pair-2026-10-17/MODEL.md",
+      "scope": "repository",
+      "sha256": "542978ef7f69f76c8b241631d15a823acf974c61e6feee18576a83beffb8403b"
+    },
+    {
+      "bytes": 2719,
+      "path": "research/m31-filter-design-2026-10-17/CLAIM-EVIDENCE-LEDGER.md",
+      "scope": "repository",
+      "sha256": "b2bab1f7398ac9d9efb1c969c36b9691ed516c8414711fff37ed232fabd34ddd"
+    },
+    {
+      "bytes": 4173,
+      "path": "research/m31-filter-design-2026-10-17/DESIGN-DRAFT.md",
+      "scope": "repository",
+      "sha256": "a79ed283e1486cb7f3f63573ed9d8d145428ad8ffd6b2725d91cdd4ffcfcb36f"
+    },
+    {
+      "bytes": 3461,
+      "path": "research/m31-filter-design-2026-10-17/PARENT-READING.json",
+      "scope": "repository",
+      "sha256": "41f2090b4c14a55bc0d773c54a8266f2a5eb0787d5a27703c0b07e1713b8f48d"
+    },
+    {
+      "bytes": 941,
+      "path": "research/m31-filter-design-2026-10-17/PREFREEZE-CHANGES.md",
+      "scope": "repository",
+      "sha256": "111f39ba97723123133676b3f6bed9c46de1e3c696b1ed874c20c1b9857292d4"
+    },
+    {
+      "bytes": 10220,
+      "path": "research/m31-filter-design-2026-10-17/PROTOCOL.md",
+      "scope": "repository",
+      "sha256": "4e0af980a7be0295cac06550e851d5282a44f5d494e81c9dfc632582ea810bb0"
+    },
+    {
+      "bytes": 2963,
+      "path": "research/m31-filter-design-2026-10-17/REPRODUCIBILITY.md",
+      "scope": "repository",
+      "sha256": "3dcf37d3d8b95007fb1d38507edef17cdc41727b0f6f3b9865dc289855e24684"
+    },
+    {
+      "bytes": 2591,
+      "path": "research/m31-filter-design-2026-10-17/RESEARCH-DIRECTION.md",
+      "scope": "repository",
+      "sha256": "1925e978d0290191181ce51e7d48500ea822c92f0d491cbe999a638b47332b4e"
+    },
+    {
+      "bytes": 2154,
+      "path": "research/m31-filter-design-2026-10-17/SOURCE-DECISION.md",
+      "scope": "repository",
+      "sha256": "998d5e1cbce9a0734f7d57d5684655447329d4123d6b3438c23cb1b657db4e2a"
+    },
+    {
+      "bytes": 7592,
+      "path": "research/m31-filter-design-2026-10-17/SOURCE-PRIVACY.json",
+      "scope": "repository",
+      "sha256": "349b9741c4d93d4bd29782538ec2c46060b22839894564cc97aa9c18079e1c7c"
+    },
+    {
+      "bytes": 2070,
+      "path": "research/m31-filter-design-2026-10-17/SOURCE-SYNTAX-PRIVACY.json",
+      "scope": "repository",
+      "sha256": "e5a3f30321a221c96c7ba51ca28f9aa2c1eaab2a28728bf1301facaabd48b60d"
+    },
+    {
+      "bytes": 709,
+      "path": "research/m31-filter-design-2026-10-17/prefreeze/100-ROW-OUTLINE.md",
+      "scope": "repository",
+      "sha256": "3010a17757fe8230d407fdd42d68c1bb9dd7d8e26428658fc46d7023c0cdfe6c"
+    },
+    {
+      "bytes": 19265,
+      "path": "research/m31-filter-design-2026-10-17/prefreeze/PAIR-LITERALS.json",
+      "scope": "repository",
+      "sha256": "5b86fc94680f4a4afffcdecd33f34eb1e3a6185e5827652632771d1832adeed0"
+    },
+    {
+      "bytes": 9878,
+      "path": "research/m31-filter-design-2026-10-17/prefreeze/PROTOCOL-v0.md",
+      "scope": "repository",
+      "sha256": "6d1550e4dea8ca41cc9161498e5c254ad8b31b5356dabf25ff309c3202e77a7b"
+    },
+    {
+      "bytes": 9937,
+      "path": "research/m31-filter-design-2026-10-17/prefreeze/PROTOCOL-v1.md",
+      "scope": "repository",
+      "sha256": "e286b0ecd808b0aad3fede6a383c5fd78fc28b3471ec9aba9137da6fc6fd47e3"
+    },
+    {
+      "bytes": 35048,
+      "path": "research/m31-filter-design-2026-10-17/prefreeze/checker-v0.py",
+      "scope": "repository",
+      "sha256": "0b62f26287be6a6751b47a4443519eed3ff318af215f4a8ffacfbc5315b78dbe"
+    },
+    {
+      "bytes": 7461,
+      "path": "research/m31-filter-design-2026-10-17/prefreeze/generate-fixtures.py",
+      "scope": "repository",
+      "sha256": "8c33b7db04dc01cf803db89b2127281e6fed7d4ab046b291804b7c012f92dc80"
+    },
+    {
+      "bytes": 19699,
+      "path": "research/m31-filter-design-2026-10-17/prefreeze/supervise-before-checker-helper-pin.py",
+      "scope": "repository",
+      "sha256": "fbfee616177a8079d5c5dd7e8d321db1c7c7d51f5df7bbfca1b453660f5c72b7"
+    },
+    {
+      "bytes": 19472,
+      "path": "research/m31-filter-design-2026-10-17/prefreeze/supervise-before-external-pin-review.py",
+      "scope": "repository",
+      "sha256": "751d16ffb2c893dca2da01cc8ade35a8b31cd7324e3177f33b41c9cb2fcb5520"
+    },
+    {
+      "bytes": 3108,
+      "path": "research/m31-filter-design-2026-10-17/prefreeze/zero-filter-v0.cjs",
+      "scope": "repository",
+      "sha256": "abfedcef4ff525e6f51bd541e7cbc2cda27bf39d1e1ea7222415151adb53d31d"
+    },
+    {
+      "bytes": 4097,
+      "path": "research/m31-filter-design-2026-10-17/review/CHECKER-IMPLEMENTATION.md",
+      "scope": "repository",
+      "sha256": "fbcc8e56b0a1f3e147b9143eec6189e5b099f211aa1930acafe5d3ca98279e23"
+    },
+    {
+      "bytes": 6334,
+      "path": "research/m31-filter-design-2026-10-17/review/CHECKER-SOURCE-READING.json",
+      "scope": "repository",
+      "sha256": "16c36758209ca555317797db0c0714c6340099624f67a7099268508477da07b3"
+    },
+    {
+      "bytes": 8681,
+      "path": "research/m31-filter-design-2026-10-17/review/CHECKER-SOURCE-REVIEW.md",
+      "scope": "repository",
+      "sha256": "cb2d6c30bf1d71a81c5985afdf61571bc74561b23679043ede09187a0f4d14c8"
+    },
+    {
+      "bytes": 18281,
+      "path": "research/m31-filter-design-2026-10-17/review/NUMERICAL-DESIGN-AUDIT.md",
+      "scope": "repository",
+      "sha256": "29ca8523ff930e6f3decd71b037b498e23ac36dc96f17348394432c7fb3563b4"
+    },
+    {
+      "bytes": 3665,
+      "path": "research/m31-filter-design-2026-10-17/review/NUMERICAL-DESIGN-READING.json",
+      "scope": "repository",
+      "sha256": "8381f0fa048028b571783b74733f226053fb8d6e25cfa49e9f2bb8b13d14e1e5"
+    },
+    {
+      "bytes": 9825,
+      "path": "research/m31-filter-design-2026-10-17/review/PROTOCOL-CHALLENGE.md",
+      "scope": "repository",
+      "sha256": "ae7fb02cd4db00ff7fcc1beafff4c9ae3a54e6b65aec055ba231bc403bfe9f8f"
+    },
+    {
+      "bytes": 1680,
+      "path": "research/m31-filter-design-2026-10-17/review/PROTOCOL-CHECKER-READING.json",
+      "scope": "repository",
+      "sha256": "55d401259e7a181d6de712976752f311d80a9fca923e7b5fe571402f2a748783"
+    },
+    {
+      "bytes": 4359,
+      "path": "research/m31-filter-design-2026-10-17/review/STAGED-EXECUTION-READING.json",
+      "scope": "repository",
+      "sha256": "8a24546f343d2ffad759e9e95994647a218cbfd9bb805b24765df8abc39b08c4"
+    },
+    {
+      "bytes": 15710,
+      "path": "research/m31-filter-design-2026-10-17/review/STAGED-EXECUTION-SOURCE-REVIEW.md",
+      "scope": "repository",
+      "sha256": "2fc482d9431390c4ed2da10a97920f0460a9bdbc17d80141615d1bb84bd7bea8"
+    },
+    {
+      "bytes": 3206,
+      "path": "research/m31-filter-design-2026-10-17/review/SUPERVISOR-ADAPTATION-READING.json",
+      "scope": "repository",
+      "sha256": "4dbca80e78dd2f429cd6974606b026e5146c5038259cfea3add8273ec25eb433"
+    },
+    {
+      "bytes": 3005,
+      "path": "research/m31-filter-design-2026-10-17/review/SUPERVISOR-ADAPTATION.md",
+      "scope": "repository",
+      "sha256": "faed32fe88c10c43a0f5d99f2370d04023cb9611bf8291b2873c01aaf6f9238a"
+    },
+    {
+      "bytes": 1463,
+      "path": "research/m31-filter-design-2026-10-17/review/SUPERVISOR-EXTERNAL-PIN-ADDENDUM.md",
+      "scope": "repository",
+      "sha256": "1b6991e417904f25234b101d93bfea58cc1090c5907629b0d5c982ec4d096262"
+    },
+    {
+      "bytes": 3223,
+      "path": "research/m31-filter-design-2026-10-17/review/SUPERVISOR-EXTERNAL-PIN-READING.json",
+      "scope": "repository",
+      "sha256": "e008ac3c18d5885344fddc56c79c100eb5bf8269b620a0dd9a45b03409f96572"
+    },
+    {
+      "bytes": 14345,
+      "path": "research/m31-filter-design-2026-10-17/review/literature/LITERATURE.md",
+      "scope": "repository",
+      "sha256": "e7856bbb5f5a1caa2d8994ee02eedcb73aabc97f06e85badf59a4d57560a8e36"
+    },
+    {
+      "bytes": 12386,
+      "path": "research/m31-filter-design-2026-10-17/review/literature/bibliography.json",
+      "scope": "repository",
+      "sha256": "2e63972dbda81e3d007e5ba9ec442de91f0fbe3dfe8daa92a4ecc032e7f32e7d"
+    },
+    {
+      "bytes": 29612,
+      "path": "research/m31-filter-design-2026-10-17/review/literature/literature-experiment-ledger.json",
+      "scope": "repository",
+      "sha256": "8ba3ffd312c188c636e219968beb8b00bacbe17e39bf5b08794799e1c1aa6718"
+    },
+    {
+      "bytes": 248,
+      "path": "research/m31-filter-design-2026-10-17/runtime-pins.json",
+      "scope": "repository",
+      "sha256": "842b2522133ed499f4706e071b09f3d100c5f4ed3f41d0fd135736c4dc191087"
+    },
+    {
+      "bytes": 2829,
+      "path": "research/m31-filter-design-2026-10-17/source/binary64-interval.cjs",
+      "scope": "repository",
+      "sha256": "048068853915c0fa5e90272e4dd491cbe4448fcbdbb7157008c90abbd7e185ad"
+    },
+    {
+      "bytes": 35689,
+      "path": "research/m31-filter-design-2026-10-17/source/check.py",
+      "scope": "repository",
+      "sha256": "1d9f1181d55b4ed5ca76688ad4de29baedec1e008d7eac04806c28c10fc2784e"
+    },
+    {
+      "bytes": 1890,
+      "path": "research/m31-filter-design-2026-10-17/source/guardian.py",
+      "scope": "repository",
+      "sha256": "b3d6be72fccd56be18d7cd2b59e0ff87aac0442eebf8470c8b7308eb853732de"
+    },
+    {
+      "bytes": 6662,
+      "path": "research/m31-filter-design-2026-10-17/source/result-contract.json",
+      "scope": "repository",
+      "sha256": "4b9890937fac0131830548dc73241296b2c57783b1883a6762961c3dc45ca5ac"
+    },
+    {
+      "bytes": 4323,
+      "path": "research/m31-filter-design-2026-10-17/source/run.cjs",
+      "scope": "repository",
+      "sha256": "2ce652e43efda4f698ef456e5229e608e9cee26da8a646dc686b1601bbee4536"
+    },
+    {
+      "bytes": 44757,
+      "path": "research/m31-filter-design-2026-10-17/source/semantic-reference.py",
+      "scope": "repository",
+      "sha256": "845f52cf350a09d2043934dff3e797a7b7416f4ef5c64beb716104bcd74f38f0"
+    },
+    {
+      "bytes": 55777,
+      "path": "research/m31-filter-design-2026-10-17/source/spec.json",
+      "scope": "repository",
+      "sha256": "2715ab48ad1c6437244e78ea66c8685c074d579c961f5b4c47857534e2e8de55"
+    },
+    {
+      "bytes": 19730,
+      "path": "research/m31-filter-design-2026-10-17/source/supervise.py",
+      "scope": "repository",
+      "sha256": "a09af9c14853fc1440440e25c443163594bafed7f6257b8194ae3fb8208cdf7d"
+    },
+    {
+      "bytes": 3003,
+      "path": "research/m31-filter-design-2026-10-17/source/zero-filter.cjs",
+      "scope": "repository",
+      "sha256": "d755b78fb774cab645e254316318bd86d95c2869e8d7682a8ed4a927968f0d88"
+    },
+    {
+      "bytes": 2400,
+      "path": "research/m31-screening-cost-2026-10-17/source/adapter.cjs",
+      "scope": "repository",
+      "sha256": "5cf2b2ddc590915c63bae4f3909e90f196277804d1524aa0ef68165e6b1e4145"
+    },
+    {
+      "bytes": 2815,
+      "path": "research/m31-screening-cost-2026-10-17/source/interval.cjs",
+      "scope": "repository",
+      "sha256": "73f5afce4dbc2551535127abeaa96d2e6389073e898f9b9dcc70a977ff19ded3"
+    },
+    {
+      "bytes": 3357,
+      "path": "research/m31-screening-cost-2026-10-17/source/pair-prepared.cjs",
+      "scope": "repository",
+      "sha256": "e963362c4b095196b5cc0bcc67c1b613f28c4d6a5e5d5e15101a4f847a61ff56"
+    },
+    {
+      "bytes": 1188,
+      "path": "research/m31-screening-cost-2026-10-17/source/rational.cjs",
+      "scope": "repository",
+      "sha256": "de2adde5459d37cc537709f7a488605d9c21d8eedf022efc0a3e9461d4d97333"
+    },
+    {
+      "bytes": 318383,
+      "path": "research/m31-screening-cost-2026-10-17/source/spec.json",
+      "scope": "repository",
+      "sha256": "194bf724c702c38045bf2ee11b30e5b6fc5fbeba8d2d42f68303b71083192728"
+    },
+    {
+      "bytes": 856,
+      "path": "research/m31-filter-design-2026-10-17/source-publication.json",
+      "scope": "repository",
+      "sha256": "da2e697806c8ca20b8e36bcabaea60f883ea329acded0d0797294c787b4df67f"
+    },
+    {
+      "bytes": 102403,
+      "path": "research/m31-filter-design-2026-10-17/results/filter-results.json",
+      "scope": "repository",
+      "sha256": "af98598d09ece48d34ef349053a9e1254a0eb36adf5e9b88ad73a70cfb94f37e"
+    },
+    {
+      "bytes": 121969,
+      "path": "research/m31-filter-design-2026-10-17/results/reference.json",
+      "scope": "repository",
+      "sha256": "90c29629e803b758665a6f180691468008724489117b27702be0a0d73556b46d"
+    },
+    {
+      "bytes": 8143,
+      "path": "research/m31-filter-design-2026-10-17/results/independent-check.json",
+      "scope": "repository",
+      "sha256": "08a2f6762e886a510933bd06d2b1145bc7a5500bff01587efee9ef7467738196"
+    },
+    {
+      "bytes": 104246,
+      "path": "research/m31-filter-design-2026-10-17/results/filter-results.json.jsonl",
+      "scope": "repository",
+      "sha256": "26913fcbeb13abdd759fb8a75d300e0f4bc176f363c4c3df10bad88ccdafed89"
+    },
+    {
+      "bytes": 5084,
+      "path": "research/m31-filter-design-2026-10-17/results/kernel-supervision.json",
+      "scope": "repository",
+      "sha256": "56fef8c19bbeb547421bbd2e3d99653eeedfb972ef64e6e297991a8be429c7a1"
+    },
+    {
+      "bytes": 278,
+      "path": "research/m31-filter-design-2026-10-17/results/kernel-attempt.json",
+      "scope": "repository",
+      "sha256": "185bbdf1e9d1fb74ec3d6fc21070579e173c8d861ea1d859c16b0ae86c672da5"
+    },
+    {
+      "bytes": 111,
+      "path": "research/m31-filter-design-2026-10-17/results/kernel-guardian.jsonl",
+      "scope": "repository",
+      "sha256": "7b6471385bbb0b7f8addc2cad27c80d718b474d16a1a56de6128c973d8d874c3"
+    },
+    {
+      "bytes": 0,
+      "path": "kernel-stderr.raw",
+      "scope": "private",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 36,
+      "path": "kernel-stdout.raw",
+      "scope": "private",
+      "sha256": "4707087e30c423efa1613af2a29f0751cd480a6a3b10cf133190c8d80e079e9b"
+    },
+    {
+      "bytes": 36,
+      "path": "research/m31-filter-design-2026-10-17/results/kernel-stdout.log",
+      "scope": "repository",
+      "sha256": "4707087e30c423efa1613af2a29f0751cd480a6a3b10cf133190c8d80e079e9b"
+    },
+    {
+      "bytes": 0,
+      "path": "research/m31-filter-design-2026-10-17/results/kernel-stderr.log",
+      "scope": "repository",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 6821,
+      "path": "research/m31-filter-design-2026-10-17/results/checker-supervision.json",
+      "scope": "repository",
+      "sha256": "8f2399eeefcdaba076714a18e959d90dee84e570a164f9cb66fa000482d0a62f"
+    },
+    {
+      "bytes": 279,
+      "path": "research/m31-filter-design-2026-10-17/results/checker-attempt.json",
+      "scope": "repository",
+      "sha256": "8f35373a8172c1184a0adb482a6a8c4f2d17a414c2c4b3ed013b2d5fe169ba25"
+    },
+    {
+      "bytes": 111,
+      "path": "research/m31-filter-design-2026-10-17/results/checker-guardian.jsonl",
+      "scope": "repository",
+      "sha256": "764229c1e8b20318485e7e815c4af4508e930a7d954d6711915ef58a17d6b0b2"
+    },
+    {
+      "bytes": 0,
+      "path": "checker-stderr.raw",
+      "scope": "private",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 57,
+      "path": "checker-stdout.raw",
+      "scope": "private",
+      "sha256": "bd7cf264b64f2c3a2c922467cf342dc16c0f22470c5203f9422a6c130539917a"
+    },
+    {
+      "bytes": 57,
+      "path": "research/m31-filter-design-2026-10-17/results/checker-stdout.log",
+      "scope": "repository",
+      "sha256": "bd7cf264b64f2c3a2c922467cf342dc16c0f22470c5203f9422a6c130539917a"
+    },
+    {
+      "bytes": 0,
+      "path": "research/m31-filter-design-2026-10-17/results/checker-stderr.log",
+      "scope": "repository",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 22027,
+      "path": "research/m31-filter-design-2026-10-17/review/SAVED-EVIDENCE-AUDIT.py",
+      "scope": "repository",
+      "sha256": "632aedc52067260ea57c81e4c07b616140cdf5f2847f9c2d8490dbc0b2f007cd"
+    }
+  ],
+  "schema": "m31-filter-saved-evidence-administrative-audit-v1",
+  "scope": "Saved-byte identity, JSON binding, counts, lifecycle and resource-accounting audit only.",
+  "sourceCommit": "abcee1164faa21c0e5a4b189daa4578699ea7577",
+  "sourceManifestSha256": "cce61010030bdb8a62cdfd152fb2bb7ec1267fcc6d97f48bd9368098a3a71736",
+  "sourcePins": [
+    {
+      "bytes": 4754,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-current-pair-2026-10-17/MODEL.md",
+      "sha256": "542978ef7f69f76c8b241631d15a823acf974c61e6feee18576a83beffb8403b"
+    },
+    {
+      "bytes": 2719,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/CLAIM-EVIDENCE-LEDGER.md",
+      "sha256": "b2bab1f7398ac9d9efb1c969c36b9691ed516c8414711fff37ed232fabd34ddd"
+    },
+    {
+      "bytes": 4173,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/DESIGN-DRAFT.md",
+      "sha256": "a79ed283e1486cb7f3f63573ed9d8d145428ad8ffd6b2725d91cdd4ffcfcb36f"
+    },
+    {
+      "bytes": 3461,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/PARENT-READING.json",
+      "sha256": "41f2090b4c14a55bc0d773c54a8266f2a5eb0787d5a27703c0b07e1713b8f48d"
+    },
+    {
+      "bytes": 941,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/PREFREEZE-CHANGES.md",
+      "sha256": "111f39ba97723123133676b3f6bed9c46de1e3c696b1ed874c20c1b9857292d4"
+    },
+    {
+      "bytes": 10220,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/PROTOCOL.md",
+      "sha256": "4e0af980a7be0295cac06550e851d5282a44f5d494e81c9dfc632582ea810bb0"
+    },
+    {
+      "bytes": 2963,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/REPRODUCIBILITY.md",
+      "sha256": "3dcf37d3d8b95007fb1d38507edef17cdc41727b0f6f3b9865dc289855e24684"
+    },
+    {
+      "bytes": 2591,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/RESEARCH-DIRECTION.md",
+      "sha256": "1925e978d0290191181ce51e7d48500ea822c92f0d491cbe999a638b47332b4e"
+    },
+    {
+      "bytes": 2154,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/SOURCE-DECISION.md",
+      "sha256": "998d5e1cbce9a0734f7d57d5684655447329d4123d6b3438c23cb1b657db4e2a"
+    },
+    {
+      "bytes": 7592,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/SOURCE-PRIVACY.json",
+      "sha256": "349b9741c4d93d4bd29782538ec2c46060b22839894564cc97aa9c18079e1c7c"
+    },
+    {
+      "bytes": 2070,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/SOURCE-SYNTAX-PRIVACY.json",
+      "sha256": "e5a3f30321a221c96c7ba51ca28f9aa2c1eaab2a28728bf1301facaabd48b60d"
+    },
+    {
+      "bytes": 709,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/prefreeze/100-ROW-OUTLINE.md",
+      "sha256": "3010a17757fe8230d407fdd42d68c1bb9dd7d8e26428658fc46d7023c0cdfe6c"
+    },
+    {
+      "bytes": 19265,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/prefreeze/PAIR-LITERALS.json",
+      "sha256": "5b86fc94680f4a4afffcdecd33f34eb1e3a6185e5827652632771d1832adeed0"
+    },
+    {
+      "bytes": 9878,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/prefreeze/PROTOCOL-v0.md",
+      "sha256": "6d1550e4dea8ca41cc9161498e5c254ad8b31b5356dabf25ff309c3202e77a7b"
+    },
+    {
+      "bytes": 9937,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/prefreeze/PROTOCOL-v1.md",
+      "sha256": "e286b0ecd808b0aad3fede6a383c5fd78fc28b3471ec9aba9137da6fc6fd47e3"
+    },
+    {
+      "bytes": 35048,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/prefreeze/checker-v0.py",
+      "sha256": "0b62f26287be6a6751b47a4443519eed3ff318af215f4a8ffacfbc5315b78dbe"
+    },
+    {
+      "bytes": 7461,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/prefreeze/generate-fixtures.py",
+      "sha256": "8c33b7db04dc01cf803db89b2127281e6fed7d4ab046b291804b7c012f92dc80"
+    },
+    {
+      "bytes": 19699,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/prefreeze/supervise-before-checker-helper-pin.py",
+      "sha256": "fbfee616177a8079d5c5dd7e8d321db1c7c7d51f5df7bbfca1b453660f5c72b7"
+    },
+    {
+      "bytes": 19472,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/prefreeze/supervise-before-external-pin-review.py",
+      "sha256": "751d16ffb2c893dca2da01cc8ade35a8b31cd7324e3177f33b41c9cb2fcb5520"
+    },
+    {
+      "bytes": 3108,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/prefreeze/zero-filter-v0.cjs",
+      "sha256": "abfedcef4ff525e6f51bd541e7cbc2cda27bf39d1e1ea7222415151adb53d31d"
+    },
+    {
+      "bytes": 4097,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/review/CHECKER-IMPLEMENTATION.md",
+      "sha256": "fbcc8e56b0a1f3e147b9143eec6189e5b099f211aa1930acafe5d3ca98279e23"
+    },
+    {
+      "bytes": 6334,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/review/CHECKER-SOURCE-READING.json",
+      "sha256": "16c36758209ca555317797db0c0714c6340099624f67a7099268508477da07b3"
+    },
+    {
+      "bytes": 8681,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/review/CHECKER-SOURCE-REVIEW.md",
+      "sha256": "cb2d6c30bf1d71a81c5985afdf61571bc74561b23679043ede09187a0f4d14c8"
+    },
+    {
+      "bytes": 18281,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/review/NUMERICAL-DESIGN-AUDIT.md",
+      "sha256": "29ca8523ff930e6f3decd71b037b498e23ac36dc96f17348394432c7fb3563b4"
+    },
+    {
+      "bytes": 3665,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/review/NUMERICAL-DESIGN-READING.json",
+      "sha256": "8381f0fa048028b571783b74733f226053fb8d6e25cfa49e9f2bb8b13d14e1e5"
+    },
+    {
+      "bytes": 9825,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/review/PROTOCOL-CHALLENGE.md",
+      "sha256": "ae7fb02cd4db00ff7fcc1beafff4c9ae3a54e6b65aec055ba231bc403bfe9f8f"
+    },
+    {
+      "bytes": 1680,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/review/PROTOCOL-CHECKER-READING.json",
+      "sha256": "55d401259e7a181d6de712976752f311d80a9fca923e7b5fe571402f2a748783"
+    },
+    {
+      "bytes": 4359,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/review/STAGED-EXECUTION-READING.json",
+      "sha256": "8a24546f343d2ffad759e9e95994647a218cbfd9bb805b24765df8abc39b08c4"
+    },
+    {
+      "bytes": 15710,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/review/STAGED-EXECUTION-SOURCE-REVIEW.md",
+      "sha256": "2fc482d9431390c4ed2da10a97920f0460a9bdbc17d80141615d1bb84bd7bea8"
+    },
+    {
+      "bytes": 3206,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/review/SUPERVISOR-ADAPTATION-READING.json",
+      "sha256": "4dbca80e78dd2f429cd6974606b026e5146c5038259cfea3add8273ec25eb433"
+    },
+    {
+      "bytes": 3005,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/review/SUPERVISOR-ADAPTATION.md",
+      "sha256": "faed32fe88c10c43a0f5d99f2370d04023cb9611bf8291b2873c01aaf6f9238a"
+    },
+    {
+      "bytes": 1463,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/review/SUPERVISOR-EXTERNAL-PIN-ADDENDUM.md",
+      "sha256": "1b6991e417904f25234b101d93bfea58cc1090c5907629b0d5c982ec4d096262"
+    },
+    {
+      "bytes": 3223,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/review/SUPERVISOR-EXTERNAL-PIN-READING.json",
+      "sha256": "e008ac3c18d5885344fddc56c79c100eb5bf8269b620a0dd9a45b03409f96572"
+    },
+    {
+      "bytes": 14345,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/review/literature/LITERATURE.md",
+      "sha256": "e7856bbb5f5a1caa2d8994ee02eedcb73aabc97f06e85badf59a4d57560a8e36"
+    },
+    {
+      "bytes": 12386,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/review/literature/bibliography.json",
+      "sha256": "2e63972dbda81e3d007e5ba9ec442de91f0fbe3dfe8daa92a4ecc032e7f32e7d"
+    },
+    {
+      "bytes": 29612,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/review/literature/literature-experiment-ledger.json",
+      "sha256": "8ba3ffd312c188c636e219968beb8b00bacbe17e39bf5b08794799e1c1aa6718"
+    },
+    {
+      "bytes": 248,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/runtime-pins.json",
+      "sha256": "842b2522133ed499f4706e071b09f3d100c5f4ed3f41d0fd135736c4dc191087"
+    },
+    {
+      "bytes": 2829,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/source/binary64-interval.cjs",
+      "sha256": "048068853915c0fa5e90272e4dd491cbe4448fcbdbb7157008c90abbd7e185ad"
+    },
+    {
+      "bytes": 35689,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/source/check.py",
+      "sha256": "1d9f1181d55b4ed5ca76688ad4de29baedec1e008d7eac04806c28c10fc2784e"
+    },
+    {
+      "bytes": 1890,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/source/guardian.py",
+      "sha256": "b3d6be72fccd56be18d7cd2b59e0ff87aac0442eebf8470c8b7308eb853732de"
+    },
+    {
+      "bytes": 6662,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/source/result-contract.json",
+      "sha256": "4b9890937fac0131830548dc73241296b2c57783b1883a6762961c3dc45ca5ac"
+    },
+    {
+      "bytes": 4323,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/source/run.cjs",
+      "sha256": "2ce652e43efda4f698ef456e5229e608e9cee26da8a646dc686b1601bbee4536"
+    },
+    {
+      "bytes": 44757,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/source/semantic-reference.py",
+      "sha256": "845f52cf350a09d2043934dff3e797a7b7416f4ef5c64beb716104bcd74f38f0"
+    },
+    {
+      "bytes": 55777,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/source/spec.json",
+      "sha256": "2715ab48ad1c6437244e78ea66c8685c074d579c961f5b4c47857534e2e8de55"
+    },
+    {
+      "bytes": 19730,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/source/supervise.py",
+      "sha256": "a09af9c14853fc1440440e25c443163594bafed7f6257b8194ae3fb8208cdf7d"
+    },
+    {
+      "bytes": 3003,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-filter-design-2026-10-17/source/zero-filter.cjs",
+      "sha256": "d755b78fb774cab645e254316318bd86d95c2869e8d7682a8ed4a927968f0d88"
+    },
+    {
+      "bytes": 2400,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-screening-cost-2026-10-17/source/adapter.cjs",
+      "sha256": "5cf2b2ddc590915c63bae4f3909e90f196277804d1524aa0ef68165e6b1e4145"
+    },
+    {
+      "bytes": 2815,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-screening-cost-2026-10-17/source/interval.cjs",
+      "sha256": "73f5afce4dbc2551535127abeaa96d2e6389073e898f9b9dcc70a977ff19ded3"
+    },
+    {
+      "bytes": 3357,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-screening-cost-2026-10-17/source/pair-prepared.cjs",
+      "sha256": "e963362c4b095196b5cc0bcc67c1b613f28c4d6a5e5d5e15101a4f847a61ff56"
+    },
+    {
+      "bytes": 1188,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-screening-cost-2026-10-17/source/rational.cjs",
+      "sha256": "de2adde5459d37cc537709f7a488605d9c21d8eedf022efc0a3e9461d4d97333"
+    },
+    {
+      "bytes": 318383,
+      "gitMatch": true,
+      "localMatch": true,
+      "path": "research/m31-screening-cost-2026-10-17/source/spec.json",
+      "sha256": "194bf724c702c38045bf2ee11b30e5b6fc5fbeba8d2d42f68303b71083192728"
+    }
+  ],
+  "sourcePublicationEvidence": "Saved exact-commit HTTPS receipt cross-checked against local/Git manifest and all 51 pins; remote fetch not repeated.",
+  "stages": [
+    {
+      "accountingBeforeReport": {
+        "aggregateBytes": 207110,
+        "checkerBytes": 0,
+        "documentBytes": 102403,
+        "journalBytes": 104246,
+        "logMetadataBytes": 461,
+        "reportBytes": 0,
+        "unclassifiedBytes": 0
+      },
+      "closed": true,
+      "maxSampleGapSeconds": 0.08013016637414694,
+      "peakSampledGroupRssBytes": 80052224,
+      "samples": 8,
+      "stage": "kernel",
+      "success": true,
+      "wallSeconds": 0.7534372080117464
+    },
+    {
+      "accountingBeforeReport": {
+        "aggregateBytes": 342810,
+        "checkerBytes": 130112,
+        "documentBytes": 102403,
+        "journalBytes": 104246,
+        "logMetadataBytes": 965,
+        "reportBytes": 5084,
+        "unclassifiedBytes": 0
+      },
+      "closed": true,
+      "maxSampleGapSeconds": 0.07689724955707788,
+      "peakSampledGroupRssBytes": 70008832,
+      "samples": 4,
+      "stage": "checker",
+      "success": true,
+      "wallSeconds": 0.4448834164068103
+    }
+  ],
+  "summaries": {
+    "decisionCounts": {
+      "fallback": 26,
+      "preparation": 5,
+      "zero": 5
+    },
+    "fallbackBranchCounts": {
+      "active": 6,
+      "cap": 1,
+      "center-guard": 2,
+      "down-cut": 2,
+      "near": 3,
+      "near-outside": 1,
+      "neighbor": 4,
+      "projection": 2,
+      "upstream": 5
+    },
+    "fallbackReasonCounts": {
+      "active-exact": 5,
+      "arithmetic-nonfinite": 1,
+      "center-component": 2,
+      "down-cut-uncertain": 4,
+      "near-exact": 2,
+      "neighbor-uncertain": 5,
+      "projection-uncertain": 2,
+      "upstream-uncertain": 5
+    },
+    "fastZeroBranchCounts": {
+      "near-outside": 1,
+      "neighbor": 2,
+      "radial": 1,
+      "upstream": 1
+    },
+    "finiteIntervalCounts": {
+      "add": 6,
+      "div": 6,
+      "mul": 7,
+      "square": 6,
+      "sub": 6
+    },
+    "oracleBranchCounts": {
+      "active": 6,
+      "cap": 1,
+      "center-guard": 2,
+      "down-cut": 2,
+      "near": 3,
+      "near-outside": 2,
+      "neighbor": 6,
+      "preparation": 1,
+      "projection": 2,
+      "radial": 1,
+      "raw-force": 2,
+      "raw-nonfinite": 2,
+      "upstream": 6
+    },
+    "oracleStatusCounts": {
+      "positive": 6,
+      "rejected": 11,
+      "zero": 19
+    },
+    "positiveFallbacks": 6,
+    "primitiveOutcomeCounts": {
+      "add:fallback": 2,
+      "add:interval": 6,
+      "div:fallback": 2,
+      "div:interval": 6,
+      "mul:fallback": 1,
+      "mul:interval": 7,
+      "nextDown:fallback": 4,
+      "nextDown:word": 12,
+      "nextUp:fallback": 4,
+      "nextUp:word": 12,
+      "square:fallback": 2,
+      "square:interval": 6,
+      "sub:fallback": 2,
+      "sub:interval": 6
+    },
+    "primitiveRefusalReasonCounts": {
+      "invalid-interval": 1,
+      "nonfinite": 15,
+      "zero-denominator": 1
+    }
+  }
+}

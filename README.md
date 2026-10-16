@@ -8,7 +8,9 @@ This is an ongoing research record, including unsuccessful experiments. The hist
 
 ## Current Milestone 31 restart
 
-Latest result: [matched total calculation cost](research/m31-screening-cost-2026-10-17/MILESTONE-SUMMARY.md) qualified all six static upright lattice scenes and all 15 fault controls. Exact screening was faster in all 24 measured pairs: median paired ratios were 1.40–1.63× for dense groups and 3.59–7.88× for sparse groups (complete/hierarchy). The dense 216-drone hierarchy calculation still took a median 8.761 seconds, so real-time 5,000-drone coupling remains open. The [updated Three.js view](research/m31-screening-cost-2026-10-17/viewer/) shows the saved groups, hierarchy, all timing pairs and stage costs. Numerical correctness under this model does not establish flight physics or novelty.
+Latest result: [finite conservative-filter verification](research/m31-filter-design-2026-10-17/MILESTONE-SUMMARY.md) qualified 108 fixed cases and detected all 16 deliberate corruption controls. The filter directly proved five of 19 exact-model zero interactions; uncertain cases used unchanged exact fallback. This selected boundary suite measures correctness, not typical hit rate or speed. The [updated Three.js diagnostic](research/m31-filter-design-2026-10-17/viewer/) shows all 36 pair cases and their saved decisions. Total-cost benefit, physical validity and novelty remain open.
+
+Earlier result: [matched total calculation cost](research/m31-screening-cost-2026-10-17/MILESTONE-SUMMARY.md) qualified all six static upright lattice scenes and all 15 fault controls. Exact screening was faster in all 24 measured pairs: median paired ratios were 1.40–1.63× for dense groups and 3.59–7.88× for sparse groups (complete/hierarchy). The dense 216-drone hierarchy calculation still took a median 8.761 seconds, so real-time 5,000-drone coupling remains open. The [updated Three.js view](research/m31-screening-cost-2026-10-17/viewer/) shows the saved groups, hierarchy, all timing pairs and stage costs. Numerical correctness under this model does not establish flight physics or novelty.
 
 Earlier result: [four-rotor coupled-load verification](research/m31-coupled-solve-2026-10-16/MILESTONE-SUMMARY.md) passed all 10,007 independent checks on four designed fixtures. Two eight-drone stacks used 32 ordered-solve root closures versus 256 simultaneous-update closures (64 versus 288 including each method’s residual check). A six-drone cycle converged; the nearby unsupported pair was rejected. These are operation counts under an explicit hypothetical source-strength law, not measured speedups or physical validation. The [new Three.js replay](research/m31-coupled-solve-2026-10-16/viewer/) displays the actual fixed geometry, dependency edges and saved load iterates. The 5,000-drone goal remains open.
 
@@ -38,7 +40,7 @@ The earlier [GPU receiver component](research/m31-browser-receiver-2026-10-16/RE
 
 ## View the 3D lab
 
-For the current cost checkpoint, serve this repository with `python3 -m http.server 8876 --bind 127.0.0.1` and open <http://127.0.0.1:8876/research/m31-screening-cost-2026-10-17/viewer/>. It uses the committed saved results and runs no scientific kernel.
+For the current filter checkpoint, serve this repository with `python3 -m http.server 8876 --bind 127.0.0.1` and open <http://127.0.0.1:8876/research/m31-filter-design-2026-10-17/viewer/>. It uses the committed saved results and runs no scientific kernel.
 
 For the historical interactive lab:
 

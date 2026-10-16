@@ -1,0 +1,11 @@
+# Qualified finite filter verification; total cost is unmeasured
+
+The single kernel and single independent checker allocations completed within their frozen limits. All 108 records (72 primitive, 36 raw pairs), 110 journal events and 16 deliberate corruption controls qualified with zero baseline errors. The separate saved-evidence audit passed 792 checks. All source, runtime and input identity gates passed. No unresolved or undecidable outcome occurred; such an outcome would have failed qualification.
+
+Five of the 19 exact-model zero interactions were certified by the filter. Fourteen zeros still used exact fallback. The 26 fallbacks also contained six positive interactions and six model rejections; five other cases refused raw preparation. Complete candidate and baseline results matched on all 36 pairs, and the independent reference checked their semantics and positive enclosures. No fast down-cut or projection witness occurred. The finite boundary suite supplies no representative hit-rate estimate or causal account of fallback.
+
+The implementation may now be considered for a fresh total-cost experiment, charging preparation, hierarchy, filtering, exact fallback and load calculation. This verification run is not a benchmark. The next comparison must retain filter-off ablation and unchanged scientific acceptance, with no tuning or rerun of this suite or the closed screening-cost timing allocation. Exact reuse/batching remain competing directions.
+
+Published numerical filtering and exact fallback precede this work. This checkpoint does not establish algorithmic novelty, physical accuracy, coupled moving-flock stability or real-time 5,000-drone browser operation. The larger goal remains active and incomplete.
+
+The saved Three.js view exposes every pair decision and links the prior group view. Display attempt 01 failed due to a missing import map; the retained display-only repair led to attempt 02 passing 101 checks with no errors/warnings. Both display attempts and all scientific allocations are closed. The original claims review predates the HTML repair; its scope must be read together with the separate repair addendum. Preserve all frozen sources, records and failures. Result publication and exact public verification are administrative closeout only.

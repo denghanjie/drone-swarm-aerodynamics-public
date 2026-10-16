@@ -1,0 +1,224 @@
+{
+  "stage": "checker",
+  "sourceCommit": "abcee1164faa21c0e5a4b189daa4578699ea7577",
+  "sourceManifestSha256": "cce61010030bdb8a62cdfd152fb2bb7ec1267fcc6d97f48bd9368098a3a71736",
+  "commandTemplate": [
+    "PYTHON",
+    "PACKAGE/source/check.py",
+    "--spec",
+    "PACKAGE/source/spec.json",
+    "--input",
+    "PACKAGE/results/filter-results.json",
+    "--manifest",
+    "PACKAGE/source-manifest.json",
+    "--output",
+    "PACKAGE/results/independent-check.json",
+    "--root",
+    "REPOSITORY_ROOT"
+  ],
+  "runtimePins": {
+    "node": {
+      "bytes": 121304480,
+      "sha256": "3c9448363b9976bf3d9e8f4d320397975800131b42c7b1be342dadc05871dd25"
+    },
+    "python": {
+      "bytes": 18058560,
+      "sha256": "7a314947596fc484d4ec36ffc28e843b78d6d749c68736f8b5c24e7333f418eb"
+    }
+  },
+  "wallLimitSeconds": 300,
+  "guardianWallLimitSeconds": 310,
+  "sampledRssLimitBytes": 536870912,
+  "outputLimitBytes": 100663296,
+  "artifactLimitBytes": {
+    "filter-results.json": 16777216,
+    "filter-results.json.jsonl": 16777216,
+    "allCheckerOutputs": 33554432
+  },
+  "logMetadataLimitBytes": 8388608,
+  "finalReportLimitBytes": 65536,
+  "nominalSleepSeconds": 0.05,
+  "success": true,
+  "closed": true,
+  "samples": 4,
+  "peakSampledGroupRssBytes": 70008832,
+  "maxSampleGapSeconds": 0.07689724955707788,
+  "terminationReason": null,
+  "containmentScope": "Reviewed scientific children spawn no subprocesses. Retained guardian owns process group; sampling is not hostile-code/escaped-descendant isolation.",
+  "accountingScope": "Recursive closed-set results plus all four kernel/checker private raw logs and their public copies. Kernel document and journal each have a 16 MiB cap; checker report plus reference share 32 MiB; log/metadata share 8 MiB; each supervision report has a 64 KiB cap; aggregate cap is 96 MiB. No scene shards or anomaly graph.",
+  "processGroup": 17811,
+  "scientificChildAbsentBeforeRelease": true,
+  "exitCode": 0,
+  "guardianExitCode": 0,
+  "childGroupAbsent": true,
+  "logs": [
+    {
+      "path": "research/m31-filter-design-2026-10-17/results/checker-stdout.log",
+      "rawBytes": 57,
+      "rawSha256": "bd7cf264b64f2c3a2c922467cf342dc16c0f22470c5203f9422a6c130539917a",
+      "publishedBytes": 57,
+      "publishedSha256": "bd7cf264b64f2c3a2c922467cf342dc16c0f22470c5203f9422a6c130539917a",
+      "redaction": "machine/runtime path prefixes replaced; raw logs retained privately"
+    },
+    {
+      "path": "research/m31-filter-design-2026-10-17/results/checker-stderr.log",
+      "rawBytes": 0,
+      "rawSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "publishedBytes": 0,
+      "publishedSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "redaction": "machine/runtime path prefixes replaced; raw logs retained privately"
+    }
+  ],
+  "output": {
+    "path": "research/m31-filter-design-2026-10-17/results/independent-check.json",
+    "bytes": 8143,
+    "sha256": "08a2f6762e886a510933bd06d2b1145bc7a5500bff01587efee9ef7467738196"
+  },
+  "scientificEvidence": [
+    {
+      "path": "research/m31-filter-design-2026-10-17/results/filter-results.json",
+      "bytes": 102403,
+      "sha256": "af98598d09ece48d34ef349053a9e1254a0eb36adf5e9b88ad73a70cfb94f37e"
+    },
+    {
+      "path": "research/m31-filter-design-2026-10-17/results/filter-results.json.jsonl",
+      "bytes": 104246,
+      "sha256": "26913fcbeb13abdd759fb8a75d300e0f4bc176f363c4c3df10bad88ccdafed89"
+    }
+  ],
+  "privateLogDirectorySha256": "07492199c5908580391fec32758d5b66d0e2be60c551fce6d83b0b380155c757",
+  "privateRawLogs": [
+    {
+      "name": "checker-stderr.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "checker-stdout.raw",
+      "bytes": 57,
+      "sha256": "bd7cf264b64f2c3a2c922467cf342dc16c0f22470c5203f9422a6c130539917a"
+    },
+    {
+      "name": "kernel-stderr.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "kernel-stdout.raw",
+      "bytes": 36,
+      "sha256": "4707087e30c423efa1613af2a29f0751cd480a6a3b10cf133190c8d80e079e9b"
+    }
+  ],
+  "checkerEvidence": [
+    {
+      "path": "research/m31-filter-design-2026-10-17/results/independent-check.json",
+      "bytes": 8143,
+      "sha256": "08a2f6762e886a510933bd06d2b1145bc7a5500bff01587efee9ef7467738196"
+    },
+    {
+      "path": "research/m31-filter-design-2026-10-17/results/reference.json",
+      "bytes": 121969,
+      "sha256": "90c29629e803b758665a6f180691468008724489117b27702be0a0d73556b46d"
+    }
+  ],
+  "sourceAndRuntimeRechecked": true,
+  "outputAccountingBeforeReport": {
+    "aggregateBytes": 342810,
+    "documentBytes": 102403,
+    "journalBytes": 104246,
+    "checkerBytes": 130112,
+    "logMetadataBytes": 965,
+    "reportBytes": 5084,
+    "unclassifiedBytes": 0,
+    "files": [
+      {
+        "scope": "results",
+        "path": "checker-attempt.json",
+        "bytes": 279
+      },
+      {
+        "scope": "results",
+        "path": "checker-guardian.jsonl",
+        "bytes": 111
+      },
+      {
+        "scope": "results",
+        "path": "checker-stderr.log",
+        "bytes": 0
+      },
+      {
+        "scope": "results",
+        "path": "checker-stdout.log",
+        "bytes": 57
+      },
+      {
+        "scope": "results",
+        "path": "filter-results.json",
+        "bytes": 102403
+      },
+      {
+        "scope": "results",
+        "path": "filter-results.json.jsonl",
+        "bytes": 104246
+      },
+      {
+        "scope": "results",
+        "path": "independent-check.json",
+        "bytes": 8143
+      },
+      {
+        "scope": "results",
+        "path": "kernel-attempt.json",
+        "bytes": 278
+      },
+      {
+        "scope": "results",
+        "path": "kernel-guardian.jsonl",
+        "bytes": 111
+      },
+      {
+        "scope": "results",
+        "path": "kernel-stderr.log",
+        "bytes": 0
+      },
+      {
+        "scope": "results",
+        "path": "kernel-stdout.log",
+        "bytes": 36
+      },
+      {
+        "scope": "results",
+        "path": "kernel-supervision.json",
+        "bytes": 5084
+      },
+      {
+        "scope": "results",
+        "path": "reference.json",
+        "bytes": 121969
+      },
+      {
+        "scope": "private",
+        "path": "checker-stderr.raw",
+        "bytes": 0
+      },
+      {
+        "scope": "private",
+        "path": "checker-stdout.raw",
+        "bytes": 57
+      },
+      {
+        "scope": "private",
+        "path": "kernel-stderr.raw",
+        "bytes": 0
+      },
+      {
+        "scope": "private",
+        "path": "kernel-stdout.raw",
+        "bytes": 36
+      }
+    ],
+    "violations": []
+  },
+  "finalOutputBytesBeforeReport": 342810,
+  "wallSeconds": 0.4448834164068103
+}

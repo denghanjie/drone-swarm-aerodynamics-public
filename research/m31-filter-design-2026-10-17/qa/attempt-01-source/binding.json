@@ -1,0 +1,34 @@
+{
+  "schema": "m31-filter-viewer-binding-v1",
+  "sourceCommit": "abcee1164faa21c0e5a4b189daa4578699ea7577",
+  "sourceManifestSha256": "cce61010030bdb8a62cdfd152fb2bb7ec1267fcc6d97f48bd9368098a3a71736",
+  "result": {
+    "bytes": 102403,
+    "sha256": "af98598d09ece48d34ef349053a9e1254a0eb36adf5e9b88ad73a70cfb94f37e"
+  },
+  "checker": {
+    "bytes": 8143,
+    "sha256": "08a2f6762e886a510933bd06d2b1145bc7a5500bff01587efee9ef7467738196"
+  },
+  "qualified": true,
+  "summary": "All 108 fixed cases qualified, and all 16 deliberate corruptions were detected. The filter proved 5 of 19 zero interactions directly; 14 other zeros still required exact fallback. This boundary-heavy set checks correctness, not typical hit rates or speed.",
+  "qualification": "The independent checker validated 72 primitive records and 36 raw pair records, including all saved preparation, branch and positive interval checks. It reported zero baseline errors and detected all 16 targeted corruptions. The 110-event journal and saved evidence identities passed. Both scientific allocations are closed.",
+  "controls": [
+    "inward-add-upper \u2014 detected primitive-containment",
+    "inward-add-lower \u2014 detected primitive-containment",
+    "lost-underflow \u2014 detected primitive-containment",
+    "finite-overflow \u2014 detected primitive-containment",
+    "zero-divisor \u2014 detected primitive-domain",
+    "lost-square-zero \u2014 detected primitive-containment",
+    "false-positive-zero \u2014 detected candidate-target-status",
+    "guard-preempted \u2014 detected candidate-target-status",
+    "wrong-zero-branch \u2014 detected candidate-target-branch",
+    "altered-prepared-point \u2014 detected prepared-operation-graph",
+    "lost-fallback-coefficient \u2014 detected candidate-containment-coefficient",
+    "preparation-bypassed \u2014 detected preparation-gate",
+    "missing-row \u2014 detected record-count",
+    "duplicate-row \u2014 detected duplicate-record-id",
+    "reordered-rows \u2014 detected record-order, record-order",
+    "journal-disagreement \u2014 detected journal-row-agreement"
+  ]
+}

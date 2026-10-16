@@ -1,0 +1,416 @@
+{
+  "scope": "Display-only saved pair evidence; no candidate/model/checker execution.",
+  "flow": "Verified saved checkpoint loads; all36pair controls update geometry and decisions; orbit and next button respond; corrupted evidence hides claims.",
+  "browserAvailability": "Browser plugin not available; installed Playwright/Chrome fallback",
+  "checks": [
+    {
+      "name": "page identity",
+      "passed": true
+    },
+    {
+      "name": "meaningful visible content",
+      "passed": true
+    },
+    {
+      "name": "all36pair options",
+      "passed": true
+    },
+    {
+      "name": "all72primitive rows",
+      "passed": true
+    },
+    {
+      "name": "all16controls",
+      "passed": true
+    },
+    {
+      "name": "Three.js canvas visible",
+      "passed": true
+    },
+    {
+      "name": "correct visible counters",
+      "passed": true
+    },
+    {
+      "name": "static/no speed disclosure",
+      "passed": true
+    },
+    {
+      "name": "historical airflow-off disclosed",
+      "passed": true
+    },
+    {
+      "name": "no framework overlay",
+      "passed": true
+    },
+    {
+      "name": "neighbor-far selected",
+      "passed": true
+    },
+    {
+      "name": "neighbor-far decision",
+      "passed": true
+    },
+    {
+      "name": "neighbor-equal selected",
+      "passed": true
+    },
+    {
+      "name": "neighbor-equal decision",
+      "passed": true
+    },
+    {
+      "name": "neighbor-before selected",
+      "passed": true
+    },
+    {
+      "name": "neighbor-before decision",
+      "passed": true
+    },
+    {
+      "name": "neighbor-after selected",
+      "passed": true
+    },
+    {
+      "name": "neighbor-after decision",
+      "passed": true
+    },
+    {
+      "name": "neighbor-negative selected",
+      "passed": true
+    },
+    {
+      "name": "neighbor-negative decision",
+      "passed": true
+    },
+    {
+      "name": "neighbor-diagonal-inside selected",
+      "passed": true
+    },
+    {
+      "name": "neighbor-diagonal-inside decision",
+      "passed": true
+    },
+    {
+      "name": "neighbor-diagonal-boundary selected",
+      "passed": true
+    },
+    {
+      "name": "neighbor-diagonal-boundary decision",
+      "passed": true
+    },
+    {
+      "name": "center-guard-equal selected",
+      "passed": true
+    },
+    {
+      "name": "center-guard-equal decision",
+      "passed": true
+    },
+    {
+      "name": "down-negative selected",
+      "passed": true
+    },
+    {
+      "name": "down-negative decision",
+      "passed": true
+    },
+    {
+      "name": "down-zero selected",
+      "passed": true
+    },
+    {
+      "name": "down-zero decision",
+      "passed": true
+    },
+    {
+      "name": "down-negative-subnormal selected",
+      "passed": true
+    },
+    {
+      "name": "down-negative-subnormal decision",
+      "passed": true
+    },
+    {
+      "name": "down-positive-subnormal selected",
+      "passed": true
+    },
+    {
+      "name": "down-positive-subnormal decision",
+      "passed": true
+    },
+    {
+      "name": "down-cut-before selected",
+      "passed": true
+    },
+    {
+      "name": "down-cut-before decision",
+      "passed": true
+    },
+    {
+      "name": "down-cut-equal selected",
+      "passed": true
+    },
+    {
+      "name": "down-cut-equal decision",
+      "passed": true
+    },
+    {
+      "name": "down-cut-after selected",
+      "passed": true
+    },
+    {
+      "name": "down-cut-after decision",
+      "passed": true
+    },
+    {
+      "name": "down-interior selected",
+      "passed": true
+    },
+    {
+      "name": "down-interior decision",
+      "passed": true
+    },
+    {
+      "name": "tilted-source-positive selected",
+      "passed": true
+    },
+    {
+      "name": "tilted-source-positive decision",
+      "passed": true
+    },
+    {
+      "name": "tilted-source-mirrored selected",
+      "passed": true
+    },
+    {
+      "name": "tilted-source-mirrored decision",
+      "passed": true
+    },
+    {
+      "name": "axis-permutation selected",
+      "passed": true
+    },
+    {
+      "name": "axis-permutation decision",
+      "passed": true
+    },
+    {
+      "name": "dot-cancellation-zero selected",
+      "passed": true
+    },
+    {
+      "name": "dot-cancellation-zero decision",
+      "passed": true
+    },
+    {
+      "name": "dot-cancellation-down-cut selected",
+      "passed": true
+    },
+    {
+      "name": "dot-cancellation-down-cut decision",
+      "passed": true
+    },
+    {
+      "name": "translated-neighbor-boundary selected",
+      "passed": true
+    },
+    {
+      "name": "translated-neighbor-boundary decision",
+      "passed": true
+    },
+    {
+      "name": "translated-tilted-point selected",
+      "passed": true
+    },
+    {
+      "name": "translated-tilted-point decision",
+      "passed": true
+    },
+    {
+      "name": "guard-before-upstream selected",
+      "passed": true
+    },
+    {
+      "name": "guard-before-upstream decision",
+      "passed": true
+    },
+    {
+      "name": "tail-positive selected",
+      "passed": true
+    },
+    {
+      "name": "tail-positive decision",
+      "passed": true
+    },
+    {
+      "name": "tail-near selected",
+      "passed": true
+    },
+    {
+      "name": "tail-near decision",
+      "passed": true
+    },
+    {
+      "name": "tail-near-outside selected",
+      "passed": true
+    },
+    {
+      "name": "tail-near-outside decision",
+      "passed": true
+    },
+    {
+      "name": "tail-radial selected",
+      "passed": true
+    },
+    {
+      "name": "tail-radial decision",
+      "passed": true
+    },
+    {
+      "name": "tail-projection selected",
+      "passed": true
+    },
+    {
+      "name": "tail-projection decision",
+      "passed": true
+    },
+    {
+      "name": "tail-cap selected",
+      "passed": true
+    },
+    {
+      "name": "tail-cap decision",
+      "passed": true
+    },
+    {
+      "name": "overflow-geometry selected",
+      "passed": true
+    },
+    {
+      "name": "overflow-geometry decision",
+      "passed": true
+    },
+    {
+      "name": "invalid-force-zero selected",
+      "passed": true
+    },
+    {
+      "name": "invalid-force-zero decision",
+      "passed": true
+    },
+    {
+      "name": "invalid-force-zero no admitted drawing",
+      "passed": true
+    },
+    {
+      "name": "invalid-force-negative selected",
+      "passed": true
+    },
+    {
+      "name": "invalid-force-negative decision",
+      "passed": true
+    },
+    {
+      "name": "invalid-force-negative no admitted drawing",
+      "passed": true
+    },
+    {
+      "name": "invalid-quaternion selected",
+      "passed": true
+    },
+    {
+      "name": "invalid-quaternion decision",
+      "passed": true
+    },
+    {
+      "name": "invalid-quaternion no admitted drawing",
+      "passed": true
+    },
+    {
+      "name": "invalid-nan-velocity selected",
+      "passed": true
+    },
+    {
+      "name": "invalid-nan-velocity decision",
+      "passed": true
+    },
+    {
+      "name": "invalid-nan-velocity no admitted drawing",
+      "passed": true
+    },
+    {
+      "name": "invalid-infinity-angular selected",
+      "passed": true
+    },
+    {
+      "name": "invalid-infinity-angular decision",
+      "passed": true
+    },
+    {
+      "name": "invalid-infinity-angular no admitted drawing",
+      "passed": true
+    },
+    {
+      "name": "orbit changes camera",
+      "passed": true
+    },
+    {
+      "name": "next button selects subsequent case",
+      "passed": true
+    },
+    {
+      "name": "link PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "name": "link filter-results.json",
+      "passed": true
+    },
+    {
+      "name": "link independent-check.json",
+      "passed": true
+    },
+    {
+      "name": "link LITERATURE.md",
+      "passed": true
+    },
+    {
+      "name": "link ",
+      "passed": true
+    },
+    {
+      "name": "mobile no page overflow",
+      "passed": true
+    },
+    {
+      "name": "invalid state visible on mobile",
+      "passed": true
+    },
+    {
+      "name": "no display errors",
+      "passed": true
+    },
+    {
+      "name": "no display warnings",
+      "passed": true
+    },
+    {
+      "name": "corrupt binding.json hides claims",
+      "passed": true
+    },
+    {
+      "name": "corrupt ../results/filter-results.json hides claims",
+      "passed": true
+    },
+    {
+      "name": "corrupt ../results/independent-check.json hides claims",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "browserVersion": "155.0.8059.80",
+  "passed": true,
+  "wallSeconds": 2.024
+}
