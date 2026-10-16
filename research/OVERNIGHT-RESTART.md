@@ -4,6 +4,14 @@
 
 Public additive worktree: current repository, branch `codex/m31-audit-2026-10-15`. Preserve the original eight-step roadmap and historical M31 base. Later remote main/DOT at `1336f5c416875a9651f92b58b2ed06649f25b04e` remains separate and untouched. The private workspace, attachments, credentials and chat records must never be published.
 
+## Latest completed checkpoint — measured coupled-query cost
+
+`m31-coupled-cost-host-2026-10-16/` has completed its separately registered replacement on the admitted host path. Source a459802be0b46beac72f35568a60533215f8f784; all98pins unchanged. Both one-shot allocations closed, exits0, no monitor failures. Full140call coverage and10010/10010saved checks. Primary same-grid B/C passes: paired median ratios .930374/.929131/.913258 with6/6wins each N5000. Direct all-pairs A nevertheless beat conservative grid B in all24paired diagnostic comparisons. Construction dominates both A and B; cached~18ms is not a moving-swarm refresh time. No physical validity, real-time browser or novelty claim.
+
+Read package MILESTONE-SUMMARY, RESULT-CLAIM-LEDGER, review/RESULT-INTERPRETATION and POSTRUN-RESTART. Viewer http://127.0.0.1:8876/research/m31-coupled-cost-host-2026-10-16/viewer/ shows historical airflow-off poses/current frozen-pose loads alongside new costs. Final desktop/mobile QA48checks passed; failed first QA disclosure-read test preserved. Scientific/review/QA processes finished; server8876retained. Source/result publication receipts are separate. Do not reopen any old allocation. The earlier07:00launch window remains historical and expired; this replacement had its own prospective protocol and explicit tool approval.
+
+Next source-only question: whether one structurally distinct order-preserving batched coefficient builder has a credible gain over fastest measured A on independently frozen states. Existing exact-screen/cadence/efficiency failures must be read first. No next numerical allocation exists. Overall goal active and incomplete.
+
 ## Latest completed computational checkpoint — four-rotor coupled solve
 
 `research/m31-coupled-solve-2026-10-16/` completed its new source-frozen question. Source commit4068504296c6b5cc9f4f0139b5813797f7a2b097,19-pin source manifest e6baf88c10fad32c8a0fee287989b6675c6144ba2d25440a34896b43e16ac941. Both one-shot invocations exited0; all10007 independent checks passed. Both8-drone ladders use32 ordered versus256 simultaneous-update roots; include32 final-check roots each. The6-drone loop has6positive vehicle edges and converged in8updates. The nearby control has6unsupported pairs and no solve. All admitted ordinaryLmax values<1; no extra-domain numerical demonstration of the log theorem. Residual-only estimates exclude saved root/map roundoff and are not certificates.

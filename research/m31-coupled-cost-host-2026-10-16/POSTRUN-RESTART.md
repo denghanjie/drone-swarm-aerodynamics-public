@@ -1,0 +1,11 @@
+# Restart from the completed coupled-cost checkpoint
+
+Candidate and saved-review allocations are consumed and closed. Do not remove locks, rerun them, tune the grid on these cases or amend frozen source/result evidence. Old permission-failed allocation and echo admission records remain unchanged. No scientific process remains running after this checkpoint; keep existing local server8876.
+
+Source: a459802be0b46beac72f35568a60533215f8f784. Source manifest f88099916c1a26fe999fb9a0d998d4e048c486e3d27916541762fa0b93b2284f,98pins,39,307,026pinned bytes. Independently retrieved and matched before execution. The static review's protocol hash had stale prose bytes; HASH-CORRECTION.md documents actual b2177a26… scope before launch. Numerical source files remain byte-identical to4fdcc83.
+
+Both exits0; 140calls,21controls,8bundles,16solves. Saved review10010/10010, complete. Practical B/C rule passed on all three5000states. Full B/C paired medians .930374/.929131/.913258; all-pairs A beat grid B in all six repetitions of every case. B median621–1023ms versus cached O17.77–18.29ms at5000. Neither clock is live flight. Apple M4/Node24.19.0. No physical or novelty conclusion.
+
+Read MILESTONE-SUMMARY, RESULT-CLAIM-LEDGER, RESULT-LITERATURE-LEDGER, results/analysis.json, independent interpretation and qa/REPORT. New viewer: http://127.0.0.1:8876/research/m31-coupled-cost-host-2026-10-16/viewer/ . It shows actual frozen poses, current saved loads and new timing costs; it does not animate fictitious new flight. Publication receipts under research/publication-receipts identify verified source and result commits and exact manifest bytes.
+
+Overall goal stays active and incomplete. Next decision must address the dominant construction work under the coupled contract, with a strong matched baseline and a clear physical/numerical observable. Consult prior closed cadence, zero-screen, support/reuse and transport findings before proposing a distinct new experiment. No further scientific allocation is granted by this restart note. Prepare and freeze a separate bounded protocol if warranted; exposed states remain development data. Keep old07:00overnight stop and campaign budgets historical, not an evergreen authorization to reopen them. User's standing mandate permits new bounded research decisions, not disguised retries.
