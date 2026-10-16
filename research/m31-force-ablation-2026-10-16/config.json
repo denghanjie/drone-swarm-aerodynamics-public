@@ -1,0 +1,112 @@
+{
+  "kind": "prospective-collective-force-moment-ablation",
+  "cases": [
+    {
+      "id": "offset-pair",
+      "n": 2,
+      "duration": 0.5,
+      "positions": [
+        [
+          -6,
+          0,
+          4.5
+        ],
+        [
+          -5.96,
+          0,
+          5.1
+        ]
+      ],
+      "command": "fixed-nominal"
+    },
+    {
+      "id": "boids16",
+      "n": 16,
+      "seed": 260201,
+      "duration": 2,
+      "command": "local-boids",
+      "conditionalMode": "force-only"
+    }
+  ],
+  "timesteps": [
+    0.005,
+    0.0025,
+    0.00125
+  ],
+  "modes": [
+    "off",
+    "coupled",
+    "force-only"
+  ],
+  "controlDt": 0.01,
+  "sampleDt": 0.1,
+  "tolerances": {
+    "position": 0.001,
+    "velocity": 0.001,
+    "attitude": 0.0017453292519943296,
+    "rotor": 0.001,
+    "bodyRate": 0.001
+  },
+  "refinementRatio": 0.75,
+  "roundoffFraction": 0.01,
+  "residualLimit": 1e-09,
+  "sourceReceiverLimit": 2e-09,
+  "identityTolerance": 1e-12,
+  "limits": {
+    "candidateWallSeconds": 300,
+    "reviewWallSeconds": 120,
+    "candidateCooperativeSeconds": 280,
+    "rssBytes": 805306368,
+    "evidenceBytes": 41943040
+  },
+  "references": [
+    {
+      "case": "boids16",
+      "mode": "off",
+      "dt": 0.005,
+      "path": "research/m31-motion-feedback-2026-10-16/results/boids16-off-0.005.json",
+      "sha256": "eca1e7332d43a1b273797f89d238fb536249811f814534da6c31d1f89cd177fd",
+      "bytes": 1897818
+    },
+    {
+      "case": "boids16",
+      "mode": "off",
+      "dt": 0.0025,
+      "path": "research/m31-motion-feedback-2026-10-16/results/boids16-off-0.0025.json",
+      "sha256": "8c4b30ec74463c6e9aad25b66ddb4b8a877b627e4776011da4190d33e3645303",
+      "bytes": 2336210
+    },
+    {
+      "case": "boids16",
+      "mode": "off",
+      "dt": 0.00125,
+      "path": "research/m31-motion-feedback-2026-10-16/results/boids16-off-0.00125.json",
+      "sha256": "03dc1f5a4b7074564ce4f820c31feb409a7e7eb49ede250e4bd539c8046e2ff0",
+      "bytes": 3224270
+    },
+    {
+      "case": "boids16",
+      "mode": "coupled",
+      "dt": 0.005,
+      "path": "research/m31-motion-feedback-2026-10-16/results/boids16-coupled-0.005.json",
+      "sha256": "341c0fcd9e796f316b528741bccc79b832032952e6e468ef7488645e571a9e5d",
+      "bytes": 2232718
+    },
+    {
+      "case": "boids16",
+      "mode": "coupled",
+      "dt": 0.0025,
+      "path": "research/m31-motion-feedback-2026-10-16/results/boids16-coupled-0.0025.json",
+      "sha256": "70cbb865cdafa9946e808d84a894ef89b435cac1de496f28c2045f478ede19cf",
+      "bytes": 2782887
+    },
+    {
+      "case": "boids16",
+      "mode": "coupled",
+      "dt": 0.00125,
+      "path": "research/m31-motion-feedback-2026-10-16/results/boids16-coupled-0.00125.json",
+      "sha256": "37fc64506929f0e5280bf4d3dc7b905532344583850cc1b95383bbf96652ce3f",
+      "bytes": 3887942
+    }
+  ]
+}
