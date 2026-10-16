@@ -1,0 +1,9 @@
+# Restart record
+
+The candidate and independent-review allocations each ran exactly once, under source702abf6b02d53b1008495e2fa579aabf58a445c5 and source manifest937f60cbcee413066c3d7a2ca3d6374be2b76f233032b903e743625e6e2ebed3. Exact remote commit/manifest was observed before launch; all24 local/committed pins matched. Candidate and review exited0. Both locks are consumed. No scientific/checker process remains active; no retry or numerical source modification occurred after observation.
+
+All four snapshots admitted and topologically eligible; independent review passed581 grouped checks.304M symbols matched exactly and320,200 positive coefficients agreed within tolerance. All64,000 rotor loads per solver and all saved source amplitudes passed the distinct hyperbolic-root formulation. See the final claim ledger for exact scope, counters, discrepancies and limitations. Ordinary bounds remain<1 and maximum tilt<8.37deg; no extra-domain result. Historical airflow off, no coupled mission, physical accuracy, runtime speedup, fresh independent-condition evidence or novelty.
+
+Source/publication receipts, original input pins, complete symbols/CSR/load records, solver iterates, supervisor outputs, separate final residual maps and saved descriptive analysis are retained. UI/QA/publication records are appended after science; their outcomes must be read explicitly. Keep server127.0.0.1:8876 running. The new viewer is at research/m31-swarm-coupling-transfer-2026-10-16/viewer/. Never silently edit frozen packages or remove locks.
+
+Next: read NEXT-DECISION.md and independent result interpretation, inspect earlier timing/source-accounting campaigns, then preregister one bounded complete-cost comparison using an exact spatial baseline. No next experiment is yet allocated. The overall user goal remains active and incomplete; this turn made substantive research progress rather than encountering a blocker.

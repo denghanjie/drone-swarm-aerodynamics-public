@@ -1,0 +1,3001 @@
+{
+  "schema": "m31-swarm-independent-review-v1",
+  "pass": true,
+  "checkCount": 581,
+  "passedChecks": 581,
+  "errors": [],
+  "cases": [
+    {
+      "id": "n1000-t20",
+      "complete": true,
+      "n": 1000,
+      "t": 20,
+      "admission": {
+        "admitted": true,
+        "reasons": [],
+        "unsupportedNearCount": 0,
+        "invalidTermCount": 0,
+        "scaledCapMax": 3.221702201979059,
+        "scaledCapViolationCount": 0
+      },
+      "input": {
+        "finite": true,
+        "quaternionNormMaxError": 2.220446049250313e-16,
+        "quaternionBadCount": 0,
+        "axisNormMaxError": 1.1102230246251565e-16,
+        "axisBadCount": 0,
+        "offsetNormMaxError": 2.0816681711721685e-17,
+        "offsetDotMaxAbs": 1.734723475976807e-18,
+        "offsetBadCount": 0,
+        "nominalZeroCount": 0,
+        "nominalNegativeCount": 0,
+        "nominalPositive": true,
+        "nominalTotalFinite": true,
+        "geometryValid": true,
+        "maxTiltDegrees": 7.537975422150915,
+        "tiltWithin45Count": 1000
+      },
+      "symbolEntriesCompared": 4000000,
+      "symbolMismatchCount": 0,
+      "csrSupportMismatchRows": 0,
+      "coefficientMismatchRows": 0,
+      "maximumAbsoluteCoefficientError": 1.7763568394002505e-15,
+      "geometryWork": {
+        "directedCenterTests": 999000,
+        "centerEligiblePairs": 275358,
+        "centerGuardRejectedPairs": 0,
+        "pairCalls": 1101432,
+        "positiveRotorTerms": 14166
+      },
+      "graph": {
+        "uniqueVehicleEdges": 4111,
+        "maxIncomingDegree": 16,
+        "heightViolationEdges": 0,
+        "orderViolationEdges": 0,
+        "descendingEligible": true,
+        "maxDependencyDepth": 8
+      },
+      "ordinaryLmax": 0.263003408839816,
+      "solutions": {
+        "direct": {
+          "iterations": 1,
+          "independentResidualLog": 3.3480163086352377e-16,
+          "independentSourceReceiverMismatch": 8.470165905306118e-16,
+          "allRotorForcesCompared": 4000,
+          "allAmplitudesCompared": 1000
+        },
+        "picard": {
+          "iterations": 7,
+          "independentResidualLog": 3.3480163086352377e-16,
+          "independentSourceReceiverMismatch": 8.470165905306118e-16,
+          "allRotorForcesCompared": 4000,
+          "allAmplitudesCompared": 1000
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "n5000-t20",
+      "complete": true,
+      "n": 5000,
+      "t": 20,
+      "admission": {
+        "admitted": true,
+        "reasons": [],
+        "unsupportedNearCount": 0,
+        "invalidTermCount": 0,
+        "scaledCapMax": 3.403940648217645,
+        "scaledCapViolationCount": 0
+      },
+      "input": {
+        "finite": true,
+        "quaternionNormMaxError": 3.3306690738754696e-16,
+        "quaternionBadCount": 0,
+        "axisNormMaxError": 1.1102230246251565e-16,
+        "axisBadCount": 0,
+        "offsetNormMaxError": 3.469446951953614e-17,
+        "offsetDotMaxAbs": 1.734723475976807e-18,
+        "offsetBadCount": 0,
+        "nominalZeroCount": 0,
+        "nominalNegativeCount": 0,
+        "nominalPositive": true,
+        "nominalTotalFinite": true,
+        "geometryValid": true,
+        "maxTiltDegrees": 7.220505447251066,
+        "tiltWithin45Count": 5000
+      },
+      "symbolEntriesCompared": 100000000,
+      "symbolMismatchCount": 0,
+      "csrSupportMismatchRows": 0,
+      "coefficientMismatchRows": 0,
+      "maximumAbsoluteCoefficientError": 2.220446049250313e-15,
+      "geometryWork": {
+        "directedCenterTests": 24995000,
+        "centerEligiblePairs": 2313748,
+        "centerGuardRejectedPairs": 0,
+        "pairCalls": 9254992,
+        "positiveRotorTerms": 115943
+      },
+      "graph": {
+        "uniqueVehicleEdges": 33706,
+        "maxIncomingDegree": 21,
+        "heightViolationEdges": 0,
+        "orderViolationEdges": 0,
+        "descendingEligible": true,
+        "maxDependencyDepth": 14
+      },
+      "ordinaryLmax": 0.3147147452637887,
+      "solutions": {
+        "direct": {
+          "iterations": 1,
+          "independentResidualLog": 3.3393426912553537e-16,
+          "independentSourceReceiverMismatch": 8.460904787424448e-16,
+          "allRotorForcesCompared": 20000,
+          "allAmplitudesCompared": 5000
+        },
+        "picard": {
+          "iterations": 10,
+          "independentResidualLog": 8.604228440844963e-16,
+          "independentSourceReceiverMismatch": 1.3581180881939994e-15,
+          "allRotorForcesCompared": 20000,
+          "allAmplitudesCompared": 5000
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "n5000-t60",
+      "complete": true,
+      "n": 5000,
+      "t": 60,
+      "admission": {
+        "admitted": true,
+        "reasons": [],
+        "unsupportedNearCount": 0,
+        "invalidTermCount": 0,
+        "scaledCapMax": 3.5939221085398065,
+        "scaledCapViolationCount": 0
+      },
+      "input": {
+        "finite": true,
+        "quaternionNormMaxError": 3.3306690738754696e-16,
+        "quaternionBadCount": 0,
+        "axisNormMaxError": 1.1102230246251565e-16,
+        "axisBadCount": 0,
+        "offsetNormMaxError": 4.163336342344337e-17,
+        "offsetDotMaxAbs": 3.469446951953614e-18,
+        "offsetBadCount": 0,
+        "nominalZeroCount": 0,
+        "nominalNegativeCount": 0,
+        "nominalPositive": true,
+        "nominalTotalFinite": true,
+        "geometryValid": true,
+        "maxTiltDegrees": 7.789237439136689,
+        "tiltWithin45Count": 5000
+      },
+      "symbolEntriesCompared": 100000000,
+      "symbolMismatchCount": 0,
+      "csrSupportMismatchRows": 0,
+      "coefficientMismatchRows": 0,
+      "maximumAbsoluteCoefficientError": 1.3322676295501878e-15,
+      "geometryWork": {
+        "directedCenterTests": 24995000,
+        "centerEligiblePairs": 2115930,
+        "centerGuardRejectedPairs": 0,
+        "pairCalls": 8463720,
+        "positiveRotorTerms": 110491
+      },
+      "graph": {
+        "uniqueVehicleEdges": 32097,
+        "maxIncomingDegree": 21,
+        "heightViolationEdges": 0,
+        "orderViolationEdges": 0,
+        "descendingEligible": true,
+        "maxDependencyDepth": 15
+      },
+      "ordinaryLmax": 0.3359610822375637,
+      "solutions": {
+        "direct": {
+          "iterations": 1,
+          "independentResidualLog": 3.365363543395006e-16,
+          "independentSourceReceiverMismatch": 6.384874512692385e-16,
+          "allRotorForcesCompared": 20000,
+          "allAmplitudesCompared": 5000
+        },
+        "picard": {
+          "iterations": 10,
+          "independentResidualLog": 9.18709552877317e-15,
+          "independentSourceReceiverMismatch": 1.1517584358711409e-14,
+          "allRotorForcesCompared": 20000,
+          "allAmplitudesCompared": 5000
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "n5000-t180",
+      "complete": true,
+      "n": 5000,
+      "t": 180,
+      "admission": {
+        "admitted": true,
+        "reasons": [],
+        "unsupportedNearCount": 0,
+        "invalidTermCount": 0,
+        "scaledCapMax": 3.2682095340190336,
+        "scaledCapViolationCount": 0
+      },
+      "input": {
+        "finite": true,
+        "quaternionNormMaxError": 3.3306690738754696e-16,
+        "quaternionBadCount": 0,
+        "axisNormMaxError": 1.1102230246251565e-16,
+        "axisBadCount": 0,
+        "offsetNormMaxError": 1.3877787807814457e-17,
+        "offsetDotMaxAbs": 1.734723475976807e-18,
+        "offsetBadCount": 0,
+        "nominalZeroCount": 0,
+        "nominalNegativeCount": 0,
+        "nominalPositive": true,
+        "nominalTotalFinite": true,
+        "geometryValid": true,
+        "maxTiltDegrees": 8.368197942466114,
+        "tiltWithin45Count": 5000
+      },
+      "symbolEntriesCompared": 100000000,
+      "symbolMismatchCount": 0,
+      "csrSupportMismatchRows": 0,
+      "coefficientMismatchRows": 0,
+      "maximumAbsoluteCoefficientError": 1.3322676295501878e-15,
+      "geometryWork": {
+        "directedCenterTests": 24995000,
+        "centerEligiblePairs": 1625974,
+        "centerGuardRejectedPairs": 0,
+        "pairCalls": 6503896,
+        "positiveRotorTerms": 79600
+      },
+      "graph": {
+        "uniqueVehicleEdges": 23201,
+        "maxIncomingDegree": 17,
+        "heightViolationEdges": 0,
+        "orderViolationEdges": 0,
+        "descendingEligible": true,
+        "maxDependencyDepth": 8
+      },
+      "ordinaryLmax": 0.35566812457167246,
+      "solutions": {
+        "direct": {
+          "iterations": 1,
+          "independentResidualLog": 3.3350058825654116e-16,
+          "independentSourceReceiverMismatch": 6.340399418624834e-16,
+          "allRotorForcesCompared": 20000,
+          "allAmplitudesCompared": 5000
+        },
+        "picard": {
+          "iterations": 8,
+          "independentResidualLog": 3.3350058825654116e-16,
+          "independentSourceReceiverMismatch": 6.340399418624834e-16,
+          "allRotorForcesCompared": 20000,
+          "allAmplitudesCompared": 5000
+        }
+      },
+      "pass": true
+    }
+  ],
+  "checks": [
+    {
+      "name": "evidence.complete",
+      "passed": true
+    },
+    {
+      "name": "no-candidate-failure-record",
+      "passed": true
+    },
+    {
+      "name": "candidate.runtime.node-recorded",
+      "passed": true
+    },
+    {
+      "name": "fixed-input-order-and-coverage",
+      "passed": true
+    },
+    {
+      "name": "fixed-evidence-order-and-coverage",
+      "passed": true
+    },
+    {
+      "name": "constants.mg",
+      "passed": true
+    },
+    {
+      "name": "constants.arm",
+      "passed": true
+    },
+    {
+      "name": "constants.radius",
+      "passed": true
+    },
+    {
+      "name": "constants.rho",
+      "passed": true
+    },
+    {
+      "name": "constants.A",
+      "passed": true
+    },
+    {
+      "name": "constants.R",
+      "passed": true
+    },
+    {
+      "name": "constants.c.D",
+      "passed": true
+    },
+    {
+      "name": "constants.c.decay",
+      "passed": true
+    },
+    {
+      "name": "constants.c.spread",
+      "passed": true
+    },
+    {
+      "name": "constants.c.origin",
+      "passed": true
+    },
+    {
+      "name": "constants.c.minDown",
+      "passed": true
+    },
+    {
+      "name": "constants.c.neighbor",
+      "passed": true
+    },
+    {
+      "name": "constants.c.nearRad",
+      "passed": true
+    },
+    {
+      "name": "constants.c.downFade",
+      "passed": true
+    },
+    {
+      "name": "constants.c.downCut",
+      "passed": true
+    },
+    {
+      "name": "constants.c.radFade",
+      "passed": true
+    },
+    {
+      "name": "constants.c.radCut",
+      "passed": true
+    },
+    {
+      "name": "constants.c.induced",
+      "passed": true
+    },
+    {
+      "name": "constants.c.sqrt2minus1",
+      "passed": true
+    },
+    {
+      "name": "candidate.total-output-byte-cap",
+      "passed": true,
+      "details": {
+        "bytes": 58101148
+      }
+    },
+    {
+      "name": "candidate.normal-science-byte-cap",
+      "passed": true,
+      "details": {
+        "bytes": 58101148
+      }
+    },
+    {
+      "name": "n1000-t20.input-artifact.bytes",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.input-artifact.sha256",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.source-provenance-metadata",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.public-source-identity",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.source-pins.source",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.source-pins.sourceBytes",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.source-pins.sourceSha256",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.id",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.n",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.t",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.inputSha256",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.input.finite",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.input.quaternionNormMaxError",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.input.quaternionBadCount",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.input.axisNormMaxError",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.input.axisBadCount",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.input.offsetNormMaxError",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.input.offsetDotMaxAbs",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.input.offsetBadCount",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.input.nominalZeroCount",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.input.nominalNegativeCount",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.input.nominalPositive",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.input.nominalTotalFinite",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.input.geometryValid",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.input.maxTiltDegrees",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.input.tiltWithin45Count",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.completed-case-matches-evidence",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.csr.offsets.shape",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.csr.offsets.encoding",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.csr.offsets.bytes",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.csr.offsets.sha256",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.csr.sources.shape",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.csr.sources.encoding",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.csr.sources.bytes",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.csr.sources.sha256",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.csr.K.shape",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.csr.K.encoding",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.csr.K.bytes",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.csr.K.sha256",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.csr.positive-finite-K",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.symbols.bytes",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.symbols.sha256",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.symbol-compressed-cap",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.symbols.encoding",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.symbols.shape",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.symbols.rawBytes",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.symbols.no-trailing-raw-bytes",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.symbols.rawSha256",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.all-symbols-exact",
+      "passed": true,
+      "details": {
+        "mismatchCount": 0,
+        "first": []
+      }
+    },
+    {
+      "name": "n1000-t20.all-csr-support-exact",
+      "passed": true,
+      "details": {
+        "mismatchRows": 0,
+        "first": []
+      }
+    },
+    {
+      "name": "n1000-t20.all-K-within-tolerance",
+      "passed": true,
+      "details": {
+        "mismatchRows": 0,
+        "first": [],
+        "maximumAbsoluteError": 1.7763568394002505e-15
+      }
+    },
+    {
+      "name": "n1000-t20.complete-terminal-symbol-census",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.symbolCounts",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.geometryWork.directedCenterTests",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.geometryWork.centerEligiblePairs",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.geometryWork.centerGuardRejectedPairs",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.geometryWork.pairCalls",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.geometryWork.positiveRotorTerms",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.graph.uniqueVehicleEdges",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.graph.incomingDegree",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.graph.maxIncomingDegree",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.graph.heightViolationEdges",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.graph.orderViolationEdges",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.graph.descendingEligible",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.graph.order",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.graph.dependencyDepth",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.graph.maxDependencyDepth",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.admission.admitted",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.admission.reasons",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.admission.unsupportedNearCount",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.admission.invalidTermCount",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.admission.scaledCapMax",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.admission.scaledCapViolationCount",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.ordinaryLmax",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.admitted-topological-solution-present",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.direct.generating.all-y",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.340282951269616e-16
+      }
+    },
+    {
+      "name": "n1000-t20.direct.generating.all-alpha",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.direct.generating.all-x",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 2.220446049375387e-15
+      }
+    },
+    {
+      "name": "n1000-t20.direct.generating.all-T",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 2.3231088205269976e-15
+      }
+    },
+    {
+      "name": "n1000-t20.direct.generating.alpha-domain",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.direct.generating.root-domain",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.direct.independent-direct-y",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.340282951269616e-16
+      }
+    },
+    {
+      "name": "n1000-t20.direct.independent-direct-T",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 2.3231088205269976e-15
+      }
+    },
+    {
+      "name": "n1000-t20.direct.independent-direct-x",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 2.220446049375387e-15
+      }
+    },
+    {
+      "name": "n1000-t20.direct.work.rootClosures",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.direct.work.bisectionIterations",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.direct.work.positiveTermMultiplications",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.direct.residualMap.all-y",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.348858077442803e-16
+      }
+    },
+    {
+      "name": "n1000-t20.direct.residualMap.all-alpha",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.direct.residualMap.all-x",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 2.220446049375387e-15
+      }
+    },
+    {
+      "name": "n1000-t20.direct.residualMap.all-T",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 2.3231088205269976e-15
+      }
+    },
+    {
+      "name": "n1000-t20.direct.residualMap.alpha-domain",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.direct.residualMap.root-domain",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.direct.residualWork.rootClosures",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.direct.residualWork.bisectionIterations",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.direct.residualWork.positiveTermMultiplications",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.direct.residualLog",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.direct.sourceReceiverMismatch",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.direct.independent-residual-small",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.picard.initial-all-ones",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.picard.returned-last-iterate",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.picard.first-stop-only",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.picard.converged",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.picard.lastChange",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.picard.converged-within-cap",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.picard.cap-if-unconverged",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.picard.update-1",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.338720940498508e-16
+      }
+    },
+    {
+      "name": "n1000-t20.picard.update-2",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.348858077442803e-16
+      }
+    },
+    {
+      "name": "n1000-t20.picard.update-3",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.348858077442803e-16
+      }
+    },
+    {
+      "name": "n1000-t20.picard.update-4",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.348858077442803e-16
+      }
+    },
+    {
+      "name": "n1000-t20.picard.update-5",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.348858077442803e-16
+      }
+    },
+    {
+      "name": "n1000-t20.picard.update-6",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.348858077442803e-16
+      }
+    },
+    {
+      "name": "n1000-t20.picard.update-7",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.348858077442803e-16
+      }
+    },
+    {
+      "name": "n1000-t20.picard.generating.all-y",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.348858077442803e-16
+      }
+    },
+    {
+      "name": "n1000-t20.picard.generating.all-alpha",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.picard.generating.all-x",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 2.220446049375387e-15
+      }
+    },
+    {
+      "name": "n1000-t20.picard.generating.all-T",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 2.3231088205269976e-15
+      }
+    },
+    {
+      "name": "n1000-t20.picard.generating.alpha-domain",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.picard.generating.root-domain",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.picard.independent-direct-y",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.340282951269616e-16
+      }
+    },
+    {
+      "name": "n1000-t20.picard.independent-direct-T",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 2.3231088205269976e-15
+      }
+    },
+    {
+      "name": "n1000-t20.picard.independent-direct-x",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 2.220446049375387e-15
+      }
+    },
+    {
+      "name": "n1000-t20.picard.work.rootClosures",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.picard.work.bisectionIterations",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.picard.work.positiveTermMultiplications",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.picard.residualMap.all-y",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.348858077442803e-16
+      }
+    },
+    {
+      "name": "n1000-t20.picard.residualMap.all-alpha",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.picard.residualMap.all-x",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 2.220446049375387e-15
+      }
+    },
+    {
+      "name": "n1000-t20.picard.residualMap.all-T",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 2.3231088205269976e-15
+      }
+    },
+    {
+      "name": "n1000-t20.picard.residualMap.alpha-domain",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.picard.residualMap.root-domain",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.picard.residualWork.rootClosures",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.picard.residualWork.bisectionIterations",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.picard.residualWork.positiveTermMultiplications",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.picard.residualLog",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.picard.sourceReceiverMismatch",
+      "passed": true
+    },
+    {
+      "name": "n1000-t20.picard.independent-residual-small",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.input-artifact.bytes",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.input-artifact.sha256",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.source-provenance-metadata",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.public-source-identity",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.source-pins.source",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.source-pins.sourceBytes",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.source-pins.sourceSha256",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.id",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.n",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.t",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.inputSha256",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.input.finite",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.input.quaternionNormMaxError",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.input.quaternionBadCount",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.input.axisNormMaxError",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.input.axisBadCount",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.input.offsetNormMaxError",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.input.offsetDotMaxAbs",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.input.offsetBadCount",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.input.nominalZeroCount",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.input.nominalNegativeCount",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.input.nominalPositive",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.input.nominalTotalFinite",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.input.geometryValid",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.input.maxTiltDegrees",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.input.tiltWithin45Count",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.completed-case-matches-evidence",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.csr.offsets.shape",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.csr.offsets.encoding",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.csr.offsets.bytes",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.csr.offsets.sha256",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.csr.sources.shape",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.csr.sources.encoding",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.csr.sources.bytes",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.csr.sources.sha256",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.csr.K.shape",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.csr.K.encoding",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.csr.K.bytes",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.csr.K.sha256",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.csr.positive-finite-K",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.symbols.bytes",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.symbols.sha256",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.symbol-compressed-cap",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.symbols.encoding",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.symbols.shape",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.symbols.rawBytes",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.symbols.no-trailing-raw-bytes",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.symbols.rawSha256",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.all-symbols-exact",
+      "passed": true,
+      "details": {
+        "mismatchCount": 0,
+        "first": []
+      }
+    },
+    {
+      "name": "n5000-t20.all-csr-support-exact",
+      "passed": true,
+      "details": {
+        "mismatchRows": 0,
+        "first": []
+      }
+    },
+    {
+      "name": "n5000-t20.all-K-within-tolerance",
+      "passed": true,
+      "details": {
+        "mismatchRows": 0,
+        "first": [],
+        "maximumAbsoluteError": 2.220446049250313e-15
+      }
+    },
+    {
+      "name": "n5000-t20.complete-terminal-symbol-census",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.symbolCounts",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.geometryWork.directedCenterTests",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.geometryWork.centerEligiblePairs",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.geometryWork.centerGuardRejectedPairs",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.geometryWork.pairCalls",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.geometryWork.positiveRotorTerms",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.graph.uniqueVehicleEdges",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.graph.incomingDegree",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.graph.maxIncomingDegree",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.graph.heightViolationEdges",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.graph.orderViolationEdges",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.graph.descendingEligible",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.graph.order",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.graph.dependencyDepth",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.graph.maxDependencyDepth",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.admission.admitted",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.admission.reasons",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.admission.unsupportedNearCount",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.admission.invalidTermCount",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.admission.scaledCapMax",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.admission.scaledCapViolationCount",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.ordinaryLmax",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.admitted-topological-solution-present",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.direct.generating.all-y",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.3379281123199216e-16
+      }
+    },
+    {
+      "name": "n5000-t20.direct.generating.all-alpha",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.direct.generating.all-x",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 2.3314683867103276e-15
+      }
+    },
+    {
+      "name": "n5000-t20.direct.generating.all-T",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 2.539682310550723e-15
+      }
+    },
+    {
+      "name": "n5000-t20.direct.generating.alpha-domain",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.direct.generating.root-domain",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.direct.independent-direct-y",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.3379281123199216e-16
+      }
+    },
+    {
+      "name": "n5000-t20.direct.independent-direct-T",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 2.539682310550723e-15
+      }
+    },
+    {
+      "name": "n5000-t20.direct.independent-direct-x",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 2.3314683867103276e-15
+      }
+    },
+    {
+      "name": "n5000-t20.direct.work.rootClosures",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.direct.work.bisectionIterations",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.direct.work.positiveTermMultiplications",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.direct.residualMap.all-y",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.3400991257185807e-16
+      }
+    },
+    {
+      "name": "n5000-t20.direct.residualMap.all-alpha",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.direct.residualMap.all-x",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 2.3314683867103276e-15
+      }
+    },
+    {
+      "name": "n5000-t20.direct.residualMap.all-T",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 2.539682310550723e-15
+      }
+    },
+    {
+      "name": "n5000-t20.direct.residualMap.alpha-domain",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.direct.residualMap.root-domain",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.direct.residualWork.rootClosures",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.direct.residualWork.bisectionIterations",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.direct.residualWork.positiveTermMultiplications",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.direct.residualLog",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.direct.sourceReceiverMismatch",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.direct.independent-residual-small",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.picard.initial-all-ones",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.picard.returned-last-iterate",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.picard.first-stop-only",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.picard.converged",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.picard.lastChange",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.picard.converged-within-cap",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.picard.cap-if-unconverged",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.picard.update-1",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.475942472289588e-16
+      }
+    },
+    {
+      "name": "n5000-t20.picard.update-2",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.3378602912440154e-16
+      }
+    },
+    {
+      "name": "n5000-t20.picard.update-3",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.3400991257185807e-16
+      }
+    },
+    {
+      "name": "n5000-t20.picard.update-4",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.3400991257185807e-16
+      }
+    },
+    {
+      "name": "n5000-t20.picard.update-5",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.3400991257185807e-16
+      }
+    },
+    {
+      "name": "n5000-t20.picard.update-6",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.3400991257185807e-16
+      }
+    },
+    {
+      "name": "n5000-t20.picard.update-7",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.3400991257185807e-16
+      }
+    },
+    {
+      "name": "n5000-t20.picard.update-8",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.3400991257185807e-16
+      }
+    },
+    {
+      "name": "n5000-t20.picard.update-9",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.3400991257185807e-16
+      }
+    },
+    {
+      "name": "n5000-t20.picard.update-10",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.3400991257185807e-16
+      }
+    },
+    {
+      "name": "n5000-t20.picard.generating.all-y",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.3400991257185807e-16
+      }
+    },
+    {
+      "name": "n5000-t20.picard.generating.all-alpha",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.picard.generating.all-x",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 2.3314683867103276e-15
+      }
+    },
+    {
+      "name": "n5000-t20.picard.generating.all-T",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 2.539682310550723e-15
+      }
+    },
+    {
+      "name": "n5000-t20.picard.generating.alpha-domain",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.picard.generating.root-domain",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.picard.independent-direct-y",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 8.668746915826746e-16
+      }
+    },
+    {
+      "name": "n5000-t20.picard.independent-direct-T",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 2.6774416582596905e-15
+      }
+    },
+    {
+      "name": "n5000-t20.picard.independent-direct-x",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 2.654624104164304e-15
+      }
+    },
+    {
+      "name": "n5000-t20.picard.work.rootClosures",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.picard.work.bisectionIterations",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.picard.work.positiveTermMultiplications",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.picard.residualMap.all-y",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.3400991257185807e-16
+      }
+    },
+    {
+      "name": "n5000-t20.picard.residualMap.all-alpha",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.picard.residualMap.all-x",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 2.3314683867103276e-15
+      }
+    },
+    {
+      "name": "n5000-t20.picard.residualMap.all-T",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 2.539682310550723e-15
+      }
+    },
+    {
+      "name": "n5000-t20.picard.residualMap.alpha-domain",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.picard.residualMap.root-domain",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.picard.residualWork.rootClosures",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.picard.residualWork.bisectionIterations",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.picard.residualWork.positiveTermMultiplications",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.picard.residualLog",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.picard.sourceReceiverMismatch",
+      "passed": true
+    },
+    {
+      "name": "n5000-t20.picard.independent-residual-small",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.input-artifact.bytes",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.input-artifact.sha256",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.source-provenance-metadata",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.public-source-identity",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.source-pins.source",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.source-pins.sourceBytes",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.source-pins.sourceSha256",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.id",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.n",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.t",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.inputSha256",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.input.finite",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.input.quaternionNormMaxError",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.input.quaternionBadCount",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.input.axisNormMaxError",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.input.axisBadCount",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.input.offsetNormMaxError",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.input.offsetDotMaxAbs",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.input.offsetBadCount",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.input.nominalZeroCount",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.input.nominalNegativeCount",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.input.nominalPositive",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.input.nominalTotalFinite",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.input.geometryValid",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.input.maxTiltDegrees",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.input.tiltWithin45Count",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.completed-case-matches-evidence",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.csr.offsets.shape",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.csr.offsets.encoding",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.csr.offsets.bytes",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.csr.offsets.sha256",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.csr.sources.shape",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.csr.sources.encoding",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.csr.sources.bytes",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.csr.sources.sha256",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.csr.K.shape",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.csr.K.encoding",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.csr.K.bytes",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.csr.K.sha256",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.csr.positive-finite-K",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.symbols.bytes",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.symbols.sha256",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.symbol-compressed-cap",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.symbols.encoding",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.symbols.shape",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.symbols.rawBytes",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.symbols.no-trailing-raw-bytes",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.symbols.rawSha256",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.all-symbols-exact",
+      "passed": true,
+      "details": {
+        "mismatchCount": 0,
+        "first": []
+      }
+    },
+    {
+      "name": "n5000-t60.all-csr-support-exact",
+      "passed": true,
+      "details": {
+        "mismatchRows": 0,
+        "first": []
+      }
+    },
+    {
+      "name": "n5000-t60.all-K-within-tolerance",
+      "passed": true,
+      "details": {
+        "mismatchRows": 0,
+        "first": [],
+        "maximumAbsoluteError": 1.3322676295501878e-15
+      }
+    },
+    {
+      "name": "n5000-t60.complete-terminal-symbol-census",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.symbolCounts",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.geometryWork.directedCenterTests",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.geometryWork.centerEligiblePairs",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.geometryWork.centerGuardRejectedPairs",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.geometryWork.pairCalls",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.geometryWork.positiveRotorTerms",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.graph.uniqueVehicleEdges",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.graph.incomingDegree",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.graph.maxIncomingDegree",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.graph.heightViolationEdges",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.graph.orderViolationEdges",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.graph.descendingEligible",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.graph.order",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.graph.dependencyDepth",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.graph.maxDependencyDepth",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.admission.admitted",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.admission.reasons",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.admission.unsupportedNearCount",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.admission.invalidTermCount",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.admission.scaledCapMax",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.admission.scaledCapViolationCount",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.ordinaryLmax",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.admitted-topological-solution-present",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.direct.generating.all-y",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.451020819425625e-16
+      }
+    },
+    {
+      "name": "n5000-t60.direct.generating.all-alpha",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.direct.generating.all-x",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 1.887388707544058e-15
+      }
+    },
+    {
+      "name": "n5000-t60.direct.generating.all-T",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 1.879030059799022e-15
+      }
+    },
+    {
+      "name": "n5000-t60.direct.generating.alpha-domain",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.direct.generating.root-domain",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.direct.independent-direct-y",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.451020819425625e-16
+      }
+    },
+    {
+      "name": "n5000-t60.direct.independent-direct-T",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 1.879030059799022e-15
+      }
+    },
+    {
+      "name": "n5000-t60.direct.independent-direct-x",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 1.887388707544058e-15
+      }
+    },
+    {
+      "name": "n5000-t60.direct.work.rootClosures",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.direct.work.bisectionIterations",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.direct.work.positiveTermMultiplications",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.direct.residualMap.all-y",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.3649870440872314e-16
+      }
+    },
+    {
+      "name": "n5000-t60.direct.residualMap.all-alpha",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.direct.residualMap.all-x",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 1.887388707544058e-15
+      }
+    },
+    {
+      "name": "n5000-t60.direct.residualMap.all-T",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 1.879030059799022e-15
+      }
+    },
+    {
+      "name": "n5000-t60.direct.residualMap.alpha-domain",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.direct.residualMap.root-domain",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.direct.residualWork.rootClosures",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.direct.residualWork.bisectionIterations",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.direct.residualWork.positiveTermMultiplications",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.direct.residualLog",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.direct.sourceReceiverMismatch",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.direct.independent-residual-small",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.picard.initial-all-ones",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.picard.returned-last-iterate",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.picard.first-stop-only",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.picard.converged",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.picard.lastChange",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.picard.converged-within-cap",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.picard.cap-if-unconverged",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.picard.update-1",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.6185860157602244e-16
+      }
+    },
+    {
+      "name": "n5000-t60.picard.update-2",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.583585656844646e-16
+      }
+    },
+    {
+      "name": "n5000-t60.picard.update-3",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.3649870440872314e-16
+      }
+    },
+    {
+      "name": "n5000-t60.picard.update-4",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.3649870440872314e-16
+      }
+    },
+    {
+      "name": "n5000-t60.picard.update-5",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.3649870440872314e-16
+      }
+    },
+    {
+      "name": "n5000-t60.picard.update-6",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.3649870440872314e-16
+      }
+    },
+    {
+      "name": "n5000-t60.picard.update-7",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.3649870440872314e-16
+      }
+    },
+    {
+      "name": "n5000-t60.picard.update-8",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.3649870440872314e-16
+      }
+    },
+    {
+      "name": "n5000-t60.picard.update-9",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.3649870440872314e-16
+      }
+    },
+    {
+      "name": "n5000-t60.picard.update-10",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.3649870440872314e-16
+      }
+    },
+    {
+      "name": "n5000-t60.picard.generating.all-y",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.3649870440872314e-16
+      }
+    },
+    {
+      "name": "n5000-t60.picard.generating.all-alpha",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.picard.generating.all-x",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 1.887388707544058e-15
+      }
+    },
+    {
+      "name": "n5000-t60.picard.generating.all-T",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 1.879030059799022e-15
+      }
+    },
+    {
+      "name": "n5000-t60.picard.generating.alpha-domain",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.picard.generating.root-domain",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.picard.independent-direct-y",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 9.200593114282448e-15
+      }
+    },
+    {
+      "name": "n5000-t60.picard.independent-direct-T",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 2.273144455640135e-14
+      }
+    },
+    {
+      "name": "n5000-t60.picard.independent-direct-x",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 2.2607431306699344e-14
+      }
+    },
+    {
+      "name": "n5000-t60.picard.work.rootClosures",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.picard.work.bisectionIterations",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.picard.work.positiveTermMultiplications",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.picard.residualMap.all-y",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.3649870440872314e-16
+      }
+    },
+    {
+      "name": "n5000-t60.picard.residualMap.all-alpha",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.picard.residualMap.all-x",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 1.887388707544058e-15
+      }
+    },
+    {
+      "name": "n5000-t60.picard.residualMap.all-T",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 1.879030059799022e-15
+      }
+    },
+    {
+      "name": "n5000-t60.picard.residualMap.alpha-domain",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.picard.residualMap.root-domain",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.picard.residualWork.rootClosures",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.picard.residualWork.bisectionIterations",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.picard.residualWork.positiveTermMultiplications",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.picard.residualLog",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.picard.sourceReceiverMismatch",
+      "passed": true
+    },
+    {
+      "name": "n5000-t60.picard.independent-residual-small",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.input-artifact.bytes",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.input-artifact.sha256",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.source-provenance-metadata",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.public-source-identity",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.source-pins.source",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.source-pins.sourceBytes",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.source-pins.sourceSha256",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.id",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.n",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.t",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.inputSha256",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.input.finite",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.input.quaternionNormMaxError",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.input.quaternionBadCount",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.input.axisNormMaxError",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.input.axisBadCount",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.input.offsetNormMaxError",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.input.offsetDotMaxAbs",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.input.offsetBadCount",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.input.nominalZeroCount",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.input.nominalNegativeCount",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.input.nominalPositive",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.input.nominalTotalFinite",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.input.geometryValid",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.input.maxTiltDegrees",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.input.tiltWithin45Count",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.completed-case-matches-evidence",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.csr.offsets.shape",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.csr.offsets.encoding",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.csr.offsets.bytes",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.csr.offsets.sha256",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.csr.sources.shape",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.csr.sources.encoding",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.csr.sources.bytes",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.csr.sources.sha256",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.csr.K.shape",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.csr.K.encoding",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.csr.K.bytes",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.csr.K.sha256",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.csr.positive-finite-K",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.symbols.bytes",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.symbols.sha256",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.symbol-compressed-cap",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.symbols.encoding",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.symbols.shape",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.symbols.rawBytes",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.symbols.no-trailing-raw-bytes",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.symbols.rawSha256",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.all-symbols-exact",
+      "passed": true,
+      "details": {
+        "mismatchCount": 0,
+        "first": []
+      }
+    },
+    {
+      "name": "n5000-t180.all-csr-support-exact",
+      "passed": true,
+      "details": {
+        "mismatchRows": 0,
+        "first": []
+      }
+    },
+    {
+      "name": "n5000-t180.all-K-within-tolerance",
+      "passed": true,
+      "details": {
+        "mismatchRows": 0,
+        "first": [],
+        "maximumAbsoluteError": 1.3322676295501878e-15
+      }
+    },
+    {
+      "name": "n5000-t180.complete-terminal-symbol-census",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.symbolCounts",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.geometryWork.directedCenterTests",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.geometryWork.centerEligiblePairs",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.geometryWork.centerGuardRejectedPairs",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.geometryWork.pairCalls",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.geometryWork.positiveRotorTerms",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.graph.uniqueVehicleEdges",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.graph.incomingDegree",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.graph.maxIncomingDegree",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.graph.heightViolationEdges",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.graph.orderViolationEdges",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.graph.descendingEligible",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.graph.order",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.graph.dependencyDepth",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.graph.maxDependencyDepth",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.admission.admitted",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.admission.reasons",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.admission.unsupportedNearCount",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.admission.invalidTermCount",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.admission.scaledCapMax",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.admission.scaledCapViolationCount",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.ordinaryLmax",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.admitted-topological-solution-present",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.direct.generating.all-y",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 2.8427252465072757e-16
+      }
+    },
+    {
+      "name": "n5000-t180.direct.generating.all-alpha",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.direct.generating.all-x",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 1.998418494942494e-15
+      }
+    },
+    {
+      "name": "n5000-t180.direct.generating.all-T",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 1.94892130896508e-15
+      }
+    },
+    {
+      "name": "n5000-t180.direct.generating.alpha-domain",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.direct.generating.root-domain",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.direct.independent-direct-y",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 2.8427252465072757e-16
+      }
+    },
+    {
+      "name": "n5000-t180.direct.independent-direct-T",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 1.94892130896508e-15
+      }
+    },
+    {
+      "name": "n5000-t180.direct.independent-direct-x",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 1.998418494942494e-15
+      }
+    },
+    {
+      "name": "n5000-t180.direct.work.rootClosures",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.direct.work.bisectionIterations",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.direct.work.positiveTermMultiplications",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.direct.residualMap.all-y",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.3354148111797764e-16
+      }
+    },
+    {
+      "name": "n5000-t180.direct.residualMap.all-alpha",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.direct.residualMap.all-x",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 1.998418494942494e-15
+      }
+    },
+    {
+      "name": "n5000-t180.direct.residualMap.all-T",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 1.94892130896508e-15
+      }
+    },
+    {
+      "name": "n5000-t180.direct.residualMap.alpha-domain",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.direct.residualMap.root-domain",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.direct.residualWork.rootClosures",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.direct.residualWork.bisectionIterations",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.direct.residualWork.positiveTermMultiplications",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.direct.residualLog",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.direct.sourceReceiverMismatch",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.direct.independent-residual-small",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.picard.initial-all-ones",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.picard.returned-last-iterate",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.picard.first-stop-only",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.picard.converged",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.picard.lastChange",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.picard.converged-within-cap",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.picard.cap-if-unconverged",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.picard.update-1",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.344188450211108e-16
+      }
+    },
+    {
+      "name": "n5000-t180.picard.update-2",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.3354148111797764e-16
+      }
+    },
+    {
+      "name": "n5000-t180.picard.update-3",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.3354148111797764e-16
+      }
+    },
+    {
+      "name": "n5000-t180.picard.update-4",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.4208924820857127e-16
+      }
+    },
+    {
+      "name": "n5000-t180.picard.update-5",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.3354148111797764e-16
+      }
+    },
+    {
+      "name": "n5000-t180.picard.update-6",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.3354148111797764e-16
+      }
+    },
+    {
+      "name": "n5000-t180.picard.update-7",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.3354148111797764e-16
+      }
+    },
+    {
+      "name": "n5000-t180.picard.update-8",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.3354148111797764e-16
+      }
+    },
+    {
+      "name": "n5000-t180.picard.generating.all-y",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.3354148111797764e-16
+      }
+    },
+    {
+      "name": "n5000-t180.picard.generating.all-alpha",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.picard.generating.all-x",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 1.998418494942494e-15
+      }
+    },
+    {
+      "name": "n5000-t180.picard.generating.all-T",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 1.94892130896508e-15
+      }
+    },
+    {
+      "name": "n5000-t180.picard.generating.alpha-domain",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.picard.generating.root-domain",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.picard.independent-direct-y",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 2.8427252465072757e-16
+      }
+    },
+    {
+      "name": "n5000-t180.picard.independent-direct-T",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 1.94892130896508e-15
+      }
+    },
+    {
+      "name": "n5000-t180.picard.independent-direct-x",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 1.998418494942494e-15
+      }
+    },
+    {
+      "name": "n5000-t180.picard.work.rootClosures",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.picard.work.bisectionIterations",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.picard.work.positiveTermMultiplications",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.picard.residualMap.all-y",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 3.3354148111797764e-16
+      }
+    },
+    {
+      "name": "n5000-t180.picard.residualMap.all-alpha",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.picard.residualMap.all-x",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 1.998418494942494e-15
+      }
+    },
+    {
+      "name": "n5000-t180.picard.residualMap.all-T",
+      "passed": true,
+      "details": {
+        "maximumRelativeError": 1.94892130896508e-15
+      }
+    },
+    {
+      "name": "n5000-t180.picard.residualMap.alpha-domain",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.picard.residualMap.root-domain",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.picard.residualWork.rootClosures",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.picard.residualWork.bisectionIterations",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.picard.residualWork.positiveTermMultiplications",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.picard.residualLog",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.picard.sourceReceiverMismatch",
+      "passed": true
+    },
+    {
+      "name": "n5000-t180.picard.independent-residual-small",
+      "passed": true
+    }
+  ],
+  "elapsedSeconds": 8.211452374234796,
+  "reviewMethod": {
+    "geometry": "independent NumPy receiver-row vector arithmetic",
+    "roots": "positive hyperbolic closed form, no bisection or Newton",
+    "picard": "every saved update and final generating/residual map",
+    "candidateCodeImported": false,
+    "symbolTolerance": 0,
+    "coefficientAbsoluteTolerance": 2e-12,
+    "coefficientRelativeTolerance": 2e-12,
+    "solutionRelativeTolerance": 1e-09
+  }
+}

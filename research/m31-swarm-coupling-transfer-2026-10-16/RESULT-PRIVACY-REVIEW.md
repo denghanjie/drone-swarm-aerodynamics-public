@@ -1,0 +1,7 @@
+# Result publication privacy review
+
+Scientific output comprises synthetic historical numeric states and derived geometry, coefficients, graph counters, four-rotor loads, iterations and comparisons. Original input hashes match already-public source pins. Candidate/review stderr are empty. Runtime versions, relative commands, scientific timestamps and public source commit/hash are retained. No machine serial, username, workstation path, credential, private conversation or downloaded full paper is included.
+
+Viewer QA attempt1 failed before browser navigation. Its raw Chrome launch log contains host-temporary/profile paths and process IDs; the original remains private. The public attempt-1/report-sanitized.json preserves the failure stage, SIGABRT/EPERM facts, redaction description and SHA-256 of the original. Attempt2's report/screenshots contain only the local research page, generic browser version and explicit checks. Scientific values/results were not sanitized, repaired or rerun. The final privacy scan covers all textual package files, and screenshots were visually reviewed.
+
+Final manifest pins the actual public bytes, including sanitized failure evidence, both execution records, input lineage, independent reviews, all raw scientific arrays and the visible milestone. Large individual files remain below the repository host's single-file limit; complete compressed symbol tensors are retained. Source-manifest pins are unchanged from the preregistered source commit.

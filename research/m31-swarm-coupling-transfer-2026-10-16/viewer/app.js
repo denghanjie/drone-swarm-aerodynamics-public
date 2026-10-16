@@ -1,0 +1,23 @@
+const $=id=>document.getElementById(id),fmt=n=>n.toLocaleString('en-US');
+async function bound(pin,json=false){const r=await fetch('../'+pin.path,{cache:'no-store'});if(!r.ok)throw Error('Missing '+pin.path);const b=await r.arrayBuffer(),h=[...new Uint8Array(await crypto.subtle.digest('SHA-256',b))].map(x=>x.toString(16).padStart(2,'0')).join('');if(h!==pin.sha256||b.byteLength!==pin.bytes)throw Error('Evidence pin mismatch: '+pin.path);return json?JSON.parse(new TextDecoder().decode(b)):b;}
+async function main(){
+ const binding=await(await fetch('./binding.json',{cache:'no-store'})).json(),[data,review,display]=await Promise.all(binding.files.map(p=>bound(p,true)));if(!data.complete||data.cases.length!==4)throw Error('Incomplete candidate evidence');
+ $('content').hidden=false;
+ const {createScene}=await import('./scene.js'),scene=createScene($('scene')),cache=new Map();let request=0;
+ for(const c of data.cases){const o=document.createElement('option');o.value=c.id;o.textContent=`${fmt(c.n)} drones · ${c.t} seconds`;$('case').append(o);}
+ $('review').textContent=review.pass?'Passed':'Failures saved';$('review-detail').textContent=`${fmt(review.checkCount)} checks; ${review.errors.length} failed checks. All pair classifications and sparse coefficients were independently reviewed.`;
+ $('outcome').textContent=`${data.cases.filter(c=>c.admission.admitted).length} of ${data.cases.length} fixed snapshots admitted. ${data.cases.filter(c=>c.solutions).length} received both load solutions. See the saved review before accepting any numerical comparison.`;
+ $('pins').textContent=binding.files.map(p=>`${p.path}: ${p.sha256}`).join(' · ');
+ async function select(){const token=++request,c=data.cases.find(x=>x.id===$('case').value),d=display.cases.find(x=>x.id===c.id);$('status').textContent='Loading the selected saved snapshot…';if(!cache.has(c.id)){const p=binding.inputs.find(x=>x.id===c.id);cache.set(c.id,new Float64Array(await bound(p)));}if(token!==request)return;
+  scene.load({...c,...d},cache.get(c.id));$('scene').dataset.case=c.id;$('case-title').textContent=`${fmt(c.n)} drones at ${c.t} seconds`;
+  $('case-detail').textContent=`${fmt(c.geometryWork.directedCenterTests)} directed center checks; ${fmt(c.geometryWork.pairCalls)} rotor-pair evaluations. Maximum recorded tilt ${c.input.maxTiltDegrees.toFixed(2)}°. All ${fmt(c.n)} original vehicles retained.`;
+  $('admission').textContent=c.admission.admitted?'Admitted':'Rejected';$('admission-detail').textContent=c.admission.admitted?'Every input and pair passed this model’s declared domain checks.':`${fmt(c.admission.unsupportedNearCount)} unsupported near-field rotor terms; ${fmt(c.admission.invalidTermCount)} invalid terms. Reasons: ${c.admission.reasons.join(', ')}.`;
+  $('terms').textContent=fmt(c.geometryWork.positiveRotorTerms);$('graph-detail').textContent=`${fmt(c.graph.uniqueVehicleEdges)} vehicle dependencies. Saved order ${c.graph.descendingEligible?'eligible':'ineligible'}; dependency depth ${c.graph.maxDependencyDepth??'unavailable'}.`;
+  const s=c.solutions;$('load-detail').textContent=s?`Ordered solve: ${fmt(s.direct.work.rootClosures)} root closures. Simultaneous solve: ${s.picard.iterations} updates and ${fmt(s.picard.work.rootClosures)} closures. Each also performs ${fmt(s.direct.residualWork.rootClosures)} residual-check closures. These are work counts, not measured speedups.`:'No coupled load solution was computed for this snapshot. Positive coefficients remain diagnostic evidence; rejected interactions were not treated as valid zero wakes.';
+  $('legend').textContent=s?'Blue → amber: saved effective source load moves from nominal toward reduced thrust. Four rotor positions and attitudes come from the original records.':'Blue: historical drone pose. Red: vehicle involved in a rejected pair. Red lines show up to the first 200 unique rejected pairs in fixed receiver/source order; every rejection remains in the full evidence.';
+  $('scene-state').textContent=`${fmt(c.n)} saved poses · ${s?'Final coupled-load coloring':'No admitted load solve'}`;
+  $('content').hidden=false;document.body.dataset.binding='verified';$('status').textContent='Saved evidence and input bytes verified by SHA-256. No scientific solver runs in this viewer.';
+ }
+ $('case').addEventListener('change',()=>select().catch(fail));$('size').addEventListener('change',()=>scene.size(Number($('size').value)));$('reset').addEventListener('click',scene.reset);await select();
+}
+function fail(e){document.body.dataset.binding='failed';$('status').className='error';$('status').textContent='Display stopped: '+e.message;}main().catch(fail);
