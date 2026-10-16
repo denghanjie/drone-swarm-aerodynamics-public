@@ -1,0 +1,7 @@
+# Final source reconciliation before target execution
+
+The candidate static review's rotation addendum covers SHA256 ba7ae6e9dad0b348243719813cc2ecc47f9d904f571a036ed752389eab3140b5. It preserves historical x+(w*t+cross) grouping. The second reader reviewed independent-check.py650f770cb3493a42c4f6291e5bbb053075688cf78623bf7af3cfc0f850a8e6e1; the author then made a narrow, prospectively agreed diagnostic-serialization change.
+
+Root read the final checker4b21e84674d0007e23641622aec52724bced4791fcca3c1b97d48189c21f6aeb: `diagnostic_scalar` converts nonfinite scalar input maxima, tilt maximum, scaled-cap maximum and ordinaryLmax to null. Finite/nonnegative a is required at load-solve entry. Sparse K, all root/source/load arrays and residual solution comparisons retain strict finite checks. This matches the appended SCHEMA convention without admitting a rejected state or creating a zero substitute. The second-reader review is attributed to its actual earlier hash; root's narrow final review is distinct.
+
+AST parsing of Python source and Node syntax checking passed. Neither checker nor candidate was imported/launched on the selected states before source freeze. Input extraction verified original public byte/hash pins, finite17-field structure and lossless binary roundtrip only. Viewer source is outside the numerical source allocation and will be bound to actual saved results after execution. No later change to frozen numerical files is permitted in this campaign.

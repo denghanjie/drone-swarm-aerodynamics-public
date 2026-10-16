@@ -1,0 +1,95 @@
+{
+  "kind": "historical-airflow-off-complete-state-copy",
+  "originalPublicBase": "c591ce2b195fa01b895d4ba881a44a4b92fdd703",
+  "sourceRelease": "v0.1.0-public",
+  "shape": "[vehicle,17]",
+  "encoding": "float64le",
+  "columns": [
+    "position_x_m",
+    "position_y_m",
+    "position_z_m",
+    "velocity_x_m_s",
+    "velocity_y_m_s",
+    "velocity_z_m_s",
+    "quaternion_x",
+    "quaternion_y",
+    "quaternion_z",
+    "quaternion_w",
+    "body_omega_x_rad_s",
+    "body_omega_y_rad_s",
+    "body_omega_z_rad_s",
+    "motor_lag_thrust_0_N",
+    "motor_lag_thrust_1_N",
+    "motor_lag_thrust_2_N",
+    "motor_lag_thrust_3_N"
+  ],
+  "rotorBodyOffsets_m": [
+    [
+      0.028,
+      0.028,
+      0
+    ],
+    [
+      -0.028,
+      0.028,
+      0
+    ],
+    [
+      -0.028,
+      -0.028,
+      0
+    ],
+    [
+      0.028,
+      -0.028,
+      0
+    ]
+  ],
+  "transform": "JSON numeric decoding to binary64 without filtering, rescaling, normalization or reordering; decoded binary equality checked",
+  "cases": [
+    {
+      "id": "n1000-t20",
+      "n": 1000,
+      "t": 20,
+      "source": "outputs/milestone-31-source/checkpoint-heldout-2001-1000-wide-wall-priority-0.0025-20.json",
+      "sourceBytes": 470998,
+      "sourceSha256": "8adc8213f6b036f498639bf070af53d3777fe1771c34f41bb54498e48be0f304",
+      "path": "inputs/n1000-t20.f64",
+      "bytes": 136000,
+      "sha256": "710b9d5c9dc8bf90862a6274b1ecb6aca3b0a40a8cc73ef8e150e0ec6d15fa7d"
+    },
+    {
+      "id": "n5000-t20",
+      "n": 5000,
+      "t": 20,
+      "source": "outputs/milestone-31-source/checkpoint-heldout-2001-5000-wide-wall-priority-0.0025-20.json",
+      "sourceBytes": 2357471,
+      "sourceSha256": "64696f6aca0d74a00f8540f53abcb46b4bd8dd6ed387f5192506c84967ab267e",
+      "path": "inputs/n5000-t20.f64",
+      "bytes": 680000,
+      "sha256": "b2c0151488eced05804aabe163ca9bf34e927ce035b240a0e6af527e2dcd7b3d"
+    },
+    {
+      "id": "n5000-t60",
+      "n": 5000,
+      "t": 60,
+      "source": "outputs/milestone-31-source/checkpoint-heldout-2001-5000-wide-wall-priority-0.0025-60.json",
+      "sourceBytes": 2351516,
+      "sourceSha256": "9538f037be4a62abb9a550c7ac2a7aa182556c448136c86d66d1e09492fd050b",
+      "path": "inputs/n5000-t60.f64",
+      "bytes": 680000,
+      "sha256": "341f1986fbe12f7d7dd2eddc0cf3109fb3205b79d05f74feeba58b76ac8b65a4"
+    },
+    {
+      "id": "n5000-t180",
+      "n": 5000,
+      "t": 180,
+      "source": "outputs/milestone-31-source/checkpoint-heldout-2001-5000-wide-wall-priority-0.0025-180.json",
+      "sourceBytes": 2349503,
+      "sourceSha256": "1a4ba3d4cf3ffee87f783a2ba7e40865a438b342ff71e3ace16e5341ef208af4",
+      "path": "inputs/n5000-t180.f64",
+      "bytes": 680000,
+      "sha256": "73887b5dd93997792863de28eb001948028bb639678c1892f7662e164cc119bf"
+    }
+  ]
+}
