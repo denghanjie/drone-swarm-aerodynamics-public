@@ -1,3 +1,15 @@
+# Latest completed checkpoint: finite screen improves both primary cases
+
+The current-position screen at `m31-center-screen-2026-10-16/` passed the frozen practical rule on both new 5,000-drone states: median paired F/L ratios 0.7193 and 0.6608, wins 5/6 and 6/6. The 1,000-drone case did not benefit. All 48 controls and 42 calls are preserved; independent audit passed 18,458 named check groups. Candidate/review supervisors and metadata seal are successfully closed. Do not rerun any allocation or edit frozen scientific records.
+
+Source commit `9404ce3d578636ea0ee69b54626b1b8e7c1a7057`, source-manifest SHA256 `b6758206e9efecad05890be7130b202339d58cd2e127b521b1ccf058579c3a78`; independently verified before execution. Read MILESTONE-SUMMARY, RESULT-CLAIM-LEDGER, independent interpretation and POSTRUN-RESTART. Consult `publication-receipts/m31-center-screen-result-2026-10-16.json` for the result publication commit once verification is complete.
+
+Three.js: http://127.0.0.1:8876/research/m31-center-screen-2026-10-16/viewer/ . UI QA passed 50 groups, including all rendered translations for all 63 case/frame combinations and altered-evidence rejection; desktop/mobile screenshots inspected. Recorded two-second airflow-off local Boids inputs; final-pose load query only. No live coupled-flight, physical-validity, portable-equivalence or novelty claim. Keep server 8876 running. Scientific/reviewer/QA processes are closed.
+
+The broader goal remains active/incomplete. NEXT-QUESTION is planning only, with no additional execution allocation. Retain earlier failed experiments and closed source-access limits. This mutable discovery index is outside experiment pins.
+
+---
+
 # Source freeze ready: current-position screen
 
 m31-center-screen-2026-10-16 now has the fixed 48 controls, six ownership builds, full candidate/independent checker/supervisor/metadata seal, independent static clearance and source-manifest.json. No scientific invocation has run. Publish this exact source and independently verify remote manifest/local and committed pins before executing. Keep HEAD at the published source commit for both launches; save the verification receipt without committing it first. One candidate900s, one review180s, then one metadata-only seal20s. Read PROTOCOL and SOURCE-RESTART in full; no retries or edits after exposure.
