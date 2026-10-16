@@ -1,0 +1,146 @@
+{
+  "records": {
+    "analysis": {
+      "path": "results/analysis.json",
+      "bytes": 14144,
+      "sha256": "b81e82b7b3fa307f07da56630788169b00564f46cad0b1b568907f0210437dd5"
+    },
+    "review": {
+      "path": "results/independent-review.json",
+      "bytes": 23942,
+      "sha256": "7fdf1bb6e9c294d94bb45178867027ad3e74a1cf1a9d769197994bfc9d77fa4b"
+    },
+    "run": {
+      "path": "results/candidate-run.json",
+      "bytes": 5844,
+      "sha256": "f7a1e112031e1cea4126d49dd7fb0f01099f66ceb66f66bddc92e91a9fb01fca"
+    },
+    "reviewRun": {
+      "path": "results/review-run.json",
+      "bytes": 6677,
+      "sha256": "6bdedcde7c06c45eb8b057ea70213aca8d511f55854a1ab3a8dba0b9b1e3b7ce"
+    },
+    "config": {
+      "path": "config.json",
+      "bytes": 1011,
+      "sha256": "3554517f6f0c90e832395ec6ac275077cc0034c033103f3a3d24db9513e9b3fc"
+    },
+    "stats": {
+      "path": "DESCRIPTIVE-STATS.json",
+      "bytes": 4549,
+      "sha256": "59263523e8d03d6c8879b7d2efcc969a3949480ad0f292741d777f9418618331"
+    }
+  },
+  "cases": [
+    {
+      "id": "zero-influence",
+      "n": 2,
+      "duration": 0.5,
+      "positions": [
+        [
+          -6,
+          -2,
+          4.5
+        ],
+        [
+          -6,
+          2,
+          4.5
+        ]
+      ],
+      "command": "fixed-nominal",
+      "pins": {
+        "off": {
+          "path": "results/zero-influence-off-0.00125.json",
+          "bytes": 401462,
+          "sha256": "0c2ff8cac4267e4d797787db30377aad55db0566aab9614255b2d6f4a0dfa356"
+        },
+        "coupled": {
+          "path": "results/zero-influence-coupled-0.00125.json",
+          "bytes": 439078,
+          "sha256": "aaea07274848f8e2ac6fdb05aa4ecb54ab6dc246dfebe5bfee827a04fe7dd143"
+        }
+      }
+    },
+    {
+      "id": "centered-pair",
+      "n": 2,
+      "duration": 0.5,
+      "positions": [
+        [
+          -6,
+          0,
+          4.5
+        ],
+        [
+          -6,
+          0,
+          5.1
+        ]
+      ],
+      "command": "fixed-nominal",
+      "pins": {
+        "off": {
+          "path": "results/centered-pair-off-0.00125.json",
+          "bytes": 401457,
+          "sha256": "f32ffddd43aece9c73c08d5b8b3ff24d14c28db1bf9540680214cc1ca6700d58"
+        },
+        "coupled": {
+          "path": "results/centered-pair-coupled-0.00125.json",
+          "bytes": 486442,
+          "sha256": "8db008b3b0947d3ef50a11f64a81c2fd3f5815d4774e795d54d6ad6336b34715"
+        }
+      }
+    },
+    {
+      "id": "offset-pair",
+      "n": 2,
+      "duration": 0.5,
+      "positions": [
+        [
+          -6,
+          0,
+          4.5
+        ],
+        [
+          -5.96,
+          0,
+          5.1
+        ]
+      ],
+      "command": "fixed-nominal",
+      "pins": {
+        "off": {
+          "path": "results/offset-pair-off-0.00125.json",
+          "bytes": 401511,
+          "sha256": "07bc8a53e83832af00fc10978ed1932ea468a423b6722fd81ab9eae8b0176d5d"
+        },
+        "coupled": {
+          "path": "results/offset-pair-coupled-0.00125.json",
+          "bytes": 539140,
+          "sha256": "fb03ed45ac0c8dcae298e838784f2564f3cb93802f818cab97a7fc4c91a662d6"
+        }
+      }
+    },
+    {
+      "id": "boids16",
+      "n": 16,
+      "seed": 260201,
+      "duration": 2,
+      "command": "local-boids",
+      "conditionalOnPrimaryPass": true,
+      "pins": {
+        "off": {
+          "path": "results/boids16-off-0.00125.json",
+          "bytes": 3224270,
+          "sha256": "03dc1f5a4b7074564ce4f820c31feb409a7e7eb49ede250e4bd539c8046e2ff0"
+        },
+        "coupled": {
+          "path": "results/boids16-coupled-0.00125.json",
+          "bytes": 3887942,
+          "sha256": "37fc64506929f0e5280bf4d3dc7b905532344583850cc1b95383bbf96652ce3f"
+        }
+      }
+    }
+  ]
+}

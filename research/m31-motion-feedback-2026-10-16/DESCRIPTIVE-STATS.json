@@ -1,0 +1,147 @@
+{
+  "kind": "saved-fine-record-descriptive-reduction",
+  "noNewModelEvaluations": true,
+  "scope": "stage diagnostics and final sampled group; orientation difference includes yaw and is distinct from tilt",
+  "cases": [
+    {
+      "case": "zero-influence",
+      "mode": "off",
+      "maxRecordedStageTiltDegrees": 0,
+      "minimumRecordedStageRotorRatio": 1,
+      "counts": {
+        "integrationStageAttempts": 1600,
+        "endpointAttempts": 6,
+        "coupledQueryAttempts": 0,
+        "saturatedControllerUpdates": 0
+      },
+      "minimumSweptSeparationCandidateReported": 4,
+      "finalGroup": null
+    },
+    {
+      "case": "zero-influence",
+      "mode": "coupled",
+      "maxRecordedStageTiltDegrees": 0,
+      "minimumRecordedStageRotorRatio": 1,
+      "counts": {
+        "integrationStageAttempts": 1600,
+        "endpointAttempts": 6,
+        "coupledQueryAttempts": 1606,
+        "saturatedControllerUpdates": 0
+      },
+      "minimumSweptSeparationCandidateReported": 4,
+      "finalGroup": null
+    },
+    {
+      "case": "centered-pair",
+      "mode": "off",
+      "maxRecordedStageTiltDegrees": 0,
+      "minimumRecordedStageRotorRatio": 1,
+      "counts": {
+        "integrationStageAttempts": 1600,
+        "endpointAttempts": 6,
+        "coupledQueryAttempts": 0,
+        "saturatedControllerUpdates": 0
+      },
+      "minimumSweptSeparationCandidateReported": 0.5999999999999996,
+      "finalGroup": null
+    },
+    {
+      "case": "centered-pair",
+      "mode": "coupled",
+      "maxRecordedStageTiltDegrees": 0,
+      "minimumRecordedStageRotorRatio": 0.7949734574924787,
+      "counts": {
+        "integrationStageAttempts": 1600,
+        "endpointAttempts": 6,
+        "coupledQueryAttempts": 1606,
+        "saturatedControllerUpdates": 0
+      },
+      "minimumSweptSeparationCandidateReported": 0.5999999999999996,
+      "finalGroup": null
+    },
+    {
+      "case": "offset-pair",
+      "mode": "off",
+      "maxRecordedStageTiltDegrees": 0,
+      "minimumRecordedStageRotorRatio": 1,
+      "counts": {
+        "integrationStageAttempts": 1600,
+        "endpointAttempts": 6,
+        "coupledQueryAttempts": 0,
+        "saturatedControllerUpdates": 0
+      },
+      "minimumSweptSeparationCandidateReported": 0.601331855134916,
+      "finalGroup": null
+    },
+    {
+      "case": "offset-pair",
+      "mode": "coupled",
+      "maxRecordedStageTiltDegrees": 92.97276755703408,
+      "minimumRecordedStageRotorRatio": 0.7798191581484057,
+      "counts": {
+        "integrationStageAttempts": 1600,
+        "endpointAttempts": 6,
+        "coupledQueryAttempts": 1606,
+        "saturatedControllerUpdates": 0
+      },
+      "minimumSweptSeparationCandidateReported": 0.601331855134916,
+      "finalGroup": null
+    },
+    {
+      "case": "boids16",
+      "mode": "off",
+      "maxRecordedStageTiltDegrees": 8.853803732139589,
+      "minimumRecordedStageRotorRatio": 1,
+      "counts": {
+        "integrationStageAttempts": 6400,
+        "endpointAttempts": 21,
+        "coupledQueryAttempts": 0,
+        "saturatedControllerUpdates": 0
+      },
+      "minimumSweptSeparationCandidateReported": 0.6133905856496042,
+      "finalGroup": {
+        "center": [
+          -5.911293745192547,
+          -0.7845415389434438,
+          4.283475406023788
+        ],
+        "order": 0.9929564979920417,
+        "largestFraction": 1,
+        "components": 1,
+        "heightSpan": 1.4228823919738716,
+        "rmsRadius": 0.8751067205081129,
+        "minimumSeparationCappedAtRadius": 0.6686518712406129,
+        "minimumObstacleClearance": 3.4970073979206253,
+        "meanNeighborCount": 13.875
+      }
+    },
+    {
+      "case": "boids16",
+      "mode": "coupled",
+      "maxRecordedStageTiltDegrees": 19.555806443232534,
+      "minimumRecordedStageRotorRatio": 0.6458148169923406,
+      "counts": {
+        "integrationStageAttempts": 6400,
+        "endpointAttempts": 21,
+        "coupledQueryAttempts": 6421,
+        "saturatedControllerUpdates": 0
+      },
+      "minimumSweptSeparationCandidateReported": 0.5714541003781142,
+      "finalGroup": {
+        "center": [
+          -6.119114340998772,
+          -0.7567807083756847,
+          3.6553639837593215
+        ],
+        "order": 0.9419753598224796,
+        "largestFraction": 1,
+        "components": 1,
+        "heightSpan": 2.1367448838521876,
+        "rmsRadius": 1.0235383670843479,
+        "minimumSeparationCappedAtRadius": 0.5861054678872003,
+        "minimumObstacleClearance": 2.494149391783299,
+        "meanNeighborCount": 11.5
+      }
+    }
+  ]
+}

@@ -1,0 +1,951 @@
+{
+  "kind": "independent-saved-motion-feedback-review",
+  "complete": true,
+  "method": "independent endpoint geometry/analytic roots/wrench/full derivative; no trajectory integration",
+  "limits": [
+    "First/last saved stage derivatives and RK4 assembly are checked; other stages have diagnostics only and are not reintegrated.",
+    "Boids commands/initialization and collision detector are candidate-source provenance, not independently rerun.",
+    "Sampled timestep comparisons do not bound between-sample error or physical error.",
+    "Nominal yaw torque and motor command dynamics are retained; physical validity is unresolved."
+  ],
+  "primaryPass": true,
+  "exploratoryExecuted": true,
+  "allConvergencePass": true,
+  "convergence": [
+    {
+      "case": "zero-influence",
+      "mode": "off",
+      "pass": true,
+      "coarseMedium": {
+        "position": 0.0,
+        "velocity": 0.0,
+        "attitude": 0.0,
+        "rotor": 0.0
+      },
+      "mediumFine": {
+        "position": 0.0,
+        "velocity": 0.0,
+        "attitude": 0.0,
+        "rotor": 0.0
+      },
+      "gates": {
+        "position": {
+          "coarseMedium": 0.0,
+          "mediumFine": 0.0,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        },
+        "velocity": {
+          "coarseMedium": 0.0,
+          "mediumFine": 0.0,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        },
+        "attitude": {
+          "coarseMedium": 0.0,
+          "mediumFine": 0.0,
+          "tolerance": 0.0017453292519943296,
+          "bothTiny": true,
+          "pass": true
+        },
+        "rotor": {
+          "coarseMedium": 0.0,
+          "mediumFine": 0.0,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        }
+      }
+    },
+    {
+      "case": "zero-influence",
+      "mode": "coupled",
+      "pass": true,
+      "coarseMedium": {
+        "position": 0.0,
+        "velocity": 0.0,
+        "attitude": 0.0,
+        "rotor": 0.0
+      },
+      "mediumFine": {
+        "position": 0.0,
+        "velocity": 0.0,
+        "attitude": 0.0,
+        "rotor": 0.0
+      },
+      "gates": {
+        "position": {
+          "coarseMedium": 0.0,
+          "mediumFine": 0.0,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        },
+        "velocity": {
+          "coarseMedium": 0.0,
+          "mediumFine": 0.0,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        },
+        "attitude": {
+          "coarseMedium": 0.0,
+          "mediumFine": 0.0,
+          "tolerance": 0.0017453292519943296,
+          "bothTiny": true,
+          "pass": true
+        },
+        "rotor": {
+          "coarseMedium": 0.0,
+          "mediumFine": 0.0,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        }
+      }
+    },
+    {
+      "case": "centered-pair",
+      "mode": "off",
+      "pass": true,
+      "coarseMedium": {
+        "position": 0.0,
+        "velocity": 0.0,
+        "attitude": 0.0,
+        "rotor": 0.0
+      },
+      "mediumFine": {
+        "position": 0.0,
+        "velocity": 0.0,
+        "attitude": 0.0,
+        "rotor": 0.0
+      },
+      "gates": {
+        "position": {
+          "coarseMedium": 0.0,
+          "mediumFine": 0.0,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        },
+        "velocity": {
+          "coarseMedium": 0.0,
+          "mediumFine": 0.0,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        },
+        "attitude": {
+          "coarseMedium": 0.0,
+          "mediumFine": 0.0,
+          "tolerance": 0.0017453292519943296,
+          "bothTiny": true,
+          "pass": true
+        },
+        "rotor": {
+          "coarseMedium": 0.0,
+          "mediumFine": 0.0,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        }
+      }
+    },
+    {
+      "case": "centered-pair",
+      "mode": "coupled",
+      "pass": true,
+      "coarseMedium": {
+        "position": 2.660094367001875e-12,
+        "velocity": 1.2185807918285718e-12,
+        "attitude": 0.0,
+        "rotor": 2.6668909254266465e-13
+      },
+      "mediumFine": {
+        "position": 1.5276668818842154e-13,
+        "velocity": 7.87148124459236e-14,
+        "attitude": 0.0,
+        "rotor": 1.529925638948096e-14
+      },
+      "gates": {
+        "position": {
+          "coarseMedium": 2.660094367001875e-12,
+          "mediumFine": 1.5276668818842154e-13,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        },
+        "velocity": {
+          "coarseMedium": 1.2185807918285718e-12,
+          "mediumFine": 7.87148124459236e-14,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        },
+        "attitude": {
+          "coarseMedium": 0.0,
+          "mediumFine": 0.0,
+          "tolerance": 0.0017453292519943296,
+          "bothTiny": true,
+          "pass": true
+        },
+        "rotor": {
+          "coarseMedium": 2.6668909254266465e-13,
+          "mediumFine": 1.529925638948096e-14,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        }
+      }
+    },
+    {
+      "case": "offset-pair",
+      "mode": "off",
+      "pass": true,
+      "coarseMedium": {
+        "position": 0.0,
+        "velocity": 0.0,
+        "attitude": 0.0,
+        "rotor": 0.0
+      },
+      "mediumFine": {
+        "position": 0.0,
+        "velocity": 0.0,
+        "attitude": 0.0,
+        "rotor": 0.0
+      },
+      "gates": {
+        "position": {
+          "coarseMedium": 0.0,
+          "mediumFine": 0.0,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        },
+        "velocity": {
+          "coarseMedium": 0.0,
+          "mediumFine": 0.0,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        },
+        "attitude": {
+          "coarseMedium": 0.0,
+          "mediumFine": 0.0,
+          "tolerance": 0.0017453292519943296,
+          "bothTiny": true,
+          "pass": true
+        },
+        "rotor": {
+          "coarseMedium": 0.0,
+          "mediumFine": 0.0,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        }
+      }
+    },
+    {
+      "case": "offset-pair",
+      "mode": "coupled",
+      "pass": true,
+      "coarseMedium": {
+        "position": 8.94447774964721e-09,
+        "velocity": 3.393332743119771e-08,
+        "attitude": 1.790679027550942e-08,
+        "rotor": 3.1011673389336944e-09
+      },
+      "mediumFine": {
+        "position": 7.76803535587898e-10,
+        "velocity": 1.812142274118576e-08,
+        "attitude": 5.38644468142043e-09,
+        "rotor": 1.948123477094645e-10
+      },
+      "gates": {
+        "position": {
+          "coarseMedium": 8.94447774964721e-09,
+          "mediumFine": 7.76803535587898e-10,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        },
+        "velocity": {
+          "coarseMedium": 3.393332743119771e-08,
+          "mediumFine": 1.812142274118576e-08,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        },
+        "attitude": {
+          "coarseMedium": 1.790679027550942e-08,
+          "mediumFine": 5.38644468142043e-09,
+          "tolerance": 0.0017453292519943296,
+          "bothTiny": true,
+          "pass": true
+        },
+        "rotor": {
+          "coarseMedium": 3.1011673389336944e-09,
+          "mediumFine": 1.948123477094645e-10,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        }
+      }
+    },
+    {
+      "case": "boids16",
+      "mode": "off",
+      "pass": true,
+      "coarseMedium": {
+        "position": 3.356640699232704e-08,
+        "velocity": 6.887412795060695e-08,
+        "attitude": 1.945848776404293e-07,
+        "rotor": 5.008675100457845e-07
+      },
+      "mediumFine": {
+        "position": 2.0022773240330534e-09,
+        "velocity": 4.0998091270177676e-09,
+        "attitude": 1.1551495619151087e-08,
+        "rotor": 2.9662157524838454e-08
+      },
+      "gates": {
+        "position": {
+          "coarseMedium": 3.356640699232704e-08,
+          "mediumFine": 2.0022773240330534e-09,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        },
+        "velocity": {
+          "coarseMedium": 6.887412795060695e-08,
+          "mediumFine": 4.0998091270177676e-09,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        },
+        "attitude": {
+          "coarseMedium": 1.945848776404293e-07,
+          "mediumFine": 1.1551495619151087e-08,
+          "tolerance": 0.0017453292519943296,
+          "bothTiny": true,
+          "pass": true
+        },
+        "rotor": {
+          "coarseMedium": 5.008675100457845e-07,
+          "mediumFine": 2.9662157524838454e-08,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        }
+      }
+    },
+    {
+      "case": "boids16",
+      "mode": "coupled",
+      "pass": true,
+      "coarseMedium": {
+        "position": 3.2652685575202245e-07,
+        "velocity": 1.248542769859481e-06,
+        "attitude": 2.0128315511267333e-06,
+        "rotor": 9.533042592991991e-07
+      },
+      "mediumFine": {
+        "position": 5.353805181811646e-08,
+        "velocity": 2.1411907658663509e-07,
+        "attitude": 1.433414308051835e-07,
+        "rotor": 1.1362859502438268e-07
+      },
+      "gates": {
+        "position": {
+          "coarseMedium": 3.2652685575202245e-07,
+          "mediumFine": 5.353805181811646e-08,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        },
+        "velocity": {
+          "coarseMedium": 1.248542769859481e-06,
+          "mediumFine": 2.1411907658663509e-07,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        },
+        "attitude": {
+          "coarseMedium": 2.0128315511267333e-06,
+          "mediumFine": 1.433414308051835e-07,
+          "tolerance": 0.0017453292519943296,
+          "bothTiny": true,
+          "pass": true
+        },
+        "rotor": {
+          "coarseMedium": 9.533042592991991e-07,
+          "mediumFine": 1.1362859502438268e-07,
+          "tolerance": 0.001,
+          "bothTiny": true,
+          "pass": true
+        }
+      }
+    }
+  ],
+  "controls": {
+    "zeroEffect": [
+      {
+        "dt": 0.005,
+        "error": {
+          "position": 0.0,
+          "velocity": 0.0,
+          "attitude": 0.0,
+          "rotor": 0.0
+        },
+        "pass": true
+      },
+      {
+        "dt": 0.0025,
+        "error": {
+          "position": 0.0,
+          "velocity": 0.0,
+          "attitude": 0.0,
+          "rotor": 0.0
+        },
+        "pass": true
+      },
+      {
+        "dt": 0.00125,
+        "error": {
+          "position": 0.0,
+          "velocity": 0.0,
+          "attitude": 0.0,
+          "rotor": 0.0
+        },
+        "pass": true
+      }
+    ],
+    "centerSymmetry": [
+      {
+        "dt": 0.005,
+        "max": 0.0,
+        "pass": true
+      },
+      {
+        "dt": 0.0025,
+        "max": 0.0,
+        "pass": true
+      },
+      {
+        "dt": 0.00125,
+        "max": 0.0,
+        "pass": true
+      }
+    ],
+    "zeroStateAndLoads": [
+      {
+        "dt": 0.005,
+        "stateError": 0.0,
+        "canonical": true,
+        "pass": true
+      },
+      {
+        "dt": 0.0025,
+        "stateError": 0.0,
+        "canonical": true,
+        "pass": true
+      },
+      {
+        "dt": 0.00125,
+        "stateError": 0.0,
+        "canonical": true,
+        "pass": true
+      }
+    ],
+    "initialWrench": [
+      {
+        "case": "centered-pair",
+        "lower": {
+          "delta": [
+            -0.013576345078491793,
+            -0.013576345078491793,
+            -0.013576345078491793,
+            -0.013576345078491793
+          ],
+          "force": [
+            0,
+            0,
+            -0.05430538031396717
+          ],
+          "torque": [
+            0,
+            0,
+            0
+          ]
+        },
+        "upper": {
+          "delta": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "force": [
+            0,
+            0,
+            0
+          ],
+          "torque": [
+            0,
+            0,
+            0
+          ]
+        },
+        "forces": [
+          0.052641154921508206,
+          0.052641154921508206,
+          0.052641154921508206,
+          0.052641154921508206
+        ],
+        "pass": true
+      },
+      {
+        "case": "offset-pair",
+        "lower": {
+          "delta": [
+            -0.014579824895307944,
+            -0.009228770517907159,
+            -0.009228770517907159,
+            -0.014579824895307944
+          ],
+          "force": [
+            0,
+            0,
+            -0.047617190826430206
+          ],
+          "torque": [
+            0,
+            0.000299659045134444,
+            0
+          ]
+        },
+        "upper": {
+          "delta": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "force": [
+            0,
+            0,
+            0
+          ],
+          "torque": [
+            0,
+            0,
+            0
+          ]
+        },
+        "forces": [
+          0.051637675104692055,
+          0.05698872948209284,
+          0.05698872948209284,
+          0.051637675104692055
+        ],
+        "pass": true
+      }
+    ]
+  },
+  "descriptive": [
+    {
+      "case": "zero-influence",
+      "fineOnOff": {
+        "position": 0.0,
+        "velocity": 0.0,
+        "attitude": 0.0,
+        "rotor": 0.0
+      },
+      "maximumSampledFineRotorChangeOverHover": 0.0,
+      "candidateReportedFineSweptSeparation": 4
+    },
+    {
+      "case": "centered-pair",
+      "fineOnOff": {
+        "position": 0.24550993287575995,
+        "velocity": 0.9594048307386428,
+        "attitude": 0.0,
+        "rotor": 0.20502654250752134
+      },
+      "maximumSampledFineRotorChangeOverHover": 0.20502654250752134,
+      "candidateReportedFineSweptSeparation": 0.5999999999999996
+    },
+    {
+      "case": "offset-pair",
+      "fineOnOff": {
+        "position": 0.4961151013447676,
+        "velocity": 3.203077813102448,
+        "attitude": 1.6226809074348234,
+        "rotor": 0.22018084185159428
+      },
+      "maximumSampledFineRotorChangeOverHover": 0.22018084185159428,
+      "candidateReportedFineSweptSeparation": 0.601331855134916
+    },
+    {
+      "case": "boids16",
+      "fineOnOff": {
+        "position": 1.1024440412918044,
+        "velocity": 0.8303547728154905,
+        "attitude": 1.4683518097153496,
+        "rotor": 0.3288576865093974
+      },
+      "maximumSampledFineRotorChangeOverHover": 0.30346754720181773,
+      "candidateReportedFineSweptSeparation": 0.5714541003781142
+    }
+  ],
+  "aggregateBeforeReviewBytes": 21215274,
+  "sourceCommit": "ee1c888d1e10fd712750c8a80150b13abb32eb19",
+  "sourceManifestSHA256": "4cffb621a5925441fd0c4fcea5a55e7d1fa70d7bd931496fd74b45d9bcb6b63d",
+  "candidateElapsedSeconds": 2.550639832392335,
+  "candidateSampledPeakRSSKiB": 175120,
+  "pass": true,
+  "checkCount": 283446,
+  "failures": [],
+  "savedEndpointsChecked": 234,
+  "trials": [
+    {
+      "id": "zero-influence-off-0.005",
+      "complete": true,
+      "end": 0.5,
+      "savedEndpoints": 6,
+      "stageAttemptRecords": 400,
+      "capturedStageDerivativesChecked": 8,
+      "failure": null,
+      "maximumEndpointErrors": {
+        "coefficient": 0.0,
+        "load": 0.0,
+        "derivative": 0.0
+      }
+    },
+    {
+      "id": "zero-influence-off-0.0025",
+      "complete": true,
+      "end": 0.5,
+      "savedEndpoints": 6,
+      "stageAttemptRecords": 800,
+      "capturedStageDerivativesChecked": 8,
+      "failure": null,
+      "maximumEndpointErrors": {
+        "coefficient": 0.0,
+        "load": 0.0,
+        "derivative": 0.0
+      }
+    },
+    {
+      "id": "zero-influence-off-0.00125",
+      "complete": true,
+      "end": 0.5,
+      "savedEndpoints": 6,
+      "stageAttemptRecords": 1600,
+      "capturedStageDerivativesChecked": 8,
+      "failure": null,
+      "maximumEndpointErrors": {
+        "coefficient": 0.0,
+        "load": 0.0,
+        "derivative": 0.0
+      }
+    },
+    {
+      "id": "zero-influence-coupled-0.005",
+      "complete": true,
+      "end": 0.5,
+      "savedEndpoints": 6,
+      "stageAttemptRecords": 400,
+      "capturedStageDerivativesChecked": 8,
+      "failure": null,
+      "maximumEndpointErrors": {
+        "coefficient": 0.0,
+        "load": 0.0,
+        "derivative": 0.0
+      }
+    },
+    {
+      "id": "zero-influence-coupled-0.0025",
+      "complete": true,
+      "end": 0.5,
+      "savedEndpoints": 6,
+      "stageAttemptRecords": 800,
+      "capturedStageDerivativesChecked": 8,
+      "failure": null,
+      "maximumEndpointErrors": {
+        "coefficient": 0.0,
+        "load": 0.0,
+        "derivative": 0.0
+      }
+    },
+    {
+      "id": "zero-influence-coupled-0.00125",
+      "complete": true,
+      "end": 0.5,
+      "savedEndpoints": 6,
+      "stageAttemptRecords": 1600,
+      "capturedStageDerivativesChecked": 8,
+      "failure": null,
+      "maximumEndpointErrors": {
+        "coefficient": 0.0,
+        "load": 0.0,
+        "derivative": 0.0
+      }
+    },
+    {
+      "id": "centered-pair-off-0.005",
+      "complete": true,
+      "end": 0.5,
+      "savedEndpoints": 6,
+      "stageAttemptRecords": 400,
+      "capturedStageDerivativesChecked": 8,
+      "failure": null,
+      "maximumEndpointErrors": {
+        "coefficient": 0.0,
+        "load": 0.0,
+        "derivative": 0.0
+      }
+    },
+    {
+      "id": "centered-pair-off-0.0025",
+      "complete": true,
+      "end": 0.5,
+      "savedEndpoints": 6,
+      "stageAttemptRecords": 800,
+      "capturedStageDerivativesChecked": 8,
+      "failure": null,
+      "maximumEndpointErrors": {
+        "coefficient": 0.0,
+        "load": 0.0,
+        "derivative": 0.0
+      }
+    },
+    {
+      "id": "centered-pair-off-0.00125",
+      "complete": true,
+      "end": 0.5,
+      "savedEndpoints": 6,
+      "stageAttemptRecords": 1600,
+      "capturedStageDerivativesChecked": 8,
+      "failure": null,
+      "maximumEndpointErrors": {
+        "coefficient": 0.0,
+        "load": 0.0,
+        "derivative": 0.0
+      }
+    },
+    {
+      "id": "centered-pair-coupled-0.005",
+      "complete": true,
+      "end": 0.5,
+      "savedEndpoints": 6,
+      "stageAttemptRecords": 400,
+      "capturedStageDerivativesChecked": 8,
+      "failure": null,
+      "maximumEndpointErrors": {
+        "coefficient": 0.0,
+        "load": 6.938893903907228e-18,
+        "derivative": 1.5543122344752192e-15
+      }
+    },
+    {
+      "id": "centered-pair-coupled-0.0025",
+      "complete": true,
+      "end": 0.5,
+      "savedEndpoints": 6,
+      "stageAttemptRecords": 800,
+      "capturedStageDerivativesChecked": 8,
+      "failure": null,
+      "maximumEndpointErrors": {
+        "coefficient": 0.0,
+        "load": 1.3877787807814457e-17,
+        "derivative": 2.886579864025407e-15
+      }
+    },
+    {
+      "id": "centered-pair-coupled-0.00125",
+      "complete": true,
+      "end": 0.5,
+      "savedEndpoints": 6,
+      "stageAttemptRecords": 1600,
+      "capturedStageDerivativesChecked": 8,
+      "failure": null,
+      "maximumEndpointErrors": {
+        "coefficient": 0.0,
+        "load": 6.938893903907228e-18,
+        "derivative": 1.5543122344752192e-15
+      }
+    },
+    {
+      "id": "offset-pair-off-0.005",
+      "complete": true,
+      "end": 0.5,
+      "savedEndpoints": 6,
+      "stageAttemptRecords": 400,
+      "capturedStageDerivativesChecked": 8,
+      "failure": null,
+      "maximumEndpointErrors": {
+        "coefficient": 0.0,
+        "load": 0.0,
+        "derivative": 0.0
+      }
+    },
+    {
+      "id": "offset-pair-off-0.0025",
+      "complete": true,
+      "end": 0.5,
+      "savedEndpoints": 6,
+      "stageAttemptRecords": 800,
+      "capturedStageDerivativesChecked": 8,
+      "failure": null,
+      "maximumEndpointErrors": {
+        "coefficient": 0.0,
+        "load": 0.0,
+        "derivative": 0.0
+      }
+    },
+    {
+      "id": "offset-pair-off-0.00125",
+      "complete": true,
+      "end": 0.5,
+      "savedEndpoints": 6,
+      "stageAttemptRecords": 1600,
+      "capturedStageDerivativesChecked": 8,
+      "failure": null,
+      "maximumEndpointErrors": {
+        "coefficient": 0.0,
+        "load": 0.0,
+        "derivative": 0.0
+      }
+    },
+    {
+      "id": "offset-pair-coupled-0.005",
+      "complete": true,
+      "end": 0.5,
+      "savedEndpoints": 6,
+      "stageAttemptRecords": 400,
+      "capturedStageDerivativesChecked": 8,
+      "failure": null,
+      "maximumEndpointErrors": {
+        "coefficient": 0.0,
+        "load": 1.3877787807814457e-17,
+        "derivative": 7.638334409421077e-14
+      }
+    },
+    {
+      "id": "offset-pair-coupled-0.0025",
+      "complete": true,
+      "end": 0.5,
+      "savedEndpoints": 6,
+      "stageAttemptRecords": 800,
+      "capturedStageDerivativesChecked": 8,
+      "failure": null,
+      "maximumEndpointErrors": {
+        "coefficient": 0.0,
+        "load": 2.7755575615628914e-17,
+        "derivative": 1.0547118733938987e-13
+      }
+    },
+    {
+      "id": "offset-pair-coupled-0.00125",
+      "complete": true,
+      "end": 0.5,
+      "savedEndpoints": 6,
+      "stageAttemptRecords": 1600,
+      "capturedStageDerivativesChecked": 8,
+      "failure": null,
+      "maximumEndpointErrors": {
+        "coefficient": 8.881784197001252e-16,
+        "load": 1.3877787807814457e-17,
+        "derivative": 6.483702463810914e-14
+      }
+    },
+    {
+      "id": "boids16-off-0.005",
+      "complete": true,
+      "end": 2,
+      "savedEndpoints": 21,
+      "stageAttemptRecords": 1600,
+      "capturedStageDerivativesChecked": 8,
+      "failure": null,
+      "maximumEndpointErrors": {
+        "coefficient": 0.0,
+        "load": 0.0,
+        "derivative": 4.263256414560601e-14
+      }
+    },
+    {
+      "id": "boids16-off-0.0025",
+      "complete": true,
+      "end": 2,
+      "savedEndpoints": 21,
+      "stageAttemptRecords": 3200,
+      "capturedStageDerivativesChecked": 8,
+      "failure": null,
+      "maximumEndpointErrors": {
+        "coefficient": 0.0,
+        "load": 0.0,
+        "derivative": 4.529709940470639e-14
+      }
+    },
+    {
+      "id": "boids16-off-0.00125",
+      "complete": true,
+      "end": 2,
+      "savedEndpoints": 21,
+      "stageAttemptRecords": 6400,
+      "capturedStageDerivativesChecked": 8,
+      "failure": null,
+      "maximumEndpointErrors": {
+        "coefficient": 0.0,
+        "load": 0.0,
+        "derivative": 4.4853010194856324e-14
+      }
+    },
+    {
+      "id": "boids16-coupled-0.005",
+      "complete": true,
+      "end": 2,
+      "savedEndpoints": 21,
+      "stageAttemptRecords": 1600,
+      "capturedStageDerivativesChecked": 8,
+      "failure": null,
+      "maximumEndpointErrors": {
+        "coefficient": 1.3322676295501878e-15,
+        "load": 5.551115123125783e-17,
+        "derivative": 2.1049828546892968e-13
+      }
+    },
+    {
+      "id": "boids16-coupled-0.0025",
+      "complete": true,
+      "end": 2,
+      "savedEndpoints": 21,
+      "stageAttemptRecords": 3200,
+      "capturedStageDerivativesChecked": 8,
+      "failure": null,
+      "maximumEndpointErrors": {
+        "coefficient": 1.3322676295501878e-15,
+        "load": 4.85722573273506e-17,
+        "derivative": 1.8385293287792592e-13
+      }
+    },
+    {
+      "id": "boids16-coupled-0.00125",
+      "complete": true,
+      "end": 2,
+      "savedEndpoints": 21,
+      "stageAttemptRecords": 6400,
+      "capturedStageDerivativesChecked": 8,
+      "failure": null,
+      "maximumEndpointErrors": {
+        "coefficient": 1.3322676295501878e-15,
+        "load": 6.938893903907228e-17,
+        "derivative": 2.2470914018413168e-13
+      }
+    }
+  ],
+  "elapsedSeconds": 0.9129608757793903
+}
