@@ -1,0 +1,11 @@
+# Root assessment and publication review
+
+The root inspected the helper, tests, exact AST witness harness, source snippets, raw results, and independent boundary review. No historical observer or campaign was imported or run during this review. Imported artifacts match delivered byte hashes; no root rerun was needed after exact copying.
+
+The helper satisfies its documented pure classification/retention contract in the saved cases. This is a narrower disposition than completing an operational reconciliation design: malformed registry handling, append-only history validation, and full ownership authentication remain caller obligations and were not implemented/tested. The independent review deliberately demonstrates that forged well-typed coverage or a caller discarding the ledger can evade the necessary gate. Neither is an authorized use. The helper is not a security boundary or proof of whole-system closure.
+
+Accounting: 15 unique final author tests, 44 author test executions across development, four exact old-source synthetic witnesses and six independent boundary cases: 54 executions against a 100-case limit. One initial Python 3.9 annotation import failure ran zero tests and is preserved. The author made two source corrections (postponed annotations, required ledger argument); root made no helper revision. No live process probe, original module execution, browser launch or GPU invocation was allocated or performed by this package. The candidate remains unintegrated.
+
+Privacy review: only source, synthetic integer identities, expected/actual software outputs, scientific context and relative evidence paths are published. No real process identity, browser profile, machine path, transport secret, private chat or credential is present. The author removed a private repository path from its contract before final handoff; the delivered final contract and hash are preserved. The development failure is a disclosed exception excerpt, not an unredacted original traceback. All imported public bytes are inventoried; new root documents have their actual manifest pins.
+
+Disposition: retain the software finding and candidate; return to the scientific source-strength question. Do not repair, rerun or reclassify the terminal GPU trial. No physical validity, speedup, live observer reliability or novelty claim follows.

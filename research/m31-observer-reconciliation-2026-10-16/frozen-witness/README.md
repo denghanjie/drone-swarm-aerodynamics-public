@@ -1,0 +1,13 @@
+# Frozen-observer deterministic source cases
+
+The four case semantics were written to `PREREGISTERED-CASES.json` before any case execution. The pinned preregistration is checked by the harness. It then reads the exact frozen observer bytes, verifies their original freeze pin, and uses Python AST extraction to select only `sample()` and the right-hand side of `closure_complete`. The original module is never imported or invoked, and none of its imports, process helpers, cleanup routines or other top-level code executes.
+
+The extracted `sample()` resolves every external call to an in-memory mock. `registry_entries()` copies a synthetic registry's admitted groups. `process_table()` returns a fixed five-row table and, in the late-registration case only, records a synthetic registration after the registry read. `inspect_groups()` returns the relay group plus the registry snapshot's admitted groups. This mock deliberately abstracts the original executable/profile ownership checks; these cases do not test that matcher or model a real process. `os.getpid()` is a plain mock returning a fixed integer. No real PID, process table, clock, signal, network, browser, GPU or private historical record is used.
+
+The late-registration case and the already-registered control use the same synthetic descendant and table. Their only relevant difference is when its registry entry becomes visible. The persistently unregistered case produces the same source error text as the late-registration case. Therefore the error text alone does not distinguish those mechanisms under these possible schedules.
+
+The closure case supplies identical known-cleanup inputs in two synthetic worlds. An unlinked offending descendant is present in one world and absent in the other; the frozen predicate never reads that status and evaluates true in both. This establishes a limit of the expression and retained linkage, not the survival or identity of a historical descendant. A subsequently registered descendant could have been covered by cleanup; the public projection cannot prove or disprove that linkage.
+
+`SYNTHETIC-OUTCOMES.json` contains actual deterministic outputs, while `EXTRACTION-PROVENANCE.json` identifies source bytes, line spans, exact source-fragment hashes and AST hashes. The extracted snippets are retained for inspection. Source hash continuity and synthetic behavior are distinct from experimental diagnosis.
+
+No observer, producer, checker or supervisor is launched. No frozen source is modified. This package adds no operational reconciliation, retry, safety override or allocation. Any later pure reconciliation helper can be reviewed separately against these prespecified distinctions.

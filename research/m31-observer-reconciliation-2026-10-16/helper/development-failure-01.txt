@@ -1,0 +1,13 @@
+Preserved development failure: first author validation attempt.
+Command: PYTHONDONTWRITEBYTECODE=1 python3 -m unittest -v test_reconcile.py
+Exit code: 1
+Python runtime: 3.9
+Test case executions: 0 (test module import failed before any tests ran)
+
+Original exception excerpt:
+    def reconcile(before: ValidatedCoverage, after: ValidatedCoverage | None,
+TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
+
+Cause: Python 3.9 eagerly evaluated the union type annotation.
+Correction: added "from __future__ import annotations" to postpone evaluation.
+The failure is retained; it is not a successful test run or a live-process trial.

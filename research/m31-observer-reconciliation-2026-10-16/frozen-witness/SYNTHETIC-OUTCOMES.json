@@ -1,0 +1,106 @@
+{
+  "browserInvocations": 0,
+  "casesMatchingPreregisteredExpected": 4,
+  "casesRun": 4,
+  "gpuInvocations": 0,
+  "historicalDiagnosisEstablished": false,
+  "kind": "frozen-observer-deterministic-synthetic-outcomes",
+  "originalModuleImports": 0,
+  "originalModuleInvocations": 0,
+  "outcomes": [
+    {
+      "admittedGroupsForThisCall": [
+        100
+      ],
+      "errorReason": "Unregistered detached descendant",
+      "errorType": "RuntimeError",
+      "id": "late_browser_registration",
+      "matchesPreregisteredExpected": true,
+      "peakObservedOwnedRSSBytes": 20480,
+      "registryAfterSnapshot": [
+        200
+      ],
+      "registryBeforeRead": [],
+      "returnedOriginalSyntheticTable": false,
+      "rssSamples": 1,
+      "syntheticCallOrder": [
+        "registry-read",
+        "synthetic-registration-after-read",
+        "process-snapshot",
+        "inspect-admitted-groups"
+      ]
+    },
+    {
+      "admittedGroupsForThisCall": [
+        100,
+        200
+      ],
+      "errorReason": null,
+      "errorType": null,
+      "id": "same_browser_already_registered",
+      "matchesPreregisteredExpected": true,
+      "peakObservedOwnedRSSBytes": 20480,
+      "registryAfterSnapshot": [
+        200
+      ],
+      "registryBeforeRead": [
+        200
+      ],
+      "returnedOriginalSyntheticTable": true,
+      "rssSamples": 1,
+      "syntheticCallOrder": [
+        "registry-read",
+        "process-snapshot",
+        "inspect-admitted-groups"
+      ]
+    },
+    {
+      "admittedGroupsForThisCall": [
+        100
+      ],
+      "errorReason": "Unregistered detached descendant",
+      "errorType": "RuntimeError",
+      "id": "truly_unregistered_descendant",
+      "matchesPreregisteredExpected": true,
+      "peakObservedOwnedRSSBytes": 20480,
+      "registryAfterSnapshot": [],
+      "registryBeforeRead": [],
+      "returnedOriginalSyntheticTable": false,
+      "rssSamples": 1,
+      "syntheticCallOrder": [
+        "registry-read",
+        "process-snapshot",
+        "inspect-admitted-groups"
+      ]
+    },
+    {
+      "expressionNames": [
+        "BROWSERS",
+        "HELPERS",
+        "all",
+        "item",
+        "report"
+      ],
+      "id": "missing_offender_linkage_at_closure",
+      "knownCleanupInputsIdentical": true,
+      "limitation": "World status is an intentionally unconsulted synthetic variable, not a claim about a historical process. The expression cannot distinguish these two worlds.",
+      "matchesPreregisteredExpected": true,
+      "priorWorkErrorPresentInBothWorlds": true,
+      "unlinkedOffenderStatusIsReadByExpression": false,
+      "worlds": [
+        {
+          "frozenClosurePredicate": true,
+          "unlinkedOffenderPresentInSyntheticWorld": true
+        },
+        {
+          "frozenClosurePredicate": true,
+          "unlinkedOffenderPresentInSyntheticWorld": false
+        }
+      ]
+    }
+  ],
+  "preregistrationSHA256": "83f8c43a152c60a65c2a10cb9f22b91363cad2472025685b3a5303bd05278cf7",
+  "realProcessProbes": 0,
+  "scope": "Possible behavior of exact frozen AST fragments under fixed documented mocks; not a historical reproduction or operational cleanup verification.",
+  "sourceSHA256": "aacb3daa611f7f3893b27ebf0b6bed0ff2a434d7042d1d10f429e833cf31069e"
+}

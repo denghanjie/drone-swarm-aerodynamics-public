@@ -1,0 +1,4 @@
+report['wrapperReaped'] and report['wrapperGroupAbsent'] \
+    and report['wrapperPipeCaptureComplete'] and report['registryComplete'] \
+    and all(item['absent'] for item in BROWSERS.values()) and not HELPERS \
+    and not report['cleanupErrorObserved']

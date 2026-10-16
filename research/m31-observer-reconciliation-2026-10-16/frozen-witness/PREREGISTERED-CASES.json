@@ -1,0 +1,49 @@
+{
+  "kind": "preregistered-frozen-observer-synthetic-case-semantics",
+  "writtenBeforeCaseExecution": true,
+  "originalSource": {
+    "path": "research/m31-gpu-readback-trial-2026-10-16/source/observe-transport.py",
+    "bytes": 32526,
+    "sha256": "aacb3daa611f7f3893b27ebf0b6bed0ff2a434d7042d1d10f429e833cf31069e",
+    "freezeSHA256": "8557a275d8387bfe5e1aa0ceddbad784b392f558e1c4c7d16721b3cbe06a66fa"
+  },
+  "executionScope": "Only AST-extracted sample() and closure_complete RHS, using fixed in-memory synthetic registry/process-table/group/PID mocks. Never import or invoke the original module, real ps, processes, browser or GPU.",
+  "syntheticIdentities": {
+    "capture": 10,
+    "observer": 20,
+    "relay": 100,
+    "node": 101,
+    "registeredBrowser": 200,
+    "unregisteredDescendant": 300,
+    "note": "Arbitrary integers with no relation to actual process identities."
+  },
+  "fixedConditions": [
+    "Capture and observer parent relationship valid in the synthetic table.",
+    "Each synthetic row has RSS 4096 bytes; total is far below the fixed 2 GiB source cap.",
+    "No helper process or observer-probe row is introduced.",
+    "Group inspection is a documented mock returning relay group plus groups admitted by the preceding registry read; it does not execute original browser matching."
+  ],
+  "cases": [
+    {
+      "id": "late_browser_registration",
+      "semantics": "Registry read sees no browser entry. Between that read and the process-table snapshot, the synthetic registry receives the browser entry and the table contains that browser as a descendant of Node with a detached group. This call retains its earlier admission snapshot.",
+      "expected": "sample raises RuntimeError with reason Unregistered detached descendant; synthetic registry at end contains browser 200 while the admitted-group snapshot does not."
+    },
+    {
+      "id": "same_browser_already_registered",
+      "semantics": "The same browser entry and same process table are present before the registry read.",
+      "expected": "sample returns the unchanged synthetic table without error; admitted groups contain relay 100 and browser 200."
+    },
+    {
+      "id": "truly_unregistered_descendant",
+      "semantics": "No browser registration appears at any stage. The table contains a reachable descendant 300 in its own unadmitted group.",
+      "expected": "sample raises the same RuntimeError reason as the late-registration case; the registry remains empty."
+    },
+    {
+      "id": "missing_offender_linkage_at_closure",
+      "semantics": "All fields consulted by the frozen closure predicate indicate registered groups/relay/pipes/registry/probe cleanup complete. Prior work error and rssProbeErrors are present. No retained offending identity connects the prior mismatch to cleanup. Evaluate the identical predicate under two synthetic worlds, one with an unlinked offender present and one absent.",
+      "expected": "closure predicate is true in both worlds; its inputs do not discriminate the unlinked offender status. This neither proves a historical survivor nor identifies a historical offender."
+    }
+  ],
+  "interpretationBoundary": "Passing these cases establishes possible frozen-code behavior under stated mocks. It does not identify the cause, descendant identity or actual process-closure outcome of the historical run. No operational correction, retry or allocation is created."
+}

@@ -1,0 +1,88 @@
+{
+  "authorReportedCaseExecutions": 44,
+  "browserInvocations": 0,
+  "callerObligations": [
+    "Authenticate exact owned-group coverage for the same retained snapshot; well-typed data is not proof.",
+    "Carry and durably retain the entire ledger; never reset or truncate it after initialization.",
+    "Keep failed refresh, incomplete registry and any other known-group closure conditions independently fail-closed.",
+    "Provide no signaling authority through these observations; any future operations need separate fresh ownership evidence and authorization."
+  ],
+  "caseExecutions": 6,
+  "caseLimit": 100,
+  "casesMeetingExpected": 6,
+  "checkpointCaseExecutionsReportedTotal": 54,
+  "contractSHA256": "d5456c0f80af8494e02e778a95cb11033d66e5f9919c6d3a4151a4be16947721",
+  "dataclassValidationScope": "Row/container types, integer shapes and duplicate PID rejection only. These checks do not validate registry parsing, registry append-only history or full process ownership evidence.",
+  "gpuInvocations": 0,
+  "helperSHA256": "51724fc678c9d8d157ac5cc7aa0b32f38d9d1a2ad9e5706949bd5fc307551236",
+  "historicalDiagnosisEstablished": false,
+  "independentFrozenSourceCaseExecutions": 4,
+  "kind": "independent-pure-reconciliation-helper-review",
+  "legacyModuleImports": 0,
+  "materialDefectWithinDocumentedPureContractFound": false,
+  "notImplementedOrTestedHere": [
+    "Parsing or rejecting malformed registry bytes/records.",
+    "Detecting a nonappend-only registry history or tampered prior entries.",
+    "Authenticating full exact ownership evidence or validating actual process identities."
+  ],
+  "outcomes": [
+    {
+      "errorType": "ValueError",
+      "expectedMet": true,
+      "id": "same_label_different_snapshot",
+      "rejected": true
+    },
+    {
+      "errorType": "ValueError",
+      "expectedMet": true,
+      "id": "duplicate_pid_conflicting_rows",
+      "rejected": true
+    },
+    {
+      "errorType": "TypeError",
+      "expectedMet": true,
+      "id": "fabricated_row_representation",
+      "rejected": true
+    },
+    {
+      "closureGateWithAssertedKnownClosure": true,
+      "coveredAfterCallerAssertion": [
+        200
+      ],
+      "expectedMet": true,
+      "id": "fabricated_well_typed_coverage_boundary",
+      "interpretation": "Acceptance is conditional on a truthful caller assertion. This demonstrates the documented authentication boundary, not a valid operational admission or signaling authorization.",
+      "ownershipIndependentlyAuthenticated": false
+    },
+    {
+      "correctThreadClosureGate": false,
+      "correctlyThreadedLedgerPreserved": true,
+      "deliberateContractViolationEmptyLedgerGate": true,
+      "expectedMet": true,
+      "id": "permanent_taint_and_ledger_threading_boundary",
+      "interpretation": "The helper never clears supplied taint. A stateless function cannot detect callers discarding prior history; the required entire-ledger threading and durable persistence obligations remain external."
+    },
+    {
+      "closureGate": false,
+      "expectedMet": true,
+      "id": "ancestry_only_does_not_admit",
+      "noSignalAPIInReviewedSource": true,
+      "resultFields": [
+        "covered_after_refresh",
+        "still_unadmitted",
+        "ledger",
+        "refresh_available"
+      ],
+      "stillUnadmittedPIDs": [
+        200
+      ]
+    }
+  ],
+  "prespecifiedPlanSHA256": "0228a8e73b36bdffa734df67469468293a996b7781a8a6da8ab84ce7998ea770",
+  "realProcessOperations": 0,
+  "scope": "Pure helper source review and six deterministic synthetic boundary cases only; no operational integration, source modification or historical diagnosis.",
+  "sourceImports": [
+    "__future__.annotations",
+    "dataclasses.dataclass"
+  ]
+}

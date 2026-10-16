@@ -1,0 +1,23 @@
+{
+  "kind": "prespecified-independent-pure-helper-boundary-cases",
+  "helperSHA256": "51724fc678c9d8d157ac5cc7aa0b32f38d9d1a2ad9e5706949bd5fc307551236",
+  "contractSHA256": "d5456c0f80af8494e02e778a95cb11033d66e5f9919c6d3a4151a4be16947721",
+  "plannedCaseExecutions": 6,
+  "authorReportedPriorCaseExecutions": 44,
+  "independentFrozenSourcePriorCaseExecutions": 4,
+  "plannedCheckpointTotal": 54,
+  "notImplementedOrTestedHere": [
+    "Parsing or rejecting malformed registry bytes/records.",
+    "Detecting a nonappend-only registry history or tampered prior entries.",
+    "Authenticating full exact ownership evidence or validating actual process identities."
+  ],
+  "cases": [
+    {"id": "same_label_different_snapshot", "expected": "Reject a reused snapshot label whose row contents differ; the label alone cannot satisfy same-snapshot binding."},
+    {"id": "duplicate_pid_conflicting_rows", "expected": "Reject a snapshot containing two rows for the same PID with conflicting PPID/PGID."},
+    {"id": "fabricated_row_representation", "expected": "Reject a dictionary impersonating the immutable Row type, even when its keys appear valid. This tests row representation only, not registry parsing, append-only history or ownership authentication."},
+    {"id": "fabricated_well_typed_coverage_boundary", "expected": "Well-typed caller coverage assertions are accepted without authenticating ownership. A fabricated assertion can classify a row as covered; this is the explicit caller-contract boundary, not signal authority or proof of ownership."},
+    {"id": "permanent_taint_and_ledger_threading_boundary", "expected": "Supplying the full previous ledger preserves the closure veto even after complete later coverage. Deliberately resetting the ledger to an empty tuple can evade that veto, demonstrating the explicitly documented stateless caller obligation, not a permitted discharge."},
+    {"id": "ancestry_only_does_not_admit", "expected": "An ancestry link without covered group membership retains the row as unadmitted and vetoes closure. The helper exposes observations and classifications, with no signal API or authority."}
+  ],
+  "scope": "Import only the independently source-reviewed pure helper; no author test-suite rerun, legacy module import, data acquisition, real process operation, browser, GPU, source edit or operational integration. These are synthetic contract checks, not historical diagnosis."
+}

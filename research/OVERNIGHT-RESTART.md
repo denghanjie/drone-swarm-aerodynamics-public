@@ -4,6 +4,10 @@
 
 Public additive worktree: current repository, branch `codex/m31-audit-2026-10-15`. Preserve the original eight-step roadmap and historical M31 base. Later remote main/DOT at `1336f5c416875a9651f92b58b2ed06649f25b04e` remains separate and untouched. The private workspace, attachments, credentials and chat records must never be published.
 
+## Ancillary observer source checkpoint
+
+`research/m31-observer-reconciliation-2026-10-16/` preserves four exact-source synthetic witnesses, a pure immutable reconciliation helper, and six independent boundary cases. Total recorded synthetic executions54/100; final author suite15cases passes. One initial annotation import failure is retained. Root read the source/results and imported exact final handoffs; no live observer integration, process probe, browser or GPU invocation. Registry/ownership validation and ledger persistence remain unimplemented caller obligations. Source tests do not establish the historical abort cause or universal cleanup. See ROOT-ASSESSMENT, claim ledger and RESTART. The prior trial viewer remains the visible result. Physical source-evidence inspection continues separately; no successor empirical experiment is allocated by this source package.
+
 ## Ancillary next-reference decision — data analysis deferred
 
 `research/m31-next-reference-decision-2026-10-16/` preserves a proposed ENOLA power-factor diagnostic and independent challenge. The proposed identities cannot identify common CT/CP normalization; a related ICAS definition belongs to a different specimen/setup. Root deferred the data calculation as insufficient to resolve the physical reference gap. A small pure Decimal module with13synthetic checks is retained as unallocated preparation. No real-row formula, fit, benchmark, acquisition or new browser/GPU invocation occurred. Read DECISION and bibliography; do not interpret the proposal's suggested budgets as allocated. Latest visible milestone remains the actual GPU-trial failure view. Goal stays active and incomplete; no successor experiment is currently allocated.
