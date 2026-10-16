@@ -1,3 +1,15 @@
+# Latest completed checkpoint: three-process Chrome confirmation
+
+`m31-browser-screen-2026-10-16/` is scientifically closed. The single generation, Chrome campaign, saved reviewer and metadata seal all qualified. Final decision: `qualified-finite-chrome-center-screen`. All six N5000 case × process cells pass the fixed rule, median paired F/L 0.7411–0.8048, with four lost large-case pairs preserved. All three contextual N1000 cells miss the benefit rule. F large-case medians remain 366–396 ms per complete interaction query, excluding flight/render/transport.
+
+Source commit `3a2b9e3ceca3798f56596617dc483c45a09a309c`, source-manifest SHA256 `2c16bfa246e3b06e8f7d10c3e24449e01f02fab6e0298e48c7358d479d20fbc7`, independently published/verified before science. Independent saved audit passed 57,572 named groups, all 126 calls, full saved numerical/cross-process checks. No source or scientific output changes or reruns. Three successful owned Chrome process closures; no scientific/reviewer/QA processes remain active. Read MILESTONE-SUMMARY, RESULT-CLAIM-LEDGER, review/result-interpretation and POSTRUN-RESTART. Result publication verification is the remaining checkpoint task at this snapshot.
+
+Three.js viewer: http://127.0.0.1:8876/research/m31-browser-screen-2026-10-16/viewer/ . It shows 26 real frames over 5 s for all three new local3D Boids cases, with airflow off and separate final-state load predictions; all process tables remain visible. Final rendered QA passed96groups, including all858,000rendered position components and evidence-error handling. Initial presentation QA/static findings and fixes are retained. Keep server8876 running.
+
+Broader research goal active/incomplete. No live-coupled-flight, physical-accuracy, portable-equality or novelty claim. NEXT-DECISION is planning only: investigate current-geometry load-error enclosures, with F and an equally lean exact hierarchy as prospective comparators under a common output contract. A new protocol/source freeze is needed before any successor scoring. All historical closed source-access/GPU/scientific allocations remain closed.
+
+---
+
 # Latest completed checkpoint: finite screen improves both primary cases
 
 The current-position screen at `m31-center-screen-2026-10-16/` passed the frozen practical rule on both new 5,000-drone states: median paired F/L ratios 0.7193 and 0.6608, wins 5/6 and 6/6. The 1,000-drone case did not benefit. All 48 controls and 42 calls are preserved; independent audit passed 18,458 named check groups. Candidate/review supervisors and metadata seal are successfully closed. Do not rerun any allocation or edit frozen scientific records.

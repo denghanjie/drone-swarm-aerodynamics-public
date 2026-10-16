@@ -1,0 +1,641 @@
+{
+  "kind": "generation",
+  "sourceCommit": "3a2b9e3ceca3798f56596617dc483c45a09a309c",
+  "sourceManifestSha256": "2c16bfa246e3b06e8f7d10c3e24449e01f02fab6e0298e48c7358d479d20fbc7",
+  "startedUTC": "2026-10-16T06:17:44.569782+00:00",
+  "wallCapSeconds": 900,
+  "rssCapBytes": 1610612736,
+  "controllerRSSCapBytes": null,
+  "browserTreeRSSCapBytes": null,
+  "sampleIntervalSeconds": 0.1,
+  "rssSamples": 3402,
+  "sampledPeakRSSBytes": 568901632,
+  "browserTreePeakRSSBytes": 0,
+  "controllerPeakRSSBytes": 557744128,
+  "signals": [],
+  "monitorErrors": [],
+  "exitRaces": [],
+  "closed": true,
+  "childGroupAbsent": true,
+  "ownedGroupAbsent": true,
+  "returncode": 0,
+  "runtimeIdentityVerified": true,
+  "phaseClosures": [],
+  "containment": "retained-session-leader; Chrome detached=false; group plus observed descendants; sampled RSS sum",
+  "sourceReceiptSha256": "b9231a921984a3a9fb79fa7d3a74eeda2058fc357a0a7ef2c080e84444e22b47",
+  "runtime": {
+    "kind": "prospective-browser-screen-runtime-identity",
+    "platform": "darwin",
+    "architecture": "arm64",
+    "node": {
+      "version": "v24.19.0",
+      "bytes": 121304480,
+      "sha256": "3c9448363b9976bf3d9e8f4d320397975800131b42c7b1be342dadc05871dd25"
+    },
+    "python": {
+      "version": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+      "bytes": 18058560,
+      "sha256": "7a314947596fc484d4ec36ffc28e843b78d6d749c68736f8b5c24e7333f418eb"
+    },
+    "numpy": {
+      "version": "2.3.5",
+      "distributionRecordSha256": "9381864e854fe47b70260954fd78033fd3a74608e481cbc2ed9142463ce4db7c"
+    },
+    "flags": {
+      "nodeOptionsEmpty": true,
+      "nodeExecArgvEmpty": true,
+      "pythonOptimize": 0
+    },
+    "scope": "Metadata-only pins; no browser launched or numerical modules evaluated. Chrome launcher, main framework, helper executables and selected automation entry files are pinned. This is not a complete inventory of all transitive browser/runtime resources.",
+    "chrome": {
+      "version": "155.0.8059.80",
+      "files": [
+        {
+          "label": "Info.plist",
+          "appRelativePath": "Info.plist",
+          "bytes": 18856,
+          "sha256": "149a0fe35ab0ea9b74c3836f3afa14d88da94a87064e6c3da91a92473206d0b6"
+        },
+        {
+          "label": "launcher",
+          "appRelativePath": "MacOS/Google Chrome",
+          "bytes": 367696,
+          "sha256": "5f423d624250e67f2ae453400d485e7547a533a2f872232c54bb551a79bf552d"
+        },
+        {
+          "label": "framework",
+          "appRelativePath": "Frameworks/Google Chrome Framework.framework/Versions/155.0.8059.80/Google Chrome Framework",
+          "bytes": 520002192,
+          "sha256": "32fa7771f0277d5593f03e66813b5429c8d260d0f99cd86d7e036826a7c86209"
+        },
+        {
+          "label": "Frameworks/Google Chrome Framework.framework/Versions/155.0.8059.80/Helpers/Google Chrome Helper (Alerts).app/Contents/MacOS/Google Chrome Helper (Alerts)",
+          "appRelativePath": "Frameworks/Google Chrome Framework.framework/Versions/155.0.8059.80/Helpers/Google Chrome Helper (Alerts).app/Contents/MacOS/Google Chrome Helper (Alerts)",
+          "bytes": 170064,
+          "sha256": "d59f621725dd650dda39d8076595edfc84a6c3782a59082ede439155aaa36ac8"
+        },
+        {
+          "label": "Frameworks/Google Chrome Framework.framework/Versions/155.0.8059.80/Helpers/Google Chrome Helper (Aperitif Alerts).app/Contents/MacOS/Google Chrome Helper (Aperitif Alerts)",
+          "appRelativePath": "Frameworks/Google Chrome Framework.framework/Versions/155.0.8059.80/Helpers/Google Chrome Helper (Aperitif Alerts).app/Contents/MacOS/Google Chrome Helper (Aperitif Alerts)",
+          "bytes": 101088,
+          "sha256": "6989516a3d6908ca524b8715e0650f6a4d54f4cff132bc3247b29f4335ecd15f"
+        },
+        {
+          "label": "Frameworks/Google Chrome Framework.framework/Versions/155.0.8059.80/Helpers/Google Chrome Helper (Aperitif GPU).app/Contents/MacOS/Google Chrome Helper (Aperitif GPU)",
+          "appRelativePath": "Frameworks/Google Chrome Framework.framework/Versions/155.0.8059.80/Helpers/Google Chrome Helper (Aperitif GPU).app/Contents/MacOS/Google Chrome Helper (Aperitif GPU)",
+          "bytes": 101472,
+          "sha256": "8244ab0a36662da42e35208736a25585599f59de139793923d5d781c127b35ee"
+        },
+        {
+          "label": "Frameworks/Google Chrome Framework.framework/Versions/155.0.8059.80/Helpers/Google Chrome Helper (Aperitif Renderer).app/Contents/MacOS/Google Chrome Helper (Aperitif Renderer)",
+          "appRelativePath": "Frameworks/Google Chrome Framework.framework/Versions/155.0.8059.80/Helpers/Google Chrome Helper (Aperitif Renderer).app/Contents/MacOS/Google Chrome Helper (Aperitif Renderer)",
+          "bytes": 101504,
+          "sha256": "bb96e19b88261499915179404226ab6409802519683e863d321e66308f195d5c"
+        },
+        {
+          "label": "Frameworks/Google Chrome Framework.framework/Versions/155.0.8059.80/Helpers/Google Chrome Helper (Aperitif).app/Contents/MacOS/Google Chrome Helper (Aperitif)",
+          "appRelativePath": "Frameworks/Google Chrome Framework.framework/Versions/155.0.8059.80/Helpers/Google Chrome Helper (Aperitif).app/Contents/MacOS/Google Chrome Helper (Aperitif)",
+          "bytes": 101024,
+          "sha256": "c5f15b4881c0ed983e36f39a27f88c4787a5f136616e0640346b684c21fb7b15"
+        },
+        {
+          "label": "Frameworks/Google Chrome Framework.framework/Versions/155.0.8059.80/Helpers/Google Chrome Helper (GPU).app/Contents/MacOS/Google Chrome Helper (GPU)",
+          "appRelativePath": "Frameworks/Google Chrome Framework.framework/Versions/155.0.8059.80/Helpers/Google Chrome Helper (GPU).app/Contents/MacOS/Google Chrome Helper (GPU)",
+          "bytes": 170448,
+          "sha256": "a36138cb91c1f3c63afc714ae164826b5c21fd67c948606e333fa5e83b10803b"
+        },
+        {
+          "label": "Frameworks/Google Chrome Framework.framework/Versions/155.0.8059.80/Helpers/Google Chrome Helper (Renderer).app/Contents/MacOS/Google Chrome Helper (Renderer)",
+          "appRelativePath": "Frameworks/Google Chrome Framework.framework/Versions/155.0.8059.80/Helpers/Google Chrome Helper (Renderer).app/Contents/MacOS/Google Chrome Helper (Renderer)",
+          "bytes": 170480,
+          "sha256": "ae7336c32f86917206832dcd69e500d89efe92976b370a394be486f122d96abb"
+        },
+        {
+          "label": "Frameworks/Google Chrome Framework.framework/Versions/155.0.8059.80/Helpers/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper",
+          "appRelativePath": "Frameworks/Google Chrome Framework.framework/Versions/155.0.8059.80/Helpers/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper",
+          "bytes": 170000,
+          "sha256": "5709fddf99af627341a4107571039943b5dbf7134419ce8f2def9118ccb2f1c1"
+        }
+      ]
+    },
+    "playwright": {
+      "version": "1.62.1",
+      "files": [
+        {
+          "moduleRelativePath": "playwright/package.json",
+          "bytes": 1416,
+          "sha256": "ca170ec143a88ed3043ac953eb3b2377b2b97304104f4e1e23316684ce2c35af"
+        },
+        {
+          "moduleRelativePath": "playwright/index.js",
+          "bytes": 648,
+          "sha256": "4e98f65f0a9d9bcab8cffc0c5cfdd87fd3f5b0be74fc494ff166a466b204cd44"
+        },
+        {
+          "moduleRelativePath": "playwright-core/package.json",
+          "bytes": 876,
+          "sha256": "07c47543631fef9508760365dee9fbe958c562093ec8d122543949ed231f233f"
+        },
+        {
+          "moduleRelativePath": "playwright-core/index.js",
+          "bytes": 697,
+          "sha256": "a58fb2cec4293e7dcf73c58a179898a4f3986666451a19da4e731fa3af63265b"
+        },
+        {
+          "moduleRelativePath": "playwright-core/lib/coreBundle.js",
+          "bytes": 3425603,
+          "sha256": "9393fa79e1c67c74edc26b610d65a4f7ed73d345a762465cc88340a33a2454ac"
+        }
+      ]
+    }
+  },
+  "survivingOwnedProcessCount": 0,
+  "protectedInputsUnchanged": true,
+  "candidateOutputsUnchanged": true,
+  "scientificBytesBeforeClosure": 35153733,
+  "logBytes": 66,
+  "artifacts": [
+    {
+      "path": "generation/n1000-s261701-t5-frame-000.f64",
+      "bytes": 56008,
+      "sha256": "c4fad8c6e8f3c0d2217aaed0d9ae2d9eeeb396abe5b7ce2c2bf049adeffbff4a"
+    },
+    {
+      "path": "generation/n1000-s261701-t5-frame-001.f64",
+      "bytes": 56008,
+      "sha256": "1ac4354bf514e468cfe3ad9b7c390ab12db7843dd32bd21d921ba6d82bed9851"
+    },
+    {
+      "path": "generation/n1000-s261701-t5-frame-002.f64",
+      "bytes": 56008,
+      "sha256": "e78eea4da6ff0dd8263dca6c0d5b9a8de20af350093cf622c7c28d5ab6e88202"
+    },
+    {
+      "path": "generation/n1000-s261701-t5-frame-003.f64",
+      "bytes": 56008,
+      "sha256": "3c646cb4d12ee3b2e04d8e5f0792ef2bc16a66ed2fad3caa987f2b3858403bd0"
+    },
+    {
+      "path": "generation/n1000-s261701-t5-frame-004.f64",
+      "bytes": 56008,
+      "sha256": "12930d93a72b7fd261acbcec6a7c9eb9d302a5c2f69e823bc9e2abb993b10699"
+    },
+    {
+      "path": "generation/n1000-s261701-t5-frame-005.f64",
+      "bytes": 56008,
+      "sha256": "080d0c0e066884ba37f8a911f5f73cbd82b4a75c647c512eaf09a6984964ff96"
+    },
+    {
+      "path": "generation/n1000-s261701-t5-frame-006.f64",
+      "bytes": 56008,
+      "sha256": "e46ce0daafe0dceaf6795b1e26ec897d922e7fc471953c51bc2a823cd849f808"
+    },
+    {
+      "path": "generation/n1000-s261701-t5-frame-007.f64",
+      "bytes": 56008,
+      "sha256": "e8020500c7ac3e3297a91e14a413a1f3c3e546066dcbbda0f5d063af109256dd"
+    },
+    {
+      "path": "generation/n1000-s261701-t5-frame-008.f64",
+      "bytes": 56008,
+      "sha256": "727f3eb479b26187e26873631c6f6d7deb3744690af34f0c77efc733cbbe1258"
+    },
+    {
+      "path": "generation/n1000-s261701-t5-frame-009.f64",
+      "bytes": 56008,
+      "sha256": "a71f22fa70a34d5a128933a023445dbb38497557c52192695fddd28b30cf6289"
+    },
+    {
+      "path": "generation/n1000-s261701-t5-frame-010.f64",
+      "bytes": 56008,
+      "sha256": "2a51df9d28be95467b11353fbebb9b39fafa3bde0e6ee49a881e3315dcecb627"
+    },
+    {
+      "path": "generation/n1000-s261701-t5-frame-011.f64",
+      "bytes": 56008,
+      "sha256": "9801a525f42865056b6e3e2be0234b18bb3766c45ea3fd301bc27fa3b3a0531f"
+    },
+    {
+      "path": "generation/n1000-s261701-t5-frame-012.f64",
+      "bytes": 56008,
+      "sha256": "6172637c51842953eae26f6df253d2518121047ef3c449a121449f11bb08dbb7"
+    },
+    {
+      "path": "generation/n1000-s261701-t5-frame-013.f64",
+      "bytes": 56008,
+      "sha256": "d059e3b6e938bb6f4dac8dce2d859f8d8703660cd6f3584002942cf0c01016ca"
+    },
+    {
+      "path": "generation/n1000-s261701-t5-frame-014.f64",
+      "bytes": 56008,
+      "sha256": "11ec15df463f93a38d6a491fc8b5f9e60a26b725e34401c41a5e481a6687f28e"
+    },
+    {
+      "path": "generation/n1000-s261701-t5-frame-015.f64",
+      "bytes": 56008,
+      "sha256": "bf6afda03b72351553ae7c0ca7cd51d968ddfaecfe28d5779c01cdce32913e03"
+    },
+    {
+      "path": "generation/n1000-s261701-t5-frame-016.f64",
+      "bytes": 56008,
+      "sha256": "7260094386c589bfcfd84576b632f6fdf1f7ae948ba6b0d788a50e6f99542509"
+    },
+    {
+      "path": "generation/n1000-s261701-t5-frame-017.f64",
+      "bytes": 56008,
+      "sha256": "54054a61b98d5a236e658211af80b9cb3f2a4e7c1751932b6a4723bdd3ae685d"
+    },
+    {
+      "path": "generation/n1000-s261701-t5-frame-018.f64",
+      "bytes": 56008,
+      "sha256": "4d32f29b1469117f6a30099e96c6af2aeb0ae8829f5aa816261122f1e07465f6"
+    },
+    {
+      "path": "generation/n1000-s261701-t5-frame-019.f64",
+      "bytes": 56008,
+      "sha256": "04cf4f9105898cbb6ec86691c2e715f0befcd3c55c1e96336e8d954911fba103"
+    },
+    {
+      "path": "generation/n1000-s261701-t5-frame-020.f64",
+      "bytes": 56008,
+      "sha256": "8c7b82cd792e064c9f8fef2ddbd8b8b5002d60bcdd8dc1cdc6e9f3d9729ab911"
+    },
+    {
+      "path": "generation/n1000-s261701-t5-frame-021.f64",
+      "bytes": 56008,
+      "sha256": "c5770e680b9bdddf564251705bfc82d3676e7b13a2069d3ac5ffc5e439f83977"
+    },
+    {
+      "path": "generation/n1000-s261701-t5-frame-022.f64",
+      "bytes": 56008,
+      "sha256": "42d5e476981149ba5e5db8efcfbfee4e6a5d0e289a5f50c4da1ad142b0b47bcc"
+    },
+    {
+      "path": "generation/n1000-s261701-t5-frame-023.f64",
+      "bytes": 56008,
+      "sha256": "a831d2f9c1053d2ff92158734466931bccc9d4beb2994a7edbf7e9a58b4b1c62"
+    },
+    {
+      "path": "generation/n1000-s261701-t5-frame-024.f64",
+      "bytes": 56008,
+      "sha256": "6dad465b0c8d30aad927193c9aa6b32ecfb25611d5fdf454eef7abb0bef53bcd"
+    },
+    {
+      "path": "generation/n1000-s261701-t5-frame-025.f64",
+      "bytes": 56008,
+      "sha256": "dbbc5d21225ae9273c71e09b7f73282cae0a797749034677f551f416535283b7"
+    },
+    {
+      "path": "generation/n1000-s261701-t5-initial.f64",
+      "bytes": 136000,
+      "sha256": "4e5d22f220b2c1f9fd65080c202145cab06672573bf3fb4956f72e005087abce"
+    },
+    {
+      "path": "generation/n1000-s261701-t5-poses.f64",
+      "bytes": 1456208,
+      "sha256": "d4654ac01e16ea5f0bcc2a5db360dd64ada4749592ef37e4a05bbb839a0ad029"
+    },
+    {
+      "path": "generation/n1000-s261701-t5.json",
+      "bytes": 28241,
+      "sha256": "92172e1d071bbe665b8392396fb970e44944e4547e3dfdffa60b21cb36e090f4"
+    },
+    {
+      "path": "generation/n5000-s261702-t5-frame-000.f64",
+      "bytes": 280008,
+      "sha256": "adb5a5d5472fafd055c4b52bc86cfd90bd01345e9dd31f4d29b1fcd06275ec5c"
+    },
+    {
+      "path": "generation/n5000-s261702-t5-frame-001.f64",
+      "bytes": 280008,
+      "sha256": "8a9d071fba851a1b9d2ba7dd4f6c0c66090397802f51807ae12fe173b1b85f00"
+    },
+    {
+      "path": "generation/n5000-s261702-t5-frame-002.f64",
+      "bytes": 280008,
+      "sha256": "9184e5918c54404fac93fcbda13ad23051410385e50e987ab93b8ece636db982"
+    },
+    {
+      "path": "generation/n5000-s261702-t5-frame-003.f64",
+      "bytes": 280008,
+      "sha256": "c5c46365054bfb5e9ae085a8d8a1af13207dcba39c14fe7b5c4279f89837bd32"
+    },
+    {
+      "path": "generation/n5000-s261702-t5-frame-004.f64",
+      "bytes": 280008,
+      "sha256": "efb30616532d318ff9e71e0c47dffa14c73feec4f5100fbd2c729222df6360e8"
+    },
+    {
+      "path": "generation/n5000-s261702-t5-frame-005.f64",
+      "bytes": 280008,
+      "sha256": "d299af9ad2f334e2984d3f0a3b166893d4147e3efb4a6b4d824cce4669c80ea7"
+    },
+    {
+      "path": "generation/n5000-s261702-t5-frame-006.f64",
+      "bytes": 280008,
+      "sha256": "ddcc867990f68978630bf00c8adb5dd66a03ed235c5b76577264b77cd0e83d55"
+    },
+    {
+      "path": "generation/n5000-s261702-t5-frame-007.f64",
+      "bytes": 280008,
+      "sha256": "4e4fa85777fea2afac8cbed2fa7bd98d8790abff0125f56e6f437477713d812f"
+    },
+    {
+      "path": "generation/n5000-s261702-t5-frame-008.f64",
+      "bytes": 280008,
+      "sha256": "b3734cc64614bc518c9c02496f6f94416cb37adc7c342a9191615f2e36c86fbb"
+    },
+    {
+      "path": "generation/n5000-s261702-t5-frame-009.f64",
+      "bytes": 280008,
+      "sha256": "30df145c218ad05f926b610561cdbaeb709c59110111a4a0485dde2b0fb4285d"
+    },
+    {
+      "path": "generation/n5000-s261702-t5-frame-010.f64",
+      "bytes": 280008,
+      "sha256": "3c496c815adb1345aab8f5226dd4ea200e97beb62ee4c7fcbcb17713d9206ab2"
+    },
+    {
+      "path": "generation/n5000-s261702-t5-frame-011.f64",
+      "bytes": 280008,
+      "sha256": "eda27cb2d471ddbed0ec9495c71798aa0120b4eb8b64532a8a9b8151576ab72f"
+    },
+    {
+      "path": "generation/n5000-s261702-t5-frame-012.f64",
+      "bytes": 280008,
+      "sha256": "8199ea76aa42a48104e7274446d89ba45ab9d03ea8ab8fcfc033439a35632903"
+    },
+    {
+      "path": "generation/n5000-s261702-t5-frame-013.f64",
+      "bytes": 280008,
+      "sha256": "674cb2a15ad6c1ce33aba8ab739eb1d56b503e1203bb2a085134fc6898f4b238"
+    },
+    {
+      "path": "generation/n5000-s261702-t5-frame-014.f64",
+      "bytes": 280008,
+      "sha256": "85381f94de5547d9f46402f77c26f29e7ca44e58e9e0679b4515f63ba19c6668"
+    },
+    {
+      "path": "generation/n5000-s261702-t5-frame-015.f64",
+      "bytes": 280008,
+      "sha256": "1bc010347b0137684fe2603a905b917b1c847fb96b0e52c34b0fc8c5eac51353"
+    },
+    {
+      "path": "generation/n5000-s261702-t5-frame-016.f64",
+      "bytes": 280008,
+      "sha256": "d164c824cb2e78763b8361120edd399dfcd2f9710960850c4897b4ec82388fbc"
+    },
+    {
+      "path": "generation/n5000-s261702-t5-frame-017.f64",
+      "bytes": 280008,
+      "sha256": "4f09fc3b453f945709bee222c105f0fa78f2edafd6db477c466ca41b6d9e30b4"
+    },
+    {
+      "path": "generation/n5000-s261702-t5-frame-018.f64",
+      "bytes": 280008,
+      "sha256": "ae384d35c31aaef842fde2f13d9aea5b24c2328b304ede7a905ae5d6c529b321"
+    },
+    {
+      "path": "generation/n5000-s261702-t5-frame-019.f64",
+      "bytes": 280008,
+      "sha256": "7c39f828bc037e0c3291a1d22d021e189746e4aa49dd73704c50f4f60922b562"
+    },
+    {
+      "path": "generation/n5000-s261702-t5-frame-020.f64",
+      "bytes": 280008,
+      "sha256": "e8e4aa2941ecd8722485eee1da8b50fe9aed5d481100e628391552c431d95912"
+    },
+    {
+      "path": "generation/n5000-s261702-t5-frame-021.f64",
+      "bytes": 280008,
+      "sha256": "1510d637a0a610eb7b1bab165ce8ea17b3810c6dca571d2bfff31444cdaf9857"
+    },
+    {
+      "path": "generation/n5000-s261702-t5-frame-022.f64",
+      "bytes": 280008,
+      "sha256": "766dc3cbd36ff20973cb632d8b2c5e4558d505189715937f4ad521566986e650"
+    },
+    {
+      "path": "generation/n5000-s261702-t5-frame-023.f64",
+      "bytes": 280008,
+      "sha256": "834049ef28e1890401c666f3bf252a827ec3fe761f8e0645c719ba556f21e91b"
+    },
+    {
+      "path": "generation/n5000-s261702-t5-frame-024.f64",
+      "bytes": 280008,
+      "sha256": "d7056ca89c13126a8014379d8783f6b35bfca63b17a4d97af72e83740741906a"
+    },
+    {
+      "path": "generation/n5000-s261702-t5-frame-025.f64",
+      "bytes": 280008,
+      "sha256": "82003f984e9caf00e284d3ac05585cdd820d4d1c398849fe736d1afcd30a9014"
+    },
+    {
+      "path": "generation/n5000-s261702-t5-initial.f64",
+      "bytes": 680000,
+      "sha256": "b7a5d1ee2c1a8108dd4473084c574d70de6ce63df724aab351cfb28775421719"
+    },
+    {
+      "path": "generation/n5000-s261702-t5-poses.f64",
+      "bytes": 7280208,
+      "sha256": "0093530dc04b4382ffadfc9f7cbffc5276b4a7d12eff12861a7e6d194f8d7dc2"
+    },
+    {
+      "path": "generation/n5000-s261702-t5.json",
+      "bytes": 48449,
+      "sha256": "c00c35f4677a6185f72ffb4db995b801f7d36a46a86d284f5ba5489403f9a02c"
+    },
+    {
+      "path": "generation/n5000-s261703-t5-frame-000.f64",
+      "bytes": 280008,
+      "sha256": "420fc4d8f30e429c831ebefccc504cb3bcc40f1a2ea9d2591e26fd16a11be500"
+    },
+    {
+      "path": "generation/n5000-s261703-t5-frame-001.f64",
+      "bytes": 280008,
+      "sha256": "1be21a9b06f6a0c822c9b38e057cb97720b33277f562b5f33a91e5ee46a59c5f"
+    },
+    {
+      "path": "generation/n5000-s261703-t5-frame-002.f64",
+      "bytes": 280008,
+      "sha256": "3450ac1c8dee90f9448caf77d4cbdb4714d35ce5a8a7b4549150b08c32e34b08"
+    },
+    {
+      "path": "generation/n5000-s261703-t5-frame-003.f64",
+      "bytes": 280008,
+      "sha256": "ca77736139e0dc5244c5d010d715cee9b77c15bce9b7f6edc30cebefa3f3100a"
+    },
+    {
+      "path": "generation/n5000-s261703-t5-frame-004.f64",
+      "bytes": 280008,
+      "sha256": "2d779d11a6a319a64d46774e9d0106487c2de282b780a503708d72736ef023b7"
+    },
+    {
+      "path": "generation/n5000-s261703-t5-frame-005.f64",
+      "bytes": 280008,
+      "sha256": "13db904e534c44b3266240c78e5a0016ef1d9d51651a76ec08226c0c540539f8"
+    },
+    {
+      "path": "generation/n5000-s261703-t5-frame-006.f64",
+      "bytes": 280008,
+      "sha256": "a4879194dfaad95f08d651911fc37f27755ff38e9fd8543fdfb3d873faf92553"
+    },
+    {
+      "path": "generation/n5000-s261703-t5-frame-007.f64",
+      "bytes": 280008,
+      "sha256": "72d49f92b252af87cc2018a7ca971f3ae6bf8cd8203d1df67f8c60fe52764fe0"
+    },
+    {
+      "path": "generation/n5000-s261703-t5-frame-008.f64",
+      "bytes": 280008,
+      "sha256": "592b49ad580a81a61b5780ebd91d766ae2fe3d35bdbd3ddebd571542fe9fe9a0"
+    },
+    {
+      "path": "generation/n5000-s261703-t5-frame-009.f64",
+      "bytes": 280008,
+      "sha256": "2d3646a996e1297e43c94530b54f3f59cc047347e5a5e4cebf0ae7dd7bfc43b3"
+    },
+    {
+      "path": "generation/n5000-s261703-t5-frame-010.f64",
+      "bytes": 280008,
+      "sha256": "322ab3cc1404de2d07679c707bc1ae483a4f3b4571af40d37b1f0b38bf7a85e8"
+    },
+    {
+      "path": "generation/n5000-s261703-t5-frame-011.f64",
+      "bytes": 280008,
+      "sha256": "73f36f3c02217e34447fc470022a4076e414c8be0bee5ffac12134af16c5ab4e"
+    },
+    {
+      "path": "generation/n5000-s261703-t5-frame-012.f64",
+      "bytes": 280008,
+      "sha256": "ec21b5eaf884ac3012ec338be641b8f45bf460cac9c2ee96df3825ecd4e0a1bf"
+    },
+    {
+      "path": "generation/n5000-s261703-t5-frame-013.f64",
+      "bytes": 280008,
+      "sha256": "e0e5dc3af2c52719eb30d13a26a80e3997744d2fbd57184a0a3617ef7224221c"
+    },
+    {
+      "path": "generation/n5000-s261703-t5-frame-014.f64",
+      "bytes": 280008,
+      "sha256": "18bd1e3ddccda59da348fb7747344b059d8e7c28e1fc667e264f4bc32ca19383"
+    },
+    {
+      "path": "generation/n5000-s261703-t5-frame-015.f64",
+      "bytes": 280008,
+      "sha256": "bda45b6300b91400972f644f9dcdfbace7e022f67d0febd382a9dce475256ebd"
+    },
+    {
+      "path": "generation/n5000-s261703-t5-frame-016.f64",
+      "bytes": 280008,
+      "sha256": "c8a0f41afab775c8d68feab398a37e15c0a80b1900981c10c4d1e81eed069c71"
+    },
+    {
+      "path": "generation/n5000-s261703-t5-frame-017.f64",
+      "bytes": 280008,
+      "sha256": "70f9b77da26d3b22dafd0bbb7bdaee7bd29212f4523f4790170a3a9edaa98c49"
+    },
+    {
+      "path": "generation/n5000-s261703-t5-frame-018.f64",
+      "bytes": 280008,
+      "sha256": "4e18f4105078c80c1197b0899ba3150617b4da1304377ffb81fd97838ffa73a8"
+    },
+    {
+      "path": "generation/n5000-s261703-t5-frame-019.f64",
+      "bytes": 280008,
+      "sha256": "d778b89e810e3e33c77bb5147875e9d6f4ff20d8cec8d80692a5f3554f394ea0"
+    },
+    {
+      "path": "generation/n5000-s261703-t5-frame-020.f64",
+      "bytes": 280008,
+      "sha256": "2c73d277e3e42c175c2576846adfcbe24b755d096678903ca15a5eb5d462c928"
+    },
+    {
+      "path": "generation/n5000-s261703-t5-frame-021.f64",
+      "bytes": 280008,
+      "sha256": "d1d061e0520edd5ee9516eea8a0f7eaffda4484fd4cda6b73db681c2371d7eec"
+    },
+    {
+      "path": "generation/n5000-s261703-t5-frame-022.f64",
+      "bytes": 280008,
+      "sha256": "af1bb14a4535997a814f544b738fc8166bf48e1ab3c170ae7777763a756739f0"
+    },
+    {
+      "path": "generation/n5000-s261703-t5-frame-023.f64",
+      "bytes": 280008,
+      "sha256": "6d89ea8320167018315df2e367c63cf294c6dd741f67e9d06c8a56084292ab36"
+    },
+    {
+      "path": "generation/n5000-s261703-t5-frame-024.f64",
+      "bytes": 280008,
+      "sha256": "d594a359bfecfa86557cbd4a975fbdfc0378e5bee336cfa0d2ae7eca80792ec1"
+    },
+    {
+      "path": "generation/n5000-s261703-t5-frame-025.f64",
+      "bytes": 280008,
+      "sha256": "4bff6ad6cea61bbdc459fe101b0c7c0613249e73c079996eb75319f27573f14a"
+    },
+    {
+      "path": "generation/n5000-s261703-t5-initial.f64",
+      "bytes": 680000,
+      "sha256": "75d3a1e69dbefa6bfcaba70cebfb30ec8a4c5f1d47c31ff06d6103e36adb35be"
+    },
+    {
+      "path": "generation/n5000-s261703-t5-poses.f64",
+      "bytes": 7280208,
+      "sha256": "31a7300046c827b24b6ca34c5af9c9aeafd4f41c9338027b7bad39b2d886fcaa"
+    },
+    {
+      "path": "generation/n5000-s261703-t5.json",
+      "bytes": 48414,
+      "sha256": "5268a757008a9655cc5792c694789c1321dc5ee9377b3b6f73ba198a3b2f10ec"
+    },
+    {
+      "path": "inputs/index.json",
+      "bytes": 1250,
+      "sha256": "f6a9d6d341af54c23c98e56b5dfbd153aa4edfdacc7024ef243f44bd943f4379"
+    },
+    {
+      "path": "inputs/n1000-s261701-t5.f64",
+      "bytes": 136000,
+      "sha256": "d84b711dab30c01d480ae2f6e5e52c48868b60586c1e72339935479a9c258488"
+    },
+    {
+      "path": "inputs/n5000-s261702-t5.f64",
+      "bytes": 680000,
+      "sha256": "695c9e304ba437bf0bec24b1a034601ec57e6723357615b218e1776d0b26091a"
+    },
+    {
+      "path": "inputs/n5000-s261703-t5.f64",
+      "bytes": 680000,
+      "sha256": "cd87a56ef04775bf99928405c2f47d2f240654d8f88abd830b0e1798c03bda94"
+    },
+    {
+      "path": "results/generation-child-invocation.lock",
+      "bytes": 61,
+      "sha256": "27e33a380692607bdc380320e446c1777bb1da85344944e54207a2c0041ab0fb"
+    },
+    {
+      "path": "results/generation-evidence.json",
+      "bytes": 1962,
+      "sha256": "701b6fba0fdf72dfbfce53f65e0998207ed0549f661fb1fa0d9a284a6a9f619c"
+    },
+    {
+      "path": "results/generation-invocation.lock",
+      "bytes": 42,
+      "sha256": "63dcb8bf8bee2cd4fbfb0e4660f0ed95eb057b8c14fa0a1ced66eaf58d5dcda1"
+    },
+    {
+      "path": "results/generation-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "results/generation-stdout.txt",
+      "bytes": 66,
+      "sha256": "603583cfd0f4ece6645445347919683f4ace7f511eb892ae1d0f1c67615f3130"
+    }
+  ],
+  "elapsedSeconds": 408.50388437509537,
+  "supervisorSuccess": true
+}
