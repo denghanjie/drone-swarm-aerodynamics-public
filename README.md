@@ -8,7 +8,9 @@ This is an ongoing research record, including unsuccessful experiments. The hist
 
 ## Current Milestone 31 restart
 
-Latest result: [four-rotor coupled-load verification](research/m31-coupled-solve-2026-10-16/MILESTONE-SUMMARY.md) passed all 10,007 independent checks on four designed fixtures. Two eight-drone stacks used 32 ordered-solve root closures versus 256 simultaneous-update closures (64 versus 288 including each method’s residual check). A six-drone cycle converged; the nearby unsupported pair was rejected. These are operation counts under an explicit hypothetical source-strength law, not measured speedups or physical validation. The [new Three.js replay](research/m31-coupled-solve-2026-10-16/viewer/) displays the actual fixed geometry, dependency edges and saved load iterates. The 5,000-drone goal remains open.
+Latest result: [matched total calculation cost](research/m31-screening-cost-2026-10-17/MILESTONE-SUMMARY.md) qualified all six static upright lattice scenes and all 15 fault controls. Exact screening was faster in all 24 measured pairs: median paired ratios were 1.40–1.63× for dense groups and 3.59–7.88× for sparse groups (complete/hierarchy). The dense 216-drone hierarchy calculation still took a median 8.761 seconds, so real-time 5,000-drone coupling remains open. The [updated Three.js view](research/m31-screening-cost-2026-10-17/viewer/) shows the saved groups, hierarchy, all timing pairs and stage costs. Numerical correctness under this model does not establish flight physics or novelty.
+
+Earlier result: [four-rotor coupled-load verification](research/m31-coupled-solve-2026-10-16/MILESTONE-SUMMARY.md) passed all 10,007 independent checks on four designed fixtures. Two eight-drone stacks used 32 ordered-solve root closures versus 256 simultaneous-update closures (64 versus 288 including each method’s residual check). A six-drone cycle converged; the nearby unsupported pair was rejected. These are operation counts under an explicit hypothetical source-strength law, not measured speedups or physical validation. The [new Three.js replay](research/m31-coupled-solve-2026-10-16/viewer/) displays the actual fixed geometry, dependency edges and saved load iterates. The 5,000-drone goal remains open.
 
 Earlier result: [the source-accounting audit](research/m31-source-accounting-2026-10-16/MILESTONE-SUMMARY.md) confirms that the current fixed-position wake ignores source motor strength: all 20 saved outputs are identical across five source states. It also quantifies the model's cutoffs without treating a squared-speed integral as measured thrust. Independent numerical review passed 46 checks. The new [Three.js profile view](research/m31-source-accounting-2026-10-16/viewer/) shows saved evidence and links the historical Boids replay; its final display check passed 99 checks. Physical source coupling, the complete 5,000-drone objective and publication novelty remain unresolved.
 
@@ -35,6 +37,10 @@ The earlier [GPU receiver component](research/m31-browser-receiver-2026-10-16/RE
 - [Physical-validation requirements](outputs/research-physical-validation-gate-2026-10-12.md)
 
 ## View the 3D lab
+
+For the current cost checkpoint, serve this repository with `python3 -m http.server 8876 --bind 127.0.0.1` and open <http://127.0.0.1:8876/research/m31-screening-cost-2026-10-17/viewer/>. It uses the committed saved results and runs no scientific kernel.
+
+For the historical interactive lab:
 
 Clone this repository, then run from its root:
 
@@ -105,6 +111,6 @@ python3 outputs/research-reproduce.py
 
 The historical export began with fresh Git history and removed or replaced local machine paths, browser/GPU/CPU/OS/runtime identity and host-memory/load metadata. Scientific trajectories and model parameters were preserved; see its [privacy audit](docs/public-release-audit.md) and [change inventory](docs/public-export-changes.json). Older embedded manifests describe original private records, so their hashes may differ for listed sanitized files. The top-level output manifest verifies that historical snapshot. Hardware-specific comparisons from that export are limited by its withheld specifications.
 
-New research checkpoints retain the nonprivate hardware descriptions, software versions, executable hashes and resource observations needed to interpret their experiments. Their own manifests and privacy disclosures define the retained scope. Private home paths, process identities, browser profiles, transport authority, user chats, authentication files and local environments remain excluded.
+New research checkpoints retain the nonprivate hardware descriptions, software versions, executable hashes and resource observations needed to interpret their experiments. Their own manifests and privacy disclosures define the retained scope. Private home paths, unrelated process inventories, browser profiles, transport authority, user chats, authentication files and local environments remain excluded. Some new checkpoint records retain the experiment guardian/child process IDs needed to audit cleanup; these contain no process inventory or user identity.
 
 No open-source license has been selected for original project material. Third-party files retain their existing notices; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

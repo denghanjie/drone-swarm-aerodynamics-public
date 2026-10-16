@@ -1,0 +1,217 @@
+{
+  "stage": "kernel",
+  "sourceCommit": "7d3c94410aaece78a151c13b7192c3a40ecb60d0",
+  "sourceManifestSha256": "49643595936ffa7da8cab2ec8b992299db679e8365b10e2ee53ec403099bf87b",
+  "commandTemplate": [
+    "NODE",
+    "PACKAGE/source/run.cjs"
+  ],
+  "runtimePins": {
+    "node": {
+      "bytes": 121304480,
+      "sha256": "3c9448363b9976bf3d9e8f4d320397975800131b42c7b1be342dadc05871dd25"
+    },
+    "python": {
+      "bytes": 18058560,
+      "sha256": "7a314947596fc484d4ec36ffc28e843b78d6d749c68736f8b5c24e7333f418eb"
+    }
+  },
+  "wallLimitSeconds": 1800,
+  "guardianWallLimitSeconds": 1810,
+  "sampledRssLimitBytes": 1073741824,
+  "outputLimitBytes": 402653184,
+  "artifactLimitBytes": {
+    "timing-index.json": 8388608,
+    "timing-index.json.jsonl": 8388608,
+    "eachScientificOrAnomalyShard": 67108864,
+    "allScientificAndAnomalyShards": 134217728,
+    "allCheckerOutputs": 100663296
+  },
+  "logMetadataLimitBytes": 16777216,
+  "finalReportLimitBytes": 65536,
+  "nominalSleepSeconds": 0.05,
+  "success": true,
+  "closed": true,
+  "samples": 2515,
+  "peakSampledGroupRssBytes": 304594944,
+  "maxSampleGapSeconds": 0.18717825040221214,
+  "terminationReason": null,
+  "containmentScope": "Reviewed scientific children spawn no subprocesses. Retained guardian owns process group; sampling is not hostile-code/escaped-descendant isolation.",
+  "accountingScope": "Recursive closed-set results plus all four kernel/checker private raw logs and their public copies. Scientific shards and optional first mismatch share one 128 MiB category; checker main and references share one 96 MiB category.",
+  "processGroup": 8602,
+  "scientificChildAbsentBeforeRelease": true,
+  "exitCode": 0,
+  "guardianExitCode": 0,
+  "childGroupAbsent": true,
+  "logs": [
+    {
+      "path": "research/m31-screening-cost-2026-10-17/results/kernel-stdout.log",
+      "rawBytes": 110,
+      "rawSha256": "2c0ee3dd5c48209efb44e11d6009e549e30acdcec717c82d72ebdfbc0a76f623",
+      "publishedBytes": 110,
+      "publishedSha256": "2c0ee3dd5c48209efb44e11d6009e549e30acdcec717c82d72ebdfbc0a76f623",
+      "redaction": "machine/runtime path prefixes replaced; raw logs retained privately"
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/results/kernel-stderr.log",
+      "rawBytes": 0,
+      "rawSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "publishedBytes": 0,
+      "publishedSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "redaction": "machine/runtime path prefixes replaced; raw logs retained privately"
+    }
+  ],
+  "output": {
+    "path": "research/m31-screening-cost-2026-10-17/results/timing-index.json",
+    "bytes": 71826,
+    "sha256": "9281a8026b0f68b5041b9d0e1e41e6fe4ee7dae66685dde09149a7615c7e6fff"
+  },
+  "journal": {
+    "path": "research/m31-screening-cost-2026-10-17/results/timing-index.json.jsonl",
+    "bytes": 76840,
+    "sha256": "894093168ec26ed806bb201e7596cc89fb0dd3e9747d61e3dc58219df668d4ff"
+  },
+  "scientificEvidence": [
+    {
+      "path": "research/m31-screening-cost-2026-10-17/results/scenes/dense-cube-125.json",
+      "bytes": 1685899,
+      "sha256": "d562f549d333374d750cf7c1764c23e23c9b56b7e7aca433c50535807ec0a443"
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/results/scenes/dense-cube-216.json",
+      "bytes": 3507931,
+      "sha256": "c72807e681df7973cede7730fd7c494d1b017feb31515917d4c4a23a4b86004e"
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/results/scenes/dense-cube-64.json",
+      "bytes": 696519,
+      "sha256": "ecec671a48264c992c905afeb4c1dc40371b343a4f21ddd4005a79a10e601792"
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/results/scenes/sparse-cube-125.json",
+      "bytes": 1034612,
+      "sha256": "943207c8da122f496a08266be24bc717b5d8c2b80dc8f655b8a2b8c6679dd1c3"
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/results/scenes/sparse-cube-216.json",
+      "bytes": 1786561,
+      "sha256": "0c0b5e6b2712c1b38c94214990a354146c88abf4cb175896998924804c0970b3"
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/results/scenes/sparse-cube-64.json",
+      "bytes": 502541,
+      "sha256": "75caf7a91653767dffd567f21b246c4cfa56ff941a84fb177246192eba2d0f4e"
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/results/timing-index.json",
+      "bytes": 71826,
+      "sha256": "9281a8026b0f68b5041b9d0e1e41e6fe4ee7dae66685dde09149a7615c7e6fff"
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/results/timing-index.json.jsonl",
+      "bytes": 76840,
+      "sha256": "894093168ec26ed806bb201e7596cc89fb0dd3e9747d61e3dc58219df668d4ff"
+    }
+  ],
+  "anomalyEvidence": [],
+  "privateLogDirectorySha256": "31ac0c9577c322247b0fa066f657d93a2ffb3e8cdd8c81d68dd3a452cc37b470",
+  "privateRawLogs": [
+    {
+      "name": "kernel-stderr.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "kernel-stdout.raw",
+      "bytes": 110,
+      "sha256": "2c0ee3dd5c48209efb44e11d6009e549e30acdcec717c82d72ebdfbc0a76f623"
+    }
+  ],
+  "sourceAndRuntimeRechecked": true,
+  "outputAccountingBeforeReport": {
+    "aggregateBytes": 9363335,
+    "indexBytes": 71826,
+    "journalBytes": 76840,
+    "scientificShardBytes": 9214063,
+    "checkerBytes": 0,
+    "logMetadataBytes": 606,
+    "reportBytes": 0,
+    "unclassifiedBytes": 0,
+    "anomalyFiles": 0,
+    "files": [
+      {
+        "scope": "results",
+        "path": "kernel-attempt.json",
+        "bytes": 278
+      },
+      {
+        "scope": "results",
+        "path": "kernel-guardian.jsonl",
+        "bytes": 108
+      },
+      {
+        "scope": "results",
+        "path": "kernel-stderr.log",
+        "bytes": 0
+      },
+      {
+        "scope": "results",
+        "path": "kernel-stdout.log",
+        "bytes": 110
+      },
+      {
+        "scope": "results",
+        "path": "scenes/dense-cube-125.json",
+        "bytes": 1685899
+      },
+      {
+        "scope": "results",
+        "path": "scenes/dense-cube-216.json",
+        "bytes": 3507931
+      },
+      {
+        "scope": "results",
+        "path": "scenes/dense-cube-64.json",
+        "bytes": 696519
+      },
+      {
+        "scope": "results",
+        "path": "scenes/sparse-cube-125.json",
+        "bytes": 1034612
+      },
+      {
+        "scope": "results",
+        "path": "scenes/sparse-cube-216.json",
+        "bytes": 1786561
+      },
+      {
+        "scope": "results",
+        "path": "scenes/sparse-cube-64.json",
+        "bytes": 502541
+      },
+      {
+        "scope": "results",
+        "path": "timing-index.json",
+        "bytes": 71826
+      },
+      {
+        "scope": "results",
+        "path": "timing-index.json.jsonl",
+        "bytes": 76840
+      },
+      {
+        "scope": "private",
+        "path": "kernel-stderr.raw",
+        "bytes": 0
+      },
+      {
+        "scope": "private",
+        "path": "kernel-stdout.raw",
+        "bytes": 110
+      }
+    ],
+    "violations": []
+  },
+  "finalOutputBytesBeforeReport": 9363335,
+  "wallSeconds": 202.45597512461245
+}

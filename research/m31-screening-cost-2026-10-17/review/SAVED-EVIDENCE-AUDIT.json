@@ -1,0 +1,729 @@
+{
+  "schema": "m31-cost-generic-saved-audit-v1",
+  "passed": true,
+  "scope": "Saved JSON/hash/count/timing arithmetic only; no scientific import, oracle, candidate, checker, generator or control rerun.",
+  "sourceCommit": "7d3c94410aaece78a151c13b7192c3a40ecb60d0",
+  "sourceManifestSha256": "49643595936ffa7da8cab2ec8b992299db679e8365b10e2ee53ec403099bf87b",
+  "localAndGitManifestPinsVerified": 144,
+  "genericChecksPassed": 1563470,
+  "trials": 60,
+  "measuredTrials": 48,
+  "warmupTrials": 12,
+  "journalEvents": 80,
+  "representativeSelectionVerified": true,
+  "allTrialMethodAndCommonDigestsVerified": true,
+  "allTimingStagesAndHarnessPartitionsVerified": true,
+  "jsonFraming": {
+    "kernelIndexShardsJournal": "canonical JSON plus newline",
+    "checkerAndReferenceFiles": "canonical JSON without newline"
+  },
+  "allSummariesExactlyRecomputed": true,
+  "all24PairedRatiosAboveOne": true,
+  "scenes": [
+    {
+      "sceneId": "dense-cube-64",
+      "drones": 64,
+      "completeMedianSeconds": 0.7567381875,
+      "hierarchyMedianSeconds": 0.4941967505,
+      "ratioOfMedians": {
+        "n": "1513476375",
+        "d": "988393501"
+      },
+      "medianPairedRatio": {
+        "n": "371261664921693493",
+        "d": "244160470739670528"
+      },
+      "pairedRatios": [
+        {
+          "repetition": 1,
+          "pairOrder": "AB",
+          "completeNs": "761182958",
+          "hierarchyNs": "503090417",
+          "ratio": {
+            "n": "761182958",
+            "d": "503090417"
+          }
+        },
+        {
+          "repetition": 2,
+          "pairOrder": "BA",
+          "completeNs": "767846333",
+          "hierarchyNs": "492587459",
+          "ratio": {
+            "n": "767846333",
+            "d": "492587459"
+          }
+        },
+        {
+          "repetition": 3,
+          "pairOrder": "BA",
+          "completeNs": "752293417",
+          "hierarchyNs": "492451584",
+          "ratio": {
+            "n": "752293417",
+            "d": "492451584"
+          }
+        },
+        {
+          "repetition": 4,
+          "pairOrder": "AB",
+          "completeNs": "750391958",
+          "hierarchyNs": "495806042",
+          "ratio": {
+            "n": "375195979",
+            "d": "247903021"
+          }
+        }
+      ],
+      "ratioRange": [
+        1.513014226228046,
+        1.558802033975453
+      ],
+      "representativeScalarPairs": {
+        "complete": 16128,
+        "hierarchy": 5120
+      },
+      "measuredStageTotalsNs": {
+        "complete": {
+          "preparation": 67704833,
+          "spatial": 46125,
+          "assembly": 2902259376,
+          "admissionSolveCertificate": 61704332
+        },
+        "hierarchy": {
+          "preparation": 67229126,
+          "spatial": 1720292,
+          "assembly": 1851688040,
+          "admissionSolveCertificate": 63298044
+        }
+      },
+      "methodDigests": {
+        "complete": "d704b68af64844cabfe9cfaa2f475bc84c2710b509cb11a85c92eed5900d18ea",
+        "hierarchy": "cea0a36f10840bd885d690f7fbe629b5f507ca2e37471b38b006ccd816cac959"
+      },
+      "commonDigests": {
+        "complete": "ccf1fb333906ed23772524fcdbb6e465c5b24f29158c14250a3fcb5456491b50",
+        "hierarchy": "ccf1fb333906ed23772524fcdbb6e465c5b24f29158c14250a3fcb5456491b50"
+      }
+    },
+    {
+      "sceneId": "dense-cube-125",
+      "drones": 125,
+      "completeMedianSeconds": 4.7212465625,
+      "hierarchyMedianSeconds": 3.316698,
+      "ratioOfMedians": {
+        "n": "75539945",
+        "d": "53067168"
+      },
+      "medianPairedRatio": {
+        "n": "13643205150589",
+        "d": "9776363067936"
+      },
+      "pairedRatios": [
+        {
+          "repetition": 1,
+          "pairOrder": "AB",
+          "completeNs": "5312309042",
+          "hierarchyNs": "3194113083",
+          "ratio": {
+            "n": "5312309042",
+            "d": "3194113083"
+          }
+        },
+        {
+          "repetition": 2,
+          "pairOrder": "BA",
+          "completeNs": "4736956625",
+          "hierarchyNs": "3598735958",
+          "ratio": {
+            "n": "4736956625",
+            "d": "3598735958"
+          }
+        },
+        {
+          "repetition": 3,
+          "pairOrder": "BA",
+          "completeNs": "4705536500",
+          "hierarchyNs": "3271122000",
+          "ratio": {
+            "n": "9411073",
+            "d": "6542244"
+          }
+        },
+        {
+          "repetition": 4,
+          "pairOrder": "AB",
+          "completeNs": "4547647125",
+          "hierarchyNs": "3362274000",
+          "ratio": {
+            "n": "4042353",
+            "d": "2988688"
+          }
+        }
+      ],
+      "ratioRange": [
+        1.3162834618276822,
+        1.6631562201957268
+      ],
+      "representativeScalarPairs": {
+        "complete": 62000,
+        "hierarchy": 21700
+      },
+      "measuredStageTotalsNs": {
+        "complete": {
+          "preparation": 222004500,
+          "spatial": 51668,
+          "assembly": 18885837290,
+          "admissionSolveCertificate": 194555834
+        },
+        "hierarchy": {
+          "preparation": 194920083,
+          "spatial": 6594916,
+          "assembly": 13016226126,
+          "admissionSolveCertificate": 208503916
+        }
+      },
+      "methodDigests": {
+        "complete": "ff84295aba9ce6cfaabbb78d9bec2f3ab7a5a81a3e061e04c7f34531dd5eb7af",
+        "hierarchy": "1593eaedf3615f23d5d85817bead334640b7e2f57d35d70c62847120319019f4"
+      },
+      "commonDigests": {
+        "complete": "9468c5956df8614788ad851835c0f9344be5e06ac6d3613e3d250217affbf97f",
+        "hierarchy": "9468c5956df8614788ad851835c0f9344be5e06ac6d3613e3d250217affbf97f"
+      }
+    },
+    {
+      "sceneId": "dense-cube-216",
+      "drones": 216,
+      "completeMedianSeconds": 14.275431479,
+      "hierarchyMedianSeconds": 8.760861729,
+      "ratioOfMedians": {
+        "n": "14275431479",
+        "d": "8760861729"
+      },
+      "medianPairedRatio": {
+        "n": "41808627815336596669",
+        "d": "25581820985571412824"
+      },
+      "pairedRatios": [
+        {
+          "repetition": 1,
+          "pairOrder": "AB",
+          "completeNs": "14517028667",
+          "hierarchyNs": "8845922166",
+          "ratio": {
+            "n": "14517028667",
+            "d": "8845922166"
+          }
+        },
+        {
+          "repetition": 2,
+          "pairOrder": "BA",
+          "completeNs": "14120055375",
+          "hierarchyNs": "8675801292",
+          "ratio": {
+            "n": "4706685125",
+            "d": "2891933764"
+          }
+        },
+        {
+          "repetition": 3,
+          "pairOrder": "BA",
+          "completeNs": "14430807583",
+          "hierarchyNs": "8623517542",
+          "ratio": {
+            "n": "14430807583",
+            "d": "8623517542"
+          }
+        },
+        {
+          "repetition": 4,
+          "pairOrder": "AB",
+          "completeNs": "14103752375",
+          "hierarchyNs": "9230926250",
+          "ratio": {
+            "n": "112830019",
+            "d": "73847410"
+          }
+        }
+      ],
+      "ratioRange": [
+        1.5278805174074488,
+        1.6734247379582823
+      ],
+      "representativeScalarPairs": {
+        "complete": 185760,
+        "hierarchy": 58747
+      },
+      "measuredStageTotalsNs": {
+        "complete": {
+          "preparation": 369108958,
+          "spatial": 81335,
+          "assembly": 56388801957,
+          "admissionSolveCertificate": 413651750
+        },
+        "hierarchy": {
+          "preparation": 371634710,
+          "spatial": 9950167,
+          "assembly": 34624863832,
+          "admissionSolveCertificate": 369718541
+        }
+      },
+      "methodDigests": {
+        "complete": "0616567451a4969e917da06de3f68d96c58a01e2f92b98cad69f69980087b414",
+        "hierarchy": "74da17cdb25a25c2ac8fcaefc5367857cbc9fd0c677d031f3953ce2b15fc662e"
+      },
+      "commonDigests": {
+        "complete": "2a2907758a1ebea101d55e96044770313265ae42aa64eddfeec0b1ba1993571c",
+        "hierarchy": "2a2907758a1ebea101d55e96044770313265ae42aa64eddfeec0b1ba1993571c"
+      }
+    },
+    {
+      "sceneId": "sparse-cube-64",
+      "drones": 64,
+      "completeMedianSeconds": 0.3714835835,
+      "hierarchyMedianSeconds": 0.100792729,
+      "ratioOfMedians": {
+        "n": "742967167",
+        "d": "201585458"
+      },
+      "medianPairedRatio": {
+        "n": "77531641136705111",
+        "d": "21142759860118056"
+      },
+      "pairedRatios": [
+        {
+          "repetition": 1,
+          "pairOrder": "AB",
+          "completeNs": "367048417",
+          "hierarchyNs": "100377084",
+          "ratio": {
+            "n": "367048417",
+            "d": "100377084"
+          }
+        },
+        {
+          "repetition": 2,
+          "pairOrder": "BA",
+          "completeNs": "366784625",
+          "hierarchyNs": "100545667",
+          "ratio": {
+            "n": "366784625",
+            "d": "100545667"
+          }
+        },
+        {
+          "repetition": 3,
+          "pairOrder": "BA",
+          "completeNs": "375918750",
+          "hierarchyNs": "101039791",
+          "ratio": {
+            "n": "375918750",
+            "d": "101039791"
+          }
+        },
+        {
+          "repetition": 4,
+          "pairOrder": "AB",
+          "completeNs": "387292833",
+          "hierarchyNs": "105316667",
+          "ratio": {
+            "n": "387292833",
+            "d": "105316667"
+          }
+        }
+      ],
+      "ratioRange": [
+        3.6479406417384452,
+        3.720502054482674
+      ],
+      "representativeScalarPairs": {
+        "complete": 16128,
+        "hierarchy": 896
+      },
+      "measuredStageTotalsNs": {
+        "complete": {
+          "preparation": 98231000,
+          "spatial": 31333,
+          "assembly": 1355444333,
+          "admissionSolveCertificate": 43337959
+        },
+        "hierarchy": {
+          "preparation": 97226459,
+          "spatial": 2205000,
+          "assembly": 263703708,
+          "admissionSolveCertificate": 44144042
+        }
+      },
+      "methodDigests": {
+        "complete": "2d7706f9298524d7fde848b023f389d3c1fe660ca9861a4d697bb3c304f0b17b",
+        "hierarchy": "c8607e48de63ba1e220648cd85eee5b4a66936c8571955a2be5c97250733060f"
+      },
+      "commonDigests": {
+        "complete": "d70f2df71b08f23a9ed4215b1059c9be536a5c1d77499a1562575ee7c36819fb",
+        "hierarchy": "d70f2df71b08f23a9ed4215b1059c9be536a5c1d77499a1562575ee7c36819fb"
+      }
+    },
+    {
+      "sceneId": "sparse-cube-125",
+      "drones": 125,
+      "completeMedianSeconds": 1.54814275,
+      "hierarchyMedianSeconds": 0.4224301665,
+      "ratioOfMedians": {
+        "n": "3096285500",
+        "d": "844860333"
+      },
+      "medianPairedRatio": {
+        "n": "1282170800927649667",
+        "d": "356782392015680944"
+      },
+      "pairedRatios": [
+        {
+          "repetition": 1,
+          "pairOrder": "AB",
+          "completeNs": "1566098291",
+          "hierarchyNs": "441610750",
+          "ratio": {
+            "n": "1566098291",
+            "d": "441610750"
+          }
+        },
+        {
+          "repetition": 2,
+          "pairOrder": "BA",
+          "completeNs": "1544550917",
+          "hierarchyNs": "411730167",
+          "ratio": {
+            "n": "1544550917",
+            "d": "411730167"
+          }
+        },
+        {
+          "repetition": 3,
+          "pairOrder": "BA",
+          "completeNs": "1551734583",
+          "hierarchyNs": "429916792",
+          "ratio": {
+            "n": "1551734583",
+            "d": "429916792"
+          }
+        },
+        {
+          "repetition": 4,
+          "pairOrder": "AB",
+          "completeNs": "1484679292",
+          "hierarchyNs": "414943541",
+          "ratio": {
+            "n": "1484679292",
+            "d": "414943541"
+          }
+        }
+      ],
+      "ratioRange": [
+        3.5463319020200483,
+        3.7513668921908265
+      ],
+      "representativeScalarPairs": {
+        "complete": 62000,
+        "hierarchy": 4524
+      },
+      "measuredStageTotalsNs": {
+        "complete": {
+          "preparation": 207889459,
+          "spatial": 51291,
+          "assembly": 5849048958,
+          "admissionSolveCertificate": 90073375
+        },
+        "hierarchy": {
+          "preparation": 208799500,
+          "spatial": 4808793,
+          "assembly": 1392191749,
+          "admissionSolveCertificate": 92401208
+        }
+      },
+      "methodDigests": {
+        "complete": "7d4c998357c50973ed43887a22ebece4c81897e04541f33d7d361d60d2376bcd",
+        "hierarchy": "3c37b1ea60c08ba5708ff218622793d1c71d309fcbecc64b9efd8f832ad15200"
+      },
+      "commonDigests": {
+        "complete": "c85f4c4997a99594382f4509afcb6ba4eb9b598cdb78e443040816a3508bb157",
+        "hierarchy": "c85f4c4997a99594382f4509afcb6ba4eb9b598cdb78e443040816a3508bb157"
+      }
+    },
+    {
+      "sceneId": "sparse-cube-216",
+      "drones": 216,
+      "completeMedianSeconds": 4.769618646,
+      "hierarchyMedianSeconds": 0.5975138335,
+      "ratioOfMedians": {
+        "n": "9539237292",
+        "d": "1195027667"
+      },
+      "medianPairedRatio": {
+        "n": "5551130574530132903",
+        "d": "704555811605871750"
+      },
+      "pairedRatios": [
+        {
+          "repetition": 1,
+          "pairOrder": "AB",
+          "completeNs": "4496710417",
+          "hierarchyNs": "567724125",
+          "ratio": {
+            "n": "4496710417",
+            "d": "567724125"
+          }
+        },
+        {
+          "repetition": 2,
+          "pairOrder": "BA",
+          "completeNs": "4863068792",
+          "hierarchyNs": "620508959",
+          "ratio": {
+            "n": "4863068792",
+            "d": "620508959"
+          }
+        },
+        {
+          "repetition": 3,
+          "pairOrder": "BA",
+          "completeNs": "4907247916",
+          "hierarchyNs": "826935125",
+          "ratio": {
+            "n": "4907247916",
+            "d": "826935125"
+          }
+        },
+        {
+          "repetition": 4,
+          "pairOrder": "AB",
+          "completeNs": "4676168500",
+          "hierarchyNs": "574518708",
+          "ratio": {
+            "n": "1169042125",
+            "d": "143629677"
+          }
+        }
+      ],
+      "ratioRange": [
+        5.934259856237211,
+        8.139279774332431
+      ],
+      "representativeScalarPairs": {
+        "complete": 185760,
+        "hierarchy": 4352
+      },
+      "measuredStageTotalsNs": {
+        "complete": {
+          "preparation": 364891708,
+          "spatial": 102208,
+          "assembly": 18423177084,
+          "admissionSolveCertificate": 155024625
+        },
+        "hierarchy": {
+          "preparation": 495889875,
+          "spatial": 9422084,
+          "assembly": 1925427917,
+          "admissionSolveCertificate": 158947041
+        }
+      },
+      "methodDigests": {
+        "complete": "a4a714a55e99d56ec356dd039a63c19a00798175a3e7b1e10bf8fdaa2544a044",
+        "hierarchy": "c04ab9396eeb9c0765cab2c180d0cc46d2a029c3953eacb62c28f8c3484cf2f9"
+      },
+      "commonDigests": {
+        "complete": "03a1680065bb2749f667e70fbebdef46ecf9db77d23b37370288f057cbe3d685",
+        "hierarchy": "03a1680065bb2749f667e70fbebdef46ecf9db77d23b37370288f057cbe3d685"
+      }
+    }
+  ],
+  "workTotalsOneCallPerMethodScene": {
+    "complete": {
+      "scalarPairs": 527776,
+      "zeroPairs": 0,
+      "positiveTerms": 5404
+    },
+    "hierarchy": {
+      "scalarPairs": 95339,
+      "zeroPairs": 432437,
+      "positiveTerms": 5404
+    }
+  },
+  "workTotalsAllCalls": {
+    "complete": {
+      "scalarPairs": 2638880,
+      "zeroPairs": 0,
+      "positiveTerms": 27020
+    },
+    "hierarchy": {
+      "scalarPairs": 476695,
+      "zeroPairs": 2162185,
+      "positiveTerms": 27020
+    }
+  },
+  "checkerSavedVerdict": {
+    "passed": true,
+    "qualifiedRecords": 6,
+    "admittedRecords": 6,
+    "tolerancePassed": true,
+    "independentCoefficientOutcomes": 527776,
+    "validatedMethodOutcomes": 1055552,
+    "errorCount": 0
+  },
+  "controlsSavedVerdicts": [
+    {
+      "name": "omitted-positive-entry",
+      "errors": [
+        "implicit-zero-nonzero"
+      ],
+      "intendedCoreFailure": true
+    },
+    {
+      "name": "false-zero-active-leaf",
+      "errors": [
+        "node-zero-rule"
+      ],
+      "intendedCoreFailure": true
+    },
+    {
+      "name": "altered-positive-coefficient",
+      "errors": [
+        "coefficient-reference-containment"
+      ],
+      "intendedCoreFailure": true
+    },
+    {
+      "name": "false-root-one",
+      "errors": [
+        "root-defect-corollary"
+      ],
+      "intendedCoreFailure": true
+    },
+    {
+      "name": "altered-candidate",
+      "errors": [
+        "candidate-load-identity:rotor"
+      ],
+      "intendedCoreFailure": true
+    },
+    {
+      "name": "altered-candidate-load",
+      "errors": [
+        "candidate-load-identity:rotor"
+      ],
+      "intendedCoreFailure": true
+    },
+    {
+      "name": "false-load-box",
+      "errors": [
+        "signed-root-load-propagation:rotor"
+      ],
+      "intendedCoreFailure": true
+    },
+    {
+      "name": "false-error-zero",
+      "errors": [
+        "rotor-error-full-box"
+      ],
+      "intendedCoreFailure": true
+    },
+    {
+      "name": "missing-scene",
+      "errors": [
+        "scene-count"
+      ],
+      "intendedCoreFailure": true
+    },
+    {
+      "name": "duplicate-scene",
+      "errors": [
+        "duplicate-scene-id"
+      ],
+      "intendedCoreFailure": true
+    },
+    {
+      "name": "reordered-scenes",
+      "errors": [
+        "scene-order"
+      ],
+      "intendedCoreFailure": true
+    },
+    {
+      "name": "timing-partition-mismatch",
+      "errors": [
+        "timing-stage-partition"
+      ],
+      "intendedCoreFailure": true
+    },
+    {
+      "name": "trial-order-mismatch",
+      "errors": [
+        "trial-schedule"
+      ],
+      "intendedCoreFailure": true
+    },
+    {
+      "name": "trial-digest-mismatch",
+      "errors": [
+        "trial-scientific-digest-binding"
+      ],
+      "intendedCoreFailure": true
+    },
+    {
+      "name": "trial-work-mismatch",
+      "errors": [
+        "trial-work-reconstruction"
+      ],
+      "intendedCoreFailure": true
+    }
+  ],
+  "supervision": {
+    "kernel": {
+      "wallSeconds": 202.45597512461245,
+      "peakSampledGroupRssBytes": 304594944,
+      "samples": 2515,
+      "maxSampleGapSeconds": 0.18717825040221214,
+      "success": true,
+      "closed": true
+    },
+    "checker": {
+      "wallSeconds": 165.53534462489188,
+      "peakSampledGroupRssBytes": 199229440,
+      "samples": 1988,
+      "maxSampleGapSeconds": 0.18830225057899952,
+      "success": true,
+      "closed": true
+    }
+  },
+  "savedBytes": {
+    "scienceShards": 9214063,
+    "referenceEvidence": 1740979,
+    "allResults": 11172051,
+    "privateRawLogs": 110,
+    "logsAndMetadata": 996,
+    "resultsPlusPrivateRawLogs": 11172161
+  },
+  "privateRawLogsIndependentlyRehashed": true,
+  "pins": {
+    "timing-index.json": {
+      "bytes": 71826,
+      "sha256": "9281a8026b0f68b5041b9d0e1e41e6fe4ee7dae66685dde09149a7615c7e6fff"
+    },
+    "timing-index.json.jsonl": {
+      "bytes": 76840,
+      "sha256": "894093168ec26ed806bb201e7596cc89fb0dd3e9747d61e3dc58219df668d4ff"
+    },
+    "independent-check.json": {
+      "bytes": 49704,
+      "sha256": "e1999213ce853dfa9d807cd792881f197ea1e43f22d184355513ccd555d7d4e8"
+    },
+    "kernel-supervision.json": {
+      "bytes": 7121,
+      "sha256": "dc33f49595c88dff86615657b198580295dbd36179a59fb881bd427893ebbe70"
+    },
+    "checker-supervision.json": {
+      "bytes": 10632,
+      "sha256": "46f2770796f1672d56add17dbaabc844dd94758311b844ef2ad580c6b85347d2"
+    }
+  }
+}

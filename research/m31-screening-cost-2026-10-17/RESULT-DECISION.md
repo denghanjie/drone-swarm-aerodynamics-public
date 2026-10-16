@@ -1,0 +1,11 @@
+# Qualified static cost checkpoint; larger goal remains open
+
+The sole kernel and independent checker completed, closed their process groups and passed source/runtime/input identity gates. Six scenes qualified; every normalized load tolerance passed; all15targeted controls were detected; all60trial digests and common outputs matched the fixed representatives. The saved-evidence audit separately verified144source pins,80journal events, exact timing arithmetic and public/private log/reference identities.
+
+The hierarchy was faster in all24measured pairs. Median paired complete/hierarchy ratios ranged1.396–1.634for dense lattices and3.594–7.879for sparse lattices. These observations establish a cost improvement for the declared six-scene Node suite, not a general speedup theorem. Dense216still required8.761seconds median, so full-scale real-time coupled swarm performance is not demonstrated.
+
+The visible Three.js checkpoint displays the saved geometry, proofs, selected-rotor links, timing pairs and stage costs. Its sole6.627second display QA allocation passed58checks with no errors/warnings; desktop/mobile screenshots were visually inspected. The unused second display allocation is not a reason to rerun. The linked historical moving5,000-drone Boids replay remains airflow off.
+
+All scientific and display allocations are closed. Preserve their bytes and all prospective corrections/reviews. Publish this result manifest and verify its exact public commit, then record a durable restart receipt. Further science requires a fresh bounded protocol/source publication; no repair or rerun of this closed allocation.
+
+Next research direction: investigate the interaction stage, which dominates dense-case cost, under the unchanged scientific acceptance rules. Review verified published numerical-filter ideas before choosing an implementation. Faster conservative classification with explicit uncertainty/fallback is a hypothesis, not an established result. General tilted/cyclic coupling, Boids/dynamics integration,5,000-drone browser performance, physical data and novelty comparison remain separate outstanding obligations. Do not redefine the goal around this successful static subproblem.
