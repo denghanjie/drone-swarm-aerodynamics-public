@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Source accounting · recorded numerical profiles</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23102031'/%3E%3Cpath d='M7 11h18M5 16h22M7 21h18' stroke='%2347b8ba' stroke-width='2' fill='none'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./style.css">
+  <script type="importmap">{"imports":{"three":"../../../outputs/step02b-source/vendor/three.module.js"}}</script>
+</head>
+<body data-binding="pending">
+  <a class="skip" href="#profile-controls">Skip to profile controls</a>
+  <main>
+    <header>
+      <h1>The wake ignores motor strength.</h1>
+      <p class="intro">At a fixed position, the saved field outputs stay unchanged from source motors off to twice-hover strength. This is a finding about the current formula, not wake behavior after a real motor shutdown.</p>
+      <p class="caption">Explore the recorded numerical profiles below. This is a static scalar-profile display, not a physical fluid simulation.</p>
+      <nav aria-label="Checkpoint links">
+        <a href="../MILESTONE-SUMMARY.md">Summary</a>
+        <a href="../README.md">Full report</a>
+        <a href="../PROTOCOL.md">Audit protocol</a>
+        <a href="../results/result.json">Profile evidence</a>
+        <a href="../results/witness-stdout.json">Witness evidence</a>
+        <a href="../../../outputs/research-results.html">Historical Boids replay</a>
+      </nav>
+    </header>
+    <p id="status" role="status" aria-live="polite">Waiting for saved evidence and its binding. No numerical results are assumed.</p>
+    <noscript><p class="notice">JavaScript is needed for the viewer. The protocol and evidence links remain available.</p></noscript>
+
+    <div id="verified-content" hidden>
+      <section class="summary" aria-label="Recorded audit outcomes">
+        <div><span>Source-state witness</span><strong id="summary-witness"></strong><small id="summary-witness-calls"></small></div>
+        <div><span>Radial squared-profile retention</span><strong id="summary-retention"></strong><small>Retained squared-speed proxy, not thrust.</small></div>
+        <div><span>Numerical acceptance</span><strong id="summary-gate"></strong><small id="summary-convergence"></small></div>
+      </section>
+
+      <section class="lab" aria-labelledby="profiles-title">
+        <div class="section-heading"><h2 id="profiles-title">Recorded profile planes</h2><p id="record-count"></p></div>
+        <div class="controls" id="profile-controls">
+          <label>Downstream plane<select id="plane" aria-controls="scene plane-detail profile-plot profile-table"></select></label>
+          <label>Profile mode<select id="mode" aria-controls="scene plane-detail">
+            <option value="bothFades">Both fades · implemented profile</option>
+            <option value="radialOnly">Radial fade only</option>
+            <option value="untruncated">Untruncated profile</option>
+          </select></label>
+          <button id="reset-camera" type="button" disabled>Reset view</button>
+        </div>
+        <div class="explorer">
+          <div>
+            <div id="scene" role="img" tabindex="0" aria-label="Recorded axisymmetric scalar profiles. Use the plane selector and numeric tables for an accessible alternative."><p class="scene-fallback">The verified numeric tables are available below. The 3D view is loading.</p></div>
+            <p class="color-key"><span aria-hidden="true"></span><span id="color-scale"></span></p>
+            <p id="scene-help" class="caption">Drag to orbit; scroll or pinch to zoom. The camera stays still until you move it. Thin dashed rings mark the recorded sampling extent, not a nonzero-support boundary.</p>
+          </div>
+          <aside id="plane-detail" aria-live="polite">
+            <h3 id="plane-title"></h3>
+            <p id="plane-state" class="notice"></p>
+            <dl class="readout">
+              <dt>Mode</dt><dd id="mode-name"></dd>
+              <dt>J proxy, N</dt><dd id="plane-j"></dd>
+              <dt>Half-width b, m</dt><dd id="plane-width"></dd>
+              <dt>Nominal cutoff 3b, m</dt><dd id="plane-cutoff"></dd>
+              <dt>Downstream fade</dt><dd id="plane-fade"></dd>
+              <dt>Both-fades J / weight</dt><dd id="plane-ratio"></dd>
+            </dl>
+            <h3 class="plot-heading">Same plane, three saved profiles</h3>
+            <svg id="profile-plot" viewBox="0 0 360 210" role="img" aria-labelledby="plot-title plot-desc"><title id="plot-title">Saved radial profile comparison</title><desc id="plot-desc"></desc></svg>
+            <div class="plot-legend" aria-label="Profile colors"><span class="untruncated">Untruncated</span><span class="radialOnly">Radial only</span><span class="bothFades">Both fades</span></div>
+          </aside>
+        </div>
+        <p class="boundary">The near-source region <strong>s/D &lt; 2.5</strong> is unavailable. All recorded planes start at 0.25 m. At <strong>s ≥ 2.5 m</strong>, the both-fades field is empty. The untruncated and radial-only modes remain separate reference profiles.</p>
+        <p class="caption">Colors use the saved scalar speeds; circles repeat each saved radial value around the source axis. Connecting samples is display interpolation. The field-plane accounting excludes the receiver-center neighborhood gate and receiver projection.</p>
+        <details>
+          <summary>Accessible values for the selected plane · 41 saved radial points</summary>
+          <div class="table-wrap"><table id="profile-table"><caption>Saved values only. Profile speeds are in m/s; radius is in m. Display values retain up to eight significant digits.</caption><thead><tr><th scope="col">r / b</th><th scope="col">Radius</th><th scope="col">Untruncated</th><th scope="col">Radial only</th><th scope="col">Both fades</th></tr></thead><tbody></tbody></table></div>
+        </details>
+        <details>
+          <summary>All ten planes · saved squared-profile accounting</summary>
+          <div class="table-wrap"><table id="plane-table"><caption>J has units of N but is a squared-profile proxy, not measured thrust.</caption><thead><tr><th scope="col">s, m</th><th scope="col">b, m</th><th scope="col">3b, m (nominal)</th><th scope="col">J untruncated, N</th><th scope="col">J radial only, N</th><th scope="col">J both fades, N</th><th scope="col">Both-fades empty?</th></tr></thead><tbody></tbody></table></div>
+        </details>
+      </section>
+
+      <section class="witness" aria-labelledby="witness-title">
+        <div class="section-heading"><h2 id="witness-title">Source-state witness</h2><p>Saved field calls, separate from the profile view.</p></div>
+        <div class="witness-layout">
+          <div>
+            <label class="standalone-label">Source motor state<select id="witness" aria-controls="witness-detail witness-table witness-json"></select></label>
+            <div id="witness-detail" aria-live="polite">
+              <p id="witness-outcome" class="notice"></p>
+              <dl class="readout"><dt>Selected source total, N</dt><dd id="witness-total"></dd><dt>Source rotors 1–4, N</dt><dd id="witness-motors"></dd><dt>Receiver inflows 1–4, m/s</dt><dd id="witness-inflows"></dd><dt>Saved pair-call count</dt><dd id="witness-calls"></dd><dt>Stimulus admitted</dt><dd id="witness-stimulus"></dd></dl>
+            </div>
+          </div>
+          <div class="witness-explanation"><h3>Motor state selects evidence.</h3><p>Changing this selector highlights four of the twenty saved pair outputs. It does not scale or redraw the source profile.</p><p>The witness tests the current formula at fixed geometry. An “off” source case is not a measurement of wake decay after motor shutdown.</p><p id="witness-scope" class="caption"></p></div>
+        </div>
+        <details><summary>All 20 saved pair outputs · selected case highlighted</summary>
+          <div class="table-wrap"><table id="witness-table"><caption>All 20 saved outputs. The selected case is highlighted. Receiver indices are displayed 1–4; symbol, validity, and stage retain the recorded numeric codes. Inflow values are shown without display rounding.</caption><thead><tr><th scope="col">Source case</th><th scope="col">Receiver rotor</th><th scope="col">Inflow, m/s</th><th scope="col">Symbol</th><th scope="col">Downstream, m</th><th scope="col">Radial, m</th><th scope="col">Projection</th><th scope="col">Center distance, m</th><th scope="col">Validity</th><th scope="col">Stage</th></tr></thead><tbody></tbody></table></div>
+        </details>
+        <details><summary>Selected witness record · full saved fields</summary><pre id="witness-json"></pre></details>
+      </section>
+
+      <section class="evidence" aria-labelledby="evidence-title">
+        <h2 id="evidence-title">Evidence boundary</h2>
+        <p>J integrates a modeled scalar profile squared. Pressure, turbulence, transverse momentum transport, and complete thrust balance are outside this display. No measured thrust, new flow measurements, safe-flight claim, or physical 27 g validation follows.</p>
+        <details><summary>Technical detail · untruncated normalization</summary><p class="caption">Saved untruncated J / nominal weight: <strong id="summary-ratio"></strong>. This is the normalization of a squared-speed proxy with force units. It is not a measured fraction of thrust or a complete momentum balance.</p></details>
+        <p>Only the two saved result files are loaded. Byte counts and SHA-256 hashes are verified against <a href="./binding.json">binding.json</a>. This binds the display to those bytes; it does not authenticate a maliciously replaced binding or independently validate the science.</p>
+        <div id="receipts"></div>
+        <p class="caption">Source definitions: <a href="../source/audit.py">audit schema</a> · <a href="../source/witness.cjs">source-state witness</a> · <a href="../freeze.json">source freeze</a>.</p>
+      </section>
+    </div>
+    <footer><span>Source accounting · recorded numerical evidence</span><a href="../../../outputs/research-results.html">Open historical Boids replay</a><a href="../PROTOCOL.md">Read the complete scope</a></footer>
+  </main>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

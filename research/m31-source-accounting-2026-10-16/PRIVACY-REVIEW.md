@@ -1,0 +1,9 @@
+# Public checkpoint review
+
+The package contains project-owned numerical source, synthetic field outputs, numerical profile records, review code/results, short attributed published-number arithmetic and an evidence display. No private attachment, conversation, account token, credential, personal home path, machine serial number or private dataset is included. Existing public repository identity and scientific software versions remain for provenance.
+
+The primary numerical outputs, frozen source, independent review and screenshots are unchanged. Display QA failures originally included temporary profile paths, a private script path and transient process IDs. Only those metadata strings were replaced with role labels in public copies. `qa/IMPORT.json` records original and public SHA-256 values for every imported QA file and describes each transformation. Original failure logs remain private. `REVIEW-IMPORT.json` records exact, untransformed independent-review imports.
+
+Root inspected the final screenshot states: they show only this public research viewer. The deliberate corruption was confined to a Playwright response route and did not alter a result file. Existing locally vendored Three.js is reused; no new third-party binaries, measurement archives or licensed raw datasets were added. Bibliographic links and small attributed numeric comparisons are distinct from permission to redistribute a paper's full figures or dataset.
+
+Before publication, the complete package is checked for private absolute paths, likely credential patterns and unexpected binary files. Frozen source pins and reviewer import pins are checked for byte equality. The final `manifest.json` pins the public bytes, including the sanitized QA logs. The manifest excludes itself to avoid a circular hash; remote publication receipts are recorded separately after commit verification.

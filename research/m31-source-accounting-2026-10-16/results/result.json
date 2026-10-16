@@ -1,0 +1,3101 @@
+{
+  "convergence512To1024": {
+    "untruncatedAbsoluteDifference": 7.502887200416808e-13,
+    "radialFadedAbsoluteDifference": 4.620193116977589e-13
+  },
+  "planeRatioMaxDifference": 2.220446049250313e-16,
+  "kind": "finite-source-accounting-result",
+  "numericalGatePass": true,
+  "constants": {
+    "a": 0.41421356237309515,
+    "C": 10.11,
+    "S": 0.07668,
+    "origin": -5.817,
+    "D": 0.07919595949289333,
+    "rotorRadius": 0.023,
+    "rho": 1.225,
+    "mass": 0.027,
+    "g": 9.81,
+    "nominalWeightN": 0.26487,
+    "UH": 4.032743274241601
+  },
+  "untruncatedJOverWeight": 0.7167725102581919,
+  "quadrature": [
+    {
+      "subdivisionsPerUnitInterval": 128,
+      "untruncatedIntegral": 0.40236892726707596,
+      "analyticIntegral": 0.4023689270621824,
+      "absoluteError": 2.048935465737145e-10,
+      "radialFadedIntegral": 0.3908476717442023,
+      "retention": 0.971366438750377
+    },
+    {
+      "subdivisionsPerUnitInterval": 256,
+      "untruncatedIntegral": 0.4023689270749868,
+      "analyticIntegral": 0.4023689270621824,
+      "absoluteError": 1.2804368676455624e-11,
+      "radialFadedIntegral": 0.39084767162590645,
+      "retention": 0.9713664384563785
+    },
+    {
+      "subdivisionsPerUnitInterval": 512,
+      "untruncatedIntegral": 0.4023689270629827,
+      "analyticIntegral": 0.4023689270621824,
+      "absoluteError": 8.003042673010441e-13,
+      "radialFadedIntegral": 0.39084767161851397,
+      "retention": 0.9713664384380061
+    },
+    {
+      "subdivisionsPerUnitInterval": 1024,
+      "untruncatedIntegral": 0.40236892706223243,
+      "analyticIntegral": 0.4023689270621824,
+      "absoluteError": 5.00155472593633e-14,
+      "radialFadedIntegral": 0.39084767161805195,
+      "retention": 0.9713664384368579
+    }
+  ],
+  "radialSquaredProfileRetention": 0.9713664384368579,
+  "planes": [
+    {
+      "downstreamM": 0.25,
+      "halfWidthM": 0.05449516449366391,
+      "nominalRadialCutoffM": 0.16348549348099173,
+      "fadedFieldIdenticallyZero": false,
+      "centerlineUntruncatedMps": 4.543378225987455,
+      "downstreamFade": 1.0,
+      "JUntruncatedN": 0.18985153479208722,
+      "JRadialOnlyN": 0.18441540918276098,
+      "JBothFadesN": 0.18441540918276098,
+      "JBothOverNominalWeight": 0.6962487604589458,
+      "profile": [
+        {
+          "xi": 0.0,
+          "radiusM": 0.0,
+          "untruncatedMps": 4.543378225987455,
+          "radialOnlyMps": 4.543378225987455,
+          "bothFadesMps": 4.543378225987455
+        },
+        {
+          "xi": 0.1,
+          "radiusM": 0.005449516449366391,
+          "untruncatedMps": 4.505972219625595,
+          "radialOnlyMps": 4.505972219625595,
+          "bothFadesMps": 4.505972219625595
+        },
+        {
+          "xi": 0.2,
+          "radiusM": 0.010899032898732782,
+          "untruncatedMps": 4.396484633030952,
+          "radialOnlyMps": 4.396484633030952,
+          "bothFadesMps": 4.396484633030952
+        },
+        {
+          "xi": 0.3,
+          "radiusM": 0.01634854934809917,
+          "untruncatedMps": 4.22267382763998,
+          "radialOnlyMps": 4.22267382763998,
+          "bothFadesMps": 4.22267382763998
+        },
+        {
+          "xi": 0.4,
+          "radiusM": 0.021798065797465564,
+          "untruncatedMps": 3.9961438651635506,
+          "radialOnlyMps": 3.9961438651635506,
+          "bothFadesMps": 3.9961438651635506
+        },
+        {
+          "xi": 0.5,
+          "radiusM": 0.027247582246831954,
+          "untruncatedMps": 3.7307160322512907,
+          "radialOnlyMps": 3.7307160322512907,
+          "bothFadesMps": 3.7307160322512907
+        },
+        {
+          "xi": 0.6,
+          "radiusM": 0.03269709869619834,
+          "untruncatedMps": 3.440729111187157,
+          "radialOnlyMps": 3.440729111187157,
+          "bothFadesMps": 3.440729111187157
+        },
+        {
+          "xi": 0.7,
+          "radiusM": 0.038146615145564736,
+          "untruncatedMps": 3.1395916446370467,
+          "radialOnlyMps": 3.1395916446370467,
+          "bothFadesMps": 3.1395916446370467
+        },
+        {
+          "xi": 0.8,
+          "radiusM": 0.04359613159493113,
+          "untruncatedMps": 2.8387781929136224,
+          "radialOnlyMps": 2.8387781929136224,
+          "bothFadesMps": 2.8387781929136224
+        },
+        {
+          "xi": 0.9,
+          "radiusM": 0.049045648044297514,
+          "untruncatedMps": 2.5473150534962072,
+          "radialOnlyMps": 2.5473150534962072,
+          "bothFadesMps": 2.5473150534962072
+        },
+        {
+          "xi": 1.0,
+          "radiusM": 0.05449516449366391,
+          "untruncatedMps": 2.271689112993727,
+          "radialOnlyMps": 2.271689112993727,
+          "bothFadesMps": 2.271689112993727
+        },
+        {
+          "xi": 1.1,
+          "radiusM": 0.0599446809430303,
+          "untruncatedMps": 2.0160565070510024,
+          "radialOnlyMps": 2.0160565070510024,
+          "bothFadesMps": 2.0160565070510024
+        },
+        {
+          "xi": 1.2,
+          "radiusM": 0.06539419739239669,
+          "untruncatedMps": 1.7826197442743927,
+          "radialOnlyMps": 1.7826197442743927,
+          "bothFadesMps": 1.7826197442743927
+        },
+        {
+          "xi": 1.3,
+          "radiusM": 0.07084371384176308,
+          "untruncatedMps": 1.5720645001042772,
+          "radialOnlyMps": 1.5720645001042772,
+          "bothFadesMps": 1.5720645001042772
+        },
+        {
+          "xi": 1.4,
+          "radiusM": 0.07629323029112947,
+          "untruncatedMps": 1.383981540152916,
+          "radialOnlyMps": 1.383981540152916,
+          "bothFadesMps": 1.383981540152916
+        },
+        {
+          "xi": 1.5,
+          "radiusM": 0.08174274674049586,
+          "untruncatedMps": 1.217232131975952,
+          "radialOnlyMps": 1.217232131975952,
+          "bothFadesMps": 1.217232131975952
+        },
+        {
+          "xi": 1.6,
+          "radiusM": 0.08719226318986226,
+          "untruncatedMps": 1.0702405664115464,
+          "radialOnlyMps": 1.0702405664115464,
+          "bothFadesMps": 1.0702405664115464
+        },
+        {
+          "xi": 1.7,
+          "radiusM": 0.09264177963922864,
+          "untruncatedMps": 0.9412137427594857,
+          "radialOnlyMps": 0.9412137427594857,
+          "bothFadesMps": 0.9412137427594857
+        },
+        {
+          "xi": 1.8,
+          "radiusM": 0.09809129608859503,
+          "untruncatedMps": 0.8282965397587801,
+          "radialOnlyMps": 0.8282965397587801,
+          "bothFadesMps": 0.8282965397587801
+        },
+        {
+          "xi": 1.9,
+          "radiusM": 0.10354081253796142,
+          "untruncatedMps": 0.7296751298073475,
+          "radialOnlyMps": 0.7296751298073475,
+          "bothFadesMps": 0.7296751298073475
+        },
+        {
+          "xi": 2.0,
+          "radiusM": 0.10899032898732781,
+          "untruncatedMps": 0.6436406007823351,
+          "radialOnlyMps": 0.6436406007823351,
+          "bothFadesMps": 0.6436406007823351
+        },
+        {
+          "xi": 2.1,
+          "radiusM": 0.11443984543669421,
+          "untruncatedMps": 0.5686238139444126,
+          "radialOnlyMps": 0.552702347153969,
+          "bothFadesMps": 0.552702347153969
+        },
+        {
+          "xi": 2.2,
+          "radiusM": 0.1198893618860606,
+          "untruncatedMps": 0.5032103778496878,
+          "radialOnlyMps": 0.4508764985533202,
+          "bothFadesMps": 0.4508764985533202
+        },
+        {
+          "xi": 2.3,
+          "radiusM": 0.12533887833542698,
+          "untruncatedMps": 0.4461425415466653,
+          "radialOnlyMps": 0.34977575257258575,
+          "bothFadesMps": 0.34977575257258575
+        },
+        {
+          "xi": 2.4,
+          "radiusM": 0.13078839478479337,
+          "untruncatedMps": 0.39631298583133184,
+          "radialOnlyMps": 0.2568108148187031,
+          "bothFadesMps": 0.2568108148187031
+        },
+        {
+          "xi": 2.5,
+          "radiusM": 0.13623791123415976,
+          "untruncatedMps": 0.35275401526732675,
+          "radialOnlyMps": 0.17637700763366337,
+          "bothFadesMps": 0.17637700763366337
+        },
+        {
+          "xi": 2.6,
+          "radiusM": 0.14168742768352616,
+          "untruncatedMps": 0.3146245241501612,
+          "radialOnlyMps": 0.1107478325008567,
+          "bothFadesMps": 0.1107478325008567
+        },
+        {
+          "xi": 2.7,
+          "radiusM": 0.14713694413289255,
+          "untruncatedMps": 0.28119628057638374,
+          "radialOnlyMps": 0.06073839660449883,
+          "bothFadesMps": 0.06073839660449883
+        },
+        {
+          "xi": 2.8,
+          "radiusM": 0.15258646058225894,
+          "untruncatedMps": 0.2518404848020208,
+          "radialOnlyMps": 0.026191410419410206,
+          "bothFadesMps": 0.026191410419410206
+        },
+        {
+          "xi": 2.9,
+          "radiusM": 0.15803597703162534,
+          "untruncatedMps": 0.2260151536930004,
+          "radialOnlyMps": 0.0063284243034040216,
+          "bothFadesMps": 0.0063284243034040216
+        },
+        {
+          "xi": 3.0,
+          "radiusM": 0.16348549348099173,
+          "untruncatedMps": 0.20325361332396735,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.1,
+          "radiusM": 0.16893500993035812,
+          "untruncatedMps": 0.18315420783049918,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.2,
+          "radiusM": 0.1743845263797245,
+          "untruncatedMps": 0.16537122507414473,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.3,
+          "radiusM": 0.17983404282909088,
+          "untruncatedMps": 0.14960697705144368,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.4,
+          "radiusM": 0.18528355927845727,
+          "untruncatedMps": 0.13560493997075984,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.5,
+          "radiusM": 0.19073307572782366,
+          "untruncatedMps": 0.12314384488786734,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.6,
+          "radiusM": 0.19618259217719006,
+          "untruncatedMps": 0.11203260747234907,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.7,
+          "radiusM": 0.20163210862655648,
+          "untruncatedMps": 0.10210599001925313,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.8,
+          "radiusM": 0.20708162507592284,
+          "untruncatedMps": 0.09322089705010773,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.9,
+          "radiusM": 0.21253114152528924,
+          "untruncatedMps": 0.08525321574075016,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 4.0,
+          "radiusM": 0.21798065797465563,
+          "untruncatedMps": 0.0780951227223852,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        }
+      ]
+    },
+    {
+      "downstreamM": 0.6,
+      "halfWidthM": 0.0813331644936639,
+      "nominalRadialCutoffM": 0.2439994934809917,
+      "fadedFieldIdenticallyZero": false,
+      "centerlineUntruncatedMps": 3.0441720216284645,
+      "downstreamFade": 1.0,
+      "JUntruncatedN": 0.18985153479208727,
+      "JRadialOnlyN": 0.184415409182761,
+      "JBothFadesN": 0.184415409182761,
+      "JBothOverNominalWeight": 0.6962487604589459,
+      "profile": [
+        {
+          "xi": 0.0,
+          "radiusM": 0.0,
+          "untruncatedMps": 3.0441720216284645,
+          "radialOnlyMps": 3.0441720216284645,
+          "bothFadesMps": 3.0441720216284645
+        },
+        {
+          "xi": 0.1,
+          "radiusM": 0.008133316449366391,
+          "untruncatedMps": 3.0191091031691757,
+          "radialOnlyMps": 3.0191091031691757,
+          "bothFadesMps": 3.0191091031691757
+        },
+        {
+          "xi": 0.2,
+          "radiusM": 0.016266632898732782,
+          "untruncatedMps": 2.945749802831684,
+          "radialOnlyMps": 2.945749802831684,
+          "bothFadesMps": 2.945749802831684
+        },
+        {
+          "xi": 0.3,
+          "radiusM": 0.024399949348099168,
+          "untruncatedMps": 2.8292924082433406,
+          "radialOnlyMps": 2.8292924082433406,
+          "bothFadesMps": 2.8292924082433406
+        },
+        {
+          "xi": 0.4,
+          "radiusM": 0.032533265797465565,
+          "untruncatedMps": 2.677511918147468,
+          "radialOnlyMps": 2.677511918147468,
+          "bothFadesMps": 2.677511918147468
+        },
+        {
+          "xi": 0.5,
+          "radiusM": 0.04066658224683195,
+          "untruncatedMps": 2.499668924999486,
+          "radialOnlyMps": 2.499668924999486,
+          "bothFadesMps": 2.499668924999486
+        },
+        {
+          "xi": 0.6,
+          "radiusM": 0.048799898696198336,
+          "untruncatedMps": 2.3053707557006367,
+          "radialOnlyMps": 2.3053707557006367,
+          "bothFadesMps": 2.3053707557006367
+        },
+        {
+          "xi": 0.7,
+          "radiusM": 0.05693321514556473,
+          "untruncatedMps": 2.1036014543705264,
+          "radialOnlyMps": 2.1036014543705264,
+          "bothFadesMps": 2.1036014543705264
+        },
+        {
+          "xi": 0.8,
+          "radiusM": 0.06506653159493113,
+          "untruncatedMps": 1.9020492507199251,
+          "radialOnlyMps": 1.9020492507199251,
+          "bothFadesMps": 1.9020492507199251
+        },
+        {
+          "xi": 0.9,
+          "radiusM": 0.07319984804429751,
+          "untruncatedMps": 1.7067619798351301,
+          "radialOnlyMps": 1.7067619798351301,
+          "bothFadesMps": 1.7067619798351301
+        },
+        {
+          "xi": 1.0,
+          "radiusM": 0.0813331644936639,
+          "untruncatedMps": 1.5220860108142318,
+          "radialOnlyMps": 1.5220860108142318,
+          "bothFadesMps": 1.5220860108142318
+        },
+        {
+          "xi": 1.1,
+          "radiusM": 0.0894664809430303,
+          "untruncatedMps": 1.3508060538923787,
+          "radialOnlyMps": 1.3508060538923787,
+          "bothFadesMps": 1.3508060538923787
+        },
+        {
+          "xi": 1.2,
+          "radiusM": 0.09759979739239667,
+          "untruncatedMps": 1.1943978424871682,
+          "radialOnlyMps": 1.1943978424871682,
+          "bothFadesMps": 1.1943978424871682
+        },
+        {
+          "xi": 1.3,
+          "radiusM": 0.10573311384176308,
+          "untruncatedMps": 1.0533207955348407,
+          "radialOnlyMps": 1.0533207955348407,
+          "bothFadesMps": 1.0533207955348407
+        },
+        {
+          "xi": 1.4,
+          "radiusM": 0.11386643029112946,
+          "untruncatedMps": 0.9273007162127935,
+          "radialOnlyMps": 0.9273007162127935,
+          "bothFadesMps": 0.9273007162127935
+        },
+        {
+          "xi": 1.5,
+          "radiusM": 0.12199974674049585,
+          "untruncatedMps": 0.8155746265617181,
+          "radialOnlyMps": 0.8155746265617181,
+          "bothFadesMps": 0.8155746265617181
+        },
+        {
+          "xi": 1.6,
+          "radiusM": 0.13013306318986226,
+          "untruncatedMps": 0.717086763775591,
+          "radialOnlyMps": 0.717086763775591,
+          "bothFadesMps": 0.717086763775591
+        },
+        {
+          "xi": 1.7,
+          "radiusM": 0.13826637963922864,
+          "untruncatedMps": 0.630635707520897,
+          "radialOnlyMps": 0.630635707520897,
+          "bothFadesMps": 0.630635707520897
+        },
+        {
+          "xi": 1.8,
+          "radiusM": 0.14639969608859502,
+          "untruncatedMps": 0.5549784822057889,
+          "radialOnlyMps": 0.5549784822057889,
+          "bothFadesMps": 0.5549784822057889
+        },
+        {
+          "xi": 1.9,
+          "radiusM": 0.1545330125379614,
+          "untruncatedMps": 0.48889977997701894,
+          "radialOnlyMps": 0.48889977997701894,
+          "bothFadesMps": 0.48889977997701894
+        },
+        {
+          "xi": 2.0,
+          "radiusM": 0.1626663289873278,
+          "untruncatedMps": 0.4312545888604456,
+          "radialOnlyMps": 0.4312545888604456,
+          "bothFadesMps": 0.4312545888604456
+        },
+        {
+          "xi": 2.1,
+          "radiusM": 0.1707996454366942,
+          "untruncatedMps": 0.3809915483901934,
+          "radialOnlyMps": 0.37032378503526797,
+          "bothFadesMps": 0.37032378503526797
+        },
+        {
+          "xi": 2.2,
+          "radiusM": 0.1789329618860606,
+          "untruncatedMps": 0.33716298248759036,
+          "radialOnlyMps": 0.3020980323088809,
+          "bothFadesMps": 0.3020980323088809
+        },
+        {
+          "xi": 2.3,
+          "radiusM": 0.18706627833542697,
+          "untruncatedMps": 0.2989261679483876,
+          "radialOnlyMps": 0.23435811567153597,
+          "bothFadesMps": 0.23435811567153597
+        },
+        {
+          "xi": 2.4,
+          "radiusM": 0.19519959478479335,
+          "untruncatedMps": 0.2655391744352454,
+          "radialOnlyMps": 0.17206938503403904,
+          "bothFadesMps": 0.17206938503403904
+        },
+        {
+          "xi": 2.5,
+          "radiusM": 0.20333291123415975,
+          "untruncatedMps": 0.23635362287288061,
+          "radialOnlyMps": 0.11817681143644031,
+          "bothFadesMps": 0.11817681143644031
+        },
+        {
+          "xi": 2.6,
+          "radiusM": 0.21146622768352616,
+          "untruncatedMps": 0.2108059523325132,
+          "radialOnlyMps": 0.07420369522104461,
+          "bothFadesMps": 0.07420369522104461
+        },
+        {
+          "xi": 2.7,
+          "radiusM": 0.21959954413289254,
+          "untruncatedMps": 0.18840823003032514,
+          "radialOnlyMps": 0.04069617768655019,
+          "bothFadesMps": 0.04069617768655019
+        },
+        {
+          "xi": 2.8,
+          "radiusM": 0.22773286058225892,
+          "untruncatedMps": 0.168739145106291,
+          "radialOnlyMps": 0.017548871091054293,
+          "bothFadesMps": 0.017548871091054293
+        },
+        {
+          "xi": 2.9,
+          "radiusM": 0.2358661770316253,
+          "untruncatedMps": 0.1514355559043851,
+          "radialOnlyMps": 0.00424019556532279,
+          "bothFadesMps": 0.00424019556532279
+        },
+        {
+          "xi": 3.0,
+          "radiusM": 0.2439994934809917,
+          "untruncatedMps": 0.13618477973870105,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.1,
+          "radiusM": 0.2521328099303581,
+          "untruncatedMps": 0.12271769757842524,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.2,
+          "radiusM": 0.2602661263797245,
+          "untruncatedMps": 0.1108026740264888,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.3,
+          "radiusM": 0.26839944282909084,
+          "untruncatedMps": 0.10024025100429182,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.4,
+          "radiusM": 0.2765327592784573,
+          "untruncatedMps": 0.09085855143919386,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.5,
+          "radiusM": 0.28466607572782365,
+          "untruncatedMps": 0.08250931984909245,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.6,
+          "radiusM": 0.29279939217719003,
+          "untruncatedMps": 0.07506452516470523,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.7,
+          "radiusM": 0.30093270862655647,
+          "untruncatedMps": 0.06841345417367942,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.8,
+          "radiusM": 0.3090660250759228,
+          "untruncatedMps": 0.062460229484717564,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.9,
+          "radiusM": 0.3171993415252892,
+          "untruncatedMps": 0.05712169253869283,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 4.0,
+          "radiusM": 0.3253326579746556,
+          "untruncatedMps": 0.052325599100976714,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        }
+      ]
+    },
+    {
+      "downstreamM": 1,
+      "halfWidthM": 0.1120051644936639,
+      "nominalRadialCutoffM": 0.3360154934809917,
+      "fadedFieldIdenticallyZero": false,
+      "centerlineUntruncatedMps": 2.210542209382885,
+      "downstreamFade": 1.0,
+      "JUntruncatedN": 0.18985153479208725,
+      "JRadialOnlyN": 0.18441540918276098,
+      "JBothFadesN": 0.18441540918276098,
+      "JBothOverNominalWeight": 0.6962487604589458,
+      "profile": [
+        {
+          "xi": 0.0,
+          "radiusM": 0.0,
+          "untruncatedMps": 2.210542209382885,
+          "radialOnlyMps": 2.210542209382885,
+          "bothFadesMps": 2.210542209382885
+        },
+        {
+          "xi": 0.1,
+          "radiusM": 0.011200516449366392,
+          "untruncatedMps": 2.1923426336851417,
+          "radialOnlyMps": 2.1923426336851417,
+          "bothFadesMps": 2.1923426336851417
+        },
+        {
+          "xi": 0.2,
+          "radiusM": 0.022401032898732784,
+          "untruncatedMps": 2.1390723754031957,
+          "radialOnlyMps": 2.1390723754031957,
+          "bothFadesMps": 2.1390723754031957
+        },
+        {
+          "xi": 0.3,
+          "radiusM": 0.03360154934809917,
+          "untruncatedMps": 2.054506199607855,
+          "radialOnlyMps": 2.054506199607855,
+          "bothFadesMps": 2.054506199607855
+        },
+        {
+          "xi": 0.4,
+          "radiusM": 0.04480206579746557,
+          "untruncatedMps": 1.9442899642788594,
+          "radialOnlyMps": 1.9442899642788594,
+          "bothFadesMps": 1.9442899642788594
+        },
+        {
+          "xi": 0.5,
+          "radiusM": 0.05600258224683195,
+          "untruncatedMps": 1.815148299417784,
+          "radialOnlyMps": 1.815148299417784,
+          "bothFadesMps": 1.815148299417784
+        },
+        {
+          "xi": 0.6,
+          "radiusM": 0.06720309869619834,
+          "untruncatedMps": 1.6740576181457163,
+          "radialOnlyMps": 1.6740576181457163,
+          "bothFadesMps": 1.6740576181457163
+        },
+        {
+          "xi": 0.7,
+          "radiusM": 0.07840361514556472,
+          "untruncatedMps": 1.52754173337344,
+          "radialOnlyMps": 1.52754173337344,
+          "bothFadesMps": 1.52754173337344
+        },
+        {
+          "xi": 0.8,
+          "radiusM": 0.08960413159493114,
+          "untruncatedMps": 1.3811834952718198,
+          "radialOnlyMps": 1.3811834952718198,
+          "bothFadesMps": 1.3811834952718198
+        },
+        {
+          "xi": 0.9,
+          "radiusM": 0.10080464804429752,
+          "untruncatedMps": 1.239374572458352,
+          "radialOnlyMps": 1.239374572458352,
+          "bothFadesMps": 1.239374572458352
+        },
+        {
+          "xi": 1.0,
+          "radiusM": 0.1120051644936639,
+          "untruncatedMps": 1.1052711046914423,
+          "radialOnlyMps": 1.1052711046914423,
+          "bothFadesMps": 1.1052711046914423
+        },
+        {
+          "xi": 1.1,
+          "radiusM": 0.1232056809430303,
+          "untruncatedMps": 0.9808952245811925,
+          "radialOnlyMps": 0.9808952245811925,
+          "bothFadesMps": 0.9808952245811925
+        },
+        {
+          "xi": 1.2,
+          "radiusM": 0.13440619739239668,
+          "untruncatedMps": 0.8673185440425074,
+          "radialOnlyMps": 0.8673185440425074,
+          "bothFadesMps": 0.8673185440425074
+        },
+        {
+          "xi": 1.3,
+          "radiusM": 0.14560671384176307,
+          "untruncatedMps": 0.7648746726556384,
+          "radialOnlyMps": 0.7648746726556384,
+          "bothFadesMps": 0.7648746726556384
+        },
+        {
+          "xi": 1.4,
+          "radiusM": 0.15680723029112945,
+          "untruncatedMps": 0.67336450089401,
+          "radialOnlyMps": 0.67336450089401,
+          "bothFadesMps": 0.67336450089401
+        },
+        {
+          "xi": 1.5,
+          "radiusM": 0.16800774674049584,
+          "untruncatedMps": 0.5922339881278883,
+          "radialOnlyMps": 0.5922339881278883,
+          "bothFadesMps": 0.5922339881278883
+        },
+        {
+          "xi": 1.6,
+          "radiusM": 0.17920826318986227,
+          "untruncatedMps": 0.5207164864053082,
+          "radialOnlyMps": 0.5207164864053082,
+          "bothFadesMps": 0.5207164864053082
+        },
+        {
+          "xi": 1.7,
+          "radiusM": 0.19040877963922864,
+          "untruncatedMps": 0.45793957776185207,
+          "radialOnlyMps": 0.45793957776185207,
+          "bothFadesMps": 0.45793957776185207
+        },
+        {
+          "xi": 1.8,
+          "radiusM": 0.20160929608859504,
+          "untruncatedMps": 0.403000668654353,
+          "radialOnlyMps": 0.403000668654353,
+          "bothFadesMps": 0.403000668654353
+        },
+        {
+          "xi": 1.9,
+          "radiusM": 0.2128098125379614,
+          "untruncatedMps": 0.355017256619773,
+          "radialOnlyMps": 0.355017256619773,
+          "bothFadesMps": 0.355017256619773
+        },
+        {
+          "xi": 2.0,
+          "radiusM": 0.2240103289873278,
+          "untruncatedMps": 0.31315788493322744,
+          "radialOnlyMps": 0.31315788493322744,
+          "bothFadesMps": 0.31315788493322744
+        },
+        {
+          "xi": 2.1,
+          "radiusM": 0.2352108454366942,
+          "untruncatedMps": 0.27665910242619435,
+          "radialOnlyMps": 0.2689126475582609,
+          "bothFadesMps": 0.2689126475582609
+        },
+        {
+          "xi": 2.2,
+          "radiusM": 0.2464113618860606,
+          "untruncatedMps": 0.24483274891658047,
+          "radialOnlyMps": 0.21937014302925606,
+          "bothFadesMps": 0.21937014302925606
+        },
+        {
+          "xi": 2.3,
+          "radiusM": 0.257611878335427,
+          "untruncatedMps": 0.217066876327673,
+          "radialOnlyMps": 0.17018043104089567,
+          "bothFadesMps": 0.17018043104089567
+        },
+        {
+          "xi": 2.4,
+          "radiusM": 0.26881239478479335,
+          "untruncatedMps": 0.19282272787586743,
+          "radialOnlyMps": 0.12494912766356213,
+          "bothFadesMps": 0.12494912766356213
+        },
+        {
+          "xi": 2.5,
+          "radiusM": 0.2800129112341598,
+          "untruncatedMps": 0.17162947953958732,
+          "radialOnlyMps": 0.08581473976979366,
+          "bothFadesMps": 0.08581473976979366
+        },
+        {
+          "xi": 2.6,
+          "radiusM": 0.29121342768352615,
+          "untruncatedMps": 0.15307789845952757,
+          "radialOnlyMps": 0.05388342025775369,
+          "bothFadesMps": 0.05388342025775369
+        },
+        {
+          "xi": 2.7,
+          "radiusM": 0.3024139441328926,
+          "untruncatedMps": 0.13681366956863283,
+          "radialOnlyMps": 0.029551752626824666,
+          "bothFadesMps": 0.029551752626824666
+        },
+        {
+          "xi": 2.8,
+          "radiusM": 0.3136144605822589,
+          "untruncatedMps": 0.1225308556752002,
+          "radialOnlyMps": 0.01274320899022084,
+          "bothFadesMps": 0.01274320899022084
+        },
+        {
+          "xi": 2.9,
+          "radiusM": 0.3248149770316253,
+          "untruncatedMps": 0.10996575947404229,
+          "radialOnlyMps": 0.003079041265273189,
+          "bothFadesMps": 0.003079041265273189
+        },
+        {
+          "xi": 3.0,
+          "radiusM": 0.3360154934809917,
+          "untruncatedMps": 0.0988913247178682,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.1,
+          "radiusM": 0.3472160099303581,
+          "untruncatedMps": 0.08911212914645898,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.2,
+          "radiusM": 0.35841652637972454,
+          "untruncatedMps": 0.08045996944581994,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.3,
+          "radiusM": 0.36961704282909086,
+          "untruncatedMps": 0.07279000803824032,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.4,
+          "radiusM": 0.3808175592784573,
+          "untruncatedMps": 0.06597743544475591,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.5,
+          "radiusM": 0.39201807572782366,
+          "untruncatedMps": 0.05991459513392517,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.6,
+          "radiusM": 0.4032185921771901,
+          "untruncatedMps": 0.05450851664259744,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.7,
+          "radiusM": 0.41441910862655645,
+          "untruncatedMps": 0.049678804964411925,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.8,
+          "radiusM": 0.4256196250759228,
+          "untruncatedMps": 0.04535583820583477,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.9,
+          "radiusM": 0.4368201415252892,
+          "untruncatedMps": 0.041479230323069737,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 4.0,
+          "radiusM": 0.4480206579746556,
+          "untruncatedMps": 0.03799652076891508,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        }
+      ]
+    },
+    {
+      "downstreamM": 1.5,
+      "halfWidthM": 0.1503451644936639,
+      "nominalRadialCutoffM": 0.4510354934809917,
+      "fadedFieldIdenticallyZero": false,
+      "centerlineUntruncatedMps": 1.6468247889179817,
+      "downstreamFade": 1.0,
+      "JUntruncatedN": 0.18985153479208722,
+      "JRadialOnlyN": 0.18441540918276098,
+      "JBothFadesN": 0.18441540918276098,
+      "JBothOverNominalWeight": 0.6962487604589458,
+      "profile": [
+        {
+          "xi": 0.0,
+          "radiusM": 0.0,
+          "untruncatedMps": 1.6468247889179817,
+          "radialOnlyMps": 1.6468247889179817,
+          "bothFadesMps": 1.6468247889179817
+        },
+        {
+          "xi": 0.1,
+          "radiusM": 0.015034516449366389,
+          "untruncatedMps": 1.6332663450757354,
+          "radialOnlyMps": 1.6332663450757354,
+          "bothFadesMps": 1.6332663450757354
+        },
+        {
+          "xi": 0.2,
+          "radiusM": 0.030069032898732778,
+          "untruncatedMps": 1.593580705290887,
+          "radialOnlyMps": 1.593580705290887,
+          "bothFadesMps": 1.593580705290887
+        },
+        {
+          "xi": 0.3,
+          "radiusM": 0.04510354934809917,
+          "untruncatedMps": 1.5305800197520023,
+          "radialOnlyMps": 1.5305800197520023,
+          "bothFadesMps": 1.5305800197520023
+        },
+        {
+          "xi": 0.4,
+          "radiusM": 0.060138065797465556,
+          "untruncatedMps": 1.4484703781850679,
+          "radialOnlyMps": 1.4484703781850679,
+          "bothFadesMps": 1.4484703781850679
+        },
+        {
+          "xi": 0.5,
+          "radiusM": 0.07517258224683195,
+          "untruncatedMps": 1.3522615412433254,
+          "radialOnlyMps": 1.3522615412433254,
+          "bothFadesMps": 1.3522615412433254
+        },
+        {
+          "xi": 0.6,
+          "radiusM": 0.09020709869619833,
+          "untruncatedMps": 1.2471508446830308,
+          "radialOnlyMps": 1.2471508446830308,
+          "bothFadesMps": 1.2471508446830308
+        },
+        {
+          "xi": 0.7,
+          "radiusM": 0.10524161514556472,
+          "untruncatedMps": 1.1379984430735657,
+          "radialOnlyMps": 1.1379984430735657,
+          "bothFadesMps": 1.1379984430735657
+        },
+        {
+          "xi": 0.8,
+          "radiusM": 0.12027613159493111,
+          "untruncatedMps": 1.0289634861543782,
+          "radialOnlyMps": 1.0289634861543782,
+          "bothFadesMps": 1.0289634861543782
+        },
+        {
+          "xi": 0.9,
+          "radiusM": 0.13531064804429752,
+          "untruncatedMps": 0.9233177091193534,
+          "radialOnlyMps": 0.9233177091193534,
+          "bothFadesMps": 0.9233177091193534
+        },
+        {
+          "xi": 1.0,
+          "radiusM": 0.1503451644936639,
+          "untruncatedMps": 0.8234123944589906,
+          "radialOnlyMps": 0.8234123944589906,
+          "bothFadesMps": 0.8234123944589906
+        },
+        {
+          "xi": 1.1,
+          "radiusM": 0.1653796809430303,
+          "untruncatedMps": 0.7307540042958681,
+          "radialOnlyMps": 0.7307540042958681,
+          "bothFadesMps": 0.7307540042958681
+        },
+        {
+          "xi": 1.2,
+          "radiusM": 0.18041419739239667,
+          "untruncatedMps": 0.6461408753720186,
+          "radialOnlyMps": 0.6461408753720186,
+          "bothFadesMps": 0.6461408753720186
+        },
+        {
+          "xi": 1.3,
+          "radiusM": 0.19544871384176307,
+          "untruncatedMps": 0.5698215424244161,
+          "radialOnlyMps": 0.5698215424244161,
+          "bothFadesMps": 0.5698215424244161
+        },
+        {
+          "xi": 1.4,
+          "radiusM": 0.21048323029112945,
+          "untruncatedMps": 0.5016476714820182,
+          "radialOnlyMps": 0.5016476714820182,
+          "bothFadesMps": 0.5016476714820182
+        },
+        {
+          "xi": 1.5,
+          "radiusM": 0.22551774674049585,
+          "untruncatedMps": 0.4412065095834742,
+          "radialOnlyMps": 0.4412065095834742,
+          "bothFadesMps": 0.4412065095834742
+        },
+        {
+          "xi": 1.6,
+          "radiusM": 0.24055226318986223,
+          "untruncatedMps": 0.38792691411666386,
+          "radialOnlyMps": 0.38792691411666386,
+          "bothFadesMps": 0.38792691411666386
+        },
+        {
+          "xi": 1.7,
+          "radiusM": 0.2555867796392286,
+          "untruncatedMps": 0.34115894520529694,
+          "radialOnlyMps": 0.34115894520529694,
+          "bothFadesMps": 0.34115894520529694
+        },
+        {
+          "xi": 1.8,
+          "radiusM": 0.27062129608859503,
+          "untruncatedMps": 0.3002301825649314,
+          "radialOnlyMps": 0.3002301825649314,
+          "bothFadesMps": 0.3002301825649314
+        },
+        {
+          "xi": 1.9,
+          "radiusM": 0.2856558125379614,
+          "untruncatedMps": 0.26448317350081957,
+          "radialOnlyMps": 0.26448317350081957,
+          "bothFadesMps": 0.26448317350081957
+        },
+        {
+          "xi": 2.0,
+          "radiusM": 0.3006903289873278,
+          "untruncatedMps": 0.23329849371984437,
+          "radialOnlyMps": 0.23329849371984437,
+          "bothFadesMps": 0.23329849371984437
+        },
+        {
+          "xi": 2.1,
+          "radiusM": 0.31572484543669416,
+          "untruncatedMps": 0.20610738217138486,
+          "radialOnlyMps": 0.20033637547058608,
+          "bothFadesMps": 0.20033637547058608
+        },
+        {
+          "xi": 2.2,
+          "radiusM": 0.3307593618860606,
+          "untruncatedMps": 0.18239716859662086,
+          "radialOnlyMps": 0.16342786306257226,
+          "bothFadesMps": 0.16342786306257226
+        },
+        {
+          "xi": 2.3,
+          "radiusM": 0.3457938783354269,
+          "untruncatedMps": 0.16171195975000205,
+          "radialOnlyMps": 0.12678217644400164,
+          "bothFadesMps": 0.12678217644400164
+        },
+        {
+          "xi": 2.4,
+          "radiusM": 0.36082839478479334,
+          "untruncatedMps": 0.1436503889339501,
+          "radialOnlyMps": 0.09308545202919968,
+          "bothFadesMps": 0.09308545202919968
+        },
+        {
+          "xi": 2.5,
+          "radiusM": 0.3758629112341597,
+          "untruncatedMps": 0.12786169846256376,
+          "radialOnlyMps": 0.06393084923128188,
+          "bothFadesMps": 0.06393084923128188
+        },
+        {
+          "xi": 2.6,
+          "radiusM": 0.39089742768352614,
+          "untruncatedMps": 0.11404101525344597,
+          "radialOnlyMps": 0.04014243736921297,
+          "bothFadesMps": 0.04014243736921297
+        },
+        {
+          "xi": 2.7,
+          "radiusM": 0.4059319441328925,
+          "untruncatedMps": 0.10192437925505948,
+          "radialOnlyMps": 0.02201566591909283,
+          "bothFadesMps": 0.02201566591909283
+        },
+        {
+          "xi": 2.8,
+          "radiusM": 0.4209664605822589,
+          "untruncatedMps": 0.09128387129490002,
+          "radialOnlyMps": 0.009493522614669618,
+          "bothFadesMps": 0.009493522614669618
+        },
+        {
+          "xi": 2.9,
+          "radiusM": 0.43600097703162527,
+          "untruncatedMps": 0.08192304035877296,
+          "radialOnlyMps": 0.0022938451300456466,
+          "bothFadesMps": 0.0022938451300456466
+        },
+        {
+          "xi": 3.0,
+          "radiusM": 0.4510354934809917,
+          "untruncatedMps": 0.07367273253732053,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.1,
+          "radiusM": 0.4660700099303581,
+          "untruncatedMps": 0.06638736082430105,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.2,
+          "radiusM": 0.48110452637972445,
+          "untruncatedMps": 0.05994161596939176,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.3,
+          "radiusM": 0.4961390428290908,
+          "untruncatedMps": 0.05422759588760712,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.4,
+          "radiusM": 0.5111735592784572,
+          "untruncatedMps": 0.04915231916335701,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.5,
+          "radiusM": 0.5262080757278236,
+          "untruncatedMps": 0.0446355831007081,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.6,
+          "radiusM": 0.5412425921771901,
+          "untruncatedMps": 0.04060812593089444,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.7,
+          "radiusM": 0.5562771086265564,
+          "untruncatedMps": 0.037010054434588116,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.8,
+          "radiusM": 0.5713116250759228,
+          "untruncatedMps": 0.033789501219419815,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.9,
+          "radiusM": 0.5863461415252892,
+          "untruncatedMps": 0.030901479479253837,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 4.0,
+          "radiusM": 0.6013806579746556,
+          "untruncatedMps": 0.02830690679837998,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        }
+      ]
+    },
+    {
+      "downstreamM": 2,
+      "halfWidthM": 0.18868516449366388,
+      "nominalRadialCutoffM": 0.5660554934809916,
+      "fadedFieldIdenticallyZero": false,
+      "centerlineUntruncatedMps": 1.3121971960356826,
+      "downstreamFade": 1.0,
+      "JUntruncatedN": 0.18985153479208725,
+      "JRadialOnlyN": 0.18441540918276098,
+      "JBothFadesN": 0.18441540918276098,
+      "JBothOverNominalWeight": 0.6962487604589458,
+      "profile": [
+        {
+          "xi": 0.0,
+          "radiusM": 0.0,
+          "untruncatedMps": 1.3121971960356826,
+          "radialOnlyMps": 1.3121971960356826,
+          "bothFadesMps": 1.3121971960356826
+        },
+        {
+          "xi": 0.1,
+          "radiusM": 0.01886851644936639,
+          "untruncatedMps": 1.3013937686691974,
+          "radialOnlyMps": 1.3013937686691974,
+          "bothFadesMps": 1.3013937686691974
+        },
+        {
+          "xi": 0.2,
+          "radiusM": 0.03773703289873278,
+          "untruncatedMps": 1.2697720772792012,
+          "radialOnlyMps": 1.2697720772792012,
+          "bothFadesMps": 1.2697720772792012
+        },
+        {
+          "xi": 0.3,
+          "radiusM": 0.05660554934809916,
+          "untruncatedMps": 1.2195728554380199,
+          "radialOnlyMps": 1.2195728554380199,
+          "bothFadesMps": 1.2195728554380199
+        },
+        {
+          "xi": 0.4,
+          "radiusM": 0.07547406579746556,
+          "untruncatedMps": 1.1541475338393463,
+          "radialOnlyMps": 1.1541475338393463,
+          "bothFadesMps": 1.1541475338393463
+        },
+        {
+          "xi": 0.5,
+          "radiusM": 0.09434258224683194,
+          "untruncatedMps": 1.0774879116874625,
+          "radialOnlyMps": 1.0774879116874625,
+          "bothFadesMps": 1.0774879116874625
+        },
+        {
+          "xi": 0.6,
+          "radiusM": 0.11321109869619832,
+          "untruncatedMps": 0.9937352488492999,
+          "radialOnlyMps": 0.9937352488492999,
+          "bothFadesMps": 0.9937352488492999
+        },
+        {
+          "xi": 0.7,
+          "radiusM": 0.1320796151455647,
+          "untruncatedMps": 0.9067621377470512,
+          "radialOnlyMps": 0.9067621377470512,
+          "bothFadesMps": 0.9067621377470512
+        },
+        {
+          "xi": 0.8,
+          "radiusM": 0.15094813159493112,
+          "untruncatedMps": 0.819882607087791,
+          "radialOnlyMps": 0.819882607087791,
+          "bothFadesMps": 0.819882607087791
+        },
+        {
+          "xi": 0.9,
+          "radiusM": 0.1698166480442975,
+          "untruncatedMps": 0.7357035897865919,
+          "radialOnlyMps": 0.7357035897865919,
+          "bothFadesMps": 0.7357035897865919
+        },
+        {
+          "xi": 1.0,
+          "radiusM": 0.18868516449366388,
+          "untruncatedMps": 0.6560985980178412,
+          "radialOnlyMps": 0.6560985980178412,
+          "bothFadesMps": 0.6560985980178412
+        },
+        {
+          "xi": 1.1,
+          "radiusM": 0.20755368094303028,
+          "untruncatedMps": 0.5822679873910023,
+          "radialOnlyMps": 0.5822679873910023,
+          "bothFadesMps": 0.5822679873910023
+        },
+        {
+          "xi": 1.2,
+          "radiusM": 0.22642219739239663,
+          "untruncatedMps": 0.5148478761145435,
+          "radialOnlyMps": 0.5148478761145435,
+          "bothFadesMps": 0.5148478761145435
+        },
+        {
+          "xi": 1.3,
+          "radiusM": 0.24529071384176304,
+          "untruncatedMps": 0.4540362977541297,
+          "radialOnlyMps": 0.4540362977541297,
+          "bothFadesMps": 0.4540362977541297
+        },
+        {
+          "xi": 1.4,
+          "radiusM": 0.2641592302911294,
+          "untruncatedMps": 0.3997150591527302,
+          "radialOnlyMps": 0.3997150591527302,
+          "bothFadesMps": 0.3997150591527302
+        },
+        {
+          "xi": 1.5,
+          "radiusM": 0.2830277467404958,
+          "untruncatedMps": 0.3515552769451052,
+          "radialOnlyMps": 0.3515552769451052,
+          "bothFadesMps": 0.3515552769451052
+        },
+        {
+          "xi": 1.6,
+          "radiusM": 0.30189626318986224,
+          "untruncatedMps": 0.3091018621993875,
+          "radialOnlyMps": 0.3091018621993875,
+          "bothFadesMps": 0.3091018621993875
+        },
+        {
+          "xi": 1.7,
+          "radiusM": 0.32076477963922856,
+          "untruncatedMps": 0.27183693997891195,
+          "radialOnlyMps": 0.27183693997891195,
+          "bothFadesMps": 0.27183693997891195
+        },
+        {
+          "xi": 1.8,
+          "radiusM": 0.339633296088595,
+          "untruncatedMps": 0.23922472285945465,
+          "radialOnlyMps": 0.23922472285945465,
+          "bothFadesMps": 0.23922472285945465
+        },
+        {
+          "xi": 1.9,
+          "radiusM": 0.3585018125379614,
+          "untruncatedMps": 0.2107413496577377,
+          "radialOnlyMps": 0.2107413496577377,
+          "bothFadesMps": 0.2107413496577377
+        },
+        {
+          "xi": 2.0,
+          "radiusM": 0.37737032898732775,
+          "untruncatedMps": 0.18589326038726198,
+          "radialOnlyMps": 0.18589326038726198,
+          "bothFadesMps": 0.18589326038726198
+        },
+        {
+          "xi": 2.1,
+          "radiusM": 0.39623884543669413,
+          "untruncatedMps": 0.1642272637547817,
+          "radialOnlyMps": 0.1596289003696478,
+          "bothFadesMps": 0.1596289003696478
+        },
+        {
+          "xi": 2.2,
+          "radiusM": 0.41510736188606057,
+          "untruncatedMps": 0.14533486185533345,
+          "radialOnlyMps": 0.13022003622237874,
+          "bothFadesMps": 0.13022003622237874
+        },
+        {
+          "xi": 2.3,
+          "radiusM": 0.4339758783354269,
+          "untruncatedMps": 0.12885279695650498,
+          "radialOnlyMps": 0.10102059281389994,
+          "bothFadesMps": 0.10102059281389994
+        },
+        {
+          "xi": 2.4,
+          "radiusM": 0.45284439478479327,
+          "untruncatedMps": 0.1144612583178407,
+          "radialOnlyMps": 0.07417089538996079,
+          "bothFadesMps": 0.07417089538996079
+        },
+        {
+          "xi": 2.5,
+          "radiusM": 0.4717129112341597,
+          "untruncatedMps": 0.10188076068078437,
+          "radialOnlyMps": 0.05094038034039219,
+          "bothFadesMps": 0.05094038034039219
+        },
+        {
+          "xi": 2.6,
+          "radiusM": 0.4905814276835261,
+          "untruncatedMps": 0.09086837983957939,
+          "radialOnlyMps": 0.031985669703531935,
+          "bothFadesMps": 0.031985669703531935
+        },
+        {
+          "xi": 2.7,
+          "radiusM": 0.5094499441328925,
+          "untruncatedMps": 0.08121379127043707,
+          "radialOnlyMps": 0.01754217891441439,
+          "bothFadesMps": 0.01754217891441439
+        },
+        {
+          "xi": 2.8,
+          "radiusM": 0.5283184605822588,
+          "untruncatedMps": 0.07273538797964717,
+          "radialOnlyMps": 0.007564480349883317,
+          "bothFadesMps": 0.007564480349883317
+        },
+        {
+          "xi": 2.9,
+          "radiusM": 0.5471869770316252,
+          "untruncatedMps": 0.06527663693970168,
+          "radialOnlyMps": 0.00182774583431165,
+          "bothFadesMps": 0.00182774583431165
+        },
+        {
+          "xi": 3.0,
+          "radiusM": 0.5660554934809916,
+          "untruncatedMps": 0.05870275557564097,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.1,
+          "radiusM": 0.584924009930358,
+          "untruncatedMps": 0.05289773952400442,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.2,
+          "radiusM": 0.6037925263797245,
+          "untruncatedMps": 0.04776174182595505,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.3,
+          "radiusM": 0.6226610428290907,
+          "untruncatedMps": 0.0432087856281462,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.4,
+          "radiusM": 0.6415295592784571,
+          "untruncatedMps": 0.03916478293187767,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.5,
+          "radiusM": 0.6603980757278236,
+          "untruncatedMps": 0.03556582787817382,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.6,
+          "radiusM": 0.67926659217719,
+          "untruncatedMps": 0.0323567323866883,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.7,
+          "radiusM": 0.6981351086265564,
+          "untruncatedMps": 0.029489773278250798,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.8,
+          "radiusM": 0.7170036250759227,
+          "untruncatedMps": 0.026923622387721537,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.9,
+          "radiusM": 0.7358721415252891,
+          "untruncatedMps": 0.024622434031171585,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 4.0,
+          "radiusM": 0.7547406579746555,
+          "untruncatedMps": 0.022555067168792506,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        }
+      ]
+    },
+    {
+      "downstreamM": 2.1,
+      "halfWidthM": 0.19635316449366388,
+      "nominalRadialCutoffM": 0.5890594934809916,
+      "fadedFieldIdenticallyZero": false,
+      "centerlineUntruncatedMps": 1.2609531627391053,
+      "downstreamFade": 0.8959999999999998,
+      "JUntruncatedN": 0.18985153479208722,
+      "JRadialOnlyN": 0.18441540918276098,
+      "JBothFadesN": 0.14805164113846736,
+      "JBothOverNominalWeight": 0.5589596448766088,
+      "profile": [
+        {
+          "xi": 0.0,
+          "radiusM": 0.0,
+          "untruncatedMps": 1.2609531627391053,
+          "radialOnlyMps": 1.2609531627391053,
+          "bothFadesMps": 1.1298140338142382
+        },
+        {
+          "xi": 0.1,
+          "radiusM": 0.01963531644936639,
+          "untruncatedMps": 1.2505716317105773,
+          "radialOnlyMps": 1.2505716317105773,
+          "bothFadesMps": 1.1205121820126769
+        },
+        {
+          "xi": 0.2,
+          "radiusM": 0.03927063289873278,
+          "untruncatedMps": 1.2201848332249239,
+          "radialOnlyMps": 1.2201848332249239,
+          "bothFadesMps": 1.0932856105695314
+        },
+        {
+          "xi": 0.3,
+          "radiusM": 0.05890594934809916,
+          "untruncatedMps": 1.1719459955419038,
+          "radialOnlyMps": 1.1719459955419038,
+          "bothFadesMps": 1.0500636120055455
+        },
+        {
+          "xi": 0.4,
+          "radiusM": 0.07854126579746556,
+          "untruncatedMps": 1.1090756690069072,
+          "radialOnlyMps": 1.1090756690069072,
+          "bothFadesMps": 0.9937317994301886
+        },
+        {
+          "xi": 0.5,
+          "radiusM": 0.09817658224683194,
+          "untruncatedMps": 1.0354097647519385,
+          "radialOnlyMps": 1.0354097647519385,
+          "bothFadesMps": 0.9277271492177367
+        },
+        {
+          "xi": 0.6,
+          "radiusM": 0.11781189869619832,
+          "untruncatedMps": 0.9549278178215084,
+          "radialOnlyMps": 0.9549278178215084,
+          "bothFadesMps": 0.8556153247680713
+        },
+        {
+          "xi": 0.7,
+          "radiusM": 0.1374472151455647,
+          "untruncatedMps": 0.8713511878386336,
+          "radialOnlyMps": 0.8713511878386336,
+          "bothFadesMps": 0.7807306643034155
+        },
+        {
+          "xi": 0.8,
+          "radiusM": 0.15708253159493113,
+          "untruncatedMps": 0.7878644837875574,
+          "radialOnlyMps": 0.7878644837875574,
+          "bothFadesMps": 0.7059265774736513
+        },
+        {
+          "xi": 0.9,
+          "radiusM": 0.1767178480442975,
+          "untruncatedMps": 0.7069728324238012,
+          "radialOnlyMps": 0.7069728324238012,
+          "bothFadesMps": 0.6334476578517257
+        },
+        {
+          "xi": 1.0,
+          "radiusM": 0.19635316449366388,
+          "untruncatedMps": 0.6304765813695525,
+          "radialOnlyMps": 0.6304765813695525,
+          "bothFadesMps": 0.564907016907119
+        },
+        {
+          "xi": 1.1,
+          "radiusM": 0.2159884809430303,
+          "untruncatedMps": 0.559529209847856,
+          "radialOnlyMps": 0.559529209847856,
+          "bothFadesMps": 0.5013381720236789
+        },
+        {
+          "xi": 1.2,
+          "radiusM": 0.23562379739239664,
+          "untruncatedMps": 0.4947419943263551,
+          "radialOnlyMps": 0.4947419943263551,
+          "bothFadesMps": 0.443288826916414
+        },
+        {
+          "xi": 1.3,
+          "radiusM": 0.2552591138417631,
+          "untruncatedMps": 0.4363052347475489,
+          "radialOnlyMps": 0.4363052347475489,
+          "bothFadesMps": 0.3909294903338037
+        },
+        {
+          "xi": 1.4,
+          "radiusM": 0.2748944302911294,
+          "untruncatedMps": 0.384105353643339,
+          "radialOnlyMps": 0.384105353643339,
+          "bothFadesMps": 0.34415839686443167
+        },
+        {
+          "xi": 1.5,
+          "radiusM": 0.2945297467404958,
+          "untruncatedMps": 0.33782631122883294,
+          "radialOnlyMps": 0.33782631122883294,
+          "bothFadesMps": 0.30269237486103423
+        },
+        {
+          "xi": 1.6,
+          "radiusM": 0.31416506318986226,
+          "untruncatedMps": 0.29703079074272454,
+          "radialOnlyMps": 0.29703079074272454,
+          "bothFadesMps": 0.26613958850548114
+        },
+        {
+          "xi": 1.7,
+          "radiusM": 0.3338003796392286,
+          "untruncatedMps": 0.2612211413431555,
+          "radialOnlyMps": 0.2612211413431555,
+          "bothFadesMps": 0.23405414264346727
+        },
+        {
+          "xi": 1.8,
+          "radiusM": 0.353435696088595,
+          "untruncatedMps": 0.22988249922065254,
+          "radialOnlyMps": 0.22988249922065254,
+          "bothFadesMps": 0.20597471930170463
+        },
+        {
+          "xi": 1.9,
+          "radiusM": 0.3730710125379614,
+          "untruncatedMps": 0.20251146106214196,
+          "radialOnlyMps": 0.20251146106214196,
+          "bothFadesMps": 0.18145026911167916
+        },
+        {
+          "xi": 2.0,
+          "radiusM": 0.39270632898732777,
+          "untruncatedMps": 0.178633741426489,
+          "radialOnlyMps": 0.178633741426489,
+          "bothFadesMps": 0.1600558323181341
+        },
+        {
+          "xi": 2.1,
+          "radiusM": 0.41234164543669416,
+          "untruncatedMps": 0.15781384708426857,
+          "radialOnlyMps": 0.15339505936590905,
+          "bothFadesMps": 0.13744197319185447
+        },
+        {
+          "xi": 2.2,
+          "radiusM": 0.4319769618860606,
+          "untruncatedMps": 0.1396592328244468,
+          "radialOnlyMps": 0.12513467261070432,
+          "bothFadesMps": 0.11212066665919104
+        },
+        {
+          "xi": 2.3,
+          "radiusM": 0.4516122783354269,
+          "untruncatedMps": 0.12382082688558531,
+          "radialOnlyMps": 0.09707552827829892,
+          "bothFadesMps": 0.08697967333735582
+        },
+        {
+          "xi": 2.4,
+          "radiusM": 0.4712475947847933,
+          "untruncatedMps": 0.10999130780268347,
+          "radialOnlyMps": 0.07127436745613891,
+          "bothFadesMps": 0.06386183324070045
+        },
+        {
+          "xi": 2.5,
+          "radiusM": 0.4908829112341597,
+          "untruncatedMps": 0.09790210479858968,
+          "radialOnlyMps": 0.04895105239929484,
+          "bothFadesMps": 0.04386014294976817
+        },
+        {
+          "xi": 2.6,
+          "radiusM": 0.5105182276835262,
+          "untruncatedMps": 0.08731978036369785,
+          "radialOnlyMps": 0.03073656268802163,
+          "bothFadesMps": 0.027539960168467374
+        },
+        {
+          "xi": 2.7,
+          "radiusM": 0.5301535441328925,
+          "untruncatedMps": 0.07804222358489663,
+          "radialOnlyMps": 0.016857120294337655,
+          "bothFadesMps": 0.015103979783726535
+        },
+        {
+          "xi": 2.8,
+          "radiusM": 0.5497888605822588,
+          "untruncatedMps": 0.06989491959979617,
+          "radialOnlyMps": 0.007269071638378813,
+          "bothFadesMps": 0.006513088187987415
+        },
+        {
+          "xi": 2.9,
+          "radiusM": 0.5694241770316253,
+          "untruncatedMps": 0.06272744832160948,
+          "radialOnlyMps": 0.0017563685530050683,
+          "bothFadesMps": 0.001573706223492541
+        },
+        {
+          "xi": 3.0,
+          "radiusM": 0.5890594934809916,
+          "untruncatedMps": 0.056410290715628274,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.1,
+          "radiusM": 0.6086948099303581,
+          "untruncatedMps": 0.050831972630376615,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.2,
+          "radiusM": 0.6283301263797245,
+          "untruncatedMps": 0.04589654633870207,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.3,
+          "radiusM": 0.6479654428290907,
+          "untruncatedMps": 0.041521392562437205,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.4,
+          "radiusM": 0.6676007592784572,
+          "untruncatedMps": 0.037635316593527264,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.5,
+          "radiusM": 0.6872360757278236,
+          "untruncatedMps": 0.03417690822988041,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.6,
+          "radiusM": 0.70687139217719,
+          "untruncatedMps": 0.031093134600622914,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.7,
+          "radiusM": 0.7265067086265564,
+          "untruncatedMps": 0.0283381362161197,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.8,
+          "radiusM": 0.7461420250759228,
+          "untruncatedMps": 0.025872198862150034,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.9,
+          "radiusM": 0.7657773415252891,
+          "untruncatedMps": 0.023660876703394895,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 4.0,
+          "radiusM": 0.7854126579746555,
+          "untruncatedMps": 0.021674244822504917,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        }
+      ]
+    },
+    {
+      "downstreamM": 2.25,
+      "halfWidthM": 0.20785516449366392,
+      "nominalRadialCutoffM": 0.6235654934809918,
+      "fadedFieldIdenticallyZero": false,
+      "centerlineUntruncatedMps": 1.191176290400351,
+      "downstreamFade": 0.5,
+      "JUntruncatedN": 0.1898515347920873,
+      "JRadialOnlyN": 0.18441540918276106,
+      "JBothFadesN": 0.046103852295690265,
+      "JBothOverNominalWeight": 0.17406219011473653,
+      "profile": [
+        {
+          "xi": 0.0,
+          "radiusM": 0.0,
+          "untruncatedMps": 1.191176290400351,
+          "radialOnlyMps": 1.191176290400351,
+          "bothFadesMps": 0.5955881452001754
+        },
+        {
+          "xi": 0.1,
+          "radiusM": 0.020785516449366395,
+          "untruncatedMps": 1.1813692380968572,
+          "radialOnlyMps": 1.1813692380968572,
+          "bothFadesMps": 0.5906846190484286
+        },
+        {
+          "xi": 0.2,
+          "radiusM": 0.04157103289873279,
+          "untruncatedMps": 1.1526639420027052,
+          "radialOnlyMps": 1.1526639420027052,
+          "bothFadesMps": 0.5763319710013526
+        },
+        {
+          "xi": 0.3,
+          "radiusM": 0.06235654934809917,
+          "untruncatedMps": 1.1070944780270051,
+          "radialOnlyMps": 1.1070944780270051,
+          "bothFadesMps": 0.5535472390135026
+        },
+        {
+          "xi": 0.4,
+          "radiusM": 0.08314206579746558,
+          "untruncatedMps": 1.0477031821793965,
+          "radialOnlyMps": 1.0477031821793965,
+          "bothFadesMps": 0.5238515910896983
+        },
+        {
+          "xi": 0.5,
+          "radiusM": 0.10392758224683196,
+          "untruncatedMps": 0.9781136992767897,
+          "radialOnlyMps": 0.9781136992767897,
+          "bothFadesMps": 0.48905684963839485
+        },
+        {
+          "xi": 0.6,
+          "radiusM": 0.12471309869619834,
+          "untruncatedMps": 0.9020853503882885,
+          "radialOnlyMps": 0.9020853503882885,
+          "bothFadesMps": 0.45104267519414426
+        },
+        {
+          "xi": 0.7,
+          "radiusM": 0.14549861514556472,
+          "untruncatedMps": 0.8231335677138978,
+          "radialOnlyMps": 0.8231335677138978,
+          "bothFadesMps": 0.4115667838569489
+        },
+        {
+          "xi": 0.8,
+          "radiusM": 0.16628413159493116,
+          "untruncatedMps": 0.744266734775164,
+          "radialOnlyMps": 0.744266734775164,
+          "bothFadesMps": 0.372133367387582
+        },
+        {
+          "xi": 0.9,
+          "radiusM": 0.18706964804429754,
+          "untruncatedMps": 0.6678513531074359,
+          "radialOnlyMps": 0.6678513531074359,
+          "bothFadesMps": 0.33392567655371796
+        },
+        {
+          "xi": 1.0,
+          "radiusM": 0.20785516449366392,
+          "untruncatedMps": 0.5955881452001753,
+          "radialOnlyMps": 0.5955881452001753,
+          "bothFadesMps": 0.29779407260008767
+        },
+        {
+          "xi": 1.1,
+          "radiusM": 0.22864068094303033,
+          "untruncatedMps": 0.5285667606474841,
+          "radialOnlyMps": 0.5285667606474841,
+          "bothFadesMps": 0.26428338032374205
+        },
+        {
+          "xi": 1.2,
+          "radiusM": 0.2494261973923967,
+          "untruncatedMps": 0.46736464995002514,
+          "radialOnlyMps": 0.46736464995002514,
+          "bothFadesMps": 0.23368232497501257
+        },
+        {
+          "xi": 1.3,
+          "radiusM": 0.2702117138417631,
+          "untruncatedMps": 0.4121615824967564,
+          "radialOnlyMps": 0.4121615824967564,
+          "bothFadesMps": 0.2060807912483782
+        },
+        {
+          "xi": 1.4,
+          "radiusM": 0.29099723029112945,
+          "untruncatedMps": 0.36285026581154084,
+          "radialOnlyMps": 0.36285026581154084,
+          "bothFadesMps": 0.18142513290577042
+        },
+        {
+          "xi": 1.5,
+          "radiusM": 0.3117827467404959,
+          "untruncatedMps": 0.3191321486795426,
+          "radialOnlyMps": 0.3191321486795426,
+          "bothFadesMps": 0.1595660743397713
+        },
+        {
+          "xi": 1.6,
+          "radiusM": 0.3325682631898623,
+          "untruncatedMps": 0.28059411396615613,
+          "radialOnlyMps": 0.28059411396615613,
+          "bothFadesMps": 0.14029705698307807
+        },
+        {
+          "xi": 1.7,
+          "radiusM": 0.35335377963922865,
+          "untruncatedMps": 0.24676604913965838,
+          "radialOnlyMps": 0.24676604913965838,
+          "bothFadesMps": 0.12338302456982919
+        },
+        {
+          "xi": 1.8,
+          "radiusM": 0.3741392960885951,
+          "untruncatedMps": 0.21716158120797288,
+          "radialOnlyMps": 0.21716158120797288,
+          "bothFadesMps": 0.10858079060398644
+        },
+        {
+          "xi": 1.9,
+          "radiusM": 0.3949248125379614,
+          "untruncatedMps": 0.19130516349041257,
+          "radialOnlyMps": 0.19130516349041257,
+          "bothFadesMps": 0.09565258174520629
+        },
+        {
+          "xi": 2.0,
+          "radiusM": 0.41571032898732785,
+          "untruncatedMps": 0.1687487558939303,
+          "radialOnlyMps": 0.1687487558939303,
+          "bothFadesMps": 0.08437437794696515
+        },
+        {
+          "xi": 2.1,
+          "radiusM": 0.4364958454366943,
+          "untruncatedMps": 0.14908096390773057,
+          "radialOnlyMps": 0.14490669691831412,
+          "bothFadesMps": 0.07245334845915706
+        },
+        {
+          "xi": 2.2,
+          "radiusM": 0.45728136188606067,
+          "untruncatedMps": 0.13193096444170113,
+          "radialOnlyMps": 0.11821014413976419,
+          "bothFadesMps": 0.059105072069882095
+        },
+        {
+          "xi": 2.3,
+          "radiusM": 0.478066878335427,
+          "untruncatedMps": 0.11696900218203594,
+          "radialOnlyMps": 0.09170369771071621,
+          "bothFadesMps": 0.045851848855358104
+        },
+        {
+          "xi": 2.4,
+          "radiusM": 0.4988523947847934,
+          "untruncatedMps": 0.10390476179153045,
+          "radialOnlyMps": 0.06733028564091174,
+          "bothFadesMps": 0.03366514282045587
+        },
+        {
+          "xi": 2.5,
+          "radiusM": 0.5196379112341598,
+          "untruncatedMps": 0.09248453428916073,
+          "radialOnlyMps": 0.046242267144580365,
+          "bothFadesMps": 0.023121133572290183
+        },
+        {
+          "xi": 2.6,
+          "radiusM": 0.5404234276835262,
+          "untruncatedMps": 0.08248779980555364,
+          "radialOnlyMps": 0.02903570553155487,
+          "bothFadesMps": 0.014517852765777436
+        },
+        {
+          "xi": 2.7,
+          "radiusM": 0.5612089441328927,
+          "untruncatedMps": 0.07372363156020414,
+          "radialOnlyMps": 0.01592430441700408,
+          "bothFadesMps": 0.00796215220850204
+        },
+        {
+          "xi": 2.8,
+          "radiusM": 0.5819944605822589,
+          "untruncatedMps": 0.06602717175145555,
+          "radialOnlyMps": 0.006866825862151388,
+          "bothFadesMps": 0.003433412931075694
+        },
+        {
+          "xi": 2.9,
+          "radiusM": 0.6027799770316253,
+          "untruncatedMps": 0.059256324030073554,
+          "radialOnlyMps": 0.0016591770728420622,
+          "bothFadesMps": 0.0008295885364210311
+        },
+        {
+          "xi": 3.0,
+          "radiusM": 0.6235654934809918,
+          "untruncatedMps": 0.05328873650555266,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.1,
+          "radiusM": 0.6443510099303582,
+          "untruncatedMps": 0.04801910362796886,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.2,
+          "radiusM": 0.6651365263797246,
+          "untruncatedMps": 0.043356787092047204,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.3,
+          "radiusM": 0.6859220428290909,
+          "untruncatedMps": 0.03922373949032549,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.4,
+          "radiusM": 0.7067075592784573,
+          "untruncatedMps": 0.03555270578848303,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.5,
+          "radiusM": 0.7274930757278237,
+          "untruncatedMps": 0.032285674016779745,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.6,
+          "radiusM": 0.7482785921771902,
+          "untruncatedMps": 0.029372545963590194,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.7,
+          "radiusM": 0.7690641086265566,
+          "untruncatedMps": 0.026769999847933646,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.8,
+          "radiusM": 0.7898496250759228,
+          "untruncatedMps": 0.024440519105539894,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.9,
+          "radiusM": 0.8106351415252893,
+          "untruncatedMps": 0.022351564016816237,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 4.0,
+          "radiusM": 0.8314206579746557,
+          "untruncatedMps": 0.020474865607868896,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        }
+      ]
+    },
+    {
+      "downstreamM": 2.4,
+      "halfWidthM": 0.2193571644936639,
+      "nominalRadialCutoffM": 0.6580714934809917,
+      "fadedFieldIdenticallyZero": false,
+      "centerlineUntruncatedMps": 1.1287169231678729,
+      "downstreamFade": 0.10400000000000016,
+      "JUntruncatedN": 0.18985153479208727,
+      "JRadialOnlyN": 0.184415409182761,
+      "JBothFadesN": 0.001994637065720749,
+      "JBothOverNominalWeight": 0.0075306265931239826,
+      "profile": [
+        {
+          "xi": 0.0,
+          "radiusM": 0.0,
+          "untruncatedMps": 1.1287169231678729,
+          "radialOnlyMps": 1.1287169231678729,
+          "bothFadesMps": 0.11738656000945896
+        },
+        {
+          "xi": 0.1,
+          "radiusM": 0.021935716449366392,
+          "untruncatedMps": 1.1194241039684365,
+          "radialOnlyMps": 1.1194241039684365,
+          "bothFadesMps": 0.11642010681271758
+        },
+        {
+          "xi": 0.2,
+          "radiusM": 0.043871432898732785,
+          "untruncatedMps": 1.0922239710014476,
+          "radialOnlyMps": 1.0922239710014476,
+          "bothFadesMps": 0.11359129298415073
+        },
+        {
+          "xi": 0.3,
+          "radiusM": 0.06580714934809917,
+          "untruncatedMps": 1.0490439433400724,
+          "radialOnlyMps": 1.0490439433400724,
+          "bothFadesMps": 0.1091005701073677
+        },
+        {
+          "xi": 0.4,
+          "radiusM": 0.08774286579746557,
+          "untruncatedMps": 0.9927668320070934,
+          "radialOnlyMps": 0.9927668320070934,
+          "bothFadesMps": 0.10324775052873787
+        },
+        {
+          "xi": 0.5,
+          "radiusM": 0.10967858224683195,
+          "untruncatedMps": 0.9268262758864924,
+          "radialOnlyMps": 0.9268262758864924,
+          "bothFadesMps": 0.09638993269219535
+        },
+        {
+          "xi": 0.6,
+          "radiusM": 0.13161429869619834,
+          "untruncatedMps": 0.8547844759257824,
+          "radialOnlyMps": 0.8547844759257824,
+          "bothFadesMps": 0.08889758549628152
+        },
+        {
+          "xi": 0.7,
+          "radiusM": 0.15355001514556474,
+          "untruncatedMps": 0.7799725325241001,
+          "radialOnlyMps": 0.7799725325241001,
+          "bothFadesMps": 0.08111714338250654
+        },
+        {
+          "xi": 0.8,
+          "radiusM": 0.17548573159493114,
+          "untruncatedMps": 0.7052410845159439,
+          "radialOnlyMps": 0.7052410845159439,
+          "bothFadesMps": 0.07334507278965828
+        },
+        {
+          "xi": 0.9,
+          "radiusM": 0.1974214480442975,
+          "untruncatedMps": 0.6328325458522773,
+          "radialOnlyMps": 0.6328325458522773,
+          "bothFadesMps": 0.06581458476863694
+        },
+        {
+          "xi": 1.0,
+          "radiusM": 0.2193571644936639,
+          "untruncatedMps": 0.5643584615839363,
+          "radialOnlyMps": 0.5643584615839363,
+          "bothFadesMps": 0.05869328000472947
+        },
+        {
+          "xi": 1.1,
+          "radiusM": 0.2412928809430303,
+          "untruncatedMps": 0.5008513454933874,
+          "radialOnlyMps": 0.5008513454933874,
+          "bothFadesMps": 0.05208853993131237
+        },
+        {
+          "xi": 1.2,
+          "radiusM": 0.2632285973923967,
+          "untruncatedMps": 0.4428583694456541,
+          "radialOnlyMps": 0.4428583694456541,
+          "bothFadesMps": 0.0460572704223481
+        },
+        {
+          "xi": 1.3,
+          "radiusM": 0.2851643138417631,
+          "untruncatedMps": 0.39054987661598206,
+          "radialOnlyMps": 0.39054987661598206,
+          "bothFadesMps": 0.040617187168062195
+        },
+        {
+          "xi": 1.4,
+          "radiusM": 0.3071000302911295,
+          "untruncatedMps": 0.3438242004126835,
+          "radialOnlyMps": 0.3438242004126835,
+          "bothFadesMps": 0.03575771684291914
+        },
+        {
+          "xi": 1.5,
+          "radiusM": 0.32903574674049585,
+          "untruncatedMps": 0.3023984441635083,
+          "radialOnlyMps": 0.3023984441635083,
+          "bothFadesMps": 0.031449438193004914
+        },
+        {
+          "xi": 1.6,
+          "radiusM": 0.3509714631898623,
+          "untruncatedMps": 0.26588115254413724,
+          "radialOnlyMps": 0.26588115254413724,
+          "bothFadesMps": 0.027651639864590318
+        },
+        {
+          "xi": 1.7,
+          "radiusM": 0.37290717963922865,
+          "untruncatedMps": 0.2338268633886211,
+          "radialOnlyMps": 0.2338268633886211,
+          "bothFadesMps": 0.024317993792416632
+        },
+        {
+          "xi": 1.8,
+          "radiusM": 0.394842896088595,
+          "untruncatedMps": 0.20577470668842077,
+          "radialOnlyMps": 0.20577470668842077,
+          "bothFadesMps": 0.02140056949559579
+        },
+        {
+          "xi": 1.9,
+          "radiusM": 0.4167786125379614,
+          "untruncatedMps": 0.18127407106839924,
+          "radialOnlyMps": 0.18127407106839924,
+          "bothFadesMps": 0.01885250339111355
+        },
+        {
+          "xi": 2.0,
+          "radiusM": 0.4387143289873278,
+          "untruncatedMps": 0.15990040943224884,
+          "radialOnlyMps": 0.15990040943224884,
+          "bothFadesMps": 0.016629642580953907
+        },
+        {
+          "xi": 2.1,
+          "radiusM": 0.46065004543669424,
+          "untruncatedMps": 0.1412638987536255,
+          "radialOnlyMps": 0.13730850958852397,
+          "bothFadesMps": 0.014280084997206515
+        },
+        {
+          "xi": 2.2,
+          "radiusM": 0.4825857618860606,
+          "untruncatedMps": 0.12501316006311528,
+          "radialOnlyMps": 0.11201179141655127,
+          "bothFadesMps": 0.01164922630732135
+        },
+        {
+          "xi": 2.3,
+          "radiusM": 0.5045214783354269,
+          "untruncatedMps": 0.11083572877743449,
+          "radialOnlyMps": 0.08689521136150867,
+          "bothFadesMps": 0.009037101981596915
+        },
+        {
+          "xi": 2.4,
+          "radiusM": 0.5264571947847934,
+          "untruncatedMps": 0.09845651225345482,
+          "radialOnlyMps": 0.06379981994023874,
+          "bothFadesMps": 0.00663518127378484
+        },
+        {
+          "xi": 2.5,
+          "radiusM": 0.5483929112341598,
+          "untruncatedMps": 0.08763510474876086,
+          "radialOnlyMps": 0.04381755237438043,
+          "bothFadesMps": 0.004557025446935572
+        },
+        {
+          "xi": 2.6,
+          "radiusM": 0.5703286276835262,
+          "untruncatedMps": 0.07816254936044732,
+          "radialOnlyMps": 0.027513217374877448,
+          "bothFadesMps": 0.002861374606987259
+        },
+        {
+          "xi": 2.7,
+          "radiusM": 0.5922643441328926,
+          "untruncatedMps": 0.06985793055990715,
+          "radialOnlyMps": 0.01508931300093993,
+          "bothFadesMps": 0.0015692885520977552
+        },
+        {
+          "xi": 2.8,
+          "radiusM": 0.614200060582259,
+          "untruncatedMps": 0.0625650348696343,
+          "radialOnlyMps": 0.006506763626441978,
+          "bothFadesMps": 0.0006767034171499668
+        },
+        {
+          "xi": 2.9,
+          "radiusM": 0.6361357770316253,
+          "untruncatedMps": 0.05614921676705278,
+          "radialOnlyMps": 0.0015721780694774802,
+          "bothFadesMps": 0.00016350651922565819
+        },
+        {
+          "xi": 3.0,
+          "radiusM": 0.6580714934809917,
+          "untruncatedMps": 0.05049453988698463,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.1,
+          "radiusM": 0.6800072099303581,
+          "untruncatedMps": 0.04550122037941487,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.2,
+          "radiusM": 0.7019429263797246,
+          "untruncatedMps": 0.04108337256153101,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.3,
+          "radiusM": 0.7238786428290909,
+          "untruncatedMps": 0.0371670414442001,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.4,
+          "radiusM": 0.7458143592784573,
+          "untruncatedMps": 0.03368849851299674,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.5,
+          "radiusM": 0.7677500757278237,
+          "untruncatedMps": 0.030592773657686496,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.6,
+          "radiusM": 0.78968579217719,
+          "untruncatedMps": 0.02783239556798744,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.7,
+          "radiusM": 0.8116215086265565,
+          "untruncatedMps": 0.025366314041902784,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.8,
+          "radiusM": 0.8335572250759228,
+          "untruncatedMps": 0.023158979697420673,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.9,
+          "radiusM": 0.8554929415252892,
+          "untruncatedMps": 0.02117955903619548,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 4.0,
+          "radiusM": 0.8774286579746556,
+          "untruncatedMps": 0.01940126536889193,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        }
+      ]
+    },
+    {
+      "downstreamM": 2.5,
+      "halfWidthM": 0.22702516449366392,
+      "nominalRadialCutoffM": 0.6810754934809917,
+      "fadedFieldIdenticallyZero": true,
+      "centerlineUntruncatedMps": 1.0905933900954288,
+      "downstreamFade": 0.0,
+      "JUntruncatedN": 0.1898515347920873,
+      "JRadialOnlyN": 0.18441540918276103,
+      "JBothFadesN": 0.0,
+      "JBothOverNominalWeight": 0.0,
+      "profile": [
+        {
+          "xi": 0.0,
+          "radiusM": 0.0,
+          "untruncatedMps": 1.0905933900954288,
+          "radialOnlyMps": 1.0905933900954288,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 0.1,
+          "radiusM": 0.022702516449366394,
+          "untruncatedMps": 1.0816144450772103,
+          "radialOnlyMps": 1.0816144450772103,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 0.2,
+          "radiusM": 0.04540503289873279,
+          "untruncatedMps": 1.0553330235669713,
+          "radialOnlyMps": 1.0553330235669713,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 0.3,
+          "radiusM": 0.06810754934809918,
+          "untruncatedMps": 1.0136114441478687,
+          "radialOnlyMps": 1.0136114441478687,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 0.4,
+          "radiusM": 0.09081006579746558,
+          "untruncatedMps": 0.9592351480424162,
+          "radialOnlyMps": 0.9592351480424162,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 0.5,
+          "radiusM": 0.11351258224683196,
+          "untruncatedMps": 0.8955217995772329,
+          "radialOnlyMps": 0.8955217995772329,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 0.6,
+          "radiusM": 0.13621509869619836,
+          "untruncatedMps": 0.8259132828313189,
+          "radialOnlyMps": 0.8259132828313189,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 0.7,
+          "radiusM": 0.15891761514556474,
+          "untruncatedMps": 0.7536281869854288,
+          "radialOnlyMps": 0.7536281869854288,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 0.8,
+          "radiusM": 0.18162013159493115,
+          "untruncatedMps": 0.6814208677213464,
+          "radialOnlyMps": 0.6814208677213464,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 0.9,
+          "radiusM": 0.20432264804429753,
+          "untruncatedMps": 0.6114579992357471,
+          "radialOnlyMps": 0.6114579992357471,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 1.0,
+          "radiusM": 0.22702516449366392,
+          "untruncatedMps": 0.5452966950477143,
+          "radialOnlyMps": 0.5452966950477143,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 1.1,
+          "radiusM": 0.24972768094303033,
+          "untruncatedMps": 0.4839345947630934,
+          "radialOnlyMps": 0.4839345947630934,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 1.2,
+          "radiusM": 0.2724301973923967,
+          "untruncatedMps": 0.42790038897470917,
+          "radialOnlyMps": 0.42790038897470917,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 1.3,
+          "radiusM": 0.2951327138417631,
+          "untruncatedMps": 0.37735866734818774,
+          "radialOnlyMps": 0.37735866734818774,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 1.4,
+          "radiusM": 0.3178352302911295,
+          "untruncatedMps": 0.33221119718176617,
+          "radialOnlyMps": 0.33221119718176617,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 1.5,
+          "radiusM": 0.34053774674049586,
+          "untruncatedMps": 0.292184636918759,
+          "radialOnlyMps": 0.292184636918759,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 1.6,
+          "radiusM": 0.3632402631898623,
+          "untruncatedMps": 0.25690075302650867,
+          "radialOnlyMps": 0.25690075302650867,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 1.7,
+          "radiusM": 0.38594277963922863,
+          "untruncatedMps": 0.22592912926534514,
+          "radialOnlyMps": 0.22592912926534514,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 1.8,
+          "radiusM": 0.40864529608859507,
+          "untruncatedMps": 0.19882446196816708,
+          "radialOnlyMps": 0.19882446196816708,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 1.9,
+          "radiusM": 0.4313478125379614,
+          "untruncatedMps": 0.1751513596057619,
+          "radialOnlyMps": 0.1751513596057619,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 2.0,
+          "radiusM": 0.45405032898732783,
+          "untruncatedMps": 0.15449961458088907,
+          "radialOnlyMps": 0.15449961458088907,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 2.1,
+          "radiusM": 0.4767528454366943,
+          "untruncatedMps": 0.1364925705263838,
+          "radialOnlyMps": 0.13267077855164505,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 2.2,
+          "radiusM": 0.49945536188606066,
+          "untruncatedMps": 0.12079071664587585,
+          "radialOnlyMps": 0.10822848211470473,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 2.3,
+          "radiusM": 0.5221578783354269,
+          "untruncatedMps": 0.10709214215715439,
+          "radialOnlyMps": 0.08396023945120906,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 2.4,
+          "radiusM": 0.5448603947847934,
+          "untruncatedMps": 0.09513104594383537,
+          "radialOnlyMps": 0.06164491777160533,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 2.5,
+          "radiusM": 0.5675629112341598,
+          "untruncatedMps": 0.08467514220578799,
+          "radialOnlyMps": 0.042337571102893996,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 2.6,
+          "radiusM": 0.5902654276835262,
+          "untruncatedMps": 0.07552253176665923,
+          "radialOnlyMps": 0.02658393118186404,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 2.7,
+          "radiusM": 0.6129679441328926,
+          "untruncatedMps": 0.06749840969917754,
+          "radialOnlyMps": 0.014579656495022335,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 2.8,
+          "radiusM": 0.635670460582259,
+          "untruncatedMps": 0.060451838790907333,
+          "radialOnlyMps": 0.006286991234254372,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 2.9,
+          "radiusM": 0.6583729770316253,
+          "untruncatedMps": 0.054252721305283046,
+          "radialOnlyMps": 0.0015190761965479277,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.0,
+          "radiusM": 0.6810754934809917,
+          "untruncatedMps": 0.048789036742798136,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.1,
+          "radiusM": 0.7037780099303582,
+          "untruncatedMps": 0.04396437155189606,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.2,
+          "radiusM": 0.7264805263797246,
+          "untruncatedMps": 0.03969574092384702,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.3,
+          "radiusM": 0.7491830428290909,
+          "untruncatedMps": 0.03591168777259388,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.4,
+          "radiusM": 0.7718855592784573,
+          "untruncatedMps": 0.03255063607746542,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.5,
+          "radiusM": 0.7945880757278238,
+          "untruncatedMps": 0.029559472398196878,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.6,
+          "radiusM": 0.8172905921771901,
+          "untruncatedMps": 0.02689232881507343,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.7,
+          "radiusM": 0.8399931086265565,
+          "untruncatedMps": 0.024509541637367252,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.8,
+          "radiusM": 0.8626956250759228,
+          "untruncatedMps": 0.022376762198687058,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.9,
+          "radiusM": 0.8853981415252893,
+          "untruncatedMps": 0.020464198432661684,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 4.0,
+          "radiusM": 0.9081006579746557,
+          "untruncatedMps": 0.018745968396944063,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        }
+      ]
+    },
+    {
+      "downstreamM": 3,
+      "halfWidthM": 0.2653651644936639,
+      "nominalRadialCutoffM": 0.7960954934809916,
+      "fadedFieldIdenticallyZero": true,
+      "centerlineUntruncatedMps": 0.933024288453766,
+      "downstreamFade": 0.0,
+      "JUntruncatedN": 0.18985153479208727,
+      "JRadialOnlyN": 0.184415409182761,
+      "JBothFadesN": 0.0,
+      "JBothOverNominalWeight": 0.0,
+      "profile": [
+        {
+          "xi": 0.0,
+          "radiusM": 0.0,
+          "untruncatedMps": 0.933024288453766,
+          "radialOnlyMps": 0.933024288453766,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 0.1,
+          "radiusM": 0.026536516449366387,
+          "untruncatedMps": 0.9253426228002122,
+          "radialOnlyMps": 0.9253426228002122,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 0.2,
+          "radiusM": 0.053073032898732775,
+          "untruncatedMps": 0.9028583451337222,
+          "radialOnlyMps": 0.9028583451337222,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 0.3,
+          "radiusM": 0.07960954934809916,
+          "untruncatedMps": 0.8671647059605844,
+          "radialOnlyMps": 0.8671647059605844,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 0.4,
+          "radiusM": 0.10614606579746555,
+          "untruncatedMps": 0.8206447055247649,
+          "radialOnlyMps": 0.8206447055247649,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 0.5,
+          "radiusM": 0.13268258224683194,
+          "untruncatedMps": 0.7661366714979561,
+          "radialOnlyMps": 0.7661366714979561,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 0.6,
+          "radiusM": 0.15921909869619832,
+          "untruncatedMps": 0.7065852040151983,
+          "radialOnlyMps": 0.7065852040151983,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 0.7,
+          "radiusM": 0.1857556151455647,
+          "untruncatedMps": 0.6447438699947138,
+          "radialOnlyMps": 0.6447438699947138,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 0.8,
+          "radiusM": 0.2122921315949311,
+          "untruncatedMps": 0.5829690753834708,
+          "radialOnlyMps": 0.5829690753834708,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 0.9,
+          "radiusM": 0.2388286480442975,
+          "untruncatedMps": 0.5231144529551717,
+          "radialOnlyMps": 0.5231144529551717,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 1.0,
+          "radiusM": 0.2653651644936639,
+          "untruncatedMps": 0.46651214422688286,
+          "radialOnlyMps": 0.46651214422688286,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 1.1,
+          "radiusM": 0.29190168094303026,
+          "untruncatedMps": 0.4140156496799305,
+          "radialOnlyMps": 0.4140156496799305,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 1.2,
+          "radiusM": 0.31843819739239665,
+          "untruncatedMps": 0.3660772746085353,
+          "radialOnlyMps": 0.3660772746085353,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 1.3,
+          "radiusM": 0.34497471384176304,
+          "untruncatedMps": 0.3228378287379829,
+          "radialOnlyMps": 0.3228378287379829,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 1.4,
+          "radiusM": 0.3715112302911294,
+          "untruncatedMps": 0.2842132720424511,
+          "radialOnlyMps": 0.2842132720424511,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 1.5,
+          "radiusM": 0.3980477467404958,
+          "untruncatedMps": 0.2499697553956317,
+          "radialOnlyMps": 0.2499697553956317,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 1.6,
+          "radiusM": 0.4245842631898622,
+          "untruncatedMps": 0.21978369250415244,
+          "radialOnlyMps": 0.21978369250415244,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 1.7,
+          "radiusM": 0.4511207796392286,
+          "untruncatedMps": 0.19328685373320706,
+          "radialOnlyMps": 0.19328685373320706,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 1.8,
+          "radiusM": 0.477657296088595,
+          "untruncatedMps": 0.17009827295837512,
+          "radialOnlyMps": 0.17009827295837512,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 1.9,
+          "radiusM": 0.5041938125379614,
+          "untruncatedMps": 0.14984546408591023,
+          "radialOnlyMps": 0.14984546408591023,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 2.0,
+          "radiusM": 0.5307303289873277,
+          "untruncatedMps": 0.1321774863756524,
+          "radialOnlyMps": 0.1321774863756524,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 2.1,
+          "radiusM": 0.5572668454366941,
+          "untruncatedMps": 0.11677210283060793,
+          "radialOnlyMps": 0.1135024839513509,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 2.2,
+          "radiusM": 0.5838033618860605,
+          "untruncatedMps": 0.10333885522676538,
+          "radialOnlyMps": 0.09259161428318176,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 2.3,
+          "radiusM": 0.6103398783354269,
+          "untruncatedMps": 0.09161945289841285,
+          "radialOnlyMps": 0.0718296510723557,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 2.4,
+          "radiusM": 0.6368763947847933,
+          "untruncatedMps": 0.08138649771556282,
+          "radialOnlyMps": 0.05273845051968472,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 2.5,
+          "radiusM": 0.6634129112341597,
+          "untruncatedMps": 0.07244126456640619,
+          "radialOnlyMps": 0.036220632283203096,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 2.6,
+          "radiusM": 0.6899494276835261,
+          "untruncatedMps": 0.06461102469880953,
+          "radialOnlyMps": 0.022743080693980944,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 2.7,
+          "radiusM": 0.7164859441328925,
+          "untruncatedMps": 0.057746229028423926,
+          "radialOnlyMps": 0.012473185470139557,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 2.8,
+          "radiusM": 0.7430224605822588,
+          "untruncatedMps": 0.051717747774606186,
+          "radialOnlyMps": 0.005378645768559052,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 2.9,
+          "radiusM": 0.7695589770316252,
+          "untruncatedMps": 0.04641427974188705,
+          "radialOnlyMps": 0.0012995998327728394,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.0,
+          "radiusM": 0.7960954934809916,
+          "untruncatedMps": 0.041739989169850625,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.1,
+          "radiusM": 0.822632009930358,
+          "untruncatedMps": 0.03761239235177787,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.2,
+          "radiusM": 0.8491685263797244,
+          "untruncatedMps": 0.0339604941369364,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.3,
+          "radiusM": 0.8757050428290908,
+          "untruncatedMps": 0.030723161570112158,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.4,
+          "radiusM": 0.9022415592784572,
+          "untruncatedMps": 0.02784771514362212,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.5,
+          "radiusM": 0.9287780757278236,
+          "untruncatedMps": 0.02528871525526402,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.6,
+          "radiusM": 0.95531459217719,
+          "untruncatedMps": 0.02300692098945609,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.7,
+          "radiusM": 0.9818511086265563,
+          "untruncatedMps": 0.020968399271640133,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.8,
+          "radiusM": 1.0083876250759227,
+          "untruncatedMps": 0.019143764136056476,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 3.9,
+          "radiusM": 1.034924141525289,
+          "untruncatedMps": 0.017507527878690074,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        },
+        {
+          "xi": 4.0,
+          "radiusM": 1.0614606579746555,
+          "untruncatedMps": 0.016037547984226345,
+          "radialOnlyMps": 0.0,
+          "bothFadesMps": 0.0
+        }
+      ]
+    }
+  ],
+  "publishedComparison": {
+    "source": "https://link.springer.com/article/10.1007/s00348-024-03880-3",
+    "locator": "section3.2",
+    "frontFrequencyHz": 94.0,
+    "backFrequencyHz": 81.0,
+    "frontFlowMomentumN": 5.32,
+    "backFlowMomentumN": 3.9,
+    "printedFrontBackSumN": 9.22,
+    "totalFlowMomentumN": 9.21,
+    "weightProxyN": 8.98,
+    "authorReportedForceRatio": 1.366,
+    "authorReportedSquaredFrequencyRatio": 1.347,
+    "recomputedSquaredFrequencyRatio": 1.3467459228776102,
+    "recomputedFlowRatio": 1.3641025641025641,
+    "signedRatioDifference": -0.01735664122495395,
+    "relativeRatioDifference": -0.012723853529571505,
+    "squaredFrequencyRoundingRange": [
+      1.316157928412812,
+      1.3780718336483935
+    ],
+    "flowRatioRoundingRange": [
+      1.3610755441741358,
+      1.3671373555840822
+    ],
+    "roundingRangesAreMeasurementUncertainty": false,
+    "physicalValidationEstablished": false
+  },
+  "fieldPlaneExcludesReceiverCenterGate": true,
+  "JIsMeasuredThrust": false,
+  "newPhysicalMeasurements": 0,
+  "runtimeSeconds": 0.124853584
+}
