@@ -1,0 +1,66 @@
+{
+  "stage": "kernel",
+  "sourceCommit": "0e184452f0ccc5fbe02c8c5491ee849259b74a26",
+  "sourceManifestSha256": "7995d9a9c8625031654f63bbf96f2ec83ea9496be5d273b388f349eed6d80593",
+  "commandTemplate": [
+    "NODE",
+    "PACKAGE/source/run.cjs"
+  ],
+  "runtimePins": {
+    "node": {
+      "bytes": 121304480,
+      "sha256": "3c9448363b9976bf3d9e8f4d320397975800131b42c7b1be342dadc05871dd25"
+    },
+    "python": {
+      "bytes": 18058560,
+      "sha256": "7a314947596fc484d4ec36ffc28e843b78d6d749c68736f8b5c24e7333f418eb"
+    }
+  },
+  "wallLimitSeconds": 180,
+  "sampledRssLimitBytes": 1073741824,
+  "outputLimitBytes": 33554432,
+  "nominalSleepSeconds": 0.05,
+  "success": true,
+  "closed": true,
+  "samples": 22,
+  "peakSampledGroupRssBytes": 92422144,
+  "maxSampleGapSeconds": 0.12690025009214878,
+  "terminationReason": null,
+  "containmentScope": "Reviewed children spawn no subprocesses. Retained guardian owns process group; sampling is not hostile-code/escaped-descendant isolation.",
+  "processGroup": 97037,
+  "scientificChildAbsentBeforeRelease": true,
+  "exitCode": 0,
+  "guardianExitCode": 0,
+  "childGroupAbsent": true,
+  "logs": [
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/results/kernel-stdout.log",
+      "rawBytes": 71,
+      "rawSha256": "f8619c5bb3f081c66d18936ad4c2866beb40d31dc3db86a614332b4b65a4ea12",
+      "publishedBytes": 71,
+      "publishedSha256": "f8619c5bb3f081c66d18936ad4c2866beb40d31dc3db86a614332b4b65a4ea12",
+      "redaction": "machine/runtime path prefixes replaced; raw logs retained privately"
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/results/kernel-stderr.log",
+      "rawBytes": 0,
+      "rawSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "publishedBytes": 0,
+      "publishedSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "redaction": "machine/runtime path prefixes replaced; raw logs retained privately"
+    }
+  ],
+  "output": {
+    "path": "research/m31-coupled-loads-2026-10-17/results/coupled-results.json",
+    "bytes": 2238747,
+    "sha256": "7b39795554646fd9a917153cddcee3bd91a94f39524f7b29920a19885febc1dd"
+  },
+  "journal": {
+    "path": "research/m31-coupled-loads-2026-10-17/results/coupled-results.json.jsonl",
+    "bytes": 1007669,
+    "sha256": "0f3234cdb536c635b9da8e35f21621a0e868e64ab33dd428c4713b2aecb30538"
+  },
+  "sourceAndRuntimeRechecked": true,
+  "wallSeconds": 1.8293305421248078,
+  "finalOutputBytesBeforeReport": 3246947
+}

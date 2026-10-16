@@ -1,0 +1,1673 @@
+{
+  "schema": "m31-coupled-load-saved-result-audit-v1",
+  "method": "Saved-file JSON parsing, identity/order/count reconciliation, recorded-bound maxima/tolerance comparison, hashing and local Git object identity only. No scientific module import/execution, oracle recomputation, external lookup, or frozen-file edits.",
+  "sourceCommit": "0e184452f0ccc5fbe02c8c5491ee849259b74a26",
+  "sourceManifestSha256": "7995d9a9c8625031654f63bbf96f2ec83ea9496be5d273b388f349eed6d80593",
+  "inheritedContentReadsAdded": 0,
+  "inheritedContentReadsThisCycle": 9,
+  "sourcePinCount": 56,
+  "evidencePins": [
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/source-publication.json",
+      "bytes": 863,
+      "sha256": "f1d48a99e1431987669c15c759d4cd3da27d0282ff4d427a8584af9a82ee2433"
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/source-manifest.json",
+      "bytes": 11725,
+      "sha256": "7995d9a9c8625031654f63bbf96f2ec83ea9496be5d273b388f349eed6d80593"
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/results/coupled-results.json",
+      "bytes": 2238747,
+      "sha256": "7b39795554646fd9a917153cddcee3bd91a94f39524f7b29920a19885febc1dd"
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/results/coupled-results.json.jsonl",
+      "bytes": 1007669,
+      "sha256": "0f3234cdb536c635b9da8e35f21621a0e868e64ab33dd428c4713b2aecb30538"
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/results/independent-check.json",
+      "bytes": 426483,
+      "sha256": "31a87e09d88762a80533485303fbf286b7769a30a1d6e5f1fd73a96add4844a9"
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/results/kernel-attempt.json",
+      "bytes": 278,
+      "sha256": "4865c275df2d78081839439a4bed4da9deb589f4e5648505f2e053ca6d6ff1dc"
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/results/kernel-supervision.json",
+      "bytes": 2506,
+      "sha256": "91d376b5ca1bad27b60b05364c23022886c690d74f2f0778b8ca541683e6ea65"
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/results/kernel-guardian.jsonl",
+      "bytes": 111,
+      "sha256": "e46b3bef4750b3d23b4f3617ae226df922581039b1fe56e88afc0ea66734ceab"
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/results/kernel-stdout.log",
+      "bytes": 71,
+      "sha256": "f8619c5bb3f081c66d18936ad4c2866beb40d31dc3db86a614332b4b65a4ea12"
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/results/kernel-stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/results/checker-attempt.json",
+      "bytes": 279,
+      "sha256": "de7eda674939e373cc64d4bd77f955dede9bea80f72a951308b386451ed9f914"
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/results/checker-supervision.json",
+      "bytes": 2563,
+      "sha256": "ff6a2829d187387b554b1aed810352f1043251f38dd33c3dce4f550495778ec8"
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/results/checker-guardian.jsonl",
+      "bytes": 111,
+      "sha256": "679c2352b86d257e9eb77939663a73eea357263f78b21d06d34647d9d864d91b"
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/results/checker-stdout.log",
+      "bytes": 122,
+      "sha256": "ded4660a96232b814c7ab7583603d46b35daf1758e065b8d97693689dc6393e1"
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/results/checker-stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "sourcePinChecks": [
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/MODEL.md",
+      "bytes": 3295,
+      "sha256": "70a267c26c142d2cccde4e8530f1be3fa619c3301964878d244d6dca8f8070c6",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/PARENT-READING.json",
+      "bytes": 4338,
+      "sha256": "43c441f4090de08ca1df8f231025f764504dd9bd934a2c8e110ea66ceefe8f06",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/PREFREEZE-CHANGES.md",
+      "bytes": 2235,
+      "sha256": "14c700b486a2dd479351a8b24035803991b690be5d51b762b16d004038095de1",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/PROTOCOL-DRAFT.md",
+      "bytes": 9968,
+      "sha256": "02a2a72ec90a4a99206db5d6e047612896edb6bcf07047ff108a08115d62bddd",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/PROTOCOL.md",
+      "bytes": 12710,
+      "sha256": "b1c5293cdaead63c2a74387fcf63754ff2b16fe73029e655fa80240cce6018ba",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/SOURCE-DECISION.md",
+      "bytes": 2522,
+      "sha256": "1f7192f1a7b5aa565e68d747adb9a85f063ad32baf33c1871783f6a8b2ff9949",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/SOURCE-PRIVACY.md",
+      "bytes": 664,
+      "sha256": "002fdf76798970f19b76b924f542d9666f163431e28b789434c1f8e32f934c94",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/SOURCE-SYNTAX.json",
+      "bytes": 2032,
+      "sha256": "ed481dc0537192a7b88afbbe1e85f3353a00ee1436c41cf6ed071254b631c02f",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/prefreeze/contract-before-stress-identities.json",
+      "bytes": 4786,
+      "sha256": "2158742782abbc0adc4d1aad7a653d6ad9a12ad7f6adc83f33681dfbc061e7f8",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/prefreeze/coupled-before-nonempty.cjs",
+      "bytes": 7398,
+      "sha256": "1621b5e6e89a8e419c7644143ae4f193c0331f97bc9b3537c6266fcccf8d7668",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/prefreeze/independent-checker/first-complete-check.py",
+      "bytes": 52178,
+      "sha256": "ade02e36987f1cdb07c121df5210d7c7f22e324aad776cb1c7ef3f3911a8e0f6",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/prefreeze/independent-checker/hash-buffer-loader-check.py",
+      "bytes": 52471,
+      "sha256": "0f8158b2b3f897182bfeb8d92ee7612774ff92f6e7c4815862e9f8ba2b531842",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/prefreeze/independent-checker/helper-only-check.py",
+      "bytes": 5425,
+      "sha256": "38455f853d6284260dc139dea976f1e63db8db16eb37a09ca80adc10f6cc3669",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/prefreeze/inherited-supervision/guardian.py",
+      "bytes": 1656,
+      "sha256": "a015e8dd42b31f6f630cf651ae2d741dc33d410aa3e2649fb0a844d2e036e3cf",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/prefreeze/inherited-supervision/supervise.py",
+      "bytes": 11235,
+      "sha256": "1c9f61f2e42cace199ca5ce80eaeae5f124562a63d2bb620529ce060b457a87f",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/prefreeze/spec-before-tilted-force-control.json",
+      "bytes": 36010,
+      "sha256": "21c59dedcc96984171baaa2c54af6e44e91dc9de1ad6e0cf3321c612be990004",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/review/DRAFT-MATHEMATICAL-CHALLENGE.md",
+      "bytes": 9604,
+      "sha256": "4d0d0aea9c77f0a18e38fc4474f4bece153e845b7b0e9da80f2553c114cbe8ef",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/review/INDEPENDENT-CHECKER-DRAFT.md",
+      "bytes": 6941,
+      "sha256": "43b61c65ae24da98383a03d6c4ecf9599c3d87d37ded2d4a5c10fdc369e0359e",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/review/INDEPENDENT-CHECKER-READING.json",
+      "bytes": 2506,
+      "sha256": "d343cab70002b66cf43e346c93db9d81ea7e27e1d7fc751519b549cfbe7a5602",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/review/MATHEMATICS-READING.json",
+      "bytes": 11387,
+      "sha256": "d6109db039f472a0cd57823412e482e3f592f069839d48642b750a7b1e814c55",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/review/MATHEMATICS.md",
+      "bytes": 18060,
+      "sha256": "65ee2c5100ab9b09252b728256cc1f58c326383a897d35783b794e61684ff92b",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/review/PROTOCOL-AND-SUPERVISION.md",
+      "bytes": 30513,
+      "sha256": "25f9b2e966cfdd0e71e4257a9c4a6c5b2969e54f091d3158910f41e5fb47a821",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/runtime-pins.json",
+      "bytes": 248,
+      "sha256": "842b2522133ed499f4706e071b09f3d100c5f4ed3f41d0fd135736c4dc191087",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/source/adapter.cjs",
+      "bytes": 2400,
+      "sha256": "5cf2b2ddc590915c63bae4f3909e90f196277804d1524aa0ef68165e6b1e4145",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/source/check.py",
+      "bytes": 52997,
+      "sha256": "dd3675f60d12f347ab550f1588c31da54ba57f065b20a727120711bf144e6fd4",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/source/coupled.cjs",
+      "bytes": 7421,
+      "sha256": "898d6b154d7a7c683a5ecc182280ff5c56d8a94526e3038c1da38b125c5a0ae9",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/source/guardian.py",
+      "bytes": 1656,
+      "sha256": "fe8940e154ffdea296c13fbfe14848977c2bf950789aa20e9bf28affb58084c8",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/source/interval.cjs",
+      "bytes": 2815,
+      "sha256": "73f5afce4dbc2551535127abeaa96d2e6389073e898f9b9dcc70a977ff19ded3",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/source/pair-reference.py",
+      "bytes": 44757,
+      "sha256": "845f52cf350a09d2043934dff3e797a7b7416f4ef5c64beb716104bcd74f38f0",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/source/pair.cjs",
+      "bytes": 3579,
+      "sha256": "e9fb2f4d7e4d1da09f53c082cf09a3b01c906a9d77642ae333319118b2f568cc",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/source/rational.cjs",
+      "bytes": 1188,
+      "sha256": "de2adde5459d37cc537709f7a488605d9c21d8eedf022efc0a3e9461d4d97333",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/source/result-contract.json",
+      "bytes": 5372,
+      "sha256": "69bf30351d34d73c69960679daed08eae6a6a75d5288ba3f7137017ceafb026f",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/source/run.cjs",
+      "bytes": 1413,
+      "sha256": "2a3bf9f62ed2e296a4dd592f70a50430e17baad71c81396d1c04f4a0d4aa6004",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/source/spec.json",
+      "bytes": 35930,
+      "sha256": "a718c20358161fd12bbd24e8939a8859f36fd2982676c577846f4a10582c2afc",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/source/supervise.py",
+      "bytes": 11292,
+      "sha256": "8cc277688ee4339f5b520acdd23894a2393db89e7c2335ce1ed391bd578ae52e",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-coupled-solve-2026-10-16/review/CONTRACT-CHALLENGE.md",
+      "bytes": 10140,
+      "sha256": "39fd45bf0070c76a40251f1519898ca7ca169978966d3bcfb052f66df82b4476",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-current-bound-design-2026-10-16/ADOPTED-DESIGN.md",
+      "bytes": 10420,
+      "sha256": "702d64e84c3fc12fdc9e85cb59abf4dd00e8df010647e1567a47eed49ee5387c",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-current-pair-2026-10-17/qa/run.cjs",
+      "bytes": 4993,
+      "sha256": "99d256038609afceaac0d3e5cf7a70af91c343fe7f16cb8117a96c03ac11accd",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-current-pair-2026-10-17/source-publication.json",
+      "bytes": 818,
+      "sha256": "2c436c56b6fcdd5a7cb293fb82ba314e89af57f9c29bcd71d2d0c860e11d320b",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-current-pair-2026-10-17/source/adapter.cjs",
+      "bytes": 2400,
+      "sha256": "5cf2b2ddc590915c63bae4f3909e90f196277804d1524aa0ef68165e6b1e4145",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-current-pair-2026-10-17/source/check.py",
+      "bytes": 44757,
+      "sha256": "845f52cf350a09d2043934dff3e797a7b7416f4ef5c64beb716104bcd74f38f0",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-current-pair-2026-10-17/source/guardian.py",
+      "bytes": 1656,
+      "sha256": "a015e8dd42b31f6f630cf651ae2d741dc33d410aa3e2649fb0a844d2e036e3cf",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-current-pair-2026-10-17/source/interval.cjs",
+      "bytes": 2815,
+      "sha256": "73f5afce4dbc2551535127abeaa96d2e6389073e898f9b9dcc70a977ff19ded3",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-current-pair-2026-10-17/source/pair.cjs",
+      "bytes": 3579,
+      "sha256": "e9fb2f4d7e4d1da09f53c082cf09a3b01c906a9d77642ae333319118b2f568cc",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-current-pair-2026-10-17/source/rational.cjs",
+      "bytes": 1188,
+      "sha256": "de2adde5459d37cc537709f7a488605d9c21d8eedf022efc0a3e9461d4d97333",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-current-pair-2026-10-17/source/run.cjs",
+      "bytes": 1993,
+      "sha256": "26f36b36ff66fb7a2c8a8ccdf8cf3850fb7a48213d9265a4795de16157081f28",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-current-pair-2026-10-17/source/spec.json",
+      "bytes": 47250,
+      "sha256": "49ca3fef52dd0a12df8696db4c40ba43c155eba91533675ec6261cb4f61d66ab",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-current-pair-2026-10-17/source/supervise.py",
+      "bytes": 11235,
+      "sha256": "1c9f61f2e42cace199ca5ce80eaeae5f124562a63d2bb620529ce060b457a87f",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-current-pair-2026-10-17/viewer/app.js",
+      "bytes": 5745,
+      "sha256": "5e12c2c449354c70a5dfb3ac101db47b755041f6eb1fa5cb919d0513f794077f",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-current-pair-2026-10-17/viewer/index.html",
+      "bytes": 4394,
+      "sha256": "ffed6bdb4885c4d76e65d5e5c7079c5b076d9239488f6d49666a07cf1a8d0e7f",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-current-pair-2026-10-17/viewer/pair-scene.js",
+      "bytes": 3425,
+      "sha256": "c37369f175796d25fb3731d29bc32b4f8f4ae2ad38b98fce786beca33e2a344b",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-current-pair-2026-10-17/viewer/style.css",
+      "bytes": 2546,
+      "sha256": "730eb74ac4881a5d71bde18df92dc43f816a9acd41d42807a9e390fa70cca741",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-root-defect-planning-2026-10-16/ADOPTED-DERIVATION.md",
+      "bytes": 4242,
+      "sha256": "dd1afefb4cefb4f10176cb2ba2fae25024e28116ce7c78d73fa152e3ea29104c",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-root-defect-planning-2026-10-16/DERIVATION-DRAFT.md",
+      "bytes": 5672,
+      "sha256": "744aa89915f09558081600edfec39c2e28dfa70461ef1ea6b35ae11fb8ec276c",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/m31-root-defect-planning-2026-10-16/review/MATHEMATICAL-CHALLENGE.md",
+      "bytes": 13810,
+      "sha256": "58337af18dab0d73e0b389dc01d1e1c90649c8d7cc45e84ab70ed9eefb18e59d",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    },
+    {
+      "path": "research/publication-receipts/m31-current-pair-restart-2026-10-17.md",
+      "bytes": 2064,
+      "sha256": "1108ac5ab83f3d8e843990371ae62564df935812617ff7510710462082195639",
+      "currentMatches": true,
+      "commitMatches": true,
+      "currentEqualsCommit": true
+    }
+  ],
+  "checks": [
+    {
+      "check": "source publication binds exact expected commit",
+      "passed": true
+    },
+    {
+      "check": "manifest bytes SHA-256 and Git blob match publication",
+      "passed": true
+    },
+    {
+      "check": "manifest bytes equal local exact-commit object",
+      "passed": true
+    },
+    {
+      "check": "source commit parent agrees with manifest",
+      "passed": true
+    },
+    {
+      "check": "56 unique source manifest pins",
+      "passed": true
+    },
+    {
+      "check": "all 56 current and exact-commit source files match frozen pins",
+      "passed": true
+    },
+    {
+      "check": "publication records remote/current agreement and 56 pins",
+      "passed": true
+    },
+    {
+      "check": "checker verified-source list equals frozen manifest",
+      "passed": true
+    },
+    {
+      "check": "checker source-manifest identity matches actual bytes",
+      "passed": true
+    },
+    {
+      "check": "eight candidate source pins equal frozen manifest",
+      "passed": true
+    },
+    {
+      "check": "25 constant encodings equal recorded oracle expectations",
+      "passed": true
+    },
+    {
+      "check": "19 unique ordered scene IDs equal spec and checker",
+      "passed": true
+    },
+    {
+      "check": "candidate document and record fields match contract",
+      "passed": true
+    },
+    {
+      "check": "journal has matching header 19 identical scene rows and complete footer",
+      "passed": true
+    },
+    {
+      "check": "all prepared/input stable-ID lists match frozen declaration order",
+      "passed": true
+    },
+    {
+      "check": "all nonself pair IDs unique complete and in declared order except explicit global stop",
+      "passed": true
+    },
+    {
+      "check": "every per-scene coverage counter reconciles with saved data",
+      "passed": true
+    },
+    {
+      "check": "all checker per-scene labels counts and flags match saved candidate data",
+      "passed": true
+    },
+    {
+      "check": "certificate/candidate/load ownership coverage and refused payload absence",
+      "passed": true
+    },
+    {
+      "check": "declared scene error maxima cover saved per-load upper values and match checker",
+      "passed": true
+    },
+    {
+      "check": "all 11 saved tolerance decisions satisfy exact integer comparison on stored uppers",
+      "passed": true
+    },
+    {
+      "check": "all five unresolved pairs match strict prospective identities and codes",
+      "passed": true
+    },
+    {
+      "check": "17 ordinary outcomes agree with recorded reference statuses/branches",
+      "passed": true
+    },
+    {
+      "check": "scene status and branch aggregates match saved checker",
+      "passed": true
+    },
+    {
+      "check": "pair status aggregates match saved checker",
+      "passed": true
+    },
+    {
+      "check": "planned observed and positive totals reconcile",
+      "passed": true
+    },
+    {
+      "check": "eight omitted planned pairs belong only to explicit invalid-global-pair stop",
+      "passed": true
+    },
+    {
+      "check": "reference label aggregates match report",
+      "passed": true
+    },
+    {
+      "check": "17 qualified outcomes include 11 loads and six rejects while two stress scenes stay unqualified",
+      "passed": true
+    },
+    {
+      "check": "baseline and overall disposition preserve partial qualification",
+      "passed": true
+    },
+    {
+      "check": "nine declared controls recorded executed rejected with consistent error counts",
+      "passed": true
+    },
+    {
+      "check": "checker input hash matches actual candidate bytes",
+      "passed": true
+    },
+    {
+      "check": "checker journal metadata match actual complete journal",
+      "passed": true
+    },
+    {
+      "check": "kernel attempt and supervision bind same frozen source",
+      "passed": true
+    },
+    {
+      "check": "kernel runtime pin fields match frozen runtime metadata",
+      "passed": true
+    },
+    {
+      "check": "kernel success/closure and source-runtime rechecks recorded",
+      "passed": true
+    },
+    {
+      "check": "kernel guardian has one matching successful child lifecycle",
+      "passed": true
+    },
+    {
+      "check": "kernel recorded limits equal frozen allocation",
+      "passed": true
+    },
+    {
+      "check": "kernel recorded wall/sample RSS/output under limits",
+      "passed": true
+    },
+    {
+      "check": "kernel final report within 64KiB reservation",
+      "passed": true
+    },
+    {
+      "check": "kernel main output pin matches saved bytes",
+      "passed": true
+    },
+    {
+      "check": "kernel journal pin matches saved bytes",
+      "passed": true
+    },
+    {
+      "check": "kernel kernel-stdout.log raw/published pins match saved log",
+      "passed": true
+    },
+    {
+      "check": "kernel kernel-stderr.log raw/published pins match saved log",
+      "passed": true
+    },
+    {
+      "check": "kernel final-output byte count reconstructs from saved artifact sizes and current-stage raw-log sizes",
+      "passed": true
+    },
+    {
+      "check": "kernel attempt timestamp follows recorded exact-commit publication verification",
+      "passed": true
+    },
+    {
+      "check": "checker attempt and supervision bind same frozen source",
+      "passed": true
+    },
+    {
+      "check": "checker runtime pin fields match frozen runtime metadata",
+      "passed": true
+    },
+    {
+      "check": "checker success/closure and source-runtime rechecks recorded",
+      "passed": true
+    },
+    {
+      "check": "checker guardian has one matching successful child lifecycle",
+      "passed": true
+    },
+    {
+      "check": "checker recorded limits equal frozen allocation",
+      "passed": true
+    },
+    {
+      "check": "checker recorded wall/sample RSS/output under limits",
+      "passed": true
+    },
+    {
+      "check": "checker final report within 64KiB reservation",
+      "passed": true
+    },
+    {
+      "check": "checker main output pin matches saved bytes",
+      "passed": true
+    },
+    {
+      "check": "checker checker-stdout.log raw/published pins match saved log",
+      "passed": true
+    },
+    {
+      "check": "checker checker-stderr.log raw/published pins match saved log",
+      "passed": true
+    },
+    {
+      "check": "checker final-output byte count reconstructs from saved artifact sizes and current-stage raw-log sizes",
+      "passed": true
+    },
+    {
+      "check": "checker attempt timestamp follows recorded exact-commit publication verification",
+      "passed": true
+    },
+    {
+      "check": "stdout JSON summaries agree with saved results",
+      "passed": true
+    },
+    {
+      "check": "both stderr logs empty",
+      "passed": true
+    },
+    {
+      "check": "publication timestamp follows source manifest freeze",
+      "passed": true
+    }
+  ],
+  "checkCount": 61,
+  "failedChecks": [],
+  "administrativeAuditPassed": true,
+  "sceneSummaries": [
+    {
+      "id": "solo",
+      "drones": 1,
+      "coverage": {
+        "plannedPairs": 0,
+        "observedPairs": 0,
+        "positiveTerms": 0,
+        "stopReason": null
+      },
+      "candidateResult": {
+        "status": "certified",
+        "branch": "loads",
+        "witness": null,
+        "toleranceAchieved": true
+      },
+      "pairStatusCounts": {},
+      "recordedReferenceStatus": "admitted",
+      "recordedReferenceBranch": "loads",
+      "recordedQualified": true,
+      "recordedVerified": true,
+      "recordedToleranceAchieved": true,
+      "expectedClassAgrees": true,
+      "unresolvedPairs": [],
+      "maxErrorUppers": {
+        "rotor": "0",
+        "collective": "0",
+        "worldForce": "0",
+        "worldMoment": "37953251556107865"
+      }
+    },
+    {
+      "id": "far-pair",
+      "drones": 2,
+      "coverage": {
+        "plannedPairs": 8,
+        "observedPairs": 8,
+        "positiveTerms": 0,
+        "stopReason": null
+      },
+      "candidateResult": {
+        "status": "certified",
+        "branch": "loads",
+        "witness": null,
+        "toleranceAchieved": true
+      },
+      "pairStatusCounts": {
+        "zero": 8
+      },
+      "recordedReferenceStatus": "admitted",
+      "recordedReferenceBranch": "loads",
+      "recordedQualified": true,
+      "recordedVerified": true,
+      "recordedToleranceAchieved": true,
+      "expectedClassAgrees": true,
+      "unresolvedPairs": [],
+      "maxErrorUppers": {
+        "rotor": "0",
+        "collective": "0",
+        "worldForce": "0",
+        "worldMoment": "37953251556107865"
+      }
+    },
+    {
+      "id": "aligned-pair",
+      "drones": 2,
+      "coverage": {
+        "plannedPairs": 8,
+        "observedPairs": 8,
+        "positiveTerms": 4,
+        "stopReason": null
+      },
+      "candidateResult": {
+        "status": "certified",
+        "branch": "loads",
+        "witness": null,
+        "toleranceAchieved": true
+      },
+      "pairStatusCounts": {
+        "positive": 4,
+        "zero": 4
+      },
+      "recordedReferenceStatus": "admitted",
+      "recordedReferenceBranch": "loads",
+      "recordedQualified": true,
+      "recordedVerified": true,
+      "recordedToleranceAchieved": true,
+      "expectedClassAgrees": true,
+      "unresolvedPairs": [],
+      "maxErrorUppers": {
+        "rotor": "9472738833058",
+        "collective": "9472738833051",
+        "worldForce": "1062691043571020",
+        "worldMoment": "37953251556107865"
+      }
+    },
+    {
+      "id": "stack-4",
+      "drones": 4,
+      "coverage": {
+        "plannedPairs": 48,
+        "observedPairs": 48,
+        "positiveTerms": 24,
+        "stopReason": null
+      },
+      "candidateResult": {
+        "status": "certified",
+        "branch": "loads",
+        "witness": null,
+        "toleranceAchieved": true
+      },
+      "pairStatusCounts": {
+        "positive": 24,
+        "zero": 24
+      },
+      "recordedReferenceStatus": "admitted",
+      "recordedReferenceBranch": "loads",
+      "recordedQualified": true,
+      "recordedVerified": true,
+      "recordedToleranceAchieved": true,
+      "expectedClassAgrees": true,
+      "unresolvedPairs": [],
+      "maxErrorUppers": {
+        "rotor": "25836603883959",
+        "collective": "25836603883947",
+        "worldForce": "1062691043571020",
+        "worldMoment": "37953251556107865"
+      }
+    },
+    {
+      "id": "stack-8",
+      "drones": 8,
+      "coverage": {
+        "plannedPairs": 224,
+        "observedPairs": 224,
+        "positiveTerms": 112,
+        "stopReason": null
+      },
+      "candidateResult": {
+        "status": "certified",
+        "branch": "loads",
+        "witness": null,
+        "toleranceAchieved": true
+      },
+      "pairStatusCounts": {
+        "positive": 112,
+        "zero": 112
+      },
+      "recordedReferenceStatus": "admitted",
+      "recordedReferenceBranch": "loads",
+      "recordedQualified": true,
+      "recordedVerified": true,
+      "recordedToleranceAchieved": true,
+      "expectedClassAgrees": true,
+      "unresolvedPairs": [],
+      "maxErrorUppers": {
+        "rotor": "24053144276695",
+        "collective": "24053144276695",
+        "worldForce": "1062691043571020",
+        "worldMoment": "37953251556107865"
+      }
+    },
+    {
+      "id": "stack-16",
+      "drones": 16,
+      "coverage": {
+        "plannedPairs": 960,
+        "observedPairs": 960,
+        "positiveTerms": 368,
+        "stopReason": null
+      },
+      "candidateResult": {
+        "status": "certified",
+        "branch": "loads",
+        "witness": null,
+        "toleranceAchieved": true
+      },
+      "pairStatusCounts": {
+        "positive": 368,
+        "zero": 592
+      },
+      "recordedReferenceStatus": "admitted",
+      "recordedReferenceBranch": "loads",
+      "recordedQualified": true,
+      "recordedVerified": true,
+      "recordedToleranceAchieved": true,
+      "expectedClassAgrees": true,
+      "unresolvedPairs": [],
+      "maxErrorUppers": {
+        "rotor": "42441473999925",
+        "collective": "42441473999914",
+        "worldForce": "1062691043571020",
+        "worldMoment": "37953251556107865"
+      }
+    },
+    {
+      "id": "two-columns-8",
+      "drones": 8,
+      "coverage": {
+        "plannedPairs": 224,
+        "observedPairs": 224,
+        "positiveTerms": 72,
+        "stopReason": null
+      },
+      "candidateResult": {
+        "status": "certified",
+        "branch": "loads",
+        "witness": null,
+        "toleranceAchieved": true
+      },
+      "pairStatusCounts": {
+        "zero": 152,
+        "positive": 72
+      },
+      "recordedReferenceStatus": "admitted",
+      "recordedReferenceBranch": "loads",
+      "recordedQualified": true,
+      "recordedVerified": true,
+      "recordedToleranceAchieved": true,
+      "expectedClassAgrees": true,
+      "unresolvedPairs": [],
+      "maxErrorUppers": {
+        "rotor": "47197037729332",
+        "collective": "41418116222193",
+        "worldForce": "1062691043571020",
+        "worldMoment": "37953251556107865"
+      }
+    },
+    {
+      "id": "tilted-4",
+      "drones": 4,
+      "coverage": {
+        "plannedPairs": 48,
+        "observedPairs": 48,
+        "positiveTerms": 24,
+        "stopReason": null
+      },
+      "candidateResult": {
+        "status": "certified",
+        "branch": "loads",
+        "witness": null,
+        "toleranceAchieved": true
+      },
+      "pairStatusCounts": {
+        "positive": 24,
+        "zero": 24
+      },
+      "recordedReferenceStatus": "admitted",
+      "recordedReferenceBranch": "loads",
+      "recordedQualified": true,
+      "recordedVerified": true,
+      "recordedToleranceAchieved": true,
+      "expectedClassAgrees": true,
+      "unresolvedPairs": [],
+      "maxErrorUppers": {
+        "rotor": "147452394859788",
+        "collective": "53266742814925",
+        "worldForce": "1502872086430555",
+        "worldMoment": "46483050195977961"
+      }
+    },
+    {
+      "id": "asymmetric-4",
+      "drones": 4,
+      "coverage": {
+        "plannedPairs": 48,
+        "observedPairs": 48,
+        "positiveTerms": 24,
+        "stopReason": null
+      },
+      "candidateResult": {
+        "status": "certified",
+        "branch": "loads",
+        "witness": null,
+        "toleranceAchieved": true
+      },
+      "pairStatusCounts": {
+        "positive": 24,
+        "zero": 24
+      },
+      "recordedReferenceStatus": "admitted",
+      "recordedReferenceBranch": "loads",
+      "recordedQualified": true,
+      "recordedVerified": true,
+      "recordedToleranceAchieved": true,
+      "expectedClassAgrees": true,
+      "unresolvedPairs": [],
+      "maxErrorUppers": {
+        "rotor": "119293955115431",
+        "collective": "52250256408023",
+        "worldForce": "1062691043571020",
+        "worldMoment": "37953251556107865"
+      }
+    },
+    {
+      "id": "asymmetric-permuted-4",
+      "drones": 4,
+      "coverage": {
+        "plannedPairs": 48,
+        "observedPairs": 48,
+        "positiveTerms": 24,
+        "stopReason": null
+      },
+      "candidateResult": {
+        "status": "certified",
+        "branch": "loads",
+        "witness": null,
+        "toleranceAchieved": true
+      },
+      "pairStatusCounts": {
+        "zero": 24,
+        "positive": 24
+      },
+      "recordedReferenceStatus": "admitted",
+      "recordedReferenceBranch": "loads",
+      "recordedQualified": true,
+      "recordedVerified": true,
+      "recordedToleranceAchieved": true,
+      "expectedClassAgrees": true,
+      "unresolvedPairs": [],
+      "maxErrorUppers": {
+        "rotor": "119293955115431",
+        "collective": "52250256408023",
+        "worldForce": "1062691043571020",
+        "worldMoment": "37953251556107865"
+      }
+    },
+    {
+      "id": "near-rejection",
+      "drones": 2,
+      "coverage": {
+        "plannedPairs": 8,
+        "observedPairs": 8,
+        "positiveTerms": 0,
+        "stopReason": null
+      },
+      "candidateResult": {
+        "status": "rejected",
+        "branch": "pair-near",
+        "witness": {
+          "i": 0,
+          "r": 0,
+          "j": 1
+        },
+        "toleranceAchieved": null
+      },
+      "pairStatusCounts": {
+        "rejected": 4,
+        "zero": 4
+      },
+      "recordedReferenceStatus": "rejected",
+      "recordedReferenceBranch": "pair-near",
+      "recordedQualified": true,
+      "recordedVerified": true,
+      "recordedToleranceAchieved": null,
+      "expectedClassAgrees": true,
+      "unresolvedPairs": [],
+      "maxErrorUppers": null
+    },
+    {
+      "id": "invalid-isolated",
+      "drones": 1,
+      "coverage": {
+        "plannedPairs": 0,
+        "observedPairs": 0,
+        "positiveTerms": 0,
+        "stopReason": "global-preparation"
+      },
+      "candidateResult": {
+        "status": "rejected",
+        "branch": "preparation",
+        "witness": {
+          "id": 0
+        },
+        "toleranceAchieved": null
+      },
+      "pairStatusCounts": {},
+      "recordedReferenceStatus": "rejected",
+      "recordedReferenceBranch": "preparation",
+      "recordedQualified": true,
+      "recordedVerified": true,
+      "recordedToleranceAchieved": null,
+      "expectedClassAgrees": true,
+      "unresolvedPairs": [],
+      "maxErrorUppers": null
+    },
+    {
+      "id": "invalid-global-pair",
+      "drones": 2,
+      "coverage": {
+        "plannedPairs": 8,
+        "observedPairs": 0,
+        "positiveTerms": 0,
+        "stopReason": "global-preparation"
+      },
+      "candidateResult": {
+        "status": "rejected",
+        "branch": "preparation",
+        "witness": {
+          "id": 0
+        },
+        "toleranceAchieved": null
+      },
+      "pairStatusCounts": {},
+      "recordedReferenceStatus": "rejected",
+      "recordedReferenceBranch": "preparation",
+      "recordedQualified": true,
+      "recordedVerified": true,
+      "recordedToleranceAchieved": null,
+      "expectedClassAgrees": true,
+      "unresolvedPairs": [],
+      "maxErrorUppers": null
+    },
+    {
+      "id": "scaled-cap",
+      "drones": 2,
+      "coverage": {
+        "plannedPairs": 8,
+        "observedPairs": 8,
+        "positiveTerms": 0,
+        "stopReason": null
+      },
+      "candidateResult": {
+        "status": "rejected",
+        "branch": "pair-cap",
+        "witness": {
+          "i": 0,
+          "r": 0,
+          "j": 1
+        },
+        "toleranceAchieved": null
+      },
+      "pairStatusCounts": {
+        "rejected": 4,
+        "zero": 4
+      },
+      "recordedReferenceStatus": "rejected",
+      "recordedReferenceBranch": "pair-cap",
+      "recordedQualified": true,
+      "recordedVerified": true,
+      "recordedToleranceAchieved": null,
+      "expectedClassAgrees": true,
+      "unresolvedPairs": [],
+      "maxErrorUppers": null
+    },
+    {
+      "id": "tiny-force",
+      "drones": 2,
+      "coverage": {
+        "plannedPairs": 8,
+        "observedPairs": 8,
+        "positiveTerms": 3,
+        "stopReason": null
+      },
+      "candidateResult": {
+        "status": "unresolved",
+        "branch": "pair-normalizer",
+        "witness": {
+          "i": 0,
+          "r": 0,
+          "j": 1
+        },
+        "toleranceAchieved": null
+      },
+      "pairStatusCounts": {
+        "unresolved": 1,
+        "positive": 3,
+        "zero": 4
+      },
+      "recordedReferenceStatus": "reference-undecidable",
+      "recordedReferenceBranch": "pair-normalizer",
+      "recordedQualified": false,
+      "recordedVerified": true,
+      "recordedToleranceAchieved": null,
+      "expectedClassAgrees": false,
+      "unresolvedPairs": [
+        {
+          "i": 0,
+          "r": 0,
+          "j": 1,
+          "branch": "normalizer"
+        }
+      ],
+      "maxErrorUppers": null
+    },
+    {
+      "id": "huge-force",
+      "drones": 2,
+      "coverage": {
+        "plannedPairs": 8,
+        "observedPairs": 8,
+        "positiveTerms": 0,
+        "stopReason": null
+      },
+      "candidateResult": {
+        "status": "unresolved",
+        "branch": "pair-unresolved-range",
+        "witness": {
+          "i": 0,
+          "r": 0,
+          "j": 1
+        },
+        "toleranceAchieved": null
+      },
+      "pairStatusCounts": {
+        "unresolved": 4,
+        "zero": 4
+      },
+      "recordedReferenceStatus": "rejected",
+      "recordedReferenceBranch": "pair-cap",
+      "recordedQualified": false,
+      "recordedVerified": true,
+      "recordedToleranceAchieved": null,
+      "expectedClassAgrees": false,
+      "unresolvedPairs": [
+        {
+          "i": 0,
+          "r": 0,
+          "j": 1,
+          "branch": "unresolved-range"
+        },
+        {
+          "i": 0,
+          "r": 1,
+          "j": 1,
+          "branch": "unresolved-range"
+        },
+        {
+          "i": 0,
+          "r": 2,
+          "j": 1,
+          "branch": "unresolved-range"
+        },
+        {
+          "i": 0,
+          "r": 3,
+          "j": 1,
+          "branch": "unresolved-range"
+        }
+      ],
+      "maxErrorUppers": null
+    },
+    {
+      "id": "center-range",
+      "drones": 2,
+      "coverage": {
+        "plannedPairs": 8,
+        "observedPairs": 8,
+        "positiveTerms": 0,
+        "stopReason": null
+      },
+      "candidateResult": {
+        "status": "rejected",
+        "branch": "pair-center-guard",
+        "witness": {
+          "i": 0,
+          "r": 0,
+          "j": 1
+        },
+        "toleranceAchieved": null
+      },
+      "pairStatusCounts": {
+        "rejected": 8
+      },
+      "recordedReferenceStatus": "rejected",
+      "recordedReferenceBranch": "pair-center-guard",
+      "recordedQualified": true,
+      "recordedVerified": true,
+      "recordedToleranceAchieved": null,
+      "expectedClassAgrees": true,
+      "unresolvedPairs": [],
+      "maxErrorUppers": null
+    },
+    {
+      "id": "upward-order",
+      "drones": 2,
+      "coverage": {
+        "plannedPairs": 8,
+        "observedPairs": 8,
+        "positiveTerms": 4,
+        "stopReason": null
+      },
+      "candidateResult": {
+        "status": "rejected",
+        "branch": "ordering",
+        "witness": {
+          "i": 1,
+          "r": 0,
+          "j": 0
+        },
+        "toleranceAchieved": null
+      },
+      "pairStatusCounts": {
+        "zero": 4,
+        "positive": 4
+      },
+      "recordedReferenceStatus": "rejected",
+      "recordedReferenceBranch": "ordering",
+      "recordedQualified": true,
+      "recordedVerified": true,
+      "recordedToleranceAchieved": null,
+      "expectedClassAgrees": true,
+      "unresolvedPairs": [],
+      "maxErrorUppers": null
+    },
+    {
+      "id": "staggered-16",
+      "drones": 16,
+      "coverage": {
+        "plannedPairs": 960,
+        "observedPairs": 960,
+        "positiveTerms": 342,
+        "stopReason": null
+      },
+      "candidateResult": {
+        "status": "certified",
+        "branch": "loads",
+        "witness": null,
+        "toleranceAchieved": true
+      },
+      "pairStatusCounts": {
+        "positive": 342,
+        "zero": 618
+      },
+      "recordedReferenceStatus": "admitted",
+      "recordedReferenceBranch": "loads",
+      "recordedQualified": true,
+      "recordedVerified": true,
+      "recordedToleranceAchieved": true,
+      "expectedClassAgrees": true,
+      "unresolvedPairs": [],
+      "maxErrorUppers": {
+        "rotor": "73281578107585",
+        "collective": "64362910156711",
+        "worldForce": "1502872086430555",
+        "worldMoment": "46483050195977961"
+      }
+    }
+  ],
+  "sceneStatusCounts": {
+    "certified": 11,
+    "rejected": 6,
+    "unresolved": 2
+  },
+  "pairStatusCounts": {
+    "zero": 1602,
+    "positive": 1001,
+    "rejected": 16,
+    "unresolved": 5
+  },
+  "plannedPairs": 2632,
+  "observedPairs": 2624,
+  "positivePairsAcrossAllScenes": 1001,
+  "positivePairsInCertifiedScenes": 994,
+  "certifiedRootRows": 276,
+  "recordedQualifiedOutcomes": 17,
+  "recordedCertifiedLoadSolutions": 11,
+  "recordedUnqualifiedScenes": [
+    "tiny-force",
+    "huge-force"
+  ],
+  "recordedFaultControls": [
+    {
+      "errorCount": 1,
+      "errors": [
+        "pair-count:scene=2"
+      ],
+      "executed": true,
+      "name": "missing-positive-pair",
+      "rejected": true,
+      "witness": {
+        "coefficient": {
+          "l": {
+            "d": "196159429230833773869868419475239575503198607639501078528",
+            "n": "97199556029819274146937503233108042678210337178920232755"
+          },
+          "u": {
+            "d": "6277101735386680763835789423207666416102355444464034512896",
+            "n": "3110385792954216772702000103459457365702730789725447448161"
+          }
+        },
+        "i": 0,
+        "j": 1,
+        "oracleBranch": "active",
+        "oracleStatus": "positive",
+        "r": 0,
+        "scene": "aligned-pair"
+      }
+    },
+    {
+      "errorCount": 1,
+      "errors": [
+        "root-defect-corollary:scene=2"
+      ],
+      "executed": true,
+      "name": "false-root-one",
+      "rejected": true,
+      "witness": {
+        "id": 0,
+        "proof": "reference upper is strictly below one",
+        "r": 0,
+        "referenceRoot": {
+          "l": {
+            "d": "340282366920938463463374607431768211456",
+            "n": "284669451780761040399916320500710136765"
+          },
+          "u": {
+            "d": "170141183460469231731687303715884105728",
+            "n": "142334725890380520199958160250355068383"
+          }
+        },
+        "scene": "aligned-pair"
+      }
+    },
+    {
+      "errorCount": 1,
+      "errors": [
+        "row-defect-enclosure:scene=2"
+      ],
+      "executed": true,
+      "name": "altered-candidate",
+      "rejected": true,
+      "witness": {
+        "id": 0,
+        "mutation": "xor one least-significant stored binary64 bit",
+        "r": 0,
+        "scene": "aligned-pair"
+      }
+    },
+    {
+      "errorCount": 1,
+      "errors": [
+        "rotor-error-full-box:scene=2"
+      ],
+      "executed": true,
+      "name": "false-error-zero",
+      "rejected": true,
+      "witness": {
+        "candidate": {
+          "d": "562949953421312",
+          "n": "470946102998289"
+        },
+        "id": 0,
+        "proof": "candidate lies strictly outside independently enclosed true root",
+        "r": 0,
+        "referenceRoot": {
+          "l": {
+            "d": "340282366920938463463374607431768211456",
+            "n": "284669451780761040399916320500710136765"
+          },
+          "u": {
+            "d": "170141183460469231731687303715884105728",
+            "n": "142334725890380520199958160250355068383"
+          }
+        },
+        "scene": "aligned-pair",
+        "separatingRootGap": {
+          "d": "170141183460469231731687303715884105728",
+          "n": "4685196621428196364833"
+        },
+        "strictNormalizedErrorLowerBound": {
+          "d": "170141183460469231731687303715884105728",
+          "n": "4685196621428196364833"
+        }
+      }
+    },
+    {
+      "errorCount": 1,
+      "errors": [
+        "prepared-operation-graph:scene=2"
+      ],
+      "executed": true,
+      "name": "altered-lever-arm",
+      "rejected": true,
+      "witness": {
+        "id": 0,
+        "mutation": "xor one least-significant prepared offset bit",
+        "r": 0,
+        "scene": "aligned-pair"
+      }
+    },
+    {
+      "errorCount": 1,
+      "errors": [
+        "pair-validation:pair-stable-id-or-order:pair=0:scene=2"
+      ],
+      "executed": true,
+      "name": "altered-stable-id",
+      "rejected": true,
+      "witness": {
+        "coefficient": {
+          "l": {
+            "d": "196159429230833773869868419475239575503198607639501078528",
+            "n": "97199556029819274146937503233108042678210337178920232755"
+          },
+          "u": {
+            "d": "6277101735386680763835789423207666416102355444464034512896",
+            "n": "3110385792954216772702000103459457365702730789725447448161"
+          }
+        },
+        "i": 0,
+        "j": 1,
+        "oracleBranch": "active",
+        "oracleStatus": "positive",
+        "r": 0,
+        "scene": "aligned-pair"
+      }
+    },
+    {
+      "errorCount": 1,
+      "errors": [
+        "record-count"
+      ],
+      "executed": true,
+      "name": "missing-scene",
+      "rejected": true,
+      "witness": {
+        "removedScene": "staggered-16"
+      }
+    },
+    {
+      "errorCount": 2,
+      "errors": [
+        "duplicate-record-id:scene=1",
+        "record-id-or-order:scene=1"
+      ],
+      "executed": true,
+      "name": "duplicate-scene",
+      "rejected": true,
+      "witness": {
+        "replaced": "far-pair",
+        "replacement": "solo"
+      }
+    },
+    {
+      "errorCount": 2,
+      "errors": [
+        "record-id-or-order:scene=0",
+        "record-id-or-order:scene=1"
+      ],
+      "executed": true,
+      "name": "reordered-scenes",
+      "rejected": true,
+      "witness": {
+        "exchanged": [
+          "solo",
+          "far-pair"
+        ]
+      }
+    }
+  ],
+  "recordedStageSupervision": [
+    {
+      "stage": "kernel",
+      "startedUtc": "2026-10-16T18:38:39Z",
+      "wallSeconds": 1.8293305421248078,
+      "samples": 22,
+      "peakSampledGroupRssBytes": 92422144,
+      "maxSampleGapSeconds": 0.12690025009214878,
+      "finalOutputBytesBeforeReport": 3246947,
+      "reconstructedFinalOutputBytesBeforeReport": 3246947,
+      "processGroup": 97037,
+      "scientificPid": 97039,
+      "success": true,
+      "closed": true
+    },
+    {
+      "stage": "checker",
+      "startedUtc": "2026-10-16T18:38:53Z",
+      "wallSeconds": 2.0215101670473814,
+      "samples": 26,
+      "peakSampledGroupRssBytes": 101171200,
+      "maxSampleGapSeconds": 0.08373850025236607,
+      "finalOutputBytesBeforeReport": 3676499,
+      "reconstructedFinalOutputBytesBeforeReport": 3676499,
+      "processGroup": 97240,
+      "scientificPid": 97242,
+      "success": true,
+      "closed": true
+    }
+  ],
+  "limitations": [
+    "Remote retrieval, scientific oracle/certificate validity, and process behavior are preserved reports rather than newly reproduced observations.",
+    "17 qualified outcomes include six expected rejection outcomes; only 11 scenes have certified loads and tolerance decisions.",
+    "The two stress scenes remain unqualified and fullQualification is false.",
+    "Error upper values are certified bounds, not measured physical errors; this audit does not recompute their scientific validity.",
+    "Sampled RSS and supervision wall time are operational records, not hard instantaneous memory bounds or throughput evidence."
+  ]
+}
