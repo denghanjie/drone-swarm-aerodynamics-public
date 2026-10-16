@@ -1,0 +1,11 @@
+# Claim–evidence ledger
+
+| Claim | Status and scope | Evidence | Limit / next challenge |
+|---|---|---|---|
+| Within-call memoization preserves complete scientific records on this fixed suite. | Confirmed within the finite tested suite. | results/check.json equivalencePassed,48timed+8fixed+6lifetime complete calls, direct transcripts;12independent reference files. | No universal mutable-client guarantee; fresh future model/force changes need separate tests. |
+| All six new moving snapshots are model-admitted and meet four1e-8numerical bounds. | Confirmed within sampled states and frozen mathematical model. | counts6/6,reference/*.json,outcomes,nontriviality and input pins. |51displayframes/run are not51certified load queries; no intermediate-time or integration-convergence inference. |
+| Caching provides at least10%complete-worker median improvement at every state with3/4wins. | Contradicted on this suite under the frozen practical decision rule;0/6states pass. | results/index.json all24pairs; results/check.json performance; analysis/descriptive-summary.json. | Technical repeats are dependent; no broad claim of zero benefit or its causal bottleneck. |
+| The integrated supervisor completed this kernel and checker lifecycle with retained result evidence. | Supported for these two executions. | attempts,authorizations,guardian journals,empty kernel failures journal,checker child-exit1failure journal,supervision reports. | Checker exit1represents the negative overall gate. Explicit escalated dispatch is separately caller-attested. |
+| Current physical predictions match real drones;5000coupled drones run in a browser; method is novel. | Unresolved; not tested here. | No qualifying evidence in this allocation. | Independent compatible measurements, complete coupled/browser cost, fresh scaling tests and closest-work comparison still needed. |
+
+All conditions and raw observations remain; no seed replacement, tuning, retry, pilot, post-outcome tolerance change or deletion occurred. The negative speed result does not undo the positive finite numerical checks. Literature links remain in LITERATURE-EXPERIMENT-LEDGER.json; established memoization and filtering are not presented as new general methods.

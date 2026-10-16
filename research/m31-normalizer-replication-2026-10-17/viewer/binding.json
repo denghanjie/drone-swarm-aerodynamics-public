@@ -1,0 +1,90 @@
+{
+  "schema": "m31-normalizer-replication-view-v1",
+  "package": "research/m31-normalizer-replication-2026-10-17",
+  "configId": "m31-normalizer-replication-v1",
+  "sourceCommit": "08ed31c184f88f95217dca689d3727c44c75e8c4",
+  "sourceManifestSha256": "0ed9fb1e8593306db4fbf0414df69775108c62989a7855718a7fc940475eb277",
+  "configSha256": "ef3a5378b3fc1abf3899e83448857f46c2a518281eca3f26c9f620c46db9aa22",
+  "schedule": [
+    {
+      "id": "run-a-t0",
+      "runId": "run-a",
+      "t": 0
+    },
+    {
+      "id": "run-a-t5",
+      "runId": "run-a",
+      "t": 5
+    },
+    {
+      "id": "run-a-t10",
+      "runId": "run-a",
+      "t": 10
+    },
+    {
+      "id": "run-b-t0",
+      "runId": "run-b",
+      "t": 0
+    },
+    {
+      "id": "run-b-t5",
+      "runId": "run-b",
+      "t": 5
+    },
+    {
+      "id": "run-b-t10",
+      "runId": "run-b",
+      "t": 10
+    }
+  ],
+  "paths": {
+    "attempt": "research/m31-normalizer-replication-2026-10-17/results/kernel-attempt.json",
+    "kernelSupervision": "research/m31-normalizer-replication-2026-10-17/results/kernel-supervision.json",
+    "checkerSupervision": "research/m31-normalizer-replication-2026-10-17/results/checker-supervision.json",
+    "index": "research/m31-normalizer-replication-2026-10-17/results/index.json",
+    "check": "research/m31-normalizer-replication-2026-10-17/results/check.json"
+  },
+  "generationPaths": {
+    "run-a": "research/m31-normalizer-replication-2026-10-17/results/generation/run-a.json",
+    "run-b": "research/m31-normalizer-replication-2026-10-17/results/generation/run-b.json"
+  },
+  "pins": [
+    {
+      "path": "research/m31-normalizer-replication-2026-10-17/results/kernel-attempt.json",
+      "bytes": 666,
+      "sha256": "08de1a17908be9bc071745fb1e157b99f49285fa41bd14c77b8b21b850d3b45d"
+    },
+    {
+      "path": "research/m31-normalizer-replication-2026-10-17/results/kernel-supervision.json",
+      "bytes": 34602,
+      "sha256": "a6e3da0fb596254627eb7035ba10a87676645af6b8d85e20f8e2c53a3f12a6b6"
+    },
+    {
+      "path": "research/m31-normalizer-replication-2026-10-17/results/checker-supervision.json",
+      "bytes": 39704,
+      "sha256": "f3daa89b5e3d96e46b4c2b703b0705be6e52ffc619111c09bf150e01ab1c93c5"
+    },
+    {
+      "path": "research/m31-normalizer-replication-2026-10-17/results/index.json",
+      "bytes": 71308,
+      "sha256": "3e9793e26a9a59803aa1056098e7c0f1e500ade02fd0928a171a5dc187ac7393"
+    },
+    {
+      "path": "research/m31-normalizer-replication-2026-10-17/results/check.json",
+      "bytes": 53226,
+      "sha256": "f7f25b6696f5d5dd3231c12c97a7c7f3f49ca10a9751f23796facf51da55e7d4"
+    },
+    {
+      "path": "research/m31-normalizer-replication-2026-10-17/results/generation/run-a.json",
+      "bytes": 583133,
+      "sha256": "7c07fa7abcc1743b5def99d6976da7d06697149ed941134fa11323247c279512"
+    },
+    {
+      "path": "research/m31-normalizer-replication-2026-10-17/results/generation/run-b.json",
+      "bytes": 583173,
+      "sha256": "ee473a8cd82bc8d0e5499f0224480b2cb65b15ad9c4b40d25964ed5145d6aad7"
+    }
+  ],
+  "scope": "Saved actual replication poses only; airflow off; posthoc queries; playback is not compute timing.",
+  "fallback": "Historical validator link only when no new saved pose frames exist; never implicit pose substitution."
+}

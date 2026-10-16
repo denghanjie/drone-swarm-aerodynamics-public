@@ -1,0 +1,324 @@
+{
+  "schema": "m31-normalizer-descriptive-summary-v1",
+  "sourceCommit": "08ed31c184f88f95217dca689d3727c44c75e8c4",
+  "scope": "Descriptive six-state paired isolated-worker comparison on two trajectories; no population confidence interval.",
+  "rule": "Each state must have median paired candidate/baseline <=0.9 and at least3/4 strict wins, plus all numerical gates.",
+  "gates": {
+    "recordIntegrityPassed": true,
+    "equivalencePassed": true,
+    "admissionPassed": true,
+    "benefitPassed": false,
+    "fixedControlsPassed": true
+  },
+  "counts": {
+    "certified": 6,
+    "independentlyVerified": 6,
+    "modelAdmitted": 6,
+    "reached": 6
+  },
+  "states": [
+    {
+      "id": "run-a-t0",
+      "pairs": [
+        {
+          "repetition": 0,
+          "baselineWallNs": "1000227375",
+          "candidateWallNs": "841251250",
+          "ratio": 0.8410600139793214
+        },
+        {
+          "repetition": 1,
+          "baselineWallNs": "690566750",
+          "candidateWallNs": "780742417",
+          "ratio": 1.130582115342217
+        },
+        {
+          "repetition": 2,
+          "baselineWallNs": "691519792",
+          "candidateWallNs": "677664959",
+          "ratio": 0.9799646616622073
+        },
+        {
+          "repetition": 3,
+          "baselineWallNs": "669569583",
+          "candidateWallNs": "702696167",
+          "ratio": 1.0494744457350895
+        }
+      ],
+      "medianPairedRatio": 1.0147195536986484,
+      "medianPairedRatioExact": {
+        "n": "939672151254379361",
+        "d": "926041237531373472"
+      },
+      "candidateWins": 2,
+      "benefitPassed": false,
+      "baseline": {
+        "medianWallMs": 691.043271,
+        "minWallMs": 669.569583,
+        "maxWallMs": 1000.227375,
+        "medianMethodMs": 625.8325
+      },
+      "candidate": {
+        "medianWallMs": 741.719292,
+        "minWallMs": 677.664959,
+        "maxWallMs": 841.25125,
+        "medianMethodMs": 671.546104
+      }
+    },
+    {
+      "id": "run-a-t5",
+      "pairs": [
+        {
+          "repetition": 0,
+          "baselineWallNs": "1828539916",
+          "candidateWallNs": "1757424833",
+          "ratio": 0.9611082687461552
+        },
+        {
+          "repetition": 1,
+          "baselineWallNs": "1995814792",
+          "candidateWallNs": "1790980458",
+          "ratio": 0.897368065002296
+        },
+        {
+          "repetition": 2,
+          "baselineWallNs": "1757258292",
+          "candidateWallNs": "1720292542",
+          "ratio": 0.9789639632555508
+        },
+        {
+          "repetition": 3,
+          "baselineWallNs": "1861161042",
+          "candidateWallNs": "1878680000",
+          "ratio": 1.0094129189278398
+        }
+      ],
+      "medianPairedRatio": 0.970036116000853,
+      "medianPairedRatioExact": {
+        "n": "1558468235150017927",
+        "d": "1606608464821991736"
+      },
+      "candidateWins": 3,
+      "benefitPassed": false,
+      "baseline": {
+        "medianWallMs": 1844.850479,
+        "minWallMs": 1757.258292,
+        "maxWallMs": 1995.814792,
+        "medianMethodMs": 1773.1383544999999
+      },
+      "candidate": {
+        "medianWallMs": 1774.2026455,
+        "minWallMs": 1720.292542,
+        "maxWallMs": 1878.68,
+        "medianMethodMs": 1704.5934795
+      }
+    },
+    {
+      "id": "run-a-t10",
+      "pairs": [
+        {
+          "repetition": 0,
+          "baselineWallNs": "1844684833",
+          "candidateWallNs": "1830610500",
+          "ratio": 0.992370331913495
+        },
+        {
+          "repetition": 1,
+          "baselineWallNs": "1872890166",
+          "candidateWallNs": "1878810208",
+          "ratio": 1.003160912533725
+        },
+        {
+          "repetition": 2,
+          "baselineWallNs": "1833565458",
+          "candidateWallNs": "1777054167",
+          "ratio": 0.9691795617367046
+        },
+        {
+          "repetition": 3,
+          "baselineWallNs": "2062202250",
+          "candidateWallNs": "1993849917",
+          "ratio": 0.9668546899316011
+        }
+      ],
+      "medianPairedRatio": 0.9807749468250998,
+      "medianPairedRatioExact": {
+        "n": "2211549683045486037",
+        "d": "2254900260456865676"
+      },
+      "candidateWins": 3,
+      "benefitPassed": false,
+      "baseline": {
+        "medianWallMs": 1858.7874995,
+        "minWallMs": 1833.565458,
+        "maxWallMs": 2062.20225,
+        "medianMethodMs": 1791.393896
+      },
+      "candidate": {
+        "medianWallMs": 1854.710354,
+        "minWallMs": 1777.054167,
+        "maxWallMs": 1993.849917,
+        "medianMethodMs": 1787.9756874999998
+      }
+    },
+    {
+      "id": "run-b-t0",
+      "pairs": [
+        {
+          "repetition": 0,
+          "baselineWallNs": "689352209",
+          "candidateWallNs": "682903500",
+          "ratio": 0.9906452624423229
+        },
+        {
+          "repetition": 1,
+          "baselineWallNs": "695716417",
+          "candidateWallNs": "680384750",
+          "ratio": 0.9779627638138658
+        },
+        {
+          "repetition": 2,
+          "baselineWallNs": "1031681333",
+          "candidateWallNs": "711978042",
+          "ratio": 0.6901143010212825
+        },
+        {
+          "repetition": 3,
+          "baselineWallNs": "909624500",
+          "candidateWallNs": "857735375",
+          "ratio": 0.9429554448016737
+        }
+      ],
+      "medianPairedRatio": 0.9604591043077697,
+      "medianPairedRatioExact": {
+        "n": "9725081758844211",
+        "d": "10125451167286664"
+      },
+      "candidateWins": 4,
+      "benefitPassed": false,
+      "baseline": {
+        "medianWallMs": 802.6704585,
+        "minWallMs": 689.352209,
+        "maxWallMs": 1031.681333,
+        "medianMethodMs": 722.051479
+      },
+      "candidate": {
+        "medianWallMs": 697.440771,
+        "minWallMs": 680.38475,
+        "maxWallMs": 857.735375,
+        "medianMethodMs": 628.511979
+      }
+    },
+    {
+      "id": "run-b-t5",
+      "pairs": [
+        {
+          "repetition": 0,
+          "baselineWallNs": "2065786958",
+          "candidateWallNs": "1777855833",
+          "ratio": 0.8606191582897968
+        },
+        {
+          "repetition": 1,
+          "baselineWallNs": "2383661000",
+          "candidateWallNs": "1961601625",
+          "ratio": 0.8229364934862802
+        },
+        {
+          "repetition": 2,
+          "baselineWallNs": "2077420583",
+          "candidateWallNs": "2378764458",
+          "ratio": 1.1450567484822114
+        },
+        {
+          "repetition": 3,
+          "baselineWallNs": "1864863916",
+          "candidateWallNs": "1912750791",
+          "ratio": 1.025678482268408
+        }
+      ],
+      "medianPairedRatio": 0.9431488202791025,
+      "medianPairedRatioExact": {
+        "n": "3633397414381902903",
+        "d": "3852411556117607528"
+      },
+      "candidateWins": 2,
+      "benefitPassed": false,
+      "baseline": {
+        "medianWallMs": 2071.6037705,
+        "minWallMs": 1864.863916,
+        "maxWallMs": 2383.661,
+        "medianMethodMs": 1992.9397294999999
+      },
+      "candidate": {
+        "medianWallMs": 1937.1762079999999,
+        "minWallMs": 1777.855833,
+        "maxWallMs": 2378.764458,
+        "medianMethodMs": 1866.1813539999998
+      }
+    },
+    {
+      "id": "run-b-t10",
+      "pairs": [
+        {
+          "repetition": 0,
+          "baselineWallNs": "2038884375",
+          "candidateWallNs": "1965477083",
+          "ratio": 0.9639963438338675
+        },
+        {
+          "repetition": 1,
+          "baselineWallNs": "2010856542",
+          "candidateWallNs": "2029333167",
+          "ratio": 1.0091884351837566
+        },
+        {
+          "repetition": 2,
+          "baselineWallNs": "2036475750",
+          "candidateWallNs": "2014522167",
+          "ratio": 0.9892198161456133
+        },
+        {
+          "repetition": 3,
+          "baselineWallNs": "2124425458",
+          "candidateWallNs": "2011774667",
+          "ratio": 0.9469735261476047
+        }
+      ],
+      "medianPairedRatio": 0.9766080799897404,
+      "medianPairedRatioExact": {
+        "n": "1272160656642773",
+        "d": "1302631713487500"
+      },
+      "candidateWins": 3,
+      "benefitPassed": false,
+      "baseline": {
+        "medianWallMs": 2037.6800625,
+        "minWallMs": 2010.856542,
+        "maxWallMs": 2124.425458,
+        "medianMethodMs": 1966.3942705
+      },
+      "candidate": {
+        "medianWallMs": 2013.1484169999999,
+        "minWallMs": 1965.477083,
+        "maxWallMs": 2029.333167,
+        "medianMethodMs": 1936.4385415000002
+      }
+    }
+  ],
+  "references": 12,
+  "corruptionControls": 42,
+  "cacheControls": 6,
+  "inputs": [
+    {
+      "path": "research/m31-normalizer-replication-2026-10-17/results/check.json",
+      "bytes": 53226,
+      "sha256": "f7f25b6696f5d5dd3231c12c97a7c7f3f49ca10a9751f23796facf51da55e7d4"
+    },
+    {
+      "path": "research/m31-normalizer-replication-2026-10-17/results/index.json",
+      "bytes": 71308,
+      "sha256": "3e9793e26a9a59803aa1056098e7c0f1e500ade02fd0928a171a5dc187ac7393"
+    }
+  ]
+}

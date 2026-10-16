@@ -1,0 +1,9 @@
+# Result privacy and preservation review
+
+The public result consists of synthetic drone states, mathematical model outputs, complete timing observations, independent reference records, controlled corruption transcripts, bounded execution metadata, reviews, explanatory reports and Three.js display QA. It contains no user attachments, private conversations, credentials, acquired physical dataset or unrelated personal data. Scientific values were not transformed.
+
+All103result files and frozen source remain unchanged. The independent postrun audit checked83consumed input pins,12reference pins and169source-manifest entries against local/committed identities. Public logs are empty; the separately retained private raw logs are reported empty and their paths are not published. Owned process IDs, monotonic timestamps and sampled memory observations are retained for lifecycle auditing. No unrelated process inventory, device serial or hostname is retained. Selected CPU/core/memory/software/power details identify the experimental configuration without publishing installation paths.
+
+The parent performs a targeted scan of new text for private home/temp paths, private-key headers and common credential patterns before publication. Literal redaction patterns in sanitization code and localhost preview URLs are intentional. Review screenshots separately show only the research UI and recorded synthetic flights. This bounded review does not claim universal recognition of every secret format.
+
+The publication introduces no new physical-data license or third-party redistribution: existing Three.js vendor files keep their notices. No paid service, external author contact or paper submission occurs. The entire negative outcome and all timing outliers remain. Exact result manifest checksums refer to the actual public artifact bytes.

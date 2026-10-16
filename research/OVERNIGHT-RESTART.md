@@ -1,3 +1,11 @@
+# Current checkpoint — 17 October 2026
+
+[Completed normalizer comparison](m31-normalizer-replication-2026-10-17/MILESTONE-SUMMARY.md): all six new moving snapshots passed the independent numerical checks; all six failed the predeclared speed hurdle. Keep the baseline. No scientific rerun is permitted in that consumed allocation. Source commit08ed31c184f88f95217dca689d3727c44c75e8c4; the package restart, manifests and publication receipt identify its complete evidence. [New Three.js replay](m31-normalizer-replication-2026-10-17/viewer/).
+
+Both stages closed, with the checker exit1representing the completed negative speed decision. Do not mistake it for missing results or an overall pass. Earlier failed, expired and successful allocations below remain historical. The next direction is an explicitly bounded approximation feasibility study; no next numerical allocation is implied by this note. The main research goal remains active and incomplete.
+
+---
+
 # Current source freeze: exact normalizer reuse
 
 The validator qualification result is publicly verified at10a586963e4786389bd28bef75d0f5063b973ae1 with195pins. The source-only normalizer design is closed. New m31-normalizer-ablation-2026-10-17 has independent static acceptance and a frozen source manifest; no scientific invocation yet. Read its PARENT-SOURCE-DECISION,PROTOCOL,SOURCE-RESTART and actual attempt files. Source must be pushed and exact-public verified before the sole kernel/checker launches. Keep HEAD fixed through both. No new scientific launch at/after23:00UTC16Oct. Latest completed3D remains validator-qualification/viewer; preserve8876. Overallgoal active/incomplete.
