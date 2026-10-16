@@ -1,0 +1,47 @@
+{
+  "kind": "source-only-structural-counts",
+  "cases": [
+    {
+      "case": "zero-influence",
+      "paths": 6,
+      "integrationSteps": 1400,
+      "stageAttemptRecordsIfComplete": 5600,
+      "acceptedEndpointRecordsIfComplete": 36,
+      "capturedStageWitnessesIfComplete": 48,
+      "conditional": false
+    },
+    {
+      "case": "centered-pair",
+      "paths": 6,
+      "integrationSteps": 1400,
+      "stageAttemptRecordsIfComplete": 5600,
+      "acceptedEndpointRecordsIfComplete": 36,
+      "capturedStageWitnessesIfComplete": 48,
+      "conditional": false
+    },
+    {
+      "case": "offset-pair",
+      "paths": 6,
+      "integrationSteps": 1400,
+      "stageAttemptRecordsIfComplete": 5600,
+      "acceptedEndpointRecordsIfComplete": 36,
+      "capturedStageWitnessesIfComplete": 48,
+      "conditional": false
+    },
+    {
+      "case": "boids16",
+      "paths": 6,
+      "integrationSteps": 5600,
+      "stageAttemptRecordsIfComplete": 22400,
+      "acceptedEndpointRecordsIfComplete": 126,
+      "capturedStageWitnessesIfComplete": 48,
+      "conditional": true
+    }
+  ],
+  "maxScheduledPaths": 24,
+  "maxCompletedStageRecords": 39200,
+  "maxAcceptedEndpointRecords": 234,
+  "normalEvidenceCapBytes": 25165824,
+  "emergencyReserveBytes": 8388608,
+  "byteLimits": "Enforced at writes and by continuous supervisor; no claim that all schedules must fit, no post-result thinning. Variable JSON precision and sparse graph occupancy determine actual bytes; cap failure is retained as incomplete."
+}

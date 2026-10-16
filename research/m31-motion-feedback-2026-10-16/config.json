@@ -1,0 +1,20 @@
+{
+  "kind": "prospective-small-motion-feedback-diagnostic",
+  "cases": [
+    {"id":"zero-influence","n":2,"duration":0.5,"positions":[[-6,-2,4.5],[-6,2,4.5]],"command":"fixed-nominal"},
+    {"id":"centered-pair","n":2,"duration":0.5,"positions":[[-6,0,4.5],[-6,0,5.1]],"command":"fixed-nominal"},
+    {"id":"offset-pair","n":2,"duration":0.5,"positions":[[-6,0,4.5],[-5.96,0,5.1]],"command":"fixed-nominal"},
+    {"id":"boids16","n":16,"seed":260201,"duration":2,"command":"local-boids","conditionalOnPrimaryPass":true}
+  ],
+  "timesteps":[0.005,0.0025,0.00125],
+  "modes":["off","coupled"],
+  "controlDt":0.01,
+  "sampleDt":0.1,
+  "tolerances":{"position":0.001,"velocity":0.001,"attitude":0.0017453292519943296,"rotor":0.001},
+  "refinementRatio":0.75,
+  "roundoffFraction":0.01,
+  "residualLimit":1e-9,
+  "sourceReceiverLimit":2e-9,
+  "identityTolerance":1e-12,
+  "limits":{"candidateWallSeconds":300,"reviewWallSeconds":120,"candidateCooperativeSeconds":280,"rssBytes":805306368,"evidenceBytes":33554432}
+}

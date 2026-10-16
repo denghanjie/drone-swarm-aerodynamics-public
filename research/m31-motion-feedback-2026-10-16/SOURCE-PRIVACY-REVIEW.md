@@ -1,0 +1,3 @@
+# Source privacy and provenance
+
+The new source uses only original local algorithms, simulated states and already-public pinned dependencies. No source report text/figures, private attachments, author contact details, credentials, private paths or host identifiers are included. Public command examples use placeholders. Runtime metadata is limited to Node/platform/architecture and resource measurements. Existing literature metadata is attributed with its actual access limitations. New source-only reviews are copied from isolated agent outputs after path/privacy inspection. No target execution has occurred before publication; only syntax and static review.
