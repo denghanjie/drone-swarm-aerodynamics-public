@@ -1,0 +1,14 @@
+{
+  "kind": "explicit-evidence-correction",
+  "originalPath": "ACCESS-RESULT.original-invalid-timing.json",
+  "originalSha256": "3b6a986b1081cf2760fa82863eb5f42520d1fd721df2952f1e3c2d3dd995ae47",
+  "incorrectReportedSeconds": 0.001956415999999999,
+  "correctedMeasurement": null,
+  "utcTimestampDifferenceSeconds": 41.744003,
+  "startedUTC": "2026-10-16T03:14:53.592321+00:00",
+  "finishedUTC": "2026-10-16T03:15:35.336324+00:00",
+  "cause": "Monotonic readings came from separate sandbox exec processes; comparability was not established. The value is invalid.",
+  "limits": "UTC difference can be affected by wall-clock adjustments; no independent monotonic supervisor or clock-adjustment log exists. Exact inspection-only elapsed time remains unknown.",
+  "scientificImpact": "No measurements were extracted or models evaluated. Access outcome and operation counts do not depend on elapsed-time correction.",
+  "futurePractice": "Use one continuous supervisor for bounded execution; never subtract process-local clocks across invocations."
+}

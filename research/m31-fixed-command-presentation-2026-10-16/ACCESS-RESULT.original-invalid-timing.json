@@ -1,0 +1,73 @@
+{
+  "kind": "closed-presentation-admission",
+  "sourceCommit": "23c86e9ae229426ebaf0c02935d5830c9f2e5693",
+  "startedUTC": "2026-10-16T03:14:53.592321+00:00",
+  "finishedUTC": "2026-10-16T03:15:35.336324+00:00",
+  "inspectionElapsedSeconds": 0.001956415999999999,
+  "outcome": "NOT_ADMITTED_WITHIN_SCOPE",
+  "reason": "Public text view exposes figure captions but no plotted ordinates, ticks, markers or legends sufficient to freeze extraction. No admitted observation table for selected triplet was exposed.",
+  "sourceURL": "https://www.researchgate.net/publication/351477086_Investigation_of_High_Incidence_Angle_Propeller_Aerodynamics_for_Subscale_eVTOL_Aircraft",
+  "calls": [
+    {
+      "sequence": 0,
+      "operation": "open selected public report URL",
+      "toolReference": "turn603564view0",
+      "result": "success; text/html representation,2834lines",
+      "observedLocations": "lines0-75metadata;318-476contents; other introductory text incidentally returned"
+    },
+    {
+      "sequence": 1,
+      "operation": "same-document find Figure30",
+      "toolReference": "turn890238view0",
+      "result": "success; caption-only appendix region",
+      "observedLocations": "lines2073-2083Figures13-15 captions;2138-2142Figure30caption; incidental reference/documentation/citation-page text"
+    }
+  ],
+  "counts": {
+    "initialOpens": 1,
+    "sameDocumentFollowups": 1,
+    "distinctNumericLoadPanelsInspected": 0,
+    "captionLocationsChecked": 4,
+    "downloads": 0,
+    "discoveryQueries": 0,
+    "targetTranscriptions": 0,
+    "modelEvaluations": 0,
+    "scoredComparisons": 0
+  },
+  "privatePayloadPins": [
+    {
+      "privateArtifactLabel": "open-1.json",
+      "bytes": 27493,
+      "sha256": "de537d96d11bc90f12c4a6fb08575cf45b5311c5c326058c3da0d57910bf9f16",
+      "publicRedistribution": false
+    },
+    {
+      "privateArtifactLabel": "follow-1.json",
+      "bytes": 25093,
+      "sha256": "aad240472dfbc9bd5920a945494e06a76ce33b14a9cc7f475db0a9cef7662cf6",
+      "publicRedistribution": false
+    }
+  ],
+  "sourceIdentity": {
+    "title": "Investigation of High Incidence Angle Propeller Aerodynamics for Subscale eVTOL Aircraft",
+    "authors": [
+      "Benjamin M. Simmons",
+      "David B. Hatke"
+    ],
+    "report": "NASA/TM-20210014010",
+    "date": "May2021",
+    "authorUploadDate": "May11,2021"
+  },
+  "presentationLocations": {
+    "static": "Figure13,printed page30,caption only",
+    "pressure0.25psf": "Figure14,printed page31,caption only",
+    "pressure0.5psf": "Figure15,printed page32,caption only",
+    "axialCW": "Figure30,printed page47,caption only; alternate combined layout not admitted"
+  },
+  "incidentalExposure": "Source metadata,contents/captions,axis-variable definitions and unrelated reference/citation-page text appeared. No baseline or selected target thrust ordinate was transcribed, no numerical panel was available for inspection. Unrelated citations were not adopted as verified research.",
+  "rights": "Public view identifies author content and possible copyright; full payload kept private. Reuse for figures/data remains unresolved.",
+  "uncertainty": "Not newly evaluated; no graphical or experimental uncertainty inferred from captions.",
+  "allocationClosed": true,
+  "retries": 0,
+  "next": "No extraction specification can be admitted from caption-only representation; any future direction requires a distinct justified decision, not automatic fallback."
+}

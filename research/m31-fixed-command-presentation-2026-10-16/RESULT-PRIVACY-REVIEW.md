@@ -1,0 +1,3 @@
+# Public artifact review
+
+Full source-tool payloads remain private. Public records contain report bibliographic metadata, figure/page locators, outcome, operation counts, UTC timestamps, and hashes only. No report pages, plots, full text, author email, credentials, private paths or host identifiers are included. The invalid original duration is retained with an explicit invalid filename and correction record. Scientific values in prior immutable packages were not changed. The new viewer references existing sanitized recorded poses and contains no newly inferred flight/physical data. A narrow text scan and a source/result pin check accompany publication; these are bounded checks, not a guarantee about all history.

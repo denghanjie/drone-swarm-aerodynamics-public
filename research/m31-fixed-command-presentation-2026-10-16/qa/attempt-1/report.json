@@ -1,0 +1,14 @@
+{
+  "flow": "Load physical status and exact recorded poses; scrub, play, pause, orbit and reset; inspect desktop/mobile.",
+  "browserPath": "Browser plugin not available; installed Playwright/Chrome fallback.",
+  "checks": [],
+  "errors": [],
+  "warnings": [],
+  "passed": false,
+  "failure": "Installed Chrome exited with SIGABRT during sandboxed launch; EPERM during process cleanup. No page checks ran.",
+  "sanitization": {
+    "privateOriginalSha256": "de89f838f04527b2380a1cdce7cf7fb38f10875401423fb654e0aa29bfd7c8bb",
+    "removed": "Chrome launch command, temporary profile path and PID",
+    "retained": "launch failure, SIGABRT, EPERM, zero checks"
+  }
+}
