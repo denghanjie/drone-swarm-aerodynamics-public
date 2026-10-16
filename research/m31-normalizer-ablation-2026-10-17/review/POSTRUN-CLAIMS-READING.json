@@ -1,0 +1,99 @@
+{
+  "schema": "m31-normalizer-ablation-postrun-claims-reading-v1",
+  "allocation": "Separate prospective postrun claims review; maximum 12 files; no scientific execution, checker, rerun or literature retrieval",
+  "readFileLimit": 12,
+  "contentReadCount": 8,
+  "conservativeEvidenceFileCount": 9,
+  "countingRule": "Eight full evidence/document reads plus one metadata-only manifest digest; author-created review outputs listed separately.",
+  "scientificExecution": false,
+  "sourceFilesRead": 0,
+  "remoteRetrieval": false,
+  "files": [
+    {
+      "path": "research/m31-normalizer-ablation-2026-10-17/PROTOCOL.md",
+      "scope": "Full text",
+      "bytes": 6203,
+      "sha256": "08dd8271be12a4db923b506f973fb6f7b1065ec9a10c567b8b90b554aa255fae"
+    },
+    {
+      "path": "research/m31-normalizer-ablation-2026-10-17/source-publication.json",
+      "scope": "Full text",
+      "bytes": 868,
+      "sha256": "94baf45b50363a0af7bc44ecaadbb09a852f891086e4ba71de60d74dace94d4b"
+    },
+    {
+      "path": "research/m31-normalizer-ablation-2026-10-17/results/kernel-supervision.json",
+      "scope": "Full text",
+      "bytes": 4450,
+      "sha256": "6a87f4df5626f39d4f495597da3a68c8a9fd1398702dc00319e2067a9b53f791"
+    },
+    {
+      "path": "research/m31-normalizer-ablation-2026-10-17/results/kernel-attempt.json",
+      "scope": "Full text",
+      "bytes": 421,
+      "sha256": "9c53e1bb0ca1caff4d2a6de6e3c81fc8a2c4c6c7e88b814f0e086082de1d492b"
+    },
+    {
+      "path": "research/m31-normalizer-ablation-2026-10-17/results/kernel-stdout.log",
+      "scope": "Full file (empty)",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/m31-normalizer-ablation-2026-10-17/results/kernel-stderr.log",
+      "scope": "Full file (empty)",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/m31-normalizer-ablation-2026-10-17/SOURCE-RESTART.md",
+      "scope": "Full text",
+      "bytes": 1675,
+      "sha256": "8decbbe8d56ba4a4222c1969a1dad451587c6656378d07647f5fd4854adb348b"
+    },
+    {
+      "path": "research/m31-normalizer-ablation-2026-10-17/PARENT-SOURCE-DECISION.md",
+      "scope": "Full text",
+      "bytes": 2505,
+      "sha256": "eb228712b10bdd65ff3c0b9deb1c46f16a63bf0a034dd6c484cfebb318a83392"
+    }
+  ],
+  "metadataOnly": [
+    {
+      "path": "research/m31-normalizer-ablation-2026-10-17/source-manifest.json",
+      "scope": "Byte count and SHA-256 only, compared with publication receipt; no scientific source inspection",
+      "bytes": 17703,
+      "sha256": "3e943151180c584eb4618056bd3a29d8ef6f9457d47468c6c3c43f72a86f86cb"
+    }
+  ],
+  "resultsSnapshot": {
+    "directory": "research/m31-normalizer-ablation-2026-10-17/results",
+    "scope": "Filename enumeration and sizes; no execution",
+    "files": [
+      {
+        "path": "research/m31-normalizer-ablation-2026-10-17/results/kernel-attempt.json",
+        "bytes": 421
+      },
+      {
+        "path": "research/m31-normalizer-ablation-2026-10-17/results/kernel-stderr.log",
+        "bytes": 0
+      },
+      {
+        "path": "research/m31-normalizer-ablation-2026-10-17/results/kernel-stdout.log",
+        "bytes": 0
+      },
+      {
+        "path": "research/m31-normalizer-ablation-2026-10-17/results/kernel-supervision.json",
+        "bytes": 4450
+      }
+    ]
+  },
+  "output": {
+    "path": "research/m31-normalizer-ablation-2026-10-17/review/POSTRUN-CLAIMS-REVIEW.md",
+    "bytes": 5881,
+    "sha256": "7e08e7d6c0e974b27831598c5df9cff241fff5d9d6f932e4a59f1a7ff63f48c2"
+  },
+  "selfHash": "Inventory self-hash excluded to avoid recursion; delivered separately.",
+  "acceptedClaims": "Failed closed launch with no saved scientific evidence; exactness, admission, controls, nontriviality and benefit untested. No scientific hypothesis rejection. Historical replay must remain explicitly separate.",
+  "lockedAtUtc": "2026-10-16T22:43:31Z"
+}

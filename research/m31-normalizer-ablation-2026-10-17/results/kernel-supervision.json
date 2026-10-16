@@ -1,0 +1,134 @@
+{
+  "stage": "kernel",
+  "sourceCommit": "2839f76cb0aaf908f82964dd3d1bf4296e7774b5",
+  "sourceManifestSha256": "3e943151180c584eb4618056bd3a29d8ef6f9457d47468c6c3c43f72a86f86cb",
+  "configSha256": "8023f4c8c508e344695549fda99645268fa96043b4e62bdd1e3f19bef00351b2",
+  "launchCutoffUtc": "2026-10-16T23:00:00Z",
+  "commandTemplate": [
+    "NODE",
+    "PACKAGE/source/run.cjs",
+    "PACKAGE"
+  ],
+  "runtimePins": {
+    "python": {
+      "bytes": 18058560,
+      "sha256": "7a314947596fc484d4ec36ffc28e843b78d6d749c68736f8b5c24e7333f418eb"
+    },
+    "node": {
+      "bytes": 121304480,
+      "sha256": "3c9448363b9976bf3d9e8f4d320397975800131b42c7b1be342dadc05871dd25"
+    }
+  },
+  "runtimeIsolation": {
+    "pythonIsolated": true,
+    "bytecodeDisabled": true,
+    "clearedChildEnvironmentKeys": [
+      "NODE_OPTIONS",
+      "NODE_PATH",
+      "NODE_V8_COVERAGE",
+      "NODE_REDIRECT_WARNINGS",
+      "PYTHONPATH",
+      "PYTHONHOME",
+      "PYTHONSTARTUP",
+      "PYTHONUSERBASE",
+      "PYTHONINSPECT",
+      "LD_PRELOAD",
+      "LD_AUDIT",
+      "LD_LIBRARY_PATH",
+      "DYLD_INSERT_LIBRARIES",
+      "DYLD_LIBRARY_PATH",
+      "DYLD_FRAMEWORK_PATH",
+      "DYLD_FALLBACK_LIBRARY_PATH",
+      "DYLD_FALLBACK_FRAMEWORK_PATH"
+    ]
+  },
+  "wallLimitSeconds": 600,
+  "guardianWallLimitSeconds": 610,
+  "sampledRssLimitBytes": 1073741824,
+  "kernelOutputLimitBytes": 201326592,
+  "checkerOutputLimitBytes": 67108864,
+  "logMetadataLimitBytes": 16777216,
+  "outputLimitBytes": 285212672,
+  "finalReportLimitBytes": 65536,
+  "success": false,
+  "closed": true,
+  "samples": 0,
+  "peakSampledGroupRssBytes": 0,
+  "maxSampleGapSeconds": 0.0020055407658219337,
+  "nominalSleepSeconds": 0.05,
+  "terminationReason": "incomplete-stage-evidence",
+  "containmentScope": "Retained guardian group: kernel runner plus at most one sequential inherited-group worker; checker has no subprocesses. Sampled RSS is neither continuous peak nor hostile escape isolation.",
+  "accountingScope": "Closed new-package results only: kernel192MiB,checker64MiB,metadata and private/public logs16MiB,total272MiB. Records32MiB,generation8MiB,index/check2MiB,journal4MiB,supervision64KiB. Missing planned scientific files remain the checker responsibility and cannot support scientific success.",
+  "processGroup": 33446,
+  "childGroupAbsent": true,
+  "observedSequentialWorkerPids": [],
+  "logs": [
+    {
+      "path": "research/m31-normalizer-ablation-2026-10-17/results/kernel-stdout.log",
+      "rawBytes": 0,
+      "rawSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "publishedBytes": 0,
+      "publishedSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "redaction": "Machine/runtime prefixes replaced; raw bytes retained privately."
+    },
+    {
+      "path": "research/m31-normalizer-ablation-2026-10-17/results/kernel-stderr.log",
+      "rawBytes": 0,
+      "rawSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "publishedBytes": 0,
+      "publishedSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "redaction": "Machine/runtime prefixes replaced; raw bytes retained privately."
+    }
+  ],
+  "privateLogDirectorySha256": "931f2dd609ffba498436645541750c534366dae5459fb9b55e62be748094af9d",
+  "privateRawLogs": [
+    {
+      "name": "kernel-stderr.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "kernel-stdout.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "scientificEvidence": [],
+  "sourceAndRuntimeRechecked": true,
+  "outputAccountingBeforeReport": {
+    "aggregateBytes": 421,
+    "kernelBytes": 0,
+    "checkerBytes": 0,
+    "logMetadataBytes": 421,
+    "unclassifiedBytes": 0,
+    "files": [
+      {
+        "scope": "results",
+        "path": "kernel-attempt.json",
+        "bytes": 421
+      },
+      {
+        "scope": "results",
+        "path": "kernel-stderr.log",
+        "bytes": 0
+      },
+      {
+        "scope": "results",
+        "path": "kernel-stdout.log",
+        "bytes": 0
+      },
+      {
+        "scope": "private",
+        "path": "kernel-stderr.raw",
+        "bytes": 0
+      },
+      {
+        "scope": "private",
+        "path": "kernel-stdout.raw",
+        "bytes": 0
+      }
+    ],
+    "violations": []
+  },
+  "wallSeconds": 1.1954191653057933
+}

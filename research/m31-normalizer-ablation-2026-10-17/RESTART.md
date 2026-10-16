@@ -1,0 +1,11 @@
+# Restart record — closed failed allocation
+
+Do not run kernel or checker in this package. The sole kernel attempt exists and failed. The checker prerequisite failed, so it was never launched. Do not delete attempt files, repair source, reseed or retry this allocation. Source commit2839f76cb0aaf908f82964dd3d1bf4296e7774b5 and its88-pin manifest remain immutable. Preserve all postrun evidence and independent reviews.
+
+Read MILESTONE-SUMMARY.md, results/kernel-supervision.json and review/POSTRUN-*-REVIEW.md / POSTRUN-EVIDENCE-AUDIT.md. The recorded final reason masks the first monitoring exception; do not assert a proven OS error. The child process group was recorded absent after cleanup, but normal child exit and release were not recorded. No fresh scientific files exist and no actual call count can be inferred from their absence.
+
+Next work: a separately named source-only design and prospective qualification allocation for the supervision harness. Use harmless deterministic children only, no simulator/candidate/oracle imports. Preserve original exception class, sanitized message, monitoring-command return status and secondary missing-output conditions separately. Qualify process inspection in the exact intended execution environment before any science; test normal closure, intentional child error, monitoring failure and bounded timeout. Set finite resources and one attempt per fixture prospectively. Independent review/public source verification must precede any qualification execution. Do not silently broaden this allocation or retest the scientific hypothesis.
+
+A future scientific study must re-establish its own published source, fresh allocation, admissible launch deadline, seed exposure status, fixed controls and exact comparison/performance rules. The existing scientific launch cutoff2026-10-16T23:00:00Z is not extended by this record. No new numerical launch is scheduled here.
+
+Keep localhost8876 running. viewer/ is a failed-launch status page with a clearly labeled embedded historical Three.js replay. It generates no new physics. The global research goal remains active/incomplete; do not mark it achieved. Execution cannot continue while the host or app is suspended.

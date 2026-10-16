@@ -1,0 +1,119 @@
+{
+  "schema": "m31-postrun-containment-reading-v1",
+  "stage": "separate-saved-only-postrun-diagnostic",
+  "inheritedFileCap": 12,
+  "conservativeInheritedFileCount": 8,
+  "contentFilesRead": 6,
+  "opaqueEmptyLogFilesHashed": 2,
+  "files": [
+    {
+      "path": "research/m31-normalizer-ablation-2026-10-17/source/supervise.py",
+      "bytes": 29715,
+      "sha256": "1e008611cd0e05132b2eb38e161b03c30c9ed2eb4fa1ddb3f494be62edfabddb",
+      "purpose": "Full frozen supervisor source; sample ordering, first-error handling, cleanup and final completeness overwrite.",
+      "access": "saved-source-or-record-content"
+    },
+    {
+      "path": "research/m31-normalizer-ablation-2026-10-17/source/guardian.py",
+      "bytes": 2964,
+      "sha256": "4f34f3a34b6fcf059dfb7c40e2d3eb05e0c361c8290fd397781896c65bd6a771",
+      "purpose": "Full frozen guardian source; event-file creation, child launch, signal/release and cleanup ordering.",
+      "access": "saved-source-or-record-content"
+    },
+    {
+      "path": "research/m31-normalizer-ablation-2026-10-17/results/kernel-supervision.json",
+      "bytes": 4450,
+      "sha256": "6a87f4df5626f39d4f495597da3a68c8a9fd1398702dc00319e2067a9b53f791",
+      "purpose": "Saved failure, closure, sampling, accounting and empty-log facts.",
+      "access": "saved-source-or-record-content"
+    },
+    {
+      "path": "research/m31-normalizer-ablation-2026-10-17/results/kernel-attempt.json",
+      "bytes": 421,
+      "sha256": "9c53e1bb0ca1caff4d2a6de6e3c81fc8a2c4c6c7e88b814f0e086082de1d492b",
+      "purpose": "Permanent sole-attempt source identity and timestamp.",
+      "access": "saved-source-or-record-content"
+    },
+    {
+      "path": "research/m31-normalizer-ablation-2026-10-17/source-publication.json",
+      "bytes": 868,
+      "sha256": "94baf45b50363a0af7bc44ecaadbb09a852f891086e4ba71de60d74dace94d4b",
+      "purpose": "Saved exact public source identity and verification timestamp.",
+      "access": "saved-source-or-record-content"
+    },
+    {
+      "path": "research/m31-normalizer-ablation-2026-10-17/source-manifest.json",
+      "bytes": 17703,
+      "sha256": "3e943151180c584eb4618056bd3a29d8ef6f9457d47468c6c3c43f72a86f86cb",
+      "purpose": "Manifest metadata and exact pins for the two inspected source files.",
+      "access": "saved-source-or-record-content"
+    },
+    {
+      "path": "research/m31-normalizer-ablation-2026-10-17/results/kernel-stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "purpose": "Opaque byte/hash verification only; saved public log is empty.",
+      "access": "opaque-byte-hash-only"
+    },
+    {
+      "path": "research/m31-normalizer-ablation-2026-10-17/results/kernel-stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "purpose": "Opaque byte/hash verification only; saved public log is empty.",
+      "access": "opaque-byte-hash-only"
+    }
+  ],
+  "authoredNote": {
+    "path": "research/m31-normalizer-ablation-2026-10-17/review/POSTRUN-CONTAINMENT-REVIEW.md",
+    "bytes": 8793,
+    "sha256": "ad647c3ac8578d692225d63ef8c771625c35dc5204f77eaff921c44efe47420a"
+  },
+  "observedAbsentPaths": [
+    "research/m31-normalizer-ablation-2026-10-17/results/kernel-guardian.jsonl",
+    "research/m31-normalizer-ablation-2026-10-17/results/index.json",
+    "research/m31-normalizer-ablation-2026-10-17/results/kernel-journal.jsonl",
+    "research/m31-normalizer-ablation-2026-10-17/results/checker-attempt.json",
+    "research/m31-normalizer-ablation-2026-10-17/results/check.json"
+  ],
+  "frozenBinding": {
+    "sourceCommit": "2839f76cb0aaf908f82964dd3d1bf4296e7774b5",
+    "sourceManifestSha256": "3e943151180c584eb4618056bd3a29d8ef6f9457d47468c6c3c43f72a86f86cb",
+    "configSha256": "8023f4c8c508e344695549fda99645268fa96043b4e62bdd1e3f19bef00351b2",
+    "inspectedSourceFilesMatchFrozenManifest": true,
+    "fullManifestClosureReverifiedInThisDiagnostic": false
+  },
+  "parentSuppliedExecutionContext": {
+    "launchSandbox": "default; sandbox_permissions omitted",
+    "automaticApprovalReviewRejected": false,
+    "provenance": "Parent task message; not independently corroborated by saved supervision fields.",
+    "doesNotProve": "A specific ps failure, permission denial, exception class or return code."
+  },
+  "findings": {
+    "provenSourceIssue": "Missing-kernel-journal finalization unconditionally overwrites earlier terminationReason.",
+    "controlFlowLocalization": "Nonzero maxSampleGapSeconds with samples zero places the interruption inside the first sampler before its increment under the frozen source.",
+    "causeStatus": "Initiating exception not recoverable from saved evidence.",
+    "sandboxHypothesis": "Possible failed or denied ps invocation, unproven.",
+    "startupHypothesis": "Immediate sampler-failure cleanup may interrupt guardian before persisted readiness; consistent but unproven."
+  },
+  "allowedWorkPerformed": [
+    "Read saved files and frozen source",
+    "List saved result filenames and observe absent files",
+    "Parse saved JSON as data",
+    "Compute opaque byte hashes and compare two source pins",
+    "Author diagnostic note and distinct reading inventory"
+  ],
+  "excluded": [
+    "no supervisor or guardian execution",
+    "no ps invocation",
+    "no launch reproduction",
+    "no candidate/generator/checker execution",
+    "no scientific module import or evaluation",
+    "no source mutation",
+    "no old result rewrite",
+    "no rerun",
+    "no checker attempt",
+    "no private log inspection",
+    "no commit",
+    "no implementation of future recommendations"
+  ]
+}
