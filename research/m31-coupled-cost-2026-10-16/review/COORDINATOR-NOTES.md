@@ -1,0 +1,9 @@
+# Coordinator integration before freeze
+
+The grid review found and resolved extra all-pairs bbox/Map work, per-receiver N-ID allocations, and lost nonconverged solver outputs. Cell controls now cover x/y/z and independently recount their symbols. The kernel hash recorded in GRID-REVIEW remains the unchanged adopted kernel. Later harness amendments preserve full available failed solutions, validate checksums/certificates/P traces/lastChange, enforce the exact full schedule, and retain current timing in failure context.
+
+Campaign review prompted separation of diagnostic graph/depth construction from persistence timing: it is now computed inside qualificationComputeMs once per build and reused for oracle comparison and persistence. Qualification comparison itself is postclock validation, not included in that compute field; its correctness assertions and artifacts are retained. Output failure forces partial evidence complete=false. Supervisor records RSS sample errors rather than silently equating absence with zero. Source preflight excludes NODE_OPTIONS and runtime execution flags; low-power and power-source observations remain reported, not modified.
+
+Known scope limits: all timed calls are instrumented CPU queries on exposed mild states. Receiver-level memory/time checks scale with the number of maps and contribute to solver timing. The conservative grid is not an optimized zero-screen baseline. Cached runs retain full qualified objects/metadata and are not safe stale-pose cache reuse evidence. Hashes cannot independently reconstruct transient timed arrays. Full qualification arrays and original independent references remain the numerical evidence. No target calculations were used to choose these amendments.
+
+After campaign review, the runner now explicitly writes null for externalSampledPeakRSSKiB if rssSamples=0, as requested; it does not label missing samples measured zero. This is a record-only change before source freeze.

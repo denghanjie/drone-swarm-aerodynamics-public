@@ -1,0 +1,21 @@
+# Next coupled-cost checkpoint — planning only
+
+The preceding swarm-transfer result is published at d35cec691e950b0937e6b79e93f3e54d33e2b779, independently verified by exact commit/manifest retrieval, with receipt commit455d14f4eba6cda4252847c0f4ffdb75b6028b7d. All78 result pins (61,354,332 bytes) matched local and committed bytes; manifest1e4a66176bae826674b78a2fa17a270ecd6523c3d8c259a5480c7c8b7fd32a44. Both scientific allocations are closed; no process remains running. The viewer is served at127.0.0.1:8876/research/m31-swarm-coupling-transfer-2026-10-16/viewer/ and queued in the app. Keep server8876 running.
+
+This new planning folder allocates no numerical execution. No new candidate source, input generation, qualification run, timing or source freeze exists yet. Existing agents are conducting source-only planning; final protocol remains to be implemented and reviewed.
+
+Question: on the now-verified coupled law and four fixed exposed historical states, how much of a complete coefficient refresh is geometry/index/admission work versus solving, and does ordered evaluation improve complete query latency over synchronous updates when both use the SAME conservative grid?
+
+Primary comparison should be grid+ordered versus grid+Picard. All-pairs+ordered is a diagnostic index control. A full2×2 design was suggested in PRIOR-COST-REUSE; root favors the leaner three-arm design because it isolates the primary incremental solver question without repeating an unnecessary all-pairs/Picard timing cell. Cached-matrix ordered/Picard timings, if adopted, are a separate workload with setup/storage disclosed.
+
+Do not headline a speedup over all-pairs as if grid indexing were new: old M31 baselineB already used a grid; prior exact-zero packages and DOT lean variants are stronger in some scopes. The proposed grid is a conservative unoptimized baseline, not the best CPU implementation. No support-screen/positive-omission adaptation belongs in this first cost question. Preserve all prior failed speed criteria and closed budgets.
+
+The grid plan proposes4m dyadic bins in bounded local indexing coordinates, a one-cell query-box halo, sorted source IDs, unchanged original-coordinate guarded Math.hypot<3 and exact pairTerm. A sufficient finite bounding-box span<=256m certificate allows far-pair skipping; otherwise full original all-pairs fallback preserves symbol11-before-neighbor semantics. False certificate is not model rejection. Qualify boundaries/guards and full304M classifications/CSR/loads against the frozen reference before timing permission.
+
+Next implementation must distinguish audit tensor generation from timed computation, keep actual center-call counters separate from logical pair coverage, charge all preparation/index/sort/assembly/order/solve/residual work, verify every timed output, save all repeats and expose uncertainty. No candidate world position/rotor arithmetic, root accuracy, source support or physical assumption may change unnoticed. Node timings would not establish browser/flight/real-time/low-end behavior. The original8-step roadmap, physical-data gap and failed trajectory-refinement tests remain unchanged.
+
+Restart: read this folder and the completed swarm-transfer NEXT-DECISION plus result interpretation; finalize the lean bounded protocol and source/interface; independently review; privacy-scan and publish source freeze; verify exact remote pins; only then consume a new bounded allocation. The overall user goal remains active and incomplete, with the prior goal turn classified as substantive progress.
+
+## Adoption record
+
+The successor package `../m31-coupled-cost-2026-10-16/` adopts the3arm design and separate cached workload. Its PROTOCOL.md and SCHEMA.md supersede conflicting suggestions:4m local-index grid with full-cell halo and per-axis256m certificate/fallback;21fixed tiny controls;both builders' complete diagnostic bundles retained; exact source-ID order;140total timing calls. The original proposal is retained as PROPOSAL-NOT-ADOPTED-VERBATIM.md. No allocation in this planning folder is created or consumed. Implementation/static review and subsequent execution belong only to the successor package and its manifest/locks.

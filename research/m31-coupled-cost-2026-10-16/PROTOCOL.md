@@ -1,0 +1,45 @@
+# Complete coupled-query cost on fixed swarm states
+
+Prospective protocol, 2026-10-16. Parent published result d35cec691e950b0937e6b79e93f3e54d33e2b779, receipt455d14f4eba6cda4252847c0f4ffdb75b6028b7d. New allocation; previous campaigns remain closed. No target numerical execution or timing before source freeze and independently retrieved remote manifest verification.
+
+## Question and primary contrast
+
+Does ordered evaluation reduce complete coefficient-refresh-and-solve latency after paying for neighborhood search, admission and construction of mutual-load coefficients? B=conservative exact grid+ordered, C=same grid+synchronous Picard. A=all-pairs+ordered is a neighborhood diagnostic. The primary B/C comparison changes only solver scheduling and method-required setup. All queries rebuild the matrix. Separate O/P cached timings reuse qualified grid matrices and schedule and answer only a solve-cost question.
+
+Four already exposed historical airflow-OFF states: N1000/t20, N5000/t20,t60,t180, fixed seed2001/wide/wall-priority/dt.0025. These are development measurements, not fresh flight scenarios. Original motor-lag forces and all17 state entries retained; world poses/quaternions not normalized or regrouped. Fixed-shape source-total scaling and ideal-power receiver closure are hypothetical assumptions. No flight integration or control update occurs.
+
+## Numerical contract and admission
+
+Inherit the preceding four-rotor constants, exact pairTerm, guards, hard support, original-coordinate rotation and source-ID summation order. `K_irj` scales with `sqrt(S0_j/mg)`; `a_irj=K_irj*sqrt(S0_j/mg)/sqrt(f0_ir/(2*rho*A))`; alpha is sum_j a*y_j. Positive-alpha closure uses 56 bisections for x³+alpha*x−1=0, zero-alpha x=1. T=f0*x; y=sqrt(sumT/S0). Picard begins at all ones, first stop test at update1, max-log-change<=1e-11, cap64. Every solve includes a separate final map, log residual and normalized source/receiver mismatch. Retain generating loads separately from residual loads. Rejection never becomes a zero-wake success.
+
+Grid: finite positions, rounded per-axis bbox spans0..256 certify all center-invalid guards pass. If false, use exact all-pairs fallback, do not reject solely for the certificate. Index-only local coordinates u=p−min, h=4m; floor((u−3)/4)−1 through floor((u+3)/4)+1, inclusive each axis; gather unique IDs and numeric ascending sort. Original world center/hypot<3 and pairTerm remain unchanged. Full-cell halo is deliberately conservative. Qualification is empirical equivalence in this runtime; no claim of formal outward-rounded Math.hypot proof. All-pairs uses direct integer enumeration with no unused bbox/Map. Full-scene positions, bins and neighbors rebuild on each full query. No positive omission, zero-screen adaptation or parameter search.
+
+## Qualification gate
+
+21 fixed tiny controls in experiment.cjs: six exact/adjacent radius3 at origins0 and−6; three anchored cell4 boundaries rotated across x/y/z; signed-zero duplicates; origin and coarse2^40 translated geometry; dense16; span256 and nextUp256; far258; NaN; infinity; overflowing span; near-field; duplicates. Both actual builders once each, complete symbols/CSR/domain/graph compared. Recount symbols independently. These are deterministic implementation controls, not performance observations. No control load solves. No adaptive expansion.
+
+Then8large builds (all and grid on each fixed case) and16load solves (both schedules each build), all with residual. Full reference symbols304million per builder, exact source order/offsets/decisions, all K and loads compared with the published independently checked records. Exact tolerances in SCHEMA.md. Persist both full diagnostic bundles per case. Any mismatch, rejected target or nonconvergence stops before timings; preserve records. Dependency depth is qualification-only work. Static source review precedes allocation.
+
+## Timed scope, repetition and analysis
+
+Read/decode inputs and load oracle records once, timed separately. Full compact query includes all input/geometry preparation, certificate/index/candidate sorting, center/pair classification, CSR/scaling/admission/graph eligibility, ordered setup where used, solve, residual and shared small checksum. Excludes full symbol tensor materialization, diagnostic traces, full output hashes/comparisons/persistence, reference loading, browser, rendering, flight dynamics and steering. Always report this exact scope; do not call it full application runtime. Compact symbol census still retained. Receiver-level resource guards are common. Qualification tensor/trace computation and compression/buffered persistence costs reported separately; no fsync and no subtraction to infer overhead.
+
+One fresh Node process; no forced GC/JIT settings/parallel heavy benchmarks. One saved warmup per case/method, six measured blocks with all six permutations. Exact schedule in SCHEMA.md:84full calls (12warmup+72measured), then56cached calls (8warmup+48measured). Cached starts from ones with fresh scratch; disclosed resident metadata and matrix bytes, no previous-solution warm start. Six repeated timings support descriptions on this process/device/fixed states only, not population inference. No selective discarding of slow correct calls or adaptive repetitions.
+
+Save each duration before postclock validation. Compare every returned matrix and solution to qualified arrays, including exact per-method fingerprints and counters. Full failed solution plus first differing scalar retained. Large timed arrays not retained individually; saved-record audit cannot recover them from hashes. Report every raw duration, median/min/max totals and phases; block-paired B/C and A/B ratios and differences; sum-of-matched-block phase contributions; cached O/P separately. No pooling of different input cases or clocks. Predeclared practical signal: B/C median<=.95 and at least5/6 strict B wins on EACH of the threeN5000 cases. N1000 contextual. This is an engineering preference, not a significance test or novelty threshold. Negative signal is a valid complete finding.
+
+Environment: CPU model/core counts/RAM/architecture/kernel/Node/V8/executable hash/flags, monotonic clock, process threading scope, low-power/power-source fields and start/end load where available. No serial, hostname, user or private executable path. Sampled process RSS, Node resource maxRSS with units and external supervisor RSS retained. JS object/Map overhead not inferred from typed bytes.
+
+## Bounds and closure
+
+One300s candidate invocation,295s cooperative guard; one60s independent saved-record reviewer. No pilot, retries, tuning, replacement snapshots or automatic extension.1.5GiB RSS,2million positive terms/case,128MiB new scientific output with4MiB failure reserve;64MiB compressed-symbol cap/case;4MiB supervisor logs; total result directory132MiB external guard. Lock before execution consumes allocation. Supervisor samples every0.2s and may overshoot slightly; guards are not hard real-time limits. Shared internal resource checking and instrumentation remain in time. Complete prefix and supervisor reason preserved on failure. Source/dependency pins and exact remote manifest verified before execution.
+
+Reviewer performs saved-array comparisons and descriptive arithmetic only, no geometry/roots/timing rerun. Passing audit means internal evidence consistency within this scope, not independent timed-array reproduction. Prior Python/NumPy numerical audit remains oracle provenance. Source reviews/parse checks are not numerical pilot executions.
+
+## Interpretation limits and next decision
+
+No novelty, best available CPU, browser real-time, physical validation, flight accuracy or low-end device claim. Uniform grids and dependency scheduling are established ideas. Prior exact-zero-screen work may be a stronger CPU baseline; do not compare old numerical timings with this different coupled contract or present A as state of the art. Mild exposed snapshots do not establish domain generalization. Stronger log theorem extra domain remains untested.
+
+If complete, use measured phase contributions to choose one later question, or conclude that ordered solving contributes little to complete cost. A new algorithm or fresh confirmatory allocation requires another prospective protocol. Do not reopen old stopped allocations. Update ledgers, plain-language milestone, Three.js view of actual frozen states with timings, source/result manifests and independent GitHub publication receipts. Physical data and complete browser/flight pipeline remain unresolved.
+
+Instrumentation caveat: per-receiver RSS/time checks execute once per map evaluation, so their overhead scales with iteration count and belongs to the measured implementation. This instrumented result does not isolate root arithmetic alone or predict an unguarded optimized implementation.

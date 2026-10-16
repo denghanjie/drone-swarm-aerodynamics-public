@@ -1,0 +1,11 @@
+# Prospective source/publication review
+
+Only synthetic public historical states and published numerical oracle artifacts are referenced. New controls are synthetic. No attachment contents, private chat exports, credentials, raw system environment, hostname/serial, private interpreter path or account metadata are included. Environment collection uses a whitelist of hardware/runtime properties relevant to reproducibility. NODE_OPTIONS must be empty; executable is identified by SHA256, not local path. Actual run records still require a separate prepublication inspection.
+
+Source grep and manual reads include the protocol, schema, scripts, bibliography, ledgers and planning notes. Static review artifacts are copied from private work areas; generic references to their private temporary review directory are normalized to 'private review directory'. Code/data/math and cited source hashes are unchanged by this textual privacy transformation. Original private review notes remain outside the public tree. References to previously public repository-local paths are preserved.
+
+No new external dataset is redistributed. Literature entries preserve prior verification/access limitations. Existing numerical inputs/reference outputs are pinned in place, not silently regenerated or replaced. Public data permission and synthetic status are inherited from their already published packages; source review supplies no new physical-validation claim.
+
+Source parse checks run Node --check and Python AST parsing only. No module is imported for scientific evaluation, no tiny control is evaluated, and no target numerical/timing execution precedes source freeze. Agent static reviews are readiness checks, not empirical results. Source-manifest records actual final source bytes; reviewer notes record exact earlier file hashes and coordinator notes document later amendments.
+
+Before the source push, scan all staged new text for credential patterns, personal/private filesystem paths and machine identifiers, inspect any match, verify complete dependency pins against existing committed bytes, and ensure only the two new package directories are staged. Repeat privacy checks for results before their public push. Publication receipts are written separately after remote verification.
