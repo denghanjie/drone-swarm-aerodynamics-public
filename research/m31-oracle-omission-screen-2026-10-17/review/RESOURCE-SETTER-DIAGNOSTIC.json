@@ -1,0 +1,64 @@
+{
+  "scope": "Harmless exact resource setter isolation; no project imports or numerical data. One fresh subprocess per setter,5second timeout.",
+  "utc": "2026-10-16T23:53:00.365368+00:00",
+  "cases": [
+    {
+      "exitCode": 0,
+      "result": {
+        "name": "RLIMIT_CPU",
+        "requested": [
+          60,
+          61
+        ],
+        "before": [
+          9223372036854775807,
+          9223372036854775807
+        ],
+        "after": [
+          60,
+          61
+        ],
+        "set": true
+      },
+      "stderr": ""
+    },
+    {
+      "exitCode": 0,
+      "result": {
+        "name": "RLIMIT_DATA",
+        "requested": [
+          536870912,
+          536870912
+        ],
+        "before": [
+          9223372036854775807,
+          9223372036854775807
+        ],
+        "set": false,
+        "failureType": "ValueError",
+        "message": "current limit exceeds maximum limit"
+      },
+      "stderr": ""
+    },
+    {
+      "exitCode": 0,
+      "result": {
+        "name": "RLIMIT_FSIZE",
+        "requested": [
+          16777216,
+          16777216
+        ],
+        "before": [
+          9223372036854775807,
+          9223372036854775807
+        ],
+        "after": [
+          16777216,
+          16777216
+        ],
+        "set": true
+      },
+      "stderr": ""
+    }
+  ]
+}
