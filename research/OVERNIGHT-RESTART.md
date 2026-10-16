@@ -1,3 +1,11 @@
+# Source freeze ready: current-position screen
+
+m31-center-screen-2026-10-16 now has the fixed 48 controls, six ownership builds, full candidate/independent checker/supervisor/metadata seal, independent static clearance and source-manifest.json. No scientific invocation has run. Publish this exact source and independently verify remote manifest/local and committed pins before executing. Keep HEAD at the published source commit for both launches; save the verification receipt without committing it first. One candidate900s, one review180s, then one metadata-only seal20s. Read PROTOCOL and SOURCE-RESTART in full; no retries or edits after exposure.
+
+Viewer/QA drafts are not scientific source and have not run. Keep server8876 and the prior root-secant view. Both desk checkpoints and source decision are already closed. Broader goal active/incomplete. This mutable index is outside immutable pins.
+
+---
+
 # Active preparation: finite-runtime center-screen test
 
 The two desk results are published at db8365078da3f54c258f18bb4f3cb20ef32dfb6a with independently reconciled exact remote manifests/local committed pins; receipts pushed at d64de5643bf0738fed68da72fb49ff42c841ed82. Root-defect bound is conditional/unimplemented; fixed-PWM access3/3closed with no extracted triplet.
