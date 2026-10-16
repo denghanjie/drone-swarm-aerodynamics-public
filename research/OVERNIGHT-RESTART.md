@@ -1,3 +1,13 @@
+# Latest completed checkpoint: fixed secant improves errors but is rejected
+
+`m31-root-secant-2026-10-16/` completed both one-shot allocations with successful closures. All200targets were scored; independent audit passed1,098,131checks. The candidate missed all3absolute0.001screens and produced4finite above-one roots; all3maximum comparisons improved over hold. The199later endpoints also missed all3screens, so dropping startup under the unchanged saved history does not repair it. No speedup, new flight, physical validation or novelty claim.
+
+Source5a555210fa6012a9df334ecfc4ae0c9a666b0e82; manifest06d8a81dfba014349b48c649d30bf4ed06479632a7a34f4bcd45026b7f49eaf3,24pins, independently verified before exposure. Read MILESTONE-SUMMARY, RESULT-CLAIM-LEDGER, independent interpretation, POSTRUN-RESTART and separate publication receipts. Scientific/reviewer/QA processes are closed; do not rerun. UI QA63groups passed, with all201rendered poses checked and desktop/mobile/screenshots inspected. New Three.js diagnostic: http://127.0.0.1:8876/research/m31-root-secant-2026-10-16/viewer/#scene-heading . Preserve server8876.
+
+NEXT-QUESTION is planning only: no next method/source freeze/allocation exists. The broader goal stays active/incomplete. This turn made substantive falsification/publication progress, not an unchanged-blocker wait. Preserve every closed historical allocation below. This index is mutable discovery metadata outside experiment pins.
+
+---
+
 # Active preparation: causal saved-root secant diagnostic
 
 `m31-root-secant-2026-10-16/` has a prospective protocol, fixed input/config, candidate, independent checker and supervised one-shot execution source. Preparation is static only; no prediction score, trajectory or synthetic fixture has run. Final static review/source freeze/publication are pending. Before any execution inspect source-manifest, publication verification and results locks/closures. Candidate and review allocations are not yet consumed.

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Predicting the next rotor loads · M31</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">{"imports":{"three":"../../../outputs/step02b-source/vendor/three.module.js"}}</script>
+</head>
+<body data-binding="pending" data-playing="false">
+<main>
+  <nav><a href="../../m31-ratio-reuse-2026-10-16/viewer/">← The rejected 10 ms hold</a><span>M31 · Saved-state prediction</span></nav>
+  <header>
+    <h1>Can recent loads predict<br>the next moment?</h1>
+    <p class="lead">We use the trend between two earlier calculations to estimate the next rotor load. Both estimates are checked at the same recorded drone positions.</p>
+  </header>
+  <p id="status" class="status" role="status" aria-live="polite">Checking evidence bindings…</p>
+  <div class="notice"><strong>One old trajectory. No predicted flight.</strong> These are 201 exact saved poses of 16 drones on an exposed, physically unvalidated simulation path. Colors show saved load errors at 200 positive target events. This page runs no solver, predictor or scientific scoring.</div>
+
+  <section class="outcome-strip" aria-label="Saved result and verification">
+    <article><span class="label">Accuracy result</span><strong id="decision">Unresolved</strong><p id="decision-detail">Waiting for complete, verified evidence.</p></article>
+    <article><span class="label">Independent saved-data review</span><strong id="review-status">Not loaded</strong><p id="review-detail">Review outcome is read from the saved record.</p></article>
+    <article><span class="label">Saved diagnostic coverage</span><strong id="coverage">— / 200</strong><p id="coverage-detail">Cold start and the terminal audit are included. Scored coverage does not imply valid predictions.</p></article>
+  </section>
+  <div class="verification" aria-label="Execution status">
+    <span>Artifact pins <b id="pin-status">pending</b></span>
+    <span>Candidate closure <b id="candidate-status">pending</b></span>
+    <span>Reviewer closure <b id="review-run-status">pending</b></span>
+  </div>
+
+  <section class="panel viewer-panel" aria-labelledby="scene-heading">
+    <div class="panel-title"><div><h2 id="scene-heading">Same poses, different load estimates</h2><p>Choose an estimate and a saved error channel.</p></div><span class="subtle">Drone IDs are zero-based</span></div>
+    <div class="controls">
+      <fieldset class="segmented"><legend>Estimate</legend><div><button id="mode-predict" data-control disabled aria-pressed="true">Straight-line prediction</button><button id="mode-hold" data-control disabled aria-pressed="false">Hold previous values</button></div></fieldset>
+      <label>Error color<select id="metric" data-control disabled><option value="rotor">Rotor load · mg/4</option><option value="force">Collective force · mg</option><option value="moment">Body moment · mgR</option></select></label>
+      <label>Drone display size<select id="size" data-control disabled><option value="1">Actual geometry</option><option value="4" selected>4× for visibility</option><option value="8">8× for visibility</option></select></label>
+      <button id="reset" data-control disabled>Reset view</button>
+    </div>
+    <div class="playback">
+      <button id="play" data-control disabled>Play events</button>
+      <button id="previous" class="step" data-control disabled aria-label="Previous saved event">←</button>
+      <label class="slider-label" for="frame">Saved event <input id="frame" type="range" min="0" max="200" step="1" value="0" data-control disabled></label>
+      <button id="next" class="step" data-control disabled aria-label="Next saved event">→</button>
+      <output id="time" for="frame">— s</output>
+    </div>
+    <div class="scene-wrap">
+      <div id="scene" role="img" aria-label="Saved 3D drone poses; waiting for verified records"></div>
+      <div id="scene-placeholder" class="scene-placeholder"><strong>Evidence first</strong><span>The scene stays locked until every file pin and saved audit status is verified.</span></div>
+      <div class="scene-overlay"><span id="event-label">No verified event</span><span>Drag to orbit · scroll to zoom<br>Quarter-speed event stepping · no interpolation</span></div>
+    </div>
+    <div class="legend" aria-label="Error color legend">
+      <span><i class="swatch low"></i>Zero / small error</span><span><i class="swatch threshold"></i>0.001 screen</span><span><i class="swatch high"></i>5× screen or more</span><span><i class="swatch invalid"></i>Invalid predicted root</span><span><i class="swatch missing"></i>Not scored</span>
+    </div>
+    <p class="caption" id="color-explanation">Rotor colors use each saved rotor error; the body uses the largest of that drone’s four saved values. Force and moment color all parts of each drone from its saved vector-norm error.</p>
+    <div class="event-summary" aria-live="polite"><div><span>Rotor maximum</span><strong id="event-rotor">—</strong><small id="event-rotor-location">—</small></div><div><span>Force maximum</span><strong id="event-force">—</strong><small id="event-force-location">—</small></div><div><span>Moment maximum</span><strong id="event-moment">—</strong><small id="event-moment-location">—</small></div></div>
+    <p id="event-note" class="caption">The initial event supplies history and has no positive-age target.</p>
+    <p id="invalid-note" class="invalid-note" hidden></p>
+    <p class="caption">Model size changes only the drawing. Drone centers and quaternions are the original saved values. Z points up. Magenta identifies invalid predictions; finite errors for those predictions remain invalid-domain diagnostics.</p>
+  </section>
+
+  <section class="panel results-panel" aria-labelledby="primary-heading">
+    <h2 id="primary-heading">How large were the errors?</h2>
+    <p>All 200 positive targets, including cold start and the terminal audit. These saved diagnostics include finite values from invalid predicted roots. Scored coverage does not establish valid approximations; qualification also requires no invalid roots. Values and gate decisions come directly from the saved summary.</p>
+    <p class="caption">On a narrow screen, scroll the table sideways to see every result.</p><div class="table-scroll" tabindex="0" aria-label="Primary diagnostic results; scroll horizontally on small screens"><table><thead><tr><th scope="col">Observable</th><th scope="col">Prediction diagnostic maximum</th><th scope="col">Hold diagnostic maximum</th><th scope="col">Limit</th><th scope="col">Absolute screen</th><th scope="col">No worse than hold</th></tr></thead><tbody id="primary-rows"><tr><td colspan="6">Awaiting verified records.</td></tr></tbody></table></div>
+    <p id="primary-note" class="caption">A complete finite diagnostic maximum does not override invalid-root rejection.</p>
+    <div id="finite-diagnostics" hidden><h3>Finite diagnostics when full coverage is unavailable</h3><p>These saved maxima exclude uncomputable events and cannot qualify the complete target set.</p><div class="table-scroll"><table><thead><tr><th>Observable</th><th>Secant finite diagnostic</th><th>Hold finite diagnostic</th></tr></thead><tbody id="finite-rows"></tbody></table></div></div>
+  </section>
+
+  <section class="panel results-panel" aria-labelledby="secondary-heading">
+    <h2 id="secondary-heading">Cold start stays in the result</h2>
+    <p>Event 1 must hold the initial root because a second history sample does not yet exist. The remaining 199 secant targets are secondary context, with no separate qualification decision.</p>
+    <div class="table-scroll" tabindex="0" aria-label="Startup and secondary diagnostic maxima"><table><thead><tr><th>Observable</th><th>Cold start · event 1</th><th>199 secant diagnostic maximum</th><th>199 paired hold diagnostic maximum</th></tr></thead><tbody id="secondary-rows"><tr><td colspan="4">Awaiting verified records.</td></tr></tbody></table></div>
+    <p id="secondary-note" class="caption">The primary population cannot exclude startup to recover a pass.</p>
+  </section>
+
+  <div class="reading"><section><h2>What this comparison measures</h2><p>The predicted quantity is the jointly solved rotor-load ratio. Both estimates use the same current nominal motor states, orientation and body lever arms. Their errors are measured against the saved fresh solution on that state.</p><p>This is development on exposed data. Agreement at refresh endpoints does not establish validity between them, or show what a predictor-driven trajectory would do.</p></section><section><h2>What remains open</h2><p>No new flight was integrated and no query was avoided by this diagnostic. Runtime records describe the execution allowance, not a speed benchmark. Physical validity, operational accuracy, generalization and 5,000-drone performance remain unresolved.</p><p>The 0.001 thresholds are provisional numerical screens. Moment uses mgR with R = √2 × 0.028 m; it is separate from collective force and per-rotor load.</p></section></div>
+
+  <details id="events-details"><summary>Every positive event · saved maxima</summary><p>Use an event button to inspect its exact pose. Finite numbers associated with invalid roots are diagnostics, not valid approximations.</p><div class="table-scroll event-table" tabindex="0" aria-label="All 200 event maxima"><table><thead><tr><th>Event / time</th><th>Method</th><th>Predict rotor</th><th>Hold rotor</th><th>Predict force</th><th>Hold force</th><th>Predict moment</th><th>Hold moment</th><th>Predicted domain</th></tr></thead><tbody id="event-rows"><tr><td colspan="9">Awaiting verified records.</td></tr></tbody></table></div></details>
+  <details><summary>Evidence, file pins and limits</summary><p><a href="../MILESTONE-SUMMARY.md">Milestone summary</a> · <a href="../PROTOCOL.md">Frozen protocol</a> · <a href="../results/summary.json">Saved summary</a> · <a href="../results/events.jsonl">All target events</a> · <a href="../results/independent-review.json">Independent review</a> · <a href="../results/candidate-run.json">Candidate closure</a> · <a href="../results/review-run.json">Reviewer closure</a> · <a href="binding.json">Viewer binding</a></p><p id="audit-detail">Review fields must be present and successful; missing fields never imply a pass.</p><p>Every data response is checked against the byte length and SHA-256 in binding.json before use. The original 15.8 MB trajectory is referenced in its existing package and is not copied here. The page reads saved per-drone errors; it does not reconstruct scientific scores.</p><ul id="pins" class="pins"><li>Binding pending.</li></ul></details>
+  <footer>Exact saved poses · Same-state root diagnostic · No interpolation, physical validation or speedup claim</footer>
+</main>
+<script type="module" src="app.js"></script>
+</body>
+</html>

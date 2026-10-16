@@ -1,0 +1,308 @@
+{
+  "browserPath": "Browser plugin not available; installed Playwright/Chrome used.",
+  "flow": "Verify exact saved evidence, inspect all201 rendered poses, switch error mode/channel, inspect startup/invalid/terminal events, play/scale/orbit/reset, desktop/mobile, links and corrupt/failed/incomplete UI fixtures.",
+  "checks": [
+    {
+      "name": "identity",
+      "pass": true
+    },
+    {
+      "name": "nonblank",
+      "pass": true
+    },
+    {
+      "name": "no overlay",
+      "pass": true
+    },
+    {
+      "name": "one old trajectory disclosure",
+      "pass": true
+    },
+    {
+      "name": "physical limit",
+      "pass": true
+    },
+    {
+      "name": "decision bound",
+      "pass": true
+    },
+    {
+      "name": "rejection readable",
+      "pass": true
+    },
+    {
+      "name": "audit passes separately",
+      "pass": true
+    },
+    {
+      "name": "coverage",
+      "pass": true
+    },
+    {
+      "name": "invalid count visible",
+      "pass": true
+    },
+    {
+      "name": "one WebGL scene",
+      "pass": true
+    },
+    {
+      "name": "201 frames16 drones",
+      "pass": true
+    },
+    {
+      "name": "initialization not zero",
+      "pass": true
+    },
+    {
+      "name": "all201 exact saved positions and orientations",
+      "pass": true
+    },
+    {
+      "name": "terminal time",
+      "pass": true
+    },
+    {
+      "name": "terminal next disabled",
+      "pass": true
+    },
+    {
+      "name": "terminal audit label",
+      "pass": true
+    },
+    {
+      "name": "startup included",
+      "pass": true
+    },
+    {
+      "name": "startup value saved",
+      "pass": true
+    },
+    {
+      "name": "invalid event31",
+      "pass": true
+    },
+    {
+      "name": "invalid event32",
+      "pass": true
+    },
+    {
+      "name": "invalid event33",
+      "pass": true
+    },
+    {
+      "name": "invalid event34",
+      "pass": true
+    },
+    {
+      "name": "hold retains invalid warning",
+      "pass": true
+    },
+    {
+      "name": "hold rotor bound",
+      "pass": true
+    },
+    {
+      "name": "hold force bound",
+      "pass": true
+    },
+    {
+      "name": "hold moment bound",
+      "pass": true
+    },
+    {
+      "name": "predict rotor bound",
+      "pass": true
+    },
+    {
+      "name": "predict force bound",
+      "pass": true
+    },
+    {
+      "name": "predict moment bound",
+      "pass": true
+    },
+    {
+      "name": "three absolute misses",
+      "pass": true
+    },
+    {
+      "name": "three comparator passes",
+      "pass": true
+    },
+    {
+      "name": "secondary199 disclosed",
+      "pass": true
+    },
+    {
+      "name": "size1",
+      "pass": true
+    },
+    {
+      "name": "size8",
+      "pass": true
+    },
+    {
+      "name": "size4",
+      "pass": true
+    },
+    {
+      "name": "orbit responds",
+      "pass": true
+    },
+    {
+      "name": "camera reset",
+      "pass": true
+    },
+    {
+      "name": "play then pause",
+      "pass": true
+    },
+    {
+      "name": "all200 event rows",
+      "pass": true
+    },
+    {
+      "name": "all200 buttons ordered",
+      "pass": true
+    },
+    {
+      "name": "event row navigates",
+      "pass": true
+    },
+    {
+      "name": "evidence pins visible",
+      "pass": true
+    },
+    {
+      "name": "link ",
+      "pass": true
+    },
+    {
+      "name": "link MILESTONE-SUMMARY.md",
+      "pass": true
+    },
+    {
+      "name": "link PROTOCOL.md",
+      "pass": true
+    },
+    {
+      "name": "link summary.json",
+      "pass": true
+    },
+    {
+      "name": "link events.jsonl",
+      "pass": true
+    },
+    {
+      "name": "link independent-review.json",
+      "pass": true
+    },
+    {
+      "name": "link candidate-run.json",
+      "pass": true
+    },
+    {
+      "name": "link review-run.json",
+      "pass": true
+    },
+    {
+      "name": "link binding.json",
+      "pass": true
+    },
+    {
+      "name": "mobile no document overflow",
+      "pass": true
+    },
+    {
+      "name": "mobile result table scrolls",
+      "pass": true
+    },
+    {
+      "name": "no errors",
+      "pass": true
+    },
+    {
+      "name": "no warnings",
+      "pass": true
+    },
+    {
+      "name": "corrupt evidence rejected",
+      "pass": true
+    },
+    {
+      "name": "corrupt controls locked",
+      "pass": true
+    },
+    {
+      "name": "failed audit locked",
+      "pass": true
+    },
+    {
+      "name": "missing closure unresolved",
+      "pass": true
+    },
+    {
+      "name": "audited table mismatch rejected",
+      "pass": true
+    },
+    {
+      "name": "unscored is not zero",
+      "pass": true
+    },
+    {
+      "name": "finite diagnostics separate",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "fixtures": [
+    {
+      "name": "failed-independent-audit",
+      "uiOnly": true,
+      "modifiedKeys": [
+        "independentReview"
+      ],
+      "expected": "failed",
+      "scientificFilesUnchanged": true
+    },
+    {
+      "name": "missing-review-closure",
+      "uiOnly": true,
+      "modifiedKeys": [
+        "reviewRun"
+      ],
+      "expected": "failed",
+      "scientificFilesUnchanged": true
+    },
+    {
+      "name": "inconsistent-audited-table",
+      "uiOnly": true,
+      "modifiedKeys": [
+        "summary"
+      ],
+      "expected": "failed",
+      "scientificFilesUnchanged": true
+    },
+    {
+      "name": "synthetic-unscored-display",
+      "uiOnly": true,
+      "modifiedKeys": [
+        "summary",
+        "independentReview",
+        "events"
+      ],
+      "expected": "verified",
+      "scientificFilesUnchanged": true
+    }
+  ],
+  "browserVersion": "155.0.8059.80",
+  "renderedPoseChecks": {
+    "poses": 9648,
+    "attitudes": 28944,
+    "rotorCenters": 38592,
+    "failures": []
+  },
+  "passed": true
+}
