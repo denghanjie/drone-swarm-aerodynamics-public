@@ -1,0 +1,27 @@
+{
+  "scope": "Prefreeze parent AST-only/source-schema review. No target arithmetic, project imports or numerical execution. Checker source pending at this time.",
+  "utc": "2026-10-16T23:49:46.001523+00:00",
+  "files": [
+    {
+      "path": "research/m31-oracle-omission-screen-2026-10-17/source/analyze.py",
+      "bytes": 10400,
+      "sha256": "50cd4111f107fcd99bf9cadcf098a4f2b298eec319ce0930cb0473150b2921e9",
+      "astSyntaxPassed": true
+    },
+    {
+      "path": "research/m31-oracle-omission-screen-2026-10-17/source/run.py",
+      "bytes": 5553,
+      "sha256": "fb5a72f4726f2bcca69bd564489daead5edfcd67e2f8209f8f2470d4d965d3c2",
+      "astSyntaxPassed": true
+    }
+  ],
+  "priorResultPinsUnchanged": 323,
+  "correctionsBeforeFreeze": [
+    "Reference pairs use stable IDs, not input indices.",
+    "Input hash is sorted canonical domain/id/input envelope, not file-byte hash.",
+    "Positive status with zero lower endpoint remains included.",
+    "Added upper-endpoint singleton control and retained zero-positive states.",
+    "Atomic final attempt replacement retains initial marker on incomplete final write.",
+    "Wall-guard scope explicitly excludes interpreter startup, initial marker, teardown."
+  ]
+}
