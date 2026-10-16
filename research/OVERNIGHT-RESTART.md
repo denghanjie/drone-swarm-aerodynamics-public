@@ -1,5 +1,7 @@
 # Overnight research restart index
 
+Current continuation: completed coupled-cost result47e620d and independent receipt8971e93 are public and exact-byte verified. Read `m31-post-cost-decision-2026-10-16/DECISION.md` for the latest source-only next questions and `m31-coupled-cost-host-2026-10-16/POSTRUN-RESTART.md` for the completed experiment. No scientific, reviewer or QA process is active; server8876 remains. The overall goal is active and incomplete. The older overnight window below is historical; no old budget may be reopened. Any next finite cycle needs its own prospectively saved scope.
+
 **Stop new overnight launches at 07:00 Asia/Shanghai on 2026-10-16 (2026-10-15T23:00:00Z).** Keep scientific computation serial. No paid services, author contact or submission. Use the active goal; do not create a duplicate. Every closed budget below is terminal: no retries, added cases, larger caps or disguised replacement job IDs.
 
 Public additive worktree: current repository, branch `codex/m31-audit-2026-10-15`. Preserve the original eight-step roadmap and historical M31 base. Later remote main/DOT at `1336f5c416875a9651f92b58b2ed06649f25b04e` remains separate and untouched. The private workspace, attachments, credentials and chat records must never be published.
