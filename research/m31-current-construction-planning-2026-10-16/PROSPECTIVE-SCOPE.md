@@ -1,0 +1,13 @@
+# Current interaction construction: bounded source decision
+
+2026-10-16. Separate desk scope following the adopted polynomial-defect review. No numerical allocation, external retrieval, input generation, import of scientific modules, execution, target-array reading or timing experiment is authorized here. All earlier experiments remain closed. Reuse the existing independent agents only; create no new agents.
+
+Question: does a simple current-position broad-phase screen remain a distinct, justified way to reduce expensive center-distance work in the fastest measured lean all-pairs builder, without changing coefficients, support rejection or source order? Inspect existing screen/grid/lean/reuse history before deciding. A different wrapper around an already closed negative method is insufficient reason to run it again.
+
+The concrete proposal to challenge is an ordered all-pairs loop with a conservative componentwise far test before Math.hypot. It may use a whole-scene span/finite certificate and otherwise fall back to the unchanged lean path. Retained pairs keep the existing center, rotor classification, current nominal scaling, solve and residual code. Rejected/unsupported near pairs must never disappear as zero support. A source/destination component gap well beyond the 3 m neighborhood may be sufficient for omission, but exact floating-point/guard reasoning is required. No threshold, numerical safety margin or gain is selected by inspecting targets.
+
+This is a proposed ordinary geometric screening technique, not a novelty claim. A source review may reject it as duplication, insufficiently justified under the numerical contract, or unlikely to resolve the actual cost. Do not silently replace it with a tuned family of methods. If an alternative is recommended, save that recommendation as planning only.
+
+Bounded review assignments: at most eight local content files per independent reviewer, explicitly inventoried. Filename discovery and targeted line ranges within those files are allowed. No raw/results arrays or newly computed counts/ratios. One reviewer checks prior-work duplication and the actual exposed source path; another challenges omission/admission/order/fallback arithmetic. Parent reconciles these reports and existing published summaries. Deliver a decision and precise conditions for a possible separate preregistered test, or a rejection. No implementation or benchmark is part of this desk scope.
+
+Physical-source admission remains separate. Preserve the existing Three.js root-secant numerical milestone and localhost port 8876. New numerical work, if justified, requires frozen candidate/checker/protocol/resources, publication and independent byte verification before any new scientific exposure.

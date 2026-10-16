@@ -1,0 +1,145 @@
+{
+  "kind": "bounded-fixed-pwm-report-view-admission",
+  "date": "2026-10-16",
+  "scopeCommit": "17139d157597820bd2541b158ee28fd6b6780bb2",
+  "scopeFiles": [
+    "research/m31-fixed-pwm-view-2026-10-16/PROSPECTIVE-SCOPE.md",
+    "research/m31-post-cost-decision-2026-10-16/PHYSICAL-DATA-QUESTION.md"
+  ],
+  "url": "https://www.researchgate.net/publication/351477086_Investigation_of_High_Incidence_Angle_Propeller_Aerodynamics_for_Subscale_eVTOL_Aircraft",
+  "allowance": {
+    "maximumConnectorOperations": 3,
+    "consumedConnectorOperations": 3,
+    "remainingConnectorOperations": 0,
+    "closed": true,
+    "closedAfterSequence": 3,
+    "initialAccessSucceeded": true
+  },
+  "operations": [
+    {
+      "sequence": 1,
+      "operation": "open",
+      "target": "exact authorized URL",
+      "outcome": "successful indexed HTML text; no PDF pixels",
+      "newDocumentAcquisition": true
+    },
+    {
+      "sequence": 2,
+      "operation": "find",
+      "target": "same initial returned document reference",
+      "pattern": "Figure 13.",
+      "outcome": "static/sweep discussion and appendix captions returned",
+      "newDocumentAcquisition": false
+    },
+    {
+      "sequence": 3,
+      "operation": "find",
+      "target": "same initial returned document reference",
+      "pattern": "tare",
+      "outcome": "no matching text in accessible representation",
+      "newDocumentAcquisition": false
+    }
+  ],
+  "identity": {
+    "report": "NASA/TM-20210014010",
+    "displayedVersion": "May 2021",
+    "displayedUploadDate": "2021-05-11",
+    "correctionHistoryIndependentlyCleared": false
+  },
+  "representation": {
+    "contentType": "text/html",
+    "providerCrawlAgeDisplay": "2 days ago",
+    "freshConnectorOpen": true,
+    "freshOriginPdfTransfer": false,
+    "returnedTotalLineCount": 2834,
+    "pixelsAvailableInReturnedPayload": false,
+    "fullIndexedDocumentSaved": false
+  },
+  "presentationInspection": {
+    "consideredCount": 2,
+    "maximumAllowed": 2,
+    "level": "caption and associated prose only",
+    "static": {
+      "figure": 13,
+      "printedPage": 30,
+      "sourceLineLocations": [
+        1419,
+        1422,
+        2073
+      ],
+      "eligibleForExtraction": false
+    },
+    "firstNonzero": {
+      "figure": 14,
+      "printedPage": 31,
+      "sourceLineLocations": [
+        1441,
+        1455,
+        2077
+      ],
+      "eligibleForExtraction": false
+    },
+    "secondNonzero": {
+      "figure": 15,
+      "printedPage": 32,
+      "sourceLineLocation": 2081,
+      "status": "incidental caption only; panel not inspected"
+    }
+  },
+  "numericalAdmission": {
+    "admitted": false,
+    "status": "not recoverable within this access scope",
+    "targetThrustOrdinatesTranscribed": 0,
+    "targetArithmetic": false,
+    "modelEvaluation": false,
+    "fit": false,
+    "graphicalDigitization": false,
+    "extractionSpecificationAdmitted": false
+  },
+  "gaps": [
+    "No readable load-panel axes, graduations, markers or CW/PWM1475 legend labels",
+    "No visually verified observation-versus-fit trace identity",
+    "No established static-PWM-to-static-thrust panel mapping or shared specimen/run/baseline match",
+    "Exact installed-load/tare treatment remains unresolved; no-match is not proof of absence",
+    "Actual point pressure, published repetition semantics and total uncertainty remain unresolved"
+  ],
+  "incidentalExposure": {
+    "targetThrustOrdinatesExposed": false,
+    "categories": [
+      "report identity and dates",
+      "figure/page metadata beyond the selected presentations",
+      "units and source variable definitions",
+      "incidence ranges and pressure settings",
+      "bibliographic identifiers and unrelated link metadata"
+    ],
+    "followedIncidentalLinks": false,
+    "inspectedThirdLoadPresentation": false
+  },
+  "privatePreservation": {
+    "saved": true,
+    "payloadKind": "UTF-8 JSON serialization of three original connector-return objects, including excerpt text and metadata",
+    "bytes": 40925,
+    "sha256": "854d635a5261dbbd97ca70566451405f61c3d4622c2dcbae5e37bfb04b00d75c",
+    "originalPdfBytes": false,
+    "privatePathPublished": false
+  },
+  "reuse": {
+    "ordinaryAccessSucceeded": true,
+    "explicitRedistributionLicenseEstablished": false,
+    "paperAssetsCopiedToPublicRepo": false,
+    "publicDeliverables": "authored admission note and access ledger only"
+  },
+  "prohibitedActionsPerformed": {
+    "search": false,
+    "newEndpointOrMirror": false,
+    "linkClick": false,
+    "loginOrAccountChange": false,
+    "authorContact": false,
+    "downloadRetry": false,
+    "installation": false,
+    "credentials": false,
+    "scientificExecution": false,
+    "repositoryEdit": false
+  },
+  "nextAction": "Stop. Any further acquisition or extraction requires a separate scope."
+}

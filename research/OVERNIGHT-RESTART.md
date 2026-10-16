@@ -1,3 +1,15 @@
+# Current continuation: two desk results closed; construction review active
+
+`m31-root-defect-planning-2026-10-16/` retains an independently checked conditional exact-real polynomial-defect bound. No numerical certificate, speed result, physical validation or novelty claim. The eight-file cost/history review recommends current interaction construction; the six-file claims review is resolved. Read its PARENT-DECISION and result manifest. No numerical test is allocated.
+
+`m31-fixed-pwm-view-2026-10-16/` closes 3/3 source operations. Report text/captions were accessible, but a readable matched observation triplet was not recoverable within that scope. No thrust extraction, scoring or executable extraction specification. Private response hash is public; no original paper assets are published. Read ADMISSION, SOURCE-ACCESS and parent saved-evidence review. Do not reopen its allowance or old failed transfers.
+
+A separately bounded source-only review is active at `m31-current-construction-planning-2026-10-16/PROSPECTIVE-SCOPE.md`. It challenges a conservative componentwise screen before expensive center-distance work, including prior duplication and numerical guard semantics. No implementation, science allocation or target evaluation exists. Existing reviewers only; no new agents. One reviewer accidentally opened a historical result-bearing file; exposure is being preserved and cannot be presented as unexposed design work.
+
+Latest numerical Three.js replay remains http://127.0.0.1:8876/research/m31-root-secant-2026-10-16/viewer/#scene-heading . Preserve server8876 and all immutable closed packages. Overall goal active/incomplete. Historical cutoffs below do not reopen any old budget and are not a current blanket cutoff for separately authorized new cycles. This index is mutable discovery metadata outside experiment pins.
+
+---
+
 # Latest completed checkpoint: fixed secant improves errors but is rejected
 
 `m31-root-secant-2026-10-16/` completed both one-shot allocations with successful closures. All200targets were scored; independent audit passed1,098,131checks. The candidate missed all3absolute0.001screens and produced4finite above-one roots; all3maximum comparisons improved over hold. The199later endpoints also missed all3screens, so dropping startup under the unchanged saved history does not repair it. No speedup, new flight, physical validation or novelty claim.
