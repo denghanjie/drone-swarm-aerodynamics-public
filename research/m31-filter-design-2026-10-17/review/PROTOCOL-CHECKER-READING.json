@@ -1,0 +1,21 @@
+{
+  "reviewer": "m31_protocol_challenge",
+  "phase": "prospective source authoring and independent source review",
+  "inheritedFileCap": 12,
+  "inheritedDistinctFilesRead": 6,
+  "inheritedFiles": [
+    "research/m31-screening-cost-2026-10-17/MODEL.md",
+    "research/m31-screening-cost-2026-10-17/source/pair-prepared.cjs",
+    "research/m31-screening-cost-2026-10-17/source/interval.cjs",
+    "research/m31-screening-cost-2026-10-17/source/adapter.cjs",
+    "research/m31-screening-cost-2026-10-17/source/pair-reference.py",
+    "research/m31-screening-cost-2026-10-17/source/check.py"
+  ],
+  "newCandidateFilesNotRead": ["source/binary64-interval.cjs", "source/zero-filter.cjs", "source/run.cjs"],
+  "closedNumericalResultFilesRead": [],
+  "inputAuthoring": "Parent explicitly authorized standard decimal-token to binary64-word serialization with Python float and struct. generate-fixtures.py serialized 108 declared records; no candidate import, model function, branch oracle or performance probe was executed.",
+  "sourceChecks": ["Python ast.parse only", "JSON parse and allocation counts only", "SHA256 of copied helper", "static import inventory"],
+  "scientificImportsOrExecutions": 0,
+  "independentHelper": {"localPath": "source/semantic-reference.py", "bytes": 44757, "sha256": "845f52cf350a09d2043934dff3e797a7b7416f4ef5c64beb716104bcd74f38f0"},
+  "trustBoundary": "Inherited independent exact binary64 preparation/constants and fixed192 scalar oracle utilities; their old case generators, main checker, controls and suites remain uncalled. Fresh checker implements primitive exact ranges, neighboring-word adjacency, record/journal validation and 16 new controls."
+}

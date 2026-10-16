@@ -1,0 +1,139 @@
+{
+  "schema": "m31-filter-design-checker-source-reading-v1",
+  "reviewer": "m31_verified_literature",
+  "createdUtc": "2026-10-16T20:57:35.249614+00:00",
+  "disposition": "Accepted for source freeze at exact reviewed pins; numerical qualification and publication are separate gates.",
+  "inheritedReadCap": 12,
+  "inheritedDistinctPathsReadCumulative": 5,
+  "inheritedCapSatisfied": true,
+  "priorInventory": {
+    "path": "research/m31-filter-design-2026-10-17/review/SUPERVISOR-EXTERNAL-PIN-READING.json",
+    "bytes": 3223,
+    "sha256": "e008ac3c18d5885344fddc56c79c100eb5bf8269b620a0dd9a45b03409f96572"
+  },
+  "inheritedInputsCumulative": [
+    {
+      "path": "research/m31-screening-cost-2026-10-17/source/pair-prepared.cjs",
+      "bytes": 3357,
+      "sha256": "e963362c4b095196b5cc0bcc67c1b613f28c4d6a5e5d5e15101a4f847a61ff56",
+      "readScope": "full text only; branch-order obligations"
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/source/interval.cjs",
+      "bytes": 2815,
+      "sha256": "73f5afce4dbc2551535127abeaa96d2e6389073e898f9b9dcc70a977ff19ded3",
+      "readScope": "full text only; exact fallback precision/range distinction"
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/source/supervise.py",
+      "bytes": 20249,
+      "sha256": "053cc97e59830b838d95d73474b8eb597c4b23c1b6783f2555d4db79b9149868",
+      "readScope": "full source text, adaptation; AST only for new output"
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/source/guardian.py",
+      "bytes": 1892,
+      "sha256": "5c97c5a23556120226fab52955e427144d8ae69beb685e18d667bc6b66e1717a",
+      "readScope": "full source text, deadline-only adaptation; AST only for new output"
+    },
+    {
+      "path": "research/m31-filter-design-2026-10-17/source/semantic-reference.py",
+      "bytes": 44757,
+      "sha256": "845f52cf350a09d2043934dff3e797a7b7416f4ef5c64beb716104bcd74f38f0",
+      "inheritedCopiedContent": true,
+      "provenance": "Copied inherited pair-reference.py content in current-cycle source; counted conservatively as an inherited-content path.",
+      "readScope": "AST import/top-level structure; full referenced functions at lines 150\u2013393, 448\u2013559, 601\u2013616; guarded main tail 945\u2013960. No import or execution."
+    }
+  ],
+  "currentCycleInputs": [
+    {
+      "path": "research/m31-filter-design-2026-10-17/source/check.py",
+      "bytes": 35689,
+      "sha256": "1d9f1181d55b4ed5ca76688ad4de29baedec1e008d7eac04806c28c10fc2784e",
+      "readScope": "Full source before counter-only edit; exact final diff from prefreeze/checker-v0.py; final AST parse only."
+    },
+    {
+      "path": "research/m31-filter-design-2026-10-17/prefreeze/checker-v0.py",
+      "bytes": 35048,
+      "sha256": "0b62f26287be6a6751b47a4443519eed3ff318af215f4a8ffacfbc5315b78dbe",
+      "readScope": "Preserved full pre-counter checker source and exact final diff."
+    },
+    {
+      "path": "research/m31-filter-design-2026-10-17/source/result-contract.json",
+      "bytes": 6662,
+      "sha256": "4b9890937fac0131830548dc73241296b2c57783b1883a6762961c3dc45ca5ac",
+      "readScope": "Full JSON text."
+    },
+    {
+      "path": "research/m31-filter-design-2026-10-17/source/spec.json",
+      "bytes": 55777,
+      "sha256": "2715ab48ad1c6437244e78ea66c8685c074d579c961f5b4c47857534e2e8de55",
+      "readScope": "Full JSON parse; structure, constants, record IDs/uniqueness/counts inspected; no fixture arithmetic."
+    },
+    {
+      "path": "research/m31-filter-design-2026-10-17/source/run.cjs",
+      "bytes": 4323,
+      "sha256": "2ce652e43efda4f698ef456e5229e608e9cee26da8a646dc686b1601bbee4536",
+      "readScope": "Full source text."
+    },
+    {
+      "path": "research/m31-filter-design-2026-10-17/source/supervise.py",
+      "bytes": 19730,
+      "sha256": "a09af9c14853fc1440440e25c443163594bafed7f6257b8194ae3fb8208cdf7d",
+      "readScope": "Full adaptation source and final required-pin changes, as recorded in preceding review inventories."
+    },
+    {
+      "path": "research/m31-filter-design-2026-10-17/source/guardian.py",
+      "bytes": 1890,
+      "sha256": "b3d6be72fccd56be18d7cd2b59e0ff87aac0442eebf8470c8b7308eb853732de",
+      "readScope": "Full adaptation source; AST only, as recorded in preceding review inventories."
+    },
+    {
+      "path": "research/m31-filter-design-2026-10-17/PROTOCOL.md",
+      "bytes": 10220,
+      "sha256": "4e0af980a7be0295cac06550e851d5282a44f5d494e81c9dfc632582ea810bb0",
+      "readScope": "Full text."
+    },
+    {
+      "path": "research/m31-filter-design-2026-10-17/review/NUMERICAL-DESIGN-AUDIT.md",
+      "bytes": 18281,
+      "sha256": "29ca8523ff930e6f3decd71b037b498e23ac36dc96f17348394432c7fb3563b4",
+      "readScope": "Full text."
+    }
+  ],
+  "reviewArtifact": {
+    "path": "research/m31-filter-design-2026-10-17/review/CHECKER-SOURCE-REVIEW.md",
+    "bytes": 8681,
+    "sha256": "cb2d6c30bf1d71a81c5985afdf61571bc74561b23679043ede09187a0f4d14c8"
+  },
+  "finalChangeReview": {
+    "baseline": {
+      "path": "research/m31-filter-design-2026-10-17/prefreeze/checker-v0.py",
+      "bytes": 35048,
+      "sha256": "0b62f26287be6a6751b47a4443519eed3ff318af215f4a8ffacfbc5315b78dbe"
+    },
+    "current": {
+      "path": "research/m31-filter-design-2026-10-17/source/check.py",
+      "bytes": 35689,
+      "sha256": "1d9f1181d55b4ed5ca76688ad4de29baedec1e008d7eac04806c28c10fc2784e"
+    },
+    "change": "Adds four descriptive counter groups after successful record validation; no acceptance, control, allocation, or qualification predicates changed.",
+    "accepted": true
+  },
+  "validation": [
+    "Source and exact final diff inspection",
+    "Final checker AST parse only",
+    "Data-only spec JSON parse and allocation/ID inspection",
+    "Helper import/top-level AST and referenced-function inspection",
+    "Manifest, output, witness, and qualification contract reconciliation"
+  ],
+  "notPerformed": [
+    "Checker or helper import",
+    "Compile-execution of scientific source",
+    "Fixture arithmetic or numerical reference generation",
+    "Kernel/checker/supervisor/guardian execution",
+    "Prior-suite reruns",
+    "Empirical coverage or timing inference"
+  ],
+  "nextGate": "Parent source freeze and separately authorized sole kernel/checker execution; reviewer remains idle."
+}

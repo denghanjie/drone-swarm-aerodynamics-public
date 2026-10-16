@@ -1,0 +1,37 @@
+{
+  "reviewer": "m31_evidence_audit",
+  "date": "2026-10-17",
+  "cycle": "m31-filter-design-2026-10-17",
+  "inheritedDistinctFileCap": 12,
+  "inheritedDistinctFilesRead": 10,
+  "inheritedRoot": "research/m31-screening-cost-2026-10-17/source",
+  "inheritedFiles": [
+    {"path": "adapter.cjs", "scope": "full source; repeated line-numbered inspection", "sha256": "5cf2b2ddc590915c63bae4f3909e90f196277804d1524aa0ef68165e6b1e4145", "purpose": "native preparation, rounded model operands, exact validation"},
+    {"path": "pair-prepared.cjs", "scope": "full source; repeated line-numbered inspection", "sha256": "e963362c4b095196b5cc0bcc67c1b613f28c4d6a5e5d5e15101a4f847a61ff56", "purpose": "exact branch precedence, zero predicates, fixed96 coefficient boundary"},
+    {"path": "tree.cjs", "scope": "full source", "sha256": "589acbb740cd6cbb3e1ddca784b087dc4a6d60b5276daaaf6118bae87d9f0461", "purpose": "global guard, tree geometry, node zero rules, unchanged screening scope"},
+    {"path": "boxes.cjs", "scope": "full source", "sha256": "01195b1a8b2367b57140659919de235466b18d684f1c71b72134991673f2caa9", "purpose": "exact box arithmetic and prepared endpoint provenance"},
+    {"path": "interval.cjs", "scope": "full source; repeated root/range/encoding line inspection", "sha256": "73f5afce4dbc2551535127abeaa96d2e6389073e898f9b9dcc70a977ff19ded3", "purpose": "fixed96 endpoint guarantees, checked square roots, refusal semantics and zero encoding"},
+    {"path": "rational.cjs", "scope": "full source", "sha256": "de2adde5459d37cc537709f7a488605d9c21d8eedf022efc0a3e9461d4d97333", "purpose": "exact dyadic ingestion, rational expressions and operation costs visible in source"},
+    {"path": "methods.cjs", "scope": "full source", "sha256": "570377fe7323800c5b7ff360b7586f5ee88ef0d40cc60a4f716e28698bfc3c83", "purpose": "preparation boundary, existing exact cache, rotor scheduling, counters and canonical witness order"},
+    {"path": "loads.cjs", "scope": "full source", "sha256": "c3fa665a8512ad0c9a73f964b26014c3ad329ee73b68589a61404a3d54ab8a4b", "purpose": "native proposal versus certified roots, downstream output invariants"},
+    {"path": "spec.json", "scope": "attempted full textual read; tool output truncated; inspected exposed constants/header, metadata/footer and visible scene excerpts only", "sha256": "194bf724c702c38045bf2ee11b30e5b6fc5fbeba8d2d42f68303b71083192728", "purpose": "constant positivity and fixed guard/model scope; no full fixture audit"},
+    {"path": "canonical.cjs", "scope": "full source", "sha256": "7112bccefcf00d85451e0c08ef937f46823e012fc806628a588489d34608b7d5", "purpose": "canonical encoding constraints and distinction from scientific result equality"}
+  ],
+  "newCycleSourceRead": [
+    {"path": "research/m31-filter-design-2026-10-17/source/binary64-interval.cjs", "scope": "full source, static inspection only", "sha256": "048068853915c0fa5e90272e4dd491cbe4448fcbdbb7157008c90abbd7e185ad"},
+    {"path": "research/m31-filter-design-2026-10-17/source/zero-filter.cjs", "scope": "full source, static inspection only", "sha256": "d755b78fb774cab645e254316318bd86d95c2869e8d7682a8ed4a927968f0d88"}
+  ],
+  "closedEvidenceUsage": "Previously delivered cost counts and combined assembly scope were available in conversation context; saved evidence outputs were not reopened in this cycle.",
+  "reviewerExecution": {
+    "sourceReads": true,
+    "metadataDiscoveryAndHashes": true,
+    "documentWrites": true,
+    "modelImports": false,
+    "candidateImports": false,
+    "candidateExecution": false,
+    "syntaxChecks": false,
+    "numericalProbes": false,
+    "suiteReruns": false,
+    "closedPackageEdits": false
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "reviewer": "m31_evidence_audit",
+  "date": "2026-10-17",
+  "phase": "completed prefreeze staged-execution source review",
+  "inheritedOriginalFilesRead": 10,
+  "inheritedOriginalFileCap": 12,
+  "priorInventory": "review/NUMERICAL-DESIGN-READING.json",
+  "continuationScope": "All continuation file reads are inside the new package. A local copy of the inherited exact reference helper is disclosed separately; the original inherited helper path was not opened.",
+  "newPackageReads": [
+    {"path":"source/run.cjs","scope":"full source","sha256":"2ce652e43efda4f698ef456e5229e608e9cee26da8a646dc686b1601bbee4536"},
+    {"path":"source/check.py","scope":"full initial source and final descriptive-count diff","sha256":"1d9f1181d55b4ed5ca76688ad4de29baedec1e008d7eac04806c28c10fc2784e"},
+    {"path":"source/supervise.py","scope":"full initial source and two dependency-list amendment diffs","sha256":"a09af9c14853fc1440440e25c443163594bafed7f6257b8194ae3fb8208cdf7d"},
+    {"path":"source/guardian.py","scope":"full source","sha256":"b3d6be72fccd56be18d7cd2b59e0ff87aac0442eebf8470c8b7308eb853732de"},
+    {"path":"source/spec.json","scope":"JSON structure/allocation inspection and raw hexadecimal fixture reading; no word decoding or model arithmetic","sha256":"2715ab48ad1c6437244e78ea66c8685c074d579c961f5b4c47857534e2e8de55"},
+    {"path":"source/result-contract.json","scope":"full contract","sha256":"4b9890937fac0131830548dc73241296b2c57783b1883a6762961c3dc45ca5ac"},
+    {"path":"source/semantic-reference.py","scope":"initial whole-file read had truncated output; subsequent complete relevant definitions for binary64 arithmetic, constants, preparation, exact scalar oracle and interval decoding were inspected; legacy main/controls were inspected as uncalled source","origin":"research/m31-screening-cost-2026-10-17/source/pair-reference.py","sha256":"845f52cf350a09d2043934dff3e797a7b7416f4ef5c64beb716104bcd74f38f0"},
+    {"path":"PROTOCOL.md","scope":"full initial protocol plus corrected unresolved-gate wording","sha256":"4e0af980a7be0295cac06550e851d5282a44f5d494e81c9dfc632582ea810bb0"},
+    {"path":"runtime-pins.json","scope":"full metadata; compared shape to checker requirement, did not execute or rehash runtime binaries","sha256":"842b2522133ed499f4706e071b09f3d100c5f4ed3f41d0fd135736c4dc191087"},
+    {"path":"DESIGN-DRAFT.md","scope":"full reviewed snapshot","sha256":"a79ed283e1486cb7f3f63573ed9d8d145428ad8ffd6b2725d91cdd4ffcfcb36f"},
+    {"path":"RESEARCH-DIRECTION.md","scope":"full reviewed snapshot","sha256":"1925e978d0290191181ce51e7d48500ea822c92f0d491cbe999a638b47332b4e"},
+    {"path":"PREFREEZE-CHANGES.md","scope":"initial reviewed snapshot only; later additions not claimed read","sha256":"ca368eca9d3176858a271519f6233a7ce207ea036db3f41ae7acc167fd5e5a51"},
+    {"path":"review/CHECKER-IMPLEMENTATION.md","scope":"full source-authoring note","sha256":"fbcc8e56b0a1f3e147b9143eec6189e5b099f211aa1930acafe5d3ca98279e23"},
+    {"path":"review/PROTOCOL-CHECKER-READING.json","scope":"full author read inventory","sha256":"55d401259e7a181d6de712976752f311d80a9fca923e7b5fe571402f2a748783"},
+    {"path":"source/zero-filter.cjs","scope":"full repeated source inspection; unchanged since numerical design review","sha256":"d755b78fb774cab645e254316318bd86d95c2869e8d7682a8ed4a927968f0d88"}
+  ],
+  "preservedDiffInputs": [
+    "prefreeze/supervise-before-external-pin-review.py",
+    "prefreeze/supervise-before-checker-helper-pin.py",
+    "prefreeze/checker-v0.py"
+  ],
+  "mechanicalChecks": [
+    "Textual source reads, function searches and diffs",
+    "JSON parse and record/field-shape counts only: 108 unique IDs, 72 primitives, 36 RAW17 pairs, valid rotor-index shapes",
+    "SHA256 file identity snapshots"
+  ],
+  "scientificImports": false,
+  "candidateExecution": false,
+  "checkerExecution": false,
+  "primitiveEvaluation": false,
+  "numericalFixtureEvaluation": false,
+  "oldSuiteExecution": false,
+  "closedPackageEdits": false,
+  "findings": {
+    "F1":"Resolved prospectively by requiring all inherited runner dependencies and the local independent checker helper in the supervisor and checker source closure.",
+    "F2":"Resolved prospectively by explicit unresolved-fails-qualification wording; no unresolved success witness or empirical coverage claim. No proposed fixture was added or evaluated."
+  }
+}

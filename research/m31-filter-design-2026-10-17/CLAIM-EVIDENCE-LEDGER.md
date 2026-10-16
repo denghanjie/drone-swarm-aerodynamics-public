@@ -1,0 +1,13 @@
+# Claim and evidence ledger — prospective scalar filter
+
+| Claim | Status | Evidence and limit | Next challenge |
+|---|---|---|---|
+| Exact hierarchy screening reduced total method time on the prior six fixed upright lattice scenes. | Confirmed within that declared finite descriptive scope. | Published result commit784c8184c1f6f674c1ca4989e0601210b805887f; all24paired ratios>1; dense216median8.761s. Four pairs are not a broad confidence interval; the frozen harness is a timing trust boundary. | Fresh matched filter-off/on total-cost suite, only after this correctness gate. |
+| The proposed scalar filter can return an existing zero branch soundly if its operation enclosures and prefix implications hold. | Conditional source argument; not yet runtime validated. | Independent numerical-design audit, verified literature, explicit branch table and same-preparation invariant. |108fixed primitive/raw-pair records and16semantic corruption controls. |
+| The wrapper preserves positive/rejected/unresolved scalar outcomes. | Implementation hypothesis. | Exact fallback callback is unchanged; no native positive approximation; all earlier branch ambiguities fall back. | Independent192reference plus full baseline/candidate equality and corruption checks. |
+| Filtering saves total computation time. | Unresolved. | No new timing experiment is allocated. Remaining zero counts do not measure filter coverage or saved time. | Fresh end-to-end method comparison charging filter/cache preparation and exact fallbacks. |
+| Numerical filtering is itself a novel algorithmic contribution. | Unsupported; do not claim. | Verified prior work already studies conservative filters and exact fallback. | Precise closest-work comparison of any later project-specific accuracy-cost contribution. |
+| The current model predicts physical multi-drone behavior accurately. | Unresolved. | No compatible independent experimental validation is added by this numerical cycle. | Obtain and evaluate suitable published experimental evidence under explicit compatibility/uncertainty limits. |
+|5000moving drones with local3D Boids, dynamics and mutual aerodynamics run in real time in the browser. | Unresolved. | Static small-group Node results and an airflow-off historical replay do not establish this. | Moving coupled-system measurements including steering, dynamics, interactions, transfer/synchronization and rendering as applicable. |
+
+No conclusion will be upgraded until the corresponding saved experimental evidence passes the declared gate. Failed or partial attempts remain evidence and are not repaired/retried within the closed allocation. This ledger is prospective; a result ledger will retain rather than overwrite it.

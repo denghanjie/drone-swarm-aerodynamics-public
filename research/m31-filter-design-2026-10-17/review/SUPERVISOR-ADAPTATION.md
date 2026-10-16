@@ -1,0 +1,15 @@
+# Filter supervision adaptation - source only
+
+The new `source/supervise.py` and `source/guardian.py` adapt the closed screening-cost supervision without modifying the closed package. Both parse successfully with Python AST only. They have not been imported or executed. Independent source review remains pending before freeze/allocation.
+
+Each sole kernel/checker allocation has a 300-second supervisor wall limit and a 310-second independent guardian deadline, with 512 MiB sampled process-group RSS. The fixed closed output set is the kernel `filter-results.json` and its `.jsonl` journal (16 MiB each); checker `independent-check.json` plus `reference.json` (32 MiB combined); stage attempt/lifecycle/public logs/terminal-error metadata plus all four private raw logs (8 MiB combined); and at most 64 KiB per supervision report. All categories share a 96 MiB aggregate cap. No scene directories, shards or anomaly graph are allowed.
+
+The required local files are PROTOCOL.md, runtime-pins.json and source/{binary64-interval.cjs,zero-filter.cjs,run.cjs,check.py,spec.json,result-contract.json,guardian.py,supervise.py}. The parent confirmed that manifest.files includes every external transitive baseline/reference dependency in the same path/bytes/sha256 schema. Every manifest file and both runtime binaries are checked before and after the child; publication and manifest bytes must remain unchanged. The checker receives the existing --spec, --input, --manifest, --output and --root flags.
+
+The guardian retains its process-group identity until child exit, sampled absence of the scientific child and supervisor release. Its lifecycle event file and parent directory are synchronized before child launch; attempt/report sentinels are exclusively created and synchronized. Cleanup signals only the still-owned live guardian group. Full-system process rows exist only transiently for RSS/descendant checks; only the experiment guardian/child IDs and aggregate metrics are retained.
+
+Two prospective hardening details were added while adapting the file: all stage output/log preexistence refuses another allocation, and the kernel requires an empty result directory. During checker execution, prior kernel scientific evidence, supervision, attempt, lifecycle and published log files are pinned, as are prior private raw logs. Their immutability is rechecked after the checker. Existing source/cleanup/terminal-failure paths remain fail-closed.
+
+This is sampled containment for the reviewed non-spawning scientific child, not hostile-code isolation or an exact continuous RSS bound. It does not prove the future numerical outputs or runtime semantics. The checker and protocol must still receive independent source acceptance, full manifest/publication verification, and the separately authorized one-shot allocations.
+
+Inherited source-content count after this adaptation: 4 / 12. No numerical runs, scientific imports, old-suite reruns, installations, paid services or closed-package edits occurred.

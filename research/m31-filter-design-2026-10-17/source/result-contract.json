@@ -1,0 +1,82 @@
+{
+  "schema": "m31-filter-correctness-result-v1",
+  "journalSchema": "m31-filter-correctness-journal-v1",
+  "specId": "m31-filter-correctness-v1",
+  "expectedRecords": 108,
+  "primitiveRecords": 72,
+  "pairRecords": 36,
+  "journalEvents": 110,
+  "documentFields": ["schema", "specId", "sourceManifestSha256", "specSha256", "constants", "runtime", "records"],
+  "primitiveWordFields": ["kind", "id", "op", "word", "outcome"],
+  "primitiveArithmeticFields": ["kind", "id", "op", "args", "outcome"],
+  "pairFields": ["kind", "id", "input", "prepared", "baseline", "candidate"],
+  "pairInputFields": ["receiver", "source", "rotor"],
+  "preparationFields": ["prepared", "rejection"],
+  "candidateFields": ["decision", "result"],
+  "wordOutcomeFields": ["kind", "word"],
+  "intervalOutcomeFields": ["kind", "l", "u"],
+  "fallbackOutcomeFields": ["kind", "reason"],
+  "fastZeroBranches": ["neighbor", "upstream", "down-cut", "near-outside", "radial", "projection"],
+  "primitivePolicy": {
+    "finiteNeighborInput": "Exact adjacent IEEE word required; a finite maximum may step to an infinity sentinel.",
+    "nonfiniteInput": "Fallback reason nonfinite required; infinity sentinels are never valid finite interval endpoints.",
+    "invalidInterval": "Fallback reason invalid-interval required.",
+    "divisionContainingZero": "Fallback reason zero-denominator required.",
+    "finiteArithmetic": "A finite returned interval must enclose the full exact-real endpoint range; conservative fallback is allowed.",
+    "signedZero": "Word stepping preserves IEEE ordering conventions; interval endpoints are compared as exact real dyadics."
+  },
+  "pairPolicy": {
+    "preparation": "Regenerate complete native preparation independently from raw words. Preserve raw-nonfinite, raw-force, preparation rejection precedence and retained prepared value.",
+    "fastZero": "Only an existing zero branch may be returned, with exact original branch precedence and exact zero interval shape.",
+    "fallback": "Complete candidate result must equal the unchanged baseline result, and each result must independently satisfy the fixed192 oracle.",
+    "status": "All fixed96 unresolved statuses fail qualification, including unresolved-range, normalizer, and cap. They are never accepted by substituting a positive or rejected fixed192 oracle outcome. Every fixed192 reference-undecidable outcome also fails qualification. There are no stress exceptions.",
+    "positive": "All five fixed96 intervals K, scaledK, beta, nu, coefficient must enclose the independent fixed192 reference; nonnegative bounds, K and scaledK upper bounds at most128, and positive nu lower bound are mandatory."
+  },
+  "coverage": {
+    "finiteIntervalPerOperation": ["add", "sub", "mul", "div", "square"],
+    "minimumFastZeros": 1,
+    "minimumPositiveFallbacks": 1,
+    "requiredPositiveFallbackId": "tail-positive",
+    "allSixZeroBranchesRequired": false,
+    "allControlWitnessesRequired": true
+  },
+  "storage": {
+    "result": "results/filter-results.json",
+    "journal": "results/filter-results.json.jsonl",
+    "reference": "results/reference.json",
+    "report": "results/independent-check.json",
+    "format": "Compact ASCII JSON in retained insertion order, exactly one newline per document or journal event; raw-byte SHA256 pins.",
+    "headerFields": ["kind", "schema", "specId", "sourceManifestSha256", "specSha256"],
+    "recordEventFields": ["kind", "row"],
+    "completion": {"kind": "complete", "records": 108}
+  },
+  "controls": {
+    "count": 16,
+    "policy": "Fixed recipes; semantic validation before equality or journal checks; every intended failure family and independent witness required. Controls reuse one precomputed independent oracle, do not execute the candidate, and preserve originals.",
+    "recipes": [
+      {"id": "inward-add-upper", "row": "add-tie-positive", "mutation": "outcome interval upper=1", "failure": "primitive-containment"},
+      {"id": "inward-add-lower", "row": "add-tie-negative", "mutation": "outcome interval lower=-1", "failure": "primitive-containment"},
+      {"id": "lost-underflow", "row": "mul-underflow-positive", "mutation": "outcome interval=[0,0]", "failure": "primitive-containment"},
+      {"id": "finite-overflow", "row": "mul-overflow", "mutation": "outcome interval=[maxfinite,maxfinite]", "failure": "primitive-containment"},
+      {"id": "zero-divisor", "row": "div-zero-divisor", "mutation": "outcome interval=[0,0]", "failure": "primitive-domain"},
+      {"id": "lost-square-zero", "row": "square-zero-crossing", "mutation": "outcome interval=[1,1]", "failure": "primitive-containment"},
+      {"id": "false-positive-zero", "row": "tail-positive", "mutation": "candidate fast zero neighbor and zero result", "failure": "candidate-target-status"},
+      {"id": "guard-preempted", "row": "guard-before-upstream", "mutation": "candidate fast zero upstream and zero result", "failure": "candidate-target-status"},
+      {"id": "wrong-zero-branch", "row": "neighbor-far", "mutation": "candidate fast zero upstream and zero result", "failure": "candidate-target-branch"},
+      {"id": "altered-prepared-point", "row": "tail-positive", "mutation": "flip low bit of receiver selected rotor point x", "failure": "prepared-operation-graph"},
+      {"id": "lost-fallback-coefficient", "row": "tail-positive", "mutation": "candidate positive coefficient=[0,0]", "failure": "candidate-containment-coefficient"},
+      {"id": "preparation-bypassed", "row": "invalid-force-zero", "mutation": "candidate fast zero neighbor and zero result", "failure": "preparation-gate"},
+      {"id": "missing-row", "row": "last", "mutation": "remove last record", "failure": "record-count"},
+      {"id": "duplicate-row", "row": "first", "mutation": "replace second record by first", "failure": "duplicate-record-id"},
+      {"id": "reordered-rows", "row": "first-two", "mutation": "swap first two records", "failure": "record-order"},
+      {"id": "journal-disagreement", "row": "first", "mutation": "journal first row id receives -changed suffix", "failure": "journal-row-agreement"}
+    ]
+  },
+  "independentHelper": {
+    "path": "source/semantic-reference.py",
+    "sha256": "845f52cf350a09d2043934dff3e797a7b7416f4ef5c64beb716104bcd74f38f0",
+    "inheritedFrom": "research/m31-screening-cost-2026-10-17/source/pair-reference.py",
+    "boundary": "Only exact preparation/constants/oracle utilities used. Old case generation, main validation, controls and suites remain uncalled."
+  },
+  "scope": "One fixed finite scalar verification; no load solve, full-group timing, speedup, physical validation, moving dynamics, browser scale or novelty inference."
+}

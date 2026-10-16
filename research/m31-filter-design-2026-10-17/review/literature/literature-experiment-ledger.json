@@ -1,0 +1,695 @@
+{
+  "schema": "m31-filter-design-literature-experiment-ledger-v1",
+  "createdUtc": "2026-10-16T20:46:32.970707+00:00",
+  "role": "m31_verified_literature",
+  "status": "literature design complete; no numerical execution",
+  "parentClosedCheckpointCommit": "784c8184c1f6f674c1ca4989e0601210b805887f",
+  "inheritedReadCap": 12,
+  "inheritedDistinctPathsReadCumulative": 2,
+  "inheritedCapSatisfied": true,
+  "inheritedInputs": [
+    {
+      "path": "research/m31-screening-cost-2026-10-17/source/pair-prepared.cjs",
+      "bytes": 3357,
+      "sha256": "e963362c4b095196b5cc0bcc67c1b613f28c4d6a5e5d5e15101a4f847a61ff56",
+      "readScope": "full text only; branch-order obligations"
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/source/interval.cjs",
+      "bytes": 2815,
+      "sha256": "73f5afce4dbc2551535127abeaa96d2e6389073e898f9b9dcc70a977ff19ded3",
+      "readScope": "full text only; exact fallback precision/range distinction"
+    }
+  ],
+  "newCycleInputs": [
+    {
+      "path": "research/m31-filter-design-2026-10-17/DESIGN-DRAFT.md",
+      "bytes": 4173,
+      "sha256": "a79ed283e1486cb7f3f63573ed9d8d145428ad8ffd6b2725d91cdd4ffcfcb36f",
+      "readScope": "full text; initial prospective zero-only scope"
+    }
+  ],
+  "skillRead": {
+    "skill": "pdf:pdf",
+    "bundleVersion": "26.1013.11914",
+    "purpose": "Read-only PDF extraction/rendering; no PDF creation"
+  },
+  "retrievals": [
+    {
+      "requestedUrl": "https://www.cs.cmu.edu/~quake/robust.html",
+      "effectiveUrl": "https://www.cs.cmu.edu/~quake/robust.html",
+      "httpStatus": 200,
+      "curlSslVerifyResult": 0,
+      "retrievedApproxUtcFromLocalFileMtime": "2026-10-16T20:24:25.819447+00:00",
+      "file": {
+        "bytes": 6595,
+        "sha256": "4827cc14a20b83b658127bd331ee560c3f10bb8b389c3374188d1e7b95d3e9ce",
+        "privateArchiveId": "m31-filter-literature-2026-10-17",
+        "archiveRelativePath": "sources/shewchuk-robust-page.html"
+      },
+      "responseHeaders": {
+        "bytes": 398,
+        "sha256": "a2fd26adb8d533ec2827b6027ad22622c9559863ac89907e07a4c7b2fbb49e0e",
+        "privateArchiveId": "m31-filter-literature-2026-10-17",
+        "archiveRelativePath": "sources/shewchuk-robust-page.headers"
+      },
+      "usedForTechnicalClaims": false
+    },
+    {
+      "requestedUrl": "https://people.eecs.berkeley.edu/~jrs/papers/robustr.pdf",
+      "effectiveUrl": "https://people.eecs.berkeley.edu/~jrs/papers/robustr.pdf",
+      "httpStatus": 200,
+      "curlSslVerifyResult": 0,
+      "retrievedApproxUtcFromLocalFileMtime": "2026-10-16T20:24:54.001189+00:00",
+      "file": {
+        "bytes": 556447,
+        "sha256": "5f047fd41666e53f6015497f68e42152e3a9d8d04556ab27f8b6fc92c74117d7",
+        "privateArchiveId": "m31-filter-literature-2026-10-17",
+        "archiveRelativePath": "sources/shewchuk-long.pdf"
+      },
+      "responseHeaders": {
+        "bytes": 238,
+        "sha256": "8cb0adb13b5881464912b0db3c65cf1c99f6f566172345655a42ee848cdb1ed5",
+        "privateArchiveId": "m31-filter-literature-2026-10-17",
+        "archiveRelativePath": "sources/shewchuk-long.pdf.headers"
+      },
+      "usedForTechnicalClaims": true
+    },
+    {
+      "requestedUrl": "https://www.cs.cmu.edu/~quake/robust.pc.html",
+      "effectiveUrl": "https://www.cs.cmu.edu/~quake/robust.pc.html",
+      "httpStatus": 200,
+      "curlSslVerifyResult": 0,
+      "retrievedApproxUtcFromLocalFileMtime": "2026-10-16T20:25:23.638071+00:00",
+      "file": {
+        "bytes": 3521,
+        "sha256": "f21ef0a159b812ffc30fcf71a39e08bf2a67d64a4cf365cfa9d0612692727f95",
+        "privateArchiveId": "m31-filter-literature-2026-10-17",
+        "archiveRelativePath": "sources/shewchuk-pc.html"
+      },
+      "responseHeaders": {
+        "bytes": 398,
+        "sha256": "165dd8096872c9c2546c9931d1b964cda8baf4ca341e4b341803c7cef34dfdd1",
+        "privateArchiveId": "m31-filter-literature-2026-10-17",
+        "archiveRelativePath": "sources/shewchuk-pc.html.headers"
+      },
+      "usedForTechnicalClaims": true
+    },
+    {
+      "requestedUrl": "https://api.crossref.org/works?query.title=Adaptive%20precision%20floating-point%20arithmetic%20and%20fast%20robust%20geometric%20predicates&rows=1",
+      "effectiveUrl": "https://api.crossref.org/works?query.title=Adaptive%20precision%20floating-point%20arithmetic%20and%20fast%20robust%20geometric%20predicates&rows=1",
+      "httpStatus": 200,
+      "curlSslVerifyResult": 0,
+      "retrievedApproxUtcFromLocalFileMtime": "2026-10-16T20:25:23.416453+00:00",
+      "file": {
+        "bytes": 2368,
+        "sha256": "f3794b10f125fcab791318aba0e1bb136f7737ed4d651f72018e9f0a1670dfd5",
+        "privateArchiveId": "m31-filter-literature-2026-10-17",
+        "archiveRelativePath": "sources/shewchuk-crossref.json"
+      },
+      "responseHeaders": {
+        "bytes": 508,
+        "sha256": "61909480af892228873bcec921b2be653efbe5efe775835a04638f37f352fffb",
+        "privateArchiveId": "m31-filter-literature-2026-10-17",
+        "archiveRelativePath": "sources/shewchuk-crossref.json.headers"
+      },
+      "usedForTechnicalClaims": false
+    },
+    {
+      "requestedUrl": "https://www-sop.inria.fr/geometrica/team/Sylvain.Pion/publications.html",
+      "effectiveUrl": "https://team.inria.fr/geometrica/",
+      "httpStatus": 200,
+      "curlSslVerifyResult": 0,
+      "retrievedApproxUtcFromLocalFileMtime": "2026-10-16T20:24:36.601352+00:00",
+      "file": {
+        "bytes": 59176,
+        "sha256": "44962668b5321cdb6c8317f7b1d084cdb0a8685bddc7b3743c849aa364d04d11",
+        "privateArchiveId": "m31-filter-literature-2026-10-17",
+        "archiveRelativePath": "sources/pion-publications.html"
+      },
+      "responseHeaders": {
+        "bytes": 1326,
+        "sha256": "2e52890305bd05a3fb14fe12e4a07e9cc40247c11d8ca90203139c8d86946450",
+        "privateArchiveId": "m31-filter-literature-2026-10-17",
+        "archiveRelativePath": "sources/pion-publications.headers"
+      },
+      "usedForTechnicalClaims": false
+    },
+    {
+      "requestedUrl": "https://www-sop.inria.fr/members/Sylvain.Pion/",
+      "effectiveUrl": "https://www-sop.inria.fr/members/Sylvain.Pion/",
+      "httpStatus": 200,
+      "curlSslVerifyResult": 0,
+      "retrievedApproxUtcFromLocalFileMtime": "2026-10-16T20:24:53.057195+00:00",
+      "file": {
+        "bytes": 12030,
+        "sha256": "072871d25709b0f70f32d975d5c933b8ffe7564fcdc5ccea011310ab53902110",
+        "privateArchiveId": "m31-filter-literature-2026-10-17",
+        "archiveRelativePath": "sources/pion-home.html"
+      },
+      "responseHeaders": {
+        "bytes": 250,
+        "sha256": "4631afd27e97e53bdb60cd3556580f970d6cd7ec4f835efb579f0aee7376ab78",
+        "privateArchiveId": "m31-filter-literature-2026-10-17",
+        "archiveRelativePath": "sources/pion-home.html.headers"
+      },
+      "usedForTechnicalClaims": false
+    },
+    {
+      "requestedUrl": "https://www-sop.inria.fr/members/Sylvain.Pion/publications/",
+      "effectiveUrl": "https://www-sop.inria.fr/members/Sylvain.Pion/publications/",
+      "httpStatus": 200,
+      "curlSslVerifyResult": 0,
+      "retrievedApproxUtcFromLocalFileMtime": "2026-10-16T20:25:25.602645+00:00",
+      "file": {
+        "bytes": 19387,
+        "sha256": "7afe584173c1f95adcc4a18c004cf275c1ca045ca117c34912c433b0c636f418",
+        "privateArchiveId": "m31-filter-literature-2026-10-17",
+        "archiveRelativePath": "sources/pion-complete-publications.html"
+      },
+      "responseHeaders": {
+        "bytes": 177,
+        "sha256": "47f7aa6d692a850a0bc89b3c97644071fb5829d328602883c126c9486c9cce7a",
+        "privateArchiveId": "m31-filter-literature-2026-10-17",
+        "archiveRelativePath": "sources/pion-complete-publications.html.headers"
+      },
+      "usedForTechnicalClaims": false
+    },
+    {
+      "requestedUrl": "https://api.crossref.org/works?query.title=Interval%20arithmetic%20yields%20efficient%20dynamic%20filters%20for%20computational%20geometry&rows=3",
+      "effectiveUrl": "https://api.crossref.org/works?query.title=Interval%20arithmetic%20yields%20efficient%20dynamic%20filters%20for%20computational%20geometry&rows=3",
+      "httpStatus": 200,
+      "curlSslVerifyResult": 0,
+      "retrievedApproxUtcFromLocalFileMtime": "2026-10-16T20:24:53.273210+00:00",
+      "file": {
+        "bytes": 28794,
+        "sha256": "906e124c530fb1e94bed65438c03a4e5b63b8fc204372ba8903dacfe2a3f0db5",
+        "privateArchiveId": "m31-filter-literature-2026-10-17",
+        "archiveRelativePath": "sources/interval-crossref.json"
+      },
+      "responseHeaders": {
+        "bytes": 508,
+        "sha256": "45a105d594616f51b050a01ae0722b987cf8be4e0765b745039773e92697bb82",
+        "privateArchiveId": "m31-filter-literature-2026-10-17",
+        "archiveRelativePath": "sources/interval-crossref.json.headers"
+      },
+      "usedForTechnicalClaims": false
+    },
+    {
+      "requestedUrl": "https://inria.hal.science/inria-00344281/document",
+      "effectiveUrl": "https://inria.hal.science/inria-00344281/document",
+      "httpStatus": 200,
+      "curlSslVerifyResult": 0,
+      "retrievedApproxUtcFromLocalFileMtime": "2026-10-16T20:25:47.070867+00:00",
+      "file": {
+        "bytes": 268047,
+        "sha256": "6a0511c0dc2a3750ceb72e6fa844266c23ade8bf10bf158a288107eb538e864a",
+        "privateArchiveId": "m31-filter-literature-2026-10-17",
+        "archiveRelativePath": "sources/interval-journal.pdf"
+      },
+      "responseHeaders": {
+        "bytes": 643,
+        "sha256": "f49e11f5a54727148ac5d26ec3416b7558cdd042faa01398633550bd15b82c01",
+        "privateArchiveId": "m31-filter-literature-2026-10-17",
+        "archiveRelativePath": "sources/interval-journal.pdf.headers"
+      },
+      "usedForTechnicalClaims": true
+    },
+    {
+      "requestedUrl": "https://inria.hal.science/inria-00344281",
+      "effectiveUrl": "https://inria.hal.science/inria-00344281",
+      "httpStatus": 200,
+      "curlSslVerifyResult": 0,
+      "retrievedApproxUtcFromLocalFileMtime": "2026-10-16T20:25:47.255145+00:00",
+      "file": {
+        "bytes": 97645,
+        "sha256": "5069f2533713085d369b684b12e1e20fe77cbceb4bff5a8f4e75472a0c8a01fd",
+        "privateArchiveId": "m31-filter-literature-2026-10-17",
+        "archiveRelativePath": "sources/interval-hal.html"
+      },
+      "responseHeaders": {
+        "bytes": 1235,
+        "sha256": "73471cf7856e238b5e5a201d430f5148ff35e6f124ed33c309b1bd2bd323f400",
+        "privateArchiveId": "m31-filter-literature-2026-10-17",
+        "archiveRelativePath": "sources/interval-hal.html.headers"
+      },
+      "usedForTechnicalClaims": false
+    },
+    {
+      "requestedUrl": "https://inria.hal.science/inria-00344376/document",
+      "effectiveUrl": "https://inria.hal.science/inria-00344376/document",
+      "httpStatus": 200,
+      "curlSslVerifyResult": 0,
+      "retrievedApproxUtcFromLocalFileMtime": "2026-10-16T20:25:47.034414+00:00",
+      "file": {
+        "bytes": 277103,
+        "sha256": "df06b6da4f00a5be16e922efd1b53d89b55e3547a00a19fa7f3ab55f30b1edc4",
+        "privateArchiveId": "m31-filter-literature-2026-10-17",
+        "archiveRelativePath": "sources/formal-filter.pdf"
+      },
+      "responseHeaders": {
+        "bytes": 639,
+        "sha256": "9b72c3c134b8e819cdb69af2318c4c73488d738b64c4bffefa4a29887ed7c0fb",
+        "privateArchiveId": "m31-filter-literature-2026-10-17",
+        "archiveRelativePath": "sources/formal-filter.pdf.headers"
+      },
+      "usedForTechnicalClaims": true
+    },
+    {
+      "requestedUrl": "https://api.crossref.org/works?query.title=Formally%20certified%20floating-point%20filters%20for%20homogeneous%20geometric%20predicates&rows=1",
+      "effectiveUrl": "https://api.crossref.org/works?query.title=Formally%20certified%20floating-point%20filters%20for%20homogeneous%20geometric%20predicates&rows=1",
+      "httpStatus": 200,
+      "curlSslVerifyResult": 0,
+      "retrievedApproxUtcFromLocalFileMtime": "2026-10-16T20:25:46.921810+00:00",
+      "file": {
+        "bytes": 4583,
+        "sha256": "2c634f1aa61c79c08fd9189905fc7467b6fcb595a320a686437b16d884dc15a3",
+        "privateArchiveId": "m31-filter-literature-2026-10-17",
+        "archiveRelativePath": "sources/formal-filter-crossref.json"
+      },
+      "responseHeaders": {
+        "bytes": 508,
+        "sha256": "140155ebad5486891a51e698079f13210f01e21e62bc00724a93188a2c2f9a7e",
+        "privateArchiveId": "m31-filter-literature-2026-10-17",
+        "archiveRelativePath": "sources/formal-filter-crossref.json.headers"
+      },
+      "usedForTechnicalClaims": false
+    },
+    {
+      "requestedUrl": "https://inria.hal.science/inria-00344376",
+      "effectiveUrl": "https://inria.hal.science/inria-00344376",
+      "httpStatus": 200,
+      "curlSslVerifyResult": 0,
+      "retrievedApproxUtcFromLocalFileMtime": "2026-10-16T20:26:39.508618+00:00",
+      "file": {
+        "bytes": 105044,
+        "sha256": "b0034a3392d29fb3a34622bd5c9593e7c98e297d9dc96801d275fe7349dd4e87",
+        "privateArchiveId": "m31-filter-literature-2026-10-17",
+        "archiveRelativePath": "sources/formal-hal.html"
+      },
+      "responseHeaders": {
+        "bytes": 1235,
+        "sha256": "da3eb998374c3f0b32b8c1eab3dc6f6391f280aaa1fcdad5b7d4f79d3f713f0b",
+        "privateArchiveId": "m31-filter-literature-2026-10-17",
+        "archiveRelativePath": "sources/formal-hal.html.headers"
+      },
+      "usedForTechnicalClaims": false
+    },
+    {
+      "requestedUrl": "https://www.mpfr.org/mpfr-current/mpfr.html",
+      "effectiveUrl": "https://www.mpfr.org/mpfr-current/mpfr.html",
+      "httpStatus": 200,
+      "curlSslVerifyResult": 0,
+      "retrievedApproxUtcFromLocalFileMtime": "2026-10-16T20:25:24.477010+00:00",
+      "file": {
+        "bytes": 562991,
+        "sha256": "ee996f3dcc11d1f88393da162bdd90c3fa29191ca658c0fc594ffd38a22638bc",
+        "privateArchiveId": "m31-filter-literature-2026-10-17",
+        "archiveRelativePath": "sources/mpfr-manual.html"
+      },
+      "responseHeaders": {
+        "bytes": 366,
+        "sha256": "612b5d3014b76b397370c35cc2312761f4b6c0cfa107594fcdee18ad3190e7c0",
+        "privateArchiveId": "m31-filter-literature-2026-10-17",
+        "archiveRelativePath": "sources/mpfr-manual.html.headers"
+      },
+      "usedForTechnicalClaims": true
+    },
+    {
+      "requestedUrl": "https://www.mpfr.org/mpfr-4.2.2/",
+      "effectiveUrl": "https://www.mpfr.org/mpfr-4.2.2/",
+      "httpStatus": 200,
+      "curlSslVerifyResult": 0,
+      "retrievedApproxUtcFromLocalFileMtime": "2026-10-16T20:26:38.317628+00:00",
+      "file": {
+        "bytes": 7752,
+        "sha256": "2bf0316537972ba065f01c1f65c947011ae59e38cb77868469ffd9b6b1bf9bf2",
+        "privateArchiveId": "m31-filter-literature-2026-10-17",
+        "archiveRelativePath": "sources/mpfr-version.html"
+      },
+      "responseHeaders": {
+        "bytes": 363,
+        "sha256": "88fbb90a175101c9ea5d5a7debb923dc7e19c5c4d1d5fe10d607ba7524debaea",
+        "privateArchiveId": "m31-filter-literature-2026-10-17",
+        "archiveRelativePath": "sources/mpfr-version.html.headers"
+      },
+      "usedForTechnicalClaims": false
+    },
+    {
+      "requestedUrl": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html",
+      "effectiveUrl": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html",
+      "httpStatus": 200,
+      "curlSslVerifyResult": 0,
+      "retrievedApproxUtcFromLocalFileMtime": "2026-10-16T20:26:39.549486+00:00",
+      "file": {
+        "bytes": 923635,
+        "sha256": "b475951bd28978cbe617033904b499895ddfc594b4549610ad9470b4b32749ac",
+        "privateArchiveId": "m31-filter-literature-2026-10-17",
+        "archiveRelativePath": "sources/ecma-types.html"
+      },
+      "responseHeaders": {
+        "bytes": 662,
+        "sha256": "a66d5264f55bf8bf27b2471816ff7ce497295a8f3c45a030235bc11e7cd5d54f",
+        "privateArchiveId": "m31-filter-literature-2026-10-17",
+        "archiveRelativePath": "sources/ecma-types.html.headers"
+      },
+      "usedForTechnicalClaims": true
+    }
+  ],
+  "failedOrNonEvidenceAccesses": [
+    {
+      "tool": "search_service.web_run",
+      "outcome": "transport failed before search results; no snippet claims"
+    },
+    {
+      "url": "https://www.cs.cmu.edu/~quake/robust.html",
+      "outcome": "initial sandboxed curl DNS failure, then authorized direct HTTPS succeeded"
+    },
+    {
+      "url": "https://doc.cgal.org/latest/Number_types/classCGAL_1_1Interval__nt.html",
+      "httpStatus": 403,
+      "outcome": "not used"
+    },
+    {
+      "url": "https://www.rairo-ita.org/10.1051/ita:2007005/pdf",
+      "httpStatus": 403,
+      "outcome": "publisher bytes not verified; author manuscript used"
+    }
+  ],
+  "documentOperations": {
+    "extraction": "Bundled pypdf plus Python HTMLParser; no external package installation",
+    "visualReview": "Shewchuk PDF p.7 using Poppler; BBP PDF pp.6–7 and MP PDF p.5 using bundled PDFium. Formulas visually checked.",
+    "renderingIncident": "A multi-page Poppler command stalled after first page and was interrupted; remaining pages rendered with already bundled PDFium. No scientific code involved."
+  },
+  "sourceInventory": [
+    {
+      "bytes": 235,
+      "sha256": "f276d11b526e38a9b249e6b63641a53c4b63129d82e9aa294acbff876aa439b7",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/cgal-interval.html.headers"
+    },
+    {
+      "bytes": 923635,
+      "sha256": "b475951bd28978cbe617033904b499895ddfc594b4549610ad9470b4b32749ac",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/ecma-types.html"
+    },
+    {
+      "bytes": 662,
+      "sha256": "a66d5264f55bf8bf27b2471816ff7ce497295a8f3c45a030235bc11e7cd5d54f",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/ecma-types.html.headers"
+    },
+    {
+      "bytes": 235765,
+      "sha256": "695c234de1cb9af2950aa98209093a85adf82cb0e070ce5c8b86c7dfdc9095eb",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/ecma-types.txt"
+    },
+    {
+      "bytes": 4583,
+      "sha256": "2c634f1aa61c79c08fd9189905fc7467b6fcb595a320a686437b16d884dc15a3",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/formal-filter-crossref.json"
+    },
+    {
+      "bytes": 508,
+      "sha256": "140155ebad5486891a51e698079f13210f01e21e62bc00724a93188a2c2f9a7e",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/formal-filter-crossref.json.headers"
+    },
+    {
+      "bytes": 277103,
+      "sha256": "df06b6da4f00a5be16e922efd1b53d89b55e3547a00a19fa7f3ab55f30b1edc4",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/formal-filter.pdf"
+    },
+    {
+      "bytes": 639,
+      "sha256": "9b72c3c134b8e819cdb69af2318c4c73488d738b64c4bffefa4a29887ed7c0fb",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/formal-filter.pdf.headers"
+    },
+    {
+      "bytes": 31739,
+      "sha256": "5214569466f806627f02b08025fdf9518409515efb858fe8c720793a32450a98",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/formal-filter.txt"
+    },
+    {
+      "bytes": 105044,
+      "sha256": "b0034a3392d29fb3a34622bd5c9593e7c98e297d9dc96801d275fe7349dd4e87",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/formal-hal.html"
+    },
+    {
+      "bytes": 1235,
+      "sha256": "da3eb998374c3f0b32b8c1eab3dc6f6391f280aaa1fcdad5b7d4f79d3f713f0b",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/formal-hal.html.headers"
+    },
+    {
+      "bytes": 34766,
+      "sha256": "c38af3f4b147ece1b78929497fe5e38a04525578c254af28ef3659de1e03b55a",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/formal-hal.txt"
+    },
+    {
+      "bytes": 914,
+      "sha256": "9195f88c7722777aac4146a4b32ed31f457a5cbe864365028e9570aa14cca4bf",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/formal-publisher.pdf.headers"
+    },
+    {
+      "bytes": 28794,
+      "sha256": "906e124c530fb1e94bed65438c03a4e5b63b8fc204372ba8903dacfe2a3f0db5",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/interval-crossref.json"
+    },
+    {
+      "bytes": 508,
+      "sha256": "45a105d594616f51b050a01ae0722b987cf8be4e0765b745039773e92697bb82",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/interval-crossref.json.headers"
+    },
+    {
+      "bytes": 97645,
+      "sha256": "5069f2533713085d369b684b12e1e20fe77cbceb4bff5a8f4e75472a0c8a01fd",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/interval-hal.html"
+    },
+    {
+      "bytes": 1235,
+      "sha256": "73471cf7856e238b5e5a201d430f5148ff35e6f124ed33c309b1bd2bd323f400",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/interval-hal.html.headers"
+    },
+    {
+      "bytes": 33027,
+      "sha256": "d6f88204de7213bd06b7c51a6f31d227745b82e33bdb43645a86d570c73363d9",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/interval-hal.txt"
+    },
+    {
+      "bytes": 268047,
+      "sha256": "6a0511c0dc2a3750ceb72e6fa844266c23ade8bf10bf158a288107eb538e864a",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/interval-journal.pdf"
+    },
+    {
+      "bytes": 643,
+      "sha256": "f49e11f5a54727148ac5d26ec3416b7558cdd042faa01398633550bd15b82c01",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/interval-journal.pdf.headers"
+    },
+    {
+      "bytes": 61725,
+      "sha256": "52be34c99feed8f53613254fc39966078f484ab3b37bad25e377a9e973cede2e",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/interval-journal.txt"
+    },
+    {
+      "bytes": 562991,
+      "sha256": "ee996f3dcc11d1f88393da162bdd90c3fa29191ca658c0fc594ffd38a22638bc",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/mpfr-manual.html"
+    },
+    {
+      "bytes": 366,
+      "sha256": "612b5d3014b76b397370c35cc2312761f4b6c0cfa107594fcdee18ad3190e7c0",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/mpfr-manual.html.headers"
+    },
+    {
+      "bytes": 224156,
+      "sha256": "0d7bcfcee746db07f6a159fd1d19a5ad065ce830b913c53413b1d263e66e2e61",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/mpfr-manual.txt"
+    },
+    {
+      "bytes": 7752,
+      "sha256": "2bf0316537972ba065f01c1f65c947011ae59e38cb77868469ffd9b6b1bf9bf2",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/mpfr-version.html"
+    },
+    {
+      "bytes": 363,
+      "sha256": "88fbb90a175101c9ea5d5a7debb923dc7e19c5c4d1d5fe10d607ba7524debaea",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/mpfr-version.html.headers"
+    },
+    {
+      "bytes": 3554,
+      "sha256": "d471bf9b2c8c448a2bd9ca6ed8fb2b113c8d370fb0c6c83d45b69ebbf1d45fa0",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/mpfr-version.txt"
+    },
+    {
+      "bytes": 19387,
+      "sha256": "7afe584173c1f95adcc4a18c004cf275c1ca045ca117c34912c433b0c636f418",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/pion-complete-publications.html"
+    },
+    {
+      "bytes": 177,
+      "sha256": "47f7aa6d692a850a0bc89b3c97644071fb5829d328602883c126c9486c9cce7a",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/pion-complete-publications.html.headers"
+    },
+    {
+      "bytes": 12030,
+      "sha256": "072871d25709b0f70f32d975d5c933b8ffe7564fcdc5ccea011310ab53902110",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/pion-home.html"
+    },
+    {
+      "bytes": 250,
+      "sha256": "4631afd27e97e53bdb60cd3556580f970d6cd7ec4f835efb579f0aee7376ab78",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/pion-home.html.headers"
+    },
+    {
+      "bytes": 1326,
+      "sha256": "2e52890305bd05a3fb14fe12e4a07e9cc40247c11d8ca90203139c8d86946450",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/pion-publications.headers"
+    },
+    {
+      "bytes": 59176,
+      "sha256": "44962668b5321cdb6c8317f7b1d084cdb0a8685bddc7b3743c849aa364d04d11",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/pion-publications.html"
+    },
+    {
+      "bytes": 176827,
+      "sha256": "610414b0b485f2468c7fee4e5009dea72362ed319ea02e92270cdb2f5ea9eb2d",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/renders/formal-filter-page-5.png"
+    },
+    {
+      "bytes": 189818,
+      "sha256": "91112c618e79f44df428bdcfab39fff862860ae50c6e8fb734b3e3a91a756955",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/renders/interval-journal-page-6.png"
+    },
+    {
+      "bytes": 220594,
+      "sha256": "6176c0be7e50c04cde554aa7b254d2d7b9e73fe7bb120d372d585d08040839a3",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/renders/interval-journal-page-7.png"
+    },
+    {
+      "bytes": 313872,
+      "sha256": "ba627153361b2e63b350339b55872403fbc4dd58a1a990592cb77ed78ea38aaf",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/renders/shewchuk-long-page-7.png"
+    },
+    {
+      "bytes": 2368,
+      "sha256": "f3794b10f125fcab791318aba0e1bb136f7737ed4d651f72018e9f0a1670dfd5",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/shewchuk-crossref.json"
+    },
+    {
+      "bytes": 508,
+      "sha256": "61909480af892228873bcec921b2be653efbe5efe775835a04638f37f352fffb",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/shewchuk-crossref.json.headers"
+    },
+    {
+      "bytes": 556447,
+      "sha256": "5f047fd41666e53f6015497f68e42152e3a9d8d04556ab27f8b6fc92c74117d7",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/shewchuk-long.pdf"
+    },
+    {
+      "bytes": 238,
+      "sha256": "8cb0adb13b5881464912b0db3c65cf1c99f6f566172345655a42ee848cdb1ed5",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/shewchuk-long.pdf.headers"
+    },
+    {
+      "bytes": 174874,
+      "sha256": "74a7e2c1cd0f7c0b6389b72466dfeef4ab08710cee9c7978d8646b626a3f2b0a",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/shewchuk-long.txt"
+    },
+    {
+      "bytes": 3521,
+      "sha256": "f21ef0a159b812ffc30fcf71a39e08bf2a67d64a4cf365cfa9d0612692727f95",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/shewchuk-pc.html"
+    },
+    {
+      "bytes": 398,
+      "sha256": "165dd8096872c9c2546c9931d1b964cda8baf4ca341e4b341803c7cef34dfdd1",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/shewchuk-pc.html.headers"
+    },
+    {
+      "bytes": 398,
+      "sha256": "a2fd26adb8d533ec2827b6027ad22622c9559863ac89907e07a4c7b2fbb49e0e",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/shewchuk-robust-page.headers"
+    },
+    {
+      "bytes": 6595,
+      "sha256": "4827cc14a20b83b658127bd331ee560c3f10bb8b389c3374188d1e7b95d3e9ce",
+      "privateArchiveId": "m31-filter-literature-2026-10-17",
+      "archiveRelativePath": "sources/shewchuk-robust-page.html"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "research/m31-filter-design-2026-10-17/review/literature/LITERATURE.md",
+      "bytes": 14345,
+      "sha256": "e7856bbb5f5a1caa2d8994ee02eedcb73aabc97f06e85badf59a4d57560a8e36"
+    },
+    {
+      "path": "research/m31-filter-design-2026-10-17/review/literature/bibliography.json",
+      "bytes": 12386,
+      "sha256": "2e63972dbda81e3d007e5ba9ec442de91f0fbe3dfe8daa92a4ecc032e7f32e7d"
+    }
+  ],
+  "experiments": [],
+  "numericalExecutions": 0,
+  "notPerformed": [
+    "scientific source imports",
+    "numerical primitive tests",
+    "candidate/checker runs",
+    "old-suite reruns",
+    "benchmarking",
+    "installations",
+    "paid-service use",
+    "closed-package edits",
+    "new-agent creation"
+  ],
+  "nextGate": "Prospective source proof/review and independently bounded correctness allocation; no performance conclusion or automatic authorization implied.",
+  "privacy": {
+    "sourceAssetsPublished": false,
+    "privateArchiveId": "m31-filter-literature-2026-10-17",
+    "preservedOriginals": true,
+    "sourceAssetsMovedBeforePublication": true,
+    "publicRecords": "URLs, hashes, brief quotations and bibliography only; no absolute private paths, full text, response headers, renders or author contact data."
+  }
+}

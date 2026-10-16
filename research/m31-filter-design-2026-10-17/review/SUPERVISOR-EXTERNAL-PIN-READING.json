@@ -1,0 +1,82 @@
+{
+  "schema": "m31-filter-design-supervisor-pin-reading-v1",
+  "reviewer": "m31_verified_literature",
+  "createdUtc": "2026-10-16T20:51:14.117914+00:00",
+  "inheritedReadCap": 12,
+  "inheritedDistinctPathsReadCumulative": 4,
+  "inheritedCapSatisfied": true,
+  "priorInventory": {
+    "path": "research/m31-filter-design-2026-10-17/review/SUPERVISOR-ADAPTATION-READING.json",
+    "bytes": 3206,
+    "sha256": "4dbca80e78dd2f429cd6974606b026e5146c5038259cfea3add8273ec25eb433"
+  },
+  "inheritedInputsCumulative": [
+    {
+      "path": "research/m31-screening-cost-2026-10-17/source/pair-prepared.cjs",
+      "bytes": 3357,
+      "sha256": "e963362c4b095196b5cc0bcc67c1b613f28c4d6a5e5d5e15101a4f847a61ff56",
+      "readScope": "full text only; branch-order obligations"
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/source/interval.cjs",
+      "bytes": 2815,
+      "sha256": "73f5afce4dbc2551535127abeaa96d2e6389073e898f9b9dcc70a977ff19ded3",
+      "readScope": "full text only; exact fallback precision/range distinction"
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/source/supervise.py",
+      "bytes": 20249,
+      "sha256": "053cc97e59830b838d95d73474b8eb597c4b23c1b6783f2555d4db79b9149868",
+      "readScope": "full source text, adaptation; AST only for new output"
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/source/guardian.py",
+      "bytes": 1892,
+      "sha256": "5c97c5a23556120226fab52955e427144d8ae69beb685e18d667bc6b66e1717a",
+      "readScope": "full source text, deadline-only adaptation; AST only for new output"
+    }
+  ],
+  "currentCycleInputs": [
+    {
+      "path": "research/m31-filter-design-2026-10-17/prefreeze/supervise-before-external-pin-review.py",
+      "bytes": 19472,
+      "sha256": "751d16ffb2c893dca2da01cc8ade35a8b31cd7324e3177f33b41c9cb2fcb5520",
+      "readScope": "current-cycle authored source snapshot/diff"
+    },
+    {
+      "path": "research/m31-filter-design-2026-10-17/prefreeze/supervise-before-checker-helper-pin.py",
+      "bytes": 19699,
+      "sha256": "fbfee616177a8079d5c5dd7e8d321db1c7c7d51f5df7bbfca1b453660f5c72b7",
+      "readScope": "current-cycle authored source snapshot/diff"
+    }
+  ],
+  "currentAuthoredFiles": [
+    {
+      "path": "research/m31-filter-design-2026-10-17/source/supervise.py",
+      "bytes": 19730,
+      "sha256": "a09af9c14853fc1440440e25c443163594bafed7f6257b8194ae3fb8208cdf7d"
+    },
+    {
+      "path": "research/m31-filter-design-2026-10-17/source/guardian.py",
+      "bytes": 1890,
+      "sha256": "b3d6be72fccd56be18d7cd2b59e0ff87aac0442eebf8470c8b7308eb853732de"
+    },
+    {
+      "path": "research/m31-filter-design-2026-10-17/review/SUPERVISOR-EXTERNAL-PIN-ADDENDUM.md",
+      "bytes": 1463,
+      "sha256": "1b6991e417904f25234b101d93bfea58cc1090c5907629b0d5c982ec4d096262"
+    }
+  ],
+  "validation": [
+    "AST parse only",
+    "required local and external pin-set reconciliation",
+    "source diff communicated to independent reviewer"
+  ],
+  "notPerformed": [
+    "imports",
+    "scientific runs",
+    "supervisor/guardian execution",
+    "old-suite reruns"
+  ],
+  "nextGate": "Independent containment acceptance and new checker import/semantic source review."
+}

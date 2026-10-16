@@ -1,0 +1,82 @@
+{
+  "schema": "m31-filter-design-supervisor-reading-v1",
+  "reviewer": "m31_verified_literature",
+  "createdUtc": "2026-10-16T20:48:28.021955+00:00",
+  "inheritedReadCap": 12,
+  "inheritedDistinctPathsReadCumulative": 4,
+  "inheritedCapSatisfied": true,
+  "priorInventory": {
+    "path": "research/m31-filter-design-2026-10-17/review/literature/literature-experiment-ledger.json",
+    "bytes": 29612,
+    "sha256": "8ba3ffd312c188c636e219968beb8b00bacbe17e39bf5b08794799e1c1aa6718"
+  },
+  "inheritedInputsCumulative": [
+    {
+      "path": "research/m31-screening-cost-2026-10-17/source/pair-prepared.cjs",
+      "bytes": 3357,
+      "sha256": "e963362c4b095196b5cc0bcc67c1b613f28c4d6a5e5d5e15101a4f847a61ff56",
+      "readScope": "full text only; branch-order obligations"
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/source/interval.cjs",
+      "bytes": 2815,
+      "sha256": "73f5afce4dbc2551535127abeaa96d2e6389073e898f9b9dcc70a977ff19ded3",
+      "readScope": "full text only; exact fallback precision/range distinction"
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/source/supervise.py",
+      "bytes": 20249,
+      "sha256": "053cc97e59830b838d95d73474b8eb597c4b23c1b6783f2555d4db79b9149868",
+      "readScope": "full source text, adaptation; AST only for new output"
+    },
+    {
+      "path": "research/m31-screening-cost-2026-10-17/source/guardian.py",
+      "bytes": 1892,
+      "sha256": "5c97c5a23556120226fab52955e427144d8ae69beb685e18d667bc6b66e1717a",
+      "readScope": "full source text, deadline-only adaptation; AST only for new output"
+    }
+  ],
+  "currentCycleInputs": [
+    {
+      "path": "research/m31-filter-design-2026-10-17/source/run.cjs",
+      "bytes": 4323,
+      "sha256": "2ce652e43efda4f698ef456e5229e608e9cee26da8a646dc686b1601bbee4536",
+      "readScope": "require/import and baseline path lines only"
+    },
+    {
+      "path": "research/m31-filter-design-2026-10-17/source/zero-filter.cjs",
+      "bytes": 3003,
+      "sha256": "d755b78fb774cab645e254316318bd86d95c2869e8d7682a8ed4a927968f0d88",
+      "readScope": "require/import and baseline path lines only"
+    }
+  ],
+  "authoredFiles": [
+    {
+      "path": "research/m31-filter-design-2026-10-17/source/supervise.py",
+      "bytes": 19472,
+      "sha256": "751d16ffb2c893dca2da01cc8ade35a8b31cd7324e3177f33b41c9cb2fcb5520"
+    },
+    {
+      "path": "research/m31-filter-design-2026-10-17/source/guardian.py",
+      "bytes": 1890,
+      "sha256": "b3d6be72fccd56be18d7cd2b59e0ff87aac0442eebf8470c8b7308eb853732de"
+    },
+    {
+      "path": "research/m31-filter-design-2026-10-17/review/SUPERVISOR-ADAPTATION.md",
+      "bytes": 3005,
+      "sha256": "faed32fe88c10c43a0f5d99f2370d04023cb9611bf8291b2873c01aaf6f9238a"
+    }
+  ],
+  "validation": [
+    "AST parse of supervisor",
+    "AST parse of guardian",
+    "full source reading and output-name/cap/lifecycle reconciliation"
+  ],
+  "notPerformed": [
+    "scientific imports or execution",
+    "supervisor or guardian execution",
+    "syntax checks that import code",
+    "numerical tests or old-suite reruns"
+  ],
+  "nextGate": "Another existing agent independently reviews source before freeze and allocation."
+}
