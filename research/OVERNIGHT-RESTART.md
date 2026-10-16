@@ -1,3 +1,9 @@
+# Latest completed checkpoint: conservative scalar filter
+
+Read [verified restart](publication-receipts/m31-filter-restart-2026-10-17.md) and [milestone summary](m31-filter-design-2026-10-17/MILESTONE-SUMMARY.md). Result c1afe65dc2a458086b8993e50a940c479fb08f9b is publicly verified. Scientific and display allocations are closed; do not rerun. Next is a fresh prospective total-cost comparison. Broader goal remains active; keep localhost8876 running.
+
+---
+
 # Latest completed checkpoint: three-process Chrome confirmation
 
 `m31-browser-screen-2026-10-16/` is scientifically closed. The single generation, Chrome campaign, saved reviewer and metadata seal all qualified. Final decision: `qualified-finite-chrome-center-screen`. All six N5000 case × process cells pass the fixed rule, median paired F/L 0.7411–0.8048, with four lost large-case pairs preserved. All three contextual N1000 cells miss the benefit rule. F large-case medians remain 366–396 ms per complete interaction query, excluding flight/render/transport.
