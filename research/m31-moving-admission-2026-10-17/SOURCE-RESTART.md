@@ -1,0 +1,3 @@
+# Source-stage restart
+
+No result exists at source freeze. Read SOURCE-DECISION.md, PROTOCOL.md and REPRODUCIBILITY.md. Retrieve the exact public source manifest and verify all local/Git pins before creating source-publication.json. Keep HEAD equal to the verified source commit until both scientific stages close. Permanent attempt markers prohibit repetition. Existing markers/results always take precedence over this historical pre-execution note. Scientific launch cutoff2026-10-16T23:00:00Z. After closure, save a results-specific RESTART.md and Three.js replay, independent saved-evidence reviews and public verification receipt. Overall research goal remains open.

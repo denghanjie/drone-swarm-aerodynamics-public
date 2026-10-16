@@ -1,0 +1,348 @@
+{
+  "schema": "m31-moving-admission-contract-v1",
+  "allocation": {
+    "controls": [
+      "positive",
+      "distant-zero",
+      "raw-force",
+      "order-incompatible"
+    ],
+    "runs": [
+      "run-a",
+      "run-b"
+    ],
+    "scheduled": [
+      "run-a-t0",
+      "run-a-t5",
+      "run-a-t10",
+      "run-b-t0",
+      "run-b-t5",
+      "run-b-t10"
+    ],
+    "denominator": 6,
+    "method": "filtered",
+    "retries": 0,
+    "scheduledQueriesAfterBothGenerationFiles": true
+  },
+  "encoding": {
+    "scientific": "ASCII strings, booleans, null and safe JSON integers only; scientific state is 17 lowercase 16-hex binary64 words per stable ID",
+    "diagnostics": "finite native JSON numbers; negativeZero/nonfinite/undefined explicit marker objects; no raw NaN or Infinity",
+    "artifactLayout": "recursive sorted object keys, compact separators, one trailing LF; decimals checked without Python reserialization",
+    "inputDigestDomain": "m31-moving-admission/input/v1",
+    "inputDigestEnvelope": [
+      "domain",
+      "id",
+      "input"
+    ],
+    "inputDigestNewline": false
+  },
+  "schemas": {
+    "index": "m31-moving-admission-index-v1",
+    "generation": "m31-moving-admission-generation-v1",
+    "journal": "m31-moving-admission-journal-v1",
+    "check": "m31-moving-admission-check-v1",
+    "reference": "m31-moving-admission-reference-v1"
+  },
+  "fields": {
+    "index": [
+      "schema",
+      "configId",
+      "configSha256",
+      "sourceManifestSha256",
+      "sourceCommit",
+      "runtime",
+      "sourceSha256",
+      "constants",
+      "controls",
+      "generations",
+      "scheduled",
+      "completion",
+      "error"
+    ],
+    "record": [
+      "id",
+      "kind",
+      "input",
+      "method",
+      "error"
+    ],
+    "descriptor": [
+      "id",
+      "kind",
+      "path",
+      "bytes",
+      "sha256",
+      "inputSha256",
+      "capture",
+      "call"
+    ],
+    "call": [
+      "sequence",
+      "startNs",
+      "endNs",
+      "totalNs",
+      "phases"
+    ],
+    "generation": [
+      "schema",
+      "configId",
+      "configSha256",
+      "sourceManifestSha256",
+      "sourceCommit",
+      "runtime",
+      "id",
+      "seed",
+      "requested",
+      "generatorOptions",
+      "generatorSource",
+      "initial",
+      "final",
+      "frames",
+      "slots",
+      "terminal",
+      "callbacks",
+      "runSummary",
+      "error"
+    ],
+    "generationDescriptor": [
+      "id",
+      "path",
+      "bytes",
+      "sha256",
+      "seed",
+      "status",
+      "frameCount",
+      "reachedTimes",
+      "missingTimes",
+      "error"
+    ],
+    "scheduled": [
+      "id",
+      "runId",
+      "t",
+      "status",
+      "reason",
+      "generationSha256",
+      "inputSha256",
+      "record"
+    ],
+    "completion": [
+      "status",
+      "stage",
+      "methodCalls",
+      "generationRuns",
+      "reachedScheduled",
+      "missingScheduled"
+    ],
+    "runtime": [
+      "node",
+      "platform",
+      "arch",
+      "executableSha256"
+    ],
+    "journal": [
+      "schema",
+      "sequence",
+      "type",
+      "payload"
+    ]
+  },
+  "wireInterface": "review/RUNNER-INTERFACE.md",
+  "scheduledStates": [
+    "not-generated",
+    "reached-not-evaluated",
+    "evaluated",
+    "error",
+    "not-reached"
+  ],
+  "completeAcceptedScheduledStates": [
+    "evaluated",
+    "not-reached"
+  ],
+  "referencePaths": [
+    "results/reference/positive.json",
+    "results/reference/distant-zero.json",
+    "results/reference/raw-force.json",
+    "results/reference/order-incompatible.json",
+    "results/reference/run-a-t0.json",
+    "results/reference/run-a-t5.json",
+    "results/reference/run-a-t10.json",
+    "results/reference/run-b-t0.json",
+    "results/reference/run-b-t5.json",
+    "results/reference/run-b-t10.json"
+  ],
+  "bounds": {
+    "sceneBytes": 33554432,
+    "generationBytes": 8388608,
+    "indexBytes": 2097152,
+    "journalBytes": 4194304,
+    "journalLineBytes": 65536,
+    "kernelScientificBytes": 201326592,
+    "checkerBytes": 67108864,
+    "checkerReportBytes": 2097152,
+    "totalScientificBytes": 268435456,
+    "metadataLogBytes": 16777216,
+    "combinedBytes": 285212672,
+    "corruptionWitnessBytes": 65536
+  },
+  "independentValidation": {
+    "helperPins": {
+      "pair-reference.py": "845f52cf350a09d2043934dff3e797a7b7416f4ef5c64beb716104bcd74f38f0",
+      "semantic-reference.py": "ee77aab09109d3fba898555dacc4509312813caae4116bb3e1063efd88e3ad2c"
+    },
+    "rawAdapter": "The helper argument to unchanged regenerate_scene delegates literal to parse_bits; original helper function globals and copied source bytes remain unchanged.",
+    "filterWrapper": "Validate full filterZeros and all work before shallow hierarchy metadata projection; filterPrepared=0 on globalInvalid.",
+    "pairScope": "Every logical nonself rotor/source pair when preparation valid; no pair or graph evaluation is claimed for global preparation refusal.",
+    "graph": "Only all zero/positive pair statuses establish resolved graph. Exact vehicle edges source->receiver, DFS cycle witness, independent rank witness. Rejected or undecidable pair leaves graph unknown.",
+    "refusal": "Known canonical independently checked model rejection may pass integrity. Reference-undecidable, unvalidated numerical refusal or status gap fails integrity.",
+    "sourceTrust": "Fresh raw input binding and exact helper algebra; simulator source and capture provenance checked, trajectories not regenerated."
+  },
+  "corruptionControls": [
+    {
+      "name": "source-report-binding",
+      "failurePrefixes": [
+        "source-report-binding"
+      ]
+    },
+    {
+      "name": "altered-control-input",
+      "failurePrefixes": [
+        "fixed-control-input-binding"
+      ]
+    },
+    {
+      "name": "altered-prepared-point",
+      "failurePrefixes": [
+        "prepared-operation-graph"
+      ]
+    },
+    {
+      "name": "omitted-positive-entry",
+      "failurePrefixes": [
+        "implicit-zero-nonzero"
+      ]
+    },
+    {
+      "name": "false-zero-active-leaf",
+      "failurePrefixes": [
+        "node-zero-rule",
+        "node-zero-oracle-member"
+      ]
+    },
+    {
+      "name": "altered-positive-coefficient",
+      "failurePrefixes": [
+        "coefficient-reference-containment"
+      ]
+    },
+    {
+      "name": "false-fast-zero-positive",
+      "failurePrefixes": [
+        "filter-zero-oracle-status"
+      ]
+    },
+    {
+      "name": "wrong-fast-zero-branch",
+      "failurePrefixes": [
+        "filter-zero-oracle-branch"
+      ]
+    },
+    {
+      "name": "filter-work-mismatch",
+      "failurePrefixes": [
+        "filter-work-counter-reconstruction"
+      ]
+    },
+    {
+      "name": "raw-force-filter-prepared",
+      "failurePrefixes": [
+        "filter-work-counter-reconstruction"
+      ]
+    },
+    {
+      "name": "raw-force-refusal-status",
+      "failurePrefixes": [
+        "canonical-model-refusal"
+      ]
+    },
+    {
+      "name": "ordering-refusal-witness",
+      "failurePrefixes": [
+        "canonical-model-refusal"
+      ]
+    },
+    {
+      "name": "false-root-one",
+      "failurePrefixes": [
+        "root-defect-corollary",
+        "independent-root-containment"
+      ]
+    },
+    {
+      "name": "altered-candidate",
+      "failurePrefixes": [
+        "candidate-load-identity"
+      ]
+    },
+    {
+      "name": "false-load-box",
+      "failurePrefixes": [
+        "signed-root-load-propagation",
+        "independent-load-containment"
+      ]
+    },
+    {
+      "name": "false-error-zero",
+      "failurePrefixes": [
+        "rotor-error-full-box"
+      ]
+    },
+    {
+      "name": "missing-scheduled-slot",
+      "failurePrefixes": [
+        "scheduled-count"
+      ]
+    },
+    {
+      "name": "reordered-scheduled-slots",
+      "failurePrefixes": [
+        "scheduled-identity-order"
+      ]
+    },
+    {
+      "name": "capture-record-disagreement",
+      "failurePrefixes": [
+        "capture-record-input-disagreement"
+      ]
+    },
+    {
+      "name": "pose-capture-disagreement",
+      "failurePrefixes": [
+        "pose-capture-disagreement"
+      ]
+    }
+  ],
+  "corruptionPolicy": {
+    "count": 20,
+    "scientificWitnessSource": "positive fixed control only; raw-force/order-incompatible controls only for their refusal recipes",
+    "provenanceWitnessSource": "fixed positive raw input and run-a t0 fixed scheduled capture/pose",
+    "selection": "first canonical qualifying witness in fixed control traversal; no generated scientific fallback",
+    "missingWitness": "fail control and integrity; no substitute or rerun",
+    "clonePolicy": "one disposable deep method clone at a time",
+    "digestOrdering": "target semantic/provenance validator is invoked directly before unrelated generic digest comparisons"
+  },
+  "decisions": {
+    "passed": "all reached scheduled records independently scientifically verified, all four fixed controls and all20 targeted corruption controls pass; missing scheduled slots remain in denominator",
+    "advancement": "passed plus all6 reached, all6 independently verified and certified within every unchanged normalized1e-8 load tolerance, and both runs satisfy all nontriviality clauses",
+    "knownRefusal": "may pass integrity; always blocks all6 admission/certification advancement",
+    "unvalidated": "fail integrity and advancement, preserve distinct cause",
+    "nontriviality": "per run positive edges at>=2 times, postinitial horizontal axis squared>1e-6, each relative coordinate changes>0.001m vs drone0, changed resolved edge set vs that run initial; missing/ambiguous witness uninformative"
+  },
+  "sourceOnlyNotice": "Preparation only. No feasibility, numerical result, oracle call, generation or checker execution is represented by this file.",
+  "runtimeExpected": {
+    "node": "v24.19.0",
+    "platform": "darwin",
+    "arch": "arm64",
+    "executableSha256": "runtime-pins.json node.sha256"
+  }
+}

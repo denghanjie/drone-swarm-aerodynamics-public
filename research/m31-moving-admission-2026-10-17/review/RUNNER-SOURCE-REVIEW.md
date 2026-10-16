@@ -1,0 +1,39 @@
+# Runner source-preparation review
+
+This review inspects source only. It does not report a generated trajectory, method outcome, corruption result, numerical qualification, timing result or resource fit. No scientific module was imported or evaluated. The only runner validation command was the pinned Node executable with `--check source/run.cjs`; it returned exit0. No benchmark, probe, commit, additional generation or agent was launched.
+
+## Authored source and interface
+
+The runner was authored from the prospective protocol and the unchanged simulator's existing callback interface. It does not copy an earlier runner. Candidate scientific helpers and spec were read but not edited. The parent owns config and final formal protocol/record contract. The independent checker reviewer was sent `RUNNER-INTERFACE.md`; that reviewer need not inspect candidate implementation. Input/state rules, exact event envelopes and refusal/error distinctions are declared there.
+
+Reviewed runner pin: 24,670bytes, SHA256 `e1849f95cbd2bef9fbea1b4e45bb7f2b837bd6184711f60b2374d4e418d55460`. Wire-contract pin: 10,045bytes, SHA256 `93ae18929456129bff727ea4b2dc03ed64c67d8d5438b4a075556f2ad916c475`. Later review corrections must be pinned explicitly; this note cannot authorize mutation after source freeze.
+
+## Source trace and scientific boundaries
+
+The generator dependency closure has exactly seven files: milestone31 sim, grid, geometry, factory selector, factory-wide, wall-filter, and step02c physics. Factory selection reads `FLOCK_FACTORY_VARIANT` at import; the runner therefore sets it to `wide` before requiring sim and records that environment choice. It passes only the simulator's accepted scalar options plus its preexisting callbacks. Saved simulator config is checked for airflow off, ideal observation and factory-v1. No aerodynamic feedback is introduced into generation.
+
+The simulator calls frameSink before progress at each scored timestamp. Progress runs synchronously at0,5,10 and at an early terminal stop. Capture copies each 17component native-number state directly to binary64 words and freezes arrays immediately. Stable IDs are unchanged input indices0..63. Generated inputs never pass through the fixed-control decimal-literal loader. No rounding, attitude flattening, force substitution, normalization, pose decoding or reordered ID mapping intervenes. The unchanged physics integrator's existing quaternion renormalization remains generator behavior and is not a runner operation.
+
+Every supplied pose frame is retained at the generator's0.2s cadence, plus any off-cadence terminal. Full-state projections are checked against their same-time poses. Returned initial must equal the callback's slot0; returned final must equal the last full callback and last pose. Missing slots retain the exact simulator stop reason. Off-schedule terminal full state is diagnostic only. A programming exception saves available callbacks and poses, preserves reached slots and marks missing slots generator-error; unavailable returned initial/final/summary are null.
+
+The four fixed controls each get one filtered invocation. The positive control's three-drone count is taken from config; no two-drone assumption is embedded in the runner. Both generation files are closed, fsynced and pinned before generations-ready and before the first generated-state query. Each reached scheduled slot gets exactly one filtered invocation. The runner never requests hierarchy or a repeated/all-method race. A model rejection remains the complete method result. A thrown programming exception is a null-method error record and closes the allocation, with no conversion into scientific refusal.
+
+## Publication, resources and closure
+
+The runner's preflight uses native filesystem/path/crypto operations only. It checks the exact fixed config, cutoff, sole supervisor attempt, publication receipt, source commit/environment pins, raw manifest hash, every manifest pin, runtime executable pin and required local/generator closure before scientific imports. It rejects NODE_OPTIONS/NODE_PATH, then checks the imported CommonJS cache against the pinned allowed set. Source/runtime, attempt and publication identities are rechecked before the successful index. The supervisor supplies independent Git committed-byte and saved public-receipt gates; the runner does not perform another remote fetch.
+
+Files use exclusive creation, fsync and parent-directory fsync. Journal events are append-only, bounded and individually fsynced. Kernel accounting includes control, scene, generation, index and journal files within192MiB and reserves remaining index/journal capacity before science writes. Per-scene32MiB, per-generation8MiB, index2MiB and journal4MiB bounds are checked before writes. Synchronous time/RSS checks are additional boundaries; they do not replace supervisor process-group sampling and hard deadlines. The runner owns neither permanent kernel-attempt.json nor supervisor logs.
+
+Failure index and journal are best-effort evidence preservation. A preflight failure occurs before scientific imports and need not create a runner index. A failure after imports but before constants are available may leave constants null in its failed index. Partial I/O failure, resource exhaustion or termination may prevent complete error preservation; supervisor failure still prevents saved-checker launch. A complete-looking index alone never establishes successful lifecycle closure: the journal, child exit, source/runtime recheck and supervisor success remain required.
+
+## Independent supervisor/guardian source review
+
+Read the complete new supervisor and guardian sources, then reread the supervisor's final microsecond timestamp correction. Final reviewed supervisor:26,727bytes, SHA256 `8d23c224fd0f976552fd266ea5dac13e9fc9c7566d8694f7c23f14fab57eec27`. Guardian:2,276bytes, SHA256 `10341c52ab32fa8ff80c3909d578a7d368a3b2bcea59e78af7e8aa8f29c619f0`.
+
+No blocking mismatch was found in this static review. The supervisor requires the seven generator source pins plus package protocol, runtime and checker sources; verifies local/committed/publication evidence and runtime identity before and after; writes an exclusive permanent attempt before launch; counts kernel index/journal within192MiB and all checker evidence within64MiB; counts metadata and both raw/public logs separately within16MiB; and rejects unexpected stage files. The guardian retains process-group ownership until the supervisor observes scientific-child absence and releases it. Failed child exit, missing evidence, resource or identity failure cannot qualify saved-checker launch. Python isolated mode, cleared Node/Python preload/search variables and refused loader injection guard runtime entry. Publication/attempt ordering now preserves microseconds, preventing a same-second receipt from falsely appearing later than a truncated attempt timestamp.
+
+These are source-level checks of reviewed non-hostile children. Sampled RSS and process-table snapshots do not prove continuous peak bounds or hostile process isolation. The checker independently validates the saved structure/science; it does not rerun generation or prove physical validity. The inherited exact helper trust is disclosed, not replaced by this runner review.
+
+## Reading cap
+
+`RUNNER-READING.json` records byte/SHA pins and reading scopes. Nineteen inherited content files were read for generator/scientific closure; copied runtime-pins.json is conservatively the twentieth. Thus the20file cap is exhausted. The inherited spec was read only for its header/constants/API context and final exports; inherited fixture scenarios were not rerun. Current source-preparation config/protocol/supervisor/guardian documents are listed separately. Earlier allocation/desk-stage caps remain closed.

@@ -1,0 +1,90 @@
+{
+  "schema": "m31-moving-admission-supervisor-reading-v1",
+  "createdUtc": "2026-10-16T21:42:54.384301+00:00",
+  "reviewer": "m31_verified_literature",
+  "status": "Authorship record, not independent acceptance of own supervision code. Independent audit requested from m31_evidence_audit.",
+  "inheritedReadCap": 20,
+  "inheritedDistinctPathsRead": 4,
+  "inheritedCapSatisfied": true,
+  "inheritedInputs": [
+    {
+      "path": "research/m31-filter-cost-2026-10-17/source/supervise.py",
+      "bytes": 22023,
+      "sha256": "4d517a3515f66816b4ca74864147e63cc61aa15af0e2fc8e78aa6c640e4365cb",
+      "readScope": "Full inherited text; source adaptation, no import or execution."
+    },
+    {
+      "path": "research/m31-filter-cost-2026-10-17/source/guardian.py",
+      "bytes": 1890,
+      "sha256": "074f3e4921bf94718fd6a9eb5fec83b524d786cf445bc733946c026d4e30eed1",
+      "readScope": "Full inherited text; retained process-group lifecycle and cutoff/isolation changes, no execution."
+    },
+    {
+      "path": "research/m31-filter-cost-2026-10-17/runtime-pins.json",
+      "bytes": 248,
+      "sha256": "842b2522133ed499f4706e071b09f3d100c5f4ed3f41d0fd135736c4dc191087",
+      "readScope": "Full inherited JSON bytes; exact byte copy. No executable/version probe in this source stage."
+    },
+    {
+      "path": "research/m31-filter-cost-2026-10-17/source-publication.json",
+      "bytes": 852,
+      "sha256": "d16e026f45a1d0812d8c152cea25b8236fcdda9c12ac91244a93215693e77129",
+      "readScope": "Full inherited JSON receipt example; interface adaptation only, not reused as authorization."
+    }
+  ],
+  "currentCycleInputs": [
+    {
+      "path": "research/m31-moving-admission-2026-10-17/PROTOCOL-DRAFT.md",
+      "bytes": 6509,
+      "sha256": "fbc0b7c2d493c5e0f34aef0b0d112387f61a4197aff74e196355c72c8fec6a0b",
+      "readScope": "Full initial source-preparation scope."
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/RECORD-CONTRACT-DRAFT.md",
+      "bytes": 3685,
+      "sha256": "f25e970057b5cc21ae779710f947527e12b5c50fae99cb8d482bc53f39683491",
+      "readScope": "Full initial record/CLI/filename scope."
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/source/config.json",
+      "bytes": 5362,
+      "sha256": "0a6b876edb63f13ce17ac81f996dea741e93abe72bdb28b7c6649626ffab278e",
+      "readScope": "Initial full source configuration plus updated resource metadata; literals not numerically converted or evaluated."
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/source/supervise.py",
+      "bytes": 26738,
+      "sha256": "c10aaffea8ea75ba585bc3145aef3e75d473a88687d244467afb3ef4ba06c794",
+      "readScope": "Authored adaptation and AST-only syntax parse."
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/source/guardian.py",
+      "bytes": 2276,
+      "sha256": "10341c52ab32fa8ff80c3909d578a7d368a3b2bcea59e78af7e8aa8f29c619f0",
+      "readScope": "Authored adaptation and AST-only syntax parse."
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/runtime-pins.json",
+      "bytes": 248,
+      "sha256": "842b2522133ed499f4706e071b09f3d100c5f4ed3f41d0fd135736c4dc191087",
+      "readScope": "Exact inherited byte copy, hash-only confirmation."
+    }
+  ],
+  "externalInterfaceEvidence": "Parent and runner/checker agents agreed caps, exact filenames,7 generator closure,CLI,attempt fields and runtime isolation in team messages; generator source itself not read by this author here.",
+  "sourceOnlyValidation": [
+    "Python ast.parse on authored supervisor and guardian text only.",
+    "Copied runtime-pins exact byte/hash confirmation."
+  ],
+  "notPerformed": [
+    "Supervisor or guardian execution",
+    "Scientific import",
+    "Kernel/checker/generator launch",
+    "Runtime version or scientific capability probe",
+    "Fixture evaluation or literal conversion",
+    "Browser operation",
+    "New literature retrieval",
+    "Installation",
+    "Commit",
+    "Old package modification"
+  ]
+}

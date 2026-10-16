@@ -1,0 +1,68 @@
+{
+  "schema": "m31-moving-admission-supervisor-final-reading-v1",
+  "createdUtc": "2026-10-16T21:54:23.521763+00:00",
+  "status": "Final source pin update after independent static reviewer reported no blocker; not scientific execution.",
+  "priorInventory": {
+    "path": "research/m31-moving-admission-2026-10-17/review/SUPERVISOR-ADAPTATION-READING.json",
+    "bytes": 4023,
+    "sha256": "957c63d5035cdecb2802627bca99201d03f011261e9c099aab91bd164563fb87"
+  },
+  "inheritedReadCap": 20,
+  "inheritedDistinctPathsRead": 4,
+  "inheritedCapSatisfied": true,
+  "inheritedInputs": [
+    {
+      "path": "research/m31-filter-cost-2026-10-17/source/supervise.py",
+      "bytes": 22023,
+      "sha256": "4d517a3515f66816b4ca74864147e63cc61aa15af0e2fc8e78aa6c640e4365cb",
+      "readScope": "Full inherited text; source adaptation, no import or execution."
+    },
+    {
+      "path": "research/m31-filter-cost-2026-10-17/source/guardian.py",
+      "bytes": 1890,
+      "sha256": "074f3e4921bf94718fd6a9eb5fec83b524d786cf445bc733946c026d4e30eed1",
+      "readScope": "Full inherited text; retained process-group lifecycle and cutoff/isolation changes, no execution."
+    },
+    {
+      "path": "research/m31-filter-cost-2026-10-17/runtime-pins.json",
+      "bytes": 248,
+      "sha256": "842b2522133ed499f4706e071b09f3d100c5f4ed3f41d0fd135736c4dc191087",
+      "readScope": "Full inherited JSON bytes; exact byte copy. No executable/version probe in this source stage."
+    },
+    {
+      "path": "research/m31-filter-cost-2026-10-17/source-publication.json",
+      "bytes": 852,
+      "sha256": "d16e026f45a1d0812d8c152cea25b8236fcdda9c12ac91244a93215693e77129",
+      "readScope": "Full inherited JSON receipt example; interface adaptation only, not reused as authorization."
+    }
+  ],
+  "finalSourcePins": [
+    {
+      "path": "research/m31-moving-admission-2026-10-17/source/supervise.py",
+      "bytes": 26727,
+      "sha256": "8d23c224fd0f976552fd266ea5dac13e9fc9c7566d8694f7c23f14fab57eec27"
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/source/guardian.py",
+      "bytes": 2276,
+      "sha256": "10341c52ab32fa8ff80c3909d578a7d368a3b2bcea59e78af7e8aa8f29c619f0"
+    },
+    {
+      "path": "research/m31-moving-admission-2026-10-17/runtime-pins.json",
+      "bytes": 248,
+      "sha256": "842b2522133ed499f4706e071b09f3d100c5f4ed3f41d0fd135736c4dc191087"
+    }
+  ],
+  "changesSinceInitialNote": [
+    "Attempt startedUtc changed from second-truncated strftime to datetime.now(timezone.utc).isoformat() to preserve chronology relative to microsecond publication receipt.",
+    "No other supervisor difference from the initial adaptation note pin; guardian/runtime unchanged."
+  ],
+  "independentReviewEvidence": "m31_evidence_audit team message: full static source review and exact timestamp-only delta review, no blocking containment mismatch; separate reviewer artifacts forthcoming.",
+  "notPerformed": [
+    "Supervisor/guardian/kernel/checker execution",
+    "Scientific or runtime probe",
+    "Installation",
+    "Browser run",
+    "Commit"
+  ]
+}

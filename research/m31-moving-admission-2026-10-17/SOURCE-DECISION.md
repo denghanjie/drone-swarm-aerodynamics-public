@@ -1,0 +1,9 @@
+# Source decision — moving-state admission
+
+Accepted for source freeze on 2026-10-16 UTC, before numerical exposure. The parent independently reviewed the runner and unchanged dependency closure; the checker author did not inspect the new runner. The third reviewer independently accepted the final protocol/checker source, including exact runtime literals, same-buffer identities and journal parsing. The runner author independently accepted supervisor/guardian containment. Final hashes are recorded in source-manifest.json. Source inspections and syntax parsing are not experimental evidence.
+
+All fourteen inherited scientific/helper modules remain byte-identical. Source-only priority planning is public at commit185f94dd830368e9383a085db88055f3f470a78d. Preserve the draft protocol/contracts and prospective corrections; the final PROTOCOL.md and RECORD-CONTRACT.md govern. Independent review reports disclose reused helper trust and reading inventories. Parent inventory23/24; reviewer caps retained.
+
+Authorize exactly the frozen kernel, then the saved checker only if kernel closure qualifies, after exact-commit public source verification and before the fixed launch cutoff. Keep HEAD at that source commit for both stages. No numerical invocation has occurred at this decision. No substitution, tuning, retry or repair of closed allocations. Failure is retained. This authorizes a scoped admission test, not a physical-validity, novelty, speed or5000-drone claim.
+
+Privacy: source/review/config contain synthetic states and generic path templates; no actual private host paths, credentials, original attachments or private paper copies are included. Generic sanitizer match patterns are source code, not leaked host paths. Publish only explicitly staged package source and the prior public planning receipt. Viewer remains a display-only draft outside this source manifest.

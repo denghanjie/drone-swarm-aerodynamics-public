@@ -1,0 +1,16 @@
+# Prospective refinements before exposure
+
+No numerical input generation, control evaluation, candidate import, reference evaluation or scientific launch has occurred while these decisions are made.
+
+- Published desk decision185f94d used shorthand “four two-drone controls.” Before source freeze, the positive control was expanded to three drones: source1 supplies an intended active term, source2 at(1,0,1.5) supplies an intended radial zero in the same mixed leaf. The other three controls remain two drones. This provides preregistered semantic witnesses for corruption controls without depending on an attractive generated frame. Those intended outcomes have not been tested; a missing witness fails the controls rather than authorizing replacement.
+- Use one filtered query per reached snapshot and per fixed control, with independent full exact reconstruction. No repeated relative speed comparison. All6scheduled states count, including unavailable future states after early stop.
+- Preserve both trajectories before any generated-state force evaluation. The four fixed implementation controls can precede generation. An ordinary model rejection is a retained outcome and cannot influence generation.
+- Source-derived nontriviality gates are selected prospectively: positive coupling at2scheduled times per run, post-initial horizontal-axis squared norm>1e-6, relative-coordinate change versus drone0>0.001m in each coordinate, and at least one changed positive-edge set across scheduled times. These engineering design thresholds avoid a vacuous static/zero-coupling transfer; no population or physical-accuracy meaning is assigned.
+- Caps reconciled:192MiBkernel scientific outputs +64MiBchecker scientific outputs within256MiBscience;16MiBseparate metadata/all private+public logs;272MiBcombined. Index2MiB,journal4MiB,checker report2MiB; scene/reference32MiB; each generation recording8MiB. Source-only bounds and enforcement are still to be reviewed. Resource exhaustion is a recorded closed failure.
+- A new raw-force control exposes an inherited cost-validator assumption: global preparation rejection has0fast-prepared objects. The candidate already returns this correctly; only the new validation wrapper adapts to account for this path. The inherited semantic/pair helpers and scientific modules remain byte-identical.
+
+- Parent adopted the checker’s stricter nontriviality requirement before exposure: a changed resolved positive-edge set is required separately for each run, not merely once across the whole schedule. The draft, final protocol and checker now agree.
+- Static review corrected the expected generator course label to factory-v1 and upgraded supervisor attempt timestamps to UTC microsecond precision, avoiding a same-second receipt/start ordering error. No numerical invocation had occurred.
+- Supervisor/guardian/checker use isolated Python startup; Node preload/path overrides are absent. Child bytecode creation is disabled to keep output accounting closed. These are source/runtime provenance controls, not mathematical accuracy claims.
+
+- Runtime architecture was checked without launching scientific code: binary metadata is Mach-O64-bit arm64, and the preceding published runtime record identifies darwin/arm64 Nodev24.19.0. The current executable hash remains pinned.
