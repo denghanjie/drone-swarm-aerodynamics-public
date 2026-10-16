@@ -1,0 +1,11 @@
+# Eight harmless launch checks passed
+
+The replacement launch mechanism passed its eight fixed operational cases. It waited for guardian readiness and a real process observation before allowing a child to start. When a child or sampler failed, the original cause stayed visible alongside the separate missing-output record. Every one of the seven child process groups recorded a waited guardian exit and two absence probes.
+
+The sole harmless run took 1.425086 seconds. The separate saved-file checker took 0.062656 seconds and passed all eight cases with no reported errors. The five expected negative cases cover child exit 7, an injected sampler error, an injected malformed row, child timeout and guardian exit before readiness. The delayed-readiness case recorded 210.429 ms before ready; the timeout was recorded 308.210 ms after authorization. These durations describe this operational test, not aerodynamic calculation speed.
+
+Source was published at commit `fbc38529363acb32fb9f11643a421606435d304a` and the receipt records exact verification before the attempt. The caller reports explicitly escalated tool dispatch for both run and checker. The checker validates saved matching context fields; it cannot independently inspect that dispatch. The capability result therefore applies to that reported environment and pinned runtime.
+
+The [result viewer](viewer/) verifies the saved checker and its 39 evidence pins before showing the eight outcomes. Including the checker report itself, the recorded result tree has 40 files. The [independent contract audit](review/RESULT-CONTRACT-AUDIT.md) checked 16 selected files without rerunning anything. The historical Three.js iframe replays two earlier 64-drone Boids flights, with airflow off and aerodynamic calculations afterwards. This milestone generated no new flight.
+
+This is evidence for the next integration design. It does not establish the old failure's specific cause, qualify the old scientific supervisor, authorize a scientific retry, demonstrate physical validity, establish novelty, or support a speedup or 5,000-drone claim. The earlier expired source-only package and failed normalizer attempt remain preserved. The broader scientific goal remains incomplete.

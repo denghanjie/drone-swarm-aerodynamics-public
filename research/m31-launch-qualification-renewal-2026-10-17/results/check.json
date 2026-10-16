@@ -1,0 +1,303 @@
+{
+  "schema": "m31-launch-qualification-check-v1",
+  "passed": true,
+  "errors": [],
+  "cases": [
+    {
+      "case": "capability",
+      "passed": true,
+      "expectedFirstFailure": null,
+      "secondaryMissingOutputExpected": false,
+      "closed": true,
+      "normalRelease": false,
+      "samples": 1,
+      "startedMonotonicNs": 5618474396238041,
+      "lastMonotonicNs": 5618474396238041
+    },
+    {
+      "case": "normal",
+      "passed": true,
+      "expectedFirstFailure": null,
+      "secondaryMissingOutputExpected": false,
+      "closed": true,
+      "normalRelease": true,
+      "samples": 4,
+      "startedMonotonicNs": 5618474409903833,
+      "lastMonotonicNs": 5618474536872916
+    },
+    {
+      "case": "child-exit7",
+      "passed": true,
+      "expectedFirstFailure": "child-exit",
+      "secondaryMissingOutputExpected": true,
+      "closed": true,
+      "normalRelease": true,
+      "samples": 4,
+      "startedMonotonicNs": 5618474567882166,
+      "lastMonotonicNs": 5618474704750291
+    },
+    {
+      "case": "sampler-nonzero",
+      "passed": true,
+      "expectedFirstFailure": "sampler-nonzero",
+      "secondaryMissingOutputExpected": true,
+      "closed": true,
+      "normalRelease": false,
+      "samples": 2,
+      "startedMonotonicNs": 5618474735975416,
+      "lastMonotonicNs": 5618474803694375
+    },
+    {
+      "case": "sampler-malformed",
+      "passed": true,
+      "expectedFirstFailure": "sampler-malformed",
+      "secondaryMissingOutputExpected": true,
+      "closed": true,
+      "normalRelease": false,
+      "samples": 2,
+      "startedMonotonicNs": 5618474831408250,
+      "lastMonotonicNs": 5618474907124958
+    },
+    {
+      "case": "delayed-ready",
+      "passed": true,
+      "expectedFirstFailure": null,
+      "secondaryMissingOutputExpected": false,
+      "closed": true,
+      "normalRelease": true,
+      "samples": 11,
+      "startedMonotonicNs": 5618474938571250,
+      "lastMonotonicNs": 5618475287045708
+    },
+    {
+      "case": "child-timeout",
+      "passed": true,
+      "expectedFirstFailure": "child-timeout",
+      "secondaryMissingOutputExpected": true,
+      "closed": true,
+      "normalRelease": false,
+      "samples": 13,
+      "startedMonotonicNs": 5618475318537666,
+      "lastMonotonicNs": 5618475703729375
+    },
+    {
+      "case": "early-guardian-exit",
+      "passed": true,
+      "expectedFirstFailure": "guardian-exit-before-release",
+      "secondaryMissingOutputExpected": true,
+      "closed": true,
+      "normalRelease": false,
+      "samples": 1,
+      "startedMonotonicNs": 5618475735807541,
+      "lastMonotonicNs": 5618475798917916
+    }
+  ],
+  "scientificQualification": false,
+  "historicalRootCauseEstablished": false,
+  "scientificRerunAuthorized": false,
+  "executionContextEvidenceScope": "Saved caller attestation checked; external tool dispatch is not a sandbox detector.",
+  "sourceCommit": "fbc38529363acb32fb9f11643a421606435d304a",
+  "sourceManifestSha256": "c4224571bbac5ef10e61cedef7bb8e834ebb7068766477e63cbabae2e302bd69",
+  "configSha256": "d5ab7cd5f24885babcfc89a0d9f430162e2fd47a94b8f8340ebb67dc51c36d3e",
+  "executionContext": "tool-require-escalated",
+  "supervisorPid": 36406,
+  "supervisorPgid": 36406,
+  "savedEvidencePins": [
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/attempt.json",
+      "bytes": 689,
+      "sha256": "4b2c42d714c8ae7eb4253df1e6225efd2f7df199569c01565b0a644fba50fde7"
+    },
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/capability/inert-output.json",
+      "bytes": 49,
+      "sha256": "b28b1d326ec3a15bc0f5b324581a20a21974ab767fe06e83af97d1d84d20406a"
+    },
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/capability/report.json",
+      "bytes": 1043,
+      "sha256": "74c92e048c54762dffba70b699274d44b7f2df6f81a6f639483498dcdaa66346"
+    },
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/check-attempt.json",
+      "bytes": 577,
+      "sha256": "b6a0213052612fac70030e637e785e8d10ebbb985ea831ce78e8f8f710cb139c"
+    },
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/child-exit7/authorization.json",
+      "bytes": 237,
+      "sha256": "a81dde830f5a8e8e71382f67b79fdb6e8e6714308591c5194891d87bc30c8225"
+    },
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/child-exit7/events.jsonl",
+      "bytes": 403,
+      "sha256": "416b72892cdc0fd231c5d7b8b56299cf2844a0c7517ac1b845d624045da6d781"
+    },
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/child-exit7/report.json",
+      "bytes": 2360,
+      "sha256": "16b0c48c7756e0527211f10f4894d13d176f9911186250b489cd250931688321"
+    },
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/child-exit7/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/child-exit7/stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/child-timeout/authorization.json",
+      "bytes": 237,
+      "sha256": "3fb496f4b14b8d18adeebfce2b0178aeb559e327604d9425b9a53f815b21ffdf"
+    },
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/child-timeout/events.jsonl",
+      "bytes": 483,
+      "sha256": "4c71801922d5a0b2e9bb8d51e6261ce4dbad1dc0efd254006c2c3e6dcc354945"
+    },
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/child-timeout/report.json",
+      "bytes": 2338,
+      "sha256": "a2175005122cc9976a19a66f61c206f6c5e4934f01fd3975a819340f608d74dc"
+    },
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/child-timeout/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/child-timeout/stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/delayed-ready/authorization.json",
+      "bytes": 237,
+      "sha256": "9c5b54960161ff273cc90d6297107e05341d7cc1cf75cc953d1830f16a3a083e"
+    },
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/delayed-ready/events.jsonl",
+      "bytes": 403,
+      "sha256": "1afb346b5732c3de5ed6157a6aa16183ef23cd5d252e6de7047253005d921b64"
+    },
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/delayed-ready/inert-output.json",
+      "bytes": 40,
+      "sha256": "0d25ab04ba6b650aa755a217e31cffff1fd78a893147408573c1b7f78469c8cf"
+    },
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/delayed-ready/report.json",
+      "bytes": 2266,
+      "sha256": "06c238bb3cd3198d2790f200aaf447ae30bf723a62b22c1fcae87f7fb0d4a06e"
+    },
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/delayed-ready/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/delayed-ready/stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/early-guardian-exit/events.jsonl",
+      "bytes": 147,
+      "sha256": "398fe255b2b081ee780624d686e40c5e5b814a21152b1fcce6c554767a061fd6"
+    },
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/early-guardian-exit/report.json",
+      "bytes": 1460,
+      "sha256": "ab927be3b7149d05a3315a1e088d9b8aa8455fc0982dbd396f58ae656be5877d"
+    },
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/early-guardian-exit/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/early-guardian-exit/stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/index.json",
+      "bytes": 10796,
+      "sha256": "aff4dd14a076be33242f04932ca878399b51570256ac9b0d41e891aed5c07e55"
+    },
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/normal/authorization.json",
+      "bytes": 237,
+      "sha256": "e47f7bfbe843db926300d23e7892a377e4a7f83f89c5d5b9bf4ab059cc59a2c6"
+    },
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/normal/events.jsonl",
+      "bytes": 403,
+      "sha256": "4391b22baa43781d1ee1357f70d624d03e36348f4926729c1c41ab011f83f199"
+    },
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/normal/inert-output.json",
+      "bytes": 33,
+      "sha256": "1000ee01ca1c57593a12e1b9ea85cbe27b2ae31af2b44b90529d319d2c269f27"
+    },
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/normal/report.json",
+      "bytes": 2258,
+      "sha256": "c25d534fb59acc15bc3fe142919c28a6ba49d333f126b1dcc40c08d8a635e6df"
+    },
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/normal/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/normal/stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/sampler-malformed/events.jsonl",
+      "bytes": 296,
+      "sha256": "13a8b3bcf059055c998128342f7886f5af0bcbd82e622a5481cd5b01c4e1aef6"
+    },
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/sampler-malformed/report.json",
+      "bytes": 1982,
+      "sha256": "b3a87908795d7471bf21372dad2951e22d6221d04a212482b4a32c844f334771"
+    },
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/sampler-malformed/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/sampler-malformed/stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/sampler-nonzero/events.jsonl",
+      "bytes": 296,
+      "sha256": "3804a96ee067431132830799534dd928cae96b501c09320ae83738b70a3c6182"
+    },
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/sampler-nonzero/report.json",
+      "bytes": 1897,
+      "sha256": "509e33bc7d7c27372752b559e44baf01967f3d6c6c3ee2d3dc89bb54b1ad358f"
+    },
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/sampler-nonzero/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/m31-launch-qualification-renewal-2026-10-17/results/sampler-nonzero/stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "wallSeconds": 0.0626564584672451
+}

@@ -1,0 +1,54 @@
+{
+  "case": "early-guardian-exit",
+  "supervisorPid": 36406,
+  "supervisorPgid": 36406,
+  "configSha256": "d5ab7cd5f24885babcfc89a0d9f430162e2fd47a94b8f8340ebb67dc51c36d3e",
+  "sourceCommit": "fbc38529363acb32fb9f11643a421606435d304a",
+  "sourceManifestSha256": "c4224571bbac5ef10e61cedef7bb8e834ebb7068766477e63cbabae2e302bd69",
+  "runtime": {
+    "bytes": 18058560,
+    "sha256": "7a314947596fc484d4ec36ffc28e843b78d6d749c68736f8b5c24e7333f418eb"
+  },
+  "executionContext": "tool-require-escalated",
+  "executionContextEvidence": "Caller attestation via environment variable; tool invocation retained outside package. Not a sandbox detector.",
+  "firstFailure": {
+    "kind": "guardian-exit-before-release",
+    "exitCode": 5
+  },
+  "secondaryFailures": [
+    {
+      "kind": "missing-inert-output"
+    }
+  ],
+  "samples": 1,
+  "peakSampledGroupRssBytes": 2424832,
+  "authorization": null,
+  "events": [
+    {
+      "event": "guardian-start",
+      "monotonicNs": 5618475755559958,
+      "pid": 36459,
+      "pgid": 36459
+    },
+    {
+      "event": "early-exit",
+      "monotonicNs": 5618475755701625
+    }
+  ],
+  "closureProbes": [
+    {
+      "monotonicNs": 5618475768868833,
+      "absent": true
+    },
+    {
+      "monotonicNs": 5618475798917916,
+      "absent": true
+    }
+  ],
+  "closed": true,
+  "normalRelease": false,
+  "startedMonotonicNs": 5618475735807541,
+  "guardianPid": 36459,
+  "guardianExitCode": 5,
+  "wallSeconds": 0.08479291666299105
+}

@@ -1,0 +1,101 @@
+{
+  "case": "child-exit7",
+  "supervisorPid": 36406,
+  "supervisorPgid": 36406,
+  "configSha256": "d5ab7cd5f24885babcfc89a0d9f430162e2fd47a94b8f8340ebb67dc51c36d3e",
+  "sourceCommit": "fbc38529363acb32fb9f11643a421606435d304a",
+  "sourceManifestSha256": "c4224571bbac5ef10e61cedef7bb8e834ebb7068766477e63cbabae2e302bd69",
+  "runtime": {
+    "bytes": 18058560,
+    "sha256": "7a314947596fc484d4ec36ffc28e843b78d6d749c68736f8b5c24e7333f418eb"
+  },
+  "executionContext": "tool-require-escalated",
+  "executionContextEvidence": "Caller attestation via environment variable; tool invocation retained outside package. Not a sandbox detector.",
+  "firstFailure": {
+    "kind": "child-exit",
+    "exitCode": 7
+  },
+  "secondaryFailures": [
+    {
+      "kind": "missing-inert-output"
+    }
+  ],
+  "samples": 4,
+  "peakSampledGroupRssBytes": 19595264,
+  "authorization": {
+    "guardianPid": 36416,
+    "monotonicNs": 5618474614633375,
+    "leaderSampleObserved": true,
+    "leaderObservation": {
+      "pid": 36416,
+      "ppid": 36406,
+      "pgid": 36416,
+      "rssKiB": 19088,
+      "monotonicNs": 5618474614630625
+    }
+  },
+  "events": [
+    {
+      "event": "guardian-start",
+      "monotonicNs": 5618474587769541,
+      "pid": 36416,
+      "pgid": 36416
+    },
+    {
+      "event": "ready",
+      "monotonicNs": 5618474587931916,
+      "pid": 36416,
+      "pgid": 36416
+    },
+    {
+      "event": "child-start",
+      "monotonicNs": 5618474616232500,
+      "pid": 36419,
+      "guardian": 36416
+    },
+    {
+      "event": "child-exit",
+      "monotonicNs": 5618474637224708,
+      "pid": 36419,
+      "exitCode": 7
+    },
+    {
+      "event": "released",
+      "monotonicNs": 5618474671890250
+    }
+  ],
+  "closureProbes": [
+    {
+      "monotonicNs": 5618474676348291,
+      "absent": true
+    },
+    {
+      "monotonicNs": 5618474704750291,
+      "absent": true
+    }
+  ],
+  "closed": true,
+  "normalRelease": true,
+  "startedMonotonicNs": 5618474567882166,
+  "guardianPid": 36416,
+  "leaderObservation": {
+    "pid": 36416,
+    "ppid": 36406,
+    "pgid": 36416,
+    "rssKiB": 19088,
+    "monotonicNs": 5618474614630625
+  },
+  "releaseObservation": {
+    "monotonicNs": 5618474671691333,
+    "groupRows": [
+      [
+        36416,
+        36406,
+        36416,
+        19136
+      ]
+    ]
+  },
+  "guardianExitCode": 0,
+  "wallSeconds": 0.16724337451159954
+}

@@ -1,0 +1,30 @@
+'use strict';
+// Browser display QA only. No qualification or scientific code imports.
+const fs=require('node:fs'),path=require('node:path'),{chromium}=require('playwright');
+const out=process.env.RESEARCH_QA_OUTPUT;fs.mkdirSync(out,{recursive:false});
+const base='http://127.0.0.1:8876/research/m31-launch-qualification-renewal-2026-10-17/viewer/';
+const report={scope:'Saved renewal result and historical replay UI only',browserAvailability:'Browser plugin not available; installed Playwright fallback',url:base,viewports:[{width:1440,height:1050},{width:390,height:844}],checks:[],errors:[],warnings:[]};
+const check=(name,ok)=>{report.checks.push({name,passed:!!ok});if(!ok)throw Error(name);};let browser;const started=Date.now();const timer=setTimeout(()=>browser?.close().catch(()=>{}),59000);
+(async()=>{try{
+ browser=await chromium.launch({executablePath:process.env.RESEARCH_CHROME,headless:true,args:['--disable-background-networking']});report.browserVersion=browser.version();const page=await browser.newPage({viewport:report.viewports[0]});
+ page.on('pageerror',e=>report.errors.push(e.message));page.on('console',m=>{if(m.type()==='error')report.errors.push(m.text());if(m.type()==='warning')report.warnings.push(m.text());});
+ await page.goto(base,{waitUntil:'networkidle',timeout:20000});await page.waitForFunction(()=>window.__statusView?.validEvidence,null,{timeout:5000});
+ check('page identity',page.url()===base&&(await page.title())==='Launch qualification · eight-case result');check('not blank',await page.locator('h1').isVisible()&&(await page.locator('h1').innerText())==='Eight launch checks passed.');check('no framework overlay',await page.locator('vite-error-overlay,nextjs-portal').count()===0);
+ check('actual result cards',JSON.stringify(await page.locator('.cards strong').allTextContents())===JSON.stringify(['8 / 8','7 / 7','0']));check('eight saved cases',await page.locator('#cases tr').count()===8);
+ const status=await page.evaluate(()=>window.__statusView);check('39 checker evidence pins',status.checkerPins===39&&status.passedCases===8&&status.scientificQualification===false);
+ await page.selectOption('#case-filter','negative');check('negative filter updates real rows',await page.locator('#cases tr').count()===5&&(await page.locator('#visible-count').innerText())==='5 of 8 cases shown');check('negative rows retain original causes',(await page.locator('#cases tr td:nth-child(3)').allTextContents()).every(x=>x!=='No failure'));
+ await page.selectOption('#case-filter','clean');check('clean filter three cases',await page.locator('#cases tr').count()===3);await page.selectOption('#case-filter','all');
+ await page.locator('#context summary').click();check('caller attestation distinguished',await page.locator('#context').getAttribute('open')!==null&&(await page.locator('#context').innerText()).includes('cannot inspect the tool dispatch'));await page.locator('#context summary').click();
+ check('historical disclosure',(await page.locator('.history').innerText()).includes('HISTORICAL 3D REPLAY · NO NEW FLIGHT')&&(await page.locator('.history').innerText()).includes('Airflow was off'));
+ const frame=await page.locator('#historical').elementHandle().then(x=>x.contentFrame());await frame.waitForFunction(()=>window.__viewState?.validEvidence,null,{timeout:12000});
+ await frame.selectOption('#run','run-b');await frame.locator('#frame').evaluate(e=>{e.value='25';e.dispatchEvent(new Event('input'));});let state=await frame.evaluate(()=>window.__viewState);check('historical group and scrub respond',state.run==='run-b'&&state.frame===25&&state.t===5&&state.bodyCount===64);
+ await page.evaluate(()=>scrollTo(0,0));await page.screenshot({path:path.join(out,'desktop-first.png'),fullPage:false});await page.screenshot({path:path.join(out,'desktop.png'),fullPage:true});await frame.locator('#scene').screenshot({path:path.join(out,'historical.png')});
+ await frame.locator('#play').click();await frame.waitForFunction(()=>window.__viewState.frame>25,null,{timeout:2000});await frame.locator('#play').click();check('historical playback responds',true);
+ for(const url of await page.locator('a').evaluateAll(es=>es.map(e=>e.href)))check('link '+new URL(url).pathname,(await page.request.get(url)).ok());
+ await page.setViewportSize(report.viewports[1]);await page.evaluate(()=>scrollTo(0,0));await page.screenshot({path:path.join(out,'mobile.png'),fullPage:true});check('mobile no document overflow',await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));check('historical iframe no document overflow',await frame.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));check('mobile historical canvas visible',await frame.locator('#scene canvas').isVisible());
+ check('console errors absent',report.errors.length===0);check('console warnings absent',report.warnings.length===0);
+ for(const name of ['binding.json','../results/check.json','../results/sampler-nonzero/report.json','../results/child-timeout/events.jsonl','../source-publication.json','../../m31-validator-qualification-2026-10-17/viewer/binding.json']){
+  const p=await browser.newPage();await p.route(new URL(name,base).href,r=>r.fulfill({status:200,contentType:'application/json',body:'{}'}));await p.goto(base,{waitUntil:'networkidle',timeout:7000});await p.waitForFunction(()=>window.__statusView?.validEvidence===false,null,{timeout:3000});check('corrupt '+name+' hides results/replay',await p.locator('#facts').isHidden()&&await p.locator('#historical').getAttribute('src')===null&&(await p.locator('h1').innerText())==='Evidence could not be verified.');await p.close();
+ }
+ report.passed=true;
+}catch(error){report.passed=false;report.failure=error.message;}finally{if(browser)await browser.close();clearTimeout(timer);report.wallMs=Date.now()-started;report.within60Seconds=report.wallMs<=60000;fs.writeFileSync(path.join(out,'report.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify({passed:report.passed,checks:report.checks.length,wallMs:report.wallMs,failure:report.failure}));if(!report.passed||!report.within60Seconds)process.exitCode=1;}})();

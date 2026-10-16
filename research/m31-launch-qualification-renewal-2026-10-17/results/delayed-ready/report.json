@@ -1,0 +1,94 @@
+{
+  "case": "delayed-ready",
+  "supervisorPid": 36406,
+  "supervisorPgid": 36406,
+  "configSha256": "d5ab7cd5f24885babcfc89a0d9f430162e2fd47a94b8f8340ebb67dc51c36d3e",
+  "sourceCommit": "fbc38529363acb32fb9f11643a421606435d304a",
+  "sourceManifestSha256": "c4224571bbac5ef10e61cedef7bb8e834ebb7068766477e63cbabae2e302bd69",
+  "runtime": {
+    "bytes": 18058560,
+    "sha256": "7a314947596fc484d4ec36ffc28e843b78d6d749c68736f8b5c24e7333f418eb"
+  },
+  "executionContext": "tool-require-escalated",
+  "executionContextEvidence": "Caller attestation via environment variable; tool invocation retained outside package. Not a sandbox detector.",
+  "firstFailure": null,
+  "secondaryFailures": [],
+  "samples": 11,
+  "peakSampledGroupRssBytes": 19480576,
+  "authorization": {
+    "guardianPid": 36428,
+    "monotonicNs": 5618475197194083,
+    "leaderSampleObserved": true,
+    "leaderObservation": {
+      "pid": 36428,
+      "ppid": 36406,
+      "pgid": 36428,
+      "rssKiB": 18992,
+      "monotonicNs": 5618475197191208
+    }
+  },
+  "events": [
+    {
+      "event": "guardian-start",
+      "monotonicNs": 5618474961519541,
+      "pid": 36428,
+      "pgid": 36428
+    },
+    {
+      "event": "ready",
+      "monotonicNs": 5618475171948166,
+      "pid": 36428,
+      "pgid": 36428
+    },
+    {
+      "event": "child-start",
+      "monotonicNs": 5618475198649958,
+      "pid": 36438,
+      "guardian": 36428
+    },
+    {
+      "event": "child-exit",
+      "monotonicNs": 5618475220550208,
+      "pid": 36438,
+      "exitCode": 0
+    },
+    {
+      "event": "released",
+      "monotonicNs": 5618475256932708
+    }
+  ],
+  "closureProbes": [
+    {
+      "monotonicNs": 5618475261339875,
+      "absent": true
+    },
+    {
+      "monotonicNs": 5618475287045708,
+      "absent": true
+    }
+  ],
+  "closed": true,
+  "normalRelease": true,
+  "startedMonotonicNs": 5618474938571250,
+  "guardianPid": 36428,
+  "leaderObservation": {
+    "pid": 36428,
+    "ppid": 36406,
+    "pgid": 36428,
+    "rssKiB": 18992,
+    "monotonicNs": 5618475197191208
+  },
+  "releaseObservation": {
+    "monotonicNs": 5618475256750583,
+    "groupRows": [
+      [
+        36428,
+        36406,
+        36428,
+        19024
+      ]
+    ]
+  },
+  "guardianExitCode": 0,
+  "wallSeconds": 0.37870454229414463
+}
