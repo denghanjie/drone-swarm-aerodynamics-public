@@ -1,0 +1,65 @@
+{
+  "schema": "m31-launch-checker-source-reading-v1",
+  "reviewer": "m31_evidence_audit",
+  "allocation": "research/m31-launch-qualification-2026-10-17",
+  "sourceFileLimit": 10,
+  "distinctFilesRead": 6,
+  "historicalScientificFilesRead": 0,
+  "files": [
+    {
+      "path": "research/m31-launch-qualification-2026-10-17/PROTOCOL.md",
+      "bytes": 5534,
+      "sha256": "21bb0a0f1379f7a908329a61d3a8f8d5304514050852498feedccbf1eb829a3f",
+      "scope": "full source/document; later interface corrections read before final pin"
+    },
+    {
+      "path": "research/m31-launch-qualification-2026-10-17/source/config.json",
+      "bytes": 536,
+      "sha256": "ae4eaeb165a1754cc4e81e8621f43d99290fe23f6c37a8f444fd29401fede6b7",
+      "scope": "full source/document; later interface corrections read before final pin"
+    },
+    {
+      "path": "research/m31-launch-qualification-2026-10-17/source/guard.py",
+      "bytes": 2862,
+      "sha256": "18851920da041242f7df7f85f5782e7d0647a72e4d5831fdc7bad9c940e35e80",
+      "scope": "full source/document; later interface corrections read before final pin"
+    },
+    {
+      "path": "research/m31-launch-qualification-2026-10-17/source/inert.py",
+      "bytes": 378,
+      "sha256": "a48b286b39a3b3a80d703d842a7a3a3bec341da8c8f5c9ee8f76358af5324344",
+      "scope": "full source/document; later interface corrections read before final pin"
+    },
+    {
+      "path": "research/m31-launch-qualification-2026-10-17/source/run.py",
+      "bytes": 12950,
+      "sha256": "148de9f1da3f1ccf3a995f70b9f3b8158bd7b8927325483cdb970ef09de509dd",
+      "scope": "full initial source and subsequent interface corrections; final preauthorization PPID/RSS guard and alarm-through-index-write diff inspected before freeze"
+    },
+    {
+      "path": "research/m31-launch-qualification-2026-10-17/source/check.py",
+      "bytes": 22458,
+      "sha256": "ab70f93c4a00d69611ea5e2f4355b323accf8593ea1a1c3ef8f5d0f3a34b4bf7",
+      "scope": "authored full source; AST parsed only"
+    }
+  ],
+  "validation": "AST parse of checker; source and metadata inspection only; no target module body executed or imported.",
+  "operationsNotPerformed": [
+    "Harness run",
+    "Live ps probe",
+    "Runner/guard/inert/checker import or invocation",
+    "Scientific import or execution",
+    "Fixture pilot",
+    "Publication or freeze"
+  ],
+  "ownedOutputs": [
+    "source/check.py",
+    "review/CHECKER-REVIEW.md",
+    "review/CHECKER-READING.json"
+  ],
+  "reviewDocument": {
+    "path": "research/m31-launch-qualification-2026-10-17/review/CHECKER-REVIEW.md",
+    "bytes": 5471,
+    "sha256": "084886b7d7d7e8f73cb9d94c4481768420b0ba7721d1b8876c5265dda8544576"
+  }
+}

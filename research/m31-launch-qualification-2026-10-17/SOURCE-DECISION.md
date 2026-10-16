@@ -1,0 +1,9 @@
+# Conditional source-freeze decision
+
+This allocation tests a proposed operational mechanism, not aerodynamics. The parent accepts source publication only after the independent contract and claims reviews lock their exact file pins. Before numerical or harmless fixture execution, separately verify the exact public source manifest against local and committed bytes. No source imports or fixture calls were used during preparation; parent validation is AST parsing only.
+
+Static review added positive leader and release observations, exact expected fault/event rosters, first/secondary error separation, strict numeric parsing, explicit child cleanup status, and timing witnesses for readiness delay and timeout. The saved checker is independently implemented and imports no runner or guardian. Its scope is fixed saved-case validation; it is not a formal proof or an empirical qualification against every possible corrupted record.
+
+Run once in the explicitly escalated tool context with RESEARCH_EXECUTION_CONTEXT=tool-require-escalated and the pinned Python interpreter using -I -B. This variable is caller attestation, not a runtime sandbox detector. Keep the source commit at HEAD through run and checker. The tool dispatch is part of the conversation's execution record; the publication narrative must accurately describe its actual mode. No fallback to another environment or rerun. No launch at or after2026-10-16T23:00:00Z.
+
+After a completed run with all eight case reports and closed groups, invoke the saved-evidence checker once before the same cutoff. If the run cannot close or produces incomplete evidence, preserve its failure and do not invent a passing checker result. Never use this harness to launch a simulator. Any later integration and scientific allocation requires separate reviewed source and preregistration. The prior failed normalizer source and attempt remain unchanged.
