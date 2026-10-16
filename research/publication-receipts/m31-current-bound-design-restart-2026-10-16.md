@@ -1,0 +1,7 @@
+# Published current-bound design restart
+
+The conditional design checkpoint is published at commit d4b6407dc1287e1656f70a810cafd2c1635d7403 on codex/m31-audit-2026-10-15. The GitHub connector independently fetched its exact-commit manifest; bytes and Git blob matched the local committed manifest. All 37 new-file pins and 18 reference pins also matched working and committed bytes. The adjacent JSON receipt records identities. An independent metadata-only reviewer separately checked all 55 pins, unchanged reviewed targets, wrapper binding and source failure paths; its report is preserved beside this note.
+
+No scientific allocation was created or executed. Display-only QA closed successfully, one attempt with 30 checks; local browser process exited. Existing server port 8876 remains available. The new viewer was opened in Codex (queued by the app). The immutable checkpoint's RESTART.md specifies the next gates; no frozen record should be edited.
+
+Next substantive work: a fresh bounded specification/proof checkpoint for exact numerical primitives and M-current/Q-current preparation/branch rules, followed by independently reviewed source publication before any numerical evaluation. Do not call the design a measured speedup or certified native program. The original physical/live 5,000-drone research goal remains active and incomplete. No further user approval is needed for authorized reversible research work, but experimental scope, budget and freeze requirements still apply.
