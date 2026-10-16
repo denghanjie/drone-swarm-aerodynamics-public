@@ -1,0 +1,9 @@
+# Published ideas checked; no shortcut adopted on authority
+
+After10ms reuse failed, we checked two original papers and our earlier work. The papers provide useful ideas for updating interactions at different rates, but do not validate a drone error rule. Our own project already tried linear inflow prediction and error-budgeted refresh, including a startup failure. Those ideas alone are not a new contribution.
+
+The next proposed check is deliberately small: using only earlier saved rotor-load ratios, can a fixed straight-line estimate predict the next ratio accurately at the same recorded drone state? It will include startup, every event and all invalid predictions. This is a proposed diagnostic of a different coupled quantity, not a novel algorithm or a new flight simulation. No prediction has been scored yet.
+
+The original sources are [Ahmad–Cohen1973](https://courses.physics.ucsd.edu/2019/Winter/physics141/Labs/Lab4/AhmadCohen.pdf) and [Tuckerman–Berne–Martyna1992](https://aiichironakano.github.io/phys516/Tuckerman-RESPA-JCP92.pdf). Exact locations, what was read, DOI limitations and incomplete correction-status checks are recorded in bibliography.json and SOURCE-ACCESS.json. No paper files were redistributed. The source review used all8delegated and4parent access operations and is closed.
+
+Read ADMISSION-AND-NEXT-TEST.md for the researcher's scoped interpretation, PARENT-DECISION.md for the adopted boundaries, HISTORY-INVENTORY.md and HISTORY-CLARIFICATION.md for earlier work, and INDEPENDENT-REVIEW.md for the challenge. The [latest recorded3Dcomparison](../m31-ratio-reuse-2026-10-16/viewer/) remains the completed negative ratio-reuse result; this desk checkpoint adds no new simulated motion. Overall physical validation, novelty and efficient5000-drone browser simulation remain unresolved.

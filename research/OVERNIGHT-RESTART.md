@@ -1,3 +1,11 @@
+# Latest continuation: two-paper review closed; causal root prediction proposed
+
+`m31-reuse-literature-2026-10-16/` completes its two-paper/ten-file desk review. All 8 researcher and 4 parent source operations are closed. Ahmad–Cohen1973 and Tuckerman–Berne–Martyna1992 provide admitted method antecedents within recorded access/status limits; neither validates this drone approximation. Earlier internal scalar prediction/adaptive refresh and M28 feedback cadence prevent a new-extrapolation claim.
+
+Read PARENT-DECISION, INDEPENDENT-REVIEW, MILESTONE-SUMMARY and POSTRUN-RESTART. The next proposed question is a separately frozen causal secant of coupled solved roots on all 200 exposed positive events, including cold start. No predictor score/allocation exists at this desk closure. A numerical cycle requires its own protocol, exact input pins, independent checker, supervision, source publication and remote verification before execution. Latest Three.js result remains the ratio-reuse viewer below. Preserve port8876 and all closed history. Overall goal active/incomplete. This index is mutable discovery metadata.
+
+---
+
 # Current continuation: fixed 10 ms ratio reuse rejected
 
 Newest completed experiment: `m31-ratio-reuse-2026-10-16/`. Six paths completed, prescribed saved fields of all three full-reference paths reproduced exactly, ten refinement gates passed (eight below-floor), and 559,589 independent assertions passed. The approximation failed all 24 trajectory/event-error gates: finest maximum sampled position difference 36.861 mm versus a 1 mm limit. Fewer joint queries (11,263 full versus 603 reuse across grids) are not measured speedups. Both scientific allocations are closed; no reruns.

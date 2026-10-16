@@ -1,0 +1,33 @@
+{
+  "schema": "m31-reuse-literature-access-v1",
+  "date": "2026-10-16",
+  "scope": "Two named papers only; delegated allowance eight source search/fetch operations",
+  "operations_limit": 8,
+  "operations_used": 8,
+  "counting": "Each search query and each open is one operation, including failures and same-document navigation; batching does not reduce the count.",
+  "operations": [
+    {"id": 1, "kind": "search", "query": "\"Ahmad\" \"Cohen\" \"A numerical integration scheme for the N-body gravitational problem\" 1973 original pdf", "result_ids": ["turn320160search24"], "outcome": "Located UCSD institutional course-hosted original journal scan; discovery only at this step."},
+    {"id": 2, "kind": "search", "query": "\"Tuckerman\" \"Berne\" \"Martyna\" \"Reversible multiple time scale molecular dynamics\" 1992 original pdf", "result_ids": ["turn320160search26", "turn320160search25"], "outcome": "Located author-group and course-hosted copies of the same original; secondary metadata not used as method evidence."},
+    {"id": 3, "kind": "open", "url": "https://courses.physics.ucsd.edu/2019/Winter/physics141/Labs/Lab4/AhmadCohen.pdf", "result_id": "turn657275view0", "outcome": "Accessible original journal scan through document reader; 14 PDF pages, 406 extracted lines. Inspected title/imprint and sections 1-2, section 3 context and error discussion through printed page 400.", "version": "Printed 1973 Journal of Computational Physics article; no scan checksum obtained."},
+    {"id": 4, "kind": "open", "url": "https://www.columbia.edu/cu/chemistry/groups/berne/papers/jcp_97_1990_1992.pdf", "result_id": "turn657275view1", "outcome": "Reader recognized 12-page original and 1026 lines but batched response exposed no substantive text for this paper."},
+    {"id": 5, "kind": "open", "url": "https://www.columbia.edu/cu/chemistry/groups/berne/papers/jcp_97_1990_1992.pdf", "request_ref": "turn657275view1", "lineno": 0, "result_id": "turn525923view0", "outcome": "Failed: tool reported 400 Timeout fetching. No technical claim rests on this response."},
+    {"id": 6, "kind": "open", "url": "https://aiichironakano.github.io/phys516/Tuckerman-RESPA-JCP92.pdf", "result_id": "turn592684view0", "outcome": "Accessible original article scan with AIP cover; 13 PDF pages, 994 extracted lines. Inspected cover, printed pages 1990-1993 and beginning of 1994: sections I-II and III.", "version": "Published 1992 article scan with later publisher cover; printed DOI and publication imprint inspected. No PDF checksum obtained."},
+    {"id": 7, "kind": "open", "url": "https://aiichironakano.github.io/phys516/Tuckerman-RESPA-JCP92.pdf", "request_ref": "turn592684view0", "lineno": 700, "result_id": "turn787970view0", "outcome": "Same original, substantive text at printed pages 1997-2001: sections V-VIII and appendices, especially predictor-corrector section VI and Nose dynamics section VII."},
+    {"id": 8, "kind": "search", "query": "(\"A numerical integration scheme for the N-body gravitational problem\" OR \"Reversible multiple time scale molecular dynamics\") (erratum OR correction OR corrigendum OR retraction)", "result_ids": ["turn942355search0", "turn942355search7", "turn942355search12", "turn942355search14"], "outcome": "Low-specificity status query surfaced original copies, metadata and unrelated citing papers. No correction or retraction record was admitted. This is not evidence that none exists. Unrelated paper results were not opened or used."}
+  ],
+  "primary_reading_limits": {
+    "ahmad_cohen": "Original printed title, author initials, journal, volume, year and pages verified. DOI 10.1016/0021-9991(73)90160-5 is a discovery/corroboration lead, not directly verified on a publisher/DOI record in this allowance. Formula OCR is imperfect; no executable formula transcription is delivered.",
+    "tuckerman_berne_martyna": "Original cover verifies DOI 10.1063/1.463137; printed article verifies author order, journal 97(3), 1 August 1992 and pages 1990-2001. No later correction/version history verified.",
+    "status": "Published-article identity verified from originals; correction/retraction/version clearance remains incomplete. Do not claim exhaustive status checking."
+  },
+  "parent_verification": "Separate parent allowance is not counted here. Parent reports four consumed operations: DOI opens turn906037view0/1 inaccessible, then two exact-DOI status searches with no admitted correction/retraction. Parent retains its own log.",
+  "third_paper_opened_or_used": false,
+  "source_pdf_or_fulltext_downloads": 0,
+  "original_text_redistributed": false,
+  "model_execution": false,
+  "predictor_scoring": false,
+  "fitting": false,
+  "physical_data_extraction": false,
+  "source_bytes_hashes": null,
+  "hash_note": "Only authored public-safe notes can be hashed in this delivery; no PDF bytes were acquired. Retrieval identifiers and exact URLs preserve the access route."
+}
