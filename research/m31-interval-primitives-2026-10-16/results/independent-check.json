@@ -1,0 +1,264 @@
+{
+  "baselineErrorCount": 0,
+  "baselinePassed": true,
+  "checkerRuntime": {
+    "implementation": "cpython",
+    "pythonVersion": "3.12.14"
+  },
+  "errors": [],
+  "expectedRecords": 1488,
+  "expectedStatusCounts": {
+    "invalid-bits": 0,
+    "invalid-interval": 0,
+    "invalid-nonfinite": 5,
+    "ok": 1032,
+    "unresolved-domain": 215,
+    "unresolved-iteration": 0,
+    "unresolved-range": 236,
+    "unresolved-sqrt-check": 0
+  },
+  "faultControls": [
+    {
+      "description": "Narrow the positive minimum-subnormal conversion from [0,1] to [1,1]; ordered but excludes its exact value.",
+      "executed": true,
+      "name": "wrong-endpoint",
+      "passed": true,
+      "probes": [
+        {
+          "errorCount": 2,
+          "errors": [
+            "not-exact-outward-endpoints:row=2",
+            "rational-inclusion-failed:row=2"
+          ],
+          "name": "narrow-lower-endpoint",
+          "rejected": true
+        }
+      ]
+    },
+    {
+      "description": "Claim unresolved-domain for the exact zero conversion.",
+      "executed": true,
+      "name": "wrong-status",
+      "passed": true,
+      "probes": [
+        {
+          "errorCount": 3,
+          "errors": [
+            "result-status:row=0",
+            "success-result-fields:row=0",
+            "result-interval-fields:row=0"
+          ],
+          "name": "zero-conversion-domain",
+          "rejected": true
+        }
+      ]
+    },
+    {
+      "description": "Remove the final required record.",
+      "executed": true,
+      "name": "missing-case",
+      "passed": true,
+      "probes": [
+        {
+          "errorCount": 1,
+          "errors": [
+            "record-count"
+          ],
+          "name": "remove-final",
+          "rejected": true
+        }
+      ]
+    },
+    {
+      "description": "Separately duplicate one case and exchange the first two cases.",
+      "executed": true,
+      "name": "duplicate-or-reordered-case",
+      "passed": true,
+      "probes": [
+        {
+          "errorCount": 3,
+          "errors": [
+            "duplicate-record-id:row=1",
+            "record-id-or-order:row=1",
+            "record-input:row=1"
+          ],
+          "name": "duplicate",
+          "rejected": true
+        },
+        {
+          "errorCount": 4,
+          "errors": [
+            "record-id-or-order:row=0",
+            "record-input:row=0",
+            "record-id-or-order:row=1",
+            "record-input:row=1"
+          ],
+          "name": "reorder",
+          "rejected": true
+        }
+      ]
+    },
+    {
+      "description": "Change the first zero input to the minimum positive subnormal while retaining the zero output.",
+      "executed": true,
+      "name": "altered-input",
+      "passed": true,
+      "probes": [
+        {
+          "errorCount": 1,
+          "errors": [
+            "record-input:row=0"
+          ],
+          "name": "change-input-bits",
+          "rejected": true
+        }
+      ]
+    }
+  ],
+  "input": {
+    "path": "research/m31-interval-primitives-2026-10-16/results/primitive-results.json",
+    "sha256": "934030da979dc7808f26bfbcbb02c09a858ecc1c9a753df1f8a1c63c4a3bbfeb"
+  },
+  "journal": {
+    "bytes": 592720,
+    "passed": true,
+    "path": "research/m31-interval-primitives-2026-10-16/results/primitive-results.json.jsonl",
+    "rows": 1488,
+    "sha256": "30a59f8d43419bcd55c422056d4da818130166486c14777e4863d556162f01e5"
+  },
+  "observedStatusCounts": {
+    "invalid-bits": 0,
+    "invalid-interval": 0,
+    "invalid-nonfinite": 5,
+    "ok": 1032,
+    "unresolved-domain": 215,
+    "unresolved-iteration": 0,
+    "unresolved-range": 236,
+    "unresolved-sqrt-check": 0
+  },
+  "passed": true,
+  "schema": "m31-fixed96-independent-check-v1",
+  "scope": "saved-result primitive qualification; no swarm, native-equivalence or performance conclusion",
+  "sourceManifest": {
+    "path": "research/m31-interval-primitives-2026-10-16/source-manifest.json",
+    "sha256": "fb3585e2eb5340a456fac47ec35957be9a5fcdc1e44425990475c9e3de3858dd"
+  },
+  "totalRecords": 1488,
+  "verifiedSources": [
+    {
+      "bytes": 2897,
+      "path": "research/m31-interval-primitives-2026-10-16/ADOPTED-ARITHMETIC.md",
+      "sha256": "08a484a141604555bec2f01d747ea02245a529da4f92bb00eceeefe8d71fabed"
+    },
+    {
+      "bytes": 3364,
+      "path": "research/m31-interval-primitives-2026-10-16/ARITHMETIC-ARGUMENT-DRAFT.md",
+      "sha256": "12363b18045043f5d550850a1f9d329f698ff96b0a71914d08ea4c0e77b4aecb"
+    },
+    {
+      "bytes": 622,
+      "path": "research/m31-interval-primitives-2026-10-16/PARENT-READING.json",
+      "sha256": "ea47b2fa7196b32e371b28b781d3953f1e4c95a123025eed85a8d601ac080601"
+    },
+    {
+      "bytes": 3054,
+      "path": "research/m31-interval-primitives-2026-10-16/PREFREEZE-CHANGES.md",
+      "sha256": "fda1e37191a920a910230786deb0e08bbb6733f09d93f7c6dd8df903525f5f27"
+    },
+    {
+      "bytes": 6226,
+      "path": "research/m31-interval-primitives-2026-10-16/PROTOCOL-DRAFT.md",
+      "sha256": "15f86c9e11f7b69386b073219946539cbd66c59fe92b10b25936fdb53150a891"
+    },
+    {
+      "bytes": 9660,
+      "path": "research/m31-interval-primitives-2026-10-16/PROTOCOL.md",
+      "sha256": "c3b5faca9f9332277c2a8b8b4421f62f8c7f2496da430adfe7fc7debd950430e"
+    },
+    {
+      "bytes": 1737,
+      "path": "research/m31-interval-primitives-2026-10-16/SOURCE-DECISION.md",
+      "sha256": "516bd164596498c9d28155ae3971aa2f58bfc5e7f6f9375eb3c7835d6d847b4e"
+    },
+    {
+      "bytes": 1759,
+      "path": "research/m31-interval-primitives-2026-10-16/SOURCE-PRIVACY.md",
+      "sha256": "d9fb5aa074302bdbd5dcdf5a0edd890ea9f590f35a3b0a2d31a0df4faeac8cd5"
+    },
+    {
+      "bytes": 2445,
+      "path": "research/m31-interval-primitives-2026-10-16/prefreeze/initial-source/result-contract.json",
+      "sha256": "0e4f9c20ecef5f950370eae6be32671cc0fdc46a1e36724732a524dcee567539"
+    },
+    {
+      "bytes": 2500,
+      "path": "research/m31-interval-primitives-2026-10-16/prefreeze/initial-source/run.cjs",
+      "sha256": "4b7e8b1ccf61ee2c6f6515db5e9cce3e27612e29a00fc6fd5e1b43785cbd4557"
+    },
+    {
+      "bytes": 1967,
+      "path": "research/m31-interval-primitives-2026-10-16/prefreeze/initial-source/spec.json",
+      "sha256": "d8065903820d08a730489abea8d92d1bad735770818e9e6717ca5ff6ab6fb2e4"
+    },
+    {
+      "bytes": 6382,
+      "path": "research/m31-interval-primitives-2026-10-16/prefreeze/supervisor-v1/supervise.py",
+      "sha256": "abde85e9336d5460d7ed49fa8e0d79fe34bd0ad577a5bbea584e322f0655a8f0"
+    },
+    {
+      "bytes": 8543,
+      "path": "research/m31-interval-primitives-2026-10-16/review/INDEPENDENT-CHECKER.md",
+      "sha256": "c036efb8a27c1b0d1c5b1c4156413c5157047b994e440e93d0b4aba3a8ebc93d"
+    },
+    {
+      "bytes": 13991,
+      "path": "research/m31-interval-primitives-2026-10-16/review/MATHEMATICS.md",
+      "sha256": "d7326aae9b3cbdea1bc251b3e5be4e668b3283b9e0fd67ca1cc42cfb2d26b425"
+    },
+    {
+      "bytes": 25760,
+      "path": "research/m31-interval-primitives-2026-10-16/review/PROTOCOL-AND-SUPERVISION.md",
+      "sha256": "a132b7a238baf6620e05f70f5887b9af9e40d069323a38ee76b2fc13aba29620"
+    },
+    {
+      "bytes": 404,
+      "path": "research/m31-interval-primitives-2026-10-16/runtime-pins.json",
+      "sha256": "34dd9c5333c8fa945bd0667be7d042fc1eb09899895d942bf83b671c0b1a5b81"
+    },
+    {
+      "bytes": 30506,
+      "path": "research/m31-interval-primitives-2026-10-16/source/check.py",
+      "sha256": "99e79de9747063825d3a6c8c0d2f8dc1e5fba6af8739204fa9b322184d96703c"
+    },
+    {
+      "bytes": 1656,
+      "path": "research/m31-interval-primitives-2026-10-16/source/guardian.py",
+      "sha256": "a015e8dd42b31f6f630cf651ae2d741dc33d410aa3e2649fb0a844d2e036e3cf"
+    },
+    {
+      "bytes": 2815,
+      "path": "research/m31-interval-primitives-2026-10-16/source/interval.cjs",
+      "sha256": "73f5afce4dbc2551535127abeaa96d2e6389073e898f9b9dcc70a977ff19ded3"
+    },
+    {
+      "bytes": 2863,
+      "path": "research/m31-interval-primitives-2026-10-16/source/result-contract.json",
+      "sha256": "a41c1a936b3b4772e90de182abffd7b41dc552a0f217a15738015f5359a3d522"
+    },
+    {
+      "bytes": 3054,
+      "path": "research/m31-interval-primitives-2026-10-16/source/run.cjs",
+      "sha256": "172dd45d3f1fe06f3562e3908d16e3d4d759f0c5e1f769f4f9d46860f09fcd0b"
+    },
+    {
+      "bytes": 2550,
+      "path": "research/m31-interval-primitives-2026-10-16/source/spec.json",
+      "sha256": "73d539b2f6575e21b3f8c512ce79a4be22ff0b09c98c527cb18dfc06a6dc21f7"
+    },
+    {
+      "bytes": 11202,
+      "path": "research/m31-interval-primitives-2026-10-16/source/supervise.py",
+      "sha256": "bcba663a3391e7cfc0ebd2f0891c5ac6f23fe3cbbf1c626e4f4b7e5842c1c4fa"
+    }
+  ]
+}

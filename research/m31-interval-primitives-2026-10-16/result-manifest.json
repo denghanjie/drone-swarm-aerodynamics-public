@@ -1,0 +1,428 @@
+{
+  "kind": "closed-finite-fixed96-primitive-result",
+  "sourceCommit": "7f353dee5a1a06f15f4fc2cb85a20da3f653fd0c",
+  "sourceManifestSha256": "fb3585e2eb5340a456fac47ec35957be9a5fcdc1e44425990475c9e3de3858dd",
+  "decision": "qualified-finite-fixed96-primitives",
+  "pathBase": "repository root",
+  "records": 1488,
+  "successfulIntervals": 1032,
+  "correctRefusals": 456,
+  "baselineMismatches": 0,
+  "faultProbesRejected": 6,
+  "allocationsClosed": {
+    "kernel": true,
+    "checker": true,
+    "displayQA": true
+  },
+  "overallGoalComplete": false,
+  "scope": "Finite arithmetic qualification plus conditional source reasoning; no full-model/browser/speed/physical/novelty qualification",
+  "files": [
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/ADOPTED-ARITHMETIC.md",
+      "bytes": 2897,
+      "sha256": "08a484a141604555bec2f01d747ea02245a529da4f92bb00eceeefe8d71fabed"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/ARITHMETIC-ARGUMENT-DRAFT.md",
+      "bytes": 3364,
+      "sha256": "12363b18045043f5d550850a1f9d329f698ff96b0a71914d08ea4c0e77b4aecb"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/CLAIM-LEDGER.md",
+      "bytes": 2668,
+      "sha256": "e7b04025147b42ab8848269180366eed02ab5f884698bd4582cd6726fd367cb7"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/MILESTONE-SUMMARY.md",
+      "bytes": 2111,
+      "sha256": "4d933663b86b304a48e0b0289d5f0559b1a1f3df06435380e52e6c69a7dc3e20"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/PARENT-READING.json",
+      "bytes": 622,
+      "sha256": "ea47b2fa7196b32e371b28b781d3953f1e4c95a123025eed85a8d601ac080601"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/PARENT-RESULT-DECISION.md",
+      "bytes": 2151,
+      "sha256": "0191a66fa99900c306a18d134596f3136cd0459e3042bcfd92744c3dc8fd6ac5"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/POSTRUN-READING.json",
+      "bytes": 1754,
+      "sha256": "45744ad74be5c83962e3ce72136dc674a08b1b4a2e0552f2e34273fb0be745c0"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/PREFREEZE-CHANGES.md",
+      "bytes": 3054,
+      "sha256": "fda1e37191a920a910230786deb0e08bbb6733f09d93f7c6dd8df903525f5f27"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/PROTOCOL-DRAFT.md",
+      "bytes": 6226,
+      "sha256": "15f86c9e11f7b69386b073219946539cbd66c59fe92b10b25936fdb53150a891"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/PROTOCOL.md",
+      "bytes": 9660,
+      "sha256": "c3b5faca9f9332277c2a8b8b4421f62f8c7f2496da430adfe7fc7debd950430e"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/RESTART.md",
+      "bytes": 3230,
+      "sha256": "3775ea31f5ec710b2cb49323c671b130ea723a648000f8feb7762fb1c9abb4e2"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/RESULT-PRIVACY.md",
+      "bytes": 1451,
+      "sha256": "910da601bcac70bfd1e3de005e0e6f27c73ee780996512fff8e2ba8d5ad09e78"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/SOURCE-DECISION.md",
+      "bytes": 1737,
+      "sha256": "516bd164596498c9d28155ae3971aa2f58bfc5e7f6f9375eb3c7835d6d847b4e"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/SOURCE-PRIVACY.md",
+      "bytes": 1759,
+      "sha256": "d9fb5aa074302bdbd5dcdf5a0edd890ea9f590f35a3b0a2d31a0df4faeac8cd5"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/prefreeze/initial-source/result-contract.json",
+      "bytes": 2445,
+      "sha256": "0e4f9c20ecef5f950370eae6be32671cc0fdc46a1e36724732a524dcee567539"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/prefreeze/initial-source/run.cjs",
+      "bytes": 2500,
+      "sha256": "4b7e8b1ccf61ee2c6f6515db5e9cce3e27612e29a00fc6fd5e1b43785cbd4557"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/prefreeze/initial-source/spec.json",
+      "bytes": 1967,
+      "sha256": "d8065903820d08a730489abea8d92d1bad735770818e9e6717ca5ff6ab6fb2e4"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/prefreeze/supervisor-v1/supervise.py",
+      "bytes": 6382,
+      "sha256": "abde85e9336d5460d7ed49fa8e0d79fe34bd0ad577a5bbea584e322f0655a8f0"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/qa/QA-SUMMARY.md",
+      "bytes": 1525,
+      "sha256": "254110b7597637a4e2dac474bc84c756c9c59fcc1dfae8befacc313988fdbb2e"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/qa/attempt-01/desktop.png",
+      "bytes": 365670,
+      "sha256": "39017d81df90d348772be2383c4dd4c01aa1d287ce39c9b00a5125b78b24faa1"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/qa/attempt-01/late-error.png",
+      "bytes": 46284,
+      "sha256": "33fa118c5b46728be53c08bc39b37d86b5a1b2ce86b29b5d251686c8d81f4491"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/qa/attempt-01/mobile-swarm.png",
+      "bytes": 95993,
+      "sha256": "9536be629ed281dc5f1e1476dffeec94ab505616687d2df4fb14ca1bbc43e4a1"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/qa/attempt-01/mobile.png",
+      "bytes": 310101,
+      "sha256": "bba91245105ebf563ea78074e7345b9004101f688a7dea8d70be9f54e38fdc17"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/qa/attempt-01/report.json",
+      "bytes": 2703,
+      "sha256": "d36a61748dbd4b6616e57b91ef94bd174a17df8729a5bf6b27765ce31717acb4"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/qa/attempt-01/run.cjs",
+      "bytes": 5643,
+      "sha256": "eca6f7e3ac0c25c2a2a6dd410310e9002d30ab49dea547de2a078c56275a8e75"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/qa/attempt-01/swarm.png",
+      "bytes": 191203,
+      "sha256": "66684c9e786c431e962eedc284c2eaa296428137019fac0a7324ba4e7227217d"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/qa/attempt-01/tested-viewer/app.js",
+      "bytes": 4914,
+      "sha256": "367b5b9e43e7861112da0fda6ade513670567737864e33b85a12c0f7702d64f2"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/qa/attempt-01/tested-viewer/binding-sha.txt",
+      "bytes": 65,
+      "sha256": "d82f8c5b34f3dda180690bfc9edfe7b535d080aaf0dfb4e1f935ed9f5b6f64f1"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/qa/attempt-01/tested-viewer/binding.json",
+      "bytes": 3668,
+      "sha256": "d680c3107107185895d2ce65285142658d8ee9fa0281fcc071d8a1afc6538110"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/qa/attempt-01/tested-viewer/index.html",
+      "bytes": 4226,
+      "sha256": "eee72d2a7c159a90faadb20c62e96b3dae97a22d48e4a866446abd1318a3b519"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/qa/attempt-01/tested-viewer/style.css",
+      "bytes": 1995,
+      "sha256": "054913606e224d799f490338f5aa91020b654eb07ee2c098257355f349877e5b"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/qa/run.cjs",
+      "bytes": 5643,
+      "sha256": "eca6f7e3ac0c25c2a2a6dd410310e9002d30ab49dea547de2a078c56275a8e75"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/results/checker-attempt.json",
+      "bytes": 279,
+      "sha256": "16c6523464b5a03cce96a936e572a88ca0c81e1920e1b34ee51d5ca76e5f962f"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/results/checker-guardian.jsonl",
+      "bytes": 111,
+      "sha256": "4ca890c0bca1b4edd6a0a685b145ed418d01ee3dd1b38358b5998191723fbd9f"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/results/checker-stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/results/checker-stdout.log",
+      "bytes": 68,
+      "sha256": "de2c0cb1ec351023376b9ef1f4a6d2e49c8e6b561d54b3e06357a249d113d4cf"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/results/checker-supervision.json",
+      "bytes": 2737,
+      "sha256": "219351822bbe45566708ddb9351b718845f72a040c7afbb979688c84e1b7ff30"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/results/fresh-closure-check.json",
+      "bytes": 300,
+      "sha256": "3f6200d6ee8d977595eae865e5d319ce8d002c01d8923d9b30b3ccc271b6a6ec"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/results/independent-check.json",
+      "bytes": 8695,
+      "sha256": "4b4111472f257f84c5139c7152b0dcd26e379fa3873557ba2d7009dd5c9cc5f3"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/results/kernel-attempt.json",
+      "bytes": 278,
+      "sha256": "8a532f7f35e93e5c8488ecdeabe58f00549bbaf9d21a1e353086f60fba242b2f"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/results/kernel-guardian.jsonl",
+      "bytes": 111,
+      "sha256": "884ff021cd59b417e00dedcf47dd1d9ba2dd8b2405847f42fe9f0f4346652004"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/results/kernel-stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/results/kernel-stdout.log",
+      "bytes": 54,
+      "sha256": "338c1ca460f46e231c42728fe815d0bd1e13b46d8ea20ce2e3ba21f09684bf63"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/results/kernel-supervision.json",
+      "bytes": 2691,
+      "sha256": "dcdeacfeac28f78e3434b995d74e427efb2bebdf3be69b7039687cbe4c3e71d0"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/results/primitive-results.json",
+      "bytes": 812099,
+      "sha256": "934030da979dc7808f26bfbcbb02c09a858ecc1c9a753df1f8a1c63c4a3bbfeb"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/results/primitive-results.json.jsonl",
+      "bytes": 592720,
+      "sha256": "30a59f8d43419bcd55c422056d4da818130166486c14777e4863d556162f01e5"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/review/INDEPENDENT-CHECKER.md",
+      "bytes": 8543,
+      "sha256": "c036efb8a27c1b0d1c5b1c4156413c5157047b994e440e93d0b4aba3a8ebc93d"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/review/MATHEMATICS.md",
+      "bytes": 13991,
+      "sha256": "d7326aae9b3cbdea1bc251b3e5be4e668b3283b9e0fd67ca1cc42cfb2d26b425"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/review/PROTOCOL-AND-SUPERVISION.md",
+      "bytes": 25760,
+      "sha256": "a132b7a238baf6620e05f70f5887b9af9e40d069323a38ee76b2fc13aba29620"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/review/SAVED-RESULT-AUDIT.md",
+      "bytes": 17272,
+      "sha256": "c8aa7dde9be668e784d647c241799c0360073af4c2cc7ea1b528e8b3106c8791"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/runtime-pins.json",
+      "bytes": 404,
+      "sha256": "34dd9c5333c8fa945bd0667be7d042fc1eb09899895d942bf83b671c0b1a5b81"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/source/check.py",
+      "bytes": 30506,
+      "sha256": "99e79de9747063825d3a6c8c0d2f8dc1e5fba6af8739204fa9b322184d96703c"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/source/guardian.py",
+      "bytes": 1656,
+      "sha256": "a015e8dd42b31f6f630cf651ae2d741dc33d410aa3e2649fb0a844d2e036e3cf"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/source/interval.cjs",
+      "bytes": 2815,
+      "sha256": "73f5afce4dbc2551535127abeaa96d2e6389073e898f9b9dcc70a977ff19ded3"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/source/result-contract.json",
+      "bytes": 2863,
+      "sha256": "a41c1a936b3b4772e90de182abffd7b41dc552a0f217a15738015f5359a3d522"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/source/run.cjs",
+      "bytes": 3054,
+      "sha256": "172dd45d3f1fe06f3562e3908d16e3d4d759f0c5e1f769f4f9d46860f09fcd0b"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/source/spec.json",
+      "bytes": 2550,
+      "sha256": "73d539b2f6575e21b3f8c512ce79a4be22ff0b09c98c527cb18dfc06a6dc21f7"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/source/supervise.py",
+      "bytes": 11202,
+      "sha256": "bcba663a3391e7cfc0ebd2f0891c5ac6f23fe3cbbf1c626e4f4b7e5842c1c4fa"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/source-manifest.json",
+      "bytes": 5266,
+      "sha256": "fb3585e2eb5340a456fac47ec35957be9a5fcdc1e44425990475c9e3de3858dd"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/source-publication.json",
+      "bytes": 830,
+      "sha256": "44f0016f575980f34ce32baa1a1d8a441af52e86297ad94b8687d844db0beb15"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/viewer/app.js",
+      "bytes": 4914,
+      "sha256": "367b5b9e43e7861112da0fda6ade513670567737864e33b85a12c0f7702d64f2"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/viewer/binding-sha.txt",
+      "bytes": 65,
+      "sha256": "d82f8c5b34f3dda180690bfc9edfe7b535d080aaf0dfb4e1f935ed9f5b6f64f1"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/viewer/binding.json",
+      "bytes": 3668,
+      "sha256": "d680c3107107185895d2ce65285142658d8ee9fa0281fcc071d8a1afc6538110"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/viewer/index.html",
+      "bytes": 4226,
+      "sha256": "eee72d2a7c159a90faadb20c62e96b3dae97a22d48e4a866446abd1318a3b519"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/viewer/style.css",
+      "bytes": 1995,
+      "sha256": "054913606e224d799f490338f5aa91020b654eb07ee2c098257355f349877e5b"
+    }
+  ],
+  "references": [
+    {
+      "path": "outputs/step02b-source/vendor/OrbitControls.js",
+      "bytes": 38703,
+      "sha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c"
+    },
+    {
+      "path": "outputs/step02b-source/vendor/three.module.js",
+      "bytes": 603113,
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+    },
+    {
+      "path": "research/m31-browser-screen-2026-10-16/result-manifest.json",
+      "bytes": 160687,
+      "sha256": "8d5b2c921496b5f6eb059096862f72d9afe3e0fb37dd05f4cb35f3a29d88d9ab"
+    },
+    {
+      "path": "research/m31-browser-screen-2026-10-16/viewer/app.js",
+      "bytes": 10861,
+      "sha256": "6267df73240d34b57846312e809c74f18d65d383a763bf5a085c16f347ce993d"
+    },
+    {
+      "path": "research/m31-browser-screen-2026-10-16/viewer/binding.json",
+      "bytes": 2801,
+      "sha256": "d140df47b076474e75a55689ae3ea88c028b150e660007d143aea7983d8f17ba"
+    },
+    {
+      "path": "research/m31-browser-screen-2026-10-16/viewer/display.json",
+      "bytes": 191487,
+      "sha256": "d888807ad31c2709a4e6b53999e409f2155e6d00c97d9a26eb7efa1d41837842"
+    },
+    {
+      "path": "research/m31-browser-screen-2026-10-16/viewer/index.html",
+      "bytes": 5217,
+      "sha256": "9bade1050d1343f09831b799f96bc9c0ac73441d6af6a69a0efdcbf7a566f528"
+    },
+    {
+      "path": "research/m31-browser-screen-2026-10-16/viewer/scene.js",
+      "bytes": 3875,
+      "sha256": "58718dc7452be35c1c3ba0a179b3f9398305e81dceb117466219b269b4ee88e7"
+    },
+    {
+      "path": "research/m31-browser-screen-2026-10-16/viewer/style.css",
+      "bytes": 5760,
+      "sha256": "7e6c2468e8da6ee6c5f4d88d4f05a3eb4cb29a997806b37bec1015f1fdb80f0e"
+    },
+    {
+      "path": "research/m31-current-bound-design-2026-10-16/RESTART.md",
+      "bytes": 2989,
+      "sha256": "df8f9818efaeaef8ae8dd3f75f22ae0943b4444e3f70f31e656bd8f68a5f0c8b"
+    },
+    {
+      "path": "research/m31-current-bound-design-2026-10-16/qa/run.cjs",
+      "bytes": 5611,
+      "sha256": "d376f790e29ae87182c0f0606dbf4cd952619ba9c734027be7a0396425d54014"
+    },
+    {
+      "path": "research/m31-current-bound-design-2026-10-16/viewer/app.js",
+      "bytes": 3173,
+      "sha256": "12f26da5a3c7bd3706f320aea44983bb13b9f2c80ab85418fbbc23974fde6cd7"
+    },
+    {
+      "path": "research/m31-current-bound-design-2026-10-16/viewer/binding.json",
+      "bytes": 2956,
+      "sha256": "20f3cad0f7c0d1b6e35417436e0880bd2663885d312a09868b022fea0dde8db6"
+    },
+    {
+      "path": "research/m31-current-bound-design-2026-10-16/viewer/index.html",
+      "bytes": 4069,
+      "sha256": "c906c703b06a588d713a602d45356e50d858bb4a02412965d306ea5fee043fce"
+    },
+    {
+      "path": "research/m31-current-bound-design-2026-10-16/viewer/style.css",
+      "bytes": 1995,
+      "sha256": "054913606e224d799f490338f5aa91020b654eb07ee2c098257355f349877e5b"
+    },
+    {
+      "path": "research/publication-receipts/m31-current-bound-design-restart-2026-10-16.md",
+      "bytes": 1495,
+      "sha256": "76ee085248c1d1936e5d00e4d7e1e96d245f9f7de97373be180f87bd87355e78"
+    }
+  ]
+}

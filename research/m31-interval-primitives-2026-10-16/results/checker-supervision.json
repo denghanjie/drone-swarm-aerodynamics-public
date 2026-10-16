@@ -1,0 +1,73 @@
+{
+  "stage": "checker",
+  "sourceCommit": "7f353dee5a1a06f15f4fc2cb85a20da3f653fd0c",
+  "sourceManifestSha256": "fb3585e2eb5340a456fac47ec35957be9a5fcdc1e44425990475c9e3de3858dd",
+  "commandTemplate": [
+    "PYTHON",
+    "PACKAGE/source/check.py",
+    "--spec",
+    "PACKAGE/source/spec.json",
+    "--input",
+    "PACKAGE/results/primitive-results.json",
+    "--manifest",
+    "PACKAGE/source-manifest.json",
+    "--output",
+    "PACKAGE/results/independent-check.json",
+    "--root",
+    "REPOSITORY_ROOT"
+  ],
+  "runtimePins": {
+    "node": {
+      "bytes": 121304480,
+      "sha256": "3c9448363b9976bf3d9e8f4d320397975800131b42c7b1be342dadc05871dd25",
+      "scope": "executable bytes only; loaded system libraries are not pinned"
+    },
+    "python": {
+      "bytes": 18058560,
+      "sha256": "7a314947596fc484d4ec36ffc28e843b78d6d749c68736f8b5c24e7333f418eb",
+      "scope": "executable bytes only; loaded system libraries are not pinned"
+    }
+  },
+  "wallLimitSeconds": 120,
+  "sampledRssLimitBytes": 1073741824,
+  "outputLimitBytes": 16777216,
+  "nominalSleepSeconds": 0.05,
+  "success": true,
+  "closed": true,
+  "samples": 5,
+  "peakSampledGroupRssBytes": 54657024,
+  "maxSampleGapSeconds": 0.08270216640084982,
+  "terminationReason": null,
+  "containmentScope": "Reviewed children spawn no subprocesses. Retained guardian owns process group; sampling is not hostile-code/escaped-descendant isolation.",
+  "processGroup": 86849,
+  "scientificChildAbsentBeforeRelease": true,
+  "exitCode": 0,
+  "guardianExitCode": 0,
+  "childGroupAbsent": true,
+  "logs": [
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/results/checker-stdout.log",
+      "rawBytes": 68,
+      "rawSha256": "de2c0cb1ec351023376b9ef1f4a6d2e49c8e6b561d54b3e06357a249d113d4cf",
+      "publishedBytes": 68,
+      "publishedSha256": "de2c0cb1ec351023376b9ef1f4a6d2e49c8e6b561d54b3e06357a249d113d4cf",
+      "redaction": "machine/runtime path prefixes replaced; raw logs retained privately"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/results/checker-stderr.log",
+      "rawBytes": 0,
+      "rawSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "publishedBytes": 0,
+      "publishedSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "redaction": "machine/runtime path prefixes replaced; raw logs retained privately"
+    }
+  ],
+  "output": {
+    "path": "research/m31-interval-primitives-2026-10-16/results/independent-check.json",
+    "bytes": 8695,
+    "sha256": "4b4111472f257f84c5139c7152b0dcd26e379fa3873557ba2d7009dd5c9cc5f3"
+  },
+  "sourceAndRuntimeRechecked": true,
+  "wallSeconds": 0.6027210829779506,
+  "finalOutputBytesBeforeReport": 1417174
+}

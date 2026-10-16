@@ -1,0 +1,68 @@
+{
+  "stage": "kernel",
+  "sourceCommit": "7f353dee5a1a06f15f4fc2cb85a20da3f653fd0c",
+  "sourceManifestSha256": "fb3585e2eb5340a456fac47ec35957be9a5fcdc1e44425990475c9e3de3858dd",
+  "commandTemplate": [
+    "NODE",
+    "PACKAGE/source/run.cjs"
+  ],
+  "runtimePins": {
+    "node": {
+      "bytes": 121304480,
+      "sha256": "3c9448363b9976bf3d9e8f4d320397975800131b42c7b1be342dadc05871dd25",
+      "scope": "executable bytes only; loaded system libraries are not pinned"
+    },
+    "python": {
+      "bytes": 18058560,
+      "sha256": "7a314947596fc484d4ec36ffc28e843b78d6d749c68736f8b5c24e7333f418eb",
+      "scope": "executable bytes only; loaded system libraries are not pinned"
+    }
+  },
+  "wallLimitSeconds": 120,
+  "sampledRssLimitBytes": 1073741824,
+  "outputLimitBytes": 16777216,
+  "nominalSleepSeconds": 0.05,
+  "success": true,
+  "closed": true,
+  "samples": 7,
+  "peakSampledGroupRssBytes": 72744960,
+  "maxSampleGapSeconds": 0.08820133283734322,
+  "terminationReason": null,
+  "containmentScope": "Reviewed children spawn no subprocesses. Retained guardian owns process group; sampling is not hostile-code/escaped-descendant isolation.",
+  "processGroup": 86822,
+  "scientificChildAbsentBeforeRelease": true,
+  "exitCode": 0,
+  "guardianExitCode": 0,
+  "childGroupAbsent": true,
+  "logs": [
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/results/kernel-stdout.log",
+      "rawBytes": 54,
+      "rawSha256": "338c1ca460f46e231c42728fe815d0bd1e13b46d8ea20ce2e3ba21f09684bf63",
+      "publishedBytes": 54,
+      "publishedSha256": "338c1ca460f46e231c42728fe815d0bd1e13b46d8ea20ce2e3ba21f09684bf63",
+      "redaction": "machine/runtime path prefixes replaced; raw logs retained privately"
+    },
+    {
+      "path": "research/m31-interval-primitives-2026-10-16/results/kernel-stderr.log",
+      "rawBytes": 0,
+      "rawSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "publishedBytes": 0,
+      "publishedSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "redaction": "machine/runtime path prefixes replaced; raw logs retained privately"
+    }
+  ],
+  "output": {
+    "path": "research/m31-interval-primitives-2026-10-16/results/primitive-results.json",
+    "bytes": 812099,
+    "sha256": "934030da979dc7808f26bfbcbb02c09a858ecc1c9a753df1f8a1c63c4a3bbfeb"
+  },
+  "journal": {
+    "path": "research/m31-interval-primitives-2026-10-16/results/primitive-results.json.jsonl",
+    "bytes": 592720,
+    "sha256": "30a59f8d43419bcd55c422056d4da818130166486c14777e4863d556162f01e5"
+  },
+  "sourceAndRuntimeRechecked": true,
+  "wallSeconds": 0.7840024176985025,
+  "finalOutputBytesBeforeReport": 1405316
+}
