@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-16",
+  "task": "Assess one direct receiver-thrust reference and an explicit control bridge",
+  "new_external_activity": {
+    "searches": 0,
+    "primary_document_requests": 0,
+    "dataset_requests": 0,
+    "archive_requests": 0,
+    "downloads": 0,
+    "author_contacts": 0,
+    "installations": 0
+  },
+  "scientific_work": {
+    "interpolations_evaluated": 0,
+    "model_evaluations": 0,
+    "curve_scores": 0,
+    "fits": 0,
+    "scientific_executions": 0,
+    "public_edits": 0
+  },
+  "repository_root": "[repository root]",
+  "planning_records_read": [
+    "research/m31-source-reference-admission-2026-10-16/review/CONTROL-CONDITION-CORRECTION.md",
+    "research/m31-omission-ablation-2026-10-16/physical-compatibility-review.md",
+    "research/m31-omission-ablation-2026-10-16/physical-data-followup.md",
+    "research/m31-next-reference-decision-2026-10-16/PROPOSAL.md",
+    "research/m31-next-reference-decision-2026-10-16/DECISION.md"
+  ],
+  "retained_primary_reads": [
+    {"path":"[private staging]/uiuc-paper.txt","scope":"Title/byline and sections II-A through II-E; printed pages 2-5; search for control/calibration/correction locators","source_url":"https://m-selig.ae.illinois.edu/pubs/DetersAnandaSelig-2014-AIAA-2014-2151.pdf"},
+    {"path":"[private staging]/uiuc-crossref.json","scope":"Bibliographic metadata","source_doi":"10.2514/6.2014-2151"},
+    {"path":"[private staging]/uiuc-volume2.html","scope":"Saved GWS file association and nearby specimen headings","source_url":"https://m-selig.ae.illinois.edu/props/volume-2/propDB-volume-2.html"},
+    {"path":"[private staging]/uiuc-gws-static.txt","scope":"Existing static file and exact RPM baseline anchors; no interpolation evaluated","source_url":"https://m-selig.ae.illinois.edu/props/volume-2/data/gwsdd_2.5x0.8_static_0500rd.txt"},
+    {"path":"[private staging]/uiuc-gws-15030.txt","scope":"Already-exposed file body reread before later metadata-only steering; no scoring or favorable-condition selection; no subsequent target-value inspection","source_url":"https://m-selig.ae.illinois.edu/props/volume-2/data/gwsdd_2.5x0.8_0503rd_15030.txt"}
+  ],
+  "baseline_proposal": {
+    "nominal_RPM": "15030",
+    "selection_rule": "nearest strictly lower and higher static RPM, independent of coefficient values",
+    "lower_anchor_data_row": 13,
+    "upper_anchor_data_row": 14,
+    "method": "linear interpolation of CT in RPM",
+    "sensitivity": "repeat with each anchor CT; scenarios, not confidence or guaranteed bounds",
+    "evaluated": false
+  },
+  "closed_routes_retried": [],
+  "decision": "One existing-run descriptive coefficient transfer is well-defined under explicit assumptions; no direct M28 physical qualification or executable allocation granted",
+  "public_reporting_proposal": "Derived aggregate summary with source links/hashes; omit raw files, full paper, and reconstructive full-row outputs",
+  "license_status": "Dataset redistribution license not verified; no contrary license inferred"
+}

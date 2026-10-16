@@ -1,0 +1,3 @@
+# Source publication privacy review
+
+Original UIUC source tables, paper and complete derived rows are excluded from the public checkout. Existing cached source bytes are retained in a dedicated private evidence directory. Public files contain our analysis/protocol, citations/source hashes, two baseline anchor values, source admission and aggregate-only output specification. No dataset license is invented. Admission-note private paths were replaced with descriptive placeholders; original/public hashes in admission/IMPORT.json preserve that transformation. No personal paths, credentials, chat records or original paper/figure are included. The analyzer enforces a private output destination outside the public checkout.

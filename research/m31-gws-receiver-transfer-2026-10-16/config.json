@@ -1,0 +1,26 @@
+{
+  "kind": "exposed-GWS-coefficient-transfer",
+  "nominal_run_rpm": 15030,
+  "axial": {
+    "url": "https://m-selig.ae.illinois.edu/props/volume-2/data/gwsdd_2.5x0.8_0503rd_15030.txt",
+    "sha256": "856147593b897d1d4c61cd98e3db8e6f5f200769f1126bad1ffa040302195658",
+    "rows": 14,
+    "header": ["J", "CT", "CP", "eta"]
+  },
+  "static": {
+    "url": "https://m-selig.ae.illinois.edu/props/volume-2/data/gwsdd_2.5x0.8_static_0500rd.txt",
+    "sha256": "e9da09f8bf80445334e879c501d9699005dba2f1780c51618f2c9dbf89cbb9be",
+    "rows": 24,
+    "header": ["RPM", "CT", "CP"]
+  },
+  "database_url": "https://m-selig.ae.illinois.edu/props/volume-2/propDB-volume-2.html",
+  "retained_database_sha256": "0077508dd1f3f0aacc365551e4efa43e7873601e88d6b642557ba7d3edc40a30",
+  "methods_url": "https://m-selig.ae.illinois.edu/pubs/DetersAnandaSelig-2014-AIAA-2014-2151.pdf",
+  "retained_methods_pdf_sha256": "40d54828999ab9c0bda7fe5ab637160a9836994f3bde3b55835d06b8f0492b2a",
+  "scenarios": ["linear-static-baseline", "lower-rpm-anchor", "higher-rpm-anchor"],
+  "max_iterations_per_root": 96,
+  "root_width_tolerance": 2e-15,
+  "root_residual_tolerance": 1e-12,
+  "physical_adequacy_threshold": null,
+  "experimental_confidence_interval": null
+}
