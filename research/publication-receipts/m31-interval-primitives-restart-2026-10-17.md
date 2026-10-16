@@ -1,0 +1,9 @@
+# Published primitive checkpoint restart
+
+Result commit fbd3019a7c7cf21fadc7d92323fdb34c09ecf0d8 is pushed on codex/m31-audit-2026-10-15. Its exact-commit manifest was independently downloaded over verified HTTPS from GitHub and matched local committed bytes; 65 package pins and 16 inherited references matched working and committed files. The adjacent publication receipt records SHA-256 and Git blob identities.
+
+The sole kernel and independent-checker executions are closed, both successful. All 1,488 declared outcomes matched, including 456 correct refusals; all six negative probes were rejected. Fresh process-group absence was observed after both stages. The saved-evidence review is retained. Scientific source and initial snapshots remain unchanged. Display-only QA passed 31 checks and the new page was opened in Codex (queued by the app); port 8876 remains the existing local server.
+
+This goal turn is progress, not a wait or blocked turn. Overall research remains incomplete. Follow research/m31-interval-primitives-2026-10-16/RESTART.md for the next current-geometry/model-integration gate. Do not rerun this closed suite, call Node-only primitive evidence browser qualification, or infer drone-query latency from supervision time. No new literature/physical source was acquired, and no new flight was generated. Preserve the original full current-state 5,000-drone Boids/dynamics/aerodynamics objective and matched accuracy–computation comparison.
+
+The next meaningful step is to freeze the M-current operands/preparation and branch/admission model, then connect the qualified arithmetic to coefficient and row-contraction enclosures under a new reviewed prospective allocation. The native-program bridge, group-bound tightness/cost, browser runtime, integrated flight, physical evidence and novelty remain open. There is no active scientific process from this checkpoint to wait on or resume.
