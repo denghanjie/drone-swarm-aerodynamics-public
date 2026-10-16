@@ -1,0 +1,66 @@
+{
+  "stage": "kernel",
+  "sourceCommit": "6ed4471c2dc7e920a1a63d16eafb6bdb9616a9da",
+  "sourceManifestSha256": "0c060673654bbda87fc3be69c442d0bad2d48f7b2005f415a0128000048ce012",
+  "commandTemplate": [
+    "NODE",
+    "PACKAGE/source/run.cjs"
+  ],
+  "runtimePins": {
+    "node": {
+      "bytes": 121304480,
+      "sha256": "3c9448363b9976bf3d9e8f4d320397975800131b42c7b1be342dadc05871dd25"
+    },
+    "python": {
+      "bytes": 18058560,
+      "sha256": "7a314947596fc484d4ec36ffc28e843b78d6d749c68736f8b5c24e7333f418eb"
+    }
+  },
+  "wallLimitSeconds": 120,
+  "sampledRssLimitBytes": 1073741824,
+  "outputLimitBytes": 16777216,
+  "nominalSleepSeconds": 0.05,
+  "success": true,
+  "closed": true,
+  "samples": 6,
+  "peakSampledGroupRssBytes": 93175808,
+  "maxSampleGapSeconds": 0.08065016660839319,
+  "terminationReason": null,
+  "containmentScope": "Reviewed children spawn no subprocesses. Retained guardian owns process group; sampling is not hostile-code/escaped-descendant isolation.",
+  "processGroup": 92690,
+  "scientificChildAbsentBeforeRelease": true,
+  "exitCode": 0,
+  "guardianExitCode": 0,
+  "childGroupAbsent": true,
+  "logs": [
+    {
+      "path": "research/m31-current-pair-2026-10-17/results/kernel-stdout.log",
+      "rawBytes": 16,
+      "rawSha256": "a1841c6e68630dd232008fc189b9637e6dc09536f6fad29524b82c38ae95d5d0",
+      "publishedBytes": 16,
+      "publishedSha256": "a1841c6e68630dd232008fc189b9637e6dc09536f6fad29524b82c38ae95d5d0",
+      "redaction": "machine/runtime path prefixes replaced; raw logs retained privately"
+    },
+    {
+      "path": "research/m31-current-pair-2026-10-17/results/kernel-stderr.log",
+      "rawBytes": 0,
+      "rawSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "publishedBytes": 0,
+      "publishedSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "redaction": "machine/runtime path prefixes replaced; raw logs retained privately"
+    }
+  ],
+  "output": {
+    "path": "research/m31-current-pair-2026-10-17/results/pair-results.json",
+    "bytes": 1511774,
+    "sha256": "c04f48318992dcf7cb6ffed9eefc6bc3aef93fb2025b7c916208ccfe53883675"
+  },
+  "journal": {
+    "path": "research/m31-current-pair-2026-10-17/results/pair-results.json.jsonl",
+    "bytes": 774883,
+    "sha256": "32a55372b14fdbb64c8d6d983fa92ba49ec7d7fe7868e202f77e08cbdd643453"
+  },
+  "sourceAndRuntimeRechecked": true,
+  "wallSeconds": 0.554337834008038,
+  "finalOutputBytesBeforeReport": 2287078
+}

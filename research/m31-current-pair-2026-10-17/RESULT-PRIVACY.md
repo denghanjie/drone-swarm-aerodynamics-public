@@ -1,0 +1,7 @@
+# Result publication privacy review
+
+The added records contain synthetic two-drone inputs, prepared geometry, exact numeric intervals, case IDs, source/runtime hashes and bounded supervision metadata. They contain no real flight locations, private attachments/chat records, credentials or original paper assets. Logs are empty except for compact record-count/verdict summaries; machine/runtime path-prefix redaction is recorded by the supervisor and private originals remain outside the repository.
+
+The saved-result audit and pins use repository-relative paths. Source freeze remains unchanged. The Three.js diagnostic reads synthetic saved records, and the embedded historical Boids assets were already public. Browser screenshots show only the local research page, without personal browser chrome. Publication scans target absolute user paths and credential patterns; broad words such as repository/private/runtime in explanatory prose are benign. Runtime version, process-group IDs and executable hashes are retained as reproducibility metadata, with no claim of hermetic execution or anonymous hardware.
+
+Only this new research package and its later publication receipt/restart files are staged for the existing authorized public branch. No private-cwd files are copied. Result artifacts will be pinned, committed, pushed and independently checked against exact public-commit manifest bytes. Any display attempt or failure is preserved separately and cannot change scientific qualification.

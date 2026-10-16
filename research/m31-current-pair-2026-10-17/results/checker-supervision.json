@@ -1,0 +1,71 @@
+{
+  "stage": "checker",
+  "sourceCommit": "6ed4471c2dc7e920a1a63d16eafb6bdb9616a9da",
+  "sourceManifestSha256": "0c060673654bbda87fc3be69c442d0bad2d48f7b2005f415a0128000048ce012",
+  "commandTemplate": [
+    "PYTHON",
+    "PACKAGE/source/check.py",
+    "--spec",
+    "PACKAGE/source/spec.json",
+    "--input",
+    "PACKAGE/results/pair-results.json",
+    "--manifest",
+    "PACKAGE/source-manifest.json",
+    "--output",
+    "PACKAGE/results/independent-check.json",
+    "--root",
+    "REPOSITORY_ROOT"
+  ],
+  "runtimePins": {
+    "node": {
+      "bytes": 121304480,
+      "sha256": "3c9448363b9976bf3d9e8f4d320397975800131b42c7b1be342dadc05871dd25"
+    },
+    "python": {
+      "bytes": 18058560,
+      "sha256": "7a314947596fc484d4ec36ffc28e843b78d6d749c68736f8b5c24e7333f418eb"
+    }
+  },
+  "wallLimitSeconds": 120,
+  "sampledRssLimitBytes": 1073741824,
+  "outputLimitBytes": 16777216,
+  "nominalSleepSeconds": 0.05,
+  "success": true,
+  "closed": true,
+  "samples": 6,
+  "peakSampledGroupRssBytes": 65224704,
+  "maxSampleGapSeconds": 0.06921562552452087,
+  "terminationReason": null,
+  "containmentScope": "Reviewed children spawn no subprocesses. Retained guardian owns process group; sampling is not hostile-code/escaped-descendant isolation.",
+  "processGroup": 92775,
+  "scientificChildAbsentBeforeRelease": true,
+  "exitCode": 0,
+  "guardianExitCode": 0,
+  "childGroupAbsent": true,
+  "logs": [
+    {
+      "path": "research/m31-current-pair-2026-10-17/results/checker-stdout.log",
+      "rawBytes": 98,
+      "rawSha256": "1755f749f6447688b5e9d36cf345cd9f90e169d2deb8f830d5652591dc91a961",
+      "publishedBytes": 98,
+      "publishedSha256": "1755f749f6447688b5e9d36cf345cd9f90e169d2deb8f830d5652591dc91a961",
+      "redaction": "machine/runtime path prefixes replaced; raw logs retained privately"
+    },
+    {
+      "path": "research/m31-current-pair-2026-10-17/results/checker-stderr.log",
+      "rawBytes": 0,
+      "rawSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "publishedBytes": 0,
+      "publishedSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "redaction": "machine/runtime path prefixes replaced; raw logs retained privately"
+    }
+  ],
+  "output": {
+    "path": "research/m31-current-pair-2026-10-17/results/independent-check.json",
+    "bytes": 476965,
+    "sha256": "688826dab19c5ae790dd6cae7e70db4a1a7030f2517a24c75b9f65edd45247c9"
+  },
+  "sourceAndRuntimeRechecked": true,
+  "wallSeconds": 0.5339858755469322,
+  "finalOutputBytesBeforeReport": 2767106
+}
