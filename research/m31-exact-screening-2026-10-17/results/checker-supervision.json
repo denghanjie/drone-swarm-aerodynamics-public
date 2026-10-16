@@ -1,0 +1,79 @@
+{
+  "stage": "checker",
+  "sourceCommit": "20edde079fe3092e11da499405f0d6dbbbf38a27",
+  "sourceManifestSha256": "4461e173ef9bc889f1fea7d73e8629a0f5db915881b16bb94a0c2238b243e62c",
+  "commandTemplate": [
+    "PYTHON",
+    "PACKAGE/source/check.py",
+    "--spec",
+    "PACKAGE/source/spec.json",
+    "--input",
+    "PACKAGE/results/screening-results.json",
+    "--manifest",
+    "PACKAGE/source-manifest.json",
+    "--output",
+    "PACKAGE/results/independent-check.json",
+    "--root",
+    "REPOSITORY_ROOT"
+  ],
+  "runtimePins": {
+    "node": {
+      "bytes": 121304480,
+      "sha256": "3c9448363b9976bf3d9e8f4d320397975800131b42c7b1be342dadc05871dd25"
+    },
+    "python": {
+      "bytes": 18058560,
+      "sha256": "7a314947596fc484d4ec36ffc28e843b78d6d749c68736f8b5c24e7333f418eb"
+    }
+  },
+  "wallLimitSeconds": 600,
+  "guardianWallLimitSeconds": 610,
+  "sampledRssLimitBytes": 1073741824,
+  "outputLimitBytes": 402653184,
+  "artifactLimitBytes": {
+    "screening-results.json": 134217728,
+    "screening-results.json.jsonl": 134217728,
+    "independent-check.json": 100663296
+  },
+  "logMetadataLimitBytes": 16777216,
+  "finalReportLimitBytes": 65536,
+  "nominalSleepSeconds": 0.05,
+  "success": true,
+  "closed": true,
+  "samples": 260,
+  "peakSampledGroupRssBytes": 140787712,
+  "maxSampleGapSeconds": 0.08752958383411169,
+  "terminationReason": null,
+  "containmentScope": "Reviewed children spawn no subprocesses. Retained guardian owns process group; sampling is not hostile-code/escaped-descendant isolation.",
+  "processGroup": 3118,
+  "scientificChildAbsentBeforeRelease": true,
+  "exitCode": 0,
+  "guardianExitCode": 0,
+  "childGroupAbsent": true,
+  "logs": [
+    {
+      "path": "research/m31-exact-screening-2026-10-17/results/checker-stdout.log",
+      "rawBytes": 145,
+      "rawSha256": "5e9523578d9119bde86fd3ff835f29a16490cf8c7ad1a3d8dfee6af0bee8f73e",
+      "publishedBytes": 145,
+      "publishedSha256": "5e9523578d9119bde86fd3ff835f29a16490cf8c7ad1a3d8dfee6af0bee8f73e",
+      "redaction": "machine/runtime path prefixes replaced; raw logs retained privately"
+    },
+    {
+      "path": "research/m31-exact-screening-2026-10-17/results/checker-stderr.log",
+      "rawBytes": 0,
+      "rawSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "publishedBytes": 0,
+      "publishedSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "redaction": "machine/runtime path prefixes replaced; raw logs retained privately"
+    }
+  ],
+  "output": {
+    "path": "research/m31-exact-screening-2026-10-17/results/independent-check.json",
+    "bytes": 703228,
+    "sha256": "4db1cbdfa86b87ff08969565ce7933c1d87ee6b8f896bd56b5ad2790b2d5ae9a"
+  },
+  "sourceAndRuntimeRechecked": true,
+  "finalOutputBytesBeforeReport": 6463682,
+  "wallSeconds": 19.675299166701734
+}

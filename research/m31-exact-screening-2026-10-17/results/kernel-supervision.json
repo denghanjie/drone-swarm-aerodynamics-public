@@ -1,0 +1,74 @@
+{
+  "stage": "kernel",
+  "sourceCommit": "20edde079fe3092e11da499405f0d6dbbbf38a27",
+  "sourceManifestSha256": "4461e173ef9bc889f1fea7d73e8629a0f5db915881b16bb94a0c2238b243e62c",
+  "commandTemplate": [
+    "NODE",
+    "PACKAGE/source/run.cjs"
+  ],
+  "runtimePins": {
+    "node": {
+      "bytes": 121304480,
+      "sha256": "3c9448363b9976bf3d9e8f4d320397975800131b42c7b1be342dadc05871dd25"
+    },
+    "python": {
+      "bytes": 18058560,
+      "sha256": "7a314947596fc484d4ec36ffc28e843b78d6d749c68736f8b5c24e7333f418eb"
+    }
+  },
+  "wallLimitSeconds": 300,
+  "guardianWallLimitSeconds": 310,
+  "sampledRssLimitBytes": 1073741824,
+  "outputLimitBytes": 402653184,
+  "artifactLimitBytes": {
+    "screening-results.json": 134217728,
+    "screening-results.json.jsonl": 134217728,
+    "independent-check.json": 100663296
+  },
+  "logMetadataLimitBytes": 16777216,
+  "finalReportLimitBytes": 65536,
+  "nominalSleepSeconds": 0.05,
+  "success": true,
+  "closed": true,
+  "samples": 39,
+  "peakSampledGroupRssBytes": 122191872,
+  "maxSampleGapSeconds": 0.07792400009930134,
+  "terminationReason": null,
+  "containmentScope": "Reviewed children spawn no subprocesses. Retained guardian owns process group; sampling is not hostile-code/escaped-descendant isolation.",
+  "processGroup": 3070,
+  "scientificChildAbsentBeforeRelease": true,
+  "exitCode": 0,
+  "guardianExitCode": 0,
+  "childGroupAbsent": true,
+  "logs": [
+    {
+      "path": "research/m31-exact-screening-2026-10-17/results/kernel-stdout.log",
+      "rawBytes": 122,
+      "rawSha256": "57590c939fa7eba8507996b66755dcf030b634084fcc5e54441e5146aa91f224",
+      "publishedBytes": 122,
+      "publishedSha256": "57590c939fa7eba8507996b66755dcf030b634084fcc5e54441e5146aa91f224",
+      "redaction": "machine/runtime path prefixes replaced; raw logs retained privately"
+    },
+    {
+      "path": "research/m31-exact-screening-2026-10-17/results/kernel-stderr.log",
+      "rawBytes": 0,
+      "rawSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "publishedBytes": 0,
+      "publishedSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "redaction": "machine/runtime path prefixes replaced; raw logs retained privately"
+    }
+  ],
+  "output": {
+    "path": "research/m31-exact-screening-2026-10-17/results/screening-results.json",
+    "bytes": 2878857,
+    "sha256": "0b8f8e79ba7892faebe3ad8dc8632dcac618e125d654297e272d2aee28b7fd02"
+  },
+  "journal": {
+    "path": "research/m31-exact-screening-2026-10-17/results/screening-results.json.jsonl",
+    "bytes": 2877627,
+    "sha256": "12b08466a3fd11e717931b6c15787cf701a77b8ab218433c1a48201574d4337f"
+  },
+  "sourceAndRuntimeRechecked": true,
+  "finalOutputBytesBeforeReport": 5757114,
+  "wallSeconds": 2.941808333620429
+}
