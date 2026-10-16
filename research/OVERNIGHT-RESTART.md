@@ -12,6 +12,8 @@ One candidate and one independent review allocation are consumed and closed. All
 
 The previous source-admission package is independently published at bad27db6d099ce2b5ece13d825f8dcb9faf9be97, receipt in research/publication-receipts/. Physical command/source validation, fresh solver falsification, full timings, Boids/dynamics integration and5000-drone feasibility remain open. No fresh numerical allocation exists yet. The overall goal remains active; this turn made substantive computational and publication progress, not a wait-only or unchanged-blocker turn. Historical cutoff and terminal budgets are preserved below.
 
+Result independently published and verified at `e800fe10daed3b969798e87d2a62be44f7423a24`. Exact9857-byte manifest SHA256 `3456b54fffb064c4b827ca7bad0e64a140025b45c9e32eee86eea6571e645387`; all61 local/committed pins (3152885bytes) match. Receipt: `research/publication-receipts/m31-coupled-solve-2026-10-16.json`. Viewer open request queued in app. No scientific, review or QA process remains active. Overall goal remains active/incomplete.
+
 ## Historical pre-execution record — four-rotor source freeze
 
 `research/m31-coupled-solve-2026-10-16/` defines a separately bounded four-rotor steady-coupling verification after the closed physical-transfer and source-admission questions. Two eight-drone ladders, a six-drone cycle, and a nearby rejection control are fixed before any target evaluation. An explicit hypothetical source-strength law retains all four receiver roots. Static proofs establish a sufficient45degree downward-order condition and a factor1/2 log-coordinate contraction for the fixed nonnegative-coefficient contract. Neither is physical validation or novelty.
