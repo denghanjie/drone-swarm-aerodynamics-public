@@ -1,3 +1,9 @@
+# Current preparation: genuine moving-state admission
+
+Closed source-only decision: m31-moving-admission-planning-2026-10-17/PARENT-DECISION.md. The next question is actual full17-field flight-state admission, not a Chrome speed race. New m31-moving-admission-2026-10-17 is source preparation only; no numerical generation or evaluation has run. Read its prospective protocol, config and source review before any continuation. All earlier allocations closed. Latest completed numerical viewer remains m31-filter-cost; preserve localhost8876. Source must be frozen/pushed/exactly verified before any new science. No new overnight launch after07:00Asia/Shanghai17Oct.
+
+---
+
 # Latest completed checkpoint: scalar filtering reduces total method cost
 
 Read [verified restart](publication-receipts/m31-filter-cost-restart-2026-10-17.md) and [plain-language milestone](m31-filter-cost-2026-10-17/MILESTONE-SUMMARY.md). Result99a9b742e6a555e51bbdb8a88f69fdcfc101ccf0 is publicly verified:134pins. All6scientific gates and the3dense benefit gates passed; all24pairs favoured filtering. Scientific/display allocations are closed. Next browser/local3D Boids-state transfer is planning only, with no numerical successor allocation. Read NEXT-QUESTION before defining it. Keep localhost8876 running. Overall goal remains active/incomplete.

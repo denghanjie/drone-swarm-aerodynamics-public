@@ -1,0 +1,132 @@
+{
+  "reviewer": "m31_protocol_challenge",
+  "role": "admission challenge",
+  "phase": "source-only planning; all scientific allocations closed",
+  "inheritedContentCap": 12,
+  "inheritedDistinctContentFiles": 12,
+  "capReached": true,
+  "files": [
+    {
+      "path": "research/m31-filter-cost-2026-10-17/MODEL.md",
+      "bytes": 2091,
+      "sha256": "9e82ae308efa3c7de241cdc89be9ad984061e957bf25e928dd4b4eca68144e42",
+      "inspectedLocations": "all; lines1-11",
+      "purpose": "Current model/evidence boundary"
+    },
+    {
+      "path": "research/m31-filter-cost-2026-10-17/source/loads.cjs",
+      "bytes": 5348,
+      "sha256": "c3fa665a8512ad0c9a73f964b26014c3ad329ee73b68589a61404a3d54ab8a4b",
+      "inspectedLocations": "all; lines1-75",
+      "purpose": "Actual load solver and certificate; no dynamics"
+    },
+    {
+      "path": "research/m31-filter-cost-2026-10-17/source/methods.cjs",
+      "bytes": 6204,
+      "sha256": "9cc6f8dc3bd82acc873f73e52b520297bcba90dea6985bf67fa96ac38fa450d6",
+      "inspectedLocations": "all; lines1-82",
+      "purpose": "Raw admission, pair coverage and fixed-order rejection"
+    },
+    {
+      "path": "research/m31-filter-cost-2026-10-17/source/adapter.cjs",
+      "bytes": 2400,
+      "sha256": "5cf2b2ddc590915c63bae4f3909e90f196277804d1524aa0ef68165e6b1e4145",
+      "inspectedLocations": "all; lines1-15",
+      "purpose": "Preparation/finite/force/quaternion/geometry gates"
+    },
+    {
+      "path": "research/m31-filter-cost-2026-10-17/source/pair-prepared.cjs",
+      "bytes": 3357,
+      "sha256": "e963362c4b095196b5cc0bcc67c1b613f28c4d6a5e5d5e15101a4f847a61ff56",
+      "inspectedLocations": "all; lines1-33",
+      "purpose": "Exact pointwise branch priority and pair domains"
+    },
+    {
+      "path": "research/m31-filter-cost-2026-10-17/source/tree.cjs",
+      "bytes": 2688,
+      "sha256": "589acbb740cd6cbb3e1ddca784b087dc4a6d60b5276daaaf6118bae87d9f0461",
+      "inspectedLocations": "all; lines1-39",
+      "purpose": "Global shortcut guard versus scalar fallback"
+    },
+    {
+      "path": "research/m31-motion-feedback-2026-10-16/source/adapter.cjs",
+      "bytes": 5367,
+      "sha256": "332035b55439c568f3a4372c94557359e5ca4a264e3a0f635abdd28ac075a0a9",
+      "inspectedLocations": "all; lines1-24",
+      "purpose": "Legacy feedback and normalized RK-stage distinction"
+    },
+    {
+      "path": "research/m31-filter-cost-2026-10-17/source/semantic-reference.py",
+      "bytes": 39634,
+      "sha256": "ee77aab09109d3fba898555dacc4509312813caae4116bb3e1063efd88e3ad2c",
+      "inspectedLocations": "selected lines175-218 and517-608",
+      "purpose": "Independent fixed-order roots and pair classification"
+    },
+    {
+      "path": "outputs/milestone-10-source/boids.cjs",
+      "bytes": 2320,
+      "sha256": "f201b614d53854314348f413e7e4fb197ee85a9f2cdf2983a870bfe768f48688",
+      "inspectedLocations": "all; lines1-20",
+      "purpose": "Older steering is horizontal despite3D neighbor distance"
+    },
+    {
+      "path": "research/m31-motion-feedback-2026-10-16/source/experiment.cjs",
+      "bytes": 9417,
+      "sha256": "13a6f7034ac475cf6e4529394c5ccc6bbba82971e638ca7d90363c9c63d991b0",
+      "inspectedLocations": "all; lines1-29",
+      "purpose": "Legacy flight-state capture/controller and declared limitations"
+    },
+    {
+      "path": "outputs/milestone-31-source/sim.cjs",
+      "bytes": 11475,
+      "sha256": "2b6fbc51334fd0669b23eb7173c6af83e62414a725b032796df5cb38ac7f1c9e",
+      "inspectedLocations": "all; lines1-52 plus function-name search",
+      "purpose": "Actual local3D Boids/flight-control path"
+    },
+    {
+      "path": "outputs/step02c-source/physics.cjs",
+      "bytes": 6115,
+      "sha256": "0c46c9beb4e831c621658f6600c074f97c95966de07f5000eb64aa476a443fa1",
+      "inspectedLocations": "all; lines1-38 plus function-name search",
+      "purpose": "Actual rigid-body attitude/motor integration and controller"
+    }
+  ],
+  "newScope": {
+    "path": "research/m31-moving-admission-planning-2026-10-17/PROSPECTIVE-SCOPE.md",
+    "bytes": 3113,
+    "sha256": "8b5fa4b66a048ae74f031de450f3f4e398375251d437361f26da353341aa74ae"
+  },
+  "numericalResultFilesRead": [],
+  "scientificImportsExecutionsGenerationOrProbes": 0,
+  "newAgentsSpawned": 0,
+  "outputsAuthorized": [
+    "review/ADMISSION-CHALLENGE.md",
+    "review/ADMISSION-READING.json"
+  ],
+  "knownUnreadDependencies": [
+    "outputs/milestone-31-source/factory.cjs",
+    "outputs/milestone-31-source/grid.cjs",
+    "outputs/milestone-31-source/geometry.cjs",
+    "outputs/milestone-31-source/wall-filter.cjs",
+    "current browser transport",
+    "full legacy typed coupling kernel"
+  ],
+  "observationBoundary": "Published static benefit and seconds-at180 statement inherited from new PROSPECTIVE-SCOPE.md only; no result data reopened or recomputed. New schedule and nonvacuity thresholds are proposals awaiting separate protocol/source/publication gate.",
+  "parentProposedSuccessor": {
+    "seeds": [
+      26171001,
+      26171002
+    ],
+    "dronesPerSeed": 64,
+    "durationSeconds": 10,
+    "dtLiteral": "0.0025",
+    "snapshotTimes": [
+      0,
+      5,
+      10
+    ],
+    "plannedSnapshotSlots": 6,
+    "poseCadenceLiteral": "0.2",
+    "scope": "Source-only interface assessment; no trajectory generated, no numerical allocation."
+  }
+}
