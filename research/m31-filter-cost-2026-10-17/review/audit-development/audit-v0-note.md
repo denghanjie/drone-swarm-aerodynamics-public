@@ -1,0 +1,1 @@
+The first administrative audit completed its checks but its report serializer failed because a byte-valued disagreement was not JSON serializable. No frozen or scientific result artifact was changed. The next audit revision preserves disagreement byte lengths, hashes, first differing offset and bounded hexadecimal context. No scientific model or checker was imported or rerun.

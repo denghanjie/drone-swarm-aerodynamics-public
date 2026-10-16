@@ -8,7 +8,9 @@ This is an ongoing research record, including unsuccessful experiments. The hist
 
 ## Current Milestone 31 restart
 
-Latest result: [finite conservative-filter verification](research/m31-filter-design-2026-10-17/MILESTONE-SUMMARY.md) qualified 108 fixed cases and detected all 16 deliberate corruption controls. The filter directly proved five of 19 exact-model zero interactions; uncertain cases used unchanged exact fallback. This selected boundary suite measures correctness, not typical hit rate or speed. The [updated Three.js diagnostic](research/m31-filter-design-2026-10-17/viewer/) shows all 36 pair cases and their saved decisions. Total-cost benefit, physical validity and novelty remain open.
+Latest result: [the scalar filter reduces total method cost](research/m31-filter-cost-2026-10-17/MILESTONE-SUMMARY.md) passed independent numerical qualification and its preregistered benefit rule on all three dense sizes. Median paired filtered/hierarchy ratios were 0.683, 0.621 and 0.651; all 24 measured pairs favoured filtering. All six scenes retained the same scientific outputs and all 18 corruption controls were detected. Dense 180 still took a filtered median 3.891 seconds, so real-time coupled flight remains open. The [updated Three.js group view](research/m31-filter-cost-2026-10-17/viewer/) shows the saved groups, additional filter zeros and every timing pair. This is a fixed static Node result, without physical-validity or novelty claims.
+
+Earlier result: [finite conservative-filter verification](research/m31-filter-design-2026-10-17/MILESTONE-SUMMARY.md) qualified 108 fixed cases and detected all 16 deliberate corruption controls. The filter directly proved five of 19 exact-model zero interactions; uncertain cases used unchanged exact fallback. This selected boundary suite measures correctness, not typical hit rate or speed. The [updated Three.js diagnostic](research/m31-filter-design-2026-10-17/viewer/) shows all 36 pair cases and their saved decisions. Total-cost benefit, physical validity and novelty remain open.
 
 Earlier result: [matched total calculation cost](research/m31-screening-cost-2026-10-17/MILESTONE-SUMMARY.md) qualified all six static upright lattice scenes and all 15 fault controls. Exact screening was faster in all 24 measured pairs: median paired ratios were 1.40–1.63× for dense groups and 3.59–7.88× for sparse groups (complete/hierarchy). The dense 216-drone hierarchy calculation still took a median 8.761 seconds, so real-time 5,000-drone coupling remains open. The [updated Three.js view](research/m31-screening-cost-2026-10-17/viewer/) shows the saved groups, hierarchy, all timing pairs and stage costs. Numerical correctness under this model does not establish flight physics or novelty.
 
@@ -40,7 +42,7 @@ The earlier [GPU receiver component](research/m31-browser-receiver-2026-10-16/RE
 
 ## View the 3D lab
 
-For the current filter checkpoint, serve this repository with `python3 -m http.server 8876 --bind 127.0.0.1` and open <http://127.0.0.1:8876/research/m31-filter-design-2026-10-17/viewer/>. It uses the committed saved results and runs no scientific kernel.
+For the current filter-cost checkpoint, serve this repository with `python3 -m http.server 8876 --bind 127.0.0.1` and open <http://127.0.0.1:8876/research/m31-filter-cost-2026-10-17/viewer/>. It uses the committed saved results and runs no scientific kernel.
 
 For the historical interactive lab:
 

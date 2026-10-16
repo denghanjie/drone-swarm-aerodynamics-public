@@ -1,0 +1,217 @@
+{
+  "stage": "kernel",
+  "sourceCommit": "fb9754529a4df7350410187123c5d443e463cdf0",
+  "sourceManifestSha256": "dc9411801a710b774702787aa2aa7a9ec6cc47f4ea351b888e464fa25d5497ac",
+  "commandTemplate": [
+    "NODE",
+    "PACKAGE/source/run.cjs"
+  ],
+  "runtimePins": {
+    "node": {
+      "bytes": 121304480,
+      "sha256": "3c9448363b9976bf3d9e8f4d320397975800131b42c7b1be342dadc05871dd25"
+    },
+    "python": {
+      "bytes": 18058560,
+      "sha256": "7a314947596fc484d4ec36ffc28e843b78d6d749c68736f8b5c24e7333f418eb"
+    }
+  },
+  "wallLimitSeconds": 600,
+  "guardianWallLimitSeconds": 610,
+  "sampledRssLimitBytes": 1073741824,
+  "outputLimitBytes": 805306368,
+  "artifactLimitBytes": {
+    "timing-index.json": 8388608,
+    "timing-index.json.jsonl": 8388608,
+    "eachScientificOrAnomalyShard": 134217728,
+    "allScientificAndAnomalyShards": 402653184,
+    "allCheckerOutputs": 134217728
+  },
+  "logMetadataLimitBytes": 16777216,
+  "finalReportLimitBytes": 65536,
+  "nominalSleepSeconds": 0.05,
+  "success": true,
+  "closed": true,
+  "samples": 1251,
+  "peakSampledGroupRssBytes": 395919360,
+  "maxSampleGapSeconds": 0.15850033424794674,
+  "terminationReason": null,
+  "containmentScope": "Reviewed scientific children spawn no subprocesses. Retained guardian owns process group; sampling is not hostile-code/escaped-descendant isolation.",
+  "accountingScope": "Recursive closed-set results plus all four kernel/checker private raw logs and their public copies. Each scene or optional first-mismatch shard has a 128 MiB cap and all such shards share 384 MiB; checker main and references share 128 MiB; index and journal each have an 8 MiB cap; logs/metadata including private raw and public copies share 16 MiB; each supervision report has a 64 KiB cap; aggregate cap is 768 MiB.",
+  "processGroup": 19447,
+  "scientificChildAbsentBeforeRelease": true,
+  "exitCode": 0,
+  "guardianExitCode": 0,
+  "childGroupAbsent": true,
+  "logs": [
+    {
+      "path": "research/m31-filter-cost-2026-10-17/results/kernel-stdout.log",
+      "rawBytes": 111,
+      "rawSha256": "c40e90bbaab360f723880855dfdcc28da2a21c1d02ebd5ff2659b342763dcba7",
+      "publishedBytes": 111,
+      "publishedSha256": "c40e90bbaab360f723880855dfdcc28da2a21c1d02ebd5ff2659b342763dcba7",
+      "redaction": "machine/runtime path prefixes replaced; raw logs retained privately"
+    },
+    {
+      "path": "research/m31-filter-cost-2026-10-17/results/kernel-stderr.log",
+      "rawBytes": 0,
+      "rawSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "publishedBytes": 0,
+      "publishedSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "redaction": "machine/runtime path prefixes replaced; raw logs retained privately"
+    }
+  ],
+  "output": {
+    "path": "research/m31-filter-cost-2026-10-17/results/timing-index.json",
+    "bytes": 78096,
+    "sha256": "313ec62dcc790656ae9349ed7515d13aa984e40242d60c9744efd6e8c78f6306"
+  },
+  "journal": {
+    "path": "research/m31-filter-cost-2026-10-17/results/timing-index.json.jsonl",
+    "bytes": 82653,
+    "sha256": "f00f71c3d5122998ad431df18284c0cd0d975471ca8d0e59f4bd70267cf95b5d"
+  },
+  "scientificEvidence": [
+    {
+      "path": "research/m31-filter-cost-2026-10-17/results/scenes/dense-120-filter-cost.json",
+      "bytes": 2470567,
+      "sha256": "9759b7c9b6fefc6b2f9c11c9869ce4e5ccbd123f3e28ded43b9fb05e54ab9f13"
+    },
+    {
+      "path": "research/m31-filter-cost-2026-10-17/results/scenes/dense-180-filter-cost.json",
+      "bytes": 4323916,
+      "sha256": "78f33a8b3c4ee5190b0d7a20a526652c8a3f34dc1f12221bce5b9bc52d36bc3c"
+    },
+    {
+      "path": "research/m31-filter-cost-2026-10-17/results/scenes/dense-80-filter-cost.json",
+      "bytes": 1405232,
+      "sha256": "4d7dd04cd24f104983787f2468e5f18b9d535017ce42f4f02881354ec749b85f"
+    },
+    {
+      "path": "research/m31-filter-cost-2026-10-17/results/scenes/sparse-120-filter-cost.json",
+      "bytes": 1196036,
+      "sha256": "0b0997a2dff65e0308e3fbeba6179ab2102c548c565a903997776383dfbaf96c"
+    },
+    {
+      "path": "research/m31-filter-cost-2026-10-17/results/scenes/sparse-180-filter-cost.json",
+      "bytes": 1821730,
+      "sha256": "5762966f7036daabab6a5a022c2885143c574a2602b65543689d9e77fbab4c46"
+    },
+    {
+      "path": "research/m31-filter-cost-2026-10-17/results/scenes/sparse-80-filter-cost.json",
+      "bytes": 798870,
+      "sha256": "1d6e2d5026c956101d44a0f1981bfb8fb9b6a5c7aad435e27badac0fba3cef96"
+    },
+    {
+      "path": "research/m31-filter-cost-2026-10-17/results/timing-index.json",
+      "bytes": 78096,
+      "sha256": "313ec62dcc790656ae9349ed7515d13aa984e40242d60c9744efd6e8c78f6306"
+    },
+    {
+      "path": "research/m31-filter-cost-2026-10-17/results/timing-index.json.jsonl",
+      "bytes": 82653,
+      "sha256": "f00f71c3d5122998ad431df18284c0cd0d975471ca8d0e59f4bd70267cf95b5d"
+    }
+  ],
+  "anomalyEvidence": [],
+  "privateLogDirectorySha256": "322e07d231947ae916eb63087c4e80d82554b5f9fd06740be7f5dd79f468083d",
+  "privateRawLogs": [
+    {
+      "name": "kernel-stderr.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "kernel-stdout.raw",
+      "bytes": 111,
+      "sha256": "c40e90bbaab360f723880855dfdcc28da2a21c1d02ebd5ff2659b342763dcba7"
+    }
+  ],
+  "sourceAndRuntimeRechecked": true,
+  "outputAccountingBeforeReport": {
+    "aggregateBytes": 12177711,
+    "indexBytes": 78096,
+    "journalBytes": 82653,
+    "scientificShardBytes": 12016351,
+    "checkerBytes": 0,
+    "logMetadataBytes": 611,
+    "reportBytes": 0,
+    "unclassifiedBytes": 0,
+    "anomalyFiles": 0,
+    "files": [
+      {
+        "scope": "results",
+        "path": "kernel-attempt.json",
+        "bytes": 278
+      },
+      {
+        "scope": "results",
+        "path": "kernel-guardian.jsonl",
+        "bytes": 111
+      },
+      {
+        "scope": "results",
+        "path": "kernel-stderr.log",
+        "bytes": 0
+      },
+      {
+        "scope": "results",
+        "path": "kernel-stdout.log",
+        "bytes": 111
+      },
+      {
+        "scope": "results",
+        "path": "scenes/dense-120-filter-cost.json",
+        "bytes": 2470567
+      },
+      {
+        "scope": "results",
+        "path": "scenes/dense-180-filter-cost.json",
+        "bytes": 4323916
+      },
+      {
+        "scope": "results",
+        "path": "scenes/dense-80-filter-cost.json",
+        "bytes": 1405232
+      },
+      {
+        "scope": "results",
+        "path": "scenes/sparse-120-filter-cost.json",
+        "bytes": 1196036
+      },
+      {
+        "scope": "results",
+        "path": "scenes/sparse-180-filter-cost.json",
+        "bytes": 1821730
+      },
+      {
+        "scope": "results",
+        "path": "scenes/sparse-80-filter-cost.json",
+        "bytes": 798870
+      },
+      {
+        "scope": "results",
+        "path": "timing-index.json",
+        "bytes": 78096
+      },
+      {
+        "scope": "results",
+        "path": "timing-index.json.jsonl",
+        "bytes": 82653
+      },
+      {
+        "scope": "private",
+        "path": "kernel-stderr.raw",
+        "bytes": 0
+      },
+      {
+        "scope": "private",
+        "path": "kernel-stdout.raw",
+        "bytes": 111
+      }
+    ],
+    "violations": []
+  },
+  "finalOutputBytesBeforeReport": 12177711,
+  "wallSeconds": 100.45445462502539
+}
