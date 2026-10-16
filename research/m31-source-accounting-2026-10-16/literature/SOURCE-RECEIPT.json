@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-16",
+  "scope": "Static source examination and analytic derivation only",
+  "executions": {
+    "frozen_source_imports_or_runs": 0,
+    "numerical_integrations": 0,
+    "real_data_scores": 0,
+    "experiments_or_browser_gpu_launches": 0
+  },
+  "local_sources": [
+    {
+      "path": "research/m31-body-load-2026-10-16/source/host.cjs",
+      "sha256": "c7e67c4d2575611a50f6af50b94e6a71c5e98c4083394644b15ba8b29ed5f8fd",
+      "locations": "lines 29-33, 74, 102-130"
+    },
+    {
+      "path": "research/m31-body-load-2026-10-16/source/independent-frozen.source.txt",
+      "sha256": "da857f37129c6d3fc87fe223efd2b37b140fbf11417c1f1bb92331d5cfa53cec",
+      "locations": "lines 55-71, 89-102, 137-147"
+    },
+    {
+      "path": "research/m31-restart-2026-10-15/literature/annotated-ledger.md",
+      "sha256": "c54fe9b943c76e2d146289ea6a655d1bec52b334ff72a0d4d59880f1e2cf0b37",
+      "locations": "A2 source row and findings"
+    },
+    {
+      "path": "research/m31-restart-2026-10-15/literature/source-access-log.md",
+      "sha256": "d26d6fe7ea805831a9d3fbd1106e2f3f5e0b4f02fe926ba333752164afdd3377",
+      "locations": "A2 text/PDF entries and geometric-arrow limitation"
+    }
+  ],
+  "primary_source_rechecked": {
+    "version": "arXiv:2403.13321v3, 12 December 2024",
+    "html": "https://arxiv.org/html/2403.13321v3",
+    "pdf": "https://arxiv.org/pdf/2403.13321v3",
+    "locations": "III-A/D; Eqs. 1, 3-9; IV-A/B; Table I; VI-B/C; Fig. 2 caption",
+    "access": "Connector-extracted HTML and PDF text; no new raw dataset acquisition",
+    "limitations": "PDF screenshot requests returned image markers without inspectable pixels; exact diagonal-versus-adjacent motor-distance arrows remain unverified. No local complete primary-source copy or raw-byte hash was produced."
+  },
+  "derivation_check": "Manual substitution y=1+a(r/b)^2, exact endpoint integral integral_1^infinity y^-4 dy=1/3, dimensional check, symbolic cancellation, and exact frozen-constant substitution. Approximate 0.72 is a rounded desk expression, not a computed empirical score.",
+  "allocation_status": "Any proposed subsequent numerical audit is not allocated and was not run."
+}
