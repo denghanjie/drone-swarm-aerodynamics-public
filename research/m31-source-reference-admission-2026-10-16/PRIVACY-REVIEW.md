@@ -1,0 +1,5 @@
+# Public source checkpoint review
+
+Only new campaign files are staged. The exact PDF, figure render, full off-axis paths, acquisition logs containing private paths and runtime staging directories remain private. Published plotted coordinates are factual derivatives with explicit source/version attribution; no original figure artwork or PDF is redistributed and no source license is replaced. Repository metadata projection excludes author emails and user/profile metadata. No credentials or private environment contents are included.
+
+The independent extraction allowlist was imported exactly. Discovery records had private staging paths replaced with relative filenames or descriptive placeholders; discovery/IMPORT.json records original/public hashes. Its original delivery manifest remains a provenance record for the pre-sanitized copies, not the authoritative package manifest. Numerical scientific values were unchanged. Source tree scan checks for private paths, personal email addresses and common secret formats; exact package pins are created after review.

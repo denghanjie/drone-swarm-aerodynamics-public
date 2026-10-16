@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-16",
+  "scope": "New bounded variable-source spatial-flow discovery; separate from the completed Bauersfeld/Wolf inspection",
+  "counts": {
+    "discovery_queries": 4,
+    "unique_primary_documents_inspected": 4,
+    "same_document_screenshot_requests": 1,
+    "usable_screenshot_results": 0,
+    "direct_html_metadata_attempts": 3,
+    "successful_direct_html_metadata_reads": 0,
+    "dataset_file_requests": 0,
+    "archive_HEAD_or_range_requests": 0,
+    "dataset_payload_downloads": 0,
+    "scientific_calculations": 0,
+    "fits": 0,
+    "author_contacts": 0
+  },
+  "queries": [
+    "propeller wake PIV dataset different rotational speeds measured thrust open data",
+    "rotor wake velocity profiles RPM dataset Zenodo Figshare",
+    "NASA HVAB PIV data thrust collective rotor speed data format use",
+    "\"propeller\" \"PIV\" \"dataset\" \"rpm\" thrust velocity"
+  ],
+  "query_result_refs": ["turn971507search0 through turn971507search29 and associated results", "turn919552search0 through turn919552search29"],
+  "primary_sources": [
+    {
+      "id": "S1",
+      "url": "https://rotorcraft.arc.nasa.gov/HVAB/pivData.html",
+      "title": "HVAB PIV Data",
+      "reader_ref": "turn919552view0",
+      "locators": "lines 1-8",
+      "outcome": "Official release listing inspected; file hyperlinks visible by label; resolved data-file hrefs not recovered"
+    },
+    {
+      "id": "S2",
+      "url": "https://rotorcraft.arc.nasa.gov/HVAB/HVABReleasedData_v2/PIV_Data/HVAB_PIV_ReadMe.pdf",
+      "title": "ReadMe: HVAB PIV Data",
+      "author": "Manikandan Ramasamy",
+      "version": "Initial release 2024-09-18",
+      "reader_ref": "turn970262view0",
+      "pages": 8,
+      "locators": {
+        "bibliography": "p1; lines 14-20",
+        "run_setting_matrix": "p1, Table 1; lines 21-43",
+        "phase_locking": "p2; lines 48-57",
+        "calibration_target": "p3; lines 72-79",
+        "filtering": "pp4-5; lines 100-143",
+        "field_schema": "pp4-5; lines 122-143",
+        "vortex_products": "pp5-6; lines 144-168"
+      },
+      "outcome": "Variable-collective spatial-velocity release and run identifiers verified; explicit field bounds and uniform time-average compatibility unresolved"
+    },
+    {
+      "id": "S3",
+      "url": "https://rotorcraft.arc.nasa.gov/HVAB/performanceData.html",
+      "title": "HVAB Performance Data",
+      "reader_ref": "turn179544view0",
+      "locators": "lines 1-14",
+      "outcome": "Official matching performance workbook listed; workbook not opened"
+    },
+    {
+      "id": "S4",
+      "url": "https://rotorcraft.arc.nasa.gov/HVAB/HVABReleasedData_v2/Performance_Data/Performance_ReadMe_v2.1.pdf",
+      "title": "ReadMe: HVAB Performance Data",
+      "author": "Lauren Wagner",
+      "version": "Filename v2.1; visible history records v2 2024-09-30, no explicit v2.1 date",
+      "reader_ref": "turn719533view0",
+      "pages": 6,
+      "locators": {
+        "balance_and_recirculation": "p1; lines 19-35",
+        "force_processing": "p2; lines 44-80",
+        "uncertainty": "p3; lines 81-104",
+        "workbook_schema": "p4; lines 136-149",
+        "paired_runs": "p4, Table 2; line 181",
+        "run_caveats": "pp4-5; lines 183-191",
+        "bibliography": "p5; lines 192-202",
+        "rotor_constants": "p6, Table A1; lines 203-208"
+      },
+      "outcome": "Independent balance-force processing and matching run/condition metadata verified; actual values and exact row joins not inspected"
+    }
+  ],
+  "listed_data_products": [
+    {"name":"VectorFielddata.zip","listing":"S1","listed_size":"733 MB","exact_bytes":null,"resolved_url":null,"archive_format":"ZIP","member_format":"Not established","requested":false},
+    {"name":"CoreSize_SwirlVelocity.xlsx","listing":"S1","exact_bytes":null,"resolved_url":null,"requested":false},
+    {"name":"TipVortexTrajectory.xlsx","listing":"S1","exact_bytes":null,"resolved_url":null,"requested":false},
+    {"name":"Run92_95_v2.1.xlsx","listing":"S3","exact_bytes":null,"resolved_url":null,"requested":false}
+  ],
+  "metadata_access_failures": [
+    {"client":"Python urllib, sandbox","target":"S1, first of two planned landing-page reads","cap_bytes_per_page":131072,"outcome":"DNS resolution error before response body; S3 not reached"},
+    {"client":"Python urllib, approved escalation","target":"S1, first of two planned landing-page reads","cap_bytes_per_page":131072,"outcome":"TLS internal error before response body; S3 not reached"},
+    {"client":"curl, approved escalation","target":"S1 only","cap_bytes":131072,"outcome":"TLS internal error; exit 35; no body"}
+  ],
+  "screenshot_attempt": {"source":"S2","page_index":1,"reader_ref":"turn755227view0","outcome":"Marker only; no usable pixels; no figure-based measurement or extent claim"},
+  "reuse_terms": {"public_release_verified":true,"data_specific_license_verified":false,"redistribution_entitlement_inferred":false},
+  "closed_routes_retried": [],
+  "prior_logs_consulted": [
+    "[private prior component-reference note]",
+    "research/m31-omission-ablation-2026-10-16/physical-data-followup.md",
+    "research/m31-restart-2026-10-15/literature/source-access-log.md"
+  ],
+  "decision": "Strongest documented partial reference; not admitted to existing far-field law comparison; no payload allocation made"
+}
