@@ -1,0 +1,41 @@
+# Independent source-only checker/harness contract review
+
+Status: no remaining blocking false pass or false failure identified in the bounded inspected contract after the artifact-inventory fix below. This is a source review, not scientific qualification or permission to launch. No browser, generator, scientific import, controls, numerical evaluation, raw-result read or checker execution occurred. Python parsing/compilation created code objects only and did not execute them.
+
+## Finding and confirmed correction
+
+The initial checker (`fe4bc2b075ca9dbf9e17665b507005f7539338114da030a592e0e643ae17c58f`) formed its exact-176 artifact set from top-level `results.iterdir()` files, while other byte/inventory accounting was recursive. An unexpected nested zero-byte file could evade that claimed exact artifact count without changing aggregate bytes. This was a concrete unexpected-artifact rejection gap, not a normal harness output failure.
+
+The checker author added a flat-directory check requiring every results entry to be a regular, non-symlink file before computing the exact filename set. I inspected the final change at `review.py:655` and confirmed its final source hash. A subdirectory now records an audit error; the subsequent process-provenance error gate prevents qualification. The final reviewed checker is **`b9438f2841318bce5ee2e74bdc2c549a512241c4303ea857fe7fe8f3a64b1c35`**.
+
+## Contracts checked
+
+* **176 artifacts per process:** 48 control JSON files, one ownership JSON, 84 raw/validated call JSON files, six seven-file qualification groups, and one evidence JSON. The names match the page source. The final flat-directory check rejects hidden subdirectory contents; exact names/counts reject extras, missing files and partial uploads. Per-artifact, per-process and before/after-evidence byte totals match the page/controller accounting.
+* **Controls:** the 48 scientific controls and six ownership builds remain separate from adapter checks. The checker requires all nine adapter groups and their 56 exact ordered assertion IDs, counts, pass booleans, null group errors, before-factory flag and expected factory order. The values match the final loader and its static specification. These browser-adapter outcomes remain receipts; the saved checker does not reexecute browser APIs or claim general Buffer equivalence.
+* **Raw timing persistence:** the page awaits the raw JSON's digest-bound exclusive file-and-directory-fsync acknowledgement before comparison/checksum/input or matrix/solution validation. The inherited timing audit pins the raw record and requires the validated record minus `raw`/`validation` to equal it, then checks the evidence copy, fixed schedule, positive finite totals, phases, all retained comparison flags and qualification fingerprints. It does not pretend to reconstruct unsaved transient timed arrays.
+* **Schedule and performance:** every process must independently complete 42 calls, consisting of six warmups and 36 measured calls with six matched pairs per case. All three process audits must pass before cross-process comparison and campaign analysis. Every one of the six N5000 case-by-process cells independently requires median F/L <= .90 and at least five strict wins. No pooled value can rescue a failed cell. `practicalRulePass` remains null pending the independent external seal and review-supervisor closure.
+* **Saved scientific comparison:** the adapted fresh-case routine replaces the inherited Node-only `fsync:false` requirement with the current true file/directory-fsync contract. It retains the full saved-array/symbol stream and independent numerical checks. Cross-process checks compare complete control and ownership values, saved qualification arrays and decompressed symbol bytes, full solutions/metadata, and nonclock timing values. Time fields and gzip container bytes are appropriately excluded from equality. The inherited sources are byte pinned.
+* **Generation and child lock:** the shared index uses the new three ordered seeds and t=5; page and checker agree on 26 pose frames at i/5 and the unchanged 51 metric samples at i/10. Both initial/final full states are retained. `generationPin` matches the generator/controller schema. The checker includes the generator's consumed child-lock bytes in the total and in `newGenerationBytesBeforeEvidence`, and checks the exact permanent lock text. It does not demand a replacement trajectory after failure.
+* **Fsync and transport:** the current controller actually performs file fsync, close, exclusive link/unlink publication, parent-directory fsync and persisted-byte verification before returning `fsync:true,directoryFsync:true`. The browser requires these flags, and the checker requires the corresponding persistence scope. Three-MiB decoded page chunks fit the host's four-MiB binary cap; the page awaits one binding call at a time. The checker verifies all acknowledged bytes/chunks/artifact counts before and after the final evidence save.
+* **Source/config/input binding:** the checker requires all runtime source/config files in the frozen manifest, exact scientific module hashes, verified bundle slices, actual same-process source receipts, the frozen browser config and runtime fields, exact controller/page execution-config serialization digest, the shared input-index object serialization digest and artifact pins. The controller now retains `executionConfigJSON`/digest and the page's returned completion/failure object before asserting completion. Source route names and generation metadata fields match the harness.
+* **Accounting boundary:** 45 explicit event-loop yields match three post-input yields plus 42 pre-query yields. The six gzip inputs and saved gzip byte totals match the harness accounting design. Final evidence persistence adds exactly one SHA call and that artifact's byte length; unchanged loading/gzip/yield counters and monotonic serialization/transport counters are consistent with the page implementation.
+
+## Inspection scope and limits
+
+Read the complete staged browser `review.py`, then its final inventory delta; targeted inherited helper sections for artifact/path/hash handling, typed canonical comparison, controls/ownership, bundle validation and raw timing review; the current controller, generator and config; and the already-reviewed browser harness/loader contract. `numeric-reference.py` was raw-hashed to confirm its inherited pin; its numerical implementation was not rereviewed in this task. The earlier source-only harness implementation and static byte verification remain the basis for unchanged numerical-module semantics.
+
+The new outer supervisor, guardian/process registry, final independent seal and full runtime identity inventory were outside this bounded contract review. The checker explicitly requires their externally recorded closure/resource evidence, but this report does not independently establish those implementations or actual operating-system containment. Likewise, parser success does not establish Chrome Blob/CSP/automation interoperability, completion within budgets, numerical agreement or a performance benefit. No result-bearing file was opened.
+
+## Final inspected hashes
+
+| Source | SHA-256 |
+| --- | --- |
+| `source/review.py` | `b9438f2841318bce5ee2e74bdc2c549a512241c4303ea857fe7fe8f3a64b1c35` |
+| `source/inherited-center-review.py` | `09660f29649d2e33da4a87d051936f10e612d28bf4001f98380e5a3d79a97279` |
+| `source/numeric-reference.py` | `4b21e84674d0007e23641622aec52724bced4791fcca3c1b97d48189c21f6aeb` |
+| `source/browser.js` | `ba90d2951c678cdbf85cd7d56217d9fd7f4664a58245ba768cd5066f95e9d46e` |
+| `research/m31-browser-screen-2026-10-16/source/controller.cjs` | `a3c3797012ff820ed62aee4149e1c4e99caacacf13d1aefa56986d35cb5434cd` |
+| `research/m31-browser-screen-2026-10-16/source/generate.cjs` | `fec8b14b804c8fc0e930172c2e8f0fae620a33727ca5ed31b76932b569d440cc` |
+| `research/m31-browser-screen-2026-10-16/config.json` | `a5d76a46bc8abf6531d1f6261db621e4615ca8be598159693d24fcfc66505c7a` |
+
+Repository-relative paths above resolve against the public worktree. The final checker and inherited helper both passed parser-only Python compilation; no imported or compiled scientific code was executed.

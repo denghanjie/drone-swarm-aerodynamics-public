@@ -1,0 +1,143 @@
+{
+  "schema": "m31-browser-buffer-controls-v1",
+  "expectedGroups": 9,
+  "expectedChecks": 56,
+  "groupIds": [
+    "zero-allocation",
+    "one-fill",
+    "fresh-storage",
+    "float64-le",
+    "float64-special",
+    "uint64-le",
+    "offset-rejection",
+    "value-rejection",
+    "allocation-rejection"
+  ],
+  "groups": [
+    {
+      "id": "zero-allocation",
+      "expectedChecks": 4,
+      "checkIds": [
+        "length-8",
+        "uint8array-instance",
+        "all-zero",
+        "empty-supported"
+      ]
+    },
+    {
+      "id": "one-fill",
+      "expectedChecks": 2,
+      "checkIds": [
+        "length-7",
+        "all-one"
+      ]
+    },
+    {
+      "id": "fresh-storage",
+      "expectedChecks": 4,
+      "checkIds": [
+        "distinct-buffers",
+        "dedicated-views",
+        "mutation-isolated",
+        "methods-own-nonenumerable"
+      ]
+    },
+    {
+      "id": "float64-le",
+      "expectedChecks": 6,
+      "checkIds": [
+        "one-write-return8",
+        "one-bytes",
+        "one-read",
+        "negative-zero-write-return16",
+        "negative-zero-bytes",
+        "negative-zero-read"
+      ]
+    },
+    {
+      "id": "float64-special",
+      "expectedChecks": 6,
+      "checkIds": [
+        "nan-return8",
+        "nan-roundtrip",
+        "positive-infinity-return8",
+        "positive-infinity-roundtrip",
+        "negative-infinity-return8",
+        "negative-infinity-roundtrip"
+      ]
+    },
+    {
+      "id": "uint64-le",
+      "expectedChecks": 9,
+      "checkIds": [
+        "zero-return8",
+        "zero-bytes",
+        "zero-read",
+        "pattern-return16",
+        "pattern-bytes",
+        "pattern-read",
+        "maximum-return24",
+        "maximum-bytes",
+        "maximum-read"
+      ]
+    },
+    {
+      "id": "offset-rejection",
+      "expectedChecks": 14,
+      "checkIds": [
+        "read-f64-negative",
+        "read-f64-fractional",
+        "read-f64-overrun",
+        "write-f64-negative",
+        "write-f64-fractional",
+        "write-f64-overrun",
+        "read-u64-negative",
+        "read-u64-fractional",
+        "read-u64-overrun",
+        "write-u64-negative",
+        "write-u64-fractional",
+        "write-u64-overrun",
+        "empty-read-f64",
+        "empty-read-u64"
+      ]
+    },
+    {
+      "id": "value-rejection",
+      "expectedChecks": 4,
+      "checkIds": [
+        "uint64-negative",
+        "uint64-overflow",
+        "uint64-number",
+        "float64-string"
+      ]
+    },
+    {
+      "id": "allocation-rejection",
+      "expectedChecks": 7,
+      "checkIds": [
+        "negative-size",
+        "fractional-size",
+        "nan-size",
+        "infinite-size",
+        "over-limit-size",
+        "unsupported-fill2",
+        "string-fill"
+      ]
+    }
+  ],
+  "requiredReceipt": {
+    "executedGroups": 9,
+    "executedChecks": 56,
+    "beforeScientificFactories": true,
+    "pass": true
+  },
+  "perGroupRequirement": "exact ordered check IDs; expectedChecks matches; every check.pass true; errorClass null; group.pass true",
+  "expectedFactoryExecutionIds": [
+    "./kernel.cjs",
+    "./anchor-kernel.cjs",
+    "./reference-excerpt.cjs",
+    "./lean-anchor.cjs",
+    "./controls.cjs"
+  ],
+  "sourceOnlyDescription": "Static schema extracted from source literals; no adapter controls or scientific factory evaluated."
+}

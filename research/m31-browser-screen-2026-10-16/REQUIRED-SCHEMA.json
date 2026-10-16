@@ -1,0 +1,1460 @@
+{
+  "kind": "m31-browser-screen-saved-checker-required-contract-v1",
+  "validationMode": "JSON Schema fragments plus named cross-file invariants; review.py is the enforcing implementation. No schemas or numerical sources executed during preparation.",
+  "jsonSchemaDialect": "https://json-schema.org/draft/2020-12/schema",
+  "package": "research/m31-browser-screen-2026-10-16",
+  "invocation": [
+    "pinned-python",
+    "source/review.py",
+    "PACKAGE_ABSOLUTE_PATH",
+    "PACKAGE_ABSOLUTE_PATH/results/independent-review.json"
+  ],
+  "fixed": {
+    "processes": [
+      "p0",
+      "p1",
+      "p2"
+    ],
+    "cases": [
+      {
+        "id": "n1000-s261701-t5",
+        "n": 1000,
+        "seed": 261701,
+        "t": 5
+      },
+      {
+        "id": "n5000-s261702-t5",
+        "n": 5000,
+        "seed": 261702,
+        "t": 5
+      },
+      {
+        "id": "n5000-s261703-t5",
+        "n": 5000,
+        "seed": 261703,
+        "t": 5
+      }
+    ],
+    "limits": {
+      "candidateWallSeconds": 3000,
+      "candidateCooperativeSeconds": 895,
+      "reviewWallSeconds": 600,
+      "reviewCooperativeSeconds": 595,
+      "rssBytes": 1610612736,
+      "positiveTerms": 2000000,
+      "normalScientificBytes": 536870912,
+      "scientificBytes": 553648128,
+      "compressedSymbolsBytesPerBundle": 67108864,
+      "supervisorLogsBytes": 16777216,
+      "scientificDirectoryBytes": 2147483648,
+      "generationWallSeconds": 900,
+      "generationCooperativeSeconds": 895,
+      "generationBytes": 67108864,
+      "normalGenerationBytes": 62914560,
+      "controllerRSSBytes": 536870912,
+      "browserTreeRSSBytes": 2147483648,
+      "administrativeReserveBytes": 16777216,
+      "reviewBytes": 134217728,
+      "allocatedTotalSeconds": 4500
+    },
+    "perProcess": {
+      "controls": 48,
+      "ownershipBuilds": 6,
+      "qualificationBuilds": 6,
+      "qualificationSolves": 6,
+      "warmups": 6,
+      "measured": 36,
+      "timings": 42,
+      "artifacts": 176,
+      "adapterGroups": 9,
+      "adapterChecks": 56
+    },
+    "sharedGeneration": {
+      "invocations": 1,
+      "posesPerCase": 26,
+      "poseCadenceSeconds": 0.2,
+      "metricsPerCase": 51,
+      "metricCadenceSeconds": 0.1,
+      "dt": 0.0025
+    }
+  },
+  "$defs": {
+    "pin": {
+      "type": "object",
+      "required": [
+        "path",
+        "bytes",
+        "sha256"
+      ],
+      "properties": {
+        "path": {
+          "type": "string",
+          "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$)).+$"
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      }
+    },
+    "sourceReceipt": {
+      "type": "object",
+      "required": [
+        "bundle",
+        "sources",
+        "verifiedBeforeFactoryExecution",
+        "bufferCompatibility",
+        "nativeArithmetic",
+        "adapterControls",
+        "factoryExecutionIds"
+      ],
+      "properties": {
+        "verifiedBeforeFactoryExecution": {
+          "const": true
+        },
+        "nativeArithmetic": {
+          "const": true
+        },
+        "factoryExecutionIds": {
+          "const": [
+            "./kernel.cjs",
+            "./anchor-kernel.cjs",
+            "./reference-excerpt.cjs",
+            "./lean-anchor.cjs",
+            "./controls.cjs"
+          ]
+        }
+      }
+    },
+    "transport": {
+      "type": "object",
+      "required": [
+        "chunkBytes",
+        "maxBase64Characters",
+        "maxInFlight",
+        "acknowledgedBytes",
+        "acknowledgedChunks",
+        "completedArtifacts",
+        "durableExclusiveAckRequired"
+      ],
+      "properties": {
+        "chunkBytes": {
+          "const": 3145728
+        },
+        "maxBase64Characters": {
+          "const": 4194304
+        },
+        "maxInFlight": {
+          "const": 1
+        },
+        "durableExclusiveAckRequired": {
+          "const": true
+        },
+        "acknowledgedBytes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "acknowledgedChunks": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "completedArtifacts": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "pageEnvironment": {
+      "type": "object",
+      "required": [
+        "browserProcessId",
+        "pageUserAgent",
+        "platform",
+        "hardwareConcurrency",
+        "deviceMemoryGiB",
+        "language",
+        "visibility",
+        "documentHidden",
+        "isSecureContext",
+        "crossOriginIsolated",
+        "performanceTimeOrigin",
+        "clock",
+        "clockSample",
+        "threads",
+        "renderingDuringMatchedTimings",
+        "queryTimerScope",
+        "sourceLoad",
+        "externalRuntimeEvidence",
+        "rssScope"
+      ],
+      "properties": {
+        "sourceLoad": {
+          "$ref": "#/$defs/sourceReceipt"
+        },
+        "isSecureContext": {
+          "const": true
+        },
+        "clock": {
+          "const": "native window.performance.now monotonic milliseconds"
+        },
+        "renderingDuringMatchedTimings": {
+          "const": false
+        }
+      }
+    },
+    "stageAccounting": {
+      "type": "object",
+      "required": [
+        "sourceLoadMs",
+        "inputFetchDecodeMs",
+        "artifactEncodingMs",
+        "base64EncodingMs",
+        "hashMs",
+        "hashBytes",
+        "hashCalls",
+        "gzipMs",
+        "gzipInputBytes",
+        "gzipOutputBytes",
+        "transportAckMs",
+        "eventLoopYieldMs",
+        "eventLoopYields",
+        "notes"
+      ],
+      "properties": {
+        "eventLoopYields": {
+          "const": 45
+        },
+        "gzipInputBytes": {
+          "const": 408000000
+        }
+      }
+    },
+    "supervisor": {
+      "type": "object",
+      "required": [
+        "kind",
+        "sourceCommit",
+        "sourceManifestSha256",
+        "sourceReceiptSha256",
+        "startedUTC",
+        "wallCapSeconds",
+        "rssCapBytes",
+        "sampleIntervalSeconds",
+        "rssSamples",
+        "sampledPeakRSSBytes",
+        "browserTreePeakRSSBytes",
+        "controllerPeakRSSBytes",
+        "signals",
+        "monitorErrors",
+        "exitRaces",
+        "closed",
+        "childGroupAbsent",
+        "ownedGroupAbsent",
+        "returncode",
+        "runtimeIdentityVerified",
+        "runtime",
+        "phaseClosures",
+        "protectedInputsUnchanged",
+        "candidateOutputsUnchanged",
+        "scientificBytesBeforeClosure",
+        "logBytes",
+        "artifacts",
+        "elapsedSeconds",
+        "supervisorSuccess",
+        "survivingOwnedProcessCount"
+      ],
+      "properties": {
+        "closed": {
+          "const": true
+        },
+        "childGroupAbsent": {
+          "const": true
+        },
+        "ownedGroupAbsent": {
+          "const": true
+        },
+        "runtimeIdentityVerified": {
+          "const": true
+        },
+        "protectedInputsUnchanged": {
+          "const": true
+        },
+        "candidateOutputsUnchanged": {
+          "const": true
+        },
+        "supervisorSuccess": {
+          "const": true
+        },
+        "signals": {
+          "const": []
+        },
+        "monitorErrors": {
+          "const": []
+        },
+        "returncode": {
+          "const": 0
+        },
+        "survivingOwnedProcessCount": {
+          "const": 0
+        },
+        "sampleIntervalSeconds": {
+          "const": 0.1
+        },
+        "rssSamples": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "sampledPeakRSSBytes": {
+          "type": "number",
+          "minimum": 1
+        },
+        "sourceReceiptSha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "artifacts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/pin"
+          }
+        },
+        "logBytes": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 16777216
+        }
+      }
+    },
+    "processClosure": {
+      "type": "object",
+      "required": [
+        "processId",
+        "slot",
+        "attempted",
+        "complete",
+        "scientificScheduleComplete",
+        "closureConfirmed",
+        "sourceCommit",
+        "sourceManifestSha256",
+        "runtimeIdentityVerified",
+        "browserClosed",
+        "allOwnedBrowserProcessesAbsent",
+        "inputsVerified",
+        "processRegistryCount",
+        "profileIdentitySha256",
+        "launchArguments",
+        "browserRuntime",
+        "browserVersion",
+        "pageEnvironment",
+        "sourceServedPins",
+        "servedRequests",
+        "errors",
+        "environmentStart",
+        "environmentEnd",
+        "supervisorObservation",
+        "elapsedSeconds",
+        "artifactBytes",
+        "transportPending",
+        "pageResult",
+        "executionConfigJSON",
+        "executionConfigSha256"
+      ],
+      "properties": {
+        "attempted": {
+          "const": true
+        },
+        "complete": {
+          "const": true
+        },
+        "scientificScheduleComplete": {
+          "const": true
+        },
+        "closureConfirmed": {
+          "const": true
+        },
+        "runtimeIdentityVerified": {
+          "const": true
+        },
+        "browserClosed": {
+          "const": true
+        },
+        "allOwnedBrowserProcessesAbsent": {
+          "const": true
+        },
+        "inputsVerified": {
+          "const": true
+        },
+        "processRegistryCount": {
+          "const": 1
+        },
+        "errors": {
+          "const": []
+        },
+        "transportPending": {
+          "const": false
+        },
+        "elapsedSeconds": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 900
+        },
+        "profileIdentitySha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "executionConfigSha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "browserVersion": {
+          "const": "155.0.8059.80"
+        }
+      }
+    }
+  },
+  "requiredFiles": {
+    "config.json": {
+      "type": "object",
+      "required": [
+        "schema",
+        "cases",
+        "generation",
+        "methods",
+        "permutations",
+        "blocks",
+        "controls",
+        "ownershipExtraBuilds",
+        "qualificationBuilds",
+        "qualificationSolves",
+        "warmupCalls",
+        "measuredCalls",
+        "totalCalls",
+        "primary",
+        "limits",
+        "scope",
+        "screen",
+        "controlIds",
+        "ownershipSequence",
+        "controlSolvePolicy",
+        "processes",
+        "browser"
+      ],
+      "properties": {
+        "schema": {
+          "const": "m31-browser-screen-v1"
+        },
+        "cases": {
+          "const": [
+            {
+              "id": "n1000-s261701-t5",
+              "n": 1000,
+              "seed": 261701,
+              "t": 5
+            },
+            {
+              "id": "n5000-s261702-t5",
+              "n": 5000,
+              "seed": 261702,
+              "t": 5
+            },
+            {
+              "id": "n5000-s261703-t5",
+              "n": 5000,
+              "seed": 261703,
+              "t": 5
+            }
+          ]
+        },
+        "generation": {
+          "const": {
+            "duration": 5,
+            "dt": 0.0025,
+            "mode": "boids",
+            "search": "grid",
+            "filter": "wall-priority",
+            "record": true,
+            "frameEvery": 0.2,
+            "factoryVariant": "wide",
+            "expectedCourse": "factory-v1",
+            "airflow": "off",
+            "observation": "ideal"
+          }
+        },
+        "methods": {
+          "const": [
+            "L",
+            "F"
+          ]
+        },
+        "permutations": {
+          "const": [
+            "LF",
+            "FL"
+          ]
+        },
+        "blocks": {
+          "const": 6
+        },
+        "controls": {
+          "const": 48
+        },
+        "ownershipExtraBuilds": {
+          "const": 6
+        },
+        "qualificationBuilds": {
+          "const": 6
+        },
+        "qualificationSolves": {
+          "const": 6
+        },
+        "warmupCalls": {
+          "const": 6
+        },
+        "measuredCalls": {
+          "const": 36
+        },
+        "totalCalls": {
+          "const": 42
+        },
+        "primary": {
+          "const": {
+            "ratio": "F/L",
+            "maximumMedianPairedRatio": 0.9,
+            "minimumStrictWins": 5,
+            "requiredCases": [
+              "n5000-s261702-t5",
+              "n5000-s261703-t5"
+            ]
+          }
+        },
+        "limits": {
+          "const": {
+            "candidateWallSeconds": 3000,
+            "candidateCooperativeSeconds": 895,
+            "reviewWallSeconds": 600,
+            "reviewCooperativeSeconds": 595,
+            "rssBytes": 1610612736,
+            "positiveTerms": 2000000,
+            "normalScientificBytes": 536870912,
+            "scientificBytes": 553648128,
+            "compressedSymbolsBytesPerBundle": 67108864,
+            "supervisorLogsBytes": 16777216,
+            "scientificDirectoryBytes": 2147483648,
+            "generationWallSeconds": 900,
+            "generationCooperativeSeconds": 895,
+            "generationBytes": 67108864,
+            "normalGenerationBytes": 62914560,
+            "controllerRSSBytes": 536870912,
+            "browserTreeRSSBytes": 2147483648,
+            "administrativeReserveBytes": 16777216,
+            "reviewBytes": 134217728,
+            "allocatedTotalSeconds": 4500
+          }
+        },
+        "screen": {
+          "const": {
+            "spanLimit": 256,
+            "componentThreshold": 4,
+            "runtimeGeneralEquivalenceProven": false
+          }
+        },
+        "controlIds": {
+          "const": [
+            "radius-0-below",
+            "radius-0-exact",
+            "radius-0-above",
+            "radius--6-below",
+            "radius--6-exact",
+            "radius--6-above",
+            "cell-below",
+            "cell-exact",
+            "cell-above",
+            "signed-zero",
+            "coarse-origin",
+            "coarse-translated",
+            "dense-16",
+            "span-256",
+            "span-nextUp256",
+            "far-invalid258",
+            "nonfinite-nan",
+            "nonfinite-infinity",
+            "overflow-span",
+            "near-field",
+            "duplicates",
+            "planes-62",
+            "planes-64",
+            "planes-66",
+            "component-x-below",
+            "component-x-exact",
+            "component-x-above",
+            "component-y-below",
+            "component-y-exact",
+            "component-y-above",
+            "component-z-below",
+            "component-z-exact",
+            "component-z-above",
+            "span-diagonal-256",
+            "span-nextDown256",
+            "center-257-fallback",
+            "center-nextUp257-fallback",
+            "mixed-near-far",
+            "mixed-positive-far",
+            "invalid-quaternion-far",
+            "nominal-zero-positive-far",
+            "nominal-negative-positive-far",
+            "nominal-nan-positive-far",
+            "scaled-cap-positive-far",
+            "invalid-quaternion-nan-far",
+            "nominal-infinity-positive-far",
+            "nominal-total-overflow-positive-far",
+            "nominal-unequal-positive-far"
+          ]
+        },
+        "ownershipSequence": {
+          "const": [
+            "L:sparse2",
+            "F:sparse2",
+            "L:planes62",
+            "F:planes62",
+            "L:fallback258",
+            "F:fallback258"
+          ]
+        },
+        "controlSolvePolicy": {
+          "const": "untimed solve+residual iff admitted and descendingEligible; otherwise explicit no-solve reason"
+        },
+        "processes": {
+          "const": [
+            "p0",
+            "p1",
+            "p2"
+          ]
+        },
+        "browser": {
+          "const": {
+            "headless": true,
+            "channel": "chrome",
+            "launchTimeoutMs": 20000,
+            "closeTimeoutMs": 20000,
+            "slotWallSeconds": 900,
+            "chunkBytes": 4194304,
+            "timer": "performance.now",
+            "runtimeVersion": "155.0.8059.80",
+            "renderingDuringTiming": false,
+            "detachedChrome": false
+          }
+        }
+      }
+    },
+    "runtime.json": {
+      "type": "object",
+      "required": [
+        "kind",
+        "platform",
+        "architecture",
+        "python",
+        "numpy",
+        "node",
+        "chrome",
+        "playwright",
+        "flags"
+      ],
+      "properties": {
+        "kind": {
+          "const": "prospective-browser-screen-runtime-identity"
+        },
+        "platform": {
+          "const": "darwin"
+        },
+        "architecture": {
+          "const": "arm64"
+        }
+      }
+    },
+    "source-manifest.json": {
+      "type": "object",
+      "required": [
+        "files"
+      ],
+      "properties": {
+        "files": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/pin"
+          }
+        }
+      }
+    },
+    "source-publication.json": {
+      "type": "object",
+      "required": [
+        "commit",
+        "manifestSha256",
+        "remoteManifestMatchesLocal",
+        "localAndCommittedPinsMatch"
+      ],
+      "properties": {
+        "commit": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{40}$"
+        },
+        "manifestSha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "remoteManifestMatchesLocal": {
+          "const": true
+        },
+        "localAndCommittedPinsMatch": {
+          "const": true
+        }
+      }
+    },
+    "source/source-bundle.json": {
+      "type": "object",
+      "required": [
+        "path",
+        "bytes",
+        "sha256",
+        "sources"
+      ],
+      "properties": {
+        "path": {
+          "const": "/source/browser-bundle.js"
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 1048576
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "sources": {
+          "type": "array",
+          "minItems": 5,
+          "maxItems": 5
+        }
+      }
+    },
+    "source/adapter-controls-spec.json": {
+      "orderedGroups": [
+        {
+          "id": "zero-allocation",
+          "expectedChecks": 4,
+          "checkIds": [
+            "length-8",
+            "uint8array-instance",
+            "all-zero",
+            "empty-supported"
+          ]
+        },
+        {
+          "id": "one-fill",
+          "expectedChecks": 2,
+          "checkIds": [
+            "length-7",
+            "all-one"
+          ]
+        },
+        {
+          "id": "fresh-storage",
+          "expectedChecks": 4,
+          "checkIds": [
+            "distinct-buffers",
+            "dedicated-views",
+            "mutation-isolated",
+            "methods-own-nonenumerable"
+          ]
+        },
+        {
+          "id": "float64-le",
+          "expectedChecks": 6,
+          "checkIds": [
+            "one-write-return8",
+            "one-bytes",
+            "one-read",
+            "negative-zero-write-return16",
+            "negative-zero-bytes",
+            "negative-zero-read"
+          ]
+        },
+        {
+          "id": "float64-special",
+          "expectedChecks": 6,
+          "checkIds": [
+            "nan-return8",
+            "nan-roundtrip",
+            "positive-infinity-return8",
+            "positive-infinity-roundtrip",
+            "negative-infinity-return8",
+            "negative-infinity-roundtrip"
+          ]
+        },
+        {
+          "id": "uint64-le",
+          "expectedChecks": 9,
+          "checkIds": [
+            "zero-return8",
+            "zero-bytes",
+            "zero-read",
+            "pattern-return16",
+            "pattern-bytes",
+            "pattern-read",
+            "maximum-return24",
+            "maximum-bytes",
+            "maximum-read"
+          ]
+        },
+        {
+          "id": "offset-rejection",
+          "expectedChecks": 14,
+          "checkIds": [
+            "read-f64-negative",
+            "read-f64-fractional",
+            "read-f64-overrun",
+            "write-f64-negative",
+            "write-f64-fractional",
+            "write-f64-overrun",
+            "read-u64-negative",
+            "read-u64-fractional",
+            "read-u64-overrun",
+            "write-u64-negative",
+            "write-u64-fractional",
+            "write-u64-overrun",
+            "empty-read-f64",
+            "empty-read-u64"
+          ]
+        },
+        {
+          "id": "value-rejection",
+          "expectedChecks": 4,
+          "checkIds": [
+            "uint64-negative",
+            "uint64-overflow",
+            "uint64-number",
+            "float64-string"
+          ]
+        },
+        {
+          "id": "allocation-rejection",
+          "expectedChecks": 7,
+          "checkIds": [
+            "negative-size",
+            "fractional-size",
+            "nan-size",
+            "infinite-size",
+            "over-limit-size",
+            "unsupported-fill2",
+            "string-fill"
+          ]
+        }
+      ]
+    },
+    "results/generation-run.json": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/supervisor"
+        },
+        {
+          "type": "object",
+          "required": [],
+          "properties": {
+            "kind": {
+              "const": "generation"
+            },
+            "wallCapSeconds": {
+              "const": 900
+            },
+            "rssCapBytes": {
+              "const": 1610612736
+            },
+            "sampledPeakRSSBytes": {
+              "type": "number",
+              "minimum": 1,
+              "maximum": 1610612736
+            },
+            "elapsedSeconds": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 900
+            },
+            "phaseClosures": {
+              "const": []
+            }
+          }
+        }
+      ]
+    },
+    "results/candidate-run.json": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/supervisor"
+        },
+        {
+          "type": "object",
+          "required": [
+            "controllerRSSCapBytes",
+            "browserTreeRSSCapBytes",
+            "generationSupervisorSuccess"
+          ],
+          "properties": {
+            "kind": {
+              "const": "candidate"
+            },
+            "wallCapSeconds": {
+              "const": 3000
+            },
+            "rssCapBytes": {
+              "const": null
+            },
+            "controllerRSSCapBytes": {
+              "const": 536870912
+            },
+            "browserTreeRSSCapBytes": {
+              "const": 2147483648
+            },
+            "generationSupervisorSuccess": {
+              "const": true
+            },
+            "elapsedSeconds": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 3000
+            }
+          }
+        }
+      ]
+    },
+    "results/generation-evidence.json": {
+      "type": "object",
+      "required": [
+        "kind",
+        "complete",
+        "runtimeIdentityVerified",
+        "generation",
+        "inputIndex",
+        "memory",
+        "newGenerationBytesBeforeEvidence"
+      ],
+      "properties": {
+        "kind": {
+          "const": "fresh-browser-screen-input-generation"
+        },
+        "complete": {
+          "const": true
+        },
+        "runtimeIdentityVerified": {
+          "const": true
+        }
+      }
+    },
+    "inputs/index.json": {
+      "type": "object",
+      "required": [
+        "kind",
+        "shape",
+        "dtype",
+        "cases"
+      ],
+      "properties": {
+        "kind": {
+          "const": "fresh-airflow-off-boids-states"
+        },
+        "shape": {
+          "const": [
+            "vehicle",
+            17
+          ]
+        },
+        "dtype": {
+          "const": "float64le"
+        },
+        "cases": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "n",
+              "seed",
+              "t",
+              "path",
+              "bytes",
+              "sha256",
+              "generationPath",
+              "generationPin"
+            ]
+          }
+        }
+      }
+    },
+    "generation/{case}.json": {
+      "type": "object",
+      "required": [
+        "id",
+        "n",
+        "seed",
+        "complete",
+        "initialMatches",
+        "generationMs",
+        "config",
+        "metrics",
+        "samples",
+        "initial",
+        "final",
+        "frames",
+        "poses",
+        "recording"
+      ],
+      "properties": {
+        "complete": {
+          "const": true
+        },
+        "initialMatches": {
+          "const": true
+        },
+        "recording": {
+          "const": {
+            "cadence": 0.2,
+            "streamed": true
+          }
+        },
+        "frames": {
+          "type": "array",
+          "minItems": 26,
+          "maxItems": 26
+        },
+        "samples": {
+          "type": "array",
+          "minItems": 51,
+          "maxItems": 51
+        }
+      }
+    },
+    "results/campaign.json": {
+      "type": "object",
+      "required": [
+        "complete",
+        "attempted",
+        "notAttempted",
+        "sourcePins",
+        "sharedPins",
+        "scientificCallsAddedOutsidePage"
+      ],
+      "properties": {
+        "complete": {
+          "const": true
+        },
+        "attempted": {
+          "const": [
+            "p0",
+            "p1",
+            "p2"
+          ]
+        },
+        "notAttempted": {
+          "const": []
+        },
+        "scientificCallsAddedOutsidePage": {
+          "const": 0
+        }
+      }
+    },
+    "runs/{process}/closure.json": {
+      "$ref": "#/$defs/processClosure"
+    },
+    "runs/{process}/invocation.lock": {
+      "type": "object",
+      "required": [
+        "processId",
+        "slot",
+        "consumed"
+      ],
+      "properties": {
+        "consumed": {
+          "const": true
+        }
+      }
+    },
+    "runs/{process}/results/evidence.json": {
+      "type": "object",
+      "required": [
+        "kind",
+        "runtimeKind",
+        "browserProcessId",
+        "complete",
+        "controls",
+        "ownership",
+        "generation",
+        "qualification",
+        "timings",
+        "constants",
+        "executionConfigSha256",
+        "inputIndexSha256",
+        "manifestHashScope",
+        "environmentStart",
+        "environmentEnd",
+        "memory",
+        "transport",
+        "stageAccounting",
+        "wallMsBeforeEvidence",
+        "newScientificBytesBeforeEvidence",
+        "controlSolvePolicy",
+        "actualControlSolves"
+      ],
+      "properties": {
+        "kind": {
+          "const": "fresh-boids-center-screen"
+        },
+        "runtimeKind": {
+          "const": "actual-chrome-javascript"
+        },
+        "complete": {
+          "const": true
+        },
+        "environmentStart": {
+          "$ref": "#/$defs/pageEnvironment"
+        },
+        "environmentEnd": {
+          "$ref": "#/$defs/pageEnvironment"
+        },
+        "transport": {
+          "$ref": "#/$defs/transport"
+        },
+        "stageAccounting": {
+          "$ref": "#/$defs/stageAccounting"
+        },
+        "controls": {
+          "type": "array",
+          "minItems": 48,
+          "maxItems": 48
+        },
+        "qualification": {
+          "type": "array",
+          "minItems": 6,
+          "maxItems": 6
+        },
+        "timings": {
+          "type": "array",
+          "minItems": 42,
+          "maxItems": 42
+        }
+      }
+    },
+    "runs/{process}/results/qualification-{case}-{method}.json": {
+      "type": "object",
+      "required": [
+        "id",
+        "label",
+        "qualificationComputeMs",
+        "persistence",
+        "comparison",
+        "omissionAudit",
+        "inputBeforeSha256",
+        "inputAfterSha256",
+        "matrixHash",
+        "solutionHash",
+        "pass"
+      ],
+      "properties": {
+        "pass": {
+          "const": true
+        },
+        "persistence": {
+          "type": "object",
+          "required": [
+            "meta",
+            "totalPersistenceMs",
+            "fsync",
+            "directoryFsync",
+            "fsyncScope",
+            "durableExclusiveCollector",
+            "compression"
+          ],
+          "properties": {
+            "fsync": {
+              "const": true
+            },
+            "directoryFsync": {
+              "const": true
+            },
+            "durableExclusiveCollector": {
+              "const": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "perProcessExactResultFilenames": [
+    "call-000-raw.json",
+    "call-000.json",
+    "call-001-raw.json",
+    "call-001.json",
+    "call-002-raw.json",
+    "call-002.json",
+    "call-003-raw.json",
+    "call-003.json",
+    "call-004-raw.json",
+    "call-004.json",
+    "call-005-raw.json",
+    "call-005.json",
+    "call-006-raw.json",
+    "call-006.json",
+    "call-007-raw.json",
+    "call-007.json",
+    "call-008-raw.json",
+    "call-008.json",
+    "call-009-raw.json",
+    "call-009.json",
+    "call-010-raw.json",
+    "call-010.json",
+    "call-011-raw.json",
+    "call-011.json",
+    "call-012-raw.json",
+    "call-012.json",
+    "call-013-raw.json",
+    "call-013.json",
+    "call-014-raw.json",
+    "call-014.json",
+    "call-015-raw.json",
+    "call-015.json",
+    "call-016-raw.json",
+    "call-016.json",
+    "call-017-raw.json",
+    "call-017.json",
+    "call-018-raw.json",
+    "call-018.json",
+    "call-019-raw.json",
+    "call-019.json",
+    "call-020-raw.json",
+    "call-020.json",
+    "call-021-raw.json",
+    "call-021.json",
+    "call-022-raw.json",
+    "call-022.json",
+    "call-023-raw.json",
+    "call-023.json",
+    "call-024-raw.json",
+    "call-024.json",
+    "call-025-raw.json",
+    "call-025.json",
+    "call-026-raw.json",
+    "call-026.json",
+    "call-027-raw.json",
+    "call-027.json",
+    "call-028-raw.json",
+    "call-028.json",
+    "call-029-raw.json",
+    "call-029.json",
+    "call-030-raw.json",
+    "call-030.json",
+    "call-031-raw.json",
+    "call-031.json",
+    "call-032-raw.json",
+    "call-032.json",
+    "call-033-raw.json",
+    "call-033.json",
+    "call-034-raw.json",
+    "call-034.json",
+    "call-035-raw.json",
+    "call-035.json",
+    "call-036-raw.json",
+    "call-036.json",
+    "call-037-raw.json",
+    "call-037.json",
+    "call-038-raw.json",
+    "call-038.json",
+    "call-039-raw.json",
+    "call-039.json",
+    "call-040-raw.json",
+    "call-040.json",
+    "call-041-raw.json",
+    "call-041.json",
+    "control-cell-above.json",
+    "control-cell-below.json",
+    "control-cell-exact.json",
+    "control-center-257-fallback.json",
+    "control-center-nextUp257-fallback.json",
+    "control-coarse-origin.json",
+    "control-coarse-translated.json",
+    "control-component-x-above.json",
+    "control-component-x-below.json",
+    "control-component-x-exact.json",
+    "control-component-y-above.json",
+    "control-component-y-below.json",
+    "control-component-y-exact.json",
+    "control-component-z-above.json",
+    "control-component-z-below.json",
+    "control-component-z-exact.json",
+    "control-dense-16.json",
+    "control-duplicates.json",
+    "control-far-invalid258.json",
+    "control-invalid-quaternion-far.json",
+    "control-invalid-quaternion-nan-far.json",
+    "control-mixed-near-far.json",
+    "control-mixed-positive-far.json",
+    "control-near-field.json",
+    "control-nominal-infinity-positive-far.json",
+    "control-nominal-nan-positive-far.json",
+    "control-nominal-negative-positive-far.json",
+    "control-nominal-total-overflow-positive-far.json",
+    "control-nominal-unequal-positive-far.json",
+    "control-nominal-zero-positive-far.json",
+    "control-nonfinite-infinity.json",
+    "control-nonfinite-nan.json",
+    "control-overflow-span.json",
+    "control-planes-62.json",
+    "control-planes-64.json",
+    "control-planes-66.json",
+    "control-radius--6-above.json",
+    "control-radius--6-below.json",
+    "control-radius--6-exact.json",
+    "control-radius-0-above.json",
+    "control-radius-0-below.json",
+    "control-radius-0-exact.json",
+    "control-scaled-cap-positive-far.json",
+    "control-signed-zero.json",
+    "control-span-256.json",
+    "control-span-diagonal-256.json",
+    "control-span-nextDown256.json",
+    "control-span-nextUp256.json",
+    "evidence.json",
+    "n1000-s261701-t5-F-K.bin",
+    "n1000-s261701-t5-F-a.bin",
+    "n1000-s261701-t5-F-offsets.bin",
+    "n1000-s261701-t5-F-sources.bin",
+    "n1000-s261701-t5-F-symbols.u8.gz",
+    "n1000-s261701-t5-F.json",
+    "n1000-s261701-t5-L-K.bin",
+    "n1000-s261701-t5-L-a.bin",
+    "n1000-s261701-t5-L-offsets.bin",
+    "n1000-s261701-t5-L-sources.bin",
+    "n1000-s261701-t5-L-symbols.u8.gz",
+    "n1000-s261701-t5-L.json",
+    "n5000-s261702-t5-F-K.bin",
+    "n5000-s261702-t5-F-a.bin",
+    "n5000-s261702-t5-F-offsets.bin",
+    "n5000-s261702-t5-F-sources.bin",
+    "n5000-s261702-t5-F-symbols.u8.gz",
+    "n5000-s261702-t5-F.json",
+    "n5000-s261702-t5-L-K.bin",
+    "n5000-s261702-t5-L-a.bin",
+    "n5000-s261702-t5-L-offsets.bin",
+    "n5000-s261702-t5-L-sources.bin",
+    "n5000-s261702-t5-L-symbols.u8.gz",
+    "n5000-s261702-t5-L.json",
+    "n5000-s261703-t5-F-K.bin",
+    "n5000-s261703-t5-F-a.bin",
+    "n5000-s261703-t5-F-offsets.bin",
+    "n5000-s261703-t5-F-sources.bin",
+    "n5000-s261703-t5-F-symbols.u8.gz",
+    "n5000-s261703-t5-F.json",
+    "n5000-s261703-t5-L-K.bin",
+    "n5000-s261703-t5-L-a.bin",
+    "n5000-s261703-t5-L-offsets.bin",
+    "n5000-s261703-t5-L-sources.bin",
+    "n5000-s261703-t5-L-symbols.u8.gz",
+    "n5000-s261703-t5-L.json",
+    "ownership.json",
+    "qualification-n1000-s261701-t5-F.json",
+    "qualification-n1000-s261701-t5-L.json",
+    "qualification-n5000-s261702-t5-F.json",
+    "qualification-n5000-s261702-t5-L.json",
+    "qualification-n5000-s261703-t5-F.json",
+    "qualification-n5000-s261703-t5-L.json"
+  ],
+  "requiredServedSourcePinsInOrder": [
+    "source/browser.html",
+    "source/browser-bundle.js",
+    "source/browser.js",
+    "source/source-bundle.json"
+  ],
+  "requiredActualRequests": "All served source files except source/source-bundle.json, plus every shared inputs/generation file except inputs/index.json. Both exceptions are passed through the controller execution call.",
+  "crossFileInvariants": [
+    "All source files including all source JSON files, config/runtime and outputs/milestone-31-source/sim.cjs must belong to the frozen manifest; seven immutable numerical/helper source SHA256 pins must match.",
+    "Generation and candidate supervisor sourceReceiptSha256 must equal the actual publication receipt; stage inventories must reconcile byte totals and prescribed complete file membership; every listed byte/hash is rechecked.",
+    "Candidate RSS is separately <=512MiB controller and <=2GiB owned Chrome tree; no1.5GiB constraint on their aggregate. Reviewer and generation aggregate RSS <=1.5GiB.",
+    "Three different private profile hashes, identical sanitized launch args and actual Chrome/V8 version, one launch per slot; supervisor observes positive browser process/sample counts and >=2 consecutive empty browser samples before each closed slot.",
+    "executionConfigJSON exact UTF8 SHA256 agrees with host and browser; parsed fields equal complete frozen config plus bound actual runtimeEvidence and verified source bundle. Input index hash is independently compact-serialized using integer-only JSON numbers.",
+    "Source bundle has complete exact unchanged module byte slices in fixed order; sourceReceipt proves same-process hashes and 56 named adapter checks precede the fixed scientific factory execution order.",
+    "Each index generationPin equals generation summary pin and actual metadata; every frame is byte-equal to concatenated poses; initial/final poses match complete17-component state rows; shared saved input equals generated final bytes.",
+    "Generator newGenerationBytesBeforeEvidence includes inputs, generation files and consumed generation-child-invocation.lock; exclude only generation-evidence.json itself from its pre-evidence total.",
+    "176 unique flat page artifacts; evidence transport counts exclude itself, completion counts include itself; every chunk count independently derived from3MiB payloads; byte totals agree with actual files and closure.",
+    "Completion accounting is monotone; final save adds exactly one evidence hash. Exactly45 event-loop turns, all6symbol tensors contribute408000000 raw gzip input bytes. Inclusive counters overlap and are not summed.",
+    "Every process independently checks48fixed controls,6ownership builds,6qualification builds/solves and42fixed scheduled calls using immutable independent reference; full symbols exact, numerical tolerances inherited unchanged.",
+    "Cross p0/p1 and p0/p2: full recursive control/ownership values; all qualified offsets/source/K/a bytes; every gzip-decoded symbol byte; all solutions and scientific metadata; qualification nonclock values; all42timing nonclock records; full source/adapter receipts.",
+    "Exclude only time measurements/persistence costs, raw timing hashes, and compressed gzip encoding from cross-process equality. Full uncompressed values remain mandatory.",
+    "All six N5000 case-by-process cells require median of six paired F/L ratios <=0.90 and >=5strict wins. N1000 is descriptive. No pooling or cross-cell rescue."
+  ],
+  "inheritedScientificValidators": {
+    "controls": "H.controls_review",
+    "ownership": "H.ownership_review",
+    "qualification": "browser_independent_case using unchanged H.independent_model/H.independent_solution",
+    "timings": "H.timing_review"
+  },
+  "outputs": {
+    "results/analysis.json": {
+      "type": "object",
+      "required": [
+        "schema",
+        "independentAuditPass",
+        "performanceRulePass",
+        "practicalRulePass",
+        "requiresReviewSupervisorClosure",
+        "processes",
+        "crossProcess",
+        "caseProcessSpread",
+        "primaryCells"
+      ],
+      "properties": {
+        "practicalRulePass": {
+          "const": null
+        },
+        "requiresReviewSupervisorClosure": {
+          "const": true
+        }
+      }
+    },
+    "results/independent-review.json": {
+      "type": "object",
+      "required": [
+        "kind",
+        "complete",
+        "pass",
+        "independentAuditPass",
+        "performanceRulePass",
+        "practicalRulePass",
+        "requiresReviewSupervisorClosure",
+        "checks",
+        "errors",
+        "coverage",
+        "analysis",
+        "resources",
+        "reviewElapsedSeconds"
+      ],
+      "properties": {
+        "practicalRulePass": {
+          "const": null
+        },
+        "requiresReviewSupervisorClosure": {
+          "const": true
+        }
+      }
+    }
+  },
+  "externalFinalBoundary": [
+    "Reviewer reports never assert own supervisor closure.",
+    "Final external seal must verify actual review-run.json success, all stage source/receipt/artifact chains, all three browser closures, independent audit, all six timing gates, combined elapsed <=4500s and final <=2GiB storage.",
+    "Failed/incomplete numerical audit leaves performanceRulePass null and practicalRulePass null in review outputs."
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "schema": "m31-browser-screen-v1",
+  "cases": [
+    {
+      "id": "n1000-s261701-t5",
+      "n": 1000,
+      "seed": 261701,
+      "t": 5
+    },
+    {
+      "id": "n5000-s261702-t5",
+      "n": 5000,
+      "seed": 261702,
+      "t": 5
+    },
+    {
+      "id": "n5000-s261703-t5",
+      "n": 5000,
+      "seed": 261703,
+      "t": 5
+    }
+  ],
+  "generation": {
+    "duration": 5,
+    "dt": 0.0025,
+    "mode": "boids",
+    "search": "grid",
+    "filter": "wall-priority",
+    "record": true,
+    "frameEvery": 0.2,
+    "factoryVariant": "wide",
+    "expectedCourse": "factory-v1",
+    "airflow": "off",
+    "observation": "ideal"
+  },
+  "methods": [
+    "L",
+    "F"
+  ],
+  "permutations": [
+    "LF",
+    "FL"
+  ],
+  "blocks": 6,
+  "controls": 48,
+  "ownershipExtraBuilds": 6,
+  "qualificationBuilds": 6,
+  "qualificationSolves": 6,
+  "warmupCalls": 6,
+  "measuredCalls": 36,
+  "totalCalls": 42,
+  "primary": {
+    "ratio": "F/L",
+    "maximumMedianPairedRatio": 0.9,
+    "minimumStrictWins": 5,
+    "requiredCases": [
+      "n5000-s261702-t5",
+      "n5000-s261703-t5"
+    ]
+  },
+  "limits": {
+    "candidateWallSeconds": 3000,
+    "candidateCooperativeSeconds": 895,
+    "reviewWallSeconds": 600,
+    "reviewCooperativeSeconds": 595,
+    "rssBytes": 1610612736,
+    "positiveTerms": 2000000,
+    "normalScientificBytes": 536870912,
+    "scientificBytes": 553648128,
+    "compressedSymbolsBytesPerBundle": 67108864,
+    "supervisorLogsBytes": 16777216,
+    "scientificDirectoryBytes": 2147483648,
+    "generationWallSeconds": 900,
+    "generationCooperativeSeconds": 895,
+    "generationBytes": 67108864,
+    "normalGenerationBytes": 62914560,
+    "controllerRSSBytes": 536870912,
+    "browserTreeRSSBytes": 2147483648,
+    "administrativeReserveBytes": 16777216,
+    "reviewBytes": 134217728,
+    "allocatedTotalSeconds": 4500
+  },
+  "scope": "Finite pinned Chrome warmed-query/process confirmation; same-family fresh5s airflow-off Boids inputs; no portable equality, live coupled flight, physics or novelty claim.",
+  "screen": {
+    "spanLimit": 256,
+    "componentThreshold": 4,
+    "runtimeGeneralEquivalenceProven": false
+  },
+  "controlIds": [
+    "radius-0-below",
+    "radius-0-exact",
+    "radius-0-above",
+    "radius--6-below",
+    "radius--6-exact",
+    "radius--6-above",
+    "cell-below",
+    "cell-exact",
+    "cell-above",
+    "signed-zero",
+    "coarse-origin",
+    "coarse-translated",
+    "dense-16",
+    "span-256",
+    "span-nextUp256",
+    "far-invalid258",
+    "nonfinite-nan",
+    "nonfinite-infinity",
+    "overflow-span",
+    "near-field",
+    "duplicates",
+    "planes-62",
+    "planes-64",
+    "planes-66",
+    "component-x-below",
+    "component-x-exact",
+    "component-x-above",
+    "component-y-below",
+    "component-y-exact",
+    "component-y-above",
+    "component-z-below",
+    "component-z-exact",
+    "component-z-above",
+    "span-diagonal-256",
+    "span-nextDown256",
+    "center-257-fallback",
+    "center-nextUp257-fallback",
+    "mixed-near-far",
+    "mixed-positive-far",
+    "invalid-quaternion-far",
+    "nominal-zero-positive-far",
+    "nominal-negative-positive-far",
+    "nominal-nan-positive-far",
+    "scaled-cap-positive-far",
+    "invalid-quaternion-nan-far",
+    "nominal-infinity-positive-far",
+    "nominal-total-overflow-positive-far",
+    "nominal-unequal-positive-far"
+  ],
+  "ownershipSequence": [
+    "L:sparse2",
+    "F:sparse2",
+    "L:planes62",
+    "F:planes62",
+    "L:fallback258",
+    "F:fallback258"
+  ],
+  "controlSolvePolicy": "untimed solve+residual iff admitted and descendingEligible; otherwise explicit no-solve reason",
+  "processes": [
+    "p0",
+    "p1",
+    "p2"
+  ],
+  "browser": {
+    "headless": true,
+    "channel": "chrome",
+    "launchTimeoutMs": 20000,
+    "closeTimeoutMs": 20000,
+    "slotWallSeconds": 900,
+    "chunkBytes": 4194304,
+    "timer": "performance.now",
+    "runtimeVersion": "155.0.8059.80",
+    "renderingDuringTiming": false,
+    "detachedChrome": false
+  }
+}
