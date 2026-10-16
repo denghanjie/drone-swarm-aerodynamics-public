@@ -4,7 +4,15 @@
 
 Public additive worktree: current repository, branch `codex/m31-audit-2026-10-15`. Preserve the original eight-step roadmap and historical M31 base. Later remote main/DOT at `1336f5c416875a9651f92b58b2ed06649f25b04e` remains separate and untouched. The private workspace, attachments, credentials and chat records must never be published.
 
-## New separate computational question — source freeze pending
+## Latest completed computational checkpoint — four-rotor coupled solve
+
+`research/m31-coupled-solve-2026-10-16/` completed its new source-frozen question. Source commit4068504296c6b5cc9f4f0139b5813797f7a2b097,19-pin source manifest e6baf88c10fad32c8a0fee287989b6675c6144ba2d25440a34896b43e16ac941. Both one-shot invocations exited0; all10007 independent checks passed. Both8-drone ladders use32 ordered versus256 simultaneous-update roots; include32 final-check roots each. The6-drone loop has6positive vehicle edges and converged in8updates. The nearby control has6unsupported pairs and no solve. All admitted ordinaryLmax values<1; no extra-domain numerical demonstration of the log theorem. Residual-only estimates exclude saved root/map roundoff and are not certificates.
+
+One candidate and one independent review allocation are consumed and closed. All frozen pins remained unchanged. Two display QA attempts passed26functional checks; manual review found first-attempt clipping, corrected by camera framing with original captures preserved. Final desktop/mobile screenshots inspected, no console/HTTP errors. Viewer: http://127.0.0.1:8876/research/m31-coupled-solve-2026-10-16/viewer/ . It is a recorded steady-solver replay, not flight. Scientific/review/QA processes are finished; retain server8876. Read MILESTONE-SUMMARY, RESULT-CLAIM-LEDGER, independent interpretation, QA-REPORT, NEXT-DECISION and POSTRUN-RESTART. Result publication receipt is separate.
+
+The previous source-admission package is independently published at bad27db6d099ce2b5ece13d825f8dcb9faf9be97, receipt in research/publication-receipts/. Physical command/source validation, fresh solver falsification, full timings, Boids/dynamics integration and5000-drone feasibility remain open. No fresh numerical allocation exists yet. The overall goal remains active; this turn made substantive computational and publication progress, not a wait-only or unchanged-blocker turn. Historical cutoff and terminal budgets are preserved below.
+
+## Historical pre-execution record — four-rotor source freeze
 
 `research/m31-coupled-solve-2026-10-16/` defines a separately bounded four-rotor steady-coupling verification after the closed physical-transfer and source-admission questions. Two eight-drone ladders, a six-drone cycle, and a nearby rejection control are fixed before any target evaluation. An explicit hypothetical source-strength law retains all four receiver roots. Static proofs establish a sufficient45degree downward-order condition and a factor1/2 log-coordinate contraction for the fixed nonnegative-coefficient contract. Neither is physical validation or novelty.
 

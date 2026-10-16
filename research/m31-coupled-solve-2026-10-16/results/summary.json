@@ -1,0 +1,152 @@
+{
+  "kind": "derived-summary-from-saved-records",
+  "source_commit": "4068504296c6b5cc9f4f0139b5813797f7a2b097",
+  "review_passed": true,
+  "checks": 10007,
+  "cases": [
+    {
+      "id": "level-ladder",
+      "vehicles": 8,
+      "pair_calls": 224,
+      "positive_rotor_terms": 108,
+      "vehicle_edges": 27,
+      "admitted": true,
+      "admission_errors": 0,
+      "ordinary_Lmax": 0.4801001142677395,
+      "direct_work": {
+        "rootClosures": 32,
+        "bisectionIterations": 1568,
+        "positiveTermMultiplications": 108
+      },
+      "picard_work": {
+        "rootClosures": 256,
+        "bisectionIterations": 12544,
+        "positiveTermMultiplications": 864
+      },
+      "picard_updates": 8,
+      "residual_work_per_method": {
+        "rootClosures": 32,
+        "bisectionIterations": 1568,
+        "positiveTermMultiplications": 108
+      },
+      "candidate_final_checks": {
+        "picard": {
+          "high_precision_log_residual": "1.1001423642145736164799195022771075156903610159287158005366858525E-16",
+          "theoretical_log_error_estimate": "2.2002847284291472329598390045542150313807220318574316010733717050E-16",
+          "theoretical_rotor_relative_error_estimate": "2.200284728429147475022483312480542268646275779212306576766896020E-16",
+          "maximum_saved_rotor_relative_difference": "3.1313629115662696372182492457569503238927746523723858517439377867201827729753952E-16",
+          "maximum_source_receiver_total_mismatch_N": "3.304685438209908262431559542118321914042063138098682065471770718E-17",
+          "interpretation": "80-digit numerical estimates; not outward-rounded certificates"
+        },
+        "direct": {
+          "high_precision_log_residual": "1.1001423642145736164799195022771075156903610159287158005366858525E-16",
+          "theoretical_log_error_estimate": "2.2002847284291472329598390045542150313807220318574316010733717050E-16",
+          "theoretical_rotor_relative_error_estimate": "2.200284728429147475022483312480542268646275779212306576766896020E-16",
+          "maximum_saved_rotor_relative_difference": "3.1313629115662696372182492457569503238927746523723858517439377867201827729753952E-16",
+          "maximum_source_receiver_total_mismatch_N": "3.304685438209908262431559542118321914042063138098682065471770718E-17",
+          "interpretation": "80-digit numerical estimates; not outward-rounded certificates"
+        }
+      },
+      "uncoupled_maximum_rotor_relative_difference": "0.23569163226352098793942294233937878012930172342266840420886693445304668127238067",
+      "independent_reference_updates": 8
+    },
+    {
+      "id": "tilted-ladder",
+      "vehicles": 8,
+      "pair_calls": 224,
+      "positive_rotor_terms": 104,
+      "vehicle_edges": 27,
+      "admitted": true,
+      "admission_errors": 0,
+      "ordinary_Lmax": 0.16879798955673844,
+      "direct_work": {
+        "rootClosures": 32,
+        "bisectionIterations": 1568,
+        "positiveTermMultiplications": 104
+      },
+      "picard_work": {
+        "rootClosures": 256,
+        "bisectionIterations": 12544,
+        "positiveTermMultiplications": 832
+      },
+      "picard_updates": 8,
+      "residual_work_per_method": {
+        "rootClosures": 32,
+        "bisectionIterations": 1568,
+        "positiveTermMultiplications": 104
+      },
+      "candidate_final_checks": {
+        "picard": {
+          "high_precision_log_residual": "1.34589685540969417044210859574893495577649795076888253926156756714E-16",
+          "theoretical_log_error_estimate": "2.69179371081938834088421719149786991155299590153776507852313513428E-16",
+          "theoretical_rotor_relative_error_estimate": "2.691793710819388703171886271838545655858997257729969451052815285E-16",
+          "maximum_saved_rotor_relative_difference": "2.7147337209790348155360411098214196857381279038445601704569884528580064713137519E-16",
+          "maximum_source_receiver_total_mismatch_N": "5.562528720367704396289097549805497699280837019810432467277724064E-17",
+          "interpretation": "80-digit numerical estimates; not outward-rounded certificates"
+        },
+        "direct": {
+          "high_precision_log_residual": "1.34589685540969417044210859574893495577649795076888253926156756714E-16",
+          "theoretical_log_error_estimate": "2.69179371081938834088421719149786991155299590153776507852313513428E-16",
+          "theoretical_rotor_relative_error_estimate": "2.691793710819388703171886271838545655858997257729969451052815285E-16",
+          "maximum_saved_rotor_relative_difference": "2.7147337209790348155360411098214196857381279038445601704569884528580064713137519E-16",
+          "maximum_source_receiver_total_mismatch_N": "5.562528720367704396289097549805497699280837019810432467277724064E-17",
+          "interpretation": "80-digit numerical estimates; not outward-rounded certificates"
+        }
+      },
+      "uncoupled_maximum_rotor_relative_difference": "0.037542641072259737599969238303043845811342553234438824477922620344746256340622816",
+      "independent_reference_updates": 8
+    },
+    {
+      "id": "hexagon-cycle",
+      "vehicles": 6,
+      "pair_calls": 120,
+      "positive_rotor_terms": 24,
+      "vehicle_edges": 6,
+      "admitted": true,
+      "admission_errors": 0,
+      "ordinary_Lmax": 0.07417511219535824,
+      "direct_work": null,
+      "picard_work": {
+        "rootClosures": 192,
+        "bisectionIterations": 10752,
+        "positiveTermMultiplications": 192
+      },
+      "picard_updates": 8,
+      "residual_work_per_method": {
+        "rootClosures": 24,
+        "bisectionIterations": 1344,
+        "positiveTermMultiplications": 24
+      },
+      "candidate_final_checks": {
+        "picard": {
+          "high_precision_log_residual": "6.9899004555967112292735829080453463930058280866327357885357463965181E-14",
+          "theoretical_log_error_estimate": "1.39798009111934224585471658160906927860116561732654715770714927930362E-13",
+          "theoretical_rotor_relative_error_estimate": "1.397980091119439963271474888385058775626463479595332559044688993095E-13",
+          "maximum_saved_rotor_relative_difference": "9.2567165747633108986609986503961949500356081868082592548123563625677827503134014E-15",
+          "maximum_source_receiver_total_mismatch_N": "3.383376131819108276618431709265000183394282762756130229564694738911E-14",
+          "interpretation": "80-digit numerical estimates; not outward-rounded certificates"
+        }
+      },
+      "uncoupled_maximum_rotor_relative_difference": "0.0051437861997230072816805372745415984160927498298963387518220899469896718189030314",
+      "independent_reference_updates": 28
+    },
+    {
+      "id": "near-rejection",
+      "vehicles": 2,
+      "pair_calls": 8,
+      "positive_rotor_terms": 0,
+      "vehicle_edges": 0,
+      "admitted": false,
+      "admission_errors": 6,
+      "ordinary_Lmax": 0,
+      "direct_work": null,
+      "picard_work": null,
+      "picard_updates": null,
+      "residual_work_per_method": null,
+      "candidate_final_checks": null,
+      "uncoupled_maximum_rotor_relative_difference": null,
+      "independent_reference_updates": null
+    }
+  ],
+  "new_scientific_evaluations": 0
+}

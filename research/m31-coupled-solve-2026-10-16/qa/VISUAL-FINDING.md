@@ -1,0 +1,3 @@
+# First display review
+
+The first browser suite passed26 functional/DOM/link checks with no console warnings/errors. Manual inspection of its desktop and mobile captures found the top drone clipped by the default camera framing. This visual defect is retained in attempt-1 screenshots/report. The viewer was updated to fit a padded bounding sphere using the smaller horizontal/vertical field of view and to reframe on viewport resizing. Slightly larger ID labels improve legibility. Scientific source and evidence remain unchanged. The same display flow is rerun as attempt2; it is not a scientific retry.
