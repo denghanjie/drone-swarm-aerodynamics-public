@@ -1,0 +1,138 @@
+{
+  "review": "source-only independent full-model checker, coverage, certificate and controls review",
+  "inheritedFileLimit": 16,
+  "inheritedContentFilesRead": 6,
+  "inheritedFiles": [
+    {
+      "path": "research/m31-current-bound-design-2026-10-16/ADOPTED-DESIGN.md",
+      "bytes": 10420,
+      "sha256": "702d64e84c3fc12fdc9e85cb59abf4dd00e8df010647e1567a47eed49ee5387c",
+      "inspection": "full source/text; no execution"
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/source/pair.cjs",
+      "bytes": 3579,
+      "sha256": "e9fb2f4d7e4d1da09f53c082cf09a3b01c906a9d77642ae333319118b2f568cc",
+      "inspection": "full source/text; no execution"
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/source/adapter.cjs",
+      "bytes": 2400,
+      "sha256": "5cf2b2ddc590915c63bae4f3909e90f196277804d1524aa0ef68165e6b1e4145",
+      "inspection": "full source/text; no execution"
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/MODEL.md",
+      "bytes": 3295,
+      "sha256": "70a267c26c142d2cccde4e8530f1be3fa619c3301964878d244d6dca8f8070c6",
+      "inspection": "full source/text; no execution"
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/source/coupled.cjs",
+      "bytes": 7421,
+      "sha256": "898d6b154d7a7c683a5ecc182280ff5c56d8a94526e3038c1da38b125c5a0ae9",
+      "inspection": "full source/text through identical preserved copy; no execution",
+      "preservedCopy": "research/m31-exact-screening-2026-10-17/prefreeze/inherited-coupled.cjs"
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/source/check.py",
+      "bytes": 52997,
+      "sha256": "dd3675f60d12f347ab550f1588c31da54ba57f065b20a727120711bf144e6fd4",
+      "inspection": "named copied helpers/reference/certificate routines only; textual comparison; no execution",
+      "lineRanges": [
+        [
+          177,
+          331
+        ],
+        [
+          491,
+          609
+        ]
+      ],
+      "additionalScope": "function-name/line-number index only"
+    }
+  ],
+  "newPackageSource": [
+    {
+      "path": "research/m31-exact-screening-2026-10-17/prefreeze/reviewed-checker-partial.py",
+      "bytes": 70737,
+      "sha256": "23f422245ca5f1d3718b72f434258e23b41a7dc6794c5c1941c2f0ed5e9d30b0",
+      "inspection": "full source text 1\u20131299; snapshot saved before checker reading; includes complete controls/main"
+    },
+    {
+      "path": "research/m31-exact-screening-2026-10-17/source/check.py",
+      "bytes": 70784,
+      "sha256": "df3c6330dc2f8577819a582f88d8a2a0379fc9377f8b7ec3097dc6565cee2599",
+      "inspection": "fully reviewed initial snapshot plus two scoped deltas: unused overwritten width assignment removed; fraction_wire adds outbound 4096-character numerator/denominator cap; no execution"
+    },
+    {
+      "path": "research/m31-exact-screening-2026-10-17/source/pair-reference.py",
+      "bytes": 44757,
+      "sha256": "845f52cf350a09d2043934dff3e797a7b7416f4ef5c64beb716104bcd74f38f0",
+      "inspection": "source text lines 1\u201340,155\u2013393,448\u2013559,948\u2013952; function-name index; no module import"
+    },
+    {
+      "path": "research/m31-exact-screening-2026-10-17/source/result-contract.json",
+      "bytes": 8505,
+      "sha256": "b24b550aa1df45680d92b069a008be568cf3a4ff067a051c532cbaff7bdd2cf3",
+      "inspection": "full source text; no execution"
+    },
+    {
+      "path": "research/m31-exact-screening-2026-10-17/prefreeze/check-before-outbound-rational-cap.py",
+      "bytes": 70665,
+      "sha256": "cffbcbbb8f714a1f5db72b2ae0bcd22a8c136e1a4d5d979365a7f5c3854823de",
+      "inspection": "metadata verified equal to previously reviewed final checker; textual diff only"
+    }
+  ],
+  "checkerSnapshotSha256": "23f422245ca5f1d3718b72f434258e23b41a7dc6794c5c1941c2f0ed5e9d30b0",
+  "finalCheckerSha256": "df3c6330dc2f8577819a582f88d8a2a0379fc9377f8b7ec3097dc6565cee2599",
+  "textIdenticalInheritedRoutines": [
+    "interval_wire",
+    "fields",
+    "sequence",
+    "integer",
+    "candidate_interval",
+    "upper_value",
+    "contains",
+    "plus",
+    "times",
+    "scaled",
+    "sum_intervals",
+    "quantize",
+    "sqrt_bounds",
+    "cross",
+    "prepared_exact",
+    "load_boxes",
+    "bisect_cubic",
+    "source_box",
+    "reference_roots",
+    "absolute_error"
+  ],
+  "changedInheritedRoutines": {
+    "rational": "prospective canonical integer string length 2048\u21924096; arithmetic checks unchanged",
+    "validate_certificate": "emit_reference parameter and conditional evidence append only; all validation arithmetic unchanged",
+    "fraction_wire": "same numerator/denominator strings; explicit outbound length cap of4096 each; no rounding or formula change"
+  },
+  "metadataOnlyComparisons": [
+    {
+      "inheritedPath": "research/m31-coupled-loads-2026-10-17/source/pair-reference.py",
+      "newPackagePath": "research/m31-exact-screening-2026-10-17/source/pair-reference.py",
+      "byteIdentical": true,
+      "sha256": "845f52cf350a09d2043934dff3e797a7b7416f4ef5c64beb716104bcd74f38f0"
+    }
+  ],
+  "prohibitedActionsPerformed": [],
+  "method": "Source/text review, static textual extraction/diffs, metadata hashing and review-artifact writes only. No scientific imports/evaluation/runs, external operations, old-suite reruns or agents.",
+  "disposition": "No unresolved source-review mathematical, partition or targeted-control blocker for the final checker hash. No numerical qualification or execution authorization is implied.",
+  "previousReviewedCheckerSha256": "cffbcbbb8f714a1f5db72b2ae0bcd22a8c136e1a4d5d979365a7f5c3854823de",
+  "outboundCapDeltaAcknowledgment": {
+    "previousBytes": 70665,
+    "previousSha256": "cffbcbbb8f714a1f5db72b2ae0bcd22a8c136e1a4d5d979365a7f5c3854823de",
+    "finalBytes": 70784,
+    "finalLines": 1300,
+    "finalSha256": "df3c6330dc2f8577819a582f88d8a2a0379fc9377f8b7ec3097dc6565cee2599",
+    "scope": "Only fraction_wire textual delta and file metadata inspected. Same dictionary values with named outbound-rational-string-budget refusal above4096characters. Prior source-review disposition extends; no blocker.",
+    "additionalInheritedSemanticReads": 0,
+    "scientificImportsOrExecution": false
+  }
+}

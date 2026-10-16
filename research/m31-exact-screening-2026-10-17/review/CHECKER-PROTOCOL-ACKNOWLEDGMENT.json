@@ -1,0 +1,50 @@
+{
+  "schema": "m31-exact-screening-checker-protocol-acknowledgment-v1",
+  "inheritedFilesRead": 6,
+  "inheritedLimit": 16,
+  "scope": "Only contract delta, checker control/error gate, main/journal/helper-loader and output limits; deeper scientific semantics not re-reviewed",
+  "pins": [
+    {
+      "path": "research/m31-exact-screening-2026-10-17/source/check.py",
+      "bytes": 70784,
+      "sha256": "df3c6330dc2f8577819a582f88d8a2a0379fc9377f8b7ec3097dc6565cee2599"
+    },
+    {
+      "path": "research/m31-exact-screening-2026-10-17/source/result-contract.json",
+      "bytes": 8505,
+      "sha256": "b24b550aa1df45680d92b069a008be568cf3a4ff067a051c532cbaff7bdd2cf3"
+    },
+    {
+      "path": "research/m31-exact-screening-2026-10-17/prefreeze/check-before-outbound-rational-cap.py",
+      "bytes": 70665,
+      "sha256": "cffbcbbb8f714a1f5db72b2ae0bcd22a8c136e1a4d5d979365a7f5c3854823de"
+    }
+  ],
+  "priorCheckerInspectedLineRanges": [
+    [
+      1,
+      65
+    ],
+    [
+      169,
+      235
+    ],
+    [
+      458,
+      486
+    ],
+    [
+      880,
+      984
+    ],
+    [
+      987,
+      1294
+    ]
+  ],
+  "finalDelta": "fraction_wire outbound integer-string length cap only",
+  "contractDelta": "sole added controlValidation field; exact prior byte/hash reconstruction verified",
+  "noScientificExecution": true,
+  "noExternalOperations": true,
+  "noNewAgents": true
+}
