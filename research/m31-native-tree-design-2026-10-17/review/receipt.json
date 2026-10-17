@@ -1,0 +1,2384 @@
+{
+  "schema": "m31-native-tree-saved-result-review-v1",
+  "reviewedUtc": "2026-10-17T03:38:31.819879+00:00",
+  "reviewer": "/root/m31_verified_literature",
+  "authorshipDisclosure": "Reviewer authored harness and supervisor; numerical Python checker had a separate author. Shared context/dependencies limit independence.",
+  "mode": "Read-only JSON parsing, integer recounts, literal binary64-word equality and SHA-256; no scientific module/checker execution or import; no browser/network/Git. Only review outputs written.",
+  "sourceCommit": "52d7c95e0edbe38d9c7473058e42420e939a1c51",
+  "sourceManifestSha256": "d37b0769b331b2f07812b6591a4e92727de83481a0f15f9e2b905765fc29c396",
+  "status": "pass-with-scoped-limitations",
+  "discrepancies": [],
+  "inputPins": {
+    "source-manifest.json": {
+      "bytes": 5965,
+      "sha256": "d37b0769b331b2f07812b6591a4e92727de83481a0f15f9e2b905765fc29c396"
+    },
+    "source-publication.json": {
+      "bytes": 865,
+      "sha256": "8698e40ca03e8901c151242f2353f5d7860c0d9895a3e374101af722f4a74768"
+    },
+    "results/run-attempt.json": {
+      "bytes": 25664,
+      "sha256": "ad21e997732bf8bf5ce142ec78d5d80e87993e8ac94f15b279973747c2e3bae0"
+    },
+    "results/work.json": {
+      "bytes": 2319198,
+      "sha256": "e4125bd48f2b0ee440443b02ab5486cda3cc6212d535fb375ef2ed9d4bac7f60"
+    },
+    "results/work.jsonl": {
+      "bytes": 2289243,
+      "sha256": "d9d320a038bdd763b1f736c6a411cda1bf0c69f56d439d3a35e3a0885d1fb7c5"
+    },
+    "results/check.json": {
+      "bytes": 10422,
+      "sha256": "fe8bd0a963a61d1eba91528bdc9017c0ed2f7bd9706381faa66094aeb1faea3a"
+    },
+    "source/cases.json": {
+      "bytes": 12367,
+      "sha256": "9cf2a3e99bd645abeb83e92eeb6efcdff81cf2ad71a1e31db8ce8ff9667ba0e1"
+    },
+    "config.json": {
+      "bytes": 1438,
+      "sha256": "45c1e19190acfff61029a0ec242154503c7451f5d9a63f1c2740adbe7ec79669"
+    },
+    "CONTROL-PROTOCOL.md": {
+      "bytes": 11166,
+      "sha256": "b66c7dc495b860cd3abd8b729e2b7aa97e7822be5b91be547da19b83d69daec2"
+    },
+    "SUPERVISION.md": {
+      "bytes": 11204,
+      "sha256": "e0888219fee41aa13be2c2872eeb8c35fb639fe14c9e8e08fa111b348aefde8e"
+    }
+  },
+  "verifiedSourcePins": [
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/results/inputs/fresh-a-t5.json",
+      "bytes": 21955,
+      "sha256": "48dc63da80d4400a948a102143e872a49645b37b08eac73f932959653a16fa7c"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/native-load.cjs",
+      "bytes": 16262,
+      "sha256": "b4699a8025e27dcd34e9a206e0330a2c08d7caa61e934ec203d142876e1430f1"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/vendor/anchor-kernel.cjs",
+      "bytes": 11828,
+      "sha256": "c2ab29e4f53341706582d52149df96cd93323d3943ac145f288fbbae4de71a8a"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/vendor/controls.cjs",
+      "bytes": 5355,
+      "sha256": "bf54381ee7f4dab8fbb19e48ada7e11c0f6d129cec1bcd21e5ce5075fc91f1ba"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/vendor/kernel.cjs",
+      "bytes": 16676,
+      "sha256": "efc87f4c0f9d1a5a9b754d9d334ce295227a0cb01ce6980e4818313dd35d3bc8"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/vendor/lean-anchor.cjs",
+      "bytes": 14840,
+      "sha256": "1b57d90d1ce1a45fe3e7f637cae57325861bfc37c907de4d4c6f9e1a79f1af96"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/vendor/reference-excerpt.cjs",
+      "bytes": 2731,
+      "sha256": "ec71562d17db5b30497e2953adc75019c424c19a44e45b22fcbb3a4482096d1e"
+    },
+    {
+      "path": "research/m31-native-tree-design-2026-10-17/CONTROL-PROTOCOL.md",
+      "bytes": 11166,
+      "sha256": "b66c7dc495b860cd3abd8b729e2b7aa97e7822be5b91be547da19b83d69daec2"
+    },
+    {
+      "path": "research/m31-native-tree-design-2026-10-17/DIFF-INVENTORY.md",
+      "bytes": 6006,
+      "sha256": "b0a2981f195b2cd9b2d1efb2d934ec196478ed7e4513fc83c41d42113f7a03c2"
+    },
+    {
+      "path": "research/m31-native-tree-design-2026-10-17/IMPLEMENTATION.md",
+      "bytes": 13066,
+      "sha256": "0d9899dc0536d365c1b80c07875e61a9aebda796d2dd53aa04e939a123b1debd"
+    },
+    {
+      "path": "research/m31-native-tree-design-2026-10-17/LITERATURE.md",
+      "bytes": 2190,
+      "sha256": "f1272debc29da1f181682fdc3e2fc2b8225a2357ecf4f1afd15716d91fa9a88f"
+    },
+    {
+      "path": "research/m31-native-tree-design-2026-10-17/PROTOCOL.md",
+      "bytes": 7565,
+      "sha256": "766255962e1b76c996abb9989ce231be017011ff3665d0e52ddc1893c2a2e1fc"
+    },
+    {
+      "path": "research/m31-native-tree-design-2026-10-17/SOURCE-REVIEW.md",
+      "bytes": 3690,
+      "sha256": "e21570fb09148819e88507a9ff880265834670207c794e6f0d310f757019f75c"
+    },
+    {
+      "path": "research/m31-native-tree-design-2026-10-17/SUPERVISION.md",
+      "bytes": 11204,
+      "sha256": "e0888219fee41aa13be2c2872eeb8c35fb639fe14c9e8e08fa111b348aefde8e"
+    },
+    {
+      "path": "research/m31-native-tree-design-2026-10-17/SYNTAX-RECEIPT.json",
+      "bytes": 1607,
+      "sha256": "edb979afe3ac3593809ff91733eae84b66d014d9aae0517e4c37cfe921d66b6d"
+    },
+    {
+      "path": "research/m31-native-tree-design-2026-10-17/config.json",
+      "bytes": 1438,
+      "sha256": "45c1e19190acfff61029a0ec242154503c7451f5d9a63f1c2740adbe7ec79669"
+    },
+    {
+      "path": "research/m31-native-tree-design-2026-10-17/config.reviewed-disabled.json",
+      "bytes": 1279,
+      "sha256": "9f6bbaaaa4caf732d67f26f037ba5d2df90a854d2e570ec2291b7bdf90d8be18"
+    },
+    {
+      "path": "research/m31-native-tree-design-2026-10-17/review/SOURCE-INTEGRATION.md",
+      "bytes": 11655,
+      "sha256": "780b3dcf1cdb388b03bf3e9da06581a172bd8e46a79ecf650c1a5cac79d391d3"
+    },
+    {
+      "path": "research/m31-native-tree-design-2026-10-17/reviewed-source-manifest.json",
+      "bytes": 5144,
+      "sha256": "48e60b2ab75074c2e4dc1765f98e57596e066b43f7ff817fa5538720dc19f2b2"
+    },
+    {
+      "path": "research/m31-native-tree-design-2026-10-17/runtime.json",
+      "bytes": 540,
+      "sha256": "8b67079cdb50397f873b66235707c6a9d9a57b9252b32334635ada6de4336bc6"
+    },
+    {
+      "path": "research/m31-native-tree-design-2026-10-17/source/cases.json",
+      "bytes": 12367,
+      "sha256": "9cf2a3e99bd645abeb83e92eeb6efcdff81cf2ad71a1e31db8ce8ff9667ba0e1"
+    },
+    {
+      "path": "research/m31-native-tree-design-2026-10-17/source/check.py",
+      "bytes": 38769,
+      "sha256": "1f40c7b3dc3f962eb623e5d7d2f848d03fc2decb0425e72733ba02722a76782b"
+    },
+    {
+      "path": "research/m31-native-tree-design-2026-10-17/source/harness.cjs",
+      "bytes": 14710,
+      "sha256": "3fc8171bf88319abef03f92c586fae21c18dcd2c6425d2d04a5bce8207569b62"
+    },
+    {
+      "path": "research/m31-native-tree-design-2026-10-17/source/kernel.cjs",
+      "bytes": 16690,
+      "sha256": "42cb6deeb32e9b5bd633679d3ea58489940009a9f77f690a0368b6f22de2a971"
+    },
+    {
+      "path": "research/m31-native-tree-design-2026-10-17/source/native-load.cjs",
+      "bytes": 17214,
+      "sha256": "05d9fcb5aa9fc8d3f4812a14e469096f5c3d6110b18f7b164496df7e21dd530b"
+    },
+    {
+      "path": "research/m31-native-tree-design-2026-10-17/source/run.py",
+      "bytes": 15316,
+      "sha256": "7bcb0f9c351fdfb4753cbe7fc6649e23b25c88e2d91bf73fcf2df4f7d6902fb8"
+    },
+    {
+      "path": "research/m31-native-tree-design-2026-10-17/source/tree.cjs",
+      "bytes": 4362,
+      "sha256": "23e7b4393321d4a6cc83906a2d02319dd7a37b2a2f63ae165fe4558eca73f422"
+    }
+  ],
+  "verifiedRetainedOutputCount": 129,
+  "verifiedSidecarCount": 126,
+  "journalRows": 42,
+  "expandedInputsMatched": 42,
+  "semanticComparisonsToF": 84,
+  "semanticExcludedPaths": [
+    "method",
+    "tree",
+    "timing",
+    "diagnostics.buildPhasesMs",
+    "diagnostics.geometryWork.gatheredNonselfCandidates",
+    "diagnostics.screen.orderedPairVisits",
+    "diagnostics.screen.componentTests"
+  ],
+  "integerCoverageCertificatesRecounted": 72,
+  "caseCount": 42,
+  "queryCount": 126,
+  "statusesByMethod": {
+    "F": {
+      "native-success": 34,
+      "domain-refused": 4,
+      "input-refused": 4
+    },
+    "H0": {
+      "native-success": 34,
+      "domain-refused": 4,
+      "input-refused": 4
+    },
+    "H": {
+      "native-success": 34,
+      "domain-refused": 4,
+      "input-refused": 4
+    }
+  },
+  "reasonsByMethod": {
+    "F": {
+      "none": 34,
+      "native-admission": 3,
+      "raw-nonfinite": 1,
+      "nominal-nonpositive": 1,
+      "native-graph-order": 1,
+      "duplicate-id": 1,
+      "record-fields": 1
+    },
+    "H0": {
+      "none": 34,
+      "native-admission": 3,
+      "raw-nonfinite": 1,
+      "nominal-nonpositive": 1,
+      "native-graph-order": 1,
+      "duplicate-id": 1,
+      "record-fields": 1
+    },
+    "H": {
+      "none": 34,
+      "native-admission": 3,
+      "raw-nonfinite": 1,
+      "nominal-nonpositive": 1,
+      "native-graph-order": 1,
+      "duplicate-id": 1,
+      "record-fields": 1
+    }
+  },
+  "recordedMutationControls": [
+    {
+      "id": "coverage-missing",
+      "kind": "saved-record-mutation-control",
+      "reason": "certificate-receiver-row",
+      "status": "rejected"
+    },
+    {
+      "id": "coverage-duplicate",
+      "kind": "saved-record-mutation-control",
+      "reason": "certificate-receiver-row",
+      "status": "rejected"
+    },
+    {
+      "id": "coverage-self",
+      "kind": "saved-record-mutation-control",
+      "reason": "certificate-receiver-row",
+      "status": "rejected"
+    },
+    {
+      "id": "false-cull",
+      "kind": "saved-record-mutation-control",
+      "reason": "certificate-receiver-row",
+      "status": "rejected"
+    },
+    {
+      "id": "node-bound",
+      "kind": "saved-record-mutation-control",
+      "reason": "tree-reconstruction",
+      "status": "rejected"
+    },
+    {
+      "id": "node-membership",
+      "kind": "saved-record-mutation-control",
+      "reason": "tree-reconstruction",
+      "status": "rejected"
+    },
+    {
+      "id": "raw-id",
+      "kind": "saved-record-mutation-control",
+      "reason": "canonical-raw-binding",
+      "status": "rejected"
+    },
+    {
+      "id": "prepared-center",
+      "kind": "saved-record-mutation-control",
+      "reason": "prepared-raw-binding",
+      "status": "rejected"
+    },
+    {
+      "id": "csr-source-order",
+      "kind": "saved-record-mutation-control",
+      "reason": "csr-positive-order-self",
+      "status": "rejected"
+    },
+    {
+      "id": "coefficient-word",
+      "kind": "saved-record-mutation-control",
+      "reason": "full-native-semantic-equivalence",
+      "status": "rejected"
+    },
+    {
+      "id": "root-word",
+      "kind": "saved-record-mutation-control",
+      "reason": "full-native-semantic-equivalence",
+      "status": "rejected"
+    },
+    {
+      "id": "load-word",
+      "kind": "saved-record-mutation-control",
+      "reason": "consumption-word-id-status",
+      "status": "rejected"
+    },
+    {
+      "id": "consumption",
+      "kind": "saved-record-mutation-control",
+      "reason": "consumption-word-id-status",
+      "status": "rejected"
+    },
+    {
+      "id": "admission",
+      "kind": "saved-record-mutation-control",
+      "reason": "successful-admission",
+      "status": "rejected"
+    },
+    {
+      "id": "refusal-status",
+      "kind": "saved-record-mutation-control",
+      "reason": "expected-native-status-reason",
+      "status": "rejected"
+    }
+  ],
+  "recordedArithmeticControls": {
+    "source": "hardcoded binary64 word answers; exact integer/Fraction RN-even",
+    "status": "pass",
+    "subtractionFixtures": 16,
+    "thresholdComparisons": 6
+  },
+  "workTotals": {
+    "F": {
+      "orderedPairVisits": 5666,
+      "componentTests": 5592,
+      "centerNormCalls": 5442,
+      "rotorPairCalls": 20384,
+      "positiveTerms": 260,
+      "treeCulls": 0,
+      "omittedNonself": 0,
+      "gatheredNonself": 5666,
+      "nodeVisits": 0,
+      "endpointComparisons": 0,
+      "visitedLeaves": 0
+    },
+    "H0": {
+      "orderedPairVisits": 5666,
+      "componentTests": 5592,
+      "centerNormCalls": 5442,
+      "rotorPairCalls": 20384,
+      "positiveTerms": 260,
+      "treeCulls": 0,
+      "omittedNonself": 0,
+      "gatheredNonself": 5666,
+      "nodeVisits": 1559,
+      "endpointComparisons": 9314,
+      "visitedLeaves": 922
+    },
+    "H": {
+      "orderedPairVisits": 5602,
+      "componentTests": 5528,
+      "centerNormCalls": 5442,
+      "rotorPairCalls": 20384,
+      "positiveTerms": 260,
+      "treeCulls": 14,
+      "omittedNonself": 64,
+      "gatheredNonself": 5602,
+      "nodeVisits": 1559,
+      "endpointComparisons": 9314,
+      "visitedLeaves": 908
+    }
+  },
+  "caseSummary": [
+    {
+      "id": "x-plus-inside",
+      "drones": 9,
+      "status": "native-success",
+      "reason": null,
+      "work": {
+        "F": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 72,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 72,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 27,
+          "endpointComparisons": 162,
+          "visitedLeaves": 18
+        },
+        "H": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 72,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 27,
+          "endpointComparisons": 162,
+          "visitedLeaves": 18
+        }
+      }
+    },
+    {
+      "id": "x-plus-equal",
+      "drones": 9,
+      "status": "native-success",
+      "reason": null,
+      "work": {
+        "F": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 27,
+          "endpointComparisons": 157,
+          "visitedLeaves": 18
+        },
+        "H": {
+          "orderedPairVisits": 67,
+          "componentTests": 67,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 1,
+          "omittedNonself": 5,
+          "gatheredNonself": 67,
+          "nodeVisits": 27,
+          "endpointComparisons": 157,
+          "visitedLeaves": 17
+        }
+      }
+    },
+    {
+      "id": "x-plus-outside",
+      "drones": 9,
+      "status": "native-success",
+      "reason": null,
+      "work": {
+        "F": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 27,
+          "endpointComparisons": 157,
+          "visitedLeaves": 18
+        },
+        "H": {
+          "orderedPairVisits": 67,
+          "componentTests": 67,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 1,
+          "omittedNonself": 5,
+          "gatheredNonself": 67,
+          "nodeVisits": 27,
+          "endpointComparisons": 157,
+          "visitedLeaves": 17
+        }
+      }
+    },
+    {
+      "id": "x-minus-inside",
+      "drones": 9,
+      "status": "native-success",
+      "reason": null,
+      "work": {
+        "F": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 72,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 72,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 27,
+          "endpointComparisons": 162,
+          "visitedLeaves": 18
+        },
+        "H": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 72,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 27,
+          "endpointComparisons": 162,
+          "visitedLeaves": 18
+        }
+      }
+    },
+    {
+      "id": "x-minus-equal",
+      "drones": 9,
+      "status": "native-success",
+      "reason": null,
+      "work": {
+        "F": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 27,
+          "endpointComparisons": 158,
+          "visitedLeaves": 18
+        },
+        "H": {
+          "orderedPairVisits": 68,
+          "componentTests": 68,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 1,
+          "omittedNonself": 4,
+          "gatheredNonself": 68,
+          "nodeVisits": 27,
+          "endpointComparisons": 158,
+          "visitedLeaves": 17
+        }
+      }
+    },
+    {
+      "id": "x-minus-outside",
+      "drones": 9,
+      "status": "native-success",
+      "reason": null,
+      "work": {
+        "F": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 27,
+          "endpointComparisons": 158,
+          "visitedLeaves": 18
+        },
+        "H": {
+          "orderedPairVisits": 68,
+          "componentTests": 68,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 1,
+          "omittedNonself": 4,
+          "gatheredNonself": 68,
+          "nodeVisits": 27,
+          "endpointComparisons": 158,
+          "visitedLeaves": 17
+        }
+      }
+    },
+    {
+      "id": "y-plus-inside",
+      "drones": 9,
+      "status": "native-success",
+      "reason": null,
+      "work": {
+        "F": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 72,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 72,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 27,
+          "endpointComparisons": 162,
+          "visitedLeaves": 18
+        },
+        "H": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 72,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 27,
+          "endpointComparisons": 162,
+          "visitedLeaves": 18
+        }
+      }
+    },
+    {
+      "id": "y-plus-equal",
+      "drones": 9,
+      "status": "native-success",
+      "reason": null,
+      "work": {
+        "F": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 27,
+          "endpointComparisons": 159,
+          "visitedLeaves": 18
+        },
+        "H": {
+          "orderedPairVisits": 67,
+          "componentTests": 67,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 1,
+          "omittedNonself": 5,
+          "gatheredNonself": 67,
+          "nodeVisits": 27,
+          "endpointComparisons": 159,
+          "visitedLeaves": 17
+        }
+      }
+    },
+    {
+      "id": "y-plus-outside",
+      "drones": 9,
+      "status": "native-success",
+      "reason": null,
+      "work": {
+        "F": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 27,
+          "endpointComparisons": 159,
+          "visitedLeaves": 18
+        },
+        "H": {
+          "orderedPairVisits": 67,
+          "componentTests": 67,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 1,
+          "omittedNonself": 5,
+          "gatheredNonself": 67,
+          "nodeVisits": 27,
+          "endpointComparisons": 159,
+          "visitedLeaves": 17
+        }
+      }
+    },
+    {
+      "id": "y-minus-inside",
+      "drones": 9,
+      "status": "native-success",
+      "reason": null,
+      "work": {
+        "F": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 72,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 72,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 27,
+          "endpointComparisons": 162,
+          "visitedLeaves": 18
+        },
+        "H": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 72,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 27,
+          "endpointComparisons": 162,
+          "visitedLeaves": 18
+        }
+      }
+    },
+    {
+      "id": "y-minus-equal",
+      "drones": 9,
+      "status": "native-success",
+      "reason": null,
+      "work": {
+        "F": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 27,
+          "endpointComparisons": 160,
+          "visitedLeaves": 18
+        },
+        "H": {
+          "orderedPairVisits": 68,
+          "componentTests": 68,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 1,
+          "omittedNonself": 4,
+          "gatheredNonself": 68,
+          "nodeVisits": 27,
+          "endpointComparisons": 160,
+          "visitedLeaves": 17
+        }
+      }
+    },
+    {
+      "id": "y-minus-outside",
+      "drones": 9,
+      "status": "native-success",
+      "reason": null,
+      "work": {
+        "F": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 27,
+          "endpointComparisons": 160,
+          "visitedLeaves": 18
+        },
+        "H": {
+          "orderedPairVisits": 68,
+          "componentTests": 68,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 1,
+          "omittedNonself": 4,
+          "gatheredNonself": 68,
+          "nodeVisits": 27,
+          "endpointComparisons": 160,
+          "visitedLeaves": 17
+        }
+      }
+    },
+    {
+      "id": "z-plus-inside",
+      "drones": 9,
+      "status": "native-success",
+      "reason": null,
+      "work": {
+        "F": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 72,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 72,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 27,
+          "endpointComparisons": 162,
+          "visitedLeaves": 18
+        },
+        "H": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 72,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 27,
+          "endpointComparisons": 162,
+          "visitedLeaves": 18
+        }
+      }
+    },
+    {
+      "id": "z-plus-equal",
+      "drones": 9,
+      "status": "native-success",
+      "reason": null,
+      "work": {
+        "F": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 27,
+          "endpointComparisons": 161,
+          "visitedLeaves": 18
+        },
+        "H": {
+          "orderedPairVisits": 67,
+          "componentTests": 67,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 1,
+          "omittedNonself": 5,
+          "gatheredNonself": 67,
+          "nodeVisits": 27,
+          "endpointComparisons": 161,
+          "visitedLeaves": 17
+        }
+      }
+    },
+    {
+      "id": "z-plus-outside",
+      "drones": 9,
+      "status": "native-success",
+      "reason": null,
+      "work": {
+        "F": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 27,
+          "endpointComparisons": 161,
+          "visitedLeaves": 18
+        },
+        "H": {
+          "orderedPairVisits": 67,
+          "componentTests": 67,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 1,
+          "omittedNonself": 5,
+          "gatheredNonself": 67,
+          "nodeVisits": 27,
+          "endpointComparisons": 161,
+          "visitedLeaves": 17
+        }
+      }
+    },
+    {
+      "id": "z-minus-inside",
+      "drones": 9,
+      "status": "native-success",
+      "reason": null,
+      "work": {
+        "F": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 72,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 72,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 27,
+          "endpointComparisons": 162,
+          "visitedLeaves": 18
+        },
+        "H": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 72,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 27,
+          "endpointComparisons": 162,
+          "visitedLeaves": 18
+        }
+      }
+    },
+    {
+      "id": "z-minus-equal",
+      "drones": 9,
+      "status": "native-success",
+      "reason": null,
+      "work": {
+        "F": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 27,
+          "endpointComparisons": 162,
+          "visitedLeaves": 18
+        },
+        "H": {
+          "orderedPairVisits": 68,
+          "componentTests": 68,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 1,
+          "omittedNonself": 4,
+          "gatheredNonself": 68,
+          "nodeVisits": 27,
+          "endpointComparisons": 162,
+          "visitedLeaves": 17
+        }
+      }
+    },
+    {
+      "id": "z-minus-outside",
+      "drones": 9,
+      "status": "native-success",
+      "reason": null,
+      "work": {
+        "F": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 27,
+          "endpointComparisons": 162,
+          "visitedLeaves": 18
+        },
+        "H": {
+          "orderedPairVisits": 68,
+          "componentTests": 68,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 1,
+          "omittedNonself": 4,
+          "gatheredNonself": 68,
+          "nodeVisits": 27,
+          "endpointComparisons": 162,
+          "visitedLeaves": 17
+        }
+      }
+    },
+    {
+      "id": "radius-x-inside",
+      "drones": 2,
+      "status": "native-success",
+      "reason": null,
+      "work": {
+        "F": {
+          "orderedPairVisits": 2,
+          "componentTests": 2,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 8,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 2,
+          "componentTests": 2,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 8,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 2,
+          "endpointComparisons": 12,
+          "visitedLeaves": 2
+        },
+        "H": {
+          "orderedPairVisits": 2,
+          "componentTests": 2,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 8,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 2,
+          "endpointComparisons": 12,
+          "visitedLeaves": 2
+        }
+      }
+    },
+    {
+      "id": "radius-x-equal",
+      "drones": 2,
+      "status": "native-success",
+      "reason": null,
+      "work": {
+        "F": {
+          "orderedPairVisits": 2,
+          "componentTests": 2,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 0,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 2,
+          "componentTests": 2,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 0,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 2,
+          "endpointComparisons": 12,
+          "visitedLeaves": 2
+        },
+        "H": {
+          "orderedPairVisits": 2,
+          "componentTests": 2,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 0,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 2,
+          "endpointComparisons": 12,
+          "visitedLeaves": 2
+        }
+      }
+    },
+    {
+      "id": "radius-x-outside",
+      "drones": 2,
+      "status": "native-success",
+      "reason": null,
+      "work": {
+        "F": {
+          "orderedPairVisits": 2,
+          "componentTests": 2,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 0,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 2,
+          "componentTests": 2,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 0,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 2,
+          "endpointComparisons": 12,
+          "visitedLeaves": 2
+        },
+        "H": {
+          "orderedPairVisits": 2,
+          "componentTests": 2,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 0,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 2,
+          "endpointComparisons": 12,
+          "visitedLeaves": 2
+        }
+      }
+    },
+    {
+      "id": "radius-y-inside",
+      "drones": 2,
+      "status": "native-success",
+      "reason": null,
+      "work": {
+        "F": {
+          "orderedPairVisits": 2,
+          "componentTests": 2,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 8,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 2,
+          "componentTests": 2,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 8,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 2,
+          "endpointComparisons": 12,
+          "visitedLeaves": 2
+        },
+        "H": {
+          "orderedPairVisits": 2,
+          "componentTests": 2,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 8,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 2,
+          "endpointComparisons": 12,
+          "visitedLeaves": 2
+        }
+      }
+    },
+    {
+      "id": "radius-y-equal",
+      "drones": 2,
+      "status": "native-success",
+      "reason": null,
+      "work": {
+        "F": {
+          "orderedPairVisits": 2,
+          "componentTests": 2,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 0,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 2,
+          "componentTests": 2,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 0,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 2,
+          "endpointComparisons": 12,
+          "visitedLeaves": 2
+        },
+        "H": {
+          "orderedPairVisits": 2,
+          "componentTests": 2,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 0,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 2,
+          "endpointComparisons": 12,
+          "visitedLeaves": 2
+        }
+      }
+    },
+    {
+      "id": "radius-y-outside",
+      "drones": 2,
+      "status": "native-success",
+      "reason": null,
+      "work": {
+        "F": {
+          "orderedPairVisits": 2,
+          "componentTests": 2,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 0,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 2,
+          "componentTests": 2,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 0,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 2,
+          "endpointComparisons": 12,
+          "visitedLeaves": 2
+        },
+        "H": {
+          "orderedPairVisits": 2,
+          "componentTests": 2,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 0,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 2,
+          "endpointComparisons": 12,
+          "visitedLeaves": 2
+        }
+      }
+    },
+    {
+      "id": "radius-z-inside",
+      "drones": 2,
+      "status": "native-success",
+      "reason": null,
+      "work": {
+        "F": {
+          "orderedPairVisits": 2,
+          "componentTests": 2,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 8,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 2,
+          "componentTests": 2,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 8,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 2,
+          "endpointComparisons": 12,
+          "visitedLeaves": 2
+        },
+        "H": {
+          "orderedPairVisits": 2,
+          "componentTests": 2,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 8,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 2,
+          "endpointComparisons": 12,
+          "visitedLeaves": 2
+        }
+      }
+    },
+    {
+      "id": "radius-z-equal",
+      "drones": 2,
+      "status": "native-success",
+      "reason": null,
+      "work": {
+        "F": {
+          "orderedPairVisits": 2,
+          "componentTests": 2,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 0,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 2,
+          "componentTests": 2,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 0,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 2,
+          "endpointComparisons": 12,
+          "visitedLeaves": 2
+        },
+        "H": {
+          "orderedPairVisits": 2,
+          "componentTests": 2,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 0,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 2,
+          "endpointComparisons": 12,
+          "visitedLeaves": 2
+        }
+      }
+    },
+    {
+      "id": "radius-z-outside",
+      "drones": 2,
+      "status": "native-success",
+      "reason": null,
+      "work": {
+        "F": {
+          "orderedPairVisits": 2,
+          "componentTests": 2,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 0,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 2,
+          "componentTests": 2,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 0,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 2,
+          "endpointComparisons": 12,
+          "visitedLeaves": 2
+        },
+        "H": {
+          "orderedPairVisits": 2,
+          "componentTests": 2,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 0,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 2,
+          "endpointComparisons": 12,
+          "visitedLeaves": 2
+        }
+      }
+    },
+    {
+      "id": "duplicate-positions-distinct-ids",
+      "drones": 9,
+      "status": "native-success",
+      "reason": null,
+      "work": {
+        "F": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 72,
+          "rotorPairCalls": 288,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 72,
+          "rotorPairCalls": 288,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 27,
+          "endpointComparisons": 162,
+          "visitedLeaves": 18
+        },
+        "H": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 72,
+          "rotorPairCalls": 288,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 27,
+          "endpointComparisons": 162,
+          "visitedLeaves": 18
+        }
+      }
+    },
+    {
+      "id": "positive-canonical",
+      "drones": 4,
+      "status": "native-success",
+      "reason": null,
+      "work": {
+        "F": {
+          "orderedPairVisits": 12,
+          "componentTests": 12,
+          "centerNormCalls": 12,
+          "rotorPairCalls": 48,
+          "positiveTerms": 12,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 12,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 12,
+          "componentTests": 12,
+          "centerNormCalls": 12,
+          "rotorPairCalls": 48,
+          "positiveTerms": 12,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 12,
+          "nodeVisits": 4,
+          "endpointComparisons": 24,
+          "visitedLeaves": 4
+        },
+        "H": {
+          "orderedPairVisits": 12,
+          "componentTests": 12,
+          "centerNormCalls": 12,
+          "rotorPairCalls": 48,
+          "positiveTerms": 12,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 12,
+          "nodeVisits": 4,
+          "endpointComparisons": 24,
+          "visitedLeaves": 4
+        }
+      }
+    },
+    {
+      "id": "positive-permuted",
+      "drones": 4,
+      "status": "native-success",
+      "reason": null,
+      "work": {
+        "F": {
+          "orderedPairVisits": 12,
+          "componentTests": 12,
+          "centerNormCalls": 12,
+          "rotorPairCalls": 48,
+          "positiveTerms": 12,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 12,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 12,
+          "componentTests": 12,
+          "centerNormCalls": 12,
+          "rotorPairCalls": 48,
+          "positiveTerms": 12,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 12,
+          "nodeVisits": 4,
+          "endpointComparisons": 24,
+          "visitedLeaves": 4
+        },
+        "H": {
+          "orderedPairVisits": 12,
+          "componentTests": 12,
+          "centerNormCalls": 12,
+          "rotorPairCalls": 48,
+          "positiveTerms": 12,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 12,
+          "nodeVisits": 4,
+          "endpointComparisons": 24,
+          "visitedLeaves": 4
+        }
+      }
+    },
+    {
+      "id": "sparse-translated",
+      "drones": 9,
+      "status": "native-success",
+      "reason": null,
+      "work": {
+        "F": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 27,
+          "endpointComparisons": 157,
+          "visitedLeaves": 18
+        },
+        "H": {
+          "orderedPairVisits": 67,
+          "componentTests": 67,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 1,
+          "omittedNonself": 5,
+          "gatheredNonself": 67,
+          "nodeVisits": 27,
+          "endpointComparisons": 157,
+          "visitedLeaves": 17
+        }
+      }
+    },
+    {
+      "id": "span-equal-256",
+      "drones": 9,
+      "status": "native-success",
+      "reason": null,
+      "work": {
+        "F": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 72,
+          "componentTests": 72,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 27,
+          "endpointComparisons": 157,
+          "visitedLeaves": 18
+        },
+        "H": {
+          "orderedPairVisits": 67,
+          "componentTests": 67,
+          "centerNormCalls": 56,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 1,
+          "omittedNonself": 5,
+          "gatheredNonself": 67,
+          "nodeVisits": 27,
+          "endpointComparisons": 157,
+          "visitedLeaves": 17
+        }
+      }
+    },
+    {
+      "id": "span-above-256",
+      "drones": 9,
+      "status": "native-success",
+      "reason": null,
+      "work": {
+        "F": {
+          "orderedPairVisits": 72,
+          "componentTests": 0,
+          "centerNormCalls": 72,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 72,
+          "componentTests": 0,
+          "centerNormCalls": 72,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H": {
+          "orderedPairVisits": 72,
+          "componentTests": 0,
+          "centerNormCalls": 72,
+          "rotorPairCalls": 224,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 72,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        }
+      }
+    },
+    {
+      "id": "invalid-far-geometry",
+      "drones": 2,
+      "status": "domain-refused",
+      "reason": "native-admission",
+      "work": {
+        "F": {
+          "orderedPairVisits": 2,
+          "componentTests": 0,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 0,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 2,
+          "componentTests": 0,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 0,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H": {
+          "orderedPairVisits": 2,
+          "componentTests": 0,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 0,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        }
+      }
+    },
+    {
+      "id": "invalid-far-nonfinite",
+      "drones": 2,
+      "status": "input-refused",
+      "reason": "raw-nonfinite",
+      "work": {
+        "F": {
+          "orderedPairVisits": 0,
+          "componentTests": 0,
+          "centerNormCalls": 0,
+          "rotorPairCalls": 0,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 0,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 0,
+          "componentTests": 0,
+          "centerNormCalls": 0,
+          "rotorPairCalls": 0,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 0,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H": {
+          "orderedPairVisits": 0,
+          "componentTests": 0,
+          "centerNormCalls": 0,
+          "rotorPairCalls": 0,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 0,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        }
+      }
+    },
+    {
+      "id": "invalid-far-force",
+      "drones": 2,
+      "status": "input-refused",
+      "reason": "nominal-nonpositive",
+      "work": {
+        "F": {
+          "orderedPairVisits": 0,
+          "componentTests": 0,
+          "centerNormCalls": 0,
+          "rotorPairCalls": 0,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 0,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 0,
+          "componentTests": 0,
+          "centerNormCalls": 0,
+          "rotorPairCalls": 0,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 0,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H": {
+          "orderedPairVisits": 0,
+          "componentTests": 0,
+          "centerNormCalls": 0,
+          "rotorPairCalls": 0,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 0,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        }
+      }
+    },
+    {
+      "id": "near-field-refusal",
+      "drones": 2,
+      "status": "domain-refused",
+      "reason": "native-admission",
+      "work": {
+        "F": {
+          "orderedPairVisits": 2,
+          "componentTests": 2,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 8,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 2,
+          "componentTests": 2,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 8,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 2,
+          "endpointComparisons": 12,
+          "visitedLeaves": 2
+        },
+        "H": {
+          "orderedPairVisits": 2,
+          "componentTests": 2,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 8,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 2,
+          "endpointComparisons": 12,
+          "visitedLeaves": 2
+        }
+      }
+    },
+    {
+      "id": "scaled-cap-refusal",
+      "drones": 2,
+      "status": "domain-refused",
+      "reason": "native-admission",
+      "work": {
+        "F": {
+          "orderedPairVisits": 2,
+          "componentTests": 2,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 8,
+          "positiveTerms": 4,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 2,
+          "componentTests": 2,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 8,
+          "positiveTerms": 4,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 2,
+          "endpointComparisons": 12,
+          "visitedLeaves": 2
+        },
+        "H": {
+          "orderedPairVisits": 2,
+          "componentTests": 2,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 8,
+          "positiveTerms": 4,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 2,
+          "endpointComparisons": 12,
+          "visitedLeaves": 2
+        }
+      }
+    },
+    {
+      "id": "graph-order-refusal",
+      "drones": 2,
+      "status": "domain-refused",
+      "reason": "native-graph-order",
+      "work": {
+        "F": {
+          "orderedPairVisits": 2,
+          "componentTests": 2,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 8,
+          "positiveTerms": 4,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 2,
+          "componentTests": 2,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 8,
+          "positiveTerms": 4,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 2,
+          "endpointComparisons": 12,
+          "visitedLeaves": 2
+        },
+        "H": {
+          "orderedPairVisits": 2,
+          "componentTests": 2,
+          "centerNormCalls": 2,
+          "rotorPairCalls": 8,
+          "positiveTerms": 4,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 2,
+          "nodeVisits": 2,
+          "endpointComparisons": 12,
+          "visitedLeaves": 2
+        }
+      }
+    },
+    {
+      "id": "duplicate-id",
+      "drones": 2,
+      "status": "input-refused",
+      "reason": "duplicate-id",
+      "work": {
+        "F": {
+          "orderedPairVisits": 0,
+          "componentTests": 0,
+          "centerNormCalls": 0,
+          "rotorPairCalls": 0,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 0,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 0,
+          "componentTests": 0,
+          "centerNormCalls": 0,
+          "rotorPairCalls": 0,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 0,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H": {
+          "orderedPairVisits": 0,
+          "componentTests": 0,
+          "centerNormCalls": 0,
+          "rotorPairCalls": 0,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 0,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        }
+      }
+    },
+    {
+      "id": "missing-id",
+      "drones": 1,
+      "status": "input-refused",
+      "reason": "record-fields",
+      "work": {
+        "F": {
+          "orderedPairVisits": 0,
+          "componentTests": 0,
+          "centerNormCalls": 0,
+          "rotorPairCalls": 0,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 0,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 0,
+          "componentTests": 0,
+          "centerNormCalls": 0,
+          "rotorPairCalls": 0,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 0,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H": {
+          "orderedPairVisits": 0,
+          "componentTests": 0,
+          "centerNormCalls": 0,
+          "rotorPairCalls": 0,
+          "positiveTerms": 0,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 0,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        }
+      }
+    },
+    {
+      "id": "exposed64-fresh-a-t5",
+      "drones": 64,
+      "status": "native-success",
+      "reason": null,
+      "work": {
+        "F": {
+          "orderedPairVisits": 4032,
+          "componentTests": 4032,
+          "centerNormCalls": 4032,
+          "rotorPairCalls": 15248,
+          "positiveTerms": 228,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 4032,
+          "nodeVisits": 0,
+          "endpointComparisons": 0,
+          "visitedLeaves": 0
+        },
+        "H0": {
+          "orderedPairVisits": 4032,
+          "componentTests": 4032,
+          "centerNormCalls": 4032,
+          "rotorPairCalls": 15248,
+          "positiveTerms": 228,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 4032,
+          "nodeVisits": 960,
+          "endpointComparisons": 5760,
+          "visitedLeaves": 512
+        },
+        "H": {
+          "orderedPairVisits": 4032,
+          "componentTests": 4032,
+          "centerNormCalls": 4032,
+          "rotorPairCalls": 15248,
+          "positiveTerms": 228,
+          "treeCulls": 0,
+          "omittedNonself": 0,
+          "gatheredNonself": 4032,
+          "nodeVisits": 960,
+          "endpointComparisons": 5760,
+          "visitedLeaves": 512
+        }
+      }
+    }
+  ],
+  "currentResultsFileCount": 130,
+  "currentResultsBytes": 6824952,
+  "largestResultsFileBytes": 2319198,
+  "privateLogBytesReported": 0,
+  "attemptPreFinalReportWallSeconds": 2.2277247924357653,
+  "recordedStageWallSeconds": 2.0347789581865072,
+  "recordedOverheadAndClosureSeconds": 0.1929458761587739,
+  "limitations": [
+    "No independent coefficient/root recomputation or physical reference.",
+    "No rerun of the checker or its arithmetic/mutation controls; reported control statuses inspected.",
+    "Integer membership recount does not independently redo rounded endpoint arithmetic.",
+    "Source publication assertions inspected and local pins verified; no remote/commit fetch in this review.",
+    "Supervisor exitVerified remains false in pre-exit ledger; parent external process-exit observation is not independently reproduced.",
+    "No timing speed inference, capacity claim, new trajectory, 5000 result or novelty inference.",
+    "Private log bytes are report values; private files were not opened."
+  ]
+}

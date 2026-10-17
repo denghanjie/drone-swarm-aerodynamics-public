@@ -1,0 +1,67 @@
+{
+  "schema": "m31-claim-evidence-v1",
+  "sourceCommit": "52d7c95e0edbe38d9c7473058e42420e939a1c51",
+  "experiment": "m31-native-tree-design-2026-10-17",
+  "claims": [
+    {
+      "id": "finite-native-equivalence",
+      "status": "confirmed within scope",
+      "claim": "F/H/H0 match complete retained semantic payloads on all 42 fixed cases, with34 successes and eight expected refusals per arm.",
+      "evidence": [
+        "results/work.json",
+        "results/check.json",
+        "review/RESULT-REVIEW.md"
+      ],
+      "limits": "Pinned Node, small fixtures and one exposed 64-drone state; not general runtime equivalence, browser qualification or an independent positive-load reference."
+    },
+    {
+      "id": "omission-coverage",
+      "status": "confirmed within scope",
+      "claim": "All saved H/H0 trees, candidates and omissions in the 42 cases pass independent reconstruction; H omitted64 nonself visits in14 group culls;15 record corruptions rejected.",
+      "evidence": [
+        "results/check.json",
+        "review/receipt.json"
+      ],
+      "limits": "Deterministic controls, no population inference. No executed two-million-positive-term or cooperative-guard exhaustion controls."
+    },
+    {
+      "id": "compact64-no-culling",
+      "status": "confirmed within scope",
+      "claim": "The exposed 64-drone regression retains all 4,032 directed nonself pairs in H; H/H0 additionally perform 960 node visits and 5,760 endpoint comparisons.",
+      "evidence": [
+        "results/evidence/041-exposed64-fresh-a-t5-H.json",
+        "results/evidence/041-exposed64-fresh-a-t5-F.json"
+      ],
+      "limits": "One exposed state; not proof that all formations defeat culling. No timing inference."
+    },
+    {
+      "id": "speed-benefit",
+      "status": "unresolved",
+      "claim": "H provides useful complete-pipeline speed reduction on fresh 5,000-drone browser workloads.",
+      "evidence": [],
+      "counterevidence": [
+        "compact64-no-culling",
+        "Prior spatial grid overhead loss"
+      ],
+      "next": "Separate prospectively frozen browser experiment with complete evidence and honest cost accounting."
+    },
+    {
+      "id": "physical-validity-and-novelty",
+      "status": "unresolved",
+      "claim": "The model predicts measured mutual aerodynamic flight response or supplies a publishable novel contribution.",
+      "evidence": [],
+      "limits": "No physical data test, new priority search or publication gate in this qualification."
+    },
+    {
+      "id": "recorded-inspector",
+      "status": "confirmed within scope",
+      "claim": "One UI-only QA attempt passed 126 case/method selections,64 receiver selections and missing/corrupt-evidence controls on desktop/mobile.",
+      "evidence": [
+        "viewer/QA.md",
+        "viewer/qa/attempt01/report.json",
+        "viewer/qa/attempt01/supervision.json"
+      ],
+      "limits": "Static saved snapshots, not live flight or performance evidence; one browser and two viewport sizes."
+    }
+  ]
+}
