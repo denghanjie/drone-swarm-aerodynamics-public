@@ -8,6 +8,10 @@ This is an ongoing research record, including unsuccessful experiments. The hist
 
 ## Current Milestone 31 restart
 
+Latest checkpoint: [saved evidence shrank by about 78% for both retained 5,000-drone trees](research/m31-tree-witness-layout-2026-10-17/SUMMARY.md). All 156 fixed record selections reconstructed exactly in an independent checker. The [updated Three.js inspector](research/m31-tree-witness-layout-2026-10-17/viewer/) shows the same captured states and checked storage figures. The earlier [browser scaling probe](research/m31-native-tree-browser-probe-2026-10-17/SUMMARY.md) remains a terminal storage-cap failure: it reached two stages of the first 5,000-drone case, but no 5,000-drone endpoint or full reference/checker completion. This is an engineering storage result, without speed, physical-validity or novelty claims. [Claims](research/m31-tree-witness-layout-2026-10-17/CLAIMS.md) · [Restart](research/m31-tree-witness-layout-2026-10-17/RESTART.md).
+
+The renewed window also completed [64-drone coupled-stage qualification](research/m31-coupled-stage-qualification-2026-10-17/) and [small native-tree qualification](research/m31-native-tree-design-2026-10-17/). The older source-preparation entries below are retained history.
+
 Next source preparation: [strict coupled-load consumption bridge](research/m31-coupling-bridge-design-2026-10-17/DESIGN.md). Reuse the earlier projected16-drone adapter and qualify the newer native interface at every consumed stage of a short64-drone continuation. This is an unexecuted design, not a new result. [Source restart](research/m31-coupling-bridge-design-2026-10-17/RESTART.md).
 
 Latest checkpoint: [exact reference checks at 180 drones](research/m31-prepared-capacity-2026-10-17/MILESTONE-SUMMARY.md). The fixed 64/180/180 cases passed saved-result accuracy checks and the predeclared offline cost hurdle; independent saved-data audit passed. Dense and sparse 180-drone calculations took 12.317 and 1.754 seconds with profiling enabled. These are single-run offline observations, not browser frame times or a speedup. [Updated Three.js evidence](research/m31-prepared-capacity-2026-10-17/viewer/) · [Claims](research/m31-prepared-capacity-2026-10-17/CLAIMS.md) · [Restart](research/m31-prepared-capacity-2026-10-17/RESTART.md). The separate [physical compatibility note](research/m31-physical-compatibility-2026-10-17/NOTE.md) identifies omitted upper-drone and dynamic effects without claiming a matched physical score.
@@ -62,7 +66,7 @@ The earlier [GPU receiver component](research/m31-browser-receiver-2026-10-16/RE
 
 ## View the 3D lab
 
-For the current exact-reference checkpoint, serve this repository with `python3 -m http.server 8876 --bind 127.0.0.1` and open <http://127.0.0.1:8876/research/m31-prepared-capacity-2026-10-17/viewer/>. It uses the committed saved results and runs no scientific kernel.
+For the current saved-evidence checkpoint, serve this repository with `python3 -m http.server 8876 --bind 127.0.0.1` and open <http://127.0.0.1:8876/research/m31-tree-witness-layout-2026-10-17/viewer/>. It uses committed captured states and checked storage figures, and runs no scientific kernel.
 
 For the historical interactive lab:
 

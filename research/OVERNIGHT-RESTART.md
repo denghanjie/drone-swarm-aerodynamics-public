@@ -1,3 +1,13 @@
+# Current checkpoint — saved tree layout qualified, 17 October 2026
+
+[Summary](m31-tree-witness-layout-2026-10-17/SUMMARY.md): all 156 fixed saved records reconstruct exactly; both retained 5,000-drone H tree streams shrink by 77.93%. Independent checker and fixed controls passed, external supervisor exit 0. [Three.js inspector](m31-tree-witness-layout-2026-10-17/viewer/) shows original captured geometry with new checked storage figures; corrected UI check 55/55 passes, first test failure retained. [Exact restart](m31-tree-witness-layout-2026-10-17/RESTART.md) · [Next experiment](m31-tree-witness-layout-2026-10-17/review/NEXT-EXPERIMENT.md).
+
+The preceding [browser probe](m31-native-tree-browser-probe-2026-10-17/SUMMARY.md) remains failed at its 160 MiB evidence cap, with no 5,000-drone endpoint or complete reference/checker. Tree-only storage savings do not qualify that run or demonstrate whole-run fit, speed, physical accuracy or novelty. Earlier renewed-window checkpoints: [64-drone coupled-stage qualification](m31-coupled-stage-qualification-2026-10-17/) and [small native-tree qualification](m31-native-tree-design-2026-10-17/).
+
+Fixed renewed authorization ends 2026-10-17 05:06:20 UTC / 13:06:20 Shanghai; no extension or new scientific allocation is implied. Keep 8876 unchanged. Current experiment is closed; overall research goal remains active/incomplete. Source commit b19aadc9a4157ad7c2bcba67856baf1d0c9096c6; result publication receipt will be retained separately. All older entries below are historical.
+
+---
+
 # Current source preparation — strict coupled-load consumption bridge
 
 No new scientific experiment has executed since the completed capacity checkpoint below. [Source design and precise restart](m31-coupling-bridge-design-2026-10-17/RESTART.md) adopt a short64-drone continuation with32synchronized load stages, subject to fixed manufactured controls and every-stage exact checking. Reuse the earlier16-drone projected adapter; two new syntax-checked draft alternatives are preserved but explicitly unadopted. The complete executable harness/protocol and a new full execution window remain required. Current window ends03:00UTC17October2026; no extension implied.
