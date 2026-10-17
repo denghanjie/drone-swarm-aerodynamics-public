@@ -1,0 +1,33 @@
+{
+  "schema": "m31-native-fresh-viewer-camera-qa-attempt-v1",
+  "attempt": 2,
+  "startedUtc": "2026-10-17T01:41:15.512435+00:00",
+  "resourceScope": "120 s outer wall; 16 MiB aggregate QA artifacts and per-file child limit; no enforced memory ceiling; direct child handles, no process-group signals",
+  "status": "failed",
+  "newScientificCalls": 0,
+  "sourceFiles": [
+    {
+      "path": "run.cjs",
+      "bytes": 17331,
+      "sha256": "a59b661fc38eb322f8f23a08cf2c1db7e89cb9eff42388eec15b1d3b89f52ea6"
+    },
+    {
+      "path": "supervise.py",
+      "bytes": 4261,
+      "sha256": "4208072424cb9c0922f526ad343221fb76b37acf1a63de74c23adb39a06d8231"
+    }
+  ],
+  "exitCode": 1,
+  "childExitCode": 1,
+  "childReaped": true,
+  "qaSourcesUnchanged": true,
+  "wallSeconds": 7.294242415577173,
+  "outputBytesBeforeAttemptRecord": 246098,
+  "firstFailure": "desktop camera aspect updates on resize",
+  "stdout": "{\"passed\":false,\"checks\":10,\"frames\":0,\"finalSelections\":0,\"wallMs\":2684,\"preservationPassed\":true,\"cleanup\":{\"browserCloseRequested\":true,\"controllerReaped\":true,\"forcedTermination\":false,\"exit\":{\"code\":0,\"signal\":null},\"close\":{\"code\":0,\"signal\":null},\"privateProfileRemoved\":true},\"failure\":\"desktop camera aspect updates on resize\"}\n",
+  "stderr": "",
+  "report": {
+    "bytes": 8003,
+    "sha256": "3a5ee19b3854e64672359fac5a65f685a063073f8e5c8b5df96ad7f5ed1cc93e"
+  }
+}

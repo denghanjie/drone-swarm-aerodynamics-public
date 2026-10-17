@@ -1,0 +1,122 @@
+{
+  "schema": "m31-native-fresh-viewer-camera-qa-v1",
+  "attempt": 2,
+  "scope": "Focused camera/frustum and control QA only; no scientific imports, calls, checker execution or binding builds",
+  "url": "http://localhost:8876/research/m31-native-fresh-transfer-2026-10-17/viewer/",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1050
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "checks": [
+    {
+      "name": "explicit approved camera-only dispatch",
+      "passed": true
+    },
+    {
+      "name": "unchanged bound numerical identities",
+      "passed": true
+    },
+    {
+      "name": "pinned Node runtime",
+      "passed": true
+    },
+    {
+      "name": "pinned installed Chrome components",
+      "passed": true
+    },
+    {
+      "name": "pinned Playwright entry files",
+      "passed": true
+    },
+    {
+      "name": "fresh owned root exposes local CDP",
+      "passed": true
+    },
+    {
+      "name": "named pinned versions",
+      "passed": true
+    },
+    {
+      "name": "bound scene ready",
+      "passed": true
+    },
+    {
+      "name": "desktop camera aspect updates on resize",
+      "passed": false
+    },
+    {
+      "name": "all frozen sources, numerical records and viewer files unchanged",
+      "passed": true
+    }
+  ],
+  "frameChecks": [],
+  "finalSelections": [],
+  "frustumChecks": [],
+  "requestSets": {
+    "camera-fit": [
+      "http://localhost:8876/research/m31-native-fresh-transfer-2026-10-17/viewer/",
+      "http://localhost:8876/research/m31-native-fresh-transfer-2026-10-17/viewer/style.css",
+      "http://localhost:8876/research/m31-native-fresh-transfer-2026-10-17/viewer/app.js",
+      "http://localhost:8876/research/m31-native-fresh-transfer-2026-10-17/viewer/binding.json",
+      "http://localhost:8876/research/m31-native-fresh-transfer-2026-10-17/source-manifest.json",
+      "http://localhost:8876/research/m31-native-fresh-transfer-2026-10-17/source-publication.json",
+      "http://localhost:8876/research/m31-native-fresh-transfer-2026-10-17/source/science-config.json",
+      "http://localhost:8876/research/m31-native-fresh-transfer-2026-10-17/results/generation-attempt.json",
+      "http://localhost:8876/research/m31-native-fresh-transfer-2026-10-17/results/generation.json",
+      "http://localhost:8876/research/m31-native-fresh-transfer-2026-10-17/results/reference-attempt.json",
+      "http://localhost:8876/research/m31-native-fresh-transfer-2026-10-17/results/reference.json",
+      "http://localhost:8876/research/m31-native-fresh-transfer-2026-10-17/results/browser-attempt.json",
+      "http://localhost:8876/research/m31-native-fresh-transfer-2026-10-17/results/browser.json",
+      "http://localhost:8876/research/m31-native-fresh-transfer-2026-10-17/results/check-attempt.json",
+      "http://localhost:8876/research/m31-native-fresh-transfer-2026-10-17/results/check.json",
+      "http://localhost:8876/research/m31-native-fresh-transfer-2026-10-17/results/generation/fresh-a-t5.json",
+      "http://localhost:8876/research/m31-native-fresh-transfer-2026-10-17/results/inputs/fresh-a-t5.json",
+      "http://localhost:8876/research/m31-native-fresh-transfer-2026-10-17/results/generation/fresh-b-t5.json",
+      "http://localhost:8876/research/m31-native-fresh-transfer-2026-10-17/results/inputs/fresh-b-t5.json",
+      "http://localhost:8876/outputs/step02b-source/vendor/three.module.js",
+      "http://localhost:8876/outputs/step02b-source/vendor/three.core.js",
+      "http://localhost:8876/outputs/step02b-source/vendor/OrbitControls.js",
+      "http://localhost:8876/research/m31-native-fresh-transfer-2026-10-17/viewer/scene.js"
+    ]
+  },
+  "console": {
+    "camera-fit": {
+      "errors": [],
+      "warnings": [],
+      "failedRequests": []
+    }
+  },
+  "linkChecks": [],
+  "screenshots": [],
+  "passed": false,
+  "newScientificCalls": 0,
+  "frozenFileCount": 505,
+  "browserVersion": "155.0.8059.80",
+  "playwrightVersion": "1.62.1",
+  "failure": "desktop camera aspect updates on resize",
+  "cleanup": {
+    "browserCloseRequested": true,
+    "controllerReaped": true,
+    "forcedTermination": false,
+    "exit": {
+      "code": 0,
+      "signal": null
+    },
+    "close": {
+      "code": 0,
+      "signal": null
+    },
+    "privateProfileRemoved": true
+  },
+  "preservationPassed": true,
+  "wallMs": 2684,
+  "within120Seconds": true,
+  "browserDiagnostic": "\nDevTools listening on ws://127.0.0.1:63950/devtools/browser/afde0776-83b2-467c-9373-e33290b65988\nTrying to load the allocator multiple times. This is *not* supported.\n[58470:83537106:1017/094117.145988:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[58470:83537130:1017/094117.146603:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[58470:83537106:1017/094117.146773:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[58470:83537130:1017/094117.146821:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[58470:83537106:1017/094117.147097:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[58470:83537130:1017/094117.147144:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[58470:83537106:1017/094117.147224:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[58470:83537130:1017/094117.147260:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[58470:83537106:1017/094117.147336:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[58470:83537130:1017/094117.147372:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[58470:83537106:1017/094117.159229:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[58470:83537130:1017/094117.159275:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[58470:83537106:1017/094117.344842:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[58470:83537130:1017/094117.344914:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[58470:83537106:1017/094117.348727:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[58470:83537130:1017/094117.348796:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[58470:83537106:1017/094117.349485:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[58470:83537130:1017/094117.349525:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[58470:83537106:1017/094117.349611:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[58470:83537130:1017/094117.349652:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[58470:83537106:1017/094117.349741:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[58470:83537130:1017/094117.349779:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[58464:83537104:1017/094118.186445:ERROR:base/process/process_mac.cc:45] task_policy_set TASK_CATEGORY_POLICY: (os/kern) invalid argument (4)\n[58464:83537104:1017/094118.186467:ERROR:base/process/process_mac.cc:90] task_policy_set TASK_SUPPRESSION_POLICY: (os/kern) invalid argument (4)\n",
+  "outputBytesBeforeReport": 238095
+}

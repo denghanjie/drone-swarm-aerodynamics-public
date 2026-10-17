@@ -1,0 +1,27 @@
+--- retained/scene.js
++++ fresh/scene.js
+@@ -35,10 +35,10 @@
+   geometry.setDrawRange(0,0);heads.count=0;arrowCount=0;segments=[];
+   if(!current)return;
+   for(let i=0;i<64;i++){
+-   const origin=current.poses[i].position,force=current.worldForces[i];direction.set(...force);const length=direction.length()*scale;
++   const origin=current.poses[i].position,force=current.worldForces?.[i]??null;
+    const color=new THREE.Color(current.ids[i]===selectedId?'#ffe3a6':'#f8b54d');
+    body.setColorAt(i,new THREE.Color(current.ids[i]===selectedId?'#b8fff0':'#67dfc5'));
+-   if(length===0)continue;
++   if(force===null)continue;direction.set(...force);const length=direction.length()*scale;if(length===0)continue;
+    direction.normalize();tip.set(origin[0]+force[0]*scale,origin[1]+force[1]*scale,origin[2]+force[2]*scale);
+    const segment=[...origin,...tip.toArray()];positions.set(segment,6*arrowCount);colors.set([...color.toArray(),...color.toArray()],6*arrowCount);
+    const headLength=Math.min(.18,length*.24);head.position.copy(tip).addScaledVector(direction,-headLength/2);
+@@ -50,9 +50,9 @@
+   expose();
+  }
+  function setSnapshot(snapshot,resetCamera=false){
+-  if(snapshot.poses.length!==64||snapshot.ids.length!==64||snapshot.worldForces.length!==64)throw Error('Saved scene shape');
++  if(snapshot.poses.length!==64||snapshot.ids.length!==64||(snapshot.worldForces!==null&&snapshot.worldForces.length!==64))throw Error('Saved scene shape');
+   const finite=values=>values.every(Number.isFinite);
+-  if(snapshot.poses.some(p=>p.position.length!==3||p.quaternion.length!==4||!finite([...p.position,...p.quaternion]))||snapshot.worldForces.some(f=>f.length!==3||!finite(f)))throw Error('Saved scene word range');
++  if(snapshot.poses.some(p=>p.position.length!==3||p.quaternion.length!==4||!finite([...p.position,...p.quaternion]))||(snapshot.worldForces!==null&&snapshot.worldForces.some(f=>f.length!==3||!finite(f))))throw Error('Saved scene word range');
+   current=snapshot;geometry.setDrawRange(0,0);heads.count=0;bodies.visible=false;
+   const bounds=new THREE.Box3();
+   for(let i=0;i<64;i++){

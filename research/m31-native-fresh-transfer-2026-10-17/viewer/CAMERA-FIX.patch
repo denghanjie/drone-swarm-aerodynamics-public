@@ -1,0 +1,81 @@
+--- attempt01/app.js
++++ camera-fit/app.js
+@@ -17,7 +17,7 @@
+ const scratch=new DataView(new ArrayBuffer(8));
+ function number(w){need(word(w),'Malformed saved binary64 word');scratch.setBigUint64(0,BigInt('0x'+w),false);const n=scratch.getFloat64(0,false);need(Number.isFinite(n),'Nonfinite saved display word');return n;}
+ const fmt=x=>Object.is(x,-0)?'-0':x===0?'0':x.toExponential(6);
+-let binding=null,records=new Map(),runs=new Map(),scene=null,lastScene=null,runId=PLAN[0].id,method='F',frameIndex=0,droneId=0,playing=false,timer=null,integrityFailure=null;
++let binding=null,records=new Map(),runs=new Map(),scene=null,lastScene=null,runId=PLAN[0].id,method='F',frameIndex=0,droneId=0,playing=false,timer=null,integrityFailure=null,fitKey=null;
+ const output=name=>binding?.stages[name]?.output?records.get(binding.stages[name].output.path):null;
+ const attempt=name=>binding?.stages[name]?.attempt?records.get(binding.stages[name].attempt.path):null;
+ const knownPin=p=>binding?.pins.find(x=>x.path===p);
+@@ -86,6 +86,12 @@
+  need(e.loads?.length===64&&same(e.loads.map(x=>x.id),run.ids),'Native load ID association');
+  for(const load of e.loads){need(load.rotor?.length===4&&load.worldForce?.length===3&&load.worldMoment?.length===3,'Saved load shape');[...load.rotor,load.collective,...load.worldForce,...load.worldMoment].forEach(number);}return e.loads;
+ }
++function cameraEnvelope(run,id,m,scale){
++ const min=[Infinity,Infinity,Infinity],max=[-Infinity,-Infinity,-Infinity],include=p=>p.forEach((v,k)=>{min[k]=Math.min(min[k],v);max[k]=Math.max(max[k],v);});
++ for(const frame of run.frames)for(let i=0;i<64;i++)include(frame.words.slice(i*7,i*7+3).map(number));
++ if(eligible(id,m)){const final=run.frames.at(-1),loads=actualLoads(id,m);loads.forEach((load,i)=>{const center=final.words.slice(i*7,i*7+3).map(number),force=load.worldForce.map(number);include(center.map((x,k)=>x+force[k]*scale));});}
++ return {min,max};
++}
+ function stateText(name){const a=attempt(name),o=output(name);return integrityFailure?'Integrity failure':!a?'Not bound':a.status==='completed'?(name==='check'?o?.decision??'Completed':name==='reference'&&o?.qualified===true?'Qualified':'Completed'):a.status;}
+ function renderSummary(){
+  for(const name of STAGES){const a=attempt(name),o=output(name),passed=closed(name)&&(name!=='check'||o?.decision==='qualified')&&(name!=='reference'||o?.qualified===true);$(name+'-status').textContent=stateText(name);$(name+'-status').className=passed?'pass':a?'bad':'pending';$(name+'-detail').textContent=a?('Child '+String(a.childExitCode??'—')+' · supervisor '+String(a.exitCode??'—')+(o?.reason?' · '+o.reason:'')):'No saved stage receipt bound.';}
+@@ -109,8 +115,10 @@
+   if(!frame){scene?.clear();$('scene-empty').hidden=false;$('scene-empty').textContent='No recorded frames are available for this fixed run slot.';$('frame-status').textContent=(run?.row.status??'Not available')+' · no pose inferred.';$('selection-summary').textContent='No qualified final selection.';$('time').textContent='—';for(const id of ['initial','previous','play','next','final','frame','drone','reset','method','arrows','scale'])$(id).disabled=true;renderSummary();expose();return;}
+   const final=frame.t===5&&frameIndex===run.frames.length-1,can=eligible(runId,method),loads=final&&can?actualLoads(runId,method):null;
+   const decoded=Array.from({length:64},(_,i)=>{const w=frame.words.slice(i*7,i*7+7);return{position:w.slice(0,3).map(number),quaternion:w.slice(3).map(number)};});
++  const nextFitKey=runId+'|'+method+'|'+$('scale').value,fitChanged=fitKey!==nextFitKey;
++  if(fitChanged){scene.setFitEnvelope(cameraEnvelope(run,runId,method,Number($('scale').value)));fitKey=nextFitKey;}
+   scene.style({scale:Number($('scale').value),visible:$('arrows').checked&&!!loads,selectedId:droneId});
+-  scene.setSnapshot({id:runId,method,ids:run.ids,poses:decoded,worldForces:loads?loads.map(x=>x.worldForce.map(number)):null},resetCamera);
++  scene.setSnapshot({id:runId,method,ids:run.ids,poses:decoded,worldForces:loads?loads.map(x=>x.worldForce.map(number)):null},resetCamera||fitChanged);
+   $('scene-empty').hidden=true;$('frame').max=String(run.frames.length-1);$('frame').value=String(frameIndex);$('time').textContent=frame.t.toFixed(1)+' s · '+(frameIndex+1)+'/'+run.frames.length;
+   $('frame-status').textContent=`Recorded frame ${frameIndex+1} of ${run.frames.length} at ${frame.t.toFixed(1)} s. ${run.row.status==='captured'?'Complete 5 s capture.':'Incomplete saved capture: '+run.row.status+'.'} ${loads?'Qualified posthoc '+method+' forces at the final pose.':'Recorded Boids poses only; no aerodynamic forces at this selection.'}`;
+   for(const id of ['initial','final','frame','drone','reset'])$(id).disabled=false;$('previous').disabled=frameIndex===0;$('next').disabled=frameIndex===run.frames.length-1;$('play').disabled=run.frames.length<2;
+--- attempt01/scene.js
++++ camera-fit/scene.js
+@@ -23,13 +23,27 @@
+  const lines=new THREE.LineSegments(geometry,new THREE.LineBasicMaterial({vertexColors:true,transparent:true,opacity:.9}));lines.frustumCulled=false;scene.add(lines);
+  const heads=new THREE.InstancedMesh(new THREE.ConeGeometry(1,1,10),new THREE.MeshBasicMaterial({color:0xffffff}),64);heads.count=0;heads.frustumCulled=false;scene.add(heads);
+  const grid=new THREE.GridHelper(14,28,0x46616e,0x1b3342);grid.rotation.x=Math.PI/2;scene.add(grid);
+- let current=null,center=new THREE.Vector3(),extent=5,scale=4,visible=true,selectedId=0,arrowCount=0,segments=[];
++ let current=null,center=new THREE.Vector3(),extent=5,scale=4,visible=true,selectedId=0,arrowCount=0,segments=[],fitBounds=null;
+  const yAxis=new THREE.Vector3(0,1,0),direction=new THREE.Vector3(),tip=new THREE.Vector3(),head=new THREE.Object3D();
+- function reset(){const damping=controls.enableDamping;controls.enableDamping=false;controls.update();camera.position.copy(center).add(new THREE.Vector3(extent*.95,-extent*1.25,extent*.8));controls.target.copy(center);controls.update();controls.enableDamping=damping;}
+- function expose(){if(!current)return;onChange({stateId:current.id,method:current.method,ids:current.ids,
++ function reset(){
++  const damping=controls.enableDamping;controls.enableDamping=false;controls.update();
++  const sphere=fitBounds?fitBounds.getBoundingSphere(new THREE.Sphere()):new THREE.Sphere(center.clone(),Math.max(1,extent/2));
++  const vertical=THREE.MathUtils.degToRad(camera.fov)/2,horizontal=Math.atan(Math.tan(vertical)*camera.aspect);
++  const distance=Math.max(.5,sphere.radius)/Math.sin(Math.min(vertical,horizontal))*1.12;
++  camera.position.copy(sphere.center).addScaledVector(new THREE.Vector3(.95,-1.25,.8).normalize(),distance);
++  camera.far=Math.max(1000,distance+sphere.radius*4);camera.updateProjectionMatrix();controls.target.copy(sphere.center);controls.update();controls.enableDamping=damping;
++ }
++ function setFitEnvelope(envelope){
++  if(!envelope||envelope.min.length!==3||envelope.max.length!==3||!envelope.min.concat(envelope.max).every(Number.isFinite)||envelope.min.some((x,i)=>x>envelope.max[i]))throw Error('Saved camera envelope');
++  // 0.23 m covers the enlarged glyph and the arrow head around saved centers/endpoints.
++  fitBounds=new THREE.Box3(new THREE.Vector3(...envelope.min),new THREE.Vector3(...envelope.max)).expandByScalar(.23);
++ }
++ function expose(){if(!current)return;camera.updateMatrixWorld();onChange({stateId:current.id,method:current.method,ids:current.ids,
+   renderedBodyCount:64,positions:Array.from({length:64},(_,i)=>{const m=new THREE.Matrix4();body.getMatrixAt(i,m);return m.elements.slice(12,15);}),
+   arrowScale:scale,arrowsEnabled:visible,renderedArrowCount:visible?arrowCount:0,arrowSegments:segments,
+-  uploadedArrowPositions:Array.from(positions.slice(0,arrowCount*6)),selectedId,camera:camera.position.toArray(),playing:false});}
++  uploadedArrowPositions:Array.from(positions.slice(0,arrowCount*6)),selectedId,camera:camera.position.toArray(),
++  cameraProjection:camera.projectionMatrix.toArray(),cameraWorldInverse:camera.matrixWorldInverse.toArray(),cameraAspect:camera.aspect,
++  fitBounds:fitBounds?{min:fitBounds.min.toArray(),max:fitBounds.max.toArray()}:null,playing:false});}
+  controls.addEventListener('change',expose);
+  function arrows(){
+   geometry.setDrawRange(0,0);heads.count=0;arrowCount=0;segments=[];
+@@ -64,8 +78,8 @@
+  }
+  function style(options){if(![1,4,8].includes(options.scale))throw Error('Arrow display scale');scale=options.scale;visible=options.visible;selectedId=options.selectedId;arrows();}
+  function clear(){current=null;bodies.visible=false;geometry.setDrawRange(0,0);heads.count=0;arrowCount=0;segments=[];}
+- function resize(){const r=host.getBoundingClientRect();if(r.width<=0||r.height<=0)return;renderer.setSize(r.width,r.height,false);camera.aspect=r.width/r.height;camera.updateProjectionMatrix();}
++ function resize(){const r=host.getBoundingClientRect();if(r.width<=0||r.height<=0)return;renderer.setSize(r.width,r.height,false);camera.aspect=r.width/r.height;camera.updateProjectionMatrix();if(current&&fitBounds)reset();expose();}
+  function animate(){requestAnimationFrame(animate);controls.update();renderer.render(scene,camera);}
+  new ResizeObserver(resize).observe(host);reset();resize();requestAnimationFrame(animate);
+- return {setSnapshot,style,reset,clear};
++ return {setSnapshot,setFitEnvelope,style,reset,clear};
+ }

@@ -1,0 +1,46 @@
+--- attempt02/run.cjs
++++ attempt03/run.cjs
+@@ -12,5 +12,5 @@
+ const same=(a,b)=>canonical(a)===canonical(b),read=p=>JSON.parse(fs.readFileSync(path.join(root,p))),decode=w=>Buffer.from(w,'hex').readDoubleBE();
+ const plan=['fresh-a-t5','fresh-b-t5'];
+-const report={schema:'m31-native-fresh-viewer-camera-qa-v1',attempt:2,scope:'Focused camera/frustum and control QA only; no scientific imports, calls, checker execution or binding builds',url:base,viewports:[{width:1440,height:1050},{width:390,height:844}],checks:[],frameChecks:[],finalSelections:[],frustumChecks:[],requestSets:{},console:{},linkChecks:[],screenshots:[],passed:false,newScientificCalls:0};
++const report={schema:'m31-native-fresh-viewer-camera-qa-v1',attempt:3,scope:'Focused camera/frustum and control QA only; no scientific imports, calls, checker execution or binding builds',url:base,viewports:[{width:1440,height:1050},{width:390,height:844}],checks:[],frameChecks:[],finalSelections:[],frustumChecks:[],requestSets:{},console:{},linkChecks:[],screenshots:[],passed:false,newScientificCalls:0};
+ let browser,context,controller,profile,exitInfo,closeInfo,before,finalizing,deadline;
+ let stderr='';
+@@ -25,4 +25,6 @@
+  function addTree(relative){for(const d of fs.readdirSync(path.join(root,relative),{withFileTypes:true})){const p=relative+'/'+d.name;if(d.isDirectory())addTree(p);else pins.set(p,pin(p));}}
+  addTree(pkg+'/results');
++ addTree(pkg+'/viewer/qa/attempt02');
++ const local=pkg+'/viewer/qa/attempt03',review=read(local+'/SOURCE-PINS.json');for(const p of review.files){const relative=local+'/'+p.path,actual=pin(relative);if(actual.bytes!==p.bytes||actual.sha256!==p.sha256)throw Error('Attempt03 source changed: '+p.path);pins.set(relative,actual);}pins.set(local+'/SOURCE-PINS.json',pin(local+'/SOURCE-PINS.json'));
+  const inventory=read(pkg+'/viewer/SOURCE-PINS.json');for(const p of inventory.files){const relative=pkg+'/viewer/'+p.path,actual=pin(relative);if(actual.bytes!==p.bytes||actual.sha256!==p.sha256)throw Error('Frozen viewer changed: '+p.path);pins.set(relative,actual);}
+  for(const relative of [pkg+'/source-manifest.json',pkg+'/source-publication.json',pkg+'/viewer/SOURCE-PINS.json'])pins.set(relative,pin(relative));
+@@ -66,5 +68,5 @@
+ }
+ async function main(){
+- check('explicit approved camera-only dispatch',process.env.RESEARCH_EXECUTION_CONTEXT==='tool-require-escalated'&&process.env.RESEARCH_VIEWER_QA_APPROVED==='fresh-attempt02');
++ check('explicit approved camera-only dispatch',process.env.RESEARCH_EXECUTION_CONTEXT==='tool-require-escalated'&&process.env.RESEARCH_VIEWER_QA_APPROVED==='fresh-attempt03');
+  before=preservation();write('immutable-before.json',before);report.frozenFileCount=before.files.length;
+  const binding=read(pkg+'/viewer/binding.json'),generation=read(pkg+'/results/generation.json'),saved=read(pkg+'/results/browser.json'),runtime=read(pkg+'/runtime.json'),recs=new Map(generation.slots.map(s=>[s.id,read(s.generation.path)]));
+@@ -89,5 +91,5 @@
+  for(const viewport of report.viewports){
+   await page.setViewportSize(viewport);await frame(page);const viewportName=viewport.width===1440?'desktop':'mobile';
+-  const resized=await page.evaluate(()=>window.__freshViewerState),canvasSize=await page.locator('#scene').evaluate(e=>({width:e.clientWidth,height:e.clientHeight}));check(viewportName+' camera aspect updates on resize',Math.abs(resized.render.cameraAspect-canvasSize.width/canvasSize.height)<1e-10);
++  const resized=await page.evaluate(()=>window.__freshViewerState),canvasSize=await page.locator('#scene').evaluate(e=>{const r=e.getBoundingClientRect();return{width:r.width,height:r.height,clientWidth:e.clientWidth,clientHeight:e.clientHeight};});check(viewportName+' camera aspect updates on resize',Math.abs(resized.render.cameraAspect-canvasSize.width/canvasSize.height)<1e-10,{cameraAspect:resized.render.cameraAspect,...canvasSize});
+   if(viewportName==='mobile'){const id=resized.runId,m=resized.method,s=resized.render.arrowScale;await finalCheck(id,m,s,'mobile immediate resize');}
+   for(const id of plan){await page.selectOption('#run',id);const initial=await page.evaluate(()=>window.__freshViewerState.render.camera);for(let i=0;i<26;i++){
+--- attempt02/supervise.py
++++ attempt03/supervise.py
+@@ -16,5 +16,5 @@
+ assert all(os.environ.get(key) for key in required)
+ assert os.environ.get('RESEARCH_EXECUTION_CONTEXT') == 'tool-require-escalated'
+-assert os.environ.get('RESEARCH_VIEWER_QA_APPROVED') == 'fresh-attempt02'
++assert os.environ.get('RESEARCH_VIEWER_QA_APPROVED') == 'fresh-attempt03'
+ runtime = json.loads((Path(os.environ['RESEARCH_ROOT']) / 'research/m31-native-fresh-transfer-2026-10-17/runtime.json').read_bytes())
+ for file, pin in [(Path(node), runtime['node']), (Path(sys.executable), runtime['python'])]:
+@@ -22,5 +22,5 @@
+     assert len(raw) == pin['bytes'] and hashlib.sha256(raw).hexdigest() == pin['sha256']
+ assert not (out / 'report.json').exists()
+-marker = {'schema': 'm31-native-fresh-viewer-camera-qa-attempt-v1', 'attempt': 2,
++marker = {'schema': 'm31-native-fresh-viewer-camera-qa-attempt-v1', 'attempt': 3,
+           'startedUtc': datetime.datetime.now(datetime.timezone.utc).isoformat(),
+           'resourceScope': '120 s outer wall; 16 MiB aggregate QA artifacts and per-file child limit; no enforced memory ceiling; direct child handles, no process-group signals',
