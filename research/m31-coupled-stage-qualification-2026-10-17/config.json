@@ -1,0 +1,63 @@
+{
+  "schema": "m31-coupled-stage-supervision-v1",
+  "executionAllowed": true,
+  "authorization": {
+    "id": "explicit-user-two-hour-window-received-2026-10-17T030620Z",
+    "approvedUtc": "2026-10-17T03:06:20+00:00",
+    "reviewedSourceManifestSha256": "19990133743330ea74ab57cd48e5f3be6e85f3c8e0e94aa66151c672a417e0ff"
+  },
+  "launchCutoffUtc": "2026-10-17T05:06:20+00:00",
+  "stageOrder": [
+    "browser",
+    "reference",
+    "check"
+  ],
+  "limits": {
+    "perFileBytes": 33554432,
+    "combinedOutputLogScratchBytes": 268435456,
+    "totalWallSeconds": 960,
+    "closureAndOverheadSeconds": 60,
+    "pollSeconds": 0.1,
+    "finalizationByteAllowance": 2097152
+  },
+  "stages": {
+    "browser": {
+      "runtime": "node",
+      "source": "research/m31-coupled-stage-qualification-2026-10-17/source/controller.cjs",
+      "childWallSeconds": 120,
+      "completionAssertions": {
+        "complete": true
+      }
+    },
+    "reference": {
+      "runtime": "python",
+      "source": "research/m31-coupled-stage-qualification-2026-10-17/source/reference.py",
+      "childWallSeconds": 600,
+      "completionAssertions": {
+        "complete": true,
+        "qualified": true
+      }
+    },
+    "check": {
+      "runtime": "python",
+      "source": "research/m31-coupled-stage-qualification-2026-10-17/source/check.py",
+      "childWallSeconds": 180,
+      "completionAssertions": {
+        "complete": true,
+        "passed": true
+      }
+    }
+  },
+  "browserRootCompletionAssertions": {
+    "browserRootExitConfirmed": true,
+    "browserRootCloseConfirmed": true,
+    "browserRoot.exit.code": 0,
+    "browserRoot.exit.signal": null,
+    "browserRoot.close.code": 0,
+    "browserRoot.close.signal": null,
+    "browserRoot.error": null,
+    "browserClosed": true,
+    "complete": true
+  },
+  "scope": "One qualification attempt under explicit new two-hour user authorization. Entire 960-second reservation must fit before cutoff. No automatic retry. No OS memory ceiling or every-helper cleanup claim."
+}

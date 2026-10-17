@@ -1,0 +1,151 @@
+{
+  "schema": "m31-coupled-science-config-v1",
+  "status": "prospective-parent-freeze-pending",
+  "initialInput": {
+    "path": "research/m31-native-fresh-transfer-2026-10-17/results/inputs/fresh-a-t5.json",
+    "bytes": 21955,
+    "sha256": "48dc63da80d4400a948a102143e872a49645b37b08eac73f932959653a16fa7c"
+  },
+  "integration": {
+    "count": 64,
+    "timeOrigin": 5,
+    "duration": 0.02,
+    "dt": 0.0025,
+    "steps": 8,
+    "stagesPerStep": 4,
+    "controlDt": 0.01,
+    "stepsPerControl": 4,
+    "controlUpdateRelativeTimes": [0, 0.01],
+    "arms": ["coupled", "off"],
+    "nativeMethod": "F",
+    "controller": {"mode": "boids", "filter": "wall-priority", "search": "grid", "thrustRatio": 2.25, "factoryVariant": "wide"},
+    "stagePolicy": "project every whole-swarm RK stage before native preparation and derivative; project each accepted endpoint",
+    "yawPolicy": "nominal actuator reaction yaw is retained; native worldMoment contains thrust-arm moment only",
+    "nativeConsumption": "replace total world force and arm moment; do not add native totals as corrections; retain nominal motor state and motor lag"
+  },
+  "projection": {
+    "normSquare": "RN(RN(RN(q0*q0 + q1*q1) + q2*q2) + q3*q3), each product RN",
+    "norm": "Math.sqrt(normSquare), required independently correctly rounded",
+    "components": "each projected component RN(raw component / norm)",
+    "qTolerance": 1e-10,
+    "geometryTolerance": 1e-9,
+    "rawDiagnostic": "first coupled raw k2 quaternion norm prerequisite only; zero native/reference calls; no full preparation/admission conclusion"
+  },
+  "nativeReference": {
+    "primaryStates": 32,
+    "requiredNonRefusalStates": 32,
+    "rotorErrorNorm": "absolute error / (m*g/4)",
+    "collectiveErrorNorm": "absolute error / (m*g)",
+    "forceErrorNorm": "Euclidean world-force error / (m*g)",
+    "momentErrorNorm": "Euclidean world-arm-moment error / (m*g*rotorArmRadius)",
+    "loadTolerance": 1e-8,
+    "inputHash": "SHA256 UTF8 canonical compact nativeInput JSON, recursively sorted object keys, no newline; controller separately persists and pins actual sidecar bytes",
+    "offReference": "independent exact-word nominal-load/derivative/RK-chain checks, no native solve",
+    "noRefusalAsPass": true
+  },
+  "wiringControls": {
+    "ids": ["null-load", "tilted-unequal", "nominal-yaw", "motor-lag", "reversed-load-ids", "duplicate-load-id", "missing-load-id", "stale-stage-token", "stale-raw-input", "nonfinite-load", "zero-quaternion", "nonfinite-quaternion"],
+    "rejectedIds": ["duplicate-load-id", "missing-load-id", "stale-stage-token", "stale-raw-input", "nonfinite-load", "zero-quaternion", "nonfinite-quaternion"],
+    "expectedReasons": {
+      "duplicate-load-id": "native-load-id",
+      "missing-load-id": "native-load-missing-id",
+      "stale-stage-token": "stale-stage-token",
+      "stale-raw-input": "native-raw-binding",
+      "nonfinite-load": "native-load-shape",
+      "zero-quaternion": "projection-quaternion",
+      "nonfinite-quaternion": "projection-state"
+    },
+    "algebraTolerance": 1e-12,
+    "tilted": {
+      "rawState": [0, 0, 1, 0.2, -0.1, 0.05, 0, 0.7071067811865476, 0, 0.7071067811865476, 0.1, -0.2, 0.3, 0.03, 0.04, 0.05, 0.06],
+      "commands": [0.07, 0.08, 0.09, 0.1],
+      "rotor": [0.02, 0.03, 0.04, 0.06],
+      "collective": 0.15,
+      "worldForce": [0.15, 0, 0],
+      "worldMoment": [0, -0.00028, 0.0014],
+      "expectedBodyArm": [-0.0014, -0.00028, 0]
+    },
+    "nativeCalls": 0,
+    "positiveGroups": 5,
+    "negativeGroups": 7,
+    "successfulSingleDroneDerivatives": 6,
+    "rationale": "fixed identity/null, unequal tilted force-and-moment, nominal reaction yaw, actuator lag, stable-ID permutation, duplicate/missing/stale/nonfinite inputs; no native query is needed to isolate wiring"
+  },
+  "manufactured": {
+    "cases": ["translation", "principal-spin", "motor-relaxation"],
+    "duration": 0.01,
+    "timesteps": [0.0025, 0.00125, 0.000625],
+    "stepsPerRun": [4, 8, 16],
+    "runs": 9,
+    "totalSteps": 84,
+    "stageEvaluations": 336,
+    "nativeCalls": 0,
+    "law": "prescribed world force [0,0,m*g] and world arm moment [0,0,0]; equal nominal motors give zero reaction yaw; rotor/collective fields are actuator observables, not a native load-law claim",
+    "initials": {
+      "translation": "p=[0,0,1],v=[.2,-.1,.05],q=[0,0,0,1],omega=0,f=u=[.06]*4",
+      "principal-spin": "p=[0,0,1],v=0,q=[0,0,0,1],omega=[0,0,1],f=u=[.06]*4",
+      "motor-relaxation": "p=[0,0,1],v=0,q=[0,0,0,1],omega=0,f=[.04]*4,u=[.08]*4"
+    },
+    "analyticEndpoints": {
+      "translation": "p(T)=p(0)+T*v(0); other components constant",
+      "principal-spin": "q(T)=[0,0,sin(T/2),cos(T/2)]; other components constant",
+      "motor-relaxation": "f(T)=.08+(.04-.08)*exp(-T/.04); other components constant"
+    },
+    "errorNorms": {
+      "position": "Euclidean metres",
+      "velocity": "Euclidean metres/second",
+      "attitude": "2*min(||q-qexact||2,||q+qexact||2); quaternion chord proxy, not exact geodesic angle",
+      "omega": "Euclidean radians/second",
+      "motor": "max rotor absolute error / (m*g/4)"
+    },
+    "tolerances": {"position": 2e-12, "velocity": 2e-12, "attitude": 2e-10, "omega": 2e-12, "motor": 1e-8},
+    "toleranceAppliesTo": "finest grid only; all three endpoint errors retained",
+    "roundoffFloor": 1e-12,
+    "refinementRatio": 0.5,
+    "acceptance": "fine<=tolerance; medium<=max(floor,.5*coarse); fine<=max(floor,.5*medium)",
+    "rationale": "0.01s spans one control period; three exact smooth ODE controls isolate translation, projected quaternion kinematics and motor relaxation. The fixed floor is over 4000 binary64 epsilons at unit scale, accommodating short-chain endpoint and analytic-evaluation rounding. It disables order inference when errors are tiny; tolerances and contraction are qualification checks, not an observed RK order.",
+    "convergenceOrderClaim": false
+  },
+  "expectedRuntimeCounts": {
+    "coupledStages": 32,
+    "coupledCompleted": 32,
+    "primaryNativeCalls": 32,
+    "offStages": 32,
+    "offCompleted": 32,
+    "offNativeCalls": 0,
+    "steps": 16,
+    "controllers": 4,
+    "rawDiagnostics": 1,
+    "wiringControls": 12,
+    "manufacturedRuns": 9,
+    "manufacturedSummaries": 3,
+    "manufacturedStages": 336
+  },
+  "retainedCompatibilityEvidence": {
+    "buffer56": "prior evidence retained as provenance; the loader reruns its fixed 56 Buffer shim assertions as infrastructure checks, separately from all scientific stage/native/reference counts",
+    "loaderInfrastructureAssertions": 56
+  },
+  "independentSavedEvidenceControls": {
+    "mutationIds": ["load-word", "squared-force-law", "body-frame-force", "load-id-association", "double-force", "missing-moment", "wrong-frame", "motor-state-overwrite", "stale-stage", "consumed-id-association"],
+    "mutations": 10,
+    "immutableArithmeticFixtures": 14,
+    "primaryWitness": "coupled-step0-k1; fixed first ID, no favorable-witness search",
+    "frameWitness": "wiring tilted-unequal record",
+    "staleStageWitness": "coupled-step0-k2 nativeInput replaced with k1 input",
+    "unavailableWitness": "qualification failure",
+    "nativeCalls": 0,
+    "additionalReferenceStates": 0,
+    "bodyMomentReferenceNormalizedTolerance": 1e-8,
+    "projectionFrameConversionNormalizedTolerance": 1e-8,
+    "bodyMomentNorm": "Euclidean error / (m*g*rotorArmRadius), exact inverse quaternion matrix divided by quaternion norm squared; separate from unchanged four native load gates"
+  },
+  "independentNeighborMembership": {
+    "scope": "checker-only; both arms at relative times 0 and 0.01; no change to producer Grid/Boids steering",
+    "coordinates": "each coordinate difference is RN(saved position_i - saved position_j), matching Grid Math.hypot arguments; exact sum of the three squared rounded differences; self excluded; ascending stable IDs",
+    "neighborPredicate": "exact sum of squared RN coordinate differences < exact square of the frozen binary64 neighbor radius",
+    "relativeSquaredRadiusExclusionMargin": "2^-40",
+    "exclusion": "qualification fails if abs(distanceSquared - radiusSquared) <= 2^-40 * radiusSquared for any distinct pair at a controller update",
+    "rationale": "prospective exclusion around the boundary avoids treating the producer Math.hypot branch as an exact real-distance predicate"
+  },
+  "sourcePreparationHistory": "No candidate import/execution, scientific run, tests, browser launch, network access, Git mutation or source freeze was performed during drafting. Parent reports a new user-authorized window 2026-10-17T03:06:20Z through 2026-10-17T05:06:20Z. Final PROTOCOL.md and the enabled pinned supervisor config govern any launch after parent review, source closure and public verification."
+}

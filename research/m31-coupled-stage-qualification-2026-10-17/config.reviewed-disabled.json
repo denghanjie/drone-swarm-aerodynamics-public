@@ -1,0 +1,59 @@
+{
+  "schema": "m31-coupled-stage-supervision-v1",
+  "executionAllowed": false,
+  "authorization": null,
+  "launchCutoffUtc": null,
+  "stageOrder": [
+    "browser",
+    "reference",
+    "check"
+  ],
+  "limits": {
+    "perFileBytes": 33554432,
+    "combinedOutputLogScratchBytes": 268435456,
+    "totalWallSeconds": 960,
+    "closureAndOverheadSeconds": 60,
+    "pollSeconds": 0.1,
+    "finalizationByteAllowance": 2097152
+  },
+  "stages": {
+    "browser": {
+      "runtime": "node",
+      "source": "research/m31-coupled-stage-qualification-2026-10-17/source/controller.cjs",
+      "childWallSeconds": 120,
+      "completionAssertions": {
+        "complete": true
+      }
+    },
+    "reference": {
+      "runtime": "python",
+      "source": "research/m31-coupled-stage-qualification-2026-10-17/source/reference.py",
+      "childWallSeconds": 600,
+      "completionAssertions": {
+        "complete": true,
+        "qualified": true
+      }
+    },
+    "check": {
+      "runtime": "python",
+      "source": "research/m31-coupled-stage-qualification-2026-10-17/source/check.py",
+      "childWallSeconds": 180,
+      "completionAssertions": {
+        "complete": true,
+        "passed": true
+      }
+    }
+  },
+  "browserRootCompletionAssertions": {
+    "browserRootExitConfirmed": true,
+    "browserRootCloseConfirmed": true,
+    "browserRoot.exit.code": 0,
+    "browserRoot.exit.signal": null,
+    "browserRoot.close.code": 0,
+    "browserRoot.close.signal": null,
+    "browserRoot.error": null,
+    "browserClosed": true,
+    "complete": true
+  },
+  "scope": "One supervised attempt. All preflight, source/runtime hashing, stage execution, output checks and closure share 960 seconds. No runtime authorization currently exists. No OS memory ceiling or every-helper cleanup claim."
+}
