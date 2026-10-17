@@ -1,0 +1,14 @@
+# Parent adoption of the existing-cap diagnostic
+
+The independent [decision memo](../m31-post-preparation-decision-2026-10-17/DECISION.md) recommends a fixed 64/180/180 capacity pilot rather than another small optimization. Adopt that question and exact saved endpoint comparisons. Its proposed administrative numbers are advice; the final prospective allocation is PROTOCOL.md and the reviewed source, not the memo.
+
+Explicit choices before source freeze:
+
+- Preserve the three states and their order. For 180, read the original saved decimal spec and require complete emitted-word equality with the original saved raw input. This differs from the memo's raw-word-only preference; it retains the original encoding path and cannot qualify if any raw word differs. It creates no new synthetic state.
+- Require expected suffix counts 7,408 /34,707 /3,340 and positive counts228 /3,056 /0. Total suffix 45,455; logical pairs 273,888. A changed count is a failed diagnostic, not a traversal adjustment opportunity.
+- Add exact positive support agreement with both saved 96-bit producer certificates and exact rational containment of the new 192-bit pair intervals. Independent192-bit pair equality is unavailable and remains unclaimed. Independent192-bit complete root/load equality is mandatory.
+- Use the already reviewed600-second reservation pattern (540 scientific plus60 closure) with a60,000 shared suffix ceiling and32MiB/file,256MiB output guard. These differ from the memo's proposed240seconds/50,000calls/64MiB/192MiB. The larger administrative reservation does not relax expected counts or practical acceptance. It must fit entirely before03:00UTC. No runtime rescue or post-exposure resource change is allowed.
+- Keep each profiled scene's60-second and lifetime1 GiB RSS thresholds as separate practical-hurdle observations. They are not claimed as OS-enforced memory containment or production latency. A cost miss is a negative capacity decision even if all scientific endpoints match; it cannot justify larger runs. Preserve both correctness and practical flags instead of hiding accurate output behind a single aggregate verdict.
+- Standard cProfile records measured instrumented work; overlapping cumulative times cannot be summed. Use exact unchanged scientific functions. No automatic follow-on optimization or cap increase after a pass.
+
+Source preparation is authorized within the user's ongoing research instruction. Scientific execution still requires the final reviewed source freeze, public byte verification, complete time reservation and exclusive launch gate. The preceding prepared-reference result is public at 1ce0f3bff31ae5c296fd7ab711bcc5949bf297bd with 746 pins, manifest 3bb348f971327ec84b0e942968a3872397f30e70edf8c24171fdb0cc86071418; its public receipt is separately pinned in the new source freeze. No physical validation is implied.
