@@ -1,0 +1,212 @@
+{
+  "schema": "m31-native-wrapper-source-pins-v1",
+  "scope": "source-only draft; no imports/fixtures/targets executed",
+  "files": [
+    {
+      "path": "PRE-RUN-SOURCE-REVIEW.md",
+      "bytes": 1480,
+      "sha256": "be614936c315389f2cdb849d167d3db69227b0167b96ebd9822ea3df793d796e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 12889,
+      "sha256": "b11c1e71ac5b2f7920ab88a19312b1fd695a1c31221e1ea6461e6dbef8b45218"
+    },
+    {
+      "path": "source/native-controls.cjs",
+      "bytes": 11183,
+      "sha256": "dad8f77ff170fee36d72594a84aa7a0f0092b8b51e93467c7b1445da85b2601a"
+    },
+    {
+      "path": "source/native-load.cjs",
+      "bytes": 16262,
+      "sha256": "b4699a8025e27dcd34e9a206e0330a2c08d7caa61e934ec203d142876e1430f1"
+    },
+    {
+      "path": "source/vendor/anchor-kernel.cjs",
+      "bytes": 11828,
+      "sha256": "c2ab29e4f53341706582d52149df96cd93323d3943ac145f288fbbae4de71a8a"
+    },
+    {
+      "path": "source/vendor/controls.cjs",
+      "bytes": 5355,
+      "sha256": "bf54381ee7f4dab8fbb19e48ada7e11c0f6d129cec1bcd21e5ce5075fc91f1ba"
+    },
+    {
+      "path": "source/vendor/kernel.cjs",
+      "bytes": 16676,
+      "sha256": "efc87f4c0f9d1a5a9b754d9d334ce295227a0cb01ce6980e4818313dd35d3bc8"
+    },
+    {
+      "path": "source/vendor/lean-anchor.cjs",
+      "bytes": 14840,
+      "sha256": "1b57d90d1ce1a45fe3e7f637cae57325861bfc37c907de4d4c6f9e1a79f1af96"
+    },
+    {
+      "path": "source/vendor/reference-excerpt.cjs",
+      "bytes": 2731,
+      "sha256": "ec71562d17db5b30497e2953adc75019c424c19a44e45b22fcbb3a4482096d1e"
+    }
+  ],
+  "unchangedCopies": [
+    {
+      "draftPath": "source/vendor/anchor-kernel.cjs",
+      "originalPath": "research/m31-browser-screen-2026-10-16/source/anchor-kernel.cjs",
+      "byteIdentical": true
+    },
+    {
+      "draftPath": "source/vendor/controls.cjs",
+      "originalPath": "research/m31-browser-screen-2026-10-16/source/controls.cjs",
+      "byteIdentical": true
+    },
+    {
+      "draftPath": "source/vendor/kernel.cjs",
+      "originalPath": "research/m31-browser-screen-2026-10-16/source/kernel.cjs",
+      "byteIdentical": true
+    },
+    {
+      "draftPath": "source/vendor/lean-anchor.cjs",
+      "originalPath": "research/m31-browser-screen-2026-10-16/source/lean-anchor.cjs",
+      "byteIdentical": true
+    },
+    {
+      "draftPath": "source/vendor/reference-excerpt.cjs",
+      "originalPath": "research/m31-browser-screen-2026-10-16/source/reference-excerpt.cjs",
+      "byteIdentical": true
+    }
+  ],
+  "literalMicrocontrols": [
+    {
+      "id": "isolated-linear-nominal",
+      "method": "F",
+      "expectedStatus": "native-success"
+    },
+    {
+      "id": "reverse-stable-id-order",
+      "method": "F",
+      "expectedStatus": "native-success"
+    },
+    {
+      "id": "duplicate-id",
+      "method": "F",
+      "expectedStatus": "input-refused"
+    },
+    {
+      "id": "unsafe-id",
+      "method": "F",
+      "expectedStatus": "input-refused"
+    },
+    {
+      "id": "negative-zero-id",
+      "method": "F",
+      "expectedStatus": "input-refused"
+    },
+    {
+      "id": "short-state",
+      "method": "F",
+      "expectedStatus": "input-refused"
+    },
+    {
+      "id": "sparse-state",
+      "method": "F",
+      "expectedStatus": "input-refused"
+    },
+    {
+      "id": "active-unequal-pair",
+      "method": "F",
+      "expectedStatus": "native-success"
+    },
+    {
+      "id": "subnormal-coupled-output",
+      "method": "F",
+      "expectedStatus": "numerical-failure"
+    },
+    {
+      "id": "nominal-zero",
+      "method": "F",
+      "expectedStatus": "input-refused"
+    },
+    {
+      "id": "nominal-negative",
+      "method": "F",
+      "expectedStatus": "input-refused"
+    },
+    {
+      "id": "normalizer-overflow",
+      "method": "F",
+      "expectedStatus": "numerical-failure"
+    },
+    {
+      "id": "subnormal-isolated",
+      "method": "F",
+      "expectedStatus": "native-success"
+    },
+    {
+      "id": "quaternion-domain",
+      "method": "F",
+      "expectedStatus": "domain-refused"
+    },
+    {
+      "id": "unsupported-near-pair",
+      "method": "F",
+      "expectedStatus": "domain-refused"
+    },
+    {
+      "id": "neighbor-exact-three",
+      "method": "F",
+      "expectedStatus": "native-success"
+    },
+    {
+      "id": "downcut-exact",
+      "method": "F",
+      "expectedStatus": "native-success"
+    },
+    {
+      "id": "downcut-below",
+      "method": "F",
+      "expectedStatus": "native-success"
+    },
+    {
+      "id": "projection-zero-farfield",
+      "method": "F",
+      "expectedStatus": "native-success"
+    },
+    {
+      "id": "equal-z-order-refusal",
+      "method": "F",
+      "expectedStatus": "domain-refused"
+    },
+    {
+      "id": "tilted-unequal-linear-loads",
+      "method": "F",
+      "expectedStatus": "native-success"
+    },
+    {
+      "id": "tilted-symmetric-cancellation",
+      "method": "F",
+      "expectedStatus": "native-success"
+    },
+    {
+      "id": "nonfinite-unused-velocity",
+      "method": "F",
+      "expectedStatus": "input-refused"
+    },
+    {
+      "id": "empty-input",
+      "method": "F",
+      "expectedStatus": "input-refused"
+    }
+  ],
+  "syntaxChecks": [
+    {
+      "path": "source/native-load.cjs",
+      "operation": "node --check",
+      "exit": 0
+    },
+    {
+      "path": "source/native-controls.cjs",
+      "operation": "node --check",
+      "exit": 0
+    }
+  ]
+}
