@@ -4,7 +4,7 @@
 
 The preceding [browser probe](m31-native-tree-browser-probe-2026-10-17/SUMMARY.md) remains failed at its 160 MiB evidence cap, with no 5,000-drone endpoint or complete reference/checker. Tree-only storage savings do not qualify that run or demonstrate whole-run fit, speed, physical accuracy or novelty. Earlier renewed-window checkpoints: [64-drone coupled-stage qualification](m31-coupled-stage-qualification-2026-10-17/) and [small native-tree qualification](m31-native-tree-design-2026-10-17/).
 
-Fixed renewed authorization ends 2026-10-17 05:06:20 UTC / 13:06:20 Shanghai; no extension or new scientific allocation is implied. Keep 8876 unchanged. Current experiment is closed; overall research goal remains active/incomplete. Source commit b19aadc9a4157ad7c2bcba67856baf1d0c9096c6; result publication receipt will be retained separately. All older entries below are historical.
+Fixed renewed authorization ends 2026-10-17 05:06:20 UTC / 13:06:20 Shanghai; no extension or new scientific allocation is implied. Keep 8876 unchanged. Current experiment is closed; overall research goal remains active/incomplete. Source commit b19aadc9a4157ad7c2bcba67856baf1d0c9096c6; result commit `dd565e595dbe01bd7bccac2f2f15669cc2c36b80` and [exact-public receipt](publication-receipts/m31-tree-witness-layout-result-2026-10-17.json) verified at 04:45:20 UTC, with all 1,206 local/committed pins and exact public manifest bytes matching. All older entries below are historical.
 
 ---
 
