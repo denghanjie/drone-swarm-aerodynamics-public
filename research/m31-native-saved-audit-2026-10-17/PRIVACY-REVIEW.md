@@ -1,0 +1,7 @@
+# Result publication privacy review
+
+Public result artifacts contain synthetic simulated states, numerical reference comparisons, source hashes, generic hardware/runtime classes, fixed local viewer URLs and screenshots of this research page. No personal attachment, credential, home path, browser profile, raw operational log, hostname or unrelated user content is included. Original logs remain private; their hashes provide identity without publishing content. QA source uses environment variables for local runtime locations. Process-exit and generic local server observations are operational evidence, not user identity.
+
+Reviewed newly added text for private home/temp prefixes, credential patterns and personal contact addresses; inspected both final screenshots. The inherited source closure is already public and remains byte-identical. The projection preserves exact scientific load/pose words; formatting and visual exaggeration are explicit. No scientific values were sanitized or replaced. Parent corrected one summary navigation link and preserved that packaging note.
+
+The result manifest binds both original failed supervision and separately successful audit, independent reviews, summary, all viewer sources/data and both QA attempts. It excludes itself, the later publication receipt, mutable root navigation and unfinished next-campaign sources. Exact public manifest verification follows push.

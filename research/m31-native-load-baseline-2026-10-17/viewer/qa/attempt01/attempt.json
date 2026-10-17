@@ -1,0 +1,33 @@
+{
+  "schema": "m31-native-viewer-qa-attempt-v1",
+  "attempt": 1,
+  "startedUtc": "2026-10-17T01:13:24.493895+00:00",
+  "resourceScope": "240 s outer wall; 32 MiB aggregate QA artifacts and per-file child limit; no enforced memory ceiling; direct child handles, no process-group signals",
+  "status": "failed",
+  "newScientificCalls": 0,
+  "sourceFiles": [
+    {
+      "path": "run.cjs",
+      "bytes": 22336,
+      "sha256": "c9ae8721d9796ba2053cfa80a6cfad271c8bf1e437dcac937b121572f673c113"
+    },
+    {
+      "path": "supervise.py",
+      "bytes": 3739,
+      "sha256": "1db1ef4532780d5b2f6f89d778b21ea4165f91e0e6e4a9e6d4483aa6c114b467"
+    }
+  ],
+  "exitCode": 1,
+  "childExitCode": 1,
+  "childReaped": true,
+  "qaSourcesUnchanged": true,
+  "wallSeconds": 6.578689292,
+  "outputBytesBeforeAttemptRecord": 1068733,
+  "firstFailure": "Unexpected end of JSON input",
+  "stdout": "{\"passed\":false,\"checks\":47,\"combinations\":0,\"wallMs\":1995,\"preservationPassed\":true,\"cleanup\":{\"browserCloseRequested\":true,\"controllerReaped\":true,\"forcedTermination\":false,\"exit\":{\"code\":0,\"signal\":null},\"privateProfileRemoved\":true},\"failure\":\"Unexpected end of JSON input\"}\n",
+  "stderr": "",
+  "report": {
+    "bytes": 10899,
+    "sha256": "19ec5aecb52dceb2c0748bb72874a8eda884ab440cbf37d66ac9c35463607653"
+  }
+}

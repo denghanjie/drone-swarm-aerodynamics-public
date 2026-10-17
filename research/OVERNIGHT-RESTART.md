@@ -1,3 +1,11 @@
+# Current checkpoint — saved native-load audit, 17 October 2026
+
+[Native baseline summary](m31-native-saved-audit-2026-10-17/MILESTONE-SUMMARY.md): original browser controller saved12/12 calls but outer supervision failed EPERM. Preserve that failure. Separate immutable-source saved audit completed exit0 and qualifies12/12 calls,48category decisions,14fixtures,4corruptions and6 F/L pairs. [Exact restart](m31-native-saved-audit-2026-10-17/RESTART-RESULT.md) records both source commits, manifests, hashes and closed allocations.
+
+[Actual-record3D load view](m31-native-load-baseline-2026-10-17/viewer/) keeps original failure and saved-record accuracy distinct. Keep8876 running. Fresh-state source preparation is next; no new execution allocation is implied by this index. The overall goal remains active with no physical, performance,5000-drone or novelty claim. Earlier entries below remain history.
+
+---
+
 # Current checkpoint — direct-load diagnostic, 17 October 2026
 
 [Completed fixed-deletion diagnostic](m31-direct-load-diagnostic-2026-10-17/MILESTONE-SUMMARY.md): both single-use stages completed exit0; independent check and saved-data audit passed. Full A/B strict controls6/6 pass. Omit10 A fails strict and middle tiers6/6; stress failsA0/B0, passes later4. Stress B/C passesonlyA10/B10. B/C all1536local factors/root boxes and all6global/error intervals equal despite146wider C contractions. Fixed route closed, no fraction/mask tuning. Sourceee342fe5cdd824cbd68e4c1c85bae9f83bf688bf;159pins,manifest93d26849dcd0a86d18b254f8eb5babc3d13e0f46d08efc92dfc2bc5cef79635b.

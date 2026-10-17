@@ -1,0 +1,63 @@
+{
+  "schema": "m31-native-viewer-static-validation-v1",
+  "createdUtc": "2026-10-17T01:09:41.863818+00:00",
+  "scope": "Syntax and saved-file schema/hash review only; no projection, browser or scientific execution.",
+  "checks": [
+    {
+      "name": "JavaScript app syntax",
+      "command": "bundled node --check viewer/app.js",
+      "exitCode": 0
+    },
+    {
+      "name": "JavaScript module syntax",
+      "command": "bundled node --input-type=module --check < viewer/scene.js",
+      "exitCode": 0
+    },
+    {
+      "name": "Python AST only",
+      "command": "ast.parse(viewer/build-display.py)",
+      "passed": true
+    },
+    {
+      "name": "HTML unique IDs and literal JS DOM references",
+      "uniqueIds": 34,
+      "literalJsRefs": 28,
+      "missingIds": [],
+      "passed": true
+    },
+    {
+      "name": "Explicit audit link exact saved file lengths and SHA-256",
+      "checkedRecords": 4,
+      "passed": true
+    }
+  ],
+  "nodeRuntime": "[PINNED_NODE_EXECUTABLE]",
+  "environmentNote": "Initial node invocation was unavailable on PATH; completed both syntax checks with the bundled Node executable.",
+  "savedAuditObserved": {
+    "sourceCommit": "eb049deb66c4c7aee78826b2eecde8281d02a1b9",
+    "attemptStatus": "completed",
+    "exitCode": 0,
+    "childReaped": true,
+    "preservationPassed": true,
+    "decision": "qualified",
+    "qualifiedTargetCalls": 12,
+    "arithmeticFixtures": 14,
+    "corruptionChecks": 4,
+    "nativeParityRows": 6,
+    "originalSupervisorStatus": "failed",
+    "originalSupervisorRepaired": false
+  },
+  "notPerformed": [
+    "projection builder execution",
+    "viewer or scene JavaScript execution",
+    "browser launch or navigation",
+    "scientific model/checker execution",
+    "published package edits",
+    "server changes"
+  ],
+  "pending": [
+    "Parent integration and one authorized projection build",
+    "Bounded browser QA",
+    "Parent creation of linked independent audit SUMMARY.md"
+  ]
+}

@@ -1,0 +1,45 @@
+--- attempt01/run.cjs
++++ attempt02/run.cjs
+@@ -11,7 +11,7 @@
+ const canonical=x=>Array.isArray(x)?'['+x.map(canonical).join(',')+']':x&&typeof x==='object'?'{'+Object.keys(x).sort().map(k=>JSON.stringify(k)+':'+canonical(x[k])).join(',')+'}':JSON.stringify(x);
+ const same=(a,b)=>canonical(a)===canonical(b),read=p=>JSON.parse(fs.readFileSync(path.join(root,p))),decode=w=>Buffer.from(w,'hex').readDoubleBE();
+ const plan=['run-a','run-b'].flatMap(run=>[0,5,10].map(t=>({id:run+'-t'+t,run,t})));
+-const report={schema:'m31-native-viewer-qa-v1',attempt:1,scope:'Saved-record viewer only; no scientific imports, model calls, checker calls or projection builds',url:base,browserPath:'Regular Playwright; Browser plugin not available; named installed Chrome explicitly authorized',viewports:[{width:1440,height:1050},{width:390,height:844}],checks:[],combinations:[],requestSets:{},console:{},linkChecks:[],screenshots:[],passed:false,originalSupervisorStatus:'failed',newScientificCalls:0};
++const report={schema:'m31-native-viewer-qa-v1',attempt:2,scope:'Saved-record viewer only; no scientific imports, model calls, checker calls or projection builds',url:base,browserPath:'Regular Playwright; Browser plugin not available; named installed Chrome explicitly authorized',viewports:[{width:1440,height:1050},{width:390,height:844}],checks:[],combinations:[],requestSets:{},console:{},linkChecks:[],screenshots:[],passed:false,originalSupervisorStatus:'failed',newScientificCalls:0};
+ let browser,context,controller,profile,exitInfo,before,finalizing,deadline;
+ let stderr='';
+ function clean(message){let s=String(message);for(const value of [root,profile,process.env.HOME,chrome].filter(Boolean))s=s.split(value).join('[PRIVATE_PATH]');return s.replace(/\/(?:private\/)?var\/folders\/[^\s"']+/g,'[TEMP_PATH]').slice(0,12000);}
+@@ -99,7 +99,7 @@
+   const selected=loads.find(l=>l.id===v.droneId),expectedWords=[...selected.rotor,selected.collective,...selected.worldForce,...selected.worldMoment];
+   check(tag+' selected exact words and saved audit row',same(e.selectedLoad,selected)&&same(await page.locator('#load-results code').allTextContents(),expectedWords)&&same(e.selectedAudit,audit.calls.find(c=>c.caseId===s.id&&c.method===method)));
+   check(tag+' four visible accuracy categories and original failure',await page.locator('#audit-results tr').count()===4&&same(await page.locator('#audit-results td strong').allTextContents(),['Pass','Pass','Pass','Pass'])&&await page.locator('#original-failure').isVisible()&&v.originalSupervisorStatus==='failed'&&v.independentAudit==='qualified');
+-  check(tag+' selected exact field address',JSON.parse(await page.locator('#exact-record').innerText()).field===s.methods[method].fieldPath+'.loads['+s.ids.indexOf(v.droneId)+']');
++  check(tag+' selected exact field address',JSON.parse(await page.locator('#exact-record').textContent()).field===s.methods[method].fieldPath+'.loads['+s.ids.indexOf(v.droneId)+']');
+   return v;
+  }
+  for(const s of display.states)for(const method of ['F','L']){
+@@ -127,11 +127,11 @@
+  check('corrected audit milestone summary link present',links.includes('http://localhost:8876/'+auditPkg+'/MILESTONE-SUMMARY.md'));
+  for(const url of links){const response=await context.request.get(url,{timeout:10000});report.linkChecks.push({url,status:response.status()});check('local evidence link '+new URL(url).pathname,response.ok());await response.dispose();}
+  const invalid=await context.newPage();observe(invalid,'corrupt-native');await invalid.route(new URL('binding.json',base).href,r=>r.fulfill({status:200,contentType:'application/json',body:'{}'}));await invalid.goto(base,{waitUntil:'networkidle'});await invalid.waitForFunction(()=>window.__viewState?.validEvidence===false);
+- check('corrupt native binding clears claims and scene',await invalid.locator('#scene canvas').count()===0&&await invalid.locator('#load-results tr').count()===0&&await invalid.locator('#exact-record').innerText()==='No accepted record.'&&await invalid.locator('#all-results td').filter({hasText:'Not bound'}).count()===12&&await invalid.locator('#state,#method,#drone,#scale,#reset,#arrows').evaluateAll(cs=>cs.every(c=>c.disabled))&&await invalid.locator('#original-failure').isVisible());await invalid.close();
++ check('corrupt native binding clears claims and scene',await invalid.locator('#scene canvas').count()===0&&await invalid.locator('#load-results tr').count()===0&&await invalid.locator('#exact-record').textContent()==='No accepted record.'&&await invalid.locator('#all-results td').filter({hasText:'Not bound'}).count()===12&&await invalid.locator('#state,#method,#drone,#scale,#reset,#arrows').evaluateAll(cs=>cs.every(c=>c.disabled))&&await invalid.locator('#original-failure').isVisible());await invalid.close();
+  const badAudit=await context.newPage();observe(badAudit,'corrupt-audit');await badAudit.route('http://localhost:8876/'+auditPkg+'/results/check.json',r=>r.fulfill({status:200,contentType:'application/json',body:'{}'}));await badAudit.goto(base,{waitUntil:'networkidle'});await badAudit.waitForFunction(()=>window.__viewState?.validEvidence===true);await frame(badAudit);
+  check('corrupt audit retains native geometry and pending qualification',await badAudit.evaluate(()=>window.__viewState.renderedBodyCount===64&&window.__viewState.independentAudit==='pending'&&window.__evidenceState.auditDecision==='pending')&&await badAudit.locator('#audit-status').innerText()==='Unavailable'&&await badAudit.locator('#all-results td').filter({hasText:'Qualified'}).count()===0&&await badAudit.locator('#original-failure').isVisible());await badAudit.close();
+  await page.evaluate(()=>{const select=document.getElementById('state'),option=document.createElement('option');option.value='invalid-qa-state';select.append(option);select.value=option.value;select.dispatchEvent(new Event('change'));});await frame(page);
+- check('post-acceptance rejection clears stale values and geometry',await page.evaluate(()=>window.__viewState.validEvidence===false&&window.__evidenceState.bound===false)&&await page.locator('#load-results tr').count()===0&&await page.locator('#exact-record').innerText()==='No accepted record.'&&await page.locator('#original-failure').isVisible());
++ check('post-acceptance rejection clears stale values and geometry',await page.evaluate(()=>window.__viewState.validEvidence===false&&window.__evidenceState.bound===false)&&await page.locator('#load-results tr').count()===0&&await page.locator('#exact-record').textContent()==='No accepted record.'&&await page.locator('#original-failure').isVisible());
+  for(const [name,events]of Object.entries(report.console)){check(name+' no unexpected errors or warnings',events.errors.length===0&&events.warnings.length===0&&events.failedRequests.length===0,events);}
+  const allowed=new Set(['index.html','app.js','style.css','scene.js','binding.json','display-data.json'].map(n=>new URL(n,base).href));allowed.add(base);for(const p of ['manifest','publication','attempt','report'])allowed.add('http://localhost:8876/'+binding.audit[p].path);for(const n of ['three.module.js','three.core.js','OrbitControls.js'])allowed.add('http://localhost:8876/outputs/step02b-source/vendor/'+n);
+  check('page requests limited to local display and bound audit files',Object.values(report.requestSets).flat().every(u=>allowed.has(u)),report.requestSets);
+--- attempt01/supervise.py
++++ attempt02/supervise.py
+@@ -14,7 +14,7 @@
+ required = ['RESEARCH_ROOT', 'RESEARCH_CHROME', 'NODE_PATH']
+ assert all(os.environ.get(key) for key in required)
+ assert not (out / 'report.json').exists()
+-marker = {'schema': 'm31-native-viewer-qa-attempt-v1', 'attempt': 1,
++marker = {'schema': 'm31-native-viewer-qa-attempt-v1', 'attempt': 2,
+           'startedUtc': datetime.datetime.now(datetime.timezone.utc).isoformat(),
+           'resourceScope': '240 s outer wall; 32 MiB aggregate QA artifacts and per-file child limit; no enforced memory ceiling; direct child handles, no process-group signals',
+           'status': 'started', 'newScientificCalls': 0,
