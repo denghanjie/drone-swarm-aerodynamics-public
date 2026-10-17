@@ -4,6 +4,8 @@
 
 [Physical compatibility review](m31-physical-compatibility-2026-10-17/NOTE.md) identifies absent upper-drone and dynamic mechanisms and a narrow future null-test question; matched domain/actuation/uncertainty remain unresolved. Overall goal active/incomplete. No further scientific allocation is implied. Window ends03:00UTC17October2026; do not silently extend it. Keep server8876 unchanged. Earlier records remain history.
 
+Exact-public result commit: `ec64e6b293b6a49448df103290db94a84cccdf53`. Result manifest SHA256 `25b64c0713cc168ae5adaaf969103e14b5e012c6c48cccc6dc0058fe255de026`; all812 local/committed file pins verified, and the exact-public manifest matched at02:48:10UTC. [Publication receipt](publication-receipts/m31-capacity-result-2026-10-17.json).
+
 ---
 
 # Current checkpoint — prepared reference, 17 October 2026
