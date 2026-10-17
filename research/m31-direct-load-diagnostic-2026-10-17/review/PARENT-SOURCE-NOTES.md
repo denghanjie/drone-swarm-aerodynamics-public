@@ -1,0 +1,17 @@
+# Parent source review — prospective
+
+No target scientific module was imported or executed during this review. Source text and existing public constants were read. Runner syntax was parsed with ast only. Existing target results were not regenerated. The six states have previously been exposed; no holdout claim is made.
+
+Reviewed native proposal: explicit binary64 force sum then normalization; one-rounded exact rational coefficient midpoint; input-source accumulation order; simultaneous 48 updates and 54 scalar bisections; all-ones start. This is a new Python proposal schedule, not claimed bit equivalence to historical JS coefficients or solver. Exact candidate thrust is f*x, not f*x*x.
+
+Reviewed arithmetic: positive source weights are exact ratios; sqrt bounds on a fixed2^-192 grid use integer square comparisons; signed multiplication reverses interval endpoints for negative axes/levers. Euclidean error compares component distance ranges and applies monotone sqrt. Outward root-grid quantization broadens the inherited conditional root certificate; it cannot tighten it improperly. No physical-model validity follows.
+
+Pre-freeze fixes requested: remove incompatible extra provenance config field; enforce config schedule consistency rather than ignore fields; record all256 omission diagnostic rows including zero omissions; distinguish B/C not-certified from A definite error failure. The independent reviewer independently identified the same issues. These are source-review corrections, not concealed failed target runs.
+
+Runner review: exclusive marker before source import; fixed CPU/alarm/output controls; observed-RSS gate stated honestly; runtime/source pins checked; producer output consumed only if source, successful status, output bytes/hash and stage metadata bind. Source-publication receipt must name exact manifest, commit, bytes, verified file count and precede launch. Final marker replacement is atomic with fsync. SIGKILL or hard resource termination can leave started/incomplete marker; that is failed evidence and must not be retried silently.
+
+Final producer/checker identities and allocation decision will be added only after isolated source drafts and reviews are complete. Numerical fixture checks will execute under the registered allocation, not be represented as pre-run empirical success.
+
+Final producer handoff was copied and syntax-parsed without import. Before freeze, parent added explicit sqrtFractionBits=192 and rootFractionBits=192 config fields and corresponding producer equality/type validation, as requested by adversarial review. This changes only configuration checking; original isolated handoff source/proof remain preserved. Numerical arithmetic and schedule are unchanged. The final source manifest, not the original handoff hash, defines executed producer bytes.
+
+Parent read the independent checker source, including integer binary64 decoding, independent Newton integer square root, proposal replay, reference-root/load consistency, exact A/B/C errors, all-row diagnostics and decision precedence. The final 44,013-byte checker (SHA256819a272ccf855765bd0fc6d4331caec784a0d0911d663318ab7a38f3e5c18c51) was copied byte-identically and AST-parsed without import. Existing semantic-reference source confirms its saved root/load exact propagation convention. No arithmetic/schema blocker found; this remains source review, not empirical acceptance. Final peer-review memo and checker handoff memo are freeze prerequisites.

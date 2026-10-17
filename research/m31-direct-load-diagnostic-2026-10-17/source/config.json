@@ -1,0 +1,48 @@
+{
+  "schema": "m31-direct-load-config-v1",
+  "states": [
+    "run-a-t0",
+    "run-a-t5",
+    "run-a-t10",
+    "run-b-t0",
+    "run-b-t5",
+    "run-b-t10"
+  ],
+  "prior": "research/m31-normalizer-replication-2026-10-17/results",
+  "constantBits": {
+    "mg": "3fd0f3a14cec41dd",
+    "R": "3fa4462fb7ff5035"
+  },
+  "constantProvenance": {
+    "path": "research/m31-normalizer-replication-2026-10-17/results/index.json",
+    "sha256": "3e9793e26a9a59803aa1056098e7c0f1e500ade02fd0928a171a5dc187ac7393"
+  },
+  "candidateIterations": 48,
+  "rootBisections": 54,
+  "tiers": [
+    "1e-8",
+    "1e-4",
+    "1e-2"
+  ],
+  "mask": {
+    "fractionNumerator": 1,
+    "fractionDenominator": 10,
+    "rounding": "ceiling",
+    "order": [
+      "coefficientUpper",
+      "receiverID",
+      "rotorIndex",
+      "sourceID"
+    ]
+  },
+  "resource": {
+    "cpuSoftSeconds": 120,
+    "cpuHardSeconds": 121,
+    "wallSeconds": 180,
+    "peakRssAcceptanceBytes": 536870912,
+    "perOutputBytes": 16777216,
+    "launchCutoffUtc": "2026-10-17T02:00:00+00:00"
+  },
+  "sqrtFractionBits": 192,
+  "rootFractionBits": 192
+}
