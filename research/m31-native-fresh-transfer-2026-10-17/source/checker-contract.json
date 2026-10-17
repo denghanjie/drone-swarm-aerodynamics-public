@@ -1,0 +1,278 @@
+{
+  "schema": "m31-native-fresh-checker-contract-v1",
+  "expectedSchedule": [
+    {
+      "caseId": "fresh-a-t5",
+      "method": "F"
+    },
+    {
+      "caseId": "fresh-a-t5",
+      "method": "L"
+    },
+    {
+      "caseId": "fresh-b-t5",
+      "method": "L"
+    },
+    {
+      "caseId": "fresh-b-t5",
+      "method": "F"
+    }
+  ],
+  "inheritedControlIds": [
+    "radius-0-below",
+    "radius-0-exact",
+    "radius-0-above",
+    "radius--6-below",
+    "radius--6-exact",
+    "radius--6-above",
+    "cell-below",
+    "cell-exact",
+    "cell-above",
+    "signed-zero",
+    "coarse-origin",
+    "coarse-translated",
+    "dense-16",
+    "span-256",
+    "span-nextUp256",
+    "far-invalid258",
+    "nonfinite-nan",
+    "nonfinite-infinity",
+    "overflow-span",
+    "near-field",
+    "duplicates",
+    "planes-62",
+    "planes-64",
+    "planes-66",
+    "component-x-below",
+    "component-x-exact",
+    "component-x-above",
+    "component-y-below",
+    "component-y-exact",
+    "component-y-above",
+    "component-z-below",
+    "component-z-exact",
+    "component-z-above",
+    "span-diagonal-256",
+    "span-nextDown256",
+    "center-257-fallback",
+    "center-nextUp257-fallback",
+    "mixed-near-far",
+    "mixed-positive-far",
+    "invalid-quaternion-far",
+    "nominal-zero-positive-far",
+    "nominal-negative-positive-far",
+    "nominal-nan-positive-far",
+    "scaled-cap-positive-far",
+    "invalid-quaternion-nan-far",
+    "nominal-infinity-positive-far",
+    "nominal-total-overflow-positive-far",
+    "nominal-unequal-positive-far"
+  ],
+  "ownershipSequence": [
+    "L:sparse2",
+    "F:sparse2",
+    "L:planes62",
+    "F:planes62",
+    "L:fallback258",
+    "F:fallback258"
+  ],
+  "wrapperControls": [
+    {
+      "id": "isolated-linear-nominal",
+      "method": "F",
+      "expectedStatus": "native-success"
+    },
+    {
+      "id": "reverse-stable-id-order",
+      "method": "F",
+      "expectedStatus": "native-success"
+    },
+    {
+      "id": "duplicate-id",
+      "method": "F",
+      "expectedStatus": "input-refused"
+    },
+    {
+      "id": "unsafe-id",
+      "method": "F",
+      "expectedStatus": "input-refused"
+    },
+    {
+      "id": "negative-zero-id",
+      "method": "F",
+      "expectedStatus": "input-refused"
+    },
+    {
+      "id": "short-state",
+      "method": "F",
+      "expectedStatus": "input-refused"
+    },
+    {
+      "id": "sparse-state",
+      "method": "F",
+      "expectedStatus": "input-refused"
+    },
+    {
+      "id": "active-unequal-pair",
+      "method": "F",
+      "expectedStatus": "native-success"
+    },
+    {
+      "id": "subnormal-coupled-output",
+      "method": "F",
+      "expectedStatus": "numerical-failure"
+    },
+    {
+      "id": "nominal-zero",
+      "method": "F",
+      "expectedStatus": "input-refused"
+    },
+    {
+      "id": "nominal-negative",
+      "method": "F",
+      "expectedStatus": "input-refused"
+    },
+    {
+      "id": "normalizer-overflow",
+      "method": "F",
+      "expectedStatus": "numerical-failure"
+    },
+    {
+      "id": "subnormal-isolated",
+      "method": "F",
+      "expectedStatus": "native-success"
+    },
+    {
+      "id": "quaternion-domain",
+      "method": "F",
+      "expectedStatus": "domain-refused"
+    },
+    {
+      "id": "unsupported-near-pair",
+      "method": "F",
+      "expectedStatus": "domain-refused"
+    },
+    {
+      "id": "neighbor-exact-three",
+      "method": "F",
+      "expectedStatus": "native-success"
+    },
+    {
+      "id": "downcut-exact",
+      "method": "F",
+      "expectedStatus": "native-success"
+    },
+    {
+      "id": "downcut-below",
+      "method": "F",
+      "expectedStatus": "native-success"
+    },
+    {
+      "id": "projection-zero-farfield",
+      "method": "F",
+      "expectedStatus": "native-success"
+    },
+    {
+      "id": "equal-z-order-refusal",
+      "method": "F",
+      "expectedStatus": "domain-refused"
+    },
+    {
+      "id": "tilted-unequal-linear-loads",
+      "method": "F",
+      "expectedStatus": "native-success"
+    },
+    {
+      "id": "tilted-symmetric-cancellation",
+      "method": "F",
+      "expectedStatus": "native-success"
+    },
+    {
+      "id": "nonfinite-unused-velocity",
+      "method": "F",
+      "expectedStatus": "input-refused"
+    },
+    {
+      "id": "empty-input",
+      "method": "F",
+      "expectedStatus": "input-refused"
+    }
+  ],
+  "requiredBrowserEquals": {
+    "runtimeIdentityVerified": true,
+    "inputsAndSourcesPreserved": true,
+    "browserClosed": true,
+    "completedTargetCalls": 4,
+    "errors": [],
+    "expectedTargetCalls": 4,
+    "unattempted": [],
+    "unfinishedTargetAttempts": [],
+    "completedMovingControlCalls": 8,
+    "expectedMovingControlCalls": 8,
+    "browserRootExitConfirmed": true,
+    "browserRootCloseConfirmed": true,
+    "unattemptedMovingControls": [],
+    "unfinishedMovingControlAttempts": [],
+    "browserRoot.exit.code": 0,
+    "browserRoot.exit.signal": null,
+    "browserRoot.close.code": 0,
+    "browserRoot.close.signal": null,
+    "browserRoot.error": null
+  },
+  "expectedMovingControlSchedule": [
+    {
+      "caseId": "positive",
+      "method": "F"
+    },
+    {
+      "caseId": "positive",
+      "method": "L"
+    },
+    {
+      "caseId": "distant-zero",
+      "method": "F"
+    },
+    {
+      "caseId": "distant-zero",
+      "method": "L"
+    },
+    {
+      "caseId": "raw-force",
+      "method": "F"
+    },
+    {
+      "caseId": "raw-force",
+      "method": "L"
+    },
+    {
+      "caseId": "order-incompatible",
+      "method": "F"
+    },
+    {
+      "caseId": "order-incompatible",
+      "method": "L"
+    }
+  ],
+  "corruptionWitnesses": [
+    {
+      "id": "load-word",
+      "caseId": "fresh-a-t5",
+      "method": "F"
+    },
+    {
+      "id": "squared-force-law",
+      "caseId": "fresh-a-t5",
+      "method": "F"
+    },
+    {
+      "id": "body-frame-force",
+      "caseId": "fresh-b-t5",
+      "method": "F"
+    },
+    {
+      "id": "load-id-association",
+      "caseId": "fresh-a-t5",
+      "method": "F"
+    }
+  ]
+}

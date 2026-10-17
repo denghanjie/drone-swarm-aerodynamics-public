@@ -1,0 +1,5 @@
+# Source acceptance scope
+
+Integrated the sealed science and browser drafts, preserving their per-file identities. Draft inventories and implementation changes are retained under review/science and review/browser. Native science modules, generation dependencies and exact helper modules are unchanged. The parent supervisor adds staged provenance, fixed operational bounds, same-private-directory binding and retained-guardian release on normal successful browser completion. Group-runner's documentation now accurately describes specific-root/controller assertions; its code is unchanged.
+
+The reviewed changes include fixed fresh inputs/call order, generated/reference provenance and serialization, partial-attempt accounting, raw-content non-reuse against six retained inputs independent of case ID, moving-control ownership chaining, and captured Chrome-root exit/close checks. These are source findings, not successful numerical or lifecycle results. Independent final review is recorded in review/FINAL-SOURCE-REVIEW.md and JSON. The manifest freezes their actual accepted bytes before any scientific evaluation.

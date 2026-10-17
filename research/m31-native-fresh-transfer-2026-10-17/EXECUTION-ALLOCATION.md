@@ -1,0 +1,9 @@
+# Fresh transfer bounded allocation
+
+This allocation implements the adopted finite research cycle under the user's standing authorization, including the separately granted new two-hour window received at 2026-10-17T01:02:27Z. Preserve the stricter prospective launch cutoff of 2026-10-17T03:00:00Z. Expired protocols and earlier failed attempts remain unchanged.
+
+Allocate exactly one invocation of each stage in order: generation, reference, browser, check. This allocation becomes executable only after final independent source acceptance, source manifest freeze, public commit/push and verification from that exact commit. Every stage uses source/run.py, the same manifest/commit, explicit escalated tool dispatch, and the same private log/scratch directory. Existing attempt markers prohibit retries. Follow all PROTOCOL.md/config.json caps, fixed cases, thresholds, and prerequisites. A failed prerequisite closes dependent stages. A complete but unqualified reference stops before Chrome. No scientific inputs, times, seeds, controls, precision or tolerances may be replaced in response to outcomes.
+
+Generation includes two fixed64-drone runs only. Reference includes four moving controls and two targets once each. Browser includes the fixed48/6/56/24 controls, eight moving-control calls and four fresh calls only. Checker includes14 arithmetic fixtures, the fixed four corruptions, exact comparisons and parity. No timing repetition, benchmark, candidate search or further experiment is allocated.
+
+After execution, inspect saved evidence without rerunning scientific code, perform independent review, create an actual-record Three.js milestone view and a plain-language summary, privacy-review and publish. Viewer-only checks require their own bounded QA record; they must not import scientific producers or repeat experiments. No paid resources, external messages or physical flights.

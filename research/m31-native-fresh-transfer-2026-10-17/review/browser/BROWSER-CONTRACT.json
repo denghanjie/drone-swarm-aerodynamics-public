@@ -1,0 +1,133 @@
+{
+  "schema": "m31-native-fresh-browser-handoff-v1",
+  "package": "research/m31-native-fresh-transfer-2026-10-17",
+  "entrypoint": "source/controller.cjs ROOT MANIFEST_SHA SOURCE_COMMIT",
+  "resultSchema": "m31-native-browser-qualification-v1",
+  "journalKindMoving": "moving-control",
+  "movingOwnershipPrefix": "moving:",
+  "sourceDependencies": [
+    "source/browser-config.json",
+    "source/science-config.json",
+    "runtime.json",
+    "source/source-bundle.json"
+  ],
+  "priorStages": {
+    "schema": "m31-native-fresh-attempt-v1",
+    "names": [
+      "generation",
+      "reference"
+    ],
+    "required": {
+      "status": "completed",
+      "exitCode": 0,
+      "childExitCode": 0,
+      "childReaped": true,
+      "preservationPassed": true
+    },
+    "sourceAndOutputHashesBound": true
+  },
+  "targetSchedule": [
+    {
+      "caseId": "fresh-a-t5",
+      "method": "F"
+    },
+    {
+      "caseId": "fresh-a-t5",
+      "method": "L"
+    },
+    {
+      "caseId": "fresh-b-t5",
+      "method": "L"
+    },
+    {
+      "caseId": "fresh-b-t5",
+      "method": "F"
+    }
+  ],
+  "movingControlSchedule": [
+    {
+      "caseId": "positive",
+      "method": "F"
+    },
+    {
+      "caseId": "positive",
+      "method": "L"
+    },
+    {
+      "caseId": "distant-zero",
+      "method": "F"
+    },
+    {
+      "caseId": "distant-zero",
+      "method": "L"
+    },
+    {
+      "caseId": "raw-force",
+      "method": "F"
+    },
+    {
+      "caseId": "raw-force",
+      "method": "L"
+    },
+    {
+      "caseId": "order-incompatible",
+      "method": "F"
+    },
+    {
+      "caseId": "order-incompatible",
+      "method": "L"
+    }
+  ],
+  "inheritedControls": 48,
+  "ownershipBuilds": 6,
+  "adapterAssertions": 56,
+  "wrapperMicrocontrols": 24,
+  "expectedTargetCalls": 4,
+  "expectedMovingControlCalls": 8,
+  "prerequisiteFields": [
+    "generationIndex",
+    "referenceIndex",
+    "generationAttempt",
+    "referenceAttempt",
+    "prerequisitePins"
+  ],
+  "browserRootCompletionAssertions": {
+    "browserClosed": true,
+    "browserRootExitConfirmed": true,
+    "browserRootCloseConfirmed": true,
+    "browserRoot.exit.code": 0,
+    "browserRoot.exit.signal": null,
+    "browserRoot.close.code": 0,
+    "browserRoot.close.signal": null,
+    "browserRoot.error": null,
+    "complete": true
+  },
+  "claimScope": "Owned specific Chrome root exit/close plus controller completion only; no every-helper exit, hard containment or successful operational repair before execution.",
+  "sourceOnly": true,
+  "noveltyBinding": {
+    "generationSlotField": "novelAgainstRetained",
+    "referenceTargetField": "novelAgainstRetained",
+    "required": {
+      "passed": true,
+      "comparedCount": 6,
+      "matches": []
+    },
+    "rawContentSha256": "Lowercase SHA-256, equal between each generation slot and corresponding reference target descriptor.",
+    "retained": "Exact ordered id/input pin/rawContentSha256 associations from science.retainedInputs.",
+    "retainedIds": [
+      "run-a-t0",
+      "run-a-t5",
+      "run-a-t10",
+      "run-b-t0",
+      "run-b-t5",
+      "run-b-t10"
+    ],
+    "retainedInputPinsRequiredInSourceManifest": true,
+    "rawContentHashDefinition": "SHA-256 of ASCII JSON of the raw {drones} object, recursively sorted keys, compact separators, no trailing newline, no caseId/domain envelope",
+    "independentRawContentRecomputation": "Completed, source-bound generation/reference stages and checker; browser controller binds their pins/metadata without scientific evaluation."
+  },
+  "sourceReview": {
+    "scienceSchema": "Accepted by m31_protocol_challenge after final novelty integration.",
+    "independentReview": "Accepted by m31_evidence_audit: no source-only blocker within adopted lifecycle/novelty scope."
+  }
+}

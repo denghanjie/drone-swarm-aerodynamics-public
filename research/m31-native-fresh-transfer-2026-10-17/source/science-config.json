@@ -1,0 +1,370 @@
+{
+  "schema": "m31-native-fresh-science-config-v1",
+  "semanticInputDomain": "m31-moving-admission/input/v1",
+  "slots": [
+    {
+      "id": "fresh-a-t5",
+      "seed": 26171711,
+      "t": 5,
+      "n": 64,
+      "methods": [
+        "F",
+        "L"
+      ]
+    },
+    {
+      "id": "fresh-b-t5",
+      "seed": 26171712,
+      "t": 5,
+      "n": 64,
+      "methods": [
+        "L",
+        "F"
+      ]
+    }
+  ],
+  "generation": {
+    "count": 64,
+    "duration": 5,
+    "dt": 0.0025,
+    "mode": "boids",
+    "search": "grid",
+    "filter": "wall-priority",
+    "record": true,
+    "frameEvery": 0.2,
+    "factoryVariant": "wide",
+    "airflow": "off",
+    "observation": "ideal"
+  },
+  "movingControls": [
+    {
+      "id": "positive",
+      "expected": {
+        "status": "certified",
+        "branch": "loads"
+      },
+      "drones": [
+        {
+          "id": 0,
+          "state": [
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            ".06",
+            ".06",
+            ".06",
+            ".06"
+          ]
+        },
+        {
+          "id": 1,
+          "state": [
+            "0",
+            "0",
+            "1.5",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            ".06",
+            ".06",
+            ".06",
+            ".06"
+          ]
+        },
+        {
+          "id": 2,
+          "state": [
+            "1",
+            "0",
+            "1.5",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            ".06",
+            ".06",
+            ".06",
+            ".06"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "distant-zero",
+      "expected": {
+        "status": "certified",
+        "branch": "loads"
+      },
+      "drones": [
+        {
+          "id": 0,
+          "state": [
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            ".06",
+            ".06",
+            ".06",
+            ".06"
+          ]
+        },
+        {
+          "id": 1,
+          "state": [
+            "4",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            ".06",
+            ".06",
+            ".06",
+            ".06"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "raw-force",
+      "expected": {
+        "status": "rejected",
+        "branch": "raw-force"
+      },
+      "drones": [
+        {
+          "id": 0,
+          "state": [
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            ".06",
+            ".06",
+            ".06"
+          ]
+        },
+        {
+          "id": 1,
+          "state": [
+            "0",
+            "0",
+            "1.5",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            ".06",
+            ".06",
+            ".06",
+            ".06"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "order-incompatible",
+      "expected": {
+        "status": "rejected",
+        "branch": "ordering"
+      },
+      "drones": [
+        {
+          "id": 0,
+          "state": [
+            "0",
+            "0",
+            "1.05",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0.7071067811865476",
+            "0",
+            "0.7071067811865476",
+            "0",
+            "0",
+            "0",
+            ".06",
+            ".06",
+            ".06",
+            ".06"
+          ]
+        },
+        {
+          "id": 1,
+          "state": [
+            "1",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0.7071067811865476",
+            "0",
+            "0.7071067811865476",
+            "0",
+            "0",
+            "0",
+            ".06",
+            ".06",
+            ".06",
+            ".06"
+          ]
+        }
+      ]
+    }
+  ],
+  "expectedReference": [
+    {
+      "status": "admitted",
+      "branch": "loads"
+    },
+    {
+      "status": "admitted",
+      "branch": "loads"
+    },
+    {
+      "status": "rejected",
+      "branch": "raw-force"
+    },
+    {
+      "status": "rejected",
+      "branch": "ordering"
+    }
+  ],
+  "expectedNative": [
+    {
+      "status": "native-success",
+      "reason": null
+    },
+    {
+      "status": "native-success",
+      "reason": null
+    },
+    {
+      "status": "input-refused",
+      "reason": "nominal-nonpositive"
+    },
+    {
+      "status": "domain-refused",
+      "reason": "native-graph-order"
+    }
+  ],
+  "referenceMaxDrones": 180,
+  "launchCutoffUtc": "2026-10-17T03:00:00+00:00",
+  "retainedInputs": [
+    {
+      "id": "run-a-t0",
+      "input": {
+        "path": "research/m31-normalizer-replication-2026-10-17/results/inputs/run-a-t0.json",
+        "bytes": 21955,
+        "sha256": "fdfdac0396189719ee13b0be47f6f1e3ee282149c86aca66faa233888c918f9e"
+      },
+      "rawContentSha256": "949b41d65fe234b672057c6315c1c252d506fdf2145cd6b37861e6ab0f71abdb"
+    },
+    {
+      "id": "run-a-t5",
+      "input": {
+        "path": "research/m31-normalizer-replication-2026-10-17/results/inputs/run-a-t5.json",
+        "bytes": 21955,
+        "sha256": "dd9bbdbc4370478dd39c0105169884daeee626e877768d4720f425ded17f2f18"
+      },
+      "rawContentSha256": "e94d81c30b6778c50f042506f78dad201ef71f589cb1205be5a318601ee2bf8f"
+    },
+    {
+      "id": "run-a-t10",
+      "input": {
+        "path": "research/m31-normalizer-replication-2026-10-17/results/inputs/run-a-t10.json",
+        "bytes": 21955,
+        "sha256": "9911761f4cee209ada49899f0d1df382e5fef4c83f47bb9bea3b520f656173c6"
+      },
+      "rawContentSha256": "253f51fd31884eb477d40190e6b80968ca9f65478e497e3c1c90f3166a8d77b3"
+    },
+    {
+      "id": "run-b-t0",
+      "input": {
+        "path": "research/m31-normalizer-replication-2026-10-17/results/inputs/run-b-t0.json",
+        "bytes": 21955,
+        "sha256": "1f76788e280c52be8738cc3111dd7ad71db7d8151fc6e80b02feb6e0adca695b"
+      },
+      "rawContentSha256": "133f35af47d975826a1a5f92c777a42e6c95ec2cffc8e10029bf5e6b8ff28bbe"
+    },
+    {
+      "id": "run-b-t5",
+      "input": {
+        "path": "research/m31-normalizer-replication-2026-10-17/results/inputs/run-b-t5.json",
+        "bytes": 21955,
+        "sha256": "973ade37191174f6b09ee6af013027429c7825c39d3a60cfab659e7e420b269a"
+      },
+      "rawContentSha256": "2b64318e63ca32abad8d6a11b1e3354d4262513f2fe807e497ed381f9b389e5d"
+    },
+    {
+      "id": "run-b-t10",
+      "input": {
+        "path": "research/m31-normalizer-replication-2026-10-17/results/inputs/run-b-t10.json",
+        "bytes": 21955,
+        "sha256": "2c3afc732a6b72a1351ef9d65410c444c34021866a0611c07fbfb960a0393925"
+      },
+      "rawContentSha256": "7ff7dbfcdbb8dd8388dfcf1c1b062a3a0062844e853e6c8ac32009bf989aa3c9"
+    }
+  ],
+  "rawContentHashDefinition": "SHA-256 of ASCII JSON of the raw {drones} object, recursively sorted keys, compact separators, no trailing newline, no caseId/domain envelope"
+}

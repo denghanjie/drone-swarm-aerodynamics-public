@@ -1,0 +1,717 @@
+{
+  "schema": "m31-native-fresh-independent-source-review-v1",
+  "decision": "accepted-source-only-for-exact-freeze",
+  "reviewScope": "Source reading, static AST comparisons, byte/hash comparisons and existing-raw JSON canonicalization only. No scientific import, fixture evaluation, generator, reference, native producer, browser or checker execution. Public freeze verification and explicit allocation remain prerequisites.",
+  "reviewedFiles": [
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/ADOPTED-DESIGN.md",
+      "bytes": 4402,
+      "sha256": "cdac75008305515db320d21bd594ace655c789444551c558378f864e0b0a43d7"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/CLAIM-LEDGER.md",
+      "bytes": 1148,
+      "sha256": "d266006f99f5204a06a901da62f71f9c1432238a850c1181f2e033e978a90f03"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/EXECUTION-ALLOCATION.md",
+      "bytes": 1897,
+      "sha256": "06ce7bbcfcfe435cf7e7ae0b4b1b5f0ec0ba066a1b14052f693db39ea4832a19"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/LITERATURE-EXPERIMENT-LEDGER.md",
+      "bytes": 997,
+      "sha256": "b335f364b38cf8829d173c0eb82ffd759ff949cf59e3813516014a15412db956"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/PROTOCOL.md",
+      "bytes": 7005,
+      "sha256": "59feaadac9802a27d2083f3b990ce18a4f2dfbe8e7cb6051480eda4cc5a85439"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/REPRODUCTION.md",
+      "bytes": 2190,
+      "sha256": "49a2e626d2c6c61f4e12b47b7b669a73826161657a90d9cd2b8131033890c5cb"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/RESTART-SOURCE.md",
+      "bytes": 1199,
+      "sha256": "049b5fbab14f7352fd368418e82295038c78e01d5d37251e545719c66eb78030"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/SEED-SELECTION.json",
+      "bytes": 15960,
+      "sha256": "126f58081adb7cb523b25aebe7aaa7ac51d0d6f5779514f8823b416349b5db79"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/SOURCE-ACCEPTANCE.md",
+      "bytes": 1119,
+      "sha256": "2fc4bc01b97486bbb315e88fac2e1d58a011c91a92a9670be4613b6a504a0f07"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/bibliography.bib",
+      "bytes": 2162,
+      "sha256": "5e388337656371012dc5418c5bd52a17fa701e44e5904bed5f40cec0e5187700"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/config.json",
+      "bytes": 1903,
+      "sha256": "6cda42da4e4f6b326a8c444a9c22f3d359e93e36dd0076d1240252e6311d6a83"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/review/PARENT-STATIC-VALIDATION.json",
+      "bytes": 1852,
+      "sha256": "c0a7e1ff274b3e30f044747e0aa743d569023ddc4d55cf271fec88cda64741fe"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/review/PROPOSED-TRANSFER.md",
+      "bytes": 26699,
+      "sha256": "e2fd9aad0dac4c84e6df419660ef164ad7e4ccc073f011f4a097a92370143a7e"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/review/browser/BROWSER-CONTRACT.json",
+      "bytes": 3744,
+      "sha256": "eeb5fbf6bacf77a069701465a6e6a19112875466f274ba4aec044c4ee45915ed"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/review/browser/SOURCE-MEMO.md",
+      "bytes": 5395,
+      "sha256": "fcb16c48002145f24d09b0c2d7791ab6be9370c1fd0dc887f1737e1702b8ea62"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/review/browser/SOURCE-PINS.json",
+      "bytes": 2675,
+      "sha256": "87a677d5ee0789e5f3740fd59ba15f2c241243c3bb65e6b0692b7a8dc9325215"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/review/browser/STATIC-VALIDATION.json",
+      "bytes": 3079,
+      "sha256": "9d4f5ddb0498a68038c01171fdc95f3444daa8b145ac57524327529562a98f08"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/review/browser/WRAPPER-DIFF.patch",
+      "bytes": 28686,
+      "sha256": "b40ac57c363bcefd76914b854c0e6ccd91f0c98d3dfa7c31623c77ea5cd9c107"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/review/science/IMPLEMENTATION.md",
+      "bytes": 10218,
+      "sha256": "51e394eb7dc7854652924e610c49434c9a32561de3ff9bb1fb59a12d7e02e5a0"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/review/science/SOURCE-PINS.json",
+      "bytes": 3085,
+      "sha256": "e1af3ff73001a5d4cd27dee8f553fc82624e6067ecfe817728bbcf59b1d64c7f"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/runtime.json",
+      "bytes": 6690,
+      "sha256": "d47bc32be242d13d43e98285f81c301d8592065cc5c2e826a301a319811a36f8"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/browser-bundle.js",
+      "bytes": 79419,
+      "sha256": "292223cfcae5413b34ab7c29c561e77499dc38cde3d2ccc6a8b57d5203e5a54a"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/browser-config.json",
+      "bytes": 4413,
+      "sha256": "42d717ec6830bdd63df5ec7a4c0e242d2ef5aad058d99e27a2dda6ec1aa6d496"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/browser.html",
+      "bytes": 283,
+      "sha256": "884a1184a40a252408569cb1a803820e339977f9d8668c8161c68c5602afbe2b"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/browser.js",
+      "bytes": 32283,
+      "sha256": "1da376712103e4b6b44f50d33f68161012275ad67c948e9c68014b64fd4b258c"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/build-bundle.py",
+      "bytes": 2150,
+      "sha256": "bb027422ec893fbb5377e6df5383e384043b3fdd42be348c3e44274ea539e955"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/check.py",
+      "bytes": 50026,
+      "sha256": "026e4ee8663f2d1dddac14b4e4d4fa2d3e5a551497b5e4878522a90cfc2a6a4c"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/checker-contract.json",
+      "bytes": 5974,
+      "sha256": "8871e823ef767788a04d61107929711c1ce0453d7b80a2b54ef4530586d86390"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/controller.cjs",
+      "bytes": 26677,
+      "sha256": "a570db63b3d917975b29a80712f434eca8310980283a8c63d091ab7df69532ad"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/fresh_support.py",
+      "bytes": 15272,
+      "sha256": "60aac488252ad7415daf63c520efe7168dadf2ee7c791fc743b434057aa0263f"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/generate.cjs",
+      "bytes": 13570,
+      "sha256": "b549b82fd8168fb96c7586eb3ec882dc61ecd2fb4e3c8f413780986d8a651943"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/group-runner.py",
+      "bytes": 1139,
+      "sha256": "a5091e799e2131e3b2ba405ebb6c3e717167ab47edb65460834828fdba1b587a"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/native-controls.cjs",
+      "bytes": 11183,
+      "sha256": "dad8f77ff170fee36d72594a84aa7a0f0092b8b51e93467c7b1445da85b2601a"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/native-load.cjs",
+      "bytes": 16262,
+      "sha256": "b4699a8025e27dcd34e9a206e0330a2c08d7caa61e934ec203d142876e1430f1"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/pair-reference.py",
+      "bytes": 44757,
+      "sha256": "845f52cf350a09d2043934dff3e797a7b7416f4ef5c64beb716104bcd74f38f0"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/reference.py",
+      "bytes": 10412,
+      "sha256": "94ae76884b6c690829745a1406a0d342eca4a10d1eda752516fdc931d6ae3b74"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/run.py",
+      "bytes": 14874,
+      "sha256": "a7585e5f914e334f19bfb359c6c0e75c0b7e48f4609197b3b0712199fac14896"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/science-config.json",
+      "bytes": 7793,
+      "sha256": "fb2601760b796b81bdeab544bed18ec5385be84f6d5ad4e61111dedf4b1b9993"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/semantic-reference.py",
+      "bytes": 39634,
+      "sha256": "ee77aab09109d3fba898555dacc4509312813caae4116bb3e1063efd88e3ad2c"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/source-bundle.json",
+      "bytes": 2097,
+      "sha256": "0f4d04241a09be8fa266db3f56e487c56ce875d50206734013cdb60287b03341"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/spec.json",
+      "bytes": 296772,
+      "sha256": "a47b9b920ddbbd14e1838e9c031a0b34dd1820f14959ef1295cef039e7f48d2f"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/vendor/anchor-kernel.cjs",
+      "bytes": 11828,
+      "sha256": "c2ab29e4f53341706582d52149df96cd93323d3943ac145f288fbbae4de71a8a"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/vendor/controls.cjs",
+      "bytes": 5355,
+      "sha256": "bf54381ee7f4dab8fbb19e48ada7e11c0f6d129cec1bcd21e5ce5075fc91f1ba"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/vendor/generation/milestone-31-source/factory-wide.cjs",
+      "bytes": 1712,
+      "sha256": "8ea0d8784accfc039fee9ca2a2c0a86dc8e502b6d1003e4de54a8df8a999cc22"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/vendor/generation/milestone-31-source/factory.cjs",
+      "bytes": 879,
+      "sha256": "fe46384aac6150c45a2ba38e4494da16969aeab4a8875a8596f6ad8e53bb2c40"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/vendor/generation/milestone-31-source/geometry.cjs",
+      "bytes": 1462,
+      "sha256": "e209e492fc523ab3c0c7df62745fb0d3dd7204f35e53309938a19d7895ed3d4f"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/vendor/generation/milestone-31-source/grid.cjs",
+      "bytes": 898,
+      "sha256": "f06010781770b64432935e5d825bcd1405b154b735ac4d0d654f145600cea302"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/vendor/generation/milestone-31-source/sim.cjs",
+      "bytes": 11475,
+      "sha256": "2b6fbc51334fd0669b23eb7173c6af83e62414a725b032796df5cb38ac7f1c9e"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/vendor/generation/milestone-31-source/wall-filter.cjs",
+      "bytes": 1182,
+      "sha256": "8273cc40a9530748fe43e9ef0a4d9a995ee152f9968ce2368e61e2f205502512"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/vendor/generation/step02c-source/physics.cjs",
+      "bytes": 6115,
+      "sha256": "0c46c9beb4e831c621658f6600c074f97c95966de07f5000eb64aa476a443fa1"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/vendor/kernel.cjs",
+      "bytes": 16676,
+      "sha256": "efc87f4c0f9d1a5a9b754d9d334ce295227a0cb01ce6980e4818313dd35d3bc8"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/vendor/lean-anchor.cjs",
+      "bytes": 14840,
+      "sha256": "1b57d90d1ce1a45fe3e7f637cae57325861bfc37c907de4d4c6f9e1a79f1af96"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/vendor/reference-excerpt.cjs",
+      "bytes": 2731,
+      "sha256": "ec71562d17db5b30497e2953adc75019c424c19a44e45b22fcbb3a4482096d1e"
+    }
+  ],
+  "authorSeals": [
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/review/science/SOURCE-PINS.json",
+      "bytes": 3085,
+      "sha256": "e1af3ff73001a5d4cd27dee8f553fc82624e6067ecfe817728bbcf59b1d64c7f"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/review/browser/SOURCE-PINS.json",
+      "bytes": 2675,
+      "sha256": "87a677d5ee0789e5f3740fd59ba15f2c241243c3bb65e6b0692b7a8dc9325215"
+    }
+  ],
+  "metadataChecks": [
+    {
+      "id": "integrated-science-IMPLEMENTATION.md",
+      "passed": true
+    },
+    {
+      "id": "integrated-science-source/check.py",
+      "passed": true
+    },
+    {
+      "id": "integrated-science-source/checker-contract.json",
+      "passed": true
+    },
+    {
+      "id": "integrated-science-source/fresh_support.py",
+      "passed": true
+    },
+    {
+      "id": "integrated-science-source/generate.cjs",
+      "passed": true
+    },
+    {
+      "id": "integrated-science-source/pair-reference.py",
+      "passed": true
+    },
+    {
+      "id": "integrated-science-source/reference.py",
+      "passed": true
+    },
+    {
+      "id": "integrated-science-source/science-config.json",
+      "passed": true
+    },
+    {
+      "id": "integrated-science-source/semantic-reference.py",
+      "passed": true
+    },
+    {
+      "id": "integrated-science-source/spec.json",
+      "passed": true
+    },
+    {
+      "id": "integrated-science-source/vendor/generation/milestone-31-source/factory-wide.cjs",
+      "passed": true
+    },
+    {
+      "id": "integrated-science-source/vendor/generation/milestone-31-source/factory.cjs",
+      "passed": true
+    },
+    {
+      "id": "integrated-science-source/vendor/generation/milestone-31-source/geometry.cjs",
+      "passed": true
+    },
+    {
+      "id": "integrated-science-source/vendor/generation/milestone-31-source/grid.cjs",
+      "passed": true
+    },
+    {
+      "id": "integrated-science-source/vendor/generation/milestone-31-source/sim.cjs",
+      "passed": true
+    },
+    {
+      "id": "integrated-science-source/vendor/generation/milestone-31-source/wall-filter.cjs",
+      "passed": true
+    },
+    {
+      "id": "integrated-science-source/vendor/generation/step02c-source/physics.cjs",
+      "passed": true
+    },
+    {
+      "id": "integrated-browser-BROWSER-CONTRACT.json",
+      "passed": true
+    },
+    {
+      "id": "integrated-browser-SOURCE-MEMO.md",
+      "passed": true
+    },
+    {
+      "id": "integrated-browser-STATIC-VALIDATION.json",
+      "passed": true
+    },
+    {
+      "id": "integrated-browser-WRAPPER-DIFF.patch",
+      "passed": true
+    },
+    {
+      "id": "integrated-browser-source/browser-config.json",
+      "passed": true
+    },
+    {
+      "id": "integrated-browser-source/browser.html",
+      "passed": true
+    },
+    {
+      "id": "integrated-browser-source/browser.js",
+      "passed": true
+    },
+    {
+      "id": "integrated-browser-source/build-bundle.py",
+      "passed": true
+    },
+    {
+      "id": "integrated-browser-source/controller.cjs",
+      "passed": true
+    },
+    {
+      "id": "integrated-browser-source/native-controls.cjs",
+      "passed": true
+    },
+    {
+      "id": "integrated-browser-source/native-load.cjs",
+      "passed": true
+    },
+    {
+      "id": "integrated-browser-source/vendor/anchor-kernel.cjs",
+      "passed": true
+    },
+    {
+      "id": "integrated-browser-source/vendor/controls.cjs",
+      "passed": true
+    },
+    {
+      "id": "integrated-browser-source/vendor/kernel.cjs",
+      "passed": true
+    },
+    {
+      "id": "integrated-browser-source/vendor/lean-anchor.cjs",
+      "passed": true
+    },
+    {
+      "id": "integrated-browser-source/vendor/reference-excerpt.cjs",
+      "passed": true
+    },
+    {
+      "id": "exact-32-source-files",
+      "passed": true
+    },
+    {
+      "id": "native-unchanged-vendor/reference-excerpt.cjs",
+      "passed": true
+    },
+    {
+      "id": "native-unchanged-vendor/anchor-kernel.cjs",
+      "passed": true
+    },
+    {
+      "id": "native-unchanged-vendor/lean-anchor.cjs",
+      "passed": true
+    },
+    {
+      "id": "native-unchanged-vendor/kernel.cjs",
+      "passed": true
+    },
+    {
+      "id": "native-unchanged-vendor/controls.cjs",
+      "passed": true
+    },
+    {
+      "id": "native-unchanged-native-load.cjs",
+      "passed": true
+    },
+    {
+      "id": "native-unchanged-native-controls.cjs",
+      "passed": true
+    },
+    {
+      "id": "generator-unchanged-factory-wide.cjs",
+      "passed": true
+    },
+    {
+      "id": "generator-unchanged-factory.cjs",
+      "passed": true
+    },
+    {
+      "id": "generator-unchanged-geometry.cjs",
+      "passed": true
+    },
+    {
+      "id": "generator-unchanged-grid.cjs",
+      "passed": true
+    },
+    {
+      "id": "generator-unchanged-sim.cjs",
+      "passed": true
+    },
+    {
+      "id": "generator-unchanged-wall-filter.cjs",
+      "passed": true
+    },
+    {
+      "id": "generator-unchanged-physics.cjs",
+      "passed": true
+    },
+    {
+      "id": "reference-unchanged-pair-reference.py",
+      "passed": true
+    },
+    {
+      "id": "reference-unchanged-semantic-reference.py",
+      "passed": true
+    },
+    {
+      "id": "reference-unchanged-spec.json",
+      "passed": true
+    },
+    {
+      "id": "exact-bundle-reconstruction",
+      "passed": true
+    },
+    {
+      "id": "bundle-metadata",
+      "passed": true
+    },
+    {
+      "id": "browser-controls-prefix-unchanged",
+      "passed": true,
+      "bytes": 27067
+    },
+    {
+      "id": "checker-unchanged-dyadic",
+      "passed": true
+    },
+    {
+      "id": "checker-unchanged-round_integer",
+      "passed": true
+    },
+    {
+      "id": "checker-unchanged-rounded_word",
+      "passed": true
+    },
+    {
+      "id": "checker-unchanged-rnd",
+      "passed": true
+    },
+    {
+      "id": "checker-unchanged-left_sum",
+      "passed": true
+    },
+    {
+      "id": "checker-unchanged-native_cross",
+      "passed": true
+    },
+    {
+      "id": "checker-unchanged-native_loads",
+      "passed": true
+    },
+    {
+      "id": "checker-unchanged-scalar_error",
+      "passed": true
+    },
+    {
+      "id": "checker-unchanged-squared_error",
+      "passed": true
+    },
+    {
+      "id": "checker-unchanged-verdict",
+      "passed": true
+    },
+    {
+      "id": "checker-unchanged-sqrt_bounds",
+      "passed": true
+    },
+    {
+      "id": "checker-unchanged-error_record",
+      "passed": true
+    },
+    {
+      "id": "checker-unchanged-consumption_check",
+      "passed": true
+    },
+    {
+      "id": "checker-unchanged-arithmetic_fixtures",
+      "passed": true
+    },
+    {
+      "id": "corruption-laws-unchanged",
+      "passed": true
+    },
+    {
+      "id": "control-contract-unchanged-inheritedControlIds",
+      "passed": true
+    },
+    {
+      "id": "control-contract-unchanged-ownershipSequence",
+      "passed": true
+    },
+    {
+      "id": "control-contract-unchanged-wrapperControls",
+      "passed": true
+    },
+    {
+      "id": "browser-checker-control-schema-agreement",
+      "passed": true
+    },
+    {
+      "id": "moving-literals-unchanged",
+      "passed": true
+    },
+    {
+      "id": "retained-pin-and-content-run-a-t0",
+      "passed": true
+    },
+    {
+      "id": "retained-pin-and-content-run-a-t5",
+      "passed": true
+    },
+    {
+      "id": "retained-pin-and-content-run-a-t10",
+      "passed": true
+    },
+    {
+      "id": "retained-pin-and-content-run-b-t0",
+      "passed": true
+    },
+    {
+      "id": "retained-pin-and-content-run-b-t5",
+      "passed": true
+    },
+    {
+      "id": "retained-pin-and-content-run-b-t10",
+      "passed": true
+    },
+    {
+      "id": "runtime-components-unchanged",
+      "passed": true
+    },
+    {
+      "id": "bibliography-unchanged",
+      "passed": true
+    },
+    {
+      "id": "no-new-result-artifacts",
+      "passed": true
+    }
+  ],
+  "retainedRawInputs": [
+    {
+      "id": "run-a-t0",
+      "input": {
+        "path": "research/m31-normalizer-replication-2026-10-17/results/inputs/run-a-t0.json",
+        "bytes": 21955,
+        "sha256": "fdfdac0396189719ee13b0be47f6f1e3ee282149c86aca66faa233888c918f9e"
+      },
+      "rawContentSha256": "949b41d65fe234b672057c6315c1c252d506fdf2145cd6b37861e6ab0f71abdb"
+    },
+    {
+      "id": "run-a-t5",
+      "input": {
+        "path": "research/m31-normalizer-replication-2026-10-17/results/inputs/run-a-t5.json",
+        "bytes": 21955,
+        "sha256": "dd9bbdbc4370478dd39c0105169884daeee626e877768d4720f425ded17f2f18"
+      },
+      "rawContentSha256": "e94d81c30b6778c50f042506f78dad201ef71f589cb1205be5a318601ee2bf8f"
+    },
+    {
+      "id": "run-a-t10",
+      "input": {
+        "path": "research/m31-normalizer-replication-2026-10-17/results/inputs/run-a-t10.json",
+        "bytes": 21955,
+        "sha256": "9911761f4cee209ada49899f0d1df382e5fef4c83f47bb9bea3b520f656173c6"
+      },
+      "rawContentSha256": "253f51fd31884eb477d40190e6b80968ca9f65478e497e3c1c90f3166a8d77b3"
+    },
+    {
+      "id": "run-b-t0",
+      "input": {
+        "path": "research/m31-normalizer-replication-2026-10-17/results/inputs/run-b-t0.json",
+        "bytes": 21955,
+        "sha256": "1f76788e280c52be8738cc3111dd7ad71db7d8151fc6e80b02feb6e0adca695b"
+      },
+      "rawContentSha256": "133f35af47d975826a1a5f92c777a42e6c95ec2cffc8e10029bf5e6b8ff28bbe"
+    },
+    {
+      "id": "run-b-t5",
+      "input": {
+        "path": "research/m31-normalizer-replication-2026-10-17/results/inputs/run-b-t5.json",
+        "bytes": 21955,
+        "sha256": "973ade37191174f6b09ee6af013027429c7825c39d3a60cfab659e7e420b269a"
+      },
+      "rawContentSha256": "2b64318e63ca32abad8d6a11b1e3354d4262513f2fe807e497ed381f9b389e5d"
+    },
+    {
+      "id": "run-b-t10",
+      "input": {
+        "path": "research/m31-normalizer-replication-2026-10-17/results/inputs/run-b-t10.json",
+        "bytes": 21955,
+        "sha256": "2c3afc732a6b72a1351ef9d65410c444c34021866a0611c07fbfb960a0393925"
+      },
+      "rawContentSha256": "7ff7dbfcdbb8dd8388dfcf1c1b062a3a0062844e853e6c8ac32009bf989aa3c9"
+    }
+  ],
+  "resolvedFindings": [
+    {
+      "id": "guardian-after-reap",
+      "resolution": "Clear retained guardian handle immediately after wait returns, before checking guardian code; refuse group signals when handle returncode is set."
+    },
+    {
+      "id": "partial-generation-slot",
+      "resolution": "Mark slot started before call; retain record/input pins as soon as persistence succeeds."
+    },
+    {
+      "id": "moving-ownership-chain",
+      "resolution": "Validate wrappers -> moving controls -> targets using moving:ID:METHOD, retaining last successful predecessor across refusals."
+    },
+    {
+      "id": "retained-content-novelty",
+      "resolution": "Pinned six content hashes excluding caseId/domain; generator and reference/check support recompute and enforce, browser binds completed evidence."
+    },
+    {
+      "id": "cumulative-private-accounting",
+      "resolution": "Pin SHA256 of resolved private directory in each attempt and require all predecessor attempts use same identity."
+    },
+    {
+      "id": "guardian-scope-doc",
+      "resolution": "Replace group-inspection wording with controller/specific root evidence."
+    }
+  ],
+  "knownUnresolvedSourceBlockers": [],
+  "limitations": [
+    "Source acceptance does not establish any numerical or operational success.",
+    "Specific Chrome root/controller completion only; all-helper exit and hard containment are not claimed.",
+    "Failure/timeout group cleanup can be denied and must remain failed.",
+    "Completion-time256MiB disk accounting and1500s supervision require live supervisor/awake host; no enforced memory ceiling.",
+    "Seed-use search is limited to documented available predecessor source/configuration coverage.",
+    "No original failed supervisor or previous frozen record is repaired or replaced."
+  ],
+  "policyReview": {
+    "allocation": "Exactly one invocation of each of four stages, same source/commit/private directory; exact public freeze and escalated dispatch remain required. No benchmark or replacement inputs.",
+    "cutoff": "2026-10-17T03:00:00+00:00",
+    "occupiedAttempts": "Started/failed/completed markers permanently occupy their stages; no retries or writing original absent outputs.",
+    "postrun": "Saved evidence review only; viewer QA separately bounded, no producer reruns.",
+    "authorizationScope": "This review checks the proposed allocation text against adopted scope; it does not itself allocate execution or replace parent verification of standing authorization."
+  }
+}
