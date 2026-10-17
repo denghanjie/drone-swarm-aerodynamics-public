@@ -1,0 +1,183 @@
+{
+  "schema": "m31-next-evidence-acquisition-v1",
+  "startedUtc": "2026-10-17T02:18:06+00:00",
+  "closedUtc": "2026-10-17T02:23:13.459269+00:00",
+  "wallLimitMinutes": 15,
+  "chargedDispatches": 12,
+  "networkToolInvocationAccounting": "One failed search-service invocation contained two queries, conservatively charged twice; ten subsequent direct HTTPS GET dispatches.",
+  "requestLimit": 12,
+  "successfulHttpResponseBodies": 9,
+  "successfulResponseBodyBytes": 927081,
+  "privateRetainedByteLimit": 8388608,
+  "automaticRetry": false,
+  "challengeBypass": false,
+  "paidServices": false,
+  "contacts": 0,
+  "rawMeasurementDownloads": 0,
+  "weightsDownloads": 0,
+  "thirdPartyCodeExecuted": false,
+  "fitsOrLabelReconstructions": 0,
+  "physicalScores": 0,
+  "candidatesDisposed": 5,
+  "requests": [
+    {
+      "chargedDispatch": 1,
+      "locator": "search query: drone rotor downwash experimental PIV velocity data dataset Zenodo measured",
+      "httpStatus": null,
+      "responseBodyBytes": 0,
+      "outcome": "search-service transport failure; no result; charged query1"
+    },
+    {
+      "chargedDispatch": 2,
+      "locator": "search query: UIUC propeller database performance data low Reynolds numbers Brandt Selig calibration static thrust",
+      "httpStatus": null,
+      "responseBodyBytes": 0,
+      "outcome": "same failed search-service invocation; charged query2"
+    },
+    {
+      "chargedDispatch": 3,
+      "locator": "https://m-selig.ae.illinois.edu/props/propDB.html",
+      "httpStatus": 200,
+      "responseBodyBytes": 10956,
+      "outcome": "official release-page body; no numeric payload",
+      "timeoutSeconds": 60,
+      "automaticRetries": 0,
+      "explicitEscalation": true,
+      "privateResponseFile": "uiuc-propdb.html",
+      "receipt": {
+        "bytes": 10956,
+        "sha256": "a0df2cdd583bdc80d6ad0d54dee518e2981a463c10f5c653c25e557e4e16f565"
+      }
+    },
+    {
+      "chargedDispatch": 4,
+      "locator": "https://api.crossref.org/works?query.title=rotor%20downwash%20experimental%20PIV%20data&rows=5&select=DOI,title,author,URL,publisher,link,relation",
+      "httpStatus": 200,
+      "responseBodyBytes": 5318,
+      "outcome": "discovery metadata; no hit admitted",
+      "timeoutSeconds": 60,
+      "automaticRetries": 0,
+      "explicitEscalation": true,
+      "privateResponseFile": "crossref-downwash-search.json",
+      "receipt": {
+        "bytes": 5318,
+        "sha256": "ab4cfb2f662490cd83dd095c7386444afa6e0a5069563c0916dd39f1d3b1e11d"
+      }
+    },
+    {
+      "chargedDispatch": 5,
+      "locator": "https://api.datacite.org/dois/10.26300/64d4-wa17",
+      "httpStatus": 200,
+      "responseBodyBytes": 2904,
+      "outcome": "registered dataset metadata; no contentUrl/files/rights",
+      "timeoutSeconds": 60,
+      "automaticRetries": 0,
+      "explicitEscalation": true,
+      "privateResponseFile": "kiran-datacite.json",
+      "receipt": {
+        "bytes": 2904,
+        "sha256": "da357673d8739682d7038f4ad21a2154dd1ba3953696e2d20ee3b3ecc82d50d4"
+      }
+    },
+    {
+      "chargedDispatch": 6,
+      "locator": "https://arxiv.org/html/2507.09463v1",
+      "httpStatus": 200,
+      "responseBodyBytes": 250026,
+      "outcome": "original methods read",
+      "timeoutSeconds": 60,
+      "automaticRetries": 0,
+      "explicitEscalation": true,
+      "privateResponseFile": "kiran-2507.09463v1.html",
+      "receipt": {
+        "bytes": 250026,
+        "sha256": "d906f1f0dcb2c949934f816a6a844b935fec0b0e8428ad3a5b717d2a3391b4d3"
+      }
+    },
+    {
+      "chargedDispatch": 7,
+      "locator": "https://zenodo.org/api/records?q=downwash&size=5&sort=mostrecent",
+      "httpStatus": 200,
+      "responseBodyBytes": 149646,
+      "outcome": "repository discovery; Bauersfeld publication-only record inspected",
+      "timeoutSeconds": 60,
+      "automaticRetries": 0,
+      "explicitEscalation": true,
+      "privateResponseFile": "zenodo-downwash-search.json",
+      "receipt": {
+        "bytes": 149646,
+        "sha256": "90bce5ae55594e085ffe9fe7b123e2252a5160c4787e97261b7fb43248ca774d"
+      }
+    },
+    {
+      "chargedDispatch": 8,
+      "locator": "https://repository.library.brown.edu/studio/item/bdr:rnnfmt6u/",
+      "httpStatus": 200,
+      "responseBodyBytes": 1669,
+      "outcome": "human-verification page; no dataset file manifest; no bypass",
+      "timeoutSeconds": 60,
+      "automaticRetries": 0,
+      "explicitEscalation": true,
+      "privateResponseFile": "kiran-brown-landing.html",
+      "receipt": {
+        "bytes": 1669,
+        "sha256": "c2bee4733c30d9ec761e3321dc7b6ea11e81247557ea4c7236eb3f2d2ff8ba90"
+      }
+    },
+    {
+      "chargedDispatch": 9,
+      "locator": "https://zenodo.org/api/records?q=%28downwash%20OR%20%22rotor%20wake%22%29%20AND%20resource_type.type%3Adataset&size=3&sort=bestmatch",
+      "httpStatus": 200,
+      "responseBodyBytes": 29668,
+      "outcome": "metadata-only biological wake hits rejected as incompatible",
+      "timeoutSeconds": 60,
+      "automaticRetries": 0,
+      "explicitEscalation": true,
+      "privateResponseFile": "zenodo-measured-data-search.json",
+      "receipt": {
+        "bytes": 29668,
+        "sha256": "f5cee8e684f05f2fc5d64d486f7ae9f7df62ac3018efcdac215753b80bd42648"
+      }
+    },
+    {
+      "chargedDispatch": 10,
+      "locator": "https://api.datacite.org/dois?query=downwash%20AND%20types.resourceTypeGeneral%3ADataset&page%5Bsize%5D=10",
+      "httpStatus": 200,
+      "responseBodyBytes": 318624,
+      "outcome": "metadata-only unrelated or non-rotor hits not admitted",
+      "timeoutSeconds": 60,
+      "automaticRetries": 0,
+      "explicitEscalation": true,
+      "privateResponseFile": "datacite-downwash-datasets.json",
+      "receipt": {
+        "bytes": 318624,
+        "sha256": "28da0ba28819184ae54948609a4a15496ed99ae32392f0a3dd2b0f21d15df966"
+      }
+    },
+    {
+      "chargedDispatch": 11,
+      "locator": "https://arxiv.org/html/2312.03488v1",
+      "httpStatus": 200,
+      "responseBodyBytes": 158270,
+      "outcome": "original methods read; no numerical-data link established",
+      "timeoutSeconds": 60,
+      "automaticRetries": 0,
+      "explicitEscalation": true,
+      "privateResponseFile": "gielis-2312.03488v1.html",
+      "receipt": {
+        "bytes": 158270,
+        "sha256": "c62a0f25114e6b9b28828fd5b050ffcb7c8cff3f5b2eb89ec88132f413376416"
+      }
+    },
+    {
+      "chargedDispatch": 12,
+      "locator": "https://rotorcraft.arc.nasa.gov/HVAB/HVABReleasedData_v2/PIV_Data/HVAB_PIV_ReadMe.pdf",
+      "httpStatus": 0,
+      "responseBodyBytes": 0,
+      "outcome": "TLS internal error; curl exit35; no response body and no retry",
+      "timeoutSeconds": 60,
+      "automaticRetries": 0,
+      "explicitEscalation": true
+    }
+  ]
+}
