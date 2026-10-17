@@ -1,0 +1,39 @@
+# Proposed saved-only audit: source review and fixed contract
+
+2026-10-17. This document and `saved_audit.py` are authored and statically reviewed by the same evidence reviewer. The parent must inspect this concrete source/manifest before separately authorizing its one execution. The audit has not been executed as part of source preparation. This is not an independent second source-review signature.
+
+The scientific run is already terminal. This audit will only inspect its saved records, source bytes and local committed blobs. It imports standard-library metadata/file modules only; no scientific candidate, oracle, semantic helper, native checker, fixture or corruption routine is imported or called. It creates no browser or network request. `git cat-file --batch` is used read-only to verify committed blobs; it is not a scientific subprocess. It does not repeat the publication download and will label that receipt check accordingly.
+
+## Fixed inputs and one-use contract
+
+- Scientific source commit: `fdea9e3af256cb5745ae630fad4a7a3b8a56fd6e`.
+- Scientific source manifest: SHA-256 `581d8778c7c0a2f00fab3d4dfb3fd253b882f5aacc76ece3f22f8b4629c7e213`, containing 689 immutable pins.
+- Qualified prior tree index: SHA-256 `3cd3f06d9d4ef1c43ffeceff445ba3fcd424f32c3e569ead4cceddf442104a7e`.
+- Literal scene order is the same 24-case order in the frozen candidate and prior tree packages. There are no alternate scenes, new seeds, replacement witnesses or adaptive tests.
+- `audit-source-manifest.json` pins this script and document, all 689 scientific source files, the scientific source manifest/publication receipt/STARTED receipt, and all candidate result/event/index files. Parent authorization names its exact SHA-256 as the script's required argument. Its `executionAuthorized: false` field records that the manifest was prepared prospectively; the later parent message supplies the separate execution authorization.
+
+The intended command uses the pinned Python runtime with `-I -B`, then `review/saved_audit.py ROOT AUDIT_MANIFEST_SHA256`. The script rechecks its runtime identity. The parent must inspect the source and final manifest first; this document does not authorize execution by itself.
+
+The script requires absent `review/AUDIT-STARTED.json` and `review/saved-audit-result.json`, creates the marker exclusively, and writes the result exclusively. A failed audit consumes its allowance; do not delete either file or repeat the run. Work uses a 115-second signal deadline and is required to finish within 120 seconds, including closure. At least a full 120-second reservation must remain before 03:00 UTC when the verified audit reaches its execution checks. Output reduction is capped at 8 MiB. No retries, cap increases or fallback witness searches exist.
+
+## What the audit checks
+
+1. **Provenance and unchanged files.** Validate every manifest input/source file's local length and SHA-256, then every one of the 689 scientific source pins and the scientific manifest against the exact committed blob. Confirm index/source/publication/STARTED identities and publication-before-run time ordering. Recheck all reviewed local bytes at closure. Source and scientific results are never written.
+2. **Exact complete wire equality.** Match every new record with the prior index's exact baseline pin. Compare the entire decoded record, which includes raw/prepared input, canonical outcomes, tree, coverage, scalar rows/coefficients, roots and all signed loads. Also report whether complete serialized bytes match. The prior independent saved audit is pinned and must have passed for that same baseline index. This audit does not recalculate zero predicates or re-execute the prior coverage validator.
+3. **Actual preparation counts.** Count rows explicitly refused at the saved raw stage and verify they have no prepared value. Every other row must retain its prepared value, including a geometry/preparation refusal. Require both actual preparation and original validation counters to equal input count minus raw refusals. This distinguishes 449 inherited logical preparation rows from 447 actual preparation/validation calls, with two raw-force refusals. It does not infer that the preparation-invalid row avoided preparation.
+4. **Suffix and lookup counts.** Per-scene suffix counts must equal the number of saved residual pairs and the prior tree count. Exactly two scientific operand lookups per suffix and zero pair preparations are required. Global counts are fixed at 26,570 suffix calls, 53,140 operand lookups and zero pair preparations; the scientific hard limit remains 30,000. The old residual preparation figure of 53,140 is labeled source-derived, not a new measurement.
+5. **Six binding controls.** Require the six literal IDs, dense-cube-27 association, distinct exact reason strings, detection flags, no setup preparations, zero suffix/budget deltas and the specific lookup deltas `[1,2,1,0,0,0]`. The recipes are supplied by the pinned prepared source/design; the audit inspects their saved reports and never executes them. Full post-control wire equality also checks restoration of the changed prepared center.
+6. **Retained arithmetic/native/load evidence.** Require the 14 fixture reports to equal the original passing ID/order records exactly; require all four native reports and four load-corruption reports to equal their prior saved reports exactly. Require the six old coverage-control IDs to match the qualified tree index and the explicit `coverageControlsRerun: false` label. No old or new control is rerun by this audit.
+7. **Journal and output accounting.** Check 48 ordered start/complete events, cumulative calls from zero to 26,570, each result pin, exact result file set, and total bytes before the index. Count admitted/refused outcomes, positive pairs, equal root/load boxes and retained zero coverage for reporting. These are saved-data reductions, not model computations.
+
+## Static risk review
+
+Imports are limited to `collections`, `datetime`, `hashlib`, `json`, `pathlib`, `signal`, `subprocess`, `sys` and `time`. No dynamic import or `exec` exists. The only subprocess is fixed-argument local `git cat-file --batch`, with bounded batches and timeouts; no shell interpolation is used. Pin paths reject absolute paths and parent traversal. JSON sources are treated as data. The reduction prints only compact status/count/hash information, not full input state arrays.
+
+Counter checks operate on saved refusal labels and records; they do not parse floating-point words or reevaluate physical predicates. Complete structural equality supplies stronger evidence than positive/count-only comparisons while retaining the previously qualified model/reference scope. The audit cannot prove that a compromised recording system reported real execution; it relies on pinned source, the saved execution record and unchanged output bytes. That limitation must remain visible in the result review.
+
+Only the new audit source, this document and its separate manifest are written during preparation. Frozen `STATIC-REVIEW.md`, scientific source, scientific manifests and result files are untouched. AST parsing and manifest construction are source/metadata preparation, not the authorized audit run.
+
+## Interpretation
+
+A pass will establish exact saved-baseline equivalence and consistent reported binding/counter behavior for the fixed corpus. It will not establish a runtime speedup, universal prepared-cache correctness, a 5,000-state computation, aerodynamic novelty or physical validity. The 3.747833-second saved candidate observation must not be compared as a benchmark with the earlier full-plus-tree qualification duration. Publication of the final audit result should retain the script/manifest identities, processing duration, errors if any, and these claim limits.

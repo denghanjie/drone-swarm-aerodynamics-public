@@ -1,3 +1,9 @@
+# Current checkpoint — prepared reference, 17 October 2026
+
+[Milestone summary](m31-prepared-reference-2026-10-17/MILESTONE-SUMMARY.md): sole experiment and independent saved-only audit passed all 24 scenes; complete output files are byte-identical to the prior tree reference. Actual scene preparations447; suffix calls26,570; operand lookups53,140; pair preparations0. Six new binding controls,14fixtures and4native/4load reports passed. [Updated3D evidence](m31-prepared-reference-2026-10-17/viewer/) passed first UI attempt62checks/32selections. Read [precise restart](m31-prepared-reference-2026-10-17/RESTART.md) for closed allocations and publication identity. Keep8876running. Overall goal active/incomplete; no speedup, physical validation,5,000-state or novelty claim. Approved window still ends03:00UTC17October; this index does not extend it. Earlier entries remain history.
+
+---
+
 # Current checkpoint — tree-first exact reference, 17 October 2026
 
 [Milestone summary](m31-tree-first-reference-2026-10-17/MILESTONE-SUMMARY.md): the single preregistered comparison completed and qualified all 24 fixed scenes. Full reference 79,008 scalar calls; tree-first reference 26,570; 52,438 calls avoided. Exact decisions, positive coefficients, roots and signed loads match. All six coverage controls, 14 arithmetic fixtures, four saved native audits and four load-law controls passed. Independent saved-only review passed. Source commit e9c464b04b43e4f8dff5904bc657969d6ab1d3d6, source manifest 4e8658c657416e99096ff581528e5006021fc7d0f0590c8ab1610ba307317cd6, 585 pins.
