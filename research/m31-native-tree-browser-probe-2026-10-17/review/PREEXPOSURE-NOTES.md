@@ -1,0 +1,14 @@
+# Prospective integration notes
+
+These findings came from reading draft source. No fresh initializer, native query, reference solve or browser scientific run had occurred when they were identified. Final source review must verify their resolution; this note is not a test receipt.
+
+- The first transport writer could flush a partially filled shard when a primitive crossed the shard boundary, while the independent reader required every nonfinal shard to be exactly 1 MiB. The writer/reader contract must agree before launch; weakening a decoder after observing a fresh failure is not allowed.
+- The first independent reader's cached-stream return preceded validation of every chunk descriptor. A cache hit could therefore bypass rejection of an unknown descriptor field. Structural validation must run before cache lookup; cached equal bytes do not excuse malformed metadata.
+- The first host byte counter rejected private-profile symlinks, whereas the qualified supervisor counts their own `lstat` size without following them. Research outputs remain regular files; private browser-profile accounting must not silently introduce a different containment claim.
+- Expanding bundle module IDs requires updating the saved factory-process-shim metadata to the actual expanded ID. An old abbreviated string is not an accurate record of the current loader.
+- The old all-pairs exact controller-neighbor reconstruction would add a separate quadratic audit at 5000. The new protocol explicitly limits controller qualification to unchanged source, actual inputs/IDs/neighbor records/commands and their consumption. Full aerodynamic omission proofs and all flight derivative/RK checks remain mandatory. There is no independent fresh controller-membership or transcendental-oracle claim.
+- The inherited ten coupled-record mutation laws use earlier mature-state witnesses. They remain linked prior evidence; this probe does not search the fresh t0 states for convenient replacement witnesses. The fixed wiring controls, arithmetic fixtures and saved small-tree/codec controls are the current declared startup checks.
+
+Parent review found the draft projection, load binding/consumption and RK expressions preserved in the adapter diff. That observation must be tied to the final file identity, not assumed after subsequent edits. The new common timer additionally includes identical per-arm input-word decoding and actual submitted-input preservation checking. Encoding, comparison and durable transport remain separately reported.
+
+The independent checker's `passed` field means complete numerical/evidence qualification. Its separate root `engineeringPassed` field requires the per-case `engineeringGate` Boolean to pass in both large cases, applying the 20% cost/reduced-candidate criteria. A correctly checked negative efficiency result is a completed experiment and must not trigger a retry.

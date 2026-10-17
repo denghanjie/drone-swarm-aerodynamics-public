@@ -1,0 +1,355 @@
+{
+  "schema": "m31-native-tree-browser-science-v1",
+  "status": "prospective-parent-freeze-pending",
+  "cases": [
+    {
+      "caseId": "tree-t0-n64-a",
+      "n": 64,
+      "seed": 26171731,
+      "methodOrders": [
+        [
+          "F",
+          "H0",
+          "H"
+        ],
+        [
+          "H0",
+          "H",
+          "F"
+        ],
+        [
+          "H",
+          "F",
+          "H0"
+        ],
+        [
+          "H",
+          "H0",
+          "F"
+        ]
+      ]
+    },
+    {
+      "caseId": "tree-t0-n1000-a",
+      "n": 1000,
+      "seed": 26171732,
+      "methodOrders": [
+        [
+          "H0",
+          "F",
+          "H"
+        ],
+        [
+          "F",
+          "H",
+          "H0"
+        ],
+        [
+          "F",
+          "H0",
+          "H"
+        ],
+        [
+          "H0",
+          "H",
+          "F"
+        ]
+      ]
+    },
+    {
+      "caseId": "tree-t0-n5000-a",
+      "n": 5000,
+      "seed": 26171733,
+      "methodOrders": [
+        [
+          "F",
+          "H0",
+          "H"
+        ],
+        [
+          "H0",
+          "H",
+          "F"
+        ],
+        [
+          "H",
+          "F",
+          "H0"
+        ],
+        [
+          "H",
+          "H0",
+          "F"
+        ]
+      ]
+    },
+    {
+      "caseId": "tree-t0-n5000-b",
+      "n": 5000,
+      "seed": 26171734,
+      "methodOrders": [
+        [
+          "H0",
+          "F",
+          "H"
+        ],
+        [
+          "F",
+          "H",
+          "H0"
+        ],
+        [
+          "F",
+          "H0",
+          "H"
+        ],
+        [
+          "H0",
+          "H",
+          "F"
+        ]
+      ]
+    }
+  ],
+  "methodOrderTable": [
+    [
+      "F",
+      "H0",
+      "H"
+    ],
+    [
+      "H0",
+      "H",
+      "F"
+    ],
+    [
+      "H",
+      "F",
+      "H0"
+    ],
+    [
+      "H",
+      "H0",
+      "F"
+    ],
+    [
+      "H0",
+      "F",
+      "H"
+    ],
+    [
+      "F",
+      "H",
+      "H0"
+    ]
+  ],
+  "integration": {
+    "timeOrigin": 0,
+    "duration": 0.0025,
+    "dt": 0.0025,
+    "steps": 1,
+    "stagesPerStep": 4,
+    "controlDt": 0.01,
+    "stepsPerControl": 4,
+    "controlUpdateRelativeTimes": [
+      0
+    ],
+    "arms": [
+      "coupled"
+    ],
+    "controller": {
+      "mode": "boids",
+      "filter": "wall-priority",
+      "search": "grid",
+      "thrustRatio": 2.25,
+      "factoryVariant": "wide"
+    },
+    "stagePolicy": "project every whole-swarm RK stage before native preparation and derivative; project each accepted endpoint",
+    "yawPolicy": "nominal actuator reaction yaw is retained; native worldMoment contains thrust-arm moment only",
+    "nativeConsumption": "replace total world force and arm moment; do not add native totals as corrections; retain nominal motor state and motor lag",
+    "nativeMethods": [
+      "F",
+      "H0",
+      "H"
+    ]
+  },
+  "projection": {
+    "normSquare": "RN(RN(RN(q0*q0 + q1*q1) + q2*q2) + q3*q3), each product RN",
+    "norm": "Math.sqrt(normSquare), required independently correctly rounded",
+    "components": "each projected component RN(raw component / norm)",
+    "qTolerance": 1e-10,
+    "geometryTolerance": 1e-09
+  },
+  "nativeReference": {
+    "primaryStates": 4,
+    "requiredNonRefusalStates": 4,
+    "rotorErrorNorm": "absolute error / (m*g/4)",
+    "collectiveErrorNorm": "absolute error / (m*g)",
+    "forceErrorNorm": "Euclidean world-force error / (m*g)",
+    "momentErrorNorm": "Euclidean world-arm-moment error / (m*g*rotorArmRadius)",
+    "loadTolerance": 1e-08,
+    "inputHash": "SHA256 UTF8 canonical compact nativeInput JSON, recursively sorted object keys, no newline; controller separately persists and pins actual sidecar bytes",
+    "noRefusalAsPass": true,
+    "scopeCaseId": "tree-t0-n64-a",
+    "maxDrones": 180,
+    "coefficientBits": 192,
+    "rootBisections": 128,
+    "suffixCallLimit": 30000
+  },
+  "wiringControls": {
+    "ids": [
+      "null-load",
+      "tilted-unequal",
+      "nominal-yaw",
+      "motor-lag",
+      "reversed-load-ids",
+      "duplicate-load-id",
+      "missing-load-id",
+      "stale-stage-token",
+      "stale-raw-input",
+      "nonfinite-load",
+      "zero-quaternion",
+      "nonfinite-quaternion"
+    ],
+    "rejectedIds": [
+      "duplicate-load-id",
+      "missing-load-id",
+      "stale-stage-token",
+      "stale-raw-input",
+      "nonfinite-load",
+      "zero-quaternion",
+      "nonfinite-quaternion"
+    ],
+    "expectedReasons": {
+      "duplicate-load-id": "native-load-id",
+      "missing-load-id": "native-load-missing-id",
+      "stale-stage-token": "stale-stage-token",
+      "stale-raw-input": "native-raw-binding",
+      "nonfinite-load": "native-load-shape",
+      "zero-quaternion": "projection-quaternion",
+      "nonfinite-quaternion": "projection-state"
+    },
+    "algebraTolerance": 1e-12,
+    "tilted": {
+      "rawState": [
+        0,
+        0,
+        1,
+        0.2,
+        -0.1,
+        0.05,
+        0,
+        0.7071067811865476,
+        0,
+        0.7071067811865476,
+        0.1,
+        -0.2,
+        0.3,
+        0.03,
+        0.04,
+        0.05,
+        0.06
+      ],
+      "commands": [
+        0.07,
+        0.08,
+        0.09,
+        0.1
+      ],
+      "rotor": [
+        0.02,
+        0.03,
+        0.04,
+        0.06
+      ],
+      "collective": 0.15,
+      "worldForce": [
+        0.15,
+        0,
+        0
+      ],
+      "worldMoment": [
+        0,
+        -0.00028,
+        0.0014
+      ],
+      "expectedBodyArm": [
+        -0.0014,
+        -0.00028,
+        0
+      ]
+    },
+    "nativeCalls": 0,
+    "positiveGroups": 5,
+    "negativeGroups": 7,
+    "successfulSingleDroneDerivatives": 6,
+    "rationale": "fixed identity/null, unequal tilted force-and-moment, nominal reaction yaw, actuator lag, stable-ID permutation, duplicate/missing/stale/nonfinite inputs; no native query is needed to isolate wiring"
+  },
+  "expectedRuntimeCounts": {
+    "coupledStages": 16,
+    "coupledCompleted": 16,
+    "primaryNativeCalls": 48,
+    "steps": 4,
+    "controllers": 4,
+    "initials": 4,
+    "safetyChecks": 4,
+    "wiringControls": 12
+  },
+  "retainedCompatibilityEvidence": {
+    "buffer56": "prior evidence retained as provenance; the loader reruns its fixed 56 Buffer shim assertions as infrastructure checks, separately from all scientific stage/native/reference counts",
+    "loaderInfrastructureAssertions": 56
+  },
+  "independentSavedEvidenceControls": {
+    "mutationIds": [
+      "load-word",
+      "squared-force-law",
+      "body-frame-force",
+      "load-id-association",
+      "double-force",
+      "missing-moment",
+      "wrong-frame",
+      "motor-state-overwrite",
+      "stale-stage",
+      "consumed-id-association"
+    ],
+    "mutations": 10,
+    "immutableArithmeticFixtures": 14,
+    "primaryWitness": "coupled-step0-k1; fixed first ID in retained prior coupled qualification",
+    "frameWitness": "wiring tilted-unequal record",
+    "staleStageWitness": "coupled-step0-k2 nativeInput replaced with k1 input in retained prior coupled qualification",
+    "unavailableWitness": "qualification failure",
+    "nativeCalls": 0,
+    "additionalReferenceStates": 0,
+    "bodyMomentReferenceNormalizedTolerance": 1e-08,
+    "projectionFrameConversionNormalizedTolerance": 1e-08,
+    "bodyMomentNorm": "Euclidean error / (m*g*rotorArmRadius), exact inverse quaternion matrix divided by quaternion norm squared; separate from unchanged four native load gates",
+    "mutationExecution": "retained prior coupled qualification provenance only; these ten mutations are not rerun or relocated to fresh t0 witnesses",
+    "immutableArithmeticFixturesExecution": "14 fixed inherited arithmetic fixtures are rerun by the independent checker; no new native/reference queries",
+    "currentProbeControls": "12 unchanged browser wiring controls; saved-data-only preflight retains the original 42-case tree qualification 15 corruption laws plus focused compact/transport corruptions"
+  },
+  "independentNeighborMembership": {
+    "scope": "No new independent neighbor-membership recomputation in this probe; preserve pinned unchanged Grid/controller source and every actual neighbor ID. Independent checks bind saved controller state, stable IDs, commands and elementary target arithmetic.",
+    "retainedQualification": "Prior 64-drone coupled qualification contains exact independent membership/exclusion checks; it is not a new membership proof for these fresh initial states.",
+    "claimLimit": "No fresh all-pairs geometric exclusion or independent neighbor-membership result is claimed at 64, 1000 or 5000."
+  },
+  "timing": {
+    "primaryMetric": "queryWallMs",
+    "commonBoundary": "before independent decoding/copying of shared projected input words through native result and its normal all-load/ID/status consumption",
+    "nativeCapture": "tree build, traversal, gather, order restoration and compact witness capture included",
+    "excludedAndReported": [
+      "encodeWallMs",
+      "semanticCompareWallMs",
+      "appendWallMs",
+      "serializationMilliseconds",
+      "transferMilliseconds",
+      "persistMilliseconds"
+    ],
+    "geometryPhase": "native diagnostics.buildPhasesMs.geometry includes tree build, gather, sort, compact capture and rotor geometry; index ends before tree build",
+    "engineeringGateEach5000": {
+      "maximumHtoFQuerySumRatio": 0.8,
+      "requiresFewerGatheredNonselfCandidates": true
+    },
+    "standaloneFrameTimeClaim": false
+  },
+  "sourcePreparationHistory": "Source-only draft; parent review, disabled/then enabled source freeze and exact-public verification required before any fresh producer executes. No seed replacements, cap changes or retry."
+}

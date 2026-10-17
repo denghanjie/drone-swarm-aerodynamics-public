@@ -1,0 +1,68 @@
+{
+  "schema": "m31-native-tree-browser-probe-supervision-v1",
+  "executionAllowed": false,
+  "authorization": null,
+  "launchCutoffUtc": null,
+  "stageOrder": [
+    "browser",
+    "reference",
+    "check"
+  ],
+  "limits": {
+    "perFileBytes": 33554432,
+    "combinedOutputLogScratchBytes": 268435456,
+    "totalWallSeconds": 960,
+    "closureAndOverheadSeconds": 60,
+    "pollSeconds": 0.1,
+    "finalizationByteAllowance": 2097152
+  },
+  "stages": {
+    "browser": {
+      "runtime": "node",
+      "source": "research/m31-native-tree-browser-probe-2026-10-17/source/controller.cjs",
+      "childWallSeconds": 120,
+      "completionAssertions": {
+        "complete": true
+      }
+    },
+    "reference": {
+      "runtime": "python",
+      "source": "research/m31-native-tree-browser-probe-2026-10-17/source/reference.py",
+      "childWallSeconds": 600,
+      "completionAssertions": {
+        "complete": true,
+        "qualified": true
+      }
+    },
+    "check": {
+      "runtime": "python",
+      "source": "research/m31-native-tree-browser-probe-2026-10-17/source/check.py",
+      "childWallSeconds": 180,
+      "completionAssertions": {
+        "complete": true,
+        "passed": true
+      }
+    }
+  },
+  "browserRootCompletionAssertions": {
+    "browserRootExitConfirmed": true,
+    "browserRootCloseConfirmed": true,
+    "browserRoot.exit.code": 0,
+    "browserRoot.exit.signal": null,
+    "browserRoot.close.code": 0,
+    "browserRoot.close.signal": null,
+    "browserRoot.error": null,
+    "browserClosed": true,
+    "complete": true
+  },
+  "scope": "Disabled source-only draft. Fixed fifteen-second saved-data validation inside sixty-second shared overhead, then one browser/reference/check attempt; full960seconds before05:06:20UTC cutoff. Latest launch04:50:20UTC. No retries or cap increases.",
+  "preflight": {
+    "runtime": "python",
+    "source": "research/m31-native-tree-browser-probe-2026-10-17/source/validate-saved.py",
+    "childWallSeconds": 15,
+    "completionAssertions": {
+      "complete": true,
+      "passed": true
+    }
+  }
+}

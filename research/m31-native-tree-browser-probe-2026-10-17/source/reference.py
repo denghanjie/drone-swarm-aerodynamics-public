@@ -1,0 +1,390 @@
+"""Prospective four-stage prepared reference and shared saved-evidence support. Source only."""
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib
+import importlib.util
+import json
+import os
+import resource
+import sys
+import time
+
+PACKAGE = 'research/m31-native-tree-browser-probe-2026-10-17'
+FRESH = 'research/m31-native-fresh-transfer-2026-10-17'
+TREE = 'research/m31-tree-first-reference-2026-10-17'
+PREPARED = 'research/m31-prepared-reference-2026-10-17'
+CAPACITY = 'research/m31-prepared-capacity-2026-10-17'
+MAX_FILE = 32 * 1024 * 1024
+MAX_TOTAL = 256 * 1024 * 1024
+MODULES = {
+    'tree_check': ('research/m31-native-tree-design-2026-10-17/source/check.py', '1f40c7b3dc3f962eb623e5d7d2f848d03fc2decb0425e72733ba02722a76782b'),
+    'stage_check': ('research/m31-coupled-stage-qualification-2026-10-17/source/check.py', '2e6553ef6a83e979930be0bac78004bea2ee214a54f08654b80625e4c534d9cb'),
+    'pair': (FRESH + '/source/pair-reference.py', '845f52cf350a09d2043934dff3e797a7b7416f4ef5c64beb716104bcd74f38f0'),
+    'semantic': (FRESH + '/source/semantic-reference.py', 'ee77aab09109d3fba898555dacc4509312813caae4116bb3e1063efd88e3ad2c'),
+    'tree': (TREE + '/source/tree-reference.py', 'd08efc5e80910066d061a664aa7902c7ae7bab27dc710f5c00c9b2bf1671df65'),
+    'prepared': (PREPARED + '/source/prepared-reference.py', '19efcb01f4c6d45b517b2388bcdaf045daf382bc11e7442dd8b9627e1807a921'),
+    'native_check': (FRESH + '/source/check.py', '026e4ee8663f2d1dddac14b4e4d4fa2d3e5a551497b5e4878522a90cfc2a6a4c'),
+    'coverage_check': (CAPACITY + '/review/saved_audit.py', '10aeea08e9964bf53ea9d804b11a8d719d90ee3f06e0637a55fa2f7206da008d'),
+}
+FIXED_PINS = {
+    FRESH + '/source/spec.json': 'a47b9b920ddbbd14e1838e9c031a0b34dd1820f14959ef1295cef039e7f48d2f',
+    FRESH + '/results/inputs/fresh-a-t5.json': '48dc63da80d4400a948a102143e872a49645b37b08eac73f932959653a16fa7c',
+    FRESH + '/source/native-load.cjs': 'b4699a8025e27dcd34e9a206e0330a2c08d7caa61e934ec203d142876e1430f1',
+    FRESH + '/source/vendor/generation/step02c-source/physics.cjs': '0c46c9beb4e831c621658f6600c074f97c95966de07f5000eb64aa476a443fa1',
+    FRESH + '/source/vendor/generation/milestone-31-source/sim.cjs': '2b6fbc51334fd0669b23eb7173c6af83e62414a725b032796df5cb38ac7f1c9e',
+    FRESH + '/source/vendor/generation/milestone-31-source/grid.cjs': 'f06010781770b64432935e5d825bcd1405b154b735ac4d0d654f145600cea302',
+}
+
+
+def need(condition, code):
+    if not condition:
+        raise ValueError(code)
+
+
+def sha(raw):
+    return hashlib.sha256(raw).hexdigest()
+
+
+def unique(pairs):
+    result = {}
+    for key, value in pairs:
+        need(key not in result, 'duplicate-json-key')
+        result[key] = value
+    return result
+
+
+def decode(raw):
+    return json.loads(raw, object_pairs_hook=unique,
+                      parse_constant=lambda _: (_ for _ in ()).throw(ValueError('nonfinite-json')))
+
+
+def canonical(value):
+    return json.dumps(value, sort_keys=True, separators=(',', ':'), ensure_ascii=True, allow_nan=False).encode()
+
+
+def path_at(root, relative):
+    need(isinstance(relative, str) and relative and not Path(relative).is_absolute()
+         and all(p not in ('', '.', '..') for p in relative.split('/')), 'relative-path')
+    path = root / relative
+    need(path.resolve() == path, 'symlink-path')
+    return path
+
+
+def read_pin(root, pin):
+    need(set(pin) == {'path', 'bytes', 'sha256'} and type(pin['bytes']) is int
+         and 0 <= pin['bytes'] <= MAX_FILE, 'pin-shape')
+    path = path_at(root, pin['path'])
+    need(path.stat().st_size == pin['bytes'], 'pin-size-before-read')
+    raw = path.read_bytes()
+    need(len(raw) == pin['bytes'] and sha(raw) == pin['sha256'], 'pin-bytes')
+    return raw
+
+
+def load(path):
+    need(path.stat().st_size <= MAX_FILE, 'input-file-cap')
+    return decode(path.read_bytes())
+
+
+def guard(ctx):
+    now = time.monotonic_ns()
+    active_deadline = ctx['childDeadline'] if ctx.get('closing') else ctx['computeDeadline']
+    need(now < active_deadline <= ctx['childDeadline'] <= ctx['totalDeadline'], 'child-absolute-deadline')
+    need(datetime.now(timezone.utc) < ctx['cutoff'], 'authorized-utc-cutoff')
+
+
+def verify_sources(ctx):
+    for pin in ctx['manifest']['files']:
+        guard(ctx)
+        read_pin(ctx['root'], pin)
+    for pin in ctx.get('protectedPins', []):
+        guard(ctx); read_pin(ctx['root'], pin)
+
+
+def preflight(root, expected, commit, stage):
+    """No scientific import precedes this independently enforced live-child gate."""
+    package = root / PACKAGE
+    manifest_raw = (package / 'source-manifest.json').read_bytes()
+    need(len(manifest_raw) <= MAX_FILE and sha(manifest_raw) == expected, 'manifest-binding')
+    manifest = decode(manifest_raw)
+    pins = {p['path']: p for p in manifest['files']}
+    need(len(pins) == len(manifest['files']), 'unique-manifest-pins')
+    for relative in ('config.json', 'source/reference.py', 'source/check.py', 'source/compact-check.py', 'source/validate-saved.py', 'source/science-config.json'):
+        need(PACKAGE + '/' + relative in pins, 'owned-source-closure')
+    config = decode(read_pin(root, pins[PACKAGE + '/config.json']))
+    need(config['schema'] == 'm31-native-tree-browser-probe-supervision-v1'
+         and config['executionAllowed'] is True and isinstance(config['authorization'], dict), 'execution-not-authorized')
+    authorization = config['authorization']
+    need(set(authorization) == {'id', 'approvedUtc', 'reviewedSourceManifestSha256'}
+         and authorization['id'] and len(authorization['reviewedSourceManifestSha256']) == 64,
+         'authorization-receipt')
+    cutoff = datetime.fromisoformat(config['launchCutoffUtc'])
+    approved = datetime.fromisoformat(authorization['approvedUtc'])
+    need(cutoff.tzinfo is not None and approved.tzinfo is not None
+         and approved <= datetime.now(timezone.utc) < cutoff, 'authorization-time')
+    limits = {'saved-validation':15, 'reference':600, 'check':180}
+    need(stage in limits and os.environ.get('RESEARCH_STAGE') == stage
+         and os.environ.get('RESEARCH_EXECUTION_CONTEXT') == 'tool-require-escalated'
+         and os.environ.get('RESEARCH_CHILD_BUDGET_MILLISECONDS') == str(limits[stage]*1000), 'supervised-stage')
+    need(config['limits']['perFileBytes'] == MAX_FILE
+         and config['limits']['combinedOutputLogScratchBytes'] == MAX_TOTAL
+         and config['limits']['totalWallSeconds'] == 960
+         and config['limits']['closureAndOverheadSeconds'] == 60
+         and config['preflight']['childWallSeconds'] == 15
+         and {k:v['childWallSeconds'] for k,v in config['stages'].items()} == {'browser':120,'reference':600,'check':180},
+         'fixed-supervision-envelope')
+    token = os.environ.get('RESEARCH_RUN_TOKEN', '')
+    need(len(token) == 64, 'supervised-token')
+    attempt = load(package / 'results/run-attempt.json')
+    need(attempt['schema'] == 'm31-native-tree-browser-probe-attempt-v1' and attempt['status'] == 'running'
+         and attempt['sourceManifestSha256'] == expected and attempt['sourceCommit'] == commit
+         and attempt['runTokenSha256'] == sha(token.encode())
+         and attempt['stages'][stage]['status'] == 'started'
+         and attempt['stages'][stage]['childWallLimitSeconds'] == limits[stage], 'supervised-live-attempt')
+    private = Path(os.environ['RESEARCH_PRIVATE_LOG_DIR']).resolve()
+    need(private.is_dir() and not private.is_relative_to(root)
+         and attempt['privateDirectoryIdentitySha256'] == sha(str(private).encode()), 'private-directory-binding')
+    ctx = {'root': root, 'package': package, 'expected': expected, 'commit': commit,
+           'manifest': manifest, 'pins': pins, 'stage': stage, 'cutoff': cutoff,
+           'childDeadline': int(os.environ['RESEARCH_CHILD_DEADLINE_MONOTONIC_NS']),
+           'totalDeadline': int(os.environ['RESEARCH_TOTAL_DEADLINE_MONOTONIC_NS'])}
+    ctx['computeDeadline'] = ctx['childDeadline'] - (30 if stage == 'reference' else 3 if stage == 'saved-validation' else 15)*1_000_000_000
+    guard(ctx)
+    verify_sources(ctx)
+    for relative, expected_sha in list(FIXED_PINS.items()) + list(MODULES.values()):
+        need(relative in pins and pins[relative]['sha256'] == expected_sha, 'immutable-dependency')
+    science = decode(read_pin(root, pins[PACKAGE + '/source/science-config.json']))
+    ctx['science'] = science
+    receipt_raw = (package / 'source-publication.json').read_bytes()
+    need(len(receipt_raw) <= MAX_FILE, 'publication-file-cap')
+    receipt = decode(receipt_raw)
+    need(receipt['commit'] == commit and receipt['manifestSha256'] == expected
+         and receipt['remoteBytesEqualLocal'] is True and receipt['committedBytesEqualLocal'] is True
+         and datetime.fromisoformat(receipt['verifiedUtc'].replace('Z','+00:00')) <=
+             datetime.fromisoformat(attempt['startedUtc'].replace('Z','+00:00')),
+         'published-source-binding')
+    ctx['protectedPins'] = [
+        {'path':PACKAGE+'/source-manifest.json','bytes':len(manifest_raw),'sha256':sha(manifest_raw)},
+        {'path':PACKAGE+'/source-publication.json','bytes':len(receipt_raw),'sha256':sha(receipt_raw)}]
+    runtime = manifest['runtime']['python']
+    binary = Path(sys.executable).resolve().read_bytes()
+    need(sys.platform == 'darwin' and sys.flags.isolated == 1 and sys.dont_write_bytecode
+         and sys.version == runtime['version'] and len(binary) == runtime['bytes']
+         and sha(binary) == runtime['sha256'], 'pinned-python-runtime')
+    return ctx
+
+
+def module(ctx, name):
+    relative, expected = MODULES[name]
+    need(ctx['pins'][relative]['sha256'] == expected, 'module-source-pin')
+    read_pin(ctx['root'], ctx['pins'][relative])
+    spec = importlib.util.spec_from_file_location('_coupled_' + name, ctx['root'] / relative)
+    result = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(result)
+    return result
+
+
+def output_budget(ctx, extra=0):
+    total = extra
+    roots = [ctx['package'] / 'results']
+    if os.environ.get('RESEARCH_PRIVATE_LOG_DIR'):
+        roots.append(Path(os.environ['RESEARCH_PRIVATE_LOG_DIR']))
+    for root_index, base in enumerate(roots):
+        if base.exists():
+            for path in base.rglob('*'):
+                need(root_index != 0 or not path.is_symlink(), 'output-symlink')
+                if path.is_symlink() or not path.is_dir():
+                    size = path.lstat().st_size
+                    need(size <= MAX_FILE, 'output-file-cap')
+                    total += size
+    need(total + 2*1024*1024 <= MAX_TOTAL, 'output-total-cap')
+
+
+def write(ctx, relative, value):
+    guard(ctx)
+    raw = canonical(value) + b'\n'
+    need(len(raw) <= MAX_FILE, 'output-file-cap')
+    output_budget(ctx, len(raw))
+    path = path_at(ctx['root'], PACKAGE + '/results/' + relative)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open('xb') as stream:
+        stream.write(raw); stream.flush(); os.fsync(stream.fileno())
+    return {'path': path.relative_to(ctx['root']).as_posix(), 'bytes': len(raw), 'sha256': sha(raw)}
+
+
+def journal(ctx, index):
+    descriptor = index['journal']
+    need(set(descriptor) == {'path', 'bytes', 'sha256', 'records'}, 'journal-descriptor')
+    pin = {k: descriptor[k] for k in ('path', 'bytes', 'sha256')}
+    raw = read_pin(ctx['root'], pin)
+    ctx['protectedPins'].append(pin)
+    need(raw.endswith(b'\n'), 'journal-durable-final-newline')
+    lines = raw.splitlines()
+    need(len(lines) == descriptor['records'] <= 4096, 'journal-record-count')
+    records = []
+    for sequence, line in enumerate(lines):
+        guard(ctx)
+        row = decode(line)
+        need(set(row) == {'sequence', 'kind', 'recordPin', 'serializationMilliseconds',
+                          'transferMilliseconds', 'persistMilliseconds'} and row['sequence'] == sequence,
+             'journal-contiguous-sequence')
+        need(row['recordPin']['path'] == PACKAGE + '/results/records/%04d-%s.json' % (sequence, row['kind']),
+             'journal-record-path')
+        records.append(row)
+    return records
+
+
+def closed_browser(ctx):
+    value = completed_output(ctx, 'browser')
+    need(value['sourceCommit'] == ctx['commit'] and value['sourceManifestSha256'] == ctx['expected']
+         and value['schema'] == 'm31-native-tree-browser-probe-browser-v1'
+         and value['complete'] is True and value['errors'] == []
+         and all(value[k] is True for k in ('runtimeIdentityVerified', 'inputsAndSourcesPreserved',
+                                          'browserClosed', 'browserRootExitConfirmed', 'browserRootCloseConfirmed'))
+         and value['allHelpersExitClaim'] is False and value['memoryLimitClaim'] is False,
+         'browser-complete-binding')
+    need(value['browserRoot']['error'] is None
+         and all(value['browserRoot'][k]['code'] == 0 and value['browserRoot'][k]['signal'] is None
+                 for k in ('exit', 'close')), 'browser-root-successful-close')
+    attempt = load(ctx['package'] / 'results/run-attempt.json')
+    need(attempt['stages']['browser']['status'] == 'completed', 'browser-stage-closed')
+    return value, journal(ctx, value)
+
+
+def completed_output(ctx, stage):
+    attempt = load(ctx['package'] / 'results/run-attempt.json')
+    record = attempt['stages'][stage]
+    need(record['status'] == 'completed' and record['exitCode'] == 0, 'closed-output-stage')
+    pin = dict(record['output'],path=PACKAGE+'/results/'+stage+'.json')
+    value = decode(read_pin(ctx['root'],pin))
+    ctx['protectedPins'].append(pin)
+    return value
+
+
+def input_sidecar(ctx, browser, stage):
+    """Compatibility pin means the actual stage record, not invented input bytes.
+
+    The stage descriptor and all its shards were resolved and hashed before this
+    binding. InputSha256 separately binds canonical nativeInput words.
+    """
+    pin = stage['_recordPin']
+    read_pin(ctx['root'], pin)
+    digest = sha(canonical(stage['nativeInput']))
+    need(stage['native']['semanticInputSha256'] == digest
+         and stage['native']['inlineInputCanonicalSha256'] == digest, 'stage-semantic-word-binding')
+    return pin
+
+
+def public_error(error):
+    value = str(error)
+    code = value if value and len(value) <= 240 and all(c.isalnum() or c in '-_:.' for c in value) else 'stage-exception'
+    return {'type': type(error).__name__, 'reason': code}
+
+
+class RawWords:
+    def __init__(self, helper):
+        self.helper = helper
+
+    def literal(self, word):
+        return self.helper.parse_bits(word)
+
+    def __getattr__(self, name):
+        return getattr(self.helper, name)
+
+
+
+
+def fields(value, names, code):
+    need(type(value) is dict and set(value) == set(names), code)
+
+
+def integer(value, low, high, code):
+    need(type(value) is int and low <= value <= high, code)
+    return value
+
+
+def local_module(ctx, filename):
+    relative = PACKAGE + '/source/' + filename
+    read_pin(ctx['root'], ctx['pins'][relative])
+    spec = importlib.util.spec_from_file_location('_tree_probe_' + filename.replace('.', '_'), ctx['root'] / relative)
+    value = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(value)
+    return value
+
+
+def record_events(ctx, resolver, kinds=None):
+    browser, journal_rows = closed_browser(ctx)
+    for row in journal_rows:
+        need(row['kind'] and 'recordPin' in row, 'transport-journal-record')
+        if kinds is not None and row['kind'] not in kinds:
+            continue
+        body = resolver.record(row['recordPin'])
+        yield row['kind'], body, row['recordPin']
+
+
+def main(root, expected, commit):
+    ctx = preflight(root, expected, commit, 'reference')
+    compact = local_module(ctx, 'compact-check.py')
+    resolver = compact.Resolver(sys.modules[__name__], ctx)
+    result = {'schema': 'm31-tree-browser-reference-v1', 'sourceCommit': commit,
+              'sourceManifestSha256': expected, 'complete': False, 'passed': False,
+              'qualified': False, 'attempted': 0, 'completed': 0, 'constants': None,
+              'records': [], 'suffixCalls': 0, 'logicalPairs': 0, 'errors': []}
+    try:
+        pair, semantic, tree, prepared = [module(ctx, name) for name in ('pair', 'semantic', 'tree', 'prepared')]
+        spec = decode(read_pin(root, ctx['pins'][FRESH + '/source/spec.json']))
+        need(spec['maxDrones'] == 180 and spec['positiveTermCap'] == 2000000
+             and spec['referenceCoefficientBits'] == spec['referenceSourceBits'] == 192
+             and spec['referenceRootBisections'] == 128, 'unchanged-reference-recipe')
+        bits, _ = pair.constants_from_graph(spec)
+        result['constants'] = {key: pair.hex_bits(value) for key, value in bits.items()}
+        expected_ids = ['tree-t0-n64-a-step0-k%d' % k for k in range(1, 5)]
+        for kind, stage, stage_pin in record_events(ctx, resolver, {'stage'}):
+            guard(ctx)
+            if kind != 'stage' or stage.get('caseId') != 'tree-t0-n64-a':
+                resolver.clear()
+                continue
+            need(stage['stageId'] == expected_ids[result['attempted']] and stage['status'] == 'completed',
+                 'four-ordered-fresh64-stages')
+            raw = stage['nativeInput']
+            need(len(raw['drones']) == 64 and raw == {'drones': [
+                {'id': r['id'], 'state': r['stateWords']} for r in stage['records']]}, 'exact-four64-input-binding')
+            scene = {'id': stage['stageId'], 'family': 'coupled-projected-stage',
+                     'expectedClass': 'unconstrained', 'drones': raw['drones']}
+            result['attempted'] += 1
+            budget = {'oracleCalls': 0, 'limit': 30000}
+            target, counters, controls = prepared.regenerate_scene(
+                scene, spec, bits, RawWords(pair), semantic, tree,
+                guard=lambda: guard(ctx), budget=budget, run_controls=False)
+            record = tree.to_record(target, semantic)
+            record.update(sourceCommit=commit, sourceManifestSha256=expected,
+                          inputSha256=sha(canonical(raw)), inputFile=stage_pin, reuseCounters=counters)
+            pin = write(ctx, 'reference/' + stage['stageId'] + '.json', record)
+            result['records'].append({'stageId': stage['stageId'], 'reference': pin,
+                                      'inputSha256': record['inputSha256'], 'inputBinding': stage_pin})
+            result['suffixCalls'] += counters['oracleCalls']; result['logicalPairs'] += target['planned']
+            need(not controls and counters['oracleCalls'] == budget['oracleCalls'] <= 16128
+                 and counters['prepareOneCalls'] == counters['preparationValidCalls'] == 64
+                 and counters['operandLookups'] == 2*counters['oracleCalls']
+                 and counters['pairPreparations'] == 0, 'prepared-count-contract')
+            need(target['status'] == 'admitted' and target['branch'] == 'loads', 'reference-refusal')
+            result['completed'] += 1
+            resolver.clear()
+            if result['completed'] == 4:
+                break
+        need(result['attempted'] == result['completed'] == 4
+             and result['logicalPairs'] == 64512 and result['suffixCalls'] <= 64512, 'four-reference-counts')
+        resolver.verify_preserved()
+        result['complete'] = result['passed'] = result['qualified'] = True
+    except Exception as error:
+        result['errors'].append(public_error(error))
+    ctx['closing'] = True
+    verify_sources(ctx)
+    result['sourcesPreserved'] = True
+    write(ctx, 'reference.json', result)
+    return 0 if result['passed'] else 1
+
+
+if __name__ == '__main__':
+    need(len(sys.argv) == 4, 'arguments-root-sha-commit')
+    raise SystemExit(main(Path(sys.argv[1]).resolve(), sys.argv[2], sys.argv[3]))
+
