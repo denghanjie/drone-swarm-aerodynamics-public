@@ -1,0 +1,5 @@
+# One UI repair validation, attempt02
+
+Attempt01 failed its mobile horizontal-overflow assertion after all32saved-data selections passed. It remains failed and immutable, with graceful browser cleanup and preserved numerical/source files. The long unbroken result hash in #identity had no wrapping rule. This revision adds only overflow-wrap:anywhere to that element; numerical records, binding, app and scene code stay unchanged. Prior stylesheet and source inventory are retained in viewer/history with the exact patch.
+
+Allocate one further UI-only attempt with the identical32selections, desktop/mobile screens, control and corruption checks, installed runtime,120-second outer/95-second work deadlines and16MiB cap in attempt01/PROTOCOL.md. This is a deliberate repair validation after diagnosis, not a scientific retry. Keep every result regardless of outcome. Launch must leave120seconds before03:00UTC. No scientific imports or new reference/native/simulation calls. The attempt owns only its temporary Chrome root/profile and Node child, with the same verified cleanup.

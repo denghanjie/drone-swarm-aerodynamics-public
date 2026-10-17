@@ -1,0 +1,7 @@
+# Public checkpoint review
+
+The new records contain our source/protocols, synthetic drone states, derived numerical intervals/work counts, fixed-corruption evidence, saved-only review, a Three.js evidence display and UI receipts/screenshots. No physical flight CSVs, third-party source response bodies, model weights, credentials, user messages or local absolute paths are included. The separate firmware package contains paraphrases, immutable public citations and acquisition/hash metadata only. Its original private source retention is not staged.
+
+A text scan of both new packages found no local user/private paths, private-key headers, GitHub-token prefixes or bearer credentials. The source publication was independently verified before scientific execution. The result closure rechecks every source pin, exact scene-output and journal pin, independent saved-audit result and final UI outcome. The failed first UI attempt is included, with its original stylesheet and source inventory, and cannot be reclassified as passed.
+
+The final result manifest pins the previous 585-file closure plus all files in this result package except the manifest itself. Mutable root README/restart navigation is committed but is outside that immutable manifest. Publication verification receipts are saved separately under research/publication-receipts after exact-commit public verification. Neither the final commit nor its public availability implies physical accuracy or a research breakthrough.

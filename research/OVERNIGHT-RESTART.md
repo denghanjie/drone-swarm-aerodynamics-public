@@ -1,3 +1,13 @@
+# Current checkpoint — tree-first exact reference, 17 October 2026
+
+[Milestone summary](m31-tree-first-reference-2026-10-17/MILESTONE-SUMMARY.md): the single preregistered comparison completed and qualified all 24 fixed scenes. Full reference 79,008 scalar calls; tree-first reference 26,570; 52,438 calls avoided. Exact decisions, positive coefficients, roots and signed loads match. All six coverage controls, 14 arithmetic fixtures, four saved native audits and four load-law controls passed. Independent saved-only review passed. Source commit e9c464b04b43e4f8dff5904bc657969d6ab1d3d6, source manifest 4e8658c657416e99096ff581528e5006021fc7d0f0590c8ab1610ba307317cd6, 585 pins.
+
+[New Three.js coverage view](m31-tree-first-reference-2026-10-17/viewer/) uses the saved actual 64-drone final states. UI attempt01 failed mobile wrapping and remains preserved; the CSS-only repair passed attempt02 (57 checks, 32 selections). [Precise restart](m31-tree-first-reference-2026-10-17/RESTART.md) and publication receipts identify closed source/result allocations. Keep server 8876 unchanged. The renewed launch window still ends 03:00 UTC, 17 October; this index does not extend it or allocate another experiment.
+
+The separate [firmware provenance review](m31-firmware-provenance-2026-10-17/FINDINGS.md) found an inaccessible exact firmware commit and unresolved per-flight conventions. The [four-file measured-data admission](m31-physical-data-admission-2026-10-17/MILESTONE-SUMMARY.md) and [fresh numerical flight checkpoint](m31-native-fresh-transfer-2026-10-17/MILESTONE-SUMMARY.md) remain immutable. Physical scoring, full 5,000-drone coupled browser performance and publication-level novelty remain unresolved; the goal is active and incomplete. Earlier entries below remain history.
+
+---
+
 # Current checkpoint — saved native-load audit, 17 October 2026
 
 [Native baseline summary](m31-native-saved-audit-2026-10-17/MILESTONE-SUMMARY.md): original browser controller saved12/12 calls but outer supervision failed EPERM. Preserve that failure. Separate immutable-source saved audit completed exit0 and qualifies12/12 calls,48category decisions,14fixtures,4corruptions and6 F/L pairs. [Exact restart](m31-native-saved-audit-2026-10-17/RESTART-RESULT.md) records both source commits, manifests, hashes and closed allocations.
