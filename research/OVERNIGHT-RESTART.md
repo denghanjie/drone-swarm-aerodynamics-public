@@ -1,3 +1,11 @@
+# Current checkpoint — oracle omission screen, 17 October 2026
+
+[Completed oracle screen](m31-oracle-omission-renewal-2026-10-17/MILESTONE-SUMMARY.md): both stages completed exit0, independent accounting passed, all six states below the10% count hurdle even at the widest fixedtau/16 coefficient-mass budget. T8 selects none; T2 selects only two positive terms in run-b-t10. All4,608 lower/upper singleton prefix counts agree. Sourceea2c963ea9a3e9af1eecaaeefe3739bf0082d0d5;61pins. Read the package [restart](m31-oracle-omission-renewal-2026-10-17/RESTART.md), source/result manifests and publication receipt for precise closure.
+
+[Updated Three.js snapshots](m31-oracle-omission-renewal-2026-10-17/viewer/) use actual prior poses with saved interaction overlays. Keep8876running. The predecessor DATA-setter failure is closed/preserved, not a numerical trial. Stop this fixed proxy policy; a direct final-load error diagnostic is only a saved proposal, not yet an allocated experiment. The main research goal remains active/incomplete. All earlier records below are historical.
+
+---
+
 # Current checkpoint — 17 October 2026
 
 [Completed normalizer comparison](m31-normalizer-replication-2026-10-17/MILESTONE-SUMMARY.md): all six new moving snapshots passed the independent numerical checks; all six failed the predeclared speed hurdle. Keep the baseline. No scientific rerun is permitted in that consumed allocation. Source commit08ed31c184f88f95217dca689d3727c44c75e8c4; the package restart, manifests and publication receipt identify its complete evidence. [New Three.js replay](m31-normalizer-replication-2026-10-17/viewer/).

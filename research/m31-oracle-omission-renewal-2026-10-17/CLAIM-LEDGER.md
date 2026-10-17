@@ -1,0 +1,12 @@
+# Claims and evidence
+
+| Claim | Status and evidence | Limits / next challenge |
+|---|---|---|
+| The saved-data implementation follows the frozen arithmetic and grouping rules on the complete panel. | Confirmed within scope: results/check.json, all six states,28 total analytic fixtures and14 intended corruption rejections; source ea2c963ea9a3e9af1eecaaeefe3739bf0082d0d5. | Independent code shares Python Fraction and trusts previously verified reference intervals. Not a new physical reference or universal proof of all software paths. |
+| Omitting at least10% of positive terms is impossible under the tested per-row coefficient-mass budget on each of these states, even at the stress tier. | Supported by exact lower-endpoint cardinality ceilings; every state below10%; upper-endpoint singleton feasible counts agree with ceilings in all4,608 row/tier cases. Raw selections in results/analyze.json; summary in analysis/summary.json. | Conditional on the saved reference and fixed tau/16 coefficient-mass rule. Does not exclude a different final-load error theorem, source-ratio weighting or different data. |
+| T8 supplies no selected useful groups; T2 supplies only two selected positive terms in B at10seconds at the stress tier. | Observed complete fixed-policy outputs, independently checked. | Greedy results are not optimal grouped ceilings. Refinement may decrease a greedy count in general. No runtime conclusion. |
+| The fixed conservative proxy may suppress otherwise useful load-accurate approximations. | Hypothesis only. | Compare direct final-load errors and candidate-dependent certificates in a separately registered design. Do not widen this allocation's budgets. |
+| This is a feasible real-time5,000-drone browser method or physically validated interaction model. | Unresolved; no such implementation or evidence in this package. | Requires coupled computation/rendering accounting, relevant hardware, fresh conditions and compatible independent physical evidence. |
+| This is novel or publication-ready. | Not established. | Elementary cardinality argument and existing tree. An engineering stop decision alone is not a publishable contribution. |
+
+The six states share two trajectories and one earlier simulation setup. They are exposed diagnostics, not independent fresh replications. No confidence interval, pooled percentage or population effect is inferred. No timings are reused as candidate speed denominators. All cases, lower budgets and the failed predecessor remain available.
