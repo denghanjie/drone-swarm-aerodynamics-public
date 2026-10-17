@@ -1,0 +1,76 @@
+{
+  "schema": "m31-direct-load-qa-operational-privacy-v1",
+  "date": "2026-10-17",
+  "scope": "Administrative privacy sanitation after all three browser attempts. No reports, screenshots, viewer source, built data, scientific inputs or scientific results were changed.",
+  "executedCopies": "The original scripts were used for the recorded attempts. Public script snapshots differ only by the one documented fallback replacement. No browser rerun followed sanitation.",
+  "privateOriginalsRetained": true,
+  "privateLocations": "Exact locations are recorded only in the private manifest outside the repository.",
+  "scriptCopies": [
+    {
+      "path": "research/m31-direct-load-diagnostic-2026-10-17/qa/run.cjs",
+      "original": {
+        "bytes": 21428,
+        "sha256": "ec56ecb3c7094b34a416858bc3409f1730edde5c51b6ebff3b4137e69f847a62"
+      },
+      "public": {
+        "bytes": 21428,
+        "sha256": "4dcd36c6086113b3037fce26ff63c8a8914c3fb2cdf814daba8b120db6936169"
+      },
+      "replacements": 1,
+      "rule": "Only the personal home fallback in the operational-error redactor was replaced with [HOME_UNSET]. All other bytes are unchanged."
+    },
+    {
+      "path": "research/m31-direct-load-diagnostic-2026-10-17/qa/attempt-01/run.cjs",
+      "original": {
+        "bytes": 21002,
+        "sha256": "34b424e7b27d4bc719fbb316a8887a7ee0ef5f16a1c292de901ab373650e556d"
+      },
+      "public": {
+        "bytes": 21002,
+        "sha256": "f092c1374524534396a6859c96724d777df9d5d444abbd78b8d7948438fd9c59"
+      },
+      "replacements": 1,
+      "rule": "Only the personal home fallback in the operational-error redactor was replaced with [HOME_UNSET]. All other bytes are unchanged."
+    },
+    {
+      "path": "research/m31-direct-load-diagnostic-2026-10-17/qa/attempt-02/run.cjs",
+      "original": {
+        "bytes": 21393,
+        "sha256": "eef2dac64383168afbb130ba01bd3b6d2d9120edbd2f0c41fabccffdf477735b"
+      },
+      "public": {
+        "bytes": 21393,
+        "sha256": "647c6c9081b1a61f14850019b1839708e4191d7e81f515856974d97212ad5414"
+      },
+      "replacements": 1,
+      "rule": "Only the personal home fallback in the operational-error redactor was replaced with [HOME_UNSET]. All other bytes are unchanged."
+    },
+    {
+      "path": "research/m31-direct-load-diagnostic-2026-10-17/qa/attempt-03/run.cjs",
+      "original": {
+        "bytes": 21428,
+        "sha256": "ec56ecb3c7094b34a416858bc3409f1730edde5c51b6ebff3b4137e69f847a62"
+      },
+      "public": {
+        "bytes": 21428,
+        "sha256": "4dcd36c6086113b3037fce26ff63c8a8914c3fb2cdf814daba8b120db6936169"
+      },
+      "replacements": 1,
+      "rule": "Only the personal home fallback in the operational-error redactor was replaced with [HOME_UNSET]. All other bytes are unchanged."
+    }
+  ],
+  "launcherTranscription": {
+    "path": "research/m31-direct-load-diagnostic-2026-10-17/qa/launcher-before-attempt-03.txt",
+    "original": {
+      "bytes": 379,
+      "sha256": "a596d7dd255bd7f12a8fe3d4452446bc3498668ce781f1dbd9392407a0430b5b"
+    },
+    "public": {
+      "bytes": 373,
+      "sha256": "3b8309a2e85b5c6a3249ca922f2363dbecebe16810597db39101025dd9fe3dfe"
+    },
+    "rule": "Only the operational home path was replaced with [HOME]; this log is an explicit transcription of recorded tool output, not a raw shell-capture artifact.",
+    "browserAttemptStarted": false,
+    "exitCode": 127
+  }
+}

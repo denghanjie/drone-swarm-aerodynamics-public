@@ -1,3 +1,11 @@
+# Current checkpoint — direct-load diagnostic, 17 October 2026
+
+[Completed fixed-deletion diagnostic](m31-direct-load-diagnostic-2026-10-17/MILESTONE-SUMMARY.md): both single-use stages completed exit0; independent check and saved-data audit passed. Full A/B strict controls6/6 pass. Omit10 A fails strict and middle tiers6/6; stress failsA0/B0, passes later4. Stress B/C passesonlyA10/B10. B/C all1536local factors/root boxes and all6global/error intervals equal despite146wider C contractions. Fixed route closed, no fraction/mask tuning. Sourceee342fe5cdd824cbd68e4c1c85bae9f83bf688bf;159pins,manifest93d26849dcd0a86d18b254f8eb5babc3d13e0f46d08efc92dfc2bc5cef79635b.
+
+Read package [result restart](m31-direct-load-diagnostic-2026-10-17/RESTART-RESULT.md), exact outputs, claims and result publication identity. [Actual-record Three.js view](m31-direct-load-diagnostic-2026-10-17/viewer/). Keep8876running. The next-decision memo is source/saved-data reasoning only; no next numerical allocation is implied. Goal remains active/incomplete, with no5000-drone browser/physical/novelty claim. All earlier entries below are historical.
+
+---
+
 # Current checkpoint — oracle omission screen, 17 October 2026
 
 [Completed oracle screen](m31-oracle-omission-renewal-2026-10-17/MILESTONE-SUMMARY.md): both stages completed exit0, independent accounting passed, all six states below the10% count hurdle even at the widest fixedtau/16 coefficient-mass budget. T8 selects none; T2 selects only two positive terms in run-b-t10. All4,608 lower/upper singleton prefix counts agree. Sourceea2c963ea9a3e9af1eecaaeefe3739bf0082d0d5;61pins. Read the package [restart](m31-oracle-omission-renewal-2026-10-17/RESTART.md), source/result manifests and publication receipt for precise closure.
