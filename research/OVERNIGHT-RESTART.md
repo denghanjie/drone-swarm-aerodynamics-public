@@ -1,3 +1,11 @@
+# Current source preparation — strict coupled-load consumption bridge
+
+No new scientific experiment has executed since the completed capacity checkpoint below. [Source design and precise restart](m31-coupling-bridge-design-2026-10-17/RESTART.md) adopt a short64-drone continuation with32synchronized load stages, subject to fixed manufactured controls and every-stage exact checking. Reuse the earlier16-drone projected adapter; two new syntax-checked draft alternatives are preserved but explicitly unadopted. The complete executable harness/protocol and a new full execution window remain required. Current window ends03:00UTC17October2026; no extension implied.
+
+[Upper-response admission review](m31-upper-response-admission-2026-10-17/ADMISSION.md) finds no matched in-domain mean-load rejection in retained prose; closest conditional placement is refused near field. This does not validate the physical model. Latest completed3D remains [capacity viewer](m31-prepared-capacity-2026-10-17/viewer/), with no new motion claimed.
+
+---
+
 # Current checkpoint — exact reference capacity, 17 October 2026
 
 [Milestone summary](m31-prepared-capacity-2026-10-17/MILESTONE-SUMMARY.md): single fixed 64/180/180 run and independent saved-only audit passed. Dense/sparse 180 root and signed-load intervals equal the saved independent reference; independent 192-bit pair-table equality remains unavailable. Profiled calls 2.517/12.317/1.754s; lifetime RSS 121.25MiB. No browser-rate or speedup claim. [Updated Three.js evidence](m31-prepared-capacity-2026-10-17/viewer/) passed 81 UI checks/48 selections; static fixtures and prior Boids states are distinguished. Read [precise restart](m31-prepared-capacity-2026-10-17/RESTART.md), closed science/audit markers and publication receipt.

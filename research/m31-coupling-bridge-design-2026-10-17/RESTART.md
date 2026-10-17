@@ -1,0 +1,13 @@
+# Restart: source design only
+
+Latest completed experiment remains the audited prepared-capacity checkpoint, result commit ec64e6b293b6a49448df103290db94a84cccdf53; exact-public receipt is ../publication-receipts/m31-capacity-result-2026-10-17.json. Its Three.js viewer and all frozen records remain unchanged.
+
+This source-only followup selects a 64-drone short coupled continuation with the latest native delivered-load interface and independent checks of every consumed stage. Read DESIGN.md, ../m31-next-scale-decision-2026-10-17/DECISION.md and ../m31-next-scale-challenge-2026-10-17/CHALLENGE.md first. The prior 16-drone projected adapter already worked within its sampled scope. Extend that structure; do not present this as first-ever coupled motion.
+
+The two source drafts in this package are UNADOPTED alternatives, syntax checked only. They were written before the prior adapter was rediscovered. Their arithmetic, load binding and failure behavior are not qualified. Preserve them for design provenance; do not import them as a new experiment. The independent review notes sparse-array validation limitations in the derivative helper and does not qualify the synchronous-step draft.
+
+Next concrete source work: extend the prior adapter in a new executable package to consume the current native total load map, emit every stage's raw/projected inputs, exact ID joins, delivered/consumed words, commands, derivatives and endpoints; implement fixed manufactured controls, raw-stage admission diagnostic, exact reference/check stages and bounded browser supervisor. Finalize all call counts, tolerances/floors, phase budgets, output limits and shutdown rules. Review and publish this executable source before any scientific dispatch. No new experimental allocation was consumed here.
+
+The proposed reservation is at least960seconds, exceeding the remaining approved window ending03:00UTC17October2026. This record does not extend it or authorize a new window. Source preparation can continue; scientific execution requires an explicit valid full reservation. Ask for a new execution window only when the source/protocol is concrete and reviewable. Do not reopen consumed allocations or call the overall research complete.
+
+The upper-response admission note at ../m31-upper-response-admission-2026-10-17/ADMISSION.md leaves physical rejection unresolved: closest explicit upper-response prose conditionally maps to refused near field; farther mean-load geometry/uncertainty remains missing. Literature says the effects exist; this does not make the present model a generally valid mutual/dynamic law. No new measurements, digitization, fits or scores occurred.
