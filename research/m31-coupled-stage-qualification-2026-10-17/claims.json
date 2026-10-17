@@ -1,0 +1,101 @@
+{
+  "schema": "m31-claim-evidence-ledger-v1",
+  "claims": [
+    {
+      "id": "coupled-stage-numerical-qualification",
+      "status": "confirmed-within-tested-scope",
+      "claim": "All32 native consumed coupled stages passed the frozen four normalized load gates against independent192-bit reference intervals, with correctly reconstructed numerical consumption/RK chain on one64-drone20ms continuation.",
+      "evidence": [
+        "results/check.json",
+        "results/reference.json",
+        "results/browser-journal.jsonl"
+      ],
+      "limits": [
+        "Single exposed initial state; stages are dependent, not independent trials",
+        "Rational arithmetic identifies signed zeros numerically",
+        "No physical or continuous-time trajectory accuracy inference"
+      ],
+      "sourceCommit": "25cfcee43b02f88a021fe0bae59d07cabf5fc163",
+      "experiment": "m31-coupled-stage-qualification-2026-10-17",
+      "nextChallenge": "See review/NEXT-EXPERIMENT.md; physical measurement matching remains separate."
+    },
+    {
+      "id": "feedback-reaches-controller",
+      "status": "confirmed-within-tested-scope",
+      "claim": "34 drones initially had changed load/derivative words; the matched branches differed in34second-controller input states and64second-controller command vectors.",
+      "evidence": [
+        "results/check.json#feedback",
+        "results/browser-journal.jsonl"
+      ],
+      "limits": [
+        "Word changes are not a practical-effect threshold",
+        "No group-emergence or robust-control claim"
+      ],
+      "sourceCommit": "25cfcee43b02f88a021fe0bae59d07cabf5fc163",
+      "experiment": "m31-coupled-stage-qualification-2026-10-17",
+      "nextChallenge": "See review/NEXT-EXPERIMENT.md; physical measurement matching remains separate."
+    },
+    {
+      "id": "fixed-negative-controls",
+      "status": "confirmed-within-tested-scope",
+      "claim": "All10 predeclared saved-record corruptions were detected, and12wiring controls plus3analytical families passed.",
+      "evidence": [
+        "results/check.json#corruptions",
+        "results/check.json#controls"
+      ],
+      "limits": [
+        "Finite preselected controls do not prove absence of other bugs"
+      ],
+      "sourceCommit": "25cfcee43b02f88a021fe0bae59d07cabf5fc163",
+      "experiment": "m31-coupled-stage-qualification-2026-10-17",
+      "nextChallenge": "See review/NEXT-EXPERIMENT.md; physical measurement matching remains separate."
+    },
+    {
+      "id": "raw-norm-prerequisite",
+      "status": "observation",
+      "claim": "63of64 raw first-k2 quaternions failed the declared1e-10norm prerequisite; the projected convention was predeclared and allprojected primary stages qualified.",
+      "evidence": [
+        "results/browser-journal.jsonl",
+        "results/check.json"
+      ],
+      "limits": [
+        "Norm diagnostic uses specified sqrt expression, not nativeMath.hypot",
+        "No complete raw native/reference admission test"
+      ],
+      "sourceCommit": "25cfcee43b02f88a021fe0bae59d07cabf5fc163",
+      "experiment": "m31-coupled-stage-qualification-2026-10-17",
+      "nextChallenge": "See review/NEXT-EXPERIMENT.md; physical measurement matching remains separate."
+    },
+    {
+      "id": "physical-validity",
+      "status": "unresolved",
+      "claim": "This numerical qualification establishes no measured aerodynamic accuracy.",
+      "evidence": [
+        "LITERATURE.md",
+        "../m31-upper-response-admission-2026-10-17/ADMISSION.md"
+      ],
+      "limits": [
+        "Geometry, actuation, history and uncertainty matching remain incomplete"
+      ],
+      "sourceCommit": "25cfcee43b02f88a021fe0bae59d07cabf5fc163",
+      "experiment": "m31-coupled-stage-qualification-2026-10-17",
+      "nextChallenge": "See review/NEXT-EXPERIMENT.md; physical measurement matching remains separate."
+    },
+    {
+      "id": "5000-coupled-feasibility",
+      "status": "unresolved",
+      "claim": "5000-drone complete coupled flight/render performance remains unestablished by this test.",
+      "evidence": [
+        "PROTOCOL.md",
+        "review/NEXT-EXPERIMENT.md"
+      ],
+      "limits": [
+        "No large-swarm performance run here",
+        "Audit runtime is not simulation frame time"
+      ],
+      "sourceCommit": "25cfcee43b02f88a021fe0bae59d07cabf5fc163",
+      "experiment": "m31-coupled-stage-qualification-2026-10-17",
+      "nextChallenge": "See review/NEXT-EXPERIMENT.md; physical measurement matching remains separate."
+    }
+  ]
+}

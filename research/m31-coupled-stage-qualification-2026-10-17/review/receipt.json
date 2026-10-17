@@ -1,0 +1,659 @@
+{
+  "schema": "m31-coupled-saved-review-receipt-v1",
+  "reviewedUtc": "2026-10-17T03:18:55.243891+00:00",
+  "sourceCommit": "25cfcee43b02f88a021fe0bae59d07cabf5fc163",
+  "sourceManifestSha256": "d713bbe2535328553ed7e9dc7ce7fae2a8b04c8052d00f9edd1d20324b1f84f0",
+  "scope": "Standard-library-only saved-byte, literal-word and descriptive extraction; no scientific module imports, reference/native execution or test reruns. Reviewer authored adapter/driver; not independent implementation authorship.",
+  "verdict": "qualification-supported-within-prospective-scope",
+  "directBindingsPassed": true,
+  "sourcePinCount": 44,
+  "bundleByteIdenticalSlices": 14,
+  "primaryInputPinCount": 32,
+  "referenceFilePinCount": 32,
+  "sourcePinsCanonicalSha256": "2773e24fe1449eda4a0d4ba6f0542e0fde3b5204078b45654729e235995666fa",
+  "inputPinsCanonicalSha256": "338573de9273312dbe88824501e9dd5ca00ccc0eb7df8a8abe6f0ec84e0d810f",
+  "referencePinsCanonicalSha256": "22eb4f1dabe3743f7a1119563ae84730defb038306007f35854e958d08cceaef",
+  "sourceManifestPinsAreCompleteVerifiedList": true,
+  "inputPinsStoredIn": "results/browser.json:inputs",
+  "referencePinsStoredIn": "results/reference.jsonl:body.reference",
+  "artifacts": [
+    {
+      "path": "research/m31-coupled-stage-qualification-2026-10-17/source-manifest.json",
+      "bytes": 9870,
+      "sha256": "d713bbe2535328553ed7e9dc7ce7fae2a8b04c8052d00f9edd1d20324b1f84f0"
+    },
+    {
+      "path": "research/m31-coupled-stage-qualification-2026-10-17/source-publication.json",
+      "bytes": 883,
+      "sha256": "404cfe08763aed64742fb7c4311c8ccf429ccaec72e660b0b39941b518ed5b38"
+    },
+    {
+      "path": "research/m31-coupled-stage-qualification-2026-10-17/PROTOCOL.md",
+      "bytes": 9395,
+      "sha256": "9c48d7a07417da54d3f655cb4ea36a04bd8a987c05455912e8cf1f2daa0b1410"
+    },
+    {
+      "path": "research/m31-coupled-stage-qualification-2026-10-17/config.json",
+      "bytes": 2005,
+      "sha256": "cd405ea9699e75c2919c629ac18b866cb61f1334a21cba2ad90ff31269bc09ba"
+    },
+    {
+      "path": "research/m31-coupled-stage-qualification-2026-10-17/source/science-config.json",
+      "bytes": 8769,
+      "sha256": "e71d6765ed696f9ce8f2035d3a1602cf5eb5de46f37667229025671cfe85000e"
+    },
+    {
+      "path": "research/m31-coupled-stage-qualification-2026-10-17/source/source-bundle.json",
+      "bytes": 4384,
+      "sha256": "1050d4f4b24735762d79f0cf79937822824efad697f2207e060d8089fdc25b1f"
+    },
+    {
+      "path": "research/m31-coupled-stage-qualification-2026-10-17/results/run-attempt.json",
+      "bytes": 2571,
+      "sha256": "1fb7cd665b3673b21c1701bfd6fa3aad039d6a383c1e8300f079a19cd69e7c4f"
+    },
+    {
+      "path": "research/m31-coupled-stage-qualification-2026-10-17/results/browser.json",
+      "bytes": 10935,
+      "sha256": "7dd6baa5b297d1bc147a192c5af1792a911fb183e4c0b744f345b238311cd8f8"
+    },
+    {
+      "path": "research/m31-coupled-stage-qualification-2026-10-17/results/reference.json",
+      "bytes": 1418,
+      "sha256": "0fcf612bde6a6b1a0e95d2a58481cc6b042d393fe118b4b5015952eb4b3b1ca4"
+    },
+    {
+      "path": "research/m31-coupled-stage-qualification-2026-10-17/results/check.json",
+      "bytes": 218691,
+      "sha256": "bff01040bddc1c7ee8bd4d27b07d1594f4dbeffc36a07ee1f727a3d7e594f33e"
+    },
+    {
+      "path": "research/m31-coupled-stage-qualification-2026-10-17/review/SAVED-REVIEW-PLAN.md",
+      "bytes": 15640,
+      "sha256": "f1ee7a7743a670ca6fd6cb2e32507408def4a00d5011a44703baf80ee7d58e8b"
+    },
+    {
+      "path": "research/m31-coupled-stage-qualification-2026-10-17/results/browser-journal.jsonl",
+      "bytes": 17610247,
+      "sha256": "3d2a0d2fd1bdced5af676a53de25bd50bd980683cd76651e7b8c866d0e3ec9d5"
+    },
+    {
+      "path": "research/m31-coupled-stage-qualification-2026-10-17/results/reference.jsonl",
+      "bytes": 16854,
+      "sha256": "59de1ccd2b134d5ec0a2f9383ffd85358eb75f25a6843fda7349856af0350556"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/results/inputs/fresh-a-t5.json",
+      "bytes": 21955,
+      "sha256": "48dc63da80d4400a948a102143e872a49645b37b08eac73f932959653a16fa7c"
+    }
+  ],
+  "browserEventCounts": {
+    "source": 1,
+    "factories": 1,
+    "initial": 1,
+    "wiring-control": 12,
+    "manufactured-run": 9,
+    "manufactured-summary": 3,
+    "controller": 4,
+    "stage": 64,
+    "raw-diagnostic": 1,
+    "step": 16,
+    "safety": 16,
+    "arm-summary": 2,
+    "driver-summary": 1
+  },
+  "browserJournalRecords": 131,
+  "referenceJournalRecords": 32,
+  "runtimeCounts": {
+    "controllers": 4,
+    "coupledCompleted": 32,
+    "coupledStages": 32,
+    "manufacturedRuns": 9,
+    "manufacturedStages": 336,
+    "manufacturedSummaries": 3,
+    "offCompleted": 32,
+    "offNativeCalls": 0,
+    "offStages": 32,
+    "primaryNativeCalls": 32,
+    "rawDiagnostics": 1,
+    "steps": 16,
+    "wiringControls": 12
+  },
+  "arithmeticCounts": {
+    "derivativeWords": 75446,
+    "droneStages": 4438,
+    "nativeReferences": 32,
+    "projections": 5546,
+    "stages": 400,
+    "steps": 100
+  },
+  "reportedCheckerCorruptionResults": [
+    {
+      "detection": "independent-native-load-arithmetic",
+      "id": "load-word",
+      "passed": true
+    },
+    {
+      "detection": "independent-native-load-arithmetic",
+      "id": "squared-force-law",
+      "passed": true
+    },
+    {
+      "detection": "independent-native-load-arithmetic",
+      "id": "body-frame-force",
+      "passed": true
+    },
+    {
+      "detection": "native-load-solution-ids",
+      "id": "load-id-association",
+      "passed": true
+    },
+    {
+      "detection": "total-load-derivative-arithmetic",
+      "id": "double-force",
+      "passed": true
+    },
+    {
+      "detection": "world-to-body-moment-arithmetic",
+      "id": "missing-moment",
+      "passed": true
+    },
+    {
+      "detection": "world-to-body-moment-arithmetic",
+      "id": "wrong-frame",
+      "passed": true
+    },
+    {
+      "detection": "projection-divide-arithmetic",
+      "id": "motor-state-overwrite",
+      "passed": true
+    },
+    {
+      "detection": "stage-native-input-consumption",
+      "id": "stale-stage",
+      "passed": true
+    },
+    {
+      "detection": "stage-stable-ids",
+      "id": "consumed-id-association",
+      "passed": true
+    }
+  ],
+  "reportedReferenceAccounting": {
+    "calls": 32,
+    "logicalPairs": 516096,
+    "preparedDrones": 2048,
+    "rootBoxes": 8192,
+    "signedLoadBoxes": 22528,
+    "suffixCalls": 237056
+  },
+  "literalFeedbackLists": {
+    "initialLoadAffectedIds": [
+      1,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11,
+      14,
+      17,
+      19,
+      20,
+      22,
+      24,
+      28,
+      29,
+      30,
+      34,
+      35,
+      36,
+      38,
+      39,
+      40,
+      44,
+      45,
+      51,
+      53,
+      54,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63
+    ],
+    "initialDerivativeDifferentIds": [
+      1,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11,
+      14,
+      17,
+      19,
+      20,
+      22,
+      24,
+      28,
+      29,
+      30,
+      34,
+      35,
+      36,
+      38,
+      39,
+      40,
+      44,
+      45,
+      51,
+      53,
+      54,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63
+    ],
+    "firstRawK2DifferentIds": [
+      1,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11,
+      14,
+      17,
+      19,
+      20,
+      22,
+      24,
+      28,
+      29,
+      30,
+      34,
+      35,
+      36,
+      38,
+      39,
+      40,
+      44,
+      45,
+      51,
+      53,
+      54,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63
+    ],
+    "secondControllerInputDifferentIds": [
+      1,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11,
+      14,
+      17,
+      19,
+      20,
+      22,
+      24,
+      28,
+      29,
+      30,
+      34,
+      35,
+      36,
+      38,
+      39,
+      40,
+      44,
+      45,
+      51,
+      53,
+      54,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63
+    ],
+    "secondControllerCommandDifferentIds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63
+    ]
+  },
+  "reportedLoadErrorBoundMaxima": {
+    "rotor": {
+      "approxNormalizedUpper": 2.5884170623636683e-16,
+      "stageId": "coupled-step4-k2",
+      "witness": {
+        "id": 28,
+        "rotor": 1
+      },
+      "source": "saved checker bound; descriptive decimal conversion only"
+    },
+    "collective": {
+      "approxNormalizedUpper": 2.75582270858086e-16,
+      "stageId": "coupled-step6-k2",
+      "witness": {
+        "id": 24,
+        "rotor": null
+      },
+      "source": "saved checker bound; descriptive decimal conversion only"
+    },
+    "worldForce": {
+      "approxNormalizedUpper": 3.77771475102636e-16,
+      "stageId": "coupled-step6-k2",
+      "witness": {
+        "id": 24,
+        "rotor": null
+      },
+      "source": "saved checker bound; descriptive decimal conversion only"
+    },
+    "worldMoment": {
+      "approxNormalizedUpper": 1.3977477590041713e-16,
+      "stageId": "coupled-step6-k2",
+      "witness": {
+        "id": 24,
+        "rotor": null
+      },
+      "source": "saved checker bound; descriptive decimal conversion only"
+    }
+  },
+  "localResultsBytes": 52770463,
+  "largestLocalResult": {
+    "path": "research/m31-coupled-stage-qualification-2026-10-17/results/browser-journal.jsonl",
+    "bytes": 17610247,
+    "sha256": "3d2a0d2fd1bdced5af676a53de25bd50bd980683cd76651e7b8c866d0e3ec9d5"
+  },
+  "supervisorReportedOutputLogScratchBytes": 61558188,
+  "executionRetries": 0,
+  "firstFailure": null,
+  "operationalClosure": {
+    "browserClosed": true,
+    "rootExit": {
+      "code": 0,
+      "signal": null
+    },
+    "rootClose": {
+      "code": 0,
+      "signal": null
+    },
+    "rootError": null,
+    "guardianReleasedWithoutGroupSignal": true
+  },
+  "reviewExtractionCorrection": "An initial metadata assertion expected maxDrones inside each result recipe. The actual three-field recipe records precision/bisections; maxDrones=180 is in the pinned unchanged spec and source preflight. The corrected metadata extraction read that existing field; no scientific artifact or execution was changed.",
+  "limitations": [
+    "No live remote/Git publication reverification; saved publication receipt is internally bound.",
+    "No scientific arithmetic/oracle rerun; numerical gate verdicts attributed to saved separately authored checker.",
+    "Rational arithmetic does not distinguish signed zero; no independent transcendental controller oracle.",
+    "No physical validation, continuous-time trajectory bound, robustness, scaling or speed claim."
+  ],
+  "directControlInventory": {
+    "wiringGroups": 12,
+    "accepted": 5,
+    "expectedRejected": 7,
+    "wiringDerivatives": 6,
+    "manufacturedRuns": 9,
+    "manufacturedSteps": 84,
+    "manufacturedStages": 336,
+    "manufacturedNativeCalls": 0,
+    "safetyRecords": 16,
+    "safetyIssues": 0,
+    "bufferGroups": 9,
+    "bufferAssertions": 56
+  },
+  "rawDiagnostic": {
+    "records": 64,
+    "passes": 1,
+    "failures": 63,
+    "maximumNormDefect": 2.7165167226783637e-08,
+    "maximumId": 49,
+    "fullPreparationAttempted": false,
+    "admissionConclusion": null
+  },
+  "reportedAnalyticErrorUpperApproximations": {
+    "translation": {
+      "attitude": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motor": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "omega": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "position": [
+        2.7714985865913674e-16,
+        6.11028601445004e-16,
+        1.165328557369973e-15
+      ],
+      "velocity": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "principal-spin": {
+      "attitude": [
+        2.2965340795483237e-16,
+        2.1703786634679919e-16,
+        5.174053048784727e-18
+      ],
+      "motor": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "omega": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "motor-relaxation": {
+      "attitude": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motor": [
+        1.5755373665704707e-08,
+        9.59370491952199e-10,
+        5.918456614315976e-11
+      ],
+      "omega": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "descriptiveFeedbackWitness": {
+    "id": 1,
+    "selection": "Lowest ID in the fixed first-stage affected list, used only to illustrate a passed fixed full-swarm gate; no replacement scientific witness.",
+    "firstStage": "coupled-step0-k1",
+    "nominalRotorWords": [
+      "3fb109a441c8c244",
+      "3fb0edf37dfbc911",
+      "3fb10c07115313b0",
+      "3fb0f02928ee4bbe"
+    ],
+    "deliveredRotorWords": [
+      "3faff38983596923",
+      "3fafbf1aecab0de2",
+      "3faebcb8eb06c8d9",
+      "3fae2e6fd156d8a5"
+    ],
+    "accelerationOnWords": [
+      "bf8593822aeb3acd",
+      "bf44fdebb2254a6b",
+      "bfe974ced8000000"
+    ],
+    "accelerationOffWords": [
+      "bf8787d82ca182f8",
+      "bf46e4b4dfdc96e6",
+      "3f958e5b94ce9200"
+    ],
+    "motorDerivativeOnWords": [
+      "bf4436ef75657480",
+      "3f0521e003617000",
+      "bf44706abdb5b380",
+      "bf350ed675ca2500"
+    ],
+    "motorDerivativeOffWords": [
+      "bf4436ef75657480",
+      "3f0521e003617000",
+      "bf44706abdb5b380",
+      "bf350ed675ca2500"
+    ],
+    "secondControllerTimeWord": "3f847ae147ae147b",
+    "secondControllerOriginalTimeWord": "40140a3d70a3d70a",
+    "secondCommandsOnWords": [
+      "3fb0ff8dd6574520",
+      "3fb0e17916ea89fe",
+      "3fb121e8463db360",
+      "3fb10c01c8015b12"
+    ],
+    "secondCommandsOffWords": [
+      "3fb1079522c48aa9",
+      "3fb0ee399c03a573",
+      "3fb109ed4dd22331",
+      "3fb0ef421226ff33"
+    ],
+    "secondCommandDeltaNewtons": [
+      -0.00012250533952430642,
+      -0.00019458054985739548,
+      0.00036591114945914993,
+      0.00043867292184483764
+    ],
+    "endpoints": [
+      {
+        "stepIndex": 0,
+        "relativeTime": 0.0025,
+        "positionDifferenceMetres": 2.5498258309198787e-06,
+        "velocityDifferenceMetresPerSecond": 0.0020390875163575997,
+        "differentStateWordCount": 12
+      },
+      {
+        "stepIndex": 3,
+        "relativeTime": 0.01,
+        "positionDifferenceMetres": 4.070331126616112e-05,
+        "velocityDifferenceMetresPerSecond": 0.008128003625673931,
+        "differentStateWordCount": 12
+      },
+      {
+        "stepIndex": 7,
+        "relativeTime": 0.02,
+        "positionDifferenceMetres": 0.00016223362100114213,
+        "velocityDifferenceMetresPerSecond": 0.016158725269277294,
+        "differentStateWordCount": 17
+      }
+    ]
+  },
+  "coverageReviewLimit": "Saved checker coverage records explicitly report zeroPredicatesReevaluated=false. This review verifies their full-file identity and count/binding chain; it does not reevaluate tree zero predicates or scalar/root arithmetic."
+}
