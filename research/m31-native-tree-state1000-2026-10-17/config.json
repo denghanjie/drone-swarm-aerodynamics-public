@@ -1,8 +1,12 @@
 {
   "schema": "m31-native-tree-state1000-supervision-v1",
-  "executionAllowed": false,
-  "authorization": null,
-  "launchCutoffUtc": null,
+  "executionAllowed": true,
+  "authorization": {
+    "id": "human-reply-state1000-renewal-2026-10-17T051528Z",
+    "approvedUtc": "2026-10-17T05:15:28+00:00",
+    "reviewedSourceManifestSha256": "6de7defdbe1a5e84ac99f471fe80e3b9c2ca6a88fcca0faa6f2af38d78774468"
+  },
+  "launchCutoffUtc": "2026-10-17T07:15:28+00:00",
   "stageOrder": [
     "browser",
     "check"
@@ -45,7 +49,7 @@
     "browserClosed": true,
     "complete": true
   },
-  "scope": "Disabled source-only draft. One fresh N1000 projected state, three native methods and one derivative. No integration or fresh high-precision reference; fixed360s reservation, no retries or cap rescue. Retained prerequisites are metadata-checked, not rerun.",
+  "scope": "Enabled single-attempt allocation following explicit human renewal. One fresh N1000 projected state, three native methods and one derivative. No integration or fresh high-precision reference; fixed360s reservation, no retries or cap rescue. Retained prerequisites are metadata-checked, not rerun.",
   "preflight": {
     "runtime": "python",
     "source": "research/m31-native-tree-state1000-2026-10-17/source/validate-saved.py",
