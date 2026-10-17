@@ -1,0 +1,210 @@
+{
+  "schema": "m31-physical-compatibility-retained-source-review-v1",
+  "startedUtc": "2026-10-17T02:42:09+00:00",
+  "closedUtc": "2026-10-17T02:45:34.768797+00:00",
+  "wallLimitSeconds": 600,
+  "elapsedSeconds": 205.768797,
+  "scope": "Qualitative primary-source and implementation compatibility; no physical validation score. Published results, source deductions and unmatched tests are distinguished in NOTE.md.",
+  "bodyAcquisition": "none; all six body/text pins reverified against the frozen prior SOURCES.json",
+  "thirdPartyBodiesPublic": false,
+  "privateBodies": [
+    {
+      "privateFile": "kiran-2507.09463v1.html",
+      "bytes": 250026,
+      "sha256": "d906f1f0dcb2c949934f816a6a844b935fec0b0e8428ad3a5b717d2a3391b4d3",
+      "readingLevel": "Primary HTML body identity verified; selected passages read from the previously retained text.",
+      "locations": [
+        "II-A",
+        "III-A / Figures 5-6",
+        "III-C / Figures 14-16",
+        "IV-V"
+      ]
+    },
+    {
+      "privateFile": "kiran-2507.09463v1.txt",
+      "bytes": 72865,
+      "sha256": "ca4ee451f838da43dceb23e3441a12c24b05585cd4c6f5c037831d54bbafb85b",
+      "readingLevel": "Previously retained text read; no new extraction.",
+      "locations": [
+        "835-888",
+        "1028-1455",
+        "3180-3930"
+      ]
+    },
+    {
+      "privateFile": "gielis-2312.03488v1.html",
+      "bytes": 158270,
+      "sha256": "c62a0f25114e6b9b28828fd5b050ffcb7c8cff3f5b2eb89ec88132f413376416",
+      "readingLevel": "Primary HTML body identity verified; selected passages read from the previously retained text.",
+      "locations": [
+        "3.1",
+        "4.1-4.3 / Figures 4-6",
+        "5"
+      ]
+    },
+    {
+      "privateFile": "gielis-2312.03488v1.txt",
+      "bytes": 37859,
+      "sha256": "2eae9f709fc214d57f0df532689d7ca92da4302f89b16d45ce269899fa9e1d32",
+      "readingLevel": "Previously retained text read; no new extraction.",
+      "locations": [
+        "933-1170",
+        "1180-1520",
+        "1930-2040"
+      ]
+    },
+    {
+      "privateFile": "bauersfeld-2403.13321v3.pdf",
+      "bytes": 1443227,
+      "sha256": "81987dfd1cf2980270defd9447a9e5fb6c1586eab77b75b730de127c932d373c",
+      "readingLevel": "Exact PDF identity verified; relevant text passages previously extracted and retained.",
+      "locations": [
+        "III-A / Figure 2",
+        "IV-A-C",
+        "V / Figures 4-5",
+        "VI / Figures 6-9 / Equation 9",
+        "VII / Equations 10-11 / Figure 10"
+      ]
+    },
+    {
+      "privateFile": "bauersfeld-retained-v3.txt",
+      "bytes": 48136,
+      "sha256": "cd7c62fd9166308d750030cfe56ca9eef176d1da7c3e75c3b8e0e7d5c654e015",
+      "readingLevel": "Previously retained text read with binary-safe text tools; no new PDF/text extraction.",
+      "locations": [
+        "160-245",
+        "337-452",
+        "503-711",
+        "721-798"
+      ]
+    }
+  ],
+  "repositorySources": [
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/pair-reference.py",
+      "bytes": 44757,
+      "sha256": "845f52cf350a09d2043934dff3e797a7b7416f4ef5c64beb716104bcd74f38f0",
+      "readLocations": [
+        "302-323 constants_from_graph",
+        "345-357 prepare_one",
+        "474-558 oracle_case"
+      ]
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/semantic-reference.py",
+      "bytes": 39634,
+      "sha256": "ee77aab09109d3fba898555dacc4509312813caae4116bb3e1063efd88e3ad2c",
+      "readLocations": [
+        "158-216 prepared_exact/load_boxes/bisect_cubic/source_box/reference_roots",
+        "378-394 global_guard"
+      ]
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/native-load.cjs",
+      "bytes": 16262,
+      "sha256": "b4699a8025e27dcd34e9a206e0330a2c08d7caa61e934ec203d142876e1430f1",
+      "readLocations": [
+        "157-178 materializeLoads"
+      ]
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/spec.json",
+      "bytes": 296772,
+      "sha256": "a47b9b920ddbbd14e1838e9c031a0b34dd1820f14959ef1295cef039e7f48d2f",
+      "readLocations": [
+        "constant graph and rotor corners"
+      ]
+    },
+    {
+      "path": "research/m31-tree-first-reference-2026-10-17/source/tree-reference.py",
+      "bytes": 15237,
+      "sha256": "d08efc5e80910066d061a664aa7902c7ae7bab27dc710f5c00c9b2bf1671df65",
+      "readLocations": [
+        "121-123 solve order",
+        "211-235 refusal and admitted root/load path"
+      ]
+    },
+    {
+      "path": "research/m31-current-pair-2026-10-17/MODEL.md",
+      "bytes": 4754,
+      "sha256": "542978ef7f69f76c8b241631d15a823acf974c61e6feee18576a83beffb8403b",
+      "readLocations": [
+        "model scope and pair interpretation"
+      ]
+    },
+    {
+      "path": "research/m31-coupled-loads-2026-10-17/MODEL.md",
+      "bytes": 3295,
+      "sha256": "70a267c26c142d2cccde4e8530f1be3fa619c3301964878d244d6dca8f8070c6",
+      "readLocations": [
+        "source coupling, admitted graph, signed load map"
+      ]
+    },
+    {
+      "path": "research/m31-filter-cost-2026-10-17/MODEL.md",
+      "bytes": 2091,
+      "sha256": "9e82ae308efa3c7de241cdc89be9ad984061e957bf25e928dd4b4eca68144e42",
+      "readLocations": [
+        "unchanged model and hypothetical source coupling"
+      ]
+    },
+    {
+      "path": "research/m31-restart-2026-10-15/literature/annotated-ledger.md",
+      "bytes": 10318,
+      "sha256": "c54fe9b943c76e2d146289ea6a655d1bec52b334ff72a0d4d59880f1e2cf0b37",
+      "readLocations": [
+        "A1-A3 exact versions and bibliographic cautions"
+      ]
+    },
+    {
+      "path": "research/m31-restart-2026-10-15/literature/sources.bib",
+      "bytes": 4221,
+      "sha256": "2bb42496cb14b630b8a8aed923ca0314df4a4c326f00d4b85ce20eabcd7adb95",
+      "readLocations": [
+        "kiran2025interactions",
+        "bauersfeld2024jetv3",
+        "gielis2024aggregate"
+      ]
+    },
+    {
+      "path": "research/m31-next-evidence-decision-2026-10-17/literature/SOURCES.json",
+      "bytes": 4686,
+      "sha256": "1ee96ef9e79eb27fe57589ca22916bee4553f9eb820cf87ee341b8c7c692ee9d",
+      "readLocations": [
+        "retained article body/text pins"
+      ]
+    },
+    {
+      "path": "research/m31-next-evidence-decision-2026-10-17/literature/EVIDENCE-TABLE.md",
+      "bytes": 11430,
+      "sha256": "bbe1f39c79660ae1f005da55ec12acb259164b654393d4094a9d58d1de3cb020",
+      "readLocations": [
+        "bounded prior physical-access/method admission context"
+      ]
+    }
+  ],
+  "operations": {
+    "networkRequests": 0,
+    "newBodyDownloads": 0,
+    "newBodyExtractions": 0,
+    "figureDigitizations": 0,
+    "numericMeasurementExtractions": 0,
+    "scientificImports": 0,
+    "scientificRuns": 0,
+    "fits": 0,
+    "scores": 0,
+    "authorsContacted": 0,
+    "frozenPackagesModified": false
+  },
+  "disposition": {
+    "generalMutualDynamicModelClaimSupported": false,
+    "lowerThrustLossAndOffsetMomentQualitativelyRepresentable": true,
+    "matchedAdmittedDomainFalsificationEstablished": false,
+    "quantitativePhysicalAccuracyEstablished": false
+  },
+  "limits": [
+    "Strongest upper-response and dynamic observations require explicit admitted-domain and actuation matching.",
+    "Current nonlinear coupling is not the linear-force-summation model rejected by Gielis.",
+    "Bauersfeld speed magnitude and fitted-family agreement do not independently validate signed receiver loads."
+  ]
+}

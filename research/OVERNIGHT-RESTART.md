@@ -1,3 +1,11 @@
+# Current checkpoint — exact reference capacity, 17 October 2026
+
+[Milestone summary](m31-prepared-capacity-2026-10-17/MILESTONE-SUMMARY.md): single fixed 64/180/180 run and independent saved-only audit passed. Dense/sparse 180 root and signed-load intervals equal the saved independent reference; independent 192-bit pair-table equality remains unavailable. Profiled calls 2.517/12.317/1.754s; lifetime RSS 121.25MiB. No browser-rate or speedup claim. [Updated Three.js evidence](m31-prepared-capacity-2026-10-17/viewer/) passed 81 UI checks/48 selections; static fixtures and prior Boids states are distinguished. Read [precise restart](m31-prepared-capacity-2026-10-17/RESTART.md), closed science/audit markers and publication receipt.
+
+[Physical compatibility review](m31-physical-compatibility-2026-10-17/NOTE.md) identifies absent upper-drone and dynamic mechanisms and a narrow future null-test question; matched domain/actuation/uncertainty remain unresolved. Overall goal active/incomplete. No further scientific allocation is implied. Window ends03:00UTC17October2026; do not silently extend it. Keep server8876 unchanged. Earlier records remain history.
+
+---
+
 # Current checkpoint — prepared reference, 17 October 2026
 
 [Milestone summary](m31-prepared-reference-2026-10-17/MILESTONE-SUMMARY.md): sole experiment and independent saved-only audit passed all 24 scenes; complete output files are byte-identical to the prior tree reference. Actual scene preparations447; suffix calls26,570; operand lookups53,140; pair preparations0. Six new binding controls,14fixtures and4native/4load reports passed. [Updated3D evidence](m31-prepared-reference-2026-10-17/viewer/) passed first UI attempt62checks/32selections. Read [precise restart](m31-prepared-reference-2026-10-17/RESTART.md) for closed allocations and publication identity. Keep8876running. Overall goal active/incomplete; no speedup, physical validation,5,000-state or novelty claim. Approved window still ends03:00UTC17October; this index does not extend it. Earlier entries remain history.

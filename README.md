@@ -8,7 +8,9 @@ This is an ongoing research record, including unsuccessful experiments. The hist
 
 ## Current Milestone 31 restart
 
-Latest checkpoint: [prepare each drone once and preserve every reference result](research/m31-prepared-reference-2026-10-17/MILESTONE-SUMMARY.md). All 24 saved records match byte-for-byte; 447 scene preparations support 26,570 pair checks with no preparation repeated inside pairs. Independent saved-data review and all six binding controls passed. [Updated Three.js evidence](research/m31-prepared-reference-2026-10-17/viewer/) · [Claims](research/m31-prepared-reference-2026-10-17/CLAIMS.md) · [Restart](research/m31-prepared-reference-2026-10-17/RESTART.md). The [physical-evidence review](research/m31-next-evidence-decision-2026-10-17/literature/EVIDENCE-TABLE.md) identifies direct-force data as the priority lead; no new physical score is admitted.
+Latest checkpoint: [exact reference checks at 180 drones](research/m31-prepared-capacity-2026-10-17/MILESTONE-SUMMARY.md). The fixed 64/180/180 cases passed saved-result accuracy checks and the predeclared offline cost hurdle; independent saved-data audit passed. Dense and sparse 180-drone calculations took 12.317 and 1.754 seconds with profiling enabled. These are single-run offline observations, not browser frame times or a speedup. [Updated Three.js evidence](research/m31-prepared-capacity-2026-10-17/viewer/) · [Claims](research/m31-prepared-capacity-2026-10-17/CLAIMS.md) · [Restart](research/m31-prepared-capacity-2026-10-17/RESTART.md). The separate [physical compatibility note](research/m31-physical-compatibility-2026-10-17/NOTE.md) identifies omitted upper-drone and dynamic effects without claiming a matched physical score.
+
+Previous checkpoint: [prepare each drone once and preserve every reference result](research/m31-prepared-reference-2026-10-17/MILESTONE-SUMMARY.md). All 24 saved records match byte-for-byte; 447 scene preparations support 26,570 pair checks with no preparation repeated inside pairs. Independent saved-data review and all six binding controls passed. [Updated Three.js evidence](research/m31-prepared-reference-2026-10-17/viewer/) · [Claims](research/m31-prepared-reference-2026-10-17/CLAIMS.md) · [Restart](research/m31-prepared-reference-2026-10-17/RESTART.md). The [physical-evidence review](research/m31-next-evidence-decision-2026-10-17/literature/EVIDENCE-TABLE.md) identifies direct-force data as the priority lead; no new physical score is admitted.
 
 Latest exact-reference checkpoint: [same answers with 66.4% fewer scalar checks](research/m31-tree-first-reference-2026-10-17/MILESTONE-SUMMARY.md). All 24 fixed scenes matched exactly; six coverage corruptions were detected. The full reference made 79,008 scalar calls and the tree-first reference 26,570. This is counted work on an exposed corpus, not a measured speedup or physical validation. [New Three.js coverage view](research/m31-tree-first-reference-2026-10-17/viewer/) · [Claim ledger](research/m31-tree-first-reference-2026-10-17/CLAIM-EVIDENCE.md) · [Restart](research/m31-tree-first-reference-2026-10-17/RESTART.md). The separate [firmware provenance followup](research/m31-firmware-provenance-2026-10-17/FINDINGS.md) leaves physical-force labels unresolved.
 
@@ -58,7 +60,7 @@ The earlier [GPU receiver component](research/m31-browser-receiver-2026-10-16/RE
 
 ## View the 3D lab
 
-For the current exact-reference checkpoint, serve this repository with `python3 -m http.server 8876 --bind 127.0.0.1` and open <http://127.0.0.1:8876/research/m31-tree-first-reference-2026-10-17/viewer/>. It uses the committed saved results and runs no scientific kernel.
+For the current exact-reference checkpoint, serve this repository with `python3 -m http.server 8876 --bind 127.0.0.1` and open <http://127.0.0.1:8876/research/m31-prepared-capacity-2026-10-17/viewer/>. It uses the committed saved results and runs no scientific kernel.
 
 For the historical interactive lab:
 
