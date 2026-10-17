@@ -1,0 +1,208 @@
+{
+  "schema": "m31-firmware-provenance-acquisition-v1",
+  "recordedUtc": "2026-10-17T02:00:30.535674+00:00",
+  "scope": "Read-only immutable public source/metadata; no downloaded code executed",
+  "dispatchLimit": 12,
+  "dispatchesCharged": 12,
+  "responseBodyBudgetBytes": 4194304,
+  "successfulResponseBodyBytes": 48615,
+  "sumOfPerDispatchBodyCaps": 3407872,
+  "successfulResponses": 9,
+  "sandboxDnsFailures": 2,
+  "remoteHttpFailures": 1,
+  "transportRecoveryAuthorization": "Parent explicitly authorized one escalated reissue of each initial DNS-failed immutable URL; both failed dispatches remain charged.",
+  "remoteFailureRetried": false,
+  "remoteErrorBodyRetained": false,
+  "byteAccounting": "Successful body bytes and curl reported body counts. No error response body retained under curl --fail. Each dispatch body cap and their aggregate stayed below allocation; headers are not included in response-body counts.",
+  "requests": [
+    {
+      "dispatch": 1,
+      "url": "https://api.github.com/repos/aerorobotics/neural-swarm/git/blobs/14c556188bced0eaf478f25863b29dde17bfe80f",
+      "httpStatus": 0,
+      "curlExitCode": 6,
+      "reportedResponseBodyBytes": 0,
+      "maximumBodyBytes": 262144,
+      "maximumSeconds": 60,
+      "automaticRetries": 0,
+      "transport": "sandbox-dns-failure",
+      "recoveryOfDispatch": null
+    },
+    {
+      "dispatch": 2,
+      "url": "https://api.github.com/repos/aerorobotics/neural-swarm/git/trees/5cc455a857d657acc5a1a0b695b082fcb9b0d1ba",
+      "httpStatus": 0,
+      "curlExitCode": 6,
+      "reportedResponseBodyBytes": 0,
+      "maximumBodyBytes": 262144,
+      "maximumSeconds": 60,
+      "automaticRetries": 0,
+      "transport": "sandbox-dns-failure",
+      "recoveryOfDispatch": null
+    },
+    {
+      "dispatch": 3,
+      "url": "https://api.github.com/repos/aerorobotics/neural-swarm/git/blobs/14c556188bced0eaf478f25863b29dde17bfe80f",
+      "httpStatus": 200,
+      "curlExitCode": 0,
+      "reportedResponseBodyBytes": 515,
+      "maximumBodyBytes": 262144,
+      "maximumSeconds": 60,
+      "automaticRetries": 0,
+      "transport": "explicit-escalation",
+      "recoveryOfDispatch": 1,
+      "privateResponseFile": "gitmodules-14c5561.json",
+      "responseReceipt": {
+        "bytes": 515,
+        "sha256": "e284cdff1abdefe560a0177b9459e7ea6612c1128aec0a8d8834cfb18a9b6fda"
+      }
+    },
+    {
+      "dispatch": 4,
+      "url": "https://api.github.com/repos/aerorobotics/neural-swarm/git/trees/5cc455a857d657acc5a1a0b695b082fcb9b0d1ba",
+      "httpStatus": 200,
+      "curlExitCode": 0,
+      "reportedResponseBodyBytes": 1456,
+      "maximumBodyBytes": 262144,
+      "maximumSeconds": 60,
+      "automaticRetries": 0,
+      "transport": "explicit-escalation",
+      "recoveryOfDispatch": 2,
+      "privateResponseFile": "hardware-tree-5cc455a.json",
+      "responseReceipt": {
+        "bytes": 1456,
+        "sha256": "fa985a4b54636e32a274570c96b6793464cd4597c69b555b7f167d4b68a78348"
+      }
+    },
+    {
+      "dispatch": 5,
+      "url": "https://api.github.com/repos/aerorobotics/crazyflie-firmware/git/commits/5d099378da665e35923ff075b14c938b8fd1cc8d",
+      "httpStatus": 404,
+      "curlExitCode": 56,
+      "reportedResponseBodyBytes": 0,
+      "maximumBodyBytes": 262144,
+      "maximumSeconds": 60,
+      "automaticRetries": 0,
+      "transport": "explicit-escalation",
+      "recoveryOfDispatch": null
+    },
+    {
+      "dispatch": 6,
+      "url": "https://api.github.com/repos/aerorobotics/neural-swarm/git/trees/fe3b52b56fc54879b084afbae050263d4037de2b?recursive=1",
+      "httpStatus": 200,
+      "curlExitCode": 0,
+      "reportedResponseBodyBytes": 2841,
+      "maximumBodyBytes": 262144,
+      "maximumSeconds": 60,
+      "automaticRetries": 0,
+      "transport": "explicit-escalation",
+      "recoveryOfDispatch": null,
+      "privateResponseFile": "datacollection-tree-fe3b52b.json",
+      "responseReceipt": {
+        "bytes": 2841,
+        "sha256": "1a036e9e2731546c633594b0587ab89be8b7f7eeea71ee57f01601a134b1707e"
+      }
+    },
+    {
+      "dispatch": 7,
+      "url": "https://api.github.com/repos/aerorobotics/neural-swarm/git/blobs/03343308f173adcf40da8aebd1ccbde073f8281c",
+      "httpStatus": 200,
+      "curlExitCode": 0,
+      "reportedResponseBodyBytes": 1671,
+      "maximumBodyBytes": 262144,
+      "maximumSeconds": 60,
+      "automaticRetries": 0,
+      "transport": "explicit-escalation",
+      "recoveryOfDispatch": null,
+      "privateResponseFile": "hardware-readme-0334330.json",
+      "responseReceipt": {
+        "bytes": 1671,
+        "sha256": "a0abcfaab056e4b3fcf3cd9fbfe206d3ee4e1fce9bebc35f38740507deab9c6c"
+      }
+    },
+    {
+      "dispatch": 8,
+      "url": "https://api.github.com/repos/aerorobotics/neural-swarm/git/blobs/dd3e142e29e938b73d9c42a1d715594021db8e26",
+      "httpStatus": 200,
+      "curlExitCode": 0,
+      "reportedResponseBodyBytes": 1245,
+      "maximumBodyBytes": 262144,
+      "maximumSeconds": 60,
+      "automaticRetries": 0,
+      "transport": "explicit-escalation",
+      "recoveryOfDispatch": null,
+      "privateResponseFile": "collection-config-dd3e142.json",
+      "responseReceipt": {
+        "bytes": 1245,
+        "sha256": "915eef4e543590e378735d01771f187ce159f8af4048168c87db55a286532cd1"
+      }
+    },
+    {
+      "dispatch": 9,
+      "url": "https://api.github.com/repos/aerorobotics/neural-swarm/git/blobs/14df5bda4f8c56aeb86e300f23fa616120356e6d",
+      "httpStatus": 200,
+      "curlExitCode": 0,
+      "reportedResponseBodyBytes": 3842,
+      "maximumBodyBytes": 262144,
+      "maximumSeconds": 60,
+      "automaticRetries": 0,
+      "transport": "explicit-escalation",
+      "recoveryOfDispatch": null,
+      "privateResponseFile": "decoder-14df5bd.json",
+      "responseReceipt": {
+        "bytes": 3842,
+        "sha256": "9c062573df2dcb2a64efae6cb6867d06df8b0c9a95672b5b6d787d784a167b7a"
+      }
+    },
+    {
+      "dispatch": 10,
+      "url": "https://api.github.com/repos/aerorobotics/neural-swarm/git/trees/02893a751b34bbebe19badcb8ddc53f62c16a884?recursive=1",
+      "httpStatus": 200,
+      "curlExitCode": 0,
+      "reportedResponseBodyBytes": 11914,
+      "maximumBodyBytes": 524288,
+      "maximumSeconds": 60,
+      "automaticRetries": 0,
+      "transport": "explicit-escalation",
+      "recoveryOfDispatch": null,
+      "privateResponseFile": "ros-tree-02893a7.json",
+      "responseReceipt": {
+        "bytes": 11914,
+        "sha256": "893bfd5888d3bf0198c451a4dc86ac648a518c9de233b2b3a18b561ccbf6a37a"
+      }
+    },
+    {
+      "dispatch": 11,
+      "url": "https://api.github.com/repos/aerorobotics/neural-swarm/git/blobs/303369b28292daa6233076a0327cd65c721a2699",
+      "httpStatus": 200,
+      "curlExitCode": 0,
+      "reportedResponseBodyBytes": 20289,
+      "maximumBodyBytes": 262144,
+      "maximumSeconds": 60,
+      "automaticRetries": 0,
+      "transport": "explicit-escalation",
+      "recoveryOfDispatch": null,
+      "privateResponseFile": "crazyflie-types-303369b.json",
+      "responseReceipt": {
+        "bytes": 20289,
+        "sha256": "0db3b712b227251eea354c505ff7fc93d060e4963ba8f46d0714fbb7f6118877"
+      }
+    },
+    {
+      "dispatch": 12,
+      "url": "https://api.github.com/repos/aerorobotics/neural-swarm/git/blobs/7085de55e6aeb81ff630ed9a09793ecc9980f5a6",
+      "httpStatus": 200,
+      "curlExitCode": 0,
+      "reportedResponseBodyBytes": 4842,
+      "maximumBodyBytes": 262144,
+      "maximumSeconds": 60,
+      "automaticRetries": 0,
+      "transport": "explicit-escalation",
+      "recoveryOfDispatch": null,
+      "privateResponseFile": "all-crazyflies-7085de5.json",
+      "responseReceipt": {
+        "bytes": 4842,
+        "sha256": "08d1ad849df790c824a87232c781c3497826a7094366260c7a3038c98510992f"
+      }
+    }
+  ]
+}

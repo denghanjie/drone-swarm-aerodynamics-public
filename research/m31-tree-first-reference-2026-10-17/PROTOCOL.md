@@ -1,0 +1,31 @@
+# Tree-first exact reference: one prospective qualification
+
+Prepared 17 October 2026 before any execution of the new dispatcher. This is the next numerical checkpoint after fresh-transfer result e42134d6184df2aa1fe7d1d11f919e57192c3cf3 and physical-data admission bd1675802ad02f1b65340b36ab19306899107a6b. The previous experiments, including failures, remain immutable.
+
+## Question and hypotheses
+
+Can the independent rational reference prove a whole tree node contributes exactly zero before calling the scalar oracle, with identical prepared words, canonical admission/refusal decisions, positive coefficient intervals, root intervals and signed load intervals? Qualification requires exact equality across the fixed corpus, complete checked coverage and all specified negative controls. One discrepancy fails qualification. This is conditional-model numerical engineering, not physical validation, a novelty claim or evidence of interactive 5,000-drone performance.
+
+The old reference already builds an exact hierarchy but evaluates every pair before checking that hierarchy. The new dispatcher reuses its exact tree and five zero rules, then calls the unchanged 192-bit scalar oracle only on unproved leaf members. It retains compact zero ranges, never a dense zero lookup. It still repeats preparation in residual scalar calls; its inherited tree builder temporarily stores membership tuples, then discards them before query traversal. Worst-case quadratic work remains possible.
+
+## Fixed evidence and exposure
+
+Run all 18 scenes from exact-screening, all four moving controls and both fresh 64-drone final states, exactly in source/cases.json order. All have previously been observed; this is regression qualification, not an untouched confirmatory sample. There are 24 scenes, maximum 64 drones and 79,048 logical nonself rotor-source pairs per variant before global refusal. No new seeds, scenes, simulations or browser scientific calls. No drone-cap increase: the wrapper keeps maxDrones 180, leafCapacity 8, coefficient/source precision 192, root bisections 128 and positive cap 2,000,000. The inherited helper itself allows 216, but this allocation is restricted to the fixed cases of at most 64.
+
+For each scene run the frozen full reference once, then the new tree reference once. Compare raw/prepared data; exact tree and global guard; status, branch and canonical witness; positive support and coefficient endpoints; root and rotor/collective/world-force/world-moment bounds. The independent small-corpus validator expands every zero group and requires every omitted full-oracle member to be zero. Verify partition membership, uniqueness, self exclusion and stable-ID/index mapping, not just totals. Node proof labels need not equal each omitted scalar's first zero branch. Actually evaluated scalar branches must match exactly.
+
+Run six fixed coverage mutations from source/corruptions.py. Their witnesses were chosen from saved old evidence before new execution. They test false positive-to-zero proof, dropped scalar, equal-count duplicate/omission, forged tree bound, global-guard bypass and stable-ID substitution. Each must fail with its specific preregistered core code. A missing witness, unanticipated exception or duplicate invocation fails; no replacement search is permitted. Retain all 14 arithmetic fixtures and four saved load-law corruptions. Recheck the four saved native fresh calls against the identical new load boxes; require their complete checker reports and four corruption reports to equal the published reports. No new browser result is generated.
+
+## Limits and launch gate
+
+Exactly one execution allocation in the user-approved renewed window ending **03:00 UTC, 17 October 2026 (11:00 Shanghai)**. Launch must leave at least 600 seconds before cutoff. Do not extend that window silently. Source/review/docs must be committed, pushed and exact-commit-public manifest verified before the driver imports scientific modules. Use the pinned isolated Python runtime with -I -B; runtime version/hash and all source pins are checked before scientific imports and source/output pins after execution.
+
+Combined full plus tree scalar-oracle ceiling: 160,000 calls. Driver scientific deadline: 540 seconds; closure allowance at most 60 seconds and total reservation 600 seconds. Signals and polls implement this best-effort in-process deadline; no external guardian or hard OS memory containment is claimed. No subprocesses, child browsers, paid execution or physical flights. New results at most 256 MiB, each written artifact at most 32 MiB. Journaling has exactly two small events per fixed scene and is included in final byte accounting. There is no memory cap claim. STARTED and an exclusive results directory enforce one use; failures/partial outputs are retained without rerun, higher caps or repair inside this allocation. A missing/failed terminal receipt cannot count as qualification.
+
+Single full-then-tree wall observations are diagnostic only. Order/cache effects, no repeats, Python interpreter and different bookkeeping prevent a speedup or browser-performance claim. Counted scalar calls and exact omissions are the primary computation evidence.
+
+## Interpretation, review and publication
+
+Qualification establishes finite-corpus agreement and correct behavior on six specified corruptions; it does not prove all-input implementation correctness. The inherited rational zero-rule argument supports skipped-group legality under its guard. Physical aero accuracy and flight stability remain separate, unresolved questions. A new independent review of saved outputs may read/reduce existing records, but cannot rerun science, alter thresholds or choose a favorable subset.
+
+Save all scene outputs, aggregate counts, controls, journal, failed gate information and precise restart instructions. Give the milestone a visible Three.js view based on the saved synthetic flock state with actual zero/scalar coverage overlay; label it a replay/evidence display, not a new airflow-coupled simulation. Freeze results, privacy review and push the public GitHub checkpoint. Publish our code and summaries only, not private flight CSVs, third-party source bodies or machine-specific private paths. No change to server 8876.

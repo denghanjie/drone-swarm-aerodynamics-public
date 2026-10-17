@@ -1,0 +1,37 @@
+# Neural-Swarm firmware and flight-configuration provenance
+
+The inspected sources identify a precise firmware submodule commit and published collection/configuration defaults. They do **not** establish the firmware, active controller parameters, acceleration/gravity convention, tick unit, motor-force semantics or measured mass of each historical flight. This source-only followup does not admit the retained CSV as a verified physical-force reference.
+
+## Firmware identity and access limit
+
+The retained root metadata identifies `.gitmodules` blob `14c556188bced0eaf478f25863b29dde17bfe80f` and hardware tree `5cc455a857d657acc5a1a0b695b082fcb9b0d1ba`. Their fetched contents were checked against the Git object hashes. Together they link `hardware/crazyflie-firmware` to the `aerorobotics/crazyflie-firmware` repository at commit `5d099378da665e35923ff075b14c938b8fd1cc8d`. The exact commit API request returned HTTP 404. No replacement branch or firmware version was substituted, and the firmware definitions were therefore not read. The 404 establishes this acquisition failure, not whether the repository was deleted, renamed or made private. [Pinned submodule mapping](https://api.github.com/repos/aerorobotics/neural-swarm/git/blobs/14c556188bced0eaf478f25863b29dde17bfe80f); [pinned hardware tree](https://api.github.com/repos/aerorobotics/neural-swarm/git/trees/5cc455a857d657acc5a1a0b695b082fcb9b0d1ba).
+
+The hardware README describes using a locally built firmware binary and generating neural-network weights for that build. It does not provide a build hash or a flight-to-binary association. The submodule pointer is repository state, not proof that a particular flight used that binary. [Pinned hardware instructions](https://api.github.com/repos/aerorobotics/neural-swarm/git/blobs/03343308f173adcf40da8aebd1ccbde073f8281c).
+
+## What the source establishes
+
+| Question | Bounded source finding | Remaining gap |
+|---|---|---|
+| Acceleration and gravity | The collection configuration requests `stateEstimateZ.ax`, `.ay` and `.az`. The converter divides them by 1000 and labels the output m/s². The retained residual helper uses its IMU-derived acceleration directly in the inertial-force term; its velocity-derived route adds gravity separately. | These are logging and downstream assumptions. The producer definition, reference frame, gravity removal, filtering and historical estimator selection remain unverified. |
+| Tick | The collection configuration sets frequency to 100 and mode to 1, described as synchronous with the stabilizer. It does not explicitly state the frequency unit. The decoder unpacks the recorded typed values and returns them without converting physical units. The converter passes `tick` through with an ms label; the retained training helper divides relative time by 1,000,000. | The inspected producer and configuration parser are unavailable. A frequency setting does not resolve a timestamp-unit discrepancy or prove the settings used for a flight. |
+| `motor.f1`–`motor.f4` | The collection configuration requests these fields alongside PWM and battery. The converter passes their values through into columns labelled N. | The firmware's units, scaling, commanded-versus-estimated-versus-measured meaning, saturation and delay behavior are not established by those labels. |
+| 32 g versus 34 g | The retained training source uses 32 g for small vehicles. The published `CF21SingleMarker` configuration includes both `ctrlMel.mass = 0.032` and `ctrlSJC.mass = 0.034`; its vehicle list assigns CF50 and CF51 to that type. | These are distinct configured parameter values, not weighing receipts or proof of the active controller, runtime overrides, payload or actual per-run mass. |
+
+The first three rows rely on the [pinned collection configuration](https://api.github.com/repos/aerorobotics/neural-swarm/git/blobs/dd3e142e29e938b73d9c42a1d715594021db8e26), [pinned decoder](https://api.github.com/repos/aerorobotics/neural-swarm/git/blobs/14df5bda4f8c56aeb86e300f23fa616120356e6d), retained [converter blob](https://api.github.com/repos/aerorobotics/neural-swarm/git/blobs/65383b0ac90e93646da209761224aa9346fc168b) and retained [training-helper blob](https://api.github.com/repos/aerorobotics/neural-swarm/git/blobs/888a8c64960610b2339f3d51d0ba525ca4119e09). Their byte and Git identities were checked locally; none of their code was executed.
+
+The mass finding is supported by the [vehicle-type configuration](https://api.github.com/repos/aerorobotics/neural-swarm/git/blobs/303369b28292daa6233076a0327cd65c721a2699), [vehicle-ID mapping](https://api.github.com/repos/aerorobotics/neural-swarm/git/blobs/7085de55e6aeb81ff630ed9a09793ecc9980f5a6) and retained [training source](https://api.github.com/repos/aerorobotics/neural-swarm/git/blobs/3924a43e2e24b81d50e72b219ee914f56d179396). The paper describes small vehicles as 34 g. The inspected collection-19 README identifies CF50/51 as unmodified Crazyflie 2.1 vehicles and names their calibration file, but provides no measured per-flight mass. Neither the paper nor that README resolves which configured mass or hardware mass applies to an individual recording. [Paper, v2](https://arxiv.org/abs/2012.05457v2); [collection-19 README](https://api.github.com/repos/aerorobotics/neural-swarm/git/blobs/45d06ca68f4ec74c939d9fadfc7184c594769237).
+
+## Evidence needed to close the association
+
+1. Recover the exact linked firmware commit, its relevant estimator/logging/timestamp/motor definitions and build options. Preserve the binary or build identifier actually flashed on each participating vehicle.
+2. Associate each admitted raw log and converted CSV with its vehicle ID, flight time, firmware/binary identity, active estimator/controller, parameter dump, SD logging configuration and exact converter version. Preserve the raw log header and an independently documented timestamp scale/wrap convention.
+3. Identify what the motor-force fields represent and connect the actual PWM/battery-to-force calibration, units, frame conventions, saturation and delay treatment to the same flight.
+4. Supply the measured takeoff mass for each vehicle/run, including battery, marker, deck and other payload, or a contemporaneous configuration record that supports a defensible mass bound. Do not choose 32 g or 34 g merely to improve agreement.
+
+These are specific missing provenance links within the inspected source set. This bounded investigation did not exhaust every file or all historical data collections.
+
+## Scope and preservation
+
+Twelve request dispatches were charged: two initial sandbox DNS failures, nine successful immutable source/metadata responses and one remote HTTP 404. The parent explicitly authorized one transport recovery for each DNS failure. There were no automatic retries or retries after the remote 404. Each request used a 60-second limit. Successful response bodies total 48,615 bytes, below the 4 MiB allocation; the summed per-dispatch body caps were also below 4 MiB.
+
+Only metadata was parsed, hashes recomputed and source text read. No CSV analysis, data fitting, simulation, physical scoring, model loading, third-party code execution, bulk clone, external contact or publication occurred. Third-party responses and decoded source remain in the private provenance directory. This public package contains paraphrases, citations, hash metadata and acquisition receipts only. Frozen scientific/viewer packages were not edited by this followup.

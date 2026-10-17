@@ -1,0 +1,170 @@
+[
+  {
+    "id": "offset-singleton",
+    "encoding": "decimal",
+    "sourceIndex": 0,
+    "n": 1,
+    "expectedClass": "admitted"
+  },
+  {
+    "id": "dense-cube-27",
+    "encoding": "decimal",
+    "sourceIndex": 1,
+    "n": 27,
+    "expectedClass": "admitted"
+  },
+  {
+    "id": "dense-cube-64",
+    "encoding": "decimal",
+    "sourceIndex": 2,
+    "n": 64,
+    "expectedClass": "admitted"
+  },
+  {
+    "id": "sparse-cube-64",
+    "encoding": "decimal",
+    "sourceIndex": 3,
+    "n": 64,
+    "expectedClass": "admitted"
+  },
+  {
+    "id": "four-columns-32",
+    "encoding": "decimal",
+    "sourceIndex": 4,
+    "n": 32,
+    "expectedClass": "admitted"
+  },
+  {
+    "id": "tilted-cube-16",
+    "encoding": "decimal",
+    "sourceIndex": 5,
+    "n": 16,
+    "expectedClass": "admitted"
+  },
+  {
+    "id": "permuted-cube-27",
+    "encoding": "decimal",
+    "sourceIndex": 6,
+    "n": 27,
+    "expectedClass": "admitted"
+  },
+  {
+    "id": "neighbor-boundary-16",
+    "encoding": "decimal",
+    "sourceIndex": 7,
+    "n": 16,
+    "expectedClass": "admitted"
+  },
+  {
+    "id": "near-slab-outside-16",
+    "encoding": "decimal",
+    "sourceIndex": 8,
+    "n": 16,
+    "expectedClass": "admitted"
+  },
+  {
+    "id": "radial-outside-16",
+    "encoding": "decimal",
+    "sourceIndex": 9,
+    "n": 16,
+    "expectedClass": "admitted"
+  },
+  {
+    "id": "down-cut-boundary-16",
+    "encoding": "decimal",
+    "sourceIndex": 10,
+    "n": 16,
+    "expectedClass": "admitted"
+  },
+  {
+    "id": "near-domain-refusal",
+    "encoding": "decimal",
+    "sourceIndex": 11,
+    "n": 2,
+    "expectedClass": "rejected:pair-near"
+  },
+  {
+    "id": "scaled-cap-refusal",
+    "encoding": "decimal",
+    "sourceIndex": 12,
+    "n": 2,
+    "expectedClass": "rejected:pair-cap"
+  },
+  {
+    "id": "upward-order-refusal",
+    "encoding": "decimal",
+    "sourceIndex": 13,
+    "n": 2,
+    "expectedClass": "rejected:ordering"
+  },
+  {
+    "id": "global-invalid-three",
+    "encoding": "decimal",
+    "sourceIndex": 14,
+    "n": 3,
+    "expectedClass": "rejected:preparation"
+  },
+  {
+    "id": "center-guard-fallback",
+    "encoding": "decimal",
+    "sourceIndex": 15,
+    "n": 3,
+    "expectedClass": "rejected:pair-center-guard"
+  },
+  {
+    "id": "center-guard-equality",
+    "encoding": "decimal",
+    "sourceIndex": 16,
+    "n": 3,
+    "expectedClass": "admitted"
+  },
+  {
+    "id": "raw-force-refusal",
+    "encoding": "decimal",
+    "sourceIndex": 17,
+    "n": 2,
+    "expectedClass": "rejected:raw-force"
+  },
+  {
+    "id": "positive",
+    "encoding": "bits",
+    "inputPath": "research/m31-native-fresh-transfer-2026-10-17/results/inputs/positive.json",
+    "n": 3,
+    "expectedClass": "admitted"
+  },
+  {
+    "id": "distant-zero",
+    "encoding": "bits",
+    "inputPath": "research/m31-native-fresh-transfer-2026-10-17/results/inputs/distant-zero.json",
+    "n": 2,
+    "expectedClass": "admitted"
+  },
+  {
+    "id": "raw-force",
+    "encoding": "bits",
+    "inputPath": "research/m31-native-fresh-transfer-2026-10-17/results/inputs/raw-force.json",
+    "n": 2,
+    "expectedClass": "rejected:raw-force"
+  },
+  {
+    "id": "order-incompatible",
+    "encoding": "bits",
+    "inputPath": "research/m31-native-fresh-transfer-2026-10-17/results/inputs/order-incompatible.json",
+    "n": 2,
+    "expectedClass": "rejected:ordering"
+  },
+  {
+    "id": "fresh-a-t5",
+    "encoding": "bits",
+    "inputPath": "research/m31-native-fresh-transfer-2026-10-17/results/inputs/fresh-a-t5.json",
+    "n": 64,
+    "expectedClass": "admitted"
+  },
+  {
+    "id": "fresh-b-t5",
+    "encoding": "bits",
+    "inputPath": "research/m31-native-fresh-transfer-2026-10-17/results/inputs/fresh-b-t5.json",
+    "n": 64,
+    "expectedClass": "admitted"
+  }
+]
