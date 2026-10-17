@@ -1,0 +1,93 @@
+{
+  "schema": "m31-tree-witness-layout-supervision-v1",
+  "executionAllowed": true,
+  "authorization": {
+    "id": "explicit-user-two-hour-window-20261017-saved-layout",
+    "approvedUtc": "2026-10-17T03:06:20+00:00",
+    "reviewedSourceManifestSha256": "032e2e35911bcd2763aab84ab38c8a8ccd99b5eb67a1931da55b0fb0cb66ea01"
+  },
+  "launchCutoffUtc": "2026-10-17T05:06:20+00:00",
+  "stageOrder": [
+    "candidate",
+    "check"
+  ],
+  "limits": {
+    "totalWallSeconds": 300,
+    "closureAndOverheadSeconds": 60,
+    "perFileBytes": 33554432,
+    "combinedOutputLogScratchBytes": 67108864,
+    "evidenceBytes": 58720256,
+    "privateBytes": 4194304,
+    "otherPublicBytes": 2097152,
+    "finalizationByteAllowance": 2097152,
+    "chunkBytes": 1048576,
+    "pollSeconds": 0.1
+  },
+  "stages": {
+    "candidate": {
+      "runtime": "node",
+      "source": "research/m31-tree-witness-layout-2026-10-17/source/candidate.cjs",
+      "childWallSeconds": 120,
+      "completionAssertions": {
+        "complete": true,
+        "passed": true
+      }
+    },
+    "check": {
+      "runtime": "python",
+      "source": "research/m31-tree-witness-layout-2026-10-17/source/check.py",
+      "childWallSeconds": 120,
+      "completionAssertions": {
+        "complete": true,
+        "passed": true
+      }
+    }
+  },
+  "qualification": {
+    "inputRecords": 156,
+    "savedRecords": 126,
+    "browserNativeRecords": 30,
+    "exactTreeReconstructionRequired": true,
+    "fixedControlsRequired": true,
+    "reportEveryRecordSizes": true,
+    "savedN5000HMaxRatio": 0.5,
+    "targetScope": "Both retained N5000 H trees; development-data storage target only",
+    "scientificQualification": false,
+    "wholeAttemptFitClaim": false,
+    "queryOrBrowserSpeedClaim": false,
+    "candidateControlIds": [
+      "literal-selection",
+      "run-selection",
+      "bitmap-boundary-roundtrip",
+      "empty-roundtrip",
+      "duplicate-source-rejected",
+      "bitmap-tail-rejected",
+      "wrong-count-rejected",
+      "noncanonical-choice-rejected"
+    ],
+    "savedN5000HSourceSequences": [
+      60,
+      63
+    ],
+    "independentControlIds": [
+      "fixed-three-encodings-and-literal-zero",
+      "noncanonical-choice",
+      "padding",
+      "offset-end",
+      "offset-order",
+      "cull-code",
+      "difference-word",
+      "receiver-order",
+      "gather-order",
+      "gather-count",
+      "leaf-reference",
+      "unknown-field",
+      "base-literal-word",
+      "cull-order",
+      "run-overlap",
+      "bitmap-width",
+      "boolean-id"
+    ]
+  },
+  "scope": "One saved-only tree layout qualification within the approved fixed window; no fresh scientific calls or retry."
+}
