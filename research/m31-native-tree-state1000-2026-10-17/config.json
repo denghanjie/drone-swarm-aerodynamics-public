@@ -1,0 +1,58 @@
+{
+  "schema": "m31-native-tree-state1000-supervision-v1",
+  "executionAllowed": false,
+  "authorization": null,
+  "launchCutoffUtc": null,
+  "stageOrder": [
+    "browser",
+    "check"
+  ],
+  "limits": {
+    "perFileBytes": 33554432,
+    "combinedOutputLogScratchBytes": 268435456,
+    "totalWallSeconds": 360,
+    "closureAndOverheadSeconds": 60,
+    "pollSeconds": 0.1,
+    "finalizationByteAllowance": 2097152
+  },
+  "stages": {
+    "browser": {
+      "runtime": "node",
+      "source": "research/m31-native-tree-state1000-2026-10-17/source/controller.cjs",
+      "childWallSeconds": 120,
+      "completionAssertions": {
+        "complete": true
+      }
+    },
+    "check": {
+      "runtime": "python",
+      "source": "research/m31-native-tree-state1000-2026-10-17/source/check.py",
+      "childWallSeconds": 180,
+      "completionAssertions": {
+        "complete": true,
+        "passed": true
+      }
+    }
+  },
+  "browserRootCompletionAssertions": {
+    "browserRootExitConfirmed": true,
+    "browserRootCloseConfirmed": true,
+    "browserRoot.exit.code": 0,
+    "browserRoot.exit.signal": null,
+    "browserRoot.close.code": 0,
+    "browserRoot.close.signal": null,
+    "browserRoot.error": null,
+    "browserClosed": true,
+    "complete": true
+  },
+  "scope": "Disabled source-only draft. One fresh N1000 projected state, three native methods and one derivative. No integration or fresh high-precision reference; fixed360s reservation, no retries or cap rescue. Retained prerequisites are metadata-checked, not rerun.",
+  "preflight": {
+    "runtime": "python",
+    "source": "research/m31-native-tree-state1000-2026-10-17/source/validate-saved.py",
+    "childWallSeconds": 15,
+    "completionAssertions": {
+      "complete": true,
+      "passed": true
+    }
+  }
+}

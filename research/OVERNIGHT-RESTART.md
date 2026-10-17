@@ -1,3 +1,13 @@
+# Current source checkpoint — complete N1000 state preparation
+
+[Summary](m31-native-tree-state1000-2026-10-17/README.md) · [Precise restart](m31-native-tree-state1000-2026-10-17/RESTART.md) · [Three.js preparation preview](m31-native-tree-state1000-2026-10-17/viewer/).
+
+Source prepared/reviewed, execution disabled; no new numerical state has run. The proposed single-state F/H0/H comparison retains all1000receiver checks and17,000primary derivative words. Complete-success storage bound137,225,341bytes is calculated, not measured. Static source checks and9UIchecks passed; prelaunch path failure retained. Existing server8876unchanged. Window ends05:06:20UTC17October2026; draft requests no new scientific execution in that window. Overall goal active/incomplete.
+
+The immutable disabled draft and exact-public receipt belong to `m31-native-tree-state1000-2026-10-17/draft-manifest.json` and `publication-receipts/m31-state1000-draft-2026-10-17.json`. Future execution needs a new valid window and enabled source freeze. Do not infer high-precision N1000 accuracy, complete-controller correctness, flight, speed or physical validation from source preparation. The latest empirical result remains below.
+
+---
+
 # Current checkpoint — saved tree layout qualified, 17 October 2026
 
 [Summary](m31-tree-witness-layout-2026-10-17/SUMMARY.md): all 156 fixed saved records reconstruct exactly; both retained 5,000-drone H tree streams shrink by 77.93%. Independent checker and fixed controls passed, external supervisor exit 0. [Three.js inspector](m31-tree-witness-layout-2026-10-17/viewer/) shows original captured geometry with new checked storage figures; corrected UI check 55/55 passes, first test failure retained. [Exact restart](m31-tree-witness-layout-2026-10-17/RESTART.md) · [Next experiment](m31-tree-witness-layout-2026-10-17/review/NEXT-EXPERIMENT.md).

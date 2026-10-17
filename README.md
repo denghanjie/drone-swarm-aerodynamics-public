@@ -8,6 +8,8 @@ This is an ongoing research record, including unsuccessful experiments. The hist
 
 ## Current Milestone 31 restart
 
+Latest source checkpoint: [the 1,000-drone state test is prepared and disabled](research/m31-native-tree-state1000-2026-10-17/README.md). Independent source reviews and syntax checks are complete; a structural storage bound fits the planned limit, but no new numerical run occurred. The [updated Three.js preview](research/m31-native-tree-state1000-2026-10-17/viewer/) clearly shows earlier captured evidence. [Exact restart](research/m31-native-tree-state1000-2026-10-17/RESTART.md). The latest empirical result follows.
+
 Latest checkpoint: [saved evidence shrank by about 78% for both retained 5,000-drone trees](research/m31-tree-witness-layout-2026-10-17/SUMMARY.md). All 156 fixed record selections reconstructed exactly in an independent checker. The [updated Three.js inspector](research/m31-tree-witness-layout-2026-10-17/viewer/) shows the same captured states and checked storage figures. The earlier [browser scaling probe](research/m31-native-tree-browser-probe-2026-10-17/SUMMARY.md) remains a terminal storage-cap failure: it reached two stages of the first 5,000-drone case, but no 5,000-drone endpoint or full reference/checker completion. This is an engineering storage result, without speed, physical-validity or novelty claims. [Claims](research/m31-tree-witness-layout-2026-10-17/CLAIMS.md) · [Restart](research/m31-tree-witness-layout-2026-10-17/RESTART.md).
 
 The renewed window also completed [64-drone coupled-stage qualification](research/m31-coupled-stage-qualification-2026-10-17/) and [small native-tree qualification](research/m31-native-tree-design-2026-10-17/). The older source-preparation entries below are retained history.
