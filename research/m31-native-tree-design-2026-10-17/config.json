@@ -1,0 +1,44 @@
+{
+  "schema": "m31-native-tree-supervision-v1",
+  "executionAllowed": true,
+  "authorization": {
+    "id": "explicit-user-two-hour-window-received-2026-10-17T030620Z",
+    "approvedUtc": "2026-10-17T03:06:20+00:00",
+    "reviewedSourceManifestSha256": "48e60b2ab75074c2e4dc1765f98e57596e066b43f7ff817fa5538720dc19f2b2"
+  },
+  "launchCutoffUtc": "2026-10-17T05:06:20+00:00",
+  "stageOrder": [
+    "work",
+    "check"
+  ],
+  "limits": {
+    "perFileBytes": 33554432,
+    "combinedOutputLogScratchBytes": 134217728,
+    "totalWallSeconds": 180,
+    "closureAndOverheadSeconds": 15,
+    "pollSeconds": 0.1,
+    "finalizationByteAllowance": 2097152
+  },
+  "stages": {
+    "work": {
+      "runtime": "node",
+      "source": "research/m31-native-tree-design-2026-10-17/source/harness.cjs",
+      "childWallSeconds": 120,
+      "completionAssertions": {
+        "complete": true,
+        "runtimeIdentityVerified": true,
+        "inputsAndSourcesPreserved": true
+      }
+    },
+    "check": {
+      "runtime": "python",
+      "source": "research/m31-native-tree-design-2026-10-17/source/check.py",
+      "childWallSeconds": 45,
+      "completionAssertions": {
+        "complete": true,
+        "passed": true
+      }
+    }
+  },
+  "scope": "One fixed42-case126-query small harness under the explicit renewed two-hour user window. Full180s reserve before cutoff. No retry, speed, browser, trajectory, physical-validity or novelty qualification."
+}

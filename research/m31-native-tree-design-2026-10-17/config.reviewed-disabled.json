@@ -1,0 +1,40 @@
+{
+  "schema": "m31-native-tree-supervision-v1",
+  "executionAllowed": false,
+  "authorization": null,
+  "launchCutoffUtc": null,
+  "stageOrder": [
+    "work",
+    "check"
+  ],
+  "limits": {
+    "perFileBytes": 33554432,
+    "combinedOutputLogScratchBytes": 134217728,
+    "totalWallSeconds": 180,
+    "closureAndOverheadSeconds": 15,
+    "pollSeconds": 0.1,
+    "finalizationByteAllowance": 2097152
+  },
+  "stages": {
+    "work": {
+      "runtime": "node",
+      "source": "research/m31-native-tree-design-2026-10-17/source/harness.cjs",
+      "childWallSeconds": 120,
+      "completionAssertions": {
+        "complete": true,
+        "runtimeIdentityVerified": true,
+        "inputsAndSourcesPreserved": true
+      }
+    },
+    "check": {
+      "runtime": "python",
+      "source": "research/m31-native-tree-design-2026-10-17/source/check.py",
+      "childWallSeconds": 45,
+      "completionAssertions": {
+        "complete": true,
+        "passed": true
+      }
+    }
+  },
+  "scope": "Disabled source-only draft. One future explicitly authorized and source-published fixed-control/exposed64 numerical-equivalence attempt; no retry, trajectory, 5000 benchmark, performance or novelty claim. Full 180-second reservation must fit before cutoff. No OS memory containment claim."
+}
