@@ -1,0 +1,9 @@
+# Saved N1000 result display allocation
+
+One saved-data export, maximum60seconds external wall time and16MiB new outputs with8MiB per file, before07:15:28UTC17October2026. Export reads closed check/attempt/external exit, saved stage/H descriptors and hash-bound shards using the frozen binary reader. It imports only the saved reader's definitions, never a producer/reference/main/checker entry point. It does not independently rerun the scientific result.
+
+Render the actual single projected state at t0: all1000positions/orientations, and the five fixed receiver indices0,250,500,750,999 with their recorded gathered candidates and culled-node boxes. Decode columnar membership for these display selections only. Preserve exact binary64 pose words. No new initialization, trajectory, RK state, interpolation or simulation. Correctness label means conditional native equivalence/omission/derivative qualification only. Single fixed-order query times are diagnostics; no speed gate or statistical speedup is inferred.
+
+The exporter requires the closed successful attempt, qualified check and external exit0, otherwise refuses this success-specific display. Earlier failures remain unchanged. An unavailable/malformed display must remain empty. Source/result inventories are hashed before and after export. No scientific source or result is modified.
+
+One subsequent UI-only QA attempt is allocated90seconds,128MiB private browser/profile/logs,16MiB public screenshots/reports, before the same cutoff. Use installed pinned Playwright/Chrome, local URLs only; no scientific kernel. Check desktop/mobile, allfive receivers, exact poses/memberships/boxes/metrics, camera interaction, console health, invalid/missing data, source/result preservation and browser root exit/close. Preserve every failure. Any repair needs a separately recorded UI allocation; no silent retry. Keep8876unchanged.
