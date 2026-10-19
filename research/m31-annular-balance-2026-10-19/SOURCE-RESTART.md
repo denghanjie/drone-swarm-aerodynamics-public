@@ -1,0 +1,9 @@
+# Annular test — prospective source checkpoint
+
+The user authorized moving on from the closure-premise checkpoint. This separate cycle retains six geometry-only windows, one evaluator, one independent saved audit and one saved-evidence display. All old allocations stay closed. No overnight window is revived. No raw-PIV reprocessing, wake evaluation, fitting, paid resource or installation.
+
+Before launching: require final independent PROTOCOL-REVIEW and SOURCE-AUDIT, exact source-manifest/publication receipt, verify local and committed pins and separately retrieved exact-public manifest; check no active research job and absence of results launch locks. Then invoke source/supervise.py evaluate once using the installed modern Python. Preserve any failure. On terminal successful evaluator (including admission-failed procedural completion), invoke audit once. Do not retry or change frozen source. Both use60s and16MiB cumulative output caps.
+
+Only after successful independent audit and supervisor closure: derive viewer/pins.json from exact result bytes without new scientific calculations; invoke ui once using the installed Node/Playwright/Chrome under the external supervisor,60s/32MiB cumulative evidence. Inspect saved desktop/mobile screenshots. Display-only repairs require a separately declared allocation with the original failure preserved.
+
+All six windows must be admitted before any measured radial projection or flux calculation. Failed admission produces no airflow scores; report its specific predicates. Full/coarse differences are sensitivity, not experimental uncertainty. Preserve all original records, actual geometry, face evidence, results, failures, hashes, reviews and understandable conclusion. Update claim/literature/restart records and Three.js view, privacy-check, commit,push,verify public result. Keep localhost8876. Overall research goal remains incomplete; explicit user resume applies despite stale paused tool status.
