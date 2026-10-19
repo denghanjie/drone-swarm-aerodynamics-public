@@ -1,3 +1,13 @@
+# Current checkpoint — airflow strength adjustment transfers, 19 October2026
+
+[Summary](m31-airflow-scale-transfer-2026-10-19/SUMMARY.md) · [Exact restart](m31-airflow-scale-transfer-2026-10-19/RESTART.md) · [Three.js evidence](m31-airflow-scale-transfer-2026-10-19/viewer/).
+
+Sole evaluator and independent audit passed; closed allocations.800near cells determineA gain0.5450089858; unchanged gain on2440farther cells gives correctedNRMSE9.8043%, versus29.6402%for the adjusted published reference. A averageabsoluteerror reduction89.4195%is conditional on original units. This is useful within-dataset spatial transfer, not blind validation, identified physical calibration or novelty. Source1eb9841b70362923a4f7ffacde13af439d46dcf3,23pins publicly verified before execution. UI firstattempt passed7groups, desktop/mobile and6modes. Keep8876. Exact result receipt: publication-receipts/m31-airflow-scale-result-2026-10-19.json after verification.
+
+Next evidence: singlePIV dimensional normalization chain and a separate documented calibrated axial field before physical adoption. Preserve empiricalgain without inferring a factor-two correction from separate multiPIVscripts. Do not reject underlying profile solely from prior unscaled amplitudeerror. No closed allocation rerun, old overnight extension or new blindholdout claim. Overall research remains incomplete. Earlier entries remain history.
+
+---
+
 # Current checkpoint — direct airflow diagnostic complete, 19 October2026
 
 [Plain summary](m31-airflow-test-2026-10-19/SUMMARY.md) · [Exact restart](m31-airflow-test-2026-10-19/RESTART.md) · [Three.js airflow evidence](m31-airflow-test-2026-10-19/viewer-v2/).

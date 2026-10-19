@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "checks": [
+    "identity, meaningful content, no overlay, rendered3D",
+    "both gains, pooled primary metrics and both evaluation bands match saved evidence",
+    "sixdisplay mode states/legends and at least one distinct rendering; equal modes allowed for legitimate equal data",
+    "orbit and reset respond",
+    "mobile top/scene captured and no horizontal overflow",
+    "corrupt evidence refused before3D",
+    "no console/page/HTTP errors"
+  ],
+  "errors": [],
+  "browserPlugin": "not available; existing Playwright fallback",
+  "viewports": [
+    [
+      1280,
+      1000
+    ],
+    [
+      390,
+      844
+    ]
+  ],
+  "testFlow": "load -> sixsaved modes -> orbit/reset -> mobile -> corrupt evidence refusal"
+}

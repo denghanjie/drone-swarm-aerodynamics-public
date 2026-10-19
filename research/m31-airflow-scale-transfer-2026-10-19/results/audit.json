@@ -1,0 +1,49 @@
+{
+  "arithmetic": "Independent 60-digit Decimal gains and metrics from saved input words; no producer imports or wake evaluation.",
+  "calibrationOnlyGainsChecked": 2,
+  "calibrationUsesEvaluationCells": false,
+  "complete": true,
+  "correctedPredictionsChecked": 6480,
+  "elapsedSeconds": 0.07374937552958727,
+  "evaluatorSupervisorPin": {
+    "bytes": 206,
+    "path": "research/m31-airflow-scale-transfer-2026-10-19/results/evaluate-supervisor.json",
+    "sha256": "fd5d53232430d0aea205f2e2ae9a4aaa2b46671672779e532a04bb072bfff7f9"
+  },
+  "identifiedReferenceSpeedCalibration": false,
+  "independentPhysicalValidation": false,
+  "inputPin": {
+    "bytes": 1112834,
+    "path": "research/m31-airflow-test-2026-10-19/results/comparison.json",
+    "sha256": "dc5a713bb90d1f1303db5193dfc9bd4abb229f25e8674aa302ccd1aaf5c53bf3"
+  },
+  "inputPreserved": true,
+  "metricGroupsChecked": 16,
+  "originalBinary64WordsChecked": 25920,
+  "passed": true,
+  "primaryEndpointChecked": "Corrected normalized RMS discrepancy over pooled evaluation cells, separately for both declared models.",
+  "publicationPin": {
+    "bytes": 873,
+    "path": "research/m31-airflow-scale-transfer-2026-10-19/source-publication.json",
+    "sha256": "231a98d885411f39564b0af23e01ccc40d240a7eae1e4b0e7c87fa205aca3edc"
+  },
+  "recordsChecked": 3240,
+  "resultPin": {
+    "bytes": 1766917,
+    "path": "research/m31-airflow-scale-transfer-2026-10-19/results/comparison.json",
+    "sha256": "027165cb42fe4445496779d3f4cdb87a902248d38cdf9a8ddc4adfa1b042d269"
+  },
+  "resultsPreserved": true,
+  "schema": "m31-airflow-scale-transfer-independent-audit-v1",
+  "scope": "Exposed within-dataset planar transfer diagnostic; no new measurements, raw PIV decoding, model replacement, statistical inference or uncertainty calibration.",
+  "sourceManifestSha256": "1fc97a9f74b5f2372d2d67ae1f9f873f2c92c04b68f960147504cd19df293a55",
+  "sourcesPreserved": true,
+  "subsetCountsChecked": {
+    "calibration": 800,
+    "evaluation": 2440,
+    "far": 800,
+    "middle": 1640
+  },
+  "tolerance": "2e-12 absolute on gains, saved fit sums, velocities and metrics; numerical consistency only.",
+  "verifiedSourcePins": 23
+}
