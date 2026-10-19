@@ -1,0 +1,5 @@
+# Separate display-only correction
+
+The first saved-data UI allocation is closed with a selector timeout after initial page admission and state0check. No screenshot was captured. No browser JavaScript/HTTPerror was reported before the timeout. The test passed strings to selectOption while the options have zero-based values and one-based labels, allowing label/value ambiguity. This is a test-harness diagnosis, not an observed scientific mismatch.
+
+Keep viewer source, saved data, export and all previous source/results unchanged. A new source/ui-v2.cjs uses explicit value selection, writes only ui-v2/, and gates on its own display-manifest/publication. Its supervisor has separate permanent lock/receipt. All other assertions and budgets remain90secondsUI/100secondsowned-group supervision, one attempt. No native query, export or oldUIrerun. Before execution independently review, exact-source freeze, public push and separate publicmanifestverification. Preserve the original failedqa.json in this displayfreeze and finalresult.
