@@ -1,0 +1,2 @@
+# Superseded before public freeze or numerical execution
+Original draft treated reported32.5mm length as motor radius. Parent's final inspection of official PDFFig3/4 exposed that the dimension is a horizontal projection in a square motor layout. These files preserve the initial source/review reasoning, not an executed experiment or active protocol. No force values were decoded, no outcomes inspected, no allocation consumed by this draft. Current protocol/review must supersede it explicitly before launch.
