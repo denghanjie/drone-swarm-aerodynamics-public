@@ -1,3 +1,15 @@
+# Current checkpoint — buffered-neighbor test stopped, 20 October 2026
+
+[Plain summary](m31-buffered-failure-evidence-2026-10-20/SUMMARY.md) · [Exact restart](m31-buffered-failure-evidence-2026-10-20/RESTART-RESULT.md) · [Three.js evidence](m31-buffered-failure-evidence-2026-10-20/viewer/).
+
+Computational-only route confirmed by user. Original attempt closed after 18 calls with a harness expectation error. Separately corrected attempt closed after 31 calls: 12 small control pairs matched; six candidate-only 1,000-drone states succeeded; seventh refused with 186 unsupported source/receiver-rotor classifications. Eighth unevaluated. Zero 1,000-drone baseline queries and zero measured timing comparisons. No acceleration, large-case equality, physical validity, safety or novelty result. All candidate source unchanged; no movement shrinkage after failure.
+
+Saved-evidence export passed and closed. Original display failed; separately reviewed/publicly frozen correction passed six groups in 1.806587417 seconds. Both screenshots parent-inspected. All native/export/display allocations closed; retain failures and locks. Source 0137fc90ad9a4bfe303b73409d9f0fd1bb6f3ee0; display source 52d9fcedc363efa21a699cc328d1cf54cbe6ebf0. Final result receipt: publication-receipts/m31-buffered-failure-evidence-result-2026-10-20.json after verification. Keep 8876.
+
+Next distinct question: computational model admission during prescribed Boids motion, with a new prospective reviewed/publicly verified protocol. No new numerical allocation prepared or launched here. Overall goal incomplete. Earlier entries below remain history.
+
+---
+
 # Current checkpoint — measurement design complete, computational route active, 20 October 2026
 
 [Plain summary](m31-measurement-design-2026-10-20/MILESTONE-SUMMARY.md) · [Exact restart](m31-measurement-design-2026-10-20/RESTART.md) · [Three.js schematic](m31-measurement-design-2026-10-20/viewer/).
