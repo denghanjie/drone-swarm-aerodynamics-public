@@ -13,3 +13,5 @@ A useful next test is to consider a hollow sleeve outside that missing core. We 
 The earlier finding remains unchanged:84.03% of the farther paired squared error is opposite-direction error. No new prediction, fit or measurement score was produced. Actual speed calibration, independent experimental validation and swarm behavior remain unresolved.
 
 [Source reconciliation](SOURCE-RECONCILIATION.md) · [Proposed next test](NEXT-TEST.md) · [Verified sources](LITERATURE.md) · [Restart record](RESTART.md).
+
+The source and display were independently reviewed. The single display check passed 9 groups, including original-data identity, core overlay, six saved modes, desktop/mobile layout and corrupted-data refusal. No scientific test ran. All evidence and restart records are preserved for publication.

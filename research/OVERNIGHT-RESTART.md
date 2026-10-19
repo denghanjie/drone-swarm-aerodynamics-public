@@ -1,3 +1,13 @@
+# Current checkpoint — closure premises reviewed,19October2026
+
+[Plain summary](m31-closure-premises-2026-10-19/SUMMARY.md) · [Exact restart](m31-closure-premises-2026-10-19/RESTART.md) · [Three.js coverage view](m31-closure-premises-2026-10-19/viewer/).
+
+Source-only checkpoint: zero new numerical scientific allocations. RSS2025 Eq6 versus later Eq9 differs in shape/coefficient; no justified correction to our derivative-consistent S/2 implementation. Offset plane Y=1 misses core R<1; nominal common component scale documented, actual preprocessing unverified. Earlier84.03%opposite-direction error unchanged. Source c65389d06541ed304405e087416f2305afc18449 publicly verified before sole display allocation; 9 UI groups passed and display closed. Keep8876. Result receipt publication-receipts/m31-closure-premises-result-2026-10-19.json after verification.
+
+Next: prospectively define an annular continuity test outside missing core with explicit geometry/projection/uncertainty gates. Design only, no scientific plan frozen or calculation run. Do not fit away residuals, import later paper constants, reopen closed allocations, or claim physical validation/novelty. Overall goal incomplete. Earlier entries remain history.
+
+---
+
 # Current checkpoint — paired lateral error diagnostic complete, 19 October 2026
 
 [Plain summary](m31-lateral-symmetry-2026-10-19/SUMMARY.md) · [Exact restart](m31-lateral-symmetry-2026-10-19/RESTART.md) · [Three.js evidence](m31-lateral-symmetry-2026-10-19/viewer/).
