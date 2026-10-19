@@ -1,0 +1,3 @@
+# Claim boundary
+
+This stage documents a stopped computational experiment. The12corrected small control pairs matched fully. Six1000-drone candidate warmup states succeeded; the seventh was rejected for unsupported near-field interactions. The baseline1000-drone stream was never run and no timing comparisons completed. Those candidate states therefore do not establish1000-drone equality or speed.186counts source/receiver-rotor classifications, not drones, collisions or measured aerodynamic failures. No physical validation, safety or novelty claim. No changes are made to the input recipe or candidate after the refusal.
