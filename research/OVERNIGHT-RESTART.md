@@ -1,3 +1,13 @@
+# Current checkpoint — sideways airflow diagnostic complete,19October2026
+
+[Plain summary](m31-crossstream-test-2026-10-19/SUMMARY.md) · [Exact restart](m31-crossstream-test-2026-10-19/RESTART.md) · [Three.js evidence](m31-crossstream-test-2026-10-19/viewer-v2/).
+
+A standard no-swirl radial completion with the previously fixed axial gain reduced lateral RMS error23.59%versus zero on2,440farther locations. Remaining relative lateral RMS error76.41%is substantial. Same-experiment exposed-data diagnostic; no additional fit, physical calibration, independent validation, full3D/force/swarm safety or novelty.25,920original words,3,240candidate records and8metricgroups independently checked.17near cells excluded by fixed inner-core geometry; no missing lateral observations. Scientific evaluator/audit closed, both exit0. Sourceb5a98584ce32f1cb2b11493dc259118192d94f85 publicly verified35pins before execution. Final viewer-v2 passed separately bounded7group desktop/mobile check; original small-arrow version preserved. All display allocations closed. Keep8876.
+
+Next distinct question: prospectively matched left/right geometry and symmetry components before any further fitting. Do not infer a physical cause from bias, force exact symmetry on slightly mismatched coordinate pairs, or reopen closed allocations. External-data search found no admitted independent raw far-field dataset; Wolf near-field flux benchmark explicitly rejected without scoring. Single-PIV SI normalization unresolved. Overall research incomplete; explicit user resume applies despite stale goal flag. Final result receipt: publication-receipts/m31-crossstream-result-2026-10-19.json after exact-public verification. Earlier entries below remain history.
+
+---
+
 # Current checkpoint — airflow strength adjustment transfers, 19 October2026
 
 [Summary](m31-airflow-scale-transfer-2026-10-19/SUMMARY.md) · [Exact restart](m31-airflow-scale-transfer-2026-10-19/RESTART.md) · [Three.js evidence](m31-airflow-scale-transfer-2026-10-19/viewer/).

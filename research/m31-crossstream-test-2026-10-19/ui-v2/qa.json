@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "checks": [
+    "page identity, meaningful screen, rendered3D, no error overlay",
+    "inherited gain, primary metrics, selection counts and three bands match saved evidence",
+    "four modes, signed arrows, legends, distinct display",
+    "orbit and reset each change the rendered camera view",
+    "mobile top/scene captured; no horizontal overflow",
+    "corrupt evidence refused before3D",
+    "no console/page/HTTP errors"
+  ],
+  "errors": [],
+  "browserPlugin": "not available; existing Playwright fallback",
+  "viewports": [
+    [
+      1280,
+      1000
+    ],
+    [
+      390,
+      844
+    ]
+  ],
+  "testFlow": "load -> four saved modes/arrows -> orbit/reset -> mobile -> corrupt evidence refusal"
+}
