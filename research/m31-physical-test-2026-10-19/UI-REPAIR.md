@@ -1,0 +1,4 @@
+# Saved-display repair, attempt2 of at most3
+The first UI test passed all DOM/data/error/interaction checks, but parent visual inspection found the mobile full-page capture repeated the top viewport. That capture does not establish a correct full-page mobile rendering. It remains in ui/mobile.png. Desktop screenshot showed a correctly rendered3Dscene and data. Minor missing spaces in explanatory text were also noticed.
+
+Preserve original frozen viewer/ and source/ui.cjs untouched. New viewer-v2/ changes prose spacing only; source/ui-v2.cjs uses the same data/control checks with mobile viewport screenshots at the top and at the scene instead of a stitched full-page capture. Its own55s watchdog closes browser; externally60s bounded invocation. No model evaluator, auditor, data or scientific allocation is rerun. New screenshots remain separate. All source-manifest pins must still match. This repair uses the preallocated display attempts, not a new research cycle.

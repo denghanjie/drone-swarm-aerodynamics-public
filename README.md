@@ -4,6 +4,12 @@ Research into **which approximations of mutual aerodynamic interaction preserve 
 
 This is an ongoing research record, including unsuccessful experiments. The historical numerical pipeline runs offline on CPU; a new receiver-only component has also been evaluated on actual browser WebGPU. Three.js displays recorded trajectories and numerical evidence. A validated 5,000-drone, airflow-coupled WebGPU simulation has **not** been demonstrated.
 
+## Latest checkpoint — physical comparison, 19 October 2026
+
+[Plain-language result](research/m31-physical-test-2026-10-19/SUMMARY.md): our fixed, figure-matched model disagrees with published static two-drone mean forces. Upper lift changes by8.34percentage points of weight between25cm and110cm, versus modelzero; lower prediction MAE10.20points over11selected placements. No fitting. Independent data/arithmetic audit passed. Experimental calibration/drift uncertainty remains incomplete, so this is a descriptive physical discrepancy, not calibrated rejection or novelty. [Three.js measured-vs-predicted view](research/m31-physical-test-2026-10-19/viewer-v2/) · [Method](research/m31-physical-test-2026-10-19/PROTOCOL.md) · [Restart](research/m31-physical-test-2026-10-19/RESTART.md).
+
+The prior [18October cost decision](research/m31-cost-decision-2026-10-18/SUMMARY.md) found the unchanged tree slower on its tested workload. Physical-model adequacy now takes priority over optimizing that shortcut. Earlier “latest” labels below are historical snapshots, not the current restart state.
+
 ![Visible airflow in the milestone 32 lab](outputs/milestone-32-flock.png)
 
 ## Current Milestone 31 restart

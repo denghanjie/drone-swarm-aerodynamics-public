@@ -1,3 +1,13 @@
+# Current checkpoint — physical comparison complete, 19 October 2026
+
+User explicitly resumed after pause. [Summary](m31-physical-test-2026-10-19/SUMMARY.md) · [Exact restart](m31-physical-test-2026-10-19/RESTART.md) · [Three.js evidence](m31-physical-test-2026-10-19/viewer-v2/).
+
+Sole prospective evaluator and independent saved audit both complete, exit0. Upper measured contrast−0.0834078712W versus predictedzero; lowerMAE0.1019791556W over11stacked cases. Descriptive mismatch, no calibrated statistical rejection, physical-validation or novelty claim. Frozen source dce1a2949aa425738ef9dbee7b8b1f0e0b378a03;43pins independently public-verified before execution. Preserve pre-execution geometry correction and discarded unexecuted radial-l draft. All scientific allocations closed; do not rerun. Saved-only UI repair in viewer-v2 is complete; capture limitations disclosed in UI-QA. Keep localhost8876. Result identity in publication-receipts/m31-physical-test-result-2026-10-19.json after publication verification.
+
+No overnight automation/window is reactivated or extended. Next new numerical cycle requires its own protocol/review/public source verification. Prior entries below are retained history.
+
+---
+
 # Current source checkpoint — complete N1000 state preparation
 
 [Summary](m31-native-tree-state1000-2026-10-17/README.md) · [Precise restart](m31-native-tree-state1000-2026-10-17/RESTART.md) · [Three.js preparation preview](m31-native-tree-state1000-2026-10-17/viewer/).

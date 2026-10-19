@@ -1,0 +1,67 @@
+{
+  "arithmetic": "Independent 70-digit Decimal model, explicit stacked rotor geometry, 160-step monotonic cubic enclosure.",
+  "calibratedPhysicalValidation": false,
+  "complete": true,
+  "coordinateCellsChecked": 336,
+  "elapsedSeconds": 0.10532379243522882,
+  "evaluatorSupervisorPin": {
+    "bytes": 103,
+    "path": "research/m31-physical-test-2026-10-19/results/evaluate-supervisor.json",
+    "sha256": "2dd8e1e38bb29ad014e8d5529b2b22f77abc01760ac1eea09978cebe3e77515d"
+  },
+  "modelComparisonTolerance": "absolute error <= 2e-12 * max(1, abs(independent value)); numerical audit tolerance only",
+  "nominalCasesChecked": 11,
+  "passed": true,
+  "publicationPin": {
+    "bytes": 855,
+    "path": "research/m31-physical-test-2026-10-19/source-publication.json",
+    "sha256": "e27cc5de325d7d23c5f7cdde244851e89a2fdc6aa6a6453452d7900a85eb2d58"
+  },
+  "rawDataPins": [
+    {
+      "bytes": 255,
+      "path": "research/m31-physical-test-2026-10-19/data/x_l.mat",
+      "sha256": "7b3d8b097d2121b3fb69249692b557ac6a30458166dd60452dbbb2ed0dda51e6"
+    },
+    {
+      "bytes": 264,
+      "path": "research/m31-physical-test-2026-10-19/data/z_l.mat",
+      "sha256": "da2b40e5f16c1d3b4c48f1f66209c7bcc6fac8307a5280ebec386a05303f7910"
+    },
+    {
+      "bytes": 525,
+      "path": "research/m31-physical-test-2026-10-19/data/upper_F_W.mat",
+      "sha256": "d9fd6534473e8c797d6b542646ab83f78e7c4173508fd2edb8cd0bfc4013c8d0"
+    },
+    {
+      "bytes": 1411,
+      "path": "research/m31-physical-test-2026-10-19/data/lower_F_W.mat",
+      "sha256": "3fb714fa8b2faca8f44cb3cf1788b61bc8bd11591eacf8290a20725428287da4"
+    },
+    {
+      "bytes": 380,
+      "path": "research/m31-physical-test-2026-10-19/data/upper_Fstd_W.mat",
+      "sha256": "04d02706e733b1485a866dcfb08173991079518e397fe55cc7333cd7198de2dc"
+    },
+    {
+      "bytes": 383,
+      "path": "research/m31-physical-test-2026-10-19/data/lower_Fstd_W.mat",
+      "sha256": "747fe9a7b6651814db38ae5aa8ffb42f623faff29022d822d14e0c26b8082a19"
+    }
+  ],
+  "rawSelectedWordsChecked": 44,
+  "resultPin": {
+    "bytes": 235014,
+    "path": "research/m31-physical-test-2026-10-19/results/comparison.json",
+    "sha256": "61d81032b36aa9952bfea214269298ce82dd0c4fd6d68342a54812313966c0f9"
+  },
+  "resultsPreserved": true,
+  "schema": "m31-physical-independent-audit-v1",
+  "scope": "Saved-result arithmetic and data binding; no new cases, fitting, statistical CI, or experimental uncertainty calibration.",
+  "selectedObservationComparison": "exact binary64 word equality after independent MATLAB v5 decode",
+  "sensitivityCasesChecked": 891,
+  "sourceManifestSha256": "e30b781de528733051a8898cd2128af3bc193848dd8a9bc073f7356649c8e5d4",
+  "sourcesPreserved": true,
+  "statisticalRejectionEstablished": false,
+  "verifiedSourcePins": 43
+}
