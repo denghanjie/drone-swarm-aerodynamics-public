@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "checks": [
+    "public frozen source and exact proposal record",
+    "page identity, meaningful rendered schematic and proposal-only labels",
+    "72 coverage/height/azimuth states with correct proposed-point and direction counts",
+    "orbit/reset visibly change schematic view",
+    "desktop/mobile screenshot evidence and no horizontal overflow",
+    "corrupted proposal record refused before rendering",
+    "no console, page or HTTP errors"
+  ],
+  "errors": [],
+  "browserPlugin": "Browser plugin not available; existing Playwright fallback",
+  "viewports": [
+    [
+      1280,
+      1000
+    ],
+    [
+      390,
+      844
+    ]
+  ],
+  "testFlow": "load ->72coverage/height/azimuth states -> orbit/reset -> mobile -> corrupted proposal refusal"
+}
