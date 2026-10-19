@@ -1,0 +1,5 @@
+# Current preparation — cross-component test
+
+User “Move on” authorizes this separately bounded cycle. Prior source/result/display allocations remain closed. New protocol and evaluator prepared, independent audit/source review pending. No candidate arithmetic, new fitting, synthetic controls, evaluator, audit or display allocation has run. Do not launch until exact frozen source is public and independently verified. Inspect permanent results locks before any action; no rerun if any allocation is consumed.
+
+Inputs: saved original3240cases and prior A gain .5450089857597356 only. No MAT decoding. Candidate standard continuity-required radial flow projected onto actual y/l=1 measurement plane, no mean swirl. Primary Z>=12, xi<=2, finite v; preserve excluded records. No calibration, independence or novelty claim. Source sign is documented in paper and script; full normalization remains unresolved. Keep8876 unchanged. Broader goal incomplete; stale paused goal flag is superseded by explicit user resume.

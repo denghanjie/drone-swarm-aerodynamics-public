@@ -1,0 +1,7 @@
+# Privacy and publication review
+
+Scope: new checkpoint source, protocols, reviews, derived public measurements and evidence view. Original measurements are public Brown CC BY4.0, attributed in literature and viewer. No private chat attachments, account credentials, private environment dumps, user directories, contact details, unpublished third-party files or personal records are needed in the public package. Source paths are repository-relative; UI uses localhost8876 and existing local vendor libraries. Institutional publication links identify only public scholarly sources.
+
+Before each commit inspect staged changes and scan this package for private paths, credential patterns, private keys and sensitive user material. New results must contain only the inherited public measurements, deterministic predictions/metrics, numerical checks and bounded execution records. Screenshots must show only the research page. Source and result manifests preserve exact public provenance. Independent manifest retrieval verifies exact public manifest bytes plus all local/committed pins; it does not claim every public binary was downloaded.
+
+Source checkpoint inspection completed19October2026: staged paths limited to this new package; pattern scan found no private paths or credential markers; public sources and original scholarly attribution retained. No science or browser output existed at this source freeze.
