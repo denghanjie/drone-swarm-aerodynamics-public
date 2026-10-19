@@ -1,0 +1,13 @@
+# Unexecuted next test: can measured airflow balance in an annulus?
+
+Design proposal only. No numerical allocation, radii/heights selection, data pairing, projection, quadrature, derivative, control, score, threshold, fit or result has been executed or frozen by this document.
+
+Question: under the explicit axisymmetric/no-mean-swirl interpretation, do measured axial and lateral components satisfy a finite annular continuity balance over supported radii away from X=0? This would test a physical relation without guessing the unmeasured center or refitting the current wake.
+
+Use the integrated equation in SOURCE-RECONCILIATION.md. Evaluate left and right side evidence separately before any averaging; an average can hide disagreement. A common unknown constant velocity normalization multiplies both flux terms equally, so a dimensionless balance can avoid that one nuisance scale. This does not address different u/v scales, variable calibration, projection error, axisymmetry, swirl, stitching or experimental uncertainty. Avoid calling agreement validation or failure a unique causal rejection.
+
+Before launch, write and independently review one prospective protocol that fixes: exact saved input pins; nonzero-X lower bound for stable projection; geometry-only deterministic selection of radial/height support; whether actual coordinates allow a common annular rectangle without interpolation; all exclusions and coverage; a capped set of rectangles; integration method and orientation; units and normalization of the balance; handling zero denominators; synthetic analytic controls; numerical error checks and uncertainty limitations; all run/output bounds; and independent audit. No selection may use measured residual quality, and exposed data cannot become blind holdout.
+
+Prefer a finite-volume/integral balance to differentiating a stitched mean field. If interpolation is unavoidable, its assumptions and a separate discretization-error assessment must be fixed before scoring. Do not invent an experimental error bar from a numerical convergence check. A pass would demonstrate conditional consistency only, and a failure could reflect geometry, unmodeled components, normalization or measurement processing.
+
+Do not fit width, center, background velocity or a lateral multiplier as part of this test. If no fixed, interpretable geometry can be admitted, preserve an admission failure and pursue independent data/provenance rather than widening bounds until a score appears. New scientific source must be publicly frozen and exact-public verified before execution, with reused independent reviewers, raw evidence and a new Three.js milestone.
