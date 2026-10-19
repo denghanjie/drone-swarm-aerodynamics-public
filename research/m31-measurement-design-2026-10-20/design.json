@@ -1,0 +1,54 @@
+{
+  "schema": "m31-measurement-design-v1",
+  "status": "proposal-not-executed",
+  "scientificRuns": 0,
+  "coordinateScale": "dimensionless l; new physical scale not established",
+  "heights": [
+    12,
+    18,
+    24
+  ],
+  "radii": [
+    1.5,
+    2.5
+  ],
+  "azimuthDegrees": [
+    0,
+    45,
+    90,
+    135,
+    180,
+    225,
+    270,
+    315
+  ],
+  "sites": 48,
+  "modes": [
+    {
+      "id": "one",
+      "title": "One sideways reading",
+      "points": 1,
+      "headline": "Outward motion and swirl can be mixed together.",
+      "explanation": "One horizontal velocity component is only one projection of two unknown motions. More locations do not remove that ambiguity without extra assumptions. At special angles one motion is directly observed; the other still is not."
+    },
+    {
+      "id": "three",
+      "title": "Three directions at one point",
+      "points": 1,
+      "headline": "Separate the local directions of motion.",
+      "explanation": "Two horizontal components separate outward motion from swirl at this point. The third component measures downward motion. Calibration is still essential; one point cannot establish symmetry."
+    },
+    {
+      "id": "map",
+      "title": "Rings at three heights",
+      "points": 48,
+      "headline": "Check whether the same picture holds around the wake.",
+      "explanation": "Two rings, eight positions per ring, three heights: 48 planned locations. Three signed components at each location permit sampled comparisons. These are spatial sites, not independent repeats, and cannot certify the entire wake."
+    }
+  ],
+  "limitations": [
+    "Proposed measurements only; no new flow data or speed values.",
+    "Direction arrows have arbitrary lengths; they do not show airspeed.",
+    "Physical scale, facility, precision and model amplitude remain unresolved."
+  ]
+}

@@ -1,0 +1,2 @@
+# Source-stage restart
+Design/methods checkpoint only; zero scientific execution. Wait for completed independent reviews, exact source freeze/public verification before sole display allocation. All previous allocations and candidate searches remain closed. Do not acquire hardware/data, contact authors, compute pilot precision or run the model. Keep8876. Result-stage RESTART.md will preserve the actual QA/publication outcome.
