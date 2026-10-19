@@ -1,3 +1,13 @@
+# Current checkpoint — paired lateral error diagnostic complete, 19 October 2026
+
+[Plain summary](m31-lateral-symmetry-2026-10-19/SUMMARY.md) · [Exact restart](m31-lateral-symmetry-2026-10-19/RESTART.md) · [Three.js evidence](m31-lateral-symmetry-2026-10-19/viewer/).
+
+Opposite-direction paired residual accounts for 84.03% of primary squared error; same-direction part 15.97%. Primary 1,220 pairs cover all 2,440 included farther cells. Model error unchanged. Full recursive preservation and 1,611 pairs independently checked; sole evaluator/audit/UI passed and all allocations closed. Source 997d194fca428ce6145b5d438c2e0ae7d499d9dc public-verified with 25 pins before execution. Prelaunch documentation-pin correction preserved. Result receipt: publication-receipts/m31-lateral-symmetry-result-2026-10-19.json after verification. Keep8876.
+
+Next distinct question: source-faithful lateral-closure premises, width/spreading/coordinate definitions, axial derivatives and common velocity normalization. A constant sideways drift changes only the same-direction component and cannot fix dominant opposite-direction error. Do not infer a missing factor or cause, or fit away the observed component. Same-experiment diagnostic, not new predictive improvement, physical validation or novelty. Overall goal incomplete; no old overnight window revived. All earlier entries below remain history.
+
+---
+
 # Current checkpoint — sideways airflow diagnostic complete,19October2026
 
 [Plain summary](m31-crossstream-test-2026-10-19/SUMMARY.md) · [Exact restart](m31-crossstream-test-2026-10-19/RESTART.md) · [Three.js evidence](m31-crossstream-test-2026-10-19/viewer-v2/).

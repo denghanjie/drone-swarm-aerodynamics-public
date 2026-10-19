@@ -1,7 +1,9 @@
-# Claim ledger — prospective state
+# Claim ledger — completed paired-support diagnostic
 
-Previous evidence: the fixed candidate improved lateral RMS error versus zero by23.59%over2,440farther cells, with76.41%relative RMS remaining. Those results and all prior allocations remain closed.
+Supported on the fixed, previously exposed same-experiment support: 1,220 primary pairs cover all 2,440 included primary locations; same-direction residual squared-error share 0.15973756334998876 and opposite-direction share 0.8402624366500112. Near/middle/far shares and coverage are saved in results/comparison.json; independently checked in results/audit.json. No model or observation changed.
 
-New question: describe residual energy through paired same-direction and opposite-direction components at prospectively matched geometry. No model correction or new fitting. Empirical answer pending sole evaluator and independent audit; no outcome assumed.
+Primary candidate RMS remains 0.011747573789293128 reference-speed units, exactly the prior full-field result. Prior 23.59% improvement versus zero remains inherited, not an additional gain. The current observed/predicted opposite-component RMS values are 0.014639787684986838 / 0.003936218285901333; this is a descriptive amplitude mismatch, not a calibrated causal finding.
 
-Mathematical identity: total paired residual SSE equals twice the sum of squared pair-component errors. Valid even on imperfect mirror geometry; not physical evidence. Nonzero same-direction data cannot identify swirl, drift, sensor processing or any other unique cause. No independent-validation, calibration, physical acceptance, full3D/force/flocking/safety or novelty claim.
+Algebraic implication: a constant additive lateral offset changes E but cancels from O, so it cannot remove the dominant O residual on this retained support. No offset was fitted. E varies per pair, is not one global background, and is not physical kinetic energy. Neither E nor O identifies a particular physical cause or correct coefficient. The paired sum/difference energy identity is mathematical, not empirical validation of continuity or field symmetry.
+
+Unsupported: new predictive improvement, a justified factor correction, causal swirl/drift/center/calibration attribution, SI calibration, blind/independent validation, confidence from correlated cells, accurate full-vector/force/flocking behavior, safety or novelty. Next source-premise investigation is a research decision, not an established explanation.
