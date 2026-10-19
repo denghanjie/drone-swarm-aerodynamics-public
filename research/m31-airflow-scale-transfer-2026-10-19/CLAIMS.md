@@ -1,0 +1,3 @@
+# Prospective claim limits
+Allowed: observed within-dataset near-to-far transfer of exactly one empirical multiplier per fixed model, corrected normalized RMS discrepancy, conditional baseline improvements and remaining bias. Independent arithmetic agreement is separate from physical agreement.
+Not established: exact Ui/UH calibration, particular author's or dataset's error, independent/blind generalization, uncertainty-calibrated statistical rejection,3D wake/receiving-force/swarm validation, novel physics or computational breakthrough. Gains cannot identify the cause of mismatch. Both regions were already exposed; the reference is already a same-study fit. No parameter/partition tuning or forced positive result.
