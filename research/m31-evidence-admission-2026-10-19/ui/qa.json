@@ -1,0 +1,25 @@
+{
+  "passed": false,
+  "checks": [
+    "public source and all frozen documentary/historical pins match",
+    "identity, meaningful 3D screen, historical point count and nominal coverage geometry",
+    "all four source explanations and verified source links",
+    "coverage toggle changes only saved-point highlighting",
+    "orbit and reset visibly change geometry view"
+  ],
+  "errors": [
+    "The expression evaluated to a falsy value:\n\n  assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth))\n"
+  ],
+  "browserPlugin": "Browser plugin not available; installed Playwright fallback",
+  "viewports": [
+    [
+      1280,
+      1000
+    ],
+    [
+      390,
+      844
+    ]
+  ],
+  "testFlow": "load -> four evidence sources -> historical coverage toggle -> orbit/reset -> mobile -> three corrupt-input refusals"
+}
