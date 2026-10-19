@@ -1,0 +1,5 @@
+# Prospective saved-evidence UI validation
+
+Flow: load -> six region choices at both original resolutions -> compare four measured/model/error/J terms -> highlight each face's original sampled nodes -> orbit/reset -> desktop/mobile -> reject corrupted result and audit before drawing the scene.
+
+The frontend testing skill applies. Browser plugin is unavailable; installed Playwright/Chrome fallback, no installation. One60s/32MiB cumulative display invocation, only after successful evaluator and independent audit. Source and QA code are frozen before science. Post-result viewer/pins.json binds the audited result and is included in the result publication manifest. Check page identity, meaningful content, no overlay, console/page/HTTP health, all12region/resolution states,4face controls, camera changes,1280×1000and390×844screenshots and horizontal overflow. Parent visually inspects screenshots. No live model, flocking or physical-volume animation runs; all geometry and comparisons display saved records and stated assumptions.
