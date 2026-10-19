@@ -1,0 +1,40 @@
+{
+  "schema": "m31-evidence-admission-v1",
+  "decision": "no-new-admission",
+  "newScientificRuns": 0,
+  "entries": [
+    {
+      "id": "brown",
+      "title": "Existing Brown measurements",
+      "status": "Calibration trail unresolved",
+      "reason": "The earlier README and plot script describe nominal units. This search did not recover the exact conversion and processing chain for the released single-drone components. Failed repository accesses leave metadata unverified.",
+      "missing": "Exact release \u2192 calibrated components \u2192 signed axes \u2192 normalization \u2192 masks and section stitching.",
+      "url": "https://arxiv.org/abs/2507.09463"
+    },
+    {
+      "id": "cene",
+      "title": "Cene: a different drone",
+      "status": "Not admitted for this test",
+      "reason": "The accessible paper studies a small drone with ducted rotors in a rectangular layout. Its still-air signed vertical-component plane is near the rotors; longer sections show speed magnitude. The inspected listing contains a paper, not verified component arrays.",
+      "missing": "Compatible geometry and downstream signed-component files with traceable calibration and license.",
+      "url": "https://www.procap.tech/download/february-2026-3af-international-conference-simon-barbe-andrin-landolt-ivan-lunati-and-claudio-mucignat/"
+    },
+    {
+      "id": "water",
+      "title": "Hackett: water beneath a drone",
+      "status": "Different measurement",
+      "reason": "This release documents water circulation stirred by a hovering drone. Water velocity cannot substitute for the airborne wake components we need.",
+      "missing": "Air velocity measurements in the model\u2019s applicable geometry and domain.",
+      "url": "https://data.mendeley.com/datasets/ttmghxd4j3/1"
+    },
+    {
+      "id": "logs",
+      "title": "Hundur: flight logs and calculations",
+      "status": "Different measurement",
+      "reason": "The repository describes flight-controller logs and processed computational-flow tables. These are not independent experimental measurements of the wake components.",
+      "missing": "Measured signed air velocities, with locations, units and uncertainty.",
+      "url": "https://data.mendeley.com/datasets/84mp2p3php/1"
+    }
+  ],
+  "limitation": "Bounded search; no claim that suitable data do not exist. Prior results unchanged."
+}

@@ -1,0 +1,3 @@
+# Source publication review
+
+The new source package contains attributed public-source notes, reviewed admission decisions, measurement requirements and a local viewer of previously published evidence. No raw experimental archives, full papers, private chat attachments, correspondence, contact information or personal acquisition paths are added. Text will be checked for private home/temp paths, email addresses and credential/private-key markers before freeze; exact scan completion is required by the freeze script. This bounded check does not audit all repository history. Screenshots do not yet exist and require visual review after the sole display allocation.
