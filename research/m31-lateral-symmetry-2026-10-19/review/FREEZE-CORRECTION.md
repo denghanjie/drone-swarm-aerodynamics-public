@@ -1,0 +1,3 @@
+# Pre-execution source-record correction
+
+The first local source commit dc3a5e8 retained a stale viewer/index.html identity in the protocol-review table after a wording clarification. The current manifest pinned the actual file, but the table did not. The parent identity assertion detected this before public push or numerical execution; a shell sequence nevertheless continued to a local commit. No scientific or display allocation was consumed. That commit and its original manifest are preserved, and the reviewer re-read the exact final page before correcting its table. The new source manifest supersedes the unexecuted local freeze. Future source gates use only the new public exact-commit receipt. No physics, pairing, evaluator, auditor or test budget changed.

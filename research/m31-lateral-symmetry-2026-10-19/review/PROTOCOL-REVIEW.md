@@ -62,6 +62,8 @@ Six modes show total error, E error, O error, measured flow, fixed candidate and
 
 Text reports paired coverage/mismatch and both paired and unchanged full-field RMSE. It explains that the component shares are squared-error shares, not measured physical causes, and that the model is unchanged. Before freeze, the exact-share tie branch was corrected, the model-minus-measurement sign was made explicit, and the UI assertion was extended to check paired RMSE as well as full-field RMSE. These edits were re-read statically.
 
+Prelaunch correction: the final HTML sentence was shortened to “Each error component is model minus measurement. We retain the model's same-direction component rather than assuming it is zero.” That wording was re-read and its updated byte size/hash is recorded below. The parent reported that a pre-execution identity check caught the earlier stale review pin before public push or numerical launch; the local preparation history is retained. This correction changes no matching, component, metric or model logic. The final source manifest must use the corrected review and HTML identities.
+
 The prospective UI check covers six mode states, exact saved sparse-arrow counts including zero cases, primary/band share and coverage/mismatch text, both RMSE contexts, desktop/mobile captures, orbit/reset response, corrupted-evidence refusal before 3D rendering, and console/page/HTTP health. It does not recompute scientific metrics or fit anything. No browser run occurred in this review, and no rendered-legibility or UI pass is claimed. The parent must inspect saved screenshots after the sole UI allocation as required by the protocol.
 
 ## Remaining gates and reviewed identities
@@ -78,7 +80,7 @@ Paths below are relative to this package. Any source changes require static re-r
 | `source/supervise.py` | 1715 | `8796138c2d41de00f3ce91c8680d655e8f451bdae2dbfccdbc71e6ea8eb0ed20` |
 | `source/ui.cjs` | 6070 | `90095f1dc099fd8a55ef2ef7e7d591cdd7588c95443ad86af1ee00e47808f4f3` |
 | `viewer/app.js` | 7368 | `730c76e9861881f2fd04a7d67f9169ab8f05321a4f3d11374beea0f2f72f4116` |
-| `viewer/index.html` | 5176 | `bb9d49ce9ad38f056067999e28bc830ac73e189f1db8e944a49d6082577b035c` |
+| `viewer/index.html` | 5135 | `7377fd04ad15a91a3132ed4d08600972e7e9c231974c7a7e97ce82de34aaf483` |
 | `review/PAIR-DECOMPOSITION.md` | 6072 | `c0b1e8f2816e13ce8c462827629e841b9c2237ca704aead5f5ddd3336fbf8371` |
 
 No new pairing count, component share or other numerical result is known at this review boundary. The overall research objective remains incomplete regardless of the eventual descriptive decomposition.
