@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "checks": [
+    "public frozen source and exact audited result identity",
+    "page identity, meaningful screen, correct admission status and rendered saved points",
+    "all six fixed regions and saved full/coarse/signed values match",
+    "twelve region/resolution combinations; signed faces, highlighted counts and null handling match",
+    "orbit and reset visibly alter view",
+    "desktop and mobile screenshots; no horizontal overflow",
+    "corrupt evidence refused before scene creation",
+    "no console, page or HTTP errors"
+  ],
+  "errors": [],
+  "browserPlugin": "Browser plugin not available; installed Playwright fallback",
+  "viewports": [
+    [
+      1280,
+      1000
+    ],
+    [
+      390,
+      844
+    ]
+  ],
+  "testFlow": "load -> six regions and two resolutions -> orbit/reset -> mobile -> corrupt evidence refusal"
+}
