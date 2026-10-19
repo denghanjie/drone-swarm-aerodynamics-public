@@ -1,3 +1,13 @@
+# Current checkpoint — direct airflow diagnostic complete, 19 October2026
+
+[Plain summary](m31-airflow-test-2026-10-19/SUMMARY.md) · [Exact restart](m31-airflow-test-2026-10-19/RESTART.md) · [Three.js airflow evidence](m31-airflow-test-2026-10-19/viewer-v2/).
+
+Sole evaluator and independent audit passed; both closed.3,240selected single-drone PIV cells; current axial wake MAE0.2320302575Ui, published planar fitted reference0.08572918677Ui. Conditional airflow mismatch, not physical validation or novelty. Shared induced-scale and observable/plane assumptions remain. Published fit is same-experiment reference, not independent validation. Source4163a275fd5c0bc090384dffe80aeb9db6c212fb,21pins publicly verified before execution. UIattempt1 failedresource404; separate v2passed7groups and desktop/mobile checks; all failures retained. Keep8876. Result receipt: publication-receipts/m31-airflow-result-2026-10-19.json after verification.
+
+Next: source-faithful normalization/planar-reference reconciliation before new fitting/force transfer. Do not rerun consumed allocations or treat exposed PIV cells as blind holdout. User resumed; overall goal incomplete. No old overnight window or automation reactivated. Earlier entries remain history.
+
+---
+
 # Current checkpoint — physical comparison complete, 19 October 2026
 
 User explicitly resumed after pause. [Summary](m31-physical-test-2026-10-19/SUMMARY.md) · [Exact restart](m31-physical-test-2026-10-19/RESTART.md) · [Three.js evidence](m31-physical-test-2026-10-19/viewer-v2/).

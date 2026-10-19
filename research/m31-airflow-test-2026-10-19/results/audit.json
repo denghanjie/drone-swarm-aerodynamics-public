@@ -1,0 +1,69 @@
+{
+  "arithmetic": "Independent 60-digit Decimal l-unit expressions; explicit column-major MAT decoding.",
+  "complete": true,
+  "countsChecked": {
+    "accepted": 3240,
+    "candidates": 9180,
+    "missingU": 0,
+    "missingV": 0,
+    "nonfiniteCoordinates": 0,
+    "outsideDomain": 5940
+  },
+  "elapsedSeconds": 0.09509104210883379,
+  "evaluatorSupervisorPin": {
+    "bytes": 206,
+    "path": "research/m31-airflow-test-2026-10-19/results/evaluate-supervisor.json",
+    "sha256": "a4fd2e7499b63527f359ac0f2b271b78c0e70987ca80d6e4314d2d2e370f37c7"
+  },
+  "fieldPredictionsChecked": 6480,
+  "independentPhysicalValidation": false,
+  "maximumIndexRule": "First column-major maximum of independently checked binary64 residuals; independent high-precision maximum agrees within tolerance.",
+  "metricGroupsChecked": 8,
+  "passed": true,
+  "publicationPin": {
+    "bytes": 853,
+    "path": "research/m31-airflow-test-2026-10-19/source-publication.json",
+    "sha256": "d00a9989897797d2af395b4c74c61dca219d15e5f49e12f1179b3794dfee535c"
+  },
+  "rawDataPins": [
+    {
+      "bytes": 310555,
+      "path": "research/m31-airflow-test-2026-10-19/data/x_piv.mat",
+      "sha256": "4c06c41bbb20e96859da9510a303db8b95fdd5f0ef554fe9eab5e9534fa111aa"
+    },
+    {
+      "bytes": 13407,
+      "path": "research/m31-airflow-test-2026-10-19/data/z_piv.mat",
+      "sha256": "0b2b45b8f8b548a94d14d41d1ac8233fb26a95ef2b87fdab11d10d395f9f0e44"
+    },
+    {
+      "bytes": 1097141,
+      "path": "research/m31-airflow-test-2026-10-19/data/u_piv.mat",
+      "sha256": "7e53479b66dac0090b50ea4905cd9c7e2d576cb620855034326efe7ba089fa68"
+    },
+    {
+      "bytes": 1107084,
+      "path": "research/m31-airflow-test-2026-10-19/data/v_piv.mat",
+      "sha256": "b6f23844c46c237870a4871f057274fda958f79a6de209d62cfc684f8b4876ac"
+    },
+    {
+      "bytes": 4960,
+      "path": "research/m31-airflow-test-2026-10-19/data/README_static.txt",
+      "sha256": "2695a000f2beac1c2f84d645bf6c0b24ca879f5b7ecb8d9873e2b6cfd8e4de6b"
+    }
+  ],
+  "rawSelectedWordsChecked": 12960,
+  "resultPin": {
+    "bytes": 1112834,
+    "path": "research/m31-airflow-test-2026-10-19/results/comparison.json",
+    "sha256": "dc5a713bb90d1f1303db5193dfc9bd4abb229f25e8674aa302ccd1aaf5c53bf3"
+  },
+  "resultsPreserved": true,
+  "schema": "m31-airflow-independent-audit-v1",
+  "scope": "Saved airflow records, exclusion counts, two declared fields and summaries only; no new cases, fitting, uncertainty calibration, or receiving-force model.",
+  "sourceManifestSha256": "4a2a743d07b5b92e86154ae0b04bef2bc9eddab570d42f97ea9ebfab2643bcb4",
+  "sourcesPreserved": true,
+  "statisticalRejectionEstablished": false,
+  "tolerance": "2e-12 absolute in Ui units; numerical audit tolerance only",
+  "verifiedSourcePins": 21
+}
