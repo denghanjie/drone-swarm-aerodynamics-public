@@ -1,3 +1,15 @@
+# Current checkpoint — longer Boids motion exposes floor contact,20October2026
+
+[Plain summary](m31-boids-continuation-2026-10-20/SUMMARY.md) · [Exact restart](m31-boids-continuation-2026-10-20/RESTART-RESULT.md) · [Three.js replay](m31-boids-continuation-2026-10-20/viewer/).
+
+Computational-only route. Four exact prior endpoints continued from originalt=1 under fixed rules. Firstseed bothresolutions stopped at4.62/4.6175seconds: drone17 vehicle-model limit plus modeled floor contact. Secondseed both reached5seconds. All18,284native stages admitted; no native refusal. Audit passed28,958records/4,571steps/1,170,176derivative-load rows. Additional mean descent~1.75–1.84m has no isolated cause. Saved neighbors changed;0/4reported saturation flags per path. No physical validity,safety,novelty,speed or scalability claim.
+
+Storage/native/audit/UI allpassed and CLOSED; no retries. Sourcee9d1d09d83b31c7d346473165a4e112061aae933(public51pins). Direct32MiB-or-smaller parts preserve allrawJSONbytes; part/compressed/raw hashes audited. Sole display7groups/4,575buffers passed; bothscreenshots parent-inspected; ownedbrowser exited and8876HTTP200. Viewer does not drawfloorgeometry/IDlabels; exact savedstopquotes identify the event. Finalresultreceipt:publication-receipts/m31-boids-continuation-result-2026-10-20.json afterverification. Prior one-second publication recovery resolved; receiptpublic259d768.
+
+Next: saved-evidence tracing of drone17verticalsteering/control/load/motion before changingcontrols orscaling. Causalclaims require aseparateintervention. No new allocation opened. Preserve history and keep8876; overallresearch incomplete.
+
+---
+
 # Current checkpoint — one-second coupled Boids admission passed, 20 October 2026
 
 [Plain summary](m31-boids-admission-2026-10-20/SUMMARY.md) · [Exact restart](m31-boids-admission-2026-10-20/RESTART-RESULT.md) · [Three.js replay](m31-boids-admission-2026-10-20/viewer/).
