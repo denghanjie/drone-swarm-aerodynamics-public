@@ -1,0 +1,7 @@
+# Display review
+
+The sole supervised display allocation passed seven groups, including all5,775 joined full-cloud position buffers, all1,924 held sample values/timestamps, orange ID17 position, floor z=0, four outcome rows, controls, orbit/reset, corrupt-data refusal and no recorded page/console/HTTP errors. The complete source/input byte gates ran before and after display; ui/gates.json retains their outcomes/read events.
+
+The parent inspected ui/desktop.png and ui/mobile.png. Text, cards and controls are legible without page clipping. The floor, highlighted drone17 and long orange descent trail are visible. Other drones remain small dots at default zoom. The phone table wraps but remains readable; the support chart is a qualitative compact display with weight reference, not a precision measurement tool. Other factory obstacles are omitted. Body sphere radius .075m is separate from the larger visibility halo. Current endpoint time and held sample time are both shown; terminal force is not invented. No scientific model runs in the viewer.
+
+These checks compare float32 buffers, exact focus coordinates and DOM values; they are not a GPU pixel oracle. Source files and all prior displays remain unchanged. The separate UI-AVAILABILITY.json receipt confirms the owned browser and process group are absent and the existing localhost8876 replay returned HTTP200 after supervisor completion. No additional browser was launched.

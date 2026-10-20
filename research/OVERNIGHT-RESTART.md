@@ -1,3 +1,15 @@
+# Current checkpoint — saved descent trace complete, 20 October 2026
+
+[Plain summary](m31-descent-trace-2026-10-20/SUMMARY.md) · [Restart](m31-descent-trace-2026-10-20/RESTART-RESULT.md) · [Three.js replay](m31-descent-trace-2026-10-20/viewer/).
+
+Computational-only observation, zero model reruns. All1,924ID17controller/k1pairs across8original/continuation journals were independently checked. Four complete state boundaries match. Initial delivered support~73.3%/72.0%of weight; nominal motor support100%. Desired upward velocity90/462and72/500samples. Upward acceleration requested while delivered acceleration negative207/462and168/500samples. Last4.61s sample before first-seed floor stop has upward acceleration yet negative vertical velocity. No single causal cure or physical truth established.
+
+Source94ed4a45862a928a3b003afa64d30f6bc35d021c(public129pins). Extraction/audit/finalizer/UI allpassed and CLOSED. Display checked5,775joined endpoint buffers and1,924held samples; both screenshots parent-inspected; floor and ID17 now visible. Keep all prior failures and8876. Final receipt: publication-receipts/m31-descent-trace-result-2026-10-20.json after verification. Overall goal unfinished.
+
+Next: check historical equivalent work, then prospective single-change nominal-load intervention from identical original initial states, using saved coupled paths as baseline. No new allocation opened by this summary; no old reruns or unreviewed tuning.
+
+---
+
 # Current checkpoint — longer Boids motion exposes floor contact,20October2026
 
 [Plain summary](m31-boids-continuation-2026-10-20/SUMMARY.md) · [Exact restart](m31-boids-continuation-2026-10-20/RESTART-RESULT.md) · [Three.js replay](m31-boids-continuation-2026-10-20/viewer/).
