@@ -1,3 +1,15 @@
+# Current checkpoint — one-second coupled Boids admission passed, 20 October 2026
+
+[Plain summary](m31-boids-admission-2026-10-20/SUMMARY.md) · [Exact restart](m31-boids-admission-2026-10-20/RESTART-RESULT.md) · [Three.js replay](m31-boids-admission-2026-10-20/viewer/).
+
+Computational-only route. Four prescribed N64 paths (two seeds, two time steps) all reached1s:4,800 native stages admitted,1,200 steps,zero reported contact/vehicle stops. Independent saved-arithmetic audit passed7,608records/307,200derivative-load rows. Common-endpoint resolution differences <3.481e-7m; no trajectory error-bound or convergence claim. Relative motion observed; mean descent about0.45m has no isolated causal attribution. No physical validity,safety,novelty,speed or large-swarm claim.
+
+Sole native/audit/display allocations passed and closed. Seven display groups covered1,204saved buffers; parent inspected desktop/mobile. Four complete journals(512,819,047bytes) preserved byte-for-byte as18public32MiB-or-smaller parts under archive/; originals remain unchanged locally and only their exact4paths are Git-ignored. Reconstruct with documented hashes; no omitted records. Separate archival allocation passed and closed. All source pins unchanged; keep8876.
+
+Source6b761c76b45e5a41e3b106b6e463bb838e78b280(public39pins), archive source94af0e9f9269183e408b5ce22d220329bf103770(public51pins). Final result receipt:publication-receipts/m31-boids-admission-result-2026-10-20.json after verification. Next distinct question: longer-duration fixed coupled workload with prospectively audited storage, before scaling claims. No new allocation opened. Overall research incomplete. Earlier entries remain history.
+
+---
+
 # Current checkpoint — buffered-neighbor test stopped, 20 October 2026
 
 [Plain summary](m31-buffered-failure-evidence-2026-10-20/SUMMARY.md) · [Exact restart](m31-buffered-failure-evidence-2026-10-20/RESTART-RESULT.md) · [Three.js evidence](m31-buffered-failure-evidence-2026-10-20/viewer/).
