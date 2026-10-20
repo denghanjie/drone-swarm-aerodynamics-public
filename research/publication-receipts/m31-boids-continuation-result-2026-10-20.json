@@ -1,0 +1,26 @@
+{
+  "commit": "a0f595f34a4f9ef8cef516caa0cde60053e0eade",
+  "manifestPath": "research/m31-boids-continuation-2026-10-20/result-manifest.json",
+  "manifestSha256": "90edf4045db10a216daa287763928ea4fa6a73997d6050b65783c64d25df2a81",
+  "manifestBytes": 33149,
+  "verifiedFilePins": 157,
+  "remoteBytesEqualLocal": true,
+  "committedBytesEqualLocal": true,
+  "remoteUrl": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a0f595f34a4f9ef8cef516caa0cde60053e0eade/research/m31-boids-continuation-2026-10-20/result-manifest.json",
+  "verifiedUtc": "2026-10-20T12:45:57.217108+00:00",
+  "transport": "Separate exact-commit HTTPS manifest retrieval with TLS verification; every local pin compared to committed blob. Not a full remote binary download.",
+  "localReadPolicy": "Maximum three attempts per file for local read errors or byte mismatches; every accepted read must match frozen length/hash and exact committed blob. No research file changed.",
+  "verificationReadEvents": [],
+  "independentManifestReview": {
+    "reviewer": "m31_protocol_challenge",
+    "pinsPassed": 157,
+    "coveragePassed": true,
+    "manifestSha256": "90edf4045db10a216daa287763928ea4fa6a73997d6050b65783c64d25df2a81"
+  },
+  "publicationRecoveryNotes": [
+    "Batch 2 first HTTPS push returned HTTP 408; remote ref remained batch 1; unchanged retry succeeded.",
+    "Batch 3 initial commit had an index-write timeout; staged files were preserved; unchanged retry succeeded.",
+    "Batch 4 first local read timed out; unchanged retry succeeded.",
+    "First exact-public verification stopped on local read timeout before public retrieval. Second attempt stopped on local length/hash assertion after a read timeout; no receipt issued. Subsequent complete local diagnostic reported 156 matching pins and one read timeout, no observed byte mismatch. This receipt is issued only after all 157 local/committed comparisons and public manifest retrieval pass."
+  ]
+}
