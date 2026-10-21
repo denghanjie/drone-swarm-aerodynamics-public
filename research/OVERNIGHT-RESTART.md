@@ -1,3 +1,15 @@
+# Current checkpoint — two-arrangement matched comparison complete, 21 October 2026
+
+[Plain summary](m31-unseen-pairs-2026-10-21/SUMMARY.md) · [Restart](m31-unseen-pairs-2026-10-21/RESTART-RESULT.md) · [Paired Three.js replay](m31-unseen-pairs-2026-10-21/viewer/).
+
+Computational-only. Two fixed 64-drone seeds at dt .005, both unchanged controllers newly recorded. Memory 2/2 reached 5 s; original 1/2 reached 5 s. First original last completed 3.615 s, native near-field domain-refusal trial 3.620 s; not collision/contact evidence. Both paired own-request MAEs lower for memory (0.186790 vs 0.274967 over 0–3.61 s; 0.180239 vs 0.279668 over 0–4.99 s), but different evolving requests. No random/population, physical-validity, safety, novelty, speed or general-reliability claim.
+
+Source 4647882e373d54df66f67b9a653ff115727a03d7, 59 independently verified public pins. Audit passed 14,896 attempted native stages, 3,723 steps, 953,280 derivative rows, 64,000 memory rows. Four allocations passed and CLOSED; 51 raw parts retained. UI passed 8 groups, 3,727 saved buffers, 277 missing suffix frames; desktop/mobile parent-inspected. Keep 8876. Source-search limitations/DNS failure retained; no producer/audit read anomalies.
+
+Next: separately preregister half-step .0025 matched four-path sensitivity before horizon extension, same exposed seeds/settings. Match coarse/fine endpoints and MAE windows explicitly; retain refused trials separately. No new numerical allocation opened. Read full restart and final publication receipt research/publication-receipts/m31-unseen-pairs-result-2026-10-21.json after verification. Overall research unfinished. All historical entries below remain unchanged.
+
+---
+
 # Current checkpoint — vertical-transfer comparison complete, 21 October 2026
 
 [Plain summary](m31-vertical-transfer-2026-10-21/SUMMARY.md) · [Restart](m31-vertical-transfer-2026-10-21/RESTART-RESULT.md) · [Paired Three.js replay](m31-vertical-transfer-2026-10-21/viewer/).
