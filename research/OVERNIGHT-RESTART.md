@@ -1,3 +1,15 @@
+# Current checkpoint — matched nominal-load comparison complete, 21 October 2026
+
+[Plain summary](m31-nominal-comparison-2026-10-21/SUMMARY.md) · [Restart](m31-nominal-comparison-2026-10-21/RESTART-RESULT.md) · [Paired Three.js replay](m31-nominal-comparison-2026-10-21/viewer/).
+
+Computational-only. Four nominal-load paths reached5 seconds; exact starting configurations with coupled loads had first-seed floor stops at4.6200/4.6175 seconds and second-seed5second completion. Independent audit checked all 6,000 steps / 24,000 stages / 1,536,000 derivative rows, all 4 initial64 × 17 word matches and own segment boundaries. Raw 44 parts retained. Existing coupled baseline reused; zero native query and zero coupled rerun. Only load selection changed; later own-state steering differences are part of the intervention. No physical truth, controller cure, safety, novelty, speed or scalability claim.
+
+Sourcef90d17f2b3cad19752f538040efc36893c64c3fc(public67pins). Producer/audit/finalizer/display passed and CLOSED. Paired viewer retains all endpoints, hides unavailable suffixes and passed desktop/mobile QA. Keep 8876. Final result receipt:publication-receipts/m31-nominal-comparison-result-2026-10-21.json afterverification. Preserve all older failures. Overall research unfinished.
+
+Next distinct question: inspect historical controller/ablation work, then prospectively test a clearly specified vertical-tracking intervention with coupling retained. No new numerical allocation opened by this handoff.
+
+---
+
 # Current checkpoint — saved descent trace complete, 20 October 2026
 
 [Plain summary](m31-descent-trace-2026-10-20/SUMMARY.md) · [Restart](m31-descent-trace-2026-10-20/RESTART-RESULT.md) · [Three.js replay](m31-descent-trace-2026-10-20/viewer/).

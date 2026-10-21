@@ -1,0 +1,7 @@
+# Result claim ledger
+
+- Supported computational observation: all four fixed nominal-load paths completed5 seconds without an inherited contact/vehicle-limit stop; corresponding existing coupled first-seed paths stopped at4.6200/4.6175 seconds, second-seed paths completed5 seconds.
+- Supported within-model intervention scope: exact initial states and unchanged Boids/controller/geometry/integration rules; nominal versus coupled load selection differs. The path contrast includes later changes in states, neighbor sets and commands. It does not isolate collective-force, torque or motor-lag contributions.
+- Verified evidence: complete new nominal journals, all declared saved arithmetic/bindings, old public baseline/export provenance, initial and segment-boundary words, last-common comparisons and recorded Three.js buffers. Reused controller/contact implementations and old baseline audits remain trust dependencies.
+- Not supported: a real-air aerodynamic effect of this magnitude, general flight safety, a validated controller cure, optimality, first off/full comparison, new flocking algorithm, novelty, speedup, large-swarm scalability or overall research completion. The two resolutions per seed are not independent replicates.
+- No extrapolation: stopped coupled suffixes are absent. Off completion does not establish coupled-model domain admission along the off trajectories. Same-endpoint positional differences are reported only where both paths exist.

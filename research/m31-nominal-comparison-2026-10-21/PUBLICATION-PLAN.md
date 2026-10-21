@@ -1,0 +1,3 @@
+# Lossless result publication
+
+The 44 new raw-journal parts total about1.39 GB. Each part is at most32 MiB and already has a preserved exact hash. After independent result review, privacy review and result freeze, publish these unchanged files in bounded Git transport batches, followed by the remaining result/manifest/restart files. This only partitions upload transport; it does not repartition or recompute scientific evidence. No scientific or display allocation is rerun. The final result commit contains every frozen pin, including inherited baselines, and receives a separately verified public manifest receipt. Intermediate archive commits do not assert a complete verified result.
