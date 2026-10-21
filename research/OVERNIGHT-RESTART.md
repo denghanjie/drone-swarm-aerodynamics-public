@@ -1,3 +1,13 @@
+# Current checkpoint — vertical-memory comparison complete, 21 October 2026
+
+[Plain summary](m31-vertical-memory-2026-10-21/SUMMARY.md) · [Restart](m31-vertical-memory-2026-10-21/RESTART-RESULT.md) · [Paired Three.js replay](m31-vertical-memory-2026-10-21/viewer/).
+
+Computational-only. 2/2 new paths reached five seconds with full coupling retained; both use the one exposed failing seed at two resolutions. Independent audit checked 12000 attempted native stages, 3000 completed steps, 768000 derivative rows and 64000 memory rows. Source 37a793a4b1fe4e66c96ee585ef7e08042b6c6262 (94 public pins). All four allocations passed and CLOSED. Existing baseline reused; no rerun or retuning. Preserve all 39 raw parts, old/new stops and source-coverage correction. Controller memory is part of restart state.
+
+No physical truth, general safety/stability, optimality, novelty, speed or scalability claim. Next: Check whether the unchanged controller intervention transfers beyond this one exposed starting configuration, through a separately specified bounded configuration test. Keep gains and limits fixed; do not retune from these outcomes. No new numerical allocation opened. Keep 8876; final receipt publication-receipts/m31-vertical-memory-result-2026-10-21.json after verification. Overall research remains unfinished.
+
+---
+
 # Current checkpoint — matched nominal-load comparison complete, 21 October 2026
 
 [Plain summary](m31-nominal-comparison-2026-10-21/SUMMARY.md) · [Restart](m31-nominal-comparison-2026-10-21/RESTART-RESULT.md) · [Paired Three.js replay](m31-nominal-comparison-2026-10-21/viewer/).
