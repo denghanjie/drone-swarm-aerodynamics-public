@@ -1,0 +1,15 @@
+{
+  "milestone": "m31-nominal-comparison-2026-10-21",
+  "recordedUtc": "2026-10-21T01:20:03.786576+00:00",
+  "events": [
+    {
+      "phase": "raw-batch-3-staging",
+      "operation": "git add",
+      "exitCode": 128,
+      "error": "index.lock write error: Operation timed out",
+      "recoveryChecks": "Index empty, lock absent, original raw files retained; 14 GiB disk available. Retry publication staging only.",
+      "recoveryOutcome": "Retry passed all frozen-file and staged-blob checks and committed batch 3 as 9f87051ca27b227ef85893367da13348b22b0faa. No evidence changed."
+    }
+  ],
+  "scope": "Publication transport only. Frozen result and source unchanged; no numerical or display reruns."
+}
