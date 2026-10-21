@@ -1,0 +1,5 @@
+# Scoped result privacy review
+
+Reviewed 53 package text files for absolute private home/temp paths, private-key headers and common credential-token patterns: none found. The 101 frozen source/input pins remain exact. New raw parts are synthetic simulation journals from the public frozen producer; their identities and full record schema were checked by the independent audit. No private attachments, correspondence, account data or lab measurements were introduced. Compressed parts were not separately decompressed for a second privacy pass. The final result manifest binds them to producer/auditor descriptors.
+
+The parent inspected both display screenshots: only the research page is visible. Full operating-system process samples remain local outside the publication; only a scoped, repository-relative observation is included. Existing public coarse data and literature records retain their declared scope. This is a scoped review, not a universal secret guarantee. Recheck newly added reviews before result freeze/staging; publish only explicit research paths and the restart header.

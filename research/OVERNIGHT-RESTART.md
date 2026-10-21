@@ -1,3 +1,17 @@
+# Current checkpoint — paired time-step sensitivity complete, 21 October 2026
+
+[Plain summary](m31-paired-resolution-2026-10-21/SUMMARY.md) · [Restart](m31-paired-resolution-2026-10-21/RESTART-RESULT.md) · [Paired Three.js replay](m31-paired-resolution-2026-10-21/viewer/).
+
+Computational-only. Four new N64 paths at dt .0025 compared with saved .005 results on the same two exposed arrangements. Categories agree in 2/2. See summary/audit for each actual refusal, completed time, common-endpoint displacement and four-way common-window errors. No convergence, physical validity, safety, novelty, speed or population claim.
+
+Source 08fc10c6fb3d38dc0e22b7f1aa595e8cb9a50848 (101 independently verified public pins). All four allocations passed and CLOSED. The producer's observed synchronous source-file read wait resolved without intervention within its original caps; underlying cause unestablished. Audit retained four failed identity-read attempts on two parts before verified third reads; no semantic retry. Preserve both observation records, all raw parts and historical results. Keep 8876; final receipt publication-receipts/m31-paired-resolution-result-2026-10-21.json after verification.
+
+Next: Return to the principal computational question: prospectively compare the existing conservative buffered-neighbor candidate with F on a fixed sequence of actual recorded Boids states from both controllers, preserving the near-field refusal case. Measure complete evaluation cost including membership checks and rebuilds, and compare loads/admission/refusal semantics. No new candidate query is authorized by this record alone; first prepare a bounded reviewed public-source protocol. N64 evidence cannot establish large-swarm speed or novelty.
+
+Overall research unfinished. All historical entries below remain unchanged.
+
+---
+
 # Current checkpoint — two-arrangement matched comparison complete, 21 October 2026
 
 [Plain summary](m31-unseen-pairs-2026-10-21/SUMMARY.md) · [Restart](m31-unseen-pairs-2026-10-21/RESTART-RESULT.md) · [Paired Three.js replay](m31-unseen-pairs-2026-10-21/viewer/).

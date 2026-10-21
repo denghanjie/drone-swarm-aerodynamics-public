@@ -1,0 +1,5 @@
+# Outcome of the observed producer read wait
+
+The single producer returned without intervention, restart or changed limits. Its supervisor reports return code 0, 717.100766 seconds, 3,075,655,367 output bytes, and both wall/output caps passed. The producer index is complete, with 29,792 attempted native stages and an empty identity-read event list. Preserve RUNTIME-OBSERVATION.json as a separate read-only observation: a blocked read does not become an identity mismatch merely because it took time, and the observed wait's underlying cause remains unestablished.
+
+The parent inspected scoped process metadata and one one-second process sample while the producer was waiting. No additional file-content probe, numerical retry or source change was made. The independent protocol reviewer recommended waiting under the existing supervisor. The entire wall interval remains charged to the allocation. No timing benchmark claim is made. Passing producer exit alone does not establish the later arithmetic audit or scientific interpretation.
