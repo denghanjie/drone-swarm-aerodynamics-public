@@ -1,3 +1,13 @@
+# Current checkpoint — vertical-transfer comparison complete, 21 October 2026
+
+[Plain summary](m31-vertical-transfer-2026-10-21/SUMMARY.md) · [Restart](m31-vertical-transfer-2026-10-21/RESTART-RESULT.md) · [Paired Three.js replay](m31-vertical-transfer-2026-10-21/viewer/).
+
+Computational-only. 2/2 new paths reached five seconds with full coupling retained; both use the second exposed seed at two resolutions; its original-controller baseline already completed five seconds. Independent audit checked 12000 attempted native stages, 3000 completed steps, 768000 derivative rows and 64000 memory rows. Source 5b57f8b364249df01449c8e2d192e1a65329972f (120 public pins). All four allocations passed and CLOSED. Existing baseline reused; no rerun or retuning. Preserve all 39 raw parts, all old/new outcomes. Controller memory is part of restart state. Audit retained two pre-consumption identity-read anomalies, then a successful third exact-hash read; no numerical or arithmetic retry.
+
+No physical truth, general safety/stability, optimality, novelty, speed or scalability claim. Next: Prospectively test a small fixed set of previously unexecuted starting configurations with matched original-controller and unchanged memory-controller arms. Keep all settings fixed, define comparison measures before execution, and preserve all outcomes. Longer horizons require their own bounded allocation. No new numerical allocation opened. Keep 8876; final receipt publication-receipts/m31-vertical-transfer-result-2026-10-21.json after verification. Overall research remains unfinished.
+
+---
+
 # Current checkpoint — vertical-memory comparison complete, 21 October 2026
 
 [Plain summary](m31-vertical-memory-2026-10-21/SUMMARY.md) · [Restart](m31-vertical-memory-2026-10-21/RESTART-RESULT.md) · [Paired Three.js replay](m31-vertical-memory-2026-10-21/viewer/).
