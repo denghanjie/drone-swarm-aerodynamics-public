@@ -1,0 +1,67 @@
+{
+  "schema": "m31-paired-resolution-config-v1",
+  "n": 64,
+  "controlDt": 0.01,
+  "duration": 5,
+  "maxStages": 32000,
+  "maxNativeCalls": 32000,
+  "maxWallSeconds": 4800,
+  "maxOutputBytes": 4294967296,
+  "maxRecordBytes": 4194304,
+  "cases": [
+    {
+      "caseId": "seed2026102101-original-h0025",
+      "pairId": "seed2026102101-h0025",
+      "arm": "original",
+      "seed": 2026102101,
+      "dt": 0.0025,
+      "stepsPerControl": 4
+    },
+    {
+      "caseId": "seed2026102101-memory-h0025",
+      "pairId": "seed2026102101-h0025",
+      "arm": "memory",
+      "seed": 2026102101,
+      "dt": 0.0025,
+      "stepsPerControl": 4
+    },
+    {
+      "caseId": "seed2026102102-original-h0025",
+      "pairId": "seed2026102102-h0025",
+      "arm": "original",
+      "seed": 2026102102,
+      "dt": 0.0025,
+      "stepsPerControl": 4
+    },
+    {
+      "caseId": "seed2026102102-memory-h0025",
+      "pairId": "seed2026102102-h0025",
+      "arm": "memory",
+      "seed": 2026102102,
+      "dt": 0.0025,
+      "stepsPerControl": 4
+    }
+  ],
+  "segments": [
+    {
+      "segment": 0,
+      "timeOrigin": 0,
+      "duration": 1
+    },
+    {
+      "segment": 1,
+      "timeOrigin": 1,
+      "duration": 4
+    }
+  ],
+  "verticalMemory": {
+    "gain": 2.5,
+    "controlDt": 0.01,
+    "minimum": -5,
+    "maximum": 5,
+    "update": "previous-sample-rectangle",
+    "initialIntegral": 0,
+    "initialPreviousError": 0,
+    "carryAcrossSegments": true
+  }
+}

@@ -1,0 +1,3 @@
+# Scoped source publication review
+
+Publish only synthetic simulation configurations/code, already public coarse evidence and research notes. No private user attachments, correspondence, credentials or laboratory data. Before freezing, scan new text files for private home/temp paths, key headers and common token patterns; check unchanged inherited sources and coarse input bytes against their published manifest. The four inherited compressed first parts are already public generated evidence, included solely for the first saved initial record of each path. No new initialization screening occurs. These scoped checks are not a universal secret guarantee. Final result privacy review is separate.
