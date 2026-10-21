@@ -1,0 +1,26 @@
+{
+  "schema": "m31-unseen-pairs-transport-events-v1",
+  "events": [
+    {
+      "recordedUtc": "2026-10-21T03:23:21.068598+00:00",
+      "phase": "raw-batch-2-stage",
+      "operation": "git add exact frozen batch paths",
+      "exitCode": 128,
+      "error": "worktree Git index.lock write error: Operation timed out",
+      "scope": "Git transport/index operation only; no scientific/audit/display retry",
+      "action": "inspect live Git processes, index and lock state before bounded transport retry"
+    },
+    {
+      "recordedUtc": "2026-10-21T03:23:48.713356+00:00",
+      "phase": "raw-batch-2-stage-recovery",
+      "indexLockAbsent": true,
+      "preRetryStagedPaths": [],
+      "globalGitInventory": "One transient Git process observed; global-empty assertion failed. Its command purpose was not established; subsequent PID inspection found it gone. Retry had already been dispatched, so this does not certify a process-free instant. No process was killed.",
+      "retryCount": 1,
+      "retryExitCode": 0,
+      "commit": "9903c612f4b65ac2f8bedcc5d8eca6c4fb54a578",
+      "verifiedFrozenAndStagedBytes": true,
+      "scope": "Only Git staging/commit retried; all research allocations remain closed."
+    }
+  ]
+}
