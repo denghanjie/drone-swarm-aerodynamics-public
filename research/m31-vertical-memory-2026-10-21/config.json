@@ -1,0 +1,47 @@
+{
+  "schema": "m31-vertical-memory-config-v1",
+  "n": 64,
+  "controlDt": 0.01,
+  "duration": 5,
+  "maxStages": 12000,
+  "maxNativeCalls": 12000,
+  "maxWallSeconds": 1800,
+  "maxOutputBytes": 3221225472,
+  "maxRecordBytes": 4194304,
+  "cases": [
+    {
+      "caseId": "seed2026102001-h005",
+      "seed": 2026102001,
+      "dt": 0.005,
+      "stepsPerControl": 2
+    },
+    {
+      "caseId": "seed2026102001-h0025",
+      "seed": 2026102001,
+      "dt": 0.0025,
+      "stepsPerControl": 4
+    }
+  ],
+  "segments": [
+    {
+      "segment": 0,
+      "timeOrigin": 0,
+      "duration": 1
+    },
+    {
+      "segment": 1,
+      "timeOrigin": 1,
+      "duration": 4
+    }
+  ],
+  "verticalMemory": {
+    "gain": 2.5,
+    "controlDt": 0.01,
+    "minimum": -5,
+    "maximum": 5,
+    "update": "previous-sample-rectangle",
+    "initialIntegral": 0,
+    "initialPreviousError": 0,
+    "carryAcrossSegments": true
+  }
+}
