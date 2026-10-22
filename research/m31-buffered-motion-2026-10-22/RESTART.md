@@ -1,0 +1,7 @@
+# Prospective restart — do not bypass the source gate
+
+Prepared22October2026 after the paired-resolution checkpoint. Read PROTOCOL.md/config.json, review files, source-manifest and independently verified source-publication. Check actual lock/output/supervisor state before any action. Every extract/producer/audit/finalize/ui allocation is single-use; a started/failed/closed allocation cannot be restarted. Extraction and native replay must not overlap each other or another research job. An absent output is not permission to delete a lock. Prior raw and display allocations stay closed.
+
+Sequential order is extraction, native replay, independent audit, display packaging, one browser verification. Runtime supplied by M31_NODE, browser by M31_CHROME; launch wrapper verifies Node identity and strips preload/search variables. Extraction output pins bind the replay; independent audit reconstructs source selection/cache certificate and cost arithmetic. Failures remain raw evidence and require a distinct prospectively reviewed recovery scope. A failed timing/coverage gate with passed audit is a valid research outcome.
+
+Publish raw records/CAS/query rows and failures losslessly, understandable SUMMARY, result claims, screenshots/QA, allallocationclosure, exact result manifest, independent review and verified public receipt. Keep localhost8876 available. The viewer is a recorded-stage replay, not new candidate flight integration. Overall research remains incomplete. No large-swarm speed, physical truth or novelty claim.
