@@ -1,0 +1,7 @@
+# Scoped publication privacy review
+
+The recorded pattern screen covered 1,974 checkpoint text files (369,850,623 bytes) and the entire decompressed selected archive (586,182,618 bytes). No private home/temp paths, private-key headers or the checked credential-token patterns were found. See review/PRIVACY-SCAN.json for exact scope and patterns. The lossless transport parts reconstruct the checked original archive, so they introduce no new data. This is a scoped screen, not a guarantee against every possible secret.
+
+The data are synthetic simulation records from the publicly frozen source, plus runtime versions, timings, source hashes and review evidence. No user attachments, private correspondence, account data or laboratory measurements are included. The parent visually inspected both screenshots: they contain only the local research page and its simulation evidence, without desktop/account content. Administrative error evidence is repository-relative. Runtime/source provenance uses sanitized identifiers; no credentials are required to read the public results.
+
+Publish only this checkpoint folder and the additive research restart header. Preserve the ignored original archive locally; publish its exact six-part transport representation. The source/manifests and verified literature retain their stated scopes. Newly finalized review/manifest text must receive a supplemental scan before staging; frozen sources and numerical outputs must not be changed to resolve a publication issue.

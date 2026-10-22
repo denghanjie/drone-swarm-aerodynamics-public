@@ -1,0 +1,58 @@
+{
+  "schema": "m31-buffered-motion-source-publication-v1",
+  "commit": "6a045699e0ce888dcc5b113e2a8aa99d8835d775",
+  "manifestPath": "research/m31-buffered-motion-2026-10-22/source-manifest.json",
+  "manifestSha256": "e8c5e163131b5f2e4ef9ea41425e705502350d85f098f193b30b7ad812f7d9c8",
+  "manifestBytes": 31786,
+  "verifiedFilePins": 142,
+  "remoteBytesEqualLocal": true,
+  "committedBytesEqualLocal": true,
+  "independentReviewPassed": true,
+  "verifiedUtc": "2026-10-22T15:07:41.895029+00:00",
+  "remoteUrl": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/6a045699e0ce888dcc5b113e2a8aa99d8835d775/research/m31-buffered-motion-2026-10-22/source-manifest.json",
+  "publicReview": {
+    "path": "research/m31-buffered-motion-2026-10-22/review/PUBLIC-SOURCE-REVIEW.md",
+    "bytes": 13330,
+    "sha256": "c2162887824cb6b60872f543f953f1076be72e5b836d61c5fa0f75b9f6da3c55"
+  },
+  "localCommitVerification": {
+    "path": "research/m31-buffered-motion-2026-10-22/review/SOURCE-LOCAL-COMMIT.json",
+    "bytes": 656,
+    "sha256": "7397d91e79d9600bf35b629d9d98d36ab2d7052281048812728171c61ba6399f"
+  },
+  "freshPublicVerification": {
+    "manifestFiles": 1,
+    "nonrawFilePins": 49,
+    "nonrawPinBytes": 3128390,
+    "historicalManifestFiles": 2,
+    "totalSuccessfulReads": 52,
+    "totalVerifiedBytes": 3231849,
+    "allFirstAttempt": true,
+    "readEvents": []
+  },
+  "historicalRawReuse": {
+    "filePins": 93,
+    "pinBytes": 3075331252,
+    "fullRemoteRawRedownload": false,
+    "priorResultCommit": "7fae6ca51733a9bc9b6b2ada5156d05a7a64f747",
+    "priorResultManifestSha256": "e54ba424f77676f0f04e7037e01d646b4d2e4c7b76acfe085a479cd4887cac44",
+    "priorSourceCommit": "08fc10c6fb3d38dc0e22b7f1aa595e8cb9a50848",
+    "priorSourceManifestSha256": "6b376a062e328205cf7da697eccb9852a62b15abd9bea4ba09e56515c52382f2",
+    "binding": "All93 rawpart path/length/SHA256 pins exactly match the freshly fetched published predecessor result manifest. Prior scoped public review/final receipt retained; parent newly verified all142 local/committed pins."
+  },
+  "retainedAcquisitionEvents": {
+    "publicIdentityReads": [],
+    "localCommitIdentityReads": [
+      {
+        "path": "research/m31-paired-resolution-2026-10-21/results/seed2026102101-memory-h0025-s1.jsonl.gz.part005",
+        "attempt": 1,
+        "kind": "git-read-failure",
+        "returncode": 128,
+        "stderr": "fatal: mmap failed: Operation timed out",
+        "phase": "original-source-commit-check"
+      }
+    ],
+    "predecessorObservations": "Preserved separately in predecessor reports/receipt; not repeated or diagnosed here."
+  },
+  "scope": "Exact new public manifest and all49 nonraw pins freshly downloaded and matched to local bytes. The93 rawpart pins reuse published predecessor identities, with no fresh remote raw download/parsing. All142 local/committed bytes separately verified by publisher; independent review checked that report and its exact binding. No scientific or display execution by this review."
+}

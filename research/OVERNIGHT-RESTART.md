@@ -1,3 +1,15 @@
+# Current checkpoint — buffered recorded-motion test complete, 22 October 2026
+
+[Plain summary](m31-buffered-motion-2026-10-22/SUMMARY.md) · [Restart](m31-buffered-motion-2026-10-22/RESTART-RESULT.md) · [Three.js replay](m31-buffered-motion-2026-10-22/viewer/).
+
+Computational-only. Unchanged candidate versus F on 1,920 recorded N64 trial stages; 34,560 calls all matched archived normalized scientific outputs. Median C/F 0.986884, five of eight wins: preset cost gate failed. All stored lists were fully dense (4,032 directed pairs). Measured 96 initial builds, 15,264 reuses, zero motion rebuilds or fallbacks: coverage gate failed. One inherited refused stage replayed eighteen times, not eighteen flight failures. No candidate promotion, physical/safety/novelty/scaling claim.
+
+Source commit 6a045699e0ce888dcc5b113e2a8aa99d8835d775 independently verified publicly before execution. Extract/producer/audit/finalize/UI and separate byte transport all CLOSED. Preserve the administrative committed-source mmap failure and read-only recovery; no numerical retry. The large selected archive is Git-ignored locally and published as six exact transport parts with original hash; never claim it is a separate committed blob. Final receipt: publication-receipts/m31-buffered-motion-result-2026-10-22.json after verification. Keep 8876.
+
+Next: diagnose dense conservative lists using saved witnesses/source before any more benchmarks. Seek a justified tighter exclusion rule or retire this candidate. New numerical execution requires a separate bounded, reviewed, frozen and independently verified public-source protocol. Current and historical allocations remain closed. Overall research unfinished. All history below is preserved.
+
+---
+
 # Current checkpoint — paired time-step sensitivity complete, 21 October 2026
 
 [Plain summary](m31-paired-resolution-2026-10-21/SUMMARY.md) · [Restart](m31-paired-resolution-2026-10-21/RESTART-RESULT.md) · [Paired Three.js replay](m31-paired-resolution-2026-10-21/viewer/).
