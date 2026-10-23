@@ -1,3 +1,15 @@
+# Current checkpoint — finite moving-distance diagnostic complete, 23 October 2026
+
+[Plain summary](m31-radial-certificate-2026-10-23/SUMMARY.md) · [Restart](m31-radial-certificate-2026-10-23/RESTART-RESULT.md) · [Three.js replay](m31-radial-certificate-2026-10-23/viewer/).
+
+Computational-only finite diagnostic: ten controls and all1,920 saved N64 stages passed, independently audited. 273,280 proposed exclusions /7,741,440 directed pair-stage instances (3.53%), zero observed false omissions. Twelve data builds and1,908reuses; no sampled box-exit rebuild or fallback. Every baseline distance still evaluated:7,741,142hypotcalls, zero native queries. No actual speed result, full-query equivalence or universal runtime certificate. Conditional arithmetic proof remains distinct from unproved executable/all-path conformance. Earlier timing failure and inherited near-field refusal at3.62s remain unchanged.
+
+Original source d1a9d8d04974f54f52889f348f3194b7f152fcfb independently publicly verified before producer/audit/finalizer, all passed and CLOSED. Original UI CLOSED FAILED at camera drag after all historical/new record checks. Separate display-only recovery frozen/published at f3101031a85b09e080214ebe4b838495d7017e83 (82pinsverified), passed and CLOSED; both screenshots inspected. Preserve both attempts. Final receipt: publication-receipts/m31-radial-certificate-result-2026-10-23.json after result publication verification. Keep8876.
+
+Next: separately define full-query integration and total-cost comparison, preserving scientific outputs, admission/refusal and actual work counters. Address conditional runtime assumptions explicitly; no silent reference change, general guarantee or enlarged benchmark. New numerical work requires its own bounded reviewed public-source protocol. No additional allocation is opened here. No physical/safety/novelty/scaling claim; research unfinished. Historical text below is preserved.
+
+---
+
 # Current checkpoint — saved neighbor-density diagnosis complete, 23 October 2026
 
 [Plain summary](m31-neighbor-density-2026-10-23/SUMMARY.md) · [Restart](m31-neighbor-density-2026-10-23/RESTART-RESULT.md) · [Three.js replay](m31-neighbor-density-2026-10-23/viewer/).
