@@ -1,0 +1,10 @@
+# Sources reused for this integration test
+
+No new literature search or source acquisition occurs in this checkpoint. This is an implementation/cost test of the already reviewed rule. The following real antecedents and acquisition limits are retained in the pinned prior ledgers.
+
+- Loup Verlet (1967), Computer “Experiments” on Classical Fluids. I. Thermodynamical Properties of Lennard-Jones Molecules, Physical Review159,98. [DOI10.1103/PhysRev.159.98](https://journals.aps.org/pr/abstract/10.1103/PhysRev.159.98). The prior verified page99/sectionII reading supports neighbor-table reuse as established prior art, not drone physics or a new-method claim.
+- LAMMPS developers, [Neighbor lists](https://docs.lammps.org/stable/Developer_par_neigh.html), official developer documentation. Prior20October reading supports cutoff-plus-skin/rebuild implementation ideas. Rolling documentation was not revisited and is not a new paper.
+- TC39, [ECMAScript Math.hypot specification](https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.hypot). Prior23October acquisition found implementation-approximated finite behavior without a quantitative error bound. This remains a limit on portable/universal claims.
+- V8 project, [math.tq under Nodev24.19.0](https://raw.githubusercontent.com/nodejs/node/v24.19.0/deps/v8/src/builtins/math.tq), prior23October source reading. The conditional expression proof is not a proven source-to-installed-binary/all-path mapping; no new such mapping is established here.
+
+See the pinned [radial literature ledger](../m31-radial-certificate-2026-10-23/LITERATURE.md), [acquisition record](../m31-radial-certificate-2026-10-23/RESEARCH-ACQUISITION.md), [conditional lemma](../m31-radial-certificate-2026-10-23/review/CONDITIONAL-LEMMA.md), and [20October verified antecedents](../m31-buffered-candidates-2026-10-20/LITERATURE.md). Their original retrieval failures, version/tag limits and distinctions between source observation and proof remain in force. Citations motivate the experiment; they do not validate its physical model or establish novelty.

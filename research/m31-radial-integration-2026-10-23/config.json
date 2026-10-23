@@ -1,0 +1,88 @@
+{
+  "schema": "m31-radial-integration-config-v1",
+  "caseIds": [
+    "seed2026102101-original-h0025",
+    "seed2026102101-memory-h0025",
+    "seed2026102102-original-h0025",
+    "seed2026102102-memory-h0025"
+  ],
+  "totalStages": [
+    5792,
+    8000,
+    8000,
+    8000
+  ],
+  "windowLength": 160,
+  "windowStarts": [
+    0,
+    4000,
+    "last160"
+  ],
+  "repetitions": [
+    -1,
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "maxCalls": 34560,
+  "exclusions": [
+    "method",
+    "timing",
+    "diagnostics.buildPhasesMs",
+    "diagnostics.geometryWork.gatheredNonselfCandidates",
+    "diagnostics.screen.orderedPairVisits",
+    "diagnostics.screen.componentTests",
+    "caseId",
+    "semanticInputSha256",
+    "inlineInputCanonicalSha256",
+    "diagnostics.geometryWork.directedCenterTests",
+    "diagnostics.geometryWork.certifiedSkippedPairs",
+    "diagnostics.screen.actualCenterNormCalls",
+    "diagnostics.screen.skippedCenterNormCalls"
+  ],
+  "allocations": {
+    "producer": {
+      "seconds": 1800,
+      "mib": 768
+    },
+    "audit": {
+      "seconds": 1800,
+      "mib": 128
+    },
+    "finalize": {
+      "seconds": 120,
+      "mib": 2
+    },
+    "ui": {
+      "seconds": 150,
+      "mib": 16
+    }
+  },
+  "keepGate": {
+    "medianAggregateRatioMaximum": 0.9,
+    "strictWinsMinimum": 7,
+    "reuseRequired": true,
+    "motionRebuildRequiredWorkloadWide": true
+  },
+  "runtimeGeneralEquivalenceProven": false,
+  "baselineExclusions": [
+    "method",
+    "timing",
+    "diagnostics.buildPhasesMs",
+    "diagnostics.geometryWork.gatheredNonselfCandidates",
+    "diagnostics.screen.orderedPairVisits",
+    "diagnostics.screen.componentTests",
+    "caseId",
+    "semanticInputSha256",
+    "inlineInputCanonicalSha256"
+  ],
+  "readPolicy": {
+    "attemptsPerFile": 3,
+    "gitReadTimeoutSeconds": 45
+  }
+}

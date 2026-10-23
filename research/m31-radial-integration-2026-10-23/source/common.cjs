@@ -1,0 +1,12 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),assert=require('node:assert/strict');
+const base=path.resolve(__dirname,'..'),root=path.resolve(base,'../..'),config=JSON.parse(fs.readFileSync(path.join(base,'config.json'))),events=[];
+const sha=b=>crypto.createHash('sha256').update(b).digest('hex'),load=p=>JSON.parse(fs.readFileSync(p));
+function checked(p,pin){for(let attempt=1;attempt<=3;attempt++){try{const b=fs.readFileSync(p);if(b.length===pin.bytes&&sha(b)===pin.sha256)return b;events.push({path:path.relative(root,p),attempt,kind:'identity-mismatch',bytes:b.length,sha256:sha(b)});}catch(e){events.push({path:path.relative(root,p),attempt,kind:'read-error',code:e.code});}}throw Error('identity-read-failed:'+path.relative(root,p));}
+function gate(){const raw=fs.readFileSync(path.join(base,'source-manifest.json')),m=JSON.parse(raw),p=load(path.join(base,'source-publication.json'));assert.equal(sha(raw),p.manifestSha256);assert.equal(raw.length,p.manifestBytes);assert.equal(new Set(m.files.map(x=>x.path)).size,m.files.length);assert.equal(p.remoteBytesEqualLocal,true);assert.equal(p.committedBytesEqualLocal,true);assert.equal(p.independentReviewPassed,true);assert.match(p.commit,/^[0-9a-f]{40}$/);assert.equal(p.verifiedFilePins,m.files.length);for(const pin of m.files)checked(path.join(root,pin.path),pin);return p;}
+function prior(phase){const p=load(path.join(base,phase+'-supervisor.json'));assert.equal(p.returncode,0);assert.equal(p.allocationWallPassed,true);assert.equal(p.outputCapPassed,true);assert.ok(!p.timeout);}
+const word=n=>{const b=Buffer.alloc(8);b.writeDoubleBE(n);return b.toString('hex');},number=w=>{assert.match(w,/^[0-9a-f]{16}$/);return Buffer.from(w,'hex').readDoubleBE();};
+const ignore=new Set(config.exclusions);
+function normalize(v,p='',ignored=ignore){if(typeof v==='number')return word(v);if(Array.isArray(v)||ArrayBuffer.isView(v))return Array.from(v,x=>normalize(x,p+'[]',ignored));if(v&&typeof v==='object')return Object.fromEntries(Object.keys(v).sort().filter(k=>!ignored.has(p?p+'.'+k:k)).map(k=>[k,normalize(v[k],p?p+'.'+k:k,ignored)]));return v;}
+const semantic=(v,baseline=false)=>Buffer.from(JSON.stringify(normalize(v,'',baseline?new Set(config.baselineExclusions):ignore))+'\n');
+module.exports={fs,path,assert,base,root,config,events,sha,load,checked,gate,prior,word,number,normalize,semantic};
