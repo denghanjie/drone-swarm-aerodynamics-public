@@ -1,3 +1,15 @@
+# Current checkpoint — radial full-query integration complete, 23 October 2026
+
+[Plain summary](m31-radial-integration-2026-10-23/SUMMARY.md) · [Restart](m31-radial-integration-2026-10-23/RESTART-RESULT.md) · [Three.js replay](m31-radial-integration-2026-10-23/viewer/).
+
+Computational-only replay of the same 1,920 saved N64 stages: 34,560 complete native queries preserved the fixed scientific comparison contract; 17,280 baseline queries also passed the older stricter contract. Measured center-distance calls F 61,928,960 versus C 59,745,280: 2,183,680 actually avoided. Median C/F time 0.9804733054420454 (about 1.95% less query time), eight strict wins, but preset 10% benefit gate FAILED. Coverage also FAILED: 96 initial builds, 15,264 reuses, zero motion rebuilds/fallbacks. Keep gate FALSE. One inherited near-field refusal at 3.62 s repeated eighteen times, not eighteen flight failures.
+
+Source b68ab63f598755e8801b2be55ce5cdef101dd821 independently publicly verified: 79 pins, all 50 input origins including six archive parts fetched fresh. Producer, independent audit, finalizer and UI each PASSED operationally and are CLOSED without retries. All saved positions/new annotations and interaction checks passed; desktop/mobile screenshots inspected. Final receipt: publication-receipts/m31-radial-integration-result-2026-10-23.json after publication verification. Keep 8876. Historical allocations remain closed.
+
+Decision: do not advance this exact cache implementation on this workload. Next examine saved phase timings to find a larger complete-query cost under a separately bounded, reviewed plan. Do not alter thresholds, grow this sample or rerun to seek a pass. No new allocation opened here. Timing includes query work but excludes asymmetric evidence operations that may affect later memory/cache state; no uninstrumented/full-flight speed, physical validity, safety, novelty, scaling or general executable-equivalence claim. Overall research unfinished. All history below is preserved byte-for-byte.
+
+---
+
 # Current checkpoint — finite moving-distance diagnostic complete, 23 October 2026
 
 [Plain summary](m31-radial-certificate-2026-10-23/SUMMARY.md) · [Restart](m31-radial-certificate-2026-10-23/RESTART-RESULT.md) · [Three.js replay](m31-radial-certificate-2026-10-23/viewer/).
