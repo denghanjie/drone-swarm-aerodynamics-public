@@ -1,0 +1,60 @@
+{
+  "schema": "m31-phase-attribution-v1",
+  "calls": 34560,
+  "stages": 1920,
+  "windows": 12,
+  "stagesPerWindow": 160,
+  "reps": [
+    -1,
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "toleranceMs": "0.000001",
+  "decimalPrecision": 80,
+  "primary": {
+    "method": "F",
+    "bucket": "measured",
+    "status": "native-success",
+    "majorityShare": "0.5",
+    "sameWinnerRepMinimum": 6,
+    "excludeFromRanking": [
+      "timerResidual"
+    ]
+  },
+  "allocations": {
+    "producer": {
+      "seconds": 300,
+      "mib": 128
+    },
+    "audit": {
+      "seconds": 450,
+      "mib": 128
+    },
+    "finalize": {
+      "seconds": 120,
+      "mib": 2
+    },
+    "ui": {
+      "seconds": 180,
+      "mib": 16
+    }
+  },
+  "readPolicy": {
+    "attemptsPerFile": 3,
+    "gitReadTimeoutSeconds": 45
+  },
+  "inputs": {
+    "queries": "research/m31-radial-integration-2026-10-23/results/queries.jsonl",
+    "groups": "research/m31-radial-integration-2026-10-23/results/groups.jsonl",
+    "oldSummary": "research/m31-radial-integration-2026-10-23/results/summary.json",
+    "oldAudit": "research/m31-radial-integration-2026-10-23/audit/audit.json",
+    "stages": "research/m31-neighbor-density-2026-10-23/results/stages.jsonl",
+    "stageSummary": "research/m31-neighbor-density-2026-10-23/results/summary.json"
+  }
+}
