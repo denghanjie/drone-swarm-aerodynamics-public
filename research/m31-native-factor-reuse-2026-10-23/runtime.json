@@ -1,0 +1,13 @@
+{
+  "nodeExecutableBytes": 121304480,
+  "nodeExecutableSha256": "dbedff294bab84a0a86c04e15fbcbeb1c97ca10bef1b32b0634cd24b36f62100",
+  "nodeVersion": "v24.19.0",
+  "sourceRuntime": "current bundled Node executable selected prospectively after interruption; exact bytes checked by launcher",
+  "scope": "Only the Node executable is byte-pinned and checked by the launcher. This is not a hermetic runtime freeze.",
+  "unpinnedEnvironmentDependencies": [
+    "Python interpreter and standard library",
+    "bundled Playwright browser-test package",
+    "installed Chromium/Google Chrome executable"
+  ],
+  "interpretation": "Both arms run under this newly pinned Node executable, which differs from the earlier checkpoint binary. Python/browser/Playwright remain non-hermetic. No direct cross-checkpoint timing comparison or physical experiment."
+}
