@@ -1,0 +1,62 @@
+{
+  "passed": false,
+  "errorType": "RuntimeError",
+  "message": "three-bounded-identity-attempts-failed:public:research/m31-neighbor-density-2026-10-23/source-manifest.json",
+  "events": [
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/source-manifest.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 13084,
+      "sha256": "810aed6dec7efe9aa10e580978af8d7019472c188219b73dcbedc7b37078594b",
+      "wallSeconds": 0.019380125000000005
+    },
+    {
+      "operation": "source-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/source-manifest.json",
+      "attempt": 1,
+      "commit": "acc97c17b446a9ab1c6f1b24a623529dc3030a7f",
+      "passed": true,
+      "bytes": 13084,
+      "sha256": "810aed6dec7efe9aa10e580978af8d7019472c188219b73dcbedc7b37078594b",
+      "wallSeconds": 0.010330165999999995
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/source-manifest.json",
+      "attempt": 1,
+      "commit": "acc97c17b446a9ab1c6f1b24a623529dc3030a7f",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/acc97c17b446a9ab1c6f1b24a623529dc3030a7f/research/m31-neighbor-density-2026-10-23/source-manifest.json",
+      "passed": false,
+      "errorType": "CalledProcessError",
+      "detail": "curl: (6) Could not resolve host: raw.githubusercontent.com\n",
+      "wallSeconds": 0.013263291999999996
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/source-manifest.json",
+      "attempt": 2,
+      "commit": "acc97c17b446a9ab1c6f1b24a623529dc3030a7f",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/acc97c17b446a9ab1c6f1b24a623529dc3030a7f/research/m31-neighbor-density-2026-10-23/source-manifest.json",
+      "passed": false,
+      "errorType": "CalledProcessError",
+      "detail": "curl: (6) Could not resolve host: raw.githubusercontent.com\n",
+      "wallSeconds": 0.007054667000000001
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/source-manifest.json",
+      "attempt": 3,
+      "commit": "acc97c17b446a9ab1c6f1b24a623529dc3030a7f",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/acc97c17b446a9ab1c6f1b24a623529dc3030a7f/research/m31-neighbor-density-2026-10-23/source-manifest.json",
+      "passed": false,
+      "errorType": "CalledProcessError",
+      "detail": "curl: (6) Could not resolve host: raw.githubusercontent.com\n",
+      "wallSeconds": 0.0059622910000000084
+    }
+  ],
+  "verifiedFiles": [],
+  "allocationLaunched": false,
+  "archiveDecompressed": false
+}

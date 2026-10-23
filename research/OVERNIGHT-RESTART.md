@@ -1,3 +1,15 @@
+# Current checkpoint — saved neighbor-density diagnosis complete, 23 October 2026
+
+[Plain summary](m31-neighbor-density-2026-10-23/SUMMARY.md) · [Restart](m31-neighbor-density-2026-10-23/RESTART-RESULT.md) · [Three.js replay](m31-neighbor-density-2026-10-23/viewer/).
+
+Computational-only descriptive analysis of all 1,920 already selected N64 stages; zero native/model calls. Independent audit exactly matched every row and all aggregates. Component-rule opportunity: 320 / 7,741,440 directed pair-stage instances (about 0.0041%), all in window 8. Thus the prospective ZERO-opportunity retirement condition did NOT occur; formal buffer-width decision remains unresolved. Same-rule current survivors range 4,030–4,032. Prioritizing another direction is a research judgment, not a changed pass threshold.
+
+Existing radius-3 center-distance filter rejects 753,910 / 7,741,440 pair-stage instances (about 9.74%), nonzero at all stages. This is baseline work, not a new shortcut or speed result. One inherited near-field refused trial at 3.62 s retained separately. Source acc97c17b446a9ab1c6f1b24a623529dc3030a7f; all 51 source/input pins, including six archive parts, independently publicly verified before execution. Initial three sandbox DNS failures retained. All four producer/audit/finalize/UI allocations passed and CLOSED, no retries/input-read anomalies. Complete Three.js dependency closure pinned prospectively this time; previous core-pin qualification remains unchanged. UI all 1,920 buffers verified; desktop/mobile inspected. Final receipt: publication-receipts/m31-neighbor-density-result-2026-10-23.json after result verification. Keep 8876.
+
+Next: separately design and review a conservative moving bound for the existing center-distance cutoff, with an explicit equivalence contract covering floating-point semantics, guards, refusal and protected evidence. No new model, benchmark or display allocation is opened here. Do not infer safe omissions from zero coefficients or a speedup from rejection counts. No physical, safety, novelty or scaling claim. Overall research unfinished. All history below is preserved.
+
+---
+
 # Current checkpoint — buffered recorded-motion test complete, 22 October 2026
 
 [Plain summary](m31-buffered-motion-2026-10-22/SUMMARY.md) · [Restart](m31-buffered-motion-2026-10-22/RESTART-RESULT.md) · [Three.js replay](m31-buffered-motion-2026-10-22/viewer/).
