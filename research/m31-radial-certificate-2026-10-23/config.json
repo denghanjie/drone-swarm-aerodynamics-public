@@ -1,0 +1,38 @@
+{
+  "schema": "m31-radial-certificate-config-v1",
+  "stages": 1920,
+  "windows": 12,
+  "stagesPerWindow": 160,
+  "drones": 64,
+  "halfWidth": 0.125,
+  "radius": 3,
+  "marginPower": -20,
+  "componentThreshold": 4,
+  "inputCommit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+  "inputCheckpoint": "research/m31-neighbor-density-2026-10-23",
+  "allocations": {
+    "producer": {
+      "seconds": 300,
+      "mib": 128
+    },
+    "audit": {
+      "seconds": 900,
+      "mib": 16
+    },
+    "finalize": {
+      "seconds": 120,
+      "mib": 2
+    },
+    "ui": {
+      "seconds": 150,
+      "mib": 16
+    }
+  },
+  "readPolicy": {
+    "attemptsPerFile": 3,
+    "gitReadTimeoutSeconds": 45
+  },
+  "nativeCalls": 0,
+  "performanceMeasured": false,
+  "maxHypotCalls": 7741464
+}

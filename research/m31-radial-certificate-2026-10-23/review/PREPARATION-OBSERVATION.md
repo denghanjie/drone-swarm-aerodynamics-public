@@ -1,0 +1,7 @@
+# Preparation observations and administrative interruption
+
+No diagnostic/control/audit/display allocation had run when this note was written. Source preparation included reading published prior schemas/results, source-text editing, Python AST parsing, Node syntax-only checks and byte identity reads. These activities are not blind validation of a new workload.
+
+One repository-wide `git diff --check` remained running after at least79seconds without output. Process inspection identified that exact read-only Git child and its shell wrapper; the Node syntax-only command before it had already exited. The parent terminated only the identified read-only check/wrapper; the wrapper exited143. No successful completion of that Git check is claimed. Its cause is unestablished. No scientific process, source/result bytes or localhost server was changed by that termination. A direct text-only whitespace scan of the new checkpoint replaces this uncompleted repository-wide administrative check. The later lsof command in the same wrapper was not reached.
+
+Parent primary-source lookup also retained a tool-inaccessible Node checksum URL, followed by a successful direct read-only HTTPS acquisition of that official checksum list. PARENT-ACQUISITION.json records its bytes/hash and limits. Neither source metadata nor this successful access establishes the installed executable's correspondence to every inspected/compiled path.

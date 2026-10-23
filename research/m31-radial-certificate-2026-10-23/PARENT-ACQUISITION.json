@@ -1,0 +1,23 @@
+{
+  "scope": "source/provenance only; no numericalmodel execution",
+  "toolOpens": [
+    {
+      "url": "https://nodejs.org/dist/v24.19.0/SHASUMS256.txt",
+      "outcome": "tool inaccessible before content"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/nodejs/node/v24.19.0/deps/v8/src/builtins/math.tq",
+      "outcome": "browser-extracted tagged source viewed; no raw hash or executable mapping"
+    }
+  ],
+  "directAcquisitions": [
+    {
+      "url": "https://nodejs.org/dist/v24.19.0/SHASUMS256.txt",
+      "outcome": "success networkenabled HTTP1.1",
+      "bytes": 2967,
+      "sha256": "be0629ee2bcd8e40bb856abdd3407f0762101b76bd60a36b8867f637733631c0"
+    }
+  ],
+  "inference": "Official checksum list describes release archives/installers, not a verified mapping of this installed executable to all compiled/JIT source paths. No archive was downloaded or installed.",
+  "acquisitionClosed": true
+}
