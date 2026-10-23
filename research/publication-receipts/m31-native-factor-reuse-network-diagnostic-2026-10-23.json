@@ -1,0 +1,19 @@
+{
+  "scope": "Two unauthenticated HEAD reachability requests only; no retry, no source identity or model execution",
+  "events": [
+    {
+      "url": "https://api.github.com",
+      "exitCode": 0,
+      "headers": "HTTP/2 200 \ndate: Fri, 23 Oct 2026 12:23:09 GMT\ncache-control: public, max-age=60, s-maxage=60\nvary: Accept,Accept-Encoding, Accept, X-Requested-With\nx-github-api-version-selected: 2022-11-28\naccess-control-expose-headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset, Warning\naccess-control-allow-origin: *\nstrict-transport-security: max-age=31536000; includeSubdomains; preload\nx-frame-options: deny\nx-content-type-options: nosniff\nx-xss-protection: 0\nreferrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin\ncontent-security-policy: default-src 'none'\nserver: github.com\ncontent-type: application/json; charset=utf-8\nx-github-media-type: github.v3; format=json\netag: W/\"4f825cc84e1c733059d46e76e6df9db557ae5254f9625dfe8e1b09499c449438\"\naccept-ranges: bytes\nx-ratelimit-limit: 60\nx-ratelimit-remaining: 59\nx-ratelimit-used: 1\nx-ratelimit-resource: core\nx-ratelimit-reset: 1792761798\ncontent-length: 2396\nx-github-request-id: E7CC:2DA8B4:C4AFAA:1296449:6ADB51B6\nx-github-edge-region: southeastasia\n\n",
+      "diagnostic": "",
+      "wallSeconds": 0.38843154199999996
+    },
+    {
+      "url": "https://github.com",
+      "exitCode": 35,
+      "headers": "",
+      "diagnostic": "curl: (35) Recv failure: Connection reset by peer\n",
+      "wallSeconds": 0.250891125
+    }
+  ]
+}

@@ -1,3 +1,33 @@
+# Current handoff — independent source verification blocked, 23 October 2026
+
+Native factor reuse source is public at `7e6ab5b1d3bb819a7a17178c9a5636bde49ca6f2`, unchanged. [Readable handoff](publication-receipts/m31-native-factor-reuse-handoff-2026-10-23-SUMMARY.md) and [closure](publication-receipts/m31-native-factor-reuse-handoff-2026-10-23-CLOSURE.json).
+
+Original independent source acquisition CLOSED FAILED:66/74pins,24failed attempts. Separate exact-eight-input raw-CDN recovery also CLOSED FAILED:0/8pins,16requests,3424392captured bytes,416.282142208s,zero closure errors. All75local identities rechecked. No composite source proof or source-publication.json was created. Producer/audit/finalize/UI remain UNSTARTED; no new scientific or display result. Never rerun exhausted source-push/API/CDN attempts or open numerical work before the source gate passes.
+
+Next inspect actual receipt/review/publication state and live jobs. A further administrative recovery would need its own prospective bounded independent review; no additional network acquisition or numerical allocation is opened by this handoff. Keep frozen scientific sources and original budgets unchanged. Runtime fresh preflight matched the dbedff... Node pin, but recheck at any future launch. Keep localhost8876 and use the last verified phase-attribution viewer. Public checkpoint publication status must be read from actual handoff API receipt and independent review, not inferred from this text. No research completion, physical, safety, novelty, scaling or new speed claim. Historical records below preserved.
+
+---
+
+# Current gate — source public acquisition failed; bounded recovery authorized, 23 October 2026
+
+Native factor reuse source commit7e6ab5b1d3bb819a7a17178c9a5636bde49ca6f2 is public via exact Git Data API recovery; sourcepush original3failures remainclosed. First independent public source acquisition is CLOSED FAILED:66/74pins,8missing inputs207305212B,24retained failures, no scientific allocations. See publication-receipts/m31-native-factor-reuse-source-public-review-2026-10-23-failure.json.
+
+Existing protocol reviewer is authorized to prepare/pin and execute one separately bounded missing8files-only raw-CDN recovery at exact7e6...:2transfers,2attempts/file,10sconnect/45stransfer,600seconds overall,512MiB capture,max16publicrequests. Preserve original failure; only complete independent composite coverage permits source-publication binding and numerical launch. Frozen helper result-proof assumptions do not support CDN proof reuse; any later administrative result checker must explicitly support honest composite proofs under separate reviewed bounds outside frozen scientific source. Do not relabel CDN reads as authenticated API. Inspect live jobs and actual recovery receipts before acting. Producer/audit/finalize/UI remainUNSTARTED. Historical state below preserved.
+
+---
+
+# Current preparation — native factor reuse source frozen, publication pending, 23 October 2026
+
+Manual user continuation authorized. New checkpoint: `m31-native-factor-reuse-2026-10-23`. Source frozen locally at `7e6ab5b1d3bb819a7a17178c9a5636bde49ca6f2`; source manifest21212B SHA256858ba637b83da51296ffd8cc9cd4d91556de70ef568275fab144b353273eda4d,74pins including35inputs209531895B. Both existing reviewers gave explicit final source clearance. All producer/audit/finalize/UI allocations remain UNSTARTED. Do not run them until source publication and independent public-byte gate succeed.
+
+Three bounded GitHTTPS source push attempts failed with connection resets; original log and separate exhausted-budget closure retained under publication-receipts. Two read-only reachability checks found api.github.com reachable and github.com reset. Existing protocol reviewer is preparing a separately bounded exact-object Git Data API publication helper outside the frozen checkpoint. Do not repeat the failed GitHTTPS budget or run overlapping publication jobs. Inspect actual API helper/protocol/receipts and live jobs before continuation. Public-source acquisition protocol is prepared but UNEXECUTED.
+
+Current Node binary changed after interruption:121304480B SHA256dbedff294bab84a0a86c04e15fbcbeb1c97ca10bef1b32b0634cd24b36f62100, reportedv24.19.0. RUNTIME-CHANGE.json retains old/new; both arms will use the new prospective pin. Earlier timing is not a same-runtime comparison. Input Git-show3timeouts retained; separate reviewed tree/local-blob-hash recovery passed35pins, no archive decoding/model work. Frozen sources must remain unchanged.
+
+Local8876server restored after interruption; retain it. Existing reviewers only. No installations, paid services, contacts or submissions. The exact candidate will retire on this workload if fixed10%/7of8 cost gate misses. No scientific outcome, physical validity, novelty or overall completion claimed. Historical records below preserved.
+
+---
+
 # Current checkpoint — saved query timing attribution complete, 23 October 2026
 
 [Plain summary](m31-phase-attribution-2026-10-23/SUMMARY.md) · [Restart](m31-phase-attribution-2026-10-23/RESTART-RESULT.md) · [Three.js replay](m31-phase-attribution-2026-10-23/viewer/).

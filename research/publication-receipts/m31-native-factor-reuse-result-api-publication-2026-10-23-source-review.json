@@ -1,0 +1,85 @@
+{
+  "schema": "m31-native-factor-reuse-api-publisher-independent-static-review-v1",
+  "checkedAtUtc": "2026-10-23T13:08:35.537352+00:00",
+  "passed": true,
+  "scope": "Source-only review for planned administrative handoff. Exact commit/protocol review remains required before publication.",
+  "helper": {
+    "file": "research/publication-receipts/m31-native-factor-reuse-result-api-publication-2026-10-23-helper.py",
+    "bytes": 41857,
+    "sha256": "e240afaf9f90f7b011466855a2fc969b91d571303a02b1ee073fa4d6ddfb81be"
+  },
+  "design": {
+    "file": "research/publication-receipts/m31-native-factor-reuse-result-api-publication-2026-10-23-design.md",
+    "bytes": 10273,
+    "sha256": "a321b0d083ff7b85bca11a41bf41cdf712cd6c0f6fd3f4f1f61e564bfe890106"
+  },
+  "template": {
+    "file": "research/publication-receipts/m31-native-factor-reuse-result-api-publication-2026-10-23-template.json",
+    "bytes": 2361,
+    "sha256": "def5ab674d1ff87c3e6b7ee3121d3a74d20b142fb8ff9080ebe2ecec4ede625c"
+  },
+  "handoffSummary": {
+    "file": "research/publication-receipts/m31-native-factor-reuse-handoff-2026-10-23-SUMMARY.md",
+    "bytes": 2902,
+    "sha256": "13f0139c8768d05b4b6a42365fdc9be546d4ed260a38edbfe84855af5c090bc8"
+  },
+  "handoffClosure": {
+    "file": "research/publication-receipts/m31-native-factor-reuse-handoff-2026-10-23-CLOSURE.json",
+    "bytes": 1580,
+    "sha256": "1ca74bd4c93dfc74b45f2c2ab0effa32559861b74f31733a94a591aab6ec468b"
+  },
+  "restart": {
+    "file": "research/OVERNIGHT-RESTART.md",
+    "bytes": 132913,
+    "sha256": "bda5ef0b44c47251c6932cfdeb21e3e418c59cdfe9e53fb8cf24ffdebe57b49f"
+  },
+  "restartOriginal": {
+    "bytes": 128027,
+    "sha256": "43d3929fd85dc8d29c691f4ea5971454ec6e56a1783b32fa0cca54296fe8d6cc"
+  },
+  "restartPrependedPrefix": {
+    "bytes": 4886,
+    "sha256": "55017e8c83627431701b4305a1875dcbce937042b913a93e0b36f2bc0a567649"
+  },
+  "sourceParent": "7e6ab5b1d3bb819a7a17178c9a5636bde49ca6f2",
+  "sourceParentTree": "a8e6a60e3e676224ee128562d1babbc559d7352a",
+  "findings": [],
+  "imports": [
+    "argparse",
+    "base64",
+    "datetime",
+    "hashlib",
+    "json",
+    "math",
+    "os",
+    "re",
+    "selectors",
+    "signal",
+    "subprocess",
+    "tempfile",
+    "time",
+    "pathlib"
+  ],
+  "helperExecuted": false,
+  "networkCalls": 0,
+  "scientificImports": false,
+  "scientificExecution": false,
+  "approval": "Source-only clearance to prepare one exact --kind handoff protocol offline after the actual commit. No publication or result/source-gate success is conferred.",
+  "reviewedProperties": [
+    "Single fixed source parent/tree for handoff; all four allocations absent start/end.",
+    "Only added/modified regular administrative publication-receipt paths; sole exact restart exception preserves source-parent bytes as an exact suffix and records prepend identity.",
+    "Every changed path is explicitly pinned and byte-bound to the actual local commit; all frozen74 source/input pins and source manifest protected.",
+    "Parent blob reuse reconstructs metadata-only Merkle paths; fresh remote parent root required before reuse.",
+    "Exact API returned tree and commit must match local frozen object before force:false ref update. Immediate parent-ref recheck and reserved final read, no retries.",
+    "Prospective request count/payload accounting, sequential transport, bounded captured responses and evidence with closure reserve.",
+    "Intent/result journals and partial response captures retained; unknown mutation outcomes never silently repeated or promoted by final target observation.",
+    "Closure separately rechecks protocol/helper/review/manifest/source/input/commit/allocation identities and preserves errors.",
+    "Template non-executable; exact reviewed-ready protocol hash and separate execution are required.",
+    "Readable handoff accurately distinguishes source publication from failed public-byte gate and unstarted scientific work."
+  ],
+  "residualLimitations": [
+    "Git Data API ref update is not compare-and-swap; force:false and pre/final checks bound but do not eliminate concurrent branch movement.",
+    "No transport or helper execution test was run; this review is static and exact-target protocol review remains pending.",
+    "Later result/supplemental modes are prospective only and are not authorized by this handoff review."
+  ]
+}

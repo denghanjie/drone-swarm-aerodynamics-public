@@ -1,0 +1,48 @@
+{
+  "schema": "m31-administrative-recovery-static-review-v1",
+  "passed": true,
+  "helper": {
+    "file": "research/publication-receipts/m31-native-factor-reuse-source-public-review-2026-10-23-recovery-helper.py",
+    "bytes": 27403,
+    "sha256": "1df1154bda40b94393cf57172c2b0dc2187f9273022b3e705c3f63666aeddb2f"
+  },
+  "protocol": {
+    "file": "research/publication-receipts/m31-native-factor-reuse-source-public-review-2026-10-23-recovery-protocol.json",
+    "bytes": 8007,
+    "sha256": "1806003043c80e1d20bb207a468172d0af5b4e88c9b6fc2c1fa839408a6f5f9f"
+  },
+  "astParsed": true,
+  "standardLibraryImportsOnly": [
+    "concurrent.futures",
+    "pathlib",
+    "urllib.parse",
+    "argparse",
+    "datetime",
+    "hashlib",
+    "json",
+    "os",
+    "re",
+    "selectors",
+    "signal",
+    "subprocess",
+    "threading",
+    "time"
+  ],
+  "dynamicCodeCalls": false,
+  "scientificCodeImportedOrExecuted": false,
+  "networkRequestsMade": 0,
+  "originalRetainedProofChainsValidated": 66,
+  "originalFailureEventsPreserved": 24,
+  "missingInputPins": 8,
+  "missingInputBytes": 207305212,
+  "privacyFindings": [],
+  "reviewNotes": [
+    "Curl is invoked only in recover_one after exact descriptor derivation and local/tree bindings.",
+    "No --location, --insecure, credentials, curlrc, proxy, shell execution or curl retry; HTTPS protocol and HTTP/1.1 fixed.",
+    "Two-worker pool; requests and captured stdout/stderr share locked counters. Each file loops at most twice.",
+    "Capture kills child process group on timeout/cap failure, retains partial stream identities and bounded stderr.",
+    "Single-use output and lock; append-only numbered attempt journal. Source allocations checked at both boundaries.",
+    "Closure rereads pinned administrative files and opaque-hashes all74 source/input pins plus manifest. Errors remain separate.",
+    "No composite is emitted automatically; it requires successful recovery receipt and independent administrative validation."
+  ]
+}
