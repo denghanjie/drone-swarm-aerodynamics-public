@@ -1,0 +1,3202 @@
+{
+  "schema": "m31-neighbor-density-independent-public-result-review-v1",
+  "passed": true,
+  "checkedAtUtc": "2026-10-23T00:35:02.033717+00:00",
+  "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+  "sourceCommit": "acc97c17b446a9ab1c6f1b24a623529dc3030a7f",
+  "manifestPath": "research/m31-neighbor-density-2026-10-23/result-manifest.json",
+  "manifestBytes": 19976,
+  "manifestSha256": "acb61c176bcf87250a7658b2675d00fd8af4104a0504da5c1fb80bebdf56a5cb",
+  "verifiedFilePins": 88,
+  "localBytesEqualPins": true,
+  "committedBytesEqualLocal": true,
+  "remoteManifestBytesEqualLocal": true,
+  "freshRemoteFilePins": 62,
+  "freshRemoteReadsIncludingManifest": 63,
+  "freshRemoteVerifiedBytes": 12355727,
+  "reusedPublicInputPins": 26,
+  "publicResultScope": "Fresh exact HTTPS bytes at result commit for result manifest and every one of 62 non-input pins, including all source/display modules and every result/source-review/claim/restart/QA/receipt artifact. All 88 pins independently checked against working tree and result-commit blobs. The 26 unchanged input pins use prior fresh public verification at their declared origins; they were not redownloaded.",
+  "previousPublicSourceReceipt": {
+    "path": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23.json",
+    "bytes": 92371,
+    "sha256": "12e4c41c36f3eea5b7e6f47a0f67176e0538ae004173e6df3b081d3360149b4a"
+  },
+  "reusedPublicInputIdentities": [
+    {
+      "path": "research/m31-buffered-candidates-2026-10-20/LITERATURE.md",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2",
+      "bytes": 4331,
+      "sha256": "9a514f8e340a5d4146c08d21603c4ef1a29c512e5b44dae78496309a9db52076",
+      "sourceReceipt": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23.json",
+      "freshRemoteAtResultCommit": false
+    },
+    {
+      "path": "research/m31-buffered-candidates-2026-10-20/source/CANDIDATE.md",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2",
+      "bytes": 10390,
+      "sha256": "d810c23dcbd8088c2575e619bdf99961b7cbef65679b849c4410df16691ec9ec",
+      "sourceReceipt": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23.json",
+      "freshRemoteAtResultCommit": false
+    },
+    {
+      "path": "research/m31-buffered-candidates-2026-10-20/source/candidate-cache.cjs",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2",
+      "bytes": 6457,
+      "sha256": "9b38064690c2ae5b505cae936d574e3355bcc613b3f69fda8b89ed50732f96ad",
+      "sourceReceipt": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23.json",
+      "freshRemoteAtResultCommit": false
+    },
+    {
+      "path": "research/m31-buffered-candidates-2026-10-20/source/candidate-kernel.cjs",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2",
+      "bytes": 17265,
+      "sha256": "4fea99f4e61bff3c5eb54a0090e50b48e41d4cdf7cff5cdc770a37366f321b19",
+      "sourceReceipt": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23.json",
+      "freshRemoteAtResultCommit": false
+    },
+    {
+      "path": "research/m31-buffered-motion-2026-10-22/ALLOCATION-CLOSURE.json",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2",
+      "bytes": 1870,
+      "sha256": "a5f38347cb14b7a590120ae2cdc325cfe2f879ae5413a299a886f6a2e9247c52",
+      "sourceReceipt": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23.json",
+      "freshRemoteAtResultCommit": false
+    },
+    {
+      "path": "research/m31-buffered-motion-2026-10-22/LITERATURE.md",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2",
+      "bytes": 1189,
+      "sha256": "7fcebb92dd138d2e11b790e487c14f84892e4a9e8e468f34981633683d28b592",
+      "sourceReceipt": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23.json",
+      "freshRemoteAtResultCommit": false
+    },
+    {
+      "path": "research/m31-buffered-motion-2026-10-22/audit/audit.json",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2",
+      "bytes": 457439,
+      "sha256": "ef6e8876a3b102ceea2f5e6cdefc2d6d07fe0c65d64846320df22f8fafb26ab2",
+      "sourceReceipt": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23.json",
+      "freshRemoteAtResultCommit": false
+    },
+    {
+      "path": "research/m31-buffered-motion-2026-10-22/audit/viewer-data.json",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2",
+      "bytes": 9026716,
+      "sha256": "a7f379631858ad86c87d6557a25f4e697cdde377453feba3d5888c95f6d1cefb",
+      "sourceReceipt": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23.json",
+      "freshRemoteAtResultCommit": false
+    },
+    {
+      "path": "research/m31-buffered-motion-2026-10-22/extract/index.json",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2",
+      "bytes": 18790,
+      "sha256": "c7c144f40a0f4fb807e6f045becdc622ae7e643bcf154c01ecd3904544b68cac",
+      "sourceReceipt": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23.json",
+      "freshRemoteAtResultCommit": false
+    },
+    {
+      "path": "research/m31-buffered-motion-2026-10-22/result-manifest.json",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2",
+      "bytes": 545123,
+      "sha256": "440d2ac225f1587359cfa96af5d27b9a9b37d962ce25d75701c4fc195d753025",
+      "sourceReceipt": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23.json",
+      "freshRemoteAtResultCommit": false
+    },
+    {
+      "path": "research/m31-buffered-motion-2026-10-22/review/RESULT-REVIEW.md",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2",
+      "bytes": 12906,
+      "sha256": "f59f9c54192634673d2b62aa5337ced6a17ce3f2dd245e424c2320f00e67e6ed",
+      "sourceReceipt": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23.json",
+      "freshRemoteAtResultCommit": false
+    },
+    {
+      "path": "research/m31-buffered-motion-2026-10-22/transport/index.json",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2",
+      "bytes": 1099,
+      "sha256": "15da8e04cbed8cf2ceb6a214dead7f4c5b01b62896b0121e6a4ea2ae3ee367d7",
+      "sourceReceipt": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23.json",
+      "freshRemoteAtResultCommit": false
+    },
+    {
+      "path": "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part000",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2",
+      "bytes": 33554432,
+      "sha256": "079b27f80012b61a5b7da88d23604c617b290cc60c98b73c62d3f00cf2b75793",
+      "sourceReceipt": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23.json",
+      "freshRemoteAtResultCommit": false
+    },
+    {
+      "path": "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part001",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2",
+      "bytes": 33554432,
+      "sha256": "32dc050281d8822ddb5b94710b68fac5fb7ad70eeab13a24bdb369038164ce81",
+      "sourceReceipt": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23.json",
+      "freshRemoteAtResultCommit": false
+    },
+    {
+      "path": "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part002",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2",
+      "bytes": 33554432,
+      "sha256": "b4ca4865ac09c54597ede4d608841d445a5ea7164799614978b5c1777627b268",
+      "sourceReceipt": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23.json",
+      "freshRemoteAtResultCommit": false
+    },
+    {
+      "path": "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part003",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2",
+      "bytes": 33554432,
+      "sha256": "e44877bab0936c31aab556a39a0151855ec316d13ce6c233db9ceae5ec9fdc86",
+      "sourceReceipt": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23.json",
+      "freshRemoteAtResultCommit": false
+    },
+    {
+      "path": "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part004",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2",
+      "bytes": 33554432,
+      "sha256": "36cbf56cc311de3a453254c0637cd213d047a47dafe5a8c0f01d6a35685838f4",
+      "sourceReceipt": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23.json",
+      "freshRemoteAtResultCommit": false
+    },
+    {
+      "path": "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part005",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2",
+      "bytes": 27090335,
+      "sha256": "0039ca2e5736e067d4d68040f56cbd6b4413a6c393c1d3973d6ce5def656da4f",
+      "sourceReceipt": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23.json",
+      "freshRemoteAtResultCommit": false
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/native-load.cjs",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2",
+      "bytes": 16262,
+      "sha256": "b4699a8025e27dcd34e9a206e0330a2c08d7caa61e934ec203d142876e1430f1",
+      "sourceReceipt": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23.json",
+      "freshRemoteAtResultCommit": false
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/vendor/anchor-kernel.cjs",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2",
+      "bytes": 11828,
+      "sha256": "c2ab29e4f53341706582d52149df96cd93323d3943ac145f288fbbae4de71a8a",
+      "sourceReceipt": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23.json",
+      "freshRemoteAtResultCommit": false
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/vendor/kernel.cjs",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2",
+      "bytes": 16676,
+      "sha256": "efc87f4c0f9d1a5a9b754d9d334ce295227a0cb01ce6980e4818313dd35d3bc8",
+      "sourceReceipt": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23.json",
+      "freshRemoteAtResultCommit": false
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/vendor/lean-anchor.cjs",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2",
+      "bytes": 14840,
+      "sha256": "1b57d90d1ce1a45fe3e7f637cae57325861bfc37c907de4d4c6f9e1a79f1af96",
+      "sourceReceipt": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23.json",
+      "freshRemoteAtResultCommit": false
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/vendor/reference-excerpt.cjs",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2",
+      "bytes": 2731,
+      "sha256": "ec71562d17db5b30497e2953adc75019c424c19a44e45b22fcbb3a4482096d1e",
+      "sourceReceipt": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23.json",
+      "freshRemoteAtResultCommit": false
+    },
+    {
+      "path": "research/publication-receipts/m31-buffered-motion-provenance-2026-10-22.md",
+      "originCommit": "d948a58315020eda1a1502277362ab65116c873b",
+      "bytes": 1521,
+      "sha256": "094353283c649adafeb106f0134c043c26c9fb3e72f8502d1ac986d3ae93f53d",
+      "sourceReceipt": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23.json",
+      "freshRemoteAtResultCommit": false
+    },
+    {
+      "path": "research/publication-receipts/m31-buffered-motion-public-review-2026-10-22.md",
+      "originCommit": "d948a58315020eda1a1502277362ab65116c873b",
+      "bytes": 17134,
+      "sha256": "992c34ac6bfdfa84e31ec66ed63adde6a3a4a66b53d1a8f64a208307c528d797",
+      "sourceReceipt": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23.json",
+      "freshRemoteAtResultCommit": false
+    },
+    {
+      "path": "research/publication-receipts/m31-buffered-motion-result-2026-10-22.json",
+      "originCommit": "d948a58315020eda1a1502277362ab65116c873b",
+      "bytes": 3090,
+      "sha256": "c026b172b3b237280d50097692bae595f372f1b284fecce0082a445ab2fe8c25",
+      "sourceReceipt": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23.json",
+      "freshRemoteAtResultCommit": false
+    }
+  ],
+  "previousArchiveTransportVerification": {
+    "parts": 6,
+    "original": {
+      "bytes": 194862495,
+      "sha256": "b0d833c23eb6e81c2aa600ef82b2e344587762775a07c412a198d49fc2a56dfa"
+    },
+    "reverifiedRemoteThisResultCheck": false,
+    "scope": "Original exact remote six-part concatenated identity verified during source acceptance; current result check rechecks all six local/result-commit file identities without decompression."
+  },
+  "sourceFreezeUnchanged": true,
+  "all23ReviewedResultIdentitiesMatchManifest": true,
+  "successfulOperations": 241,
+  "failedAttempts": [],
+  "events": [
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/result-manifest.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 19976,
+      "sha256": "acb61c176bcf87250a7658b2675d00fd8af4104a0504da5c1fb80bebdf56a5cb",
+      "wallSeconds": 0.02259937499999999
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/result-manifest.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 19976,
+      "sha256": "acb61c176bcf87250a7658b2675d00fd8af4104a0504da5c1fb80bebdf56a5cb",
+      "wallSeconds": 0.014108791999999995
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/result-manifest.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/result-manifest.json",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 19976,
+      "sha256": "acb61c176bcf87250a7658b2675d00fd8af4104a0504da5c1fb80bebdf56a5cb",
+      "wallSeconds": 0.035890375
+    },
+    {
+      "operation": "local",
+      "path": "outputs/step02b-source/vendor/OrbitControls.js",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 38703,
+      "sha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c",
+      "wallSeconds": 0.021177583
+    },
+    {
+      "operation": "result-commit",
+      "path": "outputs/step02b-source/vendor/OrbitControls.js",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 38703,
+      "sha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c",
+      "wallSeconds": 0.012777540999999976
+    },
+    {
+      "operation": "public",
+      "path": "outputs/step02b-source/vendor/OrbitControls.js",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/outputs/step02b-source/vendor/OrbitControls.js",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 38703,
+      "sha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c",
+      "wallSeconds": 0.273509
+    },
+    {
+      "operation": "local",
+      "path": "outputs/step02b-source/vendor/three.core.js",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 1403455,
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20",
+      "wallSeconds": 0.03578537500000001
+    },
+    {
+      "operation": "result-commit",
+      "path": "outputs/step02b-source/vendor/three.core.js",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 1403455,
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20",
+      "wallSeconds": 0.015855334
+    },
+    {
+      "operation": "public",
+      "path": "outputs/step02b-source/vendor/three.core.js",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/outputs/step02b-source/vendor/three.core.js",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 1403455,
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20",
+      "wallSeconds": 0.391955375
+    },
+    {
+      "operation": "local",
+      "path": "outputs/step02b-source/vendor/three.module.js",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 603113,
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+      "wallSeconds": 0.035031874999999935
+    },
+    {
+      "operation": "result-commit",
+      "path": "outputs/step02b-source/vendor/three.module.js",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 603113,
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+      "wallSeconds": 0.0141567090000001
+    },
+    {
+      "operation": "public",
+      "path": "outputs/step02b-source/vendor/three.module.js",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/outputs/step02b-source/vendor/three.module.js",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 603113,
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+      "wallSeconds": 0.36706066699999995
+    },
+    {
+      "operation": "local",
+      "path": "research/OVERNIGHT-RESTART.md",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 122360,
+      "sha256": "5664425bab70528f3aac99b3ae72f37d12a7f655c46492f7a456f6de80ef2537",
+      "wallSeconds": 0.026993999999999962
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/OVERNIGHT-RESTART.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 122360,
+      "sha256": "5664425bab70528f3aac99b3ae72f37d12a7f655c46492f7a456f6de80ef2537",
+      "wallSeconds": 0.01174366700000018
+    },
+    {
+      "operation": "public",
+      "path": "research/OVERNIGHT-RESTART.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/OVERNIGHT-RESTART.md",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 122360,
+      "sha256": "5664425bab70528f3aac99b3ae72f37d12a7f655c46492f7a456f6de80ef2537",
+      "wallSeconds": 0.353178083
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-buffered-candidates-2026-10-20/LITERATURE.md",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 4331,
+      "sha256": "9a514f8e340a5d4146c08d21603c4ef1a29c512e5b44dae78496309a9db52076",
+      "wallSeconds": 0.039077625000000005
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-buffered-candidates-2026-10-20/LITERATURE.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 4331,
+      "sha256": "9a514f8e340a5d4146c08d21603c4ef1a29c512e5b44dae78496309a9db52076",
+      "wallSeconds": 0.01358758399999993
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-buffered-candidates-2026-10-20/source/CANDIDATE.md",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 10390,
+      "sha256": "d810c23dcbd8088c2575e619bdf99961b7cbef65679b849c4410df16691ec9ec",
+      "wallSeconds": 0.02231054099999996
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-buffered-candidates-2026-10-20/source/CANDIDATE.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 10390,
+      "sha256": "d810c23dcbd8088c2575e619bdf99961b7cbef65679b849c4410df16691ec9ec",
+      "wallSeconds": 0.01311400000000007
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-buffered-candidates-2026-10-20/source/candidate-cache.cjs",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 6457,
+      "sha256": "9b38064690c2ae5b505cae936d574e3355bcc613b3f69fda8b89ed50732f96ad",
+      "wallSeconds": 0.019910666999999993
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-buffered-candidates-2026-10-20/source/candidate-cache.cjs",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 6457,
+      "sha256": "9b38064690c2ae5b505cae936d574e3355bcc613b3f69fda8b89ed50732f96ad",
+      "wallSeconds": 0.011829124999999996
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-buffered-candidates-2026-10-20/source/candidate-kernel.cjs",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 17265,
+      "sha256": "4fea99f4e61bff3c5eb54a0090e50b48e41d4cdf7cff5cdc770a37366f321b19",
+      "wallSeconds": 0.02026712499999994
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-buffered-candidates-2026-10-20/source/candidate-kernel.cjs",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 17265,
+      "sha256": "4fea99f4e61bff3c5eb54a0090e50b48e41d4cdf7cff5cdc770a37366f321b19",
+      "wallSeconds": 0.011879374999999914
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-buffered-motion-2026-10-22/ALLOCATION-CLOSURE.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 1870,
+      "sha256": "a5f38347cb14b7a590120ae2cdc325cfe2f879ae5413a299a886f6a2e9247c52",
+      "wallSeconds": 0.020487916999999856
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-buffered-motion-2026-10-22/ALLOCATION-CLOSURE.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 1870,
+      "sha256": "a5f38347cb14b7a590120ae2cdc325cfe2f879ae5413a299a886f6a2e9247c52",
+      "wallSeconds": 0.011641374999999954
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-buffered-motion-2026-10-22/LITERATURE.md",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 1189,
+      "sha256": "7fcebb92dd138d2e11b790e487c14f84892e4a9e8e468f34981633683d28b592",
+      "wallSeconds": 0.0195832090000001
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-buffered-motion-2026-10-22/LITERATURE.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 1189,
+      "sha256": "7fcebb92dd138d2e11b790e487c14f84892e4a9e8e468f34981633683d28b592",
+      "wallSeconds": 0.010220040999999958
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-buffered-motion-2026-10-22/audit/audit.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 457439,
+      "sha256": "ef6e8876a3b102ceea2f5e6cdefc2d6d07fe0c65d64846320df22f8fafb26ab2",
+      "wallSeconds": 0.019157958000000086
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-buffered-motion-2026-10-22/audit/audit.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 457439,
+      "sha256": "ef6e8876a3b102ceea2f5e6cdefc2d6d07fe0c65d64846320df22f8fafb26ab2",
+      "wallSeconds": 0.010348540999999933
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-buffered-motion-2026-10-22/audit/viewer-data.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 9026716,
+      "sha256": "a7f379631858ad86c87d6557a25f4e697cdde377453feba3d5888c95f6d1cefb",
+      "wallSeconds": 0.023271583999999956
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-buffered-motion-2026-10-22/audit/viewer-data.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 9026716,
+      "sha256": "a7f379631858ad86c87d6557a25f4e697cdde377453feba3d5888c95f6d1cefb",
+      "wallSeconds": 0.03148666599999994
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-buffered-motion-2026-10-22/extract/index.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 18790,
+      "sha256": "c7c144f40a0f4fb807e6f045becdc622ae7e643bcf154c01ecd3904544b68cac",
+      "wallSeconds": 0.019323125000000108
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-buffered-motion-2026-10-22/extract/index.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 18790,
+      "sha256": "c7c144f40a0f4fb807e6f045becdc622ae7e643bcf154c01ecd3904544b68cac",
+      "wallSeconds": 0.009640582999999925
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-buffered-motion-2026-10-22/result-manifest.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 545123,
+      "sha256": "440d2ac225f1587359cfa96af5d27b9a9b37d962ce25d75701c4fc195d753025",
+      "wallSeconds": 0.02072204200000005
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-buffered-motion-2026-10-22/result-manifest.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 545123,
+      "sha256": "440d2ac225f1587359cfa96af5d27b9a9b37d962ce25d75701c4fc195d753025",
+      "wallSeconds": 0.009754875000000052
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-buffered-motion-2026-10-22/review/RESULT-REVIEW.md",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 12906,
+      "sha256": "f59f9c54192634673d2b62aa5337ced6a17ce3f2dd245e424c2320f00e67e6ed",
+      "wallSeconds": 0.018878916000000245
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-buffered-motion-2026-10-22/review/RESULT-REVIEW.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 12906,
+      "sha256": "f59f9c54192634673d2b62aa5337ced6a17ce3f2dd245e424c2320f00e67e6ed",
+      "wallSeconds": 0.010551500000000047
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-buffered-motion-2026-10-22/transport/index.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 1099,
+      "sha256": "15da8e04cbed8cf2ceb6a214dead7f4c5b01b62896b0121e6a4ea2ae3ee367d7",
+      "wallSeconds": 0.01809087499999995
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-buffered-motion-2026-10-22/transport/index.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 1099,
+      "sha256": "15da8e04cbed8cf2ceb6a214dead7f4c5b01b62896b0121e6a4ea2ae3ee367d7",
+      "wallSeconds": 0.009553166999999974
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part000",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 33554432,
+      "sha256": "079b27f80012b61a5b7da88d23604c617b290cc60c98b73c62d3f00cf2b75793",
+      "wallSeconds": 0.03295995800000018
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part000",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 33554432,
+      "sha256": "079b27f80012b61a5b7da88d23604c617b290cc60c98b73c62d3f00cf2b75793",
+      "wallSeconds": 0.14868683400000027
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part001",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 33554432,
+      "sha256": "32dc050281d8822ddb5b94710b68fac5fb7ad70eeab13a24bdb369038164ce81",
+      "wallSeconds": 0.03535579100000019
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part001",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 33554432,
+      "sha256": "32dc050281d8822ddb5b94710b68fac5fb7ad70eeab13a24bdb369038164ce81",
+      "wallSeconds": 0.12847000000000008
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part002",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 33554432,
+      "sha256": "b4ca4865ac09c54597ede4d608841d445a5ea7164799614978b5c1777627b268",
+      "wallSeconds": 0.04320654200000007
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part002",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 33554432,
+      "sha256": "b4ca4865ac09c54597ede4d608841d445a5ea7164799614978b5c1777627b268",
+      "wallSeconds": 0.14828675000000002
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part003",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 33554432,
+      "sha256": "e44877bab0936c31aab556a39a0151855ec316d13ce6c233db9ceae5ec9fdc86",
+      "wallSeconds": 0.03407662499999997
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part003",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 33554432,
+      "sha256": "e44877bab0936c31aab556a39a0151855ec316d13ce6c233db9ceae5ec9fdc86",
+      "wallSeconds": 0.11816191700000012
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part004",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 33554432,
+      "sha256": "36cbf56cc311de3a453254c0637cd213d047a47dafe5a8c0f01d6a35685838f4",
+      "wallSeconds": 0.033852167000000044
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part004",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 33554432,
+      "sha256": "36cbf56cc311de3a453254c0637cd213d047a47dafe5a8c0f01d6a35685838f4",
+      "wallSeconds": 0.11851741700000007
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part005",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 27090335,
+      "sha256": "0039ca2e5736e067d4d68040f56cbd6b4413a6c393c1d3973d6ce5def656da4f",
+      "wallSeconds": 0.031420167000000276
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part005",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 27090335,
+      "sha256": "0039ca2e5736e067d4d68040f56cbd6b4413a6c393c1d3973d6ce5def656da4f",
+      "wallSeconds": 0.10320904200000003
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/native-load.cjs",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 16262,
+      "sha256": "b4699a8025e27dcd34e9a206e0330a2c08d7caa61e934ec203d142876e1430f1",
+      "wallSeconds": 0.018783500000000064
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/native-load.cjs",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 16262,
+      "sha256": "b4699a8025e27dcd34e9a206e0330a2c08d7caa61e934ec203d142876e1430f1",
+      "wallSeconds": 0.009769250000000174
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/vendor/anchor-kernel.cjs",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 11828,
+      "sha256": "c2ab29e4f53341706582d52149df96cd93323d3943ac145f288fbbae4de71a8a",
+      "wallSeconds": 0.018923709000000066
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/vendor/anchor-kernel.cjs",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 11828,
+      "sha256": "c2ab29e4f53341706582d52149df96cd93323d3943ac145f288fbbae4de71a8a",
+      "wallSeconds": 0.009016083000000119
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/vendor/kernel.cjs",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 16676,
+      "sha256": "efc87f4c0f9d1a5a9b754d9d334ce295227a0cb01ce6980e4818313dd35d3bc8",
+      "wallSeconds": 0.018262208000000335
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/vendor/kernel.cjs",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 16676,
+      "sha256": "efc87f4c0f9d1a5a9b754d9d334ce295227a0cb01ce6980e4818313dd35d3bc8",
+      "wallSeconds": 0.010013166999999878
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/vendor/lean-anchor.cjs",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 14840,
+      "sha256": "1b57d90d1ce1a45fe3e7f637cae57325861bfc37c907de4d4c6f9e1a79f1af96",
+      "wallSeconds": 0.0184312499999999
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/vendor/lean-anchor.cjs",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 14840,
+      "sha256": "1b57d90d1ce1a45fe3e7f637cae57325861bfc37c907de4d4c6f9e1a79f1af96",
+      "wallSeconds": 0.009881416000000254
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/vendor/reference-excerpt.cjs",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 2731,
+      "sha256": "ec71562d17db5b30497e2953adc75019c424c19a44e45b22fcbb3a4482096d1e",
+      "wallSeconds": 0.01874312499999986
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/vendor/reference-excerpt.cjs",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 2731,
+      "sha256": "ec71562d17db5b30497e2953adc75019c424c19a44e45b22fcbb3a4482096d1e",
+      "wallSeconds": 0.009159540999999827
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/ALLOCATION-CLOSURE.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 1405,
+      "sha256": "1590575fce2f6215a2109c157abde25c70a516c08ecd4d956a5ef6c0c12b2b64",
+      "wallSeconds": 0.018649958000000133
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/ALLOCATION-CLOSURE.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 1405,
+      "sha256": "1590575fce2f6215a2109c157abde25c70a516c08ecd4d956a5ef6c0c12b2b64",
+      "wallSeconds": 0.011700958000000039
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/ALLOCATION-CLOSURE.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/ALLOCATION-CLOSURE.json",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 1405,
+      "sha256": "1590575fce2f6215a2109c157abde25c70a516c08ecd4d956a5ef6c0c12b2b64",
+      "wallSeconds": 0.2417804160000001
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/CLAIMS.md",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 2846,
+      "sha256": "236b1c49e09dbf52d9fadacb36dd9020dfa237a709ce484cdb5619185e4b02eb",
+      "wallSeconds": 0.03407454199999993
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/CLAIMS.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 2846,
+      "sha256": "236b1c49e09dbf52d9fadacb36dd9020dfa237a709ce484cdb5619185e4b02eb",
+      "wallSeconds": 0.012789582999999993
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/CLAIMS.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/CLAIMS.md",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 2846,
+      "sha256": "236b1c49e09dbf52d9fadacb36dd9020dfa237a709ce484cdb5619185e4b02eb",
+      "wallSeconds": 0.2525404170000001
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/LITERATURE.md",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 7635,
+      "sha256": "4f810c7f26682b74211b2b2deeddeaa7a3c8eef8d67a5afb1834953c11123881",
+      "wallSeconds": 0.0369299169999997
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/LITERATURE.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 7635,
+      "sha256": "4f810c7f26682b74211b2b2deeddeaa7a3c8eef8d67a5afb1834953c11123881",
+      "wallSeconds": 0.013983791999999884
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/LITERATURE.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/LITERATURE.md",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 7635,
+      "sha256": "4f810c7f26682b74211b2b2deeddeaa7a3c8eef8d67a5afb1834953c11123881",
+      "wallSeconds": 0.2626282499999997
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/PRIVACY-RESULT.md",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 1285,
+      "sha256": "2f8e094511cb53ef8bbf1b8540ed4e134cd49b448179c58bbe6cbb713e7a8ea6",
+      "wallSeconds": 0.036177874999999915
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/PRIVACY-RESULT.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 1285,
+      "sha256": "2f8e094511cb53ef8bbf1b8540ed4e134cd49b448179c58bbe6cbb713e7a8ea6",
+      "wallSeconds": 0.013001082999999802
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/PRIVACY-RESULT.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/PRIVACY-RESULT.md",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 1285,
+      "sha256": "2f8e094511cb53ef8bbf1b8540ed4e134cd49b448179c58bbe6cbb713e7a8ea6",
+      "wallSeconds": 0.2593460419999998
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/PRIVACY-SOURCE.md",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 686,
+      "sha256": "8ac668306dd0c9b1885e17569c19f9cf7bdbf2178e797bf439b5c61db29191a2",
+      "wallSeconds": 0.035888416999999784
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/PRIVACY-SOURCE.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 686,
+      "sha256": "8ac668306dd0c9b1885e17569c19f9cf7bdbf2178e797bf439b5c61db29191a2",
+      "wallSeconds": 0.013320208000000555
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/PRIVACY-SOURCE.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/PRIVACY-SOURCE.md",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 686,
+      "sha256": "8ac668306dd0c9b1885e17569c19f9cf7bdbf2178e797bf439b5c61db29191a2",
+      "wallSeconds": 0.3387027920000003
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/PROTOCOL.md",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 6150,
+      "sha256": "81dc6e99c73f2db0e2caa302fee74a99f2503dbcd8a96d390a9af271865ba610",
+      "wallSeconds": 0.04138870899999958
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/PROTOCOL.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 6150,
+      "sha256": "81dc6e99c73f2db0e2caa302fee74a99f2503dbcd8a96d390a9af271865ba610",
+      "wallSeconds": 0.014472458000000188
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/PROTOCOL.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/PROTOCOL.md",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 6150,
+      "sha256": "81dc6e99c73f2db0e2caa302fee74a99f2503dbcd8a96d390a9af271865ba610",
+      "wallSeconds": 0.25449029199999984
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/RESTART-RESULT.md",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 3173,
+      "sha256": "6f3df020e86fa080366c99b9142f6b975564853310006d91286bd920d500c65a",
+      "wallSeconds": 0.03770879100000002
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/RESTART-RESULT.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 3173,
+      "sha256": "6f3df020e86fa080366c99b9142f6b975564853310006d91286bd920d500c65a",
+      "wallSeconds": 0.0133084160000001
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/RESTART-RESULT.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/RESTART-RESULT.md",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 3173,
+      "sha256": "6f3df020e86fa080366c99b9142f6b975564853310006d91286bd920d500c65a",
+      "wallSeconds": 0.26161937500000043
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/RESTART.md",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 2007,
+      "sha256": "9e8d5f967e13b5eae92b53ac930f4f3ebd5cbd3527722b86b34cba3d6708056d",
+      "wallSeconds": 0.03677349999999979
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/RESTART.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 2007,
+      "sha256": "9e8d5f967e13b5eae92b53ac930f4f3ebd5cbd3527722b86b34cba3d6708056d",
+      "wallSeconds": 0.01438675000000078
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/RESTART.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/RESTART.md",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 2007,
+      "sha256": "9e8d5f967e13b5eae92b53ac930f4f3ebd5cbd3527722b86b34cba3d6708056d",
+      "wallSeconds": 0.27926487499999997
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/RESULT-CLAIMS.md",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 3734,
+      "sha256": "1aca0c6edde293c20771f38a13afe4acb16e6bcc321cdb41842f9ed274e88bfe",
+      "wallSeconds": 0.03366170900000043
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/RESULT-CLAIMS.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 3734,
+      "sha256": "1aca0c6edde293c20771f38a13afe4acb16e6bcc321cdb41842f9ed274e88bfe",
+      "wallSeconds": 0.01302995799999973
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/RESULT-CLAIMS.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/RESULT-CLAIMS.md",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 3734,
+      "sha256": "1aca0c6edde293c20771f38a13afe4acb16e6bcc321cdb41842f9ed274e88bfe",
+      "wallSeconds": 0.31338691700000076
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/SCHEMA.md",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 4836,
+      "sha256": "d68277fe126688ea0a5c2fe8610b49b748e45d0be3b6cbf7a6b584fda71ab6d7",
+      "wallSeconds": 0.036069750000000234
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/SCHEMA.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 4836,
+      "sha256": "d68277fe126688ea0a5c2fe8610b49b748e45d0be3b6cbf7a6b584fda71ab6d7",
+      "wallSeconds": 0.013285916000000064
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/SCHEMA.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/SCHEMA.md",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 4836,
+      "sha256": "d68277fe126688ea0a5c2fe8610b49b748e45d0be3b6cbf7a6b584fda71ab6d7",
+      "wallSeconds": 0.2605468750000002
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/SUMMARY.md",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 3485,
+      "sha256": "d719490c5e76db73707e708cce23f9d08d7403dcc8444088d5c0a944e5c094cc",
+      "wallSeconds": 0.03663208400000073
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/SUMMARY.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 3485,
+      "sha256": "d719490c5e76db73707e708cce23f9d08d7403dcc8444088d5c0a944e5c094cc",
+      "wallSeconds": 0.012740958000000191
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/SUMMARY.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/SUMMARY.md",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 3485,
+      "sha256": "d719490c5e76db73707e708cce23f9d08d7403dcc8444088d5c0a944e5c094cc",
+      "wallSeconds": 0.42324266700000024
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/UI-QA.md",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 1265,
+      "sha256": "1822564cdde12f3c2a2c4c684ae36e920acf5d761e12aba39fe33fe13082ffad",
+      "wallSeconds": 0.03983445800000052
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/UI-QA.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 1265,
+      "sha256": "1822564cdde12f3c2a2c4c684ae36e920acf5d761e12aba39fe33fe13082ffad",
+      "wallSeconds": 0.014642792000000071
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/UI-QA.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/UI-QA.md",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 1265,
+      "sha256": "1822564cdde12f3c2a2c4c684ae36e920acf5d761e12aba39fe33fe13082ffad",
+      "wallSeconds": 0.26357799999999987
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/audit-supervisor-launch.lock",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 23,
+      "sha256": "582728fcc60fc12fd7abcdaf58c67141dc65f2e824a859e4ec0c68c6587f124e",
+      "wallSeconds": 0.038252458000000544
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/audit-supervisor-launch.lock",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 23,
+      "sha256": "582728fcc60fc12fd7abcdaf58c67141dc65f2e824a859e4ec0c68c6587f124e",
+      "wallSeconds": 0.01399887500000041
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/audit-supervisor-launch.lock",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/audit-supervisor-launch.lock",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 23,
+      "sha256": "582728fcc60fc12fd7abcdaf58c67141dc65f2e824a859e4ec0c68c6587f124e",
+      "wallSeconds": 0.24356299999999997
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/audit-supervisor.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 217,
+      "sha256": "ef2984b8c51e33956e04e20b9204ff1f04c0db69823c8742e1f4dbb4a3d7f4d7",
+      "wallSeconds": 0.03697491699999933
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/audit-supervisor.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 217,
+      "sha256": "ef2984b8c51e33956e04e20b9204ff1f04c0db69823c8742e1f4dbb4a3d7f4d7",
+      "wallSeconds": 0.013455959000000739
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/audit-supervisor.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/audit-supervisor.json",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 217,
+      "sha256": "ef2984b8c51e33956e04e20b9204ff1f04c0db69823c8742e1f4dbb4a3d7f4d7",
+      "wallSeconds": 0.38296558299999983
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/audit/audit.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 27023,
+      "sha256": "4c3b9dac6426d8e7c029795f3190a402f1e7ba9a21d3f9771b644e5f9a65b052",
+      "wallSeconds": 0.04300399999999982
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/audit/audit.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 27023,
+      "sha256": "4c3b9dac6426d8e7c029795f3190a402f1e7ba9a21d3f9771b644e5f9a65b052",
+      "wallSeconds": 0.014483583000000522
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/audit/audit.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/audit/audit.json",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 27023,
+      "sha256": "4c3b9dac6426d8e7c029795f3190a402f1e7ba9a21d3f9771b644e5f9a65b052",
+      "wallSeconds": 0.3128213330000005
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/audit/exit.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 77,
+      "sha256": "19df4f54accc282b5c81fadada0a65780c9feacaec6b4ad0d6436476babec45e",
+      "wallSeconds": 0.03706395800000095
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/audit/exit.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 77,
+      "sha256": "19df4f54accc282b5c81fadada0a65780c9feacaec6b4ad0d6436476babec45e",
+      "wallSeconds": 0.013222750000000616
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/audit/exit.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/audit/exit.json",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 77,
+      "sha256": "19df4f54accc282b5c81fadada0a65780c9feacaec6b4ad0d6436476babec45e",
+      "wallSeconds": 0.3250312500000003
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/audit/launch.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 130,
+      "sha256": "748b10ec874af0fa8f59554551074cdb0df7ca5d8b73fe3957c028d6436a1092",
+      "wallSeconds": 0.03492566699999955
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/audit/launch.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 130,
+      "sha256": "748b10ec874af0fa8f59554551074cdb0df7ca5d8b73fe3957c028d6436a1092",
+      "wallSeconds": 0.012818416
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/audit/launch.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/audit/launch.json",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 130,
+      "sha256": "748b10ec874af0fa8f59554551074cdb0df7ca5d8b73fe3957c028d6436a1092",
+      "wallSeconds": 0.25717891600000087
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/config.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 750,
+      "sha256": "2d348173f49db25cf77f2c15f09c97bebcae520c8a9d006da2268469346ae49c",
+      "wallSeconds": 0.03535383300000028
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/config.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 750,
+      "sha256": "2d348173f49db25cf77f2c15f09c97bebcae520c8a9d006da2268469346ae49c",
+      "wallSeconds": 0.01348245899999867
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/config.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/config.json",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 750,
+      "sha256": "2d348173f49db25cf77f2c15f09c97bebcae520c8a9d006da2268469346ae49c",
+      "wallSeconds": 0.3118708340000005
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/finalize-supervisor-launch.lock",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 23,
+      "sha256": "582728fcc60fc12fd7abcdaf58c67141dc65f2e824a859e4ec0c68c6587f124e",
+      "wallSeconds": 0.039452749999998815
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/finalize-supervisor-launch.lock",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 23,
+      "sha256": "582728fcc60fc12fd7abcdaf58c67141dc65f2e824a859e4ec0c68c6587f124e",
+      "wallSeconds": 0.014032832999999911
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/finalize-supervisor-launch.lock",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/finalize-supervisor-launch.lock",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 23,
+      "sha256": "582728fcc60fc12fd7abcdaf58c67141dc65f2e824a859e4ec0c68c6587f124e",
+      "wallSeconds": 0.3403044159999986
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/finalize-supervisor.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 215,
+      "sha256": "31d308a00de1c69d2cc41210612e413894d9437b2fda2cbad295248902d081a1",
+      "wallSeconds": 0.040534499999999696
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/finalize-supervisor.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 215,
+      "sha256": "31d308a00de1c69d2cc41210612e413894d9437b2fda2cbad295248902d081a1",
+      "wallSeconds": 0.013779875000000885
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/finalize-supervisor.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/finalize-supervisor.json",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 215,
+      "sha256": "31d308a00de1c69d2cc41210612e413894d9437b2fda2cbad295248902d081a1",
+      "wallSeconds": 0.26217670900000023
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/finalize/exit.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 80,
+      "sha256": "58d1964c948d257b9281f859ad4e30bcf2b61332751532767f2dedd1b7e1ccbf",
+      "wallSeconds": 0.03459062500000165
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/finalize/exit.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 80,
+      "sha256": "58d1964c948d257b9281f859ad4e30bcf2b61332751532767f2dedd1b7e1ccbf",
+      "wallSeconds": 0.012297165999999748
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/finalize/exit.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/finalize/exit.json",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 80,
+      "sha256": "58d1964c948d257b9281f859ad4e30bcf2b61332751532767f2dedd1b7e1ccbf",
+      "wallSeconds": 0.250749334
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/finalize/launch.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 35,
+      "sha256": "d6a3c710566bfb86df53bebfd525ecd9739127e450242708f0b1467a7ccfe9fd",
+      "wallSeconds": 0.03645083400000004
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/finalize/launch.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 35,
+      "sha256": "d6a3c710566bfb86df53bebfd525ecd9739127e450242708f0b1467a7ccfe9fd",
+      "wallSeconds": 0.012829542000000416
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/finalize/launch.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/finalize/launch.json",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 35,
+      "sha256": "d6a3c710566bfb86df53bebfd525ecd9739127e450242708f0b1467a7ccfe9fd",
+      "wallSeconds": 0.2581276670000001
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/finalize/report.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 710,
+      "sha256": "7d7ce723233d4a603b1c9d219cfffba34b4ae9885c954b91c5b5265aa40dfe4a",
+      "wallSeconds": 0.026340334000000354
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/finalize/report.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 710,
+      "sha256": "7d7ce723233d4a603b1c9d219cfffba34b4ae9885c954b91c5b5265aa40dfe4a",
+      "wallSeconds": 0.011652624999999972
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/finalize/report.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/finalize/report.json",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 710,
+      "sha256": "7d7ce723233d4a603b1c9d219cfffba34b4ae9885c954b91c5b5265aa40dfe4a",
+      "wallSeconds": 0.2733483329999995
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/input-pins.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 7664,
+      "sha256": "38e493f4a06c6fe521470a7f788707dcea1f101d5d4e165ff229ae4ede35d958",
+      "wallSeconds": 0.04127437500000042
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/input-pins.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 7664,
+      "sha256": "38e493f4a06c6fe521470a7f788707dcea1f101d5d4e165ff229ae4ede35d958",
+      "wallSeconds": 0.013350416999999837
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/input-pins.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/input-pins.json",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 7664,
+      "sha256": "38e493f4a06c6fe521470a7f788707dcea1f101d5d4e165ff229ae4ede35d958",
+      "wallSeconds": 0.2803234159999999
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/producer-supervisor-launch.lock",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 23,
+      "sha256": "582728fcc60fc12fd7abcdaf58c67141dc65f2e824a859e4ec0c68c6587f124e",
+      "wallSeconds": 0.03681312499999834
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/producer-supervisor-launch.lock",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 23,
+      "sha256": "582728fcc60fc12fd7abcdaf58c67141dc65f2e824a859e4ec0c68c6587f124e",
+      "wallSeconds": 0.012602999999998588
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/producer-supervisor-launch.lock",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/producer-supervisor-launch.lock",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 23,
+      "sha256": "582728fcc60fc12fd7abcdaf58c67141dc65f2e824a859e4ec0c68c6587f124e",
+      "wallSeconds": 0.25169054199999863
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/producer-supervisor.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 224,
+      "sha256": "ac48660ef321c243e2a718e765823ecdf092b79d84ba2356b8599c37692ec9bf",
+      "wallSeconds": 0.0363316669999989
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/producer-supervisor.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 224,
+      "sha256": "ac48660ef321c243e2a718e765823ecdf092b79d84ba2356b8599c37692ec9bf",
+      "wallSeconds": 0.012534791999998518
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/producer-supervisor.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/producer-supervisor.json",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 224,
+      "sha256": "ac48660ef321c243e2a718e765823ecdf092b79d84ba2356b8599c37692ec9bf",
+      "wallSeconds": 0.26443687500000124
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/results/exit.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 78,
+      "sha256": "6f4b316f59815f89232e4f9ebdc30e30eab185f5248eceb51b1e044fcb82da3d",
+      "wallSeconds": 0.03934916599999916
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/results/exit.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 78,
+      "sha256": "6f4b316f59815f89232e4f9ebdc30e30eab185f5248eceb51b1e044fcb82da3d",
+      "wallSeconds": 0.013624999999999332
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/results/exit.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/results/exit.json",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 78,
+      "sha256": "6f4b316f59815f89232e4f9ebdc30e30eab185f5248eceb51b1e044fcb82da3d",
+      "wallSeconds": 0.26085012500000104
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/results/input-binding.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 6696,
+      "sha256": "2632518ddc148e0cf11a01f7b82b27db80e13fc599ad15414ca1941e5854d642",
+      "wallSeconds": 0.034350124999999565
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/results/input-binding.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 6696,
+      "sha256": "2632518ddc148e0cf11a01f7b82b27db80e13fc599ad15414ca1941e5854d642",
+      "wallSeconds": 0.013096665999999146
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/results/input-binding.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/results/input-binding.json",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 6696,
+      "sha256": "2632518ddc148e0cf11a01f7b82b27db80e13fc599ad15414ca1941e5854d642",
+      "wallSeconds": 0.34575275000000083
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/results/launch.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 35,
+      "sha256": "d6a3c710566bfb86df53bebfd525ecd9739127e450242708f0b1467a7ccfe9fd",
+      "wallSeconds": 0.04206862500000064
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/results/launch.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 35,
+      "sha256": "d6a3c710566bfb86df53bebfd525ecd9739127e450242708f0b1467a7ccfe9fd",
+      "wallSeconds": 0.013041416000000083
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/results/launch.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/results/launch.json",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 35,
+      "sha256": "d6a3c710566bfb86df53bebfd525ecd9739127e450242708f0b1467a7ccfe9fd",
+      "wallSeconds": 0.2486565830000007
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/results/stages.jsonl",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 9063908,
+      "sha256": "8098f5d2478b9a7f7184ed34f5df41199b565f969e9691ad9099ee6f3e48c1c3",
+      "wallSeconds": 0.04321545799999882
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/results/stages.jsonl",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 9063908,
+      "sha256": "8098f5d2478b9a7f7184ed34f5df41199b565f969e9691ad9099ee6f3e48c1c3",
+      "wallSeconds": 0.0346972499999989
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/results/stages.jsonl",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/results/stages.jsonl",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 9063908,
+      "sha256": "8098f5d2478b9a7f7184ed34f5df41199b565f969e9691ad9099ee6f3e48c1c3",
+      "wallSeconds": 1.1975438329999992
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/results/summary.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 16311,
+      "sha256": "f786d6424102ce501e021531dadb94d9a66938870572045362dc85a290c06644",
+      "wallSeconds": 0.03094108300000009
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/results/summary.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 16311,
+      "sha256": "f786d6424102ce501e021531dadb94d9a66938870572045362dc85a290c06644",
+      "wallSeconds": 0.012605708000000604
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/results/summary.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/results/summary.json",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 16311,
+      "sha256": "f786d6424102ce501e021531dadb94d9a66938870572045362dc85a290c06644",
+      "wallSeconds": 0.3156128339999995
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/review/AUDIT-DESIGN.md",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 11018,
+      "sha256": "12ef2be62b0c9a5ce1e9a9243a50a4d747634b754b44bffc50900db472ebf5ba",
+      "wallSeconds": 0.03728258299999965
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/review/AUDIT-DESIGN.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 11018,
+      "sha256": "12ef2be62b0c9a5ce1e9a9243a50a4d747634b754b44bffc50900db472ebf5ba",
+      "wallSeconds": 0.014204041999999362
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/review/AUDIT-DESIGN.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/review/AUDIT-DESIGN.md",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 11018,
+      "sha256": "12ef2be62b0c9a5ce1e9a9243a50a4d747634b754b44bffc50900db472ebf5ba",
+      "wallSeconds": 0.3423649160000011
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/review/LITERATURE-REVIEW.md",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 6972,
+      "sha256": "67f5ca3e56e50ff11e78d1a2b5e194c31f3cedac3783af9c01c1cc6ae548b3b4",
+      "wallSeconds": 0.04549212500000088
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/review/LITERATURE-REVIEW.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 6972,
+      "sha256": "67f5ca3e56e50ff11e78d1a2b5e194c31f3cedac3783af9c01c1cc6ae548b3b4",
+      "wallSeconds": 0.012826332999999579
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/review/LITERATURE-REVIEW.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/review/LITERATURE-REVIEW.md",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 6972,
+      "sha256": "67f5ca3e56e50ff11e78d1a2b5e194c31f3cedac3783af9c01c1cc6ae548b3b4",
+      "wallSeconds": 0.26445024999999944
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/review/PREPARATION-OBSERVATION.md",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 937,
+      "sha256": "d1bd8b0752725758193b31c6c93e18ffe082327faff43d11800400070ae4116b",
+      "wallSeconds": 0.03524070899999998
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/review/PREPARATION-OBSERVATION.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 937,
+      "sha256": "d1bd8b0752725758193b31c6c93e18ffe082327faff43d11800400070ae4116b",
+      "wallSeconds": 0.013129125000000741
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/review/PREPARATION-OBSERVATION.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/review/PREPARATION-OBSERVATION.md",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 937,
+      "sha256": "d1bd8b0752725758193b31c6c93e18ffe082327faff43d11800400070ae4116b",
+      "wallSeconds": 0.291072625
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/review/PROTOCOL-REVIEW.md",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 14524,
+      "sha256": "c5f0825b1d054e9dfc60f50fd5fad8e2a2ce3f5762da767021a67cea12b3399e",
+      "wallSeconds": 0.04339541699999927
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/review/PROTOCOL-REVIEW.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 14524,
+      "sha256": "c5f0825b1d054e9dfc60f50fd5fad8e2a2ce3f5762da767021a67cea12b3399e",
+      "wallSeconds": 0.014016708000001543
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/review/PROTOCOL-REVIEW.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/review/PROTOCOL-REVIEW.md",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 14524,
+      "sha256": "c5f0825b1d054e9dfc60f50fd5fad8e2a2ce3f5762da767021a67cea12b3399e",
+      "wallSeconds": 0.3294837500000014
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/review/RESULT-REVIEW.md",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 14411,
+      "sha256": "f1cbc0b98907d66db4a2814ae694411e554520306174569529e350083a678fa7",
+      "wallSeconds": 0.03487837500000168
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/review/RESULT-REVIEW.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 14411,
+      "sha256": "f1cbc0b98907d66db4a2814ae694411e554520306174569529e350083a678fa7",
+      "wallSeconds": 0.013309708000001308
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/review/RESULT-REVIEW.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/review/RESULT-REVIEW.md",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 14411,
+      "sha256": "f1cbc0b98907d66db4a2814ae694411e554520306174569529e350083a678fa7",
+      "wallSeconds": 0.28840549999999965
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/runtime.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 727,
+      "sha256": "ea3922e6eaa5e8825b868e42cffe449744253676cb7450c1848269be8f985524",
+      "wallSeconds": 0.03801250000000067
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/runtime.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 727,
+      "sha256": "ea3922e6eaa5e8825b868e42cffe449744253676cb7450c1848269be8f985524",
+      "wallSeconds": 0.0131459160000027
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/runtime.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/runtime.json",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 727,
+      "sha256": "ea3922e6eaa5e8825b868e42cffe449744253676cb7450c1848269be8f985524",
+      "wallSeconds": 0.25626220800000254
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/source-manifest.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 13084,
+      "sha256": "810aed6dec7efe9aa10e580978af8d7019472c188219b73dcbedc7b37078594b",
+      "wallSeconds": 0.037263333000002063
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/source-manifest.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 13084,
+      "sha256": "810aed6dec7efe9aa10e580978af8d7019472c188219b73dcbedc7b37078594b",
+      "wallSeconds": 0.013918667000002216
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/source-manifest.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/source-manifest.json",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 13084,
+      "sha256": "810aed6dec7efe9aa10e580978af8d7019472c188219b73dcbedc7b37078594b",
+      "wallSeconds": 0.3588408749999985
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/source-publication.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 1330,
+      "sha256": "03293d09d24ce68fd6b93093e59526af9e9117a553afbb4b26e8d059b86b0d14",
+      "wallSeconds": 0.03562233299999917
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/source-publication.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 1330,
+      "sha256": "03293d09d24ce68fd6b93093e59526af9e9117a553afbb4b26e8d059b86b0d14",
+      "wallSeconds": 0.01186304099999802
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/source-publication.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/source-publication.json",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 1330,
+      "sha256": "03293d09d24ce68fd6b93093e59526af9e9117a553afbb4b26e8d059b86b0d14",
+      "wallSeconds": 0.2571610419999999
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/source/audit.py",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 41547,
+      "sha256": "18b037e768dcea908a2c9b10b5970f9033f6a0be9f05bbcb87e3d0c229374a30",
+      "wallSeconds": 0.035167958000002386
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/source/audit.py",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 41547,
+      "sha256": "18b037e768dcea908a2c9b10b5970f9033f6a0be9f05bbcb87e3d0c229374a30",
+      "wallSeconds": 0.01369362500000193
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/source/audit.py",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/source/audit.py",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 41547,
+      "sha256": "18b037e768dcea908a2c9b10b5970f9033f6a0be9f05bbcb87e3d0c229374a30",
+      "wallSeconds": 0.2599008749999996
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/source/common.py",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 4258,
+      "sha256": "54da09f029d5c62f4a9fd042adc42f5372ccb9164c6a7ee1bf771ebf1af643ed",
+      "wallSeconds": 0.03495925
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/source/common.py",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 4258,
+      "sha256": "54da09f029d5c62f4a9fd042adc42f5372ccb9164c6a7ee1bf771ebf1af643ed",
+      "wallSeconds": 0.01309537499999891
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/source/common.py",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/source/common.py",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 4258,
+      "sha256": "54da09f029d5c62f4a9fd042adc42f5372ccb9164c6a7ee1bf771ebf1af643ed",
+      "wallSeconds": 0.26804924999999713
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/source/diagnose.py",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 7066,
+      "sha256": "dd828de00258486038a883d65a14e17ba4132a09091c2c3ddc0deaec1f4aea69",
+      "wallSeconds": 0.03637054200000023
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/source/diagnose.py",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 7066,
+      "sha256": "dd828de00258486038a883d65a14e17ba4132a09091c2c3ddc0deaec1f4aea69",
+      "wallSeconds": 0.01259579199999905
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/source/diagnose.py",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/source/diagnose.py",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 7066,
+      "sha256": "dd828de00258486038a883d65a14e17ba4132a09091c2c3ddc0deaec1f4aea69",
+      "wallSeconds": 0.33605008299999994
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/source/finalize.py",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 1221,
+      "sha256": "294b5c49181adc8449d9c57daa1147d3d511ca507727c2c12cb5689a51fb391d",
+      "wallSeconds": 0.03770745799999986
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/source/finalize.py",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 1221,
+      "sha256": "294b5c49181adc8449d9c57daa1147d3d511ca507727c2c12cb5689a51fb391d",
+      "wallSeconds": 0.012782375000000457
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/source/finalize.py",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/source/finalize.py",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 1221,
+      "sha256": "294b5c49181adc8449d9c57daa1147d3d511ca507727c2c12cb5689a51fb391d",
+      "wallSeconds": 0.25582295799999955
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/source/launch.py",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 897,
+      "sha256": "ab7517ca672810eb470a352c728d23ef097937a229b36280c5dcc90ff85bc6d2",
+      "wallSeconds": 0.0389859159999979
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/source/launch.py",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 897,
+      "sha256": "ab7517ca672810eb470a352c728d23ef097937a229b36280c5dcc90ff85bc6d2",
+      "wallSeconds": 0.013097375000000966
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/source/launch.py",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/source/launch.py",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 897,
+      "sha256": "ab7517ca672810eb470a352c728d23ef097937a229b36280c5dcc90ff85bc6d2",
+      "wallSeconds": 0.2490951250000002
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/source/supervise.py",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 3068,
+      "sha256": "1054828f7c52f83fe56815969886ae5f38c2af9db7044d71ec16cfd2acd47a44",
+      "wallSeconds": 0.03584062499999874
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/source/supervise.py",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 3068,
+      "sha256": "1054828f7c52f83fe56815969886ae5f38c2af9db7044d71ec16cfd2acd47a44",
+      "wallSeconds": 0.01318149999999818
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/source/supervise.py",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/source/supervise.py",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 3068,
+      "sha256": "1054828f7c52f83fe56815969886ae5f38c2af9db7044d71ec16cfd2acd47a44",
+      "wallSeconds": 0.259716375
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/source/ui.cjs",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 7933,
+      "sha256": "169825382a7818a3862f6309a556b9b22e3c67b69dc57abbf328bdbb3b9470c5",
+      "wallSeconds": 0.024269834000001822
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/source/ui.cjs",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 7933,
+      "sha256": "169825382a7818a3862f6309a556b9b22e3c67b69dc57abbf328bdbb3b9470c5",
+      "wallSeconds": 0.012201041000000856
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/source/ui.cjs",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/source/ui.cjs",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 7933,
+      "sha256": "169825382a7818a3862f6309a556b9b22e3c67b69dc57abbf328bdbb3b9470c5",
+      "wallSeconds": 0.33992449999999863
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/ui-supervisor-launch.lock",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 23,
+      "sha256": "582728fcc60fc12fd7abcdaf58c67141dc65f2e824a859e4ec0c68c6587f124e",
+      "wallSeconds": 0.03709750000000156
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/ui-supervisor-launch.lock",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 23,
+      "sha256": "582728fcc60fc12fd7abcdaf58c67141dc65f2e824a859e4ec0c68c6587f124e",
+      "wallSeconds": 0.012109750000000474
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/ui-supervisor-launch.lock",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/ui-supervisor-launch.lock",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 23,
+      "sha256": "582728fcc60fc12fd7abcdaf58c67141dc65f2e824a859e4ec0c68c6587f124e",
+      "wallSeconds": 0.25479366599999764
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/ui-supervisor.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 217,
+      "sha256": "451029a2b180d980b2d8f156414b84395449c144d9b3f451f655d240820d1117",
+      "wallSeconds": 0.03781649999999814
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/ui-supervisor.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 217,
+      "sha256": "451029a2b180d980b2d8f156414b84395449c144d9b3f451f655d240820d1117",
+      "wallSeconds": 0.013244207999999702
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/ui-supervisor.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/ui-supervisor.json",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 217,
+      "sha256": "451029a2b180d980b2d8f156414b84395449c144d9b3f451f655d240820d1117",
+      "wallSeconds": 0.25305929199999966
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/ui/desktop.png",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 397089,
+      "sha256": "ce4cb85efe1ff00f37a001af396fff206f08e817534cf2d324d3cd2bd8f82fc4",
+      "wallSeconds": 0.035813957999998536
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/ui/desktop.png",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 397089,
+      "sha256": "ce4cb85efe1ff00f37a001af396fff206f08e817534cf2d324d3cd2bd8f82fc4",
+      "wallSeconds": 0.014694958999999841
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/ui/desktop.png",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/ui/desktop.png",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 397089,
+      "sha256": "ce4cb85efe1ff00f37a001af396fff206f08e817534cf2d324d3cd2bd8f82fc4",
+      "wallSeconds": 0.46434679100000054
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/ui/launch.lock",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 29,
+      "sha256": "d9c0d0e4584a948ac9fa9f68d3180488fbcbb741e18fc188af9031d8c4d674a8",
+      "wallSeconds": 0.025839999999998753
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/ui/launch.lock",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 29,
+      "sha256": "d9c0d0e4584a948ac9fa9f68d3180488fbcbb741e18fc188af9031d8c4d674a8",
+      "wallSeconds": 0.010931124999999042
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/ui/launch.lock",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/ui/launch.lock",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 29,
+      "sha256": "d9c0d0e4584a948ac9fa9f68d3180488fbcbb741e18fc188af9031d8c4d674a8",
+      "wallSeconds": 0.2598522079999981
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/ui/mobile.png",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 364644,
+      "sha256": "e9b1c8438e99f312fd00bdb68bc9c51370d69a3a163e31c2b3ff185a6d9e659c",
+      "wallSeconds": 0.04205629199999805
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/ui/mobile.png",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 364644,
+      "sha256": "e9b1c8438e99f312fd00bdb68bc9c51370d69a3a163e31c2b3ff185a6d9e659c",
+      "wallSeconds": 0.020386666000000275
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/ui/mobile.png",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/ui/mobile.png",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 364644,
+      "sha256": "e9b1c8438e99f312fd00bdb68bc9c51370d69a3a163e31c2b3ff185a6d9e659c",
+      "wallSeconds": 0.5067775420000018
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/ui/qa.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 444,
+      "sha256": "6346a38c06b08641b6a190d22d6545a8a6e4da2f73866e88276a4a03fd36139f",
+      "wallSeconds": 0.0397842500000003
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/ui/qa.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 444,
+      "sha256": "6346a38c06b08641b6a190d22d6545a8a6e4da2f73866e88276a4a03fd36139f",
+      "wallSeconds": 0.013091959000000486
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/ui/qa.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/ui/qa.json",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 444,
+      "sha256": "6346a38c06b08641b6a190d22d6545a8a6e4da2f73866e88276a4a03fd36139f",
+      "wallSeconds": 0.32484699999999833
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/viewer/app.js",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 7174,
+      "sha256": "2a89ce37c054ef1692c2598d3b977ad4f2f8605fb82b0abc1193eb65053a8802",
+      "wallSeconds": 0.03665533299999879
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/viewer/app.js",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 7174,
+      "sha256": "2a89ce37c054ef1692c2598d3b977ad4f2f8605fb82b0abc1193eb65053a8802",
+      "wallSeconds": 0.01401487500000087
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/viewer/app.js",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/viewer/app.js",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 7174,
+      "sha256": "2a89ce37c054ef1692c2598d3b977ad4f2f8605fb82b0abc1193eb65053a8802",
+      "wallSeconds": 0.2706503330000025
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/viewer/index.html",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 4375,
+      "sha256": "933329dc4e9fa73ee77a347e172ff5225e5bd3646894e4b6063fd5e05e132952",
+      "wallSeconds": 0.03684145899999791
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/viewer/index.html",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 4375,
+      "sha256": "933329dc4e9fa73ee77a347e172ff5225e5bd3646894e4b6063fd5e05e132952",
+      "wallSeconds": 0.013477667000000082
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/viewer/index.html",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/viewer/index.html",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 4375,
+      "sha256": "933329dc4e9fa73ee77a347e172ff5225e5bd3646894e4b6063fd5e05e132952",
+      "wallSeconds": 0.27691525000000183
+    },
+    {
+      "operation": "local",
+      "path": "research/m31-neighbor-density-2026-10-23/viewer/pins.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 657,
+      "sha256": "1ba1e8b96ae5a75593a5d5566b65fbdb642e74c985cd86dbcbee44c095cf3214",
+      "wallSeconds": 0.0350231249999986
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/m31-neighbor-density-2026-10-23/viewer/pins.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 657,
+      "sha256": "1ba1e8b96ae5a75593a5d5566b65fbdb642e74c985cd86dbcbee44c095cf3214",
+      "wallSeconds": 0.01297195799999784
+    },
+    {
+      "operation": "public",
+      "path": "research/m31-neighbor-density-2026-10-23/viewer/pins.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/m31-neighbor-density-2026-10-23/viewer/pins.json",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 657,
+      "sha256": "1ba1e8b96ae5a75593a5d5566b65fbdb642e74c985cd86dbcbee44c095cf3214",
+      "wallSeconds": 0.3451060840000011
+    },
+    {
+      "operation": "local",
+      "path": "research/publication-receipts/m31-buffered-motion-provenance-2026-10-22.md",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 1521,
+      "sha256": "094353283c649adafeb106f0134c043c26c9fb3e72f8502d1ac986d3ae93f53d",
+      "wallSeconds": 0.0357342499999973
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/publication-receipts/m31-buffered-motion-provenance-2026-10-22.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 1521,
+      "sha256": "094353283c649adafeb106f0134c043c26c9fb3e72f8502d1ac986d3ae93f53d",
+      "wallSeconds": 0.012400832999997391
+    },
+    {
+      "operation": "local",
+      "path": "research/publication-receipts/m31-buffered-motion-public-review-2026-10-22.md",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 17134,
+      "sha256": "992c34ac6bfdfa84e31ec66ed63adde6a3a4a66b53d1a8f64a208307c528d797",
+      "wallSeconds": 0.023247167000000957
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/publication-receipts/m31-buffered-motion-public-review-2026-10-22.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 17134,
+      "sha256": "992c34ac6bfdfa84e31ec66ed63adde6a3a4a66b53d1a8f64a208307c528d797",
+      "wallSeconds": 0.011260416999999023
+    },
+    {
+      "operation": "local",
+      "path": "research/publication-receipts/m31-buffered-motion-result-2026-10-22.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 3090,
+      "sha256": "c026b172b3b237280d50097692bae595f372f1b284fecce0082a445ab2fe8c25",
+      "wallSeconds": 0.022289125000000354
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/publication-receipts/m31-buffered-motion-result-2026-10-22.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 3090,
+      "sha256": "c026b172b3b237280d50097692bae595f372f1b284fecce0082a445ab2fe8c25",
+      "wallSeconds": 0.011822208999998196
+    },
+    {
+      "operation": "local",
+      "path": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23-failure.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 2722,
+      "sha256": "2bdb6df4bc20bca6d58e15bb7fde0a1a0f21e13817a68b802992589038c3dfd9",
+      "wallSeconds": 0.02006399999999786
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23-failure.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 2722,
+      "sha256": "2bdb6df4bc20bca6d58e15bb7fde0a1a0f21e13817a68b802992589038c3dfd9",
+      "wallSeconds": 0.01084062500000016
+    },
+    {
+      "operation": "public",
+      "path": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23-failure.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23-failure.json",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 2722,
+      "sha256": "2bdb6df4bc20bca6d58e15bb7fde0a1a0f21e13817a68b802992589038c3dfd9",
+      "wallSeconds": 0.2592217089999984
+    },
+    {
+      "operation": "local",
+      "path": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 92371,
+      "sha256": "12e4c41c36f3eea5b7e6f47a0f67176e0538ae004173e6df3b081d3360149b4a",
+      "wallSeconds": 0.03478275000000153
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 92371,
+      "sha256": "12e4c41c36f3eea5b7e6f47a0f67176e0538ae004173e6df3b081d3360149b4a",
+      "wallSeconds": 0.013621416999999525
+    },
+    {
+      "operation": "public",
+      "path": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23.json",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23.json",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 92371,
+      "sha256": "12e4c41c36f3eea5b7e6f47a0f67176e0538ae004173e6df3b081d3360149b4a",
+      "wallSeconds": 0.3195747080000011
+    },
+    {
+      "operation": "local",
+      "path": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23.md",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 6653,
+      "sha256": "0a945b3eeb17de8d3e58436211e2c97b7f6c6135effe5c3bb1b1cc5f90188ccf",
+      "wallSeconds": 0.03771150000000034
+    },
+    {
+      "operation": "result-commit",
+      "path": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "passed": true,
+      "bytes": 6653,
+      "sha256": "0a945b3eeb17de8d3e58436211e2c97b7f6c6135effe5c3bb1b1cc5f90188ccf",
+      "wallSeconds": 0.012654250000000644
+    },
+    {
+      "operation": "public",
+      "path": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23.md",
+      "attempt": 1,
+      "commit": "a38234d150bcdecb50e3c4615e07dc8703039397",
+      "url": "https://raw.githubusercontent.com/denghanjie/drone-swarm-aerodynamics-public/a38234d150bcdecb50e3c4615e07dc8703039397/research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23.md",
+      "httpStatus": 200,
+      "passed": true,
+      "bytes": 6653,
+      "sha256": "0a945b3eeb17de8d3e58436211e2c97b7f6c6135effe5c3bb1b1cc5f90188ccf",
+      "wallSeconds": 0.26844970799999857
+    }
+  ],
+  "files": [
+    {
+      "path": "outputs/step02b-source/vendor/OrbitControls.js",
+      "bytes": 38703,
+      "sha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c",
+      "kind": "source"
+    },
+    {
+      "path": "outputs/step02b-source/vendor/three.core.js",
+      "bytes": 1403455,
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20",
+      "kind": "source"
+    },
+    {
+      "path": "outputs/step02b-source/vendor/three.module.js",
+      "bytes": 603113,
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+      "kind": "source"
+    },
+    {
+      "path": "research/OVERNIGHT-RESTART.md",
+      "bytes": 122360,
+      "sha256": "5664425bab70528f3aac99b3ae72f37d12a7f655c46492f7a456f6de80ef2537"
+    },
+    {
+      "path": "research/m31-buffered-candidates-2026-10-20/LITERATURE.md",
+      "bytes": 4331,
+      "sha256": "9a514f8e340a5d4146c08d21603c4ef1a29c512e5b44dae78496309a9db52076",
+      "kind": "input",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2"
+    },
+    {
+      "path": "research/m31-buffered-candidates-2026-10-20/source/CANDIDATE.md",
+      "bytes": 10390,
+      "sha256": "d810c23dcbd8088c2575e619bdf99961b7cbef65679b849c4410df16691ec9ec",
+      "kind": "input",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2"
+    },
+    {
+      "path": "research/m31-buffered-candidates-2026-10-20/source/candidate-cache.cjs",
+      "bytes": 6457,
+      "sha256": "9b38064690c2ae5b505cae936d574e3355bcc613b3f69fda8b89ed50732f96ad",
+      "kind": "input",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2"
+    },
+    {
+      "path": "research/m31-buffered-candidates-2026-10-20/source/candidate-kernel.cjs",
+      "bytes": 17265,
+      "sha256": "4fea99f4e61bff3c5eb54a0090e50b48e41d4cdf7cff5cdc770a37366f321b19",
+      "kind": "input",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2"
+    },
+    {
+      "path": "research/m31-buffered-motion-2026-10-22/ALLOCATION-CLOSURE.json",
+      "bytes": 1870,
+      "sha256": "a5f38347cb14b7a590120ae2cdc325cfe2f879ae5413a299a886f6a2e9247c52",
+      "kind": "input",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2"
+    },
+    {
+      "path": "research/m31-buffered-motion-2026-10-22/LITERATURE.md",
+      "bytes": 1189,
+      "sha256": "7fcebb92dd138d2e11b790e487c14f84892e4a9e8e468f34981633683d28b592",
+      "kind": "input",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2"
+    },
+    {
+      "path": "research/m31-buffered-motion-2026-10-22/audit/audit.json",
+      "bytes": 457439,
+      "sha256": "ef6e8876a3b102ceea2f5e6cdefc2d6d07fe0c65d64846320df22f8fafb26ab2",
+      "kind": "input",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2"
+    },
+    {
+      "path": "research/m31-buffered-motion-2026-10-22/audit/viewer-data.json",
+      "bytes": 9026716,
+      "sha256": "a7f379631858ad86c87d6557a25f4e697cdde377453feba3d5888c95f6d1cefb",
+      "kind": "input",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2"
+    },
+    {
+      "path": "research/m31-buffered-motion-2026-10-22/extract/index.json",
+      "bytes": 18790,
+      "sha256": "c7c144f40a0f4fb807e6f045becdc622ae7e643bcf154c01ecd3904544b68cac",
+      "kind": "input",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2"
+    },
+    {
+      "path": "research/m31-buffered-motion-2026-10-22/result-manifest.json",
+      "bytes": 545123,
+      "sha256": "440d2ac225f1587359cfa96af5d27b9a9b37d962ce25d75701c4fc195d753025",
+      "kind": "input",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2"
+    },
+    {
+      "path": "research/m31-buffered-motion-2026-10-22/review/RESULT-REVIEW.md",
+      "bytes": 12906,
+      "sha256": "f59f9c54192634673d2b62aa5337ced6a17ce3f2dd245e424c2320f00e67e6ed",
+      "kind": "input",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2"
+    },
+    {
+      "path": "research/m31-buffered-motion-2026-10-22/transport/index.json",
+      "bytes": 1099,
+      "sha256": "15da8e04cbed8cf2ceb6a214dead7f4c5b01b62896b0121e6a4ea2ae3ee367d7",
+      "kind": "input",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2"
+    },
+    {
+      "path": "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part000",
+      "bytes": 33554432,
+      "sha256": "079b27f80012b61a5b7da88d23604c617b290cc60c98b73c62d3f00cf2b75793",
+      "kind": "input",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2"
+    },
+    {
+      "path": "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part001",
+      "bytes": 33554432,
+      "sha256": "32dc050281d8822ddb5b94710b68fac5fb7ad70eeab13a24bdb369038164ce81",
+      "kind": "input",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2"
+    },
+    {
+      "path": "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part002",
+      "bytes": 33554432,
+      "sha256": "b4ca4865ac09c54597ede4d608841d445a5ea7164799614978b5c1777627b268",
+      "kind": "input",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2"
+    },
+    {
+      "path": "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part003",
+      "bytes": 33554432,
+      "sha256": "e44877bab0936c31aab556a39a0151855ec316d13ce6c233db9ceae5ec9fdc86",
+      "kind": "input",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2"
+    },
+    {
+      "path": "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part004",
+      "bytes": 33554432,
+      "sha256": "36cbf56cc311de3a453254c0637cd213d047a47dafe5a8c0f01d6a35685838f4",
+      "kind": "input",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2"
+    },
+    {
+      "path": "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part005",
+      "bytes": 27090335,
+      "sha256": "0039ca2e5736e067d4d68040f56cbd6b4413a6c393c1d3973d6ce5def656da4f",
+      "kind": "input",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/native-load.cjs",
+      "bytes": 16262,
+      "sha256": "b4699a8025e27dcd34e9a206e0330a2c08d7caa61e934ec203d142876e1430f1",
+      "kind": "input",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/vendor/anchor-kernel.cjs",
+      "bytes": 11828,
+      "sha256": "c2ab29e4f53341706582d52149df96cd93323d3943ac145f288fbbae4de71a8a",
+      "kind": "input",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/vendor/kernel.cjs",
+      "bytes": 16676,
+      "sha256": "efc87f4c0f9d1a5a9b754d9d334ce295227a0cb01ce6980e4818313dd35d3bc8",
+      "kind": "input",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/vendor/lean-anchor.cjs",
+      "bytes": 14840,
+      "sha256": "1b57d90d1ce1a45fe3e7f637cae57325861bfc37c907de4d4c6f9e1a79f1af96",
+      "kind": "input",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2"
+    },
+    {
+      "path": "research/m31-native-fresh-transfer-2026-10-17/source/vendor/reference-excerpt.cjs",
+      "bytes": 2731,
+      "sha256": "ec71562d17db5b30497e2953adc75019c424c19a44e45b22fcbb3a4482096d1e",
+      "kind": "input",
+      "originCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/ALLOCATION-CLOSURE.json",
+      "bytes": 1405,
+      "sha256": "1590575fce2f6215a2109c157abde25c70a516c08ecd4d956a5ef6c0c12b2b64"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/CLAIMS.md",
+      "bytes": 2846,
+      "sha256": "236b1c49e09dbf52d9fadacb36dd9020dfa237a709ce484cdb5619185e4b02eb"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/LITERATURE.md",
+      "bytes": 7635,
+      "sha256": "4f810c7f26682b74211b2b2deeddeaa7a3c8eef8d67a5afb1834953c11123881"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/PRIVACY-RESULT.md",
+      "bytes": 1285,
+      "sha256": "2f8e094511cb53ef8bbf1b8540ed4e134cd49b448179c58bbe6cbb713e7a8ea6"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/PRIVACY-SOURCE.md",
+      "bytes": 686,
+      "sha256": "8ac668306dd0c9b1885e17569c19f9cf7bdbf2178e797bf439b5c61db29191a2"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/PROTOCOL.md",
+      "bytes": 6150,
+      "sha256": "81dc6e99c73f2db0e2caa302fee74a99f2503dbcd8a96d390a9af271865ba610"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/RESTART-RESULT.md",
+      "bytes": 3173,
+      "sha256": "6f3df020e86fa080366c99b9142f6b975564853310006d91286bd920d500c65a"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/RESTART.md",
+      "bytes": 2007,
+      "sha256": "9e8d5f967e13b5eae92b53ac930f4f3ebd5cbd3527722b86b34cba3d6708056d"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/RESULT-CLAIMS.md",
+      "bytes": 3734,
+      "sha256": "1aca0c6edde293c20771f38a13afe4acb16e6bcc321cdb41842f9ed274e88bfe"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/SCHEMA.md",
+      "bytes": 4836,
+      "sha256": "d68277fe126688ea0a5c2fe8610b49b748e45d0be3b6cbf7a6b584fda71ab6d7"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/SUMMARY.md",
+      "bytes": 3485,
+      "sha256": "d719490c5e76db73707e708cce23f9d08d7403dcc8444088d5c0a944e5c094cc"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/UI-QA.md",
+      "bytes": 1265,
+      "sha256": "1822564cdde12f3c2a2c4c684ae36e920acf5d761e12aba39fe33fe13082ffad"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/audit-supervisor-launch.lock",
+      "bytes": 23,
+      "sha256": "582728fcc60fc12fd7abcdaf58c67141dc65f2e824a859e4ec0c68c6587f124e"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/audit-supervisor.json",
+      "bytes": 217,
+      "sha256": "ef2984b8c51e33956e04e20b9204ff1f04c0db69823c8742e1f4dbb4a3d7f4d7"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/audit/audit.json",
+      "bytes": 27023,
+      "sha256": "4c3b9dac6426d8e7c029795f3190a402f1e7ba9a21d3f9771b644e5f9a65b052"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/audit/exit.json",
+      "bytes": 77,
+      "sha256": "19df4f54accc282b5c81fadada0a65780c9feacaec6b4ad0d6436476babec45e"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/audit/launch.json",
+      "bytes": 130,
+      "sha256": "748b10ec874af0fa8f59554551074cdb0df7ca5d8b73fe3957c028d6436a1092"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/config.json",
+      "bytes": 750,
+      "sha256": "2d348173f49db25cf77f2c15f09c97bebcae520c8a9d006da2268469346ae49c"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/finalize-supervisor-launch.lock",
+      "bytes": 23,
+      "sha256": "582728fcc60fc12fd7abcdaf58c67141dc65f2e824a859e4ec0c68c6587f124e"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/finalize-supervisor.json",
+      "bytes": 215,
+      "sha256": "31d308a00de1c69d2cc41210612e413894d9437b2fda2cbad295248902d081a1"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/finalize/exit.json",
+      "bytes": 80,
+      "sha256": "58d1964c948d257b9281f859ad4e30bcf2b61332751532767f2dedd1b7e1ccbf"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/finalize/launch.json",
+      "bytes": 35,
+      "sha256": "d6a3c710566bfb86df53bebfd525ecd9739127e450242708f0b1467a7ccfe9fd"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/finalize/report.json",
+      "bytes": 710,
+      "sha256": "7d7ce723233d4a603b1c9d219cfffba34b4ae9885c954b91c5b5265aa40dfe4a"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/input-pins.json",
+      "bytes": 7664,
+      "sha256": "38e493f4a06c6fe521470a7f788707dcea1f101d5d4e165ff229ae4ede35d958"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/producer-supervisor-launch.lock",
+      "bytes": 23,
+      "sha256": "582728fcc60fc12fd7abcdaf58c67141dc65f2e824a859e4ec0c68c6587f124e"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/producer-supervisor.json",
+      "bytes": 224,
+      "sha256": "ac48660ef321c243e2a718e765823ecdf092b79d84ba2356b8599c37692ec9bf"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/results/exit.json",
+      "bytes": 78,
+      "sha256": "6f4b316f59815f89232e4f9ebdc30e30eab185f5248eceb51b1e044fcb82da3d"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/results/input-binding.json",
+      "bytes": 6696,
+      "sha256": "2632518ddc148e0cf11a01f7b82b27db80e13fc599ad15414ca1941e5854d642"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/results/launch.json",
+      "bytes": 35,
+      "sha256": "d6a3c710566bfb86df53bebfd525ecd9739127e450242708f0b1467a7ccfe9fd"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/results/stages.jsonl",
+      "bytes": 9063908,
+      "sha256": "8098f5d2478b9a7f7184ed34f5df41199b565f969e9691ad9099ee6f3e48c1c3"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/results/summary.json",
+      "bytes": 16311,
+      "sha256": "f786d6424102ce501e021531dadb94d9a66938870572045362dc85a290c06644"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/review/AUDIT-DESIGN.md",
+      "bytes": 11018,
+      "sha256": "12ef2be62b0c9a5ce1e9a9243a50a4d747634b754b44bffc50900db472ebf5ba"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/review/LITERATURE-REVIEW.md",
+      "bytes": 6972,
+      "sha256": "67f5ca3e56e50ff11e78d1a2b5e194c31f3cedac3783af9c01c1cc6ae548b3b4"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/review/PREPARATION-OBSERVATION.md",
+      "bytes": 937,
+      "sha256": "d1bd8b0752725758193b31c6c93e18ffe082327faff43d11800400070ae4116b"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/review/PROTOCOL-REVIEW.md",
+      "bytes": 14524,
+      "sha256": "c5f0825b1d054e9dfc60f50fd5fad8e2a2ce3f5762da767021a67cea12b3399e"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/review/RESULT-REVIEW.md",
+      "bytes": 14411,
+      "sha256": "f1cbc0b98907d66db4a2814ae694411e554520306174569529e350083a678fa7"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/runtime.json",
+      "bytes": 727,
+      "sha256": "ea3922e6eaa5e8825b868e42cffe449744253676cb7450c1848269be8f985524"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/source-manifest.json",
+      "bytes": 13084,
+      "sha256": "810aed6dec7efe9aa10e580978af8d7019472c188219b73dcbedc7b37078594b"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/source-publication.json",
+      "bytes": 1330,
+      "sha256": "03293d09d24ce68fd6b93093e59526af9e9117a553afbb4b26e8d059b86b0d14"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/source/audit.py",
+      "bytes": 41547,
+      "sha256": "18b037e768dcea908a2c9b10b5970f9033f6a0be9f05bbcb87e3d0c229374a30"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/source/common.py",
+      "bytes": 4258,
+      "sha256": "54da09f029d5c62f4a9fd042adc42f5372ccb9164c6a7ee1bf771ebf1af643ed"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/source/diagnose.py",
+      "bytes": 7066,
+      "sha256": "dd828de00258486038a883d65a14e17ba4132a09091c2c3ddc0deaec1f4aea69"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/source/finalize.py",
+      "bytes": 1221,
+      "sha256": "294b5c49181adc8449d9c57daa1147d3d511ca507727c2c12cb5689a51fb391d"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/source/launch.py",
+      "bytes": 897,
+      "sha256": "ab7517ca672810eb470a352c728d23ef097937a229b36280c5dcc90ff85bc6d2"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/source/supervise.py",
+      "bytes": 3068,
+      "sha256": "1054828f7c52f83fe56815969886ae5f38c2af9db7044d71ec16cfd2acd47a44"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/source/ui.cjs",
+      "bytes": 7933,
+      "sha256": "169825382a7818a3862f6309a556b9b22e3c67b69dc57abbf328bdbb3b9470c5"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/ui-supervisor-launch.lock",
+      "bytes": 23,
+      "sha256": "582728fcc60fc12fd7abcdaf58c67141dc65f2e824a859e4ec0c68c6587f124e"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/ui-supervisor.json",
+      "bytes": 217,
+      "sha256": "451029a2b180d980b2d8f156414b84395449c144d9b3f451f655d240820d1117"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/ui/desktop.png",
+      "bytes": 397089,
+      "sha256": "ce4cb85efe1ff00f37a001af396fff206f08e817534cf2d324d3cd2bd8f82fc4"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/ui/launch.lock",
+      "bytes": 29,
+      "sha256": "d9c0d0e4584a948ac9fa9f68d3180488fbcbb741e18fc188af9031d8c4d674a8"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/ui/mobile.png",
+      "bytes": 364644,
+      "sha256": "e9b1c8438e99f312fd00bdb68bc9c51370d69a3a163e31c2b3ff185a6d9e659c"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/ui/qa.json",
+      "bytes": 444,
+      "sha256": "6346a38c06b08641b6a190d22d6545a8a6e4da2f73866e88276a4a03fd36139f"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/viewer/app.js",
+      "bytes": 7174,
+      "sha256": "2a89ce37c054ef1692c2598d3b977ad4f2f8605fb82b0abc1193eb65053a8802"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/viewer/index.html",
+      "bytes": 4375,
+      "sha256": "933329dc4e9fa73ee77a347e172ff5225e5bd3646894e4b6063fd5e05e132952"
+    },
+    {
+      "path": "research/m31-neighbor-density-2026-10-23/viewer/pins.json",
+      "bytes": 657,
+      "sha256": "1ba1e8b96ae5a75593a5d5566b65fbdb642e74c985cd86dbcbee44c095cf3214"
+    },
+    {
+      "path": "research/publication-receipts/m31-buffered-motion-provenance-2026-10-22.md",
+      "bytes": 1521,
+      "sha256": "094353283c649adafeb106f0134c043c26c9fb3e72f8502d1ac986d3ae93f53d",
+      "kind": "input",
+      "originCommit": "d948a58315020eda1a1502277362ab65116c873b"
+    },
+    {
+      "path": "research/publication-receipts/m31-buffered-motion-public-review-2026-10-22.md",
+      "bytes": 17134,
+      "sha256": "992c34ac6bfdfa84e31ec66ed63adde6a3a4a66b53d1a8f64a208307c528d797",
+      "kind": "input",
+      "originCommit": "d948a58315020eda1a1502277362ab65116c873b"
+    },
+    {
+      "path": "research/publication-receipts/m31-buffered-motion-result-2026-10-22.json",
+      "bytes": 3090,
+      "sha256": "c026b172b3b237280d50097692bae595f372f1b284fecce0082a445ab2fe8c25",
+      "kind": "input",
+      "originCommit": "d948a58315020eda1a1502277362ab65116c873b"
+    },
+    {
+      "path": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23-failure.json",
+      "bytes": 2722,
+      "sha256": "2bdb6df4bc20bca6d58e15bb7fde0a1a0f21e13817a68b802992589038c3dfd9"
+    },
+    {
+      "path": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23.json",
+      "bytes": 92371,
+      "sha256": "12e4c41c36f3eea5b7e6f47a0f67176e0538ae004173e6df3b081d3360149b4a"
+    },
+    {
+      "path": "research/publication-receipts/m31-neighbor-density-source-public-review-2026-10-23.md",
+      "bytes": 6653,
+      "sha256": "0a945b3eeb17de8d3e58436211e2c97b7f6c6135effe5c3bb1b1cc5f90188ccf"
+    }
+  ],
+  "allocationLaunched": false,
+  "archiveDecompressed": false,
+  "diagnosticCalculated": false,
+  "scientificReviewRepeated": false,
+  "displayLaunched": false,
+  "nativeQueries": 0,
+  "initialSourceDnsFailureStillPreserved": true,
+  "runtimeScope": "No hermetic-runtime, physical-validation or performance claim; only the declared Node executable is byte-pinned by the source launcher.",
+  "wallSeconds": 24.223231625
+}
