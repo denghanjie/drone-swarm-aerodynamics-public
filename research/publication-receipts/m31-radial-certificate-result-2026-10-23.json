@@ -1,0 +1,86 @@
+{
+  "schema": "m31-radial-certificate-public-result-v1",
+  "commit": "afddaf6b191cc577cf82ad4fa43e1bbd77a9d43d",
+  "sourceCommit": "d1a9d8d04974f54f52889f348f3194b7f152fcfb",
+  "displayRecoverySourceCommit": "f3101031a85b09e080214ebe4b838495d7017e83",
+  "manifestPath": "research/m31-radial-certificate-2026-10-23/result-manifest.json",
+  "manifestBytes": 23297,
+  "manifestSha256": "c3825a3e6886ecdff8ebfa521484f6b21704091966bbd82271d9225b70566514",
+  "verifiedFilePins": 105,
+  "remoteManifestBytesEqualLocal": true,
+  "committedBytesEqualLocal": true,
+  "parentSeparatelyFetchedManifest": true,
+  "verifiedUtc": "2026-10-23T01:07:13.344437+00:00",
+  "independentPublicReviewPassed": true,
+  "supplementalPublicationRecords": [
+    {
+      "path": "research/publication-receipts/m31-radial-certificate-result-public-review-2026-10-23.json",
+      "bytes": 186241,
+      "sha256": "4cd3312c6d5798762a4b55368680867f46f65f0856d870a43a3390b6e96011dc"
+    },
+    {
+      "path": "research/publication-receipts/m31-radial-certificate-result-public-review-2026-10-23.md",
+      "bytes": 20310,
+      "sha256": "21d43fb03c180f93cbee27e5d336dd3215eed83b1495a94d8187c3d524995999"
+    }
+  ],
+  "verificationScope": "Fresh exact HTTPS reads of result manifest and all 90 non-input pins at result commit. All 105 pins and manifest freshly checked against local bytes and result Git commit. Public/origin-Git verification of 15 unchanged immutable inputs explicitly reused from the exact prior source-public-review receipt; no claim those 15 were downloaded again.",
+  "freshPublicReads": 91,
+  "freshPublicFilePins": 90,
+  "freshPublicBytes": 82488999,
+  "reusedPublicInputPins": 15,
+  "publicReadFailures": [],
+  "allAllocationsClosed": true,
+  "originalUiFailed": true,
+  "separateDisplayRecoveryPassed": true,
+  "originalAllocationRetries": 0,
+  "result": {
+    "complete": true,
+    "stages": 1920,
+    "controls": 10,
+    "nativeCalls": 0,
+    "hypotCalls": 7741142,
+    "controlHypotCalls": 22,
+    "dataHypotCalls": 7741120,
+    "totals": {
+      "logicalPairs": 7741440,
+      "componentRejected": 320,
+      "guardRejected": 0,
+      "radialRejected": 753910,
+      "centerEligible": 6987210,
+      "normCalls": 7741120,
+      "omittedPairs": 273280,
+      "falseOmissions": 0
+    },
+    "sampleGate": true,
+    "controlGate": true,
+    "cacheEvents": {
+      "build": 12,
+      "reuse": 1908,
+      "fallback": 0
+    },
+    "conditionalOnly": true,
+    "runtimeGeneralEquivalenceProven": false,
+    "performanceMeasured": false,
+    "priorAggregateCountsMatch": true,
+    "scope": "fixed exposed saved-state center-stage diagnostic; no full-query equivalence or universal cache guarantee"
+  },
+  "physicsValidated": false,
+  "noveltyEstablished": false,
+  "researchComplete": false,
+  "privacy": {
+    "schema": "m31-radial-certificate-privacy-v1",
+    "textFilesScanned": 80,
+    "patternFindings": 0,
+    "newRestartHeaderScanned": true,
+    "screenshotsInspected": [
+      "ui-recovery/desktop.png",
+      "ui-recovery/mobile.png"
+    ],
+    "screenshotReview": "Parent and independent reviewer inspected saved evidence-page screenshots; no unrelated app/private content observed.",
+    "dataScope": "Synthetic recorded positions and derived diagnostic binaries; no attachments, private chats or external personal datasets.",
+    "limitations": "Limited credential/private-path/email pattern screen and visual review; not a universal secret guarantee."
+  },
+  "viewer": "http://127.0.0.1:8876/research/m31-radial-certificate-2026-10-23/viewer/",
+  "publicationNotes": "First evidence/recovery push accepted a GitHub large-file advisory for norms.bin; no transport failure. Original UI failure and separate recovery retained."
+}
