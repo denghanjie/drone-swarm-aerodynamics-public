@@ -1,0 +1,235 @@
+{
+  "schema": "m31-phase-attribution-result-claims-v1",
+  "supported": {
+    "savedRows": {
+      "baselineStrictFlags": 17280,
+      "calls": 34560,
+      "groupReconciliations": 216,
+      "refusals": 18,
+      "rowByteComparisons": 34560,
+      "successes": 34542,
+      "viewerPairs": 1920
+    },
+    "exactLoggedDecimalReconstructionPassed": true,
+    "decision": {
+      "atLeastHalf": false,
+      "classification": "distributed-or-unstable",
+      "denominatorMs": "13588.2838049988931727",
+      "interpretation": "Descriptive priority for source inspection only; not a causal speedup prediction or a revised qualification gate.",
+      "largestComponent": "geometry",
+      "numeratorMs": "4050.121404000983604",
+      "perRepWinners": [
+        {
+          "component": "geometry",
+          "rep": 0
+        },
+        {
+          "component": "geometry",
+          "rep": 1
+        },
+        {
+          "component": "geometry",
+          "rep": 2
+        },
+        {
+          "component": "geometry",
+          "rep": 3
+        },
+        {
+          "component": "geometry",
+          "rep": 4
+        },
+        {
+          "component": "geometry",
+          "rep": 5
+        },
+        {
+          "component": "geometry",
+          "rep": 6
+        },
+        {
+          "component": "geometry",
+          "rep": 7
+        }
+      ],
+      "sameWinnerReps": 8,
+      "stableMajority": false
+    },
+    "display": {
+      "partitions": {
+        "C": {
+          "rows": [
+            [
+              "Build interactions (includes list checks)",
+              "4091.642",
+              "30.75%"
+            ],
+            [
+              "Read and validate inputs",
+              "2522.744",
+              "18.96%"
+            ],
+            [
+              "Construct forces",
+              "1950.030",
+              "14.66%"
+            ],
+            [
+              "Other build and validation",
+              "1387.526",
+              "10.43%"
+            ],
+            [
+              "Check numerical residuals",
+              "1065.025",
+              "8.00%"
+            ],
+            [
+              "Solve interaction equations",
+              "1044.989",
+              "7.85%"
+            ],
+            [
+              "Prepare rotor inputs",
+              "757.500",
+              "5.69%"
+            ],
+            [
+              "Consume checked results",
+              "244.638",
+              "1.84%"
+            ],
+            [
+              "Choose solution order",
+              "119.581",
+              "0.90%"
+            ],
+            [
+              "Outer copying and call boundary",
+              "56.066",
+              "0.42%"
+            ],
+            [
+              "Graph, admission and coefficient scaling",
+              "43.039",
+              "0.32%"
+            ],
+            [
+              "Assemble successful response",
+              "17.676",
+              "0.13%"
+            ],
+            [
+              "Screening and certificate checks",
+              "4.634",
+              "0.03%"
+            ],
+            [
+              "Signed timer-rounding residue",
+              "0.000",
+              "0.00%"
+            ]
+          ],
+          "scope": "Candidate: 15,352 successful measured queries; 13305.091 ms total. These disjoint parts include a signed rounding residue and sum to the recorded outer query time."
+        },
+        "F": {
+          "rows": [
+            [
+              "Build interactions (includes list checks)",
+              "4050.121",
+              "29.81%"
+            ],
+            [
+              "Read and validate inputs",
+              "2579.090",
+              "18.98%"
+            ],
+            [
+              "Construct forces",
+              "2033.244",
+              "14.96%"
+            ],
+            [
+              "Other build and validation",
+              "1445.636",
+              "10.64%"
+            ],
+            [
+              "Check numerical residuals",
+              "1084.498",
+              "7.98%"
+            ],
+            [
+              "Solve interaction equations",
+              "1082.195",
+              "7.96%"
+            ],
+            [
+              "Prepare rotor inputs",
+              "800.062",
+              "5.89%"
+            ],
+            [
+              "Consume checked results",
+              "272.714",
+              "2.01%"
+            ],
+            [
+              "Choose solution order",
+              "111.075",
+              "0.82%"
+            ],
+            [
+              "Outer copying and call boundary",
+              "57.171",
+              "0.42%"
+            ],
+            [
+              "Graph, admission and coefficient scaling",
+              "44.287",
+              "0.33%"
+            ],
+            [
+              "Assemble successful response",
+              "21.528",
+              "0.16%"
+            ],
+            [
+              "Screening and certificate checks",
+              "6.663",
+              "0.05%"
+            ],
+            [
+              "Signed timer-rounding residue",
+              "-0.000",
+              "-0.00%"
+            ]
+          ],
+          "scope": "Baseline: 15,352 successful measured queries; 13588.284 ms total. These disjoint parts include a signed rounding residue and sum to the recorded outer query time."
+        }
+      },
+      "headline": "Build interactions (includes list checks) accounts for 29.81% of successful measured baseline query time. It is the largest component in 8 of 8 repetitions. Classification: distributed-or-unstable.",
+      "previousResult": "Earlier shortcut: median candidate / baseline time 0.980473; cost and coverage gates remain failed. This page analyzes saved timings; it measures no new speedup."
+    },
+    "allAllocationsClosed": true
+  },
+  "interpretation": "Largest component consistent in 8/8 repetitions but below 50%; distributed cost, not evidence of unstable ranking. Selects source-inspection priority only.",
+  "notEstablished": [
+    "causal speedup attribution",
+    "isolated center-distance or cache cost",
+    "new speedup",
+    "physical validity",
+    "flight safety",
+    "novelty",
+    "large-swarm scaling",
+    "universal executable equivalence"
+  ],
+  "priorQualificationChanged": false,
+  "evidence": [
+    "results/summary.json",
+    "audit/audit.json",
+    "ui/qa.json",
+    "ALLOCATION-CLOSURE.json"
+  ],
+  "literature": "No new external proposition or citation; see unchanged LITERATURE.md."
+}

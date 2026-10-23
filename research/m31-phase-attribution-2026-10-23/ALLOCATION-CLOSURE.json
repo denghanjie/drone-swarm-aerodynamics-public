@@ -1,0 +1,102 @@
+{
+  "schema": "m31-phase-attribution-allocation-closure-v1",
+  "allClosed": true,
+  "allPassedOperationally": true,
+  "nativeQueries": 0,
+  "allocations": {
+    "producer": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "wallSeconds": 4.327277583,
+      "allocationWallPassed": true,
+      "outputBytes": 43432991,
+      "externalViewerPinBytes": 0,
+      "outputCapPassed": true,
+      "closed": true
+    },
+    "audit": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "wallSeconds": 11.359622667,
+      "allocationWallPassed": true,
+      "outputBytes": 2599881,
+      "externalViewerPinBytes": 0,
+      "outputCapPassed": true,
+      "closed": true
+    },
+    "finalize": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "wallSeconds": 1.308896917,
+      "allocationWallPassed": true,
+      "outputBytes": 1173,
+      "externalViewerPinBytes": 1005,
+      "outputCapPassed": true,
+      "closed": true
+    },
+    "ui": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "wallSeconds": 9.338840708,
+      "allocationWallPassed": true,
+      "outputBytes": 985589,
+      "externalViewerPinBytes": 0,
+      "outputCapPassed": true,
+      "closed": true
+    }
+  },
+  "allocationsRetried": false,
+  "decision": {
+    "atLeastHalf": false,
+    "classification": "distributed-or-unstable",
+    "denominatorMs": "13588.2838049988931727",
+    "interpretation": "Descriptive priority for source inspection only; not a causal speedup prediction or a revised qualification gate.",
+    "largestComponent": "geometry",
+    "numeratorMs": "4050.121404000983604",
+    "perRepWinners": [
+      {
+        "component": "geometry",
+        "rep": 0
+      },
+      {
+        "component": "geometry",
+        "rep": 1
+      },
+      {
+        "component": "geometry",
+        "rep": 2
+      },
+      {
+        "component": "geometry",
+        "rep": 3
+      },
+      {
+        "component": "geometry",
+        "rep": 4
+      },
+      {
+        "component": "geometry",
+        "rep": 5
+      },
+      {
+        "component": "geometry",
+        "rep": 6
+      },
+      {
+        "component": "geometry",
+        "rep": 7
+      }
+    ],
+    "sameWinnerReps": 8,
+    "stableMajority": false
+  },
+  "priorCostGate": false,
+  "priorCoverageGate": false,
+  "priorKeepGate": false,
+  "overallResearchComplete": false,
+  "note": "All four allocations executed once and closed. No additional numerical/display allocation opened. Descriptive successful timing analysis does not promote the previous candidate."
+}

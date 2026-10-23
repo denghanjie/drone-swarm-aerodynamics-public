@@ -1,3 +1,15 @@
+# Current checkpoint — saved query timing attribution complete, 23 October 2026
+
+[Plain summary](m31-phase-attribution-2026-10-23/SUMMARY.md) · [Restart](m31-phase-attribution-2026-10-23/RESTART-RESULT.md) · [Three.js replay](m31-phase-attribution-2026-10-23/viewer/).
+
+All 34,560 saved query records/1,920 stages retained, zero new native queries or flights. Independently reconstructed exact logged-decimal partitions, 216 group reconciliations and 1,920 paired display rows. Interaction building is largest: 29.81% of successful measured baseline query time and largest in 8/8 repetitions; below preset 50%, so distributed-or-unstable classification means distributed here. Previous cost/coverage/keep failure unchanged. Timers cannot isolate distance checks/cache cost or prove causal acceleration.
+
+Source e99ce65cd6bbafa705e412ddd58c3058a9251eab, 54 source/input pins freshly verified publicly before execution, no acquisition failures. Source review concise-rewrite race detected and exact published long review restored before the gate; both versions and confirmation retained. Producer/audit/finalize/UI each passed once and are CLOSED. All positions/annotations/control checks passed; desktop/mobile inspected. Keep8876. Final publication receipt: publication-receipts/m31-phase-attribution-result-2026-10-23.json after public result verification.
+
+Next inspect interaction-building data creation/repeated work to choose one concrete alternative; preserve validation, equations, refusal and evidence contracts. No new test opened. No physical validity, safety, novelty, scaling or new speed claim; research unfinished. Historical text below preserved byte-for-byte.
+
+---
+
 # Current checkpoint — radial full-query integration complete, 23 October 2026
 
 [Plain summary](m31-radial-integration-2026-10-23/SUMMARY.md) · [Restart](m31-radial-integration-2026-10-23/RESTART-RESULT.md) · [Three.js replay](m31-radial-integration-2026-10-23/viewer/).

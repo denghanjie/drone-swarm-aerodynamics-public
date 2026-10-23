@@ -1,0 +1,3 @@
+# Source review write ordering disclosure
+
+Before execution, the parent read the completed 15,322-byte PASS review, froze it and published source commit e99ce65cd6bbafa705e412ddd58c3058a9251eab. The reviewer subsequently shortened that file to 10,695 bytes while responding to the request for a concise review. The parent detected the local/frozen difference before public source verification or any allocation. The concise text is preserved alongside this record; the frozen checkpoint was restored byte-for-byte from its published commit. Independent reviewer confirmation of the longer published review is required before the public source gate. No scientific result, source code, protocol threshold or allocation was changed or executed by this bookkeeping correction.

@@ -1,0 +1,11 @@
+# Restart from the timing attribution checkpoint
+
+Read SUMMARY.md, RESULT-CLAIMS.json, ALLOCATION-CLOSURE.json, the result review and the final publication receipt before progressing. Source e99ce65cd6bbafa705e412ddd58c3058a9251eab was independently verified before all execution. Frozen source manifest: 54 pins, 13793 bytes, SHA256 3ecea50f0e96a49187a22ae8950ce37fd4b17d131832b9fa591b46d548e57bcd.
+
+Producer, independent audit, finalizer and UI each ran once and are CLOSED PASSED. Never rerun them, edit frozen source or silently enlarge allocations. No native/model queries or new flights were run. All 34,560 rows/1,920 stages were retained. Largest component: geometry/interaction construction, 29.81% of successful measured baseline outer time, largest in 8/8 repetitions. Below the preset half threshold: classification distributed-or-unstable; specifically distributed with a consistent winner. Prior cost/coverage/keep gates remain false.
+
+The review-writing order race was detected before public verification and execution. The long published PASS review was restored byte-for-byte; the later concise version and reviewer confirmation remain in publication receipts. No source or outcome was changed by this correction. Preserve all historical acquisition failures and previous refused stages.
+
+Next question: inspect interaction-building data construction/repeated work, preserving validation and refusal semantics, to specify one concrete alternative. No replacement, new seed, new physics or speedup claim is authorized by this document. A new test needs a prospective bounded protocol, independent critique, exact freeze, public push and independent public identity verification. Use existing reviewers only; no installations, paid services, contact or submission. Keep localhost8876 and the existing server. Retain understandable summaries, visible Three.js evidence and public nonsensitive checkpoint records. Overall research remains unfinished; the stale paused goal cannot be resumed through its API and must not be recreated or marked complete.
+
+Result publication and supplemental final receipts follow the immutable result commit and are recorded under research/publication-receipts/m31-phase-attribution-result-2026-10-23.json. Confirm their actual state; this restart text alone is not evidence that a later push has completed.
