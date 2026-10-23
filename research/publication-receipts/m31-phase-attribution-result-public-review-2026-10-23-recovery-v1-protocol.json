@@ -1,0 +1,56 @@
+{
+  "schema": "m31-phase-attribution-public-png-recovery-protocol-v1",
+  "preparedAtUtc": "2026-10-23T02:40:57.543385+00:00",
+  "commit": "dd485c0bb4a36fb3b8d54417b98c6ce954f68816",
+  "manifest": {
+    "file": "research/m31-phase-attribution-2026-10-23/result-manifest.json",
+    "bytes": 23689,
+    "sha256": "dd6001d57ed6ac92cd5a3ec02ad2eca3d00b8b61810e83faf901e92ef32414ce"
+  },
+  "originalFailedReceipt": {
+    "path": "research/publication-receipts/m31-phase-attribution-result-public-review-2026-10-23-failure.json",
+    "bytes": 288107,
+    "sha256": "c4da54b9e6f6527116366d2b0021a541e0106a701b881d18a1123d7b621235fa"
+  },
+  "originalEventJournal": {
+    "path": "research/publication-receipts/m31-phase-attribution-result-public-review-2026-10-23-events.jsonl",
+    "bytes": 173683,
+    "sha256": "0c65b0422b46889fca19f853b71011d8c18947f2bc7502afda2ad464396c7e90"
+  },
+  "targets": [
+    {
+      "path": "research/m31-phase-attribution-2026-10-23/ui/desktop.png",
+      "bytes": 437735,
+      "sha256": "19edc780fefe1d21b51b85e93f61017c4b1e47e7477fc404af23ec6f66a049e8"
+    },
+    {
+      "path": "research/m31-phase-attribution-2026-10-23/ui/first-viewport.png",
+      "bytes": 159452,
+      "sha256": "2033c9826f2df6bdb53f4cd2e6dde0551532b0a768e93d07c4c7382cd2984a40"
+    },
+    {
+      "path": "research/m31-phase-attribution-2026-10-23/ui/mobile.png",
+      "bytes": 385192,
+      "sha256": "cf6e29bea788e9e3bf756ece2489e6c9f246822d11f4de422a867a00753b1db2"
+    }
+  ],
+  "bounds": {
+    "maxConcurrentTransfers": 2,
+    "attemptsPerIdentity": 3,
+    "secondsPerAttempt": 45,
+    "overallSeconds": 240,
+    "aggregateCapturedPublicBytes": 16777216
+  },
+  "executionPermission": "require_escalated",
+  "helper": {
+    "file": "m31-phase-attribution-png-public-recovery-20261023.py",
+    "bytes": 23729,
+    "sha256": "612f51e61f14089f2318e61fc49bcabc0e7f374795f325106990288560bed5d2"
+  },
+  "diagnosisFromRetainedEvidence": "Exactly three PNGs each exhausted three raw-API attempts. All nine returned HTTP 200 but gh exit 1 before the checker accepted body bytes; captured stdout was 1476 or 1477 bytes, and all stderr captures were 31 bytes with the same SHA-256 2b7e48bb4759add8355a0df1f7621ba3b3bc7f49bfdec3f37e9a560661afc995. Stderr text was not retained, so a more specific error message cannot be asserted. The local gh api help has no dedicated binary-output option.",
+  "recoveryRoute": "Existing gh authenticated GitHub Contents API JSON responses at the exact frozen result commit for only the three listed PNGs, plus one public repository metadata identity. Validate file path/type/size/base64 encoding, decode only to opaque bytes, verify byte count/SHA-256 and Git blob SHA-1. No image rendering, archive decoding or scientific data processing.",
+  "proofReuse": "Retain and validate all 98 successful original file proofs and exact original manifest proof. Only the missing three PNGs get new public recovery checks and fresh local/result-Git bindings. The existing 29 immutable input public proofs retain their successful source-gate provenance and original local/result-Git/origin-Git bindings.",
+  "closure": "Fresh local frozen ALLOCATION-CLOSURE.json and all four matching supervisor identities at start/end, including an end-check attempt after a recovery failure. The original failed acquisition omitted its end closure check; that limitation remains disclosed.",
+  "composite": "On successful recovery, write the standard result-public-review-2026-10-23.json with 101 covered pins, original 98 plus recovered 3, exactly 29 source input public proofs reused, freshPublicReads and all nine original failed attempts retained. Reference immutable original failure/journal and the new recovery receipt. Preserve source review ordering disclosure.",
+  "failurePolicy": "Separate prospective administrative recovery only, pending parent static review and launch authorization. Preserve original failed receipt, journal, result files and all nine failed attempts without modification. At most one execution of this recovery; no network calls during preparation and no numerical, audit, model or UI rerun."
+}

@@ -1,0 +1,48 @@
+{
+  "schema": "m31-phase-attribution-independent-public-result-review-protocol-v1",
+  "recordedAtUtc": "2026-10-23T02:32:04.422284+00:00",
+  "commit": "dd485c0bb4a36fb3b8d54417b98c6ce954f68816",
+  "manifest": {
+    "file": "research/m31-phase-attribution-2026-10-23/result-manifest.json",
+    "bytes": 23689,
+    "sha256": "dd6001d57ed6ac92cd5a3ec02ad2eca3d00b8b61810e83faf901e92ef32414ce"
+  },
+  "filePins": 101,
+  "bounds": {
+    "maxConcurrentTransfers": 2,
+    "attemptsPerIdentity": 3,
+    "secondsPerAttempt": 45,
+    "overallSeconds": 900,
+    "aggregateCapturedPublicBytes": 536870912
+  },
+  "executionPermission": "require_escalated",
+  "reusedInputSourceReview": {
+    "path": "research/publication-receipts/m31-phase-attribution-source-public-review-2026-10-23.json",
+    "bytes": 165261,
+    "sha256": "c83c587513d11d2826d55185cdaec226b1a341ea9b33ca14e19912e17ad7ce0d"
+  },
+  "inputPublicProofsToReuse": 29,
+  "scope": "Administrative composite byte identity only. Every noninput pin and result manifest receive fresh local/result-Git/public checks. Exactly 29 immutable input public proofs are reused from the exact successful source receipt, each with fresh local/result-Git/origin-Git checks and unchanged descriptor. Raw evidence remains opaque. No numerical, audit, finalize or UI allocation is launched.",
+  "publicRoute": "Existing gh authenticated GitHub Contents API raw response at exact result commit, following exact public repository metadata verification. No unauthenticated raw-CDN claim.",
+  "repository": "denghanjie/drone-swarm-aerodynamics-public",
+  "helper": {
+    "file": "m31-phase-attribution-result-public-verify-20261023.py",
+    "bytes": 22654,
+    "sha256": "5f6016169b85e0b9937bd4c44bf0b75d6abdd7f503abe7f18e740c4082ca4046"
+  },
+  "allocationBoundary": "Frozen ALLOCATION-CLOSURE.json and four matching closed supervisor records checked at start/end. Publication identity pass does not imply scientific qualification or reapprove any failed gate.",
+  "sourceReviewOrderingDisclosure": {
+    "frozenReview": {
+      "file": "research/m31-phase-attribution-2026-10-23/review/PROTOCOL-REVIEW.md",
+      "bytes": 15322,
+      "sha256": "d0ffa2ae577dfd512d345971dcc1a0847abe417f3aef6f3b6dde70d0c4af91fb"
+    },
+    "records": [
+      "research/publication-receipts/m31-phase-attribution-source-review-order-2026-10-23.md",
+      "research/publication-receipts/m31-phase-attribution-source-review-concise-2026-10-23.md"
+    ],
+    "statement": "The original complete PASS review was frozen while it was being condensed. Its substantive clearance was independently reaffirmed; exact frozen bytes were restored before the successful source-public gate. Both ordering disclosure and concise copy remain separate result pins and receive fresh public verification."
+  },
+  "localResultStateMatchesFrozenCommitBeforeAcquisition": true,
+  "failurePolicy": "Retain each failed attempt and a failed acquisition receipt; no retries beyond fixed bounds, source changes, numerical reruns or UI replays."
+}

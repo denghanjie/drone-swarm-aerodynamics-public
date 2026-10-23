@@ -1,0 +1,7 @@
+# Parent review of three-image publication recovery
+
+Static review PASS before recovery launch. Reviewed helper 23729B SHA256 612f51e61f14089f2318e61fc49bcabc0e7f374795f325106990288560bed5d2 and prospective protocol 4132B SHA256 1e764eacb9e888b6f623b4fc2f7abe9fc0045af07d3f0fa63a41cd0fe39fc8af. Syntax compiled only, no helper execution by parent.
+
+The helper limits fresh public file acquisition to the three missing PNGs at exact result commit dd485c0bb4a36fb3b8d54417b98c6ce954f68816. It checks Contents path/type/size/base64 envelope, opaque decoded SHA256 and Git blob SHA1, plus fresh local/result-Git identity. Existing 98 proofs and original manifest proof are checked against the immutable original failure receipt/journal and target complement; the nine old failures stay recorded. Fresh public repository visibility and closure/supervisor checks are required. Composite coverage is constructed only after all three missing identities pass. The separate 240-second/16MiB bound and per-attempt limits do not reopen the old allocation. No model, analysis or UI rerun.
+
+Authorized under the user's existing research/publication request: one execution of this exact separately bounded administrative recovery with the approved network environment. Any failure remains terminal for this recovery; do not silently retry or alter sources. No more specific diagnosis of the earlier CLI error is supported than the retained HTTP200/exit1/output-hash facts.
