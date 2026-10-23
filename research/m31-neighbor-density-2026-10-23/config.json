@@ -1,0 +1,36 @@
+{
+  "schema": "m31-neighbor-density-config-v1",
+  "inputCommit": "0461153a7d6f75cb6e8564850b77e8b6f04cebb2",
+  "inputCheckpoint": "research/m31-buffered-motion-2026-10-22",
+  "windows": 12,
+  "stagesPerWindow": 160,
+  "stages": 1920,
+  "drones": 64,
+  "componentThreshold": 4,
+  "centerNeighborThreshold": 3,
+  "nativeCalls": 0,
+  "allocations": {
+    "producer": {
+      "seconds": 1200,
+      "mib": 32
+    },
+    "audit": {
+      "seconds": 1200,
+      "mib": 4
+    },
+    "finalize": {
+      "seconds": 120,
+      "mib": 2
+    },
+    "ui": {
+      "seconds": 150,
+      "mib": 16
+    }
+  },
+  "readPolicy": {
+    "attemptsPerFile": 3,
+    "gitReadTimeoutSeconds": 45
+  },
+  "newNumericalModelQueries": false,
+  "selectedLineByteLimit": 8388608
+}

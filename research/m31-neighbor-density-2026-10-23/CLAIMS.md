@@ -1,0 +1,14 @@
+# Prospective claim boundaries
+
+23 October 2026. This ledger fixes interpretation before the saved-record density calculation. It reports no new diagnostic result. See [PROTOCOL.md](PROTOCOL.md) for the exact input and checks and [LITERATURE.md](LITERATURE.md) for prior art and terminology.
+
+| Prospective statement | Evidence required | Limit |
+|---|---|---|
+| The previous buffered lists retained all 4,032 directed pairs on the selected N64 clips. | Published preceding [summary](../m31-buffered-motion-2026-10-22/SUMMARY.md) and [result claims](../m31-buffered-motion-2026-10-22/RESULT-CLAIMS.md). | Reused historical finding; this note does not recalculate or independently audit it. It does not establish the new component-survivor counts. |
+| `N` lower-bounds the size of a conservative list using the same threshold-4 component screen; at most `P−N` pairs can be omitted. | Eligible screen domain and the prescribed saved-counter identities, followed by the independent diagnostic audit. | State-specific optimistic bound; padding and rounding may retain more. It is not a limit on all possible candidate rules. |
+| If `P−N` is zero throughout, buffer-width tuning under that same rule cannot omit pairs on these clips. | Complete checked records, including the inherited refusal, with the condition actually satisfied. | Conditional until analysis. Retire that tuning direction on these clips; do not generalize to all trajectories or neighbor lists. |
+| `N−G−E` describes exclusions by the existing radius-3 Euclidean center-distance filter. | Saved counts, model constant and consistency checks, with status strata preserved. | This is current F work, distinct from the later wake-axis rotor radial test. Nonzero exclusions do not prove a reusable bound or speedup. |
+| Nonzero center-distance exclusions may motivate a separately specified exact-model candidate study. | The saved diagnosis plus a new justified moving bound and reviewed equivalence contract before any future test. | No new candidate is qualified here; counters/status/symbols cannot be silently removed. If this opportunity is also zero, retire the distance-only direction for these clips. |
+| Sparse positive terms or positive vehicle edges do not establish safely omittable pairs. | Preserve the full symbol partition and admission/refusal semantics; `T=s[8]`, while symbol 4 and invalid terms remain distinct. | Unsupported near field is not harmless zero. `E−U` is not a safe-to-omit count. |
+
+No new model query, geometry recomputation, timing experiment, physical claim, novelty claim, significance claim or larger-swarm prediction is authorized by this ledger. Ratios describe repeated saved stages, not independent flights. Future results must be attached to their exact saved evidence and independent audit before becoming unconditional claims.

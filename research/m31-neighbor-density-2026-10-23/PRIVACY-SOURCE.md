@@ -1,0 +1,3 @@
+# Prospective publication privacy scope
+
+Inputs are previously public synthetic simulation evidence, source code, verified literature and publication records. No private attachments, messages, credentials, lab data or external user records are introduced. Code uses repository-relative public artifact paths; runtime records retain binary identity without a private installation path. Source text and reviews receive a credential/private-path pattern screen before staging. Screenshots and generated failure records receive a separate result review before publication. Publish only this checkpoint and its additive restart/receipt files. This scope is not a universal secret guarantee.
