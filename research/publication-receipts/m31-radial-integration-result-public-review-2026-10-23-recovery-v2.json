@@ -1,0 +1,1147 @@
+{
+  "schema": "m31-radial-integration-public-transport-recovery-v2",
+  "passed": false,
+  "acquisitionClosed": true,
+  "checkedAtUtc": "2026-10-23T01:55:50.536231+00:00",
+  "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+  "manifest": {
+    "file": "research/m31-radial-integration-2026-10-23/result-manifest.json",
+    "bytes": 537067,
+    "sha256": "7b0871190878f7d034677beb0f23b9f995871dbdda3fdee0935cf80cb8bc2b34"
+  },
+  "protocols": [
+    {
+      "file": "research/publication-receipts/m31-radial-integration-result-public-review-2026-10-23-recovery-v2-protocol.json",
+      "bytes": 15708,
+      "sha256": "ed7c52e4633731d534a770c8da18339e060fe9f7d3916bea6841d748f972c975"
+    },
+    {
+      "file": "research/publication-receipts/m31-radial-integration-result-public-review-2026-10-23-recovery-v2-protocol.md",
+      "bytes": 10609,
+      "sha256": "e1deb18cc6d95e754e908b6af986b34203ba61f44f939af112f68ead63deb31e"
+    }
+  ],
+  "incompleteReceipt": {
+    "file": "research/publication-receipts/m31-radial-integration-result-public-review-2026-10-23-incomplete.json",
+    "bytes": 18924,
+    "sha256": "a5b7da05b47bd6f12473208aa5e58b8e77e0be1d0bc00a0510bf96dc890a4002"
+  },
+  "originalFailureReceipt": {
+    "file": "research/publication-receipts/m31-radial-integration-result-public-review-2026-10-23-failure.json",
+    "bytes": 3968875,
+    "sha256": "9a59bf5d8e38b0c060b0f4cf623ffc9a769f5085745c49c82d8fd673915292e0"
+  },
+  "priorRecovery": {
+    "receipt": {
+      "file": "research/publication-receipts/m31-radial-integration-result-public-review-2026-10-23-recovery.json",
+      "bytes": 43697,
+      "sha256": "796dfc491b9dc18e31e5019ff9b8f503dcb4806157a0eb28b424bf864c4482d4"
+    },
+    "events": {
+      "file": "research/publication-receipts/m31-radial-integration-result-public-review-2026-10-23-recovery-events.jsonl",
+      "bytes": 1144,
+      "sha256": "59565f440f7e77f382ad221fe4e2cb3e1ef90f612bc4126e5ba4a1a633304473"
+    },
+    "clarification": {
+      "file": "research/publication-receipts/m31-radial-integration-result-public-review-2026-10-23-recovery-closure.json",
+      "bytes": 5561,
+      "sha256": "d80ebe5acc79d98fc2d8f339978bac645a8d3bc67d80f67e26b52d97aebc0e42"
+    },
+    "outcome": "Closed failed at repository metadata; two gh exit-1 connection errors, no file retrieval.",
+    "executionPermissions": "use_default because sandbox_permissions was omitted.",
+    "causeAssessment": "Restricted default environment may explain the immediate failures; no internet outage or permission cause has been proven.",
+    "preservedUnmodified": true
+  },
+  "executionPermission": {
+    "requiredSandboxPermissions": "require_escalated",
+    "justification": "Verify the already-authorized public research checkpoint through GitHub API after the prior default-sandbox transport failure",
+    "onAutoReviewRejection": "Stop and report; never bypass rejection."
+  },
+  "originalAcquisitionPassed": false,
+  "originalFailedAttemptsPreserved": 160,
+  "repositoryMetadata": {
+    "operation": "repository-public-metadata",
+    "path": "repository-metadata",
+    "attempt": 1,
+    "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public",
+    "authenticated": true,
+    "accept": "application/vnd.github+json",
+    "returncode": 0,
+    "capturedStdout": {
+      "bytes": 8413,
+      "sha256": "0f06525a1645ede4772bc12a78665b1a63363828cd2ebef9c7e238de05777e71"
+    },
+    "capturedStderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "wallSeconds": 0.522351,
+    "httpStatus": 200,
+    "responseBody": {
+      "bytes": 6963,
+      "sha256": "e6a9a05634f2ca8a8af1954286f7c4f50596628d9dc901f1bf7c597d26085bc5"
+    },
+    "safeResponseHeaders": {
+      "content-type": "application/json; charset=utf-8",
+      "x-github-request-id": "77A4:349E22:C32D55:146C8EC:6ADABEA5",
+      "x-ratelimit-limit": "5000",
+      "x-ratelimit-remaining": "4998",
+      "x-ratelimit-reset": "1792723446"
+    },
+    "repositoryMetadata": {
+      "full_name": "denghanjie/drone-swarm-aerodynamics-public",
+      "private": false,
+      "visibility": "public",
+      "html_url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public"
+    },
+    "passed": true
+  },
+  "authentication": "Existing gh authenticated API access to the publicly visible repository. No credentials or authorization headers saved or printed. This is not unauthenticated raw-CDN evidence.",
+  "bounds": {
+    "maxConcurrentTransfers": 2,
+    "maxAttemptsPerIdentityIncludingMetadata": 2,
+    "maxSecondsPerAttempt": 45,
+    "maxTotalSeconds": 900,
+    "maxAggregateCapturedBytes": 67108864,
+    "aggregateByteAccounting": "All stdout and stderr bytes captured from every local gh subprocess attempt, including headers, metadata, successful and failed responses.",
+    "stopOnBoundFailure": true,
+    "noNewPathOrFourthOriginalAttempt": true
+  },
+  "aggregateCapturedBytes": 323256,
+  "aggregateCapturedByteCap": 67108864,
+  "wallSeconds": 1.0869461660000002,
+  "expectedFiles": [
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-3cdfe1c16ff41d4c71f19be60513783d8292a4e5b271b974f25bcb6bd4398f5b.json",
+      "bytes": 155576,
+      "sha256": "3cdfe1c16ff41d4c71f19be60513783d8292a4e5b271b974f25bcb6bd4398f5b"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-3cf05b246bc9d7e58ce41b5905f1f5e647a05025ebb6994d56f8e0ca0dc15d1f.json",
+      "bytes": 156317,
+      "sha256": "3cf05b246bc9d7e58ce41b5905f1f5e647a05025ebb6994d56f8e0ca0dc15d1f"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-3cf3f0e1d816d145dfdb19e6f6b874e6f7bdc8c313838986ebd70098e1a16903.json",
+      "bytes": 156317,
+      "sha256": "3cf3f0e1d816d145dfdb19e6f6b874e6f7bdc8c313838986ebd70098e1a16903"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-3cf995abc4cc19986c415c98310f2f741e9821676c376bbd5517d96a70489cbd.json",
+      "bytes": 156545,
+      "sha256": "3cf995abc4cc19986c415c98310f2f741e9821676c376bbd5517d96a70489cbd"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-4fe280266b3f394c41d7feef1a0fd5a113d105954ce0d6d8bf612946cbf70c3e.json",
+      "bytes": 156545,
+      "sha256": "4fe280266b3f394c41d7feef1a0fd5a113d105954ce0d6d8bf612946cbf70c3e"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-4ff1d6b7b155e7ed9995e047b91f245e6073ed08860a311bf045141b710a1986.json",
+      "bytes": 154208,
+      "sha256": "4ff1d6b7b155e7ed9995e047b91f245e6073ed08860a311bf045141b710a1986"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-5012e84ed86e7b67861eb46c0c6d5fcf88175207e93a5f7725c2b8318a9fc8dd.json",
+      "bytes": 154721,
+      "sha256": "5012e84ed86e7b67861eb46c0c6d5fcf88175207e93a5f7725c2b8318a9fc8dd"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-501f868bd28a7842be09bf1d61fc34cc9322e92da94719ff27120895b29a2553.json",
+      "bytes": 152099,
+      "sha256": "501f868bd28a7842be09bf1d61fc34cc9322e92da94719ff27120895b29a2553"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-65bf86dfc270f7f189d9a3c31ec96eade7f3fb1869c4f944c28f3428d1cb202d.json",
+      "bytes": 154607,
+      "sha256": "65bf86dfc270f7f189d9a3c31ec96eade7f3fb1869c4f944c28f3428d1cb202d"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-65c524c8a83de7269040f0d4c44d97c473885abd582a50628817f785728a4ce2.json",
+      "bytes": 152384,
+      "sha256": "65c524c8a83de7269040f0d4c44d97c473885abd582a50628817f785728a4ce2"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-6631b353f84ed30472753d2e20dae136b61db7d304cc8dadfc6df2cc72aadc9d.json",
+      "bytes": 153068,
+      "sha256": "6631b353f84ed30472753d2e20dae136b61db7d304cc8dadfc6df2cc72aadc9d"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-66530c427e0a72beb3762585c9ad461bf5ae4a6967e18668a6f8221a6159639c.json",
+      "bytes": 156431,
+      "sha256": "66530c427e0a72beb3762585c9ad461bf5ae4a6967e18668a6f8221a6159639c"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-7c49d6c2c9d3f3962fc03817b836426ba5644f15607c8f863d72581447eb4fb7.json",
+      "bytes": 153923,
+      "sha256": "7c49d6c2c9d3f3962fc03817b836426ba5644f15607c8f863d72581447eb4fb7"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-7c4dc57f82f10b52512ed3cac73a171cc7eaa847470c6cff9a5db683a445e8a4.json",
+      "bytes": 156431,
+      "sha256": "7c4dc57f82f10b52512ed3cac73a171cc7eaa847470c6cff9a5db683a445e8a4"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-7c50c74123bf49dfc0060000289a34fa7de07d9737c62e8781f93c6b7bb7faf2.json",
+      "bytes": 153353,
+      "sha256": "7c50c74123bf49dfc0060000289a34fa7de07d9737c62e8781f93c6b7bb7faf2"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-7c68c6fbda18ea63e8c7332077f8366f2dc9cf65e1ac83bb326963fbabcd7ebd.json",
+      "bytes": 152612,
+      "sha256": "7c68c6fbda18ea63e8c7332077f8366f2dc9cf65e1ac83bb326963fbabcd7ebd"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-93d8f968b36ac8c157c517893b9b1b82ec65ca1d73e137ad45e730ace80913a3.json",
+      "bytes": 152954,
+      "sha256": "93d8f968b36ac8c157c517893b9b1b82ec65ca1d73e137ad45e730ace80913a3"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-93e875b12f427ecf2f71c4813eb5156e371a35b1d050028c11cde0291e171f93.json",
+      "bytes": 152897,
+      "sha256": "93e875b12f427ecf2f71c4813eb5156e371a35b1d050028c11cde0291e171f93"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-9438c18fcbc5fb92274d17bfcf3c4b155085bbafef32346b40c6469476dfbd53.json",
+      "bytes": 156431,
+      "sha256": "9438c18fcbc5fb92274d17bfcf3c4b155085bbafef32346b40c6469476dfbd53"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-94833cf69d05c95b1ec0ec1343ded9c036b579343eaa7e976b1b2f1bbb8ffe74.json",
+      "bytes": 153011,
+      "sha256": "94833cf69d05c95b1ec0ec1343ded9c036b579343eaa7e976b1b2f1bbb8ffe74"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ae1be83d601b02d35c24d03fd017d57733da2f1dbc18586237a7b46570b4b068.json",
+      "bytes": 154550,
+      "sha256": "ae1be83d601b02d35c24d03fd017d57733da2f1dbc18586237a7b46570b4b068"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ae2760524fb239c3341e72bdce74e96a976876d8a8ba573604dd54b07e830235.json",
+      "bytes": 154664,
+      "sha256": "ae2760524fb239c3341e72bdce74e96a976876d8a8ba573604dd54b07e830235"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ae342b630998ec45bc639165181fcab4effd0decdb1a22ea00a1bcf73fa9faca.json",
+      "bytes": 152555,
+      "sha256": "ae342b630998ec45bc639165181fcab4effd0decdb1a22ea00a1bcf73fa9faca"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ae54bf178a84eac4cd3f4986fe3a036673b65701a2fa7fda0c57b94eff60352b.json",
+      "bytes": 153695,
+      "sha256": "ae54bf178a84eac4cd3f4986fe3a036673b65701a2fa7fda0c57b94eff60352b"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-c768b3a0bed2e6a3197c5bd3bbdda6bb078de2f8722bc633c2a8e037fca086c4.json",
+      "bytes": 156431,
+      "sha256": "c768b3a0bed2e6a3197c5bd3bbdda6bb078de2f8722bc633c2a8e037fca086c4"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-c76e4f4f5856c85af2369cd66870454176f6e8e6b138b92b4356389266bce45e.json",
+      "bytes": 156374,
+      "sha256": "c76e4f4f5856c85af2369cd66870454176f6e8e6b138b92b4356389266bce45e"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-c76f733a8c42a48d0eb7e25a9f1ae2c2c2cae19c7a8a5362a0f69f10c4efd911.json",
+      "bytes": 153638,
+      "sha256": "c76f733a8c42a48d0eb7e25a9f1ae2c2c2cae19c7a8a5362a0f69f10c4efd911"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-c7efb7d0fbfaa9273b4a199f2c7e800ea64d9b9431a91ab52046f3431ab2a2ff.json",
+      "bytes": 156317,
+      "sha256": "c7efb7d0fbfaa9273b4a199f2c7e800ea64d9b9431a91ab52046f3431ab2a2ff"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-db291addadbe714dbec849b5f7785be9d50a7a811d9d2a3beedc291f722277cd.json",
+      "bytes": 156317,
+      "sha256": "db291addadbe714dbec849b5f7785be9d50a7a811d9d2a3beedc291f722277cd"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-db8a2d5ecafe0ee629a416d0d93aef98230c7bdc8ddb2dc983630d45f19468ae.json",
+      "bytes": 156317,
+      "sha256": "db8a2d5ecafe0ee629a416d0d93aef98230c7bdc8ddb2dc983630d45f19468ae"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-dba952e2f53ac73e2760e9b88a822a7942831f9490b0816c465540e96c07eba1.json",
+      "bytes": 154436,
+      "sha256": "dba952e2f53ac73e2760e9b88a822a7942831f9490b0816c465540e96c07eba1"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-dbd6e3130c7f0af7335fda3a21a729c959944b3c48b7e092ee1197275d1e7e6b.json",
+      "bytes": 153980,
+      "sha256": "dbd6e3130c7f0af7335fda3a21a729c959944b3c48b7e092ee1197275d1e7e6b"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-edc28eac092d49431a58dfccdcde86a6e4d995eba34f28f5b55c0f1a7da16794.json",
+      "bytes": 152897,
+      "sha256": "edc28eac092d49431a58dfccdcde86a6e4d995eba34f28f5b55c0f1a7da16794"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ee13597a15a185a70ddb3f9c73a2cee5ea12e25c9827216c757adab0666b44de.json",
+      "bytes": 156431,
+      "sha256": "ee13597a15a185a70ddb3f9c73a2cee5ea12e25c9827216c757adab0666b44de"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ee16ddedc470de278bb446ffa759941103a5e2ef7e057fbb28d2b6a1906d135f.json",
+      "bytes": 155063,
+      "sha256": "ee16ddedc470de278bb446ffa759941103a5e2ef7e057fbb28d2b6a1906d135f"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ee513c5d517276b733c295a4dcd6c9071e69456a19420b23b022f436d45efcda.json",
+      "bytes": 154208,
+      "sha256": "ee513c5d517276b733c295a4dcd6c9071e69456a19420b23b022f436d45efcda"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/ui-supervisor-launch.lock",
+      "bytes": 23,
+      "sha256": "582728fcc60fc12fd7abcdaf58c67141dc65f2e824a859e4ec0c68c6587f124e"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/ui-supervisor.json",
+      "bytes": 224,
+      "sha256": "3ca237caaf440bc7c9f0fcbf8dc6afffd68607c3f4db6ff221eaa24794d110f0"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/ui/camera-after.json",
+      "bytes": 58,
+      "sha256": "f5f761338f9fa2a3fc708e4747ff445df0b43d4b82a5160eb719082ff5997180"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/ui/camera-before.json",
+      "bytes": 57,
+      "sha256": "770bb324de245d30438e86a9756a680c4c1431a8ccaa6b4bf20e1a2a2305c2f9"
+    }
+  ],
+  "recoveredFiles": [],
+  "recoveredFileCount": 0,
+  "recoveredBytes": 0,
+  "unresolvedFiles": [
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-3cdfe1c16ff41d4c71f19be60513783d8292a4e5b271b974f25bcb6bd4398f5b.json",
+      "bytes": 155576,
+      "sha256": "3cdfe1c16ff41d4c71f19be60513783d8292a4e5b271b974f25bcb6bd4398f5b"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-3cf05b246bc9d7e58ce41b5905f1f5e647a05025ebb6994d56f8e0ca0dc15d1f.json",
+      "bytes": 156317,
+      "sha256": "3cf05b246bc9d7e58ce41b5905f1f5e647a05025ebb6994d56f8e0ca0dc15d1f"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-3cf3f0e1d816d145dfdb19e6f6b874e6f7bdc8c313838986ebd70098e1a16903.json",
+      "bytes": 156317,
+      "sha256": "3cf3f0e1d816d145dfdb19e6f6b874e6f7bdc8c313838986ebd70098e1a16903"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-3cf995abc4cc19986c415c98310f2f741e9821676c376bbd5517d96a70489cbd.json",
+      "bytes": 156545,
+      "sha256": "3cf995abc4cc19986c415c98310f2f741e9821676c376bbd5517d96a70489cbd"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-4fe280266b3f394c41d7feef1a0fd5a113d105954ce0d6d8bf612946cbf70c3e.json",
+      "bytes": 156545,
+      "sha256": "4fe280266b3f394c41d7feef1a0fd5a113d105954ce0d6d8bf612946cbf70c3e"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-4ff1d6b7b155e7ed9995e047b91f245e6073ed08860a311bf045141b710a1986.json",
+      "bytes": 154208,
+      "sha256": "4ff1d6b7b155e7ed9995e047b91f245e6073ed08860a311bf045141b710a1986"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-5012e84ed86e7b67861eb46c0c6d5fcf88175207e93a5f7725c2b8318a9fc8dd.json",
+      "bytes": 154721,
+      "sha256": "5012e84ed86e7b67861eb46c0c6d5fcf88175207e93a5f7725c2b8318a9fc8dd"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-501f868bd28a7842be09bf1d61fc34cc9322e92da94719ff27120895b29a2553.json",
+      "bytes": 152099,
+      "sha256": "501f868bd28a7842be09bf1d61fc34cc9322e92da94719ff27120895b29a2553"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-65bf86dfc270f7f189d9a3c31ec96eade7f3fb1869c4f944c28f3428d1cb202d.json",
+      "bytes": 154607,
+      "sha256": "65bf86dfc270f7f189d9a3c31ec96eade7f3fb1869c4f944c28f3428d1cb202d"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-65c524c8a83de7269040f0d4c44d97c473885abd582a50628817f785728a4ce2.json",
+      "bytes": 152384,
+      "sha256": "65c524c8a83de7269040f0d4c44d97c473885abd582a50628817f785728a4ce2"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-6631b353f84ed30472753d2e20dae136b61db7d304cc8dadfc6df2cc72aadc9d.json",
+      "bytes": 153068,
+      "sha256": "6631b353f84ed30472753d2e20dae136b61db7d304cc8dadfc6df2cc72aadc9d"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-66530c427e0a72beb3762585c9ad461bf5ae4a6967e18668a6f8221a6159639c.json",
+      "bytes": 156431,
+      "sha256": "66530c427e0a72beb3762585c9ad461bf5ae4a6967e18668a6f8221a6159639c"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-7c49d6c2c9d3f3962fc03817b836426ba5644f15607c8f863d72581447eb4fb7.json",
+      "bytes": 153923,
+      "sha256": "7c49d6c2c9d3f3962fc03817b836426ba5644f15607c8f863d72581447eb4fb7"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-7c4dc57f82f10b52512ed3cac73a171cc7eaa847470c6cff9a5db683a445e8a4.json",
+      "bytes": 156431,
+      "sha256": "7c4dc57f82f10b52512ed3cac73a171cc7eaa847470c6cff9a5db683a445e8a4"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-7c50c74123bf49dfc0060000289a34fa7de07d9737c62e8781f93c6b7bb7faf2.json",
+      "bytes": 153353,
+      "sha256": "7c50c74123bf49dfc0060000289a34fa7de07d9737c62e8781f93c6b7bb7faf2"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-7c68c6fbda18ea63e8c7332077f8366f2dc9cf65e1ac83bb326963fbabcd7ebd.json",
+      "bytes": 152612,
+      "sha256": "7c68c6fbda18ea63e8c7332077f8366f2dc9cf65e1ac83bb326963fbabcd7ebd"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-93d8f968b36ac8c157c517893b9b1b82ec65ca1d73e137ad45e730ace80913a3.json",
+      "bytes": 152954,
+      "sha256": "93d8f968b36ac8c157c517893b9b1b82ec65ca1d73e137ad45e730ace80913a3"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-93e875b12f427ecf2f71c4813eb5156e371a35b1d050028c11cde0291e171f93.json",
+      "bytes": 152897,
+      "sha256": "93e875b12f427ecf2f71c4813eb5156e371a35b1d050028c11cde0291e171f93"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-9438c18fcbc5fb92274d17bfcf3c4b155085bbafef32346b40c6469476dfbd53.json",
+      "bytes": 156431,
+      "sha256": "9438c18fcbc5fb92274d17bfcf3c4b155085bbafef32346b40c6469476dfbd53"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-94833cf69d05c95b1ec0ec1343ded9c036b579343eaa7e976b1b2f1bbb8ffe74.json",
+      "bytes": 153011,
+      "sha256": "94833cf69d05c95b1ec0ec1343ded9c036b579343eaa7e976b1b2f1bbb8ffe74"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ae1be83d601b02d35c24d03fd017d57733da2f1dbc18586237a7b46570b4b068.json",
+      "bytes": 154550,
+      "sha256": "ae1be83d601b02d35c24d03fd017d57733da2f1dbc18586237a7b46570b4b068"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ae2760524fb239c3341e72bdce74e96a976876d8a8ba573604dd54b07e830235.json",
+      "bytes": 154664,
+      "sha256": "ae2760524fb239c3341e72bdce74e96a976876d8a8ba573604dd54b07e830235"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ae342b630998ec45bc639165181fcab4effd0decdb1a22ea00a1bcf73fa9faca.json",
+      "bytes": 152555,
+      "sha256": "ae342b630998ec45bc639165181fcab4effd0decdb1a22ea00a1bcf73fa9faca"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ae54bf178a84eac4cd3f4986fe3a036673b65701a2fa7fda0c57b94eff60352b.json",
+      "bytes": 153695,
+      "sha256": "ae54bf178a84eac4cd3f4986fe3a036673b65701a2fa7fda0c57b94eff60352b"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-c768b3a0bed2e6a3197c5bd3bbdda6bb078de2f8722bc633c2a8e037fca086c4.json",
+      "bytes": 156431,
+      "sha256": "c768b3a0bed2e6a3197c5bd3bbdda6bb078de2f8722bc633c2a8e037fca086c4"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-c76e4f4f5856c85af2369cd66870454176f6e8e6b138b92b4356389266bce45e.json",
+      "bytes": 156374,
+      "sha256": "c76e4f4f5856c85af2369cd66870454176f6e8e6b138b92b4356389266bce45e"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-c76f733a8c42a48d0eb7e25a9f1ae2c2c2cae19c7a8a5362a0f69f10c4efd911.json",
+      "bytes": 153638,
+      "sha256": "c76f733a8c42a48d0eb7e25a9f1ae2c2c2cae19c7a8a5362a0f69f10c4efd911"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-c7efb7d0fbfaa9273b4a199f2c7e800ea64d9b9431a91ab52046f3431ab2a2ff.json",
+      "bytes": 156317,
+      "sha256": "c7efb7d0fbfaa9273b4a199f2c7e800ea64d9b9431a91ab52046f3431ab2a2ff"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-db291addadbe714dbec849b5f7785be9d50a7a811d9d2a3beedc291f722277cd.json",
+      "bytes": 156317,
+      "sha256": "db291addadbe714dbec849b5f7785be9d50a7a811d9d2a3beedc291f722277cd"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-db8a2d5ecafe0ee629a416d0d93aef98230c7bdc8ddb2dc983630d45f19468ae.json",
+      "bytes": 156317,
+      "sha256": "db8a2d5ecafe0ee629a416d0d93aef98230c7bdc8ddb2dc983630d45f19468ae"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-dba952e2f53ac73e2760e9b88a822a7942831f9490b0816c465540e96c07eba1.json",
+      "bytes": 154436,
+      "sha256": "dba952e2f53ac73e2760e9b88a822a7942831f9490b0816c465540e96c07eba1"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-dbd6e3130c7f0af7335fda3a21a729c959944b3c48b7e092ee1197275d1e7e6b.json",
+      "bytes": 153980,
+      "sha256": "dbd6e3130c7f0af7335fda3a21a729c959944b3c48b7e092ee1197275d1e7e6b"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-edc28eac092d49431a58dfccdcde86a6e4d995eba34f28f5b55c0f1a7da16794.json",
+      "bytes": 152897,
+      "sha256": "edc28eac092d49431a58dfccdcde86a6e4d995eba34f28f5b55c0f1a7da16794"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ee13597a15a185a70ddb3f9c73a2cee5ea12e25c9827216c757adab0666b44de.json",
+      "bytes": 156431,
+      "sha256": "ee13597a15a185a70ddb3f9c73a2cee5ea12e25c9827216c757adab0666b44de"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ee16ddedc470de278bb446ffa759941103a5e2ef7e057fbb28d2b6a1906d135f.json",
+      "bytes": 155063,
+      "sha256": "ee16ddedc470de278bb446ffa759941103a5e2ef7e057fbb28d2b6a1906d135f"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ee513c5d517276b733c295a4dcd6c9071e69456a19420b23b022f436d45efcda.json",
+      "bytes": 154208,
+      "sha256": "ee513c5d517276b733c295a4dcd6c9071e69456a19420b23b022f436d45efcda"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/ui-supervisor-launch.lock",
+      "bytes": 23,
+      "sha256": "582728fcc60fc12fd7abcdaf58c67141dc65f2e824a859e4ec0c68c6587f124e"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/ui-supervisor.json",
+      "bytes": 224,
+      "sha256": "3ca237caaf440bc7c9f0fcbf8dc6afffd68607c3f4db6ff221eaa24794d110f0"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/ui/camera-after.json",
+      "bytes": 58,
+      "sha256": "f5f761338f9fa2a3fc708e4747ff445df0b43d4b82a5160eb719082ff5997180"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/ui/camera-before.json",
+      "bytes": 57,
+      "sha256": "770bb324de245d30438e86a9756a680c4c1431a8ccaa6b4bf20e1a2a2305c2f9"
+    }
+  ],
+  "failedAttempts": [],
+  "events": [
+    {
+      "event": 1,
+      "operation": "repository-public-metadata",
+      "path": "repository-metadata",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public",
+      "authenticated": true,
+      "accept": "application/vnd.github+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 8413,
+        "sha256": "0f06525a1645ede4772bc12a78665b1a63363828cd2ebef9c7e238de05777e71"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.522351,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 6963,
+        "sha256": "e6a9a05634f2ca8a8af1954286f7c4f50596628d9dc901f1bf7c597d26085bc5"
+      },
+      "safeResponseHeaders": {
+        "content-type": "application/json; charset=utf-8",
+        "x-github-request-id": "77A4:349E22:C32D55:146C8EC:6ADABEA5",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4998",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "repositoryMetadata": {
+        "full_name": "denghanjie/drone-swarm-aerodynamics-public",
+        "private": false,
+        "visibility": "public",
+        "html_url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public"
+      },
+      "passed": true
+    },
+    {
+      "event": 2,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-3cdfe1c16ff41d4c71f19be60513783d8292a4e5b271b974f25bcb6bd4398f5b.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 155576,
+      "sha256": "3cdfe1c16ff41d4c71f19be60513783d8292a4e5b271b974f25bcb6bd4398f5b"
+    },
+    {
+      "event": 3,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-3cf05b246bc9d7e58ce41b5905f1f5e647a05025ebb6994d56f8e0ca0dc15d1f.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 156317,
+      "sha256": "3cf05b246bc9d7e58ce41b5905f1f5e647a05025ebb6994d56f8e0ca0dc15d1f"
+    },
+    {
+      "event": 4,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-3cf05b246bc9d7e58ce41b5905f1f5e647a05025ebb6994d56f8e0ca0dc15d1f.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 156317,
+      "sha256": "3cf05b246bc9d7e58ce41b5905f1f5e647a05025ebb6994d56f8e0ca0dc15d1f"
+    },
+    {
+      "event": 5,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-3cdfe1c16ff41d4c71f19be60513783d8292a4e5b271b974f25bcb6bd4398f5b.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 155576,
+      "sha256": "3cdfe1c16ff41d4c71f19be60513783d8292a4e5b271b974f25bcb6bd4398f5b"
+    },
+    {
+      "event": 6,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-3cf05b246bc9d7e58ce41b5905f1f5e647a05025ebb6994d56f8e0ca0dc15d1f.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/results/semantic-3cf05b246bc9d7e58ce41b5905f1f5e647a05025ebb6994d56f8e0ca0dc15d1f.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 157792,
+        "sha256": "4c05e1ed9c4856bce55b9cdeaa81977b0c7e84f48c2caeb27a6b6e2fc5b00e1b"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.472143792,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 156317,
+        "sha256": "3cf05b246bc9d7e58ce41b5905f1f5e647a05025ebb6994d56f8e0ca0dc15d1f"
+      },
+      "safeResponseHeaders": {
+        "content-length": "156317",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "8B99:31E110:C4BDE4:148575F:6ADABEA6",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4997",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 7,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-3cdfe1c16ff41d4c71f19be60513783d8292a4e5b271b974f25bcb6bd4398f5b.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/results/semantic-3cdfe1c16ff41d4c71f19be60513783d8292a4e5b271b974f25bcb6bd4398f5b.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 157051,
+        "sha256": "ba77399c6cb838ee36932a7f18d05283034f3b7cb54ba4046eba3b87d26248dc"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.47075620900000004,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 155576,
+        "sha256": "3cdfe1c16ff41d4c71f19be60513783d8292a4e5b271b974f25bcb6bd4398f5b"
+      },
+      "safeResponseHeaders": {
+        "content-length": "155576",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "8CD6:1A5977:C1A921:1454D66:6ADABEA6",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4996",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 8,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-3cf3f0e1d816d145dfdb19e6f6b874e6f7bdc8c313838986ebd70098e1a16903.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 156317,
+      "sha256": "3cf3f0e1d816d145dfdb19e6f6b874e6f7bdc8c313838986ebd70098e1a16903"
+    },
+    {
+      "event": 9,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-3cf995abc4cc19986c415c98310f2f741e9821676c376bbd5517d96a70489cbd.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 156545,
+      "sha256": "3cf995abc4cc19986c415c98310f2f741e9821676c376bbd5517d96a70489cbd"
+    },
+    {
+      "event": 10,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-3cf3f0e1d816d145dfdb19e6f6b874e6f7bdc8c313838986ebd70098e1a16903.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 156317,
+      "sha256": "3cf3f0e1d816d145dfdb19e6f6b874e6f7bdc8c313838986ebd70098e1a16903"
+    },
+    {
+      "event": 11,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-3cf995abc4cc19986c415c98310f2f741e9821676c376bbd5517d96a70489cbd.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 156545,
+      "sha256": "3cf995abc4cc19986c415c98310f2f741e9821676c376bbd5517d96a70489cbd"
+    }
+  ],
+  "failureJournal": {
+    "file": "research/publication-receipts/m31-radial-integration-result-public-review-2026-10-23-recovery-v2-events.jsonl",
+    "bytes": 5978,
+    "sha256": "21aba234fdd02d29728fd713bb5ae87ded5b5028eefd92aed768fe8f011f3898"
+  },
+  "allAllocationsClosedAtStartAndEnd": true,
+  "allocationChecks": {
+    "start": {
+      "checkedAtUtc": "2026-10-23T01:55:49.465237+00:00",
+      "allClosed": true,
+      "phases": [
+        {
+          "phase": "producer",
+          "supervisor": {
+            "file": "research/m31-radial-integration-2026-10-23/producer-supervisor.json",
+            "bytes": 227,
+            "sha256": "8b2a8db1e61d05265c0cccf9af8662b19fe2e4af54a370b4c022ccef3a6456e7"
+          },
+          "internalClosure": {
+            "file": "research/m31-radial-integration-2026-10-23/results/exit.json",
+            "bytes": 112,
+            "sha256": "07d80be868c3191a6717bad97e20011873ba8e595c04cdba3472fab1d23fb960"
+          },
+          "closed": true
+        },
+        {
+          "phase": "audit",
+          "supervisor": {
+            "file": "research/m31-radial-integration-2026-10-23/audit-supervisor.json",
+            "bytes": 219,
+            "sha256": "06167b312205359920357bdbe721c6207f118b14247ee88da0cf5bb9baed2892"
+          },
+          "internalClosure": {
+            "file": "research/m31-radial-integration-2026-10-23/audit/exit.json",
+            "bytes": 57,
+            "sha256": "bd80502ee0fb3715f722ac1c4318e8581125cc17061d4e27b8d531d74fb41854"
+          },
+          "closed": true
+        },
+        {
+          "phase": "finalize",
+          "supervisor": {
+            "file": "research/m31-radial-integration-2026-10-23/finalize-supervisor.json",
+            "bytes": 218,
+            "sha256": "48b34afce1ac231416e450a39c13ddf66d7152f4c57b544ea43e7bd047e26dcc"
+          },
+          "internalClosure": {
+            "file": "research/m31-radial-integration-2026-10-23/finalize/exit.json",
+            "bytes": 80,
+            "sha256": "b430993650e7d48b93ad773468ed1a0c63077e0dc3f865af0a8809b308dcc5ff"
+          },
+          "closed": true
+        },
+        {
+          "phase": "ui",
+          "supervisor": {
+            "file": "research/m31-radial-integration-2026-10-23/ui-supervisor.json",
+            "bytes": 224,
+            "sha256": "3ca237caaf440bc7c9f0fcbf8dc6afffd68607c3f4db6ff221eaa24794d110f0"
+          },
+          "internalClosure": {
+            "file": "research/m31-radial-integration-2026-10-23/ui/qa.json",
+            "bytes": 487,
+            "sha256": "4808d1b9b3fc5d33e27243fa539a243107fe3c95299721ba4f5a7e8a394c358b"
+          },
+          "closed": true
+        }
+      ]
+    },
+    "end": {
+      "checkedAtUtc": "2026-10-23T01:55:50.526448+00:00",
+      "allClosed": true,
+      "phases": [
+        {
+          "phase": "producer",
+          "supervisor": {
+            "file": "research/m31-radial-integration-2026-10-23/producer-supervisor.json",
+            "bytes": 227,
+            "sha256": "8b2a8db1e61d05265c0cccf9af8662b19fe2e4af54a370b4c022ccef3a6456e7"
+          },
+          "internalClosure": {
+            "file": "research/m31-radial-integration-2026-10-23/results/exit.json",
+            "bytes": 112,
+            "sha256": "07d80be868c3191a6717bad97e20011873ba8e595c04cdba3472fab1d23fb960"
+          },
+          "closed": true
+        },
+        {
+          "phase": "audit",
+          "supervisor": {
+            "file": "research/m31-radial-integration-2026-10-23/audit-supervisor.json",
+            "bytes": 219,
+            "sha256": "06167b312205359920357bdbe721c6207f118b14247ee88da0cf5bb9baed2892"
+          },
+          "internalClosure": {
+            "file": "research/m31-radial-integration-2026-10-23/audit/exit.json",
+            "bytes": 57,
+            "sha256": "bd80502ee0fb3715f722ac1c4318e8581125cc17061d4e27b8d531d74fb41854"
+          },
+          "closed": true
+        },
+        {
+          "phase": "finalize",
+          "supervisor": {
+            "file": "research/m31-radial-integration-2026-10-23/finalize-supervisor.json",
+            "bytes": 218,
+            "sha256": "48b34afce1ac231416e450a39c13ddf66d7152f4c57b544ea43e7bd047e26dcc"
+          },
+          "internalClosure": {
+            "file": "research/m31-radial-integration-2026-10-23/finalize/exit.json",
+            "bytes": 80,
+            "sha256": "b430993650e7d48b93ad773468ed1a0c63077e0dc3f865af0a8809b308dcc5ff"
+          },
+          "closed": true
+        },
+        {
+          "phase": "ui",
+          "supervisor": {
+            "file": "research/m31-radial-integration-2026-10-23/ui-supervisor.json",
+            "bytes": 224,
+            "sha256": "3ca237caaf440bc7c9f0fcbf8dc6afffd68607c3f4db6ff221eaa24794d110f0"
+          },
+          "internalClosure": {
+            "file": "research/m31-radial-integration-2026-10-23/ui/qa.json",
+            "bytes": 487,
+            "sha256": "4808d1b9b3fc5d33e27243fa539a243107fe3c95299721ba4f5a7e8a394c358b"
+          },
+          "closed": true
+        }
+      ]
+    }
+  },
+  "sourceChecks": {
+    "sourcePinCount": 29,
+    "start": [
+      {
+        "path": "outputs/step02b-source/vendor/OrbitControls.js",
+        "bytes": 38703,
+        "sha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c"
+      },
+      {
+        "path": "outputs/step02b-source/vendor/three.core.js",
+        "bytes": 1403455,
+        "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+      },
+      {
+        "path": "outputs/step02b-source/vendor/three.module.js",
+        "bytes": 603113,
+        "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/CLAIMS.md",
+        "bytes": 1505,
+        "sha256": "e5a64fc7c236b984ed3294568ef2a03c240c016915695432bd2d5f6675588fdd"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/LITERATURE.md",
+        "bytes": 2095,
+        "sha256": "81eaf547215f93e2c94e16f29b7cff5c0910ff17d2f08977a5389ba2d60fa364"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/PRIVACY-SOURCE.json",
+        "bytes": 265,
+        "sha256": "26535e275dea175561ee74fe62a6a9b863a016f8381b3f8a33a6f57f509a7229"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/PRIVACY.md",
+        "bytes": 822,
+        "sha256": "bfdf0472d1e7f7dffe86b95abefcf973dcbe7096f788829dbfd571632bc472cd"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/PROTOCOL.md",
+        "bytes": 7097,
+        "sha256": "ff1396b8c056140a75d275252fb2e181382b27bcbb021b00ff40f713ee8a022b"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/RESTART.md",
+        "bytes": 1188,
+        "sha256": "fd93458cb4809b400750496a11b1736fb3a554a0d28fc941245a8e9df23729e6"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/SCHEMA.md",
+        "bytes": 6355,
+        "sha256": "d96c953fbc2ab793cc7e05b6498791587ffda87429ec56ccb0d22eb5190d5e27"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/SOURCE-CHANGES.md",
+        "bytes": 2402,
+        "sha256": "04de28fb29def520bb436e8ace689c4d76fd4a27fcac9d48aed11db58487e717"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/config.json",
+        "bytes": 1833,
+        "sha256": "fac7c77a199514db6521864ea8eff718ed58a160587ac78f67223e9aff349da2"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/input-pins.json",
+        "bytes": 14566,
+        "sha256": "b126e19c660b9f171a0ccbd0789391ae8fbc45abb44f6dcc406c7f6ff2f48cb0"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/review/AUDIT-DESIGN.md",
+        "bytes": 16480,
+        "sha256": "0225575a0683cf19e3c63780e58496795395887809eb64e0d71a5a0f7e6ce020"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/review/PROTOCOL-REVIEW.md",
+        "bytes": 15071,
+        "sha256": "220db404a4d88cf235f9ffd52866220f04e37349f57864538a58885c126c702d"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/runtime.json",
+        "bytes": 855,
+        "sha256": "66de2ba49b9465c74de0a3a9da4a9aca19f30005cdccd78d3307f5ea41b3d035"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/audit.py",
+        "bytes": 69713,
+        "sha256": "a349b5e5a9c640fc8c5d6111377f47d2801e07f95e6a88039bc54a13fb36f56a"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/candidate-cache.cjs",
+        "bytes": 6909,
+        "sha256": "b4e4a63d359e1e326edf834501ffb4db3780db62c1c1c9fc4a1a708933a0b146"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/candidate-kernel.cjs",
+        "bytes": 17265,
+        "sha256": "4fea99f4e61bff3c5eb54a0090e50b48e41d4cdf7cff5cdc770a37366f321b19"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/candidate.cjs",
+        "bytes": 16381,
+        "sha256": "2e11acb60ad7ab447bc137e6ade56c24ef2b383444db7d46643648bd83cd807b"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/common.cjs",
+        "bytes": 2413,
+        "sha256": "1b0dd668be9065422b7d852347ac3f8c7bb07ca0686c3ab3c7a9f5070e221019"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/common.py",
+        "bytes": 4258,
+        "sha256": "54da09f029d5c62f4a9fd042adc42f5372ccb9164c6a7ee1bf771ebf1af643ed"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/finalize.py",
+        "bytes": 1563,
+        "sha256": "34bb732308060791d1946d066019fce56ae99e4e09b89233c0e9ec3a70057273"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/launch.py",
+        "bytes": 888,
+        "sha256": "394a1447fb3e571e19110e31d8ddb59806eeab80d836b2b53e780472fc9a41ce"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/run.cjs",
+        "bytes": 8361,
+        "sha256": "92f92f3b699f209000e9456bca77e9517f2f0aa5db4519c11c61f3ffc7ce6622"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/supervise.py",
+        "bytes": 3072,
+        "sha256": "99fe23d838f894018a924566716c61ba6c41c2aa08c54392e1119474f93f1190"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/ui.cjs",
+        "bytes": 10274,
+        "sha256": "9c049078dd5f672ac5cdc73824b037ecbed1ad66ed4d2ca9472d92a3da5d75a5"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/viewer/app.js",
+        "bytes": 8202,
+        "sha256": "1829c19fb04092bdb7140f00f9a13b6da151dbaf6745b6ff3840fd965f6ab137"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/viewer/index.html",
+        "bytes": 5322,
+        "sha256": "cd1e06feefc67ecbb537aac801b5df37d2d7321d8630e5cc166f4f17a7319d98"
+      }
+    ],
+    "end": [
+      {
+        "path": "outputs/step02b-source/vendor/OrbitControls.js",
+        "bytes": 38703,
+        "sha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c"
+      },
+      {
+        "path": "outputs/step02b-source/vendor/three.core.js",
+        "bytes": 1403455,
+        "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+      },
+      {
+        "path": "outputs/step02b-source/vendor/three.module.js",
+        "bytes": 603113,
+        "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/CLAIMS.md",
+        "bytes": 1505,
+        "sha256": "e5a64fc7c236b984ed3294568ef2a03c240c016915695432bd2d5f6675588fdd"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/LITERATURE.md",
+        "bytes": 2095,
+        "sha256": "81eaf547215f93e2c94e16f29b7cff5c0910ff17d2f08977a5389ba2d60fa364"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/PRIVACY-SOURCE.json",
+        "bytes": 265,
+        "sha256": "26535e275dea175561ee74fe62a6a9b863a016f8381b3f8a33a6f57f509a7229"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/PRIVACY.md",
+        "bytes": 822,
+        "sha256": "bfdf0472d1e7f7dffe86b95abefcf973dcbe7096f788829dbfd571632bc472cd"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/PROTOCOL.md",
+        "bytes": 7097,
+        "sha256": "ff1396b8c056140a75d275252fb2e181382b27bcbb021b00ff40f713ee8a022b"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/RESTART.md",
+        "bytes": 1188,
+        "sha256": "fd93458cb4809b400750496a11b1736fb3a554a0d28fc941245a8e9df23729e6"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/SCHEMA.md",
+        "bytes": 6355,
+        "sha256": "d96c953fbc2ab793cc7e05b6498791587ffda87429ec56ccb0d22eb5190d5e27"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/SOURCE-CHANGES.md",
+        "bytes": 2402,
+        "sha256": "04de28fb29def520bb436e8ace689c4d76fd4a27fcac9d48aed11db58487e717"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/config.json",
+        "bytes": 1833,
+        "sha256": "fac7c77a199514db6521864ea8eff718ed58a160587ac78f67223e9aff349da2"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/input-pins.json",
+        "bytes": 14566,
+        "sha256": "b126e19c660b9f171a0ccbd0789391ae8fbc45abb44f6dcc406c7f6ff2f48cb0"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/review/AUDIT-DESIGN.md",
+        "bytes": 16480,
+        "sha256": "0225575a0683cf19e3c63780e58496795395887809eb64e0d71a5a0f7e6ce020"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/review/PROTOCOL-REVIEW.md",
+        "bytes": 15071,
+        "sha256": "220db404a4d88cf235f9ffd52866220f04e37349f57864538a58885c126c702d"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/runtime.json",
+        "bytes": 855,
+        "sha256": "66de2ba49b9465c74de0a3a9da4a9aca19f30005cdccd78d3307f5ea41b3d035"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/audit.py",
+        "bytes": 69713,
+        "sha256": "a349b5e5a9c640fc8c5d6111377f47d2801e07f95e6a88039bc54a13fb36f56a"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/candidate-cache.cjs",
+        "bytes": 6909,
+        "sha256": "b4e4a63d359e1e326edf834501ffb4db3780db62c1c1c9fc4a1a708933a0b146"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/candidate-kernel.cjs",
+        "bytes": 17265,
+        "sha256": "4fea99f4e61bff3c5eb54a0090e50b48e41d4cdf7cff5cdc770a37366f321b19"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/candidate.cjs",
+        "bytes": 16381,
+        "sha256": "2e11acb60ad7ab447bc137e6ade56c24ef2b383444db7d46643648bd83cd807b"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/common.cjs",
+        "bytes": 2413,
+        "sha256": "1b0dd668be9065422b7d852347ac3f8c7bb07ca0686c3ab3c7a9f5070e221019"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/common.py",
+        "bytes": 4258,
+        "sha256": "54da09f029d5c62f4a9fd042adc42f5372ccb9164c6a7ee1bf771ebf1af643ed"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/finalize.py",
+        "bytes": 1563,
+        "sha256": "34bb732308060791d1946d066019fce56ae99e4e09b89233c0e9ec3a70057273"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/launch.py",
+        "bytes": 888,
+        "sha256": "394a1447fb3e571e19110e31d8ddb59806eeab80d836b2b53e780472fc9a41ce"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/run.cjs",
+        "bytes": 8361,
+        "sha256": "92f92f3b699f209000e9456bca77e9517f2f0aa5db4519c11c61f3ffc7ce6622"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/supervise.py",
+        "bytes": 3072,
+        "sha256": "99fe23d838f894018a924566716c61ba6c41c2aa08c54392e1119474f93f1190"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/ui.cjs",
+        "bytes": 10274,
+        "sha256": "9c049078dd5f672ac5cdc73824b037ecbed1ad66ed4d2ca9472d92a3da5d75a5"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/viewer/app.js",
+        "bytes": 8202,
+        "sha256": "1829c19fb04092bdb7140f00f9a13b6da151dbaf6745b6ff3840fd965f6ab137"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/viewer/index.html",
+        "bytes": 5322,
+        "sha256": "cd1e06feefc67ecbb537aac801b5df37d2d7321d8630e5cc166f4f17a7319d98"
+      }
+    ],
+    "sourceBytesUnchanged": true
+  },
+  "priorRecordsAndManifestPreserved": true,
+  "error": {
+    "errorType": "RuntimeError",
+    "detail": "recovery-file-failures:[{\"errorType\": \"KeyError\", \"detail\": \"'event'\"}, {\"errorType\": \"KeyError\", \"detail\": \"'event'\"}, {\"errorType\": \"BoundFailure\", \"detail\": \"recovery-stopped\"}, {\"errorType\": \"BoundFailure\", \"detail\": \"recovery-stopped\"}, {\"errorType\": \"BoundFailure\", \"detail\": \"recovery-stopped\"}, {\"errorType\": \"BoundFailure\", \"detail\": \"recovery-stopped\"}, {\"errorType\": \"BoundFailure\", \"detail\": \"recovery-stopped\"}, {\"errorType\": \"BoundFailure\", \"detail\": \"recovery-stopped\"}, {\"errorType\": \"BoundFailure\", \"detail\": \"recovery-stopped\"}, {\"errorType\": \"BoundFailure\", \"detail\": \"recovery-stopped\"}, {\"errorType\": \"BoundFailure\", \"detail\": \"recovery-stopped\"}, {\"errorType\": \"BoundFailure\", \"detail\": \"recovery-stopped\"}, {\"errorType\": \"BoundFailure\", \"detail\": \"recovery-stopped\"}, {\"errorType\": \"BoundFailure\", \"detail\": \"recovery-stopped\"}, {\"errorType\": \"BoundFailure\", \"detail\": \"recovery-stopped\"}, {\"errorType\": \"BoundFailure\", \"detail\": \"recovery-stopped\"}, {\"errorType\": \"BoundFailure\", \"detail\": \"recovery-stopped\"}, {\"errorType\": \"BoundFailure\", \"detail\": \"recovery-stopped\"}, {\"errorType\": \"BoundFailure\", \"detail\": \"recovery-stopped\"}, {\"errorType\": \"BoundFailure\", \"detail\": \"recovery-stopped\"}, {\"errorType\": \"BoundFailure\", \"detail\": \"recovery-stopped\"}, {\"errorType\": \"BoundFailure\", \"detail\": \"recovery-stopped\"}, {\"errorType\": \"BoundFailure\", \"detail\": \"recovery-stopped\"}, {\"errorType\": \"BoundFailure\", \"detail\": \"recovery-stopped\"}, {\"errorType\": \"BoundFailure\", \"detail\": \"recovery-stopped\"}, {\"errorType\": \"BoundFailure\", \"detail\": \"recovery-stopped\"}, {\"errorType\": \"BoundFailure\", \"detail\": \"recovery-stopped\"}, {\"errorType\": \"BoundFailure\", \"detail\": \"recovery-stopped\"}, {\"errorType\": \"BoundFailure\", \"detail\": \"recovery-stopped\"}, {\"errorType\": \"BoundFailure\", \"detail\": \"recovery-stopped\"}, {\"errorType\": \"BoundFailure\", \"detail\": \"recovery-stopped\"}, {\"errorType\": \"BoundFailure\", \"detail\": \"recovery-stopped\"}, {\"errorType\": \"BoundFailure\", \"detail\": \"recovery-stopped\"}, {\"errorType\": \"BoundFailure\", \"detail\": \"recovery-stopped\"}, {\"errorType\": \"BoundFailure\", \"detail\": \"recovery-stopped\"}, {\"errorType\": \"BoundFailure\", \"detail\": \"recovery-stopped\"}, {\"errorType\": \"BoundFailure\", \"detail\": \"recovery-stopped\"}, {\"errorType\": \"BoundFailure\", \"detail\": \"recovery-stopped\"}, {\"errorType\": \"BoundFailure\", \"detail\": \"recovery-stopped\"}, {\"errorType\": \"BoundFailure\", \"detail\": \"recovery-stopped\"}]"
+  },
+  "allocationLaunched": false,
+  "diagnosticCalculated": false,
+  "nativeQueries": 0,
+  "auditExecuted": false,
+  "uiLaunched": false,
+  "archiveDecompressed": false,
+  "savedStateReaggregated": false,
+  "rawEvidenceTreatedAsOpaqueBytes": true,
+  "verificationScope": "Publication byte identity, repository public visibility and administrative closure only. No scientific calculation or allocation."
+}

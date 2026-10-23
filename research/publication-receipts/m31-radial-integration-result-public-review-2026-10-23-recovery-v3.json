@@ -1,0 +1,3307 @@
+{
+  "schema": "m31-radial-integration-public-transport-recovery-v3",
+  "passed": true,
+  "acquisitionClosed": true,
+  "checkedAtUtc": "2026-10-23T01:59:08.258388+00:00",
+  "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+  "manifest": {
+    "file": "research/m31-radial-integration-2026-10-23/result-manifest.json",
+    "bytes": 537067,
+    "sha256": "7b0871190878f7d034677beb0f23b9f995871dbdda3fdee0935cf80cb8bc2b34"
+  },
+  "protocols": [
+    {
+      "file": "research/publication-receipts/m31-radial-integration-result-public-review-2026-10-23-recovery-v3-protocol.json",
+      "bytes": 23781,
+      "sha256": "ade4e9297439f45006aa25734523d1919267612bbda087d6ba3b64e6525e359b"
+    },
+    {
+      "file": "research/publication-receipts/m31-radial-integration-result-public-review-2026-10-23-recovery-v3-protocol.md",
+      "bytes": 9791,
+      "sha256": "f845542b39b1f957964b7dc4ba41779b64d02c0deb39d866354424d1257db696"
+    }
+  ],
+  "incompleteReceipt": {
+    "file": "research/publication-receipts/m31-radial-integration-result-public-review-2026-10-23-incomplete.json",
+    "bytes": 18924,
+    "sha256": "a5b7da05b47bd6f12473208aa5e58b8e77e0be1d0bc00a0510bf96dc890a4002"
+  },
+  "originalFailureReceipt": {
+    "file": "research/publication-receipts/m31-radial-integration-result-public-review-2026-10-23-failure.json",
+    "bytes": 3968875,
+    "sha256": "9a59bf5d8e38b0c060b0f4cf623ffc9a769f5085745c49c82d8fd673915292e0"
+  },
+  "priorRecovery": {
+    "receipt": {
+      "file": "research/publication-receipts/m31-radial-integration-result-public-review-2026-10-23-recovery-v2.json",
+      "bytes": 53562,
+      "sha256": "8d9460b59598952d9f73bd714021489c7d564edba5402cf78853d6b3a5a41ed5"
+    },
+    "events": {
+      "file": "research/publication-receipts/m31-radial-integration-result-public-review-2026-10-23-recovery-v2-events.jsonl",
+      "bytes": 5978,
+      "sha256": "21aba234fdd02d29728fd713bb5ae87ded5b5028eefd92aed768fe8f011f3898"
+    },
+    "clarification": {
+      "file": "research/publication-receipts/m31-radial-integration-result-public-review-2026-10-23-recovery-v2-closure.json",
+      "bytes": 13058,
+      "sha256": "8ab89f1993b653cdec24b52190494a67aee191f22569c517e336101a6dea3e4e"
+    },
+    "protocolJson": {
+      "file": "research/publication-receipts/m31-radial-integration-result-public-review-2026-10-23-recovery-v2-protocol.json",
+      "bytes": 15708,
+      "sha256": "ed7c52e4633731d534a770c8da18339e060fe9f7d3916bea6841d748f972c975"
+    },
+    "protocolMarkdown": {
+      "file": "research/publication-receipts/m31-radial-integration-result-public-review-2026-10-23-recovery-v2-protocol.md",
+      "bytes": 10609,
+      "sha256": "e1deb18cc6d95e754e908b6af986b34203ba61f44f939af112f68ead63deb31e"
+    },
+    "scriptIdentity": {
+      "name": "m31-radial-integration-result-public-recovery-v2-20261023.py",
+      "bytes": 16049,
+      "sha256": "459c9ee94ae4ddac30c6b076aae8e8fa3c3ad16dbc73c721cf1277a5108cd38c"
+    },
+    "outcome": "Closed failed due to administrative event-number bookkeeping error after public metadata and two valid file proofs.",
+    "preservedUnmodified": true
+  },
+  "reusedPublicMetadata": {
+    "journal": {
+      "file": "research/publication-receipts/m31-radial-integration-result-public-review-2026-10-23-recovery-v2-events.jsonl",
+      "bytes": 5978,
+      "sha256": "21aba234fdd02d29728fd713bb5ae87ded5b5028eefd92aed768fe8f011f3898"
+    },
+    "closure": {
+      "file": "research/publication-receipts/m31-radial-integration-result-public-review-2026-10-23-recovery-v2-closure.json",
+      "bytes": 13058,
+      "sha256": "8ab89f1993b653cdec24b52190494a67aee191f22569c517e336101a6dea3e4e"
+    },
+    "originalEvent": {
+      "event": 1,
+      "operation": "repository-public-metadata",
+      "path": "repository-metadata",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public",
+      "authenticated": true,
+      "accept": "application/vnd.github+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 8413,
+        "sha256": "0f06525a1645ede4772bc12a78665b1a63363828cd2ebef9c7e238de05777e71"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.522351,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 6963,
+        "sha256": "e6a9a05634f2ca8a8af1954286f7c4f50596628d9dc901f1bf7c597d26085bc5"
+      },
+      "safeResponseHeaders": {
+        "content-type": "application/json; charset=utf-8",
+        "x-github-request-id": "77A4:349E22:C32D55:146C8EC:6ADABEA5",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4998",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "repositoryMetadata": {
+        "full_name": "denghanjie/drone-swarm-aerodynamics-public",
+        "private": false,
+        "visibility": "public",
+        "html_url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public"
+      },
+      "passed": true
+    },
+    "freshNetworkReadInV3": false
+  },
+  "reusedV2FileProofs": [
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-3cf05b246bc9d7e58ce41b5905f1f5e647a05025ebb6994d56f8e0ca0dc15d1f.json",
+        "bytes": 156317,
+        "sha256": "3cf05b246bc9d7e58ce41b5905f1f5e647a05025ebb6994d56f8e0ca0dc15d1f"
+      },
+      "originalPublicEvent": {
+        "event": 6,
+        "operation": "public-contents-api",
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-3cf05b246bc9d7e58ce41b5905f1f5e647a05025ebb6994d56f8e0ca0dc15d1f.json",
+        "attempt": 1,
+        "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/results/semantic-3cf05b246bc9d7e58ce41b5905f1f5e647a05025ebb6994d56f8e0ca0dc15d1f.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+        "authenticated": true,
+        "accept": "application/vnd.github.raw+json",
+        "returncode": 0,
+        "capturedStdout": {
+          "bytes": 157792,
+          "sha256": "4c05e1ed9c4856bce55b9cdeaa81977b0c7e84f48c2caeb27a6b6e2fc5b00e1b"
+        },
+        "capturedStderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "wallSeconds": 0.472143792,
+        "httpStatus": 200,
+        "responseBody": {
+          "bytes": 156317,
+          "sha256": "3cf05b246bc9d7e58ce41b5905f1f5e647a05025ebb6994d56f8e0ca0dc15d1f"
+        },
+        "safeResponseHeaders": {
+          "content-length": "156317",
+          "content-type": "application/vnd.github.raw+json; charset=utf-8",
+          "x-github-request-id": "8B99:31E110:C4BDE4:148575F:6ADABEA6",
+          "x-ratelimit-limit": "5000",
+          "x-ratelimit-remaining": "4997",
+          "x-ratelimit-reset": "1792723446"
+        },
+        "passed": true
+      },
+      "originalLocalEvent": {
+        "event": 3,
+        "operation": "local",
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-3cf05b246bc9d7e58ce41b5905f1f5e647a05025ebb6994d56f8e0ca0dc15d1f.json",
+        "attempt": 1,
+        "passed": true,
+        "bytes": 156317,
+        "sha256": "3cf05b246bc9d7e58ce41b5905f1f5e647a05025ebb6994d56f8e0ca0dc15d1f"
+      },
+      "originalResultGitEvent": {
+        "event": 4,
+        "operation": "result-commit",
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-3cf05b246bc9d7e58ce41b5905f1f5e647a05025ebb6994d56f8e0ca0dc15d1f.json",
+        "attempt": 1,
+        "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+        "passed": true,
+        "bytes": 156317,
+        "sha256": "3cf05b246bc9d7e58ce41b5905f1f5e647a05025ebb6994d56f8e0ca0dc15d1f"
+      }
+    },
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-3cdfe1c16ff41d4c71f19be60513783d8292a4e5b271b974f25bcb6bd4398f5b.json",
+        "bytes": 155576,
+        "sha256": "3cdfe1c16ff41d4c71f19be60513783d8292a4e5b271b974f25bcb6bd4398f5b"
+      },
+      "originalPublicEvent": {
+        "event": 7,
+        "operation": "public-contents-api",
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-3cdfe1c16ff41d4c71f19be60513783d8292a4e5b271b974f25bcb6bd4398f5b.json",
+        "attempt": 1,
+        "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/results/semantic-3cdfe1c16ff41d4c71f19be60513783d8292a4e5b271b974f25bcb6bd4398f5b.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+        "authenticated": true,
+        "accept": "application/vnd.github.raw+json",
+        "returncode": 0,
+        "capturedStdout": {
+          "bytes": 157051,
+          "sha256": "ba77399c6cb838ee36932a7f18d05283034f3b7cb54ba4046eba3b87d26248dc"
+        },
+        "capturedStderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "wallSeconds": 0.47075620900000004,
+        "httpStatus": 200,
+        "responseBody": {
+          "bytes": 155576,
+          "sha256": "3cdfe1c16ff41d4c71f19be60513783d8292a4e5b271b974f25bcb6bd4398f5b"
+        },
+        "safeResponseHeaders": {
+          "content-length": "155576",
+          "content-type": "application/vnd.github.raw+json; charset=utf-8",
+          "x-github-request-id": "8CD6:1A5977:C1A921:1454D66:6ADABEA6",
+          "x-ratelimit-limit": "5000",
+          "x-ratelimit-remaining": "4996",
+          "x-ratelimit-reset": "1792723446"
+        },
+        "passed": true
+      },
+      "originalLocalEvent": {
+        "event": 2,
+        "operation": "local",
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-3cdfe1c16ff41d4c71f19be60513783d8292a4e5b271b974f25bcb6bd4398f5b.json",
+        "attempt": 1,
+        "passed": true,
+        "bytes": 155576,
+        "sha256": "3cdfe1c16ff41d4c71f19be60513783d8292a4e5b271b974f25bcb6bd4398f5b"
+      },
+      "originalResultGitEvent": {
+        "event": 5,
+        "operation": "result-commit",
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-3cdfe1c16ff41d4c71f19be60513783d8292a4e5b271b974f25bcb6bd4398f5b.json",
+        "attempt": 1,
+        "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+        "passed": true,
+        "bytes": 155576,
+        "sha256": "3cdfe1c16ff41d4c71f19be60513783d8292a4e5b271b974f25bcb6bd4398f5b"
+      }
+    }
+  ],
+  "executionPermission": {
+    "requiredSandboxPermissions": "require_escalated",
+    "justification": "Verify the already-authorized public research checkpoint through GitHub API after the prior default-sandbox transport failure",
+    "onAutoReviewRejection": "Stop and report; never bypass rejection."
+  },
+  "originalAcquisitionPassed": false,
+  "originalFailedAttemptsPreserved": 160,
+  "repositoryMetadata": {
+    "event": 1,
+    "operation": "repository-public-metadata",
+    "path": "repository-metadata",
+    "attempt": 1,
+    "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public",
+    "authenticated": true,
+    "accept": "application/vnd.github+json",
+    "returncode": 0,
+    "capturedStdout": {
+      "bytes": 8413,
+      "sha256": "0f06525a1645ede4772bc12a78665b1a63363828cd2ebef9c7e238de05777e71"
+    },
+    "capturedStderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "wallSeconds": 0.522351,
+    "httpStatus": 200,
+    "responseBody": {
+      "bytes": 6963,
+      "sha256": "e6a9a05634f2ca8a8af1954286f7c4f50596628d9dc901f1bf7c597d26085bc5"
+    },
+    "safeResponseHeaders": {
+      "content-type": "application/json; charset=utf-8",
+      "x-github-request-id": "77A4:349E22:C32D55:146C8EC:6ADABEA5",
+      "x-ratelimit-limit": "5000",
+      "x-ratelimit-remaining": "4998",
+      "x-ratelimit-reset": "1792723446"
+    },
+    "repositoryMetadata": {
+      "full_name": "denghanjie/drone-swarm-aerodynamics-public",
+      "private": false,
+      "visibility": "public",
+      "html_url": "https://github.com/denghanjie/drone-swarm-aerodynamics-public"
+    },
+    "passed": true
+  },
+  "authentication": "Existing gh authenticated API access to the publicly visible repository. No credentials or authorization headers saved or printed. This is not unauthenticated raw-CDN evidence.",
+  "bounds": {
+    "maxConcurrentTransfers": 2,
+    "maxAttemptsPerIdentityIncludingMetadata": 2,
+    "maxSecondsPerAttempt": 45,
+    "maxTotalSeconds": 900,
+    "maxAggregateCapturedBytes": 67108864,
+    "aggregateByteAccounting": "All stdout and stderr bytes captured from every local gh subprocess attempt, including headers, metadata, successful and failed responses.",
+    "stopOnBoundFailure": true,
+    "noNewPathOrFourthOriginalAttempt": true,
+    "freshMetadataNetworkReads": 0,
+    "maxAttemptsPerFile": 2
+  },
+  "aggregateCapturedBytes": 5312831,
+  "aggregateCapturedByteCap": 67108864,
+  "wallSeconds": 9.541927042,
+  "expectedFiles": [
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-3cf3f0e1d816d145dfdb19e6f6b874e6f7bdc8c313838986ebd70098e1a16903.json",
+      "bytes": 156317,
+      "sha256": "3cf3f0e1d816d145dfdb19e6f6b874e6f7bdc8c313838986ebd70098e1a16903"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-3cf995abc4cc19986c415c98310f2f741e9821676c376bbd5517d96a70489cbd.json",
+      "bytes": 156545,
+      "sha256": "3cf995abc4cc19986c415c98310f2f741e9821676c376bbd5517d96a70489cbd"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-4fe280266b3f394c41d7feef1a0fd5a113d105954ce0d6d8bf612946cbf70c3e.json",
+      "bytes": 156545,
+      "sha256": "4fe280266b3f394c41d7feef1a0fd5a113d105954ce0d6d8bf612946cbf70c3e"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-4ff1d6b7b155e7ed9995e047b91f245e6073ed08860a311bf045141b710a1986.json",
+      "bytes": 154208,
+      "sha256": "4ff1d6b7b155e7ed9995e047b91f245e6073ed08860a311bf045141b710a1986"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-5012e84ed86e7b67861eb46c0c6d5fcf88175207e93a5f7725c2b8318a9fc8dd.json",
+      "bytes": 154721,
+      "sha256": "5012e84ed86e7b67861eb46c0c6d5fcf88175207e93a5f7725c2b8318a9fc8dd"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-501f868bd28a7842be09bf1d61fc34cc9322e92da94719ff27120895b29a2553.json",
+      "bytes": 152099,
+      "sha256": "501f868bd28a7842be09bf1d61fc34cc9322e92da94719ff27120895b29a2553"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-65bf86dfc270f7f189d9a3c31ec96eade7f3fb1869c4f944c28f3428d1cb202d.json",
+      "bytes": 154607,
+      "sha256": "65bf86dfc270f7f189d9a3c31ec96eade7f3fb1869c4f944c28f3428d1cb202d"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-65c524c8a83de7269040f0d4c44d97c473885abd582a50628817f785728a4ce2.json",
+      "bytes": 152384,
+      "sha256": "65c524c8a83de7269040f0d4c44d97c473885abd582a50628817f785728a4ce2"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-6631b353f84ed30472753d2e20dae136b61db7d304cc8dadfc6df2cc72aadc9d.json",
+      "bytes": 153068,
+      "sha256": "6631b353f84ed30472753d2e20dae136b61db7d304cc8dadfc6df2cc72aadc9d"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-66530c427e0a72beb3762585c9ad461bf5ae4a6967e18668a6f8221a6159639c.json",
+      "bytes": 156431,
+      "sha256": "66530c427e0a72beb3762585c9ad461bf5ae4a6967e18668a6f8221a6159639c"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-7c49d6c2c9d3f3962fc03817b836426ba5644f15607c8f863d72581447eb4fb7.json",
+      "bytes": 153923,
+      "sha256": "7c49d6c2c9d3f3962fc03817b836426ba5644f15607c8f863d72581447eb4fb7"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-7c4dc57f82f10b52512ed3cac73a171cc7eaa847470c6cff9a5db683a445e8a4.json",
+      "bytes": 156431,
+      "sha256": "7c4dc57f82f10b52512ed3cac73a171cc7eaa847470c6cff9a5db683a445e8a4"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-7c50c74123bf49dfc0060000289a34fa7de07d9737c62e8781f93c6b7bb7faf2.json",
+      "bytes": 153353,
+      "sha256": "7c50c74123bf49dfc0060000289a34fa7de07d9737c62e8781f93c6b7bb7faf2"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-7c68c6fbda18ea63e8c7332077f8366f2dc9cf65e1ac83bb326963fbabcd7ebd.json",
+      "bytes": 152612,
+      "sha256": "7c68c6fbda18ea63e8c7332077f8366f2dc9cf65e1ac83bb326963fbabcd7ebd"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-93d8f968b36ac8c157c517893b9b1b82ec65ca1d73e137ad45e730ace80913a3.json",
+      "bytes": 152954,
+      "sha256": "93d8f968b36ac8c157c517893b9b1b82ec65ca1d73e137ad45e730ace80913a3"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-93e875b12f427ecf2f71c4813eb5156e371a35b1d050028c11cde0291e171f93.json",
+      "bytes": 152897,
+      "sha256": "93e875b12f427ecf2f71c4813eb5156e371a35b1d050028c11cde0291e171f93"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-9438c18fcbc5fb92274d17bfcf3c4b155085bbafef32346b40c6469476dfbd53.json",
+      "bytes": 156431,
+      "sha256": "9438c18fcbc5fb92274d17bfcf3c4b155085bbafef32346b40c6469476dfbd53"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-94833cf69d05c95b1ec0ec1343ded9c036b579343eaa7e976b1b2f1bbb8ffe74.json",
+      "bytes": 153011,
+      "sha256": "94833cf69d05c95b1ec0ec1343ded9c036b579343eaa7e976b1b2f1bbb8ffe74"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ae1be83d601b02d35c24d03fd017d57733da2f1dbc18586237a7b46570b4b068.json",
+      "bytes": 154550,
+      "sha256": "ae1be83d601b02d35c24d03fd017d57733da2f1dbc18586237a7b46570b4b068"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ae2760524fb239c3341e72bdce74e96a976876d8a8ba573604dd54b07e830235.json",
+      "bytes": 154664,
+      "sha256": "ae2760524fb239c3341e72bdce74e96a976876d8a8ba573604dd54b07e830235"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ae342b630998ec45bc639165181fcab4effd0decdb1a22ea00a1bcf73fa9faca.json",
+      "bytes": 152555,
+      "sha256": "ae342b630998ec45bc639165181fcab4effd0decdb1a22ea00a1bcf73fa9faca"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ae54bf178a84eac4cd3f4986fe3a036673b65701a2fa7fda0c57b94eff60352b.json",
+      "bytes": 153695,
+      "sha256": "ae54bf178a84eac4cd3f4986fe3a036673b65701a2fa7fda0c57b94eff60352b"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-c768b3a0bed2e6a3197c5bd3bbdda6bb078de2f8722bc633c2a8e037fca086c4.json",
+      "bytes": 156431,
+      "sha256": "c768b3a0bed2e6a3197c5bd3bbdda6bb078de2f8722bc633c2a8e037fca086c4"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-c76e4f4f5856c85af2369cd66870454176f6e8e6b138b92b4356389266bce45e.json",
+      "bytes": 156374,
+      "sha256": "c76e4f4f5856c85af2369cd66870454176f6e8e6b138b92b4356389266bce45e"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-c76f733a8c42a48d0eb7e25a9f1ae2c2c2cae19c7a8a5362a0f69f10c4efd911.json",
+      "bytes": 153638,
+      "sha256": "c76f733a8c42a48d0eb7e25a9f1ae2c2c2cae19c7a8a5362a0f69f10c4efd911"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-c7efb7d0fbfaa9273b4a199f2c7e800ea64d9b9431a91ab52046f3431ab2a2ff.json",
+      "bytes": 156317,
+      "sha256": "c7efb7d0fbfaa9273b4a199f2c7e800ea64d9b9431a91ab52046f3431ab2a2ff"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-db291addadbe714dbec849b5f7785be9d50a7a811d9d2a3beedc291f722277cd.json",
+      "bytes": 156317,
+      "sha256": "db291addadbe714dbec849b5f7785be9d50a7a811d9d2a3beedc291f722277cd"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-db8a2d5ecafe0ee629a416d0d93aef98230c7bdc8ddb2dc983630d45f19468ae.json",
+      "bytes": 156317,
+      "sha256": "db8a2d5ecafe0ee629a416d0d93aef98230c7bdc8ddb2dc983630d45f19468ae"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-dba952e2f53ac73e2760e9b88a822a7942831f9490b0816c465540e96c07eba1.json",
+      "bytes": 154436,
+      "sha256": "dba952e2f53ac73e2760e9b88a822a7942831f9490b0816c465540e96c07eba1"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-dbd6e3130c7f0af7335fda3a21a729c959944b3c48b7e092ee1197275d1e7e6b.json",
+      "bytes": 153980,
+      "sha256": "dbd6e3130c7f0af7335fda3a21a729c959944b3c48b7e092ee1197275d1e7e6b"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-edc28eac092d49431a58dfccdcde86a6e4d995eba34f28f5b55c0f1a7da16794.json",
+      "bytes": 152897,
+      "sha256": "edc28eac092d49431a58dfccdcde86a6e4d995eba34f28f5b55c0f1a7da16794"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ee13597a15a185a70ddb3f9c73a2cee5ea12e25c9827216c757adab0666b44de.json",
+      "bytes": 156431,
+      "sha256": "ee13597a15a185a70ddb3f9c73a2cee5ea12e25c9827216c757adab0666b44de"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ee16ddedc470de278bb446ffa759941103a5e2ef7e057fbb28d2b6a1906d135f.json",
+      "bytes": 155063,
+      "sha256": "ee16ddedc470de278bb446ffa759941103a5e2ef7e057fbb28d2b6a1906d135f"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ee513c5d517276b733c295a4dcd6c9071e69456a19420b23b022f436d45efcda.json",
+      "bytes": 154208,
+      "sha256": "ee513c5d517276b733c295a4dcd6c9071e69456a19420b23b022f436d45efcda"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/ui-supervisor-launch.lock",
+      "bytes": 23,
+      "sha256": "582728fcc60fc12fd7abcdaf58c67141dc65f2e824a859e4ec0c68c6587f124e"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/ui-supervisor.json",
+      "bytes": 224,
+      "sha256": "3ca237caaf440bc7c9f0fcbf8dc6afffd68607c3f4db6ff221eaa24794d110f0"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/ui/camera-after.json",
+      "bytes": 58,
+      "sha256": "f5f761338f9fa2a3fc708e4747ff445df0b43d4b82a5160eb719082ff5997180"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/ui/camera-before.json",
+      "bytes": 57,
+      "sha256": "770bb324de245d30438e86a9756a680c4c1431a8ccaa6b4bf20e1a2a2305c2f9"
+    }
+  ],
+  "recoveredFiles": [
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-3cf3f0e1d816d145dfdb19e6f6b874e6f7bdc8c313838986ebd70098e1a16903.json",
+        "bytes": 156317,
+        "sha256": "3cf3f0e1d816d145dfdb19e6f6b874e6f7bdc8c313838986ebd70098e1a16903"
+      },
+      "publicEvent": 10,
+      "localAndResultGitVerified": true
+    },
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-3cf995abc4cc19986c415c98310f2f741e9821676c376bbd5517d96a70489cbd.json",
+        "bytes": 156545,
+        "sha256": "3cf995abc4cc19986c415c98310f2f741e9821676c376bbd5517d96a70489cbd"
+      },
+      "publicEvent": 8,
+      "localAndResultGitVerified": true
+    },
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-4fe280266b3f394c41d7feef1a0fd5a113d105954ce0d6d8bf612946cbf70c3e.json",
+        "bytes": 156545,
+        "sha256": "4fe280266b3f394c41d7feef1a0fd5a113d105954ce0d6d8bf612946cbf70c3e"
+      },
+      "publicEvent": 14,
+      "localAndResultGitVerified": true
+    },
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-4ff1d6b7b155e7ed9995e047b91f245e6073ed08860a311bf045141b710a1986.json",
+        "bytes": 154208,
+        "sha256": "4ff1d6b7b155e7ed9995e047b91f245e6073ed08860a311bf045141b710a1986"
+      },
+      "publicEvent": 20,
+      "localAndResultGitVerified": true
+    },
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-5012e84ed86e7b67861eb46c0c6d5fcf88175207e93a5f7725c2b8318a9fc8dd.json",
+        "bytes": 154721,
+        "sha256": "5012e84ed86e7b67861eb46c0c6d5fcf88175207e93a5f7725c2b8318a9fc8dd"
+      },
+      "publicEvent": 17,
+      "localAndResultGitVerified": true
+    },
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-501f868bd28a7842be09bf1d61fc34cc9322e92da94719ff27120895b29a2553.json",
+        "bytes": 152099,
+        "sha256": "501f868bd28a7842be09bf1d61fc34cc9322e92da94719ff27120895b29a2553"
+      },
+      "publicEvent": 26,
+      "localAndResultGitVerified": true
+    },
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-65bf86dfc270f7f189d9a3c31ec96eade7f3fb1869c4f944c28f3428d1cb202d.json",
+        "bytes": 154607,
+        "sha256": "65bf86dfc270f7f189d9a3c31ec96eade7f3fb1869c4f944c28f3428d1cb202d"
+      },
+      "publicEvent": 23,
+      "localAndResultGitVerified": true
+    },
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-65c524c8a83de7269040f0d4c44d97c473885abd582a50628817f785728a4ce2.json",
+        "bytes": 152384,
+        "sha256": "65c524c8a83de7269040f0d4c44d97c473885abd582a50628817f785728a4ce2"
+      },
+      "publicEvent": 29,
+      "localAndResultGitVerified": true
+    },
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-6631b353f84ed30472753d2e20dae136b61db7d304cc8dadfc6df2cc72aadc9d.json",
+        "bytes": 153068,
+        "sha256": "6631b353f84ed30472753d2e20dae136b61db7d304cc8dadfc6df2cc72aadc9d"
+      },
+      "publicEvent": 32,
+      "localAndResultGitVerified": true
+    },
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-66530c427e0a72beb3762585c9ad461bf5ae4a6967e18668a6f8221a6159639c.json",
+        "bytes": 156431,
+        "sha256": "66530c427e0a72beb3762585c9ad461bf5ae4a6967e18668a6f8221a6159639c"
+      },
+      "publicEvent": 38,
+      "localAndResultGitVerified": true
+    },
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-7c49d6c2c9d3f3962fc03817b836426ba5644f15607c8f863d72581447eb4fb7.json",
+        "bytes": 153923,
+        "sha256": "7c49d6c2c9d3f3962fc03817b836426ba5644f15607c8f863d72581447eb4fb7"
+      },
+      "publicEvent": 35,
+      "localAndResultGitVerified": true
+    },
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-7c4dc57f82f10b52512ed3cac73a171cc7eaa847470c6cff9a5db683a445e8a4.json",
+        "bytes": 156431,
+        "sha256": "7c4dc57f82f10b52512ed3cac73a171cc7eaa847470c6cff9a5db683a445e8a4"
+      },
+      "publicEvent": 41,
+      "localAndResultGitVerified": true
+    },
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-7c50c74123bf49dfc0060000289a34fa7de07d9737c62e8781f93c6b7bb7faf2.json",
+        "bytes": 153353,
+        "sha256": "7c50c74123bf49dfc0060000289a34fa7de07d9737c62e8781f93c6b7bb7faf2"
+      },
+      "publicEvent": 44,
+      "localAndResultGitVerified": true
+    },
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-7c68c6fbda18ea63e8c7332077f8366f2dc9cf65e1ac83bb326963fbabcd7ebd.json",
+        "bytes": 152612,
+        "sha256": "7c68c6fbda18ea63e8c7332077f8366f2dc9cf65e1ac83bb326963fbabcd7ebd"
+      },
+      "publicEvent": 47,
+      "localAndResultGitVerified": true
+    },
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-93d8f968b36ac8c157c517893b9b1b82ec65ca1d73e137ad45e730ace80913a3.json",
+        "bytes": 152954,
+        "sha256": "93d8f968b36ac8c157c517893b9b1b82ec65ca1d73e137ad45e730ace80913a3"
+      },
+      "publicEvent": 50,
+      "localAndResultGitVerified": true
+    },
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-93e875b12f427ecf2f71c4813eb5156e371a35b1d050028c11cde0291e171f93.json",
+        "bytes": 152897,
+        "sha256": "93e875b12f427ecf2f71c4813eb5156e371a35b1d050028c11cde0291e171f93"
+      },
+      "publicEvent": 53,
+      "localAndResultGitVerified": true
+    },
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-9438c18fcbc5fb92274d17bfcf3c4b155085bbafef32346b40c6469476dfbd53.json",
+        "bytes": 156431,
+        "sha256": "9438c18fcbc5fb92274d17bfcf3c4b155085bbafef32346b40c6469476dfbd53"
+      },
+      "publicEvent": 59,
+      "localAndResultGitVerified": true
+    },
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-94833cf69d05c95b1ec0ec1343ded9c036b579343eaa7e976b1b2f1bbb8ffe74.json",
+        "bytes": 153011,
+        "sha256": "94833cf69d05c95b1ec0ec1343ded9c036b579343eaa7e976b1b2f1bbb8ffe74"
+      },
+      "publicEvent": 56,
+      "localAndResultGitVerified": true
+    },
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-ae1be83d601b02d35c24d03fd017d57733da2f1dbc18586237a7b46570b4b068.json",
+        "bytes": 154550,
+        "sha256": "ae1be83d601b02d35c24d03fd017d57733da2f1dbc18586237a7b46570b4b068"
+      },
+      "publicEvent": 63,
+      "localAndResultGitVerified": true
+    },
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-ae2760524fb239c3341e72bdce74e96a976876d8a8ba573604dd54b07e830235.json",
+        "bytes": 154664,
+        "sha256": "ae2760524fb239c3341e72bdce74e96a976876d8a8ba573604dd54b07e830235"
+      },
+      "publicEvent": 62,
+      "localAndResultGitVerified": true
+    },
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-ae342b630998ec45bc639165181fcab4effd0decdb1a22ea00a1bcf73fa9faca.json",
+        "bytes": 152555,
+        "sha256": "ae342b630998ec45bc639165181fcab4effd0decdb1a22ea00a1bcf73fa9faca"
+      },
+      "publicEvent": 69,
+      "localAndResultGitVerified": true
+    },
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-ae54bf178a84eac4cd3f4986fe3a036673b65701a2fa7fda0c57b94eff60352b.json",
+        "bytes": 153695,
+        "sha256": "ae54bf178a84eac4cd3f4986fe3a036673b65701a2fa7fda0c57b94eff60352b"
+      },
+      "publicEvent": 68,
+      "localAndResultGitVerified": true
+    },
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-c768b3a0bed2e6a3197c5bd3bbdda6bb078de2f8722bc633c2a8e037fca086c4.json",
+        "bytes": 156431,
+        "sha256": "c768b3a0bed2e6a3197c5bd3bbdda6bb078de2f8722bc633c2a8e037fca086c4"
+      },
+      "publicEvent": 75,
+      "localAndResultGitVerified": true
+    },
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-c76e4f4f5856c85af2369cd66870454176f6e8e6b138b92b4356389266bce45e.json",
+        "bytes": 156374,
+        "sha256": "c76e4f4f5856c85af2369cd66870454176f6e8e6b138b92b4356389266bce45e"
+      },
+      "publicEvent": 74,
+      "localAndResultGitVerified": true
+    },
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-c76f733a8c42a48d0eb7e25a9f1ae2c2c2cae19c7a8a5362a0f69f10c4efd911.json",
+        "bytes": 153638,
+        "sha256": "c76f733a8c42a48d0eb7e25a9f1ae2c2c2cae19c7a8a5362a0f69f10c4efd911"
+      },
+      "publicEvent": 80,
+      "localAndResultGitVerified": true
+    },
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-c7efb7d0fbfaa9273b4a199f2c7e800ea64d9b9431a91ab52046f3431ab2a2ff.json",
+        "bytes": 156317,
+        "sha256": "c7efb7d0fbfaa9273b4a199f2c7e800ea64d9b9431a91ab52046f3431ab2a2ff"
+      },
+      "publicEvent": 83,
+      "localAndResultGitVerified": true
+    },
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-db291addadbe714dbec849b5f7785be9d50a7a811d9d2a3beedc291f722277cd.json",
+        "bytes": 156317,
+        "sha256": "db291addadbe714dbec849b5f7785be9d50a7a811d9d2a3beedc291f722277cd"
+      },
+      "publicEvent": 89,
+      "localAndResultGitVerified": true
+    },
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-db8a2d5ecafe0ee629a416d0d93aef98230c7bdc8ddb2dc983630d45f19468ae.json",
+        "bytes": 156317,
+        "sha256": "db8a2d5ecafe0ee629a416d0d93aef98230c7bdc8ddb2dc983630d45f19468ae"
+      },
+      "publicEvent": 86,
+      "localAndResultGitVerified": true
+    },
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-dba952e2f53ac73e2760e9b88a822a7942831f9490b0816c465540e96c07eba1.json",
+        "bytes": 154436,
+        "sha256": "dba952e2f53ac73e2760e9b88a822a7942831f9490b0816c465540e96c07eba1"
+      },
+      "publicEvent": 95,
+      "localAndResultGitVerified": true
+    },
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-dbd6e3130c7f0af7335fda3a21a729c959944b3c48b7e092ee1197275d1e7e6b.json",
+        "bytes": 153980,
+        "sha256": "dbd6e3130c7f0af7335fda3a21a729c959944b3c48b7e092ee1197275d1e7e6b"
+      },
+      "publicEvent": 92,
+      "localAndResultGitVerified": true
+    },
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-edc28eac092d49431a58dfccdcde86a6e4d995eba34f28f5b55c0f1a7da16794.json",
+        "bytes": 152897,
+        "sha256": "edc28eac092d49431a58dfccdcde86a6e4d995eba34f28f5b55c0f1a7da16794"
+      },
+      "publicEvent": 98,
+      "localAndResultGitVerified": true
+    },
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-ee13597a15a185a70ddb3f9c73a2cee5ea12e25c9827216c757adab0666b44de.json",
+        "bytes": 156431,
+        "sha256": "ee13597a15a185a70ddb3f9c73a2cee5ea12e25c9827216c757adab0666b44de"
+      },
+      "publicEvent": 104,
+      "localAndResultGitVerified": true
+    },
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-ee16ddedc470de278bb446ffa759941103a5e2ef7e057fbb28d2b6a1906d135f.json",
+        "bytes": 155063,
+        "sha256": "ee16ddedc470de278bb446ffa759941103a5e2ef7e057fbb28d2b6a1906d135f"
+      },
+      "publicEvent": 101,
+      "localAndResultGitVerified": true
+    },
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/results/semantic-ee513c5d517276b733c295a4dcd6c9071e69456a19420b23b022f436d45efcda.json",
+        "bytes": 154208,
+        "sha256": "ee513c5d517276b733c295a4dcd6c9071e69456a19420b23b022f436d45efcda"
+      },
+      "publicEvent": 110,
+      "localAndResultGitVerified": true
+    },
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/ui-supervisor-launch.lock",
+        "bytes": 23,
+        "sha256": "582728fcc60fc12fd7abcdaf58c67141dc65f2e824a859e4ec0c68c6587f124e"
+      },
+      "publicEvent": 107,
+      "localAndResultGitVerified": true
+    },
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/ui-supervisor.json",
+        "bytes": 224,
+        "sha256": "3ca237caaf440bc7c9f0fcbf8dc6afffd68607c3f4db6ff221eaa24794d110f0"
+      },
+      "publicEvent": 113,
+      "localAndResultGitVerified": true
+    },
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/ui/camera-after.json",
+        "bytes": 58,
+        "sha256": "f5f761338f9fa2a3fc708e4747ff445df0b43d4b82a5160eb719082ff5997180"
+      },
+      "publicEvent": 116,
+      "localAndResultGitVerified": true
+    },
+    {
+      "descriptor": {
+        "path": "research/m31-radial-integration-2026-10-23/ui/camera-before.json",
+        "bytes": 57,
+        "sha256": "770bb324de245d30438e86a9756a680c4c1431a8ccaa6b4bf20e1a2a2305c2f9"
+      },
+      "publicEvent": 117,
+      "localAndResultGitVerified": true
+    }
+  ],
+  "recoveredFileCount": 38,
+  "recoveredBytes": 5256772,
+  "unresolvedFiles": [],
+  "failedAttempts": [],
+  "events": [
+    {
+      "event": 1,
+      "operation": "public-metadata-verification-reuse",
+      "path": "repository-metadata",
+      "passed": true,
+      "originalEvent": 1,
+      "journal": {
+        "file": "research/publication-receipts/m31-radial-integration-result-public-review-2026-10-23-recovery-v2-events.jsonl",
+        "bytes": 5978,
+        "sha256": "21aba234fdd02d29728fd713bb5ae87ded5b5028eefd92aed768fe8f011f3898"
+      },
+      "closure": {
+        "file": "research/publication-receipts/m31-radial-integration-result-public-review-2026-10-23-recovery-v2-closure.json",
+        "bytes": 13058,
+        "sha256": "8ab89f1993b653cdec24b52190494a67aee191f22569c517e336101a6dea3e4e"
+      },
+      "freshNetworkRead": false
+    },
+    {
+      "event": 2,
+      "operation": "public-v2-file-verification-reuse",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-3cf05b246bc9d7e58ce41b5905f1f5e647a05025ebb6994d56f8e0ca0dc15d1f.json",
+      "passed": true,
+      "originalEvent": 6,
+      "journal": {
+        "file": "research/publication-receipts/m31-radial-integration-result-public-review-2026-10-23-recovery-v2-events.jsonl",
+        "bytes": 5978,
+        "sha256": "21aba234fdd02d29728fd713bb5ae87ded5b5028eefd92aed768fe8f011f3898"
+      },
+      "freshNetworkRead": false,
+      "bytes": 156317,
+      "sha256": "3cf05b246bc9d7e58ce41b5905f1f5e647a05025ebb6994d56f8e0ca0dc15d1f"
+    },
+    {
+      "event": 3,
+      "operation": "public-v2-file-verification-reuse",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-3cdfe1c16ff41d4c71f19be60513783d8292a4e5b271b974f25bcb6bd4398f5b.json",
+      "passed": true,
+      "originalEvent": 7,
+      "journal": {
+        "file": "research/publication-receipts/m31-radial-integration-result-public-review-2026-10-23-recovery-v2-events.jsonl",
+        "bytes": 5978,
+        "sha256": "21aba234fdd02d29728fd713bb5ae87ded5b5028eefd92aed768fe8f011f3898"
+      },
+      "freshNetworkRead": false,
+      "bytes": 155576,
+      "sha256": "3cdfe1c16ff41d4c71f19be60513783d8292a4e5b271b974f25bcb6bd4398f5b"
+    },
+    {
+      "event": 4,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-3cf3f0e1d816d145dfdb19e6f6b874e6f7bdc8c313838986ebd70098e1a16903.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 156317,
+      "sha256": "3cf3f0e1d816d145dfdb19e6f6b874e6f7bdc8c313838986ebd70098e1a16903"
+    },
+    {
+      "event": 5,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-3cf995abc4cc19986c415c98310f2f741e9821676c376bbd5517d96a70489cbd.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 156545,
+      "sha256": "3cf995abc4cc19986c415c98310f2f741e9821676c376bbd5517d96a70489cbd"
+    },
+    {
+      "event": 6,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-3cf3f0e1d816d145dfdb19e6f6b874e6f7bdc8c313838986ebd70098e1a16903.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 156317,
+      "sha256": "3cf3f0e1d816d145dfdb19e6f6b874e6f7bdc8c313838986ebd70098e1a16903"
+    },
+    {
+      "event": 7,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-3cf995abc4cc19986c415c98310f2f741e9821676c376bbd5517d96a70489cbd.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 156545,
+      "sha256": "3cf995abc4cc19986c415c98310f2f741e9821676c376bbd5517d96a70489cbd"
+    },
+    {
+      "event": 8,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-3cf995abc4cc19986c415c98310f2f741e9821676c376bbd5517d96a70489cbd.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/results/semantic-3cf995abc4cc19986c415c98310f2f741e9821676c376bbd5517d96a70489cbd.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 158020,
+        "sha256": "43c0568b7dd006e4109d12e87a66825b07e9742f2159791bac036960413ff106"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.45018720900000003,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 156545,
+        "sha256": "3cf995abc4cc19986c415c98310f2f741e9821676c376bbd5517d96a70489cbd"
+      },
+      "safeResponseHeaders": {
+        "content-length": "156545",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "6D82:1898AB:C24F99:1464094:6ADABF63",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4995",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 9,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-4fe280266b3f394c41d7feef1a0fd5a113d105954ce0d6d8bf612946cbf70c3e.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 156545,
+      "sha256": "4fe280266b3f394c41d7feef1a0fd5a113d105954ce0d6d8bf612946cbf70c3e"
+    },
+    {
+      "event": 10,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-3cf3f0e1d816d145dfdb19e6f6b874e6f7bdc8c313838986ebd70098e1a16903.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/results/semantic-3cf3f0e1d816d145dfdb19e6f6b874e6f7bdc8c313838986ebd70098e1a16903.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 157791,
+        "sha256": "4a656abbfc0e4059475a2b7a47b7ebcbd0b07de87745c384d0a50a5eb0773b03"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.45505700000000004,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 156317,
+        "sha256": "3cf3f0e1d816d145dfdb19e6f6b874e6f7bdc8c313838986ebd70098e1a16903"
+      },
+      "safeResponseHeaders": {
+        "content-length": "156317",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "7674:2BD40:C3C7FC:147B5CB:6ADABF63",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4994",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 11,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-4ff1d6b7b155e7ed9995e047b91f245e6073ed08860a311bf045141b710a1986.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 154208,
+      "sha256": "4ff1d6b7b155e7ed9995e047b91f245e6073ed08860a311bf045141b710a1986"
+    },
+    {
+      "event": 12,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-4fe280266b3f394c41d7feef1a0fd5a113d105954ce0d6d8bf612946cbf70c3e.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 156545,
+      "sha256": "4fe280266b3f394c41d7feef1a0fd5a113d105954ce0d6d8bf612946cbf70c3e"
+    },
+    {
+      "event": 13,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-4ff1d6b7b155e7ed9995e047b91f245e6073ed08860a311bf045141b710a1986.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 154208,
+      "sha256": "4ff1d6b7b155e7ed9995e047b91f245e6073ed08860a311bf045141b710a1986"
+    },
+    {
+      "event": 14,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-4fe280266b3f394c41d7feef1a0fd5a113d105954ce0d6d8bf612946cbf70c3e.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/results/semantic-4fe280266b3f394c41d7feef1a0fd5a113d105954ce0d6d8bf612946cbf70c3e.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 158020,
+        "sha256": "b0731d7f8b1b1e146d444fe9fcd51cf96fae7fd56fac2bce47da7cd79f8cd3f3"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.378921708,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 156545,
+        "sha256": "4fe280266b3f394c41d7feef1a0fd5a113d105954ce0d6d8bf612946cbf70c3e"
+      },
+      "safeResponseHeaders": {
+        "content-length": "156545",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "AAF5:12A3C5:C224E3:1460524:6ADABF63",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4992",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 15,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-5012e84ed86e7b67861eb46c0c6d5fcf88175207e93a5f7725c2b8318a9fc8dd.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 154721,
+      "sha256": "5012e84ed86e7b67861eb46c0c6d5fcf88175207e93a5f7725c2b8318a9fc8dd"
+    },
+    {
+      "event": 16,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-5012e84ed86e7b67861eb46c0c6d5fcf88175207e93a5f7725c2b8318a9fc8dd.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 154721,
+      "sha256": "5012e84ed86e7b67861eb46c0c6d5fcf88175207e93a5f7725c2b8318a9fc8dd"
+    },
+    {
+      "event": 17,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-5012e84ed86e7b67861eb46c0c6d5fcf88175207e93a5f7725c2b8318a9fc8dd.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/results/semantic-5012e84ed86e7b67861eb46c0c6d5fcf88175207e93a5f7725c2b8318a9fc8dd.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 156196,
+        "sha256": "a2f6be3cb3fd2f861dc4ce69db4eb95eb4e161325c03e32149de846c6a56af88"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.3736606670000001,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 154721,
+        "sha256": "5012e84ed86e7b67861eb46c0c6d5fcf88175207e93a5f7725c2b8318a9fc8dd"
+      },
+      "safeResponseHeaders": {
+        "content-length": "154721",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "1707:1177DC:C5158C:14903CA:6ADABF63",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4991",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 18,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-501f868bd28a7842be09bf1d61fc34cc9322e92da94719ff27120895b29a2553.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 152099,
+      "sha256": "501f868bd28a7842be09bf1d61fc34cc9322e92da94719ff27120895b29a2553"
+    },
+    {
+      "event": 19,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-501f868bd28a7842be09bf1d61fc34cc9322e92da94719ff27120895b29a2553.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 152099,
+      "sha256": "501f868bd28a7842be09bf1d61fc34cc9322e92da94719ff27120895b29a2553"
+    },
+    {
+      "event": 20,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-4ff1d6b7b155e7ed9995e047b91f245e6073ed08860a311bf045141b710a1986.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/results/semantic-4ff1d6b7b155e7ed9995e047b91f245e6073ed08860a311bf045141b710a1986.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 155683,
+        "sha256": "036c0edcf04dc3f5536154e561d716e4ac1a182dfb1e1132d1a8b9994f995b53"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.8710368749999999,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 154208,
+        "sha256": "4ff1d6b7b155e7ed9995e047b91f245e6073ed08860a311bf045141b710a1986"
+      },
+      "safeResponseHeaders": {
+        "content-length": "154208",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "AF11:290195:C05E66:1442AE6:6ADABF63",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4993",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 21,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-65bf86dfc270f7f189d9a3c31ec96eade7f3fb1869c4f944c28f3428d1cb202d.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 154607,
+      "sha256": "65bf86dfc270f7f189d9a3c31ec96eade7f3fb1869c4f944c28f3428d1cb202d"
+    },
+    {
+      "event": 22,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-65bf86dfc270f7f189d9a3c31ec96eade7f3fb1869c4f944c28f3428d1cb202d.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 154607,
+      "sha256": "65bf86dfc270f7f189d9a3c31ec96eade7f3fb1869c4f944c28f3428d1cb202d"
+    },
+    {
+      "event": 23,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-65bf86dfc270f7f189d9a3c31ec96eade7f3fb1869c4f944c28f3428d1cb202d.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/results/semantic-65bf86dfc270f7f189d9a3c31ec96eade7f3fb1869c4f944c28f3428d1cb202d.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 156083,
+        "sha256": "f0779fe104da2d7846c3b82d27fe7e16b12b86a69ae587ef943a80c0ac711d30"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.3691668750000001,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 154607,
+        "sha256": "65bf86dfc270f7f189d9a3c31ec96eade7f3fb1869c4f944c28f3428d1cb202d"
+      },
+      "safeResponseHeaders": {
+        "content-length": "154607",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "4201:14A0D7:C10A93:144E2BD:6ADABF64",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4989",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 24,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-65c524c8a83de7269040f0d4c44d97c473885abd582a50628817f785728a4ce2.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 152384,
+      "sha256": "65c524c8a83de7269040f0d4c44d97c473885abd582a50628817f785728a4ce2"
+    },
+    {
+      "event": 25,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-65c524c8a83de7269040f0d4c44d97c473885abd582a50628817f785728a4ce2.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 152384,
+      "sha256": "65c524c8a83de7269040f0d4c44d97c473885abd582a50628817f785728a4ce2"
+    },
+    {
+      "event": 26,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-501f868bd28a7842be09bf1d61fc34cc9322e92da94719ff27120895b29a2553.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/results/semantic-501f868bd28a7842be09bf1d61fc34cc9322e92da94719ff27120895b29a2553.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 153575,
+        "sha256": "80cbabbf37666af602abfdf4a58f23afc3a6ebfd2830f5e15e84ae81d94550bd"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.6457275839999999,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 152099,
+        "sha256": "501f868bd28a7842be09bf1d61fc34cc9322e92da94719ff27120895b29a2553"
+      },
+      "safeResponseHeaders": {
+        "content-length": "152099",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "3DF4:366B08:C2BB3C:146A437:6ADABF64",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4990",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 27,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-6631b353f84ed30472753d2e20dae136b61db7d304cc8dadfc6df2cc72aadc9d.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 153068,
+      "sha256": "6631b353f84ed30472753d2e20dae136b61db7d304cc8dadfc6df2cc72aadc9d"
+    },
+    {
+      "event": 28,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-6631b353f84ed30472753d2e20dae136b61db7d304cc8dadfc6df2cc72aadc9d.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 153068,
+      "sha256": "6631b353f84ed30472753d2e20dae136b61db7d304cc8dadfc6df2cc72aadc9d"
+    },
+    {
+      "event": 29,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-65c524c8a83de7269040f0d4c44d97c473885abd582a50628817f785728a4ce2.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/results/semantic-65c524c8a83de7269040f0d4c44d97c473885abd582a50628817f785728a4ce2.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 153859,
+        "sha256": "4b02e240b0dcbf6ba4579711cb6b8e3afc7a9d586385e1e795603457b362a3d3"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.4118457499999999,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 152384,
+        "sha256": "65c524c8a83de7269040f0d4c44d97c473885abd582a50628817f785728a4ce2"
+      },
+      "safeResponseHeaders": {
+        "content-length": "152384",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "8E9E:2BD40:C3C93A:147B7D1:6ADABF64",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4988",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 30,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-66530c427e0a72beb3762585c9ad461bf5ae4a6967e18668a6f8221a6159639c.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 156431,
+      "sha256": "66530c427e0a72beb3762585c9ad461bf5ae4a6967e18668a6f8221a6159639c"
+    },
+    {
+      "event": 31,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-66530c427e0a72beb3762585c9ad461bf5ae4a6967e18668a6f8221a6159639c.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 156431,
+      "sha256": "66530c427e0a72beb3762585c9ad461bf5ae4a6967e18668a6f8221a6159639c"
+    },
+    {
+      "event": 32,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-6631b353f84ed30472753d2e20dae136b61db7d304cc8dadfc6df2cc72aadc9d.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/results/semantic-6631b353f84ed30472753d2e20dae136b61db7d304cc8dadfc6df2cc72aadc9d.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 154543,
+        "sha256": "3d4f006b3163756c51503dd4e0c857f944da81da8b635fdd79dfebeb5959325d"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.35620145800000014,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 153068,
+        "sha256": "6631b353f84ed30472753d2e20dae136b61db7d304cc8dadfc6df2cc72aadc9d"
+      },
+      "safeResponseHeaders": {
+        "content-length": "153068",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "9B60:DB205:C21751:145F22F:6ADABF64",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4987",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 33,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-7c49d6c2c9d3f3962fc03817b836426ba5644f15607c8f863d72581447eb4fb7.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 153923,
+      "sha256": "7c49d6c2c9d3f3962fc03817b836426ba5644f15607c8f863d72581447eb4fb7"
+    },
+    {
+      "event": 34,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-7c49d6c2c9d3f3962fc03817b836426ba5644f15607c8f863d72581447eb4fb7.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 153923,
+      "sha256": "7c49d6c2c9d3f3962fc03817b836426ba5644f15607c8f863d72581447eb4fb7"
+    },
+    {
+      "event": 35,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-7c49d6c2c9d3f3962fc03817b836426ba5644f15607c8f863d72581447eb4fb7.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/results/semantic-7c49d6c2c9d3f3962fc03817b836426ba5644f15607c8f863d72581447eb4fb7.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 155398,
+        "sha256": "733f48ea8941ad9da8a6da4770eeb7dd300f6d1f4cd610a8f46e5eb1a4ceb5a9"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.371979042,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 153923,
+        "sha256": "7c49d6c2c9d3f3962fc03817b836426ba5644f15607c8f863d72581447eb4fb7"
+      },
+      "safeResponseHeaders": {
+        "content-length": "153923",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "CC13:528CD:C3013F:146E3F8:6ADABF65",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4985",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 36,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-7c4dc57f82f10b52512ed3cac73a171cc7eaa847470c6cff9a5db683a445e8a4.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 156431,
+      "sha256": "7c4dc57f82f10b52512ed3cac73a171cc7eaa847470c6cff9a5db683a445e8a4"
+    },
+    {
+      "event": 37,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-7c4dc57f82f10b52512ed3cac73a171cc7eaa847470c6cff9a5db683a445e8a4.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 156431,
+      "sha256": "7c4dc57f82f10b52512ed3cac73a171cc7eaa847470c6cff9a5db683a445e8a4"
+    },
+    {
+      "event": 38,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-66530c427e0a72beb3762585c9ad461bf5ae4a6967e18668a6f8221a6159639c.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/results/semantic-66530c427e0a72beb3762585c9ad461bf5ae4a6967e18668a6f8221a6159639c.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 157907,
+        "sha256": "61f78f6e10bef33ef1243a8ec895aef4ee6f355a3ca6e1446d2bc4dcfaaab460"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.827313792,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 156431,
+        "sha256": "66530c427e0a72beb3762585c9ad461bf5ae4a6967e18668a6f8221a6159639c"
+      },
+      "safeResponseHeaders": {
+        "content-length": "156431",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "BE05:2E3269:C172F4:14562F9:6ADABF65",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4986",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 39,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-7c50c74123bf49dfc0060000289a34fa7de07d9737c62e8781f93c6b7bb7faf2.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 153353,
+      "sha256": "7c50c74123bf49dfc0060000289a34fa7de07d9737c62e8781f93c6b7bb7faf2"
+    },
+    {
+      "event": 40,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-7c50c74123bf49dfc0060000289a34fa7de07d9737c62e8781f93c6b7bb7faf2.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 153353,
+      "sha256": "7c50c74123bf49dfc0060000289a34fa7de07d9737c62e8781f93c6b7bb7faf2"
+    },
+    {
+      "event": 41,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-7c4dc57f82f10b52512ed3cac73a171cc7eaa847470c6cff9a5db683a445e8a4.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/results/semantic-7c4dc57f82f10b52512ed3cac73a171cc7eaa847470c6cff9a5db683a445e8a4.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 157907,
+        "sha256": "2848d33d893c0650522b9e713f15071414e82966d4630cb623b8d5d46c5702ca"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.3445459579999999,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 156431,
+        "sha256": "7c4dc57f82f10b52512ed3cac73a171cc7eaa847470c6cff9a5db683a445e8a4"
+      },
+      "safeResponseHeaders": {
+        "content-length": "156431",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "3002:101EEA:C2416A:1461F2D:6ADABF65",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4984",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 42,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-7c68c6fbda18ea63e8c7332077f8366f2dc9cf65e1ac83bb326963fbabcd7ebd.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 152612,
+      "sha256": "7c68c6fbda18ea63e8c7332077f8366f2dc9cf65e1ac83bb326963fbabcd7ebd"
+    },
+    {
+      "event": 43,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-7c68c6fbda18ea63e8c7332077f8366f2dc9cf65e1ac83bb326963fbabcd7ebd.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 152612,
+      "sha256": "7c68c6fbda18ea63e8c7332077f8366f2dc9cf65e1ac83bb326963fbabcd7ebd"
+    },
+    {
+      "event": 44,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-7c50c74123bf49dfc0060000289a34fa7de07d9737c62e8781f93c6b7bb7faf2.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/results/semantic-7c50c74123bf49dfc0060000289a34fa7de07d9737c62e8781f93c6b7bb7faf2.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 154829,
+        "sha256": "19e06443ec36ed01832c799b22da8da0f46e046f165fda740923e9f75f8b0c60"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.41347262500000026,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 153353,
+        "sha256": "7c50c74123bf49dfc0060000289a34fa7de07d9737c62e8781f93c6b7bb7faf2"
+      },
+      "safeResponseHeaders": {
+        "content-length": "153353",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "89CC:110AAD:C24B33:1462FE4:6ADABF65",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4983",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 45,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-93d8f968b36ac8c157c517893b9b1b82ec65ca1d73e137ad45e730ace80913a3.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 152954,
+      "sha256": "93d8f968b36ac8c157c517893b9b1b82ec65ca1d73e137ad45e730ace80913a3"
+    },
+    {
+      "event": 46,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-93d8f968b36ac8c157c517893b9b1b82ec65ca1d73e137ad45e730ace80913a3.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 152954,
+      "sha256": "93d8f968b36ac8c157c517893b9b1b82ec65ca1d73e137ad45e730ace80913a3"
+    },
+    {
+      "event": 47,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-7c68c6fbda18ea63e8c7332077f8366f2dc9cf65e1ac83bb326963fbabcd7ebd.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/results/semantic-7c68c6fbda18ea63e8c7332077f8366f2dc9cf65e1ac83bb326963fbabcd7ebd.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 154088,
+        "sha256": "1fa2618b306c8b72f5bc7b4e6155c69f5484cf0b1bd1220b7f0ae1c5037620fe"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.7983625000000001,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 152612,
+        "sha256": "7c68c6fbda18ea63e8c7332077f8366f2dc9cf65e1ac83bb326963fbabcd7ebd"
+      },
+      "safeResponseHeaders": {
+        "content-length": "152612",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "8A82:10784A:C3CADC:147B44B:6ADABF66",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4982",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 48,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-93e875b12f427ecf2f71c4813eb5156e371a35b1d050028c11cde0291e171f93.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 152897,
+      "sha256": "93e875b12f427ecf2f71c4813eb5156e371a35b1d050028c11cde0291e171f93"
+    },
+    {
+      "event": 49,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-93e875b12f427ecf2f71c4813eb5156e371a35b1d050028c11cde0291e171f93.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 152897,
+      "sha256": "93e875b12f427ecf2f71c4813eb5156e371a35b1d050028c11cde0291e171f93"
+    },
+    {
+      "event": 50,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-93d8f968b36ac8c157c517893b9b1b82ec65ca1d73e137ad45e730ace80913a3.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/results/semantic-93d8f968b36ac8c157c517893b9b1b82ec65ca1d73e137ad45e730ace80913a3.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 154430,
+        "sha256": "5c0db49472e14855a6331b4c300f2e518ed68d3e1a4b9578c6e7f2968899adf8"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.4805754590000002,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 152954,
+        "sha256": "93d8f968b36ac8c157c517893b9b1b82ec65ca1d73e137ad45e730ace80913a3"
+      },
+      "safeResponseHeaders": {
+        "content-length": "152954",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "1D32:14A0D7:C10C03:144E535:6ADABF66",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4981",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 51,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-9438c18fcbc5fb92274d17bfcf3c4b155085bbafef32346b40c6469476dfbd53.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 156431,
+      "sha256": "9438c18fcbc5fb92274d17bfcf3c4b155085bbafef32346b40c6469476dfbd53"
+    },
+    {
+      "event": 52,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-9438c18fcbc5fb92274d17bfcf3c4b155085bbafef32346b40c6469476dfbd53.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 156431,
+      "sha256": "9438c18fcbc5fb92274d17bfcf3c4b155085bbafef32346b40c6469476dfbd53"
+    },
+    {
+      "event": 53,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-93e875b12f427ecf2f71c4813eb5156e371a35b1d050028c11cde0291e171f93.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/results/semantic-93e875b12f427ecf2f71c4813eb5156e371a35b1d050028c11cde0291e171f93.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 154373,
+        "sha256": "bd2d814a9333ebefe8de980aed6eb2bd339723d899d112e3c597b32443a26f0c"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.38245712499999973,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 152897,
+        "sha256": "93e875b12f427ecf2f71c4813eb5156e371a35b1d050028c11cde0291e171f93"
+      },
+      "safeResponseHeaders": {
+        "content-length": "152897",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "7F9E:2E3269:C17423:14564DB:6ADABF66",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4980",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 54,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-94833cf69d05c95b1ec0ec1343ded9c036b579343eaa7e976b1b2f1bbb8ffe74.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 153011,
+      "sha256": "94833cf69d05c95b1ec0ec1343ded9c036b579343eaa7e976b1b2f1bbb8ffe74"
+    },
+    {
+      "event": 55,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-94833cf69d05c95b1ec0ec1343ded9c036b579343eaa7e976b1b2f1bbb8ffe74.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 153011,
+      "sha256": "94833cf69d05c95b1ec0ec1343ded9c036b579343eaa7e976b1b2f1bbb8ffe74"
+    },
+    {
+      "event": 56,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-94833cf69d05c95b1ec0ec1343ded9c036b579343eaa7e976b1b2f1bbb8ffe74.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/results/semantic-94833cf69d05c95b1ec0ec1343ded9c036b579343eaa7e976b1b2f1bbb8ffe74.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 154487,
+        "sha256": "5d40a741a11706e94ba88470e1500300e1a2262ad7a54c1d519d273d76736e20"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.3428207090000006,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 153011,
+        "sha256": "94833cf69d05c95b1ec0ec1343ded9c036b579343eaa7e976b1b2f1bbb8ffe74"
+      },
+      "safeResponseHeaders": {
+        "content-length": "153011",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "F457:349E22:C3AEE3:1479CB0:6ADABF67",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4978",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 57,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ae1be83d601b02d35c24d03fd017d57733da2f1dbc18586237a7b46570b4b068.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 154550,
+      "sha256": "ae1be83d601b02d35c24d03fd017d57733da2f1dbc18586237a7b46570b4b068"
+    },
+    {
+      "event": 58,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ae1be83d601b02d35c24d03fd017d57733da2f1dbc18586237a7b46570b4b068.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 154550,
+      "sha256": "ae1be83d601b02d35c24d03fd017d57733da2f1dbc18586237a7b46570b4b068"
+    },
+    {
+      "event": 59,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-9438c18fcbc5fb92274d17bfcf3c4b155085bbafef32346b40c6469476dfbd53.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/results/semantic-9438c18fcbc5fb92274d17bfcf3c4b155085bbafef32346b40c6469476dfbd53.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 157907,
+        "sha256": "81477fd837aceeebb7d6d5762e8de8725766ac8644318635483e8bc8b575ea92"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.8013776670000006,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 156431,
+        "sha256": "9438c18fcbc5fb92274d17bfcf3c4b155085bbafef32346b40c6469476dfbd53"
+      },
+      "safeResponseHeaders": {
+        "content-length": "156431",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "926F:15DFA1:C46EAD:1484877:6ADABF66",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4979",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 60,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ae2760524fb239c3341e72bdce74e96a976876d8a8ba573604dd54b07e830235.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 154664,
+      "sha256": "ae2760524fb239c3341e72bdce74e96a976876d8a8ba573604dd54b07e830235"
+    },
+    {
+      "event": 61,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ae2760524fb239c3341e72bdce74e96a976876d8a8ba573604dd54b07e830235.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 154664,
+      "sha256": "ae2760524fb239c3341e72bdce74e96a976876d8a8ba573604dd54b07e830235"
+    },
+    {
+      "event": 62,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ae2760524fb239c3341e72bdce74e96a976876d8a8ba573604dd54b07e830235.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/results/semantic-ae2760524fb239c3341e72bdce74e96a976876d8a8ba573604dd54b07e830235.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 156140,
+        "sha256": "5d23b2e4f163141fe8afddc67aca77013be1f4cbf4b574675376de3b7147c545"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.3457975419999997,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 154664,
+        "sha256": "ae2760524fb239c3341e72bdce74e96a976876d8a8ba573604dd54b07e830235"
+      },
+      "safeResponseHeaders": {
+        "content-length": "154664",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "266C:101EEA:C242FC:14621C8:6ADABF67",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4976",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 63,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ae1be83d601b02d35c24d03fd017d57733da2f1dbc18586237a7b46570b4b068.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/results/semantic-ae1be83d601b02d35c24d03fd017d57733da2f1dbc18586237a7b46570b4b068.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 156026,
+        "sha256": "dd75617a7a82d08f9786a4b232a463b5a9f4cd119d25d2344d8ef70715cc86d6"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.4816562089999996,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 154550,
+        "sha256": "ae1be83d601b02d35c24d03fd017d57733da2f1dbc18586237a7b46570b4b068"
+      },
+      "safeResponseHeaders": {
+        "content-length": "154550",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "D627:14A0D7:C10CF3:144E68F:6ADABF67",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4977",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 64,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ae342b630998ec45bc639165181fcab4effd0decdb1a22ea00a1bcf73fa9faca.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 152555,
+      "sha256": "ae342b630998ec45bc639165181fcab4effd0decdb1a22ea00a1bcf73fa9faca"
+    },
+    {
+      "event": 65,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ae54bf178a84eac4cd3f4986fe3a036673b65701a2fa7fda0c57b94eff60352b.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 153695,
+      "sha256": "ae54bf178a84eac4cd3f4986fe3a036673b65701a2fa7fda0c57b94eff60352b"
+    },
+    {
+      "event": 66,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ae54bf178a84eac4cd3f4986fe3a036673b65701a2fa7fda0c57b94eff60352b.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 153695,
+      "sha256": "ae54bf178a84eac4cd3f4986fe3a036673b65701a2fa7fda0c57b94eff60352b"
+    },
+    {
+      "event": 67,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ae342b630998ec45bc639165181fcab4effd0decdb1a22ea00a1bcf73fa9faca.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 152555,
+      "sha256": "ae342b630998ec45bc639165181fcab4effd0decdb1a22ea00a1bcf73fa9faca"
+    },
+    {
+      "event": 68,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ae54bf178a84eac4cd3f4986fe3a036673b65701a2fa7fda0c57b94eff60352b.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/results/semantic-ae54bf178a84eac4cd3f4986fe3a036673b65701a2fa7fda0c57b94eff60352b.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 155170,
+        "sha256": "615d5796302812fc19001c340a4ee6381ae72952edb382f09b11c83fbca8a1bd"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.4741073330000001,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 153695,
+        "sha256": "ae54bf178a84eac4cd3f4986fe3a036673b65701a2fa7fda0c57b94eff60352b"
+      },
+      "safeResponseHeaders": {
+        "content-length": "153695",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "A399:C5C98:C29757:1467FA8:6ADABF68",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4974",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 69,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ae342b630998ec45bc639165181fcab4effd0decdb1a22ea00a1bcf73fa9faca.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/results/semantic-ae342b630998ec45bc639165181fcab4effd0decdb1a22ea00a1bcf73fa9faca.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 154031,
+        "sha256": "05a36f48c0ab0534a064bd8f9b992707465bd9c9504aa49c006498f9e280b56a"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.47485487499999923,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 152555,
+        "sha256": "ae342b630998ec45bc639165181fcab4effd0decdb1a22ea00a1bcf73fa9faca"
+      },
+      "safeResponseHeaders": {
+        "content-length": "152555",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "A311:1A5977:C22CBA:1462348:6ADABF68",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4975",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 70,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-c768b3a0bed2e6a3197c5bd3bbdda6bb078de2f8722bc633c2a8e037fca086c4.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 156431,
+      "sha256": "c768b3a0bed2e6a3197c5bd3bbdda6bb078de2f8722bc633c2a8e037fca086c4"
+    },
+    {
+      "event": 71,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-c76e4f4f5856c85af2369cd66870454176f6e8e6b138b92b4356389266bce45e.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 156374,
+      "sha256": "c76e4f4f5856c85af2369cd66870454176f6e8e6b138b92b4356389266bce45e"
+    },
+    {
+      "event": 72,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-c768b3a0bed2e6a3197c5bd3bbdda6bb078de2f8722bc633c2a8e037fca086c4.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 156431,
+      "sha256": "c768b3a0bed2e6a3197c5bd3bbdda6bb078de2f8722bc633c2a8e037fca086c4"
+    },
+    {
+      "event": 73,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-c76e4f4f5856c85af2369cd66870454176f6e8e6b138b92b4356389266bce45e.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 156374,
+      "sha256": "c76e4f4f5856c85af2369cd66870454176f6e8e6b138b92b4356389266bce45e"
+    },
+    {
+      "event": 74,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-c76e4f4f5856c85af2369cd66870454176f6e8e6b138b92b4356389266bce45e.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/results/semantic-c76e4f4f5856c85af2369cd66870454176f6e8e6b138b92b4356389266bce45e.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 157850,
+        "sha256": "dfa1b998cde0162d002e1325723b0522a99fa9fbf76d99deb5d6f2ac19e03e6c"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.40741516599999983,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 156374,
+        "sha256": "c76e4f4f5856c85af2369cd66870454176f6e8e6b138b92b4356389266bce45e"
+      },
+      "safeResponseHeaders": {
+        "content-length": "156374",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "5925:1A5977:C22D2D:14623E5:6ADABF68",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4972",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 75,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-c768b3a0bed2e6a3197c5bd3bbdda6bb078de2f8722bc633c2a8e037fca086c4.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/results/semantic-c768b3a0bed2e6a3197c5bd3bbdda6bb078de2f8722bc633c2a8e037fca086c4.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 157907,
+        "sha256": "3c6e3e814ddf299322a756bb80ca1b20d283f0f268addc2d4ee00097a5c5557e"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.4117083749999999,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 156431,
+        "sha256": "c768b3a0bed2e6a3197c5bd3bbdda6bb078de2f8722bc633c2a8e037fca086c4"
+      },
+      "safeResponseHeaders": {
+        "content-length": "156431",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "5C76:1177DC:C5196A:14909F5:6ADABF68",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4973",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 76,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-c76f733a8c42a48d0eb7e25a9f1ae2c2c2cae19c7a8a5362a0f69f10c4efd911.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 153638,
+      "sha256": "c76f733a8c42a48d0eb7e25a9f1ae2c2c2cae19c7a8a5362a0f69f10c4efd911"
+    },
+    {
+      "event": 77,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-c7efb7d0fbfaa9273b4a199f2c7e800ea64d9b9431a91ab52046f3431ab2a2ff.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 156317,
+      "sha256": "c7efb7d0fbfaa9273b4a199f2c7e800ea64d9b9431a91ab52046f3431ab2a2ff"
+    },
+    {
+      "event": 78,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-c76f733a8c42a48d0eb7e25a9f1ae2c2c2cae19c7a8a5362a0f69f10c4efd911.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 153638,
+      "sha256": "c76f733a8c42a48d0eb7e25a9f1ae2c2c2cae19c7a8a5362a0f69f10c4efd911"
+    },
+    {
+      "event": 79,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-c7efb7d0fbfaa9273b4a199f2c7e800ea64d9b9431a91ab52046f3431ab2a2ff.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 156317,
+      "sha256": "c7efb7d0fbfaa9273b4a199f2c7e800ea64d9b9431a91ab52046f3431ab2a2ff"
+    },
+    {
+      "event": 80,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-c76f733a8c42a48d0eb7e25a9f1ae2c2c2cae19c7a8a5362a0f69f10c4efd911.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/results/semantic-c76f733a8c42a48d0eb7e25a9f1ae2c2c2cae19c7a8a5362a0f69f10c4efd911.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 155113,
+        "sha256": "01ac67c21c90fb580b122db9cce53896cf479579e470b0dbb4c82462c451d0ba"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.3550488329999997,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 153638,
+        "sha256": "c76f733a8c42a48d0eb7e25a9f1ae2c2c2cae19c7a8a5362a0f69f10c4efd911"
+      },
+      "safeResponseHeaders": {
+        "content-length": "153638",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "CB83:528CD:C30404:146E88C:6ADABF69",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4971",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 81,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-db291addadbe714dbec849b5f7785be9d50a7a811d9d2a3beedc291f722277cd.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 156317,
+      "sha256": "db291addadbe714dbec849b5f7785be9d50a7a811d9d2a3beedc291f722277cd"
+    },
+    {
+      "event": 82,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-db291addadbe714dbec849b5f7785be9d50a7a811d9d2a3beedc291f722277cd.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 156317,
+      "sha256": "db291addadbe714dbec849b5f7785be9d50a7a811d9d2a3beedc291f722277cd"
+    },
+    {
+      "event": 83,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-c7efb7d0fbfaa9273b4a199f2c7e800ea64d9b9431a91ab52046f3431ab2a2ff.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/results/semantic-c7efb7d0fbfaa9273b4a199f2c7e800ea64d9b9431a91ab52046f3431ab2a2ff.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 157792,
+        "sha256": "3d11f443474497b7093f64821b1b10b59cc72e5190d3cf79976cfe12c0810e9b"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.48291487499999963,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 156317,
+        "sha256": "c7efb7d0fbfaa9273b4a199f2c7e800ea64d9b9431a91ab52046f3431ab2a2ff"
+      },
+      "safeResponseHeaders": {
+        "content-length": "156317",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "C58F:68DD8:C1C8C2:1459DFC:6ADABF69",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4970",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 84,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-db8a2d5ecafe0ee629a416d0d93aef98230c7bdc8ddb2dc983630d45f19468ae.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 156317,
+      "sha256": "db8a2d5ecafe0ee629a416d0d93aef98230c7bdc8ddb2dc983630d45f19468ae"
+    },
+    {
+      "event": 85,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-db8a2d5ecafe0ee629a416d0d93aef98230c7bdc8ddb2dc983630d45f19468ae.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 156317,
+      "sha256": "db8a2d5ecafe0ee629a416d0d93aef98230c7bdc8ddb2dc983630d45f19468ae"
+    },
+    {
+      "event": 86,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-db8a2d5ecafe0ee629a416d0d93aef98230c7bdc8ddb2dc983630d45f19468ae.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/results/semantic-db8a2d5ecafe0ee629a416d0d93aef98230c7bdc8ddb2dc983630d45f19468ae.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 157792,
+        "sha256": "86e4f7ecea9ca912666a80be865987129724374769482e840a19c48377c86c3c"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.347010708,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 156317,
+        "sha256": "db8a2d5ecafe0ee629a416d0d93aef98230c7bdc8ddb2dc983630d45f19468ae"
+      },
+      "safeResponseHeaders": {
+        "content-length": "156317",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "6C43:59CB4:C361CA:147504E:6ADABF69",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4968",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 87,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-dba952e2f53ac73e2760e9b88a822a7942831f9490b0816c465540e96c07eba1.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 154436,
+      "sha256": "dba952e2f53ac73e2760e9b88a822a7942831f9490b0816c465540e96c07eba1"
+    },
+    {
+      "event": 88,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-dba952e2f53ac73e2760e9b88a822a7942831f9490b0816c465540e96c07eba1.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 154436,
+      "sha256": "dba952e2f53ac73e2760e9b88a822a7942831f9490b0816c465540e96c07eba1"
+    },
+    {
+      "event": 89,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-db291addadbe714dbec849b5f7785be9d50a7a811d9d2a3beedc291f722277cd.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/results/semantic-db291addadbe714dbec849b5f7785be9d50a7a811d9d2a3beedc291f722277cd.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 157793,
+        "sha256": "3a00d4afd701ddceffc9ab63cf917d298865c181b0e138cbec8ed129581998dc"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.6150754999999997,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 156317,
+        "sha256": "db291addadbe714dbec849b5f7785be9d50a7a811d9d2a3beedc291f722277cd"
+      },
+      "safeResponseHeaders": {
+        "content-length": "156317",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "52CD:174540:C1D9BA:145B3A6:6ADABF69",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4969",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 90,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-dbd6e3130c7f0af7335fda3a21a729c959944b3c48b7e092ee1197275d1e7e6b.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 153980,
+      "sha256": "dbd6e3130c7f0af7335fda3a21a729c959944b3c48b7e092ee1197275d1e7e6b"
+    },
+    {
+      "event": 91,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-dbd6e3130c7f0af7335fda3a21a729c959944b3c48b7e092ee1197275d1e7e6b.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 153980,
+      "sha256": "dbd6e3130c7f0af7335fda3a21a729c959944b3c48b7e092ee1197275d1e7e6b"
+    },
+    {
+      "event": 92,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-dbd6e3130c7f0af7335fda3a21a729c959944b3c48b7e092ee1197275d1e7e6b.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/results/semantic-dbd6e3130c7f0af7335fda3a21a729c959944b3c48b7e092ee1197275d1e7e6b.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 155456,
+        "sha256": "349457cc7ae63e4594ca2619d8926e30bb389ac1ddabf983ac522906b9488976"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.3663798749999998,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 153980,
+        "sha256": "dbd6e3130c7f0af7335fda3a21a729c959944b3c48b7e092ee1197275d1e7e6b"
+      },
+      "safeResponseHeaders": {
+        "content-length": "153980",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "211E:1A5977:C22E3F:1462569:6ADABF6A",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4966",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 93,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-edc28eac092d49431a58dfccdcde86a6e4d995eba34f28f5b55c0f1a7da16794.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 152897,
+      "sha256": "edc28eac092d49431a58dfccdcde86a6e4d995eba34f28f5b55c0f1a7da16794"
+    },
+    {
+      "event": 94,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-edc28eac092d49431a58dfccdcde86a6e4d995eba34f28f5b55c0f1a7da16794.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 152897,
+      "sha256": "edc28eac092d49431a58dfccdcde86a6e4d995eba34f28f5b55c0f1a7da16794"
+    },
+    {
+      "event": 95,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-dba952e2f53ac73e2760e9b88a822a7942831f9490b0816c465540e96c07eba1.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/results/semantic-dba952e2f53ac73e2760e9b88a822a7942831f9490b0816c465540e96c07eba1.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 155912,
+        "sha256": "a499d065d19479007919c8c9898f1467eefbee38edca9a6113b706c1e3b7d5a4"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.7161726250000005,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 154436,
+        "sha256": "dba952e2f53ac73e2760e9b88a822a7942831f9490b0816c465540e96c07eba1"
+      },
+      "safeResponseHeaders": {
+        "content-length": "154436",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "FF53:366B08:C2BF17:146AA84:6ADABF6A",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4967",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 96,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ee13597a15a185a70ddb3f9c73a2cee5ea12e25c9827216c757adab0666b44de.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 156431,
+      "sha256": "ee13597a15a185a70ddb3f9c73a2cee5ea12e25c9827216c757adab0666b44de"
+    },
+    {
+      "event": 97,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ee13597a15a185a70ddb3f9c73a2cee5ea12e25c9827216c757adab0666b44de.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 156431,
+      "sha256": "ee13597a15a185a70ddb3f9c73a2cee5ea12e25c9827216c757adab0666b44de"
+    },
+    {
+      "event": 98,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-edc28eac092d49431a58dfccdcde86a6e4d995eba34f28f5b55c0f1a7da16794.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/results/semantic-edc28eac092d49431a58dfccdcde86a6e4d995eba34f28f5b55c0f1a7da16794.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 154372,
+        "sha256": "f8161fc20310039a0cca8121f35238553185ea99b37f5bc81df5944eaef46713"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.41087637499999907,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 152897,
+        "sha256": "edc28eac092d49431a58dfccdcde86a6e4d995eba34f28f5b55c0f1a7da16794"
+      },
+      "safeResponseHeaders": {
+        "content-length": "152897",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "9C6A:EE3AF:C54D78:1493DD1:6ADABF6A",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4965",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 99,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ee16ddedc470de278bb446ffa759941103a5e2ef7e057fbb28d2b6a1906d135f.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 155063,
+      "sha256": "ee16ddedc470de278bb446ffa759941103a5e2ef7e057fbb28d2b6a1906d135f"
+    },
+    {
+      "event": 100,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ee16ddedc470de278bb446ffa759941103a5e2ef7e057fbb28d2b6a1906d135f.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 155063,
+      "sha256": "ee16ddedc470de278bb446ffa759941103a5e2ef7e057fbb28d2b6a1906d135f"
+    },
+    {
+      "event": 101,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ee16ddedc470de278bb446ffa759941103a5e2ef7e057fbb28d2b6a1906d135f.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/results/semantic-ee16ddedc470de278bb446ffa759941103a5e2ef7e057fbb28d2b6a1906d135f.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 156539,
+        "sha256": "b7095b9bcc693a514b35fdc3fd6d77b566c412f5281c0bcc29512860061adc75"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.3702083339999991,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 155063,
+        "sha256": "ee16ddedc470de278bb446ffa759941103a5e2ef7e057fbb28d2b6a1906d135f"
+      },
+      "safeResponseHeaders": {
+        "content-length": "155063",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "F5FD:1312A5:C30C4B:146F02D:6ADABF6A",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4963",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 102,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ee513c5d517276b733c295a4dcd6c9071e69456a19420b23b022f436d45efcda.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 154208,
+      "sha256": "ee513c5d517276b733c295a4dcd6c9071e69456a19420b23b022f436d45efcda"
+    },
+    {
+      "event": 103,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ee513c5d517276b733c295a4dcd6c9071e69456a19420b23b022f436d45efcda.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 154208,
+      "sha256": "ee513c5d517276b733c295a4dcd6c9071e69456a19420b23b022f436d45efcda"
+    },
+    {
+      "event": 104,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ee13597a15a185a70ddb3f9c73a2cee5ea12e25c9827216c757adab0666b44de.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/results/semantic-ee13597a15a185a70ddb3f9c73a2cee5ea12e25c9827216c757adab0666b44de.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 157907,
+        "sha256": "e377f88b6065f50c226270752adf6efbcc355492e132237a38502854d1c6d164"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.6560967500000006,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 156431,
+        "sha256": "ee13597a15a185a70ddb3f9c73a2cee5ea12e25c9827216c757adab0666b44de"
+      },
+      "safeResponseHeaders": {
+        "content-length": "156431",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "DBF2:15DFA1:C47152:1484CCD:6ADABF6A",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4964",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 105,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/ui-supervisor-launch.lock",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 23,
+      "sha256": "582728fcc60fc12fd7abcdaf58c67141dc65f2e824a859e4ec0c68c6587f124e"
+    },
+    {
+      "event": 106,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/ui-supervisor-launch.lock",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 23,
+      "sha256": "582728fcc60fc12fd7abcdaf58c67141dc65f2e824a859e4ec0c68c6587f124e"
+    },
+    {
+      "event": 107,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/ui-supervisor-launch.lock",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/ui-supervisor-launch.lock?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 1495,
+        "sha256": "1b4a4f81684f4903675154893416a7609ef1c1fcdfbfbf2618ce7b64753ea359"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.2959771250000003,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 23,
+        "sha256": "582728fcc60fc12fd7abcdaf58c67141dc65f2e824a859e4ec0c68c6587f124e"
+      },
+      "safeResponseHeaders": {
+        "content-length": "23",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "5A88:349E22:C3B1B2:147A14E:6ADABF6B",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4961",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 108,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/ui-supervisor.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 224,
+      "sha256": "3ca237caaf440bc7c9f0fcbf8dc6afffd68607c3f4db6ff221eaa24794d110f0"
+    },
+    {
+      "event": 109,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/ui-supervisor.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 224,
+      "sha256": "3ca237caaf440bc7c9f0fcbf8dc6afffd68607c3f4db6ff221eaa24794d110f0"
+    },
+    {
+      "event": 110,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/results/semantic-ee513c5d517276b733c295a4dcd6c9071e69456a19420b23b022f436d45efcda.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/results/semantic-ee513c5d517276b733c295a4dcd6c9071e69456a19420b23b022f436d45efcda.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 155684,
+        "sha256": "886359184068bf8fafca05ed4ff5d83b6ec6c2b82e3e9fde856f9ca7717d83fd"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.47788875,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 154208,
+        "sha256": "ee513c5d517276b733c295a4dcd6c9071e69456a19420b23b022f436d45efcda"
+      },
+      "safeResponseHeaders": {
+        "content-length": "154208",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "57D8:23A5A5:C2FB49:146E455:6ADABF6B",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4962",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 111,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/ui/camera-after.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 58,
+      "sha256": "f5f761338f9fa2a3fc708e4747ff445df0b43d4b82a5160eb719082ff5997180"
+    },
+    {
+      "event": 112,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/ui/camera-after.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 58,
+      "sha256": "f5f761338f9fa2a3fc708e4747ff445df0b43d4b82a5160eb719082ff5997180"
+    },
+    {
+      "event": 113,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/ui-supervisor.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/ui-supervisor.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 1697,
+        "sha256": "d0073202f12868175854d77cc21e4679cffc90ed2431a9243862db285c99a83c"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.3180965829999991,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 224,
+        "sha256": "3ca237caaf440bc7c9f0fcbf8dc6afffd68607c3f4db6ff221eaa24794d110f0"
+      },
+      "safeResponseHeaders": {
+        "content-length": "224",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "7BBF:15DFA1:C471F7:1484DC9:6ADABF6B",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4960",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 114,
+      "operation": "local",
+      "path": "research/m31-radial-integration-2026-10-23/ui/camera-before.json",
+      "attempt": 1,
+      "passed": true,
+      "bytes": 57,
+      "sha256": "770bb324de245d30438e86a9756a680c4c1431a8ccaa6b4bf20e1a2a2305c2f9"
+    },
+    {
+      "event": 115,
+      "operation": "result-commit",
+      "path": "research/m31-radial-integration-2026-10-23/ui/camera-before.json",
+      "attempt": 1,
+      "commit": "8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "passed": true,
+      "bytes": 57,
+      "sha256": "770bb324de245d30438e86a9756a680c4c1431a8ccaa6b4bf20e1a2a2305c2f9"
+    },
+    {
+      "event": 116,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/ui/camera-after.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/ui/camera-after.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 1530,
+        "sha256": "09d94efd4df0e5d5dc5b6651668754aa1e51038703cf40d34422ab8f4d2738f9"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.3653879160000013,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 58,
+        "sha256": "f5f761338f9fa2a3fc708e4747ff445df0b43d4b82a5160eb719082ff5997180"
+      },
+      "safeResponseHeaders": {
+        "content-length": "58",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "8B5D:14A0D7:C10FB4:144EAFC:6ADABF6B",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4959",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    },
+    {
+      "event": 117,
+      "operation": "public-contents-api",
+      "path": "research/m31-radial-integration-2026-10-23/ui/camera-before.json",
+      "attempt": 1,
+      "endpoint": "https://api.github.com/repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/m31-radial-integration-2026-10-23/ui/camera-before.json?ref=8c80900fdb5de6b1cf5b3b211c8a461ecac86f1a",
+      "authenticated": true,
+      "accept": "application/vnd.github.raw+json",
+      "returncode": 0,
+      "capturedStdout": {
+        "bytes": 1529,
+        "sha256": "1dd5b4138b687e0060356b76a82d9885573ba83bac03eab1b459dca2d8ee122c"
+      },
+      "capturedStderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "wallSeconds": 0.4101288329999999,
+      "httpStatus": 200,
+      "responseBody": {
+        "bytes": 57,
+        "sha256": "770bb324de245d30438e86a9756a680c4c1431a8ccaa6b4bf20e1a2a2305c2f9"
+      },
+      "safeResponseHeaders": {
+        "content-length": "57",
+        "content-type": "application/vnd.github.raw+json; charset=utf-8",
+        "x-github-request-id": "B113:38DB15:C17717:1456892:6ADABF6C",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4958",
+        "x-ratelimit-reset": "1792723446"
+      },
+      "passed": true
+    }
+  ],
+  "failureJournal": {
+    "file": "research/publication-receipts/m31-radial-integration-result-public-review-2026-10-23-recovery-v3-events.jsonl",
+    "bytes": 70358,
+    "sha256": "6345cbcb9cccdfbeed7a58272d230aca42b06aaa84ec906de70e9b31759535c0"
+  },
+  "allAllocationsClosedAtStartAndEnd": true,
+  "allocationChecks": {
+    "start": {
+      "checkedAtUtc": "2026-10-23T01:58:58.732719+00:00",
+      "allClosed": true,
+      "phases": [
+        {
+          "phase": "producer",
+          "supervisor": {
+            "file": "research/m31-radial-integration-2026-10-23/producer-supervisor.json",
+            "bytes": 227,
+            "sha256": "8b2a8db1e61d05265c0cccf9af8662b19fe2e4af54a370b4c022ccef3a6456e7"
+          },
+          "internalClosure": {
+            "file": "research/m31-radial-integration-2026-10-23/results/exit.json",
+            "bytes": 112,
+            "sha256": "07d80be868c3191a6717bad97e20011873ba8e595c04cdba3472fab1d23fb960"
+          },
+          "closed": true
+        },
+        {
+          "phase": "audit",
+          "supervisor": {
+            "file": "research/m31-radial-integration-2026-10-23/audit-supervisor.json",
+            "bytes": 219,
+            "sha256": "06167b312205359920357bdbe721c6207f118b14247ee88da0cf5bb9baed2892"
+          },
+          "internalClosure": {
+            "file": "research/m31-radial-integration-2026-10-23/audit/exit.json",
+            "bytes": 57,
+            "sha256": "bd80502ee0fb3715f722ac1c4318e8581125cc17061d4e27b8d531d74fb41854"
+          },
+          "closed": true
+        },
+        {
+          "phase": "finalize",
+          "supervisor": {
+            "file": "research/m31-radial-integration-2026-10-23/finalize-supervisor.json",
+            "bytes": 218,
+            "sha256": "48b34afce1ac231416e450a39c13ddf66d7152f4c57b544ea43e7bd047e26dcc"
+          },
+          "internalClosure": {
+            "file": "research/m31-radial-integration-2026-10-23/finalize/exit.json",
+            "bytes": 80,
+            "sha256": "b430993650e7d48b93ad773468ed1a0c63077e0dc3f865af0a8809b308dcc5ff"
+          },
+          "closed": true
+        },
+        {
+          "phase": "ui",
+          "supervisor": {
+            "file": "research/m31-radial-integration-2026-10-23/ui-supervisor.json",
+            "bytes": 224,
+            "sha256": "3ca237caaf440bc7c9f0fcbf8dc6afffd68607c3f4db6ff221eaa24794d110f0"
+          },
+          "internalClosure": {
+            "file": "research/m31-radial-integration-2026-10-23/ui/qa.json",
+            "bytes": 487,
+            "sha256": "4808d1b9b3fc5d33e27243fa539a243107fe3c95299721ba4f5a7e8a394c358b"
+          },
+          "closed": true
+        }
+      ]
+    },
+    "end": {
+      "checkedAtUtc": "2026-10-23T01:59:08.237184+00:00",
+      "allClosed": true,
+      "phases": [
+        {
+          "phase": "producer",
+          "supervisor": {
+            "file": "research/m31-radial-integration-2026-10-23/producer-supervisor.json",
+            "bytes": 227,
+            "sha256": "8b2a8db1e61d05265c0cccf9af8662b19fe2e4af54a370b4c022ccef3a6456e7"
+          },
+          "internalClosure": {
+            "file": "research/m31-radial-integration-2026-10-23/results/exit.json",
+            "bytes": 112,
+            "sha256": "07d80be868c3191a6717bad97e20011873ba8e595c04cdba3472fab1d23fb960"
+          },
+          "closed": true
+        },
+        {
+          "phase": "audit",
+          "supervisor": {
+            "file": "research/m31-radial-integration-2026-10-23/audit-supervisor.json",
+            "bytes": 219,
+            "sha256": "06167b312205359920357bdbe721c6207f118b14247ee88da0cf5bb9baed2892"
+          },
+          "internalClosure": {
+            "file": "research/m31-radial-integration-2026-10-23/audit/exit.json",
+            "bytes": 57,
+            "sha256": "bd80502ee0fb3715f722ac1c4318e8581125cc17061d4e27b8d531d74fb41854"
+          },
+          "closed": true
+        },
+        {
+          "phase": "finalize",
+          "supervisor": {
+            "file": "research/m31-radial-integration-2026-10-23/finalize-supervisor.json",
+            "bytes": 218,
+            "sha256": "48b34afce1ac231416e450a39c13ddf66d7152f4c57b544ea43e7bd047e26dcc"
+          },
+          "internalClosure": {
+            "file": "research/m31-radial-integration-2026-10-23/finalize/exit.json",
+            "bytes": 80,
+            "sha256": "b430993650e7d48b93ad773468ed1a0c63077e0dc3f865af0a8809b308dcc5ff"
+          },
+          "closed": true
+        },
+        {
+          "phase": "ui",
+          "supervisor": {
+            "file": "research/m31-radial-integration-2026-10-23/ui-supervisor.json",
+            "bytes": 224,
+            "sha256": "3ca237caaf440bc7c9f0fcbf8dc6afffd68607c3f4db6ff221eaa24794d110f0"
+          },
+          "internalClosure": {
+            "file": "research/m31-radial-integration-2026-10-23/ui/qa.json",
+            "bytes": 487,
+            "sha256": "4808d1b9b3fc5d33e27243fa539a243107fe3c95299721ba4f5a7e8a394c358b"
+          },
+          "closed": true
+        }
+      ]
+    }
+  },
+  "sourceChecks": {
+    "sourcePinCount": 29,
+    "start": [
+      {
+        "path": "outputs/step02b-source/vendor/OrbitControls.js",
+        "bytes": 38703,
+        "sha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c"
+      },
+      {
+        "path": "outputs/step02b-source/vendor/three.core.js",
+        "bytes": 1403455,
+        "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+      },
+      {
+        "path": "outputs/step02b-source/vendor/three.module.js",
+        "bytes": 603113,
+        "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/CLAIMS.md",
+        "bytes": 1505,
+        "sha256": "e5a64fc7c236b984ed3294568ef2a03c240c016915695432bd2d5f6675588fdd"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/LITERATURE.md",
+        "bytes": 2095,
+        "sha256": "81eaf547215f93e2c94e16f29b7cff5c0910ff17d2f08977a5389ba2d60fa364"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/PRIVACY-SOURCE.json",
+        "bytes": 265,
+        "sha256": "26535e275dea175561ee74fe62a6a9b863a016f8381b3f8a33a6f57f509a7229"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/PRIVACY.md",
+        "bytes": 822,
+        "sha256": "bfdf0472d1e7f7dffe86b95abefcf973dcbe7096f788829dbfd571632bc472cd"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/PROTOCOL.md",
+        "bytes": 7097,
+        "sha256": "ff1396b8c056140a75d275252fb2e181382b27bcbb021b00ff40f713ee8a022b"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/RESTART.md",
+        "bytes": 1188,
+        "sha256": "fd93458cb4809b400750496a11b1736fb3a554a0d28fc941245a8e9df23729e6"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/SCHEMA.md",
+        "bytes": 6355,
+        "sha256": "d96c953fbc2ab793cc7e05b6498791587ffda87429ec56ccb0d22eb5190d5e27"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/SOURCE-CHANGES.md",
+        "bytes": 2402,
+        "sha256": "04de28fb29def520bb436e8ace689c4d76fd4a27fcac9d48aed11db58487e717"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/config.json",
+        "bytes": 1833,
+        "sha256": "fac7c77a199514db6521864ea8eff718ed58a160587ac78f67223e9aff349da2"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/input-pins.json",
+        "bytes": 14566,
+        "sha256": "b126e19c660b9f171a0ccbd0789391ae8fbc45abb44f6dcc406c7f6ff2f48cb0"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/review/AUDIT-DESIGN.md",
+        "bytes": 16480,
+        "sha256": "0225575a0683cf19e3c63780e58496795395887809eb64e0d71a5a0f7e6ce020"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/review/PROTOCOL-REVIEW.md",
+        "bytes": 15071,
+        "sha256": "220db404a4d88cf235f9ffd52866220f04e37349f57864538a58885c126c702d"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/runtime.json",
+        "bytes": 855,
+        "sha256": "66de2ba49b9465c74de0a3a9da4a9aca19f30005cdccd78d3307f5ea41b3d035"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/audit.py",
+        "bytes": 69713,
+        "sha256": "a349b5e5a9c640fc8c5d6111377f47d2801e07f95e6a88039bc54a13fb36f56a"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/candidate-cache.cjs",
+        "bytes": 6909,
+        "sha256": "b4e4a63d359e1e326edf834501ffb4db3780db62c1c1c9fc4a1a708933a0b146"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/candidate-kernel.cjs",
+        "bytes": 17265,
+        "sha256": "4fea99f4e61bff3c5eb54a0090e50b48e41d4cdf7cff5cdc770a37366f321b19"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/candidate.cjs",
+        "bytes": 16381,
+        "sha256": "2e11acb60ad7ab447bc137e6ade56c24ef2b383444db7d46643648bd83cd807b"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/common.cjs",
+        "bytes": 2413,
+        "sha256": "1b0dd668be9065422b7d852347ac3f8c7bb07ca0686c3ab3c7a9f5070e221019"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/common.py",
+        "bytes": 4258,
+        "sha256": "54da09f029d5c62f4a9fd042adc42f5372ccb9164c6a7ee1bf771ebf1af643ed"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/finalize.py",
+        "bytes": 1563,
+        "sha256": "34bb732308060791d1946d066019fce56ae99e4e09b89233c0e9ec3a70057273"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/launch.py",
+        "bytes": 888,
+        "sha256": "394a1447fb3e571e19110e31d8ddb59806eeab80d836b2b53e780472fc9a41ce"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/run.cjs",
+        "bytes": 8361,
+        "sha256": "92f92f3b699f209000e9456bca77e9517f2f0aa5db4519c11c61f3ffc7ce6622"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/supervise.py",
+        "bytes": 3072,
+        "sha256": "99fe23d838f894018a924566716c61ba6c41c2aa08c54392e1119474f93f1190"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/ui.cjs",
+        "bytes": 10274,
+        "sha256": "9c049078dd5f672ac5cdc73824b037ecbed1ad66ed4d2ca9472d92a3da5d75a5"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/viewer/app.js",
+        "bytes": 8202,
+        "sha256": "1829c19fb04092bdb7140f00f9a13b6da151dbaf6745b6ff3840fd965f6ab137"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/viewer/index.html",
+        "bytes": 5322,
+        "sha256": "cd1e06feefc67ecbb537aac801b5df37d2d7321d8630e5cc166f4f17a7319d98"
+      }
+    ],
+    "end": [
+      {
+        "path": "outputs/step02b-source/vendor/OrbitControls.js",
+        "bytes": 38703,
+        "sha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c"
+      },
+      {
+        "path": "outputs/step02b-source/vendor/three.core.js",
+        "bytes": 1403455,
+        "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+      },
+      {
+        "path": "outputs/step02b-source/vendor/three.module.js",
+        "bytes": 603113,
+        "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/CLAIMS.md",
+        "bytes": 1505,
+        "sha256": "e5a64fc7c236b984ed3294568ef2a03c240c016915695432bd2d5f6675588fdd"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/LITERATURE.md",
+        "bytes": 2095,
+        "sha256": "81eaf547215f93e2c94e16f29b7cff5c0910ff17d2f08977a5389ba2d60fa364"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/PRIVACY-SOURCE.json",
+        "bytes": 265,
+        "sha256": "26535e275dea175561ee74fe62a6a9b863a016f8381b3f8a33a6f57f509a7229"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/PRIVACY.md",
+        "bytes": 822,
+        "sha256": "bfdf0472d1e7f7dffe86b95abefcf973dcbe7096f788829dbfd571632bc472cd"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/PROTOCOL.md",
+        "bytes": 7097,
+        "sha256": "ff1396b8c056140a75d275252fb2e181382b27bcbb021b00ff40f713ee8a022b"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/RESTART.md",
+        "bytes": 1188,
+        "sha256": "fd93458cb4809b400750496a11b1736fb3a554a0d28fc941245a8e9df23729e6"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/SCHEMA.md",
+        "bytes": 6355,
+        "sha256": "d96c953fbc2ab793cc7e05b6498791587ffda87429ec56ccb0d22eb5190d5e27"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/SOURCE-CHANGES.md",
+        "bytes": 2402,
+        "sha256": "04de28fb29def520bb436e8ace689c4d76fd4a27fcac9d48aed11db58487e717"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/config.json",
+        "bytes": 1833,
+        "sha256": "fac7c77a199514db6521864ea8eff718ed58a160587ac78f67223e9aff349da2"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/input-pins.json",
+        "bytes": 14566,
+        "sha256": "b126e19c660b9f171a0ccbd0789391ae8fbc45abb44f6dcc406c7f6ff2f48cb0"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/review/AUDIT-DESIGN.md",
+        "bytes": 16480,
+        "sha256": "0225575a0683cf19e3c63780e58496795395887809eb64e0d71a5a0f7e6ce020"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/review/PROTOCOL-REVIEW.md",
+        "bytes": 15071,
+        "sha256": "220db404a4d88cf235f9ffd52866220f04e37349f57864538a58885c126c702d"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/runtime.json",
+        "bytes": 855,
+        "sha256": "66de2ba49b9465c74de0a3a9da4a9aca19f30005cdccd78d3307f5ea41b3d035"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/audit.py",
+        "bytes": 69713,
+        "sha256": "a349b5e5a9c640fc8c5d6111377f47d2801e07f95e6a88039bc54a13fb36f56a"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/candidate-cache.cjs",
+        "bytes": 6909,
+        "sha256": "b4e4a63d359e1e326edf834501ffb4db3780db62c1c1c9fc4a1a708933a0b146"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/candidate-kernel.cjs",
+        "bytes": 17265,
+        "sha256": "4fea99f4e61bff3c5eb54a0090e50b48e41d4cdf7cff5cdc770a37366f321b19"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/candidate.cjs",
+        "bytes": 16381,
+        "sha256": "2e11acb60ad7ab447bc137e6ade56c24ef2b383444db7d46643648bd83cd807b"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/common.cjs",
+        "bytes": 2413,
+        "sha256": "1b0dd668be9065422b7d852347ac3f8c7bb07ca0686c3ab3c7a9f5070e221019"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/common.py",
+        "bytes": 4258,
+        "sha256": "54da09f029d5c62f4a9fd042adc42f5372ccb9164c6a7ee1bf771ebf1af643ed"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/finalize.py",
+        "bytes": 1563,
+        "sha256": "34bb732308060791d1946d066019fce56ae99e4e09b89233c0e9ec3a70057273"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/launch.py",
+        "bytes": 888,
+        "sha256": "394a1447fb3e571e19110e31d8ddb59806eeab80d836b2b53e780472fc9a41ce"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/run.cjs",
+        "bytes": 8361,
+        "sha256": "92f92f3b699f209000e9456bca77e9517f2f0aa5db4519c11c61f3ffc7ce6622"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/supervise.py",
+        "bytes": 3072,
+        "sha256": "99fe23d838f894018a924566716c61ba6c41c2aa08c54392e1119474f93f1190"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/source/ui.cjs",
+        "bytes": 10274,
+        "sha256": "9c049078dd5f672ac5cdc73824b037ecbed1ad66ed4d2ca9472d92a3da5d75a5"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/viewer/app.js",
+        "bytes": 8202,
+        "sha256": "1829c19fb04092bdb7140f00f9a13b6da151dbaf6745b6ff3840fd965f6ab137"
+      },
+      {
+        "path": "research/m31-radial-integration-2026-10-23/viewer/index.html",
+        "bytes": 5322,
+        "sha256": "cd1e06feefc67ecbb537aac801b5df37d2d7321d8630e5cc166f4f17a7319d98"
+      }
+    ],
+    "sourceBytesUnchanged": true
+  },
+  "priorRecordsAndManifestPreserved": true,
+  "error": null,
+  "allocationLaunched": false,
+  "diagnosticCalculated": false,
+  "nativeQueries": 0,
+  "auditExecuted": false,
+  "uiLaunched": false,
+  "archiveDecompressed": false,
+  "savedStateReaggregated": false,
+  "rawEvidenceTreatedAsOpaqueBytes": true,
+  "verificationScope": "Publication byte identity, repository public visibility and administrative closure only. No scientific calculation or allocation."
+}

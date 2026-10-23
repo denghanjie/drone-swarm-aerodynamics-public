@@ -1,0 +1,9 @@
+# Recovery closure clarification
+
+The separate recovery is closed and failed before file retrieval. Repository metadata attempts 1 and 2 both exited with a connection error; public visibility was not established, and zero of the 40 files were retrieved. The 188 captured bytes consist of two identical 94-byte stderr messages. Their byte counts and SHA-256 exactly match the known gh message: “error connecting to api.github.com; check your internet connection or https://githubstatus.com”. No new network request was used to establish that match.
+
+The recovery helper was launched with the execution permission parameter omitted, meaning use_default. Its gh subprocesses inherited that restricted environment. No escalated permission request occurred. Environment restrictions may explain the immediate connection failures, but the error alone does not prove the cause. The recovery has not been rerun.
+
+Correction to the recovery Markdown: its route sentence implied public repository visibility had been verified. Metadata retrieval was attempted and failed; visibility was not verified. The JSON authentication text describes the requested route, not successful authenticated access. Its conservative prior-record preservation flag was false with the overall failure; explicit local readback confirms the original failure/incomplete records, protocol and result manifest remain byte-identical. The original recovery receipts and events are preserved unmodified.
+
+All four allocations remained closed, all 29 source pins matched at start and end, and no scientific or UI work ran. A privacy scan of the eight prior new receipt/protocol/journal files found no credential token, credential authorization header or private user root. The JSON clarification records exact identities and scan scope. No passing composite result-public receipt has been created.

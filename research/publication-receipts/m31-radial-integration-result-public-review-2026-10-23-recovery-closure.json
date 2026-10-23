@@ -1,0 +1,118 @@
+{
+  "schema": "m31-radial-integration-public-recovery-closure-clarification-v1",
+  "checkedAtUtc": "2026-10-23T01:54:46.078975+00:00",
+  "passed": false,
+  "recoveryClosed": true,
+  "recoveryReceipt": {
+    "file": "research/publication-receipts/m31-radial-integration-result-public-review-2026-10-23-recovery.json",
+    "bytes": 43697,
+    "sha256": "796dfc491b9dc18e31e5019ff9b8f503dcb4806157a0eb28b424bf864c4482d4"
+  },
+  "recoveryMarkdown": {
+    "file": "research/publication-receipts/m31-radial-integration-result-public-review-2026-10-23-recovery.md",
+    "bytes": 2089,
+    "sha256": "08ec2f0288998498298ff50ad8be7e3a70f19c0f7994024a29d0c5efef0569c6"
+  },
+  "failureJournal": {
+    "file": "research/publication-receipts/m31-radial-integration-result-public-review-2026-10-23-recovery-events.jsonl",
+    "bytes": 1144,
+    "sha256": "59565f440f7e77f382ad221fe4e2cb3e1ef90f612bc4126e5ba4a1a633304473"
+  },
+  "repositoryPublicVisibilityEstablished": false,
+  "fileRetrievalAttempted": false,
+  "recoveredFiles": 0,
+  "unresolvedFiles": 40,
+  "aggregateCapturedBytes": 188,
+  "originalFailedAcquisitionPreserved": true,
+  "priorRecordsAndManifestPreservationVerifiedNow": true,
+  "executionPermissionEvidence": {
+    "tool": "exec_command",
+    "sandboxPermissionsParameter": "omitted",
+    "effectiveMode": "use_default",
+    "requireEscalatedRequested": false,
+    "ghSubprocessInheritance": "Inherited the recovery helper execution environment.",
+    "causeAssessment": "Restricted network environment is a possible explanation for immediate connection failures; the captured generic error alone does not establish cause."
+  },
+  "stderrReconstruction": {
+    "method": "Exact byte count and SHA-256 match of the known gh connection-error message against both captured stderr identities; no additional network operation.",
+    "matchedMessage": "error connecting to api.github.com\ncheck your internet connection or https://githubstatus.com\n",
+    "bytes": 94,
+    "sha256": "eed65211f0fcee1b82c2661764250c1adaebcb36f0cb78a702d59632f056c439",
+    "matchesEventNumbers": [
+      1,
+      2
+    ]
+  },
+  "corrections": [
+    {
+      "record": "research/publication-receipts/m31-radial-integration-result-public-review-2026-10-23-recovery.md",
+      "text": "The route sentence saying public repository visibility was checked before file retrieval is inaccurate for this failed acquisition. Metadata retrieval was attempted twice and failed; no public visibility was established and no file retrieval began."
+    },
+    {
+      "record": "research/publication-receipts/m31-radial-integration-result-public-review-2026-10-23-recovery.json",
+      "text": "Authentication describes the requested existing-gh route, not successful authenticated access. repositoryMetadata is null. priorRecordsAndManifestPreserved was conservatively set false with the overall error; explicit local readback confirms all prior record and manifest identities remained unchanged."
+    }
+  ],
+  "allAllocationsClosedAtStartAndEnd": true,
+  "sourcePinCountCheckedAtStartAndEnd": 29,
+  "sourceBytesUnchanged": true,
+  "privacyScan": {
+    "passed": true,
+    "scope": [
+      {
+        "file": "research/publication-receipts/m31-radial-integration-result-public-review-2026-10-23-failure.json",
+        "bytes": 3968875,
+        "sha256": "9a59bf5d8e38b0c060b0f4cf623ffc9a769f5085745c49c82d8fd673915292e0"
+      },
+      {
+        "file": "research/publication-receipts/m31-radial-integration-result-public-review-2026-10-23-incomplete.json",
+        "bytes": 18924,
+        "sha256": "a5b7da05b47bd6f12473208aa5e58b8e77e0be1d0bc00a0510bf96dc890a4002"
+      },
+      {
+        "file": "research/publication-receipts/m31-radial-integration-result-public-review-2026-10-23-incomplete.md",
+        "bytes": 11387,
+        "sha256": "facc74873b261573f9fcca1c7ae2bfe466f1b7a57608e35eb90b1ad7002c4bbb"
+      },
+      {
+        "file": "research/publication-receipts/m31-radial-integration-result-public-review-2026-10-23-recovery-protocol.json",
+        "bytes": 14075,
+        "sha256": "ef16dcf90f737a1610f04a3765f2a3a625fb2f248685b4d1cb1ceffebf367acf"
+      },
+      {
+        "file": "research/publication-receipts/m31-radial-integration-result-public-review-2026-10-23-recovery-protocol.md",
+        "bytes": 10482,
+        "sha256": "1c4ad10e5060c04ae2dc41fb9dccbc52810553a6580b225c2362496681a9479d"
+      },
+      {
+        "file": "research/publication-receipts/m31-radial-integration-result-public-review-2026-10-23-recovery.json",
+        "bytes": 43697,
+        "sha256": "796dfc491b9dc18e31e5019ff9b8f503dcb4806157a0eb28b424bf864c4482d4"
+      },
+      {
+        "file": "research/publication-receipts/m31-radial-integration-result-public-review-2026-10-23-recovery.md",
+        "bytes": 2089,
+        "sha256": "08ec2f0288998498298ff50ad8be7e3a70f19c0f7994024a29d0c5efef0569c6"
+      },
+      {
+        "file": "research/publication-receipts/m31-radial-integration-result-public-review-2026-10-23-recovery-events.jsonl",
+        "bytes": 1144,
+        "sha256": "59565f440f7e77f382ad221fe4e2cb3e1ef90f612bc4126e5ba4a1a633304473"
+      }
+    ],
+    "checks": [
+      "private-user-root",
+      "credential-token",
+      "credential-header"
+    ],
+    "credentialsOrPrivateUserRootsFound": false
+  },
+  "newNetworkOperationsDuringClarification": 0,
+  "rerunPerformed": false,
+  "originalRecoveryReceiptAndJournalUnmodified": true,
+  "allocationLaunched": false,
+  "auditExecuted": false,
+  "uiLaunched": false,
+  "archiveDecoded": false,
+  "newStatisticsCalculated": false
+}
