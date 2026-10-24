@@ -1,0 +1,62 @@
+{
+  "schema": "m31-seven-target-os-materialization-independent-source-review-v1",
+  "checkedAtUtc": "2026-10-23T14:15:20.691492+00:00",
+  "passed": true,
+  "helper": {
+    "file": "research/publication-receipts/m31-native-factor-reuse-local-materialization-2026-10-23-v1-helper.py",
+    "bytes": 17748,
+    "sha256": "7be508b7e54a83a673d73eaa3f465b71e79b4ef63fcc5b39b2015319a2793a7c"
+  },
+  "protocolBeforeReviewFinalization": {
+    "file": "research/publication-receipts/m31-native-factor-reuse-local-materialization-2026-10-23-v1-protocol.json",
+    "bytes": 5601,
+    "sha256": "e3a084ca647697054d52cf7779772a197375e6da16eb9a3a84d81bd62489cef0"
+  },
+  "approvedProtocolFinalizationFields": [
+    "status=reviewed-ready",
+    "reviewed=true",
+    "independentReviewPin=this review identity"
+  ],
+  "scope": "One separately authorized OS download-activation and bounded metadata-polling attempt for exact seven targets only. Source-only review; no helper/OS API execution performed.",
+  "targetCount": 7,
+  "targetBytes": 571253860,
+  "sourceManifest": {
+    "file": "research/m31-native-factor-reuse-2026-10-23/source-manifest.json",
+    "bytes": 21212,
+    "sha256": "858ba637b83da51296ffd8cc9cd4d91556de70ef568275fab144b353273eda4d"
+  },
+  "jxa": {
+    "bytes": 964,
+    "sha256": "fa3c976272add5987f3c8b9152cabde49e42783a9df3538dbce36fe5d214925d"
+  },
+  "bounds": {
+    "overallSeconds": 360,
+    "activationSeconds": 10,
+    "activationAttemptsPerTarget": 1,
+    "maxActivationAttempts": 7,
+    "pollingSeconds": 300,
+    "pollCadenceSeconds": 15,
+    "maxPollObservations": 21,
+    "metadataSeconds": 3,
+    "closureReserveSeconds": 30,
+    "maxCapturedBytes": 262144,
+    "maxEvidenceBytes": 2097152
+  },
+  "findings": [],
+  "checks": [
+    "Only exact shared Git pack and six source-manifest input paths are targets; source/input contents are never decoded/read.",
+    "Existing worktree .git pointer binds exact shared directory; stat requires regular files and expected sizes.",
+    "One Foundation activation per initially dataless target; sequential10s-bounded children, max7. Unsupported/rejected/malformed/timeout outcomes stop activations and remain failures.",
+    "No Git invocation, custom pack reader, deletion, repack, installation, source rewrite, publication or scientific execution.",
+    "Flags polling15s cadence\u2264300s clipped by360s overall and30s closure reserve; each stat child\u22643s; small administrative reads\u22645s.",
+    "Initial/end allocation absence and pinned helper/protocol/review/source manifest/prior failed-plan identities checked; original failure remains immutable.",
+    "Receipt/journal preserve activation outcome and metadata; success requires all7 lack dataless at latest and closure observations.",
+    "Limitations explicitly disclose OS daemon transfers may continue beyond helper bounds; cleared flags do not establish fresh content identity, public availability, lasting residency or source-gate pass."
+  ],
+  "helperExecuted": false,
+  "osApiInvoked": false,
+  "gitCommands": 0,
+  "networkToolsInvoked": 0,
+  "scientificQueries": 0,
+  "qualification": "Cleared to finalize only the three listed review fields and execute this one bounded readiness attempt under parent approval. Metadata readiness cannot replace subsequent fresh source/input hashes and public byte verification."
+}

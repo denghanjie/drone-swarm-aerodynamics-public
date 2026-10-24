@@ -1,0 +1,106 @@
+{
+  "schema": "m31-seven-target-os-materialization-v1",
+  "status": "reviewed-ready",
+  "reviewed": true,
+  "sourceCommit": "7e6ab5b1d3bb819a7a17178c9a5636bde49ca6f2",
+  "outputPrefix": "research/publication-receipts/m31-native-factor-reuse-local-materialization-2026-10-23-v1",
+  "helper": {
+    "file": "research/publication-receipts/m31-native-factor-reuse-local-materialization-2026-10-23-v1-helper.py",
+    "bytes": 17748,
+    "sha256": "7be508b7e54a83a673d73eaa3f465b71e79b4ef63fcc5b39b2015319a2793a7c"
+  },
+  "targets": [
+    {
+      "id": "git-pack",
+      "kind": "git-pack",
+      "commonGitDirSibling": "drone-swarm-aerodynamics-public/.git",
+      "relativePath": "objects/pack/pack-4aa67c7e8b930735fe1b240a91415d6f8ac5d1f6.pack",
+      "bytes": 424593415
+    },
+    {
+      "id": "input-part000",
+      "kind": "input",
+      "relativePath": "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part000",
+      "bytes": 33554432,
+      "sha256": "079b27f80012b61a5b7da88d23604c617b290cc60c98b73c62d3f00cf2b75793"
+    },
+    {
+      "id": "input-part001",
+      "kind": "input",
+      "relativePath": "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part001",
+      "bytes": 33554432,
+      "sha256": "32dc050281d8822ddb5b94710b68fac5fb7ad70eeab13a24bdb369038164ce81"
+    },
+    {
+      "id": "input-part003",
+      "kind": "input",
+      "relativePath": "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part003",
+      "bytes": 33554432,
+      "sha256": "e44877bab0936c31aab556a39a0151855ec316d13ce6c233db9ceae5ec9fdc86"
+    },
+    {
+      "id": "input-part004",
+      "kind": "input",
+      "relativePath": "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part004",
+      "bytes": 33554432,
+      "sha256": "36cbf56cc311de3a453254c0637cd213d047a47dafe5a8c0f01d6a35685838f4"
+    },
+    {
+      "id": "neighbor-stages",
+      "kind": "input",
+      "relativePath": "research/m31-neighbor-density-2026-10-23/results/stages.jsonl",
+      "bytes": 9063908,
+      "sha256": "8098f5d2478b9a7f7184ed34f5df41199b565f969e9691ad9099ee6f3e48c1c3"
+    },
+    {
+      "id": "radial-audit",
+      "kind": "input",
+      "relativePath": "research/m31-radial-integration-2026-10-23/audit/audit.json",
+      "bytes": 3378809,
+      "sha256": "59ab04097ac11731e3f978b164c32f3db863a1a3be218e5e55fbb80ddff28017"
+    }
+  ],
+  "bounds": {
+    "overallSeconds": 360,
+    "activationSeconds": 10,
+    "activationAttemptsPerTarget": 1,
+    "maxActivationAttempts": 7,
+    "pollingSeconds": 300,
+    "pollCadenceSeconds": 15,
+    "maxPollObservations": 21,
+    "metadataSeconds": 3,
+    "closureReserveSeconds": 30,
+    "maxCapturedBytes": 262144,
+    "maxEvidenceBytes": 2097152
+  },
+  "sourceManifest": {
+    "file": "research/m31-native-factor-reuse-2026-10-23/source-manifest.json",
+    "bytes": 21212,
+    "sha256": "858ba637b83da51296ffd8cc9cd4d91556de70ef568275fab144b353273eda4d"
+  },
+  "preservedEvidence": [
+    {
+      "file": "research/publication-receipts/m31-native-factor-reuse-handoff-2026-10-23-plan.json",
+      "bytes": 319,
+      "sha256": "37ddd867ab6e99bf8d9c23d208da20c812312deb71bd95f82702a38d48bfd516"
+    }
+  ],
+  "api": "NSFileManager.startDownloadingUbiquitousItemAtURL:error:",
+  "jxa": {
+    "bytes": 964,
+    "sha256": "fa3c976272add5987f3c8b9152cabde49e42783a9df3538dbce36fe5d214925d"
+  },
+  "independentReviewPin": {
+    "file": "research/publication-receipts/m31-native-factor-reuse-local-materialization-2026-10-23-v1-review.json",
+    "bytes": 3347,
+    "sha256": "19defe8db979ed63c0e992593eda4887f2fbaeff934fbd7079e178c716cfaf19"
+  },
+  "executionPermission": "require_escalated",
+  "scope": "One separately bounded OS materialization attempt for exactly seven existing dataless paths; no Git commands, archive decoding, scientific execution, publication, source edits, manual repair, repack, deletion or installations.",
+  "activation": "Read initial file flags and size. For each target observed dataless, request NSFileManager download once via system osascript JXA. Each child is bounded to10s. Unsupported method, rejection, timeout or malformed output is a retained failure and stops further activations. Already-local targets are recorded and skipped.",
+  "polling": "Poll remaining dataless target flags on15s cycle cadence for at most300s, clipped by overall360s and30s closure reserve. At most21 cycles; each stat child at most3s. Record all initial/latest/closure metadata. Seven regular files of exact expected size must all lack dataless at final observations for readiness to pass.",
+  "limitations": "The system cloud service may continue transfers after this helper or an activation child ends. Its background transfers are not subject to these process or polling bounds. Flag clearance is only a momentary metadata observation, not fresh SHA256 identity verification, residency guarantee, or public-proof acquisition. OS optimization may evict bytes again. The six expected input hashes are source-manifest descriptors and are not asserted freshly verified by this attempt.",
+  "closure": "Retain single-use lock, journal, receipt, failures and unknown activation outcomes. Recheck helper/protocol/review/source-manifest/original failed-prepare identities and all numerical/display allocations unstarted. No retry or automatic next phase. Fresh content identity/public source verification remains separately required.",
+  "privacy": "Stored records identify repository-relative files or a relative shared Git directory; absolute local paths in child diagnostics are redacted.",
+  "priorPreparation": "Original offline prepare remains closed failed after45.186330875s and950754 Git metadata bytes; its exact failed command and root cause are not proven by this materialization attempt."
+}

@@ -1,0 +1,98 @@
+{
+  "schema": "m31-continuation-saved-evidence-review-v1",
+  "reviewPassed": true,
+  "reviewScope": "Independent consistency review of saved administrative records only. The recovery and public source gate remain failed/incomplete.",
+  "sourceCommit": "7e6ab5b1d3bb819a7a17178c9a5636bde49ca6f2",
+  "recoveryReceipt": {
+    "file": "research/publication-receipts/m31-native-factor-reuse-source-public-review-2026-10-23-recovery-v2-failure.json",
+    "bytes": 243545,
+    "sha256": "c3e5fe6de41c4ef98cbe54dc8a3624b6037530911ac5c6d5e095400c53ee7829"
+  },
+  "recoveryJournal": {
+    "file": "research/publication-receipts/m31-native-factor-reuse-source-public-review-2026-10-23-recovery-v2-events.jsonl",
+    "bytes": 164638,
+    "sha256": "aa687a91e13d834a7539d886ed24e9c4df34bcf678574a2336773ab46e5589b8"
+  },
+  "recovery": {
+    "closed": true,
+    "passed": false,
+    "freshCompleteProofs": 5,
+    "requiredRecoveryProofs": 8,
+    "publicRequests": 11,
+    "capturedPublicBytes": 180259040,
+    "wallSeconds": 260.409688292,
+    "journalEvents": 423,
+    "localClosureIdentities": 75,
+    "closureErrors": [],
+    "newFailedAttempts": 6,
+    "earlierFailedAttemptsPreserved": 40,
+    "totalFailedPublicAttemptsPreserved": 46
+  },
+  "partialPublicCoverage": {
+    "originalProofs": 66,
+    "distinctNewProofs": 5,
+    "distinctCoveredPins": 71,
+    "requiredPins": 74,
+    "completeCompositeIssued": false,
+    "sourceGatePassed": false,
+    "remainingPaths": [
+      "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part003",
+      "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part004",
+      "research/m31-radial-integration-2026-10-23/audit/audit.json"
+    ]
+  },
+  "failureClassification": {
+    "partialBody90SecondTimeouts": 3,
+    "sslConnectionTimeouts": 1,
+    "httpStatusParserFailures": 2,
+    "parserFailureInterpretation": "The radial audit attempts failed invalid-http-status-line after 0.884238375 and 0.766426291 seconds. Their HTTP statuses remain unknown. These are verifier parsing failures, not network timeouts, HTTP404, or successful identity checks. The helper uses gh api --include while its status-line parser requires CRLF. Raw offending prefixes were not retained, so the precise returned format and cause cannot be reconstructed from these receipts. No fix or retry was performed by this review."
+  },
+  "localAvailability": {
+    "sevenTargetReceipt": {
+      "file": "research/publication-receipts/m31-native-factor-reuse-local-materialization-2026-10-23-v1.json",
+      "bytes": 55231,
+      "sha256": "dfc7767e4b6078499a913925023744aa1b2505d0336aeb0bee8cd5b1f5e893a4"
+    },
+    "fullPrerequisiteReceipt": {
+      "file": "research/publication-receipts/m31-native-factor-reuse-full-prerequisite-materialization-2026-10-24-receipt.json",
+      "bytes": 60033,
+      "sha256": "e69c9ac0621a19d61363fb2f392a2de63a38ceaab2ab166793be2626244a27da"
+    },
+    "fullPrerequisiteSupervisor": {
+      "file": "research/publication-receipts/m31-native-factor-reuse-full-prerequisite-materialization-2026-10-24-supervisor.json",
+      "bytes": 503,
+      "sha256": "2ed1e1cb65eb10b130497db285fe107c67b1c80b5671148c8e9046ba1e0c6723"
+    },
+    "sevenTargetPassed": true,
+    "eightyNinePathPassed": true,
+    "interpretation": "Saved observations show dataless cleared for seven targets and then all 89 prerequisites. These OS operations establish momentary local availability, not independent public identity or a residency guarantee. The v2 recovery separately rehashed all 74 frozen files plus the source manifest locally. Neither form of local evidence substitutes for the three missing public proofs. Startup interruption, separate helper bootstrap and startup recovery remain recorded."
+  },
+  "verifiedSavedRelationships": [
+    "Recovery receipt events equal all 423 numbered journal events and its journal byte pin matches.",
+    "Eleven attempt starts pair with eleven ends; five are complete successes and six failures. Summed captured stdout/stderr bytes equal the receipt total.",
+    "Each of the five success chains matches its frozen descriptor, local SHA256/length/Git blob identity, current source tree, origin tree, retrieval tree, and fresh successful public body.",
+    "The original 66 proof paths and five new proof paths are disjoint; their exact union covers 71 of the 74 manifest paths.",
+    "All 75 saved local-end identities match the complete manifest plus source-manifest descriptor. Both original failed receipt/journal pairs remain byte-pinned and unchanged.",
+    "Seven-target materialization events equal its pinned journal, and all seven closing metadata observations lack dataless. The 89-path receipt matches its protocol hash and all 89 final observations lack dataless.",
+    "Parent summary, closure and new restart header correctly state incomplete source verification, unknown experiment outcome, 71/74 partial coverage, and parser failures of unestablished cause."
+  ],
+  "parentSummary": {
+    "file": "research/publication-receipts/m31-native-factor-reuse-continuation-2026-10-24-SUMMARY.md",
+    "bytes": 3418,
+    "sha256": "d1c4fc9b2aecb317ef4abf6191ee8a2a57a8c4689a11ab8378548bd18f2bde73"
+  },
+  "parentClosure": {
+    "file": "research/publication-receipts/m31-native-factor-reuse-continuation-2026-10-24-CLOSURE.json",
+    "bytes": 1271,
+    "sha256": "e7442c0ec1a1aeb694f606109dfbaacedd423dcaab2fbd38b5295dd15b3f0be0"
+  },
+  "restartAtReview": {
+    "file": "research/OVERNIGHT-RESTART.md",
+    "bytes": 134316,
+    "sha256": "6d04fbd9aae835d33d9141d553c295c779b99e78ca48177442d69972825b8b4d"
+  },
+  "safeRestart": "Preserve all closed attempts, failures, frozen source, thresholds and numerical budgets. A new separately reviewed bounded administrative plan must address the three missing public identities and diagnose the response parser, explicitly defining any use of retained successful chains. Do not reopen v2, silently enlarge its retries, treat partial bodies as identities, or promote its failed receipt into a passed composite. Only complete independently checked coverage of all 74 pins permits the existing sequential producer, audit, finalization and UI plan. Local commit or push alone proves neither that gate nor scientific success.",
+  "scientificAllocations": "Producer, audit, finalize and UI all unstarted in saved start/end records.",
+  "reviewerActivity": "Saved JSON/JSONL/text reads and consistency checks only; no helpers, Git commands, public acquisition, models, controls, benchmarks, archive decoding, UI, or frozen-file modifications.",
+  "pushReview": "Pending exact proposed commit SHA and prospective push protocol; no push executed or approved by this record."
+}

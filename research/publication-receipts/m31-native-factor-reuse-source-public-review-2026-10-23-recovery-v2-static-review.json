@@ -1,0 +1,39 @@
+{
+  "schema": "m31-recovery-v2-independent-static-review-v1",
+  "passed": true,
+  "scope": "Static source and prospective protocol review only; no runtime, public-proof, local-readiness, or scientific success claim.",
+  "executionAuthorized": false,
+  "sourceCommit": "7e6ab5b1d3bb819a7a17178c9a5636bde49ca6f2",
+  "helper": {
+    "file": "research/publication-receipts/m31-native-factor-reuse-source-public-review-2026-10-23-recovery-v2-helper.py",
+    "bytes": 38382,
+    "sha256": "16ff4660022f7d83c38fb16a66790dad7d9a55b797ad86cf8cb90fdc41acd210"
+  },
+  "protocol": {
+    "file": "research/publication-receipts/m31-native-factor-reuse-source-public-review-2026-10-23-recovery-v2-protocol.json",
+    "bytes": 19802,
+    "sha256": "676df2153dfda84dd458150f0e204747629350b1387601e5176d7013443f582e"
+  },
+  "checks": [
+    "Exactly eight missing source-manifest input descriptors are derived after validation of the original 66 successful source acquisition proof chains, original manifest proof, and public repository metadata.",
+    "Each fresh recovery binds current source commit, declared input origin commit, and the fixed historical retrieval commit to the same ordinary Git blob OID, alongside fresh opaque local SHA256, byte length, and Git blob SHA1.",
+    "The seven fixed raw-CDN routes and one fixed authenticated Contents API raw route are chosen from pinned historical receipts. Historical receipts provide route-selection evidence only; the eight public bodies must be downloaded afresh and match all three identities. There is no alternative-ref or route fallback.",
+    "Original 24 failed public attempts and prior recovery's 16 failed attempts remain in separately pinned unchanged receipts and journals. Original acquisitionPassed remains false; publication and numerical allocations are not opened by this helper.",
+    "Public capture permits at most two concurrent transfers, two attempts per file, sixteen public requests, 90 seconds per attempt, and 512 MiB aggregate captured stdout/stderr including failed partial bodies and HTTP framing.",
+    "Existing administrative byte reads, opaque payload hashing, and Git metadata calls run in killed-on-deadline subprocesses with 45-second and 2-MiB-output limits under the 900-second global deadline. Dataless payloads are never read synchronously in the main process.",
+    "All four scientific/display allocations must remain unstarted. The complete manifest's 74 local file identities plus source-manifest identity must be rechecked at closure. Missing closure checks fail recovery.",
+    "Success requires eight fresh proofs and no errors or closure failures. A separately reviewed composite is permitted only afterwards; this helper does not forge compatibility with the frozen public verifier.",
+    "Requested deadline correction is present: elapsed time is rechecked after the final bounded journal read, and an overrun forces passed:false while retaining a final-overall-wall-cap closure error.",
+    "Final helper AST parsing, protocol JSON parsing, and both exact byte identities were independently checked without importing or executing the helper."
+  ],
+  "readinessLimitation": "An optional reviewer cross-check stalled while reading the first historicalRadialReceipt JSON and was interrupted with exit 130 before any Git, network, or scientific execution. This review therefore confirms the source's validation logic, not successful runtime readback of that historical receipt. The candidate's bounded administrative read will fail honestly if it remains unavailable. Local filesystem readiness remains unresolved and must be positively established before launch.",
+  "reviewerOperations": {
+    "helperImportedOrExecuted": false,
+    "gitCommands": 0,
+    "networkRequests": 0,
+    "scientificExecutions": 0,
+    "archivesDecoded": 0,
+    "frozenSourceEdits": 0
+  },
+  "nextAction": "Stop after static review. Preserve all failed attempts. No execution until local filesystem reliability is restored and the parent provides explicit approval for the exact frozen recovery protocol."
+}

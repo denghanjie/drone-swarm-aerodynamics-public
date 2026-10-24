@@ -1,3 +1,13 @@
+# Current handoff — 24 October 2026: source gate still incomplete
+
+[Plain summary](publication-receipts/m31-native-factor-reuse-continuation-2026-10-24-SUMMARY.md) · [Closure](publication-receipts/m31-native-factor-reuse-continuation-2026-10-24-CLOSURE.json).
+
+Local materialization succeeded; subsequent separately bounded immutable-ref public recovery v2 CLOSED FAILED: 5/8 input proofs, 11 requests, six failed attempts, 260.409688292 seconds, 180259040 captured bytes, all75 local identities rechecked, zero closure errors. Together with original66 this supplies71/74, not a complete launch gate. Missing: parts003/004 and radial-integration audit. The latter failed HTTP-status parsing twice; do not call those network timeouts. Prior40 failures preserved. Read exact v2 failure receipt/journal and independent administrative reviews.
+
+Source7e6ab5b1d3bb819a7a17178c9a5636bde49ca6f2 unchanged. No source-publication.json. Producer/audit/finalize/UI UNSTARTED. No scientific or display update. Never rerun closed recovery/scientific allocations or grow budgets silently. Next requires a separately reviewed bounded plan addressing the three missing identities and parser failure, then complete independent source proof before any numerical launch. Existing reviewers only; keep8876. Public handoff status requires separate publication receipt, not this header. Overall research unfinished.
+
+---
+
 # Current handoff — independent source verification blocked, 23 October 2026
 
 Native factor reuse source is public at `7e6ab5b1d3bb819a7a17178c9a5636bde49ca6f2`, unchanged. [Readable handoff](publication-receipts/m31-native-factor-reuse-handoff-2026-10-23-SUMMARY.md) and [closure](publication-receipts/m31-native-factor-reuse-handoff-2026-10-23-CLOSURE.json).

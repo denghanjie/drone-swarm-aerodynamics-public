@@ -1,0 +1,1846 @@
+{
+  "schema": "m31-seven-target-os-materialization-closure-v1",
+  "closed": true,
+  "passed": true,
+  "protocol": {
+    "file": "research/publication-receipts/m31-native-factor-reuse-local-materialization-2026-10-23-v1-protocol.json",
+    "bytes": 5805,
+    "sha256": "ca698f5fd7d1c7feb48d4779aab149b1934937392d4bc5f1e489abdf3eccc5c6"
+  },
+  "helper": {
+    "file": "research/publication-receipts/m31-native-factor-reuse-local-materialization-2026-10-23-v1-helper.py",
+    "bytes": 17748,
+    "sha256": "7be508b7e54a83a673d73eaa3f465b71e79b4ef63fcc5b39b2015319a2793a7c"
+  },
+  "sourceCommit": "7e6ab5b1d3bb819a7a17178c9a5636bde49ca6f2",
+  "targets": [
+    {
+      "id": "git-pack",
+      "kind": "git-pack",
+      "commonGitDirSibling": "drone-swarm-aerodynamics-public/.git",
+      "relativePath": "objects/pack/pack-4aa67c7e8b930735fe1b240a91415d6f8ac5d1f6.pack",
+      "bytes": 424593415
+    },
+    {
+      "id": "input-part000",
+      "kind": "input",
+      "relativePath": "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part000",
+      "bytes": 33554432,
+      "sha256": "079b27f80012b61a5b7da88d23604c617b290cc60c98b73c62d3f00cf2b75793"
+    },
+    {
+      "id": "input-part001",
+      "kind": "input",
+      "relativePath": "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part001",
+      "bytes": 33554432,
+      "sha256": "32dc050281d8822ddb5b94710b68fac5fb7ad70eeab13a24bdb369038164ce81"
+    },
+    {
+      "id": "input-part003",
+      "kind": "input",
+      "relativePath": "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part003",
+      "bytes": 33554432,
+      "sha256": "e44877bab0936c31aab556a39a0151855ec316d13ce6c233db9ceae5ec9fdc86"
+    },
+    {
+      "id": "input-part004",
+      "kind": "input",
+      "relativePath": "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part004",
+      "bytes": 33554432,
+      "sha256": "36cbf56cc311de3a453254c0637cd213d047a47dafe5a8c0f01d6a35685838f4"
+    },
+    {
+      "id": "neighbor-stages",
+      "kind": "input",
+      "relativePath": "research/m31-neighbor-density-2026-10-23/results/stages.jsonl",
+      "bytes": 9063908,
+      "sha256": "8098f5d2478b9a7f7184ed34f5df41199b565f969e9691ad9099ee6f3e48c1c3"
+    },
+    {
+      "id": "radial-audit",
+      "kind": "input",
+      "relativePath": "research/m31-radial-integration-2026-10-23/audit/audit.json",
+      "bytes": 3378809,
+      "sha256": "59ab04097ac11731e3f978b164c32f3db863a1a3be218e5e55fbb80ddff28017"
+    }
+  ],
+  "bounds": {
+    "overallSeconds": 360,
+    "activationSeconds": 10,
+    "activationAttemptsPerTarget": 1,
+    "maxActivationAttempts": 7,
+    "pollingSeconds": 300,
+    "pollCadenceSeconds": 15,
+    "maxPollObservations": 21,
+    "metadataSeconds": 3,
+    "closureReserveSeconds": 30,
+    "maxCapturedBytes": 262144,
+    "maxEvidenceBytes": 2097152
+  },
+  "events": [
+    {
+      "event": 1,
+      "elapsedSeconds": 2.342559459,
+      "kind": "command-intent",
+      "operation": "initial-git-pack",
+      "secondsBound": 3
+    },
+    {
+      "event": 2,
+      "elapsedSeconds": 2.3483986669999997,
+      "kind": "command-result",
+      "operation": "initial-git-pack",
+      "intentEvent": 1,
+      "wallSeconds": 0.005004500000000078,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 61,
+        "sha256": "fab7a1d36c52cf5785cd34660fc2af4177c0cc16b37e43d81979f688b5a6ef9c"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "424593415\t1073774688\thidden,compressed,dataless\tRegular File\n",
+      "stderrText": ""
+    },
+    {
+      "event": 3,
+      "elapsedSeconds": 2.3489815,
+      "kind": "metadata-observation",
+      "operation": "initial-git-pack",
+      "metadata": {
+        "target": "git-pack",
+        "bytes": 424593415,
+        "flagsNumeric": "1073774688",
+        "flagsText": "hidden,compressed,dataless",
+        "dataless": true,
+        "observedAtElapsedSeconds": 2.348979584
+      }
+    },
+    {
+      "event": 4,
+      "elapsedSeconds": 2.3493112089999997,
+      "kind": "command-intent",
+      "operation": "initial-input-part000",
+      "secondsBound": 3
+    },
+    {
+      "event": 5,
+      "elapsedSeconds": 2.351995459,
+      "kind": "command-result",
+      "operation": "initial-input-part000",
+      "intentEvent": 4,
+      "wallSeconds": 0.0023440410000001854,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 53,
+        "sha256": "0d33808d1475b97ac5906000ed50a7d8fc21caf42983cfdb8b9951dd4045512f"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "33554432\t1073741920\tcompressed,dataless\tRegular File\n",
+      "stderrText": ""
+    },
+    {
+      "event": 6,
+      "elapsedSeconds": 2.3524818339999998,
+      "kind": "metadata-observation",
+      "operation": "initial-input-part000",
+      "metadata": {
+        "target": "input-part000",
+        "bytes": 33554432,
+        "flagsNumeric": "1073741920",
+        "flagsText": "compressed,dataless",
+        "dataless": true,
+        "observedAtElapsedSeconds": 2.352481084
+      }
+    },
+    {
+      "event": 7,
+      "elapsedSeconds": 2.352807834,
+      "kind": "command-intent",
+      "operation": "initial-input-part001",
+      "secondsBound": 3
+    },
+    {
+      "event": 8,
+      "elapsedSeconds": 2.355246334,
+      "kind": "command-result",
+      "operation": "initial-input-part001",
+      "intentEvent": 7,
+      "wallSeconds": 0.002096042000000242,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 53,
+        "sha256": "0d33808d1475b97ac5906000ed50a7d8fc21caf42983cfdb8b9951dd4045512f"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "33554432\t1073741920\tcompressed,dataless\tRegular File\n",
+      "stderrText": ""
+    },
+    {
+      "event": 9,
+      "elapsedSeconds": 2.3557430839999998,
+      "kind": "metadata-observation",
+      "operation": "initial-input-part001",
+      "metadata": {
+        "target": "input-part001",
+        "bytes": 33554432,
+        "flagsNumeric": "1073741920",
+        "flagsText": "compressed,dataless",
+        "dataless": true,
+        "observedAtElapsedSeconds": 2.355742292
+      }
+    },
+    {
+      "event": 10,
+      "elapsedSeconds": 2.356064959,
+      "kind": "command-intent",
+      "operation": "initial-input-part003",
+      "secondsBound": 3
+    },
+    {
+      "event": 11,
+      "elapsedSeconds": 2.3583950419999997,
+      "kind": "command-result",
+      "operation": "initial-input-part003",
+      "intentEvent": 10,
+      "wallSeconds": 0.0019001249999996972,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 53,
+        "sha256": "0d33808d1475b97ac5906000ed50a7d8fc21caf42983cfdb8b9951dd4045512f"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "33554432\t1073741920\tcompressed,dataless\tRegular File\n",
+      "stderrText": ""
+    },
+    {
+      "event": 12,
+      "elapsedSeconds": 2.3588824589999997,
+      "kind": "metadata-observation",
+      "operation": "initial-input-part003",
+      "metadata": {
+        "target": "input-part003",
+        "bytes": 33554432,
+        "flagsNumeric": "1073741920",
+        "flagsText": "compressed,dataless",
+        "dataless": true,
+        "observedAtElapsedSeconds": 2.358881709
+      }
+    },
+    {
+      "event": 13,
+      "elapsedSeconds": 2.359217125,
+      "kind": "command-intent",
+      "operation": "initial-input-part004",
+      "secondsBound": 3
+    },
+    {
+      "event": 14,
+      "elapsedSeconds": 2.3613435839999997,
+      "kind": "command-result",
+      "operation": "initial-input-part004",
+      "intentEvent": 13,
+      "wallSeconds": 0.0017308329999998762,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 53,
+        "sha256": "0d33808d1475b97ac5906000ed50a7d8fc21caf42983cfdb8b9951dd4045512f"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "33554432\t1073741920\tcompressed,dataless\tRegular File\n",
+      "stderrText": ""
+    },
+    {
+      "event": 15,
+      "elapsedSeconds": 2.362491375,
+      "kind": "metadata-observation",
+      "operation": "initial-input-part004",
+      "metadata": {
+        "target": "input-part004",
+        "bytes": 33554432,
+        "flagsNumeric": "1073741920",
+        "flagsText": "compressed,dataless",
+        "dataless": true,
+        "observedAtElapsedSeconds": 2.36249075
+      }
+    },
+    {
+      "event": 16,
+      "elapsedSeconds": 2.362891125,
+      "kind": "command-intent",
+      "operation": "initial-neighbor-stages",
+      "secondsBound": 3
+    },
+    {
+      "event": 17,
+      "elapsedSeconds": 2.3654557499999997,
+      "kind": "command-result",
+      "operation": "initial-neighbor-stages",
+      "intentEvent": 16,
+      "wallSeconds": 0.0021675000000001,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 52,
+        "sha256": "3a3d51b328a0a98b66c34ed95b33ad25a78c7ab9f0acef2f5bec128bf5d855d1"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "9063908\t1073741920\tcompressed,dataless\tRegular File\n",
+      "stderrText": ""
+    },
+    {
+      "event": 18,
+      "elapsedSeconds": 2.366175125,
+      "kind": "metadata-observation",
+      "operation": "initial-neighbor-stages",
+      "metadata": {
+        "target": "neighbor-stages",
+        "bytes": 9063908,
+        "flagsNumeric": "1073741920",
+        "flagsText": "compressed,dataless",
+        "dataless": true,
+        "observedAtElapsedSeconds": 2.3661743339999997
+      }
+    },
+    {
+      "event": 19,
+      "elapsedSeconds": 2.371168334,
+      "kind": "command-intent",
+      "operation": "initial-radial-audit",
+      "secondsBound": 3
+    },
+    {
+      "event": 20,
+      "elapsedSeconds": 2.374046709,
+      "kind": "command-result",
+      "operation": "initial-radial-audit",
+      "intentEvent": 19,
+      "wallSeconds": 0.0023809999999997444,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 52,
+        "sha256": "e45d00d137fd4856a68a5ed9591c42c1f33f5ad8a65717295010e4c6bbc816ee"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "3378809\t1073741920\tcompressed,dataless\tRegular File\n",
+      "stderrText": ""
+    },
+    {
+      "event": 21,
+      "elapsedSeconds": 2.3790842089999997,
+      "kind": "metadata-observation",
+      "operation": "initial-radial-audit",
+      "metadata": {
+        "target": "radial-audit",
+        "bytes": 3378809,
+        "flagsNumeric": "1073741920",
+        "flagsText": "compressed,dataless",
+        "dataless": true,
+        "observedAtElapsedSeconds": 2.3790827919999997
+      }
+    },
+    {
+      "event": 22,
+      "elapsedSeconds": 2.3800016669999997,
+      "kind": "command-intent",
+      "operation": "activate-git-pack",
+      "secondsBound": 10
+    },
+    {
+      "event": 23,
+      "elapsedSeconds": 2.431642417,
+      "kind": "command-result",
+      "operation": "activate-git-pack",
+      "intentEvent": 22,
+      "wallSeconds": 0.051082583999999986,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 83,
+        "sha256": "c6b8834ab9f1998d037aaaed45c8b19fb17312676d2d803825bae2b4980d5f48"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "{\"accepted\":true,\"api\":\"NSFileManager.startDownloadingUbiquitousItemAtURL:error:\"}\n",
+      "stderrText": ""
+    },
+    {
+      "event": 24,
+      "elapsedSeconds": 2.4333947499999997,
+      "kind": "command-intent",
+      "operation": "activate-input-part000",
+      "secondsBound": 10
+    },
+    {
+      "event": 25,
+      "elapsedSeconds": 2.4770013339999997,
+      "kind": "command-result",
+      "operation": "activate-input-part000",
+      "intentEvent": 24,
+      "wallSeconds": 0.043136915999999914,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 83,
+        "sha256": "c6b8834ab9f1998d037aaaed45c8b19fb17312676d2d803825bae2b4980d5f48"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "{\"accepted\":true,\"api\":\"NSFileManager.startDownloadingUbiquitousItemAtURL:error:\"}\n",
+      "stderrText": ""
+    },
+    {
+      "event": 26,
+      "elapsedSeconds": 2.4787220839999997,
+      "kind": "command-intent",
+      "operation": "activate-input-part001",
+      "secondsBound": 10
+    },
+    {
+      "event": 27,
+      "elapsedSeconds": 2.51594425,
+      "kind": "command-result",
+      "operation": "activate-input-part001",
+      "intentEvent": 26,
+      "wallSeconds": 0.036692250000000204,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 83,
+        "sha256": "c6b8834ab9f1998d037aaaed45c8b19fb17312676d2d803825bae2b4980d5f48"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "{\"accepted\":true,\"api\":\"NSFileManager.startDownloadingUbiquitousItemAtURL:error:\"}\n",
+      "stderrText": ""
+    },
+    {
+      "event": 28,
+      "elapsedSeconds": 2.517769334,
+      "kind": "command-intent",
+      "operation": "activate-input-part003",
+      "secondsBound": 10
+    },
+    {
+      "event": 29,
+      "elapsedSeconds": 2.554578667,
+      "kind": "command-result",
+      "operation": "activate-input-part003",
+      "intentEvent": 28,
+      "wallSeconds": 0.03619541699999962,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 83,
+        "sha256": "c6b8834ab9f1998d037aaaed45c8b19fb17312676d2d803825bae2b4980d5f48"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "{\"accepted\":true,\"api\":\"NSFileManager.startDownloadingUbiquitousItemAtURL:error:\"}\n",
+      "stderrText": ""
+    },
+    {
+      "event": 30,
+      "elapsedSeconds": 2.556433292,
+      "kind": "command-intent",
+      "operation": "activate-input-part004",
+      "secondsBound": 10
+    },
+    {
+      "event": 31,
+      "elapsedSeconds": 2.594501625,
+      "kind": "command-result",
+      "operation": "activate-input-part004",
+      "intentEvent": 30,
+      "wallSeconds": 0.037540125000000035,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 83,
+        "sha256": "c6b8834ab9f1998d037aaaed45c8b19fb17312676d2d803825bae2b4980d5f48"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "{\"accepted\":true,\"api\":\"NSFileManager.startDownloadingUbiquitousItemAtURL:error:\"}\n",
+      "stderrText": ""
+    },
+    {
+      "event": 32,
+      "elapsedSeconds": 2.5964225,
+      "kind": "command-intent",
+      "operation": "activate-neighbor-stages",
+      "secondsBound": 10
+    },
+    {
+      "event": 33,
+      "elapsedSeconds": 2.634108709,
+      "kind": "command-result",
+      "operation": "activate-neighbor-stages",
+      "intentEvent": 32,
+      "wallSeconds": 0.037109791999999864,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 83,
+        "sha256": "c6b8834ab9f1998d037aaaed45c8b19fb17312676d2d803825bae2b4980d5f48"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "{\"accepted\":true,\"api\":\"NSFileManager.startDownloadingUbiquitousItemAtURL:error:\"}\n",
+      "stderrText": ""
+    },
+    {
+      "event": 34,
+      "elapsedSeconds": 2.636124417,
+      "kind": "command-intent",
+      "operation": "activate-radial-audit",
+      "secondsBound": 10
+    },
+    {
+      "event": 35,
+      "elapsedSeconds": 2.674416917,
+      "kind": "command-result",
+      "operation": "activate-radial-audit",
+      "intentEvent": 34,
+      "wallSeconds": 0.03757283300000003,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 83,
+        "sha256": "c6b8834ab9f1998d037aaaed45c8b19fb17312676d2d803825bae2b4980d5f48"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "{\"accepted\":true,\"api\":\"NSFileManager.startDownloadingUbiquitousItemAtURL:error:\"}\n",
+      "stderrText": ""
+    },
+    {
+      "event": 36,
+      "elapsedSeconds": 2.675799709,
+      "kind": "command-intent",
+      "operation": "poll-1-git-pack",
+      "secondsBound": 3
+    },
+    {
+      "event": 37,
+      "elapsedSeconds": 2.678509084,
+      "kind": "command-result",
+      "operation": "poll-1-git-pack",
+      "intentEvent": 36,
+      "wallSeconds": 0.0020301250000001048,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 61,
+        "sha256": "fab7a1d36c52cf5785cd34660fc2af4177c0cc16b37e43d81979f688b5a6ef9c"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "424593415\t1073774688\thidden,compressed,dataless\tRegular File\n",
+      "stderrText": ""
+    },
+    {
+      "event": 38,
+      "elapsedSeconds": 2.679194292,
+      "kind": "metadata-observation",
+      "operation": "poll-1-git-pack",
+      "metadata": {
+        "target": "git-pack",
+        "bytes": 424593415,
+        "flagsNumeric": "1073774688",
+        "flagsText": "hidden,compressed,dataless",
+        "dataless": true,
+        "observedAtElapsedSeconds": 2.679193625
+      }
+    },
+    {
+      "event": 39,
+      "elapsedSeconds": 2.6797442499999997,
+      "kind": "command-intent",
+      "operation": "poll-1-input-part000",
+      "secondsBound": 3
+    },
+    {
+      "event": 40,
+      "elapsedSeconds": 2.681999709,
+      "kind": "command-result",
+      "operation": "poll-1-input-part000",
+      "intentEvent": 39,
+      "wallSeconds": 0.0017135000000001455,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 53,
+        "sha256": "0d33808d1475b97ac5906000ed50a7d8fc21caf42983cfdb8b9951dd4045512f"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "33554432\t1073741920\tcompressed,dataless\tRegular File\n",
+      "stderrText": ""
+    },
+    {
+      "event": 41,
+      "elapsedSeconds": 2.682672042,
+      "kind": "metadata-observation",
+      "operation": "poll-1-input-part000",
+      "metadata": {
+        "target": "input-part000",
+        "bytes": 33554432,
+        "flagsNumeric": "1073741920",
+        "flagsText": "compressed,dataless",
+        "dataless": true,
+        "observedAtElapsedSeconds": 2.682671375
+      }
+    },
+    {
+      "event": 42,
+      "elapsedSeconds": 2.68820675,
+      "kind": "command-intent",
+      "operation": "poll-1-input-part001",
+      "secondsBound": 3
+    },
+    {
+      "event": 43,
+      "elapsedSeconds": 2.690825334,
+      "kind": "command-result",
+      "operation": "poll-1-input-part001",
+      "intentEvent": 42,
+      "wallSeconds": 0.0018838749999998683,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 53,
+        "sha256": "0d33808d1475b97ac5906000ed50a7d8fc21caf42983cfdb8b9951dd4045512f"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "33554432\t1073741920\tcompressed,dataless\tRegular File\n",
+      "stderrText": ""
+    },
+    {
+      "event": 44,
+      "elapsedSeconds": 2.691672292,
+      "kind": "metadata-observation",
+      "operation": "poll-1-input-part001",
+      "metadata": {
+        "target": "input-part001",
+        "bytes": 33554432,
+        "flagsNumeric": "1073741920",
+        "flagsText": "compressed,dataless",
+        "dataless": true,
+        "observedAtElapsedSeconds": 2.691671417
+      }
+    },
+    {
+      "event": 45,
+      "elapsedSeconds": 2.6923209999999997,
+      "kind": "command-intent",
+      "operation": "poll-1-input-part003",
+      "secondsBound": 3
+    },
+    {
+      "event": 46,
+      "elapsedSeconds": 2.6947794999999997,
+      "kind": "command-result",
+      "operation": "poll-1-input-part003",
+      "intentEvent": 45,
+      "wallSeconds": 0.0017740420000000867,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 53,
+        "sha256": "0d33808d1475b97ac5906000ed50a7d8fc21caf42983cfdb8b9951dd4045512f"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "33554432\t1073741920\tcompressed,dataless\tRegular File\n",
+      "stderrText": ""
+    },
+    {
+      "event": 47,
+      "elapsedSeconds": 2.6955745419999997,
+      "kind": "metadata-observation",
+      "operation": "poll-1-input-part003",
+      "metadata": {
+        "target": "input-part003",
+        "bytes": 33554432,
+        "flagsNumeric": "1073741920",
+        "flagsText": "compressed,dataless",
+        "dataless": true,
+        "observedAtElapsedSeconds": 2.695573709
+      }
+    },
+    {
+      "event": 48,
+      "elapsedSeconds": 2.696203042,
+      "kind": "command-intent",
+      "operation": "poll-1-input-part004",
+      "secondsBound": 3
+    },
+    {
+      "event": 49,
+      "elapsedSeconds": 2.6986180419999997,
+      "kind": "command-result",
+      "operation": "poll-1-input-part004",
+      "intentEvent": 48,
+      "wallSeconds": 0.001762416999999683,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 53,
+        "sha256": "0d33808d1475b97ac5906000ed50a7d8fc21caf42983cfdb8b9951dd4045512f"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "33554432\t1073741920\tcompressed,dataless\tRegular File\n",
+      "stderrText": ""
+    },
+    {
+      "event": 50,
+      "elapsedSeconds": 2.6994325,
+      "kind": "metadata-observation",
+      "operation": "poll-1-input-part004",
+      "metadata": {
+        "target": "input-part004",
+        "bytes": 33554432,
+        "flagsNumeric": "1073741920",
+        "flagsText": "compressed,dataless",
+        "dataless": true,
+        "observedAtElapsedSeconds": 2.69943175
+      }
+    },
+    {
+      "event": 51,
+      "elapsedSeconds": 2.700104209,
+      "kind": "command-intent",
+      "operation": "poll-1-neighbor-stages",
+      "secondsBound": 3
+    },
+    {
+      "event": 52,
+      "elapsedSeconds": 2.702477792,
+      "kind": "command-result",
+      "operation": "poll-1-neighbor-stages",
+      "intentEvent": 51,
+      "wallSeconds": 0.0017214999999999314,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 52,
+        "sha256": "3a3d51b328a0a98b66c34ed95b33ad25a78c7ab9f0acef2f5bec128bf5d855d1"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "9063908\t1073741920\tcompressed,dataless\tRegular File\n",
+      "stderrText": ""
+    },
+    {
+      "event": 53,
+      "elapsedSeconds": 2.7032881669999997,
+      "kind": "metadata-observation",
+      "operation": "poll-1-neighbor-stages",
+      "metadata": {
+        "target": "neighbor-stages",
+        "bytes": 9063908,
+        "flagsNumeric": "1073741920",
+        "flagsText": "compressed,dataless",
+        "dataless": true,
+        "observedAtElapsedSeconds": 2.7032872919999997
+      }
+    },
+    {
+      "event": 54,
+      "elapsedSeconds": 2.704014834,
+      "kind": "command-intent",
+      "operation": "poll-1-radial-audit",
+      "secondsBound": 3
+    },
+    {
+      "event": 55,
+      "elapsedSeconds": 2.7065969169999997,
+      "kind": "command-result",
+      "operation": "poll-1-radial-audit",
+      "intentEvent": 54,
+      "wallSeconds": 0.0019187500000001911,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 52,
+        "sha256": "e45d00d137fd4856a68a5ed9591c42c1f33f5ad8a65717295010e4c6bbc816ee"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "3378809\t1073741920\tcompressed,dataless\tRegular File\n",
+      "stderrText": ""
+    },
+    {
+      "event": 56,
+      "elapsedSeconds": 2.707415584,
+      "kind": "metadata-observation",
+      "operation": "poll-1-radial-audit",
+      "metadata": {
+        "target": "radial-audit",
+        "bytes": 3378809,
+        "flagsNumeric": "1073741920",
+        "flagsText": "compressed,dataless",
+        "dataless": true,
+        "observedAtElapsedSeconds": 2.707414875
+      }
+    },
+    {
+      "event": 57,
+      "elapsedSeconds": 17.686088209,
+      "kind": "command-intent",
+      "operation": "poll-2-git-pack",
+      "secondsBound": 3
+    },
+    {
+      "event": 58,
+      "elapsedSeconds": 17.702533167000002,
+      "kind": "command-result",
+      "operation": "poll-2-git-pack",
+      "intentEvent": 57,
+      "wallSeconds": 0.011616457999998886,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 61,
+        "sha256": "fab7a1d36c52cf5785cd34660fc2af4177c0cc16b37e43d81979f688b5a6ef9c"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "424593415\t1073774688\thidden,compressed,dataless\tRegular File\n",
+      "stderrText": ""
+    },
+    {
+      "event": 59,
+      "elapsedSeconds": 17.705074834,
+      "kind": "metadata-observation",
+      "operation": "poll-2-git-pack",
+      "metadata": {
+        "target": "git-pack",
+        "bytes": 424593415,
+        "flagsNumeric": "1073774688",
+        "flagsText": "hidden,compressed,dataless",
+        "dataless": true,
+        "observedAtElapsedSeconds": 17.705072292
+      }
+    },
+    {
+      "event": 60,
+      "elapsedSeconds": 17.706753709,
+      "kind": "command-intent",
+      "operation": "poll-2-input-part000",
+      "secondsBound": 3
+    },
+    {
+      "event": 61,
+      "elapsedSeconds": 17.712251292,
+      "kind": "command-result",
+      "operation": "poll-2-input-part000",
+      "intentEvent": 60,
+      "wallSeconds": 0.004110332999999855,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 27,
+        "sha256": "2bcc0c8ec37651482f673e2576bd42f05022a436d41a3be697bc227ef3a18e05"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "33554432\t64\t-\tRegular File\n",
+      "stderrText": ""
+    },
+    {
+      "event": 62,
+      "elapsedSeconds": 17.713884750000002,
+      "kind": "metadata-observation",
+      "operation": "poll-2-input-part000",
+      "metadata": {
+        "target": "input-part000",
+        "bytes": 33554432,
+        "flagsNumeric": "64",
+        "flagsText": "-",
+        "dataless": false,
+        "observedAtElapsedSeconds": 17.713882792
+      }
+    },
+    {
+      "event": 63,
+      "elapsedSeconds": 17.715101959000002,
+      "kind": "command-intent",
+      "operation": "poll-2-input-part001",
+      "secondsBound": 3
+    },
+    {
+      "event": 64,
+      "elapsedSeconds": 17.7195215,
+      "kind": "command-result",
+      "operation": "poll-2-input-part001",
+      "intentEvent": 63,
+      "wallSeconds": 0.003292209000001378,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 27,
+        "sha256": "2bcc0c8ec37651482f673e2576bd42f05022a436d41a3be697bc227ef3a18e05"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "33554432\t64\t-\tRegular File\n",
+      "stderrText": ""
+    },
+    {
+      "event": 65,
+      "elapsedSeconds": 17.720933959,
+      "kind": "metadata-observation",
+      "operation": "poll-2-input-part001",
+      "metadata": {
+        "target": "input-part001",
+        "bytes": 33554432,
+        "flagsNumeric": "64",
+        "flagsText": "-",
+        "dataless": false,
+        "observedAtElapsedSeconds": 17.720932667
+      }
+    },
+    {
+      "event": 66,
+      "elapsedSeconds": 17.722016167,
+      "kind": "command-intent",
+      "operation": "poll-2-input-part003",
+      "secondsBound": 3
+    },
+    {
+      "event": 67,
+      "elapsedSeconds": 17.726306834000003,
+      "kind": "command-result",
+      "operation": "poll-2-input-part003",
+      "intentEvent": 66,
+      "wallSeconds": 0.0031856660000002535,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 53,
+        "sha256": "0d33808d1475b97ac5906000ed50a7d8fc21caf42983cfdb8b9951dd4045512f"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "33554432\t1073741920\tcompressed,dataless\tRegular File\n",
+      "stderrText": ""
+    },
+    {
+      "event": 68,
+      "elapsedSeconds": 17.727629667000002,
+      "kind": "metadata-observation",
+      "operation": "poll-2-input-part003",
+      "metadata": {
+        "target": "input-part003",
+        "bytes": 33554432,
+        "flagsNumeric": "1073741920",
+        "flagsText": "compressed,dataless",
+        "dataless": true,
+        "observedAtElapsedSeconds": 17.727628542
+      }
+    },
+    {
+      "event": 69,
+      "elapsedSeconds": 17.728622959,
+      "kind": "command-intent",
+      "operation": "poll-2-input-part004",
+      "secondsBound": 3
+    },
+    {
+      "event": 70,
+      "elapsedSeconds": 17.73200575,
+      "kind": "command-result",
+      "operation": "poll-2-input-part004",
+      "intentEvent": 69,
+      "wallSeconds": 0.0024114159999975016,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 27,
+        "sha256": "2bcc0c8ec37651482f673e2576bd42f05022a436d41a3be697bc227ef3a18e05"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "33554432\t64\t-\tRegular File\n",
+      "stderrText": ""
+    },
+    {
+      "event": 71,
+      "elapsedSeconds": 17.733769584,
+      "kind": "metadata-observation",
+      "operation": "poll-2-input-part004",
+      "metadata": {
+        "target": "input-part004",
+        "bytes": 33554432,
+        "flagsNumeric": "64",
+        "flagsText": "-",
+        "dataless": false,
+        "observedAtElapsedSeconds": 17.733768584
+      }
+    },
+    {
+      "event": 72,
+      "elapsedSeconds": 17.734813417,
+      "kind": "command-intent",
+      "operation": "poll-2-neighbor-stages",
+      "secondsBound": 3
+    },
+    {
+      "event": 73,
+      "elapsedSeconds": 17.740117375,
+      "kind": "command-result",
+      "operation": "poll-2-neighbor-stages",
+      "intentEvent": 72,
+      "wallSeconds": 0.0025164589999988607,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 26,
+        "sha256": "5732a0f24d13b39a784fbc89071fdd90ecc383f72940a5db58c0dd952cb3981b"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "9063908\t64\t-\tRegular File\n",
+      "stderrText": ""
+    },
+    {
+      "event": 74,
+      "elapsedSeconds": 17.741268709,
+      "kind": "metadata-observation",
+      "operation": "poll-2-neighbor-stages",
+      "metadata": {
+        "target": "neighbor-stages",
+        "bytes": 9063908,
+        "flagsNumeric": "64",
+        "flagsText": "-",
+        "dataless": false,
+        "observedAtElapsedSeconds": 17.741267875000002
+      }
+    },
+    {
+      "event": 75,
+      "elapsedSeconds": 17.7422025,
+      "kind": "command-intent",
+      "operation": "poll-2-radial-audit",
+      "secondsBound": 3
+    },
+    {
+      "event": 76,
+      "elapsedSeconds": 17.745341792,
+      "kind": "command-result",
+      "operation": "poll-2-radial-audit",
+      "intentEvent": 75,
+      "wallSeconds": 0.0022304159999997353,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 26,
+        "sha256": "17f17bf7fbbcf135f60417cc22292f229be31f0de5b3a064197d3055421df13d"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "3378809\t64\t-\tRegular File\n",
+      "stderrText": ""
+    },
+    {
+      "event": 77,
+      "elapsedSeconds": 17.748047167,
+      "kind": "metadata-observation",
+      "operation": "poll-2-radial-audit",
+      "metadata": {
+        "target": "radial-audit",
+        "bytes": 3378809,
+        "flagsNumeric": "64",
+        "flagsText": "-",
+        "dataless": false,
+        "observedAtElapsedSeconds": 17.748046334
+      }
+    },
+    {
+      "event": 78,
+      "elapsedSeconds": 33.561676125,
+      "kind": "command-intent",
+      "operation": "poll-3-git-pack",
+      "secondsBound": 3
+    },
+    {
+      "event": 79,
+      "elapsedSeconds": 33.642300792,
+      "kind": "command-result",
+      "operation": "poll-3-git-pack",
+      "intentEvent": 78,
+      "wallSeconds": 0.009964082999999846,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 61,
+        "sha256": "fab7a1d36c52cf5785cd34660fc2af4177c0cc16b37e43d81979f688b5a6ef9c"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "424593415\t1073774688\thidden,compressed,dataless\tRegular File\n",
+      "stderrText": ""
+    },
+    {
+      "event": 80,
+      "elapsedSeconds": 33.644284041999995,
+      "kind": "metadata-observation",
+      "operation": "poll-3-git-pack",
+      "metadata": {
+        "target": "git-pack",
+        "bytes": 424593415,
+        "flagsNumeric": "1073774688",
+        "flagsText": "hidden,compressed,dataless",
+        "dataless": true,
+        "observedAtElapsedSeconds": 33.644282
+      }
+    },
+    {
+      "event": 81,
+      "elapsedSeconds": 33.646582417,
+      "kind": "command-intent",
+      "operation": "poll-3-input-part003",
+      "secondsBound": 3
+    },
+    {
+      "event": 82,
+      "elapsedSeconds": 33.652883875,
+      "kind": "command-result",
+      "operation": "poll-3-input-part003",
+      "intentEvent": 81,
+      "wallSeconds": 0.005096000000001766,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 53,
+        "sha256": "0d33808d1475b97ac5906000ed50a7d8fc21caf42983cfdb8b9951dd4045512f"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "33554432\t1073741920\tcompressed,dataless\tRegular File\n",
+      "stderrText": ""
+    },
+    {
+      "event": 83,
+      "elapsedSeconds": 33.654846875,
+      "kind": "metadata-observation",
+      "operation": "poll-3-input-part003",
+      "metadata": {
+        "target": "input-part003",
+        "bytes": 33554432,
+        "flagsNumeric": "1073741920",
+        "flagsText": "compressed,dataless",
+        "dataless": true,
+        "observedAtElapsedSeconds": 33.654845333999994
+      }
+    },
+    {
+      "event": 84,
+      "elapsedSeconds": 47.686170792,
+      "kind": "command-intent",
+      "operation": "poll-4-git-pack",
+      "secondsBound": 3
+    },
+    {
+      "event": 85,
+      "elapsedSeconds": 47.696893167,
+      "kind": "command-result",
+      "operation": "poll-4-git-pack",
+      "intentEvent": 84,
+      "wallSeconds": 0.006906542000002958,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 61,
+        "sha256": "fab7a1d36c52cf5785cd34660fc2af4177c0cc16b37e43d81979f688b5a6ef9c"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "424593415\t1073774688\thidden,compressed,dataless\tRegular File\n",
+      "stderrText": ""
+    },
+    {
+      "event": 86,
+      "elapsedSeconds": 47.700198834,
+      "kind": "metadata-observation",
+      "operation": "poll-4-git-pack",
+      "metadata": {
+        "target": "git-pack",
+        "bytes": 424593415,
+        "flagsNumeric": "1073774688",
+        "flagsText": "hidden,compressed,dataless",
+        "dataless": true,
+        "observedAtElapsedSeconds": 47.700194583999995
+      }
+    },
+    {
+      "event": 87,
+      "elapsedSeconds": 47.702901209,
+      "kind": "command-intent",
+      "operation": "poll-4-input-part003",
+      "secondsBound": 3
+    },
+    {
+      "event": 88,
+      "elapsedSeconds": 47.708404584,
+      "kind": "command-result",
+      "operation": "poll-4-input-part003",
+      "intentEvent": 87,
+      "wallSeconds": 0.003555374999997696,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 27,
+        "sha256": "2bcc0c8ec37651482f673e2576bd42f05022a436d41a3be697bc227ef3a18e05"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "33554432\t64\t-\tRegular File\n",
+      "stderrText": ""
+    },
+    {
+      "event": 89,
+      "elapsedSeconds": 47.709582917,
+      "kind": "metadata-observation",
+      "operation": "poll-4-input-part003",
+      "metadata": {
+        "target": "input-part003",
+        "bytes": 33554432,
+        "flagsNumeric": "64",
+        "flagsText": "-",
+        "dataless": false,
+        "observedAtElapsedSeconds": 47.709581959
+      }
+    },
+    {
+      "event": 90,
+      "elapsedSeconds": 62.686149291999996,
+      "kind": "command-intent",
+      "operation": "poll-5-git-pack",
+      "secondsBound": 3
+    },
+    {
+      "event": 91,
+      "elapsedSeconds": 62.698861167,
+      "kind": "command-result",
+      "operation": "poll-5-git-pack",
+      "intentEvent": 90,
+      "wallSeconds": 0.007593916000004697,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 36,
+        "sha256": "802269db62d0c451d3f1cb1b1d49b5fc56fefdd1092dbc9b0feaa789e611bc07"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "424593415\t32832\thidden\tRegular File\n",
+      "stderrText": ""
+    },
+    {
+      "event": 92,
+      "elapsedSeconds": 62.701704166999995,
+      "kind": "metadata-observation",
+      "operation": "poll-5-git-pack",
+      "metadata": {
+        "target": "git-pack",
+        "bytes": 424593415,
+        "flagsNumeric": "32832",
+        "flagsText": "hidden",
+        "dataless": false,
+        "observedAtElapsedSeconds": 62.701701791999994
+      }
+    },
+    {
+      "event": 93,
+      "elapsedSeconds": 63.039938791999994,
+      "kind": "command-intent",
+      "operation": "closure-git-pack",
+      "secondsBound": 3
+    },
+    {
+      "event": 94,
+      "elapsedSeconds": 63.043182417,
+      "kind": "command-result",
+      "operation": "closure-git-pack",
+      "intentEvent": 93,
+      "wallSeconds": 0.002057082999996851,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 36,
+        "sha256": "802269db62d0c451d3f1cb1b1d49b5fc56fefdd1092dbc9b0feaa789e611bc07"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "424593415\t32832\thidden\tRegular File\n",
+      "stderrText": ""
+    },
+    {
+      "event": 95,
+      "elapsedSeconds": 63.044175708999994,
+      "kind": "metadata-observation",
+      "operation": "closure-git-pack",
+      "metadata": {
+        "target": "git-pack",
+        "bytes": 424593415,
+        "flagsNumeric": "32832",
+        "flagsText": "hidden",
+        "dataless": false,
+        "observedAtElapsedSeconds": 63.044174792
+      }
+    },
+    {
+      "event": 96,
+      "elapsedSeconds": 63.045080209,
+      "kind": "command-intent",
+      "operation": "closure-input-part000",
+      "secondsBound": 3
+    },
+    {
+      "event": 97,
+      "elapsedSeconds": 63.048145749999996,
+      "kind": "command-result",
+      "operation": "closure-input-part000",
+      "intentEvent": 96,
+      "wallSeconds": 0.0018022079999937546,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 27,
+        "sha256": "2bcc0c8ec37651482f673e2576bd42f05022a436d41a3be697bc227ef3a18e05"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "33554432\t64\t-\tRegular File\n",
+      "stderrText": ""
+    },
+    {
+      "event": 98,
+      "elapsedSeconds": 63.049419916999994,
+      "kind": "metadata-observation",
+      "operation": "closure-input-part000",
+      "metadata": {
+        "target": "input-part000",
+        "bytes": 33554432,
+        "flagsNumeric": "64",
+        "flagsText": "-",
+        "dataless": false,
+        "observedAtElapsedSeconds": 63.04941925
+      }
+    },
+    {
+      "event": 99,
+      "elapsedSeconds": 63.050336083999994,
+      "kind": "command-intent",
+      "operation": "closure-input-part001",
+      "secondsBound": 3
+    },
+    {
+      "event": 100,
+      "elapsedSeconds": 63.052982875,
+      "kind": "command-result",
+      "operation": "closure-input-part001",
+      "intentEvent": 99,
+      "wallSeconds": 0.0017289170000012177,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 27,
+        "sha256": "2bcc0c8ec37651482f673e2576bd42f05022a436d41a3be697bc227ef3a18e05"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "33554432\t64\t-\tRegular File\n",
+      "stderrText": ""
+    },
+    {
+      "event": 101,
+      "elapsedSeconds": 63.054683624999996,
+      "kind": "metadata-observation",
+      "operation": "closure-input-part001",
+      "metadata": {
+        "target": "input-part001",
+        "bytes": 33554432,
+        "flagsNumeric": "64",
+        "flagsText": "-",
+        "dataless": false,
+        "observedAtElapsedSeconds": 63.054682791999994
+      }
+    },
+    {
+      "event": 102,
+      "elapsedSeconds": 63.055786292,
+      "kind": "command-intent",
+      "operation": "closure-input-part003",
+      "secondsBound": 3
+    },
+    {
+      "event": 103,
+      "elapsedSeconds": 63.058257084,
+      "kind": "command-result",
+      "operation": "closure-input-part003",
+      "intentEvent": 102,
+      "wallSeconds": 0.0015856250000041427,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 27,
+        "sha256": "2bcc0c8ec37651482f673e2576bd42f05022a436d41a3be697bc227ef3a18e05"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "33554432\t64\t-\tRegular File\n",
+      "stderrText": ""
+    },
+    {
+      "event": 104,
+      "elapsedSeconds": 63.059288374999994,
+      "kind": "metadata-observation",
+      "operation": "closure-input-part003",
+      "metadata": {
+        "target": "input-part003",
+        "bytes": 33554432,
+        "flagsNumeric": "64",
+        "flagsText": "-",
+        "dataless": false,
+        "observedAtElapsedSeconds": 63.059287749999996
+      }
+    },
+    {
+      "event": 105,
+      "elapsedSeconds": 63.06020075,
+      "kind": "command-intent",
+      "operation": "closure-input-part004",
+      "secondsBound": 3
+    },
+    {
+      "event": 106,
+      "elapsedSeconds": 63.062505834,
+      "kind": "command-result",
+      "operation": "closure-input-part004",
+      "intentEvent": 105,
+      "wallSeconds": 0.0014458750000017062,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 27,
+        "sha256": "2bcc0c8ec37651482f673e2576bd42f05022a436d41a3be697bc227ef3a18e05"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "33554432\t64\t-\tRegular File\n",
+      "stderrText": ""
+    },
+    {
+      "event": 107,
+      "elapsedSeconds": 63.063520999999994,
+      "kind": "metadata-observation",
+      "operation": "closure-input-part004",
+      "metadata": {
+        "target": "input-part004",
+        "bytes": 33554432,
+        "flagsNumeric": "64",
+        "flagsText": "-",
+        "dataless": false,
+        "observedAtElapsedSeconds": 63.063520374999996
+      }
+    },
+    {
+      "event": 108,
+      "elapsedSeconds": 63.0644145,
+      "kind": "command-intent",
+      "operation": "closure-neighbor-stages",
+      "secondsBound": 3
+    },
+    {
+      "event": 109,
+      "elapsedSeconds": 63.066913666999994,
+      "kind": "command-result",
+      "operation": "closure-neighbor-stages",
+      "intentEvent": 108,
+      "wallSeconds": 0.001559708999998577,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 26,
+        "sha256": "5732a0f24d13b39a784fbc89071fdd90ecc383f72940a5db58c0dd952cb3981b"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "9063908\t64\t-\tRegular File\n",
+      "stderrText": ""
+    },
+    {
+      "event": 110,
+      "elapsedSeconds": 63.067879166999994,
+      "kind": "metadata-observation",
+      "operation": "closure-neighbor-stages",
+      "metadata": {
+        "target": "neighbor-stages",
+        "bytes": 9063908,
+        "flagsNumeric": "64",
+        "flagsText": "-",
+        "dataless": false,
+        "observedAtElapsedSeconds": 63.067878459
+      }
+    },
+    {
+      "event": 111,
+      "elapsedSeconds": 63.068748416999995,
+      "kind": "command-intent",
+      "operation": "closure-radial-audit",
+      "secondsBound": 3
+    },
+    {
+      "event": 112,
+      "elapsedSeconds": 63.071035959,
+      "kind": "command-result",
+      "operation": "closure-radial-audit",
+      "intentEvent": 111,
+      "wallSeconds": 0.001409000000002436,
+      "exitCode": 0,
+      "stdout": {
+        "bytes": 26,
+        "sha256": "17f17bf7fbbcf135f60417cc22292f229be31f0de5b3a064197d3055421df13d"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdoutText": "3378809\t64\t-\tRegular File\n",
+      "stderrText": ""
+    },
+    {
+      "event": 113,
+      "elapsedSeconds": 63.072125959,
+      "kind": "metadata-observation",
+      "operation": "closure-radial-audit",
+      "metadata": {
+        "target": "radial-audit",
+        "bytes": 3378809,
+        "flagsNumeric": "64",
+        "flagsText": "-",
+        "dataless": false,
+        "observedAtElapsedSeconds": 63.072125166999996
+      }
+    }
+  ],
+  "activationAttempts": 7,
+  "activationByTarget": {
+    "git-pack": {
+      "accepted": true,
+      "api": "NSFileManager.startDownloadingUbiquitousItemAtURL:error:"
+    },
+    "input-part000": {
+      "accepted": true,
+      "api": "NSFileManager.startDownloadingUbiquitousItemAtURL:error:"
+    },
+    "input-part001": {
+      "accepted": true,
+      "api": "NSFileManager.startDownloadingUbiquitousItemAtURL:error:"
+    },
+    "input-part003": {
+      "accepted": true,
+      "api": "NSFileManager.startDownloadingUbiquitousItemAtURL:error:"
+    },
+    "input-part004": {
+      "accepted": true,
+      "api": "NSFileManager.startDownloadingUbiquitousItemAtURL:error:"
+    },
+    "neighbor-stages": {
+      "accepted": true,
+      "api": "NSFileManager.startDownloadingUbiquitousItemAtURL:error:"
+    },
+    "radial-audit": {
+      "accepted": true,
+      "api": "NSFileManager.startDownloadingUbiquitousItemAtURL:error:"
+    }
+  },
+  "pollObservations": 5,
+  "networkToolsInvoked": 0,
+  "gitCommands": 0,
+  "scientificQueries": 0,
+  "packContentRead": false,
+  "scientificContentRead": false,
+  "scientificArchivesDecoded": false,
+  "sourceGateAdvanced": false,
+  "publicationAttempted": false,
+  "osBackgroundTransferMayContinue": true,
+  "contentIdentityVerified": false,
+  "residencyGuaranteed": false,
+  "wallSeconds": 63.073097874999995,
+  "capturedBytes": 2016,
+  "allocationBoundaryStart": {
+    "state": "all-unstarted",
+    "absentPaths": [
+      "research/m31-native-factor-reuse-2026-10-23/producer-supervisor-launch.lock",
+      "research/m31-native-factor-reuse-2026-10-23/producer-supervisor.json",
+      "research/m31-native-factor-reuse-2026-10-23/results",
+      "research/m31-native-factor-reuse-2026-10-23/audit-supervisor-launch.lock",
+      "research/m31-native-factor-reuse-2026-10-23/audit-supervisor.json",
+      "research/m31-native-factor-reuse-2026-10-23/audit",
+      "research/m31-native-factor-reuse-2026-10-23/finalize-supervisor-launch.lock",
+      "research/m31-native-factor-reuse-2026-10-23/finalize-supervisor.json",
+      "research/m31-native-factor-reuse-2026-10-23/finalize",
+      "research/m31-native-factor-reuse-2026-10-23/ui-supervisor-launch.lock",
+      "research/m31-native-factor-reuse-2026-10-23/ui-supervisor.json",
+      "research/m31-native-factor-reuse-2026-10-23/ui",
+      "research/m31-native-factor-reuse-2026-10-23/viewer/pins.json"
+    ]
+  },
+  "initialMetadata": {
+    "git-pack": {
+      "target": "git-pack",
+      "bytes": 424593415,
+      "flagsNumeric": "1073774688",
+      "flagsText": "hidden,compressed,dataless",
+      "dataless": true,
+      "observedAtElapsedSeconds": 2.348979584
+    },
+    "input-part000": {
+      "target": "input-part000",
+      "bytes": 33554432,
+      "flagsNumeric": "1073741920",
+      "flagsText": "compressed,dataless",
+      "dataless": true,
+      "observedAtElapsedSeconds": 2.352481084
+    },
+    "input-part001": {
+      "target": "input-part001",
+      "bytes": 33554432,
+      "flagsNumeric": "1073741920",
+      "flagsText": "compressed,dataless",
+      "dataless": true,
+      "observedAtElapsedSeconds": 2.355742292
+    },
+    "input-part003": {
+      "target": "input-part003",
+      "bytes": 33554432,
+      "flagsNumeric": "1073741920",
+      "flagsText": "compressed,dataless",
+      "dataless": true,
+      "observedAtElapsedSeconds": 2.358881709
+    },
+    "input-part004": {
+      "target": "input-part004",
+      "bytes": 33554432,
+      "flagsNumeric": "1073741920",
+      "flagsText": "compressed,dataless",
+      "dataless": true,
+      "observedAtElapsedSeconds": 2.36249075
+    },
+    "neighbor-stages": {
+      "target": "neighbor-stages",
+      "bytes": 9063908,
+      "flagsNumeric": "1073741920",
+      "flagsText": "compressed,dataless",
+      "dataless": true,
+      "observedAtElapsedSeconds": 2.3661743339999997
+    },
+    "radial-audit": {
+      "target": "radial-audit",
+      "bytes": 3378809,
+      "flagsNumeric": "1073741920",
+      "flagsText": "compressed,dataless",
+      "dataless": true,
+      "observedAtElapsedSeconds": 2.3790827919999997
+    }
+  },
+  "latestMetadata": {
+    "git-pack": {
+      "target": "git-pack",
+      "bytes": 424593415,
+      "flagsNumeric": "32832",
+      "flagsText": "hidden",
+      "dataless": false,
+      "observedAtElapsedSeconds": 62.701701791999994
+    },
+    "input-part000": {
+      "target": "input-part000",
+      "bytes": 33554432,
+      "flagsNumeric": "64",
+      "flagsText": "-",
+      "dataless": false,
+      "observedAtElapsedSeconds": 17.713882792
+    },
+    "input-part001": {
+      "target": "input-part001",
+      "bytes": 33554432,
+      "flagsNumeric": "64",
+      "flagsText": "-",
+      "dataless": false,
+      "observedAtElapsedSeconds": 17.720932667
+    },
+    "input-part003": {
+      "target": "input-part003",
+      "bytes": 33554432,
+      "flagsNumeric": "64",
+      "flagsText": "-",
+      "dataless": false,
+      "observedAtElapsedSeconds": 47.709581959
+    },
+    "input-part004": {
+      "target": "input-part004",
+      "bytes": 33554432,
+      "flagsNumeric": "64",
+      "flagsText": "-",
+      "dataless": false,
+      "observedAtElapsedSeconds": 17.733768584
+    },
+    "neighbor-stages": {
+      "target": "neighbor-stages",
+      "bytes": 9063908,
+      "flagsNumeric": "64",
+      "flagsText": "-",
+      "dataless": false,
+      "observedAtElapsedSeconds": 17.741267875000002
+    },
+    "radial-audit": {
+      "target": "radial-audit",
+      "bytes": 3378809,
+      "flagsNumeric": "64",
+      "flagsText": "-",
+      "dataless": false,
+      "observedAtElapsedSeconds": 17.748046334
+    }
+  },
+  "readiness": "all-seven-not-dataless-at-latest-observations",
+  "allocationBoundaryEnd": {
+    "state": "all-unstarted",
+    "absentPaths": [
+      "research/m31-native-factor-reuse-2026-10-23/producer-supervisor-launch.lock",
+      "research/m31-native-factor-reuse-2026-10-23/producer-supervisor.json",
+      "research/m31-native-factor-reuse-2026-10-23/results",
+      "research/m31-native-factor-reuse-2026-10-23/audit-supervisor-launch.lock",
+      "research/m31-native-factor-reuse-2026-10-23/audit-supervisor.json",
+      "research/m31-native-factor-reuse-2026-10-23/audit",
+      "research/m31-native-factor-reuse-2026-10-23/finalize-supervisor-launch.lock",
+      "research/m31-native-factor-reuse-2026-10-23/finalize-supervisor.json",
+      "research/m31-native-factor-reuse-2026-10-23/finalize",
+      "research/m31-native-factor-reuse-2026-10-23/ui-supervisor-launch.lock",
+      "research/m31-native-factor-reuse-2026-10-23/ui-supervisor.json",
+      "research/m31-native-factor-reuse-2026-10-23/ui",
+      "research/m31-native-factor-reuse-2026-10-23/viewer/pins.json"
+    ]
+  },
+  "closureMetadata": {
+    "git-pack": {
+      "target": "git-pack",
+      "bytes": 424593415,
+      "flagsNumeric": "32832",
+      "flagsText": "hidden",
+      "dataless": false,
+      "observedAtElapsedSeconds": 63.044174792
+    },
+    "input-part000": {
+      "target": "input-part000",
+      "bytes": 33554432,
+      "flagsNumeric": "64",
+      "flagsText": "-",
+      "dataless": false,
+      "observedAtElapsedSeconds": 63.04941925
+    },
+    "input-part001": {
+      "target": "input-part001",
+      "bytes": 33554432,
+      "flagsNumeric": "64",
+      "flagsText": "-",
+      "dataless": false,
+      "observedAtElapsedSeconds": 63.054682791999994
+    },
+    "input-part003": {
+      "target": "input-part003",
+      "bytes": 33554432,
+      "flagsNumeric": "64",
+      "flagsText": "-",
+      "dataless": false,
+      "observedAtElapsedSeconds": 63.059287749999996
+    },
+    "input-part004": {
+      "target": "input-part004",
+      "bytes": 33554432,
+      "flagsNumeric": "64",
+      "flagsText": "-",
+      "dataless": false,
+      "observedAtElapsedSeconds": 63.063520374999996
+    },
+    "neighbor-stages": {
+      "target": "neighbor-stages",
+      "bytes": 9063908,
+      "flagsNumeric": "64",
+      "flagsText": "-",
+      "dataless": false,
+      "observedAtElapsedSeconds": 63.067878459
+    },
+    "radial-audit": {
+      "target": "radial-audit",
+      "bytes": 3378809,
+      "flagsNumeric": "64",
+      "flagsText": "-",
+      "dataless": false,
+      "observedAtElapsedSeconds": 63.072125166999996
+    }
+  },
+  "wallCapPassed": true,
+  "eventJournal": {
+    "file": "research/publication-receipts/m31-native-factor-reuse-local-materialization-2026-10-23-v1-events.jsonl",
+    "bytes": 31886,
+    "sha256": "37828dc350aaf92e17d6628ea5d7e7a728b1ccb6c8f93cffa5aa9dfe76958ccb"
+  }
+}

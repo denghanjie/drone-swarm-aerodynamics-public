@@ -1,0 +1,26 @@
+{
+  "createdAtUtc": "2026-10-24T00:21:55Z",
+  "scope": "Administrative observations only; no scientific execution",
+  "observations": [
+    {
+      "action": "Finder getApp inspection",
+      "reportedToolWallSeconds": 27250.5818,
+      "completed": "returned only initial Finder accessibility state",
+      "mutations": "no UI actions performed",
+      "scientificWorkDuringDelay": false
+    },
+    {
+      "action": "current preflight",
+      "runtimeBytes": 121304480,
+      "runtimeSha256": "dbedff294bab84a0a86c04e15fbcbeb1c97ca10bef1b32b0634cd24b36f62100",
+      "gitRevParseHead": "e8bb2b24f405325682ad04eba85b5017db22b10c",
+      "gitRevParseSeconds": 3.515426917
+    },
+    {
+      "action": "bounded broad git status",
+      "outcome": "timeout after15seconds; subprocess terminated by subprocess.run timeout",
+      "interpretation": "Restored target prerequisites do not establish readiness of entire historical working tree; avoid broad status scans during timing. Cause of this status timeout was not isolated."
+    }
+  ],
+  "numericalAllocationState": "all four unstarted at preflight"
+}
