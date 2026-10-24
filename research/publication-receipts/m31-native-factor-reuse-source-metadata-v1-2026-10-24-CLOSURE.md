@@ -1,0 +1,5 @@
+# Source metadata verifier v1 — closed failure
+
+The published identity-evidence amendment at `533fdbfa1e8b7ae474b415dbe76c23827057775a` was verified by exact public branch SHA and complete amendment bytes. The separate v1 metadata verifier then failed after 30.125056917 seconds: the third request, a recursive publication-tree listing, reached the frozen 3 MiB output-stream cap. Retained stderr says `write /dev/stdout: file too large`. The helper returned failure; the supervisor sealed receipts and confirmed its process group absent. This is a metadata output-cap failure, not a scientific result.
+
+All producer/audit/finalize/UI allocations remain unstarted. The 53 prior body-acquisition failures remain preserved separately; this additional failed metadata request is not reclassified as a body acquisition. Never rerun v1. A separately reviewed v2 administrative allocation will project only required path entries from GitHub metadata, retaining tree identity, original truncation status and path bindings. Scientific source, input bytes and experimental budgets remain unchanged.

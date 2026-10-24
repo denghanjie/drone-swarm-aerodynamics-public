@@ -1,0 +1,78 @@
+{
+  "schema": "m31-native-factor-reuse-prospective-identity-amendment-static-review-v2",
+  "reviewer": "m31_evidence_audit",
+  "date": "2026-10-24",
+  "passed": true,
+  "status": "PASS",
+  "scope": "Static clearance for publication of the exact separate V2 administrative amendment and one subsequent bounded metadata-and-identity allocation. Parent owns publication and execution. No amended source gate or scientific exposure is cleared by this static review.",
+  "scientificSourceCommit": "7e6ab5b1d3bb819a7a17178c9a5636bde49ca6f2",
+  "reviewedFiles": [
+    {
+      "file": "research/publication-receipts/m31-native-factor-reuse-identity-evidence-amendment-2026-10-24-v2.md",
+      "bytes": 10983,
+      "sha256": "7d26ddd6b71f825080ed7676adf7d89b57cabe833a7ae407d3eea3e508dd90d3"
+    },
+    {
+      "file": "research/publication-receipts/m31-native-factor-reuse-identity-evidence-amendment-2026-10-24-v2-helper.py",
+      "bytes": 23234,
+      "sha256": "7e5d1abaa8ee7a0438e60a06cb6e79b24c62cc4a007db42981017610d8a1d70e"
+    },
+    {
+      "file": "research/publication-receipts/m31-native-factor-reuse-identity-evidence-amendment-2026-10-24-v2-supervisor.py",
+      "bytes": 4800,
+      "sha256": "a66ae4a339aca4a7725e4bb5886fc607b4f427bfd3724eb32975c95c99cb8bb9"
+    },
+    {
+      "file": "research/publication-receipts/m31-native-factor-reuse-identity-evidence-amendment-2026-10-24-v2-protocol.json",
+      "bytes": 16397,
+      "sha256": "8f86574c1beb4e1554632cb906c24b47223fb91da003bf8636655e53bc9ef300"
+    }
+  ],
+  "allFinalSizesAndSha256Matched": true,
+  "baselineReview": {
+    "file": "research/publication-receipts/m31-native-factor-reuse-identity-evidence-amendment-2026-10-24-v1-static-review.json",
+    "bytes": 8732,
+    "sha256": "019ef01acb32125457e7d9f85b201cd995792cac5891ebaca0829b998eb48cad"
+  },
+  "method": "Independent complete diffs against the previously inspected frozen V1 amendment, helper, supervisor and protocol, plus final size/SHA256 checks and saved V1 failure inspection. No verifier, network acquisition, scientific source, archive decoder or Git mutation was executed by this reviewer.",
+  "checks": [
+    "The supervisor differs from the reviewed V1 supervisor only by its new namespace. Optimization rejection,570/585/597/600-second lifecycle, shared process-group cleanup, durable unknown closure and capture sealing are unchanged.",
+    "The only acquisition change is explicit gh --jq projection. It copies server-returned repository identity, commit/tree IDs, truncation flag, original tree entry count and selected path/type/sha/size/mode fields; it does not synthesize body identities or replace server values with expected values.",
+    "The exact tree path set is constructed before the first GET from all74 frozen descriptors, the source manifest, the independently pinned review and every predeclared evidence/source record. Existing per-path bindings still require every needed path, blob ID, byte length, type and mode to match.",
+    "The server tree SHA and truncated=false remain mandatory. Full server entry count and selected entry count are distinct. Capture hashes explicitly identify projected JSON only; no complete raw-response identity or API ingress-byte bound is claimed.",
+    "The20-request,45-second per-request,16MiB aggregate captured-output and3MiB per-stream limits remain unchanged, with no retry, fallback, body endpoint or scientific import.",
+    "The separate failed V1 allocation is retained through exact receipt/journal/supervisor and code/review pins, and must be bound by the new public publication tree. Its three requests and one failed metadata command with3145728 stdout bytes are checked explicitly.",
+    "The historical identity bridge,75 start/end local checks, fresh source/current-origin/historical-ref bindings and public binding of every evidence record are unchanged from the baseline review.",
+    "Accounting retains52 failed HTTPS attempts,one failed SSH fetch,two unattempted SSH targets andone separate failed metadata invocation. Original fresh-body assurance remains unsatisfied;71 current-cycle file-body proofs andthree historical proofs are not relabeled fresh."
+  ],
+  "savedV1FailureObserved": {
+    "helperPassed": false,
+    "helperClosed": true,
+    "helperWallSeconds": 30.06055825,
+    "metadataRequests": 3,
+    "capturedBytes": 3154043,
+    "failedEvent": 7,
+    "failedCommandReturncode": 1,
+    "failedCommandReason": null,
+    "failedCommandStdoutBytes": 3145728,
+    "supervisorPassed": false,
+    "supervisorClosed": true,
+    "processGroupAbsent": true,
+    "supervisorWallSeconds": 30.125056917,
+    "classification": "Metadata output-file-cap failure; not a timeout and not a successful source composite."
+  },
+  "limitations": [
+    "Projection limits stored output. The API response size and gh internal buffering remain unmeasured, as expressly disclosed.",
+    "Future server truncation, request completion and path identities remain unproven until this separately reviewed allocation runs; any failed condition must close without fallback.",
+    "Historical complete-body SHA256/length plus current canonical GitOID/public-tree bindings establish byte identity and provenance, not current full-body download availability."
+  ],
+  "launchConditions": [
+    "Publish the exact V2 files, this review and every cited evidence record; verify the immutable publication commit before invoking the V2 supervisor.",
+    "Use exact protocol/review hashes and the explicit publication commit. One V2 allocation only; V1 remains failed and unmodified.",
+    "Independently review the sealed V2 supervisor closure and complete amended74-file composite before writing the explicit amended source gate or exposing numerical results."
+  ],
+  "blockingFindings": [],
+  "originalFreshBodyRuleSatisfied": false,
+  "amendedSourceGatePassedByThisReview": false,
+  "scientificExecutionAuthorizedByThisReview": false
+}
