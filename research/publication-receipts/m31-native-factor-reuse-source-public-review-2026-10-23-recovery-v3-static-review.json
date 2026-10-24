@@ -1,0 +1,31 @@
+{
+  "schema": "m31-recovery-v3-independent-static-review-v1",
+  "passed": true,
+  "scope": "Prospective administrative acquisition source review only; no execution or source-gate success claim.",
+  "helper": {
+    "file": "research/publication-receipts/m31-native-factor-reuse-source-public-review-2026-10-23-recovery-v3-helper.py",
+    "bytes": 45373,
+    "sha256": "f024b99716723b22edcb08f2d512b0b0aff58447b8a482a5d635a689547bf56a"
+  },
+  "protocol": {
+    "file": "research/publication-receipts/m31-native-factor-reuse-source-public-review-2026-10-23-recovery-v3-protocol.json",
+    "bytes": 25876,
+    "sha256": "586b7c7a8c447ebc4a1f6e025cead28826cae7e572ec77f210e27376e0e91737"
+  },
+  "checks": [
+    "The exact remaining scope is transport parts003 and004 plus radial-integration audit.json, three frozen descriptors totaling70487673bytes. No other path, branch, alternate ref or fallback route is acquired.",
+    "All three routes are explicitly unauthenticated TLS-verified raw-CDN URLs at their fixed historical commits. The radial route change from authenticated Contents API to raw CDN is prospectively disclosed; it is not represented as the old transport.",
+    "The original66 successful chains and v2's five successful chains are revalidated, remain disjoint and bind71 manifest paths. Original24, v1's16 and v2's6 failed attempts retain their original failed receipts and journals.",
+    "Before each acquisition, fresh opaque local SHA256/length/Git blobSHA1 and current-source/origin/retrieval tree OIDs must all agree with the exact descriptor. Public success additionally requires complete200response, zero curl exit, exact body length/SHA256/Git blobSHA1 and identity content encoding.",
+    "Curl writes headers and body to separate private temporary files. The parser accepts complete LF/CRLF/mixed status-line endings and interim responses while rejecting malformed, conflicting, oversized or unexpected response sequences. No scientific body parser or archive decoder is used.",
+    "One transfer runs at a time, with at most two attempts per file and six requests total. Connection/transfer/overall limits are30/300/2100seconds. Shared capture is256MiB; each attempt reserves independently RLIMIT_FSIZE-bounded header/body files plus a64KiB combined pipe cap. Failed partial data counts toward captured bytes.",
+    "Existing-file reads/hashes and Git tree reads remain bounded local subprocesses. All74 frozen file identities plus source-manifest identity must pass before transfers and at closure; missing checks, errors or deadline overrun fail the attempt.",
+    "Unexpected capture exceptions now set STOP before recording captureUnavailable and raising. No subsequent transfer begins after capture accounting becomes unknown.",
+    "Final elapsed time is checked after the bounded final journal read. Single-use output locks, request start/end evidence, failed attempts, cleanup status and unchanged administrative pins are retained.",
+    "The final helper/protocol byte pins, manifest descriptors, fixed endpoints and six v2 prerequisite pins were independently checked. Helper and three embedded child programs were AST-parsed without importing or executing the helper. The author's11 synthetic parser checks are disclosed in the protocol and were not duplicated by this reviewer."
+  ],
+  "launchClearance": "Static clearance for this exact separately bounded administrative v3 attempt, subject to parent launch authorization. It opens no numerical or display allocation.",
+  "sourceGateRequirement": "A successful v3 receipt alone is insufficient. An independently reviewed complete74-pin composite must retain66 original,5 v2 and3 v3 proof chains with real receipt/event pointers and transport disclosure; preserve all46 prior failures and any v3 failures. Only then may the stable source-publication.json attest exact source7e6ab5b1d3bb819a7a17178c9a5636bde49ca6f2, manifest21212bytes/SHA256858ba637b83da51296ffd8cc9cd4d91556de70ef568275fab144b353273eda4d, verifiedFilePins74, and true remoteBytesEqualLocal/committedBytesEqualLocal/independentReviewPassed, with composite and independent-review pins. Keep the entire gate file unchanged after producer launch.",
+  "futureResultProof": "Frozen public-verify.py does not support historical/CDN composite chains. Use a separately reviewed administrative result verifier outside frozen sources, explicitly distinguishing fresh result commit/tree/manifest/summary checks, complete local output hashes, and reuse of the unchanged composite source proof. Do not fabricate authenticated exact-source API chains.",
+  "reviewerActivity": "Source/administrative JSON reads, byte hashes and AST checks only; no helper, Git command, network acquisition, scientific execution, archive decoding, UI, or frozen-file modification."
+}

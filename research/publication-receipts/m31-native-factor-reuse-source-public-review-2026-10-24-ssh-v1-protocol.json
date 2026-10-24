@@ -1,0 +1,91 @@
+{
+  "schema": "m31-targeted-ssh-administrative-recovery-v1",
+  "authorization": "User explicitly requests continuation until next experiment has run; separate bounded administrative attempt after closed v3. No numerical budget changed.",
+  "scientificSourceCommit": "7e6ab5b1d3bb819a7a17178c9a5636bde49ca6f2",
+  "remote": "git@github.com:denghanjie/drone-swarm-aerodynamics-public.git",
+  "privateStoreName": "m31-targeted-ssh-20261024-v1",
+  "launchLock": "research/publication-receipts/m31-native-factor-reuse-source-public-review-2026-10-24-ssh-v1-launch.lock",
+  "overallSeconds": 885,
+  "outerSeconds": 900,
+  "pins": [
+    {
+      "path": "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part003",
+      "bytes": 33554432,
+      "sha256": "e44877bab0936c31aab556a39a0151855ec316d13ce6c233db9ceae5ec9fdc86",
+      "kind": "input",
+      "originCommit": "bf064b2c4d54c7ed61a55ae1791fa64bf4e044fe",
+      "gitBlobOid": "da757a978b9165962994d4839abd5edab60531b9"
+    },
+    {
+      "path": "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part004",
+      "bytes": 33554432,
+      "sha256": "36cbf56cc311de3a453254c0637cd213d047a47dafe5a8c0f01d6a35685838f4",
+      "kind": "input",
+      "originCommit": "bf064b2c4d54c7ed61a55ae1791fa64bf4e044fe",
+      "gitBlobOid": "1f5fad95a8a1c36789c6343b909eabb1e8e7849b"
+    },
+    {
+      "path": "research/m31-radial-integration-2026-10-23/audit/audit.json",
+      "bytes": 3378809,
+      "sha256": "59ab04097ac11731e3f978b164c32f3db863a1a3be218e5e55fbb80ddff28017",
+      "kind": "input",
+      "originCommit": "bf064b2c4d54c7ed61a55ae1791fa64bf4e044fe",
+      "gitBlobOid": "bb4a89080ed540c3275d98e7808dd0e12cf73d18"
+    }
+  ],
+  "pinnedRecords": [
+    {
+      "file": "research/publication-receipts/m31-native-factor-reuse-source-public-review-2026-10-23-failure.json",
+      "bytes": 333162,
+      "sha256": "72c347ff75e411b8ad661ebd34b5741be9687bc8cce4a59b362732764622b920"
+    },
+    {
+      "file": "research/publication-receipts/m31-native-factor-reuse-source-public-review-2026-10-23-recovery-v2-failure.json",
+      "bytes": 243545,
+      "sha256": "c3e5fe6de41c4ef98cbe54dc8a3624b6037530911ac5c6d5e095400c53ee7829"
+    },
+    {
+      "file": "research/publication-receipts/m31-native-factor-reuse-source-public-review-2026-10-23-recovery-v3-failure.json",
+      "bytes": 312688,
+      "sha256": "1fd25299c3f2926f64b5109cfc9218f1f51a76dc20acff95a2070c8c3e918610"
+    },
+    {
+      "file": "research/publication-receipts/m31-native-factor-reuse-source-public-review-2026-10-23-recovery-v3-events.jsonl",
+      "bytes": 219814,
+      "sha256": "c084104c44cb129b2038ee5cf97298d54b6047a844b93fe105b8d7133df49a1b"
+    },
+    {
+      "file": "research/publication-receipts/m31-native-factor-reuse-continuation-2026-10-24-EVIDENCE-REVIEW.json",
+      "bytes": 6715,
+      "sha256": "71de176e4eed854bfb8326887a874a3e15ce8389fa5303f4c283241fe95a0c0f"
+    },
+    {
+      "file": "research/m31-native-factor-reuse-2026-10-23/source-manifest.json",
+      "bytes": 21212,
+      "sha256": "858ba637b83da51296ffd8cc9cd4d91556de70ef568275fab144b353273eda4d"
+    }
+  ],
+  "sourceFiles": {
+    "helper.py": {
+      "file": "research/publication-receipts/m31-native-factor-reuse-source-public-review-2026-10-24-ssh-v1-helper.py",
+      "bytes": 8315,
+      "sha256": "6aca14c1b9467a22bd77c0825e8782283f0e126140edfe4f76b60f870ed360d7"
+    },
+    "supervisor.py": {
+      "file": "research/publication-receipts/m31-native-factor-reuse-source-public-review-2026-10-24-ssh-v1-supervisor.py",
+      "bytes": 3422,
+      "sha256": "888a9b49cbd219f1b9bb8ec378e4beab5d51e9773cf3ff785ef11430ea5508f4"
+    }
+  },
+  "attemptsPerMissingBlob": 1,
+  "maximumFetches": 3,
+  "secondsPerFetch": 180,
+  "capture": "48MiB OS per-file hard limit; 96MiB/store,256MiB total and2MiB diagnostic monitored failure thresholds, possible overshoot reported. Private raw stores retained for saved inspection.",
+  "lifecycle": "All helper descendants inherit one outer-created session; outer always terminates/kills entire session and reaps helper before sealing receipts.900s total including cleanup; helper885s internal.",
+  "scope": "No branch/tag/history fetch, retries, ref update, fallback, existing object store reuse, alternates, full clone, model or control execution. Exact blob inventories and hashes only. Server support for direct blob requests is unknown.",
+  "failurePolicy": "First command/identity/limit failure stops whole allocation and preserves private journal plus outer closure; no further fetch in this allocation.",
+  "privacy": "No user paths, credentials or attachments included. Source files contain generic/private-temp paths only. Errors redact repository/store paths and token patterns.",
+  "priorFailedPublicAttemptsPreserved": 52,
+  "completeCompositeRequiredBeforeScience": true,
+  "launch": "Run exact pinned copies of supervisor, helper and protocol from private /tmp, with original repository cwd and unoptimized Python. No cloud-backed source reads precede the supervised helper. Parent rechecks all three copy hashes before invoking."
+}

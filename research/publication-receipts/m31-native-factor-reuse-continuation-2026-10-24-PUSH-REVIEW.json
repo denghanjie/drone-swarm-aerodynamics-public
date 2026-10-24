@@ -1,0 +1,36 @@
+{
+  "schema": "m31-exact-handoff-push-static-review-v1",
+  "passed": true,
+  "staticLaunchClearance": true,
+  "commit": "230e6a96d2036d046f34a41ab8b97e8089102c6c",
+  "repository": "denghanjie/drone-swarm-aerodynamics-public",
+  "branch": "codex/m31-audit-2026-10-15",
+  "helper": {
+    "temporaryFileName": "m31-handoff-push-2026-10-24.py",
+    "bytes": 3675,
+    "sha256": "74f02c7670d72f8d85076a03feb0dad39aaa1c24e8584de67b6686a33a360961"
+  },
+  "protocol": {
+    "temporaryFileName": "m31-handoff-push-2026-10-24-protocol.json",
+    "bytes": 1281,
+    "sha256": "4e29a098f9507f680b6b48d3170d2b2777932b55d5740047b09f7c5e90a150d7"
+  },
+  "summary": {
+    "file": "research/publication-receipts/m31-native-factor-reuse-continuation-2026-10-24-SUMMARY.md",
+    "bytes": 3418,
+    "sha256": "d1c4fc9b2aecb317ef4abf6191ee8a2a57a8c4689a11ab8378548bd18f2bde73"
+  },
+  "scope": "One ordinary exact-SHA push of an administrative failure handoff to configured origin; no scientific execution or public source-gate recovery.",
+  "checks": [
+    "The helper requires local HEAD equal to the exact protocol commit and the local summary hash to match before dispatch.",
+    "The sole mutation is git -c gc.auto=0 push origin 230e6a96d2036d046f34a41ab8b97e8089102c6c:refs/heads/codex/m31-audit-2026-10-15. There is no force, retry or fallback.",
+    "Preflight Git is bounded to15seconds, the push to180seconds, and each of two subsequent read-only API commands to45seconds. The parent will enforce the reviewed310second outer supervision.",
+    "After a successful push only, verify the public branch SHA and the complete summary's byte length and SHA256 at the exact commit. These checks do not verify every artifact or satisfy the scientific source gate.",
+    "Single-use lock, fail-stop behavior and final receipt preserve any failed attempt. A push timeout or failure must not be retried or interpreted as proof of remote state.",
+    "Inherited Git/GitHub debug variables are disabled; token, Authorization and local-root diagnostics are redacted. Capped stdout hashes are explicitly labeled captured-prefix hashes.",
+    "Helper AST parsing, protocol JSON parsing and the listed exact helper/protocol identities were independently checked without executing either file."
+  ],
+  "existingScientificState": "Source proof remains incomplete at71/74. All46 failed public acquisition attempts remain closed and preserved. Producer, audit, finalize and UI remain unstarted.",
+  "reviewLimit": "This is prospective static clearance, not a claim that the commit is public. Parent supplied the exact final commit after its local commit recovery. This reviewer executed no Git or network operation.",
+  "postCommitRecord": "This review is created after the exact target commit. Do not amend or replace that commit to insert this review before the approved push; such a change would require a new exact-SHA review."
+}

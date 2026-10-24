@@ -1,0 +1,225 @@
+{
+  "closed": true,
+  "passed": false,
+  "scientificSourceCommit": "7e6ab5b1d3bb819a7a17178c9a5636bde49ca6f2",
+  "events": [
+    {
+      "event": 1,
+      "operation": "start",
+      "scope": "Exact missing blobs only; no scientific execution",
+      "outerSupervisorSeconds": 900,
+      "innerSeconds": 885
+    },
+    {
+      "event": 2,
+      "operation": "command-start",
+      "args": [
+        "git",
+        "ls-tree",
+        "-z",
+        "7e6ab5b1d3bb819a7a17178c9a5636bde49ca6f2",
+        "--",
+        "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part003"
+      ],
+      "secondsLimit": 45
+    },
+    {
+      "event": 3,
+      "operation": "command-end",
+      "args": [
+        "git",
+        "ls-tree",
+        "-z",
+        "7e6ab5b1d3bb819a7a17178c9a5636bde49ca6f2",
+        "--",
+        "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part003"
+      ],
+      "returncode": 0,
+      "reason": null,
+      "wallSeconds": 0.10698195799999999,
+      "stdoutBytes": 129,
+      "stdoutPrefixSha256": "f591a8dd916fbf88b9c4ca0691d6d28bb0dd548b6d16d8bac025b371bc58e7e7",
+      "stderrBytes": 0,
+      "stderrPrefixSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": ""
+    },
+    {
+      "event": 4,
+      "operation": "tree-binding",
+      "commit": "7e6ab5b1d3bb819a7a17178c9a5636bde49ca6f2",
+      "path": "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part003",
+      "mode": "100644",
+      "kind": "blob",
+      "gitBlobOid": "da757a978b9165962994d4839abd5edab60531b9",
+      "passed": true
+    },
+    {
+      "event": 5,
+      "operation": "command-start",
+      "args": [
+        "git",
+        "ls-tree",
+        "-z",
+        "bf064b2c4d54c7ed61a55ae1791fa64bf4e044fe",
+        "--",
+        "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part003"
+      ],
+      "secondsLimit": 45
+    },
+    {
+      "event": 6,
+      "operation": "command-end",
+      "args": [
+        "git",
+        "ls-tree",
+        "-z",
+        "bf064b2c4d54c7ed61a55ae1791fa64bf4e044fe",
+        "--",
+        "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part003"
+      ],
+      "returncode": 0,
+      "reason": null,
+      "wallSeconds": 0.108261,
+      "stdoutBytes": 129,
+      "stdoutPrefixSha256": "f591a8dd916fbf88b9c4ca0691d6d28bb0dd548b6d16d8bac025b371bc58e7e7",
+      "stderrBytes": 0,
+      "stderrPrefixSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": ""
+    },
+    {
+      "event": 7,
+      "operation": "tree-binding",
+      "commit": "bf064b2c4d54c7ed61a55ae1791fa64bf4e044fe",
+      "path": "research/m31-buffered-motion-2026-10-22/transport/selected.jsonl.gz.part003",
+      "mode": "100644",
+      "kind": "blob",
+      "gitBlobOid": "da757a978b9165962994d4839abd5edab60531b9",
+      "passed": true
+    },
+    {
+      "event": 8,
+      "operation": "command-start",
+      "args": [
+        "git",
+        "init",
+        "--bare",
+        "--template=",
+        "[private-stores]/da757a978b9165962994d4839abd5edab60531b9"
+      ],
+      "secondsLimit": 15
+    },
+    {
+      "event": 9,
+      "operation": "command-end",
+      "args": [
+        "git",
+        "init",
+        "--bare",
+        "--template=",
+        "[private-stores]/da757a978b9165962994d4839abd5edab60531b9"
+      ],
+      "returncode": 0,
+      "reason": null,
+      "wallSeconds": 0.112577292,
+      "stdoutBytes": 120,
+      "stdoutPrefixSha256": "f2db99f31c9d145fd3f2763ce9434653b1f3261f5ac94ed1e8f927855e697ced",
+      "stderrBytes": 485,
+      "stderrPrefixSha256": "7cc74f74cc8a8f9938bd00571e2c171ce3c59d048f2242a836ccca722182d430",
+      "stderr": "hint: Using 'master' as the name for the initial branch. This default branch name\nhint: is subject to change. To configure the initial branch name to use in all\nhint: of your new repositories, which will suppress this warning, call:\nhint: \nhint: \tgit config --global init.defaultBranch <name>\nhint: \nhint: Names commonly chosen instead of 'master' are 'main', 'trunk' and\nhint: 'development'. The just-created branch can be renamed via this command:\nhint: \nhint: \tgit branch -m <name>\n"
+    },
+    {
+      "event": 10,
+      "operation": "command-start",
+      "args": [
+        "git",
+        "--git-dir=[private-stores]/da757a978b9165962994d4839abd5edab60531b9",
+        "cat-file",
+        "--batch-all-objects",
+        "--batch-check"
+      ],
+      "secondsLimit": 15
+    },
+    {
+      "event": 11,
+      "operation": "command-end",
+      "args": [
+        "git",
+        "--git-dir=[private-stores]/da757a978b9165962994d4839abd5edab60531b9",
+        "cat-file",
+        "--batch-all-objects",
+        "--batch-check"
+      ],
+      "returncode": 0,
+      "reason": null,
+      "wallSeconds": 0.11256120799999997,
+      "stdoutBytes": 0,
+      "stdoutPrefixSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderrBytes": 0,
+      "stderrPrefixSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr": ""
+    },
+    {
+      "event": 12,
+      "operation": "command-start",
+      "args": [
+        "git",
+        "--git-dir=[private-stores]/da757a978b9165962994d4839abd5edab60531b9",
+        "-c",
+        "gc.auto=0",
+        "-c",
+        "maintenance.auto=false",
+        "-c",
+        "fetch.writeCommitGraph=false",
+        "fetch",
+        "--no-tags",
+        "--no-write-fetch-head",
+        "--no-recurse-submodules",
+        "--no-auto-maintenance",
+        "git@github.com:denghanjie/drone-swarm-aerodynamics-public.git",
+        "da757a978b9165962994d4839abd5edab60531b9"
+      ],
+      "secondsLimit": 180
+    },
+    {
+      "event": 13,
+      "operation": "command-end",
+      "args": [
+        "git",
+        "--git-dir=[private-stores]/da757a978b9165962994d4839abd5edab60531b9",
+        "-c",
+        "gc.auto=0",
+        "-c",
+        "maintenance.auto=false",
+        "-c",
+        "fetch.writeCommitGraph=false",
+        "fetch",
+        "--no-tags",
+        "--no-write-fetch-head",
+        "--no-recurse-submodules",
+        "--no-auto-maintenance",
+        "git@github.com:denghanjie/drone-swarm-aerodynamics-public.git",
+        "da757a978b9165962994d4839abd5edab60531b9"
+      ],
+      "returncode": -9,
+      "reason": "time-limit",
+      "wallSeconds": 180.030597292,
+      "stdoutBytes": 0,
+      "stdoutPrefixSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderrBytes": 17,
+      "stderrPrefixSha256": "105c6214f060951fda0e185b7ab07f7fe0eb4b15b3ef388ca165af222364fdf6",
+      "stderr": "fatal: early EOF\n"
+    }
+  ],
+  "proofs": [],
+  "error": {
+    "type": "AssertionError",
+    "detail": ""
+  },
+  "wallSeconds": 180.48335425,
+  "finalDiskBytesBeforeReceipt": 6197,
+  "observedPeakTotalBytes": 6197,
+  "observedPeakStoreBytes": 134,
+  "limitsDisclosure": "96MiB/store,256MiB total and2MiB diagnostics are monitored thresholds with failure on observed excess, not strict aggregate ceilings;48MiB per-file OS limit is hard. Outer900s supervisor covers complete invocation.",
+  "rawBodySource": "New isolated SSH-fetched objects only; original repository used solely for tree metadata",
+  "noScientificExecution": true
+}

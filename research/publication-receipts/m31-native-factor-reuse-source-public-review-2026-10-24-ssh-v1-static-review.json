@@ -1,0 +1,68 @@
+{
+  "schema": "m31-targeted-ssh-static-review-v1",
+  "reviewer": "m31_evidence_audit",
+  "date": "2026-10-24",
+  "status": "PASS",
+  "scope": "Exact administrative launch clearance only; parent owns authorization and execution. This review does not pass the source-publication gate or authorize scientific execution.",
+  "scientificSourceCommit": "7e6ab5b1d3bb819a7a17178c9a5636bde49ca6f2",
+  "reviewedFiles": [
+    {
+      "file": "research/publication-receipts/m31-native-factor-reuse-source-public-review-2026-10-24-ssh-v1-protocol.json",
+      "bytes": 5121,
+      "sha256": "c75a41b6929b58790ff4cda69d32b75c056060078e0eb1377e525f337507a066",
+      "stagedCopy": "/private/tmp/m31-targeted-ssh-v1-protocol.json"
+    },
+    {
+      "file": "research/publication-receipts/m31-native-factor-reuse-source-public-review-2026-10-24-ssh-v1-helper.py",
+      "bytes": 8315,
+      "sha256": "6aca14c1b9467a22bd77c0825e8782283f0e126140edfe4f76b60f870ed360d7",
+      "stagedCopy": "/private/tmp/m31-targeted-ssh-v1-helper.py"
+    },
+    {
+      "file": "research/publication-receipts/m31-native-factor-reuse-source-public-review-2026-10-24-ssh-v1-supervisor.py",
+      "bytes": 3422,
+      "sha256": "888a9b49cbd219f1b9bb8ec378e4beab5d51e9773cf3ff785ef11430ea5508f4",
+      "stagedCopy": "/private/tmp/m31-targeted-ssh-v1-supervisor.py"
+    }
+  ],
+  "allSuppliedSizesAndSha256Matched": true,
+  "allThreePrivateCopiesMatched": true,
+  "method": "Read-only source inspection, file-size checks and SHA256 checks. No helper, supervisor, network acquisition, model, control, audit, archive decoding, UI or Git mutation was executed by this reviewer.",
+  "clearedLaunch": {
+    "python": "Unoptimized Python; both programs explicitly reject optimization.",
+    "workingDirectory": "Original checkpoint repository root.",
+    "scriptAndArguments": [
+      "/private/tmp/m31-targeted-ssh-v1-supervisor.py",
+      "/private/tmp/m31-targeted-ssh-v1-protocol.json",
+      "/private/tmp/m31-targeted-ssh-v1-helper.py",
+      "c75a41b6929b58790ff4cda69d32b75c056060078e0eb1377e525f337507a066",
+      "6aca14c1b9467a22bd77c0825e8782283f0e126140edfe4f76b60f870ed360d7"
+    ],
+    "parentRechecksAllThreeCopyHashesBeforeInvocation": true,
+    "allocation": "One prospective administrative allocation, at most one exact-OID fetch per listed blob and three fetches total; first command, identity or observed limit failure stops the allocation.",
+    "outerSeconds": 900,
+    "innerSeconds": 885,
+    "secondsPerFetch": 180
+  },
+  "checks": [
+    "The protocol contains exactly the three remaining descriptors: transport parts003 and004 and the radial-integration audit, with the reviewed lengths, SHA256 values, Git blob OIDs and origin commit.",
+    "Each requested object uses a newly created separate bare store, empty initial object inventory and no alternates, reference repository, copied packs or existing body-object reuse.",
+    "The only fetch target is the exact configured blob OID over the configured SSH remote. There is no branch, tag, history, clone, retry or fallback path.",
+    "Complete post-fetch object inventory must equal the single expected blob with its exact length before streamed length, SHA256 and Git blob SHA1 verification.",
+    "Current fixed-source and origin path-to-blob tree bindings are checked and saved. Original repository access is limited to metadata and pinned administrative/source-manifest records.",
+    "Authenticated SSH body evidence is distinguished explicitly from anonymous public body reads; earlier acquisition records and their failed-attempt history remain separate.",
+    "Helper command starts, completions, tree bindings and stream-hash outcomes are journaled under private temporary storage with flush and fsync.",
+    "The helper and its direct tool descendants inherit the outer-created process group. The supervisor sweeps that group on helper completion or failure, reaps the helper and checks group absence before a passed closure.",
+    "The supervisor catches unreadable or incomplete helper closure files, retains already captured file pins and emits a failed outer closure instead of treating an invalid receipt as success.",
+    "Exact private temporary launch copies remove cloud-backed helper/protocol startup reads from the supervisor path; subsequent repository reads occur within the supervised helper.",
+    "The protocol and receipt honestly distinguish the 48 MiB per-file OS limit from monitored 96 MiB/store, 256 MiB aggregate and 2 MiB diagnostic thresholds. Observed excess fails the allocation."
+  ],
+  "remainingLimitations": [
+    "Server acceptance of direct blob wants remains unknown. Refusal is a failed attempt and permits no broader fetch.",
+    "Static clearance establishes the reviewed procedure only; it does not establish that any fetch, hash, deadline or process-cleanup check has succeeded.",
+    "A passed acquisition still requires independent saved-evidence review and a complete 74-pin composite before the source-publication gate or producer launch."
+  ],
+  "blockingFindings": [],
+  "sourcePublicationGatePassed": false,
+  "scientificExecutionAuthorizedByThisReview": false
+}

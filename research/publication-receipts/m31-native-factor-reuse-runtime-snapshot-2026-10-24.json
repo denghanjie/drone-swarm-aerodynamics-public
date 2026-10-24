@@ -1,0 +1,9 @@
+{
+  "purpose": "Preserve the already-frozen executable against possible later changes to the bundled runtime path; no new executable or installation",
+  "bytes": 121304480,
+  "sha256": "dbedff294bab84a0a86c04e15fbcbeb1c97ca10bef1b32b0634cd24b36f62100",
+  "matchesFrozenRuntime": true,
+  "execution": "None; bytecopy and hash only",
+  "location": "Private temporary runtime snapshot with bin/node and a symlink to the existing bundled node_modules",
+  "dependencyScope": "OnlyNodebinary is frozen. Python,Chrome,Playwright remain nonhermetic as stated in runtime.json. No source/input/protocol timing threshold changed."
+}

@@ -1,0 +1,78 @@
+{
+  "schema": "m31-administrative-handoff-publication",
+  "commit": "230e6a96d2036d046f34a41ab8b97e8089102c6c",
+  "scope": "Exact commit push, public branch SHA and summary bytes only; not complete remote source or result-body verification.",
+  "passed": true,
+  "events": [
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "reason": null,
+      "wallSeconds": 0.10616508300000001,
+      "stdoutBytes": 41,
+      "stderrBytes": 0,
+      "capturedStdoutPrefixSha256": "35e8cb9039792f8224e2b9fb885e8672703a091fad16475f665886b199d94f3a",
+      "capturedStdoutPrefixBytes": 41,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-c",
+        "gc.auto=0",
+        "push",
+        "origin",
+        "230e6a96d2036d046f34a41ab8b97e8089102c6c:refs/heads/codex/m31-audit-2026-10-15"
+      ],
+      "returncode": 0,
+      "reason": null,
+      "wallSeconds": 26.979361959000002,
+      "stdoutBytes": 0,
+      "stderrBytes": 153,
+      "capturedStdoutPrefixSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "capturedStdoutPrefixBytes": 0,
+      "stderr": "To github.com:denghanjie/drone-swarm-aerodynamics-public.git\n   7e6ab5b..230e6a9  230e6a96d2036d046f34a41ab8b97e8089102c6c -> codex/m31-audit-2026-10-15\n"
+    },
+    {
+      "command": [
+        "gh",
+        "api",
+        "repos/denghanjie/drone-swarm-aerodynamics-public/git/ref/heads/codex/m31-audit-2026-10-15"
+      ],
+      "returncode": 0,
+      "reason": null,
+      "wallSeconds": 1.0509084160000022,
+      "stdoutBytes": 458,
+      "stderrBytes": 0,
+      "capturedStdoutPrefixSha256": "01e966af53f00c7d05aa7d6bc4d35645d2bb4c64efa9efb0ae7ab4d4885e0eb3",
+      "capturedStdoutPrefixBytes": 458,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "gh",
+        "api",
+        "-H",
+        "Accept: application/vnd.github.raw+json",
+        "repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/publication-receipts/m31-native-factor-reuse-continuation-2026-10-24-SUMMARY.md?ref=230e6a96d2036d046f34a41ab8b97e8089102c6c"
+      ],
+      "returncode": 0,
+      "reason": null,
+      "wallSeconds": 0.8363849999999999,
+      "stdoutBytes": 3418,
+      "stderrBytes": 0,
+      "capturedStdoutPrefixSha256": "d1c4fc9b2aecb317ef4abf6191ee8a2a57a8c4689a11ab8378548bd18f2bde73",
+      "capturedStdoutPrefixBytes": 3418,
+      "stderr": ""
+    }
+  ],
+  "pushReturnedSuccess": true,
+  "publicBranchMatches": true,
+  "publicSummaryMatches": true,
+  "closed": true,
+  "wallSeconds": 28.978250625
+}
