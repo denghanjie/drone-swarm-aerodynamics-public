@@ -1,0 +1,147 @@
+{
+  "schema": "m31-prospective-amendment-publication",
+  "commit": "78b1af4da4d7b0d63f06736490f46432404ad526",
+  "scope": "Exact prospective-amendment commit push, public branch SHA and complete amendment document bytes only; not a scientific result or completed amended source gate.",
+  "passed": true,
+  "events": [
+    {
+      "event": 1,
+      "operation": "command-start",
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "secondsLimit": 15
+    },
+    {
+      "event": 2,
+      "operation": "command-end",
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "reason": null,
+      "wallSeconds": 0.106429625,
+      "stdoutBytes": 41,
+      "stderrBytes": 0,
+      "capturedStdoutPrefixSha256": "14a01ea8babe19b748db5abb61b9b2d0f698150acc4cbda39a58d765bd41c19d",
+      "capturedStdoutPrefixBytes": 41,
+      "stderr": ""
+    },
+    {
+      "event": 3,
+      "operation": "command-start",
+      "command": [
+        "git",
+        "-c",
+        "gc.auto=0",
+        "push",
+        "origin",
+        "78b1af4da4d7b0d63f06736490f46432404ad526:refs/heads/codex/m31-audit-2026-10-15"
+      ],
+      "secondsLimit": 180
+    },
+    {
+      "event": 4,
+      "operation": "command-end",
+      "command": [
+        "git",
+        "-c",
+        "gc.auto=0",
+        "push",
+        "origin",
+        "78b1af4da4d7b0d63f06736490f46432404ad526:refs/heads/codex/m31-audit-2026-10-15"
+      ],
+      "returncode": 0,
+      "reason": null,
+      "wallSeconds": 7.040700999999999,
+      "stdoutBytes": 0,
+      "stderrBytes": 153,
+      "capturedStdoutPrefixSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "capturedStdoutPrefixBytes": 0,
+      "stderr": "To github.com:denghanjie/drone-swarm-aerodynamics-public.git\n   533fdbf..78b1af4  78b1af4da4d7b0d63f06736490f46432404ad526 -> codex/m31-audit-2026-10-15\n"
+    },
+    {
+      "event": 5,
+      "operation": "command-start",
+      "command": [
+        "gh",
+        "api",
+        "--method",
+        "GET",
+        "--hostname",
+        "github.com",
+        "repos/denghanjie/drone-swarm-aerodynamics-public/git/ref/heads/codex/m31-audit-2026-10-15"
+      ],
+      "secondsLimit": 45
+    },
+    {
+      "event": 6,
+      "operation": "command-end",
+      "command": [
+        "gh",
+        "api",
+        "--method",
+        "GET",
+        "--hostname",
+        "github.com",
+        "repos/denghanjie/drone-swarm-aerodynamics-public/git/ref/heads/codex/m31-audit-2026-10-15"
+      ],
+      "returncode": 0,
+      "reason": null,
+      "wallSeconds": 1.8739401660000006,
+      "stdoutBytes": 458,
+      "stderrBytes": 0,
+      "capturedStdoutPrefixSha256": "c0c8f75cd18a6151d3bbc949742b7772779082978fcfa3d6b4c864cdf0e41e3c",
+      "capturedStdoutPrefixBytes": 458,
+      "stderr": ""
+    },
+    {
+      "event": 7,
+      "operation": "command-start",
+      "command": [
+        "gh",
+        "api",
+        "--method",
+        "GET",
+        "--hostname",
+        "github.com",
+        "-H",
+        "Accept: application/vnd.github.raw+json",
+        "repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/publication-receipts/m31-native-factor-reuse-identity-evidence-amendment-2026-10-24-v2.md?ref=78b1af4da4d7b0d63f06736490f46432404ad526"
+      ],
+      "secondsLimit": 45
+    },
+    {
+      "event": 8,
+      "operation": "command-end",
+      "command": [
+        "gh",
+        "api",
+        "--method",
+        "GET",
+        "--hostname",
+        "github.com",
+        "-H",
+        "Accept: application/vnd.github.raw+json",
+        "repos/denghanjie/drone-swarm-aerodynamics-public/contents/research/publication-receipts/m31-native-factor-reuse-identity-evidence-amendment-2026-10-24-v2.md?ref=78b1af4da4d7b0d63f06736490f46432404ad526"
+      ],
+      "returncode": 0,
+      "reason": null,
+      "wallSeconds": 1.1522588749999993,
+      "stdoutBytes": 10983,
+      "stderrBytes": 0,
+      "capturedStdoutPrefixSha256": "7d26ddd6b71f825080ed7676adf7d89b57cabe833a7ae407d3eea3e508dd90d3",
+      "capturedStdoutPrefixBytes": 10983,
+      "stderr": ""
+    }
+  ],
+  "pushReturnedSuccess": true,
+  "publicBranchMatches": true,
+  "publicSummaryMatches": true,
+  "closed": true,
+  "wallSeconds": 10.180798042000001
+}

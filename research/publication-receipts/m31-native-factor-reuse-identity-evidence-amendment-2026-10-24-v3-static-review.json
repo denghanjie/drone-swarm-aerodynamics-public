@@ -1,0 +1,91 @@
+{
+  "schema": "m31-native-factor-reuse-prospective-identity-amendment-static-review-v3",
+  "reviewer": "m31_evidence_audit",
+  "date": "2026-10-24",
+  "passed": true,
+  "status": "PASS",
+  "scope": "Static clearance for publication of the exact V3 administrative amendment and one subsequent bounded metadata-and-identity allocation. Parent owns publication and execution. This review does not clear the amended source gate or scientific exposure.",
+  "scientificSourceCommit": "7e6ab5b1d3bb819a7a17178c9a5636bde49ca6f2",
+  "reviewedFiles": [
+    {
+      "file": "research/publication-receipts/m31-native-factor-reuse-identity-evidence-amendment-2026-10-24-v3.md",
+      "bytes": 11480,
+      "sha256": "e26af9f146cca238c5b84464185d858c1a24bfa9d7e63720e3fc8e8851025303"
+    },
+    {
+      "file": "research/publication-receipts/m31-native-factor-reuse-identity-evidence-amendment-2026-10-24-v3-helper.py",
+      "bytes": 25498,
+      "sha256": "ecc1f49f8158e26a045a23efd1131a6407a1fd844e54c5b833227ff969aad7d7"
+    },
+    {
+      "file": "research/publication-receipts/m31-native-factor-reuse-identity-evidence-amendment-2026-10-24-v3-supervisor.py",
+      "bytes": 4801,
+      "sha256": "5302ee4cf29852cd9559f772ecb07b38881be54bc4e59c31f3ea670aa534fb2f"
+    },
+    {
+      "file": "research/publication-receipts/m31-native-factor-reuse-identity-evidence-amendment-2026-10-24-v3-protocol.json",
+      "bytes": 19190,
+      "sha256": "fb05e2fddec1b3736d38d2690b54b9dfef02e1d1665f7b1d01e9eefad3d1bb06"
+    }
+  ],
+  "allFinalSizesAndSha256Matched": true,
+  "baselineReview": {
+    "file": "research/publication-receipts/m31-native-factor-reuse-identity-evidence-amendment-2026-10-24-v2-static-review.json",
+    "bytes": 5928,
+    "sha256": "579daefb374a585845989c205b4e04664e9ce9e621b37df9cb16ecf21bf30a3b"
+  },
+  "method": "Independent complete V2-to-V3 diffs of amendment, helper, supervisor and protocol, with final size/SHA256 checks. Previously inspected saved V1 and V2 allocation failures remain part of the evidence. No verifier, network acquisition, scientific source, archive decoder or Git mutation was executed by this reviewer.",
+  "checks": [
+    "All metadata GET query parameters are rejected. Commit resolution uses the exact requested commit and returns its root tree OID; tree requests use nonrecursive immutable tree OIDs only.",
+    "Every immediate tree requires its returned SHA to equal the requested OID, truncated=false, integer fullEntryCount equal to the complete projected immediate-entry list, and unique literal names excluding empty names, dot, dot-dot and slash. Validated trees are cached by immutable OID.",
+    "The fixed allowed TREE_PATHS set is constructed before the first GET from all74 frozen descriptors, the source manifest, every predeclared evidence/source pin and the independent review. Path binding checks the expected commit and traverses every literal segment: intermediate type tree/mode040000, terminal type blob/mode100644 or100755 with exact byte length and GitOID. Each binding saves its full parentTreeOid/name/type/mode/childOid chain.",
+    "Projection preserves server metadata fields used for integrity checks. Capture hashes identify projected JSON only. Neither raw-response identity nor an API ingress-byte bound is claimed.",
+    "The prospective allocation is bounded at128 GETs,45seconds per request,16MiB aggregate captured stdout/stderr,3MiB per output file,870seconds helper,885seconds outer wait,897seconds emergency cleanup and900seconds overall. The supervisor seals at most258 captures. No retry, fallback, body endpoint or scientific import was added.",
+    "The supervisor preserves the previously reviewed optimization rejection, shared process-group lifecycle, bounded cleanup, durable unknown closure and sealed capture behavior; only namespace, explicit duration limits and capture-count ceiling change.",
+    "Both prior failed metadata allocations are pinned and required to be public-tree bound and validated. V1 remains the closed three-request output-cap failure, and V2 remains the closed five-request allocation whose fifth recursive source-tree request timed out. Neither is relabeled successful.",
+    "The historical complete-body proof bridge,75 start/end local identities, exact74 descriptor coverage, source/current-origin/historical public bindings and publication binding of all evidence are preserved. Scientific source and input bytes are unchanged.",
+    "Failure accounting preserves52 failed HTTPS body attempts,one failed SSH fetch,two unattempted SSH targets andtwo separate failed metadata allocations. The71 current-cycle file-body proofs andthree historical body proofs remain distinct; the additional fresh manifest proof is not counted as a file descriptor."
+  ],
+  "savedFailures": {
+    "v1": {
+      "closed": true,
+      "passed": false,
+      "metadataRequests": 3,
+      "supervisorWallSeconds": 30.125056917,
+      "failedEvent": 7,
+      "failedCommandReturncode": 1,
+      "failedCommandReason": null,
+      "failedCommandStdoutBytes": 3145728,
+      "processGroupAbsent": true,
+      "classification": "Output-file-cap failure, not timeout."
+    },
+    "v2": {
+      "closed": true,
+      "passed": false,
+      "metadataRequests": 5,
+      "supervisorWallSeconds": 93.395782583,
+      "failedRequest": 5,
+      "failedRequestWallSeconds": 45.017065417,
+      "failedCommandStdoutBytes": 0,
+      "failedCommandStderrBytes": 0,
+      "processGroupAbsent": true,
+      "localStartIdentitiesPassed": 75,
+      "localEndClosurePassed": false,
+      "classification": "Recursive source-tree request timeout; no successful composite."
+    }
+  },
+  "limitations": [
+    "Nonrecursive traversal reduces each requested tree's scope, but future server completion, availability and integrity are unproven until the allocation runs. Any failed condition must close without fallback.",
+    "Captured-output limits do not measure API ingress or gh internal buffering, as disclosed in the amendment.",
+    "Historical complete-body length/SHA256 bridged to current local bytes and fresh canonical GitOID/public path bindings establishes identity and provenance, not current full-body download availability. Historical source/journal availability limitations remain disclosed."
+  ],
+  "launchConditions": [
+    "Publish the exact V3 files, this review and all cited evidence; verify the immutable publication commit before the V3 supervisor is invoked.",
+    "Use exact protocol/review hashes and the explicit publication commit for one V3 allocation. Preserve both earlier failed allocations unchanged.",
+    "Independently inspect the sealed V3 supervisor closure, captures and complete amended74-file composite before writing the explicit amended source gate or exposing numerical results."
+  ],
+  "blockingFindings": [],
+  "originalFreshBodyRuleSatisfied": false,
+  "amendedSourceGatePassedByThisReview": false,
+  "scientificExecutionAuthorizedByThisReview": false
+}
